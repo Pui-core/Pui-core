@@ -1,7 +1,9 @@
 # Pui｜個人開発者 / Programming Mentor
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C853,100:1A1A1A&height=180&section=header&text=Project%20P&fontSize=45&fontColor=ffffff" />
+  <a href="https://pui-wobbfet.top/">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C853,100:1A1A1A&height=180&section=header&text=Project%20P&fontSize=45&fontColor=ffffff" />
+  </a>
 </p>
 
 ## 👋 About me
