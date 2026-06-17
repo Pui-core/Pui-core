@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://pui-wobbfet.top/">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C853,100:1A1A1A&height=180&section=header&text=Project%20P&fontSize=45&fontColor=ffffff" />
+   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:0D1117&height=180&section=header&text=Project%20P&fontSize=45&fontColor=ffffff" />
   </a>
 </p>
 
