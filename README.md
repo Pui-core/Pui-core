@@ -30,9 +30,10 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Pui-core&show_icons=true&theme=tokyonight&hide_border=true&commits_year=2026" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pui-core&layout=compact&theme=tokyonight&hide_border=true" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Pui-core&show_icons=true&theme=react&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&icon_color=00D9FF&border_color=00D9FF&include_all_commits=true&count_private=true&commits_year=2026&v=3" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pui-core&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&icon_color=00D9FF&border_color=00D9FF&v=3" />
 </p>
+
 ## 🔗 Links
 
 - Portfolio：準備中
