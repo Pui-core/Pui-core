@@ -36,5 +36,5 @@
 ## 🔗 Links
 
 - Portfolio：準備中
-- YouTube：向上工場
-- Project P：準備中
+- YouTube：[向上工場](https://www.youtube.com/@Snglrty.mp5)
+- Project P：[HP](https://pui-wobbfet.top/)
