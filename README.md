@@ -29,10 +29,10 @@
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Pui-core&show_icons=true&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Pui-core&layout=compact&theme=tokyonight)
-
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Pui-core&show_icons=true&theme=tokyonight&hide_border=true&commits_year=2026" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pui-core&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
 ## 🔗 Links
 
 - Portfolio：準備中
