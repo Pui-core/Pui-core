@@ -30,8 +30,8 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats-one-kohl-26.vercel.app/api?username=Pui-core&show_icons=true&theme=react&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&icon_color=00D9FF&include_all_commits=true&count_private=true&commits_year=2026&show=reviews,prs_merged,prs_merged_percentage&v=3" />
-  <img height="170" src="https://github-readme-stats-one-kohl-26.vercel.app/api/top-langs/?username=Pui-core&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&langs_count=8&v=3" />
+  <img height="170" src="https://github-readme-stats-one-kohl-26.vercel.app/api?username=Pui-core&show_icons=true&theme=react&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&icon_color=00D9FF&include_all_commits=true&count_private=true&commits_year=2026&show=reviews,prs_merged,prs_merged_percentage&v=4" />
+  <img height="170" src="https://github-readme-stats-one-kohl-26.vercel.app/api/top-langs/?username=Pui-core&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&langs_count=8&count_private=true&include_all_commits=true&v=4" />
 </p>
 
 ## 🔗 Links
