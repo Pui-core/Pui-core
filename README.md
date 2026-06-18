@@ -30,8 +30,12 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Pui-core&show_icons=true&theme=react&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&icon_color=00D9FF&border_color=00D9FF&include_all_commits=true&count_private=true&commits_year=2026&v=3" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pui-core&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&icon_color=00D9FF&border_color=00D9FF&v=3&hide=html,css" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:0D1117&height=180&section=header&text=Project%20P&fontSize=45&fontColor=00D9FF" />
+</p>
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats-e59kmumtb-pui-cores-projects.vercel.app/api?username=Pui-core&show_icons=true&theme=react&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&icon_color=00D9FF&include_all_commits=true&count_private=true&commits_year=2026&show=reviews,prs_merged,prs_merged_percentage&v=1" />
+  <img height="170" src="https://github-readme-stats-e59kmumtb-pui-cores-projects.vercel.app/api/top-langs/?username=Pui-core&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=C9D1D9&langs_count=8&v=1" />
 </p>
 
 ## 🔗 Links
