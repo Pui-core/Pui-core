@@ -40,7 +40,23 @@ iOS端末のAPNs tokenを登録します。
   "installationId": "device-local-install-id",
   "platform": "ios",
   "apnsToken": "apns-device-token",
-  "appVersion": "0.1.0"
+  "appVersion": "0.1.0",
+  "profileDisplayName": "Tsuka",
+  "profileImageBase64": "small-jpeg-base64",
+  "profileImageMimeType": "image/jpeg"
+}
+```
+
+### `POST /v1/devices/profile`
+
+登録済み端末の通知表示用プロフィールを更新します。`profileImageBase64` はAPNs payload向けの小さい画像だけを受けます。
+
+```json
+{
+  "installationId": "device-local-install-id",
+  "profileDisplayName": "Tsuka",
+  "profileImageBase64": "small-jpeg-base64",
+  "profileImageMimeType": "image/jpeg"
 }
 ```
 
@@ -52,6 +68,9 @@ iOS端末のAPNs tokenを登録します。
 {
   "ownerDeviceId": "device-uuid",
   "displayName": "Tsuka",
+  "profileDisplayName": "Tsuka",
+  "profileImageBase64": "small-jpeg-base64",
+  "profileImageMimeType": "image/jpeg",
   "expiresInHours": 72
 }
 ```
@@ -63,7 +82,10 @@ iOS端末のAPNs tokenを登録します。
 ```json
 {
   "code": "ABCDE12345",
-  "acceptorDeviceId": "device-uuid"
+  "acceptorDeviceId": "device-uuid",
+  "profileDisplayName": "Pui",
+  "profileImageBase64": "small-jpeg-base64",
+  "profileImageMimeType": "image/jpeg"
 }
 ```
 
@@ -96,11 +118,12 @@ MVP向けに、端末内で交換した相手のユーザーIDへ直接スタン
 }
 ```
 
-APNs payloadには `mutable-content: 1` と `thumbnailName` を含めます。
-iOSアプリ側のNotification Service Extensionが同梱スタンプ画像を添付し、通知にサムネイルとして表示します。
+APNs payloadには `mutable-content: 1`、`thumbnailName`、`senderDisplayName`、`senderProfileImageBase64` を含めます。
+iOSアプリ側のNotification Service Extensionが送信者名を通知タイトルにし、送信者プロフィール画像を丸型サムネイルとして表示します。プロフィール画像が無い場合は従来どおり写真または同梱スタンプ画像にフォールバックします。
 `mood` が `whatsUp` かつ写真添付が無い場合は、payloadに `signalIntent: "photo_request"` と
 `senderInstallationId` を含めます。受信側iOSは通知タップ時にカメラを起動し、撮影画像を同じ
 `send-direct` で `mood: "whatsUp"` と写真添付付きの `photo_response` として送り返します。
+`photo_response` はアプリ側でも履歴へ保存できるよう、通知payloadに写真添付も含めます。
 
 ### `GET /v1/signals/pending?deviceId=...`
 

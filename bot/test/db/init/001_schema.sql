@@ -6,9 +6,21 @@ CREATE TABLE IF NOT EXISTS devices (
     platform text NOT NULL CHECK (platform IN ('ios')),
     apns_token text NOT NULL,
     app_version text,
+    display_name text,
+    profile_image_base64 text,
+    profile_image_mime_type text,
     created_at timestamptz NOT NULL DEFAULT now(),
     updated_at timestamptz NOT NULL DEFAULT now()
 );
+
+ALTER TABLE devices
+    ADD COLUMN IF NOT EXISTS display_name text;
+
+ALTER TABLE devices
+    ADD COLUMN IF NOT EXISTS profile_image_base64 text;
+
+ALTER TABLE devices
+    ADD COLUMN IF NOT EXISTS profile_image_mime_type text;
 
 CREATE TABLE IF NOT EXISTS invite_codes (
     code text PRIMARY KEY,

@@ -3,6 +3,7 @@ const assert = require("node:assert/strict");
 const {
   normalizeFriendshipPair,
   validateDeviceRegistration,
+  validateDeviceProfileUpdate,
   validateDirectSignalSend,
   validateInviteAccept,
   validateInviteCreate,
@@ -14,12 +15,41 @@ test("validateDeviceRegistration trims supported iOS payload", () => {
     installationId: " install-1 ",
     platform: "ios",
     apnsToken: " token ",
-    appVersion: "0.1.0"
+    appVersion: "0.1.0",
+    profileDisplayName: " Pui ",
+    profileImageBase64: " aGVsbG8= ",
+    profileImageMimeType: " image/jpeg "
   });
 
   assert.equal(input.installationId, "install-1");
   assert.equal(input.platform, "ios");
   assert.equal(input.apnsToken, "token");
+  assert.equal(input.profileDisplayName, "Pui");
+  assert.equal(input.profileImageBase64, "aGVsbG8=");
+  assert.equal(input.profileImageMimeType, "image/jpeg");
+});
+
+test("validateDeviceProfileUpdate accepts compact profile image", () => {
+  const input = validateDeviceProfileUpdate({
+    installationId: "72600000-0000-4000-8000-000000000010",
+    profileDisplayName: " Tsuka ",
+    profileImageBase64: " aGVsbG8= ",
+    profileImageMimeType: " image/png "
+  });
+
+  assert.equal(input.installationId, "72600000-0000-4000-8000-000000000010");
+  assert.equal(input.profileDisplayName, "Tsuka");
+  assert.equal(input.profileImageBase64, "aGVsbG8=");
+  assert.equal(input.profileImageMimeType, "image/png");
+});
+
+test("validateDeviceProfileUpdate rejects missing profile fields", () => {
+  assert.throws(
+    () => validateDeviceProfileUpdate({
+      installationId: "72600000-0000-4000-8000-000000000010"
+    }),
+    /profileDisplayName or profileImageBase64 is required/
+  );
 });
 
 test("validateInviteCreate defaults expiry to 72 hours", () => {

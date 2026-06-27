@@ -71,8 +71,20 @@ function validateDeviceRegistration(body) {
     installationId: requiredString(body.installationId, "installationId", 128),
     platform,
     apnsToken: requiredString(body.apnsToken, "apnsToken", 512),
-    appVersion: optionalString(body.appVersion, "appVersion", 64)
+    appVersion: optionalString(body.appVersion, "appVersion", 64),
+    ...profileInput(body)
   };
+}
+
+function validateDeviceProfileUpdate(body) {
+  const input = {
+    installationId: uuid(body.installationId, "installationId"),
+    ...profileInput(body)
+  };
+  if (!input.profileDisplayName && !input.profileImageBase64 && !input.profileImageMimeType) {
+    throw validationError("profileDisplayName or profileImageBase64 is required");
+  }
+  return input;
 }
 
 function validateInviteCreate(body) {
@@ -86,6 +98,7 @@ function validateInviteCreate(body) {
     ownerDeviceId,
     ownerInstallationId,
     displayName: optionalString(body.displayName, "displayName", 80),
+    ...profileInput(body),
     expiresInHours: clampInteger(body.expiresInHours, 1, 168, 72)
   };
 }
@@ -100,7 +113,8 @@ function validateInviteAccept(body) {
   return {
     code: requiredString(body.code, "code", 32).toUpperCase(),
     acceptorDeviceId,
-    acceptorInstallationId
+    acceptorInstallationId,
+    ...profileInput(body)
   };
 }
 
@@ -159,6 +173,19 @@ function optionalBase64(value, field, maxLength) {
   return normalized;
 }
 
+function profileInput(body) {
+  const profileImageMimeType = optionalString(body.profileImageMimeType, "profileImageMimeType", 64);
+  if (profileImageMimeType && !["image/jpeg", "image/png"].includes(profileImageMimeType)) {
+    throw validationError("profileImageMimeType must be image/jpeg or image/png");
+  }
+
+  return {
+    profileDisplayName: optionalString(body.profileDisplayName, "profileDisplayName", 80),
+    profileImageBase64: optionalBase64(body.profileImageBase64, "profileImageBase64", 1200),
+    profileImageMimeType
+  };
+}
+
 function validatePendingQuery(searchParams) {
   return {
     deviceId: uuid(searchParams.get("deviceId"), "deviceId"),
@@ -200,6 +227,7 @@ module.exports = {
   createInviteCode,
   normalizeFriendshipPair,
   validateDeviceRegistration,
+  validateDeviceProfileUpdate,
   validateDirectSignalSend,
   validateInviteAccept,
   validateInviteCreate,

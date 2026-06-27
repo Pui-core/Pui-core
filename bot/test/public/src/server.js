@@ -6,6 +6,7 @@ const {
   createInviteCode,
   normalizeFriendshipPair,
   validateDeviceRegistration,
+  validateDeviceProfileUpdate,
   validateDirectSignalSend,
   validateInviteAccept,
   validateInviteCreate,
@@ -28,6 +29,9 @@ function createApp(pool) {
       }
       if (request.method === "POST" && url.pathname === "/v1/devices/register") {
         return handleDeviceRegister(request, response, pool);
+      }
+      if (request.method === "POST" && url.pathname === "/v1/devices/profile") {
+        return handleDeviceProfile(request, response, pool);
       }
       if (request.method === "POST" && url.pathname === "/v1/invites/create") {
         return handleInviteCreate(request, response, pool);
@@ -75,20 +79,52 @@ async function handleDeviceRegister(request, response, pool) {
   const input = validateDeviceRegistration(await readJson(request));
   const result = await pool.query(
     `
-      INSERT INTO devices (installation_id, platform, apns_token, app_version)
-      VALUES ($1, $2, $3, $4)
+      INSERT INTO devices (
+        installation_id,
+        platform,
+        apns_token,
+        app_version,
+        display_name,
+        profile_image_base64,
+        profile_image_mime_type
+      )
+      VALUES ($1, $2, $3, $4, $5, $6, $7)
       ON CONFLICT (installation_id)
       DO UPDATE SET
         apns_token = EXCLUDED.apns_token,
         app_version = EXCLUDED.app_version,
+        display_name = COALESCE(EXCLUDED.display_name, devices.display_name),
+        profile_image_base64 = COALESCE(EXCLUDED.profile_image_base64, devices.profile_image_base64),
+        profile_image_mime_type = COALESCE(EXCLUDED.profile_image_mime_type, devices.profile_image_mime_type),
         updated_at = now()
-      RETURNING id, installation_id, platform, app_version, created_at, updated_at
+      RETURNING id, installation_id, platform, app_version,
+        display_name, profile_image_base64, profile_image_mime_type,
+        created_at, updated_at
     `,
-    [input.installationId, input.platform, input.apnsToken, input.appVersion]
+    [
+      input.installationId,
+      input.platform,
+      input.apnsToken,
+      input.appVersion,
+      input.profileDisplayName,
+      input.profileImageBase64,
+      input.profileImageMimeType
+    ]
   );
 
   sendJson(response, 200, {
     device: toDevice(result.rows[0])
+  });
+}
+
+async function handleDeviceProfile(request, response, pool) {
+  const input = validateDeviceProfileUpdate(await readJson(request));
+  const device = await findDeviceByInstallationId(pool, input.installationId);
+  await updateDeviceProfile(pool, device.id, input);
+  const updatedDevice = await findDeviceByInstallationId(pool, input.installationId);
+
+  sendJson(response, 200, {
+    device: toDevice(updatedDevice)
   });
 }
 
@@ -97,6 +133,8 @@ async function handleInviteCreate(request, response, pool) {
   const ownerDevice = input.ownerInstallationId
     ? await findDeviceByInstallationId(pool, input.ownerInstallationId)
     : await ensureDevice(pool, input.ownerDeviceId);
+
+  await updateDeviceProfile(pool, ownerDevice.id, input);
 
   const expiresAt = new Date(Date.now() + input.expiresInHours * 60 * 60 * 1000);
   let invite;
@@ -109,7 +147,7 @@ async function handleInviteCreate(request, response, pool) {
         ON CONFLICT (code) DO NOTHING
         RETURNING code, owner_device_id, display_name, expires_at, created_at
       `,
-      [code, ownerDevice.id, input.displayName, expiresAt]
+      [code, ownerDevice.id, input.displayName || input.profileDisplayName, expiresAt]
     );
     invite = result.rows[0];
     if (invite) {
@@ -132,6 +170,8 @@ async function handleInviteAccept(request, response, pool) {
     ? await findDeviceByInstallationId(pool, input.acceptorInstallationId)
     : await ensureDevice(pool, input.acceptorDeviceId);
 
+  await updateDeviceProfile(pool, acceptorDevice.id, input);
+
   const inviteResult = await pool.query(
     `
       SELECT
@@ -144,6 +184,9 @@ async function handleInviteAccept(request, response, pool) {
         devices.installation_id AS owner_installation_id,
         devices.platform AS owner_platform,
         devices.app_version AS owner_app_version,
+        devices.display_name AS owner_display_name,
+        devices.profile_image_base64 AS owner_profile_image_base64,
+        devices.profile_image_mime_type AS owner_profile_image_mime_type,
         devices.created_at AS owner_created_at,
         devices.updated_at AS owner_updated_at
       FROM invite_codes
@@ -191,6 +234,9 @@ async function handleInviteAccept(request, response, pool) {
       installation_id: invite.owner_installation_id,
       platform: invite.owner_platform,
       app_version: invite.owner_app_version,
+      display_name: invite.owner_display_name || invite.display_name,
+      profile_image_base64: invite.owner_profile_image_base64,
+      profile_image_mime_type: invite.owner_profile_image_mime_type,
       created_at: invite.owner_created_at,
       updated_at: invite.owner_updated_at
     }),
@@ -209,12 +255,14 @@ async function handleSignalSend(request, response, pool) {
     ? friendship.device_b_id
     : friendship.device_a_id;
   const recipientDevice = await ensureDevice(pool, recipientDeviceId);
+  const senderDevice = await ensureDevice(pool, input.senderDeviceId);
 
   return insertAndDeliverSignal(response, pool, {
     friendshipId: input.friendshipId,
     senderDeviceId: input.senderDeviceId,
     recipientDeviceId,
     recipientDevice,
+    senderDevice,
     clientSignalId: input.clientSignalId,
     mood: input.mood,
     thumbnailName: input.thumbnailName,
@@ -252,6 +300,7 @@ async function handleDirectSignalSend(request, response, pool) {
     senderDeviceId: senderDevice.id,
     recipientDeviceId: recipientDevice.id,
     recipientDevice,
+    senderDevice,
     clientSignalId: input.clientSignalId,
     mood: input.mood,
     thumbnailName: input.thumbnailName,
@@ -298,7 +347,7 @@ async function insertAndDeliverSignal(response, pool, input) {
   const apnsPayload = {
     aps: {
       alert: {
-        title: "missyou",
+        title: input.senderDevice.display_name || "missyou",
         body: signal.note || getNotificationBody(signal.mood, stampMetadata, photoAttachment)
       },
       sound: "default",
@@ -313,6 +362,10 @@ async function insertAndDeliverSignal(response, pool, input) {
     moodTitle: stampMetadata.title,
     thumbnailName: stampMetadata.thumbnailName,
     signalIntent,
+    note: signal.note,
+    senderDisplayName: input.senderDevice.display_name,
+    senderProfileImageBase64: input.senderDevice.profile_image_base64,
+    senderProfileImageMimeType: input.senderDevice.profile_image_mime_type,
     createdAt: signal.created_at
   };
   if (input.senderInstallationId) {
@@ -456,7 +509,13 @@ async function handleSignalsPending(url, response, pool) {
 
 async function ensureDevice(pool, deviceId) {
   const result = await pool.query(
-    "SELECT id, installation_id, platform, apns_token, app_version FROM devices WHERE id = $1",
+    `
+      SELECT id, installation_id, platform, apns_token, app_version,
+        display_name, profile_image_base64, profile_image_mime_type,
+        created_at, updated_at
+      FROM devices
+      WHERE id = $1
+    `,
     [deviceId]
   );
   const device = result.rows[0];
@@ -470,7 +529,13 @@ async function ensureDevice(pool, deviceId) {
 
 async function findDeviceByInstallationId(pool, installationId) {
   const result = await pool.query(
-    "SELECT id, installation_id, platform, apns_token, app_version FROM devices WHERE installation_id = $1",
+    `
+      SELECT id, installation_id, platform, apns_token, app_version,
+        display_name, profile_image_base64, profile_image_mime_type,
+        created_at, updated_at
+      FROM devices
+      WHERE installation_id = $1
+    `,
     [installationId]
   );
   const device = result.rows[0];
@@ -480,6 +545,30 @@ async function findDeviceByInstallationId(pool, installationId) {
     throw error;
   }
   return device;
+}
+
+async function updateDeviceProfile(pool, deviceId, input) {
+  if (!input.profileDisplayName && !input.profileImageBase64 && !input.profileImageMimeType) {
+    return;
+  }
+
+  await pool.query(
+    `
+      UPDATE devices
+      SET
+        display_name = COALESCE($2, display_name),
+        profile_image_base64 = COALESCE($3, profile_image_base64),
+        profile_image_mime_type = COALESCE($4, profile_image_mime_type),
+        updated_at = now()
+      WHERE id = $1
+    `,
+    [
+      deviceId,
+      input.profileDisplayName,
+      input.profileImageBase64,
+      input.profileImageMimeType
+    ]
+  );
 }
 
 async function findFriendshipForSender(pool, friendshipId, senderDeviceId) {
@@ -555,6 +644,9 @@ function toDevice(row) {
     installationId: row.installation_id,
     platform: row.platform,
     appVersion: row.app_version,
+    displayName: row.display_name,
+    profileImageBase64: row.profile_image_base64,
+    profileImageMimeType: row.profile_image_mime_type,
     createdAt: row.created_at,
     updatedAt: row.updated_at
   };
