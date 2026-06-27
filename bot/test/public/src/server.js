@@ -25,28 +25,28 @@ function createApp(pool) {
 
       const url = new URL(request.url, "http://localhost");
       if (request.method === "GET" && url.pathname === "/health") {
-        return handleHealth(response, pool);
+        return await handleHealth(response, pool);
       }
       if (request.method === "POST" && url.pathname === "/v1/devices/register") {
-        return handleDeviceRegister(request, response, pool);
+        return await handleDeviceRegister(request, response, pool);
       }
       if (request.method === "POST" && url.pathname === "/v1/devices/profile") {
-        return handleDeviceProfile(request, response, pool);
+        return await handleDeviceProfile(request, response, pool);
       }
       if (request.method === "POST" && url.pathname === "/v1/invites/create") {
-        return handleInviteCreate(request, response, pool);
+        return await handleInviteCreate(request, response, pool);
       }
       if (request.method === "POST" && url.pathname === "/v1/invites/accept") {
-        return handleInviteAccept(request, response, pool);
+        return await handleInviteAccept(request, response, pool);
       }
       if (request.method === "POST" && url.pathname === "/v1/signals/send") {
-        return handleSignalSend(request, response, pool);
+        return await handleSignalSend(request, response, pool);
       }
       if (request.method === "POST" && url.pathname === "/v1/signals/send-direct") {
-        return handleDirectSignalSend(request, response, pool);
+        return await handleDirectSignalSend(request, response, pool);
       }
       if (request.method === "GET" && url.pathname === "/v1/signals/pending") {
-        return handleSignalsPending(url, response, pool);
+        return await handleSignalsPending(url, response, pool);
       }
 
       sendJson(response, 404, { error: "not_found" });

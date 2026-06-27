@@ -28,6 +28,7 @@ curl http://localhost:8080/health
 ```
 
 `.env` に `PUI_CORE_API_KEY` を設定した場合、API呼び出しには `X-API-Key` が必要です。
+現在のmissyou iOS MVPは既定でAPIキーを埋め込まないため、実機で使うテスト環境では `PUI_CORE_API_KEY` を空にしてください。
 
 ## API
 
