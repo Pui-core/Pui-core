@@ -94,7 +94,9 @@ async function handleDeviceRegister(request, response, pool) {
 
 async function handleInviteCreate(request, response, pool) {
   const input = validateInviteCreate(await readJson(request));
-  await ensureDevice(pool, input.ownerDeviceId);
+  const ownerDevice = input.ownerInstallationId
+    ? await findDeviceByInstallationId(pool, input.ownerInstallationId)
+    : await ensureDevice(pool, input.ownerDeviceId);
 
   const expiresAt = new Date(Date.now() + input.expiresInHours * 60 * 60 * 1000);
   let invite;
@@ -107,7 +109,7 @@ async function handleInviteCreate(request, response, pool) {
         ON CONFLICT (code) DO NOTHING
         RETURNING code, owner_device_id, display_name, expires_at, created_at
       `,
-      [code, input.ownerDeviceId, input.displayName, expiresAt]
+      [code, ownerDevice.id, input.displayName, expiresAt]
     );
     invite = result.rows[0];
     if (invite) {
@@ -126,13 +128,27 @@ async function handleInviteCreate(request, response, pool) {
 
 async function handleInviteAccept(request, response, pool) {
   const input = validateInviteAccept(await readJson(request));
-  await ensureDevice(pool, input.acceptorDeviceId);
+  const acceptorDevice = input.acceptorInstallationId
+    ? await findDeviceByInstallationId(pool, input.acceptorInstallationId)
+    : await ensureDevice(pool, input.acceptorDeviceId);
 
   const inviteResult = await pool.query(
     `
-      SELECT code, owner_device_id, display_name, expires_at, accepted_at
+      SELECT
+        invite_codes.code,
+        invite_codes.owner_device_id,
+        invite_codes.display_name,
+        invite_codes.expires_at,
+        invite_codes.accepted_at,
+        invite_codes.created_at,
+        devices.installation_id AS owner_installation_id,
+        devices.platform AS owner_platform,
+        devices.app_version AS owner_app_version,
+        devices.created_at AS owner_created_at,
+        devices.updated_at AS owner_updated_at
       FROM invite_codes
-      WHERE code = $1
+      JOIN devices ON devices.id = invite_codes.owner_device_id
+      WHERE invite_codes.code = $1
     `,
     [input.code]
   );
@@ -142,7 +158,7 @@ async function handleInviteAccept(request, response, pool) {
     error.statusCode = 404;
     throw error;
   }
-  if (invite.owner_device_id === input.acceptorDeviceId) {
+  if (invite.owner_device_id === acceptorDevice.id) {
     const error = new Error("cannot accept own invite");
     error.statusCode = 400;
     throw error;
@@ -150,7 +166,7 @@ async function handleInviteAccept(request, response, pool) {
 
   const [deviceAId, deviceBId] = normalizeFriendshipPair(
     invite.owner_device_id,
-    input.acceptorDeviceId
+    acceptorDevice.id
   );
   const friendshipResult = await pool.query(
     `
@@ -169,7 +185,16 @@ async function handleInviteAccept(request, response, pool) {
   );
 
   sendJson(response, 200, {
-    friendship: toFriendship(friendshipResult.rows[0])
+    friendship: toFriendship(friendshipResult.rows[0]),
+    peer: toDevice({
+      id: invite.owner_device_id,
+      installation_id: invite.owner_installation_id,
+      platform: invite.owner_platform,
+      app_version: invite.owner_app_version,
+      created_at: invite.owner_created_at,
+      updated_at: invite.owner_updated_at
+    }),
+    invite: toInvite(invite)
   });
 }
 
@@ -193,6 +218,9 @@ async function handleSignalSend(request, response, pool) {
     clientSignalId: input.clientSignalId,
     mood: input.mood,
     thumbnailName: input.thumbnailName,
+    attachmentBase64: input.attachmentBase64,
+    attachmentMimeType: input.attachmentMimeType,
+    attachmentFilename: input.attachmentFilename,
     note: input.note
   });
 }
@@ -226,6 +254,9 @@ async function handleDirectSignalSend(request, response, pool) {
     clientSignalId: input.clientSignalId,
     mood: input.mood,
     thumbnailName: input.thumbnailName,
+    attachmentBase64: input.attachmentBase64,
+    attachmentMimeType: input.attachmentMimeType,
+    attachmentFilename: input.attachmentFilename,
     note: input.note
   });
 }
@@ -259,12 +290,15 @@ async function insertAndDeliverSignal(response, pool, input) {
   );
   const signal = insertResult.rows[0];
   const stampMetadata = getStampMetadata(signal.mood, input.thumbnailName);
+  const photoAttachment = getPhotoAttachment(input);
 
   const apnsPayload = {
     aps: {
       alert: {
         title: "missyou",
-        body: signal.note || `${stampMetadata.title}スタンプが届きました`
+        body: signal.note || (photoAttachment
+          ? "What's upが届きました"
+          : `${stampMetadata.title}スタンプが届きました`)
       },
       sound: "default",
       "mutable-content": 1,
@@ -277,6 +311,11 @@ async function insertAndDeliverSignal(response, pool, input) {
     thumbnailName: stampMetadata.thumbnailName,
     createdAt: signal.created_at
   };
+  if (photoAttachment) {
+    apnsPayload.attachmentBase64 = photoAttachment.base64;
+    apnsPayload.attachmentMimeType = photoAttachment.mimeType;
+    apnsPayload.attachmentFilename = photoAttachment.filename;
+  }
   const apnsResult = await sendApnsAlert(input.recipientDevice.apns_token, apnsPayload);
   const status = apnsResult.status === "sent"
     ? "push_sent"
@@ -300,6 +339,22 @@ async function insertAndDeliverSignal(response, pool, input) {
     },
     delivery: apnsResult
   });
+}
+
+function getPhotoAttachment(input) {
+  if (!input.attachmentBase64) {
+    return null;
+  }
+  const mimeType = input.attachmentMimeType || "image/jpeg";
+  if (!["image/jpeg", "image/png"].includes(mimeType)) {
+    return null;
+  }
+  const extension = mimeType === "image/png" ? "png" : "jpg";
+  return {
+    base64: input.attachmentBase64,
+    mimeType,
+    filename: input.attachmentFilename || `whats-up.${extension}`
+  };
 }
 
 function getStampMetadata(mood, requestedThumbnailName) {

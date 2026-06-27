@@ -45,6 +45,13 @@ function optionalString(value, field, maxLength = 256) {
   return trimmed;
 }
 
+function optionalUuid(value, field) {
+  if (value === undefined || value === null || String(value).trim() === "") {
+    return null;
+  }
+  return uuid(value, field);
+}
+
 function uuid(value, field) {
   const normalized = requiredString(value, field, 64);
   if (!UUID_PATTERN.test(normalized)) {
@@ -68,17 +75,31 @@ function validateDeviceRegistration(body) {
 }
 
 function validateInviteCreate(body) {
+  const ownerDeviceId = optionalUuid(body.ownerDeviceId, "ownerDeviceId");
+  const ownerInstallationId = optionalUuid(body.ownerInstallationId, "ownerInstallationId");
+  if (!ownerDeviceId && !ownerInstallationId) {
+    throw validationError("ownerDeviceId or ownerInstallationId is required");
+  }
+
   return {
-    ownerDeviceId: uuid(body.ownerDeviceId, "ownerDeviceId"),
+    ownerDeviceId,
+    ownerInstallationId,
     displayName: optionalString(body.displayName, "displayName", 80),
     expiresInHours: clampInteger(body.expiresInHours, 1, 168, 72)
   };
 }
 
 function validateInviteAccept(body) {
+  const acceptorDeviceId = optionalUuid(body.acceptorDeviceId, "acceptorDeviceId");
+  const acceptorInstallationId = optionalUuid(body.acceptorInstallationId, "acceptorInstallationId");
+  if (!acceptorDeviceId && !acceptorInstallationId) {
+    throw validationError("acceptorDeviceId or acceptorInstallationId is required");
+  }
+
   return {
     code: requiredString(body.code, "code", 32).toUpperCase(),
-    acceptorDeviceId: uuid(body.acceptorDeviceId, "acceptorDeviceId")
+    acceptorDeviceId,
+    acceptorInstallationId
   };
 }
 
@@ -94,6 +115,9 @@ function validateSignalSend(body) {
     clientSignalId: optionalString(body.clientSignalId, "clientSignalId", 128),
     mood,
     thumbnailName: optionalString(body.thumbnailName, "thumbnailName", 128),
+    attachmentBase64: optionalBase64(body.attachmentBase64, "attachmentBase64", 3400),
+    attachmentMimeType: optionalString(body.attachmentMimeType, "attachmentMimeType", 64),
+    attachmentFilename: optionalString(body.attachmentFilename, "attachmentFilename", 80),
     note: optionalString(body.note, "note", 500)
   };
 }
@@ -116,8 +140,22 @@ function validateDirectSignalSend(body) {
     clientSignalId: optionalString(body.clientSignalId, "clientSignalId", 128),
     mood,
     thumbnailName: optionalString(body.thumbnailName, "thumbnailName", 128),
+    attachmentBase64: optionalBase64(body.attachmentBase64, "attachmentBase64", 3400),
+    attachmentMimeType: optionalString(body.attachmentMimeType, "attachmentMimeType", 64),
+    attachmentFilename: optionalString(body.attachmentFilename, "attachmentFilename", 80),
     note: optionalString(body.note, "note", 500)
   };
+}
+
+function optionalBase64(value, field, maxLength) {
+  const normalized = optionalString(value, field, maxLength);
+  if (!normalized) {
+    return null;
+  }
+  if (!/^[A-Za-z0-9+/]+={0,2}$/.test(normalized)) {
+    throw validationError(`${field} must be base64`);
+  }
+  return normalized;
 }
 
 function validatePendingQuery(searchParams) {
