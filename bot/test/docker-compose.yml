@@ -14,7 +14,7 @@ services:
       timeout: 3s
       retries: 20
     ports:
-      - "${PUI_CORE_TEST_DB_PORT:-5432}:5432"
+      - "127.0.0.1:${PUI_CORE_TEST_DB_PORT:-5432}:5432"
 
   api:
     image: node:22-alpine
