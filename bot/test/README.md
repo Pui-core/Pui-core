@@ -92,9 +92,13 @@ MVP向けに、端末内で交換した相手のユーザーIDへ直接スタン
   "recipientInstallationId": "recipient-device-uuid",
   "clientSignalId": "ios-generated-id",
   "mood": "littleLonely",
+  "thumbnailName": "stamp-little-lonely",
   "note": "少しだけ声が聞きたい"
 }
 ```
+
+APNs payloadには `mutable-content: 1` と `thumbnailName` を含めます。
+iOSアプリ側のNotification Service Extensionが同梱スタンプ画像を添付し、通知にサムネイルとして表示します。
 
 ### `GET /v1/signals/pending?deviceId=...`
 

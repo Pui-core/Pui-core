@@ -192,6 +192,7 @@ async function handleSignalSend(request, response, pool) {
     recipientDevice,
     clientSignalId: input.clientSignalId,
     mood: input.mood,
+    thumbnailName: input.thumbnailName,
     note: input.note
   });
 }
@@ -224,6 +225,7 @@ async function handleDirectSignalSend(request, response, pool) {
     recipientDevice,
     clientSignalId: input.clientSignalId,
     mood: input.mood,
+    thumbnailName: input.thumbnailName,
     note: input.note
   });
 }
@@ -256,18 +258,23 @@ async function insertAndDeliverSignal(response, pool, input) {
     ]
   );
   const signal = insertResult.rows[0];
+  const stampMetadata = getStampMetadata(signal.mood, input.thumbnailName);
 
   const apnsPayload = {
     aps: {
       alert: {
         title: "missyou",
-        body: signal.note || signal.mood
+        body: signal.note || `${stampMetadata.title}スタンプが届きました`
       },
-      sound: "default"
+      sound: "default",
+      "mutable-content": 1,
+      category: "MISSYOU_STAMP"
     },
     signalId: signal.id,
     friendshipId: signal.friendship_id,
     mood: signal.mood,
+    moodTitle: stampMetadata.title,
+    thumbnailName: stampMetadata.thumbnailName,
     createdAt: signal.created_at
   };
   const apnsResult = await sendApnsAlert(input.recipientDevice.apns_token, apnsPayload);
@@ -293,6 +300,43 @@ async function insertAndDeliverSignal(response, pool, input) {
     },
     delivery: apnsResult
   });
+}
+
+function getStampMetadata(mood, requestedThumbnailName) {
+  const metadata = {
+    wantToMeet: {
+      title: "会いたい",
+      thumbnailName: "stamp-want-to-meet"
+    },
+    littleLonely: {
+      title: "少し寂しい",
+      thumbnailName: "stamp-little-lonely"
+    },
+    wantToHear: {
+      title: "声が聞きたい",
+      thumbnailName: "stamp-want-to-hear"
+    },
+    thinkingOfYou: {
+      title: "思い出した",
+      thumbnailName: "stamp-thinking-of-you"
+    },
+    needHug: {
+      title: "ぎゅっと",
+      thumbnailName: "stamp-need-hug"
+    },
+    goodNight: {
+      title: "おやすみ",
+      thumbnailName: "stamp-good-night"
+    }
+  }[mood] || {
+    title: mood,
+    thumbnailName: "stamp-little-lonely"
+  };
+
+  return {
+    ...metadata,
+    thumbnailName: requestedThumbnailName || metadata.thumbnailName
+  };
 }
 
 async function handleSignalsPending(url, response, pool) {

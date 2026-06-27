@@ -46,12 +46,14 @@ test("validateDirectSignalSend normalizes installation IDs", () => {
     recipientInstallationId: "72600000-0000-4000-8000-000000000002",
     clientSignalId: " signal-1 ",
     mood: "littleLonely",
+    thumbnailName: " stamp-little-lonely ",
     note: " hey "
   });
 
   assert.equal(input.senderInstallationId, "72600000-0000-4000-8000-000000000001");
   assert.equal(input.recipientInstallationId, "72600000-0000-4000-8000-000000000002");
   assert.equal(input.clientSignalId, "signal-1");
+  assert.equal(input.thumbnailName, "stamp-little-lonely");
   assert.equal(input.note, "hey");
 });
 

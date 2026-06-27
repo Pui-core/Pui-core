@@ -93,6 +93,7 @@ function validateSignalSend(body) {
     senderDeviceId: uuid(body.senderDeviceId, "senderDeviceId"),
     clientSignalId: optionalString(body.clientSignalId, "clientSignalId", 128),
     mood,
+    thumbnailName: optionalString(body.thumbnailName, "thumbnailName", 128),
     note: optionalString(body.note, "note", 500)
   };
 }
@@ -114,6 +115,7 @@ function validateDirectSignalSend(body) {
     recipientInstallationId,
     clientSignalId: optionalString(body.clientSignalId, "clientSignalId", 128),
     mood,
+    thumbnailName: optionalString(body.thumbnailName, "thumbnailName", 128),
     note: optionalString(body.note, "note", 500)
   };
 }
