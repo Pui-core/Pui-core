@@ -87,6 +87,18 @@ test("validateDirectSignalSend normalizes installation IDs", () => {
   assert.equal(input.note, "hey");
 });
 
+test("validateDirectSignalSend accepts whatsUp mood", () => {
+  const input = validateDirectSignalSend({
+    senderInstallationId: "72600000-0000-4000-8000-000000000001",
+    recipientInstallationId: "72600000-0000-4000-8000-000000000002",
+    mood: "whatsUp",
+    thumbnailName: " stamp-whats-up "
+  });
+
+  assert.equal(input.mood, "whatsUp");
+  assert.equal(input.thumbnailName, "stamp-whats-up");
+});
+
 test("validateDirectSignalSend accepts small photo attachment payload", () => {
   const input = validateDirectSignalSend({
     senderInstallationId: "72600000-0000-4000-8000-000000000001",

@@ -218,6 +218,7 @@ async function handleSignalSend(request, response, pool) {
     clientSignalId: input.clientSignalId,
     mood: input.mood,
     thumbnailName: input.thumbnailName,
+    senderInstallationId: null,
     attachmentBase64: input.attachmentBase64,
     attachmentMimeType: input.attachmentMimeType,
     attachmentFilename: input.attachmentFilename,
@@ -254,6 +255,7 @@ async function handleDirectSignalSend(request, response, pool) {
     clientSignalId: input.clientSignalId,
     mood: input.mood,
     thumbnailName: input.thumbnailName,
+    senderInstallationId: input.senderInstallationId,
     attachmentBase64: input.attachmentBase64,
     attachmentMimeType: input.attachmentMimeType,
     attachmentFilename: input.attachmentFilename,
@@ -291,26 +293,31 @@ async function insertAndDeliverSignal(response, pool, input) {
   const signal = insertResult.rows[0];
   const stampMetadata = getStampMetadata(signal.mood, input.thumbnailName);
   const photoAttachment = getPhotoAttachment(input);
+  const signalIntent = getSignalIntent(signal.mood, photoAttachment);
 
   const apnsPayload = {
     aps: {
       alert: {
         title: "missyou",
-        body: signal.note || (photoAttachment
-          ? "What's upが届きました"
-          : `${stampMetadata.title}スタンプが届きました`)
+        body: signal.note || getNotificationBody(signal.mood, stampMetadata, photoAttachment)
       },
       sound: "default",
       "mutable-content": 1,
-      category: "MISSYOU_STAMP"
+      category: signalIntent === "photo_request"
+        ? "MISSYOU_WHATS_UP_REQUEST"
+        : "MISSYOU_STAMP"
     },
     signalId: signal.id,
     friendshipId: signal.friendship_id,
     mood: signal.mood,
     moodTitle: stampMetadata.title,
     thumbnailName: stampMetadata.thumbnailName,
+    signalIntent,
     createdAt: signal.created_at
   };
+  if (input.senderInstallationId) {
+    apnsPayload.senderInstallationId = input.senderInstallationId;
+  }
   if (photoAttachment) {
     apnsPayload.attachmentBase64 = photoAttachment.base64;
     apnsPayload.attachmentMimeType = photoAttachment.mimeType;
@@ -357,8 +364,31 @@ function getPhotoAttachment(input) {
   };
 }
 
+function getSignalIntent(mood, photoAttachment) {
+  if (mood !== "whatsUp") {
+    return "stamp";
+  }
+  return photoAttachment ? "photo_response" : "photo_request";
+}
+
+function getNotificationBody(mood, stampMetadata, photoAttachment) {
+  if (mood === "whatsUp") {
+    return photoAttachment
+      ? "What's up写真が届きました"
+      : "いまの写真がほしいみたい";
+  }
+  if (photoAttachment) {
+    return "写真が届きました";
+  }
+  return `${stampMetadata.title}スタンプが届きました`;
+}
+
 function getStampMetadata(mood, requestedThumbnailName) {
   const metadata = {
+    whatsUp: {
+      title: "What's up",
+      thumbnailName: "stamp-whats-up"
+    },
     wantToMeet: {
       title: "会いたい",
       thumbnailName: "stamp-want-to-meet"

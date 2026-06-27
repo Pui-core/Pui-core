@@ -91,14 +91,16 @@ MVP向けに、端末内で交換した相手のユーザーIDへ直接スタン
   "senderInstallationId": "sender-device-uuid",
   "recipientInstallationId": "recipient-device-uuid",
   "clientSignalId": "ios-generated-id",
-  "mood": "littleLonely",
-  "thumbnailName": "stamp-little-lonely",
-  "note": "少しだけ声が聞きたい"
+  "mood": "whatsUp",
+  "thumbnailName": "stamp-whats-up"
 }
 ```
 
 APNs payloadには `mutable-content: 1` と `thumbnailName` を含めます。
 iOSアプリ側のNotification Service Extensionが同梱スタンプ画像を添付し、通知にサムネイルとして表示します。
+`mood` が `whatsUp` かつ写真添付が無い場合は、payloadに `signalIntent: "photo_request"` と
+`senderInstallationId` を含めます。受信側iOSは通知タップ時にカメラを起動し、撮影画像を同じ
+`send-direct` で `mood: "whatsUp"` と写真添付付きの `photo_response` として送り返します。
 
 ### `GET /v1/signals/pending?deviceId=...`
 
