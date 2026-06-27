@@ -34,13 +34,17 @@ test("validateDeviceProfileUpdate accepts compact profile image", () => {
     installationId: "72600000-0000-4000-8000-000000000010",
     profileDisplayName: " Tsuka ",
     profileImageBase64: " aGVsbG8= ",
-    profileImageMimeType: " image/png "
+    profileImageMimeType: " image/png ",
+    profileIconBase64: " aGVsbG8= ",
+    profileIconMimeType: " image/jpeg "
   });
 
   assert.equal(input.installationId, "72600000-0000-4000-8000-000000000010");
   assert.equal(input.profileDisplayName, "Tsuka");
   assert.equal(input.profileImageBase64, "aGVsbG8=");
   assert.equal(input.profileImageMimeType, "image/png");
+  assert.equal(input.profileIconBase64, "aGVsbG8=");
+  assert.equal(input.profileIconMimeType, "image/jpeg");
 });
 
 test("validateDeviceProfileUpdate rejects missing profile fields", () => {
@@ -135,11 +139,15 @@ test("validateDirectSignalSend accepts small photo attachment payload", () => {
     recipientInstallationId: "72600000-0000-4000-8000-000000000002",
     mood: "thinkingOfYou",
     attachmentBase64: " aGVsbG8= ",
+    attachmentPreviewBase64: " aGk= ",
+    attachmentPreviewMimeType: " image/jpeg ",
     attachmentMimeType: " image/jpeg ",
     attachmentFilename: " whats-up.jpg "
   });
 
   assert.equal(input.attachmentBase64, "aGVsbG8=");
+  assert.equal(input.attachmentPreviewBase64, "aGk=");
+  assert.equal(input.attachmentPreviewMimeType, "image/jpeg");
   assert.equal(input.attachmentMimeType, "image/jpeg");
   assert.equal(input.attachmentFilename, "whats-up.jpg");
 });

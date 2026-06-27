@@ -81,7 +81,13 @@ function validateDeviceProfileUpdate(body) {
     installationId: uuid(body.installationId, "installationId"),
     ...profileInput(body)
   };
-  if (!input.profileDisplayName && !input.profileImageBase64 && !input.profileImageMimeType) {
+  if (
+    !input.profileDisplayName
+    && !input.profileImageBase64
+    && !input.profileImageMimeType
+    && !input.profileIconBase64
+    && !input.profileIconMimeType
+  ) {
     throw validationError("profileDisplayName or profileImageBase64 is required");
   }
   return input;
@@ -130,7 +136,9 @@ function validateSignalSend(body) {
     clientSignalId: optionalString(body.clientSignalId, "clientSignalId", 128),
     mood,
     thumbnailName: optionalString(body.thumbnailName, "thumbnailName", 128),
-    attachmentBase64: optionalBase64(body.attachmentBase64, "attachmentBase64", 3400),
+    attachmentBase64: optionalBase64(body.attachmentBase64, "attachmentBase64", 900000),
+    attachmentPreviewBase64: optionalBase64(body.attachmentPreviewBase64, "attachmentPreviewBase64", 3400),
+    attachmentPreviewMimeType: optionalString(body.attachmentPreviewMimeType, "attachmentPreviewMimeType", 64),
     attachmentMimeType: optionalString(body.attachmentMimeType, "attachmentMimeType", 64),
     attachmentFilename: optionalString(body.attachmentFilename, "attachmentFilename", 80),
     note: optionalString(body.note, "note", 500)
@@ -155,10 +163,25 @@ function validateDirectSignalSend(body) {
     clientSignalId: optionalString(body.clientSignalId, "clientSignalId", 128),
     mood,
     thumbnailName: optionalString(body.thumbnailName, "thumbnailName", 128),
-    attachmentBase64: optionalBase64(body.attachmentBase64, "attachmentBase64", 3400),
+    attachmentBase64: optionalBase64(body.attachmentBase64, "attachmentBase64", 900000),
+    attachmentPreviewBase64: optionalBase64(body.attachmentPreviewBase64, "attachmentPreviewBase64", 3400),
+    attachmentPreviewMimeType: optionalString(body.attachmentPreviewMimeType, "attachmentPreviewMimeType", 64),
     attachmentMimeType: optionalString(body.attachmentMimeType, "attachmentMimeType", 64),
     attachmentFilename: optionalString(body.attachmentFilename, "attachmentFilename", 80),
     note: optionalString(body.note, "note", 500)
+  };
+}
+
+function validateFriendsQuery(searchParams) {
+  return {
+    installationId: uuid(searchParams.get("installationId"), "installationId")
+  };
+}
+
+function validateSignalDetailQuery(searchParams) {
+  return {
+    signalId: uuid(searchParams.get("signalId"), "signalId"),
+    installationId: uuid(searchParams.get("installationId"), "installationId")
   };
 }
 
@@ -178,11 +201,17 @@ function profileInput(body) {
   if (profileImageMimeType && !["image/jpeg", "image/png"].includes(profileImageMimeType)) {
     throw validationError("profileImageMimeType must be image/jpeg or image/png");
   }
+  const profileIconMimeType = optionalString(body.profileIconMimeType, "profileIconMimeType", 64);
+  if (profileIconMimeType && !["image/jpeg", "image/png"].includes(profileIconMimeType)) {
+    throw validationError("profileIconMimeType must be image/jpeg or image/png");
+  }
 
   return {
     profileDisplayName: optionalString(body.profileDisplayName, "profileDisplayName", 80),
     profileImageBase64: optionalBase64(body.profileImageBase64, "profileImageBase64", 1200),
-    profileImageMimeType
+    profileImageMimeType,
+    profileIconBase64: optionalBase64(body.profileIconBase64, "profileIconBase64", 120000),
+    profileIconMimeType
   };
 }
 
@@ -229,9 +258,11 @@ module.exports = {
   validateDeviceRegistration,
   validateDeviceProfileUpdate,
   validateDirectSignalSend,
+  validateFriendsQuery,
   validateInviteAccept,
   validateInviteCreate,
   validatePendingQuery,
+  validateSignalDetailQuery,
   validateSignalSend,
   validationError
 };

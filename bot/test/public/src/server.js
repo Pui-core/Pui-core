@@ -8,13 +8,15 @@ const {
   validateDeviceRegistration,
   validateDeviceProfileUpdate,
   validateDirectSignalSend,
+  validateFriendsQuery,
   validateInviteAccept,
   validateInviteCreate,
   validatePendingQuery,
+  validateSignalDetailQuery,
   validateSignalSend
 } = require("./validation");
 
-const MAX_BODY_BYTES = 32 * 1024;
+const MAX_BODY_BYTES = 1024 * 1024;
 
 function createApp(pool) {
   return http.createServer(async (request, response) => {
@@ -39,6 +41,9 @@ function createApp(pool) {
       if (request.method === "POST" && url.pathname === "/v1/invites/accept") {
         return await handleInviteAccept(request, response, pool);
       }
+      if (request.method === "GET" && url.pathname === "/v1/friends") {
+        return await handleFriendsList(url, response, pool);
+      }
       if (request.method === "POST" && url.pathname === "/v1/signals/send") {
         return await handleSignalSend(request, response, pool);
       }
@@ -47,6 +52,9 @@ function createApp(pool) {
       }
       if (request.method === "GET" && url.pathname === "/v1/signals/pending") {
         return await handleSignalsPending(url, response, pool);
+      }
+      if (request.method === "GET" && url.pathname === "/v1/signals/detail") {
+        return await handleSignalDetail(url, response, pool);
       }
 
       sendJson(response, 404, { error: "not_found" });
@@ -86,9 +94,11 @@ async function handleDeviceRegister(request, response, pool) {
         app_version,
         display_name,
         profile_image_base64,
-        profile_image_mime_type
+        profile_image_mime_type,
+        profile_icon_base64,
+        profile_icon_mime_type
       )
-      VALUES ($1, $2, $3, $4, $5, $6, $7)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
       ON CONFLICT (installation_id)
       DO UPDATE SET
         apns_token = EXCLUDED.apns_token,
@@ -96,9 +106,12 @@ async function handleDeviceRegister(request, response, pool) {
         display_name = COALESCE(EXCLUDED.display_name, devices.display_name),
         profile_image_base64 = COALESCE(EXCLUDED.profile_image_base64, devices.profile_image_base64),
         profile_image_mime_type = COALESCE(EXCLUDED.profile_image_mime_type, devices.profile_image_mime_type),
+        profile_icon_base64 = COALESCE(EXCLUDED.profile_icon_base64, devices.profile_icon_base64),
+        profile_icon_mime_type = COALESCE(EXCLUDED.profile_icon_mime_type, devices.profile_icon_mime_type),
         updated_at = now()
       RETURNING id, installation_id, platform, app_version,
         display_name, profile_image_base64, profile_image_mime_type,
+        profile_icon_base64, profile_icon_mime_type,
         created_at, updated_at
     `,
     [
@@ -108,7 +121,9 @@ async function handleDeviceRegister(request, response, pool) {
       input.appVersion,
       input.profileDisplayName,
       input.profileImageBase64,
-      input.profileImageMimeType
+      input.profileImageMimeType,
+      input.profileIconBase64,
+      input.profileIconMimeType
     ]
   );
 
@@ -184,11 +199,13 @@ async function handleInviteAccept(request, response, pool) {
         devices.installation_id AS owner_installation_id,
         devices.platform AS owner_platform,
         devices.app_version AS owner_app_version,
-        devices.display_name AS owner_display_name,
-        devices.profile_image_base64 AS owner_profile_image_base64,
-        devices.profile_image_mime_type AS owner_profile_image_mime_type,
-        devices.created_at AS owner_created_at,
-        devices.updated_at AS owner_updated_at
+      devices.display_name AS owner_display_name,
+      devices.profile_image_base64 AS owner_profile_image_base64,
+      devices.profile_image_mime_type AS owner_profile_image_mime_type,
+      devices.profile_icon_base64 AS owner_profile_icon_base64,
+      devices.profile_icon_mime_type AS owner_profile_icon_mime_type,
+      devices.created_at AS owner_created_at,
+      devices.updated_at AS owner_updated_at
       FROM invite_codes
       JOIN devices ON devices.id = invite_codes.owner_device_id
       WHERE invite_codes.code = $1
@@ -237,10 +254,71 @@ async function handleInviteAccept(request, response, pool) {
       display_name: invite.owner_display_name || invite.display_name,
       profile_image_base64: invite.owner_profile_image_base64,
       profile_image_mime_type: invite.owner_profile_image_mime_type,
+      profile_icon_base64: invite.owner_profile_icon_base64,
+      profile_icon_mime_type: invite.owner_profile_icon_mime_type,
       created_at: invite.owner_created_at,
       updated_at: invite.owner_updated_at
     }),
     invite: toInvite(invite)
+  });
+}
+
+async function handleFriendsList(url, response, pool) {
+  const input = validateFriendsQuery(url.searchParams);
+  const device = await findDeviceByInstallationId(pool, input.installationId);
+  const result = await pool.query(
+    `
+      SELECT
+        friendships.id AS friendship_id,
+        friendships.device_a_id,
+        friendships.device_b_id,
+        friendships.created_at AS friendship_created_at,
+        peer.id AS peer_id,
+        peer.installation_id AS peer_installation_id,
+        peer.platform AS peer_platform,
+        peer.app_version AS peer_app_version,
+        peer.display_name AS peer_display_name,
+        peer.profile_image_base64 AS peer_profile_image_base64,
+        peer.profile_image_mime_type AS peer_profile_image_mime_type,
+        peer.profile_icon_base64 AS peer_profile_icon_base64,
+        peer.profile_icon_mime_type AS peer_profile_icon_mime_type,
+        peer.created_at AS peer_created_at,
+        peer.updated_at AS peer_updated_at
+      FROM friendships
+      JOIN devices peer
+        ON peer.id = CASE
+          WHEN friendships.device_a_id = $1 THEN friendships.device_b_id
+          ELSE friendships.device_a_id
+        END
+      WHERE friendships.device_a_id = $1
+         OR friendships.device_b_id = $1
+      ORDER BY friendships.created_at DESC
+    `,
+    [device.id]
+  );
+
+  sendJson(response, 200, {
+    friends: result.rows.map((row) => ({
+      friendship: toFriendship({
+        id: row.friendship_id,
+        device_a_id: row.device_a_id,
+        device_b_id: row.device_b_id,
+        created_at: row.friendship_created_at
+      }),
+      peer: toDevice({
+        id: row.peer_id,
+        installation_id: row.peer_installation_id,
+        platform: row.peer_platform,
+        app_version: row.peer_app_version,
+        display_name: row.peer_display_name,
+        profile_image_base64: row.peer_profile_image_base64,
+        profile_image_mime_type: row.peer_profile_image_mime_type,
+        profile_icon_base64: row.peer_profile_icon_base64,
+        profile_icon_mime_type: row.peer_profile_icon_mime_type,
+        created_at: row.peer_created_at,
+        updated_at: row.peer_updated_at
+      })
+    }))
   });
 }
 
@@ -268,9 +346,59 @@ async function handleSignalSend(request, response, pool) {
     thumbnailName: input.thumbnailName,
     senderInstallationId: null,
     attachmentBase64: input.attachmentBase64,
+    attachmentPreviewBase64: input.attachmentPreviewBase64,
+    attachmentPreviewMimeType: input.attachmentPreviewMimeType,
     attachmentMimeType: input.attachmentMimeType,
     attachmentFilename: input.attachmentFilename,
     note: input.note
+  });
+}
+
+async function handleSignalDetail(url, response, pool) {
+  const input = validateSignalDetailQuery(url.searchParams);
+  const viewerDevice = await findDeviceByInstallationId(pool, input.installationId);
+  const result = await pool.query(
+    `
+      SELECT
+        signals.id,
+        signals.friendship_id,
+        signals.sender_device_id,
+        signals.recipient_device_id,
+        signals.client_signal_id,
+        signals.mood,
+        signals.note,
+        signals.attachment_base64,
+        signals.attachment_mime_type,
+        signals.attachment_filename,
+        signals.status,
+        signals.created_at,
+        signals.delivered_at,
+        sender.installation_id AS sender_installation_id,
+        sender.display_name AS sender_display_name,
+        sender.profile_image_base64 AS sender_profile_image_base64,
+        sender.profile_image_mime_type AS sender_profile_image_mime_type,
+        sender.profile_icon_base64 AS sender_profile_icon_base64,
+        sender.profile_icon_mime_type AS sender_profile_icon_mime_type
+      FROM signals
+      JOIN devices sender ON sender.id = signals.sender_device_id
+      WHERE signals.id = $1
+        AND (
+          signals.sender_device_id = $2
+          OR signals.recipient_device_id = $2
+        )
+      LIMIT 1
+    `,
+    [input.signalId, viewerDevice.id]
+  );
+  const signal = result.rows[0];
+  if (!signal) {
+    const error = new Error("signal not found");
+    error.statusCode = 404;
+    throw error;
+  }
+
+  sendJson(response, 200, {
+    signal: toSignalWithSender(signal)
   });
 }
 
@@ -306,6 +434,8 @@ async function handleDirectSignalSend(request, response, pool) {
     thumbnailName: input.thumbnailName,
     senderInstallationId: input.senderInstallationId,
     attachmentBase64: input.attachmentBase64,
+    attachmentPreviewBase64: input.attachmentPreviewBase64,
+    attachmentPreviewMimeType: input.attachmentPreviewMimeType,
     attachmentMimeType: input.attachmentMimeType,
     attachmentFilename: input.attachmentFilename,
     note: input.note
@@ -321,14 +451,22 @@ async function insertAndDeliverSignal(response, pool, input) {
         recipient_device_id,
         client_signal_id,
         mood,
-        note
+        note,
+        attachment_base64,
+        attachment_mime_type,
+        attachment_filename
       )
-      VALUES ($1, $2, $3, $4, $5, $6)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
       ON CONFLICT (sender_device_id, client_signal_id)
       WHERE client_signal_id IS NOT NULL
-      DO UPDATE SET client_signal_id = EXCLUDED.client_signal_id
+      DO UPDATE SET
+        client_signal_id = EXCLUDED.client_signal_id,
+        attachment_base64 = COALESCE(EXCLUDED.attachment_base64, signals.attachment_base64),
+        attachment_mime_type = COALESCE(EXCLUDED.attachment_mime_type, signals.attachment_mime_type),
+        attachment_filename = COALESCE(EXCLUDED.attachment_filename, signals.attachment_filename)
       RETURNING id, friendship_id, sender_device_id, recipient_device_id,
-        client_signal_id, mood, note, status, created_at
+        client_signal_id, mood, note, attachment_base64, attachment_mime_type,
+        attachment_filename, status, created_at
     `,
     [
       input.friendshipId,
@@ -336,12 +474,16 @@ async function insertAndDeliverSignal(response, pool, input) {
       input.recipientDeviceId,
       input.clientSignalId,
       input.mood,
-      input.note
+      input.note,
+      input.attachmentBase64,
+      input.attachmentMimeType,
+      input.attachmentFilename
     ]
   );
   const signal = insertResult.rows[0];
   const stampMetadata = getStampMetadata(signal.mood, input.thumbnailName);
   const photoAttachment = getPhotoAttachment(input);
+  const notificationPhotoAttachment = getNotificationPhotoAttachment(input, photoAttachment);
   const signalIntent = getSignalIntent(signal.mood, photoAttachment);
 
   const apnsPayload = {
@@ -371,10 +513,10 @@ async function insertAndDeliverSignal(response, pool, input) {
   if (input.senderInstallationId) {
     apnsPayload.senderInstallationId = input.senderInstallationId;
   }
-  if (photoAttachment) {
-    apnsPayload.attachmentBase64 = photoAttachment.base64;
-    apnsPayload.attachmentMimeType = photoAttachment.mimeType;
-    apnsPayload.attachmentFilename = photoAttachment.filename;
+  if (notificationPhotoAttachment) {
+    apnsPayload.attachmentBase64 = notificationPhotoAttachment.base64;
+    apnsPayload.attachmentMimeType = notificationPhotoAttachment.mimeType;
+    apnsPayload.attachmentFilename = notificationPhotoAttachment.filename;
   }
   const apnsResult = await sendApnsAlert(input.recipientDevice.apns_token, apnsPayload);
   const status = apnsResult.status === "sent"
@@ -414,6 +556,25 @@ function getPhotoAttachment(input) {
     base64: input.attachmentBase64,
     mimeType,
     filename: input.attachmentFilename || `whats-up.${extension}`
+  };
+}
+
+function getNotificationPhotoAttachment(input, fullAttachment) {
+  if (!fullAttachment) {
+    return null;
+  }
+  if (!input.attachmentPreviewBase64) {
+    return fullAttachment.base64.length <= 3400 ? fullAttachment : null;
+  }
+  const mimeType = input.attachmentPreviewMimeType || fullAttachment.mimeType;
+  if (!["image/jpeg", "image/png"].includes(mimeType)) {
+    return null;
+  }
+  const extension = mimeType === "image/png" ? "png" : "jpg";
+  return {
+    base64: input.attachmentPreviewBase64,
+    mimeType,
+    filename: input.attachmentFilename || `whats-up-preview.${extension}`
   };
 }
 
@@ -494,16 +655,26 @@ async function handleSignalsPending(url, response, pool) {
         SET delivered_at = now()
         WHERE id IN (SELECT id FROM picked)
         RETURNING id, friendship_id, sender_device_id, recipient_device_id,
-          client_signal_id, mood, note, status, created_at, delivered_at
+          client_signal_id, mood, note, attachment_base64, attachment_mime_type,
+          attachment_filename, status, created_at, delivered_at
       )
-      SELECT * FROM updated
-      ORDER BY created_at ASC
+      SELECT
+        updated.*,
+        sender.installation_id AS sender_installation_id,
+        sender.display_name AS sender_display_name,
+        sender.profile_image_base64 AS sender_profile_image_base64,
+        sender.profile_image_mime_type AS sender_profile_image_mime_type,
+        sender.profile_icon_base64 AS sender_profile_icon_base64,
+        sender.profile_icon_mime_type AS sender_profile_icon_mime_type
+      FROM updated
+      JOIN devices sender ON sender.id = updated.sender_device_id
+      ORDER BY updated.created_at ASC
     `,
     [input.deviceId, input.limit]
   );
 
   sendJson(response, 200, {
-    signals: result.rows.map(toSignal)
+    signals: result.rows.map(toSignalWithSender)
   });
 }
 
@@ -512,6 +683,7 @@ async function ensureDevice(pool, deviceId) {
     `
       SELECT id, installation_id, platform, apns_token, app_version,
         display_name, profile_image_base64, profile_image_mime_type,
+        profile_icon_base64, profile_icon_mime_type,
         created_at, updated_at
       FROM devices
       WHERE id = $1
@@ -532,6 +704,7 @@ async function findDeviceByInstallationId(pool, installationId) {
     `
       SELECT id, installation_id, platform, apns_token, app_version,
         display_name, profile_image_base64, profile_image_mime_type,
+        profile_icon_base64, profile_icon_mime_type,
         created_at, updated_at
       FROM devices
       WHERE installation_id = $1
@@ -548,7 +721,13 @@ async function findDeviceByInstallationId(pool, installationId) {
 }
 
 async function updateDeviceProfile(pool, deviceId, input) {
-  if (!input.profileDisplayName && !input.profileImageBase64 && !input.profileImageMimeType) {
+  if (
+    !input.profileDisplayName
+    && !input.profileImageBase64
+    && !input.profileImageMimeType
+    && !input.profileIconBase64
+    && !input.profileIconMimeType
+  ) {
     return;
   }
 
@@ -559,6 +738,8 @@ async function updateDeviceProfile(pool, deviceId, input) {
         display_name = COALESCE($2, display_name),
         profile_image_base64 = COALESCE($3, profile_image_base64),
         profile_image_mime_type = COALESCE($4, profile_image_mime_type),
+        profile_icon_base64 = COALESCE($5, profile_icon_base64),
+        profile_icon_mime_type = COALESCE($6, profile_icon_mime_type),
         updated_at = now()
       WHERE id = $1
     `,
@@ -566,7 +747,9 @@ async function updateDeviceProfile(pool, deviceId, input) {
       deviceId,
       input.profileDisplayName,
       input.profileImageBase64,
-      input.profileImageMimeType
+      input.profileImageMimeType,
+      input.profileIconBase64,
+      input.profileIconMimeType
     ]
   );
 }
@@ -647,6 +830,8 @@ function toDevice(row) {
     displayName: row.display_name,
     profileImageBase64: row.profile_image_base64,
     profileImageMimeType: row.profile_image_mime_type,
+    profileIconBase64: row.profile_icon_base64,
+    profileIconMimeType: row.profile_icon_mime_type,
     createdAt: row.created_at,
     updatedAt: row.updated_at
   };
@@ -680,9 +865,26 @@ function toSignal(row) {
     clientSignalId: row.client_signal_id,
     mood: row.mood,
     note: row.note,
+    attachmentBase64: row.attachment_base64,
+    attachmentMimeType: row.attachment_mime_type,
+    attachmentFilename: row.attachment_filename,
     status: row.status,
     createdAt: row.created_at,
     deliveredAt: row.delivered_at
+  };
+}
+
+function toSignalWithSender(row) {
+  return {
+    ...toSignal(row),
+    sender: {
+      installationId: row.sender_installation_id,
+      displayName: row.sender_display_name,
+      profileImageBase64: row.sender_profile_image_base64,
+      profileImageMimeType: row.sender_profile_image_mime_type,
+      profileIconBase64: row.sender_profile_icon_base64,
+      profileIconMimeType: row.sender_profile_icon_mime_type
+    }
   };
 }
 

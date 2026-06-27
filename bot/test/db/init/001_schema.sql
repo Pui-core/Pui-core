@@ -9,6 +9,8 @@ CREATE TABLE IF NOT EXISTS devices (
     display_name text,
     profile_image_base64 text,
     profile_image_mime_type text,
+    profile_icon_base64 text,
+    profile_icon_mime_type text,
     created_at timestamptz NOT NULL DEFAULT now(),
     updated_at timestamptz NOT NULL DEFAULT now()
 );
@@ -21,6 +23,12 @@ ALTER TABLE devices
 
 ALTER TABLE devices
     ADD COLUMN IF NOT EXISTS profile_image_mime_type text;
+
+ALTER TABLE devices
+    ADD COLUMN IF NOT EXISTS profile_icon_base64 text;
+
+ALTER TABLE devices
+    ADD COLUMN IF NOT EXISTS profile_icon_mime_type text;
 
 CREATE TABLE IF NOT EXISTS invite_codes (
     code text PRIMARY KEY,
@@ -48,6 +56,9 @@ CREATE TABLE IF NOT EXISTS signals (
     client_signal_id text,
     mood text NOT NULL,
     note text,
+    attachment_base64 text,
+    attachment_mime_type text,
+    attachment_filename text,
     status text NOT NULL DEFAULT 'stored',
     apns_status text,
     apns_response jsonb,
@@ -55,6 +66,15 @@ CREATE TABLE IF NOT EXISTS signals (
     created_at timestamptz NOT NULL DEFAULT now(),
     CONSTRAINT signals_distinct_devices CHECK (sender_device_id <> recipient_device_id)
 );
+
+ALTER TABLE signals
+    ADD COLUMN IF NOT EXISTS attachment_base64 text;
+
+ALTER TABLE signals
+    ADD COLUMN IF NOT EXISTS attachment_mime_type text;
+
+ALTER TABLE signals
+    ADD COLUMN IF NOT EXISTS attachment_filename text;
 
 CREATE UNIQUE INDEX IF NOT EXISTS signals_sender_client_signal_unique
     ON signals(sender_device_id, client_signal_id)
