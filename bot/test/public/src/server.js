@@ -6,6 +6,7 @@ const {
   createInviteCode,
   normalizeFriendshipPair,
   validateDeviceRegistration,
+  validateDirectSignalSend,
   validateInviteAccept,
   validateInviteCreate,
   validatePendingQuery,
@@ -36,6 +37,9 @@ function createApp(pool) {
       }
       if (request.method === "POST" && url.pathname === "/v1/signals/send") {
         return handleSignalSend(request, response, pool);
+      }
+      if (request.method === "POST" && url.pathname === "/v1/signals/send-direct") {
+        return handleDirectSignalSend(request, response, pool);
       }
       if (request.method === "GET" && url.pathname === "/v1/signals/pending") {
         return handleSignalsPending(url, response, pool);
@@ -181,6 +185,50 @@ async function handleSignalSend(request, response, pool) {
     : friendship.device_a_id;
   const recipientDevice = await ensureDevice(pool, recipientDeviceId);
 
+  return insertAndDeliverSignal(response, pool, {
+    friendshipId: input.friendshipId,
+    senderDeviceId: input.senderDeviceId,
+    recipientDeviceId,
+    recipientDevice,
+    clientSignalId: input.clientSignalId,
+    mood: input.mood,
+    note: input.note
+  });
+}
+
+async function handleDirectSignalSend(request, response, pool) {
+  const input = validateDirectSignalSend(await readJson(request));
+  const senderDevice = await findDeviceByInstallationId(pool, input.senderInstallationId);
+  const recipientDevice = await findDeviceByInstallationId(pool, input.recipientInstallationId);
+
+  const [deviceAId, deviceBId] = normalizeFriendshipPair(
+    senderDevice.id,
+    recipientDevice.id
+  );
+  const friendshipResult = await pool.query(
+    `
+      INSERT INTO friendships (device_a_id, device_b_id)
+      VALUES ($1, $2)
+      ON CONFLICT (device_a_id, device_b_id)
+      DO UPDATE SET device_a_id = EXCLUDED.device_a_id
+      RETURNING id, device_a_id, device_b_id, created_at
+    `,
+    [deviceAId, deviceBId]
+  );
+  const friendship = friendshipResult.rows[0];
+
+  return insertAndDeliverSignal(response, pool, {
+    friendshipId: friendship.id,
+    senderDeviceId: senderDevice.id,
+    recipientDeviceId: recipientDevice.id,
+    recipientDevice,
+    clientSignalId: input.clientSignalId,
+    mood: input.mood,
+    note: input.note
+  });
+}
+
+async function insertAndDeliverSignal(response, pool, input) {
   const insertResult = await pool.query(
     `
       INSERT INTO signals (
@@ -201,7 +249,7 @@ async function handleSignalSend(request, response, pool) {
     [
       input.friendshipId,
       input.senderDeviceId,
-      recipientDeviceId,
+      input.recipientDeviceId,
       input.clientSignalId,
       input.mood,
       input.note
@@ -222,7 +270,7 @@ async function handleSignalSend(request, response, pool) {
     mood: signal.mood,
     createdAt: signal.created_at
   };
-  const apnsResult = await sendApnsAlert(recipientDevice.apns_token, apnsPayload);
+  const apnsResult = await sendApnsAlert(input.recipientDevice.apns_token, apnsPayload);
   const status = apnsResult.status === "sent"
     ? "push_sent"
     : apnsResult.status === "skipped"
@@ -285,6 +333,20 @@ async function ensureDevice(pool, deviceId) {
   const device = result.rows[0];
   if (!device) {
     const error = new Error("device not found");
+    error.statusCode = 404;
+    throw error;
+  }
+  return device;
+}
+
+async function findDeviceByInstallationId(pool, installationId) {
+  const result = await pool.query(
+    "SELECT id, installation_id, platform, apns_token, app_version FROM devices WHERE installation_id = $1",
+    [installationId]
+  );
+  const device = result.rows[0];
+  if (!device) {
+    const error = new Error("device not registered");
     error.statusCode = 404;
     throw error;
   }

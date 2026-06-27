@@ -3,6 +3,7 @@ const assert = require("node:assert/strict");
 const {
   normalizeFriendshipPair,
   validateDeviceRegistration,
+  validateDirectSignalSend,
   validateInviteCreate,
   validateSignalSend
 } = require("../src/validation");
@@ -36,6 +37,32 @@ test("validateSignalSend rejects unsupported mood", () => {
       mood: "angry"
     }),
     /mood is not supported/
+  );
+});
+
+test("validateDirectSignalSend normalizes installation IDs", () => {
+  const input = validateDirectSignalSend({
+    senderInstallationId: " 72600000-0000-4000-8000-000000000001 ",
+    recipientInstallationId: "72600000-0000-4000-8000-000000000002",
+    clientSignalId: " signal-1 ",
+    mood: "littleLonely",
+    note: " hey "
+  });
+
+  assert.equal(input.senderInstallationId, "72600000-0000-4000-8000-000000000001");
+  assert.equal(input.recipientInstallationId, "72600000-0000-4000-8000-000000000002");
+  assert.equal(input.clientSignalId, "signal-1");
+  assert.equal(input.note, "hey");
+});
+
+test("validateDirectSignalSend rejects self sends", () => {
+  assert.throws(
+    () => validateDirectSignalSend({
+      senderInstallationId: "72600000-0000-4000-8000-000000000001",
+      recipientInstallationId: "72600000-0000-4000-8000-000000000001",
+      mood: "littleLonely"
+    }),
+    /recipientInstallationId must be different/
   );
 });
 

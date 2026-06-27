@@ -81,6 +81,21 @@ iOS端末のAPNs tokenを登録します。
 }
 ```
 
+### `POST /v1/signals/send-direct`
+
+MVP向けに、端末内で交換した相手のユーザーIDへ直接スタンプを送ります。
+送信者・受信者の `installationId` が登録済みなら、サーバ側でfriendshipを自動作成または再利用します。
+
+```json
+{
+  "senderInstallationId": "sender-device-uuid",
+  "recipientInstallationId": "recipient-device-uuid",
+  "clientSignalId": "ios-generated-id",
+  "mood": "littleLonely",
+  "note": "少しだけ声が聞きたい"
+}
+```
+
 ### `GET /v1/signals/pending?deviceId=...`
 
 APNsを受け損ねた端末が未取得スタンプを取りに行くための簡易エンドポイントです。

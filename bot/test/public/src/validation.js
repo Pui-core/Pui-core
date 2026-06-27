@@ -97,6 +97,27 @@ function validateSignalSend(body) {
   };
 }
 
+function validateDirectSignalSend(body) {
+  const mood = requiredString(body.mood, "mood", 64);
+  if (!MOODS.has(mood)) {
+    throw validationError("mood is not supported");
+  }
+
+  const senderInstallationId = uuid(body.senderInstallationId, "senderInstallationId");
+  const recipientInstallationId = uuid(body.recipientInstallationId, "recipientInstallationId");
+  if (senderInstallationId === recipientInstallationId) {
+    throw validationError("recipientInstallationId must be different from senderInstallationId");
+  }
+
+  return {
+    senderInstallationId,
+    recipientInstallationId,
+    clientSignalId: optionalString(body.clientSignalId, "clientSignalId", 128),
+    mood,
+    note: optionalString(body.note, "note", 500)
+  };
+}
+
 function validatePendingQuery(searchParams) {
   return {
     deviceId: uuid(searchParams.get("deviceId"), "deviceId"),
@@ -138,6 +159,7 @@ module.exports = {
   createInviteCode,
   normalizeFriendshipPair,
   validateDeviceRegistration,
+  validateDirectSignalSend,
   validateInviteAccept,
   validateInviteCreate,
   validatePendingQuery,
