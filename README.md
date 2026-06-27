@@ -54,6 +54,19 @@
 - YouTube：[向上工場](https://www.youtube.com/)
 - Project P：[HP](https://pui-wobbfet.top/)
 
+---
+
+## 🧪 bot/test
+
+`bot/test` に missyou 送信MVP用のPostgres + APIサーバ構成を置いています。
+
+- DB: Docker Postgres
+- API: `bot/test/public` のNode.jsサーバ
+- 秘密鍵/`.env`/DB volumeはgit管理外
+- APNs設定が無い場合はDB保存のみで動作
+
+起動手順は [bot/test/README.md](bot/test/README.md) を参照してください。
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:001F2F,50:0D1117,100:00D9FF&height=120&section=footer" />
 </p>

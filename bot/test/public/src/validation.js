@@ -1,0 +1,146 @@
+const crypto = require("node:crypto");
+
+const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+const MOODS = new Set([
+  "wantToMeet",
+  "littleLonely",
+  "wantToHear",
+  "thinkingOfYou",
+  "needHug",
+  "goodNight"
+]);
+
+function requiredString(value, field, maxLength = 256) {
+  if (typeof value !== "string") {
+    throw validationError(`${field} must be a string`);
+  }
+
+  const trimmed = value.trim();
+  if (!trimmed) {
+    throw validationError(`${field} is required`);
+  }
+  if (trimmed.length > maxLength) {
+    throw validationError(`${field} must be ${maxLength} characters or less`);
+  }
+
+  return trimmed;
+}
+
+function optionalString(value, field, maxLength = 256) {
+  if (value === undefined || value === null) {
+    return null;
+  }
+  if (typeof value !== "string") {
+    throw validationError(`${field} must be a string`);
+  }
+
+  const trimmed = value.trim();
+  if (!trimmed) {
+    return null;
+  }
+  if (trimmed.length > maxLength) {
+    throw validationError(`${field} must be ${maxLength} characters or less`);
+  }
+
+  return trimmed;
+}
+
+function uuid(value, field) {
+  const normalized = requiredString(value, field, 64);
+  if (!UUID_PATTERN.test(normalized)) {
+    throw validationError(`${field} must be a UUID`);
+  }
+  return normalized.toLowerCase();
+}
+
+function validateDeviceRegistration(body) {
+  const platform = requiredString(body.platform, "platform", 16);
+  if (platform !== "ios") {
+    throw validationError("platform must be ios");
+  }
+
+  return {
+    installationId: requiredString(body.installationId, "installationId", 128),
+    platform,
+    apnsToken: requiredString(body.apnsToken, "apnsToken", 512),
+    appVersion: optionalString(body.appVersion, "appVersion", 64)
+  };
+}
+
+function validateInviteCreate(body) {
+  return {
+    ownerDeviceId: uuid(body.ownerDeviceId, "ownerDeviceId"),
+    displayName: optionalString(body.displayName, "displayName", 80),
+    expiresInHours: clampInteger(body.expiresInHours, 1, 168, 72)
+  };
+}
+
+function validateInviteAccept(body) {
+  return {
+    code: requiredString(body.code, "code", 32).toUpperCase(),
+    acceptorDeviceId: uuid(body.acceptorDeviceId, "acceptorDeviceId")
+  };
+}
+
+function validateSignalSend(body) {
+  const mood = requiredString(body.mood, "mood", 64);
+  if (!MOODS.has(mood)) {
+    throw validationError("mood is not supported");
+  }
+
+  return {
+    friendshipId: uuid(body.friendshipId, "friendshipId"),
+    senderDeviceId: uuid(body.senderDeviceId, "senderDeviceId"),
+    clientSignalId: optionalString(body.clientSignalId, "clientSignalId", 128),
+    mood,
+    note: optionalString(body.note, "note", 500)
+  };
+}
+
+function validatePendingQuery(searchParams) {
+  return {
+    deviceId: uuid(searchParams.get("deviceId"), "deviceId"),
+    limit: clampInteger(searchParams.get("limit"), 1, 100, 30)
+  };
+}
+
+function createInviteCode() {
+  return crypto.randomBytes(5).toString("hex").toUpperCase();
+}
+
+function normalizeFriendshipPair(firstDeviceId, secondDeviceId) {
+  return [firstDeviceId, secondDeviceId].sort();
+}
+
+function clampInteger(value, min, max, fallback) {
+  if (value === undefined || value === null || value === "") {
+    return fallback;
+  }
+
+  const parsed = Number(value);
+  if (!Number.isInteger(parsed)) {
+    throw validationError("value must be an integer");
+  }
+  if (parsed < min || parsed > max) {
+    throw validationError(`value must be between ${min} and ${max}`);
+  }
+  return parsed;
+}
+
+function validationError(message) {
+  const error = new Error(message);
+  error.statusCode = 400;
+  return error;
+}
+
+module.exports = {
+  MOODS,
+  createInviteCode,
+  normalizeFriendshipPair,
+  validateDeviceRegistration,
+  validateInviteAccept,
+  validateInviteCreate,
+  validatePendingQuery,
+  validateSignalSend,
+  validationError
+};

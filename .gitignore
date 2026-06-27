@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+node_modules/
+coverage/
+dist/
+bot/test/db/data/
+bot/test/secrets/
+*.log
