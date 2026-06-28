@@ -135,6 +135,95 @@ test("signal detail returns 410 and clears expired attachment payload", async ()
   }
 });
 
+test("signal detail returns attachment once and clears recipient payload", async () => {
+  const previousAPIKey = process.env.PUI_CORE_API_KEY;
+  delete process.env.PUI_CORE_API_KEY;
+
+  const signalId = "72600000-0000-4000-8000-000000000121";
+  const viewerInstallationId = "72600000-0000-4000-8000-000000000221";
+  const viewerDeviceId = "72600000-0000-4000-8000-000000000222";
+  let clearedSignalId = null;
+  const pool = {
+    query: async (sql, params = []) => {
+      if (sql.includes("FROM devices") && sql.includes("installation_id = $1")) {
+        return {
+          rows: [{
+            id: viewerDeviceId,
+            installation_id: viewerInstallationId,
+            platform: "ios",
+            apns_token: "token",
+            app_version: "0.1.0",
+            display_name: "Viewer",
+            profile_image_base64: null,
+            profile_image_mime_type: null,
+            profile_icon_base64: null,
+            profile_icon_mime_type: null,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("attachment_expires_at <= now()") && params.length === 0) {
+        return { rows: [] };
+      }
+      if (sql.includes("FROM signals") && sql.includes("JOIN devices sender")) {
+        return {
+          rows: [{
+            id: signalId,
+            friendship_id: "72600000-0000-4000-8000-000000000321",
+            sender_device_id: "72600000-0000-4000-8000-000000000322",
+            recipient_device_id: viewerDeviceId,
+            client_signal_id: "client-once",
+            mood: "whatsUp",
+            note: null,
+            attachment_base64: "aGVsbG8=",
+            attachment_mime_type: "image/jpeg",
+            attachment_filename: "whats-up.jpg",
+            attachment_expires_at: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
+            status: "stored",
+            created_at: new Date().toISOString(),
+            delivered_at: null,
+            sender_installation_id: "72600000-0000-4000-8000-000000000323",
+            sender_display_name: "Sender",
+            sender_profile_image_base64: null,
+            sender_profile_image_mime_type: null,
+            sender_profile_icon_base64: null,
+            sender_profile_icon_mime_type: null
+          }]
+        };
+      }
+      if (sql.includes("WHERE id = $1") && params[0] === signalId) {
+        clearedSignalId = params[0];
+        return { rows: [] };
+      }
+      throw new Error(`unexpected query: ${sql}`);
+    }
+  };
+
+  const server = createApp(pool);
+  await listen(server);
+  const { port } = server.address();
+
+  try {
+    const response = await fetch(
+      `http://127.0.0.1:${port}/v1/signals/detail?signalId=${signalId}&installationId=${viewerInstallationId}`
+    );
+
+    assert.equal(response.status, 200);
+    const body = await response.json();
+    assert.equal(body.signal.attachmentBase64, "aGVsbG8=");
+    assert.equal(body.signal.attachmentMimeType, "image/jpeg");
+    assert.equal(clearedSignalId, signalId);
+  } finally {
+    if (previousAPIKey === undefined) {
+      delete process.env.PUI_CORE_API_KEY;
+    } else {
+      process.env.PUI_CORE_API_KEY = previousAPIKey;
+    }
+    await close(server);
+  }
+});
+
 test("signal inbox returns recent received signals with sender profile", async () => {
   const previousAPIKey = process.env.PUI_CORE_API_KEY;
   delete process.env.PUI_CORE_API_KEY;
@@ -178,10 +267,10 @@ test("signal inbox returns recent received signals with sender profile", async (
             client_signal_id: "client-inbox-1",
             mood: "cheer",
             note: "×3",
-            attachment_base64: null,
-            attachment_mime_type: null,
-            attachment_filename: null,
-            attachment_expires_at: null,
+            attachment_base64: "aGVsbG8=",
+            attachment_mime_type: "image/jpeg",
+            attachment_filename: "whats-up.jpg",
+            attachment_expires_at: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
             status: "push_sent",
             created_at: "2026-06-28T09:00:00.000Z",
             delivered_at: null,
@@ -212,6 +301,8 @@ test("signal inbox returns recent received signals with sender profile", async (
     assert.equal(body.signals.length, 1);
     assert.equal(body.signals[0].id, signalId);
     assert.equal(body.signals[0].mood, "cheer");
+    assert.equal(body.signals[0].attachmentBase64, null);
+    assert.equal(body.signals[0].attachmentMimeType, "image/jpeg");
     assert.equal(body.signals[0].sender.installationId, senderInstallationId);
     assert.equal(body.signals[0].sender.displayName, "Sender");
     assert.equal(body.signals[0].sender.profileIconBase64, "aWNvbi0y");

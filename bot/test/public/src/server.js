@@ -408,9 +408,19 @@ async function handleSignalDetail(url, response, pool) {
     error.statusCode = 410;
     throw error;
   }
+  if (signal.attachment_expires_at && !signal.attachment_base64) {
+    const error = new Error("attachment unavailable");
+    error.statusCode = 410;
+    throw error;
+  }
+
+  const responseSignal = toSignalWithSender(signal);
+  if (signal.recipient_device_id === viewerDevice.id && signal.attachment_base64) {
+    await clearSignalAttachment(pool, signal.id);
+  }
 
   sendJson(response, 200, {
-    signal: toSignalWithSender(signal)
+    signal: responseSignal
   });
 }
 
@@ -451,7 +461,7 @@ async function handleSignalInbox(url, response, pool) {
   );
 
   sendJson(response, 200, {
-    signals: result.rows.map(toSignalWithSender)
+    signals: result.rows.map(toSignalWithSenderSummary)
   });
 }
 
@@ -574,6 +584,7 @@ async function insertAndDeliverSignal(response, pool, input) {
     senderDisplayName: input.senderDevice.display_name,
     senderProfileImageBase64: input.senderDevice.profile_image_base64,
     senderProfileImageMimeType: input.senderDevice.profile_image_mime_type,
+    attachmentExpiresAt: signal.attachment_expires_at,
     createdAt: signal.created_at
   };
   if (input.senderInstallationId) {
@@ -771,7 +782,7 @@ async function handleSignalsPending(url, response, pool) {
   );
 
   sendJson(response, 200, {
-    signals: result.rows.map(toSignalWithSender)
+    signals: result.rows.map(toSignalWithSenderSummary)
   });
 }
 
@@ -1011,6 +1022,27 @@ function toSignal(row) {
 function toSignalWithSender(row) {
   return {
     ...toSignal(row),
+    sender: {
+      installationId: row.sender_installation_id,
+      displayName: row.sender_display_name,
+      profileImageBase64: row.sender_profile_image_base64,
+      profileImageMimeType: row.sender_profile_image_mime_type,
+      profileIconBase64: row.sender_profile_icon_base64,
+      profileIconMimeType: row.sender_profile_icon_mime_type
+    }
+  };
+}
+
+function toSignalSummary(row) {
+  return {
+    ...toSignal(row),
+    attachmentBase64: null
+  };
+}
+
+function toSignalWithSenderSummary(row) {
+  return {
+    ...toSignalSummary(row),
     sender: {
       installationId: row.sender_installation_id,
       displayName: row.sender_display_name,
