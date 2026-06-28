@@ -1,0 +1,17 @@
+{
+  "name": "pui-core-missyou-test-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MVP API for missyou signal delivery under pui-core bot/test.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "pg": "^8.22.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
