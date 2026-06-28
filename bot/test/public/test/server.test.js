@@ -47,3 +47,90 @@ test("server returns 400 for invalid async handler payload without exiting", asy
     await close(server);
   }
 });
+
+test("signal detail returns 410 and clears expired attachment payload", async () => {
+  const previousAPIKey = process.env.PUI_CORE_API_KEY;
+  delete process.env.PUI_CORE_API_KEY;
+
+  const signalId = "72600000-0000-4000-8000-000000000101";
+  const viewerInstallationId = "72600000-0000-4000-8000-000000000201";
+  const viewerDeviceId = "72600000-0000-4000-8000-000000000202";
+  let clearedSignalId = null;
+  const pool = {
+    query: async (sql, params = []) => {
+      if (sql.includes("FROM devices") && sql.includes("installation_id = $1")) {
+        return {
+          rows: [{
+            id: viewerDeviceId,
+            installation_id: viewerInstallationId,
+            platform: "ios",
+            apns_token: "token",
+            app_version: "0.1.0",
+            display_name: "Viewer",
+            profile_image_base64: null,
+            profile_image_mime_type: null,
+            profile_icon_base64: null,
+            profile_icon_mime_type: null,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("attachment_expires_at <= now()") && params.length === 0) {
+        return { rows: [] };
+      }
+      if (sql.includes("FROM signals") && sql.includes("JOIN devices sender")) {
+        return {
+          rows: [{
+            id: signalId,
+            friendship_id: "72600000-0000-4000-8000-000000000301",
+            sender_device_id: "72600000-0000-4000-8000-000000000302",
+            recipient_device_id: viewerDeviceId,
+            client_signal_id: "client-1",
+            mood: "whatsUp",
+            note: null,
+            attachment_base64: "aGVsbG8=",
+            attachment_mime_type: "image/jpeg",
+            attachment_filename: "whats-up.jpg",
+            attachment_expires_at: new Date(Date.now() - 1000).toISOString(),
+            status: "stored",
+            created_at: new Date(Date.now() - 13 * 60 * 60 * 1000).toISOString(),
+            delivered_at: null,
+            sender_installation_id: "72600000-0000-4000-8000-000000000303",
+            sender_display_name: "Sender",
+            sender_profile_image_base64: null,
+            sender_profile_image_mime_type: null,
+            sender_profile_icon_base64: null,
+            sender_profile_icon_mime_type: null
+          }]
+        };
+      }
+      if (sql.includes("WHERE id = $1") && params[0] === signalId) {
+        clearedSignalId = params[0];
+        return { rows: [] };
+      }
+      throw new Error(`unexpected query: ${sql}`);
+    }
+  };
+
+  const server = createApp(pool);
+  await listen(server);
+  const { port } = server.address();
+
+  try {
+    const response = await fetch(
+      `http://127.0.0.1:${port}/v1/signals/detail?signalId=${signalId}&installationId=${viewerInstallationId}`
+    );
+
+    assert.equal(response.status, 410);
+    assert.equal((await response.json()).message, "attachment expired");
+    assert.equal(clearedSignalId, signalId);
+  } finally {
+    if (previousAPIKey === undefined) {
+      delete process.env.PUI_CORE_API_KEY;
+    } else {
+      process.env.PUI_CORE_API_KEY = previousAPIKey;
+    }
+    await close(server);
+  }
+});

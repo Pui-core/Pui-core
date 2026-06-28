@@ -357,6 +357,7 @@ async function handleSignalSend(request, response, pool) {
 async function handleSignalDetail(url, response, pool) {
   const input = validateSignalDetailQuery(url.searchParams);
   const viewerDevice = await findDeviceByInstallationId(pool, input.installationId);
+  await cleanupExpiredSignalAttachments(pool);
   const result = await pool.query(
     `
       SELECT
@@ -370,6 +371,7 @@ async function handleSignalDetail(url, response, pool) {
         signals.attachment_base64,
         signals.attachment_mime_type,
         signals.attachment_filename,
+        signals.attachment_expires_at,
         signals.status,
         signals.created_at,
         signals.delivered_at,
@@ -394,6 +396,12 @@ async function handleSignalDetail(url, response, pool) {
   if (!signal) {
     const error = new Error("signal not found");
     error.statusCode = 404;
+    throw error;
+  }
+  if (isSignalAttachmentExpired(signal)) {
+    await clearSignalAttachment(pool, signal.id);
+    const error = new Error("attachment expired");
+    error.statusCode = 410;
     throw error;
   }
 
@@ -443,6 +451,10 @@ async function handleDirectSignalSend(request, response, pool) {
 }
 
 async function insertAndDeliverSignal(response, pool, input) {
+  await cleanupExpiredSignalAttachments(pool);
+  const attachmentExpiresAt = input.attachmentBase64
+    ? new Date(Date.now() + 12 * 60 * 60 * 1000)
+    : null;
   const insertResult = await pool.query(
     `
       INSERT INTO signals (
@@ -454,19 +466,21 @@ async function insertAndDeliverSignal(response, pool, input) {
         note,
         attachment_base64,
         attachment_mime_type,
-        attachment_filename
+        attachment_filename,
+        attachment_expires_at
       )
-      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
       ON CONFLICT (sender_device_id, client_signal_id)
       WHERE client_signal_id IS NOT NULL
       DO UPDATE SET
         client_signal_id = EXCLUDED.client_signal_id,
         attachment_base64 = COALESCE(EXCLUDED.attachment_base64, signals.attachment_base64),
         attachment_mime_type = COALESCE(EXCLUDED.attachment_mime_type, signals.attachment_mime_type),
-        attachment_filename = COALESCE(EXCLUDED.attachment_filename, signals.attachment_filename)
+        attachment_filename = COALESCE(EXCLUDED.attachment_filename, signals.attachment_filename),
+        attachment_expires_at = COALESCE(EXCLUDED.attachment_expires_at, signals.attachment_expires_at)
       RETURNING id, friendship_id, sender_device_id, recipient_device_id,
         client_signal_id, mood, note, attachment_base64, attachment_mime_type,
-        attachment_filename, status, created_at
+        attachment_filename, attachment_expires_at, status, created_at
     `,
     [
       input.friendshipId,
@@ -477,7 +491,8 @@ async function insertAndDeliverSignal(response, pool, input) {
       input.note,
       input.attachmentBase64,
       input.attachmentMimeType,
-      input.attachmentFilename
+      input.attachmentFilename,
+      attachmentExpiresAt
     ]
   );
   const signal = insertResult.rows[0];
@@ -485,12 +500,18 @@ async function insertAndDeliverSignal(response, pool, input) {
   const photoAttachment = getPhotoAttachment(input);
   const notificationPhotoAttachment = getNotificationPhotoAttachment(input, photoAttachment);
   const signalIntent = getSignalIntent(signal.mood, photoAttachment);
+  const notificationBody = getNotificationBody(
+    signal.mood,
+    stampMetadata,
+    photoAttachment,
+    signal.note
+  );
 
   const apnsPayload = {
     aps: {
       alert: {
         title: input.senderDevice.display_name || "missyou",
-        body: signal.note || getNotificationBody(signal.mood, stampMetadata, photoAttachment)
+        body: notificationBody
       },
       sound: "default",
       "mutable-content": 1,
@@ -585,22 +606,32 @@ function getSignalIntent(mood, photoAttachment) {
   return photoAttachment ? "photo_response" : "photo_request";
 }
 
-function getNotificationBody(mood, stampMetadata, photoAttachment) {
+function getNotificationBody(mood, stampMetadata, photoAttachment, note) {
+  if (note && !isIntensityNote(note)) {
+    return note;
+  }
   if (mood === "whatsUp") {
     return photoAttachment
-      ? "What's up写真が届きました"
+      ? "今何してる？写真が届きました"
       : "いまの写真がほしいみたい";
   }
   if (photoAttachment) {
     return "写真が届きました";
   }
+  if (note && isIntensityNote(note)) {
+    return `${stampMetadata.title} ${note}`;
+  }
   return `${stampMetadata.title}スタンプが届きました`;
+}
+
+function isIntensityNote(note) {
+  return /^×[2-9]$/.test(note);
 }
 
 function getStampMetadata(mood, requestedThumbnailName) {
   const metadata = {
     whatsUp: {
-      title: "What's up",
+      title: "今何してる？",
       thumbnailName: "stamp-whats-up"
     },
     wantToMeet: {
@@ -626,6 +657,26 @@ function getStampMetadata(mood, requestedThumbnailName) {
     goodNight: {
       title: "おやすみ",
       thumbnailName: "stamp-good-night"
+    },
+    cheer: {
+      title: "応援",
+      thumbnailName: "stamp-cheer"
+    },
+    missYou: {
+      title: "さみしい",
+      thumbnailName: "stamp-miss-you"
+    },
+    sorry: {
+      title: "ごめん",
+      thumbnailName: "stamp-sorry"
+    },
+    letsTalk: {
+      title: "話そ",
+      thumbnailName: "stamp-lets-talk"
+    },
+    thanks: {
+      title: "ありがとう",
+      thumbnailName: "stamp-thanks"
     }
   }[mood] || {
     title: mood,
@@ -640,6 +691,7 @@ function getStampMetadata(mood, requestedThumbnailName) {
 
 async function handleSignalsPending(url, response, pool) {
   const input = validatePendingQuery(url.searchParams);
+  await cleanupExpiredSignalAttachments(pool);
   const result = await pool.query(
     `
       WITH picked AS (
@@ -656,7 +708,7 @@ async function handleSignalsPending(url, response, pool) {
         WHERE id IN (SELECT id FROM picked)
         RETURNING id, friendship_id, sender_device_id, recipient_device_id,
           client_signal_id, mood, note, attachment_base64, attachment_mime_type,
-          attachment_filename, status, created_at, delivered_at
+          attachment_filename, attachment_expires_at, status, created_at, delivered_at
       )
       SELECT
         updated.*,
@@ -676,6 +728,42 @@ async function handleSignalsPending(url, response, pool) {
   sendJson(response, 200, {
     signals: result.rows.map(toSignalWithSender)
   });
+}
+
+async function cleanupExpiredSignalAttachments(pool) {
+  await pool.query(
+    `
+      UPDATE signals
+      SET
+        attachment_base64 = NULL,
+        attachment_mime_type = NULL,
+        attachment_filename = NULL
+      WHERE attachment_expires_at IS NOT NULL
+        AND attachment_expires_at <= now()
+        AND attachment_base64 IS NOT NULL
+    `
+  );
+}
+
+async function clearSignalAttachment(pool, signalId) {
+  await pool.query(
+    `
+      UPDATE signals
+      SET
+        attachment_base64 = NULL,
+        attachment_mime_type = NULL,
+        attachment_filename = NULL
+      WHERE id = $1
+    `,
+    [signalId]
+  );
+}
+
+function isSignalAttachmentExpired(signal) {
+  if (!signal.attachment_expires_at) {
+    return false;
+  }
+  return new Date(signal.attachment_expires_at).getTime() <= Date.now();
 }
 
 async function ensureDevice(pool, deviceId) {
@@ -868,6 +956,7 @@ function toSignal(row) {
     attachmentBase64: row.attachment_base64,
     attachmentMimeType: row.attachment_mime_type,
     attachmentFilename: row.attachment_filename,
+    attachmentExpiresAt: row.attachment_expires_at,
     status: row.status,
     createdAt: row.created_at,
     deliveredAt: row.delivered_at

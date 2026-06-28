@@ -8,7 +8,12 @@ const MOODS = new Set([
   "wantToHear",
   "thinkingOfYou",
   "needHug",
-  "goodNight"
+  "goodNight",
+  "cheer",
+  "missYou",
+  "sorry",
+  "letsTalk",
+  "thanks"
 ]);
 
 function requiredString(value, field, maxLength = 256) {

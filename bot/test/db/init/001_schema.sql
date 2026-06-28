@@ -59,6 +59,7 @@ CREATE TABLE IF NOT EXISTS signals (
     attachment_base64 text,
     attachment_mime_type text,
     attachment_filename text,
+    attachment_expires_at timestamptz,
     status text NOT NULL DEFAULT 'stored',
     apns_status text,
     apns_response jsonb,
@@ -75,6 +76,9 @@ ALTER TABLE signals
 
 ALTER TABLE signals
     ADD COLUMN IF NOT EXISTS attachment_filename text;
+
+ALTER TABLE signals
+    ADD COLUMN IF NOT EXISTS attachment_expires_at timestamptz;
 
 CREATE UNIQUE INDEX IF NOT EXISTS signals_sender_client_signal_unique
     ON signals(sender_device_id, client_signal_id)

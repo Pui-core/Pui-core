@@ -133,6 +133,18 @@ test("validateDirectSignalSend accepts whatsUp mood", () => {
   assert.equal(input.thumbnailName, "stamp-whats-up");
 });
 
+test("validateDirectSignalSend accepts expanded stamp moods", () => {
+  for (const mood of ["cheer", "missYou", "sorry", "letsTalk", "thanks"]) {
+    const input = validateDirectSignalSend({
+      senderInstallationId: "72600000-0000-4000-8000-000000000001",
+      recipientInstallationId: "72600000-0000-4000-8000-000000000002",
+      mood
+    });
+
+    assert.equal(input.mood, mood);
+  }
+});
+
 test("validateDirectSignalSend accepts small photo attachment payload", () => {
   const input = validateDirectSignalSend({
     senderInstallationId: "72600000-0000-4000-8000-000000000001",
