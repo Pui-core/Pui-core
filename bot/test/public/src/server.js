@@ -13,6 +13,7 @@ const {
   validateInviteCreate,
   validatePendingQuery,
   validateSignalDetailQuery,
+  validateSignalInboxQuery,
   validateSignalSend
 } = require("./validation");
 
@@ -52,6 +53,9 @@ function createApp(pool) {
       }
       if (request.method === "GET" && url.pathname === "/v1/signals/pending") {
         return await handleSignalsPending(url, response, pool);
+      }
+      if (request.method === "GET" && url.pathname === "/v1/signals/inbox") {
+        return await handleSignalInbox(url, response, pool);
       }
       if (request.method === "GET" && url.pathname === "/v1/signals/detail") {
         return await handleSignalDetail(url, response, pool);
@@ -407,6 +411,47 @@ async function handleSignalDetail(url, response, pool) {
 
   sendJson(response, 200, {
     signal: toSignalWithSender(signal)
+  });
+}
+
+async function handleSignalInbox(url, response, pool) {
+  const input = validateSignalInboxQuery(url.searchParams);
+  const viewerDevice = await findDeviceByInstallationId(pool, input.installationId);
+  await cleanupExpiredSignalAttachments(pool);
+  const result = await pool.query(
+    `
+      SELECT
+        signals.id,
+        signals.friendship_id,
+        signals.sender_device_id,
+        signals.recipient_device_id,
+        signals.client_signal_id,
+        signals.mood,
+        signals.note,
+        signals.attachment_base64,
+        signals.attachment_mime_type,
+        signals.attachment_filename,
+        signals.attachment_expires_at,
+        signals.status,
+        signals.created_at,
+        signals.delivered_at,
+        sender.installation_id AS sender_installation_id,
+        sender.display_name AS sender_display_name,
+        sender.profile_image_base64 AS sender_profile_image_base64,
+        sender.profile_image_mime_type AS sender_profile_image_mime_type,
+        sender.profile_icon_base64 AS sender_profile_icon_base64,
+        sender.profile_icon_mime_type AS sender_profile_icon_mime_type
+      FROM signals
+      JOIN devices sender ON sender.id = signals.sender_device_id
+      WHERE signals.recipient_device_id = $1
+      ORDER BY signals.created_at DESC
+      LIMIT $2
+    `,
+    [viewerDevice.id, input.limit]
+  );
+
+  sendJson(response, 200, {
+    signals: result.rows.map(toSignalWithSender)
   });
 }
 

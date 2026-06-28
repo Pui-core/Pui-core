@@ -134,3 +134,93 @@ test("signal detail returns 410 and clears expired attachment payload", async ()
     await close(server);
   }
 });
+
+test("signal inbox returns recent received signals with sender profile", async () => {
+  const previousAPIKey = process.env.PUI_CORE_API_KEY;
+  delete process.env.PUI_CORE_API_KEY;
+
+  const signalId = "72600000-0000-4000-8000-000000000111";
+  const viewerInstallationId = "72600000-0000-4000-8000-000000000211";
+  const viewerDeviceId = "72600000-0000-4000-8000-000000000212";
+  const senderInstallationId = "72600000-0000-4000-8000-000000000311";
+  const pool = {
+    query: async (sql, params = []) => {
+      if (sql.includes("FROM devices") && sql.includes("installation_id = $1")) {
+        return {
+          rows: [{
+            id: viewerDeviceId,
+            installation_id: viewerInstallationId,
+            platform: "ios",
+            apns_token: "token",
+            app_version: "0.1.0",
+            display_name: "Viewer",
+            profile_image_base64: null,
+            profile_image_mime_type: null,
+            profile_icon_base64: null,
+            profile_icon_mime_type: null,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("attachment_expires_at <= now()") && params.length === 0) {
+        return { rows: [] };
+      }
+      if (sql.includes("WHERE signals.recipient_device_id = $1")) {
+        assert.equal(params[0], viewerDeviceId);
+        assert.equal(params[1], 2);
+        return {
+          rows: [{
+            id: signalId,
+            friendship_id: "72600000-0000-4000-8000-000000000411",
+            sender_device_id: "72600000-0000-4000-8000-000000000312",
+            recipient_device_id: viewerDeviceId,
+            client_signal_id: "client-inbox-1",
+            mood: "cheer",
+            note: "×3",
+            attachment_base64: null,
+            attachment_mime_type: null,
+            attachment_filename: null,
+            attachment_expires_at: null,
+            status: "push_sent",
+            created_at: "2026-06-28T09:00:00.000Z",
+            delivered_at: null,
+            sender_installation_id: senderInstallationId,
+            sender_display_name: "Sender",
+            sender_profile_image_base64: "aWNvbg==",
+            sender_profile_image_mime_type: "image/png",
+            sender_profile_icon_base64: "aWNvbi0y",
+            sender_profile_icon_mime_type: "image/png"
+          }]
+        };
+      }
+      throw new Error(`unexpected query: ${sql}`);
+    }
+  };
+
+  const server = createApp(pool);
+  await listen(server);
+  const { port } = server.address();
+
+  try {
+    const response = await fetch(
+      `http://127.0.0.1:${port}/v1/signals/inbox?installationId=${viewerInstallationId}&limit=2`
+    );
+
+    assert.equal(response.status, 200);
+    const body = await response.json();
+    assert.equal(body.signals.length, 1);
+    assert.equal(body.signals[0].id, signalId);
+    assert.equal(body.signals[0].mood, "cheer");
+    assert.equal(body.signals[0].sender.installationId, senderInstallationId);
+    assert.equal(body.signals[0].sender.displayName, "Sender");
+    assert.equal(body.signals[0].sender.profileIconBase64, "aWNvbi0y");
+  } finally {
+    if (previousAPIKey === undefined) {
+      delete process.env.PUI_CORE_API_KEY;
+    } else {
+      process.env.PUI_CORE_API_KEY = previousAPIKey;
+    }
+    await close(server);
+  }
+});
