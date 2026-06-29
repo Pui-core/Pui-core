@@ -315,3 +315,116 @@ test("signal inbox returns recent received signals with sender profile", async (
     await close(server);
   }
 });
+
+test("signal history returns lightweight sent and received chat rows", async () => {
+  const previousAPIKey = process.env.PUI_CORE_API_KEY;
+  delete process.env.PUI_CORE_API_KEY;
+
+  const viewerInstallationId = "72600000-0000-4000-8000-000000000511";
+  const viewerDeviceId = "72600000-0000-4000-8000-000000000512";
+  const peerInstallationId = "72600000-0000-4000-8000-000000000611";
+  const peerDeviceId = "72600000-0000-4000-8000-000000000612";
+  const pool = {
+    query: async (sql, params = []) => {
+      if (sql.includes("FROM devices") && sql.includes("installation_id = $1")) {
+        return {
+          rows: [{
+            id: viewerDeviceId,
+            installation_id: viewerInstallationId,
+            platform: "ios",
+            apns_token: "token",
+            app_version: "0.1.0",
+            display_name: "Viewer",
+            profile_image_base64: null,
+            profile_image_mime_type: null,
+            profile_icon_base64: null,
+            profile_icon_mime_type: null,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("attachment_expires_at <= now()") && params.length === 0) {
+        return { rows: [] };
+      }
+      if (sql.includes("WHERE signals.sender_device_id = $1")) {
+        assert.equal(params[0], viewerDeviceId);
+        assert.equal(params[1], 120);
+        return {
+          rows: [
+            {
+              id: "72600000-0000-4000-8000-000000000701",
+              friendship_id: "72600000-0000-4000-8000-000000000801",
+              sender_device_id: viewerDeviceId,
+              recipient_device_id: peerDeviceId,
+              client_signal_id: "client-history-sent",
+              mood: "thinkingOfYou",
+              note: "見たよ",
+              attachment_base64: "aGVsbG8=",
+              attachment_mime_type: "image/jpeg",
+              attachment_filename: "whats-up.jpg",
+              attachment_expires_at: "2026-06-29T21:00:00.000Z",
+              status: "push_sent",
+              created_at: "2026-06-29T09:00:00.000Z",
+              delivered_at: null,
+              sender_installation_id: viewerInstallationId,
+              sender_display_name: "Viewer",
+              recipient_installation_id: peerInstallationId,
+              recipient_display_name: "Peer"
+            },
+            {
+              id: "72600000-0000-4000-8000-000000000702",
+              friendship_id: "72600000-0000-4000-8000-000000000801",
+              sender_device_id: peerDeviceId,
+              recipient_device_id: viewerDeviceId,
+              client_signal_id: "client-history-received",
+              mood: "cheer",
+              note: "×3",
+              attachment_base64: null,
+              attachment_mime_type: null,
+              attachment_filename: null,
+              attachment_expires_at: null,
+              status: "push_sent",
+              created_at: "2026-06-29T08:59:00.000Z",
+              delivered_at: null,
+              sender_installation_id: peerInstallationId,
+              sender_display_name: "Peer",
+              recipient_installation_id: viewerInstallationId,
+              recipient_display_name: "Viewer"
+            }
+          ]
+        };
+      }
+      throw new Error(`unexpected query: ${sql}`);
+    }
+  };
+
+  const server = createApp(pool);
+  await listen(server);
+  const { port } = server.address();
+
+  try {
+    const response = await fetch(
+      `http://127.0.0.1:${port}/v1/signals/history?installationId=${viewerInstallationId}&limit=120`
+    );
+
+    assert.equal(response.status, 200);
+    const body = await response.json();
+    assert.equal(body.signals.length, 2);
+    assert.equal(body.signals[0].direction, "sent");
+    assert.equal(body.signals[0].sender.installationId, viewerInstallationId);
+    assert.equal(body.signals[0].recipient.installationId, peerInstallationId);
+    assert.equal(body.signals[0].counterpart.installationId, peerInstallationId);
+    assert.equal(body.signals[0].attachmentBase64, null);
+    assert.equal(body.signals[0].sender.profileIconBase64, null);
+    assert.equal(body.signals[1].direction, "received");
+    assert.equal(body.signals[1].counterpart.displayName, "Peer");
+  } finally {
+    if (previousAPIKey === undefined) {
+      delete process.env.PUI_CORE_API_KEY;
+    } else {
+      process.env.PUI_CORE_API_KEY = previousAPIKey;
+    }
+    await close(server);
+  }
+});

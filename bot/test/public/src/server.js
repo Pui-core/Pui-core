@@ -13,6 +13,7 @@ const {
   validateInviteCreate,
   validatePendingQuery,
   validateSignalDetailQuery,
+  validateSignalHistoryQuery,
   validateSignalInboxQuery,
   validateSignalSend
 } = require("./validation");
@@ -56,6 +57,9 @@ function createApp(pool) {
       }
       if (request.method === "GET" && url.pathname === "/v1/signals/inbox") {
         return await handleSignalInbox(url, response, pool);
+      }
+      if (request.method === "GET" && url.pathname === "/v1/signals/history") {
+        return await handleSignalHistory(url, response, pool);
       }
       if (request.method === "GET" && url.pathname === "/v1/signals/detail") {
         return await handleSignalDetail(url, response, pool);
@@ -462,6 +466,47 @@ async function handleSignalInbox(url, response, pool) {
 
   sendJson(response, 200, {
     signals: result.rows.map(toSignalWithSenderSummary)
+  });
+}
+
+async function handleSignalHistory(url, response, pool) {
+  const input = validateSignalHistoryQuery(url.searchParams);
+  const viewerDevice = await findDeviceByInstallationId(pool, input.installationId);
+  await cleanupExpiredSignalAttachments(pool);
+  const result = await pool.query(
+    `
+      SELECT
+        signals.id,
+        signals.friendship_id,
+        signals.sender_device_id,
+        signals.recipient_device_id,
+        signals.client_signal_id,
+        signals.mood,
+        signals.note,
+        signals.attachment_base64,
+        signals.attachment_mime_type,
+        signals.attachment_filename,
+        signals.attachment_expires_at,
+        signals.status,
+        signals.created_at,
+        signals.delivered_at,
+        sender.installation_id AS sender_installation_id,
+        sender.display_name AS sender_display_name,
+        recipient.installation_id AS recipient_installation_id,
+        recipient.display_name AS recipient_display_name
+      FROM signals
+      JOIN devices sender ON sender.id = signals.sender_device_id
+      JOIN devices recipient ON recipient.id = signals.recipient_device_id
+      WHERE signals.sender_device_id = $1
+         OR signals.recipient_device_id = $1
+      ORDER BY signals.created_at DESC
+      LIMIT $2
+    `,
+    [viewerDevice.id, input.limit]
+  );
+
+  sendJson(response, 200, {
+    signals: result.rows.map((row) => toSignalHistorySummary(row, viewerDevice.id))
   });
 }
 
@@ -1051,6 +1096,30 @@ function toSignalWithSenderSummary(row) {
       profileIconBase64: row.sender_profile_icon_base64,
       profileIconMimeType: row.sender_profile_icon_mime_type
     }
+  };
+}
+
+function toLightSignalParticipant(row, prefix) {
+  return {
+    installationId: row[`${prefix}_installation_id`],
+    displayName: row[`${prefix}_display_name`],
+    profileImageBase64: null,
+    profileImageMimeType: null,
+    profileIconBase64: null,
+    profileIconMimeType: null
+  };
+}
+
+function toSignalHistorySummary(row, viewerDeviceId) {
+  const sender = toLightSignalParticipant(row, "sender");
+  const recipient = toLightSignalParticipant(row, "recipient");
+  const direction = row.sender_device_id === viewerDeviceId ? "sent" : "received";
+  return {
+    ...toSignalSummary(row),
+    direction,
+    sender,
+    recipient,
+    counterpart: direction === "sent" ? recipient : sender
   };
 }
 
