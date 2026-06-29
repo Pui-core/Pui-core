@@ -76,6 +76,199 @@ test("server returns 400 for invalid async handler payload without exiting", asy
   }
 });
 
+test("invite create auto-registers owner installation before APNs registration", async () => {
+  const previousAPIKey = process.env.PUI_CORE_API_KEY;
+  delete process.env.PUI_CORE_API_KEY;
+
+  const ownerInstallationId = "72600000-0000-4000-8000-000000000501";
+  const ownerDeviceId = "72600000-0000-4000-8000-000000000502";
+  const calls = [];
+  const pool = {
+    query: async (sql, params = []) => {
+      calls.push(sql);
+      if (sql.includes("FROM devices") && sql.includes("installation_id = $1")) {
+        assert.equal(params[0], ownerInstallationId);
+        return { rows: [] };
+      }
+      if (sql.includes("INSERT INTO devices (installation_id, platform, apns_token)")) {
+        assert.equal(params[0], ownerInstallationId);
+        assert.equal(params[1], "pending-invite-72600000000040008000000000000501");
+        return {
+          rows: [{
+            id: ownerDeviceId,
+            installation_id: ownerInstallationId,
+            platform: "ios",
+            app_version: null,
+            display_name: null,
+            profile_image_base64: null,
+            profile_image_mime_type: null,
+            profile_icon_base64: null,
+            profile_icon_mime_type: null,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("UPDATE devices")) {
+        assert.equal(params[0], ownerDeviceId);
+        assert.equal(params[1], "Tester");
+        return { rows: [] };
+      }
+      if (sql.includes("INSERT INTO invite_codes")) {
+        assert.equal(params[1], ownerDeviceId);
+        return {
+          rows: [{
+            code: "ABCD1234",
+            owner_device_id: ownerDeviceId,
+            display_name: "Tester",
+            expires_at: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
+            created_at: new Date().toISOString()
+          }]
+        };
+      }
+      throw new Error(`unexpected query: ${sql}`);
+    }
+  };
+
+  const server = createApp(pool);
+  await listen(server);
+  const { port } = server.address();
+
+  try {
+    const response = await fetch(`http://127.0.0.1:${port}/v1/invites/create`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        ownerInstallationId,
+        displayName: "Tester",
+        profileDisplayName: "Tester"
+      })
+    });
+
+    assert.equal(response.status, 201);
+    assert.equal((await response.json()).invite.code, "ABCD1234");
+    assert.equal(calls.length, 4);
+  } finally {
+    if (previousAPIKey === undefined) {
+      delete process.env.PUI_CORE_API_KEY;
+    } else {
+      process.env.PUI_CORE_API_KEY = previousAPIKey;
+    }
+    await close(server);
+  }
+});
+
+test("invite accept auto-registers acceptor installation before APNs registration", async () => {
+  const previousAPIKey = process.env.PUI_CORE_API_KEY;
+  delete process.env.PUI_CORE_API_KEY;
+
+  const acceptorInstallationId = "72600000-0000-4000-8000-000000000511";
+  const acceptorDeviceId = "72600000-0000-4000-8000-000000000512";
+  const ownerInstallationId = "72600000-0000-4000-8000-000000000513";
+  const ownerDeviceId = "72600000-0000-4000-8000-000000000514";
+  const friendshipId = "72600000-0000-4000-8000-000000000515";
+  const pool = {
+    query: async (sql, params = []) => {
+      if (sql.includes("FROM devices") && sql.includes("installation_id = $1")) {
+        assert.equal(params[0], acceptorInstallationId);
+        return { rows: [] };
+      }
+      if (sql.includes("INSERT INTO devices (installation_id, platform, apns_token)")) {
+        assert.equal(params[0], acceptorInstallationId);
+        assert.equal(params[1], "pending-invite-72600000000040008000000000000511");
+        return {
+          rows: [{
+            id: acceptorDeviceId,
+            installation_id: acceptorInstallationId,
+            platform: "ios",
+            app_version: null,
+            display_name: null,
+            profile_image_base64: null,
+            profile_image_mime_type: null,
+            profile_icon_base64: null,
+            profile_icon_mime_type: null,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("UPDATE devices")) {
+        assert.equal(params[0], acceptorDeviceId);
+        assert.equal(params[1], "Acceptor");
+        return { rows: [] };
+      }
+      if (sql.includes("FROM invite_codes")) {
+        assert.equal(params[0], "ABCD1234");
+        return {
+          rows: [{
+            code: "ABCD1234",
+            owner_device_id: ownerDeviceId,
+            display_name: "Owner",
+            expires_at: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
+            accepted_at: null,
+            created_at: new Date().toISOString(),
+            owner_installation_id: ownerInstallationId,
+            owner_platform: "ios",
+            owner_app_version: "1.0",
+            owner_display_name: "Owner",
+            owner_profile_image_base64: null,
+            owner_profile_image_mime_type: null,
+            owner_profile_icon_base64: null,
+            owner_profile_icon_mime_type: null,
+            owner_created_at: new Date().toISOString(),
+            owner_updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("INSERT INTO friendships")) {
+        assert.deepEqual(params, [acceptorDeviceId, ownerDeviceId].sort());
+        return {
+          rows: [{
+            id: friendshipId,
+            device_a_id: params[0],
+            device_b_id: params[1],
+            created_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("UPDATE invite_codes SET accepted_at")) {
+        assert.equal(params[0], "ABCD1234");
+        return { rows: [] };
+      }
+      throw new Error(`unexpected query: ${sql}`);
+    }
+  };
+
+  const server = createApp(pool);
+  await listen(server);
+  const { port } = server.address();
+
+  try {
+    const response = await fetch(`http://127.0.0.1:${port}/v1/invites/accept`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        code: "abcd1234",
+        acceptorInstallationId,
+        profileDisplayName: "Acceptor"
+      })
+    });
+
+    assert.equal(response.status, 200);
+    const body = await response.json();
+    assert.equal(body.friendship.id, friendshipId);
+    assert.equal(body.peer.installationId, ownerInstallationId);
+    assert.equal(body.invite.code, "ABCD1234");
+  } finally {
+    if (previousAPIKey === undefined) {
+      delete process.env.PUI_CORE_API_KEY;
+    } else {
+      process.env.PUI_CORE_API_KEY = previousAPIKey;
+    }
+    await close(server);
+  }
+});
+
 test("signal detail returns 410 and clears expired attachment payload", async () => {
   const previousAPIKey = process.env.PUI_CORE_API_KEY;
   delete process.env.PUI_CORE_API_KEY;
