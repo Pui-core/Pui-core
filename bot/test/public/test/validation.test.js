@@ -7,6 +7,7 @@ const {
   validateDirectSignalSend,
   validateInviteAccept,
   validateInviteCreate,
+  validateSignalHistoryQuery,
   validateSignalSend
 } = require("../src/validation");
 
@@ -184,6 +185,26 @@ test("validateDirectSignalSend rejects self sends", () => {
       mood: "littleLonely"
     }),
     /recipientInstallationId must be different/
+  );
+});
+
+test("validateSignalHistoryQuery accepts larger chat history window", () => {
+  const input = validateSignalHistoryQuery(new URLSearchParams({
+    installationId: "72600000-0000-4000-8000-000000000001",
+    limit: "180"
+  }));
+
+  assert.equal(input.installationId, "72600000-0000-4000-8000-000000000001");
+  assert.equal(input.limit, 180);
+});
+
+test("validateSignalHistoryQuery caps limit at 200", () => {
+  assert.throws(
+    () => validateSignalHistoryQuery(new URLSearchParams({
+      installationId: "72600000-0000-4000-8000-000000000001",
+      limit: "201"
+    })),
+    /value must be between 1 and 200/
   );
 });
 

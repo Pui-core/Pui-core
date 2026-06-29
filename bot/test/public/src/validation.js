@@ -197,6 +197,13 @@ function validateSignalInboxQuery(searchParams) {
   };
 }
 
+function validateSignalHistoryQuery(searchParams) {
+  return {
+    installationId: uuid(searchParams.get("installationId"), "installationId"),
+    limit: clampInteger(searchParams.get("limit"), 1, 200, 100)
+  };
+}
+
 function optionalBase64(value, field, maxLength) {
   const normalized = optionalString(value, field, maxLength);
   if (!normalized) {
@@ -275,6 +282,7 @@ module.exports = {
   validateInviteCreate,
   validatePendingQuery,
   validateSignalDetailQuery,
+  validateSignalHistoryQuery,
   validateSignalInboxQuery,
   validateSignalSend,
   validationError
