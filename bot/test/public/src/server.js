@@ -607,18 +607,26 @@ async function insertAndDeliverSignal(response, pool, input) {
     signal.note
   );
 
-  const apnsPayload = {
-    aps: {
-      alert: {
-        title: input.senderDevice.display_name || "missyou",
-        body: notificationBody
-      },
-      sound: "default",
-      "mutable-content": 1,
-      category: signalIntent === "photo_request"
-        ? "MISSYOU_WHATS_UP_REQUEST"
-        : "MISSYOU_STAMP"
+  const shouldUseMutableContent = shouldUseMutableNotification(
+    signalIntent,
+    notificationPhotoAttachment
+  );
+  const aps = {
+    alert: {
+      title: input.senderDevice.display_name || "missyou",
+      body: notificationBody
     },
+    sound: "default",
+    category: signalIntent === "photo_request"
+      ? "MISSYOU_WHATS_UP_REQUEST"
+      : "MISSYOU_STAMP"
+  };
+  if (shouldUseMutableContent) {
+    aps["mutable-content"] = 1;
+  }
+
+  const apnsPayload = {
+    aps,
     signalId: signal.id,
     friendshipId: signal.friendship_id,
     mood: signal.mood,
@@ -627,15 +635,17 @@ async function insertAndDeliverSignal(response, pool, input) {
     signalIntent,
     note: signal.note,
     senderDisplayName: input.senderDevice.display_name,
-    senderProfileImageBase64: input.senderDevice.profile_image_base64,
-    senderProfileImageMimeType: input.senderDevice.profile_image_mime_type,
     attachmentExpiresAt: signal.attachment_expires_at,
     createdAt: signal.created_at
   };
+  if (shouldUseMutableContent && input.senderDevice.profile_image_base64) {
+    apnsPayload.senderProfileImageBase64 = input.senderDevice.profile_image_base64;
+    apnsPayload.senderProfileImageMimeType = input.senderDevice.profile_image_mime_type;
+  }
   if (input.senderInstallationId) {
     apnsPayload.senderInstallationId = input.senderInstallationId;
   }
-  if (notificationPhotoAttachment) {
+  if (shouldUseMutableContent && notificationPhotoAttachment) {
     apnsPayload.attachmentBase64 = notificationPhotoAttachment.base64;
     apnsPayload.attachmentMimeType = notificationPhotoAttachment.mimeType;
     apnsPayload.attachmentFilename = notificationPhotoAttachment.filename;
@@ -663,6 +673,10 @@ async function insertAndDeliverSignal(response, pool, input) {
     },
     delivery: apnsResult
   });
+}
+
+function shouldUseMutableNotification(signalIntent, notificationPhotoAttachment) {
+  return signalIntent === "photo_response" && Boolean(notificationPhotoAttachment);
 }
 
 function getPhotoAttachment(input) {
@@ -1132,5 +1146,6 @@ if (require.main === module) {
 }
 
 module.exports = {
-  createApp
+  createApp,
+  shouldUseMutableNotification
 };
