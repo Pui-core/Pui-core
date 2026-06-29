@@ -83,15 +83,7 @@ async function sendApnsAlert(deviceToken, payload, env = process.env) {
       });
     });
 
-    const request = client.request({
-      ":method": "POST",
-      ":path": `/3/device/${deviceToken}`,
-      authorization: `bearer ${providerToken}`,
-      "apns-topic": config.bundleId,
-      "apns-push-type": "alert",
-      "apns-priority": "10",
-      "content-type": "application/json"
-    });
+    const request = client.request(createApnsRequestHeaders(config, deviceToken, providerToken));
 
     request.setEncoding("utf8");
     request.on("response", (headers) => {
@@ -124,6 +116,19 @@ async function sendApnsAlert(deviceToken, payload, env = process.env) {
   });
 }
 
+function createApnsRequestHeaders(config, deviceToken, providerToken) {
+  return {
+    ":method": "POST",
+    ":path": `/3/device/${deviceToken}`,
+    authorization: `bearer ${providerToken}`,
+    "apns-topic": config.bundleId,
+    "apns-push-type": "alert",
+    "apns-priority": "10",
+    "apns-expiration": "0",
+    "content-type": "application/json"
+  };
+}
+
 function safeJson(value) {
   try {
     return JSON.parse(value);
@@ -133,6 +138,7 @@ function safeJson(value) {
 }
 
 module.exports = {
+  createApnsRequestHeaders,
   createProviderToken,
   loadApnsConfig,
   sendApnsAlert

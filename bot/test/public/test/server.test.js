@@ -1,6 +1,7 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { createApp } = require("../src/server");
+const { createApp, shouldUseMutableNotification } = require("../src/server");
+const { createApnsRequestHeaders } = require("../src/apns");
 
 function listen(server) {
   return new Promise((resolve) => {
@@ -13,6 +14,33 @@ function close(server) {
     server.close((error) => (error ? reject(error) : resolve()));
   });
 }
+
+test("apns headers request immediate alert delivery", () => {
+  const headers = createApnsRequestHeaders(
+    { bundleId: "com.pui-core.missyou" },
+    "device-token",
+    "provider-token"
+  );
+
+  assert.equal(headers["apns-push-type"], "alert");
+  assert.equal(headers["apns-priority"], "10");
+  assert.equal(headers["apns-expiration"], "0");
+  assert.equal(headers["apns-topic"], "com.pui-core.missyou");
+});
+
+test("mutable notification service is only used for photo previews", () => {
+  assert.equal(shouldUseMutableNotification("stamp", null), false);
+  assert.equal(shouldUseMutableNotification("photo_request", null), false);
+  assert.equal(shouldUseMutableNotification("photo_response", null), false);
+  assert.equal(
+    shouldUseMutableNotification("photo_response", {
+      base64: "aGVsbG8=",
+      mimeType: "image/jpeg",
+      filename: "preview.jpg"
+    }),
+    true
+  );
+});
 
 test("server returns 400 for invalid async handler payload without exiting", async () => {
   const pool = {
