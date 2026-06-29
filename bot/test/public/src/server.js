@@ -154,7 +154,7 @@ async function handleDeviceProfile(request, response, pool) {
 async function handleInviteCreate(request, response, pool) {
   const input = validateInviteCreate(await readJson(request));
   const ownerDevice = input.ownerInstallationId
-    ? await findDeviceByInstallationId(pool, input.ownerInstallationId)
+    ? await findOrCreateInviteDeviceByInstallationId(pool, input.ownerInstallationId)
     : await ensureDevice(pool, input.ownerDeviceId);
 
   await updateDeviceProfile(pool, ownerDevice.id, input);
@@ -190,7 +190,7 @@ async function handleInviteCreate(request, response, pool) {
 async function handleInviteAccept(request, response, pool) {
   const input = validateInviteAccept(await readJson(request));
   const acceptorDevice = input.acceptorInstallationId
-    ? await findDeviceByInstallationId(pool, input.acceptorInstallationId)
+    ? await findOrCreateInviteDeviceByInstallationId(pool, input.acceptorInstallationId)
     : await ensureDevice(pool, input.acceptorDeviceId);
 
   await updateDeviceProfile(pool, acceptorDevice.id, input);
@@ -903,6 +903,42 @@ async function ensureDevice(pool, deviceId) {
 }
 
 async function findDeviceByInstallationId(pool, installationId) {
+  const device = await findDeviceByInstallationIdOrNull(pool, installationId);
+  if (!device) {
+    const error = new Error("device not registered");
+    error.statusCode = 404;
+    throw error;
+  }
+  return device;
+}
+
+async function findOrCreateInviteDeviceByInstallationId(pool, installationId) {
+  const device = await findDeviceByInstallationIdOrNull(pool, installationId);
+  if (device) {
+    return device;
+  }
+
+  const result = await pool.query(
+    `
+      INSERT INTO devices (installation_id, platform, apns_token)
+      VALUES ($1, 'ios', $2)
+      ON CONFLICT (installation_id)
+      DO UPDATE SET apns_token = devices.apns_token
+      RETURNING id, installation_id, platform, app_version,
+        display_name, profile_image_base64, profile_image_mime_type,
+        profile_icon_base64, profile_icon_mime_type,
+        created_at, updated_at
+    `,
+    [installationId, pendingInviteAPNSToken(installationId)]
+  );
+  return result.rows[0];
+}
+
+function pendingInviteAPNSToken(installationId) {
+  return `pending-invite-${installationId.replace(/-/g, "")}`;
+}
+
+async function findDeviceByInstallationIdOrNull(pool, installationId) {
   const result = await pool.query(
     `
       SELECT id, installation_id, platform, apns_token, app_version,
@@ -914,13 +950,7 @@ async function findDeviceByInstallationId(pool, installationId) {
     `,
     [installationId]
   );
-  const device = result.rows[0];
-  if (!device) {
-    const error = new Error("device not registered");
-    error.statusCode = 404;
-    throw error;
-  }
-  return device;
+  return result.rows[0] || null;
 }
 
 async function updateDeviceProfile(pool, deviceId, input) {
