@@ -13,7 +13,11 @@ const MOODS = new Set([
   "missYou",
   "sorry",
   "letsTalk",
-  "thanks"
+  "thanks",
+  "loveYou",
+  "goodWork",
+  "seenIt",
+  "waiting"
 ]);
 
 function requiredString(value, field, maxLength = 256) {

@@ -135,7 +135,17 @@ test("validateDirectSignalSend accepts whatsUp mood", () => {
 });
 
 test("validateDirectSignalSend accepts expanded stamp moods", () => {
-  for (const mood of ["cheer", "missYou", "sorry", "letsTalk", "thanks"]) {
+  for (const mood of [
+    "cheer",
+    "missYou",
+    "sorry",
+    "letsTalk",
+    "thanks",
+    "loveYou",
+    "goodWork",
+    "seenIt",
+    "waiting"
+  ]) {
     const input = validateDirectSignalSend({
       senderInstallationId: "72600000-0000-4000-8000-000000000001",
       recipientInstallationId: "72600000-0000-4000-8000-000000000002",

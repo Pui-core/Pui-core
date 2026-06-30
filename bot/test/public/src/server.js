@@ -808,6 +808,22 @@ function getStampMetadata(mood, requestedThumbnailName) {
     thanks: {
       title: "ありがとう",
       thumbnailName: "stamp-thanks"
+    },
+    loveYou: {
+      title: "だいすき",
+      thumbnailName: "stamp-love-you"
+    },
+    goodWork: {
+      title: "おつかれ",
+      thumbnailName: "stamp-good-work"
+    },
+    seenIt: {
+      title: "みたよ",
+      thumbnailName: "stamp-seen-it"
+    },
+    waiting: {
+      title: "待ってる",
+      thumbnailName: "stamp-waiting"
     }
   }[mood] || {
     title: mood,
