@@ -200,6 +200,10 @@ function validateSignalInboxQuery(searchParams) {
 function validateSignalHistoryQuery(searchParams) {
   return {
     installationId: uuid(searchParams.get("installationId"), "installationId"),
+    counterpartInstallationId: optionalUuid(
+      searchParams.get("counterpartInstallationId"),
+      "counterpartInstallationId"
+    ),
     limit: clampInteger(searchParams.get("limit"), 1, 200, 100)
   };
 }
