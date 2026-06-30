@@ -472,6 +472,9 @@ async function handleSignalInbox(url, response, pool) {
 async function handleSignalHistory(url, response, pool) {
   const input = validateSignalHistoryQuery(url.searchParams);
   const viewerDevice = await findDeviceByInstallationId(pool, input.installationId);
+  const counterpartDevice = input.counterpartInstallationId
+    ? await findDeviceByInstallationId(pool, input.counterpartInstallationId)
+    : null;
   await cleanupExpiredSignalAttachments(pool);
   const result = await pool.query(
     `
@@ -497,12 +500,20 @@ async function handleSignalHistory(url, response, pool) {
       FROM signals
       JOIN devices sender ON sender.id = signals.sender_device_id
       JOIN devices recipient ON recipient.id = signals.recipient_device_id
-      WHERE signals.sender_device_id = $1
-         OR signals.recipient_device_id = $1
+      WHERE (
+        ($3::uuid IS NULL AND (signals.sender_device_id = $1 OR signals.recipient_device_id = $1))
+        OR (
+          $3::uuid IS NOT NULL
+          AND (
+            (signals.sender_device_id = $1 AND signals.recipient_device_id = $3)
+            OR (signals.sender_device_id = $3 AND signals.recipient_device_id = $1)
+          )
+        )
+      )
       ORDER BY signals.created_at DESC
       LIMIT $2
     `,
-    [viewerDevice.id, input.limit]
+    [viewerDevice.id, input.limit, counterpartDevice?.id ?? null]
   );
 
   sendJson(response, 200, {

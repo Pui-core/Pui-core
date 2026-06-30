@@ -568,9 +568,10 @@ test("signal history returns lightweight sent and received chat rows", async () 
       if (sql.includes("attachment_expires_at <= now()") && params.length === 0) {
         return { rows: [] };
       }
-      if (sql.includes("WHERE signals.sender_device_id = $1")) {
+      if (sql.includes("WHERE (") && sql.includes("$3::uuid IS NULL")) {
         assert.equal(params[0], viewerDeviceId);
         assert.equal(params[1], 120);
+        assert.equal(params[2], null);
         return {
           rows: [
             {
@@ -640,6 +641,114 @@ test("signal history returns lightweight sent and received chat rows", async () 
     assert.equal(body.signals[0].sender.profileIconBase64, null);
     assert.equal(body.signals[1].direction, "received");
     assert.equal(body.signals[1].counterpart.displayName, "Peer");
+  } finally {
+    if (previousAPIKey === undefined) {
+      delete process.env.PUI_CORE_API_KEY;
+    } else {
+      process.env.PUI_CORE_API_KEY = previousAPIKey;
+    }
+    await close(server);
+  }
+});
+
+test("signal history scopes chat rows to requested counterpart", async () => {
+  const previousAPIKey = process.env.PUI_CORE_API_KEY;
+  delete process.env.PUI_CORE_API_KEY;
+
+  const viewerInstallationId = "72600000-0000-4000-8000-000000000521";
+  const viewerDeviceId = "72600000-0000-4000-8000-000000000522";
+  const peerInstallationId = "72600000-0000-4000-8000-000000000621";
+  const peerDeviceId = "72600000-0000-4000-8000-000000000622";
+  const pool = {
+    query: async (sql, params = []) => {
+      if (sql.includes("FROM devices") && sql.includes("installation_id = $1")) {
+        if (params[0] === viewerInstallationId) {
+          return {
+            rows: [{
+              id: viewerDeviceId,
+              installation_id: viewerInstallationId,
+              platform: "ios",
+              apns_token: "token",
+              app_version: "0.1.0",
+              display_name: "Viewer",
+              profile_image_base64: null,
+              profile_image_mime_type: null,
+              profile_icon_base64: null,
+              profile_icon_mime_type: null,
+              created_at: new Date().toISOString(),
+              updated_at: new Date().toISOString()
+            }]
+          };
+        }
+        if (params[0] === peerInstallationId) {
+          return {
+            rows: [{
+              id: peerDeviceId,
+              installation_id: peerInstallationId,
+              platform: "ios",
+              apns_token: "token",
+              app_version: "0.1.0",
+              display_name: "Peer",
+              profile_image_base64: null,
+              profile_image_mime_type: null,
+              profile_icon_base64: null,
+              profile_icon_mime_type: null,
+              created_at: new Date().toISOString(),
+              updated_at: new Date().toISOString()
+            }]
+          };
+        }
+      }
+      if (sql.includes("attachment_expires_at <= now()") && params.length === 0) {
+        return { rows: [] };
+      }
+      if (sql.includes("WHERE (") && sql.includes("$3::uuid IS NOT NULL")) {
+        assert.match(sql, /signals\.sender_device_id = \$1 AND signals\.recipient_device_id = \$3/);
+        assert.match(sql, /signals\.sender_device_id = \$3 AND signals\.recipient_device_id = \$1/);
+        assert.equal(params[0], viewerDeviceId);
+        assert.equal(params[1], 50);
+        assert.equal(params[2], peerDeviceId);
+        return {
+          rows: [{
+            id: "72600000-0000-4000-8000-000000000721",
+            friendship_id: "72600000-0000-4000-8000-000000000821",
+            sender_device_id: peerDeviceId,
+            recipient_device_id: viewerDeviceId,
+            client_signal_id: "client-history-scoped",
+            mood: "thanks",
+            note: null,
+            attachment_base64: null,
+            attachment_mime_type: null,
+            attachment_filename: null,
+            attachment_expires_at: null,
+            status: "push_sent",
+            created_at: "2026-06-29T10:00:00.000Z",
+            delivered_at: null,
+            sender_installation_id: peerInstallationId,
+            sender_display_name: "Peer",
+            recipient_installation_id: viewerInstallationId,
+            recipient_display_name: "Viewer"
+          }]
+        };
+      }
+      throw new Error(`unexpected query: ${sql}`);
+    }
+  };
+
+  const server = createApp(pool);
+  await listen(server);
+  const { port } = server.address();
+
+  try {
+    const response = await fetch(
+      `http://127.0.0.1:${port}/v1/signals/history?installationId=${viewerInstallationId}&counterpartInstallationId=${peerInstallationId}&limit=50`
+    );
+
+    assert.equal(response.status, 200);
+    const body = await response.json();
+    assert.equal(body.signals.length, 1);
+    assert.equal(body.signals[0].counterpart.installationId, peerInstallationId);
+    assert.equal(body.signals[0].direction, "received");
   } finally {
     if (previousAPIKey === undefined) {
       delete process.env.PUI_CORE_API_KEY;

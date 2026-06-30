@@ -191,10 +191,12 @@ test("validateDirectSignalSend rejects self sends", () => {
 test("validateSignalHistoryQuery accepts larger chat history window", () => {
   const input = validateSignalHistoryQuery(new URLSearchParams({
     installationId: "72600000-0000-4000-8000-000000000001",
+    counterpartInstallationId: "72600000-0000-4000-8000-000000000002",
     limit: "180"
   }));
 
   assert.equal(input.installationId, "72600000-0000-4000-8000-000000000001");
+  assert.equal(input.counterpartInstallationId, "72600000-0000-4000-8000-000000000002");
   assert.equal(input.limit, 180);
 });
 
