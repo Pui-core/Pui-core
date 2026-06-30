@@ -28,8 +28,8 @@ test("apns headers request immediate alert delivery", () => {
   assert.equal(headers["apns-topic"], "com.pui-core.missyou");
 });
 
-test("mutable notification service is only used for photo previews", () => {
-  assert.equal(shouldUseMutableNotification("stamp", null), false);
+test("mutable notification service is used for stamp thumbnails and photo previews", () => {
+  assert.equal(shouldUseMutableNotification("stamp", null), true);
   assert.equal(shouldUseMutableNotification("photo_request", null), false);
   assert.equal(shouldUseMutableNotification("photo_response", null), false);
   assert.equal(

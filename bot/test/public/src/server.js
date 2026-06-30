@@ -676,7 +676,12 @@ async function insertAndDeliverSignal(response, pool, input) {
 }
 
 function shouldUseMutableNotification(signalIntent, notificationPhotoAttachment) {
-  return signalIntent === "photo_response" && Boolean(notificationPhotoAttachment);
+  if (signalIntent === "photo_request") {
+    return false;
+  }
+  return signalIntent === "photo_response"
+    ? Boolean(notificationPhotoAttachment)
+    : true;
 }
 
 function getPhotoAttachment(input) {
