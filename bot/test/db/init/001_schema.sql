@@ -30,6 +30,31 @@ ALTER TABLE devices
 ALTER TABLE devices
     ADD COLUMN IF NOT EXISTS profile_icon_mime_type text;
 
+CREATE TABLE IF NOT EXISTS missyou_accounts (
+    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+    login_id text NOT NULL UNIQUE,
+    password_salt text NOT NULL,
+    password_hash text NOT NULL,
+    created_at timestamptz NOT NULL DEFAULT now(),
+    updated_at timestamptz NOT NULL DEFAULT now(),
+    CONSTRAINT missyou_accounts_login_id_lowercase CHECK (login_id = lower(login_id))
+);
+
+CREATE TABLE IF NOT EXISTS missyou_account_devices (
+    account_id uuid NOT NULL REFERENCES missyou_accounts(id) ON DELETE CASCADE,
+    device_id uuid NOT NULL REFERENCES devices(id) ON DELETE CASCADE,
+    created_at timestamptz NOT NULL DEFAULT now(),
+    last_login_at timestamptz NOT NULL DEFAULT now(),
+    PRIMARY KEY (account_id, device_id)
+);
+
+CREATE TABLE IF NOT EXISTS missyou_migration_snapshots (
+    account_id uuid PRIMARY KEY REFERENCES missyou_accounts(id) ON DELETE CASCADE,
+    payload jsonb NOT NULL,
+    created_at timestamptz NOT NULL DEFAULT now(),
+    updated_at timestamptz NOT NULL DEFAULT now()
+);
+
 CREATE TABLE IF NOT EXISTS invite_codes (
     code text PRIMARY KEY,
     owner_device_id uuid NOT NULL REFERENCES devices(id) ON DELETE CASCADE,
@@ -95,3 +120,6 @@ CREATE INDEX IF NOT EXISTS friendships_device_b_idx
 
 CREATE INDEX IF NOT EXISTS signals_recipient_pending_idx
     ON signals(recipient_device_id, delivered_at, created_at);
+
+CREATE INDEX IF NOT EXISTS missyou_account_devices_device_idx
+    ON missyou_account_devices(device_id);

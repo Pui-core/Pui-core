@@ -2,6 +2,9 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const {
   normalizeFriendshipPair,
+  validateAccountLogin,
+  validateAccountMigrationSave,
+  validateAccountRegister,
   validateDeviceRegistration,
   validateDeviceProfileUpdate,
   validateDirectSignalSend,
@@ -10,6 +13,69 @@ const {
   validateSignalHistoryQuery,
   validateSignalSend
 } = require("../src/validation");
+
+test("validateAccountRegister normalizes login and accepts migration payload", () => {
+  const input = validateAccountRegister({
+    loginId: " Tsuka.Pro ",
+    password: "password-123",
+    installationId: "72600000-0000-4000-8000-000000000021",
+    migrationPayload: {
+      schemaVersion: 1,
+      values: {
+        "missyou.identity.v1": {
+          kind: "data",
+          value: "aGVsbG8="
+        }
+      }
+    }
+  });
+
+  assert.equal(input.loginId, "tsuka.pro");
+  assert.equal(input.password, "password-123");
+  assert.equal(input.installationId, "72600000-0000-4000-8000-000000000021");
+  assert.equal(input.migrationPayload.schemaVersion, 1);
+});
+
+test("validateAccountLogin rejects weak account credentials", () => {
+  assert.throws(
+    () => validateAccountLogin({
+      loginId: "ab",
+      password: "password-123",
+      installationId: "72600000-0000-4000-8000-000000000021"
+    }),
+    /loginId must be 4-32 characters/
+  );
+
+  assert.throws(
+    () => validateAccountLogin({
+      loginId: "valid-user",
+      password: "short",
+      installationId: "72600000-0000-4000-8000-000000000021"
+    }),
+    /password must be between 8 and 72 characters/
+  );
+});
+
+test("validateAccountMigrationSave requires object payload", () => {
+  assert.throws(
+    () => validateAccountMigrationSave({
+      loginId: "valid-user",
+      password: "password-123",
+      installationId: "72600000-0000-4000-8000-000000000021"
+    }),
+    /migrationPayload is required/
+  );
+
+  assert.throws(
+    () => validateAccountMigrationSave({
+      loginId: "valid-user",
+      password: "password-123",
+      installationId: "72600000-0000-4000-8000-000000000021",
+      migrationPayload: []
+    }),
+    /migrationPayload must be an object/
+  );
+});
 
 test("validateDeviceRegistration trims supported iOS payload", () => {
   const input = validateDeviceRegistration({

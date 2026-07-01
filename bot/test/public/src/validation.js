@@ -1,6 +1,8 @@
 const crypto = require("node:crypto");
 
 const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+const LOGIN_ID_PATTERN = /^[a-z0-9][a-z0-9_.-]{2,30}[a-z0-9]$/;
+const MAX_MIGRATION_PAYLOAD_BYTES = 850000;
 const MOODS = new Set([
   "whatsUp",
   "wantToMeet",
@@ -100,6 +102,34 @@ function validateDeviceProfileUpdate(body) {
     throw validationError("profileDisplayName or profileImageBase64 is required");
   }
   return input;
+}
+
+function validateAccountRegister(body) {
+  return {
+    ...accountCredentialInput(body),
+    installationId: uuid(body.installationId, "installationId"),
+    migrationPayload: optionalMigrationPayload(body.migrationPayload)
+  };
+}
+
+function validateAccountLogin(body) {
+  return {
+    ...accountCredentialInput(body),
+    installationId: uuid(body.installationId, "installationId")
+  };
+}
+
+function validateAccountMigrationSave(body) {
+  const migrationPayload = optionalMigrationPayload(body.migrationPayload);
+  if (!migrationPayload) {
+    throw validationError("migrationPayload is required");
+  }
+
+  return {
+    ...accountCredentialInput(body),
+    installationId: uuid(body.installationId, "installationId"),
+    migrationPayload
+  };
 }
 
 function validateInviteCreate(body) {
@@ -223,6 +253,46 @@ function optionalBase64(value, field, maxLength) {
   return normalized;
 }
 
+function accountCredentialInput(body) {
+  return {
+    loginId: normalizeLoginId(body.loginId),
+    password: passwordString(body.password)
+  };
+}
+
+function normalizeLoginId(value) {
+  const normalized = requiredString(value, "loginId", 64).toLowerCase();
+  if (!LOGIN_ID_PATTERN.test(normalized)) {
+    throw validationError("loginId must be 4-32 characters of letters, numbers, dot, hyphen, or underscore");
+  }
+  return normalized;
+}
+
+function passwordString(value) {
+  if (typeof value !== "string") {
+    throw validationError("password must be a string");
+  }
+  if (value.length < 8 || value.length > 72) {
+    throw validationError("password must be between 8 and 72 characters");
+  }
+  return value;
+}
+
+function optionalMigrationPayload(value) {
+  if (value === undefined || value === null) {
+    return null;
+  }
+  if (typeof value !== "object" || Array.isArray(value)) {
+    throw validationError("migrationPayload must be an object");
+  }
+
+  const json = JSON.stringify(value);
+  if (Buffer.byteLength(json, "utf8") > MAX_MIGRATION_PAYLOAD_BYTES) {
+    throw validationError(`migrationPayload must be ${MAX_MIGRATION_PAYLOAD_BYTES} bytes or less`);
+  }
+  return value;
+}
+
 function profileInput(body) {
   const profileImageMimeType = optionalString(body.profileImageMimeType, "profileImageMimeType", 64);
   if (profileImageMimeType && !["image/jpeg", "image/png"].includes(profileImageMimeType)) {
@@ -282,6 +352,9 @@ module.exports = {
   MOODS,
   createInviteCode,
   normalizeFriendshipPair,
+  validateAccountLogin,
+  validateAccountMigrationSave,
+  validateAccountRegister,
   validateDeviceRegistration,
   validateDeviceProfileUpdate,
   validateDirectSignalSend,

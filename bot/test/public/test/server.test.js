@@ -1,5 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
+const crypto = require("node:crypto");
 const { createApp, shouldUseMutableNotification } = require("../src/server");
 const { createApnsRequestHeaders } = require("../src/apns");
 
@@ -66,6 +67,201 @@ test("server returns 400 for invalid async handler payload without exiting", asy
 
     const notFoundResponse = await fetch(`http://127.0.0.1:${port}/missing`);
     assert.equal(notFoundResponse.status, 404);
+  } finally {
+    if (previousAPIKey === undefined) {
+      delete process.env.PUI_CORE_API_KEY;
+    } else {
+      process.env.PUI_CORE_API_KEY = previousAPIKey;
+    }
+    await close(server);
+  }
+});
+
+test("account register hashes password and stores migration snapshot", async () => {
+  const previousAPIKey = process.env.PUI_CORE_API_KEY;
+  delete process.env.PUI_CORE_API_KEY;
+
+  const installationId = "72600000-0000-4000-8000-000000000531";
+  const deviceId = "72600000-0000-4000-8000-000000000532";
+  const accountId = "72600000-0000-4000-8000-000000000533";
+  const migrationPayload = {
+    schemaVersion: 1,
+    values: {
+      "missyou.identity.v1": {
+        kind: "data",
+        value: "aGVsbG8="
+      }
+    }
+  };
+  const pool = {
+    query: async (sql, params = []) => {
+      if (sql.includes("FROM devices") && sql.includes("installation_id = $1")) {
+        assert.equal(params[0], installationId);
+        return {
+          rows: [{
+            id: deviceId,
+            installation_id: installationId,
+            platform: "ios",
+            app_version: "1.0",
+            display_name: null,
+            profile_image_base64: null,
+            profile_image_mime_type: null,
+            profile_icon_base64: null,
+            profile_icon_mime_type: null,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("INSERT INTO missyou_accounts")) {
+        assert.equal(params[0], "tsuka-pro");
+        assert.notEqual(params[1], "password-123");
+        assert.notEqual(params[2], "password-123");
+        assert.equal(params[2].length, 128);
+        return {
+          rows: [{
+            id: accountId,
+            login_id: "tsuka-pro",
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("INSERT INTO missyou_account_devices")) {
+        assert.deepEqual(params, [accountId, deviceId]);
+        return { rows: [] };
+      }
+      if (sql.includes("INSERT INTO missyou_migration_snapshots")) {
+        assert.equal(params[0], accountId);
+        assert.deepEqual(JSON.parse(params[1]), migrationPayload);
+        return {
+          rows: [{
+            payload: migrationPayload,
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      throw new Error(`unexpected query: ${sql}`);
+    }
+  };
+
+  const server = createApp(pool);
+  await listen(server);
+  const { port } = server.address();
+
+  try {
+    const response = await fetch(`http://127.0.0.1:${port}/v1/accounts/register`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        loginId: "Tsuka-Pro",
+        password: "password-123",
+        installationId,
+        migrationPayload
+      })
+    });
+
+    assert.equal(response.status, 201);
+    const body = await response.json();
+    assert.equal(body.account.loginId, "tsuka-pro");
+    assert.deepEqual(body.migrationPayload, migrationPayload);
+  } finally {
+    if (previousAPIKey === undefined) {
+      delete process.env.PUI_CORE_API_KEY;
+    } else {
+      process.env.PUI_CORE_API_KEY = previousAPIKey;
+    }
+    await close(server);
+  }
+});
+
+test("account login verifies password and returns migration snapshot", async () => {
+  const previousAPIKey = process.env.PUI_CORE_API_KEY;
+  delete process.env.PUI_CORE_API_KEY;
+
+  const installationId = "72600000-0000-4000-8000-000000000541";
+  const deviceId = "72600000-0000-4000-8000-000000000542";
+  const accountId = "72600000-0000-4000-8000-000000000543";
+  const salt = "account-login-salt";
+  const passwordHash = crypto.scryptSync("password-123", salt, 64).toString("hex");
+  const migrationPayload = {
+    schemaVersion: 1,
+    values: {
+      "missyou.profile.v1": {
+        kind: "data",
+        value: "cHJvZmlsZQ=="
+      }
+    }
+  };
+  const pool = {
+    query: async (sql, params = []) => {
+      if (sql.includes("FROM missyou_accounts")) {
+        assert.equal(params[0], "tsuka-pro");
+        return {
+          rows: [{
+            id: accountId,
+            login_id: "tsuka-pro",
+            password_salt: salt,
+            password_hash: passwordHash,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("FROM devices") && sql.includes("installation_id = $1")) {
+        assert.equal(params[0], installationId);
+        return {
+          rows: [{
+            id: deviceId,
+            installation_id: installationId,
+            platform: "ios",
+            app_version: "1.0",
+            display_name: null,
+            profile_image_base64: null,
+            profile_image_mime_type: null,
+            profile_icon_base64: null,
+            profile_icon_mime_type: null,
+            created_at: new Date().toISOString(),
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      if (sql.includes("INSERT INTO missyou_account_devices")) {
+        assert.deepEqual(params, [accountId, deviceId]);
+        return { rows: [] };
+      }
+      if (sql.includes("FROM missyou_migration_snapshots")) {
+        assert.equal(params[0], accountId);
+        return {
+          rows: [{
+            payload: migrationPayload,
+            updated_at: new Date().toISOString()
+          }]
+        };
+      }
+      throw new Error(`unexpected query: ${sql}`);
+    }
+  };
+
+  const server = createApp(pool);
+  await listen(server);
+  const { port } = server.address();
+
+  try {
+    const response = await fetch(`http://127.0.0.1:${port}/v1/accounts/login`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        loginId: "Tsuka-Pro",
+        password: "password-123",
+        installationId
+      })
+    });
+
+    assert.equal(response.status, 200);
+    const body = await response.json();
+    assert.equal(body.account.loginId, "tsuka-pro");
+    assert.deepEqual(body.migrationPayload, migrationPayload);
   } finally {
     if (previousAPIKey === undefined) {
       delete process.env.PUI_CORE_API_KEY;
