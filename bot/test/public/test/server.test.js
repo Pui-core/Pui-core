@@ -1,6 +1,10 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { createApp, shouldUseMutableNotification } = require("../src/server");
+const {
+  createApp,
+  createFriendshipAcceptedPayload,
+  shouldUseMutableNotification
+} = require("../src/server");
 const { createApnsRequestHeaders } = require("../src/apns");
 
 function listen(server) {
@@ -40,6 +44,36 @@ test("mutable notification service is used for stamp thumbnails and photo previe
     }),
     true
   );
+});
+
+test("friendship accepted notification payload carries peer profile", () => {
+  const payload = createFriendshipAcceptedPayload({
+    friendship: {
+      id: "72600000-0000-4000-8000-000000000615",
+      created_at: "2026-07-02T01:23:45.000Z"
+    },
+    peerDevice: {
+      installation_id: "72600000-0000-4000-8000-000000000611",
+      display_name: "Old name",
+      profile_icon_base64: "b2xk",
+      profile_icon_mime_type: "image/jpeg"
+    },
+    input: {
+      profileDisplayName: "Tsuka",
+      profileIconBase64: "aWNvbg==",
+      profileIconMimeType: "image/png"
+    }
+  });
+
+  assert.equal(payload.eventType, "friendship_accepted");
+  assert.equal(payload.friendshipId, "72600000-0000-4000-8000-000000000615");
+  assert.equal(payload.peerInstallationId, "72600000-0000-4000-8000-000000000611");
+  assert.equal(payload.peerDisplayName, "Tsuka");
+  assert.equal(payload.peerProfileImageBase64, "aWNvbg==");
+  assert.equal(payload.peerProfileImageMimeType, "image/png");
+  assert.equal(payload.aps.alert.title, "Tsuka");
+  assert.equal(payload.aps.alert.body, "フレンドになりました");
+  assert.equal(payload.aps.category, "MISSYOU_FRIENDSHIP");
 });
 
 test("server returns 400 for invalid async handler payload without exiting", async () => {
@@ -259,6 +293,7 @@ test("invite accept auto-registers acceptor installation before APNs registratio
     assert.equal(body.friendship.id, friendshipId);
     assert.equal(body.peer.installationId, ownerInstallationId);
     assert.equal(body.invite.code, "ABCD1234");
+    assert.equal(body.notification.status, "skipped");
   } finally {
     if (previousAPIKey === undefined) {
       delete process.env.PUI_CORE_API_KEY;
