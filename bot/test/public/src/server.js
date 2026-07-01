@@ -206,8 +206,9 @@ async function handleInviteAccept(request, response, pool) {
         invite_codes.created_at,
         devices.installation_id AS owner_installation_id,
         devices.platform AS owner_platform,
+        devices.apns_token AS owner_apns_token,
         devices.app_version AS owner_app_version,
-      devices.display_name AS owner_display_name,
+        devices.display_name AS owner_display_name,
       devices.profile_image_base64 AS owner_profile_image_base64,
       devices.profile_image_mime_type AS owner_profile_image_mime_type,
       devices.profile_icon_base64 AS owner_profile_icon_base64,
@@ -252,8 +253,18 @@ async function handleInviteAccept(request, response, pool) {
     [input.code]
   );
 
+  const friendship = friendshipResult.rows[0];
+  const friendshipNotification = await sendFriendshipAcceptedNotification(
+    invite.owner_apns_token,
+    createFriendshipAcceptedPayload({
+      friendship,
+      peerDevice: acceptorDevice,
+      input
+    })
+  );
+
   sendJson(response, 200, {
-    friendship: toFriendship(friendshipResult.rows[0]),
+    friendship: toFriendship(friendship),
     peer: toDevice({
       id: invite.owner_device_id,
       installation_id: invite.owner_installation_id,
@@ -267,8 +278,55 @@ async function handleInviteAccept(request, response, pool) {
       created_at: invite.owner_created_at,
       updated_at: invite.owner_updated_at
     }),
-    invite: toInvite(invite)
+    invite: toInvite(invite),
+    notification: friendshipNotification
   });
+}
+
+function createFriendshipAcceptedPayload({ friendship, peerDevice, input }) {
+  const peerDisplayName = input.profileDisplayName || peerDevice.display_name || "フレンド";
+  const peerProfileImageBase64 = input.profileIconBase64
+    || input.profileImageBase64
+    || peerDevice.profile_icon_base64
+    || peerDevice.profile_image_base64;
+  const peerProfileImageMimeType = input.profileIconMimeType
+    || input.profileImageMimeType
+    || peerDevice.profile_icon_mime_type
+    || peerDevice.profile_image_mime_type;
+  const payload = {
+    aps: {
+      alert: {
+        title: peerDisplayName,
+        body: "フレンドになりました"
+      },
+      sound: "default",
+      category: "MISSYOU_FRIENDSHIP"
+    },
+    eventType: "friendship_accepted",
+    friendshipId: friendship.id,
+    peerInstallationId: peerDevice.installation_id,
+    peerDisplayName,
+    createdAt: friendship.created_at
+  };
+
+  if (peerProfileImageBase64) {
+    payload.peerProfileImageBase64 = peerProfileImageBase64;
+    payload.peerProfileImageMimeType = peerProfileImageMimeType || "image/jpeg";
+  }
+
+  return payload;
+}
+
+async function sendFriendshipAcceptedNotification(deviceToken, payload) {
+  try {
+    return await sendApnsAlert(deviceToken, payload);
+  } catch (error) {
+    return {
+      status: "failed",
+      reason: "friendship_notification_error",
+      message: error.message
+    };
+  }
 }
 
 async function handleFriendsList(url, response, pool) {
@@ -1209,5 +1267,6 @@ if (require.main === module) {
 
 module.exports = {
   createApp,
+  createFriendshipAcceptedPayload,
   shouldUseMutableNotification
 };
