@@ -1,10 +1,14 @@
 const http = require("node:http");
+const crypto = require("node:crypto");
 const { URL } = require("node:url");
 const { createPool, ping } = require("./database");
 const { sendApnsAlert } = require("./apns");
 const {
   createInviteCode,
   normalizeFriendshipPair,
+  validateAccountLogin,
+  validateAccountMigrationSave,
+  validateAccountRegister,
   validateDeviceRegistration,
   validateDeviceProfileUpdate,
   validateDirectSignalSend,
@@ -19,6 +23,7 @@ const {
 } = require("./validation");
 
 const MAX_BODY_BYTES = 1024 * 1024;
+const PASSWORD_HASH_BYTES = 64;
 
 function createApp(pool) {
   return http.createServer(async (request, response) => {
@@ -36,6 +41,15 @@ function createApp(pool) {
       }
       if (request.method === "POST" && url.pathname === "/v1/devices/profile") {
         return await handleDeviceProfile(request, response, pool);
+      }
+      if (request.method === "POST" && url.pathname === "/v1/accounts/register") {
+        return await handleAccountRegister(request, response, pool);
+      }
+      if (request.method === "POST" && url.pathname === "/v1/accounts/login") {
+        return await handleAccountLogin(request, response, pool);
+      }
+      if (request.method === "POST" && url.pathname === "/v1/accounts/migration") {
+        return await handleAccountMigrationSave(request, response, pool);
       }
       if (request.method === "POST" && url.pathname === "/v1/invites/create") {
         return await handleInviteCreate(request, response, pool);
@@ -69,7 +83,11 @@ function createApp(pool) {
     } catch (error) {
       const statusCode = error.statusCode || 500;
       sendJson(response, statusCode, {
-        error: statusCode === 500 ? "internal_error" : "bad_request",
+        error: statusCode === 500
+          ? "internal_error"
+          : statusCode === 401
+            ? "unauthorized"
+            : "bad_request",
         message: error.message
       });
     }
@@ -148,6 +166,69 @@ async function handleDeviceProfile(request, response, pool) {
 
   sendJson(response, 200, {
     device: toDevice(updatedDevice)
+  });
+}
+
+async function handleAccountRegister(request, response, pool) {
+  const input = validateAccountRegister(await readJson(request));
+  const device = await findOrCreateInviteDeviceByInstallationId(pool, input.installationId);
+  const passwordRecord = await createPasswordRecord(input.password);
+
+  let account;
+  try {
+    const result = await pool.query(
+      `
+        INSERT INTO missyou_accounts (login_id, password_salt, password_hash)
+        VALUES ($1, $2, $3)
+        RETURNING id, login_id, created_at, updated_at
+      `,
+      [input.loginId, passwordRecord.salt, passwordRecord.hash]
+    );
+    account = result.rows[0];
+  } catch (error) {
+    if (error.code === "23505") {
+      throw accountConflictError();
+    }
+    throw error;
+  }
+
+  await linkAccountDevice(pool, account.id, device.id);
+  const snapshot = input.migrationPayload
+    ? await saveMigrationPayload(pool, account.id, input.migrationPayload)
+    : null;
+
+  sendJson(response, 201, {
+    account: toAccount(account),
+    migrationPayload: snapshot?.payload ?? null,
+    migrationUpdatedAt: snapshot?.updated_at ?? null
+  });
+}
+
+async function handleAccountLogin(request, response, pool) {
+  const input = validateAccountLogin(await readJson(request));
+  const account = await authenticateAccount(pool, input.loginId, input.password);
+  const device = await findOrCreateInviteDeviceByInstallationId(pool, input.installationId);
+  await linkAccountDevice(pool, account.id, device.id);
+  const snapshot = await findMigrationPayload(pool, account.id);
+
+  sendJson(response, 200, {
+    account: toAccount(account),
+    migrationPayload: snapshot?.payload ?? null,
+    migrationUpdatedAt: snapshot?.updated_at ?? null
+  });
+}
+
+async function handleAccountMigrationSave(request, response, pool) {
+  const input = validateAccountMigrationSave(await readJson(request));
+  const account = await authenticateAccount(pool, input.loginId, input.password);
+  const device = await findOrCreateInviteDeviceByInstallationId(pool, input.installationId);
+  await linkAccountDevice(pool, account.id, device.id);
+  const snapshot = await saveMigrationPayload(pool, account.id, input.migrationPayload);
+
+  sendJson(response, 200, {
+    account: toAccount(account),
+    migrationPayload: snapshot.payload,
+    migrationUpdatedAt: snapshot.updated_at
   });
 }
 
@@ -913,6 +994,114 @@ function isSignalAttachmentExpired(signal) {
   return new Date(signal.attachment_expires_at).getTime() <= Date.now();
 }
 
+async function createPasswordRecord(password) {
+  const salt = crypto.randomBytes(16).toString("hex");
+  const hash = await derivePasswordHash(password, salt);
+  return { salt, hash };
+}
+
+function derivePasswordHash(password, salt) {
+  return new Promise((resolve, reject) => {
+    crypto.scrypt(password, salt, PASSWORD_HASH_BYTES, (error, derivedKey) => {
+      if (error) {
+        reject(error);
+        return;
+      }
+      resolve(derivedKey.toString("hex"));
+    });
+  });
+}
+
+async function verifyPassword(password, salt, expectedHash) {
+  const actualHash = await derivePasswordHash(password, salt);
+  const actual = Buffer.from(actualHash, "hex");
+  const expected = Buffer.from(expectedHash, "hex");
+  if (actual.length !== expected.length) {
+    return false;
+  }
+  return crypto.timingSafeEqual(actual, expected);
+}
+
+async function authenticateAccount(pool, loginId, password) {
+  const account = await findAccountByLoginId(pool, loginId);
+  if (!account) {
+    throw invalidCredentialsError();
+  }
+  const isValidPassword = await verifyPassword(
+    password,
+    account.password_salt,
+    account.password_hash
+  );
+  if (!isValidPassword) {
+    throw invalidCredentialsError();
+  }
+  return account;
+}
+
+async function findAccountByLoginId(pool, loginId) {
+  const result = await pool.query(
+    `
+      SELECT id, login_id, password_salt, password_hash, created_at, updated_at
+      FROM missyou_accounts
+      WHERE login_id = $1
+    `,
+    [loginId]
+  );
+  return result.rows[0] || null;
+}
+
+async function linkAccountDevice(pool, accountId, deviceId) {
+  await pool.query(
+    `
+      INSERT INTO missyou_account_devices (account_id, device_id)
+      VALUES ($1, $2)
+      ON CONFLICT (account_id, device_id)
+      DO UPDATE SET last_login_at = now()
+    `,
+    [accountId, deviceId]
+  );
+}
+
+async function saveMigrationPayload(pool, accountId, migrationPayload) {
+  const result = await pool.query(
+    `
+      INSERT INTO missyou_migration_snapshots (account_id, payload)
+      VALUES ($1, $2::jsonb)
+      ON CONFLICT (account_id)
+      DO UPDATE SET
+        payload = EXCLUDED.payload,
+        updated_at = now()
+      RETURNING payload, updated_at
+    `,
+    [accountId, JSON.stringify(migrationPayload)]
+  );
+  return result.rows[0];
+}
+
+async function findMigrationPayload(pool, accountId) {
+  const result = await pool.query(
+    `
+      SELECT payload, updated_at
+      FROM missyou_migration_snapshots
+      WHERE account_id = $1
+    `,
+    [accountId]
+  );
+  return result.rows[0] || null;
+}
+
+function accountConflictError() {
+  const error = new Error("loginId already exists");
+  error.statusCode = 409;
+  return error;
+}
+
+function invalidCredentialsError() {
+  const error = new Error("loginId or password is invalid");
+  error.statusCode = 401;
+  return error;
+}
+
 async function ensureDevice(pool, deviceId) {
   const result = await pool.query(
     `
@@ -1084,6 +1273,15 @@ function sendJson(response, statusCode, payload) {
     "cache-control": "no-store"
   });
   response.end(JSON.stringify(payload));
+}
+
+function toAccount(row) {
+  return {
+    id: row.id,
+    loginId: row.login_id,
+    createdAt: row.created_at,
+    updatedAt: row.updated_at
+  };
 }
 
 function toDevice(row) {
