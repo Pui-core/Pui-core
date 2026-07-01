@@ -13,6 +13,76 @@ bot/test/
   secrets/                # APNs秘密鍵置き場。git管理外
 ```
 
+## DB ER図
+
+初期スキーマは `db/init/001_schema.sql` で定義しています。
+
+```mermaid
+erDiagram
+    devices {
+        uuid id PK
+        text installation_id UK
+        text platform
+        text apns_token
+        text app_version
+        text display_name
+        text profile_image_base64
+        text profile_image_mime_type
+        text profile_icon_base64
+        text profile_icon_mime_type
+        timestamptz created_at
+        timestamptz updated_at
+    }
+
+    invite_codes {
+        text code PK
+        uuid owner_device_id FK
+        text display_name
+        timestamptz expires_at
+        timestamptz accepted_at
+        timestamptz created_at
+    }
+
+    friendships {
+        uuid id PK
+        uuid device_a_id FK
+        uuid device_b_id FK
+        timestamptz created_at
+    }
+
+    signals {
+        uuid id PK
+        uuid friendship_id FK
+        uuid sender_device_id FK
+        uuid recipient_device_id FK
+        text client_signal_id
+        text mood
+        text note
+        text attachment_base64
+        text attachment_mime_type
+        text attachment_filename
+        timestamptz attachment_expires_at
+        text status
+        text apns_status
+        jsonb apns_response
+        timestamptz delivered_at
+        timestamptz created_at
+    }
+
+    devices ||--o{ invite_codes : creates
+    devices ||--o{ friendships : device_a
+    devices ||--o{ friendships : device_b
+    friendships ||--o{ signals : contains
+    devices ||--o{ signals : sends
+    devices ||--o{ signals : receives
+```
+
+- `devices.installation_id` は端末内の永続IDで、API上のユーザーIDとして扱います。
+- `invite_codes.owner_device_id`、`friendships.device_a_id/device_b_id`、`signals.*_device_id` は `devices.id` へ外部キー参照します。
+- `friendships` は `device_a_id <> device_b_id` と `UNIQUE(device_a_id, device_b_id)` を持ち、API側で2端末のUUIDを正規化して保存します。
+- `signals.client_signal_id` は送信者単位で一意です。APNs再送や通信リトライ時に同じスタンプを二重保存しないために使います。
+- 今何してる？写真は `signals.attachment_base64` に保存し、`attachment_expires_at` で12時間後に期限切れとして扱います。期限切れまたは初回detail取得後に本文を削除します。
+
 ## 初回起動
 
 ```bash
