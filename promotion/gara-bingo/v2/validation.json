@@ -1,0 +1,44 @@
+{
+  "status": "TECHNICAL_PASS",
+  "visualReview": "SAMPLED_VISUAL_PASS: 15 final MP4 frames covering all 11 scenes",
+  "listening": "NOT_CLAIMED",
+  "fullDecode": true,
+  "effectcraftReopened": true,
+  "filmcraftReopened": true,
+  "nativeReopenRender": true,
+  "duration": 22,
+  "fps": 30,
+  "frames": 660,
+  "width": 1080,
+  "height": 1920,
+  "audioMeasurement": {
+    "integratedLufs": -13.9,
+    "truePeakDbfs": -1.4
+  },
+  "coverTime": 1.1,
+  "contactSheet": "5x3",
+  "sha256": "85bd39100cc5e427cefe253fd2d59efe2cfe3601341a8a1e00f5329ccb66fecc",
+  "realTimeHumanViewing": "NOT_CLAIMED",
+  "motion": {
+    "scenes": 11,
+    "bpm": 150,
+    "poseAssets": [
+      "base",
+      "point",
+      "peace"
+    ],
+    "cameraReadback": "qa/camera-readback.json",
+    "boardFocusDistancesFromScreenCenterPx": [
+      27.3,
+      11
+    ],
+    "whipTransitions": 10
+  },
+  "content": "Nine goals and original rewards preserved; 11/24 22:00 confirmed by owner.",
+  "delivery": "F:\\Users\\pui\\Documents\\gara\\bingo-1124-v2",
+  "limitations": [
+    "2D pose variations and transform animation; no continuous skeletal/Live2D rig.",
+    "No creator voice recording.",
+    "TikTok live UI and audience growth effect not tested."
+  ]
+}
