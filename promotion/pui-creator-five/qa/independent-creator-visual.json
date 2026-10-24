@@ -1,0 +1,281 @@
+{
+  "reviewScope": "独立した最終MP4抽出画像の目視。ぷいの実作品と制作する本人の存在が伝わるか、主要文字・画面構図・カット連続性を確認する。",
+  "campaignDirection": "ゲーム・アプリ・道具・曲・歌・MVを作る人として、作品そのものと制作の継続を見せる。",
+  "overallStatus": "COMPLETE_PASS_WITHIN_EXTRACTED_FRAME_SCOPE",
+  "reviews": [
+    {
+      "id": "01",
+      "slug": "01-pui-keeps-making",
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/videos/01-pui-keeps-making.mp4",
+      "sha256": "181692f6216b08d89d0620971994cbf3565fa46e36aacf90f48e1c2e4c5d8552",
+      "status": "PASS_WITHIN_EXTRACTED_FRAME_SCOPE",
+      "imagesReviewed": [
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/01-pui-keeps-making/all-scenes.jpg",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/01-pui-keeps-making/continuous-cut.jpg"
+      ],
+      "coverage": {
+        "allSceneSamples": 10,
+        "continuousFrames": 18,
+        "continuousStartSeconds": 2.6333333333333333
+      },
+      "findings": [],
+      "observations": [
+        "ObjectCreatorの剣・戦闘、EMBERWAKEの実プレイ、Glass Foldersの実UI、Truth or Lieの実タイトルUI、medicateのMVを画面の主役にしている。",
+        "冒頭の「ゲーム、作ってる。」から、道具・アプリ・曲・歌・映像へ実作品を重ね、最後にぷいの署名へ着地している。教材の説明役ではなく、作品を作り続ける本人の紹介という方向が画像で伝わる。",
+        "主要な日本語字幕、作品ラベル、最後の署名に欠けや意図しない主対象の遮蔽は見られない。medicateの既存歌詞と追加字幕は上下に分離している。",
+        "Glass FoldersからObjectCreatorへの18連続フレームでは、切替後の剣が画面中央に保たれ、追加字幕と作品ラベルも安定している。",
+        "曲・歌・MVの制作範囲はowner確認に基づく。MVの被写体をぷい本人とは判定していない。"
+      ],
+      "limits": {
+        "realTimeWholeWatchAndAudition": "NOT_PERFORMED_BY_THIS_REVIEWER",
+        "ownerCreativeAcceptance": "NOT_DETERMINED_BY_THIS_REVIEW",
+        "viralityOrRevenue": "NOT_DETERMINED"
+      },
+      "disposition": "画像から新たに確認できる必須修正はない。新方向の試作として共有可能。",
+      "evidenceImageHashes": {
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/01-pui-keeps-making/all-scenes.jpg": "a1363c5d99d577d42862e8089aa313f6ad949edb230e7050b282a6305446eb7b",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/01-pui-keeps-making/continuous-cut.jpg": "154c0dcf8135fbca3b8eccdfdac5ffbc3fcf4dcf6ed9453efba334600d407d4f"
+      }
+    },
+    {
+      "id": "02",
+      "slug": "02-pui-opens-the-inside",
+      "observations": [
+        "剣の解体、斧の実コードと実プレイ、スライム内部、ボス戦を実作品の映像として見せ、ぷいの制作物という帰属を冒頭と末尾で示している。",
+        "スライム場面には透明な外形と内部の緑色構造が見え、「生き物の中にも。」「スライムの内部」というcaptionと一致する。追従や完成リリースはcaptionで主張していない。",
+        "18連続フレームで木からスライム内部への切替を確認。追加字幕の欠けや、内部構造を隠す字幕配置は見られない。"
+      ],
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/videos/02-pui-opens-the-inside.mp4",
+      "sha256": "a767cbf44efeede3951fb2b22c6e7340a31dab70de3e92bcec387b7c812b52a5",
+      "status": "PASS_WITHIN_EXTRACTED_FRAME_SCOPE",
+      "imagesReviewed": [
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/02-pui-opens-the-inside/all-scenes.jpg",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/02-pui-opens-the-inside/continuous-cut.jpg"
+      ],
+      "coverage": {
+        "allSceneSamples": 7,
+        "allSceneFrames": [
+          17,
+          137,
+          233,
+          353,
+          425,
+          521,
+          581
+        ],
+        "continuousFrames": 18,
+        "continuousStartSeconds": 11.1
+      },
+      "findings": [],
+      "limits": {
+        "realTimeWholeWatchAndAudition": "NOT_PERFORMED_BY_THIS_REVIEWER",
+        "ownerCreativeAcceptance": "NOT_DETERMINED_BY_THIS_REVIEW",
+        "viralityOrRevenue": "NOT_DETERMINED"
+      },
+      "disposition": "この抽出画像の確認範囲で、新たな必須修正はない。",
+      "evidenceImageHashes": {
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/02-pui-opens-the-inside/all-scenes.jpg": "321cf3ea8abbbaba29001c88c3784b9e1640c2bae3bb48ee9230b2756e2ebd51",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/02-pui-opens-the-inside/continuous-cut.jpg": "f49e44ee361b5ac4c54fc6db13871a77552d6b2d96aa65d1ee669930c43a9cae"
+      }
+    },
+    {
+      "id": "03",
+      "slug": "03-pui-builds-the-night",
+      "observations": [
+        "EMBERWAKEの実ゲームを中心にし、説明のない場面も残して、夜の色・足場・キャラクターの操作を作品として見せている。",
+        "全5シーン画像と18連続フレームではプレイヤー・足場が画面内にある。追加した0.5秒間隔33サンプル（0〜16秒）でも、署名前のプレイ中に主プレイヤーがportrait cropで欠ける場面は見られない。",
+        "主字幕は上部、プレイヤーは下部に分離している。末尾は意図した暗転と署名に切り替わる。"
+      ],
+      "additionalImages": [
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/03-every-half-second.jpg"
+      ],
+      "additionalCoverage": {
+        "regularSampleFrames": 33,
+        "sampleSeconds": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2,
+          2.5,
+          3,
+          3.5,
+          4,
+          4.5,
+          5,
+          5.5,
+          6,
+          6.5,
+          7,
+          7.5,
+          8,
+          8.5,
+          9,
+          9.5,
+          10,
+          10.5,
+          11,
+          11.5,
+          12,
+          12.5,
+          13,
+          13.5,
+          14,
+          14.5,
+          15,
+          15.5,
+          16
+        ]
+      },
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/videos/03-pui-builds-the-night.mp4",
+      "sha256": "6bbf0b488783c97360f4770e3434a288b3bb0fbca3ee59d951cd0f755ea15b67",
+      "status": "PASS_WITHIN_EXTRACTED_FRAME_SCOPE",
+      "imagesReviewed": [
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/03-pui-builds-the-night/all-scenes.jpg",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/03-pui-builds-the-night/continuous-cut.jpg",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/03-every-half-second.jpg"
+      ],
+      "coverage": {
+        "allSceneSamples": 5,
+        "allSceneFrames": [
+          17,
+          59,
+          154,
+          275,
+          401
+        ],
+        "continuousFrames": 18,
+        "continuousStartSeconds": 8.5
+      },
+      "findings": [],
+      "limits": {
+        "realTimeWholeWatchAndAudition": "NOT_PERFORMED_BY_THIS_REVIEWER",
+        "ownerCreativeAcceptance": "NOT_DETERMINED_BY_THIS_REVIEW",
+        "viralityOrRevenue": "NOT_DETERMINED"
+      },
+      "disposition": "この抽出画像の確認範囲で、新たな必須修正はない。",
+      "evidenceImageHashes": {
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/03-pui-builds-the-night/all-scenes.jpg": "5e8b206b1b4e921f8d3842e55674f6a0b1a10493c10b4b3474efe730d53ed3b3",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/03-pui-builds-the-night/continuous-cut.jpg": "231bfd196c0e3a8e6cde012dbccb7844a36669adf62c00960da6dfc3b2ba3d22",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/03-every-half-second.jpg": "6c61db38116f1909adcb572b561d3cbfb410eb052875a9547c6e195d7cf8cd37"
+      }
+    },
+    {
+      "id": "04",
+      "slug": "04-pui-makes-their-tools",
+      "observations": [
+        "実際のGlass Foldersの現UI・初版・一覧・検証ダイアログを使い、自分の欲しい道具を作って直すという制作の流れを見せている。",
+        "サンプル内で読めるファイル名は「写真 1.png」等と検証用collision.txt、パスはGlassFoldersのQA用Tempフォルダ。個人の連絡先・私的なファイル内容・認証情報は確認されない。作品名と使用者名puiは表示される。",
+        "「欲しいから、作る。」「気になる所は、直す。」「触って、確かめる。」等の主要字幕に切れ・行潰れは見られない。検証用データのラベルがあり、全操作の安全性を保証する表現はない。",
+        "18連続フレームで一覧から衝突ダイアログへ切り替わり、本文画像と主要字幕は別の領域に保たれている。"
+      ],
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/videos/04-pui-makes-their-tools.mp4",
+      "sha256": "5e735b7790c335f08ec9e6d736c8aba41948f7d8c3c4eed72e24920a0e94e372",
+      "status": "PASS_WITHIN_EXTRACTED_FRAME_SCOPE",
+      "imagesReviewed": [
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/04-pui-makes-their-tools/all-scenes.jpg",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/04-pui-makes-their-tools/continuous-cut.jpg"
+      ],
+      "coverage": {
+        "allSceneSamples": 6,
+        "allSceneFrames": [
+          17,
+          99,
+          181,
+          344,
+          426,
+          590
+        ],
+        "continuousFrames": 18,
+        "continuousStartSeconds": 10.8
+      },
+      "findings": [],
+      "limits": {
+        "realTimeWholeWatchAndAudition": "NOT_PERFORMED_BY_THIS_REVIEWER",
+        "ownerCreativeAcceptance": "NOT_DETERMINED_BY_THIS_REVIEW",
+        "viralityOrRevenue": "NOT_DETERMINED"
+      },
+      "disposition": "この抽出画像の確認範囲で、新たな必須修正はない。",
+      "evidenceImageHashes": {
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/04-pui-makes-their-tools/all-scenes.jpg": "b14c9549787e495ba25ee38ee66d5574f17668f16bc5dee54b198acbb3668bd4",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/04-pui-makes-their-tools/continuous-cut.jpg": "9085ab591cb363a785c4b8b29406448cde157e9bb86c167e7724389f36493416"
+      }
+    },
+    {
+      "id": "05",
+      "slug": "05-medicate-made-by-pui",
+      "observations": [
+        "冒頭の短い制作コピー以外は元MVを主役にし、最後のぷい署名へつながる。空captionの中間に不要な黒板や追加歌詞は見られない。",
+        "元Highlightと最終MP4の同5.5秒を比較し、写真の画角・帽子・人物輪郭・背景の位置が目視で一致した。この時刻は元MVも歌詞の切替間で主歌詞が出ていない。",
+        "歌詞が出る同14.0秒も追加比較し、「思い出す / day light blue」と背景写真が同じ画面位置にある。追加ズームや歌詞の移動は見られない。",
+        "19.1秒付近の18連続フレームでは元MVから暗い署名へ意図的に切り替わる。写真の被写体をぷい本人とは判定していない。"
+      ],
+      "additionalImages": [
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-source-5.5.png",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-final-5.5.png",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-source-14.0.png",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-final-14.0.png"
+      ],
+      "sourceComparison": {
+        "source": "/mnt/e/Desktop/音源/medicate/MV_v3_ArtistLyrics/medicate_MV_v3_Highlight.mp4",
+        "sourceSha256": "2b2abb6010df93adbaa77004583c2bdc43ede5fe5d31d95ad26b8348c49c927d",
+        "sampleSeconds": [
+          5.5,
+          14
+        ],
+        "status": "PASS_VISUAL_GEOMETRY_AND_SOURCE_TIMING_AT_SAMPLES",
+        "audioSync": "NOT_A_DIRECT_AUDITORY_COMPARISON"
+      },
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/videos/05-medicate-made-by-pui.mp4",
+      "sha256": "876c7642b0d2322e8d52258328d214b08764cb547a05115142c9e581ffd578f8",
+      "status": "PASS_WITHIN_EXTRACTED_FRAME_SCOPE",
+      "imagesReviewed": [
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/05-medicate-made-by-pui/all-scenes.jpg",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/05-medicate-made-by-pui/continuous-cut.jpg",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-source-5.5.png",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-final-5.5.png",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-source-14.0.png",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-final-14.0.png"
+      ],
+      "coverage": {
+        "allSceneSamples": 3,
+        "allSceneFrames": [
+          17,
+          71,
+          593
+        ],
+        "continuousFrames": 18,
+        "continuousStartSeconds": 19.099999999999998
+      },
+      "findings": [],
+      "limits": {
+        "realTimeWholeWatchAndAudition": "NOT_PERFORMED_BY_THIS_REVIEWER",
+        "ownerCreativeAcceptance": "NOT_DETERMINED_BY_THIS_REVIEW",
+        "viralityOrRevenue": "NOT_DETERMINED"
+      },
+      "disposition": "この抽出画像の確認範囲で、新たな必須修正はない。",
+      "evidenceImageHashes": {
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/05-medicate-made-by-pui/all-scenes.jpg": "7b156471c86e9dd9b148c32683922279938aa0f01371d632fdaea44177d66b56",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/05-medicate-made-by-pui/continuous-cut.jpg": "042d36084fd379c82f872a934bbec506f292d1db6e1dfcccaff14992b2439580",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-source-5.5.png": "e42fd9caaaf19e5378c485ce6df3f925157daddfd7ff55acb032e61a42ae6d8a",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-final-5.5.png": "538ccec5eadf7dcc23d512d40abffab1fa511bccdeec74a9279dad8d21684110",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-source-14.0.png": "11d5d50dac09e6532921e9ac32fce8bb2fa287a13266be6fbd270033c73c9d05",
+        "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five/qa/independent-creator-previews/05-final-14.0.png": "51af494baa3055415ba7084d8853f82849bf0da50ff78ffd9a6cd1e1a3a0a0d2"
+      }
+    }
+  ],
+  "pending": [],
+  "summary": {
+    "episodes": 5,
+    "allSceneSamples": 31,
+    "continuousFrames": 90,
+    "additionalGameplaySamples": 33,
+    "sourceFinalComparisonImagePairs": 2,
+    "requiredVisualFixes": 0
+  },
+  "limitations": [
+    "最終MP4から抽出した画像を独立目視した。全編を実時間で連続視聴・直接試聴した判定ではない。",
+    "05の画面比較は5.5秒・14.0秒の2時刻。全フレームのピクセル同一性や直接試聴による音同期を主張しない。",
+    "バズ・収益・ownerの創作承認はこの検品の判定対象外。"
+  ]
+}

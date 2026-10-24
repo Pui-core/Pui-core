@@ -1,0 +1,56 @@
+{
+  "selected": [
+    {
+      "id": "01",
+      "sourceManifest": "qa/01-pui-keeps-making/source-manifest.json",
+      "audio": "/mnt/e/Desktop/音源/medicate/MV_v3_ArtistLyrics/medicate_MV_v3_Highlight.mp4",
+      "audioAt": 0,
+      "duration": 21.6,
+      "audioPolicy": "original commission soundtrack, excerpt normalized",
+      "ownerSongConfirmed": true
+    },
+    {
+      "id": "02",
+      "sourceManifest": "qa/02-pui-opens-the-inside/source-manifest.json",
+      "audio": "/home/pui/Videos/Pui-Promo/2026-10-24/kinetic-five/media/music-01.wav",
+      "audioAt": 6.4,
+      "duration": 22,
+      "audioPolicy": "original commission soundtrack, excerpt normalized",
+      "ownerSongConfirmed": false
+    },
+    {
+      "id": "03",
+      "sourceManifest": "qa/03-pui-builds-the-night/source-manifest.json",
+      "audio": "/home/pui/Videos/Pui-Promo/2026-10-24/kinetic-five/media/music-03.wav",
+      "audioAt": 8,
+      "duration": 16.233333333333334,
+      "audioPolicy": "original commission soundtrack, excerpt normalized",
+      "ownerSongConfirmed": false
+    },
+    {
+      "id": "04",
+      "sourceManifest": "qa/04-pui-makes-their-tools/source-manifest.json",
+      "audio": "/home/pui/Videos/Pui-Promo/2026-10-24/kinetic-five/media/music-04.wav",
+      "audioAt": 6.4,
+      "duration": 21.6,
+      "audioPolicy": "original commission soundtrack, excerpt normalized",
+      "ownerSongConfirmed": false
+    },
+    {
+      "id": "05",
+      "sourceManifest": "qa/05-medicate-made-by-pui/source-manifest.json",
+      "audio": "/mnt/e/Desktop/音源/medicate/MV_v3_ArtistLyrics/medicate_MV_v3_Highlight.mp4",
+      "audioAt": 0,
+      "duration": 21.6,
+      "audioPolicy": "preserve-approved-excerpt",
+      "ownerSongConfirmed": true
+    }
+  ],
+  "mascot": {
+    "original": "https://pui-wobbfet.top/images/logos/icon-512.png",
+    "originalSha256": "acacb6daf80b79c9b98cf603c39ce4e4398f7e272ae2914488ab8925e794e085",
+    "peaceSha256": "4ef929429faf39dda0a79bacffc1ad0a364b048844be9ef7dbbf8ef6e8efe529",
+    "prompts": "source/image-prompts.md"
+  },
+  "unselectedResearch": "Retained in the local full delivery only."
+}
