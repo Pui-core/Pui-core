@@ -1,0 +1,36 @@
+{
+  "videoSha256": "4221fd6a9d1d8c27bee2e7b3063f74e3547b616e00a16ed73eec334ea18b2a10",
+  "technical": "PASS",
+  "characterFileUnmodified": true,
+  "characterFixed": true,
+  "characterImageAiInputAfterRestriction": false,
+  "characterVisualReview": "NOT_PERFORMED_AI_RESTRICTION",
+  "textOnlyVisualReview": "13 sampled frames covering all 11 scenes",
+  "textLayers": 83,
+  "portraitTextOverlaps": 0,
+  "fixedImageStructuralChecks": 36,
+  "roiNumeric": {
+    "rect": {
+      "x": 520,
+      "y": 755,
+      "width": 350,
+      "height": 740
+    },
+    "frames": 660,
+    "referenceFrame": 0,
+    "pixelFormat": "yuv444p",
+    "exactDecodedHashCount": 137,
+    "exactHashesRequired": false,
+    "maxMse": 2.58,
+    "minPsnr": 44.01,
+    "meanMse": 2.3890454545454434,
+    "declaredGuardMse": 9,
+    "guardMeaning": "Gross-change sentinel allowing lossy-codec noise; not an exact-motion proof.",
+    "outliers": [],
+    "finalVideoSha256": "4221fd6a9d1d8c27bee2e7b3063f74e3547b616e00a16ed73eec334ea18b2a10",
+    "visualFramesCreated": 0
+  },
+  "relocatedPortraitPropertiesIdentical": true,
+  "realTimeHumanPlayback": "NOT_CLAIMED",
+  "sourcePolicy": "asset-policy.md"
+}
