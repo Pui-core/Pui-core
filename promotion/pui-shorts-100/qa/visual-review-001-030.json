@@ -1,0 +1,1706 @@
+{
+  "range": [
+    1,
+    30
+  ],
+  "expectedCount": 30,
+  "reviewer": "codex / editorial QC assistant",
+  "updatedAt": "2026-10-24T01:15:39.467Z",
+  "reviewedIds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "pendingIds": [],
+  "sampleFrames": [
+    42,
+    159,
+    312,
+    459
+  ],
+  "sampleSeconds": [
+    1.4,
+    5.3,
+    10.4,
+    15.3
+  ],
+  "frameSize": [
+    270,
+    480
+  ],
+  "scope": "Visual review of four exact final-MP4 sample frames per reviewed ID. Copy compared with current source episodes and per-episode diagram labels. Not a full-frame/full-film visual review, human headset listening, platform posting test, or formal PR review.",
+  "humanFullFilmListening": "NOT_CLAIMED",
+  "reviews": [
+    {
+      "id": 1,
+      "reviewedAt": "2026-10-24T01:09:47.866Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/001/contact.png",
+      "contactSha256": "d99d4589b8c65277890afce1eebf1cf62567c2b8eb6ace94cfcfefd0f12409e5",
+      "videoSha256": "3cbc4267a439cc496771f018b6f837f5e9338b5255af030aa50a533995ee9458",
+      "sourceEpisode": {
+        "id": 1,
+        "series": "本人紹介と制作姿勢",
+        "topic": "教える・作る・伝える",
+        "hook": [
+          "ぷいって",
+          "何をしている人？"
+        ],
+        "insight": [
+          "教える・作る・伝える",
+          "ITの相談相手です"
+        ],
+        "example": [
+          "例えば、入力の手間を",
+          "フォームと一覧で整理"
+        ],
+        "cta": "活動紹介は、ぷいの公式へ",
+        "caption": "ぷいの活動は、プログラミングの学習支援、Web制作、業務自動化、教材・動画制作。例えば入力の困りごとも、作る仕組みと使い方の説明を合わせて考える題材になります。詳しい活動と相談先はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "ITサポート",
+          "個人開発",
+          "Web制作"
+        ],
+        "visual": "nodes"
+      },
+      "diagram": [
+        "学習支援",
+        "制作",
+        "伝える"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "本人紹介の3役と入力整理の例が対応。3ノードとぷい・公式URLが読め、文字・マスコットに重なりや欠けなし。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 2,
+      "reviewedAt": "2026-10-24T01:09:47.867Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/002/contact.png",
+      "contactSha256": "9515d1107c3a8a8bad17ae9fb7fd42c0c0842fe276147d601febcddeb8b33258",
+      "videoSha256": "67e03219445fca0deb93557f843c4da4b968cd588e5cd7d457c8f525a5a9a0e7",
+      "sourceEpisode": {
+        "id": 2,
+        "series": "本人紹介と制作姿勢",
+        "topic": "学習のつまずきを言葉に",
+        "hook": [
+          "コードが動かない",
+          "どこから聞く？"
+        ],
+        "insight": [
+          "したいことと",
+          "今の動きを並べよう"
+        ],
+        "example": [
+          "3回表示したいのに",
+          "1回しか出ない、でOK"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "質問の最初から、正しい専門用語をそろえる必要はありません。『3回表示したいのに1回しか出ない』のように、期待した動きと実際の動きを並べるのも一つの入口です。ぷいは初学者向けのプログラミング講師・メンターとして活動しています。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "プログラミング学習",
+          "初心者",
+          "質問のコツ"
+        ],
+        "visual": "code"
+      },
+      "diagram": [
+        "3回が希望",
+        "実際は1回",
+        "違いを伝える"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "希望3回/実際1回の対比が本文と図で対応。コード風パネルの文字と終端CTAを確認、欠けや判読を妨げる重なりなし。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 3,
+      "reviewedAt": "2026-10-24T01:09:47.868Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/003/contact.png",
+      "contactSha256": "f7193533b95028ad9446a5a481e810b546adac80ae8112dce61681e52ede7868",
+      "videoSha256": "47ab1307234ae7016ca256c9acebfe153e69ea25d93852016e0281faf291c6f9",
+      "sourceEpisode": {
+        "id": 3,
+        "series": "本人紹介と制作姿勢",
+        "topic": "サイトは最初の一画面から",
+        "hook": [
+          "このサイト",
+          "何のお店か分かる？"
+        ],
+        "insight": [
+          "最初の画面に",
+          "誰に何をするかを書く"
+        ],
+        "example": [
+          "例えば、店舗名の下へ",
+          "靴の修理・相談、と一言"
+        ],
+        "cta": "Webの相談は、ぷいへ",
+        "caption": "サイトを見る人が、最初に知りたいことを一つ置いてみる。例えば靴の修理店なら、店舗名と一緒にサービスの内容を示す考え方です。誰に何を伝えたいかを一文にするのも、見直しの入口です。ぷいのWeb制作・修正の活動はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "Web制作",
+          "ホームページ",
+          "伝え方"
+        ],
+        "visual": "web"
+      },
+      "diagram": [
+        "靴の修理",
+        "お店の名前",
+        "最初に案内"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "靴の修理店という架空例が本文とブラウザー図で対応。文字・画像・ボタンに目立つ干渉なし。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 4,
+      "reviewedAt": "2026-10-24T01:09:47.869Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/004/contact.png",
+      "contactSha256": "5dcf9859cb7f6e50059ea5821a01de8d2ca578c253541e610d46e75266f21afb",
+      "videoSha256": "995cbc411ede6a40814d98055e6d65ba54bd04477a6c086c6281a7e1a89e8886",
+      "sourceEpisode": {
+        "id": 4,
+        "series": "本人紹介と制作姿勢",
+        "topic": "自動化の前に一工程を見る",
+        "hook": [
+          "毎回、同じコピー",
+          "繰り返していない？"
+        ],
+        "insight": [
+          "まずは一工程だけ",
+          "入力と出力を書こう"
+        ],
+        "example": [
+          "売上の表から",
+          "日別の合計を作る、など"
+        ],
+        "cta": "自動化の相談は、ぷいへ",
+        "caption": "業務自動化を考える入口は、使う道具を決める前の整理にもあります。例えば『売上の一覧を受け取って、日別合計を出す』と一工程に絞ると、必要な入力と出力を話しやすくなります。ぷいはGASやスプレッドシートの自動化を支援しています。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "業務自動化",
+          "スプレッドシート",
+          "業務改善"
+        ],
+        "visual": "flow"
+      },
+      "diagram": [
+        "売上の表",
+        "日別に集計",
+        "日別の合計"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "売上の表→日別集計→日別合計が具体例に対応。本文・3ノード・公式URLとマスコットが明瞭。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 5,
+      "reviewedAt": "2026-10-24T01:13:10.099Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/005/contact.png",
+      "contactSha256": "e8411b918b67f03876e1e8c382097d9cc8eac4b6216272604576c7ef4ff8d330",
+      "videoSha256": "addd7451d1c8a98d8a7bb4592c163b76d98c1014f77068ca24ddbf8048fb5847",
+      "sourceEpisode": {
+        "id": 5,
+        "series": "本人紹介と制作姿勢",
+        "topic": "使い方まで伝える制作",
+        "hook": [
+          "完成したけど",
+          "最初の操作はどこ？"
+        ],
+        "insight": [
+          "使い始める一歩も",
+          "説明に入れよう"
+        ],
+        "example": [
+          "ログイン→一覧を開く",
+          "最初の2操作を図に"
+        ],
+        "cta": "伝える制作も、ぷいへ",
+        "caption": "作った仕組みを使い始めるとき、最初の画面で迷うことがあります。例えば『ログインして一覧を開く』までを短い図や動画にすると、説明する範囲が具体的になります。ぷいはマニュアルや操作説明動画の制作も行っています。活動の詳細はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "マニュアル",
+          "操作説明",
+          "動画制作"
+        ],
+        "visual": "steps",
+        "diagram": [
+          "ログイン",
+          "一覧を開く",
+          "最初の2操作"
+        ]
+      },
+      "diagram": [
+        "ログイン",
+        "一覧を開く",
+        "最初の2操作"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "修正版は番号1ログイン→2一覧を開くの2段へ整理され、本文の最初の2操作と一致。4場面で欠け・重なりなし。",
+      "findings": [],
+      "displayedDiagram": [
+        "ログイン",
+        "一覧を開く"
+      ],
+      "resolvedFindings": [
+        "PUI-PROMO-005-STEPS"
+      ],
+      "previousReviews": [
+        {
+          "videoSha256": "b1bdca1c96965363c8544f8dfbb9ec0aab03b84f30f7826732e7ccd6bbf77a63",
+          "status": "FINDINGS",
+          "reviewedAt": "2026-10-24T01:11:14.890Z",
+          "findings": [
+            {
+              "id": "PUI-PROMO-005-STEPS",
+              "severity": "P2",
+              "summary": "2操作の説明に3つ目の説明語を操作番号として表示",
+              "expected": "番号付きの図と本文が同じ操作の流れを説明する",
+              "actual": "本文は2操作、図は3番が最初の2操作という説明語",
+              "resolution": "本文を最初の流れへ変更して3番を具体動作へ替える、または図を2操作へ調整。修正後の実MP4を再監査・4場面再確認。",
+              "reportedTo": "root"
+            }
+          ]
+        }
+      ],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 6,
+      "reviewedAt": "2026-10-24T01:11:14.904Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/006/contact.png",
+      "contactSha256": "cbb68f2244346b35b5682b025f721a7d097d53bffa5923e8518905668fd80414",
+      "videoSha256": "c715e0059b3f59f3f3cdacd3e404ad574349a8a83120989636e3e28402c4aa8a",
+      "sourceEpisode": {
+        "id": 6,
+        "series": "本人紹介と制作姿勢",
+        "topic": "操作動画は手元を見せる",
+        "hook": [
+          "操作動画なのに",
+          "押す場所が見えない？"
+        ],
+        "insight": [
+          "見せたい操作を",
+          "画面の中心に置こう"
+        ],
+        "example": [
+          "保存ボタンを拡大",
+          "押した後の表示も見せる"
+        ],
+        "cta": "動画の相談は、ぷいへ",
+        "caption": "操作説明では、クリックする前と後を続けて見せると、見る人が状態を比べられます。例えば保存ボタンの位置を示し、保存後の表示まで残す構成です。教材・操作説明・ショート動画など、ぷいの制作活動はこちらから。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "動画編集",
+          "操作説明動画",
+          "教材制作"
+        ],
+        "visual": "window",
+        "diagram": [
+          "保存ボタン",
+          "押す場所",
+          "保存後の表示"
+        ]
+      },
+      "diagram": [
+        "保存ボタン",
+        "押す場所",
+        "保存後の表示"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "保存ボタン・押す場所・保存後の表示が操作動画の説明例に対応。本文と図の欠け、重なりを認めない。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 7,
+      "reviewedAt": "2026-10-24T01:11:14.905Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/007/contact.png",
+      "contactSha256": "7ca25a5fb72a7f59cff6f00f0808358e7bff09da60bfb8caa747aa60d5b2673e",
+      "videoSha256": "2a5b3f171f62578ad16e57eb15aa8e7e3eca4d9dd713faced9d1b43fea32a556",
+      "sourceEpisode": {
+        "id": 7,
+        "series": "本人紹介と制作姿勢",
+        "topic": "遠隔相談の画面を整える",
+        "hook": [
+          "画面共有の前に",
+          "何を準備する？"
+        ],
+        "insight": [
+          "見せる画面を決めて",
+          "個人情報は隠そう"
+        ],
+        "example": [
+          "練習用のデータで",
+          "困った操作を再現する"
+        ],
+        "cta": "遠隔での相談も、ぷいへ",
+        "caption": "オンラインで操作の相談をするときは、共有する画面を先に決めておくと進めやすくなります。例えば実際の顧客名を使わず、練習用データで困った操作を再現する方法があります。ぷいはフルリモートで活動しています。対応内容は公式サイトで確認できます。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "リモート相談",
+          "ITサポート",
+          "画面共有"
+        ],
+        "visual": "chat",
+        "diagram": [
+          "共有する画面",
+          "練習用データ",
+          "操作を再現"
+        ]
+      },
+      "diagram": [
+        "共有する画面",
+        "練習用データ",
+        "操作を再現"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "共有画面・練習用データ・操作再現の対話図が、個人情報を隠して再現する本文に対応。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 8,
+      "reviewedAt": "2026-10-24T01:11:14.906Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/008/contact.png",
+      "contactSha256": "9a4d91a7e7a3107814258b055bb81e6f9c6f56e7dbd9fe74ce7e2792c784bf70",
+      "videoSha256": "f982372dfa80d440ace7e73508b1d85ac7d2116368db8967c8e7aa492f1b0395",
+      "sourceEpisode": {
+        "id": 8,
+        "series": "本人紹介と制作姿勢",
+        "topic": "個人開発は試す形から",
+        "hook": [
+          "こんな道具が欲しい",
+          "最初に何を作る？"
+        ],
+        "insight": [
+          "使いたい場面を",
+          "一つだけ選ぼう"
+        ],
+        "example": [
+          "読んだ本を記録する",
+          "まずは題名の入力だけ"
+        ],
+        "cta": "ぷいの制作活動を見てね",
+        "caption": "個人開発のアイデアを考える例として、読書記録の道具なら、まず題名を入力する一画面から検討できます。使いたい場面を一つ選ぶと、試作で確かめたいことも絞れます。ぷいの個人開発を含む活動紹介はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "個人開発",
+          "試作",
+          "ものづくり"
+        ],
+        "visual": "grid",
+        "diagram": [
+          "読書の記録",
+          "題名を入力",
+          "小さく試作"
+        ]
+      },
+      "diagram": [
+        "読書の記録",
+        "題名を入力",
+        "小さく試作"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "読書記録・題名入力・小さな試作の表図が具体例に対応。明色背景の本文・ラベル・ぷいの紹介が判読できる。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 9,
+      "reviewedAt": "2026-10-24T01:11:14.908Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/009/contact.png",
+      "contactSha256": "aa162ea149d3ecfd91ad92d9932055c9ac35a619748c418094f9018280367397",
+      "videoSha256": "72cca268ac12301484c93c9b775e29dc449f4bef86f1d9d5d0e92f35c0533c1c",
+      "sourceEpisode": {
+        "id": 9,
+        "series": "本人紹介と制作姿勢",
+        "topic": "難しい言葉を操作へ変える",
+        "hook": [
+          "専門用語だけだと",
+          "手が止まってしまう？"
+        ],
+        "insight": [
+          "言葉の意味を",
+          "できる操作へつなごう"
+        ],
+        "example": [
+          "保存とは、あとから",
+          "開ける形で残すこと"
+        ],
+        "cta": "分かるまでの相談は、ぷいへ",
+        "caption": "新しい言葉の説明は、身近な操作と一緒に考える方法があります。例えば『保存』なら、あとから開ける形で残すことと説明し、実際に閉じて開くところまで試す。ぷいは理解度に合わせた学習支援を大切にしています。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "プログラミング講師",
+          "IT学習",
+          "分かりやすい説明"
+        ],
+        "visual": "chat",
+        "diagram": [
+          "保存する",
+          "閉じる",
+          "開き直す"
+        ]
+      },
+      "diagram": [
+        "保存する",
+        "閉じる",
+        "開き直す"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "保存→閉じる→開き直すが、後から開ける形で残す説明と一致。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 10,
+      "reviewedAt": "2026-10-24T01:11:14.908Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/010/contact.png",
+      "contactSha256": "2d0c68b353006ceb126e7d0bb18d2854ba8dd11d6600d010194b09f584091139",
+      "videoSha256": "491e093b0e7c200f98595ef35c2b264954b0a06d70f907b0f5797a2e68dcc4a3",
+      "sourceEpisode": {
+        "id": 10,
+        "series": "本人紹介と制作姿勢",
+        "topic": "完成後の使い始めを確かめる",
+        "hook": [
+          "完成の次は",
+          "何を確かめる？"
+        ],
+        "insight": [
+          "使う人の順番で",
+          "入口から試してみよう"
+        ],
+        "example": [
+          "案内を開く→入力する",
+          "送れた表示まで確認"
+        ],
+        "cta": "作る・使うの相談は、ぷいへ",
+        "caption": "作ったものの確認は、使う人がたどる順番でも行ってみましょう。例えば案内ページからフォームへ進み、入力と送信後の表示まで確かめる流れです。ぷいの活動は、相談や制作に加え、導入や使い方の説明にもつながっています。詳しくは公式サイトへ。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "IT導入",
+          "Web制作",
+          "使い方"
+        ],
+        "visual": "timeline",
+        "diagram": [
+          "案内を開く",
+          "入力する",
+          "送信後を確認"
+        ]
+      },
+      "diagram": [
+        "案内を開く",
+        "入力する",
+        "送信後を確認"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "案内・入力・送信後を確認する3レーンが完成後の確認例に対応。本文と図が領域内で分離される。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 11,
+      "reviewedAt": "2026-10-24T01:11:14.910Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/011/contact.png",
+      "contactSha256": "6570a3cb79854d80cee5fc7af7aaff317daf9f7b586e17149c1fe45e186575f6",
+      "videoSha256": "1b816679f36777a1410bb329548fafece6e585a6705c44bf6200f4c174137314",
+      "sourceEpisode": {
+        "id": 11,
+        "series": "学びのコツ",
+        "topic": "動いた後に一つ予想する",
+        "hook": [
+          "写したら動いた",
+          "次はどう学ぶ？"
+        ],
+        "insight": [
+          "一か所だけ変えて",
+          "結果を先に予想しよう"
+        ],
+        "example": [
+          "繰り返し2回→3回へ",
+          "表示の回数を予想する"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "写して動かしたコードを、理解につなげる小さな練習です。繰り返し回数の数字などを一か所だけ変え、実行前に結果を予想してみます。予想と違ったら、その違いが次の確認箇所。初学者向けの学習支援を行うぷいの活動は、公式サイトで紹介しています。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "プログラミング学習",
+          "コード学習",
+          "初心者"
+        ],
+        "visual": "code",
+        "diagram": [
+          "繰り返し",
+          "2回→3回",
+          "結果を予想"
+        ]
+      },
+      "diagram": [
+        "繰り返し",
+        "2回→3回",
+        "結果を予想"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "2回から3回へ変える内容が本文とコード風パネルで一致。暗色テーマでも白文字・水色強調と公式ロゴが見える。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 12,
+      "reviewedAt": "2026-10-24T01:11:14.911Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/012/contact.png",
+      "contactSha256": "05efaefc1bce725554df58419f7878be54bd2903915ede596779a56e8c14f49a",
+      "videoSha256": "2442ff199e5fc3b37965510ea998cda0cbd9afed7c26e408504b829019a4cf8e",
+      "sourceEpisode": {
+        "id": 12,
+        "series": "学びのコツ",
+        "topic": "検索する言葉を絞る",
+        "hook": [
+          "検索結果が多すぎる",
+          "何を足せばいい？"
+        ],
+        "insight": [
+          "道具の名前と",
+          "したい操作を並べよう"
+        ],
+        "example": [
+          "見出しを固定したい",
+          "Excel 行固定、で検索"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "検索の言葉を、困っている操作まで絞る練習です。例えばExcelで見出しを固定したいときは、「Excel 行固定」のように道具名と操作を組み合わせて探す方法があります。表示や仕様は公式の案内も確認しましょう。ぷいの学習支援はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "検索のコツ",
+          "IT学習",
+          "プログラミング学習"
+        ],
+        "visual": "search",
+        "diagram": [
+          "Excel",
+          "見出し固定",
+          "道具名＋操作"
+        ]
+      },
+      "diagram": [
+        "Excel",
+        "見出し固定",
+        "道具名＋操作"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "Excelと見出し固定の例が検索語の図と対応。箇条書き・本文・CTAを読み取り、欠けを認めない。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 13,
+      "reviewedAt": "2026-10-24T01:11:14.912Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/013/contact.png",
+      "contactSha256": "78ca7b9c308b9e6b316d817c44fb5e4e57afac6b5e072a44f24e861c2a554194",
+      "videoSha256": "fc9fc7915bac4f252f44224955edd0c4ed58cd49d6bd74066c108399c33107ac",
+      "sourceEpisode": {
+        "id": 13,
+        "series": "学びのコツ",
+        "topic": "読む前に小さな入力を置く",
+        "hook": [
+          "処理の流れが",
+          "頭に入ってこない？"
+        ],
+        "insight": [
+          "小さい入力を置いて",
+          "順に追ってみよう"
+        ],
+        "example": [
+          "合計の処理なら",
+          "2と3だけで確かめる"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "コードの流れを読むとき、大量のデータから始めると途中の変化を見失いがちです。例えば合計を計算する処理なら、2と3の二つだけを入れ、途中の値を紙にも書いて追ってみる。確認しやすい小さな例を使う学習のヒントと、ぷいの活動紹介です。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "コードを読む",
+          "プログラミング学習",
+          "学習のコツ"
+        ],
+        "visual": "steps",
+        "diagram": [
+          "入力は2と3",
+          "足し算を追う",
+          "答えは5"
+        ]
+      },
+      "diagram": [
+        "入力は2と3",
+        "足し算を追う",
+        "答えは5"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "入力2と3→足し算→答え5の3ステップが小さい入力で追う本文に対応。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 14,
+      "reviewedAt": "2026-10-24T01:11:14.913Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/014/contact.png",
+      "contactSha256": "fdd06c87549121b74d2009fe5c1ec24d916d3ee42a790e17bb47971e91682d3f",
+      "videoSha256": "2712e19f70df443cf9a57a29d93e94906dc9077de1fa2f55c9c218e614404505",
+      "sourceEpisode": {
+        "id": 14,
+        "series": "学びのコツ",
+        "topic": "今日の到達点を小さくする",
+        "hook": [
+          "今日は何を学ぶ？",
+          "範囲が広すぎない？"
+        ],
+        "insight": [
+          "終わりを",
+          "一つの動作で決めよう"
+        ],
+        "example": [
+          "関数を学ぶ、から",
+          "足し算の関数を呼ぶ、へ"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "学習の予定を立てるときは、終わったか確かめられる動作を一つ置く方法があります。例えば『関数を学ぶ』を『足し算の関数を作って呼び出す』まで具体化する考え方です。無理のない範囲は人によって違います。学習メンターとしてのぷいの紹介はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "学習計画",
+          "プログラミング初心者",
+          "小さな一歩"
+        ],
+        "visual": "timeline",
+        "diagram": [
+          "足し算の関数",
+          "呼び出す",
+          "今日の到達点"
+        ]
+      },
+      "diagram": [
+        "足し算の関数",
+        "呼び出す",
+        "今日の到達点"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "足し算の関数・呼び出す・今日の到達点が学習範囲を小さくする例と対応。暗色図と本文は分離している。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 15,
+      "reviewedAt": "2026-10-24T01:11:14.914Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/015/contact.png",
+      "contactSha256": "4799f9cf1a4a304dc14a9a5940f09983275788c22165945ddd05a384431173b6",
+      "videoSha256": "01dc2c03f92619b3b3372be14fed1d87dab5ca633063238e8a978bdf18bfb314",
+      "sourceEpisode": {
+        "id": 15,
+        "series": "学びのコツ",
+        "topic": "用語メモには自分の例を添える",
+        "hook": [
+          "用語は覚えたのに",
+          "使いどころが曖昧？"
+        ],
+        "insight": [
+          "意味のメモに",
+          "自分の例を一つ添える"
+        ],
+        "example": [
+          "条件分岐の例なら",
+          "雨の日だけ傘を表示"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "用語の説明を写すだけで手が止まったら、自分が考えた例を一つ追加してみましょう。条件分岐なら『雨の日だけ傘の案内を出す』のように、条件と動作を分けて書けます。正確な意味と照らし合わせながら使う学習のヒントです。ぷいの活動はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "学習ノート",
+          "条件分岐",
+          "プログラミング学習"
+        ],
+        "visual": "nodes",
+        "diagram": [
+          "雨かどうか",
+          "雨なら傘",
+          "条件と動作"
+        ]
+      },
+      "diagram": [
+        "雨かどうか",
+        "雨なら傘",
+        "条件と動作"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "雨の条件と傘の動作が用語メモの例に対応。主文と3ノードの内容が領域内に収まる。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 16,
+      "reviewedAt": "2026-10-24T01:11:14.915Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/016/contact.png",
+      "contactSha256": "f799fd8bc85b45d0c9cdbe1495fbe7e735c0d48b0866124fb3836507ead61ade",
+      "videoSha256": "fbcfad9e68faa865b67887e974f89aab6e38f3f650c7d8c47e73995ceb162628",
+      "sourceEpisode": {
+        "id": 16,
+        "series": "学びのコツ",
+        "topic": "動く例を壊さず比較する",
+        "hook": [
+          "試しているうちに",
+          "元の動きが消えた？"
+        ],
+        "insight": [
+          "動く例を残して",
+          "試す場所を分けよう"
+        ],
+        "example": [
+          "練習用のコピーで",
+          "文字の色だけを変える"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "試す前の動く状態を残しておくと、変更した後の違いを見比べられます。例えば練習用ファイルを複製し、文字の色だけを変える方法です。個人情報や秘密の設定が入ったファイルの扱いには注意しましょう。ぷいは初学者向けの学習相談にも対応しています。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "プログラミング練習",
+          "比較",
+          "学習のコツ"
+        ],
+        "visual": "window",
+        "diagram": [
+          "元の動く例",
+          "練習用コピー",
+          "色だけ変更"
+        ]
+      },
+      "diagram": [
+        "元の動く例",
+        "練習用コピー",
+        "色だけ変更"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "元の動く例・練習用コピー・色だけ変更が本文の比較手順に対応。図を実顧客画面とする表記なし。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 17,
+      "reviewedAt": "2026-10-24T01:11:14.926Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/017/contact.png",
+      "contactSha256": "231714662ff22ba2f41eba89214a663de1b36587673fb5b9e80b234e4dad2712",
+      "videoSha256": "ecfef3bd8fae160b44cb5dcc9f54083eec3db1f44f028a8ee2bc5c4aa37d3da4",
+      "sourceEpisode": {
+        "id": 17,
+        "series": "学びのコツ",
+        "topic": "入力と出力を先に書く",
+        "hook": [
+          "処理を書く前に",
+          "何を決めればいい？"
+        ],
+        "insight": [
+          "何を受け取り",
+          "何を返すかを書こう"
+        ],
+        "example": [
+          "単価と個数を受け取り",
+          "合計金額を返す"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "処理の書き方で迷ったら、入力と出力だけを先に言葉にしてみましょう。例えば「単価と個数を受け取り、合計金額を返す」という小さな計算です。途中の式は、その目的をつなぐために考えます。ぷいのプログラミング講師・メンターの活動はこちらから。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "関数",
+          "プログラミング学習",
+          "設計の基本"
+        ],
+        "visual": "flow",
+        "diagram": [
+          "単価",
+          "個数",
+          "合計金額"
+        ]
+      },
+      "diagram": [
+        "単価",
+        "個数",
+        "合計金額"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "単価・個数・合計金額の入出力の例が本文に対応。矢印図は概念図として一貫し、数学式としての誤表示なし。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 18,
+      "reviewedAt": "2026-10-24T01:11:53.503Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/018/contact.png",
+      "contactSha256": "f9990c612cdd4445f85aeb0503421c8177ffd09c55bdc87c355bbb0b39423998",
+      "videoSha256": "56b14371798c487a423219b6fccc1e2c9df7f0a1faa1fa276a3870a3dbd25034",
+      "sourceEpisode": {
+        "id": 18,
+        "series": "学びのコツ",
+        "topic": "復習は見ずに一度試す",
+        "hook": [
+          "昨日できた操作",
+          "今日は一人でできる？"
+        ],
+        "insight": [
+          "説明を見る前に",
+          "一度だけ試してみる"
+        ],
+        "example": [
+          "新しいファイルを作る",
+          "詰まった一手をメモ"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "復習の入口として、説明を開く前に一度だけ操作を試す方法があります。新しいファイルを作る練習なら、止まったのが保存先なのか名前なのかをメモしてから説明を確認します。できなかった箇所を次の練習に使う考え方です。ぷいの学習支援を紹介しています。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "復習",
+          "IT学習",
+          "学習のコツ"
+        ],
+        "visual": "steps",
+        "diagram": [
+          "説明を閉じる",
+          "ファイル作成",
+          "つまずきメモ"
+        ]
+      },
+      "diagram": [
+        "説明を閉じる",
+        "ファイル作成",
+        "つまずきメモ"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "説明を閉じる→ファイル作成→つまずきメモの順が復習例に対応。暗色テーマの文字と図は明瞭で重なりなし。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 19,
+      "reviewedAt": "2026-10-24T01:11:53.505Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/019/contact.png",
+      "contactSha256": "59c4e24b094f6fddd85c058f55c3fe76963d44bf00db7c9f9ae8cae71701f05b",
+      "videoSha256": "036138ce6770352c5ff91bcdec717622dc4e116b16e8335aa4db70cfb52e344f",
+      "sourceEpisode": {
+        "id": 19,
+        "series": "学びのコツ",
+        "topic": "質問に試したことを一つ添える",
+        "hook": [
+          "質問の説明が",
+          "長くなってしまう？"
+        ],
+        "insight": [
+          "まずは一つだけ",
+          "試したことを添えよう"
+        ],
+        "example": [
+          "表示回数の数を変えた",
+          "実行結果は変わらなかった"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "質問で何を伝えるか迷ったときは、『試した操作』と『その結果』を一組だけ添えてみましょう。例えば『表示回数の数を変えたが、結果は変わらなかった』という観察も、確認する入口になります。秘密の情報は共有しない形で整理を。ぷいの学習サポートはこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "質問のコツ",
+          "プログラミング相談",
+          "学習サポート"
+        ],
+        "visual": "chat",
+        "diagram": [
+          "回数を変える",
+          "実行して比較",
+          "結果は同じ"
+        ]
+      },
+      "diagram": [
+        "回数を変える",
+        "実行して比較",
+        "結果は同じ"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "回数を変える・実行して比較・結果は同じという試行内容が、質問に試したことを添える本文と一致。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 20,
+      "reviewedAt": "2026-10-24T01:11:53.507Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/020/contact.png",
+      "contactSha256": "999804bc5ac8dc66aaead362045d7049e7c83575099d80c58ba7717ed968804e",
+      "videoSha256": "aa32da07432f753e7d7c3e4df8c3abb61a7f1c129d5dd41dab99e8e55e2e1a02",
+      "sourceEpisode": {
+        "id": 20,
+        "series": "学びのコツ",
+        "topic": "学んだことを一文で説明する",
+        "hook": [
+          "理解できたか",
+          "どう確かめよう？"
+        ],
+        "insight": [
+          "使う場面を",
+          "一文で説明してみる"
+        ],
+        "example": [
+          "繰り返しは、同じ挨拶を",
+          "人数分だけ出すとき"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "学んだ仕組みを、どんな場面で使うか一文にする練習です。例えば繰り返しなら『同じ挨拶を人数分表示したいときに使う』と説明してみます。言葉に詰まった部分は、例を動かして確認する候補になります。プログラミングを教えるぷいの活動はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "理解を深める",
+          "プログラミング学習",
+          "説明する力"
+        ],
+        "visual": "nodes",
+        "diagram": [
+          "同じ挨拶",
+          "人数分",
+          "繰り返し表示"
+        ]
+      },
+      "diagram": [
+        "同じ挨拶",
+        "人数分",
+        "繰り返し表示"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "同じ挨拶・人数分・繰り返し表示の概念図が、繰り返しを一文で説明する例に対応。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 21,
+      "reviewedAt": "2026-10-24T01:11:53.509Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/021/contact.png",
+      "contactSha256": "ed2f2d3a9bb982d84ae912292a632b5eebe20e671a81d15d519a8d77722fdc8e",
+      "videoSha256": "f6c72191548857910aee726d77087d65e48e3984c5a3945b9e35a7e3c4a1df6e",
+      "sourceEpisode": {
+        "id": 21,
+        "series": "エラーの整理",
+        "topic": "エラー文を途中で省かない",
+        "hook": [
+          "赤い文字が出た",
+          "すぐ閉じてしまう？"
+        ],
+        "insight": [
+          "まずは文面と",
+          "出た場所を残そう"
+        ],
+        "example": [
+          "行番号とエラー名を",
+          "手元のメモへ保存"
+        ],
+        "cta": "エラーの相談は、ぷいへ",
+        "caption": "エラーの画面が出たら、文面や発生した場所を手元に残すところから始められます。行番号とエラー名がある場合は、それも一緒に記録します。公開や相談の前には、鍵・個人情報・内部のパスなどを確認しましょう。ぷいのプログラミング学習支援はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "エラー対応",
+          "プログラミング初心者",
+          "デバッグ"
+        ],
+        "visual": "code",
+        "diagram": [
+          "エラー名",
+          "行番号",
+          "メモへ保存"
+        ]
+      },
+      "diagram": [
+        "エラー名",
+        "行番号",
+        "メモへ保存"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "エラー名・行番号・メモ保存が本文の記録例に対応。暖色テーマの本文と暗いコード風図のコントラスト、ロゴ・マスコットの輪郭を確認。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 22,
+      "reviewedAt": "2026-10-24T01:12:22.520Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/022/contact.png",
+      "contactSha256": "8d48854d32f6951ea8000ed4b4ea58ea1da38378989ee43c761d9e0a1fb65ed1",
+      "videoSha256": "733b8171f7b21286e50e7974946965106223d8662a1f9b5afd0eb673afc16cea",
+      "sourceEpisode": {
+        "id": 22,
+        "series": "エラーの整理",
+        "topic": "直前の変更を一つ振り返る",
+        "hook": [
+          "さっきまで動いた",
+          "何が変わった？"
+        ],
+        "insight": [
+          "最後に変えた場所を",
+          "まず一つ確認しよう"
+        ],
+        "example": [
+          "関数名を変えたなら",
+          "呼び出す名前も照合"
+        ],
+        "cta": "エラーの相談は、ぷいへ",
+        "caption": "さっきまで動いていたものが止まったとき、直前の変更は確認する候補になります。例えば関数名を変えたなら、呼び出す側の名前も一致しているかを見ます。原因を決めつけず、一か所ずつ照合するためのヒントです。ぷいの学習相談の案内はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "デバッグ",
+          "エラーの整理",
+          "コード学習"
+        ],
+        "visual": "timeline",
+        "diagram": [
+          "関数名を変更",
+          "呼ぶ側も確認",
+          "名前を照合"
+        ]
+      },
+      "diagram": [
+        "関数名を変更",
+        "呼ぶ側も確認",
+        "名前を照合"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "関数名変更と呼ぶ側の照合が本文・3レーン図で対応。暖色背景の主文、ロゴ、マスコットとCTAに欠け・重なりなし。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 23,
+      "reviewedAt": "2026-10-24T01:15:39.411Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/023/contact.png",
+      "contactSha256": "060905f0b0bb36a15f9df98beca68fb2f61ca1e3f3806c21dc36bdaf24fa8c11",
+      "videoSha256": "f20c258a2bcd4c3bdae1de47700f0aa3f86897b79764b2138d4d319a891b6543",
+      "sourceEpisode": {
+        "id": 23,
+        "series": "エラーの整理",
+        "topic": "再現する操作を番号にする",
+        "hook": [
+          "たまに起きる不具合",
+          "どう伝えればいい？"
+        ],
+        "insight": [
+          "起きるまでの操作を",
+          "番号にして残そう"
+        ],
+        "example": [
+          "1、一覧を開く",
+          "2、空欄のまま保存"
+        ],
+        "cta": "困りごとの整理は、ぷいへ",
+        "caption": "不具合を相談するときは、起きるまでの操作を順番に書く方法があります。例えば『一覧を開く→何も入力しない→保存する』という手順です。毎回起きるか、特定のときだけかも分けると観察が具体的になります。ぷいの活動はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "不具合調査",
+          "再現手順",
+          "IT相談"
+        ],
+        "visual": "steps",
+        "diagram": [
+          "一覧を開く",
+          "空欄で保存",
+          "順番を記録"
+        ]
+      },
+      "diagram": [
+        "一覧を開く",
+        "空欄で保存",
+        "順番を記録"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "root修正版は番号1一覧を開く→2空欄で保存の2操作へ整理され、本文にある番号1/2と一致。4場面で読みやすさ・配置・ロゴとマスコットの干渉なし。",
+      "findings": [],
+      "displayedDiagram": [
+        "一覧を開く",
+        "空欄で保存"
+      ],
+      "note": "旧3段版は承認せず、root指定の2段修正版を新しいMP4 SHAで技術・目視確認した。",
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 24,
+      "reviewedAt": "2026-10-24T01:13:10.104Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/024/contact.png",
+      "contactSha256": "e95b7f3de702c29a2cce868b261a89e16ef5b336062964e50d6c77756c5cd623",
+      "videoSha256": "db250aeb58f50ceb97eedd037b06e054da3c6416c04b7abd91f39aa47fbbc8df",
+      "sourceEpisode": {
+        "id": 24,
+        "series": "エラーの整理",
+        "topic": "変える条件は一つずつ",
+        "hook": [
+          "まとめて直したら",
+          "原因が分からない？"
+        ],
+        "insight": [
+          "条件を一つ変えて",
+          "結果を比べよう"
+        ],
+        "example": [
+          "入力の空白だけ外す",
+          "それで動くか確認"
+        ],
+        "cta": "エラーの相談は、ぷいへ",
+        "caption": "複数の条件を一度に変えると、どの変更が動きに関係したかを比べにくくなります。例えば入力末尾の空白だけを外して試すなど、一つの条件で確認する方法があります。本番データを使わない検証も考えましょう。ぷいの学習メンターの活動はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "デバッグのコツ",
+          "プログラミング学習",
+          "比較検証"
+        ],
+        "visual": "grid",
+        "diagram": [
+          "入力の空白",
+          "空白だけ外す",
+          "結果を比べる"
+        ]
+      },
+      "diagram": [
+        "入力の空白",
+        "空白だけ外す",
+        "結果を比べる"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "入力の空白だけを外して結果を比べる本文と表のラベルが一致。本文・図・CTAは明瞭。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 25,
+      "reviewedAt": "2026-10-24T01:13:10.118Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/025/contact.png",
+      "contactSha256": "e68e4e56fb0639d700e3420745112954ea58a2754e7c144e4b55aa0ea0098930",
+      "videoSha256": "f2a255e363c0a2f02ed0bb9916e92a4f82469c349bc9dcb99e14d1c83d92ba06",
+      "sourceEpisode": {
+        "id": 25,
+        "series": "エラーの整理",
+        "topic": "数値のゼロと文字のゼロ",
+        "hook": [
+          "同じ0なのに",
+          "結果が違うのはなぜ？"
+        ],
+        "insight": [
+          "JavaScriptの例",
+          "足す値の型で結果が変化"
+        ],
+        "example": [
+          "数値0+1 → 1",
+          "文字「0」+1→「01」"
+        ],
+        "cta": "学びの相談は、ぷいへ",
+        "caption": "JavaScriptでは、数値の0に1を足すと1ですが、文字列の「0」に1を足すと「01」になります。見た目の数字だけでなく、値の型で+演算の動きが変わる例です。予想と違う結果を調べるときの手がかりに。初学者の学びを支えるぷいの活動はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "データ型",
+          "プログラミング初心者",
+          "エラーの整理"
+        ],
+        "visual": "code",
+        "diagram": [
+          "数値0＋1",
+          "文字0＋1",
+          "1／01"
+        ]
+      },
+      "diagram": [
+        "数値0＋1",
+        "文字0＋1",
+        "1／01"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "JavaScriptの数値0+1→1、文字0+1→01が本文とコード風図で区別される。型を限定した説明と結果が整合。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 26,
+      "reviewedAt": "2026-10-24T01:13:10.120Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/026/contact.png",
+      "contactSha256": "de0429446be7e6672dff2664bec0227b5efc8d7c71b00f4a92767302a8f53c03",
+      "videoSha256": "fd63aa018a0c5dc2f490c72fecd46b159507bbc520bf5240e1827eaf6b871c52",
+      "sourceEpisode": {
+        "id": 26,
+        "series": "エラーの整理",
+        "topic": "長い処理を途中で確かめる",
+        "hook": [
+          "最後の結果が違う",
+          "どこまで合っている？"
+        ],
+        "insight": [
+          "処理の区切りで",
+          "途中の値を確かめよう"
+        ],
+        "example": [
+          "読込→計算→表示",
+          "読込後の件数を見る"
+        ],
+        "cta": "エラーの相談は、ぷいへ",
+        "caption": "最後の結果だけを見て迷ったら、処理の区切りに戻る方法があります。例えば『読込→計算→表示』なら、まず読み込んだ件数が想定どおりかを確認します。記録に出す値には個人情報や秘密を含めないようにします。ぷいの学習支援はこちらから。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "デバッグ",
+          "処理の流れ",
+          "プログラミング相談"
+        ],
+        "visual": "flow",
+        "diagram": [
+          "読み込む",
+          "件数を確認",
+          "計算へ進む"
+        ]
+      },
+      "diagram": [
+        "読み込む",
+        "件数を確認",
+        "計算へ進む"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "読込→計算→表示の途中で件数を確かめる本文と、読み込む→件数確認→計算へ進む図が対応。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 27,
+      "reviewedAt": "2026-10-24T01:14:36.950Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/027/contact.png",
+      "contactSha256": "36fb1289b0ab00f7e6854c9f524169fb1be4a90def449135e6d5d0a6bcfabaa4",
+      "videoSha256": "93de18161138d9f83592c84d9763ad2d4127829691df9cebf1a83204de429f97",
+      "sourceEpisode": {
+        "id": 27,
+        "series": "エラーの整理",
+        "topic": "表示と保存を分けて調べる",
+        "hook": [
+          "入力したはずの文字",
+          "消えてしまった？"
+        ],
+        "insight": [
+          "保存できたかと",
+          "表示できたかを分ける"
+        ],
+        "example": [
+          "保存先にはあるのか",
+          "再読込でも見えないか"
+        ],
+        "cta": "困りごとの整理は、ぷいへ",
+        "caption": "入力した内容が見えないときは、『保存の段階』と『表示の段階』を分けて確認する考え方があります。保存先に値があるか、画面を読み直すとどうなるかなど、観察する場所を整理します。確かめた結果を分けてメモすると、次の相談にも使えます。ぷいの活動紹介はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "不具合の整理",
+          "Web学習",
+          "ITサポート"
+        ],
+        "visual": "window",
+        "diagram": [
+          "保存先",
+          "再読み込み",
+          "表示を確認"
+        ]
+      },
+      "diagram": [
+        "保存先",
+        "再読み込み",
+        "表示を確認"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "保存と表示を切り分け、保存先と再読込を確認する本文がブラウザー図の3ラベルと対応。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 28,
+      "reviewedAt": "2026-10-24T01:14:36.952Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/028/contact.png",
+      "contactSha256": "dc5a3dbde62046a23b6740db45a520ff8c28b1b04d6b48c549eae2aba1f79e0b",
+      "videoSha256": "75f0b13550c61b51e4a330420689d77ae204863c476a3ce87e9cf8eea6efd5b9",
+      "sourceEpisode": {
+        "id": 28,
+        "series": "エラーの整理",
+        "topic": "環境の違いも記録する",
+        "hook": [
+          "自分の画面だけ",
+          "動きが違っている？"
+        ],
+        "insight": [
+          "使う道具と版も",
+          "一緒に記録しよう"
+        ],
+        "example": [
+          "パソコンでは動く",
+          "スマホでは止まる、など"
+        ],
+        "cta": "学びと制作の相談は、ぷいへ",
+        "caption": "同じ操作でも、端末やソフトの版で見え方や動きが変わる場合があります。『パソコンでは動くがスマホでは止まる』など、使った環境と確認結果を組にして残しましょう。原因の断定を急がず、違いを整理するヒントです。ぷいの活動内容はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "動作確認",
+          "環境の違い",
+          "エラー対応"
+        ],
+        "visual": "grid",
+        "diagram": [
+          "パソコン",
+          "スマホ",
+          "環境も記録"
+        ]
+      },
+      "diagram": [
+        "パソコン",
+        "スマホ",
+        "環境も記録"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "パソコンとスマホの差を記録する本文が比較表の列に対応。本文は端末の違いを例とし、特定端末での動作保証と誤認させない。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 29,
+      "reviewedAt": "2026-10-24T01:14:36.954Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/029/contact.png",
+      "contactSha256": "969da002ea9aa308d0393da3246659e777660198c19edefda24dbdc703d7db87",
+      "videoSha256": "1cf2ec59d16248d3d597724604c8c592ea7a91db2a2d117d24f739a144227e08",
+      "sourceEpisode": {
+        "id": 29,
+        "series": "エラーの整理",
+        "topic": "困る部分だけの小さな例",
+        "hook": [
+          "コードが長すぎて",
+          "原因を追えない？"
+        ],
+        "insight": [
+          "困る部分を残した",
+          "小さな例で試そう"
+        ],
+        "example": [
+          "一覧が出ないなら",
+          "3件だけの表で確認"
+        ],
+        "cta": "エラーの相談は、ぷいへ",
+        "caption": "原因を調べる練習として、同じ問題が起きる小さな例を作る方法があります。一覧の表示なら、架空の3件だけの表にして確認する考え方です。実際の情報や秘密の設定は取り除き、元の環境も残します。プログラミングを教えるぷいの紹介はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "最小の例",
+          "デバッグ",
+          "プログラミング学習"
+        ],
+        "visual": "code",
+        "diagram": [
+          "困る一覧",
+          "3件に絞る",
+          "同じ不具合？"
+        ]
+      },
+      "diagram": [
+        "困る一覧",
+        "3件に絞る",
+        "同じ不具合？"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "困る一覧を3件へ絞って同じ不具合を確かめる本文がコード風図と一致。暖色背景の文字・図・CTAに欠け・重なりなし。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    },
+    {
+      "id": 30,
+      "reviewedAt": "2026-10-24T01:15:39.415Z",
+      "status": "PASS",
+      "method": "view_image of exact MP4 four-frame contact sheet",
+      "contact": "qa/030/contact.png",
+      "contactSha256": "75d3eb98c9e2cae687c4c4f2772ba79e939c6f0655d9f6967e4aad31932ea5e9",
+      "videoSha256": "3aa514fdca964efa197ba0cade0d3982a66964147ce9646a33f625714170b402",
+      "sourceEpisode": {
+        "id": 30,
+        "series": "エラーの整理",
+        "topic": "直った後も元の手順を試す",
+        "hook": [
+          "直したつもり",
+          "同じ操作で試した？"
+        ],
+        "insight": [
+          "起きたときの手順で",
+          "もう一度確かめよう"
+        ],
+        "example": [
+          "空欄で保存しても",
+          "案内が出るかを見る"
+        ],
+        "cta": "学びと制作の相談は、ぷいへ",
+        "caption": "修正したら、最初に問題が起きた手順でもう一度試してみましょう。例えば空欄のまま保存して困った場合なら、同じ条件で案内が出るかを確認します。通常の入力も合わせて確かめると、観察する範囲が明確になります。ぷいの学習・制作活動はこちら。https://pui-wobbfet.top/",
+        "tags": [
+          "ぷい",
+          "再確認",
+          "不具合修正",
+          "プログラミング学習"
+        ],
+        "visual": "steps",
+        "diagram": [
+          "元の手順",
+          "空欄で保存",
+          "案内を確認"
+        ]
+      },
+      "diagram": [
+        "元の手順",
+        "空欄で保存",
+        "案内を確認"
+      ],
+      "technicalStatus": "TECHNICAL_PASS",
+      "observations": "元の手順で空欄保存後の案内を確かめる本文と3段図が対応。暖色背景の主文・図・公式URLと終端CTAに欠けや重なりなし。",
+      "findings": [],
+      "copyComparison": {
+        "method": "Actual native text-layout labels compared with locked source/episodes.json after visual image reading",
+        "matched": true,
+        "textItems": 7
+      },
+      "technicalEvidenceCurrent": true
+    }
+  ],
+  "findingIds": [],
+  "notes": [
+    "ID005のPUI-PROMO-005-STEPSは新2段版の技術・目視再確認で解除。旧SHA指摘履歴はID005.previousReviewsに保持。",
+    "ID023は旧3段版を承認せず、root指定の2段版を新SHAで再監査・目視確認。",
+    "各動画の4場面をview_imageで読み、文字の欠け・コントラスト・図と本文・マスコット・配置を確認。全編の人による視聴・試聴やSNS投稿検証は未実施。"
+  ],
+  "resolvedFindingIds": [
+    "PUI-PROMO-005-STEPS"
+  ],
+  "sourceCopyMismatchIds": [],
+  "staleEvidenceIds": [],
+  "technicalCurrentPassCount": 30,
+  "visualSamplePassCount": 30,
+  "status": "COMPLETE_FOUR_FRAME_SAMPLE_REVIEW"
+}

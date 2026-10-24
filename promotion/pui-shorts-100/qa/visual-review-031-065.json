@@ -1,0 +1,773 @@
+{
+  "scope": {
+    "first": 31,
+    "last": 65
+  },
+  "kind": "Editorial assistance; not a formal independent GitHub PR review",
+  "sampleSeconds": [
+    1.4,
+    5.3,
+    10.4,
+    15.3
+  ],
+  "limitations": [
+    "Four sampled frames per final MP4; not continuous playback",
+    "Real-time audio listening not claimed"
+  ],
+  "results": [
+    {
+      "id": 31,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "a8fa9205f9a8192d1cd1ec23fd81f84ee9b905ddc1fe98873f5bfa990bfb6472",
+      "reviewedAt": "2026-10-24T01:13:05.162Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/031/contact.png",
+      "observations": [
+        "見出しの説明にサービス・利用の流れ・相談先の図が対応している",
+        "４場面の主文・ＵＲＬ・紹介のマスコットに文字切れ・重なり・低コントラストなし"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 32,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "ba105454c46f7d4a4fe5ab8ff4e9dd3f5f7b58da734b563ef1fd76b0f5c66f02",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:15:10.743Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/032/contact.png",
+      "observations": [
+        "リンク文言の主文と図が対応。４場面の文字・図・ＵＲＬ・マスコットに切れや重なりなし"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 33,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "652affe92ce72620feedae28c2017c1dc33d998085a0af02619d629585b1c521",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:18:23.972Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/033/contact.png",
+      "observations": [
+        "修正後の「商品名の一文字だけが」を完成ＭＰ４で確認。４場面とも本文・改行図・紹介の表示は正常"
+      ],
+      "criticalFindings": [],
+      "resolvedFindings": [
+        {
+          "previousVideoSHA256": "94ebca96f4116c5f4f67444726ba810e3c908397fbe012e45ee9a6963cfb30f6",
+          "finding": {
+            "severity": "copy-polish-required",
+            "field": "example[0]",
+            "actual": "商品名だけ一文字が",
+            "expected": "商品名の一文字だけが",
+            "reason": "修飾順序が不自然。商品名の中の一文字だけが折り返すことを明示する",
+            "status": "OPEN"
+          },
+          "resolution": "親が文言を修正し再描画。新ＳＨＡで技術２０項目と４場面を再確認",
+          "resolvedAt": "2026-10-24T01:18:23.981Z"
+        }
+      ],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 34,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "2980635c07ee66b313193c15dfa74b928cb65a99c18ab87980f177770ec0c21e",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:16:00.706Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/034/contact.png",
+      "observations": [
+        "営業時間を文字でも示す主文と図のラベルが対応。表見出し・４場面の主文・紹介・ＵＲＬに切れや重なりなし"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 35,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "a6ab530e5b33bfd5564125796a32b0c31cd4665c11689ea5d5275d35006226a8",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:16:00.707Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/035/contact.png",
+      "observations": [
+        "使い方・注意点・相談先の３項目が図と主文で対応。４場面とも文字・コントラスト・紹介の表示は正常"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 36,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "1d610a636e8e1ac7ca4e7fa1a32af067b9702d1d058c9036f54ad4413b2558c9",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:16:50.366Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/036/contact.png",
+      "observations": [
+        "検索０件から条件を減らす・一覧へ戻る案内が図と主文で対応。４場面とも主文・ＵＲＬ・紹介の視認性は正常"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 37,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "b8b9ae5bdc5fe66716c1e4e1c9bbe557305d1a9e6f6758f563a7182a05143295",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:17:36.777Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/037/contact.png",
+      "observations": [
+        "掲載日・受付期限・期限後の案内を区別する図と主文が一致。４場面の表示に切れ・重なり・コントラスト問題なし"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 38,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "41f0b862cf78c605932cc65fc426f8171c598b7d47642b66dcc8774b64e0b67b",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:18:23.982Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/038/contact.png",
+      "observations": [
+        "文字色・背景色・明るさの差のラベルが主文に対応。４場面とも文字と背景を見分けられ、文字切れなし"
+      ],
+      "criticalFindings": [],
+      "executionNotes": [
+        "最初のコンタクト生成はＷＳＬのＵｔｉｌＡｃｃｅｐｔＶｓｏｃｋ開始前通信エラーで失敗。全監査を再実行して正常終了"
+      ],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 39,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "bc19f7245500c618559d4d3e47046e1a8e5ce4e2e2eba154e202504884ecc0e1",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:18:23.982Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/039/contact.png",
+      "observations": [
+        "営業時間の更新者とお知らせ担当の図が主文に対応。主文・ＵＲＬ・マスコットの表示は正常"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 40,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "6541b052a3c298b43b0cb43758e241907ee8bac207c924f3f5ac4229e1ea1da5",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:19:25.896Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/040/contact.png",
+      "observations": [
+        "見つからない案内からトップ・相談先への導線が図と本文で対応。長い主文も切れずに表示"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 41,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "e5ecbfb70327fb70f1a47dcee7c8e3e5836183e9aed0cb06df98134f11bf16ee",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:19:25.907Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/041/contact.png",
+      "observations": [
+        "住所の必要性を問う図と主文が対応。紫の暗背景でも主文・ボタン・紹介が明瞭"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 42,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "e206326aeadd2bed833882a386be3dce53a071eea47785975841952a38e11af8",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:19:25.907Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/042/contact.png",
+      "observations": [
+        "返信先の必須と電話の任意を主文・表見出しで区別。暗背景の全４場面に文字切れや重なりなし"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 43,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "f026fbf7ecbee731bec484f89ac0e994ba02e44cf51ec2a4dc27df982eb41fc1",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:19:25.908Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/043/contact.png",
+      "observations": [
+        "日付の欄・年／月／日・外にも見本の図が説明に対応。入力例の文字・主文・紹介の表示は正常"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 44,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "cdc54af1c881435ef7282c1e1442fc1c5b8fffb2e44376abd19b2eb6f66c0299",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:19:25.908Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/044/contact.png",
+      "observations": [
+        "メールの＠欠落と欄の下の案内を示す図が説明に対応。全４場面の主文・ＵＲＬ・マスコットに不具合なし"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 45,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "d5fe02a7385b3fea941370efcf12424ffb9d4a6c6344a081f3eb1da9ccf5556a",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:24:37.158Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/045/contact.png",
+      "contactSHA256": "6a7b01034cd175fddd6ee3509e517eee487994821363de21882f7a58bebcb819",
+      "sourceTextChecks": 7,
+      "observations": [
+        "送信後の状態を示す本文と、送信・受付・次の操作の図中文字が対応。４場面の本文・誘導URL・マスコットに切れや重なりなし。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 46,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "94139aa8eac3166b0435f71c2f7cb48ae679beaf862d0a4fc5abed7489665d8a",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:24:37.173Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/046/contact.png",
+      "contactSHA256": "8bf403116e3bef191df9b0742b66dfc514887da76f3d4dfa6d7d0350d8f81548",
+      "sourceTextChecks": 7,
+      "observations": [
+        "作業・困る場面・希望する形の３点が本文と図で一致。３項目の図中文字、主文、紹介の表示に支障なし。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 47,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "6ab9325191f92d241cb05e72d35c84d27276edb6e3955e7174310b33b5e3751d",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:24:37.195Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/047/contact.png",
+      "contactSHA256": "7b546e63c0823efbe13829b8dc6a3e8252a592bdd44528678bc946224bf584c8",
+      "sourceTextChecks": 7,
+      "observations": [
+        "紹介ページから相談入口・入力フォームへの図が本文の導線例と対応。主文・図・URL・マスコットに切れや低コントラストなし。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 48,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "567fc19956d33b28bedb79c122260be56fcbab373d14a9f2912462c4d45e52e7",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:27:06.575Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/048/contact.png",
+      "contactSHA256": "e51d760771d21a82e3e03196f4617fe9fd51574230246a2c48ca2c837278e141",
+      "sourceTextChecks": 7,
+      "observations": [
+        "予約希望の受付と確定を分ける本文に、希望日時・受付・連絡後確定の図中文字が対応。４場面とも主文・URL・紹介の表示に欠けなし。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 49,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "543a55992842201f4338c4e988b75199ecb162182a8e897e99cdb8de63ec318b",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:27:06.605Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/049/contact.png",
+      "contactSHA256": "0b9942a83020405b4bdaa13689e99c9e9591f091af0e9b54412c277bfc6f55b7",
+      "sourceTextChecks": 7,
+      "observations": [
+        "送信側と受信側の確認が試験入力→送信→受信確認の図と一致。本文・図・URL・マスコットを確認。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 50,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "f88de62e5a4870383b0f3b1be5b6711cc1ac614dfb171e7a8add226a1aadc08c",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:27:06.621Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/050/contact.png",
+      "contactSHA256": "f06f5b83aa07ee1f58741da53c84767e0cb1ebd0ca82e780b1c24b548a3fd3c6",
+      "sourceTextChecks": 7,
+      "observations": [
+        "確認画面→戻って修正→再確認の３状態が本文の操作例と一致。表示・改行・重なりに問題なし。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 51,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "d5b42d1134335109f5a63189b42374dee805543f8cdf97c9c27d27247a3feb0d",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:27:06.641Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/051/contact.png",
+      "contactSHA256": "014897eaae57e324388e5da6b238e515539c2dcd24879ed39eadd582282a60d4",
+      "sourceTextChecks": 7,
+      "observations": [
+        "商品名と個数を別列にする本文と図の見出しが対応。明るい緑の配色で主文と公式URLを判読でき、欠けなし。"
+      ],
+      "criticalFindings": [],
+      "optionalSuggestions": [
+        "図は要点を並べた表のイメージ。商品名・個数や貸出日の具体的なサンプル値を行へ置くと、内容をさらに直感的に示せる。"
+      ]
+    },
+    {
+      "id": 52,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "f6efbd34cb9748da350ddbf5c8f2ef224e877b18f5bdf3f5b023faaba1daf823",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:27:06.658Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/052/contact.png",
+      "contactSHA256": "a4f61b3ed06a9b59f48d32ebc215426463b6142b1a96d28dc56f93c229eca093",
+      "sourceTextChecks": 7,
+      "observations": [
+        "一行一件の貸出記録という主文と要点ラベル、行番号のある表のイメージを確認。主文・図・紹介に欠けや重なりなし。"
+      ],
+      "criticalFindings": [],
+      "optionalSuggestions": [
+        "図は要点を並べた表のイメージ。商品名・個数や貸出日の具体的なサンプル値を行へ置くと、内容をさらに直感的に示せる。"
+      ]
+    },
+    {
+      "id": 53,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "575022597ca2a7e8480d03d5ae86a02bce9e14a19aa21564c6b10c53e44e329f",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:27:06.699Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/053/contact.png",
+      "contactSHA256": "be7f43e6d75a541bdc89afee15a974ee3642e45d4ff182c159f6529503546937",
+      "sourceTextChecks": 7,
+      "observations": [
+        "001を文字として保持する本文・図中文字が一致。数値のゼロ消失と文字列設定の説明、紹介、URLを確認。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 54,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "c22d2754980efded2a3348d50bfac5de1927f554216e974252d27da5e1e62ea6",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:29:33.227Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/054/contact.png",
+      "contactSHA256": "221877128d00c4ccde40143c849639dc76e8f81f7cf3ddfc5785fc374f28e621",
+      "observations": [
+        "日付値と文字の混在確認という説明と、見た目・型・照合の図中文字が一致。４場面に欠け・重なりなし。"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 55,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "d74e1ac14337704907741abcbb423d06b40f7b025147e7b1c02e8618d6d1f375",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:33:22.919Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/055/contact.png",
+      "contactSHA256": "bf061910cf80798a0882bd6c086beab6b59d3014907b29f559d6ce57d47f91aa",
+      "sourceTextChecks": 7,
+      "observations": [
+        "修正後の「確認済みで在庫なしは0」を完成MP4で確認。未確認は空欄、確認済みの在庫なしは0という意味が一意になり、４場面の表示も正常。"
+      ],
+      "criticalFindings": [],
+      "resolvedFindings": [
+        {
+          "previousVideoSHA256": "3b0e8fb6cb857b42e0e234ae0077bc1e2b52c1a76ae45dfb18d2220756a32eb6",
+          "finding": {
+            "severity": "P2",
+            "field": "example[1]",
+            "actual": "確認して無いなら0",
+            "expected": "確認済みで在庫なしは0",
+            "reason": "「確認していない」とも読め、未確認は空欄という前行と逆の意味になる。",
+            "status": "RESOLVED",
+            "parentCorrection": "Parent has accepted and is rerendering the clarified wording."
+          },
+          "resolution": "修正後の「確認済みで在庫なしは0」を完成MP4で確認。未確認は空欄、確認済みの在庫なしは0という意味が一意になり、４場面の表示も正常。",
+          "resolvedAt": "2026-10-24T01:33:22.921Z",
+          "verifiedVideoSHA256": "d74e1ac14337704907741abcbb423d06b40f7b025147e7b1c02e8618d6d1f375"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "42afefd3f3b7d9352c93056a7b21f56cd956f802549b11e88e814629ba13b887",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:29:33.259Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/056/contact.png",
+      "contactSHA256": "9cca829407de8bd41cb6b32d07b497e6c5d788b06fc9c363983e7ee9b8030038",
+      "observations": [
+        "単価10円・2個・合計20円の本文と図が一致。計算例・紹介・URLを判読でき、表示欠けなし。"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 57,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "5963072572afd8742c16336ff82c2e5c0a166241e55cc3eaeba1a3ba2069a9e0",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:29:33.313Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/057/contact.png",
+      "contactSHA256": "ac80b622ae6fcef2c876c7f8720cdc4da0357bb517583100cf3e482a7dfe5e95",
+      "observations": [
+        "絞り込みと削除を区別する主文と、全件保持・今月絞り込みの図中文字が対応。４場面の表示に支障なし。"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 58,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "0098adc88a72c9f88d86f09956ecfa75f3bdaed28dca7a72faf61822c9a601c5",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:33:22.940Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/058/contact.png",
+      "contactSHA256": "49748848a276a6be3362bdec7bfe89931b74ae71fbf581cec72dc8d4fb676a37",
+      "sourceTextChecks": 7,
+      "observations": [
+        "新しい並列２カードに同じ備品名と管理番号A/Bが別々に表示され、直列矢印はない。本文の同名２件の区別と一致し、４場面の表示も正常。"
+      ],
+      "criticalFindings": [],
+      "resolvedFindings": [
+        {
+          "previousVideoSHA256": "b6bcd34e412fffea002491d855cd62e33af1cb5462439f9309553d9e996d92b3",
+          "finding": {
+            "severity": "P2",
+            "field": "diagram relation",
+            "actual": "同じ備品名 → 管理番号A → 管理番号B",
+            "expected": "AとBを並列比較または共通名から分岐",
+            "reason": "同名の２件を管理番号で区別する内容に対し、番号AからBへ変更する流れにも見える。",
+            "status": "RESOLVED"
+          },
+          "resolution": "新しい並列２カードに同じ備品名と管理番号A/Bが別々に表示され、直列矢印はない。本文の同名２件の区別と一致し、４場面の表示も正常。",
+          "resolvedAt": "2026-10-24T01:33:22.941Z",
+          "verifiedVideoSHA256": "0098adc88a72c9f88d86f09956ecfa75f3bdaed28dca7a72faf61822c9a601c5"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "f223a8d59db691d98665ec86e51fc500bb3e54348f471a38f233f859eba1da59",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:29:33.393Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/059/contact.png",
+      "contactSHA256": "0dab836598b3c8b1ce33e8d0b9cee2105e8d7c7440a3a1ea41c14a53009730bc",
+      "observations": [
+        "試験用3行で対象列・結果を確認する本文と図が一致。主文・図・URL・紹介に欠けや重なりなし。"
+      ],
+      "criticalFindings": [],
+      "sourceTextChecks": 7
+    },
+    {
+      "id": 60,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "37ae404e55ecb6f1e3a107543583c67e3f89132f947d5fa433a42ffc842b182c",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:33:22.959Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/060/contact.png",
+      "contactSHA256": "c9c892c2965626a41c4ca7aa78f9fb2779a4f603cbdb33d72eb08aef2d4d2bec",
+      "sourceTextChecks": 7,
+      "observations": [
+        "共有する相手と閲覧・編集権限の区別が本文と図で対応。主文・図・紹介・公式URLに切れや重なりなし。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 61,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "7c6dae9b9b0c451c70d64aba490bb76c2e84bcdda44b601013012ce7e26a5b98",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:33:22.973Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/061/contact.png",
+      "contactSHA256": "7f01d7e086c624937921fdab9b331602180e81ca83619c5b72addcf90af5cb30",
+      "sourceTextChecks": 7,
+      "observations": [
+        "受付→内容確認→担当へという受け渡しの本文と図が一致。暗い背景の主文・図中文字・紹介を判読できる。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 62,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "e48449891cdc490af3bb09c031590b50704f0579a862beb95d5145bcb2cf01de",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:33:22.991Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/062/contact.png",
+      "contactSHA256": "c8944f06d81d5f6af3fc20d2dcce5c49ef4e861fdda86d52d3af21886724cc3c",
+      "sourceTextChecks": 7,
+      "observations": [
+        "返却受付・担当者・返却日の記録という本文と図が対応。４場面の文字とマスコットに欠けや重なりなし。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 63,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "1ad95509afda97f28c76b2ea62883546604ff77531e45856418f391b09ae51cb",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:33:22.999Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/063/contact.png",
+      "contactSHA256": "e24005d18e93b9250535dca24c49acd1222f3f88c31aa9ec9e565ed4eb6fbed3",
+      "sourceTextChecks": 7,
+      "observations": [
+        "通常の流れと情報不足時の確認先を説明する本文に図中文字が対応。主文・図・紹介・URLの表示に支障なし。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 64,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "347a766d563a4aae29e9108e17fb9596d7963718f344f1f15130657c0dfdfa2e",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:33:23.024Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/064/contact.png",
+      "contactSHA256": "ed09fe3125f1363074e43dade00b50184ca36742f20bca269dbc32ec39d744c2",
+      "sourceTextChecks": 7,
+      "observations": [
+        "梱包済みと発送済みを区別する本文・図中文字を確認。具体的な完了条件を置く要点、主文と紹介は判読可能で欠けなし。"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 65,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "f181c0414e93ba742cab258b504f8765e0f765d6b3072f5222b896016dd957eb",
+      "technicalStatus": "TECHNICAL_PASS",
+      "reviewedAt": "2026-10-24T01:33:23.037Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/065/contact.png",
+      "contactSHA256": "967238cc709a8bec58b48acaf67abe5d0c133c15f616fdcbb354db4396d12f1f",
+      "sourceTextChecks": 7,
+      "observations": [
+        "予約日の変更と本人希望という理由を残す例が本文と図に対応。４場面の主文・図・紹介・URLに表示欠けなし。"
+      ],
+      "criticalFindings": []
+    }
+  ],
+  "pendingIds": [],
+  "unresolvedFindings": [],
+  "updatedAt": "2026-10-24T01:33:23.038Z",
+  "finalIdentityCheck": {
+    "at": "2026-10-24T01:33:23.847Z",
+    "ids": 35,
+    "currentMP4AndNativeSHA256Match": true,
+    "currentEpisodeAndDiagramMatch": true,
+    "renderedTextChecks": 245,
+    "renderedTextMismatches": 0
+  }
+}

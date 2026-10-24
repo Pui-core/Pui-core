@@ -1,0 +1,266 @@
+{
+  "status": "PASS",
+  "startedAt": "2026-10-24T01:32:07.695Z",
+  "canonicalRoot": "/home/pui/Videos/Pui-Promo/2026-10-24",
+  "tempRoot": "/home/pui/tmp/pui-promo-82/recovery-d5zv81",
+  "isolated": true,
+  "workerCount": 1,
+  "source": {
+    "producer": "/home/pui/.claude/worktrees/Pui-core-promo-issue-82/promotion/pui-shorts-100/produce.mjs",
+    "producerSha256": "2ba5b5fcacfc82bddb8b07e35ecc7e2912c373edbecdc08d17f850e9db7705a3",
+    "audit": "/home/pui/.claude/worktrees/Pui-core-promo-issue-82/promotion/pui-shorts-100/audit.mjs",
+    "auditSha256": "7c8b6418b89c44c404f83119b8b4db72603595a66a6bd4d9771ca2923db02c13"
+  },
+  "fixture": [
+    {
+      "path": "videos/001-pui.mp4",
+      "sha256": "3cbc4267a439cc496771f018b6f837f5e9338b5255af030aa50a533995ee9458",
+      "bytes": 1838502
+    },
+    {
+      "path": "projects/001.ecproj",
+      "sha256": "456e7bc87d36f6d8c60b30f0e1438994a226ce877b1fead2a779cd33553aad62",
+      "bytes": 1587025
+    },
+    {
+      "path": "projects/001.fcproj",
+      "sha256": "1c18363501e4a646235e37d6e1940ce6ab03bdfa9c26b5d4a5e6a24d61bc2401",
+      "bytes": 5008
+    },
+    {
+      "path": "qa/001/rendered.json",
+      "sha256": "b9440dc8a084210c189c5d87b620cf0d9565670d938a494bcb91cccce23bf5a9",
+      "bytes": 344
+    },
+    {
+      "path": "qa/001/checkpoint.json",
+      "sha256": "65b2cbf57a6ba8946b702636391cb2ebe0d5fe42f87d303a70846ee22d2a3f37",
+      "bytes": 1161
+    },
+    {
+      "path": "media/logo-original.png",
+      "sha256": "2998357eea546d67beac784e787afa2cd60675e685199053ca440279ec5d42e3",
+      "bytes": 246132
+    },
+    {
+      "path": "media/icon-original.png",
+      "sha256": "acacb6daf80b79c9b98cf603c39ce4e4398f7e272ae2914488ab8925e794e085",
+      "bytes": 327924
+    }
+  ],
+  "commands": [
+    {
+      "label": "recover-minimal-delivery",
+      "executable": "/home/pui/.nvm/versions/node/v22.22.2/bin/node",
+      "args": [
+        "/home/pui/.claude/worktrees/Pui-core-promo-issue-82/promotion/pui-shorts-100/produce.mjs",
+        "run",
+        "1"
+      ],
+      "environment": {
+        "PUI_PROMO_ROOT": "/home/pui/tmp/pui-promo-82/recovery-d5zv81",
+        "PUI_PROMO_JOBS": "1"
+      },
+      "startedAt": "2026-10-24T01:32:07.751Z",
+      "exit": 0,
+      "signal": null,
+      "seconds": 75.982,
+      "stdout": "{\"id\":1,\"topic\":\"教える・作る・伝える\",\"rendered\":true,\"bytes\":1838502}\n",
+      "stderr": "",
+      "finishedAt": "2026-10-24T01:33:23.733Z"
+    },
+    {
+      "label": "audit-recovered-video",
+      "executable": "/home/pui/.nvm/versions/node/v22.22.2/bin/node",
+      "args": [
+        "/home/pui/.claude/worktrees/Pui-core-promo-issue-82/promotion/pui-shorts-100/audit.mjs",
+        "1"
+      ],
+      "environment": {
+        "PUI_PROMO_ROOT": "/home/pui/tmp/pui-promo-82/recovery-d5zv81",
+        "PUI_AUDIT_JOBS": "1",
+        "PUI_AUDIT_SUMMARY": "qa/recovery-tech-summary.json"
+      },
+      "startedAt": "2026-10-24T01:33:23.735Z",
+      "exit": 0,
+      "signal": null,
+      "seconds": 7.734,
+      "stdout": "{\"id\":1,\"status\":\"TECHNICAL_PASS\",\"failedChecks\":[]}\n",
+      "stderr": "",
+      "finishedAt": "2026-10-24T01:33:31.473Z"
+    }
+  ],
+  "checks": [
+    {
+      "name": "all 20 native/media checks passed",
+      "passed": true,
+      "evidence": {
+        "status": "TECHNICAL_PASS",
+        "count": 20,
+        "failed": []
+      }
+    },
+    {
+      "name": "source, master and score regenerated",
+      "passed": true,
+      "evidence": [
+        {
+          "path": "source/001.jsx",
+          "exists": true,
+          "bytes": 9854,
+          "sha256": "c7978c804da9eaf9bc27fe6f64fa6de7bc437727208e8b632409811f07874a37"
+        },
+        {
+          "path": "media/001-master.mp4",
+          "exists": true,
+          "bytes": 6926801,
+          "sha256": "301b895cd8c7ac5a3b9850cd4600cf1677e094b081ec3963e26d6b4b2e70766b"
+        },
+        {
+          "path": "media/001-score.flac",
+          "exists": true,
+          "bytes": 2791163,
+          "sha256": "e8bf2c968c4d329730f03f94270e167eba92a6dd0eb450d6100cdb45f9da60b0"
+        }
+      ]
+    },
+    {
+      "name": "001.ecproj all footage references point to isolated root",
+      "passed": true,
+      "evidence": [
+        "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\pui-promo-82\\recovery-d5zv81\\media\\logo-original.png",
+        "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\pui-promo-82\\recovery-d5zv81\\media\\icon-original.png"
+      ]
+    },
+    {
+      "name": "001.fcproj all footage references point to isolated root",
+      "passed": true,
+      "evidence": [
+        "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\pui-promo-82\\recovery-d5zv81\\media\\001-master.mp4",
+        "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\pui-promo-82\\recovery-d5zv81\\media\\001-score.flac"
+      ]
+    },
+    {
+      "name": "canonical fixture files unchanged",
+      "passed": true,
+      "evidence": [
+        {
+          "path": "videos/001-pui.mp4",
+          "unchanged": true
+        },
+        {
+          "path": "projects/001.ecproj",
+          "unchanged": true
+        },
+        {
+          "path": "projects/001.fcproj",
+          "unchanged": true
+        },
+        {
+          "path": "qa/001/rendered.json",
+          "unchanged": true
+        },
+        {
+          "path": "qa/001/checkpoint.json",
+          "unchanged": true
+        },
+        {
+          "path": "media/logo-original.png",
+          "unchanged": true
+        },
+        {
+          "path": "media/icon-original.png",
+          "unchanged": true
+        }
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "path": "source/001.jsx",
+      "absent": true
+    },
+    {
+      "path": "media/001-master.mp4",
+      "absent": true
+    },
+    {
+      "path": "media/001-score.flac",
+      "absent": true
+    }
+  ],
+  "result": {
+    "auditStatus": "TECHNICAL_PASS",
+    "technicalChecks": 20,
+    "media": {
+      "width": 1080,
+      "height": 1920,
+      "frames": 540,
+      "seconds": 18.005,
+      "audio": "aac"
+    },
+    "loudness": {
+      "input_i": "-18.34",
+      "input_tp": "-1.68",
+      "input_lra": "1.60",
+      "input_thresh": "-28.34",
+      "output_i": "-17.49",
+      "output_tp": "-1.50",
+      "output_lra": "1.20",
+      "output_thresh": "-27.49",
+      "normalization_type": "dynamic",
+      "target_offset": "0.49"
+    },
+    "artifacts": [
+      {
+        "path": "source/001.jsx",
+        "exists": true,
+        "bytes": 9854,
+        "sha256": "c7978c804da9eaf9bc27fe6f64fa6de7bc437727208e8b632409811f07874a37"
+      },
+      {
+        "path": "media/001-master.mp4",
+        "exists": true,
+        "bytes": 6926801,
+        "sha256": "301b895cd8c7ac5a3b9850cd4600cf1677e094b081ec3963e26d6b4b2e70766b"
+      },
+      {
+        "path": "media/001-score.flac",
+        "exists": true,
+        "bytes": 2791163,
+        "sha256": "e8bf2c968c4d329730f03f94270e167eba92a6dd0eb450d6100cdb45f9da60b0"
+      },
+      {
+        "path": "videos/001-pui.mp4",
+        "sha256": "3cbc4267a439cc496771f018b6f837f5e9338b5255af030aa50a533995ee9458",
+        "bytes": 1838502
+      },
+      {
+        "path": "projects/001.ecproj",
+        "sha256": "6b63a4188ed4d93bf8734c87609599289b684875b0f902a85c85bfe40215ea1d",
+        "bytes": 1587035
+      },
+      {
+        "path": "projects/001.fcproj",
+        "sha256": "7f499d574ffda7fa53540145da6b174c7827a689ca1cb88d8856fb36b2cf976d",
+        "bytes": 5018
+      },
+      {
+        "path": "qa/001/audit.json",
+        "sha256": "9a9d00983bbbc163e25d22d072effdf1405f891b96165bd703ced02b3c54a631",
+        "bytes": 9811
+      }
+    ],
+    "nativeFootage": {
+      "001.ecproj": [
+        "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\pui-promo-82\\recovery-d5zv81\\media\\logo-original.png",
+        "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\pui-promo-82\\recovery-d5zv81\\media\\icon-original.png"
+      ],
+      "001.fcproj": [
+        "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\pui-promo-82\\recovery-d5zv81\\media\\001-master.mp4",
+        "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\pui-promo-82\\recovery-d5zv81\\media\\001-score.flac"
+      ]
+    }
+  },
+  "finishedAt": "2026-10-24T01:33:31.663Z"
+}

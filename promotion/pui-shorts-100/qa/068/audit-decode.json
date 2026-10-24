@@ -1,0 +1,26 @@
+{
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-hide_banner",
+    "-nostdin",
+    "-v",
+    "info",
+    "-xerror",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Pui-Promo\\2026-10-24\\videos\\068-pui.mp4",
+    "-filter_complex",
+    "[0:v:0]blackdetect=d=0.12:pix_th=0.06:pic_th=0.98[v];[0:a:0]silencedetect=noise=-45dB:d=0.5,loudnorm=I=-17:TP=-1.5:LRA=12:print_format=json[a]",
+    "-map",
+    "[v]",
+    "-map",
+    "[a]",
+    "-f",
+    "null",
+    "-"
+  ],
+  "exit": 0,
+  "signal": null,
+  "elapsedSeconds": 3.398,
+  "stdout": "",
+  "stderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Pui-Promo\\2026-10-24\\videos\\068-pui.mp4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41mp42\r\n    encoder         : FilmCraft 0.10.0\r\n  Duration: 00:00:18.01, start: 0.000000, bitrate: 828 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920 [SAR 1:1 DAR 9:16], 503 kb/s, 30 fps, 30 tbr, 30 tbn (default)\r\n    Metadata:\r\n      handler_name    : VideoHandler\r\n      vendor_id       : [0][0][0][0]\r\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 319 kb/s (default)\r\n    Metadata:\r\n      handler_name    : SoundHandler\r\n      vendor_id       : [0][0][0][0]\r\nStream mapping:\r\n  Stream #0:0 (h264) -> blackdetect:default\r\n  Stream #0:1 (aac) -> silencedetect:default\r\n  blackdetect:default -> Stream #0:0 (wrapped_avframe)\r\n  loudnorm:default -> Stream #0:1 (pcm_s16le)\r\nOutput #0, null, to 'pipe:':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41mp42\r\n    encoder         : Lavf62.3.100\r\n  Stream #0:0: Video: wrapped_avframe, yuv420p(tv, bt709, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 200 kb/s, 30 fps, 30 tbn\r\n    Metadata:\r\n      encoder         : Lavc62.11.100 wrapped_avframe\r\n  Stream #0:1: Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s\r\n    Metadata:\r\n      encoder         : Lavc62.11.100 pcm_s16le\r\nframe=  123 fps=0.0 q=-0.0 size=N/A time=00:00:01.40 bitrate=N/A speed=2.71x elapsed=0:00:00.51    \rframe=  234 fps=227 q=-0.0 size=N/A time=00:00:05.00 bitrate=N/A speed=4.85x elapsed=0:00:01.03    \rframe=  335 fps=216 q=-0.0 size=N/A time=00:00:08.50 bitrate=N/A speed=5.49x elapsed=0:00:01.54    \rframe=  452 fps=219 q=-0.0 size=N/A time=00:00:12.30 bitrate=N/A speed=5.96x elapsed=0:00:02.06    \rframe=  533 fps=206 q=-0.0 size=N/A time=00:00:15.10 bitrate=N/A speed=5.85x elapsed=0:00:02.58    \r[Parsed_loudnorm_2 @ 00000221cfb60180] \r\n{\r\n\t\"input_i\" : \"-18.45\",\r\n\t\"input_tp\" : \"-1.88\",\r\n\t\"input_lra\" : \"1.50\",\r\n\t\"input_thresh\" : \"-28.45\",\r\n\t\"output_i\" : \"-17.54\",\r\n\t\"output_tp\" : \"-1.50\",\r\n\t\"output_lra\" : \"1.20\",\r\n\t\"output_thresh\" : \"-27.54\",\r\n\t\"normalization_type\" : \"dynamic\",\r\n\t\"target_offset\" : \"0.54\"\r\n}\r\n[out#0/null @ 00000221cfb61780] video:219KiB audio:13504KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nframe=  540 fps=203 q=-0.0 Lsize=N/A time=00:00:18.00 bitrate=N/A speed=6.76x elapsed=0:00:02.66    \r\n"
+}

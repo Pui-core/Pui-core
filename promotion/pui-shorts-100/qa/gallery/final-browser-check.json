@@ -1,0 +1,479 @@
+{
+  "status": "PASS",
+  "startedAt": "2026-10-24T01:50:04.149Z",
+  "root": "/mnt/f/Videos/ぷい宣伝動画100本-2026-10-24",
+  "url": "file:///mnt/f/Videos/%E3%81%B7%E3%81%84%E5%AE%A3%E4%BC%9D%E5%8B%95%E7%94%BB100%E6%9C%AC-2026-10-24/index.html",
+  "browser": {
+    "engine": "Chromium",
+    "version": "156.0.8078.4",
+    "host": "Linux / Playwright / isolated Xvfb with X11 forced",
+    "headless": false,
+    "executable": "/home/pui/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome",
+    "launchArgs": [
+      "--no-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-gpu",
+      "--ozone-platform=x11"
+    ],
+    "environment": {
+      "WAYLAND_DISPLAY": "unset",
+      "XDG_SESSION_TYPE": "x11",
+      "DISPLAY": "private display allocated by xvfb-run -a"
+    }
+  },
+  "checks": [
+    {
+      "name": "final delivery COMPLETE",
+      "passed": true,
+      "evidence": {
+        "status": "COMPLETE",
+        "count": 100
+      }
+    },
+    {
+      "name": "100 embedded verified records with attention0",
+      "passed": true,
+      "evidence": {
+        "records": 100,
+        "verified": 100,
+        "attention": 0
+      }
+    },
+    {
+      "name": "all 100 final video links exist",
+      "passed": true,
+      "evidence": {
+        "checked": 100,
+        "missing": []
+      }
+    },
+    {
+      "name": "100 rendered cards",
+      "passed": true,
+      "evidence": {
+        "count": 100
+      }
+    },
+    {
+      "name": "10 themes plus all",
+      "passed": true,
+      "evidence": {
+        "themes": [
+          {
+            "series": "",
+            "text": "すべて100"
+          },
+          {
+            "series": "本人紹介と制作姿勢",
+            "text": "本人紹介と制作姿勢10"
+          },
+          {
+            "series": "学びのコツ",
+            "text": "学びのコツ10"
+          },
+          {
+            "series": "エラーの整理",
+            "text": "エラーの整理10"
+          },
+          {
+            "series": "Web改善",
+            "text": "Web改善10"
+          },
+          {
+            "series": "フォームと導線",
+            "text": "フォームと導線10"
+          },
+          {
+            "series": "表計算と自動化",
+            "text": "表計算と自動化10"
+          },
+          {
+            "series": "業務整理",
+            "text": "業務整理10"
+          },
+          {
+            "series": "教材とマニュアル",
+            "text": "教材とマニュアル10"
+          },
+          {
+            "series": "動画と伝え方",
+            "text": "動画と伝え方10"
+          },
+          {
+            "series": "相談と小さく作る",
+            "text": "相談と小さく作る10"
+          }
+        ]
+      }
+    },
+    {
+      "name": "verified filter shows100",
+      "passed": true,
+      "evidence": {
+        "visible": 100
+      }
+    },
+    {
+      "name": "attention filter shows0",
+      "passed": true,
+      "evidence": {
+        "visible": 0
+      }
+    },
+    {
+      "name": "isolated X11 renderer advances frames",
+      "passed": true,
+      "evidence": {
+        "visibility": "visible",
+        "focus": true,
+        "width": 1440,
+        "raf": {
+          "frames": 2,
+          "ms": 21.399999976158142
+        }
+      }
+    },
+    {
+      "name": "reset normal click restores100",
+      "passed": true,
+      "evidence": {
+        "visible": 100
+      }
+    },
+    {
+      "name": "one theme filters to10",
+      "passed": true,
+      "evidence": {
+        "visible": 10
+      }
+    },
+    {
+      "name": "keyword search001 matches video001 and lesson053",
+      "passed": true,
+      "evidence": {
+        "query": "001",
+        "expectedIds": [
+          1,
+          53
+        ],
+        "visibleIds": [
+          1,
+          53
+        ]
+      }
+    },
+    {
+      "name": "desktop1440 no horizontal overflow",
+      "passed": true,
+      "evidence": {
+        "width": 1440,
+        "client": 1425,
+        "scroll": 1425
+      }
+    },
+    {
+      "name": "video001 final metadata",
+      "passed": true,
+      "evidence": {
+        "width": 1080,
+        "height": 1920,
+        "duration": 18.005,
+        "src": "file:///mnt/f/Videos/%E3%81%B7%E3%81%84%E5%AE%A3%E4%BC%9D%E5%8B%95%E7%94%BB100%E6%9C%AC-2026-10-24/videos/001-pui.mp4",
+        "players": 1
+      }
+    },
+    {
+      "name": "video1 download and native links",
+      "passed": true,
+      "evidence": {
+        "links": [
+          {
+            "text": "MP4を保存 ↓",
+            "href": "file:///mnt/f/Videos/%E3%81%B7%E3%81%84%E5%AE%A3%E4%BC%9D%E5%8B%95%E7%94%BB100%E6%9C%AC-2026-10-24/videos/001-pui.mp4"
+          },
+          {
+            "text": "EffectCraft原本",
+            "href": "file:///mnt/f/Videos/%E3%81%B7%E3%81%84%E5%AE%A3%E4%BC%9D%E5%8B%95%E7%94%BB100%E6%9C%AC-2026-10-24/projects/001.ecproj"
+          },
+          {
+            "text": "FilmCraft原本",
+            "href": "file:///mnt/f/Videos/%E3%81%B7%E3%81%84%E5%AE%A3%E4%BC%9D%E5%8B%95%E7%94%BB100%E6%9C%AC-2026-10-24/projects/001.fcproj"
+          }
+        ]
+      }
+    },
+    {
+      "name": "001 short playback progresses",
+      "passed": true,
+      "evidence": {
+        "seconds": 0.133623
+      }
+    },
+    {
+      "name": "caption copy denial selects full text",
+      "passed": true,
+      "evidence": {
+        "start": 0,
+        "end": 152,
+        "length": 152,
+        "focused": true
+      }
+    },
+    {
+      "name": "close stops active playback and restores001 focus",
+      "passed": true,
+      "evidence": {
+        "paused": true,
+        "srcRemoved": true,
+        "focusedCard": 1
+      }
+    },
+    {
+      "name": "video100 final metadata",
+      "passed": true,
+      "evidence": {
+        "width": 1080,
+        "height": 1920,
+        "duration": 18.005,
+        "src": "file:///mnt/f/Videos/%E3%81%B7%E3%81%84%E5%AE%A3%E4%BC%9D%E5%8B%95%E7%94%BB100%E6%9C%AC-2026-10-24/videos/100-pui.mp4",
+        "players": 1
+      }
+    },
+    {
+      "name": "video100 download and native links",
+      "passed": true,
+      "evidence": {
+        "links": [
+          {
+            "text": "MP4を保存 ↓",
+            "href": "file:///mnt/f/Videos/%E3%81%B7%E3%81%84%E5%AE%A3%E4%BC%9D%E5%8B%95%E7%94%BB100%E6%9C%AC-2026-10-24/videos/100-pui.mp4"
+          },
+          {
+            "text": "EffectCraft原本",
+            "href": "file:///mnt/f/Videos/%E3%81%B7%E3%81%84%E5%AE%A3%E4%BC%9D%E5%8B%95%E7%94%BB100%E6%9C%AC-2026-10-24/projects/100.ecproj"
+          },
+          {
+            "text": "FilmCraft原本",
+            "href": "file:///mnt/f/Videos/%E3%81%B7%E3%81%84%E5%AE%A3%E4%BC%9D%E5%8B%95%E7%94%BB100%E6%9C%AC-2026-10-24/projects/100.fcproj"
+          }
+        ]
+      }
+    },
+    {
+      "name": "100 YouTube title available",
+      "passed": true,
+      "evidence": {
+        "title": "一つの困りごとから次の一歩へ｜ぷい / Project P #Shorts",
+        "characters": 37
+      }
+    },
+    {
+      "name": "Escape stops active playback and restores100 focus",
+      "passed": true,
+      "evidence": {
+        "paused": true,
+        "srcRemoved": true,
+        "focusedCard": 100
+      }
+    },
+    {
+      "name": "mobile390 no horizontal overflow",
+      "passed": true,
+      "evidence": {
+        "width": 390,
+        "client": 375,
+        "scroll": 375
+      }
+    },
+    {
+      "name": "pageerror0",
+      "passed": true,
+      "evidence": {
+        "errors": []
+      }
+    },
+    {
+      "name": "externalnetwork0",
+      "passed": true,
+      "evidence": {
+        "requests": []
+      }
+    },
+    {
+      "name": "visible final thumbnails decoded before screenshots",
+      "passed": true,
+      "evidence": {
+        "thumbnails": [
+          {
+            "id": 1,
+            "complete": true,
+            "naturalWidth": 1080,
+            "naturalHeight": 480
+          },
+          {
+            "id": 2,
+            "complete": true,
+            "naturalWidth": 1080,
+            "naturalHeight": 480
+          },
+          {
+            "id": 3,
+            "complete": true,
+            "naturalWidth": 1080,
+            "naturalHeight": 480
+          },
+          {
+            "id": 4,
+            "complete": true,
+            "naturalWidth": 1080,
+            "naturalHeight": 480
+          },
+          {
+            "id": 5,
+            "complete": true,
+            "naturalWidth": 1080,
+            "naturalHeight": 480
+          }
+        ],
+        "frameWait": "Two real requestAnimationFrame callbacks after decode/resize"
+      }
+    }
+  ],
+  "pageErrors": [],
+  "externalRequests": [],
+  "screenshots": [
+    "qa/gallery/final-desktop.png",
+    "qa/gallery/final-mobile.png"
+  ],
+  "limitations": [
+    "Browser metadata and short playback tests, not full-film or headphone listening.",
+    "Reads the final F-drive delivery through file://; Windows Test-Path and file SHA verification are parent-owned."
+  ],
+  "finishedAt": "2026-10-24T02:00:34.556Z",
+  "attempts": [
+    {
+      "status": "FAIL",
+      "error": "locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#reset')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"reset\" type=\"button\" class=\"button quiet reset\">リセット</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+      "stack": "locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#reset')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"reset\" type=\"button\" class=\"button quiet reset\">リセット</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n    at [stdin]:33:31",
+      "checksPassed": 7,
+      "finishedAt": "2026-10-24T01:50:29.427Z",
+      "launchArgs": [
+        "--no-sandbox",
+        "--disable-dev-shm-usage"
+      ]
+    },
+    {
+      "status": "FAIL",
+      "error": "locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#reset')\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"reset\" type=\"button\" class=\"button quiet reset\">リセット</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+      "launchArgs": [
+        "--no-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-gpu",
+        "--disable-features=PaintHolding"
+      ]
+    },
+    {
+      "status": "FAIL",
+      "mode": "headed Chromium / isolated Xvfb",
+      "error": "isolated headed renderer advances frames",
+      "failedDiagnostics": [
+        {
+          "name": "isolated headed renderer advances frames",
+          "passed": false,
+          "evidence": {
+            "visibility": "visible",
+            "focus": true,
+            "width": 1440,
+            "raf": {
+              "frames": 0,
+              "ms": 1000.4000000357628,
+              "timedOut": true
+            }
+          }
+        }
+      ],
+      "rendererDiagnostics": {
+        "visibility": "visible",
+        "focus": true,
+        "width": 1440,
+        "raf": {
+          "frames": 0,
+          "ms": 1000.4000000357628,
+          "timedOut": true
+        }
+      }
+    },
+    {
+      "status": "FAIL",
+      "mode": "headed Chromium / isolated Xvfb / explicit X11",
+      "error": "keyword search selects001",
+      "failedChecks": [
+        {
+          "name": "keyword search selects001",
+          "passed": false,
+          "evidence": {
+            "visible": 2
+          }
+        }
+      ],
+      "resolution": "Test expectation corrected: 001 matches video001 and the membership-number001 lesson053."
+    },
+    {
+      "status": "PASS",
+      "mode": "headed Chromium / isolated Xvfb / explicit X11",
+      "launchArgs": [
+        "--no-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-gpu",
+        "--ozone-platform=x11"
+      ],
+      "finishedAt": "2026-10-24T01:58:28.969Z"
+    }
+  ],
+  "rendererDiagnostics": {
+    "visibility": "visible",
+    "focus": true,
+    "width": 1440,
+    "resetRect": {
+      "x": 793.4375,
+      "y": 665.765625,
+      "width": 76,
+      "height": 42,
+      "top": 665.765625,
+      "right": 869.4375,
+      "bottom": 707.765625,
+      "left": 793.4375
+    },
+    "raf": {
+      "frames": 0,
+      "ms": 1000.3000000119209,
+      "timedOut": true
+    }
+  },
+  "finalRendererDiagnostics": {
+    "visibility": "visible",
+    "focus": true,
+    "width": 1440,
+    "raf": {
+      "frames": 2,
+      "ms": 21.399999976158142
+    }
+  },
+  "rendererWorkaround": "Previous headless and implicit-platform attempts had zero requestAnimationFrame callbacks despite visible/focused DOM. Final normal controls, video playback and screenshots verified using explicit X11 in isolated Xvfb, without source changes.",
+  "testExpectationCorrection": {
+    "query": "001",
+    "oldExpectedIds": [
+      1
+    ],
+    "correctExpectedIds": [
+      1,
+      53
+    ],
+    "reason": "The search indexes both video IDs and useful lesson text; lesson053 contains membership number001."
+  },
+  "screenshotSHA256": {
+    "final-desktop.png": "40be491200aba0417c2c9d965db8fba789afca8609fe3e4bd90c597a5a5606bc",
+    "final-mobile.png": "eac7d80fcfbaa346c874cf05b446c3599bb16203ad8c1bd374687a759a57bab2"
+  },
+  "screenshotsRefreshedAt": "2026-10-24T02:00:34.556Z"
+}
