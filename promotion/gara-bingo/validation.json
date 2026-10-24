@@ -1,0 +1,34 @@
+{
+  "sha256": "8fdf906258d962678ffc46dab6c1b7147bdbdf4fc0579868d2557daf1d5146f3",
+  "technical": "PASS",
+  "sourceContent": "PASS: nine goals and both rewards checked against source image",
+  "visualReview": {
+    "status": "SAMPLED_VISUAL_PASS",
+    "mp4Frames": [
+      21,
+      138,
+      270,
+      435,
+      585
+    ],
+    "allFiveScenes": true,
+    "notes": "Corrected character/title overlap, date spacing, and subtitle contrast."
+  },
+  "realTimeListening": "NOT_CLAIMED",
+  "ownerConfirmedSchedule": "11/24 22:00",
+  "deliveredVideo": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 660,
+    "durationSeconds": 22.016,
+    "audio": "AAC stereo 48kHz",
+    "integratedLoudnessLUFS": -16,
+    "truePeakDbTP": -1.5
+  },
+  "limitations": [
+    "Only the supplied photo post and character were inspected; full account analytics unavailable.",
+    "No creator voice recording provided; captions and original score only.",
+    "Full real-time human viewing/listening and live TikTok UI overlay not performed."
+  ]
+}
