@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "version": 4,
+  "requirements": {
+    "visual": "Restore the accepted V2 dark mint/pink stage and kinetic object/text animation.",
+    "character": "Original JPEG retained; conventional exterior alpha only; static independent layer for all 22 seconds.",
+    "tiktok": "Primary posting master has no audio stream; add the chosen sound in TikTok."
+  },
+  "postingMaster": {
+    "status": "PASS",
+    "file": "osayu-bingo-v4-1124-tiktok-silent.mp4",
+    "bytes": 44024432,
+    "sha256": "bc2f9bc02b0dcd014ee259f4baf4cadd61ff9c8e34943a5dffaa907aab0d8b1c",
+    "duration": 22,
+    "frames": 660,
+    "audioStreams": 0,
+    "sourceMasterSha256": "b7e883138f8ef9897f70f03769b81255c272ab58fff871bf372178d463af0717",
+    "videoCopiedWithoutReencoding": true,
+    "fullDecode": true,
+    "containsCharacter": true,
+    "aiViewingAllowed": false,
+    "musicInsertion": "Add the selected sound inside TikTok; use the timing guide. The mixed MP4 is a separate reference."
+  },
+  "reference": {
+    "file": "osayu-bingo-v4-1124.mp4",
+    "sha256": "d38ffd255fd07915ffee9883fc4f979b3113343d66ccfef1934df7b3a5af8b52",
+    "audio": {
+      "integratedLufs": -13.9,
+      "truePeakDbtp": -1.4
+    },
+    "fullDecode": true,
+    "frames": 660
+  },
+  "motion": {
+    "scenes": 11,
+    "bpm": 150,
+    "wipes": 10,
+    "visualSamples": 32,
+    "nativeCameraTargets": [
+      {
+        "time": 9.68,
+        "name": "OBJECT CAMERA 7 Board chase",
+        "expected": [
+          350,
+          470
+        ],
+        "actual": [
+          350.03450229693294,
+          470.04315976958924
+        ],
+        "errorPixels": 0.055255535511340416,
+        "pass": true
+      },
+      {
+        "time": 10.52,
+        "name": "OBJECT CAMERA 7 Board chase",
+        "expected": [
+          350,
+          470
+        ],
+        "actual": [
+          350.86652010765886,
+          470.8961728870083
+        ],
+        "errorPixels": 1.246588520878428,
+        "pass": true
+      },
+      {
+        "time": 16.24,
+        "name": "OBJECT CAMERA 10 Date to time",
+        "expected": [
+          490,
+          485
+        ],
+        "actual": [
+          489.99942099298755,
+          484.99832792536563
+        ],
+        "errorPixels": 0.0017694865649023068,
+        "pass": true
+      },
+      {
+        "time": 17.6,
+        "name": "OBJECT CAMERA 10 Date to time",
+        "expected": [
+          490,
+          490
+        ],
+        "actual": [
+          490,
+          489.99999999999994
+        ],
+        "errorPixels": 5.684341886080802e-14,
+        "pass": true
+      }
+    ]
+  },
+  "character": {
+    "originalSha256": "89729c246851b636dd535fb077e2098dca9f59f32e7cd19846e0a09e0aaf57c2",
+    "cutoutSha256": "e9947701b3ae601f8ef098c4e2ab0e55e76d0fa32f3c5aef0d08dca015b36bef",
+    "rgbExactMatch": true,
+    "checks": 29,
+    "nativeExactSamples": 14,
+    "opaqueCorePixels": 119356,
+    "lossyTemporalMseDiagnostic": 34.59528357742105,
+    "proof": "Fixed native structure, exact source RGB and lossless opaque core equality; lossy temporal MSE is diagnostic only."
+  },
+  "music": {
+    "title": "Pixel Galaxy",
+    "artist": "Snail's House",
+    "source": "https://0101.bandcamp.com/track/pixel-galaxy",
+    "bpm": 150,
+    "startSeconds": 13.25,
+    "endSeconds": 35.25,
+    "dropSeconds": 16.45,
+    "videoDropSeconds": 3.2,
+    "analysisFile": "editable/qa/music-research/pixel-galaxy-analysis.json",
+    "audioEmbedded": false,
+    "tiktokSoundId": "NOT_VERIFIED",
+    "inAppSync": "NOT_PERFORMED"
+  },
+  "limits": [
+    "No character-containing output was sent to AI image viewing. Character-free layout previews were reviewed.",
+    "Full real-time human playback, listening and actual TikTok UI testing are not claimed.",
+    "Source-library origin and TikTok registered-clip origin can differ; align the drop in the app.",
+    "No SNS publication or scheduled posting."
+  ],
+  "delivery": {
+    "directory": "F:\\Users\\pui\\Documents\\gara\\bingo-1124-v4",
+    "nativeReopenSaveAndRender": true,
+    "nativeProjectCount": 3,
+    "portableCharacterLayerUnchanged": true,
+    "windowsTestPath": [
+      "True",
+      "True"
+    ],
+    "postingSha256": "bc2f9bc02b0dcd014ee259f4baf4cadd61ff9c8e34943a5dffaa907aab0d8b1c",
+    "referenceSha256": "d38ffd255fd07915ffee9883fc4f979b3113343d66ccfef1934df7b3a5af8b52"
+  }
+}
