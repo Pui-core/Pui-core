@@ -1,0 +1,61 @@
+{
+  "version": "V2",
+  "comp": "Pui V2 02",
+  "previewTime": 3.2,
+  "nativeReopenSaveRender": true,
+  "missingAssets": 0,
+  "videoSha256": "961919d6d4d961d4e75d069fabbc3daedba208b82789cf7c290c04f85b25b8f0",
+  "audioSha256": "169a5b4e8c5f1788751694fa05e7c26bb4b9bf88078bb1202a77a9eb6813e55e",
+  "effectcraftFootage": [
+    {
+      "command": "footage.check",
+      "result": {
+        "checked": 14,
+        "missing": 0,
+        "probed": 0
+      }
+    },
+    {
+      "command": "footage.missing",
+      "result": {
+        "missing": []
+      }
+    }
+  ],
+  "filmcraftStatus": [
+    {
+      "identity": {
+        "fingerprint": "6ef9b4d344736543",
+        "size": 36865310
+      },
+      "item": 4,
+      "name": "02-pui-opens-the-inside-v2-master.mp4",
+      "path": "F:\\Videos\\ぷい本人プロモ5本-V2-2026-10-24\\media\\02-pui-opens-the-inside-v2-master.mp4",
+      "proxy": null,
+      "status": "online"
+    },
+    {
+      "identity": {
+        "fingerprint": "ce8abbc247a57777",
+        "size": 5990502
+      },
+      "item": 5,
+      "name": "02-pui-opens-the-inside-v2-mix.wav",
+      "path": "F:\\Videos\\ぷい本人プロモ5本-V2-2026-10-24\\media\\02-pui-opens-the-inside-v2-mix.wav",
+      "proxy": null,
+      "status": "online"
+    }
+  ],
+  "effectcraftSha256": "bf05f0ad44f5a04c04ca41429e58425ac79d364ccfdff7c9cda3e12a9129648a",
+  "filmcraftSha256": "3693dcb869f5f8eecc1cb20c0a9ecee477fb9cef5a8debce20d48922bf6d0643",
+  "proofs": {
+    "effectcraft": {
+      "file": "delivery-effectcraft.png",
+      "sha256": "5e8b03d4bc0885b4091333df3442ed9d2a169ab7d24c7c0a50bf02119648251d"
+    },
+    "filmcraft": {
+      "file": "delivery-filmcraft.png",
+      "sha256": "be41e932c88ad8a7363ac3d9e7ea196c705e84018631e87d231f86ecdff94f54"
+    }
+  }
+}

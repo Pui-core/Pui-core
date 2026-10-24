@@ -1,0 +1,774 @@
+{
+  "status": "SAVED_NATIVE_KEYS_MATCH_FOCUS_PLAN",
+  "nativeSha256": "7082f929bd167abec7f16a2c054565a30d4b884d98df960ef7623f27d7377ca6",
+  "rigs": 19,
+  "keys": 49,
+  "maxDeclaredFocusScreenErrorAtKeysPx": 4.547473508864641e-13,
+  "fullSourceSizes": [
+    [
+      1280,
+      720
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1400,
+      520
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      566,
+      552
+    ],
+    [
+      690,
+      720
+    ],
+    [
+      1178,
+      2556
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1080,
+      1920
+    ],
+    [
+      1080,
+      1920
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      690,
+      720
+    ],
+    [
+      1080,
+      1920
+    ],
+    [
+      1280,
+      720
+    ]
+  ],
+  "scope": "Readback of saved native parent / scale / position / rotation at keys. Does not assert continuous actor-tracking error or whole-video viewing.",
+  "records": [
+    {
+      "scene": 0,
+      "time": 0,
+      "focus": [
+        640,
+        352.8
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 0,
+      "time": 0.13333333333333333,
+      "focus": [
+        640,
+        352.8
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 1,
+      "time": 0.4,
+      "focus": [
+        640,
+        345.59999999999997
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 1,
+      "time": 0.5666666666666667,
+      "focus": [
+        640,
+        360
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 2,
+      "time": 0.8,
+      "focus": [
+        640,
+        345.59999999999997
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 2,
+      "time": 1.2666666666666666,
+      "focus": [
+        640,
+        360
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 2,
+      "time": 1.8666666666666667,
+      "focus": [
+        640,
+        439.2
+      ],
+      "screen": [
+        540,
+        959.9999999999999
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 3,
+      "time": 2,
+      "focus": [
+        665.6,
+        144
+      ],
+      "screen": [
+        540,
+        960.0000000000002
+      ],
+      "entering": false,
+      "errorPx": 2.2737367544323206e-13
+    },
+    {
+      "scene": 3,
+      "time": 2.2333333333333334,
+      "focus": [
+        665.6,
+        156.52173913043478
+      ],
+      "screen": [
+        540,
+        960.0000000000005
+      ],
+      "entering": false,
+      "errorPx": 4.547473508864641e-13
+    },
+    {
+      "scene": 3,
+      "time": 2.566666666666667,
+      "focus": [
+        640,
+        525.6
+      ],
+      "screen": [
+        540,
+        959.9999999999999
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 3,
+      "time": 2.7666666666666666,
+      "focus": [
+        640,
+        525.6
+      ],
+      "screen": [
+        540,
+        959.9999999999999
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 4,
+      "time": 2.8,
+      "focus": [
+        640,
+        446.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 4,
+      "time": 3.2666666666666666,
+      "focus": [
+        640,
+        352.8
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 4,
+      "time": 3.5,
+      "focus": [
+        640,
+        360
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 5,
+      "time": 3.6,
+      "focus": [
+        700,
+        260
+      ],
+      "screen": [
+        1820,
+        960
+      ],
+      "entering": true,
+      "errorPx": 0
+    },
+    {
+      "scene": 5,
+      "time": 3.7666666666666666,
+      "focus": [
+        602,
+        270.40000000000003
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 5,
+      "time": 4.3,
+      "focus": [
+        602,
+        270.40000000000003
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 6,
+      "time": 4.4,
+      "focus": [
+        691.2,
+        338.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 6,
+      "time": 4.766666666666667,
+      "focus": [
+        691.2,
+        360
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 6,
+      "time": 5.466666666666667,
+      "focus": [
+        691.2,
+        360
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 7,
+      "time": 5.6,
+      "focus": [
+        460,
+        420
+      ],
+      "screen": [
+        540.0000000000001,
+        960
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 7,
+      "time": 6.066666666666666,
+      "focus": [
+        570,
+        396.00000000000006
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 7,
+      "time": 6.7,
+      "focus": [
+        640,
+        410.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 8,
+      "time": 6.8,
+      "focus": [
+        283,
+        276
+      ],
+      "screen": [
+        1820,
+        960
+      ],
+      "entering": true,
+      "errorPx": 0
+    },
+    {
+      "scene": 8,
+      "time": 6.966666666666667,
+      "focus": [
+        283,
+        276
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 8,
+      "time": 7.4,
+      "focus": [
+        283,
+        231.84
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 9,
+      "time": 7.6,
+      "focus": [
+        345,
+        302.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 9,
+      "time": 7.833333333333333,
+      "focus": [
+        227.70000000000002,
+        230.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 9,
+      "time": 8.3,
+      "focus": [
+        462.3,
+        230.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 9,
+      "time": 8.666666666666666,
+      "focus": [
+        345,
+        360
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 10,
+      "time": 8.8,
+      "focus": [
+        589,
+        1022.4000000000001
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 10,
+      "time": 9.2,
+      "focus": [
+        589,
+        1329.1200000000001
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 10,
+      "time": 9.5,
+      "focus": [
+        589,
+        1431.3600000000001
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 11,
+      "time": 9.6,
+      "focus": [
+        755.1999999999999,
+        367.2
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 11,
+      "time": 9.866666666666667,
+      "focus": [
+        755.1999999999999,
+        367.2
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 11,
+      "time": 10.266666666666667,
+      "focus": [
+        742.4,
+        367.2
+      ],
+      "screen": [
+        539.9999999999999,
+        960
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 12,
+      "time": 10.4,
+      "focus": [
+        540,
+        864
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 12,
+      "time": 10.966666666666667,
+      "focus": [
+        540,
+        960
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 13,
+      "time": 11.2,
+      "focus": [
+        540,
+        960
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 13,
+      "time": 14.1,
+      "focus": [
+        540,
+        960
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 14,
+      "time": 14.633333333333333,
+      "focus": [
+        640,
+        446.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 14,
+      "time": 14.933333333333334,
+      "focus": [
+        640,
+        396.00000000000006
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 15,
+      "time": 15.033333333333333,
+      "focus": [
+        640,
+        410.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 15,
+      "time": 15.333333333333334,
+      "focus": [
+        640,
+        410.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 16,
+      "time": 15.433333333333334,
+      "focus": [
+        345,
+        251.99999999999997
+      ],
+      "screen": [
+        540,
+        959.9999999999999
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 16,
+      "time": 15.733333333333333,
+      "focus": [
+        345,
+        360
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 17,
+      "time": 15.833333333333334,
+      "focus": [
+        540,
+        960
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 17,
+      "time": 16.233333333333334,
+      "focus": [
+        540,
+        960
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 18,
+      "time": 16.633333333333333,
+      "focus": [
+        640,
+        360
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    }
+  ]
+}

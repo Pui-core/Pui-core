@@ -1,0 +1,20 @@
+{
+  "exit": 0,
+  "seconds": 0.28,
+  "stdout": "",
+  "stderr": "",
+  "attempts": [
+    {
+      "exit": 1,
+      "seconds": 10.042,
+      "stdout": "",
+      "stderr": "<3>WSL (2782556 - ) ERROR: UtilAcceptVsock:281: accept4 failed 110\n"
+    },
+    {
+      "exit": 0,
+      "seconds": 0.28,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

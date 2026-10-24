@@ -1,0 +1,502 @@
+{
+  "status": "TECHNICAL_PASS",
+  "id": "01",
+  "slug": "pui-promo-v2",
+  "file": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/media/01-pui-promo-v2-mix.wav",
+  "sha256": "2a0b8bfca20007443dffed76b94af6ef8b9673a4cec31fea471720ad2e3c39dc",
+  "frames": 553,
+  "fps": 30,
+  "duration": 18.433333333333334,
+  "sampleRate": 48000,
+  "sampleFrames": 884800,
+  "channels": 2,
+  "bits": 24,
+  "sources": {
+    "instrumental": {
+      "path": "/home/pui/Videos/Pui-Promo/2026-10-24/kinetic-five/media/music-01.wav",
+      "sha256": "22807111fc6b2a376d97f753298e4624b34772456d95f71b6f48d336f22cdce5",
+      "wavFormat": {
+        "tag": 65534,
+        "subtype": 1,
+        "rate": 48000,
+        "bits": 24,
+        "channels": 2
+      },
+      "segments": [
+        {
+          "sourceStart": 6.4,
+          "sourceEnd": 17.6,
+          "sourceStartSample": 307200,
+          "sourceEndSample": 844800,
+          "outputStart": 0,
+          "outputEnd": 11.2,
+          "outputStartSample": 0,
+          "outputEndSample": 537600
+        },
+        {
+          "sourceStart": 17.6,
+          "sourceEnd": 21.4,
+          "sourceStartSample": 844800,
+          "sourceEndSample": 1027200,
+          "outputStart": 14.633333333333333,
+          "outputEnd": 18.433333333333334,
+          "outputStartSample": 702400,
+          "outputEndSample": 884800
+        }
+      ]
+    },
+    "artistChorus": {
+      "path": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/medicate_MIX_v6_Natural.wav",
+      "sha256": "759bce18cf69722a1e04e15aed8abd7eb967f324af9a959f7d11cd1d74bedb1f",
+      "acceptedManifest": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/delivery-manifest-v6.json",
+      "acceptedVersion": "v6_Natural",
+      "acceptedStatus": "final_v6_user_accepted",
+      "cueId": "hook2-L01",
+      "lyric": "まだ君が居なくて泣いてる夜",
+      "fullSourceStart": 76.3,
+      "fullSourceEnd": 79.73333333333333,
+      "sourceStartFrame30": 2289,
+      "sourceEndFrame30": 2392,
+      "sourceStartSample44100": 3364830,
+      "sourceEndSample44100": 3516240,
+      "outputStart": 11.2,
+      "outputEnd": 14.633333333333333,
+      "outputStartFrame30": 336,
+      "outputEndFrame30": 439,
+      "outputStartSample": 537600,
+      "outputEndSample": 702400,
+      "resampledSampleFrames": 164800,
+      "phraseStartInOutput": 11.21345500000001,
+      "phraseEndInOutput": 14.47545500000001,
+      "wholeCueContained": true
+    }
+  },
+  "sourceOriginalsUnchanged": true,
+  "cutSeconds": [
+    0,
+    0.4,
+    0.8,
+    2,
+    2.8,
+    3.6,
+    4.4,
+    5.6,
+    6.8,
+    7.6,
+    8.8,
+    9.6,
+    10.4,
+    11.2,
+    14.633333333333333,
+    15.033333333333333,
+    15.433333333333334,
+    15.833333333333334,
+    16.633333333333333,
+    18.433333333333334
+  ],
+  "levelsBeforeFinalNormalization": {
+    "instrumentalGain": 0.7,
+    "artistChorusGain": 0.95,
+    "overloadGuard": 1,
+    "preGuardPeakDbfs": -2.0036689490114195,
+    "sfxPeakDbfs": -15.326689676052974
+  },
+  "timingDesign": {
+    "instrumentalThin": [
+      11.02,
+      11.1
+    ],
+    "intentionalSilentPocket": [
+      11.1,
+      11.2
+    ],
+    "artistChorus": [
+      11.2,
+      14.633333333333333
+    ],
+    "returnDrop": 14.633333333333333,
+    "addedSfxDuringChorus": false,
+    "sfxSamplesInsideChorus": 0,
+    "endFadeSeconds": 0.3,
+    "artistFadeInSeconds": 0.18,
+    "artistFadeOutSeconds": 0.24,
+    "instrumentalReturnFadeInSeconds": 0.2
+  },
+  "originalSfx": {
+    "provenance": "Deterministic additive bass/tick and filtered-noise reverse suction synthesized in this file. No external samples or recordings.",
+    "seed": 26012401,
+    "cues": [
+      {
+        "kind": "original-low-impact",
+        "startSeconds": 0,
+        "endSeconds": 0.29,
+        "landingFrame30": 0,
+        "gain": 0.21,
+        "pan": 0
+      },
+      {
+        "kind": "original-impact-air",
+        "startSeconds": 0,
+        "endSeconds": 0.09,
+        "landingFrame30": 0,
+        "gain": 0.0462,
+        "pan": -0.15
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 0.4,
+        "endSeconds": 0.465,
+        "landingFrame30": 12,
+        "gain": 0.052,
+        "pan": 0.42
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 0.8,
+        "endSeconds": 0.865,
+        "landingFrame30": 24,
+        "gain": 0.035,
+        "pan": -0.42
+      },
+      {
+        "kind": "original-reverse-suction",
+        "startSeconds": 0.68,
+        "endSeconds": 0.8,
+        "landingFrame30": 20,
+        "gain": 0.057,
+        "pan": -0.45
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 2,
+        "endSeconds": 2.065,
+        "landingFrame30": 60,
+        "gain": 0.035,
+        "pan": 0.42
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 2.8,
+        "endSeconds": 2.8649999999999998,
+        "landingFrame30": 84,
+        "gain": 0.052,
+        "pan": -0.42
+      },
+      {
+        "kind": "original-reverse-suction",
+        "startSeconds": 2.6799999999999997,
+        "endSeconds": 2.8,
+        "landingFrame30": 80,
+        "gain": 0.057,
+        "pan": -0.45
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 3.6,
+        "endSeconds": 3.665,
+        "landingFrame30": 108,
+        "gain": 0.035,
+        "pan": 0.42
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 4.4,
+        "endSeconds": 4.465000000000001,
+        "landingFrame30": 132,
+        "gain": 0.035,
+        "pan": -0.42
+      },
+      {
+        "kind": "original-reverse-suction",
+        "startSeconds": 4.28,
+        "endSeconds": 4.4,
+        "landingFrame30": 128,
+        "gain": 0.057,
+        "pan": -0.45
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 5.6,
+        "endSeconds": 5.665,
+        "landingFrame30": 168,
+        "gain": 0.052,
+        "pan": 0.42
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 6.8,
+        "endSeconds": 6.865,
+        "landingFrame30": 204,
+        "gain": 0.035,
+        "pan": -0.42
+      },
+      {
+        "kind": "original-reverse-suction",
+        "startSeconds": 6.68,
+        "endSeconds": 6.8,
+        "landingFrame30": 200,
+        "gain": 0.057,
+        "pan": -0.45
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 7.6,
+        "endSeconds": 7.665,
+        "landingFrame30": 228,
+        "gain": 0.035,
+        "pan": 0.42
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 8.8,
+        "endSeconds": 8.865,
+        "landingFrame30": 264,
+        "gain": 0.052,
+        "pan": -0.42
+      },
+      {
+        "kind": "original-reverse-suction",
+        "startSeconds": 8.680000000000001,
+        "endSeconds": 8.8,
+        "landingFrame30": 260,
+        "gain": 0.057,
+        "pan": -0.45
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 9.6,
+        "endSeconds": 9.665,
+        "landingFrame30": 288,
+        "gain": 0.035,
+        "pan": 0.42
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 10.4,
+        "endSeconds": 10.465,
+        "landingFrame30": 312,
+        "gain": 0.035,
+        "pan": -0.42
+      },
+      {
+        "kind": "original-low-impact",
+        "startSeconds": 2.8,
+        "endSeconds": 3.09,
+        "landingFrame30": 84,
+        "gain": 0.12,
+        "pan": 0
+      },
+      {
+        "kind": "original-impact-air",
+        "startSeconds": 2.8,
+        "endSeconds": 2.8899999999999997,
+        "landingFrame30": 84,
+        "gain": 0.0264,
+        "pan": -0.15
+      },
+      {
+        "kind": "original-low-impact",
+        "startSeconds": 5.6,
+        "endSeconds": 5.89,
+        "landingFrame30": 168,
+        "gain": 0.19,
+        "pan": 0
+      },
+      {
+        "kind": "original-impact-air",
+        "startSeconds": 5.6,
+        "endSeconds": 5.6899999999999995,
+        "landingFrame30": 168,
+        "gain": 0.041800000000000004,
+        "pan": -0.15
+      },
+      {
+        "kind": "original-low-impact",
+        "startSeconds": 8.8,
+        "endSeconds": 9.09,
+        "landingFrame30": 264,
+        "gain": 0.12,
+        "pan": 0
+      },
+      {
+        "kind": "original-impact-air",
+        "startSeconds": 8.8,
+        "endSeconds": 8.89,
+        "landingFrame30": 264,
+        "gain": 0.0264,
+        "pan": -0.15
+      },
+      {
+        "kind": "original-reverse-suction",
+        "startSeconds": 10.88,
+        "endSeconds": 11.08,
+        "landingFrame30": 326,
+        "gain": 0.075,
+        "pan": -0.25
+      },
+      {
+        "kind": "original-low-impact",
+        "startSeconds": 14.693333333333333,
+        "endSeconds": 14.983333333333333,
+        "landingFrame30": 441,
+        "gain": 0.075,
+        "pan": 0
+      },
+      {
+        "kind": "original-impact-air",
+        "startSeconds": 14.693333333333333,
+        "endSeconds": 14.783333333333333,
+        "landingFrame30": 441,
+        "gain": 0.0165,
+        "pan": -0.15
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 15.033333333333333,
+        "endSeconds": 15.098333333333333,
+        "landingFrame30": 451,
+        "gain": 0.044,
+        "pan": 0.35
+      },
+      {
+        "kind": "original-reverse-suction",
+        "startSeconds": 14.933333333333334,
+        "endSeconds": 15.033333333333333,
+        "landingFrame30": 448,
+        "gain": 0.052,
+        "pan": 0.4
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 15.433333333333334,
+        "endSeconds": 15.498333333333333,
+        "landingFrame30": 463,
+        "gain": 0.044,
+        "pan": -0.35
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 15.833333333333334,
+        "endSeconds": 15.898333333333333,
+        "landingFrame30": 475,
+        "gain": 0.065,
+        "pan": 0.35
+      },
+      {
+        "kind": "original-reverse-suction",
+        "startSeconds": 15.733333333333334,
+        "endSeconds": 15.833333333333334,
+        "landingFrame30": 472,
+        "gain": 0.052,
+        "pan": 0.4
+      },
+      {
+        "kind": "original-tactile-tick",
+        "startSeconds": 16.633333333333333,
+        "endSeconds": 16.698333333333334,
+        "landingFrame30": 499,
+        "gain": 0.044,
+        "pan": -0.35
+      },
+      {
+        "kind": "original-low-impact",
+        "startSeconds": 15.833333333333334,
+        "endSeconds": 16.123333333333335,
+        "landingFrame30": 475,
+        "gain": 0.13,
+        "pan": 0
+      },
+      {
+        "kind": "original-impact-air",
+        "startSeconds": 15.833333333333334,
+        "endSeconds": 15.923333333333334,
+        "landingFrame30": 475,
+        "gain": 0.0286,
+        "pan": -0.15
+      }
+    ]
+  },
+  "rawInMemoryWaveSha256": "48858dcbca4b9e3457543469a6304610c6edf7afd77e61373e33c48aec426dbd",
+  "targetIntegratedLufs": -14,
+  "maximumTruePeakDbtp": -1.6,
+  "processingPeakGuardDbtp": -2.2,
+  "firstPass": {
+    "input_i": "-15.82",
+    "input_tp": "-1.99",
+    "input_lra": "2.90",
+    "input_thresh": "-25.82",
+    "output_i": "-14.27",
+    "output_tp": "-2.20",
+    "output_lra": "1.50",
+    "output_thresh": "-24.27",
+    "normalization_type": "dynamic",
+    "target_offset": "0.27"
+  },
+  "normalization": {
+    "input_i": "-15.82",
+    "input_tp": "-1.99",
+    "input_lra": "2.90",
+    "input_thresh": "-25.82",
+    "output_i": "-14.02",
+    "output_tp": "-2.20",
+    "output_lra": "1.50",
+    "output_thresh": "-24.02",
+    "normalization_type": "dynamic",
+    "target_offset": "0.02"
+  },
+  "measured": {
+    "input_i": "-14.23",
+    "input_tp": "-2.20",
+    "input_lra": "2.70",
+    "input_thresh": "-24.23",
+    "output_i": "-14.15",
+    "output_tp": "-2.20",
+    "output_lra": "1.40",
+    "output_thresh": "-24.15",
+    "normalization_type": "dynamic",
+    "target_offset": "0.15"
+  },
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s24le",
+        "sample_rate": "48000",
+        "channels": 2,
+        "bits_per_sample": 24,
+        "time_base": "1/48000",
+        "duration_ts": 884800
+      }
+    ],
+    "format": {
+      "duration": "18.433333"
+    }
+  },
+  "silenceDetection": {
+    "thresholdDbfs": -50,
+    "minimumDuration": 0.04,
+    "events": [
+      {
+        "start": 11.098583,
+        "end": 11.207917
+      }
+    ],
+    "unexpected": []
+  },
+  "verificationScope": {
+    "exactSampleDuration": true,
+    "sourceHashesBeforeAfter": true,
+    "pcmNormalizationAndPeakMeasured": true,
+    "fullWaveDecodedDuringMeasurements": true,
+    "finalAacMeasured": false,
+    "directHumanListening": false,
+    "sourceMovieAudition": false
+  },
+  "pictureSync": "global11.2 maps to full MV76.3/frame2289. Global14.633333 maps to full MV79.733333/frame2392. Do not start the old Highlight at0: that is Verse2.",
+  "writtenArtifacts": [
+    "source/audio-v2.mjs",
+    "media/01-pui-promo-v2-mix.wav",
+    "qa/audio-v2-01.json"
+  ]
+}

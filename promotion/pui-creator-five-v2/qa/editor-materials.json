@@ -1,0 +1,160 @@
+{
+  "status": "CAPTURE_AND_DELIVERY_COPY_PASS",
+  "engine": "Unity 6000.6.5f1 / C#（README開発環境で確認）",
+  "unityEditorCapture": {
+    "performed": false,
+    "reason": "収集開始時に対象Unity GUIは開いていなかった。新規import/build/scene編集は実行せず。"
+  },
+  "inputs": [
+    {
+      "path": "/mnt/f/dev/Object_creator-source/modeling/source/dungeon/RebuiltSword/RebuiltSword.blend",
+      "sha256": "69b57ceacf9629ec2d772491c75e0dd232634274240440a0f41041175554ce88",
+      "sha256AfterCapture": "69b57ceacf9629ec2d772491c75e0dd232634274240440a0f41041175554ce88",
+      "unchanged": true,
+      "sha256AfterNormalClose": "69b57ceacf9629ec2d772491c75e0dd232634274240440a0f41041175554ce88"
+    },
+    {
+      "path": "/mnt/f/dev/Object_creator-source/Game/Assets/Prototype/Runtime/ObjectEditingSession.cs",
+      "sha256": "c8101b6cec0eb9dd55ba0a8dbb81d3a14db5515cc330d0766112ba6f069295dd",
+      "sha256AfterCapture": "c8101b6cec0eb9dd55ba0a8dbb81d3a14db5515cc330d0766112ba6f069295dd",
+      "unchanged": true,
+      "sha256AfterNormalClose": "c8101b6cec0eb9dd55ba0a8dbb81d3a14db5515cc330d0766112ba6f069295dd"
+    }
+  ],
+  "adoptionEvidence": "Object_creator-source/docs/evidence/dungeon-remake/README.md：final-all-04をmodeling/source/dungeon/と実Resourcesへ投影。READMEとASSET_PROVENANCE.mdも参照。",
+  "code": {
+    "application": "Visual Studio Code",
+    "source": "/mnt/f/dev/Object_creator-source/Game/Assets/Prototype/Runtime/ObjectEditingSession.cs",
+    "shownLines": "ObjectEditingSession.cs 37–49：committedSource / Diagnostics / InspectDepth.Parts / AdvanceDepth。長い行の右端は実エディタの画角外。",
+    "captureOnly": true,
+    "isolatedUserDataProfile": true,
+    "sourceEdited": false,
+    "sourceSaved": false,
+    "frameCrop": {
+      "x": 100,
+      "y": 235,
+      "width": 1400,
+      "height": 520
+    },
+    "logicBasis": "元ソース44–49行に Parts → Properties → Source の遷移。画面の短い提示を全文解説とはしない。"
+  },
+  "blender": {
+    "application": "Blender 5.2.2 LTS",
+    "source": "/mnt/f/dev/Object_creator-source/modeling/source/dungeon/RebuiltSword/RebuiltSword.blend",
+    "newIsolatedInstance": true,
+    "automaticSourceExecutionDisabled": true,
+    "viewOnlyOrbit": true,
+    "geometryOrMaterialEdited": false,
+    "sourceSaved": false,
+    "semanticParts": [
+      "blade",
+      "guard",
+      "pommel",
+      "grip_left",
+      "grip_right",
+      "tang",
+      "console_core"
+    ],
+    "meshCount": 7,
+    "vertices": 7535,
+    "polygons": 14910,
+    "bounds": [
+      [
+        -0.3386237323284149,
+        -0.9000000953674316,
+        -0.06382907927036285
+      ],
+      [
+        0.3386237323284149,
+        0.8999999761581421,
+        0.06382907927036285
+      ]
+    ],
+    "recordingStartedUtc": "2026-10-24T10:02:14.1360959Z",
+    "recordingCompletedUtc": "2026-10-24T10:02:20.7549890Z",
+    "encodedDuration": 4,
+    "encodedFrames": 120,
+    "encodedFps": 30,
+    "captureMethod": "System.Drawing.CopyFromScreen -> BGRA pipe -> FFmpeg",
+    "ownWindowUnoccludedAtNinePointsEveryFrame": true,
+    "fullVideoDecode": true,
+    "visualFramesChecked": [
+      "first",
+      "last"
+    ],
+    "note": "既存原本のビュー操作を収録。今回の新規モデリング・人間による手作業・Unity Editorでの新検証を実演したという意味ではない。",
+    "recordingWallClockSeconds": 6.618,
+    "timingNote": "実UIから取得した120フレームを30fps・4秒に保存。制作画面用の無音素材であり、実時間の操作速度やFPS性能の測定ではない。"
+  },
+  "materials": [
+    {
+      "file": "media/editor-objectcreator-code.png",
+      "sha256": "45cf8f438b7db2f7487d99e2c31b3a7152fcd2e224e6bd75908ceb44e7b1f614",
+      "bytes": 91823,
+      "width": 1400,
+      "height": 520,
+      "frames": 1,
+      "fps": null,
+      "duration": null
+    },
+    {
+      "file": "media/editor-blender-sword-orbit.mp4",
+      "sha256": "6dc512384aa42f8a719d2b4f0a6dc0c957bffe0b6f1df0a07d833897ef06c7a2",
+      "bytes": 1401077,
+      "width": 1920,
+      "height": 1032,
+      "frames": 120,
+      "fps": "30/1",
+      "duration": 4
+    },
+    {
+      "file": "media/editor-blender-sword.png",
+      "sha256": "3ac40b657e9c9963899f0442e0376a0f43aef1d2fb2d3b5c0ea3269b2c23af3d",
+      "bytes": 245294,
+      "width": 1920,
+      "height": 1032,
+      "frames": 1,
+      "fps": null,
+      "duration": null
+    }
+  ],
+  "deliveryMaterialCopies": {
+    "destination": "/mnt/f/Videos/ぷい本人プロモ5本-V2-2026-10-24",
+    "status": "COPY_SHA_PASS",
+    "allMatch": true,
+    "files": [
+      {
+        "file": "media/editor-objectcreator-code.png",
+        "sha256": "45cf8f438b7db2f7487d99e2c31b3a7152fcd2e224e6bd75908ceb44e7b1f614",
+        "matches": true
+      },
+      {
+        "file": "media/editor-blender-sword-orbit.mp4",
+        "sha256": "6dc512384aa42f8a719d2b4f0a6dc0c957bffe0b6f1df0a07d833897ef06c7a2",
+        "matches": true
+      },
+      {
+        "file": "media/editor-blender-sword.png",
+        "sha256": "3ac40b657e9c9963899f0442e0376a0f43aef1d2fb2d3b5c0ea3269b2c23af3d",
+        "matches": true
+      }
+    ]
+  },
+  "instanceCleanup": {
+    "status": "NORMAL_CLOSE_COMPLETE",
+    "onlyNewCaptureInstances": true,
+    "blenderClosedWithoutSave": true,
+    "isolatedCodeClosedWithoutSave": true,
+    "ownerExistingCodeRetained": true,
+    "ownerFirefoxRetained": true
+  },
+  "privacy": {
+    "noOtherProjectsOrFiles": true,
+    "noKeysEnvOrPrivateMessages": true,
+    "operationsAndRawOnlyInExcludedResearch": true
+  },
+  "visualProofs": [
+    "media/editor-objectcreator-code.png",
+    "media/editor-blender-sword.png"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "status": "CAPTURED_REAL_PRODUCTION_CONVERSATION",
+  "source": "Firefox / logged-in ChatGPT / existing production conversation",
+  "conversationTitle": "ゲーム3本の現実性比較",
+  "speaker": "owner（右寄せの青いユーザーメッセージ）",
+  "exactQuote": "年末までにゲーム3つ作るのは現実的かどうか",
+  "selectedReason": "制作の目標と迷いが本人の短い問いで伝わる。後続の実ゲーム映像へつなぐため。完成済みという主張ではない。",
+  "recordedStartedUtc": "2026-10-24T09:51:14.3039770Z",
+  "recordedCompletedUtc": "2026-10-24T09:51:19.5714838Z",
+  "method": "System.Drawing.CopyFromScreen -> BGRA pipe -> FFmpeg",
+  "selectedProductionTabVerified": true,
+  "foregroundVerifiedEachFrame": true,
+  "sourceFrames": 156,
+  "sourceFps": 30,
+  "sourceCaptureScreenRect": {
+    "y": 300,
+    "width": 1180,
+    "height": 640,
+    "x": 2530
+  },
+  "sourceQuestionCrop": {
+    "x": 690,
+    "y": 0,
+    "width": 490,
+    "height": 110
+  },
+  "sourceQuestionTime": {
+    "a": 0,
+    "b": 3
+  },
+  "scrollAtSeconds": 3,
+  "materials": [
+    {
+      "file": "media/chatgpt-real-three-games-scroll.mp4",
+      "sha256": "0d51535deca9a39a0429969b7c8101abfcf20fcd2aa9c1c94dff2b2bdb3992b2",
+      "bytes": 197894,
+      "width": 1180,
+      "height": 640,
+      "frames": 156,
+      "fps": "30/1",
+      "duration": 5.2
+    },
+    {
+      "file": "media/chatgpt-real-three-games-question.mp4",
+      "sha256": "42769d097c4812494252420a3a8099084164a59aa467398b74b8d7ea12030d14",
+      "bytes": 9793,
+      "width": 490,
+      "height": 110,
+      "frames": 90,
+      "fps": "30/1",
+      "duration": 3
+    },
+    {
+      "file": "media/chatgpt-real-three-games-question.png",
+      "sha256": "860ff24f35e837c2a4b1de5c25e123bb92a72dea4bb874a3f6a86268639d21ae",
+      "bytes": 22206,
+      "width": 490,
+      "height": 110,
+      "frames": 1,
+      "fps": "25/1",
+      "duration": null
+    }
+  ],
+  "proof": {
+    "file": "qa/firefox-scroll-review.jpg",
+    "sha256": "eb461aed282a507762fb220b080c779414a5820ca094d0e72848edbe56fe0736"
+  },
+  "privacy": {
+    "onlySelectedConversationBody": true,
+    "noSidebarOrConversationList": true,
+    "noBrowserTabsOrAddressBar": true,
+    "noMailOrPrivateUnrelatedContent": true,
+    "rawAndOperationScriptsKeptOnlyInExcludedResearch": true
+  },
+  "actions": {
+    "newMessageSent": false,
+    "sharedOrPublished": false,
+    "settingsOrAuthenticationChanged": false
+  },
+  "editingNote": "質問の実UIは最初の3秒に保持。その後の自然なスクロールを含む全体版は5.2秒。長いassistantの完成予測をowner発言や事実の完成実績として扱わない。"
+}

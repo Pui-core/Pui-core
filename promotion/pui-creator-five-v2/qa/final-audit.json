@@ -1,0 +1,128 @@
+{
+  "status": "FINAL_DELIVERY_CHECKS_PASS",
+  "createdAt": "2026-10-24T10:18:38.243Z",
+  "episodes": [
+    {
+      "id": "01",
+      "title": "この剣、中から開く。作ってるのは、ぷい。",
+      "frames": 553,
+      "duration": 18.453,
+      "audio": {
+        "integratedLufs": -14,
+        "truePeakDbfs": -1.8
+      },
+      "videoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+      "checks": {
+        "videoCopiedIdentically": true,
+        "audioUnchanged": true,
+        "technicalVideoBound": true,
+        "technicalPassed": true,
+        "visualVideoBound": true,
+        "nativeVideoBound": true,
+        "nativeHashesCurrent": true,
+        "savedMotionBound": true,
+        "proofsCurrent": true
+      }
+    },
+    {
+      "id": "02",
+      "title": "剣は開いた。けど、下が埋まってた。",
+      "frames": 624,
+      "duration": 20.8,
+      "audio": {
+        "integratedLufs": -13.8,
+        "truePeakDbfs": -2.2
+      },
+      "videoSha256": "961919d6d4d961d4e75d069fabbc3daedba208b82789cf7c290c04f85b25b8f0",
+      "checks": {
+        "videoCopiedIdentically": true,
+        "audioUnchanged": true,
+        "technicalVideoBound": true,
+        "technicalPassed": true,
+        "visualVideoBound": true,
+        "nativeVideoBound": true,
+        "nativeHashesCurrent": true,
+        "savedMotionBound": true,
+        "proofsCurrent": true
+      }
+    },
+    {
+      "id": "03",
+      "title": "この一歩も、作ってる。",
+      "frames": 624,
+      "duration": 20.8,
+      "audio": {
+        "integratedLufs": -13.9,
+        "truePeakDbfs": -2.5
+      },
+      "videoSha256": "a6ca422251c6584861a0f3e0531ca3b74c33fa362b7c02cd1d13c374081a4f62",
+      "checks": {
+        "videoCopiedIdentically": true,
+        "audioUnchanged": true,
+        "technicalVideoBound": true,
+        "technicalPassed": true,
+        "visualVideoBound": true,
+        "nativeVideoBound": true,
+        "nativeHashesCurrent": true,
+        "savedMotionBound": true,
+        "proofsCurrent": true
+      }
+    },
+    {
+      "id": "04",
+      "title": "欲しい道具は、作る。",
+      "frames": 624,
+      "duration": 20.8,
+      "audio": {
+        "integratedLufs": -13.8,
+        "truePeakDbfs": -2.1
+      },
+      "videoSha256": "cc3ddfeda7b0e420d359b9998e1974819b22401b8efeaa0e7e4557c22af3ba15",
+      "checks": {
+        "videoCopiedIdentically": true,
+        "audioUnchanged": true,
+        "technicalVideoBound": true,
+        "technicalPassed": true,
+        "visualVideoBound": true,
+        "nativeVideoBound": true,
+        "nativeHashesCurrent": true,
+        "savedMotionBound": true,
+        "proofsCurrent": true
+      }
+    },
+    {
+      "id": "05",
+      "title": "曲を作る。聴いて、違うと思ったら直す。",
+      "frames": 412,
+      "duration": 13.738,
+      "audio": {
+        "integratedLufs": -13.8,
+        "truePeakDbfs": -2.1
+      },
+      "videoSha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894",
+      "checks": {
+        "videoCopiedIdentically": true,
+        "audioUnchanged": true,
+        "technicalVideoBound": true,
+        "technicalPassed": true,
+        "visualVideoBound": true,
+        "nativeVideoBound": true,
+        "nativeHashesCurrent": true,
+        "savedMotionBound": true,
+        "proofsCurrent": true
+      }
+    }
+  ],
+  "independentVisualScope": "最終MP4から抽出した全scene代表画像、主要4カット各18連続frame、終端9/冒頭9frameを独立目視。実制作素材の表示・主字幕の判読・注目対象と字幕の分離・遷移着地・終端/ループ境界の画像検査。リアルタイムの全編視聴/試聴、ownerの創作採用判断、公開後成績は別。",
+  "independentVisualReportSha256": "c9104010f2ba96b1ff46a0e5cf6cfdf10e216f04e0c1bc523009a15b61ceba46",
+  "editorMaterialCopies": true,
+  "packageNativeReopenSaveRender": true,
+  "sourceFixesReviewed": {
+    "checkpointDirectoryCreatedBeforeBackup": true,
+    "packageValidatesProductionHashesBeforeCopy": true,
+    "publicSoundCloudCatalogMinimal": true
+  },
+  "fullRealTimeWatchAndAudition": "NOT_PERFORMED",
+  "ownerCreativeAcceptance": "PENDING",
+  "socialPublishing": "NOT_PERFORMED"
+}

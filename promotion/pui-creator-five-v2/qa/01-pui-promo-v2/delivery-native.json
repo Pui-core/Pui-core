@@ -1,0 +1,61 @@
+{
+  "version": "V2",
+  "comp": "Pui V2 01",
+  "previewTime": 3.2,
+  "nativeReopenSaveRender": true,
+  "missingAssets": 0,
+  "videoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+  "audioSha256": "2a0b8bfca20007443dffed76b94af6ef8b9673a4cec31fea471720ad2e3c39dc",
+  "effectcraftFootage": [
+    {
+      "command": "footage.check",
+      "result": {
+        "checked": 23,
+        "missing": 0,
+        "probed": 0
+      }
+    },
+    {
+      "command": "footage.missing",
+      "result": {
+        "missing": []
+      }
+    }
+  ],
+  "filmcraftStatus": [
+    {
+      "identity": {
+        "fingerprint": "e68f8a34b9fde0f6",
+        "size": 31399881
+      },
+      "item": 4,
+      "name": "01-pui-promo-v2-master.mp4",
+      "path": "F:\\Videos\\ぷい本人プロモ5本-V2-2026-10-24\\media\\01-pui-promo-v2-master.mp4",
+      "proxy": null,
+      "status": "online"
+    },
+    {
+      "identity": {
+        "fingerprint": "bdb61e2b302fc90b",
+        "size": 5308902
+      },
+      "item": 5,
+      "name": "01-pui-promo-v2-mix.wav",
+      "path": "F:\\Videos\\ぷい本人プロモ5本-V2-2026-10-24\\media\\01-pui-promo-v2-mix.wav",
+      "proxy": null,
+      "status": "online"
+    }
+  ],
+  "effectcraftSha256": "7082f929bd167abec7f16a2c054565a30d4b884d98df960ef7623f27d7377ca6",
+  "filmcraftSha256": "55f8f2c8375bae8e969680b051128d63b4157287ccef6909e688a6f20ee825a9",
+  "proofs": {
+    "effectcraft": {
+      "file": "delivery-effectcraft.png",
+      "sha256": "ae6ac29dc0e0f19bc7219eb2e8fef2cabb6eee02d09bc53a81470027e7dcf6aa"
+    },
+    "filmcraft": {
+      "file": "delivery-filmcraft.png",
+      "sha256": "fd66aa8873c17ec10b088c7cf69764b8cb3a0865147a4d9ad5e1186b2e3d5ae1"
+    }
+  }
+}

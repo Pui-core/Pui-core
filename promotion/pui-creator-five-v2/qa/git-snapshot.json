@@ -1,0 +1,13 @@
+{
+  "scope": "Source, final MP4, native projects, linked shot plates/mixes, selected provenance and final QA copied from the verified F delivery.",
+  "fullDeliveryInventory": "delivery-files.json describes the F delivery, including intermediate native master files omitted from Git.",
+  "excludedFromGit": [
+    "media/*-master.mp4",
+    "media/*-raw.wav",
+    "research/",
+    "checkpoints/",
+    "prior-package-*",
+    "full SoundCloud audio library"
+  ],
+  "rebuild": "Use node source/produce.mjs prepare and render to regenerate masters before editing the FilmCraft timeline outside the original F delivery."
+}

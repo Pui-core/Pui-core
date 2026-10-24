@@ -1,0 +1,161 @@
+{
+  "status": "TECHNICAL_PASS",
+  "version": "V2",
+  "comp": "Pui V2 02",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 624,
+  "duration": 20.8,
+  "expectedDuration": 20.8,
+  "fullDecode": true,
+  "audio": {
+    "integratedLufs": -13.8,
+    "truePeakDbfs": -2.2
+  },
+  "missingNativeAssets": 0,
+  "allSceneFrames": [
+    11,
+    35,
+    83,
+    154,
+    203,
+    251,
+    323,
+    371,
+    443,
+    515,
+    587
+  ],
+  "continuousCuts": [
+    {
+      "time": 2.4,
+      "shot": 2,
+      "transition": "cut",
+      "index": 1,
+      "startFrame": 69,
+      "frames": 18,
+      "file": "continuous-cut-01.jpg",
+      "start": 2.3
+    },
+    {
+      "time": 8,
+      "shot": 5,
+      "transition": "slideL",
+      "index": 2,
+      "startFrame": 237,
+      "frames": 18,
+      "file": "continuous-cut-02.jpg",
+      "start": 7.9
+    },
+    {
+      "time": 12,
+      "shot": 7,
+      "transition": "whipR",
+      "index": 3,
+      "startFrame": 357,
+      "frames": 18,
+      "file": "continuous-cut-03.jpg",
+      "start": 11.9
+    },
+    {
+      "time": 19.2,
+      "shot": 10,
+      "transition": "cut",
+      "index": 4,
+      "startFrame": 573,
+      "frames": 18,
+      "file": "continuous-cut-04.jpg",
+      "start": 19.1
+    }
+  ],
+  "coverTime": 0.3,
+  "previewTime": 3.2,
+  "videoSha256": "961919d6d4d961d4e75d069fabbc3daedba208b82789cf7c290c04f85b25b8f0",
+  "effectcraftSha256": "d237975e4d275e955d7cf68c15e3e0a9181289d4a98960000430c97f45238bda",
+  "filmcraftSha256": "e6b316966c7a01950312ea4391ccbc19951a597daee0afbee92d0c2af4e756bc",
+  "audioSha256": "169a5b4e8c5f1788751694fa05e7c26bb4b9bf88078bb1202a77a9eb6813e55e",
+  "nativeSnapshot": "rendered",
+  "sha256": "961919d6d4d961d4e75d069fabbc3daedba208b82789cf7c290c04f85b25b8f0",
+  "visualReview": "PASS_WITHIN_EXTRACTED_IMAGE_SCOPE",
+  "realTimeWholeWatchAndAudition": "NOT_PERFORMED",
+  "ownerCreativeAcceptance": "PENDING",
+  "postPublicationPerformance": "NOT_MEASURED",
+  "visualReviewEvidence": "../independent-visual-v2.json",
+  "visualReviewVideoSha256": "961919d6d4d961d4e75d069fabbc3daedba208b82789cf7c290c04f85b25b8f0",
+  "visualReviewCoverage": {
+    "allSceneSamples": 11,
+    "allSceneFrames": [
+      11,
+      35,
+      83,
+      154,
+      203,
+      251,
+      323,
+      371,
+      443,
+      515,
+      587
+    ],
+    "continuousCuts": [
+      {
+        "time": 2.4,
+        "shot": 2,
+        "transition": "cut",
+        "index": 1,
+        "startFrame": 69,
+        "frames": 18,
+        "file": "continuous-cut-01.jpg",
+        "start": 2.3
+      },
+      {
+        "time": 8,
+        "shot": 5,
+        "transition": "slideL",
+        "index": 2,
+        "startFrame": 237,
+        "frames": 18,
+        "file": "continuous-cut-02.jpg",
+        "start": 7.9
+      },
+      {
+        "time": 12,
+        "shot": 7,
+        "transition": "whipR",
+        "index": 3,
+        "startFrame": 357,
+        "frames": 18,
+        "file": "continuous-cut-03.jpg",
+        "start": 11.9
+      },
+      {
+        "time": 19.2,
+        "shot": 10,
+        "transition": "cut",
+        "index": 4,
+        "startFrame": 573,
+        "frames": 18,
+        "file": "continuous-cut-04.jpg",
+        "start": 19.1
+      }
+    ],
+    "continuousFrames": 72,
+    "loopFrames": {
+      "last": 9,
+      "first": 9
+    },
+    "additionalFinalMp4Frames": [
+      {
+        "frame": 45,
+        "time": 1.5,
+        "subject": "実ChatGPT相談と最終字幕"
+      },
+      {
+        "frame": 216,
+        "time": 7.2,
+        "subject": "実Blenderモデル原本"
+      }
+    ]
+  }
+}

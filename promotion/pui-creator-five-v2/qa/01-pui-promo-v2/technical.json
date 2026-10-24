@@ -1,0 +1,172 @@
+{
+  "status": "TECHNICAL_PASS",
+  "version": "V2",
+  "comp": "Pui V2 01",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 553,
+  "duration": 18.453,
+  "expectedDuration": 18.433333333333334,
+  "fullDecode": true,
+  "audio": {
+    "integratedLufs": -14,
+    "truePeakDbfs": -1.8
+  },
+  "missingNativeAssets": 0,
+  "allSceneFrames": [
+    8,
+    20,
+    35,
+    71,
+    95,
+    119,
+    143,
+    178,
+    214,
+    238,
+    275,
+    299,
+    323,
+    346,
+    447,
+    459,
+    471,
+    486,
+    510
+  ],
+  "continuousCuts": [
+    {
+      "time": 2.8,
+      "shot": 4,
+      "transition": "snap",
+      "index": 1,
+      "startFrame": 81,
+      "frames": 18,
+      "file": "continuous-cut-01.jpg",
+      "start": 2.7
+    },
+    {
+      "time": 6.8,
+      "shot": 8,
+      "transition": "slideL",
+      "index": 2,
+      "startFrame": 201,
+      "frames": 18,
+      "file": "continuous-cut-02.jpg",
+      "start": 6.7
+    },
+    {
+      "time": 11.2,
+      "shot": 13,
+      "transition": "cut",
+      "index": 3,
+      "startFrame": 333,
+      "frames": 18,
+      "file": "continuous-cut-03.jpg",
+      "start": 11.1
+    },
+    {
+      "time": 15.833333333333334,
+      "shot": 17,
+      "transition": "cut",
+      "index": 4,
+      "startFrame": 472,
+      "frames": 18,
+      "file": "continuous-cut-04.jpg",
+      "start": 15.733333333333333
+    }
+  ],
+  "coverTime": 0.3,
+  "previewTime": 3.2,
+  "videoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+  "effectcraftSha256": "fcc02ed1b6f08ee6872c6556c8e7e2873f4d44379667f36f22f3a3d57ff30b4a",
+  "filmcraftSha256": "a11b551becb49479b2744e096b38ebf5a7e9ac8a5608bb4763a126f0d4ae814c",
+  "audioSha256": "2a0b8bfca20007443dffed76b94af6ef8b9673a4cec31fea471720ad2e3c39dc",
+  "nativeSnapshot": "rendered",
+  "sha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+  "visualReview": "PASS_WITHIN_EXTRACTED_IMAGE_SCOPE",
+  "realTimeWholeWatchAndAudition": "NOT_PERFORMED",
+  "ownerCreativeAcceptance": "PENDING",
+  "postPublicationPerformance": "NOT_MEASURED",
+  "visualReviewEvidence": "../independent-visual-v2.json",
+  "visualReviewVideoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+  "visualReviewCoverage": {
+    "allSceneSamples": 19,
+    "allSceneFrames": [
+      8,
+      20,
+      35,
+      71,
+      95,
+      119,
+      143,
+      178,
+      214,
+      238,
+      275,
+      299,
+      323,
+      346,
+      447,
+      459,
+      471,
+      486,
+      510
+    ],
+    "continuousCuts": [
+      {
+        "time": 2.8,
+        "shot": 4,
+        "transition": "snap",
+        "index": 1,
+        "startFrame": 81,
+        "frames": 18,
+        "file": "continuous-cut-01.jpg",
+        "start": 2.7
+      },
+      {
+        "time": 6.8,
+        "shot": 8,
+        "transition": "slideL",
+        "index": 2,
+        "startFrame": 201,
+        "frames": 18,
+        "file": "continuous-cut-02.jpg",
+        "start": 6.7
+      },
+      {
+        "time": 11.2,
+        "shot": 13,
+        "transition": "cut",
+        "index": 3,
+        "startFrame": 333,
+        "frames": 18,
+        "file": "continuous-cut-03.jpg",
+        "start": 11.1
+      },
+      {
+        "time": 15.833333333333334,
+        "shot": 17,
+        "transition": "cut",
+        "index": 4,
+        "startFrame": 472,
+        "frames": 18,
+        "file": "continuous-cut-04.jpg",
+        "start": 15.733333333333333
+      }
+    ],
+    "continuousFrames": 72,
+    "loopFrames": {
+      "last": 9,
+      "first": 9
+    },
+    "additionalFinalMp4Frames": [
+      {
+        "frame": 119,
+        "time": 3.966666666666667,
+        "subject": "実際のC#編集画面"
+      }
+    ]
+  }
+}

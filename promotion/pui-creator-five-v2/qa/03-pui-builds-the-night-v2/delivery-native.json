@@ -1,0 +1,61 @@
+{
+  "version": "V2",
+  "comp": "Pui V2 03",
+  "previewTime": 3.2,
+  "nativeReopenSaveRender": true,
+  "missingAssets": 0,
+  "videoSha256": "a6ca422251c6584861a0f3e0531ca3b74c33fa362b7c02cd1d13c374081a4f62",
+  "audioSha256": "6d918799df8195c63ca9024965094dca789ae902998e91e96c702949c32df0ac",
+  "effectcraftFootage": [
+    {
+      "command": "footage.check",
+      "result": {
+        "checked": 14,
+        "missing": 0,
+        "probed": 0
+      }
+    },
+    {
+      "command": "footage.missing",
+      "result": {
+        "missing": []
+      }
+    }
+  ],
+  "filmcraftStatus": [
+    {
+      "identity": {
+        "fingerprint": "fd3b9e0dd1c5504c",
+        "size": 36423558
+      },
+      "item": 4,
+      "name": "03-pui-builds-the-night-v2-master.mp4",
+      "path": "F:\\Videos\\ぷい本人プロモ5本-V2-2026-10-24\\media\\03-pui-builds-the-night-v2-master.mp4",
+      "proxy": null,
+      "status": "online"
+    },
+    {
+      "identity": {
+        "fingerprint": "65302094290fca10",
+        "size": 5990502
+      },
+      "item": 5,
+      "name": "03-pui-builds-the-night-v2-mix.wav",
+      "path": "F:\\Videos\\ぷい本人プロモ5本-V2-2026-10-24\\media\\03-pui-builds-the-night-v2-mix.wav",
+      "proxy": null,
+      "status": "online"
+    }
+  ],
+  "effectcraftSha256": "75062491e384ea07a369106c9284a6ff00472e3cdca674488f5d98e12ea2c448",
+  "filmcraftSha256": "1be05745c3a290a3168145049c0d3c56782da076cceacb99814b75b8f5c3adfe",
+  "proofs": {
+    "effectcraft": {
+      "file": "delivery-effectcraft.png",
+      "sha256": "68c176e055904dde9257bf408dfbd1d83e7c6da35d3d57d0f16309984413772a"
+    },
+    "filmcraft": {
+      "file": "delivery-filmcraft.png",
+      "sha256": "793b48a55e8e3d2ea4ed2a56f0f4324da1ee298dfd6ee02bd77e7f9b3cb2110c"
+    }
+  }
+}

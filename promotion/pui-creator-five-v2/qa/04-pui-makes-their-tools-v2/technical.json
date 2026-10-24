@@ -1,0 +1,149 @@
+{
+  "status": "TECHNICAL_PASS",
+  "version": "V2",
+  "comp": "Pui V2 04",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 624,
+  "duration": 20.8,
+  "expectedDuration": 20.8,
+  "fullDecode": true,
+  "audio": {
+    "integratedLufs": -13.8,
+    "truePeakDbfs": -2.1
+  },
+  "missingNativeAssets": 0,
+  "allSceneFrames": [
+    11,
+    35,
+    83,
+    131,
+    178,
+    227,
+    299,
+    346,
+    419,
+    491,
+    587
+  ],
+  "continuousCuts": [
+    {
+      "time": 2.4,
+      "shot": 2,
+      "transition": "whipR",
+      "index": 1,
+      "startFrame": 69,
+      "frames": 18,
+      "file": "continuous-cut-01.jpg",
+      "start": 2.3
+    },
+    {
+      "time": 7.2,
+      "shot": 5,
+      "transition": "slideL",
+      "index": 2,
+      "startFrame": 213,
+      "frames": 18,
+      "file": "continuous-cut-02.jpg",
+      "start": 7.1
+    },
+    {
+      "time": 13.6,
+      "shot": 8,
+      "transition": "slideL",
+      "index": 3,
+      "startFrame": 405,
+      "frames": 18,
+      "file": "continuous-cut-03.jpg",
+      "start": 13.5
+    },
+    {
+      "time": 19.2,
+      "shot": 10,
+      "transition": "cut",
+      "index": 4,
+      "startFrame": 573,
+      "frames": 18,
+      "file": "continuous-cut-04.jpg",
+      "start": 19.1
+    }
+  ],
+  "coverTime": 0.3,
+  "previewTime": 3.2,
+  "videoSha256": "cc3ddfeda7b0e420d359b9998e1974819b22401b8efeaa0e7e4557c22af3ba15",
+  "effectcraftSha256": "387fdadb6487f9ead305cfab3b523afaa01dfa1684432b0c59b20aefb61c1efd",
+  "filmcraftSha256": "3ce7462f4b03e69116bc8ce33a375213079ba9ebbd7c0fb6722ec3d5d68f0d55",
+  "audioSha256": "5e70de881eae2229cc40152ca42783e5ce2e80edb683a402d4eb49dc0fabc42f",
+  "nativeSnapshot": "rendered",
+  "sha256": "cc3ddfeda7b0e420d359b9998e1974819b22401b8efeaa0e7e4557c22af3ba15",
+  "visualReview": "PASS_WITHIN_EXTRACTED_IMAGE_SCOPE",
+  "realTimeWholeWatchAndAudition": "NOT_PERFORMED",
+  "ownerCreativeAcceptance": "PENDING",
+  "postPublicationPerformance": "NOT_MEASURED",
+  "visualReviewEvidence": "../independent-visual-v2.json",
+  "visualReviewVideoSha256": "cc3ddfeda7b0e420d359b9998e1974819b22401b8efeaa0e7e4557c22af3ba15",
+  "visualReviewCoverage": {
+    "allSceneSamples": 11,
+    "allSceneFrames": [
+      11,
+      35,
+      83,
+      131,
+      178,
+      227,
+      299,
+      346,
+      419,
+      491,
+      587
+    ],
+    "continuousCuts": [
+      {
+        "time": 2.4,
+        "shot": 2,
+        "transition": "whipR",
+        "index": 1,
+        "startFrame": 69,
+        "frames": 18,
+        "file": "continuous-cut-01.jpg",
+        "start": 2.3
+      },
+      {
+        "time": 7.2,
+        "shot": 5,
+        "transition": "slideL",
+        "index": 2,
+        "startFrame": 213,
+        "frames": 18,
+        "file": "continuous-cut-02.jpg",
+        "start": 7.1
+      },
+      {
+        "time": 13.6,
+        "shot": 8,
+        "transition": "slideL",
+        "index": 3,
+        "startFrame": 405,
+        "frames": 18,
+        "file": "continuous-cut-03.jpg",
+        "start": 13.5
+      },
+      {
+        "time": 19.2,
+        "shot": 10,
+        "transition": "cut",
+        "index": 4,
+        "startFrame": 573,
+        "frames": 18,
+        "file": "continuous-cut-04.jpg",
+        "start": 19.1
+      }
+    ],
+    "continuousFrames": 72,
+    "loopFrames": {
+      "last": 9,
+      "first": 9
+    }
+  }
+}
