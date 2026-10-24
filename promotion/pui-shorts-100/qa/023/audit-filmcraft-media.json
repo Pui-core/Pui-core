@@ -1,0 +1,14 @@
+{
+  "exe": "/mnt/c/Program Files/FilmCraft/filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Pui-Promo\\2026-10-24\\projects\\023.fcproj",
+    "exec",
+    "media.status"
+  ],
+  "exit": 0,
+  "signal": null,
+  "elapsedSeconds": 0.406,
+  "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"40dff40f3fa3a341\",\n      \"size\": 6942092\n    },\n    \"item\": 4,\n    \"name\": \"023-master.mp4\",\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\Videos\\\\Pui-Promo\\\\2026-10-24\\\\media\\\\023-master.mp4\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"f049fa66c8a98d45\",\n      \"size\": 2763727\n    },\n    \"item\": 5,\n    \"name\": \"023-score.flac\",\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\Videos\\\\Pui-Promo\\\\2026-10-24\\\\media\\\\023-score.flac\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+  "stderr": ""
+}

@@ -1,0 +1,148 @@
+{
+  "checkedAt": "2026-10-24T01:01:19.461Z",
+  "page": "file:///home/pui/Videos/Pui-Promo/2026-10-24/index.html",
+  "widths": [
+    1440,
+    390
+  ],
+  "checks": [
+    {
+      "name": "100 cards",
+      "passed": true
+    },
+    {
+      "name": "10 series plus all",
+      "passed": true
+    },
+    {
+      "name": "series 1",
+      "passed": true
+    },
+    {
+      "name": "series 2",
+      "passed": true
+    },
+    {
+      "name": "series 3",
+      "passed": true
+    },
+    {
+      "name": "series 4",
+      "passed": true
+    },
+    {
+      "name": "series 5",
+      "passed": true
+    },
+    {
+      "name": "series 6",
+      "passed": true
+    },
+    {
+      "name": "series 7",
+      "passed": true
+    },
+    {
+      "name": "series 8",
+      "passed": true
+    },
+    {
+      "name": "series 9",
+      "passed": true
+    },
+    {
+      "name": "series 10",
+      "passed": true
+    },
+    {
+      "name": "empty state",
+      "passed": true
+    },
+    {
+      "name": "reset",
+      "passed": true
+    },
+    {
+      "name": "keyword search",
+      "passed": true,
+      "detail": {
+        "results": 12
+      }
+    },
+    {
+      "name": "actual audit filter",
+      "passed": true,
+      "detail": {
+        "verified": 5
+      }
+    },
+    {
+      "name": "first hook frame cropping",
+      "passed": true,
+      "detail": {
+        "frameWidth": 242,
+        "imgWidth": 968.875,
+        "complete": true,
+        "naturalWidth": 1080,
+        "naturalHeight": 480
+      }
+    },
+    {
+      "name": "single modal player",
+      "passed": true
+    },
+    {
+      "name": "MP4 preview loaded",
+      "passed": true,
+      "detail": {
+        "width": 1080,
+        "height": 1920,
+        "duration": 18.005,
+        "src": "videos/001-pui.mp4"
+      }
+    },
+    {
+      "name": "YouTube title panel",
+      "passed": true
+    },
+    {
+      "name": "clipboard fallback selects text",
+      "passed": true,
+      "detail": {
+        "start": 0,
+        "end": 152,
+        "length": 152,
+        "active": true
+      }
+    },
+    {
+      "name": "Escape closes and returns focus",
+      "passed": true
+    },
+    {
+      "name": "pending episode honest state",
+      "passed": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile modal no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "no script errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no network requests",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "networkRequests": [],
+  "scope": "Offline gallery interaction only; 5 rendered and audited videos at this snapshot. Not a review of all 100 rendered outputs."
+}

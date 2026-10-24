@@ -1,0 +1,4 @@
+# Keep the Windows CSV format on checkout and preserve native project bytes.
+posting-captions.csv text eol=crlf
+projects/*.ecproj binary
+projects/*.fcproj binary

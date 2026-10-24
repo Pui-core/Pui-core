@@ -1,0 +1,418 @@
+{
+  "id": 92,
+  "auditedAt": "2026-10-24T01:41:47.069Z",
+  "expected": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 18,
+    "frames": 540
+  },
+  "checks": [
+    {
+      "name": "ffprobe completed",
+      "passed": true,
+      "evidence": {
+        "exit": 0
+      }
+    },
+    {
+      "name": "portrait dimensions",
+      "passed": true,
+      "evidence": {
+        "width": 1080,
+        "height": 1920
+      }
+    },
+    {
+      "name": "video format",
+      "passed": true,
+      "evidence": {
+        "codec": "h264",
+        "pixelFormat": "yuv420p"
+      }
+    },
+    {
+      "name": "video frame count and rate",
+      "passed": true,
+      "evidence": {
+        "averageFrameRate": "30/1",
+        "frames": "540"
+      }
+    },
+    {
+      "name": "duration",
+      "passed": true,
+      "evidence": {
+        "container": "18.005000",
+        "video": "18.000000"
+      }
+    },
+    {
+      "name": "stereo AAC 48 kHz",
+      "passed": true,
+      "evidence": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "name": "complete video/audio decode",
+      "passed": true,
+      "evidence": {
+        "exit": 0
+      }
+    },
+    {
+      "name": "decoded video frame count",
+      "passed": true,
+      "evidence": {
+        "decodedFrames": 540,
+        "expectedFrames": 540
+      }
+    },
+    {
+      "name": "black frames",
+      "passed": true,
+      "evidence": {
+        "thresholdSeconds": 0.15,
+        "pixelThreshold": 0.06,
+        "pictureThreshold": 0.98,
+        "events": []
+      }
+    },
+    {
+      "name": "audio continuity",
+      "passed": true,
+      "evidence": {
+        "noiseThresholdDb": -45,
+        "maximumInteriorSilenceSeconds": 0.5,
+        "events": []
+      }
+    },
+    {
+      "name": "audio loudness and peak",
+      "passed": true,
+      "evidence": {
+        "integratedLUFS": -17.91,
+        "truePeakDbTP": -1.9,
+        "acceptedLUFS": [
+          -20,
+          -14
+        ],
+        "maximumTruePeakDbTP": -1
+      }
+    },
+    {
+      "name": "EffectCraft reopened",
+      "passed": true,
+      "evidence": {
+        "exit": 0
+      }
+    },
+    {
+      "name": "EffectCraft composition contract",
+      "passed": true,
+      "evidence": {
+        "name": "Pui 92",
+        "width": 1080,
+        "height": 1920,
+        "duration": 18,
+        "fps": 30,
+        "layerCount": 64
+      }
+    },
+    {
+      "name": "EffectCraft linked media",
+      "passed": true,
+      "evidence": {
+        "check": {
+          "checked": 2,
+          "missing": 0,
+          "probed": 0
+        },
+        "missing": []
+      }
+    },
+    {
+      "name": "FilmCraft reopened",
+      "passed": true,
+      "evidence": {
+        "exit": 0
+      }
+    },
+    {
+      "name": "FilmCraft sequence contract",
+      "passed": true,
+      "evidence": {
+        "name": "Pui 092",
+        "width": 1080,
+        "height": 1920,
+        "fps": {
+          "den": 1,
+          "num": 30
+        },
+        "duration": 18,
+        "frames": 540,
+        "sampleRate": 48000
+      }
+    },
+    {
+      "name": "FilmCraft linked media",
+      "passed": true,
+      "evidence": [
+        {
+          "identity": {
+            "fingerprint": "6b50ad3082346126",
+            "size": 7571201
+          },
+          "item": 4,
+          "name": "092-master.mp4",
+          "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Pui-Promo\\2026-10-24\\media\\092-master.mp4",
+          "proxy": null,
+          "status": "online"
+        },
+        {
+          "identity": {
+            "fingerprint": "f6c6922c2ed2f449",
+            "size": 2813737
+          },
+          "item": 5,
+          "name": "092-score.flac",
+          "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Pui-Promo\\2026-10-24\\media\\092-score.flac",
+          "proxy": null,
+          "status": "online"
+        }
+      ]
+    },
+    {
+      "name": "native measured text safe area",
+      "passed": true,
+      "evidence": {
+        "boxCount": 29,
+        "minimumSize": 18,
+        "safeBounds": {
+          "left": 95,
+          "right": 890,
+          "top": 210,
+          "bottom": 1540
+        },
+        "invalidBoxes": []
+      }
+    },
+    {
+      "name": "render receipt identities",
+      "passed": true,
+      "evidence": {
+        "videoUnchanged": true,
+        "effectcraftUnchanged": true,
+        "filmcraftUnchanged": true
+      }
+    },
+    {
+      "name": "final MP4 visual review artifacts",
+      "passed": true,
+      "evidence": {
+        "exit": 0,
+        "contact": "qa/092/contact.png",
+        "creatorPoster": "qa/092/creator-poster.png",
+        "sampleSeconds": [
+          1.4,
+          5.3,
+          10.4,
+          15.3
+        ],
+        "sampleFrames": [
+          42,
+          159,
+          312,
+          459
+        ],
+        "contactSize": [
+          1080,
+          480
+        ],
+        "creatorPosterSize": [
+          540,
+          960
+        ]
+      }
+    }
+  ],
+  "assets": {
+    "videos/092-pui.mp4": {
+      "sha256": "a73fa19175772cefcc186c1599f276f9e5e192c3c0dfb3f0f961b579abcd9c3f",
+      "bytes": 1940979,
+      "mtimeMs": 1792806064560.3826
+    },
+    "projects/092.ecproj": {
+      "sha256": "8dc38fd264669c4ec9de7f080cb2ca28f264457681a968c89621693d9cf09a57",
+      "bytes": 2152632,
+      "mtimeMs": 1792805895760.389
+    },
+    "projects/092.fcproj": {
+      "sha256": "9f399e707da2578192992e1e18b82464636c2385385cb4f9bea601b1e566d307",
+      "bytes": 5008,
+      "mtimeMs": 1792806040844.8574
+    }
+  },
+  "visualReview": "PENDING_VISUAL_REVIEW",
+  "realTimeListening": "NOT_CLAIMED",
+  "media": {
+    "video": {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+      "profile": "High",
+      "codec_type": "video",
+      "codec_tag_string": "avc1",
+      "codec_tag": "0x31637661",
+      "width": 1080,
+      "height": 1920,
+      "coded_width": 1080,
+      "coded_height": 1920,
+      "has_b_frames": 1,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "9:16",
+      "pix_fmt": "yuv420p",
+      "level": 40,
+      "color_range": "tv",
+      "color_space": "bt709",
+      "color_transfer": "bt709",
+      "color_primaries": "bt709",
+      "chroma_location": "left",
+      "field_order": "progressive",
+      "refs": 1,
+      "is_avc": "true",
+      "nal_length_size": "4",
+      "id": "0x1",
+      "r_frame_rate": "30/1",
+      "avg_frame_rate": "30/1",
+      "time_base": "1/30",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 540,
+      "duration": "18.000000",
+      "bit_rate": "537659",
+      "bits_per_raw_sample": "8",
+      "nb_frames": "540",
+      "extradata_size": 50,
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0,
+        "multilayer": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "VideoHandler",
+        "vendor_id": "[0][0][0][0]"
+      }
+    },
+    "audio": {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_long_name": "AAC (Advanced Audio Coding)",
+      "profile": "LC",
+      "codec_type": "audio",
+      "codec_tag_string": "mp4a",
+      "codec_tag": "0x6134706d",
+      "sample_fmt": "fltp",
+      "sample_rate": "48000",
+      "channels": 2,
+      "channel_layout": "stereo",
+      "bits_per_sample": 0,
+      "initial_padding": 0,
+      "id": "0x2",
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "time_base": "1/48000",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 864240,
+      "duration": "18.005000",
+      "bit_rate": "319917",
+      "nb_frames": "845",
+      "extradata_size": 2,
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0,
+        "multilayer": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "SoundHandler",
+        "vendor_id": "[0][0][0][0]"
+      }
+    },
+    "format": {
+      "filename": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Pui-Promo\\2026-10-24\\videos\\092-pui.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "18.005000",
+      "size": "1940979",
+      "bit_rate": "862417",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41mp42",
+        "encoder": "FilmCraft 0.10.0"
+      }
+    }
+  },
+  "signals": {
+    "black": [],
+    "silence": [],
+    "loudness": {
+      "input_i": "-17.91",
+      "input_tp": "-1.90",
+      "input_lra": "0.80",
+      "input_thresh": "-27.91",
+      "output_i": "-17.19",
+      "output_tp": "-1.50",
+      "output_lra": "0.80",
+      "output_thresh": "-27.19",
+      "normalization_type": "dynamic",
+      "target_offset": "0.19"
+    }
+  },
+  "technicalStatus": "TECHNICAL_PASS",
+  "failedChecks": []
+}

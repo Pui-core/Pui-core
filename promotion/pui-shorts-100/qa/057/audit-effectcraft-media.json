@@ -1,0 +1,18 @@
+{
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Pui-Promo\\2026-10-24\\projects\\057.ecproj",
+    "run",
+    "footage.check",
+    "{\"wait\":true}",
+    "footage.missing",
+    "{}",
+    "--json"
+  ],
+  "exit": 0,
+  "signal": null,
+  "elapsedSeconds": 0.437,
+  "stdout": "[{\"command\":\"footage.check\",\"result\":{\"checked\":2,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}]\n",
+  "stderr": ""
+}

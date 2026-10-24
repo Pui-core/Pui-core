@@ -44,7 +44,7 @@ const palettes=[
 export function composition(ep){
  const pal=palettes[Math.floor((ep.id-1)/10)%palettes.length],logo=np(file('media/logo-original.png')),icon=np(file('media/icon-original.png'));
  const twoSteps=[5,23,73,94].includes(ep.id);
- return `app.newProject();app.beginUndoGroup('Pui promo ${ep.id}');
+ let jsx=`app.newProject();app.beginUndoGroup('Pui promo ${ep.id}');
 var E=${JSON.stringify(ep)},P=${JSON.stringify(pal)},D=18,boxes=[],keyCount=0;
 function run(id,p){return app.run(id,p||{});}function set(l,p,v){run('prop.set',{layer:l,path:p,value:v});}
 function key(l,p,t,v){run('prop.addKey',{layer:l,path:p,time:t,timeBase:'comp',value:v});keyCount++;}
@@ -55,7 +55,7 @@ function shape(name,kind,w,h,x,y,color,a,b,opacity){var l=run('layer.newShape',{
 function entrance(l,x,y,a,b,delay){delay=delay||0;key(l,'transform/opacity',a,0);key(l,'transform/opacity',a+.18+delay,100);key(l,'transform/opacity',b-.12,100);key(l,'transform/opacity',b,0);key(l,'transform/position',a,[x,y+26]);key(l,'transform/position',a+.32+delay,[x,y]);}
 function txt(name,text,x,y,size,color,a,b,justify,animate,maxWidth){
  var l=run('layer.newText',{name:name,text:text,position:[x,y],font:'Meiryo',style:'Bold',size:size,fill:color,justify:justify||'left',tracking:0}).layer;
- var obj=app.project.activeItem.layer(name),r=obj.sourceRectAtTime(a,false),limit=maxWidth||766;
+ var obj=app.project.activeItem.layer(name),r=obj.sourceRectAtTime(a,false),limit=maxWidth||${ep.id===79?730:766};
  if(r.width>limit){size=Math.floor(size*limit/r.width);run('layer.setText',{layer:l,size:size});r=obj.sourceRectAtTime(a,false);}
  timing(l,a,b);if(animate)entrance(l,x,y,a,b,0);
  boxes.push({name:name,text:text,layer:l,size:size,start:a,end:b,x:x+r.left,y:y+r.top,width:r.width,height:r.height,animated:!!animate});return l;
@@ -127,6 +127,15 @@ txt('CTA site label','活動・ご相談は公式サイトへ',100,1383,28,P.mut
 txt('CTA official URL','pui-wobbfet.top',100,1446,43,P.ink,0,18);
 txt('Official project name','PROJECT P',100,1500,20,P.muted,0,18);
 app.endUndoGroup();writeLn(JSON.stringify({episode:E.id,comp:comp,boxes:boxes,keyCount:keyCount,palette:P}));`;
+ if(ep.id===58){
+  const start=jsx.indexOf(" line('Flow connector'"),end=jsx.indexOf("}else if(kind==='web'||kind==='window'){",start);
+  if(start<0||end<start)throw Error('Comparison illustration insertion point missing.');
+  jsx=jsx.slice(0,start)+` small('Comparison heading','同じ備品名でも',170,945,29,P.ink);
+ for(i=0;i<2;i++){x=325+i*330;shape('Comparison card '+i,'rounded',285,172,x,1060,P.bg,a,b);txt('Comparison name '+i,labels[0],x,1035,25,P.ink,a,b,'center',false,250);txt('Comparison ID '+i,labels[i+1],x,1100,32,P.accent,a,b,'center',false,250);}
+ small('Comparison result','番号で見分ける',320,1183,25,P.muted);
+`+jsx.slice(end);
+ }
+ return jsx;
 }
 
 function makeScore(ep){
@@ -170,7 +179,9 @@ function prepare(ep){
 
 async function render(ep){
  const id=String(ep.id).padStart(3,'0');const ec=file('projects/'+id+'.ecproj'),fc=file('projects/'+id+'.fcproj'),master=file('media/'+id+'-master.mp4');
- if(!fs.existsSync(ec)||!fs.existsSync(file('source/'+id+'.jsx'))||fs.readFileSync(file('source/'+id+'.jsx'),'utf8')!==composition(ep))prepare(ep);
+ let prepared=false;
+ try{prepared=fs.existsSync(ec)&&fs.readFileSync(file('source/'+id+'.jsx'),'utf8')===composition(ep)&&fs.statSync(file('media/'+id+'-score.flac')).size>0&&JSON.parse(fs.readFileSync(file('qa/'+id+'/checkpoint.json'))).ecSha256===hash(ec);}catch{prepared=false;}
+ if(!prepared)prepare(ep);
  await run(EC,['render','--project',np(ec),'--comp','Pui '+ep.id,'--out',np(master),'--format','h264','--bitrate','9000','--audio','off','--progress','--json'],'qa/'+id+'/ec-render.json');
  const init=[{id:'file.newProject',params:{name:'Pui '+id+' / '+ep.topic}},{id:'file.newSequence',params:{name:'Pui '+id,width:1080,height:1920,fps:30,sampleRate:48000,video:1,audio:1}},{id:'file.import',params:{paths:[np(master),np(file('media/'+id+'-score.flac'))]}}];
  const result=call(FC,['--save-as',np(fc),'run','-'],'qa/'+id+'/fc-build.json',init.map(x=>JSON.stringify(x)).join('\n')+'\n');
@@ -202,10 +213,9 @@ else if(mode==='run'){
  const jobs=Math.max(1,Math.min(3,Number(process.env.PUI_PROMO_JOBS||2))),queue=[...selected];
  await Promise.all(Array.from({length:jobs},async()=>{while(queue.length){
   const ep=queue.shift(),id=String(ep.id).padStart(3,'0'),receipt=file('qa/'+id+'/rendered.json');
-  if(fs.existsSync(receipt)){
-   const old=JSON.parse(fs.readFileSync(receipt));
-   if(fs.readFileSync(file('source/'+id+'.jsx'),'utf8')===composition(ep)&&old.sha256===hash(file('videos/'+id+'-pui.mp4'))&&old.ecSha256===hash(file('projects/'+id+'.ecproj'))&&old.fcSha256===hash(file('projects/'+id+'.fcproj')))continue;
-  }
+  let cached=false;
+  try{const old=JSON.parse(fs.readFileSync(receipt)),checkpoint=JSON.parse(fs.readFileSync(file('qa/'+id+'/checkpoint.json')));cached=fs.existsSync(file('media/'+id+'-score.flac'))&&checkpoint.ecSha256===old.ecSha256&&fs.readFileSync(file('source/'+id+'.jsx'),'utf8')===composition(ep)&&old.sha256===hash(file('videos/'+id+'-pui.mp4'))&&old.ecSha256===hash(file('projects/'+id+'.ecproj'))&&old.fcSha256===hash(file('projects/'+id+'.fcproj'));}catch{cached=false;}
+  if(cached)continue;
   await render(ep);
  }}));
 }

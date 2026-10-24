@@ -18,6 +18,9 @@ const episodes=json(path.join(source,'episodes.json')),diagrams=json(path.join(s
 assert.equal(episodes.length,100);assert.equal(new Set(episodes.map(e=>e.id)).size,100);
 assert.equal(new Set(episodes.map(e=>JSON.stringify([e.hook,e.insight,e.example]))).size,100);
 assert.equal(Object.keys(diagrams).length,100);
+const expectedVideos=episodes.map(e=>String(e.id).padStart(3,'0')+'-pui.mp4').sort();
+assert.deepEqual(fs.readdirSync(path.join(root,'videos')).filter(n=>n.endsWith('.mp4')).sort(),expectedVideos,'The final videos folder must contain exactly the requested 100 movies.');
+for(const ext of ['ecproj','fcproj'])assert.deepEqual(fs.readdirSync(path.join(root,'projects')).filter(n=>n.endsWith('.'+ext)).sort(),episodes.map(e=>String(e.id).padStart(3,'0')+'.'+ext).sort(),'Native project count mismatch: '+ext);
 const ledgers=['visual-review-001-030.json','visual-review-031-065.json','visual-review-066-100.json'];
 const visual=new Map();
 for(const name of ledgers){
@@ -32,6 +35,12 @@ for(const name of ledgers){
  }
 }
 assert.equal(visual.size,100,'All 100 final videos must have sampled visual review.');
+const aggregated=spawnSync(process.execPath,[path.join(source,'audit.mjs'),'--summarize'],{encoding:'utf8',env:{...process.env,PUI_AUDIT_SUMMARY:'qa/audit-summary.json'}});
+assert.equal(aggregated.status,0,aggregated.stdout+'\n'+aggregated.stderr);
+const summary=json(path.join(root,'qa','audit-summary.json'));
+assert.equal(summary.technicalStatus,'TECHNICAL_PASS');assert.equal(summary.reports.length,100);
+assert.equal(summary.missingIds.length,0);assert.equal(summary.failedIds.length,0);
+assert.equal(json(path.join(root,'qa','recovery-verification.json')).status,'PASS','Minimal-delivery recovery verification must pass.');
 const lum=h=>h.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4).reduce((s,x,i)=>s+x*[.2126,.7152,.0722][i],0);
 const contrast=(a,b)=>(Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05);
 const videos=[],allFiles=[],videoHashes=new Set();let minMain=Infinity,minContrast=Infinity,maxPeak=-Infinity,minLUFS=Infinity,maxLUFS=-Infinity;
@@ -85,7 +94,8 @@ fs.mkdirSync(path.join(source,'compositions'),{recursive:true});
 fs.mkdirSync(path.join(source,'qa'),{recursive:true});
 for(const e of episodes){const id=String(e.id).padStart(3,'0');fs.copyFileSync(path.join(root,'source',id+'.jsx'),path.join(source,'compositions',id+'.jsx'));
  fs.cpSync(path.join(root,'qa',id),path.join(source,'qa',id),{recursive:true,preserveTimestamps:true});}
-for(const name of ['audit-summary.json','final-acceptance.json',...ledgers])fs.copyFileSync(path.join(root,'qa',name),path.join(source,'qa',name));
+for(const name of ['audit-summary.json','final-acceptance.json','recovery-verification.json',...ledgers])fs.copyFileSync(path.join(root,'qa',name),path.join(source,'qa',name));
 if(fs.existsSync(path.join(root,'qa','gallery')))fs.cpSync(path.join(root,'qa','gallery'),path.join(source,'qa','gallery'),{recursive:true,preserveTimestamps:true});
 for(const name of ['index.html','posting-captions.csv','検品と利用案内.md','manifest.json','sources.json'])fs.copyFileSync(path.join(root,name),path.join(source,name));
+for(const entry of allFiles)assert.equal(hash(path.join(source,entry.path)),entry.sha256,'Git artifact copy differs: '+entry.path);
 console.log(JSON.stringify({sealed:true,count:100,quality:manifest.quality,gitArtifacts:source}));

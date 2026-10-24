@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-24T01:04:13.362Z",
+  "checks": {
+    "bom": true,
+    "rows": 100,
+    "columns": true,
+    "titlesAtMost100": true,
+    "captionsMatchSource": true,
+    "tagsHaveShorts": true,
+    "modalReopenScrollTop": 0,
+    "headlineNoWrap": true,
+    "mobileNoOverflow": true
+  },
+  "scope": "CSV/source correspondence; DOM-triggered modal reopening and mobile layout after two small fixes. browser-check.json covers full real click interactions before fixes. Screenshot refresh and a later visible click hit compositor/actionability timeouts; retained PNGs are earlier revision."
+}

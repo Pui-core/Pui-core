@@ -1,0 +1,788 @@
+{
+  "scope": {
+    "first": 66,
+    "last": 100
+  },
+  "kind": "Editorial assistance; not a formal independent GitHub PR review",
+  "sampleSeconds": [
+    1.4,
+    5.3,
+    10.4,
+    15.3
+  ],
+  "limitations": [
+    "Four sampled frames per final MP4; not continuous playback",
+    "Real-time human audio listening not claimed"
+  ],
+  "preflight": {
+    "checkedAt": "2026-10-24T01:24:31.148Z",
+    "onScreenScriptsRead": 35,
+    "captionsRead": 35,
+    "diagramsRead": 35,
+    "unsupportedClaimsFound": [],
+    "editorialSuggestions": [
+      {
+        "id": 79,
+        "detail": "Quote the phrase ちゃんと保存 for clearer public copy; sent to root for decision.",
+        "resolution": {
+          "status": "RESOLVED",
+          "videoSHA256": "3a49376a469458872fa3852fb18dfa9db4bc142ae19ac8aa4d6dea9c04b71e88",
+          "copy": "「ちゃんと保存」を変え",
+          "mainMinimumFontPixels": 66,
+          "quotedLineRightPixels": 866.71875
+        }
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": 66,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "0121ec59e3f337d958ae0c90ecfdfba41ace7c1fc3995de282efdb5769764ea9",
+      "reviewedAt": "2026-10-24T01:31:06.743Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/066/contact.png",
+      "contactSHA256": "dac7464f1dc606309d223d8299d5c782b67857117229099cee01cb4968d94116",
+      "sourceCopyItemsMatched": 7,
+      "observations": [
+        "通知の条件と確認役の説明が3つの図中文字に対応",
+        "暗い背景でも4場面の主文・URLとマスコットが読め、欠けや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 67,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "402026441d1917d936e9424616272bec8c728ec0896894d84bc3075786180e51",
+      "reviewedAt": "2026-10-24T01:31:06.761Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/067/contact.png",
+      "contactSHA256": "d9c84c6414615ec1316850b8816366c55c938857e5bdd35b1c32075134d7b6f5",
+      "sourceCopyItemsMatched": 7,
+      "observations": [
+        "名簿・配送表・連絡帳の3つの置き場所が本文と図で一致",
+        "4場面とも主文と図・終端の活動案内が読み取れ、切れや不適切な重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 68,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "f52e5bd43c77dde05096c8ac02b05b9c719afb676238141a3018b44e52556607",
+      "reviewedAt": "2026-10-24T01:32:54.090Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/068/contact.png",
+      "contactSHA256": "fd9fae0ec49bdee94c99626a4b900d6c9ed439d7062bf971eeadf28661d973d1",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "未着手・確認中・完了の状態名が本文と表の見出しで一致",
+        "4場面の本文・表・終端案内を確認、欠けや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 69,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "437f97478955cf8c5575c3316c464d33d568f1a1d955b9e45fb66ebf33f54a74",
+      "reviewedAt": "2026-10-24T01:32:54.107Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/069/contact.png",
+      "contactSHA256": "713290beb7ae9e8769e1dec835ee79c6832945955985dad6ce555536f69c8f6c",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "保存先・復元の手順・開いて確認の図中文字が本文の例と対応",
+        "4場面の主文と公式URLは暗背景上で読み取れ、ブランド画像に欠けなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 70,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "5de7a8cb8b3ff0e00de94b677718544f3c95cfb8923f10ce88c111f0aeb453e2",
+      "reviewedAt": "2026-10-24T01:32:54.141Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/070/contact.png",
+      "contactSHA256": "95e9d3dd8205094163c949946c2e5921be2f5228b1246f432cd70055564e5dad",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "式で計算する部分と人が例外を確認する部分が本文と図で対応",
+        "3ノードと4場面の主文・終端CTAが読め、重なりや切れなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 71,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "eee16ef82c7b3b3e9b952277a1aa9b0fec30705594a7fdb8e78635e35622ff79",
+      "reviewedAt": "2026-10-24T01:33:01.483Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/071/contact.png",
+      "contactSHA256": "b55026cd83a676a69750e2c466f94ab3fc07c0bae478c13d75d8926df9df6a13",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "読む人がログイン済みという前提と一覧を開く例が図中文字に対応",
+        "淡い桃色背景の4場面で本文・図・URL・マスコットを確認、欠けや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 72,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "340ace9b87106adcae09b178e9fa571b6939d1d54fa33d3f207cefc6fda81388",
+      "reviewedAt": "2026-10-24T01:33:46.170Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/072/contact.png",
+      "contactSHA256": "94731e2958082c947e97140d263908437eec60f1adabdf2343da86bbcdfc9c03",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "始める入力画面・保存・一覧へ戻る状態が本文と図の3項目で対応",
+        "4場面の主文・図・終端案内に切れや判読を妨げる重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 73,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "87802619da2b66294e58a5241755c8b63ee8d31121e45c9192421fb533283ab1",
+      "reviewedAt": "2026-10-24T01:33:46.188Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/073/contact.png",
+      "contactSHA256": "3e43353484a0ad83b22e77ad9215f347ca7c7febd82b922da8d8e362e4837e7f",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 2,
+      "observations": [
+        "本文の一覧を開く・追加を押すの2操作と図の番号1/2が一致",
+        "第3ステップは表示されず、4場面の主文・図・URL・マスコットが読める"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 74,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "b250bfcd9f7d65c8e2d2aaa18a8588f96100e299698eaaa4040f46f6e5998c53",
+      "reviewedAt": "2026-10-24T01:40:51.358Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/074/contact.png",
+      "contactSHA256": "1d2f1980b6bb032877b9cf55212b5ff317e5c4ad20a51f254730d4bc73e47f74",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "新版の「保存」「保存を押す」の引用が本文に表示され、画面と説明の名前をそろえる意味が明確",
+        "4場面の本文・図・公式URL・マスコットに文字切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 75,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "de9c03128acbcbb9c9a13f89d1059b97213a6e80cec2991cabc4bb69d26b688c",
+      "reviewedAt": "2026-10-24T01:35:45.892Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/075/contact.png",
+      "contactSHA256": "0ff0951cfa5c9f2d354ee75a8ea73abe73c6a88bf2725acbe83a9dbd0bf72bf3",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "撮影日・対象の版・変更照合の図中文字が本文の版管理の説明と一致",
+        "4場面で主文と図、公式URLとマスコットに切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 76,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "dffc1f892752fe0cb14028fba3d2206504a0f2cbeb7d09accbf55d6b8a33d801",
+      "reviewedAt": "2026-10-24T01:35:45.935Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/076/contact.png",
+      "contactSHA256": "c2a1c753ca5f434e570139f7416662ba73a0c6316fee97613bbecb2109860b50",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "写真登録の前に画像を用意する例が図の必要な画像・先に用意・登録を始めるに対応",
+        "4場面の本文・表の見出し・終端案内を確認、文字切れや不適切な重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 77,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "2f265b9102fe2dfc013745aa155b560081014d24716a9a416bda323e1c23df50",
+      "reviewedAt": "2026-10-24T01:36:09.987Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/077/contact.png",
+      "contactSHA256": "8512a5e61ff22fc67e74590ce115a022afcacb0b67d54fc36083431f431adbb2",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "画像を選べない場面の確認先として対応形式・画像サイズが本文と3ノードで一致",
+        "4場面の本文・図ラベル・終端CTAが読め、欠けや不適切な重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 78,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "e1d44d3f835447e352dce79f98e18c53a2102d73b00ece849c2483ab508a7481",
+      "reviewedAt": "2026-10-24T01:36:10.009Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/078/contact.png",
+      "contactSHA256": "0450cf6d691b1b5d12bbf7653f7af90e7fe8e1d645edce8abe664ed44afff59b",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "新画面公開時に担当が照合して手順を更新する例が図中文字に対応",
+        "4場面の本文・図・公式URL・マスコットに切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 79,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "3a49376a469458872fa3852fb18dfa9db4bc142ae19ac8aa4d6dea9c04b71e88",
+      "reviewedAt": "2026-10-24T01:41:17.821Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/079/contact.png",
+      "contactSHA256": "1b57af4de705b3434ecd3dc1c8a2323d837704032aa63c2a4af88dfd12e84baa",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "新版の「ちゃんと保存」を変え、という引用を含む本文を4場面の完成動画で確認",
+        "実測主文の最小66px、引用行の右端866.72pxでsafearea内。本文・図・URL・マスコットに欠けや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 80,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "ed00d89691f7972504b77c69033978b62376e0aedd8338b8a7a6009895c14451",
+      "reviewedAt": "2026-10-24T01:37:16.459Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/080/contact.png",
+      "contactSHA256": "de4074fc36995ce557dd977607568d40174606df743a88330bcf7a37046a5ef6",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "実際の画面サイズで見出しを読む例と図のスマホで表示・見出しを読む・実寸確認が対応",
+        "4場面の主文・図・公式URL・ブランド画像に欠けや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 81,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "cdcc18e5601efdb60d1d55d3a7148c822810e119517841e310d31b5bf00e5a40",
+      "reviewedAt": "2026-10-24T01:38:02.271Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/081/contact.png",
+      "contactSHA256": "aa7808d0a7f9db0b167d5be6a60009bb8ac865b7041a1a023de1f780a1f92885",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "入力した名前が一覧へ増える完成場面を先に見せる考え方と図の3項目が対応",
+        "黄系背景の4場面で本文・図・公式URL・マスコットを確認、文字切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 82,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "2423e1532374e535e346dedf2756648b9495bfb6fb1e432e7947e9a4d5b21f7c",
+      "reviewedAt": "2026-10-24T01:38:02.331Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/082/contact.png",
+      "contactSHA256": "44848b4110cf999ef75d43f2ac547e65ebeebddb64d458451cccd1f62dd48947",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "見る変化を絞る主文と色・補助図・視線の図中文字が対応",
+        "4場面の主文・表の見出し・終端案内に切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 83,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "abaf8aa8c492cd0f8a41186af1de0d7b3dfa0bb6114ff56285d66f3f24d89d72",
+      "reviewedAt": "2026-10-24T01:38:02.348Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/083/contact.png",
+      "contactSHA256": "8ddbaa4ff36d82f6c84baafdbbd65b21b002848d328bf33df4232e6f53f17275",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "右上にある／保存ボタンを押すの改行が言葉のまとまりで分かれ、意味が通る",
+        "4場面の本文・3項目の図・公式URL・ブランド画像に切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 84,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "4a5b89e7aeed0ce34f9c248896d0eb0a5aa10eb865505f7429cf105f0382c9a2",
+      "reviewedAt": "2026-10-24T01:39:31.628Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/084/contact.png",
+      "contactSHA256": "d929890ae4cd99ca6eb113de4b89af6d74d285bda69818323772bea77032db78",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "音なしでも保存の場所と名前を文字で示す例が本文と図中文字で対応",
+        "4場面の本文・図・URL・マスコットに欠けや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 85,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "d9a84f94e44ad773495c15474d07fe6bbad0a9b03d067a2ad9bd2be1a5d0ae98",
+      "reviewedAt": "2026-10-24T01:39:31.632Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/085/contact.png",
+      "contactSHA256": "974ef19ba51d3b8091dea9f541c67e093604c962cbd38f765ce83e14d81242e1",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "設定画面の必要な部分を拡大し見出しも残す考え方と図の3項目が一致",
+        "4場面の主文・図ラベル・終端案内が読め、文字切れや不適切な重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 86,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "637e796f45659e23efda85d79c09dfe8c6e17dc1423b70b77ab59a5eed662b52",
+      "reviewedAt": "2026-10-24T01:39:31.636Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/086/contact.png",
+      "contactSHA256": "84316a5aca7ad6d6fca405a1c3b656de16daeaf6d7b8818300e80f725027baf3",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "変更前後を同じ位置・範囲で比べる説明と図の3項目が対応",
+        "4場面の主文・表の見出し・公式URL・ブランド画像に欠けや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 87,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "04f12a0003b51ca614cf1ea123ccd29a024ec6bfb69e975c456083bbb0c1cb62",
+      "reviewedAt": "2026-10-24T01:40:51.390Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/087/contact.png",
+      "contactSHA256": "93190f120b910b6a90c60a4a7a798aae546fab8545d97424041201dff37d0454",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "追加後に行が増えた結果を見る間を残す説明が図の3項目に対応",
+        "4場面の主文・図・終端CTAを確認、欠けや不適切な重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 88,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "9819141581e65f125d7ada5442d7817268b8c0559bd88b731dbc520324ac614d",
+      "reviewedAt": "2026-10-24T01:40:51.409Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/088/contact.png",
+      "contactSHA256": "47939b4e8f71381d977d91a87d7d93c97276198bb335c43e70308a8e94d8d937",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "練習用の名前・通知を隠す・録画後も確認の3項目が本文の例と一致",
+        "4場面で主文・図・公式URL・マスコットが読め、切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 89,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "21a0452afad0bb32eebbe8187216f8789174ac275bddd1a1ab1260ded5859d5f",
+      "reviewedAt": "2026-10-24T01:40:51.427Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/089/contact.png",
+      "contactSHA256": "60883e52d859822f95a701d46fc80280bbfd1b39998d758cb3fd938751cee02f",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "視聴後に練習画面を開いて一度試す案内が図の流れと対応",
+        "4場面の主文・3項目の図・終端案内に切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 90,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "ea7b42895f608baaa4cdb8983108c1d69fa342b33e4f01a449a6cc5bad14233e",
+      "reviewedAt": "2026-10-24T01:42:47.047Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/090/contact.png",
+      "contactSHA256": "3b089e8638ddd012c3abdcb0040370f71de8a2ba813cede04b601aeb3b20c5f1",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "始まり・操作・結果の3場面と空の一覧・名前入力・増えた一覧の図が一致",
+        "4場面の主文・図・公式URL・マスコットに文字切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 91,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "50865362dd4c8c3aad6e9445a9a5e1f47b489bda6af753823106974cada92b09",
+      "reviewedAt": "2026-10-24T01:42:47.067Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/091/contact.png",
+      "contactSHA256": "cc08b86a42ccca1401105f80ad8d3f530eaf29048642b2fd9ca2f2bf37812928",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "曖昧な相談を月末の転記という一場面へ整理する例と図中文字が対応",
+        "暗青色の4場面で本文・図・終端案内が読め、欠けや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 92,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "a73fa19175772cefcc186c1599f276f9e5e192c3c0dfb3f0f961b579abcd9c3f",
+      "reviewedAt": "2026-10-24T01:42:47.089Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/092/contact.png",
+      "contactSHA256": "6d69dd6e0a282d2dab31aebdaf8c876d0f7e684f90ee07c5d2f8893d6ed1c0d1",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "列名を残し個人情報を架空例へ置き換える主文と表の見出しが対応",
+        "4場面に実在の個人データは表示されず、本文・図・URL・マスコットに切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 93,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "21101bb63fdb98688d3f8b65c96abca1395b4c566d25d560c8d5b89d380f06bc",
+      "reviewedAt": "2026-10-24T01:43:23.424Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/093/contact.png",
+      "contactSHA256": "e749dff760824ab4a139b50f349d02ea35e611c9cb483a8000c1c89dfb9a0a6d",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "毎日の転記・月一度の集計を頻度と負担で比べる説明と図の見出しが一致",
+        "4場面の主文・表・URL・マスコットに文字切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 94,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "6d8ea7ca8625225b3347e2d770c869c38a648cfa6b994e788456e6408c98bac1",
+      "reviewedAt": "2026-10-24T01:43:23.448Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/094/contact.png",
+      "contactSHA256": "28ba561d9f6ccabcd6b54efb339ac33fa2f1d116a3c2c58ba2010ecb9fedaf5a",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 2,
+      "observations": [
+        "本文の入力する・一覧を見るという2操作と図の番号1/2が一致",
+        "第3ステップは表示されず、4場面の主文・図・公式URL・マスコットに切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 95,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "ff57adb59989efbc2e5bf77745cdb2f499d9018e57ee7e2c58fe1e521ea52128",
+      "reviewedAt": "2026-10-24T01:44:15.221Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/095/contact.png",
+      "contactSHA256": "611cf190d5b4cb53b2e1f55b88c27ed73a5d0a1c2228b5457b492a78b4f4d39b",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "四角と文字のラフとして入力欄・保存ボタン・記録の一覧の位置が本文と図で対応",
+        "4場面の主文・図・公式URL・マスコットに切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 96,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "74e550bd5e7d6465801d6fa1f793e91a5a217323d36d23d0e4d70d1dd8488381",
+      "reviewedAt": "2026-10-24T01:44:47.204Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/096/contact.png",
+      "contactSHA256": "4d2195290bdc5b36fa153f7081fd2aa6ecebf3d0197744073b2c5c10aad89ff2",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "名前の登録後に一覧へ1件増えるという完成条件が本文と図に一致",
+        "4場面の本文・3ノード・公式URL・ブランド画像に文字切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 97,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "aacc407bae67de90b379e4f065ec66a0e5235c542e640cec75ec9fbde87f7898",
+      "reviewedAt": "2026-10-24T01:44:47.210Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/097/contact.png",
+      "contactSHA256": "3cc4b8254cb6c3ee349898809c4878a2f20aec85144787cad09f518f7ef6cc01",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "使う環境・共有の表・希望は来月の図中文字が相談で伝える条件の例に対応",
+        "4場面の主文・図・終端案内に欠けや重なりなし、実際の納期保証を加えていない"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 98,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "6fc795439d3a263f93ceeede87d3060284f21dbd2b78d58b45caa570aa7c0415",
+      "reviewedAt": "2026-10-24T01:44:47.216Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/098/contact.png",
+      "contactSHA256": "06b3f252fa1e781af829c3cf601c6766e077b2401c0199f0c4e0d1f23e2128bb",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "秘密を載せず困る場面と表示文を共有する説明が3つの図中文字に対応",
+        "4場面に実在の認証情報は表示されず、本文・図・URL・マスコットに切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 99,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "e16904ed24ac00cf6c8c3e14e812ef942336d2af489adf2650a4be2d5964c7b6",
+      "reviewedAt": "2026-10-24T01:45:48.032Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/099/contact.png",
+      "contactSHA256": "197d0a9f225d63658480789576975878e85224f412f38276a0bb816c3bcb44d8",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "入力欄の名前で意味が伝わるかを一つ試す説明が検索風の図中文字と対応",
+        "4場面の本文・検索欄・3項目の図・URL・マスコットに切れや重なりなし"
+      ],
+      "criticalFindings": []
+    },
+    {
+      "id": 100,
+      "verdict": "VISUAL_PASS",
+      "videoSHA256": "5e3610a08acb9d8aded04fd1fcbbe0d5488cd85495d3352ec10ac7edd3104917",
+      "reviewedAt": "2026-10-24T01:45:48.038Z",
+      "reviewedFrames": [
+        42,
+        159,
+        312,
+        459
+      ],
+      "contact": "qa/100/contact.png",
+      "contactSHA256": "2b0fbd03091b6c7c9d5f54a75d3bc82ad31f62c59f8d9e27d6f64607173d5756",
+      "sourceCopyItemsMatched": 7,
+      "diagramItemsMatched": 3,
+      "observations": [
+        "転記の見直し・操作の説明を一つの相談から整理する内容が図と活動案内に一致",
+        "4場面の主文・図・公式URL・ブランド画像に欠けや重なりなし"
+      ],
+      "criticalFindings": []
+    }
+  ],
+  "pendingIds": [],
+  "unresolvedFindings": [],
+  "updatedAt": "2026-10-24T01:45:48.180Z",
+  "finalVerification": {
+    "verifiedAt": "2026-10-24T01:45:48.180Z",
+    "technicalPassCount": 35,
+    "visualPassCount": 35,
+    "technicalChecks": 700,
+    "sampledFrames": 140,
+    "nativeCopyItemsMatched": 245,
+    "nativeDiagramItemsMatched": 103,
+    "minimumMainFontPixels": 66,
+    "exactCurrentNativeAndMP4SHA": true,
+    "exactContactSHA": true,
+    "unresolvedFindings": 0
+  }
+}
