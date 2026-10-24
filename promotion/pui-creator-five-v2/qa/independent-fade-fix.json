@@ -1,0 +1,904 @@
+{
+  "status": "PASS_NUMERICAL_FADE_STRUCTURE_AND_AUDIO_VIDEO_BINDINGS",
+  "scope": "01/05実変更後WAV・最終AACの独立数値QA。source/stem/PCMから語頭/語尾の一定gain、低RMS谷のfade、同曲beat、内部無音撤去、A/B公平性を確認。旧965映像全frame同一性で画像レビューを継続。聴感の自然さは直接試聴未実施で未判定。",
+  "baseline": [
+    {
+      "id": "01",
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/videos/01-pui-promo-v2.mp4",
+      "videoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+      "mixSha256": "2a0b8bfca20007443dffed76b94af6ef8b9673a4cec31fea471720ad2e3c39dc",
+      "decodedFrameCount": 553,
+      "frameHashMethod": "FFmpeg decode -> rawvideo -> framehash SHA-256, no audio, all frames",
+      "decodedFrameSequenceSha256": "67d57e2adc73a2ceb8280690b587334cb9cbe387d63ffe787319aa73e1e431ef"
+    },
+    {
+      "id": "05",
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/videos/05-medicate-chorus-v2.mp4",
+      "videoSha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894",
+      "mixSha256": "50867c5d624767527eabef81f6f1657fa9b0456e898cfa3c5fe18e4e0663552e",
+      "decodedFrameCount": 412,
+      "frameHashMethod": "FFmpeg decode -> rawvideo -> framehash SHA-256, no audio, all frames",
+      "decodedFrameSequenceSha256": "f2d165fefd7edda96404d67215159d493023b7af34a740093d5f020f1b285da0"
+    }
+  ],
+  "directAudition": "NOT_PERFORMED_BY_THIS_AGENT",
+  "independentWavMeasurements": {
+    "episode01": {
+      "constantMasterPlateau": {
+        "seconds": [
+          11.19,
+          14.633333333333333
+        ],
+        "gainDb": -0.722204184243041,
+        "gain": 0.9202160224999084,
+        "normalizedResidualDb": -133.825834076744,
+        "maximumAbsoluteError": 5.967036353915489e-8,
+        "correlation": 0.999999999999901
+      },
+      "expectedStaticGainDb": -0.72220418545591,
+      "continuousBeatFits": [
+        {
+          "seconds": [
+            0.2,
+            11.16
+          ],
+          "gainDb": -1.7822041877061237,
+          "gain": 0.8144975656063703,
+          "normalizedResidualDb": -129.29639890581726,
+          "maximumAbsoluteError": 5.968116356669384e-8,
+          "correlation": 0.9999999999998102
+        },
+        {
+          "seconds": [
+            14.8,
+            18.123333333333335
+          ],
+          "gainDb": -1.7822041833016964,
+          "gain": 0.8144975660193845,
+          "normalizedResidualDb": -135.0414900148171,
+          "maximumAbsoluteError": 5.971379568592283e-8,
+          "correlation": 0.9999999999999237
+        }
+      ],
+      "transitionComposition": [
+        {
+          "seconds": [
+            11.1,
+            11.3
+          ],
+          "maximumAbsoluteError": 5.9596991763485874e-8,
+          "normalizedResidualDb": -132.50357311783068
+        },
+        {
+          "seconds": [
+            14.6,
+            14.72
+          ],
+          "maximumAbsoluteError": 5.9595139476065206e-8,
+          "normalizedResidualDb": -134.5379819926629
+        }
+      ],
+      "dryVocalMask": {
+        "windowMs": 10,
+        "thresholdDbfs": -45,
+        "activeSamples": 157440,
+        "activeSamplesOverlappingFade": 0
+      },
+      "dryEdgeWindows": [
+        {
+          "source": 76.26,
+          "dry10msRmsDbfs": -55.09133999283043
+        },
+        {
+          "source": 76.27,
+          "dry10msRmsDbfs": -61.902949513306766
+        },
+        {
+          "source": 76.28,
+          "dry10msRmsDbfs": -61.28440736241474
+        },
+        {
+          "source": 76.29,
+          "dry10msRmsDbfs": -59.61077388995507
+        },
+        {
+          "source": 76.3,
+          "dry10msRmsDbfs": -54.610845869442144
+        },
+        {
+          "source": 76.31,
+          "dry10msRmsDbfs": -33.675846995833695
+        },
+        {
+          "source": 76.32,
+          "dry10msRmsDbfs": -29.47742529772935
+        },
+        {
+          "source": 79.69,
+          "dry10msRmsDbfs": -21.130645045722467
+        },
+        {
+          "source": 79.7,
+          "dry10msRmsDbfs": -25.274293699028952
+        },
+        {
+          "source": 79.71,
+          "dry10msRmsDbfs": -30.385133319587023
+        },
+        {
+          "source": 79.72,
+          "dry10msRmsDbfs": -36.116882449782985
+        },
+        {
+          "source": 79.73,
+          "dry10msRmsDbfs": -47.76502552641869
+        },
+        {
+          "source": 79.74,
+          "dry10msRmsDbfs": -51.47573096802762
+        },
+        {
+          "source": 79.75,
+          "dry10msRmsDbfs": -55.08678911591346
+        },
+        {
+          "source": 79.76,
+          "dry10msRmsDbfs": -36.55493838373268
+        }
+      ],
+      "pass": true
+    },
+    "episode05": {
+      "abCoreConstantGain": [
+        {
+          "label": "A",
+          "expectedGainDb": -1.33,
+          "seconds": [
+            1.2,
+            4.6
+          ],
+          "gainDb": -1.3300000052681211,
+          "gain": 0.8580251142021981,
+          "normalizedResidualDb": -134.32503386884002,
+          "maximumAbsoluteError": 5.985528950258612e-8,
+          "correlation": 0.9999999999999014
+        },
+        {
+          "label": "B",
+          "expectedGainDb": -1,
+          "seconds": [
+            5.3,
+            8.7
+          ],
+          "gainDb": -1.000000001017518,
+          "gain": 0.891250938029339,
+          "normalizedResidualDb": -133.34091443015683,
+          "maximumAbsoluteError": 5.964985561046632e-8,
+          "correlation": 0.9999999999999144
+        }
+      ],
+      "actualTailPreservedBeyondOldEnd": [
+        {
+          "label": "A",
+          "seconds": [
+            4.6,
+            4.6899999999999995
+          ],
+          "gainDb": -1.3299999899076445,
+          "gain": 0.8580251157195642,
+          "normalizedResidualDb": -138.02422371086053,
+          "maximumAbsoluteError": 6.003124841669205e-8,
+          "correlation": 0.9999999999999811
+        },
+        {
+          "label": "B",
+          "seconds": [
+            8.7,
+            8.79
+          ],
+          "gainDb": -1.0000000077896811,
+          "gain": 0.8912509373344537,
+          "normalizedResidualDb": -137.12317464150954,
+          "maximumAbsoluteError": 5.996117335982376e-8,
+          "correlation": 0.9999999999999846
+        }
+      ],
+      "protectedDryAndMasterResidualFit": {
+        "seconds": [
+          10.29,
+          13.733333333333333
+        ],
+        "gainDb": -1.0000000038350358,
+        "gain": 0.8912509377402361,
+        "normalizedResidualDb": -133.19057160657954,
+        "maximumAbsoluteError": 5.982167594620336e-8,
+        "correlation": 0.9999999999998604
+      },
+      "last160msComposition": {
+        "seconds": [
+          13.573333333333332,
+          13.733333333333333
+        ],
+        "maximumAbsoluteError": 5.9603647467251775e-8,
+        "normalizedResidualDb": -132.74689935728733
+      },
+      "dryEdgeWindows": [
+        {
+          "source": 21.3,
+          "dry10msRmsDbfs": -70.3655909587954
+        },
+        {
+          "source": 21.35,
+          "dry10msRmsDbfs": -70.28035411125526
+        },
+        {
+          "source": 21.39,
+          "dry10msRmsDbfs": -65.2204701583789
+        },
+        {
+          "source": 21.4,
+          "dry10msRmsDbfs": -67.76305616205389
+        },
+        {
+          "source": 21.7,
+          "dry10msRmsDbfs": -46.37167656996204
+        },
+        {
+          "source": 21.76,
+          "dry10msRmsDbfs": -45.300300763742456
+        },
+        {
+          "source": 21.77,
+          "dry10msRmsDbfs": -32.36232327183613
+        },
+        {
+          "source": 25.1,
+          "dry10msRmsDbfs": -22.173203774783815
+        },
+        {
+          "source": 25.15,
+          "dry10msRmsDbfs": -23.427435129204536
+        },
+        {
+          "source": 25.16,
+          "dry10msRmsDbfs": -29.66587871520467
+        },
+        {
+          "source": 25.17,
+          "dry10msRmsDbfs": -34.43067933665593
+        },
+        {
+          "source": 25.18,
+          "dry10msRmsDbfs": -45.973502941387125
+        },
+        {
+          "source": 25.19,
+          "dry10msRmsDbfs": -50.86168392831695
+        },
+        {
+          "source": 25.2,
+          "dry10msRmsDbfs": -54.316731891046246
+        },
+        {
+          "source": 25.21,
+          "dry10msRmsDbfs": -37.270895059105285
+        }
+      ],
+      "pass": true
+    }
+  },
+  "episodes": [
+    {
+      "id": "01",
+      "status": "PASS_NUMERICAL_FADE_STRUCTURE_FINAL_AAC_AND_PICTURE_IDENTITY",
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/videos/01-pui-promo-v2.mp4",
+      "videoSha256": "e2073036727c7bdc53d390d50395832b2b8da5e527d3a91d6153be0ef6599716",
+      "mixSha256": "3beb5fde06611e3860c25efae256462197f2079b229221b5b9336e7d318a3e16",
+      "actualShaMatchesRendered": true,
+      "technicalShaMatches": true,
+      "decodedAacSampleFrames": 885760,
+      "pictureLengthSampleFrames": 884800,
+      "aacVsFinalWav": {
+        "seconds": [
+          0.1,
+          18.383333333333333
+        ],
+        "gainDb": -0.009832011970328347,
+        "gain": 0.9988686882063889,
+        "normalizedResidualDb": -29.212676840235503,
+        "maximumAbsoluteError": 0.09999374409554934,
+        "correlation": 0.9994011582451499
+      },
+      "voiceHeadTailWindows": [
+        {
+          "seconds": [
+            11.21,
+            11.31
+          ],
+          "gainDb": 0.04441724120930658,
+          "gain": 1.0051268212759352,
+          "normalizedResidualDb": -24.988237530976907,
+          "maximumAbsoluteError": 0.07641181536747399,
+          "correlation": 0.9984183334285184,
+          "wavRmsDbfs": -13.204540733966276,
+          "aacRmsDbfs": -13.146374435392083
+        },
+        {
+          "seconds": [
+            14.5,
+            14.63
+          ],
+          "gainDb": 0.026494193172248937,
+          "gain": 1.0030549134790463,
+          "normalizedResidualDb": -32.25645468789798,
+          "maximumAbsoluteError": 0.03565591769329801,
+          "correlation": 0.999702743844366,
+          "wavRmsDbfs": -11.163544780381878,
+          "aacRmsDbfs": -11.13446826922358
+        }
+      ],
+      "wavSilence": {
+        "windowMs": 10,
+        "internalRange": [
+          0.1,
+          18.383333333333333
+        ],
+        "longestBelowMinus50DbMs": 0,
+        "longestBelowMinus65DbMs": 0,
+        "longestExactZeroSamples": 0,
+        "min10msRmsDbfs": -39.128317101779444
+      },
+      "aacSilence": {
+        "windowMs": 10,
+        "internalRange": [
+          0.1,
+          18.383333333333333
+        ],
+        "longestBelowMinus50DbMs": 0,
+        "longestBelowMinus65DbMs": 0,
+        "longestExactZeroSamples": 0,
+        "min10msRmsDbfs": -39.15158426508201
+      },
+      "pcmTransitionEdges": [
+        {
+          "time": 11.16,
+          "adjacentStepDbfs": -43.41869612057903,
+          "nearbyMaxStepDbfs": -28.07962538640968,
+          "rmsBefore20ms": -31.78660462327333,
+          "rmsAfter20ms": -31.842968773374302
+        },
+        {
+          "time": 11.19,
+          "adjacentStepDbfs": -53.76929006975524,
+          "nearbyMaxStepDbfs": -40.62322336659658,
+          "rmsBefore20ms": -33.97246253225637,
+          "rmsAfter20ms": -34.56535040480433
+        },
+        {
+          "time": 14.633333333333333,
+          "adjacentStepDbfs": -39.02492633128025,
+          "nearbyMaxStepDbfs": -32.81791184966473,
+          "rmsBefore20ms": -15.907623291090216,
+          "rmsAfter20ms": -16.533277888838164
+        },
+        {
+          "time": 14.653333333333332,
+          "adjacentStepDbfs": -45.00287359661541,
+          "nearbyMaxStepDbfs": -28.486654702243378,
+          "rmsBefore20ms": -16.533277888838164,
+          "rmsAfter20ms": -15.104593389077197
+        },
+        {
+          "time": 14.7,
+          "adjacentStepDbfs": -22.015927419047912,
+          "nearbyMaxStepDbfs": -17.970957977488688,
+          "rmsBefore20ms": -13.984761356588894,
+          "rmsAfter20ms": -15.192321408524869
+        }
+      ],
+      "aacTransitionEdges": [
+        {
+          "time": 11.16,
+          "adjacentStepDbfs": -42.4553579796258,
+          "nearbyMaxStepDbfs": -28.08218218885738,
+          "rmsBefore20ms": -31.801698529753413,
+          "rmsAfter20ms": -31.874437601445706
+        },
+        {
+          "time": 11.19,
+          "adjacentStepDbfs": -53.5199932321537,
+          "nearbyMaxStepDbfs": -40.73338641543384,
+          "rmsBefore20ms": -33.973919598472825,
+          "rmsAfter20ms": -34.55484103280895
+        },
+        {
+          "time": 14.633333333333333,
+          "adjacentStepDbfs": -38.90856663456043,
+          "nearbyMaxStepDbfs": -32.963742882175964,
+          "rmsBefore20ms": -15.898034297562049,
+          "rmsAfter20ms": -16.55829430143892
+        },
+        {
+          "time": 14.653333333333332,
+          "adjacentStepDbfs": -47.06698247302428,
+          "nearbyMaxStepDbfs": -28.901878353211835,
+          "rmsBefore20ms": -16.55829430143892,
+          "rmsAfter20ms": -15.108054927744035
+        },
+        {
+          "time": 14.7,
+          "adjacentStepDbfs": -21.602683391138946,
+          "nearbyMaxStepDbfs": -17.578201848733578,
+          "rmsBefore20ms": -14.040165205020221,
+          "rmsAfter20ms": -15.25266300482022
+        }
+      ],
+      "finalAacLoudnessFromTechnical": {
+        "integratedLufs": -16.3,
+        "truePeakDbfs": -2
+      },
+      "pictureIdentity": {
+        "beforeVideoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+        "decodedFrameCount": 553,
+        "changedDecodedFrames": [],
+        "allDecodedFramesIdentical": true,
+        "elementaryStreamHash": "SHA256=010d72d787086c81f203d66a67b51a182eec49ac2ff1033afe8c87a63823eb78",
+        "matchesPreviousElementaryStream": true
+      },
+      "aacNativeExportIdentity": {
+        "elementaryStreamHash": "SHA256=55613d4ff3f982fac234c2d959938f91abccbdee8cc782d0e4b184aafc13d7d3",
+        "matchesFilmcraftExport": true
+      },
+      "directAudition": "NOT_PERFORMED",
+      "noUnplannedSilence": true,
+      "voiceHeadTailPass": true
+    },
+    {
+      "id": "05",
+      "status": "PASS_NUMERICAL_FADE_STRUCTURE_FINAL_AAC_AND_PICTURE_IDENTITY",
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/videos/05-medicate-chorus-v2.mp4",
+      "videoSha256": "927c9767b4e58f4c41e4a3019e03ec015f0c8474c52a45f1d7b174092879b7be",
+      "mixSha256": "04606f6f9f320ad892f829da04105286d520522337d292c6a85f7d53079b5d1a",
+      "actualShaMatchesRendered": true,
+      "technicalShaMatches": true,
+      "decodedAacSampleFrames": 659456,
+      "pictureLengthSampleFrames": 659200,
+      "aacVsFinalWav": {
+        "seconds": [
+          0.1,
+          13.683333333333332
+        ],
+        "gainDb": -0.011798797501755467,
+        "gain": 0.9986425354275472,
+        "normalizedResidualDb": -29.179692367319063,
+        "maximumAbsoluteError": 0.08504292541197861,
+        "correlation": 0.9993965968844687
+      },
+      "voiceHeadTailWindows": [
+        {
+          "seconds": [
+            1.268,
+            1.368
+          ],
+          "gainDb": -0.028706305430613133,
+          "gain": 0.9967005197400683,
+          "normalizedResidualDb": -24.846443280743845,
+          "maximumAbsoluteError": 0.07256071482208865,
+          "correlation": 0.9983659694017153,
+          "wavRmsDbfs": -12.902752438153463,
+          "aacRmsDbfs": -12.917254125588755
+        },
+        {
+          "seconds": [
+            4.55,
+            4.68
+          ],
+          "gainDb": -0.005333466248976265,
+          "gain": 0.9993861504888045,
+          "normalizedResidualDb": -33.570536491627884,
+          "maximumAbsoluteError": 0.02600917827265134,
+          "correlation": 0.9997803287436923,
+          "wavRmsDbfs": -10.248139117000596,
+          "aacRmsDbfs": -10.251564333359127
+        },
+        {
+          "seconds": [
+            5.368,
+            5.468
+          ],
+          "gainDb": 0.002778581033612293,
+          "gain": 1.0003199471355537,
+          "normalizedResidualDb": -25.981944939092408,
+          "maximumAbsoluteError": 0.08479677448692105,
+          "correlation": 0.9987412053849388,
+          "wavRmsDbfs": -13.304453587166144,
+          "aacRmsDbfs": -13.290734367575078
+        },
+        {
+          "seconds": [
+            8.65,
+            8.78
+          ],
+          "gainDb": 0.0012086931141737517,
+          "gain": 1.0001391656199716,
+          "normalizedResidualDb": -32.40235705019997,
+          "maximumAbsoluteError": 0.0410589130488494,
+          "correlation": 0.9997125601235579,
+          "wavRmsDbfs": -11.422620041778814,
+          "aacRmsDbfs": -11.418914318730105
+        },
+        {
+          "seconds": [
+            10.313455,
+            10.413455
+          ],
+          "gainDb": 0.02026084005226424,
+          "gain": 1.0023353380776927,
+          "normalizedResidualDb": -24.622989063795377,
+          "maximumAbsoluteError": 0.07693534986155909,
+          "correlation": 0.9982799168626261,
+          "wavRmsDbfs": -13.384593619531858,
+          "aacRmsDbfs": -13.349379463016295
+        },
+        {
+          "seconds": [
+            13.6,
+            13.72
+          ],
+          "gainDb": -0.018689899756340562,
+          "gain": 0.9978505591351439,
+          "normalizedResidualDb": -31.732924897763898,
+          "maximumAbsoluteError": 0.03079911723302814,
+          "correlation": 0.9996646803297078,
+          "wavRmsDbfs": -16.218376077077576,
+          "aacRmsDbfs": -16.234152938757504
+        }
+      ],
+      "wavSilence": {
+        "windowMs": 10,
+        "internalRange": [
+          0.1,
+          13.683333333333332
+        ],
+        "longestBelowMinus50DbMs": 140,
+        "longestBelowMinus65DbMs": 0,
+        "longestExactZeroSamples": 0,
+        "min10msRmsDbfs": -56.34610291284463
+      },
+      "aacSilence": {
+        "windowMs": 10,
+        "internalRange": [
+          0.1,
+          13.683333333333332
+        ],
+        "longestBelowMinus50DbMs": 140,
+        "longestBelowMinus65DbMs": 0,
+        "longestExactZeroSamples": 0,
+        "min10msRmsDbfs": -56.36262440107656
+      },
+      "pcmTransitionEdges": [
+        {
+          "time": 0.8,
+          "adjacentStepDbfs": -68.01709069678195,
+          "nearbyMaxStepDbfs": -44.978410689684026,
+          "rmsBefore20ms": -43.52531169897479,
+          "rmsAfter20ms": -37.7073030226645
+        },
+        {
+          "time": 0.9,
+          "adjacentStepDbfs": -39.65988209360944,
+          "nearbyMaxStepDbfs": -29.767072480516564,
+          "rmsBefore20ms": -23.731408729830385,
+          "rmsAfter20ms": -23.990823445441187
+        },
+        {
+          "time": 4.6,
+          "adjacentStepDbfs": -31.791198565790317,
+          "nearbyMaxStepDbfs": -19.632524186821353,
+          "rmsBefore20ms": -8.928391730680246,
+          "rmsAfter20ms": -10.76027991384967
+        },
+        {
+          "time": 4.7,
+          "adjacentStepDbfs": -76.13500403897737,
+          "nearbyMaxStepDbfs": -32.788296235036924,
+          "rmsBefore20ms": -17.014536303622457,
+          "rmsAfter20ms": -36.147407382757386
+        },
+        {
+          "time": 4.9,
+          "adjacentStepDbfs": -56.70186240473764,
+          "nearbyMaxStepDbfs": -53.05416784874591,
+          "rmsBefore20ms": -34.566698625617434,
+          "rmsAfter20ms": -34.54356222042065
+        },
+        {
+          "time": 5,
+          "adjacentStepDbfs": -44.69526104653025,
+          "nearbyMaxStepDbfs": -34.789681541617476,
+          "rmsBefore20ms": -28.949171859934335,
+          "rmsAfter20ms": -29.007288474175713
+        },
+        {
+          "time": 8.7,
+          "adjacentStepDbfs": -32.19544067324601,
+          "nearbyMaxStepDbfs": -20.61943069546871,
+          "rmsBefore20ms": -9.835757506284823,
+          "rmsAfter20ms": -11.586884491650068
+        },
+        {
+          "time": 8.8,
+          "adjacentStepDbfs": -64.334323446469,
+          "nearbyMaxStepDbfs": -37.15488660708733,
+          "rmsBefore20ms": -19.569072104744425,
+          "rmsAfter20ms": -39.0772405088807
+        },
+        {
+          "time": 10.26,
+          "adjacentStepDbfs": -60.65532154021228,
+          "nearbyMaxStepDbfs": -39.017710523261,
+          "rmsBefore20ms": -49.004400960536785,
+          "rmsAfter20ms": -40.63788041707312
+        },
+        {
+          "time": 10.29,
+          "adjacentStepDbfs": -53.35436419541807,
+          "nearbyMaxStepDbfs": -42.475825581535176,
+          "rmsBefore20ms": -37.475562489881696,
+          "rmsAfter20ms": -34.85993402278091
+        },
+        {
+          "time": 13.573333333333332,
+          "adjacentStepDbfs": -40.122531537921866,
+          "nearbyMaxStepDbfs": -27.165743473893457,
+          "rmsBefore20ms": -14.315381628331048,
+          "rmsAfter20ms": -15.406088935326538
+        }
+      ],
+      "aacTransitionEdges": [
+        {
+          "time": 0.8,
+          "adjacentStepDbfs": -66.37966897036111,
+          "nearbyMaxStepDbfs": -45.100128800747285,
+          "rmsBefore20ms": -43.541109640735044,
+          "rmsAfter20ms": -37.711342456356675
+        },
+        {
+          "time": 0.9,
+          "adjacentStepDbfs": -39.523334615520284,
+          "nearbyMaxStepDbfs": -29.856064595765993,
+          "rmsBefore20ms": -23.740196840906542,
+          "rmsAfter20ms": -23.98935717431634
+        },
+        {
+          "time": 4.6,
+          "adjacentStepDbfs": -31.8392610802203,
+          "nearbyMaxStepDbfs": -19.89473371331812,
+          "rmsBefore20ms": -8.925250882284766,
+          "rmsAfter20ms": -10.836524912871992
+        },
+        {
+          "time": 4.7,
+          "adjacentStepDbfs": -76.0762106338074,
+          "nearbyMaxStepDbfs": -32.769990676113046,
+          "rmsBefore20ms": -17.03756171332912,
+          "rmsAfter20ms": -36.27422447776537
+        },
+        {
+          "time": 4.9,
+          "adjacentStepDbfs": -56.499004197407075,
+          "nearbyMaxStepDbfs": -53.1572439473167,
+          "rmsBefore20ms": -34.58026627217843,
+          "rmsAfter20ms": -34.55193075806183
+        },
+        {
+          "time": 5,
+          "adjacentStepDbfs": -44.838057726429156,
+          "nearbyMaxStepDbfs": -34.8143304293173,
+          "rmsBefore20ms": -28.94923913823323,
+          "rmsAfter20ms": -29.053937440097787
+        },
+        {
+          "time": 8.7,
+          "adjacentStepDbfs": -32.19643251581746,
+          "nearbyMaxStepDbfs": -20.698821684079466,
+          "rmsBefore20ms": -9.858399359286135,
+          "rmsAfter20ms": -11.603252286711434
+        },
+        {
+          "time": 8.8,
+          "adjacentStepDbfs": -65.50951085311318,
+          "nearbyMaxStepDbfs": -37.45373022398002,
+          "rmsBefore20ms": -19.595237450527318,
+          "rmsAfter20ms": -39.13022077509275
+        },
+        {
+          "time": 10.26,
+          "adjacentStepDbfs": -59.75273095275972,
+          "nearbyMaxStepDbfs": -38.90816320725239,
+          "rmsBefore20ms": -49.032172202639224,
+          "rmsAfter20ms": -40.663250742697784
+        },
+        {
+          "time": 10.29,
+          "adjacentStepDbfs": -53.640930906660024,
+          "nearbyMaxStepDbfs": -42.354708046116265,
+          "rmsBefore20ms": -37.47930615059101,
+          "rmsAfter20ms": -34.86114202241398
+        },
+        {
+          "time": 13.573333333333332,
+          "adjacentStepDbfs": -40.317565831534466,
+          "nearbyMaxStepDbfs": -27.08237869480159,
+          "rmsBefore20ms": -14.328045235948883,
+          "rmsAfter20ms": -15.455975643853968
+        }
+      ],
+      "finalAacLoudnessFromTechnical": {
+        "integratedLufs": -14,
+        "truePeakDbfs": -2.1
+      },
+      "pictureIdentity": {
+        "beforeVideoSha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894",
+        "decodedFrameCount": 412,
+        "changedDecodedFrames": [],
+        "allDecodedFramesIdentical": true,
+        "elementaryStreamHash": "SHA256=b4d46407a9150d5edb8135cac7314739529e9a3fc080e052c084d2a8810087e7",
+        "matchesPreviousElementaryStream": true
+      },
+      "aacNativeExportIdentity": {
+        "elementaryStreamHash": "SHA256=cc41fe193272ab2b3e41c758a594d4dcf445eccaa8eb0595c610c74aea502847",
+        "matchesFilmcraftExport": true
+      },
+      "directAudition": "NOT_PERFORMED",
+      "noUnplannedSilence": true,
+      "voiceHeadTailPass": true
+    }
+  ],
+  "sourceHashChecks": {
+    "currentMatchRecordedPreBuildHashes": true,
+    "files": {
+      "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/medicate_MIX_v6_Natural.wav": "759bce18cf69722a1e04e15aed8abd7eb967f324af9a959f7d11cd1d74bedb1f",
+      "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/Audio/z5824Notag (1).wav": "49ed6edafa6d4d185038db676e2543b8817853ea48054a3398fc830041dd3174",
+      "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/Stems/HOOK_PLATE_WET.wav": "858e9cb3bb303edb9d52bc2835d63d995031e4f46ede252843f66313b6460018",
+      "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/Stems/VOCAL_ALL_DRY.wav": "0aee02c7ddbbc88786b058c68616fd9b47c4ec4bac0c7b5744619dbc01c6b1aa",
+      "/mnt/e/Desktop/音源/medicate/MIX_v5_KeyFix/medicate_MIX_v5_KeyFix.wav": "ff9c3f40c23848a0ffe51b2984fa63b7684f75643b58e3e0ff8d430cb5d2dd67",
+      "/mnt/e/Desktop/音源/medicate/MV_v3_ArtistLyrics/medicate_MV_v3_ArtistLyrics.mp4": "04df8c1af542a39a1cca702126c94898da1fb8e2e8b61bfd636a05adc34ab25f",
+      "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/delivery-manifest-v6.json": "eefa33c6a407253c5be51256c4c8337246b351d0ace8b12583de8eab49f5a80d",
+      "/mnt/e/Desktop/音源/medicate/MV_v3_ArtistLyrics/Source/lyrics-timed.json": "85bd7ac9507ce5696647a54aeba38c3c230f009a8f36217ed1500bb6c9e13c4c"
+    }
+  },
+  "checks": {
+    "wav01": true,
+    "wav05": true,
+    "finalAacAndPicture": true,
+    "sourceHashes": true,
+    "lowLevelWindowIsOriginalBeat": true
+  },
+  "naturalListeningVerdict": "NOT_DETERMINED_WITHOUT_DIRECT_AUDITION",
+  "limits": [
+    "10ms RMS>-45dBFSは運用上の有声maskであり、意味上の発音や小さな息まで消えたという聴感判定ではない。fadeは低RMSの谷に配置。",
+    "05 MV末尾のmaster-minus-dryは伴奏/wet/マスタリング/AAC残差を含み、純粋な別書出し伴奏ではない。実dry成分は一定scalar。",
+    "01は同曲88BPMの同一source時刻が連続、05は同曲beatの複数編集アンカー。05を元曲の無編集連続再生とはしない。",
+    "AACとPCMの相関/波形/RMS/stream同一性は直接全編視聴・試聴ではない。"
+  ],
+  "lowLevelDiagnostic": {
+    "thresholdDbfs": -50,
+    "windowMs": 10,
+    "events": [
+      {
+        "start": 9.83,
+        "end": 9.84,
+        "minRms": -50.2530048885373
+      },
+      {
+        "start": 9.9,
+        "end": 10.04,
+        "minRms": -56.34610291284463
+      }
+    ],
+    "sourceBedFits": [
+      {
+        "start": 9.83,
+        "end": 9.84,
+        "minRms": -50.2530048885373,
+        "sourceClock": {
+          "start": 75.83,
+          "end": 75.84
+        },
+        "n": 960,
+        "expectedBedGainDb": -19,
+        "expectedResidualDb": -99.0230417394443,
+        "maxAbsoluteError": 5.9515733939665555e-8
+      },
+      {
+        "start": 9.9,
+        "end": 10.04,
+        "minRms": -56.34610291284463,
+        "sourceClock": {
+          "start": 75.9,
+          "end": 76.04
+        },
+        "n": 13440,
+        "expectedBedGainDb": -19,
+        "expectedResidualDb": -97.09186067911651,
+        "maxAbsoluteError": 5.960361292543792e-8
+      }
+    ],
+    "interpretation": "Diagnostic quiet windows, not mathematical silence. No exact-zero run and no 10ms window below -65dBFS. Boundaries are checked against the same-song instrumental source; no audibility/naturalness assertion.",
+    "strictMinus50DbDiagnosticPassed": false,
+    "acceptanceInterpretation": "-50dBFS/100msの診断は05で140msを検出した。位置は9.90〜10.04秒（元同曲beat75.90〜76.04秒）で、実source beat×-19dBと半24bitLSB以内に一致。完全無音/欠落ではないため、この診断を無音撤去の必須失敗とはしない。低音量区間の存在は記録して残し、聴感は未判定。",
+    "sourceBedCorrespondenceVerified": true,
+    "unplannedSilenceDefinition": "Internal exact-zero gap or >=100ms below -65dBFS; -50dBFS windows retained separately as low-level diagnostics."
+  },
+  "physicalFadeVerdict": "PASS: source/stem PCMによる有声maskと定常gain、A/B同条件、実AACの声head/tail、同曲beat/無音撤去を確認。",
+  "auditoryNaturalnessVerdict": "NOT_DETERMINED_WITHOUT_DIRECT_AUDITION",
+  "measuredStructure": {
+    "episode01": {
+      "masterFadeInSource": [
+        76.26,
+        76.29
+      ],
+      "unattenuatedMasterSource": [
+        76.29,
+        79.73333333333333
+      ],
+      "masterFadeOutSource": [
+        79.73333333333333,
+        79.75333333333333
+      ],
+      "nextDryActivityMeasuredAt": 79.76,
+      "remainingWetEndsSource": 79.8,
+      "continuousBeatSource": [
+        65.1,
+        83.53333333333333
+      ],
+      "separate150BpmBedAbsent": true,
+      "deliberate100msZeroPocketAbsent": true
+    },
+    "episode05": {
+      "abFadeInSource": [
+        21.3,
+        21.4
+      ],
+      "abMasterUnattenuatedSource": [
+        21.4,
+        25.19
+      ],
+      "abFadeOutSource": [
+        25.19,
+        25.2
+      ],
+      "abNextDryActivityMeasuredAt": 25.21,
+      "abActualVocalTailExtendedBeyondOld25_1End": 0.09,
+      "abCoreRelativeGainDb": [
+        -1.33,
+        -1
+      ],
+      "abInputRelativeTrimDb": -0.33,
+      "mvFadeInSource": [
+        76.26,
+        76.29
+      ],
+      "mvDryUnitySource": [
+        76.29,
+        79.73333333333333
+      ],
+      "mvLast160msFadesResidualOnly": true,
+      "mvNextDryActivityMeasuredAt": 79.76,
+      "noReadThroughIntoMeasuredNextWord": true
+    }
+  },
+  "tempoEvidence": {
+    "path": "/mnt/e/Desktop/音源/medicate/MV_v4_Performance/Source/beat-grid.json",
+    "sha256": "007af33e81a1c5f33cf1897b527c9edf3c0b9f2a82bf0bdc6f9cace205e579d1",
+    "measuredBpm": 87.99988734468549,
+    "masterBeatOffsetSamples": 0,
+    "sourceHashesMatch": true
+  },
+  "artifactMethods": {
+    "pcm": "Read actual final24bit WAV; independent least-squares scalar fits and sample residuals against separately decoded original master/beat/dry/wet. 10ms RMS dry and whole-mix diagnostic windows; final AAC decoded to48k stereo and compared with WAV.",
+    "picture": "Before and after all553+412 decoded rawvideo SHA-256 frame rows matched with DTS/PTS/duration/byte count; compressed picture ES hashes also identical.",
+    "aac": "Final AAC elementary stream hash independently matched recorded FilmCraft-native export hash; head/tail region PCM correlation/gain/RMS measured."
+  }
+}

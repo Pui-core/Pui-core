@@ -1,9 +1,10 @@
 {
   "status": "TECHNICAL_PASS",
+  "revision": "fade-fix-same-song-88bpm",
   "id": "01",
   "slug": "pui-promo-v2",
   "file": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/media/01-pui-promo-v2-mix.wav",
-  "sha256": "2a0b8bfca20007443dffed76b94af6ef8b9673a4cec31fea471720ad2e3c39dc",
+  "sha256": "3beb5fde06611e3860c25efae256462197f2079b229221b5b9336e7d318a3e16",
   "frames": 553,
   "fps": 30,
   "duration": 18.433333333333334,
@@ -12,449 +13,2264 @@
   "channels": 2,
   "bits": 24,
   "sources": {
-    "instrumental": {
-      "path": "/home/pui/Videos/Pui-Promo/2026-10-24/kinetic-five/media/music-01.wav",
-      "sha256": "22807111fc6b2a376d97f753298e4624b34772456d95f71b6f48d336f22cdce5",
-      "wavFormat": {
-        "tag": 65534,
-        "subtype": 1,
-        "rate": 48000,
-        "bits": 24,
-        "channels": 2
-      },
-      "segments": [
-        {
-          "sourceStart": 6.4,
-          "sourceEnd": 17.6,
-          "sourceStartSample": 307200,
-          "sourceEndSample": 844800,
-          "outputStart": 0,
-          "outputEnd": 11.2,
-          "outputStartSample": 0,
-          "outputEndSample": 537600
-        },
-        {
-          "sourceStart": 17.6,
-          "sourceEnd": 21.4,
-          "sourceStartSample": 844800,
-          "sourceEndSample": 1027200,
-          "outputStart": 14.633333333333333,
-          "outputEnd": 18.433333333333334,
-          "outputStartSample": 702400,
-          "outputEndSample": 884800
-        }
-      ]
-    },
-    "artistChorus": {
+    "master": {
       "path": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/medicate_MIX_v6_Natural.wav",
       "sha256": "759bce18cf69722a1e04e15aed8abd7eb967f324af9a959f7d11cd1d74bedb1f",
-      "acceptedManifest": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/delivery-manifest-v6.json",
-      "acceptedVersion": "v6_Natural",
-      "acceptedStatus": "final_v6_user_accepted",
-      "cueId": "hook2-L01",
-      "lyric": "まだ君が居なくて泣いてる夜",
-      "fullSourceStart": 76.3,
-      "fullSourceEnd": 79.73333333333333,
-      "sourceStartFrame30": 2289,
-      "sourceEndFrame30": 2392,
-      "sourceStartSample44100": 3364830,
-      "sourceEndSample44100": 3516240,
-      "outputStart": 11.2,
-      "outputEnd": 14.633333333333333,
-      "outputStartFrame30": 336,
-      "outputEndFrame30": 439,
-      "outputStartSample": 537600,
-      "outputEndSample": 702400,
-      "resampledSampleFrames": 164800,
-      "phraseStartInOutput": 11.21345500000001,
-      "phraseEndInOutput": 14.47545500000001,
-      "wholeCueContained": true
+      "unchanged": true
+    },
+    "beat": {
+      "path": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/Audio/z5824Notag (1).wav",
+      "sha256": "49ed6edafa6d4d185038db676e2543b8817853ea48054a3398fc830041dd3174",
+      "unchanged": true
+    },
+    "wet": {
+      "path": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/Stems/HOOK_PLATE_WET.wav",
+      "sha256": "858e9cb3bb303edb9d52bc2835d63d995031e4f46ede252843f66313b6460018",
+      "unchanged": true
+    },
+    "dry": {
+      "path": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/Stems/VOCAL_ALL_DRY.wav",
+      "sha256": "0aee02c7ddbbc88786b058c68616fd9b47c4ec4bac0c7b5744619dbc01c6b1aa",
+      "unchanged": true
     }
   },
   "sourceOriginalsUnchanged": true,
-  "cutSeconds": [
-    0,
-    0.4,
-    0.8,
-    2,
-    2.8,
-    3.6,
-    4.4,
-    5.6,
-    6.8,
-    7.6,
-    8.8,
-    9.6,
-    10.4,
-    11.2,
-    14.633333333333333,
-    15.033333333333333,
-    15.433333333333334,
-    15.833333333333334,
-    16.633333333333333,
-    18.433333333333334
-  ],
-  "levelsBeforeFinalNormalization": {
-    "instrumentalGain": 0.7,
-    "artistChorusGain": 0.95,
-    "overloadGuard": 1,
-    "preGuardPeakDbfs": -2.0036689490114195,
-    "sfxPeakDbfs": -15.326689676052974
+  "pictureChorus": {
+    "outputStart": 11.2,
+    "outputEnd": 14.633333333333333,
+    "fullSourceStart": 76.3,
+    "fullSourceEnd": 79.73333333333333
+  },
+  "continuousSongClock": {
+    "sourceStart": 65.1,
+    "sourceEnd": 83.53333333333333,
+    "bpm": 88,
+    "noTimeStretch": true,
+    "noPitchShift": true
   },
   "timingDesign": {
-    "instrumentalThin": [
-      11.02,
-      11.1
+    "masterEntryCrossfade": [
+      11.16,
+      11.19
     ],
-    "intentionalSilentPocket": [
-      11.1,
-      11.2
+    "masterEntrySource": [
+      76.25999999999999,
+      76.28999999999999
     ],
-    "artistChorus": [
-      11.2,
+    "fullMasterEnvelopeUnity": [
+      11.19,
       14.633333333333333
     ],
-    "returnDrop": 14.633333333333333,
-    "addedSfxDuringChorus": false,
-    "sfxSamplesInsideChorus": 0,
-    "endFadeSeconds": 0.3,
-    "artistFadeInSeconds": 0.18,
-    "artistFadeOutSeconds": 0.24,
-    "instrumentalReturnFadeInSeconds": 0.2
+    "masterExitCrossfade": [
+      14.633333333333333,
+      14.653333333333332
+    ],
+    "masterExitSource": [
+      79.73333333333332,
+      79.75333333333333
+    ],
+    "residualWet": [
+      14.633333333333333,
+      14.7
+    ],
+    "wetFade": [
+      14.68,
+      14.7
+    ],
+    "nextDryWordExcludedAfterSource": 79.75333333333333,
+    "noIntentionalSilentPocket": true,
+    "sameSongBeatAlwaysPresent": true,
+    "programOpeningFadeSeconds": 0.08,
+    "programEndFadeSeconds": 0.3
+  },
+  "levels": {
+    "soloBeatLiftDb": 2.5,
+    "beatScale": 0.8851156098308356,
+    "wetScale": 1.3243415351946648,
+    "oneCommonStaticGainDb": -0.72220418545591,
+    "gainPolicy": "Common static gain only. No dynamic loudnorm processing or phrase-specific compression; accepted V6 phrase is a scalar copy.",
+    "preGainPeakDbfs": -1.5459960747052173
   },
   "originalSfx": {
-    "provenance": "Deterministic additive bass/tick and filtered-noise reverse suction synthesized in this file. No external samples or recordings.",
-    "seed": 26012401,
+    "removed": "All150BPM score/cut ticks/reverse sweeps",
     "cues": [
       {
-        "kind": "original-low-impact",
-        "startSeconds": 0,
-        "endSeconds": 0.29,
-        "landingFrame30": 0,
-        "gain": 0.21,
-        "pan": 0
+        "kind": "low opening accent",
+        "at": 0,
+        "duration": 0.095
       },
       {
-        "kind": "original-impact-air",
-        "startSeconds": 0,
-        "endSeconds": 0.09,
-        "landingFrame30": 0,
-        "gain": 0.0462,
-        "pan": -0.15
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 0.4,
-        "endSeconds": 0.465,
-        "landingFrame30": 12,
-        "gain": 0.052,
-        "pan": 0.42
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 0.8,
-        "endSeconds": 0.865,
-        "landingFrame30": 24,
-        "gain": 0.035,
-        "pan": -0.42
-      },
-      {
-        "kind": "original-reverse-suction",
-        "startSeconds": 0.68,
-        "endSeconds": 0.8,
-        "landingFrame30": 20,
-        "gain": 0.057,
-        "pan": -0.45
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 2,
-        "endSeconds": 2.065,
-        "landingFrame30": 60,
-        "gain": 0.035,
-        "pan": 0.42
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 2.8,
-        "endSeconds": 2.8649999999999998,
-        "landingFrame30": 84,
-        "gain": 0.052,
-        "pan": -0.42
-      },
-      {
-        "kind": "original-reverse-suction",
-        "startSeconds": 2.6799999999999997,
-        "endSeconds": 2.8,
-        "landingFrame30": 80,
-        "gain": 0.057,
-        "pan": -0.45
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 3.6,
-        "endSeconds": 3.665,
-        "landingFrame30": 108,
-        "gain": 0.035,
-        "pan": 0.42
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 4.4,
-        "endSeconds": 4.465000000000001,
-        "landingFrame30": 132,
-        "gain": 0.035,
-        "pan": -0.42
-      },
-      {
-        "kind": "original-reverse-suction",
-        "startSeconds": 4.28,
-        "endSeconds": 4.4,
-        "landingFrame30": 128,
-        "gain": 0.057,
-        "pan": -0.45
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 5.6,
-        "endSeconds": 5.665,
-        "landingFrame30": 168,
-        "gain": 0.052,
-        "pan": 0.42
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 6.8,
-        "endSeconds": 6.865,
-        "landingFrame30": 204,
-        "gain": 0.035,
-        "pan": -0.42
-      },
-      {
-        "kind": "original-reverse-suction",
-        "startSeconds": 6.68,
-        "endSeconds": 6.8,
-        "landingFrame30": 200,
-        "gain": 0.057,
-        "pan": -0.45
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 7.6,
-        "endSeconds": 7.665,
-        "landingFrame30": 228,
-        "gain": 0.035,
-        "pan": 0.42
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 8.8,
-        "endSeconds": 8.865,
-        "landingFrame30": 264,
-        "gain": 0.052,
-        "pan": -0.42
-      },
-      {
-        "kind": "original-reverse-suction",
-        "startSeconds": 8.680000000000001,
-        "endSeconds": 8.8,
-        "landingFrame30": 260,
-        "gain": 0.057,
-        "pan": -0.45
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 9.6,
-        "endSeconds": 9.665,
-        "landingFrame30": 288,
-        "gain": 0.035,
-        "pan": 0.42
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 10.4,
-        "endSeconds": 10.465,
-        "landingFrame30": 312,
-        "gain": 0.035,
-        "pan": -0.42
-      },
-      {
-        "kind": "original-low-impact",
-        "startSeconds": 2.8,
-        "endSeconds": 3.09,
-        "landingFrame30": 84,
-        "gain": 0.12,
-        "pan": 0
-      },
-      {
-        "kind": "original-impact-air",
-        "startSeconds": 2.8,
-        "endSeconds": 2.8899999999999997,
-        "landingFrame30": 84,
-        "gain": 0.0264,
-        "pan": -0.15
-      },
-      {
-        "kind": "original-low-impact",
-        "startSeconds": 5.6,
-        "endSeconds": 5.89,
-        "landingFrame30": 168,
-        "gain": 0.19,
-        "pan": 0
-      },
-      {
-        "kind": "original-impact-air",
-        "startSeconds": 5.6,
-        "endSeconds": 5.6899999999999995,
-        "landingFrame30": 168,
-        "gain": 0.041800000000000004,
-        "pan": -0.15
-      },
-      {
-        "kind": "original-low-impact",
-        "startSeconds": 8.8,
-        "endSeconds": 9.09,
-        "landingFrame30": 264,
-        "gain": 0.12,
-        "pan": 0
-      },
-      {
-        "kind": "original-impact-air",
-        "startSeconds": 8.8,
-        "endSeconds": 8.89,
-        "landingFrame30": 264,
-        "gain": 0.0264,
-        "pan": -0.15
-      },
-      {
-        "kind": "original-reverse-suction",
-        "startSeconds": 10.88,
-        "endSeconds": 11.08,
-        "landingFrame30": 326,
-        "gain": 0.075,
-        "pan": -0.25
-      },
-      {
-        "kind": "original-low-impact",
-        "startSeconds": 14.693333333333333,
-        "endSeconds": 14.983333333333333,
-        "landingFrame30": 441,
-        "gain": 0.075,
-        "pan": 0
-      },
-      {
-        "kind": "original-impact-air",
-        "startSeconds": 14.693333333333333,
-        "endSeconds": 14.783333333333333,
-        "landingFrame30": 441,
-        "gain": 0.0165,
-        "pan": -0.15
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 15.033333333333333,
-        "endSeconds": 15.098333333333333,
-        "landingFrame30": 451,
-        "gain": 0.044,
-        "pan": 0.35
-      },
-      {
-        "kind": "original-reverse-suction",
-        "startSeconds": 14.933333333333334,
-        "endSeconds": 15.033333333333333,
-        "landingFrame30": 448,
-        "gain": 0.052,
-        "pan": 0.4
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 15.433333333333334,
-        "endSeconds": 15.498333333333333,
-        "landingFrame30": 463,
-        "gain": 0.044,
-        "pan": -0.35
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 15.833333333333334,
-        "endSeconds": 15.898333333333333,
-        "landingFrame30": 475,
-        "gain": 0.065,
-        "pan": 0.35
-      },
-      {
-        "kind": "original-reverse-suction",
-        "startSeconds": 15.733333333333334,
-        "endSeconds": 15.833333333333334,
-        "landingFrame30": 472,
-        "gain": 0.052,
-        "pan": 0.4
-      },
-      {
-        "kind": "original-tactile-tick",
-        "startSeconds": 16.633333333333333,
-        "endSeconds": 16.698333333333334,
-        "landingFrame30": 499,
-        "gain": 0.044,
-        "pan": -0.35
-      },
-      {
-        "kind": "original-low-impact",
-        "startSeconds": 15.833333333333334,
-        "endSeconds": 16.123333333333335,
-        "landingFrame30": 475,
-        "gain": 0.13,
-        "pan": 0
-      },
-      {
-        "kind": "original-impact-air",
-        "startSeconds": 15.833333333333334,
-        "endSeconds": 15.923333333333334,
-        "landingFrame30": 475,
-        "gain": 0.0286,
-        "pan": -0.15
+        "kind": "quiet low tick after full phrase",
+        "at": 14.743333333333332,
+        "duration": 0.045
       }
     ]
   },
-  "rawInMemoryWaveSha256": "48858dcbca4b9e3457543469a6304610c6edf7afd77e61373e33c48aec426dbd",
-  "targetIntegratedLufs": -14,
-  "maximumTruePeakDbtp": -1.6,
-  "processingPeakGuardDbtp": -2.2,
-  "firstPass": {
-    "input_i": "-15.82",
-    "input_tp": "-1.99",
-    "input_lra": "2.90",
-    "input_thresh": "-25.82",
-    "output_i": "-14.27",
-    "output_tp": "-2.20",
-    "output_lra": "1.50",
-    "output_thresh": "-24.27",
-    "normalization_type": "dynamic",
-    "target_offset": "0.27"
+  "vocalPassThrough": {
+    "cueId": "hook2-L01",
+    "estimatedCueSource": [
+      76.313455,
+      79.575455
+    ],
+    "points": [
+      {
+        "source": 76.313455,
+        "global": 11.21345500000001,
+        "envelope": 1,
+        "relativeFadeDb": 0
+      },
+      {
+        "source": 79.575455,
+        "global": 14.47545500000001,
+        "envelope": 1,
+        "relativeFadeDb": 0
+      },
+      {
+        "source": 79.7,
+        "global": 14.600000000000009,
+        "envelope": 1,
+        "relativeFadeDb": 0
+      },
+      {
+        "source": 79.72,
+        "global": 14.620000000000005,
+        "envelope": 1,
+        "relativeFadeDb": 0
+      },
+      {
+        "source": 79.73,
+        "global": 14.63000000000001,
+        "envelope": 1,
+        "relativeFadeDb": 0
+      }
+    ],
+    "mask": {
+      "windowSamples": 480,
+      "thresholdRmsDbfs": -45,
+      "activeSamples": 157440,
+      "samplesInFade": 0,
+      "firstActiveGlobal": 11.21,
+      "lastActiveGlobal": 14.63,
+      "allActiveSamplesMasterGainConstant": true,
+      "actualOutputVsMasterMaxAbsoluteError": 5.960460436327253e-8,
+      "withinOne24bitLsb": true
+    },
+    "windows": [
+      {
+        "globalStart": 11.19,
+        "sourceStart": 76.28999999999999,
+        "dryRmsDbfs": -59.61077388995507,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.2,
+        "sourceStart": 76.3,
+        "dryRmsDbfs": -54.610845869442144,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.21,
+        "sourceStart": 76.31,
+        "dryRmsDbfs": -33.675846995833695,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.22,
+        "sourceStart": 76.32,
+        "dryRmsDbfs": -29.47742529772935,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.23,
+        "sourceStart": 76.33,
+        "dryRmsDbfs": -24.861216870969717,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.24,
+        "sourceStart": 76.33999999999999,
+        "dryRmsDbfs": -20.821283747851325,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.25,
+        "sourceStart": 76.35,
+        "dryRmsDbfs": -19.326830763021338,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.26,
+        "sourceStart": 76.36,
+        "dryRmsDbfs": -20.19367801306594,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.27,
+        "sourceStart": 76.36999999999999,
+        "dryRmsDbfs": -18.212932723494927,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.28,
+        "sourceStart": 76.38,
+        "dryRmsDbfs": -17.371016762520103,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.29,
+        "sourceStart": 76.38999999999999,
+        "dryRmsDbfs": -19.3521683581029,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.3,
+        "sourceStart": 76.39999999999999,
+        "dryRmsDbfs": -17.701382348794134,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.31,
+        "sourceStart": 76.41,
+        "dryRmsDbfs": -19.004196826723287,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.32,
+        "sourceStart": 76.41999999999999,
+        "dryRmsDbfs": -18.092092487985038,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.33,
+        "sourceStart": 76.42999999999999,
+        "dryRmsDbfs": -18.459170275163743,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.34,
+        "sourceStart": 76.44,
+        "dryRmsDbfs": -18.460247127639857,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.35,
+        "sourceStart": 76.44999999999999,
+        "dryRmsDbfs": -19.14731067295327,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.36,
+        "sourceStart": 76.46,
+        "dryRmsDbfs": -20.784697655668033,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.37,
+        "sourceStart": 76.47,
+        "dryRmsDbfs": -19.838464816198925,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.38,
+        "sourceStart": 76.47999999999999,
+        "dryRmsDbfs": -21.52567800758288,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.39,
+        "sourceStart": 76.49,
+        "dryRmsDbfs": -20.17481255975398,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.4,
+        "sourceStart": 76.5,
+        "dryRmsDbfs": -22.80596679225549,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.41,
+        "sourceStart": 76.50999999999999,
+        "dryRmsDbfs": -23.535114887900267,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.42,
+        "sourceStart": 76.52,
+        "dryRmsDbfs": -28.93694522871361,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.43,
+        "sourceStart": 76.53,
+        "dryRmsDbfs": -25.140855196865154,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.44,
+        "sourceStart": 76.53999999999999,
+        "dryRmsDbfs": -23.211072810073752,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.45,
+        "sourceStart": 76.55,
+        "dryRmsDbfs": -20.506159785329878,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.46,
+        "sourceStart": 76.56,
+        "dryRmsDbfs": -19.631652300787835,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.47,
+        "sourceStart": 76.57,
+        "dryRmsDbfs": -18.44545937544874,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.48,
+        "sourceStart": 76.58,
+        "dryRmsDbfs": -20.584736935594123,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.49,
+        "sourceStart": 76.58999999999999,
+        "dryRmsDbfs": -20.20232863891929,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.5,
+        "sourceStart": 76.6,
+        "dryRmsDbfs": -19.28457519545024,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.51,
+        "sourceStart": 76.61,
+        "dryRmsDbfs": -20.703885146118463,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.52,
+        "sourceStart": 76.61999999999999,
+        "dryRmsDbfs": -21.887102078191788,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.53,
+        "sourceStart": 76.63,
+        "dryRmsDbfs": -25.563065877348997,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.54,
+        "sourceStart": 76.63999999999999,
+        "dryRmsDbfs": -30.854194486140702,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.55,
+        "sourceStart": 76.64999999999999,
+        "dryRmsDbfs": -37.359350177249475,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.56,
+        "sourceStart": 76.66,
+        "dryRmsDbfs": -43.4683012825478,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.57,
+        "sourceStart": 76.66999999999999,
+        "dryRmsDbfs": -49.255398897876375,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.58,
+        "sourceStart": 76.67999999999999,
+        "dryRmsDbfs": -54.84208892440131,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.59,
+        "sourceStart": 76.69,
+        "dryRmsDbfs": -38.561883279920636,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.6,
+        "sourceStart": 76.69999999999999,
+        "dryRmsDbfs": -41.22556740136427,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.61,
+        "sourceStart": 76.71,
+        "dryRmsDbfs": -34.355139720606076,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.62,
+        "sourceStart": 76.72,
+        "dryRmsDbfs": -31.303095515152354,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.63,
+        "sourceStart": 76.72999999999999,
+        "dryRmsDbfs": -23.676174862292644,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.64,
+        "sourceStart": 76.74,
+        "dryRmsDbfs": -19.286017126947808,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.65,
+        "sourceStart": 76.75,
+        "dryRmsDbfs": -19.259134567116792,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.66,
+        "sourceStart": 76.75999999999999,
+        "dryRmsDbfs": -19.07033344711708,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.67,
+        "sourceStart": 76.77,
+        "dryRmsDbfs": -20.11056899762135,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.68,
+        "sourceStart": 76.78,
+        "dryRmsDbfs": -19.983248690040686,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.69,
+        "sourceStart": 76.78999999999999,
+        "dryRmsDbfs": -21.0543997473817,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.7,
+        "sourceStart": 76.8,
+        "dryRmsDbfs": -21.565258704780454,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.71,
+        "sourceStart": 76.81,
+        "dryRmsDbfs": -21.52373318730259,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.72,
+        "sourceStart": 76.82,
+        "dryRmsDbfs": -22.756659055561727,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.73,
+        "sourceStart": 76.83,
+        "dryRmsDbfs": -22.595654478146955,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.74,
+        "sourceStart": 76.83999999999999,
+        "dryRmsDbfs": -24.056053577972676,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.75,
+        "sourceStart": 76.85,
+        "dryRmsDbfs": -21.281106042997084,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.76,
+        "sourceStart": 76.86,
+        "dryRmsDbfs": -22.991684165629202,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.77,
+        "sourceStart": 76.86999999999999,
+        "dryRmsDbfs": -21.277098991023813,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.78,
+        "sourceStart": 76.88,
+        "dryRmsDbfs": -22.283609072539058,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.79,
+        "sourceStart": 76.88999999999999,
+        "dryRmsDbfs": -20.927756376310384,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.8,
+        "sourceStart": 76.89999999999999,
+        "dryRmsDbfs": -21.234564627788025,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.81,
+        "sourceStart": 76.91,
+        "dryRmsDbfs": -20.211529984064377,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.82,
+        "sourceStart": 76.91999999999999,
+        "dryRmsDbfs": -21.37023389849714,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.83,
+        "sourceStart": 76.92999999999999,
+        "dryRmsDbfs": -20.574465332570245,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.84,
+        "sourceStart": 76.94,
+        "dryRmsDbfs": -21.091791225018696,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.85,
+        "sourceStart": 76.94999999999999,
+        "dryRmsDbfs": -21.222085134573774,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.86,
+        "sourceStart": 76.96,
+        "dryRmsDbfs": -20.915285369918895,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.87,
+        "sourceStart": 76.97,
+        "dryRmsDbfs": -21.395546417188527,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.88,
+        "sourceStart": 76.97999999999999,
+        "dryRmsDbfs": -21.04586023894057,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.89,
+        "sourceStart": 76.99,
+        "dryRmsDbfs": -22.40210571429803,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.9,
+        "sourceStart": 77,
+        "dryRmsDbfs": -22.81910343979781,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.91,
+        "sourceStart": 77.00999999999999,
+        "dryRmsDbfs": -26.402366485016465,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.92,
+        "sourceStart": 77.02,
+        "dryRmsDbfs": -25.10880538733182,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.93,
+        "sourceStart": 77.03,
+        "dryRmsDbfs": -27.158723473477014,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.94,
+        "sourceStart": 77.03999999999999,
+        "dryRmsDbfs": -27.06581786654052,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.95,
+        "sourceStart": 77.05,
+        "dryRmsDbfs": -27.105837579640575,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.96,
+        "sourceStart": 77.06,
+        "dryRmsDbfs": -25.706017413963608,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.97,
+        "sourceStart": 77.07,
+        "dryRmsDbfs": -22.3906080902394,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.98,
+        "sourceStart": 77.08,
+        "dryRmsDbfs": -19.37342004526297,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 11.99,
+        "sourceStart": 77.08999999999999,
+        "dryRmsDbfs": -18.923079515688965,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12,
+        "sourceStart": 77.1,
+        "dryRmsDbfs": -19.120614219181448,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.01,
+        "sourceStart": 77.11,
+        "dryRmsDbfs": -19.918565667954372,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.02,
+        "sourceStart": 77.11999999999999,
+        "dryRmsDbfs": -19.014535053343224,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.03,
+        "sourceStart": 77.13,
+        "dryRmsDbfs": -19.353173645570617,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.04,
+        "sourceStart": 77.13999999999999,
+        "dryRmsDbfs": -17.475642292476913,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.05,
+        "sourceStart": 77.14999999999999,
+        "dryRmsDbfs": -19.032918761144654,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.06,
+        "sourceStart": 77.16,
+        "dryRmsDbfs": -18.195104243557168,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.07,
+        "sourceStart": 77.16999999999999,
+        "dryRmsDbfs": -19.109292833686244,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.08,
+        "sourceStart": 77.17999999999999,
+        "dryRmsDbfs": -18.247504135181043,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.09,
+        "sourceStart": 77.19,
+        "dryRmsDbfs": -20.777287121466067,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.1,
+        "sourceStart": 77.19999999999999,
+        "dryRmsDbfs": -20.374857348235025,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.11,
+        "sourceStart": 77.21,
+        "dryRmsDbfs": -22.888186413087276,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.12,
+        "sourceStart": 77.22,
+        "dryRmsDbfs": -21.049100358479564,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.13,
+        "sourceStart": 77.22999999999999,
+        "dryRmsDbfs": -21.70530873289438,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.14,
+        "sourceStart": 77.24,
+        "dryRmsDbfs": -21.60249904106688,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.15,
+        "sourceStart": 77.25,
+        "dryRmsDbfs": -23.155306514044213,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.16,
+        "sourceStart": 77.25999999999999,
+        "dryRmsDbfs": -21.5095874297239,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.17,
+        "sourceStart": 77.27,
+        "dryRmsDbfs": -23.615968137101895,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.18,
+        "sourceStart": 77.28,
+        "dryRmsDbfs": -21.229585206071555,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.19,
+        "sourceStart": 77.28999999999999,
+        "dryRmsDbfs": -22.402565438546592,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.2,
+        "sourceStart": 77.3,
+        "dryRmsDbfs": -21.31728415502654,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.21,
+        "sourceStart": 77.31,
+        "dryRmsDbfs": -23.339780329389054,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.22,
+        "sourceStart": 77.32,
+        "dryRmsDbfs": -23.238267456084483,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.23,
+        "sourceStart": 77.33,
+        "dryRmsDbfs": -21.569050010578337,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.24,
+        "sourceStart": 77.33999999999999,
+        "dryRmsDbfs": -23.718901182859625,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.25,
+        "sourceStart": 77.35,
+        "dryRmsDbfs": -21.343640417044107,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.26,
+        "sourceStart": 77.36,
+        "dryRmsDbfs": -23.388786573897185,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.27,
+        "sourceStart": 77.36999999999999,
+        "dryRmsDbfs": -21.191521836209553,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.28,
+        "sourceStart": 77.38,
+        "dryRmsDbfs": -21.823079162511817,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.29,
+        "sourceStart": 77.38999999999999,
+        "dryRmsDbfs": -18.941540929812113,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.3,
+        "sourceStart": 77.39999999999999,
+        "dryRmsDbfs": -19.715815420656234,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.31,
+        "sourceStart": 77.41,
+        "dryRmsDbfs": -20.755903617087647,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.32,
+        "sourceStart": 77.41999999999999,
+        "dryRmsDbfs": -19.81992603000547,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.33,
+        "sourceStart": 77.42999999999999,
+        "dryRmsDbfs": -21.224942987745514,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.34,
+        "sourceStart": 77.44,
+        "dryRmsDbfs": -19.20428903853909,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.35,
+        "sourceStart": 77.44999999999999,
+        "dryRmsDbfs": -19.856780791826875,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.36,
+        "sourceStart": 77.46,
+        "dryRmsDbfs": -22.196264967001923,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.37,
+        "sourceStart": 77.47,
+        "dryRmsDbfs": -20.80258381436456,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.38,
+        "sourceStart": 77.47999999999999,
+        "dryRmsDbfs": -21.147110119387126,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.39,
+        "sourceStart": 77.49,
+        "dryRmsDbfs": -21.544041972085417,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.4,
+        "sourceStart": 77.5,
+        "dryRmsDbfs": -22.861444159495022,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.41,
+        "sourceStart": 77.50999999999999,
+        "dryRmsDbfs": -21.20960026077462,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.42,
+        "sourceStart": 77.52,
+        "dryRmsDbfs": -20.779729112330415,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.43,
+        "sourceStart": 77.53,
+        "dryRmsDbfs": -20.919417009010324,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.44,
+        "sourceStart": 77.53999999999999,
+        "dryRmsDbfs": -24.326846153416184,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.45,
+        "sourceStart": 77.55,
+        "dryRmsDbfs": -27.407435472576115,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.46,
+        "sourceStart": 77.56,
+        "dryRmsDbfs": -31.162533001522938,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.47,
+        "sourceStart": 77.57,
+        "dryRmsDbfs": -36.20824015917534,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.48,
+        "sourceStart": 77.58,
+        "dryRmsDbfs": -43.289077391984904,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.49,
+        "sourceStart": 77.58999999999999,
+        "dryRmsDbfs": -47.26688936126881,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.5,
+        "sourceStart": 77.6,
+        "dryRmsDbfs": -42.90114179277157,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.51,
+        "sourceStart": 77.61,
+        "dryRmsDbfs": -50.41807355033268,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.52,
+        "sourceStart": 77.61999999999999,
+        "dryRmsDbfs": -58.20755687712321,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.53,
+        "sourceStart": 77.63,
+        "dryRmsDbfs": -34.12665220028474,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.54,
+        "sourceStart": 77.63999999999999,
+        "dryRmsDbfs": -33.9543779464156,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.55,
+        "sourceStart": 77.64999999999999,
+        "dryRmsDbfs": -45.23789848484111,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.56,
+        "sourceStart": 77.66,
+        "dryRmsDbfs": -56.717206641720104,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.57,
+        "sourceStart": 77.66999999999999,
+        "dryRmsDbfs": -61.577546784864595,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.58,
+        "sourceStart": 77.67999999999999,
+        "dryRmsDbfs": -63.26565779074941,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.59,
+        "sourceStart": 77.69,
+        "dryRmsDbfs": -59.922097808136,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.6,
+        "sourceStart": 77.69999999999999,
+        "dryRmsDbfs": -45.730300129296495,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.61,
+        "sourceStart": 77.71,
+        "dryRmsDbfs": -40.573645255880905,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.62,
+        "sourceStart": 77.72,
+        "dryRmsDbfs": -35.016888900637355,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.63,
+        "sourceStart": 77.72999999999999,
+        "dryRmsDbfs": -27.71339632010907,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.64,
+        "sourceStart": 77.74,
+        "dryRmsDbfs": -23.387989281715164,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.65,
+        "sourceStart": 77.75,
+        "dryRmsDbfs": -19.28713620780399,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.66,
+        "sourceStart": 77.75999999999999,
+        "dryRmsDbfs": -19.925338581927107,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.67,
+        "sourceStart": 77.77,
+        "dryRmsDbfs": -19.117231028075732,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.68,
+        "sourceStart": 77.78,
+        "dryRmsDbfs": -20.331681359892446,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.69,
+        "sourceStart": 77.78999999999999,
+        "dryRmsDbfs": -19.828011212364835,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.7,
+        "sourceStart": 77.8,
+        "dryRmsDbfs": -19.885998047098965,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.71,
+        "sourceStart": 77.81,
+        "dryRmsDbfs": -20.742048008568446,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.72,
+        "sourceStart": 77.82,
+        "dryRmsDbfs": -19.940365041684306,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.73,
+        "sourceStart": 77.83,
+        "dryRmsDbfs": -21.283288009896374,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.74,
+        "sourceStart": 77.83999999999999,
+        "dryRmsDbfs": -19.518584628164277,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.75,
+        "sourceStart": 77.85,
+        "dryRmsDbfs": -20.867944166020322,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.76,
+        "sourceStart": 77.86,
+        "dryRmsDbfs": -19.892367103400396,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.77,
+        "sourceStart": 77.86999999999999,
+        "dryRmsDbfs": -20.638919835155257,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.78,
+        "sourceStart": 77.88,
+        "dryRmsDbfs": -20.864708654872324,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.79,
+        "sourceStart": 77.88999999999999,
+        "dryRmsDbfs": -19.806366043271108,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.8,
+        "sourceStart": 77.89999999999999,
+        "dryRmsDbfs": -20.63716723570687,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.81,
+        "sourceStart": 77.91,
+        "dryRmsDbfs": -19.7782915938707,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.82,
+        "sourceStart": 77.91999999999999,
+        "dryRmsDbfs": -20.9693723741589,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.83,
+        "sourceStart": 77.92999999999999,
+        "dryRmsDbfs": -19.949317331091354,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.84,
+        "sourceStart": 77.94,
+        "dryRmsDbfs": -19.663471946366872,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.85,
+        "sourceStart": 77.94999999999999,
+        "dryRmsDbfs": -20.072537855045447,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.86,
+        "sourceStart": 77.96,
+        "dryRmsDbfs": -18.823812984764974,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.87,
+        "sourceStart": 77.97,
+        "dryRmsDbfs": -19.745341501648632,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.88,
+        "sourceStart": 77.97999999999999,
+        "dryRmsDbfs": -19.275537369496156,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.89,
+        "sourceStart": 77.99,
+        "dryRmsDbfs": -19.441538241139252,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.9,
+        "sourceStart": 78,
+        "dryRmsDbfs": -19.830115295412043,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.91,
+        "sourceStart": 78.00999999999999,
+        "dryRmsDbfs": -19.28292207563158,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.92,
+        "sourceStart": 78.02,
+        "dryRmsDbfs": -20.041753485676313,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.93,
+        "sourceStart": 78.03,
+        "dryRmsDbfs": -18.804359764508963,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.94,
+        "sourceStart": 78.03999999999999,
+        "dryRmsDbfs": -19.45335350901884,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.95,
+        "sourceStart": 78.05,
+        "dryRmsDbfs": -19.131885630569315,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.96,
+        "sourceStart": 78.06,
+        "dryRmsDbfs": -19.415356236866675,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.97,
+        "sourceStart": 78.07,
+        "dryRmsDbfs": -19.596066430196576,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.98,
+        "sourceStart": 78.08,
+        "dryRmsDbfs": -19.59650268940025,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 12.99,
+        "sourceStart": 78.08999999999999,
+        "dryRmsDbfs": -19.887244634756915,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13,
+        "sourceStart": 78.1,
+        "dryRmsDbfs": -19.3657224698183,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.01,
+        "sourceStart": 78.11,
+        "dryRmsDbfs": -20.29941730550251,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.02,
+        "sourceStart": 78.11999999999999,
+        "dryRmsDbfs": -19.002221744023334,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.03,
+        "sourceStart": 78.13,
+        "dryRmsDbfs": -20.132551423609193,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.04,
+        "sourceStart": 78.13999999999999,
+        "dryRmsDbfs": -19.1680123388607,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.05,
+        "sourceStart": 78.14999999999999,
+        "dryRmsDbfs": -20.105563585921512,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.06,
+        "sourceStart": 78.16,
+        "dryRmsDbfs": -19.384085997428933,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.07,
+        "sourceStart": 78.16999999999999,
+        "dryRmsDbfs": -19.871310185377137,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.08,
+        "sourceStart": 78.17999999999999,
+        "dryRmsDbfs": -19.483565261089637,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.09,
+        "sourceStart": 78.19,
+        "dryRmsDbfs": -19.75354484770236,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.1,
+        "sourceStart": 78.19999999999999,
+        "dryRmsDbfs": -19.566760063305757,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.11,
+        "sourceStart": 78.21,
+        "dryRmsDbfs": -19.733561765044392,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.12,
+        "sourceStart": 78.22,
+        "dryRmsDbfs": -19.67161140471053,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.13,
+        "sourceStart": 78.22999999999999,
+        "dryRmsDbfs": -20.215022262857847,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.14,
+        "sourceStart": 78.24,
+        "dryRmsDbfs": -20.51861952234548,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.15,
+        "sourceStart": 78.25,
+        "dryRmsDbfs": -20.493200026361336,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.16,
+        "sourceStart": 78.25999999999999,
+        "dryRmsDbfs": -21.53733229364919,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.17,
+        "sourceStart": 78.27,
+        "dryRmsDbfs": -20.84289639113701,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.18,
+        "sourceStart": 78.28,
+        "dryRmsDbfs": -22.093329629229608,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.19,
+        "sourceStart": 78.28999999999999,
+        "dryRmsDbfs": -22.354173994101597,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.2,
+        "sourceStart": 78.3,
+        "dryRmsDbfs": -26.25876655417885,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.21,
+        "sourceStart": 78.31,
+        "dryRmsDbfs": -21.094495468075177,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.22,
+        "sourceStart": 78.32,
+        "dryRmsDbfs": -21.905924781350585,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.23,
+        "sourceStart": 78.33,
+        "dryRmsDbfs": -22.294119192108827,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.24,
+        "sourceStart": 78.33999999999999,
+        "dryRmsDbfs": -20.466351072410575,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.25,
+        "sourceStart": 78.35,
+        "dryRmsDbfs": -21.755044401286206,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.26,
+        "sourceStart": 78.36,
+        "dryRmsDbfs": -21.85467327754983,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.27,
+        "sourceStart": 78.36999999999999,
+        "dryRmsDbfs": -20.055419395218777,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.28,
+        "sourceStart": 78.38,
+        "dryRmsDbfs": -22.30899154862516,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.29,
+        "sourceStart": 78.38999999999999,
+        "dryRmsDbfs": -21.50858501543128,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.3,
+        "sourceStart": 78.39999999999999,
+        "dryRmsDbfs": -19.998912434541612,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.31,
+        "sourceStart": 78.41,
+        "dryRmsDbfs": -20.677325560519773,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.32,
+        "sourceStart": 78.41999999999999,
+        "dryRmsDbfs": -19.235233705871877,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.33,
+        "sourceStart": 78.42999999999999,
+        "dryRmsDbfs": -19.09590186828684,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.34,
+        "sourceStart": 78.44,
+        "dryRmsDbfs": -20.78261607773907,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.35,
+        "sourceStart": 78.44999999999999,
+        "dryRmsDbfs": -20.77189945554755,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.36,
+        "sourceStart": 78.46,
+        "dryRmsDbfs": -19.649616649618725,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.37,
+        "sourceStart": 78.47,
+        "dryRmsDbfs": -21.73649605655129,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.38,
+        "sourceStart": 78.47999999999999,
+        "dryRmsDbfs": -21.966806532859067,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.39,
+        "sourceStart": 78.49,
+        "dryRmsDbfs": -20.58166952993009,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.4,
+        "sourceStart": 78.5,
+        "dryRmsDbfs": -22.469944579510805,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.41,
+        "sourceStart": 78.50999999999999,
+        "dryRmsDbfs": -22.72542780888221,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.42,
+        "sourceStart": 78.52,
+        "dryRmsDbfs": -20.44837574368294,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.43,
+        "sourceStart": 78.53,
+        "dryRmsDbfs": -22.009905132390884,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.44,
+        "sourceStart": 78.53999999999999,
+        "dryRmsDbfs": -22.338337397293756,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.45,
+        "sourceStart": 78.55,
+        "dryRmsDbfs": -20.384845236691376,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.46,
+        "sourceStart": 78.56,
+        "dryRmsDbfs": -21.429414345546714,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.47,
+        "sourceStart": 78.57,
+        "dryRmsDbfs": -21.789927810385905,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.48,
+        "sourceStart": 78.58,
+        "dryRmsDbfs": -19.9552076299509,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.49,
+        "sourceStart": 78.58999999999999,
+        "dryRmsDbfs": -20.72619428000675,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.5,
+        "sourceStart": 78.6,
+        "dryRmsDbfs": -21.759720381391162,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.51,
+        "sourceStart": 78.61,
+        "dryRmsDbfs": -20.034248720739857,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.52,
+        "sourceStart": 78.61999999999999,
+        "dryRmsDbfs": -21.976899783352792,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.53,
+        "sourceStart": 78.63,
+        "dryRmsDbfs": -23.107056680099202,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.54,
+        "sourceStart": 78.63999999999999,
+        "dryRmsDbfs": -22.701871496676244,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.55,
+        "sourceStart": 78.64999999999999,
+        "dryRmsDbfs": -28.226361027288064,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.56,
+        "sourceStart": 78.66,
+        "dryRmsDbfs": -31.00452264990336,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.57,
+        "sourceStart": 78.66999999999999,
+        "dryRmsDbfs": -31.408282834171946,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.58,
+        "sourceStart": 78.67999999999999,
+        "dryRmsDbfs": -35.55650934636102,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.59,
+        "sourceStart": 78.69,
+        "dryRmsDbfs": -40.5170022379036,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.6,
+        "sourceStart": 78.69999999999999,
+        "dryRmsDbfs": -45.792498456138766,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.61,
+        "sourceStart": 78.71,
+        "dryRmsDbfs": -51.644638852340876,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.62,
+        "sourceStart": 78.72,
+        "dryRmsDbfs": -49.3075740712927,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.63,
+        "sourceStart": 78.72999999999999,
+        "dryRmsDbfs": -43.32678084700548,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.64,
+        "sourceStart": 78.74,
+        "dryRmsDbfs": -40.76409966243758,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.65,
+        "sourceStart": 78.75,
+        "dryRmsDbfs": -27.39217517408738,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.66,
+        "sourceStart": 78.75999999999999,
+        "dryRmsDbfs": -23.515936985615777,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.67,
+        "sourceStart": 78.77,
+        "dryRmsDbfs": -19.71714321123272,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.68,
+        "sourceStart": 78.78,
+        "dryRmsDbfs": -19.30315646214379,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.69,
+        "sourceStart": 78.78999999999999,
+        "dryRmsDbfs": -20.09437142258679,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.7,
+        "sourceStart": 78.8,
+        "dryRmsDbfs": -19.709027229128324,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.71,
+        "sourceStart": 78.81,
+        "dryRmsDbfs": -20.437751274326228,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.72,
+        "sourceStart": 78.82,
+        "dryRmsDbfs": -20.515984827709516,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.73,
+        "sourceStart": 78.83,
+        "dryRmsDbfs": -19.614574854031087,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.74,
+        "sourceStart": 78.83999999999999,
+        "dryRmsDbfs": -20.023272886059846,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.75,
+        "sourceStart": 78.85,
+        "dryRmsDbfs": -20.12694761118434,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.76,
+        "sourceStart": 78.86,
+        "dryRmsDbfs": -19.93393063633475,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.77,
+        "sourceStart": 78.86999999999999,
+        "dryRmsDbfs": -20.234212980759825,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.78,
+        "sourceStart": 78.88,
+        "dryRmsDbfs": -22.528923910626265,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.79,
+        "sourceStart": 78.88999999999999,
+        "dryRmsDbfs": -28.587591173405702,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.8,
+        "sourceStart": 78.89999999999999,
+        "dryRmsDbfs": -24.881600488592355,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.81,
+        "sourceStart": 78.91,
+        "dryRmsDbfs": -22.450556894730312,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.82,
+        "sourceStart": 78.91999999999999,
+        "dryRmsDbfs": -21.97290355793629,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.83,
+        "sourceStart": 78.92999999999999,
+        "dryRmsDbfs": -19.840173813939078,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.84,
+        "sourceStart": 78.94,
+        "dryRmsDbfs": -21.118805892291896,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.85,
+        "sourceStart": 78.94999999999999,
+        "dryRmsDbfs": -21.04739253422666,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.86,
+        "sourceStart": 78.96,
+        "dryRmsDbfs": -19.274698937869832,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.87,
+        "sourceStart": 78.97,
+        "dryRmsDbfs": -19.761116207820425,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.88,
+        "sourceStart": 78.97999999999999,
+        "dryRmsDbfs": -20.357613748051246,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.89,
+        "sourceStart": 78.99,
+        "dryRmsDbfs": -19.769441775225022,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.9,
+        "sourceStart": 79,
+        "dryRmsDbfs": -19.97323523645427,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.91,
+        "sourceStart": 79.00999999999999,
+        "dryRmsDbfs": -21.027379114506207,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.92,
+        "sourceStart": 79.02,
+        "dryRmsDbfs": -20.81490280982276,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.93,
+        "sourceStart": 79.03,
+        "dryRmsDbfs": -20.108656886170635,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.94,
+        "sourceStart": 79.03999999999999,
+        "dryRmsDbfs": -22.379233625949823,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.95,
+        "sourceStart": 79.05,
+        "dryRmsDbfs": -22.523916103673113,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.96,
+        "sourceStart": 79.06,
+        "dryRmsDbfs": -21.801357321219342,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.97,
+        "sourceStart": 79.07,
+        "dryRmsDbfs": -22.05850486417413,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.98,
+        "sourceStart": 79.08,
+        "dryRmsDbfs": -22.015276444561337,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 13.99,
+        "sourceStart": 79.08999999999999,
+        "dryRmsDbfs": -21.57407547390685,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14,
+        "sourceStart": 79.1,
+        "dryRmsDbfs": -21.506458735613943,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.01,
+        "sourceStart": 79.11,
+        "dryRmsDbfs": -20.154515980003055,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.02,
+        "sourceStart": 79.11999999999999,
+        "dryRmsDbfs": -19.7728931377452,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.03,
+        "sourceStart": 79.13,
+        "dryRmsDbfs": -20.1127439807267,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.04,
+        "sourceStart": 79.13999999999999,
+        "dryRmsDbfs": -19.44175055412482,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.05,
+        "sourceStart": 79.14999999999999,
+        "dryRmsDbfs": -19.27313219087441,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.06,
+        "sourceStart": 79.16,
+        "dryRmsDbfs": -19.409000623194462,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.07,
+        "sourceStart": 79.16999999999999,
+        "dryRmsDbfs": -19.54768533401432,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.08,
+        "sourceStart": 79.17999999999999,
+        "dryRmsDbfs": -19.700646350558586,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.09,
+        "sourceStart": 79.19,
+        "dryRmsDbfs": -20.27756792835713,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.1,
+        "sourceStart": 79.19999999999999,
+        "dryRmsDbfs": -20.111881791494906,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.11,
+        "sourceStart": 79.21,
+        "dryRmsDbfs": -19.90313465762429,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.12,
+        "sourceStart": 79.22,
+        "dryRmsDbfs": -20.62925903605712,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.13,
+        "sourceStart": 79.22999999999999,
+        "dryRmsDbfs": -20.59562788540633,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.14,
+        "sourceStart": 79.24,
+        "dryRmsDbfs": -20.94814572071231,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.15,
+        "sourceStart": 79.25,
+        "dryRmsDbfs": -21.229753773225678,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.16,
+        "sourceStart": 79.25999999999999,
+        "dryRmsDbfs": -21.314457619758734,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.17,
+        "sourceStart": 79.27,
+        "dryRmsDbfs": -21.459534042106956,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.18,
+        "sourceStart": 79.28,
+        "dryRmsDbfs": -21.653096417848204,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.19,
+        "sourceStart": 79.28999999999999,
+        "dryRmsDbfs": -21.505536337432524,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.2,
+        "sourceStart": 79.3,
+        "dryRmsDbfs": -22.039218601562855,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.21,
+        "sourceStart": 79.31,
+        "dryRmsDbfs": -21.861707654687326,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.22,
+        "sourceStart": 79.32,
+        "dryRmsDbfs": -21.7064665484909,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.23,
+        "sourceStart": 79.33,
+        "dryRmsDbfs": -21.72055373886039,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.24,
+        "sourceStart": 79.33999999999999,
+        "dryRmsDbfs": -22.353183251751126,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.25,
+        "sourceStart": 79.35,
+        "dryRmsDbfs": -23.188215624657758,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.26,
+        "sourceStart": 79.36,
+        "dryRmsDbfs": -22.62370900312427,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.27,
+        "sourceStart": 79.36999999999999,
+        "dryRmsDbfs": -22.43744940487719,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.28,
+        "sourceStart": 79.38,
+        "dryRmsDbfs": -22.828571398430462,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.29,
+        "sourceStart": 79.38999999999999,
+        "dryRmsDbfs": -22.790301724925786,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.3,
+        "sourceStart": 79.39999999999999,
+        "dryRmsDbfs": -23.347641669483483,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.31,
+        "sourceStart": 79.41,
+        "dryRmsDbfs": -22.81113949351213,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.32,
+        "sourceStart": 79.41999999999999,
+        "dryRmsDbfs": -23.052562335511773,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.33,
+        "sourceStart": 79.42999999999999,
+        "dryRmsDbfs": -22.511163272534024,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.34,
+        "sourceStart": 79.44,
+        "dryRmsDbfs": -22.5201493407896,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.35,
+        "sourceStart": 79.44999999999999,
+        "dryRmsDbfs": -22.087792983627438,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.36,
+        "sourceStart": 79.46,
+        "dryRmsDbfs": -21.970176966646946,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.37,
+        "sourceStart": 79.47,
+        "dryRmsDbfs": -22.150435995295524,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.38,
+        "sourceStart": 79.47999999999999,
+        "dryRmsDbfs": -22.608175345298495,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.39,
+        "sourceStart": 79.49,
+        "dryRmsDbfs": -22.81842887330855,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.4,
+        "sourceStart": 79.5,
+        "dryRmsDbfs": -23.191201010886733,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.41,
+        "sourceStart": 79.50999999999999,
+        "dryRmsDbfs": -24.762861550947235,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.42,
+        "sourceStart": 79.52,
+        "dryRmsDbfs": -25.829617890422092,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.43,
+        "sourceStart": 79.53,
+        "dryRmsDbfs": -24.75337263213255,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.44,
+        "sourceStart": 79.53999999999999,
+        "dryRmsDbfs": -24.088022413322797,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.45,
+        "sourceStart": 79.55,
+        "dryRmsDbfs": -24.110159945901618,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.46,
+        "sourceStart": 79.56,
+        "dryRmsDbfs": -24.251171775925698,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.47,
+        "sourceStart": 79.57,
+        "dryRmsDbfs": -24.34263613155001,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.48,
+        "sourceStart": 79.58,
+        "dryRmsDbfs": -24.41344273770946,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.49,
+        "sourceStart": 79.58999999999999,
+        "dryRmsDbfs": -24.16686453803985,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.5,
+        "sourceStart": 79.6,
+        "dryRmsDbfs": -23.761132116970067,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.51,
+        "sourceStart": 79.61,
+        "dryRmsDbfs": -23.173893138575803,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.52,
+        "sourceStart": 79.61999999999999,
+        "dryRmsDbfs": -22.763696910993694,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.53,
+        "sourceStart": 79.63,
+        "dryRmsDbfs": -22.21746143554389,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.54,
+        "sourceStart": 79.63999999999999,
+        "dryRmsDbfs": -22.06981696138795,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.55,
+        "sourceStart": 79.64999999999999,
+        "dryRmsDbfs": -22.297677794197313,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.56,
+        "sourceStart": 79.66,
+        "dryRmsDbfs": -21.95992184299201,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.57,
+        "sourceStart": 79.66999999999999,
+        "dryRmsDbfs": -21.65530904974094,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.58,
+        "sourceStart": 79.67999999999999,
+        "dryRmsDbfs": -22.07778386740154,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.59,
+        "sourceStart": 79.69,
+        "dryRmsDbfs": -21.130645045722467,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.6,
+        "sourceStart": 79.69999999999999,
+        "dryRmsDbfs": -25.274293699028952,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.61,
+        "sourceStart": 79.71,
+        "dryRmsDbfs": -30.385133319587023,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.62,
+        "sourceStart": 79.72,
+        "dryRmsDbfs": -36.116882449782985,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.63,
+        "sourceStart": 79.72999999999999,
+        "dryRmsDbfs": -47.76502552641869,
+        "masterEnvelopeAtStart": 1
+      },
+      {
+        "globalStart": 14.64,
+        "sourceStart": 79.74,
+        "dryRmsDbfs": -51.47573096802762,
+        "masterEnvelopeAtStart": 0.6666666666666075
+      },
+      {
+        "globalStart": 14.65,
+        "sourceStart": 79.75,
+        "dryRmsDbfs": -55.08678911591346,
+        "masterEnvelopeAtStart": 0.16666666666660745
+      }
+    ],
+    "tailSelection": "Dry stem10ms RMS:79.69=-21dB,79.70=-25dB,79.72=-36dB,79.73=-48dB,79.74/75=-51/-55dB. Fade only after source79.733 in quiet valley; master ends79.753 before next-word onset79.76. Existing wet fades out by79.80, before strong next-word plate onset near79.91. No new reverb."
   },
-  "normalization": {
-    "input_i": "-15.82",
-    "input_tp": "-1.99",
-    "input_lra": "2.90",
-    "input_thresh": "-25.82",
-    "output_i": "-14.02",
+  "targetIntegratedLufs": -14,
+  "acceptedIntegratedLufsRange": [
+    -17,
+    -13
+  ],
+  "levelTradeoff": "Owner prioritized intact vocal/natural balance over exact-14LUFS; lower loudness avoids new dynamic compression.",
+  "maximumTruePeakDbtp": -2.2,
+  "firstPass": {
+    "input_i": "-15.93",
+    "input_tp": "-1.92",
+    "input_lra": "4.60",
+    "input_thresh": "-25.99",
+    "output_i": "-13.49",
     "output_tp": "-2.20",
-    "output_lra": "1.50",
-    "output_thresh": "-24.02",
+    "output_lra": "2.50",
+    "output_thresh": "-23.54",
     "normalization_type": "dynamic",
-    "target_offset": "0.02"
+    "target_offset": "-0.51"
   },
   "measured": {
-    "input_i": "-14.23",
-    "input_tp": "-2.20",
-    "input_lra": "2.70",
-    "input_thresh": "-24.23",
-    "output_i": "-14.15",
+    "input_i": "-16.25",
+    "input_tp": "-2.25",
+    "input_lra": "4.60",
+    "input_thresh": "-26.31",
+    "output_i": "-13.50",
     "output_tp": "-2.20",
-    "output_lra": "1.40",
-    "output_thresh": "-24.15",
+    "output_lra": "2.50",
+    "output_thresh": "-23.55",
     "normalization_type": "dynamic",
-    "target_offset": "0.15"
+    "target_offset": "-0.50"
   },
   "probe": {
     "programs": [],
@@ -476,27 +2292,15 @@
   "silenceDetection": {
     "thresholdDbfs": -50,
     "minimumDuration": 0.04,
-    "events": [
-      {
-        "start": 11.098583,
-        "end": 11.207917
-      }
-    ],
+    "events": [],
     "unexpected": []
   },
+  "checkpoint": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/checkpoints/fade-fix-01-run-2026-10-24T10-40-57-902Z",
+  "originalPreFixCheckpoint": "checkpoints/fade-fix-01-2026-10-24T10-33-01-116Z",
   "verificationScope": {
-    "exactSampleDuration": true,
+    "fullWaveDecodedDuringMeasurement": true,
     "sourceHashesBeforeAfter": true,
-    "pcmNormalizationAndPeakMeasured": true,
-    "fullWaveDecodedDuringMeasurements": true,
-    "finalAacMeasured": false,
     "directHumanListening": false,
-    "sourceMovieAudition": false
-  },
-  "pictureSync": "global11.2 maps to full MV76.3/frame2289. Global14.633333 maps to full MV79.733333/frame2392. Do not start the old Highlight at0: that is Verse2.",
-  "writtenArtifacts": [
-    "source/audio-v2.mjs",
-    "media/01-pui-promo-v2-mix.wav",
-    "qa/audio-v2-01.json"
-  ]
+    "finalAacMeasured": false
+  }
 }

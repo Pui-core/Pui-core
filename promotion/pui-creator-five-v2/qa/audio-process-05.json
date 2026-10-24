@@ -1,24 +1,22 @@
 {
-  "status": "PASS_NUMERICAL_ASSEMBLY",
+  "status": "PASS_NUMERICAL_VOCAL_EDGE_FIX",
   "output": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/media/05-medicate-chorus-v2-mix.wav",
-  "sha256": "50867c5d624767527eabef81f6f1657fa9b0456e898cfa3c5fe18e4e0663552e",
-  "fps": 30,
-  "videoFrames": 412,
+  "sha256": "04606f6f9f320ad892f829da04105286d520522337d292c6a85f7d53079b5d1a",
   "durationSeconds": 13.733333333333333,
-  "sampleRate": 48000,
+  "videoFrames": 412,
   "totalSamples": 659200,
+  "sampleRate": 48000,
   "format": {
     "codec": "pcm_s24le",
     "bits": 24,
     "channels": 2,
-    "sampleRate": "48000",
     "duration": "13.733333"
   },
   "audio": {
-    "integratedLufs": -13.8,
-    "truePeakDbtp": -2.2,
-    "commonStaticGainDb": -0.9000000000000004,
-    "rawInputIntegratedLufs": -13.1,
+    "integratedLufs": -14,
+    "truePeakDbtp": -2.3,
+    "commonStaticGainDb": -1,
+    "rawInputIntegratedLufs": -13.09,
     "rawInputTruePeak": -1.35
   },
   "sources": {
@@ -45,6 +43,24 @@
       "sha256Before": "49ed6edafa6d4d185038db676e2543b8817853ea48054a3398fc830041dd3174",
       "sha256After": "49ed6edafa6d4d185038db676e2543b8817853ea48054a3398fc830041dd3174",
       "unchanged": true
+    },
+    "dry": {
+      "path": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/Stems/VOCAL_ALL_DRY.wav",
+      "sha256Before": "0aee02c7ddbbc88786b058c68616fd9b47c4ec4bac0c7b5744619dbc01c6b1aa",
+      "sha256After": "0aee02c7ddbbc88786b058c68616fd9b47c4ec4bac0c7b5744619dbc01c6b1aa",
+      "unchanged": true
+    },
+    "manifest": {
+      "path": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/delivery-manifest-v6.json",
+      "sha256Before": "eefa33c6a407253c5be51256c4c8337246b351d0ace8b12583de8eab49f5a80d",
+      "sha256After": "eefa33c6a407253c5be51256c4c8337246b351d0ace8b12583de8eab49f5a80d",
+      "unchanged": true
+    },
+    "lyrics": {
+      "path": "/mnt/e/Desktop/音源/medicate/MV_v3_ArtistLyrics/Source/lyrics-timed.json",
+      "sha256Before": "85bd7ac9507ce5696647a54aeba38c3c230f009a8f36217ed1500bb6c9e13c4c",
+      "sha256After": "85bd7ac9507ce5696647a54aeba38c3c230f009a8f36217ed1500bb6c9e13c4c",
+      "unchanged": true
     }
   },
   "allSourcesUnchanged": true,
@@ -56,10 +72,6 @@
       "startSeconds": 1.2,
       "endSeconds": 4.6,
       "relativeGainDb": -0.33
-    },
-    "gap": {
-      "startSeconds": 4.6,
-      "endSeconds": 5.3
     },
     "B": {
       "source": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/medicate_MIX_v6_Natural.wav",
@@ -76,189 +88,151 @@
       "startSeconds": 10.3,
       "endSeconds": 13.733333333333333
     },
-    "contextBeds": [
+    "fairness": [
       {
-        "source": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/Audio/z5824Notag (1).wav",
-        "sourceAt": 20.5,
-        "sourceEnd": 21.7,
-        "startSeconds": 0,
-        "endSeconds": 1.2,
-        "gainDb": -18
+        "label": "A",
+        "source": [
+          21.7,
+          25.1
+        ],
+        "timeline": [
+          1.2,
+          4.6
+        ],
+        "expectedGainDb": -1.33,
+        "measuredGainDb": -1.3300000052681211,
+        "normalizedResidualDb": -134.32499064790548,
+        "noFadeInsideCore": true
       },
       {
-        "source": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/Audio/z5824Notag (1).wav",
-        "sourceAt": 25.1,
-        "sourceEnd": 26.7,
-        "startSeconds": 8.7,
-        "endSeconds": 10.3,
-        "gainDb": -18
+        "label": "B",
+        "source": [
+          21.7,
+          25.1
+        ],
+        "timeline": [
+          5.3,
+          8.7
+        ],
+        "expectedGainDb": -1,
+        "measuredGainDb": -1.000000001017518,
+        "normalizedResidualDb": -133.3409131477616,
+        "noFadeInsideCore": true
       }
-    ],
-    "policy": "One common static gain for the entire mix. A/B relative gain is preserved. No independent excerpt normalization, compression, pitch correction, time stretch or mastering added. Quiet source-beat beds only during process context; none during A/B or finished-MV listening."
+    ]
   },
-  "fades": {
-    "AandB": {
-      "inSeconds": 0.1,
-      "outSeconds": 0.15
+  "placements": [
+    {
+      "label": "A-v5",
+      "sourceAt": 21.3,
+      "sourceEnd": 25.2,
+      "start": 0.8,
+      "end": 4.7,
+      "fadeInSource": [
+        21.3,
+        21.4
+      ],
+      "fadeOutSource": [
+        25.19,
+        25.2
+      ],
+      "coreSource": [
+        21.7,
+        25.1
+      ],
+      "coreGain": 0.9627200129733199
     },
-    "mv": {
-      "inSeconds": 0.1,
-      "outSeconds": 0.2
+    {
+      "label": "B-v6",
+      "sourceAt": 21.3,
+      "sourceEnd": 25.2,
+      "start": 4.9,
+      "end": 8.8,
+      "fadeInSource": [
+        21.3,
+        21.4
+      ],
+      "fadeOutSource": [
+        25.19,
+        25.2
+      ],
+      "coreSource": [
+        21.7,
+        25.1
+      ],
+      "coreGain": 1
     },
-    "context": "Short fade in/out on original song instrumental only.",
-    "programOpeningInSeconds": 0.1
+    {
+      "label": "same-song-instrumental-context",
+      "start": 0,
+      "end": 0.9,
+      "sourceAt": 20.5,
+      "sourceEnd": 21.4,
+      "gainDb": -18,
+      "fadeIn": 0.08,
+      "fadeOut": 0.1
+    },
+    {
+      "label": "same-song-instrumental-context",
+      "start": 4.6,
+      "end": 5,
+      "sourceAt": 25.1,
+      "sourceEnd": 25.5,
+      "gainDb": -22,
+      "fadeIn": 0.08,
+      "fadeOut": 0.1
+    },
+    {
+      "label": "same-song-instrumental-context",
+      "start": 8.7,
+      "end": 10.29,
+      "sourceAt": 74.7,
+      "sourceEnd": 76.29,
+      "gainDb": -18,
+      "fadeIn": 0.12,
+      "fadeOut": 0.03
+    },
+    {
+      "label": "finished-MV",
+      "start": 10.26,
+      "end": 13.733333333333333,
+      "sourceAt": 76.26,
+      "sourceEnd": 79.73333333333333,
+      "fadeInSource": [
+        76.26,
+        76.29
+      ],
+      "vocalUnitySource": [
+        76.29,
+        79.73333333333333
+      ],
+      "residualOnlyFadeOutSource": [
+        79.57333333333334,
+        79.73333333333333
+      ],
+      "protectedDryGainDb": 2.4400000000000013
+    }
+  ],
+  "silence": {
+    "thresholdDbfs": -65,
+    "windowMs": 10,
+    "longestInternalNearSilenceMs": 0,
+    "minRmsDbfs": -55.346111825551034
   },
   "checks": {
-    "expectedDuration": true,
-    "expectedSamples": true,
-    "expectedCodec": true,
-    "integratedWithinHalfLu": true,
-    "truePeakAtMostMinus1_5": true,
+    "samples": true,
+    "format": true,
+    "duration": true,
+    "integratedNearMinus14": true,
+    "truePeakAtMostMinus2_2": true,
+    "abSameCoreEnvelope": true,
+    "noInternal100msSilence": true,
     "sourceHashesUnchanged": true
   },
   "directAudition": "NOT_PERFORMED_BY_THIS_AGENT",
   "limits": [
-    "PCM assembly and numerical/metadata checks do not substitute for direct audition.",
-    "V5 and V6 differ in reverb and approved mastering dynamics; the A/B is an actual revision comparison, not an isolated reverb-only test.",
-    "Context beds use the original medicate project beat; no separate beat composer attribution is made."
-  ],
-  "chorusFadeComparison": {
-    "previousMix": {
-      "sha256": "40fba5d01af9d64275adc96092cbf362ca33e21a6fdb9fa30a56f865aa143ed6",
-      "edgeWindows": [
-        {
-          "name": "chorus-entry-first-100ms",
-          "start": 10.3,
-          "duration": 0.1,
-          "rmsDbfs": -14.145963591894848,
-          "peakDbfs": -2.4176669532206354,
-          "maximumAdjacentSampleStep": 0.19549977779388428,
-          "maximumAdjacentSampleStepDbfs": -14.177074637786301
-        },
-        {
-          "name": "chorus-ending-last-200ms",
-          "start": 13.533333333333333,
-          "duration": 0.2,
-          "rmsDbfs": -13.922678788252833,
-          "peakDbfs": -4.019732884206089,
-          "maximumAdjacentSampleStep": 0.16285419464111328,
-          "maximumAdjacentSampleStepDbfs": -15.76402101634164
-        }
-      ]
-    },
-    "finalEdgeWindows": [
-      {
-        "name": "chorus-entry-first-100ms",
-        "start": 10.3,
-        "duration": 0.1,
-        "rmsDbfs": -15.972925562660851,
-        "peakDbfs": -3.5739379620659366,
-        "maximumAdjacentSampleStep": 0.1304490566253662,
-        "maximumAdjacentSampleStepDbfs": -17.6911811452084
-      },
-      {
-        "name": "chorus-ending-last-200ms",
-        "start": 13.533333333333333,
-        "duration": 0.2,
-        "rmsDbfs": -18.105063019892274,
-        "peakDbfs": -7.293033100568075,
-        "maximumAdjacentSampleStep": 0.10544157028198242,
-        "maximumAdjacentSampleStepDbfs": -19.539762699970595
-      }
-    ],
-    "method": "Direct 24bit PCM adjacent-sample differences and RMS; not direct audition.",
-    "changes": [
-      {
-        "name": "chorus-entry-first-100ms",
-        "rmsChangeDb": -1.8269619707660034,
-        "maxStepChangeDb": -3.514106507422099
-      },
-      {
-        "name": "chorus-ending-last-200ms",
-        "rmsChangeDb": -4.182384231639441,
-        "maxStepChangeDb": -3.7757416836289543
-      }
-    ]
-  },
-  "edgeComparison": {
-    "previousMix": {
-      "sha256": "2d8589d6eb83309a6757cf863ff1b900900883e24a51a5f128cded868976c5c6",
-      "edgeWindows": [
-        {
-          "name": "program-opening-first-100ms",
-          "start": 0,
-          "duration": 0.1,
-          "rmsDbfs": -37.756670073969175,
-          "peakDbfs": -25.202549626471548,
-          "maximumAdjacentSampleStep": 0.0032966136932373047,
-          "maximumAdjacentSampleStepDbfs": -49.63863883526807
-        },
-        {
-          "name": "chorus-entry-first-100ms",
-          "start": 10.3,
-          "duration": 0.1,
-          "rmsDbfs": -15.972925562660851,
-          "peakDbfs": -3.5739379620659366,
-          "maximumAdjacentSampleStep": 0.1304490566253662,
-          "maximumAdjacentSampleStepDbfs": -17.6911811452084
-        },
-        {
-          "name": "chorus-ending-last-200ms",
-          "start": 13.533333333333333,
-          "duration": 0.2,
-          "rmsDbfs": -18.105063019892274,
-          "peakDbfs": -7.293033100568075,
-          "maximumAdjacentSampleStep": 0.10544157028198242,
-          "maximumAdjacentSampleStepDbfs": -19.539762699970595
-        }
-      ]
-    },
-    "finalEdgeWindows": [
-      {
-        "name": "program-opening-first-100ms",
-        "start": 0,
-        "duration": 0.1,
-        "rmsDbfs": -37.73666982310903,
-        "peakDbfs": -25.182537890556134,
-        "maximumAdjacentSampleStep": 0.003304123878479004,
-        "maximumAdjacentSampleStepDbfs": -49.618873568853246
-      },
-      {
-        "name": "chorus-entry-first-100ms",
-        "start": 10.3,
-        "duration": 0.1,
-        "rmsDbfs": -15.952925234042553,
-        "peakDbfs": -3.5539375101826485,
-        "maximumAdjacentSampleStep": 0.13074982166290283,
-        "maximumAdjacentSampleStepDbfs": -17.671177896383178
-      },
-      {
-        "name": "chorus-ending-last-200ms",
-        "start": 13.533333333333333,
-        "duration": 0.2,
-        "rmsDbfs": -18.08506275527604,
-        "peakDbfs": -7.273033815660619,
-        "maximumAdjacentSampleStep": 0.10568463802337646,
-        "maximumAdjacentSampleStepDbfs": -19.519762714880404
-      }
-    ],
-    "method": "Direct 24bit PCM adjacent-sample differences and RMS; not direct audition.",
-    "changes": [
-      {
-        "name": "program-opening-first-100ms",
-        "rmsChangeDb": 0.0200002508601429,
-        "maxStepChangeDb": 0.019765266414822236
-      },
-      {
-        "name": "chorus-entry-first-100ms",
-        "rmsChangeDb": 0.02000032861829837,
-        "maxStepChangeDb": 0.02000324882522264
-      },
-      {
-        "name": "chorus-ending-last-200ms",
-        "rmsChangeDb": 0.0200002646162325,
-        "maxStepChangeDb": 0.019999985090191075
-      }
-    ]
-  }
+    "Numerical PCM checks are not direct audition.",
+    "A/B remains the actual V5/V6 master revision comparison, with the prior -0.33dB relative trim and one final static gain.",
+    "MV residual tail contains accompaniment/wet plus mastering and AAC residuals; it is not represented as an independently exported pure instrumental stem."
+  ]
 }
