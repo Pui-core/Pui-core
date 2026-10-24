@@ -1,0 +1,139 @@
+{
+  "status": "TECHNICAL_PASS",
+  "version": "V2",
+  "comp": "Pui V2 05",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 412,
+  "duration": 13.738,
+  "expectedDuration": 13.733333333333333,
+  "fullDecode": true,
+  "audio": {
+    "integratedLufs": -13.8,
+    "truePeakDbfs": -2.1
+  },
+  "missingNativeAssets": 0,
+  "allSceneFrames": [
+    11,
+    46,
+    148,
+    169,
+    271,
+    320
+  ],
+  "continuousCuts": [
+    {
+      "time": 1.2,
+      "shot": 1,
+      "transition": "cut",
+      "index": 1,
+      "startFrame": 33,
+      "frames": 18,
+      "file": "continuous-cut-01.jpg",
+      "start": 1.1
+    },
+    {
+      "time": 4.6,
+      "shot": 2,
+      "transition": "cut",
+      "index": 2,
+      "startFrame": 135,
+      "frames": 18,
+      "file": "continuous-cut-02.jpg",
+      "start": 4.5
+    },
+    {
+      "time": 8.7,
+      "shot": 4,
+      "transition": "cut",
+      "index": 3,
+      "startFrame": 258,
+      "frames": 18,
+      "file": "continuous-cut-03.jpg",
+      "start": 8.6
+    },
+    {
+      "time": 10.3,
+      "shot": 5,
+      "transition": "whipR",
+      "index": 4,
+      "startFrame": 306,
+      "frames": 18,
+      "file": "continuous-cut-04.jpg",
+      "start": 10.2
+    }
+  ],
+  "coverTime": 0.3,
+  "previewTime": 3.2,
+  "videoSha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894",
+  "effectcraftSha256": "248495b93c8024ce314b9dd3ccea33ad809b5a17579e872c15a55c2b9b286767",
+  "filmcraftSha256": "693f470ee35c8ac4fb794df867312b28c477d565da722d5ae243b844e510171f",
+  "audioSha256": "50867c5d624767527eabef81f6f1657fa9b0456e898cfa3c5fe18e4e0663552e",
+  "nativeSnapshot": "rendered",
+  "sha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894",
+  "visualReview": "PASS_WITHIN_EXTRACTED_IMAGE_SCOPE",
+  "realTimeWholeWatchAndAudition": "NOT_PERFORMED",
+  "ownerCreativeAcceptance": "PENDING",
+  "postPublicationPerformance": "NOT_MEASURED",
+  "visualReviewEvidence": "../independent-visual-v2.json",
+  "visualReviewVideoSha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894",
+  "visualReviewCoverage": {
+    "allSceneSamples": 6,
+    "allSceneFrames": [
+      11,
+      46,
+      148,
+      169,
+      271,
+      320
+    ],
+    "continuousCuts": [
+      {
+        "time": 1.2,
+        "shot": 1,
+        "transition": "cut",
+        "index": 1,
+        "startFrame": 33,
+        "frames": 18,
+        "file": "continuous-cut-01.jpg",
+        "start": 1.1
+      },
+      {
+        "time": 4.6,
+        "shot": 2,
+        "transition": "cut",
+        "index": 2,
+        "startFrame": 135,
+        "frames": 18,
+        "file": "continuous-cut-02.jpg",
+        "start": 4.5
+      },
+      {
+        "time": 8.7,
+        "shot": 4,
+        "transition": "cut",
+        "index": 3,
+        "startFrame": 258,
+        "frames": 18,
+        "file": "continuous-cut-03.jpg",
+        "start": 8.6
+      },
+      {
+        "time": 10.3,
+        "shot": 5,
+        "transition": "whipR",
+        "index": 4,
+        "startFrame": 306,
+        "frames": 18,
+        "file": "continuous-cut-04.jpg",
+        "start": 10.2
+      }
+    ],
+    "continuousFrames": 72,
+    "loopFrames": {
+      "last": 9,
+      "first": 9
+    }
+  }
+}

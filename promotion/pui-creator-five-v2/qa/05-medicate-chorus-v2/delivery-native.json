@@ -1,0 +1,61 @@
+{
+  "version": "V2",
+  "comp": "Pui V2 05",
+  "previewTime": 3.2,
+  "nativeReopenSaveRender": true,
+  "missingAssets": 0,
+  "videoSha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894",
+  "audioSha256": "50867c5d624767527eabef81f6f1657fa9b0456e898cfa3c5fe18e4e0663552e",
+  "effectcraftFootage": [
+    {
+      "command": "footage.check",
+      "result": {
+        "checked": 6,
+        "missing": 0,
+        "probed": 0
+      }
+    },
+    {
+      "command": "footage.missing",
+      "result": {
+        "missing": []
+      }
+    }
+  ],
+  "filmcraftStatus": [
+    {
+      "identity": {
+        "fingerprint": "795ef29ded4266c0",
+        "size": 19182888
+      },
+      "item": 4,
+      "name": "05-medicate-chorus-v2-master.mp4",
+      "path": "F:\\Videos\\ぷい本人プロモ5本-V2-2026-10-24\\media\\05-medicate-chorus-v2-master.mp4",
+      "proxy": null,
+      "status": "online"
+    },
+    {
+      "identity": {
+        "fingerprint": "432772f59ef2cc9a",
+        "size": 3955268
+      },
+      "item": 5,
+      "name": "05-medicate-chorus-v2-mix.wav",
+      "path": "F:\\Videos\\ぷい本人プロモ5本-V2-2026-10-24\\media\\05-medicate-chorus-v2-mix.wav",
+      "proxy": null,
+      "status": "online"
+    }
+  ],
+  "effectcraftSha256": "904515b9b3eed8191f03a30d03fde0610bac1dfc23f1ee0bfb86215ddf17f4e0",
+  "filmcraftSha256": "c7361b4bce6f23dbaaace904cc56514319278985ccdc264063598c6c22db71cc",
+  "proofs": {
+    "effectcraft": {
+      "file": "delivery-effectcraft.png",
+      "sha256": "caaa3c3f3f6d5231b98290183cc4ab5c945587e1df02dce68a669e3c706d745a"
+    },
+    "filmcraft": {
+      "file": "delivery-filmcraft.png",
+      "sha256": "8564f7d78f6291307f6c774456d3ad9f9e8a56f2dde1f73a4f1ad689042b04da"
+    }
+  }
+}

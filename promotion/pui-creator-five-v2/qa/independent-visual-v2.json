@@ -1,0 +1,673 @@
+{
+  "status": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
+  "scope": "最終MP4から抽出した全scene代表画像、主要4カット各18連続frame、終端9/冒頭9frameを独立目視。実制作素材の表示・主字幕の判読・注目対象と字幕の分離・遷移着地・終端/ループ境界の画像検査。リアルタイムの全編視聴/試聴、ownerの創作採用判断、公開後成績は別。",
+  "currentFinalReviews": [
+    {
+      "episode": "01",
+      "slug": "01-pui-promo-v2",
+      "status": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/videos/01-pui-promo-v2.mp4",
+      "videoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+      "effectcraftSha256": "fcc02ed1b6f08ee6872c6556c8e7e2873f4d44379667f36f22f3a3d57ff30b4a",
+      "filmcraftSha256": "a11b551becb49479b2744e096b38ebf5a7e9ac8a5608bb4763a126f0d4ae814c",
+      "audioSha256": "2a0b8bfca20007443dffed76b94af6ef8b9673a4cec31fea471720ad2e3c39dc",
+      "coverage": {
+        "allSceneSamples": 19,
+        "allSceneFrames": [
+          8,
+          20,
+          35,
+          71,
+          95,
+          119,
+          143,
+          178,
+          214,
+          238,
+          275,
+          299,
+          323,
+          346,
+          447,
+          459,
+          471,
+          486,
+          510
+        ],
+        "continuousCuts": [
+          {
+            "time": 2.8,
+            "shot": 4,
+            "transition": "snap",
+            "index": 1,
+            "startFrame": 81,
+            "frames": 18,
+            "file": "continuous-cut-01.jpg",
+            "start": 2.7
+          },
+          {
+            "time": 6.8,
+            "shot": 8,
+            "transition": "slideL",
+            "index": 2,
+            "startFrame": 201,
+            "frames": 18,
+            "file": "continuous-cut-02.jpg",
+            "start": 6.7
+          },
+          {
+            "time": 11.2,
+            "shot": 13,
+            "transition": "cut",
+            "index": 3,
+            "startFrame": 333,
+            "frames": 18,
+            "file": "continuous-cut-03.jpg",
+            "start": 11.1
+          },
+          {
+            "time": 15.833333333333334,
+            "shot": 17,
+            "transition": "cut",
+            "index": 4,
+            "startFrame": 472,
+            "frames": 18,
+            "file": "continuous-cut-04.jpg",
+            "start": 15.733333333333333
+          }
+        ],
+        "continuousFrames": 72,
+        "loopFrames": {
+          "last": 9,
+          "first": 9
+        },
+        "additionalFinalMp4Frames": [
+          {
+            "frame": 119,
+            "time": 3.966666666666667,
+            "subject": "実際のC#編集画面"
+          }
+        ]
+      },
+      "images": [
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/01-pui-promo-v2/all-scenes.jpg",
+          "sha256": "2a62e0a238a7dff5119d1200318fea64ece50136f7a2038036876c84cbded5fa"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/01-pui-promo-v2/continuous-cut-01.jpg",
+          "sha256": "b8c3e6e40f404c044844304abc2969bd286dca8eb09f3ba0b9fe46505345e074"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/01-pui-promo-v2/continuous-cut-02.jpg",
+          "sha256": "30ad000f11d47cdd1f5ddb364f6a55ed592dd8cd2c9f2370007c892447074bc8"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/01-pui-promo-v2/continuous-cut-03.jpg",
+          "sha256": "e989d7004e953f434c47442bbffca7b8fc4629a51cf8607aa9eb0d5db53bcf5f"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/01-pui-promo-v2/continuous-cut-04.jpg",
+          "sha256": "282d802b585e04c287557707efd185e7ec47fbc585a19325c4c511a676b3f60a"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/independent-v2-previews/loop-01.jpg",
+          "sha256": "67ea3c582c5285967d5672b84a46586978ca84af8c5065b1e8406d78df9b6fb5"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/independent-v2-previews/01-csharp-final.png",
+          "sha256": "9c49801369a386b94c900c8d2da28efc9bddea7d5b3198d8c7db849ed77dcd15"
+        }
+      ],
+      "findings": [],
+      "limits": {
+        "fullRealTimeWatchAndDirectAudition": "NOT_PERFORMED_BY_THIS_AGENT",
+        "ownerCreativeAcceptance": "NOT_DETERMINED_BY_THIS_REVIEW",
+        "viralityOrRevenue": "NOT_DETERMINED"
+      },
+      "observations": [
+        "19シーン抽出で実ObjectCreatorの解体/再組立、実C#、斧の実プレイ、EMBERWAKE、Glass、Truth or Lie、medicateがぷい名へつながる。",
+        "実C#はObjectEditingSession.csをVS Codeで表示したPNG。最終MP4第119frameでもコードと「ここも、つくる。」を別領域で読める。Unity Editorの収録や今回の新規コード入力を主張していない。長いコード行の右端は画角外だが全文解説の字幕ではない。",
+        "6.7秒開始18連続画像でGlassは約0.18秒の入場へ着地し、旧版の長い画面外滞在/黒場を解消。UI/追加字幕を静止滞在で読める。",
+        "2秒台の素早い部品追従には意図した途中のblurがあるが、2.7秒以降の連続画像で部品は明瞭に着地し、次の再組立を確認できる。画像検査範囲で主文字を読めないまま長く滞在する状態は見られない。",
+        "主要追加字幕と元ゲームUI/元MV歌詞は領域を分け、MVの既存歌詞の上に大きな新字幕を重ねていない。",
+        "終端は作品4窓を上、ぷい名と署名を下へ分離。最後9/最初9画像で文字の重なりなく冒頭の実剣へ切り替わる。写真の被写体をぷい本人とは判定していない。"
+      ]
+    },
+    {
+      "episode": "02",
+      "slug": "02-pui-opens-the-inside-v2",
+      "status": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/videos/02-pui-opens-the-inside-v2.mp4",
+      "videoSha256": "961919d6d4d961d4e75d069fabbc3daedba208b82789cf7c290c04f85b25b8f0",
+      "effectcraftSha256": "d237975e4d275e955d7cf68c15e3e0a9181289d4a98960000430c97f45238bda",
+      "filmcraftSha256": "e6b316966c7a01950312ea4391ccbc19951a597daee0afbee92d0c2af4e756bc",
+      "audioSha256": "169a5b4e8c5f1788751694fa05e7c26bb4b9bf88078bb1202a77a9eb6813e55e",
+      "coverage": {
+        "allSceneSamples": 11,
+        "allSceneFrames": [
+          11,
+          35,
+          83,
+          154,
+          203,
+          251,
+          323,
+          371,
+          443,
+          515,
+          587
+        ],
+        "continuousCuts": [
+          {
+            "time": 2.4,
+            "shot": 2,
+            "transition": "cut",
+            "index": 1,
+            "startFrame": 69,
+            "frames": 18,
+            "file": "continuous-cut-01.jpg",
+            "start": 2.3
+          },
+          {
+            "time": 8,
+            "shot": 5,
+            "transition": "slideL",
+            "index": 2,
+            "startFrame": 237,
+            "frames": 18,
+            "file": "continuous-cut-02.jpg",
+            "start": 7.9
+          },
+          {
+            "time": 12,
+            "shot": 7,
+            "transition": "whipR",
+            "index": 3,
+            "startFrame": 357,
+            "frames": 18,
+            "file": "continuous-cut-03.jpg",
+            "start": 11.9
+          },
+          {
+            "time": 19.2,
+            "shot": 10,
+            "transition": "cut",
+            "index": 4,
+            "startFrame": 573,
+            "frames": 18,
+            "file": "continuous-cut-04.jpg",
+            "start": 19.1
+          }
+        ],
+        "continuousFrames": 72,
+        "loopFrames": {
+          "last": 9,
+          "first": 9
+        },
+        "additionalFinalMp4Frames": [
+          {
+            "frame": 45,
+            "time": 1.5,
+            "subject": "実ChatGPT相談と最終字幕"
+          },
+          {
+            "frame": 216,
+            "time": 7.2,
+            "subject": "実Blenderモデル原本"
+          }
+        ]
+      },
+      "images": [
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/02-pui-opens-the-inside-v2/all-scenes.jpg",
+          "sha256": "510c409e197ae4fc6b953f4c50cb03eeee4da21695aef3d3d63e8695e464a807"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/02-pui-opens-the-inside-v2/continuous-cut-01.jpg",
+          "sha256": "e75f01a0097f4b77e1a126b4a1e47e56944bcfa097aed19659f2d6aacdd47e97"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/02-pui-opens-the-inside-v2/continuous-cut-02.jpg",
+          "sha256": "d69576a1a862142ab9c7840bada1ad36d2363438c9eb619b73e0d369594c1761"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/02-pui-opens-the-inside-v2/continuous-cut-03.jpg",
+          "sha256": "a6acdfb70443bf41dc1726a3ecd4fe347167eb165cc52669412f5467648ae288"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/02-pui-opens-the-inside-v2/continuous-cut-04.jpg",
+          "sha256": "fe54e0122b5a127b75a260b791de4b4889670ed836d44c81663493700ae17640"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/independent-v2-previews/loop-02.jpg",
+          "sha256": "3fbdd87f435f104bb226be255194e769a31d617b9ee9614e8a9c7d656df123a4"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/independent-v2-previews/02-chat-final.png",
+          "sha256": "93e175ff782f8aea672a52845e953a33f83ad9ba8ecb76b1436c9b41d96b19d4"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/independent-v2-previews/02-blender-final.png",
+          "sha256": "29c2cd81c083f69f46efe7da4c52861a012bebaf09e4417b189cb8950cb979c2"
+        }
+      ],
+      "findings": [],
+      "observations": [
+        "実際に棄却された修正前frameと修正後の実frameに対応し、下部品が隠れる状態→高さ/支持具変更後に見える状態→修正後の実解体/再組立を示している。",
+        "0.8〜2.4秒は本人の実制作計画についてのChatGPT質問。最終MP4の1.5秒に「制作の相談も。」と実質問「年末までにゲーム3つ作るのは現実的かどうか」を明瞭に表示。台座bugそのものを当時この会話で相談したという記載や架空assistant回答を追加していない。",
+        "6.4〜8秒は既存RebuiltSword.blendを実Blenderで開いてviewを動かした画面。最終7.2秒でもblade/gripを画面内に確認でき、主字幕はその下に分離。今回の新規モデリングや本人の手操作だったとは表示していない。",
+        "全11シーンと4箇所の18連続画像で、主captionは判読できる。8秒のslideは約0.18秒で着地し、12秒のwhipは数frameの切替の後に部品と主字幕が戻る。注目対象が長く画面外/blurに取り残される状態は確認されない。",
+        "終端3窓は上、ぷい名と署名は下へ分離。最終MP4の最後9/最初9を再抽出し、修正前の実画面へ空白なく切り替わることを確認。",
+        "実ChatGPT素材は対象質問のみのcrop、実コード/モデルは対象作品だけを表示する収集証跡と一致。抽出画面に無関係の会話一覧、認証情報、私的な他作品ファイル内容は見られない。"
+      ],
+      "materialEvidence": [
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/firefox-materials.json",
+          "sha256": "0a640e33c16b4f3d4670b3b30c71e2ed68b3dbad415cd328b3ca81e33cdd6708"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/editor-materials.json",
+          "sha256": "556b65406a1ec91544f1afa17d3f0596b3bd9430ddd9cda6ddccdae5dd00c085"
+        }
+      ],
+      "limits": {
+        "fullRealTimeWatchAndDirectAudition": "NOT_PERFORMED_BY_THIS_AGENT",
+        "ownerCreativeAcceptance": "NOT_DETERMINED_BY_THIS_REVIEW",
+        "viralityOrRevenue": "NOT_DETERMINED"
+      }
+    },
+    {
+      "episode": "03",
+      "slug": "03-pui-builds-the-night-v2",
+      "status": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/videos/03-pui-builds-the-night-v2.mp4",
+      "videoSha256": "a6ca422251c6584861a0f3e0531ca3b74c33fa362b7c02cd1d13c374081a4f62",
+      "effectcraftSha256": "2a963c731486266e6b34df31c7dbf4a39bcbecb9a771a57c04d243c6b886ff4e",
+      "filmcraftSha256": "f42c1c15cccf22ad418f941868fd0ae717bdf045f9cb1dad0a3be4e2f371bfb6",
+      "audioSha256": "6d918799df8195c63ca9024965094dca789ae902998e91e96c702949c32df0ac",
+      "coverage": {
+        "allSceneSamples": 11,
+        "allSceneFrames": [
+          11,
+          35,
+          83,
+          131,
+          203,
+          251,
+          323,
+          371,
+          443,
+          515,
+          587
+        ],
+        "continuousCuts": [
+          {
+            "time": 4,
+            "shot": 3,
+            "transition": "slideL",
+            "index": 1,
+            "startFrame": 117,
+            "frames": 18,
+            "file": "continuous-cut-01.jpg",
+            "start": 3.9
+          },
+          {
+            "time": 8,
+            "shot": 5,
+            "transition": "cut",
+            "index": 2,
+            "startFrame": 237,
+            "frames": 18,
+            "file": "continuous-cut-02.jpg",
+            "start": 7.9
+          },
+          {
+            "time": 12,
+            "shot": 7,
+            "transition": "cut",
+            "index": 3,
+            "startFrame": 357,
+            "frames": 18,
+            "file": "continuous-cut-03.jpg",
+            "start": 11.9
+          },
+          {
+            "time": 19.2,
+            "shot": 10,
+            "transition": "cut",
+            "index": 4,
+            "startFrame": 573,
+            "frames": 18,
+            "file": "continuous-cut-04.jpg",
+            "start": 19.1
+          }
+        ],
+        "continuousFrames": 72,
+        "loopFrames": {
+          "last": 9,
+          "first": 9
+        }
+      },
+      "images": [
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/03-pui-builds-the-night-v2/all-scenes.jpg",
+          "sha256": "624d255200d5ce74c83aee1d10c8ec0bdba5e4984998abf20c575d9455f0e623"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/03-pui-builds-the-night-v2/continuous-cut-01.jpg",
+          "sha256": "db8b2157009e4c46eb746b82e0d98f028e2382e5950b72b61dcdbbc4b37e9c99"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/03-pui-builds-the-night-v2/continuous-cut-02.jpg",
+          "sha256": "c0ae14f211f7a268a47311e5cb97e833aa1bde10caa5cf1b32c10ee70e419988"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/03-pui-builds-the-night-v2/continuous-cut-03.jpg",
+          "sha256": "63e440b9b3576d912b662876932d9e5e1a3467c50238651c978282183a56dad5"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/03-pui-builds-the-night-v2/continuous-cut-04.jpg",
+          "sha256": "13e12d0400a3961e3de408e6d047aca40b7313825c5232206e895089f5492f6b"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/independent-v2-previews/loop-03.jpg",
+          "sha256": "714e029ab594ceaefa8d34b71542acf9bc676efca148e56368ebfcfd2a0e27b4"
+        }
+      ],
+      "findings": [],
+      "observations": [
+        "全11シーンで主人公の顔/身体と足場が画面に残り、主要captionが操作対象を覆わない。",
+        "4.0秒のslideは約0.18秒の入場を経て場面へ着地する。7.9秒からの連続画像では主人公が足場へ移動して跳ぶ間も画面内にあり、次の着地点が見える。",
+        "11.9秒からは火台へ寄り、14秒台には実点灯が表示される。16.8秒の再演は「もう一回。」「実プレイの再演」として示され、初回の連続操作とは表示していない。",
+        "pixel素材は注視対象の静止/滞在で輪郭を読める。意図した入場以外に、過度のmotionblurで主人公や主文字が読めない状態の長い滞在は見られない。",
+        "終端の3窓・ぷい名・署名は別の領域に着地する。ループ9+9画像で終端の署名から冒頭の主人公へハードカットし、空白/欠落フレームは見られない。"
+      ],
+      "limits": {
+        "fullRealTimeWatchAndDirectAudition": "NOT_PERFORMED_BY_THIS_AGENT",
+        "ownerCreativeAcceptance": "NOT_DETERMINED_BY_THIS_REVIEW",
+        "viralityOrRevenue": "NOT_DETERMINED"
+      }
+    },
+    {
+      "episode": "04",
+      "slug": "04-pui-makes-their-tools-v2",
+      "status": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/videos/04-pui-makes-their-tools-v2.mp4",
+      "videoSha256": "cc3ddfeda7b0e420d359b9998e1974819b22401b8efeaa0e7e4557c22af3ba15",
+      "effectcraftSha256": "387fdadb6487f9ead305cfab3b523afaa01dfa1684432b0c59b20aefb61c1efd",
+      "filmcraftSha256": "3ce7462f4b03e69116bc8ce33a375213079ba9ebbd7c0fb6722ec3d5d68f0d55",
+      "audioSha256": "5e70de881eae2229cc40152ca42783e5ce2e80edb683a402d4eb49dc0fabc42f",
+      "coverage": {
+        "allSceneSamples": 11,
+        "allSceneFrames": [
+          11,
+          35,
+          83,
+          131,
+          178,
+          227,
+          299,
+          346,
+          419,
+          491,
+          587
+        ],
+        "continuousCuts": [
+          {
+            "time": 2.4,
+            "shot": 2,
+            "transition": "whipR",
+            "index": 1,
+            "startFrame": 69,
+            "frames": 18,
+            "file": "continuous-cut-01.jpg",
+            "start": 2.3
+          },
+          {
+            "time": 7.2,
+            "shot": 5,
+            "transition": "slideL",
+            "index": 2,
+            "startFrame": 213,
+            "frames": 18,
+            "file": "continuous-cut-02.jpg",
+            "start": 7.1
+          },
+          {
+            "time": 13.6,
+            "shot": 8,
+            "transition": "slideL",
+            "index": 3,
+            "startFrame": 405,
+            "frames": 18,
+            "file": "continuous-cut-03.jpg",
+            "start": 13.5
+          },
+          {
+            "time": 19.2,
+            "shot": 10,
+            "transition": "cut",
+            "index": 4,
+            "startFrame": 573,
+            "frames": 18,
+            "file": "continuous-cut-04.jpg",
+            "start": 19.1
+          }
+        ],
+        "continuousFrames": 72,
+        "loopFrames": {
+          "last": 9,
+          "first": 9
+        }
+      },
+      "images": [
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/04-pui-makes-their-tools-v2/all-scenes.jpg",
+          "sha256": "32fb29cb6889a29dba9ddbd72f06668d51055316f68bfd893d99fabc922383b1"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/04-pui-makes-their-tools-v2/continuous-cut-01.jpg",
+          "sha256": "ba75434c98c3ec578d9a846489ee835f68ce1acf4a05431d6f573d6b3581ddd8"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/04-pui-makes-their-tools-v2/continuous-cut-02.jpg",
+          "sha256": "0c210a228d56f4bd43c8a526567567b736abeff103a5a381cc87a86628206af4"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/04-pui-makes-their-tools-v2/continuous-cut-03.jpg",
+          "sha256": "604d1e4101253abb5ea3811167d315412630ac4e2cc91df2a8c57e77fe23f0cf"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/04-pui-makes-their-tools-v2/continuous-cut-04.jpg",
+          "sha256": "211cc3bf9b49298369cc560623d368f91487c851718819cba041a274298964cb"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/independent-v2-previews/loop-04.jpg",
+          "sha256": "a07d6c88fff8777727966141a281d735690e0b47bef376ade5a0895c98217132"
+        }
+      ],
+      "findings": [],
+      "observations": [
+        "初版の実popup→現UIの実popup/一覧/Windows衝突ダイアログを使い、生成した偽UIや架空のファイル移動へ置き換えていない。",
+        "「もっと、エレガントに。」は実Issue #3で記録されたownerの再設計要望の範囲内。画面には制作メモの要旨と表示され、未取得の元ChatGPT画面を装っていない。",
+        "全11シーンの主要字幕に欠けや行潰れなし。ズーム時のUIの端や長いパスの画面外は注目範囲を選ぶ演出で、主captionの滞在欠けとは区別した。",
+        "カット4箇所の連続画像で、whipは数フレームの切替、slideは約0.18秒で画面へ着地し、文字/画像が長い黒場に取り残されない。",
+        "画面の項目は合成試験の写真番号、カテゴリ、collision.txtとQA用Tempパス。抽出画像に個人の連絡先/認証情報/私的なファイル内容は確認されない。",
+        "3枚の実UI窓は上、ぷい名と署名は下へ分離。ループ最後9→最初9画像でも主タイトルを読める冒頭へ切り替わる。"
+      ],
+      "limits": {
+        "fullRealTimeWatchAndDirectAudition": "NOT_PERFORMED_BY_THIS_AGENT",
+        "ownerCreativeAcceptance": "NOT_DETERMINED_BY_THIS_REVIEW",
+        "viralityOrRevenue": "NOT_DETERMINED"
+      }
+    },
+    {
+      "episode": "05",
+      "slug": "05-medicate-chorus-v2",
+      "status": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
+      "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/videos/05-medicate-chorus-v2.mp4",
+      "videoSha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894",
+      "effectcraftSha256": "248495b93c8024ce314b9dd3ccea33ad809b5a17579e872c15a55c2b9b286767",
+      "filmcraftSha256": "693f470ee35c8ac4fb794df867312b28c477d565da722d5ae243b844e510171f",
+      "audioSha256": "50867c5d624767527eabef81f6f1657fa9b0456e898cfa3c5fe18e4e0663552e",
+      "coverage": {
+        "allSceneSamples": 6,
+        "allSceneFrames": [
+          11,
+          46,
+          148,
+          169,
+          271,
+          320
+        ],
+        "continuousCuts": [
+          {
+            "time": 1.2,
+            "shot": 1,
+            "transition": "cut",
+            "index": 1,
+            "startFrame": 33,
+            "frames": 18,
+            "file": "continuous-cut-01.jpg",
+            "start": 1.1
+          },
+          {
+            "time": 4.6,
+            "shot": 2,
+            "transition": "cut",
+            "index": 2,
+            "startFrame": 135,
+            "frames": 18,
+            "file": "continuous-cut-02.jpg",
+            "start": 4.5
+          },
+          {
+            "time": 8.7,
+            "shot": 4,
+            "transition": "cut",
+            "index": 3,
+            "startFrame": 258,
+            "frames": 18,
+            "file": "continuous-cut-03.jpg",
+            "start": 8.6
+          },
+          {
+            "time": 10.3,
+            "shot": 5,
+            "transition": "whipR",
+            "index": 4,
+            "startFrame": 306,
+            "frames": 18,
+            "file": "continuous-cut-04.jpg",
+            "start": 10.2
+          }
+        ],
+        "continuousFrames": 72,
+        "loopFrames": {
+          "last": 9,
+          "first": 9
+        }
+      },
+      "images": [
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/05-medicate-chorus-v2/all-scenes.jpg",
+          "sha256": "a67ec11928c694312c3c048f51f3c7f76d12037e29c1952d32350b0afb76b9d8"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/05-medicate-chorus-v2/continuous-cut-01.jpg",
+          "sha256": "1c45545c42b729dc9edeae700f8b4b25fab791b9b7ff0ad3e784e59fbca75535"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/05-medicate-chorus-v2/continuous-cut-02.jpg",
+          "sha256": "27e97a29bd50972bdf27c7f26899eecc017af6c638053e097e1472cd2bd83416"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/05-medicate-chorus-v2/continuous-cut-03.jpg",
+          "sha256": "45a803037993b839399d6000c97a04da0cba6bee8d78b0bfe7e0c760f015d812"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/05-medicate-chorus-v2/continuous-cut-04.jpg",
+          "sha256": "2a5ca38b73e6379a9ab2fe2979fefae49724b6f11c3d79de1c90d0bc4b422144"
+        },
+        {
+          "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/independent-v2-previews/loop-05.jpg",
+          "sha256": "2c09f9f7a52dcb31f4166e0c890cefa27c72a1f2be8a3dc0b98cd1d45b67956c"
+        }
+      ],
+      "findings": [],
+      "observations": [
+        "実制作manifestの要望/選択と対応する要旨を制作メモとして表示。取得していないChatGPT会話のUIや本人の台詞を捏造していない。",
+        "調整前/後の主要文字・波形・再生線に欠け/干渉は見られない。3.4秒ずつ同じ句を比較する表示と、別に確認した音source21.7〜25.1秒が対応する。",
+        "四つの連続カットでは比較カード/要旨/選択が順に分離して表示される。MVへは短いwhipの後に写真と既存下部歌詞が見え、追加文字が主歌詞を隠していない。",
+        "音だけを再exportした最終版。全scene/4連続cutの現画像SHAが既レビュー画像と一致、EC native SHAも同一。ループ最後9/最初9を最新MP4から再抽出して再目視し、映像判定を現video SHAに結び付けた。",
+        "最新mix/rendered/technicalのaudio SHAが一致。A/Bは双方同じfade in0.10/out0.15秒、完成MVはin0.10/out0.20秒。数値の照合であり、音の聴感・クリック・全編試聴を合格判定したものではない。",
+        "最後9+最初9画像でサビ句の既存歌詞が消えてから制作メモ冒頭へ切り替わる。写真の被写体をぷい本人とは判断していない。"
+      ],
+      "limits": {
+        "fullRealTimeWatchAndDirectAudition": "NOT_PERFORMED_BY_THIS_AGENT",
+        "ownerCreativeAcceptance": "NOT_DETERMINED_BY_THIS_REVIEW",
+        "viralityOrRevenue": "NOT_DETERMINED"
+      },
+      "audioNumericalReference": {
+        "path": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/qa/audio-process-05.json",
+        "sha256": "4a3eb7219aa7203be0aa919eff01ff5230a09dd6cf5b4b058e94b65db54d194a",
+        "mixSha256": "50867c5d624767527eabef81f6f1657fa9b0456e898cfa3c5fe18e4e0663552e",
+        "aBFadesSeconds": {
+          "inSeconds": 0.1,
+          "outSeconds": 0.15
+        },
+        "mvFadesSeconds": {
+          "inSeconds": 0.1,
+          "outSeconds": 0.2
+        },
+        "finalAacIntegratedLufs": -13.8,
+        "finalAacTruePeakDbfs": -2.1,
+        "directAudition": "NOT_PERFORMED"
+      }
+    }
+  ],
+  "pendingEpisodes": [],
+  "resolvedImageFindings": [
+    {
+      "id": "V2-SLIDE-ENTRY-01",
+      "episode": "01",
+      "videoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+      "state": "RESOLVED_WITHIN_EXTRACTED_IMAGE_SCOPE",
+      "evidence": "qa/01-pui-promo-v2/continuous-cut-02.jpg"
+    },
+    {
+      "id": "V2-END-OWNER-01",
+      "episode": "01",
+      "videoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+      "state": "RESOLVED_WITHIN_EXTRACTED_IMAGE_SCOPE",
+      "evidence": "qa/independent-v2-previews/loop-01.jpg"
+    },
+    {
+      "id": "V2-UI-SUBTITLE-01",
+      "episode": "01",
+      "videoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+      "state": "RESOLVED_WITHIN_EXTRACTED_IMAGE_SCOPE",
+      "evidence": "qa/01-pui-promo-v2/all-scenes.jpg / qa/independent-v2-previews/01-csharp-final.png"
+    }
+  ],
+  "limits": {
+    "fullRealTimeWatchAndDirectAudition": "NOT_PERFORMED_BY_THIS_AGENT",
+    "ownerCreativeAcceptance": "NOT_DETERMINED_BY_THIS_REVIEW",
+    "viralityOrRevenue": "NOT_DETERMINED"
+  },
+  "completedCoverage": {
+    "finalEpisodes": 5,
+    "allSceneSamples": 58,
+    "continuousFrames": 360,
+    "loopBoundaryFrames": 90,
+    "additionalFinalMp4Frames": 3
+  },
+  "findings": [],
+  "bindingsVerified": {
+    "actualMp4Hashes": true,
+    "renderedAndTechnicalArtifacts": true,
+    "allReviewedImageHashes": true,
+    "scope": "現5本と現33画像ファイルの実SHA一致。直接全編視聴/試聴の意味ではない。"
+  }
+}

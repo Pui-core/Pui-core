@@ -1,0 +1,61 @@
+{
+  "version": "V2",
+  "comp": "Pui V2 04",
+  "previewTime": 3.2,
+  "nativeReopenSaveRender": true,
+  "missingAssets": 0,
+  "videoSha256": "cc3ddfeda7b0e420d359b9998e1974819b22401b8efeaa0e7e4557c22af3ba15",
+  "audioSha256": "5e70de881eae2229cc40152ca42783e5ce2e80edb683a402d4eb49dc0fabc42f",
+  "effectcraftFootage": [
+    {
+      "command": "footage.check",
+      "result": {
+        "checked": 14,
+        "missing": 0,
+        "probed": 0
+      }
+    },
+    {
+      "command": "footage.missing",
+      "result": {
+        "missing": []
+      }
+    }
+  ],
+  "filmcraftStatus": [
+    {
+      "identity": {
+        "fingerprint": "f6d420be1077fc34",
+        "size": 36356642
+      },
+      "item": 4,
+      "name": "04-pui-makes-their-tools-v2-master.mp4",
+      "path": "F:\\Videos\\ぷい本人プロモ5本-V2-2026-10-24\\media\\04-pui-makes-their-tools-v2-master.mp4",
+      "proxy": null,
+      "status": "online"
+    },
+    {
+      "identity": {
+        "fingerprint": "e3b88e261fcbbac0",
+        "size": 5990502
+      },
+      "item": 5,
+      "name": "04-pui-makes-their-tools-v2-mix.wav",
+      "path": "F:\\Videos\\ぷい本人プロモ5本-V2-2026-10-24\\media\\04-pui-makes-their-tools-v2-mix.wav",
+      "proxy": null,
+      "status": "online"
+    }
+  ],
+  "effectcraftSha256": "628dce987ba4cd272d94b966a02a2617a388bbf200f63bd703a5563eb0c76c30",
+  "filmcraftSha256": "82283a39724a847d4d96fcc370c839198d35943cae8263f42f574f397099ba79",
+  "proofs": {
+    "effectcraft": {
+      "file": "delivery-effectcraft.png",
+      "sha256": "9aa6054bb8a4eb74db904b4fab37a1c23f285d0cb85ff8750954b0f8453c7cd5"
+    },
+    "filmcraft": {
+      "file": "delivery-filmcraft.png",
+      "sha256": "bf4e16505ccb04c05a349c6dadd51e4be74e903895c48f83724476b784a5088f"
+    }
+  }
+}
