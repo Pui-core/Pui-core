@@ -1,6 +1,6 @@
 {
   "status": "FINAL_DELIVERY_CHECKS_PASS",
-  "createdAt": "2026-10-24T10:18:38.243Z",
+  "createdAt": "2026-10-24T10:52:20.461Z",
   "episodes": [
     {
       "id": "01",
@@ -8,11 +8,12 @@
       "frames": 553,
       "duration": 18.453,
       "audio": {
-        "integratedLufs": -14,
-        "truePeakDbfs": -1.8
+        "integratedLufs": -16.3,
+        "truePeakDbfs": -2
       },
-      "videoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+      "videoSha256": "e2073036727c7bdc53d390d50395832b2b8da5e527d3a91d6153be0ef6599716",
       "checks": {
+        "audioFadeVerified": true,
         "videoCopiedIdentically": true,
         "audioUnchanged": true,
         "technicalVideoBound": true,
@@ -35,6 +36,7 @@
       },
       "videoSha256": "961919d6d4d961d4e75d069fabbc3daedba208b82789cf7c290c04f85b25b8f0",
       "checks": {
+        "audioFadeVerified": true,
         "videoCopiedIdentically": true,
         "audioUnchanged": true,
         "technicalVideoBound": true,
@@ -57,6 +59,7 @@
       },
       "videoSha256": "a6ca422251c6584861a0f3e0531ca3b74c33fa362b7c02cd1d13c374081a4f62",
       "checks": {
+        "audioFadeVerified": true,
         "videoCopiedIdentically": true,
         "audioUnchanged": true,
         "technicalVideoBound": true,
@@ -79,6 +82,7 @@
       },
       "videoSha256": "cc3ddfeda7b0e420d359b9998e1974819b22401b8efeaa0e7e4557c22af3ba15",
       "checks": {
+        "audioFadeVerified": true,
         "videoCopiedIdentically": true,
         "audioUnchanged": true,
         "technicalVideoBound": true,
@@ -96,11 +100,12 @@
       "frames": 412,
       "duration": 13.738,
       "audio": {
-        "integratedLufs": -13.8,
+        "integratedLufs": -14,
         "truePeakDbfs": -2.1
       },
-      "videoSha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894",
+      "videoSha256": "927c9767b4e58f4c41e4a3019e03ec015f0c8474c52a45f1d7b174092879b7be",
       "checks": {
+        "audioFadeVerified": true,
         "videoCopiedIdentically": true,
         "audioUnchanged": true,
         "technicalVideoBound": true,
@@ -114,9 +119,11 @@
     }
   ],
   "independentVisualScope": "最終MP4から抽出した全scene代表画像、主要4カット各18連続frame、終端9/冒頭9frameを独立目視。実制作素材の表示・主字幕の判読・注目対象と字幕の分離・遷移着地・終端/ループ境界の画像検査。リアルタイムの全編視聴/試聴、ownerの創作採用判断、公開後成績は別。",
-  "independentVisualReportSha256": "c9104010f2ba96b1ff46a0e5cf6cfdf10e216f04e0c1bc523009a15b61ceba46",
+  "independentVisualReportSha256": "d59f54b7e2bc862e83924ed442de5a8f65f25df2b49ab6003dc9af62f2de2559",
   "editorMaterialCopies": true,
   "packageNativeReopenSaveRender": true,
+  "audioFadeIndependentReportSha256": "ddbd8044c781f948dce6c5e105a7ed38e0101052b44d044b84ab50a797be8a6d",
+  "audioFadeScope": "Numerical source/WAV/AAC and unchanged-picture checks. Natural listening verdict is not asserted.",
   "sourceFixesReviewed": {
     "checkpointDirectoryCreatedBeforeBackup": true,
     "packageValidatesProductionHashesBeforeCopy": true,

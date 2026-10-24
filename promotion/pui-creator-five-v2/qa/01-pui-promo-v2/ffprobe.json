@@ -29,10 +29,10 @@
       "id": "0x1",
       "r_frame_rate": "30/1",
       "avg_frame_rate": "30/1",
-      "time_base": "1/30",
+      "time_base": "1/15360",
       "start_pts": 0,
       "start_time": "0.000000",
-      "duration_ts": 553,
+      "duration_ts": 283136,
       "duration": "18.433333",
       "bit_rate": "5147113",
       "bits_per_raw_sample": "8",
@@ -88,7 +88,7 @@
       "start_time": "0.000000",
       "duration_ts": 885744,
       "duration": "18.453000",
-      "bit_rate": "319920",
+      "bit_rate": "319935",
       "nb_frames": "866",
       "nb_read_frames": "865",
       "extradata_size": 2,
@@ -129,14 +129,14 @@
     "format_long_name": "QuickTime / MOV",
     "start_time": "0.000000",
     "duration": "18.453000",
-    "size": "12609274",
-    "bit_rate": "5466547",
+    "size": "12619103",
+    "bit_rate": "5470808",
     "probe_score": 100,
     "tags": {
       "major_brand": "isom",
       "minor_version": "512",
-      "compatible_brands": "isomiso2avc1mp41mp42",
-      "encoder": "FilmCraft 0.10.0"
+      "compatible_brands": "isomiso2avc1mp41",
+      "encoder": "Lavf62.3.100"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-10-24T10:18:42.649Z",
+  "createdAt": "2026-10-24T10:52:24.469Z",
   "excludes": [
     "research",
     "checkpoints",
@@ -9,13 +9,13 @@
   "files": [
     {
       "file": "README.md",
-      "bytes": 2574,
-      "sha256": "48ae443e8c7c70dc96ca5c6a0313554a946f5dd734daa80eba7e7eb369b12432"
+      "bytes": 2693,
+      "sha256": "86c454703fbd963b92b80661d05d280a81d4819ca0fbb7d77a4f53b3ded02364"
     },
     {
       "file": "index.html",
-      "bytes": 7010,
-      "sha256": "cd7f411e9b38be498b3e106beba0e3d408bd03d59b574aca03d396f95bcd0c47"
+      "bytes": 7046,
+      "sha256": "6ad53053f8a33c957390ffee5a270c182100daf3dc2dacea20a31f5a11930828"
     },
     {
       "file": "media/01-pui-promo-v2-0-freeze.png",
@@ -144,8 +144,8 @@
     },
     {
       "file": "media/01-pui-promo-v2-mix.wav",
-      "bytes": 5308902,
-      "sha256": "2a0b8bfca20007443dffed76b94af6ef8b9673a4cec31fea471720ad2e3c39dc"
+      "bytes": 5308844,
+      "sha256": "3beb5fde06611e3860c25efae256462197f2079b229221b5b9336e7d318a3e16"
     },
     {
       "file": "media/01-pui-promo-v2-tile-0.png",
@@ -489,8 +489,8 @@
     },
     {
       "file": "media/05-medicate-chorus-v2-mix.wav",
-      "bytes": 3955268,
-      "sha256": "50867c5d624767527eabef81f6f1657fa9b0456e898cfa3c5fe18e4e0663552e"
+      "bytes": 3955244,
+      "sha256": "04606f6f9f320ad892f829da04105286d520522337d292c6a85f7d53079b5d1a"
     },
     {
       "file": "media/05-medicate-chorus-v2-raw.wav",
@@ -545,7 +545,7 @@
     {
       "file": "projects/01-pui-promo-v2.fcproj",
       "bytes": 5034,
-      "sha256": "55f8f2c8375bae8e969680b051128d63b4157287ccef6909e688a6f20ee825a9"
+      "sha256": "a8944c169f4d410fed69f4aff9a48350e166ea198d7f9778fbc78904ae883bfc"
     },
     {
       "file": "projects/02-pui-opens-the-inside-v2.ecproj",
@@ -585,7 +585,7 @@
     {
       "file": "projects/05-medicate-chorus-v2.fcproj",
       "bytes": 5094,
-      "sha256": "c7361b4bce6f23dbaaace904cc56514319278985ccdc264063598c6c22db71cc"
+      "sha256": "c56b73649e647c14c0fffd08c20a1c1069980bb6f8eac3701c5c660d49d28b26"
     },
     {
       "file": "qa/01-pui-promo-v2/all-scenes.jpg",
@@ -594,8 +594,18 @@
     },
     {
       "file": "qa/01-pui-promo-v2/all-scenes.json",
-      "bytes": 179,
-      "sha256": "3e98ee074765912cc47aabd7dced94d8aacb15bfca740ba911ffda1b52201e4c"
+      "bytes": 181,
+      "sha256": "f7b9e38a298b1ca03ff4fd196d4713ff9739db16773cf613e9f5bda9b402ecb5"
+    },
+    {
+      "file": "qa/01-pui-promo-v2/audio-remux.json",
+      "bytes": 181,
+      "sha256": "c85bb926a8cd9d6c7fccfe7155f89e093df5be9ecbb53ea934bb796615c1dbd6"
+    },
+    {
+      "file": "qa/01-pui-promo-v2/audio-revision.json",
+      "bytes": 1175,
+      "sha256": "d1868b03f42fcd3acec591b875a34193d45169053ed073818902c61d68a4eea3"
     },
     {
       "file": "qa/01-pui-promo-v2/build.json",
@@ -610,7 +620,7 @@
     {
       "file": "qa/01-pui-promo-v2/continuous-cut-01.json",
       "bytes": 181,
-      "sha256": "7a7e1048f4b5e0e0aa2cbffc57404f036bfd5a648899b3ae4d540723657ea9c0"
+      "sha256": "dff0a77a978f5097e21fc50055da31e9629bd8a66da9d9314b89f43fbf58aab3"
     },
     {
       "file": "qa/01-pui-promo-v2/continuous-cut-02.jpg",
@@ -620,7 +630,7 @@
     {
       "file": "qa/01-pui-promo-v2/continuous-cut-02.json",
       "bytes": 181,
-      "sha256": "d0584ef3ce356487a79f480d496e6a1796e05e63e103de7c334e0374781e51db"
+      "sha256": "91bb9abe6b687813af2972e8744f8c2204cfef09ffb987e4d0f5ebf727a49945"
     },
     {
       "file": "qa/01-pui-promo-v2/continuous-cut-03.jpg",
@@ -630,7 +640,7 @@
     {
       "file": "qa/01-pui-promo-v2/continuous-cut-03.json",
       "bytes": 181,
-      "sha256": "e9166aaa48bb471f2e235bf9ee9215b6336bc49973bb597650eef559a94a91a4"
+      "sha256": "f46c301d8ba27d119758cfb73f24c97199781cc571dad32f00f9736a2bc3e25e"
     },
     {
       "file": "qa/01-pui-promo-v2/continuous-cut-04.jpg",
@@ -640,7 +650,7 @@
     {
       "file": "qa/01-pui-promo-v2/continuous-cut-04.json",
       "bytes": 181,
-      "sha256": "177afce59840654e832ed0d1ce0adb585da8dd363b49207e24ccaccb869bf74b"
+      "sha256": "63245dc78711b47c0681b7424e660dda903027f5cab6720247b22c93d3f8937a"
     },
     {
       "file": "qa/01-pui-promo-v2/continuous-cut.jpg",
@@ -650,7 +660,7 @@
     {
       "file": "qa/01-pui-promo-v2/cover.json",
       "bytes": 181,
-      "sha256": "e898afc37dc1a790d3c4fe88e1df6587bcdb63828afc7b82870bedb4f665b92e"
+      "sha256": "093b9bb3d7d452a59107835c336589c06ec5975a3c3794c2f17672ce17f3e52b"
     },
     {
       "file": "qa/01-pui-promo-v2/delivery-effectcraft.png",
@@ -665,12 +675,12 @@
     {
       "file": "qa/01-pui-promo-v2/delivery-native.json",
       "bytes": 1720,
-      "sha256": "9b8eb29fabb544400daa9cbbea1daa60b13c972a0e1e8e9d1c184b3a7fbe47db"
+      "sha256": "845ffadf687edec5d87e915a9a926557b0e5bd525ea6a6ee2e404477b4f2c32c"
     },
     {
       "file": "qa/01-pui-promo-v2/ec-footage.json",
       "bytes": 485,
-      "sha256": "fe93bed4625d967ef7ca9c296f45da5c9fa3e6edda15d613180b9f05ad04977e"
+      "sha256": "e25598e44c79f7e4aea22e423044b0fb4487c31521f09d9673c55938c362e25a"
     },
     {
       "file": "qa/01-pui-promo-v2/ec-render.json",
@@ -680,32 +690,32 @@
     {
       "file": "qa/01-pui-promo-v2/fc-build.json",
       "bytes": 667,
-      "sha256": "735c8fe481575643af00ae91510d2496e519b0568c846224d751b4561b06ff84"
+      "sha256": "63f2e57e1cccc8e74a16dd0ce1f7f6834710191262a31c766310175d0d4e6ac3"
     },
     {
       "file": "qa/01-pui-promo-v2/fc-export.json",
-      "bytes": 1173,
-      "sha256": "724bf9bd0414fbf954d7900ed0306e1221ebc178d6954acbe726fcc6ce5cc46c"
+      "bytes": 1377,
+      "sha256": "af1dd6c7c4aa4ed2922a4d453b644c7cb2f3f8b6e44072b7ed3be956dbc8d839"
     },
     {
       "file": "qa/01-pui-promo-v2/fc-place.json",
-      "bytes": 497,
-      "sha256": "c390d61d91eddded952e2df43aa61b6a32f5e6404f27b1b5690e2671639bacee"
+      "bytes": 495,
+      "sha256": "dbd80781d797ac49831c59d7d07cc3fca95a3bf1b769499ca5e139ad7444cc40"
     },
     {
       "file": "qa/01-pui-promo-v2/fc-status.json",
-      "bytes": 1733,
-      "sha256": "638e2d1176a65a38effab03c7fe1dbedb2a7b27df72654a3771dae220700ed46"
+      "bytes": 1731,
+      "sha256": "6f0585363d14e49d4f86ab983c75371858acca0eed4a76c796c69ff32cb64b60"
     },
     {
       "file": "qa/01-pui-promo-v2/ffprobe.json",
-      "bytes": 3753,
-      "sha256": "5873af56bba6e2b3ff8b48118299ce97eb7d798069e83016b70af1681de43a9e"
+      "bytes": 3751,
+      "sha256": "b05954e7213823a488bfba68a0749db4ffd926c6aa34d23db1423801311ad02d"
     },
     {
       "file": "qa/01-pui-promo-v2/final-audio.json",
-      "bytes": 70013,
-      "sha256": "c09ad364b57c40856e4b4b8e8d195f836c71c99aeadacdc8a4b2c059bfb872f0"
+      "bytes": 69997,
+      "sha256": "1223bff71ffb4048664ca1ba61b700fd9bdc66e1e933d9741a70504d6c69df33"
     },
     {
       "file": "qa/01-pui-promo-v2/freeze-0.json",
@@ -735,7 +745,7 @@
     {
       "file": "qa/01-pui-promo-v2/full-decode.json",
       "bytes": 181,
-      "sha256": "d8047113c9ea9ee1d2cfadaa2f87b486ed5d2614636316befb9034c4380f7b02"
+      "sha256": "907aa9ae8e4777d19da1e5cbf72c3050d277703d16ab220e37b4ca307c04e6d0"
     },
     {
       "file": "qa/01-pui-promo-v2/layout-and-motion.json",
@@ -839,13 +849,13 @@
     },
     {
       "file": "qa/01-pui-promo-v2/probe-command.json",
-      "bytes": 11103,
-      "sha256": "fe71503da919a88a3a6a098c3c154f87429f08674d9dd18345629e20615b2153"
+      "bytes": 11099,
+      "sha256": "507b37f22c1a928bf109b047edfb4a8b69c8b646a695435e56b820d6bf6c4dc9"
     },
     {
       "file": "qa/01-pui-promo-v2/rendered.json",
-      "bytes": 353,
-      "sha256": "46525cc87b98575d66acc3f727861a82da081ca5b84b8750b7e859e1316e006f"
+      "bytes": 475,
+      "sha256": "9e449504af40d6b36ee81143fa0eb33e198d2270e9b75359110b4887038da342"
     },
     {
       "file": "qa/01-pui-promo-v2/saved-motion-audit.json",
@@ -859,8 +869,8 @@
     },
     {
       "file": "qa/01-pui-promo-v2/technical.json",
-      "bytes": 3696,
-      "sha256": "9bf2dd1d62627596d30a897609cfc8922becc9c392ac90bbe85001894f7b722e"
+      "bytes": 3781,
+      "sha256": "d71f76e97c6bc04211e03c4aa4cfea318d2187cbb244127a92ca915e3a31229b"
     },
     {
       "file": "qa/01-pui-promo-v2/tile-0.json",
@@ -1595,7 +1605,7 @@
     {
       "file": "qa/05-medicate-chorus-v2/all-scenes.json",
       "bytes": 181,
-      "sha256": "91bb9abe6b687813af2972e8744f8c2204cfef09ffb987e4d0f5ebf727a49945"
+      "sha256": "7ece3c3d79ec6b1aefeef8b691d20d582574ba19bf77573188275a65d8510ff6"
     },
     {
       "file": "qa/05-medicate-chorus-v2/audio-excerpt.json",
@@ -1606,6 +1616,16 @@
       "file": "qa/05-medicate-chorus-v2/audio-mix.json",
       "bytes": 181,
       "sha256": "3475379b311ef835a8c4a8c1e942654f73ca4b414862627c04a883608ae912ea"
+    },
+    {
+      "file": "qa/05-medicate-chorus-v2/audio-remux.json",
+      "bytes": 181,
+      "sha256": "e221e26554f17bb3d6af08b056588ac9ecb76aee37f5ac38135f36d3f2029d59"
+    },
+    {
+      "file": "qa/05-medicate-chorus-v2/audio-revision.json",
+      "bytes": 1181,
+      "sha256": "3bbdf1f27bc3e4556edeafd039a647605715e87d13191a161819deafd6cccada"
     },
     {
       "file": "qa/05-medicate-chorus-v2/build.json",
@@ -1620,7 +1640,7 @@
     {
       "file": "qa/05-medicate-chorus-v2/continuous-cut-01.json",
       "bytes": 181,
-      "sha256": "b83297b75971a8ccf7b97f08535e9254dd0b4eb86b2ea82dd71d6faa0177b96b"
+      "sha256": "7099193540cf692291aab4723041c52491ab8a6d340a3f2069a124d19b9bef54"
     },
     {
       "file": "qa/05-medicate-chorus-v2/continuous-cut-02.jpg",
@@ -1630,7 +1650,7 @@
     {
       "file": "qa/05-medicate-chorus-v2/continuous-cut-02.json",
       "bytes": 181,
-      "sha256": "df2b076000859f8059a5cb783623d24e226ae98cb8ef4dbc6146753f1cdf9e6a"
+      "sha256": "b6ab6730bd21bad0d5e495da63e2eaad671ba71cda13744daa576bf5bdcb52db"
     },
     {
       "file": "qa/05-medicate-chorus-v2/continuous-cut-03.jpg",
@@ -1640,7 +1660,7 @@
     {
       "file": "qa/05-medicate-chorus-v2/continuous-cut-03.json",
       "bytes": 181,
-      "sha256": "fea1218aed2b87da0ffe9201f389cac6f294bbf4aeae237ca7ff30f85149fa78"
+      "sha256": "e30d826a477c20bb9ebbc3812255e9b359cea43b8e21b44821efcfc1c556a53d"
     },
     {
       "file": "qa/05-medicate-chorus-v2/continuous-cut-04.jpg",
@@ -1650,7 +1670,7 @@
     {
       "file": "qa/05-medicate-chorus-v2/continuous-cut-04.json",
       "bytes": 181,
-      "sha256": "856bd3ad8dad76e6e129e397db0419337d6c9de8887185a2e737c1d19f9573f7"
+      "sha256": "94c8dedb028dbcfef8300370928e294a1968e2996e6fcbc7cb9123faefc2442a"
     },
     {
       "file": "qa/05-medicate-chorus-v2/continuous-cut.jpg",
@@ -1660,7 +1680,7 @@
     {
       "file": "qa/05-medicate-chorus-v2/cover.json",
       "bytes": 181,
-      "sha256": "879c475f43c23ff2ed53a3e77019a38421d222d4439a8969c4a95a131aff0082"
+      "sha256": "765bd1113c5ab5a9190c89f78bf48f3adb8f05f957083237ddf0bcfcce65001f"
     },
     {
       "file": "qa/05-medicate-chorus-v2/delivery-effectcraft.png",
@@ -1675,12 +1695,12 @@
     {
       "file": "qa/05-medicate-chorus-v2/delivery-native.json",
       "bytes": 1743,
-      "sha256": "68c587f85ddf51c45c65769c9d9bf6f5219439656cc812b6b6e0178a42f54687"
+      "sha256": "10100e58fd2af8bba60fbd02b87c7a686f198b3679c74bfbbb7ce10659e9e397"
     },
     {
       "file": "qa/05-medicate-chorus-v2/ec-footage.json",
       "bytes": 483,
-      "sha256": "4615a21cc78620e7562091465795b7949930d35e42c053d82194d4240d228613"
+      "sha256": "630972ce4a49519d90aeec9c54d1e7a3a93f19263d12bcfadf516c17270ff54f"
     },
     {
       "file": "qa/05-medicate-chorus-v2/ec-render.json",
@@ -1690,32 +1710,32 @@
     {
       "file": "qa/05-medicate-chorus-v2/fc-build.json",
       "bytes": 667,
-      "sha256": "14ba209bef465213db27a4cbe82701e937bbfa05a8b2eea74ebe332b3c27678d"
+      "sha256": "5b7c77fa06f53fb3cc3bc8a7f65ef70c5d03f96ee485b3c3fee930c74153fc8b"
     },
     {
       "file": "qa/05-medicate-chorus-v2/fc-export.json",
-      "bytes": 1195,
-      "sha256": "f9968b92e4b56063b02e3600b50e6f648e4f5c43e5ae1e041dfdaf6264ed247a"
+      "bytes": 1395,
+      "sha256": "7eb81ba2fcd8118ea1dbe46f4023939d6f8bc2cb543df90b7bffff6b703fc754"
     },
     {
       "file": "qa/05-medicate-chorus-v2/fc-place.json",
-      "bytes": 497,
-      "sha256": "56e083d63e17424c6791cb0932dad3619e3ccf10d1ec8122d2fa78123df41f09"
+      "bytes": 495,
+      "sha256": "b036593b2786cce2ec93224993d5d3f472eea443cda4f0270220a148e4fe201b"
     },
     {
       "file": "qa/05-medicate-chorus-v2/fc-status.json",
       "bytes": 1781,
-      "sha256": "2cc6d5d6e63b40766840913aa26dc9e757dd54268106cf8a68ff5876b28b29ed"
+      "sha256": "62316a0849bd402910d0bb3dbaf6371651e6cc483d4f0bc762a435487d920223"
     },
     {
       "file": "qa/05-medicate-chorus-v2/ffprobe.json",
-      "bytes": 3758,
-      "sha256": "7b5ae790ce6f3900effa49258a6d4da0d8f56cbf74f2463acce23f0b9eaf3546"
+      "bytes": 3756,
+      "sha256": "099f9a72c5850455bbb6d39b3f49463a5420bec7cf15f5e73343405213d590ed"
     },
     {
       "file": "qa/05-medicate-chorus-v2/final-audio.json",
-      "bytes": 53389,
-      "sha256": "d3abf96d7b0039b75104842259dc39d8ae60adca29c633e4697347bb46129f94"
+      "bytes": 53371,
+      "sha256": "a99dde40bb4dc46cf35dcf35ecbea13109d29f5ef1f224428dfafa05b07e3334"
     },
     {
       "file": "qa/05-medicate-chorus-v2/freeze-0.json",
@@ -1735,7 +1755,7 @@
     {
       "file": "qa/05-medicate-chorus-v2/full-decode.json",
       "bytes": 181,
-      "sha256": "800e8ae412d75f99ca43e74a3c2a41f74deb4dd49e964d04e9b1efbdc3fa1600"
+      "sha256": "4cf94c74ff1c525e6993a0f0ead6d98c8c8fa9703ac84bd6f048840b50038b7d"
     },
     {
       "file": "qa/05-medicate-chorus-v2/layout-and-motion.json",
@@ -1774,13 +1794,13 @@
     },
     {
       "file": "qa/05-medicate-chorus-v2/probe-command.json",
-      "bytes": 11113,
-      "sha256": "bd3cf2e6db7b285ca258f833282bb68e6230fa44b2d1e5e6557f338b7450e5a3"
+      "bytes": 11109,
+      "sha256": "288f5c617d81b2d17638faa3d99319c09a60ece128380470bc1b29447a5c3c8a"
     },
     {
       "file": "qa/05-medicate-chorus-v2/rendered.json",
-      "bytes": 352,
-      "sha256": "0cbf9ad7ca7e75407241982582aede540dbacec79d85a00655d57f352430d7c1"
+      "bytes": 474,
+      "sha256": "2b5746c2a1cfb77136b7a5a70a85b45480380a686a8c87ef71a2663b4365823d"
     },
     {
       "file": "qa/05-medicate-chorus-v2/saved-motion-audit.json",
@@ -1794,8 +1814,8 @@
     },
     {
       "file": "qa/05-medicate-chorus-v2/technical.json",
-      "bytes": 3218,
-      "sha256": "32b22913123412a0292b6acac94e84a4e569d72a385671b5fd687fe13547600c"
+      "bytes": 3307,
+      "sha256": "32ded89a2eadc9281ce7873bf80749f1c48f817498ecca4049b8bf049e978373"
     },
     {
       "file": "qa/audio-episodes-v2.json",
@@ -1804,13 +1824,13 @@
     },
     {
       "file": "qa/audio-process-05.json",
-      "bytes": 9107,
-      "sha256": "4a3eb7219aa7203be0aa919eff01ff5230a09dd6cf5b4b058e94b65db54d194a"
+      "bytes": 6887,
+      "sha256": "6dd57ddddcd9f7947ab0ef0011ce1315f05e68bc5fdc348cd43ea3ff1ea2a6cd"
     },
     {
       "file": "qa/audio-v2-01.json",
-      "bytes": 13047,
-      "sha256": "44f199c1c550b9eda7c29ff4b93233db6061e6aa77845c1df6f1fe28906d83e4"
+      "bytes": 61559,
+      "sha256": "4e6d5badf9e50736a65e3c4d4c119e0b5c1a87d4dd55c958a9f4329af9f705b3"
     },
     {
       "file": "qa/editor-materials.json",
@@ -1818,9 +1838,19 @@
       "sha256": "1d336d170f21475ab6fbb47658b98bbaeefbbb16342a3042c56418e886be5f0a"
     },
     {
+      "file": "qa/fade-fix-01.json",
+      "bytes": 59003,
+      "sha256": "21b91c990f78faa3b7811f972cc037e67124641da6f3f6540748ff02e5dbce37"
+    },
+    {
+      "file": "qa/fade-fix-05.json",
+      "bytes": 2552,
+      "sha256": "37d38f53cd0b84edc5e30e5440442799825fc3cbc3a886e106b63a5e0a4374d7"
+    },
+    {
       "file": "qa/final-audit.json",
-      "bytes": 4262,
-      "sha256": "aabf9fac9b8b8d43543e753ce8184e6ec1826fb1ba9a3b18cce795699f3045c6"
+      "bytes": 4662,
+      "sha256": "0a2fd50404c4579ad6775177454eb8d9562b5695f85ca5b9c8e6c6b19568bf20"
     },
     {
       "file": "qa/firefox-materials.json",
@@ -1831,6 +1861,11 @@
       "file": "qa/firefox-scroll-review.jpg",
       "bytes": 88551,
       "sha256": "eb461aed282a507762fb220b080c779414a5820ca094d0e72848edbe56fe0736"
+    },
+    {
+      "file": "qa/independent-fade-fix.json",
+      "bytes": 30730,
+      "sha256": "ddbd8044c781f948dce6c5e105a7ed38e0101052b44d044b84ab50a797be8a6d"
     },
     {
       "file": "qa/independent-v2-previews/01-csharp-final.png",
@@ -1874,13 +1909,13 @@
     },
     {
       "file": "qa/independent-visual-v2.json",
-      "bytes": 29315,
-      "sha256": "c9104010f2ba96b1ff46a0e5cf6cfdf10e216f04e0c1bc523009a15b61ceba46"
+      "bytes": 30298,
+      "sha256": "d59f54b7e2bc862e83924ed442de5a8f65f25df2b49ab6003dc9af62f2de2559"
     },
     {
       "file": "qa/portable-package.json",
-      "bytes": 312183,
-      "sha256": "fa9c3cd58ae27b90993321a4cfffd9d62964a4001a0a6f259bfaed84521a08a0"
+      "bytes": 325116,
+      "sha256": "1da038336cf50adda80a1d9b340ac8a5488f9a99b68f75c4f0373b60e8ce6aa9"
     },
     {
       "file": "qa/process-waveforms.json",
@@ -1929,18 +1964,23 @@
     },
     {
       "file": "source/audio-process-05.mjs",
-      "bytes": 8757,
-      "sha256": "c276028ba0a7aa894c80901da2bc32a63cceaac851c4e3de56766a5b67fbd046"
+      "bytes": 9875,
+      "sha256": "52c8ac2a85dd23150294f1dbb8c38632433e25be56da9cf8e961b11cdd799dab"
     },
     {
       "file": "source/audio-v2.mjs",
-      "bytes": 13687,
-      "sha256": "df50ad908eab3c461b06f8ff940cb520817075068e10fa60742351ec8afb01e8"
+      "bytes": 11726,
+      "sha256": "559eb3f2c005443fc64099dd3093b2c4a9896182357a2436f1282adc6513eb6a"
     },
     {
       "file": "source/audit-motion.mjs",
       "bytes": 2570,
       "sha256": "6793c6a407ff2ed2f881e2c773231032911f28a901ca5c68c9658bc6d53c3669"
+    },
+    {
+      "file": "source/bind-audio-review.mjs",
+      "bytes": 2375,
+      "sha256": "567402e1ae4507e25e76ce9b9ce68658207e9c08d567c6f9cae561503f971c1d"
     },
     {
       "file": "source/episodes.mjs",
@@ -1949,13 +1989,13 @@
     },
     {
       "file": "source/finalize.mjs",
-      "bytes": 3805,
-      "sha256": "de630ae204fb90d816da058662d1cd86c80fe9a62d6024ec57b504af27d6fd37"
+      "bytes": 4430,
+      "sha256": "8fe689863000ced6f3ce60b6b4c61901922f5321780de3e087dbfe6981b35847"
     },
     {
       "file": "source/make-index.mjs",
-      "bytes": 9427,
-      "sha256": "d027285a0ed04ecb872e5aa43052165edc8709ccf37b8334c7c4b48d476687ca"
+      "bytes": 9639,
+      "sha256": "3a11ce587022e78392f5d5584af35ab8e845923a12deb92dd06135fc3f96ebfe"
     },
     {
       "file": "source/make-process-visuals.mjs",
@@ -1969,8 +2009,8 @@
     },
     {
       "file": "source/native.mjs",
-      "bytes": 1999,
-      "sha256": "33ae5c395d8d8b258fd25cfbf290fd2cfdc369ac25fa82f73935722123bd3797"
+      "bytes": 2175,
+      "sha256": "a4e8934d8202d202259ff0146bac427b73ec5c01f7e8e27860fb6c474cd85502"
     },
     {
       "file": "source/package.mjs",
@@ -1981,6 +2021,11 @@
       "file": "source/produce.mjs",
       "bytes": 13991,
       "sha256": "a5b5a5da6c935daa9c37feeba074425ffcb5ce455aa1fbc5c318df10411afb3c"
+    },
+    {
+      "file": "source/remix-audio.mjs",
+      "bytes": 3965,
+      "sha256": "245ab83b506db1ba346d6fbd9605d70a3fe42faa9355368619094cbf93e27421"
     },
     {
       "file": "source/verify.mjs",
@@ -1998,14 +2043,19 @@
       "sha256": "668e74b3b4e83539ebef54935dd2fc7e36185b3b3aa903a159d198838c9607c3"
     },
     {
+      "file": "videos/01-pui-promo-v2-audiofix.mp4",
+      "bytes": 12619103,
+      "sha256": "e2073036727c7bdc53d390d50395832b2b8da5e527d3a91d6153be0ef6599716"
+    },
+    {
       "file": "videos/01-pui-promo-v2-cover.jpg",
-      "bytes": 57133,
-      "sha256": "cf58fd356c8b0efad1e01f80f56df7f362bbfee92e33c6c3884b54b265c81ee0"
+      "bytes": 57358,
+      "sha256": "decd6dd9877681191a59be9c112f34a0289d5a648c241737d9d7a1129794c1ee"
     },
     {
       "file": "videos/01-pui-promo-v2.mp4",
-      "bytes": 12609274,
-      "sha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68"
+      "bytes": 12619103,
+      "sha256": "e2073036727c7bdc53d390d50395832b2b8da5e527d3a91d6153be0ef6599716"
     },
     {
       "file": "videos/02-pui-opens-the-inside-v2-cover.jpg",
@@ -2038,24 +2088,29 @@
       "sha256": "cc3ddfeda7b0e420d359b9998e1974819b22401b8efeaa0e7e4557c22af3ba15"
     },
     {
+      "file": "videos/05-medicate-chorus-v2-audiofix.mp4",
+      "bytes": 2500793,
+      "sha256": "927c9767b4e58f4c41e4a3019e03ec015f0c8474c52a45f1d7b174092879b7be"
+    },
+    {
       "file": "videos/05-medicate-chorus-v2-cover.jpg",
       "bytes": 31275,
       "sha256": "eb1303ace90a059528696dcebe550f047d7852e5dbe2362e9a1d619bced6ccdd"
     },
     {
       "file": "videos/05-medicate-chorus-v2.mp4",
-      "bytes": 2493461,
-      "sha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894"
+      "bytes": 2500793,
+      "sha256": "927c9767b4e58f4c41e4a3019e03ec015f0c8474c52a45f1d7b174092879b7be"
     },
     {
       "file": "宣伝-#0085ぷい本人プロモV2の方針.md",
-      "bytes": 1726,
-      "sha256": "5f25bfb7b27509e95e26f1ba6bffd94760df0abcc1b23faaa3e45d5de2d9ac7e"
+      "bytes": 2187,
+      "sha256": "815d0ffd8d3ae78f6c9b1b538656dc3ea12d580f60ed1e6e95f8505347982a3f"
     },
     {
       "file": "素材-#0085実制作画面と音源の出典.md",
-      "bytes": 3056,
-      "sha256": "f8b582814f6ab402978b0b7bb5bacaba948bdef56b8a1ef72ecd353443916f0a"
+      "bytes": 3357,
+      "sha256": "a24d0df987ead3d824352f59e207a7c07a013b25932dff9b9e7904c8fda6b0f5"
     }
   ]
 }

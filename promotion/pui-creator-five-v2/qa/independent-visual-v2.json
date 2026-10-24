@@ -7,10 +7,10 @@
       "slug": "01-pui-promo-v2",
       "status": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
       "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/videos/01-pui-promo-v2.mp4",
-      "videoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+      "videoSha256": "e2073036727c7bdc53d390d50395832b2b8da5e527d3a91d6153be0ef6599716",
       "effectcraftSha256": "fcc02ed1b6f08ee6872c6556c8e7e2873f4d44379667f36f22f3a3d57ff30b4a",
-      "filmcraftSha256": "a11b551becb49479b2744e096b38ebf5a7e9ac8a5608bb4763a126f0d4ae814c",
-      "audioSha256": "2a0b8bfca20007443dffed76b94af6ef8b9673a4cec31fea471720ad2e3c39dc",
+      "filmcraftSha256": "1963e8469c27916af86a0ef7f168a1db9ea886a509d3d159bd05e1c939868268",
+      "audioSha256": "3beb5fde06611e3860c25efae256462197f2079b229221b5b9336e7d318a3e16",
       "coverage": {
         "allSceneSamples": 19,
         "allSceneFrames": [
@@ -131,8 +131,15 @@
         "6.7秒開始18連続画像でGlassは約0.18秒の入場へ着地し、旧版の長い画面外滞在/黒場を解消。UI/追加字幕を静止滞在で読める。",
         "2秒台の素早い部品追従には意図した途中のblurがあるが、2.7秒以降の連続画像で部品は明瞭に着地し、次の再組立を確認できる。画像検査範囲で主文字を読めないまま長く滞在する状態は見られない。",
         "主要追加字幕と元ゲームUI/元MV歌詞は領域を分け、MVの既存歌詞の上に大きな新字幕を重ねていない。",
-        "終端は作品4窓を上、ぷい名と署名を下へ分離。最後9/最初9画像で文字の重なりなく冒頭の実剣へ切り替わる。写真の被写体をぷい本人とは判定していない。"
-      ]
+        "終端は作品4窓を上、ぷい名と署名を下へ分離。最後9/最初9画像で文字の重なりなく冒頭の実剣へ切り替わる。写真の被写体をぷい本人とは判定していない。",
+        "音声修正後も旧版とH264映像ストリームが完全一致。既存の独立画像レビューをこの同一性の検証で継続する。音の検査はindependent-fade-fix.jsonへ分離。"
+      ],
+      "previousImageReviewedVideoSha256": "437e3a90a7e830b9acbf3dec0dcda030a4cbbed7dafab2ea85443bd2254f3c68",
+      "audioRevisionVisualContinuity": {
+        "method": "H264 elementary stream SHA-256 identical; previous independently reviewed pixels retained without re-encoding",
+        "old": "SHA256=010d72d787086c81f203d66a67b51a182eec49ac2ff1033afe8c87a63823eb78",
+        "current": "SHA256=010d72d787086c81f203d66a67b51a182eec49ac2ff1033afe8c87a63823eb78"
+      }
     },
     {
       "episode": "02",
@@ -507,10 +514,10 @@
       "slug": "05-medicate-chorus-v2",
       "status": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
       "video": "/home/pui/Videos/Pui-Promo/2026-10-24/creator-five-v2/videos/05-medicate-chorus-v2.mp4",
-      "videoSha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894",
+      "videoSha256": "927c9767b4e58f4c41e4a3019e03ec015f0c8474c52a45f1d7b174092879b7be",
       "effectcraftSha256": "248495b93c8024ce314b9dd3ccea33ad809b5a17579e872c15a55c2b9b286767",
-      "filmcraftSha256": "693f470ee35c8ac4fb794df867312b28c477d565da722d5ae243b844e510171f",
-      "audioSha256": "50867c5d624767527eabef81f6f1657fa9b0456e898cfa3c5fe18e4e0663552e",
+      "filmcraftSha256": "08b87da88ba088dd0a8bf0019fd9dc1888ddf64bbdae216a922f5593bd7b0c99",
+      "audioSha256": "04606f6f9f320ad892f829da04105286d520522337d292c6a85f7d53079b5d1a",
       "coverage": {
         "allSceneSamples": 6,
         "allSceneFrames": [
@@ -598,11 +605,10 @@
       "findings": [],
       "observations": [
         "実制作manifestの要望/選択と対応する要旨を制作メモとして表示。取得していないChatGPT会話のUIや本人の台詞を捏造していない。",
-        "調整前/後の主要文字・波形・再生線に欠け/干渉は見られない。3.4秒ずつ同じ句を比較する表示と、別に確認した音source21.7〜25.1秒が対応する。",
         "四つの連続カットでは比較カード/要旨/選択が順に分離して表示される。MVへは短いwhipの後に写真と既存下部歌詞が見え、追加文字が主歌詞を隠していない。",
-        "音だけを再exportした最終版。全scene/4連続cutの現画像SHAが既レビュー画像と一致、EC native SHAも同一。ループ最後9/最初9を最新MP4から再抽出して再目視し、映像判定を現video SHAに結び付けた。",
-        "最新mix/rendered/technicalのaudio SHAが一致。A/Bは双方同じfade in0.10/out0.15秒、完成MVはin0.10/out0.20秒。数値の照合であり、音の聴感・クリック・全編試聴を合格判定したものではない。",
-        "最後9+最初9画像でサビ句の既存歌詞が消えてから制作メモ冒頭へ切り替わる。写真の被写体をぷい本人とは判断していない。"
+        "最後9+最初9画像でサビ句の既存歌詞が消えてから制作メモ冒頭へ切り替わる。写真の被写体をぷい本人とは判断していない。",
+        "A/Bは3.4秒の同じ主区間と、双方同じ語尾のpost-roll。音の修正に伴う映像変更はない。",
+        "音声修正後も旧版とH264映像ストリームが完全一致。既存の独立画像レビューをこの同一性の検証で継続する。音の検査はindependent-fade-fix.jsonへ分離。"
       ],
       "limits": {
         "fullRealTimeWatchAndDirectAudition": "NOT_PERFORMED_BY_THIS_AGENT",
@@ -624,6 +630,12 @@
         "finalAacIntegratedLufs": -13.8,
         "finalAacTruePeakDbfs": -2.1,
         "directAudition": "NOT_PERFORMED"
+      },
+      "previousImageReviewedVideoSha256": "faa6c972c7a5a3ca7aa8e861a7c0625188ea085e54f704bdc70232de45871894",
+      "audioRevisionVisualContinuity": {
+        "method": "H264 elementary stream SHA-256 identical; previous independently reviewed pixels retained without re-encoding",
+        "old": "SHA256=b4d46407a9150d5edb8135cac7314739529e9a3fc080e052c084d2a8810087e7",
+        "current": "SHA256=b4d46407a9150d5edb8135cac7314739529e9a3fc080e052c084d2a8810087e7"
       }
     }
   ],
@@ -669,5 +681,6 @@
     "renderedAndTechnicalArtifacts": true,
     "allReviewedImageHashes": true,
     "scope": "現5本と現33画像ファイルの実SHA一致。直接全編視聴/試聴の意味ではない。"
-  }
+  },
+  "audioRevisionScope": "01/05 changed audio only. Root verified identical H264 streams and all prior reviewed image hashes; visual evidence continued mechanically. No new direct audio audition claimed."
 }
