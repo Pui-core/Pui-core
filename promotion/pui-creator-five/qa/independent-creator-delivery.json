@@ -1,0 +1,387 @@
+{
+  "date": "2026-10-24",
+  "issue": "Pui-core/-#84",
+  "status": "TECHNICAL_AND_DELIVERY_CHECKS_PASS_CREATIVE_ACCEPTANCE_PENDING",
+  "scope": "Independent read-only comparison of resolved episodes, native/production/verification/package sources and actual media hashes to saved reports. No code/Git/GUI/Blender/Unity changes.",
+  "sourceSha256": {
+    "source/native.mjs": "33ae5c395d8d8b258fd25cfbf290fd2cfdc369ac25fa82f73935722123bd3797",
+    "source/produce.mjs": "5c3092761a5df6338868ce6e38d7ee51fbf7d12f108f3e9d801179fb0c273dae",
+    "source/verify.mjs": "6b646f1bc8f372dc57a8438a445e3a3042ca91e70a923a9982f7df6885547348",
+    "source/package.mjs": "8e579438fd80e2e81f6f55c9670fa8917f29139bd1588958ba158d3f59e6d266",
+    "source/episodes.mjs": "27d2cf77e07132444a602859e1081e54751eba95ec02cedb321c947d5d5fdbeb",
+    "source/object-reel.mjs": "20e06940c45eaa313dfb99d665533e3f6e184a3c5999739e197d1a69fabb3ba8",
+    "source/apps-reel.mjs": "b316a04c6d66d58491318509b3e70d55c35fb374c0f17596c2f570e1272c4b63",
+    "source/music-reel.mjs": "5d072c4a121fe09391010ea33d0bb96287e48bf0b6a6a1090e246e07c3bd7b31"
+  },
+  "episodes": [
+    {
+      "id": "01-pui-keeps-making",
+      "title": "ぷい、また作ってる。",
+      "durationExpected": 21.6,
+      "durationContainer": 21.61,
+      "frames": 648,
+      "shots": 10,
+      "sha256": "181692f6216b08d89d0620971994cbf3565fa46e36aacf90f48e1c2e4c5d8552",
+      "audio": {
+        "integratedLufs": -13.9,
+        "truePeakDbfs": -1.6
+      },
+      "allPass": true,
+      "checks": {
+        "videoSha": true,
+        "nativeEffectSha": true,
+        "nativeFilmSha": true,
+        "mixSha": true,
+        "frames": true,
+        "duration": true,
+        "fps": true,
+        "dimensions": true,
+        "codecs": true,
+        "fullDecodeReceipt": true,
+        "missingNativeAssets": true,
+        "sourceManifestCount": true,
+        "allSourcesPresent": true,
+        "allSourceAndPlateSha": true,
+        "sourceManifestMatchesEpisode": true
+      }
+    },
+    {
+      "id": "02-pui-opens-the-inside",
+      "title": "ぷいのゲーム、剣の中まで開く。",
+      "durationExpected": 22,
+      "durationContainer": 22.016,
+      "frames": 660,
+      "shots": 7,
+      "sha256": "a767cbf44efeede3951fb2b22c6e7340a31dab70de3e92bcec387b7c812b52a5",
+      "audio": {
+        "integratedLufs": -13.9,
+        "truePeakDbfs": -2.5
+      },
+      "allPass": true,
+      "checks": {
+        "videoSha": true,
+        "nativeEffectSha": true,
+        "nativeFilmSha": true,
+        "mixSha": true,
+        "frames": true,
+        "duration": true,
+        "fps": true,
+        "dimensions": true,
+        "codecs": true,
+        "fullDecodeReceipt": true,
+        "missingNativeAssets": true,
+        "sourceManifestCount": true,
+        "allSourcesPresent": true,
+        "allSourceAndPlateSha": true,
+        "sourceManifestMatchesEpisode": true
+      }
+    },
+    {
+      "id": "03-pui-builds-the-night",
+      "title": "この夜を、作ってる。",
+      "durationExpected": 16.233333333333334,
+      "durationContainer": 16.234,
+      "frames": 487,
+      "shots": 5,
+      "sha256": "6bbf0b488783c97360f4770e3434a288b3bb0fbca3ee59d951cd0f755ea15b67",
+      "audio": {
+        "integratedLufs": -13.9,
+        "truePeakDbfs": -2.6
+      },
+      "allPass": true,
+      "checks": {
+        "videoSha": true,
+        "nativeEffectSha": true,
+        "nativeFilmSha": true,
+        "mixSha": true,
+        "frames": true,
+        "duration": true,
+        "fps": true,
+        "dimensions": true,
+        "codecs": true,
+        "fullDecodeReceipt": true,
+        "missingNativeAssets": true,
+        "sourceManifestCount": true,
+        "allSourcesPresent": true,
+        "allSourceAndPlateSha": true,
+        "sourceManifestMatchesEpisode": true
+      }
+    },
+    {
+      "id": "04-pui-makes-their-tools",
+      "title": "欲しいから、作る。",
+      "durationExpected": 21.6,
+      "durationContainer": 21.61,
+      "frames": 648,
+      "shots": 6,
+      "sha256": "5e735b7790c335f08ec9e6d736c8aba41948f7d8c3c4eed72e24920a0e94e372",
+      "audio": {
+        "integratedLufs": -13.9,
+        "truePeakDbfs": -2.5
+      },
+      "allPass": true,
+      "checks": {
+        "videoSha": true,
+        "nativeEffectSha": true,
+        "nativeFilmSha": true,
+        "mixSha": true,
+        "frames": true,
+        "duration": true,
+        "fps": true,
+        "dimensions": true,
+        "codecs": true,
+        "fullDecodeReceipt": true,
+        "missingNativeAssets": true,
+        "sourceManifestCount": true,
+        "allSourcesPresent": true,
+        "allSourceAndPlateSha": true,
+        "sourceManifestMatchesEpisode": true
+      }
+    },
+    {
+      "id": "05-medicate-made-by-pui",
+      "title": "曲も、歌も、映像も。",
+      "durationExpected": 21.6,
+      "durationContainer": 21.61,
+      "frames": 648,
+      "shots": 3,
+      "sha256": "876c7642b0d2322e8d52258328d214b08764cb547a05115142c9e581ffd578f8",
+      "audio": {
+        "integratedLufs": -14.8,
+        "truePeakDbfs": -1.7
+      },
+      "allPass": true,
+      "checks": {
+        "videoSha": true,
+        "nativeEffectSha": true,
+        "nativeFilmSha": true,
+        "mixSha": true,
+        "frames": true,
+        "duration": true,
+        "fps": true,
+        "dimensions": true,
+        "codecs": true,
+        "fullDecodeReceipt": true,
+        "missingNativeAssets": true,
+        "sourceManifestCount": true,
+        "allSourcesPresent": true,
+        "allSourceAndPlateSha": true,
+        "sourceManifestMatchesEpisode": true
+      }
+    }
+  ],
+  "gallery": {
+    "localReferences": 27,
+    "missingFiles": [],
+    "allPresent": true
+  },
+  "mascot": {
+    "source": "Earlier official-mascot-derived builtin image generation; peace pose retained in this bundle.",
+    "sha256": "4ef929429faf39dda0a79bacffc1ad0a364b048844be9ef7dbbf8ef6e8efe529",
+    "matchesGeneratedOriginal": true
+  },
+  "authorship": {
+    "medicate": "Owner-confirmed 曲・歌・MV：ぷい. Do not infer sole beat composition or photographed-person identity.",
+    "appliedClaim": "Resolved 01/05 and post captions use the confirmed scope; 02/03/04 use campaign-original synthesized scores.",
+    "sourceAndPublicationBoundary": "Used work assets only. Unused other-project research remains local; SNS publication/account changes not performed."
+  },
+  "findings": [
+    {
+      "id": "CREATOR-DEL-001",
+      "severity": "reproduction",
+      "status": "RESOLVED",
+      "file": "source/verify.mjs",
+      "issue": "F relink/save intentionally changes native EC/FC hashes, but original rendered.json native hashes are checked unconditionally.",
+      "suggestion": "At delivery compare native projects to delivery-native.json, while preserving original render record and continuing strict final video/audio SHA checks.",
+      "resolution": "Verified latest source/verify.mjs: original native pair OR delivery native pair linked to the same rendered video SHA. Video/audio checks remain strict; --integrity-only filters flags separately from episode IDs and checks all resolved episodes by default. Latest F source copies match working source."
+    }
+  ],
+  "delivery": {
+    "destination": "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24",
+    "status": "DELIVERY_AUDIT_PASS",
+    "portablePackage": {
+      "nativeReopenSaveRender": true,
+      "receipts": 30,
+      "allExitZero": true,
+      "relocatedSources": 5
+    },
+    "episodes": [
+      {
+        "id": "01-pui-keeps-making",
+        "allPass": true,
+        "checks": {
+          "videoSha": true,
+          "nativeReceiptVideoSha": true,
+          "nativeEffectSha": true,
+          "nativeFilmSha": true,
+          "mixSha": true,
+          "nativeReopenSaveRender": true,
+          "missingAssets": true,
+          "effectFootage": true,
+          "filmFootage": true,
+          "effectProof": true,
+          "filmProof": true,
+          "noOriginalRootInNative": true
+        },
+        "proofPaths": [
+          "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/01-pui-keeps-making/delivery-effectcraft.png",
+          "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/01-pui-keeps-making/delivery-filmcraft.png"
+        ]
+      },
+      {
+        "id": "02-pui-opens-the-inside",
+        "allPass": true,
+        "checks": {
+          "videoSha": true,
+          "nativeReceiptVideoSha": true,
+          "nativeEffectSha": true,
+          "nativeFilmSha": true,
+          "mixSha": true,
+          "nativeReopenSaveRender": true,
+          "missingAssets": true,
+          "effectFootage": true,
+          "filmFootage": true,
+          "effectProof": true,
+          "filmProof": true,
+          "noOriginalRootInNative": true
+        },
+        "proofPaths": [
+          "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/02-pui-opens-the-inside/delivery-effectcraft.png",
+          "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/02-pui-opens-the-inside/delivery-filmcraft.png"
+        ]
+      },
+      {
+        "id": "03-pui-builds-the-night",
+        "allPass": true,
+        "checks": {
+          "videoSha": true,
+          "nativeReceiptVideoSha": true,
+          "nativeEffectSha": true,
+          "nativeFilmSha": true,
+          "mixSha": true,
+          "nativeReopenSaveRender": true,
+          "missingAssets": true,
+          "effectFootage": true,
+          "filmFootage": true,
+          "effectProof": true,
+          "filmProof": true,
+          "noOriginalRootInNative": true
+        },
+        "proofPaths": [
+          "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/03-pui-builds-the-night/delivery-effectcraft.png",
+          "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/03-pui-builds-the-night/delivery-filmcraft.png"
+        ]
+      },
+      {
+        "id": "04-pui-makes-their-tools",
+        "allPass": true,
+        "checks": {
+          "videoSha": true,
+          "nativeReceiptVideoSha": true,
+          "nativeEffectSha": true,
+          "nativeFilmSha": true,
+          "mixSha": true,
+          "nativeReopenSaveRender": true,
+          "missingAssets": true,
+          "effectFootage": true,
+          "filmFootage": true,
+          "effectProof": true,
+          "filmProof": true,
+          "noOriginalRootInNative": true
+        },
+        "proofPaths": [
+          "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/04-pui-makes-their-tools/delivery-effectcraft.png",
+          "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/04-pui-makes-their-tools/delivery-filmcraft.png"
+        ]
+      },
+      {
+        "id": "05-medicate-made-by-pui",
+        "allPass": true,
+        "checks": {
+          "videoSha": true,
+          "nativeReceiptVideoSha": true,
+          "nativeEffectSha": true,
+          "nativeFilmSha": true,
+          "mixSha": true,
+          "nativeReopenSaveRender": true,
+          "missingAssets": true,
+          "effectFootage": true,
+          "filmFootage": true,
+          "effectProof": true,
+          "filmProof": true,
+          "noOriginalRootInNative": true
+        },
+        "proofPaths": [
+          "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/05-medicate-made-by-pui/delivery-effectcraft.png",
+          "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/05-medicate-made-by-pui/delivery-filmcraft.png"
+        ]
+      }
+    ],
+    "gallery": {
+      "references": 27,
+      "missingFiles": [],
+      "allPresent": true,
+      "indexMatchesWorking": true
+    },
+    "proofVisualReview": {
+      "status": "FIVE_FILMCRAFT_NATIVE_PROOFS_VIEWED",
+      "timeSeconds": 9.6,
+      "images": [
+        {
+          "id": "01-pui-keeps-making",
+          "path": "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/01-pui-keeps-making/delivery-filmcraft.png",
+          "sha256": "d15962ae9b576d973fc00c1ac30b4d3966a38b8a8c81505a4f12b9ddc20676b1"
+        },
+        {
+          "id": "02-pui-opens-the-inside",
+          "path": "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/02-pui-opens-the-inside/delivery-filmcraft.png",
+          "sha256": "1aa9de9c2d791570eb84d8b798b7a6b2ff301c5eb82edf2a2b263997ae543d7d"
+        },
+        {
+          "id": "03-pui-builds-the-night",
+          "path": "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/03-pui-builds-the-night/delivery-filmcraft.png",
+          "sha256": "145bd64aae143bd46b731ddaf0f58766f86a5d4199b7bd225b48fb87a83e7679"
+        },
+        {
+          "id": "04-pui-makes-their-tools",
+          "path": "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/04-pui-makes-their-tools/delivery-filmcraft.png",
+          "sha256": "e7f6a03cff4909ede093dc50fa3551055da77ac27938155c1b7f2cf56c28606f"
+        },
+        {
+          "id": "05-medicate-made-by-pui",
+          "path": "/mnt/f/Videos/ぷい本人プロモ5本-2026-10-24/qa/05-medicate-made-by-pui/delivery-filmcraft.png",
+          "sha256": "5d9ae524081eb485a96229df248e0dd5c57f763c973c78b8a2d591ba9ff62661"
+        }
+      ],
+      "observed": "All five native delivery images contain their expected work scene. Creator captions in sampled 01–04 are readable; 05 preserves original MV picture/lyrics without newly asserting photographed-person identity. This is one image per native project, not a full film watch."
+    },
+    "sourceCodeCopies": {
+      "files": [
+        "source/native.mjs",
+        "source/produce.mjs",
+        "source/verify.mjs",
+        "source/package.mjs"
+      ],
+      "allMatchWorking": true
+    },
+    "originalMascot": {
+      "iconExists": true,
+      "iconSha256": "acacb6daf80b79c9b98cf603c39ce4e4398f7e272ae2914488ab8925e794e085",
+      "matchesWorkingIcon": true,
+      "matchesOfficialOriginalRetained": true,
+      "peaceSha256": "4ef929429faf39dda0a79bacffc1ad0a364b048844be9ef7dbbf8ef6e8efe529",
+      "peaceMatchesWorking": true,
+      "promptExists": true,
+      "promptMatchesWorking": true
+    }
+  },
+  "verificationLimits": {
+    "fullDecode": "Existing successful FFmpeg receipts and matching final file hashes checked; not independently rerun.",
+    "sampleVisualReview": "Separate visual QA agent.",
+    "realTimeWholeWatchAndAudition": "NOT_PERFORMED",
+    "ownerCreativeAcceptance": "PENDING",
+    "monetizationEligibility": "NOT_ESTABLISHED",
+    "postPublicationPerformance": "NOT_MEASURED"
+  },
+  "checkedAtUtc": "2026-10-24T08:02:35.650Z"
+}

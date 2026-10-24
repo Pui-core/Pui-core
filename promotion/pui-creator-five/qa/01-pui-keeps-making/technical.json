@@ -1,0 +1,35 @@
+{
+  "status": "TECHNICAL_PASS",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 648,
+  "duration": 21.61,
+  "fullDecode": true,
+  "audio": {
+    "integratedLufs": -13.9,
+    "truePeakDbfs": -1.6
+  },
+  "missingNativeAssets": 0,
+  "allSceneFrames": [
+    12,
+    33,
+    58,
+    99,
+    181,
+    263,
+    344,
+    426,
+    508,
+    590
+  ],
+  "continuousCut": {
+    "start": 2.6333333333333333,
+    "frames": 18
+  },
+  "visualReview": "PASS_WITHIN_EXTRACTED_FRAME_SCOPE",
+  "realTimeWholeWatchAndAudition": "NOT_PERFORMED",
+  "ownerCreativeAcceptance": "PENDING",
+  "sha256": "181692f6216b08d89d0620971994cbf3565fa46e36aacf90f48e1c2e4c5d8552",
+  "visualEvidence": "../independent-creator-visual.json"
+}
