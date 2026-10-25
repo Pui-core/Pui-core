@@ -1,14 +1,14 @@
 {
   "status": "PASS_DELIVERY_NATIVE_REOPEN_SAVE_RENDER_PROVISIONAL",
-  "destination": "/mnt/f/Videos/ProjectP-Core-Puzzle-2026-10-26",
+  "destination": "/mnt/f/Videos/ProjectP-Core-Puzzle-2026-10-26/revision-02-ui-safe",
   "bound": [
     {
       "file": "videos/core-puzzle-voice-no-music.mp4",
-      "sha256": "66f3fcfb85d4ca79b17595fdde64dd6a56499c28c5d037d02cd4a3c8c36c76d5"
+      "sha256": "740474db6bd334d1a8eb0b2668a3692e58217a25891de09eaf8acb97a892a57c"
     },
     {
       "file": "videos/core-puzzle-sfx-only.mp4",
-      "sha256": "392c320daa32437e8ba343f27ade01b093f29e4eef478dee02e643973a719afa"
+      "sha256": "ef9e489eee31d55724fc7b356a41daa345f520f0ec73d781dc6a89847ed9d7c5"
     },
     {
       "file": "covers/core-puzzle-cover.png",
@@ -30,18 +30,18 @@
   "native": [
     {
       "file": "projects/core-puzzle.ecproj",
-      "sourceSha256": "17736f64cb6c4739c0acbb48ddae35d6078bea64fed081a7f2073bd5767e84d8",
-      "deliverySha256": "52efd7eaa959dd4dcce5cbf97f1053d2cfd06bd1c1c978485c55c403a557673c"
+      "sourceSha256": "53c658a781eea526dfe4b0490265475214011d23e88e98e95797f54601f77250",
+      "deliverySha256": "4235245d862ae13acd07f1cbf7844183d561564923e077cbcc7e1c13399cbae6"
     },
     {
       "file": "projects/core-puzzle-voice-no-music.fcproj",
-      "sourceSha256": "ba2d964efe75c4b07c0af7c9cd791da265af909c94e055dfc58a5e09fa5e18c9",
-      "deliverySha256": "756ced6a7a31b8a4bd809371b9a3e8209a9102cd7f89dc893cae487f9b14e220"
+      "sourceSha256": "ece5db802e6e4602d8957d20dfee7c08483278e898f94fa4ba51680838411159",
+      "deliverySha256": "cae7b20fa975e477093ca4de8123424a15841ca356b21c2fa1f2c8a5072e9855"
     },
     {
       "file": "projects/core-puzzle-sfx-only.fcproj",
-      "sourceSha256": "e3a26cf85de3f9f7aaff866716b33d9165b32b4021e8df1a4c59e3cd3da25a70",
-      "deliverySha256": "6d14d0f127f8d32b6d6a38ccd4d44402119611a07ea3d7f83b9677e7e4b37af7"
+      "sourceSha256": "012e123bc820cd76a1d36e4055c1149d60dbf239b4768305c8735cd9ef78ec27",
+      "deliverySha256": "edd27eb0f0cf81d9d289f4a8c499c0f05e522ca369bd595d9026220395976f5d"
     }
   ],
   "photocraft": [
@@ -62,7 +62,7 @@
       "exe": "effectcraft-cli.exe",
       "args": [
         "--project",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle.ecproj",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\core-puzzle.ecproj",
         "--save",
         "run",
         "footage.check",
@@ -71,7 +71,7 @@
         "{}",
         "--json"
       ],
-      "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":2,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\projects\\\\core-puzzle.ecproj\"}\n",
+      "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":2,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-02-ui-safe\\\\projects\\\\core-puzzle.ecproj\"}\n",
       "stderr": ""
     },
     {
@@ -79,17 +79,17 @@
       "exe": "effectcraft-cli.exe",
       "args": [
         "--project",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle.ecproj",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\core-puzzle.ecproj",
         "render-frame",
         "--comp",
         "ProjectP Core Puzzle",
         "--time",
         "5.033333333333333",
         "--out",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\delivery-effectcraft.png",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\qa\\delivery-effectcraft.png",
         "--json"
       ],
-      "stdout": "{\"comp\":122,\"height\":1920,\"ms\":144.0,\"path\":\"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\qa\\\\delivery-effectcraft.png\",\"time\":5.033333333333333,\"width\":1080}\n",
+      "stdout": "{\"comp\":122,\"height\":1920,\"ms\":218.9,\"path\":\"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-02-ui-safe\\\\qa\\\\delivery-effectcraft.png\",\"time\":5.033333333333333,\"width\":1080}\n",
       "stderr": ""
     },
     {
@@ -97,11 +97,11 @@
       "exe": "filmcraft-cli.exe",
       "args": [
         "--project",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-voice-no-music.fcproj",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\core-puzzle-voice-no-music.fcproj",
         "exec",
         "media.status"
       ],
-      "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"f42d1400a1f75d84\",\n      \"size\": 343609657\n    },\n    \"item\": 4,\n    \"name\": \"core-puzzle-picture.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\media\\\\core-puzzle-picture.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"a74d355d284f4d53\",\n      \"size\": 5760102\n    },\n    \"item\": 5,\n    \"name\": \"voice-sfx-no-music.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\media\\\\voice-sfx-no-music.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+      "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"4d7552a99d9cd931\",\n      \"size\": 324445295\n    },\n    \"item\": 4,\n    \"name\": \"core-puzzle-picture.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-02-ui-safe\\\\media\\\\core-puzzle-picture.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"a74d355d284f4d53\",\n      \"size\": 5760102\n    },\n    \"item\": 5,\n    \"name\": \"voice-sfx-no-music.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-02-ui-safe\\\\media\\\\voice-sfx-no-music.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
       "stderr": ""
     },
     {
@@ -109,27 +109,27 @@
       "exe": "filmcraft-cli.exe",
       "args": [
         "--project",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-voice-no-music.fcproj",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\core-puzzle-voice-no-music.fcproj",
         "--save",
         "render",
         "--seconds",
         "5.033333333333333",
         "--out",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\delivery-core-puzzle-voice-no-music.png"
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\qa\\delivery-core-puzzle-voice-no-music.png"
       ],
       "stdout": "",
-      "stderr": "rendered 1080x1920 in 10.6 ms → F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\delivery-core-puzzle-voice-no-music.png\n"
+      "stderr": "rendered 1080x1920 in 22.2 ms → F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\qa\\delivery-core-puzzle-voice-no-music.png\n"
     },
     {
       "exit": 0,
       "exe": "filmcraft-cli.exe",
       "args": [
         "--project",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-sfx-only.fcproj",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\core-puzzle-sfx-only.fcproj",
         "exec",
         "media.status"
       ],
-      "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"f42d1400a1f75d84\",\n      \"size\": 343609657\n    },\n    \"item\": 4,\n    \"name\": \"core-puzzle-picture.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\media\\\\core-puzzle-picture.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"0d3ef23a17ba59ed\",\n      \"size\": 5760044\n    },\n    \"item\": 5,\n    \"name\": \"editorial-sfx.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\media\\\\editorial-sfx.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+      "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"4d7552a99d9cd931\",\n      \"size\": 324445295\n    },\n    \"item\": 4,\n    \"name\": \"core-puzzle-picture.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-02-ui-safe\\\\media\\\\core-puzzle-picture.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"0d3ef23a17ba59ed\",\n      \"size\": 5760044\n    },\n    \"item\": 5,\n    \"name\": \"editorial-sfx.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-02-ui-safe\\\\media\\\\editorial-sfx.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
       "stderr": ""
     },
     {
@@ -137,25 +137,25 @@
       "exe": "filmcraft-cli.exe",
       "args": [
         "--project",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-sfx-only.fcproj",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\core-puzzle-sfx-only.fcproj",
         "--save",
         "render",
         "--seconds",
         "5.033333333333333",
         "--out",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\delivery-core-puzzle-sfx-only.png"
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\qa\\delivery-core-puzzle-sfx-only.png"
       ],
       "stdout": "",
-      "stderr": "rendered 1080x1920 in 10.4 ms → F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\delivery-core-puzzle-sfx-only.png\n"
+      "stderr": "rendered 1080x1920 in 20.3 ms → F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\qa\\delivery-core-puzzle-sfx-only.png\n"
     },
     {
       "exit": 0,
       "exe": "photocraft-cli.exe",
       "args": [
         "run",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\covers\\core-puzzle-cover.pcraft",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\covers\\core-puzzle-cover.pcraft",
         "--out",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-cover-delivery-reopened.pcraft"
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\core-puzzle-cover-delivery-reopened.pcraft"
       ],
       "stdout": "",
       "stderr": ""
@@ -165,8 +165,8 @@
       "exe": "photocraft-cli.exe",
       "args": [
         "convert",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-cover-delivery-reopened.pcraft",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\core-puzzle-cover-delivery.png",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\core-puzzle-cover-delivery-reopened.pcraft",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\qa\\core-puzzle-cover-delivery.png",
         "--format",
         "png"
       ],
@@ -178,9 +178,9 @@
       "exe": "photocraft-cli.exe",
       "args": [
         "run",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\comparison.pcraft",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\comparison.pcraft",
         "--out",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\comparison-delivery-reopened.pcraft"
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\comparison-delivery-reopened.pcraft"
       ],
       "stdout": "",
       "stderr": ""
@@ -190,8 +190,8 @@
       "exe": "photocraft-cli.exe",
       "args": [
         "convert",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\comparison-delivery-reopened.pcraft",
-        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\comparison-delivery.png",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\comparison-delivery-reopened.pcraft",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\qa\\comparison-delivery.png",
         "--format",
         "png"
       ],

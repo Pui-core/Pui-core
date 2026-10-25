@@ -14042,7 +14042,7 @@
         ],
         "layers": [
           {
-            "id": 1482,
+            "id": 1404,
             "name": "Game title",
             "source": {
               "type": "Text"
@@ -14076,7 +14076,7 @@
             "markers": [],
             "auto_orient": "Off",
             "props": {
-              "uid": 1483,
+              "uid": 1405,
               "match": "layer",
               "name": "Game title",
               "kind": {
@@ -14086,7 +14086,7 @@
               "children": [
                 {
                   "node": "Group",
-                  "uid": 1498,
+                  "uid": 1420,
                   "match": "text",
                   "name": "Text",
                   "kind": {
@@ -14096,7 +14096,7 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1484,
+                      "uid": 1406,
                       "match": "sourceText",
                       "name": "Source Text",
                       "value": {
@@ -14166,7 +14166,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1485,
+                      "uid": 1407,
                       "match": "perChar3d",
                       "name": "Per-character 3D",
                       "value": {
@@ -14185,7 +14185,7 @@
                     },
                     {
                       "node": "Group",
-                      "uid": 1487,
+                      "uid": 1409,
                       "match": "pathOptions",
                       "name": "Path Options",
                       "kind": {
@@ -14195,7 +14195,7 @@
                       "children": [
                         {
                           "node": "Prop",
-                          "uid": 1486,
+                          "uid": 1408,
                           "match": "path",
                           "name": "Path",
                           "value": {
@@ -14217,7 +14217,7 @@
                         },
                         {
                           "node": "Prop",
-                          "uid": 1488,
+                          "uid": 1410,
                           "match": "reversePath",
                           "name": "Reverse Path",
                           "value": {
@@ -14236,7 +14236,7 @@
                         },
                         {
                           "node": "Prop",
-                          "uid": 1489,
+                          "uid": 1411,
                           "match": "perpendicular",
                           "name": "Perpendicular To Path",
                           "value": {
@@ -14255,7 +14255,7 @@
                         },
                         {
                           "node": "Prop",
-                          "uid": 1490,
+                          "uid": 1412,
                           "match": "forceAlignment",
                           "name": "Force Alignment",
                           "value": {
@@ -14274,7 +14274,7 @@
                         },
                         {
                           "node": "Prop",
-                          "uid": 1491,
+                          "uid": 1413,
                           "match": "firstMargin",
                           "name": "First Margin",
                           "value": {
@@ -14293,7 +14293,7 @@
                         },
                         {
                           "node": "Prop",
-                          "uid": 1492,
+                          "uid": 1414,
                           "match": "lastMargin",
                           "name": "Last Margin",
                           "value": {
@@ -14314,7 +14314,7 @@
                     },
                     {
                       "node": "Group",
-                      "uid": 1493,
+                      "uid": 1415,
                       "match": "moreOptions",
                       "name": "More Options",
                       "kind": {
@@ -14324,7 +14324,7 @@
                       "children": [
                         {
                           "node": "Prop",
-                          "uid": 1494,
+                          "uid": 1416,
                           "match": "anchorGrouping",
                           "name": "Anchor Point Grouping",
                           "value": {
@@ -14349,7 +14349,7 @@
                         },
                         {
                           "node": "Prop",
-                          "uid": 1495,
+                          "uid": 1417,
                           "match": "groupingAlignment",
                           "name": "Grouping Alignment",
                           "value": {
@@ -14371,7 +14371,7 @@
                         },
                         {
                           "node": "Prop",
-                          "uid": 1496,
+                          "uid": 1418,
                           "match": "fillStroke",
                           "name": "Fill & Stroke",
                           "value": {
@@ -14395,7 +14395,7 @@
                         },
                         {
                           "node": "Prop",
-                          "uid": 1497,
+                          "uid": 1419,
                           "match": "interCharBlend",
                           "name": "Inter-Character Blending",
                           "value": {
@@ -14444,7 +14444,7 @@
                     },
                     {
                       "node": "Group",
-                      "uid": 1499,
+                      "uid": 1421,
                       "match": "animators",
                       "name": "Animators",
                       "kind": {
@@ -14457,7 +14457,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1500,
+                  "uid": 1422,
                   "match": "masks",
                   "name": "Masks",
                   "kind": {
@@ -14468,7 +14468,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1501,
+                  "uid": 1423,
                   "match": "effects",
                   "name": "Effects",
                   "kind": {
@@ -14479,7 +14479,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1510,
+                  "uid": 1432,
                   "match": "transform",
                   "name": "Transform",
                   "kind": {
@@ -14489,7 +14489,7 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1502,
+                      "uid": 1424,
                       "match": "anchor",
                       "name": "Anchor Point",
                       "value": {
@@ -14512,7 +14512,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1503,
+                      "uid": 1425,
                       "match": "position",
                       "name": "Position",
                       "value": {
@@ -14535,7 +14535,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1504,
+                      "uid": 1426,
                       "match": "scale",
                       "name": "Scale",
                       "value": {
@@ -14558,7 +14558,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1505,
+                      "uid": 1427,
                       "match": "orientation",
                       "name": "Orientation",
                       "value": {
@@ -14581,7 +14581,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1506,
+                      "uid": 1428,
                       "match": "rotationX",
                       "name": "X Rotation",
                       "value": {
@@ -14600,7 +14600,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1507,
+                      "uid": 1429,
                       "match": "rotationY",
                       "name": "Y Rotation",
                       "value": {
@@ -14619,7 +14619,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1508,
+                      "uid": 1430,
                       "match": "rotation",
                       "name": "Rotation",
                       "value": {
@@ -14638,7 +14638,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1509,
+                      "uid": 1431,
                       "match": "opacity",
                       "name": "Opacity",
                       "value": {
@@ -14664,7 +14664,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1511,
+                  "uid": 1433,
                   "match": "materialOptions",
                   "name": "Material Options",
                   "kind": {
@@ -14674,7 +14674,7 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1512,
+                      "uid": 1434,
                       "match": "castsShadows",
                       "name": "Casts Shadows",
                       "value": {
@@ -14698,7 +14698,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1513,
+                      "uid": 1435,
                       "match": "lightTransmission",
                       "name": "Light Transmission",
                       "value": {
@@ -14717,7 +14717,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1514,
+                      "uid": 1436,
                       "match": "acceptsShadows",
                       "name": "Accepts Shadows",
                       "value": {
@@ -14741,7 +14741,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1515,
+                      "uid": 1437,
                       "match": "acceptsLights",
                       "name": "Accepts Lights",
                       "value": {
@@ -14760,7 +14760,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1516,
+                      "uid": 1438,
                       "match": "ambient",
                       "name": "Ambient",
                       "value": {
@@ -14779,7 +14779,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1517,
+                      "uid": 1439,
                       "match": "diffuse",
                       "name": "Diffuse",
                       "value": {
@@ -14798,7 +14798,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1518,
+                      "uid": 1440,
                       "match": "specularIntensity",
                       "name": "Specular Intensity",
                       "value": {
@@ -14817,7 +14817,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1519,
+                      "uid": 1441,
                       "match": "specularShininess",
                       "name": "Specular Shininess",
                       "value": {
@@ -14836,7 +14836,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1520,
+                      "uid": 1442,
                       "match": "metal",
                       "name": "Metal",
                       "value": {
@@ -14859,7 +14859,7 @@
             }
           },
           {
-            "id": 1436,
+            "id": 1358,
             "name": "End title clean plate",
             "source": {
               "type": "Shape"
@@ -14893,7 +14893,7 @@
             "markers": [],
             "auto_orient": "Off",
             "props": {
-              "uid": 1437,
+              "uid": 1359,
               "match": "layer",
               "name": "End title clean plate",
               "kind": {
@@ -14903,7 +14903,7 @@
               "children": [
                 {
                   "node": "Group",
-                  "uid": 1438,
+                  "uid": 1360,
                   "match": "contents",
                   "name": "Contents",
                   "kind": {
@@ -14913,7 +14913,7 @@
                   "children": [
                     {
                       "node": "Group",
-                      "uid": 1472,
+                      "uid": 1394,
                       "match": "group",
                       "name": "Rectangle 1",
                       "kind": {
@@ -14923,7 +14923,7 @@
                       "children": [
                         {
                           "node": "Prop",
-                          "uid": 1473,
+                          "uid": 1395,
                           "match": "blend",
                           "name": "Blend Mode",
                           "value": {
@@ -14942,7 +14942,7 @@
                         },
                         {
                           "node": "Group",
-                          "uid": 1471,
+                          "uid": 1393,
                           "match": "contents",
                           "name": "Contents",
                           "kind": {
@@ -14952,7 +14952,7 @@
                           "children": [
                             {
                               "node": "Group",
-                              "uid": 1460,
+                              "uid": 1382,
                               "match": "rect",
                               "name": "Rectangle Path 1",
                               "kind": {
@@ -14962,7 +14962,7 @@
                               "children": [
                                 {
                                   "node": "Prop",
-                                  "uid": 1461,
+                                  "uid": 1383,
                                   "match": "direction",
                                   "name": "Path Direction",
                                   "value": {
@@ -14981,7 +14981,7 @@
                                 },
                                 {
                                   "node": "Prop",
-                                  "uid": 1462,
+                                  "uid": 1384,
                                   "match": "size",
                                   "name": "Size",
                                   "value": {
@@ -15003,7 +15003,7 @@
                                 },
                                 {
                                   "node": "Prop",
-                                  "uid": 1463,
+                                  "uid": 1385,
                                   "match": "position",
                                   "name": "Position",
                                   "value": {
@@ -15025,7 +15025,7 @@
                                 },
                                 {
                                   "node": "Prop",
-                                  "uid": 1464,
+                                  "uid": 1386,
                                   "match": "roundness",
                                   "name": "Roundness",
                                   "value": {
@@ -15046,7 +15046,7 @@
                             },
                             {
                               "node": "Group",
-                              "uid": 1465,
+                              "uid": 1387,
                               "match": "fill",
                               "name": "Fill 1",
                               "kind": {
@@ -15056,7 +15056,7 @@
                               "children": [
                                 {
                                   "node": "Prop",
-                                  "uid": 1466,
+                                  "uid": 1388,
                                   "match": "blend",
                                   "name": "Blend Mode",
                                   "value": {
@@ -15075,7 +15075,7 @@
                                 },
                                 {
                                   "node": "Prop",
-                                  "uid": 1467,
+                                  "uid": 1389,
                                   "match": "composite",
                                   "name": "Composite",
                                   "value": {
@@ -15098,7 +15098,7 @@
                                 },
                                 {
                                   "node": "Prop",
-                                  "uid": 1468,
+                                  "uid": 1390,
                                   "match": "rule",
                                   "name": "Fill Rule",
                                   "value": {
@@ -15121,7 +15121,7 @@
                                 },
                                 {
                                   "node": "Prop",
-                                  "uid": 1469,
+                                  "uid": 1391,
                                   "match": "color",
                                   "name": "Color",
                                   "value": {
@@ -15145,7 +15145,7 @@
                                 },
                                 {
                                   "node": "Prop",
-                                  "uid": 1470,
+                                  "uid": 1392,
                                   "match": "opacity",
                                   "name": "Opacity",
                                   "value": {
@@ -15173,7 +15173,7 @@
                         },
                         {
                           "node": "Group",
-                          "uid": 1474,
+                          "uid": 1396,
                           "match": "transform",
                           "name": "Transform",
                           "kind": {
@@ -15183,7 +15183,7 @@
                           "children": [
                             {
                               "node": "Prop",
-                              "uid": 1475,
+                              "uid": 1397,
                               "match": "anchor",
                               "name": "Anchor Point",
                               "value": {
@@ -15205,7 +15205,7 @@
                             },
                             {
                               "node": "Prop",
-                              "uid": 1476,
+                              "uid": 1398,
                               "match": "position",
                               "name": "Position",
                               "value": {
@@ -15227,7 +15227,7 @@
                             },
                             {
                               "node": "Prop",
-                              "uid": 1477,
+                              "uid": 1399,
                               "match": "scale",
                               "name": "Scale",
                               "value": {
@@ -15249,7 +15249,7 @@
                             },
                             {
                               "node": "Prop",
-                              "uid": 1478,
+                              "uid": 1400,
                               "match": "skew",
                               "name": "Skew",
                               "value": {
@@ -15273,7 +15273,7 @@
                             },
                             {
                               "node": "Prop",
-                              "uid": 1479,
+                              "uid": 1401,
                               "match": "skewAxis",
                               "name": "Skew Axis",
                               "value": {
@@ -15292,7 +15292,7 @@
                             },
                             {
                               "node": "Prop",
-                              "uid": 1480,
+                              "uid": 1402,
                               "match": "rotation",
                               "name": "Rotation",
                               "value": {
@@ -15311,7 +15311,7 @@
                             },
                             {
                               "node": "Prop",
-                              "uid": 1481,
+                              "uid": 1403,
                               "match": "opacity",
                               "name": "Opacity",
                               "value": {
@@ -15341,7 +15341,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1439,
+                  "uid": 1361,
                   "match": "masks",
                   "name": "Masks",
                   "kind": {
@@ -15352,7 +15352,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1440,
+                  "uid": 1362,
                   "match": "effects",
                   "name": "Effects",
                   "kind": {
@@ -15363,7 +15363,7 @@
                 },
                 {
                   "node": "Group",
-                  "uid": 1449,
+                  "uid": 1371,
                   "match": "transform",
                   "name": "Transform",
                   "kind": {
@@ -15373,7 +15373,7 @@
                   "children": [
                     {
                       "node": "Prop",
-                      "uid": 1441,
+                      "uid": 1363,
                       "match": "anchor",
                       "name": "Anchor Point",
                       "value": {
@@ -15396,7 +15396,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1442,
+                      "uid": 1364,
                       "match": "position",
                       "name": "Position",
                       "value": {
@@ -15419,7 +15419,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1443,
+                      "uid": 1365,
                       "match": "scale",
                       "name": "Scale",
                       "value": {
@@ -15442,7 +15442,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1444,
+                      "uid": 1366,
                       "match": "orientation",
                       "name": "Orientation",
                       "value": {
@@ -15465,7 +15465,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1445,
+                      "uid": 1367,
                       "match": "rotationX",
                       "name": "X Rotation",
                       "value": {
@@ -15484,7 +15484,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1446,
+                      "uid": 1368,
                       "match": "rotationY",
                       "name": "Y Rotation",
                       "value": {
@@ -15503,1820 +15503,186 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1447,
-                      "match": "rotation",
-                      "name": "Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1448,
-                      "match": "opacity",
-                      "name": "Opacity",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Slider",
-                        "min": 0.0,
-                        "max": 100.0,
-                        "slider_min": 0.0,
-                        "slider_max": 100.0,
-                        "decimals": 0
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    }
-                  ]
-                },
-                {
-                  "node": "Group",
-                  "uid": 1450,
-                  "match": "materialOptions",
-                  "name": "Material Options",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": [
-                    {
-                      "node": "Prop",
-                      "uid": 1451,
-                      "match": "castsShadows",
-                      "name": "Casts Shadows",
-                      "value": {
-                        "t": "Enum",
-                        "v": 0
-                      },
-                      "ui": {
-                        "kind": "Popup",
-                        "options": [
-                          "Off",
-                          "On",
-                          "Only"
-                        ]
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1452,
-                      "match": "lightTransmission",
-                      "name": "Light Transmission",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1453,
-                      "match": "acceptsShadows",
-                      "name": "Accepts Shadows",
-                      "value": {
-                        "t": "Enum",
-                        "v": 1
-                      },
-                      "ui": {
-                        "kind": "Popup",
-                        "options": [
-                          "Off",
-                          "On",
-                          "Only"
-                        ]
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1454,
-                      "match": "acceptsLights",
-                      "name": "Accepts Lights",
-                      "value": {
-                        "t": "Bool",
-                        "v": true
-                      },
-                      "ui": {
-                        "kind": "Checkbox"
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1455,
-                      "match": "ambient",
-                      "name": "Ambient",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1456,
-                      "match": "diffuse",
-                      "name": "Diffuse",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 50.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1457,
-                      "match": "specularIntensity",
-                      "name": "Specular Intensity",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 50.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1458,
-                      "match": "specularShininess",
-                      "name": "Specular Shininess",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 5.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1459,
-                      "match": "metal",
-                      "name": "Metal",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "id": 1397,
-            "name": "Author",
-            "source": {
-              "type": "Text"
-            },
-            "label": "Red",
-            "comment": "",
-            "start_time": 0,
-            "in_point": 0,
-            "out_point": 5080320000000,
-            "stretch": 100.0,
-            "switches": {
-              "video": true,
-              "audio": true,
-              "solo": false,
-              "locked": false,
-              "shy": false,
-              "collapse": false,
-              "quality": "Best",
-              "sampling": "Bilinear",
-              "effects": true,
-              "frame_blend": "Off",
-              "motion_blur": false,
-              "adjustment": false,
-              "three_d": false,
-              "guide": false
-            },
-            "blend_mode": "Normal",
-            "preserve_transparency": false,
-            "track_matte": null,
-            "parent": null,
-            "markers": [],
-            "auto_orient": "Off",
-            "props": {
-              "uid": 1398,
-              "match": "layer",
-              "name": "Author",
-              "kind": {
-                "kind": "Plain"
-              },
-              "enabled": true,
-              "children": [
-                {
-                  "node": "Group",
-                  "uid": 1413,
-                  "match": "text",
-                  "name": "Text",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": [
-                    {
-                      "node": "Prop",
-                      "uid": 1399,
-                      "match": "sourceText",
-                      "name": "Source Text",
-                      "value": {
-                        "t": "Text",
-                        "v": {
-                          "text": "ProjectP / ぷい",
-                          "font": "Meiryo",
-                          "style": "Bold",
-                          "size": 27.0,
-                          "fill": [
-                            0.6666667,
-                            0.7921569,
-                            0.7647059,
-                            1.0
-                          ],
-                          "stroke": [
-                            0.0,
-                            0.0,
-                            0.0,
-                            1.0
-                          ],
-                          "stroke_width": 0.0,
-                          "apply_fill": true,
-                          "apply_stroke": false,
-                          "stroke_over_fill": true,
-                          "tracking": 0.0,
-                          "leading": null,
-                          "justify": "Center",
-                          "baseline_shift": 0.0,
-                          "h_scale": 100.0,
-                          "v_scale": 100.0,
-                          "faux_bold": false,
-                          "faux_italic": false,
-                          "all_caps": false,
-                          "small_caps": false,
-                          "box_size": null,
-                          "box_pos": [
-                            0.0,
-                            0.0
-                          ],
-                          "tsume": 0.0,
-                          "baseline": "Normal",
-                          "kerning": "Metrics",
-                          "ligatures": true,
-                          "tate_chu_yoko": false,
-                          "vertical_roman_upright": false,
-                          "indent_left": 0.0,
-                          "indent_right": 0.0,
-                          "indent_first": 0.0,
-                          "space_before": 0.0,
-                          "space_after": 0.0,
-                          "direction": "Ltr",
-                          "composer": "EveryLine",
-                          "hanging_punctuation": false,
-                          "vertical": false
-                        }
-                      },
-                      "ui": {
-                        "kind": "Text"
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1400,
-                      "match": "perChar3d",
-                      "name": "Per-character 3D",
-                      "value": {
-                        "t": "Bool",
-                        "v": false
-                      },
-                      "ui": {
-                        "kind": "Hidden"
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": true
-                    },
-                    {
-                      "node": "Group",
-                      "uid": 1402,
-                      "match": "pathOptions",
-                      "name": "Path Options",
-                      "kind": {
-                        "kind": "Plain"
-                      },
-                      "enabled": true,
-                      "children": [
-                        {
-                          "node": "Prop",
-                          "uid": 1401,
-                          "match": "path",
-                          "name": "Path",
-                          "value": {
-                            "t": "Enum",
-                            "v": 0
-                          },
-                          "ui": {
-                            "kind": "Popup",
-                            "options": [
-                              "None"
-                            ]
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": true
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1403,
-                          "match": "reversePath",
-                          "name": "Reverse Path",
-                          "value": {
-                            "t": "Bool",
-                            "v": false
-                          },
-                          "ui": {
-                            "kind": "Checkbox"
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1404,
-                          "match": "perpendicular",
-                          "name": "Perpendicular To Path",
-                          "value": {
-                            "t": "Bool",
-                            "v": true
-                          },
-                          "ui": {
-                            "kind": "Checkbox"
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1405,
-                          "match": "forceAlignment",
-                          "name": "Force Alignment",
-                          "value": {
-                            "t": "Bool",
-                            "v": false
-                          },
-                          "ui": {
-                            "kind": "Checkbox"
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1406,
-                          "match": "firstMargin",
-                          "name": "First Margin",
-                          "value": {
-                            "t": "Scalar",
-                            "v": 0.0
-                          },
-                          "ui": {
-                            "kind": "Pixels"
-                          },
-                          "spatial": false,
-                          "hold_only": false,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1407,
-                          "match": "lastMargin",
-                          "name": "Last Margin",
-                          "value": {
-                            "t": "Scalar",
-                            "v": 0.0
-                          },
-                          "ui": {
-                            "kind": "Pixels"
-                          },
-                          "spatial": false,
-                          "hold_only": false,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        }
-                      ]
-                    },
-                    {
-                      "node": "Group",
-                      "uid": 1408,
-                      "match": "moreOptions",
-                      "name": "More Options",
-                      "kind": {
-                        "kind": "Plain"
-                      },
-                      "enabled": true,
-                      "children": [
-                        {
-                          "node": "Prop",
-                          "uid": 1409,
-                          "match": "anchorGrouping",
-                          "name": "Anchor Point Grouping",
-                          "value": {
-                            "t": "Enum",
-                            "v": 0
-                          },
-                          "ui": {
-                            "kind": "Popup",
-                            "options": [
-                              "Character",
-                              "Word",
-                              "Line",
-                              "All"
-                            ]
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": true
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1410,
-                          "match": "groupingAlignment",
-                          "name": "Grouping Alignment",
-                          "value": {
-                            "t": "Vec2",
-                            "v": [
-                              0.0,
-                              0.0
-                            ]
-                          },
-                          "ui": {
-                            "kind": "Percent"
-                          },
-                          "spatial": false,
-                          "hold_only": false,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1411,
-                          "match": "fillStroke",
-                          "name": "Fill & Stroke",
-                          "value": {
-                            "t": "Enum",
-                            "v": 0
-                          },
-                          "ui": {
-                            "kind": "Popup",
-                            "options": [
-                              "Per Character Palette",
-                              "All Fills Over All Strokes",
-                              "All Strokes Over All Fills"
-                            ]
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": true
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1412,
-                          "match": "interCharBlend",
-                          "name": "Inter-Character Blending",
-                          "value": {
-                            "t": "Enum",
-                            "v": 0
-                          },
-                          "ui": {
-                            "kind": "Popup",
-                            "options": [
-                              "Normal",
-                              "Darken",
-                              "Multiply",
-                              "Color Burn",
-                              "Linear Burn",
-                              "Darker Color",
-                              "Add",
-                              "Lighten",
-                              "Screen",
-                              "Color Dodge",
-                              "Lighter Color",
-                              "Overlay",
-                              "Soft Light",
-                              "Hard Light",
-                              "Linear Light",
-                              "Vivid Light",
-                              "Pin Light",
-                              "Hard Mix",
-                              "Difference",
-                              "Exclusion",
-                              "Subtract",
-                              "Divide",
-                              "Hue",
-                              "Saturation",
-                              "Color",
-                              "Luminosity"
-                            ]
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": true
-                        }
-                      ]
-                    },
-                    {
-                      "node": "Group",
-                      "uid": 1414,
-                      "match": "animators",
-                      "name": "Animators",
-                      "kind": {
-                        "kind": "Plain"
-                      },
-                      "enabled": true,
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "node": "Group",
-                  "uid": 1415,
-                  "match": "masks",
-                  "name": "Masks",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": []
-                },
-                {
-                  "node": "Group",
-                  "uid": 1416,
-                  "match": "effects",
-                  "name": "Effects",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": []
-                },
-                {
-                  "node": "Group",
-                  "uid": 1425,
-                  "match": "transform",
-                  "name": "Transform",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": [
-                    {
-                      "node": "Prop",
-                      "uid": 1417,
-                      "match": "anchor",
-                      "name": "Anchor Point",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          0.586669921875,
-                          -8.694580078125,
-                          0.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Point"
-                      },
-                      "spatial": true,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 2,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1418,
-                      "match": "position",
-                      "name": "Position",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          500.0,
-                          130.0,
-                          0.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Point"
-                      },
-                      "spatial": true,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 2,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1419,
-                      "match": "scale",
-                      "name": "Scale",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          100.0,
-                          100.0,
-                          100.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 2,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1420,
-                      "match": "orientation",
-                      "name": "Orientation",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          0.0,
-                          0.0,
-                          0.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1421,
-                      "match": "rotationX",
-                      "name": "X Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1422,
-                      "match": "rotationY",
-                      "name": "Y Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1423,
-                      "match": "rotation",
-                      "name": "Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1424,
-                      "match": "opacity",
-                      "name": "Opacity",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Slider",
-                        "min": 0.0,
-                        "max": 100.0,
-                        "slider_min": 0.0,
-                        "slider_max": 100.0,
-                        "decimals": 0
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    }
-                  ]
-                },
-                {
-                  "node": "Group",
-                  "uid": 1426,
-                  "match": "materialOptions",
-                  "name": "Material Options",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": [
-                    {
-                      "node": "Prop",
-                      "uid": 1427,
-                      "match": "castsShadows",
-                      "name": "Casts Shadows",
-                      "value": {
-                        "t": "Enum",
-                        "v": 0
-                      },
-                      "ui": {
-                        "kind": "Popup",
-                        "options": [
-                          "Off",
-                          "On",
-                          "Only"
-                        ]
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1428,
-                      "match": "lightTransmission",
-                      "name": "Light Transmission",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1429,
-                      "match": "acceptsShadows",
-                      "name": "Accepts Shadows",
-                      "value": {
-                        "t": "Enum",
-                        "v": 1
-                      },
-                      "ui": {
-                        "kind": "Popup",
-                        "options": [
-                          "Off",
-                          "On",
-                          "Only"
-                        ]
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1430,
-                      "match": "acceptsLights",
-                      "name": "Accepts Lights",
-                      "value": {
-                        "t": "Bool",
-                        "v": true
-                      },
-                      "ui": {
-                        "kind": "Checkbox"
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1431,
-                      "match": "ambient",
-                      "name": "Ambient",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1432,
-                      "match": "diffuse",
-                      "name": "Diffuse",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 50.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1433,
-                      "match": "specularIntensity",
-                      "name": "Specular Intensity",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 50.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1434,
-                      "match": "specularShininess",
-                      "name": "Specular Shininess",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 5.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1435,
-                      "match": "metal",
-                      "name": "Metal",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "id": 1358,
-            "name": "Source provenance",
-            "source": {
-              "type": "Text"
-            },
-            "label": "Red",
-            "comment": "",
-            "start_time": 0,
-            "in_point": 0,
-            "out_point": 5080320000000,
-            "stretch": 100.0,
-            "switches": {
-              "video": true,
-              "audio": true,
-              "solo": false,
-              "locked": false,
-              "shy": false,
-              "collapse": false,
-              "quality": "Best",
-              "sampling": "Bilinear",
-              "effects": true,
-              "frame_blend": "Off",
-              "motion_blur": false,
-              "adjustment": false,
-              "three_d": false,
-              "guide": false
-            },
-            "blend_mode": "Normal",
-            "preserve_transparency": false,
-            "track_matte": null,
-            "parent": null,
-            "markers": [],
-            "auto_orient": "Off",
-            "props": {
-              "uid": 1359,
-              "match": "layer",
-              "name": "Source provenance",
-              "kind": {
-                "kind": "Plain"
-              },
-              "enabled": true,
-              "children": [
-                {
-                  "node": "Group",
-                  "uid": 1374,
-                  "match": "text",
-                  "name": "Text",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": [
-                    {
-                      "node": "Prop",
-                      "uid": 1360,
-                      "match": "sourceText",
-                      "name": "Source Text",
-                      "value": {
-                        "t": "Text",
-                        "v": {
-                          "text": "開発中 / I章・探索モード",
-                          "font": "Meiryo",
-                          "style": "Bold",
-                          "size": 25.0,
-                          "fill": [
-                            0.6666667,
-                            0.7921569,
-                            0.7647059,
-                            1.0
-                          ],
-                          "stroke": [
-                            0.0,
-                            0.0,
-                            0.0,
-                            1.0
-                          ],
-                          "stroke_width": 0.0,
-                          "apply_fill": true,
-                          "apply_stroke": false,
-                          "stroke_over_fill": true,
-                          "tracking": 0.0,
-                          "leading": null,
-                          "justify": "Center",
-                          "baseline_shift": 0.0,
-                          "h_scale": 100.0,
-                          "v_scale": 100.0,
-                          "faux_bold": false,
-                          "faux_italic": false,
-                          "all_caps": false,
-                          "small_caps": false,
-                          "box_size": null,
-                          "box_pos": [
-                            0.0,
-                            0.0
-                          ],
-                          "tsume": 0.0,
-                          "baseline": "Normal",
-                          "kerning": "Metrics",
-                          "ligatures": true,
-                          "tate_chu_yoko": false,
-                          "vertical_roman_upright": false,
-                          "indent_left": 0.0,
-                          "indent_right": 0.0,
-                          "indent_first": 0.0,
-                          "space_before": 0.0,
-                          "space_after": 0.0,
-                          "direction": "Ltr",
-                          "composer": "EveryLine",
-                          "hanging_punctuation": false,
-                          "vertical": false
-                        }
-                      },
-                      "ui": {
-                        "kind": "Text"
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1361,
-                      "match": "perChar3d",
-                      "name": "Per-character 3D",
-                      "value": {
-                        "t": "Bool",
-                        "v": false
-                      },
-                      "ui": {
-                        "kind": "Hidden"
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": true
-                    },
-                    {
-                      "node": "Group",
-                      "uid": 1363,
-                      "match": "pathOptions",
-                      "name": "Path Options",
-                      "kind": {
-                        "kind": "Plain"
-                      },
-                      "enabled": true,
-                      "children": [
-                        {
-                          "node": "Prop",
-                          "uid": 1362,
-                          "match": "path",
-                          "name": "Path",
-                          "value": {
-                            "t": "Enum",
-                            "v": 0
-                          },
-                          "ui": {
-                            "kind": "Popup",
-                            "options": [
-                              "None"
-                            ]
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": true
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1364,
-                          "match": "reversePath",
-                          "name": "Reverse Path",
-                          "value": {
-                            "t": "Bool",
-                            "v": false
-                          },
-                          "ui": {
-                            "kind": "Checkbox"
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1365,
-                          "match": "perpendicular",
-                          "name": "Perpendicular To Path",
-                          "value": {
-                            "t": "Bool",
-                            "v": true
-                          },
-                          "ui": {
-                            "kind": "Checkbox"
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1366,
-                          "match": "forceAlignment",
-                          "name": "Force Alignment",
-                          "value": {
-                            "t": "Bool",
-                            "v": false
-                          },
-                          "ui": {
-                            "kind": "Checkbox"
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1367,
-                          "match": "firstMargin",
-                          "name": "First Margin",
-                          "value": {
-                            "t": "Scalar",
-                            "v": 0.0
-                          },
-                          "ui": {
-                            "kind": "Pixels"
-                          },
-                          "spatial": false,
-                          "hold_only": false,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1368,
-                          "match": "lastMargin",
-                          "name": "Last Margin",
-                          "value": {
-                            "t": "Scalar",
-                            "v": 0.0
-                          },
-                          "ui": {
-                            "kind": "Pixels"
-                          },
-                          "spatial": false,
-                          "hold_only": false,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        }
-                      ]
-                    },
-                    {
-                      "node": "Group",
                       "uid": 1369,
-                      "match": "moreOptions",
-                      "name": "More Options",
-                      "kind": {
-                        "kind": "Plain"
+                      "match": "rotation",
+                      "name": "Rotation",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
                       },
-                      "enabled": true,
-                      "children": [
-                        {
-                          "node": "Prop",
-                          "uid": 1370,
-                          "match": "anchorGrouping",
-                          "name": "Anchor Point Grouping",
-                          "value": {
-                            "t": "Enum",
-                            "v": 0
-                          },
-                          "ui": {
-                            "kind": "Popup",
-                            "options": [
-                              "Character",
-                              "Word",
-                              "Line",
-                              "All"
-                            ]
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": true
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1371,
-                          "match": "groupingAlignment",
-                          "name": "Grouping Alignment",
-                          "value": {
-                            "t": "Vec2",
-                            "v": [
-                              0.0,
-                              0.0
-                            ]
-                          },
-                          "ui": {
-                            "kind": "Percent"
-                          },
-                          "spatial": false,
-                          "hold_only": false,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": false
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1372,
-                          "match": "fillStroke",
-                          "name": "Fill & Stroke",
-                          "value": {
-                            "t": "Enum",
-                            "v": 0
-                          },
-                          "ui": {
-                            "kind": "Popup",
-                            "options": [
-                              "Per Character Palette",
-                              "All Fills Over All Strokes",
-                              "All Strokes Over All Fills"
-                            ]
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": true
-                        },
-                        {
-                          "node": "Prop",
-                          "uid": 1373,
-                          "match": "interCharBlend",
-                          "name": "Inter-Character Blending",
-                          "value": {
-                            "t": "Enum",
-                            "v": 0
-                          },
-                          "ui": {
-                            "kind": "Popup",
-                            "options": [
-                              "Normal",
-                              "Darken",
-                              "Multiply",
-                              "Color Burn",
-                              "Linear Burn",
-                              "Darker Color",
-                              "Add",
-                              "Lighten",
-                              "Screen",
-                              "Color Dodge",
-                              "Lighter Color",
-                              "Overlay",
-                              "Soft Light",
-                              "Hard Light",
-                              "Linear Light",
-                              "Vivid Light",
-                              "Pin Light",
-                              "Hard Mix",
-                              "Difference",
-                              "Exclusion",
-                              "Subtract",
-                              "Divide",
-                              "Hue",
-                              "Saturation",
-                              "Color",
-                              "Luminosity"
-                            ]
-                          },
-                          "spatial": false,
-                          "hold_only": true,
-                          "three_d_only": false,
-                          "two_d_only": false,
-                          "shown_dims": 0,
-                          "static_only": true
-                        }
-                      ]
+                      "ui": {
+                        "kind": "Angle"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
                     },
                     {
-                      "node": "Group",
-                      "uid": 1375,
-                      "match": "animators",
-                      "name": "Animators",
-                      "kind": {
-                        "kind": "Plain"
+                      "node": "Prop",
+                      "uid": 1370,
+                      "match": "opacity",
+                      "name": "Opacity",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 100.0
                       },
-                      "enabled": true,
-                      "children": []
+                      "ui": {
+                        "kind": "Slider",
+                        "min": 0.0,
+                        "max": 100.0,
+                        "slider_min": 0.0,
+                        "slider_max": 100.0,
+                        "decimals": 0
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
                     }
                   ]
                 },
                 {
                   "node": "Group",
-                  "uid": 1376,
-                  "match": "masks",
-                  "name": "Masks",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": []
-                },
-                {
-                  "node": "Group",
-                  "uid": 1377,
-                  "match": "effects",
-                  "name": "Effects",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": []
-                },
-                {
-                  "node": "Group",
-                  "uid": 1386,
-                  "match": "transform",
-                  "name": "Transform",
+                  "uid": 1372,
+                  "match": "materialOptions",
+                  "name": "Material Options",
                   "kind": {
                     "kind": "Plain"
                   },
                   "enabled": true,
                   "children": [
+                    {
+                      "node": "Prop",
+                      "uid": 1373,
+                      "match": "castsShadows",
+                      "name": "Casts Shadows",
+                      "value": {
+                        "t": "Enum",
+                        "v": 0
+                      },
+                      "ui": {
+                        "kind": "Popup",
+                        "options": [
+                          "Off",
+                          "On",
+                          "Only"
+                        ]
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1374,
+                      "match": "lightTransmission",
+                      "name": "Light Transmission",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 0.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1375,
+                      "match": "acceptsShadows",
+                      "name": "Accepts Shadows",
+                      "value": {
+                        "t": "Enum",
+                        "v": 1
+                      },
+                      "ui": {
+                        "kind": "Popup",
+                        "options": [
+                          "Off",
+                          "On",
+                          "Only"
+                        ]
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1376,
+                      "match": "acceptsLights",
+                      "name": "Accepts Lights",
+                      "value": {
+                        "t": "Bool",
+                        "v": true
+                      },
+                      "ui": {
+                        "kind": "Checkbox"
+                      },
+                      "spatial": false,
+                      "hold_only": true,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
+                    {
+                      "node": "Prop",
+                      "uid": 1377,
+                      "match": "ambient",
+                      "name": "Ambient",
+                      "value": {
+                        "t": "Scalar",
+                        "v": 100.0
+                      },
+                      "ui": {
+                        "kind": "Percent"
+                      },
+                      "spatial": false,
+                      "hold_only": false,
+                      "three_d_only": false,
+                      "two_d_only": false,
+                      "shown_dims": 0,
+                      "static_only": false
+                    },
                     {
                       "node": "Prop",
                       "uid": 1378,
-                      "match": "anchor",
-                      "name": "Anchor Point",
+                      "match": "diffuse",
+                      "name": "Diffuse",
                       "value": {
-                        "t": "Vec3",
-                        "v": [
-                          0.201416015625,
-                          -8.5205078125,
-                          0.0
-                        ]
+                        "t": "Scalar",
+                        "v": 50.0
                       },
                       "ui": {
-                        "kind": "Point"
+                        "kind": "Percent"
                       },
-                      "spatial": true,
+                      "spatial": false,
                       "hold_only": false,
                       "three_d_only": false,
                       "two_d_only": false,
-                      "shown_dims": 2,
+                      "shown_dims": 0,
                       "static_only": false
                     },
                     {
                       "node": "Prop",
                       "uid": 1379,
-                      "match": "position",
-                      "name": "Position",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          500.0,
-                          175.0,
-                          0.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Point"
-                      },
-                      "spatial": true,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 2,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1380,
-                      "match": "scale",
-                      "name": "Scale",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          100.0,
-                          100.0,
-                          100.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 2,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1381,
-                      "match": "orientation",
-                      "name": "Orientation",
-                      "value": {
-                        "t": "Vec3",
-                        "v": [
-                          0.0,
-                          0.0,
-                          0.0
-                        ]
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1382,
-                      "match": "rotationX",
-                      "name": "X Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1383,
-                      "match": "rotationY",
-                      "name": "Y Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": true,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1384,
-                      "match": "rotation",
-                      "name": "Rotation",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Angle"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1385,
-                      "match": "opacity",
-                      "name": "Opacity",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Slider",
-                        "min": 0.0,
-                        "max": 100.0,
-                        "slider_min": 0.0,
-                        "slider_max": 100.0,
-                        "decimals": 0
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    }
-                  ]
-                },
-                {
-                  "node": "Group",
-                  "uid": 1387,
-                  "match": "materialOptions",
-                  "name": "Material Options",
-                  "kind": {
-                    "kind": "Plain"
-                  },
-                  "enabled": true,
-                  "children": [
-                    {
-                      "node": "Prop",
-                      "uid": 1388,
-                      "match": "castsShadows",
-                      "name": "Casts Shadows",
-                      "value": {
-                        "t": "Enum",
-                        "v": 0
-                      },
-                      "ui": {
-                        "kind": "Popup",
-                        "options": [
-                          "Off",
-                          "On",
-                          "Only"
-                        ]
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1389,
-                      "match": "lightTransmission",
-                      "name": "Light Transmission",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 0.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1390,
-                      "match": "acceptsShadows",
-                      "name": "Accepts Shadows",
-                      "value": {
-                        "t": "Enum",
-                        "v": 1
-                      },
-                      "ui": {
-                        "kind": "Popup",
-                        "options": [
-                          "Off",
-                          "On",
-                          "Only"
-                        ]
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1391,
-                      "match": "acceptsLights",
-                      "name": "Accepts Lights",
-                      "value": {
-                        "t": "Bool",
-                        "v": true
-                      },
-                      "ui": {
-                        "kind": "Checkbox"
-                      },
-                      "spatial": false,
-                      "hold_only": true,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1392,
-                      "match": "ambient",
-                      "name": "Ambient",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 100.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1393,
-                      "match": "diffuse",
-                      "name": "Diffuse",
-                      "value": {
-                        "t": "Scalar",
-                        "v": 50.0
-                      },
-                      "ui": {
-                        "kind": "Percent"
-                      },
-                      "spatial": false,
-                      "hold_only": false,
-                      "three_d_only": false,
-                      "two_d_only": false,
-                      "shown_dims": 0,
-                      "static_only": false
-                    },
-                    {
-                      "node": "Prop",
-                      "uid": 1394,
                       "match": "specularIntensity",
                       "name": "Specular Intensity",
                       "value": {
@@ -17335,7 +15701,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1395,
+                      "uid": 1380,
                       "match": "specularShininess",
                       "name": "Specular Shininess",
                       "value": {
@@ -17354,7 +15720,7 @@
                     },
                     {
                       "node": "Prop",
-                      "uid": 1396,
+                      "uid": 1381,
                       "match": "metal",
                       "name": "Metal",
                       "value": {
@@ -17854,7 +16220,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          430.0,
+                          475.0,
                           0.0
                         ]
                       },
@@ -18671,7 +17037,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          340.0,
+                          385.0,
                           0.0
                         ]
                       },
@@ -18682,7 +17048,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              366.0,
+                              411.0,
                               0.0
                             ]
                           },
@@ -18738,7 +17104,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              334.0,
+                              379.0,
                               0.0
                             ]
                           },
@@ -18768,7 +17134,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              340.0,
+                              385.0,
                               0.0
                             ]
                           },
@@ -19632,7 +17998,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          240.0,
+                          285.0,
                           0.0
                         ]
                       },
@@ -20101,7 +18467,7 @@
                                     "t": "Vec2",
                                     "v": [
                                       1080.0,
-                                      450.0
+                                      500.0
                                     ]
                                   },
                                   "ui": {
@@ -20516,7 +18882,7 @@
                         "t": "Vec3",
                         "v": [
                           540.0,
-                          225.0,
+                          250.0,
                           0.0
                         ]
                       },
@@ -21333,7 +19699,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          430.0,
+                          475.0,
                           0.0
                         ]
                       },
@@ -22150,7 +20516,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          340.0,
+                          385.0,
                           0.0
                         ]
                       },
@@ -22161,7 +20527,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              366.0,
+                              411.0,
                               0.0
                             ]
                           },
@@ -22217,7 +20583,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              334.0,
+                              379.0,
                               0.0
                             ]
                           },
@@ -22247,7 +20613,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              340.0,
+                              385.0,
                               0.0
                             ]
                           },
@@ -23111,7 +21477,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          240.0,
+                          285.0,
                           0.0
                         ]
                       },
@@ -23580,7 +21946,7 @@
                                     "t": "Vec2",
                                     "v": [
                                       1080.0,
-                                      450.0
+                                      500.0
                                     ]
                                   },
                                   "ui": {
@@ -23995,7 +22361,7 @@
                         "t": "Vec3",
                         "v": [
                           540.0,
-                          225.0,
+                          250.0,
                           0.0
                         ]
                       },
@@ -24812,7 +23178,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          430.0,
+                          475.0,
                           0.0
                         ]
                       },
@@ -25629,7 +23995,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          340.0,
+                          385.0,
                           0.0
                         ]
                       },
@@ -25640,7 +24006,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              366.0,
+                              411.0,
                               0.0
                             ]
                           },
@@ -25696,7 +24062,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              334.0,
+                              379.0,
                               0.0
                             ]
                           },
@@ -25726,7 +24092,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              340.0,
+                              385.0,
                               0.0
                             ]
                           },
@@ -26590,7 +24956,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          240.0,
+                          285.0,
                           0.0
                         ]
                       },
@@ -27059,7 +25425,7 @@
                                     "t": "Vec2",
                                     "v": [
                                       1080.0,
-                                      450.0
+                                      500.0
                                     ]
                                   },
                                   "ui": {
@@ -27474,7 +25840,7 @@
                         "t": "Vec3",
                         "v": [
                           540.0,
-                          225.0,
+                          250.0,
                           0.0
                         ]
                       },
@@ -28291,7 +26657,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          430.0,
+                          475.0,
                           0.0
                         ]
                       },
@@ -29108,7 +27474,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          340.0,
+                          385.0,
                           0.0
                         ]
                       },
@@ -29119,7 +27485,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              366.0,
+                              411.0,
                               0.0
                             ]
                           },
@@ -29175,7 +27541,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              334.0,
+                              379.0,
                               0.0
                             ]
                           },
@@ -29205,7 +27571,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              340.0,
+                              385.0,
                               0.0
                             ]
                           },
@@ -30069,7 +28435,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          240.0,
+                          285.0,
                           0.0
                         ]
                       },
@@ -30538,7 +28904,7 @@
                                     "t": "Vec2",
                                     "v": [
                                       1080.0,
-                                      450.0
+                                      500.0
                                     ]
                                   },
                                   "ui": {
@@ -30953,7 +29319,7 @@
                         "t": "Vec3",
                         "v": [
                           540.0,
-                          225.0,
+                          250.0,
                           0.0
                         ]
                       },
@@ -31770,7 +30136,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          430.0,
+                          475.0,
                           0.0
                         ]
                       },
@@ -32587,7 +30953,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          340.0,
+                          385.0,
                           0.0
                         ]
                       },
@@ -32598,7 +30964,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              366.0,
+                              411.0,
                               0.0
                             ]
                           },
@@ -32654,7 +31020,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              334.0,
+                              379.0,
                               0.0
                             ]
                           },
@@ -32684,7 +31050,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              340.0,
+                              385.0,
                               0.0
                             ]
                           },
@@ -33548,7 +31914,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          240.0,
+                          285.0,
                           0.0
                         ]
                       },
@@ -34017,7 +32383,7 @@
                                     "t": "Vec2",
                                     "v": [
                                       1080.0,
-                                      450.0
+                                      500.0
                                     ]
                                   },
                                   "ui": {
@@ -34432,7 +32798,7 @@
                         "t": "Vec3",
                         "v": [
                           540.0,
-                          225.0,
+                          250.0,
                           0.0
                         ]
                       },
@@ -35249,7 +33615,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          430.0,
+                          475.0,
                           0.0
                         ]
                       },
@@ -36066,7 +34432,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          340.0,
+                          385.0,
                           0.0
                         ]
                       },
@@ -36077,7 +34443,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              366.0,
+                              411.0,
                               0.0
                             ]
                           },
@@ -36133,7 +34499,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              334.0,
+                              379.0,
                               0.0
                             ]
                           },
@@ -36163,7 +34529,7 @@
                             "t": "Vec3",
                             "v": [
                               500.0,
-                              340.0,
+                              385.0,
                               0.0
                             ]
                           },
@@ -37027,7 +35393,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          240.0,
+                          285.0,
                           0.0
                         ]
                       },
@@ -37496,7 +35862,7 @@
                                     "t": "Vec2",
                                     "v": [
                                       1080.0,
-                                      450.0
+                                      500.0
                                     ]
                                   },
                                   "ui": {
@@ -37911,7 +36277,7 @@
                         "t": "Vec3",
                         "v": [
                           540.0,
-                          225.0,
+                          250.0,
                           0.0
                         ]
                       },
@@ -38728,7 +37094,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          430.0,
+                          475.0,
                           0.0
                         ]
                       },
@@ -39545,7 +37911,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          340.0,
+                          385.0,
                           0.0
                         ]
                       },
@@ -40362,7 +38728,7 @@
                         "t": "Vec3",
                         "v": [
                           500.0,
-                          240.0,
+                          285.0,
                           0.0
                         ]
                       },
@@ -40831,7 +39197,7 @@
                                     "t": "Vec2",
                                     "v": [
                                       1080.0,
-                                      450.0
+                                      500.0
                                     ]
                                   },
                                   "ui": {
@@ -41246,7 +39612,7 @@
                         "t": "Vec3",
                         "v": [
                           540.0,
-                          225.0,
+                          250.0,
                           0.0
                         ]
                       },
@@ -43452,5 +41818,5 @@
       }
     }
   },
-  "next_id": 1521
+  "next_id": 1443
 }

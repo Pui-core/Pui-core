@@ -1,12 +1,13 @@
 {
   "status": "PASS_WITHIN_FINAL_EXTRACTED_FRAMES_SCOPE",
-  "videoSha256": "66f3fcfb85d4ca79b17595fdde64dd6a56499c28c5d037d02cd4a3c8c36c76d5",
+  "videoSha256": "740474db6bd334d1a8eb0b2668a3692e58217a25891de09eaf8acb97a892a57c",
   "checked": [
     "全9場面の最終MP4フレーム",
     "141〜158の18連続フレームで163→164と寄り引き",
     "frame570の終端・作者/作品名の別領域",
     "カバー9:16と中央3:4、6文字bounds286〜1637",
-    "比較の前後同画角で芯石/足場が保持"
+    "比較の前後同画角で芯石/足場が保持",
+    "上部小ラベル2行を除去、主見出し45px下移動、最小上端約251px"
   ],
   "sourceBeforeFrame": 163,
   "sourceAfterFrame": 164,
@@ -14,5 +15,10 @@
   "wholeDirectPlayback": false,
   "wholeDirectAudition": false,
   "actualTikTokUi": false,
-  "actualSongSelected": false
+  "actualSongSelected": false,
+  "revision": "02_UI_SAFE",
+  "unresolved": [
+    "PP97-SOUND actual popular permitted sound unselected",
+    "PP97-UI root native preview for revision02 pending"
+  ]
 }

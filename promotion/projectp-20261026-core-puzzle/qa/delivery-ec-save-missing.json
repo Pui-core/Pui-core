@@ -3,7 +3,7 @@
   "exe": "effectcraft-cli.exe",
   "args": [
     "--project",
-    "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle.ecproj",
+    "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-02-ui-safe\\projects\\core-puzzle.ecproj",
     "--save",
     "run",
     "footage.check",
@@ -12,6 +12,6 @@
     "{}",
     "--json"
   ],
-  "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":2,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\projects\\\\core-puzzle.ecproj\"}\n",
+  "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":2,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-02-ui-safe\\\\projects\\\\core-puzzle.ecproj\"}\n",
   "stderr": ""
 }

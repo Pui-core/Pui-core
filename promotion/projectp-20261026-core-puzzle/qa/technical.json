@@ -3,8 +3,8 @@
   "bindings": [
     {
       "file": "videos/core-puzzle-voice-no-music.mp4",
-      "sha256": "66f3fcfb85d4ca79b17595fdde64dd6a56499c28c5d037d02cd4a3c8c36c76d5",
-      "bytes": 4830788,
+      "sha256": "740474db6bd334d1a8eb0b2668a3692e58217a25891de09eaf8acb97a892a57c",
+      "bytes": 4703974,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -18,10 +18,10 @@
         "truePeakDbfs": -4.4
       },
       "native": {
-        "videoSha256": "66f3fcfb85d4ca79b17595fdde64dd6a56499c28c5d037d02cd4a3c8c36c76d5",
-        "effectcraftSha256": "17736f64cb6c4739c0acbb48ddae35d6078bea64fed081a7f2073bd5767e84d8",
-        "filmcraftSha256": "ba2d964efe75c4b07c0af7c9cd791da265af909c94e055dfc58a5e09fa5e18c9",
-        "masterSha256": "e4f50146f5978e3e88fd08f2ff7d9a41db71b8e309fba875a0de397bc647e95a",
+        "videoSha256": "740474db6bd334d1a8eb0b2668a3692e58217a25891de09eaf8acb97a892a57c",
+        "effectcraftSha256": "53c658a781eea526dfe4b0490265475214011d23e88e98e95797f54601f77250",
+        "filmcraftSha256": "ece5db802e6e4602d8957d20dfee7c08483278e898f94fa4ba51680838411159",
+        "masterSha256": "c1a9c3d0cbd3bc76dd9faa9e787838472bf150ea1ec29fa5c94588638d50cbbc",
         "mixSha256": "843813d5d7af90c715f07b3871a419e594c86e5997655de5e5ccfac12b7bf510",
         "music": false,
         "state": "PROVISIONAL_PENDING_ACTUAL_SOUND_AND_UI"
@@ -29,8 +29,8 @@
     },
     {
       "file": "videos/core-puzzle-sfx-only.mp4",
-      "sha256": "392c320daa32437e8ba343f27ade01b093f29e4eef478dee02e643973a719afa",
-      "bytes": 4830756,
+      "sha256": "ef9e489eee31d55724fc7b356a41daa345f520f0ec73d781dc6a89847ed9d7c5",
+      "bytes": 4703942,
       "width": 1080,
       "height": 1920,
       "fps": 30,
@@ -44,10 +44,10 @@
         "truePeakDbfs": -17.5
       },
       "native": {
-        "videoSha256": "392c320daa32437e8ba343f27ade01b093f29e4eef478dee02e643973a719afa",
-        "effectcraftSha256": "17736f64cb6c4739c0acbb48ddae35d6078bea64fed081a7f2073bd5767e84d8",
-        "filmcraftSha256": "e3a26cf85de3f9f7aaff866716b33d9165b32b4021e8df1a4c59e3cd3da25a70",
-        "masterSha256": "e4f50146f5978e3e88fd08f2ff7d9a41db71b8e309fba875a0de397bc647e95a",
+        "videoSha256": "ef9e489eee31d55724fc7b356a41daa345f520f0ec73d781dc6a89847ed9d7c5",
+        "effectcraftSha256": "53c658a781eea526dfe4b0490265475214011d23e88e98e95797f54601f77250",
+        "filmcraftSha256": "012e123bc820cd76a1d36e4055c1149d60dbf239b4768305c8735cd9ef78ec27",
+        "masterSha256": "c1a9c3d0cbd3bc76dd9faa9e787838472bf150ea1ec29fa5c94588638d50cbbc",
         "mixSha256": "b02714e93a1c82995772d65c53569943f4122f137256384e23663fbc842a97ca",
         "music": false,
         "state": "PROVISIONAL_PENDING_ACTUAL_SOUND_AND_UI"
@@ -103,7 +103,7 @@
     {
       "window": [
         0.12,
-        2
+        1.9726670000000002
       ],
       "correlation": 0.9998693302780021,
       "lagSamples": 0,
@@ -111,19 +111,19 @@
     },
     {
       "window": [
-        4.8,
-        6.6
+        5.1499999999999995,
+        6.863999999999999
       ],
-      "correlation": 0.9999502502952046,
+      "correlation": 0.9999502422698513,
       "lagSamples": 0,
       "lagFrames": 0
     },
     {
       "window": [
-        15,
-        17.8
+        14.6,
+        16.751333
       ],
-      "correlation": 0.999859717747332,
+      "correlation": 0.9999076694702144,
       "lagSamples": 0,
       "lagFrames": 0
     }
@@ -195,7 +195,7 @@
       }
     ]
   },
-  "effectcraftSha256": "17736f64cb6c4739c0acbb48ddae35d6078bea64fed081a7f2073bd5767e84d8",
+  "effectcraftSha256": "53c658a781eea526dfe4b0490265475214011d23e88e98e95797f54601f77250",
   "constraints": {
     "musicSelected": false,
     "bpmFixed": false,
@@ -205,5 +205,5 @@
     "wholeDirectAudition": false,
     "publishingAuthorizedNow": false
   },
-  "visualReview": "PASS_WITHIN_FINAL_EXTRACTED_FRAMES_SCOPE"
+  "visualReview": "PASS_WITHIN_FINAL_EXTRACTED_FRAMES_SCOPE_UI_REVISION_PENDING_LIVE"
 }
