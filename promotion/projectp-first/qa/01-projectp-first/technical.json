@@ -1,0 +1,87 @@
+{
+  "status": "TECHNICAL_PASS",
+  "version": "ProjectP-first",
+  "comp": "ProjectP 01 01",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 818,
+  "duration": 27.285,
+  "expectedDuration": 27.266666666666666,
+  "fullDecode": true,
+  "audio": {
+    "integratedLufs": -16.5,
+    "truePeakDbfs": -1.9
+  },
+  "missingNativeAssets": 0,
+  "allSceneFrames": [
+    11,
+    31,
+    73,
+    93,
+    186,
+    269,
+    316,
+    359,
+    441,
+    503,
+    563,
+    629,
+    671,
+    774
+  ],
+  "continuousCuts": [
+    {
+      "time": 5.866666666666666,
+      "shot": 4,
+      "transition": "whipR",
+      "index": 1,
+      "startFrame": 173,
+      "frames": 18,
+      "file": "continuous-cut-01.jpg",
+      "start": 5.766666666666667
+    },
+    {
+      "time": 10.2,
+      "shot": 6,
+      "transition": "cut",
+      "index": 2,
+      "startFrame": 303,
+      "frames": 18,
+      "file": "continuous-cut-02.jpg",
+      "start": 10.1
+    },
+    {
+      "time": 16.4,
+      "shot": 9,
+      "transition": "snap",
+      "index": 3,
+      "startFrame": 489,
+      "frames": 18,
+      "file": "continuous-cut-03.jpg",
+      "start": 16.3
+    },
+    {
+      "time": 25.433333333333334,
+      "shot": 13,
+      "transition": "cut",
+      "index": 4,
+      "startFrame": 760,
+      "frames": 18,
+      "file": "continuous-cut-04.jpg",
+      "start": 25.333333333333332
+    }
+  ],
+  "coverTime": 0.3,
+  "previewTime": 3.2,
+  "videoSha256": "5f56d833eba18fb816e1f8e65ff046d5b2d7a4f20b622df0aa137df9cc94f878",
+  "effectcraftSha256": "4090a28b05ee315e8af0c17383532bd9ee15f553030471b54d9ff97ca6f43e89",
+  "filmcraftSha256": "becc958dfe02032b2a7d21c06caca0d5e42dabffdde99c707251b416d390056f",
+  "audioSha256": "10f49c86a53b6bdb79bf5c40c752eafb901a164cbc7334661400e5c03b9a92a9",
+  "nativeSnapshot": "rendered",
+  "sha256": "5f56d833eba18fb816e1f8e65ff046d5b2d7a4f20b622df0aa137df9cc94f878",
+  "visualReview": "PENDING",
+  "realTimeWholeWatchAndAudition": "NOT_PERFORMED",
+  "ownerCreativeAcceptance": "PENDING",
+  "postPublicationPerformance": "NOT_MEASURED"
+}

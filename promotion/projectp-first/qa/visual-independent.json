@@ -1,0 +1,388 @@
+{
+  "schema": 1,
+  "status": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
+  "issue": 87,
+  "subject": "ProjectP初投稿 / ゲーム3本、年末までに？",
+  "scope": "指定最終MP4から親担当が抽出した3fps全編サンプル3枚、全13編集境界の各12連続frame、高解像度11frame、全14scene代表画像を独立目視。全818frameの逐一目視・実時間再生・直接試聴・投稿アプリUIの実機確認ではない。",
+  "artifact": {
+    "video": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/videos/01-projectp-first.mp4",
+    "videoSha256": "5f56d833eba18fb816e1f8e65ff046d5b2d7a4f20b622df0aa137df9cc94f878",
+    "effectcraftSha256": "4090a28b05ee315e8af0c17383532bd9ee15f553030471b54d9ff97ca6f43e89",
+    "filmcraftSha256": "becc958dfe02032b2a7d21c06caca0d5e42dabffdde99c707251b416d390056f",
+    "audioSha256": "10f49c86a53b6bdb79bf5c40c752eafb901a164cbc7334661400e5c03b9a92a9"
+  },
+  "coverage": {
+    "storySamplingFps": 3,
+    "storySheets": [
+      {
+        "file": "story-1.jpg",
+        "rangeSeconds": [
+          0,
+          10
+        ],
+        "sampledFrames": 30
+      },
+      {
+        "file": "story-2.jpg",
+        "rangeSeconds": [
+          10,
+          20
+        ],
+        "sampledFrames": 30
+      },
+      {
+        "file": "story-3.jpg",
+        "rangeSeconds": [
+          20,
+          27.266666666666666
+        ],
+        "sampledFrames": 22
+      }
+    ],
+    "storyFrames": 82,
+    "allSceneRepresentativeFrames": [
+      11,
+      31,
+      73,
+      93,
+      186,
+      269,
+      316,
+      359,
+      441,
+      503,
+      563,
+      629,
+      671,
+      774
+    ],
+    "allSceneRepresentativeCount": 14,
+    "boundaries": [
+      {
+        "time": 0.6666666666666666,
+        "startFrame": 17,
+        "frames": 12,
+        "file": "boundary-01.jpg"
+      },
+      {
+        "time": 2.066666666666667,
+        "startFrame": 59,
+        "frames": 12,
+        "file": "boundary-02.jpg"
+      },
+      {
+        "time": 2.7333333333333334,
+        "startFrame": 79,
+        "frames": 12,
+        "file": "boundary-03.jpg"
+      },
+      {
+        "time": 5.866666666666666,
+        "startFrame": 173,
+        "frames": 12,
+        "file": "boundary-04.jpg"
+      },
+      {
+        "time": 8.6,
+        "startFrame": 255,
+        "frames": 12,
+        "file": "boundary-05.jpg"
+      },
+      {
+        "time": 10.2,
+        "startFrame": 303,
+        "frames": 12,
+        "file": "boundary-06.jpg"
+      },
+      {
+        "time": 11.6,
+        "startFrame": 345,
+        "frames": 12,
+        "file": "boundary-07.jpg"
+      },
+      {
+        "time": 14.333333333333334,
+        "startFrame": 427,
+        "frames": 12,
+        "file": "boundary-08.jpg"
+      },
+      {
+        "time": 16.4,
+        "startFrame": 489,
+        "frames": 12,
+        "file": "boundary-09.jpg"
+      },
+      {
+        "time": 18.4,
+        "startFrame": 549,
+        "frames": 12,
+        "file": "boundary-10.jpg"
+      },
+      {
+        "time": 20.6,
+        "startFrame": 615,
+        "frames": 12,
+        "file": "boundary-11.jpg"
+      },
+      {
+        "time": 22,
+        "startFrame": 657,
+        "frames": 12,
+        "file": "boundary-12.jpg"
+      },
+      {
+        "time": 25.433333333333334,
+        "startFrame": 760,
+        "frames": 12,
+        "file": "boundary-13.jpg"
+      }
+    ],
+    "continuousBoundaryFrames": 156,
+    "highResolutionSeconds": [
+      4,
+      8.1,
+      10.7,
+      12.7,
+      13.9,
+      15.6,
+      18.2,
+      21.1,
+      22.4,
+      25.3,
+      26.2
+    ],
+    "highResolutionFrames": 11,
+    "imageFiles": 28
+  },
+  "bindings": {
+    "actualMp4ShaMatchesExpected": true,
+    "renderedAndTechnicalVideoShaMatch": true,
+    "reviewFramesManifestVideoShaMatch": true,
+    "reviewProgressVideoShaMatch": true,
+    "all27ReviewFramesImageHashesMatchProgress": true,
+    "allSceneImageHashRecorded": true
+  },
+  "observations": [
+    {
+      "item": "副題・問い・実会話",
+      "result": "PASS_WITHIN_SCOPE",
+      "evidence": [
+        "story-1.jpg",
+        "final-4.png",
+        "boundary-03.jpg",
+        "boundary-04.jpg"
+      ],
+      "detail": "「ぷい / 制作の記録001」および主文を読める。実質問「年末までにゲーム3つ作るのは現実的かどうか」は一行の全文が切れずに表示され、約3秒の会話場面で滞在する。制作計画の問いとして示し、3本の完成実績や架空のassistant回答を追加していない。"
+    },
+    {
+      "item": "実剣・部品・再組立",
+      "result": "PASS_WITHIN_SCOPE",
+      "evidence": [
+        "story-1.jpg",
+        "story-2.jpg",
+        "final-8.1.png",
+        "final-10.7.png",
+        "final-18.2.png",
+        "boundary-05.jpg",
+        "boundary-06.jpg",
+        "boundary-09.jpg",
+        "boundary-10.jpg"
+      ],
+      "detail": "実ゲームの鞘/刀身/柄周辺を順に追い、10.7秒の静止滞在で分離した柄・青いcore・下の球状部品を確認できる。実再組立は部品が戻る連続画像と18.2秒のINTACT状態に着地する。主字幕は滞在時に読める。元の英語HUDや注目外の刀身先端がzoomで画角外になる場合はあるが、実コード全文解説や全UIを同時に見せる場面ではなく、部品/状態と主文の意味は残る。"
+    },
+    {
+      "item": "Blender全体→柄",
+      "result": "PASS_WITHIN_SCOPE",
+      "evidence": [
+        "story-2.jpg",
+        "final-12.7.png",
+        "final-13.9.png",
+        "boundary-07.jpg",
+        "boundary-08.jpg"
+      ],
+      "detail": "12.7秒で刀身先端から柄端までのモデル全体を確認し、13.9秒では柄が大きく見える。後半の刀身の左側cropは柄への寄りとして判別でき、対象がいない空gridの長い滞在は見られない。「モデル原本も。」「Blender / 実プロジェクト」の表示で、新規モデリングの手作業を実演したとは表示していない。"
+    },
+    {
+      "item": "実コード・文字とUI",
+      "result": "PASS_WITHIN_SCOPE",
+      "evidence": [
+        "final-15.6.png",
+        "story-2.jpg",
+        "boundary-08.jpg",
+        "boundary-09.jpg"
+      ],
+      "detail": "コード領域と「コードも。」の主文は分離し、滞在で文字を読める。長い元コード行の右端は画角外だが、主文の欠けや無関係なコード/会話/認証情報の映り込みは抽出画像に見られない。元ゲームHUDとの重なりは一部の編集入場の数frameに限られ、その後の主字幕は独立して読める。"
+    },
+    {
+      "item": "遷移・blur・画面外滞在",
+      "result": "PASS_WITHIN_SCOPE",
+      "evidence": [
+        "boundary-01.jpg",
+        "boundary-02.jpg",
+        "boundary-03.jpg",
+        "boundary-04.jpg",
+        "boundary-05.jpg",
+        "boundary-06.jpg",
+        "boundary-07.jpg",
+        "boundary-08.jpg",
+        "boundary-09.jpg",
+        "boundary-10.jpg",
+        "boundary-11.jpg",
+        "boundary-12.jpg",
+        "boundary-13.jpg"
+      ],
+      "detail": "全13境界で短いwhip/slide/snapと次の画面への着地を判別できる。高速panやwhipの途中にblur/色のwashはあるが、その後の滞在で対象と主文に戻る。抽出画像内に黒い欠落画面や、対象が画面外のまま意味なく長く残る状態は確認されない。story-3末尾の未使用tile枠はcontact sheetの余白であり、動画の黒場とは数えない。"
+    },
+    {
+      "item": "MV・既存歌詞",
+      "result": "PASS_WITHIN_SCOPE",
+      "evidence": [
+        "story-3.jpg",
+        "final-21.1.png",
+        "final-22.4.png",
+        "final-25.3.png",
+        "boundary-11.jpg",
+        "boundary-12.jpg",
+        "boundary-13.jpg"
+      ],
+      "detail": "「この声も、ぷい。」と制作名義は音楽導入に表示され、22秒のMV本編ではその大きな主字幕が消える。その後は元MVの既存歌詞が一組だけ現れ、追加歌詞の二重表示や別の字幕板との干渉は見られない。MV写真の被写体が本人であるかは当検品で判定していない。"
+    },
+    {
+      "item": "締め",
+      "result": "PASS_WITHIN_SCOPE",
+      "evidence": [
+        "story-3.jpg",
+        "final-26.2.png",
+        "boundary-13.jpg"
+      ],
+      "detail": "25.433秒の切替で背景が不透過の明色になり、MV/旧ゲームUIは透けて重ならない。「ぷい」「作ってる途中を、見せます。」「つづきも、ここで。」は別の位置にあり、26.2秒の高解像度frameで読める。"
+    }
+  ],
+  "requiredFindings": [],
+  "optionalFindings": [],
+  "limits": {
+    "full818FrameVisualInspection": "NOT_PERFORMED",
+    "fullRealTimePlayback": "NOT_PERFORMED",
+    "directAudition": "NOT_PERFORMED",
+    "actualTikTokAndShortsUiOcclusionTest": "NOT_PERFORMED",
+    "pixelPerfectOrganicSafeZoneGuarantee": "NOT_GUARANTEED",
+    "cameraSavedKeyReadback": "ROOT_AUDIT_REFERENCED_NOT_INDEPENDENTLY_REPEATED",
+    "technicalCodecFullDecodeAndAudioChecks": "ROOT_TECHNICAL_REPORT_REFERENCED_NOT_REPEATED_HERE",
+    "ownerCreativeAcceptance": "NOT_DETERMINED",
+    "viralityRevenueOrCommissions": "NOT_DETERMINED"
+  },
+  "images": [
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/story-1.jpg",
+      "sha256": "8089679ebe92b6208d19d184b1f91ae589a59a5e2bdb1900dc490c97197ee9ae"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/story-2.jpg",
+      "sha256": "cfd7a94891b9549f750b239f9a076434e627eb8d38b21246d81c59c9c5defce8"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/story-3.jpg",
+      "sha256": "7b38bcef3f26084461f3ec78b7a95cda6584475982e15c927ca1d29b6e7ca676"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-01.jpg",
+      "sha256": "3533b975266c9e9cdddb5d92a1211c88e3a1359af1b39a32a69e58d10c467748"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-02.jpg",
+      "sha256": "89691c4e3c375713fc22fa5b23dd7278c2b66a757a04e3d6ee216c2279511ea6"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-03.jpg",
+      "sha256": "95acfe4993bd5e09aca89da5f0ba9040c31186eaf6bdc6d1366ec4c90ec9a58d"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-04.jpg",
+      "sha256": "508b3171968264166e17bccd959083889c914ed44f4b611bdbb3f4bf17781c5c"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-05.jpg",
+      "sha256": "0914a08150b02912cae4cb7749b0e68f245a731f0fbd9b8a6888ca1262a42e75"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-06.jpg",
+      "sha256": "3ca4b9725104c9880b24141e25eaf6888bab14807d3f1bc9f0759fee02a81e2f"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-07.jpg",
+      "sha256": "9fec1fedbe384755d08f9f77020795469377d8e0177f1ba45c9a1ccf4c60f03b"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-08.jpg",
+      "sha256": "1e20ff99c85141b53573a03075f1efbe7d3ef7a2aa847f5717ee10664545aaa6"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-09.jpg",
+      "sha256": "61d242c92a4c047e02e769ffe96d790d923d585e8498d7e45690961c4475c202"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-10.jpg",
+      "sha256": "9d2049d6fd0737d152f905e7cbfd46742a46a0733c8770d616f42b9ccf3336af"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-11.jpg",
+      "sha256": "4f63d79d2743549ef88571eccfb0829bab8385e44b3050165352137a56d47bcf"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-12.jpg",
+      "sha256": "6e078986063a04a2e65efc889771f35a0678aa8ef4606d53b09a831ca9a450dd"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/boundary-13.jpg",
+      "sha256": "502af2fd060a99d7e8a1896616394777448b38668e3a30969574123969edf725"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/final-4.png",
+      "sha256": "36da4c904285864466e02eadafff510926efccb2beb85133a39e7efc46704087"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/final-8.1.png",
+      "sha256": "94e4972d12e72917be5afb20851d2c1cb1ef40133f581bcef29a6849f87dd50f"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/final-10.7.png",
+      "sha256": "26b5abab77419f3b99f4a59683e3a3e382c10fee35d785fa17f77b4be8d3c6d0"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/final-12.7.png",
+      "sha256": "e5e2537bca795c0b89afb5457202730cd5b74dd531b7aa5e28f24389084dbb8c"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/final-13.9.png",
+      "sha256": "90b6b5640e891022318667a6956e776557768b11fb318a37dba92543dc2225fb"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/final-15.6.png",
+      "sha256": "74f6afb4dc9e2e95ef8da39d8a2b2a2f1c4ed8ae7fe7239d16649373b252b6dd"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/final-18.2.png",
+      "sha256": "d197d0ecfe954ba3818e5da67f13ad860cc39fce644d181861d47edd555df8a8"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/final-21.1.png",
+      "sha256": "c52714a86524e5b87bbde84f711ed86931055d4471dd9ca4acecc81c9877a8de"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/final-22.4.png",
+      "sha256": "276a6a901efc8c4b1b368f279d0f9ace2dabe9029c71dc06e0721e31d83465f2"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/final-25.3.png",
+      "sha256": "3d2add4d0438ae276f2b05085ac30227d707c2060aea1ae5882af172cc80c7fd"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/final-26.2.png",
+      "sha256": "26ea4e959718c88207e11bdd7d18fd55177d2989275d4ceed05541c3e99bfbc6"
+    },
+    {
+      "path": "/home/pui/.claude/worktrees/Pui-core-issue-87/promotion/projectp-first/qa/01-projectp-first/all-scenes.jpg",
+      "sha256": "d933346797c5bc46d5fafe35c33c490035f5bc5813d7514b943c4a36b8166d44"
+    }
+  ]
+}

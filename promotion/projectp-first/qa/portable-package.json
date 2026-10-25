@@ -1,0 +1,954 @@
+{
+  "version": "ProjectP-first",
+  "destination": "F:\\Videos\\ProjectP-初投稿-2026-10-25",
+  "sourceBinding": {
+    "videoSha256": "5f56d833eba18fb816e1f8e65ff046d5b2d7a4f20b622df0aa137df9cc94f878",
+    "effectcraftSha256": "4090a28b05ee315e8af0c17383532bd9ee15f553030471b54d9ff97ca6f43e89",
+    "filmcraftSha256": "becc958dfe02032b2a7d21c06caca0d5e42dabffdde99c707251b416d390056f",
+    "audioSha256": "10f49c86a53b6bdb79bf5c40c752eafb901a164cbc7334661400e5c03b9a92a9",
+    "nativeSnapshot": "rendered"
+  },
+  "copiesBeforeRelink": [
+    {
+      "file": ".gitignore",
+      "sha256": "797ef11a4324cb7a3168a28a3eca79330ded5a58bd6100c8725936d0d2a04e65",
+      "existingIdentical": true
+    },
+    {
+      "file": "README.md",
+      "sha256": "66ea8ba2c883c6191858b69679311d866958f9d014fc268510b97e53a4f72af2",
+      "existingIdentical": true
+    },
+    {
+      "file": "index.html",
+      "sha256": "70ec79ae8b2634f883bada98524082300087156417a3a52044a4c7e846d47e57",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-0.mp4",
+      "sha256": "6c45fbb5b9a131d440f38760e55ef46d6088b14af48711d678245478daffacd8",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-1.mp4",
+      "sha256": "1034d3ad235d4d8200b6ad855462d87c27f1a04de8e1464533e2eff3a3d8bb36",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-10-freeze.png",
+      "sha256": "b29bee5110fc5ccc09aee85876392ea5b007f1a8a919bae0ad769e7ba473eb78",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-10.mp4",
+      "sha256": "7c410400d4a71895c98e3dc2b7b9f0012ada62f955b98d7df0cb48d128ceca32",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-11.mp4",
+      "sha256": "9544407591da25a3a4382c6ef96f805711a6360240f62a6aea9a9144a3176ed9",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-12.mp4",
+      "sha256": "58619bee3dcf02157cf36f4f2788b06f4da60d6d0ae2a0c5f5cd353ca8f51db6",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-13-freeze.png",
+      "sha256": "b29bee5110fc5ccc09aee85876392ea5b007f1a8a919bae0ad769e7ba473eb78",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-13.mp4",
+      "sha256": "1e232a3a51a371c1475223199da8da01771c937d6a2881a0a52e6ca8bca9d10b",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-2-freeze.png",
+      "sha256": "99b86f656c353c8c75fa0200307add87afdf9322b00917c660513e7aed71d41d",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-2.mp4",
+      "sha256": "b7087166d7cc4a80831cb6e7dd119ef12777fa0d35aaf5999a43a78158caa42c",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-3.mp4",
+      "sha256": "2bd045cb671f8903df31c518ae4a08fee94e660746667400675222b4dae48799",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-4.mp4",
+      "sha256": "2d46107295b59c9dcd5ddd9d5535d120bdc6e9ea841153fba7c734c2503174b9",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-5-freeze.png",
+      "sha256": "99b86f656c353c8c75fa0200307add87afdf9322b00917c660513e7aed71d41d",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-5.mp4",
+      "sha256": "68494d35d312b33db605d1e2673c140f1a908f4a17140b9892b257b2a2859621",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-6-freeze.png",
+      "sha256": "99b86f656c353c8c75fa0200307add87afdf9322b00917c660513e7aed71d41d",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-6.mp4",
+      "sha256": "b9ca774f3fcb4643b9303421e11b4b8a48279dd6aa38d40276cbe1b370bd34cf",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-7.mp4",
+      "sha256": "41f8c167674b41db9641b768e5458c681c1ec5c9122056753ea013c343b5eed8",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-8.mp4",
+      "sha256": "15ec17f957e061957b6bb5c58051fc724e252587846c11f81677eee992d3c2b8",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-9.mp4",
+      "sha256": "7623f82a36cf819a3339780ed23b1942af318d69fd85d360ceda752c7fdc7a9a",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-master.mp4",
+      "sha256": "d01b1bd5790f2a945badf8bee34ead90901fed0828928c40ab4b03a92cfda6a6",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/01-projectp-first-tile-0.png",
+      "sha256": "a8bc1749f36fb8c9d64e8dcab980ad175f159b9192287342b90c1e6cf007cd69",
+      "existingIdentical": true
+    },
+    {
+      "file": "media/first-mix.wav",
+      "sha256": "10f49c86a53b6bdb79bf5c40c752eafb901a164cbc7334661400e5c03b9a92a9",
+      "existingIdentical": true
+    },
+    {
+      "file": "projects/01-projectp-first.ecproj",
+      "sha256": "4090a28b05ee315e8af0c17383532bd9ee15f553030471b54d9ff97ca6f43e89",
+      "bytes": 2489236
+    },
+    {
+      "file": "projects/01-projectp-first.fcproj",
+      "sha256": "becc958dfe02032b2a7d21c06caca0d5e42dabffdde99c707251b416d390056f",
+      "bytes": 5166
+    },
+    {
+      "file": "qa/01-projectp-first/all-scenes.jpg",
+      "sha256": "d933346797c5bc46d5fafe35c33c490035f5bc5813d7514b943c4a36b8166d44",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/all-scenes.json",
+      "sha256": "fe861c131d89eba300954c596e3e1f6f56b580feb69269a9211b8f0f25fe30fa",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-01.jpg",
+      "sha256": "3533b975266c9e9cdddb5d92a1211c88e3a1359af1b39a32a69e58d10c467748",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-01.json",
+      "sha256": "7ea9c0a99a6fbcd80f0173cafcb4f903098187c539675b97e19fdfc98efbd7bc",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-02.jpg",
+      "sha256": "89691c4e3c375713fc22fa5b23dd7278c2b66a757a04e3d6ee216c2279511ea6",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-02.json",
+      "sha256": "26e04c0320485f2114fae0b54e1951553b4f951b3a929b9e1965e5b0d3cc7cbb",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-03.jpg",
+      "sha256": "95acfe4993bd5e09aca89da5f0ba9040c31186eaf6bdc6d1366ec4c90ec9a58d",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-03.json",
+      "sha256": "94c8dedb028dbcfef8300370928e294a1968e2996e6fcbc7cb9123faefc2442a",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-04.jpg",
+      "sha256": "508b3171968264166e17bccd959083889c914ed44f4b611bdbb3f4bf17781c5c",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-04.json",
+      "sha256": "a848d4b79d27c487a0e31bd32469f87ad082a52fd838e6acbb13b0dd00888938",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-05.jpg",
+      "sha256": "0914a08150b02912cae4cb7749b0e68f245a731f0fbd9b8a6888ca1262a42e75",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-05.json",
+      "sha256": "12c75939cdaa8b48fe746406a215050d1f184a8416d8fa41b9c0ac45269385d1",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-06.jpg",
+      "sha256": "3ca4b9725104c9880b24141e25eaf6888bab14807d3f1bc9f0759fee02a81e2f",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-06.json",
+      "sha256": "cabe7154b1d9376ab88e7fc15cc580be7c32caa96b9c5fd6a84fa927090327e4",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-07.jpg",
+      "sha256": "9fec1fedbe384755d08f9f77020795469377d8e0177f1ba45c9a1ccf4c60f03b",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-07.json",
+      "sha256": "6e01547225c997e5c80cdf3c0073bd0469b4292b1d8d085ab97de2f9124db641",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-08.jpg",
+      "sha256": "1e20ff99c85141b53573a03075f1efbe7d3ef7a2aa847f5717ee10664545aaa6",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-08.json",
+      "sha256": "3ebc87d305c8d0d9ced2ed94726802bfe5cb224fae9e0de6b3397d46f21dede0",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-09.jpg",
+      "sha256": "61d242c92a4c047e02e769ffe96d790d923d585e8498d7e45690961c4475c202",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-09.json",
+      "sha256": "6c2014d7cfcf4864a6b54c515792e1d29121f5377bab77930e6883aac98ebb48",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-10.jpg",
+      "sha256": "9d2049d6fd0737d152f905e7cbfd46742a46a0733c8770d616f42b9ccf3336af",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-10.json",
+      "sha256": "db78429e7eae9068c76e036a8f8e0565183a7b8013da23c7811fadfe0bed9ee2",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-11.jpg",
+      "sha256": "4f63d79d2743549ef88571eccfb0829bab8385e44b3050165352137a56d47bcf",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-11.json",
+      "sha256": "23ded6682bb6897a9371db0015933aeada4345c15684bbf2fe3204b01b37df2e",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-12.jpg",
+      "sha256": "6e078986063a04a2e65efc889771f35a0678aa8ef4606d53b09a831ca9a450dd",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-12.json",
+      "sha256": "50ea253c31818c14e102b5aa4b9d463eb3d06c70e29a9403e885f6bc89264c73",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-13.jpg",
+      "sha256": "502af2fd060a99d7e8a1896616394777448b38668e3a30969574123969edf725",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/boundary-13.json",
+      "sha256": "f90fc7208bc051fe3199cb5173421624f0f5cd55c8f16bb760aa5f28d21cb311",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/build.json",
+      "sha256": "cf167f3e56ba7db720ff5aa99bdb3c1e9e6d75b2593c2fa5795ebe31ee825fdf",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/continuous-cut-01.jpg",
+      "sha256": "7f5df116919258d93d3a768343bf844a4a87c1000b719eb3edb93156b078e976",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/continuous-cut-01.json",
+      "sha256": "7cb5efe17ba1ed4e4048b34d0be8bc981ac3a5d370ae1a0fb3e1e68282b0dd59",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/continuous-cut-02.jpg",
+      "sha256": "eb2a949411968d7cafe76774af57b003aab270604ab4e1ec00f356d79056392b",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/continuous-cut-02.json",
+      "sha256": "d834d1f23c9ae47ff7579d0f682180a1d92b62df814ea0bba82745e4d5e34259",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/continuous-cut-03.jpg",
+      "sha256": "dcc21d3a54eb3886b6a97b69b6b1a56a0ebb703580982933850263d4f6b1beb6",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/continuous-cut-03.json",
+      "sha256": "d2d5878464348657da20859fde8a268b5f7c5613467d5b2fadae8aaafc69692c",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/continuous-cut-04.jpg",
+      "sha256": "70a50090f337ebe8a33ff1d4ab4cfc38c21070b355da09e9f6936e24d6b46f3d",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/continuous-cut-04.json",
+      "sha256": "94197107bffd999e146c26faf18e02a1d528064d4fbde6c658d72ccbeaa8bccf",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/continuous-cut.jpg",
+      "sha256": "7f5df116919258d93d3a768343bf844a4a87c1000b719eb3edb93156b078e976",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/cover.json",
+      "sha256": "5ddd1bc1cb8c3c7ea0c84b226ad18cd25dcf9ac3cfb707d376bbb5ca3b94d5b1",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/ec-footage.json",
+      "sha256": "a0b1ad8acca68b0dffbc4cd8e14554889d65c9631152ae9bf98b5f2c55f3c58a",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/ec-render.json",
+      "sha256": "29eb7ecc0d707d047fc5461deb90470b9797965d0b99fce5c708580acdb49966",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/fc-build.json",
+      "sha256": "f8f4aa6f54171eb0213cc2e84421a0a7df8535c3da65a7a93b63e4cf12b22c77",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/fc-export.json",
+      "sha256": "7d28e9095025247217f95cb2523cb0b13a9b29bc818e0f8a24e938901818b4ff",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/fc-place.json",
+      "sha256": "862d0b77f06f92a31a19f0fa2e6579d2f72931fe687cdb7d114bc737f867173c",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/fc-status.json",
+      "sha256": "1d1efdfe51bda7a17a44898f92c2a5508592cee5f0a9ec1dec4a2970300c0f20",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/ffprobe.json",
+      "sha256": "c27da8c7441bd4bea700a124ba5e914fb78e0ba373165101c277aa22bcaef663",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-10.7.json",
+      "sha256": "ed500df767b4d7ae7cf04ab0b8c6c22ce181f4b95e894ca1a733bb0bb4378216",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-10.7.png",
+      "sha256": "26b5abab77419f3b99f4a59683e3a3e382c10fee35d785fa17f77b4be8d3c6d0",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-12.7.json",
+      "sha256": "98e24f8b9e3576117334ec5469b58415d81e486b08bd937222d1d087d2fea38d",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-12.7.png",
+      "sha256": "e5e2537bca795c0b89afb5457202730cd5b74dd531b7aa5e28f24389084dbb8c",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-13.9.json",
+      "sha256": "422f86ddca70bb4be0709d7f2f69b47c6326dd2e44c8247632e79fed2c4afdb8",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-13.9.png",
+      "sha256": "90b6b5640e891022318667a6956e776557768b11fb318a37dba92543dc2225fb",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-15.6.json",
+      "sha256": "2d96980a00c1c7e81d25a69700ce0d8ed7b0c5aab0f8673a5302ca205baefb97",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-15.6.png",
+      "sha256": "74f6afb4dc9e2e95ef8da39d8a2b2a2f1c4ed8ae7fe7239d16649373b252b6dd",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-18.2.json",
+      "sha256": "bf49927d51b0e2b828563824d89fa46ef322fa9cc3e8260e6157de688a026646",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-18.2.png",
+      "sha256": "d197d0ecfe954ba3818e5da67f13ad860cc39fce644d181861d47edd555df8a8",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-21.1.json",
+      "sha256": "94f44912313c222511d31be008a89763cca8f844c0de3c8c873809f089f74e3d",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-21.1.png",
+      "sha256": "c52714a86524e5b87bbde84f711ed86931055d4471dd9ca4acecc81c9877a8de",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-22.4.json",
+      "sha256": "dcca82b018e252b9c3576519e67baedf20e8a82a82474b0fa0d18cc2492d994d",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-22.4.png",
+      "sha256": "276a6a901efc8c4b1b368f279d0f9ace2dabe9029c71dc06e0721e31d83465f2",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-25.3.json",
+      "sha256": "24a623ce086fe437bb99f8d53fe7d35acf2914434b2a6b7437439c7d4d2eee48",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-25.3.png",
+      "sha256": "3d2add4d0438ae276f2b05085ac30227d707c2060aea1ae5882af172cc80c7fd",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-26.2.json",
+      "sha256": "36d2f5265faf23133830506fe2f658d518d1d308f6bde7f19b787384b2768a4c",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-26.2.png",
+      "sha256": "26ea4e959718c88207e11bdd7d18fd55177d2989275d4ceed05541c3e99bfbc6",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-4.json",
+      "sha256": "70c230836c94383ddf3e074001e859772806c05c5e0032b5269573c815250942",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-4.png",
+      "sha256": "36da4c904285864466e02eadafff510926efccb2beb85133a39e7efc46704087",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-8.1.json",
+      "sha256": "a0a91720af775dbaacb8758ffe933bbc9403c467e4e36d94213e55e48af16b79",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-8.1.png",
+      "sha256": "94e4972d12e72917be5afb20851d2c1cb1ef40133f581bcef29a6849f87dd50f",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/final-audio.json",
+      "sha256": "6f6f307593e529635b9db785eb7ebcf357066e1932da0ed03a400b3bdb29b344",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/freeze-10.json",
+      "sha256": "ef99bffd7af36a4b065fa77139de9beeca54224f637cb03876f79f7c07999306",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/freeze-13.json",
+      "sha256": "8e781a7fc467e7dd10635852f8ffabe9a518f1ce7666490ef14afffe3df22a52",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/freeze-2.json",
+      "sha256": "ad22695c1e4d90b20ba8b2f7dec6bb0a024a01898a260bb64a0ad037e3c3813e",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/freeze-5.json",
+      "sha256": "d0f1d824d0eda922281ee48f48f9d2dbe762168b45832fa570222d7a6124ddef",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/freeze-6.json",
+      "sha256": "d74d9ffecbdfd35592637bf0fcd04d4a8d1b0e8f3bc83c666ecd8ecb7f846d6b",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/full-decode.json",
+      "sha256": "edaea6318c86deb231c9c7dc0a6c4fd454f2257a7b908907596bf39090c2d29c",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/layout-and-motion.json",
+      "sha256": "7d057445e462fbdb4aee1819e0bc7ce46c737526e69f5bd38075d528050ac41f",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-0.json",
+      "sha256": "350c2d94e05c45351e868f33dc5d499e6bb073248ed5c0a96e3188b1c28f4b26",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-1.json",
+      "sha256": "08823af9b092657dd7d9cc8af67be7419e2a1c74a15326121c39d6a576436ef4",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-10.json",
+      "sha256": "b196a14c6939966a84422c561b5a5dcbc72408802c93615493adeaaf54f8bbe3",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-11.json",
+      "sha256": "097940a448c878120355044ef0fa4ffe5849a5751fc1ec7d3a4064fe55860b83",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-12.json",
+      "sha256": "1d50568aa2209daadb8cde7019c25cd1dcc5a5c23784848bb5bb6611a8d104dd",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-13.json",
+      "sha256": "1427dda58796b8bacc76ac5d9e1d2e8b6f9c12b380eb17077ec2af5f4606bd2e",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-2.json",
+      "sha256": "c85bb926a8cd9d6c7fccfe7155f89e093df5be9ecbb53ea934bb796615c1dbd6",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-3.json",
+      "sha256": "8b821511a016e6a28c66e0a4da76b722c883a05e243a1037d3f43bbb7a9b4a97",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-4.json",
+      "sha256": "91e45e55cd22d138582b108bbb6cf745d1c108fa0232ff0e8938e4f607643d30",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-5.json",
+      "sha256": "e78b1d6d989c4027eb97a16bfc292b800bd28b6eb937f7445e6c7d25521e8840",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-6.json",
+      "sha256": "ba31842fc333636b7e32d4270238cc18b2e92dd4b8fbeea8207ca89a79eeda9d",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-7.json",
+      "sha256": "4ca22fa5c26f518006cdb8c4542e9abc7fd6d9a52ae3eacee30daccc643d085a",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-8.json",
+      "sha256": "76d1658d9c0e01d23b845fd9b0bdacc89c965256b714bda2cfe131dc8ae40570",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/plate-9.json",
+      "sha256": "6c9f61b78038c7800a093746892bf8a2ed5ac57121cd639ecd7734ca15e4dea8",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-1.2.json",
+      "sha256": "fa83baa65241f530f484d7c5aa40811a128ffe83f6426766f2d609df5823216b",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-1.2.png",
+      "sha256": "2ddbdf32840fd72b0b4648f7c5cf380eabffcc608fe7f7848c0166a20c44b800",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-12.7.json",
+      "sha256": "63abd9d531c9d3d23348e13b28adbf4fbf990b2d903a3f7e80a5bd8ac9205937",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-12.7.png",
+      "sha256": "1867ac26e45855af360029b342171ae122937f09ed647108055ca670487b3b98",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-13.9.json",
+      "sha256": "fd713ec6e0815fdf69ce3ddaab86e77ab4fa3863cc627fc8136a84b5896e11a5",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-13.9.png",
+      "sha256": "b2b935f725dea46ace191f90cbbff38b1349f0c067ad205d221f6f3646d5746e",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-15.4.json",
+      "sha256": "10818dfc72780bcdaccd29b6abd946054de0d9f51a121358db718ad858833ff4",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-15.4.png",
+      "sha256": "3b198b162776582ab73d21505c1e7a990fa2229fdf1bb9cf3b2d522699b62307",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-26.2.json",
+      "sha256": "203a7e2d779b8494046de509c74ae9f3f22b331da4a40bf6c96bff6a35a9f745",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-26.2.png",
+      "sha256": "fbef8a1b9b2b83fd6a5ea700f86849ed2d4b655e3b85a6ab077c2d5fc40d3b4c",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-4.json",
+      "sha256": "5890c406a3bb0d49b6143a1d59b9dd0b9bc4351bf1bb20de3661d088982fc678",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-4.png",
+      "sha256": "6406ac0bc450a69981d029dfa18976aac574b12ebeee4f133eb094fc2aa0650d",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-9.5.json",
+      "sha256": "d7d6d6a57f325635bab75b34704f34a5a94073b6b6d604a8be40bb016e48648a",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/preview-9.5.png",
+      "sha256": "3b01ec487c7f9908ca54c48c214084f74a573a2185ce1b62dd0cd7991f8a8bb9",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/probe-command.json",
+      "sha256": "80a08f98587c833cd65f121a361001ddfda77283157c791a69b53a51d6915d53",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/rendered.json",
+      "sha256": "d6125716849988892decf1f892c1063d76ce4d9ace73e747ec3d6e7234d98e0f",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/review-frames.json",
+      "sha256": "e86f6714f256ce1492334309614703bb2b99dc80905f06f93c9f41bed1b1eeb5",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/review-progress.json",
+      "sha256": "509d0915d65ee1d141119a0f603228408b4488c30d734e63c2c54f0e7475a833",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/saved-motion-audit.json",
+      "sha256": "e71274b20516229218239de5e144624b047f6782df260070b1b8e3f1d1cd7545",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/source-manifest.json",
+      "sha256": "c523a128892aebc67e43ae234d3d458caa79b24dd4327865ad772ef029f9843b",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/story-1.jpg",
+      "sha256": "8089679ebe92b6208d19d184b1f91ae589a59a5e2bdb1900dc490c97197ee9ae",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/story-1.json",
+      "sha256": "924e3df17c579586d450c46075d7ca7e0cf24f90add3d080b597fb8875d88cb2",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/story-2.jpg",
+      "sha256": "cfd7a94891b9549f750b239f9a076434e627eb8d38b21246d81c59c9c5defce8",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/story-2.json",
+      "sha256": "011cd519d68c64b53c77d3a7c6b6af3ae9db2e4702021fd65260c596500ae3a6",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/story-3.jpg",
+      "sha256": "7b38bcef3f26084461f3ec78b7a95cda6584475982e15c927ca1d29b6e7ca676",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/story-3.json",
+      "sha256": "a2d1d862a0fde5466ef84c8ca0bff51cf1d2b35dcbb48a22e60939f59ee8f314",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/technical.json",
+      "sha256": "e84b6040a006bfe0c4644abc8d814c7861299b7edcb1ce0912f82bc0be2feb85",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/01-projectp-first/tile-0.json",
+      "sha256": "ca0a2429f23fc64aca8dd26c888dfea0cc01be2c05fe338415306efe8ec1ad8e",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/audio-final-independent.json",
+      "sha256": "60ecd694d74debe009a755b725fc80009b4c5dcb69f73e1e652c1b6ef16fa98b",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/audio-full-decode.json",
+      "sha256": "ad723f807408391a5a00cc08c0ef665141b3b40d731296adafb74efa1eda349f",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/audio.json",
+      "sha256": "680e39ee9d1206a4c7d88b81f88a7172f625752cc6d382ddfecf2c59d1fdb748",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/publication-readiness.json",
+      "sha256": "c5efc4f5aacd430c5fd4fab9c61a122871385983cf79663d8f2d1396c91c03f4",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/selected-source-context.json",
+      "sha256": "692578fccdb04e832a61bc1632987304b1007ceeb9fe00316fee1b698dd30d37",
+      "existingIdentical": true
+    },
+    {
+      "file": "qa/visual-independent.json",
+      "sha256": "49a2ef116395d13e05d4696f032274d20f5bcb3cd82ea6a7da47b0855ebdda6d",
+      "existingIdentical": true
+    },
+    {
+      "file": "source/01-projectp-first.jsx",
+      "sha256": "5efe0f49ba4d24d0f98f42b560dc47e279cf2eb6434167193ca3a52b65291889",
+      "bytes": 24948
+    },
+    {
+      "file": "source/audio.mjs",
+      "sha256": "407f7fcaa7bb27829c58a3b94002535882960d1e12606c9d0d6514230c060018",
+      "existingIdentical": true
+    },
+    {
+      "file": "source/audit-motion.mjs",
+      "sha256": "5748b420dd29e249210e20aaf2d9ee6830bac1c8c6a74286e862f727377eedb8",
+      "bytes": 3148
+    },
+    {
+      "file": "source/episodes.mjs",
+      "sha256": "1b952ca8ce4650e4499b9b70f45126968794ee552ae50d839b157818859c982d",
+      "existingIdentical": true
+    },
+    {
+      "file": "source/make-index.mjs",
+      "sha256": "564867a98c37237117d54c9a07b188651bfd66ac7c8cea51a1755212c6951989",
+      "existingIdentical": true
+    },
+    {
+      "file": "source/native.mjs",
+      "sha256": "825f4682653557d46633b2b0a35ffc9eefb1b6aaa6a15451ed35162803ccf80d",
+      "bytes": 2463
+    },
+    {
+      "file": "source/package.mjs",
+      "sha256": "744ff9439763488c29be9143bcecdc888dba934fda302d6ed1acde4afc0a964f",
+      "bytes": 7184
+    },
+    {
+      "file": "source/produce.mjs",
+      "sha256": "f795dd298e9113aaf819c7b678afc8ed82c326a66996ce5a1331603badd979d0",
+      "existingIdentical": true
+    },
+    {
+      "file": "source/review-frames.mjs",
+      "sha256": "ebcd7187e0e4103a770eb31217b63cbffe01ff9d09ef16f47c549ace21a578b6",
+      "existingIdentical": true
+    },
+    {
+      "file": "source/verify-delivery-native.ps1",
+      "sha256": "98e77b65fb9b61016f2c5c9a9b634425d232b001d1e01b6b88c18be705155094",
+      "existingIdentical": true
+    },
+    {
+      "file": "source/verify.mjs",
+      "sha256": "63212637e8711b0c288e0245f780497d64a4b8c3b2b02542273e75ceca2f0c6c",
+      "existingIdentical": true
+    },
+    {
+      "file": "source/台本-#0087ProjectP初投稿.md",
+      "sha256": "7ad7e9ba604ac5e3c4da59c55df876981a3ad57cba7fad447c4428e0c9fa064e",
+      "existingIdentical": true
+    },
+    {
+      "file": "source/投稿文.json",
+      "sha256": "2dc3de3898ecae1e9bf89eeac600d359caa488fee44112c59e130ecfe8b4ba20",
+      "existingIdentical": true
+    },
+    {
+      "file": "videos/01-projectp-first-cover.jpg",
+      "sha256": "927b7a63af0b90bfb10d291b33477961b3e352b7815efe1bc3b0e7dd402146c9",
+      "existingIdentical": true
+    },
+    {
+      "file": "videos/01-projectp-first.mp4",
+      "sha256": "5f56d833eba18fb816e1f8e65ff046d5b2d7a4f20b622df0aa137df9cc94f878",
+      "existingIdentical": true
+    }
+  ],
+  "nativeReopenSaveRender": true,
+  "missingAssets": 0,
+  "windowsBatch": {
+    "ok": true,
+    "bundle": "F:\\Videos\\ProjectP-初投稿-2026-10-25",
+    "steps": [
+      {
+        "exe": "C:\\Program Files\\EffectCraft\\effectcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-初投稿-2026-10-25\\projects\\01-projectp-first.ecproj",
+          "--save",
+          "info",
+          "--json"
+        ],
+        "exit": 0,
+        "seconds": 0.495309,
+        "stdout": "{\"activeComp\":{\"background\":[0.062745101749897,0.08235294371843338,0.10980392247438431],\"duration\":27.266666666666666,\"frameRate\":30.0,\"height\":1920,\"id\":1,\"layers\":[{\"blendMode\":\"Normal\",\"id\":2887,\"in\":0.0,\"index\":1,\"label\":\"Red\",\"name\":\"Pui bug\",\"out\":25.433333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2841,\"in\":0.0,\"index\":2,\"label\":\"Blue\",\"name\":\"Pui bug plate\",\"out\":25.433333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2802,\"in\":0.0,\"index\":3,\"label\":\"Red\",\"name\":\"Hook question\",\"out\":2.7333333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2763,\"in\":0.0,\"index\":4,\"label\":\"Red\",\"name\":\"Hook top\",\"out\":2.7333333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2717,\"in\":0.0,\"index\":5,\"label\":\"Blue\",\"name\":\"Hook field\",\"out\":2.7333333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2671,\"in\":20.533333333333335,\"index\":6,\"label\":\"Blue\",\"name\":\"Directional whip 11\",\"out\":20.7,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2625,\"in\":5.8,\"index\":7,\"label\":\"Blue\",\"name\":\"Directional whip 4\",\"out\":5.966666666666667,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2579,\"in\":0.6,\"index\":8,\"label\":\"Blue\",\"name\":\"Directional whip 1\",\"out\":0.7666666666666667,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2540,\"in\":25.633333333333333,\"index\":9,\"label\":\"Red\",\"name\":\"Next invitation\",\"out\":27.266666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2501,\"in\":25.533333333333335,\"index\":10,\"label\":\"Red\",\"name\":\"Signature line two\",\"out\":27.266666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2462,\"in\":25.533333333333335,\"index\":11,\"label\":\"Red\",\"name\":\"Signature line one\",\"out\":27.266666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2423,\"in\":25.433333333333334,\"index\":12,\"label\":\"Red\",\"name\":\"PUI reveal\",\"out\":27.266666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2384,\"in\":25.433333333333334,\"index\":13,\"label\":\"Red\",\"name\":\"Creator episode\",\"out\":27.266666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2338,\"in\":25.433333333333334,\"index\":14,\"label\":\"Blue\",\"name\":\"Ending accent\",\"out\":27.266666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2292,\"in\":25.433333333333334,\"index\":15,\"label\":\"Blue\",\"name\":\"Creator background\",\"out\":27.266666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2280,\"in\":25.433333333333334,\"index\":16,\"label\":\"Red\",\"name\":\"FOCUS 13 ぷい\",\"out\":27.266666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":2257,\"in\":25.433333333333334,\"index\":17,\"label\":\"Aqua\",\"name\":\"Source 13\",\"out\":27.266666666666666,\"parent\":2280,\"start\":25.433333333333334,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":2245,\"in\":22.0,\"index\":18,\"label\":\"Red\",\"name\":\"FOCUS 12 medicate / サビ\",\"out\":25.633333333333333,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":2222,\"in\":22.0,\"index\":19,\"label\":\"Aqua\",\"name\":\"Source 12\",\"out\":25.633333333333333,\"parent\":2245,\"start\":22.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":2183,\"in\":20.6,\"index\":20,\"label\":\"Red\",\"name\":\"Punch 11\",\"out\":22.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2137,\"in\":20.6,\"index\":21,\"label\":\"Blue\",\"name\":\"Word shade 11\",\"out\":22.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2098,\"in\":20.6,\"index\":22,\"label\":\"Red\",\"name\":\"Work 11\",\"out\":22.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2052,\"in\":20.6,\"index\":23,\"label\":\"Blue\",\"name\":\"Label shade 11\",\"out\":22.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2040,\"in\":20.6,\"index\":24,\"label\":\"Red\",\"name\":\"FOCUS 11 medicate / 曲・歌・MV：ぷい\",\"out\":22.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":2017,\"in\":20.6,\"index\":25,\"label\":\"Aqua\",\"name\":\"Source 11\",\"out\":22.2,\"parent\":2040,\"start\":20.6,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":1978,\"in\":18.4,\"index\":26,\"label\":\"Red\",\"name\":\"Punch 10\",\"out\":20.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1932,\"in\":18.4,\"index\":27,\"label\":\"Blue\",\"name\":\"Word shade 10\",\"out\":20.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1893,\"in\":18.4,\"index\":28,\"label\":\"Red\",\"name\":\"Work 10\",\"out\":20.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1847,\"in\":18.4,\"index\":29,\"label\":\"Blue\",\"name\":\"Label shade 10\",\"out\":20.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1835,\"in\":18.4,\"index\":30,\"label\":\"Red\",\"name\":\"FOCUS 10 ObjectCreator / 開発中\",\"out\":20.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":1812,\"in\":18.4,\"index\":31,\"label\":\"Aqua\",\"name\":\"Source 10\",\"out\":20.8,\"parent\":1835,\"start\":18.4,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":1773,\"in\":16.4,\"index\":32,\"label\":\"Red\",\"name\":\"Punch 9\",\"out\":18.4,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1727,\"in\":16.4,\"index\":33,\"label\":\"Blue\",\"name\":\"Word shade 9\",\"out\":18.4,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1688,\"in\":16.4,\"index\":34,\"label\":\"Red\",\"name\":\"Work 9\",\"out\":18.4,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1642,\"in\":16.4,\"index\":35,\"label\":\"Blue\",\"name\":\"Label shade 9\",\"out\":18.4,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1630,\"in\":16.4,\"index\":36,\"label\":\"Red\",\"name\":\"FOCUS 9 ObjectCreator / 実再組立\",\"out\":18.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":1607,\"in\":16.4,\"index\":37,\"label\":\"Aqua\",\"name\":\"Source 9\",\"out\":18.6,\"parent\":1630,\"start\":16.4,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":1568,\"in\":14.333333333333334,\"index\":38,\"label\":\"Red\",\"name\":\"Punch 8\",\"out\":16.4,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1522,\"in\":14.333333333333334,\"index\":39,\"label\":\"Blue\",\"name\":\"Word shade 8\",\"out\":16.4,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1483,\"in\":14.333333333333334,\"index\":40,\"label\":\"Red\",\"name\":\"Work 8\",\"out\":16.4,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1437,\"in\":14.333333333333334,\"index\":41,\"label\":\"Blue\",\"name\":\"Label shade 8\",\"out\":16.4,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1425,\"in\":14.333333333333334,\"index\":42,\"label\":\"Red\",\"name\":\"FOCUS 8 C# / 実コード\",\"out\":16.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":1402,\"in\":14.333333333333334,\"index\":43,\"label\":\"Aqua\",\"name\":\"Source 8\",\"out\":16.6,\"parent\":1425,\"start\":14.333333333333334,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":1363,\"in\":11.6,\"index\":44,\"label\":\"Red\",\"name\":\"Punch 7\",\"out\":14.333333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1317,\"in\":11.6,\"index\":45,\"label\":\"Blue\",\"name\":\"Word shade 7\",\"out\":14.333333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1278,\"in\":11.6,\"index\":46,\"label\":\"Red\",\"name\":\"Work 7\",\"out\":14.333333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1232,\"in\":11.6,\"index\":47,\"label\":\"Blue\",\"name\":\"Label shade 7\",\"out\":14.333333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1220,\"in\":11.6,\"index\":48,\"label\":\"Red\",\"name\":\"FOCUS 7 Blender / 実プロジェクト\",\"out\":14.533333333333333,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":1197,\"in\":11.6,\"index\":49,\"label\":\"Aqua\",\"name\":\"Source 7\",\"out\":14.533333333333333,\"parent\":1220,\"start\":11.6,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":1158,\"in\":10.2,\"index\":50,\"label\":\"Red\",\"name\":\"Punch 6\",\"out\":11.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1112,\"in\":10.2,\"index\":51,\"label\":\"Blue\",\"name\":\"Word shade 6\",\"out\":11.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1073,\"in\":10.2,\"index\":52,\"label\":\"Red\",\"name\":\"Work 6\",\"out\":11.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1027,\"in\":10.2,\"index\":53,\"label\":\"Blue\",\"name\":\"Label shade 6\",\"out\":11.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1015,\"in\":10.2,\"index\":54,\"label\":\"Red\",\"name\":\"FOCUS 6 ObjectCreator / 分解した部品\",\"out\":11.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":992,\"in\":10.2,\"index\":55,\"label\":\"Aqua\",\"name\":\"Source 6\",\"out\":11.8,\"parent\":1015,\"start\":10.2,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":953,\"in\":8.6,\"index\":56,\"label\":\"Red\",\"name\":\"Punch 5\",\"out\":10.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":907,\"in\":8.6,\"index\":57,\"label\":\"Blue\",\"name\":\"Word shade 5\",\"out\":10.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":868,\"in\":8.6,\"index\":58,\"label\":\"Red\",\"name\":\"Work 5\",\"out\":10.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":822,\"in\":8.6,\"index\":59,\"label\":\"Blue\",\"name\":\"Label shade 5\",\"out\":10.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":810,\"in\":8.6,\"index\":60,\"label\":\"Red\",\"name\":\"FOCUS 5 ObjectCreator / 分解した部品\",\"out\":10.4,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":787,\"in\":8.6,\"index\":61,\"label\":\"Aqua\",\"name\":\"Source 5\",\"out\":10.4,\"parent\":810,\"start\":8.6,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":748,\"in\":5.866666666666666,\"index\":62,\"label\":\"Red\",\"name\":\"Punch 4\",\"out\":8.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":702,\"in\":5.866666666666666,\"index\":63,\"label\":\"Blue\",\"name\":\"Word shade 4\",\"out\":8.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":663,\"in\":5.866666666666666,\"index\":64,\"label\":\"Red\",\"name\":\"Work 4\",\"out\":8.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":617,\"in\":5.866666666666666,\"index\":65,\"label\":\"Blue\",\"name\":\"Label shade 4\",\"out\":8.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":605,\"in\":5.866666666666666,\"index\":66,\"label\":\"Red\",\"name\":\"FOCUS 4 ObjectCreator / 開発中\",\"out\":8.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":582,\"in\":5.866666666666666,\"index\":67,\"label\":\"Aqua\",\"name\":\"Source 4\",\"out\":8.8,\"parent\":605,\"start\":5.866666666666666,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":536,\"in\":2.7333333333333334,\"index\":68,\"label\":\"Blue\",\"name\":\"Chat underline\",\"out\":5.866666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":497,\"in\":2.7333333333333334,\"index\":69,\"label\":\"Red\",\"name\":\"Question provenance\",\"out\":5.866666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":458,\"in\":2.7333333333333334,\"index\":70,\"label\":\"Red\",\"name\":\"Real question heading\",\"out\":5.866666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":412,\"in\":2.7333333333333334,\"index\":71,\"label\":\"Blue\",\"name\":\"Chat heading field\",\"out\":5.866666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":400,\"in\":2.7333333333333334,\"index\":72,\"label\":\"Red\",\"name\":\"FOCUS 3 実際のChatGPTの相談\",\"out\":6.066666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":377,\"in\":2.7333333333333334,\"index\":73,\"label\":\"Aqua\",\"name\":\"Source 3\",\"out\":6.066666666666666,\"parent\":400,\"start\":2.7333333333333334,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":338,\"in\":2.066666666666667,\"index\":74,\"label\":\"Red\",\"name\":\"Work 2\",\"out\":2.7333333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":292,\"in\":2.066666666666667,\"index\":75,\"label\":\"Blue\",\"name\":\"Label shade 2\",\"out\":2.7333333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":280,\"in\":2.066666666666667,\"index\":76,\"label\":\"Red\",\"name\":\"FOCUS 2 ObjectCreator / 実ゲーム\",\"out\":2.933333333333333,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":257,\"in\":2.066666666666667,\"index\":77,\"label\":\"Aqua\",\"name\":\"Source 2\",\"out\":2.933333333333333,\"parent\":280,\"start\":2.066666666666667,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":218,\"in\":0.6666666666666666,\"index\":78,\"label\":\"Red\",\"name\":\"Work 1\",\"out\":2.066666666666667,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":172,\"in\":0.6666666666666666,\"index\":79,\"label\":\"Blue\",\"name\":\"Label shade 1\",\"out\":2.066666666666667,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":160,\"in\":0.6666666666666666,\"index\":80,\"label\":\"Red\",\"name\":\"FOCUS 1 ObjectCreator / 実ゲーム\",\"out\":2.2666666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":137,\"in\":0.6666666666666666,\"index\":81,\"label\":\"Aqua\",\"name\":\"Source 1\",\"out\":2.2666666666666666,\"parent\":160,\"start\":0.6666666666666666,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":98,\"in\":0.0,\"index\":82,\"label\":\"Red\",\"name\":\"Work 0\",\"out\":0.6666666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":52,\"in\":0.0,\"index\":83,\"label\":\"Blue\",\"name\":\"Label shade 0\",\"out\":0.6666666666666666,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":40,\"in\":0.0,\"index\":84,\"label\":\"Red\",\"name\":\"FOCUS 0 ObjectCreator / 実ゲーム\",\"out\":0.8666666666666667,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Null\"},{\"blendMode\":\"Normal\",\"id\":17,\"in\":0.0,\"index\":85,\"label\":\"Aqua\",\"name\":\"Source 0\",\"out\":0.8666666666666667,\"parent\":40,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"}],\"name\":\"ProjectP 01 01\",\"preserveFrameRate\":false,\"preserveResolution\":false,\"resolution\":\"Auto\",\"resolutionFactor\":null,\"width\":1080,\"workArea\":[0.0,27.266666666666666]},\"commands\":731,\"effects\":307,\"mode\":\"headless\",\"project\":{\"activeComp\":1,\"bitDepth\":\"8 bpc\",\"dirty\":false,\"items\":[{\"duration\":27.266666666666666,\"frameRate\":30.0,\"id\":1,\"label\":\"Sandstone\",\"layers\":85,\"name\":\"ProjectP 01 01\",\"parent\":null,\"size\":[1080,1920],\"type\":\"Composition\"},{\"duration\":0.8666666666666667,\"id\":2,\"label\":\"Aqua\",\"name\":\"01-projectp-first-0.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"duration\":1.6,\"id\":3,\"label\":\"Aqua\",\"name\":\"01-projectp-first-1.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"duration\":0.8666666666666667,\"id\":4,\"label\":\"Aqua\",\"name\":\"01-projectp-first-2.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"duration\":3.3333333333333335,\"id\":5,\"label\":\"Aqua\",\"name\":\"01-projectp-first-3.mp4\",\"parent\":null,\"size\":[490,110],\"type\":\"Video\"},{\"duration\":2.933333333333333,\"id\":6,\"label\":\"Aqua\",\"name\":\"01-projectp-first-4.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"duration\":1.8,\"id\":7,\"label\":\"Aqua\",\"name\":\"01-projectp-first-5.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"duration\":1.6,\"id\":8,\"label\":\"Aqua\",\"name\":\"01-projectp-first-6.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"duration\":2.933333333333333,\"id\":9,\"label\":\"Aqua\",\"name\":\"01-projectp-first-7.mp4\",\"parent\":null,\"size\":[1200,650],\"type\":\"Video\"},{\"duration\":2.2666666666666666,\"id\":10,\"label\":\"Aqua\",\"name\":\"01-projectp-first-8.mp4\",\"parent\":null,\"size\":[1400,520],\"type\":\"Video\"},{\"duration\":2.2,\"id\":11,\"label\":\"Aqua\",\"name\":\"01-projectp-first-9.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"duration\":2.4,\"id\":12,\"label\":\"Aqua\",\"name\":\"01-projectp-first-10.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"duration\":1.6,\"id\":13,\"label\":\"Aqua\",\"name\":\"01-projectp-first-11.mp4\",\"parent\":null,\"size\":[940,1672],\"type\":\"Video\"},{\"duration\":3.6333333333333333,\"id\":14,\"label\":\"Aqua\",\"name\":\"01-projectp-first-12.mp4\",\"parent\":null,\"size\":[1080,1920],\"type\":\"Video\"},{\"duration\":2.033333333333333,\"id\":15,\"label\":\"Aqua\",\"name\":\"01-projectp-first-13.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"id\":16,\"label\":\"Lavender\",\"name\":\"01-projectp-first-tile-0.png\",\"parent\":null,\"size\":[430,520],\"type\":\"Image\"}],\"path\":\"F:\\\\Videos\\\\ProjectP-初投稿-2026-10-25\\\\projects\\\\01-projectp-first.ecproj\",\"renderer\":{\"active\":\"cpu\",\"adapter\":null,\"gpuAcceleration\":true,\"renderer\":\"Mercury GPU Acceleration\",\"why\":\"headless: renders on the CPU unless started with --gpu\"},\"selectedLayers\":[],\"time\":0.0,\"undo\":[]},\"version\":\"0.14.0\"}\n",
+        "stderr": ""
+      },
+      {
+        "exe": "C:\\Program Files\\FilmCraft\\filmcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-初投稿-2026-10-25\\projects\\01-projectp-first.fcproj",
+          "--save",
+          "inspect"
+        ],
+        "exit": 0,
+        "seconds": 1.0142024,
+        "stdout": "{\n  \"project\": {\n    \"activeSequence\": 3,\n    \"dirty\": false,\n    \"name\": \"01-projectp-first\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-初投稿-2026-10-25\\\\projects\\\\01-projectp-first.fcproj\",\n    \"revision\": 2,\n    \"root\": {\n      \"children\": [\n        {\n          \"duration\": 6926169600000,\n          \"item\": 3,\n          \"label\": \"Forest\",\n          \"name\": \"ProjectP 01 01\",\n          \"type\": \"Sequence\"\n        },\n        {\n          \"duration\": 6926254272000,\n          \"item\": 4,\n          \"label\": \"Violet\",\n          \"name\": \"01-projectp-first-master.mp4\",\n          \"type\": \"Movie\"\n        },\n        {\n          \"duration\": 6926169600000,\n          \"item\": 5,\n          \"label\": \"Caribbean\",\n          \"name\": \"first-mix.wav\",\n          \"type\": \"Audio\"\n        }\n      ],\n      \"id\": 0,\n      \"name\": \"01-projectp-first\"\n    },\n    \"sourceItem\": null\n  },\n  \"sequence\": {\n    \"audio\": [\n      {\n        \"enabled\": true,\n        \"id\": 2,\n        \"items\": [\n          {\n            \"clip\": 7,\n            \"duration\": 6926169600000,\n            \"durationFrames\": 818,\n            \"effects\": [\n              {\n                \"effect\": \"volume\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"bypass\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Bool(false)\"\n                  },\n                  \"level\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  }\n                }\n              },\n              {\n                \"effect\": \"channel_volume\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"bypass\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Bool(false)\"\n                  },\n                  \"left\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  },\n                  \"right\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  }\n                }\n              },\n              {\n                \"effect\": \"panner\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"balance\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  }\n                }\n              }\n            ],\n            \"enabled\": true,\n            \"end\": 6926169600000,\n            \"endFrame\": 818,\n            \"gainDb\": 0.0,\n            \"item\": 5,\n            \"label\": \"Caribbean\",\n            \"link\": null,\n            \"name\": \"first-mix.wav\",\n            \"reverse\": false,\n            \"sourceIn\": 0,\n            \"sourceOut\": 6926169600000,\n            \"speed\": 1.0,\n            \"start\": 0,\n            \"startFrame\": 0\n          }\n        ],\n        \"label\": null,\n        \"locked\": false,\n        \"muted\": false,\n        \"name\": \"Audio 1\",\n        \"solo\": false,\n        \"syncLock\": true,\n        \"transitions\": []\n      }\n    ],\n    \"duration\": 6926169600000,\n    \"durationFrames\": 818,\n    \"gapSelection\": null,\n    \"id\": 3,\n    \"in\": null,\n    \"markers\": [],\n    \"name\": \"ProjectP 01 01\",\n    \"out\": null,\n    \"playhead\": null,\n    \"selection\": [],\n    \"settings\": {\n      \"audio_master\": \"Stereo\",\n      \"color\": {\n        \"auto_tone_map\": true,\n        \"wide_gamut\": false,\n        \"working\": \"Rec709\"\n      },\n      \"drop_frame\": false,\n      \"frame_rate\": {\n        \"den\": 1,\n        \"num\": 30\n      },\n      \"height\": 1920,\n      \"max_bit_depth\": false,\n      \"max_render_quality\": false,\n      \"par\": [\n        1,\n        1\n      ],\n      \"preset\": \"1080x1920 30\",\n      \"preview_codec\": \"ProRes 422\",\n      \"sample_rate\": 48000,\n      \"width\": 1080,\n      \"working_space\": \"Rec. 709\"\n    },\n    \"split\": {\n      \"audioIn\": null,\n      \"audioOut\": null,\n      \"videoIn\": null,\n      \"videoOut\": null\n    },\n    \"transitionSelection\": [],\n    \"video\": [\n      {\n        \"enabled\": true,\n        \"id\": 1,\n        \"items\": [\n          {\n            \"clip\": 6,\n            \"duration\": 6926169600000,\n            \"durationFrames\": 818,\n            \"effects\": [\n              {\n                \"effect\": \"motion\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"anchor\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Vec2(Vec2 { x: 540.0, y: 960.0 })\"\n                  },\n                  \"anti_flicker\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  },\n                  \"position\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Vec2(Vec2 { x: 540.0, y: 960.0 })\"\n                  },\n                  \"rotation\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  },\n                  \"scale\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(100.0)\"\n                  },\n                  \"scale_width\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(100.0)\"\n                  },\n                  \"uniform_scale\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Bool(true)\"\n                  }\n                }\n              },\n              {\n                \"effect\": \"opacity\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"blend\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Choice(0)\"\n                  },\n                  \"opacity\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(100.0)\"\n                  }\n                }\n              },\n              {\n                \"effect\": \"time_remap\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"speed\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(100.0)\"\n                  }\n                }\n              }\n            ],\n            \"enabled\": true,\n            \"end\": 6926169600000,\n            \"endFrame\": 818,\n            \"gainDb\": 0.0,\n            \"item\": 4,\n            \"label\": \"Violet\",\n            \"link\": null,\n            \"name\": \"01-projectp-first-master.mp4\",\n            \"reverse\": false,\n            \"sourceIn\": 0,\n            \"sourceOut\": 6926169600000,\n            \"speed\": 1.0,\n            \"start\": 0,\n            \"startFrame\": 0\n          }\n        ],\n        \"label\": null,\n        \"locked\": false,\n        \"muted\": false,\n        \"name\": \"Video 1\",\n        \"solo\": false,\n        \"syncLock\": true,\n        \"transitions\": []\n      }\n    ]\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "exe": "C:\\Program Files\\EffectCraft\\effectcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-初投稿-2026-10-25\\projects\\01-projectp-first.ecproj",
+          "run",
+          "footage.check",
+          "{\"wait\":true}",
+          "footage.missing",
+          "{}",
+          "--json"
+        ],
+        "exit": 0,
+        "seconds": 0.46311009999999997,
+        "stdout": "[{\"command\":\"footage.check\",\"result\":{\"checked\":15,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}]\n",
+        "stderr": ""
+      },
+      {
+        "exe": "C:\\Program Files\\FilmCraft\\filmcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-初投稿-2026-10-25\\projects\\01-projectp-first.fcproj",
+          "exec",
+          "media.status"
+        ],
+        "exit": 0,
+        "seconds": 0.3750921,
+        "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"078f2cd30f5c8db5\",\n      \"size\": 47919720\n    },\n    \"item\": 4,\n    \"name\": \"01-projectp-first-master.mp4\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-初投稿-2026-10-25\\\\media\\\\01-projectp-first-master.mp4\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"eeb293bb75820a07\",\n      \"size\": 7852844\n    },\n    \"item\": 5,\n    \"name\": \"first-mix.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-初投稿-2026-10-25\\\\media\\\\first-mix.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+        "stderr": ""
+      },
+      {
+        "exe": "C:\\Program Files\\EffectCraft\\effectcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-初投稿-2026-10-25\\projects\\01-projectp-first.ecproj",
+          "render-frame",
+          "--comp",
+          "ProjectP 01 01",
+          "--time",
+          "3.2",
+          "--out",
+          "F:\\Videos\\ProjectP-初投稿-2026-10-25\\qa\\01-projectp-first\\delivery-effectcraft.png",
+          "--json"
+        ],
+        "exit": 0,
+        "seconds": 0.5636513,
+        "stdout": "{\"comp\":1,\"height\":1920,\"ms\":310.5,\"path\":\"F:\\\\Videos\\\\ProjectP-初投稿-2026-10-25\\\\qa\\\\01-projectp-first\\\\delivery-effectcraft.png\",\"time\":3.2,\"width\":1080}\n",
+        "stderr": ""
+      },
+      {
+        "exe": "C:\\Program Files\\FilmCraft\\filmcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-初投稿-2026-10-25\\projects\\01-projectp-first.fcproj",
+          "render",
+          "--seconds",
+          "3.2",
+          "--out",
+          "F:\\Videos\\ProjectP-初投稿-2026-10-25\\qa\\01-projectp-first\\delivery-filmcraft.png"
+        ],
+        "exit": 0,
+        "seconds": 3.4816808999999997,
+        "stdout": "",
+        "stderr": "rendered 1080x1920 in 2104.4 ms → F:\\Videos\\ProjectP-初投稿-2026-10-25\\qa\\01-projectp-first\\delivery-filmcraft.png\n"
+      }
+    ],
+    "message": "Native reopen/save/media-status/render completed from delivery folder"
+  },
+  "proofs": {
+    "effectcraft": {
+      "file": "delivery-effectcraft.png",
+      "sha256": "6e7f0b2e4a4afac0fadab17bbe325a5140472d279c556295a6376248079b9f9f"
+    },
+    "filmcraft": {
+      "file": "delivery-filmcraft.png",
+      "sha256": "f60a0886bc7d1ff6139b082181a268fd6cb019bbc03a0369c2fe02917c9d4a81"
+    }
+  }
+}

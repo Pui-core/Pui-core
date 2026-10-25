@@ -1,0 +1,13 @@
+{
+  "checkedForDate": "2026-10-25",
+  "master": {"width":1080,"height":1920,"fps":30,"frames":818,"videoDurationSeconds":27.2666666667,"container":"MP4","videoCodec":"H.264","audioCodec":"AAC-LC","sampleRate":48000,"channels":2},
+  "officialSources": [
+    {"url":"https://developers.tiktok.com/docs/en/content-posting-api-media-transfer-guide","supports":"TikTok API upload recommends MP4/H264; 23–60fps and each side360–4096px. This is an encoding compatibility reference, not an assertion that a posting API was used."},
+    {"url":"https://support.google.com/youtube/answer/15424877?hl=en","supports":"Vertical or square videos up to3minutes qualify for Shorts under the documented conditions."},
+    {"url":"https://support.google.com/youtube/answer/1722171?hl=en","supports":"YouTube recommended H264 / AAC-LC 48kHz; preserve the source frame rate."},
+    {"url":"https://ads.tiktok.com/resources/help/article/tiktok-auction-in-feed-ads?lang=en","supports":"Advertisement safe zones vary by caption/anchor and preview/device. Not an all-device guarantee for organic posts."},
+    {"url":"https://support.google.com/youtube/answer/16215842?hl=en","supports":"Shorts visual guides consider action buttons, description and edges."}
+  ],
+  "design": "主文を画面中央寄りに配置し下部UIを避ける。実ゲームの下部HUDへ説明を依存させない。広告のsafe-zoneをorganic投稿の全端末保証へ転用しない。",
+  "limits": {"actualTikTokUpload":false,"actualYouTubeUpload":false,"platformRecompressionTest":false,"allDeviceUiSafetyGuaranteed":false,"viralityOrMonetizationGuaranteed":false}
+}
