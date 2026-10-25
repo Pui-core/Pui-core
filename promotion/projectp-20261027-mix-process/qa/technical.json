@@ -1,5 +1,5 @@
 {
-  "status": "TECHNICAL_PASS_PENDING_REVISION02_NATIVE_WAVE_RIGHT_EDGE_RECHECK",
+  "status": "TECHNICAL_PASS_BOUNDED_NATIVE_P2_RELEASED",
   "format": {
     "width": 1080,
     "height": 1920,
@@ -55,9 +55,19 @@
   "headBounds": "qa/model-alpha-bounds.json",
   "actualPopularMusicRequiredForThisOwnTrackComparison": false,
   "subjectiveAudition": false,
-  "nativeTikTokUi": false,
-  "day27Adoption": false,
+  "nativeTikTokUi": true,
   "published": false,
   "revision": "02_NATIVE_WAVE_SAFE",
-  "nativeWaveEvidence": "qa/native-wave-safe-fix.json"
+  "nativeWaveEvidence": "qa/native-wave-safe-fix.json",
+  "targetDayAdoption": false,
+  "targetDateJst": "2026-10-26",
+  "nativeEvidence": "qa/native99-revision02-binding.json",
+  "staging": {
+    "state": "ACTIVE_FOR_EXISTING_AUTHORIZED_SCHEDULE_PREFLIGHT",
+    "coverSavedInsideStaging": true,
+    "draftSaveButtonPressed": false,
+    "scheduleSubmitIntentYet": false,
+    "publicPost": false,
+    "discarded": false
+  }
 }

@@ -2,7 +2,7 @@
   "issue": 99,
   "finding": "PP99-NATIVE-WAVE-RIGHT-EDGE",
   "severity": "P2",
-  "state": "PICTURE_FIX_PENDING_NEW_NATIVE_ROOT_VERIFICATION",
+  "state": "RESOLVED_WITHIN_BOUNDED_REVISION02_NATIVE_PREVIEW",
   "before": {
     "revision": "01_LIVE2D",
     "videoSha256": "68e6ee6f67330f9eaad6faf663c32cb1956b530bff4d825e3183fb74a109a625",
@@ -83,7 +83,7 @@
     "coverSha256": "e2812ab0a0ef5077fbd84e816e392b1f23b73ef6bfdd17467aed86f45b202d55",
     "oldF1MasterSha256": "68e6ee6f67330f9eaad6faf663c32cb1956b530bff4d825e3183fb74a109a625"
   },
-  "nativeRevision02Verified": false,
+  "nativeRevision02Verified": true,
   "published": false,
   "subjectiveAudition": false,
   "after": {
@@ -114,6 +114,15 @@
         "sha256": "a5da1f1dc7f968daf7b0afd935a1c6387117ca345073e5bab4f4cceda63489c6"
       }
     ],
-    "nativeVerified": false
+    "nativeVerified": true,
+    "nativeEvidence": "qa/native99-revision02-binding.json"
+  },
+  "staging": {
+    "state": "ACTIVE_FOR_EXISTING_AUTHORIZED_SCHEDULE_PREFLIGHT",
+    "coverSavedInsideStaging": true,
+    "draftSaveButtonPressed": false,
+    "scheduleSubmitIntentYet": false,
+    "publicPost": false,
+    "discarded": false
   }
 }

@@ -1,5 +1,5 @@
 {
-  "status": "EXTRACTED_PICTURE_FIX_PASS_NATIVE_REVISION02_RECHECK_PENDING",
+  "status": "PASS_WITHIN_BOUNDED_NATIVE_REVISION02_PREVIEW_AND_EXTRACTED_SCOPE",
   "revision": "02_NATIVE_WAVE_SAFE",
   "videoSha256": "7cc316e143590abe2b067e5af6d41649a9f12306d5d56fb10a105f62bd108246",
   "coverSha256": "e2812ab0a0ef5077fbd84e816e392b1f23b73ef6bfdd17467aed86f45b202d55",
@@ -33,8 +33,19 @@
   "sourceMathIndependentReview": "PASS_READ_ONLY_COMMON_AFFINE_GEOMETRY_AND_AUDIO_FIELDS_IDENTICAL",
   "encodedFrameEvidence": "qa/final-frame-binding.json",
   "nativeBeforeEvidence": "qa/native99-revision01-result.json",
-  "nativeRevision02Verified": false,
+  "nativeRevision02Verified": true,
   "wholeSubjectiveAudition": false,
   "published": false,
-  "day27Adoption": false
+  "nativeTikTokUi": true,
+  "targetDayAdoption": false,
+  "targetDateJst": "2026-10-26",
+  "nativeEvidence": "qa/native99-revision02-binding.json",
+  "staging": {
+    "state": "ACTIVE_FOR_EXISTING_AUTHORIZED_SCHEDULE_PREFLIGHT",
+    "coverSavedInsideStaging": true,
+    "draftSaveButtonPressed": false,
+    "scheduleSubmitIntentYet": false,
+    "publicPost": false,
+    "discarded": false
+  }
 }
