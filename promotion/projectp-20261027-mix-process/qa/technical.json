@@ -1,5 +1,5 @@
 {
-  "status": "PASS_WITHIN_CANDIDATE_TECHNICAL_SCOPE",
+  "status": "TECHNICAL_PASS_BOUNDED_NATIVE_P2_RELEASED",
   "format": {
     "width": 1080,
     "height": 1920,
@@ -46,11 +46,28 @@
       "gainDb": -0.02259275215282092
     }
   ],
-  "modelLoop": "qa/model-loop-final.json",
+  "modelLoop": {
+    "evidence": "qa/model-loop-final.json",
+    "validatedVideoSha256": "68e6ee6f67330f9eaad6faf663c32cb1956b530bff4d825e3183fb74a109a625",
+    "currentVideoRoiRemeasured": false,
+    "scope": "Unchanged Core loop source and portrait placement; previous loop measurement carried forward, no new revision02 ROI measurement"
+  },
   "headBounds": "qa/model-alpha-bounds.json",
   "actualPopularMusicRequiredForThisOwnTrackComparison": false,
   "subjectiveAudition": false,
-  "nativeTikTokUi": false,
-  "day27Adoption": false,
-  "published": false
+  "nativeTikTokUi": true,
+  "published": false,
+  "revision": "02_NATIVE_WAVE_SAFE",
+  "nativeWaveEvidence": "qa/native-wave-safe-fix.json",
+  "targetDayAdoption": false,
+  "targetDateJst": "2026-10-26",
+  "nativeEvidence": "qa/native99-revision02-binding.json",
+  "staging": {
+    "state": "ACTIVE_FOR_EXISTING_AUTHORIZED_SCHEDULE_PREFLIGHT",
+    "coverSavedInsideStaging": true,
+    "draftSaveButtonPressed": false,
+    "scheduleSubmitIntentYet": false,
+    "publicPost": false,
+    "discarded": false
+  }
 }

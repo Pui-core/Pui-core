@@ -1,0 +1,92 @@
+{
+  "issue": 99,
+  "revision": "02_NATIVE_SAFE",
+  "checkedAt": "2026-10-25T15:43:53.177Z",
+  "status": "PASS_BOUNDED_NATIVE_UI_P2_RELEASED_STAGING_ACTIVE",
+  "sourceHeadAtUpload": "ba43d56d66ef356b11323419405e40da993fd205",
+  "videoSha256": "7cc316e143590abe2b067e5af6d41649a9f12306d5d56fb10a105f62bd108246",
+  "coverSha256": "e2812ab0a0ef5077fbd84e816e392b1f23b73ef6bfdd17467aed86f45b202d55",
+  "rootPacket": {
+    "file": "qa/native99-revision02-result.json",
+    "sha256": "e43d5b85a0783fa485971596c7e1770a9a0bc2582012f79df1f605fccb0b54be"
+  },
+  "evidence": [
+    {
+      "file": "qa/native99-v2-feed-opening.png",
+      "sha256": "6a67ed10b5c311c42a3261dc4d570a336e06823f2a44292a44285e673601154d",
+      "role": "Boundednativepreview"
+    },
+    {
+      "file": "qa/native99-v2-feed-A1.png",
+      "sha256": "43f7eaaf499ed406a9ef55dc00b308556653d927c9b2a0224f9909a269b990cd",
+      "role": "Nominal3.2sample stillintro; NOT A1proof"
+    },
+    {
+      "file": "qa/native99-v2-feed-A1-paused.png",
+      "sha256": "cb275d0482215348f705d7151604fa7609b28d68688fe74a33ad67b68ad45af0",
+      "role": "Actualpaused~00:05 A1 P2proof"
+    },
+    {
+      "file": "qa/native99-v2-feed-B1.png",
+      "sha256": "ac39175049a5bf7fb591037b80cd76ab8d599429e0ed2350aa5b88b43c6c4192",
+      "role": "Boundednativepreview"
+    },
+    {
+      "file": "qa/native99-v2-feed-A2.png",
+      "sha256": "aa017bb390d749f6e13431d122ff92980d82c7e0fb6d2cf5e39d1b20cfde3daa",
+      "role": "Boundednativepreview"
+    },
+    {
+      "file": "qa/native99-v2-feed-B2.png",
+      "sha256": "4fe844bb8f3b07c196a0dac69f4c3fdd36d0969e3968a210a3c386caffbe3706",
+      "role": "Boundednativepreview"
+    },
+    {
+      "file": "qa/native99-v2-feed-closing.png",
+      "sha256": "7d3c4033370016913fb161588a906d891b3ce628881c66aa64e5d618cb98fc66",
+      "role": "Boundednativepreview"
+    },
+    {
+      "file": "qa/native99-v2-feed-end.png",
+      "sha256": "4aebdc54ce6cb50b1a6f65c2254d8ba12b5747442dcbb2ad19759433e12c745b",
+      "role": "Boundednativepreview"
+    },
+    {
+      "file": "qa/native99-v2-cover-canvas.png",
+      "sha256": "4ccbdb147d89b9594059fc32fdd72bcc46c86a935a60c90e327fb708faac9c03",
+      "role": "Boundednativepreview"
+    },
+    {
+      "file": "qa/native99-v2-cover-profile.png",
+      "sha256": "d50bbfcadf329dfa6567b056521b971a7c50290e8adbe08e4455f3e6c9eae625",
+      "role": "Boundednativepreview"
+    }
+  ],
+  "sampleCaveat": "Nominal3.2sec sample calledA1 stillshowedintro whileplayerdisplayed00:03; notclaimed asA1 evidence orframe-accurate nativeAVtiming. Supplementalpaused~00:05A1 used instead.",
+  "limitations": {
+    "subjectiveAudition": false,
+    "continuousWholeFrameView": false,
+    "nativeFrameAccurateAvSync": false,
+    "actualPublicPost": false,
+    "actualPublicationDayMetricsAdoption": false
+  },
+  "staging": {
+    "state": "ACTIVE_FOR_EXISTING_AUTHORIZED_SCHEDULE_PREFLIGHT",
+    "coverSavedInsideStaging": true,
+    "draftSaveButtonPressed": false,
+    "scheduleSubmitIntentYet": false,
+    "publicPost": false,
+    "discarded": false
+  },
+  "publicationPlan": {
+    "chosenDateJst": "2026-10-26",
+    "targetTimeJst": "19:15",
+    "conditional": "Afteractualaccount/privacy/disclosure/platformchecks+latestPR23APPROVE/merge; one scheduleintent only, no publishNow",
+    "sourceFolderDate27Historical": true
+  },
+  "coderObserved": [
+    "ActualpausedA1/B1/A2/B2 clean crops independentlyviewed; allwave edges/timeaxis clear beforeavatar/heart column",
+    "Frameaccurate nativeAVsync/wholeaudition/publication notverified"
+  ],
+  "coderBrowserOrRuntimeChanges": false
+}

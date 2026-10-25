@@ -1,14 +1,24 @@
 {
-  "status": "PASS_WITHIN_PRODUCTION_CANDIDATE_TECHNICAL_AND_EXTRACTED_VISUAL_SCOPE",
-  "videoSha256": "68e6ee6f67330f9eaad6faf663c32cb1956b530bff4d825e3183fb74a109a625",
-  "effectcraftSha256": "fb80f65a7958ae36c9ed7f64718800b02b33630b5ef100eb0b8f482014666815",
-  "filmcraftSha256": "4d82cd7ba4128cce1b1419125115359003b22bed0cd03b35bbb76f070c510311",
-  "pictureSha256": "5a951ae16dbb9431650c56955b743423f67df50ed22baa4065ef1817d65d267c",
+  "status": "PRODUCTION_FIX_VERIFIED_NATIVE_P2_RELEASED",
+  "videoSha256": "7cc316e143590abe2b067e5af6d41649a9f12306d5d56fb10a105f62bd108246",
+  "effectcraftSha256": "55199c14ec73f74b260eaf5826d6aba52dc25f69d55b5052423e9a1ac64483f8",
+  "filmcraftSha256": "60c2a18d90c059e71cfea2b2bfbfdaadd2ebd1736ec56145d9d1be824e1b1328",
+  "pictureSha256": "81bd16f734d9194c77cf51aab409fda866aaba948b78c523b60bdc9e975afd95",
   "mixSha256": "baa31cd22ddc620dc41a81bad86b3b0867e70546be137d1630baaf1dcbdaa68f",
   "coverSha256": "e2812ab0a0ef5077fbd84e816e392b1f23b73ef6bfdd17467aed86f45b202d55",
   "subjectiveAudition": false,
-  "nativeTikTokUi": false,
+  "nativeTikTokUi": true,
   "published": false,
-  "technicalEvidence": "qa/technical.json",
-  "visualEvidence": "qa/visual-review.json"
+  "revision": "02_NATIVE_WAVE_SAFE",
+  "nativeEvidence": "qa/native99-revision02-binding.json",
+  "targetDayAdoption": false,
+  "targetDateJst": "2026-10-26",
+  "staging": {
+    "state": "ACTIVE_FOR_EXISTING_AUTHORIZED_SCHEDULE_PREFLIGHT",
+    "coverSavedInsideStaging": true,
+    "draftSaveButtonPressed": false,
+    "scheduleSubmitIntentYet": false,
+    "publicPost": false,
+    "discarded": false
+  }
 }

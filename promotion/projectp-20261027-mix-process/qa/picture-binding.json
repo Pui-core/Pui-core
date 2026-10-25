@@ -1,7 +1,29 @@
 {
-  "effectcraftSha256": "fb80f65a7958ae36c9ed7f64718800b02b33630b5ef100eb0b8f482014666815",
-  "compositionSha256": "906c12b39082ed0fa227e0998b51144123d171065a8a5d804171ac90e0514867",
+  "effectcraftSha256": "55199c14ec73f74b260eaf5826d6aba52dc25f69d55b5052423e9a1ac64483f8",
+  "compositionSha256": "f78b06d9ef5bc332c5cd385a1cea357b46c4405f365e9575479babbcd1a44c4e",
   "listenerMasterSha256": "35e08e4b9b8bd0dd28f5576aa58dc7405a8e73e4a41d9d1beed4c27e4c19da6f",
   "actualLoopSeconds": 6,
-  "modelMouthClosed": true
+  "modelMouthClosed": true,
+  "horizontalGeometry": {
+    "anchorX": 54,
+    "factor": 0.85,
+    "sourceCardBounds": [
+      54,
+      1026
+    ],
+    "outputCardBounds": [
+      54,
+      880.2
+    ],
+    "sourceDataBounds": [
+      126,
+      932.4
+    ],
+    "outputDataBounds": [
+      115.2,
+      800.64
+    ],
+    "all128BinsPreserved": true,
+    "verticalTransformUnchanged": true
+  }
 }

@@ -1,31 +1,51 @@
 {
-  "status": "PASS_BOUNDED_NATIVE_AND_ENCODED_FRAME_SCOPE_AFTER_CURSOR_FIX",
-  "videoSha256": "68e6ee6f67330f9eaad6faf663c32cb1956b530bff4d825e3183fb74a109a625",
+  "status": "PASS_WITHIN_BOUNDED_NATIVE_REVISION02_PREVIEW_AND_EXTRACTED_SCOPE",
+  "revision": "02_NATIVE_WAVE_SAFE",
+  "videoSha256": "7cc316e143590abe2b067e5af6d41649a9f12306d5d56fb10a105f62bd108246",
   "coverSha256": "e2812ab0a0ef5077fbd84e816e392b1f23b73ef6bfdd17467aed86f45b202d55",
-  "effectcraftSha256": "fb80f65a7958ae36c9ed7f64718800b02b33630b5ef100eb0b8f482014666815",
-  "scope": [
-    "Native10previews: 0/2.4/5.967/6/7/10.9/11.6/16.2/20.1/22.5",
-    "Encoded23frames in final-frame-binding.json, including3loop transitions andAB cut changes",
-    "Independent readonly peer confirmed mainlayout, captions, central3:4 cover and firstloop beforecursorheightfix; coder independently inspectednewencoded179/180 afterfix"
-  ],
-  "cursorFix": {
-    "finding": "P2 cursor overlaps source-end timestamp",
-    "change": "Height405→360; loweredge1260 above timestamprow",
-    "state": "FIXED_IN_SAVED_EC_AND_FINAL_MP4",
-    "fixedFrames": [
-      179,
-      180
+  "effectcraftSha256": "55199c14ec73f74b260eaf5826d6aba52dc25f69d55b5052423e9a1ac64483f8",
+  "finding": "PP99-NATIVE-WAVE-RIGHT-EDGE",
+  "horizontalGeometry": {
+    "anchorX": 54,
+    "factor": 0.85,
+    "sourceCardBounds": [
+      54,
+      1026
     ],
-    "timestampsStillPresent": true,
-    "audioAndCoreUnchanged": true
+    "outputCardBounds": [
+      54,
+      880.2
+    ],
+    "sourceDataBounds": [
+      126,
+      932.4
+    ],
+    "outputDataBounds": [
+      115.2,
+      800.64
+    ],
+    "all128BinsPreserved": true,
+    "verticalTransformUnchanged": true
   },
-  "modelListeningMouthClosed": true,
-  "waveformSameTimeAmplitudeAxes": true,
-  "creditMatchesRecordedOwnerScope": true,
-  "central3x4EssentialsReadable": true,
-  "actualTikTokUi": false,
-  "wholeContinuousPlayback": false,
+  "preservedWaveBins": 128,
+  "sharedTimeAmplitudeAxes": true,
+  "sourceAudioCoreCoverUnchanged": true,
+  "sourceMathIndependentReview": "PASS_READ_ONLY_COMMON_AFFINE_GEOMETRY_AND_AUDIO_FIELDS_IDENTICAL",
+  "encodedFrameEvidence": "qa/final-frame-binding.json",
+  "nativeBeforeEvidence": "qa/native99-revision01-result.json",
+  "nativeRevision02Verified": true,
   "wholeSubjectiveAudition": false,
-  "creatorDay27Adoption": false,
-  "published": false
+  "published": false,
+  "nativeTikTokUi": true,
+  "targetDayAdoption": false,
+  "targetDateJst": "2026-10-26",
+  "nativeEvidence": "qa/native99-revision02-binding.json",
+  "staging": {
+    "state": "ACTIVE_FOR_EXISTING_AUTHORIZED_SCHEDULE_PREFLIGHT",
+    "coverSavedInsideStaging": true,
+    "draftSaveButtonPressed": false,
+    "scheduleSubmitIntentYet": false,
+    "publicPost": false,
+    "discarded": false
+  }
 }

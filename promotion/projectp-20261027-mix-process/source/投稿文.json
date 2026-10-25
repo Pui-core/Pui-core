@@ -2,8 +2,8 @@
   "title": "同じ歌、余韻を減らすと？",
   "tiktok": "同じ歌、余韻を減らすとどう変わる？\n\nmedicateのV5→V6を、同じ区間で2回聴き比べ。\nキーと元の歌は保ち、フックの余韻と強弱を調整した記録です。\n\nどちらの距離感が好き？\n\n曲・歌・MV：ぷい\n※実MIXの比較。波形は実音源から描画、モデルの動きは編集です。\n\n#medicate #音楽制作 #MIX #ぷい",
   "characters": 160,
-  "targetDateJst": "2026-10-27",
-  "state": "CANDIDATE_PREPRODUCED_NOT_PUBLISHED",
+  "targetDateJst": "2026-10-26",
+  "state": "PRODUCTION_READY_NATIVE_P2_RELEASED_ACTIVE_SCHEDULE_PREFLIGHT",
   "credit": "曲・歌・MV：ぷい",
   "sourceInterval": [
     21.3,
@@ -13,7 +13,36 @@
   "externalMusic": false,
   "narration": false,
   "model": "Revenant_Natural",
-  "nativeTikTokPreview": false,
+  "nativeTikTokPreview": true,
   "wholeSubjectiveAudition": false,
-  "day27ActivityAndAdoptionPending": true
+  "revision": "02_NATIVE_WAVE_SAFE",
+  "nativeUi": {
+    "previousRevision": "01_LIVE2D",
+    "previousPreviewInspected": true,
+    "previousWaveRightEdgeOccluded": true,
+    "currentRevision": "02_NATIVE_WAVE_SAFE",
+    "currentPreviewVerified": true,
+    "evidence": "qa/native99-revision02-binding.json",
+    "serverDraftSaved": false,
+    "published": false
+  },
+  "originalCandidateDateJst": "2026-10-27",
+  "targetTimeJst": "19:15",
+  "targetDayActivityAndAdoptionReviewPending": true,
+  "staging": {
+    "state": "ACTIVE_FOR_EXISTING_AUTHORIZED_SCHEDULE_PREFLIGHT",
+    "coverSavedInsideStaging": true,
+    "draftSaveButtonPressed": false,
+    "scheduleSubmitIntentYet": false,
+    "publicPost": false,
+    "discarded": false
+  },
+  "publicationPlan": {
+    "chosenDateJst": "2026-10-26",
+    "targetTimeJst": "19:15",
+    "conditional": "Afteractualaccount/privacy/disclosure/platformchecks+latestPR23APPROVE/merge; one scheduleintent only, no publishNow",
+    "sourceFolderDate27Historical": true
+  },
+  "actualScheduled": false,
+  "actualPublished": false
 }
