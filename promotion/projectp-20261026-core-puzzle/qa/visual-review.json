@@ -1,5 +1,5 @@
 {
-  "status": "PASS_WITHIN_NEW_NATIVE_AND_ENCODED_EXTRACTED_FRAME_SCOPE",
+  "status": "PASS_WITHIN_EXTRACTED_FRAMES_AND_BOUNDED_NATIVE_TIKTOK_UI_SCOPE",
   "revision": "03_LIVE2D",
   "videoSha256": "cb68c46bf1f6530a85764a895f58265cb852813a3d025415774046d967bdfdfd",
   "scoreVideoSha256": "f79e6f3873ba20bb4d35ffaa16a8eb51d945386d4059927463edc81fbfe0f4c5",
@@ -10,7 +10,8 @@
     "比較scale80%/centerY1130、top650..bottom1610で両ラベルと前後画像を保持",
     "PhotoCraftカバーの頭肩crop下端730pxとBEFOREcard上端819pxの89px間隔",
     "カバーの中央3:4、問い/モデル顔/前後画像/作品名、全Type bounds",
-    "全600Core画像の頭部余白24pxと端接触0（胴/袖は意図的crop）"
+    "全600Core画像の頭部余白24pxと端接触0（胴/袖は意図的crop）",
+    "rootのrevision03実TikTok upload preview 7枚とSHA: 冒頭/約5秒/約14秒/約17秒/00:20終端/cover canvas/profile tile"
   ],
   "nativeSnapshotBinding": {
     "schemaVersion": 1,
@@ -87,7 +88,7 @@
   "outputRevealFrame": 144,
   "wholeDirectPlayback": false,
   "wholeDirectAudition": false,
-  "actualTikTokUi": false,
+  "actualTikTokUi": true,
   "actualPopularSongSelected": false,
   "ownedOriginalScoreBeatVerified": true,
   "fullFinalTimelineVerified": false,
@@ -96,10 +97,16 @@
   "previousRevisionUiEvidence": "qa/native-ui-binding.json",
   "unresolved": [
     "PP97-SOUND: permitted popular sound, interval and popularity not verified; original score is a separate actual-beat-aligned alternative",
-    "PP97-FINAL-TIMELINE: new model master/cover real TikTok UI and whole direct audio/video review pending; no server draft"
+    "PP97-AUDITION: whole direct subjective audio audition remains unconfirmed; numerical decode/sync is separate",
+    "PP97-FINAL-TIMELINE: after any real sound change, verify final sound/volume/sync and resulting timeline; current bounded native UI is confirmed",
+    "2026-10-26 activity/previous-post analytics priority and creator adoption not yet confirmed"
   ],
   "limits": [
-    "Native/Core/decoded snapshots do not establish actual TikTok UI or subjective audio acceptance",
+    "Extracted/native/Core frames and bounded real TikTok observations do not establish continuous frame-by-frame playback review or subjective audio acceptance",
     "No VTS camera/physics/full SDK equivalence or exact historical artistic-baseline equivalence claim"
-  ]
+  ],
+  "actualTikTokUiScope": "Bounded native upload-preview observations; not continuous frame-by-frame viewing or subjective audio acceptance",
+  "nativeTikTokBinding": "qa/model-native-ui-binding.json",
+  "nativePlaybackReachedEnd": true,
+  "finalMasterReuploadReason": "Discarded QA upload; later publication needs fresh final media/cover configuration"
 }

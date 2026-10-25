@@ -1,5 +1,5 @@
 {
-  "status": "TECHNICAL_PASS_PROVISIONAL_HOLD_MUSIC_AND_ACTUAL_UI",
+  "status": "TECHNICAL_PASS_HOLD_POPULAR_SOUND_AND_DIRECT_AUDITION",
   "bindings": [
     {
       "file": "videos/core-puzzle-voice-no-music.mp4",
@@ -412,10 +412,12 @@
     "ownedOriginalScoreVariant": true,
     "bpmFixed": false,
     "popularSyncVerified": false,
-    "actualTikTokUi": false,
+    "actualTikTokUi": true,
     "wholeDirectWatch": false,
     "wholeDirectAudition": false,
-    "publishingAuthorizedNow": false
+    "publishingAuthorizedNow": false,
+    "actualTikTokUiScope": "Bounded native upload-preview observations in qa/model-native-ui-binding.json"
   },
-  "visualReview": "PENDING_FINAL_EXTRACTED_FRAMES"
+  "visualReview": "qa/visual-review.json",
+  "nativeTikTokBinding": "qa/model-native-ui-binding.json"
 }

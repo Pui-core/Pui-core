@@ -49,13 +49,17 @@ PP97-SOUNDは未解除です。投稿用途で許可された人気曲のsound I
 
 ## 実UIと検査の範囲
 
-revision02の冒頭feed・180字候補caption・カバーは実TikTokで限定確認し、上部小ラベルの重なりを解除しました。その証跡は `qa/pp97-native-ui.json` と対応画像・bindingに旧SHAのまま保持しています。**この確認はモデルを追加したrevision03の合格ではありません。** 新版の冒頭・重要な変化・比較・終わりとカバーを実UIで確認し直す必要があります。
+revision02の冒頭feed・180字候補caption・カバーは実TikTokで限定確認し、上部小ラベルの重なりを解除しました。その証跡は `qa/pp97-native-ui.json` と `qa/native-ui-binding.json` に旧SHAのまま保持しています。モデルなしの旧版の履歴です。
 
-QA uploadは退出/破棄済みでサーバーdraftはなく、追加投稿もありません。カバーの保存も破棄したupload内の確認だけです。最終master/coverを再アップロードして設定します。直接の全編視聴/試聴、実曲選択、当日の創作採用・公開後成果は未確認。数値/抽出画面/実アプリ/創作採用を別に記録します。
+**revision03は別に実TikTokで確認済みです。** rootが本人`prop_pui`の既存Firefoxで、自作曲別案master SHA `f79e6f38…fe0f4c5` とカバー SHA `76c4b7fd…fa4185f` をアップロードしました。5.37MB／1080P／20秒の完了表示、180字候補captionとVOICEVOX credit、冒頭、約5秒での芯石挿入と3段足場、約14秒の上の灯と主人公、約17秒の比較両ラベル、00:20/00:20の終端を確認しています。実cover canvasとprofile previewで問い・モデル・前後比較・作品名が見え、cover Saveでeditorが閉じました。
+
+この実UI観測7枚とroot記録を `qa/model-native-ui-binding.json` へSHAで結び、制作担当も画像と対応を独立確認しました。確認はupload previewの各場面と終端到達の範囲です。連続した全フレームの直接視聴や主観的な全編試聴を確認済みとは扱いません。人気曲は未選択のままで、自作曲別案を人気曲とは呼びません。
+
+rootはHomeへ退出し、unsaved changesの終了を確認、本人Studio Homeと保存済みBIOへ戻りました。QA uploadは破棄済みでサーバーdraftはなく、追加投稿もありません。cover Saveも破棄したupload内だけの操作です。将来の公開には採用した最終master/coverの再アップロードと設定が必要です。これはrevision03の実UI確認待ちを意味しません。直接全編試聴、実曲選択後の最終音量/同期とtimeline、10/26当日の活動・前投稿分析・創作採用・公開後成果は未確認です。
 
 最終MP4の全AVdecode・形式/尺/音量/ピーク・声の頭と語尾・波形同期、重要遷移の連続画像、全600モデル画像の頭部余白、カバー中央crop、3Craft原本のF再読込・保存・描画を検査します。必要な曲と最終確認が揃うまでPR19はDraft/HOLD、Issue97はOPENです。
 
-保存ECと確認画像の取り違えも検査しています。旧fullbustの6画像は保存ECの更新より古かったため、修正済みECから0/143/144/151/480/570を再取得し、原本・生成JSX・各PNGのSHAと取得時刻を `qa/model-composite-binding.json` へ結びました。最終3MP4は全600フレームのdecoded picture SHAが一致し、3句と4.8秒の音のAAC相関は全てlag0sampleです。これは全編直接試聴や実TikTok表示の確認ではありません。
+保存ECと確認画像の取り違えも検査しています。旧fullbustの6画像は保存ECの更新より古かったため、修正済みECから0/143/144/151/480/570を再取得し、原本・生成JSX・各PNGのSHAと取得時刻を `qa/model-composite-binding.json` へ結びました。最終3MP4は全600フレームのdecoded picture SHAが一致し、3句と4.8秒の音のAAC相関は全てlag0sampleです。この数値/抽出画像検査と、上記の別証跡による実TikTokの限定観測、未確認の全編直接試聴を区別します。
 
 ## 再制作
 

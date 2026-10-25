@@ -238,8 +238,14 @@
   ],
   "hold": [
     "Actual permitted popular sound selection and cue adjustment",
-    "Final real TikTok cover/video UI and actual sound preview",
-    "2026-10-26 activity/previous-post analytics priority check"
+    "Whole direct subjective audition and final sound/timeline verification after any music change",
+    "2026-10-26 activity/previous-post analytics priority and creator-adoption check"
   ],
-  "publishingPerformed": false
+  "publishingPerformed": false,
+  "nativeTikTokUi": {
+    "status": "PASS_WITHIN_BOUNDED_UPLOAD_PREVIEW_SCOPE",
+    "binding": "qa/model-native-ui-binding.json",
+    "serverDraft": false,
+    "publicPost": false
+  }
 }

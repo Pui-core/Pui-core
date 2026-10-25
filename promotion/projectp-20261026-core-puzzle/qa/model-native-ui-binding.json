@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "issue": 97,
+  "revision": "03_LIVE2D",
+  "checkedAt": "2026-10-25T13:21:41.609Z",
+  "reportedBy": "root-model97-native-ui",
+  "sourceHeadAtUpload": "3f0434902d981c7252851ff6885fc9a529354d03",
+  "master": {
+    "file": "videos/core-puzzle-voice-original-score.mp4",
+    "sha256": "f79e6f3873ba20bb4d35ffaa16a8eb51d945386d4059927463edc81fbfe0f4c5"
+  },
+  "cover": {
+    "file": "covers/core-puzzle-cover.png",
+    "sha256": "76c4b7fdb5e2e94c7a912fdd844c7e2d73fe51f5e870373d1b4791c19fa4185f"
+  },
+  "rootPacket": {
+    "file": "qa/model97-native-ui-result.json",
+    "sha256": "f8d4ff618a08f272eef93d65850605cbcc36f4f7bf923745fac70e65f50d5489"
+  },
+  "evidence": [
+    {
+      "file": "qa/model97-feed-opening-native.png",
+      "sha256": "b68dd3ef42bbad75d2c654bc0438624616f5aa0d1b0a55a427de2401c85ab293"
+    },
+    {
+      "file": "qa/model97-feed-change-native.png",
+      "sha256": "181ac24c182daa6e50aa556b30db3e9031bd37e04492560385847ea5e7360e2e"
+    },
+    {
+      "file": "qa/model97-feed-14s-native.png",
+      "sha256": "3d5022f204c1cfb3272cfca29bc3f8104655b8b6ceaa00437a6fe189a77eea44"
+    },
+    {
+      "file": "qa/model97-feed-comparison-native.png",
+      "sha256": "0e4b07d95eb540293d6e9bf042f84dea9335e6c05db4c10e493448e1e4f1ffbc"
+    },
+    {
+      "file": "qa/model97-feed-end-native.png",
+      "sha256": "386fa0f415067fcacadccc0a07b4482a5c70da5642b26c106519dda1ba754a3e"
+    },
+    {
+      "file": "qa/model97-cover-canvas-native.png",
+      "sha256": "76941f915535e0a9b0f73e3ff9223543fefbdc3f3909cc27336af47cc96f1512"
+    },
+    {
+      "file": "qa/model97-cover-profile-native.png",
+      "sha256": "0c7323b6f10deb86f123989437207eda7c781db6882b15459b499bf29e13ebdb"
+    }
+  ],
+  "observedByCoder": [
+    "7枚のSHAと実画像を独立確認。自作品phone/coverのcropだけで、無関係なUIを含まない",
+    "冒頭の問いと案内役がnative上部navの下、gameplayと分離",
+    "約5秒の停止画面で芯石挿入と3段足場、約14秒再生画像で上の灯と主人公",
+    "約17秒の停止画面で比較の両ラベル・前後画像・3段足場",
+    "00:20/00:20の終端、作品名・案内役・ゲーム・footerが可視",
+    "実cover canvasとprofile tileで問い・案内役・前後画像・作品名が可視"
+  ],
+  "scope": {
+    "boundedNativeUploadPreview": true,
+    "captionCharacters": 180,
+    "voiceCreditPresent": true,
+    "playbackReachedEnd": true,
+    "wholeContinuousFrameByFrameReview": false,
+    "wholeSubjectiveAudition": false,
+    "actualPopularSongSelected": false,
+    "publicPostedVideoReview": false,
+    "creatorAdoptionForNextDay": false
+  },
+  "exit": {
+    "confirmedUnsavedChangesDiscard": true,
+    "nativeHomeVerified": true,
+    "accountVerified": true,
+    "serverDraftSaved": false,
+    "publicPostOrRepost": false
+  },
+  "overall": "BOUNDED_NATIVE_UI_PASS_HOLD_POPULAR_SOUND_AND_DIRECT_AUDITION",
+  "futureUploadRequired": "QA upload was discarded. Before a later publication, the chosen final master and cover must be uploaded/configured again; this does not mean revision03 native QA is pending.",
+  "previousRevision": {
+    "revision": "02_UI_SAFE",
+    "binding": "qa/native-ui-binding.json",
+    "videoSha256": "740474db6bd334d1a8eb0b2668a3692e58217a25891de09eaf8acb97a892a57c",
+    "historicalOnly": true
+  },
+  "coderBrowserOrRuntimeChanges": false
+}
