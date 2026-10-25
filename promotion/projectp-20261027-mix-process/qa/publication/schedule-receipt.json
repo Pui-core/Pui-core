@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "state": "scheduled_confirmed_publication_pending",
+  "accountId": "prop_pui",
+  "videoId": "7700634126155648264",
+  "videoUrl": "https://www.tiktok.com/@prop_pui/video/7700634126155648264",
+  "productionIssue": 99,
+  "parentIssue": 93,
+  "scheduledForJst": "2026-10-26T19:15:00+09:00",
+  "scheduledForUtc": "2026-10-26T10:15:00.000Z",
+  "timeZone": "Tokyo Standard Time / UTC+09:00",
+  "intentAt": "2026-10-25T15:53:14.882Z",
+  "submitObservedAt": "2026-10-25T15:53:38.234Z",
+  "persistedAfterManualReloadAt": "2026-10-25T15:54:16.957Z",
+  "confirmedAt": "2026-10-25T15:56:25.908Z",
+  "submissionIntents": 1,
+  "maxSubmissionIntents": 1,
+  "nativeObservedLabel": "10月26日 午後7:15",
+  "nativeClockBadge": true,
+  "privacy": "Anyone / 誰でも",
+  "ownBrandDisclosure": true,
+  "thirdPartyBrandedContent": false,
+  "aigcLabel": false,
+  "copyrightCheck": "問題は見つかりませんでした。",
+  "contentCheck": "違反は見つかりませんでした。",
+  "source": {
+    "sourceDir": "promotion/projectp-20261027-mix-process/",
+    "pr": "https://github.com/Pui-core/Pui-core/pull/23",
+    "headSha": "aeeb76f9c992a22ee55a01e05d1046fef90c5811",
+    "mergeSha": "426c7a6eb6f836e46e4745a89a8beeb85507e31c",
+    "sourceIssueClosed": true,
+    "video": "videos/mix-process.mp4",
+    "videoSha256": "7cc316e143590abe2b067e5af6d41649a9f12306d5d56fb10a105f62bd108246",
+    "cover": "covers/mix-process-cover.png",
+    "coverSha256": "e2812ab0a0ef5077fbd84e816e392b1f23b73ef6bfdd17467aed86f45b202d55",
+    "deliveryReceiptSha256": "8e97c6a407d259d3614d61c780281e37923d364f1e0b5f5ca047923a0a96033d",
+    "deliveryRevision": "revision-02-native-safe"
+  },
+  "nativeProof": {
+    "rowScreenshot": "schedule99-persisted-row.png",
+    "rowScreenshotSha256": "cd04728b140c481ef12242892be32e15d094680aa780e2bae76fa15fb3279e62",
+    "nativeRowIdentity": "https://www.tiktok.com/@prop_pui/video/7700634126155648264",
+    "accountVerifiedBeforeUploadAndAfterSchedule": true
+  },
+  "publicConfirmed": false,
+  "actualPublishedAt": null,
+  "publicReceipt": null,
+  "qualification": "Native Studio scheduled clock badge, future date/time and exact own-account hyperlink persisted after manual reload. Generic submit toast said 動画が公開されました; it is not proof of public availability. Zero metrics on a future scheduled row are not performance results.",
+  "subjectiveAudioAudition": false,
+  "followup": {
+    "publicVerification": "Existing next patrol at/after2026-10-26 19:15JST; expected19:20. Verify actualpublicreceipt beforecallingpublished. Do notresubmit.",
+    "firstPost24hDueJst": "2026-10-26T18:51:31+09:00",
+    "firstPost72hDueJst": "2026-10-28T18:51:31+09:00",
+    "thisPost24hExpectedIfOnTime": "2026-10-27T19:15:00+09:00",
+    "thisPost72hExpectedIfOnTime": "2026-10-29T19:15:00+09:00",
+    "actualDueTimes": "Rebase on verified actual publication time if different",
+    "duplicateRule": "Do not repost this video ID/SHA on26or27; day27 requires newcandidate/activity",
+    "goalStillActive": "500 byNov30 /1000 byDec31; followerachievementunverified"
+  },
+  "provenance": {
+    "rootExportReceiptSha256": "4243055a2a2aa69bbdc71348040f9906c888ea478706b5bc476f043c36baf2bc",
+    "sanitizedFields": [
+      "publisher.owner",
+      "publisher.runId",
+      "source.delivery"
+    ],
+    "reason": "Internal publisher identities and local delivery path omitted; scheduling/account/source/ID/SHA evidence retained"
+  }
+}
