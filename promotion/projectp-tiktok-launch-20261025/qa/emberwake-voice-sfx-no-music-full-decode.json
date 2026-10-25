@@ -1,0 +1,18 @@
+{
+  "exe": "ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-xerror",
+    "-threads",
+    "1",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\videos\\emberwake-voice-sfx-no-music.mp4",
+    "-f",
+    "null",
+    "-"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": ""
+}

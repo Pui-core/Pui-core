@@ -1,0 +1,73 @@
+{
+  "status": "PASS_TECHNICAL_AND_PICTURE_IDENTITY",
+  "files": [
+    {
+      "file": "videos/emberwake-voice-sfx-no-music.mp4",
+      "sha256": "bc3695e56dd530e5c7b5538de42072a83715272642af3d06efb2ee5986c6f4bb",
+      "bytes": 17680985,
+      "decodedPictureSha256": "SHA256=612d1de34860d8cc9520ba4feb4ca888e83c95e78586090008dd810af529381a",
+      "unchangedDecodedPicture": true,
+      "fullDecode": true,
+      "width": 1080,
+      "height": 1920,
+      "frames": 1800,
+      "fps": "30/1",
+      "duration": 60.010667,
+      "audio": {
+        "summary": "Summary:\r\n\r\n  Integrated loudness:\r\n    I:         -19.4 LUFS\r\n    Threshold: -31.5 LUFS\r\n\r\n  Loudness range:\r\n    LRA:        10.9 LU\r\n    Threshold: -44.5 LUFS\r\n    LRA low:   -30.2 LUFS\r\n    LRA high:  -19.3 LUFS\r\n\r\n  True peak:\r\n    Peak:       -3.3 dBFS\r\n[out#0/null @ 00000282f82eee80] video:0KiB audio:11252KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nsize=N/A time=00:01:00.01 bitrate=N/A speed= 124x elapsed=0:00:00.48    \r\n",
+        "codec": "aac",
+        "sampleRate": "48000"
+      }
+    },
+    {
+      "file": "videos/emberwake-sfx-only.mp4",
+      "sha256": "8a95bb26398dd7304893d922e2db034c2daec43fe77208864ea59c8f55d977a5",
+      "bytes": 17680884,
+      "decodedPictureSha256": "SHA256=612d1de34860d8cc9520ba4feb4ca888e83c95e78586090008dd810af529381a",
+      "unchangedDecodedPicture": true,
+      "fullDecode": true,
+      "width": 1080,
+      "height": 1920,
+      "frames": 1800,
+      "fps": "30/1",
+      "duration": 60.010667,
+      "audio": {
+        "summary": "Summary:\r\n\r\n  Integrated loudness:\r\n    I:         -39.7 LUFS\r\n    Threshold: -50.7 LUFS\r\n\r\n  Loudness range:\r\n    LRA:        15.5 LU\r\n    Threshold: -66.6 LUFS\r\n    LRA low:   -57.7 LUFS\r\n    LRA high:  -42.2 LUFS\r\n\r\n  True peak:\r\n    Peak:      -19.3 dBFS\r\n[out#0/null @ 000001ac57f5b700] video:0KiB audio:11252KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nsize=N/A time=00:01:00.01 bitrate=N/A speed=75.5x elapsed=0:00:00.79    \r\n",
+        "codec": "aac",
+        "sampleRate": "48000"
+      }
+    },
+    {
+      "file": "videos/emberwake-picture-silent.mp4",
+      "sha256": "96b394707a38dd8c0f52a0d874b389ccf3b503200a41c6dec54f3f8608f90cb5",
+      "bytes": 15237130,
+      "decodedPictureSha256": "SHA256=612d1de34860d8cc9520ba4feb4ca888e83c95e78586090008dd810af529381a",
+      "unchangedDecodedPicture": true,
+      "fullDecode": true,
+      "width": 1080,
+      "height": 1920,
+      "frames": 1800,
+      "fps": "30/1",
+      "duration": 60,
+      "audio": null
+    }
+  ],
+  "cover": {
+    "file": "covers/emberwake-cover.png",
+    "sha256": "b080bd9b38e0906339eca540912c5d950453e5cce104fad034e2387a2ab0d763",
+    "nativeSha256": "7838c7223d41bde6565b4ed922d24a5030193b99a43470f27b7fa8cd9ccb65b5",
+    "nativeReopenSamePixels": true
+  },
+  "native": {
+    "effectcraftSha256": "a5ad7f7ff7194d674dd45a34127573868180c4052d301864325b52d226efaa61",
+    "filmcraftVoiceSha256": "e686747e851891d0363579181746548051e7095125df6e1819fa25c4474804f9",
+    "filmcraftSfxSha256": "4dc83c939e8dd9413f074781be617ef0fef71e49b46e2426e1ff120343fd50e6"
+  },
+  "limitations": {
+    "directWholePlayback": false,
+    "directWholeAudition": false,
+    "popularSongSelected": false,
+    "tiktokSoundSync": false,
+    "publication": false
+  }
+}

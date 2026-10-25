@@ -1,0 +1,159 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1080,
+        1920
+      ],
+      "fill": "#08151e",
+      "name": "Deep teal field"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\media\\chapter-I\\frame-000238.png",
+      "scale": 112,
+      "fit": false,
+      "center": [
+        610,
+        1040
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1080,
+        680
+      ],
+      "fill": "#08151e",
+      "name": "Quiet title field"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        1515,
+        1080,
+        405
+      ],
+      "fill": "#08151e",
+      "name": "Lower caption field"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        90,
+        263,
+        10,
+        225
+      ],
+      "fill": "#edb468",
+      "name": "Gold rule"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 128,
+      "y": 272,
+      "text": "PROJECT P  /  ぷい",
+      "font": "Meiryo",
+      "size": 28,
+      "color": "#a8bfc1",
+      "name": "Author"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 124,
+      "y": 384,
+      "text": "その一手で、",
+      "font": "Meiryo",
+      "size": 76,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Hook line one"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 120,
+      "y": 492,
+      "text": "何秒縮める？",
+      "font": "Meiryo",
+      "size": 84,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "Hook line two"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 126,
+      "y": 574,
+      "text": "同じコース。次は、もっと速く。",
+      "font": "Meiryo",
+      "size": 29,
+      "color": "#c3d2d0",
+      "name": "Premise"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 94,
+      "y": 1612,
+      "text": "EMBERWAKE",
+      "font": "Meiryo",
+      "size": 77,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Game title"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 98,
+      "y": 1680,
+      "text": "灰の灯  /  制作、本格化。",
+      "font": "Meiryo",
+      "size": 37,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "Game subtitle"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 98,
+      "y": 1756,
+      "text": "開発中の実ゲーム映像 / 探索モード",
+      "font": "Meiryo",
+      "size": 23,
+      "color": "#a8bfc1",
+      "name": "Source disclosure"
+    }
+  ]
+]

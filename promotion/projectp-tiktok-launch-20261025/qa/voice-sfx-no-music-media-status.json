@@ -1,0 +1,12 @@
+{
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\projects\\voice-sfx-no-music.fcproj",
+    "exec",
+    "media.status"
+  ],
+  "exit": 0,
+  "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"3b85c93c809bf7ef\",\n      \"size\": 17651413\n    },\n    \"item\": 4,\n    \"name\": \"picture-source.mp4\",\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-94\\\\promotion\\\\projectp-tiktok-launch-20261025\\\\media\\\\picture-source.mp4\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"e05e83da01bc81d0\",\n      \"size\": 17280102\n    },\n    \"item\": 5,\n    \"name\": \"voice-sfx-no-music.wav\",\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-94\\\\promotion\\\\projectp-tiktok-launch-20261025\\\\media\\\\voice-sfx-no-music.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+  "stderr": ""
+}

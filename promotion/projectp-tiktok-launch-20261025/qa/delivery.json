@@ -1,0 +1,171 @@
+{
+  "status": "PASS_DELIVERY_NATIVE_REOPEN_SAVE_RENDER",
+  "destination": "/mnt/f/Videos/ProjectP-TikTok-Launch-2026-10-25",
+  "bound": [
+    {
+      "file": "videos/emberwake-voice-sfx-no-music.mp4",
+      "sha256": "bc3695e56dd530e5c7b5538de42072a83715272642af3d06efb2ee5986c6f4bb"
+    },
+    {
+      "file": "videos/emberwake-sfx-only.mp4",
+      "sha256": "8a95bb26398dd7304893d922e2db034c2daec43fe77208864ea59c8f55d977a5"
+    },
+    {
+      "file": "videos/emberwake-picture-silent.mp4",
+      "sha256": "96b394707a38dd8c0f52a0d874b389ccf3b503200a41c6dec54f3f8608f90cb5"
+    },
+    {
+      "file": "covers/emberwake-cover.png",
+      "sha256": "b080bd9b38e0906339eca540912c5d950453e5cce104fad034e2387a2ab0d763"
+    },
+    {
+      "file": "media/voice-sfx-no-music.wav",
+      "sha256": "bf580d6c8aeeecd8273e8507ca5221536befc203b8d7388b1f4acc715a6722f6"
+    },
+    {
+      "file": "media/editorial-sfx.wav",
+      "sha256": "2290247583a7235fbe00aa1195cdb53856d84d71b090b9a7e85da1136e963d80"
+    }
+  ],
+  "receipts": [
+    {
+      "tool": "effectcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\projects\\visual-source.ecproj",
+        "--save",
+        "run",
+        "footage.check",
+        "{\"wait\":true}",
+        "footage.missing",
+        "{}",
+        "--json"
+      ],
+      "exit": 0,
+      "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":7,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"F:\\\\Videos\\\\ProjectP-TikTok-Launch-2026-10-25\\\\projects\\\\visual-source.ecproj\"}\n",
+      "stderr": ""
+    },
+    {
+      "tool": "effectcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\projects\\visual-source.ecproj",
+        "render-frame",
+        "--comp",
+        "EMBERWAKE RTA V2",
+        "--time",
+        "14",
+        "--out",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\qa\\delivery-ec.png",
+        "--json"
+      ],
+      "exit": 0,
+      "stdout": "{\"comp\":307,\"height\":1920,\"ms\":367.8,\"path\":\"F:\\\\Videos\\\\ProjectP-TikTok-Launch-2026-10-25\\\\qa\\\\delivery-ec.png\",\"time\":14.0,\"width\":1080}\n",
+      "stderr": ""
+    },
+    {
+      "tool": "filmcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\projects\\voice-sfx-no-music.fcproj",
+        "exec",
+        "media.status"
+      ],
+      "exit": 0,
+      "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"3b85c93c809bf7ef\",\n      \"size\": 17651413\n    },\n    \"item\": 4,\n    \"name\": \"picture-source.mp4\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-TikTok-Launch-2026-10-25\\\\media\\\\picture-source.mp4\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"e05e83da01bc81d0\",\n      \"size\": 17280102\n    },\n    \"item\": 5,\n    \"name\": \"voice-sfx-no-music.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-TikTok-Launch-2026-10-25\\\\media\\\\voice-sfx-no-music.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "tool": "filmcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\projects\\voice-sfx-no-music.fcproj",
+        "--save",
+        "render",
+        "--seconds",
+        "14",
+        "--out",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\qa\\delivery-voice-sfx-no-music.png"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "rendered 1080x1920 in 469.6 ms → F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\qa\\delivery-voice-sfx-no-music.png\n"
+    },
+    {
+      "tool": "filmcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\projects\\sfx-only.fcproj",
+        "exec",
+        "media.status"
+      ],
+      "exit": 0,
+      "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"3b85c93c809bf7ef\",\n      \"size\": 17651413\n    },\n    \"item\": 4,\n    \"name\": \"picture-source.mp4\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-TikTok-Launch-2026-10-25\\\\media\\\\picture-source.mp4\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"6deea3fdcf0f3396\",\n      \"size\": 17280044\n    },\n    \"item\": 5,\n    \"name\": \"editorial-sfx.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-TikTok-Launch-2026-10-25\\\\media\\\\editorial-sfx.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "tool": "filmcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\projects\\sfx-only.fcproj",
+        "--save",
+        "render",
+        "--seconds",
+        "14",
+        "--out",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\qa\\delivery-sfx-only.png"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "rendered 1080x1920 in 462.3 ms → F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\qa\\delivery-sfx-only.png\n"
+    },
+    {
+      "tool": "photocraft-cli.exe",
+      "args": [
+        "run",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\covers\\emberwake-cover.pcraft",
+        "--out",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\projects\\cover-delivery-reopened.pcraft"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "tool": "photocraft-cli.exe",
+      "args": [
+        "convert",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\projects\\cover-delivery-reopened.pcraft",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\qa\\delivery-cover.png",
+        "--format",
+        "png"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "warning: 13 layer(s) flattened; layers, masks and blend modes are not kept\n"
+    }
+  ],
+  "publication": false,
+  "nativeArtifacts": [
+    {
+      "file": "projects/visual-source.ecproj",
+      "sourceSha256": "a5ad7f7ff7194d674dd45a34127573868180c4052d301864325b52d226efaa61",
+      "deliverySha256": "bfc212643c2fcb3316525a5dcaaa6816950e945f7e59a871418acceec05540cc"
+    },
+    {
+      "file": "projects/voice-sfx-no-music.fcproj",
+      "sourceSha256": "e686747e851891d0363579181746548051e7095125df6e1819fa25c4474804f9",
+      "deliverySha256": "62fd8a04832145ead84a204a6f1ff8f5d2dcefdaa730207218d7c64e70264982"
+    },
+    {
+      "file": "projects/sfx-only.fcproj",
+      "sourceSha256": "4dc83c939e8dd9413f074781be617ef0fef71e49b46e2426e1ff120343fd50e6",
+      "deliverySha256": "d55a00c78977a6a15011cf85075874b53944d43e6a806937a20959569e08b2eb"
+    },
+    {
+      "file": "covers/emberwake-cover.pcraft",
+      "sourceSha256": "7838c7223d41bde6565b4ed922d24a5030193b99a43470f27b7fa8cd9ccb65b5",
+      "deliverySha256": "7838c7223d41bde6565b4ed922d24a5030193b99a43470f27b7fa8cd9ccb65b5"
+    }
+  ]
+}

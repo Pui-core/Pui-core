@@ -1,0 +1,20 @@
+{
+  "exe": "ffmpeg.exe",
+  "args": [
+    "-hide_banner",
+    "-y",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\media\\picture-source.mp4",
+    "-map",
+    "0:v:0",
+    "-c:v",
+    "copy",
+    "-an",
+    "-movflags",
+    "+faststart",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\videos\\emberwake-picture-silent.mp4"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\media\\picture-source.mp4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41mp42\r\n    encoder         : FilmCraft 0.10.0\r\n  Duration: 00:01:00.01, start: 0.000000, bitrate: 2353 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920 [SAR 1:1 DAR 9:16], 2029 kb/s, 30 fps, 30 tbr, 30 tbn (default)\r\n    Metadata:\r\n      handler_name    : VideoHandler\r\n      vendor_id       : [0][0][0][0]\r\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 319 kb/s (default)\r\n    Metadata:\r\n      handler_name    : SoundHandler\r\n      vendor_id       : [0][0][0][0]\r\nStream mapping:\r\n  Stream #0:0 -> #0:0 (copy)\r\nOutput #0, mp4, to '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\videos\\emberwake-picture-silent.mp4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41mp42\r\n    encoder         : Lavf62.3.100\r\n  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 2029 kb/s, 30 fps, 30 tbr, 15360 tbn (default)\r\n    Metadata:\r\n      handler_name    : VideoHandler\r\n      vendor_id       : [0][0][0][0]\r\nPress [q] to stop, [?] for help\r\n[mp4 @ 00000255cdc4ca80] Starting second pass: moving the moov atom to the beginning of the file\r\n[out#0/mp4 @ 00000255cdc98c40] video:14862KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.120384%\r\nframe= 1800 fps=0.0 q=-1.0 Lsize=   14880KiB time=00:00:59.96 bitrate=2032.7kbits/s speed= 176x elapsed=0:00:00.34    \r\n"
+}
