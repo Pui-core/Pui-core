@@ -1,0 +1,48 @@
+{
+  "status": "PASS_BOUNDED_ENCODED_LOOP_ROI_DIFFERENCES",
+  "roi": [
+    620,
+    240,
+    460,
+    380
+  ],
+  "loop": [
+    {
+      "frames": [
+        178,
+        179,
+        180,
+        181
+      ],
+      "beforeMad": 0.24415331807780322,
+      "boundaryMad": 1.4514359267734553,
+      "afterMad": 0.21601258581235697,
+      "pass": true
+    },
+    {
+      "frames": [
+        358,
+        359,
+        360,
+        361
+      ],
+      "beforeMad": 0.24077040427154844,
+      "boundaryMad": 1.4584725400457665,
+      "afterMad": 0.21760869565217392,
+      "pass": true
+    },
+    {
+      "frames": [
+        538,
+        539,
+        540,
+        541
+      ],
+      "beforeMad": 0.25028604118993136,
+      "boundaryMad": 1.5165846681922197,
+      "afterMad": 0.21616895499618613,
+      "pass": true
+    }
+  ],
+  "scope": "Encoded model-region pixel differences around all3loop boundaries; does not claim subjective naturalness"
+}

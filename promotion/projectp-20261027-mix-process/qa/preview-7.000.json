@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-99\\promotion\\projectp-20261027-mix-process\\projects\\mix-process.ecproj",
+    "render-frame",
+    "--comp",
+    "ProjectP Mix Process",
+    "--time",
+    "7",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-99\\promotion\\projectp-20261027-mix-process\\qa\\preview-7.000.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":97,\"height\":1920,\"ms\":119.8,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-99\\\\promotion\\\\projectp-20261027-mix-process\\\\qa\\\\preview-7.000.png\",\"time\":7.0,\"width\":1080}\n",
+  "stderr": ""
+}

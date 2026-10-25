@@ -1,0 +1,23 @@
+{
+  "exit": 0,
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-99\\promotion\\projectp-20261027-mix-process\\projects\\mix-process.ecproj",
+    "render",
+    "--comp",
+    "ProjectP Mix Process",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-99\\promotion\\projectp-20261027-mix-process\\media\\picture.mov",
+    "--format",
+    "prores",
+    "--prores",
+    "4444",
+    "--audio",
+    "off",
+    "--progress",
+    "--json"
+  ],
+  "stdout": "{\"rendered\":[{\"comp\":\"ProjectP Mix Process\",\"output\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-99\\\\promotion\\\\projectp-20261027-mix-process\\\\media\\\\picture.mov\",\"seconds\":28.7477211}]}\n",
+  "stderr": "ProjectP Mix Process → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-99\\promotion\\projectp-20261027-mix-process\\media\\picture.mov (1080×1920, 693 frames, Custom)\nprogress 0 693 0.0 -\nprogress 16 693 0.8 33.2\nprogress 32 693 1.5 31.1\nprogress 48 693 2.1 28.3\nprogress 64 693 2.8 27.0\nprogress 80 693 3.5 26.7\nprogress 96 693 4.1 25.8\nprogress 112 693 4.8 25.1\nprogress 128 693 5.7 25.1\nprogress 144 693 6.4 24.3\nprogress 160 693 7.1 23.5\nprogress 176 693 7.7 22.7\nprogress 192 693 8.4 21.9\nprogress 208 693 8.9 20.9\nprogress 224 693 9.6 20.2\nprogress 240 693 10.3 19.4\nprogress 256 693 10.9 18.7\nprogress 272 693 11.6 17.9\nprogress 288 693 12.2 17.2\nprogress 304 693 12.9 16.5\nprogress 320 693 13.6 15.9\nprogress 336 693 14.2 15.1\nprogress 352 693 14.8 14.4\nprogress 368 693 15.5 13.7\nprogress 384 693 16.2 13.0\nprogress 400 693 16.8 12.3\nprogress 416 693 17.5 11.7\nprogress 432 693 18.2 11.0\nprogress 448 693 18.8 10.3\nprogress 464 693 19.5 9.6\nprogress 480 693 20.0 8.9\nprogress 496 693 20.7 8.2\nprogress 512 693 21.3 7.5\nprogress 528 693 22.1 6.9\nprogress 544 693 22.9 6.3\nprogress 560 693 23.6 5.6\nprogress 576 693 24.3 4.9\nprogress 592 693 25.1 4.3\nprogress 608 693 25.7 3.6\nprogress 624 693 26.3 2.9\nprogress 640 693 26.8 2.2\nprogress 656 693 27.3 1.5\nprogress 672 693 27.9 0.9\nprogress 688 693 28.5 0.2\ndone: ProjectP Mix Process → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-99\\promotion\\projectp-20261027-mix-process\\media\\picture.mov in 28.75s\n"
+}

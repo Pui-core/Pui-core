@@ -1,0 +1,56 @@
+{
+  "status": "PASS_WITHIN_CANDIDATE_TECHNICAL_SCOPE",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 693,
+    "duration": 23.1
+  },
+  "fullAvDecode": true,
+  "aacSync": [
+    {
+      "label": "A",
+      "round": 1,
+      "start": 2.4,
+      "end": 6.3,
+      "lagSamples": 0,
+      "correlation": 0.9993972387653931,
+      "gainDb": -0.01772712938169704
+    },
+    {
+      "label": "B",
+      "round": 1,
+      "start": 7,
+      "end": 10.9,
+      "lagSamples": 0,
+      "correlation": 0.9992770115349319,
+      "gainDb": -0.012308764861212322
+    },
+    {
+      "label": "A",
+      "round": 2,
+      "start": 11.6,
+      "end": 15.5,
+      "lagSamples": 0,
+      "correlation": 0.9992664349810316,
+      "gainDb": -0.0062118201208956
+    },
+    {
+      "label": "B",
+      "round": 2,
+      "start": 16.2,
+      "end": 20.1,
+      "lagSamples": 0,
+      "correlation": 0.9994140938030375,
+      "gainDb": -0.02259275215282092
+    }
+  ],
+  "modelLoop": "qa/model-loop-final.json",
+  "headBounds": "qa/model-alpha-bounds.json",
+  "actualPopularMusicRequiredForThisOwnTrackComparison": false,
+  "subjectiveAudition": false,
+  "nativeTikTokUi": false,
+  "day27Adoption": false,
+  "published": false
+}

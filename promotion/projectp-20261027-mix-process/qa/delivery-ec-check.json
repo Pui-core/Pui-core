@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-Mix-Process-2026-10-27\\revision-01-live2d\\projects\\mix-process.ecproj",
+    "--save",
+    "run",
+    "footage.check",
+    "{\"wait\":true}",
+    "footage.missing",
+    "{}",
+    "--json"
+  ],
+  "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":3,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"F:\\\\Videos\\\\ProjectP-Mix-Process-2026-10-27\\\\revision-01-live2d\\\\projects\\\\mix-process.ecproj\"}\n",
+  "stderr": ""
+}

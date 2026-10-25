@@ -1,0 +1,49 @@
+{
+  "status": "READ_ONLY_SOURCE_PCM_BOUNDARY_CHECK",
+  "sourceStart": 21.3,
+  "sourceEnd": 25.2,
+  "duration": 3.9,
+  "sourceSampleRate": 44100,
+  "sourceFrames": 171990,
+  "ownerMatchedPreview": {
+    "sha256": "79b1d55fcca189ba47cb338f38118a23e29725e4105a2a44d49aa0db3deb8307",
+    "aTrimDb": -0.33,
+    "bTrimDb": 0,
+    "sourceWindow": [
+      21.7,
+      33.5
+    ],
+    "notUsedAsInput": true,
+    "reason": "33.5s has actualdry energy and lies withinnexttimedcue; not safe as newtail"
+  },
+  "dryBoundary": {
+    "fadeInSource": [
+      21.3,
+      21.4
+    ],
+    "fadeOutSource": [
+      25.19,
+      25.2
+    ],
+    "head100msRmsDbfs": -67.66,
+    "tail10msRmsDbfs": -50.8615,
+    "tail10msPeakDbfs": -43.7869,
+    "old25_1to25_19RmsDbfs": -23.6875,
+    "scope": "Numerical low-dry boundary confirmation, not absolute silence or subjective phrase/auditory acceptance"
+  },
+  "abCoreFairness": {
+    "speed": 1,
+    "aRelativeGainDb": -0.33,
+    "bRelativeGainDb": 0,
+    "sameEnvelopeBoth": true,
+    "wholeMixChangesIncludeReverbAndDynamics": true
+  },
+  "sources": {
+    "A": "ff9c3f40c23848a0ffe51b2984fa63b7684f75643b58e3e0ff8d430cb5d2dd67",
+    "B": "759bce18cf69722a1e04e15aed8abd7eb967f324af9a959f7d11cd1d74bedb1f",
+    "dry": "0aee02c7ddbbc88786b058c68616fd9b47c4ec4bac0c7b5744619dbc01c6b1aa"
+  },
+  "precedent": "creator-five-v2/qa/fade-fix-05.json",
+  "reportedBy": "read-only model_visual_qa",
+  "subjectiveAudition": false
+}
