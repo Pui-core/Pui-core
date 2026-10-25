@@ -1,0 +1,66 @@
+{
+  "status": "SAVED_AND_VERIFIED_FOR_OWNER_PREVIEW",
+  "createdAt": "2026-10-25T05:00:02.036Z",
+  "issue": "https://github.com/Pui-core/-/issues/89",
+  "video": {
+    "file": "videos/01-emberwake-rta-v2.mp4",
+    "sha256": "9504430b7677be349efd78e9f7c6177082896cfac9f373266e64243eb7da0c8b",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 1800,
+    "pictureDuration": 60,
+    "containerDuration": 60.01,
+    "audioCodec": "AAC",
+    "integratedLufs": -16.6,
+    "truePeakDbtp": -2.2
+  },
+  "artifacts": {
+    "mixSha256": "dac11d93a85dd84dc51025ba77dd92b255f4bf6609e305e16b3afbd6fc50f042",
+    "masterSha256": "0d0df251a53e98ecae7826b5c30808a3447128e881221dbbaa8da03a16ec76c7",
+    "effectcraftSha256": "44a586f80a35135b69b9d43d90f429f97f080631ebde94b31cc811bb461c9f47",
+    "filmcraftSha256": "bb7ed215d8b6008b0cb83ab59c8778e3ed560f0371856c29eb78b459dc3239da"
+  },
+  "checks": {
+    "fullVideoAndAudioDecode": true,
+    "copiedVideoMatchesRender": true,
+    "nativeReopenSaveRenderAtDelivery": true,
+    "missingNativeAssets": 0,
+    "savedCameraKeys": 844,
+    "focusedGameScenes": 10,
+    "independentFinalAac": "PASS_NUMERIC_FINAL_AAC_WITH_AUDITION_LIMIT",
+    "independentSampledVisuals": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
+    "editBoundariesReviewed": 17,
+    "textBoxes": 85,
+    "copySafety": "qa/package-safety.json",
+    "internalMotionWindowsReviewed": 8
+  },
+  "crowdfunding": {
+    "platform": "CAMPFIRE",
+    "projectId": 993744,
+    "state": "unpublished",
+    "publicSupportUrl": null,
+    "checkedForDate": "2026-10-25",
+    "statusCopy": "公開に向けて準備中",
+    "actionCopy": "フォローで、公開のお知らせを。"
+  },
+  "rta": {
+    "features": [
+      "chapter TIME ATTACK",
+      "local personal best"
+    ],
+    "recordedPlayMode": "EXPLORE",
+    "actualTimedRecordClaimed": false,
+    "onlineRankingClaimed": false,
+    "evidence": "qa/rta-source.json"
+  },
+  "scope": {
+    "directWholeVideoWatch": false,
+    "directAudioAudition": false,
+    "actualTikTokOrShortsUpload": false,
+    "actualDeviceUiReview": false,
+    "ownerCreativeAcceptance": "pending",
+    "publicationResults": "not measured"
+  },
+  "story": "EMBERWAKEの実ゲームの仕掛け・全5章デモ・実コードの抜粋・ラベル付き開発イメージから、制作本格化とCAMPFIRE公開準備中の応援へ。自己ベストを狙う面白さと大きい追従を前面へ。旧60秒版・27秒版は保持。"
+}

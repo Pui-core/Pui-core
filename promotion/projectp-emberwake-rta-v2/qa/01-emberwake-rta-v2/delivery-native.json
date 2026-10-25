@@ -1,0 +1,62 @@
+{
+  "version": "EMBERWAKE-RTA-V2",
+  "comp": "EMBERWAKE RTA V2",
+  "previewTime": 14,
+  "nativeReopenSaveRender": true,
+  "missingAssets": 0,
+  "videoSha256": "9504430b7677be349efd78e9f7c6177082896cfac9f373266e64243eb7da0c8b",
+  "audioSha256": "dac11d93a85dd84dc51025ba77dd92b255f4bf6609e305e16b3afbd6fc50f042",
+  "masterSha256": "0d0df251a53e98ecae7826b5c30808a3447128e881221dbbaa8da03a16ec76c7",
+  "effectcraftFootage": [
+    {
+      "command": "footage.check",
+      "result": {
+        "checked": 7,
+        "missing": 0,
+        "probed": 0
+      }
+    },
+    {
+      "command": "footage.missing",
+      "result": {
+        "missing": []
+      }
+    }
+  ],
+  "filmcraftStatus": [
+    {
+      "identity": {
+        "fingerprint": "b1d4ed8f723df14e",
+        "size": 1300189877
+      },
+      "item": 4,
+      "name": "01-emberwake-rta-v2-master.mov",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\media\\01-emberwake-rta-v2-master.mov",
+      "proxy": null,
+      "status": "online"
+    },
+    {
+      "identity": {
+        "fingerprint": "0558858fe4fe7b7e",
+        "size": 17280044
+      },
+      "item": 5,
+      "name": "emberwake-rta-v2-mix.wav",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\media\\emberwake-rta-v2-mix.wav",
+      "proxy": null,
+      "status": "online"
+    }
+  ],
+  "effectcraftSha256": "44a586f80a35135b69b9d43d90f429f97f080631ebde94b31cc811bb461c9f47",
+  "filmcraftSha256": "bb7ed215d8b6008b0cb83ab59c8778e3ed560f0371856c29eb78b459dc3239da",
+  "proofs": {
+    "effectcraft": {
+      "file": "delivery-effectcraft.png",
+      "sha256": "56c208b26bb4c31019862ca0c9fff4ee486745aa10df30eb92bf11591a03d68a"
+    },
+    "filmcraft": {
+      "file": "delivery-filmcraft.png",
+      "sha256": "8e63ac712f72904939f4061a79c10b532e67ed2c025aadcee7651b717d8a8e29"
+    }
+  }
+}

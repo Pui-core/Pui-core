@@ -1,0 +1,1065 @@
+{
+  "schema": 1,
+  "status": "PASS_NUMERIC_FINAL_AAC_WITH_AUDITION_LIMIT",
+  "issue": 89,
+  "createdAt": "2026-10-25T04:54:37.063Z",
+  "artifacts": {
+    "video": "/home/pui/.claude/worktrees/Pui-core-issue-89/promotion/projectp-emberwake-rta-v2/videos/01-emberwake-rta-v2.mp4",
+    "mix": "/home/pui/.claude/worktrees/Pui-core-issue-89/promotion/projectp-emberwake-rta-v2/media/emberwake-rta-v2-mix.wav",
+    "videoSha256": "9504430b7677be349efd78e9f7c6177082896cfac9f373266e64243eb7da0c8b",
+    "mixSha256": "dac11d93a85dd84dc51025ba77dd92b255f4bf6609e305e16b3afbd6fc50f042",
+    "rawAudioQaSha256": "223f05fec49f9e9a3a2bdd7d6168a302cf02a3f66302175dfaa0f4cd47fbe428",
+    "renderedQaSha256": "67fb35cd308fa4615ef8c92e4e8c409ffcb6d09dca4e07fafaf2b2304bb3f8a6",
+    "renderBindingValid": true,
+    "unchangedDuringReview": true
+  },
+  "format": {
+    "videoCodec": "h264",
+    "width": 1080,
+    "height": 1920,
+    "frameRate": "30/1",
+    "frames": 1800,
+    "videoStartSeconds": 0,
+    "videoDurationSeconds": 60,
+    "audioCodec": "aac",
+    "sampleRate": 48000,
+    "channels": 2,
+    "audioStartSeconds": 0,
+    "audioDurationSeconds": 60.01,
+    "containerDurationSeconds": 60.01,
+    "aacDecodedSamples": 2880512,
+    "wavSamples": 2880000
+  },
+  "synchronization": {
+    "method": "AAC decoded stereo48k compared directly to24bit WAV; search±128 samples with every8th sample, then full-resolution regression at the best lag. Positive lag means AAC delayed.",
+    "searchSamples": 128,
+    "bestLagSamples": 0,
+    "bestLagMs": 0,
+    "intervals": [
+      {
+        "start": 0.5,
+        "end": 4,
+        "lagSamples": 0,
+        "sampleValues": 336000,
+        "correlation": 0.9999580900856583,
+        "slope": 0.9999995591641949,
+        "gainDb": -0.000003829051995443657,
+        "intercept": -0.000006720310365973077,
+        "rmsWavDbfs": -16.103958632773544,
+        "rmsAacDbfs": -16.103598542898563,
+        "rmsDifferenceDb": 0.00036008987498237894,
+        "residualRmsDbfs": -56.870222212618316,
+        "residualRelativeDb": -40.766263579844775
+      },
+      {
+        "start": 12,
+        "end": 17,
+        "lagSamples": 0,
+        "sampleValues": 480000,
+        "correlation": 0.9999804107265764,
+        "slope": 0.9999213527397623,
+        "gainDb": -0.0006831482869831216,
+        "intercept": 0.0000013962276053017586,
+        "rmsWavDbfs": -18.43632253256797,
+        "rmsAacDbfs": -18.43683542043899,
+        "rmsDifferenceDb": -0.0005128878710209055,
+        "residualRmsDbfs": -62.50639979589748,
+        "residualRelativeDb": -44.0700772633295
+      },
+      {
+        "start": 30,
+        "end": 35,
+        "lagSamples": 0,
+        "sampleValues": 480000,
+        "correlation": 0.9999581428465429,
+        "slope": 0.9999331760384206,
+        "gainDb": -0.0005804449494886518,
+        "intercept": 0.000005365229832025756,
+        "rmsWavDbfs": -17.30266838547472,
+        "rmsAacDbfs": -17.302884997541376,
+        "rmsDifferenceDb": -0.00021661206665822972,
+        "residualRmsDbfs": -58.07498166215028,
+        "residualRelativeDb": -40.772313276675554
+      },
+      {
+        "start": 54,
+        "end": 58,
+        "lagSamples": 0,
+        "sampleValues": 384000,
+        "correlation": 0.9999999643491458,
+        "slope": 0.9999902438769752,
+        "gainDb": -0.00008474102126124952,
+        "intercept": -1.495534236928391e-8,
+        "rmsWavDbfs": -26.590406166732443,
+        "rmsAacDbfs": -26.590490597488543,
+        "rmsDifferenceDb": -0.00008443075610428059,
+        "residualRmsDbfs": -98.05950045293866,
+        "residualRelativeDb": -71.46909428620623
+      }
+    ]
+  },
+  "aacCodecFits": {
+    "overall": {
+      "start": 0,
+      "end": 60,
+      "lagSamples": 0,
+      "sampleValues": 5760000,
+      "correlation": 0.9999432025017676,
+      "slope": 0.9999764029084425,
+      "gainDb": -0.00020496415133641738,
+      "intercept": -0.0000010340867064580867,
+      "rmsWavDbfs": -19.074311610364994,
+      "rmsAacDbfs": -19.074023270410386,
+      "rmsDifferenceDb": 0.00028833995461128225,
+      "residualRmsDbfs": -58.52055603311082,
+      "residualRelativeDb": -39.44624442274583
+    },
+    "phases": [
+      {
+        "start": 0,
+        "end": 4,
+        "lagSamples": 0,
+        "sampleValues": 384000,
+        "correlation": 0.9999662212197461,
+        "slope": 0.9999849044923493,
+        "gainDb": -0.00013111890313992876,
+        "intercept": -0.0000051588863899913465,
+        "rmsWavDbfs": -15.73093455118245,
+        "rmsAacDbfs": -15.730772368077101,
+        "rmsDifferenceDb": 0.00016218310534874344,
+        "residualRmsDbfs": -57.43410668810195,
+        "residualRelativeDb": -41.70317213691949
+      },
+      {
+        "start": 4,
+        "end": 12,
+        "lagSamples": 0,
+        "sampleValues": 768000,
+        "correlation": 0.9998909071347277,
+        "slope": 0.9997025425618482,
+        "gainDb": -0.002584066823812968,
+        "intercept": 9.900845888649173e-7,
+        "rmsWavDbfs": -20.358537362402206,
+        "rmsAacDbfs": -20.360173784561965,
+        "rmsDifferenceDb": -0.0016364221597524146,
+        "residualRmsDbfs": -56.97214758082047,
+        "residualRelativeDb": -36.61361021841826
+      },
+      {
+        "start": 12,
+        "end": 30,
+        "lagSamples": 0,
+        "sampleValues": 1728000,
+        "correlation": 0.999915564964628,
+        "slope": 1.00008806298807,
+        "gainDb": 0.0007648717176237124,
+        "intercept": -0.000004954962939610462,
+        "rmsWavDbfs": -17.765415488371318,
+        "rmsAacDbfs": -17.76391749355421,
+        "rmsDifferenceDb": 0.0014979948171084658,
+        "residualRmsDbfs": -55.48857739791546,
+        "residualRelativeDb": -37.723161909544146
+      },
+      {
+        "start": 30,
+        "end": 42,
+        "lagSamples": 0,
+        "sampleValues": 1152000,
+        "correlation": 0.9999768931024049,
+        "slope": 0.9999176295576818,
+        "gainDb": -0.0007154900394343879,
+        "intercept": 0.0000022042251833684297,
+        "rmsWavDbfs": -17.865018781934097,
+        "rmsAacDbfs": -17.865533463553522,
+        "rmsDifferenceDb": -0.000514681619424128,
+        "residualRmsDbfs": -61.21786938174103,
+        "residualRelativeDb": -43.35285059980693
+      },
+      {
+        "start": 42,
+        "end": 50,
+        "lagSamples": 0,
+        "sampleValues": 768000,
+        "correlation": 0.9999877946676686,
+        "slope": 0.9999115489331495,
+        "gainDb": -0.0007683101844613598,
+        "intercept": 0.000001701938258202353,
+        "rmsWavDbfs": -22.399666876291533,
+        "rmsAacDbfs": -22.400329114607246,
+        "rmsDifferenceDb": -0.0006622383157097525,
+        "residualRmsDbfs": -68.5245600130101,
+        "residualRelativeDb": -46.124893136718576
+      },
+      {
+        "start": 50,
+        "end": 60,
+        "lagSamples": 0,
+        "sampleValues": 960000,
+        "correlation": 0.9999999744825042,
+        "slope": 0.9999851657230696,
+        "gainDb": -0.00012884984797735904,
+        "intercept": -3.217028463746441e-8,
+        "rmsWavDbfs": -27.29588549867622,
+        "rmsAacDbfs": -27.296014127880227,
+        "rmsDifferenceDb": -0.0001286292040020611,
+        "residualRmsDbfs": -100.21736062937492,
+        "residualRelativeDb": -72.9214751306987
+      },
+      {
+        "start": 53,
+        "end": 60,
+        "lagSamples": 0,
+        "sampleValues": 672000,
+        "correlation": 0.9999999640626672,
+        "slope": 0.9999887750068566,
+        "gainDb": -0.00009749959884908143,
+        "intercept": -2.8795459131776358e-8,
+        "rmsWavDbfs": -27.6996027568444,
+        "rmsAacDbfs": -27.699699944663596,
+        "rmsDifferenceDb": -0.00009718781919751308,
+        "residualRmsDbfs": -99.1339569500445,
+        "residualRelativeDb": -71.43435419320011
+      }
+    ],
+    "note": "Regression/residual describe lossy codec error, not a sample-exact constant-gain guarantee. Raw mix timing and output gain are separately proven in qa/audio-v2.json."
+  },
+  "edgePreservation": {
+    "first100ms": {
+      "start": 0,
+      "end": 0.1,
+      "lagSamples": 0,
+      "sampleValues": 9600,
+      "correlation": 0.9999973516506574,
+      "slope": 0.9997237463630448,
+      "gainDb": -0.0023998401002488074,
+      "intercept": 0.000031062697009305675,
+      "rmsWavDbfs": -13.188718765658365,
+      "rmsAacDbfs": -13.191099892347724,
+      "rmsDifferenceDb": -0.002381126689360147,
+      "residualRmsDbfs": -65.95110349622759,
+      "residualRelativeDb": -52.762384730569224
+    },
+    "head": {
+      "start": 0.035,
+      "end": 0.3,
+      "lagSamples": 0,
+      "sampleValues": 25440,
+      "correlation": 0.9999990579214253,
+      "slope": 0.9999041764085391,
+      "gainDb": -0.0008323530203170083,
+      "intercept": 0.000009310149638470906,
+      "rmsWavDbfs": -12.888314795619877,
+      "rmsAacDbfs": -12.88913639009425,
+      "rmsDifferenceDb": -0.0008215944743738945,
+      "residualRmsDbfs": -70.13819521374435,
+      "residualRelativeDb": -57.24988041812448
+    },
+    "finalFade": {
+      "start": 58.75,
+      "end": 59.7,
+      "lagSamples": 0,
+      "sampleValues": 91200,
+      "correlation": 0.9999999494113303,
+      "slope": 1.000003329720159,
+      "gainDb": 0.000028921533675816236,
+      "intercept": 1.3909433204108121e-8,
+      "rmsWavDbfs": -30.44022581196291,
+      "rmsAacDbfs": -30.440196449265006,
+      "rmsDifferenceDb": 0.000029362697905917856,
+      "residualRmsDbfs": -100.38936749113373,
+      "residualRelativeDb": -69.9491416791708
+    },
+    "finalAudibleDecay": {
+      "start": 59,
+      "end": 59.7,
+      "lagSamples": 0,
+      "sampleValues": 67200,
+      "correlation": 0.999999978239792,
+      "slope": 0.9999910631629496,
+      "gainDb": -0.00007762472719332987,
+      "intercept": 3.738590777259938e-8,
+      "rmsWavDbfs": -32.69068924065035,
+      "rmsAacDbfs": -32.690766669892426,
+      "rmsDifferenceDb": -0.00007742924207748895,
+      "residualRmsDbfs": -106.30384507979221,
+      "residualRelativeDb": -73.61315583914185
+    },
+    "lastAboveMinus55": {
+      "wavSample": 2869206,
+      "aacSample": 2869206
+    },
+    "lastReferenceSamples": [
+      0,
+      0
+    ],
+    "aacAtReferenceEnd": [
+      -2.096268758577935e-8,
+      -3.0992019617315236e-8
+    ],
+    "lastDecodedSamples": [
+      8.559165876054209e-11,
+      -6.103999250495207e-12
+    ],
+    "extraAacSamples": 512,
+    "extraAacMs": 10.666666666666666,
+    "explanation": "AAC padding is counted separately from content lag. The original score terminates through its1.25s fade; no voice is used in this film."
+  },
+  "boundaryPcmChecks": {
+    "windowSeconds": 0.02,
+    "boundaries": [
+      {
+        "time": 0,
+        "wavStep": 0,
+        "aacStep": 6.051379841665039e-9,
+        "derivativeError": 6.051379841665039e-9,
+        "derivativeRms": 0.0000023817909075782596,
+        "rmsBeforeDbfs": -135.83306666031928,
+        "rmsAfterDbfs": -83.79972612398625,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 0.035,
+        "wavStep": 0.0031508211077238557,
+        "aacStep": 0.003174223005771637,
+        "derivativeError": 0.00004092568956078069,
+        "derivativeRms": 0.011705448821183758,
+        "rmsBeforeDbfs": -13.506275295367985,
+        "rmsAfterDbfs": -12.138267049643098,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 0.04,
+        "wavStep": 0.03799188589953016,
+        "aacStep": 0.03800848871469498,
+        "derivativeError": 0.000028852361651385272,
+        "derivativeRms": 0.015853421258732004,
+        "rmsBeforeDbfs": -13.456876290910735,
+        "rmsAfterDbfs": -11.65467221651893,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 0.27,
+        "wavStep": 0.04023635867075427,
+        "aacStep": 0.0402350053191185,
+        "derivativeError": 0.000001878054462681189,
+        "derivativeRms": 0.017612489435854525,
+        "rmsBeforeDbfs": -14.088164682408962,
+        "rmsAfterDbfs": -14.27208121210162,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 0.5,
+        "wavStep": 0.012999416947295298,
+        "aacStep": 0.012989334762096405,
+        "derivativeError": 0.00001008218519889248,
+        "derivativeRms": 0.014438767950817577,
+        "rmsBeforeDbfs": -15.825904238744176,
+        "rmsAfterDbfs": -14.15369616011585,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 0.66,
+        "wavStep": 0.0369907661665399,
+        "aacStep": 0.03699338436126709,
+        "derivativeError": 0.000009987104434505678,
+        "derivativeRms": 0.016926223867706185,
+        "rmsBeforeDbfs": -13.900181084153862,
+        "rmsAfterDbfs": -12.98010462786914,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 1,
+        "wavStep": 0.007146120923295085,
+        "aacStep": 0.007145583629608154,
+        "derivativeError": 0.0000053352698473063676,
+        "derivativeRms": 0.012683373796987302,
+        "rmsBeforeDbfs": -15.904359122192503,
+        "rmsAfterDbfs": -15.586280325120661,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 1.15,
+        "wavStep": 0.013460756952852843,
+        "aacStep": 0.013461634516716003,
+        "derivativeError": 0.0000013098718055215564,
+        "derivativeRms": 0.010953460479554025,
+        "rmsBeforeDbfs": -16.164228688858724,
+        "rmsAfterDbfs": -17.32786591082104,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 1.2,
+        "wavStep": 0.006469846543055362,
+        "aacStep": 0.006468812003731728,
+        "derivativeError": 0.000007506790367911749,
+        "derivativeRms": 0.010382159899546854,
+        "rmsBeforeDbfs": -16.85787364008094,
+        "rmsAfterDbfs": -18.117032347324393,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 1.3,
+        "wavStep": 0.020520689549528293,
+        "aacStep": 0.020716935396194458,
+        "derivativeError": 0.0001962458466661654,
+        "derivativeRms": 0.02342507794552919,
+        "rmsBeforeDbfs": -12.375383035048639,
+        "rmsAfterDbfs": -12.835349724480352,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 1.4100000000000001,
+        "wavStep": 0.003361344738166905,
+        "aacStep": 0.003360182046890259,
+        "derivativeError": 0.000005118280284904797,
+        "derivativeRms": 0.021564268517159604,
+        "rmsBeforeDbfs": -13.372824296964325,
+        "rmsAfterDbfs": -13.715229527311772,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 3.08,
+        "wavStep": 0.022935750834435317,
+        "aacStep": 0.022446610033512115,
+        "derivativeError": 0.0005841427975926267,
+        "derivativeRms": 0.013509906961943567,
+        "rmsBeforeDbfs": -17.073904793346184,
+        "rmsAfterDbfs": -17.555875266853622,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 3.2,
+        "wavStep": 0.007444263392002985,
+        "aacStep": 0.007327897474169731,
+        "derivativeError": 0.00017688499748667527,
+        "derivativeRms": 0.01212715421543497,
+        "rmsBeforeDbfs": -17.170025623605458,
+        "rmsAfterDbfs": -16.252731369074993,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 3.4400000000000004,
+        "wavStep": 0.013529540721123307,
+        "aacStep": 0.013526156544685364,
+        "derivativeError": 0.000003384176437942754,
+        "derivativeRms": 0.009414278686056897,
+        "rmsBeforeDbfs": -19.14486962676582,
+        "rmsAfterDbfs": -19.707897197802072,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 6.68,
+        "wavStep": 0.0031155351538103976,
+        "aacStep": 0.002513505518436432,
+        "derivativeError": 0.0006020296353739657,
+        "derivativeRms": 0.007499940520553665,
+        "rmsBeforeDbfs": -18.443448246231604,
+        "rmsAfterDbfs": -18.086490326126455,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 6.8,
+        "wavStep": 0.01112449301773226,
+        "aacStep": 0.010814599692821503,
+        "derivativeError": 0.0003098933249107566,
+        "derivativeRms": 0.00685622707275806,
+        "rmsBeforeDbfs": -19.37182923434269,
+        "rmsAfterDbfs": -16.81785863215928,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 9.68,
+        "wavStep": 0.0020519497456490694,
+        "aacStep": 0.001682579517364502,
+        "derivativeError": 0.0008655415172995756,
+        "derivativeRms": 0.0029777648308045557,
+        "rmsBeforeDbfs": -22.25371302825913,
+        "rmsAfterDbfs": -25.47840326210226,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 9.799999999999999,
+        "wavStep": 0.0029807094312559873,
+        "aacStep": 0.003034055233001709,
+        "derivativeError": 0.00015988981493823828,
+        "derivativeRms": 0.002966119183611032,
+        "rmsBeforeDbfs": -26.41729518359556,
+        "rmsAfterDbfs": -21.338943604084516,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 9.8,
+        "wavStep": 0.0029807094312559873,
+        "aacStep": 0.003034055233001709,
+        "derivativeError": 0.00015988981493823828,
+        "derivativeRms": 0.002966119183611032,
+        "rmsBeforeDbfs": -26.41729518359556,
+        "rmsAfterDbfs": -21.338943604084516,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 9.89,
+        "wavStep": 0.0015285016928317172,
+        "aacStep": 0.0015340335667133331,
+        "derivativeError": 0.000005531873881615967,
+        "derivativeRms": 0.0024114127845711064,
+        "rmsBeforeDbfs": -24.111898023095478,
+        "rmsAfterDbfs": -23.3997733842006,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 11.84,
+        "wavStep": 0.0018761160226006546,
+        "aacStep": 0.0017654001712799072,
+        "derivativeError": 0.00011071585132074735,
+        "derivativeRms": 0.0025606576538692,
+        "rmsBeforeDbfs": -23.771124539180427,
+        "rmsAfterDbfs": -22.220223132948263,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 12,
+        "wavStep": 0.0013804437375597584,
+        "aacStep": 0.0013897716999053955,
+        "derivativeError": 0.000018932088067927233,
+        "derivativeRms": 0.0030088360615873424,
+        "rmsBeforeDbfs": -21.709968857645073,
+        "rmsAfterDbfs": -12.929768188117388,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 12.23,
+        "wavStep": 0.002316355981392376,
+        "aacStep": 0.0023165643215179443,
+        "derivativeError": 2.0834012556814052e-7,
+        "derivativeRms": 0.0030218627272708552,
+        "rmsBeforeDbfs": -20.92215095446077,
+        "rmsAfterDbfs": -21.107346200513483,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 14.5,
+        "wavStep": 0.0044053798205113195,
+        "aacStep": 0.004404749721288681,
+        "derivativeError": 6.300992226385138e-7,
+        "derivativeRms": 0.004215221910132579,
+        "rmsBeforeDbfs": -21.815443362289393,
+        "rmsAfterDbfs": -16.194316308906135,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 14.64,
+        "wavStep": 0.007563234277157077,
+        "aacStep": 0.00756409764289856,
+        "derivativeError": 8.633657414824913e-7,
+        "derivativeRms": 0.005019495352988368,
+        "rmsBeforeDbfs": -18.736802922003843,
+        "rmsAfterDbfs": -17.49486171583185,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 15.47,
+        "wavStep": 0.00850141149776119,
+        "aacStep": 0.008990585803985596,
+        "derivativeError": 0.0004891743062244054,
+        "derivativeRms": 0.006030153484808929,
+        "rmsBeforeDbfs": -21.677632668506153,
+        "rmsAfterDbfs": -19.11172115283755,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 15.6,
+        "wavStep": 0.002232432631544188,
+        "aacStep": 0.0023092906922101974,
+        "derivativeError": 0.0005457180040338294,
+        "derivativeRms": 0.004287297281605584,
+        "rmsBeforeDbfs": -22.715976069737035,
+        "rmsAfterDbfs": -22.616328362791695,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 15.600000000000001,
+        "wavStep": 0.002232432631544188,
+        "aacStep": 0.0023092906922101974,
+        "derivativeError": 0.0005457180040338294,
+        "derivativeRms": 0.004287297281605584,
+        "rmsBeforeDbfs": -22.715976069737035,
+        "rmsAfterDbfs": -22.616328362791695,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 16.933333333333334,
+        "wavStep": 0.009673477372345612,
+        "aacStep": 0.010939866304397583,
+        "derivativeError": 0.0012663889320519706,
+        "derivativeRms": 0.009014660319813506,
+        "rmsBeforeDbfs": -17.57358138781819,
+        "rmsAfterDbfs": -18.7296163195831,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 17.048333333333332,
+        "wavStep": 0.010333181659362506,
+        "aacStep": 0.010334700345993042,
+        "derivativeError": 0.0000015186866305361146,
+        "derivativeRms": 0.007535473698908086,
+        "rmsBeforeDbfs": -19.37367961754331,
+        "rmsAfterDbfs": -16.985379083048798,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 17.113333333333333,
+        "wavStep": 0.0030896667348941226,
+        "aacStep": 0.00308903306722641,
+        "derivativeError": 0.0000019224749223945015,
+        "derivativeRms": 0.007090240618468139,
+        "rmsBeforeDbfs": -20.755356138669406,
+        "rmsAfterDbfs": -19.22477863309942,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 18.45,
+        "wavStep": 0.0072788008783818345,
+        "aacStep": 0.007274404168128967,
+        "derivativeError": 0.00021204062959166714,
+        "derivativeRms": 0.0029815233780422687,
+        "rmsBeforeDbfs": -21.782165970625364,
+        "rmsAfterDbfs": -22.245693258271967,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 18.599999999999998,
+        "wavStep": 0.013362766905160764,
+        "aacStep": 0.013524636626243591,
+        "derivativeError": 0.00016186972108282738,
+        "derivativeRms": 0.004934024239979426,
+        "rmsBeforeDbfs": -17.26469139918954,
+        "rmsAfterDbfs": -17.56497019698166,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 18.6,
+        "wavStep": 0.013362766905160764,
+        "aacStep": 0.013524636626243591,
+        "derivativeError": 0.00016186972108282738,
+        "derivativeRms": 0.004934024239979426,
+        "rmsBeforeDbfs": -17.26469139918954,
+        "rmsAfterDbfs": -17.56497019698166,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 19.533333333333335,
+        "wavStep": 0.002342224400308651,
+        "aacStep": 0.0028289705514907837,
+        "derivativeError": 0.0004867461511821325,
+        "derivativeRms": 0.0060538755373632435,
+        "rmsBeforeDbfs": -16.701795320879786,
+        "rmsAfterDbfs": -17.034110748087606,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 19.623333333333335,
+        "wavStep": 0.0021483900723922034,
+        "aacStep": 0.0021449923515319824,
+        "derivativeError": 0.000003397720860220943,
+        "derivativeRms": 0.003936854061767482,
+        "rmsBeforeDbfs": -17.99750607396514,
+        "rmsAfterDbfs": -20.569923102688172,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 20.833333333333332,
+        "wavStep": 0.003914118279709611,
+        "aacStep": 0.0030653681606054306,
+        "derivativeError": 0.0008487501191041802,
+        "derivativeRms": 0.008231362199764801,
+        "rmsBeforeDbfs": -16.848267808531702,
+        "rmsAfterDbfs": -14.33823845476596,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 20.918333333333333,
+        "wavStep": 0.008430362752719273,
+        "aacStep": 0.008416831493377686,
+        "derivativeError": 0.000013531259341587054,
+        "derivativeRms": 0.005903645292799594,
+        "rmsBeforeDbfs": -17.336330112945884,
+        "rmsAfterDbfs": -18.826494110060334,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 22,
+        "wavStep": 0.000451207214737806,
+        "aacStep": 0.0004633218050003052,
+        "derivativeError": 0.00001919272165196162,
+        "derivativeRms": 0.011863603892117944,
+        "rmsBeforeDbfs": -20.06022376941206,
+        "rmsAfterDbfs": -12.12140915955312,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 22.133333333333333,
+        "wavStep": 0.011364461346204446,
+        "aacStep": 0.010992541909217834,
+        "derivativeError": 0.0007026204505394817,
+        "derivativeRms": 0.020522631491470985,
+        "rmsBeforeDbfs": -14.704445134377151,
+        "rmsAfterDbfs": -13.858132381455341,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 22.233333333333334,
+        "wavStep": 0.01617908670652947,
+        "aacStep": 0.016166411340236664,
+        "derivativeError": 0.000012675366292805301,
+        "derivativeRms": 0.01855290944912415,
+        "rmsBeforeDbfs": -14.739389260702222,
+        "rmsAfterDbfs": -16.783031063438205,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 23.5,
+        "wavStep": 0.013006927133432284,
+        "aacStep": 0.013005383312702179,
+        "derivativeError": 0.0000062461943314065516,
+        "derivativeRms": 0.00922190583334718,
+        "rmsBeforeDbfs": -19.35631321427812,
+        "rmsAfterDbfs": -15.563171428320388,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 23.64,
+        "wavStep": 0.012051106935871476,
+        "aacStep": 0.012048717588186264,
+        "derivativeError": 0.000003338958961894567,
+        "derivativeRms": 0.008544743123428443,
+        "rmsBeforeDbfs": -17.215643948689806,
+        "rmsAfterDbfs": -17.260407539617624,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 26.07,
+        "wavStep": 0.010667802175021418,
+        "aacStep": 0.010478168725967407,
+        "derivativeError": 0.0002735567888977608,
+        "derivativeRms": 0.006880225674378518,
+        "rmsBeforeDbfs": -14.360317880215261,
+        "rmsAfterDbfs": -16.484300625717285,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 26.2,
+        "wavStep": 0.0030671361764831734,
+        "aacStep": 0.0029427148401737213,
+        "derivativeError": 0.00012442133630945207,
+        "derivativeRms": 0.005399420300640457,
+        "rmsBeforeDbfs": -17.47843074034797,
+        "rmsAfterDbfs": -16.013430862552013,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 26.4,
+        "wavStep": 0.004571915217866325,
+        "aacStep": 0.004572484642267227,
+        "derivativeError": 5.694244009021854e-7,
+        "derivativeRms": 0.004041844372854387,
+        "rmsBeforeDbfs": -19.90131999004616,
+        "rmsAfterDbfs": -17.028810351481273,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 28.49,
+        "wavStep": 0.00043833260993153544,
+        "aacStep": 0.0009726583957672119,
+        "derivativeError": 0.0005343257858356765,
+        "derivativeRms": 0.009867412434829791,
+        "rmsBeforeDbfs": -16.73318134542913,
+        "rmsAfterDbfs": -16.170097762348902,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 28.599999999999998,
+        "wavStep": 0.006826163151998896,
+        "aacStep": 0.006679855287075043,
+        "derivativeError": 0.00014630786492385306,
+        "derivativeRms": 0.009193582019003907,
+        "rmsBeforeDbfs": -16.10129602528126,
+        "rmsAfterDbfs": -15.178133468246443,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 28.6,
+        "wavStep": 0.006826163151998896,
+        "aacStep": 0.006679855287075043,
+        "derivativeError": 0.00014630786492385306,
+        "derivativeRms": 0.009193582019003907,
+        "rmsBeforeDbfs": -16.10129602528126,
+        "rmsAfterDbfs": -15.178133468246443,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 29.5,
+        "wavStep": 0.006651521521988092,
+        "aacStep": 0.006650276482105255,
+        "derivativeError": 0.0000018857657836240937,
+        "derivativeRms": 0.005010223528470707,
+        "rmsBeforeDbfs": -18.948803632052336,
+        "rmsAfterDbfs": -17.417633785967986,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 29.64,
+        "wavStep": 0.0033143762724848064,
+        "aacStep": 0.003318801522254944,
+        "derivativeError": 0.000004425249770137474,
+        "derivativeRms": 0.003961460483343844,
+        "rmsBeforeDbfs": -21.104699567982422,
+        "rmsAfterDbfs": -20.703860775564294,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 30.87,
+        "wavStep": 0.004370451494509153,
+        "aacStep": 0.004630856215953827,
+        "derivativeError": 0.00026040472144467364,
+        "derivativeRms": 0.009137848109077636,
+        "rmsBeforeDbfs": -17.578560956182628,
+        "rmsAfterDbfs": -19.72539901085891,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 31,
+        "wavStep": 0.011931778422806072,
+        "aacStep": 0.011797294020652771,
+        "derivativeError": 0.000205681769685509,
+        "derivativeRms": 0.008249083375166612,
+        "rmsBeforeDbfs": -18.827709216688685,
+        "rmsAfterDbfs": -15.916568237177557,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 31.2,
+        "wavStep": 0.0032393936204187374,
+        "aacStep": 0.0032412707805633545,
+        "derivativeError": 0.000006615819060556971,
+        "derivativeRms": 0.006827294510139209,
+        "rmsBeforeDbfs": -20.467160400552554,
+        "rmsAfterDbfs": -23.61732565964751,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 33.49,
+        "wavStep": 0.0033812526918950703,
+        "aacStep": 0.0035058557987213135,
+        "derivativeError": 0.0007477101375883144,
+        "derivativeRms": 0.004959795158867855,
+        "rmsBeforeDbfs": -19.781097419800183,
+        "rmsAfterDbfs": -19.700940975701364,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 33.6,
+        "wavStep": 0.0012173654100138404,
+        "aacStep": 0.001495078206062317,
+        "derivativeError": 0.00030567134693627873,
+        "derivativeRms": 0.004419830232020851,
+        "rmsBeforeDbfs": -22.936508522726516,
+        "rmsAfterDbfs": -18.833773438516193,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 33.7,
+        "wavStep": 0.0012063981540677837,
+        "aacStep": 0.0012076497077941895,
+        "derivativeError": 0.0000015645776727524208,
+        "derivativeRms": 0.0034909419282398114,
+        "rmsBeforeDbfs": -21.350252081071268,
+        "rmsAfterDbfs": -19.78097070630926,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 36.6,
+        "wavStep": 0.005753994673966728,
+        "aacStep": 0.005754612386226654,
+        "derivativeError": 0.0000013927121215590033,
+        "derivativeRms": 0.004923530604953024,
+        "rmsBeforeDbfs": -21.323250084187602,
+        "rmsAfterDbfs": -21.588481189172274,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 36.800000000000004,
+        "wavStep": 0.002367139144794833,
+        "aacStep": 0.0023645684123039246,
+        "derivativeError": 0.000002570732490908556,
+        "derivativeRms": 0.0036186614803914246,
+        "rmsBeforeDbfs": -19.49772909543771,
+        "rmsAfterDbfs": -24.40215495251283,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 39.9,
+        "wavStep": 0.004179955027098073,
+        "aacStep": 0.0043180957436561584,
+        "derivativeError": 0.00019836764357701597,
+        "derivativeRms": 0.004776604551933793,
+        "rmsBeforeDbfs": -19.010522889268714,
+        "rmsAfterDbfs": -23.57469438332403,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 40,
+        "wavStep": 0.0006411076356300869,
+        "aacStep": 0.0006480296142399311,
+        "derivativeError": 0.00000938021307206327,
+        "derivativeRms": 0.009950964111314265,
+        "rmsBeforeDbfs": -16.9520712135419,
+        "rmsAfterDbfs": -14.341157533909069,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 43.85,
+        "wavStep": 0.007547379439756807,
+        "aacStep": 0.007441997528076172,
+        "derivativeError": 0.00010538191168063538,
+        "derivativeRms": 0.002819479073422518,
+        "rmsBeforeDbfs": -21.826731796007515,
+        "rmsAfterDbfs": -23.774380267709944,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 44,
+        "wavStep": 0.0029416087796221707,
+        "aacStep": 0.002940509468317032,
+        "derivativeError": 0.0000012588840689539693,
+        "derivativeRms": 0.0022841245401158936,
+        "rmsBeforeDbfs": -25.584589326301405,
+        "rmsAfterDbfs": -21.715063621249115,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 44.18,
+        "wavStep": 0.005288959179992579,
+        "aacStep": 0.005288783460855484,
+        "derivativeError": 4.4287311590923695e-7,
+        "derivativeRms": 0.0033196413765888017,
+        "rmsBeforeDbfs": -16.137668536150304,
+        "rmsAfterDbfs": -20.867311086500372,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 47.88,
+        "wavStep": 0.003091693293058073,
+        "aacStep": 0.003110567107796669,
+        "derivativeError": 0.000035083246530159123,
+        "derivativeRms": 0.0018970170064682107,
+        "rmsBeforeDbfs": -25.658442005199433,
+        "rmsAfterDbfs": -24.35149195390163,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 48,
+        "wavStep": 0.0002882480964956401,
+        "aacStep": 0.00040282635018229485,
+        "derivativeError": 0.00011457825368665474,
+        "derivativeRms": 0.001850371402358818,
+        "rmsBeforeDbfs": -24.167371807249346,
+        "rmsAfterDbfs": -25.455435799876533,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 48.1,
+        "wavStep": 0.00012242795496320014,
+        "aacStep": 0.00012224912643432617,
+        "derivativeError": 0.0000034794222898426597,
+        "derivativeRms": 0.0014612416744247609,
+        "rmsBeforeDbfs": -28.632994535361792,
+        "rmsAfterDbfs": -23.31465429525606,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 53,
+        "wavStep": 0.0005636215881850218,
+        "aacStep": 0.0005635879933834076,
+        "derivativeError": 3.3594801614189596e-8,
+        "derivativeRms": 0.0009317266339828039,
+        "rmsBeforeDbfs": -28.107418669413576,
+        "rmsAfterDbfs": -30.745291040190608,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 58.75,
+        "wavStep": 0.0006316901006329177,
+        "aacStep": 0.0006307261064648628,
+        "derivativeError": 9.639941680548297e-7,
+        "derivativeRms": 0.0014426578905937738,
+        "rmsBeforeDbfs": -27.6042589911796,
+        "rmsAfterDbfs": -28.313272606862697,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 59.8,
+        "wavStep": 0.00002789497708022314,
+        "aacStep": 0.000027953297831118107,
+        "derivativeError": 1.471461104071226e-7,
+        "derivativeRms": 0.000021608622550150188,
+        "rmsBeforeDbfs": -66.36721715738676,
+        "rmsAfterDbfs": -67.76883093997304,
+        "newIsolatedDiscontinuity": false
+      },
+      {
+        "time": 59.95,
+        "wavStep": 1.1920930376163766e-7,
+        "aacStep": 1.490643626311794e-7,
+        "derivativeError": 3.594324482492253e-8,
+        "derivativeRms": 1.1262460731515947e-7,
+        "rmsBeforeDbfs": -107.7344907815118,
+        "rmsAfterDbfs": -114.54738280735671,
+        "newIsolatedDiscontinuity": false
+      }
+    ],
+    "newIsolatedDiscontinuities": [],
+    "limitation": "Sample derivatives and local RMS screen numerical defects; they do not certify that a click is inaudible."
+  },
+  "finalAudio": {
+    "integratedLufs": -16.6,
+    "truePeakDbtp": -2.2,
+    "samplePeakDbfs": -2.2227712399463284,
+    "clippedSamples": 0,
+    "nonFiniteSamples": 0,
+    "measurement": "Independent FFmpeg ebur128=peak=true on final AAC"
+  },
+  "silence": {
+    "thresholdDbfs": -55,
+    "minSeconds": 0.06,
+    "events": [
+      {
+        "start": 59.775146,
+        "end": 60.010667
+      }
+    ],
+    "unexpected": [],
+    "intended": "Only the terminal authored decay after59.3s and codec padding"
+  },
+  "fullAacDecode": {
+    "exit": 0,
+    "stderr": "",
+    "success": true,
+    "allSamplesChecked": true
+  },
+  "rawMixEvidence": {
+    "sourceWavPreserved": true,
+    "scoreClockPreserved": true,
+    "ctaNoAddedFx": true,
+    "ctaSourceConstantGainError": 5.960446698705102e-8,
+    "originalFadeSeconds": 1.25,
+    "syntheticEditorialFxNotGameRecording": true
+  },
+  "verificationScope": {
+    "directWholeAudition": "NOT_PERFORMED",
+    "perceptualNaturalnessApproval": "NOT_CLAIMED",
+    "visualApproval": "SEPARATE_REVIEW",
+    "publication": false
+  },
+  "errors": []
+}

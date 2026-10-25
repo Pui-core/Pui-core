@@ -1,0 +1,1245 @@
+{
+  "schema": 1,
+  "status": "PASS_NUMERIC_AUDIO_V2_WITH_AUDITION_LIMIT",
+  "issue": 89,
+  "output": "/home/pui/.claude/worktrees/Pui-core-issue-89/promotion/projectp-emberwake-rta-v2/media/emberwake-rta-v2-mix.wav",
+  "sha256": "dac11d93a85dd84dc51025ba77dd92b255f4bf6609e305e16b3afbd6fc50f042",
+  "duration": 60,
+  "fps": 30,
+  "pictureFrames": 1800,
+  "sampleRate": 48000,
+  "sampleFrames": 2880000,
+  "channels": 2,
+  "bits": 24,
+  "bpm": 120,
+  "source": {
+    "path": "/home/pui/.claude/worktrees/Pui-core-issue-89/promotion/projectp-emberwake-rta-v2/media/emberwake-60-mix.wav",
+    "sha256Before": "565295d97f5525f3f6cec6dd722c5fd8b87932b58b2e10d087a3980762665da9",
+    "sha256After": "565295d97f5525f3f6cec6dd722c5fd8b87932b58b2e10d087a3980762665da9",
+    "qaPath": "/home/pui/.claude/worktrees/Pui-core-issue-89/promotion/projectp-emberwake-rta-v2/qa/audio.json",
+    "qaSha256Before": "1f4cbc6e407bc9b6924d5fb5e01896b89ab04b94c45606b6cdc24f14197b00ed",
+    "qaSha256After": "1f4cbc6e407bc9b6924d5fb5e01896b89ab04b94c45606b6cdc24f14197b00ed",
+    "issue": 88,
+    "preservedUnchanged": true,
+    "policy": "Decode once at its original clock; no trim, loop, resample, time-stretch or source overwrite."
+  },
+  "authorship": {
+    "base": "Issue88 originally authored additive-synthesis score",
+    "newFx": "Original deterministic lowpassed noise, sine pulse and short synthesized dry impact; no downloaded or game-recorded samples",
+    "gameAudioClaim": false,
+    "newVoiceOrNarration": false
+  },
+  "arrangement": {
+    "scoreGainKeysDb": [
+      [
+        0,
+        1.35
+      ],
+      [
+        3.2,
+        1.35
+      ],
+      [
+        4.4,
+        2.8
+      ],
+      [
+        11,
+        2.8
+      ],
+      [
+        13,
+        2.15
+      ],
+      [
+        28,
+        2.15
+      ],
+      [
+        30,
+        1
+      ],
+      [
+        33,
+        0.5
+      ],
+      [
+        35,
+        0.5
+      ],
+      [
+        36.5,
+        1
+      ],
+      [
+        40,
+        1
+      ],
+      [
+        43,
+        2.2
+      ],
+      [
+        47,
+        1.6
+      ],
+      [
+        49,
+        0.6
+      ],
+      [
+        52,
+        0
+      ],
+      [
+        60,
+        0
+      ]
+    ],
+    "policy": "Pre-authored broad smoothstep levels, independent of instantaneous peaks. One final static gain. No compressor/limiter/dynamic normalization.",
+    "addedFxActiveSeconds": 4.7143125,
+    "noFxAfter53": true,
+    "cta": "From53s the original PCM and cadence/fade are unchanged apart from one constant output gain.",
+    "cameraAnchors": {
+      "coreFits": [
+        1.3,
+        16.933333333333334
+      ],
+      "jumpLandings": [
+        19.533333333333335,
+        20.833333333333332,
+        22.133333333333333
+      ],
+      "notAccentedCoreFit": 32.53333333333333
+    },
+    "events": [
+      {
+        "at": 0.04,
+        "d": 0.23,
+        "kind": "pulse",
+        "amplitude": 0.147,
+        "why": "Low opening attack after the existing35ms fade",
+        "pan": 0,
+        "frequency": 73.416,
+        "startSample": 1920,
+        "endSample": 12960,
+        "outputFrame": 1.2,
+        "synthPeakDbfs": -20.457595830835082,
+        "synthRmsDbfs": -31.654553687528903
+      },
+      {
+        "at": 0.5,
+        "d": 0.16,
+        "kind": "pulse",
+        "amplitude": 0.06999999999999999,
+        "why": "One short opening pickup",
+        "pan": 0,
+        "frequency": 73.416,
+        "startSample": 24000,
+        "endSample": 31680,
+        "outputFrame": 15,
+        "synthPeakDbfs": -26.901981725513465,
+        "synthRmsDbfs": -36.5758639873744
+      },
+      {
+        "at": 1,
+        "d": 0.15,
+        "kind": "pulse",
+        "amplitude": 0.077,
+        "why": "Opening acceleration, not a constant percussion loop",
+        "pan": 0,
+        "frequency": 73.416,
+        "startSample": 48000,
+        "endSample": 55200,
+        "outputFrame": 30,
+        "synthPeakDbfs": -26.074128022348965,
+        "synthRmsDbfs": -35.49036779881961
+      },
+      {
+        "at": 1.3,
+        "d": 0.11,
+        "kind": "dry-hit",
+        "amplitude": 0.2125,
+        "why": "First core fitting: camera agreement at frame39",
+        "pan": -0.08,
+        "frequency": 140,
+        "startSample": 62400,
+        "endSample": 67680,
+        "outputFrame": 39,
+        "synthPeakDbfs": -18.326715881845864,
+        "synthRmsDbfs": -31.91445380586633
+      },
+      {
+        "at": 3.08,
+        "d": 0.12,
+        "kind": "whip",
+        "amplitude": 0.08800000000000001,
+        "why": "Fast title reveal: short pre-cut air",
+        "pan": -0.35,
+        "frequency": 760,
+        "startSample": 147840,
+        "endSample": 153600,
+        "outputFrame": 92.4,
+        "synthPeakDbfs": -25.1225048043721,
+        "synthRmsDbfs": -38.2832743162429
+      },
+      {
+        "at": 3.2,
+        "d": 0.24,
+        "kind": "pulse",
+        "amplitude": 0.13999999999999999,
+        "why": "Title landing",
+        "pan": 0,
+        "frequency": 73.416,
+        "startSample": 153600,
+        "endSample": 165120,
+        "outputFrame": 96,
+        "synthPeakDbfs": -20.88138181223384,
+        "synthRmsDbfs": -32.26144846179857
+      },
+      {
+        "at": 6.68,
+        "d": 0.12,
+        "kind": "whip",
+        "amplitude": 0.0704,
+        "why": "Gameplay premise push",
+        "pan": 0.35,
+        "frequency": 880,
+        "startSample": 320640,
+        "endSample": 326400,
+        "outputFrame": 200.39999999999998,
+        "synthPeakDbfs": -27.357663504133075,
+        "synthRmsDbfs": -39.99142329160956
+      },
+      {
+        "at": 9.68,
+        "d": 0.12,
+        "kind": "whip",
+        "amplitude": 0.0864,
+        "why": "TIME ATTACK menu reveal",
+        "pan": -0.3,
+        "frequency": 1020,
+        "startSample": 464640,
+        "endSample": 470400,
+        "outputFrame": 290.4,
+        "synthPeakDbfs": -24.322373072165906,
+        "synthRmsDbfs": -38.32764434792914
+      },
+      {
+        "at": 9.8,
+        "d": 0.09,
+        "kind": "dry-hit",
+        "amplitude": 0.1139,
+        "why": "Readable RTA menu landing",
+        "pan": 0,
+        "frequency": 165,
+        "startSample": 470400,
+        "endSample": 474720,
+        "outputFrame": 294,
+        "synthPeakDbfs": -24.572502432829527,
+        "synthRmsDbfs": -36.33857044452442
+      },
+      {
+        "at": 11.84,
+        "d": 0.16,
+        "kind": "whip",
+        "amplitude": 0.0944,
+        "why": "Enter the practical core puzzle",
+        "pan": 0.3,
+        "frequency": 740,
+        "startSample": 568320,
+        "endSample": 576000,
+        "outputFrame": 355.2,
+        "synthPeakDbfs": -24.250737125544767,
+        "synthRmsDbfs": -37.876872207873774
+      },
+      {
+        "at": 12,
+        "d": 0.23,
+        "kind": "pulse",
+        "amplitude": 0.147,
+        "why": "Puzzle downbeat",
+        "pan": 0,
+        "frequency": 73.416,
+        "startSample": 576000,
+        "endSample": 587040,
+        "outputFrame": 360,
+        "synthPeakDbfs": -20.457595830835082,
+        "synthRmsDbfs": -31.654553687528903
+      },
+      {
+        "at": 14.5,
+        "d": 0.14,
+        "kind": "pulse",
+        "amplitude": 0.055999999999999994,
+        "why": "One offbeat pulse in the carrying sequence",
+        "pan": 0,
+        "frequency": 73.416,
+        "startSample": 696000,
+        "endSample": 702720,
+        "outputFrame": 435,
+        "synthPeakDbfs": -28.840181985674597,
+        "synthRmsDbfs": -37.988310179974356
+      },
+      {
+        "at": 15.47,
+        "d": 0.13,
+        "kind": "whip",
+        "amplitude": 0.06720000000000001,
+        "why": "Push toward the core socket",
+        "pan": -0.3,
+        "frequency": 830,
+        "startSample": 742560,
+        "endSample": 748800,
+        "outputFrame": 464.1,
+        "synthPeakDbfs": -26.633759093567853,
+        "synthRmsDbfs": -40.636047336585
+      },
+      {
+        "at": 16.933333333333334,
+        "d": 0.115,
+        "kind": "dry-hit",
+        "amplitude": 0.2125,
+        "why": "Second core fitting: camera agreement at frame508",
+        "pan": 0.08,
+        "frequency": 125,
+        "startSample": 812800,
+        "endSample": 818320,
+        "outputFrame": 508,
+        "synthPeakDbfs": -19.660010236369995,
+        "synthRmsDbfs": -32.321987309741765
+      },
+      {
+        "at": 16.933333333333334,
+        "d": 0.18,
+        "kind": "pulse",
+        "amplitude": 0.091,
+        "why": "Low support under the core fitting",
+        "pan": 0,
+        "frequency": 58.27,
+        "startSample": 812800,
+        "endSample": 821440,
+        "outputFrame": 508,
+        "synthPeakDbfs": -24.941599676439328,
+        "synthRmsDbfs": -34.72172305277673
+      },
+      {
+        "at": 18.45,
+        "d": 0.15,
+        "kind": "whip",
+        "amplitude": 0.07680000000000001,
+        "why": "Jump sequence entry",
+        "pan": 0.3,
+        "frequency": 980,
+        "startSample": 885600,
+        "endSample": 892800,
+        "outputFrame": 553.5,
+        "synthPeakDbfs": -26.78362123653063,
+        "synthRmsDbfs": -39.267400477741546
+      },
+      {
+        "at": 19.533333333333335,
+        "d": 0.09,
+        "kind": "dry-hit",
+        "amplitude": 0.1309,
+        "why": "ChapterI frame238 landing: output frame586",
+        "pan": -0.06,
+        "frequency": 155,
+        "startSample": 937600,
+        "endSample": 941920,
+        "outputFrame": 586,
+        "synthPeakDbfs": -23.42447886707889,
+        "synthRmsDbfs": -35.30719132816836
+      },
+      {
+        "at": 20.833333333333332,
+        "d": 0.085,
+        "kind": "dry-hit",
+        "amplitude": 0.11900000000000001,
+        "why": "ChapterI frame277 landing: output frame625",
+        "pan": 0.06,
+        "frequency": 175,
+        "startSample": 1000000,
+        "endSample": 1004080,
+        "outputFrame": 625,
+        "synthPeakDbfs": -24.205931254392876,
+        "synthRmsDbfs": -35.786707935101035
+      },
+      {
+        "at": 22.133333333333333,
+        "d": 0.1,
+        "kind": "dry-hit",
+        "amplitude": 0.136,
+        "why": "ChapterI frame316 landing across the22s cut",
+        "pan": 0,
+        "frequency": 145,
+        "startSample": 1062400,
+        "endSample": 1067200,
+        "outputFrame": 664,
+        "synthPeakDbfs": -23.47149368180694,
+        "synthRmsDbfs": -35.47128708852215
+      },
+      {
+        "at": 23.5,
+        "d": 0.14,
+        "kind": "pulse",
+        "amplitude": 0.054599999999999996,
+        "why": "Sparse forward pulse under the town response",
+        "pan": 0,
+        "frequency": 65.406,
+        "startSample": 1128000,
+        "endSample": 1134720,
+        "outputFrame": 705,
+        "synthPeakDbfs": -29.209712460491353,
+        "synthRmsDbfs": -38.18271799219876
+      },
+      {
+        "at": 26.07,
+        "d": 0.13,
+        "kind": "whip",
+        "amplitude": 0.0752,
+        "why": "Route replay entry",
+        "pan": -0.35,
+        "frequency": 890,
+        "startSample": 1251360,
+        "endSample": 1257600,
+        "outputFrame": 782.1,
+        "synthPeakDbfs": -26.483497291640738,
+        "synthRmsDbfs": -39.436637419707
+      },
+      {
+        "at": 26.2,
+        "d": 0.2,
+        "kind": "pulse",
+        "amplitude": 0.119,
+        "why": "Route replay landing",
+        "pan": 0,
+        "frequency": 73.416,
+        "startSample": 1257600,
+        "endSample": 1267200,
+        "outputFrame": 786,
+        "synthPeakDbfs": -22.293003297947983,
+        "synthRmsDbfs": -32.89310085336075
+      },
+      {
+        "at": 28.49,
+        "d": 0.11,
+        "kind": "whip",
+        "amplitude": 0.0656,
+        "why": "Quick change to the next route view",
+        "pan": 0.35,
+        "frequency": 1100,
+        "startSample": 1367520,
+        "endSample": 1372800,
+        "outputFrame": 854.6999999999999,
+        "synthPeakDbfs": -27.312671922323055,
+        "synthRmsDbfs": -40.503895767077566
+      },
+      {
+        "at": 29.5,
+        "d": 0.14,
+        "kind": "pulse",
+        "amplitude": 0.05179999999999999,
+        "why": "A-root pickup before the wider chapter view",
+        "pan": 0,
+        "frequency": 55,
+        "startSample": 1416000,
+        "endSample": 1422720,
+        "outputFrame": 885,
+        "synthPeakDbfs": -29.564592527343887,
+        "synthRmsDbfs": -38.586508243796374
+      },
+      {
+        "at": 30.87,
+        "d": 0.13,
+        "kind": "whip",
+        "amplitude": 0.08000000000000002,
+        "why": "Faster re-fit sequence",
+        "pan": -0.3,
+        "frequency": 860,
+        "startSample": 1481760,
+        "endSample": 1488000,
+        "outputFrame": 926.1,
+        "synthPeakDbfs": -26.2003248265952,
+        "synthRmsDbfs": -39.68570312128175
+      },
+      {
+        "at": 31,
+        "d": 0.2,
+        "kind": "pulse",
+        "amplitude": 0.12179999999999998,
+        "why": "Re-fit section downbeat",
+        "pan": 0,
+        "frequency": 58.27,
+        "startSample": 1488000,
+        "endSample": 1497600,
+        "outputFrame": 930,
+        "synthPeakDbfs": -22.409481756924073,
+        "synthRmsDbfs": -32.63265077719418
+      },
+      {
+        "at": 33.49,
+        "d": 0.11,
+        "kind": "whip",
+        "amplitude": 0.0736,
+        "why": "One final rapid route push",
+        "pan": 0.3,
+        "frequency": 990,
+        "startSample": 1607520,
+        "endSample": 1612800,
+        "outputFrame": 1004.7,
+        "synthPeakDbfs": -27.188617044497523,
+        "synthRmsDbfs": -39.654686795667345
+      },
+      {
+        "at": 33.6,
+        "d": 0.1,
+        "kind": "dry-hit",
+        "amplitude": 0.1037,
+        "why": "Self-best aspiration landing; no fabricated record",
+        "pan": 0,
+        "frequency": 150,
+        "startSample": 1612800,
+        "endSample": 1617600,
+        "outputFrame": 1008,
+        "synthPeakDbfs": -25.27822693190512,
+        "synthRmsDbfs": -37.58621626131402
+      },
+      {
+        "at": 36.6,
+        "d": 0.2,
+        "kind": "pulse",
+        "amplitude": 0.07,
+        "why": "World reveal then less percussion",
+        "pan": 0,
+        "frequency": 65.406,
+        "startSample": 1756800,
+        "endSample": 1766400,
+        "outputFrame": 1098,
+        "synthPeakDbfs": -27.051604514300962,
+        "synthRmsDbfs": -37.477218083940535
+      },
+      {
+        "at": 39.9,
+        "d": 0.1,
+        "kind": "whip",
+        "amplitude": 0.029,
+        "why": "Small transition into the actual code excerpt",
+        "pan": -0.2,
+        "frequency": 700,
+        "startSample": 1915200,
+        "endSample": 1920000,
+        "outputFrame": 1197,
+        "synthPeakDbfs": -35.583171891399836,
+        "synthRmsDbfs": -48.050427260250466
+      },
+      {
+        "at": 43.85,
+        "d": 0.15,
+        "kind": "whip",
+        "amplitude": 0.028,
+        "why": "Making-of to the wider development image",
+        "pan": 0.2,
+        "frequency": 780,
+        "startSample": 2104800,
+        "endSample": 2112000,
+        "outputFrame": 1315.5,
+        "synthPeakDbfs": -35.8246841502261,
+        "synthRmsDbfs": -48.5515459253467
+      },
+      {
+        "at": 44,
+        "d": 0.18,
+        "kind": "pulse",
+        "amplitude": 0.052,
+        "why": "Quiet world-image landing",
+        "pan": 0,
+        "frequency": 58.27,
+        "startSample": 2112000,
+        "endSample": 2120640,
+        "outputFrame": 1320,
+        "synthPeakDbfs": -29.80236065016522,
+        "synthRmsDbfs": -39.5824840265026
+      },
+      {
+        "at": 47.88,
+        "d": 0.12,
+        "kind": "whip",
+        "amplitude": 0.024,
+        "why": "Light introduction of support preparation",
+        "pan": -0.2,
+        "frequency": 680,
+        "startSample": 2298240,
+        "endSample": 2304000,
+        "outputFrame": 1436.4,
+        "synthPeakDbfs": -36.657262424786516,
+        "synthRmsDbfs": -49.34044407289573
+      },
+      {
+        "at": 48,
+        "d": 0.1,
+        "kind": "dry-hit",
+        "amplitude": 0.04,
+        "why": "Support card: understated landing",
+        "pan": 0,
+        "frequency": 125,
+        "startSample": 2304000,
+        "endSample": 2308800,
+        "outputFrame": 1440,
+        "synthPeakDbfs": -33.04476478369777,
+        "synthRmsDbfs": -45.92364804167851
+      }
+    ]
+  },
+  "levels": {
+    "targetIntegratedLufs": -16.8,
+    "targetTruePeakCeilingDbtp": -2,
+    "integratedLufs": -16.79,
+    "truePeakDbtp": -2.22,
+    "lraLu": 10.3,
+    "staticGainDb": 0.3299999999999983,
+    "samplePeakBeforeStaticGainDbfs": -2.5529534447209343,
+    "phases": [
+      {
+        "a": 0,
+        "b": 4,
+        "baseRmsDbfs": -17.453019062230503,
+        "mixRmsDbfs": -15.730934551005678,
+        "addedFxRmsDbfs": -39.007765634237
+      },
+      {
+        "a": 4,
+        "b": 12,
+        "baseRmsDbfs": -23.473537798358905,
+        "mixRmsDbfs": -20.358537365367447,
+        "addedFxRmsDbfs": -49.85524388808406
+      },
+      {
+        "a": 12,
+        "b": 30,
+        "baseRmsDbfs": -20.21553917634263,
+        "mixRmsDbfs": -17.765415488248,
+        "addedFxRmsDbfs": -44.69638402941937
+      },
+      {
+        "a": 30,
+        "b": 42,
+        "baseRmsDbfs": -19.062311677033197,
+        "mixRmsDbfs": -17.865018781181217,
+        "addedFxRmsDbfs": -47.68060158124646
+      },
+      {
+        "a": 42,
+        "b": 50,
+        "baseRmsDbfs": -24.396733503910117,
+        "mixRmsDbfs": -22.39966687335654,
+        "addedFxRmsDbfs": -54.57403982732602
+      },
+      {
+        "a": 50,
+        "b": 60,
+        "baseRmsDbfs": -27.69403113329887,
+        "mixRmsDbfs": -27.295885496656332,
+        "addedFxRmsDbfs": -299.67
+      },
+      {
+        "a": 53,
+        "b": 60,
+        "baseRmsDbfs": -28.029602755357935,
+        "mixRmsDbfs": -27.699602755357937,
+        "addedFxRmsDbfs": -299.67
+      }
+    ]
+  },
+  "fadeSync": {
+    "baseContentStartOffsetSamples": 0,
+    "baseContentEndSample": 2880000,
+    "baseSampleClockUnchanged": true,
+    "originalInSeconds": 0.035,
+    "originalOutSeconds": 1.25,
+    "fxEnvelope": "Smoothstep attack/release; whip18/20ms, dry-hit2.5/16ms, pulse4/35ms",
+    "maxQuantizationReconstructionError": 5.9604615625097335e-8,
+    "ctaMaxErrorFromSourceTimesConstantGain": 5.960446698705102e-8,
+    "ctaFxPeak": 0
+  },
+  "waveform": {
+    "clippedSamples": 0,
+    "maxSingleSampleDelta": 0.07283378515646281,
+    "boundaries": [
+      {
+        "time": 0,
+        "singleSampleStep": 0,
+        "neighbourhoodMaxStep": 0.000009691365083756282,
+        "derivativeRms": 0.0000023788498228419674,
+        "isolatedJump": false
+      },
+      {
+        "time": 0.04,
+        "singleSampleStep": 0.03799188689520527,
+        "neighbourhoodMaxStep": 0.056304386154497496,
+        "derivativeRms": 0.015865416950778508,
+        "isolatedJump": false
+      },
+      {
+        "time": 0.27,
+        "singleSampleStep": 0.04023637904253957,
+        "neighbourhoodMaxStep": 0.04771718349372898,
+        "derivativeRms": 0.0176136137092428,
+        "isolatedJump": false
+      },
+      {
+        "time": 0.5,
+        "singleSampleStep": 0.012999447463838451,
+        "neighbourhoodMaxStep": 0.036016005596039444,
+        "derivativeRms": 0.01443877776824873,
+        "isolatedJump": false
+      },
+      {
+        "time": 0.66,
+        "singleSampleStep": 0.036990782086576426,
+        "neighbourhoodMaxStep": 0.05165427418080833,
+        "derivativeRms": 0.016926296488844295,
+        "isolatedJump": false
+      },
+      {
+        "time": 1,
+        "singleSampleStep": 0.007146007600489681,
+        "neighbourhoodMaxStep": 0.03801300539225344,
+        "derivativeRms": 0.01268325642995469,
+        "isolatedJump": false
+      },
+      {
+        "time": 1.15,
+        "singleSampleStep": 0.013460732091724797,
+        "neighbourhoodMaxStep": 0.03195503433146545,
+        "derivativeRms": 0.010953849847579467,
+        "isolatedJump": false
+      },
+      {
+        "time": 1.2,
+        "singleSampleStep": 0.0064699264004676755,
+        "neighbourhoodMaxStep": 0.03165098583286759,
+        "derivativeRms": 0.010382155992304637,
+        "isolatedJump": false
+      },
+      {
+        "time": 1.3,
+        "singleSampleStep": 0.020520670005033617,
+        "neighbourhoodMaxStep": 0.07235714931662095,
+        "derivativeRms": 0.02346000403724201,
+        "isolatedJump": false
+      },
+      {
+        "time": 1.4100000000000001,
+        "singleSampleStep": 0.0033613064332532476,
+        "neighbourhoodMaxStep": 0.05136654929974915,
+        "derivativeRms": 0.021565260864806715,
+        "isolatedJump": false
+      },
+      {
+        "time": 3.08,
+        "singleSampleStep": 0.02293570032500963,
+        "neighbourhoodMaxStep": 0.04194075654873581,
+        "derivativeRms": 0.013445720278295293,
+        "isolatedJump": false
+      },
+      {
+        "time": 3.2,
+        "singleSampleStep": 0.00744427020948532,
+        "neighbourhoodMaxStep": 0.035060635060520484,
+        "derivativeRms": 0.01213600887807886,
+        "isolatedJump": false
+      },
+      {
+        "time": 3.4400000000000004,
+        "singleSampleStep": 0.013529559045199117,
+        "neighbourhoodMaxStep": 0.027269317008187337,
+        "derivativeRms": 0.009414584129136499,
+        "isolatedJump": false
+      },
+      {
+        "time": 6.68,
+        "singleSampleStep": 0.0031154827077426793,
+        "neighbourhoodMaxStep": 0.019913943847824283,
+        "derivativeRms": 0.007475327244571151,
+        "isolatedJump": false
+      },
+      {
+        "time": 6.8,
+        "singleSampleStep": 0.011124428653536909,
+        "neighbourhoodMaxStep": 0.01775382285742263,
+        "derivativeRms": 0.006829440300674812,
+        "isolatedJump": false
+      },
+      {
+        "time": 9.68,
+        "singleSampleStep": 0.0020519761840374685,
+        "neighbourhoodMaxStep": 0.009437893959001483,
+        "derivativeRms": 0.0029473377558821394,
+        "isolatedJump": false
+      },
+      {
+        "time": 9.799999999999999,
+        "singleSampleStep": 0.002980792392622192,
+        "neighbourhoodMaxStep": 0.009510292800769832,
+        "derivativeRms": 0.0029429426099028943,
+        "isolatedJump": false
+      },
+      {
+        "time": 9.8,
+        "singleSampleStep": 0.002980792392622192,
+        "neighbourhoodMaxStep": 0.009510292800769832,
+        "derivativeRms": 0.0029429426099028943,
+        "isolatedJump": false
+      },
+      {
+        "time": 9.89,
+        "singleSampleStep": 0.0015284203689198911,
+        "neighbourhoodMaxStep": 0.006571952059819884,
+        "derivativeRms": 0.002410512373858506,
+        "isolatedJump": false
+      },
+      {
+        "time": 11.84,
+        "singleSampleStep": 0.0018761534786124845,
+        "neighbourhoodMaxStep": 0.007040213523280491,
+        "derivativeRms": 0.0025230495534933244,
+        "isolatedJump": false
+      },
+      {
+        "time": 12,
+        "singleSampleStep": 0.0013804836112942278,
+        "neighbourhoodMaxStep": 0.010309234646170184,
+        "derivativeRms": 0.0029858836372055287,
+        "isolatedJump": false
+      },
+      {
+        "time": 12.23,
+        "singleSampleStep": 0.002316268531371378,
+        "neighbourhoodMaxStep": 0.007261264376714209,
+        "derivativeRms": 0.003021932203210206,
+        "isolatedJump": false
+      },
+      {
+        "time": 14.5,
+        "singleSampleStep": 0.004405344285858117,
+        "neighbourhoodMaxStep": 0.014709724119184612,
+        "derivativeRms": 0.004215366674336127,
+        "isolatedJump": false
+      },
+      {
+        "time": 14.64,
+        "singleSampleStep": 0.007563122508647474,
+        "neighbourhoodMaxStep": 0.013551001432305521,
+        "derivativeRms": 0.00501933255500163,
+        "isolatedJump": false
+      },
+      {
+        "time": 15.47,
+        "singleSampleStep": 0.008501413609251406,
+        "neighbourhoodMaxStep": 0.017970887648109484,
+        "derivativeRms": 0.006007584606355132,
+        "isolatedJump": false
+      },
+      {
+        "time": 15.6,
+        "singleSampleStep": 0.0022324894213615687,
+        "neighbourhoodMaxStep": 0.01135346239277978,
+        "derivativeRms": 0.0042755596224035896,
+        "isolatedJump": false
+      },
+      {
+        "time": 15.600000000000001,
+        "singleSampleStep": 0.0022324894213615687,
+        "neighbourhoodMaxStep": 0.01135346239277978,
+        "derivativeRms": 0.0042755596224035896,
+        "isolatedJump": false
+      },
+      {
+        "time": 16.933333333333334,
+        "singleSampleStep": 0.009673486415720725,
+        "neighbourhoodMaxStep": 0.027766202601928806,
+        "derivativeRms": 0.009006142376090626,
+        "isolatedJump": false
+      },
+      {
+        "time": 17.048333333333332,
+        "singleSampleStep": 0.010333148162323379,
+        "neighbourhoodMaxStep": 0.01959278506221811,
+        "derivativeRms": 0.0075356907010591095,
+        "isolatedJump": false
+      },
+      {
+        "time": 17.113333333333333,
+        "singleSampleStep": 0.003089737265180583,
+        "neighbourhoodMaxStep": 0.017453892856066917,
+        "derivativeRms": 0.00709073431412223,
+        "isolatedJump": false
+      },
+      {
+        "time": 18.45,
+        "singleSampleStep": 0.007278746590973757,
+        "neighbourhoodMaxStep": 0.009327732867939514,
+        "derivativeRms": 0.0029873564762500624,
+        "isolatedJump": false
+      },
+      {
+        "time": 18.599999999999998,
+        "singleSampleStep": 0.013362740211564089,
+        "neighbourhoodMaxStep": 0.015737654718204347,
+        "derivativeRms": 0.0049192390281887965,
+        "isolatedJump": false
+      },
+      {
+        "time": 18.6,
+        "singleSampleStep": 0.013362740211564089,
+        "neighbourhoodMaxStep": 0.015737654718204347,
+        "derivativeRms": 0.0049192390281887965,
+        "isolatedJump": false
+      },
+      {
+        "time": 19.533333333333335,
+        "singleSampleStep": 0.00234224238240038,
+        "neighbourhoodMaxStep": 0.014430955827987351,
+        "derivativeRms": 0.0060202120360375285,
+        "isolatedJump": false
+      },
+      {
+        "time": 19.623333333333335,
+        "singleSampleStep": 0.0021482834651006953,
+        "neighbourhoodMaxStep": 0.011311184225597742,
+        "derivativeRms": 0.0039365586880379345,
+        "isolatedJump": false
+      },
+      {
+        "time": 20.833333333333332,
+        "singleSampleStep": 0.003914152204446019,
+        "neighbourhoodMaxStep": 0.025402803056868845,
+        "derivativeRms": 0.008262163771897547,
+        "isolatedJump": false
+      },
+      {
+        "time": 20.918333333333333,
+        "singleSampleStep": 0.008430348741735658,
+        "neighbourhoodMaxStep": 0.016324138232838757,
+        "derivativeRms": 0.005902396022295724,
+        "isolatedJump": false
+      },
+      {
+        "time": 22,
+        "singleSampleStep": 0.0004512242401089728,
+        "neighbourhoodMaxStep": 0.05343510059177103,
+        "derivativeRms": 0.011870248809790904,
+        "isolatedJump": false
+      },
+      {
+        "time": 22.133333333333333,
+        "singleSampleStep": 0.011364506748951522,
+        "neighbourhoodMaxStep": 0.058931103344389855,
+        "derivativeRms": 0.020532742434608883,
+        "isolatedJump": false
+      },
+      {
+        "time": 22.233333333333334,
+        "singleSampleStep": 0.016179049074770323,
+        "neighbourhoodMaxStep": 0.05000087968805249,
+        "derivativeRms": 0.01855260073881472,
+        "isolatedJump": false
+      },
+      {
+        "time": 23.5,
+        "singleSampleStep": 0.013006836100912259,
+        "neighbourhoodMaxStep": 0.028791593666373273,
+        "derivativeRms": 0.009221860639639468,
+        "isolatedJump": false
+      },
+      {
+        "time": 23.64,
+        "singleSampleStep": 0.012051101808066681,
+        "neighbourhoodMaxStep": 0.022356986440361017,
+        "derivativeRms": 0.00854461857502183,
+        "isolatedJump": false
+      },
+      {
+        "time": 26.07,
+        "singleSampleStep": 0.010667765769408942,
+        "neighbourhoodMaxStep": 0.020388515743496108,
+        "derivativeRms": 0.006892585542079776,
+        "isolatedJump": false
+      },
+      {
+        "time": 26.2,
+        "singleSampleStep": 0.003067056012382075,
+        "neighbourhoodMaxStep": 0.014539463981807587,
+        "derivativeRms": 0.005396568989319332,
+        "isolatedJump": false
+      },
+      {
+        "time": 26.4,
+        "singleSampleStep": 0.00457187910428411,
+        "neighbourhoodMaxStep": 0.011286474296883488,
+        "derivativeRms": 0.004042073124818825,
+        "isolatedJump": false
+      },
+      {
+        "time": 28.49,
+        "singleSampleStep": 0.0004383984344400544,
+        "neighbourhoodMaxStep": 0.026610318461869276,
+        "derivativeRms": 0.00986179356995016,
+        "isolatedJump": false
+      },
+      {
+        "time": 28.599999999999998,
+        "singleSampleStep": 0.006826137570728099,
+        "neighbourhoodMaxStep": 0.02399624851012838,
+        "derivativeRms": 0.009193127119702877,
+        "isolatedJump": false
+      },
+      {
+        "time": 28.6,
+        "singleSampleStep": 0.006826137570728099,
+        "neighbourhoodMaxStep": 0.02399624851012838,
+        "derivativeRms": 0.009193127119702877,
+        "isolatedJump": false
+      },
+      {
+        "time": 29.5,
+        "singleSampleStep": 0.006651588757759577,
+        "neighbourhoodMaxStep": 0.01465816790594584,
+        "derivativeRms": 0.005010466271813555,
+        "isolatedJump": false
+      },
+      {
+        "time": 29.64,
+        "singleSampleStep": 0.0033143268641512534,
+        "neighbourhoodMaxStep": 0.010732117208229574,
+        "derivativeRms": 0.003961737173358695,
+        "isolatedJump": false
+      },
+      {
+        "time": 30.87,
+        "singleSampleStep": 0.004370457482310513,
+        "neighbourhoodMaxStep": 0.02450030095869512,
+        "derivativeRms": 0.009119060512080666,
+        "isolatedJump": false
+      },
+      {
+        "time": 31,
+        "singleSampleStep": 0.011931855963760219,
+        "neighbourhoodMaxStep": 0.023291173523688667,
+        "derivativeRms": 0.008242502285144032,
+        "isolatedJump": false
+      },
+      {
+        "time": 31.2,
+        "singleSampleStep": 0.0032394548814848015,
+        "neighbourhoodMaxStep": 0.01820624425324817,
+        "derivativeRms": 0.00682735278240275,
+        "isolatedJump": false
+      },
+      {
+        "time": 33.49,
+        "singleSampleStep": 0.003381241712703746,
+        "neighbourhoodMaxStep": 0.013848020434677462,
+        "derivativeRms": 0.00493649863767583,
+        "isolatedJump": false
+      },
+      {
+        "time": 33.6,
+        "singleSampleStep": 0.0012174516302927438,
+        "neighbourhoodMaxStep": 0.014696409589952957,
+        "derivativeRms": 0.004390883815428332,
+        "isolatedJump": false
+      },
+      {
+        "time": 33.7,
+        "singleSampleStep": 0.0012064288363294285,
+        "neighbourhoodMaxStep": 0.009392032044682318,
+        "derivativeRms": 0.003490338440571211,
+        "isolatedJump": false
+      },
+      {
+        "time": 36.6,
+        "singleSampleStep": 0.005753972967194975,
+        "neighbourhoodMaxStep": 0.015494116123978026,
+        "derivativeRms": 0.00492342687294994,
+        "isolatedJump": false
+      },
+      {
+        "time": 36.800000000000004,
+        "singleSampleStep": 0.002367164421447473,
+        "neighbourhoodMaxStep": 0.010766108362426481,
+        "derivativeRms": 0.003618760425531128,
+        "isolatedJump": false
+      },
+      {
+        "time": 39.9,
+        "singleSampleStep": 0.004179983838972074,
+        "neighbourhoodMaxStep": 0.012126760267261763,
+        "derivativeRms": 0.004764418327555568,
+        "isolatedJump": false
+      },
+      {
+        "time": 40,
+        "singleSampleStep": 0.0006410438553818107,
+        "neighbourhoodMaxStep": 0.051265696479073405,
+        "derivativeRms": 0.009950197873335906,
+        "isolatedJump": false
+      },
+      {
+        "time": 43.85,
+        "singleSampleStep": 0.007547377991707582,
+        "neighbourhoodMaxStep": 0.007681234244410229,
+        "derivativeRms": 0.0028207173030084013,
+        "isolatedJump": false
+      },
+      {
+        "time": 44,
+        "singleSampleStep": 0.002941631919606979,
+        "neighbourhoodMaxStep": 0.005450027928321535,
+        "derivativeRms": 0.002282389330826743,
+        "isolatedJump": false
+      },
+      {
+        "time": 44.18,
+        "singleSampleStep": 0.00528898387058408,
+        "neighbourhoodMaxStep": 0.007465534153898587,
+        "derivativeRms": 0.003319474605972789,
+        "isolatedJump": false
+      },
+      {
+        "time": 47.88,
+        "singleSampleStep": 0.003091621566777437,
+        "neighbourhoodMaxStep": 0.005002068049956186,
+        "derivativeRms": 0.0018945844536885454,
+        "isolatedJump": false
+      },
+      {
+        "time": 48,
+        "singleSampleStep": 0.00028824748072652363,
+        "neighbourhoodMaxStep": 0.005325214941104874,
+        "derivativeRms": 0.001860798751968152,
+        "isolatedJump": false
+      },
+      {
+        "time": 48.1,
+        "singleSampleStep": 0.000122502874568235,
+        "neighbourhoodMaxStep": 0.0037290928254994585,
+        "derivativeRms": 0.001461023824804962,
+        "isolatedJump": false
+      },
+      {
+        "time": 53,
+        "singleSampleStep": 0.0005636537554122832,
+        "neighbourhoodMaxStep": 0.002500656324813502,
+        "derivativeRms": 0.0009317536989106811,
+        "isolatedJump": false
+      },
+      {
+        "time": 58.75,
+        "singleSampleStep": 0.0006317577900073535,
+        "neighbourhoodMaxStep": 0.004074973953616621,
+        "derivativeRms": 0.0014428294169919521,
+        "isolatedJump": false
+      },
+      {
+        "time": 59.95,
+        "singleSampleStep": 1.2382551744558084e-7,
+        "neighbourhoodMaxStep": 6.191275872279042e-7,
+        "derivativeRms": 1.2174426808537515e-7,
+        "isolatedJump": false
+      }
+    ],
+    "lastStereoPcm": [
+      0,
+      0
+    ]
+  },
+  "silence": {
+    "thresholdDbfs": -55,
+    "minSeconds": 0.06,
+    "events": [
+      {
+        "start": 59.775146,
+        "end": 60
+      }
+    ],
+    "unexpected": [],
+    "allowed": "Only first100ms or terminal decay after59.3s"
+  },
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s24le",
+        "sample_rate": "48000",
+        "channels": 2,
+        "bits_per_sample": 24,
+        "time_base": "1/48000",
+        "duration_ts": 2880000
+      }
+    ],
+    "format": {
+      "duration": "60.000000"
+    }
+  },
+  "fullDecode": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "measurementOnly": {
+    "firstPass": {
+      "input_i": "-17.13",
+      "input_tp": "-2.55",
+      "input_lra": "10.30",
+      "input_thresh": "-27.44",
+      "output_i": "-18.10",
+      "output_tp": "-3.32",
+      "output_lra": "8.40",
+      "output_thresh": "-28.19",
+      "normalization_type": "dynamic",
+      "target_offset": "1.30"
+    },
+    "finalPass": {
+      "input_i": "-16.79",
+      "input_tp": "-2.22",
+      "input_lra": "10.30",
+      "input_thresh": "-27.10",
+      "output_i": "-18.10",
+      "output_tp": "-3.33",
+      "output_lra": "8.40",
+      "output_thresh": "-28.20",
+      "normalization_type": "dynamic",
+      "target_offset": "1.30"
+    },
+    "processedOutputSaved": false
+  },
+  "checks": {
+    "sourceAndOldQaUnchanged": true,
+    "sourceMatchesOriginalQa": true,
+    "exactSamples": true,
+    "exact60seconds": true,
+    "pcm48kStereo24": true,
+    "fullDecode": true,
+    "truePeakHeadroom": true,
+    "integratedRangeReasonable": true,
+    "noClip": true,
+    "noUnexpectedSilence": true,
+    "noIsolatedEditJump": true,
+    "ctaNoAddedFx": true,
+    "ctaOriginalFadeAndCadencePreserved": true,
+    "sampleTimingPreserved": true,
+    "noFxAfter53": true,
+    "lastSamplesZero": true
+  },
+  "verificationScope": {
+    "fullWavDecoded": true,
+    "numericBoundaryScreen": true,
+    "directWholeAudition": false,
+    "perceptualClickFreeClaim": false,
+    "finalAacMeasured": false,
+    "finalMp4": "Separate native export by root required"
+  },
+  "reproduce": "node source/audio-v2.mjs"
+}
