@@ -1,0 +1,64 @@
+{
+  "sourceDimensions": [
+    750,
+    1334
+  ],
+  "originals": {
+    "before": {
+      "sha256": "06c7f0eb605576e5d522e07a096e9b99746556e1b14d2eee957eb4d399485850",
+      "crop": [
+        30,
+        340,
+        690,
+        340
+      ]
+    },
+    "after": {
+      "sha256": "475b1c46def0afb608d2ca69a2b6b3c05c1eb0b7d1708946aa7d31448d88a1e5",
+      "crop": [
+        40,
+        590,
+        670,
+        530
+      ]
+    },
+    "optional": {
+      "sha256": "475b1c46def0afb608d2ca69a2b6b3c05c1eb0b7d1708946aa7d31448d88a1e5",
+      "crop": [
+        40,
+        890,
+        670,
+        230
+      ]
+    }
+  },
+  "cropOnlyNoRetouch": true,
+  "recipientHeadersExcluded": true,
+  "files": [
+    {
+      "file": "media/before-ui.png",
+      "sha256": "81a065ee307d6e81e94313398d6f9a224541d4a3b7ab0cca45a5a1f576d8c663"
+    },
+    {
+      "file": "media/after-ui.png",
+      "sha256": "a8dfe11652bc54dddd5e3b8e240669b3afe5b6c170620bb76db69e9635164715"
+    },
+    {
+      "file": "media/optional-ui.png",
+      "sha256": "7c8abc04fddc23c6c7dbd0659d63eb086b26b2360396a01031ec22ffd3ac5c63"
+    },
+    {
+      "file": "media/before-card.png",
+      "sha256": "47b6802c35dea315543ee78b7a3fd3800c7b4f59a692e7a6301644c236bfc4c9"
+    },
+    {
+      "file": "media/after-card.png",
+      "sha256": "e2f481ffb73a3394e18db6b5eb080463df1ab71c22f5cb3e4d5e70cd2aaf2cca"
+    },
+    {
+      "file": "media/optional-card.png",
+      "sha256": "0823fecda9fd5ae2c6134f6365333ddc33d4f3d67a49f75abe2d47b70548a6e9"
+    }
+  ],
+  "oldR4bVideoUsed": false
+}

@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "photocraft-cli.exe",
+  "args": [
+    "run",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\missyou-160-qa\\missyou-160-screens-r7fi2\\0C6E890A-1F2A-438F-AE64-89A508F7F538.png",
+    "--cmd",
+    "image.crop",
+    "--params",
+    "{\"x\":30,\"y\":340,\"width\":690,\"height\":340,\"deleteCroppedPixels\":true,\"contentAware\":false}",
+    "--out",
+    "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-100-photocraft\\before-ui.png",
+    "--format",
+    "png"
+  ],
+  "stdout": "{\"command\":\"image.crop\",\"result\":{\"documentHeight\":340,\"documentWidth\":690,\"height\":340,\"resolution\":72.0,\"width\":690,\"x\":30,\"y\":340}}\n",
+  "stderr": ""
+}

@@ -1,0 +1,28 @@
+{
+  "exit": 0,
+  "stdout": "Native Core rendered 30 frames / 9.6137874s\r\nNative Core rendered 60 frames / 18.7390461s\r\nNative Core rendered 90 frames / 28.1006591s\r\nNative Core rendered 120 frames / 37.1548369s\r\nNative Core rendered 150 frames / 47.2439067s\r\nNative Core rendered 180 frames / 57.0667201s\r\nNative Core rendered 210 frames / 66.6373459s\r\nNative Core rendered 240 frames / 76.0408898s\r\nNative Core rendered 270 frames / 86.7998934s\r\nNative Core rendered 300 frames / 97.160644s\r\nNative Core rendered 330 frames / 108.385132s\r\nNative Core rendered 360 frames / 119.7705597s\r\nNative Core rendered 390 frames / 130.6196212s\r\nNative Core rendered 420 frames / 141.1237559s\r\nNative Core rendered 450 frames / 151.2801779s\r\nNative Core rendered 480 frames / 161.7261554s\r\nNative Core rendered 510 frames / 172.8789378s\r\nNative Core rendered 540 frames / 184.138445s\r\nNative Core rendered 570 frames / 194.3628829s\r\nNative Core rendered 600 frames / 204.8622759s\r\nNative Core rendered 630 frames / 216.0026031s\r\nNative Core rendered 660 frames / 227.5026103s\r\nRendered 660 true Core frames, 600x780, no physics simulation; Core=06.00.0513 (100663809)\r\n",
+  "frames": 660,
+  "fps": 30,
+  "duration": 22,
+  "mocSha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e",
+  "model3Sha256": "26f678bc97701a1e0958f3a82569e0efa36e260c1a8551222deb873bfb254c39",
+  "atlas": [
+    {
+      "file": "texture_00.png",
+      "sha256": "30efeaa8148d55ca0042cfd3d741f499d479f9034bf7985d248360e66e559f73"
+    },
+    {
+      "file": "texture_01.png",
+      "sha256": "c09bd43ef3d9f02acc8ccdc12d46ba72a750de21aa07a7627fc6a8f04321e26a"
+    }
+  ],
+  "coreJarSha256": "5458a64ebe33b38350de1437399343b0d502f2353a34a97da76d56d118c0d186",
+  "coreNativeSha256": "71d5757025cd31c61be0d52ad79d4cd0de0465e1df6c4508c4fde70207613985",
+  "rendererSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+  "mouthClosed": false,
+  "narrationSha256": "2f0883b5b4b43e148f06e40d208770b911fd128612024b48697c8e443acd9e60",
+  "rawSdkBundled": false,
+  "rawModelBundled": false,
+  "physics": false,
+  "tracking": false
+}

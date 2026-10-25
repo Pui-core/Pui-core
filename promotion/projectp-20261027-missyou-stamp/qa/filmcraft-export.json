@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-100\\promotion\\projectp-20261027-missyou-stamp\\projects\\missyou-stamp.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-100\\\\promotion\\\\projectp-20261027-missyou-stamp\\\\videos\\\\missyou-stamp.mp4\",\"format\":\"h264\",\"audio\":true,\"audioCodec\":\"aac\",\"bitrateMode\":\"crf\",\"crf\":17,\"hardwareEncoding\":\"off\",\"gpuRendering\":\"off\",\"wait\":true}"
+  ],
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-100\\\\promotion\\\\projectp-20261027-missyou-stamp\\\\videos\\\\missyou-stamp.mp4\",\n  \"result\": {\n    \"bytes\": 2820890,\n    \"frames\": 660,\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-100\\\\promotion\\\\projectp-20261027-missyou-stamp\\\\videos\\\\missyou-stamp.mp4\",\n    \"render_fps\": 56.302893529394225,\n    \"seconds\": 11.7223105\n  }\n}\n",
+  "stderr": ""
+}
