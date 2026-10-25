@@ -1,0 +1,223 @@
+{
+  "status": "PASS_NATIVE_ROUNDTRIP_AND_CENTER_3X4_TEXT_BOUNDS",
+  "issue": 94,
+  "fix": "Native TikTok profile crop cut the old orange subtitle; safe version moves footer and author inward and omits redundant small footer disclosure.",
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "centerCrop": {
+    "x": 0,
+    "y": 240,
+    "width": 1080,
+    "height": 1440
+  },
+  "requiredTextVerticalRange": [
+    240,
+    1640
+  ],
+  "text": [
+    {
+      "name": "Game subtitle",
+      "text": "灰の灯  /  制作、本格化。",
+      "bounds": [
+        97,
+        1558,
+        422,
+        39
+      ]
+    },
+    {
+      "name": "Game title",
+      "text": "EMBERWAKE",
+      "bounds": [
+        99,
+        1458,
+        520,
+        58
+      ]
+    },
+    {
+      "name": "Premise",
+      "text": "同じコース。次は、もっと速く。",
+      "bounds": [
+        127,
+        549,
+        417,
+        28
+      ]
+    },
+    {
+      "name": "Hook line two",
+      "text": "何秒縮める？",
+      "bounds": [
+        119,
+        421,
+        485,
+        78
+      ]
+    },
+    {
+      "name": "Hook line one",
+      "text": "その一手で、",
+      "bounds": [
+        126,
+        321,
+        406,
+        69
+      ]
+    },
+    {
+      "name": "Author",
+      "text": "PROJECT P  /  ぷい",
+      "bounds": [
+        129,
+        272,
+        255,
+        30
+      ]
+    }
+  ],
+  "sourceScreenshot": "CTO actual TikTok cover editor, only cover image region retained",
+  "beforeEvidenceSha256": "3d2de561629c968f05b93e93bd96efd127c42c3c4813aa5e0f7f8b1ad3df764d",
+  "sourceCoverPreserved": {
+    "native": "7838c7223d41bde6565b4ed922d24a5030193b99a43470f27b7fa8cd9ccb65b5",
+    "png": "b080bd9b38e0906339eca540912c5d950453e5cce104fad034e2387a2ab0d763"
+  },
+  "newCover": {
+    "file": "covers/emberwake-cover-tiktok-safe.png",
+    "sha256": "33d29dd5dd96b635a018f74c52002b9a5677bbb6db920ccf4112578cda0b2749",
+    "nativeFile": "covers/emberwake-cover-tiktok-safe.pcraft",
+    "nativeSha256": "d98a9d8d318f94fe90a16a185fb4fd68be15df50a3ac24dd8e7b727dbf50cdd7"
+  },
+  "nativeReopenedFromDelivery": true,
+  "nativeReexportIdentical": true,
+  "noGenerativeImageProcessing": true,
+  "videos": [
+    {
+      "file": "videos/emberwake-voice-sfx-no-music.mp4",
+      "sha256": "bc3695e56dd530e5c7b5538de42072a83715272642af3d06efb2ee5986c6f4bb",
+      "changed": false
+    },
+    {
+      "file": "videos/emberwake-sfx-only.mp4",
+      "sha256": "8a95bb26398dd7304893d922e2db034c2daec43fe77208864ea59c8f55d977a5",
+      "changed": false
+    },
+    {
+      "file": "videos/emberwake-picture-silent.mp4",
+      "sha256": "96b394707a38dd8c0f52a0d874b389ccf3b503200a41c6dec54f3f8608f90cb5",
+      "changed": false
+    }
+  ],
+  "receipts": [
+    {
+      "args": [
+        "info",
+        "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94-safe\\promotion\\projectp-tiktok-launch-20261025\\covers\\emberwake-cover.pcraft",
+        "--compact"
+      ],
+      "exit": 0,
+      "stdout": "{\"activeLayer\":17,\"channels\":{\"alpha\":[],\"colors\":[{\"name\":\"Red\",\"visible\":true},{\"name\":\"Green\",\"visible\":true},{\"name\":\"Blue\",\"visible\":true}],\"composite\":\"RGB\",\"compositeVisible\":true,\"layerMaskView\":null,\"quickMask\":null,\"target\":{\"kind\":\"composite\"}},\"depth\":8,\"file\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-94-safe\\\\promotion\\\\projectp-tiktok-launch-20261025\\\\covers\\\\emberwake-cover.pcraft\",\"hasSelection\":false,\"height\":1920,\"historySource\":{\"label\":\"Open\",\"state\":0},\"isolatedLayers\":[],\"lastAppliedComp\":null,\"layerComps\":[],\"layerMaskView\":null,\"layers\":[{\"blend\":\"Normal\",\"bounds\":[98,1736,371,25],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":17,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Source disclosure\",\"opacity\":1.0,\"selected\":true,\"text\":{\"font\":\"Meiryo\",\"sizePt\":23.0,\"text\":\"開発中の実ゲーム映像 / 探索モード\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[97,1648,422,39],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":16,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Game subtitle\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":37.0,\"text\":\"灰の灯  /  制作、本格化。\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[99,1555,520,58],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":15,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Game title\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":77.0,\"text\":\"EMBERWAKE\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[127,549,417,28],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":14,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Premise\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":29.0,\"text\":\"同じコース。次は、もっと速く。\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[119,421,485,78],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":13,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Hook line two\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":84.0,\"text\":\"何秒縮める？\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[126,321,406,69],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":12,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Hook line one\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":76.0,\"text\":\"その一手で、\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[129,248,255,30],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":11,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Author\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":28.0,\"text\":\"PROJECT P  /  ぷい\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[90,263,10,225],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":10,\"kind\":\"Shape\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Gold rule\",\"opacity\":1.0,\"selected\":false,\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[0,1515,1080,405],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":9,\"kind\":\"Shape\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Lower caption field\",\"opacity\":1.0,\"selected\":false,\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[0,0,1080,680],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":8,\"kind\":\"Shape\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Quiet title field\",\"opacity\":1.0,\"selected\":false,\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[-465,435,2151,1210],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":7,\"kind\":\"Smart Object\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"frame-000238\",\"opacity\":1.0,\"selected\":false,\"smartContents\":{\"id\":6,\"instances\":1},\"smartFilters\":[],\"smartFiltersEnabled\":true,\"smartSource\":{\"fileName\":\"frame-000238.png\",\"kind\":\"embedded\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[0,0,1080,1920],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":3,\"kind\":\"Shape\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Deep teal field\",\"opacity\":1.0,\"selected\":false,\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[0,0,1080,1920],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":2,\"kind\":\"Pixel\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Background\",\"opacity\":1.0,\"selected\":false,\"vectorMaskEnabled\":null,\"visible\":true}],\"measurement\":{\"count\":0,\"countGroups\":0,\"ruler\":null,\"scale\":\"1 pixels = 1.0000 pixels\"},\"mode\":\"Rgb\",\"name\":\"emberwake-cover.pcraft\",\"notes\":[],\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-94-safe\\\\promotion\\\\projectp-tiktok-launch-20261025\\\\covers\\\\emberwake-cover.pcraft\",\"quickMask\":false,\"resolution\":72.0,\"selectedLayers\":[17],\"selectionBounds\":null,\"snapshots\":[],\"symmetry\":null,\"timeline\":null,\"variables\":null,\"warnings\":[],\"width\":1080}\n"
+    },
+    {
+      "args": [
+        "run",
+        "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94-safe\\promotion\\projectp-tiktok-launch-20261025\\covers\\emberwake-cover.pcraft",
+        "--cmd",
+        "shape.edit",
+        "--params",
+        "{\"layer\":9,\"rect\":[0,1430,1080,490]}",
+        "--cmd",
+        "type.edit",
+        "--params",
+        "{\"layer\":15,\"point\":[94,1515]}",
+        "--cmd",
+        "type.edit",
+        "--params",
+        "{\"layer\":16,\"point\":[98,1590]}",
+        "--cmd",
+        "type.edit",
+        "--params",
+        "{\"layer\":11,\"move\":[0,24]}",
+        "--cmd",
+        "layer.delete",
+        "--params",
+        "{\"layer\":17}",
+        "--out",
+        "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-94-tiktok-safe-cover\\emberwake-cover-tiktok-safe.pcraft"
+      ],
+      "exit": 0,
+      "stdout": "{\"command\":\"shape.edit\",\"result\":{\"bounds\":[0,1430,1080,490],\"fill\":\"#08151e\",\"kind\":\"rect\",\"layer\":9,\"live\":{\"kind\":\"rect\",\"radii\":[0.0,0.0,0.0,0.0],\"rect\":[0.0,1430.0,1080.0,490.0]},\"name\":\"Lower caption field\",\"path\":{\"fillRule\":\"nonzero\",\"inverted\":false,\"subpaths\":[{\"closed\":true,\"knots\":[{\"anchor\":[0.0,1430.0],\"in\":[0.0,1430.0],\"out\":[0.0,1430.0],\"smooth\":false},{\"anchor\":[1080.0,1430.0],\"in\":[1080.0,1430.0],\"out\":[1080.0,1430.0],\"smooth\":false},{\"anchor\":[1080.0,1920.0],\"in\":[1080.0,1920.0],\"out\":[1080.0,1920.0],\"smooth\":false},{\"anchor\":[0.0,1920.0],\"in\":[0.0,1920.0],\"out\":[0.0,1920.0],\"smooth\":false}],\"op\":\"combine\"}]},\"stroke\":null}}\n{\"command\":\"type.edit\",\"result\":{\"antialias\":\"Smooth\",\"bounds\":[99,1458,619,1516],\"layer\":15,\"lines\":[{\"ascent\":81.62451171875,\"baseline\":0.0,\"descent\":33.87548828125,\"end\":9,\"start\":0,\"x0\":0.0,\"x1\":527.75830078125}],\"orientation\":\"Horizontal\",\"paragraphs\":[{\"end\":9,\"start\":0,\"style\":{\"align\":\"Left\",\"auto_leading\":1.2000000476837158,\"direction\":\"Auto\",\"end_indent_pt\":0.0,\"first_line_indent_pt\":0.0,\"hyphenate\":false,\"space_after_pt\":0.0,\"space_before_pt\":0.0,\"start_indent_pt\":0.0}}],\"pxPerPt\":1.0,\"runs\":[{\"end\":9,\"start\":0,\"style\":{\"baseline\":\"Normal\",\"baseline_shift_pt\":0.0,\"caps\":\"Normal\",\"color\":{\"alpha\":1.0,\"c\":[0.9529411792755127,0.9058823585510254,0.7921568751335144,0.0],\"mode\":\"Rgb\"},\"discretionary_ligatures\":false,\"faux_bold\":false,\"faux_italic\":false,\"features\":[],\"font_family\":\"Meiryo\",\"font_style\":\"\",\"horizontal_scale\":1.0,\"italic\":false,\"kern\":0.0,\"kerning\":\"Metrics\",\"language\":null,\"leading_pt\":null,\"ligatures\":true,\"postscript_name\":\"Meiryo-Bold\",\"size_pt\":77.0,\"strikethrough\":false,\"tracking\":0.0,\"underline\":false,\"variations\":[],\"vertical_scale\":1.0,\"weight\":700}}],\"shape\":\"Point\",\"text\":\"EMBERWAKE\",\"transform\":[1.0,0.0,0.0,1.0,94.0,1515.0],\"warp\":null}}\n{\"command\":\"type.edit\",\"result\":{\"antialias\":\"Smooth\",\"bounds\":[97,1558,519,1597],\"layer\":16,\"lines\":[{\"ascent\":39.22216796875,\"baseline\":0.0,\"descent\":16.27783203125,\"end\":15,\"start\":0,\"x0\":0.0,\"x1\":441.12744140625}],\"orientation\":\"Horizontal\",\"paragraphs\":[{\"end\":15,\"start\":0,\"style\":{\"align\":\"Left\",\"auto_leading\":1.2000000476837158,\"direction\":\"Auto\",\"end_indent_pt\":0.0,\"first_line_indent_pt\":0.0,\"hyphenate\":false,\"space_after_pt\":0.0,\"space_before_pt\":0.0,\"start_indent_pt\":0.0}}],\"pxPerPt\":1.0,\"runs\":[{\"end\":15,\"start\":0,\"style\":{\"baseline\":\"Normal\",\"baseline_shift_pt\":0.0,\"caps\":\"Normal\",\"color\":{\"alpha\":1.0,\"c\":[0.929411768913269,0.7058823704719543,0.40784314274787903,0.0],\"mode\":\"Rgb\"},\"discretionary_ligatures\":false,\"faux_bold\":false,\"faux_italic\":false,\"features\":[],\"font_family\":\"Meiryo\",\"font_style\":\"\",\"horizontal_scale\":1.0,\"italic\":false,\"kern\":0.0,\"kerning\":\"Metrics\",\"language\":null,\"leading_pt\":null,\"ligatures\":true,\"postscript_name\":\"Meiryo-Bold\",\"size_pt\":37.0,\"strikethrough\":false,\"tracking\":0.0,\"underline\":false,\"variations\":[],\"vertical_scale\":1.0,\"weight\":700}}],\"shape\":\"Point\",\"text\":\"灰の灯  /  制作、本格化。\",\"transform\":[1.0,0.0,0.0,1.0,98.0,1590.0],\"warp\":null}}\n{\"command\":\"type.edit\",\"result\":{\"antialias\":\"Smooth\",\"bounds\":[129,272,384,302],\"layer\":11,\"lines\":[{\"ascent\":29.681640625,\"baseline\":0.0,\"descent\":12.318359375,\"end\":16,\"start\":0,\"x0\":0.0,\"x1\":256.142578125}],\"orientation\":\"Horizontal\",\"paragraphs\":[{\"end\":16,\"start\":0,\"style\":{\"align\":\"Left\",\"auto_leading\":1.2000000476837158,\"direction\":\"Auto\",\"end_indent_pt\":0.0,\"first_line_indent_pt\":0.0,\"hyphenate\":false,\"space_after_pt\":0.0,\"space_before_pt\":0.0,\"start_indent_pt\":0.0}}],\"pxPerPt\":1.0,\"runs\":[{\"end\":16,\"start\":0,\"style\":{\"baseline\":\"Normal\",\"baseline_shift_pt\":0.0,\"caps\":\"Normal\",\"color\":{\"alpha\":1.0,\"c\":[0.658823549747467,0.7490196228027344,0.7568627595901489,0.0],\"mode\":\"Rgb\"},\"discretionary_ligatures\":false,\"faux_bold\":false,\"faux_italic\":false,\"features\":[],\"font_family\":\"Meiryo\",\"font_style\":\"\",\"horizontal_scale\":1.0,\"italic\":false,\"kern\":0.0,\"kerning\":\"Metrics\",\"language\":null,\"leading_pt\":null,\"ligatures\":true,\"postscript_name\":\"Meiryo\",\"size_pt\":28.0,\"strikethrough\":false,\"tracking\":0.0,\"underline\":false,\"variations\":[],\"vertical_scale\":1.0,\"weight\":400}}],\"shape\":\"Point\",\"text\":\"PROJECT P  /  ぷい\",\"transform\":[1.0,0.0,0.0,1.0,128.0,296.0],\"warp\":null}}\n{\"command\":\"layer.delete\",\"result\":null}\n"
+    },
+    {
+      "args": [
+        "convert",
+        "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-94-tiktok-safe-cover\\emberwake-cover-tiktok-safe.pcraft",
+        "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-94-tiktok-safe-cover\\emberwake-cover-tiktok-safe.png",
+        "--format",
+        "png"
+      ],
+      "exit": 0,
+      "stdout": ""
+    },
+    {
+      "args": [
+        "info",
+        "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-94-tiktok-safe-cover\\emberwake-cover-tiktok-safe.pcraft",
+        "--compact"
+      ],
+      "exit": 0,
+      "stdout": "{\"activeLayer\":16,\"channels\":{\"alpha\":[],\"colors\":[{\"name\":\"Red\",\"visible\":true},{\"name\":\"Green\",\"visible\":true},{\"name\":\"Blue\",\"visible\":true}],\"composite\":\"RGB\",\"compositeVisible\":true,\"layerMaskView\":null,\"quickMask\":null,\"target\":{\"kind\":\"composite\"}},\"depth\":8,\"file\":\"C:\\\\Users\\\\pui\\\\AppData\\\\Local\\\\Temp\\\\projectp-94-tiktok-safe-cover\\\\emberwake-cover-tiktok-safe.pcraft\",\"hasSelection\":false,\"height\":1920,\"historySource\":{\"label\":\"Open\",\"state\":0},\"isolatedLayers\":[],\"lastAppliedComp\":null,\"layerComps\":[],\"layerMaskView\":null,\"layers\":[{\"blend\":\"Normal\",\"bounds\":[97,1558,422,39],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":16,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Game subtitle\",\"opacity\":1.0,\"selected\":true,\"text\":{\"font\":\"Meiryo\",\"sizePt\":37.0,\"text\":\"灰の灯  /  制作、本格化。\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[99,1458,520,58],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":15,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Game title\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":77.0,\"text\":\"EMBERWAKE\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[127,549,417,28],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":14,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Premise\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":29.0,\"text\":\"同じコース。次は、もっと速く。\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[119,421,485,78],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":13,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Hook line two\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":84.0,\"text\":\"何秒縮める？\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[126,321,406,69],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":12,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Hook line one\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":76.0,\"text\":\"その一手で、\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[129,272,255,30],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":11,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Author\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":28.0,\"text\":\"PROJECT P  /  ぷい\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[90,263,10,225],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":10,\"kind\":\"Shape\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Gold rule\",\"opacity\":1.0,\"selected\":false,\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[0,1430,1080,490],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":9,\"kind\":\"Shape\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Lower caption field\",\"opacity\":1.0,\"selected\":false,\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[0,0,1080,680],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":8,\"kind\":\"Shape\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Quiet title field\",\"opacity\":1.0,\"selected\":false,\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[-465,435,2151,1210],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":7,\"kind\":\"Smart Object\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"frame-000238\",\"opacity\":1.0,\"selected\":false,\"smartContents\":{\"id\":6,\"instances\":1},\"smartFilters\":[],\"smartFiltersEnabled\":true,\"smartSource\":{\"fileName\":\"frame-000238.png\",\"kind\":\"embedded\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[0,0,1080,1920],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":3,\"kind\":\"Shape\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Deep teal field\",\"opacity\":1.0,\"selected\":false,\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[0,0,1080,1920],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":2,\"kind\":\"Pixel\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Background\",\"opacity\":1.0,\"selected\":false,\"vectorMaskEnabled\":null,\"visible\":true}],\"measurement\":{\"count\":0,\"countGroups\":0,\"ruler\":null,\"scale\":\"1 pixels = 1.0000 pixels\"},\"mode\":\"Rgb\",\"name\":\"emberwake-cover-tiktok-safe.pcraft\",\"notes\":[],\"path\":\"C:\\\\Users\\\\pui\\\\AppData\\\\Local\\\\Temp\\\\projectp-94-tiktok-safe-cover\\\\emberwake-cover-tiktok-safe.pcraft\",\"quickMask\":false,\"resolution\":72.0,\"selectedLayers\":[16],\"selectionBounds\":null,\"snapshots\":[],\"symmetry\":null,\"timeline\":null,\"variables\":null,\"warnings\":[],\"width\":1080}\n"
+    },
+    {
+      "args": [
+        "run",
+        "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-94-tiktok-safe-cover\\emberwake-cover-tiktok-safe.png",
+        "--cmd",
+        "image.crop",
+        "--params",
+        "{\"x\":0,\"y\":240,\"width\":1080,\"height\":1440,\"deleteCroppedPixels\":true,\"contentAware\":false}",
+        "--out",
+        "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-94-tiktok-safe-cover\\cover-safe-center-3x4.png",
+        "--format",
+        "png"
+      ],
+      "exit": 0,
+      "stdout": "{\"command\":\"image.crop\",\"result\":{\"documentHeight\":1440,\"documentWidth\":1080,\"height\":1440,\"resolution\":72.0,\"width\":1080,\"x\":0,\"y\":240}}\n"
+    },
+    {
+      "args": [
+        "run",
+        "F:\\Videos\\ProjectP-TikTok-Launch-2026-10-25\\covers\\emberwake-cover-tiktok-safe.pcraft",
+        "--out",
+        "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-94-tiktok-safe-cover\\safe-delivery-reopened.pcraft"
+      ],
+      "exit": 0,
+      "stdout": ""
+    },
+    {
+      "args": [
+        "convert",
+        "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-94-tiktok-safe-cover\\safe-delivery-reopened.pcraft",
+        "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-94-tiktok-safe-cover\\safe-delivery-reopened.png",
+        "--format",
+        "png"
+      ],
+      "exit": 0,
+      "stdout": ""
+    }
+  ],
+  "scope": {
+    "directCoverImageViewed": true,
+    "actualNewTikTokPreview": false,
+    "videoOrAudioEdited": false,
+    "publication": false,
+    "directCenter3x4ImageViewed": true
+  },
+  "visualObservations": [
+    "主役・フック・作者名・作品名・橙副題が見える",
+    "副題下端1597px、必須文字安全域1640px以内",
+    "旧実TikTok画像の副題切れをカバー部分の切り出しで確認"
+  ]
+}
