@@ -1,0 +1,18 @@
+{
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\projects\\visual-source.ecproj",
+    "render-frame",
+    "--comp",
+    "EMBERWAKE RTA V2",
+    "--time",
+    "14",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\qa\\effectcraft-reopened.png",
+    "--json"
+  ],
+  "exit": 0,
+  "stdout": "{\"comp\":307,\"height\":1920,\"ms\":296.5,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-94\\\\promotion\\\\projectp-tiktok-launch-20261025\\\\qa\\\\effectcraft-reopened.png\",\"time\":14.0,\"width\":1080}\n",
+  "stderr": ""
+}

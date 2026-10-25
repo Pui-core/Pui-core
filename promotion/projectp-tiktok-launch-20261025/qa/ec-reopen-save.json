@@ -1,0 +1,17 @@
+{
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\projects\\visual-source.ecproj",
+    "--save",
+    "run",
+    "footage.check",
+    "{\"wait\":true}",
+    "footage.missing",
+    "{}",
+    "--json"
+  ],
+  "exit": 0,
+  "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":7,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-94\\\\promotion\\\\projectp-tiktok-launch-20261025\\\\projects\\\\visual-source.ecproj\"}\n",
+  "stderr": ""
+}

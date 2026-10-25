@@ -1,0 +1,79 @@
+{
+  "status": "PASS_AAC_NUMERIC_TIMING_WITHIN_ONE_VIDEO_FRAME",
+  "method": "Normalized waveform cross correlation on three separate windows per AAC output; ±1600 samples, 4-sample lag steps, 16-sample signal steps.",
+  "sampleRate": 48000,
+  "fps": 30,
+  "results": [
+    {
+      "video": "emberwake-voice-sfx-no-music",
+      "window": [
+        0.1,
+        2.3
+      ],
+      "correlation": 0.9999188219211208,
+      "lagSamples": 1024,
+      "lagSeconds": 0.021333333333333333,
+      "lagFrames": 0.64
+    },
+    {
+      "video": "emberwake-voice-sfx-no-music",
+      "window": [
+        9.9,
+        12.3
+      ],
+      "correlation": 0.999949677643438,
+      "lagSamples": 1024,
+      "lagSeconds": 0.021333333333333333,
+      "lagFrames": 0.64
+    },
+    {
+      "video": "emberwake-voice-sfx-no-music",
+      "window": [
+        53.9,
+        56.8
+      ],
+      "correlation": 0.9999611090737021,
+      "lagSamples": 1024,
+      "lagSeconds": 0.021333333333333333,
+      "lagFrames": 0.64
+    },
+    {
+      "video": "emberwake-sfx-only",
+      "window": [
+        0,
+        1.7
+      ],
+      "correlation": 0.9999935901038479,
+      "lagSamples": 1024,
+      "lagSeconds": 0.021333333333333333,
+      "lagFrames": 0.64
+    },
+    {
+      "video": "emberwake-sfx-only",
+      "window": [
+        9.6,
+        10.1
+      ],
+      "correlation": 0.9985949024451034,
+      "lagSamples": 1024,
+      "lagSeconds": 0.021333333333333333,
+      "lagFrames": 0.64
+    },
+    {
+      "video": "emberwake-sfx-only",
+      "window": [
+        31,
+        31.4
+      ],
+      "correlation": 0.999999925993189,
+      "lagSamples": 1024,
+      "lagSeconds": 0.021333333333333333,
+      "lagFrames": 0.64
+    }
+  ],
+  "scope": {
+    "numericTimingOnly": true,
+    "directWholeAudition": false,
+    "popularSongSync": false
+  }
+}

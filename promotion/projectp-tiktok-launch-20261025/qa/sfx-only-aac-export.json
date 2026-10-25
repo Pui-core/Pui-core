@@ -1,0 +1,14 @@
+{
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\projects\\sfx-only.fcproj",
+    "export",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\media\\sfx-filmcraft.aac",
+    "--format",
+    "aac"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-94\\\\promotion\\\\projectp-tiktok-launch-20261025\\\\media\\\\sfx-filmcraft.aac\",\n  \"result\": {\n    \"bytes\": 2420130,\n    \"frames\": 2880000,\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-94\\\\promotion\\\\projectp-tiktok-launch-20261025\\\\media\\\\sfx-filmcraft.aac\",\n    \"render_fps\": 2523673.6802303903,\n    \"seconds\": 1.1411935\n  }\n}\n",
+  "stderr": "exported \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\media\\sfx-filmcraft.aac in 1.1s\n"
+}

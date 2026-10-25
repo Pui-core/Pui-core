@@ -1,0 +1,16 @@
+{
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\projects\\sfx-only.fcproj",
+    "--save",
+    "render",
+    "--seconds",
+    "14",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\qa\\sfx-only-reopened.png"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "rendered 1080x1920 in 459.8 ms → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-94\\promotion\\projectp-tiktok-launch-20261025\\qa\\sfx-only-reopened.png\n"
+}
