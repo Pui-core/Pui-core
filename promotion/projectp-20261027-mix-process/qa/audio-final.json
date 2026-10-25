@@ -1,0 +1,67 @@
+{
+  "status": "PASS_TECHNICAL_SAME_SOURCE_GAIN_ENVELOPE_REPEATS_AND_AAC_ALIGNMENT",
+  "sync": [
+    {
+      "label": "A",
+      "round": 1,
+      "start": 2.4,
+      "end": 6.3,
+      "lagSamples": 0,
+      "correlation": 0.9993972387653931,
+      "gainDb": -0.01772712938169704
+    },
+    {
+      "label": "B",
+      "round": 1,
+      "start": 7,
+      "end": 10.9,
+      "lagSamples": 0,
+      "correlation": 0.9992770115349319,
+      "gainDb": -0.012308764861212322
+    },
+    {
+      "label": "A",
+      "round": 2,
+      "start": 11.6,
+      "end": 15.5,
+      "lagSamples": 0,
+      "correlation": 0.9992664349810316,
+      "gainDb": -0.0062118201208956
+    },
+    {
+      "label": "B",
+      "round": 2,
+      "start": 16.2,
+      "end": 20.1,
+      "lagSamples": 0,
+      "correlation": 0.9994140938030375,
+      "gainDb": -0.02259275215282092
+    }
+  ],
+  "repeats": [
+    {
+      "label": "A",
+      "pcmIdentical": true
+    },
+    {
+      "label": "B",
+      "pcmIdentical": true
+    }
+  ],
+  "levels": {
+    "integratedLufs": -13.7,
+    "truePeakDbfs": -2
+  },
+  "sourceStart": 21.3,
+  "sourceEnd": 25.2,
+  "fadeInSource": [
+    21.3,
+    21.4
+  ],
+  "fadeOutSource": [
+    25.19,
+    25.2
+  ],
+  "wholeSubjectiveAudition": false,
+  "noOtherAudio": true
+}

@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-99\\promotion\\projectp-20261027-mix-process\\projects\\mix-process.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-99\\\\promotion\\\\projectp-20261027-mix-process\\\\videos\\\\mix-process.mp4\",\"format\":\"h264\",\"audio\":true,\"audioCodec\":\"aac\",\"bitrateMode\":\"crf\",\"crf\":17,\"hardwareEncoding\":\"off\",\"gpuRendering\":\"off\",\"wait\":true}"
+  ],
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-99\\\\promotion\\\\projectp-20261027-mix-process\\\\videos\\\\mix-process.mp4\",\n  \"result\": {\n    \"bytes\": 3541911,\n    \"frames\": 693,\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-99\\\\promotion\\\\projectp-20261027-mix-process\\\\videos\\\\mix-process.mp4\",\n    \"render_fps\": 45.877351316866665,\n    \"seconds\": 15.1054928\n  }\n}\n",
+  "stderr": ""
+}

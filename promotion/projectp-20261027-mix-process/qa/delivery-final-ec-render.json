@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-Mix-Process-2026-10-27\\revision-01-live2d\\projects\\mix-process.ecproj",
+    "render-frame",
+    "--comp",
+    "ProjectP Mix Process",
+    "--time",
+    "6",
+    "--out",
+    "F:\\Videos\\ProjectP-Mix-Process-2026-10-27\\revision-01-live2d\\qa\\delivery-effectcraft.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":97,\"height\":1920,\"ms\":92.6,\"path\":\"F:\\\\Videos\\\\ProjectP-Mix-Process-2026-10-27\\\\revision-01-live2d\\\\qa\\\\delivery-effectcraft.png\",\"time\":6.0,\"width\":1080}\n",
+  "stderr": ""
+}

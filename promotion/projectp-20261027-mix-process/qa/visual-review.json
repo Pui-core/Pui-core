@@ -1,0 +1,31 @@
+{
+  "status": "PASS_BOUNDED_NATIVE_AND_ENCODED_FRAME_SCOPE_AFTER_CURSOR_FIX",
+  "videoSha256": "68e6ee6f67330f9eaad6faf663c32cb1956b530bff4d825e3183fb74a109a625",
+  "coverSha256": "e2812ab0a0ef5077fbd84e816e392b1f23b73ef6bfdd17467aed86f45b202d55",
+  "effectcraftSha256": "fb80f65a7958ae36c9ed7f64718800b02b33630b5ef100eb0b8f482014666815",
+  "scope": [
+    "Native10previews: 0/2.4/5.967/6/7/10.9/11.6/16.2/20.1/22.5",
+    "Encoded23frames in final-frame-binding.json, including3loop transitions andAB cut changes",
+    "Independent readonly peer confirmed mainlayout, captions, central3:4 cover and firstloop beforecursorheightfix; coder independently inspectednewencoded179/180 afterfix"
+  ],
+  "cursorFix": {
+    "finding": "P2 cursor overlaps source-end timestamp",
+    "change": "Height405→360; loweredge1260 above timestamprow",
+    "state": "FIXED_IN_SAVED_EC_AND_FINAL_MP4",
+    "fixedFrames": [
+      179,
+      180
+    ],
+    "timestampsStillPresent": true,
+    "audioAndCoreUnchanged": true
+  },
+  "modelListeningMouthClosed": true,
+  "waveformSameTimeAmplitudeAxes": true,
+  "creditMatchesRecordedOwnerScope": true,
+  "central3x4EssentialsReadable": true,
+  "actualTikTokUi": false,
+  "wholeContinuousPlayback": false,
+  "wholeSubjectiveAudition": false,
+  "creatorDay27Adoption": false,
+  "published": false
+}
