@@ -11,9 +11,9 @@
     },
     {
       "file": "README.md",
-      "bytes": 6130,
-      "sourceSha256": "8657f587f4c486e18a3eaaadff0b9f22dde21a3bf55a8668fd02a6f580747a5b",
-      "deliverySha256": "8657f587f4c486e18a3eaaadff0b9f22dde21a3bf55a8668fd02a6f580747a5b",
+      "bytes": 7883,
+      "sourceSha256": "21709188f40f8afe6d3eac6cfceda93e1356f9f4d9fc685af48ec6660730a722",
+      "deliverySha256": "21709188f40f8afe6d3eac6cfceda93e1356f9f4d9fc685af48ec6660730a722",
       "relinkedNativeProject": false
     },
     {
@@ -6017,9 +6017,9 @@
     },
     {
       "file": "source/投稿文.json",
-      "bytes": 1001,
-      "sourceSha256": "910488e84d02178093d85f0162f89abd7d6454ae7187ea55be77f6c36bf6ac43",
-      "deliverySha256": "910488e84d02178093d85f0162f89abd7d6454ae7187ea55be77f6c36bf6ac43",
+      "bytes": 1639,
+      "sourceSha256": "7c326e9ab867dfc8febccaed8f2fa350aecfd4ca5e58a9788087d93df1c8063a",
+      "deliverySha256": "7c326e9ab867dfc8febccaed8f2fa350aecfd4ca5e58a9788087d93df1c8063a",
       "relinkedNativeProject": false
     },
     {
@@ -6042,16 +6042,121 @@
       "sourceSha256": "b8b12b572b4f90c23ef068040efb4078caae74f6b1300f34e663bcfef88041c8",
       "deliverySha256": "b8b12b572b4f90c23ef068040efb4078caae74f6b1300f34e663bcfef88041c8",
       "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/current-status.json",
+      "bytes": 3544,
+      "sourceSha256": "9e5d07affd340b47cab6d89fc46669443934d047d45330a593544177f3dad55e",
+      "deliverySha256": "9e5d07affd340b47cab6d89fc46669443934d047d45330a593544177f3dad55e",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/delivery-production-863.json",
+      "bytes": 264985,
+      "sourceSha256": "30d5bddb8c5df1b10d74d0494087808e1cd45174246ba448810bd813ae6f891d",
+      "deliverySha256": "30d5bddb8c5df1b10d74d0494087808e1cd45174246ba448810bd813ae6f891d",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native-ui.json",
+      "bytes": 7436,
+      "sourceSha256": "a896ea5a98aa60869bde5994f75092e15ef339c98ebf94a46a1b0f40772217ac",
+      "deliverySha256": "a896ea5a98aa60869bde5994f75092e15ef339c98ebf94a46a1b0f40772217ac",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-feed-opening.png",
+      "bytes": 117985,
+      "sourceSha256": "56e9914cbdd0e3727a8eba73a5ad9dbcc47462e8ebe406a1794eab17592a5e8e",
+      "deliverySha256": "56e9914cbdd0e3727a8eba73a5ad9dbcc47462e8ebe406a1794eab17592a5e8e",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-feed-before.png",
+      "bytes": 119043,
+      "sourceSha256": "c1d3ff324eab41328f43ef52c13a526688809733a8e44ebfd19d1db9ad0edddc",
+      "deliverySha256": "c1d3ff324eab41328f43ef52c13a526688809733a8e44ebfd19d1db9ad0edddc",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-feed-stamps-entry.png",
+      "bytes": 151192,
+      "sourceSha256": "608f08c0a0ea031d16c579810651ffd7d5bb075b5f96d99899afe76ea9172973",
+      "deliverySha256": "608f08c0a0ea031d16c579810651ffd7d5bb075b5f96d99899afe76ea9172973",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-feed-stamps-hold.png",
+      "bytes": 138862,
+      "sourceSha256": "20c1fa332d035347462eab87daee04b778921932985e3a6f66418831a7ef7797",
+      "deliverySha256": "20c1fa332d035347462eab87daee04b778921932985e3a6f66418831a7ef7797",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-feed-optional-entry.png",
+      "bytes": 115370,
+      "sourceSha256": "116f130c0cd848134871df047e87930230c3defc86bff0e4a560bf1c80199d8c",
+      "deliverySha256": "116f130c0cd848134871df047e87930230c3defc86bff0e4a560bf1c80199d8c",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-feed-optional-send.png",
+      "bytes": 118015,
+      "sourceSha256": "0c22686d2fef5aaf95539e04bae3269fa207ebd5f5687f970c2f0869c36a143f",
+      "deliverySha256": "0c22686d2fef5aaf95539e04bae3269fa207ebd5f5687f970c2f0869c36a143f",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-feed-closing.png",
+      "bytes": 119903,
+      "sourceSha256": "3fa11955248e756f057dbbfa8033a024bc3a2ff2ca87e91f2e8e554d97340707",
+      "deliverySha256": "3fa11955248e756f057dbbfa8033a024bc3a2ff2ca87e91f2e8e554d97340707",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-feed-closing-hold.png",
+      "bytes": 120158,
+      "sourceSha256": "60482d7eb801ddb99e0062b33be064e7f4d8905537f3a36bdf32f9ba4cc926d9",
+      "deliverySha256": "60482d7eb801ddb99e0062b33be064e7f4d8905537f3a36bdf32f9ba4cc926d9",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-feed-end.png",
+      "bytes": 120674,
+      "sourceSha256": "e21a00c2318a56bddd05ea9fdc464fcc8d2e202a70d896b8515ffe4cf337e451",
+      "deliverySha256": "e21a00c2318a56bddd05ea9fdc464fcc8d2e202a70d896b8515ffe4cf337e451",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-cover-canvas.png",
+      "bytes": 60031,
+      "sourceSha256": "6b10372d079d4c446d1ea50d9ed4aa07b8b5820c3352cad3a37fdb7fcb7687da",
+      "deliverySha256": "6b10372d079d4c446d1ea50d9ed4aa07b8b5820c3352cad3a37fdb7fcb7687da",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-cover-profile.png",
+      "bytes": 7126,
+      "sourceSha256": "355a78e4428ab556261da5b2b198f724d671035ceb9cc67e61c0b9e2e044e63f",
+      "deliverySha256": "355a78e4428ab556261da5b2b198f724d671035ceb9cc67e61c0b9e2e044e63f",
+      "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/native-ui/native100-settings-checks.png",
+      "bytes": 55485,
+      "sourceSha256": "f7bc7d5ca0b6871773c16192297d22d498a634c5ea61a4ab75ce98630b5c9460",
+      "deliverySha256": "f7bc7d5ca0b6871773c16192297d22d498a634c5ea61a4ab75ce98630b5c9460",
+      "relinkedNativeProject": false
     }
   ],
-  "fileCount": 863,
-  "totalBytes": 1435170477,
+  "fileCount": 878,
+  "totalBytes": 1436692677,
   "missingMedia": 0,
   "all4PhotocraftPixelsMatch": true,
   "modelCoreFrames": 660,
   "rawModelSdkBundled": false,
   "subjectiveWholeAudition": false,
-  "nativeTikTokUi": false,
+  "nativeTikTokUi": true,
   "scheduled": false,
   "published": false,
   "smallDocsProofChanges": [
@@ -6059,7 +6164,7 @@
     "qa/independent-visual-review.json",
     "再生一覧.m3u"
   ],
-  "nativeReopenScope": "Previous exact3Craft save/reopen/render remains applicable: only docs/proofs changed, frozen media/native projects unchanged",
+  "nativeReopenScope": "Prior3Craft save/reopen/render is historical production verification. Linked media/native projects are unchanged; this addendum did not rerender/reopen them.",
   "recipeCorrection": {
     "originalProductionHead": "3beff7679de0506cf35adc83ffbc1522a8149bf6",
     "scope": "Frame extraction ordering only; native save/reopen results and frozen media remain historical unchanged evidence",
@@ -6074,5 +6179,43 @@
       "covers/missyou-stamp-cover.png": "4ed364eccfc00465f6f1f9face133db98bce3d5b759812ed3311cc3637918d4d",
       "source/caption.txt": "f2b083f31e20ddbd8e22b64bd7ddd7773b4251772d609c5244788cec76cacf76"
     }
+  },
+  "nativeUiStatus": "PASS_BOUNDED_NATIVE_UI_PUBLICATION_UNCONFIRMED",
+  "nativeProofReference": "qa/native-ui/native-ui.json",
+  "nativeProofSha256": "a896ea5a98aa60869bde5994f75092e15ef339c98ebf94a46a1b0f40772217ac",
+  "nativeAddendum": {
+    "scope": "Later sanitized native UI proof and small docs/metadata addendum; no media/encoder/nativeproject changes or rerender",
+    "historicalProductionReceipt": "qa/delivery-production-863.json",
+    "historicalProductionReceiptSha256": "30d5bddb8c5df1b10d74d0494087808e1cd45174246ba448810bd813ae6f891d",
+    "historicalFileCount": 863,
+    "changedFiles": [
+      "README.md",
+      "source/投稿文.json",
+      "qa/current-status.json",
+      "qa/delivery-production-863.json",
+      "qa/native-ui/native-ui.json",
+      "qa/native-ui/native100-feed-opening.png",
+      "qa/native-ui/native100-feed-before.png",
+      "qa/native-ui/native100-feed-stamps-entry.png",
+      "qa/native-ui/native100-feed-stamps-hold.png",
+      "qa/native-ui/native100-feed-optional-entry.png",
+      "qa/native-ui/native100-feed-optional-send.png",
+      "qa/native-ui/native100-feed-closing.png",
+      "qa/native-ui/native100-feed-closing-hold.png",
+      "qa/native-ui/native100-feed-end.png",
+      "qa/native-ui/native100-cover-canvas.png",
+      "qa/native-ui/native100-cover-profile.png",
+      "qa/native-ui/native100-settings-checks.png"
+    ],
+    "allCurrentFManifestHashesVerified": true,
+    "sourceMatchingScope": "Changed small files match current source; unchanged production outputs retain their original recorded source hashes, including660 ignored Core PNGs.",
+    "proofImages": 12,
+    "finalPhoneSamples": 9,
+    "stagingDiscarded": true,
+    "savedDraft": false,
+    "publishIntents": 0,
+    "scheduleIntents": 0,
+    "candidateVideoId": null,
+    "publicationConfirmed": false
   }
 }

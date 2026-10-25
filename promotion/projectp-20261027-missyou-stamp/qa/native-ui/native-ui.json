@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_BOUNDED_NATIVE_UI_PUBLICATION_UNCONFIRMED",
+  "checkedAt": "2026-10-25T17:27:19.512Z",
+  "issue": 100,
+  "parentIssue": 93,
+  "accountId": "prop_pui",
+  "source": {
+    "sourceDir": "promotion/projectp-20261027-missyou-stamp/",
+    "productionPr": "https://github.com/Pui-core/Pui-core/pull/25",
+    "productionHead": "3beff7679de0506cf35adc83ffbc1522a8149bf6",
+    "productionMerge": "b8aeb4ae308cb02182da0c2c8b5d30293161a6f4",
+    "recipeFixPr": "https://github.com/Pui-core/Pui-core/pull/26",
+    "headSha": "129e669501ef4cba44737274ddbf52c8f7eab266",
+    "mergeSha": "69addce7e56e5208bc9575a68bd051b97a89b6a1",
+    "video": "videos/missyou-stamp.mp4",
+    "videoSha256": "a28dc095775670380fca6551f7c394a6d719601109b98999a4531e25f7213eee",
+    "cover": "covers/missyou-stamp-cover.png",
+    "coverSha256": "4ed364eccfc00465f6f1f9face133db98bce3d5b759812ed3311cc3637918d4d",
+    "captionSourceSha256": "f2b083f31e20ddbd8e22b64bd7ddd7773b4251772d609c5244788cec76cacf76",
+    "productionDeliveryReceiptSha256": "30d5bddb8c5df1b10d74d0494087808e1cd45174246ba448810bd813ae6f891d"
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 660,
+    "durationSeconds": 22
+  },
+  "model": "Specified Revenant_Natural actualCore660frames/newVOX-RMSmouth/blink/gaze/breath per source QA",
+  "native": {
+    "uploadCompleted": "2.69MB /1080P",
+    "captionCharacters": 192,
+    "captionMethod": "Actual keyboard paste; source trailing newline trimmed, 192counter verified after reapplication",
+    "customCover": "Exact frozen cover selected/saved twice across two staged instances; initial native canvas/profile crop proofs retained",
+    "coverProofScope": "Native cover editor profile preview uses mock profile placeholders; not actual profile/follower evidence",
+    "privacy": "Anyone",
+    "ownBrandDisclosure": true,
+    "thirdPartyBrandedContent": false,
+    "aigcLabel": true,
+    "aigcReason": "VOICEVOX synthetic narration; actual app screenshots and software-controlled illustrated Live2D",
+    "copyrightCheck": "問題は見つかりませんでした。",
+    "contentCheck": "違反は見つかりませんでした。",
+    "finalConfiguredPlayback": "Reached actual22/22 after reapplying caption192/customcover/ownbrand/AIGC; nine phone samples visually inspected",
+    "observed": [
+      "Opening question and actualBefore text field",
+      "All4 actualstamps/selected state",
+      "Optionalwords field and fullsendCTA",
+      "CreatorfollowCTA/identity",
+      "Modelhair/importanttext clear ofrightactions/captions",
+      "Development/testdata/syntheticvoice qualifiers present"
+    ],
+    "sampleTiming": "Nominal wall-clock samples are not exact media-frame or AV-sync proof; encoded source5cue checks provide separate numeric scope"
+  },
+  "proof": [
+    {
+      "file": "native100-feed-opening.png",
+      "sha256": "56e9914cbdd0e3727a8eba73a5ad9dbcc47462e8ebe406a1794eab17592a5e8e",
+      "nominalSeconds": 0.7,
+      "elapsedCaptureSeconds": 0.7577014999999999,
+      "visuallyInspected": true
+    },
+    {
+      "file": "native100-feed-before.png",
+      "sha256": "c1d3ff324eab41328f43ef52c13a526688809733a8e44ebfd19d1db9ad0edddc",
+      "nominalSeconds": 2.8,
+      "elapsedCaptureSeconds": 2.8278320999999997,
+      "visuallyInspected": true
+    },
+    {
+      "file": "native100-feed-stamps-entry.png",
+      "sha256": "608f08c0a0ea031d16c579810651ffd7d5bb075b5f96d99899afe76ea9172973",
+      "nominalSeconds": 5.7,
+      "elapsedCaptureSeconds": 5.7237814,
+      "visuallyInspected": true
+    },
+    {
+      "file": "native100-feed-stamps-hold.png",
+      "sha256": "20c1fa332d035347462eab87daee04b778921932985e3a6f66418831a7ef7797",
+      "nominalSeconds": 9.5,
+      "elapsedCaptureSeconds": 9.524996999999999,
+      "visuallyInspected": true
+    },
+    {
+      "file": "native100-feed-optional-entry.png",
+      "sha256": "116f130c0cd848134871df047e87930230c3defc86bff0e4a560bf1c80199d8c",
+      "nominalSeconds": 12.4,
+      "elapsedCaptureSeconds": 12.433885,
+      "visuallyInspected": true
+    },
+    {
+      "file": "native100-feed-optional-send.png",
+      "sha256": "0c22686d2fef5aaf95539e04bae3269fa207ebd5f5687f970c2f0869c36a143f",
+      "nominalSeconds": 15.8,
+      "elapsedCaptureSeconds": 15.8273794,
+      "visuallyInspected": true
+    },
+    {
+      "file": "native100-feed-closing.png",
+      "sha256": "3fa11955248e756f057dbbfa8033a024bc3a2ff2ca87e91f2e8e554d97340707",
+      "nominalSeconds": 18.6,
+      "elapsedCaptureSeconds": 18.6236305,
+      "visuallyInspected": true
+    },
+    {
+      "file": "native100-feed-closing-hold.png",
+      "sha256": "60482d7eb801ddb99e0062b33be064e7f4d8905537f3a36bdf32f9ba4cc926d9",
+      "nominalSeconds": 21.6,
+      "elapsedCaptureSeconds": 21.629350799999997,
+      "visuallyInspected": true
+    },
+    {
+      "file": "native100-feed-end.png",
+      "sha256": "e21a00c2318a56bddd05ea9fdc464fcc8d2e202a70d896b8515ffe4cf337e451",
+      "nominalSeconds": 23.1,
+      "elapsedCaptureSeconds": 23.1261391,
+      "visuallyInspected": true
+    },
+    {
+      "file": "native100-cover-canvas.png",
+      "sha256": "6b10372d079d4c446d1ea50d9ed4aa07b8b5820c3352cad3a37fdb7fcb7687da",
+      "visuallyInspected": true
+    },
+    {
+      "file": "native100-cover-profile.png",
+      "sha256": "355a78e4428ab556261da5b2b198f724d671035ceb9cc67e61c0b9e2e044e63f",
+      "visuallyInspected": true
+    },
+    {
+      "file": "native100-settings-checks.png",
+      "sha256": "f7bc7d5ca0b6871773c16192297d22d498a634c5ea61a4ab75ce98630b5c9460",
+      "visuallyInspected": true
+    }
+  ],
+  "initialProblem": {
+    "status": "Initial staged player counter stalled02; manualseek06 didnotrefreshpicture; editor loader didnotcomplete",
+    "proofPreserved": "Initial native100-samples.json and images retained privately; nominal names do not establish later story positions",
+    "sameFileReplacements": 1,
+    "maxReplacements": 1,
+    "outcome": "Same immutable original bytes reached22/22 after one replacement; finalmetadata replay also reached22/22",
+    "rootCause": "Not established; no source video/encoder/media changes were required",
+    "foregroundGuard": "One physicalclick stopped before mouse input because foreground not acquired; later read verified originalFirefoxforeground, no guard bypass"
+  },
+  "cleanup": {
+    "stagingDiscarded": true,
+    "savedDraft": false,
+    "coverSavesAreStagingOnly": true,
+    "publishIntents": 0,
+    "scheduleIntents": 0,
+    "profileSaveIntents": 0,
+    "returnedToStudioHome": true,
+    "existingFirstVideoId": "7700540849909763336",
+    "existingScheduledVideoId": "7700634126155648264",
+    "existingScheduleObserved": "10月26日 午後7:15",
+    "candidateVideoId": null,
+    "publicConfirmed": false
+  },
+  "limitations": {
+    "directFullSubjectiveAudition": false,
+    "continuousVisualPlaybackClaim": false,
+    "popularExternalMusicUsed": false,
+    "day27EditorialAdoption": "Pending actualactivity/latestinstructions/maturedpreviouspostmetrics within existingownerGO",
+    "publication": "Not submitted/scheduled; future singlepublisher rechecks account/metadata/checks andactualpublicreceipt"
+  },
+  "provenance": {
+    "originalPacketSha256": "90038736869783e4962a9173c7c7fcdc6b12385bca0a0072ac4e630372a5190c",
+    "note": "Sanitized native proof addendum; initial failure retained and final positive samples differentiated"
+  }
+}

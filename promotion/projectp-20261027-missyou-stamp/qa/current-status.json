@@ -1,0 +1,78 @@
+{
+  "status": "PASS_BOUNDED_NATIVE_UI_PUBLICATION_UNCONFIRMED",
+  "checkedAt": "2026-10-25T17:27:19.512Z",
+  "accountId": "prop_pui",
+  "nativeProof": "qa/native-ui/native-ui.json",
+  "nativeProofSha256": "a896ea5a98aa60869bde5994f75092e15ef339c98ebf94a46a1b0f40772217ac",
+  "videoSha256": "a28dc095775670380fca6551f7c394a6d719601109b98999a4531e25f7213eee",
+  "coverSha256": "4ed364eccfc00465f6f1f9face133db98bce3d5b759812ed3311cc3637918d4d",
+  "captionSha256": "f2b083f31e20ddbd8e22b64bd7ddd7773b4251772d609c5244788cec76cacf76",
+  "production": {
+    "head": "129e669501ef4cba44737274ddbf52c8f7eab266",
+    "merge": "69addce7e56e5208bc9575a68bd051b97a89b6a1",
+    "scope": "Production/technical/render snapshots were recorded before this later native addendum",
+    "historicalDeliveryReceipt": "qa/delivery-production-863.json",
+    "historicalDeliveryReceiptSha256": "30d5bddb8c5df1b10d74d0494087808e1cd45174246ba448810bd813ae6f891d",
+    "historicalFiles": 863
+  },
+  "native": {
+    "phoneSamples": 9,
+    "coverProofs": 2,
+    "settingsProofs": 1,
+    "reachedEnd": "22/22",
+    "captionCharacters": 192,
+    "ownBrand": true,
+    "thirdPartyBrand": false,
+    "aigc": true,
+    "checksBothPassed": true,
+    "coverProfileScope": "Native cover editor profile preview uses mock profile placeholders; not actual profile/follower evidence",
+    "initialStall": "Initial staged player counter stalled02; manualseek06 didnotrefreshpicture; editor loader didnotcomplete",
+    "sameFileReplacements": 1,
+    "rootCause": "Not established; immutable original media was not re-encoded or changed",
+    "sampleTiming": "Nominal wall-clock samples are not exact media-frame or AV-sync proof; encoded source5cue checks provide separate numeric scope"
+  },
+  "cleanup": {
+    "stagingDiscarded": true,
+    "savedDraft": false,
+    "coverSavesAreStagingOnly": true,
+    "publishIntents": 0,
+    "scheduleIntents": 0,
+    "profileSaveIntents": 0,
+    "returnedToStudioHome": true,
+    "existingFirstVideoId": "7700540849909763336",
+    "existingScheduledVideoId": "7700634126155648264",
+    "existingScheduleObserved": "10月26日 午後7:15",
+    "candidateVideoId": null,
+    "publicConfirmed": false
+  },
+  "limitations": {
+    "directFullSubjectiveAudition": false,
+    "continuousVisualPlaybackClaim": false,
+    "popularExternalMusicUsed": false,
+    "day27EditorialAdoption": "Pending actualactivity/latestinstructions/maturedpreviouspostmetrics within existingownerGO",
+    "publication": "Not submitted/scheduled; future singlepublisher rechecks account/metadata/checks andactualpublicreceipt"
+  },
+  "historicalSnapshotFiles": [
+    "qa/final-binding.json",
+    "qa/picture-binding.json",
+    "qa/technical.json",
+    "qa/visual-review.json",
+    "qa/independent-visual-review.json"
+  ],
+  "historicalFalseFields": "nativeTikTokUi:false and render pending fields in these production snapshots describe that earlier stage; this current-status and native proof are the later native record.",
+  "independentSourceProofReview": {
+    "reviewer": "readonly model_visual_qa",
+    "packetAnd12ImageHashesVerified": true,
+    "imagesViewed": [
+      "native100-feed-before.png",
+      "native100-feed-stamps-hold.png",
+      "native100-feed-optional-send.png",
+      "native100-feed-end.png",
+      "native100-cover-canvas.png",
+      "native100-cover-profile.png",
+      "native100-settings-checks.png"
+    ],
+    "mandatoryFindings": [],
+    "scope": "Selected exported native images/packet only; no live operation, full playback or audition"
+  }
+}

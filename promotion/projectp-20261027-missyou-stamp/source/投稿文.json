@@ -6,11 +6,20 @@
   "aiGeneratedContentDisclosure": {
     "requiredForThisCandidate": true,
     "reason": "Actual synthetic VOICEVOX narration; editor-controlled screenshots and model rendering are separately identified.",
-    "actualNativeToggleVerified": false
+    "actualNativeToggleVerified": true,
+    "nativeVerificationScope": "Observed ON in discarded staging only; publisher must reapply/recheck final metadata at publication.",
+    "checkedAt": "2026-10-25T17:27:19.512Z"
   },
   "popularMusicSelected": false,
   "subjectiveWholeAudition": false,
-  "nativeTikTokUi": false,
+  "nativeTikTokUi": true,
   "scheduled": false,
-  "published": false
+  "published": false,
+  "nativeTikTokUiStatus": "PASS_BOUNDED_NATIVE_UI_PUBLICATION_UNCONFIRMED",
+  "nativeTikTokUiScope": "Nine final phone samples reaching22/22,2cover proofs,1settings crop; no continuous/full subjective audition claim.",
+  "nativeUiEvidence": "qa/native-ui/native-ui.json",
+  "nativeUiEvidenceSha256": "a896ea5a98aa60869bde5994f75092e15ef339c98ebf94a46a1b0f40772217ac",
+  "nativeStagingDiscarded": true,
+  "savedDraft": false,
+  "day27EditorialAdoption": false
 }
