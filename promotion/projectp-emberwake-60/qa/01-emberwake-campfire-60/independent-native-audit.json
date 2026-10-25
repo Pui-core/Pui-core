@@ -1,0 +1,3067 @@
+{
+  "schema": 1,
+  "status": "PASS_SAVED_NATIVE_STRUCTURE_FINAL_VIDEO_PENDING",
+  "scope": "保存済EC projectのJSONを直接読取。親のmotion ledgerは参照しつつedit.jsonのsource focusから期待座標を独立算出し、実nativeの全position key/anchor/scale/remapと比較。文字のglyph寸法はlayout-and-motionのsourceRectAtTime測定値を使用し、実保存doc/transform/timingと一致確認。最終MP4の表示/動き/実試聴/実機UI安全は未判定。",
+  "boundArtifacts": {
+    "project": "/home/pui/.claude/worktrees/Pui-core-issue-88/promotion/projectp-emberwake-60/projects/01-emberwake-campfire-60.ecproj",
+    "projectSha256": "68b9db1fd6b3991807a4bafd3214abbc07693385296c986897687bdac3bd3e72",
+    "edit": "/home/pui/.claude/worktrees/Pui-core-issue-88/promotion/projectp-emberwake-60/source/edit.json",
+    "editSha256": "eaa2a768e37c91a39283751cc2428410a615c0199c9782a789f0d6b44b615960",
+    "layout": "/home/pui/.claude/worktrees/Pui-core-issue-88/promotion/projectp-emberwake-60/qa/01-emberwake-campfire-60/layout-and-motion.json",
+    "layoutSha256": "ba936f27d1cbd8d1a6378ac32563b6cdbb7ec4816e22e98f926e03d6866eb758"
+  },
+  "tickRate": 254016000000,
+  "checks": {
+    "nativeDuration60": true,
+    "main1080x1920": true,
+    "fps30": true,
+    "shots18": true,
+    "contiguousShotTimeline": true,
+    "cameraAllSavedKeysMatch": true,
+    "textAllNativeMatchesMeasuredLedger": true,
+    "textNoSettledPairOverlap": true,
+    "cgAllThreeScenesDisclosed": true
+  },
+  "main": {
+    "id": 286,
+    "name": "EMBERWAKE Support 60",
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 60,
+    "layerCount": 181,
+    "sceneCount": 18
+  },
+  "camera": {
+    "childComps": 11,
+    "savedPositionKeys": 311,
+    "maxSourceFocusCenterErrorPx": 1.1368683772161603e-13,
+    "formula": "childPosition = [500+(W/2-focusX)*scale, 215+(H/2-focusY)*scale]; targetScreen=position+(focus-anchor)*scale. Main detail [540,1350] after entry.",
+    "timeBasis": "saved keys.time is layer-relative; global time = start_time + keys.time /254016000000",
+    "scenes": [
+      {
+        "scene": 0,
+        "compId": 11,
+        "layerId": 12,
+        "sourceSize": [
+          1920,
+          1080
+        ],
+        "childSize": [
+          1000,
+          430
+        ],
+        "scalePercent": [
+          112,
+          112
+        ],
+        "sourceOffset": 5.333333333333333,
+        "keyCount": 13,
+        "maxPositionErrorPx": 0,
+        "maxTimeErrorSeconds": 0,
+        "targetInChild": [
+          500,
+          215
+        ],
+        "targetInMainAfterEntry": [
+          540,
+          1350
+        ],
+        "parentLayerStartSeconds": 0,
+        "entryLandsAt": 0,
+        "entrySeconds": 0,
+        "firstSavedKey": {
+          "relativeTime": 0,
+          "position": [
+            788.9349804687495,
+            -0.8253125000000239,
+            0
+          ]
+        },
+        "lastSavedKey": {
+          "relativeTime": 1.2,
+          "position": [
+            788.9349804687495,
+            -0.8253125000000239,
+            0
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "scene": 1,
+        "compId": 36,
+        "layerId": 37,
+        "sourceSize": [
+          1920,
+          1080
+        ],
+        "childSize": [
+          1000,
+          430
+        ],
+        "scalePercent": [
+          110,
+          110
+        ],
+        "sourceOffset": 6.533333333333333,
+        "keyCount": 21,
+        "maxPositionErrorPx": 0,
+        "maxTimeErrorSeconds": 0,
+        "targetInChild": [
+          500,
+          215
+        ],
+        "targetInMainAfterEntry": [
+          540,
+          1350
+        ],
+        "parentLayerStartSeconds": 1.2,
+        "entryLandsAt": 1.2,
+        "entrySeconds": 0,
+        "firstSavedKey": {
+          "relativeTime": 0,
+          "position": [
+            783.7754272460933,
+            3.0287109374999943,
+            0
+          ]
+        },
+        "lastSavedKey": {
+          "relativeTime": 2,
+          "position": [
+            383.8142456054683,
+            81.70878906249999,
+            0
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "scene": 4,
+        "compId": 61,
+        "layerId": 62,
+        "sourceSize": [
+          1920,
+          1080
+        ],
+        "childSize": [
+          1000,
+          430
+        ],
+        "scalePercent": [
+          100,
+          100
+        ],
+        "sourceOffset": 2.3,
+        "keyCount": 23,
+        "maxPositionErrorPx": 0,
+        "maxTimeErrorSeconds": 0,
+        "targetInChild": [
+          500,
+          215
+        ],
+        "targetInMainAfterEntry": [
+          540,
+          1350
+        ],
+        "parentLayerStartSeconds": 9.8,
+        "entryLandsAt": 9.8,
+        "entrySeconds": 0,
+        "firstSavedKey": {
+          "relativeTime": 0,
+          "position": [
+            970,
+            26,
+            0
+          ]
+        },
+        "lastSavedKey": {
+          "relativeTime": 2.2,
+          "position": [
+            886.388885498047,
+            22.298828125,
+            0
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "scene": 5,
+        "compId": 86,
+        "layerId": 87,
+        "sourceSize": [
+          1920,
+          1080
+        ],
+        "childSize": [
+          1000,
+          430
+        ],
+        "scalePercent": [
+          100,
+          100
+        ],
+        "sourceOffset": 3.4,
+        "keyCount": 37,
+        "maxPositionErrorPx": 0,
+        "maxTimeErrorSeconds": 0,
+        "targetInChild": [
+          500,
+          215
+        ],
+        "targetInMainAfterEntry": [
+          540,
+          1350
+        ],
+        "parentLayerStartSeconds": 12,
+        "entryLandsAt": 12.166666666666666,
+        "entrySeconds": 0.16666666666666607,
+        "firstSavedKey": {
+          "relativeTime": 0,
+          "position": [
+            890.433319091797,
+            22.298828125,
+            0
+          ]
+        },
+        "lastSavedKey": {
+          "relativeTime": 3.6,
+          "position": [
+            659.433044433594,
+            22.298828125,
+            0
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "scene": 6,
+        "compId": 111,
+        "layerId": 112,
+        "sourceSize": [
+          1920,
+          1080
+        ],
+        "childSize": [
+          1000,
+          430
+        ],
+        "scalePercent": [
+          100,
+          100
+        ],
+        "sourceOffset": 5.3,
+        "keyCount": 31,
+        "maxPositionErrorPx": 0,
+        "maxTimeErrorSeconds": 0,
+        "targetInChild": [
+          500,
+          215
+        ],
+        "targetInMainAfterEntry": [
+          540,
+          1350
+        ],
+        "parentLayerStartSeconds": 15.6,
+        "entryLandsAt": 15.6,
+        "entrySeconds": 0,
+        "firstSavedKey": {
+          "relativeTime": 0,
+          "position": [
+            757.977661132812,
+            22.298828125,
+            0
+          ]
+        },
+        "lastSavedKey": {
+          "relativeTime": 3,
+          "position": [
+            388.74353027343795,
+            6.298828125,
+            0
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "scene": 7,
+        "compId": 136,
+        "layerId": 137,
+        "sourceSize": [
+          1920,
+          1080
+        ],
+        "childSize": [
+          1000,
+          430
+        ],
+        "scalePercent": [
+          100,
+          100
+        ],
+        "sourceOffset": 7,
+        "keyCount": 35,
+        "maxPositionErrorPx": 0,
+        "maxTimeErrorSeconds": 0,
+        "targetInChild": [
+          500,
+          215
+        ],
+        "targetInMainAfterEntry": [
+          540,
+          1350
+        ],
+        "parentLayerStartSeconds": 18.6,
+        "entryLandsAt": 18.76666666666667,
+        "entrySeconds": 0.16666666666666785,
+        "firstSavedKey": {
+          "relativeTime": 0,
+          "position": [
+            659.433044433594,
+            22.298828125,
+            0
+          ]
+        },
+        "lastSavedKey": {
+          "relativeTime": 3.4,
+          "position": [
+            387.51013183593795,
+            2.0185546875,
+            0
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "scene": 8,
+        "compId": 161,
+        "layerId": 162,
+        "sourceSize": [
+          1920,
+          1080
+        ],
+        "childSize": [
+          1000,
+          430
+        ],
+        "scalePercent": [
+          100,
+          100
+        ],
+        "sourceOffset": 10.4,
+        "keyCount": 43,
+        "maxPositionErrorPx": 0,
+        "maxTimeErrorSeconds": 0,
+        "targetInChild": [
+          500,
+          215
+        ],
+        "targetInMainAfterEntry": [
+          540,
+          1350
+        ],
+        "parentLayerStartSeconds": 22,
+        "entryLandsAt": 22,
+        "entrySeconds": 0,
+        "firstSavedKey": {
+          "relativeTime": 0,
+          "position": [
+            387.51013183593795,
+            2.0185546875,
+            0
+          ]
+        },
+        "lastSavedKey": {
+          "relativeTime": 4.2,
+          "position": [
+            389.21008300781205,
+            6.299072265625,
+            0
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "scene": 9,
+        "compId": 186,
+        "layerId": 187,
+        "sourceSize": [
+          1920,
+          1080
+        ],
+        "childSize": [
+          1000,
+          430
+        ],
+        "scalePercent": [
+          100,
+          100
+        ],
+        "sourceOffset": 3.1,
+        "keyCount": 25,
+        "maxPositionErrorPx": 0,
+        "maxTimeErrorSeconds": 0,
+        "targetInChild": [
+          500,
+          215
+        ],
+        "targetInMainAfterEntry": [
+          540,
+          1350
+        ],
+        "parentLayerStartSeconds": 26.2,
+        "entryLandsAt": 26.2,
+        "entrySeconds": 0,
+        "firstSavedKey": {
+          "relativeTime": 0,
+          "position": [
+            970,
+            26,
+            0
+          ]
+        },
+        "lastSavedKey": {
+          "relativeTime": 2.4,
+          "position": [
+            970,
+            6.02197265625,
+            0
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "scene": 10,
+        "compId": 211,
+        "layerId": 212,
+        "sourceSize": [
+          1920,
+          1080
+        ],
+        "childSize": [
+          1000,
+          430
+        ],
+        "scalePercent": [
+          100,
+          100
+        ],
+        "sourceOffset": 3.2,
+        "keyCount": 25,
+        "maxPositionErrorPx": 0,
+        "maxTimeErrorSeconds": 0,
+        "targetInChild": [
+          500,
+          215
+        ],
+        "targetInMainAfterEntry": [
+          540,
+          1350
+        ],
+        "parentLayerStartSeconds": 28.6,
+        "entryLandsAt": 28.6,
+        "entrySeconds": 0,
+        "firstSavedKey": {
+          "relativeTime": 0,
+          "position": [
+            970,
+            26,
+            0
+          ]
+        },
+        "lastSavedKey": {
+          "relativeTime": 2.4,
+          "position": [
+            970,
+            6.02197265625,
+            0
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "scene": 11,
+        "compId": 236,
+        "layerId": 237,
+        "sourceSize": [
+          1920,
+          1080
+        ],
+        "childSize": [
+          1000,
+          430
+        ],
+        "scalePercent": [
+          100,
+          100
+        ],
+        "sourceOffset": 3.4,
+        "keyCount": 27,
+        "maxPositionErrorPx": 0,
+        "maxTimeErrorSeconds": 0,
+        "targetInChild": [
+          500,
+          215
+        ],
+        "targetInMainAfterEntry": [
+          540,
+          1350
+        ],
+        "parentLayerStartSeconds": 31,
+        "entryLandsAt": 31,
+        "entrySeconds": 0,
+        "firstSavedKey": {
+          "relativeTime": 0,
+          "position": [
+            970,
+            26,
+            0
+          ]
+        },
+        "lastSavedKey": {
+          "relativeTime": 2.6,
+          "position": [
+            970,
+            6.02197265625,
+            0
+          ]
+        },
+        "status": "PASS"
+      },
+      {
+        "scene": 12,
+        "compId": 261,
+        "layerId": 262,
+        "sourceSize": [
+          1920,
+          1080
+        ],
+        "childSize": [
+          1000,
+          430
+        ],
+        "scalePercent": [
+          100,
+          100
+        ],
+        "sourceOffset": 3.6,
+        "keyCount": 31,
+        "maxPositionErrorPx": 0,
+        "maxTimeErrorSeconds": 0,
+        "targetInChild": [
+          500,
+          215
+        ],
+        "targetInMainAfterEntry": [
+          540,
+          1350
+        ],
+        "parentLayerStartSeconds": 33.6,
+        "entryLandsAt": 33.6,
+        "entrySeconds": 0,
+        "firstSavedKey": {
+          "relativeTime": 0,
+          "position": [
+            970,
+            26,
+            0
+          ]
+        },
+        "lastSavedKey": {
+          "relativeTime": 3,
+          "position": [
+            970,
+            6.02197265625,
+            0
+          ]
+        },
+        "status": "PASS"
+      }
+    ]
+  },
+  "text": {
+    "nativeTextLayers": 96,
+    "allMeasuredBoxesWithin1080x1920": true,
+    "metricsProvenance": "glyph widths/heights are the production sourceRectAtTime ledger; independent font shaping/render bounds were not re-measured.",
+    "minimumFontSize": 24,
+    "minimumMainTitleSettledDwell": 0.9666666666666666,
+    "settledOverlaps": [],
+    "textFailures": [],
+    "entryOnlyRectangularContacts": [
+      {
+        "scene": 0,
+        "names": [
+          "Title two 0",
+          "Body caption 0"
+        ],
+        "at": 0,
+        "maximumInitialVerticalRectOverlapPx": 0.232666015625,
+        "entrySettlesAt": 0.23333333333333334,
+        "hasWhip": false,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 1,
+        "names": [
+          "Title two 1",
+          "Body caption 1"
+        ],
+        "at": 1.2,
+        "maximumInitialVerticalRectOverlapPx": 1.63525390625,
+        "entrySettlesAt": 1.4333333333333333,
+        "hasWhip": false,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 2,
+        "names": [
+          "Title two 2",
+          "Body caption 2"
+        ],
+        "at": 3.2,
+        "maximumInitialVerticalRectOverlapPx": 13.98388671875,
+        "entrySettlesAt": 3.433333333333333,
+        "hasWhip": true,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 3,
+        "names": [
+          "Title two 3",
+          "Body caption 3"
+        ],
+        "at": 6.8,
+        "maximumInitialVerticalRectOverlapPx": 2.344482421875,
+        "entrySettlesAt": 7.033333333333333,
+        "hasWhip": true,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 4,
+        "names": [
+          "Title two 4",
+          "Body caption 4"
+        ],
+        "at": 9.8,
+        "maximumInitialVerticalRectOverlapPx": 2.512939453125,
+        "entrySettlesAt": 10.033333333333333,
+        "hasWhip": false,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 5,
+        "names": [
+          "Title two 5",
+          "Body caption 5"
+        ],
+        "at": 12,
+        "maximumInitialVerticalRectOverlapPx": 2.50439453125,
+        "entrySettlesAt": 12.233333333333333,
+        "hasWhip": false,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 6,
+        "names": [
+          "Title two 6",
+          "Body caption 6"
+        ],
+        "at": 15.6,
+        "maximumInitialVerticalRectOverlapPx": 2.9169921875,
+        "entrySettlesAt": 15.833333333333334,
+        "hasWhip": false,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 7,
+        "names": [
+          "Title two 7",
+          "Body caption 7"
+        ],
+        "at": 18.6,
+        "maximumInitialVerticalRectOverlapPx": 2.00634765625,
+        "entrySettlesAt": 18.833333333333332,
+        "hasWhip": false,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 8,
+        "names": [
+          "Title two 8",
+          "Body caption 8"
+        ],
+        "at": 22,
+        "maximumInitialVerticalRectOverlapPx": 2.195556640625,
+        "entrySettlesAt": 22.233333333333334,
+        "hasWhip": false,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 9,
+        "names": [
+          "Title two 9",
+          "Body caption 9"
+        ],
+        "at": 26.2,
+        "maximumInitialVerticalRectOverlapPx": 4.041259765625,
+        "entrySettlesAt": 26.433333333333334,
+        "hasWhip": true,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 10,
+        "names": [
+          "Title two 10",
+          "Body caption 10"
+        ],
+        "at": 28.6,
+        "maximumInitialVerticalRectOverlapPx": 3.43212890625,
+        "entrySettlesAt": 28.833333333333332,
+        "hasWhip": false,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 11,
+        "names": [
+          "Title two 11",
+          "Body caption 11"
+        ],
+        "at": 31,
+        "maximumInitialVerticalRectOverlapPx": 3.833740234375,
+        "entrySettlesAt": 31.233333333333334,
+        "hasWhip": true,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 12,
+        "names": [
+          "Title two 12",
+          "Body caption 12"
+        ],
+        "at": 33.6,
+        "maximumInitialVerticalRectOverlapPx": 4.39404296875,
+        "entrySettlesAt": 33.833333333333336,
+        "hasWhip": false,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 13,
+        "names": [
+          "Title two 13",
+          "Body caption 13"
+        ],
+        "at": 36.6,
+        "maximumInitialVerticalRectOverlapPx": 1.543701171875,
+        "entrySettlesAt": 36.833333333333336,
+        "hasWhip": false,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 14,
+        "names": [
+          "Title two 14",
+          "Body caption 14"
+        ],
+        "at": 40,
+        "maximumInitialVerticalRectOverlapPx": 2.345703125,
+        "entrySettlesAt": 40.233333333333334,
+        "hasWhip": false,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      },
+      {
+        "scene": 15,
+        "names": [
+          "Title two 15",
+          "Body caption 15"
+        ],
+        "at": 44,
+        "maximumInitialVerticalRectOverlapPx": 1.475341796875,
+        "entrySettlesAt": 44.233333333333334,
+        "hasWhip": true,
+        "classification": "ENTRY_ONLY_RECTANGULAR_BOUNDS_CONTACT_PENDING_FINAL_PIXELS"
+      }
+    ],
+    "boxes": [
+      {
+        "name": "Detail label 0",
+        "text": "注目部分を拡大",
+        "font": "Meiryo",
+        "size": 25,
+        "actualIn": 0,
+        "actualOut": 1.2,
+        "settledBounds": [
+          412.98828125,
+          1598.61083984375,
+          587.01171875,
+          1621.38916015625
+        ],
+        "settledAt": 0,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 0",
+        "text": "実ゲーム映像 / I章 / 開発中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 0,
+        "actualOut": 1.2,
+        "settledBounds": [
+          325.640380859375,
+          188.4736328125,
+          674.359619140625,
+          215.5263671875
+        ],
+        "settledAt": 0,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 0",
+        "text": "この石を、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 0,
+        "actualOut": 1.2,
+        "settledBounds": [
+          334.19287109375,
+          265.5703125,
+          665.80712890625,
+          334.4296875
+        ],
+        "settledAt": 0,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 0",
+        "text": "はめると…",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 0,
+        "actualOut": 1.2,
+        "settledBounds": [
+          294.5556640625,
+          366.310546875,
+          705.4443359375,
+          439.689453125
+        ],
+        "settledAt": 0.23333333333333334,
+        "positionKeys": [
+          {
+            "time": 0,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 0.13333333333333333,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 0.23333333333333334,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 0",
+        "text": "同じ印の穴へ。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 0,
+        "actualOut": 1.2,
+        "settledBounds": [
+          389.12109375,
+          476.456787109375,
+          610.87890625,
+          507.543212890625
+        ],
+        "settledAt": 0,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Detail label 1",
+        "text": "注目部分を拡大",
+        "font": "Meiryo",
+        "size": 25,
+        "actualIn": 1.2,
+        "actualOut": 3.2,
+        "settledBounds": [
+          412.98828125,
+          1598.61083984375,
+          587.01171875,
+          1621.38916015625
+        ],
+        "settledAt": 1.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 1",
+        "text": "実ゲーム映像 / I章 / 開発中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 1.2,
+        "actualOut": 3.2,
+        "settledBounds": [
+          325.640380859375,
+          188.4736328125,
+          674.359619140625,
+          215.5263671875
+        ],
+        "settledAt": 1.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 1",
+        "text": "道が、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 1.2,
+        "actualOut": 3.2,
+        "settledBounds": [
+          408.76513671875,
+          264.37060546875,
+          591.23486328125,
+          335.62939453125
+        ],
+        "settledAt": 1.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 1",
+        "text": "できる。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 1.2,
+        "actualOut": 3.2,
+        "settledBounds": [
+          356.6455078125,
+          365.77099609375,
+          643.3544921875,
+          440.22900390625
+        ],
+        "settledAt": 1.4333333333333333,
+        "positionKeys": [
+          {
+            "time": 1.2,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 1.3333333333333333,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 1.4333333333333333,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 1",
+        "text": "置く場所が、遊びになる。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 1.2,
+        "actualOut": 3.2,
+        "settledBounds": [
+          301.185302734375,
+          475.59375,
+          698.814697265625,
+          508.40625
+        ],
+        "settledAt": 1.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Concept provenance 2",
+        "text": "実ゲームは2D / このカットは開発イメージ",
+        "font": "Meiryo",
+        "size": 29,
+        "actualIn": 3.2,
+        "actualOut": 6.8,
+        "settledBounds": [
+          214.736572265625,
+          1495.51416015625,
+          785.263427734375,
+          1524.48583984375
+        ],
+        "settledAt": 3.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 2",
+        "text": "開発イメージ（3D演出）",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 3.2,
+        "actualOut": 6.8,
+        "settledBounds": [
+          354.525634765625,
+          189.732666015625,
+          645.474365234375,
+          214.267333984375
+        ],
+        "settledAt": 3.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 2",
+        "text": "EMBERWAKE",
+        "font": "Meiryo",
+        "size": 100,
+        "actualIn": 3.2,
+        "actualOut": 6.8,
+        "settledBounds": [
+          164.3310546875,
+          263.2080078125,
+          835.6689453125,
+          336.7919921875
+        ],
+        "settledAt": 3.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 2",
+        "text": "制作、本格化。",
+        "font": "Meiryo",
+        "size": 105,
+        "actualIn": 3.2,
+        "actualOut": 6.8,
+        "settledBounds": [
+          164.697265625,
+          355.601318359375,
+          835.302734375,
+          450.398681640625
+        ],
+        "settledAt": 3.433333333333333,
+        "positionKeys": [
+          {
+            "time": 3.2,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 3.3333333333333335,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 3.433333333333333,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 2",
+        "text": "灰の灯 / ProjectP・ぷい",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 3.2,
+        "actualOut": 6.8,
+        "settledBounds": [
+          295.870361328125,
+          473.414794921875,
+          704.129638671875,
+          510.585205078125
+        ],
+        "settledAt": 3.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Concept provenance 3",
+        "text": "実ゲームは2D / このカットは開発イメージ",
+        "font": "Meiryo",
+        "size": 29,
+        "actualIn": 6.8,
+        "actualOut": 9.8,
+        "settledBounds": [
+          214.736572265625,
+          1495.51416015625,
+          785.263427734375,
+          1524.48583984375
+        ],
+        "settledAt": 6.8,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 3",
+        "text": "開発イメージ（3D演出）",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 6.8,
+        "actualOut": 9.8,
+        "settledBounds": [
+          354.525634765625,
+          189.732666015625,
+          645.474365234375,
+          214.267333984375
+        ],
+        "settledAt": 6.8,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 3",
+        "text": "この街に、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 6.8,
+        "actualOut": 9.8,
+        "settledBounds": [
+          334.19287109375,
+          265.20849609375,
+          665.80712890625,
+          334.79150390625
+        ],
+        "settledAt": 6.8,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 3",
+        "text": "もう一度、灯を。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 6.8,
+        "actualOut": 9.8,
+        "settledBounds": [
+          187.93212890625,
+          365.18994140625,
+          812.06787109375,
+          440.81005859375
+        ],
+        "settledAt": 7.033333333333333,
+        "positionKeys": [
+          {
+            "time": 6.8,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 6.933333333333334,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 7.033333333333333,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 3",
+        "text": "灯を運ぶ2Dアクションパズル。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 6.8,
+        "actualOut": 9.8,
+        "settledBounds": [
+          257.61474609375,
+          475.465576171875,
+          742.38525390625,
+          508.534423828125
+        ],
+        "settledAt": 6.8,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Detail label 4",
+        "text": "注目部分を拡大",
+        "font": "Meiryo",
+        "size": 25,
+        "actualIn": 9.8,
+        "actualOut": 12,
+        "settledBounds": [
+          412.98828125,
+          1598.61083984375,
+          587.01171875,
+          1621.38916015625
+        ],
+        "settledAt": 9.8,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 4",
+        "text": "実ゲーム映像 / I章 / 開発中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 9.8,
+        "actualOut": 12,
+        "settledBounds": [
+          325.640380859375,
+          188.4736328125,
+          674.359619140625,
+          215.5263671875
+        ],
+        "settledAt": 9.8,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 4",
+        "text": "制作中の",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 9.8,
+        "actualOut": 12,
+        "settledBounds": [
+          345.5615234375,
+          264.94189453125,
+          654.4384765625,
+          335.05810546875
+        ],
+        "settledAt": 9.8,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 4",
+        "text": "ぷいです。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 9.8,
+        "actualOut": 12,
+        "settledBounds": [
+          313.211669921875,
+          364.2353515625,
+          686.788330078125,
+          441.7646484375
+        ],
+        "settledAt": 10.033333333333333,
+        "positionKeys": [
+          {
+            "time": 9.8,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 9.933333333333334,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 10.033333333333333,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 4",
+        "text": "ここから、この世界を育てます。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 9.8,
+        "actualOut": 12,
+        "settledBounds": [
+          249.71923828125,
+          476.251708984375,
+          750.28076171875,
+          507.748291015625
+        ],
+        "settledAt": 9.8,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Detail label 5",
+        "text": "注目部分を拡大",
+        "font": "Meiryo",
+        "size": 25,
+        "actualIn": 12,
+        "actualOut": 15.6,
+        "settledBounds": [
+          412.98828125,
+          1598.61083984375,
+          587.01171875,
+          1621.38916015625
+        ],
+        "settledAt": 12,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 5",
+        "text": "実ゲーム映像 / I章 / 開発中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 12,
+        "actualOut": 15.6,
+        "settledBounds": [
+          325.640380859375,
+          188.4736328125,
+          674.359619140625,
+          215.5263671875
+        ],
+        "settledAt": 12,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 5",
+        "text": "芯石を、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 12,
+        "actualOut": 15.6,
+        "settledBounds": [
+          370.37451171875,
+          265.5703125,
+          629.62548828125,
+          334.4296875
+        ],
+        "settledAt": 12,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 5",
+        "text": "運ぶ。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 12,
+        "actualOut": 15.6,
+        "settledBounds": [
+          398.43994140625,
+          364.090087890625,
+          601.56005859375,
+          441.909912109375
+        ],
+        "settledAt": 12.233333333333333,
+        "positionKeys": [
+          {
+            "time": 12,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 12.133333333333333,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 12.233333333333333,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 5",
+        "text": "同じ刻印の壁を探して。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 12,
+        "actualOut": 15.6,
+        "settledBounds": [
+          319.12109375,
+          476.405517578125,
+          680.87890625,
+          507.594482421875
+        ],
+        "settledAt": 12,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Detail label 6",
+        "text": "注目部分を拡大",
+        "font": "Meiryo",
+        "size": 25,
+        "actualIn": 15.6,
+        "actualOut": 18.6,
+        "settledBounds": [
+          412.98828125,
+          1598.61083984375,
+          587.01171875,
+          1621.38916015625
+        ],
+        "settledAt": 15.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 6",
+        "text": "実ゲーム映像 / I章 / 開発中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 15.6,
+        "actualOut": 18.6,
+        "settledBounds": [
+          325.640380859375,
+          188.4736328125,
+          674.359619140625,
+          215.5263671875
+        ],
+        "settledAt": 15.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 6",
+        "text": "はめると、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 15.6,
+        "actualOut": 18.6,
+        "settledBounds": [
+          333.24072265625,
+          266.1796875,
+          666.75927734375,
+          333.8203125
+        ],
+        "settledAt": 15.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 6",
+        "text": "道が起きる。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 15.6,
+        "actualOut": 18.6,
+        "settledBounds": [
+          270.93994140625,
+          364.173095703125,
+          729.06005859375,
+          441.826904296875
+        ],
+        "settledAt": 15.833333333333334,
+        "positionKeys": [
+          {
+            "time": 15.6,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 15.733333333333333,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 15.833333333333334,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 6",
+        "text": "現れた足場が、次の道になる。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 15.6,
+        "actualOut": 18.6,
+        "settledBounds": [
+          265.74951171875,
+          475.909912109375,
+          734.25048828125,
+          508.090087890625
+        ],
+        "settledAt": 15.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Detail label 7",
+        "text": "注目部分を拡大",
+        "font": "Meiryo",
+        "size": 25,
+        "actualIn": 18.6,
+        "actualOut": 22,
+        "settledBounds": [
+          412.98828125,
+          1598.61083984375,
+          587.01171875,
+          1621.38916015625
+        ],
+        "settledAt": 18.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 7",
+        "text": "実ゲーム映像 / I章 / 開発中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 18.6,
+        "actualOut": 22,
+        "settledBounds": [
+          325.640380859375,
+          188.4736328125,
+          674.359619140625,
+          215.5263671875
+        ],
+        "settledAt": 18.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 7",
+        "text": "自分の足で、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 18.6,
+        "actualOut": 22,
+        "settledBounds": [
+          295.53564453125,
+          264.0849609375,
+          704.46435546875,
+          335.9150390625
+        ],
+        "settledAt": 18.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 7",
+        "text": "登る。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 18.6,
+        "actualOut": 22,
+        "settledBounds": [
+          398.128662109375,
+          365.169189453125,
+          601.871337890625,
+          440.830810546875
+        ],
+        "settledAt": 18.833333333333332,
+        "positionKeys": [
+          {
+            "time": 18.6,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 18.733333333333334,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 18.833333333333332,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 7",
+        "text": "跳んで、位置を見て、また跳ぶ。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 18.6,
+        "actualOut": 22,
+        "settledBounds": [
+          248.2666015625,
+          475.824462890625,
+          751.7333984375,
+          508.175537109375
+        ],
+        "settledAt": 18.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Detail label 8",
+        "text": "注目部分を拡大",
+        "font": "Meiryo",
+        "size": 25,
+        "actualIn": 22,
+        "actualOut": 26.2,
+        "settledBounds": [
+          412.98828125,
+          1598.61083984375,
+          587.01171875,
+          1621.38916015625
+        ],
+        "settledAt": 22,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 8",
+        "text": "実ゲーム映像 / I章 / 開発中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 22,
+        "actualOut": 26.2,
+        "settledBounds": [
+          325.640380859375,
+          188.4736328125,
+          674.359619140625,
+          215.5263671875
+        ],
+        "settledAt": 22,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 8",
+        "text": "灯した火が、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 22,
+        "actualOut": 26.2,
+        "settledBounds": [
+          291.99365234375,
+          264.14208984375,
+          708.00634765625,
+          335.85791015625
+        ],
+        "settledAt": 22,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 8",
+        "text": "街へ返る。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 22,
+        "actualOut": 26.2,
+        "settledBounds": [
+          313.211669921875,
+          365.210693359375,
+          686.788330078125,
+          440.789306640625
+        ],
+        "settledAt": 22.233333333333334,
+        "positionKeys": [
+          {
+            "time": 22,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 22.133333333333333,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 22.233333333333334,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 8",
+        "text": "遠くの窓が、灯に応える。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 22,
+        "actualOut": 26.2,
+        "settledBounds": [
+          300.68115234375,
+          475.59375,
+          699.31884765625,
+          508.40625
+        ],
+        "settledAt": 22,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Detail label 9",
+        "text": "注目部分を拡大",
+        "font": "Meiryo",
+        "size": 25,
+        "actualIn": 26.2,
+        "actualOut": 28.6,
+        "settledBounds": [
+          412.98828125,
+          1598.61083984375,
+          587.01171875,
+          1621.38916015625
+        ],
+        "settledAt": 26.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 9",
+        "text": "実ゲーム映像 / II章 / 開発中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 26.2,
+        "actualOut": 28.6,
+        "settledBounds": [
+          318.771728515625,
+          188.4736328125,
+          681.228271484375,
+          215.5263671875
+        ],
+        "settledAt": 26.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 9",
+        "text": "風の回廊も、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 26.2,
+        "actualOut": 28.6,
+        "settledBounds": [
+          291.4794921875,
+          265.24658203125,
+          708.5205078125,
+          334.75341796875
+        ],
+        "settledAt": 26.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 9",
+        "text": "越えて。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 26.2,
+        "actualOut": 28.6,
+        "settledBounds": [
+          355.711669921875,
+          364.339111328125,
+          644.288330078125,
+          441.660888671875
+        ],
+        "settledAt": 26.433333333333334,
+        "positionKeys": [
+          {
+            "time": 26.2,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 26.333333333333332,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 26.433333333333334,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 9",
+        "text": "II / 風と仕掛けを読む。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 26.2,
+        "actualOut": 28.6,
+        "settledBounds": [
+          314.07958984375,
+          474.61962890625,
+          685.92041015625,
+          509.38037109375
+        ],
+        "settledAt": 26.2,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Detail label 10",
+        "text": "注目部分を拡大",
+        "font": "Meiryo",
+        "size": 25,
+        "actualIn": 28.6,
+        "actualOut": 31,
+        "settledBounds": [
+          412.98828125,
+          1598.61083984375,
+          587.01171875,
+          1621.38916015625
+        ],
+        "settledAt": 28.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 10",
+        "text": "実ゲーム映像 / III章 / 開発中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 28.6,
+        "actualOut": 31,
+        "settledBounds": [
+          311.903076171875,
+          188.4736328125,
+          688.096923828125,
+          215.5263671875
+        ],
+        "settledAt": 28.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 10",
+        "text": "雲の先には、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 28.6,
+        "actualOut": 31,
+        "settledBounds": [
+          292.8505859375,
+          265.4560546875,
+          707.1494140625,
+          334.5439453125
+        ],
+        "settledAt": 28.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 10",
+        "text": "星の灯台。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 28.6,
+        "actualOut": 31,
+        "settledBounds": [
+          313.336181640625,
+          365.27294921875,
+          686.663818359375,
+          440.72705078125
+        ],
+        "settledAt": 28.833333333333332,
+        "positionKeys": [
+          {
+            "time": 28.6,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 28.733333333333334,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 28.833333333333332,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 10",
+        "text": "III / 見上げる景色が変わる。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 28.6,
+        "actualOut": 31,
+        "settledBounds": [
+          270.17578125,
+          474.294921875,
+          729.82421875,
+          509.705078125
+        ],
+        "settledAt": 28.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Detail label 11",
+        "text": "注目部分を拡大",
+        "font": "Meiryo",
+        "size": 25,
+        "actualIn": 31,
+        "actualOut": 33.6,
+        "settledBounds": [
+          412.98828125,
+          1598.61083984375,
+          587.01171875,
+          1621.38916015625
+        ],
+        "settledAt": 31,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 11",
+        "text": "実ゲーム映像 / IV章 / 開発中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 31,
+        "actualOut": 33.6,
+        "settledBounds": [
+          315.805419921875,
+          188.4736328125,
+          684.194580078125,
+          215.5263671875
+        ],
+        "settledAt": 31,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 11",
+        "text": "帰る道にも、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 31,
+        "actualOut": 33.6,
+        "settledBounds": [
+          293.66943359375,
+          264.65625,
+          706.33056640625,
+          335.34375
+        ],
+        "settledAt": 31,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 11",
+        "text": "仕掛けを。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 31,
+        "actualOut": 33.6,
+        "settledBounds": [
+          313.128662109375,
+          364.546630859375,
+          686.871337890625,
+          441.453369140625
+        ],
+        "settledAt": 31.233333333333334,
+        "positionKeys": [
+          {
+            "time": 31,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 31.133333333333333,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 31.233333333333334,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 11",
+        "text": "IV / 返り火の水脈。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 31,
+        "actualOut": 33.6,
+        "settledBounds": [
+          345.234375,
+          474.61962890625,
+          654.765625,
+          509.38037109375
+        ],
+        "settledAt": 31,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Detail label 12",
+        "text": "注目部分を拡大",
+        "font": "Meiryo",
+        "size": 25,
+        "actualIn": 33.6,
+        "actualOut": 36.6,
+        "settledBounds": [
+          412.98828125,
+          1598.61083984375,
+          587.01171875,
+          1621.38916015625
+        ],
+        "settledAt": 33.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 12",
+        "text": "実ゲーム映像 / V章 / 開発中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 33.6,
+        "actualOut": 36.6,
+        "settledBounds": [
+          322.674072265625,
+          188.4736328125,
+          677.325927734375,
+          215.5263671875
+        ],
+        "settledAt": 33.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 12",
+        "text": "見上げた街へ、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 33.6,
+        "actualOut": 36.6,
+        "settledBounds": [
+          253.06982421875,
+          264.06591796875,
+          746.93017578125,
+          335.93408203125
+        ],
+        "settledAt": 33.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 12",
+        "text": "帰ってくる。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 33.6,
+        "actualOut": 36.6,
+        "settledBounds": [
+          273.01513671875,
+          363.986328125,
+          726.98486328125,
+          442.013671875
+        ],
+        "settledAt": 33.833333333333336,
+        "positionKeys": [
+          {
+            "time": 33.6,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 33.733333333333334,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 33.833333333333336,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 12",
+        "text": "V / 夜明けの街。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 33.6,
+        "actualOut": 36.6,
+        "settledBounds": [
+          370.74951171875,
+          474.61962890625,
+          629.25048828125,
+          509.38037109375
+        ],
+        "settledAt": 33.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Current demo statement",
+        "text": "ここから、本制作へ。",
+        "font": "Meiryo",
+        "size": 65,
+        "actualIn": 36.6,
+        "actualOut": 40,
+        "settledBounds": [
+          197.69287109375,
+          1360.626220703125,
+          802.30712890625,
+          1419.373779296875
+        ],
+        "settledAt": 36.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 13",
+        "text": "実ゲーム / 全5章デモ",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 36.6,
+        "actualOut": 40,
+        "settledBounds": [
+          367.129150390625,
+          187.97265625,
+          632.870849609375,
+          216.02734375
+        ],
+        "settledAt": 36.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 13",
+        "text": "全5章のデモが、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 36.6,
+        "actualOut": 40,
+        "settledBounds": [
+          226.0478515625,
+          263.30419921875,
+          773.9521484375,
+          336.69580078125
+        ],
+        "settledAt": 36.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 13",
+        "text": "できました。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 36.6,
+        "actualOut": 40,
+        "settledBounds": [
+          271.6455078125,
+          365.27294921875,
+          728.3544921875,
+          440.72705078125
+        ],
+        "settledAt": 36.833333333333336,
+        "positionKeys": [
+          {
+            "time": 36.6,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 36.733333333333334,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 36.833333333333336,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 13",
+        "text": "ここから、本制作へ。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 36.6,
+        "actualOut": 40,
+        "settledBounds": [
+          337.21923828125,
+          476.183349609375,
+          662.78076171875,
+          507.816650390625
+        ],
+        "settledAt": 36.6,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Code label",
+        "text": "ゲームの実装ファイルから",
+        "font": "Meiryo",
+        "size": 32,
+        "actualIn": 40,
+        "actualOut": 44,
+        "settledBounds": [
+          309.375,
+          660.390625,
+          690.625,
+          689.609375
+        ],
+        "settledAt": 40,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Real code excerpt",
+        "text": "func carried() -> int:\n    for i in cores.size():\n        if cores[i].place==\"carried\": return i\n    return -1\n",
+        "font": "Consolas",
+        "size": 33,
+        "actualIn": 40,
+        "actualOut": 44,
+        "settledBounds": [
+          104.543212890625,
+          858.4586410522461,
+          935.456787109375,
+          1001.5413589477539
+        ],
+        "settledAt": 40,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Code source note",
+        "text": "journey_cores.gd / 123–127行（抜粋）",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 40,
+        "actualOut": 44,
+        "settledBounds": [
+          234.264892578125,
+          1265.814453125,
+          765.735107421875,
+          1294.185546875
+        ],
+        "settledAt": 40,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Making note",
+        "text": "触って、見て、また作る。",
+        "font": "Meiryo",
+        "size": 53,
+        "actualIn": 40,
+        "actualOut": 44,
+        "settledBounds": [
+          198.031982421875,
+          1411.049072265625,
+          801.968017578125,
+          1458.950927734375
+        ],
+        "settledAt": 40,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 14",
+        "text": "実コード / GDScript",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 40,
+        "actualOut": 44,
+        "settledBounds": [
+          366.72705078125,
+          187.952880859375,
+          633.27294921875,
+          216.047119140625
+        ],
+        "settledAt": 40,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 14",
+        "text": "まだ、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 40,
+        "actualOut": 44,
+        "settledBounds": [
+          411.412109375,
+          263.89453125,
+          588.587890625,
+          336.10546875
+        ],
+        "settledAt": 40,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 14",
+        "text": "制作の途中です。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 40,
+        "actualOut": 44,
+        "settledBounds": [
+          186.064453125,
+          364.795654296875,
+          813.935546875,
+          441.204345703125
+        ],
+        "settledAt": 40.233333333333334,
+        "positionKeys": [
+          {
+            "time": 40,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 40.13333333333333,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 40.233333333333334,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 14",
+        "text": "遊びの内側も、積み上げる。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 40,
+        "actualOut": 44,
+        "settledBounds": [
+          283.138427734375,
+          475.858642578125,
+          716.861572265625,
+          508.141357421875
+        ],
+        "settledAt": 40,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Concept provenance 15",
+        "text": "実ゲームは2D / このカットは開発イメージ",
+        "font": "Meiryo",
+        "size": 29,
+        "actualIn": 44,
+        "actualOut": 48,
+        "settledBounds": [
+          214.736572265625,
+          1495.51416015625,
+          785.263427734375,
+          1524.48583984375
+        ],
+        "settledAt": 44,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 15",
+        "text": "開発イメージ（3D演出）",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 44,
+        "actualOut": 48,
+        "settledBounds": [
+          354.525634765625,
+          189.732666015625,
+          645.474365234375,
+          214.267333984375
+        ],
+        "settledAt": 44,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 15",
+        "text": "この世界を、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 44,
+        "actualOut": 48,
+        "settledBounds": [
+          295.19287109375,
+          265.5322265625,
+          704.80712890625,
+          334.4677734375
+        ],
+        "settledAt": 44,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 15",
+        "text": "もっと先まで。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 44,
+        "actualOut": 48,
+        "settledBounds": [
+          230.43212890625,
+          365.5634765625,
+          769.56787109375,
+          440.4365234375
+        ],
+        "settledAt": 44.233333333333334,
+        "positionKeys": [
+          {
+            "time": 44,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 44.13333333333333,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 44.233333333333334,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 15",
+        "text": "その制作を、続けていきたい。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 44,
+        "actualOut": 48,
+        "settledBounds": [
+          266.339111328125,
+          475.961181640625,
+          733.660888671875,
+          508.038818359375
+        ],
+        "settledAt": 44,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "CAMPFIRE state",
+        "text": "公開に向けて準備中",
+        "font": "Meiryo",
+        "size": 50,
+        "actualIn": 48,
+        "actualOut": 53,
+        "settledBounds": [
+          277.34375,
+          1377.03857421875,
+          722.65625,
+          1422.96142578125
+        ],
+        "settledAt": 48,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Source label 16",
+        "text": "CAMPFIRE 公開準備中",
+        "font": "Meiryo",
+        "size": 27,
+        "actualIn": 48,
+        "actualOut": 53,
+        "settledBounds": [
+          354.855224609375,
+          189.759033203125,
+          645.144775390625,
+          214.240966796875
+        ],
+        "settledAt": 48,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title one 16",
+        "text": "制作の応援を、",
+        "font": "Meiryo",
+        "size": 78,
+        "actualIn": 48,
+        "actualOut": 53,
+        "settledBounds": [
+          252.87939453125,
+          264.94189453125,
+          747.12060546875,
+          335.05810546875
+        ],
+        "settledAt": 48,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Title two 16",
+        "text": "CAMPFIREで。",
+        "font": "Meiryo",
+        "size": 85,
+        "actualIn": 48,
+        "actualOut": 53,
+        "settledBounds": [
+          206.44287109375,
+          369.00830078125,
+          793.55712890625,
+          436.99169921875
+        ],
+        "settledAt": 48.233333333333334,
+        "positionKeys": [
+          {
+            "time": 48,
+            "position": [
+              500,
+              440
+            ]
+          },
+          {
+            "time": 48.13333333333333,
+            "position": [
+              500,
+              397
+            ]
+          },
+          {
+            "time": 48.233333333333334,
+            "position": [
+              500,
+              403
+            ]
+          }
+        ],
+        "status": "PASS"
+      },
+      {
+        "name": "Body caption 16",
+        "text": "支援募集の公開に向けて準備中。",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 48,
+        "actualOut": 53,
+        "settledBounds": [
+          248.668212890625,
+          475.927001953125,
+          751.331787109375,
+          508.072998046875
+        ],
+        "settledAt": 48,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Final author",
+        "text": "ProjectP / ぷい",
+        "font": "Meiryo",
+        "size": 35,
+        "actualIn": 53,
+        "actualOut": 60,
+        "settledBounds": [
+          367.314453125,
+          311.414794921875,
+          632.685546875,
+          348.585205078125
+        ],
+        "settledAt": 53,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Final title",
+        "text": "EMBERWAKE",
+        "font": "Meiryo",
+        "size": 105,
+        "actualIn": 53,
+        "actualOut": 60,
+        "settledBounds": [
+          147.547607421875,
+          391.368408203125,
+          852.452392578125,
+          468.631591796875
+        ],
+        "settledAt": 53,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Final subtitle",
+        "text": "灰の灯",
+        "font": "Meiryo",
+        "size": 52,
+        "actualIn": 53,
+        "actualOut": 60,
+        "settledBounds": [
+          422.6982421875,
+          517.072265625,
+          577.3017578125,
+          562.927734375
+        ],
+        "settledAt": 53,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Final support one",
+        "text": "この制作を、",
+        "font": "Meiryo",
+        "size": 60,
+        "actualIn": 53.1,
+        "actualOut": 60,
+        "settledBounds": [
+          342.4560546875,
+          1108.0322265625,
+          657.5439453125,
+          1161.9677734375
+        ],
+        "settledAt": 53.1,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Final support two",
+        "text": "応援してください。",
+        "font": "Meiryo",
+        "size": 70,
+        "actualIn": 53.1,
+        "actualOut": 60,
+        "settledBounds": [
+          206.10595703125,
+          1181.96533203125,
+          793.89404296875,
+          1248.03466796875
+        ],
+        "settledAt": 53.1,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Final campaign status",
+        "text": "CAMPFIRE / 公開に向けて準備中",
+        "font": "Meiryo",
+        "size": 32,
+        "actualIn": 53.166666666666664,
+        "actualOut": 60,
+        "settledBounds": [
+          249.15625,
+          1308.890625,
+          750.84375,
+          1341.109375
+        ],
+        "settledAt": 53.166666666666664,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Final action",
+        "text": "フォローで、公開のお知らせを。",
+        "font": "Meiryo",
+        "size": 39,
+        "actualIn": 53.233333333333334,
+        "actualOut": 60,
+        "settledBounds": [
+          221.582275390625,
+          1407.394775390625,
+          778.417724609375,
+          1442.605224609375
+        ],
+        "settledAt": 53.233333333333334,
+        "positionKeys": [],
+        "status": "PASS"
+      },
+      {
+        "name": "Author bug",
+        "text": "ぷい / 制作の記録",
+        "font": "Meiryo",
+        "size": 24,
+        "actualIn": 0,
+        "actualOut": 53,
+        "settledBounds": [
+          106.087890625,
+          105.876953125,
+          303.912109375,
+          130.123046875
+        ],
+        "settledAt": 0,
+        "positionKeys": [],
+        "status": "PASS"
+      }
+    ]
+  },
+  "cgLabels": [
+    {
+      "scene": 2,
+      "range": [
+        3.2,
+        6.8
+      ],
+      "label": "開発イメージ（3D演出）",
+      "provenance": "実ゲームは2D / このカットは開発イメージ",
+      "opacity": [
+        100,
+        100
+      ],
+      "status": "PASS"
+    },
+    {
+      "scene": 3,
+      "range": [
+        6.8,
+        9.8
+      ],
+      "label": "開発イメージ（3D演出）",
+      "provenance": "実ゲームは2D / このカットは開発イメージ",
+      "opacity": [
+        100,
+        100
+      ],
+      "status": "PASS"
+    },
+    {
+      "scene": 15,
+      "range": [
+        44,
+        48
+      ],
+      "label": "開発イメージ（3D演出）",
+      "provenance": "実ゲームは2D / このカットは開発イメージ",
+      "opacity": [
+        100,
+        100
+      ],
+      "status": "PASS"
+    }
+  ],
+  "sourceRanges": [
+    {
+      "scene": 0,
+      "a": 0,
+      "b": 1.2,
+      "kind": "game",
+      "label": "実ゲーム映像 / I章 / 開発中",
+      "heading": [
+        "この石を、",
+        "はめると…"
+      ],
+      "caption": "同じ印の穴へ。"
+    },
+    {
+      "scene": 1,
+      "a": 1.2,
+      "b": 3.2,
+      "kind": "game",
+      "label": "実ゲーム映像 / I章 / 開発中",
+      "heading": [
+        "道が、",
+        "できる。"
+      ],
+      "caption": "置く場所が、遊びになる。"
+    },
+    {
+      "scene": 2,
+      "a": 3.2,
+      "b": 6.8,
+      "kind": "cinema",
+      "label": "開発イメージ（3D演出）",
+      "heading": [
+        "EMBERWAKE",
+        "制作、本格化。"
+      ],
+      "caption": "灰の灯 / ProjectP・ぷい"
+    },
+    {
+      "scene": 3,
+      "a": 6.8,
+      "b": 9.8,
+      "kind": "cinema",
+      "label": "開発イメージ（3D演出）",
+      "heading": [
+        "この街に、",
+        "もう一度、灯を。"
+      ],
+      "caption": "灯を運ぶ2Dアクションパズル。"
+    },
+    {
+      "scene": 4,
+      "a": 9.8,
+      "b": 12,
+      "kind": "game",
+      "label": "実ゲーム映像 / I章 / 開発中",
+      "heading": [
+        "制作中の",
+        "ぷいです。"
+      ],
+      "caption": "ここから、この世界を育てます。"
+    },
+    {
+      "scene": 5,
+      "a": 12,
+      "b": 15.6,
+      "kind": "game",
+      "label": "実ゲーム映像 / I章 / 開発中",
+      "heading": [
+        "芯石を、",
+        "運ぶ。"
+      ],
+      "caption": "同じ刻印の壁を探して。"
+    },
+    {
+      "scene": 6,
+      "a": 15.6,
+      "b": 18.6,
+      "kind": "game",
+      "label": "実ゲーム映像 / I章 / 開発中",
+      "heading": [
+        "はめると、",
+        "道が起きる。"
+      ],
+      "caption": "現れた足場が、次の道になる。"
+    },
+    {
+      "scene": 7,
+      "a": 18.6,
+      "b": 22,
+      "kind": "game",
+      "label": "実ゲーム映像 / I章 / 開発中",
+      "heading": [
+        "自分の足で、",
+        "登る。"
+      ],
+      "caption": "跳んで、位置を見て、また跳ぶ。"
+    },
+    {
+      "scene": 8,
+      "a": 22,
+      "b": 26.2,
+      "kind": "game",
+      "label": "実ゲーム映像 / I章 / 開発中",
+      "heading": [
+        "灯した火が、",
+        "街へ返る。"
+      ],
+      "caption": "遠くの窓が、灯に応える。"
+    },
+    {
+      "scene": 9,
+      "a": 26.2,
+      "b": 28.6,
+      "kind": "game",
+      "label": "実ゲーム映像 / II章 / 開発中",
+      "heading": [
+        "風の回廊も、",
+        "越えて。"
+      ],
+      "caption": "II / 風と仕掛けを読む。"
+    },
+    {
+      "scene": 10,
+      "a": 28.6,
+      "b": 31,
+      "kind": "game",
+      "label": "実ゲーム映像 / III章 / 開発中",
+      "heading": [
+        "雲の先には、",
+        "星の灯台。"
+      ],
+      "caption": "III / 見上げる景色が変わる。"
+    },
+    {
+      "scene": 11,
+      "a": 31,
+      "b": 33.6,
+      "kind": "game",
+      "label": "実ゲーム映像 / IV章 / 開発中",
+      "heading": [
+        "帰る道にも、",
+        "仕掛けを。"
+      ],
+      "caption": "IV / 返り火の水脈。"
+    },
+    {
+      "scene": 12,
+      "a": 33.6,
+      "b": 36.6,
+      "kind": "game",
+      "label": "実ゲーム映像 / V章 / 開発中",
+      "heading": [
+        "見上げた街へ、",
+        "帰ってくる。"
+      ],
+      "caption": "V / 夜明けの街。"
+    },
+    {
+      "scene": 13,
+      "a": 36.6,
+      "b": 40,
+      "kind": "still",
+      "label": "実ゲーム / 全5章デモ",
+      "heading": [
+        "全5章のデモが、",
+        "できました。"
+      ],
+      "caption": "ここから、本制作へ。"
+    },
+    {
+      "scene": 14,
+      "a": 40,
+      "b": 44,
+      "kind": "code",
+      "label": "実コード / GDScript",
+      "heading": [
+        "まだ、",
+        "制作の途中です。"
+      ],
+      "caption": "遊びの内側も、積み上げる。"
+    },
+    {
+      "scene": 15,
+      "a": 44,
+      "b": 48,
+      "kind": "cinema",
+      "label": "開発イメージ（3D演出）",
+      "heading": [
+        "この世界を、",
+        "もっと先まで。"
+      ],
+      "caption": "その制作を、続けていきたい。"
+    },
+    {
+      "scene": 16,
+      "a": 48,
+      "b": 53,
+      "kind": "funding",
+      "label": "CAMPFIRE 公開準備中",
+      "heading": [
+        "制作の応援を、",
+        "CAMPFIREで。"
+      ],
+      "caption": "支援募集の公開に向けて準備中。"
+    },
+    {
+      "scene": 17,
+      "a": 53,
+      "b": 60,
+      "kind": "end",
+      "label": "公開準備中",
+      "heading": [
+        "EMBERWAKE",
+        "灰の灯"
+      ],
+      "caption": "この制作を、応援してください。"
+    }
+  ],
+  "requiredFindings": [],
+  "remainingVisualChecks": [
+    "Title-two入場時の矩形接触は短い移動とwhip下に存在する場合がある。主文の滞在に重なりはないが、最終frameで実glyphとwashを検品する。",
+    "実ゲームfocusと実際の人物・芯石・足場/灯火の関係、図板/ラベルの可読性、CGの全画角、Code indentは最終動画の抽出画像で確認する。"
+  ],
+  "limits": {
+    "finalMp4": "PENDING",
+    "fullRealTimeWatchAndAudition": "NOT_PERFORMED",
+    "organicPlayerUiOcclusion": "NOT_TESTED",
+    "nativeRendererExecutionByThisAgent": "NOT_PERFORMED",
+    "viralPrediction": "NOT_DETERMINED"
+  }
+}

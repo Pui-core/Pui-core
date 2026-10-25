@@ -1,0 +1,599 @@
+{
+  "version": "EMBERWAKE-60-INDEPENDENT-FINAL-IMAGE-QA-1",
+  "reviewedAt": "2026-10-25T04:11:00.904Z",
+  "reviewer": "/root/kinetic_visual_qa",
+  "issue": 88,
+  "status": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
+  "summary": "最終MP4の全18場面代表画像、全編3fpsサンプル、全17境界の各12連続フレーム、高解像度16枚を目視。確認範囲で必須修正なし。入場時の見出し／副文近接は着地後に解消。全編実時間視聴・試聴や投稿実機UI安全を合格判定したものではない。",
+  "artifact": {
+    "video": "videos/01-emberwake-campfire-60.mp4",
+    "videoSha256": "36fd2913a8ea5c707aaf37fd9f1dbc28d62db40a2b051b2bcf7ff6bf78d8e864",
+    "bytes": 14793039,
+    "frames": 1800,
+    "fps": 30,
+    "durationSeconds": 60
+  },
+  "binding": {
+    "status": "PASS_ACTUAL_FILES_MATCH_DECLARED_FINAL_SHA",
+    "videoShaMatched": [
+      "actual MP4",
+      "rendered.json",
+      "technical.json",
+      "review-frames.json",
+      "review-progress.json"
+    ],
+    "reviewManifest": "qa/01-emberwake-campfire-60/review-frames.json",
+    "reviewManifestSha256": "371e0470016b16181c7f17c9ebe644b3c706ed2b4f37e648080cbdcf0bc5cc30",
+    "reviewProgressSha256": "b0c786114936bccba23bc7ef6ca91c6324328cb4a85870b238fc684c21b32299",
+    "reviewPlanSha256": "986641cfeb8bcaecf662052b33f71607e2fac675d794080b0ef39d16c8398421",
+    "reviewImageFilesCheckedAgainstManifest": 39,
+    "imageShaMismatches": 0,
+    "extraction": "制作パイプラインが最終MP4から抽出。独立担当は映像SHAと全レビュー画像の現物SHAを照合し、各画像をview_imageで目視。画像を再抽出したとの主張はしない。",
+    "scope": "本レポートの成果物bindingは最終MP4とその抽出画像のみ。元native監査は別履歴であり、F再リンク後のnative SHAをこの画像判定へ結び付けない。"
+  },
+  "coverage": {
+    "allScenes": {
+      "file": "qa/01-emberwake-campfire-60/all-scenes.jpg",
+      "sha256": "2211e801a9a285e5da842387ddc572f93ba75e216bb8603c9522e80310f363d5",
+      "sceneCount": 18,
+      "sampleFrames": [
+        11,
+        46,
+        107,
+        214,
+        305,
+        371,
+        479,
+        569,
+        671,
+        797,
+        869,
+        941,
+        1019,
+        1109,
+        1211,
+        1331,
+        1451,
+        1601
+      ],
+      "status": "PASS_ALL_18_SCENE_REPRESENTATIVES_VIEWED"
+    },
+    "stories": [
+      {
+        "index": 1,
+        "startSeconds": 0,
+        "endSecondsExclusive": 10,
+        "file": "qa/01-emberwake-campfire-60/story-1.jpg",
+        "sha256": "2b76e447d4704f9c47df727e26f25de8817a32e009e0280280185dd6d5b93800",
+        "sampleFrameFirst": 0,
+        "sampleFrameLast": 290,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED"
+      },
+      {
+        "index": 2,
+        "startSeconds": 10,
+        "endSecondsExclusive": 20,
+        "file": "qa/01-emberwake-campfire-60/story-2.jpg",
+        "sha256": "5a9c27dc28e1e6914ea5baefade7f31c6b0184a9760045d965c0f9e28d5961bf",
+        "sampleFrameFirst": 300,
+        "sampleFrameLast": 590,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED"
+      },
+      {
+        "index": 3,
+        "startSeconds": 20,
+        "endSecondsExclusive": 30,
+        "file": "qa/01-emberwake-campfire-60/story-3.jpg",
+        "sha256": "58900274fd75e58b30713c86d2ac2bd1d62ea5b0e0289c0a53d603315bdded99",
+        "sampleFrameFirst": 600,
+        "sampleFrameLast": 890,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED"
+      },
+      {
+        "index": 4,
+        "startSeconds": 30,
+        "endSecondsExclusive": 40,
+        "file": "qa/01-emberwake-campfire-60/story-4.jpg",
+        "sha256": "4c37f64e991a9bb200574e5c5eaf8e11cd81e05765286c584076ea420873dbf3",
+        "sampleFrameFirst": 900,
+        "sampleFrameLast": 1190,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED"
+      },
+      {
+        "index": 5,
+        "startSeconds": 40,
+        "endSecondsExclusive": 50,
+        "file": "qa/01-emberwake-campfire-60/story-5.jpg",
+        "sha256": "e0024f28623f9eb66806dc92714eba1e19d57a2ef05691d7d685986a52f53f83",
+        "sampleFrameFirst": 1200,
+        "sampleFrameLast": 1490,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED"
+      },
+      {
+        "index": 6,
+        "startSeconds": 50,
+        "endSecondsExclusive": 60,
+        "file": "qa/01-emberwake-campfire-60/story-6.jpg",
+        "sha256": "84f67f8e0ad713b3281847612170ccc7e9533a50621729525b8838d507ce6838",
+        "sampleFrameFirst": 1500,
+        "sampleFrameLast": 1790,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED"
+      }
+    ],
+    "storySamplingFps": 3,
+    "storySamples": 180,
+    "boundaries": [
+      {
+        "index": 1,
+        "timeSeconds": 1.2,
+        "file": "qa/01-emberwake-campfire-60/boundary-01.jpg",
+        "sha256": "e0ab4910eb397c1ac7834c23c2a7311ee5a272c075063cfc9d615d1e6aeb5f3b",
+        "startFrame": 33,
+        "endFrameInclusive": 44,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "道が、できる。への見出し変更。入場直後の副文近接が後半で解消。ゲーム映像は継続。"
+      },
+      {
+        "index": 2,
+        "timeSeconds": 3.2,
+        "file": "qa/01-emberwake-campfire-60/boundary-02.jpg",
+        "sha256": "6cfa02299b6bfe1f8226cb49a00d5d907716aee2bdeb358ce73ca2414baa10fe",
+        "startFrame": 93,
+        "endFrameInclusive": 104,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "ゲームから3Dへ金色ワイプ。短い全面被覆の後、見出しとCG表示2箇所が分離。"
+      },
+      {
+        "index": 3,
+        "timeSeconds": 6.8,
+        "file": "qa/01-emberwake-campfire-60/boundary-03.jpg",
+        "sha256": "7eb9daf76279e6a4e34999cfded43c22c933a7ec1677246062b5b1df51d3b0e0",
+        "startFrame": 201,
+        "endFrameInclusive": 212,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "3Dの寄りから全体へ。ワイプ後に主人公と浮遊足場を確認、CG表示を維持。"
+      },
+      {
+        "index": 4,
+        "timeSeconds": 9.8,
+        "file": "qa/01-emberwake-campfire-60/boundary-04.jpg",
+        "sha256": "278380550736260bac4527ca0e0e4b1a024740e1089121950e04e4ee2bf87e8d",
+        "startFrame": 291,
+        "endFrameInclusive": 302,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "3Dから実ゲームI章へ切替。見出し入場後に副文との間隔が戻る。"
+      },
+      {
+        "index": 5,
+        "timeSeconds": 12,
+        "file": "qa/01-emberwake-campfire-60/boundary-05.jpg",
+        "sha256": "72d4d1b0bef5f139761db44a75a798f1f586a71b4c7b1a9d17952c8fd74f5ae5",
+        "startFrame": 357,
+        "endFrameInclusive": 368,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "芯石を運ぶ場面。下段の金色台／横スライドは入場のみで、後半はプレイヤーが表示。"
+      },
+      {
+        "index": 6,
+        "timeSeconds": 15.6,
+        "file": "qa/01-emberwake-campfire-60/boundary-06.jpg",
+        "sha256": "4a24d7582a4b6f02a180ee8c4b45f191951b3c9081e3d48a8c38f55835d17f91",
+        "startFrame": 465,
+        "endFrameInclusive": 476,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "芯石をはめる場面。副文への接近は入場のみで、着地後は分離。"
+      },
+      {
+        "index": 7,
+        "timeSeconds": 18.6,
+        "file": "qa/01-emberwake-campfire-60/boundary-07.jpg",
+        "sha256": "8606b2d64f2c29b16343ffedcf91ab612c6f1ec0013960b7b7e3a1c4447bb8e1",
+        "startFrame": 555,
+        "endFrameInclusive": 566,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "跳躍場面。下段の入場後、プレイヤーと登る足場が見える状態へ戻る。"
+      },
+      {
+        "index": 8,
+        "timeSeconds": 22,
+        "file": "qa/01-emberwake-campfire-60/boundary-08.jpg",
+        "sha256": "6b74965c568a301982a9fb0c1cdd59b1df69c0e3605d4b36d5482d5e4191317e",
+        "startFrame": 657,
+        "endFrameInclusive": 668,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "火を灯す場面。副文近接は入場のみ、上下枠内に対象を維持。"
+      },
+      {
+        "index": 9,
+        "timeSeconds": 26.2,
+        "file": "qa/01-emberwake-campfire-60/boundary-09.jpg",
+        "sha256": "7597b8d6c11dc456e8a43e7d3c29be5fba5fe50ada535ffd465f56039708b833",
+        "startFrame": 783,
+        "endFrameInclusive": 794,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "II章へ金色ワイプ。後半の上下枠でプレイヤーと風の画面を確認。"
+      },
+      {
+        "index": 10,
+        "timeSeconds": 28.6,
+        "file": "qa/01-emberwake-campfire-60/boundary-10.jpg",
+        "sha256": "fed6e27bbf555df6b849f3a042aaae070d540438038eb61718db11ba86c6b3c4",
+        "startFrame": 855,
+        "endFrameInclusive": 866,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "III章へ切替。見出しの着地後に副文が分離、プレイヤー表示を維持。"
+      },
+      {
+        "index": 11,
+        "timeSeconds": 31,
+        "file": "qa/01-emberwake-campfire-60/boundary-11.jpg",
+        "sha256": "3fdaa171032b77cf9b18105b8fa076cb17b064b509311b0d89a7e95ecadf1860",
+        "startFrame": 927,
+        "endFrameInclusive": 938,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "IV章へワイプ。後半に芯石／刻印枠／プレイヤーが表示。"
+      },
+      {
+        "index": 12,
+        "timeSeconds": 33.6,
+        "file": "qa/01-emberwake-campfire-60/boundary-12.jpg",
+        "sha256": "7f37c9a4d37aea07959be91f5e35af612cdc61103dbf8a6ba0bfb2bf0eb3f3c2",
+        "startFrame": 1005,
+        "endFrameInclusive": 1016,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "V章へ切替。見出し着地後に副文が分離、プレイヤーが枠内。"
+      },
+      {
+        "index": 13,
+        "timeSeconds": 36.6,
+        "file": "qa/01-emberwake-campfire-60/boundary-13.jpg",
+        "sha256": "659852662cbb9666e333769da448f32d222159c3e5c9c76948507b83e82739f5",
+        "startFrame": 1095,
+        "endFrameInclusive": 1106,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "全5章デモの静止画へ切替。見出し／副文／下部文は着地後に分離。"
+      },
+      {
+        "index": 14,
+        "timeSeconds": 40,
+        "file": "qa/01-emberwake-campfire-60/boundary-14.jpg",
+        "sha256": "ece0bcf1030cea87a297a6bbc3f780c69b2fc7b625a7dc0556ca08d94bcfc020",
+        "startFrame": 1197,
+        "endFrameInclusive": 1208,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "実コードへ切替。見出しの近接は入場のみで、コード抜粋の4行は枠内。"
+      },
+      {
+        "index": 15,
+        "timeSeconds": 44,
+        "file": "qa/01-emberwake-campfire-60/boundary-15.jpg",
+        "sha256": "be7823e396ee59f4097ac0bf13a3a16c759fa90f21682cd7def66ee5e02ff8ea",
+        "startFrame": 1317,
+        "endFrameInclusive": 1328,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "3D高角度カットへワイプ。後半は主人公と足場の全体、CG表示2箇所を確認。"
+      },
+      {
+        "index": 16,
+        "timeSeconds": 48,
+        "file": "qa/01-emberwake-campfire-60/boundary-16.jpg",
+        "sha256": "3d5c803bc7a93997b8e80a70afde1f9091728e57561e58513d9f5439f5bcefdb",
+        "startFrame": 1437,
+        "endFrameInclusive": 1448,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "CAMPFIRE準備中カードへワイプ。後半は制作応援文とオレンジの準備中帯が分離。"
+      },
+      {
+        "index": 17,
+        "timeSeconds": 53,
+        "file": "qa/01-emberwake-campfire-60/boundary-17.jpg",
+        "sha256": "ff2a3ebdeb7aef092270c415fdee79b42bd586bfb6c7aa837818fcb3f18b05cb",
+        "startFrame": 1587,
+        "endFrameInclusive": 1598,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "終端へ切替。タイトルと画像を先に出し、応援文／準備中／フォロー文が後から入り分離。"
+      }
+    ],
+    "boundaryCount": 17,
+    "boundaryConsecutiveFrameSamples": 204,
+    "highResolution": [
+      {
+        "timeSeconds": 0.7,
+        "frame": 21,
+        "file": "qa/01-emberwake-campfire-60/final-0.7.png",
+        "sha256": "e028b2e48c94da04eea20ff54d897168c82ad92ee3114d0e42265b93256f71b6",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 5,
+        "frame": 150,
+        "file": "qa/01-emberwake-campfire-60/final-5.png",
+        "sha256": "f48bdff98d8bcead562a40cbd250b2a1b981a185049a44b58f8669bc8fd35ebb",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 14,
+        "frame": 420,
+        "file": "qa/01-emberwake-campfire-60/final-14.png",
+        "sha256": "c865099b085ecf5cc6755ed2d97bb815e60257dbbb5da1b39201db639e5adb2d",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 20.3,
+        "frame": 609,
+        "file": "qa/01-emberwake-campfire-60/final-20.3.png",
+        "sha256": "40556968b8290a42e1f6e63925b64efa97c364e27719efcb1a42f3e803d6da6a",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 24,
+        "frame": 720,
+        "file": "qa/01-emberwake-campfire-60/final-24.png",
+        "sha256": "98d7804e55a309130cef3acd57b8dff908f077fdfdf39de9dfc280dcf2e9223d",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 27.3,
+        "frame": 819,
+        "file": "qa/01-emberwake-campfire-60/final-27.3.png",
+        "sha256": "a640f84ee5160a6b36a02985c958b5ae72da7793bb917be1ae42ba32178e9641",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 29.7,
+        "frame": 891,
+        "file": "qa/01-emberwake-campfire-60/final-29.7.png",
+        "sha256": "057893405f462981550b992a0385a544d238e18dc5fb473e23956b934b2a7652",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 32.3,
+        "frame": 969,
+        "file": "qa/01-emberwake-campfire-60/final-32.3.png",
+        "sha256": "799f0f123c8ff56a8a8680381152f50a8a54474f0dfeb0c0d975be411d3ff757",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 35,
+        "frame": 1050,
+        "file": "qa/01-emberwake-campfire-60/final-35.png",
+        "sha256": "a9c7f9670395986e8d79897307d724b7274686caa9afdd6527c5c27b9e22374c",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 38,
+        "frame": 1140,
+        "file": "qa/01-emberwake-campfire-60/final-38.png",
+        "sha256": "a195dc04dd15ced9a6c4897f523cb2c3b1f1a6361bae2f487e9f3bc19ab1672a",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 41.5,
+        "frame": 1245,
+        "file": "qa/01-emberwake-campfire-60/final-41.5.png",
+        "sha256": "77dbf07236fd81fef46d38c063096a7d291995722b4d446cb46328e8f258c64e",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 46,
+        "frame": 1380,
+        "file": "qa/01-emberwake-campfire-60/final-46.png",
+        "sha256": "76b4a030edfd6591a54d652e64f5fcba10e4fcbc3eb92e568b030bf694db0a22",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 50.5,
+        "frame": 1515,
+        "file": "qa/01-emberwake-campfire-60/final-50.5.png",
+        "sha256": "348a992d37f6ba568cb7a5845a3d0add5b7e31f66f8279170642d71bcb85b0c8",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 54,
+        "frame": 1620,
+        "file": "qa/01-emberwake-campfire-60/final-54.png",
+        "sha256": "83beea428923d039708c107150f02abcd3bc1e5c8110d48f2a4cd0e68f05176d",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 57,
+        "frame": 1710,
+        "file": "qa/01-emberwake-campfire-60/final-57.png",
+        "sha256": "57f6e0e4d0608538f9e40552549df20547e296e7d8faf3d5c8b22c07fdce74f3",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      },
+      {
+        "timeSeconds": 59.8,
+        "frame": 1794,
+        "file": "qa/01-emberwake-campfire-60/final-59.8.png",
+        "sha256": "18c953bb5a19438561e08a062a212a5ce7db3eafbc37a3c12a16974268242898",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW"
+      }
+    ],
+    "highResolutionCount": 16,
+    "totalReviewedImageFiles": 40,
+    "totalDisplayedFrameSamplesIncludingDuplicates": 418,
+    "distinctSampledVideoFrames": 393,
+    "totalVideoFrames": 1800,
+    "previewFrameFilesUsedAsFinalEvidence": 0
+  },
+  "observations": [
+    {
+      "status": "PASS_HOOK_AND_CAUSAL_SEQUENCE",
+      "observation": "0–3.2秒と12–26.2秒の実ゲーム画像で、芯石を持つ／同じ刻印の枠／足場が上がる／跳ぶ／火と遠くの窓が灯る変化を確認。主文は映像と別の上部領域にあり、ゲームの対象を文字で隠していない。",
+      "evidence": [
+        "qa/01-emberwake-campfire-60/story-1.jpg",
+        "qa/01-emberwake-campfire-60/story-2.jpg",
+        "qa/01-emberwake-campfire-60/story-3.jpg",
+        "qa/01-emberwake-campfire-60/final-0.7.png",
+        "qa/01-emberwake-campfire-60/final-14.png",
+        "qa/01-emberwake-campfire-60/final-20.3.png",
+        "qa/01-emberwake-campfire-60/final-24.png"
+      ]
+    },
+    {
+      "status": "PASS_TARGET_FRAMING_WITHIN_SAMPLES",
+      "observation": "上段に横長のゲーム全体を残し、下段は「注目部分を拡大」と明示。I〜V章の見た範囲で、下段のプレイヤー／ランタンは表示枠内に残り、移動に応じて背景が変わる。跳躍時に下段で地面の一部が切れる場面はあるが、上段で足場の配置が確認でき、プレイヤーの長い画面外滞在は見られない。",
+      "evidence": [
+        "qa/01-emberwake-campfire-60/story-1.jpg",
+        "qa/01-emberwake-campfire-60/story-2.jpg",
+        "qa/01-emberwake-campfire-60/story-3.jpg",
+        "qa/01-emberwake-campfire-60/story-4.jpg",
+        "qa/01-emberwake-campfire-60/final-20.3.png",
+        "qa/01-emberwake-campfire-60/final-27.3.png",
+        "qa/01-emberwake-campfire-60/final-29.7.png",
+        "qa/01-emberwake-campfire-60/final-32.3.png",
+        "qa/01-emberwake-campfire-60/final-35.png"
+      ]
+    },
+    {
+      "status": "PASS_ENTRY_CONTACT_RESOLVED_AFTER_SETTLE",
+      "observation": "見出し2行目が入場直後に副文と近接するフレームはある。全17境界の連続画像では、後半の着地したフレームで文字が分離し、滞在中の継続欠け・読み取り不能な重なりは見つからない。3.2秒の大きい見出し接近は金色ワイプの入場区間と重なる。最初の場面は0秒からの3fpsサンプルと0.7秒高解像度で着地後の分離を確認。",
+      "evidence": [
+        "qa/01-emberwake-campfire-60/boundary-01.jpg",
+        "qa/01-emberwake-campfire-60/boundary-02.jpg",
+        "qa/01-emberwake-campfire-60/boundary-04.jpg",
+        "qa/01-emberwake-campfire-60/boundary-06.jpg",
+        "qa/01-emberwake-campfire-60/boundary-08.jpg",
+        "qa/01-emberwake-campfire-60/boundary-10.jpg",
+        "qa/01-emberwake-campfire-60/boundary-12.jpg",
+        "qa/01-emberwake-campfire-60/boundary-13.jpg",
+        "qa/01-emberwake-campfire-60/boundary-14.jpg",
+        "qa/01-emberwake-campfire-60/final-0.7.png"
+      ]
+    },
+    {
+      "status": "PASS_BRIEF_PANEL_ENTRANCE_NOT_PERSISTENT_MISSING_MEDIA",
+      "observation": "12秒／18.6秒の下段は、入場直後に金色の台が見える約0.17秒の横スライド。連続画像の後半では枠内にゲーム映像が入り、プレイヤーが見える。金色の全面ワイプも短い境界演出として前後画像につながり、黒い素材欠落・空の画面が長く残る状態は見られない。",
+      "evidence": [
+        "qa/01-emberwake-campfire-60/boundary-02.jpg",
+        "qa/01-emberwake-campfire-60/boundary-03.jpg",
+        "qa/01-emberwake-campfire-60/boundary-05.jpg",
+        "qa/01-emberwake-campfire-60/boundary-07.jpg",
+        "qa/01-emberwake-campfire-60/boundary-09.jpg",
+        "qa/01-emberwake-campfire-60/boundary-11.jpg",
+        "qa/01-emberwake-campfire-60/boundary-15.jpg",
+        "qa/01-emberwake-campfire-60/boundary-16.jpg"
+      ]
+    },
+    {
+      "status": "PASS_GAME_AND_CG_DISCLOSURE",
+      "observation": "3.2–6.8秒、6.8–9.8秒、44–48秒の3Dカットで、上部「開発イメージ（3D演出）」と下部「実ゲームは2D / このカットは開発イメージ」を確認。実ゲームのI〜V章には「実ゲーム映像／開発中」の表示がある。最終画像で双方の表示が判読でき、3Dカットを実際の2Dプレイ映像と同一の表示にはしていない。",
+      "evidence": [
+        "qa/01-emberwake-campfire-60/story-1.jpg",
+        "qa/01-emberwake-campfire-60/story-5.jpg",
+        "qa/01-emberwake-campfire-60/boundary-02.jpg",
+        "qa/01-emberwake-campfire-60/boundary-03.jpg",
+        "qa/01-emberwake-campfire-60/boundary-15.jpg",
+        "qa/01-emberwake-campfire-60/final-5.png",
+        "qa/01-emberwake-campfire-60/final-46.png"
+      ]
+    },
+    {
+      "status": "PASS_ACTUAL_CODE_DISPLAY",
+      "observation": "40–44秒は「実コード / GDScript」「ゲームの実装ファイルから」「journey_cores.gd / 123–127行（抜粋）」と表示。41.5秒の最終PNGでfunc／for／if／returnの字下げと4行全体を読み取れる。エディターを操作している画面という主張は無い。",
+      "evidence": [
+        "qa/01-emberwake-campfire-60/story-5.jpg",
+        "qa/01-emberwake-campfire-60/boundary-14.jpg",
+        "qa/01-emberwake-campfire-60/final-41.5.png"
+      ]
+    },
+    {
+      "status": "PASS_CREATOR_AND_WORK_CONNECTION",
+      "observation": "「ぷい / 制作の記録」、9.8秒からの「制作中のぷいです。」、EMBERWAKE／灰の灯／ProjectP・ぷい、40秒からの制作途中の文、終端のProjectP／ぷいを確認。完成品と作者名だけでなく、実ゲームおよび実装抜粋から制作を続ける人物へのつながりが表示される。これは画面内表現の確認で、本人の感情や苦労を推測した判定ではない。",
+      "evidence": [
+        "qa/01-emberwake-campfire-60/all-scenes.jpg",
+        "qa/01-emberwake-campfire-60/story-2.jpg",
+        "qa/01-emberwake-campfire-60/final-5.png",
+        "qa/01-emberwake-campfire-60/final-41.5.png",
+        "qa/01-emberwake-campfire-60/final-54.png"
+      ]
+    },
+    {
+      "status": "PASS_FUNDING_STATE_COPY",
+      "observation": "48–53秒で「CAMPFIRE 公開準備中」「支援募集の公開に向けて準備中。」「公開に向けて準備中」、53秒以降も同じ準備段階とフォローによる公開告知を表示。公開済みの支援ページや今すぐ支援できるURLがあるという画面上の断定は無い。サイトの現在の公開状態そのものはこの画像検査では再照会していない。",
+      "evidence": [
+        "qa/01-emberwake-campfire-60/story-5.jpg",
+        "qa/01-emberwake-campfire-60/story-6.jpg",
+        "qa/01-emberwake-campfire-60/boundary-16.jpg",
+        "qa/01-emberwake-campfire-60/boundary-17.jpg",
+        "qa/01-emberwake-campfire-60/final-50.5.png",
+        "qa/01-emberwake-campfire-60/final-54.png"
+      ]
+    },
+    {
+      "status": "PASS_END_CARD_READABILITY",
+      "observation": "53秒の切替後にタイトル／画像／応援文／公開準備中／フォロー案内が順番に入り、境界後半と54秒・57秒・59.8秒でそれぞれ分離して読める。写真や大きい文字を同じ位置に重ねていない。ループの終端と冒頭は別画面であり、シームレスループの保証はしていない。",
+      "evidence": [
+        "qa/01-emberwake-campfire-60/boundary-17.jpg",
+        "qa/01-emberwake-campfire-60/story-6.jpg",
+        "qa/01-emberwake-campfire-60/final-54.png",
+        "qa/01-emberwake-campfire-60/final-57.png",
+        "qa/01-emberwake-campfire-60/final-59.8.png"
+      ]
+    },
+    {
+      "status": "PASS_NO_PERSISTENT_BLACK_OR_TEXT_FAILURE_IN_VIEWED_FRAMES",
+      "observation": "確認した最終画像には、黒い欠落、素材未読込の表示、主文の恒常的な画面外欠け、歌詞の二重表示、文字を長く潰す残像は見つからない。短いワイプが画面を覆うフレームは存在し、素材欠落とは区別した。",
+      "evidence": [
+        "qa/01-emberwake-campfire-60/all-scenes.jpg",
+        "qa/01-emberwake-campfire-60/story-1.jpg",
+        "qa/01-emberwake-campfire-60/story-2.jpg",
+        "qa/01-emberwake-campfire-60/story-3.jpg",
+        "qa/01-emberwake-campfire-60/story-4.jpg",
+        "qa/01-emberwake-campfire-60/story-5.jpg",
+        "qa/01-emberwake-campfire-60/story-6.jpg"
+      ]
+    }
+  ],
+  "requiredFixes": [],
+  "entryContactDisposition": {
+    "status": "PASS_ENTRY_CONTACT_IS_TRANSIENT_WITHIN_REVIEWED_FINAL_FRAMES",
+    "scope": "保存原本で指摘した文字の入場矩形の接触を最終画面で追跡。文字が止まった後の継続欠けは確認されず、必須修正としては残さない。短い入場中の接近自体が存在しないという判定ではない。"
+  },
+  "limitations": {
+    "realTimeWholeVideoPlayback": "NOT_PERFORMED",
+    "wholeAuditoryReview": "NOT_PERFORMED",
+    "audioQuality": "本レポートの対象外。音の自然さ／全語の聴き取りは画像から判定しない。",
+    "all1800FramesIndividuallyInspected": false,
+    "unsampledFrameDefects": "未サンプルのフレームの完全不存在は保証しない。",
+    "actualTikTokOrYouTubeDeviceUiOverlay": "NOT_TESTED",
+    "organicTextSafeZoneGuarantee": false,
+    "advertisingSafeZoneAsOrganicGuarantee": false,
+    "sourceAuthorshipAndFundingSiteState": "画面内の出典／開発中／準備中の表現を確認。権利と現在の公式公開状態の外部再調査はこの最終画像QAでは実施していない。",
+    "viewerComfortAtRealTime": "NOT_TESTED",
+    "viralPerformanceOrRevenue": "NOT_PREDICTED_OR_GUARANTEED",
+    "ownerCreativeAcceptance": "OWNER_DECISION_PENDING",
+    "sourceOrVideoEditsPerformed": false,
+    "gitOperationsPerformed": false
+  }
+}

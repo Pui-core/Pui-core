@@ -1,0 +1,512 @@
+{
+  "schema": 1,
+  "createdAt": "2026-10-25T04:05:10.780Z",
+  "status": "PASS_NUMERIC_FINAL_AAC_WITH_AUDITION_LIMIT",
+  "issue": 88,
+  "artifacts": {
+    "video": "/home/pui/.claude/worktrees/Pui-core-issue-88/promotion/projectp-emberwake-60/videos/01-emberwake-campfire-60.mp4",
+    "mix": "/home/pui/.claude/worktrees/Pui-core-issue-88/promotion/projectp-emberwake-60/media/emberwake-60-mix.wav",
+    "videoSha256": "36fd2913a8ea5c707aaf37fd9f1dbc28d62db40a2b051b2bcf7ff6bf78d8e864",
+    "mixSha256": "565295d97f5525f3f6cec6dd722c5fd8b87932b58b2e10d087a3980762665da9",
+    "technicalBindingMatches": true,
+    "unchangedDuringReview": true
+  },
+  "format": {
+    "video": {
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "frameRate": "30/1",
+      "startTime": "0.000000",
+      "duration": "60.000000",
+      "frames": "1800"
+    },
+    "audio": {
+      "codec": "aac",
+      "sampleRate": "48000",
+      "channels": 2,
+      "startTime": "0.000000",
+      "duration": "60.010000",
+      "durationTs": 2880480,
+      "timeBase": "1/48000"
+    },
+    "containerDuration": 60.01,
+    "expectedPictureDuration": 60,
+    "expectedPictureFrames": 1800,
+    "decodedAacSamples": 2880512,
+    "referenceSamples": 2880000,
+    "aacTailPaddingSamples": 512,
+    "aacTailPaddingMs": 10.666666666666666
+  },
+  "synchronization": {
+    "bestLagSamples": 0,
+    "bestLagMs": 0,
+    "referenceCorrelation": 0.9999996580227523,
+    "independentLagWindows": [
+      {
+        "start": 0.5,
+        "end": 4,
+        "lag": 0,
+        "correlation": 0.9999999590729088
+      },
+      {
+        "start": 12,
+        "end": 17,
+        "lag": 0,
+        "correlation": 0.9999986693958846
+      },
+      {
+        "start": 30,
+        "end": 35,
+        "lag": 0,
+        "correlation": 0.9999993205987417
+      },
+      {
+        "start": 54,
+        "end": 58,
+        "lag": 0,
+        "correlation": 0.9999999693253653
+      }
+    ],
+    "searchRangeSamples": [
+      -128,
+      128
+    ],
+    "interpretation": "WAV and final AAC content were cross-correlated in four separate musical phases. Encoder tail padding is recorded separately from a content offset."
+  },
+  "aacCodecFits": {
+    "whole": {
+      "gain": 0.9999816684983125,
+      "gainDb": -0.00015922685999587768,
+      "correlation": 0.9999996580227523,
+      "wavRmsDbfs": -21.02248767980057,
+      "aacRmsDbfs": -21.022643936283426,
+      "rmsDifferenceDb": -0.00015625648285583408,
+      "residualRmsDbfs": -82.67237259540423,
+      "residualRelativeToSignalDb": -61.64972568874366,
+      "samples": 5760000
+    },
+    "phases": [
+      {
+        "start": 0,
+        "end": 4,
+        "description": "Immediate D-A-F hook and low response",
+        "gain": 0.9999865558356679,
+        "gainDb": -0.00011677531263991936,
+        "correlation": 0.9999998496504992,
+        "wavRmsDbfs": -17.453019062230418,
+        "aacRmsDbfs": -17.45313453162379,
+        "rmsDifferenceDb": -0.00011546939337007335,
+        "residualRmsDbfs": -82.67181499516997,
+        "residualRelativeToSignalDb": -65.21867915762692,
+        "samples": 384000
+      },
+      {
+        "start": 4,
+        "end": 12,
+        "description": "Title and creator introduction: more air",
+        "gain": 0.9999775771645094,
+        "gainDb": -0.00019476445803759277,
+        "correlation": 0.9999999359524606,
+        "wavRmsDbfs": -23.4735377983592,
+        "aacRmsDbfs": -23.473732006507362,
+        "rmsDifferenceDb": -0.00019420814816067472,
+        "residualRmsDbfs": -92.39840769131268,
+        "residualRelativeToSignalDb": -68.92467512849545,
+        "samples": 768000
+      },
+      {
+        "start": 12,
+        "end": 30,
+        "description": "Core puzzle: increasingly articulated plucks",
+        "gain": 0.9999923596655883,
+        "gainDb": -0.00006636335501733718,
+        "correlation": 0.9999995206565113,
+        "wavRmsDbfs": -20.21553917634243,
+        "aacRmsDbfs": -20.215601376171808,
+        "rmsDifferenceDb": -0.00006219982937899962,
+        "residualRmsDbfs": -80.39883413724597,
+        "residualRelativeToSignalDb": -60.183228597548535,
+        "samples": 1728000
+      },
+      {
+        "start": 30,
+        "end": 42,
+        "description": "Chapters and town: wider harmony",
+        "gain": 0.9999688690660418,
+        "gainDb": -0.0002704040656785091,
+        "correlation": 0.999999562109056,
+        "wavRmsDbfs": -19.0623116770331,
+        "aacRmsDbfs": -19.062578277625533,
+        "rmsDifferenceDb": -0.00026660059243371057,
+        "residualRmsDbfs": -79.63861963728908,
+        "residualRelativeToSignalDb": -60.57603755619031,
+        "samples": 1152000
+      },
+      {
+        "start": 42,
+        "end": 50,
+        "description": "Making-of: lower register and fewer pulses",
+        "gain": 0.9999766823839896,
+        "gainDb": -0.00020253660063342647,
+        "correlation": 0.9999999555510714,
+        "wavRmsDbfs": -24.396733503910063,
+        "aacRmsDbfs": -24.396935654432205,
+        "rmsDifferenceDb": -0.00020215052213669232,
+        "residualRmsDbfs": -94.90802282307502,
+        "residualRelativeToSignalDb": -70.51108678256432,
+        "samples": 768000
+      },
+      {
+        "start": 50,
+        "end": 60,
+        "description": "CTA: thin accompaniment; A to Dm at56s; authentic tail",
+        "gain": 0.9999825772998122,
+        "gainDb": -0.0001513329693465073,
+        "correlation": 0.9999999764976768,
+        "wavRmsDbfs": -27.694031133299394,
+        "aacRmsDbfs": -27.69418226213015,
+        "rmsDifferenceDb": -0.0001511288307580236,
+        "residualRmsDbfs": -100.972774383598,
+        "residualRelativeToSignalDb": -73.27859191732927,
+        "samples": 960000
+      }
+    ],
+    "ending": {
+      "gain": 0.9999749644974961,
+      "gainDb": -0.0002174583338828784,
+      "correlation": 0.9999999576179173,
+      "wavRmsDbfs": -31.960885928314724,
+      "aacRmsDbfs": -31.961103018522508,
+      "rmsDifferenceDb": -0.00021709020778289917,
+      "residualRmsDbfs": -102.67898021535427,
+      "residualRelativeToSignalDb": -70.71787682870566,
+      "samples": 120000
+    },
+    "interpretation": "Lossy AAC leaves nonzero residual and tiny spectral/gain changes. These values are not treated as proof of a PCM one-LSB copy or perfect mathematical gain preservation."
+  },
+  "musicalForm": {
+    "bpm": 120,
+    "phases": [
+      {
+        "start": 0,
+        "end": 4,
+        "description": "Immediate D-A-F hook and low response",
+        "rmsDbfs": -17.45301906813689
+      },
+      {
+        "start": 4,
+        "end": 12,
+        "description": "Title and creator introduction: more air",
+        "rmsDbfs": -23.473537806817653
+      },
+      {
+        "start": 12,
+        "end": 30,
+        "description": "Core puzzle: increasingly articulated plucks",
+        "rmsDbfs": -20.215539178181878
+      },
+      {
+        "start": 30,
+        "end": 42,
+        "description": "Chapters and town: wider harmony",
+        "rmsDbfs": -19.062311678358935
+      },
+      {
+        "start": 42,
+        "end": 50,
+        "description": "Making-of: lower register and fewer pulses",
+        "rmsDbfs": -24.396733501527574
+      },
+      {
+        "start": 50,
+        "end": 60,
+        "description": "CTA: thin accompaniment; A to Dm at56s; authentic tail",
+        "rmsDbfs": -27.694031147693476
+      }
+    ],
+    "finalCadence": [
+      "Bb50s",
+      "C52s",
+      "A54s",
+      "Dm56s"
+    ],
+    "lastNewAttackSeconds": 56,
+    "ending": "Final tonic at56s, then decay with no new note attacks; program fade58.75–60s. This is not a48s recording loop.",
+    "referenceOriginalUnchanged": true,
+    "voiceOrNarration": false,
+    "gameSfxAdded": false
+  },
+  "boundaryPcmChecks": {
+    "boundaries": [
+      {
+        "time": 0.035,
+        "wav": {
+          "singleSampleStep": 0.002596736263839758,
+          "maxStepWithin10ms": 0.046673184236667664,
+          "localDerivativeRms": 0.009659310264607607,
+          "boundaryStepToLocalDerivativeRms": 0.2688324727858036,
+          "pre10msRmsDbfs": -15.183778924547877,
+          "post10msRmsDbfs": -13.399787025976572,
+          "isolatedJump": false
+        },
+        "aac": {
+          "singleSampleStep": 0.0025936514139175415,
+          "maxStepWithin10ms": 0.04654243588447571,
+          "localDerivativeRms": 0.009649791406914158,
+          "boundaryStepToLocalDerivativeRms": 0.2687779771134916,
+          "pre10msRmsDbfs": -15.183891537211318,
+          "post10msRmsDbfs": -13.405385253383383,
+          "isolatedJump": false
+        }
+      },
+      {
+        "time": 4,
+        "wav": {
+          "singleSampleStep": 0.0038173203250551624,
+          "maxStepWithin10ms": 0.017411949326032315,
+          "localDerivativeRms": 0.005076971166122465,
+          "boundaryStepToLocalDerivativeRms": 0.7518893056803865,
+          "pre10msRmsDbfs": -22.78761823614619,
+          "post10msRmsDbfs": -20.561641405793853,
+          "isolatedJump": false
+        },
+        "aac": {
+          "singleSampleStep": 0.0038146376609802246,
+          "maxStepWithin10ms": 0.017413321882486343,
+          "localDerivativeRms": 0.005076802029718234,
+          "boundaryStepToLocalDerivativeRms": 0.7513859391503473,
+          "pre10msRmsDbfs": -22.78775274080168,
+          "post10msRmsDbfs": -20.562504194943607,
+          "isolatedJump": false
+        }
+      },
+      {
+        "time": 12,
+        "wav": {
+          "singleSampleStep": 0.0009994508027375698,
+          "maxStepWithin10ms": 0.006628037289147057,
+          "localDerivativeRms": 0.001989362308888184,
+          "boundaryStepToLocalDerivativeRms": 0.5023975764857752,
+          "pre10msRmsDbfs": -24.558065995122323,
+          "post10msRmsDbfs": -18.28953145699146,
+          "isolatedJump": false
+        },
+        "aac": {
+          "singleSampleStep": 0.0009987540543079376,
+          "maxStepWithin10ms": 0.006627708673477173,
+          "localDerivativeRms": 0.001989188078803957,
+          "boundaryStepToLocalDerivativeRms": 0.5020913130087027,
+          "pre10msRmsDbfs": -24.55888372193676,
+          "post10msRmsDbfs": -18.290131157720904,
+          "isolatedJump": false
+        }
+      },
+      {
+        "time": 30,
+        "wav": {
+          "singleSampleStep": 0.0015671255072504872,
+          "maxStepWithin10ms": 0.04220068957813854,
+          "localDerivativeRms": 0.008677689629954848,
+          "boundaryStepToLocalDerivativeRms": 0.18059248187914753,
+          "pre10msRmsDbfs": -21.97447726741882,
+          "post10msRmsDbfs": -14.144720585530289,
+          "isolatedJump": false
+        },
+        "aac": {
+          "singleSampleStep": 0.0015741903334856033,
+          "maxStepWithin10ms": 0.04207192361354828,
+          "localDerivativeRms": 0.008664432751971545,
+          "boundaryStepToLocalDerivativeRms": 0.18168417697366337,
+          "pre10msRmsDbfs": -21.97496021651945,
+          "post10msRmsDbfs": -14.14254284145391,
+          "isolatedJump": false
+        }
+      },
+      {
+        "time": 42,
+        "wav": {
+          "singleSampleStep": 0.00242614775015685,
+          "maxStepWithin10ms": 0.007305146134513149,
+          "localDerivativeRms": 0.0031368353158063,
+          "boundaryStepToLocalDerivativeRms": 0.7734380373530151,
+          "pre10msRmsDbfs": -21.9075746319019,
+          "post10msRmsDbfs": -18.70011228503625,
+          "isolatedJump": false
+        },
+        "aac": {
+          "singleSampleStep": 0.0024262573570013046,
+          "maxStepWithin10ms": 0.007302723824977875,
+          "localDerivativeRms": 0.0031367914180007762,
+          "boundaryStepToLocalDerivativeRms": 0.7734838035701054,
+          "pre10msRmsDbfs": -21.908479050504543,
+          "post10msRmsDbfs": -18.7000929650855,
+          "isolatedJump": false
+        }
+      },
+      {
+        "time": 50,
+        "wav": {
+          "singleSampleStep": 0.0010344983380434908,
+          "maxStepWithin10ms": 0.003308654225904255,
+          "localDerivativeRms": 0.0014362090398836393,
+          "boundaryStepToLocalDerivativeRms": 0.7202978879225723,
+          "pre10msRmsDbfs": -25.537175290639276,
+          "post10msRmsDbfs": -22.471850229179697,
+          "isolatedJump": false
+        },
+        "aac": {
+          "singleSampleStep": 0.0010343827307224274,
+          "maxStepWithin10ms": 0.003308577463030815,
+          "localDerivativeRms": 0.0014361432721965608,
+          "boundaryStepToLocalDerivativeRms": 0.7202503752570268,
+          "pre10msRmsDbfs": -25.53788904503648,
+          "post10msRmsDbfs": -22.47191710307273,
+          "isolatedJump": false
+        }
+      },
+      {
+        "time": 54,
+        "wav": {
+          "singleSampleStep": 0.0003769398184942981,
+          "maxStepWithin10ms": 0.005536437694601739,
+          "localDerivativeRms": 0.0012925000471127968,
+          "boundaryStepToLocalDerivativeRms": 0.29163621257601585,
+          "pre10msRmsDbfs": -33.650813821887205,
+          "post10msRmsDbfs": -29.90374270953356,
+          "isolatedJump": false
+        },
+        "aac": {
+          "singleSampleStep": 0.0003769984468817711,
+          "maxStepWithin10ms": 0.005536437034606934,
+          "localDerivativeRms": 0.0012924826170576326,
+          "boundaryStepToLocalDerivativeRms": 0.2916855065641169,
+          "pre10msRmsDbfs": -33.650669560667666,
+          "post10msRmsDbfs": -29.90376535511058,
+          "isolatedJump": false
+        }
+      },
+      {
+        "time": 56,
+        "wav": {
+          "singleSampleStep": 0.00008690358244223392,
+          "maxStepWithin10ms": 0.014775754782647466,
+          "localDerivativeRms": 0.003495649946245827,
+          "boundaryStepToLocalDerivativeRms": 0.024860493407117185,
+          "pre10msRmsDbfs": -52.18050871259335,
+          "post10msRmsDbfs": -24.94081796555772,
+          "isolatedJump": false
+        },
+        "aac": {
+          "singleSampleStep": 0.00008697190787643194,
+          "maxStepWithin10ms": 0.014776493422687054,
+          "localDerivativeRms": 0.003495668430422814,
+          "boundaryStepToLocalDerivativeRms": 0.024879907693623096,
+          "pre10msRmsDbfs": -52.18046569877008,
+          "post10msRmsDbfs": -24.94054293825473,
+          "isolatedJump": false
+        }
+      },
+      {
+        "time": 58.75,
+        "wav": {
+          "singleSampleStep": 0.0006082058677918754,
+          "maxStepWithin10ms": 0.003923058977491735,
+          "localDerivativeRms": 0.0013890407550447806,
+          "boundaryStepToLocalDerivativeRms": 0.4378603475693323,
+          "pre10msRmsDbfs": -27.934236173072946,
+          "post10msRmsDbfs": -28.638768675058365,
+          "isolatedJump": false
+        },
+        "aac": {
+          "singleSampleStep": 0.0006072483956813812,
+          "maxStepWithin10ms": 0.003921281546354294,
+          "localDerivativeRms": 0.001388727209225371,
+          "boundaryStepToLocalDerivativeRms": 0.43726974718101985,
+          "pre10msRmsDbfs": -27.93444659485338,
+          "post10msRmsDbfs": -28.63973788178534,
+          "isolatedJump": false
+        }
+      },
+      {
+        "time": 59.8,
+        "wav": {
+          "singleSampleStep": 0.000026941302650130053,
+          "maxStepWithin10ms": 0.00006854534966294166,
+          "localDerivativeRms": 0.00002080322894282941,
+          "boundaryStepToLocalDerivativeRms": 1.2950538939973717,
+          "pre10msRmsDbfs": -66.69765066019816,
+          "post10msRmsDbfs": -68.09866000368936,
+          "isolatedJump": false
+        },
+        "aac": {
+          "singleSampleStep": 0.00002692377893254161,
+          "maxStepWithin10ms": 0.00006850220961496234,
+          "localDerivativeRms": 0.000020802910172506033,
+          "boundaryStepToLocalDerivativeRms": 1.2942313699996246,
+          "pre10msRmsDbfs": -66.69809711356073,
+          "post10msRmsDbfs": -68.09874646401396,
+          "isolatedJump": false
+        }
+      },
+      {
+        "time": 59.95,
+        "wav": {
+          "singleSampleStep": 1.1920930376163766e-7,
+          "maxStepWithin10ms": 5.960465188081883e-7,
+          "localDerivativeRms": 1.172056433505793e-7,
+          "boundaryStepToLocalDerivativeRms": 1.0170952554312178,
+          "pre10msRmsDbfs": -108.08966533176456,
+          "post10msRmsDbfs": -114.75978926250284,
+          "isolatedJump": false
+        },
+        "aac": {
+          "singleSampleStep": 1.7558704712428153e-7,
+          "maxStepWithin10ms": 5.138685992278624e-7,
+          "localDerivativeRms": 1.0786747711505683e-7,
+          "boundaryStepToLocalDerivativeRms": 1.6278034104477257,
+          "pre10msRmsDbfs": -108.0671791634068,
+          "post10msRmsDbfs": -114.8057443764146,
+          "isolatedJump": false
+        }
+      }
+    ],
+    "interpretation": "Boundary steps are compared with surrounding waveform derivatives and10ms RMS. No perceptual click-free assertion is made without audition."
+  },
+  "finalAudio": {
+    "integratedLufs": -18.7,
+    "truePeakDbtp": -3.1,
+    "sourceWavIntegratedLufs": -18.88,
+    "sourceWavTruePeakDbtp": -3.05,
+    "aacTruePeakIncreaseDb": -0.050000000000000266,
+    "headroomDb": 3.1,
+    "commonStaticWavGainDb": 8.510000000000002,
+    "dynamicsProcessing": "No compressor/limiter/dynamic loudnorm added in the reference mix."
+  },
+  "silence": {
+    "thresholdDbfs": -55,
+    "minSeconds": 0.06,
+    "events": [
+      {
+        "start": 59.775125,
+        "end": 60.010667
+      }
+    ],
+    "unexpected": [],
+    "intent": "Opening lead-in below100ms and final decay after59.3s may be below threshold."
+  },
+  "fullAacDecode": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "errors": [],
+  "directWholeAudition": "NOT_PERFORMED",
+  "perceptualNaturalnessApproval": "NOT_CLAIMED",
+  "actions": {
+    "audioOrVideoEdited": false,
+    "ui": false,
+    "git": false,
+    "publication": false,
+    "onlyNewFile": "qa/audio-final-independent.json"
+  }
+}

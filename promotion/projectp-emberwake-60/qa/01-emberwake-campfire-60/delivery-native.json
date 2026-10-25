@@ -1,0 +1,62 @@
+{
+  "version": "EMBERWAKE-60",
+  "comp": "EMBERWAKE Support 60",
+  "previewTime": 14,
+  "nativeReopenSaveRender": true,
+  "missingAssets": 0,
+  "videoSha256": "36fd2913a8ea5c707aaf37fd9f1dbc28d62db40a2b051b2bcf7ff6bf78d8e864",
+  "audioSha256": "565295d97f5525f3f6cec6dd722c5fd8b87932b58b2e10d087a3980762665da9",
+  "masterSha256": "d706d706ca6ee46ccaf3923cace76b5a1a28a927a7ee337563c93589fe1776ba",
+  "effectcraftFootage": [
+    {
+      "command": "footage.check",
+      "result": {
+        "checked": 10,
+        "missing": 0,
+        "probed": 0
+      }
+    },
+    {
+      "command": "footage.missing",
+      "result": {
+        "missing": []
+      }
+    }
+  ],
+  "filmcraftStatus": [
+    {
+      "identity": {
+        "fingerprint": "6c376c3f83916c9c",
+        "size": 1545167970
+      },
+      "item": 4,
+      "name": "01-emberwake-campfire-60-master.mov",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-60秒-2026-10-25\\media\\01-emberwake-campfire-60-master.mov",
+      "proxy": null,
+      "status": "online"
+    },
+    {
+      "identity": {
+        "fingerprint": "89de8f85230ffc78",
+        "size": 17280044
+      },
+      "item": 5,
+      "name": "emberwake-60-mix.wav",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-60秒-2026-10-25\\media\\emberwake-60-mix.wav",
+      "proxy": null,
+      "status": "online"
+    }
+  ],
+  "effectcraftSha256": "f52617b3cfe396c50bd5b6282c101978ac8cafa425ec00ae18915129586de2b7",
+  "filmcraftSha256": "16981d077b68ea872bfe369e07bc7021d20a4c71cdd3e23acf70bc14145344e9",
+  "proofs": {
+    "effectcraft": {
+      "file": "delivery-effectcraft.png",
+      "sha256": "821f1123f85e335c4f01c3beb085c45c077a20a9f971af4d6bf3b26f055ef8ce"
+    },
+    "filmcraft": {
+      "file": "delivery-filmcraft.png",
+      "sha256": "e7a3c81b37083381af19426cad3d95d467c7f02714bbec603742eb0e99ee71cd"
+    }
+  }
+}

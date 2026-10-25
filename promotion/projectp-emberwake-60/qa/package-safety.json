@@ -1,0 +1,31 @@
+{
+  "status": "PASS_RESERVED_PATHS_REJECTED",
+  "checks": [
+    {
+      "destination": "/home/pui/.claude/worktrees/Pui-core-issue-88/promotion/projectp-emberwake-60",
+      "result": "REJECTED_BEFORE_COPY"
+    },
+    {
+      "destination": "/home/pui/.claude/worktrees/Pui-core-issue-88/promotion",
+      "result": "REJECTED_BEFORE_COPY"
+    },
+    {
+      "destination": "/mnt/f/Videos/ProjectP-初投稿-2026-10-25",
+      "result": "REJECTED_BEFORE_COPY"
+    },
+    {
+      "destination": "/tmp/emberwake-package-guard-p1VtT9/previous",
+      "result": "REJECTED_BEFORE_COPY"
+    },
+    {
+      "destination": "/tmp/emberwake-package-guard-p1VtT9/previous/new-not-created",
+      "result": "REJECTED_BEFORE_COPY"
+    },
+    {
+      "destination": "/mnt/f/videos/projectp-初投稿-2026-10-25",
+      "result": "REJECTED_BEFORE_COPY"
+    }
+  ],
+  "priorVideoSha256": "5f56d833eba18fb816e1f8e65ff046d5b2d7a4f20b622df0aa137df9cc94f878",
+  "priorVideoUnchanged": true
+}
