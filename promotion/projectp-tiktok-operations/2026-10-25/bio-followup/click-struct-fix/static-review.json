@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-25T12:34:34.987Z",
+  "helperSha256": "002d48e58663942044357d09f5c4ad6fb62255ab17b8687f4a3cda814302edf5",
+  "scope": "Read-only peer code review; no Execute/cursor/input/UIA/native profile operation",
+  "mandatoryFindings": [],
+  "checked": [
+    "C# factory type0/size40/union8/flags20, down2/up4",
+    "Default returns before process/window/input APIs",
+    "Execute PID/session/start/HWND/foreground/TikTok title and fresh rectangle checks",
+    "Recheck after cursor positioning; one SendInput call; no automatic retry",
+    "Confirm-Target uses parent script expected values; automatic PID is not overwritten"
+  ],
+  "minorClarification": "focusChangedByHelper=false means no activation/focus-setting API; normal click may change page-internal focus",
+  "executionPerformed": false,
+  "profileOutcome": "pending root finite native validation"
+}

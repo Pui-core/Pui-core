@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  1,
+    "checkedAt":  "2026-10-25T12:35:38.4370175Z",
+    "status":  "PASS_MEMORY_ONLY_REGRESSION",
+    "helperSha256":  "002d48e58663942044357d09f5c4ad6fb62255ab17b8687f4a3cda814302edf5",
+    "oldNestedAssignmentFlags":  [
+                                     0,
+                                     0
+                                 ],
+    "correctedFactoryFlags":  [
+                                  2,
+                                  4
+                              ],
+    "dryRun":  {
+                   "schemaVersion":  1,
+                   "mode":  "dry-run",
+                   "pointerBytes":  8,
+                   "inputSize":  40,
+                   "flagsOffset":  20,
+                   "events":  [
+                                  {
+                                      "type":  0,
+                                      "flags":  2,
+                                      "hex":  "00000000000000000000000000000000000000000200000000000000000000000000000000000000"
+                                  },
+                                  {
+                                      "type":  0,
+                                      "flags":  4,
+                                      "hex":  "00000000000000000000000000000000000000000400000000000000000000000000000000000000"
+                                  }
+                              ],
+                   "inputApiCalled":  false,
+                   "cursorOrFocusChanged":  false,
+                   "profileOutcome":  "not_checked"
+               },
+    "inputApiCalls":  0,
+    "cursorApiCalls":  0,
+    "focusChanged":  false,
+    "nativeProfileSave":  "not_tested"
+}

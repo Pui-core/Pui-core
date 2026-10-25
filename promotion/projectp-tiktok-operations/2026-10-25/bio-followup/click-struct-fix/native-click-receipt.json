@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "saveIntent": {
+    "account": "prop_pui",
+    "characters": 62,
+    "at": "2026-10-25T13:01:31.8730558Z",
+    "saveRect": "1258,908,128,48",
+    "oneSaveIntent": true,
+    "exactBiography": true
+  },
+  "helperExecution": {
+    "schemaVersion": 1,
+    "mode": "execute",
+    "inputSize": 40,
+    "events": [
+      {
+        "type": 0,
+        "flags": 2,
+        "hex": "00000000000000000000000000000000000000000200000000000000000000000000000000000000"
+      },
+      {
+        "type": 0,
+        "flags": 4,
+        "hex": "00000000000000000000000000000000000000000400000000000000000000000000000000000000"
+      }
+    ],
+    "identityVerified": true,
+    "acceptedEvents": 2,
+    "inputApiCalled": true,
+    "cursorMoved": true,
+    "focusChangedByHelper": false,
+    "automaticRetry": false,
+    "profileOutcome": "requires_reload_and_readback"
+  },
+  "meaning": "Corrected input events were accepted; BIO persistence is established separately by native reload readback."
+}
