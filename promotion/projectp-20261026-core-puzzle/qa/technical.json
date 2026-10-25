@@ -203,7 +203,14 @@
     "actualTikTokUi": false,
     "wholeDirectWatch": false,
     "wholeDirectAudition": false,
-    "publishingAuthorizedNow": false
+    "publishingAuthorizedNow": false,
+    "actualOpeningFeedUi": true,
+    "actualOpeningCaptionUi": true,
+    "actualCoverUi": true,
+    "actualFullTimelineUi": false,
+    "actualSoundUi": false,
+    "serverDraft": false,
+    "finalMasterReuploadRequired": true
   },
-  "visualReview": "PASS_WITHIN_FINAL_EXTRACTED_FRAMES_SCOPE_UI_REVISION_PENDING_LIVE"
+  "visualReview": "PASS_EXTRACTED_FRAMES_AND_BOUNDED_NATIVE_OPENING_COVER_HOLD_SOUND_FINAL_TIMELINE"
 }

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "issue": "https://github.com/Pui-core/-/issues/97",
+  "checkedAt": "2026-10-25T11:02:02.365Z",
+  "account": "prop_pui",
+  "operator": "root-music97-session1",
+  "windowsSession": 1,
+  "videoSha256": "740474db6bd334d1a8eb0b2668a3692e58217a25891de09eaf8acb97a892a57c",
+  "coverSha256": "beec9594c6120c0e8b1c0cc2b5f3fb5e32d99054100708fceaa09c7b09add5d5",
+  "nativeUpload": "Complete 4.48MB /20s",
+  "captionCharacters": 180,
+  "captionContainsVoiceCredit": true,
+  "checks": {
+    "initialV1TopLabels": "FAIL: overlapped Following/ForYou navigation",
+    "revision02OpeningTitle": "PASS: smalltop labels removed; headline clearbelow actualnav",
+    "revision02CaptionOverlay": "PASS: openingquestion and initial puzzle visiblewith realcandidatecaption",
+    "customCoverPreview": "PASS: native profiletile shows question/before-after/EMBERWAKE title withinvisiblecrop",
+    "customCoverSavedToStaging": true
+  },
+  "evidence": {
+    "phone": "pp97-feed-revision02-phone.png",
+    "cover": "pp97-cover-native.png"
+  },
+  "limits": [
+    "Opening feed and cover check only; final full timeline must be checked again after actual music",
+    "Model cannot directly hear audio; full subjective audition unconfirmed",
+    "No sound selected; no BPM measured; no popularity verified",
+    "Commercial-only native search unrestricted length: phonk/electronic/game/love/Mist returned no results, not proof entire CML unavailable",
+    "Native blank commercial recommendation original sound Hauxenz46s not adopted: identity/rights/popularity unconfirmed",
+    "Ordinary official CML page opened in Firefox returned 500 Internal Server Error; no bypass"
+  ],
+  "posted": false,
+  "readyToPublish": false,
+  "notBeforeDateJst": "2026-10-26",
+  "overall": "HOLD_SOUND_AND_FINAL_TIMELINE",
+  "stagingAfterQa": "Exited/discarded own new upload; no serverdraft, noadditionalpost",
+  "browserAfterQa": "StudioHome"
+}

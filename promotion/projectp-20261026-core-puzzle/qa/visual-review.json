@@ -18,7 +18,14 @@
   "actualSongSelected": false,
   "revision": "02_UI_SAFE",
   "unresolved": [
-    "PP97-SOUND actual popular permitted sound unselected",
-    "PP97-UI root native preview for revision02 pending"
-  ]
+    "PP97-SOUND: actual permitted popular sound/interval/beat unselected",
+    "PP97-FINAL-TIMELINE: check final entire video/audio UI after actual sound, then reupload; no server draft"
+  ],
+  "nativeOpeningVerified": true,
+  "nativeOpeningCaptionVerified": true,
+  "nativeCoverVerified": true,
+  "nativeUiEvidence": "qa/native-ui-binding.json",
+  "fullFinalTimelineVerified": false,
+  "serverDraft": false,
+  "finalMasterReuploadRequired": true
 }
