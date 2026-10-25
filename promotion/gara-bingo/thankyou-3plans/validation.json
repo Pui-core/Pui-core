@@ -1,0 +1,205 @@
+{
+  "status": "TECHNICAL_AND_ISOLATED_VISUAL_PASS",
+  "date": "2026-10-25",
+  "issue": "https://github.com/Pui-core/-/issues/90",
+  "plans": [
+    {
+      "id": "a-baibai",
+      "title": "A｜達成ラッシュ",
+      "song": "倍倍FIGHT!",
+      "bpm": 176,
+      "videoMusicStart": 2,
+      "climax": 17,
+      "outro": 21.09090909090909,
+      "technicalPassed": true,
+      "audio": {
+        "integratedLufs": -14.3,
+        "truePeakDbtp": -4.7
+      },
+      "outputs": [
+        {
+          "file": "a-baibai/videos/a-baibai-reference.mp4",
+          "sha256": "0e85e8643cf841fe69b316bf315668e16bd64588a4481d7acb3dd2623550d555",
+          "bytes": 56405563,
+          "frames": 750,
+          "duration": 25,
+          "audioStreams": 1
+        },
+        {
+          "file": "a-baibai/videos/a-baibai-tiktok-silent.mp4",
+          "sha256": "d075fb345796e8c287393aad859bb796f9aa71becc4a7f1a98472fdf86be521b",
+          "bytes": 55626360,
+          "frames": 750,
+          "duration": 25,
+          "audioStreams": 0
+        }
+      ],
+      "nativeStructuralChecks": 18,
+      "nativeOpaquePixels": 83824,
+      "nativeOpaqueSampleFrames": [
+        17,
+        114,
+        224,
+        305,
+        387,
+        491,
+        525,
+        714
+      ],
+      "nativeOpaqueAllExactMatch": true,
+      "projectSha256": "654861224fb405eb9307d2623ed3bcb6b7ad2d4ea2a0046b98f4879ad0fb3d7d",
+      "textOnlyProjectSha256": "262b85144420b147caa57619d0f3fcdce6ba9f8f3888e9ec5c547eaee6bac2d3"
+    },
+    {
+      "id": "b-patissier",
+      "title": "B｜ありがとうの贈りもの",
+      "song": "キス・ミー・パティシエ",
+      "bpm": 192,
+      "videoMusicStart": 2,
+      "climax": 17,
+      "outro": 20.75,
+      "technicalPassed": true,
+      "audio": {
+        "integratedLufs": -14.6,
+        "truePeakDbtp": -4.9
+      },
+      "outputs": [
+        {
+          "file": "b-patissier/videos/b-patissier-reference.mp4",
+          "sha256": "b5dd0fc69ab083fc103158d9d551fe8f0edb55d3292ffa4359b06e6646575d82",
+          "bytes": 56001301,
+          "frames": 750,
+          "duration": 25,
+          "audioStreams": 1
+        },
+        {
+          "file": "b-patissier/videos/b-patissier-tiktok-silent.mp4",
+          "sha256": "e6a9f0d0f17dec76f4b850df3519af92809fde85b80325615b196e52037f5aff",
+          "bytes": 55224931,
+          "frames": 750,
+          "duration": 25,
+          "audioStreams": 0
+        }
+      ],
+      "nativeStructuralChecks": 18,
+      "nativeOpaquePixels": 83824,
+      "nativeOpaqueSampleFrames": [
+        17,
+        114,
+        248,
+        323,
+        398,
+        491,
+        525,
+        714
+      ],
+      "nativeOpaqueAllExactMatch": true,
+      "projectSha256": "e011272b090adcf6b85a24eb8bf68b73b6b34cd0996bb0da3d5551cdc88dbdc8",
+      "textOnlyProjectSha256": "657531908d8d52c5219fcdb9791310a665e3596327b83ee36ef2a3a2386b6ac0"
+    },
+    {
+      "id": "c-disco",
+      "title": "C｜ビンゴ・ディスコ",
+      "song": "チョコレイト・ディスコ",
+      "bpm": 128,
+      "videoMusicStart": 2,
+      "climax": 17,
+      "outro": 20.75,
+      "technicalPassed": true,
+      "audio": {
+        "integratedLufs": -14.4,
+        "truePeakDbtp": -5.8
+      },
+      "outputs": [
+        {
+          "file": "c-disco/videos/c-disco-reference.mp4",
+          "sha256": "1849e976b9fc5ba98387098a6cfb0df050906d314b6662881d3355af495dde1d",
+          "bytes": 56876124,
+          "frames": 750,
+          "duration": 25,
+          "audioStreams": 1
+        },
+        {
+          "file": "c-disco/videos/c-disco-tiktok-silent.mp4",
+          "sha256": "6da128f66623815f513dd634896e4dd0848694fd1c0e51b472b187f9f60ba9ab",
+          "bytes": 56103152,
+          "frames": 750,
+          "duration": 25,
+          "audioStreams": 0
+        }
+      ],
+      "nativeStructuralChecks": 18,
+      "nativeOpaquePixels": 83824,
+      "nativeOpaqueSampleFrames": [
+        17,
+        114,
+        215,
+        299,
+        383,
+        491,
+        525,
+        714
+      ],
+      "nativeOpaqueAllExactMatch": true,
+      "projectSha256": "d5db575b6529aef1d5f57b4388562a10a8d62fe6ee3a2d5f42474dff255af093",
+      "textOnlyProjectSha256": "ae18e8addc9310c006552b85e7f59312f65907fc1427b62e336c630259eb3ea6"
+    }
+  ],
+  "artworkStatus": "PASS_STRUCTURE_SHA_NATIVE_OPAQUE_CORE",
+  "visualStatus": "PASS_TEXT_ONLY_VISUAL",
+  "textLayers": 315,
+  "sceneSamples": 39,
+  "transitionSamples": 36,
+  "sourceSha256": {
+    "motion.mjs": "303cca45f664879b677758cad54124e4253de3f40634777d5c16cd2439eac759",
+    "pipeline.mjs": "d86e4612e4739b4d09f3de059051de9b3a03b0a2ef435167df4702d00e386d81",
+    "audit.mjs": "aa2d5b0b2bbe69d145a2123794e935e097ee60d40460e757200f300604623ce7",
+    "package.mjs": "93a503006ddeae9113d3f6f920347453d5dc7a8edf7a3b808133c82ee39b5f07"
+  },
+  "portableDelivery": {
+    "status": "PASS_PORTABLE_NATIVE_PACKAGE",
+    "nativeProjects": 9,
+    "movies": [
+      {
+        "file": "a-baibai-reference.mp4",
+        "sha256": "0e85e8643cf841fe69b316bf315668e16bd64588a4481d7acb3dd2623550d555",
+        "bytes": 56405563
+      },
+      {
+        "file": "a-baibai-tiktok-silent.mp4",
+        "sha256": "d075fb345796e8c287393aad859bb796f9aa71becc4a7f1a98472fdf86be521b",
+        "bytes": 55626360
+      },
+      {
+        "file": "b-patissier-reference.mp4",
+        "sha256": "b5dd0fc69ab083fc103158d9d551fe8f0edb55d3292ffa4359b06e6646575d82",
+        "bytes": 56001301
+      },
+      {
+        "file": "b-patissier-tiktok-silent.mp4",
+        "sha256": "e6a9f0d0f17dec76f4b850df3519af92809fde85b80325615b196e52037f5aff",
+        "bytes": 55224931
+      },
+      {
+        "file": "c-disco-reference.mp4",
+        "sha256": "1849e976b9fc5ba98387098a6cfb0df050906d314b6662881d3355af495dde1d",
+        "bytes": 56876124
+      },
+      {
+        "file": "c-disco-tiktok-silent.mp4",
+        "sha256": "6da128f66623815f513dd634896e4dd0848694fd1c0e51b472b187f9f60ba9ab",
+        "bytes": 56103152
+      }
+    ],
+    "nativeReopenSaveAndRender": true,
+    "fixedLayersUnchanged": true
+  },
+  "limitations": [
+    "Character-containing images were never displayed or sent to AI.",
+    "Full human realtime playback/listening and TikTok device sync are unverified.",
+    "TikTok sound ID 7353192190165797648 could not be fetched. C uses the official Apple trial of the standard Perfume recording.",
+    "Apple preview-relative offsets are measured; full-recording offsets and identical TikTok clip edition are unverified.",
+    "Owner creative approval and post-publication performance are not evaluated.",
+    "Confetti briefly crosses completion type before the readable hold."
+  ]
+}
