@@ -37,4 +37,14 @@
 
 rootは現account `prop_pui` とlease/公開receiptを確認し、DESKTOP-001告知、fresh modalへのkeyboard入力、期待62文字/counter、blur、最新Save rectと有効状態の確認後にだけ使用します。本Issueの実保存は最大1回。保存後のreload・自己紹介・可能なら通常public signatureで永続反映を確認し、結果を追記します。
 
-旧#96の2/2保存intentと観測は変更しません。この新しい原因に対する1回の修正検証を、古い試行budgetのリセットや一般的なretry許可とは扱いません。現時点は**memory回帰PASS、root native保存結果待ちのDraft/HOLD**です。プロフィール更新、再投稿、目標人数達成を完了とは記録していません。
+旧#96の2/2保存intentと観測は変更しません。この新しい原因に対する1回の修正検証を、古い試行budgetのリセットや一般的なretry許可とは扱いません。
+
+## rootのnative受入結果
+
+2026-10-25 13:01:31.873 UTC、正しいflags2/4を用いた保存をrootが1回だけ実行し、2イベント受理・modal終了を確認しました。直後は旧プロフィールcacheが見えましたが、手動reload後に希望62文字の自己紹介が残り、本人account `prop_pui`・表示名 `Project_P ぷぃ` は維持されました。保存後の自己紹介を2026-10-25 13:04:55 UTCに記録しています。
+
+- `native-result.json`: native保存とreload後永続反映、旧2/2intent保持、新保存1/1、再投稿なしを、rootの元証跡SHAへ対応付けた非秘密記録。
+- `native-click-receipt.json`: rectと62文字照合・検証済みflags2/4・入力受理2件・自動retryなし。入力受理と永続反映は別の証跡です。
+- `public-observation.json`: 通常の匿名public取得はHTTP200でしたが、profile metadataを取得できず、独立public signatureは**未確認**。native reloadの成功をpublic metadata検証済みに読み替えません。
+
+本修正のmemory回帰とnative BIO永続反映はPASSです。制作担当自身は入力せず、モデル動画・配信設定・runtimeを変更していません。フォロワー目標や日次運用全体の完了を意味せず、親#93は継続します。

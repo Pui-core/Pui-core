@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_NATIVE_BIO_PERSISTENCE_AFTER_MANUAL_RELOAD",
+  "issue": 98,
+  "relatedIssue": 96,
+  "account": "prop_pui",
+  "saveAt": "2026-10-25T13:01:31.8730558Z",
+  "persistenceObservedAt": "2026-10-25T13:04:55.025Z",
+  "oldBiography": "",
+  "desiredBiography": "ゲーム・道具・曲を作る、ぷい。\n『EMBERWAKE』制作の裏側を毎日。\nCAMPFIRE公開準備中｜次の一手をフォローで。",
+  "characters": 62,
+  "saveIntents": 1,
+  "maxSaveIntents": 1,
+  "correctedFlags": [
+    2,
+    4
+  ],
+  "acceptedEvents": 2,
+  "modalClosed": true,
+  "immediateOldProfileCache": true,
+  "afterManualReloadMatches": true,
+  "nativeReadback": "ゲーム・道具・曲を作る、ぷい。 『EMBERWAKE』制作の裏側を毎日。 CAMPFIRE公開準備中｜次の一手をフォローで。",
+  "displayNameUnchanged": "Project_P ぷぃ",
+  "usernameUnchanged": true,
+  "old96IntentCountRetained": 2,
+  "newPost": false,
+  "newVideoUploaded": false,
+  "helperSha256": "002d48e58663942044357d09f5c4ad6fb62255ab17b8687f4a3cda814302edf5",
+  "publicSignature": {
+    "status": "UNCONFIRMED",
+    "observedAt": "2026-10-25T13:06:59.761Z",
+    "httpStatus": 200,
+    "reason": "No ordinary public profile metadata",
+    "ordinaryAnonymousRead": true,
+    "noAuthenticationOrRetry": true
+  },
+  "evidenceHashes": {
+    "rootNativeJson": "14eb4782cb167afe4f9f8ce814c6f282bee3b4f6b3484711b4e19496409019b1",
+    "rootClickReceipt": "3cd3bba6dfff968f5683305d5eac767980c49800477e40bd7e63b40449c5dbe6",
+    "rootPublicJson": "1e8a40dd8d8da2355c03e4151b1be2eb00418de4635d8db7cc4f268b37f3d0ff"
+  },
+  "scope": "Root native save once plus self-account profile readback after manual reload. Independent anonymous public signature was not observable; no claim of public metadata verification."
+}
