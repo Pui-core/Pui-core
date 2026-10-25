@@ -4,11 +4,14 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
-import {root as defaultRoot, plans, loadEdit, TICKS, fps as FPS} from './config.mjs';
+import {root as defaultRoot, plans, loadEdit, playbackRate, TICKS, fps as FPS} from './config.mjs';
 
 const EC = '/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe';
 const MAGICK = '/mnt/c/Program Files/ImageMagick-7.1.2-Q16-HDRI/magick.exe';
 const CAMERA = 'WHOLE FRAME CAMERA', BACKGROUND = 'BINGO PAPER BACKGROUND';
+const CHARACTER='CHARACTER ORIGINAL FIXED',PREVIEW_CHARACTER='CHARACTER RESERVED PREVIEW ONLY';
+const CHARACTER_BASE={position:[730,1290,0],anchor:[452.5,905,0],scale:[380/905*100,380/905*100,100],rotation:0,opacity:100};
+const CUTOUT_SHA256='e9947701b3ae601f8ef098c4e2ab0e55e76d0fa32f3c5aef0d08dca015b36bef';
 const MEDIA_EXTENSION = /\.(?:png|jpe?g|webp|gif|bmp|tiff?|svg|exr|hdr|avif|heic|mp4|m4v|mov|mkv|webm|avi|mpeg|mpg|mxf|wav|mp3|m4a|flac|ogg|aac)(?:$|[?#])/i;
 const parse = s => JSON.parse(s.replace(/^\uFEFF/, '').trim());
 const read = p => parse(fs.readFileSync(p, 'utf8'));
@@ -104,7 +107,8 @@ function auditPlan(root,plan,bg,edit,clips) {
     check('one_comp_each',comps(main).length===1&&comps(text).length===1);assert();
     const comp=comps(main)[0],preview=comps(text)[0],layers=comp.kind.layers,previewLayers=preview.kind.layers;
     const footage=p=>Object.values(p.items||{}).filter(i=>i.kind?.type==='Footage');
-    const mainFootage=footage(main),textFootage=footage(text),allowed=[bg.filename,...clips.map(c=>path.join(root,c.file))];
+    const cutout=path.join(root,'media/character-cutout.png');
+    const mainFootage=footage(main),textFootage=footage(text),allowed=[bg.filename,cutout,...clips.map(c=>path.join(root,c.file))];
     check('main_footage_background_and_selected_clips_only',mainFootage.length===allowed.length&&mainFootage.every(f=>allowed.some(p=>same(f.kind.path,p)))&&allowed.every(p=>mainFootage.some(f=>same(f.kind.path,p))));
     check('text_only_has_background_only',textFootage.length===1&&textFootage.every(f=>same(f.kind.path,bg.filename)));
     check('background_dimensions_match_png',textFootage.every(f=>f.kind.width===bg.width&&f.kind.height===bg.height&&!f.kind.missing));
@@ -126,8 +130,8 @@ function auditPlan(root,plan,bg,edit,clips) {
       const name='ARCHIVE SHOT '+s.id,m=layers.filter(l=>l.name===name),p=previewLayers.filter(l=>l.name===name);
       if(m.length!==1||p.length!==1)throw Error('Archive/placeholder pair missing: '+s.id);
       const a=m[0],b=p[0],av=values(a),bv=values(b),asset=mainFootage.find(f=>f.id===a.source?.item),decl=layout.archiveLayers.find(d=>d.shotId===s.id),pd=textLayout.archiveLayers.find(d=>d.shotId===s.id);
-      const base={position:[540,960,0],scale:[99.3,99.3,100],rotation:0,opacity:100};
-      const baseEqual=[av,bv].every(v=>Object.entries(base).every(([k,x])=>Array.isArray(x)?vector(v.get('transform/'+k),x):near(v.get('transform/'+k),x)));
+      const base={position:decl?.basePosition,scale:decl?.baseScale,rotation:0,opacity:100};
+      const baseEqual=finiteVector(base.position,3)&&finiteVector(base.scale,3)&&base.scale[0]>0&&base.scale[1]>0&&[av,bv].every(v=>Object.entries(base).every(([k,x])=>Array.isArray(x)?vector(v.get('transform/'+k),x):near(v.get('transform/'+k),x)));
       const am=affine({position:av.get('transform/position'),scale:av.get('transform/scale'),anchor:av.get('transform/anchor'),rotation:av.get('transform/rotation')}),bm=affine({position:bv.get('transform/position'),scale:bv.get('transform/scale'),anchor:bv.get('transform/anchor'),rotation:bv.get('transform/rotation')});
       const mainCore=[[0,0],[720,0],[720,1280],[0,1280]].map(p=>transform(am,p)),previewCore=[[-360,-640],[360,-640],[360,640],[-360,640]].map(p=>transform(bm,p));
       const geometryError=Math.max(...mainCore.map((p,i)=>Math.hypot(p[0]-previewCore[i][0],p[1]-previewCore[i][1])));
@@ -135,9 +139,17 @@ function auditPlan(root,plan,bg,edit,clips) {
       const declaration=[decl,pd].every(d=>d?.name===name&&d.clipFile===s.id+'.mp4'&&near(d.start,s.start)&&near(d.end,s.end)&&near(d.sourceIn,s.sourceIn)&&near(d.sourceOut,s.sourceOut)&&d.sourceWidth===720&&d.sourceHeight===1280);
       return {shotId:s.id,name,mainCoreQuad:mainCore,previewCoreQuad:previewCore,geometryErrorPixels:geometryError,
         permittedDifferences:['native video footage versus gray shape','footage anchor [360,640,0] versus centered shape anchor [0,0,0]','gray preview stroke extends beyond the matched 720x1280 core'],
-        passed:baseEqual&&interval&&declaration&&a.parent===camera.id&&b.parent===previewCamera.id&&a.source?.type==='Footage'&&b.source?.type==='Shape'&&asset?.kind.width===720&&asset.kind.height===1280&&!asset.kind.missing&&same(asset.kind.path,path.join(root,'media/clips',s.id+'.mp4'))&&vector(av.get('transform/anchor'),[360,640,0])&&vector(bv.get('transform/anchor'),[0,0,0])&&geometryError<.001&&near(a.start_time/TICKS,s.start,1/120)};
+        passed:baseEqual&&interval&&declaration&&a.parent===camera.id&&b.parent===previewCamera.id&&a.source?.type==='Footage'&&b.source?.type==='Shape'&&vector(bv.get('contents/group/contents/rect/size'),[720,1280])&&vector(bv.get('contents/group/contents/rect/position'),[0,0])&&asset?.kind.width===720&&asset.kind.height===1280&&!asset.kind.missing&&same(asset.kind.path,path.join(root,'media/clips',s.id+'.mp4'))&&vector(av.get('transform/anchor'),[360,640,0])&&vector(bv.get('transform/anchor'),[0,0,0])&&geometryError<.001&&near(a.start_time/TICKS,s.start,1/120)};
     });
     check('archive_and_placeholder_local_geometry_timing_match',report.archiveSlots.every(s=>s.passed),report.archiveSlots);
+    const characters=layers.filter(l=>l.name===CHARACTER),previewCharacters=previewLayers.filter(l=>l.name===PREVIEW_CHARACTER);
+    check('one_original_character_and_one_gray_character',characters.length===1&&previewCharacters.length===1);assert();
+    const character=characters[0],placeholder=previewCharacters[0],cv=values(character),asset=mainFootage.find(f=>f.id===character.source?.item);
+    check('original_character_bytes_and_local_base_unchanged',hash(cutout)===CUTOUT_SHA256&&character.source?.type==='Footage'&&asset?.kind.width===905&&asset.kind.height===1810&&same(asset.kind.path,cutout)&&Object.entries(CHARACTER_BASE).every(([k,v])=>Array.isArray(v)?vector(cv.get('transform/'+k),v):near(cv.get('transform/'+k),v))&&!animated(character.props).length&&!effectsOrMasks(character)&&character.parent===camera.id&&character.stretch===100&&character.track_matte===null&&character.blend_mode==='Normal'&&!character.switches?.three_d&&near(character.in_point/TICKS,0)&&near(character.out_point/TICKS,plan.duration));
+    const pv=values(placeholder);
+    check('gray_character_is_not_a_footage_reference',placeholder.source?.type==='Shape'&&placeholder.parent===previewCamera.id&&!animated(placeholder.props).length&&!effectsOrMasks(placeholder)&&vector(pv.get('transform/position'),[730,1290,0])&&vector(pv.get('transform/scale'),[100,100,100])&&vector(pv.get('transform/anchor'),[0,0,0])&&near(pv.get('transform/rotation'),0)&&vector(pv.get('contents/group/contents/rect/size'),[380,760])&&near(placeholder.in_point/TICKS,0)&&near(placeholder.out_point/TICKS,plan.duration));
+    report.character={sourceSha256:hash(cutout),localBaseUnchanged:report.structureChecks.find(c=>c.id==='original_character_bytes_and_local_base_unchanged').passed,wholeFrameParent:CAMERA,previewReplacement:PREVIEW_CHARACTER};
+    names.add(CHARACTER);names.add(PREVIEW_CHARACTER);
     const mainNormal=canonical(main,comp,names),previewNormal=canonical(text,preview,names);
     check('main_preview_all_other_structure_identical',JSON.stringify(mainNormal)===JSON.stringify(previewNormal),{mainCanonicalSha256:digest(mainNormal),textCanonicalSha256:digest(previewNormal)});
     const sourceKeys=layout.wholeCameraKeys;
@@ -190,14 +202,22 @@ export function auditArchive(root=defaultRoot,{selected=plans}={}) {
   try {
     const bg=backgroundAudit(root);Object.assign(report,{backgroundSha256:bg.backgroundSha256,backgroundManifestSha256:bg.backgroundManifestSha256,
       background:{file:bg.manifest.file,width:bg.width,height:bg.height,opaque:bg.opaque,containsCharacter:false}});
-    const edit=loadEdit(root),clips=edit.shots.filter(s=>s.kind==='archive').map(s=>({id:s.id,file:'media/clips/'+s.id+'.mp4',sha256:hash(path.join(root,'media/clips',s.id+'.mp4'))}));
+    const edit=loadEdit(root),clips=edit.shots.filter(s=>s.kind==='archive').map(s=>({id:s.id,file:'media/clips/'+s.id+'.mp4',sha256:hash(path.join(root,'media/clips',s.id+'.mp4')),playbackRate:s.playbackRate,sourceDuration:s.sourceOut-s.sourceIn,targetDuration:s.end-s.start}));
+    if(!near(edit.playbackRate,playbackRate)||edit.pitchPreserved!==true||edit.audioCutMode!=='direct-container-seek-continuous-samples'||edit.alignedAudio)throw Error('Pitch-preserving direct-source edit required.');
+    if(!near(edit.duration*FPS,Math.round(edit.duration*FPS),1e-6)||edit.voice.some(v=>!near(v.playbackRate,playbackRate)||v.pitchPreserved!==true))throw Error('Invalid frame clock or voice playback rate.');
+    const sortedVoice=[...edit.voice].sort((a,b)=>a.start-b.start);
+    for(let i=1;i<sortedVoice.length;i++){const previous=sortedVoice[i-1];if(sortedVoice[i].start<previous.start+(previous.sourceOut-previous.sourceIn)/previous.playbackRate-1/FPS)throw Error('Voice cues overlap after retiming.');}
+    Object.assign(report,{playbackRate,pitchPreserved:true,audioCutMode:edit.audioCutMode,frameCount:Math.round(edit.duration*FPS)});
     report.editManifestSha256=hash(path.join(root,'edit-manifest.json'));report.clips=clips;
     if(!clips.length)throw Error('At least one archive clip is required.');
     const extractionFile=path.join(root,'qa/extraction.json'),extraction=read(extractionFile);
     if(extraction.editManifestSha256!==report.editManifestSha256||!extraction.archive?.sha256||!edit.voice.length||extraction.voice?.editManifestSha256!==report.editManifestSha256||hash(path.join(root,'media/voice-mix.wav'))!==extraction.voice.sha256)throw Error('Archive extraction or voice timebase evidence is stale.');
+    const ve=extraction.voice;
+    if(ve.sourceMode!=='direct-container-seek-continuous-samples'||ve.cutMode!=='direct-container-seek-continuous-samples'||!near(ve.playbackRate??ve.rate,playbackRate)||ve.pitchPreserved!==true||ve.sourceArchiveSha256!==extraction.archive.sha256)throw Error('Voice must be cut directly from the archive at the declared pitch-preserving speed.');
+    for(const v of edit.voice){const cue=ve.events?.find(c=>c.id===v.id),duration=(v.sourceOut-v.sourceIn)/v.playbackRate;if(!cue||!near(cue.sourceIn,v.sourceIn)||!near(cue.sourceOut,v.sourceOut)||!near(cue.start,v.start)||!near(cue.duration,duration,1e-6)||!near(cue.playbackRate??cue.rate,v.playbackRate)||hash(path.join(root,'media/voice',v.id+'.wav'))!==cue.sha256)throw Error('Retimed voice cue evidence is stale: '+v.id);}
     for(const shot of edit.shots.filter(s=>s.kind==='archive')){
       const x=extraction.clips?.find(c=>c.id===shot.id),sealed=clips.find(c=>c.id===shot.id);
-      if(!x||x.sha256!==sealed.sha256||!near(x.sourceIn,shot.sourceIn)||!near(x.sourceOut,shot.sourceOut)||!near(x.duration,shot.end-shot.start)||x.frames!==Math.round((shot.end-shot.start)*FPS)||x.archiveSha256!==extraction.archive.sha256)throw Error('Clip extraction clock/hash mismatch: '+shot.id);
+      if(!x||x.sha256!==sealed.sha256||!near(x.sourceIn,shot.sourceIn)||!near(x.sourceOut,shot.sourceOut)||!near(shot.playbackRate,playbackRate)||!near(x.playbackRate??x.rate,shot.playbackRate)||!near(x.sourceDuration,shot.sourceOut-shot.sourceIn)||!near(x.targetDuration??x.duration,shot.end-shot.start)||!near((shot.sourceOut-shot.sourceIn)/shot.playbackRate,shot.end-shot.start)||x.frames!==Math.round((shot.end-shot.start)*FPS)||x.archiveSha256!==extraction.archive.sha256)throw Error('Clip extraction clock/hash/rate mismatch: '+shot.id);
     }
     report.extractionSha256=hash(extractionFile);report.sourceArchiveSha256=extraction.archive.sha256;
     const api=parse(execute(EC,['--empty','commands','--filter','prop.get','--json'])).find(c=>c.id==='prop.get');
@@ -205,7 +225,7 @@ export function auditArchive(root=defaultRoot,{selected=plans}={}) {
     for(const plan of selected){try{report.plans.push(auditPlan(root,{...plan,duration:edit.duration},bg,edit,clips));}catch(error){if(error.wholeframeReport)report.plans.push(error.wholeframeReport);throw error;}}
     report.status='PASS_NATIVE_ARCHIVE_JET';report.scope='Owner-authorized ordinary native clip editing and whole-frame transform; actual archive frames are never displayed to AI.';
     report.limitations=['Background corner coverage samples all declared camera keys and their interval midpoints, not every rendered video frame.',
-      'Visual review uses gray placeholders and cannot confirm expressions, mouth shapes, or framing of the actual archive.','Final video decode, audio sync/listening, and human review are separate checks.','No character-containing raster or video was displayed to AI.'];
+      'Visual review uses gray placeholders and cannot confirm expressions, mouth shapes, or framing of the actual archive.','Metadata/ASR alone cannot establish freedom from audio dropouts or clicks. Final AAC waveform QC and listening are separate checks.','No character-containing raster or video was displayed to AI.'];
     save(out,report);return report;
   }catch(error){report.status='FAIL';report.error=error.message;save(out,report);throw error;}
 }

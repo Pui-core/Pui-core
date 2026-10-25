@@ -1,55 +1,54 @@
 {
-  "status": "TECHNICAL_NATIVE_ARCHIVE_JET_AND_ISOLATED_VISUAL_PASS",
-  "version": "archive-jet-v4",
+  "status": "PASS_GRAPHICS_WITH_BRIEF_INSERTS_AND_REPAIRED_PITCH_PRESERVING_AUDIO",
+  "version": "archive-jet-v6",
   "date": "2026-10-26",
-  "issue": "https://github.com/Pui-core/-/issues/101",
-  "previous": "https://github.com/Pui-core/Pui-core/pull/14",
+  "issue": "https://github.com/Pui-core/-/issues/102",
+  "previous": "https://github.com/Pui-core/Pui-core/pull/28",
+  "ownerRequirements": {
+    "originalMovieMain": true,
+    "briefArchiveInserts": true,
+    "audioStutterRepair": true,
+    "archivePlaybackRate": 1.25,
+    "pitchPreserved": true,
+    "japaneseDeliveryNames": true
+  },
   "edit": {
-    "duration": 26.433333333333334,
-    "frames": 793,
-    "shotCount": 44,
-    "archiveShotCount": 37,
-    "voiceEvents": 9,
-    "drop": 3.2333333333333334,
-    "climax": 15.933333333333334,
-    "outro": 21.366666666666667,
-    "manifestSha256": "d4bcc89774aed5c32c86167b3bf370980b1b0900f0d7e6628e8d74bcc23917c6",
-    "sourceClock": "archive-container-zero-padded-audio",
-    "dialogueFabricated": false,
-    "sourceSpeechTimeStretched": false
+    "duration": 25,
+    "frames": 750,
+    "originalGraphicsSeconds": 20.599999999999998,
+    "archiveSeconds": 4.4,
+    "archiveCount": 4,
+    "voiceCount": 6,
+    "drop": 2,
+    "climax": 17,
+    "outro": 21,
+    "manifestSha256": "e53f00c641a4c229b7779b2bcfdf1cd0efc76d5d0c205658b70c45c6a6dfdb1d",
+    "baseGraphicsCodeByteIdentical": true,
+    "baseGraphicsSourceSha256": "41ed7fe262160a6f50ce0a42e6562eeb587b371308ff655c9eec8936020b5e48",
+    "audioCutMode": "direct-container-seek-continuous-samples",
+    "sourceClock": "archive-container-seconds"
   },
-  "sourceArchive": {
-    "sha256": "8d1241d546b2d2298125980d46da012cb909bbd91971c09a4ae822e37c5ffcfe",
-    "originalKept": true,
-    "archiveVideoInputToAI": false,
-    "metadataOnlyInspection": true
+  "repair": {
+    "cause": "An overly sensitive timestamp-gap repair inserted silence and removed samples at packet jitter. The old gap-filled WAV is no longer an audio source.",
+    "method": "Directly seek and decode original archive excerpts as continuous samples; atempo=1.25 preserves pitch; only edge fades and end padding/trimming are applied.",
+    "oldAudioQualityClaimRetracted": true,
+    "asrUsedAsAudioQualityGate": false
   },
+  "sourceArchiveSha256": "8d1241d546b2d2298125980d46da012cb909bbd91971c09a4ae822e37c5ffcfe",
   "plans": [
     {
       "id": "a-baibai",
       "title": "A｜達成ラッシュ",
       "song": "倍倍FIGHT!",
-      "duration": 26.433333333333334,
-      "frames": 793,
-      "fullFrameWipes": 13,
-      "wholeFrameCameraKeys": 114,
-      "audio": {
-        "reference": {
-          "integratedLufs": -15.6,
-          "truePeakDbtp": -1.5
-        },
-        "voiceOnly": {
-          "integratedLufs": -15.6,
-          "truePeakDbtp": -2.3
-        }
-      },
+      "duration": 25,
+      "frames": 750,
       "outputs": [
         {
           "file": "a-baibai/videos/a-baibai-reference.mp4",
-          "sha256": "a7d9dba975d7bf26b34e7eee8d27ecfeef98d759f9e5b4a397a8daca5abb885f",
-          "bytes": 55292849,
-          "duration": 26.433333,
-          "frames": 793,
+          "sha256": "3fe3d98326b2cd55082d28a1405f8f897aa5433175c843dab8a564d32637117e",
+          "bytes": 56436990,
+          "duration": 25,
+          "frames": 750,
           "audioStreams": 1,
           "containsAddedBgm": true,
           "containsRealPerformerVoice": true,
@@ -58,10 +57,10 @@
         },
         {
           "file": "a-baibai/videos/a-baibai-voice-only.mp4",
-          "sha256": "256b4a95866fdfd824b8a2e536268dfdf38e3f4ac5023da092baceb107336bd8",
-          "bytes": 55124319,
-          "duration": 26.433333,
-          "frames": 793,
+          "sha256": "c667881340ff5617f812f7e6e0c4ca075cccdae6bd85fe934c741720756499cb",
+          "bytes": 56015512,
+          "duration": 25,
+          "frames": 750,
           "audioStreams": 1,
           "containsAddedBgm": false,
           "containsRealPerformerVoice": true,
@@ -69,44 +68,40 @@
           "audioDescription": "配信音声・追加BGMなし（元配信のBGM/SEが残る場合あり）"
         }
       ],
-      "projectSha256": "6e8737b21fe7dde5af8507162476ae5d101e70ee18faffd639eb62d1dc2750c9",
-      "textOnlyProjectSha256": "135040c817ddffb180abdabb262b873ee228335dc6918f87f9301e17eff9fd0d",
-      "layoutSha256": "09136af6e44be0a7fac0da544f700c1283a10d570af33d83e957bba1efcecfc7",
-      "structureChecksPassed": 21,
-      "structureChecksTotal": 21,
-      "nativeCameraSamples": 114,
-      "backgroundCoverageSamples": 227,
-      "minimumBackgroundSourceMarginPixels": 116.37946496384825,
-      "reviewedFrameImages": 56,
-      "nativeReopenAndRender": true,
+      "audio": {
+        "reference": {
+          "integratedLufs": -16.1,
+          "truePeakDbtp": -1.6
+        },
+        "voiceOnly": {
+          "integratedLufs": -16.1,
+          "truePeakDbtp": -3.2
+        }
+      },
+      "projectSha256": "a88e6194a6a572c9e849fba23caf59c7357c0aaa6f9e1e1ba73d3157f2ec724e",
+      "textOnlyProjectSha256": "61ab04d9e11d68d1843d52d2e28f08b655065660a66e98c254874becd52112c1",
+      "layoutSha256": "85bee2709c5acb30403d75fcaf8e54264864ee3d53993b8773ea9f39b7aee2d6",
+      "structureChecks": 24,
+      "nativeCameraSamples": 65,
+      "backgroundCoverageSamples": 129,
+      "reviewedFrameImages": 64,
+      "fullFrameWipes": 17,
       "technicalPassed": true,
-      "audioPacketSha256": "SHA256=d84b76fca89c7f56751f231a9f8523c1d360a5f0eb63a065e5d7d4f06eebd83f"
+      "nativeReopenAndRender": true
     },
     {
       "id": "b-patissier",
       "title": "B｜ありがとうの紙ふぶき",
       "song": "キス・ミー・パティシエ",
-      "duration": 26.433333333333334,
-      "frames": 793,
-      "fullFrameWipes": 13,
-      "wholeFrameCameraKeys": 114,
-      "audio": {
-        "reference": {
-          "integratedLufs": -15.6,
-          "truePeakDbtp": -1.6
-        },
-        "voiceOnly": {
-          "integratedLufs": -15.6,
-          "truePeakDbtp": -2.3
-        }
-      },
+      "duration": 25,
+      "frames": 750,
       "outputs": [
         {
           "file": "b-patissier/videos/b-patissier-reference.mp4",
-          "sha256": "9b4179fa6ab90b22af6afc8b9f110480830839a614ac3f51fdd8ba2aa68ab8e0",
-          "bytes": 55318585,
-          "duration": 26.433333,
-          "frames": 793,
+          "sha256": "4efb5a55d86e11c54ef3c9dfecb707aac338aca4371571aca18fa7684b94b097",
+          "bytes": 56127856,
+          "duration": 25,
+          "frames": 750,
           "audioStreams": 1,
           "containsAddedBgm": true,
           "containsRealPerformerVoice": true,
@@ -115,10 +110,10 @@
         },
         {
           "file": "b-patissier/videos/b-patissier-voice-only.mp4",
-          "sha256": "02b40216c74091d3dd36a5401f9be60d35fb493a9bc00cd7361ac598eceba1d7",
-          "bytes": 55173468,
-          "duration": 26.433333,
-          "frames": 793,
+          "sha256": "05ac94f727daf0173382cc8acaa4b257c8c2bed62994144e6bbbff28eedfb686",
+          "bytes": 55706983,
+          "duration": 25,
+          "frames": 750,
           "audioStreams": 1,
           "containsAddedBgm": false,
           "containsRealPerformerVoice": true,
@@ -126,44 +121,40 @@
           "audioDescription": "配信音声・追加BGMなし（元配信のBGM/SEが残る場合あり）"
         }
       ],
-      "projectSha256": "fc82add06c343fbe41cefcf5ff1652cf13d7d701b4c7a4df46ea873da126248e",
-      "textOnlyProjectSha256": "61ada28a08a5ff89b71a9e643977ab57463437805ea3c81c0e6682dac6090d63",
-      "layoutSha256": "9e7f722e6091274fdbcc9d274645b28d11ac8d35d62a551261ce21ea64bda951",
-      "structureChecksPassed": 21,
-      "structureChecksTotal": 21,
-      "nativeCameraSamples": 114,
-      "backgroundCoverageSamples": 227,
-      "minimumBackgroundSourceMarginPixels": 129.43960311906062,
-      "reviewedFrameImages": 56,
-      "nativeReopenAndRender": true,
+      "audio": {
+        "reference": {
+          "integratedLufs": -16.5,
+          "truePeakDbtp": -2.7
+        },
+        "voiceOnly": {
+          "integratedLufs": -16.1,
+          "truePeakDbtp": -3.2
+        }
+      },
+      "projectSha256": "b1a95ff602ea4193eacaa221570f8f6b5b5dee00bef154bea1d3c1373589303d",
+      "textOnlyProjectSha256": "a6d40ff8ab187161df87ca7305d2ac6d52393e7474f1d5036b9ae42427ccf01c",
+      "layoutSha256": "a0c32891e1c893393d4f57f3e65c622d027eddf20ea3ea7d36d12716d1f8da18",
+      "structureChecks": 24,
+      "nativeCameraSamples": 61,
+      "backgroundCoverageSamples": 121,
+      "reviewedFrameImages": 62,
+      "fullFrameWipes": 16,
       "technicalPassed": true,
-      "audioPacketSha256": "SHA256=d84b76fca89c7f56751f231a9f8523c1d360a5f0eb63a065e5d7d4f06eebd83f"
+      "nativeReopenAndRender": true
     },
     {
       "id": "c-disco",
       "title": "C｜ビンゴ・パレード",
       "song": "チョコレイト・ディスコ",
-      "duration": 26.433333333333334,
-      "frames": 793,
-      "fullFrameWipes": 13,
-      "wholeFrameCameraKeys": 114,
-      "audio": {
-        "reference": {
-          "integratedLufs": -15.6,
-          "truePeakDbtp": -1.6
-        },
-        "voiceOnly": {
-          "integratedLufs": -15.6,
-          "truePeakDbtp": -2.3
-        }
-      },
+      "duration": 25,
+      "frames": 750,
       "outputs": [
         {
           "file": "c-disco/videos/c-disco-reference.mp4",
-          "sha256": "d1579d9c2cbcb4de114c12857be354bc6cab6f0aa71753b1c011f9e3e09ded18",
-          "bytes": 55232738,
-          "duration": 26.433333,
-          "frames": 793,
+          "sha256": "fd9942d9b5afc6b90ee1642634e7375715d931c2817b6acc1623a734a037246d",
+          "bytes": 56186951,
+          "duration": 25,
+          "frames": 750,
           "audioStreams": 1,
           "containsAddedBgm": true,
           "containsRealPerformerVoice": true,
@@ -172,10 +163,10 @@
         },
         {
           "file": "c-disco/videos/c-disco-voice-only.mp4",
-          "sha256": "ef6187535c22ccafe4782e0170cbfb3ebd6df0089b5af87662174f69b0488e64",
-          "bytes": 55070309,
-          "duration": 26.433333,
-          "frames": 793,
+          "sha256": "a727de6bfe94fc4f910cc542a4044c635bb6d2068f1a3893d9558bda59c150a2",
+          "bytes": 55762406,
+          "duration": 25,
+          "frames": 750,
           "audioStreams": 1,
           "containsAddedBgm": false,
           "containsRealPerformerVoice": true,
@@ -183,110 +174,253 @@
           "audioDescription": "配信音声・追加BGMなし（元配信のBGM/SEが残る場合あり）"
         }
       ],
-      "projectSha256": "33800fb21a67d3a9a47468c2ae780bd75c9b644d90745ed1597fe8c9cb4fc1b9",
-      "textOnlyProjectSha256": "6d9e717626c8220f401d1a2f6970f40273dc06b3db58bdfdeaa0c27ceebbeca9",
-      "layoutSha256": "f2fdb2fe3b6833faf56ade6d2c6d61a8281bdbe296318449fa140d437cdf901a",
-      "structureChecksPassed": 21,
-      "structureChecksTotal": 21,
-      "nativeCameraSamples": 114,
-      "backgroundCoverageSamples": 227,
-      "minimumBackgroundSourceMarginPixels": 109.01467347668859,
-      "reviewedFrameImages": 56,
-      "nativeReopenAndRender": true,
+      "audio": {
+        "reference": {
+          "integratedLufs": -16.2,
+          "truePeakDbtp": -3.5
+        },
+        "voiceOnly": {
+          "integratedLufs": -16.1,
+          "truePeakDbtp": -3.2
+        }
+      },
+      "projectSha256": "2d5f76fbde2df4eb49b74f5f42453b1ebead60ce3fe0b9fb642edc5ffeaab7ce",
+      "textOnlyProjectSha256": "0fd5c13d73a03a8d9205f302b187a9677e1522ba56ffda95119cb5a33f81c4fa",
+      "layoutSha256": "c161c7a1ca7feb192f03e8ab9cfd6e7d3a5d3ec9f3f2161662c041b2f3745db7",
+      "structureChecks": 24,
+      "nativeCameraSamples": 64,
+      "backgroundCoverageSamples": 127,
+      "reviewedFrameImages": 63,
+      "fullFrameWipes": 18,
       "technicalPassed": true,
-      "audioPacketSha256": "SHA256=d84b76fca89c7f56751f231a9f8523c1d360a5f0eb63a065e5d7d4f06eebd83f"
+      "nativeReopenAndRender": true
     }
   ],
   "qa": {
     "auditStatus": "PASS_NATIVE_ARCHIVE_JET",
-    "auditSha256": "7ce9b78c5d2d367d92186f18f34928ce915de5ccbd7fe3ddb2a0e8983a67e5e4",
+    "auditSha256": "7ef955aa042a703b6092b66f05b43b01f85ff564949f85de8120fbcd30e560c4",
     "visualStatus": "PASS_TEXT_ONLY_VISUAL",
-    "visualSha256": "e143cf4c8f30717b36434fa6f5679751df72a2b4ee7eb1b8841062aae57fc3a7",
-    "reviewedFrameImages": 168,
-    "nativeCameraSamples": 342,
-    "backgroundCoverageSamples": 681,
+    "visualSha256": "6194001a142949452ed0a82f3cc3235d6dd8634dace3be646a02707531e81134",
+    "reviewedFrameImages": 189,
+    "nativeCameraSamples": 190,
+    "backgroundCoverageSamples": 377,
+    "sourceAudioStatus": "PASS_PITCH_CONTINUITY_SOURCE",
+    "sourceAudioReportSha256": "e1f13a39d754e0e4ebce805919eb0864f797cb1f08df210f3f9ccc7c99540ece",
+    "finalAudioStatus": "PASS_PITCH_CONTINUITY_FINAL",
+    "finalAudioReportSha256": "ac75fa0f5e301a7c68a5c2905cf1333b3aa14090289707a8a3bd4a759d4181e9",
+    "finalAudioVariants": 6,
+    "finalAudioChecks": {
+      "tonePitchAndNegativeControl": true,
+      "allVoiceChecks": true,
+      "originalArchiveHash": true,
+      "manifestUnchanged": true,
+      "finalAAC": true,
+      "oldInsertedHoleNegativeControlRejected": true
+    },
+    "pitchCalibration": {
+      "method": "Known 440Hz tone through real installed atempo; wrong-pitch speedup is a negative control.",
+      "inputHz": 440,
+      "inputSeconds": 4,
+      "expectedOutputSeconds": 3.2,
+      "frequencyToleranceHz": 1,
+      "durationToleranceSeconds": 0.02,
+      "results": {
+        "atempo125": {
+          "frequencyHz": 439.9543525908425,
+          "seconds": 3.200375,
+          "filter": "atempo=1.25",
+          "command": [
+            "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+            "-v",
+            "error",
+            "-i",
+            "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Osayu-Bingo\\2026-10-26\\archive-jet-v6\\qa\\audio-check\\calibration\\tone-440Hz-4s.wav",
+            "-vn",
+            "-af",
+            "atempo=1.25",
+            "-ac",
+            "2",
+            "-ar",
+            "48000",
+            "-f",
+            "f32le",
+            "-"
+          ]
+        },
+        "wrongPitchControl": {
+          "frequencyHz": 550,
+          "seconds": 3.2,
+          "filter": "asetrate=60000,aresample=48000",
+          "command": [
+            "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+            "-v",
+            "error",
+            "-i",
+            "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Osayu-Bingo\\2026-10-26\\archive-jet-v6\\qa\\audio-check\\calibration\\tone-440Hz-4s.wav",
+            "-vn",
+            "-af",
+            "asetrate=60000,aresample=48000",
+            "-ac",
+            "2",
+            "-ar",
+            "48000",
+            "-f",
+            "f32le",
+            "-"
+          ]
+        }
+      },
+      "pitchPreserved": true,
+      "durationRetimed": true,
+      "wrongPitchControlRejected": true,
+      "humanListening": false,
+      "passed": true
+    },
+    "oldInsertedHoleNegativeControl": {
+      "file": "/home/pui/Videos/Osayu-Bingo/2026-10-26/archive-jet-v6/qa/audio-check/negative-control-old-pad.wav",
+      "sha256": "da68834c2d22d16ecea3e0e7e60fe8315644c72b64b0ca1d3a43a4950d718ba8",
+      "metrics": {
+        "frames": 128000,
+        "seconds": 2.6666666666666665,
+        "interiorExclusionSeconds": [
+          0.02,
+          0.02
+        ],
+        "nearZeroThreshold": 0.000030517578125,
+        "minimumHoleMs": 2,
+        "internalHoleCount": 17,
+        "internalHoleMs": 118.08333333333333,
+        "internalHoles": [
+          {
+            "start": 0.03270833333333333,
+            "durationMs": 6.770833333333333
+          },
+          {
+            "start": 0.1935,
+            "durationMs": 8
+          },
+          {
+            "start": 0.31154166666666666,
+            "durationMs": 10.104166666666666
+          },
+          {
+            "start": 0.49772916666666667,
+            "durationMs": 6.875
+          },
+          {
+            "start": 0.6596458333333334,
+            "durationMs": 5.854166666666667
+          },
+          {
+            "start": 0.8225208333333334,
+            "durationMs": 5.75
+          },
+          {
+            "start": 0.9628541666666667,
+            "durationMs": 6.770833333333333
+          },
+          {
+            "start": 1.1247708333333333,
+            "durationMs": 6.6875
+          },
+          {
+            "start": 1.309625,
+            "durationMs": 7.125
+          },
+          {
+            "start": 1.4714791666666667,
+            "durationMs": 6.208333333333333
+          },
+          {
+            "start": 1.6129791666666666,
+            "durationMs": 6.875
+          },
+          {
+            "start": 1.7772916666666667,
+            "durationMs": 4.625
+          },
+          {
+            "start": 1.9367083333333333,
+            "durationMs": 6.875
+          },
+          {
+            "start": 2.1217083333333333,
+            "durationMs": 7.125
+          },
+          {
+            "start": 2.2388333333333335,
+            "durationMs": 8.020833333333334
+          },
+          {
+            "start": 2.401625,
+            "durationMs": 7.145833333333333
+          },
+          {
+            "start": 2.5866875,
+            "durationMs": 7.270833333333333
+          }
+        ],
+        "peak": 0.66864013671875,
+        "rms": 0.09834418445825577,
+        "maxInteriorSampleJump": 0.411712646484375,
+        "jumpP999": 0.18846704065799713,
+        "firstSampleMax": 0.386077880859375,
+        "lastSampleMax": 0.01995849609375,
+        "first20msRms": 0.294075071811676,
+        "last20msRms": 0.012007179670035839
+      },
+      "rejected": true,
+      "knownSourceWordHole": 6532.6735
+    },
     "mandatoryVisualFindings": [],
-    "allMovieFramesDecoded": true,
-    "allMovieFramesVisuallyInspected": false,
-    "mainPreviewArchiveGeometryMatched": true,
-    "voiceOnlyAacIdenticalAcrossPlans": true,
-    "voiceAacHashes": [
-      {
-        "id": "a-baibai",
-        "audioPacketSha256": "SHA256=d84b76fca89c7f56751f231a9f8523c1d360a5f0eb63a065e5d7d4f06eebd83f"
-      },
-      {
-        "id": "b-patissier",
-        "audioPacketSha256": "SHA256=d84b76fca89c7f56751f231a9f8523c1d360a5f0eb63a065e5d7d4f06eebd83f"
-      },
-      {
-        "id": "c-disco",
-        "audioPacketSha256": "SHA256=d84b76fca89c7f56751f231a9f8523c1d360a5f0eb63a065e5d7d4f06eebd83f"
-      }
-    ],
-    "finalAacAudioAsr": {
-      "status": "ASR_COMPLETE_WITH_WORD_RECOGNITION_LIMITATIONS",
-      "method": "Medium ASR on WAV extracted from final AAC with explicit -vn; no video/frames passed to model.",
-      "majorSpeechKeywordsRecognized": true,
-      "allRequestedWordsVerified": false,
-      "criticalUnconfirmedWord": "後日",
-      "interpretation": "The source excerpt was recognized as 後日 by medium. Final AAC-alone inference misrecognized it as こいつ (voice-only) or 本日 (reference). This is ASR recognition failure, not proof that the recorded word was lost or changed.",
-      "humanRealtimeListening": false,
-      "reportSha256": "6f1b433edc6237001a17ba9c8e463d802c3ce8c61ad78b0a266a98d24b0adb80",
-      "sourceKeywordIntervalInsideCutSeconds": [
-        0.08,
-        0.28
-      ],
-      "sourceKeywordStartsAfterFadeSeconds": 0.072,
-      "waveformCorrelation": {
-        "processedWav": 0.906,
-        "finalVoiceOnlyAac": 0.912,
-        "lagMilliseconds": -0.1875
-      },
-      "aacOnlyCorruptionEvidence": false
-    }
-  },
-  "background": {
-    "reusedFromV3": true,
-    "newImageGenerationPerformed": false,
-    "sha256": "beeb93c9ffb791e113704cf8144db40858a7340803c1be860a3744e3a1edd779"
+    "allMoviesFullyDecoded": true,
+    "archiveVideoInputToAI": false,
+    "characterImageInputToAI": false,
+    "currentModuleMatchesAllSixPreparedJsx": true
   },
   "sourceSha256": {
-    "config.mjs": "a5cef73cf17a0e88c24c8d5587dec209d853be2c75138d9fd980486e2e41db1e",
+    "README.md": "567baa98273a08ef7930e5629aa5504c4949f8f1bef3aef3c1f4c9b7e666e1c2",
+    "audio-check.mjs": "334325efcfe829faf94740de962bf5dc66ba415160a2bb08032be122df1443b7",
+    "audio-check.py": "f3d7a8d8534e2ba54fb8b3f74abcc36458963a5d315b3df3c0a377f47a5107f6",
+    "audit.mjs": "6ccaebc5af8d717767cde7ef97e54c9d6934ac0f234e8e102e4ad638f68061f7",
+    "base-graphics.mjs": "41ed7fe262160a6f50ce0a42e6562eeb587b371308ff655c9eec8936020b5e48",
     "build-edit.mjs": "f455f7740169474fea4a0d6c68ef4dea2e2daa4eb385b32bac673481b0d80d9a",
-    "motion.mjs": "d332d42287ab1c6a48fe4f659ee4f97783d4053c3ae0b9092deae7b9542fd3e7",
-    "pipeline.mjs": "0043c340816ff0375020228d1c150a80ea7b1a6414315271278fbf9c663dbb02",
-    "audit.mjs": "7a5c95b34c59c32ee5974b43dbc824aaeff90d216f9f36a0a8d2691de3eb0c2f",
-    "package.mjs": "d273e1256be82c0592b3a4c2f8611c00520f4cbbe38c7b931743d495a5ca394e",
-    "README.md": "a3f3831b205902bc87b65284f9bbd5d2d363df29a897e6a124ab9d69c1d2414b",
-    "音源後付けガイド.md": "2e7f29839714e371c9938e89443632ad5905ea433e79521a827b69f37bd3957f",
-    "背景生成プロンプト.md": "888a107f5cc8fb948e1d4e39f60c61f50bc841d2f35f2fa8c24d9f7c28b9b056"
+    "config.mjs": "9740a5e189c7194f9c33124049749f6631b8b63e8e6cfe28d31c4e9706527848",
+    "insert-edit.mjs": "e811a6f3cfa1545a32012f6c87188c6ccad446dec8af59c51a160b5ffe2686cd",
+    "motion.mjs": "a146a9ed16098ecbc3f97bd4776bc7b501a4ab43c0b5225dd548577a5a5cc4a4",
+    "package.mjs": "20a83d9a51d83723d6dd748077073da93ef000e395b70aca466167a245d4d7f1",
+    "pipeline.mjs": "5d5c1114f10e8bfd408402adead0c2c74741ae335ab6e17aaad3c46131a12675",
+    "背景生成プロンプト.md": "888a107f5cc8fb948e1d4e39f60c61f50bc841d2f35f2fa8c24d9f7c28b9b056",
+    "音源後付けガイド.md": "5d2e02c457f95e75e599977e05b720ec61cfaa08dd161229a6be55b14eba967d"
   },
   "portableDelivery": {
     "status": "PASS_PORTABLE_NATIVE_PACKAGE",
-    "destination": "F:\\Users\\pui\\Documents\\gara\\bingo-thankyou-archive-jet-v4-20261026",
+    "destination": "F:\\Users\\pui\\Documents\\gara\\ビンゴ達成ありがとう_切り抜き差込版_音声修正_20261026",
     "nativeProjects": 9,
     "movieCount": 6,
+    "japaneseNames": true,
     "nativeReopenSaveAndRender": true,
+    "characterLayerPropertiesUnchanged": true,
     "archiveLayerPropertiesUnchanged": true,
     "wholeFrameKeysAndParentsUnchanged": true,
-    "report": "editable/qa/package.json",
+    "report": "制作データ/qa/package.json",
     "plans": [
       {
         "id": "a-baibai",
         "movies": [
           {
-            "file": "a-baibai-reference.mp4",
-            "sha256": "a7d9dba975d7bf26b34e7eee8d27ecfeef98d759f9e5b4a397a8daca5abb885f",
-            "bytes": 55292849
+            "file": "A案_倍倍FIGHT_切り抜き1.25倍_曲入り確認用.mp4",
+            "sha256": "3fe3d98326b2cd55082d28a1405f8f897aa5433175c843dab8a564d32637117e",
+            "bytes": 56436990
           },
           {
-            "file": "a-baibai-voice-only.mp4",
-            "sha256": "256b4a95866fdfd824b8a2e536268dfdf38e3f4ac5023da092baceb107336bd8",
-            "bytes": 55124319
+            "file": "A案_倍倍FIGHT_切り抜き1.25倍_配信音声のみ.mp4",
+            "sha256": "c667881340ff5617f812f7e6e0c4ca075cccdae6bd85fe934c741720756499cb",
+            "bytes": 56015512
           }
         ],
         "nativeReopenSaveAndRender": true,
+        "characterLayerPropertiesUnchanged": true,
         "archiveLayerPropertiesUnchanged": true,
         "wholeFrameKeysAndParentsUnchanged": true
       },
@@ -294,17 +428,18 @@
         "id": "b-patissier",
         "movies": [
           {
-            "file": "b-patissier-reference.mp4",
-            "sha256": "9b4179fa6ab90b22af6afc8b9f110480830839a614ac3f51fdd8ba2aa68ab8e0",
-            "bytes": 55318585
+            "file": "B案_キスミーパティシエ_切り抜き1.25倍_曲入り確認用.mp4",
+            "sha256": "4efb5a55d86e11c54ef3c9dfecb707aac338aca4371571aca18fa7684b94b097",
+            "bytes": 56127856
           },
           {
-            "file": "b-patissier-voice-only.mp4",
-            "sha256": "02b40216c74091d3dd36a5401f9be60d35fb493a9bc00cd7361ac598eceba1d7",
-            "bytes": 55173468
+            "file": "B案_キスミーパティシエ_切り抜き1.25倍_配信音声のみ.mp4",
+            "sha256": "05ac94f727daf0173382cc8acaa4b257c8c2bed62994144e6bbbff28eedfb686",
+            "bytes": 55706983
           }
         ],
         "nativeReopenSaveAndRender": true,
+        "characterLayerPropertiesUnchanged": true,
         "archiveLayerPropertiesUnchanged": true,
         "wholeFrameKeysAndParentsUnchanged": true
       },
@@ -312,28 +447,28 @@
         "id": "c-disco",
         "movies": [
           {
-            "file": "c-disco-reference.mp4",
-            "sha256": "d1579d9c2cbcb4de114c12857be354bc6cab6f0aa71753b1c011f9e3e09ded18",
-            "bytes": 55232738
+            "file": "C案_チョコレイトディスコ_切り抜き1.25倍_曲入り確認用.mp4",
+            "sha256": "fd9942d9b5afc6b90ee1642634e7375715d931c2817b6acc1623a734a037246d",
+            "bytes": 56186951
           },
           {
-            "file": "c-disco-voice-only.mp4",
-            "sha256": "ef6187535c22ccafe4782e0170cbfb3ebd6df0089b5af87662174f69b0488e64",
-            "bytes": 55070309
+            "file": "C案_チョコレイトディスコ_切り抜き1.25倍_配信音声のみ.mp4",
+            "sha256": "a727de6bfe94fc4f910cc542a4044c635bb6d2068f1a3893d9558bda59c150a2",
+            "bytes": 55762406
           }
         ],
         "nativeReopenSaveAndRender": true,
+        "characterLayerPropertiesUnchanged": true,
         "archiveLayerPropertiesUnchanged": true,
         "wholeFrameKeysAndParentsUnchanged": true
       }
     ]
   },
   "limitations": [
-    "Archive video and character frames were never displayed to AI. Gray-placeholder review cannot verify the actual expression, mouth shape or framing.",
-    "Audio source selection uses local small/medium ASR and word times; this is not human audition or verified speaker diarization.",
-    "C uses the standard Perfume public preview; the exact edition/offset of TikTok sound 7353192190165797648 remains unconfirmed.",
-    "No SNS publication.",
-    "Final isolated AAC ASR misrecognizes 後日; source-context medium ASR confirms the intended word and the on-screen teaser explicitly says 後日公開. Full word-by-word final recognition is not claimed."
+    "Numeric waveform continuity and pitch checks are separate from human listening.",
+    "AI viewing uses character/archive-free placeholders; actual expressions, mouth shapes and framing were not visually inspected.",
+    "The exact TikTok sound edition/offset and device synchronization remain unverified; C uses the standard Perfume public preview.",
+    "No SNS publication or retention measurement."
   ],
   "humanRealtimeReview": false,
   "tiktokDeviceReview": false,
