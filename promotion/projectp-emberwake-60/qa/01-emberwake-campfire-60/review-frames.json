@@ -1,0 +1,644 @@
+{
+  "version": "EMBERWAKE-60",
+  "videoSha256": "36fd2913a8ea5c707aaf37fd9f1dbc28d62db40a2b051b2bcf7ff6bf78d8e864",
+  "planSha256": "986641cfeb8bcaecf662052b33f71607e2fac675d794080b0ef39d16c8398421",
+  "stem": "01-emberwake-campfire-60",
+  "duration": 60,
+  "frames": 1800,
+  "storySamplingFps": 3,
+  "storySheets": 6,
+  "stories": [
+    {
+      "index": 1,
+      "start": 0,
+      "end": 10,
+      "startFrame": 0,
+      "endFrame": 300,
+      "sampleFrames": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100,
+        110,
+        120,
+        130,
+        140,
+        150,
+        160,
+        170,
+        180,
+        190,
+        200,
+        210,
+        220,
+        230,
+        240,
+        250,
+        260,
+        270,
+        280,
+        290
+      ],
+      "columns": 5,
+      "rows": 6,
+      "file": "story-1.jpg"
+    },
+    {
+      "index": 2,
+      "start": 10,
+      "end": 20,
+      "startFrame": 300,
+      "endFrame": 600,
+      "sampleFrames": [
+        300,
+        310,
+        320,
+        330,
+        340,
+        350,
+        360,
+        370,
+        380,
+        390,
+        400,
+        410,
+        420,
+        430,
+        440,
+        450,
+        460,
+        470,
+        480,
+        490,
+        500,
+        510,
+        520,
+        530,
+        540,
+        550,
+        560,
+        570,
+        580,
+        590
+      ],
+      "columns": 5,
+      "rows": 6,
+      "file": "story-2.jpg"
+    },
+    {
+      "index": 3,
+      "start": 20,
+      "end": 30,
+      "startFrame": 600,
+      "endFrame": 900,
+      "sampleFrames": [
+        600,
+        610,
+        620,
+        630,
+        640,
+        650,
+        660,
+        670,
+        680,
+        690,
+        700,
+        710,
+        720,
+        730,
+        740,
+        750,
+        760,
+        770,
+        780,
+        790,
+        800,
+        810,
+        820,
+        830,
+        840,
+        850,
+        860,
+        870,
+        880,
+        890
+      ],
+      "columns": 5,
+      "rows": 6,
+      "file": "story-3.jpg"
+    },
+    {
+      "index": 4,
+      "start": 30,
+      "end": 40,
+      "startFrame": 900,
+      "endFrame": 1200,
+      "sampleFrames": [
+        900,
+        910,
+        920,
+        930,
+        940,
+        950,
+        960,
+        970,
+        980,
+        990,
+        1000,
+        1010,
+        1020,
+        1030,
+        1040,
+        1050,
+        1060,
+        1070,
+        1080,
+        1090,
+        1100,
+        1110,
+        1120,
+        1130,
+        1140,
+        1150,
+        1160,
+        1170,
+        1180,
+        1190
+      ],
+      "columns": 5,
+      "rows": 6,
+      "file": "story-4.jpg"
+    },
+    {
+      "index": 5,
+      "start": 40,
+      "end": 50,
+      "startFrame": 1200,
+      "endFrame": 1500,
+      "sampleFrames": [
+        1200,
+        1210,
+        1220,
+        1230,
+        1240,
+        1250,
+        1260,
+        1270,
+        1280,
+        1290,
+        1300,
+        1310,
+        1320,
+        1330,
+        1340,
+        1350,
+        1360,
+        1370,
+        1380,
+        1390,
+        1400,
+        1410,
+        1420,
+        1430,
+        1440,
+        1450,
+        1460,
+        1470,
+        1480,
+        1490
+      ],
+      "columns": 5,
+      "rows": 6,
+      "file": "story-5.jpg"
+    },
+    {
+      "index": 6,
+      "start": 50,
+      "end": 60,
+      "startFrame": 1500,
+      "endFrame": 1800,
+      "sampleFrames": [
+        1500,
+        1510,
+        1520,
+        1530,
+        1540,
+        1550,
+        1560,
+        1570,
+        1580,
+        1590,
+        1600,
+        1610,
+        1620,
+        1630,
+        1640,
+        1650,
+        1660,
+        1670,
+        1680,
+        1690,
+        1700,
+        1710,
+        1720,
+        1730,
+        1740,
+        1750,
+        1760,
+        1770,
+        1780,
+        1790
+      ],
+      "columns": 5,
+      "rows": 6,
+      "file": "story-6.jpg"
+    }
+  ],
+  "boundaries": [
+    {
+      "index": 1,
+      "time": 1.2,
+      "startFrame": 33,
+      "frames": 12,
+      "file": "boundary-01.jpg"
+    },
+    {
+      "index": 2,
+      "time": 3.2,
+      "startFrame": 93,
+      "frames": 12,
+      "file": "boundary-02.jpg"
+    },
+    {
+      "index": 3,
+      "time": 6.8,
+      "startFrame": 201,
+      "frames": 12,
+      "file": "boundary-03.jpg"
+    },
+    {
+      "index": 4,
+      "time": 9.8,
+      "startFrame": 291,
+      "frames": 12,
+      "file": "boundary-04.jpg"
+    },
+    {
+      "index": 5,
+      "time": 12,
+      "startFrame": 357,
+      "frames": 12,
+      "file": "boundary-05.jpg"
+    },
+    {
+      "index": 6,
+      "time": 15.6,
+      "startFrame": 465,
+      "frames": 12,
+      "file": "boundary-06.jpg"
+    },
+    {
+      "index": 7,
+      "time": 18.6,
+      "startFrame": 555,
+      "frames": 12,
+      "file": "boundary-07.jpg"
+    },
+    {
+      "index": 8,
+      "time": 22,
+      "startFrame": 657,
+      "frames": 12,
+      "file": "boundary-08.jpg"
+    },
+    {
+      "index": 9,
+      "time": 26.2,
+      "startFrame": 783,
+      "frames": 12,
+      "file": "boundary-09.jpg"
+    },
+    {
+      "index": 10,
+      "time": 28.6,
+      "startFrame": 855,
+      "frames": 12,
+      "file": "boundary-10.jpg"
+    },
+    {
+      "index": 11,
+      "time": 31,
+      "startFrame": 927,
+      "frames": 12,
+      "file": "boundary-11.jpg"
+    },
+    {
+      "index": 12,
+      "time": 33.6,
+      "startFrame": 1005,
+      "frames": 12,
+      "file": "boundary-12.jpg"
+    },
+    {
+      "index": 13,
+      "time": 36.6,
+      "startFrame": 1095,
+      "frames": 12,
+      "file": "boundary-13.jpg"
+    },
+    {
+      "index": 14,
+      "time": 40,
+      "startFrame": 1197,
+      "frames": 12,
+      "file": "boundary-14.jpg"
+    },
+    {
+      "index": 15,
+      "time": 44,
+      "startFrame": 1317,
+      "frames": 12,
+      "file": "boundary-15.jpg"
+    },
+    {
+      "index": 16,
+      "time": 48,
+      "startFrame": 1437,
+      "frames": 12,
+      "file": "boundary-16.jpg"
+    },
+    {
+      "index": 17,
+      "time": 53,
+      "startFrame": 1587,
+      "frames": 12,
+      "file": "boundary-17.jpg"
+    }
+  ],
+  "highResolution": [
+    {
+      "time": 0.7,
+      "frame": 21,
+      "file": "final-0.7.png"
+    },
+    {
+      "time": 5,
+      "frame": 150,
+      "file": "final-5.png"
+    },
+    {
+      "time": 14,
+      "frame": 420,
+      "file": "final-14.png"
+    },
+    {
+      "time": 20.3,
+      "frame": 609,
+      "file": "final-20.3.png"
+    },
+    {
+      "time": 24,
+      "frame": 720,
+      "file": "final-24.png"
+    },
+    {
+      "time": 27.3,
+      "frame": 819,
+      "file": "final-27.3.png"
+    },
+    {
+      "time": 29.7,
+      "frame": 891,
+      "file": "final-29.7.png"
+    },
+    {
+      "time": 32.3,
+      "frame": 969,
+      "file": "final-32.3.png"
+    },
+    {
+      "time": 35,
+      "frame": 1050,
+      "file": "final-35.png"
+    },
+    {
+      "time": 38,
+      "frame": 1140,
+      "file": "final-38.png"
+    },
+    {
+      "time": 41.5,
+      "frame": 1245,
+      "file": "final-41.5.png"
+    },
+    {
+      "time": 46,
+      "frame": 1380,
+      "file": "final-46.png"
+    },
+    {
+      "time": 50.5,
+      "frame": 1515,
+      "file": "final-50.5.png"
+    },
+    {
+      "time": 54,
+      "frame": 1620,
+      "file": "final-54.png"
+    },
+    {
+      "time": 57,
+      "frame": 1710,
+      "file": "final-57.png"
+    },
+    {
+      "time": 59.8,
+      "frame": 1794,
+      "file": "final-59.8.png"
+    }
+  ],
+  "highResolutionSeconds": [
+    0.7,
+    5,
+    14,
+    20.3,
+    24,
+    27.3,
+    29.7,
+    32.3,
+    35,
+    38,
+    41.5,
+    46,
+    50.5,
+    54,
+    57,
+    59.8
+  ],
+  "outputFiles": [
+    {
+      "file": "qa/01-emberwake-campfire-60/story-1.jpg",
+      "sha256": "2b76e447d4704f9c47df727e26f25de8817a32e009e0280280185dd6d5b93800"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/story-2.jpg",
+      "sha256": "5a9c27dc28e1e6914ea5baefade7f31c6b0184a9760045d965c0f9e28d5961bf"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/story-3.jpg",
+      "sha256": "58900274fd75e58b30713c86d2ac2bd1d62ea5b0e0289c0a53d603315bdded99"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/story-4.jpg",
+      "sha256": "4c37f64e991a9bb200574e5c5eaf8e11cd81e05765286c584076ea420873dbf3"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/story-5.jpg",
+      "sha256": "e0024f28623f9eb66806dc92714eba1e19d57a2ef05691d7d685986a52f53f83"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/story-6.jpg",
+      "sha256": "84f67f8e0ad713b3281847612170ccc7e9533a50621729525b8838d507ce6838"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-01.jpg",
+      "sha256": "e0ab4910eb397c1ac7834c23c2a7311ee5a272c075063cfc9d615d1e6aeb5f3b"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-02.jpg",
+      "sha256": "6cfa02299b6bfe1f8226cb49a00d5d907716aee2bdeb358ce73ca2414baa10fe"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-03.jpg",
+      "sha256": "7eb9daf76279e6a4e34999cfded43c22c933a7ec1677246062b5b1df51d3b0e0"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-04.jpg",
+      "sha256": "278380550736260bac4527ca0e0e4b1a024740e1089121950e04e4ee2bf87e8d"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-05.jpg",
+      "sha256": "72d4d1b0bef5f139761db44a75a798f1f586a71b4c7b1a9d17952c8fd74f5ae5"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-06.jpg",
+      "sha256": "4a24d7582a4b6f02a180ee8c4b45f191951b3c9081e3d48a8c38f55835d17f91"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-07.jpg",
+      "sha256": "8606b2d64f2c29b16343ffedcf91ab612c6f1ec0013960b7b7e3a1c4447bb8e1"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-08.jpg",
+      "sha256": "6b74965c568a301982a9fb0c1cdd59b1df69c0e3605d4b36d5482d5e4191317e"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-09.jpg",
+      "sha256": "7597b8d6c11dc456e8a43e7d3c29be5fba5fe50ada535ffd465f56039708b833"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-10.jpg",
+      "sha256": "fed6e27bbf555df6b849f3a042aaae070d540438038eb61718db11ba86c6b3c4"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-11.jpg",
+      "sha256": "3fdaa171032b77cf9b18105b8fa076cb17b064b509311b0d89a7e95ecadf1860"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-12.jpg",
+      "sha256": "7f37c9a4d37aea07959be91f5e35af612cdc61103dbf8a6ba0bfb2bf0eb3f3c2"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-13.jpg",
+      "sha256": "659852662cbb9666e333769da448f32d222159c3e5c9c76948507b83e82739f5"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-14.jpg",
+      "sha256": "ece0bcf1030cea87a297a6bbc3f780c69b2fc7b625a7dc0556ca08d94bcfc020"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-15.jpg",
+      "sha256": "be7823e396ee59f4097ac0bf13a3a16c759fa90f21682cd7def66ee5e02ff8ea"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-16.jpg",
+      "sha256": "3d5c803bc7a93997b8e80a70afde1f9091728e57561e58513d9f5439f5bcefdb"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/boundary-17.jpg",
+      "sha256": "ff2a3ebdeb7aef092270c415fdee79b42bd586bfb6c7aa837818fcb3f18b05cb"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-0.7.png",
+      "sha256": "e028b2e48c94da04eea20ff54d897168c82ad92ee3114d0e42265b93256f71b6"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-5.png",
+      "sha256": "f48bdff98d8bcead562a40cbd250b2a1b981a185049a44b58f8669bc8fd35ebb"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-14.png",
+      "sha256": "c865099b085ecf5cc6755ed2d97bb815e60257dbbb5da1b39201db639e5adb2d"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-20.3.png",
+      "sha256": "40556968b8290a42e1f6e63925b64efa97c364e27719efcb1a42f3e803d6da6a"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-24.png",
+      "sha256": "98d7804e55a309130cef3acd57b8dff908f077fdfdf39de9dfc280dcf2e9223d"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-27.3.png",
+      "sha256": "a640f84ee5160a6b36a02985c958b5ae72da7793bb917be1ae42ba32178e9641"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-29.7.png",
+      "sha256": "057893405f462981550b992a0385a544d238e18dc5fb473e23956b934b2a7652"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-32.3.png",
+      "sha256": "799f0f123c8ff56a8a8680381152f50a8a54474f0dfeb0c0d975be411d3ff757"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-35.png",
+      "sha256": "a9c7f9670395986e8d79897307d724b7274686caa9afdd6527c5c27b9e22374c"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-38.png",
+      "sha256": "a195dc04dd15ced9a6c4897f523cb2c3b1f1a6361bae2f487e9f3bc19ab1672a"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-41.5.png",
+      "sha256": "77dbf07236fd81fef46d38c063096a7d291995722b4d446cb46328e8f258c64e"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-46.png",
+      "sha256": "76b4a030edfd6591a54d652e64f5fcba10e4fcbc3eb92e568b030bf694db0a22"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-50.5.png",
+      "sha256": "348a992d37f6ba568cb7a5845a3d0add5b7e31f66f8279170642d71bcb85b0c8"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-54.png",
+      "sha256": "83beea428923d039708c107150f02abcd3bc1e5c8110d48f2a4cd0e68f05176d"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-57.png",
+      "sha256": "57f6e0e4d0608538f9e40552549df20547e296e7d8faf3d5c8b22c07fdce74f3"
+    },
+    {
+      "file": "qa/01-emberwake-campfire-60/final-59.8.png",
+      "sha256": "18c953bb5a19438561e08a062a212a5ce7db3eafbc37a3c12a16974268242898"
+    }
+  ],
+  "scope": "Sampled final-video frames and12 consecutive frames at every edit boundary. Does not claim real-time whole playback, visual approval or auditory review."
+}

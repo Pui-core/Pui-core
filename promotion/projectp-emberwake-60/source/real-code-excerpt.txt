@@ -1,0 +1,4 @@
+func carried() -> int:
+    for i in cores.size():
+        if cores[i].place=="carried": return i
+    return -1
