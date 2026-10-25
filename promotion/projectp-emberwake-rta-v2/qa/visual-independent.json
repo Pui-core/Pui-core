@@ -1,0 +1,767 @@
+{
+  "version": "EMBERWAKE-RTA-V2-INDEPENDENT-FINAL-IMAGE-QA-1",
+  "issue": 89,
+  "reviewedAt": "2026-10-25T04:59:31.318Z",
+  "status": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
+  "summary": "最終MP4の全18場面代表画像、全編3fps、17境界の各12連続フレーム、場面内8点の各16連続フレーム、高解像度20枚を独立目視。確認範囲で必須修正なし。全編実時間視聴／試聴／実機SNS UI安全／バズの合格判定ではない。",
+  "reviewers": {
+    "lead": "/root/kinetic_visual_qa",
+    "leadViewedImageFiles": 44,
+    "helper": "/root/kinetic_delivery_check",
+    "helperViewedHighResolutionImages": [
+      "final-5.png",
+      "final-10.7.png",
+      "final-41.5.png",
+      "final-46.png",
+      "final-50.5.png",
+      "final-54.png",
+      "final-57.png",
+      "final-59.8.png"
+    ],
+    "helperViewedImageFiles": 8,
+    "helperMethod": "各8画像をview_imageで目視しSHAを直接算出。leadが報告SHAをreview manifestと現物へ照合して統合。"
+  },
+  "artifact": {
+    "video": "videos/01-emberwake-rta-v2.mp4",
+    "videoSha256": "9504430b7677be349efd78e9f7c6177082896cfac9f373266e64243eb7da0c8b",
+    "bytes": 17651413,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 1800,
+    "durationSeconds": 60
+  },
+  "binding": {
+    "status": "PASS_ACTUAL_FINAL_MP4_AND_51_REVIEW_IMAGE_HASHES_MATCH",
+    "scope": "最終MP4とその抽出画像のみ。元native監査のSHAを最終画像判定へbindingしない。",
+    "videoComparedWith": [
+      "actual MP4",
+      "rendered.json",
+      "technical.json",
+      "review-frames.json",
+      "review-progress.json"
+    ],
+    "reviewManifest": "qa/01-emberwake-rta-v2/review-frames.json",
+    "reviewManifestSha256": "14231194b6d583a6f0cb30fc93a33e19f456fa4cfa6909206bc52c6c8c009b4d",
+    "reviewProgressSha256": "74d1211e27daf53481fd151c9a2ee6b1139cc3baa30baf6c8db2c1d9e68d16c0",
+    "imageHashMatchCount": 51,
+    "imageHashMismatchCount": 0,
+    "extraction": "制作パイプラインが最終MP4から抽出。独立担当は現物SHAを照合し画像を目視した。再抽出したとの主張はしない。"
+  },
+  "coverage": {
+    "allScenes": {
+      "file": "qa/01-emberwake-rta-v2/all-scenes.jpg",
+      "sha256": "0bf659307bd759b1df042e302039556086290d549e5ba1e2ac3ba928a5c12f4d",
+      "sceneCount": 18,
+      "sampleFrames": [
+        11,
+        46,
+        107,
+        214,
+        305,
+        371,
+        479,
+        569,
+        671,
+        797,
+        869,
+        941,
+        1019,
+        1109,
+        1211,
+        1331,
+        1451,
+        1601
+      ],
+      "status": "PASS_ALL_18_SCENE_REPRESENTATIVES_VIEWED"
+    },
+    "stories": [
+      {
+        "index": 1,
+        "startSeconds": 0,
+        "endSecondsExclusive": 10,
+        "file": "qa/01-emberwake-rta-v2/story-1.jpg",
+        "sha256": "1014ecc817ebc5d32b047ce36a675604198eb46050a5c0290dccc5827157ea5d",
+        "sampleFrameFirst": 0,
+        "sampleFrameLast": 290,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 2,
+        "startSeconds": 10,
+        "endSecondsExclusive": 20,
+        "file": "qa/01-emberwake-rta-v2/story-2.jpg",
+        "sha256": "2b4e8208c2188f8afd0ca17f07835b91684a81cae406329024872cdfcc5c2469",
+        "sampleFrameFirst": 300,
+        "sampleFrameLast": 590,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 3,
+        "startSeconds": 20,
+        "endSecondsExclusive": 30,
+        "file": "qa/01-emberwake-rta-v2/story-3.jpg",
+        "sha256": "e26fe567f2a72e74f9317ca4bc6518f24bf3cb6e47fc5f18ea66dfe5108bbcc5",
+        "sampleFrameFirst": 600,
+        "sampleFrameLast": 890,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 4,
+        "startSeconds": 30,
+        "endSecondsExclusive": 40,
+        "file": "qa/01-emberwake-rta-v2/story-4.jpg",
+        "sha256": "e42081df8671352e433ef5f96e26f1c484cdb2c865f357b0986b8b2a4c037199",
+        "sampleFrameFirst": 900,
+        "sampleFrameLast": 1190,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 5,
+        "startSeconds": 40,
+        "endSecondsExclusive": 50,
+        "file": "qa/01-emberwake-rta-v2/story-5.jpg",
+        "sha256": "e0024f28623f9eb66806dc92714eba1e19d57a2ef05691d7d685986a52f53f83",
+        "sampleFrameFirst": 1200,
+        "sampleFrameLast": 1490,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 6,
+        "startSeconds": 50,
+        "endSecondsExclusive": 60,
+        "file": "qa/01-emberwake-rta-v2/story-6.jpg",
+        "sha256": "84f67f8e0ad713b3281847612170ccc7e9533a50621729525b8838d507ce6838",
+        "sampleFrameFirst": 1500,
+        "sampleFrameLast": 1790,
+        "sampleFrameStride": 10,
+        "sampleCount": 30,
+        "status": "PASS_ALL_CELLS_VISUALLY_REVIEWED",
+        "reviewer": "/root/kinetic_visual_qa"
+      }
+    ],
+    "storySamplingFps": 3,
+    "storySamples": 180,
+    "boundaries": [
+      {
+        "index": 1,
+        "timeSeconds": 1.2,
+        "file": "qa/01-emberwake-rta-v2/boundary-01.jpg",
+        "sha256": "eed07ff1a9bca255ff0b69f4c4d76c3334423de726da8e6597e4e822fede8299",
+        "startFrame": 33,
+        "endFrameInclusive": 44,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "ゲーム内見出し切替。短い拡大／傾きの間も主人公と右側足場が見え、文字は上部に分離。"
+      },
+      {
+        "index": 2,
+        "timeSeconds": 3.2,
+        "file": "qa/01-emberwake-rta-v2/boundary-02.jpg",
+        "sha256": "38c1ecbf8412217cd46ac847e7c8e7ead9221333d80392f58474935014437cec",
+        "startFrame": 93,
+        "endFrameInclusive": 104,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "ゲームから3Dへ短い金色ワイプ。入場時の見出し近接は後半で分離し、CGの上下表示が読める。"
+      },
+      {
+        "index": 3,
+        "timeSeconds": 6.8,
+        "file": "qa/01-emberwake-rta-v2/boundary-03.jpg",
+        "sha256": "9d908be5ea2a1d0db1c0694f730e4add7f1c1178ab55d62f7caec5aafbd2f1e7",
+        "startFrame": 201,
+        "endFrameInclusive": 212,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "3Dの寄りから全体へワイプ。入場後は見出し／副文／CG注記が分離。"
+      },
+      {
+        "index": 4,
+        "timeSeconds": 9.8,
+        "file": "qa/01-emberwake-rta-v2/boundary-04.jpg",
+        "sha256": "f00d90269a658ed85c5d71f022023d63bcca4b08441d504298e9fb5f6e58c8cb",
+        "startFrame": 291,
+        "endFrameInclusive": 302,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "実タイトル画面全体からTIME ATTACK実項目へ急速に寄る。EXPLORE選択を保ち、後半でTA項目を読める。"
+      },
+      {
+        "index": 5,
+        "timeSeconds": 12,
+        "file": "qa/01-emberwake-rta-v2/boundary-05.jpg",
+        "sha256": "08bdd76963bd16e93952893d19fc5bb7ca8a7faed602f3b61f4cf65609bee5f2",
+        "startFrame": 357,
+        "endFrameInclusive": 368,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "タイトル画面から実探索ゲームへ切替。文字とゲーム領域は分離し、入場中の空白パネルはない。"
+      },
+      {
+        "index": 6,
+        "timeSeconds": 15.6,
+        "file": "qa/01-emberwake-rta-v2/boundary-06.jpg",
+        "sha256": "c3d469bf4370c3cf42aaab383b1c3bf9999e0bab158026f1eec7f6750f7e3b49",
+        "startFrame": 465,
+        "endFrameInclusive": 476,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "芯石の運搬から差込／足場の場面へ切替。主人公・芯石・差込先が枠内、文字の継続重なりなし。"
+      },
+      {
+        "index": 7,
+        "timeSeconds": 18.6,
+        "file": "qa/01-emberwake-rta-v2/boundary-07.jpg",
+        "sha256": "0a2364bf0f712fb66a3467c157003ea18490100e13d67d8f0f3439af7613998a",
+        "startFrame": 555,
+        "endFrameInclusive": 566,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "跳躍の場面へ切替。横と上への画角変化の間も主人公と着地点が見える。"
+      },
+      {
+        "index": 8,
+        "timeSeconds": 22,
+        "file": "qa/01-emberwake-rta-v2/boundary-08.jpg",
+        "sha256": "c303bff5e8b3a14548e850d598a5dd80cd301ccb99d8729581f6bf5ef35c96f5",
+        "startFrame": 657,
+        "endFrameInclusive": 668,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "灯へ向かう場面へ切替。主人公が足場に立ち、右上の灯と旗が見える。"
+      },
+      {
+        "index": 9,
+        "timeSeconds": 26.2,
+        "file": "qa/01-emberwake-rta-v2/boundary-09.jpg",
+        "sha256": "78beca425cccd16272032ce1a63a46a8d1f923e959b1db6243d6928e568f697f",
+        "startFrame": 783,
+        "endFrameInclusive": 794,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "同じ仕掛けの跳躍を別の画角で再提示。実探索モードのラベルを維持し、連続RTA記録としての数値表示なし。"
+      },
+      {
+        "index": 10,
+        "timeSeconds": 28.6,
+        "file": "qa/01-emberwake-rta-v2/boundary-10.jpg",
+        "sha256": "84e5b72d6a1ef1d688efcbb1cbfb0b0c601aba91357ca0c513f9db73d63cc10d",
+        "startFrame": 855,
+        "endFrameInclusive": 866,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "次の跳躍へ切替。主人公の足元／次の足場を保ち、見出しはゲーム外に分離。"
+      },
+      {
+        "index": 11,
+        "timeSeconds": 31,
+        "file": "qa/01-emberwake-rta-v2/boundary-11.jpg",
+        "sha256": "a597c64d2ce98c3239713860d5579a604643bcaed78103a89eaa8b61e4787be7",
+        "startFrame": 927,
+        "endFrameInclusive": 938,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "芯石の差込を再提示。主人公と差込先が枠内で、切替後に空の画面が残らない。"
+      },
+      {
+        "index": 12,
+        "timeSeconds": 33.6,
+        "file": "qa/01-emberwake-rta-v2/boundary-12.jpg",
+        "sha256": "437f3fe52c96a427c6fe62e432b28aaa42196e7d58c0824c8da5cebf6c5a8ec1",
+        "startFrame": 1005,
+        "endFrameInclusive": 1016,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "自己ベストへの挑戦文へ切替。主人公と右の灯へ向かう足場が見える。"
+      },
+      {
+        "index": 13,
+        "timeSeconds": 36.6,
+        "file": "qa/01-emberwake-rta-v2/boundary-13.jpg",
+        "sha256": "4f01fe977bf7432d01a4c9ea23b59bbf043cc5c8ce1de5ba3a95bb64d6248d3c",
+        "startFrame": 1095,
+        "endFrameInclusive": 1106,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "全5章デモの静止画へ切替。見出しと副文の入場接近は後半で解消。"
+      },
+      {
+        "index": 14,
+        "timeSeconds": 40,
+        "file": "qa/01-emberwake-rta-v2/boundary-14.jpg",
+        "sha256": "ece0bcf1030cea87a297a6bbc3f780c69b2fc7b625a7dc0556ca08d94bcfc020",
+        "startFrame": 1197,
+        "endFrameInclusive": 1208,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "実GDScript抜粋へ切替。見出し／副文の入場接近は後半で解消、コードは枠内。"
+      },
+      {
+        "index": 15,
+        "timeSeconds": 44,
+        "file": "qa/01-emberwake-rta-v2/boundary-15.jpg",
+        "sha256": "be7823e396ee59f4097ac0bf13a3a16c759fa90f21682cd7def66ee5e02ff8ea",
+        "startFrame": 1317,
+        "endFrameInclusive": 1328,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "3D俯瞰へ金色ワイプ。着地後の見出しと上下の開発イメージ表示を確認。"
+      },
+      {
+        "index": 16,
+        "timeSeconds": 48,
+        "file": "qa/01-emberwake-rta-v2/boundary-16.jpg",
+        "sha256": "3d5c803bc7a93997b8e80a70afde1f9091728e57561e58513d9f5439f5bcefdb",
+        "startFrame": 1437,
+        "endFrameInclusive": 1448,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "CAMPFIRE準備中の画へ金色ワイプ。後半は応援文と準備中表示が分離。"
+      },
+      {
+        "index": 17,
+        "timeSeconds": 53,
+        "file": "qa/01-emberwake-rta-v2/boundary-17.jpg",
+        "sha256": "ff2a3ebdeb7aef092270c415fdee79b42bd586bfb6c7aa837818fcb3f18b05cb",
+        "startFrame": 1587,
+        "endFrameInclusive": 1598,
+        "consecutiveFrames": 12,
+        "status": "PASS_WITHIN_12_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "締めへ切替。作品名／実ゲーム画像／応援／準備中／フォロー案内が順に入り、後半で分離。"
+      }
+    ],
+    "boundaryCount": 17,
+    "boundaryConsecutiveFrameSamples": 204,
+    "motionWindows": [
+      {
+        "index": 1,
+        "timeSeconds": 1.3,
+        "file": "qa/01-emberwake-rta-v2/motion-01.jpg",
+        "sha256": "556b13a4a31c32ef71dab9d2dad3da1df6c636e2294f7d2fcd4e05f4bf95562a",
+        "startFrame": 36,
+        "endFrameInclusive": 51,
+        "consecutiveFrames": 16,
+        "status": "PASS_WITHIN_16_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "差込直後の短い寄り／小さな傾きから戻り、右の足場と走り出す主人公を見せる。主人公は左寄りでも全身が見える。",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 2,
+        "timeSeconds": 16.933333333333334,
+        "file": "qa/01-emberwake-rta-v2/motion-02.jpg",
+        "sha256": "758e1073fda92061ad101cb405f880e06536a4cd05837e44851db1f72f6af952",
+        "startFrame": 505,
+        "endFrameInclusive": 520,
+        "consecutiveFrames": 16,
+        "status": "PASS_WITHIN_16_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "芯石がはまった後、足場へ右方向の画角変化。短い拡大・回転の間も主人公・足場・芯石の関係を追える。",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 3,
+        "timeSeconds": 19.533333333333335,
+        "file": "qa/01-emberwake-rta-v2/motion-03.jpg",
+        "sha256": "fb854da466f91e0657b2c6b4655407c0ba88d8b988750b808d52ed4aacbd1567",
+        "startFrame": 583,
+        "endFrameInclusive": 598,
+        "consecutiveFrames": 16,
+        "status": "PASS_WITHIN_16_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "着地の付近で足元の足場を保ち、短い拡大と傾きから戻る。頭や足の継続欠けなし。",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 4,
+        "timeSeconds": 20.833333333333332,
+        "file": "qa/01-emberwake-rta-v2/motion-04.jpg",
+        "sha256": "22d1c140a73364b655b2a89a572bdbcc22c109cdeeb36db85b7da0d220f78816",
+        "startFrame": 622,
+        "endFrameInclusive": 637,
+        "consecutiveFrames": 16,
+        "status": "PASS_WITHIN_16_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "次の足場の着地付近。主人公・今いる足場・右上の次の足場が確認でき、戻りまで空白角は見られない。",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 5,
+        "timeSeconds": 22.133333333333333,
+        "file": "qa/01-emberwake-rta-v2/motion-05.jpg",
+        "sha256": "5bc924875fdec732ea65e0b44489fd81ab20447aafa8fc58ea9146a4c71efb67",
+        "startFrame": 661,
+        "endFrameInclusive": 676,
+        "consecutiveFrames": 16,
+        "status": "PASS_WITHIN_16_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "上の灯に向かう足場での短い衝撃。主人公と足元、右上の灯／旗を同時に見せる。",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 6,
+        "timeSeconds": 27.133333333333333,
+        "file": "qa/01-emberwake-rta-v2/motion-06.jpg",
+        "sha256": "20a4c30a26a917256fadd18d425914dfa9bfc7b2342597c62df9415f3ae8fb22",
+        "startFrame": 811,
+        "endFrameInclusive": 826,
+        "consecutiveFrames": 16,
+        "status": "PASS_WITHIN_16_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "繰り返し提示した跳躍の着地付近。短い拡大から戻り、次の一段を残す。主人公欠けなし。",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 7,
+        "timeSeconds": 29.833333333333332,
+        "file": "qa/01-emberwake-rta-v2/motion-07.jpg",
+        "sha256": "5ec6ca6c8ac72c571b537a1524b407dea69ed356175bf19184b7a2622ff33dba",
+        "startFrame": 892,
+        "endFrameInclusive": 907,
+        "consecutiveFrames": 16,
+        "status": "PASS_WITHIN_16_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "次の跳躍の着地付近。前後16フレームで主人公／足場が残り、文字を揺らして潰していない。",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "index": 8,
+        "timeSeconds": 32.53333333333333,
+        "file": "qa/01-emberwake-rta-v2/motion-08.jpg",
+        "sha256": "755004f86aa7b6683935022b2a85e5c320ecc66d26942b2d69427964690c1946",
+        "startFrame": 973,
+        "endFrameInclusive": 988,
+        "consecutiveFrames": 16,
+        "status": "PASS_WITHIN_16_CONSECUTIVE_FINAL_FRAMES",
+        "observation": "差込の再提示で大きく右へ画角が変わる。主人公が左へ寄るが全身と足場は見え、戻りまで表示が続く。",
+        "reviewer": "/root/kinetic_visual_qa"
+      }
+    ],
+    "motionWindowCount": 8,
+    "motionConsecutiveFrameSamples": 128,
+    "highResolution": [
+      {
+        "timeSeconds": 0.7,
+        "frame": 21,
+        "file": "qa/01-emberwake-rta-v2/final-0.7.png",
+        "sha256": "5abedf38f725278a8c8a5c58ce9749e2c4ff4c65d83f65fe1b1aeae5728067f5",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 1.5,
+        "frame": 45,
+        "file": "qa/01-emberwake-rta-v2/final-1.5.png",
+        "sha256": "7769faf620fae6d31b98aa64f5fa311506a1cf79ded18fe90d2786f912fec460",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 5,
+        "frame": 150,
+        "file": "qa/01-emberwake-rta-v2/final-5.png",
+        "sha256": "f48bdff98d8bcead562a40cbd250b2a1b981a185049a44b58f8669bc8fd35ebb",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_delivery_check"
+      },
+      {
+        "timeSeconds": 10.7,
+        "frame": 321,
+        "file": "qa/01-emberwake-rta-v2/final-10.7.png",
+        "sha256": "51027433fb6fe952bc26754e3c6e4241181c981163b9f7702672cb01683a79cb",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_delivery_check"
+      },
+      {
+        "timeSeconds": 14,
+        "frame": 420,
+        "file": "qa/01-emberwake-rta-v2/final-14.png",
+        "sha256": "d415f6b96db09813f7b64b49abf4761f32664437c5c9c8da0686f7bf5c50fa28",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 19.533333333333335,
+        "frame": 586,
+        "file": "qa/01-emberwake-rta-v2/final-19.533333333333335.png",
+        "sha256": "f5f1b9af9e81f9470095cf9100a588f28652f2d95e2db1b0aaa42f740d7257e4",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 20.833333333333332,
+        "frame": 625,
+        "file": "qa/01-emberwake-rta-v2/final-20.833333333333332.png",
+        "sha256": "173f44bc3fb12a9f4124de7cc6f19abf2075374cdcd3671efcb930354e0be899",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 22.133333333333333,
+        "frame": 664,
+        "file": "qa/01-emberwake-rta-v2/final-22.133333333333333.png",
+        "sha256": "5e20e13933f33a8c95f423ab060d6e5d79a204cc764dc8f6bbb2b5a8ec04b02f",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 24,
+        "frame": 720,
+        "file": "qa/01-emberwake-rta-v2/final-24.png",
+        "sha256": "a2973bb07b1265694fc886f6e8803e04abcecc62012b171d1807dc0cafabb248",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 27.3,
+        "frame": 819,
+        "file": "qa/01-emberwake-rta-v2/final-27.3.png",
+        "sha256": "8e6089cdf75eed2251b17c93fec388d9b70b521c4cf6f3c3ee491b3ff899d219",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 29.7,
+        "frame": 891,
+        "file": "qa/01-emberwake-rta-v2/final-29.7.png",
+        "sha256": "793e0093031b455e77240a391242390e569dbb34ddcbd2259ee04949b5ceac50",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 32.3,
+        "frame": 969,
+        "file": "qa/01-emberwake-rta-v2/final-32.3.png",
+        "sha256": "90d93be91532f86c8af4c245ab7614116f915089eb651bab99f89e9bc5fbbdd1",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 35,
+        "frame": 1050,
+        "file": "qa/01-emberwake-rta-v2/final-35.png",
+        "sha256": "89858b79aabcc6eb614294e0db74df39b3b19f1a35c22677b1a83c1630cb6f56",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 38,
+        "frame": 1140,
+        "file": "qa/01-emberwake-rta-v2/final-38.png",
+        "sha256": "a195dc04dd15ced9a6c4897f523cb2c3b1f1a6361bae2f487e9f3bc19ab1672a",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_visual_qa"
+      },
+      {
+        "timeSeconds": 41.5,
+        "frame": 1245,
+        "file": "qa/01-emberwake-rta-v2/final-41.5.png",
+        "sha256": "77dbf07236fd81fef46d38c063096a7d291995722b4d446cb46328e8f258c64e",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_delivery_check"
+      },
+      {
+        "timeSeconds": 46,
+        "frame": 1380,
+        "file": "qa/01-emberwake-rta-v2/final-46.png",
+        "sha256": "76b4a030edfd6591a54d652e64f5fcba10e4fcbc3eb92e568b030bf694db0a22",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_delivery_check"
+      },
+      {
+        "timeSeconds": 50.5,
+        "frame": 1515,
+        "file": "qa/01-emberwake-rta-v2/final-50.5.png",
+        "sha256": "348a992d37f6ba568cb7a5845a3d0add5b7e31f66f8279170642d71bcb85b0c8",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_delivery_check"
+      },
+      {
+        "timeSeconds": 54,
+        "frame": 1620,
+        "file": "qa/01-emberwake-rta-v2/final-54.png",
+        "sha256": "83beea428923d039708c107150f02abcd3bc1e5c8110d48f2a4cd0e68f05176d",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_delivery_check"
+      },
+      {
+        "timeSeconds": 57,
+        "frame": 1710,
+        "file": "qa/01-emberwake-rta-v2/final-57.png",
+        "sha256": "57f6e0e4d0608538f9e40552549df20547e296e7d8faf3d5c8b22c07fdce74f3",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_delivery_check"
+      },
+      {
+        "timeSeconds": 59.8,
+        "frame": 1794,
+        "file": "qa/01-emberwake-rta-v2/final-59.8.png",
+        "sha256": "18c953bb5a19438561e08a062a212a5ce7db3eafbc37a3c12a16974268242898",
+        "status": "PASS_HIGH_RESOLUTION_VISUAL_REVIEW",
+        "reviewer": "/root/kinetic_delivery_check"
+      }
+    ],
+    "highResolutionCount": 20,
+    "totalReviewedImageFiles": 52,
+    "totalDisplayedFrameSamplesIncludingDuplicates": 550,
+    "distinctSampledVideoFrames": 492,
+    "totalVideoFrames": 1800,
+    "nativePreviewFilesUsedAsFinalEvidence": 0
+  },
+  "observations": [
+    {
+      "status": "PASS_AGGRESSIVE_SINGLE_VIEWPORT_FOCUS",
+      "observation": "ゲームは大きい単一の縦長領域。芯石／差込先／足場への急なパン、跳躍と着地への短い拡大と小さな傾き、戻りを確認した。3fps全編と8つの16連続フレーム列に、プレイヤーの頭／足が長く画面外へ残る状態、被覆しない黒い角、素材未読込は見つからない。",
+      "evidence": [
+        "qa/01-emberwake-rta-v2/story-1.jpg",
+        "qa/01-emberwake-rta-v2/story-2.jpg",
+        "qa/01-emberwake-rta-v2/story-3.jpg",
+        "qa/01-emberwake-rta-v2/story-4.jpg",
+        "qa/01-emberwake-rta-v2/motion-01.jpg",
+        "qa/01-emberwake-rta-v2/motion-02.jpg",
+        "qa/01-emberwake-rta-v2/motion-03.jpg",
+        "qa/01-emberwake-rta-v2/motion-04.jpg",
+        "qa/01-emberwake-rta-v2/motion-05.jpg",
+        "qa/01-emberwake-rta-v2/motion-06.jpg",
+        "qa/01-emberwake-rta-v2/motion-07.jpg",
+        "qa/01-emberwake-rta-v2/motion-08.jpg"
+      ]
+    },
+    {
+      "status": "PASS_CORE_SOCKET_PLATFORM_CAUSALITY",
+      "observation": "冒頭と12–18.6秒、31–33.6秒で芯石を運ぶ／差込先／現れる足場を確認。視点を右へ先送りしてもプレイヤーを残しており、次に登る場所が示される。全体のコースを常時見せる構成ではなく、操作対象へ寄る編集として確認した。",
+      "evidence": [
+        "qa/01-emberwake-rta-v2/final-0.7.png",
+        "qa/01-emberwake-rta-v2/final-1.5.png",
+        "qa/01-emberwake-rta-v2/final-14.png",
+        "qa/01-emberwake-rta-v2/final-32.3.png",
+        "qa/01-emberwake-rta-v2/motion-02.jpg",
+        "qa/01-emberwake-rta-v2/motion-08.jpg"
+      ]
+    },
+    {
+      "status": "PASS_LANDING_AND_HEADROOM_IN_VIEWED_FRAMES",
+      "observation": "19.533／20.833／22.133秒付近の高解像度と連続画像で、主人公の全身、足が接する足場、次の高い足場や灯を確認。広い元画面の端が切れることと、主人公の意味のない欠けを区別した。",
+      "evidence": [
+        "qa/01-emberwake-rta-v2/final-19.533333333333335.png",
+        "qa/01-emberwake-rta-v2/final-20.833333333333332.png",
+        "qa/01-emberwake-rta-v2/final-22.133333333333333.png",
+        "qa/01-emberwake-rta-v2/motion-03.jpg",
+        "qa/01-emberwake-rta-v2/motion-04.jpg",
+        "qa/01-emberwake-rta-v2/motion-05.jpg"
+      ]
+    },
+    {
+      "status": "PASS_REAL_TIME_ATTACK_ITEM_WITH_EXPLORE_DISCLOSURE",
+      "observation": "9.8–12秒は実タイトル画面全体から本来のTIME ATTACK項目へ寄り、TIME ATTACKの文字を読める。元の選択ハイライトはEXPLOREのまま。上部は章別TA／ローカル自己ベストの紹介で、TAを選択してプレイ開始したと偽装していない。ゲーム本体には「実ゲーム / 探索モード・開発中」がある。",
+      "evidence": [
+        "qa/01-emberwake-rta-v2/boundary-04.jpg",
+        "qa/01-emberwake-rta-v2/story-2.jpg",
+        "qa/01-emberwake-rta-v2/final-10.7.png",
+        "qa/01-emberwake-rta-v2/final-0.7.png",
+        "qa/01-emberwake-rta-v2/final-35.png"
+      ]
+    },
+    {
+      "status": "PASS_RTA_CHALLENGE_COPY_WITHOUT_FABRICATED_RECORD",
+      "observation": "「何秒、縮める？」「同じコースを、次は、もっと速く。」「次は、自己ベストへ。」は挑戦の呼びかけとして表示。見た範囲には後付けの実測秒／更新済みPB／順位／オンラインランキングは無い。I章の探索モード映像を編集して繰り返す構成で、通しRTA完走や記録実証を認定したものではない。",
+      "evidence": [
+        "qa/01-emberwake-rta-v2/all-scenes.jpg",
+        "qa/01-emberwake-rta-v2/story-1.jpg",
+        "qa/01-emberwake-rta-v2/story-2.jpg",
+        "qa/01-emberwake-rta-v2/story-3.jpg",
+        "qa/01-emberwake-rta-v2/story-4.jpg",
+        "qa/01-emberwake-rta-v2/final-0.7.png",
+        "qa/01-emberwake-rta-v2/final-35.png"
+      ]
+    },
+    {
+      "status": "PASS_TEXT_SETTLES_SEPARATELY",
+      "observation": "主文と副文を上の暗い領域に置き、ゲームの主人公／差込先に重ねていない。3D／静止画／コード側の5つの見出しは入場直後に副文と近づくが、連続画像の後半では分離。滞在中に文字が継続して欠ける状態は見られない。",
+      "evidence": [
+        "qa/01-emberwake-rta-v2/boundary-02.jpg",
+        "qa/01-emberwake-rta-v2/boundary-03.jpg",
+        "qa/01-emberwake-rta-v2/boundary-13.jpg",
+        "qa/01-emberwake-rta-v2/boundary-14.jpg",
+        "qa/01-emberwake-rta-v2/boundary-15.jpg",
+        "qa/01-emberwake-rta-v2/final-0.7.png",
+        "qa/01-emberwake-rta-v2/final-14.png"
+      ]
+    },
+    {
+      "status": "PASS_CG_CODE_CREATOR_LABELS",
+      "observation": "3Dカットには上部「開発イメージ（3D演出）」と下部「実ゲームは2D / このカットは開発イメージ」。コードは実GDScript抜粋と元ファイルを明記し、func→for→ifの字下げとreturn -1の戻しが判読できる。ぷい／ProjectPと作品名の結び付きを表示。",
+      "evidence": [
+        "qa/01-emberwake-rta-v2/story-1.jpg",
+        "qa/01-emberwake-rta-v2/story-5.jpg",
+        "qa/01-emberwake-rta-v2/final-5.png",
+        "qa/01-emberwake-rta-v2/final-41.5.png",
+        "qa/01-emberwake-rta-v2/final-46.png"
+      ]
+    },
+    {
+      "status": "PASS_PREPARATION_STATE_AND_CLEAN_END",
+      "observation": "CAMPFIREは公開準備中／公開に向けて準備中と明記。募集開始済みの主張は見られない。締めは作者名／作品名／実ゲーム画像／応援文／準備中／フォロー案内を別領域に置き、54／57／59.8秒まで読める。",
+      "evidence": [
+        "qa/01-emberwake-rta-v2/story-6.jpg",
+        "qa/01-emberwake-rta-v2/boundary-16.jpg",
+        "qa/01-emberwake-rta-v2/boundary-17.jpg",
+        "qa/01-emberwake-rta-v2/final-50.5.png",
+        "qa/01-emberwake-rta-v2/final-54.png",
+        "qa/01-emberwake-rta-v2/final-57.png",
+        "qa/01-emberwake-rta-v2/final-59.8.png"
+      ]
+    },
+    {
+      "status": "PASS_NO_PERSISTENT_MISSING_OR_UNREADABLE_CONTENT_WITHIN_SAMPLES",
+      "observation": "全18場面、全編3fps、17境界、8場面内モーション、高解像度20枚の検査範囲に、継続する黒い欠落／素材未読込／画面外の主人公／恒常的な文字重なりは見つからない。金色ワイプが短く全面を覆う画像は意図した切替として区別した。",
+      "evidence": [
+        "qa/01-emberwake-rta-v2/all-scenes.jpg",
+        "qa/01-emberwake-rta-v2/story-1.jpg",
+        "qa/01-emberwake-rta-v2/story-2.jpg",
+        "qa/01-emberwake-rta-v2/story-3.jpg",
+        "qa/01-emberwake-rta-v2/story-4.jpg",
+        "qa/01-emberwake-rta-v2/story-5.jpg",
+        "qa/01-emberwake-rta-v2/story-6.jpg"
+      ]
+    }
+  ],
+  "requiredFixes": [],
+  "entryContactDisposition": {
+    "status": "PASS_TRANSIENT_ENTRY_CONTACT_RESOLVED_AFTER_SETTLE_WITHIN_VIEWED_FINAL_FRAMES",
+    "evidence": [
+      "qa/01-emberwake-rta-v2/boundary-02.jpg",
+      "qa/01-emberwake-rta-v2/boundary-03.jpg",
+      "qa/01-emberwake-rta-v2/boundary-13.jpg",
+      "qa/01-emberwake-rta-v2/boundary-14.jpg",
+      "qa/01-emberwake-rta-v2/boundary-15.jpg"
+    ],
+    "scope": "保存原本で検出した5場面の入場矩形接触に対応する最終pixelsを確認。着地した後の継続欠けは見られない。入場中の接近自体が存在しないという判定ではない。"
+  },
+  "limitations": {
+    "all1800FramesIndividuallyInspected": false,
+    "fullRealTimeVideoPlayback": "NOT_PERFORMED",
+    "wholeAuditoryReview": "NOT_PERFORMED",
+    "audioQuality": "画像検査の対象外。別担当の数値PASSを直接試聴したとの主張へ読み替えない。",
+    "actualTikTokOrShortsDeviceUi": "NOT_TESTED",
+    "organicTextSafeZoneGuarantee": false,
+    "advertisingSafeZoneAsOrganicGuarantee": false,
+    "realTimeMotionComfort": "NOT_ASSESSED_FROM_STATIC_SHEETS",
+    "actualTimeAttackRunOrPbMeasurement": "NOT_PERFORMED",
+    "externalImplementationAndFundingSiteRecheck": "この最終画像検査では実施していない。保存された出典調査と画面内表現の整合のみ。",
+    "ownerCreativeAcceptance": "OWNER_DECISION_PENDING",
+    "viralPerformanceOrRevenue": "NOT_PREDICTED_OR_GUARANTEED",
+    "unsampledFrames": "未サンプルのフレームに欠陥が無いという完全保証はしない。",
+    "sourceOrVideoModified": false,
+    "gitOperationsPerformed": false
+  }
+}

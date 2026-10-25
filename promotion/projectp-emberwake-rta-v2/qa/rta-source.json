@@ -1,0 +1,144 @@
+{
+  "status": "SOURCE_REVIEW_AND_EXISTING_TITLE_VISUAL_CONFIRMED",
+  "issue": 89,
+  "reviewDateJst": "2026-10-25",
+  "scope": "既に調査した実装と既存素材の根拠を保存。新規ゲーム実行・収録・RTA完走・記録測定は行っていない。",
+  "implementationSource": {
+    "repository": "Pui-core/EMBERWAKE",
+    "localRepository": "/mnt/f/dev/EMBERWAKE",
+    "ref": "origin/main",
+    "commit": "1e3c5d6d2241d91a1e8f2127bca325c9b9812517",
+    "readMethod": "git show origin/main:<path>。古いローカルmainの作業ツリーは実装の根拠に使っていない。",
+    "lineNumberBasis": "以下の実装・仕様lineはこのcommitのファイル本文に対する1始まり行番号。"
+  },
+  "features": [
+    {
+      "feature": "章別TIME ATTACK",
+      "finding": "I〜Vから章を選び、その章の固定コースを同じ初期状態から始める記録用モードが実装済み。",
+      "consumerCopy": "同じコースで、自己ベストへ。",
+      "evidence": [
+        {"path": "README.md", "lines": [29, 56]},
+        {"path": "scripts/main.gd", "lineStart": 384, "lineEnd": 424},
+        {"path": "scripts/main.gd", "lineStart": 539, "lineEnd": 543},
+        {"path": "docs/player-guide-ja.md", "lines": [9, 78]}
+      ]
+    },
+    {
+      "feature": "実時間タイマー",
+      "finding": "移動・ジャンプ・ダッシュ・調べる・手放すの最初の有効入力で開始。Time.get_ticks_msecを使い、表示は百分の一秒まで。",
+      "evidence": [
+        {"path": "scripts/main.gd", "lineStart": 180, "lineEnd": 195},
+        {"path": "scripts/run_state.gd", "lineStart": 25, "lineEnd": 33},
+        {"path": "scripts/run_state.gd", "lineStart": 56, "lineEnd": 59},
+        {"path": "scripts/hud.gd", "lineStart": 81, "lineEnd": 87}
+      ]
+    },
+    {
+      "feature": "3地点の通過タイムとクリア",
+      "finding": "3つの炉を規定順に灯すと、それぞれまでの累計通過タイムを保存。最後の操作と同じ時刻で計時を止め、結果と通過タイムを表示する。通過タイムは各区間単体の所要時間と区別する。",
+      "evidence": [
+        {"path": "scripts/main.gd", "lineStart": 319, "lineEnd": 339},
+        {"path": "scripts/run_state.gd", "lineStart": 41, "lineEnd": 54},
+        {"path": "scripts/main.gd", "lineStart": 469, "lineEnd": 491}
+      ]
+    },
+    {
+      "feature": "ローカル自己ベスト",
+      "finding": "記録資格のある有効完走だけを保存し、既存より速い場合にbest_msとbest_splitsを更新する。初回の有効記録も保存対象。保存失敗時は以前の値へ戻す。",
+      "consumerCopy": "章ごとの自己ベストに挑む。",
+      "evidence": [
+        {"path": "scripts/save_store.gd", "lineStart": 225, "lineEnd": 238},
+        {"path": "scripts/main.gd", "lines": [477, 487, 488, 542, 543]},
+        {"path": "docs/player-guide-ja.md", "lines": [38, 40, 44]}
+      ]
+    },
+    {
+      "feature": "再挑戦",
+      "finding": "結果のAGAINは同じモードの新規runへ即時再挑戦。プレイ中のRは0.65秒保持で再開始。ポーズのRESTARTもある。新規runでは世界・時計・資格を初期化する。",
+      "consumerCopy": "もう一回、がすぐ始まる。",
+      "evidence": [
+        {"path": "scripts/main.gd", "lineStart": 197, "lineEnd": 203},
+        {"path": "scripts/main.gd", "lineStart": 384, "lineEnd": 394},
+        {"path": "scripts/main.gd", "lines": [449, 492]},
+        {"path": "docs/player-guide-ja.md", "lines": [22, 78]}
+      ]
+    },
+    {
+      "feature": "中断時の記録資格",
+      "finding": "ポーズ・フォーカス離脱・縦画面化等でその挑戦はPB対象外となり、再開しても資格は戻らない。新しい挑戦でやり直す。",
+      "evidence": [
+        {"path": "README.md", "lines": [56]},
+        {"path": "scripts/main.gd", "lineStart": 172, "lineEnd": 175},
+        {"path": "scripts/main.gd", "lineStart": 239, "lineEnd": 241},
+        {"path": "scripts/main.gd", "lineStart": 432, "lineEnd": 435},
+        {"path": "scripts/run_state.gd", "lineStart": 35, "lineEnd": 39}
+      ]
+    },
+    {
+      "feature": "オンライン順位表・全章通算タイマー",
+      "finding": "オンラインランキングはない。記録はローカルの章・コースごと。NEXTは次章の別時計から開始し、全章通算タイマーはない。対戦・世界順位・世界記録の機能は訴求しない。",
+      "onlineLeaderboard": false,
+      "allChapterCombinedTimer": false,
+      "evidence": [
+        {"path": "README.md", "lines": [58]},
+        {"path": "docs/player-guide-ja.md", "lines": [38, 78]},
+        {"path": "docs/episode-4.md", "lines": [25]}
+      ]
+    }
+  ],
+  "existingCapture": {
+    "sourceCommit": "6233f5d33b24a35e91800357b7bcf8861049cf2a",
+    "gameVersion": "0.11.0",
+    "root": "/home/pui/Videos/ProjectP/2026-10-25/EMBERWAKE-demo",
+    "mode": "EXPLORE",
+    "modeEvidence": {"path": "scripts/promotion/projectp-demo/capture_projectp.gd", "lineStart": 131, "lineEnd": 138},
+    "clockEvidence": {"path": "docs/promotion/projectp-demo/qa/capture-manifest.json", "lines": [4, 8, 10]},
+    "clockLimitation": "HUD時計はTime.get_ticks_msecの実時間を使い、PNG保存・encoding待ち時間を含む。映像は編集した探索紹介で、実RTA記録・最速値・実機性能の証拠ではない。",
+    "timingClaimsAllowed": false,
+    "prohibitedEdits": [
+      "既存EXPLORE映像を実際のTIME ATTACK完走映像として説明する",
+      "架空のタイムやPB更新・ランキング演出を重ねる",
+      "HUDの数値を速くなるように差し替える",
+      "タイム比較でない別経路・別速度の編集を実測の短縮証拠にする"
+    ],
+    "usableAction": {
+      "kind": "実ゲーム探索の4連続ジャンプ。RTA記録ではなく動作の紹介に使う。",
+      "frameDirectory": "capture/chapter-I/frames",
+      "fps": 30,
+      "coordinateEvidence": "capture/chapter-I/tracking-replay.jsonのplayer_world/player_screen_native。別input replayで元撮影のevent frame・位置・route trace一致を確認した記録。画素一致・HUD時計一致は主張しない。",
+      "jumps": [
+        {"takeoffFrame": 212, "apexFrame": 224, "landingFrame": 238},
+        {"takeoffFrame": 251, "apexFrame": 263, "landingFrame": 277},
+        {"takeoffFrame": 290, "apexFrame": 302, "landingFrame": 316},
+        {"takeoffFrame": 329, "apexFrame": 341, "landingFrame": 355}
+      ],
+      "firstChapterDashLimitation": "I入口のこの収録ではdash未習得。ジャンプをdash実演とは説明しない。"
+    }
+  },
+  "titleMenuEvidence": {
+    "sourceFile": "/home/pui/Videos/ProjectP/2026-10-25/EMBERWAKE-demo/capture/chapter-I/title.png",
+    "sourceSHA256RecordedInExistingManifest": "fbecea4c2dffa5ebbbd0dd935767c5d31d87a53675e6336f127f60f5d72f4e00",
+    "width": 1920,
+    "height": 1080,
+    "directVisualInspection": "この担当が既存PNGをview_imageで目視。左側EXPLOREボタンの直下に時計アイコンとTIME ATTACKボタンが見える。右側にI〜Vの章選択があり、Iが選択済み。",
+    "approximateTimeAttackButtonBounds": {"x": 140, "y": 596, "width": 744, "height": 124},
+    "implementationEvidence": {"path": "scripts/main.gd", "lines": [539, 541]},
+    "supports": "実タイトル画面にTIME ATTACKモードの入口があること。",
+    "doesNotSupport": "この静止画を撮った挑戦でTIME ATTACKを開始・完走したこと、実タイム、PB更新やランキング。",
+    "plannedProductionCopy": "media/time-attack-menu.png",
+    "copyResponsibility": "rootがコピーと対応SHAを確認する。この担当はコピーしていない。"
+  },
+  "approvedScopeCopy": [
+    "次は、もっと速く。",
+    "道を見つける。走り直す。",
+    "同じコースで、自己ベストへ。",
+    "章ごとのタイムアタック搭載",
+    "もう一回、がすぐ始まる。"
+  ],
+  "productionContext": {
+    "subject": "EMBERWAKE本制作を告知する60秒縦型初投稿。アグレッシブな追従とRTAの再挑戦する面白さを前面に出す。",
+    "campfireState": "今回の制作目的はCAMPFIRE公開前の支援募集準備。『受付中』『今すぐ支援』や未確認の金額・日付・リターンを加えない。",
+    "noNewCaptureOrRuntimeMeasurement": true,
+    "noExternalPublicationOrApplicationOperation": true
+  }
+}

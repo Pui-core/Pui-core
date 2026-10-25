@@ -1,0 +1,2181 @@
+{
+  "schema": 1,
+  "status": "TECHNICAL_PASS",
+  "issue": 88,
+  "output": "/home/pui/.claude/worktrees/Pui-core-issue-88/promotion/projectp-emberwake-60/media/emberwake-60-mix.wav",
+  "sha256": "565295d97f5525f3f6cec6dd722c5fd8b87932b58b2e10d087a3980762665da9",
+  "duration": 60,
+  "fps": 30,
+  "pictureFrames": 1800,
+  "sampleRate": 48000,
+  "sampleFrames": 2880000,
+  "channels": 2,
+  "bits": 24,
+  "bpm": 120,
+  "timeSignature": "4/4",
+  "authorship": "Newly authored deterministic additive synthesis and short room diffusion. No external samples, voice or game SFX.",
+  "reference": {
+    "wav": "/home/pui/Videos/Studio-PV/2026-10-23/EMBERWAKE/media/original-score.wav",
+    "wavSha256Before": "f506a334cb20020be5ffbb0e54aa340e91ba02f9b7c266a7a88da5aff0faf9dc",
+    "wavSha256After": "f506a334cb20020be5ffbb0e54aa340e91ba02f9b7c266a7a88da5aff0faf9dc",
+    "script": "/home/pui/Videos/Studio-PV/2026-10-23/EMBERWAKE/source/produce_cinematic.mjs",
+    "scriptSha256Before": "c96ce7440dcd9ea031c5265d00ca7e3b3b91e0471d418540a44c5a4b7c7ceead",
+    "scriptSha256After": "c96ce7440dcd9ea031c5265d00ca7e3b3b91e0471d418540a44c5a4b7c7ceead",
+    "role": "D-minor bell/pluck/low-pulse palette only. The48s recording is not decoded, concatenated, time-stretched or looped into this60s score."
+  },
+  "form": {
+    "key": "D minor, A dominant at54s resolves to Dm at56s",
+    "barSeconds": 2,
+    "barCount": 30,
+    "phases": [
+      {
+        "start": 0,
+        "end": 4,
+        "description": "Immediate D-A-F hook and low response",
+        "rmsDbfs": -17.45301906813689
+      },
+      {
+        "start": 4,
+        "end": 12,
+        "description": "Title and creator introduction: more air",
+        "rmsDbfs": -23.473537806817653
+      },
+      {
+        "start": 12,
+        "end": 30,
+        "description": "Core puzzle: increasingly articulated plucks",
+        "rmsDbfs": -20.215539178181878
+      },
+      {
+        "start": 30,
+        "end": 42,
+        "description": "Chapters and town: wider harmony",
+        "rmsDbfs": -19.062311678358935
+      },
+      {
+        "start": 42,
+        "end": 50,
+        "description": "Making-of: lower register and fewer pulses",
+        "rmsDbfs": -24.396733501527574
+      },
+      {
+        "start": 50,
+        "end": 60,
+        "description": "CTA: thin accompaniment; A to Dm at56s; authentic tail",
+        "rmsDbfs": -27.694031147693476
+      }
+    ],
+    "finalNewAttackSeconds": 56,
+    "finalCadence": [
+      "Bb50s",
+      "C52s",
+      "A54s",
+      "Dm56s"
+    ],
+    "noAttacksAfter56": true
+  },
+  "events": [
+    {
+      "t": 0,
+      "d": 4.5,
+      "midi": 50,
+      "amplitude": 0.0375,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 0,
+      "d": 4.5,
+      "midi": 53,
+      "amplitude": 0.0375,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 0,
+      "d": 4.5,
+      "midi": 57,
+      "amplitude": 0.0375,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 0,
+      "d": 4.5,
+      "midi": 64,
+      "amplitude": 0.0375,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 0.015,
+      "d": 0.46,
+      "midi": 38,
+      "amplitude": 0.16,
+      "kind": "pulse",
+      "pan": 0,
+      "why": "Immediate low hook"
+    },
+    {
+      "t": 0.035,
+      "d": 3.2,
+      "midi": 74,
+      "amplitude": 0.13,
+      "kind": "bell",
+      "pan": -0.18,
+      "why": "Opening D-A-F-E-D theme"
+    },
+    {
+      "t": 0.58,
+      "d": 3.2,
+      "midi": 69,
+      "amplitude": 0.095,
+      "kind": "bell",
+      "pan": -0.18,
+      "why": "Opening D-A-F-E-D theme"
+    },
+    {
+      "t": 1.25,
+      "d": 3.2,
+      "midi": 77,
+      "amplitude": 0.115,
+      "kind": "bell",
+      "pan": 0.18,
+      "why": "Opening D-A-F-E-D theme"
+    },
+    {
+      "t": 2,
+      "d": 3.2,
+      "midi": 76,
+      "amplitude": 0.09,
+      "kind": "bell",
+      "pan": 0.18,
+      "why": "Opening D-A-F-E-D theme"
+    },
+    {
+      "t": 2.75,
+      "d": 3.2,
+      "midi": 74,
+      "amplitude": 0.12,
+      "kind": "bell",
+      "pan": 0.18,
+      "why": "Opening D-A-F-E-D theme"
+    },
+    {
+      "t": 2,
+      "d": 0.35,
+      "midi": 38,
+      "amplitude": 0.08,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 3.5,
+      "d": 0.35,
+      "midi": 45,
+      "amplitude": 0.065,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 4,
+      "d": 4.5,
+      "midi": 46,
+      "amplitude": 0.034,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 4,
+      "d": 4.5,
+      "midi": 50,
+      "amplitude": 0.034,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 4,
+      "d": 4.5,
+      "midi": 53,
+      "amplitude": 0.034,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 4,
+      "d": 4.5,
+      "midi": 57,
+      "amplitude": 0.034,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 8,
+      "d": 4.6,
+      "midi": 50,
+      "amplitude": 0.033,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 8,
+      "d": 4.6,
+      "midi": 53,
+      "amplitude": 0.033,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 8,
+      "d": 4.6,
+      "midi": 57,
+      "amplitude": 0.033,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 8,
+      "d": 4.6,
+      "midi": 64,
+      "amplitude": 0.033,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 4.5,
+      "d": 2.7,
+      "midi": 62,
+      "amplitude": 0.07,
+      "kind": "bell",
+      "pan": -0.24438252941627425,
+      "why": "Title breathing room"
+    },
+    {
+      "t": 6.5,
+      "d": 2.7,
+      "midi": 69,
+      "amplitude": 0.07,
+      "kind": "bell",
+      "pan": 0.05377999702195388,
+      "why": "Title breathing room"
+    },
+    {
+      "t": 8.5,
+      "d": 2.7,
+      "midi": 65,
+      "amplitude": 0.07,
+      "kind": "bell",
+      "pan": 0.19962177815587256,
+      "why": "Title breathing room"
+    },
+    {
+      "t": 10,
+      "d": 2.7,
+      "midi": 64,
+      "amplitude": 0.07,
+      "kind": "bell",
+      "pan": -0.13600527772234244,
+      "why": "Title breathing room"
+    },
+    {
+      "t": 4,
+      "d": 0.42,
+      "midi": 34,
+      "amplitude": 0.07,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 8,
+      "d": 0.42,
+      "midi": 38,
+      "amplitude": 0.07,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 10,
+      "d": 0.42,
+      "midi": 45,
+      "amplitude": 0.07,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 12,
+      "d": 2.55,
+      "midi": 50,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 12,
+      "d": 2.55,
+      "midi": 53,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 12,
+      "d": 2.55,
+      "midi": 57,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 12,
+      "d": 2.55,
+      "midi": 64,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 12,
+      "d": 0.36,
+      "midi": 38,
+      "amplitude": 0.13,
+      "kind": "pulse",
+      "pan": 0,
+      "why": "Puzzling half-time downbeat"
+    },
+    {
+      "t": 13,
+      "d": 0.31,
+      "midi": 38,
+      "amplitude": 0.085,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 12,
+      "d": 0.72,
+      "midi": 62,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 12.5,
+      "d": 0.72,
+      "midi": 69,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 13.25,
+      "d": 0.72,
+      "midi": 65,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 14,
+      "d": 2.55,
+      "midi": 50,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 14,
+      "d": 2.55,
+      "midi": 53,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 14,
+      "d": 2.55,
+      "midi": 57,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 14,
+      "d": 2.55,
+      "midi": 64,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 14,
+      "d": 0.36,
+      "midi": 38,
+      "amplitude": 0.13,
+      "kind": "pulse",
+      "pan": 0,
+      "why": "Puzzling half-time downbeat"
+    },
+    {
+      "t": 15,
+      "d": 0.31,
+      "midi": 38,
+      "amplitude": 0.085,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 14,
+      "d": 0.72,
+      "midi": 69,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 14.5,
+      "d": 0.72,
+      "midi": 65,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 15.25,
+      "d": 0.72,
+      "midi": 76,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 16,
+      "d": 2.55,
+      "midi": 46,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 16,
+      "d": 2.55,
+      "midi": 50,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 16,
+      "d": 2.55,
+      "midi": 53,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 16,
+      "d": 2.55,
+      "midi": 57,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 16,
+      "d": 0.36,
+      "midi": 34,
+      "amplitude": 0.13,
+      "kind": "pulse",
+      "pan": 0,
+      "why": "Puzzling half-time downbeat"
+    },
+    {
+      "t": 17,
+      "d": 0.31,
+      "midi": 34,
+      "amplitude": 0.085,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 16,
+      "d": 0.72,
+      "midi": 62,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 16.5,
+      "d": 0.72,
+      "midi": 69,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 17.25,
+      "d": 0.72,
+      "midi": 65,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 18,
+      "d": 2.55,
+      "midi": 46,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 18,
+      "d": 2.55,
+      "midi": 50,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 18,
+      "d": 2.55,
+      "midi": 53,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 18,
+      "d": 2.55,
+      "midi": 57,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 18,
+      "d": 0.36,
+      "midi": 34,
+      "amplitude": 0.13,
+      "kind": "pulse",
+      "pan": 0,
+      "why": "Puzzling half-time downbeat"
+    },
+    {
+      "t": 19,
+      "d": 0.31,
+      "midi": 34,
+      "amplitude": 0.085,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 18,
+      "d": 0.72,
+      "midi": 69,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 18.5,
+      "d": 0.72,
+      "midi": 65,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 18.75,
+      "d": 0.72,
+      "midi": 58,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 19.25,
+      "d": 0.72,
+      "midi": 65,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 19.5,
+      "d": 0.72,
+      "midi": 62,
+      "amplitude": 0.072,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 20,
+      "d": 2.55,
+      "midi": 48,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony F"
+    },
+    {
+      "t": 20,
+      "d": 2.55,
+      "midi": 53,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony F"
+    },
+    {
+      "t": 20,
+      "d": 2.55,
+      "midi": 57,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony F"
+    },
+    {
+      "t": 20,
+      "d": 2.55,
+      "midi": 60,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony F"
+    },
+    {
+      "t": 20,
+      "d": 0.36,
+      "midi": 41,
+      "amplitude": 0.13,
+      "kind": "pulse",
+      "pan": 0,
+      "why": "Puzzling half-time downbeat"
+    },
+    {
+      "t": 21,
+      "d": 0.31,
+      "midi": 41,
+      "amplitude": 0.085,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 20,
+      "d": 0.72,
+      "midi": 69,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 20.5,
+      "d": 0.72,
+      "midi": 60,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 20.75,
+      "d": 0.72,
+      "midi": 69,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 21.25,
+      "d": 0.72,
+      "midi": 65,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 21.5,
+      "d": 0.72,
+      "midi": 72,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 22,
+      "d": 2.55,
+      "midi": 48,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony C"
+    },
+    {
+      "t": 22,
+      "d": 2.55,
+      "midi": 52,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony C"
+    },
+    {
+      "t": 22,
+      "d": 2.55,
+      "midi": 55,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony C"
+    },
+    {
+      "t": 22,
+      "d": 2.55,
+      "midi": 62,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony C"
+    },
+    {
+      "t": 22,
+      "d": 0.36,
+      "midi": 36,
+      "amplitude": 0.13,
+      "kind": "pulse",
+      "pan": 0,
+      "why": "Puzzling half-time downbeat"
+    },
+    {
+      "t": 23,
+      "d": 0.31,
+      "midi": 36,
+      "amplitude": 0.085,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 22,
+      "d": 0.72,
+      "midi": 60,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 22.5,
+      "d": 0.72,
+      "midi": 67,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 22.75,
+      "d": 0.72,
+      "midi": 64,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 23.25,
+      "d": 0.72,
+      "midi": 74,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 23.5,
+      "d": 0.72,
+      "midi": 67,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 24,
+      "d": 2.55,
+      "midi": 50,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 24,
+      "d": 2.55,
+      "midi": 53,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 24,
+      "d": 2.55,
+      "midi": 57,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 24,
+      "d": 2.55,
+      "midi": 64,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 24,
+      "d": 0.36,
+      "midi": 38,
+      "amplitude": 0.13,
+      "kind": "pulse",
+      "pan": 0,
+      "why": "Puzzling half-time downbeat"
+    },
+    {
+      "t": 25,
+      "d": 0.31,
+      "midi": 38,
+      "amplitude": 0.085,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 24,
+      "d": 0.72,
+      "midi": 69,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 24.5,
+      "d": 0.72,
+      "midi": 65,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 24.75,
+      "d": 0.72,
+      "midi": 76,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 25.25,
+      "d": 0.72,
+      "midi": 69,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 25.5,
+      "d": 0.72,
+      "midi": 62,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 26,
+      "d": 2.55,
+      "midi": 50,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Gm"
+    },
+    {
+      "t": 26,
+      "d": 2.55,
+      "midi": 55,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Gm"
+    },
+    {
+      "t": 26,
+      "d": 2.55,
+      "midi": 58,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Gm"
+    },
+    {
+      "t": 26,
+      "d": 2.55,
+      "midi": 62,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Gm"
+    },
+    {
+      "t": 26,
+      "d": 0.36,
+      "midi": 43,
+      "amplitude": 0.13,
+      "kind": "pulse",
+      "pan": 0,
+      "why": "Puzzling half-time downbeat"
+    },
+    {
+      "t": 27,
+      "d": 0.31,
+      "midi": 43,
+      "amplitude": 0.085,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 26,
+      "d": 0.72,
+      "midi": 67,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 26.5,
+      "d": 0.72,
+      "midi": 74,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 27.25,
+      "d": 0.72,
+      "midi": 70,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 28,
+      "d": 2.55,
+      "midi": 45,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 28,
+      "d": 2.55,
+      "midi": 50,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 28,
+      "d": 2.55,
+      "midi": 52,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 28,
+      "d": 2.55,
+      "midi": 57,
+      "amplitude": 0.0365,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 28,
+      "d": 0.36,
+      "midi": 33,
+      "amplitude": 0.13,
+      "kind": "pulse",
+      "pan": 0,
+      "why": "Puzzling half-time downbeat"
+    },
+    {
+      "t": 28,
+      "d": 0.72,
+      "midi": 69,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 28.5,
+      "d": 0.72,
+      "midi": 64,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": 0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 29.25,
+      "d": 0.72,
+      "midi": 57,
+      "amplitude": 0.07999999999999999,
+      "kind": "pluck",
+      "pan": -0.24,
+      "why": "Ascent answers the core puzzle"
+    },
+    {
+      "t": 16,
+      "d": 2.5,
+      "midi": 77,
+      "amplitude": 0.083,
+      "kind": "bell",
+      "pan": -0.22,
+      "why": "First harmonic reveal"
+    },
+    {
+      "t": 22,
+      "d": 2.7,
+      "midi": 81,
+      "amplitude": 0.082,
+      "kind": "bell",
+      "pan": 0.22,
+      "why": "Higher melodic answer"
+    },
+    {
+      "t": 28,
+      "d": 2.4,
+      "midi": 76,
+      "amplitude": 0.075,
+      "kind": "bell",
+      "pan": 0,
+      "why": "Held note before the world opens"
+    },
+    {
+      "t": 30,
+      "d": 2.8,
+      "midi": 46,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 30,
+      "d": 2.8,
+      "midi": 50,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 30,
+      "d": 2.8,
+      "midi": 53,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 30,
+      "d": 2.8,
+      "midi": 57,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 30,
+      "d": 0.42,
+      "midi": 34,
+      "amplitude": 0.11,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 31,
+      "d": 0.38,
+      "midi": 34,
+      "amplitude": 0.065,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 30.25,
+      "d": 1.25,
+      "midi": 58,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": 0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 31.25,
+      "d": 1.25,
+      "midi": 65,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": -0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 32,
+      "d": 2.8,
+      "midi": 48,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony F"
+    },
+    {
+      "t": 32,
+      "d": 2.8,
+      "midi": 53,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony F"
+    },
+    {
+      "t": 32,
+      "d": 2.8,
+      "midi": 57,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony F"
+    },
+    {
+      "t": 32,
+      "d": 2.8,
+      "midi": 60,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony F"
+    },
+    {
+      "t": 32,
+      "d": 0.42,
+      "midi": 41,
+      "amplitude": 0.11,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 33,
+      "d": 0.38,
+      "midi": 41,
+      "amplitude": 0.065,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 32.25,
+      "d": 1.25,
+      "midi": 65,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": 0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 33.25,
+      "d": 1.25,
+      "midi": 72,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": -0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 34,
+      "d": 2.8,
+      "midi": 48,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony C"
+    },
+    {
+      "t": 34,
+      "d": 2.8,
+      "midi": 52,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony C"
+    },
+    {
+      "t": 34,
+      "d": 2.8,
+      "midi": 55,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony C"
+    },
+    {
+      "t": 34,
+      "d": 2.8,
+      "midi": 62,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony C"
+    },
+    {
+      "t": 34,
+      "d": 0.42,
+      "midi": 36,
+      "amplitude": 0.11,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 35,
+      "d": 0.38,
+      "midi": 36,
+      "amplitude": 0.065,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 34.25,
+      "d": 1.25,
+      "midi": 67,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": 0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 35.25,
+      "d": 1.25,
+      "midi": 60,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": -0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 36,
+      "d": 2.8,
+      "midi": 50,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 36,
+      "d": 2.8,
+      "midi": 53,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 36,
+      "d": 2.8,
+      "midi": 57,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 36,
+      "d": 2.8,
+      "midi": 64,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 36,
+      "d": 0.42,
+      "midi": 38,
+      "amplitude": 0.11,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 37,
+      "d": 0.38,
+      "midi": 38,
+      "amplitude": 0.065,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 36.25,
+      "d": 1.25,
+      "midi": 76,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": 0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 37.25,
+      "d": 1.25,
+      "midi": 65,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": -0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 38,
+      "d": 2.8,
+      "midi": 50,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Gm"
+    },
+    {
+      "t": 38,
+      "d": 2.8,
+      "midi": 55,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Gm"
+    },
+    {
+      "t": 38,
+      "d": 2.8,
+      "midi": 58,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Gm"
+    },
+    {
+      "t": 38,
+      "d": 2.8,
+      "midi": 62,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Gm"
+    },
+    {
+      "t": 38,
+      "d": 0.42,
+      "midi": 43,
+      "amplitude": 0.11,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 38.25,
+      "d": 1.25,
+      "midi": 62,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": 0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 39.25,
+      "d": 1.25,
+      "midi": 70,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": -0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 40,
+      "d": 2.8,
+      "midi": 45,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 40,
+      "d": 2.8,
+      "midi": 50,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 40,
+      "d": 2.8,
+      "midi": 52,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 40,
+      "d": 2.8,
+      "midi": 57,
+      "amplitude": 0.041,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 40,
+      "d": 0.42,
+      "midi": 33,
+      "amplitude": 0.11,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 40.25,
+      "d": 1.25,
+      "midi": 62,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": 0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 41.25,
+      "d": 1.25,
+      "midi": 69,
+      "amplitude": 0.083,
+      "kind": "pluck",
+      "pan": -0.28,
+      "why": "Space between the chapter views"
+    },
+    {
+      "t": 30,
+      "d": 3.2,
+      "midi": 77,
+      "amplitude": 0.094,
+      "kind": "bell",
+      "pan": -0.2,
+      "why": "Wide-world theme"
+    },
+    {
+      "t": 34,
+      "d": 3.2,
+      "midi": 81,
+      "amplitude": 0.094,
+      "kind": "bell",
+      "pan": 0.28,
+      "why": "Wide-world theme"
+    },
+    {
+      "t": 38,
+      "d": 3.2,
+      "midi": 79,
+      "amplitude": 0.094,
+      "kind": "bell",
+      "pan": -0.2,
+      "why": "Wide-world theme"
+    },
+    {
+      "t": 40,
+      "d": 3.2,
+      "midi": 76,
+      "amplitude": 0.094,
+      "kind": "bell",
+      "pan": -0.2,
+      "why": "Wide-world theme"
+    },
+    {
+      "t": 42,
+      "d": 2.7,
+      "midi": 50,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 42,
+      "d": 2.7,
+      "midi": 53,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 42,
+      "d": 2.7,
+      "midi": 57,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 42,
+      "d": 2.7,
+      "midi": 64,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 42,
+      "d": 0.4,
+      "midi": 38,
+      "amplitude": 0.065,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 42.5,
+      "d": 1.6,
+      "midi": 62,
+      "amplitude": 0.067,
+      "kind": "pluck",
+      "pan": -0.17,
+      "why": ""
+    },
+    {
+      "t": 43.5,
+      "d": 1.6,
+      "midi": 69,
+      "amplitude": 0.053,
+      "kind": "pluck",
+      "pan": 0.17,
+      "why": ""
+    },
+    {
+      "t": 44,
+      "d": 2.7,
+      "midi": 46,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 44,
+      "d": 2.7,
+      "midi": 50,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 44,
+      "d": 2.7,
+      "midi": 53,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 44,
+      "d": 2.7,
+      "midi": 57,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 44.5,
+      "d": 1.6,
+      "midi": 58,
+      "amplitude": 0.067,
+      "kind": "pluck",
+      "pan": -0.17,
+      "why": ""
+    },
+    {
+      "t": 45.5,
+      "d": 1.6,
+      "midi": 65,
+      "amplitude": 0.053,
+      "kind": "pluck",
+      "pan": 0.17,
+      "why": ""
+    },
+    {
+      "t": 46,
+      "d": 2.7,
+      "midi": 48,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony C"
+    },
+    {
+      "t": 46,
+      "d": 2.7,
+      "midi": 52,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony C"
+    },
+    {
+      "t": 46,
+      "d": 2.7,
+      "midi": 55,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony C"
+    },
+    {
+      "t": 46,
+      "d": 2.7,
+      "midi": 62,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony C"
+    },
+    {
+      "t": 46,
+      "d": 0.4,
+      "midi": 36,
+      "amplitude": 0.065,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 46.5,
+      "d": 1.6,
+      "midi": 60,
+      "amplitude": 0.067,
+      "kind": "pluck",
+      "pan": -0.17,
+      "why": ""
+    },
+    {
+      "t": 47.5,
+      "d": 1.6,
+      "midi": 67,
+      "amplitude": 0.053,
+      "kind": "pluck",
+      "pan": 0.17,
+      "why": ""
+    },
+    {
+      "t": 48,
+      "d": 2.7,
+      "midi": 45,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 48,
+      "d": 2.7,
+      "midi": 50,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 48,
+      "d": 2.7,
+      "midi": 52,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 48,
+      "d": 2.7,
+      "midi": 57,
+      "amplitude": 0.0335,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Asus"
+    },
+    {
+      "t": 48.5,
+      "d": 1.6,
+      "midi": 57,
+      "amplitude": 0.067,
+      "kind": "pluck",
+      "pan": -0.17,
+      "why": ""
+    },
+    {
+      "t": 49.5,
+      "d": 1.6,
+      "midi": 64,
+      "amplitude": 0.053,
+      "kind": "pluck",
+      "pan": 0.17,
+      "why": ""
+    },
+    {
+      "t": 50,
+      "d": 2.35,
+      "midi": 46,
+      "amplitude": 0.031,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 50,
+      "d": 2.35,
+      "midi": 50,
+      "amplitude": 0.031,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 50,
+      "d": 2.35,
+      "midi": 53,
+      "amplitude": 0.031,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 50,
+      "d": 2.35,
+      "midi": 57,
+      "amplitude": 0.031,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Bb"
+    },
+    {
+      "t": 52,
+      "d": 2.35,
+      "midi": 48,
+      "amplitude": 0.029,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony C"
+    },
+    {
+      "t": 52,
+      "d": 2.35,
+      "midi": 52,
+      "amplitude": 0.029,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony C"
+    },
+    {
+      "t": 52,
+      "d": 2.35,
+      "midi": 55,
+      "amplitude": 0.029,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony C"
+    },
+    {
+      "t": 52,
+      "d": 2.35,
+      "midi": 62,
+      "amplitude": 0.029,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony C"
+    },
+    {
+      "t": 54,
+      "d": 2.1,
+      "midi": 45,
+      "amplitude": 0.027,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony A"
+    },
+    {
+      "t": 54,
+      "d": 2.1,
+      "midi": 49,
+      "amplitude": 0.027,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony A"
+    },
+    {
+      "t": 54,
+      "d": 2.1,
+      "midi": 52,
+      "amplitude": 0.027,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony A"
+    },
+    {
+      "t": 54,
+      "d": 2.1,
+      "midi": 57,
+      "amplitude": 0.027,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony A"
+    },
+    {
+      "t": 56,
+      "d": 4,
+      "midi": 50,
+      "amplitude": 0.0305,
+      "kind": "pad",
+      "pan": -0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 56,
+      "d": 4,
+      "midi": 53,
+      "amplitude": 0.0305,
+      "kind": "pad",
+      "pan": -0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 56,
+      "d": 4,
+      "midi": 57,
+      "amplitude": 0.0305,
+      "kind": "pad",
+      "pan": 0.12,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 56,
+      "d": 4,
+      "midi": 64,
+      "amplitude": 0.0305,
+      "kind": "pad",
+      "pan": 0.36,
+      "why": "Harmony Dm"
+    },
+    {
+      "t": 50,
+      "d": 0.42,
+      "midi": 34,
+      "amplitude": 0.055,
+      "kind": "pulse",
+      "pan": 0,
+      "why": ""
+    },
+    {
+      "t": 50.5,
+      "d": 2.8,
+      "midi": 65,
+      "amplitude": 0.055,
+      "kind": "bell",
+      "pan": -0.17,
+      "why": "One quiet CTA pickup"
+    },
+    {
+      "t": 54,
+      "d": 2.3,
+      "midi": 69,
+      "amplitude": 0.045,
+      "kind": "pluck",
+      "pan": 0.16,
+      "why": "Dominant before the final tonic"
+    },
+    {
+      "t": 56,
+      "d": 3.9,
+      "midi": 74,
+      "amplitude": 0.079,
+      "kind": "bell",
+      "pan": 0.1,
+      "why": "Final D tonic and authentic decay"
+    },
+    {
+      "t": 56,
+      "d": 3.8,
+      "midi": 50,
+      "amplitude": 0.04,
+      "kind": "bell",
+      "pan": -0.16,
+      "why": "Low final D"
+    }
+  ],
+  "levels": {
+    "targetIntegratedLufs": -17,
+    "integratedLufs": -18.88,
+    "truePeakDbtp": -3.05,
+    "lraLu": 8.9,
+    "oneStaticGainDb": 8.510000000000002,
+    "peakCeilingDbtp": -3,
+    "preGainSamplePeakDbfs": -11.562953183875857,
+    "dcMean": 0.00004193547738224736,
+    "policy": "Only one constant gain after authored dynamics. No limiter, compressor, dynamic loudnorm or hard clipping. Measurement-only loudnorm output is discarded."
+  },
+  "envelopes": {
+    "eventAttackRelease": "Smoothstep at every note start/end",
+    "phaseDynamics": "Continuous smoothstep interpolation",
+    "programInSeconds": 0.035,
+    "programOutSeconds": 1.25
+  },
+  "waveform": {
+    "boundaryChecks": [
+      {
+        "time": 0,
+        "singleSampleStep": 5.129416574996402e-16,
+        "neighbourhoodMaxStep": 0.00000799349599929844,
+        "derivativeRms": 0.000001960060414373118,
+        "ratio": 2.6169686084073754e-10,
+        "isolatedJump": false
+      },
+      {
+        "time": 4,
+        "singleSampleStep": 0.0038173356537869667,
+        "neighbourhoodMaxStep": 0.01741192822338004,
+        "derivativeRms": 0.005076971496432444,
+        "ratio": 0.7518922760290035,
+        "isolatedJump": false
+      },
+      {
+        "time": 12,
+        "singleSampleStep": 0.0009994297347778894,
+        "neighbourhoodMaxStep": 0.006628036108436263,
+        "derivativeRms": 0.0019893623222239252,
+        "ratio": 0.5023869828099581,
+        "isolatedJump": false
+      },
+      {
+        "time": 30,
+        "singleSampleStep": 0.001567032280516183,
+        "neighbourhoodMaxStep": 0.04220070779702581,
+        "derivativeRms": 0.008677689623862058,
+        "ratio": 0.18058173873920672,
+        "isolatedJump": false
+      },
+      {
+        "time": 42,
+        "singleSampleStep": 0.002426173455608321,
+        "neighbourhoodMaxStep": 0.007305089151358866,
+        "derivativeRms": 0.0031368352244770577,
+        "ratio": 0.7734462545806143,
+        "isolatedJump": false
+      },
+      {
+        "time": 50,
+        "singleSampleStep": 0.0010344474543513649,
+        "neighbourhoodMaxStep": 0.0033085786508697335,
+        "derivativeRms": 0.0014362091199232661,
+        "ratio": 0.7202624186139643,
+        "isolatedJump": false
+      },
+      {
+        "time": 56,
+        "singleSampleStep": 0.00008684155994351577,
+        "neighbourhoodMaxStep": 0.01477575180780341,
+        "derivativeRms": 0.003495649978318005,
+        "ratio": 0.024842750413272538,
+        "isolatedJump": false
+      },
+      {
+        "time": 59.95,
+        "singleSampleStep": 1.596079990008584e-7,
+        "neighbourhoodMaxStep": 5.100258408278521e-7,
+        "derivativeRms": 1.0707549009138711e-7,
+        "ratio": 1.4906118932039039,
+        "isolatedJump": false
+      }
+    ],
+    "clippedSamples": 0,
+    "maxSingleSampleDelta": 0.057811624742940035,
+    "lastStereoPcm": [
+      0,
+      0
+    ]
+  },
+  "silence": {
+    "thresholdDbfs": -55,
+    "minSeconds": 0.06,
+    "events": [
+      {
+        "start": 59.775125,
+        "end": 60
+      }
+    ],
+    "intendedOnly": "First100ms and final decay after59.3s may fall below threshold.",
+    "unexpected": []
+  },
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s24le",
+        "sample_rate": "48000",
+        "channels": 2,
+        "bits_per_sample": 24,
+        "time_base": "1/48000",
+        "duration_ts": 2880000
+      }
+    ],
+    "format": {
+      "duration": "60.000000"
+    }
+  },
+  "measurementOnly": {
+    "firstPass": {
+      "input_i": "-27.39",
+      "input_tp": "-11.56",
+      "input_lra": "8.90",
+      "input_thresh": "-37.54",
+      "output_i": "-18.12",
+      "output_tp": "-3.00",
+      "output_lra": "7.40",
+      "output_thresh": "-28.19",
+      "normalization_type": "dynamic",
+      "target_offset": "1.12"
+    },
+    "finalPass": {
+      "input_i": "-18.88",
+      "input_tp": "-3.05",
+      "input_lra": "8.90",
+      "input_thresh": "-29.03",
+      "output_i": "-18.13",
+      "output_tp": "-3.00",
+      "output_lra": "7.40",
+      "output_thresh": "-28.20",
+      "normalization_type": "dynamic",
+      "target_offset": "1.13"
+    },
+    "processedOutputSaved": false
+  },
+  "checks": {
+    "exactSamples": true,
+    "exact60seconds": true,
+    "pcm48kStereo24": true,
+    "fullDecode": true,
+    "peakHeadroom": true,
+    "integratedRangeReasonable": true,
+    "noClip": true,
+    "noUnexpectedSilence": true,
+    "noIsolatedSectionJump": true,
+    "referenceUnchanged": true
+  },
+  "verificationScope": {
+    "fullWavDecoded": true,
+    "numericDiscontinuityScreen": true,
+    "directWholeAudition": false,
+    "perceptualClickFreeClaim": false,
+    "finalAacMeasured": false,
+    "finalMp4": "root will export and verify separately"
+  }
+}

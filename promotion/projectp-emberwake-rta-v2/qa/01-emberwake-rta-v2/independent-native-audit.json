@@ -1,0 +1,2248 @@
+{
+  "version": 1,
+  "issue": 89,
+  "reviewedAt": "2026-10-25T04:55:57.027Z",
+  "status": "PASS_SAVED_NATIVE_STRUCTURE_FINAL_VIDEO_PENDING",
+  "artifact": {
+    "native": "projects/01-emberwake-rta-v2.ecproj",
+    "nativeSha256": "a61b7d0e59a1c725695f9e0f71e286e696cfd4c5f4d6295e29479d29cbfddbb2",
+    "layout": "qa/01-emberwake-rta-v2/layout-and-motion.json",
+    "layoutSha256": "aaead10330dbfa134fb28e4f13839fd692eabc298316b729bba0d46a807ee5d3",
+    "editSha256": "7cee9558a7370ce89a27f9a6f7fcb4b06cfcb8776589a3dc352080b52905ab5d",
+    "motionSha256": "86e808fc4d782dba935c1bc852d568f2c4084a0f8d54677ab70654d9edf20ff2"
+  },
+  "method": {
+    "readOnly": true,
+    "rendererInvoked": false,
+    "ticksPerSecond": 254016000000,
+    "savedKeyTimes": "layer-relative; add layer start_time for main-comp time",
+    "calculation": "Independent matrix projection/inverse projection of saved native camera keys, independently interpolated source/edit focus minus [110,-35] offset. Production solver not imported or executed.",
+    "glyphBounds": "Glyph width/height from EffectCraft sourceRect ledger; native text/font/size/transform/timing independently checked. Pixel rendering deferred."
+  },
+  "main": {
+    "comp": 307,
+    "name": "EMBERWAKE RTA V2",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "duration": 60,
+    "scenes": 18,
+    "singleGameViewport": [
+      1080,
+      1200
+    ],
+    "gameViewportMainBounds": [
+      0,
+      500,
+      1080,
+      1700
+    ],
+    "layers": 135
+  },
+  "game": {
+    "keys": 844,
+    "maxFocusCenterErrorPx": 1.1368683772161603e-13,
+    "maxPlayerProjectionErrorPx": 2.5421149729252077e-13,
+    "maxIndependentPlayerSourceErrorPx": 0,
+    "maxPositionPlanErrorPx": 0,
+    "maxScalePlanError": 2.220446049250313e-16,
+    "maxRotationPlanErrorDeg": 0,
+    "minScale": 1.34,
+    "maxScale": 1.7899999999999998,
+    "maxRotationDeg": 0.75,
+    "minSourceCornerMarginPx": 1.7045454545454959,
+    "minHeadProbeTopMarginPx": 480.87005859375006,
+    "minFootProbeBottomMarginPx": 340.426611328125,
+    "minConservativeFootPlus60MarginPx": 279.70661132812495,
+    "playerX": [
+      109.99999999999996,
+      570.24
+    ],
+    "playerY": [
+      613.4700585937501,
+      837.493388671875
+    ],
+    "rigCount": 10,
+    "positionScaleRotationValuesChecked": 2532,
+    "allTrackedCentersWithinPlannedBounds": true,
+    "allViewportCornersCoveredAtAllSavedFrames": true,
+    "headProbeSourceOffset": [
+      0,
+      -85
+    ],
+    "footProbeSourceOffset": [
+      0,
+      16
+    ],
+    "extraConservativeFootProbe": [
+      0,
+      60
+    ],
+    "scope": "Tracked points and conservative probes are not per-pixel actor masks. Focus clamp intentionally shifts desired aim to preserve world coverage and player visibility.",
+    "sourceRemap": "Only active clip interval checked; unused automatically retained remap endpoint keys beyond layer out-points do not affect this interval."
+  },
+  "rigs": [
+    {
+      "scene": 0,
+      "comp": 8,
+      "layer": 9,
+      "profile": "core-socket-path",
+      "keys": 37,
+      "mainInterval": [
+        0,
+        1.2
+      ],
+      "sourceInterval": [
+        5.333333333333333,
+        6.533333333333333
+      ],
+      "scaleRange": [
+        1.68,
+        1.76
+      ],
+      "status": "PASS_SAVED_NATIVE_FRAME_KEYS"
+    },
+    {
+      "scene": 1,
+      "comp": 33,
+      "layer": 34,
+      "profile": "fit-reveal-run",
+      "keys": 61,
+      "mainInterval": [
+        1.2,
+        3.2
+      ],
+      "sourceInterval": [
+        6.533333333333333,
+        8.533333333333333
+      ],
+      "scaleRange": [
+        1.38,
+        1.5524800000184313
+      ],
+      "status": "PASS_SAVED_NATIVE_FRAME_KEYS"
+    },
+    {
+      "scene": 5,
+      "comp": 107,
+      "layer": 108,
+      "profile": "carry-core-to-socket",
+      "keys": 109,
+      "mainInterval": [
+        12,
+        15.6
+      ],
+      "sourceInterval": [
+        3.4,
+        7
+      ],
+      "scaleRange": [
+        1.47,
+        1.5899999999999999
+      ],
+      "status": "PASS_SAVED_NATIVE_FRAME_KEYS"
+    },
+    {
+      "scene": 6,
+      "comp": 132,
+      "layer": 133,
+      "profile": "socket-rise-landing",
+      "keys": 91,
+      "mainInterval": [
+        15.6,
+        18.6
+      ],
+      "sourceInterval": [
+        5.3,
+        8.3
+      ],
+      "scaleRange": [
+        1.49,
+        1.65
+      ],
+      "status": "PASS_SAVED_NATIVE_FRAME_KEYS"
+    },
+    {
+      "scene": 7,
+      "comp": 157,
+      "layer": 158,
+      "profile": "ascent-player-to-landing",
+      "keys": 103,
+      "mainInterval": [
+        18.6,
+        22
+      ],
+      "sourceInterval": [
+        7,
+        10.399999999999999
+      ],
+      "scaleRange": [
+        1.42,
+        1.5799999999999998
+      ],
+      "status": "PASS_SAVED_NATIVE_FRAME_KEYS"
+    },
+    {
+      "scene": 8,
+      "comp": 182,
+      "layer": 183,
+      "profile": "hearth-release",
+      "keys": 127,
+      "mainInterval": [
+        22,
+        26.2
+      ],
+      "sourceInterval": [
+        10.4,
+        14.6
+      ],
+      "scaleRange": [
+        1.47,
+        1.63
+      ],
+      "status": "PASS_SAVED_NATIVE_FRAME_KEYS"
+    },
+    {
+      "scene": 9,
+      "comp": 207,
+      "layer": 208,
+      "profile": "rta-route-first-jump",
+      "keys": 73,
+      "mainInterval": [
+        26.2,
+        28.6
+      ],
+      "sourceInterval": [
+        7,
+        9.400000000000002
+      ],
+      "scaleRange": [
+        1.34,
+        1.5
+      ],
+      "status": "PASS_SAVED_NATIVE_FRAME_KEYS"
+    },
+    {
+      "scene": 10,
+      "comp": 232,
+      "layer": 233,
+      "profile": "rta-route-next-jump",
+      "keys": 73,
+      "mainInterval": [
+        28.6,
+        31
+      ],
+      "sourceInterval": [
+        8,
+        10.399999999999999
+      ],
+      "scaleRange": [
+        1.56,
+        1.72
+      ],
+      "status": "PASS_SAVED_NATIVE_FRAME_KEYS"
+    },
+    {
+      "scene": 11,
+      "comp": 257,
+      "layer": 258,
+      "profile": "rta-fit-decide",
+      "keys": 79,
+      "mainInterval": [
+        31,
+        33.6
+      ],
+      "sourceInterval": [
+        5.1,
+        7.700000000000001
+      ],
+      "scaleRange": [
+        1.63,
+        1.7899999999999998
+      ],
+      "status": "PASS_SAVED_NATIVE_FRAME_KEYS"
+    },
+    {
+      "scene": 12,
+      "comp": 282,
+      "layer": 283,
+      "profile": "rta-final-ascent",
+      "keys": 91,
+      "mainInterval": [
+        33.6,
+        36.6
+      ],
+      "sourceInterval": [
+        10,
+        13
+      ],
+      "scaleRange": [
+        1.39,
+        1.47
+      ],
+      "status": "PASS_SAVED_NATIVE_FRAME_KEYS"
+    }
+  ],
+  "modeMotion": [
+    {
+      "scene": 4,
+      "comp": 58,
+      "layer": 83,
+      "source": "media/time-attack-menu.png",
+      "sourceSha256": "fbecea4c2dffa5ebbbd0dd935767c5d31d87a53675e6336f127f60f5d72f4e00",
+      "keys": [
+        {
+          "time": 0,
+          "scale": 0.5625,
+          "position": [
+            540,
+            600,
+            0
+          ],
+          "buttonCenter": [
+            288,
+            666.375
+          ],
+          "buttonBounds": {
+            "x": [
+              78.75,
+              497.25
+            ],
+            "y": [
+              631.5,
+              701.25
+            ]
+          }
+        },
+        {
+          "time": 0.13333333333333333,
+          "scale": 1.32,
+          "position": [
+            1131.3600000000001,
+            487.19999999999993,
+            0
+          ],
+          "buttonCenter": [
+            540.0000000000001,
+            642.9599999999999
+          ],
+          "buttonBounds": {
+            "x": [
+              48.960000000000036,
+              1031.0400000000002
+            ],
+            "y": [
+              561.1199999999999,
+              724.8
+            ]
+          }
+        },
+        {
+          "time": 0.3333333333333333,
+          "scale": 1.25,
+          "position": [
+            1100,
+            525,
+            0
+          ],
+          "buttonCenter": [
+            540,
+            672.5
+          ],
+          "buttonBounds": {
+            "x": [
+              75,
+              1005
+            ],
+            "y": [
+              595,
+              750
+            ]
+          }
+        },
+        {
+          "time": 2.1999999999999993,
+          "scale": 1.25,
+          "position": [
+            1100,
+            525,
+            0
+          ],
+          "buttonCenter": [
+            540,
+            672.5
+          ],
+          "buttonBounds": {
+            "x": [
+              75,
+              1005
+            ],
+            "y": [
+              595,
+              750
+            ]
+          }
+        }
+      ],
+      "status": "PASS_SAVED_MODE_KEYS"
+    }
+  ],
+  "text": {
+    "count": 85,
+    "fontSizeRange": [
+      24,
+      105
+    ],
+    "minStationaryDwellSeconds": 0.9666666666666666,
+    "settledOverlapCount": 0,
+    "overlaps": [],
+    "entryContacts": [
+      {
+        "a": "Title two 2",
+        "b": "Body caption 2",
+        "time": 3.2,
+        "depthPx": 13.98388671875,
+        "settlesAt": 3.433333333333333,
+        "status": "PENDING_FINAL_PIXELS_ENTRY_ONLY"
+      },
+      {
+        "a": "Title two 3",
+        "b": "Body caption 3",
+        "time": 6.8,
+        "depthPx": 3.921630859375,
+        "settlesAt": 7.033333333333333,
+        "status": "PENDING_FINAL_PIXELS_ENTRY_ONLY"
+      },
+      {
+        "a": "Title two 13",
+        "b": "Body caption 13",
+        "time": 36.6,
+        "depthPx": 1.543701171875,
+        "settlesAt": 36.833333333333336,
+        "status": "PENDING_FINAL_PIXELS_ENTRY_ONLY"
+      },
+      {
+        "a": "Title two 14",
+        "b": "Body caption 14",
+        "time": 40,
+        "depthPx": 2.345703125,
+        "settlesAt": 40.233333333333334,
+        "status": "PENDING_FINAL_PIXELS_ENTRY_ONLY"
+      },
+      {
+        "a": "Title two 15",
+        "b": "Body caption 15",
+        "time": 44,
+        "depthPx": 1.475341796875,
+        "settlesAt": 44.233333333333334,
+        "status": "PENDING_FINAL_PIXELS_ENTRY_ONLY"
+      }
+    ],
+    "compactGameModeEntryContactCount": 0,
+    "timingNote": "Native layer timing floors non-frame-aligned inputs by under one frame (e.g. Final action 53.25 -> 53.233333).",
+    "boxes": [
+      {
+        "name": "Source label 0",
+        "text": "実ゲーム / 探索モード・開発中",
+        "font": "Meiryo",
+        "size": 25,
+        "interval": [
+          0,
+          1.2
+        ],
+        "bounds": [
+          323.14453125,
+          152.51220703125,
+          676.85546875,
+          177.48779296875
+        ],
+        "landingTime": 0,
+        "dwell": 1.2,
+        "entry": null
+      },
+      {
+        "name": "Title one 0",
+        "text": "その一手で、",
+        "font": "Meiryo",
+        "size": 72,
+        "interval": [
+          0,
+          1.2
+        ],
+        "bounds": [
+          309.13671875,
+          208.11328125,
+          690.86328125,
+          271.88671875
+        ],
+        "landingTime": 0,
+        "dwell": 1.2,
+        "entry": null
+      },
+      {
+        "name": "Title two 0",
+        "text": "何秒、縮める？",
+        "font": "Meiryo",
+        "size": 80,
+        "interval": [
+          0,
+          1.2
+        ],
+        "bounds": [
+          230.41015625,
+          293.84765625,
+          769.58984375,
+          366.15234375
+        ],
+        "landingTime": 0.23333333333333334,
+        "dwell": 0.9666666666666666,
+        "entry": {
+          "time": 0,
+          "position": [
+            500,
+            367,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 0",
+        "text": "運ぶ。はめる。最短ルートを探せ。",
+        "font": "Meiryo",
+        "size": 33,
+        "interval": [
+          0,
+          1.2
+        ],
+        "bounds": [
+          246.07080078125,
+          409.797119140625,
+          753.92919921875,
+          440.202880859375
+        ],
+        "landingTime": 0,
+        "dwell": 1.2,
+        "entry": null
+      },
+      {
+        "name": "Source label 1",
+        "text": "実ゲーム / 探索モード・開発中",
+        "font": "Meiryo",
+        "size": 25,
+        "interval": [
+          1.2,
+          3.2
+        ],
+        "bounds": [
+          323.14453125,
+          152.51220703125,
+          676.85546875,
+          177.48779296875
+        ],
+        "landingTime": 1.2,
+        "dwell": 2,
+        "entry": null
+      },
+      {
+        "name": "Title one 1",
+        "text": "道を、",
+        "font": "Meiryo",
+        "size": 72,
+        "interval": [
+          1.2,
+          3.2
+        ],
+        "bounds": [
+          415.783203125,
+          207.673828125,
+          584.216796875,
+          272.326171875
+        ],
+        "landingTime": 1.2,
+        "dwell": 2,
+        "entry": null
+      },
+      {
+        "name": "Title two 1",
+        "text": "切りひらけ。",
+        "font": "Meiryo",
+        "size": 80,
+        "interval": [
+          1.2,
+          3.2
+        ],
+        "bounds": [
+          284.7265625,
+          294.04296875,
+          715.2734375,
+          365.95703125
+        ],
+        "landingTime": 1.4333333333333333,
+        "dwell": 1.7666666666666668,
+        "entry": {
+          "time": 1.2,
+          "position": [
+            500,
+            367,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 1",
+        "text": "跳ぶ先まで、つないでいく。",
+        "font": "Meiryo",
+        "size": 33,
+        "interval": [
+          1.2,
+          3.2
+        ],
+        "bounds": [
+          295.6513671875,
+          409.45068359375,
+          704.3486328125,
+          440.54931640625
+        ],
+        "landingTime": 1.2,
+        "dwell": 2,
+        "entry": null
+      },
+      {
+        "name": "Concept provenance 2",
+        "text": "実ゲームは2D / このカットは開発イメージ",
+        "font": "Meiryo",
+        "size": 29,
+        "interval": [
+          3.2,
+          6.8
+        ],
+        "bounds": [
+          214.736572265625,
+          1495.51416015625,
+          785.263427734375,
+          1524.48583984375
+        ],
+        "landingTime": 3.2,
+        "dwell": 3.5999999999999996,
+        "entry": null
+      },
+      {
+        "name": "Source label 2",
+        "text": "開発イメージ（3D演出）",
+        "font": "Meiryo",
+        "size": 27,
+        "interval": [
+          3.2,
+          6.8
+        ],
+        "bounds": [
+          354.525634765625,
+          189.732666015625,
+          645.474365234375,
+          214.267333984375
+        ],
+        "landingTime": 3.2,
+        "dwell": 3.5999999999999996,
+        "entry": null
+      },
+      {
+        "name": "Title one 2",
+        "text": "EMBERWAKE",
+        "font": "Meiryo",
+        "size": 100,
+        "interval": [
+          3.2,
+          6.8
+        ],
+        "bounds": [
+          164.3310546875,
+          263.2080078125,
+          835.6689453125,
+          336.7919921875
+        ],
+        "landingTime": 3.2,
+        "dwell": 3.5999999999999996,
+        "entry": null
+      },
+      {
+        "name": "Title two 2",
+        "text": "制作、本格化。",
+        "font": "Meiryo",
+        "size": 105,
+        "interval": [
+          3.2,
+          6.8
+        ],
+        "bounds": [
+          164.697265625,
+          355.601318359375,
+          835.302734375,
+          450.398681640625
+        ],
+        "landingTime": 3.433333333333333,
+        "dwell": 3.3666666666666667,
+        "entry": {
+          "time": 3.2,
+          "position": [
+            500,
+            440,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 2",
+        "text": "灰の灯 / ProjectP・ぷい",
+        "font": "Meiryo",
+        "size": 35,
+        "interval": [
+          3.2,
+          6.8
+        ],
+        "bounds": [
+          295.870361328125,
+          473.414794921875,
+          704.129638671875,
+          510.585205078125
+        ],
+        "landingTime": 3.2,
+        "dwell": 3.5999999999999996,
+        "entry": null
+      },
+      {
+        "name": "Concept provenance 3",
+        "text": "実ゲームは2D / このカットは開発イメージ",
+        "font": "Meiryo",
+        "size": 29,
+        "interval": [
+          6.8,
+          9.8
+        ],
+        "bounds": [
+          214.736572265625,
+          1495.51416015625,
+          785.263427734375,
+          1524.48583984375
+        ],
+        "landingTime": 6.8,
+        "dwell": 3.000000000000001,
+        "entry": null
+      },
+      {
+        "name": "Source label 3",
+        "text": "開発イメージ（3D演出）",
+        "font": "Meiryo",
+        "size": 27,
+        "interval": [
+          6.8,
+          9.8
+        ],
+        "bounds": [
+          354.525634765625,
+          189.732666015625,
+          645.474365234375,
+          214.267333984375
+        ],
+        "landingTime": 6.8,
+        "dwell": 3.000000000000001,
+        "entry": null
+      },
+      {
+        "name": "Title one 3",
+        "text": "同じコースを、",
+        "font": "Meiryo",
+        "size": 78,
+        "interval": [
+          6.8,
+          9.8
+        ],
+        "bounds": [
+          254.85986328125,
+          265.5703125,
+          745.14013671875,
+          334.4296875
+        ],
+        "landingTime": 6.8,
+        "dwell": 3.000000000000001,
+        "entry": null
+      },
+      {
+        "name": "Title two 3",
+        "text": "次は、もっと速く。",
+        "font": "Meiryo",
+        "size": 85,
+        "interval": [
+          6.8,
+          9.8
+        ],
+        "bounds": [
+          143.77197265625,
+          363.61279296875,
+          856.22802734375,
+          442.38720703125
+        ],
+        "landingTime": 7.033333333333333,
+        "dwell": 2.7666666666666675,
+        "entry": {
+          "time": 6.8,
+          "position": [
+            500,
+            440,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 3",
+        "text": "灯を運ぶ2Dアクションパズル。",
+        "font": "Meiryo",
+        "size": 35,
+        "interval": [
+          6.8,
+          9.8
+        ],
+        "bounds": [
+          257.61474609375,
+          475.465576171875,
+          742.38525390625,
+          508.534423828125
+        ],
+        "landingTime": 6.8,
+        "dwell": 3.000000000000001,
+        "entry": null
+      },
+      {
+        "name": "Source label 4",
+        "text": "実タイトル画面 / 開発中",
+        "font": "Meiryo",
+        "size": 25,
+        "interval": [
+          9.8,
+          12
+        ],
+        "bounds": [
+          360.64453125,
+          152.5732421875,
+          639.35546875,
+          177.4267578125
+        ],
+        "landingTime": 9.8,
+        "dwell": 2.1999999999999993,
+        "entry": null
+      },
+      {
+        "name": "Title one 4",
+        "text": "章ごとの",
+        "font": "Meiryo",
+        "size": 72,
+        "interval": [
+          9.8,
+          12
+        ],
+        "bounds": [
+          358.267578125,
+          207.462890625,
+          641.732421875,
+          272.537109375
+        ],
+        "landingTime": 9.8,
+        "dwell": 2.1999999999999993,
+        "entry": null
+      },
+      {
+        "name": "Title two 4",
+        "text": "TIME ATTACK。",
+        "font": "Meiryo",
+        "size": 80,
+        "interval": [
+          9.8,
+          12
+        ],
+        "bounds": [
+          198.06640625,
+          298.0078125,
+          801.93359375,
+          361.9921875
+        ],
+        "landingTime": 10.033333333333333,
+        "dwell": 1.9666666666666668,
+        "entry": {
+          "time": 9.8,
+          "position": [
+            500,
+            367,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 4",
+        "text": "ローカル自己ベストを、追い越せ。",
+        "font": "Meiryo",
+        "size": 33,
+        "interval": [
+          9.8,
+          12
+        ],
+        "bounds": [
+          247.55322265625,
+          409.724609375,
+          752.44677734375,
+          440.275390625
+        ],
+        "landingTime": 9.8,
+        "dwell": 2.1999999999999993,
+        "entry": null
+      },
+      {
+        "name": "Source label 5",
+        "text": "実ゲーム / 探索モード・開発中",
+        "font": "Meiryo",
+        "size": 25,
+        "interval": [
+          12,
+          15.6
+        ],
+        "bounds": [
+          323.14453125,
+          152.51220703125,
+          676.85546875,
+          177.48779296875
+        ],
+        "landingTime": 12,
+        "dwell": 3.5999999999999996,
+        "entry": null
+      },
+      {
+        "name": "Title one 5",
+        "text": "芯石を、",
+        "font": "Meiryo",
+        "size": 72,
+        "interval": [
+          12,
+          15.6
+        ],
+        "bounds": [
+          380.345703125,
+          208.21875,
+          619.654296875,
+          271.78125
+        ],
+        "landingTime": 12,
+        "dwell": 3.5999999999999996,
+        "entry": null
+      },
+      {
+        "name": "Title two 5",
+        "text": "運ぶ。",
+        "font": "Meiryo",
+        "size": 80,
+        "interval": [
+          12,
+          15.6
+        ],
+        "bounds": [
+          404.4140625,
+          293.37890625,
+          595.5859375,
+          366.62109375
+        ],
+        "landingTime": 12.233333333333333,
+        "dwell": 3.366666666666667,
+        "entry": {
+          "time": 12,
+          "position": [
+            500,
+            367,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 5",
+        "text": "次の一手を、迷わず決めろ。",
+        "font": "Meiryo",
+        "size": 33,
+        "interval": [
+          12,
+          15.6
+        ],
+        "bounds": [
+          295.69970703125,
+          409.893798828125,
+          704.30029296875,
+          440.106201171875
+        ],
+        "landingTime": 12,
+        "dwell": 3.5999999999999996,
+        "entry": null
+      },
+      {
+        "name": "Source label 6",
+        "text": "実ゲーム / 探索モード・開発中",
+        "font": "Meiryo",
+        "size": 25,
+        "interval": [
+          15.6,
+          18.6
+        ],
+        "bounds": [
+          323.14453125,
+          152.51220703125,
+          676.85546875,
+          177.48779296875
+        ],
+        "landingTime": 15.6,
+        "dwell": 3.0000000000000018,
+        "entry": null
+      },
+      {
+        "name": "Title one 6",
+        "text": "はめると、",
+        "font": "Meiryo",
+        "size": 72,
+        "interval": [
+          15.6,
+          18.6
+        ],
+        "bounds": [
+          346.068359375,
+          208.78125,
+          653.931640625,
+          271.21875
+        ],
+        "landingTime": 15.6,
+        "dwell": 3.0000000000000018,
+        "entry": null
+      },
+      {
+        "name": "Title two 6",
+        "text": "道が起きる。",
+        "font": "Meiryo",
+        "size": 80,
+        "interval": [
+          15.6,
+          18.6
+        ],
+        "bounds": [
+          284.4140625,
+          293.45703125,
+          715.5859375,
+          366.54296875
+        ],
+        "landingTime": 15.833333333333334,
+        "dwell": 2.7666666666666675,
+        "entry": {
+          "time": 15.6,
+          "position": [
+            500,
+            367,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 6",
+        "text": "現れた足場が、次の道になる。",
+        "font": "Meiryo",
+        "size": 33,
+        "interval": [
+          15.6,
+          18.6
+        ],
+        "bounds": [
+          279.13525390625,
+          409.829345703125,
+          720.86474609375,
+          440.170654296875
+        ],
+        "landingTime": 15.6,
+        "dwell": 3.0000000000000018,
+        "entry": null
+      },
+      {
+        "name": "Source label 7",
+        "text": "実ゲーム / 探索モード・開発中",
+        "font": "Meiryo",
+        "size": 25,
+        "interval": [
+          18.6,
+          22
+        ],
+        "bounds": [
+          323.14453125,
+          152.51220703125,
+          676.85546875,
+          177.48779296875
+        ],
+        "landingTime": 18.6,
+        "dwell": 3.3999999999999986,
+        "entry": null
+      },
+      {
+        "name": "Title one 7",
+        "text": "着地点を、",
+        "font": "Meiryo",
+        "size": 72,
+        "interval": [
+          18.6,
+          22
+        ],
+        "bounds": [
+          343.66015625,
+          207.357421875,
+          656.33984375,
+          272.642578125
+        ],
+        "landingTime": 18.6,
+        "dwell": 3.3999999999999986,
+        "entry": null
+      },
+      {
+        "name": "Title two 7",
+        "text": "狙って跳ぶ。",
+        "font": "Meiryo",
+        "size": 80,
+        "interval": [
+          18.6,
+          22
+        ],
+        "bounds": [
+          284.7265625,
+          293.4765625,
+          715.2734375,
+          366.5234375
+        ],
+        "landingTime": 18.833333333333332,
+        "dwell": 3.166666666666668,
+        "entry": {
+          "time": 18.6,
+          "position": [
+            500,
+            367,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 7",
+        "text": "止まる一瞬を、短くする。",
+        "font": "Meiryo",
+        "size": 33,
+        "interval": [
+          18.6,
+          22
+        ],
+        "bounds": [
+          312.546142578125,
+          409.853515625,
+          687.453857421875,
+          440.146484375
+        ],
+        "landingTime": 18.6,
+        "dwell": 3.3999999999999986,
+        "entry": null
+      },
+      {
+        "name": "Source label 8",
+        "text": "実ゲーム / 探索モード・開発中",
+        "font": "Meiryo",
+        "size": 25,
+        "interval": [
+          22,
+          26.2
+        ],
+        "bounds": [
+          323.14453125,
+          152.51220703125,
+          676.85546875,
+          177.48779296875
+        ],
+        "landingTime": 22,
+        "dwell": 4.199999999999999,
+        "entry": null
+      },
+      {
+        "name": "Title one 8",
+        "text": "灯した火が、",
+        "font": "Meiryo",
+        "size": 72,
+        "interval": [
+          22,
+          26.2
+        ],
+        "bounds": [
+          307.994140625,
+          206.900390625,
+          692.005859375,
+          273.099609375
+        ],
+        "landingTime": 22,
+        "dwell": 4.199999999999999,
+        "entry": null
+      },
+      {
+        "name": "Title two 8",
+        "text": "街へ返る。",
+        "font": "Meiryo",
+        "size": 80,
+        "interval": [
+          22,
+          26.2
+        ],
+        "bounds": [
+          324.19921875,
+          294.43359375,
+          675.80078125,
+          365.56640625
+        ],
+        "landingTime": 22.233333333333334,
+        "dwell": 3.966666666666665,
+        "entry": {
+          "time": 22,
+          "position": [
+            500,
+            367,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 8",
+        "text": "遠くの窓が、灯に応える。",
+        "font": "Meiryo",
+        "size": 33,
+        "interval": [
+          22,
+          26.2
+        ],
+        "bounds": [
+          312.07080078125,
+          409.53125,
+          687.92919921875,
+          440.46875
+        ],
+        "landingTime": 22,
+        "dwell": 4.199999999999999,
+        "entry": null
+      },
+      {
+        "name": "Source label 9",
+        "text": "実ゲーム / 探索モード・開発中",
+        "font": "Meiryo",
+        "size": 25,
+        "interval": [
+          26.2,
+          28.6
+        ],
+        "bounds": [
+          323.14453125,
+          152.51220703125,
+          676.85546875,
+          177.48779296875
+        ],
+        "landingTime": 26.2,
+        "dwell": 2.400000000000002,
+        "entry": null
+      },
+      {
+        "name": "Title one 9",
+        "text": "踏み切る。",
+        "font": "Meiryo",
+        "size": 72,
+        "interval": [
+          26.2,
+          28.6
+        ],
+        "bounds": [
+          342.0078125,
+          207.7265625,
+          657.9921875,
+          272.2734375
+        ],
+        "landingTime": 26.2,
+        "dwell": 2.400000000000002,
+        "entry": null
+      },
+      {
+        "name": "Title two 9",
+        "text": "つぎの足場へ。",
+        "font": "Meiryo",
+        "size": 80,
+        "interval": [
+          26.2,
+          28.6
+        ],
+        "bounds": [
+          244.6484375,
+          293.3203125,
+          755.3515625,
+          366.6796875
+        ],
+        "landingTime": 26.433333333333334,
+        "dwell": 2.166666666666668,
+        "entry": {
+          "time": 26.2,
+          "position": [
+            500,
+            367,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 9",
+        "text": "一つ先の着地点を見る。",
+        "font": "Meiryo",
+        "size": 33,
+        "interval": [
+          26.2,
+          28.6
+        ],
+        "bounds": [
+          329.31201171875,
+          410.087158203125,
+          670.68798828125,
+          439.912841796875
+        ],
+        "landingTime": 26.2,
+        "dwell": 2.400000000000002,
+        "entry": null
+      },
+      {
+        "name": "Source label 10",
+        "text": "実ゲーム / 探索モード・開発中",
+        "font": "Meiryo",
+        "size": 25,
+        "interval": [
+          28.6,
+          31
+        ],
+        "bounds": [
+          323.14453125,
+          152.51220703125,
+          676.85546875,
+          177.48779296875
+        ],
+        "landingTime": 28.6,
+        "dwell": 2.3999999999999986,
+        "entry": null
+      },
+      {
+        "name": "Title one 10",
+        "text": "跳ぶたびに、",
+        "font": "Meiryo",
+        "size": 72,
+        "interval": [
+          28.6,
+          31
+        ],
+        "bounds": [
+          307.958984375,
+          206.724609375,
+          692.041015625,
+          273.275390625
+        ],
+        "landingTime": 28.6,
+        "dwell": 2.3999999999999986,
+        "entry": null
+      },
+      {
+        "name": "Title two 10",
+        "text": "ルートを詰める。",
+        "font": "Meiryo",
+        "size": 80,
+        "interval": [
+          28.6,
+          31
+        ],
+        "bounds": [
+          204.00390625,
+          294.4921875,
+          795.99609375,
+          365.5078125
+        ],
+        "landingTime": 28.833333333333332,
+        "dwell": 2.166666666666668,
+        "entry": {
+          "time": 28.6,
+          "position": [
+            500,
+            367,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 10",
+        "text": "速さは、操作の選び方で変わる。",
+        "font": "Meiryo",
+        "size": 33,
+        "interval": [
+          28.6,
+          31
+        ],
+        "bounds": [
+          262.57080078125,
+          409.958251953125,
+          737.42919921875,
+          440.041748046875
+        ],
+        "landingTime": 28.6,
+        "dwell": 2.3999999999999986,
+        "entry": null
+      },
+      {
+        "name": "Source label 11",
+        "text": "実ゲーム / 探索モード・開発中",
+        "font": "Meiryo",
+        "size": 25,
+        "interval": [
+          31,
+          33.6
+        ],
+        "bounds": [
+          323.14453125,
+          152.51220703125,
+          676.85546875,
+          177.48779296875
+        ],
+        "landingTime": 31,
+        "dwell": 2.6000000000000014,
+        "entry": null
+      },
+      {
+        "name": "Title one 11",
+        "text": "この一手を、",
+        "font": "Meiryo",
+        "size": 72,
+        "interval": [
+          31,
+          33.6
+        ],
+        "bounds": [
+          310.947265625,
+          208.11328125,
+          689.052734375,
+          271.88671875
+        ],
+        "landingTime": 31,
+        "dwell": 2.6000000000000014,
+        "entry": null
+      },
+      {
+        "name": "Title two 11",
+        "text": "もっと短く。",
+        "font": "Meiryo",
+        "size": 80,
+        "interval": [
+          31,
+          33.6
+        ],
+        "bounds": [
+          286.2890625,
+          293.28125,
+          713.7109375,
+          366.71875
+        ],
+        "landingTime": 31.233333333333334,
+        "dwell": 2.366666666666667,
+        "entry": {
+          "time": 31,
+          "position": [
+            500,
+            367,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 11",
+        "text": "運ぶ。はめる。走り直す。",
+        "font": "Meiryo",
+        "size": 33,
+        "interval": [
+          31,
+          33.6
+        ],
+        "bounds": [
+          312.07080078125,
+          409.64404296875,
+          687.92919921875,
+          440.35595703125
+        ],
+        "landingTime": 31,
+        "dwell": 2.6000000000000014,
+        "entry": null
+      },
+      {
+        "name": "Source label 12",
+        "text": "実ゲーム / 探索モード・開発中",
+        "font": "Meiryo",
+        "size": 25,
+        "interval": [
+          33.6,
+          36.6
+        ],
+        "bounds": [
+          323.14453125,
+          152.51220703125,
+          676.85546875,
+          177.48779296875
+        ],
+        "landingTime": 33.6,
+        "dwell": 3,
+        "entry": null
+      },
+      {
+        "name": "Title one 12",
+        "text": "次は、",
+        "font": "Meiryo",
+        "size": 72,
+        "interval": [
+          33.6,
+          36.6
+        ],
+        "bounds": [
+          416.064453125,
+          207.498046875,
+          583.935546875,
+          272.501953125
+        ],
+        "landingTime": 33.6,
+        "dwell": 3,
+        "entry": null
+      },
+      {
+        "name": "Title two 12",
+        "text": "自己ベストへ。",
+        "font": "Meiryo",
+        "size": 80,
+        "interval": [
+          33.6,
+          36.6
+        ],
+        "bounds": [
+          248.28125,
+          293.3203125,
+          751.71875,
+          366.6796875
+        ],
+        "landingTime": 33.833333333333336,
+        "dwell": 2.7666666666666657,
+        "entry": {
+          "time": 33.6,
+          "position": [
+            500,
+            367,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 12",
+        "text": "同じコースで、何度でも。",
+        "font": "Meiryo",
+        "size": 33,
+        "interval": [
+          33.6,
+          36.6
+        ],
+        "bounds": [
+          312.95703125,
+          410.151611328125,
+          687.04296875,
+          439.848388671875
+        ],
+        "landingTime": 33.6,
+        "dwell": 3,
+        "entry": null
+      },
+      {
+        "name": "Current demo statement",
+        "text": "ここから、本制作へ。",
+        "font": "Meiryo",
+        "size": 65,
+        "interval": [
+          36.6,
+          40
+        ],
+        "bounds": [
+          197.69287109375,
+          1360.626220703125,
+          802.30712890625,
+          1419.373779296875
+        ],
+        "landingTime": 36.6,
+        "dwell": 3.3999999999999986,
+        "entry": null
+      },
+      {
+        "name": "Source label 13",
+        "text": "実ゲーム / 全5章デモ",
+        "font": "Meiryo",
+        "size": 27,
+        "interval": [
+          36.6,
+          40
+        ],
+        "bounds": [
+          367.129150390625,
+          187.97265625,
+          632.870849609375,
+          216.02734375
+        ],
+        "landingTime": 36.6,
+        "dwell": 3.3999999999999986,
+        "entry": null
+      },
+      {
+        "name": "Title one 13",
+        "text": "全5章のデモが、",
+        "font": "Meiryo",
+        "size": 78,
+        "interval": [
+          36.6,
+          40
+        ],
+        "bounds": [
+          226.0478515625,
+          263.30419921875,
+          773.9521484375,
+          336.69580078125
+        ],
+        "landingTime": 36.6,
+        "dwell": 3.3999999999999986,
+        "entry": null
+      },
+      {
+        "name": "Title two 13",
+        "text": "できました。",
+        "font": "Meiryo",
+        "size": 85,
+        "interval": [
+          36.6,
+          40
+        ],
+        "bounds": [
+          271.6455078125,
+          365.27294921875,
+          728.3544921875,
+          440.72705078125
+        ],
+        "landingTime": 36.833333333333336,
+        "dwell": 3.1666666666666643,
+        "entry": {
+          "time": 36.6,
+          "position": [
+            500,
+            440,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 13",
+        "text": "ここから、本制作へ。",
+        "font": "Meiryo",
+        "size": 35,
+        "interval": [
+          36.6,
+          40
+        ],
+        "bounds": [
+          337.21923828125,
+          476.183349609375,
+          662.78076171875,
+          507.816650390625
+        ],
+        "landingTime": 36.6,
+        "dwell": 3.3999999999999986,
+        "entry": null
+      },
+      {
+        "name": "Code label",
+        "text": "ゲームの実装ファイルから",
+        "font": "Meiryo",
+        "size": 32,
+        "interval": [
+          40,
+          44
+        ],
+        "bounds": [
+          309.375,
+          660.390625,
+          690.625,
+          689.609375
+        ],
+        "landingTime": 40,
+        "dwell": 4,
+        "entry": null
+      },
+      {
+        "name": "Real code excerpt",
+        "text": "func carried() -> int:\n    for i in cores.size():\n        if cores[i].place==\"carried\": return i\n    return -1\n",
+        "font": "Consolas",
+        "size": 33,
+        "interval": [
+          40,
+          44
+        ],
+        "bounds": [
+          104.543212890625,
+          858.4586410522461,
+          935.456787109375,
+          1001.5413589477539
+        ],
+        "landingTime": 40,
+        "dwell": 4,
+        "entry": null
+      },
+      {
+        "name": "Code source note",
+        "text": "journey_cores.gd / 123–127行（抜粋）",
+        "font": "Meiryo",
+        "size": 27,
+        "interval": [
+          40,
+          44
+        ],
+        "bounds": [
+          234.264892578125,
+          1265.814453125,
+          765.735107421875,
+          1294.185546875
+        ],
+        "landingTime": 40,
+        "dwell": 4,
+        "entry": null
+      },
+      {
+        "name": "Making note",
+        "text": "触って、見て、また作る。",
+        "font": "Meiryo",
+        "size": 53,
+        "interval": [
+          40,
+          44
+        ],
+        "bounds": [
+          198.031982421875,
+          1411.049072265625,
+          801.968017578125,
+          1458.950927734375
+        ],
+        "landingTime": 40,
+        "dwell": 4,
+        "entry": null
+      },
+      {
+        "name": "Source label 14",
+        "text": "実コード / GDScript",
+        "font": "Meiryo",
+        "size": 27,
+        "interval": [
+          40,
+          44
+        ],
+        "bounds": [
+          366.72705078125,
+          187.952880859375,
+          633.27294921875,
+          216.047119140625
+        ],
+        "landingTime": 40,
+        "dwell": 4,
+        "entry": null
+      },
+      {
+        "name": "Title one 14",
+        "text": "まだ、",
+        "font": "Meiryo",
+        "size": 78,
+        "interval": [
+          40,
+          44
+        ],
+        "bounds": [
+          411.412109375,
+          263.89453125,
+          588.587890625,
+          336.10546875
+        ],
+        "landingTime": 40,
+        "dwell": 4,
+        "entry": null
+      },
+      {
+        "name": "Title two 14",
+        "text": "制作の途中です。",
+        "font": "Meiryo",
+        "size": 85,
+        "interval": [
+          40,
+          44
+        ],
+        "bounds": [
+          186.064453125,
+          364.795654296875,
+          813.935546875,
+          441.204345703125
+        ],
+        "landingTime": 40.233333333333334,
+        "dwell": 3.7666666666666657,
+        "entry": {
+          "time": 40,
+          "position": [
+            500,
+            440,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 14",
+        "text": "遊びの内側も、積み上げる。",
+        "font": "Meiryo",
+        "size": 35,
+        "interval": [
+          40,
+          44
+        ],
+        "bounds": [
+          283.138427734375,
+          475.858642578125,
+          716.861572265625,
+          508.141357421875
+        ],
+        "landingTime": 40,
+        "dwell": 4,
+        "entry": null
+      },
+      {
+        "name": "Concept provenance 15",
+        "text": "実ゲームは2D / このカットは開発イメージ",
+        "font": "Meiryo",
+        "size": 29,
+        "interval": [
+          44,
+          48
+        ],
+        "bounds": [
+          214.736572265625,
+          1495.51416015625,
+          785.263427734375,
+          1524.48583984375
+        ],
+        "landingTime": 44,
+        "dwell": 4,
+        "entry": null
+      },
+      {
+        "name": "Source label 15",
+        "text": "開発イメージ（3D演出）",
+        "font": "Meiryo",
+        "size": 27,
+        "interval": [
+          44,
+          48
+        ],
+        "bounds": [
+          354.525634765625,
+          189.732666015625,
+          645.474365234375,
+          214.267333984375
+        ],
+        "landingTime": 44,
+        "dwell": 4,
+        "entry": null
+      },
+      {
+        "name": "Title one 15",
+        "text": "この世界を、",
+        "font": "Meiryo",
+        "size": 78,
+        "interval": [
+          44,
+          48
+        ],
+        "bounds": [
+          295.19287109375,
+          265.5322265625,
+          704.80712890625,
+          334.4677734375
+        ],
+        "landingTime": 44,
+        "dwell": 4,
+        "entry": null
+      },
+      {
+        "name": "Title two 15",
+        "text": "もっと先まで。",
+        "font": "Meiryo",
+        "size": 85,
+        "interval": [
+          44,
+          48
+        ],
+        "bounds": [
+          230.43212890625,
+          365.5634765625,
+          769.56787109375,
+          440.4365234375
+        ],
+        "landingTime": 44.233333333333334,
+        "dwell": 3.7666666666666657,
+        "entry": {
+          "time": 44,
+          "position": [
+            500,
+            440,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 15",
+        "text": "その制作を、続けていきたい。",
+        "font": "Meiryo",
+        "size": 35,
+        "interval": [
+          44,
+          48
+        ],
+        "bounds": [
+          266.339111328125,
+          475.961181640625,
+          733.660888671875,
+          508.038818359375
+        ],
+        "landingTime": 44,
+        "dwell": 4,
+        "entry": null
+      },
+      {
+        "name": "CAMPFIRE state",
+        "text": "公開に向けて準備中",
+        "font": "Meiryo",
+        "size": 50,
+        "interval": [
+          48,
+          53
+        ],
+        "bounds": [
+          277.34375,
+          1377.03857421875,
+          722.65625,
+          1422.96142578125
+        ],
+        "landingTime": 48,
+        "dwell": 5,
+        "entry": null
+      },
+      {
+        "name": "Source label 16",
+        "text": "CAMPFIRE 公開準備中",
+        "font": "Meiryo",
+        "size": 27,
+        "interval": [
+          48,
+          53
+        ],
+        "bounds": [
+          354.855224609375,
+          189.759033203125,
+          645.144775390625,
+          214.240966796875
+        ],
+        "landingTime": 48,
+        "dwell": 5,
+        "entry": null
+      },
+      {
+        "name": "Title one 16",
+        "text": "制作の応援を、",
+        "font": "Meiryo",
+        "size": 78,
+        "interval": [
+          48,
+          53
+        ],
+        "bounds": [
+          252.87939453125,
+          264.94189453125,
+          747.12060546875,
+          335.05810546875
+        ],
+        "landingTime": 48,
+        "dwell": 5,
+        "entry": null
+      },
+      {
+        "name": "Title two 16",
+        "text": "CAMPFIREで。",
+        "font": "Meiryo",
+        "size": 85,
+        "interval": [
+          48,
+          53
+        ],
+        "bounds": [
+          206.44287109375,
+          369.00830078125,
+          793.55712890625,
+          436.99169921875
+        ],
+        "landingTime": 48.233333333333334,
+        "dwell": 4.766666666666666,
+        "entry": {
+          "time": 48,
+          "position": [
+            500,
+            440,
+            0
+          ]
+        }
+      },
+      {
+        "name": "Body caption 16",
+        "text": "支援募集の公開に向けて準備中。",
+        "font": "Meiryo",
+        "size": 35,
+        "interval": [
+          48,
+          53
+        ],
+        "bounds": [
+          248.668212890625,
+          475.927001953125,
+          751.331787109375,
+          508.072998046875
+        ],
+        "landingTime": 48,
+        "dwell": 5,
+        "entry": null
+      },
+      {
+        "name": "Final author",
+        "text": "ProjectP / ぷい",
+        "font": "Meiryo",
+        "size": 35,
+        "interval": [
+          53,
+          60
+        ],
+        "bounds": [
+          367.314453125,
+          311.414794921875,
+          632.685546875,
+          348.585205078125
+        ],
+        "landingTime": 53,
+        "dwell": 7,
+        "entry": null
+      },
+      {
+        "name": "Final title",
+        "text": "EMBERWAKE",
+        "font": "Meiryo",
+        "size": 105,
+        "interval": [
+          53,
+          60
+        ],
+        "bounds": [
+          147.547607421875,
+          391.368408203125,
+          852.452392578125,
+          468.631591796875
+        ],
+        "landingTime": 53,
+        "dwell": 7,
+        "entry": null
+      },
+      {
+        "name": "Final subtitle",
+        "text": "灰の灯",
+        "font": "Meiryo",
+        "size": 52,
+        "interval": [
+          53,
+          60
+        ],
+        "bounds": [
+          422.6982421875,
+          517.072265625,
+          577.3017578125,
+          562.927734375
+        ],
+        "landingTime": 53,
+        "dwell": 7,
+        "entry": null
+      },
+      {
+        "name": "Final support one",
+        "text": "この制作を、",
+        "font": "Meiryo",
+        "size": 60,
+        "interval": [
+          53.1,
+          60
+        ],
+        "bounds": [
+          342.4560546875,
+          1108.0322265625,
+          657.5439453125,
+          1161.9677734375
+        ],
+        "landingTime": 53.1,
+        "dwell": 6.899999999999999,
+        "entry": null
+      },
+      {
+        "name": "Final support two",
+        "text": "応援してください。",
+        "font": "Meiryo",
+        "size": 70,
+        "interval": [
+          53.1,
+          60
+        ],
+        "bounds": [
+          206.10595703125,
+          1181.96533203125,
+          793.89404296875,
+          1248.03466796875
+        ],
+        "landingTime": 53.1,
+        "dwell": 6.899999999999999,
+        "entry": null
+      },
+      {
+        "name": "Final campaign status",
+        "text": "CAMPFIRE / 公開に向けて準備中",
+        "font": "Meiryo",
+        "size": 32,
+        "interval": [
+          53.166666666666664,
+          60
+        ],
+        "bounds": [
+          249.15625,
+          1308.890625,
+          750.84375,
+          1341.109375
+        ],
+        "landingTime": 53.166666666666664,
+        "dwell": 6.833333333333336,
+        "entry": null
+      },
+      {
+        "name": "Final action",
+        "text": "フォローで、公開のお知らせを。",
+        "font": "Meiryo",
+        "size": 39,
+        "interval": [
+          53.233333333333334,
+          60
+        ],
+        "bounds": [
+          221.582275390625,
+          1407.394775390625,
+          778.417724609375,
+          1442.605224609375
+        ],
+        "landingTime": 53.233333333333334,
+        "dwell": 6.766666666666666,
+        "entry": null
+      },
+      {
+        "name": "Author bug",
+        "text": "ぷい / 制作の記録",
+        "font": "Meiryo",
+        "size": 24,
+        "interval": [
+          0,
+          53
+        ],
+        "bounds": [
+          106.087890625,
+          105.876953125,
+          303.912109375,
+          130.123046875
+        ],
+        "landingTime": 0,
+        "dwell": 53,
+        "entry": null
+      }
+    ]
+  },
+  "cgDisclosure": [
+    {
+      "scene": 2,
+      "upper": "開発イメージ（3D演出）",
+      "lower": "実ゲームは2D / このカットは開発イメージ"
+    },
+    {
+      "scene": 3,
+      "upper": "開発イメージ（3D演出）",
+      "lower": "実ゲームは2D / このカットは開発イメージ"
+    },
+    {
+      "scene": 15,
+      "upper": "開発イメージ（3D演出）",
+      "lower": "実ゲームは2D / このカットは開発イメージ"
+    }
+  ],
+  "rtaClaims": {
+    "status": "PASS_PROVIDED_SOURCE_SCOPE_CONSISTENCY",
+    "evidence": "qa/rta-source.json",
+    "evidenceSha256": "0cadf903776b5268c1f1ae207212a7e359de4b17674bb09340e6bf08e6e7bf7c",
+    "captureCommit": "6233f5d33b24a35e91800357b7bcf8861049cf2a",
+    "captureMode": "EXPLORE",
+    "actualRtaRunMeasured": false,
+    "fabricatedRecordNumbersFound": false,
+    "onlineLeaderboardClaim": false,
+    "localPb": "The documented feature is chapter-by-chapter TA with local personal best, not an online ranking.",
+    "menuSource": "Original source image still shows EXPLORE selected. Actual TIME ATTACK button is visible and zoomed; this is not evidence of a captured TA run.",
+    "independentDataCrossCheck": "Separate read-only agent also checked rta-source/edit/layout scope consistency; no game execution, new recording or implementation refetch claimed."
+  },
+  "sourceMaterialImagesViewed": [
+    {
+      "file": "media/chapter-I/frame-000160.png",
+      "sha256": "7a015248ca92cf2ab51a644bdf85d018c2920cd1ec85ba732808d0c18cc70171",
+      "scope": "Source only, not final video evidence"
+    },
+    {
+      "file": "media/chapter-I/frame-000199.png",
+      "sha256": "16870876cee965ddee61c3e95b464ffc5ac6e85e21e271f87c63440fb1838bf5",
+      "scope": "Source only, not final video evidence"
+    },
+    {
+      "file": "media/chapter-I/frame-000360.png",
+      "sha256": "8715ec26ba6ccdf190adfeba3944b1d215b302bb04903f6407f82c3db795b27a",
+      "scope": "Source only, not final video evidence"
+    },
+    {
+      "file": "media/time-attack-menu.png",
+      "sha256": "fbecea4c2dffa5ebbbd0dd935767c5d31d87a53675e6336f127f60f5d72f4e00",
+      "scope": "Source only, not final video evidence"
+    }
+  ],
+  "failures": [],
+  "requiredFixes": [],
+  "pendingFinalPixelChecks": [
+    "Five non-game entry rectangles contact as listed; verify transient vs persistent glyph collision.",
+    "Final visible actor silhouette/head/feet, pan purpose, landing targets and unchanged EXPLORE/TA menu readability.",
+    "Final text/CG labels, missing frames and clean end card."
+  ],
+  "limitations": {
+    "finalMp4VisualReview": "NOT_PERFORMED_IN_THIS_NATIVE_REPORT",
+    "fullRealTimePlayback": "NOT_PERFORMED",
+    "wholeAuditoryReview": "NOT_PERFORMED",
+    "actualOrganicDeviceUi": "NOT_TESTED",
+    "viralPerformance": "NOT_PREDICTED_OR_GUARANTEED",
+    "sourceProjectOrGitModified": false
+  }
+}

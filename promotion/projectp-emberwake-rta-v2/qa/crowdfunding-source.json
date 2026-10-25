@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "project": {
+    "name": "EMBERWAKE / 灰の灯",
+    "repository": "Pui-core/EMBERWAKE",
+    "campfireProjectId": 993744,
+    "identityEvidence": "Issue #45はGodot製2DピクセルアクションのEMBERWAKE案件を指定している。ObjectCreatorの案件・支援先とは区別する。"
+  },
+  "publicationStatus": "prelaunch_draft_not_publicly_supportable",
+  "publicSupportUrl": null,
+  "knownPublicProjectUrl": "https://camp-fire.jp/projects/993744/view",
+  "publicUrlCheck": {
+    "method": "Unauthenticated HTTP GET to the ordinary official public URL; no cookies or private preview URL used",
+    "httpStatus": 404,
+    "finalUrl": "https://camp-fire.jp/projects/993744/view",
+    "pageTitle": "クラウドファンディング - CAMPFIRE (キャンプファイヤー)",
+    "visibleMessage": "お探しのページは 見つかりませんでした",
+    "checkedAtUtc": "2026-10-25T03:36:14Z",
+    "checkedAtJst": "2026-10-25T12:36:14+09:00",
+    "timePrecision": "HTTP応答を取得した直後の時計確認時刻。リクエスト開始・完了の個別時刻は記録していない。",
+    "interpretation": "現在この通常URLは一般向け支援ページとして開けない。404単独では未公開と終了済みを区別できないため、以下の同日下書き保存記録と合わせて公開前と判定した。",
+    "recheckedDuringFileCreation": false
+  },
+  "sourceCommit": "1e3c5d6d2241d91a1e8f2127bca325c9b9812517",
+  "sourceCommitBasis": "Issue #45の最新完了コメントがPR #48のmerge commitとして報告した値。CAMPFIRE資料の納品に対応する報告値であり、現在のmain HEADを再取得した値ではない。",
+  "repositoryEvidence": {
+    "repository": "Pui-core/EMBERWAKE",
+    "refRead": "main",
+    "path": "docs/promotion/campfire/README.md",
+    "url": "https://github.com/Pui-core/EMBERWAKE/blob/main/docs/promotion/campfire/README.md",
+    "fetchedBlobSha": "3afccf5c87b348281e547d120e2700395b6449d1",
+    "claimsObserved": [
+      "プロジェクト993744のメイン画像とリターンを下書き保存した。",
+      "プレビューは「プロジェクトはまだ公開されていません」の状態。",
+      "審査申請、一般公開、限定公開URL発行、支払い、支援者への送信は行っていない。",
+      "募集条件はowner確定待ちで、提供年月・配布URL等にも未確定事項が残る。"
+    ]
+  },
+  "issueEvidence": {
+    "issueUrl": "https://github.com/Pui-core/EMBERWAKE/issues/45",
+    "completionCommentUrl": "https://github.com/Pui-core/EMBERWAKE/issues/45#issuecomment-6392942715",
+    "reportedPullRequestUrl": "https://github.com/Pui-core/EMBERWAKE/pull/48",
+    "claimsObserved": [
+      "EMBERWAKE / 灰の灯のCAMPFIREページを審査申請可能な下書きまで仕上げるタスク。",
+      "追加依頼の完了コメントでもプロジェクト993744への下書き保存と未公開表示を報告している。",
+      "審査申請・一般公開・限定公開URL発行・外部告知・課金/支払いを行っていないと明記している。"
+    ],
+    "endedCampaignEvidenceFound": false
+  },
+  "copyPrelaunch": "CAMPFIREで公開準備中。続報はプロフィールへ。",
+  "copyPrelaunchStatus": "本調査で主担当へ提示した公開前CTA。最終映像での採用・文言一致は制作側で照合する。",
+  "claimLimits": {
+    "currentlyAcceptingSupport": false,
+    "targetAmountClaim": null,
+    "deadlineClaim": null,
+    "returnClaims": [],
+    "fundAllocationClaims": [],
+    "instructions": [
+      "現在は「募集中」「今すぐ支援」「支援受付中」と表現しない。",
+      "保存済み設定や提案値を、確定した金額・期限・リターン・提供日として告知しない。",
+      "公開後に一般向けページの表示・支援可能状態と確定条件を再確認するまで、publicSupportUrlはnullのままにする。"
+    ]
+  },
+  "privacyAndScope": {
+    "privatePreviewUrlIncluded": false,
+    "privatePreviewUrlSentToExternalTools": false,
+    "personalOrPaymentInformationIncluded": false,
+    "newLoginPublicationEditingOrMessagingPerformed": false,
+    "recordBasis": "直前の読み取り調査結果のみ。ファイル保存時の再ブラウズは行っていない。"
+  }
+}

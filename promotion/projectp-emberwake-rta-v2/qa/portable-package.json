@@ -1,0 +1,3355 @@
+{
+  "version": "EMBERWAKE-RTA-V2",
+  "destination": "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25",
+  "sourceBinding": {
+    "videoSha256": "9504430b7677be349efd78e9f7c6177082896cfac9f373266e64243eb7da0c8b",
+    "effectcraftSha256": "a61b7d0e59a1c725695f9e0f71e286e696cfd4c5f4d6295e29479d29cbfddbb2",
+    "filmcraftSha256": "846d08aaaf16a22862bc1455ec1622c4bf651660052aa760e52479e2756193fb",
+    "audioSha256": "dac11d93a85dd84dc51025ba77dd92b255f4bf6609e305e16b3afbd6fc50f042",
+    "masterSha256": "0d0df251a53e98ecae7826b5c30808a3447128e881221dbbaa8da03a16ec76c7",
+    "nativeSnapshot": "rendered"
+  },
+  "copiesBeforeRelink": [
+    {
+      "file": ".gitignore",
+      "sha256": "086e831016311ae5b80e4473a336cee590d0018c2b34f83abb81bad036319bbc",
+      "bytes": 61
+    },
+    {
+      "file": "README.md",
+      "sha256": "235e57f130bf7e79e04e880d09c5a9f8edc64275c6e02b646030964e3f7f2daa",
+      "bytes": 6992
+    },
+    {
+      "file": "index.html",
+      "sha256": "f36cdeaccee3cdf8ae7be5bc9a19941030aff7c580f3895e3fb4473118f9e2ae",
+      "bytes": 9782
+    },
+    {
+      "file": "media/01-emberwake-rta-v2-master.mov",
+      "sha256": "0d0df251a53e98ecae7826b5c30808a3447128e881221dbbaa8da03a16ec76c7",
+      "bytes": 1300189877
+    },
+    {
+      "file": "media/campfire-main.png",
+      "sha256": "0c21712c17cc7920597b7ef67fc810f7b41147b4e644d5ad9c76a90bcb2b7a29",
+      "bytes": 89845
+    },
+    {
+      "file": "media/chapter-I/frame-000000.png",
+      "sha256": "6d223d3b43f57cef97459c921abbab144d5999f9f1cbd25ee3b287ccd871e1cc",
+      "bytes": 93970
+    },
+    {
+      "file": "media/chapter-I/frame-000001.png",
+      "sha256": "1b78b9640eaf51c2c83c15637056f5a67688fe5c898214e20883ef08d57c0342",
+      "bytes": 93917
+    },
+    {
+      "file": "media/chapter-I/frame-000002.png",
+      "sha256": "39e13bd1b0d0c5ee6bf4990f0f37284c72c0db267edacb8bdea37db9aca2e956",
+      "bytes": 93913
+    },
+    {
+      "file": "media/chapter-I/frame-000003.png",
+      "sha256": "aea31049373a3780b25f498b000146bf5b4c862873708a10c135763750139a70",
+      "bytes": 93921
+    },
+    {
+      "file": "media/chapter-I/frame-000004.png",
+      "sha256": "e979d91a62856d8010e163e8f94ca7e5f89f4935852db75e4293b1c719073e3f",
+      "bytes": 93893
+    },
+    {
+      "file": "media/chapter-I/frame-000005.png",
+      "sha256": "937ffaaa7fed1fc7ab67e89155b3430c6c340b29343a055fcb9e3e4503e3d909",
+      "bytes": 93892
+    },
+    {
+      "file": "media/chapter-I/frame-000006.png",
+      "sha256": "8253afc0d4c8474e8679f220e5fb331451a8be065345f5e2c1d6c6db3585f26e",
+      "bytes": 93888
+    },
+    {
+      "file": "media/chapter-I/frame-000007.png",
+      "sha256": "95c7d216e2bb38bc421327b57ad775fd25c222ece52e7cd43526a9651afe936a",
+      "bytes": 93900
+    },
+    {
+      "file": "media/chapter-I/frame-000008.png",
+      "sha256": "4166cb3f8fd65e69e2ae79584b83748450bcf523fdcbe4913436adc1327279c3",
+      "bytes": 93942
+    },
+    {
+      "file": "media/chapter-I/frame-000009.png",
+      "sha256": "f109e8e01d7328462527975e5a60b1f61c0d78a1f59fccb70fa4eba0caf52a43",
+      "bytes": 93901
+    },
+    {
+      "file": "media/chapter-I/frame-000010.png",
+      "sha256": "e6eb3d3845aa5e9067ab53c4bdb60b1601ea6938bd830d8c2f167366303ba6fe",
+      "bytes": 93915
+    },
+    {
+      "file": "media/chapter-I/frame-000011.png",
+      "sha256": "15fdffd883b2a79cc7cf9f8b3e406e0d6b7fc44af97bd848ce7886780c775ae8",
+      "bytes": 93923
+    },
+    {
+      "file": "media/chapter-I/frame-000012.png",
+      "sha256": "696bfccf582b071158c00845f13f82d8983ec613b64689a0752980080f634e07",
+      "bytes": 93943
+    },
+    {
+      "file": "media/chapter-I/frame-000013.png",
+      "sha256": "387af1c4ca1a4244310ff7bdb950386b9e8e85dc2616b6f8d13d8a4537b8a7a0",
+      "bytes": 93922
+    },
+    {
+      "file": "media/chapter-I/frame-000014.png",
+      "sha256": "b6630ade67670c318fd5f4d252b0169d1bf8cce1e1bce3d3ebd0038ac95c6a03",
+      "bytes": 93892
+    },
+    {
+      "file": "media/chapter-I/frame-000015.png",
+      "sha256": "fbecea4c2dffa5ebbbd0dd935767c5d31d87a53675e6336f127f60f5d72f4e00",
+      "bytes": 93902
+    },
+    {
+      "file": "media/chapter-I/frame-000016.png",
+      "sha256": "b6dae6a0e259f3846335a808bd96e2fc99d5ecbea2cc70dfdaab13705f6d14c4",
+      "bytes": 93921
+    },
+    {
+      "file": "media/chapter-I/frame-000017.png",
+      "sha256": "28eb411c5bb49976f9f6979009b3c85b0838d94583649a9954aff9317ccea6da",
+      "bytes": 93856
+    },
+    {
+      "file": "media/chapter-I/frame-000018.png",
+      "sha256": "c81fdd72b180c39ed56d0496df4ba41cd76e1ce86d07563b4372e73c730f0ecb",
+      "bytes": 93922
+    },
+    {
+      "file": "media/chapter-I/frame-000019.png",
+      "sha256": "2e8e4fbcdd81fc9a8649314454a742516e33f6c801db3987e8f761619fc3c503",
+      "bytes": 93911
+    },
+    {
+      "file": "media/chapter-I/frame-000020.png",
+      "sha256": "d945c2bf2449f6a8880d7e43971be5c0e40c6f08101c8f46ca5dc70056d3d56f",
+      "bytes": 93900
+    },
+    {
+      "file": "media/chapter-I/frame-000021.png",
+      "sha256": "4252a429766d7cec568572ebc98831a5b146596ca7c236a8bdd65e032133c71c",
+      "bytes": 93939
+    },
+    {
+      "file": "media/chapter-I/frame-000022.png",
+      "sha256": "c060f600c4b237f9e9dec5cfe2cc2f0ed60af7c24abdf299dcfea0e77614f70b",
+      "bytes": 93903
+    },
+    {
+      "file": "media/chapter-I/frame-000023.png",
+      "sha256": "aff91abd1d715aa389f1107d8e53796894c16f6d21aa3231857bda6b15b276c0",
+      "bytes": 93948
+    },
+    {
+      "file": "media/chapter-I/frame-000024.png",
+      "sha256": "3ae44358a5b2307c4e5bb27ca8e8a5c94946faf9d320f11587a337b969b351ec",
+      "bytes": 93934
+    },
+    {
+      "file": "media/chapter-I/frame-000025.png",
+      "sha256": "188e866dedded3a1bd16677eaec987a9a30828ea49e04e3c99caccbb38b066a6",
+      "bytes": 93925
+    },
+    {
+      "file": "media/chapter-I/frame-000026.png",
+      "sha256": "dc667dd0e39933d0e42b58646abc1da9f481811eac681c445886b5b55fc7b77d",
+      "bytes": 93932
+    },
+    {
+      "file": "media/chapter-I/frame-000027.png",
+      "sha256": "7e04363eba3818d04da0b4386bdc9c817d9b75286d5205828883f1b6f789f8fd",
+      "bytes": 93935
+    },
+    {
+      "file": "media/chapter-I/frame-000028.png",
+      "sha256": "4ac6b26bebe5a1074cb47bcb20c343a819eaf89e2a137bed477dc6eed8ce92fe",
+      "bytes": 93956
+    },
+    {
+      "file": "media/chapter-I/frame-000029.png",
+      "sha256": "491a846e9b7ec7a2c146898c47a1fe5b2df3dec20e90d8ec4a045c5b4941fd8f",
+      "bytes": 93916
+    },
+    {
+      "file": "media/chapter-I/frame-000030.png",
+      "sha256": "1322bc3171de8173e119fe2d5ab00417dd5228b8671334027f64027bb371bd76",
+      "bytes": 93982
+    },
+    {
+      "file": "media/chapter-I/frame-000031.png",
+      "sha256": "7131274bbe917f2f35c7e5619cf8f67d5de7d81b0f4dbb239d10d47fa4a4e950",
+      "bytes": 94073
+    },
+    {
+      "file": "media/chapter-I/frame-000032.png",
+      "sha256": "1ff2448cd979c51a86785caf7b4c2b466d1dd2240e6f56dd71deb018a83bde3f",
+      "bytes": 94121
+    },
+    {
+      "file": "media/chapter-I/frame-000033.png",
+      "sha256": "c705dc08dd2e58264e0353104b0ef5a2b200237b3dbd8a574298942d9ee0d969",
+      "bytes": 93976
+    },
+    {
+      "file": "media/chapter-I/frame-000034.png",
+      "sha256": "691af5dd05b9aa605ccc0b04de655c054fd34c967d94b2c9d01ff10b6fe27f3c",
+      "bytes": 93963
+    },
+    {
+      "file": "media/chapter-I/frame-000035.png",
+      "sha256": "5fa6b1205bd8f583770308aa16958f4d3eeaf831fdfa935cd45c18d838cce489",
+      "bytes": 93978
+    },
+    {
+      "file": "media/chapter-I/frame-000036.png",
+      "sha256": "7dc6022c58cea41a4cccc64e0e8d58c9f992e300a6415877c0c1a652073e9e95",
+      "bytes": 93969
+    },
+    {
+      "file": "media/chapter-I/frame-000037.png",
+      "sha256": "a604b60c6a527ee729af73a1a6f6b058f94bddfc6e5767b3451bdd98565d7efa",
+      "bytes": 93953
+    },
+    {
+      "file": "media/chapter-I/frame-000038.png",
+      "sha256": "9688c6ef0010195289546e33f56264466138c6a667368b225a74b0e67c836524",
+      "bytes": 93962
+    },
+    {
+      "file": "media/chapter-I/frame-000039.png",
+      "sha256": "81c3711f2ae5c134eaf99f15aa1a3208d8f11e5630101608447f407673674089",
+      "bytes": 93943
+    },
+    {
+      "file": "media/chapter-I/frame-000040.png",
+      "sha256": "5aca3830712468fe422d4e3f0fa6a5127203875e328c2b8c0bd09c101327f0ee",
+      "bytes": 93966
+    },
+    {
+      "file": "media/chapter-I/frame-000041.png",
+      "sha256": "673c8540997f5a672222509563ff2de563e8103b6b435b9ef94d9562bc0798aa",
+      "bytes": 94228
+    },
+    {
+      "file": "media/chapter-I/frame-000042.png",
+      "sha256": "3dc7f62352bb1ce6675b42a5166a2b1ede9436ba4c41282db94af87f1a680ef9",
+      "bytes": 94234
+    },
+    {
+      "file": "media/chapter-I/frame-000043.png",
+      "sha256": "986fc9d49e1e3830b19c1b496dc6391f3b3da5a6d186650f144e3cc921b83dc9",
+      "bytes": 64217
+    },
+    {
+      "file": "media/chapter-I/frame-000044.png",
+      "sha256": "dbfc151b9146e051bd901823a14bafa9b4163f79360de33ce9353b8a0a367518",
+      "bytes": 64469
+    },
+    {
+      "file": "media/chapter-I/frame-000045.png",
+      "sha256": "8bcf1d7f6fb40ee3f3be4d2ae133d9445b34ebbf36ac8a2e401b7377918138aa",
+      "bytes": 64673
+    },
+    {
+      "file": "media/chapter-I/frame-000046.png",
+      "sha256": "e0e6b800cedb222e7fe05350421d7b0f6cc95a297848e1eb5f059a57c33a0265",
+      "bytes": 64613
+    },
+    {
+      "file": "media/chapter-I/frame-000047.png",
+      "sha256": "69137474ae7b26bd2dc61cafb982eece16f9e510bfc8d37f1af84aaf5e164aaa",
+      "bytes": 64580
+    },
+    {
+      "file": "media/chapter-I/frame-000048.png",
+      "sha256": "04d5aba010365286f5d4fed51f94a7eb89ecf0ddbc931a3e1096bf16ebd85731",
+      "bytes": 64633
+    },
+    {
+      "file": "media/chapter-I/frame-000049.png",
+      "sha256": "a51ec07991242f6e96c73a6267bee159ca03e41dc7e7bc8964275b5ceb759727",
+      "bytes": 64581
+    },
+    {
+      "file": "media/chapter-I/frame-000050.png",
+      "sha256": "4f8d243de21c9b75c86f1bc086d09ce08ac0df49014e205b29cd04e15fa29a7f",
+      "bytes": 64553
+    },
+    {
+      "file": "media/chapter-I/frame-000051.png",
+      "sha256": "608f73ad33a9f7e9002e8a67a426d08912cd71983349a26dfdee1706fe14b952",
+      "bytes": 64590
+    },
+    {
+      "file": "media/chapter-I/frame-000052.png",
+      "sha256": "0e94635465dbed8620296ab45439079f60c0e91b4046d68acf104182ad903b4e",
+      "bytes": 64556
+    },
+    {
+      "file": "media/chapter-I/frame-000053.png",
+      "sha256": "5999ae99b8b0321a3e43d4d8cd03dbe166de612139e1bc353d396aa0c8c48c21",
+      "bytes": 64534
+    },
+    {
+      "file": "media/chapter-I/frame-000054.png",
+      "sha256": "e989168c7a1fe01ee51abc103ef7788042453d556a8d81833291a4b8d4fde671",
+      "bytes": 64536
+    },
+    {
+      "file": "media/chapter-I/frame-000055.png",
+      "sha256": "970beae5a2350ce84dfad2bd81dd523d1b5640d1408646a5ef0b9c2c47d41f17",
+      "bytes": 64559
+    },
+    {
+      "file": "media/chapter-I/frame-000056.png",
+      "sha256": "639cd375adf74fa3349fe51825a9fb964a1b37455e3bab640625a59547c64cef",
+      "bytes": 64555
+    },
+    {
+      "file": "media/chapter-I/frame-000057.png",
+      "sha256": "324026abe971cecded042dc9d3d249af070c5395bf58b77111619c11a8756163",
+      "bytes": 64638
+    },
+    {
+      "file": "media/chapter-I/frame-000058.png",
+      "sha256": "2a29e5b62018ff05ea14bda35c21ae8dca605b9c1903673ee593c555bb21b7cd",
+      "bytes": 64672
+    },
+    {
+      "file": "media/chapter-I/frame-000059.png",
+      "sha256": "ef02c1d89aeebe6522a0af3aa8c9a1275836dccfd14ddd22d4ddfab103f2c230",
+      "bytes": 64631
+    },
+    {
+      "file": "media/chapter-I/frame-000060.png",
+      "sha256": "49eaec0fd24c47f5d9726810c84b533926dbcb0bb997183404d92e309f3c3b74",
+      "bytes": 64631
+    },
+    {
+      "file": "media/chapter-I/frame-000061.png",
+      "sha256": "f98293c12d6044247a644db4aff2ca414c5eb9bf6adf2786cb3e3cfc7a623d24",
+      "bytes": 64586
+    },
+    {
+      "file": "media/chapter-I/frame-000062.png",
+      "sha256": "7f01b9fdc8cfea7e346202b97e54abe5ade3119cef99c5123f02d5161b36f126",
+      "bytes": 64628
+    },
+    {
+      "file": "media/chapter-I/frame-000063.png",
+      "sha256": "c1397d19a5e6f6658ced45dce9b0920dcc35d99e8ee1970c6369c8f87834c42e",
+      "bytes": 64632
+    },
+    {
+      "file": "media/chapter-I/frame-000064.png",
+      "sha256": "afe22a693d52321cc8d215342d42f18b6e95a5e2ed97a73fbcb9debfc405f5f7",
+      "bytes": 64618
+    },
+    {
+      "file": "media/chapter-I/frame-000065.png",
+      "sha256": "88920e4b5036643c373aa8b0509cbd0cbcb5c331f4d470ec79a5c852b58884a1",
+      "bytes": 64638
+    },
+    {
+      "file": "media/chapter-I/frame-000066.png",
+      "sha256": "cc768edc6332a7b7677fd2b1c865066cdbeea3b1974762c35ff2fa1c4652cbd2",
+      "bytes": 64693
+    },
+    {
+      "file": "media/chapter-I/frame-000067.png",
+      "sha256": "2be1c01c379647b10f65543b039a1d301e17f28e91e14cd07cef774de1188afe",
+      "bytes": 64657
+    },
+    {
+      "file": "media/chapter-I/frame-000068.png",
+      "sha256": "9b0c8202421f3316d7fc9d27cd6c588cff58f1d636c4fed1747f0d822cc90d76",
+      "bytes": 64580
+    },
+    {
+      "file": "media/chapter-I/frame-000069.png",
+      "sha256": "24d57b395bf26aacac5efd5baff3d3a843ccb606d961bc1e1a57f83a74194e70",
+      "bytes": 64604
+    },
+    {
+      "file": "media/chapter-I/frame-000070.png",
+      "sha256": "0986471a847334d134474922285a726c00e8fade36c8517ea93e66c7101c05af",
+      "bytes": 64557
+    },
+    {
+      "file": "media/chapter-I/frame-000071.png",
+      "sha256": "316638c5d50d06f8794838e9f2716ff161b902f19614a672f0b63023980da6be",
+      "bytes": 64559
+    },
+    {
+      "file": "media/chapter-I/frame-000072.png",
+      "sha256": "f92f52f6c565800e5b8ad6602fea2e90fb48dcfae5ddc7d34262916c6e3f566a",
+      "bytes": 64541
+    },
+    {
+      "file": "media/chapter-I/frame-000073.png",
+      "sha256": "a0050786560e4756630c66dc1f31fc0fd1ae4106d9cbca5894e22e806701d933",
+      "bytes": 64509
+    },
+    {
+      "file": "media/chapter-I/frame-000074.png",
+      "sha256": "f13e0f975b86d889e42d061a1b54f3db3bcf0ae64755f2615c2e2e13dff8daad",
+      "bytes": 64565
+    },
+    {
+      "file": "media/chapter-I/frame-000075.png",
+      "sha256": "109dec9956a950afca8cf8ef2781c626048f3c7cfa2537ba9eedbc096937c249",
+      "bytes": 64585
+    },
+    {
+      "file": "media/chapter-I/frame-000076.png",
+      "sha256": "3f95cf9a60ef8570d4cef19425d30c60003d01f273b8ef9c24db3fb6807d477b",
+      "bytes": 64629
+    },
+    {
+      "file": "media/chapter-I/frame-000077.png",
+      "sha256": "b95f7281a5a0972eacbc17c200111a909664d4532ee8336f31fcbb2dc938c3a5",
+      "bytes": 64626
+    },
+    {
+      "file": "media/chapter-I/frame-000078.png",
+      "sha256": "f77d26a438ce790156e9e36f51d3b4d7bb4a2fedfba06a2ba914c6b42e734818",
+      "bytes": 64592
+    },
+    {
+      "file": "media/chapter-I/frame-000079.png",
+      "sha256": "bc8fa1bfc1b1e89af560ba264dda69dfe3b3906fce2e245d1abfab56ce5637ba",
+      "bytes": 64615
+    },
+    {
+      "file": "media/chapter-I/frame-000080.png",
+      "sha256": "d4a1427af04824ee8fa35937a1d9528eb8fafc0f370a28db2328906782494e95",
+      "bytes": 64662
+    },
+    {
+      "file": "media/chapter-I/frame-000081.png",
+      "sha256": "df8e67a3e364e2802825a5c8c16b7b774af57529c99765a3e8b52f6cb5dd1e6f",
+      "bytes": 64670
+    },
+    {
+      "file": "media/chapter-I/frame-000082.png",
+      "sha256": "33431a84da348cd61a2c29e9aa50ff420e9c2451c23b34cd5133757e293670cb",
+      "bytes": 64561
+    },
+    {
+      "file": "media/chapter-I/frame-000083.png",
+      "sha256": "c81ea0abe2c6542f4cd5df71b7fef3750fc88782debfd2ebe13b9431fab43213",
+      "bytes": 64556
+    },
+    {
+      "file": "media/chapter-I/frame-000084.png",
+      "sha256": "58e7c10235ec19b76db5dcea95e85ef0d8bfd6e1e4f2268325b9f595cf18862b",
+      "bytes": 64592
+    },
+    {
+      "file": "media/chapter-I/frame-000085.png",
+      "sha256": "0a80726637d10588213b1b047f09b4d51424b4442da1709a7668455667494df9",
+      "bytes": 64587
+    },
+    {
+      "file": "media/chapter-I/frame-000086.png",
+      "sha256": "c5d126d456b81bd0528553f09eb8aaf60656aa9e14600d418a0ab9bb5c1f0157",
+      "bytes": 64598
+    },
+    {
+      "file": "media/chapter-I/frame-000087.png",
+      "sha256": "dc5dc9afc269211dbc91864451d821bfcb382a79f51635d740943889ea472d46",
+      "bytes": 64509
+    },
+    {
+      "file": "media/chapter-I/frame-000088.png",
+      "sha256": "99dda428bfc91824328ace074ca605852d22925beeda223bc552b3fe9afbb447",
+      "bytes": 64596
+    },
+    {
+      "file": "media/chapter-I/frame-000089.png",
+      "sha256": "c82bf22a2fad496945d4bdf04e5591792ff7ae5e08507f010ac509ac81f029e9",
+      "bytes": 64570
+    },
+    {
+      "file": "media/chapter-I/frame-000090.png",
+      "sha256": "1796ff4fea3ee51df3726daeb3f4f7d8e014b23cef80bb7977042d015934250c",
+      "bytes": 64591
+    },
+    {
+      "file": "media/chapter-I/frame-000091.png",
+      "sha256": "2c8122f66eee89bb638ddec457b286e283623e57616a01078102759a4ac92d6a",
+      "bytes": 64601
+    },
+    {
+      "file": "media/chapter-I/frame-000092.png",
+      "sha256": "e039ccd77f79b2746f1ddcf2e36a5fe4febe3322e2efd3aaf7de7d8c70ce913f",
+      "bytes": 64621
+    },
+    {
+      "file": "media/chapter-I/frame-000093.png",
+      "sha256": "e24c409e7d20ff4123df7e8b74d775ad763965c04227faaec3c53720406d4737",
+      "bytes": 64612
+    },
+    {
+      "file": "media/chapter-I/frame-000094.png",
+      "sha256": "6b4cb785bfda0da4f7178d3423bc37dd42a813c989e483202a92bb7ca309cdc9",
+      "bytes": 64629
+    },
+    {
+      "file": "media/chapter-I/frame-000095.png",
+      "sha256": "417aa6a0a71e09a8f4f19c8c10f685a7e4d41b8c3131629c92c3348411dfd77a",
+      "bytes": 64631
+    },
+    {
+      "file": "media/chapter-I/frame-000096.png",
+      "sha256": "8d15780732d892012f0e08383c9238d71038e71778ee8e002e4a1ca81ceddf59",
+      "bytes": 64724
+    },
+    {
+      "file": "media/chapter-I/frame-000097.png",
+      "sha256": "2d04a1862be19dc5f6e44b808b23c64ba02603f60d921baa848682e75c06b364",
+      "bytes": 63924
+    },
+    {
+      "file": "media/chapter-I/frame-000098.png",
+      "sha256": "92bea0eb2087e0a66628e2d8e317c172c1850052efcdaa81f2091d4dd67ad731",
+      "bytes": 65051
+    },
+    {
+      "file": "media/chapter-I/frame-000099.png",
+      "sha256": "34e0d278059cad77753bfcc9690ccd54136bb0f2b13907d8d820084c0f8e808c",
+      "bytes": 65718
+    },
+    {
+      "file": "media/chapter-I/frame-000100.png",
+      "sha256": "47afa62f0b6537b6a05efeba0f0144ba2d3e9992c46c2345b5f1e5680e115d17",
+      "bytes": 65814
+    },
+    {
+      "file": "media/chapter-I/frame-000101.png",
+      "sha256": "d4992180a490f27f95b432e57b6c638af46b739a572d0bf579ef26aa7f2fc129",
+      "bytes": 65917
+    },
+    {
+      "file": "media/chapter-I/frame-000102.png",
+      "sha256": "8c2f1804066f0edf4410e684c36cc29275a94a5a8557d68f35561d9eb3b9bcd9",
+      "bytes": 65672
+    },
+    {
+      "file": "media/chapter-I/frame-000103.png",
+      "sha256": "0d6b6b99a581030ee773c447f428e34ecffa5a078685877b5a811d381de8b52e",
+      "bytes": 65610
+    },
+    {
+      "file": "media/chapter-I/frame-000104.png",
+      "sha256": "cfbb5392341ee46b0e794185455218c16fa11af0d039f966db63088de5ac742d",
+      "bytes": 66300
+    },
+    {
+      "file": "media/chapter-I/frame-000105.png",
+      "sha256": "2ed7097ab59f8137aa5a951a8029f0e9922030e46367c212b60ba7518db9cd70",
+      "bytes": 64331
+    },
+    {
+      "file": "media/chapter-I/frame-000106.png",
+      "sha256": "b191e8ff3f5af42eb27a3dd3b557e8670bec521415cb709044cfb93cdd53ad1f",
+      "bytes": 63839
+    },
+    {
+      "file": "media/chapter-I/frame-000107.png",
+      "sha256": "be91ebcea46d2afa9693feb623a1981faa2db052a82a0a3bb238a59cb7d98767",
+      "bytes": 64746
+    },
+    {
+      "file": "media/chapter-I/frame-000108.png",
+      "sha256": "43906322ca3210096ab181efdc2a9368eb710c7944c9efdf3d3a75a861da30b8",
+      "bytes": 65862
+    },
+    {
+      "file": "media/chapter-I/frame-000109.png",
+      "sha256": "0a9e79c7ba8368fb9091e9e267333641405eedf6a91626a3200a87b056708f37",
+      "bytes": 65515
+    },
+    {
+      "file": "media/chapter-I/frame-000110.png",
+      "sha256": "1c2207294ca7ea8f3200f3ded79861f199a88532a564dda28e36373bb334293c",
+      "bytes": 65963
+    },
+    {
+      "file": "media/chapter-I/frame-000111.png",
+      "sha256": "1e43f731b042d2a4bf58a78fdac5dd23b2e70c3e633b418d448d11322808be45",
+      "bytes": 68375
+    },
+    {
+      "file": "media/chapter-I/frame-000112.png",
+      "sha256": "f6ddc4e6687cdf115eae6b6db057261a49b5d5e70d419f9e131b72a7ef147189",
+      "bytes": 67983
+    },
+    {
+      "file": "media/chapter-I/frame-000113.png",
+      "sha256": "d4a0511bff2568e079d9d838130155955acdf07b34f8d0925ddc2bc7eff28733",
+      "bytes": 67796
+    },
+    {
+      "file": "media/chapter-I/frame-000114.png",
+      "sha256": "c70cd30275440bba7371158ddb20b813229e0ef627e75dafe566fe22a5ffb8f9",
+      "bytes": 67115
+    },
+    {
+      "file": "media/chapter-I/frame-000115.png",
+      "sha256": "f4345b19734e07ccf0fd196509e5d3e43083566bc1f45f9a7d01ee1c495ca9ec",
+      "bytes": 67971
+    },
+    {
+      "file": "media/chapter-I/frame-000116.png",
+      "sha256": "1f037d88adfa360eafda67b2078fe0982203af7864f3149570f6c9166f3dc082",
+      "bytes": 67272
+    },
+    {
+      "file": "media/chapter-I/frame-000117.png",
+      "sha256": "e31d91c2951e56942e8aabb8ecac560696a444a3788873e1acfff8673196d4fa",
+      "bytes": 68379
+    },
+    {
+      "file": "media/chapter-I/frame-000118.png",
+      "sha256": "18a00ddb91a93b73eefa3313e6ad0658a00c47f65b542b0b26638a2d0d0c97d7",
+      "bytes": 68710
+    },
+    {
+      "file": "media/chapter-I/frame-000119.png",
+      "sha256": "06b1b6480d42162712c593fa03fca4091f26c2fa6cd6b6e7313d9cadb8ede17b",
+      "bytes": 68529
+    },
+    {
+      "file": "media/chapter-I/frame-000120.png",
+      "sha256": "815e7cd20f953b9c50f766104bcaf22cee57144690f71fc3f23f83c4a658223e",
+      "bytes": 68501
+    },
+    {
+      "file": "media/chapter-I/frame-000121.png",
+      "sha256": "1df069b61d60f1727d9a6ec91a0dedbab084cc45baacee83fd5e716b57b7c6cf",
+      "bytes": 67493
+    },
+    {
+      "file": "media/chapter-I/frame-000122.png",
+      "sha256": "b72da90a9e0b77729461ce91a263b153835d266b7441078468fd1705a5f6693a",
+      "bytes": 67786
+    },
+    {
+      "file": "media/chapter-I/frame-000123.png",
+      "sha256": "7c856e8b773f5776a638a036632b892351f56119da9a69b40c07f7def60907d3",
+      "bytes": 68432
+    },
+    {
+      "file": "media/chapter-I/frame-000124.png",
+      "sha256": "19b94c52a0375b7a48accd94fc40c5c2b7d78da6c1c5cd8f45f291197c439228",
+      "bytes": 68065
+    },
+    {
+      "file": "media/chapter-I/frame-000125.png",
+      "sha256": "5b9dfdb12cfd06d1377cb4031a7f4baca0c23fc41ed3db4f8e0552cb91ee305b",
+      "bytes": 67993
+    },
+    {
+      "file": "media/chapter-I/frame-000126.png",
+      "sha256": "da1e51c2234880a233d8fc157804f9b270e898be173bfa2976e31fae06314616",
+      "bytes": 67530
+    },
+    {
+      "file": "media/chapter-I/frame-000127.png",
+      "sha256": "ff3815dd5cda731bb11c10ef3a62859834b8ca2da3a10a8d0f6bb8cae7e3f380",
+      "bytes": 68813
+    },
+    {
+      "file": "media/chapter-I/frame-000128.png",
+      "sha256": "dc8fc18a3d012a90811d8e0a185c443e2bc616f605914f2e50592e2b8a652aa4",
+      "bytes": 68347
+    },
+    {
+      "file": "media/chapter-I/frame-000129.png",
+      "sha256": "2bc99008fbde12dc7c9f7fbc58d732c2ecaf70288c91a2ed84dba979556f0586",
+      "bytes": 67529
+    },
+    {
+      "file": "media/chapter-I/frame-000130.png",
+      "sha256": "a9618d6c7d795019ac4b7bde6aa951d40844ac9f506fecffaaa5afb3719079bb",
+      "bytes": 67355
+    },
+    {
+      "file": "media/chapter-I/frame-000131.png",
+      "sha256": "5b6cfa38f7ecebe531f384480bfe934dd91d1dc1052aecd9aae340640bb6b756",
+      "bytes": 68229
+    },
+    {
+      "file": "media/chapter-I/frame-000132.png",
+      "sha256": "d29f6f3dba749a5441777b263557d92608f57176c12ac61ba7027eb2985282f1",
+      "bytes": 67668
+    },
+    {
+      "file": "media/chapter-I/frame-000133.png",
+      "sha256": "bc731b89d0b79822a3db9ec4695a17a9f21864670700116f02eea939ae8587db",
+      "bytes": 68253
+    },
+    {
+      "file": "media/chapter-I/frame-000134.png",
+      "sha256": "e3f762fafa9c45e7b10a06afc5ae5afc379588c940a54f6be820d398dbb7ba6b",
+      "bytes": 67423
+    },
+    {
+      "file": "media/chapter-I/frame-000135.png",
+      "sha256": "8f99f4e1b76a9330df9661b664847a00913866800519ada1f2fd1f17bf3c8b2f",
+      "bytes": 68086
+    },
+    {
+      "file": "media/chapter-I/frame-000136.png",
+      "sha256": "24f9ac27d1f3547e7dab774e0a4f2695d107b652467eebc16fae94475db7eb4b",
+      "bytes": 68292
+    },
+    {
+      "file": "media/chapter-I/frame-000137.png",
+      "sha256": "6ecf63afdd056bfd5c537ba7e52524d457965aff84315fbd7747cf1a0ced5597",
+      "bytes": 67589
+    },
+    {
+      "file": "media/chapter-I/frame-000138.png",
+      "sha256": "7b217f4684ea84c57346f816c450c843adb21e3d9393e1ac01a28886115c1c25",
+      "bytes": 68291
+    },
+    {
+      "file": "media/chapter-I/frame-000139.png",
+      "sha256": "f89710b367ecc26b9948a73e865918915acdf54085b58d737012d19e15c482fc",
+      "bytes": 67605
+    },
+    {
+      "file": "media/chapter-I/frame-000140.png",
+      "sha256": "7aa141b8e8720ad73da54b1aafbc892ee5715303b0a55314176eb6198e32a515",
+      "bytes": 68315
+    },
+    {
+      "file": "media/chapter-I/frame-000141.png",
+      "sha256": "3c58261ddeb9012f6ca18a87520aea7b41cd1488d46b5d4ac211be1e55cdf353",
+      "bytes": 67886
+    },
+    {
+      "file": "media/chapter-I/frame-000142.png",
+      "sha256": "53eccdb445cc5da092d086a4e47469b84b91e5bd98bcf83cc676f9e52dbb1ba5",
+      "bytes": 68611
+    },
+    {
+      "file": "media/chapter-I/frame-000143.png",
+      "sha256": "c10817fc072e09457b85b83ffdb9fee0213378599cf0b1fdba4c74a0d1955b1e",
+      "bytes": 68926
+    },
+    {
+      "file": "media/chapter-I/frame-000144.png",
+      "sha256": "38d4b956a6fa709cf3d38f418c288807c3cbf487d8aa7534457030c24affdc8a",
+      "bytes": 67936
+    },
+    {
+      "file": "media/chapter-I/frame-000145.png",
+      "sha256": "2c1ae91bec2480a9cc0ebe1f55d81b30ed98c4d1a582d3f1a265d3e77e2a4aee",
+      "bytes": 68223
+    },
+    {
+      "file": "media/chapter-I/frame-000146.png",
+      "sha256": "15aaf8cb3fd926565c1a64dd296c57ffe3e3331ac70595988e3d7313c4ec15a1",
+      "bytes": 69215
+    },
+    {
+      "file": "media/chapter-I/frame-000147.png",
+      "sha256": "18cba8e449d89aaa826fab21e976ef2e0995687c6fa0b90adda015c3710641e5",
+      "bytes": 67282
+    },
+    {
+      "file": "media/chapter-I/frame-000148.png",
+      "sha256": "bdc9b957c033532d23747d00997b171734488366a6ff42583363aaf7ce084300",
+      "bytes": 65745
+    },
+    {
+      "file": "media/chapter-I/frame-000149.png",
+      "sha256": "7b5ac547cfbc08ab08352b9ba0c43c4445a3518d698232fd14ea18a3cfa13e18",
+      "bytes": 65762
+    },
+    {
+      "file": "media/chapter-I/frame-000150.png",
+      "sha256": "19b88f17ea7814f487f504f866bc8dcee3e9e150720f2563f36593e1390ec8dc",
+      "bytes": 65871
+    },
+    {
+      "file": "media/chapter-I/frame-000151.png",
+      "sha256": "9f126e4755014a3cf5d15dbb9ca072062ac4098001ce3a8c5e7f04e8084467e0",
+      "bytes": 66146
+    },
+    {
+      "file": "media/chapter-I/frame-000152.png",
+      "sha256": "6b70d5c41a2ff2784c636bec2ca2d7767d7f1924026b0cb1e897dc188f7dfcb0",
+      "bytes": 65436
+    },
+    {
+      "file": "media/chapter-I/frame-000153.png",
+      "sha256": "4b83b0ee5e2e94af59050493ac108f0aa6cf8039a61861e315e2a1ded0c0739f",
+      "bytes": 65775
+    },
+    {
+      "file": "media/chapter-I/frame-000154.png",
+      "sha256": "30e24ec6127b0ab87207a20205538fd750b076c2298a28610f8d5e15daa9845b",
+      "bytes": 65760
+    },
+    {
+      "file": "media/chapter-I/frame-000155.png",
+      "sha256": "d7851245bd187cbdaa3fc59b734802f9a3c21188fd1e159cae6a04ea00fca331",
+      "bytes": 65489
+    },
+    {
+      "file": "media/chapter-I/frame-000156.png",
+      "sha256": "08e4dceda34aa1a81bef28d4d3044e2a0ab079b74c03ea833053291d85d075ae",
+      "bytes": 67026
+    },
+    {
+      "file": "media/chapter-I/frame-000157.png",
+      "sha256": "138e28dc27fc685a70d18a2325f9e96d4e40bb932a10959fe192aa704b2bdd38",
+      "bytes": 66559
+    },
+    {
+      "file": "media/chapter-I/frame-000158.png",
+      "sha256": "dcbedb570b05ad223c3bf2961ccdf59a2d51f9916eadab7598ac957229cb2945",
+      "bytes": 66257
+    },
+    {
+      "file": "media/chapter-I/frame-000159.png",
+      "sha256": "c4fe0bdb9a2d7debdd248d7c03e678f67e2c117eaf2e90afb85bd67d0d52029f",
+      "bytes": 66715
+    },
+    {
+      "file": "media/chapter-I/frame-000160.png",
+      "sha256": "7a015248ca92cf2ab51a644bdf85d018c2920cd1ec85ba732808d0c18cc70171",
+      "bytes": 66099
+    },
+    {
+      "file": "media/chapter-I/frame-000161.png",
+      "sha256": "306f80a5ab22645e53ebbb756c9fbf595df43801e9546d5c4427c353d9dd9f82",
+      "bytes": 66179
+    },
+    {
+      "file": "media/chapter-I/frame-000162.png",
+      "sha256": "0a0c36677779f37436578e5afb9269d57807afce6a1d1879599e729518f66eb9",
+      "bytes": 66612
+    },
+    {
+      "file": "media/chapter-I/frame-000163.png",
+      "sha256": "5bf30103379536b89795eb9be526af760c8ca36838f0c8c54647466fd9acf186",
+      "bytes": 64869
+    },
+    {
+      "file": "media/chapter-I/frame-000164.png",
+      "sha256": "90d8d00bd53a9e05b9671801e681a741da496d1752b6b681fcd73e1e9c2c72a5",
+      "bytes": 64901
+    },
+    {
+      "file": "media/chapter-I/frame-000165.png",
+      "sha256": "903d7911808902224b8092702e66b3523e18bc01fd6e974759b3d3de1644f7aa",
+      "bytes": 64781
+    },
+    {
+      "file": "media/chapter-I/frame-000166.png",
+      "sha256": "4838302e476bc72e96cfd36c9c6c7d4fcd74e7c31595a9c0bfd0b1359bfe362d",
+      "bytes": 65153
+    },
+    {
+      "file": "media/chapter-I/frame-000167.png",
+      "sha256": "e3e07c35bb8d5b0dd34265fbebde6fe2c4142eea5698c61e1941632346135ad0",
+      "bytes": 65366
+    },
+    {
+      "file": "media/chapter-I/frame-000168.png",
+      "sha256": "b39b9bcd5709a0e3651d170349dbb128e2e336a773161680489e8d43c3b64d41",
+      "bytes": 64211
+    },
+    {
+      "file": "media/chapter-I/frame-000169.png",
+      "sha256": "e8f81decd6cc0852fe2a643cc04ce1c55f5a7b73a631860c47195dff3667ccf9",
+      "bytes": 65887
+    },
+    {
+      "file": "media/chapter-I/frame-000170.png",
+      "sha256": "f9b723a2d927d0d007bf5311a022b277727fd8b3808afb2e8f5fad8afa89f65a",
+      "bytes": 64803
+    },
+    {
+      "file": "media/chapter-I/frame-000171.png",
+      "sha256": "bbf4fab75d21b4f4a364f31696eba9386bfa396db2a6ee97093cd195c2a13029",
+      "bytes": 64293
+    },
+    {
+      "file": "media/chapter-I/frame-000172.png",
+      "sha256": "8d0c3afb4f1915f4d0dbb914874b42c651a6e90ac75ca90bc5db7442465aac5a",
+      "bytes": 64060
+    },
+    {
+      "file": "media/chapter-I/frame-000173.png",
+      "sha256": "ccc793b639bd518eb092f4b86fa33b7a29ecf7ab73bd067a257a94d956ccdfd1",
+      "bytes": 64080
+    },
+    {
+      "file": "media/chapter-I/frame-000174.png",
+      "sha256": "f35ac0bd74836d42fd4a443f4faf1b94e9381b12be15f53f6f8e7e724614808f",
+      "bytes": 64392
+    },
+    {
+      "file": "media/chapter-I/frame-000175.png",
+      "sha256": "816a5d0cfae02b7d3b50f1bf2644ca0ab3817feed98c7b3af0b66991390e4ccc",
+      "bytes": 64561
+    },
+    {
+      "file": "media/chapter-I/frame-000176.png",
+      "sha256": "2c9cc29b90332bab690837fec5fbb98ffb57b3673f4eb0a156dd01b7bb5bf816",
+      "bytes": 63565
+    },
+    {
+      "file": "media/chapter-I/frame-000177.png",
+      "sha256": "ced6099a57e670c77ef220f466af63f3c3a5bbc3ba31847ea5d9fdddde9e7344",
+      "bytes": 65160
+    },
+    {
+      "file": "media/chapter-I/frame-000178.png",
+      "sha256": "d9b60d1217753dfc97f49c4c51c0aa996aed08960c1b303e9668b9b5bcd00f7c",
+      "bytes": 64277
+    },
+    {
+      "file": "media/chapter-I/frame-000179.png",
+      "sha256": "85e4fa363e15d52bdbdf36227ced974f6bca15b1f0e97399745300d781304ece",
+      "bytes": 63723
+    },
+    {
+      "file": "media/chapter-I/frame-000180.png",
+      "sha256": "bafffa553c9e6fc75a47ddfa36e6d4a7a84eb2a7302955cfbbec09d08304f1b9",
+      "bytes": 64414
+    },
+    {
+      "file": "media/chapter-I/frame-000181.png",
+      "sha256": "e2d1f099de7153c74291e2a26cf86da8c4d32d8d33006fc2de85a0824ab8bfc7",
+      "bytes": 64058
+    },
+    {
+      "file": "media/chapter-I/frame-000182.png",
+      "sha256": "9ea8e76a784c5d99d78f760808728f4e209c333a9db8784dccef19facefeb73c",
+      "bytes": 64890
+    },
+    {
+      "file": "media/chapter-I/frame-000183.png",
+      "sha256": "d65137888139b0f35f80e6d948e95bf48c983fce0e3c20212078ec9a45e8896e",
+      "bytes": 64792
+    },
+    {
+      "file": "media/chapter-I/frame-000184.png",
+      "sha256": "9e07111c343766f1f62870445bc4019224b2aab6234f4d9e8c1398334c5eb3d3",
+      "bytes": 64175
+    },
+    {
+      "file": "media/chapter-I/frame-000185.png",
+      "sha256": "d41824b2147548d5132f789bbce81aa43fe2a287b710c1dfcd879e68b90474ea",
+      "bytes": 64026
+    },
+    {
+      "file": "media/chapter-I/frame-000186.png",
+      "sha256": "f349b578d8d7f817a24c9d2e3b48bbe31e013930c5ad6776758e65805eb7404e",
+      "bytes": 64301
+    },
+    {
+      "file": "media/chapter-I/frame-000187.png",
+      "sha256": "282d7de8db8fe377e509df3231ce10ba4cc74013dbc1c7599796b4105ef57147",
+      "bytes": 64828
+    },
+    {
+      "file": "media/chapter-I/frame-000188.png",
+      "sha256": "98ab7ddc7a793683b474ea3684d7b25110f39159a5f3da3acbe5c26d5bacbc6f",
+      "bytes": 64877
+    },
+    {
+      "file": "media/chapter-I/frame-000189.png",
+      "sha256": "cd2e752a0c0c6bed0de2d8bcc46cd3788e86d29e067636ff8e87ba763fafa716",
+      "bytes": 65133
+    },
+    {
+      "file": "media/chapter-I/frame-000190.png",
+      "sha256": "9a91038b77f5c9806cdf55849a263e185f2262b06ac466a30407eb2ac0932df3",
+      "bytes": 64854
+    },
+    {
+      "file": "media/chapter-I/frame-000191.png",
+      "sha256": "dc2320f9bf3726a76685f26ef090edc7750f2bf363810ce46638ec2e138f15e6",
+      "bytes": 65136
+    },
+    {
+      "file": "media/chapter-I/frame-000192.png",
+      "sha256": "d3045f43ae96d817af9d3f4b357297e795bc40f4c856c16b606a8f7c1ebd0c72",
+      "bytes": 64241
+    },
+    {
+      "file": "media/chapter-I/frame-000193.png",
+      "sha256": "b64761786240f612324e5932cb4d5e9f7558c8390fd704e41dc008430999150d",
+      "bytes": 63869
+    },
+    {
+      "file": "media/chapter-I/frame-000194.png",
+      "sha256": "f65e94d2304bac0320911b89c3f4d774d0a1ddd96394fd5538d864238ee46da6",
+      "bytes": 64618
+    },
+    {
+      "file": "media/chapter-I/frame-000195.png",
+      "sha256": "d18ff7697af4cc8c3e52bbbdae3abe5344a921137a52edf93f7258d5f648b433",
+      "bytes": 64487
+    },
+    {
+      "file": "media/chapter-I/frame-000196.png",
+      "sha256": "2a115a0e323b4b539c6a7666c6c7f3718f26b60370cd2ca92cd7bfcb52482ddf",
+      "bytes": 65073
+    },
+    {
+      "file": "media/chapter-I/frame-000197.png",
+      "sha256": "979c32593179a64d2201b60c14826703d9157572c0d54181033b13d58542bba1",
+      "bytes": 65093
+    },
+    {
+      "file": "media/chapter-I/frame-000198.png",
+      "sha256": "3a88bd9d0673a86a54db9a7b06d216de6351643939bee2ab74e125eecafa305d",
+      "bytes": 64695
+    },
+    {
+      "file": "media/chapter-I/frame-000199.png",
+      "sha256": "16870876cee965ddee61c3e95b464ffc5ac6e85e21e271f87c63440fb1838bf5",
+      "bytes": 64633
+    },
+    {
+      "file": "media/chapter-I/frame-000200.png",
+      "sha256": "345dc44297bf9cfec9123f56604b93a3c1d33cb1952addb77f6d07a80f73f46a",
+      "bytes": 64236
+    },
+    {
+      "file": "media/chapter-I/frame-000201.png",
+      "sha256": "879d643e998b7f7a1076993ee8ae8d8334fbe635c088a8f0ea3cbdb9cbc95e31",
+      "bytes": 64692
+    },
+    {
+      "file": "media/chapter-I/frame-000202.png",
+      "sha256": "b9ec79b19bc87d1e18544ccf9d673460f2789f10a1d0e2a7eacbf68c63b072fe",
+      "bytes": 64707
+    },
+    {
+      "file": "media/chapter-I/frame-000203.png",
+      "sha256": "bb4ac8f9ce1e5ec77f0e9e23deff745f3641786390885c34062eff6c37143733",
+      "bytes": 65822
+    },
+    {
+      "file": "media/chapter-I/frame-000204.png",
+      "sha256": "f958acd0e02a5adbf81ac3f27dbe003c55ff7f7c8d2f1e2ac5eec6e3a437d026",
+      "bytes": 65284
+    },
+    {
+      "file": "media/chapter-I/frame-000205.png",
+      "sha256": "1a5b13c52e2876c20a9864e7830221a2c301b435d94e39c32b42c34f8b019e19",
+      "bytes": 64972
+    },
+    {
+      "file": "media/chapter-I/frame-000206.png",
+      "sha256": "efd089359a51f3b2a2fc3411603203ba19900d1190d26f82ca10dc2cefbbd10c",
+      "bytes": 64927
+    },
+    {
+      "file": "media/chapter-I/frame-000207.png",
+      "sha256": "28ae8312f58ec058b94e0a8d485db1a58fe76580999c4131327a5a1dd9823c57",
+      "bytes": 64613
+    },
+    {
+      "file": "media/chapter-I/frame-000208.png",
+      "sha256": "0284ef7ecfc713591bae509ae782eeda1009ee012f1644f27e3ca58e2c915cba",
+      "bytes": 64856
+    },
+    {
+      "file": "media/chapter-I/frame-000209.png",
+      "sha256": "be396d829a2629bc63e2e2aff13ca6c45ed802c6f3308e4a04f3d6785ba65d0f",
+      "bytes": 64470
+    },
+    {
+      "file": "media/chapter-I/frame-000210.png",
+      "sha256": "6c9fd6e0c9dea898d38684f6370d9fd774a28c72fb8c43691469b657d876bdff",
+      "bytes": 65248
+    },
+    {
+      "file": "media/chapter-I/frame-000211.png",
+      "sha256": "182fe023f90095a8c5be86a8a4d6629efaf3043ff01cdd0246adedd92b7dbf22",
+      "bytes": 64083
+    },
+    {
+      "file": "media/chapter-I/frame-000212.png",
+      "sha256": "aa01f23c6eda8ebddf75436644458df5a22f48985ace6d66a2d451193ff41c1c",
+      "bytes": 64634
+    },
+    {
+      "file": "media/chapter-I/frame-000213.png",
+      "sha256": "52803fde81c64f0f0f8e3ba4edbeed93ed297d4c8d2d6810f66b27669a0b17c1",
+      "bytes": 65584
+    },
+    {
+      "file": "media/chapter-I/frame-000214.png",
+      "sha256": "fae1e3e52e4d234219ad36feabf6f38f1440a70e84c47a557f27fd7b6738c465",
+      "bytes": 63838
+    },
+    {
+      "file": "media/chapter-I/frame-000215.png",
+      "sha256": "b46a59031a77ec60a036096bd3b51dd3a3bce9efd7dd49940d3f9dc8c366d179",
+      "bytes": 65711
+    },
+    {
+      "file": "media/chapter-I/frame-000216.png",
+      "sha256": "6efd5d5758439c46c78f11d2a88600d681acd7efbbe6ebb233367b31e7af0a5a",
+      "bytes": 64803
+    },
+    {
+      "file": "media/chapter-I/frame-000217.png",
+      "sha256": "0bf192d7e9bb6c07e62584938de069a5563b8cd273661b82013444733fb7ae5c",
+      "bytes": 64523
+    },
+    {
+      "file": "media/chapter-I/frame-000218.png",
+      "sha256": "af267ef9f97168bcc503e258e1d27c9adee7a473bc47d1cf14f4b37cb6823668",
+      "bytes": 62777
+    },
+    {
+      "file": "media/chapter-I/frame-000219.png",
+      "sha256": "217add1903506a611b8f34fc0987759fd41bd7e794dfc4e729ac4f87b4b1e802",
+      "bytes": 64610
+    },
+    {
+      "file": "media/chapter-I/frame-000220.png",
+      "sha256": "1cfe1256cc0035e595bdac96dbcf5676fa3d393e6d060491ef3095558e0cc5e8",
+      "bytes": 63020
+    },
+    {
+      "file": "media/chapter-I/frame-000221.png",
+      "sha256": "8152aff39358feb8d4185468345222605d330329298e07217809f28737f5eac6",
+      "bytes": 62069
+    },
+    {
+      "file": "media/chapter-I/frame-000222.png",
+      "sha256": "2b75947b99376937a2220a072ad42482ec99019afe8cb432ff93a96f15b246c1",
+      "bytes": 63073
+    },
+    {
+      "file": "media/chapter-I/frame-000223.png",
+      "sha256": "f717857a7c0193a9a61c459b83b84b7105e9e6abad7ad3079dfdd1edbe5801a7",
+      "bytes": 62691
+    },
+    {
+      "file": "media/chapter-I/frame-000224.png",
+      "sha256": "d87c928e31a6f0e6e970b75bae0473d921c42f524268c6cc0e33eddee7704806",
+      "bytes": 63032
+    },
+    {
+      "file": "media/chapter-I/frame-000225.png",
+      "sha256": "3023a8a0d1d3ec9b367af321cba47e7d053efc9d360b6e4eadb67aa3643a7331",
+      "bytes": 63099
+    },
+    {
+      "file": "media/chapter-I/frame-000226.png",
+      "sha256": "96c52f495f6e919385a767be775e7e530678c7a1d05272eb965a84b351e4dea3",
+      "bytes": 62653
+    },
+    {
+      "file": "media/chapter-I/frame-000227.png",
+      "sha256": "d868cdd4f365d2bcc640d8369c87c7c34802872d3acb6c3292b48c7ae8a6aee4",
+      "bytes": 63230
+    },
+    {
+      "file": "media/chapter-I/frame-000228.png",
+      "sha256": "e7fb82ee83219e1d4ee97af51d2e4ee2823b62a54d4927b53cafe457cc34dd03",
+      "bytes": 62518
+    },
+    {
+      "file": "media/chapter-I/frame-000229.png",
+      "sha256": "3c9c1d6102b195bda27d2d0048a9fb1659f8edd8fd736cbcd2c10e071d9eea9b",
+      "bytes": 62505
+    },
+    {
+      "file": "media/chapter-I/frame-000230.png",
+      "sha256": "fde81fb52fda53f3254dd8cc0bc57bf4c065af8ec174c4874edd08222ff623d0",
+      "bytes": 64620
+    },
+    {
+      "file": "media/chapter-I/frame-000231.png",
+      "sha256": "9233d4e5a16646059c30e5b662fe4305458ef3f4108550caf6454a25692e480a",
+      "bytes": 62996
+    },
+    {
+      "file": "media/chapter-I/frame-000232.png",
+      "sha256": "1001004fbaa1e40f9fbe1e2fffbbecaaa809b52b8c0f09b8beeab9eadd4c83d9",
+      "bytes": 64324
+    },
+    {
+      "file": "media/chapter-I/frame-000233.png",
+      "sha256": "853830bc1817b16f822ab18a52e1597163b665e7191f7429efff62c0d4a1831f",
+      "bytes": 63438
+    },
+    {
+      "file": "media/chapter-I/frame-000234.png",
+      "sha256": "31969c1fec2cd2ef5f1e8fed8e9099a4b07e9fb8aa0a79c8706fc68ace63c422",
+      "bytes": 64015
+    },
+    {
+      "file": "media/chapter-I/frame-000235.png",
+      "sha256": "ec3486432ba4742b323a01d7be9f16ddd6b9b94e93e4e9cfef696b5df356218f",
+      "bytes": 65083
+    },
+    {
+      "file": "media/chapter-I/frame-000236.png",
+      "sha256": "20febc7fce033bbf43a7550bf37dd5b0a71c20c71a9cf5596ccb82340963a606",
+      "bytes": 63666
+    },
+    {
+      "file": "media/chapter-I/frame-000237.png",
+      "sha256": "cfca60263cb9aedd109028e7765ebeaa2b2b18c6c765a3f3a964b4f5152b4755",
+      "bytes": 63242
+    },
+    {
+      "file": "media/chapter-I/frame-000238.png",
+      "sha256": "5a48c4657c85e1645446b195ab01edcf4d440469616ff59940fc8fdbb23df941",
+      "bytes": 64604
+    },
+    {
+      "file": "media/chapter-I/frame-000239.png",
+      "sha256": "11ed724332204b23b27d80cf5297c8b57fb99813dc9bab4b36fc76b51d19d3a5",
+      "bytes": 63724
+    },
+    {
+      "file": "media/chapter-I/frame-000240.png",
+      "sha256": "866129ede5aa636d1f731f74f0551a27ca86f1aaea68a8eb5aa99a39a39e91bc",
+      "bytes": 64430
+    },
+    {
+      "file": "media/chapter-I/frame-000241.png",
+      "sha256": "e5f57f8a84077281ac48be6a69583c1ee9500ddb505212c8bf4cf77cd1a63cf9",
+      "bytes": 63148
+    },
+    {
+      "file": "media/chapter-I/frame-000242.png",
+      "sha256": "8993a55718be751c274d1fe2706680dae2718720d8a45d979b80cb2a1be66edd",
+      "bytes": 64576
+    },
+    {
+      "file": "media/chapter-I/frame-000243.png",
+      "sha256": "dbda00546e713ec4c1dd6dd660910196b3a9918af80d43b26c794f4c3945e75e",
+      "bytes": 62494
+    },
+    {
+      "file": "media/chapter-I/frame-000244.png",
+      "sha256": "9ac70b86cc081e951f3dabaf544729eddeaf0d6a52f6e7098336bd2e0139f76e",
+      "bytes": 62519
+    },
+    {
+      "file": "media/chapter-I/frame-000245.png",
+      "sha256": "664c39c4087eaccd2223dfaaf7770cd124b460aff508a03155538d21859bb579",
+      "bytes": 62520
+    },
+    {
+      "file": "media/chapter-I/frame-000246.png",
+      "sha256": "887870ce48c6f264b43bbe56b9a59b54814a4926cd559bb1fdd6e6e81fa5dd10",
+      "bytes": 62484
+    },
+    {
+      "file": "media/chapter-I/frame-000247.png",
+      "sha256": "a2cb63631954fc06615d7c3cfca0acf0a6cc8b181f1131425b98fb5410336f45",
+      "bytes": 62533
+    },
+    {
+      "file": "media/chapter-I/frame-000248.png",
+      "sha256": "153c76b3e625f856f574e1937cae22bb8d3bbb7390ceebc748510451a9752dd5",
+      "bytes": 62707
+    },
+    {
+      "file": "media/chapter-I/frame-000249.png",
+      "sha256": "c62fdae815a4daac633a64b7bb80a43e0527fa5a6e4065c565f51b847e43b784",
+      "bytes": 63155
+    },
+    {
+      "file": "media/chapter-I/frame-000250.png",
+      "sha256": "85440425ea18ed1b501488775e15d13b606d7db70f412974b161d17353e43aef",
+      "bytes": 63218
+    },
+    {
+      "file": "media/chapter-I/frame-000251.png",
+      "sha256": "264ee1461807640b6285d69f56ac08fc434c558f2c6e007a964a691fa5f34fe3",
+      "bytes": 63693
+    },
+    {
+      "file": "media/chapter-I/frame-000252.png",
+      "sha256": "93d4f0a9942ca1c9ca1974e6a63c5eac5090168b922ee0dcc40074ca7b16b952",
+      "bytes": 62575
+    },
+    {
+      "file": "media/chapter-I/frame-000253.png",
+      "sha256": "abb2d6a9327987f8ee4fa743663dad07e5256393069d589c24fd15c19a9e1f0b",
+      "bytes": 61443
+    },
+    {
+      "file": "media/chapter-I/frame-000254.png",
+      "sha256": "abd0f0e85df6abc45342cc662b24098fa1afccbb3e49b1da13813fd95c420292",
+      "bytes": 61724
+    },
+    {
+      "file": "media/chapter-I/frame-000255.png",
+      "sha256": "97db167f6cb0d5a9ddedae099c5f45ba59f5cb7d1e335be371642d1cfe60c5b9",
+      "bytes": 62402
+    },
+    {
+      "file": "media/chapter-I/frame-000256.png",
+      "sha256": "640c354ded3a20f9a1acf9fea575bd1d184e6408bab84e41ed40fc33feb2cb3c",
+      "bytes": 63250
+    },
+    {
+      "file": "media/chapter-I/frame-000257.png",
+      "sha256": "2e2c93303c7b13e8001984fb05573f9c719497e7fe4b4d98eb58b44e0eee87e5",
+      "bytes": 62543
+    },
+    {
+      "file": "media/chapter-I/frame-000258.png",
+      "sha256": "14d82baa5581a9fc0cf4c78f40e0fbeebd3b9b9d821edc153f3470af9b84effb",
+      "bytes": 60454
+    },
+    {
+      "file": "media/chapter-I/frame-000259.png",
+      "sha256": "cd7a1b0d7c5d85bf15a4253028d701dbebb694c55ef1ddecc53826855192b30b",
+      "bytes": 59037
+    },
+    {
+      "file": "media/chapter-I/frame-000260.png",
+      "sha256": "fa35ed9d48df69be43a89122a4d6bdfcaf04d3deaff4892e6e7e2d77d8344023",
+      "bytes": 60009
+    },
+    {
+      "file": "media/chapter-I/frame-000261.png",
+      "sha256": "3f4bdb040a4169cd727ef1aa5ee2c354e716fb08a8e5912128616a89c168d5c0",
+      "bytes": 60119
+    },
+    {
+      "file": "media/chapter-I/frame-000262.png",
+      "sha256": "f18bf54257724364334da07a4299e53fb28892b4af8e5fb872389fbcb3c2761e",
+      "bytes": 61217
+    },
+    {
+      "file": "media/chapter-I/frame-000263.png",
+      "sha256": "c05600ce1b4bdf0bcf2b4bf2071aa4818140aecba42b2d8ff00c250172abea3c",
+      "bytes": 61071
+    },
+    {
+      "file": "media/chapter-I/frame-000264.png",
+      "sha256": "e122864d6b1cf7c562122ae35fea4fb6b5584a4cdc85e7a7902ca78f9bd05797",
+      "bytes": 59042
+    },
+    {
+      "file": "media/chapter-I/frame-000265.png",
+      "sha256": "5e2b5cf27df9e19604118023a67c43790059f250a1833943711e860b451ee7b0",
+      "bytes": 60019
+    },
+    {
+      "file": "media/chapter-I/frame-000266.png",
+      "sha256": "abe2c2024330b63b457bb4ed63916842fb80f4a2724c2c6bda2d51ea1d2c44f0",
+      "bytes": 61232
+    },
+    {
+      "file": "media/chapter-I/frame-000267.png",
+      "sha256": "267216fb34fb7105f420b0a542fd4f8591ef56ad7fb9bbb7cba088b07ecd510e",
+      "bytes": 60562
+    },
+    {
+      "file": "media/chapter-I/frame-000268.png",
+      "sha256": "835b5d06909bdd391e69b119b9a0545d798331418ce0cf449a622e4ec7ff716e",
+      "bytes": 60195
+    },
+    {
+      "file": "media/chapter-I/frame-000269.png",
+      "sha256": "e0245622ef5ce7efd455162eaf987ee2c1fd16ca4e446c4c718329909ed292a1",
+      "bytes": 59714
+    },
+    {
+      "file": "media/chapter-I/frame-000270.png",
+      "sha256": "0c27bdc4c8d2fb9564da8965216b00ca30552e4c837b1ab6db582a4f5d19aede",
+      "bytes": 60151
+    },
+    {
+      "file": "media/chapter-I/frame-000271.png",
+      "sha256": "b7ad71f15fd8ac48456d037d3bf7554f9cd78c3c45c7252d3f6e12dda44ec24b",
+      "bytes": 60216
+    },
+    {
+      "file": "media/chapter-I/frame-000272.png",
+      "sha256": "7888a2e20610174dc58c922d10c05409e4e36cc100ab7d66289aa435b1b35601",
+      "bytes": 61407
+    },
+    {
+      "file": "media/chapter-I/frame-000273.png",
+      "sha256": "3a1fa6354e41a5eb880a01e5053000cafcc7eb95ba930bd0d9e1ab091a86f0b6",
+      "bytes": 60045
+    },
+    {
+      "file": "media/chapter-I/frame-000274.png",
+      "sha256": "1d03034439b852eda43f07b688212e2bd75f685d86f97520c2aa1de0c7750271",
+      "bytes": 61032
+    },
+    {
+      "file": "media/chapter-I/frame-000275.png",
+      "sha256": "a6e4e36fbb8961d31163bf40b873825cd4bcefbddc92f87c04d4df9f38f85cf0",
+      "bytes": 60419
+    },
+    {
+      "file": "media/chapter-I/frame-000276.png",
+      "sha256": "9a68a7f55e204b409a2ce0610fa2dd475ec71c7ad3323fda7318ffbbfb1d764b",
+      "bytes": 60476
+    },
+    {
+      "file": "media/chapter-I/frame-000277.png",
+      "sha256": "83f66f15a7f7371688856cf0c628be4c24c576c112f8e3739d1cd6d914b9c789",
+      "bytes": 60616
+    },
+    {
+      "file": "media/chapter-I/frame-000278.png",
+      "sha256": "9493a13c2c38f0683da5b3eac17df282ca0b1c59ed73c8bed1f7eb729f98097f",
+      "bytes": 61195
+    },
+    {
+      "file": "media/chapter-I/frame-000279.png",
+      "sha256": "2c1b9e174733325c93b93a6481265a7bf2bd65d7bec22eeac95acf2667414f8d",
+      "bytes": 61236
+    },
+    {
+      "file": "media/chapter-I/frame-000280.png",
+      "sha256": "2dee210b52ce3259e7a5f195fe8eea586c057709c847a6f035eb1a3775ab7553",
+      "bytes": 60908
+    },
+    {
+      "file": "media/chapter-I/frame-000281.png",
+      "sha256": "c81a4829f349251c69461b99a7d199f94ae84220f172b25bfc45f61cc23a1473",
+      "bytes": 61456
+    },
+    {
+      "file": "media/chapter-I/frame-000282.png",
+      "sha256": "87bcbf1a1a0e9d25beddb29fb9771737c3319febc9d84521bb4405b4b3338e71",
+      "bytes": 60187
+    },
+    {
+      "file": "media/chapter-I/frame-000283.png",
+      "sha256": "9c40defaa1bf22408ae89bbc8c674d31cad64e4a065dd78a014a59baebf27e9b",
+      "bytes": 59809
+    },
+    {
+      "file": "media/chapter-I/frame-000284.png",
+      "sha256": "6c7f22cb03378047a9151951f49651fd49731d95b46d8ee133ebb4ec66b0e27e",
+      "bytes": 60519
+    },
+    {
+      "file": "media/chapter-I/frame-000285.png",
+      "sha256": "61f0da4e61d08fca3881670fd56d31a352b8c94d6b823470679df96b0ca6097f",
+      "bytes": 62066
+    },
+    {
+      "file": "media/chapter-I/frame-000286.png",
+      "sha256": "d3b0d28baa4644f5cb3ae47163334ca074e2ea454257dd5fd904b582d515f9fa",
+      "bytes": 60987
+    },
+    {
+      "file": "media/chapter-I/frame-000287.png",
+      "sha256": "e524567466d8d9a08e2330ecab9e9ddc815d593dd78afb1d1c053746d9557eb3",
+      "bytes": 61216
+    },
+    {
+      "file": "media/chapter-I/frame-000288.png",
+      "sha256": "a46d95e587dc5c6f8b084ffe99341b85f31c90695ad1a4b3e4449bcaf658bbdf",
+      "bytes": 60279
+    },
+    {
+      "file": "media/chapter-I/frame-000289.png",
+      "sha256": "ef74239dbdeec4413589f9c5d96a07d9ed096841d5a2115e8319903f1ebe971b",
+      "bytes": 61697
+    },
+    {
+      "file": "media/chapter-I/frame-000290.png",
+      "sha256": "e17d6ffaff4e7aa12e59f78164a1feceda94eaff16a3999f74151f0849d941f0",
+      "bytes": 60797
+    },
+    {
+      "file": "media/chapter-I/frame-000291.png",
+      "sha256": "fdd3f7a1fc039ecc7e486167ea4359b510a86852ea4203ceb8d29880002f73d3",
+      "bytes": 62563
+    },
+    {
+      "file": "media/chapter-I/frame-000292.png",
+      "sha256": "def95f1dfd5e28d33fcbeeac7c2bfd24ac95ce0281a5960f24e0d2203cc3c13b",
+      "bytes": 60985
+    },
+    {
+      "file": "media/chapter-I/frame-000293.png",
+      "sha256": "7c8c46f8ddb13fe7ae5afdd950806901092531c0d2844c321fa1c89d2dcfedfc",
+      "bytes": 60728
+    },
+    {
+      "file": "media/chapter-I/frame-000294.png",
+      "sha256": "1c47f725f08ebddbedf42f39f5ac095e63865c5a636ce89ff49c3d7dba155863",
+      "bytes": 59693
+    },
+    {
+      "file": "media/chapter-I/frame-000295.png",
+      "sha256": "8a6090e0774079a5dd69c86a8e52f8a6daf69fa9f3e66cc078e81fb893c6bb61",
+      "bytes": 59691
+    },
+    {
+      "file": "media/chapter-I/frame-000296.png",
+      "sha256": "9d86da90f4cecc91437e0e5e818479b1fd1c46d671bfcfb82e37a2684565f1aa",
+      "bytes": 60659
+    },
+    {
+      "file": "media/chapter-I/frame-000297.png",
+      "sha256": "7a5567580c1cff050fe538ca8a2a3fd07005152f66929012a3509e89414f8927",
+      "bytes": 60196
+    },
+    {
+      "file": "media/chapter-I/frame-000298.png",
+      "sha256": "480ad2a2bdd34f7bf168a6dfd2a4705edbf4d30c9d373582384c8e48dd791331",
+      "bytes": 62922
+    },
+    {
+      "file": "media/chapter-I/frame-000299.png",
+      "sha256": "c1c27f7859d24bb104c34806d37f3978b638b5aae3ffbcb8f0c9ec36943b230a",
+      "bytes": 60952
+    },
+    {
+      "file": "media/chapter-I/frame-000300.png",
+      "sha256": "c1e79ca302aebdbfc42ee33c6518d45e40532bdd4057f2d5c129e07db3f13122",
+      "bytes": 60019
+    },
+    {
+      "file": "media/chapter-I/frame-000301.png",
+      "sha256": "d178aa2dd44100f1fcc3cdbe4c21b7663867d6991fd4e0e2e575f9e5e53341d5",
+      "bytes": 59969
+    },
+    {
+      "file": "media/chapter-I/frame-000302.png",
+      "sha256": "f2a6a63c49a3ff8ebb25081d27b862ba78caaa3b8129815b35f5abed4008ab75",
+      "bytes": 60287
+    },
+    {
+      "file": "media/chapter-I/frame-000303.png",
+      "sha256": "679a024dc5d03f6f8738d4e1c7d99a2c7e5d00fd59e109c2eb7021784946bc75",
+      "bytes": 59945
+    },
+    {
+      "file": "media/chapter-I/frame-000304.png",
+      "sha256": "13f18d85168361b592377ba02d431d950918400c52b6216ea73294cce232adda",
+      "bytes": 60120
+    },
+    {
+      "file": "media/chapter-I/frame-000305.png",
+      "sha256": "0bfdfddde44bfb9d9bf719e1405c811203dd26521bd3027ac10064fd2f3e3e29",
+      "bytes": 62217
+    },
+    {
+      "file": "media/chapter-I/frame-000306.png",
+      "sha256": "be6c76c49d1171aee4cc1c0cdd032f6a7472811ad9fd95cbfc33c7fb4db4dd3a",
+      "bytes": 60619
+    },
+    {
+      "file": "media/chapter-I/frame-000307.png",
+      "sha256": "5b1a97cb353b2f933b5906b682f804aeda2a03ae778f72c32e5311d117b84def",
+      "bytes": 59944
+    },
+    {
+      "file": "media/chapter-I/frame-000308.png",
+      "sha256": "3e19820024966044e909b3a0ec4568c8675ca77bccd9bc387ebbff73f2198ad8",
+      "bytes": 61595
+    },
+    {
+      "file": "media/chapter-I/frame-000309.png",
+      "sha256": "d79df6ca706db14362149a990986306310a707c2096dc0217c1152ffe5444174",
+      "bytes": 61571
+    },
+    {
+      "file": "media/chapter-I/frame-000310.png",
+      "sha256": "c681e3f1b42ace1bb5b7cedc8adea31ee53225312bec07d08d7c3127ec7dc860",
+      "bytes": 60779
+    },
+    {
+      "file": "media/chapter-I/frame-000311.png",
+      "sha256": "703e3ef3acfc0395f9234939ac5f7dcd69486069bbb95f71055dc3045ce5401e",
+      "bytes": 61121
+    },
+    {
+      "file": "media/chapter-I/frame-000312.png",
+      "sha256": "d19b916daadad78e34d877caa23d4ff8601f906c84e76e38d90350cad76fef78",
+      "bytes": 61721
+    },
+    {
+      "file": "media/chapter-I/frame-000313.png",
+      "sha256": "fc6d5347ca810d498a26f3cbea714690595bed8eb9f74de66fb377eee20282cc",
+      "bytes": 61983
+    },
+    {
+      "file": "media/chapter-I/frame-000314.png",
+      "sha256": "b2e6593c94f114243bf573dc58fcb10be7f88b66aa5fb8a999f6bdc137238f00",
+      "bytes": 60645
+    },
+    {
+      "file": "media/chapter-I/frame-000315.png",
+      "sha256": "1d4fd13005e3ee2e387a0086bf9d5ade9ee2f0733d22aaa815fcf7184a560c2c",
+      "bytes": 60475
+    },
+    {
+      "file": "media/chapter-I/frame-000316.png",
+      "sha256": "c6a0611023a69f74f8c3834abf9cb0741bda82109e27e59f3298403699a58f16",
+      "bytes": 61230
+    },
+    {
+      "file": "media/chapter-I/frame-000317.png",
+      "sha256": "1e7385d3c1d7fa4c32a53fcdfc63f08eb81ed6b09d1ae365ab96523e4a054506",
+      "bytes": 61369
+    },
+    {
+      "file": "media/chapter-I/frame-000318.png",
+      "sha256": "efe1f375193884b6bbd9636909421e6882e0d0dfecdb7c52998ea6a88b72b617",
+      "bytes": 60169
+    },
+    {
+      "file": "media/chapter-I/frame-000319.png",
+      "sha256": "5f4987e933af813b00690549f985aa108467be4dd5ac77cfe11352bc8529d1b4",
+      "bytes": 61149
+    },
+    {
+      "file": "media/chapter-I/frame-000320.png",
+      "sha256": "5d04d62b72800b2b7cfd386015147d77b15069b4e3988d9335293381893e89be",
+      "bytes": 62048
+    },
+    {
+      "file": "media/chapter-I/frame-000321.png",
+      "sha256": "a465a8dbffa7ef45f0127190f391f0d10099744ac572baa899ec860bf2dbd47c",
+      "bytes": 61352
+    },
+    {
+      "file": "media/chapter-I/frame-000322.png",
+      "sha256": "3e22c0d6206606db7b7c6f6d2c5745db5e4cc94a1d8bacb82d6a0f3f2181e599",
+      "bytes": 59663
+    },
+    {
+      "file": "media/chapter-I/frame-000323.png",
+      "sha256": "579c23435486dae1c354e433996c7630ec7b879e9698f00307da0786dfbcaab1",
+      "bytes": 60383
+    },
+    {
+      "file": "media/chapter-I/frame-000324.png",
+      "sha256": "97ad2172411ce133e9b2fa54228b9f200466e27171a2fda5a8219a4f9bd05d9b",
+      "bytes": 59302
+    },
+    {
+      "file": "media/chapter-I/frame-000325.png",
+      "sha256": "95cd426d81aa609cb60fb4f9afe3588336f35e7a821d040c9745c2febb7096dc",
+      "bytes": 59102
+    },
+    {
+      "file": "media/chapter-I/frame-000326.png",
+      "sha256": "8f271af63f25b5a38736d298f7ad7b6bb3c5550172463b1961f64fa7c7168ecf",
+      "bytes": 58795
+    },
+    {
+      "file": "media/chapter-I/frame-000327.png",
+      "sha256": "38c786e1c823cd0c373d02b013d8c09d20f8cddf4591e66daa95aaff8d815009",
+      "bytes": 58512
+    },
+    {
+      "file": "media/chapter-I/frame-000328.png",
+      "sha256": "f264b3cbc0af96925a310024cccdef650c3548213571159d7000790ae2daff33",
+      "bytes": 59519
+    },
+    {
+      "file": "media/chapter-I/frame-000329.png",
+      "sha256": "9be3070ebac4277dcdbf4feeb97c0babf147f7320c7315d18a98a8f74ddb5722",
+      "bytes": 59496
+    },
+    {
+      "file": "media/chapter-I/frame-000330.png",
+      "sha256": "188024532604cadeb14919aab8ef817a56844ddc9520b716b2693b19e6e01917",
+      "bytes": 58638
+    },
+    {
+      "file": "media/chapter-I/frame-000331.png",
+      "sha256": "4aa2abf92b73a8f8399e3f633c386da4865e5b4fdee99d0ef564cc72f9734e0f",
+      "bytes": 59913
+    },
+    {
+      "file": "media/chapter-I/frame-000332.png",
+      "sha256": "36016e7448bac2b56cb7153f0efa05e5c00990bf3e3c7849cb4cc4f430538db0",
+      "bytes": 59735
+    },
+    {
+      "file": "media/chapter-I/frame-000333.png",
+      "sha256": "115a5924370b23ada9f333f594b8ee5483a5839844028854c80feefabfe05c67",
+      "bytes": 59047
+    },
+    {
+      "file": "media/chapter-I/frame-000334.png",
+      "sha256": "c4b6e05e23d516cc77757c3df72592accca2425949e20099435609ef7a8c3e34",
+      "bytes": 59076
+    },
+    {
+      "file": "media/chapter-I/frame-000335.png",
+      "sha256": "3a7bca937370d054c73e9c364c967b0d00f1e9fc4ba03f27d1678b2c2e38014c",
+      "bytes": 59747
+    },
+    {
+      "file": "media/chapter-I/frame-000336.png",
+      "sha256": "9bbdb145324538124052bd31a157834e0b72d83746d01a1e0b8e291b16f5971c",
+      "bytes": 60487
+    },
+    {
+      "file": "media/chapter-I/frame-000337.png",
+      "sha256": "64cae62a4133c4e56548f0ba6340fff311866e830b1db5e90a505cc844b70e6b",
+      "bytes": 60736
+    },
+    {
+      "file": "media/chapter-I/frame-000338.png",
+      "sha256": "ceab2b39b4c1e7cd200a8874a48df6e047b35157414472e78a949fbb2d959927",
+      "bytes": 63717
+    },
+    {
+      "file": "media/chapter-I/frame-000339.png",
+      "sha256": "df572b6987ef8ed46862d09456e33baebcaa0be383bef765458611ae26bc9635",
+      "bytes": 63866
+    },
+    {
+      "file": "media/chapter-I/frame-000340.png",
+      "sha256": "0dd21ec46fcb39e4c3187846f15592f41d1b9c95341868a53c5653d465da641f",
+      "bytes": 64628
+    },
+    {
+      "file": "media/chapter-I/frame-000341.png",
+      "sha256": "f556c8257b2bb51c372b38710a6c8895d2692b966df917c653bc451a66a8f9cf",
+      "bytes": 63745
+    },
+    {
+      "file": "media/chapter-I/frame-000342.png",
+      "sha256": "32b26dce5be3fac660d3ae1b7fe720c2fa4cf26d97bdf9792016cc96711697de",
+      "bytes": 65004
+    },
+    {
+      "file": "media/chapter-I/frame-000343.png",
+      "sha256": "940fde285396f6f380ed1d14605286f0a080de8e87ef915eacf63fc30307b294",
+      "bytes": 64389
+    },
+    {
+      "file": "media/chapter-I/frame-000344.png",
+      "sha256": "67918398fcbda57cc1fcd583e968feb45aea5f263978e8b8dc89024cba381695",
+      "bytes": 66846
+    },
+    {
+      "file": "media/chapter-I/frame-000345.png",
+      "sha256": "4fdc8a1789e562aa73bc1434a3f232dab544b03c16d9dafb4e8ea8b0668d8d3b",
+      "bytes": 67187
+    },
+    {
+      "file": "media/chapter-I/frame-000346.png",
+      "sha256": "8e6ff5a9e7402c6b20daa8e3e207f8ac549e420e4d9f32229e4b577e261d3386",
+      "bytes": 65827
+    },
+    {
+      "file": "media/chapter-I/frame-000347.png",
+      "sha256": "f28dd2d13f7766dd8fe476ac50507d77910b8d86a6d2794b59ea7fdd93de5584",
+      "bytes": 66245
+    },
+    {
+      "file": "media/chapter-I/frame-000348.png",
+      "sha256": "45ee27bb8fd8b59eec457c44d4ebb76f8a8f719383c118d3bcb60184b0f59827",
+      "bytes": 64958
+    },
+    {
+      "file": "media/chapter-I/frame-000349.png",
+      "sha256": "73e19b39f45e6496a21b99efad5c71b8450d6e2198711aaf247e207f27397b5e",
+      "bytes": 64615
+    },
+    {
+      "file": "media/chapter-I/frame-000350.png",
+      "sha256": "0dfaa979d829cc649ee7451caa9d4827835401d57527167a57d25d4f77f18e4a",
+      "bytes": 64898
+    },
+    {
+      "file": "media/chapter-I/frame-000351.png",
+      "sha256": "39493e5322d9bed84143b03ffea74c9f331734f53cc768627bdafd0665f4fb82",
+      "bytes": 63738
+    },
+    {
+      "file": "media/chapter-I/frame-000352.png",
+      "sha256": "b99c28611c098ea4736f27433faf892792a7c8152a7cea75357847a4b7e2be6c",
+      "bytes": 63015
+    },
+    {
+      "file": "media/chapter-I/frame-000353.png",
+      "sha256": "3d2474cc88cbf85a2c037bb0868cc421f8000718e01a4fbc9d628a567cbe9693",
+      "bytes": 63150
+    },
+    {
+      "file": "media/chapter-I/frame-000354.png",
+      "sha256": "b04546c173878efd2bb71a79269d3bbe5e006023ade9e0cae7bb1aecbf5f155c",
+      "bytes": 63651
+    },
+    {
+      "file": "media/chapter-I/frame-000355.png",
+      "sha256": "1958f90a1a7cd91d16b70a3fc15d77b95847dd321be24c880c665581a961e970",
+      "bytes": 62206
+    },
+    {
+      "file": "media/chapter-I/frame-000356.png",
+      "sha256": "82bc285dcc8717a1be927ead1a5c909219292ac41510d487bb12b347ed8b7d78",
+      "bytes": 63540
+    },
+    {
+      "file": "media/chapter-I/frame-000357.png",
+      "sha256": "af2381490b3fc1fc98df9bf3d311e3d491fef60ae724f743d1418743d1c93bb3",
+      "bytes": 63493
+    },
+    {
+      "file": "media/chapter-I/frame-000358.png",
+      "sha256": "231db98a48209c44c762dc2e008d69311f5adf5a45f272287144cf0f5eae5448",
+      "bytes": 63692
+    },
+    {
+      "file": "media/chapter-I/frame-000359.png",
+      "sha256": "98761a4d73db8a93d3abf72a0ac7fc4cc2fef965d6cab130df2e19afcfbab5eb",
+      "bytes": 62586
+    },
+    {
+      "file": "media/chapter-I/frame-000360.png",
+      "sha256": "8715ec26ba6ccdf190adfeba3944b1d215b302bb04903f6407f82c3db795b27a",
+      "bytes": 63535
+    },
+    {
+      "file": "media/chapter-I/frame-000361.png",
+      "sha256": "4cfefaf3f0e1e6af74e2f6c8fa0edc42cb5b47b01bf8f1a4cd18cb8606c0e8f1",
+      "bytes": 62921
+    },
+    {
+      "file": "media/chapter-I/frame-000362.png",
+      "sha256": "6b67d9b915a501d5b34fbbe0ff8c686dfd0c5e8abddef86343735b9bf78c447f",
+      "bytes": 63068
+    },
+    {
+      "file": "media/chapter-I/frame-000363.png",
+      "sha256": "34533caacf76d95e84a4657d334feb4fa370e5ea06dc2854e8143082977b9a35",
+      "bytes": 64003
+    },
+    {
+      "file": "media/chapter-I/frame-000364.png",
+      "sha256": "0340d01ed5b84729d60a8281805cd93ce152e600a970ac6c3f33e623634caab9",
+      "bytes": 61819
+    },
+    {
+      "file": "media/chapter-I/frame-000365.png",
+      "sha256": "d363f6f084e49504b0daba1171b09e0540a0b26d7ac696d9e85d1ab11ba14e96",
+      "bytes": 63344
+    },
+    {
+      "file": "media/chapter-I/frame-000366.png",
+      "sha256": "47da3168b3e25d4fa7c76fbdbaae77f39091f79ae311046e8b4466b6e16de1dc",
+      "bytes": 63556
+    },
+    {
+      "file": "media/chapter-I/frame-000367.png",
+      "sha256": "53f357807514662ef3302c82003caafb8fb168559eab06b0bac6630e29834f84",
+      "bytes": 63893
+    },
+    {
+      "file": "media/chapter-I/frame-000368.png",
+      "sha256": "7cc10995cf7278d18206c127017f27fc5b16a2f3521bef5bda38e6b25551747c",
+      "bytes": 63920
+    },
+    {
+      "file": "media/chapter-I/frame-000369.png",
+      "sha256": "48d2000bf38ad9b3fa4bfd2651951663d3cba2cc0e817937e681e9af3e82dd25",
+      "bytes": 63686
+    },
+    {
+      "file": "media/chapter-I/frame-000370.png",
+      "sha256": "faf7adb1929e12eebbe5f97c07da37dbe7e9f1042d5267ef38256d3f9a0dde87",
+      "bytes": 64123
+    },
+    {
+      "file": "media/chapter-I/frame-000371.png",
+      "sha256": "140807ba1755513598c5132caa121a475eb2b046778f645a9dc3fa6e3367486a",
+      "bytes": 63425
+    },
+    {
+      "file": "media/chapter-I/frame-000372.png",
+      "sha256": "d298e790adc2facd34b264788712c883a7aef2aaa333357e83d09b0b1274a339",
+      "bytes": 74894
+    },
+    {
+      "file": "media/chapter-I/frame-000373.png",
+      "sha256": "c801a5c3579be7f20352023ecf082c8e7dd0749c9ff3cee5071000193b38fe22",
+      "bytes": 73850
+    },
+    {
+      "file": "media/chapter-I/frame-000374.png",
+      "sha256": "84df6c283d869c20d4f10488fa29429b2585d45c1b8c5aa660dd99cc1897622d",
+      "bytes": 74268
+    },
+    {
+      "file": "media/chapter-I/frame-000375.png",
+      "sha256": "b51be74d7882dfba3437500fd3faf97ca22b6496a112698908b882c2e119a63d",
+      "bytes": 74610
+    },
+    {
+      "file": "media/chapter-I/frame-000376.png",
+      "sha256": "8ff0607948c0641c315d0f4af4ee8c4108444e656e3a460f1070bf8f6ddbd017",
+      "bytes": 74299
+    },
+    {
+      "file": "media/chapter-I/frame-000377.png",
+      "sha256": "8fa0750ae3dbcf665666cb2b93696850d64a1cb4e21f92091d80e1101517f648",
+      "bytes": 72935
+    },
+    {
+      "file": "media/chapter-I/frame-000378.png",
+      "sha256": "5ba625f61579d35f98b2146ee381d2aa8495c9a6b77b766d1f7eb52a7f17c216",
+      "bytes": 73275
+    },
+    {
+      "file": "media/chapter-I/frame-000379.png",
+      "sha256": "9b8fe87fec34f92fd0acdb45b88a9bce7939f0923c2e1fa953e625d309f6480a",
+      "bytes": 72845
+    },
+    {
+      "file": "media/chapter-I/frame-000380.png",
+      "sha256": "a188c62bb7afd9dab577aa1d264d92ec977f89a36a715a69bffd19bdb1035acf",
+      "bytes": 73845
+    },
+    {
+      "file": "media/chapter-I/frame-000381.png",
+      "sha256": "3f737bfa1684767b0d251e6cc03bcbcb763a6d9a8da6dd37e7bbb68f9c5207b6",
+      "bytes": 74256
+    },
+    {
+      "file": "media/chapter-I/frame-000382.png",
+      "sha256": "c0fa07b7135d9d976ac36575086ceed6b90cb574830ceeeafd55602f9491b346",
+      "bytes": 74566
+    },
+    {
+      "file": "media/chapter-I/frame-000383.png",
+      "sha256": "8183ea8c949fbff16609d4c9e118e0c8171f2e277a6357af15be7f2d97f8e36b",
+      "bytes": 73779
+    },
+    {
+      "file": "media/chapter-I/frame-000384.png",
+      "sha256": "6abcc7719c8a84295dd13aae2d15272df3ee58f0d17ee3f31e6988c8670d9759",
+      "bytes": 75025
+    },
+    {
+      "file": "media/chapter-I/frame-000385.png",
+      "sha256": "b0e3f82b6e809598881ac21ff04175f92b5e646ced4e218bfbc61b92c38cc8e1",
+      "bytes": 75214
+    },
+    {
+      "file": "media/chapter-I/frame-000386.png",
+      "sha256": "7abf61bf3dd53bfb507d4b3ed8fcda61855212960d0a38985b514975f70df48f",
+      "bytes": 74548
+    },
+    {
+      "file": "media/chapter-I/frame-000387.png",
+      "sha256": "0a3850541abd01cfbd25d3e8c5fea4e1d01361f2da834ef505baa075989310ae",
+      "bytes": 74744
+    },
+    {
+      "file": "media/chapter-I/frame-000388.png",
+      "sha256": "3e25bca6dee512ef652eb6e296ea674bb9a81c507e944797a84ba323123152f5",
+      "bytes": 74788
+    },
+    {
+      "file": "media/chapter-I/frame-000389.png",
+      "sha256": "98da29899f5bf49e5f40084fb6eac32cb9e6f63fa14f49d27eccb5494ac2aa8c",
+      "bytes": 74337
+    },
+    {
+      "file": "media/chapter-I/frame-000390.png",
+      "sha256": "0451bdc223f97fc26aee7a9f51af6708b4d0f8645cdd4cd8afc50d634daf43e4",
+      "bytes": 74155
+    },
+    {
+      "file": "media/chapter-I/frame-000391.png",
+      "sha256": "f3f2e6067a5f1d84c05694aa316402f1e5d502ee139902265f263c3a77751884",
+      "bytes": 73349
+    },
+    {
+      "file": "media/chapter-I/frame-000392.png",
+      "sha256": "92893f354291110b65f1cdb0d8211b6cac7637eb96a3bc8276aa1ab31ebf7db7",
+      "bytes": 74321
+    },
+    {
+      "file": "media/chapter-I/frame-000393.png",
+      "sha256": "41f3689a089fc9bebeb0954f6b9856b84c1a193daa1cd3a80f4b03d966a6882b",
+      "bytes": 73917
+    },
+    {
+      "file": "media/chapter-I/frame-000394.png",
+      "sha256": "636da168134a8577b3e4045c9ed3dba3126c9eefe57cb87112ed547c1d0d911a",
+      "bytes": 73726
+    },
+    {
+      "file": "media/chapter-I/frame-000395.png",
+      "sha256": "6d773eb86cd29d95edc6936d49dcedfd6e534b2fd0510d6e4d52eb16a5babffd",
+      "bytes": 74359
+    },
+    {
+      "file": "media/chapter-I/frame-000396.png",
+      "sha256": "432651d76476ac219e81241bb14a3ec463233b896470f13ad0c557a588e9fdaf",
+      "bytes": 73175
+    },
+    {
+      "file": "media/chapter-I/frame-000397.png",
+      "sha256": "3d9e11a0110f28ad606cd6cc8119b7fc599ac9b1451e431c6881ed18e4257a96",
+      "bytes": 73111
+    },
+    {
+      "file": "media/chapter-I/frame-000398.png",
+      "sha256": "2a509db6a922622460b76824e7e504b0e0106052d74d1e429110f1137c6c88ab",
+      "bytes": 71720
+    },
+    {
+      "file": "media/chapter-I/frame-000399.png",
+      "sha256": "1e9fcd2c253393917e9d952d12cb8c99eabe5fcbb03c08a2fad10de989c869f5",
+      "bytes": 72514
+    },
+    {
+      "file": "media/chapter-I/frame-000400.png",
+      "sha256": "e1f81323629c99cb46f0f5db4fec5f4969134583a6118d6c9ec9cbbc3d401ec0",
+      "bytes": 72807
+    },
+    {
+      "file": "media/chapter-I/frame-000401.png",
+      "sha256": "981651e4f8fbfb844263b2ea6982b6e37256cce2c64af946ca74fbaa59f8006e",
+      "bytes": 72133
+    },
+    {
+      "file": "media/chapter-I/frame-000402.png",
+      "sha256": "86f29195825e7a178739828f6f006ef6d338fad2e5b2e20af0deb850c503027b",
+      "bytes": 73027
+    },
+    {
+      "file": "media/chapter-I/frame-000403.png",
+      "sha256": "930d1aadc8c390a396c9859130546bfd1409f37378746fdb53b3fc8d17707775",
+      "bytes": 71751
+    },
+    {
+      "file": "media/chapter-I/frame-000404.png",
+      "sha256": "3ddcf14a58584a69062736726bd2cc02ac1792755bf43745151dae097a736cb2",
+      "bytes": 73617
+    },
+    {
+      "file": "media/chapter-I/frame-000405.png",
+      "sha256": "abe2b72942e5a0baf8c754edfb53717836595eaa1f6cbdb3bcdd84a56e566cb2",
+      "bytes": 73035
+    },
+    {
+      "file": "media/chapter-I/frame-000406.png",
+      "sha256": "d0399dc66e997213d385ad511722c79e5f4735857c4eb23709aa034069897d2d",
+      "bytes": 71959
+    },
+    {
+      "file": "media/chapter-I/frame-000407.png",
+      "sha256": "d2be5ed5874178400249e73e33ccc227077cc4b158bf561650126baa1147a885",
+      "bytes": 72048
+    },
+    {
+      "file": "media/chapter-I/frame-000408.png",
+      "sha256": "92068927b451ec5298afa336d378f1c0152f4413122e909df249b68b927ae24b",
+      "bytes": 72300
+    },
+    {
+      "file": "media/chapter-I/frame-000409.png",
+      "sha256": "a415816aa7f8d37ceb0ec125a4a657c0c6b224792503d2a901a946fe8b086125",
+      "bytes": 72169
+    },
+    {
+      "file": "media/chapter-I/frame-000410.png",
+      "sha256": "6814ba709c00ebd2d184510780468264dc31b6e11d421f3a8cebb2f3e47a2d83",
+      "bytes": 71725
+    },
+    {
+      "file": "media/chapter-I/frame-000411.png",
+      "sha256": "194aa93c676aaa9820e457703ebd12bd7f4746196822b9ff2c13b26f5daf80a7",
+      "bytes": 71965
+    },
+    {
+      "file": "media/chapter-I/frame-000412.png",
+      "sha256": "85fda37e9740eec530ea115643d8c3a9b9043d0045868df4875b3c5367e3732e",
+      "bytes": 73156
+    },
+    {
+      "file": "media/chapter-I/frame-000413.png",
+      "sha256": "45abb134016e13a8a03fce65fd5b5faa0b914cea6c8166b4da259c68a71658ff",
+      "bytes": 73001
+    },
+    {
+      "file": "media/chapter-I/frame-000414.png",
+      "sha256": "92a643c64601645799932eeeeab3614b4f0bd6192f5ca76aaae03485d2826d96",
+      "bytes": 71451
+    },
+    {
+      "file": "media/chapter-I/frame-000415.png",
+      "sha256": "0b093c46fc304721eb3155de99ddcd7296ef6f8b7468271e5884590c1698059a",
+      "bytes": 72391
+    },
+    {
+      "file": "media/chapter-I/frame-000416.png",
+      "sha256": "2b8bd189d6d30b36448533d45d4b1f3c13ccb6f5ddddbf476f0f353e8c71e578",
+      "bytes": 72859
+    },
+    {
+      "file": "media/chapter-I/frame-000417.png",
+      "sha256": "092db7765923325844692bdeabb6623343920454cf5042fb81b14255062b9660",
+      "bytes": 72140
+    },
+    {
+      "file": "media/chapter-I/frame-000418.png",
+      "sha256": "c99669ce674c1b1bd0f85b58c35129612047813fbf2b761dc4747983619a7382",
+      "bytes": 73393
+    },
+    {
+      "file": "media/chapter-I/frame-000419.png",
+      "sha256": "b3f5c7de000e5760912a98a5da297adb85f62d7939c3f116ede76ef89405f5fc",
+      "bytes": 71853
+    },
+    {
+      "file": "media/chapter-I/frame-000420.png",
+      "sha256": "c4e0a9300952cec109b1ec9a27c28daf94b919e1e79980fa9a1274145752335d",
+      "bytes": 73285
+    },
+    {
+      "file": "media/chapter-I/frame-000421.png",
+      "sha256": "b088e4f57efb86510260bcac2091cb97e4bb5223bc1fda0ca7ad70f70084e67d",
+      "bytes": 73395
+    },
+    {
+      "file": "media/chapter-I/frame-000422.png",
+      "sha256": "7076463ae978313facf834202aff4ba8e73852afcdbb6fb80dcefd3b1972183a",
+      "bytes": 72821
+    },
+    {
+      "file": "media/chapter-I/frame-000423.png",
+      "sha256": "16d32c2ef633bc7b4fd04bf5fdbd207e4cd66a38d23a614ccd99f7f3211828e5",
+      "bytes": 72107
+    },
+    {
+      "file": "media/chapter-I/frame-000424.png",
+      "sha256": "bc074c47fb60fa1db72304a75c1ebb5646417bd8d35012b66abfcea578db2983",
+      "bytes": 73008
+    },
+    {
+      "file": "media/chapter-I/frame-000425.png",
+      "sha256": "bad4e1b94a774d19b7c4a4ebab93e3ef5f5ab66471ecd0ebc7d1fb1a30a95c7b",
+      "bytes": 73174
+    },
+    {
+      "file": "media/chapter-I/frame-000426.png",
+      "sha256": "8615b2642bc7455d99fbcc3cc031a6358401064b8415d67042337eacb3994deb",
+      "bytes": 73033
+    },
+    {
+      "file": "media/chapter-I/frame-000427.png",
+      "sha256": "ec7b63bcf620f5270d8d2c533c3400f9414f770bd385f9b471e34994725c30bb",
+      "bytes": 72961
+    },
+    {
+      "file": "media/chapter-I/frame-000428.png",
+      "sha256": "01b34af973f874893926e666f162c9a4fef695011c9d2a27731530bf1f1ab527",
+      "bytes": 72254
+    },
+    {
+      "file": "media/chapter-I/frame-000429.png",
+      "sha256": "4bddd0751f7ef651196c33b1e8a59dd48904bd29e512adfb1f3f44042ebd7868",
+      "bytes": 72137
+    },
+    {
+      "file": "media/chapter-I/frame-000430.png",
+      "sha256": "b42ebd311579b8d62f4e934b2ab6d3831e04d565fdd59150d7d847b63b2eea30",
+      "bytes": 71946
+    },
+    {
+      "file": "media/chapter-I/frame-000431.png",
+      "sha256": "db39612a2b7b590b47e2663e2268aac8082f90058771be0d5870df34494d3375",
+      "bytes": 72087
+    },
+    {
+      "file": "media/chapter-I/frame-000432.png",
+      "sha256": "95f64716250ddb702cba25e347aa3f8d5c6aca5ad4c0580d5044208f9963b6a6",
+      "bytes": 72694
+    },
+    {
+      "file": "media/chapter-I/frame-000433.png",
+      "sha256": "4dd3e2518204f205ed10b53d1891f1c8ff4f12d171a93b39cd48cd7ddf784dba",
+      "bytes": 72141
+    },
+    {
+      "file": "media/chapter-I/frame-000434.png",
+      "sha256": "c290c63e6e2bc3eb93dbfd66083c8f0ae27f90f62721a08af5831988a29a38aa",
+      "bytes": 73169
+    },
+    {
+      "file": "media/chapter-I/frame-000435.png",
+      "sha256": "e2dc53b08f78745385156cffb4d0035dfb81f15e6c3caa85f73cbefb347139d5",
+      "bytes": 72615
+    },
+    {
+      "file": "media/chapter-I/frame-000436.png",
+      "sha256": "eeb61c23af04e996ec57f4eb1349a9654c5b5ca28dccd213aab751f62ace323b",
+      "bytes": 73801
+    },
+    {
+      "file": "media/chapter-I/frame-000437.png",
+      "sha256": "eebae5706fc85c64a18e3dbc7944e8a1f11bf7d0b4adf46383b0438ed26e5db5",
+      "bytes": 72609
+    },
+    {
+      "file": "media/chapter-I/frame-000438.png",
+      "sha256": "d1b62b054cb582409d489b57d9d0aeb7c48653f8ef1ead8e9c7df1771182b8f7",
+      "bytes": 72565
+    },
+    {
+      "file": "media/chapter-I/frame-000439.png",
+      "sha256": "d50c879855c8d76972adc0093352b61c279041a44d8abeb21404064f1ebfefdd",
+      "bytes": 72229
+    },
+    {
+      "file": "media/chapter-I/frame-000440.png",
+      "sha256": "b20ca5be0d0c71d8e62a2ae3d02d335626755d5fc7d96cb4a5370ecebcbb2aa4",
+      "bytes": 72711
+    },
+    {
+      "file": "media/chapter-I/frame-000441.png",
+      "sha256": "e092436b07316f91fb665b80233dc5ce52d72876c3ae3c3d35286eb876b02386",
+      "bytes": 72284
+    },
+    {
+      "file": "media/chapter-I/frame-000442.png",
+      "sha256": "d6775745432cab2710d59c5161712a6adf026a188a3f888b2b923aed7650901a",
+      "bytes": 73397
+    },
+    {
+      "file": "media/chapter-I/frame-000443.png",
+      "sha256": "56e93e9e33c57e05a9f878ce30aee963814d52151372b45f7aa1f3bd92c6fc65",
+      "bytes": 73990
+    },
+    {
+      "file": "media/chapter-I/frame-000444.png",
+      "sha256": "ce429f5db029c0153b5778e0809b0dd42365519813d76917420b058691ebb8b1",
+      "bytes": 73485
+    },
+    {
+      "file": "media/chapter-I/frame-000445.png",
+      "sha256": "8d929c05e6cd9b870195767e80a434c988777db87d97d9d76834ca67cf67443a",
+      "bytes": 73613
+    },
+    {
+      "file": "media/chapter-I/frame-000446.png",
+      "sha256": "7bc5c8dd17c844d97657766aca29ba8ab74e6ca4da5013ed2be66e4ecc92b89e",
+      "bytes": 72633
+    },
+    {
+      "file": "media/chapter-I/frame-000447.png",
+      "sha256": "31f75760b9459dc7b16b8619f948260921da1c2b6046bfefafad3ea3c891641e",
+      "bytes": 73725
+    },
+    {
+      "file": "media/chapter-I/frame-000448.png",
+      "sha256": "afacc49613b349a52c86ec1209d8ce0e5ce88e4b41d56f66036c611c4abe0499",
+      "bytes": 73041
+    },
+    {
+      "file": "media/chapter-I/frame-000449.png",
+      "sha256": "3263baba3760d9796f88842b52d09e128ac65d15c1b159e8e4c74d711794df50",
+      "bytes": 74297
+    },
+    {
+      "file": "media/chapter-I/frame-000450.png",
+      "sha256": "e6800b2bcc4747a0fa51cfec259b31ef190c4a0556120ddeb515c90c840531d2",
+      "bytes": 73434
+    },
+    {
+      "file": "media/chapter-I/frame-000451.png",
+      "sha256": "4e4caf8655794b74e1b875a2b97680913714c65a1f8eb0147243c036d0327e9e",
+      "bytes": 71338
+    },
+    {
+      "file": "media/chapter-I/frame-000452.png",
+      "sha256": "f2460184630ca8a8ea8cbeb3bc2ae878d33aee7ba827c3ea171ed05405db7d9c",
+      "bytes": 72428
+    },
+    {
+      "file": "media/chapter-I/frame-000453.png",
+      "sha256": "d3c0369bba57f2e5401e6c9d7e27dabd6656059b81239540ee8454ac3157f600",
+      "bytes": 71515
+    },
+    {
+      "file": "media/chapter-I/frame-000454.png",
+      "sha256": "40c30705a8082881eba81ea587cbf89736a0bf017112ada80307523b76347773",
+      "bytes": 72148
+    },
+    {
+      "file": "media/chapter-I/frame-000455.png",
+      "sha256": "7bcd9e8d817e89bdc2a2a5930557840e5f3f5f367333b99e823a428cf3a979bd",
+      "bytes": 71400
+    },
+    {
+      "file": "media/chapter-I/frame-000456.png",
+      "sha256": "ce4e8b4bb19a6d8329249c41b7129a7e98cf1bade80422c8f9e5aef5ed06c197",
+      "bytes": 73420
+    },
+    {
+      "file": "media/chapter-I/frame-000457.png",
+      "sha256": "fb77debd644dfa5fcceeb90892889a314f73f49e5c4286f120b0c32159103a3e",
+      "bytes": 72225
+    },
+    {
+      "file": "media/chapter-I/frame-000458.png",
+      "sha256": "8ca2d36c54bc0057859e7918eb44e2de90a08b766c3233e67ceb7a1903d26522",
+      "bytes": 73704
+    },
+    {
+      "file": "media/chapter-I/frame-000459.png",
+      "sha256": "10d6fd6424f45a855777676a482d7efb7a8e8194f494f50b7db0e167b5b75bb6",
+      "bytes": 73917
+    },
+    {
+      "file": "media/cinema-close.mp4",
+      "sha256": "ef635c1a98a76f92b10ce78246cee1f37d1718da8c7a07745b7f05e0c58ff08f",
+      "bytes": 388537
+    },
+    {
+      "file": "media/cinema-hero.mp4",
+      "sha256": "27fa37e7f9907c7592fa8c91d45cbc0d9209daa9d72c5f8961030876da3dc45f",
+      "bytes": 1578791
+    },
+    {
+      "file": "media/cinema-high.mp4",
+      "sha256": "6b956e90a5cfd9766f0602864f88b01c960cc7510bf22894fd9c069ce2cd1267",
+      "bytes": 303052
+    },
+    {
+      "file": "media/dawn-still.png",
+      "sha256": "19cb818fe8b2fff79b9ba03e80297c383b7d78b4e2eeed6238b7609c05df6de8",
+      "bytes": 60720
+    },
+    {
+      "file": "media/emberwake-60-mix.wav",
+      "sha256": "565295d97f5525f3f6cec6dd722c5fd8b87932b58b2e10d087a3980762665da9",
+      "bytes": 17280044
+    },
+    {
+      "file": "media/emberwake-rta-v2-mix.wav",
+      "sha256": "dac11d93a85dd84dc51025ba77dd92b255f4bf6609e305e16b3afbd6fc50f042",
+      "bytes": 17280044
+    },
+    {
+      "file": "media/time-attack-menu.png",
+      "sha256": "fbecea4c2dffa5ebbbd0dd935767c5d31d87a53675e6336f127f60f5d72f4e00",
+      "bytes": 93902
+    },
+    {
+      "file": "projects/01-emberwake-rta-v2.ecproj",
+      "sha256": "a61b7d0e59a1c725695f9e0f71e286e696cfd4c5f4d6295e29479d29cbfddbb2",
+      "bytes": 7215443
+    },
+    {
+      "file": "projects/01-emberwake-rta-v2.fcproj",
+      "sha256": "846d08aaaf16a22862bc1455ec1622c4bf651660052aa760e52479e2756193fb",
+      "bytes": 5266
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/all-scenes.jpg",
+      "sha256": "0bf659307bd759b1df042e302039556086290d549e5ba1e2ac3ba928a5c12f4d",
+      "bytes": 185989
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/all-scenes.json",
+      "sha256": "e75e0f11706efa22479e918f490e0ee6d7b9cad8b2e448d82fca6e60d8ba737a",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-01.jpg",
+      "sha256": "eed07ff1a9bca255ff0b69f4c4d76c3334423de726da8e6597e4e822fede8299",
+      "bytes": 75834
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-01.json",
+      "sha256": "e2a77f8c4b11bbf97b33aff5df288970621287414682240c6ed04eece9e00741",
+      "bytes": 179
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-02.jpg",
+      "sha256": "38c1ecbf8412217cd46ac847e7c8e7ead9221333d80392f58474935014437cec",
+      "bytes": 74733
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-02.json",
+      "sha256": "e30d826a477c20bb9ebbc3812255e9b359cea43b8e21b44821efcfc1c556a53d",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-03.jpg",
+      "sha256": "9d908be5ea2a1d0db1c0694f730e4add7f1c1178ab55d62f7caec5aafbd2f1e7",
+      "bytes": 75169
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-03.json",
+      "sha256": "0335e92badb749c8ab2c1023dec8bb10a7d45eddaa453baba7eb86f8844b9d45",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-04.jpg",
+      "sha256": "f00d90269a658ed85c5d71f022023d63bcca4b08441d504298e9fb5f6e58c8cb",
+      "bytes": 88775
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-04.json",
+      "sha256": "caea2fd98e0fe1e6bea3930bb646a53e53d704824fc93b7aa57e212df18d6547",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-05.jpg",
+      "sha256": "08bdd76963bd16e93952893d19fc5bb7ca8a7faed602f3b61f4cf65609bee5f2",
+      "bytes": 77772
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-05.json",
+      "sha256": "e30d826a477c20bb9ebbc3812255e9b359cea43b8e21b44821efcfc1c556a53d",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-06.jpg",
+      "sha256": "c3d469bf4370c3cf42aaab383b1c3bf9999e0bab158026f1eec7f6750f7e3b49",
+      "bytes": 78717
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-06.json",
+      "sha256": "9c3bb4bce778bfab8644ebfebd1fe0bb4a2c470dbbfbb47b680bf397ac05c79e",
+      "bytes": 179
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-07.jpg",
+      "sha256": "0a2364bf0f712fb66a3467c157003ea18490100e13d67d8f0f3439af7613998a",
+      "bytes": 75664
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-07.json",
+      "sha256": "009aa96e3baae85495004bb509490b57c8b35c24f852d7af3375017aea20d65f",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-08.jpg",
+      "sha256": "c303bff5e8b3a14548e850d598a5dd80cd301ccb99d8729581f6bf5ef35c96f5",
+      "bytes": 69147
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-08.json",
+      "sha256": "81916aed41340ad642b8f646a85915eabb00682ae5df9aec1e2d7a941fa27c27",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-09.jpg",
+      "sha256": "78beca425cccd16272032ce1a63a46a8d1f923e959b1db6243d6928e568f697f",
+      "bytes": 77801
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-09.json",
+      "sha256": "97f98152f6418b9c7b35bad74799e15e701a2e6d3f40977ff43b4cb7e7edbefa",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-10.jpg",
+      "sha256": "84e5b72d6a1ef1d688efcbb1cbfb0b0c601aba91357ca0c513f9db73d63cc10d",
+      "bytes": 72082
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-10.json",
+      "sha256": "5beb8227782c1b14efc128a500d62884991aa08826b67f71156fb3ac837b9b2f",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-11.jpg",
+      "sha256": "a597c64d2ce98c3239713860d5579a604643bcaed78103a89eaa8b61e4787be7",
+      "bytes": 78002
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-11.json",
+      "sha256": "5b78efef8069f492c90bddd6a72f8ebe9b76c7fd852836def3e98532b2cadaae",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-12.jpg",
+      "sha256": "437f3fe52c96a427c6fe62e432b28aaa42196e7d58c0824c8da5cebf6c5a8ec1",
+      "bytes": 69248
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-12.json",
+      "sha256": "89f992096fc670f1e51516e669061ef5edfa80f1719e0e6724dfaecca83ceab5",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-13.jpg",
+      "sha256": "4f01fe977bf7432d01a4c9ea23b59bbf043cc5c8ce1de5ba3a95bb64d6248d3c",
+      "bytes": 74234
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-13.json",
+      "sha256": "c0e070085811a6662d23a31913979c5016f1c7903cced6955a7242fa4afd2c3d",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-14.jpg",
+      "sha256": "ece0bcf1030cea87a297a6bbc3f780c69b2fc7b625a7dc0556ca08d94bcfc020",
+      "bytes": 71321
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-14.json",
+      "sha256": "10663c235a307252fcc20f1a28a5ce859f20646d46ebb63766f53e63865fc2d4",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-15.jpg",
+      "sha256": "be7823e396ee59f4097ac0bf13a3a16c759fa90f21682cd7def66ee5e02ff8ea",
+      "bytes": 67790
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-15.json",
+      "sha256": "268eb5561c2d21da98e6064df7cbd6e830f175997e3baead64a4ab80575064bf",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-16.jpg",
+      "sha256": "3d5c803bc7a93997b8e80a70afde1f9091728e57561e58513d9f5439f5bcefdb",
+      "bytes": 79248
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-16.json",
+      "sha256": "89f992096fc670f1e51516e669061ef5edfa80f1719e0e6724dfaecca83ceab5",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-17.jpg",
+      "sha256": "ff2a3ebdeb7aef092270c415fdee79b42bd586bfb6c7aa837818fcb3f18b05cb",
+      "bytes": 72968
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/boundary-17.json",
+      "sha256": "ccb6486481b6cbbe96c82321565a25fd7532df0ad76622180f3b58b8623cf5d6",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/build.json",
+      "sha256": "3d0d134e91e5eaa97208223b9e9c0c95c7134fe358d41a396a2a94b8e3d97707",
+      "bytes": 1146935
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/continuous-cut-01.jpg",
+      "sha256": "20db9e48072f3313b69516061be3c9b2e80527820dbb52aad43bed58a5443fbc",
+      "bytes": 127205
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/continuous-cut-01.json",
+      "sha256": "5eb7c29f039d0982da39fe1f04823e962656dd8faf7220f771ad103c09c01091",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/continuous-cut-02.jpg",
+      "sha256": "6efb9880a530739f35299c991bd1cba859169065d8ef1be8571f0e2be73a3365",
+      "bytes": 94680
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/continuous-cut-02.json",
+      "sha256": "707309402774760c072a50d0715cd1eb8fb6531a88a318f8f355610ca804e264",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/continuous-cut-03.jpg",
+      "sha256": "c4d44cfd778c36f7ed59747a9748e19089b117383ca2e93b785cd35ba6eaf7bc",
+      "bytes": 111094
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/continuous-cut-03.json",
+      "sha256": "1f99e9cb89ae7e9c3d96849774d268882353a7c422efa558d8f8908233e695fa",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/continuous-cut-04.jpg",
+      "sha256": "80e9218f531341610d18972325a4ce771007f4e8149754a3a71eb4a2d89d24bd",
+      "bytes": 107477
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/continuous-cut-04.json",
+      "sha256": "ca0a2429f23fc64aca8dd26c888dfea0cc01be2c05fe338415306efe8ec1ad8e",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/continuous-cut.jpg",
+      "sha256": "20db9e48072f3313b69516061be3c9b2e80527820dbb52aad43bed58a5443fbc",
+      "bytes": 127205
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/cover.json",
+      "sha256": "a2d1d862a0fde5466ef84c8ca0bff51cf1d2b35dcbb48a22e60939f59ee8f314",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/ec-footage.json",
+      "sha256": "18fa0257991b62a479e6fb5079fde9d73a43dc3bf421522732fe672b12e00d1f",
+      "bytes": 483
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/ec-render.json",
+      "sha256": "c36826319ff1b4f4ebd200b39675cfda5bc5d07eb596c4d6b62586fb03984ceb",
+      "bytes": 8299
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/fc-build.json",
+      "sha256": "b1adb32db64fd3671c5e1e254df75410a00e1966c0dcc2c790c121c4a629aaa7",
+      "bytes": 829
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/fc-export.json",
+      "sha256": "64c674b0a4f8a353c51df5f16830a66ae3652189f1dc453210180cd78117f3bc",
+      "bytes": 1315
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/fc-place.json",
+      "sha256": "f95c6b5237f6d5a1d55fc1058c97cb662813eacf72117f22922f20978e82d342",
+      "bytes": 497
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/fc-status.json",
+      "sha256": "a34db4a214bf56a95cd2d84dab364a2b41cce58f0b56f2c483ab4c6122151d7c",
+      "bytes": 1883
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/ffprobe.json",
+      "sha256": "2cabf9bed4c51ff45eb1e8953f53f3e15c53b80ec705462ff92f32121bbbfcfa",
+      "bytes": 3792
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-0.7.json",
+      "sha256": "4d426aa63c9503cf4d8f9a99cdf58ddd0c68df01f00e618e97c04307f8d27225",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-0.7.png",
+      "sha256": "5abedf38f725278a8c8a5c58ce9749e2c4ff4c65d83f65fe1b1aeae5728067f5",
+      "bytes": 329055
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-1.5.json",
+      "sha256": "0d9a05ab807e881a99aec0d374e0fa15e9c1764f95b4091a7e6b7293c81354ad",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-1.5.png",
+      "sha256": "7769faf620fae6d31b98aa64f5fa311506a1cf79ded18fe90d2786f912fec460",
+      "bytes": 474302
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-10.7.json",
+      "sha256": "f14a61aed63b5c911f868c99c19c936435d24fb232a5e9615d8afcd1c79e0edc",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-10.7.png",
+      "sha256": "51027433fb6fe952bc26754e3c6e4241181c981163b9f7702672cb01683a79cb",
+      "bytes": 477457
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-14.json",
+      "sha256": "c0e070085811a6662d23a31913979c5016f1c7903cced6955a7242fa4afd2c3d",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-14.png",
+      "sha256": "d415f6b96db09813f7b64b49abf4761f32664437c5c9c8da0686f7bf5c50fa28",
+      "bytes": 222850
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-19.533333333333335.json",
+      "sha256": "4e82daaec7a42dad0c99b33f7b027c7b5e226726b75acb54377bb975e2dd5a0a",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-19.533333333333335.png",
+      "sha256": "f5f1b9af9e81f9470095cf9100a588f28652f2d95e2db1b0aaa42f740d7257e4",
+      "bytes": 472718
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-20.833333333333332.json",
+      "sha256": "cb41c0f8bd9f363dafb0328a2a735d8e92316603116ae19fda8cde14b61bfc5c",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-20.833333333333332.png",
+      "sha256": "173f44bc3fb12a9f4124de7cc6f19abf2075374cdcd3671efcb930354e0be899",
+      "bytes": 237072
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-22.133333333333333.json",
+      "sha256": "9b4ba5269ba0877d10337c36854ad2b0d7bee0e1d23b25d531a91020dc063081",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-22.133333333333333.png",
+      "sha256": "5e20e13933f33a8c95f423ab060d6e5d79a204cc764dc8f6bbb2b5a8ec04b02f",
+      "bytes": 278967
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-24.json",
+      "sha256": "7c5147beef066315eb110ab64f454deeb4911ef2cc4111a3d6e1419f51af8470",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-24.png",
+      "sha256": "a2973bb07b1265694fc886f6e8803e04abcecc62012b171d1807dc0cafabb248",
+      "bytes": 278807
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-27.3.json",
+      "sha256": "caea2fd98e0fe1e6bea3930bb646a53e53d704824fc93b7aa57e212df18d6547",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-27.3.png",
+      "sha256": "8e6089cdf75eed2251b17c93fec388d9b70b521c4cf6f3c3ee491b3ff899d219",
+      "bytes": 544200
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-29.7.json",
+      "sha256": "9145d38df8d0c8ab0be2fce2da1cd5e4cf1c89dcbb1ee2fcf37969e173236f37",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-29.7.png",
+      "sha256": "793e0093031b455e77240a391242390e569dbb34ddcbd2259ee04949b5ceac50",
+      "bytes": 400706
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-32.3.json",
+      "sha256": "72c9bc1e1e219da4d0000fe87363437649988ca393c30de2802c5a79c91145dc",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-32.3.png",
+      "sha256": "90d93be91532f86c8af4c245ab7614116f915089eb651bab99f89e9bc5fbbdd1",
+      "bytes": 400632
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-35.json",
+      "sha256": "4502225626dcdcfa86dd38b2eb5cfe3597679158202d151f9cc093905248c029",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-35.png",
+      "sha256": "89858b79aabcc6eb614294e0db74df39b3b19f1a35c22677b1a83c1630cb6f56",
+      "bytes": 440842
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-38.json",
+      "sha256": "aa16c3d504442a5bf8074a36a0f7c787ac0962361994e2179e9d42fb156d68d4",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-38.png",
+      "sha256": "a195dc04dd15ced9a6c4897f523cb2c3b1f1a6361bae2f487e9f3bc19ab1672a",
+      "bytes": 296970
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-41.5.json",
+      "sha256": "f29345c1e9371c2e1bf0e52d33be92fda245b65f1ff9535e998a33dbac7d86b3",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-41.5.png",
+      "sha256": "77dbf07236fd81fef46d38c063096a7d291995722b4d446cb46328e8f258c64e",
+      "bytes": 255106
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-46.json",
+      "sha256": "75d60794d51eab332034c48b300d70e9802806061bdc05cc1ac5de49f7d5fb6b",
+      "bytes": 179
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-46.png",
+      "sha256": "76b4a030edfd6591a54d652e64f5fcba10e4fcbc3eb92e568b030bf694db0a22",
+      "bytes": 650703
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-5.json",
+      "sha256": "177afce59840654e832ed0d1ce0adb585da8dd363b49207e24ccaccb869bf74b",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-5.png",
+      "sha256": "f48bdff98d8bcead562a40cbd250b2a1b981a185049a44b58f8669bc8fd35ebb",
+      "bytes": 706167
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-50.5.json",
+      "sha256": "17a89632c5a6d9e6df947a73d4a2e75c18d93f8e8c89820e3c4da857d2927244",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-50.5.png",
+      "sha256": "348a992d37f6ba568cb7a5845a3d0add5b7e31f66f8279170642d71bcb85b0c8",
+      "bytes": 329568
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-54.json",
+      "sha256": "e221e26554f17bb3d6af08b056588ac9ecb76aee37f5ac38135f36d3f2029d59",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-54.png",
+      "sha256": "83beea428923d039708c107150f02abcd3bc1e5c8110d48f2a4cd0e68f05176d",
+      "bytes": 314282
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-57.json",
+      "sha256": "2aefd8bd40778ff0faba048f7d4d2e70a30a6e00d178302d9aae3ce70d9c3f26",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-57.png",
+      "sha256": "57f6e0e4d0608538f9e40552549df20547e296e7d8faf3d5c8b22c07fdce74f3",
+      "bytes": 309915
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-59.8.json",
+      "sha256": "96ed8138a43cba3d3f67d808cdbc73d7c7d08367d3e8cce0b1fe83376d021dca",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-59.8.png",
+      "sha256": "18c953bb5a19438561e08a062a212a5ce7db3eafbc37a3c12a16974268242898",
+      "bytes": 310421
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/final-audio.json",
+      "sha256": "ac279894eeb0ba5770eb7f059ad15725ea4e5e7df8f31f354ed15019dda6c768",
+      "bytes": 217755
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/full-decode.json",
+      "sha256": "727d4a7ac6c3a941ea14d2fa144e458cd51e7dcb70df7d4767b2cb3bc600b326",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/layout-and-motion.json",
+      "sha256": "aaead10330dbfa134fb28e4f13839fd692eabc298316b729bba0d46a807ee5d3",
+      "bytes": 955218
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-01.jpg",
+      "sha256": "556b13a4a31c32ef71dab9d2dad3da1df6c636e2294f7d2fcd4e05f4bf95562a",
+      "bytes": 91149
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-01.json",
+      "sha256": "89f992096fc670f1e51516e669061ef5edfa80f1719e0e6724dfaecca83ceab5",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-02.jpg",
+      "sha256": "758e1073fda92061ad101cb405f880e06536a4cd05837e44851db1f72f6af952",
+      "bytes": 97574
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-02.json",
+      "sha256": "9331c48d8c18410da1ddcc9be374c981c9ffbd0b752b6feae27299d4c8ad5f6c",
+      "bytes": 179
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-03.jpg",
+      "sha256": "fb854da466f91e0657b2c6b4655407c0ba88d8b988750b808d52ed4aacbd1567",
+      "bytes": 84912
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-03.json",
+      "sha256": "2696b65c98c52481c22fc37c122a8051e08f7798cfad1fc55e869424f35c971a",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-04.jpg",
+      "sha256": "22d1c140a73364b655b2a89a572bdbcc22c109cdeeb36db85b7da0d220f78816",
+      "bytes": 80789
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-04.json",
+      "sha256": "29814ddb229824b578d76b1419c4d417e92a206b9a29274ab08cb7c1d1a3423c",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-05.jpg",
+      "sha256": "5bc924875fdec732ea65e0b44489fd81ab20447aafa8fc58ea9146a4c71efb67",
+      "bytes": 84497
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-05.json",
+      "sha256": "51de803178c985b24e810a5a9c8d201dd8256edbc70c7930ce12fe4162ec2aea",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-06.jpg",
+      "sha256": "20a4c30a26a917256fadd18d425914dfa9bfc7b2342597c62df9415f3ae8fb22",
+      "bytes": 87965
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-06.json",
+      "sha256": "28ec8efc48e204804cac223cd04bd9eeaa3334fea353fee9cc04ad18b0054ed4",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-07.jpg",
+      "sha256": "5ec6ca6c8ac72c571b537a1524b407dea69ed356175bf19184b7a2622ff33dba",
+      "bytes": 85477
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-07.json",
+      "sha256": "57247e25bf589beaa92494d2c59a0d8fb2f47e6203892661003f3d274b105a7a",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-08.jpg",
+      "sha256": "755004f86aa7b6683935022b2a85e5c320ecc66d26942b2d69427964690c1946",
+      "bytes": 96774
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/motion-08.json",
+      "sha256": "7a7e1048f4b5e0e0aa2cbffc57404f036bfd5a648899b3ae4d540723657ea9c0",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/picture.json",
+      "sha256": "1c90ffef7b5e1dfa8a8e7e9e1528367aaaec96a030827459e5d42f4f7460ca60",
+      "bytes": 219
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/preview-0.7.json",
+      "sha256": "4da2f1dd741b70db9b5aeeebd0de39ba7381f8cd866d5f55bd7d3f2b82ccd9ab",
+      "bytes": 717
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/preview-0.7.png",
+      "sha256": "2a4f40a5beeab94fd739c40a727109be127b6514e7496ad166b6af3fed893bc0",
+      "bytes": 147743
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/preview-1.5.json",
+      "sha256": "230192a3f375fcea71fb09226d0ffcf217ea1c87e9feeb4ba08304c5000b0b1d",
+      "bytes": 717
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/preview-1.5.png",
+      "sha256": "da44c5b8f8da0becf51d15eb901afcd7600757b826b5235364301a56616e1052",
+      "bytes": 141434
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/preview-10.7.json",
+      "sha256": "bec55c893388df107099497405ad6003fd5c9cdb17d2221e4ca0e73bf8964079",
+      "bytes": 721
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/preview-10.7.png",
+      "sha256": "62cb4d6b207800951a1d20e499cd258efc687a2633f9d86cfc9571acc33b618f",
+      "bytes": 211204
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/preview-20.3.json",
+      "sha256": "344ba0d1b675d238be3af18d9891c1ebe0ae785431daac202a124bef5000d0a7",
+      "bytes": 721
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/preview-20.3.png",
+      "sha256": "1d0e067849c551c9815aca91319285ca2f8e47d819ffe0d85dc4847d8938e2cc",
+      "bytes": 130196
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/preview-24.json",
+      "sha256": "0699c7348f9550196b59f5bbb255b6b42f7d713ac2290d846ac0a9068a976cd5",
+      "bytes": 717
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/preview-24.png",
+      "sha256": "3ed2c80cf25c1ccc81aa42cb9c6d362efc774425261ed13bf672417d624fb2f8",
+      "bytes": 166468
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/probe-command.json",
+      "sha256": "13ea7b8bdd402c6e674ac20cc6c2f76a345d8e03fff7cdcd90466073ab7586e8",
+      "bytes": 11185
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/rendered.json",
+      "sha256": "67fb35cd308fa4615ef8c92e4e8c409ffcb6d09dca4e07fafaf2b2304bb3f8a6",
+      "bytes": 439
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/review-frames.json",
+      "sha256": "14231194b6d583a6f0cb30fc93a33e19f456fa4cfa6909206bc52c6c8c009b4d",
+      "bytes": 17109
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/review-progress.json",
+      "sha256": "74d1211e27daf53481fd151c9a2ee6b1139cc3baa30baf6c8db2c1d9e68d16c0",
+      "bytes": 10059
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/saved-motion-audit.json",
+      "sha256": "d06ad211acee68334e98ae24418bbb8ed191bdf7d08dee3bbecdd8e15a8a0ea4",
+      "bytes": 285154
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-1.jpg",
+      "sha256": "1014ecc817ebc5d32b047ce36a675604198eb46050a5c0290dccc5827157ea5d",
+      "bytes": 226933
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-1.json",
+      "sha256": "c54351eacdd55e3c5d0d01682cff47af09887bdc94899ce1046dd65d22fbdfbe",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-2.jpg",
+      "sha256": "2b4e8208c2188f8afd0ca17f07835b91684a81cae406329024872cdfcc5c2469",
+      "bytes": 221718
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-2.json",
+      "sha256": "9145d38df8d0c8ab0be2fce2da1cd5e4cf1c89dcbb1ee2fcf37969e173236f37",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-3.jpg",
+      "sha256": "e26fe567f2a72e74f9317ca4bc6518f24bf3cb6e47fc5f18ea66dfe5108bbcc5",
+      "bytes": 213489
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-3.json",
+      "sha256": "0bae7a59c916b6e44b6e56006d857e27c017a2698886e4eea19757fe501f36a0",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-4.jpg",
+      "sha256": "e42081df8671352e433ef5f96e26f1c484cdb2c865f357b0986b8b2a4c037199",
+      "bytes": 220925
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-4.json",
+      "sha256": "2008a78720baec40268f1852ee89744bc11414d5b361544e53853d95d49b8e12",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-5.jpg",
+      "sha256": "e0024f28623f9eb66806dc92714eba1e19d57a2ef05691d7d685986a52f53f83",
+      "bytes": 211213
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-5.json",
+      "sha256": "14bdbc0984c36d09c0da63e2d4ae081bdeaf9e6f0e479cf3d8766ac840c2f844",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-6.jpg",
+      "sha256": "84f67f8e0ad713b3281847612170ccc7e9533a50621729525b8838d507ce6838",
+      "bytes": 223488
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/story-6.json",
+      "sha256": "b3ba5651c40aa4e1eb141df9470b6447a199ce352a72dc5da9b74049a46cc899",
+      "bytes": 181
+    },
+    {
+      "file": "qa/01-emberwake-rta-v2/technical.json",
+      "sha256": "a466dc2a8fc3744ae794ed715f8d0510c2ff759c3a0c27afa1f13c65e3f5bf54",
+      "bytes": 2106
+    },
+    {
+      "file": "qa/audio-final-independent.json",
+      "sha256": "e191dd9be9bc8b2460f9fd28942881dbbc71fcb6b887f8ded69863058aedcc95",
+      "bytes": 37054
+    },
+    {
+      "file": "qa/audio-v2.json",
+      "sha256": "223f05fec49f9e9a3a2bdd7d6168a302cf02a3f66302175dfaa0f4cd47fbe428",
+      "bytes": 35892
+    },
+    {
+      "file": "qa/audio.json",
+      "sha256": "1f4cbc6e407bc9b6924d5fb5e01896b89ab04b94c45606b6cdc24f14197b00ed",
+      "bytes": 42271
+    },
+    {
+      "file": "qa/crowdfunding-source.json",
+      "sha256": "0efd5783245cc58d61e5f51b16524bdd2789f72a6840ab9ef950ebe86246845f",
+      "bytes": 4395
+    },
+    {
+      "file": "qa/package-safety.json",
+      "sha256": "42fd4d74ef6c6c6984e0a3d83276e50a2a3c5f3de4257290ea380020f040dd6a",
+      "bytes": 1419
+    },
+    {
+      "file": "qa/rta-source.json",
+      "sha256": "0cadf903776b5268c1f1ae207212a7e359de4b17674bb09340e6bf08e6e7bf7c",
+      "bytes": 8634
+    },
+    {
+      "file": "qa/source-assets.json",
+      "sha256": "a4a3744764f0d14007ed49670b4e06b0ea1aca670e40185d58479cda0ac1e1f7",
+      "bytes": 122105
+    },
+    {
+      "file": "qa/source-recheck.json",
+      "sha256": "7daf705a05d484088f970c4921fd5c53f2302f1ad02178f44ff7e520aba2b09e",
+      "bytes": 325
+    },
+    {
+      "file": "source/01-emberwake-rta-v2.jsx",
+      "sha256": "4a5ec379d06ff8820c0f2c4fe3de645822b67be8e2bb10fb0722abc26efc4f1a",
+      "bytes": 478404
+    },
+    {
+      "file": "source/audio-v2.mjs",
+      "sha256": "843d7ac1ce290aede425c6483c94676e438dd377b786e23c8c168fb02d89e36e",
+      "bytes": 15751
+    },
+    {
+      "file": "source/audio.mjs",
+      "sha256": "e3ffef7ab0ce6597d5fc63f0b349e1bc7490430224b7e553aa26a9601f0129c0",
+      "bytes": 13856
+    },
+    {
+      "file": "source/audit-motion.mjs",
+      "sha256": "cc5f17aee4855565ee8f7080de09adacdb16ad8e40778a01f55234dba4959a56",
+      "bytes": 4321
+    },
+    {
+      "file": "source/build-edit.mjs",
+      "sha256": "75bcc854c00ca40645c88fde06758fc9a0d2a9699e87380301a8bed40a8eb396",
+      "bytes": 7485
+    },
+    {
+      "file": "source/edit.json",
+      "sha256": "7cee9558a7370ce89a27f9a6f7fcb4b06cfcb8776589a3dc352080b52905ab5d",
+      "bytes": 38568
+    },
+    {
+      "file": "source/episodes.mjs",
+      "sha256": "88ee4e8a08dd7d8e21e36246899043c686e0c0da0b36267b9bdeb70ddcde6506",
+      "bytes": 42203
+    },
+    {
+      "file": "source/finalize.mjs",
+      "sha256": "58871ce4b14fb243b591786f8986fe720e53a8584b91c62d3b855c7c7f5777e7",
+      "bytes": 3596
+    },
+    {
+      "file": "source/make-index.mjs",
+      "sha256": "a77e6b2b82d2967b5d2fcfecc8a8d4a422a7c43390144c93779fa5a527d4a83d",
+      "bytes": 21302
+    },
+    {
+      "file": "source/motion.mjs",
+      "sha256": "86e808fc4d782dba935c1bc852d568f2c4084a0f8d54677ab70654d9edf20ff2",
+      "bytes": 7361
+    },
+    {
+      "file": "source/native.mjs",
+      "sha256": "825f4682653557d46633b2b0a35ffc9eefb1b6aaa6a15451ed35162803ccf80d",
+      "bytes": 2463
+    },
+    {
+      "file": "source/package.mjs",
+      "sha256": "b2066908134f16be87cdf53b582875826ef1afba2d091f235faf43f96bfa0f61",
+      "bytes": 7505
+    },
+    {
+      "file": "source/produce.mjs",
+      "sha256": "3caa45624d6d3ac340a71950bb2ac2d6cbf64ff1edfcd4960609225731eda7b3",
+      "bytes": 13264
+    },
+    {
+      "file": "source/real-code-excerpt.txt",
+      "sha256": "d77866ef19272e05d2ea401a16484adf95ec8c727c83d6d965f77a0dffacf2f2",
+      "bytes": 111
+    },
+    {
+      "file": "source/render-staged.mjs",
+      "sha256": "9af1c3a3da0d9f09a27a4fac884c5bdba3588e84adae88d9528f6b8312358c20",
+      "bytes": 3232
+    },
+    {
+      "file": "source/review-frames.mjs",
+      "sha256": "992717b1a1cc67ce8c827643565f17133d3ad411711c9f43a8ec6e36b356859e",
+      "bytes": 5382
+    },
+    {
+      "file": "source/verify-delivery-native.ps1",
+      "sha256": "6e1f9f63007fa419cfcb97ca4071440c545e7aec9dc64e342130db278149d9bb",
+      "bytes": 3131
+    },
+    {
+      "file": "source/verify.mjs",
+      "sha256": "a0bc7b6d69bcd69e1766ba43d5367fff661a1a4f511d9c9761282af9c5562d5b",
+      "bytes": 7148
+    },
+    {
+      "file": "source/台本-#0089EMBERWAKE追従RTA版.md",
+      "sha256": "d4581bc064229a50e4d7d664df0af4b031a39509c77771b857537a97187b38de",
+      "bytes": 10936
+    },
+    {
+      "file": "source/投稿文.json",
+      "sha256": "00069b412445a7909ff73ea4c8b54a970936c3d73bd2086eac6d8bc782582d85",
+      "bytes": 3153
+    },
+    {
+      "file": "videos/01-emberwake-rta-v2-cover.jpg",
+      "sha256": "cf9d09a83dea6fdd9c3bce195ec5f2288bd211531451f52d3f10aedba68b8eab",
+      "bytes": 58180
+    },
+    {
+      "file": "videos/01-emberwake-rta-v2.mp4",
+      "sha256": "9504430b7677be349efd78e9f7c6177082896cfac9f373266e64243eb7da0c8b",
+      "bytes": 17651413
+    }
+  ],
+  "nativeReopenSaveRender": true,
+  "missingAssets": 0,
+  "windowsBatch": {
+    "ok": true,
+    "bundle": "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25",
+    "steps": [
+      {
+        "exe": "C:\\Program Files\\EffectCraft\\effectcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\projects\\01-emberwake-rta-v2.ecproj",
+          "--save",
+          "info",
+          "--json"
+        ],
+        "exit": 0,
+        "seconds": 0.1273987,
+        "stdout": "{\"activeComp\":{\"background\":[0.0313725508749485,0.08235294371843338,0.11764705926179886],\"duration\":60.0,\"frameRate\":30.0,\"height\":1920,\"id\":307,\"layers\":[{\"blendMode\":\"Normal\",\"id\":5455,\"in\":0.0,\"index\":1,\"label\":\"Red\",\"name\":\"Author bug\",\"out\":53.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":5409,\"in\":0.0,\"index\":2,\"label\":\"Blue\",\"name\":\"Author plate\",\"out\":53.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":5363,\"in\":47.93333333333333,\"index\":3,\"label\":\"Blue\",\"name\":\"Transition 16\",\"out\":48.13333333333333,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":5317,\"in\":43.93333333333333,\"index\":4,\"label\":\"Blue\",\"name\":\"Transition 15\",\"out\":44.13333333333333,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":5271,\"in\":6.733333333333333,\"index\":5,\"label\":\"Blue\",\"name\":\"Transition 3\",\"out\":6.933333333333334,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":5225,\"in\":3.1333333333333333,\"index\":6,\"label\":\"Blue\",\"name\":\"Transition 2\",\"out\":3.3333333333333335,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":true,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":5186,\"in\":53.233333333333334,\"index\":7,\"label\":\"Red\",\"name\":\"Final action\",\"out\":60.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":5147,\"in\":53.166666666666664,\"index\":8,\"label\":\"Red\",\"name\":\"Final campaign status\",\"out\":60.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":5108,\"in\":53.1,\"index\":9,\"label\":\"Red\",\"name\":\"Final support two\",\"out\":60.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":5069,\"in\":53.1,\"index\":10,\"label\":\"Red\",\"name\":\"Final support one\",\"out\":60.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":5023,\"in\":53.0,\"index\":11,\"label\":\"Blue\",\"name\":\"Final support plate\",\"out\":60.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":4999,\"in\":53.0,\"index\":12,\"label\":\"Lavender\",\"name\":\"Final real game\",\"out\":60.0,\"parent\":null,\"start\":53.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":false,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":4960,\"in\":53.0,\"index\":13,\"label\":\"Red\",\"name\":\"Final subtitle\",\"out\":60.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4921,\"in\":53.0,\"index\":14,\"label\":\"Red\",\"name\":\"Final title\",\"out\":60.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4882,\"in\":53.0,\"index\":15,\"label\":\"Red\",\"name\":\"Final author\",\"out\":60.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4836,\"in\":53.0,\"index\":16,\"label\":\"Blue\",\"name\":\"Final clean field\",\"out\":60.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":4790,\"in\":53.0,\"index\":17,\"label\":\"Blue\",\"name\":\"Scene field 17\",\"out\":60.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":4751,\"in\":48.0,\"index\":18,\"label\":\"Red\",\"name\":\"Body caption 16\",\"out\":53.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4712,\"in\":48.0,\"index\":19,\"label\":\"Red\",\"name\":\"Title two 16\",\"out\":53.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4673,\"in\":48.0,\"index\":20,\"label\":\"Red\",\"name\":\"Title one 16\",\"out\":53.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4634,\"in\":48.0,\"index\":21,\"label\":\"Red\",\"name\":\"Source label 16\",\"out\":53.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4595,\"in\":48.0,\"index\":22,\"label\":\"Red\",\"name\":\"CAMPFIRE state\",\"out\":53.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4549,\"in\":48.0,\"index\":23,\"label\":\"Blue\",\"name\":\"Preparation field\",\"out\":53.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":4525,\"in\":48.0,\"index\":24,\"label\":\"Lavender\",\"name\":\"Actual CAMPFIRE artwork\",\"out\":53.0,\"parent\":null,\"start\":48.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":false,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":4479,\"in\":48.0,\"index\":25,\"label\":\"Blue\",\"name\":\"Scene field 16\",\"out\":53.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":4440,\"in\":44.0,\"index\":26,\"label\":\"Red\",\"name\":\"Body caption 15\",\"out\":48.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4401,\"in\":44.0,\"index\":27,\"label\":\"Red\",\"name\":\"Title two 15\",\"out\":48.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4362,\"in\":44.0,\"index\":28,\"label\":\"Red\",\"name\":\"Title one 15\",\"out\":48.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4323,\"in\":44.0,\"index\":29,\"label\":\"Red\",\"name\":\"Source label 15\",\"out\":48.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4284,\"in\":44.0,\"index\":30,\"label\":\"Red\",\"name\":\"Concept provenance 15\",\"out\":48.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4238,\"in\":44.0,\"index\":31,\"label\":\"Blue\",\"name\":\"Cinema top veil 15\",\"out\":48.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":4214,\"in\":44.0,\"index\":32,\"label\":\"Aqua\",\"name\":\"Development image 15\",\"out\":48.0,\"parent\":null,\"start\":44.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":false,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":4190,\"in\":44.0,\"index\":33,\"label\":\"Aqua\",\"name\":\"Concept atmosphere 15\",\"out\":48.0,\"parent\":null,\"start\":44.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":false,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":4144,\"in\":44.0,\"index\":34,\"label\":\"Blue\",\"name\":\"Scene field 15\",\"out\":48.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":4105,\"in\":40.0,\"index\":35,\"label\":\"Red\",\"name\":\"Body caption 14\",\"out\":44.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4066,\"in\":40.0,\"index\":36,\"label\":\"Red\",\"name\":\"Title two 14\",\"out\":44.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":4027,\"in\":40.0,\"index\":37,\"label\":\"Red\",\"name\":\"Title one 14\",\"out\":44.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3988,\"in\":40.0,\"index\":38,\"label\":\"Red\",\"name\":\"Source label 14\",\"out\":44.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3949,\"in\":40.0,\"index\":39,\"label\":\"Red\",\"name\":\"Making note\",\"out\":44.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3910,\"in\":40.0,\"index\":40,\"label\":\"Red\",\"name\":\"Code source note\",\"out\":44.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3871,\"in\":40.0,\"index\":41,\"label\":\"Red\",\"name\":\"Real code excerpt\",\"out\":44.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3832,\"in\":40.0,\"index\":42,\"label\":\"Red\",\"name\":\"Code label\",\"out\":44.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3786,\"in\":40.0,\"index\":43,\"label\":\"Blue\",\"name\":\"Real code panel\",\"out\":44.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":3740,\"in\":40.0,\"index\":44,\"label\":\"Blue\",\"name\":\"Scene field 14\",\"out\":44.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":3701,\"in\":36.6,\"index\":45,\"label\":\"Red\",\"name\":\"Body caption 13\",\"out\":40.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3662,\"in\":36.6,\"index\":46,\"label\":\"Red\",\"name\":\"Title two 13\",\"out\":40.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3623,\"in\":36.6,\"index\":47,\"label\":\"Red\",\"name\":\"Title one 13\",\"out\":40.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3584,\"in\":36.6,\"index\":48,\"label\":\"Red\",\"name\":\"Source label 13\",\"out\":40.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3545,\"in\":36.6,\"index\":49,\"label\":\"Red\",\"name\":\"Current demo statement\",\"out\":40.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3521,\"in\":36.6,\"index\":50,\"label\":\"Lavender\",\"name\":\"Current demo still 13\",\"out\":40.0,\"parent\":null,\"start\":36.6,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":false,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":3475,\"in\":36.6,\"index\":51,\"label\":\"Blue\",\"name\":\"Scene field 13\",\"out\":40.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":3436,\"in\":33.6,\"index\":52,\"label\":\"Red\",\"name\":\"Body caption 12\",\"out\":36.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3397,\"in\":33.6,\"index\":53,\"label\":\"Red\",\"name\":\"Title two 12\",\"out\":36.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3358,\"in\":33.6,\"index\":54,\"label\":\"Red\",\"name\":\"Title one 12\",\"out\":36.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3319,\"in\":33.6,\"index\":55,\"label\":\"Red\",\"name\":\"Source label 12\",\"out\":36.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3294,\"in\":33.6,\"index\":56,\"label\":\"Sandstone\",\"name\":\"Directed game 12\",\"out\":36.6,\"parent\":null,\"start\":33.6,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Composition\"},{\"blendMode\":\"Normal\",\"id\":3248,\"in\":33.6,\"index\":57,\"label\":\"Blue\",\"name\":\"Scene field 12\",\"out\":36.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":3209,\"in\":31.0,\"index\":58,\"label\":\"Red\",\"name\":\"Body caption 11\",\"out\":33.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3170,\"in\":31.0,\"index\":59,\"label\":\"Red\",\"name\":\"Title two 11\",\"out\":33.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3131,\"in\":31.0,\"index\":60,\"label\":\"Red\",\"name\":\"Title one 11\",\"out\":33.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3092,\"in\":31.0,\"index\":61,\"label\":\"Red\",\"name\":\"Source label 11\",\"out\":33.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3067,\"in\":31.0,\"index\":62,\"label\":\"Sandstone\",\"name\":\"Directed game 11\",\"out\":33.6,\"parent\":null,\"start\":31.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Composition\"},{\"blendMode\":\"Normal\",\"id\":3021,\"in\":31.0,\"index\":63,\"label\":\"Blue\",\"name\":\"Scene field 11\",\"out\":33.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2982,\"in\":28.6,\"index\":64,\"label\":\"Red\",\"name\":\"Body caption 10\",\"out\":31.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2943,\"in\":28.6,\"index\":65,\"label\":\"Red\",\"name\":\"Title two 10\",\"out\":31.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2904,\"in\":28.6,\"index\":66,\"label\":\"Red\",\"name\":\"Title one 10\",\"out\":31.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2865,\"in\":28.6,\"index\":67,\"label\":\"Red\",\"name\":\"Source label 10\",\"out\":31.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2840,\"in\":28.6,\"index\":68,\"label\":\"Sandstone\",\"name\":\"Directed game 10\",\"out\":31.0,\"parent\":null,\"start\":28.6,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Composition\"},{\"blendMode\":\"Normal\",\"id\":2794,\"in\":28.6,\"index\":69,\"label\":\"Blue\",\"name\":\"Scene field 10\",\"out\":31.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2755,\"in\":26.2,\"index\":70,\"label\":\"Red\",\"name\":\"Body caption 9\",\"out\":28.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2716,\"in\":26.2,\"index\":71,\"label\":\"Red\",\"name\":\"Title two 9\",\"out\":28.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2677,\"in\":26.2,\"index\":72,\"label\":\"Red\",\"name\":\"Title one 9\",\"out\":28.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2638,\"in\":26.2,\"index\":73,\"label\":\"Red\",\"name\":\"Source label 9\",\"out\":28.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2613,\"in\":26.2,\"index\":74,\"label\":\"Sandstone\",\"name\":\"Directed game 9\",\"out\":28.6,\"parent\":null,\"start\":26.2,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Composition\"},{\"blendMode\":\"Normal\",\"id\":2567,\"in\":26.2,\"index\":75,\"label\":\"Blue\",\"name\":\"Scene field 9\",\"out\":28.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2528,\"in\":22.0,\"index\":76,\"label\":\"Red\",\"name\":\"Body caption 8\",\"out\":26.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2489,\"in\":22.0,\"index\":77,\"label\":\"Red\",\"name\":\"Title two 8\",\"out\":26.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2450,\"in\":22.0,\"index\":78,\"label\":\"Red\",\"name\":\"Title one 8\",\"out\":26.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2411,\"in\":22.0,\"index\":79,\"label\":\"Red\",\"name\":\"Source label 8\",\"out\":26.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2386,\"in\":22.0,\"index\":80,\"label\":\"Sandstone\",\"name\":\"Directed game 8\",\"out\":26.2,\"parent\":null,\"start\":22.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Composition\"},{\"blendMode\":\"Normal\",\"id\":2340,\"in\":22.0,\"index\":81,\"label\":\"Blue\",\"name\":\"Scene field 8\",\"out\":26.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2301,\"in\":18.6,\"index\":82,\"label\":\"Red\",\"name\":\"Body caption 7\",\"out\":22.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2262,\"in\":18.6,\"index\":83,\"label\":\"Red\",\"name\":\"Title two 7\",\"out\":22.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2223,\"in\":18.6,\"index\":84,\"label\":\"Red\",\"name\":\"Title one 7\",\"out\":22.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2184,\"in\":18.6,\"index\":85,\"label\":\"Red\",\"name\":\"Source label 7\",\"out\":22.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2159,\"in\":18.6,\"index\":86,\"label\":\"Sandstone\",\"name\":\"Directed game 7\",\"out\":22.0,\"parent\":null,\"start\":18.6,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Composition\"},{\"blendMode\":\"Normal\",\"id\":2113,\"in\":18.6,\"index\":87,\"label\":\"Blue\",\"name\":\"Scene field 7\",\"out\":22.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":2074,\"in\":15.6,\"index\":88,\"label\":\"Red\",\"name\":\"Body caption 6\",\"out\":18.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":2035,\"in\":15.6,\"index\":89,\"label\":\"Red\",\"name\":\"Title two 6\",\"out\":18.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1996,\"in\":15.6,\"index\":90,\"label\":\"Red\",\"name\":\"Title one 6\",\"out\":18.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1957,\"in\":15.6,\"index\":91,\"label\":\"Red\",\"name\":\"Source label 6\",\"out\":18.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1932,\"in\":15.6,\"index\":92,\"label\":\"Sandstone\",\"name\":\"Directed game 6\",\"out\":18.6,\"parent\":null,\"start\":15.6,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Composition\"},{\"blendMode\":\"Normal\",\"id\":1886,\"in\":15.6,\"index\":93,\"label\":\"Blue\",\"name\":\"Scene field 6\",\"out\":18.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1847,\"in\":12.0,\"index\":94,\"label\":\"Red\",\"name\":\"Body caption 5\",\"out\":15.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1808,\"in\":12.0,\"index\":95,\"label\":\"Red\",\"name\":\"Title two 5\",\"out\":15.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1769,\"in\":12.0,\"index\":96,\"label\":\"Red\",\"name\":\"Title one 5\",\"out\":15.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1730,\"in\":12.0,\"index\":97,\"label\":\"Red\",\"name\":\"Source label 5\",\"out\":15.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1705,\"in\":12.0,\"index\":98,\"label\":\"Sandstone\",\"name\":\"Directed game 5\",\"out\":15.6,\"parent\":null,\"start\":12.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Composition\"},{\"blendMode\":\"Normal\",\"id\":1659,\"in\":12.0,\"index\":99,\"label\":\"Blue\",\"name\":\"Scene field 5\",\"out\":15.6,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1620,\"in\":9.8,\"index\":100,\"label\":\"Red\",\"name\":\"Body caption 4\",\"out\":12.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1581,\"in\":9.8,\"index\":101,\"label\":\"Red\",\"name\":\"Title two 4\",\"out\":12.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1542,\"in\":9.8,\"index\":102,\"label\":\"Red\",\"name\":\"Title one 4\",\"out\":12.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1503,\"in\":9.8,\"index\":103,\"label\":\"Red\",\"name\":\"Source label 4\",\"out\":12.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1478,\"in\":9.8,\"index\":104,\"label\":\"Sandstone\",\"name\":\"Directed actual mode 4\",\"out\":12.0,\"parent\":null,\"start\":9.8,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Composition\"},{\"blendMode\":\"Normal\",\"id\":1432,\"in\":9.8,\"index\":105,\"label\":\"Blue\",\"name\":\"Scene field 4\",\"out\":12.0,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1393,\"in\":6.8,\"index\":106,\"label\":\"Red\",\"name\":\"Body caption 3\",\"out\":9.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1354,\"in\":6.8,\"index\":107,\"label\":\"Red\",\"name\":\"Title two 3\",\"out\":9.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1315,\"in\":6.8,\"index\":108,\"label\":\"Red\",\"name\":\"Title one 3\",\"out\":9.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1276,\"in\":6.8,\"index\":109,\"label\":\"Red\",\"name\":\"Source label 3\",\"out\":9.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1237,\"in\":6.8,\"index\":110,\"label\":\"Red\",\"name\":\"Concept provenance 3\",\"out\":9.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1191,\"in\":6.8,\"index\":111,\"label\":\"Blue\",\"name\":\"Cinema top veil 3\",\"out\":9.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1167,\"in\":6.8,\"index\":112,\"label\":\"Aqua\",\"name\":\"Development image 3\",\"out\":9.8,\"parent\":null,\"start\":6.8,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":false,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":1143,\"in\":6.8,\"index\":113,\"label\":\"Aqua\",\"name\":\"Concept atmosphere 3\",\"out\":9.8,\"parent\":null,\"start\":6.8,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":false,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":1097,\"in\":6.8,\"index\":114,\"label\":\"Blue\",\"name\":\"Scene field 3\",\"out\":9.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":1058,\"in\":3.2,\"index\":115,\"label\":\"Red\",\"name\":\"Body caption 2\",\"out\":6.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":1019,\"in\":3.2,\"index\":116,\"label\":\"Red\",\"name\":\"Title two 2\",\"out\":6.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":980,\"in\":3.2,\"index\":117,\"label\":\"Red\",\"name\":\"Title one 2\",\"out\":6.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":941,\"in\":3.2,\"index\":118,\"label\":\"Red\",\"name\":\"Source label 2\",\"out\":6.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":902,\"in\":3.2,\"index\":119,\"label\":\"Red\",\"name\":\"Concept provenance 2\",\"out\":6.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":856,\"in\":3.2,\"index\":120,\"label\":\"Blue\",\"name\":\"Cinema top veil 2\",\"out\":6.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":832,\"in\":3.2,\"index\":121,\"label\":\"Aqua\",\"name\":\"Development image 2\",\"out\":6.8,\"parent\":null,\"start\":3.2,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":false,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":808,\"in\":3.2,\"index\":122,\"label\":\"Aqua\",\"name\":\"Concept atmosphere 2\",\"out\":6.8,\"parent\":null,\"start\":3.2,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":false,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"},{\"blendMode\":\"Normal\",\"id\":762,\"in\":3.2,\"index\":123,\"label\":\"Blue\",\"name\":\"Scene field 2\",\"out\":6.8,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":723,\"in\":1.2,\"index\":124,\"label\":\"Red\",\"name\":\"Body caption 1\",\"out\":3.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":684,\"in\":1.2,\"index\":125,\"label\":\"Red\",\"name\":\"Title two 1\",\"out\":3.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":645,\"in\":1.2,\"index\":126,\"label\":\"Red\",\"name\":\"Title one 1\",\"out\":3.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":606,\"in\":1.2,\"index\":127,\"label\":\"Red\",\"name\":\"Source label 1\",\"out\":3.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":581,\"in\":1.2,\"index\":128,\"label\":\"Sandstone\",\"name\":\"Directed game 1\",\"out\":3.2,\"parent\":null,\"start\":1.2,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Composition\"},{\"blendMode\":\"Normal\",\"id\":535,\"in\":1.2,\"index\":129,\"label\":\"Blue\",\"name\":\"Scene field 1\",\"out\":3.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"},{\"blendMode\":\"Normal\",\"id\":496,\"in\":0.0,\"index\":130,\"label\":\"Red\",\"name\":\"Body caption 0\",\"out\":1.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":457,\"in\":0.0,\"index\":131,\"label\":\"Red\",\"name\":\"Title two 0\",\"out\":1.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":418,\"in\":0.0,\"index\":132,\"label\":\"Red\",\"name\":\"Title one 0\",\"out\":1.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":379,\"in\":0.0,\"index\":133,\"label\":\"Red\",\"name\":\"Source label 0\",\"out\":1.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":354,\"in\":0.0,\"index\":134,\"label\":\"Sandstone\",\"name\":\"Directed game 0\",\"out\":1.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Composition\"},{\"blendMode\":\"Normal\",\"id\":308,\"in\":0.0,\"index\":135,\"label\":\"Blue\",\"name\":\"Scene field 0\",\"out\":1.2,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Shape\"}],\"name\":\"EMBERWAKE RTA V2\",\"preserveFrameRate\":false,\"preserveResolution\":false,\"resolution\":\"Auto\",\"resolutionFactor\":null,\"width\":1080,\"workArea\":[0.0,60.0]},\"commands\":731,\"effects\":307,\"mode\":\"headless\",\"project\":{\"activeComp\":307,\"bitDepth\":\"8 bpc\",\"dirty\":false,\"items\":[{\"duration\":15.333333333333334,\"id\":1,\"label\":\"Lavender\",\"name\":\"frame-[000000-000459].png\",\"parent\":null,\"size\":[1920,1080],\"type\":\"Image Sequence\"},{\"duration\":3.0,\"id\":2,\"label\":\"Aqua\",\"name\":\"cinema-close.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"duration\":8.033333333333333,\"id\":3,\"label\":\"Aqua\",\"name\":\"cinema-hero.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"duration\":3.033333333333333,\"id\":4,\"label\":\"Aqua\",\"name\":\"cinema-high.mp4\",\"parent\":null,\"size\":[1280,720],\"type\":\"Video\"},{\"id\":5,\"label\":\"Lavender\",\"name\":\"campfire-main.png\",\"parent\":null,\"size\":[1800,1200],\"type\":\"Image\"},{\"id\":6,\"label\":\"Lavender\",\"name\":\"dawn-still.png\",\"parent\":null,\"size\":[1920,1080],\"type\":\"Image\"},{\"id\":7,\"label\":\"Lavender\",\"name\":\"time-attack-menu.png\",\"parent\":null,\"size\":[1920,1080],\"type\":\"Image\"},{\"duration\":1.2,\"frameRate\":30.0,\"id\":8,\"label\":\"Sandstone\",\"layers\":1,\"name\":\"Game focus 0\",\"parent\":null,\"size\":[1080,1200],\"type\":\"Composition\"},{\"duration\":2.0,\"frameRate\":30.0,\"id\":33,\"label\":\"Sandstone\",\"layers\":1,\"name\":\"Game focus 1\",\"parent\":null,\"size\":[1080,1200],\"type\":\"Composition\"},{\"duration\":2.2,\"frameRate\":30.0,\"id\":58,\"label\":\"Sandstone\",\"layers\":2,\"name\":\"Actual mode focus 4\",\"parent\":null,\"size\":[1080,1200],\"type\":\"Composition\"},{\"duration\":3.6,\"frameRate\":30.0,\"id\":107,\"label\":\"Sandstone\",\"layers\":1,\"name\":\"Game focus 5\",\"parent\":null,\"size\":[1080,1200],\"type\":\"Composition\"},{\"duration\":3.0,\"frameRate\":30.0,\"id\":132,\"label\":\"Sandstone\",\"layers\":1,\"name\":\"Game focus 6\",\"parent\":null,\"size\":[1080,1200],\"type\":\"Composition\"},{\"duration\":3.4,\"frameRate\":30.0,\"id\":157,\"label\":\"Sandstone\",\"layers\":1,\"name\":\"Game focus 7\",\"parent\":null,\"size\":[1080,1200],\"type\":\"Composition\"},{\"duration\":4.2,\"frameRate\":30.0,\"id\":182,\"label\":\"Sandstone\",\"layers\":1,\"name\":\"Game focus 8\",\"parent\":null,\"size\":[1080,1200],\"type\":\"Composition\"},{\"duration\":2.4,\"frameRate\":30.0,\"id\":207,\"label\":\"Sandstone\",\"layers\":1,\"name\":\"Game focus 9\",\"parent\":null,\"size\":[1080,1200],\"type\":\"Composition\"},{\"duration\":2.4,\"frameRate\":30.0,\"id\":232,\"label\":\"Sandstone\",\"layers\":1,\"name\":\"Game focus 10\",\"parent\":null,\"size\":[1080,1200],\"type\":\"Composition\"},{\"duration\":2.6,\"frameRate\":30.0,\"id\":257,\"label\":\"Sandstone\",\"layers\":1,\"name\":\"Game focus 11\",\"parent\":null,\"size\":[1080,1200],\"type\":\"Composition\"},{\"duration\":3.0,\"frameRate\":30.0,\"id\":282,\"label\":\"Sandstone\",\"layers\":1,\"name\":\"Game focus 12\",\"parent\":null,\"size\":[1080,1200],\"type\":\"Composition\"},{\"duration\":60.0,\"frameRate\":30.0,\"id\":307,\"label\":\"Sandstone\",\"layers\":135,\"name\":\"EMBERWAKE RTA V2\",\"parent\":null,\"size\":[1080,1920],\"type\":\"Composition\"}],\"path\":\"F:\\\\Videos\\\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\\\projects\\\\01-emberwake-rta-v2.ecproj\",\"renderer\":{\"active\":\"cpu\",\"adapter\":null,\"gpuAcceleration\":true,\"renderer\":\"Mercury GPU Acceleration\",\"why\":\"headless: renders on the CPU unless started with --gpu\"},\"selectedLayers\":[],\"time\":0.0,\"undo\":[]},\"version\":\"0.14.0\"}\n",
+        "stderr": ""
+      },
+      {
+        "exe": "C:\\Program Files\\FilmCraft\\filmcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\projects\\01-emberwake-rta-v2.fcproj",
+          "--save",
+          "inspect"
+        ],
+        "exit": 0,
+        "seconds": 0.10492299999999999,
+        "stdout": "{\n  \"project\": {\n    \"activeSequence\": 3,\n    \"dirty\": false,\n    \"name\": \"01-emberwake-rta-v2\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\\\projects\\\\01-emberwake-rta-v2.fcproj\",\n    \"revision\": 2,\n    \"root\": {\n      \"children\": [\n        {\n          \"duration\": 15240960000000,\n          \"item\": 3,\n          \"label\": \"Forest\",\n          \"name\": \"EMBERWAKE RTA V2\",\n          \"type\": \"Sequence\"\n        },\n        {\n          \"duration\": 15240960000000,\n          \"item\": 4,\n          \"label\": \"Violet\",\n          \"name\": \"01-emberwake-rta-v2-master.mov\",\n          \"type\": \"Movie\"\n        },\n        {\n          \"duration\": 15240960000000,\n          \"item\": 5,\n          \"label\": \"Caribbean\",\n          \"name\": \"emberwake-rta-v2-mix.wav\",\n          \"type\": \"Audio\"\n        }\n      ],\n      \"id\": 0,\n      \"name\": \"01-emberwake-rta-v2\"\n    },\n    \"sourceItem\": null\n  },\n  \"sequence\": {\n    \"audio\": [\n      {\n        \"enabled\": true,\n        \"id\": 2,\n        \"items\": [\n          {\n            \"clip\": 7,\n            \"duration\": 15240960000000,\n            \"durationFrames\": 1800,\n            \"effects\": [\n              {\n                \"effect\": \"volume\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"bypass\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Bool(false)\"\n                  },\n                  \"level\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  }\n                }\n              },\n              {\n                \"effect\": \"channel_volume\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"bypass\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Bool(false)\"\n                  },\n                  \"left\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  },\n                  \"right\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  }\n                }\n              },\n              {\n                \"effect\": \"panner\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"balance\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  }\n                }\n              }\n            ],\n            \"enabled\": true,\n            \"end\": 15240960000000,\n            \"endFrame\": 1800,\n            \"gainDb\": 0.0,\n            \"item\": 5,\n            \"label\": \"Caribbean\",\n            \"link\": null,\n            \"name\": \"emberwake-rta-v2-mix.wav\",\n            \"reverse\": false,\n            \"sourceIn\": 0,\n            \"sourceOut\": 15240960000000,\n            \"speed\": 1.0,\n            \"start\": 0,\n            \"startFrame\": 0\n          }\n        ],\n        \"label\": null,\n        \"locked\": false,\n        \"muted\": false,\n        \"name\": \"Audio 1\",\n        \"solo\": false,\n        \"syncLock\": true,\n        \"transitions\": []\n      }\n    ],\n    \"duration\": 15240960000000,\n    \"durationFrames\": 1800,\n    \"gapSelection\": null,\n    \"id\": 3,\n    \"in\": null,\n    \"markers\": [],\n    \"name\": \"EMBERWAKE RTA V2\",\n    \"out\": null,\n    \"playhead\": null,\n    \"selection\": [],\n    \"settings\": {\n      \"audio_master\": \"Stereo\",\n      \"color\": {\n        \"auto_tone_map\": true,\n        \"wide_gamut\": false,\n        \"working\": \"Rec709\"\n      },\n      \"drop_frame\": false,\n      \"frame_rate\": {\n        \"den\": 1,\n        \"num\": 30\n      },\n      \"height\": 1920,\n      \"max_bit_depth\": false,\n      \"max_render_quality\": false,\n      \"par\": [\n        1,\n        1\n      ],\n      \"preset\": \"1080x1920 30\",\n      \"preview_codec\": \"ProRes 422\",\n      \"sample_rate\": 48000,\n      \"width\": 1080,\n      \"working_space\": \"Rec. 709\"\n    },\n    \"split\": {\n      \"audioIn\": null,\n      \"audioOut\": null,\n      \"videoIn\": null,\n      \"videoOut\": null\n    },\n    \"transitionSelection\": [],\n    \"video\": [\n      {\n        \"enabled\": true,\n        \"id\": 1,\n        \"items\": [\n          {\n            \"clip\": 6,\n            \"duration\": 15240960000000,\n            \"durationFrames\": 1800,\n            \"effects\": [\n              {\n                \"effect\": \"motion\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"anchor\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Vec2(Vec2 { x: 540.0, y: 960.0 })\"\n                  },\n                  \"anti_flicker\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  },\n                  \"position\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Vec2(Vec2 { x: 540.0, y: 960.0 })\"\n                  },\n                  \"rotation\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(0.0)\"\n                  },\n                  \"scale\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(100.0)\"\n                  },\n                  \"scale_width\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(100.0)\"\n                  },\n                  \"uniform_scale\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Bool(true)\"\n                  }\n                }\n              },\n              {\n                \"effect\": \"opacity\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"blend\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Choice(0)\"\n                  },\n                  \"opacity\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(100.0)\"\n                  }\n                }\n              },\n              {\n                \"effect\": \"time_remap\",\n                \"enabled\": true,\n                \"masks\": 0,\n                \"params\": {\n                  \"speed\": {\n                    \"keyframes\": 0,\n                    \"value\": \"Float(100.0)\"\n                  }\n                }\n              }\n            ],\n            \"enabled\": true,\n            \"end\": 15240960000000,\n            \"endFrame\": 1800,\n            \"gainDb\": 0.0,\n            \"item\": 4,\n            \"label\": \"Violet\",\n            \"link\": null,\n            \"name\": \"01-emberwake-rta-v2-master.mov\",\n            \"reverse\": false,\n            \"sourceIn\": 0,\n            \"sourceOut\": 15240960000000,\n            \"speed\": 1.0,\n            \"start\": 0,\n            \"startFrame\": 0\n          }\n        ],\n        \"label\": null,\n        \"locked\": false,\n        \"muted\": false,\n        \"name\": \"Video 1\",\n        \"solo\": false,\n        \"syncLock\": true,\n        \"transitions\": []\n      }\n    ]\n  }\n}\n",
+        "stderr": ""
+      },
+      {
+        "exe": "C:\\Program Files\\EffectCraft\\effectcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\projects\\01-emberwake-rta-v2.ecproj",
+          "run",
+          "footage.check",
+          "{\"wait\":true}",
+          "footage.missing",
+          "{}",
+          "--json"
+        ],
+        "exit": 0,
+        "seconds": 0.1123011,
+        "stdout": "[{\"command\":\"footage.check\",\"result\":{\"checked\":7,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}]\n",
+        "stderr": ""
+      },
+      {
+        "exe": "C:\\Program Files\\FilmCraft\\filmcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\projects\\01-emberwake-rta-v2.fcproj",
+          "exec",
+          "media.status"
+        ],
+        "exit": 0,
+        "seconds": 0.3598007,
+        "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"b1d4ed8f723df14e\",\n      \"size\": 1300189877\n    },\n    \"item\": 4,\n    \"name\": \"01-emberwake-rta-v2-master.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\\\media\\\\01-emberwake-rta-v2-master.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"0558858fe4fe7b7e\",\n      \"size\": 17280044\n    },\n    \"item\": 5,\n    \"name\": \"emberwake-rta-v2-mix.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\\\media\\\\emberwake-rta-v2-mix.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+        "stderr": ""
+      },
+      {
+        "exe": "C:\\Program Files\\EffectCraft\\effectcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\projects\\01-emberwake-rta-v2.ecproj",
+          "render-frame",
+          "--comp",
+          "EMBERWAKE RTA V2",
+          "--time",
+          "14",
+          "--out",
+          "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\qa\\01-emberwake-rta-v2\\delivery-effectcraft.png",
+          "--json"
+        ],
+        "exit": 0,
+        "seconds": 0.3038421,
+        "stdout": "{\"comp\":307,\"height\":1920,\"ms\":169.2,\"path\":\"F:\\\\Videos\\\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\\\qa\\\\01-emberwake-rta-v2\\\\delivery-effectcraft.png\",\"time\":14.0,\"width\":1080}\n",
+        "stderr": ""
+      },
+      {
+        "exe": "C:\\Program Files\\FilmCraft\\filmcraft-cli.exe",
+        "args": [
+          "--project",
+          "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\projects\\01-emberwake-rta-v2.fcproj",
+          "render",
+          "--seconds",
+          "14",
+          "--out",
+          "F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\qa\\01-emberwake-rta-v2\\delivery-filmcraft.png"
+        ],
+        "exit": 0,
+        "seconds": 0.1553964,
+        "stdout": "",
+        "stderr": "rendered 1080x1920 in 13.2 ms → F:\\Videos\\ProjectP-EMBERWAKE-RTA-V2-2026-10-25\\qa\\01-emberwake-rta-v2\\delivery-filmcraft.png\n"
+      }
+    ],
+    "message": "Native reopen/save/media-status/render completed from delivery folder"
+  },
+  "proofs": {
+    "effectcraft": {
+      "file": "delivery-effectcraft.png",
+      "sha256": "56c208b26bb4c31019862ca0c9fff4ee486745aa10df30eb92bf11591a03d68a"
+    },
+    "filmcraft": {
+      "file": "delivery-filmcraft.png",
+      "sha256": "8e63ac712f72904939f4061a79c10b532e67ed2c025aadcee7651b717d8a8e29"
+    }
+  }
+}

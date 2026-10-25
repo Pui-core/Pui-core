@@ -1,0 +1,45 @@
+{
+  "status": "PASS_RESERVED_PATHS_REJECTED",
+  "checks": [
+    {
+      "destination": "/home/pui/.claude/worktrees/Pui-core-issue-89/promotion/projectp-emberwake-rta-v2",
+      "result": "REJECTED_BEFORE_COPY"
+    },
+    {
+      "destination": "/home/pui/.claude/worktrees/Pui-core-issue-89/promotion",
+      "result": "REJECTED_BEFORE_COPY"
+    },
+    {
+      "destination": "/mnt/f/Videos/ProjectP-EMBERWAKE-60秒-2026-10-25",
+      "result": "REJECTED_BEFORE_COPY"
+    },
+    {
+      "destination": "/mnt/f/Videos/ProjectP-初投稿-2026-10-25",
+      "result": "REJECTED_BEFORE_COPY"
+    },
+    {
+      "destination": "/tmp/emberwake-v2-guard-eraSru/v1",
+      "result": "REJECTED_BEFORE_COPY"
+    },
+    {
+      "destination": "/tmp/emberwake-v2-guard-eraSru/v1/missing-child",
+      "result": "REJECTED_BEFORE_COPY"
+    },
+    {
+      "destination": "/mnt/f/videos/projectp-emberwake-60秒-2026-10-25",
+      "result": "REJECTED_BEFORE_COPY"
+    }
+  ],
+  "priorVideos": [
+    {
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-60秒-2026-10-25/videos/01-emberwake-campfire-60.mp4",
+      "sha256": "36fd2913a8ea5c707aaf37fd9f1dbc28d62db40a2b051b2bcf7ff6bf78d8e864",
+      "unchanged": true
+    },
+    {
+      "file": "/mnt/f/Videos/ProjectP-初投稿-2026-10-25/videos/01-projectp-first.mp4",
+      "sha256": "5f56d833eba18fb816e1f8e65ff046d5b2d7a4f20b622df0aa137df9cc94f878",
+      "unchanged": true
+    }
+  ]
+}

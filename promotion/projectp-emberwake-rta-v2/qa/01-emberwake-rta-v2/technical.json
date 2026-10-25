@@ -1,0 +1,92 @@
+{
+  "status": "TECHNICAL_PASS",
+  "version": "EMBERWAKE-RTA-V2",
+  "comp": "EMBERWAKE RTA V2",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 1800,
+  "duration": 60.01,
+  "expectedDuration": 60,
+  "fullDecode": true,
+  "audio": {
+    "integratedLufs": -16.6,
+    "truePeakDbfs": -2.2
+  },
+  "missingNativeAssets": 0,
+  "allSceneFrames": [
+    11,
+    46,
+    107,
+    214,
+    305,
+    371,
+    479,
+    569,
+    671,
+    797,
+    869,
+    941,
+    1019,
+    1109,
+    1211,
+    1331,
+    1451,
+    1601
+  ],
+  "continuousCuts": [
+    {
+      "time": 9.8,
+      "shot": 4,
+      "transition": "whip",
+      "index": 1,
+      "startFrame": 291,
+      "frames": 18,
+      "file": "continuous-cut-01.jpg",
+      "start": 9.7
+    },
+    {
+      "time": 22,
+      "shot": 8,
+      "transition": "cut",
+      "index": 2,
+      "startFrame": 657,
+      "frames": 18,
+      "file": "continuous-cut-02.jpg",
+      "start": 21.9
+    },
+    {
+      "time": 36.6,
+      "shot": 13,
+      "transition": "slideL",
+      "index": 3,
+      "startFrame": 1095,
+      "frames": 18,
+      "file": "continuous-cut-03.jpg",
+      "start": 36.5
+    },
+    {
+      "time": 53,
+      "shot": 17,
+      "transition": "cut",
+      "index": 4,
+      "startFrame": 1587,
+      "frames": 18,
+      "file": "continuous-cut-04.jpg",
+      "start": 52.9
+    }
+  ],
+  "coverTime": 0.3,
+  "previewTime": 3.2,
+  "videoSha256": "9504430b7677be349efd78e9f7c6177082896cfac9f373266e64243eb7da0c8b",
+  "effectcraftSha256": "a61b7d0e59a1c725695f9e0f71e286e696cfd4c5f4d6295e29479d29cbfddbb2",
+  "filmcraftSha256": "846d08aaaf16a22862bc1455ec1622c4bf651660052aa760e52479e2756193fb",
+  "audioSha256": "dac11d93a85dd84dc51025ba77dd92b255f4bf6609e305e16b3afbd6fc50f042",
+  "masterSha256": "0d0df251a53e98ecae7826b5c30808a3447128e881221dbbaa8da03a16ec76c7",
+  "nativeSnapshot": "rendered",
+  "sha256": "9504430b7677be349efd78e9f7c6177082896cfac9f373266e64243eb7da0c8b",
+  "visualReview": "PENDING",
+  "realTimeWholeWatchAndAudition": "NOT_PERFORMED",
+  "ownerCreativeAcceptance": "PENDING",
+  "postPublicationPerformance": "NOT_MEASURED"
+}
