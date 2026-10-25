@@ -1,17 +1,17 @@
 {
-  "status": "TECHNICAL_AND_ISOLATED_VISUAL_PASS",
+  "status": "TECHNICAL_NATIVE_TRACKING_AND_ISOLATED_VISUAL_PASS",
   "date": "2026-10-25",
-  "issue": "https://github.com/Pui-core/-/issues/90",
+  "issue": "https://github.com/Pui-core/-/issues/91",
+  "previous": "https://github.com/Pui-core/Pui-core/pull/12",
   "plans": [
     {
       "id": "a-baibai",
       "title": "A｜達成ラッシュ",
       "song": "倍倍FIGHT!",
-      "bpm": 176,
-      "videoMusicStart": 2,
-      "climax": 17,
-      "outro": 21.09090909090909,
-      "technicalPassed": true,
+      "duration": 25,
+      "boardZoom": 164,
+      "counterZoom": 146,
+      "lastZoom": 182,
       "audio": {
         "integratedLufs": -14.3,
         "truePeakDbtp": -4.7
@@ -19,46 +19,38 @@
       "outputs": [
         {
           "file": "a-baibai/videos/a-baibai-reference.mp4",
-          "sha256": "0e85e8643cf841fe69b316bf315668e16bd64588a4481d7acb3dd2623550d555",
-          "bytes": 56405563,
+          "sha256": "683d41d116b1b69ef9e418bcdceed81f6e30a02051d6d05981f3f258f7002ef8",
+          "bytes": 57235290,
           "frames": 750,
           "duration": 25,
           "audioStreams": 1
         },
         {
           "file": "a-baibai/videos/a-baibai-tiktok-silent.mp4",
-          "sha256": "d075fb345796e8c287393aad859bb796f9aa71becc4a7f1a98472fdf86be521b",
-          "bytes": 55626360,
+          "sha256": "522ac4a4bf36c63ea1702bca5bcaf4b00d8a7322c83cf03e7a74e66ded1e527f",
+          "bytes": 56456103,
           "frames": 750,
           "duration": 25,
           "audioStreams": 0
         }
       ],
-      "nativeStructuralChecks": 18,
+      "projectSha256": "4a4fa67a8a684890fc15fa8824cdb8b5ebb49718b8bd3120112271fe47de63c6",
+      "textOnlyProjectSha256": "31921d1a0435cdb8f0acb48b97480a02d109e04b1c043b6fd7fe168c11b7e634",
+      "trackingSamples": 32,
+      "returns": 7,
+      "maxTrackingErrorPixels": 1.2710574864626038e-13,
+      "maxSavedKeyTimeDelta": 0.016666666666669272,
       "nativeOpaquePixels": 83824,
-      "nativeOpaqueSampleFrames": [
-        17,
-        114,
-        224,
-        305,
-        387,
-        491,
-        525,
-        714
-      ],
-      "nativeOpaqueAllExactMatch": true,
-      "projectSha256": "654861224fb405eb9307d2623ed3bcb6b7ad2d4ea2a0046b98f4879ad0fb3d7d",
-      "textOnlyProjectSha256": "262b85144420b147caa57619d0f3fcdce6ba9f8f3888e9ec5c547eaee6bac2d3"
+      "nativeOpaqueSamples": 8
     },
     {
       "id": "b-patissier",
       "title": "B｜ありがとうの贈りもの",
       "song": "キス・ミー・パティシエ",
-      "bpm": 192,
-      "videoMusicStart": 2,
-      "climax": 17,
-      "outro": 20.75,
-      "technicalPassed": true,
+      "duration": 25,
+      "boardZoom": 154,
+      "counterZoom": 138,
+      "lastZoom": 170,
       "audio": {
         "integratedLufs": -14.6,
         "truePeakDbtp": -4.9
@@ -66,46 +58,38 @@
       "outputs": [
         {
           "file": "b-patissier/videos/b-patissier-reference.mp4",
-          "sha256": "b5dd0fc69ab083fc103158d9d551fe8f0edb55d3292ffa4359b06e6646575d82",
-          "bytes": 56001301,
+          "sha256": "e4dc9255406a589e4e791603538e72702b8f1ae550fe6cbe83819b151cb12f2a",
+          "bytes": 57279971,
           "frames": 750,
           "duration": 25,
           "audioStreams": 1
         },
         {
           "file": "b-patissier/videos/b-patissier-tiktok-silent.mp4",
-          "sha256": "e6a9f0d0f17dec76f4b850df3519af92809fde85b80325615b196e52037f5aff",
-          "bytes": 55224931,
+          "sha256": "bc291627c9a6ee70eb196b4aca9e2cc1e4fe1ab9fca3fcb4d501aa6b605ac7af",
+          "bytes": 56503709,
           "frames": 750,
           "duration": 25,
           "audioStreams": 0
         }
       ],
-      "nativeStructuralChecks": 18,
+      "projectSha256": "1284720427f1567c9a6750c442317685e034a75d039e5038cbd907350596e65f",
+      "textOnlyProjectSha256": "a928fdb5fecbd723b3b16461f8f9529651ab9f87c09e645e5efa4aa982a4220c",
+      "trackingSamples": 32,
+      "returns": 7,
+      "maxTrackingErrorPixels": 2.2737367544323206e-13,
+      "maxSavedKeyTimeDelta": 0.016666666666669272,
       "nativeOpaquePixels": 83824,
-      "nativeOpaqueSampleFrames": [
-        17,
-        114,
-        248,
-        323,
-        398,
-        491,
-        525,
-        714
-      ],
-      "nativeOpaqueAllExactMatch": true,
-      "projectSha256": "e011272b090adcf6b85a24eb8bf68b73b6b34cd0996bb0da3d5551cdc88dbdc8",
-      "textOnlyProjectSha256": "657531908d8d52c5219fcdb9791310a665e3596327b83ee36ef2a3a2386b6ac0"
+      "nativeOpaqueSamples": 8
     },
     {
       "id": "c-disco",
       "title": "C｜ビンゴ・ディスコ",
       "song": "チョコレイト・ディスコ",
-      "bpm": 128,
-      "videoMusicStart": 2,
-      "climax": 17,
-      "outro": 20.75,
-      "technicalPassed": true,
+      "duration": 25,
+      "boardZoom": 176,
+      "counterZoom": 154,
+      "lastZoom": 194,
       "audio": {
         "integratedLufs": -14.4,
         "truePeakDbtp": -5.8
@@ -113,48 +97,66 @@
       "outputs": [
         {
           "file": "c-disco/videos/c-disco-reference.mp4",
-          "sha256": "1849e976b9fc5ba98387098a6cfb0df050906d314b6662881d3355af495dde1d",
-          "bytes": 56876124,
+          "sha256": "ae1110b7db3f7f97bcbd6efb9c24a9f85b4c499f17afd15eaf0ad55a955b89ac",
+          "bytes": 57272703,
           "frames": 750,
           "duration": 25,
           "audioStreams": 1
         },
         {
           "file": "c-disco/videos/c-disco-tiktok-silent.mp4",
-          "sha256": "6da128f66623815f513dd634896e4dd0848694fd1c0e51b472b187f9f60ba9ab",
-          "bytes": 56103152,
+          "sha256": "b4ffac6db3dae4bf8ad6e46c412949ce84a9f1521b97b4ab858d46aff9dde822",
+          "bytes": 56499655,
           "frames": 750,
           "duration": 25,
           "audioStreams": 0
         }
       ],
-      "nativeStructuralChecks": 18,
+      "projectSha256": "2864f813c6492658245081a314e877285f2082848ede4a0f650c988e8e962b6a",
+      "textOnlyProjectSha256": "469f7a3bb808ce5e9c7ddd7ea91d97f3e46e612b97ec2732d545dca3645284d6",
+      "trackingSamples": 32,
+      "returns": 7,
+      "maxTrackingErrorPixels": 5.684341886080802e-14,
+      "maxSavedKeyTimeDelta": 0.016666666666669272,
       "nativeOpaquePixels": 83824,
-      "nativeOpaqueSampleFrames": [
-        17,
-        114,
-        215,
-        299,
-        383,
-        491,
-        525,
-        714
-      ],
-      "nativeOpaqueAllExactMatch": true,
-      "projectSha256": "d5db575b6529aef1d5f57b4388562a10a8d62fe6ee3a2d5f42474dff255af093",
-      "textOnlyProjectSha256": "ae18e8addc9310c006552b85e7f59312f65907fc1427b62e336c630259eb3ea6"
+      "nativeOpaqueSamples": 8
     }
   ],
-  "artworkStatus": "PASS_STRUCTURE_SHA_NATIVE_OPAQUE_CORE",
+  "trackingStatus": "PASS_NATIVE_TRACKING_READBACK",
   "visualStatus": "PASS_TEXT_ONLY_VISUAL",
-  "textLayers": 315,
-  "sceneSamples": 39,
-  "transitionSamples": 36,
+  "visual": {
+    "coverage": 111,
+    "freshFrames": 18,
+    "inheritedUnchangedFrames": 93,
+    "allFramesRenderedFromFinalProject": false,
+    "requiredVisibleNativeObservations": 1008,
+    "provenance": {
+      "beforeFixReview": "qa/visual-review-before-card-fix.json",
+      "beforeFixReviewSha256": "c196344c8132eee3ab4e0935120eb632c702d69095f236d15218104fda80b3b5",
+      "checkpoint": "/home/pui/Videos/Osayu-Bingo/2026-10-25/thankyou-tracking-v2-checkpoint-before-card-fix-pKIC9s",
+      "checkpointManifestSha256": "64d84160ed8ee0391820820b7e7cae5f2768fc3717f5a95c963367b663b6ab42",
+      "structureProof": "qa/card165-structural-diff.json",
+      "structureProofSha256": "f4a05d87e32a3c430085b2f3e22729f94ec9c5ee16a6ca1c5f838b1c557c6609",
+      "nativeDynamicProof": "qa/card165-layout-verification.json",
+      "nativeDynamicProofSha256": "d4ad5201a6d38497af157da421c63ae5f7978c9b7822065faa202907ec59cd58",
+      "description": "Original111 samples were reviewed before the card-only fix. Final18 Outro samples (tracking021/022/023/024 and scene012/013 per plan) were newly rendered and reviewed. The other93 samples were inherited only after exact native structure comparison and confirmation that the changed card was inactive."
+    }
+  },
+  "card": {
+    "status": "PASS_NATIVE_CARD_ACQUISITION",
+    "nominalHeight": 165,
+    "nativeWidth": 824,
+    "nativeHeight": 179,
+    "maxBottom": 904.5,
+    "characterReservedTop": 910,
+    "minClearance": 5.5
+  },
   "sourceSha256": {
-    "motion.mjs": "303cca45f664879b677758cad54124e4253de3f40634777d5c16cd2439eac759",
-    "pipeline.mjs": "d86e4612e4739b4d09f3de059051de9b3a03b0a2ef435167df4702d00e386d81",
+    "motion.mjs": "d6e7dbb59582eb2819d62772c5cb42597b59911d530b6b3e28fa937ed8873a0f",
+    "pipeline.mjs": "91c1d9093d1ce3b5c14ae58848f89500a499c12b54f4e07f5112e5d4df03f295",
     "audit.mjs": "aa2d5b0b2bbe69d145a2123794e935e097ee60d40460e757200f300604623ce7",
-    "package.mjs": "93a503006ddeae9113d3f6f920347453d5dc7a8edf7a3b808133c82ee39b5f07"
+    "tracking-audit.mjs": "8c578aca9069fac6ba3d07aedde3187e5024e4173f0bf72d097dbe9d62e6a5ca",
+    "package.mjs": "91971ecb1f808f7874f2bae23946a7ee92443cc37d3a1e465e3ecc64d1680c51"
   },
   "portableDelivery": {
     "status": "PASS_PORTABLE_NATIVE_PACKAGE",
@@ -162,44 +164,44 @@
     "movies": [
       {
         "file": "a-baibai-reference.mp4",
-        "sha256": "0e85e8643cf841fe69b316bf315668e16bd64588a4481d7acb3dd2623550d555",
-        "bytes": 56405563
+        "sha256": "683d41d116b1b69ef9e418bcdceed81f6e30a02051d6d05981f3f258f7002ef8",
+        "bytes": 57235290
       },
       {
         "file": "a-baibai-tiktok-silent.mp4",
-        "sha256": "d075fb345796e8c287393aad859bb796f9aa71becc4a7f1a98472fdf86be521b",
-        "bytes": 55626360
+        "sha256": "522ac4a4bf36c63ea1702bca5bcaf4b00d8a7322c83cf03e7a74e66ded1e527f",
+        "bytes": 56456103
       },
       {
         "file": "b-patissier-reference.mp4",
-        "sha256": "b5dd0fc69ab083fc103158d9d551fe8f0edb55d3292ffa4359b06e6646575d82",
-        "bytes": 56001301
+        "sha256": "e4dc9255406a589e4e791603538e72702b8f1ae550fe6cbe83819b151cb12f2a",
+        "bytes": 57279971
       },
       {
         "file": "b-patissier-tiktok-silent.mp4",
-        "sha256": "e6a9f0d0f17dec76f4b850df3519af92809fde85b80325615b196e52037f5aff",
-        "bytes": 55224931
+        "sha256": "bc291627c9a6ee70eb196b4aca9e2cc1e4fe1ab9fca3fcb4d501aa6b605ac7af",
+        "bytes": 56503709
       },
       {
         "file": "c-disco-reference.mp4",
-        "sha256": "1849e976b9fc5ba98387098a6cfb0df050906d314b6662881d3355af495dde1d",
-        "bytes": 56876124
+        "sha256": "ae1110b7db3f7f97bcbd6efb9c24a9f85b4c499f17afd15eaf0ad55a955b89ac",
+        "bytes": 57272703
       },
       {
         "file": "c-disco-tiktok-silent.mp4",
-        "sha256": "6da128f66623815f513dd634896e4dd0848694fd1c0e51b472b187f9f60ba9ab",
-        "bytes": 56103152
+        "sha256": "b4ffac6db3dae4bf8ad6e46c412949ce84a9f1521b97b4ab858d46aff9dde822",
+        "bytes": 56499655
       }
     ],
     "nativeReopenSaveAndRender": true,
     "fixedLayersUnchanged": true
   },
   "limitations": [
-    "Character-containing images were never displayed or sent to AI.",
-    "Full human realtime playback/listening and TikTok device sync are unverified.",
-    "TikTok sound ID 7353192190165797648 could not be fetched. C uses the official Apple trial of the standard Perfume recording.",
-    "Apple preview-relative offsets are measured; full-recording offsets and identical TikTok clip edition are unverified.",
-    "Owner creative approval and post-publication performance are not evaluated.",
-    "Confetti briefly crosses completion type before the readable hold."
+    "Only stage-only previews were displayed to AI; character images and character-containing output were never displayed.",
+    "The final size-only card change was checked by exact structure comparison and 18 new Outro renders; 93 unchanged samples were inherited with provenance.",
+    "Native camera checks evaluate saved key times within one 30fps frame of declared times, not continuous perceptual smoothness.",
+    "Full human realtime playback/listening, TikTok device sync and owner creative approval are not verified.",
+    "C uses the previously disclosed Apple standard-edition preview; the requested TikTok sound ID could not be fetched.",
+    "Original delivery and working media remain preserved."
   ]
 }

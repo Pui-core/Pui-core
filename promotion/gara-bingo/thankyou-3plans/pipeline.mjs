@@ -6,8 +6,8 @@ import {spawn, spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {plans, composition} from './motion.mjs';
 
-export const root = path.resolve(process.env.OSAYU_THANKYOU_ROOT || '/home/pui/Videos/Osayu-Bingo/2026-10-25/thankyou-3plans');
-const oldRoot = '/home/pui/Videos/Osayu-Bingo/2026-10-24/revision-04';
+export const root = path.resolve(process.env.OSAYU_THANKYOU_ROOT || '/home/pui/Videos/Osayu-Bingo/2026-10-25/thankyou-tracking-v2');
+const oldRoot = '/home/pui/Videos/Osayu-Bingo/2026-10-25/thankyou-3plans';
 const EC = '/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe';
 const FC = '/mnt/c/Program Files/FilmCraft/filmcraft-cli.exe';
 const FF = fs.realpathSync('/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe');
@@ -154,7 +154,7 @@ async function mixAudio(p) {
 function createFilm(p, master, music) {
   const fc = path.join(dir(p), 'projects', p.id + '.fcproj');
   const commands = [
-    {id:'file.newProject', params:{name:'Osayu Thankyou / ' + p.title}},
+    {id:'file.newProject', params:{name:'Osayu Thankyou / 画面追従 改訂版 / ' + p.title}},
     {id:'file.newSequence', params:{name:comp(p), width:1080, height:1920, fps:30, sampleRate:48000, video:1, audio:1}},
     {id:'file.import', params:{paths:[nativePath(master), nativePath(music)]}}
   ];
@@ -236,6 +236,35 @@ export async function motionReview(selected = plans) {
   return summaries;
 }
 
+export async function trackingReview(selected = plans) {
+  assets();
+  const summaries = [];
+  for (const p of selected) {
+    directories(p);
+    const isolation = assertTextOnly(p), frames = [];
+    const times = p.trackingReviewTimes;
+    if (!Array.isArray(times) || !times.length || times.some(time => !Number.isFinite(time) || time < 0 || time >= p.duration)) throw Error('Valid trackingReviewTimes are required: ' + p.id);
+    const layout = parse(fs.readFileSync(receipt(p, 'text-only-layout'), 'utf8'));
+    for (const [i, time] of times.entries()) {
+      const stem = 'text-only-tracking-' + String(i+1).padStart(3, '0');
+      const file = path.join(dir(p), 'qa', stem + '.png');
+      // Never load or render the character-containing project for this review.
+      await run(EC, ['render-frame', '--project', nativePath(project(p, true)), '--comp', comp(p), '--time', String(time), '--out', nativePath(file), '--json'], receipt(p, stem));
+      frames.push({time, file:path.basename(file), sha256:hash(file), containsCharacter:false});
+    }
+    if (assertTextOnly(p).projectSha256 !== isolation.projectSha256) throw Error('Text-only project changed during tracking sampling.');
+    const columns = 4, rows = Math.ceil(frames.length/columns);
+    const sheet = path.join(dir(p), 'qa/text-only-tracking.png');
+    await run(FF, ['-v', 'error', '-y', '-framerate', '1', '-start_number', '1', '-i', nativePath(path.join(dir(p), 'qa/text-only-tracking-%03d.png')), '-vf', `scale=270:480,tile=${columns}x${rows}:nb_frames=${frames.length}:padding=8:margin=8:color=0x0c1020`, '-frames:v', '1', nativePath(sheet)], receipt(p, 'tracking-contact-sheet'));
+    const index = {...isolation, id:p.id, columns, rows, frames, trackingTargets:layout.trackingTargets || [],
+      sheet:path.basename(sheet), sheetSha256:hash(sheet), visualInspectionPerformed:false};
+    save(receipt(p, 'text-only-tracking-index'), index);
+    summaries.push(index);
+    console.log('Character-free tracking previews ' + p.id);
+  }
+  return summaries;
+}
+
 export async function verify(selected = plans) {
   const summary = [];
   for (const p of selected) {
@@ -277,7 +306,7 @@ export async function verify(selected = plans) {
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const operation = process.argv[2], selected = process.argv[3] ? plans.filter(p => p.id === process.argv[3]) : plans;
   if (!selected.length) throw Error('Unknown plan ID.');
-  const actions = {prepare, render, previews, 'motion-review':motionReview, verify};
-  if (!actions[operation]) throw Error('Use prepare | render | previews | motion-review | verify [plan-id].');
+  const actions = {prepare, render, previews, 'motion-review':motionReview, 'tracking-review':trackingReview, verify};
+  if (!actions[operation]) throw Error('Use prepare | render | previews | motion-review | tracking-review | verify [plan-id].');
   await actions[operation](selected);
 }
