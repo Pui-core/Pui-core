@@ -1,0 +1,45 @@
+{
+  "status": "SAVED_AND_VERIFIED_FOR_OWNER_PREVIEW",
+  "createdAt": "2026-10-25T00:44:18.254Z",
+  "issue": "https://github.com/Pui-core/-/issues/87",
+  "video": {
+    "file": "videos/01-projectp-first.mp4",
+    "sha256": "5f56d833eba18fb816e1f8e65ff046d5b2d7a4f20b622df0aa137df9cc94f878",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 818,
+    "pictureDuration": 27.266666666666666,
+    "containerDuration": 27.285,
+    "audioCodec": "AAC",
+    "integratedLufs": -16.5,
+    "truePeakDbtp": -1.9
+  },
+  "artifacts": {
+    "mixSha256": "10f49c86a53b6bdb79bf5c40c752eafb901a164cbc7334661400e5c03b9a92a9",
+    "effectcraftSha256": "9c1f52fbf1426ff17524e095f416890777079982ac5883ffa9e0ebdd197be9da",
+    "filmcraftSha256": "5d8fb71ada0444256389cea071bd7a90137fb2d7cadb9933d207188717d05a6e"
+  },
+  "checks": {
+    "fullVideoAndAudioDecode": true,
+    "copiedVideoMatchesRender": true,
+    "nativeReopenSaveRenderAtDelivery": true,
+    "missingNativeAssets": 0,
+    "savedCameraKeys": 41,
+    "uniqueHookText": true,
+    "independentFinalAac": "PASS_NUMERIC_FINAL_AAC_WITH_AUDITION_LIMIT",
+    "independentSampledVisuals": "PASS_WITHIN_FINAL_EXTRACTED_IMAGE_SCOPE",
+    "editBoundariesReviewed": 13,
+    "mainTextBoxes": 14,
+    "copySafety": "qa/package-safety.json"
+  },
+  "scope": {
+    "directWholeVideoWatch": false,
+    "directAudioAudition": false,
+    "actualTikTokOrShortsUpload": false,
+    "actualDeviceUiReview": false,
+    "ownerCreativeAcceptance": "pending",
+    "publicationResults": "not measured"
+  },
+  "humanStory": "実際の本人の相談から、いまのゲーム制作と本人の歌声へ。3本完成の達成や本人が行っていない作業を創作していない。"
+}

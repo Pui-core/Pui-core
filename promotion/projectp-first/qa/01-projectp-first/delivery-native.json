@@ -1,0 +1,61 @@
+{
+  "version": "ProjectP-first",
+  "comp": "ProjectP 01 01",
+  "previewTime": 3.2,
+  "nativeReopenSaveRender": true,
+  "missingAssets": 0,
+  "videoSha256": "5f56d833eba18fb816e1f8e65ff046d5b2d7a4f20b622df0aa137df9cc94f878",
+  "audioSha256": "10f49c86a53b6bdb79bf5c40c752eafb901a164cbc7334661400e5c03b9a92a9",
+  "effectcraftFootage": [
+    {
+      "command": "footage.check",
+      "result": {
+        "checked": 15,
+        "missing": 0,
+        "probed": 0
+      }
+    },
+    {
+      "command": "footage.missing",
+      "result": {
+        "missing": []
+      }
+    }
+  ],
+  "filmcraftStatus": [
+    {
+      "identity": {
+        "fingerprint": "078f2cd30f5c8db5",
+        "size": 47919720
+      },
+      "item": 4,
+      "name": "01-projectp-first-master.mp4",
+      "path": "F:\\Videos\\ProjectP-初投稿-2026-10-25\\media\\01-projectp-first-master.mp4",
+      "proxy": null,
+      "status": "online"
+    },
+    {
+      "identity": {
+        "fingerprint": "eeb293bb75820a07",
+        "size": 7852844
+      },
+      "item": 5,
+      "name": "first-mix.wav",
+      "path": "F:\\Videos\\ProjectP-初投稿-2026-10-25\\media\\first-mix.wav",
+      "proxy": null,
+      "status": "online"
+    }
+  ],
+  "effectcraftSha256": "9c1f52fbf1426ff17524e095f416890777079982ac5883ffa9e0ebdd197be9da",
+  "filmcraftSha256": "5d8fb71ada0444256389cea071bd7a90137fb2d7cadb9933d207188717d05a6e",
+  "proofs": {
+    "effectcraft": {
+      "file": "delivery-effectcraft.png",
+      "sha256": "6e7f0b2e4a4afac0fadab17bbe325a5140472d279c556295a6376248079b9f9f"
+    },
+    "filmcraft": {
+      "file": "delivery-filmcraft.png",
+      "sha256": "f60a0886bc7d1ff6139b082181a268fd6cb019bbc03a0369c2fe02917c9d4a81"
+    }
+  }
+}

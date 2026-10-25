@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "case": "existing-symlink",
+      "rejectedBeforeCopy": true
+    },
+    {
+      "case": "symlink-parent-child",
+      "rejectedBeforeCopy": true
+    },
+    {
+      "case": "case-varied-DrvFS",
+      "rejectedBeforeCopy": true
+    }
+  ],
+  "existingProductionsWritten": false,
+  "notes": "Linux paths retain case sensitivity; Windows-mounted drive comparisons fold case. Prior production contents were not mutated."
+}

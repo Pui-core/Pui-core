@@ -1,0 +1,759 @@
+{
+  "status": "SAVED_NATIVE_KEYS_MATCH_FOCUS_PLAN",
+  "nativeSha256": "9c1f52fbf1426ff17524e095f416890777079982ac5883ffa9e0ebdd197be9da",
+  "rigs": 14,
+  "keys": 41,
+  "maxFocusErrorAtKeysPx": 2.2737367544323206e-13,
+  "uniqueHookAndName": true,
+  "mainTextDesignBounds": {
+    "x": [
+      25,
+      980
+    ],
+    "y": [
+      300,
+      1500
+    ]
+  },
+  "scope": "Saved native child/parent transforms at keys and declared text landing bounds. Does not assert full continuous actor tracking or guaranteed safety under every platform UI.",
+  "records": [
+    {
+      "scene": 0,
+      "time": 0,
+      "focus": [
+        640,
+        352.8
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 0,
+      "time": 0.2,
+      "focus": [
+        640,
+        352.8
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 0,
+      "time": 0.6333333333333333,
+      "focus": [
+        640,
+        352.8
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 1,
+      "time": 0.6666666666666666,
+      "focus": [
+        640,
+        295.0819672131148
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 1,
+      "time": 0.8333333333333334,
+      "focus": [
+        640,
+        295.0819672131148
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 1,
+      "time": 1.8666666666666667,
+      "focus": [
+        640,
+        417.59999999999997
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 2,
+      "time": 2.066666666666667,
+      "focus": [
+        640,
+        446.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 2,
+      "time": 2.2333333333333334,
+      "focus": [
+        640,
+        446.4
+      ],
+      "screen": [
+        540,
+        959.9999999999999
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 2,
+      "time": 2.6666666666666665,
+      "focus": [
+        640,
+        446.4
+      ],
+      "screen": [
+        540,
+        959.9999999999999
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 3,
+      "time": 2.7333333333333334,
+      "focus": [
+        245,
+        55
+      ],
+      "screen": [
+        -780,
+        960
+      ],
+      "expected": [
+        -780,
+        960
+      ],
+      "entering": true,
+      "errorPx": 0
+    },
+    {
+      "scene": 3,
+      "time": 2.9,
+      "focus": [
+        245,
+        55
+      ],
+      "screen": [
+        500,
+        960
+      ],
+      "expected": [
+        500,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 3,
+      "time": 5.733333333333333,
+      "focus": [
+        245,
+        55
+      ],
+      "screen": [
+        500,
+        960
+      ],
+      "expected": [
+        500,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 4,
+      "time": 5.866666666666666,
+      "focus": [
+        640,
+        352.8
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 4,
+      "time": 6.066666666666666,
+      "focus": [
+        640,
+        352.9411764705883
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 4,
+      "time": 8.466666666666667,
+      "focus": [
+        640,
+        352.9411764705883
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 5,
+      "time": 8.6,
+      "focus": [
+        640,
+        211.76470588235296
+      ],
+      "screen": [
+        540,
+        960.0000000000002
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 2.2737367544323206e-13
+    },
+    {
+      "scene": 5,
+      "time": 8.766666666666667,
+      "focus": [
+        640,
+        225
+      ],
+      "screen": [
+        540,
+        960.0000000000001
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 5,
+      "time": 10.1,
+      "focus": [
+        640,
+        225
+      ],
+      "screen": [
+        540,
+        960.0000000000001
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 6,
+      "time": 10.2,
+      "focus": [
+        640,
+        225
+      ],
+      "screen": [
+        540,
+        960.0000000000001
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 6,
+      "time": 10.766666666666667,
+      "focus": [
+        640,
+        468
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 6,
+      "time": 11.5,
+      "focus": [
+        640,
+        468
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 7,
+      "time": 11.6,
+      "focus": [
+        624,
+        312
+      ],
+      "screen": [
+        1820,
+        960
+      ],
+      "expected": [
+        1820,
+        960
+      ],
+      "entering": true,
+      "errorPx": 0
+    },
+    {
+      "scene": 7,
+      "time": 11.766666666666667,
+      "focus": [
+        624,
+        312
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 7,
+      "time": 14.1,
+      "focus": [
+        732,
+        312
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 8,
+      "time": 14.333333333333334,
+      "focus": [
+        686,
+        130
+      ],
+      "screen": [
+        -740,
+        960
+      ],
+      "expected": [
+        -740,
+        960
+      ],
+      "entering": true,
+      "errorPx": 0
+    },
+    {
+      "scene": 8,
+      "time": 14.5,
+      "focus": [
+        686,
+        130
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 8,
+      "time": 15.5,
+      "focus": [
+        686,
+        353.6
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 8,
+      "time": 16.233333333333334,
+      "focus": [
+        686,
+        353.6
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 9,
+      "time": 16.4,
+      "focus": [
+        640,
+        446.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 9,
+      "time": 16.7,
+      "focus": [
+        640,
+        446.4
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 9,
+      "time": 18.1,
+      "focus": [
+        640,
+        352.9411764705883
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 10,
+      "time": 18.4,
+      "focus": [
+        640,
+        352.9411764705883
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 10,
+      "time": 18.666666666666668,
+      "focus": [
+        640,
+        352.9411764705883
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 10,
+      "time": 20.4,
+      "focus": [
+        640,
+        352.8
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 11,
+      "time": 20.6,
+      "focus": [
+        470,
+        769.12
+      ],
+      "screen": [
+        540,
+        959.9999999999999
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 1.1368683772161603e-13
+    },
+    {
+      "scene": 11,
+      "time": 20.8,
+      "focus": [
+        470,
+        835.5555555555554
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 11,
+      "time": 21.9,
+      "focus": [
+        470,
+        835.5555555555554
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 12,
+      "time": 22,
+      "focus": [
+        540,
+        960
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 12,
+      "time": 25.366666666666667,
+      "focus": [
+        540,
+        960
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 13,
+      "time": 25.433333333333334,
+      "focus": [
+        640,
+        360
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    },
+    {
+      "scene": 13,
+      "time": 27.133333333333333,
+      "focus": [
+        640,
+        360
+      ],
+      "screen": [
+        540,
+        960
+      ],
+      "expected": [
+        540,
+        960
+      ],
+      "entering": false,
+      "errorPx": 0
+    }
+  ]
+}
