@@ -1,17 +1,23 @@
 {
-  "status": "TECHNICAL_NATIVE_TRACKING_AND_ISOLATED_VISUAL_PASS",
+  "status": "TECHNICAL_NATIVE_WHOLEFRAME_AND_ISOLATED_VISUAL_PASS",
+  "version": "wholeframe-v3",
   "date": "2026-10-25",
-  "issue": "https://github.com/Pui-core/-/issues/91",
-  "previous": "https://github.com/Pui-core/Pui-core/pull/12",
+  "issue": "https://github.com/Pui-core/-/issues/92",
+  "previous": "https://github.com/Pui-core/Pui-core/pull/13",
+  "request": {
+    "wholeFrameMotion": true,
+    "originalBingoPalette": true,
+    "continuousSceneChanges": true,
+    "characterScreenMotionAuthorizedByLatestOwnerRequest": true
+  },
   "plans": [
     {
       "id": "a-baibai",
-      "title": "A｜達成ラッシュ",
+      "title": "A｜駆け抜けるビンゴ",
       "song": "倍倍FIGHT!",
       "duration": 25,
-      "boardZoom": 164,
-      "counterZoom": 146,
-      "lastZoom": 182,
+      "fullScreenTransitions": 12,
+      "wholeFrameCameraKeys": 59,
       "audio": {
         "integratedLufs": -14.3,
         "truePeakDbtp": -4.7
@@ -19,38 +25,41 @@
       "outputs": [
         {
           "file": "a-baibai/videos/a-baibai-reference.mp4",
-          "sha256": "683d41d116b1b69ef9e418bcdceed81f6e30a02051d6d05981f3f258f7002ef8",
-          "bytes": 57235290,
+          "sha256": "2d3b7a85fe77c3c30ed876807d50c627be627986d3cc3553d1d9100c3a593c82",
+          "bytes": 56563568,
           "frames": 750,
           "duration": 25,
           "audioStreams": 1
         },
         {
           "file": "a-baibai/videos/a-baibai-tiktok-silent.mp4",
-          "sha256": "522ac4a4bf36c63ea1702bca5bcaf4b00d8a7322c83cf03e7a74e66ded1e527f",
-          "bytes": 56456103,
+          "sha256": "fb0139c9a6a2f412315ba2928e6e7743fd6c22cd44b3e291d315b066008aaa29",
+          "bytes": 55784429,
           "frames": 750,
           "duration": 25,
           "audioStreams": 0
         }
       ],
-      "projectSha256": "4a4fa67a8a684890fc15fa8824cdb8b5ebb49718b8bd3120112271fe47de63c6",
-      "textOnlyProjectSha256": "31921d1a0435cdb8f0acb48b97480a02d109e04b1c043b6fd7fe168c11b7e634",
-      "trackingSamples": 32,
-      "returns": 7,
-      "maxTrackingErrorPixels": 1.2710574864626038e-13,
-      "maxSavedKeyTimeDelta": 0.016666666666669272,
-      "nativeOpaquePixels": 83824,
-      "nativeOpaqueSamples": 8
+      "projectSha256": "739bc5f69273dee3abcbe02440a118963e11730a064dea902b55ed2befd8f348",
+      "textOnlyProjectSha256": "e91d59583280154e192de8a79cfc13d4caaa0d42476b5b63d9f91c2def310721",
+      "layoutSha256": "02f4aede5f121c87aa40413f11f95a2670267380867872d8ab6fe54ee8decaca",
+      "structureChecksPassed": 25,
+      "structureChecksTotal": 25,
+      "nativeCameraSamples": 59,
+      "backgroundCoverageSamples": 117,
+      "minimumBackgroundSourceMarginPixels": 38.889387607374985,
+      "reviewedFrameImages": 49,
+      "wholeFrameCharacterPassed": true,
+      "nativeReopenAndRender": true,
+      "technicalPassed": true
     },
     {
       "id": "b-patissier",
-      "title": "B｜ありがとうの贈りもの",
+      "title": "B｜ありがとうの紙ふぶき",
       "song": "キス・ミー・パティシエ",
       "duration": 25,
-      "boardZoom": 154,
-      "counterZoom": 138,
-      "lastZoom": 170,
+      "fullScreenTransitions": 12,
+      "wholeFrameCameraKeys": 59,
       "audio": {
         "integratedLufs": -14.6,
         "truePeakDbtp": -4.9
@@ -58,38 +67,41 @@
       "outputs": [
         {
           "file": "b-patissier/videos/b-patissier-reference.mp4",
-          "sha256": "e4dc9255406a589e4e791603538e72702b8f1ae550fe6cbe83819b151cb12f2a",
-          "bytes": 57279971,
+          "sha256": "3f098f58d14f76384bf67e684227e20dc46a5db3bcc7bdce143f60a673fbc890",
+          "bytes": 56235803,
           "frames": 750,
           "duration": 25,
           "audioStreams": 1
         },
         {
           "file": "b-patissier/videos/b-patissier-tiktok-silent.mp4",
-          "sha256": "bc291627c9a6ee70eb196b4aca9e2cc1e4fe1ab9fca3fcb4d501aa6b605ac7af",
-          "bytes": 56503709,
+          "sha256": "7552f6dc73ffd60dec98e69dfa9e320286ce049153cba0083e200627a9cf5ede",
+          "bytes": 55459589,
           "frames": 750,
           "duration": 25,
           "audioStreams": 0
         }
       ],
-      "projectSha256": "1284720427f1567c9a6750c442317685e034a75d039e5038cbd907350596e65f",
-      "textOnlyProjectSha256": "a928fdb5fecbd723b3b16461f8f9529651ab9f87c09e645e5efa4aa982a4220c",
-      "trackingSamples": 32,
-      "returns": 7,
-      "maxTrackingErrorPixels": 2.2737367544323206e-13,
-      "maxSavedKeyTimeDelta": 0.016666666666669272,
-      "nativeOpaquePixels": 83824,
-      "nativeOpaqueSamples": 8
+      "projectSha256": "a173561bb224fc971625c23b4224f42f84676452d6099f1b04456107fe1ebbc3",
+      "textOnlyProjectSha256": "88ce063596cbb773415b730f9ceda3d31c3a38a5e3f2609d145ca44fbf37d412",
+      "layoutSha256": "16a89b714d273ac74d7bc51c72995e5867854aff24a2db8146748a7b98b6b0ab",
+      "structureChecksPassed": 25,
+      "structureChecksTotal": 25,
+      "nativeCameraSamples": 59,
+      "backgroundCoverageSamples": 117,
+      "minimumBackgroundSourceMarginPixels": 49.18958628693257,
+      "reviewedFrameImages": 49,
+      "wholeFrameCharacterPassed": true,
+      "nativeReopenAndRender": true,
+      "technicalPassed": true
     },
     {
       "id": "c-disco",
-      "title": "C｜ビンゴ・ディスコ",
+      "title": "C｜ビンゴ・パレード",
       "song": "チョコレイト・ディスコ",
       "duration": 25,
-      "boardZoom": 176,
-      "counterZoom": 154,
-      "lastZoom": 194,
+      "fullScreenTransitions": 12,
+      "wholeFrameCameraKeys": 59,
       "audio": {
         "integratedLufs": -14.4,
         "truePeakDbtp": -5.8
@@ -97,111 +109,167 @@
       "outputs": [
         {
           "file": "c-disco/videos/c-disco-reference.mp4",
-          "sha256": "ae1110b7db3f7f97bcbd6efb9c24a9f85b4c499f17afd15eaf0ad55a955b89ac",
-          "bytes": 57272703,
+          "sha256": "4436b2d26550cc00ce80d995174ef15986a93a7c4e3fbeee3fdc12106675a36e",
+          "bytes": 56257212,
           "frames": 750,
           "duration": 25,
           "audioStreams": 1
         },
         {
           "file": "c-disco/videos/c-disco-tiktok-silent.mp4",
-          "sha256": "b4ffac6db3dae4bf8ad6e46c412949ce84a9f1521b97b4ab858d46aff9dde822",
-          "bytes": 56499655,
+          "sha256": "e12995361cac9dd9e55935b506bb54d74aeb384e90e939f24668efb6f2401a09",
+          "bytes": 55484757,
           "frames": 750,
           "duration": 25,
           "audioStreams": 0
         }
       ],
-      "projectSha256": "2864f813c6492658245081a314e877285f2082848ede4a0f650c988e8e962b6a",
-      "textOnlyProjectSha256": "469f7a3bb808ce5e9c7ddd7ea91d97f3e46e612b97ec2732d545dca3645284d6",
-      "trackingSamples": 32,
-      "returns": 7,
-      "maxTrackingErrorPixels": 5.684341886080802e-14,
-      "maxSavedKeyTimeDelta": 0.016666666666669272,
-      "nativeOpaquePixels": 83824,
-      "nativeOpaqueSamples": 8
+      "projectSha256": "43ed6b8ffb0a295f74e50118186326f0fef2d4d2b1ddc6a2caef17850fcd94bb",
+      "textOnlyProjectSha256": "dd74d19e9415f28d8f6316396c71bea5de09e44646016babc378e9f4667fe306",
+      "layoutSha256": "8d85d2ffa26c9be5c3b7a12ed2da292b4258378100230a8847e9e35c4681da2f",
+      "structureChecksPassed": 25,
+      "structureChecksTotal": 25,
+      "nativeCameraSamples": 59,
+      "backgroundCoverageSamples": 117,
+      "minimumBackgroundSourceMarginPixels": 49.65527692358939,
+      "reviewedFrameImages": 49,
+      "wholeFrameCharacterPassed": true,
+      "nativeReopenAndRender": true,
+      "technicalPassed": true
     }
   ],
-  "trackingStatus": "PASS_NATIVE_TRACKING_READBACK",
-  "visualStatus": "PASS_TEXT_ONLY_VISUAL",
-  "visual": {
-    "coverage": 111,
-    "freshFrames": 18,
-    "inheritedUnchangedFrames": 93,
-    "allFramesRenderedFromFinalProject": false,
-    "requiredVisibleNativeObservations": 1008,
-    "provenance": {
-      "beforeFixReview": "qa/visual-review-before-card-fix.json",
-      "beforeFixReviewSha256": "c196344c8132eee3ab4e0935120eb632c702d69095f236d15218104fda80b3b5",
-      "checkpoint": "/home/pui/Videos/Osayu-Bingo/2026-10-25/thankyou-tracking-v2-checkpoint-before-card-fix-pKIC9s",
-      "checkpointManifestSha256": "64d84160ed8ee0391820820b7e7cae5f2768fc3717f5a95c963367b663b6ab42",
-      "structureProof": "qa/card165-structural-diff.json",
-      "structureProofSha256": "f4a05d87e32a3c430085b2f3e22729f94ec9c5ee16a6ca1c5f838b1c557c6609",
-      "nativeDynamicProof": "qa/card165-layout-verification.json",
-      "nativeDynamicProofSha256": "d4ad5201a6d38497af157da421c63ae5f7978c9b7822065faa202907ec59cd58",
-      "description": "Original111 samples were reviewed before the card-only fix. Final18 Outro samples (tracking021/022/023/024 and scene012/013 per plan) were newly rendered and reviewed. The other93 samples were inherited only after exact native structure comparison and confirmation that the changed card was inactive."
-    }
+  "background": {
+    "file": "bingo-paper-background.png",
+    "sha256": "beeb93c9ffb791e113704cf8144db40858a7340803c1be860a3744e3a1edd779",
+    "width": 941,
+    "height": 1672,
+    "opaque": "True",
+    "containsCharacter": false,
+    "aiViewingAllowed": true,
+    "generatedBy": "image_gen built-in",
+    "originalImagePassedToAI": false,
+    "referencePalette": [
+      "#EEE7F8",
+      "#ADCFF4",
+      "#DFABE3",
+      "#9FB0E8"
+    ],
+    "paletteSource": "Non-AI Windows OCR and numerical RGB analysis of ビンゴルール.jpg",
+    "decorations": "New celebratory paper, ribbon and sparkle decorations; not claimed as recognized motifs from original bingo image",
+    "source": "/home/pui/.codex/generated_images/01a171c3-d3fd-77c1-a063-b4868d8c0aab/exec-2017f57c-0cd0-48b7-a30a-7a3cdadeb53b.png",
+    "promptFile": "背景生成プロンプト.md",
+    "manifestSha256": "5b539569a0cc05444bd8dfb3f16152fe761fdf3f95f1d6d02e354262313d76c8"
   },
-  "card": {
-    "status": "PASS_NATIVE_CARD_ACQUISITION",
-    "nominalHeight": 165,
-    "nativeWidth": 824,
-    "nativeHeight": 179,
-    "maxBottom": 904.5,
-    "characterReservedTop": 910,
-    "minClearance": 5.5
+  "wholeFrame": {
+    "parent": "WHOLE FRAME CAMERA",
+    "allVisualLayersAreDirectChildren": true,
+    "originalIllustrationLocalPropertiesUnchanged": true,
+    "characterImageInputToAI": false,
+    "characterContainingRastersViewedByAI": false,
+    "fixedScreenOpaquePixelComparisonApplicable": false,
+    "reason": "Latest owner request moves the complete scene, including illustration, with a normal native camera transform."
+  },
+  "qa": {
+    "wholeframeStatus": "PASS_NATIVE_WHOLEFRAME",
+    "wholeframeAuditSha256": "4ce7969722e2564a7bc25002df59b386918de6224cc93cf06e15924133fec1e6",
+    "visualStatus": "PASS_TEXT_ONLY_VISUAL",
+    "visualReviewSha256": "5e578a232a4481542ec04014235ff2039f7836c7c2d2a35fa716a259b8769d3c",
+    "reviewedFrameImages": 147,
+    "nativeCameraSamples": 177,
+    "backgroundCoverageSamples": 351,
+    "allRenderedVideoFramesDecoded": true,
+    "allRenderedVideoFramesVisuallyInspected": false,
+    "visualEvidenceInheritedFromV2": false,
+    "mandatoryVisualFindings": []
   },
   "sourceSha256": {
-    "motion.mjs": "d6e7dbb59582eb2819d62772c5cb42597b59911d530b6b3e28fa937ed8873a0f",
-    "pipeline.mjs": "91c1d9093d1ce3b5c14ae58848f89500a499c12b54f4e07f5112e5d4df03f295",
-    "audit.mjs": "aa2d5b0b2bbe69d145a2123794e935e097ee60d40460e757200f300604623ce7",
-    "tracking-audit.mjs": "8c578aca9069fac6ba3d07aedde3187e5024e4173f0bf72d097dbe9d62e6a5ca",
-    "package.mjs": "91971ecb1f808f7874f2bae23946a7ee92443cc37d3a1e465e3ecc64d1680c51"
+    "motion.mjs": "41ed7fe262160a6f50ce0a42e6562eeb587b371308ff655c9eec8936020b5e48",
+    "pipeline.mjs": "97e09b18acd22491904a8c5d72cc2f685197f06bf4e3982b399ca055d58bb573",
+    "wholeframe-audit.mjs": "26ead294f73827a1f90455da4298bfe14726a4ccd6709909b382f830cf283803",
+    "package.mjs": "1b9e83b7b55f4391c2036335783df839b4afce6e0f8dff35fdf62818d3e1f69d",
+    "README.md": "2edbdeeb29205b73ebb2ac4ee6ea8f1bfbb1e8d53583abb8b787c6387ed8d340",
+    "音源後付けガイド.md": "ec9c72ce5fc2db68dc713fe0e93e17d3009c25dfda2d743c1f8611e5d1f20544",
+    "背景生成プロンプト.md": "888a107f5cc8fb948e1d4e39f60c61f50bc841d2f35f2fa8c24d9f7c28b9b056"
   },
   "portableDelivery": {
     "status": "PASS_PORTABLE_NATIVE_PACKAGE",
+    "destination": "F:\\Users\\pui\\Documents\\gara\\bingo-thankyou-wholeframe-v3-20261025",
     "nativeProjects": 9,
-    "movies": [
-      {
-        "file": "a-baibai-reference.mp4",
-        "sha256": "683d41d116b1b69ef9e418bcdceed81f6e30a02051d6d05981f3f258f7002ef8",
-        "bytes": 57235290
-      },
-      {
-        "file": "a-baibai-tiktok-silent.mp4",
-        "sha256": "522ac4a4bf36c63ea1702bca5bcaf4b00d8a7322c83cf03e7a74e66ded1e527f",
-        "bytes": 56456103
-      },
-      {
-        "file": "b-patissier-reference.mp4",
-        "sha256": "e4dc9255406a589e4e791603538e72702b8f1ae550fe6cbe83819b151cb12f2a",
-        "bytes": 57279971
-      },
-      {
-        "file": "b-patissier-tiktok-silent.mp4",
-        "sha256": "bc291627c9a6ee70eb196b4aca9e2cc1e4fe1ab9fca3fcb4d501aa6b605ac7af",
-        "bytes": 56503709
-      },
-      {
-        "file": "c-disco-reference.mp4",
-        "sha256": "ae1110b7db3f7f97bcbd6efb9c24a9f85b4c499f17afd15eaf0ad55a955b89ac",
-        "bytes": 57272703
-      },
-      {
-        "file": "c-disco-tiktok-silent.mp4",
-        "sha256": "b4ffac6db3dae4bf8ad6e46c412949ce84a9f1521b97b4ab858d46aff9dde822",
-        "bytes": 56499655
-      }
-    ],
+    "movieCount": 6,
     "nativeReopenSaveAndRender": true,
-    "fixedLayersUnchanged": true
+    "characterLocalPropertiesUnchanged": true,
+    "wholeFrameKeysAndParentsUnchanged": true,
+    "report": "editable/qa/package.json",
+    "plans": [
+      {
+        "id": "a-baibai",
+        "movies": [
+          {
+            "file": "a-baibai-reference.mp4",
+            "sha256": "2d3b7a85fe77c3c30ed876807d50c627be627986d3cc3553d1d9100c3a593c82",
+            "bytes": 56563568
+          },
+          {
+            "file": "a-baibai-tiktok-silent.mp4",
+            "sha256": "fb0139c9a6a2f412315ba2928e6e7743fd6c22cd44b3e291d315b066008aaa29",
+            "bytes": 55784429
+          }
+        ],
+        "nativeReopenSaveAndRender": true,
+        "characterLocalPropertiesUnchanged": true,
+        "wholeFrameKeysAndParentsUnchanged": true
+      },
+      {
+        "id": "b-patissier",
+        "movies": [
+          {
+            "file": "b-patissier-reference.mp4",
+            "sha256": "3f098f58d14f76384bf67e684227e20dc46a5db3bcc7bdce143f60a673fbc890",
+            "bytes": 56235803
+          },
+          {
+            "file": "b-patissier-tiktok-silent.mp4",
+            "sha256": "7552f6dc73ffd60dec98e69dfa9e320286ce049153cba0083e200627a9cf5ede",
+            "bytes": 55459589
+          }
+        ],
+        "nativeReopenSaveAndRender": true,
+        "characterLocalPropertiesUnchanged": true,
+        "wholeFrameKeysAndParentsUnchanged": true
+      },
+      {
+        "id": "c-disco",
+        "movies": [
+          {
+            "file": "c-disco-reference.mp4",
+            "sha256": "4436b2d26550cc00ce80d995174ef15986a93a7c4e3fbeee3fdc12106675a36e",
+            "bytes": 56257212
+          },
+          {
+            "file": "c-disco-tiktok-silent.mp4",
+            "sha256": "e12995361cac9dd9e55935b506bb54d74aeb384e90e939f24668efb6f2401a09",
+            "bytes": 55484757
+          }
+        ],
+        "nativeReopenSaveAndRender": true,
+        "characterLocalPropertiesUnchanged": true,
+        "wholeFrameKeysAndParentsUnchanged": true
+      }
+    ]
   },
   "limitations": [
-    "Only stage-only previews were displayed to AI; character images and character-containing output were never displayed.",
-    "The final size-only card change was checked by exact structure comparison and 18 new Outro renders; 93 unchanged samples were inherited with provenance.",
-    "Native camera checks evaluate saved key times within one 30fps frame of declared times, not continuous perceptual smoothness.",
-    "Full human realtime playback/listening, TikTok device sync and owner creative approval are not verified.",
-    "C uses the previously disclosed Apple standard-edition preview; the requested TikTok sound ID could not be fetched.",
-    "Original delivery and working media remain preserved."
-  ]
+    "Background corner coverage samples all declared camera keys and their interval midpoints, not every rendered video frame.",
+    "Visual scene/landing review and final video decode/audio verification are separate checks.",
+    "No character-containing raster was displayed to AI.",
+    "This is a character-free sampled visual review, not a real-time full-video listening or TikTok device review.",
+    "Sampled arrival/follow/return frames and native camera readback support the motion checks; every intermediate rendered video frame was not visually inspected.",
+    "The gray rectangle verifies whole-frame movement and local text separation, not the actual illustration appearance. The original artwork was verified only by hashes/local metadata and was never displayed to AI.",
+    "The old same-screen opaque-character pixel identity and fixed-screen reserved-area checks are intentionally inapplicable to owner-authorized whole-frame motion.",
+    "No Osayu voice or stream excerpts were provided or synthesized.",
+    "C uses the standard Perfume public preview; the exact edition/offset of TikTok sound 7353192190165797648 is unconfirmed.",
+    "No SNS publication."
+  ],
+  "humanRealtimeReview": false,
+  "tiktokDeviceReview": false,
+  "ownerCreativeApproval": false
 }
