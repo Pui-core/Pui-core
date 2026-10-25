@@ -1,0 +1,33 @@
+{
+  "sourceCommit": "6233f5d33b24a35e91800357b7bcf8861049cf2a",
+  "gameVersion": "0.11.0",
+  "mode": "EXPLORE",
+  "frames": 460,
+  "fps": 30,
+  "method": "Existing real keyboard/physics capture, no state injection. New work only reuses immutable lossless frames.",
+  "actualReveal": {
+    "lastBefore": 163,
+    "firstAfter": 164,
+    "sourceSeconds": 5.466666666666667,
+    "captureLogFit199IsLaterSnapshot": true
+  },
+  "inputs": [
+    {
+      "file": "media/chapter-I/frame-000163.png",
+      "sha256": "5bf30103379536b89795eb9be526af760c8ca36838f0c8c54647466fd9acf186"
+    },
+    {
+      "file": "media/chapter-I/frame-000164.png",
+      "sha256": "90d8d00bd53a9e05b9671801e681a741da496d1752b6b681fcd73e1e9c2c72a5"
+    },
+    {
+      "file": "media/chapter-I/frame-000420.png",
+      "sha256": "c4e0a9300952cec109b1ec9a27c28daf94b919e1e79980fa9a1274145752335d"
+    }
+  ],
+  "notes": [
+    "HUD clocks include PNG save waiting and are not real-time speed records.",
+    "No verified audible gameplay recording; editorial audio is separate.",
+    "Before/after compare is editorial; no alternate solution or RTA/PB claim."
+  ]
+}

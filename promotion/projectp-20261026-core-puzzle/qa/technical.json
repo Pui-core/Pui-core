@@ -1,0 +1,209 @@
+{
+  "status": "TECHNICAL_PASS_PROVISIONAL_HOLD_MUSIC_AND_ACTUAL_UI",
+  "bindings": [
+    {
+      "file": "videos/core-puzzle-voice-no-music.mp4",
+      "sha256": "66f3fcfb85d4ca79b17595fdde64dd6a56499c28c5d037d02cd4a3c8c36c76d5",
+      "bytes": 4830788,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 600,
+      "duration": 20.01,
+      "fullDecode": true,
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "lufs": -20,
+        "truePeakDbfs": -4.4
+      },
+      "native": {
+        "videoSha256": "66f3fcfb85d4ca79b17595fdde64dd6a56499c28c5d037d02cd4a3c8c36c76d5",
+        "effectcraftSha256": "17736f64cb6c4739c0acbb48ddae35d6078bea64fed081a7f2073bd5767e84d8",
+        "filmcraftSha256": "ba2d964efe75c4b07c0af7c9cd791da265af909c94e055dfc58a5e09fa5e18c9",
+        "masterSha256": "e4f50146f5978e3e88fd08f2ff7d9a41db71b8e309fba875a0de397bc647e95a",
+        "mixSha256": "843813d5d7af90c715f07b3871a419e594c86e5997655de5e5ccfac12b7bf510",
+        "music": false,
+        "state": "PROVISIONAL_PENDING_ACTUAL_SOUND_AND_UI"
+      }
+    },
+    {
+      "file": "videos/core-puzzle-sfx-only.mp4",
+      "sha256": "392c320daa32437e8ba343f27ade01b093f29e4eef478dee02e643973a719afa",
+      "bytes": 4830756,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 600,
+      "duration": 20.01,
+      "fullDecode": true,
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "lufs": -37.7,
+        "truePeakDbfs": -17.5
+      },
+      "native": {
+        "videoSha256": "392c320daa32437e8ba343f27ade01b093f29e4eef478dee02e643973a719afa",
+        "effectcraftSha256": "17736f64cb6c4739c0acbb48ddae35d6078bea64fed081a7f2073bd5767e84d8",
+        "filmcraftSha256": "e3a26cf85de3f9f7aaff866716b33d9165b32b4021e8df1a4c59e3cd3da25a70",
+        "masterSha256": "e4f50146f5978e3e88fd08f2ff7d9a41db71b8e309fba875a0de397bc647e95a",
+        "mixSha256": "b02714e93a1c82995772d65c53569943f4122f137256384e23663fbc842a97ca",
+        "music": false,
+        "state": "PROVISIONAL_PENDING_ACTUAL_SOUND_AND_UI"
+      }
+    }
+  ],
+  "savedRemap": [
+    {
+      "outputFrame": 143,
+      "sourceFrame": 163,
+      "savedSeconds": 5.433333333333334
+    },
+    {
+      "outputFrame": 144,
+      "sourceFrame": 164,
+      "savedSeconds": 5.466666666666667
+    }
+  ],
+  "revealExpectedFrame": 144,
+  "voiceTiming": [
+    {
+      "at": 0.12,
+      "end": 2.36,
+      "text": "はめると、何が変わる？",
+      "file": "voice-1.wav",
+      "predictedDuration": 1.686971977044429,
+      "speedScale": 1.12,
+      "duration": 1.802667,
+      "actualEnd": 1.9226670000000001
+    },
+    {
+      "at": 5.1499999999999995,
+      "end": 6.9,
+      "text": "足場が、階段に。",
+      "file": "voice-2.wav",
+      "predictedDuration": 1.6717144984858374,
+      "speedScale": 1.12,
+      "duration": 1.664,
+      "actualEnd": 6.813999999999999
+    },
+    {
+      "at": 14.6,
+      "end": 17.8,
+      "text": "芯石ひとつで、道が変わる。",
+      "file": "voice-3.wav",
+      "predictedDuration": 2.0993879828176327,
+      "speedScale": 1.12,
+      "duration": 2.101333,
+      "actualEnd": 16.701332999999998
+    }
+  ],
+  "aacCorrelation": [
+    {
+      "window": [
+        0.12,
+        2
+      ],
+      "correlation": 0.9998693302780021,
+      "lagSamples": 0,
+      "lagFrames": 0
+    },
+    {
+      "window": [
+        4.8,
+        6.6
+      ],
+      "correlation": 0.9999502502952046,
+      "lagSamples": 0,
+      "lagFrames": 0
+    },
+    {
+      "window": [
+        15,
+        17.8
+      ],
+      "correlation": 0.999859717747332,
+      "lagSamples": 0,
+      "lagFrames": 0
+    }
+  ],
+  "cover": {
+    "file": "covers/core-puzzle-cover.png",
+    "sha256": "beec9594c6120c0e8b1c0cc2b5f3fb5e32d99054100708fceaa09c7b09add5d5",
+    "nativeSha256": "a1ec6f4b3d86d76befabcb5c223c0ac1cd25e79f5f9e80386560688b8c64e02c",
+    "textBounds": [
+      {
+        "name": "Game",
+        "bounds": [
+          102,
+          1601,
+          388,
+          36
+        ],
+        "text": "EMBERWAKE / 灰の灯"
+      },
+      {
+        "name": "After tag",
+        "bounds": [
+          119,
+          1082,
+          80,
+          19
+        ],
+        "text": "AFTER"
+      },
+      {
+        "name": "Before tag",
+        "bounds": [
+          121,
+          591,
+          94,
+          21
+        ],
+        "text": "BEFORE"
+      },
+      {
+        "name": "Hook two",
+        "bounds": [
+          94,
+          461,
+          531,
+          86
+        ],
+        "text": "何が変わる？"
+      },
+      {
+        "name": "Hook one",
+        "bounds": [
+          100,
+          350,
+          397,
+          82
+        ],
+        "text": "はめると、"
+      },
+      {
+        "name": "Author",
+        "bounds": [
+          101,
+          286,
+          236,
+          30
+        ],
+        "text": "PROJECT P / ぷい"
+      }
+    ]
+  },
+  "effectcraftSha256": "17736f64cb6c4739c0acbb48ddae35d6078bea64fed081a7f2073bd5767e84d8",
+  "constraints": {
+    "musicSelected": false,
+    "bpmFixed": false,
+    "popularSyncVerified": false,
+    "actualTikTokUi": false,
+    "wholeDirectWatch": false,
+    "wholeDirectAudition": false,
+    "publishingAuthorizedNow": false
+  },
+  "visualReview": "PASS_WITHIN_FINAL_EXTRACTED_FRAMES_SCOPE"
+}

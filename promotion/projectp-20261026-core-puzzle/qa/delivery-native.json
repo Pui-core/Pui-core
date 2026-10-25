@@ -1,0 +1,208 @@
+{
+  "status": "PASS_DELIVERY_NATIVE_REOPEN_SAVE_RENDER_PROVISIONAL",
+  "destination": "/mnt/f/Videos/ProjectP-Core-Puzzle-2026-10-26",
+  "bound": [
+    {
+      "file": "videos/core-puzzle-voice-no-music.mp4",
+      "sha256": "66f3fcfb85d4ca79b17595fdde64dd6a56499c28c5d037d02cd4a3c8c36c76d5"
+    },
+    {
+      "file": "videos/core-puzzle-sfx-only.mp4",
+      "sha256": "392c320daa32437e8ba343f27ade01b093f29e4eef478dee02e643973a719afa"
+    },
+    {
+      "file": "covers/core-puzzle-cover.png",
+      "sha256": "beec9594c6120c0e8b1c0cc2b5f3fb5e32d99054100708fceaa09c7b09add5d5"
+    },
+    {
+      "file": "media/comparison.png",
+      "sha256": "092a31dbc3a3e2c764f3df92188d8abdc687c30af16cad348a9c8ddf875f181f"
+    },
+    {
+      "file": "media/voice-sfx-no-music.wav",
+      "sha256": "843813d5d7af90c715f07b3871a419e594c86e5997655de5e5ccfac12b7bf510"
+    },
+    {
+      "file": "media/editorial-sfx.wav",
+      "sha256": "b02714e93a1c82995772d65c53569943f4122f137256384e23663fbc842a97ca"
+    }
+  ],
+  "native": [
+    {
+      "file": "projects/core-puzzle.ecproj",
+      "sourceSha256": "17736f64cb6c4739c0acbb48ddae35d6078bea64fed081a7f2073bd5767e84d8",
+      "deliverySha256": "52efd7eaa959dd4dcce5cbf97f1053d2cfd06bd1c1c978485c55c403a557673c"
+    },
+    {
+      "file": "projects/core-puzzle-voice-no-music.fcproj",
+      "sourceSha256": "ba2d964efe75c4b07c0af7c9cd791da265af909c94e055dfc58a5e09fa5e18c9",
+      "deliverySha256": "756ced6a7a31b8a4bd809371b9a3e8209a9102cd7f89dc893cae487f9b14e220"
+    },
+    {
+      "file": "projects/core-puzzle-sfx-only.fcproj",
+      "sourceSha256": "e3a26cf85de3f9f7aaff866716b33d9165b32b4021e8df1a4c59e3cd3da25a70",
+      "deliverySha256": "6d14d0f127f8d32b6d6a38ccd4d44402119611a07ea3d7f83b9677e7e4b37af7"
+    }
+  ],
+  "photocraft": [
+    {
+      "file": "covers/core-puzzle-cover.pcraft",
+      "sha256": "a1ec6f4b3d86d76befabcb5c223c0ac1cd25e79f5f9e80386560688b8c64e02c",
+      "embeddedAssets": true
+    },
+    {
+      "file": "projects/comparison.pcraft",
+      "sha256": "6c06fd1e897ddd5c966973998129994c4273d44f135ae44d3664a871a0b2315e",
+      "embeddedAssets": true
+    }
+  ],
+  "receipts": [
+    {
+      "exit": 0,
+      "exe": "effectcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle.ecproj",
+        "--save",
+        "run",
+        "footage.check",
+        "{\"wait\":true}",
+        "footage.missing",
+        "{}",
+        "--json"
+      ],
+      "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":2,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\projects\\\\core-puzzle.ecproj\"}\n",
+      "stderr": ""
+    },
+    {
+      "exit": 0,
+      "exe": "effectcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle.ecproj",
+        "render-frame",
+        "--comp",
+        "ProjectP Core Puzzle",
+        "--time",
+        "5.033333333333333",
+        "--out",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\delivery-effectcraft.png",
+        "--json"
+      ],
+      "stdout": "{\"comp\":122,\"height\":1920,\"ms\":144.0,\"path\":\"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\qa\\\\delivery-effectcraft.png\",\"time\":5.033333333333333,\"width\":1080}\n",
+      "stderr": ""
+    },
+    {
+      "exit": 0,
+      "exe": "filmcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-voice-no-music.fcproj",
+        "exec",
+        "media.status"
+      ],
+      "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"f42d1400a1f75d84\",\n      \"size\": 343609657\n    },\n    \"item\": 4,\n    \"name\": \"core-puzzle-picture.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\media\\\\core-puzzle-picture.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"a74d355d284f4d53\",\n      \"size\": 5760102\n    },\n    \"item\": 5,\n    \"name\": \"voice-sfx-no-music.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\media\\\\voice-sfx-no-music.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "exit": 0,
+      "exe": "filmcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-voice-no-music.fcproj",
+        "--save",
+        "render",
+        "--seconds",
+        "5.033333333333333",
+        "--out",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\delivery-core-puzzle-voice-no-music.png"
+      ],
+      "stdout": "",
+      "stderr": "rendered 1080x1920 in 10.6 ms → F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\delivery-core-puzzle-voice-no-music.png\n"
+    },
+    {
+      "exit": 0,
+      "exe": "filmcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-sfx-only.fcproj",
+        "exec",
+        "media.status"
+      ],
+      "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"f42d1400a1f75d84\",\n      \"size\": 343609657\n    },\n    \"item\": 4,\n    \"name\": \"core-puzzle-picture.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\media\\\\core-puzzle-picture.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"0d3ef23a17ba59ed\",\n      \"size\": 5760044\n    },\n    \"item\": 5,\n    \"name\": \"editorial-sfx.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\media\\\\editorial-sfx.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "exit": 0,
+      "exe": "filmcraft-cli.exe",
+      "args": [
+        "--project",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-sfx-only.fcproj",
+        "--save",
+        "render",
+        "--seconds",
+        "5.033333333333333",
+        "--out",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\delivery-core-puzzle-sfx-only.png"
+      ],
+      "stdout": "",
+      "stderr": "rendered 1080x1920 in 10.4 ms → F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\delivery-core-puzzle-sfx-only.png\n"
+    },
+    {
+      "exit": 0,
+      "exe": "photocraft-cli.exe",
+      "args": [
+        "run",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\covers\\core-puzzle-cover.pcraft",
+        "--out",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-cover-delivery-reopened.pcraft"
+      ],
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "exit": 0,
+      "exe": "photocraft-cli.exe",
+      "args": [
+        "convert",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\core-puzzle-cover-delivery-reopened.pcraft",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\core-puzzle-cover-delivery.png",
+        "--format",
+        "png"
+      ],
+      "stdout": "",
+      "stderr": "warning: 11 layer(s) flattened; layers, masks and blend modes are not kept\n"
+    },
+    {
+      "exit": 0,
+      "exe": "photocraft-cli.exe",
+      "args": [
+        "run",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\comparison.pcraft",
+        "--out",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\comparison-delivery-reopened.pcraft"
+      ],
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "exit": 0,
+      "exe": "photocraft-cli.exe",
+      "args": [
+        "convert",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\projects\\comparison-delivery-reopened.pcraft",
+        "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\qa\\comparison-delivery.png",
+        "--format",
+        "png"
+      ],
+      "stdout": "",
+      "stderr": "warning: 6 layer(s) flattened; layers, masks and blend modes are not kept\n"
+    }
+  ],
+  "hold": [
+    "Actual permitted popular sound selection and cue adjustment",
+    "Final real TikTok cover/video UI and actual sound preview",
+    "2026-10-26 activity/previous-post analytics priority check"
+  ],
+  "publishingPerformed": false
+}

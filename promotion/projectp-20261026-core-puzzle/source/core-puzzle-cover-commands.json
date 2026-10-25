@@ -1,0 +1,131 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1080,
+        1920
+      ],
+      "fill": "#08151e",
+      "name": "Cover background"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\before-same-camera.png",
+      "scale": 76,
+      "fit": false,
+      "center": [
+        540,
+        850
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\after-same-camera.png",
+      "scale": 76,
+      "fit": false,
+      "center": [
+        540,
+        1340
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 100,
+      "y": 310,
+      "text": "PROJECT P / ぷい",
+      "font": "Meiryo",
+      "size": 28,
+      "color": "#aacac3",
+      "name": "Author"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 95,
+      "y": 425,
+      "text": "はめると、",
+      "font": "Meiryo",
+      "size": 92,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Hook one"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 95,
+      "y": 540,
+      "text": "何が変わる？",
+      "font": "Meiryo",
+      "size": 92,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "Hook two"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 120,
+      "y": 610,
+      "text": "BEFORE",
+      "font": "Meiryo",
+      "size": 24,
+      "color": "#aacac3",
+      "name": "Before tag"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 120,
+      "y": 1100,
+      "text": "AFTER",
+      "font": "Meiryo",
+      "size": 24,
+      "color": "#edb468",
+      "name": "After tag"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        1580,
+        1080,
+        340
+      ],
+      "fill": "#08151e",
+      "name": "Quiet footer"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 100,
+      "y": 1630,
+      "text": "EMBERWAKE / 灰の灯",
+      "font": "Meiryo",
+      "size": 35,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Game"
+    }
+  ]
+]

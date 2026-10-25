@@ -1,0 +1,27 @@
+{
+  "exit": 0,
+  "exe": "ffmpeg.exe",
+  "args": [
+    "-hide_banner",
+    "-y",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\editorial-sfx.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\voice-1.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\voice-2.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\voice-3.wav",
+    "-filter_complex",
+    "[1:a]adelay=120|120,volume=1.35[v0];[2:a]adelay=5150|5150,volume=1.35[v1];[3:a]adelay=14600|14600,volume=1.35[v2];[0:a]volume=.85[fx];[fx][v0][v1][v2]amix=inputs=4:normalize=0,apad,atrim=duration=20[mix]",
+    "-map",
+    "[mix]",
+    "-c:a",
+    "pcm_s24le",
+    "-ar",
+    "48000",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\voice-sfx-no-music.wav"
+  ],
+  "stdout": "",
+  "stderr": "[aist#0:0/pcm_s24le @ 0000024e155ee140] Guessed Channel Layout: stereo\r\nInput #0, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\editorial-sfx.wav':\r\n  Duration: 00:00:20.00, bitrate: 2304 kb/s\r\n  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\n[aist#1:0/pcm_s16le @ 0000024e1567ec80] Guessed Channel Layout: stereo\r\nInput #1, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\voice-1.wav':\r\n  Duration: 00:00:01.80, bitrate: 1536 kb/s\r\n  Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\n[aist#2:0/pcm_s16le @ 0000024e155fca00] Guessed Channel Layout: stereo\r\nInput #2, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\voice-2.wav':\r\n  Duration: 00:00:01.66, bitrate: 1536 kb/s\r\n  Stream #2:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\n[aist#3:0/pcm_s16le @ 0000024e15b81900] Guessed Channel Layout: stereo\r\nInput #3, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\voice-3.wav':\r\n  Duration: 00:00:02.10, bitrate: 1536 kb/s\r\n  Stream #3:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\nStream mapping:\r\n  Stream #0:0 (pcm_s24le) -> volume:default\r\n  Stream #1:0 (pcm_s16le) -> adelay:default\r\n  Stream #2:0 (pcm_s16le) -> adelay:default\r\n  Stream #3:0 (pcm_s16le) -> adelay:default\r\n  atrim:default -> Stream #0:0 (pcm_s24le)\r\nPress [q] to stop, [?] for help\r\nOutput #0, wav, to '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\voice-sfx-no-music.wav':\r\n  Metadata:\r\n    ISFT            : Lavf62.3.100\r\n  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\n    Metadata:\r\n      encoder         : Lavc62.11.100 pcm_s24le\r\nsize=    4608KiB time=00:00:17.15 bitrate=2200.8kbits/s speed=33.4x elapsed=0:00:00.51    \r[out#0/wav @ 0000024e15b3d6c0] video:0KiB audio:5625KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.001771%\r\nsize=    5625KiB time=00:00:20.00 bitrate=2304.0kbits/s speed=  32x elapsed=0:00:00.62    \r\n"
+}

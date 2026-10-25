@@ -1,0 +1,18 @@
+{
+  "status": "PASS_WITHIN_FINAL_EXTRACTED_FRAMES_SCOPE",
+  "videoSha256": "66f3fcfb85d4ca79b17595fdde64dd6a56499c28c5d037d02cd4a3c8c36c76d5",
+  "checked": [
+    "全9場面の最終MP4フレーム",
+    "141〜158の18連続フレームで163→164と寄り引き",
+    "frame570の終端・作者/作品名の別領域",
+    "カバー9:16と中央3:4、6文字bounds286〜1637",
+    "比較の前後同画角で芯石/足場が保持"
+  ],
+  "sourceBeforeFrame": 163,
+  "sourceAfterFrame": 164,
+  "outputRevealFrame": 144,
+  "wholeDirectPlayback": false,
+  "wholeDirectAudition": false,
+  "actualTikTokUi": false,
+  "actualSongSelected": false
+}

@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\projects\\core-puzzle-voice-no-music.fcproj",
+    "--save",
+    "run",
+    "-"
+  ],
+  "stdout": "{\"id\":\"timeline.place\",\"line\":1,\"ok\":true,\"result\":{\"clips\":[6]}}\n{\"id\":\"timeline.place\",\"line\":2,\"ok\":true,\"result\":{\"clips\":[7]}}\n",
+  "stderr": ""
+}

@@ -1,0 +1,32 @@
+{
+  "duration": 20,
+  "fps": 30,
+  "sourceBefore": 163,
+  "sourceAfter": 164,
+  "revealAt": 4.8,
+  "revealOutputFrame": 144,
+  "openingFreezeSeconds": 2.4,
+  "actualSourcePlayback": {
+    "sourceStart": 3.066666666666667,
+    "sourceEndExclusive": 15.066666666666666,
+    "outputStart": 2.4,
+    "outputEnd": 14.4,
+    "realTimeRate": 1
+  },
+  "comparison": [
+    14.4,
+    18
+  ],
+  "music": {
+    "state": "pending_actual_permitted_popular_sound",
+    "bpm": null,
+    "soundId": null,
+    "sourceStartSeconds": null,
+    "sourceEndSeconds": null,
+    "confirmedInTikTok": false
+  },
+  "requiredMusicWindowSeconds": 20,
+  "adjustment": "After an actual permitted sound is selected, set revealAt to its chosen strong beat and rerun picture/audio/render; opening freeze and comparison absorb adjustment. BPM is unset.",
+  "nativeSha256": "17736f64cb6c4739c0acbb48ddae35d6078bea64fed081a7f2073bd5767e84d8",
+  "popularSongSynchronized": false
+}
