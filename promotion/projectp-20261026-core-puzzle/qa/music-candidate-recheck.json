@@ -7,7 +7,7 @@
   "reportedBy": "root-music97-recheck",
   "sourceHeadAtRecheck": "1ec95d93893761c89126623ae32571d492507fdd",
   "method": "Native existing Firefox Session1 through guarded helper; actual keyboard paste and Enter, not ValuePattern only",
-  "rootPacketSha256": "b2fdb4ffad002e32a9ffdc9a072779a45ae0e4c73e3296cbbe3cc55602a40a92",
+  "rootPacketSha256": "0671059d4d76563969a91a95874d21844ffb5c72274b88a48e454e7251a1f1fe",
   "unrestrictedLibrary": {
     "label": "ロイヤリティフリーの楽曲 / editor 無制限",
     "queries": [
@@ -42,7 +42,7 @@
         ]
       }
     ],
-    "popularityScope": "Native library displays29.2K posts; collection period and current Japan rank are UNCONFIRMED. Root packet used all-time wording; clean screenshot does not establish that period."
+    "popularityScope": "Native library displays29.2K posts. Collection period, cumulative/all-time meaning and current JP rank are unconfirmed."
   },
   "candidate": {
     "title": "phonk (90)",
@@ -126,5 +126,10 @@
     "商用フィルター下の当該exact queryで結果なしという有限観測。カタログ全体の停止や全楽曲の不在とは判断しない",
     "raw M4A、private UIA JSON、full screenshotsや認証情報を複製しない"
   ],
-  "coderBrowserOrRuntimeChanges": false
+  "coderBrowserOrRuntimeChanges": false,
+  "rootPacketCorrection": {
+    "initialPacketSha256": "b2fdb4ffad002e32a9ffdc9a072779a45ae0e4c73e3296cbbe3cc55602a40a92",
+    "currentPacketSha256": "0671059d4d76563969a91a95874d21844ffb5c72274b88a48e454e7251a1f1fe",
+    "reason": "Initial period inference was corrected: displayed29.2K posts has unconfirmed period/cumulative-or-all-time meaning/current Japan rank; native images and audio are unchanged."
+  }
 }

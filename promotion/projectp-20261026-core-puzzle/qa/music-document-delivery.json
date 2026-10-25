@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-25T14:04:40.537Z",
+  "checkedAt": "2026-10-25T14:06:03.010Z",
   "status": "PASS_SCOPED_MUSIC_CANDIDATE_PROOF_AND_DOCUMENT_SHA_MATCH",
   "destination": "/mnt/f/Videos/ProjectP-Core-Puzzle-2026-10-26/revision-03-live2d",
   "files": [
@@ -54,9 +54,9 @@
     },
     {
       "file": "qa/music-candidate-recheck.json",
-      "bytes": 5020,
-      "sourceSha256": "e33b2f62c193e2eee64b6e16e18792523ec0ee2eea2eac3690d30f03118ea47b",
-      "deliverySha256": "e33b2f62c193e2eee64b6e16e18792523ec0ee2eea2eac3690d30f03118ea47b"
+      "bytes": 5375,
+      "sourceSha256": "f4b4073239bf217beadb9f036b3efde1746542550bd2fbd3dee8038d38b951f1",
+      "deliverySha256": "f4b4073239bf217beadb9f036b3efde1746542550bd2fbd3dee8038d38b951f1"
     },
     {
       "file": "qa/music-candidate-unrestricted-results.png",
@@ -66,7 +66,7 @@
     }
   ],
   "fileCount": 10,
-  "bytes": 294680,
+  "bytes": 295035,
   "unchangedMedia": [
     {
       "file": "videos/core-puzzle-voice-original-score.mp4",
@@ -86,10 +86,8 @@
   "mediaRender": false,
   "coderBrowserOrRuntimeChanges": false,
   "lastMirrorCopiedFiles": [
-    "README.md",
-    "index.html",
-    "source/投稿文.json",
     "qa/music-candidate-recheck.json"
   ],
-  "reviewClarification": "29.2K posts visible; collection period/current Japan rank not verified"
+  "reviewClarification": "29.2K posts visible; collection period/current Japan rank not verified",
+  "currentRootPacketSha256": "0671059d4d76563969a91a95874d21844ffb5c72274b88a48e454e7251a1f1fe"
 }
