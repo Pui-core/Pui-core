@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\projects\\core-puzzle-licensed-classic.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-97\\\\promotion\\\\projectp-20261026-core-puzzle\\\\videos\\\\core-puzzle-voice-licensed-classic.mp4\",\"format\":\"h264\",\"audio\":true,\"audioCodec\":\"aac\",\"bitrateMode\":\"crf\",\"crf\":17,\"hardwareEncoding\":\"off\",\"gpuRendering\":\"off\",\"wait\":true}"
+  ],
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-97\\\\promotion\\\\projectp-20261026-core-puzzle\\\\videos\\\\core-puzzle-voice-licensed-classic.mp4\",\n  \"result\": {\n    \"bytes\": 5693591,\n    \"frames\": 600,\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-97\\\\promotion\\\\projectp-20261026-core-puzzle\\\\videos\\\\core-puzzle-voice-licensed-classic.mp4\",\n    \"render_fps\": 50.07605467724289,\n    \"seconds\": 11.9817746\n  }\n}\n",
+  "stderr": ""
+}

@@ -1,88 +1,61 @@
-# 芯石をはめると、何が変わる？ / revision03
+# 芯石をはめると、何が変わる？ / revision04 licensed classic
 
-[モデル入り20秒・声/SFX／音楽なし](videos/core-puzzle-voice-no-music.mp4) / [自作曲を合わせた別案](videos/core-puzzle-voice-original-score.mp4) / [SFXのみ](videos/core-puzzle-sfx-only.mp4) / [カバー](covers/core-puzzle-cover.png) / [再生ページ](index.html)
+[現在の20秒候補](videos/core-puzzle-voice-licensed-classic.mp4) / [カバー](covers/core-puzzle-cover.png) / [再生ページ](index.html) / [投稿文と音楽credit](source/caption-licensed.txt)
 
-10/26投稿候補です。実ゲームI章の「芯石をはめる→足場が階段へ変わる→登って灯す」を一話にし、owner指定のRevenant Naturalを案内役へ追加しました。旧版は `F:\Videos\ProjectP-Core-Puzzle-2026-10-26\revision-02-ui-safe` に保持しています。今回の別納品は `revision-03-live2d`。現在は **Draft/HOLD** で、今日は追加投稿しません。
+指定Naturalと、Kevin MacLeodの公式原録音「Monkeys Spinning Monkeys」を使った28日以降の編集候補。実ゲームv0.11.0/I章EXPLOREの10/25収録から、芯石を運ぶ→はめて階段になる→上の灯へ、という一つの変化を見せる。28日に開発した、最新日本トレンド、RTA/PB達成といった説明はしない。26の本人MIX予約と27のmissyou候補は変更しない。
 
-## 指定モデルと実際の動き
+F納品：`F:\Videos\ProjectP-Core-Puzzle-2026-10-26\revision-04-licensed-classic`。旧revision03と自作曲別案は旧F納品ごと保持し、source内の既存3MP4/原本も残す。旧記録のHOLDや26日計画は履歴であり、現在版の判断はこのREADMEと`qa/licensed-*.json`で区別する。
 
-10/18版 `Revenant_Natural.model3.json` と実参照14ファイルを読み取り、指定MOC SHA `6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e` を既設の正式Cubism Coreで実ロードしました。Core 06.00.0513／MOC5、52パラメーター・58描画メッシュ。今回の検査は `qa/model-native-core.json` に保存しています。
+## 原曲の同定・許諾・credit
 
-実際の `ParamMouthOpenY` へVOICEVOX3句だけの波形RMSを入力し、無音フレームは口を閉じます。瞬き、微小な首振り、呼吸は編集した動きです。本人のカメラ追跡・肉声の実演ではなく、VTSの物理演算も再現しません。SFXやBGMでは口を動かしません。
+原曲は「Monkeys Spinning Monkeys」Kevin MacLeod (incompetech.com)、公式原録音ISRC **USUAN1400011**。現在の[公式曲ページ](https://incompetech.com/music/royalty-free/?isrc=USUAN1400011)の選択record/表示テンプレート、公式MP3、title/artist、SHAを対応させた。原MP3 SHA：`a5bb345c23849ad0786aa0bc5157a9f2d4039660fe00282e55754d475f36dc14`。別cover/配信masterや、過去TikTok soundIDの同一性を推測しない。
 
-600フレームを同じ固定カメラで透過描画しました。頭部へ余白を取り、各フレームを自動fitして画角を変える処理はありません。袖・胴・下部は上半身として意図的に切り出しています。`source/model-cues.json` に実パラメーター、`qa/model-alpha-bounds.json` に全600枚の頭部余白を保存します。
+[公式ライセンス](https://incompetech.com/music/royalty-free/licenses/)と[FAQ](https://incompetech.com/music/royalty-free/faq.html)、[CC BY4.0](https://creativecommons.org/licenses/by/4.0/)の作者/出典/ライセンス表示・変更の明記へ対応。画面内に曲名/作者/CC BY4.0、投稿文と`media/LICENSED-AUDIO.md`に原曲URL・ライセンスURL・編集担当/分担を記載する。元曲はKevin MacLeod、抜粋/音量調整と、別のVOICEVOXナレーション・自作編集SFXの重ねはProjectP/ぷいの編集。作者が本作を推奨しているとはしない。rawフルMP3はprivateのまま、Git/Fへ含めず、使用20秒だけを許諾/credit付き素材として保存する。
 
-描画はMITのlive2d-agent-kit診断ラスタライザーを元にした、実Core変形とatlasのオフライン合成です。モデルの全58メッシュがnormal blend・標準RGB multiply/screen、反転maskなしであることを調べ、今回の予定姿勢で非対応色を検出したら停止します。白/暗背景で顔・髪・花・服・口と眼のmaskを目視しました。一般のSDK描画との完全等価性やVTS物理の再現を主張するものではありません。
+TikTokの[2021-04-01公式記事](https://newsroom.tiktok.com/trending-on-tiktok-endless-inspirationalquotes?lang=en)にHot Trackとして紹介された定番曲の実験。現在の日本順位・使用数・現在のCML一覧を確認した主張ではない。CML外の必要な許諾を得た原録音として扱い、native soundIDはnull。投稿時にMusic Usage Confirmationが表示されたら、単独publisherがこの許諾証跡に基づき確認する。Publish時だけ現れる項目を確認するために今日先行公開はしない。実警告/著作権check失敗を無視するという意味ではない。
 
-元MOC、atlas、PSD、Core/SDK、配信設定を変更・同梱せず、rawモデルとSDKは公開Gitに追加していません。公開checkoutには連番を再生成するrecipeとSHA、描画した結果・原本を保存します。ローカルのモデルとCoreがないcheckoutでは再生成できません。F納品は描画済み連番とalpha動画を含み、Craft原本をその場所から再読込します。
+同定/利用条件は`qa/licensed-classic-rights.json`、実PCM/cue/creditは`qa/licensed-classic-music.json`。既存phonk/CML限定検索の失敗は履歴として保持し、当時の一覧条件を全曲利用不可へ広げない。
 
-## 実作品と編集
+## 実音とゲームの対応
 
-実ゲームv0.11.0、I章EXPLORE、収録source commit `6233f5d33b24a35e91800357b7bcf8861049cf2a`。frame163は芯石を携帯中で足場が横並び、164から差し込み済み・階段です。capture.jsonのfit199は後の記録点であり、変化の瞬間ではありません。
+カタログ/タグは144 BPM。独立の実スペクトル変化列は約0.4166秒周期を支持したが、gridだけで音を置いていない。選んだ実attack群5.025〜5.065秒の中で、8msの前後RMS差を1ms刻みで測り、立ち上がりの最大点 **source5.056秒**を検出した。
 
-| 出力 | 元フレーム | 内容 |
-| --- | --- | --- |
-| 0〜2.4秒 | 163静止 | 問いと案内役 |
-| 2.4〜4.8秒 | 92〜163 | 拾って運ぶ実動作 |
-| 4.8秒／出力144 | 164 | 芯石が入り足場が変わる |
-| 4.8〜14.4秒 | 164〜451 | 登って上の灯へ |
-| 14.4〜18秒 | 163／164 | 同じ画角の比較 |
-| 18〜20秒 | 420静止 | 作品名と次回への導線 |
+- 使用区間はsource **0.256〜20.256秒**、48kHz開始sample12,288。
+- 実cue sample242,688を、出力4.8秒/sample230,400/frame144へ対応。知覚上のonset精度には約±20msの窓依存があり、音楽的小節頭や知覚の1sample精度を保証しない。
+- 元game163は携帯/横並び、164から挿入/階段。保存ECのtimeRemapと実出力143→144で確認し、実動作の順序/1倍速を保つ。
+- BGMだけを独立してduck/fade。既存3VOXの語頭前から下げ、実語尾後まで保持して戻す。master全体のfadeで声を切らない。最後の曲fadeは800ms、導入80ms。声/SFXは一度だけ。
+- FilmCraftはV1映像、A1既存VOICEVOX+自作編集SFX、A2曲だけのduck済み音で分離。全mix参照WAVと最終AACを別に検査する。
 
-実動作12秒は1倍速です。静止・比較は編集として区別し、未収録の操作やRTA/PBを創作しません。HUD時計はPNG保存待ちを含むため画面外に置きます。案内役は上部、ゲームの主人公・芯石・足場は下部に分けています。
+映像の問い0〜2.4秒、運ぶ2.4〜4.8秒、変化4.8秒、実動作〜14.4秒、同画角比較14.4〜18秒、作品名/CTA18〜20秒。2秒の最後の可読性を保持し、全ての切替をテンポ格子へ強制していない。HUDの時計をRTA実測として見せず、freeze/比較は編集と明記する。
 
-PhotoCraftはモデル入りカバーと実画像の比較素材、EffectCraftは実作品への追従とモデル合成、FilmCraftは同じ映像と役割別の音を扱います。生成AI画像は使いません。音源cueは暫定4.8秒で、人気曲を選んだら静止/比較尺で調整可能です。BPMを120へ固定していません。
+## モデルと現在の編集原本
 
-全身寄りのモデルが足場へ重なったため、本編は顔の大きさを保つ600×450の肩上portraitへ変更し、モデル下端619pxとゲーム表示開始650pxを分けました。カバーも同じ頭/肩cropを使い、下端730pxから比較カード上端819pxまで89px空けています。比較場面は650〜1610pxへ収め直し、「はめる前」「はめた後」の両ラベルを見出しで隠さない構図に修正しました。
+指定Revenant_NaturalのMOC SHA`6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e`を正式Core06.00.0513/MOC5で描画した既存600枚を再利用。ナレーション3句の時刻/音源を変更せず、口はVOX由来のまま。BGMで口を動かさず、Core600枚は再描画していない。元モデル/atlas/SDK・配信/カメラ/VTS/物理設定を変更/再配布しない。MIT描画utilityのnoticeは保持する。
 
-## 音の3種類と保留
+現在版は`projects/core-puzzle-licensed-classic.ecproj`、`projects/core-puzzle-licensed-classic.fcproj`、`covers/core-puzzle-cover.pcraft`、`projects/comparison.pcraft`。PhotoCraftの同画角比較とカバーは現物を保持、EffectCraftへ短い曲creditを追加。顔/頭髪/ゲームを分けた構図と、比較の両ラベルを保つ。生成AI画像への置換はない。
 
-声は **VOICEVOX:青山龍星（ノーマル／style13）**。既存の3句と現在のpuzzle用SFXを保持しています。SFXは実ゲーム録音ではなく、短いオリジナル編集音です。話者の同梱policy確認は `qa/voice-license.json` を参照。
+旧revision03の7画像によるTikTok確認は旧自作曲masterの履歴。新版へ無条件に流用せず、rev04は採用master/長いcredit付きcaption/開示/著作権checkをRootが別途確認する。
 
-- `core-puzzle-voice-no-music.mp4`: 声とSFXのみ。人気曲後付け用。
-- `core-puzzle-sfx-only.mp4`: SFXのみ。声と音源を別に扱う場合の素材。
-- `core-puzzle-voice-original-score.mp4`: 既存の純自作曲を加えた別案。**人気曲を使った版ではありません。**
+## 検査と公開への引継ぎ
 
-自作曲の元はIssue88の決定的な加算合成のみ、SHA `565295d97f5525f3f6cec6dd722c5fd8b87932b58b2e10d087a3980762665da9`。外部sample・声・ゲームSEを含まず、Issue89の旧SFX追加mixは使いません。実PCMを測り、source18.000833333秒の立ち上がりを出力4.8秒へsample単位で合わせました。採用区間はsource13.200833333〜33.200833333秒。台詞の語頭120ms前から曲だけを下げ、語尾後まで保護して戻します。声/SFXは一度だけ加えています。実測値とSHAは `qa/original-score.json` に保存。
+現在はtechnical/native検証を進めている制作候補。全AVdecode・最終AACの声/attack同期・音量/TP・PCM合成/語頭語尾・保存remap・重要連続frame・Core600枚の旧SHA対応を`qa/licensed-technical.json`等に結合する。F04の現在3Craft原本をその場所から再保存/再読込/描画し、欠損0/PC pixel一致/source-F SHAを`qa/licensed-delivery.json`に記録する。旧版のreceiptは当時のまま残す。
 
-PP97-SOUNDは未解除です。投稿用途で許可された人気曲のsound ID・区間・利用条件・人気根拠、実拍への調整がまだ必要です。商用のみ・尺制限なしの5検索語0件と通常の公式CMLページ500は限定観測で、全カタログ不可とは結論しません。Hauxenz候補は未採用です。
+直接の主観全編試聴は未実施。技術数値や画像を自然な聴感の合格とは報告しない。`projectp-video/references/production.md`の「可能なら試聴、できない場合は未実施」を適用し、未試聴だけを新しいowner承認待ちへ広げない。一方、実素材/声の頭尾/同期/音量と、実native表示・警告/checkの未解決は修正・再確認する。
 
-2026-10-25 13:58 UTCの追加確認では、rootが通常の「ロイヤリティフリーの楽曲／無制限」で実keyboard検索し、`phonk (90)`／DJ BAI／01:30／29.2K postsを確認しました。native公式downloadを1回行い、90秒・1,457,030bytes・SHA `7b0c4e216315c9a9fdb483f7a8b35592dfd66b9fa9cee00f76a47cd0c7d965fe` のM4Aを取得しています。29.2K postsは画面の表示値で、集計期間・現在の日本の順位は未確認です。
+Rootだけが実TikTok確認/publisherを担当。nativeの結果が揃うまでPR19のDraft/HOLDを維持し、実警告を無条件に解除しない。28日の採用・最新活動/前投稿分析・最終送信と実公開receipt・人数目標は親93で継続する。合成音声のAIGCと自分のbrandを扱い、Music Usage Confirmationが実送信時のみなら未観測を明記して将来の単独publisherへ引き継ぐ。今日の追加投稿・予約や、新しい常駐loop/cronは作らない。
 
-その後、モデル入り音楽なしmasterを使うStudio編集で「楽曲→無制限→商用利用」を選び、尺制限を付けず、実クリック/keyboardで同じ `phonk (90)` を検索すると「結果なし」でした。今回の宣伝動画への許可・sound IDは未確認なので、候補は**未採用**です。通常一覧への表示やdownload成功を商用利用の証明へ置き換えません。通常ライブラリの非0件と、商用フィルター下の限定0件を分け、全カタログ停止・全曲利用不可とは判断しません。
+## 再現
 
-追加証跡は `qa/music-candidate-recheck.json` と4枚の対象UI cropへSHAで結びました。raw M4A・private UIA・full screenshotをGitやrevision03へ追加せず、BPM/実拍分析・直接試聴も行っていません。rootはeditorをcancelし、Home→unsaved changes終了で退出、本人Homeへ戻っています。下書き保存・投稿・プロフィール変更はありません。
+現在版の入口は以下。原音MP3は既存private cacheか`PROJECTP_LICENSED_MUSIC`で、指定SHAの公式原録音を用意する。Core600枚/声の既存素材を保持し、不要な生成をしない。
 
-## 実UIと検査の範囲
-
-revision02の冒頭feed・180字候補caption・カバーは実TikTokで限定確認し、上部小ラベルの重なりを解除しました。その証跡は `qa/pp97-native-ui.json` と `qa/native-ui-binding.json` に旧SHAのまま保持しています。モデルなしの旧版の履歴です。
-
-**revision03は別に実TikTokで確認済みです。** rootが本人`prop_pui`の既存Firefoxで、自作曲別案master SHA `f79e6f38…fe0f4c5` とカバー SHA `76c4b7fd…fa4185f` をアップロードしました。5.37MB／1080P／20秒の完了表示、180字候補captionとVOICEVOX credit、冒頭、約5秒での芯石挿入と3段足場、約14秒の上の灯と主人公、約17秒の比較両ラベル、00:20/00:20の終端を確認しています。実cover canvasとprofile previewで問い・モデル・前後比較・作品名が見え、cover Saveでeditorが閉じました。
-
-この実UI観測7枚とroot記録を `qa/model-native-ui-binding.json` へSHAで結び、制作担当も画像と対応を独立確認しました。確認はupload previewの各場面と終端到達の範囲です。連続した全フレームの直接視聴や主観的な全編試聴を確認済みとは扱いません。人気曲は未選択のままで、自作曲別案を人気曲とは呼びません。
-
-rootはHomeへ退出し、unsaved changesの終了を確認、本人Studio Homeと保存済みBIOへ戻りました。QA uploadは破棄済みでサーバーdraftはなく、追加投稿もありません。cover Saveも破棄したupload内だけの操作です。将来の公開には採用した最終master/coverの再アップロードと設定が必要です。これはrevision03の実UI確認待ちを意味しません。直接全編試聴、実曲選択後の最終音量/同期とtimeline、10/26当日の活動・前投稿分析・創作採用・公開後成果は未確認です。
-
-最終MP4の全AVdecode・形式/尺/音量/ピーク・声の頭と語尾・波形同期、重要遷移の連続画像、全600モデル画像の頭部余白、カバー中央crop、3Craft原本のF再読込・保存・描画を検査します。必要な曲と最終確認が揃うまでPR19はDraft/HOLD、Issue97はOPENです。
-
-保存ECと確認画像の取り違えも検査しています。旧fullbustの6画像は保存ECの更新より古かったため、修正済みECから0/143/144/151/480/570を再取得し、原本・生成JSX・各PNGのSHAと取得時刻を `qa/model-composite-binding.json` へ結びました。最終3MP4は全600フレームのdecoded picture SHAが一致し、3句と4.8秒の音のAAC相関は全てlag0sampleです。この数値/抽出画像検査と、上記の別証跡による実TikTokの限定観測、未確認の全編直接試聴を区別します。
-
-## 再制作
-
-既設環境を環境変数で指定します。`PROJECTP_LIVE2D_MODEL` はNaturalモデルfolder、`PROJECTP_CUBISM_CORE_JAR` はCore jar、`PROJECTP_CUBISM_NATIVE_DIR` は対応DLLのfolder、`PROJECTP_CUBISM_JAVA` はWindows Java実行ファイルです。Java compiler17互換出力・Windows JVM・Node・既設FFmpeg/Craft CLIが必要です。新SDKの取得や規約同意、グローバル導入は行いません。
-
-```bash
-node source/live2d.mjs
-node source/prepare-assets.mjs
-node source/original-score.mjs
-node source/picture.mjs
-node source/capture-model-composite.mjs
-node source/render.mjs
-node source/verify.mjs
-PROJECTP_PUZZLE_DELIVERY='<new delivery directory>' node source/package.mjs
-PROJECTP_PUZZLE_DELIVERY='<same existing delivery directory>' node source/check-delivery-assets.mjs
+```text
+node source/licensed-music.mjs
+node source/picture-licensed.mjs
+node source/render-licensed.mjs
+node source/verify-licensed.mjs
+node source/package-licensed.mjs
 ```
 
-既存声を作り直すときだけ `source/audio.mjs` と既存VOICEVOX実エンジンを使います。旧版や元モデルは保持し、連番が既にある場合は別版へ保存してから再生成します。公開Git外の大きな中間映像は原本とrecipeから再生成できます。F納品には必要な中間と描画済み600枚を保存します。
+音だけを変更した場合は既存pictureを保ち`render-licensed.mjs --skip-picture`でFC音を再反映できる。旧自作曲/音楽なし版のrecipeとF03を上書きしない。旧説明は`qa/history/revision03-README.md`へ保存した。
 
-管理: [制作 #97](https://github.com/Pui-core/-/issues/97) / [継続目標 #93](https://github.com/Pui-core/-/issues/93)
+管理：[Issue97](https://github.com/Pui-core/-/issues/97) / 継続目標：[親93](https://github.com/Pui-core/-/issues/93)

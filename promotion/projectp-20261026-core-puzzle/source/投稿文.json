@@ -1,52 +1,50 @@
 {
   "title": "芯石をはめると、何が変わる？",
-  "tiktok": "この芯石、はめると何が変わる？\n\n運ぶ。はめる。足場が階段になる。\n上の灯まで、道をつないでいく。\n\n制作中の『EMBERWAKE 灰の灯』、I章の仕掛けです。\nつぎの仕掛けも、見ていく？\n\n※開発中の探索モード。冒頭・比較・最後に静止編集を含みます。\nナレーション：VOICEVOX:青山龍星\n\n#EMBERWAKE #ゲーム制作 #アクションパズル #ぷい",
-  "publicationDateJst": "2026-10-26",
-  "state": "DRAFT_HOLD_POPULAR_SOUND_DIRECT_AUDITION_AND_DAY26_REVIEW",
+  "version": "REVISION_04_LICENSED_CLASSIC",
+  "tiktok": "この芯石、はめると何が変わる？\n横並びの足場が、階段へ。\n『EMBERWAKE 灰の灯』制作中。つぎの仕掛けもフォローで。\n※実ゲームv0.11.0・探索／静止編集あり。\n声：VOICEVOX:青山龍星（合成音声）\n\nMusic: Monkeys Spinning Monkeys — Kevin MacLeod (incompetech.com)\nhttps://incompetech.com/music/royalty-free/?isrc=USUAN1400011\nCC BY 4.0 https://creativecommons.org/licenses/by/4.0/\n編集：ぷい（抜粋・曲の音量調整／別ナレーション・自作効果音を追加）\n\n#EMBERWAKE #ゲーム制作 #ぷい",
+  "plannedDateJst": "2026-10-28",
+  "activitySourceDateJst": "2026-10-25",
+  "candidateOnly": true,
+  "state": "TECHNICAL_PASS_NATIVE_RIGHTS_UI_CHECK_PENDING",
   "music": {
-    "selected": false,
-    "bpm": null,
-    "soundId": null,
-    "rightsConfirmed": false,
-    "popularityEvidence": null,
-    "latestCandidateRecheck": {
-      "title": "phonk (90)",
-      "artist": "DJ BAI",
-      "observedAt": "2026-10-25T13:58:45.564Z",
-      "commercialExactQueryResult": "結果なし",
-      "adopted": false,
-      "promotionPermissionVerified": false,
-      "soundId": null,
-      "evidence": "qa/music-candidate-recheck.json",
-      "displayedPosts": "29.2K",
-      "postCountPeriod": "UNCONFIRMED",
-      "currentJapanRankVerified": false
-    }
+    "selected": true,
+    "title": "Monkeys Spinning Monkeys",
+    "artist": "Kevin MacLeod",
+    "isrc": "USUAN1400011",
+    "sourceSha256": "a5bb345c23849ad0786aa0bc5157a9f2d4039660fe00282e55754d475f36dc14",
+    "license": "CC BY 4.0",
+    "credit": {
+      "title": "Monkeys Spinning Monkeys",
+      "artist": "Kevin MacLeod",
+      "artistSite": "https://incompetech.com/",
+      "trackPage": "https://incompetech.com/music/royalty-free/?isrc=USUAN1400011",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "editor": "ぷい / ProjectP",
+      "changes": "Excerpt, onset alignment, music-only volume/duck/fades; separate VOICEVOX narration and original editorial SFX layered. Artist does not endorse this work."
+    },
+    "sourceInterval": [
+      0.256,
+      20.256
+    ],
+    "anchor": 5.056,
+    "outputAnchor": 4.8,
+    "platformSoundId": null,
+    "currentJapanTrendVerified": false,
+    "rightsProof": "qa/licensed-classic-rights.json"
   },
-  "reminder": "当日の実活動と前投稿実績を確認してから題材/公開を判断。今日は追加投稿しない。",
-  "version": "03_LIVE2D",
-  "model": {
-    "name": "Revenant_Natural",
-    "mocSha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e",
-    "offlineCoreRendered": true,
-    "cameraTracking": false,
-    "physicsSimulated": false
-  },
-  "variants": {
-    "musicless": "videos/core-puzzle-voice-no-music.mp4",
-    "ownedOriginalScore": "videos/core-puzzle-voice-original-score.mp4",
-    "ownedOriginalIsPopularSong": false
+  "aigcDisclosure": {
+    "requiredForThisCandidate": true,
+    "reason": "VOICEVOX synthetic narration; actual game/software-rendered illustrated model are separately identified",
+    "nativeToggleVerified": false
   },
   "nativeUi": {
-    "revision": "03_LIVE2D",
-    "boundedPreviewVerified": true,
-    "binding": "qa/model-native-ui-binding.json",
-    "captionCharacters": 180,
-    "voiceCreditPresent": true,
-    "continuousFrameByFrameReview": false,
-    "subjectiveAudioAudition": false,
-    "serverDraftSaved": false,
-    "publicPostOrRepost": false,
-    "laterPublicationRequiresFreshUpload": true
-  }
+    "revision": "04_LICENSED_CLASSIC",
+    "boundedPreviewVerified": false,
+    "binding": null
+  },
+  "directSubjectiveAudition": false,
+  "day28EditorialAdoption": false,
+  "scheduled": false,
+  "published": false
 }

@@ -1,0 +1,377 @@
+{
+  "status": "PASS_TECHNICAL_LICENSED_ORIGINAL_PENDING_NATIVE_CHECK",
+  "videoSha256": "f881434794d1adf1211d680cda1e4c40a3fd283c8a0eeb60a36379c807ab562c",
+  "fullAvDecode": true,
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 600,
+    "duration": 20.01
+  },
+  "levels": {
+    "integratedLufs": -21.1,
+    "truePeakDbfs": -4.2
+  },
+  "sync": [
+    {
+      "kind": "Voice head/tail はめると、何が変わる？",
+      "begin": 0.1725625,
+      "end": 1.8418333333333332,
+      "lagSamples": 0,
+      "correlation": 0.9998301640345513,
+      "gainDb": -0.007486610228469889
+    },
+    {
+      "kind": "Voice head/tail 足場が、階段に。",
+      "begin": 5.184083333333333,
+      "end": 6.729604166666666,
+      "lagSamples": 0,
+      "correlation": 0.9998840232338699,
+      "gainDb": -0.009346685345343199
+    },
+    {
+      "kind": "Voice head/tail 芯石ひとつで、道が変わる。",
+      "begin": 14.643229166666666,
+      "end": 16.631229166666667,
+      "lagSamples": 0,
+      "correlation": 0.9998989577299845,
+      "gainDb": -0.007597957725404957
+    },
+    {
+      "kind": "Actual licensed attack at changed frame144",
+      "begin": 4.75,
+      "end": 4.95,
+      "lagSamples": 0,
+      "correlation": 0.9999056125467369,
+      "gainDb": -0.011051047684395418
+    }
+  ],
+  "voiceFxAddedOnce": true,
+  "maxPcmSumError": 1.1920928955078125e-7,
+  "voiceHeadsTailsPreserved": true,
+  "onlyMusicFades": true,
+  "musicAnchor": {
+    "sourceSeconds": 5.056,
+    "sample": 242688,
+    "beforeRms": 0.09096597582586786,
+    "afterRms": 0.14847634686899333,
+    "rmsRise": 0.057510371043125466,
+    "outputSample": 230400,
+    "outputSeconds": 4.8,
+    "outputFrame": 144,
+    "method": "Highest positive raw-mono RMS rise on1ms grid within5.025..5.065s group independently detected by spectral novelty. Compare8ms forward to8ms past ending2ms before marker.",
+    "perceptualTimingUncertaintySeconds": 0.02,
+    "musicalBarNumberEstablished": false,
+    "scan": [
+      {
+        "sourceSeconds": 5.025,
+        "sample": 241200,
+        "beforeRms": 0.0432019393876258,
+        "afterRms": 0.04776767005525677,
+        "rmsRise": 0.004565730667630968
+      },
+      {
+        "sourceSeconds": 5.026,
+        "sample": 241248,
+        "beforeRms": 0.03704956041701992,
+        "afterRms": 0.045236001522957134,
+        "rmsRise": 0.008186441105937213
+      },
+      {
+        "sourceSeconds": 5.027,
+        "sample": 241296,
+        "beforeRms": 0.04123722628473335,
+        "afterRms": 0.04289789192489013,
+        "rmsRise": 0.0016606656401567804
+      },
+      {
+        "sourceSeconds": 5.028,
+        "sample": 241344,
+        "beforeRms": 0.044772412319188756,
+        "afterRms": 0.04369839543797859,
+        "rmsRise": -0.0010740168812101644
+      },
+      {
+        "sourceSeconds": 5.029,
+        "sample": 241392,
+        "beforeRms": 0.04750686602617033,
+        "afterRms": 0.04719189946258794,
+        "rmsRise": -0.00031496656358238895
+      },
+      {
+        "sourceSeconds": 5.03,
+        "sample": 241440,
+        "beforeRms": 0.044148327291785916,
+        "afterRms": 0.04614347624714962,
+        "rmsRise": 0.001995148955363707
+      },
+      {
+        "sourceSeconds": 5.031,
+        "sample": 241488,
+        "beforeRms": 0.042082705083969905,
+        "afterRms": 0.037298947215875435,
+        "rmsRise": -0.004783757868094471
+      },
+      {
+        "sourceSeconds": 5.032,
+        "sample": 241536,
+        "beforeRms": 0.04386086052017213,
+        "afterRms": 0.03889316100553711,
+        "rmsRise": -0.004967699514635021
+      },
+      {
+        "sourceSeconds": 5.033,
+        "sample": 241584,
+        "beforeRms": 0.0521025021200797,
+        "afterRms": 0.0526122241942984,
+        "rmsRise": 0.0005097220742187047
+      },
+      {
+        "sourceSeconds": 5.034,
+        "sample": 241632,
+        "beforeRms": 0.05211237954234832,
+        "afterRms": 0.05648644032408156,
+        "rmsRise": 0.00437406078173324
+      },
+      {
+        "sourceSeconds": 5.035,
+        "sample": 241680,
+        "beforeRms": 0.04776767005525677,
+        "afterRms": 0.056355310693469766,
+        "rmsRise": 0.008587640638212997
+      },
+      {
+        "sourceSeconds": 5.036,
+        "sample": 241728,
+        "beforeRms": 0.045236001522957134,
+        "afterRms": 0.05547735215115247,
+        "rmsRise": 0.01024135062819534
+      },
+      {
+        "sourceSeconds": 5.037,
+        "sample": 241776,
+        "beforeRms": 0.04289789192489013,
+        "afterRms": 0.05845301892219715,
+        "rmsRise": 0.015555126997307017
+      },
+      {
+        "sourceSeconds": 5.038,
+        "sample": 241824,
+        "beforeRms": 0.04369839543797859,
+        "afterRms": 0.06913291112483236,
+        "rmsRise": 0.025434515686853766
+      },
+      {
+        "sourceSeconds": 5.039,
+        "sample": 241872,
+        "beforeRms": 0.04719189946258794,
+        "afterRms": 0.07760046696085919,
+        "rmsRise": 0.030408567498271248
+      },
+      {
+        "sourceSeconds": 5.04,
+        "sample": 241920,
+        "beforeRms": 0.04614347624714962,
+        "afterRms": 0.07802689468218556,
+        "rmsRise": 0.031883418435035935
+      },
+      {
+        "sourceSeconds": 5.041,
+        "sample": 241968,
+        "beforeRms": 0.037298947215875435,
+        "afterRms": 0.07946847942734221,
+        "rmsRise": 0.04216953221146678
+      },
+      {
+        "sourceSeconds": 5.042,
+        "sample": 242016,
+        "beforeRms": 0.03889316100553711,
+        "afterRms": 0.08141927683230395,
+        "rmsRise": 0.04252611582676684
+      },
+      {
+        "sourceSeconds": 5.043,
+        "sample": 242064,
+        "beforeRms": 0.0526122241942984,
+        "afterRms": 0.08521223066867456,
+        "rmsRise": 0.03260000647437616
+      },
+      {
+        "sourceSeconds": 5.044,
+        "sample": 242112,
+        "beforeRms": 0.05648644032408156,
+        "afterRms": 0.08994231961938413,
+        "rmsRise": 0.033455879295302575
+      },
+      {
+        "sourceSeconds": 5.045,
+        "sample": 242160,
+        "beforeRms": 0.056355310693469766,
+        "afterRms": 0.08888264614858443,
+        "rmsRise": 0.032527335455114666
+      },
+      {
+        "sourceSeconds": 5.046,
+        "sample": 242208,
+        "beforeRms": 0.05547735215115247,
+        "afterRms": 0.09096597582586786,
+        "rmsRise": 0.03548862367471539
+      },
+      {
+        "sourceSeconds": 5.047,
+        "sample": 242256,
+        "beforeRms": 0.05845301892219715,
+        "afterRms": 0.09872110415796251,
+        "rmsRise": 0.04026808523576536
+      },
+      {
+        "sourceSeconds": 5.048,
+        "sample": 242304,
+        "beforeRms": 0.06913291112483236,
+        "afterRms": 0.1072223837710351,
+        "rmsRise": 0.03808947264620274
+      },
+      {
+        "sourceSeconds": 5.049,
+        "sample": 242352,
+        "beforeRms": 0.07760046696085919,
+        "afterRms": 0.10782017613076317,
+        "rmsRise": 0.030219709169903977
+      },
+      {
+        "sourceSeconds": 5.05,
+        "sample": 242400,
+        "beforeRms": 0.07802689468218556,
+        "afterRms": 0.11883710254274626,
+        "rmsRise": 0.04081020786056071
+      },
+      {
+        "sourceSeconds": 5.051,
+        "sample": 242448,
+        "beforeRms": 0.07946847942734221,
+        "afterRms": 0.1266282201854359,
+        "rmsRise": 0.04715974075809369
+      },
+      {
+        "sourceSeconds": 5.052,
+        "sample": 242496,
+        "beforeRms": 0.08141927683230395,
+        "afterRms": 0.1306131751499181,
+        "rmsRise": 0.04919389831761416
+      },
+      {
+        "sourceSeconds": 5.053,
+        "sample": 242544,
+        "beforeRms": 0.08521223066867456,
+        "afterRms": 0.1366853524547457,
+        "rmsRise": 0.051473121786071135
+      },
+      {
+        "sourceSeconds": 5.054,
+        "sample": 242592,
+        "beforeRms": 0.08994231961938413,
+        "afterRms": 0.14536625082135082,
+        "rmsRise": 0.05542393120196669
+      },
+      {
+        "sourceSeconds": 5.055,
+        "sample": 242640,
+        "beforeRms": 0.08888264614858443,
+        "afterRms": 0.14465537383198104,
+        "rmsRise": 0.05577272768339661
+      },
+      {
+        "sourceSeconds": 5.056,
+        "sample": 242688,
+        "beforeRms": 0.09096597582586786,
+        "afterRms": 0.14847634686899333,
+        "rmsRise": 0.057510371043125466
+      },
+      {
+        "sourceSeconds": 5.057,
+        "sample": 242736,
+        "beforeRms": 0.09872110415796251,
+        "afterRms": 0.15105770659497503,
+        "rmsRise": 0.05233660243701252
+      },
+      {
+        "sourceSeconds": 5.058,
+        "sample": 242784,
+        "beforeRms": 0.1072223837710351,
+        "afterRms": 0.15061686054507223,
+        "rmsRise": 0.04339447677403713
+      },
+      {
+        "sourceSeconds": 5.059,
+        "sample": 242832,
+        "beforeRms": 0.10782017613076317,
+        "afterRms": 0.152704737384704,
+        "rmsRise": 0.04488456125394083
+      },
+      {
+        "sourceSeconds": 5.06,
+        "sample": 242880,
+        "beforeRms": 0.11883710254274626,
+        "afterRms": 0.15767029209744945,
+        "rmsRise": 0.03883318955470319
+      },
+      {
+        "sourceSeconds": 5.061,
+        "sample": 242928,
+        "beforeRms": 0.1266282201854359,
+        "afterRms": 0.16193520715208662,
+        "rmsRise": 0.035306986966650716
+      },
+      {
+        "sourceSeconds": 5.062,
+        "sample": 242976,
+        "beforeRms": 0.1306131751499181,
+        "afterRms": 0.16150176886379355,
+        "rmsRise": 0.03088859371387545
+      },
+      {
+        "sourceSeconds": 5.063,
+        "sample": 243024,
+        "beforeRms": 0.1366853524547457,
+        "afterRms": 0.1677986132762464,
+        "rmsRise": 0.031113260821500704
+      },
+      {
+        "sourceSeconds": 5.064,
+        "sample": 243072,
+        "beforeRms": 0.14536625082135082,
+        "afterRms": 0.17171002568381497,
+        "rmsRise": 0.026343774862464142
+      },
+      {
+        "sourceSeconds": 5.065,
+        "sample": 243120,
+        "beforeRms": 0.14465537383198104,
+        "afterRms": 0.19403305840060248,
+        "rmsRise": 0.04937768456862143
+      }
+    ],
+    "renderedBedCorrelation": 0.9999999999999605,
+    "maxQuantizationError": 9.335084044659325e-8,
+    "lagSamples": 0
+  },
+  "savedGameRemap": [
+    {
+      "outputFrame": 143,
+      "sourceFrame": 163,
+      "savedSourceFrame": 163
+    },
+    {
+      "outputFrame": 144,
+      "sourceFrame": 164,
+      "savedSourceFrame": 164
+    }
+  ],
+  "coreFramesReused": 600,
+  "currentJapanTrendVerified": false,
+  "nativeTikTokUi": false,
+  "directSubjectiveAudition": false,
+  "day28EditorialAdoption": false,
+  "published": false
+}

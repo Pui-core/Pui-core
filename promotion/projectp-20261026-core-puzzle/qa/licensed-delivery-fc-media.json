@@ -1,0 +1,12 @@
+{
+  "exit": 0,
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-04-licensed-classic\\projects\\core-puzzle-licensed-classic.fcproj",
+    "exec",
+    "media.status"
+  ],
+  "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"66c7a7c3650ae129\",\n      \"size\": 452805265\n    },\n    \"item\": 5,\n    \"name\": \"core-puzzle-licensed-picture.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-04-licensed-classic\\\\media\\\\core-puzzle-licensed-picture.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"a74d355d284f4d53\",\n      \"size\": 5760102\n    },\n    \"item\": 6,\n    \"name\": \"voice-sfx-no-music.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-04-licensed-classic\\\\media\\\\voice-sfx-no-music.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"aaa179ce03c20d48\",\n      \"size\": 5760044\n    },\n    \"item\": 7,\n    \"name\": \"licensed-classic-ducked.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-04-licensed-classic\\\\media\\\\licensed-classic-ducked.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+  "stderr": ""
+}

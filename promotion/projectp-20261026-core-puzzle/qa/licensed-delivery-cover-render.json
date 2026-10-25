@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "exe": "photocraft-cli.exe",
+  "args": [
+    "convert",
+    "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-04-licensed-classic\\projects\\licensed-cover-reopened.pcraft",
+    "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-04-licensed-classic\\qa\\licensed-delivery-cover.png",
+    "--format",
+    "png"
+  ],
+  "stdout": "",
+  "stderr": "warning: 12 layer(s) flattened; layers, masks and blend modes are not kept\n"
+}
