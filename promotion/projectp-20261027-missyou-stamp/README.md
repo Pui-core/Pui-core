@@ -44,7 +44,13 @@ Core sequenceと納品先は既存出力があれば拒否し、再実行で保�
 
 ## 投稿への引継ぎ
 
-これは制作候補。TikTok native UI、実際のAI生成コンテンツ開示toggle、直接の全編主観試聴、10/27当日の採用、最終音源、予約・公開・公開後結果は親93の単独publisherが扱う。今回の合成音声に対するAI開示はONを予定し、実アプリ画面の編集と合成ナレーションを明記する。人気楽曲を使った・全編試聴済み・一般公開済みとはしない。10/26の既存MIX予約と初投稿を変更せず、この候補制作を根拠に新しいowner承認待ちは追加しない。
+これはnative UIの限定確認を終えた制作候補。現在の確認状態は`qa/current-status.json`、実画面と操作観測の正本は`qa/native-ui/native-ui.json`。Rootが固定master/coverと192文字captionを実TikTok stagingへ入れ、主要9場面と22/22終端、cover2点、ownbrand ON・第三者brand OFF・AIGC ON・著作権/簡易contentの両check問題なしを確認した。profile側coverの画像はmock表示であり、本人の実プロフィール公開・フォロワー数の証明ではない。
+
+初回stageはcounter02/seek06で画面が進まずeditor loaderも完了しなかった。元bytesのまま1回の同ファイル差替え後に22/22へ到達し、caption/cover/開示等を再設定した最終replayも22/22を確認。原因を動画/encoder/ブラウザ等へ断定しない。9phone画像は最終replay、2cover画像は初回stage側の同じ固定coverの証跡として区別する。名目採取秒は正確なmedia frameや音声同期の証明ではなく、連続全編目視・直接の主観全編試聴へ広げない。
+
+Rootはstagingを破棄し、下書き保存・投稿・予約・プロフィール保存は0。StudioHomeへ戻り、既存の初投稿ID7700540849909763336と26日19:15のMIX予約ID7700634126155648264を保持した。この候補には公開IDがなく、実公開は未確認。残る直接全編主観試聴、10/27当日の採用・最新活動/前投稿metrics、最終音源・公開時の再確認と公開receiptは親93の単独publisher範囲。AIGC/ownbrandの確認は破棄したstagingの結果なので、将来の投稿で再適用/再確認する。人気曲を使った・一般公開済みとはせず、既存GOに新しいowner承認待ちを加えない。
+
+制作時点の`qa/technical.json`等にあるnative未確認/描画直後pendingの値は、その段階の履歴として保持する。旧863fileのsource/F検証receiptは`qa/delivery-production-863.json`（SHA`30d5bddb8c5df1b10d74d0494087808e1cd45174246ba448810bd813ae6f891d`）へbyte一致保存。今回の後続native追補とsmall文書/metadata同期を含む対応は、更新後の`qa/delivery.json`で区別する。動画/cover/caption/3Craft原本は不変更で、再描画や全編試聴を再実行したという記録ではない。
 
 ### 検証recipeの抽出順の追補
 
