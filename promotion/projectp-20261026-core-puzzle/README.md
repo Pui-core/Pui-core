@@ -47,6 +47,12 @@ PhotoCraftはモデル入りカバーと実画像の比較素材、EffectCraft�
 
 PP97-SOUNDは未解除です。投稿用途で許可された人気曲のsound ID・区間・利用条件・人気根拠、実拍への調整がまだ必要です。商用のみ・尺制限なしの5検索語0件と通常の公式CMLページ500は限定観測で、全カタログ不可とは結論しません。Hauxenz候補は未採用です。
 
+2026-10-25 13:58 UTCの追加確認では、rootが通常の「ロイヤリティフリーの楽曲／無制限」で実keyboard検索し、`phonk (90)`／DJ BAI／01:30／29.2K postsを確認しました。native公式downloadを1回行い、90秒・1,457,030bytes・SHA `7b0c4e216315c9a9fdb483f7a8b35592dfd66b9fa9cee00f76a47cd0c7d965fe` のM4Aを取得しています。投稿数はライブラリの累計表示で、現在の日本の順位・期間を示す証拠ではありません。
+
+その後、モデル入り音楽なしmasterを使うStudio編集で「楽曲→無制限→商用利用」を選び、尺制限を付けず、実クリック/keyboardで同じ `phonk (90)` を検索すると「結果なし」でした。今回の宣伝動画への許可・sound IDは未確認なので、候補は**未採用**です。通常一覧への表示やdownload成功を商用利用の証明へ置き換えません。通常ライブラリの非0件と、商用フィルター下の限定0件を分け、全カタログ停止・全曲利用不可とは判断しません。
+
+追加証跡は `qa/music-candidate-recheck.json` と4枚の対象UI cropへSHAで結びました。raw M4A・private UIA・full screenshotをGitやrevision03へ追加せず、BPM/実拍分析・直接試聴も行っていません。rootはeditorをcancelし、Home→unsaved changes終了で退出、本人Homeへ戻っています。下書き保存・投稿・プロフィール変更はありません。
+
 ## 実UIと検査の範囲
 
 revision02の冒頭feed・180字候補caption・カバーは実TikTokで限定確認し、上部小ラベルの重なりを解除しました。その証跡は `qa/pp97-native-ui.json` と `qa/native-ui-binding.json` に旧SHAのまま保持しています。モデルなしの旧版の履歴です。

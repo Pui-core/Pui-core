@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-25T14:03:00.708Z",
+  "status": "PASS_SCOPED_MUSIC_CANDIDATE_PROOF_AND_DOCUMENT_SHA_MATCH",
+  "destination": "/mnt/f/Videos/ProjectP-Core-Puzzle-2026-10-26/revision-03-live2d",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 11851,
+      "sourceSha256": "265e0c97f4947d057eed74d36432f955eaa81a682cc93d5cdb87df25a6429e6c",
+      "deliverySha256": "265e0c97f4947d057eed74d36432f955eaa81a682cc93d5cdb87df25a6429e6c"
+    },
+    {
+      "file": "index.html",
+      "bytes": 1974,
+      "sourceSha256": "c4326b69cb31bf7e1b8c8244d7afa63c74826d0569f12c065a9ce91658e9d62c",
+      "deliverySha256": "c4326b69cb31bf7e1b8c8244d7afa63c74826d0569f12c065a9ce91658e9d62c"
+    },
+    {
+      "file": "qa/technical.json",
+      "bytes": 12917,
+      "sourceSha256": "d59b7c208bb34784efe14befd092f848965409ff49b8c7424c65d4895d5e0775",
+      "deliverySha256": "d59b7c208bb34784efe14befd092f848965409ff49b8c7424c65d4895d5e0775"
+    },
+    {
+      "file": "qa/visual-review.json",
+      "bytes": 5276,
+      "sourceSha256": "d22070641b9dd800d2879af967df42e8fb741e2a475e7e9a078c94676c37e1d9",
+      "deliverySha256": "d22070641b9dd800d2879af967df42e8fb741e2a475e7e9a078c94676c37e1d9"
+    },
+    {
+      "file": "source/投稿文.json",
+      "bytes": 2129,
+      "sourceSha256": "2e03d4c967d1d6ec1d6710bc1445f6821bc4b84e833da9b05423cd9d97c5014c",
+      "deliverySha256": "2e03d4c967d1d6ec1d6710bc1445f6821bc4b84e833da9b05423cd9d97c5014c"
+    },
+    {
+      "file": "qa/music-candidate-commercial-filter.png",
+      "bytes": 47534,
+      "sourceSha256": "936ca9669c51cae86e0bdc14262e44deef1461d61b2608671af1a9ada3dbaa0b",
+      "deliverySha256": "936ca9669c51cae86e0bdc14262e44deef1461d61b2608671af1a9ada3dbaa0b"
+    },
+    {
+      "file": "qa/music-candidate-commercial-result.png",
+      "bytes": 10694,
+      "sourceSha256": "6c846249cd54f0cf8c8a59e44cc75938b032c864445147c150a03a7f97c90f65",
+      "deliverySha256": "6c846249cd54f0cf8c8a59e44cc75938b032c864445147c150a03a7f97c90f65"
+    },
+    {
+      "file": "qa/music-candidate-native-download.png",
+      "bytes": 11082,
+      "sourceSha256": "1ad6ac6fcb92a5445428dd4ec0ed90172880d3973e8ea98f3e2b8773f00eb3c6",
+      "deliverySha256": "1ad6ac6fcb92a5445428dd4ec0ed90172880d3973e8ea98f3e2b8773f00eb3c6"
+    },
+    {
+      "file": "qa/music-candidate-recheck.json",
+      "bytes": 4908,
+      "sourceSha256": "189d40c192aa83f3eaa432fd66ba088fa0fe94826994be9c03a9afcb793a26a3",
+      "deliverySha256": "189d40c192aa83f3eaa432fd66ba088fa0fe94826994be9c03a9afcb793a26a3"
+    },
+    {
+      "file": "qa/music-candidate-unrestricted-results.png",
+      "bytes": 186116,
+      "sourceSha256": "00565512f95ab286437c30da592299498f05859dcb0e014ca3d201464e476485",
+      "deliverySha256": "00565512f95ab286437c30da592299498f05859dcb0e014ca3d201464e476485"
+    }
+  ],
+  "fileCount": 10,
+  "bytes": 294481,
+  "unchangedMedia": [
+    {
+      "file": "videos/core-puzzle-voice-original-score.mp4",
+      "sha256": "f79e6f3873ba20bb4d35ffaa16a8eb51d945386d4059927463edc81fbfe0f4c5"
+    },
+    {
+      "file": "videos/core-puzzle-voice-no-music.mp4",
+      "sha256": "cb68c46bf1f6530a85764a895f58265cb852813a3d025415774046d967bdfdfd"
+    },
+    {
+      "file": "covers/core-puzzle-cover.png",
+      "sha256": "76c4b7fdb5e2e94c7a912fdd844c7e2d73fe51f5e870373d1b4791c19fa4185f"
+    }
+  ],
+  "rawMusicAudioCopied": false,
+  "fullAssetRecopy": false,
+  "mediaRender": false,
+  "coderBrowserOrRuntimeChanges": false
+}
