@@ -1,0 +1,91 @@
+{
+  "voice": {
+    "speaker": "青山龍星",
+    "style": "ノーマル",
+    "styleId": 13,
+    "credit": "VOICEVOX:青山龍星",
+    "engineVersion": "0.25.1",
+    "cues": [
+      {
+        "at": 0.12,
+        "end": 2.36,
+        "text": "はめると、何が変わる？",
+        "file": "voice-1.wav",
+        "predictedDuration": 1.686971977044429,
+        "speedScale": 1.12
+      },
+      {
+        "at": 5.1499999999999995,
+        "end": 6.9,
+        "text": "足場が、階段に。",
+        "file": "voice-2.wav",
+        "predictedDuration": 1.6717144984858374,
+        "speedScale": 1.12
+      },
+      {
+        "at": 14.6,
+        "end": 17.8,
+        "text": "芯石ひとつで、道が変わる。",
+        "file": "voice-3.wav",
+        "predictedDuration": 2.0993879828176327,
+        "speedScale": 1.12
+      }
+    ]
+  },
+  "sfx": {
+    "events": [
+      {
+        "at": 2.3,
+        "d": 0.15,
+        "kind": "air",
+        "gain": 0.02
+      },
+      {
+        "at": 4.71,
+        "d": 0.12,
+        "kind": "air",
+        "gain": 0.035
+      },
+      {
+        "at": 4.8,
+        "d": 0.22,
+        "kind": "fit",
+        "gain": 0.2
+      },
+      {
+        "at": 14.4,
+        "d": 0.13,
+        "kind": "fit",
+        "gain": 0.045
+      },
+      {
+        "at": 7.266666666666666,
+        "d": 0.09,
+        "kind": "landing",
+        "gain": 0.04
+      },
+      {
+        "at": 8.566666666666666,
+        "d": 0.09,
+        "kind": "landing",
+        "gain": 0.04
+      },
+      {
+        "at": 9.866666666666667,
+        "d": 0.09,
+        "kind": "landing",
+        "gain": 0.04
+      }
+    ],
+    "authorship": "Original deterministic sine/noise editorial accents, not recorded game SE",
+    "sha256": "b02714e93a1c82995772d65c53569943f4122f137256384e23663fbc842a97ca"
+  },
+  "mix": {
+    "file": "media/voice-sfx-no-music.wav",
+    "sha256": "843813d5d7af90c715f07b3871a419e594c86e5997655de5e5ccfac12b7bf510",
+    "duration": 20,
+    "backgroundMusic": false
+  },
+  "directWholeAudition": false,
+  "popularSoundPending": true
+}

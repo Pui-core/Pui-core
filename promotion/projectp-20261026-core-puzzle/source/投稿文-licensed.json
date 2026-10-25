@@ -1,0 +1,71 @@
+{
+  "title": "芯石をはめると、何が変わる？",
+  "version": "REVISION_04_LICENSED_CLASSIC",
+  "tiktok": "この芯石、はめると何が変わる？\n横並びの足場が、階段へ。\n『EMBERWAKE 灰の灯』制作中。つぎの仕掛けもフォローで。\n※実ゲームv0.11.0・探索／静止編集あり。\n声：VOICEVOX:青山龍星（合成音声）\n\nMusic: Monkeys Spinning Monkeys — Kevin MacLeod (incompetech.com)\nhttps://incompetech.com/music/royalty-free/?isrc=USUAN1400011\nCC BY 4.0 https://creativecommons.org/licenses/by/4.0/\n編集：ぷい（抜粋・曲の音量調整／別ナレーション・自作効果音を追加）\n\n#EMBERWAKE #ゲーム制作 #ぷい",
+  "plannedDateJst": "2026-10-28",
+  "activitySourceDateJst": "2026-10-25",
+  "candidateOnly": true,
+  "state": "READY_SOURCE_CANDIDATE_BOUNDED_NATIVE_PASS_PUBLICATION_UNCONFIRMED",
+  "music": {
+    "selected": true,
+    "title": "Monkeys Spinning Monkeys",
+    "artist": "Kevin MacLeod",
+    "isrc": "USUAN1400011",
+    "sourceSha256": "a5bb345c23849ad0786aa0bc5157a9f2d4039660fe00282e55754d475f36dc14",
+    "license": "CC BY 4.0",
+    "credit": {
+      "title": "Monkeys Spinning Monkeys",
+      "artist": "Kevin MacLeod",
+      "artistSite": "https://incompetech.com/",
+      "trackPage": "https://incompetech.com/music/royalty-free/?isrc=USUAN1400011",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "editor": "ぷい / ProjectP",
+      "changes": "Excerpt, onset alignment, music-only volume/duck/fades; separate VOICEVOX narration and original editorial SFX layered. Artist does not endorse this work."
+    },
+    "sourceInterval": [
+      0.256,
+      20.256
+    ],
+    "anchor": 5.056,
+    "outputAnchor": 4.8,
+    "platformSoundId": null,
+    "currentJapanTrendVerified": false,
+    "rightsProof": "qa/licensed-classic-rights.json",
+    "musicUsageConfirmation": "Not observed in non-submit staging. If presented at actual single-publisher submission, confirm necessary license based on exact original and caption attribution; do not infer this QA completed the confirmation."
+  },
+  "aigcDisclosure": {
+    "requiredForThisCandidate": true,
+    "reason": "VOICEVOX synthetic narration; actual game/software-rendered illustrated model are separately identified",
+    "nativeToggleVerified": true,
+    "scope": "Observed ON in discarded staging; publisher reapplies/rechecks at actual publication"
+  },
+  "nativeUi": {
+    "revision": "04_LICENSED_CLASSIC",
+    "boundedPreviewVerified": true,
+    "binding": "qa/licensed-native-ui/native-ui-licensed.json",
+    "bindingSha256": "132dca21f2d85505be812829593edbcb364ad8bbb8d657e647d40fbf7509c78c",
+    "sourceExportSha256": "772b5078823fdc86cc7a339559f0996d2e1f28387b55f40a4af06886558a7b10",
+    "checkedAt": "2026-10-25T18:46:35.730Z",
+    "finalPhoneSamples": 8,
+    "reachedEnd": "20/20",
+    "captionCharacters": 348,
+    "coverMockProfileOnly": true,
+    "ownBrand": true,
+    "thirdPartyBrand": false,
+    "aigc": true,
+    "copyrightCheckPassed": true,
+    "contentCheckPassed": true,
+    "stagingDiscarded": true,
+    "savedDraft": false,
+    "publishIntents": 0,
+    "scheduleIntents": 0,
+    "candidateVideoId": null,
+    "continuousVisualPlaybackClaim": false
+  },
+  "directSubjectiveAudition": false,
+  "day28EditorialAdoption": false,
+  "scheduled": false,
+  "published": false,
+  "subjectiveAuditionHandling": "Not performed; do not substitute numeric QA for subjective listening or introduce a new owner-approval gate."
+}

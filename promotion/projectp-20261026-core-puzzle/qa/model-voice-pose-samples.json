@@ -1,0 +1,92 @@
+{
+  "scope": "Actual Core PNG samples tied to voice-only RMS schedule; image review required, no audio audition claim",
+  "rows": [
+    {
+      "type": "voice_peak",
+      "text": "はめると、何が変わる？",
+      "frame": 33,
+      "time": 1.1,
+      "rms": 0.20577077566972402,
+      "mouth": 0.78,
+      "eye": 1,
+      "headX": 1.3798424632801454,
+      "headY": 0.4043894262712187,
+      "headZ": 0.2383980160340264,
+      "bodyX": 0.1295884898566245,
+      "breath": 0.26999777215948395,
+      "image": "qa/model-voice-voice_peak-33.png"
+    },
+    {
+      "type": "voice_peak",
+      "text": "足場が、階段に。",
+      "frame": 188,
+      "time": 6.266666666666667,
+      "rms": 0.2210684908347799,
+      "mouth": 0.78,
+      "eye": 1,
+      "headX": -0.3695235278240254,
+      "headY": 0.00006661176894276878,
+      "headZ": -0.00003330588456260813,
+      "bodyX": 0.1763212046977655,
+      "breath": 0.23700940653826186,
+      "image": "qa/model-voice-voice_peak-188.png"
+    },
+    {
+      "type": "voice_peak",
+      "text": "芯石ひとつで、道が変わる。",
+      "frame": 444,
+      "time": 14.8,
+      "rms": 0.18249255092282354,
+      "mouth": 0.78,
+      "eye": 1,
+      "headX": 2.488490495917947,
+      "headY": 0.3500492357440107,
+      "headZ": 0.406049134326796,
+      "bodyX": -0.10470417354444046,
+      "breath": 0.2658634761563544,
+      "image": "qa/model-voice-voice_peak-444.png"
+    },
+    {
+      "type": "silence",
+      "frame": 66,
+      "time": 2.2,
+      "rms": 0,
+      "mouth": 0,
+      "eye": 0.29663167846209926,
+      "headX": 2.29265018596281,
+      "headY": 0.35935929782167825,
+      "headZ": 0.4027303527613125,
+      "bodyX": 0.23249081827867063,
+      "breath": 0.19305999896771286,
+      "image": "qa/model-voice-silence-66.png"
+    },
+    {
+      "type": "silence",
+      "frame": 216,
+      "time": 7.2,
+      "rms": 0,
+      "mouth": 0,
+      "eye": 0.24999999999999845,
+      "headX": -1.4870569668783526,
+      "headY": 0.36166335926769444,
+      "headZ": -0.20249009028035272,
+      "bodyX": 0.07565213646169798,
+      "breath": 0.13978647476824324,
+      "image": "qa/model-voice-silence-216.png"
+    },
+    {
+      "type": "silence",
+      "frame": 516,
+      "time": 17.2,
+      "rms": 0,
+      "mouth": 0,
+      "eye": 1,
+      "headX": 0.9968726723131189,
+      "headY": -0.4491327840489023,
+      "headZ": 0.3279220484358858,
+      "bodyX": 0.17025370076176394,
+      "breath": 0.12144047901495063,
+      "image": "qa/model-voice-silence-516.png"
+    }
+  ]
+}

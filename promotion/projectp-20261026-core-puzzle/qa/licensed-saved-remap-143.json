@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\projects\\core-puzzle-licensed-classic.ecproj",
+    "get",
+    "Real game detail",
+    "Actual action92to451",
+    "timeRemap",
+    "--time",
+    "4.766666666666667",
+    "--json"
+  ],
+  "stdout": "{\"animated\":true,\"expression\":null,\"keys\":[{\"compTime\":2.4,\"in\":\"Linear\",\"layerTime\":0.0,\"out\":\"Linear\",\"time\":0.0,\"value\":3.066666666666667},{\"compTime\":14.4,\"in\":\"Linear\",\"layerTime\":12.0,\"out\":\"Linear\",\"time\":12.0,\"value\":15.066666666666668,\"warning\":\"Keyframe at comp time 14.4 s is outside the layer's active range [2.4 s, 14.4 s).\"},{\"compTime\":17.733333333333334,\"in\":\"Linear\",\"layerTime\":15.333333333333334,\"out\":\"Linear\",\"time\":15.333333333333334,\"value\":15.333333333333334,\"warning\":\"Keyframe at comp time 17.733333333333334 s is outside the layer's active range [2.4 s, 14.4 s).\"}],\"layer\":29,\"match\":\"timeRemap\",\"name\":\"Time Remap\",\"time\":4.766666666666667,\"type\":\"scalar\",\"uid\":52,\"value\":5.433333333333334}\n",
+  "stderr": ""
+}

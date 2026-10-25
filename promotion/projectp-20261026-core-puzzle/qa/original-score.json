@@ -1,0 +1,60 @@
+{
+  "variant": "OWNED_ORIGINAL_SCORE_NOT_POPULAR_SOUND",
+  "source": {
+    "sha256": "565295d97f5525f3f6cec6dd722c5fd8b87932b58b2e10d087a3980762665da9",
+    "sourceIssue": 88,
+    "authorship": "Existing deterministic additive-synthesis original score. No external samples, voices or game SFX; Issue89 extra-SFX mix is not used.",
+    "sampleRate": 48000
+  },
+  "sourceStartSample": 633640,
+  "sourceStartSeconds": 13.200833333333334,
+  "sourceEndSample": 1593640,
+  "samples": 960000,
+  "bpm": 120,
+  "actualPcmAnchor": {
+    "sourceSample": 864040,
+    "sourceSeconds": 18.000833333333333,
+    "scoreBarDownbeatSeconds": 18,
+    "method": "Maximum positive change of adjacent5ms lowpassed PCM RMS in18..18.08s; actual source sample is cropped to reveal frame.",
+    "rmsRise": 0.10376658407632905,
+    "outputSample": 230400,
+    "outputSeconds": 4.8,
+    "outputFrame": 144,
+    "renderedBedCorrelation": 0.9999999999997731,
+    "maximumQuantizationError": 8.055657219063761e-8,
+    "lagSamples": 0
+  },
+  "voice": [
+    {
+      "at": 0.12,
+      "end": 1.9226666666666667,
+      "text": "はめると、何が変わる？"
+    },
+    {
+      "at": 5.1499999999999995,
+      "end": 6.813999999999999,
+      "text": "足場が、階段に。"
+    },
+    {
+      "at": 14.6,
+      "end": 16.701333333333334,
+      "text": "芯石ひとつで、道が変わる。"
+    }
+  ],
+  "duck": {
+    "freeDb": -7.5,
+    "underVoiceAdditionalDb": -9,
+    "attackBeforeHeadSeconds": 0.12,
+    "holdAfterTailSeconds": 0.07,
+    "releaseSeconds": 0.28,
+    "scoreInSeconds": 0.08,
+    "scoreOutSeconds": 0.75
+  },
+  "voiceFxAddedExactlyOnce": true,
+  "voiceFxSha256": "843813d5d7af90c715f07b3871a419e594c86e5997655de5e5ccfac12b7bf510",
+  "duckedScoreSha256": "a34fadcdc1b0035953f5f970fa55719878bf44a0088178c80b1a9b660d7839bb",
+  "mixSha256": "aa18de361bbfa7ea90a50b1bdc5125b39436eea1f5a70fc66e0df277ffbe322b",
+  "samplePeakDbfs": -4.503272582322875,
+  "popularSongRequirementPassed": false,
+  "directWholeAudition": false
+}

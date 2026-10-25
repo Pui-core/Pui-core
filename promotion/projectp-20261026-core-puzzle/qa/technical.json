@@ -1,0 +1,424 @@
+{
+  "status": "TECHNICAL_PASS_HOLD_POPULAR_SOUND_AND_DIRECT_AUDITION",
+  "bindings": [
+    {
+      "file": "videos/core-puzzle-voice-no-music.mp4",
+      "sha256": "cb68c46bf1f6530a85764a895f58265cb852813a3d025415774046d967bdfdfd",
+      "bytes": 5640226,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 600,
+      "duration": 20.01,
+      "fullDecode": true,
+      "decodedPictureSha256": "SHA256=5c4e95d0ea47fb4720bdd63d582e6cd68111e1c2914657f853f92f9f1106d33b",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "lufs": -20,
+        "truePeakDbfs": -4.4
+      },
+      "native": {
+        "videoSha256": "cb68c46bf1f6530a85764a895f58265cb852813a3d025415774046d967bdfdfd",
+        "effectcraftSha256": "9901bdc2ae4c97896b1aaf270bca9c066330ad5263020acc79401f52a31b11cc",
+        "filmcraftSha256": "4a67fc9bedeb5976763e708961ea17b08309ccf7ba28abfad06a023ea3858ecc",
+        "masterSha256": "4def67a55f04e40555e6c30b9e2a974992c3b173a027c3817e17989af8fa89c4",
+        "mixSha256": "843813d5d7af90c715f07b3871a419e594c86e5997655de5e5ccfac12b7bf510",
+        "music": false,
+        "state": "PROVISIONAL_PENDING_ACTUAL_POPULAR_SOUND_AND_NEW_MODEL_UI"
+      }
+    },
+    {
+      "file": "videos/core-puzzle-sfx-only.mp4",
+      "sha256": "14e94445720816bb93a7576b47f917d7e36e148e6cb549a056d7d6261f5e28e9",
+      "bytes": 5640194,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 600,
+      "duration": 20.01,
+      "fullDecode": true,
+      "decodedPictureSha256": "SHA256=5c4e95d0ea47fb4720bdd63d582e6cd68111e1c2914657f853f92f9f1106d33b",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "lufs": -37.7,
+        "truePeakDbfs": -17.5
+      },
+      "native": {
+        "videoSha256": "14e94445720816bb93a7576b47f917d7e36e148e6cb549a056d7d6261f5e28e9",
+        "effectcraftSha256": "9901bdc2ae4c97896b1aaf270bca9c066330ad5263020acc79401f52a31b11cc",
+        "filmcraftSha256": "1524cc253b8e3a9f2f7ae3f63ddf1bb3ce37fe6dae9d583b11e218820948de62",
+        "masterSha256": "4def67a55f04e40555e6c30b9e2a974992c3b173a027c3817e17989af8fa89c4",
+        "mixSha256": "b02714e93a1c82995772d65c53569943f4122f137256384e23663fbc842a97ca",
+        "music": false,
+        "state": "PROVISIONAL_PENDING_ACTUAL_POPULAR_SOUND_AND_NEW_MODEL_UI"
+      }
+    },
+    {
+      "file": "videos/core-puzzle-voice-original-score.mp4",
+      "sha256": "f79e6f3873ba20bb4d35ffaa16a8eb51d945386d4059927463edc81fbfe0f4c5",
+      "bytes": 5640367,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 600,
+      "duration": 20.01,
+      "fullDecode": true,
+      "decodedPictureSha256": "SHA256=5c4e95d0ea47fb4720bdd63d582e6cd68111e1c2914657f853f92f9f1106d33b",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "lufs": -22.9,
+        "truePeakDbfs": -4.5
+      },
+      "native": {
+        "videoSha256": "f79e6f3873ba20bb4d35ffaa16a8eb51d945386d4059927463edc81fbfe0f4c5",
+        "effectcraftSha256": "9901bdc2ae4c97896b1aaf270bca9c066330ad5263020acc79401f52a31b11cc",
+        "filmcraftSha256": "ce70cbab46f333d997675a6ead14652f19b719e2635fcf94f2131195df17501f",
+        "masterSha256": "4def67a55f04e40555e6c30b9e2a974992c3b173a027c3817e17989af8fa89c4",
+        "mixSha256": "aa18de361bbfa7ea90a50b1bdc5125b39436eea1f5a70fc66e0df277ffbe322b",
+        "music": "OWNED_ORIGINAL_SCORE_NOT_POPULAR",
+        "state": "PROVISIONAL_PENDING_ACTUAL_POPULAR_SOUND_AND_NEW_MODEL_UI"
+      }
+    }
+  ],
+  "savedRemap": [
+    {
+      "outputFrame": 143,
+      "sourceFrame": 163,
+      "savedSeconds": 5.433333333333334
+    },
+    {
+      "outputFrame": 144,
+      "sourceFrame": 164,
+      "savedSeconds": 5.466666666666667
+    }
+  ],
+  "revealExpectedFrame": 144,
+  "voiceTiming": [
+    {
+      "at": 0.12,
+      "end": 2.36,
+      "text": "はめると、何が変わる？",
+      "file": "voice-1.wav",
+      "predictedDuration": 1.686971977044429,
+      "speedScale": 1.12,
+      "duration": 1.802667,
+      "actualEnd": 1.9226670000000001
+    },
+    {
+      "at": 5.1499999999999995,
+      "end": 6.9,
+      "text": "足場が、階段に。",
+      "file": "voice-2.wav",
+      "predictedDuration": 1.6717144984858374,
+      "speedScale": 1.12,
+      "duration": 1.664,
+      "actualEnd": 6.813999999999999
+    },
+    {
+      "at": 14.6,
+      "end": 17.8,
+      "text": "芯石ひとつで、道が変わる。",
+      "file": "voice-3.wav",
+      "predictedDuration": 2.0993879828176327,
+      "speedScale": 1.12,
+      "duration": 2.101333,
+      "actualEnd": 16.701332999999998
+    }
+  ],
+  "aacCorrelation": [
+    {
+      "variant": "core-puzzle-voice-no-music",
+      "window": [
+        0.12,
+        1.9726670000000002
+      ],
+      "correlation": 0.9998693302780021,
+      "lagSamples": 0,
+      "lagFrames": 0
+    },
+    {
+      "variant": "core-puzzle-voice-no-music",
+      "window": [
+        5.1499999999999995,
+        6.863999999999999
+      ],
+      "correlation": 0.9999502422698513,
+      "lagSamples": 0,
+      "lagFrames": 0
+    },
+    {
+      "variant": "core-puzzle-voice-no-music",
+      "window": [
+        14.6,
+        16.751333
+      ],
+      "correlation": 0.9999076694702144,
+      "lagSamples": 0,
+      "lagFrames": 0
+    },
+    {
+      "variant": "core-puzzle-voice-original-score",
+      "window": [
+        0.12,
+        1.9726670000000002
+      ],
+      "correlation": 0.9998808077269413,
+      "lagSamples": 0,
+      "lagFrames": 0
+    },
+    {
+      "variant": "core-puzzle-voice-original-score",
+      "window": [
+        5.1499999999999995,
+        6.863999999999999
+      ],
+      "correlation": 0.9999428523657398,
+      "lagSamples": 0,
+      "lagFrames": 0
+    },
+    {
+      "variant": "core-puzzle-voice-original-score",
+      "window": [
+        14.6,
+        16.751333
+      ],
+      "correlation": 0.9999469932587464,
+      "lagSamples": 0,
+      "lagFrames": 0
+    },
+    {
+      "variant": "core-puzzle-voice-original-score",
+      "window": [
+        4.75,
+        4.95
+      ],
+      "correlation": 0.9999896829310521,
+      "lagSamples": 0,
+      "lagFrames": 0
+    },
+    {
+      "variant": "core-puzzle-sfx-only",
+      "window": [
+        4.77,
+        5
+      ],
+      "correlation": 0.9999887310596487,
+      "lagSamples": 0,
+      "lagFrames": 0
+    }
+  ],
+  "cover": {
+    "file": "covers/core-puzzle-cover.png",
+    "sha256": "76c4b7fdb5e2e94c7a912fdd844c7e2d73fe51f5e870373d1b4791c19fa4185f",
+    "nativeSha256": "d7da9d7c8c793e9210ab5639e34282ad1d302386d6cebe3eaf322e5cb6c6d63e",
+    "textBounds": [
+      {
+        "name": "Game",
+        "bounds": [
+          102,
+          1601,
+          388,
+          36
+        ],
+        "text": "EMBERWAKE / 灰の灯"
+      },
+      {
+        "name": "After tag",
+        "bounds": [
+          189,
+          1187,
+          80,
+          19
+        ],
+        "text": "AFTER"
+      },
+      {
+        "name": "Before tag",
+        "bounds": [
+          191,
+          786,
+          94,
+          21
+        ],
+        "text": "BEFORE"
+      },
+      {
+        "name": "Hook two",
+        "bounds": [
+          69,
+          481,
+          393,
+          65
+        ],
+        "text": "何が変わる？"
+      },
+      {
+        "name": "Hook one",
+        "bounds": [
+          74,
+          380,
+          293,
+          61
+        ],
+        "text": "はめると、"
+      },
+      {
+        "name": "Author",
+        "bounds": [
+          71,
+          286,
+          236,
+          30
+        ],
+        "text": "PROJECT P / ぷい"
+      }
+    ]
+  },
+  "effectcraftSha256": "9901bdc2ae4c97896b1aaf270bca9c066330ad5263020acc79401f52a31b11cc",
+  "nativeSnapshotBinding": {
+    "schemaVersion": 1,
+    "scope": "Fresh native snapshots of current saved portrait EC; not final encoded video or real TikTok UI",
+    "projectSha256": "9901bdc2ae4c97896b1aaf270bca9c066330ad5263020acc79401f52a31b11cc",
+    "compositionSha256": "94f83c307d1434389ae6c9cdfb872d344fd422d9a934b75ea8c11aa5304ccbdd",
+    "captures": [
+      {
+        "frame": 0,
+        "seconds": 0,
+        "file": "qa/model-composite-frame-0.png",
+        "startedAt": "2026-10-25T11:50:43.926Z",
+        "finishedAt": "2026-10-25T11:50:44.285Z",
+        "sha256": "c461e82491973e7f48f22f93c557799c700be20aecabf488d05b8c55eb52be1a",
+        "bytes": 272328
+      },
+      {
+        "frame": 143,
+        "seconds": 4.766666666666667,
+        "file": "qa/model-composite-frame-143.png",
+        "startedAt": "2026-10-25T11:50:44.285Z",
+        "finishedAt": "2026-10-25T11:50:44.675Z",
+        "sha256": "2300401601cec3d31198008ea34179daca7529e3f0f170f1ba40f6981a82bf9a",
+        "bytes": 281177
+      },
+      {
+        "frame": 144,
+        "seconds": 4.8,
+        "file": "qa/model-composite-frame-144.png",
+        "startedAt": "2026-10-25T11:50:44.676Z",
+        "finishedAt": "2026-10-25T11:50:45.081Z",
+        "sha256": "bd22ecf46e3a41e77c195392aca8ae21d2282a9d5fe57ab77d76a8977bc46dce",
+        "bytes": 296590
+      },
+      {
+        "frame": 151,
+        "seconds": 5.033333333333333,
+        "file": "qa/model-composite-frame-151.png",
+        "startedAt": "2026-10-25T11:50:45.081Z",
+        "finishedAt": "2026-10-25T11:50:45.461Z",
+        "sha256": "804ae80cc621f5210ec96649428bc75d60461b63004b9d35ef6206d8a14e4d63",
+        "bytes": 298260
+      },
+      {
+        "frame": 480,
+        "seconds": 16,
+        "file": "qa/model-composite-frame-480.png",
+        "startedAt": "2026-10-25T11:50:45.462Z",
+        "finishedAt": "2026-10-25T11:50:45.880Z",
+        "sha256": "79910922acb0f73fc2474a0df65b8186780cb93c357d6cdfecb1cafbd887af02",
+        "bytes": 343291
+      },
+      {
+        "frame": 570,
+        "seconds": 19,
+        "file": "qa/model-composite-frame-570.png",
+        "startedAt": "2026-10-25T11:50:45.881Z",
+        "finishedAt": "2026-10-25T11:50:46.248Z",
+        "sha256": "52630157703ca2c9dbef23ea3b05d33a5b8b69285f312d7a73adc151ed946a8d",
+        "bytes": 315562
+      }
+    ],
+    "portraitComp": {
+      "width": 600,
+      "height": 450,
+      "avatarBottomY": 619,
+      "gameStartY": 650
+    },
+    "capturedAt": "2026-10-25T11:50:46.249Z"
+  },
+  "ownedScore": {
+    "variant": "OWNED_ORIGINAL_SCORE_NOT_POPULAR_SOUND",
+    "source": {
+      "sha256": "565295d97f5525f3f6cec6dd722c5fd8b87932b58b2e10d087a3980762665da9",
+      "sourceIssue": 88,
+      "authorship": "Existing deterministic additive-synthesis original score. No external samples, voices or game SFX; Issue89 extra-SFX mix is not used.",
+      "sampleRate": 48000
+    },
+    "sourceStartSample": 633640,
+    "sourceStartSeconds": 13.200833333333334,
+    "sourceEndSample": 1593640,
+    "samples": 960000,
+    "bpm": 120,
+    "actualPcmAnchor": {
+      "sourceSample": 864040,
+      "sourceSeconds": 18.000833333333333,
+      "scoreBarDownbeatSeconds": 18,
+      "method": "Maximum positive change of adjacent5ms lowpassed PCM RMS in18..18.08s; actual source sample is cropped to reveal frame.",
+      "rmsRise": 0.10376658407632905,
+      "outputSample": 230400,
+      "outputSeconds": 4.8,
+      "outputFrame": 144,
+      "renderedBedCorrelation": 0.9999999999997731,
+      "maximumQuantizationError": 8.055657219063761e-8,
+      "lagSamples": 0
+    },
+    "voice": [
+      {
+        "at": 0.12,
+        "end": 1.9226666666666667,
+        "text": "はめると、何が変わる？"
+      },
+      {
+        "at": 5.1499999999999995,
+        "end": 6.813999999999999,
+        "text": "足場が、階段に。"
+      },
+      {
+        "at": 14.6,
+        "end": 16.701333333333334,
+        "text": "芯石ひとつで、道が変わる。"
+      }
+    ],
+    "duck": {
+      "freeDb": -7.5,
+      "underVoiceAdditionalDb": -9,
+      "attackBeforeHeadSeconds": 0.12,
+      "holdAfterTailSeconds": 0.07,
+      "releaseSeconds": 0.28,
+      "scoreInSeconds": 0.08,
+      "scoreOutSeconds": 0.75
+    },
+    "voiceFxAddedExactlyOnce": true,
+    "voiceFxSha256": "843813d5d7af90c715f07b3871a419e594c86e5997655de5e5ccfac12b7bf510",
+    "duckedScoreSha256": "a34fadcdc1b0035953f5f970fa55719878bf44a0088178c80b1a9b660d7839bb",
+    "mixSha256": "aa18de361bbfa7ea90a50b1bdc5125b39436eea1f5a70fc66e0df277ffbe322b",
+    "samplePeakDbfs": -4.503272582322875,
+    "popularSongRequirementPassed": false,
+    "directWholeAudition": false
+  },
+  "constraints": {
+    "permittedPopularMusicSelected": false,
+    "ownedOriginalScoreVariant": true,
+    "bpmFixed": false,
+    "popularSyncVerified": false,
+    "actualTikTokUi": true,
+    "wholeDirectWatch": false,
+    "wholeDirectAudition": false,
+    "publishingAuthorizedNow": false,
+    "actualTikTokUiScope": "Bounded native upload-preview observations in qa/model-native-ui-binding.json"
+  },
+  "visualReview": "qa/visual-review.json",
+  "nativeTikTokBinding": "qa/model-native-ui-binding.json",
+  "musicCandidateEvidence": "qa/music-candidate-recheck.json"
+}

@@ -1,0 +1,44 @@
+{
+  "version": "PROVISIONAL_NO_MUSIC_03_LIVE2D",
+  "duration": 20,
+  "fps": 30,
+  "revealAt": 4.8,
+  "sourceFirstFrame": 92,
+  "sourceRevealFrame": 164,
+  "sourceEndFrameExclusive": 452,
+  "comparisonDuration": 3.6,
+  "endDuration": 2,
+  "sourceCrop": {
+    "x": 460,
+    "y": 300,
+    "width": 1080,
+    "height": 600
+  },
+  "music": {
+    "state": "pending_actual_permitted_popular_sound",
+    "bpm": null,
+    "soundId": null,
+    "sourceStartSeconds": null,
+    "sourceEndSeconds": null,
+    "confirmedInTikTok": false
+  },
+  "publication": {
+    "dateJst": "2026-10-26",
+    "authorizedNow": false,
+    "rootOwnsPublisher": true
+  },
+  "facts": {
+    "gameVersion": "0.11.0",
+    "mode": "EXPLORE",
+    "sourceCommit": "6233f5d33b24a35e91800357b7bcf8861049cf2a",
+    "actualRtaOrPb": false,
+    "freezeAndComparisonAreEdits": true
+  },
+  "model": {
+    "name": "Revenant_Natural",
+    "mocSha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e",
+    "method": "Actual local official Core geometry / offline software rasterization, voice-driven mouth, authored subtle poses",
+    "cameraTracking": false,
+    "physicsSimulated": false
+  }
+}

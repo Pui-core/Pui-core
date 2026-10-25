@@ -1,0 +1,144 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1080,
+        1920
+      ],
+      "fill": "#08151e",
+      "name": "Cover background"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\before-same-camera.png",
+      "scale": 64,
+      "fit": false,
+      "center": [
+        540,
+        1010
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\after-same-camera.png",
+      "scale": 64,
+      "fit": false,
+      "center": [
+        540,
+        1410
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\revenant-cover-portrait.png",
+      "scale": 100,
+      "fit": false,
+      "center": [
+        780,
+        505
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 70,
+      "y": 310,
+      "text": "PROJECT P / ぷい",
+      "font": "Meiryo",
+      "size": 28,
+      "color": "#aacac3",
+      "name": "Author"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 70,
+      "y": 435,
+      "text": "はめると、",
+      "font": "Meiryo",
+      "size": 68,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Hook one"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 70,
+      "y": 540,
+      "text": "何が変わる？",
+      "font": "Meiryo",
+      "size": 68,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "Hook two"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 190,
+      "y": 805,
+      "text": "BEFORE",
+      "font": "Meiryo",
+      "size": 24,
+      "color": "#aacac3",
+      "name": "Before tag"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 190,
+      "y": 1205,
+      "text": "AFTER",
+      "font": "Meiryo",
+      "size": 24,
+      "color": "#edb468",
+      "name": "After tag"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        1580,
+        1080,
+        340
+      ],
+      "fill": "#08151e",
+      "name": "Quiet footer"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 100,
+      "y": 1630,
+      "text": "EMBERWAKE / 灰の灯",
+      "font": "Meiryo",
+      "size": 35,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Game"
+    }
+  ]
+]

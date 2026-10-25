@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\projects\\core-puzzle.ecproj",
+    "render-frame",
+    "--comp",
+    "ProjectP Core Puzzle",
+    "--time",
+    "19",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\qa\\model-composite-frame-570.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":147,\"height\":1920,\"ms\":196.6,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-97\\\\promotion\\\\projectp-20261026-core-puzzle\\\\qa\\\\model-composite-frame-570.png\",\"time\":19.0,\"width\":1080}\n",
+  "stderr": ""
+}

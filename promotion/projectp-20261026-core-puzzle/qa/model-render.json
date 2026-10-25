@@ -1,0 +1,47 @@
+{
+  "state": "ACTUAL_NATIVE_CORE_SEQUENCE_PENDING_COMPOSITION_VISUAL_QA",
+  "model": "Revenant_Natural / 2026-10-18",
+  "mocSha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e",
+  "model3Sha256": "26f678bc97701a1e0958f3a82569e0efa36e260c1a8551222deb873bfb254c39",
+  "physicsSha256": "ff0d64db7f5a7d79a35a8b4196f43cd5db619e14a97a15228bfdd0e12ba1f6ab",
+  "atlas": [
+    {
+      "file": "Revenant_Natural.8192/texture_00.png",
+      "sha256": "30efeaa8148d55ca0042cfd3d741f499d479f9034bf7985d248360e66e559f73"
+    },
+    {
+      "file": "Revenant_Natural.8192/texture_01.png",
+      "sha256": "c09bd43ef3d9f02acc8ccdc12d46ba72a750de21aa07a7627fc6a8f04321e26a"
+    }
+  ],
+  "coreJarSha256": "5458a64ebe33b38350de1437399343b0d502f2353a34a97da76d56d118c0d186",
+  "coreNativeSha256": "71d5757025cd31c61be0d52ad79d4cd0de0465e1df6c4508c4fde70207613985",
+  "coreVersion": "06.00.0513 (100663809)",
+  "frames": 600,
+  "width": 600,
+  "height": 780,
+  "fps": 30,
+  "sourceCrop": {
+    "x": 772,
+    "y": -100,
+    "width": 2800,
+    "height": 3640
+  },
+  "rendererSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+  "voiceOnlyEnvelope": true,
+  "silenceThreshold": 0.006,
+  "silentFrames": 485,
+  "physicsSimulated": false,
+  "cameraUsed": false,
+  "vtubeStudioUsed": false,
+  "sdkBundled": false,
+  "rawModelBundled": false,
+  "limits": [
+    "Software triangle sampling/masks approximate native GPU rendering. Actual model was audited: normal blend, neutral RGB multiply/screen, no inverted masks.",
+    "Controlled head/eyes/mouth/breath animation; VTS physics and tracking are not replayed."
+  ],
+  "renderedMasterSha256": "136ef542c00513be0474ae170117a430ed6fdac600986e80bc2a3490f2024493",
+  "renderedMasterBytes": 477573200,
+  "envelopeCenterWithinFrame": 0.5,
+  "maxEnvelopeQuantizationFrames": 0.5
+}

@@ -1,0 +1,321 @@
+{
+  "checkedAtUTC": "2026-10-25T18:37:15.192Z",
+  "status": "BOUNDED_PASS_NO_MANDATORY_FINDINGS",
+  "mandatoryFindings": [],
+  "video": {
+    "file": "videos/core-puzzle-voice-licensed-classic.mp4",
+    "sha256": "f881434794d1adf1211d680cda1e4c40a3fd283c8a0eeb60a36379c807ab562c"
+  },
+  "caption": {
+    "file": "source/caption-licensed.txt",
+    "sha256": "f3bcb0eea3c5387fedff51c9c6821fdb670207327a9d03a76c707026afcb532f",
+    "trimChars": 348,
+    "observed": "Correct title/artist/source track link/CC BY4 license link/edit notice/separate VOICEVOX synthetic credit present"
+  },
+  "cover": {
+    "file": "covers/core-puzzle-cover.png",
+    "sha256": "76c4b7fdb5e2e94c7a912fdd844c7e2d73fe51f5e870373d1b4791c19fa4185f",
+    "reViewed": false
+  },
+  "audio": {
+    "sha256": "07726b9217eb888f05274a73701457e9408c73273aa4cbb08cd41a660ad57a0e",
+    "sourceExcerptBindingMaxError": 1.1920928955078125e-7,
+    "voiceConstructionMaxError": 1.1324882508156886e-7,
+    "mixConstructionMaxError": 1.1920928955078125e-7,
+    "windows": [
+      {
+        "kind": "Voice 1",
+        "begin": 0.1725625,
+        "end": 1.8418333333333332,
+        "searchSamples": 2048,
+        "lagSamples": 0,
+        "correlation": 0.9998912157968508,
+        "gainDb": -0.008982796631772387
+      },
+      {
+        "kind": "Voice 2",
+        "begin": 5.184083333333334,
+        "end": 6.729604166666667,
+        "searchSamples": 2048,
+        "lagSamples": 0,
+        "correlation": 0.9999211468911647,
+        "gainDb": -0.008368377621713398
+      },
+      {
+        "kind": "Voice 3",
+        "begin": 14.643229166666666,
+        "end": 16.631229166666667,
+        "searchSamples": 2048,
+        "lagSamples": 0,
+        "correlation": 0.9999252586484206,
+        "gainDb": -0.007452234491690258
+      },
+      {
+        "kind": "Reveal attack complex",
+        "begin": 4.75,
+        "end": 4.95,
+        "searchSamples": 2048,
+        "lagSamples": 0,
+        "correlation": 0.9998746921454282,
+        "gainDb": -0.014436986205774972
+      }
+    ],
+    "headTailWindows": [
+      {
+        "kind": "voice1 head",
+        "begin": 0.1725625,
+        "end": 0.27256250000000004,
+        "searchSamples": 2048,
+        "lagSamples": 0,
+        "correlation": 0.9999583931759376,
+        "gainDb": -0.011240881878973251
+      },
+      {
+        "kind": "voice1 tail",
+        "begin": 1.7418333333333331,
+        "end": 1.8418333333333332,
+        "searchSamples": 2048,
+        "lagSamples": 0,
+        "correlation": 0.9999863192703058,
+        "gainDb": -0.007010318406571715
+      },
+      {
+        "kind": "voice2 head",
+        "begin": 5.184083333333334,
+        "end": 5.284083333333333,
+        "searchSamples": 2048,
+        "lagSamples": 0,
+        "correlation": 0.9997547551906495,
+        "gainDb": -0.015691296714677543
+      },
+      {
+        "kind": "voice2 tail",
+        "begin": 6.629604166666668,
+        "end": 6.729604166666667,
+        "searchSamples": 2048,
+        "lagSamples": 0,
+        "correlation": 0.999988259742535,
+        "gainDb": -0.0179430303789922
+      },
+      {
+        "kind": "voice3 head",
+        "begin": 14.643229166666666,
+        "end": 14.743229166666666,
+        "searchSamples": 2048,
+        "lagSamples": 0,
+        "correlation": 0.9999725745527406,
+        "gainDb": -0.004330827511907474
+      },
+      {
+        "kind": "voice3 tail",
+        "begin": 16.531229166666666,
+        "end": 16.631229166666667,
+        "searchSamples": 2048,
+        "lagSamples": 0,
+        "correlation": 0.999626451950014,
+        "gainDb": -0.016658658308689022
+      }
+    ],
+    "rawToAacMusic": {
+      "begin": 4.75,
+      "end": 4.95,
+      "searchSamples": 2048,
+      "lagSamples": 0,
+      "correlation": 0.9998655181732989,
+      "gainDb": -0.012108031256505091
+    },
+    "measuredRmsRiseSeconds": {
+      "raw": 5.056,
+      "bed": 4.8,
+      "aacMusicResidual": 4.8
+    },
+    "componentRegression": {
+      "voiceFxGain": 0.9990160465994328,
+      "musicGain": 0.9993175732331332,
+      "residualRms": 0.0008109508508196732,
+      "residualToFinalDb": -38.52218353714028
+    },
+    "voiceBounds": [
+      {
+        "voice": 1,
+        "placement": 0.12,
+        "duration": 1.8026666666666666,
+        "firstAboveMinus60": 0.1725625,
+        "lastAboveMinus60": 1.8418333333333332
+      },
+      {
+        "voice": 2,
+        "placement": 5.15,
+        "duration": 1.664,
+        "firstAboveMinus60": 5.184083333333334,
+        "lastAboveMinus60": 6.729604166666667
+      },
+      {
+        "voice": 3,
+        "placement": 14.6,
+        "duration": 2.1013333333333333,
+        "firstAboveMinus60": 14.643229166666666,
+        "lastAboveMinus60": 16.631229166666667
+      }
+    ]
+  },
+  "picture": {
+    "viewedFinalFrameCount": 13,
+    "viewedFinalFrames": [
+      0,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      240,
+      420,
+      480,
+      599
+    ],
+    "resolutionViewed": [
+      384,
+      682
+    ],
+    "method": "Independent FFmpeg extraction from F04 final MP4; 384px proxy omits TikTok interface overlays",
+    "observations": [
+      "New music title and Kevin MacLeod / CC BY4 secondary credit readable, separate from main headline, model and game",
+      "Frames140–143 retain carried core/horizontal platform; frame144 core leaves hands and platform rises, maintained in145–147",
+      "Comparison480 labels and full before/after panels visible",
+      "Closing599 CTA, music credit and game title visible"
+    ],
+    "frameChecks": [
+      {
+        "frame": 0,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "67aad2573092ab04c7f2e7049fb4ba934d834aff5b9cd58a57851eede4ba2c80"
+      },
+      {
+        "frame": 140,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "36c068145e460901b0030d82dfa4ebfd1b05ddfdb5e293ee23f4abb774f488a7"
+      },
+      {
+        "frame": 141,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "8bb780812222c376e057afccdb755ba5914e0570cd452215d53e6d601ea57109"
+      },
+      {
+        "frame": 142,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "162bf34de2621903822b5861d9ecd3b3a8107b8244c2eece1fe75c513be0ed36"
+      },
+      {
+        "frame": 143,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "f1c3623480eccce5ccafa7b2dffef65fdd9c6e0b17a42562ea3a060496aa2958"
+      },
+      {
+        "frame": 144,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "facbc9e9500113d3316faf41032ac6d1b5e36970441194fad7b8373615d0dfe2"
+      },
+      {
+        "frame": 145,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "e95765f368e6420b07a9f31ba1d16191a57782972b7fe0930d66676f71f399ef"
+      },
+      {
+        "frame": 146,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "a7548a913ba3b7e4c1060c0051015085204befda81d03746bc55eb133351e35e"
+      },
+      {
+        "frame": 147,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "6c826173fe0d9714e9dd95fbba5538c5495128f75ca61f0fe31e2f02379b8646"
+      },
+      {
+        "frame": 240,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "d3176a3e69208da57ec9aae78bc06bbc470eaf31e183d51c6c8ca87a1936d11f"
+      },
+      {
+        "frame": 420,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "acef68144e61419b10a26a7f95bbf08188dc993c56de9c99b927b516da670249"
+      },
+      {
+        "frame": 480,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "07e0c46daa966ba0e9c630fa89b9a6a3a4a90fde9aa126249764c4816e7e9f6b"
+      },
+      {
+        "frame": 599,
+        "producerPngShaMatch": true,
+        "independent384Sha256": "78d598ec941380ed371dddfca625a7f319ccfd745c939412d06165df0d91dd3c"
+      }
+    ],
+    "sourceOriginalsAlsoViewed": [
+      163,
+      164
+    ],
+    "savedRemapReceiptsRead": [
+      {
+        "outputFrame": 143,
+        "recordedGetExit": 0,
+        "recordedSourceFrame": 163,
+        "receiptSHA256": "2066fcedc784d080cac34f48e98e8e79dfa8ca7cedc78f9b4860a7c6719cd80a"
+      },
+      {
+        "outputFrame": 144,
+        "recordedGetExit": 0,
+        "recordedSourceFrame": 164,
+        "receiptSHA256": "5b485eea9e9f8afda9e6440fef064ac16c8207397bf242342e9f8fc616c32186"
+      }
+    ]
+  },
+  "coreReuse": {
+    "baselineManifestSHA256": "621e019d761234673714503a8e7890f0aa45f664d27ebe5f722610d0c2c0cace",
+    "frames": 600,
+    "mismatches": 0,
+    "retained": [
+      {
+        "file": "media/editorial-sfx.wav",
+        "same": true,
+        "sha256": "b02714e93a1c82995772d65c53569943f4122f137256384e23663fbc842a97ca"
+      },
+      {
+        "file": "media/revenant-natural.mov",
+        "same": true,
+        "sha256": "136ef542c00513be0474ae170117a430ed6fdac600986e80bc2a3490f2024493"
+      },
+      {
+        "file": "media/voice-1.wav",
+        "same": true,
+        "sha256": "2b3ca20a7e268d5392ecbbbba1dfa27dc345916bb0ffa486f2e8cab7510b5660"
+      },
+      {
+        "file": "media/voice-2.wav",
+        "same": true,
+        "sha256": "eb90046ab6565e28c6c5cd6efd962e1a54f292d693ff91121e962b06a9ac9484"
+      },
+      {
+        "file": "media/voice-3.wav",
+        "same": true,
+        "sha256": "856ebcd9f114bee71d321b67b921e136a25cd2c1c40b1b31aba7ddefa23e7835"
+      },
+      {
+        "file": "media/voice-sfx-no-music.wav",
+        "same": true,
+        "sha256": "843813d5d7af90c715f07b3871a419e594c86e5997655de5e5ccfac12b7bf510"
+      }
+    ]
+  },
+  "limitations": [
+    "No direct subjective audition or continuous full-timeline watch",
+    "No perceptual downbeat/bar/phrase claim; numerical measured-onset correspondence only",
+    "No native TikTok interface/copyright-check/publication verification in this audit",
+    "No claim of current Japan popularity or completion of follower goal"
+  ],
+  "mutations": "Readonly independent production/F audit; raw PCM, original MP3 and private temp workspace not imported",
+  "sourceSummarySha256": "88d01dff191f947f2c29a93f7dae780af8ee3e71490a6922daf9ccb8f171683d"
+}

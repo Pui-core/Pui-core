@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-03-live2d\\projects\\core-puzzle.ecproj",
+    "--save",
+    "run",
+    "footage.check",
+    "{\"wait\":true}",
+    "footage.missing",
+    "{}",
+    "--json"
+  ],
+  "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":3,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-03-live2d\\\\projects\\\\core-puzzle.ecproj\"}\n",
+  "stderr": ""
+}

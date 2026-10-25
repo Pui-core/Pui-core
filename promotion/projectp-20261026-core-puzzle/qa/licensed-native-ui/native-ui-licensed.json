@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_BOUNDED_NATIVE_UI_PUBLICATION_UNCONFIRMED",
+  "checkedAt": "2026-10-25T18:46:35.730Z",
+  "issue": 97,
+  "parentIssue": 93,
+  "accountId": "prop_pui",
+  "source": {
+    "sourceDir": "promotion/projectp-20261026-core-puzzle/",
+    "productionPr": "https://github.com/Pui-core/Pui-core/pull/19",
+    "sourceHeadAtNativeQA": "0251518163d709c5130a528f63e5a9230593f7ec",
+    "delivery": "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-04-licensed-classic",
+    "bindings": [
+      {
+        "file": "videos/core-puzzle-voice-licensed-classic.mp4",
+        "sha256": "f881434794d1adf1211d680cda1e4c40a3fd283c8a0eeb60a36379c807ab562c"
+      },
+      {
+        "file": "covers/core-puzzle-cover.png",
+        "sha256": "76c4b7fdb5e2e94c7a912fdd844c7e2d73fe51f5e870373d1b4791c19fa4185f"
+      },
+      {
+        "file": "source/caption-licensed.txt",
+        "sha256": "f3bcb0eea3c5387fedff51c9c6821fdb670207327a9d03a76c707026afcb532f"
+      }
+    ]
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 600,
+    "durationSeconds": 20
+  },
+  "model": "Owner-specified Revenant_Natural; actual Cubism Core 600-frame animation, mouth only on VOICEVOX; source manifest binds unchanged model media",
+  "music": {
+    "title": "Monkeys Spinning Monkeys",
+    "artist": "Kevin MacLeod",
+    "isrc": "USUAN1400011",
+    "license": "CC BY4.0",
+    "officialOriginalSha256": "a5bb345c23849ad0786aa0bc5157a9f2d4039660fe00282e55754d475f36dc14",
+    "platformSoundId": null,
+    "popularityScope": "Dated official TikTok 2021 staple evidence; no current Japan trend/rank claim",
+    "numericSync": "Official source attack5.056s minus trim0.256s = output4.800s; independently matched final AAC music residual lag0",
+    "outsideCml": true,
+    "musicUsageConfirmation": "Not observed in non-submit staging. If presented at actual single-publisher submission, confirm necessary license based on exact original and caption attribution; do not infer this QA completed the confirmation."
+  },
+  "native": {
+    "uploadCompleted": "5.42MB /1080P",
+    "captionCharacters": 348,
+    "captionMethod": "Exact trimmed frozen caption actual keyboard paste; native counter348 and visible attribution/CC license/changes notice inspected",
+    "customCover": "Exact frozen cover selected and saved once in staging; canvas and mock profile preview inspected",
+    "coverProofScope": "Editor profile preview placeholders are not actual follower evidence",
+    "privacy": "Anyone",
+    "ownBrandDisclosure": true,
+    "thirdPartyBrandedContent": false,
+    "aigcLabel": true,
+    "aigcReason": "VOICEVOX synthetic narration",
+    "copyrightCheck": "問題は見つかりませんでした。",
+    "contentCheck": "違反は見つかりませんでした。",
+    "finalConfiguredPlayback": "Actual20/20 reached; eight bounded final phone samples inspected",
+    "observed": [
+      "Opening and core carry",
+      "Footbridge change and stairs after insertion",
+      "Lamp arrival",
+      "Same-place before/after comparison",
+      "Creator follow CTA and owner model",
+      "Small track/artist/CC credit legible without model/header interference"
+    ],
+    "sampleTiming": "Nominal wall-clock samples are not exact media frames or subjective audio/continuous full visual watch; separate encoded numeric QA supplies AV sync evidence"
+  },
+  "proof": [
+    {
+      "file": "proofs/native97v4-opening.png",
+      "sha256": "ef7649dcb9018a606109ec98a15caa33d2e3d49e4dd93c5684420a0a25e8f82b",
+      "nominalSeconds": 0.7,
+      "elapsedCaptureSeconds": 0.7550882999999999,
+      "visuallyInspected": true
+    },
+    {
+      "file": "proofs/native97v4-carry.png",
+      "sha256": "bae6b8954aface6de673c0f593ea7d48eeae48e7f7b640cb1a9f22b2f8c1d21a",
+      "nominalSeconds": 3.1,
+      "elapsedCaptureSeconds": 3.1313994999999997,
+      "visuallyInspected": true
+    },
+    {
+      "file": "proofs/native97v4-insert.png",
+      "sha256": "cd827534f87893b51b13c2b161d513387d2ab7576065cba4f603ee4005b7ac05",
+      "nominalSeconds": 5.3,
+      "elapsedCaptureSeconds": 5.3398034,
+      "visuallyInspected": true
+    },
+    {
+      "file": "proofs/native97v4-stairs.png",
+      "sha256": "a28e6c30cc6b06e1daea9781c527559234c7e78490d8ec9e2d0b180790df7b83",
+      "nominalSeconds": 8.4,
+      "elapsedCaptureSeconds": 8.4386338,
+      "visuallyInspected": true
+    },
+    {
+      "file": "proofs/native97v4-lamp.png",
+      "sha256": "a725908ae92117f68942a18618e8eff4822b9704738603dc7d3598cf05a21027",
+      "nominalSeconds": 13.5,
+      "elapsedCaptureSeconds": 13.534576699999999,
+      "visuallyInspected": true
+    },
+    {
+      "file": "proofs/native97v4-comparison.png",
+      "sha256": "b8e2b54137f9db46084c52d4cd5aa65ef7ce4076dbdbf11facad2ad4eb39ae36",
+      "nominalSeconds": 16.7,
+      "elapsedCaptureSeconds": 16.7351062,
+      "visuallyInspected": true
+    },
+    {
+      "file": "proofs/native97v4-closing.png",
+      "sha256": "a404e22c34999635e42e7b71ab8a1164450444dc6c1e6871dea0a3e6eb434ae4",
+      "nominalSeconds": 19.2,
+      "elapsedCaptureSeconds": 19.224249699999998,
+      "visuallyInspected": true
+    },
+    {
+      "file": "proofs/native97v4-end.png",
+      "sha256": "ab56ebd52ae40dcdddd57a0ccb522ec9fead265aa76b9a3ac2c53a2c49c6e661",
+      "nominalSeconds": 20.8,
+      "elapsedCaptureSeconds": 20.8143676,
+      "visuallyInspected": true
+    },
+    {
+      "file": "proofs/native97v4-cover-canvas.png",
+      "sha256": "d91f749fbf25a5cd391992b271879f82565423d2b688917b2a092d5dc0c54880",
+      "visuallyInspected": true
+    },
+    {
+      "file": "proofs/native97v4-cover-profile.png",
+      "sha256": "dba6655843e0a76504cc3da0c2cce29d02cf1f3008452e81c283c0dbcf3859a2",
+      "visuallyInspected": true
+    },
+    {
+      "file": "proofs/native97v4-settings-checks.png",
+      "sha256": "2851a1b4d0da89789104130873b0b21a6714b4e59a696cbf0c77e24d5b18098a",
+      "visuallyInspected": true
+    },
+    {
+      "file": "proofs/native97v4-caption-credit.png",
+      "sha256": "1d0d2c00b88b183d752f424103d22e7043e10791fab5fabff736685de1e8389a",
+      "visuallyInspected": true
+    }
+  ],
+  "cleanup": {
+    "stagingDiscarded": true,
+    "savedDraft": false,
+    "coverSaveIsStagingOnly": true,
+    "publishIntents": 0,
+    "scheduleIntents": 0,
+    "profileSaveIntents": 0,
+    "returnedToStudioHome": true,
+    "accountLinkObserved": "prop_pui",
+    "candidateVideoId": null,
+    "publicConfirmed": false
+  },
+  "limitations": {
+    "directSubjectiveAudition": false,
+    "continuousVisualPlaybackClaim": false,
+    "currentTrendClaim": false,
+    "publication": "No submission or scheduling; actual publisher must recheck account, exact media/caption/disclosures/checks and get a real public receipt",
+    "editorialAdoption": "28 October or later; reassess actual activity and mature previous-post metrics, within existing owner GO; no new owner approval gate"
+  },
+  "desktop": {
+    "startedAt": "2026-10-25T18:33:03.433Z",
+    "endedAt": "2026-10-25T18:46:35.730Z",
+    "expiryOverrun": false,
+    "guardObservation": "One screenshot foreground guard stopped safely; read-only check showed PowerShell foreground, no mouse in that rejected operation. Later deliberate authorized Firefox focus and checks completed; guard not bypassed."
+  },
+  "provenance": {
+    "sourceExportSha256": "772b5078823fdc86cc7a339559f0996d2e1f28387b55f40a4af06886558a7b10",
+    "originalPrivatePacketSha256": "192b4a452c89f70f6030be5f5862a8b05ad5a2df23fd279ebcd4a1370a92589c",
+    "changes": "Source curation removes internal desktop owner/runId only; proof images unchanged. No private packet/console imported."
+  }
+}

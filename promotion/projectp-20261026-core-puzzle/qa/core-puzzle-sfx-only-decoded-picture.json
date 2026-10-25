@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "exe": "ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-threads",
+    "1",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\videos\\core-puzzle-sfx-only.mp4",
+    "-map",
+    "0:v:0",
+    "-f",
+    "hash",
+    "-hash",
+    "sha256",
+    "-"
+  ],
+  "stdout": "SHA256=5c4e95d0ea47fb4720bdd63d582e6cd68111e1c2914657f853f92f9f1106d33b\n",
+  "stderr": ""
+}

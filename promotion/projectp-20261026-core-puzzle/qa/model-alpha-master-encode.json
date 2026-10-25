@@ -1,0 +1,27 @@
+{
+  "exit": 0,
+  "exe": "ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-y",
+    "-framerate",
+    "30",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\revenant-natural\\frame-%06d.png",
+    "-c:v",
+    "prores_ks",
+    "-threads",
+    "2",
+    "-profile:v",
+    "4",
+    "-pix_fmt",
+    "yuva444p10le",
+    "-alpha_bits",
+    "16",
+    "-an",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\revenant-natural.mov"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

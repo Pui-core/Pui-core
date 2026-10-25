@@ -1,0 +1,68 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1080,
+        1200
+      ],
+      "fill": "#08151e",
+      "name": "Comparison background"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\before-same-camera.png",
+      "scale": 82,
+      "fit": false,
+      "center": [
+        540,
+        350
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\after-same-camera.png",
+      "scale": 82,
+      "fit": false,
+      "center": [
+        540,
+        920
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 100,
+      "y": 70,
+      "text": "はめる前",
+      "font": "Meiryo",
+      "size": 34,
+      "weight": 700,
+      "color": "#aacac3",
+      "name": "Before label"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 100,
+      "y": 640,
+      "text": "はめた後",
+      "font": "Meiryo",
+      "size": 34,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "After label"
+    }
+  ]
+]

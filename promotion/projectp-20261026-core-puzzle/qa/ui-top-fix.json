@@ -1,0 +1,21 @@
+{
+  "finding": "PP97-UI-TOP",
+  "severity": "P2",
+  "reportedBy": "CTO root",
+  "beforeHead": "a86bcde5d0adf2577f8c403409fab17374d52afd",
+  "beforeVideoSha256": "66f3fcfb85d4ca79b17595fdde64dd6a56499c28c5d037d02cd4a3c8c36c76d5",
+  "evidence": {
+    "file": "qa/ui-v1-top-overlap.png",
+    "sha256": "475185e6a1500fe600162d77863b0ac6dbcad62cb14ad0e5ad459bd2986c2636",
+    "scope": "Actual TikTok Studio phone preview crop only; other UI omitted."
+  },
+  "change": "Omit the two small top video labels, retain information in caption/cover; move main titles45px down. Current first-title upper bound251.18px.",
+  "state": "RESOLVED_WITHIN_BOUNDED_NATIVE_OPENING_CHECK",
+  "newVideoSha256": "740474db6bd334d1a8eb0b2668a3692e58217a25891de09eaf8acb97a892a57c",
+  "actualNewTikTokUi": true,
+  "publication": false,
+  "actualNewFullTimelineUi": false,
+  "actualEvidence": "qa/native-ui-binding.json",
+  "checkedAt": "2026-10-25T11:02:02.365Z",
+  "serverDraft": false
+}

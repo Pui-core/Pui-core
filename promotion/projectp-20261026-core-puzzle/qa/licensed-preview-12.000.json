@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\projects\\core-puzzle-licensed-classic.ecproj",
+    "render-frame",
+    "--comp",
+    "ProjectP Core Puzzle Licensed",
+    "--time",
+    "12",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\qa\\licensed-preview-12.000.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":147,\"height\":1920,\"ms\":126.3,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-97\\\\promotion\\\\projectp-20261026-core-puzzle\\\\qa\\\\licensed-preview-12.000.png\",\"time\":12.0,\"width\":1080}\n",
+  "stderr": ""
+}

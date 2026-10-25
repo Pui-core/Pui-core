@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "photocraft-cli.exe",
+  "args": [
+    "run",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\covers\\core-puzzle-cover.png",
+    "--cmd",
+    "image.crop",
+    "--params",
+    "{\"x\":0,\"y\":240,\"width\":1080,\"height\":1440,\"deleteCroppedPixels\":true}",
+    "--out",
+    "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-97-photocraft\\cover-center-3x4.png",
+    "--format",
+    "png"
+  ],
+  "stdout": "{\"command\":\"image.crop\",\"result\":{\"documentHeight\":1440,\"documentWidth\":1080,\"height\":1440,\"resolution\":72.0,\"width\":1080,\"x\":0,\"y\":240}}\n",
+  "stderr": ""
+}

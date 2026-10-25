@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-xerror",
+    "-threads",
+    "1",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\videos\\core-puzzle-voice-original-score.mp4",
+    "-f",
+    "null",
+    "-"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

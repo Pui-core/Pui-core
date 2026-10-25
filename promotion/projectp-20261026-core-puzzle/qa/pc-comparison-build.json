@@ -1,0 +1,33 @@
+{
+  "exit": 0,
+  "exe": "photocraft-cli.exe",
+  "args": [
+    "run",
+    "--new",
+    "{\"width\":1080,\"height\":1200,\"name\":\"ProjectP core puzzle\",\"background\":\"#08151e\",\"resolution\":72}",
+    "--cmd",
+    "shape.create",
+    "--params",
+    "{\"kind\":\"rect\",\"rect\":[0,0,1080,1200],\"fill\":\"#08151e\",\"name\":\"Comparison background\"}",
+    "--cmd",
+    "file.placeEmbedded",
+    "--params",
+    "{\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-97\\\\promotion\\\\projectp-20261026-core-puzzle\\\\media\\\\before-same-camera.png\",\"scale\":82,\"fit\":false,\"center\":[540,350],\"smartObject\":true}",
+    "--cmd",
+    "file.placeEmbedded",
+    "--params",
+    "{\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-97\\\\promotion\\\\projectp-20261026-core-puzzle\\\\media\\\\after-same-camera.png\",\"scale\":82,\"fit\":false,\"center\":[540,920],\"smartObject\":true}",
+    "--cmd",
+    "type.create",
+    "--params",
+    "{\"x\":100,\"y\":70,\"text\":\"はめる前\",\"font\":\"Meiryo\",\"size\":34,\"weight\":700,\"color\":\"#aacac3\",\"name\":\"Before label\"}",
+    "--cmd",
+    "type.create",
+    "--params",
+    "{\"x\":100,\"y\":640,\"text\":\"はめた後\",\"font\":\"Meiryo\",\"size\":34,\"weight\":700,\"color\":\"#edb468\",\"name\":\"After label\"}",
+    "--out",
+    "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-97-photocraft\\comparison.pcraft"
+  ],
+  "stdout": "{\"command\":\"shape.create\",\"result\":{\"bounds\":[0,0,1080,1200],\"fill\":\"#08151e\",\"kind\":\"rect\",\"layer\":3,\"live\":{\"kind\":\"rect\",\"radii\":[0.0,0.0,0.0,0.0],\"rect\":[0.0,0.0,1080.0,1200.0]},\"name\":\"Comparison background\",\"path\":{\"fillRule\":\"nonzero\",\"inverted\":false,\"subpaths\":[{\"closed\":true,\"knots\":[{\"anchor\":[0.0,0.0],\"in\":[0.0,0.0],\"out\":[0.0,0.0],\"smooth\":false},{\"anchor\":[1080.0,0.0],\"in\":[1080.0,0.0],\"out\":[1080.0,0.0],\"smooth\":false},{\"anchor\":[1080.0,1200.0],\"in\":[1080.0,1200.0],\"out\":[1080.0,1200.0],\"smooth\":false},{\"anchor\":[0.0,1200.0],\"in\":[0.0,1200.0],\"out\":[0.0,1200.0],\"smooth\":false}],\"op\":\"combine\"}]},\"stroke\":null}}\n{\"command\":\"file.placeEmbedded\",\"result\":{\"bounds\":[97.0,104.0,982.5999999999999,596.0],\"layer\":7,\"scale\":82.0,\"smartObject\":true}}\n{\"command\":\"file.placeEmbedded\",\"result\":{\"bounds\":[97.0,674.0,982.5999999999999,1166.0],\"layer\":11,\"scale\":82.0,\"smartObject\":true}}\n{\"command\":\"type.create\",\"result\":{\"bounds\":[101,41,236,73],\"layer\":12}}\n{\"command\":\"type.create\",\"result\":{\"bounds\":[101,611,237,644],\"layer\":13}}\n",
+  "stderr": ""
+}

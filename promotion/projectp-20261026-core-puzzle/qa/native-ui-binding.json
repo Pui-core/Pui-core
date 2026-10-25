@@ -1,0 +1,42 @@
+{
+  "issue": 97,
+  "checkedAt": "2026-10-25T11:02:02.365Z",
+  "reportedBy": "root-music97-session1",
+  "videoSha256": "740474db6bd334d1a8eb0b2668a3692e58217a25891de09eaf8acb97a892a57c",
+  "coverSha256": "beec9594c6120c0e8b1c0cc2b5f3fb5e32d99054100708fceaa09c7b09add5d5",
+  "evidence": [
+    {
+      "file": "qa/pp97-native-ui.json",
+      "sha256": "818baefc92ef03ca9a03cf5b3fa7c5ea5cf5d1eab577a0cb7e82e79d1b395c02"
+    },
+    {
+      "file": "qa/pp97-feed-revision02-phone.png",
+      "sha256": "50f2acb536bea6970aa926946e1a4d83cd62b84951ce2330c949b9d4f355e043"
+    },
+    {
+      "file": "qa/pp97-cover-native.png",
+      "sha256": "c2416964842057a7b2800bfa2fb6e402b8df00eabc317fd99bdb832f8c68cc94"
+    }
+  ],
+  "observedByCoder": [
+    "実phoneで冒頭見出しがFollowing/ForYouナビの下にある",
+    "180字候補captionを含めた冒頭の問いと芯石が見える",
+    "実cover editorで問い・前後比較・作品名が画角内"
+  ],
+  "scope": {
+    "openingFeed": true,
+    "openingCaptionOverlay": true,
+    "customCoverPreview": true,
+    "fullFinalTimeline": false,
+    "actualSoundSelected": false,
+    "wholeSubjectiveAudition": false
+  },
+  "topOverlap": "RESOLVED_WITHIN_OPENING_FEED_SCOPE",
+  "overall": "HOLD_SOUND_AND_FINAL_TIMELINE",
+  "stagingAfterQa": "Exited/discarded own new upload; no serverdraft, noadditionalpost",
+  "noServerDraft": true,
+  "noAdditionalPost": true,
+  "finalMasterReuploadRequired": true,
+  "coverSaveOnlyAppliedInsideDiscardedUpload": true,
+  "coderBrowserOrRuntimeChanges": false
+}

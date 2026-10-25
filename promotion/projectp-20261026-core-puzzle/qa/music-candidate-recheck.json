@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "issue": 97,
+  "checkedAt": "2026-10-25T13:58:45.564Z",
+  "status": "HOLD_NOT_ADOPTED_NO_PROMOTIONAL_PERMISSION_OR_SOUND_ID",
+  "account": "prop_pui",
+  "reportedBy": "root-music97-recheck",
+  "sourceHeadAtRecheck": "1ec95d93893761c89126623ae32571d492507fdd",
+  "method": "Native existing Firefox Session1 through guarded helper; actual keyboard paste and Enter, not ValuePattern only",
+  "rootPacketSha256": "0671059d4d76563969a91a95874d21844ffb5c72274b88a48e454e7251a1f1fe",
+  "unrestrictedLibrary": {
+    "label": "ロイヤリティフリーの楽曲 / editor 無制限",
+    "queries": [
+      {
+        "query": "Monkeys Spinning Monkeys",
+        "observedRows": [
+          {
+            "artist": "Jasper Vale",
+            "posts": "572"
+          },
+          {
+            "artist": "Ayaka Nishimura",
+            "posts": "985"
+          }
+        ]
+      },
+      {
+        "query": "phonk",
+        "observedRows": [
+          {
+            "title": "phonk (30)",
+            "artist": "DJ BAI",
+            "posts": "13.2K",
+            "duration": "00:30"
+          },
+          {
+            "title": "phonk (90)",
+            "artist": "DJ BAI",
+            "posts": "29.2K",
+            "duration": "01:30"
+          }
+        ]
+      }
+    ],
+    "popularityScope": "Native library displays29.2K posts. Collection period, cumulative/all-time meaning and current JP rank are unconfirmed."
+  },
+  "candidate": {
+    "title": "phonk (90)",
+    "artist": "DJ BAI",
+    "displayedPosts": "29.2K",
+    "durationSeconds": 90,
+    "adopted": false,
+    "promotionalPermissionVerified": false,
+    "soundId": null,
+    "postCountPeriod": "UNCONFIRMED",
+    "currentJapanRankVerified": false
+  },
+  "download": {
+    "nativeIntents": 1,
+    "maxIntents": 1,
+    "completedNative": true,
+    "filename": "phonk (90).m4a",
+    "bytes": 1457030,
+    "durationSeconds": 90,
+    "sampleRate": 44100,
+    "channels": 2,
+    "sha256": "7b0c4e216315c9a9fdb483f7a8b35592dfd66b9fa9cee00f76a47cd0c7d965fe",
+    "source": "Native official device-download icon on exact phonk(90)/DJ BAI/29.2K row",
+    "rawAudioPublicGit": false,
+    "rawAudioIncludedInRepository": false,
+    "rawAudioIncludedInRevision03": false,
+    "localFileHashIndependentlyChecked": true
+  },
+  "commercialVerification": {
+    "route": "Own model97 voice-no-music staging→offscreen編集 reveal→楽曲→無制限→filter商用利用; no duration selected",
+    "candidateQuery": "phonk (90)",
+    "input": "Actual click/focus/CtrlA/Backspace/paste/Enter",
+    "observedResult": "結果なし",
+    "promotionPermissionVerified": false,
+    "soundId": null,
+    "decision": "Not adopted for current promotional video. Rawdownload and unrestricted library appearance are not commercial-use proof."
+  },
+  "correction": "Unrestricted royalty-free library search results do not contradict prior commercial-only zero-query observations. Old generic no-result finding must remain scoped to filter/context; no global library outage conclusion.",
+  "notMeasured": [
+    "BPM/beat analysis",
+    "Subjective audition",
+    "Current JP popularity rank",
+    "Usable promotional soundID/interval"
+  ],
+  "staging": {
+    "voiceNoMusicSha256": "cb68c46bf1f6530a85764a895f58265cb852813a3d025415774046d967bdfdfd",
+    "editorCancelled": true,
+    "uploadUnsavedDiscarded": true,
+    "nativeHomeVerified": true,
+    "publicPostOrRepost": false,
+    "serverDraftSaved": false
+  },
+  "evidence": [
+    {
+      "file": "qa/music-candidate-unrestricted-results.png",
+      "sha256": "00565512f95ab286437c30da592299498f05859dcb0e014ca3d201464e476485",
+      "bytes": 186116
+    },
+    {
+      "file": "qa/music-candidate-native-download.png",
+      "sha256": "1ad6ac6fcb92a5445428dd4ec0ed90172880d3973e8ea98f3e2b8773f00eb3c6",
+      "bytes": 11082
+    },
+    {
+      "file": "qa/music-candidate-commercial-filter.png",
+      "sha256": "936ca9669c51cae86e0bdc14262e44deef1461d61b2608671af1a9ada3dbaa0b",
+      "bytes": 47534
+    },
+    {
+      "file": "qa/music-candidate-commercial-result.png",
+      "sha256": "6c846249cd54f0cf8c8a59e44cc75938b032c864445147c150a03a7f97c90f65",
+      "bytes": 10694
+    }
+  ],
+  "observedByCoder": [
+    "4枚の対象music UI cropを目視し、一覧のDJ BAI/phonk (90)/29.2K posts/01:30、native download完了、商用利用chip選択、exact phonk (90)の結果なしを確認",
+    "同じcropだけで商用利用許可・soundID・JP現在順位・BPM・聴感を証明したとは扱わない"
+  ],
+  "limits": [
+    "通常ライブラリで曲が見つかったことと、今回の商用宣伝用途で採用できることを分ける",
+    "商用フィルター下の当該exact queryで結果なしという有限観測。カタログ全体の停止や全楽曲の不在とは判断しない",
+    "raw M4A、private UIA JSON、full screenshotsや認証情報を複製しない"
+  ],
+  "coderBrowserOrRuntimeChanges": false,
+  "rootPacketCorrection": {
+    "initialPacketSha256": "b2fdb4ffad002e32a9ffdc9a072779a45ae0e4c73e3296cbbe3cc55602a40a92",
+    "currentPacketSha256": "0671059d4d76563969a91a95874d21844ffb5c72274b88a48e454e7251a1f1fe",
+    "reason": "Initial period inference was corrected: displayed29.2K posts has unconfirmed period/cumulative-or-all-time meaning/current Japan rank; native images and audio are unchanged."
+  }
+}

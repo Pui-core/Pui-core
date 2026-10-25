@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "photocraft-cli.exe",
+  "args": [
+    "run",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\revenant-natural\\frame-000000.png",
+    "--cmd",
+    "image.crop",
+    "--params",
+    "{\"x\":0,\"y\":0,\"width\":600,\"height\":450,\"deleteCroppedPixels\":true,\"contentAware\":false}",
+    "--out",
+    "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-97-photocraft\\revenant-cover-portrait.png",
+    "--format",
+    "png"
+  ],
+  "stdout": "{\"command\":\"image.crop\",\"result\":{\"documentHeight\":450,\"documentWidth\":600,\"height\":450,\"resolution\":72.0,\"width\":600,\"x\":0,\"y\":0}}\n",
+  "stderr": ""
+}

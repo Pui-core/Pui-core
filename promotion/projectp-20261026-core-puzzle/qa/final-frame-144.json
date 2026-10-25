@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-y",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\videos\\core-puzzle-voice-no-music.mp4",
+    "-vf",
+    "select='eq(n,144)'",
+    "-frames:v",
+    "1",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\qa\\final-frame-144.png"
+  ],
+  "stdout": "",
+  "stderr": ""
+}
