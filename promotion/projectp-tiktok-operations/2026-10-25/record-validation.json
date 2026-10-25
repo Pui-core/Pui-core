@@ -1,0 +1,46 @@
+{
+  "verifiedAt": "2026-10-25T10:02:36.384Z",
+  "checks": {
+    "exactAccountAndVideoId": true,
+    "publicStatusCodeZeroAndPrivateFalse": true,
+    "authorVideoCountOneAtObservation": true,
+    "creationTimestampMatches": true,
+    "analyticsDueOffsetsExact24h72h": true,
+    "videoAndCoverMatchRepoAndDeliverySha256": true,
+    "bioNotSavedRetained": true,
+    "popularMusicUnverifiedRetained": true,
+    "directFullAudioAuditionUnperformedRetained": true
+  },
+  "sourceEvidence": [
+    {
+      "name": "public-receipt-packet.json",
+      "sha256": "8ce553d6f681b015670f841232e927e3452c677207effb42dd9a2bdfa92a9b6c"
+    },
+    {
+      "name": "public-unauth-check.json",
+      "sha256": "70e2181934a0b98ec21f1b770b3887b0e9a07bc5991e86ac46fa3a3fd53143cf"
+    },
+    {
+      "name": "public-author-check.json",
+      "sha256": "65b172e458eb58325d815e115978b408373b04ffee7854c6e1b6465c732d6214"
+    },
+    {
+      "name": "public-studio-row.png",
+      "sha256": "46c042b88b0f485e9ad02a2e40dcc0d203095cfd2ea47f3b871fa66d7b2d2c7b",
+      "storedInGit": false
+    },
+    {
+      "name": "safe-cover-live-ui.png",
+      "sha256": "19238a247f558efd49e8be39aeb005ac1bf3dfc93b7d6d223a8b955fa65486ac",
+      "storedInGit": false
+    }
+  ],
+  "newOperations": {
+    "browser": false,
+    "runtimeMutation": false,
+    "repost": false,
+    "newDecodeOrListening": false
+  },
+  "sourcePr": "https://github.com/Pui-core/Pui-core/pull/16",
+  "sourceMerge": "9ffa1986e69273be1693730f507d4c6b955d8852"
+}

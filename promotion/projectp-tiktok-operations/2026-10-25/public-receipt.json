@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "recordIssue": "https://github.com/Pui-core/-/issues/95",
+  "accountId": "prop_pui",
+  "dateJst": "2026-10-25",
+  "parentIssue": "https://github.com/Pui-core/-/issues/93",
+  "productionIssue": "https://github.com/Pui-core/-/issues/94",
+  "receipt": {
+    "submissionConfirmed": true,
+    "publicConfirmed": true,
+    "accountId": "prop_pui",
+    "status": "Public: Anyone; moderation completed",
+    "observedPrivacy": "Everyone",
+    "expectedPrivacy": "Everyone",
+    "observedAt": "2026-10-25T09:52:45.492Z",
+    "videoId": "7700540849909763336",
+    "url": "https://www.tiktok.com/@prop_pui/video/7700540849909763336",
+    "videoSha256": "69f843a2f8c5e0a6c6edbb9725ff675bccb54a114b27456fd010e02131f83561",
+    "captionContainsVoiceCredit": true,
+    "note": "Publicly accessible without account cookies. Exactly one video in authorStats; no duplicate post.",
+    "urlEvidence": "Actual submitted Studio hyperlink ValuePattern",
+    "publishedAt": "2026-10-25T09:51:31.000Z",
+    "publicConfirmedAt": "2026-10-25T09:59:26.155Z",
+    "evidence": [
+      "Actual Studio row: Anyone and timestamp instead of review marker",
+      "Unauthenticated public TikTok video SSR statusCode=0/privateItem=false/exact author and videoID"
+    ],
+    "authorStats": {
+      "followerCount": 0,
+      "followingCount": 0,
+      "heart": 0,
+      "heartCount": 0,
+      "videoCount": 1,
+      "diggCount": 0,
+      "friendCount": 0
+    },
+    "initialPublicStats": {
+      "diggCount": 0,
+      "shareCount": 0,
+      "commentCount": 0,
+      "playCount": 0,
+      "collectCount": "0"
+    }
+  },
+  "analyticsDue": [
+    {
+      "kind": "24h",
+      "dueAt": "2026-10-26T09:51:31.000Z",
+      "state": "scheduled_for_existing_PM_patrol"
+    },
+    {
+      "kind": "72h",
+      "dueAt": "2026-10-28T09:51:31.000Z",
+      "state": "scheduled_for_existing_PM_patrol"
+    }
+  ],
+  "profileUpdate": {
+    "old": {
+      "displayName": "Project_P ぷぃ",
+      "username": "prop_pui",
+      "bio": ""
+    },
+    "intended": {
+      "bio": "ゲーム・道具・曲を作る、ぷい。\n『EMBERWAKE』制作の裏側を毎日。\nCAMPFIRE公開準備中｜次の一手をフォローで。"
+    },
+    "status": "not_saved_verified_public_empty",
+    "observedLocks": {
+      "displayNameNextChange": "2026-10-31",
+      "usernameNextChange": "2026-11-23"
+    },
+    "note": "Bio input62/80 and repeated save actions showed no public reflection; modal closed, not reported as saved. Recheck after post and handle with a separate finite investigation.",
+    "publicEvidence": {
+      "observedAt": "2026-10-25T09:55:46.204Z",
+      "signature": ""
+    },
+    "followUp": {
+      "id": "BIO-001",
+      "severity": "P2",
+      "owner": "next single publisher via PM",
+      "expectedBio": "ゲーム・道具・曲を作る、ぷい。\n『EMBERWAKE』制作の裏側を毎日。\nCAMPFIRE公開準備中｜次の一手をフォローで。",
+      "actual": "Public author signature remained empty after native save attempts",
+      "nextAction": "Finite native UI/response investigation; do not repeat unbounded save attempts or claim success",
+      "ownerInputRequired": false
+    }
+  },
+  "nextProduction": {
+    "dateJst": "2026-10-26",
+    "targetWindowJst": [
+      "18:30",
+      "20:00"
+    ],
+    "reason": "First-week publishing-time experiment, not claimed optimum. Select real daily activity after source review.",
+    "state": "handoff_pending"
+  },
+  "videoSha256": "69f843a2f8c5e0a6c6edbb9725ff675bccb54a114b27456fd010e02131f83561",
+  "coverSha256": "33d29dd5dd96b635a018f74c52002b9a5677bbb6db920ccf4112578cda0b2749",
+  "sourcePr": "https://github.com/Pui-core/Pui-core/pull/16",
+  "sourceMerge": "9ffa1986e69273be1693730f507d4c6b955d8852",
+  "baselineFollowers": 0,
+  "followersObservedAfterPublish": 0,
+  "verificationScope": {
+    "fullDecode": true,
+    "decodedPictureIdentical1800Frames": true,
+    "nativeCover3x4": true,
+    "nativeSourceReopenAll3Apps": true,
+    "directFullAudioAudition": false,
+    "popularMusicVerified": false,
+    "music": "Original120BPMscore",
+    "voice": "VOICEVOX:青山龍星"
+  },
+  "publicEvidence": {
+    "unauthenticatedVideo": {
+      "observedAt": "2026-10-25T09:53:52.991Z",
+      "url": "https://www.tiktok.com/@prop_pui/video/7700540849909763336",
+      "httpStatus": 200,
+      "statusCode": 0,
+      "videoId": "7700540849909763336",
+      "author": "prop_pui",
+      "privateItem": false,
+      "createTime": 1792921891,
+      "caption": "その一手で、何秒縮める？ 芯石を運ぶ。はめる。着地点を狙って跳ぶ。 章ごとのTIME ATTACKで、自己ベストを越えていく。 『EMBERWAKE 灰の灯』を制作中のぷいです。全5章のデモから、本制作へ。 CAMPFIREでの公開に向けて準備中です。この制作を、応援してください。公開のお知らせはフォローで。 ※開発中のゲーム映像（探索モード）と、3Dの開発イメージを含みます。 #EMBERWAKE #RTA #タイムアタック #ゲーム制作 #ぷい ナレーション：VOICEVOX:青山龍星",
+      "stats": {
+        "diggCount": 0,
+        "shareCount": 0,
+        "commentCount": 0,
+        "playCount": 0,
+        "collectCount": "0"
+      }
+    },
+    "unauthenticatedAuthor": {
+      "observedAt": "2026-10-25T09:55:46.204Z",
+      "authenticated": false,
+      "statusCode": 0,
+      "videoId": "7700540849909763336",
+      "privateItem": false,
+      "author": {
+        "uniqueId": "prop_pui",
+        "nickname": "Project_P ぷぃ",
+        "signature": "",
+        "privateAccount": false
+      },
+      "authorStats": {
+        "followerCount": 0,
+        "followingCount": 0,
+        "heart": 0,
+        "heartCount": 0,
+        "videoCount": 1,
+        "diggCount": 0,
+        "friendCount": 0
+      }
+    }
+  },
+  "assets": [
+    {
+      "kind": "video",
+      "path": "promotion/projectp-tiktok-launch-20261025/videos/emberwake-voice-original-score.mp4",
+      "sha256": "69f843a2f8c5e0a6c6edbb9725ff675bccb54a114b27456fd010e02131f83561",
+      "deliveryCopyMatches": true
+    },
+    {
+      "kind": "cover",
+      "path": "promotion/projectp-tiktok-launch-20261025/covers/emberwake-cover-tiktok-safe.png",
+      "sha256": "33d29dd5dd96b635a018f74c52002b9a5677bbb6db920ccf4112578cda0b2749",
+      "deliveryCopyMatches": true
+    }
+  ],
+  "handoff": {
+    "status": "root_owned_pending_explicit_handoff",
+    "publisher": "root",
+    "nextPublisher": "one publisher assigned by existing PM after explicit handoff and account/claim/receipt checks",
+    "newCron": false,
+    "doNotRepublishVideoId": "7700540849909763336"
+  },
+  "goals": [
+    {
+      "dateJst": "2026-11-30",
+      "followers": 500
+    },
+    {
+      "dateJst": "2026-12-31",
+      "followers": 1000
+    }
+  ],
+  "qaInterpretation": "Production QA facts are inherited from unchanged PR16 assets; this documentation task does not claim new decode, playback, listening, browser, or publication operations."
+}
