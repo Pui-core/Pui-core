@@ -48,7 +48,7 @@ Coreで得た実メッシュとatlasをソフトウェア描画するMIT utility
 
 最終1080×1920/30fps/693枚、全AVdecode、AAC音量/peak・4区間の波形対応とlag、同じPCM反復、重要な切替とmodel loop、表紙中央3:4の可読性を確認しました。証跡は `qa/technical.json`、`audio-final.json`、`final-frame-binding.json`、`model-loop-final.json`、`delivery.json`。これらは数値・抽出画像・原本再読込の確認です。
 
-予約submitは1回だけ行い、本人account `prop_pui` の動画ID `7700634126155648264` に時計badgeと「10月26日 午後7:15」がmanual reload後も残りました。[予約証跡](qa/publication/schedule-receipt.json)と[予約行の画面](qa/publication/schedule99-persisted-row.png)をSHAで対応させています。一般のsubmit toastを公開確認へ読み替えず、公開receiptは未取得です。主観的な全編直接試聴も未確認のままです。制作計画/準備中の旧metadataは当時の記録で、現在の予約状態はこのpublication receiptを参照してください。
+予約submitは1回だけ行い、本人account `prop_pui` の動画ID `7700634126155648264` に時計badgeと「10月26日 午後7:15」がmanual reload後も残りました。[予約証跡](qa/publication/schedule-receipt.json)と[予約行の画面](qa/publication/schedule99-persisted-row.png)をSHAで対応させています。一般のsubmit toastを公開確認へ読み替えず、公開receiptは未取得です。主観的な全編直接試聴も未確認のままです。制作計画/準備中の旧metadataは当時の記録で、現在の予約状態はこのpublication receiptを参照してください。 予約証跡は制作後のsource-only追記です。納品台帳のsource/F照合はPR23制作時点の327ファイルの検証を指し、この追記を含む現source全体の納品一致を示しません。
 
 10/26 19:20 JSTに実公開を確認し、確認前に公開済みとせず再送信しません。初投稿の24h分析dueは10/26 18:51:31 JST、10/27分は当日の活動に合う新候補を選びます。folder名の27は履歴で、このID/SHAを26日や27日に再投稿しません。 制作候補の完了と、その日の採用・投稿を区別します。今回の曲は本人の比較対象で、97の外部人気曲選定条件を本回の追加承認ゲートへ持ち込みません。作者表記は確認済みの「曲・歌・MV：ぷい」。beat単独作曲や歌詞作者の独立した帰属、全権利保有など、記録にない範囲へ広げません。
 
