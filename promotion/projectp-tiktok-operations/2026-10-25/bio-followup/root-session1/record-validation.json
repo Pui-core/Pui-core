@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "recordScope": "ROOT_SESSION1_EVIDENCE_ONLY",
+  "managementIssue": "https://github.com/Pui-core/-/issues/96",
+  "sourceBaseCommit": "a32a0fb36dbe617ea6733e6fae0247c5d0c68af3",
+  "rootEvidence": {
+    "file": "bio96-root-result.json",
+    "sha256": "12bb299d1a98983e0d4550cb29b6b078a474e5f1cf9c6f7127b4e866687f6965",
+    "copyByteIdentical": true,
+    "rootSummaryMarkdownSha256": "3343beca17f0f8e6f81ab9b6f87326d2cb299c084b114bbe18ff041e16b68f83",
+    "rootReportComment": "https://github.com/Pui-core/-/issues/96#issuecomment-6396682231"
+  },
+  "desiredBio": "ゲーム・道具・曲を作る、ぷい。\n『EMBERWAKE』制作の裏側を毎日。\nCAMPFIRE公開準備中｜次の一手をフォローで。",
+  "desiredBioCharactersIncludingLf": 62,
+  "checks": {
+    "jsonParse": true,
+    "desiredBioMatchesIssue": true,
+    "counterMatches62Of80": true,
+    "windowsAndFirefoxSession1": true,
+    "saveAttemptsWithinBudget": true,
+    "sendInputAcceptedTwoEventsPerAttempt": true,
+    "modalPersistedAfterSave": true,
+    "identifiableProfileUpdateRequestNotObserved": true,
+    "cancelWithMouseEventWorked": true,
+    "reloadedBioStillEmpty": true,
+    "rootCauseUnestablished": true,
+    "noRepostReported": true
+  },
+  "rootSaveBudget": {
+    "allowed": 2,
+    "used": 2,
+    "remaining": 0,
+    "additionalTrialsByRecordWriter": 0
+  },
+  "bioIssueState": "OPEN_UNRESOLVED",
+  "recordValidationState": "PASS_EVIDENCE_CONSISTENCY_ONLY",
+  "recordWriterPerformedBrowserOrRuntimeOperations": false,
+  "newPublicSignatureCheckInThisRecord": false,
+  "separateSessionRoutingIssue": "https://github.com/Pui-core/claude-codex_agents/issues/68",
+  "sessionRoutingRepairDoesNotProveBioSave": true,
+  "excluded": [
+    "raw screenshots",
+    "network headers",
+    "credentials",
+    "runtime state"
+  ]
+}
