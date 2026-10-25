@@ -1,171 +1,82 @@
-/** Three kinetic thank-you cuts. All character pixels stay in one static layer. */
+/** Pastel bingo celebration: one camera moves the complete scene, including the original illustration. */
+import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
-
-const spec = [
-  {id:'a-baibai', title:'A｜達成ラッシュ', song:'倍倍FIGHT!', artist:'CANDY TUNE', bpm:176,
-    audioFile:'baibai-fight.m4a',audioStart:.210, accent:'#A8F3E0',second:'#FF95D2',dark:'#0C1020',
-    description:'数字が加速し、CLEARが連鎖。最後の1マスで一気に爆発する王道の祝勝会。',climaxBeat:44,outroBeat:56},
-  {id:'b-patissier', title:'B｜ありがとうの贈りもの',song:'キス・ミー・パティシエ',artist:'CANDY TUNE',bpm:192,
-    audioFile:'kiss-me-patissier.m4a',audioStart:.088,accent:'#FF95D2',second:'#A8F3E0',dark:'#27122C',
-    description:'リボン、ハート、感謝のスタンプ。みんなの応援をプレゼントにして返す、かわいい感謝祭。',climaxBeat:48,outroBeat:60},
-  {id:'c-disco',title:'C｜ビンゴ・ディスコ',song:'チョコレイト・ディスコ',artist:'Perfume',bpm:128,
-    audioFile:'chocolate-disco.m4a',audioStart:.258,accent:'#A8F3E0',second:'#FFD79D',dark:'#111025',
-    description:'9マスがダンスフロアに。マスと巨大文字がリズムで点灯する、遊び心のある祝祭。',climaxBeat:32,outroBeat:40}
+export const characterBase={position:[730,1290,0],anchor:[452.5,905,0],scale:[380/905*100,380/905*100,100],rotation:0,opacity:100};
+const snap=t=>Math.round(t*30)/30;
+const specs=[
+ {id:'a-baibai',title:'A｜駆け抜けるビンゴ',song:'倍倍FIGHT!',artist:'CANDY TUNE',bpm:176,audioFile:'baibai-fight.m4a',audioStart:.210,accent:'#556EB4',second:'#CE82C8',tint:'#DCEBFF',climaxBeat:44,outroBeat:56,description:'水色とラベンダー。横への全画面ワイプと、文字・盤面・立ち絵を一緒に追う勢い。'},
+ {id:'b-patissier',title:'B｜ありがとうの紙ふぶき',song:'キス・ミー・パティシエ',artist:'CANDY TUNE',bpm:192,audioFile:'kiss-me-patissier.m4a',audioStart:.088,accent:'#A34F97',second:'#7F9FDA',tint:'#F6DDF4',climaxBeat:48,outroBeat:60,description:'薄桃のペーパーとリボン。画面ごと弾むズーム、斜めのシーンチェンジ。'},
+ {id:'c-disco',title:'C｜ビンゴ・パレード',song:'チョコレイト・ディスコ',artist:'Perfume',bpm:128,audioFile:'chocolate-disco.m4a',audioStart:.258,accent:'#705BAF',second:'#749ED8',tint:'#E5DFFD',climaxBeat:32,outroBeat:40,description:'ペリウィンクルと水色。強い全画面パンと傾き、次々に切り替わるビンゴの祝祭。'}
 ];
-export const plans=spec.map((p,i)=>{
- const beat=60/p.bpm,drop=2,climax=drop+p.climaxBeat*beat,outro=drop+p.outroBeat*beat;
- const montage=drop+(i===0?12:i===1?16:8)*beat;
- const span=(climax-montage)/4,last=montage+3*span;
- return {...p,index:i,duration:25,drop,beat,climax,outro,montage,
-   boardZoom:[164,154,176][i],counterZoom:[146,138,154][i],lastZoom:[182,170,194][i],
-   trackingReviewTimes:[2.3,2.85,3.1,3.48,3.78,4.22,4.72,5.12,
-    montage+.8,montage+1.18,montage+1.75,montage+span-.28,
-    last+.45,last+.85,last+1.3,climax-.23,
-    climax+.65,climax+1,climax+1.75,climax+2.14,
-    outro+.7,outro+1.15,outro+2.25,24.25],
-   reviewTimes:[.55,1.65,2.48,3.8,montage-.35,montage+.55,montage+(climax-montage)*.35,
-    montage+(climax-montage)*.68,climax-.65,climax+.5,climax+1.75,outro+.6,23.8],
-   cuts:[0,2,montage,climax,outro,25]};
+export const plans=specs.map((p,index)=>{
+ const beat=60/p.bpm,drop=2,climax=17,outro=snap(drop+p.outroBeat*beat),montage=snap(drop+(index===0?12:index===1?16:8)*beat),span=(climax-montage)/4;
+ const sceneCuts=[0,.8,2,montage,snap(montage+span),snap(montage+span*2),snap(montage+span*3),climax,outro,snap(outro+1.35),25];
+ const scenes=sceneCuts.slice(0,-1).map((a,i)=>({a,b:sceneCuts[i+1],index:i}));
+ const reviewTimes=scenes.map(s=>snap(s.a+Math.min(.65,(s.b-s.a)*.5)));
+ const extraTransitions=[3,4,5].map(j=>snap(sceneCuts[j]+1));
+ const wholeReviewTimes=[];
+ for(const s of scenes){wholeReviewTimes.push(snap(s.a+.1),snap(s.a+Math.min(.5,(s.b-s.a)*.5)),snap(s.b-.12));}
+ for(const j of [3,4,5])wholeReviewTimes.push(snap(sceneCuts[j]+.72),snap(sceneCuts[j]+1.35),snap(sceneCuts[j+1]-.35));
+ wholeReviewTimes.sort((a,b)=>a-b);
+ return {...p,index,beat,drop,climax,outro,montage,span,duration:25,sceneCuts,extraTransitions,reviewTimes,wholeReviewTimes,scenes};
 });
 export function composition(root,p,{includeCharacter=true}={}){
  const native=f=>{const r=spawnSync('wslpath',['-w',f],{encoding:'utf8'});if(r.status)throw Error(r.stderr);return r.stdout.trim();};
- const images=[native(path.join(root,'media','stage-background.png'))];
- if(includeCharacter)images.push(native(path.join(root,'media','character-cutout.png')));
- return `app.newProject();app.beginUndoGroup('Osayu Thankyou ${p.id}');
-var P=${JSON.stringify(p)},D=P.duration,beat=P.beat,A=P.accent,B=P.second,navy=P.dark,white='#F5FCFF',boxes=[],motionLedger=[],trackingTargets=[],rigNames={},rig=null;
-function run(id,p){return app.run(id,p||{});}function set(l,p,v){run('prop.set',{layer:l,path:p,value:v});}
-function key(l,p,t,v){run('prop.addKey',{layer:l,path:p,time:t,timeBase:'comp',value:v});}
+ const manifest=JSON.parse(fs.readFileSync(path.join(root,'media/background-manifest.json'),'utf8'));
+ const images=[native(path.join(root,'media/bingo-paper-background.png'))];if(includeCharacter)images.push(native(path.join(root,'media/character-cutout.png')));
+ return `app.newProject();app.beginUndoGroup('Osayu wholeframe V3 ${p.id}');
+var P=${JSON.stringify(p)},D=25,ink='#3B3562',A=P.accent,B=P.second,paper='#FFFDFE',lav='#EEE7F8',blue='#ADCFF4',pink='#DFABE3',boxes=[],wholeCameraKeys=[],transitions=[],base=${JSON.stringify(characterBase)};
+function run(id,p){return app.run(id,p||{});}function set(l,p,v){run('prop.set',{layer:l,path:p,value:v});}function key(l,p,t,v){run('prop.addKey',{layer:l,path:p,time:Math.round(t*30)/30,timeBase:'comp',value:v});}
 function timing(l,a,b){run('layer.timing',{layers:[l],in:a,out:b});}
-function ease(l,p,ts){var k=[];for(var i=0;i<ts.length;i++)k.push({layer:l,prop:p,time:ts[i]});run('keys.select',{keys:k,timeBase:'comp'});run('keys.interpolation',{interpolation:'bezier'});run('keys.velocity',{inSpeed:0,outSpeed:0,inInfluence:65,outInfluence:65,continuous:false});}
-function link(l,mb){if(rig)run('layer.setParent',{layers:[l],parent:rig,compensate:true});run('layer.setSwitch',{layers:[l],switch:'motionBlur',value:mb===true});return l;}
-var comp=run('comp.new',{name:'Osayu Thankyou ${p.id}',width:1080,height:1920,frameRate:30,duration:D,background:navy,shutterAngle:120,shutterPhase:-60,motionBlurSamples:6}).comp;
+function ease(l,prop,ts){var keys=[];for(var i=0;i<ts.length;i++)keys.push({layer:l,prop:prop,time:Math.round(ts[i]*30)/30});run('keys.select',{keys:keys,timeBase:'comp'});run('keys.interpolation',{interpolation:'bezier'});run('keys.velocity',{inSpeed:0,outSpeed:0,inInfluence:62,outInfluence:62,continuous:false});}
+var comp=run('comp.new',{name:'Osayu Thankyou ${p.id}',width:1080,height:1920,frameRate:30,duration:D,background:lav,shutterAngle:120,shutterPhase:-60,motionBlurSamples:6}).comp;
 run('file.projectSettings',{workingSpace:'rec709',outputSpace:'rec709',bitDepth:8});run('comp.setSwitch',{switch:'motionBlur',value:true});
 var imp=run('file.import',{paths:${JSON.stringify(images)},sequence:false});if(imp.errors.length)throw Error(JSON.stringify(imp.errors));
-function shape(n,w,h,x,y,col,a,b,stroke,kind,op,free){var l=run('layer.newShape',{name:n,kind:kind||'rounded',size:[w,h],position:[x,y],fill:col,stroke:stroke||col,strokeWidth:stroke?3:0}).layer;timing(l,a,b);if(op!==undefined)set(l,'transform/opacity',op);if(!free)link(l,false);return l;}
-function txt(n,s,x,y,size,col,a,b,width,align,pop){var l=run('layer.newText',{name:n,text:s,font:'Meiryo',style:'Bold',size:size,fill:col,position:[x,y],justify:align||'left'}).layer;var o=app.project.activeItem.layer(n),r=o.sourceRectAtTime(a,false);if(r.width>(width||800)){size=Math.floor(size*(width||800)/r.width);run('layer.setText',{layer:l,size:size});r=o.sourceRectAtTime(a,false);}timing(l,a,b);link(l,false);boxes.push({name:n,text:s,size:size,x:x+r.left,y:y+r.top,width:r.width,height:r.height,start:a,end:b});if(pop){key(l,'transform/position',a,[x+(P.index===1?0:125),y+100]);key(l,'transform/position',a+.16,[x-6,y-9]);key(l,'transform/position',a+.28,[x,y]);ease(l,'transform/position',[a,a+.16,a+.28]);}return l;}
-function pill(n,s,x,y,w,a,b,col){shape(n+' plate',w,58,x,y,navy,a,b,col);txt(n,s,x,y+10,24,col,a,b,w-28,'center',false);}
-function group(n,a,b){rig=null;var l=run('layer.newNull',{name:'OBJECT CAMERA '+n}).layer;rigNames[l]='OBJECT CAMERA '+n;set(l,'transform/anchor',[540,960,0]);set(l,'transform/position',[540,960,0]);timing(l,a,b);rig=l;motionLedger.push({kind:'object-camera',name:n,start:a,end:b});return l;}
-function cam(l,t,x,y,s,r){key(l,'transform/position',t,[x,y,0]);key(l,'transform/scale',t,[s,s,100]);key(l,'transform/rotation',t,r||0);}
-function follow(l,t,x,y,s,dx,dy,label){var k=s/100;cam(l,t,dx-(x-540)*k,dy-(y-960)*k,s,0);trackingTargets.push({rigName:rigNames[l],time:t,target:[x,y],screen:[dx,dy],scale:s,label:label,kind:'track'});}
-function restore(l,t,label){cam(l,t,540,960,100,0);trackingTargets.push({rigName:rigNames[l],time:t,target:[540,960],screen:[540,960],scale:100,label:label,kind:'return'});}
-function finish(l,ts){ease(l,'transform/position',ts);ease(l,'transform/scale',ts);ease(l,'transform/rotation',ts);rig=null;}
-function picture(n,it,x,y,s){var l=run('layer.addItem',{item:it,time:0,duration:D}).layer;run('layer.rename',{layer:l,name:n});timing(l,0,D);set(l,'transform/position',[x,y,0]);set(l,'transform/scale',[s,s,100]);return l;}
-function rays(n,a,b,col){for(var k=0;k<8;k++){var right=k%2,x=right?970:75,y=420+Math.floor(k/2)*210,l=shape(n+k,210,5,x,y,col,a,Math.min(a+.36,b),null,'rect',75);set(l,'transform/rotation',right?-24:24);key(l,'transform/position',a,[x+(right?320:-320),y+100]);key(l,'transform/position',a+.24,[x,y]);}}
-function heart(n,x,y,s,a,b,col){var h=txt(n,'♥',x,y,s,col,a,b,s*1.3,'center',false);key(h,'transform/scale',a,[10,10]);key(h,'transform/scale',a+.18,[118,118]);key(h,'transform/scale',a+.3,[100,100]);ease(h,'transform/scale',[a,a+.18,a+.3]);return h;}
-function confetti(a,b){rig=null;for(var k=0;k<46;k++){var x=60+(k*137)%910,y=270+(k*71)%120,delay=(k%7)*.045,t=a+delay,end=Math.min(b,t+2.8),l=shape('Sakura confetti '+k,k%3?14:29,k%3?38:20,x,y,k%3===0?'#FF95D2':k%2?A:B,t,end,null,k%3===0?'ellipse':'rect',85,true);key(l,'transform/position',t,[x,y]);key(l,'transform/position',end,[x+Math.sin(k*2)*150,1500+(k%4)*45]);key(l,'transform/rotation',t,k*29);key(l,'transform/rotation',end,k*29+270);key(l,'transform/opacity',t,85);key(l,'transform/opacity',end,0);}}
-// Only the background and object layers can move. No group contains the character.
-var stage=picture('Approved empty stage',imp.items[0],540,960,128);set(stage,'transform/opacity',P.index===1?45:70);
-key(stage,'transform/position',0,[540,960,0]);key(stage,'transform/position',D,[580,920,0]);
-shape('Dark tinted field',1080,1920,540,960,navy,0,D,null,'rect',66,true);
-for(var k=0;k<5;k++){var o=shape('Ambient ring '+k,380+k*120,380+k*120,760,1220,navy,0,D,k%2?A:B,'ellipse',12,true);key(o,'transform/rotation',0,k*23);key(o,'transform/rotation',D,k*23+50);}
-// The disco has an explicitly moving floor; the gift version has ribbons.
-if(P.index===2){for(var k=0;k<15;k++){var gx=85+(k%5)*190,gy=1120+Math.floor(k/5)*155,l=shape('Disco floor '+k,174,132,gx,gy,k%2?A:B,2,D,null,'rect',8,true);for(var q=0;q<12;q++){var at=2+q*4*beat;if(at<D)key(l,'transform/opacity',at,((q+k)%3===0)?29:6);}}}
-if(P.index===1){for(var k=0;k<3;k++){var ribbon=shape('Gift ribbon '+k,1250,18,500,1050+k*140,k%2?B:A,0,D,null,'rect',16,true);set(ribbon,'transform/rotation',-22);key(ribbon,'transform/position',0,[350,1100+k*140]);key(ribbon,'transform/position',D,[620,900+k*140]);}}
-// Intro has breathing space where a genuine thank-you voice can later be added.
-var c=group('thank-you opening',0,2);
-pill('Intro eyebrow','はじめてのビンゴ企画で…',480,300,760,0,2,A);
-txt('Intro opening','みんな、',90,493,108,white,0,2,800,'left',true);
-txt('Intro thank you','ありがとう。',90,656,116,A,.28,2,800,'left',true);
-txt('Intro note','この日を、いっしょに。',90,799,34,B,.65,2,800,'left',false);
-if(P.index===1)heart('Opening heart',280,1160,142,0,2,A);
-else {txt('Opening 09','09',95,1225,220,A,.4,2,400,'left',true);txt('Opening 09 label','マスの物語',100,1290,29,white,.75,2,390,'left',false);}
-cam(c,0,540,960,100,0);cam(c,1.92,540,960,100,0);finish(c,[0,1.92]);
-// The first drop reveals an empty grid, then fills three cells on the beat.
-var boardLabels=['初見さん','いいね','シェア','ギフト','ミンカベア','フォロー','ハートミー','おはさゆ','同事務所凸'];
-var order=P.index===1?[4,0,8,1,7,3,6,2,5]:P.index===2?[0,4,8,2,6,1,7,3,5]:[0,1,2,4,7,6,3,8,5];
-function board(n,a,b,filled,animated){for(var j=0;j<9;j++){var x=221+(j%3)*269,y=465+Math.floor(j/3)*146,which=-1;for(var z=0;z<9;z++)if(order[z]===j)which=z;var on=which<filled,start=on&&animated?a+(.65+which*.57):a;
- shape(n+' cell '+j,250,132,x,y,on?'#1B3E40':'#1B2439',a,b,on?A:'#51647F');
- txt(n+' label '+j,boardLabels[j],x,y+8,26,white,a,b,222,'center',false);
- if(on){shape(n+' lit '+j,250,132,x,y,P.index===1?'#74334F':'#255D5B',start,b,A,'rounded',97);
- txt(n+' clear '+j,P.index===1?'♥ CLEAR':'CLEAR!',x,y-12,32,A,start,b,220,'center',false);
- txt(n+' cleared label '+j,boardLabels[j],x,y+35,24,white,start,b,220,'center',false);}}
-}
-c=group('empty board to first clears',2,P.montage);
-board('Opening board',2,P.montage,3,true);
-cam(c,2,540,960,100,0);cam(c,2.5,540,960,100,0);
-var bt=[2,2.5];for(var j=0;j<3;j++){var cellIndex=order[j],wx=221+(cellIndex%3)*269,wy=465+Math.floor(cellIndex/3)*146,at=2.86+j*.62,hold=at+.28;
-follow(c,at,wx,wy,P.boardZoom,420,595,'盤面 '+boardLabels[cellIndex]);follow(c,hold,wx,wy,P.boardZoom,420,595,'盤面着地 '+boardLabels[cellIndex]);bt.push(at,hold);}
-restore(c,4.92,'最初の3マスから盤面全体へ');cam(c,P.montage-.02,540,960,100,0);bt.push(4.92,P.montage-.02);finish(c,bt);
-// A fixed viewport clips only moving board objects; the character is above it.
-shape('Opening board lower viewport',1080,1080,540,1405,navy,2,P.montage,null,'rect',100,true);
-shape('Opening board upper viewport',1080,375,540,187.5,navy,2,P.montage,null,'rect',100,true);
-shape('Opening board left viewport',72,520,36,635,navy,2,P.montage,null,'rect',100,true);
-shape('Opening board right viewport',162,520,999,635,navy,2,P.montage,null,'rect',100,true);
-txt('First drop title',P.index===0?'みんなと、挑戦！':P.index===1?'応援が、集まって。':'BINGO, START!',90,330,70,white,2,P.montage,820,'left',true);
-pill('First try','初挑戦のビンゴ',300,945,420,2,P.montage,A);
-txt('First drop side 1',P.index===1?'ひとつ、':'ひとマス、',90,1140,56,white,2.35,P.montage,390,'left',true);
-txt('First drop side 2',P.index===1?'またひとつ。':'またひとマス。',90,1235,51,A,2.65,P.montage,400,'left',true);
-rays('Drop trail ',2,P.montage,A);
-// Three typography scenes take the place of future stream highlights.
-var m=P.montage,span=(P.climax-m)/4;
-var words=P.index===1?[['はじめまして！','出会ってくれて'],['凸、ありがとう！','つながってくれて'],['セリフも全力！','笑ってくれて']]:P.index===2?[['HELLO!','初見さん、ようこそ'],['CONNECT!','同事務所の仲間も'],['REQUEST!','セリフで、大盛況']]:[['初見さん！','出会いが増えて'],['仲間も、集合！','同事務所の凸も'],['セリフ、全力！','リクエストで加速']];
-for(var sc=0;sc<3;sc++){var a=m+sc*span,b=m+(sc+1)*span,fill=4+sc*2;c=group('highlight '+sc,a,b);
- pill('Highlight badge '+sc,'THANK YOU / '+String(sc+1).padStart(2,'0'),300,300,420,a,b,sc%2?B:A);
- txt('Highlight action '+sc,words[sc][0],85,505,P.index===2?112:95,white,a,b,820,'left',true);
- txt('Highlight caption '+sc,words[sc][1],90,610,48,A,a+.15,b,800,'left',true);
- var giant=txt('Clear count '+sc,String(fill).padStart(2,'0'),83,951,268,sc%2?B:A,a+.12,b,570,'left',true);
- txt('Clear fraction '+sc,'/ 09',535,880,64,white,a+1.08,b-.38,225,'left',false);
- shape('Progress rail '+sc,795,14,490,1010,'#34435B',a,b,null,'rect');
- shape('Progress fill '+sc,795*fill/9,14,92+795*fill/18,1010,A,a,b,null,'rect');
- if(P.index===2){for(var j=0;j<5;j++){var l=txt('Disco letter '+sc+' '+j,'BINGO'.charAt(j),135+j*155,700,80,j%2?A:B,a+beat*j*.15,b,145,'center',true);}}
- else rays('Highlight trails '+sc+' ',a,b,A);
- cam(c,a,540+(sc%2?100:-100),1020,110,0);cam(c,a+.28,540,960,100,0);
- follow(c,a+.65,490,500,112,490,500,'見出し '+sc);follow(c,a+.85,490,500,112,490,500,'見出し着地 '+sc);
- follow(c,a+1.14,267,850,P.counterZoom,300,625,'達成カウンター '+fill);follow(c,b-.62,267,850,P.counterZoom,300,625,'数字着地 '+fill);
- restore(c,b-.30,'ハイライト '+sc+' 全体復帰');cam(c,b-.02,540,960,100,0);finish(c,[a,a+.28,a+.65,a+.85,a+1.14,b-.62,b-.30,b-.02]);
- shape('Highlight upper viewport '+sc,1080,430,540,215,navy,a+.92,b-.38,null,'rect',100,true);
- txt('Highlight lower '+sc,P.index===1?'応援を、':'どんどん、',90,1200,52,white,a+.23,b,395,'left',true);
- txt('Highlight lower 2 '+sc,P.index===1?'ぎゅっと。':'CLEAR!',90,1290,70,sc%2?B:A,a+.35,b,395,'left',true);
- if(P.index===1)heart('Gift heart '+sc,320,1480,90,a+.3,b,sc%2?B:A);
-}
-// Final cell: the eight lit squares return as an actual board.
-var a=m+3*span,b=P.climax;c=group('last square',a,b);
-board('Almost board',a,b,8,false);
-var cell=shape('Final square focus',250,132,759,611,navy,a,b,A,'rounded',100);
-txt('Final square question','あと１マス！',759,623,29,A,a,b,220,'center',false);
-cam(c,a,540,960,100,0);cam(c,a+.35,540,960,100,0);
-follow(c,a+.78,759,611,P.lastZoom,420,595,'最後の１マス');follow(c,b-.65,759,611,P.lastZoom,420,595,'最後の１マス着地');restore(c,b-.22,'達成直前の盤面全体');cam(c,b-.03,540,960,100,0);finish(c,[a,a+.35,a+.78,b-.65,b-.22,b-.03]);
-shape('Last board lower viewport',1080,1080,540,1405,navy,a,b,null,'rect',100,true);
-shape('Last board upper viewport',1080,375,540,187.5,navy,a,b,null,'rect',100,true);
-shape('Last board left viewport',72,520,36,635,navy,a,b,null,'rect',100,true);
-shape('Last board right viewport',162,520,999,635,navy,a,b,null,'rect',100,true);
-txt('Last square headline','あと、ひとマス。',90,328,78,white,a,b,815,'left',true);
-txt('Reach label','REACH!',90,1020,112,B,a+.15,b,410,'left',true);
-txt('Reach aside','みんなの力で',90,1190,43,white,a+.3,b,395,'left',true);
-txt('Reach aside 2','ここまで来た。',90,1265,43,A,a+.4,b,395,'left',true);
-key(cell,'transform/scale',b-2*beat,[100,100]);key(cell,'transform/scale',b-beat,[106,106]);key(cell,'transform/scale',b-.03,[100,100]);
-// Completion expands across a full grid; effects remain below the fixed image.
-a=P.climax;b=P.outro;c=group('all nine complete',a,b);
-shape('Victory field',1100,1940,540,960,navy,a,b,null,'rect',97,true);
-txt('Victory BINGO','BINGO!',82,435,P.index===2?173:164,A,a,b,825,'left',true);
-txt('Victory headline','初ビンゴ、',90,565,75,white,a+.18,b,820,'left',true);
-txt('Victory all clear','全マス達成!!',90,715,108,B,a+.30,b,820,'left',true);
-for(var j=0;j<9;j++){var x=127+j%3*126,y=962+Math.floor(j/3)*112;shape('Victory mini cell '+j,110,96,x,y,j%2?A:B,a+.12+j*.035,b,null,'rounded');txt('Victory mini check '+j,P.index===1?'♥':'✓',x,y+22,45,navy,a+.15+j*.035,b,100,'center',true);}
-txt('Victory 9/9','9 / 9',90,1390,78,A,a+.7,b,395,'left',true);
-if(P.index===1)heart('Victory gift heart',320,1520,70,a+.8,b,B);
-cam(c,a,650,1040,116,0);cam(c,a+.25,540,960,100,0);cam(c,a+.65,540,960,100,0);
-follow(c,a+1,253,1074,164,300,630,'完成した9マスへ');follow(c,a+1.75,253,1074,164,300,630,'完成盤面を読む');restore(c,a+2.14,'BINGOと全マス達成へ復帰');cam(c,b-.03,540,960,100,0);finish(c,[a,a+.25,a+.65,a+1,a+1.75,a+2.14,b-.03]);confetti(a,b);
-shape('Completion focus upper viewport',1080,290,540,145,navy,a+.84,a+1.98,null,'rect',100,true);
-txt('Completion focus caption','みんなで、9マス。',90,355,52,white,a+.95,a+1.88,820,'left',false);
-// Four seconds of readable appreciation and the exact promise, without a date.
-a=P.outro;b=D;c=group('thank you and chorus preview',a,b);
-txt('Outro thank you 1','みんな本当に',90,480,94,white,a,b,810,'left',true);
-txt('Outro thank you 2','ありがとう♡',90,625,106,A,a+.15,b,810,'left',true);
-shape('Chorus reveal card',810,165,490,815,'#203443',a+.35,b,A);
-txt('Chorus reveal 1','歌ってみたサビ',490,802,61,white,a+.38,b,760,'center',true);
-txt('Chorus reveal 2','後日公開！',490,878,61,B,a+.52,b,760,'center',true);
-txt('Outro follow up','お楽しみに。',90,1175,55,white,a+.7,b,400,'left',true);
-txt('Outro name','音桜夢',90,1345,68,A,a+.8,b,380,'left',true);
-txt('Outro reading','おさゆ',95,1400,30,white,a+.85,b,380,'left',false);
-txt('Outro handle','@oosayuuu2525',90,1510,27,A,a+.9,b,410,'left',false);
-cam(c,a,575,990,105,0);cam(c,a+.3,540,960,100,0);
-follow(c,a+.7,490,560,112,490,500,'感謝の言葉へ');follow(c,a+1.12,490,815,111,490,745,'歌ってみたサビ予告へ');follow(c,a+2.25,490,815,111,490,745,'後日公開を読む');restore(c,24.25,'感謝と予告の全体表示');cam(c,D-.03,540,960,100,0);finish(c,[a,a+.3,a+.7,a+1.12,a+2.25,24.25,D-.03]);
-// Directional wipes punctuate the story, never affecting the character layer.
-var trans=[2,m,m+span,m+span*2,m+span*3,P.climax,P.outro];rig=null;
-for(var k=0;k<trans.length;k++){var at=trans[k],sg=P.index===1?1:k%2?1:-1,w=shape('Whip transition '+k,1160,2600,-1700*sg,960,k%2?B:A,at-.085,at+.11,null,'rect',100,true);set(w,'transform/rotation',sg*-12);key(w,'transform/position',at-.085,[-1700*sg,960]);key(w,'transform/position',at+.11,[2300*sg,960]);run('layer.setSwitch',{layers:[w],switch:'motionBlur',value:true});motionLedger.push({kind:'wipe',time:at});}
-shape('Brand strip',810,46,490,200,navy,0,D,null,'rounded',95,true);
-txt('Brand text','OSAYU / 音桜夢     FIRST BINGO : THANK YOU',490,209,21,A,0,D,775,'center',false);
-${includeCharacter?`var fixed=picture('CHARACTER ORIGINAL FIXED',imp.items[1],730,1290,380/905*100);set(fixed,'transform/anchor',[452.5,905,0]);set(fixed,'transform/rotation',0);set(fixed,'transform/opacity',100);run('layer.setSwitch',{layers:[fixed],switch:'motionBlur',value:false});`:`shape('CHARACTER RESERVED PREVIEW ONLY',380,760,730,1290,'#6B7F88',0,D,A,'rect',18,true);`}
-app.endUndoGroup();writeLn(JSON.stringify({comp:comp,boxes:boxes,motionLedger:motionLedger,trackingTargets:trackingTargets,includeCharacter:${includeCharacter},duration:D,bpm:P.bpm,cuts:P.cuts,characterBounds:{x:540,y:910,width:380,height:760}}));`;
+var world=run('layer.newNull',{name:'WHOLE FRAME CAMERA'}).layer;set(world,'transform/anchor',[540,960,0]);set(world,'transform/position',[540,960,0]);timing(world,0,D);
+function attach(l){run('layer.setParent',{layers:[l],parent:world,compensate:true});run('layer.setSwitch',{layers:[l],switch:'motionBlur',value:false});return l;}
+function shape(n,w,h,x,y,c,a,b,stroke,kind,op){var l=run('layer.newShape',{name:n,kind:kind||'rounded',size:[w,h],position:[x,y],fill:c,stroke:stroke||c,strokeWidth:stroke?3:0}).layer;timing(l,a,b);attach(l);if(op!==undefined)set(l,'transform/opacity',op);return l;}
+function txt(n,s,x,y,z,c,a,b,w,align,pop){var l=run('layer.newText',{name:n,text:s,font:'Meiryo',style:'Bold',size:z,fill:c,position:[x,y],justify:align||'left'}).layer;var rect=app.project.activeItem.layer(n).sourceRectAtTime(a,false);if(rect.width>(w||850)){z=Math.floor(z*(w||850)/rect.width);run('layer.setText',{layer:l,size:z});rect=app.project.activeItem.layer(n).sourceRectAtTime(a,false);}timing(l,a,b);attach(l);boxes.push({name:n,text:s,size:z,x:x+rect.left,y:y+rect.top,width:rect.width,height:rect.height,start:a,end:b});if(pop){key(l,'transform/position',a,[x+(align==='center'||P.index===1?0:95),y+(align==='center'?35:80)]);key(l,'transform/position',a+.13,[x-5,y-7]);key(l,'transform/position',a+.24,[x,y]);ease(l,'transform/position',[a,a+.13,a+.24]);}return l;}
+function picture(n,it,x,y,s,anchor){var l=run('layer.addItem',{item:it,time:0,duration:D}).layer;run('layer.rename',{layer:l,name:n});timing(l,0,D);set(l,'transform/position',[x,y,0]);set(l,'transform/scale',[s,s,100]);set(l,'transform/anchor',anchor);set(l,'transform/rotation',0);set(l,'transform/opacity',100);attach(l);return l;}
+function pill(n,s,x,y,w,a,b,c){shape(n+' paper',w,62,x,y,paper,a,b,c,'rounded',94);txt(n,s,x,y+12,25,ink,a,b,w-30,'center',false);}
+function focus(t,target,screen,s,r,label){t=Math.round(t*30)/30;var q=r*Math.PI/180,k=s/100,dx=(target[0]-540)*k,dy=(target[1]-960)*k;var pos=[screen[0]-dx*Math.cos(q)+dy*Math.sin(q),screen[1]-dx*Math.sin(q)-dy*Math.cos(q),0];wholeCameraKeys.push({time:t,position:pos,scale:[s,s,100],rotation:r,anchor:[540,960,0],focus:{target:target,screen:screen},label:label});}
+function cameraShot(a,b,index,tx,ty,zoom){var sg=(index+P.index)%2?1:-1;focus(a,[540,960],[540+sg*230,1010],123,sg*2.8,'scene '+index+' arrival');focus(a+.2,[540,960],[540,960],102,sg*.6,'scene '+index+' settle');if(b-a>.95){focus(a+.56,[tx,ty],[520,690],zoom,sg*(P.index===2?2.7:1.7),'scene '+index+' follow');focus(b-.28,[tx,ty],[520,680],zoom+2,sg*(P.index===2?1.5:.8),'scene '+index+' hold');}focus(b-.03334,[540,960],[540-sg*50,960],105,-sg*.4,'scene '+index+' exit');}
+// One real paper world. The background, all pages, text and illustration share this parent.
+var bg=picture('BINGO PAPER BACKGROUND',imp.items[0],540,960,160,[${manifest.width/2},${manifest.height/2},0]);
+for(var i=0;i<P.scenes.length;i++){var s=P.scenes[i],col=i%3===0?blue:i%3===1?pink:lav;shape('Scene pastel wash '+i,2000,3400,540,960,col,s.a,s.b,null,'rect',i===7?22:13);}
+for(var i=0;i<9;i++){var dot=shape('Paper world confetti '+i,28+(i%3)*8,28+(i%3)*8,i%2?1030:45,330+i*150,i%2?blue:pink,0,D,null,i%3?'rounded':'ellipse',65);set(dot,'transform/rotation',i*23);}
+// Locally unaltered original; its parent is intentionally moving under the latest owner instruction.
+${includeCharacter?`var character=picture('CHARACTER ORIGINAL FIXED',imp.items[1],730,1290,380/905*100,[452.5,905,0]);`:`shape('CHARACTER RESERVED PREVIEW ONLY',380,760,730,1290,'#B4A8CD',0,D,'#8A7EC8','rect',18);`}
+var labs=['初見さん','いいね','シェア','ギフト','ミンカベア','フォロー','ハートミー','おはさゆ','同事務所凸'];
+var order=P.index===0?[0,1,2,4,7,6,3,8,5]:P.index===1?[4,0,8,1,7,3,6,2,5]:[0,4,8,2,6,1,7,3,5];
+function board(n,a,b,clear,animate){for(var j=0;j<9;j++){var x=221+(j%3)*269,y=465+Math.floor(j/3)*140,idx=order.indexOf(j),at=animate?a+.45+idx*.43:a;shape(n+' cell '+j,248,126,x,y,paper,a,b,'#9FB0E8','rounded',96);txt(n+' label '+j,labs[j],x,y+9,27,ink,a,b,222,'center',false);if(idx<clear){shape(n+' stamp '+j,248,126,x,y,idx%2?'#DCEBFF':'#F4DDF5',at,b,A,'rounded',98);txt(n+' CLEAR '+j,'CLEAR!',x,y-8,32,A,at,b,222,'center',false);txt(n+' done label '+j,labs[j],x,y+35,24,ink,at,b,220,'center',false);}}}
+function header(n,small,a,b){pill(n+' label',small,330,270,490,a,b,A);}
+// 0—2: two short thank-you cards. The whole poster moves, including the illustration.
+var a=0,b=.8;header('Opening','初めてのビンゴ企画で…',a,b);txt('Opening word','みんな！',85,555,150,ink,a,b,850,'left',true);txt('Opening aside','この日を、一緒に。',90,1260,32,A,a,b,400,'left',false);cameraShot(a,b,0,470,530,115);
+a=.8;b=2;header('Thanks opening','OSAYU / FIRST BINGO',a,b);txt('Thanks opening word','ありがとう♡',85,560,115,A,a,b,860,'left',true);txt('Thanks opening second','はじめての挑戦が…',90,730,60,ink,a+.1,b,820,'left',true);cameraShot(a,b,1,490,580,116);
+// Empty grid -> first three stamps. Camera crosses the poster, not a small viewport.
+a=2;b=P.montage;header('First bingo','みんなと、初挑戦！',a,b);board('First board',a,b,3,true);txt('First board aside 1','ひとつずつ、',90,1180,48,ink,a+.3,b,395,'left',true);txt('First board aside 2','CLEAR!',90,1270,68,A,a+.5,b,400,'left',true);
+focus(a,[540,960],[770,1010],123,2.8,'board page arrival');focus(a+.24,[540,960],[540,960],100,0,'board whole');
+for(var j=0;j<3;j++){var at=a+.85+j*.65,cell=order[j];focus(at,[221+(cell%3)*269,465+Math.floor(cell/3)*140],[490,620],P.index===2?151:144,(j%2?1:-1)*2,'board cell '+j);}
+focus(b-.42,[540,960],[540,960],103,-1,'board return');focus(b-.03334,[540,960],[490,960],105,-.4,'board exit');
+// Three quick full-page scene changes, with a new headline and huge result each time.
+var words=P.index===0?[['初見さん！','出会いが増えて'],['仲間も集合！','同事務所の凸も'],['セリフ、全力！','リクエストで加速']]:P.index===1?[['はじめまして！','出会ってくれて'],['凸、ありがとう！','つながってくれて'],['セリフも全力！','笑ってくれて']]:[['HELLO!','初見さん、ようこそ'],['CONNECT!','同事務所の仲間も'],['REQUEST!','セリフで、大盛況']];
+for(var i=0;i<3;i++){a=P.sceneCuts[3+i];b=P.sceneCuts[4+i];header('Highlight '+i,'THANK YOU / '+String(i+1),a,b);txt('Highlight word '+i,words[i][0],85,475,P.index===2?116:94,ink,a,a+1,850,'left',true);txt('Highlight sub '+i,words[i][1],90,585,43,A,a+.12,a+1,820,'left',true);txt('Result '+i,String(4+i*2).padStart(2,'0'),90,955,270,A,a+.16,b,600,'left',true);txt('Result fraction '+i,'/ 09',515,895,64,ink,a+.35,b,265,'left',false);pill('Result tag '+i,'CLEAR!',290,1130,390,a+.3,b,B);txt('Result lower '+i,P.index===1?'応援を、ぎゅっと。':'みんなの力で。',90,1335,38,ink,a+.4,b,410,'left',true);
+var sg=(i+P.index)%2?1:-1,z=P.index===2?143:P.index===1?132:139;focus(a,[540,960],[540+sg*230,1010],123,sg*2.8,'highlight page arrival');focus(a+.2,[540,960],[540,960],102,sg*.5,'highlight whole');focus(a+.5,[490,460],[490,560],116,sg*1.5,'headline follow');focus(a+.90,[490,460],[490,560],116,sg*.8,'headline readable hold');focus(a+1.20,[290,825],[430,760],z,sg*2,'counter page follow');focus(b-.28,[290,825],[440,750],z+2,sg*.7,'counter readable hold');focus(b-.03334,[540,960],[540-sg*50,960],105,-sg*.4,'counter page exit');}
+// Reach page, close-up of the last square, then return before the completion hit.
+a=P.sceneCuts[6];b=17;header('Reach','あと、ひとマス。',a,b);board('Reach board',a,b,8,false);shape('Last square paper',248,126,759,605,'#F1D8F2',a,b,A);txt('Last square label','あと1マス！',759,617,29,ink,a,b,222,'center',false);txt('Reach big','REACH!',90,1110,102,A,a+.2,b,410,'left',true);txt('Reach aside','ここまで、一緒に。',90,1290,37,ink,a+.35,b,400,'left',true);
+focus(a,[540,960],[320,980],122,-2.8,'reach page arrival');focus(a+.24,[540,960],[540,960],100,0,'reach whole');focus(a+.75,[759,605],[520,650],P.index===2?170:160,2.4,'last square');focus(b-.55,[759,605],[520,650],P.index===2?174:164,1,'last square hold');focus(b-.20,[540,960],[540,960],100,0,'reach return');focus(b-.03334,[540,960],[540,960],103,-.4,'reach exit');
+// The 17-second hit is a new page, followed by a travelling complete grid.
+a=17;b=P.outro;header('Victory','初ビンゴ、全マス達成！',a,b);txt('Victory big','BINGO!',65,535,174,A,a,b,890,'left',true);txt('Victory full','全マス達成!!',90,735,108,ink,a+.18,b,840,'left',true);
+for(var j=0;j<9;j++){var x=145+j%3*119,y=1030+Math.floor(j/3)*108;shape('Completed tile '+j,102,94,x,y,j%2?blue:pink,a+.15+j*.025,b,A);txt('Completed check '+j,'✓',x,y+18,45,ink,a+.19+j*.025,b,90,'center',false);}txt('Victory 9/9','9 / 9',90,1440,72,A,a+.6,b,410,'left',true);
+focus(a,[540,960],[740,1020],125,2.8,'victory scene hit');focus(a+.25,[540,960],[540,960],100,0,'victory whole');focus(a+.85,[264,1138],[380,795],139,-2.3,'completed grid follow');focus(a+1.5,[264,1138],[400,790],143,1,'completed grid hold');focus(a+1.95,[490,580],[520,650],119,-1,'victory words');focus(b-.25,[540,960],[540,960],100,0,'victory return');focus(b-.03334,[540,960],[500,960],104,-.4,'victory exit');
+for(var j=0;j<34;j++){var x=j%2?30+(j*79)%430:970+(j%3)*25,t=a+(j%5)*.04,end=Math.min(b,t+2.8),l=shape('Victory confetti '+j,12+j%3*5,32,x,250+(j%7)*60,j%2?blue:pink,t,end,null,j%3?'rect':'ellipse',85);key(l,'transform/position',t,[x,250+(j%7)*60]);key(l,'transform/position',end,[x+(j%2?90:-40),1520]);key(l,'transform/rotation',t,j*27);key(l,'transform/rotation',end,j*27+240);key(l,'transform/opacity',end,0);}
+// Separate gratitude and teaser pages keep the ending moving and readable.
+a=P.outro;b=P.sceneCuts[9];header('Closing thanks','みんな、本当に',a,b);txt('Closing thanks big','ありがとう♡',85,565,116,A,a,b,855,'left',true);txt('Closing thanks lower','一緒に叶えた、9マス。',90,780,55,ink,a+.1,b,830,'left',true);txt('Closing thanks name','音桜夢 / おさゆ',90,1360,35,ink,a,b,430,'left',false);cameraShot(a,b,8,490,590,116);
+a=P.sceneCuts[9];b=D;header('Chorus teaser','約束のごほうび、準備中。',a,b);txt('Chorus teaser first','歌ってみた',85,485,113,ink,a,b,855,'left',true);txt('Chorus teaser chorus','サビ',85,665,160,A,a+.12,b,840,'left',true);shape('Chorus teaser ribbon',820,123,490,830,'#E4D5F8',a+.2,b,A);txt('Chorus teaser soon','後日公開！',490,861,78,ink,a+.25,b,765,'center',true);txt('Chorus teaser enjoy','お楽しみに。',90,1250,49,A,a+.35,b,405,'left',true);txt('Chorus teaser handle','@oosayuuu2525',90,1435,27,ink,a+.4,b,410,'left',false);
+focus(a,[540,960],[310,1000],123,-2.8,'teaser new page');focus(a+.23,[540,960],[540,960],100,0,'teaser whole');focus(a+.7,[490,700],[490,720],116,1.7,'teaser follow');focus(24.33,[540,960],[540,960],100,0,'final whole return');focus(24.96667,[540,960],[540,960],100,0,'final readable hold');
+// Full-screen paper shutters are above the illustration and belong to the SAME camera.
+var transitionTimes=P.sceneCuts.slice(1,-1).concat(P.extraTransitions).sort(function(a,b){return a-b;});for(var i=0;i<transitionTimes.length;i++){var t=transitionTimes[i],sg=(i+P.index)%2?1:-1,col=i%3===0?lav:i%3===1?blue:pink;var w=shape('FULL SCENE PAPER WIPE '+i,2200,5200,540-sg*2700,960,col,t-.13,t+.15,null,'rect',100);set(w,'transform/rotation',sg*(P.index===1?11:6));key(w,'transform/position',t-.13,[540-sg*2700,960]);key(w,'transform/position',t-.03334,[540,960]);key(w,'transform/position',t+.03334,[540,960]);key(w,'transform/position',t+.15,[540+sg*3300,960]);run('layer.setSwitch',{layers:[w],switch:'motionBlur',value:true});transitions.push({time:t,type:P.index===1?'diagonal-paper-wipe':'whole-screen-paper-whip',layer:w,includesIllustration:true});}
+wholeCameraKeys.sort(function(a,b){return a.time-b.time;});for(var ki=0;ki<wholeCameraKeys.length;ki++){var kk=wholeCameraKeys[ki];key(world,'transform/position',kk.time,kk.position);key(world,'transform/scale',kk.time,kk.scale);key(world,'transform/rotation',kk.time,kk.rotation);}var ts=wholeCameraKeys.map(function(k){return k.time;});ease(world,'transform/position',ts);ease(world,'transform/scale',ts);ease(world,'transform/rotation',ts);
+app.endUndoGroup();writeLn(JSON.stringify({comp:comp,boxes:boxes,wholeCameraKeys:wholeCameraKeys,sceneCuts:P.sceneCuts,transitions:transitions,includeCharacter:${includeCharacter},duration:D,bpm:P.bpm,characterBase:base,backgroundBounds:{x:${540-manifest.width*.8},y:${960-manifest.height*.8},width:${manifest.width*1.6},height:${manifest.height*1.6}},wholeFrameCamera:'WHOLE FRAME CAMERA'}));`;
 }
