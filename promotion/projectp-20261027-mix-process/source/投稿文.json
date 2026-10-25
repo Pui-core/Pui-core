@@ -3,7 +3,7 @@
   "tiktok": "同じ歌、余韻を減らすとどう変わる？\n\nmedicateのV5→V6を、同じ区間で2回聴き比べ。\nキーと元の歌は保ち、フックの余韻と強弱を調整した記録です。\n\nどちらの距離感が好き？\n\n曲・歌・MV：ぷい\n※実MIXの比較。波形は実音源から描画、モデルの動きは編集です。\n\n#medicate #音楽制作 #MIX #ぷい",
   "characters": 160,
   "targetDateJst": "2026-10-27",
-  "state": "CANDIDATE_PREPRODUCED_NOT_PUBLISHED",
+  "state": "DRAFT_HOLD_NATIVE_WAVE_RIGHT_EDGE_RECHECK",
   "credit": "曲・歌・MV：ぷい",
   "sourceInterval": [
     21.3,
@@ -15,5 +15,16 @@
   "model": "Revenant_Natural",
   "nativeTikTokPreview": false,
   "wholeSubjectiveAudition": false,
-  "day27ActivityAndAdoptionPending": true
+  "day27ActivityAndAdoptionPending": true,
+  "revision": "02_NATIVE_WAVE_SAFE",
+  "nativeUi": {
+    "previousRevision": "01_LIVE2D",
+    "previousPreviewInspected": true,
+    "previousWaveRightEdgeOccluded": true,
+    "currentRevision": "02_NATIVE_WAVE_SAFE",
+    "currentPreviewVerified": false,
+    "evidence": "qa/native-wave-safe-fix.json",
+    "serverDraftSaved": false,
+    "published": false
+  }
 }

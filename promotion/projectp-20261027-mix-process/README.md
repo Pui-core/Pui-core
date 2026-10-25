@@ -1,8 +1,8 @@
-# 同じ歌、余韻を減らすと？
+# 同じ歌、余韻を減らすと？ / revision02
 
 [23.1秒のMIX比較](videos/mix-process.mp4) / [カバー](covers/mix-process-cover.png) / [再生ページ](index.html)
 
-10/27向けの先行制作候補です。medicateのV5/V6を同じ21.30〜25.20秒から取り、A→Bを2回聴き比べる構成にしました。本人が記録に残した「フックリバーブかけすぎ」「自然な強弱を優先したい」という要望と、V6比較の「このバランスでよい」を軸にしています。架空のDAWやチャット画面、未収録の手作業・感情は使いません。
+10/27向けの先行制作候補です。初版の実TikTokプレビューで波形右端へavatar/heart列が重なったため、revision02では比較カード・波形・時刻軸・カーソルを共通の横変換で収め直しました。**新版の実TikTok再確認まではDraft/HOLDです。**medicateのV5/V6を同じ21.30〜25.20秒から取り、A→Bを2回聴き比べる構成にしました。本人が記録に残した「フックリバーブかけすぎ」「自然な強弱を優先したい」という要望と、V6比較の「このバランスでよい」を軸にしています。架空のDAWやチャット画面、未収録の手作業・感情は使いません。
 
 ## 比較の条件
 
@@ -26,7 +26,7 @@ V5/V6はリバーブとマスターの強弱処理を含む実MIX比較です。
 
 ## モデルとCraft原本
 
-指定Revenant_NaturalのMOC SHA `6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e` を既設の正式Cubism Core 06.00.0513で実ロードし、180枚・6秒の透過loopを一度描画しました。口は全フレームで閉じ、瞬き・微小な首/呼吸だけを編集しています。歌や伴奏で口を動かさず、本人の歌唱実演・カメラ追跡・VTS物理とは扱いません。
+指定Revenant_NaturalのMOC SHA `6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e` を既設の正式Cubism Core 06.00.0513で実ロードし、初版で180枚・6秒の透過loopを一度描画しました。revision02では同じ連番とalpha動画をFの初版から再利用し、Coreを再描画していません。口は全フレームで閉じ、瞬き・微小な首/呼吸だけを編集しています。歌や伴奏で口を動かさず、本人の歌唱実演・カメラ追跡・VTS物理とは扱いません。
 
 Coreで得た実メッシュとatlasをソフトウェア描画するMIT utilityだけを既存97から再利用しています。著作権表示は `source/live2d-renderer-LICENSE.txt` に保持。モデル・SDKのrawデータは同梱/公開せず、稼働中の配信環境を操作しません。論理framingと描画上の制約は97の手順を参照し、本候補の実フレームで検証しています。
 
@@ -34,11 +34,17 @@ Coreで得た実メッシュとatlasをソフトウェア描画するMIT utility
 - EffectCraft: `projects/mix-process.ecproj`。案内役、比較表示、同じsource時刻に対応するカーソルと切替。
 - FilmCraft: `projects/mix-process.fcproj`。実映像と比較音声を一度ずつ配置。
 
-最初のカーソルは時刻表示へ重なったため、波形内で終わる高さへ短縮しました。修正後の保存ECと最終MP4を再確認しています。モデルloop179→180等の境界は最終encoded ROIと抽出画像で検査し、頭部余白は全180枚で24px、頭部端接触0です。
+初版でカーソルが時刻表示へ重なったため、カーソルは波形内で終わる高さへ短縮済みです。修正後の保存ECと最終MP4を再確認しています。モデルloop179→180等の初版encoded ROI検査は同じloop素材/配置の根拠として保持し、新版で再計測したものとは扱いません。頭部余白は全180枚で24px、頭部端接触0です。
+
+## 実TikTokでの波形端とrevision02の修正
+
+初版のnative A1/B1/A2/B2では右端の数%の波形に操作列が重なりました。9枚の対象phone/cover cropと原packetは `qa/native99-revision01-result.json` に旧master/coverのSHAのまま保存しています。初版の見出し・顔・A/B・creditが読める事実と、波形全体の未達を分けます。
+
+新版は `x′ = 54 + (x - 54) × 0.85` をA/B共通に適用。カードはx54〜880.2、data/cursorはx115.2〜800.64へ収まり、縦方向の振幅・全128区間・同じ時間軸・音源のcueを維持しています。データをcropしていません。cover/比較PCM/Core素材は不変です。新MP4の全decode・4AAC窓のlag・対象encoded96/231/375/513を確認し、Fから原本を再読込します。計算上の余白と抽出画像だけで新native UIをPASSにはせず、rootの再確認へ接続します。
 
 ## 納品・確認・公開前の残件
 
-納品先は `F:\Videos\ProjectP-Mix-Process-2026-10-27\revision-01-live2d`。原本再読込に必要な描画済み連番・alpha loop・映像中間・比較mixをそろえ、Fから3Craft原本を再読込・保存・描画し、素材欠損0とSHA対応を確認しました。原曲全体・raw beat/stems・モデル原本・SDKは新たに公開Gitへ追加しません。公開checkoutでは無視した大きな中間をrecipeから再生成します。
+納品先は `F:\Videos\ProjectP-Mix-Process-2026-10-27\revision-02-native-safe`。初版 `revision-01-live2d` とmaster SHA `68e6ee6f…109a625` は保持し上書きしません。原本再読込に必要な描画済み連番・alpha loop・映像中間・比較mixをそろえ、Fから3Craft原本を再読込・保存・描画し、素材欠損0とSHA対応を確認しました。原曲全体・raw beat/stems・モデル原本・SDKは新たに公開Gitへ追加しません。公開checkoutでは無視した大きな中間をrecipeから再生成します。
 
 最終1080×1920/30fps/693枚、全AVdecode、AAC音量/peak・4区間の波形対応とlag、同じPCM反復、重要な切替とmodel loop、表紙中央3:4の可読性を確認しました。証跡は `qa/technical.json`、`audio-final.json`、`final-frame-binding.json`、`model-loop-final.json`、`delivery.json`。これらは数値・抽出画像・原本再読込の確認です。
 

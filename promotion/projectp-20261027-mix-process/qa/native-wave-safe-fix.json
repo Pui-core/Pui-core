@@ -1,0 +1,119 @@
+{
+  "issue": 99,
+  "finding": "PP99-NATIVE-WAVE-RIGHT-EDGE",
+  "severity": "P2",
+  "state": "PICTURE_FIX_PENDING_NEW_NATIVE_ROOT_VERIFICATION",
+  "before": {
+    "revision": "01_LIVE2D",
+    "videoSha256": "68e6ee6f67330f9eaad6faf663c32cb1956b530bff4d825e3183fb74a109a625",
+    "coverSha256": "e2812ab0a0ef5077fbd84e816e392b1f23b73ef6bfdd17467aed86f45b202d55",
+    "nativePacket": {
+      "file": "qa/native99-revision01-result.json",
+      "sha256": "a844fc3f9998ecfce2f38114714b217e029e99615a02738f9196f7ea267fbbb3"
+    },
+    "evidence": [
+      {
+        "file": "qa/native99-feed-opening.png",
+        "sha256": "f6be2162b2418450a309074bad9e6182da5cb917273b6706637eedcc3a974b48"
+      },
+      {
+        "file": "qa/native99-feed-A1.png",
+        "sha256": "5dd6030675cdf9571b18460a09233ebcab055f8fa9a4ad4f94ce988d91b0cbf0"
+      },
+      {
+        "file": "qa/native99-feed-B1.png",
+        "sha256": "9dfb0b1b48d899f23fcef178e2872089ec6a36bab1ff08fbdb1afec02c8bd91d"
+      },
+      {
+        "file": "qa/native99-feed-A2.png",
+        "sha256": "fcaac9e17eed95f4e5521cc1f56e48f53b2be00956ac8dcc5d4678b0d43decf1"
+      },
+      {
+        "file": "qa/native99-feed-B2.png",
+        "sha256": "460b829da890c93ed78694725df1403a45c72455e4f39b00b3a23a4be18e7e83"
+      },
+      {
+        "file": "qa/native99-feed-closing.png",
+        "sha256": "7331a75d5c45c0d7c0453931a1cba1cace5c2f5ee2955f0e9fbda27143a3d31f"
+      },
+      {
+        "file": "qa/native99-feed-end.png",
+        "sha256": "378c5db38d0a35df7b322c37fea70a1f647aa0798027ee99eae8bff7adbcbfce"
+      },
+      {
+        "file": "qa/native99-cover-canvas.png",
+        "sha256": "4ccbdb147d89b9594059fc32fdd72bcc46c86a935a60c90e327fb708faac9c03"
+      },
+      {
+        "file": "qa/native99-cover-profile.png",
+        "sha256": "d50bbfcadf329dfa6567b056521b971a7c50290e8adbe08e4455f3e6c9eae625"
+      }
+    ],
+    "scope": "Historical actualStudio nativepreview; rightavatar/heart overlapwaveend data. Never treated as fullplot PASS."
+  },
+  "change": {
+    "anchorX": 54,
+    "factor": 0.85,
+    "sourceCardBounds": [
+      54,
+      1026
+    ],
+    "outputCardBounds": [
+      54,
+      880.2
+    ],
+    "sourceDataBounds": [
+      126,
+      932.4
+    ],
+    "outputDataBounds": [
+      115.2,
+      800.64
+    ],
+    "all128BinsPreserved": true,
+    "verticalTransformUnchanged": true
+  },
+  "preserved": {
+    "sourceInterval": [
+      21.3,
+      25.2
+    ],
+    "audioMixSha256": "baa31cd22ddc620dc41a81bad86b3b0867e70546be137d1630baaf1dcbdaa68f",
+    "coreLoopSha256": "35e08e4b9b8bd0dd28f5576aa58dc7405a8e73e4a41d9d1beed4c27e4c19da6f",
+    "coverSha256": "e2812ab0a0ef5077fbd84e816e392b1f23b73ef6bfdd17467aed86f45b202d55",
+    "oldF1MasterSha256": "68e6ee6f67330f9eaad6faf663c32cb1956b530bff4d825e3183fb74a109a625"
+  },
+  "nativeRevision02Verified": false,
+  "published": false,
+  "subjectiveAudition": false,
+  "after": {
+    "revision": "02_NATIVE_WAVE_SAFE",
+    "videoSha256": "7cc316e143590abe2b067e5af6d41649a9f12306d5d56fb10a105f62bd108246",
+    "effectcraftSha256": "55199c14ec73f74b260eaf5826d6aba52dc25f69d55b5052423e9a1ac64483f8",
+    "filmcraftSha256": "60c2a18d90c059e71cfea2b2bfbfdaadd2ebd1736ec56145d9d1be824e1b1328",
+    "coverSha256": "e2812ab0a0ef5077fbd84e816e392b1f23b73ef6bfdd17467aed86f45b202d55",
+    "criticalFrames": [
+      {
+        "frame": 96,
+        "file": "qa/final-frame-96.png",
+        "sha256": "ccc6444dfdf940c2044e7d5df4183dd07e4a96feebaac4b624c08dd591803302"
+      },
+      {
+        "frame": 231,
+        "file": "qa/final-frame-231.png",
+        "sha256": "48c1bfc52971a6c98234be4f0d1d40e7b75cefcaaa056820f76e5167cc8750e4"
+      },
+      {
+        "frame": 375,
+        "file": "qa/final-frame-375.png",
+        "sha256": "cdcd84d396b059a6c1a2744b6e0f686a31f97fdc14100e01d49464663a81ad53"
+      },
+      {
+        "frame": 513,
+        "file": "qa/final-frame-513.png",
+        "sha256": "a5da1f1dc7f968daf7b0afd935a1c6387117ca345073e5bab4f4cceda63489c6"
+      }
+    ],
+    "nativeVerified": false
+  }
+}

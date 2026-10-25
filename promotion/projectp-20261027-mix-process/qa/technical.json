@@ -1,5 +1,5 @@
 {
-  "status": "PASS_WITHIN_CANDIDATE_TECHNICAL_SCOPE",
+  "status": "TECHNICAL_PASS_PENDING_REVISION02_NATIVE_WAVE_RIGHT_EDGE_RECHECK",
   "format": {
     "width": 1080,
     "height": 1920,
@@ -46,11 +46,18 @@
       "gainDb": -0.02259275215282092
     }
   ],
-  "modelLoop": "qa/model-loop-final.json",
+  "modelLoop": {
+    "evidence": "qa/model-loop-final.json",
+    "validatedVideoSha256": "68e6ee6f67330f9eaad6faf663c32cb1956b530bff4d825e3183fb74a109a625",
+    "currentVideoRoiRemeasured": false,
+    "scope": "Unchanged Core loop source and portrait placement; previous loop measurement carried forward, no new revision02 ROI measurement"
+  },
   "headBounds": "qa/model-alpha-bounds.json",
   "actualPopularMusicRequiredForThisOwnTrackComparison": false,
   "subjectiveAudition": false,
   "nativeTikTokUi": false,
   "day27Adoption": false,
-  "published": false
+  "published": false,
+  "revision": "02_NATIVE_WAVE_SAFE",
+  "nativeWaveEvidence": "qa/native-wave-safe-fix.json"
 }

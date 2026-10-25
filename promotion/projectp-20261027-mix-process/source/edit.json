@@ -1,7 +1,80 @@
 {
-  "duration":23.1,"fps":30,"sourceStart":21.3,"sourceEnd":25.2,"phraseDuration":3.9,"commonGainDb":-1,"aRelativeGainDb":-0.33,"bRelativeGainDb":0,
-  "fadeInSeconds":0.1,"fadeOutSeconds":0.01,
-  "segments":[{"label":"A","round":1,"start":2.4,"end":6.3},{"label":"B","round":1,"start":7,"end":10.9},{"label":"A","round":2,"start":11.6,"end":15.5},{"label":"B","round":2,"start":16.2,"end":20.1}],
-  "sourcePaths":{"A":"/mnt/e/Desktop/音源/medicate/MIX_v5_KeyFix/medicate_MIX_v5_KeyFix.wav","B":"/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/medicate_MIX_v6_Natural.wav"},
-  "intro":[0,2.4],"closing":[20.1,23.1],"song":"medicate","credit":"曲・歌・MV：ぷい","repeatedComparison":true,"narration":false,"externalMusic":false,"sfx":false,"subjectiveAudition":"UNCONFIRMED"
+  "duration": 23.1,
+  "fps": 30,
+  "sourceStart": 21.3,
+  "sourceEnd": 25.2,
+  "phraseDuration": 3.9,
+  "commonGainDb": -1,
+  "aRelativeGainDb": -0.33,
+  "bRelativeGainDb": 0,
+  "fadeInSeconds": 0.1,
+  "fadeOutSeconds": 0.01,
+  "segments": [
+    {
+      "label": "A",
+      "round": 1,
+      "start": 2.4,
+      "end": 6.3
+    },
+    {
+      "label": "B",
+      "round": 1,
+      "start": 7,
+      "end": 10.9
+    },
+    {
+      "label": "A",
+      "round": 2,
+      "start": 11.6,
+      "end": 15.5
+    },
+    {
+      "label": "B",
+      "round": 2,
+      "start": 16.2,
+      "end": 20.1
+    }
+  ],
+  "sourcePaths": {
+    "A": "/mnt/e/Desktop/音源/medicate/MIX_v5_KeyFix/medicate_MIX_v5_KeyFix.wav",
+    "B": "/mnt/e/Desktop/音源/medicate/MIX_v6_Natural/medicate_MIX_v6_Natural.wav"
+  },
+  "intro": [
+    0,
+    2.4
+  ],
+  "closing": [
+    20.1,
+    23.1
+  ],
+  "song": "medicate",
+  "credit": "曲・歌・MV：ぷい",
+  "repeatedComparison": true,
+  "narration": false,
+  "externalMusic": false,
+  "sfx": false,
+  "subjectiveAudition": "UNCONFIRMED",
+  "revision": "02_NATIVE_WAVE_SAFE",
+  "waveHorizontalTransform": {
+    "anchorX": 54,
+    "factor": 0.85,
+    "sourceCardBounds": [
+      54,
+      1026
+    ],
+    "outputCardBounds": [
+      54,
+      880.2
+    ],
+    "sourceDataBounds": [
+      126,
+      932.4
+    ],
+    "outputDataBounds": [
+      115.2,
+      800.64
+    ],
+    "all128BinsPreserved": true,
+    "verticalTransformUnchanged": true
+  }
 }
