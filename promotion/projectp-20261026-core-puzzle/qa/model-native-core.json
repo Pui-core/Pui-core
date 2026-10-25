@@ -1,0 +1,393 @@
+{
+  "method": "Actual installed official native Core; current Natural bytes checked",
+  "sha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e",
+  "passed": true,
+  "coreVersion": "06.00.0513 (100663809)",
+  "mocVersion": 5,
+  "nativeConsistencyPassed": true,
+  "canvas": {
+    "sizeInPixels": [
+      4344,
+      4344
+    ],
+    "originInPixels": [
+      2172,
+      2172
+    ],
+    "pixelsPerUnit": 4344
+  },
+  "counts": {
+    "parameters": 52,
+    "drawables": 58,
+    "vertices": 38044,
+    "triangles": 41526
+  },
+  "parameters": [
+    {
+      "id": "ParamNapeRPitch",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamNapeLPitch",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamBodyStrapPitch",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamBodyStrapTip",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamJacketTagLSwing",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamShoulderStrapPitch",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamShoulderStrapTip",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamShoulderTagSwing",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamPetalBSway",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamPetalASway",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamFlowerSway",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamHairPitch",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamEarringRPitch",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamEarringRSwing",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamEarringLPitch",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamEarringLSwing",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamSleeveTagSwing",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamJacketTagRSwing",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamNecklacePitch",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamNecklaceSwing",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamEarringGravityZ",
+      "min": -30,
+      "default": 0,
+      "max": 30,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamNapeRSwing",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamNapeLSwing",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamHairGravityZ",
+      "min": -30,
+      "default": 0,
+      "max": 30,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamPetalScatter",
+      "min": 0,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamVineTipsSway",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamHemPetalSway",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamArmRBlossomSway",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamArmLBlossomSway",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamNeckBlossomSway",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamWaistChainSwing",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamSmile",
+      "min": 0,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamAngleX",
+      "min": -45,
+      "default": 0,
+      "max": 45,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamAngleY",
+      "min": -30,
+      "default": 0,
+      "max": 30,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamAngleZ",
+      "min": -30,
+      "default": 0,
+      "max": 30,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamEyeLOpen",
+      "min": 0,
+      "default": 1,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamEyeROpen",
+      "min": 0,
+      "default": 1,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamEyeBallX",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamEyeBallY",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamEyeBallForm",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamBrowLY",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamBrowRY",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamMouthForm",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamMouthOpenY",
+      "min": 0,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamBodyAngleX",
+      "min": -10,
+      "default": 0,
+      "max": 10,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamBodyAngleY",
+      "min": -10,
+      "default": 0,
+      "max": 10,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamBodyAngleZ",
+      "min": -10,
+      "default": 0,
+      "max": 10,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamBodyLean",
+      "min": -10,
+      "default": 0,
+      "max": 10,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamProportion",
+      "min": -10,
+      "default": 0,
+      "max": 10,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamBreath",
+      "min": 0,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamHairFront",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    },
+    {
+      "id": "ParamHairBack",
+      "min": -1,
+      "default": 0,
+      "max": 1,
+      "affectsModel": true
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

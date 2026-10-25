@@ -17,11 +17,11 @@
     "file.placeEmbedded",
     {
       "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\before-same-camera.png",
-      "scale": 76,
+      "scale": 64,
       "fit": false,
       "center": [
         540,
-        850
+        1010
       ],
       "smartObject": true
     }
@@ -30,11 +30,24 @@
     "file.placeEmbedded",
     {
       "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\after-same-camera.png",
-      "scale": 76,
+      "scale": 64,
       "fit": false,
       "center": [
         540,
-        1340
+        1410
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-97\\promotion\\projectp-20261026-core-puzzle\\media\\revenant-cover-portrait.png",
+      "scale": 100,
+      "fit": false,
+      "center": [
+        780,
+        505
       ],
       "smartObject": true
     }
@@ -42,7 +55,7 @@
   [
     "type.create",
     {
-      "x": 100,
+      "x": 70,
       "y": 310,
       "text": "PROJECT P / ぷい",
       "font": "Meiryo",
@@ -54,11 +67,11 @@
   [
     "type.create",
     {
-      "x": 95,
-      "y": 425,
+      "x": 70,
+      "y": 435,
       "text": "はめると、",
       "font": "Meiryo",
-      "size": 92,
+      "size": 68,
       "weight": 700,
       "color": "#f3e7ca",
       "name": "Hook one"
@@ -67,11 +80,11 @@
   [
     "type.create",
     {
-      "x": 95,
+      "x": 70,
       "y": 540,
       "text": "何が変わる？",
       "font": "Meiryo",
-      "size": 92,
+      "size": 68,
       "weight": 700,
       "color": "#edb468",
       "name": "Hook two"
@@ -80,8 +93,8 @@
   [
     "type.create",
     {
-      "x": 120,
-      "y": 610,
+      "x": 190,
+      "y": 805,
       "text": "BEFORE",
       "font": "Meiryo",
       "size": 24,
@@ -92,8 +105,8 @@
   [
     "type.create",
     {
-      "x": 120,
-      "y": 1100,
+      "x": 190,
+      "y": 1205,
       "text": "AFTER",
       "font": "Meiryo",
       "size": 24,

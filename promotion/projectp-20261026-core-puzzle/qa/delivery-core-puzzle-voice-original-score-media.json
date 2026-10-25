@@ -1,0 +1,12 @@
+{
+  "exit": 0,
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-Core-Puzzle-2026-10-26\\revision-03-live2d\\projects\\core-puzzle-voice-original-score.fcproj",
+    "exec",
+    "media.status"
+  ],
+  "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"8acb2cc4bd319157\",\n      \"size\": 437534065\n    },\n    \"item\": 4,\n    \"name\": \"core-puzzle-picture.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-03-live2d\\\\media\\\\core-puzzle-picture.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"68618c62d8e86ee6\",\n      \"size\": 5760044\n    },\n    \"item\": 5,\n    \"name\": \"voice-sfx-original-score.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Core-Puzzle-2026-10-26\\\\revision-03-live2d\\\\media\\\\voice-sfx-original-score.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+  "stderr": ""
+}
