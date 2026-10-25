@@ -11,9 +11,9 @@
     },
     {
       "file": "README.md",
-      "bytes": 5470,
-      "sourceSha256": "27451e456efdab089f7b3cf10b49c06d415029edc767d9d65e5176fd632995ac",
-      "deliverySha256": "27451e456efdab089f7b3cf10b49c06d415029edc767d9d65e5176fd632995ac",
+      "bytes": 6130,
+      "sourceSha256": "8657f587f4c486e18a3eaaadff0b9f22dde21a3bf55a8668fd02a6f580747a5b",
+      "deliverySha256": "8657f587f4c486e18a3eaaadff0b9f22dde21a3bf55a8668fd02a6f580747a5b",
       "relinkedNativeProject": false
     },
     {
@@ -6003,9 +6003,9 @@
     },
     {
       "file": "source/verify.mjs",
-      "bytes": 4790,
-      "sourceSha256": "af8d4ec3c26416b852486cfd8895498618e2f631af1f6333aa13ed8e27b63112",
-      "deliverySha256": "af8d4ec3c26416b852486cfd8895498618e2f631af1f6333aa13ed8e27b63112",
+      "bytes": 4807,
+      "sourceSha256": "6d859f46ae0f88fb10c1cb913a34eb06f072d5a308a0015c6bb61e5c1c427d7a",
+      "deliverySha256": "6d859f46ae0f88fb10c1cb913a34eb06f072d5a308a0015c6bb61e5c1c427d7a",
       "relinkedNativeProject": false
     },
     {
@@ -6035,10 +6035,17 @@
       "sourceSha256": "4ad40e763f3c18abf17e3c21dd4849adf7420eab60bbaa373c38b57dfc4421ff",
       "deliverySha256": "4ad40e763f3c18abf17e3c21dd4849adf7420eab60bbaa373c38b57dfc4421ff",
       "relinkedNativeProject": false
+    },
+    {
+      "file": "qa/verify-order-regression.json",
+      "bytes": 12146,
+      "sourceSha256": "b8b12b572b4f90c23ef068040efb4078caae74f6b1300f34e663bcfef88041c8",
+      "deliverySha256": "b8b12b572b4f90c23ef068040efb4078caae74f6b1300f34e663bcfef88041c8",
+      "relinkedNativeProject": false
     }
   ],
-  "fileCount": 862,
-  "totalBytes": 1435157654,
+  "fileCount": 863,
+  "totalBytes": 1435170477,
   "missingMedia": 0,
   "all4PhotocraftPixelsMatch": true,
   "modelCoreFrames": 660,
@@ -6052,5 +6059,20 @@
     "qa/independent-visual-review.json",
     "再生一覧.m3u"
   ],
-  "nativeReopenScope": "Previous exact3Craft save/reopen/render remains applicable: only docs/proofs changed, frozen media/native projects unchanged"
+  "nativeReopenScope": "Previous exact3Craft save/reopen/render remains applicable: only docs/proofs changed, frozen media/native projects unchanged",
+  "recipeCorrection": {
+    "originalProductionHead": "3beff7679de0506cf35adc83ffbc1522a8149bf6",
+    "scope": "Frame extraction ordering only; native save/reopen results and frozen media remain historical unchanged evidence",
+    "changedFiles": [
+      "README.md",
+      "source/verify.mjs",
+      "qa/verify-order-regression.json"
+    ],
+    "matchedExistingEncodedFrames": 56,
+    "frozenMedia": {
+      "videos/missyou-stamp.mp4": "a28dc095775670380fca6551f7c394a6d719601109b98999a4531e25f7213eee",
+      "covers/missyou-stamp-cover.png": "4ed364eccfc00465f6f1f9face133db98bce3d5b759812ed3311cc3637918d4d",
+      "source/caption.txt": "f2b083f31e20ddbd8e22b64bd7ddd7773b4251772d609c5244788cec76cacf76"
+    }
+  }
 }
