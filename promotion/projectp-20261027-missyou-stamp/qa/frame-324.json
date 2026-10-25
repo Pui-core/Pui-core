@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-100\\promotion\\projectp-20261027-missyou-stamp\\projects\\missyou-stamp.ecproj",
+    "render-frame",
+    "--comp",
+    "ProjectP missyou stamp",
+    "--frame",
+    "324",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-100\\promotion\\projectp-20261027-missyou-stamp\\qa\\frame-324.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":29,\"height\":1920,\"ms\":97.0,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-100\\\\promotion\\\\projectp-20261027-missyou-stamp\\\\qa\\\\frame-324.png\",\"time\":10.8,\"width\":1080}\n",
+  "stderr": ""
+}

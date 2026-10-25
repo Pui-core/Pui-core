@@ -1,0 +1,66 @@
+{
+  "status": "PASS_WITHIN_PRODUCTION_TECHNICAL_SCOPE",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 660,
+    "duration": 22
+  },
+  "fullAvDecode": true,
+  "aacCueSync": [
+    {
+      "text": "文章なしでも、送れる？",
+      "first": 0.162625,
+      "last": 1.9240208333333335,
+      "lagSamples": 0,
+      "correlation": 0.9999432639604161,
+      "gainDb": -0.005923044726725427
+    },
+    {
+      "text": "ミスユーは、スタンプを主役に。",
+      "first": 4.480625,
+      "last": 6.3751875,
+      "lagSamples": 0,
+      "correlation": 0.9999283967509816,
+      "gainDb": -0.007783874703264855
+    },
+    {
+      "text": "一言は、添えたいときだけ。",
+      "first": 10.941229166666668,
+      "last": 12.791833333333333,
+      "lagSamples": 0,
+      "correlation": 0.9999379694889935,
+      "gainDb": -0.007542387738863907
+    },
+    {
+      "text": "スタンプだけでも、送れます。",
+      "first": 14.539520833333333,
+      "last": 16.224666666666668,
+      "lagSamples": 0,
+      "correlation": 0.9998992356653058,
+      "gainDb": -0.009179047720043215
+    },
+    {
+      "text": "ゲームも、アプリも。つぎの制作は、フォローで。",
+      "first": 17.3525,
+      "last": 20.6546875,
+      "lagSamples": 0,
+      "correlation": 0.9999645067165915,
+      "gainDb": -0.009138979559831523
+    }
+  ],
+  "levels": {
+    "integratedLufs": -20.1,
+    "truePeakDbfs": -4
+  },
+  "modelSequenceFrames": 660,
+  "headBounds": "qa/model-alpha-bounds.json",
+  "mouthRms": "qa/audio-model-sync.json",
+  "actualPopularMusicSelected": false,
+  "subjectiveWholeAudition": false,
+  "nativeTikTokUi": false,
+  "targetDayAdoption": false,
+  "scheduled": false,
+  "published": false
+}

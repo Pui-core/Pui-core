@@ -1,0 +1,155 @@
+{
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "ミ",
+          "consonant": "m",
+          "consonant_length": 0.043415218591690063,
+          "vowel": "i",
+          "vowel_length": 0.06548313051462173,
+          "pitch": 4.506613731384277
+        },
+        {
+          "text": "ス",
+          "consonant": "s",
+          "consonant_length": 0.11942993104457855,
+          "vowel": "u",
+          "vowel_length": 0.05381361395120621,
+          "pitch": 5.026741981506348
+        },
+        {
+          "text": "ユ",
+          "consonant": "y",
+          "consonant_length": 0.056060127913951874,
+          "vowel": "u",
+          "vowel_length": 0.08051955699920654,
+          "pitch": 4.879476070404053
+        },
+        {
+          "text": "ウ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "u",
+          "vowel_length": 0.06283716857433319,
+          "pitch": 4.555426120758057
+        },
+        {
+          "text": "ワ",
+          "consonant": "w",
+          "consonant_length": 0.06238746643066406,
+          "vowel": "a",
+          "vowel_length": 0.20226842164993286,
+          "pitch": 4.370370388031006
+        }
+      ],
+      "accent": 2,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.2878566384315491,
+        "pitch": 0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ス",
+          "consonant": "s",
+          "consonant_length": 0.10135161131620407,
+          "vowel": "U",
+          "vowel_length": 0.03681939095258713,
+          "pitch": 0
+        },
+        {
+          "text": "タ",
+          "consonant": "t",
+          "consonant_length": 0.028386235237121582,
+          "vowel": "a",
+          "vowel_length": 0.0877639502286911,
+          "pitch": 5.083237171173096
+        },
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.07127302885055542,
+          "pitch": 5.02367639541626
+        },
+        {
+          "text": "プ",
+          "consonant": "p",
+          "consonant_length": 0.07209181040525436,
+          "vowel": "u",
+          "vowel_length": 0.0469607412815094,
+          "pitch": 4.659415245056152
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "o",
+          "vowel_length": 0.08400609344244003,
+          "pitch": 4.415306091308594
+        }
+      ],
+      "accent": 2,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "シュ",
+          "consonant": "sh",
+          "consonant_length": 0.11111170798540115,
+          "vowel": "u",
+          "vowel_length": 0.03380948305130005,
+          "pitch": 4.479859828948975
+        },
+        {
+          "text": "ヤ",
+          "consonant": "y",
+          "consonant_length": 0.03526853024959564,
+          "vowel": "a",
+          "vowel_length": 0.06794821470975876,
+          "pitch": 4.466907501220703
+        },
+        {
+          "text": "ク",
+          "consonant": "k",
+          "consonant_length": 0.07656098902225494,
+          "vowel": "u",
+          "vowel_length": 0.03742516040802002,
+          "pitch": 4.445399761199951
+        },
+        {
+          "text": "ニ",
+          "consonant": "n",
+          "consonant_length": 0.042645953595638275,
+          "vowel": "i",
+          "vowel_length": 0.17997939884662628,
+          "pitch": 4.337871074676514
+        }
+      ],
+      "accent": 4,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ],
+  "speedScale": 1.12,
+  "pitchScale": 0,
+  "intonationScale": 1.1,
+  "volumeScale": 1,
+  "prePhonemeLength": 0.035,
+  "postPhonemeLength": 0.1,
+  "pauseLength": null,
+  "pauseLengthScale": 1,
+  "outputSamplingRate": 48000,
+  "outputStereo": true,
+  "kana": "ミス'ユウワ、_スタ'ンプオ/シュヤクニ'"
+}

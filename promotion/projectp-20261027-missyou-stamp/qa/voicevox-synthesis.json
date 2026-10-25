@@ -1,0 +1,11 @@
+{
+  "exit": 0,
+  "exe": "node.exe",
+  "args": [
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-100\\promotion\\projectp-20261027-missyou-stamp\\source\\synthesize-windows.mjs",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-100\\promotion\\projectp-20261027-missyou-stamp\\source\\narration-cues.json",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-100\\promotion\\projectp-20261027-missyou-stamp\\media"
+  ],
+  "stdout": "{\"speaker\":\"青山龍星\",\"style\":\"ノーマル\",\"styleId\":13,\"credit\":\"VOICEVOX:青山龍星\",\"engineVersion\":\"0.25.1\",\"headlessOwnedFiniteEngine\":true,\"cues\":[{\"at\":0.12,\"end\":3.75,\"text\":\"文章なしでも、送れる？\",\"file\":\"voice-1.wav\",\"predictedDuration\":1.708249917211277,\"speedScale\":1.12},{\"at\":4.45,\"end\":8.9,\"text\":\"ミスユーは、スタンプを主役に。\",\"file\":\"voice-2.wav\",\"predictedDuration\":2.0523871193613323,\"speedScale\":1.12},{\"at\":10.9,\"end\":14.3,\"text\":\"一言は、添えたいときだけ。\",\"file\":\"voice-3.wav\",\"predictedDuration\":1.9665581405269246,\"speedScale\":1.12},{\"at\":14.5,\"end\":16.95,\"text\":\"スタンプだけでも、送れます。\",\"file\":\"voice-4.wav\",\"predictedDuration\":1.829738638720342,\"speedScale\":1.12},{\"at\":17.3,\"end\":21.8,\"text\":\"ゲームも、アプリも。つぎの制作は、フォローで。\",\"file\":\"voice-5.wav\",\"predictedDuration\":3.485061404385737,\"speedScale\":1.12}]}\n",
+  "stderr": ""
+}

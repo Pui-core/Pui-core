@@ -1,0 +1,12 @@
+{
+  "exit": 0,
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-Missyou-Stamp-2026-10-27\\revision-01-live2d\\projects\\missyou-stamp.fcproj",
+    "exec",
+    "media.status"
+  ],
+  "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"25c06e3e93c649fe\",\n      \"size\": 394114316\n    },\n    \"item\": 4,\n    \"name\": \"picture.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Missyou-Stamp-2026-10-27\\\\revision-01-live2d\\\\media\\\\picture.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"f5b956062057de2d\",\n      \"size\": 6336102\n    },\n    \"item\": 5,\n    \"name\": \"narration.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-Missyou-Stamp-2026-10-27\\\\revision-01-live2d\\\\media\\\\narration.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+  "stderr": ""
+}

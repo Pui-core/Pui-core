@@ -1,0 +1,25 @@
+{
+  "exit": 0,
+  "exe": "photocraft-cli.exe",
+  "args": [
+    "run",
+    "--new",
+    "{\"width\":800,\"height\":380,\"name\":\"ProjectP missyou optional-card\",\"background\":\"#F7F4EB\",\"resolution\":72}",
+    "--cmd",
+    "shape.create",
+    "--params",
+    "{\"kind\":\"rect\",\"rect\":[0,0,800,380],\"fill\":\"#F7F4EB\",\"name\":\"Paper\"}",
+    "--cmd",
+    "type.create",
+    "--params",
+    "{\"x\":32,\"y\":55,\"text\":\"一言は、任意。\",\"font\":\"Meiryo\",\"size\":32,\"color\":\"#CF3324\",\"weight\":700,\"name\":\"Optional\"}",
+    "--cmd",
+    "file.placeEmbedded",
+    "--params",
+    "{\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-100\\\\promotion\\\\projectp-20261027-missyou-stamp\\\\media\\\\optional-ui.png\",\"scale\":108,\"fit\":false,\"center\":[400,224],\"smartObject\":true}",
+    "--out",
+    "C:\\Users\\pui\\AppData\\Local\\Temp\\projectp-100-photocraft\\optional-card.pcraft"
+  ],
+  "stdout": "{\"command\":\"shape.create\",\"result\":{\"bounds\":[0,0,800,380],\"fill\":\"#f7f4eb\",\"kind\":\"rect\",\"layer\":3,\"live\":{\"kind\":\"rect\",\"radii\":[0.0,0.0,0.0,0.0],\"rect\":[0.0,0.0,800.0,380.0]},\"name\":\"Paper\",\"path\":{\"fillRule\":\"nonzero\",\"inverted\":false,\"subpaths\":[{\"closed\":true,\"knots\":[{\"anchor\":[0.0,0.0],\"in\":[0.0,0.0],\"out\":[0.0,0.0],\"smooth\":false},{\"anchor\":[800.0,0.0],\"in\":[800.0,0.0],\"out\":[800.0,0.0],\"smooth\":false},{\"anchor\":[800.0,380.0],\"in\":[800.0,380.0],\"out\":[800.0,380.0],\"smooth\":false},{\"anchor\":[0.0,380.0],\"in\":[0.0,380.0],\"out\":[0.0,380.0],\"smooth\":false}],\"op\":\"combine\"}]},\"stroke\":null}}\n{\"command\":\"type.create\",\"result\":{\"bounds\":[32,28,238,58],\"layer\":4}}\n{\"command\":\"file.placeEmbedded\",\"result\":{\"bounds\":[38.0,100.0,761.6,348.4],\"layer\":8,\"scale\":108.0,\"smartObject\":true}}\n",
+  "stderr": ""
+}

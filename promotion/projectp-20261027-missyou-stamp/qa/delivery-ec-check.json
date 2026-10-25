@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-Missyou-Stamp-2026-10-27\\revision-01-live2d\\projects\\missyou-stamp.ecproj",
+    "--save",
+    "run",
+    "footage.check",
+    "{\"wait\":true}",
+    "footage.missing",
+    "{}",
+    "--json"
+  ],
+  "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":4,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"F:\\\\Videos\\\\ProjectP-Missyou-Stamp-2026-10-27\\\\revision-01-live2d\\\\projects\\\\missyou-stamp.ecproj\"}\n",
+  "stderr": ""
+}
