@@ -5,7 +5,7 @@
   "plannedDateJst": "2026-10-28",
   "activitySourceDateJst": "2026-10-25",
   "candidateOnly": true,
-  "state": "TECHNICAL_PASS_NATIVE_RIGHTS_UI_CHECK_PENDING",
+  "state": "READY_SOURCE_CANDIDATE_BOUNDED_NATIVE_PASS_PUBLICATION_UNCONFIRMED",
   "music": {
     "selected": true,
     "title": "Monkeys Spinning Monkeys",
@@ -31,20 +31,41 @@
     "outputAnchor": 4.8,
     "platformSoundId": null,
     "currentJapanTrendVerified": false,
-    "rightsProof": "qa/licensed-classic-rights.json"
+    "rightsProof": "qa/licensed-classic-rights.json",
+    "musicUsageConfirmation": "Not observed in non-submit staging. If presented at actual single-publisher submission, confirm necessary license based on exact original and caption attribution; do not infer this QA completed the confirmation."
   },
   "aigcDisclosure": {
     "requiredForThisCandidate": true,
     "reason": "VOICEVOX synthetic narration; actual game/software-rendered illustrated model are separately identified",
-    "nativeToggleVerified": false
+    "nativeToggleVerified": true,
+    "scope": "Observed ON in discarded staging; publisher reapplies/rechecks at actual publication"
   },
   "nativeUi": {
     "revision": "04_LICENSED_CLASSIC",
-    "boundedPreviewVerified": false,
-    "binding": null
+    "boundedPreviewVerified": true,
+    "binding": "qa/licensed-native-ui/native-ui-licensed.json",
+    "bindingSha256": "132dca21f2d85505be812829593edbcb364ad8bbb8d657e647d40fbf7509c78c",
+    "sourceExportSha256": "772b5078823fdc86cc7a339559f0996d2e1f28387b55f40a4af06886558a7b10",
+    "checkedAt": "2026-10-25T18:46:35.730Z",
+    "finalPhoneSamples": 8,
+    "reachedEnd": "20/20",
+    "captionCharacters": 348,
+    "coverMockProfileOnly": true,
+    "ownBrand": true,
+    "thirdPartyBrand": false,
+    "aigc": true,
+    "copyrightCheckPassed": true,
+    "contentCheckPassed": true,
+    "stagingDiscarded": true,
+    "savedDraft": false,
+    "publishIntents": 0,
+    "scheduleIntents": 0,
+    "candidateVideoId": null,
+    "continuousVisualPlaybackClaim": false
   },
   "directSubjectiveAudition": false,
   "day28EditorialAdoption": false,
   "scheduled": false,
-  "published": false
+  "published": false,
+  "subjectiveAuditionHandling": "Not performed; do not substitute numeric QA for subjective listening or introduce a new owner-approval gate."
 }

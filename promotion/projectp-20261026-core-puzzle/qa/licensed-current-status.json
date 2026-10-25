@@ -1,0 +1,55 @@
+{
+  "status": "PASS_BOUNDED_NATIVE_UI_PUBLICATION_UNCONFIRMED",
+  "checkedAt": "2026-10-25T18:46:35.730Z",
+  "productionPr": "https://github.com/Pui-core/Pui-core/pull/19",
+  "sourceHeadAtNativeQA": "0251518163d709c5130a528f63e5a9230593f7ec",
+  "videoSha256": "f881434794d1adf1211d680cda1e4c40a3fd283c8a0eeb60a36379c807ab562c",
+  "coverSha256": "76c4b7fdb5e2e94c7a912fdd844c7e2d73fe51f5e870373d1b4791c19fa4185f",
+  "captionSha256": "f3bcb0eea3c5387fedff51c9c6821fdb670207327a9d03a76c707026afcb532f",
+  "nativeEvidence": "qa/licensed-native-ui/native-ui-licensed.json",
+  "curatedPacketSha256": "132dca21f2d85505be812829593edbcb364ad8bbb8d657e647d40fbf7509c78c",
+  "sourceExportSha256": "772b5078823fdc86cc7a339559f0996d2e1f28387b55f40a4af06886558a7b10",
+  "checks": {
+    "sourceOriginalCcBy4Identified": true,
+    "physicalOnsetToGameFrameVerified": true,
+    "finalAvAndRoleMixVerified": true,
+    "currentFNativeOriginalsReopened": true,
+    "boundedTikTokUiVerified": true,
+    "attributionAndDisclosuresObserved": true,
+    "copyrightAndContentChecksPassed": true
+  },
+  "findingResolution": {
+    "PP97_SOUND": "Released by official exact-original ISRC/SHA/currentCC BY4 offer+credit, datedTikTok staple evidence+nativechecks; CML listing/currentJPtop/historicalsoundID not claimed",
+    "PP97_FINAL_TIMELINE": "Released by saved143→163/144→164, actual5.056→4.800attack and independent AAC residual/voice windows lag0, current F native originals and bounded native display",
+    "PP97_AUDITION": "Direct subjective audition not performed. Per currentCTO/skill this is recorded limitation rather than newowner-approval prerequisite; numericchecks do not establish pleasing sound."
+  },
+  "historicalProductionSnapshots": [
+    "qa/technical.json",
+    "qa/licensed-technical.json",
+    "qa/licensed-final-binding.json",
+    "qa/model-native-ui-binding.json"
+  ],
+  "historyScope": "Earlier native=false/pending/HOLD fields record their own production/revision stages; this current-status plus revised posting metadata are current.",
+  "preNativeDeliveryReceipt": "qa/history/revision04-pre-native-delivery.json",
+  "preNativeDeliveryReceiptSha256": "072c8bfd9266955dd344815c4e222af2b6d007ea65b53d6a490160494e9b29e1",
+  "cleanup": {
+    "stagingDiscarded": true,
+    "savedDraft": false,
+    "coverSaveIsStagingOnly": true,
+    "publishIntents": 0,
+    "scheduleIntents": 0,
+    "profileSaveIntents": 0,
+    "returnedToStudioHome": true,
+    "accountLinkObserved": "prop_pui",
+    "candidateVideoId": null,
+    "publicConfirmed": false
+  },
+  "limitations": {
+    "directSubjectiveAudition": false,
+    "continuousVisualPlaybackClaim": false,
+    "currentTrendClaim": false,
+    "publication": "No submission or scheduling; actual publisher must recheck account, exact media/caption/disclosures/checks and get a real public receipt",
+    "editorialAdoption": "28 October or later; reassess actual activity and mature previous-post metrics, within existing owner GO; no new owner approval gate"
+  },
+  "musicUsageConfirmation": "Not observed in non-submit staging. If presented at actual single-publisher submission, confirm necessary license based on exact original and caption attribution; do not infer this QA completed the confirmation."
+}

@@ -44,8 +44,11 @@
   "musicUsageConfirmation": {
     "nativeObserved": false,
     "publisherMustConfirmIfShown": true,
-    "ifOnlyAtPublish": "Future authorized single publisher checks valid source rights then confirms at adopted publication; no prematurePublish gate."
+    "ifOnlyAtPublish": "Future authorized single publisher checks valid source rights then confirms at adopted publication; no prematurePublish gate.",
+    "result": "Not observed in non-submit staging. If presented at actual single-publisher submission, confirm necessary license based on exact original and caption attribution; do not infer this QA completed the confirmation."
   },
-  "copyrightScanNative": false,
-  "directSubjectiveAudition": false
+  "copyrightScanNative": true,
+  "directSubjectiveAudition": false,
+  "contentCheckNative": true,
+  "nativeProof": "qa/licensed-native-ui/native-ui-licensed.json"
 }

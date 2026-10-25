@@ -38,11 +38,15 @@ TikTokの[2021-04-01公式記事](https://newsroom.tiktok.com/trending-on-tiktok
 
 ## 検査と公開への引継ぎ
 
-現在はtechnical/native検証を進めている制作候補。全AVdecode・最終AACの声/attack同期・音量/TP・PCM合成/語頭語尾・保存remap・重要連続frame・Core600枚の旧SHA対応を`qa/licensed-technical.json`等に結合する。F04の現在3Craft原本をその場所から再保存/再読込/描画し、欠損0/PC pixel一致/source-F SHAを`qa/licensed-delivery.json`に記録する。旧版のreceiptは当時のまま残す。
+現在はtechnical検査とbounded native UI確認を終えた制作候補。全AVdecode・最終AACの声/attack同期・音量/TP・PCM合成/語頭語尾・保存remap・重要連続frame・Core600枚の旧SHA対応を`qa/licensed-technical.json`等に結合する。F04の現在3Craft原本をその場所から再保存/再読込/描画し、欠損0/PC pixel一致/source-F SHAを`qa/licensed-delivery.json`に記録する。旧版のreceiptは当時のまま残す。
 
 直接の主観全編試聴は未実施。技術数値や画像を自然な聴感の合格とは報告しない。`projectp-video/references/production.md`の「可能なら試聴、できない場合は未実施」を適用し、未試聴だけを新しいowner承認待ちへ広げない。一方、実素材/声の頭尾/同期/音量と、実native表示・警告/checkの未解決は修正・再確認する。
 
-Rootだけが実TikTok確認/publisherを担当。nativeの結果が揃うまでPR19のDraft/HOLDを維持し、実警告を無条件に解除しない。28日の採用・最新活動/前投稿分析・最終送信と実公開receipt・人数目標は親93で継続する。合成音声のAIGCと自分のbrandを扱い、Music Usage Confirmationが実送信時のみなら未観測を明記して将来の単独publisherへ引き継ぐ。今日の追加投稿・予約や、新しい常駐loop/cronは作らない。
+Rootだけが実TikTok確認/publisherを担当。固定F04を本人prop_puiの実Studioへuploadし、348字credit付きcaption、custom cover、Anyone・OwnBrandON・AIGCON・第三者brandOFF、著作権/簡易content check問題なしを確認。最終8phone画像で20/20終端・芯石/階段/灯/比較両面/CTA/曲creditが見え、2cover・設定/credit各1枚と合わせた12画像をSHA対応した。profile側coverはmock editor tileであり、実公開profile/followerの証拠ではない。名目壁時計をframe単位の音声同期/全編連続目視へ広げない。
+
+Rootはstagingを破棄して本人Homeへ復帰。保存draft・投稿・予約・プロフィール保存0、candidateIDなし、実公開は未確認。Music Usage Confirmationは非送信画面では現れず未観測で、実送信時に出た場合だけsinglepublisherが正しい原音CCBY根拠で通常確認する。今日先行投稿する新ゲートは設けない。
+
+現在の解除範囲は`qa/licensed-current-status.json`、native証跡は`qa/licensed-native-ui/native-ui-licensed.json`。旧PP97-SOUND/FINAL-TIMELINEは正しい許諾曲/credit・実PCM同期・現F原本・実native確認で制作scopeを解消。主観試聴は上記のとおり未実施として記録し、未試聴だけで追加owner承認待ちへ戻さない。旧revision03/native=falseやtechnical段階pendingのJSONは履歴であり、現在の判定へ無条件に転用しない。F04初回technical receiptは`qa/history/revision04-pre-native-delivery.json`へ保持し、後続のsmall docs/proofのみを新receiptへ対応させる。媒体3SHA・原本は不変更。28日の採用・最新活動/前投稿分析・最終送信と実公開receipt・人数目標は親93で継続する。合成音声のAIGCと自分のbrandを扱い、Music Usage Confirmationが実送信時のみなら未観測を明記して将来の単独publisherへ引き継ぐ。今日の追加投稿・予約や、新しい常駐loop/cronは作らない。
 
 ## 再現
 
