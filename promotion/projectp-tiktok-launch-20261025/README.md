@@ -21,7 +21,7 @@
 
 初版カバーは9:16の目視では文字が収まっていましたが、CTOの実TikTokプロフィール用中央3:4プレビューで下部の橙色副題が欠けました。初版を保持し、PhotoCraftで別名の `emberwake-cover-tiktok-safe.pcraft/.png` を制作。下段背景をy1430からに変更し、作品名・副題を上げ、作者名も内側へ移動しました。画像末尾の小さい出典注記は新safe版から外し、投稿文・動画本編の探索モード表記は保持しています。
 
-必須6テキストのboundsはy272〜1597。1080×1920画像の中央3:4切り出し（y240、1440px高）でも全体が見えることを [QA画像](qa/cover-safe-center-3x4.png) で目視し、納品先のPhotoCraft原本から再exportしたPNGの一致を確認しました。[旧実UIのカバー部分](qa/tiktok-before-cover-crop.png) と [検査記録](qa/cover-tiktok-safe.json) を保存しています。ブラウザ全画面は同梱しません。実TikTokへの新画像反映と再確認はrootが担当します。
+必須6テキストのboundsはy272〜1597。1080×1920画像の中央3:4切り出し（y240、1440px高）でも全体が見えることを [QA画像](qa/cover-safe-center-3x4.png) で目視し、納品先のPhotoCraft原本から再exportしたPNGの一致を確認しました。[旧実UIのカバー部分](qa/tiktok-before-cover-crop.png) と [検査記録](qa/cover-tiktok-safe.json) を保存しています。ブラウザ全画面は同梱しません。2026-10-25 18:43 JST、rootがログイン済み実TikTokへ同じSHAのsafe画像を設定し、プロフィール3:4と中央編集画角でフック・主人公・作品名・橙副題の全文を再確認して保存しました。[実UI証跡](qa/cover-tiktok-safe-live-ui.png) に対応し、PP94-COVER-CROPを解除。公開前のdraftでの確認であり、全編直接試聴・投稿済みを意味しません。
 
 動画は1080×1920、30fps、60秒。FilmCraftが書き出したAACだけを元動画のH.264と組み合わせ、全decoded video hashが元版と同一であることを検査します。FilmCraftでMP4全体を再書き出すと映像の再圧縮が入るため、最終納品版と同じ音声・映像を得る再現経路は `source/build.mjs native` です。
 

@@ -210,14 +210,38 @@
   ],
   "scope": {
     "directCoverImageViewed": true,
-    "actualNewTikTokPreview": false,
+    "actualNewTikTokPreview": true,
     "videoOrAudioEdited": false,
     "publication": false,
-    "directCenter3x4ImageViewed": true
+    "directCenter3x4ImageViewed": true,
+    "actualNewTikTokPreviewReportedBy": "CTO root"
   },
   "visualObservations": [
     "主役・フック・作者名・作品名・橙副題が見える",
     "副題下端1597px、必須文字安全域1640px以内",
     "旧実TikTok画像の副題切れをカバー部分の切り出しで確認"
-  ]
+  ],
+  "liveUi": {
+    "checkedAt": "2026-10-25T18:43:00+09:00",
+    "reporter": "CTO root",
+    "image": "qa/cover-tiktok-safe-live-ui.png",
+    "imageSha256": "19238a247f558efd49e8be39aeb005ac1bf3dfc93b7d6d223a8b955fa65486ac",
+    "coverSha256": "33d29dd5dd96b635a018f74c52002b9a5677bbb6db920ccf4112578cda0b2749",
+    "videoSha256": "69f843a2f8c5e0a6c6edbb9725ff675bccb54a114b27456fd010e02131f83561",
+    "nativeProfile3x4Pass": true,
+    "centralEditorCropPass": true,
+    "hookAndHeroVisible": true,
+    "fullGameTitleVisible": true,
+    "fullOrangeSubtitleVisible": true,
+    "nativeSaveClicked": true,
+    "uploadState": "draft",
+    "directWholeAudioAudition": false,
+    "publication": false
+  },
+  "finding": {
+    "id": "PP94-COVER-CROP",
+    "severity": "P2",
+    "state": "RESOLVED_BY_CTO_LIVE_UI_RECHECK",
+    "note": "Actual logged-in TikTok Studio preview passed for the exact safe-cover SHA; no claim of subjective full-audio audition."
+  }
 }
