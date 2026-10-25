@@ -24,6 +24,18 @@
     "FXは編集上の演出音。実ゲームのSEとして説明しない。",
     "SNSへの投稿・予約、CAMPFIREページの編集・公開、支援の送金は行っていない。",
     "ナレーションは合成した説明音声。ぷい本人の肉声・録音ではない。VOICEVOX:青山龍星のクレジットを保持。",
-    "TikTok楽曲は未選択。音楽なし版へアプリ上で曲と区間を設定し、同期と音量を実プレビューで確認してから公開。"
-  ]
+    "TikTok楽曲は未選択。音楽なし版へアプリ上で曲と区間を設定し、同期と音量を実プレビューで確認してから公開。",
+    "公開準備の現在版は声・既存オリジナルBGM・SFX入り。TikTok側で別曲を追加して二重の音楽にしない。人気曲ではなくオリジナル曲として扱う。",
+    "カバーはsafe版へ更新。旧版の橙副題が実プロフィール3:4で切れたため、必須テキストをsource y272〜1597へ移動。実UI再確認はCTOが担当。"
+  ],
+  "currentPublishingVariant": "videos/emberwake-voice-original-score.mp4",
+  "currentCover": "covers/emberwake-cover-tiktok-safe.png",
+  "music": {
+    "kind": "original-composition",
+    "sourceScoreSha256": "565295d97f5525f3f6cec6dd722c5fd8b87932b58b2e10d087a3980762665da9",
+    "bpm": 120,
+    "thirdPartyTrack": false,
+    "popularTrack": false,
+    "note": "本日は許諾が確認できる人気曲を実TikTok検索で確定できず、既存オリジナルscoreと声・SFXを使用。本人による手作曲の実演とは表記しない。"
+  }
 }
