@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "findingId": "BIO-001",
+  "severity": "P2",
+  "managementIssue": "https://github.com/Pui-core/-/issues/96",
+  "parentIssue": "https://github.com/Pui-core/-/issues/93",
+  "account": "prop_pui",
+  "investigator": "publisher-issue-96-claude (Coder1 / claude / claude-opus-4-8)",
+  "investigatedAtUtc": "2026-10-25T10:21:24.000Z",
+  "investigatedAtJst": "2026-10-25T19:21:24+09:00",
+  "result": "unresolved_blocked",
+  "repostOfTodayVideo": false,
+  "todayVideoId": "7700540849909763336",
+  "bio": {
+    "old": "",
+    "expected": "ゲーム・道具・曲を作る、ぷい。\n『EMBERWAKE』制作の裏側を毎日。\nCAMPFIRE公開準備中｜次の一手をフォローで。",
+    "actualPublicSignatureObserved": "",
+    "note": "期待文は管理Issue#96/runtimeの3行をそのまま使用。旧値は公開author.signatureが空であることを前段rootが確認済み。"
+  },
+  "saveAttempts": 0,
+  "saveAttemptLimit": 2,
+  "blocker": {
+    "type": "windows_session_isolation",
+    "evidence": [
+      {"check": "executor PowerShell SessionId", "value": "0 (Session 0 / 非対話サービスセッション)"},
+      {"check": "Get-Process firefox count", "value": "19"},
+      {"check": "Firefox processes SessionId", "value": "すべて Session 1 (対話/VNCデスクトップ)"},
+      {"check": "Firefox MainWindowHandle != 0 count", "value": "0 (Session 0 から到達不可)"},
+      {"check": "UIAutomation RootElement children (Session 0)", "value": "0 (デスクトップ窓が列挙不可)"}
+    ],
+    "interpretation": "ログイン済みTikTok FirefoxはSession 1で正常稼働中だが、本Coderの実行コンテキスト(Session 0)からはUIAutomationで到達できない。承認された唯一の操作経路(既存ログインセッション)に届かないため、native UIでのBIO保存・再読込・公開signature照合を実施できない。"
+  },
+  "forbiddenAlternativesNotUsed": [
+    "新規Firefoxプロファイル/新セッション作成",
+    "認証/Cookie/CSRF迂回",
+    "OS設定・ExecutionPolicy恒久変更・新cron・常駐loop",
+    "publish-once.ps1 等の実行",
+    "別writer/Object QA/browser自動操作"
+  ],
+  "lease": {
+    "lockFile": "/home/pui/.claude/projectp-tiktok/daily.lock",
+    "casVerified": true,
+    "casBasis": {
+      "leaseOwner": "root",
+      "leaseRunId": "01a17245-0ee6-7c72-b578-85e20f359ea4",
+      "leaseState": "released_for_handoff",
+      "dailyState": "published",
+      "dailyReceiptVideoId": "7700540849909763336",
+      "nominationOwner": "publisher-issue-96-claude",
+      "nominationState": "nominated"
+    },
+    "acquiredOnceAs": {"owner": "publisher-issue-96-claude", "runId": "coder1-win-20261025-191724-3058305"},
+    "releasedForHandoff": true,
+    "runtimeOnly": "lease/daily/nomination はランタイム領域で更新しGitへは含めない"
+  },
+  "scopeGuards": {
+    "newVideo": false,
+    "repost": false,
+    "displayNameChange": false,
+    "usernameChange": false,
+    "paidService": false,
+    "fullAudioAudition": "未実施(本taskの範囲外。PASS扱いにしない)",
+    "popularSoundVerification": "未実施(PASS扱いにしない)",
+    "analytics24h72h": "既存PM巡回へスケジュール済み(本taskで成功扱いにしない)"
+  },
+  "nextActions": [
+    "対話Session 1(TigerVNC/デスクトップ)側で動作するpublisher経路から、既存ログインFirefoxへUIAutomationで接続し、native UIでBIOを保存→再読込→公開signature照合(保存は最大2回の有限試行)。",
+    "それが用意できるまで本findingは未解除のまま。displayNameは2026-10-31、usernameは2026-11-23までロック中のため今回対象外。"
+  ],
+  "resolutionStatus": "BIO-001は未解除。本記録PRの合格と運用上のBIO解除は別。管理Issue#96はOPEN維持、親#93もcloseしない。"
+}
