@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-26T05:40:02.895Z",
+  "finding": "TikTok named project/previews wrongly built from YouTube JSX. Native saved and final initial movie contained YouTube-only RelatedVideo CTA.",
+  "reporters": [
+    "Root",
+    "youtube_official_research"
+  ],
+  "published": false,
+  "fix": "Suffix now used in JSX build, project SHA and render-frame arguments. Correct TikTok project/movie will be rebuilt once after previous owned session31741 completed.",
+  "preservation": "Wrong MP4/MOV/native projects retained under excluded media/superseded-tiktok-cta; initial evidence retained here.",
+  "remaining": "Correct final extracted image and exact native CTA text must pass before ready."
+}

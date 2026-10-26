@@ -1,0 +1,173 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1080,
+        1920
+      ],
+      "fill": "#08151e",
+      "name": "Background"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 80,
+      "y": 155,
+      "text": "自作ゲーム EMBERWAKE",
+      "font": "Meiryo",
+      "size": 43,
+      "weight": 700,
+      "color": "#aacac3",
+      "name": "Game context"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        80,
+        195,
+        920,
+        5
+      ],
+      "fill": "#5a817d",
+      "name": "Top divider"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 80,
+      "y": 310,
+      "text": "クリアしたら、",
+      "font": "Meiryo",
+      "size": 89,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Result hook"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 80,
+      "y": 460,
+      "text": "思い出が、",
+      "font": "Meiryo",
+      "size": 112,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "Memory hook1"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 80,
+      "y": 610,
+      "text": "1つ消えた。",
+      "font": "Meiryo",
+      "size": 112,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "Memory hook2"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\count-after.png",
+      "scale": 255,
+      "fit": false,
+      "center": [
+        540,
+        765
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 80,
+      "y": 920,
+      "text": "第1話、最初の忘却。",
+      "font": "Meiryo",
+      "size": 48,
+      "weight": 700,
+      "color": "#aacac3",
+      "name": "Scope"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\cover-game.png",
+      "scale": 140,
+      "fit": false,
+      "center": [
+        540,
+        1275
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\natural-cover.png",
+      "scale": 66,
+      "fit": false,
+      "center": [
+        800,
+        1280
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        1590,
+        1080,
+        330
+      ],
+      "fill": "#08151e",
+      "name": "CTA field"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 80,
+      "y": 1660,
+      "text": "約束から、最初の忘却まで。",
+      "font": "Meiryo",
+      "size": 46,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Matched question"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 80,
+      "y": 1735,
+      "text": "PROJECT P / ぷい",
+      "font": "Meiryo",
+      "size": 39,
+      "color": "#aacac3",
+      "name": "Creator"
+    }
+  ]
+]

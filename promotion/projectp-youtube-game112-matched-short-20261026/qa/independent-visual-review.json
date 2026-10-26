@@ -1,0 +1,42 @@
+{
+  "reviewers": [
+    "Root",
+    "youtube_official_research"
+  ],
+  "scope": "8 native previews and PhotoCraft cover; no full-time playback/audition",
+  "gameFactFindings": "Actual0to1/name remains/afternoon memory/112 matched YT CTA consistent",
+  "mandatoryFinding": "TikTok initial preview erroneously retained YouTube RelatedVideo CTA",
+  "mandatoryStatus": "initial_wrong_reference_corrected_search_CTA_Root_released",
+  "optionalSuggestions": [],
+  "filesChangedByReviewer": 0,
+  "guiActionsByReviewer": 0,
+  "authorFinalCorrection": {
+    "at": "2026-10-26T05:43:25.414Z",
+    "tiktokNativeText": "ProjectP_pui で検索 / 本編は YouTube へ",
+    "finalFrame": "qa/final-tiktok-19.png",
+    "finalFrameSha256": "1d41b6529c168083d3d41301f3c485a89a35dc73e8b7591b1a0e7ba56f412ede",
+    "correctedVideoSha256": "a47a6318c8fd3ef4427359f1db4f36bd815c2e6a1f249c00031c4905ba055d7e",
+    "authorVisualReview": "PASS_BOUNDED",
+    "rootFinalReadback": {
+      "at": "2026-10-26T05:43:25Z",
+      "status": "PASS_BOUNDED",
+      "rootMessage": "Correct search CTA in final TT extract, YT RelatedVideo CTA and cover verified; mandatoryfindingreleased"
+    }
+  },
+  "latestEditorialRevision": {
+    "scope": "CTO added TikTok follow objective before freeze",
+    "oldSearchTechnicallyFixed": true,
+    "newCta": [
+      "このゲームの続きを、",
+      "フォローして見届けて。"
+    ],
+    "finalVideoSha256": "033c1f678098ffef3afe6b36c81bd221d9f2ebdd7cc6e0245881181f5cd0f2ad",
+    "authorFinalImageReview": "PASS_BOUNDED",
+    "rootFinalImageReview": {
+      "status": "PASS_BOUNDED",
+      "approximateAtUtc": "2026-10-26 05:48 UTC",
+      "source": "Root direct review message in this task; actual follow CTA verified, mandatory0"
+    },
+    "initialDefectAndAddedEditorialDecisionDistinct": true
+  }
+}

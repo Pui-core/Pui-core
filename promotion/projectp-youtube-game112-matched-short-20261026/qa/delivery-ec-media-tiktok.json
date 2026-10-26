@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-YouTube-Game112-Short-2026-10-26\\revision-01\\projects\\first-forgetting-short-tiktok.ecproj",
+    "--save",
+    "run",
+    "footage.check",
+    "{\"wait\":true}",
+    "footage.missing",
+    "{}",
+    "--json"
+  ],
+  "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":14,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"F:\\\\Videos\\\\ProjectP-YouTube-Game112-Short-2026-10-26\\\\revision-01\\\\projects\\\\first-forgetting-short-tiktok.ecproj\"}\n",
+  "stderr": ""
+}

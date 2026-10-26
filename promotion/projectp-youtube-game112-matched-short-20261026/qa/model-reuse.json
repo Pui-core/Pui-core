@@ -1,0 +1,43 @@
+{
+  "sourceIssue": 112,
+  "sourceMovieSha256": "e8edd7b662538d628f675c7609b2e3dd02ad19ae1b70bacbcab35b214b6ec5b1",
+  "actualCoreRendered": true,
+  "newCoreRenderPerformed": false,
+  "intervals": [
+    {
+      "output": [
+        0,
+        3.2
+      ],
+      "sourceModel": [
+        0,
+        3.2
+      ],
+      "originalOutput": [
+        0,
+        3.2
+      ],
+      "matchingCue": "voice-01.wav"
+    },
+    {
+      "output": [
+        21.8,
+        26.2
+      ],
+      "sourceModel": [
+        7.6,
+        12
+      ],
+      "originalOutput": [
+        75,
+        79.4
+      ],
+      "matchingCue": "voice-13.wav"
+    }
+  ],
+  "fps": 30,
+  "sourceFrames": 438,
+  "tracking": false,
+  "sourceParametersSha256": "a95cfa4780f452b830f0a05e15a86b7f16466dfd3fd05885d87b8764ed939f08",
+  "wholeDirectWatch": false
+}
