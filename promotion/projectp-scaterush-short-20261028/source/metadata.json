@@ -26,14 +26,22 @@
     "htmlSha256": "5767390cce203312fabc82d5636a27adff0631ea7f1e43a25b01a19995288fbe",
     "onscreenDisclosure": "Web試作画面",
     "firstSignSource": [
-      7.8,
-      10.925
+      7.04,
+      10.165
     ],
     "secondSignSource": [
       11.2,
       13.7
     ],
-    "slowSpeed": 0.5
+    "slowSpeed": 0.5,
+    "firstSignOutputClearance": [
+      3.12,
+      3.6
+    ],
+    "questionVoicedEnd": 2.91125,
+    "questionEndsBeforeAnswer": true,
+    "automationDisclosureInPicture": false,
+    "automationDisclosureInCaptionAndDescription": true
   },
   "platforms": {
     "youtube": {
@@ -61,7 +69,14 @@
       "finalPopularTrackAdopted": false,
       "nativeSoundConfigured": false,
       "actualPublishedAt": null,
-      "videoId": null
+      "videoId": null,
+      "voiceOnlyPrepared": {
+        "video": "videos/scaterush-tiktok-voice-only.mp4",
+        "sha256": "db8f6a472d15f4bd4025f2101ab97b6037f7126f79e342c30ce979ad9b66cf09",
+        "purpose": "Root native commercial music adoption preparation; no selection/configuration yet",
+        "selectedAsPublicationMaster": false,
+        "backgroundMusic": false
+      }
     }
   },
   "narrator": {
@@ -114,5 +129,13 @@
   },
   "actualContainerDuration": 20.01,
   "videoDuration": 20,
-  "audioAacPaddingSeconds": 0.01
+  "audioAacPaddingSeconds": 0.01,
+  "revision": 2,
+  "priorRevision": {
+    "destination": "/mnt/f/Videos/ProjectP-ScateRush-Short-2026-10-28/revision-01",
+    "receiptSha256": "16554abf97e5f000ca44a4f72f14207485e738a3fb86d9c49edb6e9b83d51019",
+    "fileCount": 236,
+    "preserved": true,
+    "whyRejected": "Answer visible before the question audio ended; extra technical footer removed"
+  }
 }

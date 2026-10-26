@@ -1,21 +1,27 @@
 {
   "issue": 124,
+  "revision": 2,
   "state": "PASS_F_TECHNICAL_TIKTOK_MUSIC_ADOPTION_PENDING",
-  "deliveryRoot": "/mnt/f/Videos/ProjectP-ScateRush-Short-2026-10-28/revision-01",
-  "receiptSha256": "16554abf97e5f000ca44a4f72f14207485e738a3fb86d9c49edb6e9b83d51019",
-  "fileCount": 236,
-  "totalBytes": 1114234434,
+  "deliveryRoot": "/mnt/f/Videos/ProjectP-ScateRush-Short-2026-10-28/revision-02",
+  "receiptSha256": "4219c946820d0c39a1e6a0984b4de9d7f5aa0775390dbd986d4d70afad29b853",
+  "fileCount": 277,
+  "totalBytes": 1089546277,
   "allPackagedCopyHashesMatch": true,
   "outputs": [
     {
       "file": "videos/scaterush-youtube.mp4",
-      "bytes": 4099394,
-      "sha256": "b1fa04824f6702d009b0e25a9b2d80d380bf4f38b74d9b296130f91c9576aaed"
+      "bytes": 3995032,
+      "sha256": "1c21454fc7edd36ea8330b15a0b130f1f782e4a910dfb9cb2f8720740b8903ef"
     },
     {
       "file": "videos/scaterush-tiktok.mp4",
-      "bytes": 4064929,
-      "sha256": "3330837f178ef8f4cbcebdd24a2a00510c6f86a187c5af5e11e15cf09ff9e60f"
+      "bytes": 3961866,
+      "sha256": "ecb91dfa0eb0aaaf666e4bab91ce1292d6651a350a4c13fe20966d4bb790fdad"
+    },
+    {
+      "file": "videos/scaterush-tiktok-voice-only.mp4",
+      "bytes": 3961796,
+      "sha256": "db8f6a472d15f4bd4025f2101ab97b6037f7126f79e342c30ce979ad9b66cf09"
     },
     {
       "file": "covers/scaterush-sign.png",
@@ -27,12 +33,13 @@
   "missingMedia": 0,
   "activeNativeDependenciesInsideRevision": true,
   "privateTmpOrOldFDependencies": 0,
-  "nativeDependencyReceiptSha256": "d415a127cddbb89a9c4f4310207bfd76fc81a03fe0e79bc73c54ff555ddbddf9",
+  "nativeDependencyReceiptSha256": "76127f4d102ceb243b504e09a4164f00030b6d5f7ee9b76e188fa87b529b9e96",
   "nativeProjects": [
     "projects/scaterush-youtube.ecproj",
     "projects/scaterush-youtube.fcproj",
     "projects/scaterush-tiktok.ecproj",
-    "projects/scaterush-tiktok.fcproj"
+    "projects/scaterush-tiktok.fcproj",
+    "projects/scaterush-tiktok-voice-only.fcproj"
   ],
   "photoCraft": {
     "native": "covers/scaterush-sign.pcraft",
@@ -56,5 +63,17 @@
   "rootFinalVisualAcceptance": false,
   "wholeDirectWatch": false,
   "wholeSubjectiveListen": false,
-  "published": false
+  "published": false,
+  "previousRevision": {
+    "path": "/mnt/f/Videos/ProjectP-ScateRush-Short-2026-10-28/revision-01",
+    "receiptSha256": "16554abf97e5f000ca44a4f72f14207485e738a3fb86d9c49edb6e9b83d51019",
+    "unchanged": true,
+    "files": 236,
+    "retained": "Complete selfcontained F revision01 plus private history/revision01",
+    "rootRequiredFixes": [
+      "Answer before question voice end",
+      "Remove technical footer"
+    ]
+  },
+  "rootRequiredFixesImplemented": "qa/first-order-repair.json"
 }

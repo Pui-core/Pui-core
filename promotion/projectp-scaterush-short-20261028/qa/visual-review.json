@@ -1,5 +1,5 @@
 {
-  "status": "PASS_SPECIFIED_PREVIEW_STILLS_NO_REQUIRED_FIX",
+  "status": "HISTORICAL_REV01_PREVIEW_PASS_SUPERSEDED_BY_ROOT_REQUIRED_ORDER_AND_FOOTER_FIX",
   "reviewer": "Read-only helper publication_record_audit",
   "scope": [
     {
@@ -40,5 +40,17 @@
   "finalMp4MotionContinuousWatch": false,
   "wholeSubjectiveListen": false,
   "rootFinalFReview": false,
-  "temporaryMusicNotFinal": true
+  "temporaryMusicNotFinal": true,
+  "rootRequiredFixes": [
+    {
+      "item": "answer precedes full hook audio",
+      "resolvedInRevision": 2,
+      "evidence": "qa/first-order-repair.json"
+    },
+    {
+      "item": "extra technical footer",
+      "resolvedInRevision": 2,
+      "evidence": "qa/final-tiktok-3.6.png"
+    }
+  ]
 }

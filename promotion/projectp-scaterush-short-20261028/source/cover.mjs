@@ -1,6 +1,6 @@
 import fs from'node:fs';import{file,np,PC,run,parse,save,hash,copy}from'./native.mjs';
 copy(file('media/model-opening/frame-000000.png'),file('media/avatar-cover.png'));copy(file('qa/raw-8.6.png'),file('media/actual-cover.png'));
-const stage='/mnt/f/Videos/ProjectP-ScateRush-Short-2026-10-28/revision-01/photocraft-stage';
+const stage='/mnt/f/Videos/ProjectP-ScateRush-Short-2026-10-28/revision-02/photocraft-stage';
 const commands=[['shape.create',{kind:'rect',rect:[0,0,1080,1920],fill:'#0c151b',name:'Night field'}],['shape.create',{kind:'rect',rect:[70,600,920,780],fill:'#32d6c8',name:'Action frame'}],['file.placeEmbedded',{path:np(file('media/actual-cover.png')),scale:150,fit:false,center:[660,1000],smartObject:true}],['shape.create',{kind:'rect',rect:[0,0,1080,580],fill:'#0c151b',name:'Question lane'}],['shape.create',{kind:'rect',rect:[0,1390,1080,530],fill:'#0c151b',name:'Host lane'}],['file.placeEmbedded',{path:np(file('media/avatar-cover.png')),scale:44,fit:false,center:[825,1580],smartObject:true}]];
 const t=(name,text,x,y,size,color)=>commands.push(['type.create',{name,text,x,y,font:'Meiryo',weight:700,size,color}]);
 t('Brand','SCATE RUSH',75,115,64,'#f3ecdf');t('Question1','跳ぶ？',75,285,126,'#f3ecdf');t('Question2','くぐる？',75,460,126,'#f5cf55');t('Scope','Web試作画面',90,550,33,'#32d6c8');t('Real result','実際の看板通過',90,1480,49,'#f3ecdf');t('Creator','PROJECT P / ぷい',90,1610,36,'#b4c8c7');t('Original','記録済みWeb版を編集',90,1805,29,'#b4c8c7');
