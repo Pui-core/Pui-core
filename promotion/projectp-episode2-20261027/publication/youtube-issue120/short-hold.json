@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "kind": "owner_constraint_and_unsubmitted_short_hold",
+  "managementIssue": "https://github.com/Pui-core/-/issues/120",
+  "ownerDirective": {
+    "sourceComment": "https://github.com/Pui-core/-/issues/120#issuecomment-6414523249",
+    "recordedByCtoAt": "2026-10-26T11:08:08Z",
+    "horizontalMinimumSeconds": 600,
+    "appliesTo": "horizontal_videos",
+    "shortsAndTikTokMinimum600Applies": false,
+    "musicTopicExclusionMaintained": true
+  },
+  "historicalPublishedVideo": {
+    "videoId": "21388c4ZOxk",
+    "url": "https://www.youtube.com/watch?v=21388c4ZOxk",
+    "durationSeconds": 82,
+    "actualPublishedAt": "2026-10-26T10:46:11.000Z",
+    "publicationReceiptPreserved": true,
+    "meetsNewHorizontalMinimum": false,
+    "acceptedAsFormalMinimum600SecondMain": false,
+    "historicalRecord": "./long-public.json"
+  },
+  "episode2Short": {
+    "videoSha256": "cd818f84da5926eaf33caea0b4155e3e0fdc47c11484f8f90ba7e30789268db2",
+    "state": "held_owner_horizontal_minimum_600_seconds",
+    "actualVideoId": null,
+    "fileAttachIntents": 0,
+    "scheduleIntents": 0,
+    "publicationIntents": 0,
+    "actualPublishedAt": null,
+    "scheduledForAt": null,
+    "previousPreparedTargetVideoId": "21388c4ZOxk",
+    "previousTargetSupersededByOwnerConstraint": true,
+    "nativeRelatedVideoConfigured": false,
+    "actualNativeRelatedVideoId": null,
+    "attachmentNotStarted": true,
+    "newShortTo82SecondVideoScheduled": false
+  },
+  "publisherEnd": {
+    "observedAt": "2026-10-26T10:59:15.3022625Z",
+    "ownStudioContentAtEnd": true,
+    "noUploaderOrNewLinkOrAttachmentIntentReportedByRoot": true,
+    "leaseReleasedAsReportedByPublisher": true,
+    "leaseStatusIsHistoricalSnapshot": true
+  },
+  "handoff": {
+    "priorityIssue": "https://github.com/Pui-core/-/issues/121",
+    "priorityIssueStateAtRecord": "OPEN",
+    "targetDateJst": "2026-10-27",
+    "topic": "TruthOrLie promotion",
+    "horizontalMinimumSeconds": 600,
+    "sameTopicShortRequired": true,
+    "state": "moved_to_separate_production_issue_not_completed_here",
+    "portfolioIncludes": [
+      "current projects",
+      "finished applications",
+      "ScateRush"
+    ],
+    "truthOrLiePublicVideoId": null,
+    "truthOrLieShortVideoId": null,
+    "existingEmberwakeLinksModified": false,
+    "existingShort114RetargetedToTruthOrLie": false,
+    "correspondingEmberwakeMinimum600SecondReplacement": "future_same_topic_work_not_truth_or_lie_retarget"
+  },
+  "tiktokEpisode2": {
+    "state": "unselected_unpublished",
+    "actualVideoId": null,
+    "nativePopularTrackSelected": false
+  },
+  "acceptance": {
+    "scope": "historical_publication_and_honest_unsubmitted_short_hold_with_handoff",
+    "shortToMainFunnelCompleted": false,
+    "issue121CompletionNotRequiredForHistoricalRecord": true,
+    "parentGoalsRemainOpen": [
+      93,
+      106
+    ]
+  },
+  "proofs": {
+    "heldPreparation": {
+      "file": "short-prepared.json",
+      "sha256": "e3282051758e3766ad6d2cd2da0ee1cb18eb6dc23600f3d000a8883ab0da704c",
+      "privateOriginal": true
+    },
+    "nativeEnd": {
+      "file": "owner-min10-native-end.json",
+      "sha256": "1b7af5631a84d6a6c4d0a553edebd3be15c6c41f6add20f03ed4c6bf71aa8350",
+      "privateOriginal": true
+    },
+    "longPublicReceipt": {
+      "file": "2026-10-26-episode2-long-public.json",
+      "sha256": "5189d7647360825214d50150765678b0e40d8b7cda2fd5abc72bd4166a3ab0b3",
+      "privateOriginal": true
+    }
+  },
+  "sourceWriterActions": {
+    "gui": 0,
+    "publications": 0,
+    "profileChanges": 0,
+    "runtimeEdits": 0,
+    "leaseEdits": 0,
+    "dailyEdits": 0,
+    "otherWriterFiles": 0
+  },
+  "redaction": {
+    "rawUiIncluded": false,
+    "htmlIncluded": false,
+    "privateAbsolutePathsIncluded": false,
+    "authenticationIncluded": false,
+    "mediaOrSdkIncluded": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "kind": "append_only_historical_publication_and_hold_delivery",
+  "managementIssue": "https://github.com/Pui-core/-/issues/120",
+  "appendFolder": "publication/youtube-issue120",
+  "status": "PASS_MINIMAL_RECORD_AND_OFFICIAL_RECEIPT_COPY_SHA_MATCH",
+  "fileCount": 4,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 3462,
+      "sourceSha256": "872d975c99de969c669ce32bf63ce0db1c4957c02baf49677193c64f4c341668",
+      "deliverySha256": "872d975c99de969c669ce32bf63ce0db1c4957c02baf49677193c64f4c341668",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "long-public.json",
+      "bytes": 3371,
+      "sourceSha256": "02a3b8dd98b6c71c2f89786b8d4b5b87df03f5f3ff937527e987b9e34e47318e",
+      "deliverySha256": "02a3b8dd98b6c71c2f89786b8d4b5b87df03f5f3ff937527e987b9e34e47318e",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "short-hold.json",
+      "bytes": 3827,
+      "sourceSha256": "1e0cf2afc424e85612c11ec2c9a3d4e02653abe0e5dab004cd552d45ea567e86",
+      "deliverySha256": "1e0cf2afc424e85612c11ec2c9a3d4e02653abe0e5dab004cd552d45ea567e86",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "root-long-public.private.json",
+      "bytes": 4892,
+      "sourceSha256": "5189d7647360825214d50150765678b0e40d8b7cda2fd5abc72bd4166a3ab0b3",
+      "deliverySha256": "5189d7647360825214d50150765678b0e40d8b7cda2fd5abc72bd4166a3ab0b3",
+      "privateDeliveryOnly": true
+    }
+  ],
+  "frozenReceiptChecks": [
+    {
+      "file": "qa/delivery.json",
+      "sha256": "e04b4277d78a882212676b4cbd93d3ff1c5b3199ca53bd63783fdae88b52e1ce",
+      "afterSha256": "e04b4277d78a882212676b4cbd93d3ff1c5b3199ca53bd63783fdae88b52e1ce",
+      "unchanged": true
+    },
+    {
+      "file": ".projectp-issue117-delivery.json",
+      "sha256": "844fab2d4a263ba58817c07b3545361395c11b2f1f71e2b6dca1514b504be5d8",
+      "afterSha256": "844fab2d4a263ba58817c07b3545361395c11b2f1f71e2b6dca1514b504be5d8",
+      "unchanged": true
+    },
+    {
+      "file": "publication/native-dependencies-20261026/append-delivery.json",
+      "sha256": "36fdd731ef700da95f5fb68b61b5339f0cd86951179cd017c8d2b1ca63d2207b",
+      "afterSha256": "36fdd731ef700da95f5fb68b61b5339f0cd86951179cd017c8d2b1ca63d2207b",
+      "unchanged": true
+    },
+    {
+      "file": "publication/native-dependencies-20261026/native-dependencies.json",
+      "sha256": "e2ffb0c1566f1bbbf348d87f49c944cdf627fd2de9a444d8d1fc5525f0aa8958",
+      "afterSha256": "e2ffb0c1566f1bbbf348d87f49c944cdf627fd2de9a444d8d1fc5525f0aa8958",
+      "unchanged": true
+    }
+  ],
+  "frozenProductionPayloadFiles": 2704,
+  "frozenPayloadRescanned": false,
+  "baseAndDependencyAppendOverwritten": false,
+  "shortToMainFunnelCompleted": false,
+  "sourceWriterGuiActions": 0,
+  "sourceWriterPublications": 0,
+  "globalOrRuntimeEdits": 0
+}
