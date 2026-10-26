@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "issue": 111,
   "parentIssue": 106,
-  "state": "source_ready_native_check_publication_pending",
-  "sourceReadyForNativePublisherCheck": true,
+  "state": "public_confirmed",
+  "sourceReadyForNativePublisherCheck": false,
   "sourceOnlyActor": "Coder / codex",
   "sourceActorPublishActions": 0,
   "rootIsOnlyPublisher": true,
@@ -33,17 +33,39 @@
   "relatedVideoPromised": false,
   "syntheticNarration": "VOICEVOX:青山龍星",
   "illustratedAvatar": "Revenant_Natural actual existing Core render",
-  "nativeAlteredContentSelection": null,
-  "nativeAudienceSelection": null,
-  "nativeCopyrightChecks": null,
+  "nativeAlteredContentSelection": true,
+  "nativeAudienceSelection": "not_made_for_kids",
+  "nativeCopyrightChecks": {
+    "copyright": "complete_no_issues",
+    "communityGuidelines": "complete_no_issues"
+  },
   "nativePreview": null,
-  "videoId": null,
-  "publicUrl": null,
-  "publicConfirmed": false,
+  "videoId": "BTS-CO_mh9A",
+  "publicUrl": "https://www.youtube.com/shorts/BTS-CO_mh9A",
+  "publicConfirmed": true,
   "subjectiveWholeAudition": false,
   "limitations": [
     "Whole AV decode and numeric/visual checks do not claim direct subjective whole listening",
-    "No matching related horizontal game video has been verified as public",
-    "Root rechecks exact file, metadata, settings, warnings and actual publication in the native account"
-  ]
+    "No related video has been configured; no automatic match with a different horizontal-game topic",
+    "Desktop custom cover was not uploaded; delivered editable cover remains a production asset"
+  ],
+  "actualPublishedAt": "2026-10-26T05:22:54.000Z",
+  "actualPublishedAtJst": "2026-10-26T14:22:54.000+09:00",
+  "publicationReceipt": "publication/2026-10-26-public/receipt.json",
+  "operationalReceiptSha256": "6859cf09441ec36a0b05d5c7bf00a8f1af69b810aacbd10d84290c9016cb1535",
+  "nativePaidPromotionSelection": false,
+  "nativeCategory": "Gaming",
+  "nativeTags": [],
+  "nativeLicense": "Standard YouTube License",
+  "sourceProductionPr": "https://github.com/Pui-core/Pui-core/pull/38",
+  "sourceProductionHead": "96afba1c3eed2211b9a1afb93358fde41cc600cb",
+  "sourceProductionMerge": "4d1710188b85a6afb553e498eb6203ef06037f34",
+  "performanceJudgment": "not_due",
+  "nextChecks": {
+    "at24h": "2026-10-27T05:22:54.000Z",
+    "at72h": "2026-10-29T05:22:54.000Z"
+  },
+  "sourceProductionComplete": true,
+  "nativePublicationVerified": true,
+  "automaticResubmissionAllowed": false
 }

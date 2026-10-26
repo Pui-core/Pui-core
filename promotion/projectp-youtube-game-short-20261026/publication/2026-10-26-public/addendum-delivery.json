@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-26T05:27:45.317Z",
+  "scope": "Append-only publication addendum; original production delivery remains immutable",
+  "productionIssue": 111,
+  "destinationSuffix": "publication/2026-10-26-public",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 2291,
+      "sourceSha256": "bbd33109386b35e6fc7f53eb8342b29cc49ef0cb63f33ff03e0f5ec7d1523b6d",
+      "deliverySha256": "bbd33109386b35e6fc7f53eb8342b29cc49ef0cb63f33ff03e0f5ec7d1523b6d"
+    },
+    {
+      "file": "receipt.json",
+      "bytes": 2657,
+      "sourceSha256": "d3fce5f72f763a19d534e0b6adc7fbcc26aa4757c97986c208309c1e5b84d52e",
+      "deliverySha256": "d3fce5f72f763a19d534e0b6adc7fbcc26aa4757c97986c208309c1e5b84d52e"
+    },
+    {
+      "file": "metadata.json",
+      "bytes": 2897,
+      "sourceSha256": "82278cbfe6af3fb646f3793df306e82ad99a8d7bd0814d0fcadd7f25bb441fe7",
+      "deliverySha256": "82278cbfe6af3fb646f3793df306e82ad99a8d7bd0814d0fcadd7f25bb441fe7"
+    }
+  ],
+  "fileCount": 3,
+  "totalBytes": 7845,
+  "sourceAndFAppendFilesMatch": true,
+  "originalDeliveryReceiptSha256": "f78897c0e7eb6a8844e04cc5427070561d66b546afcffd3c03bb43650acc0b40",
+  "original111DeliveryEntriesStillMatch": true,
+  "originalDeliveryReceiptOverwritten": false,
+  "originalExistingFMetadataAndReadmeOverwritten": false,
+  "masterSha256": "4c8932d42682c7cdacfb2a1f3f30d935c7daaa04d416162169bd3d46ae0a226d",
+  "masterBytesUnchanged": true,
+  "nativeProjectBytesUnchanged": true,
+  "operationalReceiptSha256": "6859cf09441ec36a0b05d5c7bf00a8f1af69b810aacbd10d84290c9016cb1535",
+  "publicConfirmed": true,
+  "videoId": "BTS-CO_mh9A",
+  "rawPrivateEvidenceCopied": false
+}

@@ -2,13 +2,17 @@
 
 [動画20.8秒](videos/game-short.mp4) / [再生ページ](index.html) / [PhotoCraftカバー](covers/game-short-cover.png) / [題名](source/title.txt) / [投稿文](source/description.txt)
 
+**2026年10月26日14:22:54 JSTに[YouTube Shortsで公開](https://www.youtube.com/shorts/BTS-CO_mh9A)を確認。** Rootのnative公開完了表示と、匿名の公式watch pageによる公開・再生可能・本人channel一致を[公開追記receipt](publication/2026-10-26-public/receipt.json)へ対応させた。初期表示0を成績とは判断しない。24時間後は10月27日14:22:54、72時間後は10月29日14:22:54 JSTに確認する。
+
 ゲーム『EMBERWAKE 灰の灯』v0.11.0 / EXPLOREの実録画から、芯石をはめると横並びの足場が階段になる仕掛けを見せる。0〜0.8秒は変化後の実画面を静止し、その後「この道、どうつなぐ？」→運ぶ→はめる→変化→同画角比較とつなぐ。冒頭・比較・拡大は編集で、連続プレイやRTA/PBの記録とは説明しない。最新v0.12の新機能を紹介した動画ではない。
 
-最新ownerの「完成MVも含め、音楽関係の動画は投稿しない」に従うゲーム題材。自作BGM108は背景素材で、音楽制作の動画ではない。既存TikTok97の公開動画・ID・F04は保持する。YouTubeの送信・公開・URLはRootだけが実Studioで確認する。現在の公開状態は[publication.json](source/publication.json)を正とし、公開未確認を公開済みへ読み替えない。関連横動画は指定しない。別題材の横動画112ができても、同じ疑問へ答える対応を確認せずに導線を約束しない。
+最新ownerの「完成MVも含め、音楽関係の動画は投稿しない」に従うゲーム題材。自作BGM108は背景素材で、音楽制作の動画ではない。既存TikTok97の公開動画・ID・F04は保持する。Rootだけが本人YouTube Studioから固定masterを一度送信し、公開ID `BTS-CO_mh9A` と実URLを確認した。現在の公開状態は[publication.json](source/publication.json)を正とし、制作時点のpendingを残す原本/旧QA snapshotと区別する。関連横動画は指定していない。別題材の横動画112ができても、同じ疑問へ答える対応を確認せずに導線を約束しない。
 
 ## 納品と実原本
 
 F納品：`F:\Videos\ProjectP-YouTube-Game-Short-2026-10-26\revision-01`。
+
+元の制作納品receipt `qa/delivery.json`（SHA `f78897c0e7eb6a8844e04cc5427070561d66b546afcffd3c03bb43650acc0b40`）とFの既存媒体・metadata・READMEは公開前のimmutable snapshotとして保持する。今回のF追記は新規`publication/2026-10-26-public/`だけ。[追記の納品receipt](publication/2026-10-26-public/addendum-delivery.json)は追加3ファイルのsource/F一致と、旧111ファイル・旧receipt・固定動画の不変を記録する。Git上の現在README/metadata更新を、旧納品receiptによる現在版全体の同一性へ読み替えない。
 
 - PhotoCraft：`covers/game-short-cover.pcraft`。元の編集可能なカバーを複製し、問いを変更。Fから再読込・再保存・PNG描画を実行した。原本検査の警告0、再描画PNGのSHA一致を確認。PNG化時の通常のflatten警告は想定内で、編集可能な原本は保持する。
 - EffectCraft：`projects/game-short.ecproj`。旧600枚の実Core描画を含む無音ProRes bodyを読み、0.8秒の無声introと字幕を追加する。元編集の内部にあるモデルやゲームを新規Coreとして再生成した原本ではない。
@@ -30,7 +34,7 @@ BGMはIssue108の実native SoundCraft最終22秒素材 `connecting-lights-short-
 
 [technical.json](qa/technical.json)は最終MP4 SHAに対応する全AV decode、1080×1920/30fps/624frames、AAC音量/true peak、独立mix参照との差、3句の全音声・語尾・5.6秒のSFX位置、同じRGB形式へそろえた実ゲーム領域の原画対応を記録する。重要連続frameはF納品に保持し、Gitにも冒頭・問い・変化前後・声3・CTA・終端を保存する。
 
-カバーと重要静止画は実出力を目視する。全編の主観試聴は未実施で、decodeや数値検査を聴感確認と同一視しない。この制約だけで新たなowner承認待ちは設けず、実native表示・警告・公開確認は単独publisherが実施する。Shortsのカバーは編集可能素材として納め、デスクトップで独自サムネイルが実設定できたとは主張しない。
+カバーと重要静止画は実出力を目視した。全編の主観試聴は未実施で、decodeや数値検査を聴感確認と同一視しない。Rootのnative設定は公開・子ども向けNo・有料promotion No・AI開示Yes・Gaming・Standard YouTube License。無関係な既定タグはこのuploadだけ全削除して0/500、投稿文内の3 hashtagは保持した。著作権/community native checksは問題なし。RelatedVideoなし、デスクトップcustom coverは未uploadで、編集可能な納品カバーを実設定したとは主張しない。
 
 ## 再現
 
