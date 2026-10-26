@@ -1,0 +1,128 @@
+{
+  "issue": 121,
+  "plannedDateJst": "2026-10-27",
+  "topic": "嘘か誠か / TruthOrLie",
+  "ownerMinimumHorizontalSeconds": 600,
+  "plannedMainSeconds": 708,
+  "youtube": {
+    "title": "5つの答え、嘘はどれ？｜嘘か誠か 実画面で4ラウンド＋別ルール3ラウンド",
+    "descriptionFile": "source/youtube-description.txt",
+    "category": "Gaming",
+    "language": "ja",
+    "paidPromotion": false,
+    "aiDisclosure": true,
+    "published": false,
+    "videoId": null,
+    "actualPublishedAt": null,
+    "nativeDisclosureSettingsConfirmed": false
+  },
+  "short": {
+    "youtubeTitle": "この5つ、嘘はどれ？ 実際に投票すると… #嘘か誠か",
+    "descriptionFile": "source/youtube-short-description.txt",
+    "relatedVideoId": null,
+    "relatedNativeSettingComplete": false,
+    "published": false,
+    "videoId": null,
+    "actualPublishedAt": null,
+    "sameQuestionAsMain": "normalMatch.round1"
+  },
+  "tiktok": {
+    "captionFile": "source/tiktok-caption.txt",
+    "ownBrandPromotion": true,
+    "thirdPartyPromotion": false,
+    "aigcDisclosure": true,
+    "bakedCta": [
+      "このゲームの続きを、",
+      "フォローして見届けて。",
+      "@prop_pui"
+    ],
+    "musicState": "provisional_original_BGM_pending_Root_selection",
+    "popularTrackVerified": false,
+    "japanCommercialMusicLibraryVerified": false,
+    "finalPopularTrackSelectedByRoot": false,
+    "selectedTrack": null,
+    "selectionOwner": "Root",
+    "sourceCreatorCompletedMusicSelection": false,
+    "published": false,
+    "scheduled": false,
+    "videoId": null,
+    "actualPublishedAt": null,
+    "nativeDisclosureSettingsConfirmed": false,
+    "captionCharacters": 139
+  },
+  "capture": {
+    "productRepository": "Pui-core/com.pui-core.truthorlie",
+    "commit": "5b11516bba2be105f44c444eb6352eb757a8abd3",
+    "binarySha256": "51bcf0e740e1253a44edbcc2f038d765cc9d7716804b0ec35e0c34d04b988d70",
+    "version": "1.03",
+    "build": "23",
+    "configuration": "Release APPSTORE_RELEASE x86_64 iOS Simulator",
+    "normalAccessibilityUiOnly": true,
+    "allAnswersFictional": true,
+    "twoLocalExampleNames": [
+      "操作例AA",
+      "操作例BB"
+    ],
+    "normalMatch": {
+      "rounds": 4,
+      "scoreAA": 2,
+      "scoreBB": 2,
+      "result": "引き分け"
+    },
+    "separateMatch": {
+      "rounds": 3,
+      "manualTruthDeclaration": true,
+      "randomTruthOnly": false,
+      "scoreAA": 1,
+      "scoreBB": 2,
+      "result": "操作例BB の勝利"
+    },
+    "historyCountAfterCompletion": 2,
+    "uniqueQuestionsAcrossBothMatchesClaim": false,
+    "realHumanMatchClaim": false,
+    "rtaOrSpeedClaim": false,
+    "storePublishedVersionAtOfficialLookup": "1.02",
+    "storeLookupUtc": "2026-10-26T11:29:35.556Z",
+    "storeAppId": "6783599249",
+    "onScreenDisclosure": "次期版の操作例・回答は架空",
+    "realDevicePerformanceVerified": false,
+    "nearbyOrOnlineNetworkingVerified": false,
+    "productChanged": false,
+    "iapOrAdGateBypass": false,
+    "appleSubmissionOrMessages": false
+  },
+  "production": {
+    "photoCraftActual": true,
+    "effectCraftActual": true,
+    "filmCraftActual": true,
+    "avatar": "specified Revenant_Natural / official actual Cubism Core / new voice-driven RMS mouth",
+    "avatarMainInterval": [
+      0,
+      30
+    ],
+    "avatarShortInterval": [
+      0,
+      3
+    ],
+    "wholeVideoHostRequired": false,
+    "voice": "VOICEVOX:青山龍星 / speaker13 / natural speed1.06",
+    "background": "BGM108 Connecting Lights, original, background only",
+    "musicTopic": false,
+    "gameAudioRecorded": false,
+    "imageGenerationUsed": false,
+    "wholeDirectWatch": false,
+    "wholeSubjectiveListen": false,
+    "fDelivery": "F:\\Videos\\ProjectP-TruthOrLie-2026-10-27\\revision-01",
+    "actualMastersRendered": true,
+    "rootFinalVisualAccepted": false,
+    "actualMainSeconds": 708.01,
+    "mainMinimum600Verified": true,
+    "completeAvAndVoiceNumericalQa": true
+  },
+  "goal": {
+    "tiktokFollowersByNovemberEnd": 500,
+    "tiktokFollowersByYearEnd": 1000,
+    "achieved": false,
+    "growthEffectMeasured": false
+  }
+}

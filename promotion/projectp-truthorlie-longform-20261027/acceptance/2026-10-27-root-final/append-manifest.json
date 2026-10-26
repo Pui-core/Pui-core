@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "APPEND_ONLY_SAME_BYTES_IN_SOURCE_AND_F",
+  "baseReceiptSha256": "de8fedd33e87ff5113a418d1a01322f4b6b00080507b11f0e059502ef20cf216",
+  "frozenPayloadFileCount": 765,
+  "originalPayloadModified": false,
+  "appendDirectory": "acceptance/2026-10-27-root-final",
+  "files": [
+    {
+      "file": "acceptance.md",
+      "bytes": 2608,
+      "sourceSha256": "2cb6bf6ed7068d3bd3e844afa52a7af5af2e2d80d81f8e1d737a8d0c38346a16",
+      "fSha256": "2cb6bf6ed7068d3bd3e844afa52a7af5af2e2d80d81f8e1d737a8d0c38346a16"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1090,
+      "sourceSha256": "5796b1c61f0a8ca329f771403dad917889d646986ecc8d173aca0ec0fd4604aa",
+      "fSha256": "5796b1c61f0a8ca329f771403dad917889d646986ecc8d173aca0ec0fd4604aa"
+    },
+    {
+      "file": "receipt.json",
+      "bytes": 4126,
+      "sourceSha256": "16b9bcee62585fc16d54518c1ea26173a9ffc8fe0a105c62a27d387118cfaecf",
+      "fSha256": "16b9bcee62585fc16d54518c1ea26173a9ffc8fe0a105c62a27d387118cfaecf"
+    }
+  ]
+}

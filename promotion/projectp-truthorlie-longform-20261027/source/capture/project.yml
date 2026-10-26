@@ -1,0 +1,38 @@
+include:
+  - path: ../../product/project.yml
+    relativePaths: true
+name: ProjectP121Capture
+settings:
+  base:
+    SWIFT_ACTIVE_COMPILATION_CONDITIONS: APPSTORE_RELEASE
+    CODE_SIGNING_ALLOWED: NO
+    ARCHS: x86_64
+    ONLY_ACTIVE_ARCH: YES
+targets:
+  TruthOrLie:
+    settings:
+      base:
+        INFOPLIST_FILE: ../../product/Sources/TruthOrLie/Info.plist
+  ProjectP121CaptureTests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: CaptureTests
+    dependencies:
+      - target: TruthOrLie
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.pui-core.projectp121.capturetests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: TruthOrLie
+schemes:
+  ProjectP121Capture:
+    build:
+      targets:
+        TruthOrLie: all
+        ProjectP121CaptureTests: [test]
+    test:
+      gatherCoverageData: false
+      targets:
+        - ProjectP121CaptureTests

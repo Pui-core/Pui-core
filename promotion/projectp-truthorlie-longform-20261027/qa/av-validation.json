@@ -1,0 +1,65 @@
+{
+  "status": "PASS_3_MASTERS_COMPLETE_AV_DECODE_AND_FORMAT_LEVELS",
+  "outputs": [
+    {
+      "video": "videos/truthorlie-seven-rounds.mp4",
+      "sha256": "e1009b5c3f87e96eba13c0181028dad95fef2593f93868d344856eab4464071b",
+      "duration": 708.01,
+      "frames": 21240,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": {
+        "codec": "aac",
+        "sampleRate": 48000,
+        "channels": 2,
+        "integratedLUFS": -19.4,
+        "truePeakDbFS": -2.1
+      },
+      "allAvDecodeExit": 0,
+      "wholeDirectWatch": false,
+      "wholeSubjectiveListen": false
+    },
+    {
+      "video": "short/videos/truthorlie-short.mp4",
+      "sha256": "61f71b4c2722ccc3c3081bd7e01f8ca60ecd223546c507bf8f65fac679fdecb4",
+      "duration": 40,
+      "frames": 1200,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "audio": {
+        "codec": "aac",
+        "sampleRate": 48000,
+        "channels": 2,
+        "integratedLUFS": -19.5,
+        "truePeakDbFS": -1.3
+      },
+      "allAvDecodeExit": 0,
+      "wholeDirectWatch": false,
+      "wholeSubjectiveListen": false
+    },
+    {
+      "video": "short/videos/truthorlie-short-tt.mp4",
+      "sha256": "9c7314e764bc901bff1883d57adc87023de665f51cabb36238cd543753889c73",
+      "duration": 40,
+      "frames": 1200,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "audio": {
+        "codec": "aac",
+        "sampleRate": 48000,
+        "channels": 2,
+        "integratedLUFS": -19.7,
+        "truePeakDbFS": -1.5
+      },
+      "allAvDecodeExit": 0,
+      "wholeDirectWatch": false,
+      "wholeSubjectiveListen": false
+    }
+  ],
+  "mainMinimum600": true,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false
+}

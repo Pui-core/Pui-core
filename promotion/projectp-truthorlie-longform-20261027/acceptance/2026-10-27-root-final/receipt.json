@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "status": "ROOT_FINAL_F_PRODUCTION_ACCEPTED",
+  "recordedAtUtc": "2026-10-26T20:01:32.530Z",
+  "reviewer": "Root / CTO",
+  "acceptedSourceHead": "3a63c08a9399359682fc691e97646667ce9cbd9d",
+  "sourcePr": "https://github.com/Pui-core/Pui-core/pull/55",
+  "evidence": {
+    "prCase": "https://github.com/Pui-core/Pui-core/pull/55#issuecomment-6425944164",
+    "prCaseCreatedAtUtc": "2026-10-26T19:57:43Z",
+    "issueCase": "https://github.com/Pui-core/-/issues/121#issuecomment-6425944673",
+    "issueCaseCreatedAtUtc": "2026-10-26T19:57:45Z",
+    "acceptanceText": "acceptance.md",
+    "acceptanceTextSha256": "2cb6bf6ed7068d3bd3e844afa52a7af5af2e2d80d81f8e1d737a8d0c38346a16"
+  },
+  "frozenBase": {
+    "receipt": "qa/delivery.json",
+    "sha256": "de8fedd33e87ff5113a418d1a01322f4b6b00080507b11f0e059502ef20cf216",
+    "fileCount": 765,
+    "totalBytes": 26263759327,
+    "payloadModified": false,
+    "receiptModified": false
+  },
+  "rootIndependentChecks": {
+    "main": {
+      "containerSeconds": 708.01,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 21240,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "audioSampleRate": 48000,
+      "audioChannels": 2,
+      "minimum600": true
+    },
+    "masterShaMatched": [
+      {
+        "file": "videos/truthorlie-seven-rounds.mp4",
+        "bytes": 91193066,
+        "sha256": "e1009b5c3f87e96eba13c0181028dad95fef2593f93868d344856eab4464071b"
+      },
+      {
+        "file": "short/videos/truthorlie-short.mp4",
+        "bytes": 7869053,
+        "sha256": "61f71b4c2722ccc3c3081bd7e01f8ca60ecd223546c507bf8f65fac679fdecb4"
+      },
+      {
+        "file": "short/videos/truthorlie-short-tt.mp4",
+        "bytes": 7859529,
+        "sha256": "9c7314e764bc901bff1883d57adc87023de665f51cabb36238cd543753889c73"
+      }
+    ],
+    "baseShaMatched": true,
+    "actuallyViewedImages": {
+      "mainSeconds": [
+        0.5,
+        89,
+        398,
+        489,
+        554,
+        646.4,
+        681,
+        699
+      ],
+      "youtubeShortSeconds": [
+        0.5,
+        30,
+        37
+      ],
+      "tiktokShortSeconds": [
+        37
+      ],
+      "covers": [
+        "horizontal",
+        "short"
+      ],
+      "count": 14
+    },
+    "frame646p4Meaning": "Unselected neutral-gold comparison, not a result screen",
+    "historyTwoCardsNonoverlapping": true
+  },
+  "priorProducerEvidence": {
+    "nativeProjects": [
+      "projects/truthorlie-horizontal.ecproj",
+      "projects/truthorlie-horizontal.fcproj",
+      "short/projects/truthorlie-short.ecproj",
+      "short/projects/truthorlie-short.fcproj",
+      "short/projects/truthorlie-short-tt.ecproj",
+      "short/projects/truthorlie-short-tt.fcproj"
+    ],
+    "nativeFReopenSaveRenderMissing0": true,
+    "photoCraftReopenPngIdentical": true,
+    "all765PackagedShaMatched": true,
+    "fullAvDecode3Masters": true,
+    "wholePcmAndFinalAacCues": [
+      69,
+      5,
+      5
+    ],
+    "newVoiceDrivenActualCoreFrames": 900,
+    "normalUiCaptureReceipts": 9
+  },
+  "scopeLimits": {
+    "rootDidNotRehashAll765Again": true,
+    "rootDidNotReopenAllNativeAgain": true,
+    "wholeContinuousVideoWatch": false,
+    "wholeSubjectiveAudioListen": false,
+    "realHumanMatchClaim": false,
+    "realDevicePerformanceClaim": false,
+    "nearbyOrOnlineNetworkingClaim": false
+  },
+  "publicationState": {
+    "notChangedByThisAcceptance": true,
+    "publishedBySourceWriter": false,
+    "scheduledBySourceWriter": false,
+    "actualVideoId": null,
+    "relatedVideoId": null,
+    "relatedNativeSettingConfirmed": false,
+    "tiktokPopularTrackVerified": false,
+    "japanCommercialMusicLibraryVerified": false,
+    "background": "Provisional original BGM108",
+    "laterPublicationOwner": "Root"
+  },
+  "goals": {
+    "parent93Open": true,
+    "parent106Open": true,
+    "followers500ByNovemberEndAchieved": false,
+    "followers1000ByYearEndAchieved": false
+  },
+  "resolvedGate": "Root final F images and actual duration acceptance before merge/close/own WT cleanup",
+  "readmeSha256": "5796b1c61f0a8ca329f771403dad917889d646986ecc8d173aca0ec0fd4604aa"
+}

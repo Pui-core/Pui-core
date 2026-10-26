@@ -1,0 +1,23 @@
+{
+  "status": "RESOLVED_FINAL_WHOLE_PCM_AND_AAC69_PASS",
+  "rejectedAttemptReceipt": "qa/rejected-audio-receipt.json",
+  "currentOutput": "media/narration-stem.wav",
+  "duration": 708,
+  "sampleRate": 48000,
+  "channels": 2,
+  "bits": 24,
+  "exactSampleFrames": 33984000,
+  "waveBytes": 203904044,
+  "method": "Bounded exact-sample assembly of all complete VOICEVOX PCM16 source waves at gain1.45; sample-count-bounded background and mix, output size and wall-time guards",
+  "wholePcmPreexportReceipt": "qa/whole-voice-pcm-preexport.json",
+  "all69WholeSourcePhrasesRetained": true,
+  "maximumWholePcmError": 1.5497207650483347e-7,
+  "peakDbfs": -2.1,
+  "finalAacValidation": "qa/whole-voice-aac.json",
+  "controller2615116ResumedAfterValidation": true,
+  "failedOutputPrivateExcludedFromDelivery": true,
+  "wholeSubjectiveListen": false,
+  "guiInput": 0,
+  "finalMainSha256": "e1009b5c3f87e96eba13c0181028dad95fef2593f93868d344856eab4464071b",
+  "minimumWholeAacCorrelation": 0.9997177207882275
+}

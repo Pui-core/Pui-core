@@ -1,0 +1,123 @@
+{
+  "status": "PASS_EXACTLY_ONE_TEST_AND_FINALIZED_RECORDER_PER_ACCEPTED_CAPTURE",
+  "accepted": [
+    {
+      "attempt": "coder-firstvote06",
+      "totalTestCount": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "testExit": 0,
+      "recorderExit": 0,
+      "testSummarySha256": "4e590b213599242c8d6b5b6209f7d60e0e1ad9c84a33fd95233bb7c0b64d6540",
+      "rawSha256": "5a0f572b9c60d6c99d610efb68d3f1e7f1affd6233581ed1f3527e30d335ba25",
+      "rawBytes": 83804695,
+      "driverSha256": null
+    },
+    {
+      "attempt": "coder-round2-vote01",
+      "totalTestCount": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "testExit": 0,
+      "recorderExit": 0,
+      "testSummarySha256": "805746ef83ff674c319be24190e2da7d1a6b652b1757d79291b64dd2c999b45d",
+      "rawSha256": "7f1f903976c07aa34e17189f2886261f00dfb7ecc6abbacb25c6846a60d25315",
+      "rawBytes": 78372000,
+      "driverSha256": "ac2a7a39ce10bbdab58e7cc910c42fd2ba144bb2840307e654ee752f670d3467"
+    },
+    {
+      "attempt": "coder-round3-vote02",
+      "totalTestCount": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "testExit": 0,
+      "recorderExit": 0,
+      "testSummarySha256": "b89ae3e1d57acfaa2eb8c87821c21c1012eb1b3b41c96b9e723436912d126b29",
+      "rawSha256": "c621db60f6410cd04153f7d6a03629ad75b75b980fb2714cbd40365bb32057cc",
+      "rawBytes": 80583392,
+      "driverSha256": "b959a3ab4bffc8847fc9a023e6248d34b52f2cc2a3226e56e8abc1835f1efd9d"
+    },
+    {
+      "attempt": "coder-round4-final01",
+      "totalTestCount": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "testExit": 0,
+      "recorderExit": 0,
+      "testSummarySha256": "e848e8ee9642530275dcc4c7a29fb157d30fa4561fea47150d4dc299faf84815",
+      "rawSha256": "5e75c6b497c8670b67872cf012742229b075bb2e9d4c239e43d11e5f4c76d8b7",
+      "rawBytes": 114050698,
+      "driverSha256": null
+    },
+    {
+      "attempt": "coder-truth-setup01",
+      "totalTestCount": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "testExit": 0,
+      "recorderExit": 0,
+      "testSummarySha256": "cb13795f702dcb797ecb15f3758cff59495af3d6f50d8941c7b54977182e900a",
+      "rawSha256": "74f2358e32555d7d6d6f30d25c200d61fc721154b3682024c1dca46f520c1689",
+      "rawBytes": 30672213,
+      "driverSha256": null
+    },
+    {
+      "attempt": "coder-truth1-vote02",
+      "totalTestCount": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "testExit": 0,
+      "recorderExit": 0,
+      "testSummarySha256": "cf2e604870fcd955608b49a851ae9ba663572124ed066b118d14c40320753a31",
+      "rawSha256": "18c002d0949c97734c441046536a9e510aa60a8626c03670a7c9248a1d64e225",
+      "rawBytes": 80477792,
+      "driverSha256": null
+    },
+    {
+      "attempt": "coder-truth2-vote01",
+      "totalTestCount": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "testExit": 0,
+      "recorderExit": 0,
+      "testSummarySha256": "2033e9b968427e25fc00abed392e1b8a6351bd74064a927585f403569814ae45",
+      "rawSha256": "c4d2890405f0a06600c62eceae2dbf5c2628aabf8f99ed2d3c27379023e14d0b",
+      "rawBytes": 81327040,
+      "driverSha256": null
+    },
+    {
+      "attempt": "coder-truth3-final01",
+      "totalTestCount": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "testExit": 0,
+      "recorderExit": 0,
+      "testSummarySha256": "e4fb09afab8658135ef1344b1ff79a0c79de1b424a585e0acdcdddc14909bae5",
+      "rawSha256": "6f8865751605f1c2ad7acbcbe0edabc4d51be32f27c84ae380201d17cedfa326",
+      "rawBytes": 94444212,
+      "driverSha256": null
+    },
+    {
+      "attempt": "coder-history01",
+      "totalTestCount": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "testExit": 0,
+      "recorderExit": 0,
+      "testSummarySha256": "c9ceb5818afabf020ebe18af822e7af3a18a9f1579e311aa4dad954a6b032570",
+      "rawSha256": "29783e2454a7225e33d5b46851397531def33499f35b609167de05fe66dd8209",
+      "rawBytes": 13120971,
+      "driverSha256": null
+    }
+  ],
+  "productBinarySha256": "51bcf0e740e1253a44edbcc2f038d765cc9d7716804b0ec35e0c34d04b988d70",
+  "productUnchanged": true,
+  "productPinScope": "Dedicated build and pre/post capture checks; early attempts predate per-attempt product hash file, so no missing per-attempt receipt is invented.",
+  "onlyNormalAccessibilityUi": true,
+  "rawCapturesPrivate": true,
+  "failedAndZeroTestHistoryPreserved": true,
+  "firstWhiteOneFrameRejected": true,
+  "oldZeroTestFalsePositiveRejected": true,
+  "ownedSimulatorShutdownUtc": "2026-10-26T14:25:56Z",
+  "otherDevicesChanged": false
+}
