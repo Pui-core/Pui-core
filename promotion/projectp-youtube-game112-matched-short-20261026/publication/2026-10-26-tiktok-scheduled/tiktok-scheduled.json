@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "kind": "redacted_scheduled_publication_record",
+  "recordedBy": "codex Coder from Root publisher receipt; no sourcewriter GUI actions",
+  "sourceRootReceiptSha256": "fcfd888fc1decc496258df5258585ef938d0b555eb09ee83baa1152772758158",
+  "platform": "tiktok",
+  "accountId": "prop_pui",
+  "productionIssue": 114,
+  "parentIssues": [
+    93,
+    106
+  ],
+  "state": "scheduled_confirmed",
+  "videoId": "7700862636182850822",
+  "url": "https://www.tiktok.com/@prop_pui/video/7700862636182850822",
+  "scheduledForAtJst": "2026-10-26T19:15:00+09:00",
+  "scheduledForAtUtc": "2026-10-26T10:15:00.000Z",
+  "actualPublishedAt": null,
+  "confirmedAt": "2026-10-26T06:41:43.1120987Z",
+  "createdFromIntentAt": "2026-10-26T06:40:16.3893114Z",
+  "videoSha256": "033c1f678098ffef3afe6b36c81bd221d9f2ebdd7cc6e0245881181f5cd0f2ad",
+  "coverSha256": "3c0d8e698e77fa1aa983930fa30c6a156974f2a8b193b326221e890cd492bc6c",
+  "sourceDeliveryReceiptSha256": "6fa93b70560ec178a782f851cede2b0caeaad139ffad6a25f7af17d2b6bef01c",
+  "productionSource": {
+    "pr": "https://github.com/Pui-core/Pui-core/pull/43",
+    "head": "908193a87659b4e08087532ed2db8744ac778d85",
+    "merge": "18b4b73f3a4cee9dc1fb33398583508701403835"
+  },
+  "caption": "クリアしたら、思い出が1つ消えた。ルミの名前はまだ覚えている。自作ゲーム『EMBERWAKE』第1話、最初の忘却。このゲームの続きを、フォローして見届けて。通常入力を自動化した実録画を編集／RTAではありません。声：VOICEVOX:青山龍星（合成音声） #EMBERWAKE #自作ゲーム #ゲーム制作",
+  "captionCharacters": 152,
+  "captionNativeReadbackExact": true,
+  "fileAttachIntents": 1,
+  "coverAttachIntents": 1,
+  "submissionIntents": 1,
+  "reposts": 0,
+  "settings": {
+    "visibility": "Anyone",
+    "scheduledMode": true,
+    "ownBrand": true,
+    "thirdPartyBrandedContent": false,
+    "aiDisclosure": true,
+    "highQuality": "NativeWebStudioHDdefaultenabled",
+    "comments": true,
+    "reuse": true,
+    "remix": true,
+    "customCoverUploaded": true,
+    "nativeCoverPanDownPixels": 40
+  },
+  "checks": {
+    "copyright": "no_issues",
+    "content": "no_violations_detected"
+  },
+  "nativeVerification": {
+    "publisher": "Root",
+    "normalReload": true,
+    "freshScheduledRow": true,
+    "nativeDateTimeLabel": "10月26日 午後7:15",
+    "nativeLength": "00:26",
+    "visibility": "Anyone",
+    "otherThreePostsPreserved": true,
+    "cancelledMusic99Absent": true,
+    "actualNativeCoverHeadlineVisual": true,
+    "nativeCoverAdjustment": {
+      "sourceFileUnchanged": true,
+      "panDownPixels": 40,
+      "headlineCompleteVerifiedByRoot": true
+    },
+    "directWholeAudition": false
+  },
+  "previousPendingSnapshot": {
+    "record": "../2026-10-26-youtube-public/tiktok-pending.json",
+    "retainedAsHistory": true,
+    "foregroundBlockerResolved": true,
+    "actualForegroundVerifiedAt": "2026-10-26T06:12:22Z"
+  },
+  "analytics": {
+    "actual24h": null,
+    "actual72h": null,
+    "provisional24hFromPlannedPublish": "2026-10-27T10:15:00.000Z",
+    "provisional24hJst": "2026-10-27T19:15:00+09:00",
+    "provisional72hFromPlannedPublish": "2026-10-29T10:15:00.000Z",
+    "provisional72hJst": "2026-10-29T19:15:00+09:00",
+    "dueFromActualPublish": false,
+    "recalculateFromActualPublishedAt": true,
+    "scheduledZeroIsNotPerformance": true,
+    "views": null
+  },
+  "musicTopic": false,
+  "oldMusic99Requeued": false,
+  "bgm": {
+    "issue": 108,
+    "revision": "03-native-soundcraft",
+    "use": "game background originalmusic"
+  },
+  "remaining": {
+    "actualPublicConfirmation": "After19:15, existing parent93 publisher verifies this exact ID and actual timestamp; do not reupload",
+    "analyticsParentIssue": 93,
+    "goalTargetsAchieved": false
+  },
+  "redaction": {
+    "privateUiRawIncluded": false,
+    "clipboardIncluded": false,
+    "authenticationIncluded": false,
+    "trackingParamsIncluded": false,
+    "publicDataAndMinimalPublisherFactsOnly": true
+  }
+}
