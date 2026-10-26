@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "asOfDateJst": "2026-10-26",
+  "currentFollowers": 0,
+  "currentFollowersObservedAt": "2026-10-26T00:36:08.665Z",
+  "convention": "今日を含む各JST暦日で計算。予測/保証ではなく必要な平均純増。",
+  "targets": [
+    {
+      "dateJst": "2026-11-30",
+      "followers": 500,
+      "remainingDaysIncludingToday": 36,
+      "requiredNetFollowers": 500,
+      "requiredNetFollowersPerDay": 13.88888888888889,
+      "accountingAveragePerPostAtThreePerDay": 4.62962962962963
+    },
+    {
+      "dateJst": "2026-12-31",
+      "followers": 1000,
+      "remainingDaysIncludingToday": 67,
+      "requiredNetFollowers": 1000,
+      "requiredNetFollowersPerDay": 14.925373134328359,
+      "accountingAveragePerPostAtThreePerDay": 4.975124378109452
+    }
+  ],
+  "decemberIfNovemberTargetMet": {
+    "startDateJst": "2026-12-01",
+    "endDateJst": "2026-12-31",
+    "startFollowers": 500,
+    "targetFollowers": 1000,
+    "days": 31,
+    "requiredNetPerDay": 16.129032258064516
+  },
+  "interpretation": "投稿別平均は計画上の割算で、各投稿へのフォロー帰属や予測ではない。必要再生数は実フォロー率がまだ不明なため算定しない。実人数が変わるたびに再計算。"
+}

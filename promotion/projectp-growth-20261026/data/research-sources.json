@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "checkedDateJst": "2026-10-26",
+  "citationMethod": "短い要約のみ。検索index/直接本文/Rootの実UI観測を区別。",
+  "sources": [
+    {
+      "id": "T1",
+      "title": "TikTok公式・おすすめと検索の仕組み",
+      "url": "https://support.tiktok.com/en/using-tiktok/exploring-videos/how-tiktok-recommends-content",
+      "publishedAt": null,
+      "sourceType": "platform_primary_help",
+      "access": "Root独立調査の公式検索index本文、2026-10-26確認。直接Helpはrobots/FAQ制限あり。",
+      "finding": "視聴時間・完視聴・スキップ等を推薦要素として説明。検索では検索語と内容の一致等を説明。",
+      "limits": "秒数の閾値・重み・日本の本accountの最適値は非公開。",
+      "use": "最初に実変化を示す仮説と、内容に一致する検索語。"
+    },
+    {
+      "id": "T2",
+      "title": "TikTok公式・Creator Search Insights導入",
+      "url": "https://newsroom.tiktok.com/creator-search-insights?lang=en",
+      "publishedAt": "2024-03-13",
+      "sourceType": "platform_primary_newsroom",
+      "access": "Root独立調査の公式導入記事。",
+      "finding": "検索需要を企画へ使う機能の導入。",
+      "limits": "導入時の地域限定記事。現在の日本・0followersの実UI可否は未確認。",
+      "use": "利用可能なら需要/不足テーマの補助情報にする。必須ゲートにしない。"
+    },
+    {
+      "id": "T3",
+      "title": "TikTok公式・アカウントの状態",
+      "url": "https://support.tiktok.com/en/safety-hc/account-and-user-safety/account-status",
+      "publishedAt": null,
+      "sourceType": "platform_primary_help",
+      "access": "Root独立調査の公式検索index本文。",
+      "finding": "アプリのStudio/Safety CenterからAccount checkを案内。",
+      "limits": "Web Studioに同じ機能があるとの検証ではない。",
+      "use": "露出0が続く場合の状態確認。"
+    },
+    {
+      "id": "T4",
+      "title": "TikTok公式・違反と制限",
+      "url": "https://support.tiktok.com/en/safety-hc/account-and-user-safety/content-violations-and-bans",
+      "publishedAt": null,
+      "sourceType": "platform_primary_help",
+      "access": "Root独立調査の公式検索index本文。",
+      "finding": "おすすめ対象外等の通知をMore insights/Analyticsで確認する案内。",
+      "limits": "当accountの推薦資格を確認済みではない。",
+      "use": "明示通知があれば、単なる低再生と分けて診断。"
+    },
+    {
+      "id": "T5",
+      "title": "TikTok公式・AI生成コンテンツの表示",
+      "url": "https://support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content",
+      "publishedAt": null,
+      "sourceType": "platform_primary_help",
+      "access": "Root独立調査の公式検索index本文。",
+      "finding": "ガイドライン内ならAIGC設定ON自体が配信へ影響するものではないと説明。",
+      "limits": "内容の品質・適格性や個々の動画の配信量を保証しない。",
+      "use": "VOICEVOXの適切なAI表示を保持。表示を隠して伸ばす案にしない。"
+    },
+    {
+      "id": "T6",
+      "title": "TikTok公式・商用音楽利用",
+      "url": "https://support.tiktok.com/en/business-and-creator/creator-and-business-accounts/commercial-use-of-music-on-tiktok?lang=en",
+      "publishedAt": null,
+      "sourceType": "platform_primary_help",
+      "access": "Root独立調査の公式検索index本文。",
+      "finding": "CMLを推奨。外部音楽は必要な権利とMusic Usage Confirmationの経路を案内。",
+      "limits": "一般一覧への掲載だけで自作品宣伝の利用許可にならない。",
+      "use": "正しい原音・使用区間・帰属・権利確認を保持。"
+    },
+    {
+      "id": "R1",
+      "title": "Buffer・投稿頻度の原調査",
+      "url": "https://buffer.com/resources/how-often-should-you-post-on-tiktok/",
+      "publishedAt": "2025-10-08",
+      "sourceType": "original_observational_research",
+      "access": "本担当が本文を直接閲覧、2026-10-26。見出しは2026、公開日は2025。",
+      "finding": "約1,140万投稿・15万超account。高頻度群では上位側の機会が増える一方、中央値はほぼ横ばい。",
+      "limits": "観察研究。固定効果調整でも未観測差・利用者の選択偏りを除去しきれない。3本/日の因果・日本の新規accountの期待値ではない。",
+      "use": "上限撤廃を探索機会として使い、投稿ごとの必勝とは扱わない。"
+    },
+    {
+      "id": "R2",
+      "title": "Metricool・2026 TikTok原調査",
+      "url": "https://metricool.com/press-release-tiktok-study-2026/",
+      "publishedAt": "2026-05-12",
+      "sourceType": "original_observational_research",
+      "access": "本担当が本文/方法を直接閲覧、2026-10-26。",
+      "finding": "世界約231万投稿・9.2万超account、2025/2026年1〜2月を比較。投稿量増と1投稿の成績低下、質問とコメント数の関連を報告。",
+      "limits": "世界の管理サービス利用者の観察。質問や頻度の因果、当accountの最適時刻に転用しない。",
+      "use": "本数だけを追わず、一つの具体的な問いを試す。"
+    },
+    {
+      "id": "C1",
+      "title": "Tiny Glade開発者本人インタビュー",
+      "url": "https://80.lv/articles/exclusive-tiny-glade-developers-discuss-bevy-proceduralism-publishers-cozy-games",
+      "publishedAt": "2024-05-30",
+      "sourceType": "creator_firsthand_interview",
+      "access": "本担当が本人発言を直接閲覧、2026-10-26。TikTok動画の全編視聴ではない。",
+      "finding": "開発者以外の反応を確かめるためTikTokへ進出。壁が組み替わる気持ちよさを本人が振り返る。",
+      "limits": "過去の本人回想。現在の日本の成功率や投稿別成績は未検証。",
+      "use": "技術名の説明より、芯石で足場が変わる実現象を見せる。"
+    },
+    {
+      "id": "C2",
+      "title": "Unpacking運用本人の振り返り",
+      "url": "https://www.victoriatran.com/writing/unpacking-tiktok-strategy",
+      "publishedAt": "2022-12-02",
+      "activityPeriod": "2021",
+      "sourceType": "creator_firsthand_retrospective",
+      "access": "本担当が記事本文を直接閲覧、2026-10-26。公開年はRoot独立調査のmetadata、表示本文はDec2。",
+      "finding": "物が片付く満足感、冒頭の品物、生活に近い問い、同じ核への別の切り口を説明。",
+      "limits": "既存Twitter約1.8万と発売施策がある過去の自己報告。現在のTikTok動画は直接検証せず、成功数値を期待値にしない。",
+      "use": "新作一覧より、一つの選択が変えた体験を見せる。"
+    },
+    {
+      "id": "C3",
+      "title": "日本の個人ゲーム開発者による初期報告",
+      "url": "https://note.com/midnightcupcakes/n/n48ed19acbc75",
+      "publishedAt": "2023-04-11",
+      "sourceType": "creator_firsthand_report",
+      "access": "本担当が記事本文を直接閲覧、2026-10-26。",
+      "finding": "5本で各約300〜700再生、ウィッシュリストへの影響なしと報告。",
+      "limits": "小標本・過去の本人報告。全新規accountの最低再生数ではない。",
+      "use": "視聴者に届くことと、フォロー/作品購入への成果を分けて測る。"
+    }
+  ]
+}

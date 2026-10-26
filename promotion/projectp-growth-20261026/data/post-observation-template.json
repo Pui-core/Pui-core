@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "templateOnly": true,
+  "accountId": "prop_pui",
+  "slotId": null,
+  "contentFamily": null,
+  "episodeEvidence": null,
+  "hookType": null,
+  "firstVisibleChangeSeconds": null,
+  "durationSeconds": null,
+  "videoSha256": null,
+  "postId": null,
+  "postUrl": null,
+  "submissionState": "not_submitted",
+  "scheduledForJst": null,
+  "actualPublishedAt": null,
+  "measurementWindowHours": null,
+  "windowDueAt": null,
+  "collectedAt": null,
+  "elapsedHours": null,
+  "dataStatus": "not_collected",
+  "views": {
+    "displayedValue": null,
+    "nativeConfirmed": false
+  },
+  "averageWatchSeconds": {
+    "displayedValue": null,
+    "evaluationValue": null
+  },
+  "completionPercent": {
+    "displayedValue": null,
+    "evaluationValue": null
+  },
+  "shares": null,
+  "saves": null,
+  "comments": null,
+  "profileVisits": {
+    "value": null,
+    "attributionScope": "unknown",
+    "nativeFieldAvailable": null
+  },
+  "newFollowers": {
+    "value": null,
+    "attributionScope": "unknown",
+    "nativeFieldAvailable": null
+  },
+  "newFollowsPer1000Views": null,
+  "displayedProcessingNotice": null,
+  "recommendationEligibility": "undetermined",
+  "eligibilityEvidence": null,
+  "qualityIssue": null,
+  "limitations": [],
+  "rules": [
+    "0視聴・未提供・処理中なら継続率/完視聴/フォロー率のevaluationはnull。表示0はdisplayedValueにだけ残せる。",
+    "投稿別profile/follows項目を実UIで取得できた時だけattributionScope=postとする。account日次を割り当てない。",
+    "newFollowsPer1000Views = post範囲のnewFollowers / 同期間views × 1000。分母>0・双方提供時だけ計算。",
+    "24h/72h dueはactualPublishedAtから算定。予約・未公開に投稿後成績を付けない。",
+    "未取得と0実測を別に記録し、取得時刻・対象ID・経過時間を揃える。"
+  ]
+}
