@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_THREE_DOC_APPEND_AND_SELECTED_ORIGINAL_BYTES_UNCHANGED",
+  "recordIssue": 116,
+  "productionIssue": 100,
+  "parentIssue": 93,
+  "appendFolder": "publication/2026-10-26-public",
+  "createdAt": "2026-10-26T07:16:19.494Z",
+  "rootPublicReceiptSha256": "be81052e1b694ab543a0f161480ca85c4cbecbebc0c372cb2cfcaf721ff802e3",
+  "rootCaptionVerificationSha256": "302490e2eb06db085eb018c1f858ada18fbf06269bb8572facca445e14879b9e",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 3109,
+      "sourceSha256": "626bb5be652a2c3d033b0f9d6c0bc534b8a0ee64bf05cdbda43753a819cf21aa",
+      "deliverySha256": "626bb5be652a2c3d033b0f9d6c0bc534b8a0ee64bf05cdbda43753a819cf21aa"
+    },
+    {
+      "file": "public-record.json",
+      "bytes": 4008,
+      "sourceSha256": "769ed459ca2e691f8391f8c5ad467c166993acbe4db4ef8cc6f23c5591cf5d93",
+      "deliverySha256": "769ed459ca2e691f8391f8c5ad467c166993acbe4db4ef8cc6f23c5591cf5d93"
+    }
+  ],
+  "fileCount": 2,
+  "totalBytes": 7117,
+  "originalPreservation": {
+    "scope": "Seven selected original manifest/video/caption/cover/native files bytes and hashes before/after; append-only path. No fullpackage scan or rerender.",
+    "originalFilesWritten": 0,
+    "originalManifestDeclaredFiles": 878,
+    "originalManifestDeclaredBytes": 1436692677,
+    "checkedOriginals": [
+      {
+        "file": "qa/delivery.json",
+        "bytes": 271516,
+        "sha256": "71445c03bf8dcf7714322fbfc58e5c8aca44e6d7c98b8e79ef85508f67a66152"
+      },
+      {
+        "file": "videos/missyou-stamp.mp4",
+        "bytes": 2820890,
+        "sha256": "a28dc095775670380fca6551f7c394a6d719601109b98999a4531e25f7213eee"
+      },
+      {
+        "file": "source/caption.txt",
+        "bytes": 491,
+        "sha256": "f2b083f31e20ddbd8e22b64bd7ddd7773b4251772d609c5244788cec76cacf76"
+      },
+      {
+        "file": "covers/missyou-stamp-cover.png",
+        "bytes": 337712,
+        "sha256": "4ed364eccfc00465f6f1f9face133db98bce3d5b759812ed3311cc3637918d4d"
+      },
+      {
+        "file": "projects/missyou-stamp.ecproj",
+        "bytes": 570473,
+        "sha256": "c7dafc5684db2016c78afdb713223845dfa68e7cd89ca1f1b27a558b147482be"
+      },
+      {
+        "file": "projects/missyou-stamp.fcproj",
+        "bytes": 5013,
+        "sha256": "47ab82207ed8f8fea7aaa7ca962696622ea5a55bdf953b5624db796b5ee87dfa"
+      },
+      {
+        "file": "covers/missyou-stamp-cover.pcraft",
+        "bytes": 1185548,
+        "sha256": "b5a0414bdd56d7f84fd27dd8d0d895597552ec0bf96464c384933dd2d71bffd0"
+      }
+    ]
+  },
+  "sourceWriterActions": {
+    "gui": 0,
+    "post": 0,
+    "rootRuntime": 0,
+    "lease": 0,
+    "render": 0,
+    "newTests": 0,
+    "publicHttpRequests": 0
+  },
+  "validation": {
+    "utcJstAndActualCreateTime": true,
+    "dueFromActualPublish": true,
+    "captionRawExact": false,
+    "captionWhitespaceNormalizedEqual": true,
+    "legacyFalseFlagNotMismatchEvidence": true,
+    "earlyPerformanceJudgment": "not_due",
+    "directWholePlaybackAudition": false,
+    "nativePublicRowThisTurn": false
+  },
+  "privateUiRawIncluded": false,
+  "rawHttpIncluded": false,
+  "authenticationIncluded": false,
+  "clipboardIncluded": false,
+  "trackingParamsIncluded": false
+}
