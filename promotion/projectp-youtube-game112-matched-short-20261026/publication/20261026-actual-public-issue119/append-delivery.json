@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "kind": "append_only_publication_delivery_record",
+  "managementIssue": "https://github.com/Pui-core/-/issues/119",
+  "appendFolder": "publication/20261026-actual-public-issue119",
+  "status": "PASS_MINIMAL_RECORD_AND_RECEIPT_COPY_SHA_MATCH",
+  "rootReceipt": {
+    "file": "2026-10-26-game114-public.json",
+    "sha256": "9cc2813e40b1bb0ad57ee16b188565355e61a7c75e22bf2bc310b1bd2fd6e325",
+    "privateOriginal": true
+  },
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 1889,
+      "sourceSha256": "3e717bfcdf492691988cea1f7437722cfdd65e9b3f5afb9cffb006d6fa3734ca",
+      "deliverySha256": "3e717bfcdf492691988cea1f7437722cfdd65e9b3f5afb9cffb006d6fa3734ca",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "tiktok-public.json",
+      "bytes": 2601,
+      "sourceSha256": "a5c54ebf4d79e018fb29cb966ea24091754b2234b555b2cae0f752aa0d108081",
+      "deliverySha256": "a5c54ebf4d79e018fb29cb966ea24091754b2234b555b2cae0f752aa0d108081",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "root-tiktok-public.private.json",
+      "bytes": 2270,
+      "sourceSha256": "9cc2813e40b1bb0ad57ee16b188565355e61a7c75e22bf2bc310b1bd2fd6e325",
+      "deliverySha256": "9cc2813e40b1bb0ad57ee16b188565355e61a7c75e22bf2bc310b1bd2fd6e325",
+      "privateDeliveryOnly": true
+    }
+  ],
+  "fileCount": 3,
+  "frozenReceiptChecks": [
+    {
+      "file": "qa/delivery.json",
+      "sha256": "6fa93b70560ec178a782f851cede2b0caeaad139ffad6a25f7af17d2b6bef01c",
+      "afterSha256": "6fa93b70560ec178a782f851cede2b0caeaad139ffad6a25f7af17d2b6bef01c",
+      "unchanged": true
+    },
+    {
+      "file": ".projectp-issue114-delivery.json",
+      "sha256": "7fb3842c2524ba96f748a06828ab2b02bbcc144794e1833fa72473d9422bd168",
+      "afterSha256": "7fb3842c2524ba96f748a06828ab2b02bbcc144794e1833fa72473d9422bd168",
+      "unchanged": true
+    },
+    {
+      "file": "publication/2026-10-26-youtube-public/append-delivery.json",
+      "sha256": "aeee96a25a7e62e64185494e987ab2176c933fb7f21866808cf04a69aa79bb33",
+      "afterSha256": "aeee96a25a7e62e64185494e987ab2176c933fb7f21866808cf04a69aa79bb33",
+      "unchanged": true
+    },
+    {
+      "file": "publication/2026-10-26-tiktok-scheduled/append-delivery.json",
+      "sha256": "617d123d00f95a83d1d78c3b74a77135038c6ce353c73f043cfc8025e1f3ba5a",
+      "afterSha256": "617d123d00f95a83d1d78c3b74a77135038c6ce353c73f043cfc8025e1f3ba5a",
+      "unchanged": true
+    },
+    {
+      "file": "publication/2026-10-26-tiktok-scheduled/tiktok-scheduled.json",
+      "sha256": "55e24b4c2e2015fd987fda80be05dc127b2f4c90fb81f0995bda34e22f54aa82",
+      "afterSha256": "55e24b4c2e2015fd987fda80be05dc127b2f4c90fb81f0995bda34e22f54aa82",
+      "unchanged": true
+    }
+  ],
+  "frozenProductionPayloadFiles": 442,
+  "frozenPayloadRescanned": false,
+  "sourceWriterGuiActions": 0,
+  "sourceWriterPublications": 0,
+  "globalOrRuntimeEdits": 0
+}
