@@ -1,0 +1,33 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-hide_banner",
+    "-y",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-01.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-03.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-04.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-08.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-10.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-11.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-13.wav",
+    "-filter_complex",
+    "[0:a]adelay=150|150[v0];[1:a]adelay=3500|3500[v1];[2:a]adelay=6500|6500[v2];[3:a]adelay=9700|9700[v3];[4:a]adelay=13900|13900[v4];[5:a]adelay=17700|17700[v5];[6:a]adelay=22100|22100[v6];[v0][v1][v2][v3][v4][v5][v6]amix=inputs=7:normalize=0:duration=longest,volume=1.45,apad,atrim=duration=26.2[voice]",
+    "-map",
+    "[voice]",
+    "-c:a",
+    "pcm_s24le",
+    "-ar",
+    "48000",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\narration-stem.wav"
+  ],
+  "stdout": "",
+  "stderr": "[aist#0:0/pcm_s16le @ 000001f23fa7e500] Guessed Channel Layout: stereo\r\nInput #0, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-01.wav':\r\n  Duration: 00:00:02.60, bitrate: 1536 kb/s\r\n  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\n[aist#1:0/pcm_s16le @ 000001f23fa826c0] Guessed Channel Layout: stereo\r\nInput #1, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-03.wav':\r\n  Duration: 00:00:02.22, bitrate: 1536 kb/s\r\n  Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\n[aist#2:0/pcm_s16le @ 000001f23ff25080] Guessed Channel Layout: stereo\r\nInput #2, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-04.wav':\r\n  Duration: 00:00:02.40, bitrate: 1536 kb/s\r\n  Stream #2:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\n[aist#3:0/pcm_s16le @ 000001f23ff27ac0] Guessed Channel Layout: stereo\r\nInput #3, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-08.wav':\r\n  Duration: 00:00:03.38, bitrate: 1536 kb/s\r\n  Stream #3:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\n[aist#4:0/pcm_s16le @ 000001f23ff94200] Guessed Channel Layout: stereo\r\nInput #4, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-10.wav':\r\n  Duration: 00:00:02.47, bitrate: 1536 kb/s\r\n  Stream #4:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\n[aist#5:0/pcm_s16le @ 000001f240040d40] Guessed Channel Layout: stereo\r\nInput #5, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-11.wav':\r\n  Duration: 00:00:03.37, bitrate: 1536 kb/s\r\n  Stream #5:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\n[aist#6:0/pcm_s16le @ 000001f240159840] Guessed Channel Layout: stereo\r\nInput #6, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\voice-13.wav':\r\n  Duration: 00:00:03.10, bitrate: 1536 kb/s\r\n  Stream #6:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\nStream mapping:\r\n  Stream #0:0 (pcm_s16le) -> adelay:default\r\n  Stream #1:0 (pcm_s16le) -> adelay:default\r\n  Stream #2:0 (pcm_s16le) -> adelay:default\r\n  Stream #3:0 (pcm_s16le) -> adelay:default\r\n  Stream #4:0 (pcm_s16le) -> adelay:default\r\n  Stream #5:0 (pcm_s16le) -> adelay:default\r\n  Stream #6:0 (pcm_s16le) -> adelay:default\r\n  atrim:default -> Stream #0:0 (pcm_s24le)\r\nPress [q] to stop, [?] for help\r\nOutput #0, wav, to '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\narration-stem.wav':\r\n  Metadata:\r\n    ISFT            : Lavf62.3.100\r\n  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\n    Metadata:\r\n      encoder         : Lavc62.11.100 pcm_s24le\r\n[out#0/wav @ 000001f24003ad80] video:0KiB audio:7369KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.001352%\r\nsize=    7369KiB time=00:00:26.20 bitrate=2304.0kbits/s speed= 860x elapsed=0:00:00.03    \r\n"
+}

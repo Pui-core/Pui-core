@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/FilmCraft/filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\projects\\first-forgetting-short-tiktok.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-114\\\\promotion\\\\projectp-youtube-game112-matched-short-20261026\\\\videos\\\\first-forgetting-short-tiktok.mp4\",\"format\":\"h264\",\"audio\":true,\"audioCodec\":\"aac\",\"bitrateMode\":\"crf\",\"crf\":17,\"hardwareEncoding\":\"off\",\"gpuRendering\":\"off\",\"wait\":true}"
+  ],
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-114\\\\promotion\\\\projectp-youtube-game112-matched-short-20261026\\\\videos\\\\first-forgetting-short-tiktok.mp4\",\n  \"result\": {\n    \"bytes\": 3794423,\n    \"frames\": 786,\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-114\\\\promotion\\\\projectp-youtube-game112-matched-short-20261026\\\\videos\\\\first-forgetting-short-tiktok.mp4\",\n    \"render_fps\": 54.56374040355009,\n    \"seconds\": 14.4051708\n  }\n}\n",
+  "stderr": ""
+}

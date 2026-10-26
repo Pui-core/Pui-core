@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/PhotoCraft/photocraft-cli.exe",
+  "args": [
+    "run",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\actual-50.png",
+    "--cmd",
+    "image.crop",
+    "--params",
+    "{\"x\":70,\"y\":420,\"width\":1280,\"height\":88,\"deleteCroppedPixels\":true,\"contentAware\":false}",
+    "--out",
+    "F:\\Videos\\ProjectP-YouTube-Game112-Short-2026-10-26\\revision-01\\photocraft-stage\\promise-lumi.png",
+    "--format",
+    "png"
+  ],
+  "stdout": "{\"command\":\"image.crop\",\"result\":{\"documentHeight\":88,\"documentWidth\":1280,\"height\":88,\"resolution\":72.0,\"width\":1280,\"x\":70,\"y\":420}}\n",
+  "stderr": ""
+}

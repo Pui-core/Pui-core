@@ -1,0 +1,23 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\projects\\first-forgetting-short.ecproj",
+    "render",
+    "--comp",
+    "EMBERWAKE First Forgetting Short",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\first-forgetting-short-picture.mov",
+    "--format",
+    "prores",
+    "--prores",
+    "4444",
+    "--audio",
+    "off",
+    "--progress",
+    "--json"
+  ],
+  "stdout": "{\"rendered\":[{\"comp\":\"EMBERWAKE First Forgetting Short\",\"output\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-114\\\\promotion\\\\projectp-youtube-game112-matched-short-20261026\\\\media\\\\first-forgetting-short-picture.mov\",\"seconds\":41.5245169}]}\n",
+  "stderr": "EMBERWAKE First Forgetting Short → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\first-forgetting-short-picture.mov (1080×1920, 786 frames, Custom)\nprogress 0 786 0.0 -\nprogress 16 786 1.2 56.7\nprogress 32 786 2.2 52.5\nprogress 48 786 3.0 45.5\nprogress 64 786 3.8 42.3\nprogress 80 786 5.2 46.3\nprogress 96 786 6.1 44.0\nprogress 112 786 7.4 44.5\nprogress 128 786 8.2 41.9\nprogress 144 786 9.0 40.0\nprogress 160 786 9.8 38.3\nprogress 176 786 10.6 36.8\nprogress 192 786 11.4 35.4\nprogress 208 786 12.3 34.3\nprogress 224 786 13.1 32.8\nprogress 240 786 13.8 31.5\nprogress 256 786 14.6 30.3\nprogress 272 786 15.4 29.0\nprogress 288 786 16.2 28.0\nprogress 304 786 17.3 27.4\nprogress 320 786 18.2 26.5\nprogress 336 786 19.2 25.7\nprogress 352 786 20.1 24.7\nprogress 368 786 21.0 23.8\nprogress 384 786 21.9 23.0\nprogress 400 786 22.8 22.0\nprogress 416 786 23.7 21.1\nprogress 432 786 24.5 20.1\nprogress 448 786 25.2 19.0\nprogress 464 786 26.0 18.0\nprogress 480 786 26.7 17.0\nprogress 496 786 27.5 16.1\nprogress 512 786 28.3 15.1\nprogress 528 786 29.1 14.2\nprogress 544 786 29.9 13.3\nprogress 560 786 30.7 12.4\nprogress 576 786 31.5 11.5\nprogress 592 786 32.3 10.6\nprogress 608 786 33.2 9.7\nprogress 624 786 34.1 8.9\nprogress 640 786 35.0 8.0\nprogress 656 786 35.7 7.1\nprogress 672 786 36.3 6.2\nprogress 688 786 37.0 5.3\nprogress 704 786 37.8 4.4\nprogress 720 786 38.6 3.5\nprogress 736 786 39.3 2.7\nprogress 752 786 40.0 1.8\nprogress 768 786 40.7 1.0\nprogress 784 786 41.4 0.1\ndone: EMBERWAKE First Forgetting Short → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\first-forgetting-short-picture.mov in 41.52s\n"
+}

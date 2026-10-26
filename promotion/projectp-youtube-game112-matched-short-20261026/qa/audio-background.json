@@ -1,0 +1,23 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-hide_banner",
+    "-y",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\connecting-lights-master.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\narration-stem.wav",
+    "-filter_complex",
+    "[0:a]atrim=duration=26.2,volume=.65,afade=t=in:st=0:d=0.07,afade=t=out:st=25.45:d=0.75[bg];[bg][1:a]sidechaincompress=threshold=.025:ratio=4:attack=25:release=340:makeup=1:mix=1[duck]",
+    "-map",
+    "[duck]",
+    "-c:a",
+    "pcm_s24le",
+    "-ar",
+    "48000",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\background-stem.wav"
+  ],
+  "stdout": "",
+  "stderr": "Input #0, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\connecting-lights-master.wav':\r\n  Duration: 00:01:22.00, bitrate: 2304 kb/s\r\n  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\nInput #1, wav, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\narration-stem.wav':\r\n  Metadata:\r\n    encoder         : Lavf62.3.100\r\n  Duration: 00:00:26.20, bitrate: 2304 kb/s\r\n  Stream #1:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\nStream mapping:\r\n  Stream #0:0 (pcm_s24le) -> atrim:default\r\n  Stream #1:0 (pcm_s24le) -> sidechaincompress\r\n  sidechaincompress:default -> Stream #0:0 (pcm_s24le)\r\nPress [q] to stop, [?] for help\r\nOutput #0, wav, to '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-114\\promotion\\projectp-youtube-game112-matched-short-20261026\\media\\background-stem.wav':\r\n  Metadata:\r\n    ISFT            : Lavf62.3.100\r\n  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\n    Metadata:\r\n      encoder         : Lavc62.11.100 pcm_s24le\r\n[out#0/wav @ 0000025e78c3b1c0] video:0KiB audio:7104KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.001402%\r\nsize=    7104KiB time=00:00:25.25 bitrate=2304.0kbits/s speed= 358x elapsed=0:00:00.07    \r\n"
+}

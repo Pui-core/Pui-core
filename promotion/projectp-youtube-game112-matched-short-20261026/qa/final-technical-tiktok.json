@@ -1,0 +1,206 @@
+{
+  "status": "PASS_NUMERICAL_AND_BOUNDED_FINAL_IMAGES_AND_F_NATIVE_REOPEN",
+  "platform": "tiktok",
+  "videoSha256": "033c1f678098ffef3afe6b36c81bd221d9f2ebdd7cc6e0245881181f5cd0f2ad",
+  "coverSha256": "3c0d8e698e77fa1aa983930fa30c6a156974f2a8b193b326221e890cd492bc6c",
+  "frames": 786,
+  "duration": 26.218,
+  "size": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "fullAvDecode": true,
+  "audio": {
+    "integratedLufs": -18.7,
+    "truePeakDbtp": -3.3,
+    "cues": [
+      {
+        "file": "voice-01.wav",
+        "at": 0.15,
+        "wholePhraseSeconds": 2.6026666666666665,
+        "voicedFirstSeconds": 0.0550625,
+        "voicedLastSeconds": 2.4496875,
+        "maxSourceDifference": 2.1159648899704564e-7,
+        "lag": 0,
+        "correlation": 0.9999242787477912,
+        "tailBeforeShotEndSeconds": 0.4473333333333338
+      },
+      {
+        "file": "voice-03.wav",
+        "at": 3.5,
+        "wholePhraseSeconds": 2.2186666666666666,
+        "voicedFirstSeconds": 0.04691666666666667,
+        "voicedLastSeconds": 2.0960833333333335,
+        "maxSourceDifference": 2.041459084001218e-7,
+        "lag": 0,
+        "correlation": 0.9999381490631731,
+        "tailBeforeShotEndSeconds": 0.4813333333333336
+      },
+      {
+        "file": "voice-04.wav",
+        "at": 6.5,
+        "wholePhraseSeconds": 2.4,
+        "voicedFirstSeconds": 0.0503125,
+        "voicedLastSeconds": 2.2693333333333334,
+        "maxSourceDifference": 1.9147992136314684e-7,
+        "lag": 0,
+        "correlation": 0.9999133916930695,
+        "tailBeforeShotEndSeconds": 0.5
+      },
+      {
+        "file": "voice-08.wav",
+        "at": 9.7,
+        "wholePhraseSeconds": 3.3813333333333335,
+        "voicedFirstSeconds": 0.0511875,
+        "voicedLastSeconds": 3.2268541666666666,
+        "maxSourceDifference": 2.0265579225853259e-7,
+        "lag": 0,
+        "correlation": 0.9998586131059165,
+        "tailBeforeShotEndSeconds": 0.5186666666666664
+      },
+      {
+        "file": "voice-10.wav",
+        "at": 13.9,
+        "wholePhraseSeconds": 2.474666666666667,
+        "voicedFirstSeconds": 0.05583333333333333,
+        "voicedLastSeconds": 2.290770833333333,
+        "maxSourceDifference": 1.9147992136314684e-7,
+        "lag": 0,
+        "correlation": 0.9998577378427966,
+        "tailBeforeShotEndSeconds": 1.0253333333333323
+      },
+      {
+        "file": "voice-11.wav",
+        "at": 17.7,
+        "wholePhraseSeconds": 3.3706666666666667,
+        "voicedFirstSeconds": 0.04529166666666667,
+        "voicedLastSeconds": 3.19525,
+        "maxSourceDifference": 2.1308660513863487e-7,
+        "lag": 0,
+        "correlation": 0.9998918000522019,
+        "tailBeforeShotEndSeconds": 0.729333333333333
+      },
+      {
+        "file": "voice-13.wav",
+        "at": 22.1,
+        "wholePhraseSeconds": 3.104,
+        "voicedFirstSeconds": 0.051520833333333335,
+        "voicedLastSeconds": 2.9393125,
+        "maxSourceDifference": 2.145767211692018e-7,
+        "lag": 0,
+        "correlation": 0.9998950995473461,
+        "tailBeforeShotEndSeconds": 0.9959999999999987
+      }
+    ],
+    "sourceFullPhraseCheck": true,
+    "semanticSubjectiveListen": false
+  },
+  "cta": {
+    "expected": [
+      "このゲームの続きを、",
+      "フォローして見届けて。"
+    ],
+    "nativeSavedTextMatches": true,
+    "finalImageReview": "PASS_BOUNDED_FINAL_MP4_EXTRACT",
+    "nativeRelatedVideoSetting": false
+  },
+  "framesForVisualReview": [
+    {
+      "time": 0,
+      "file": "qa/final-tiktok-00.png"
+    },
+    {
+      "time": 0.2,
+      "file": "qa/final-tiktok-01.png"
+    },
+    {
+      "time": 0.5,
+      "file": "qa/final-tiktok-02.png"
+    },
+    {
+      "time": 3.1666667,
+      "file": "qa/final-tiktok-03.png"
+    },
+    {
+      "time": 3.2,
+      "file": "qa/final-tiktok-04.png"
+    },
+    {
+      "time": 6.1666667,
+      "file": "qa/final-tiktok-05.png"
+    },
+    {
+      "time": 6.2,
+      "file": "qa/final-tiktok-06.png"
+    },
+    {
+      "time": 9.3666667,
+      "file": "qa/final-tiktok-07.png"
+    },
+    {
+      "time": 9.4,
+      "file": "qa/final-tiktok-08.png"
+    },
+    {
+      "time": 10.4,
+      "file": "qa/final-tiktok-09.png"
+    },
+    {
+      "time": 11.5,
+      "file": "qa/final-tiktok-10.png"
+    },
+    {
+      "time": 12.7,
+      "file": "qa/final-tiktok-11.png"
+    },
+    {
+      "time": 13.5666667,
+      "file": "qa/final-tiktok-12.png"
+    },
+    {
+      "time": 13.6,
+      "file": "qa/final-tiktok-13.png"
+    },
+    {
+      "time": 17.3666667,
+      "file": "qa/final-tiktok-14.png"
+    },
+    {
+      "time": 17.4,
+      "file": "qa/final-tiktok-15.png"
+    },
+    {
+      "time": 21.7666667,
+      "file": "qa/final-tiktok-16.png"
+    },
+    {
+      "time": 21.8,
+      "file": "qa/final-tiktok-17.png"
+    },
+    {
+      "time": 22.3,
+      "file": "qa/final-tiktok-18.png"
+    },
+    {
+      "time": 24.5,
+      "file": "qa/final-tiktok-19.png"
+    },
+    {
+      "time": 26.1666667,
+      "file": "qa/final-tiktok-20.png"
+    }
+  ],
+  "wholeDirectVideoWatch": false,
+  "wholeSubjectiveListen": false,
+  "published": false,
+  "finalImageReview": {
+    "status": "PASS_BOUNDED",
+    "scope": "Seven story stages/cut-boundaries/cover/final CTA; F-native EC+FC+PC redraw images also reviewed",
+    "mandatoryRemaining": 0,
+    "wholeDirectWatch": false,
+    "wholeSubjectiveListen": false
+  },
+  "nativeFReopenedSavedRendered": true,
+  "missingMedia": 0
+}
