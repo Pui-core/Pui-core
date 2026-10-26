@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "issue": 109,
+  "checkedAt": "2026-10-26T03:56:07.070Z",
+  "input": {
+    "file": "medicate-v9-youtube-handwritten-final.mp4",
+    "sha256": "dcbe6c5d7ab3acb9130ef94bde0dde3da13ddf39a51460aba901afe72078dcbe"
+  },
+  "delivery": {
+    "file": "videos/medicate-v9-youtube-handwritten-final.mp4",
+    "sha256": "dcbe6c5d7ab3acb9130ef94bde0dde3da13ddf39a51460aba901afe72078dcbe"
+  },
+  "copyBytesMatch": true,
+  "format": {
+    "videoWidth": 1920,
+    "videoHeight": 1080,
+    "videoFps": "30/1",
+    "videoFrames": 5032,
+    "videoDurationSeconds": 167.73333333333332,
+    "containerDurationSeconds": 167.744,
+    "containerBytes": 84291399,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "audioSampleRate": 48000,
+    "audioChannels": 2
+  },
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "nb_frames": "5032"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "nb_frames": "7864"
+      }
+    ],
+    "format": {
+      "duration": "167.744000",
+      "size": "84291399"
+    }
+  },
+  "priorFrozenAssembly": {
+    "file": "QC/medicate-v9-youtube-handwritten-final-assembly-v9.json",
+    "sha256": "e75fc63679769f04e415c7fa32df03addbda57bc17af0be38f4caa9dda6c56cc",
+    "status": "NATIVE_FILMCRAFT_ASSEMBLY_EXPORT_PROBE_AND_CORRELATION_PASS",
+    "wholeDecodeExit": 0,
+    "missingMediaCount": 0,
+    "audioRemixed": false,
+    "inputHashesUnchanged": true,
+    "scope": "Read prior frozen assembly result; full AV decode was not repeated in packaging because video bytes are unchanged."
+  },
+  "mediaReencoded": false,
+  "mediaAudioEdited": false,
+  "packagingDirectFullAudioAudition": false,
+  "packagingDirectContinuousPlayback": false,
+  "ownerAdoptionBasis": "Issue109 identifies owneracceptedv9, registered MV-001; adoption is distinct from technical checks.",
+  "publicConfirmed": false
+}

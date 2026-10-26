@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "status": "HASH_VERIFIED_PREPARED_PUBLICATION_PENDING",
+  "productionIssue": 109,
+  "parentIssue": 106,
+  "preparedAt": "2026-10-26T03:56:10.810Z",
+  "destination": "F:\\Videos\\ProjectP-YouTube-medicate-2026-10-26\\revision-01-publication",
+  "fileCount": 22,
+  "totalBytes": 101427949,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 3853,
+      "sha256": "4d0e1a816b8741f72ba4433790554a35559307a772eb5bf2f0d6ad432ef06b97"
+    },
+    {
+      "file": "assets/thumbnail-background.png",
+      "bytes": 2115418,
+      "sha256": "a0ddec58a6fdfda83c33f882765a59b843612bff8b8a4b80ffb8cd026a8e8c79"
+    },
+    {
+      "file": "index.html",
+      "bytes": 1860,
+      "sha256": "1f2bbaacbd8dcc4fc8008e6ab3dcd757df4e9d0db89baa865875b7c247e41c47"
+    },
+    {
+      "file": "metadata/description.txt",
+      "bytes": 824,
+      "sha256": "01fbfa4686db24e6fe56701151c09c54b5c88f2ddc0853cfe023a6f75fa85a79"
+    },
+    {
+      "file": "metadata/handlettering-credit-original.txt",
+      "bytes": 586,
+      "sha256": "768cfd68276ff0086462d6af1759533d2152761ea7d3b8cef628227ded996531"
+    },
+    {
+      "file": "metadata/title.txt",
+      "bytes": 44,
+      "sha256": "6368ded7400b14800a28f5a9a649956a29de931fcb435f2b5dfd823bb204facb"
+    },
+    {
+      "file": "metadata/youtube-publication.json",
+      "bytes": 3277,
+      "sha256": "ba8eaa095c5740aa29742eca97fae9f3fb8d88354355725c5c767df46e1d339b"
+    },
+    {
+      "file": "native/medicate-youtube-thumbnail-reopened.pcraft",
+      "bytes": 3595988,
+      "sha256": "ec76d9400ae500462aae50cc3b200c025fa9ca61624ce15abf923ef10257636e"
+    },
+    {
+      "file": "native/medicate-youtube-thumbnail.pcraft",
+      "bytes": 3595979,
+      "sha256": "3d5410ff3b8ac82d04868b060fec4f1ec74bb5d33aaac98d6122022effe3e4fe"
+    },
+    {
+      "file": "native/seed/medicate-youtube-thumbnail.pcraft",
+      "bytes": 10513,
+      "sha256": "0d5f9356e39edad5dd736bb02f8be1c986dc530d19eda9903841b505f7157f95"
+    },
+    {
+      "file": "qa/draft-initial-small-author/medicate-youtube-thumbnail.pcraft",
+      "bytes": 3605566,
+      "sha256": "68a1f36fe7b8ef72f7a52d0183b492b428b63167fc3860e53d345876bfa07702"
+    },
+    {
+      "file": "qa/draft-initial-small-author/medicate-youtube.png",
+      "bytes": 1236576,
+      "sha256": "b1bb0547f5fb38df4ae53cb5c48dbcbef6d222f9a7b0b754bb306d12f2b7b27f"
+    },
+    {
+      "file": "qa/draft-initial-small-author/thumbnail-320.png",
+      "bytes": 99654,
+      "sha256": "f16bf570096c1ae2f22ff8d01d9d3a332dc8d36158a6ecb65a30c7545d8329ff"
+    },
+    {
+      "file": "qa/draft-initial-small-author/thumbnail-native.json",
+      "bytes": 3256,
+      "sha256": "f7acbcef0416d525ca1f6ef1f1191e952f3634c487f9eef4e3a4b0af2c0b2a53"
+    },
+    {
+      "file": "qa/media-source.json",
+      "bytes": 2166,
+      "sha256": "eacb8973cdf7eece264422697309edf16cb4e1f8e4dc494b0a75c68b7474214d"
+    },
+    {
+      "file": "qa/thumbnail-320.png",
+      "bytes": 99678,
+      "sha256": "11afaafa73119c4e6ef02a2a0bef5fbcb05d41472e910db14c4d3b2edfc586dc"
+    },
+    {
+      "file": "qa/thumbnail-native.json",
+      "bytes": 4238,
+      "sha256": "5b49fe6fda797e4e7a75d3cf60fb3ac517c5537bbcdef12003663c9b2407e0cd"
+    },
+    {
+      "file": "qa/thumbnail-reopened.png",
+      "bytes": 1235000,
+      "sha256": "33115735ea6d4fa2d5df51f48642e7c4eedfa5fcc9f3537f26e7ee5c56530675"
+    },
+    {
+      "file": "source/build-thumbnail.mjs",
+      "bytes": 7332,
+      "sha256": "603001f5b9bc158ed18b5a663a655ea856c196178879e08aec5729c7e87cb259"
+    },
+    {
+      "file": "source/thumbnail-actions.json",
+      "bytes": 279742,
+      "sha256": "4c73cf528e47ff4f110af16d1d250f81da02faf7dab12a09078210e6c3555c34"
+    },
+    {
+      "file": "thumbnail/medicate-youtube.png",
+      "bytes": 1235000,
+      "sha256": "33115735ea6d4fa2d5df51f48642e7c4eedfa5fcc9f3537f26e7ee5c56530675"
+    },
+    {
+      "file": "videos/medicate-v9-youtube-handwritten-final.mp4",
+      "bytes": 84291399,
+      "sha256": "dcbe6c5d7ab3acb9130ef94bde0dde3da13ddf39a51460aba901afe72078dcbe"
+    }
+  ],
+  "sourceGitScope": "Only finalthumbnail/metadata/recipe/sanitizedQA. Fullsong,rawartwork andembeddednative remain inowner delivery; referenced herebySHA only.",
+  "selectedNative": "native/medicate-youtube-thumbnail.pcraft",
+  "selectedThumbnail": "thumbnail/medicate-youtube.png",
+  "history": "qa/draft-initial-small-author holds firstdraft; final enlargesartist/removes tinyformatlabel. These drafts are not uploadcandidates.",
+  "publication": {
+    "state": "pending_root_native_upload_and_result",
+    "publicConfirmed": false,
+    "videoId": null
+  },
+  "notClaimed": [
+    "Actualpublic",
+    "YPPapproval",
+    "Musicroyaltiesenabled",
+    "NewfullMVrender",
+    "Packagingfullsubjectiveplayback"
+  ]
+}
