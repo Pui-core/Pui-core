@@ -1,0 +1,27 @@
+{
+  "exit": 0,
+  "stdout": "Native Core rendered 30 frames / 12.179022s\r\nNative Core rendered 60 frames / 24.1539791s\r\nNative Core rendered 90 frames / 35.9763049s\r\nNative Core rendered 120 frames / 47.6327007s\r\nNative Core rendered 150 frames / 59.3096871s\r\nNative Core rendered 180 frames / 71.0314186s\r\nRendered 180 true Core frames, 600x780, no physics simulation; Core=06.00.0513 (100663809)\r\n",
+  "frames": 180,
+  "fps": 30,
+  "loopSeconds": 6,
+  "mocSha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e",
+  "model3Sha256": "26f678bc97701a1e0958f3a82569e0efa36e260c1a8551222deb873bfb254c39",
+  "atlas": [
+    {
+      "file": "texture_00.png",
+      "sha256": "30efeaa8148d55ca0042cfd3d741f499d479f9034bf7985d248360e66e559f73"
+    },
+    {
+      "file": "texture_01.png",
+      "sha256": "c09bd43ef3d9f02acc8ccdc12d46ba72a750de21aa07a7627fc6a8f04321e26a"
+    }
+  ],
+  "coreJarSha256": "5458a64ebe33b38350de1437399343b0d502f2353a34a97da76d56d118c0d186",
+  "coreNativeSha256": "71d5757025cd31c61be0d52ad79d4cd0de0465e1df6c4508c4fde70207613985",
+  "rendererSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+  "mouthClosed": true,
+  "rawSdkBundled": false,
+  "rawModelBundled": false,
+  "physics": false,
+  "tracking": false
+}
