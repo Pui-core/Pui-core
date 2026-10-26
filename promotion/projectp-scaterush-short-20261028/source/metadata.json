@@ -1,0 +1,167 @@
+{
+  "issue": 124,
+  "title": "この看板、跳ぶ？くぐる？｜ScateRush",
+  "topic": "ScateRush actual Web prototype sign clearance",
+  "duration": 20,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "source": {
+    "kind": "Previously recorded old Web prototype",
+    "path": "media/game-original.mp4",
+    "sha256": "0dd061d7a732eb7c7aabbb5787cdd88d29df83828af0a40fd1bf27bd5a1e6687",
+    "duration": 64.24,
+    "dimensions": [
+      940,
+      438
+    ],
+    "fps": 25,
+    "productChanged": false,
+    "humanFirstPlay": false,
+    "rta": false,
+    "fabricatedFailure": false,
+    "signJumpImpossibleClaim": false,
+    "inputs": "Previously recorded normal keyboard automation",
+    "rawInputReportSha256": "74388df470edb46afe4e394103e8ade71c8fb0f8944bd561a329f5fff193fb78",
+    "htmlSha256": "5767390cce203312fabc82d5636a27adff0631ea7f1e43a25b01a19995288fbe",
+    "onscreenDisclosure": "Web試作画面",
+    "firstSignSource": [
+      7.04,
+      10.165
+    ],
+    "secondSignSource": [
+      11.2,
+      13.7
+    ],
+    "slowSpeed": 0.5,
+    "firstSignOutputClearance": [
+      3.12,
+      3.6
+    ],
+    "questionVoicedEnd": 2.91125,
+    "questionEndsBeforeAnswer": true,
+    "automationDisclosureInPicture": false,
+    "automationDisclosureInCaptionAndDescription": true
+  },
+  "platforms": {
+    "youtube": {
+      "video": "videos/scaterush-youtube.mp4",
+      "title": "この看板、跳ぶ？くぐる？｜ScateRush",
+      "descriptionFile": "source/youtube-description.txt",
+      "cta": "チャンネル登録で次の一本へ",
+      "background": "Original BGM108 F03 Connecting Lights",
+      "relatedVideoId": null,
+      "nativeRelatedVideoConfigured": false,
+      "actualPublishedAt": null,
+      "videoId": null
+    },
+    "tiktok": {
+      "video": "videos/scaterush-tiktok.mp4",
+      "captionFile": "source/tiktok-caption.txt",
+      "bakedCta": "このゲームの続きを、フォローで。 / フォローして次の一本へ。",
+      "handle": "@prop_pui",
+      "ownBrand": true,
+      "thirdPartyBrand": false,
+      "aigcDisclosureRequired": true,
+      "popularTrackSelectedByRoot": false,
+      "track": {
+        "kind": "original",
+        "title": "Connecting Lights",
+        "sourceIssue": 108,
+        "sha256": "4d3bdac03c4bbcd89511ea637265bd13d56e0f11f6b702ca4f01b66af49c50df",
+        "tiktokCatalogId": null,
+        "currentJapanRank": null
+      },
+      "finalAudioState": "ADOPTED_AUTHORIZED_ORIGINAL_BGM108",
+      "finalPopularTrackAdopted": false,
+      "nativeSoundConfigured": false,
+      "actualPublishedAt": null,
+      "videoId": null,
+      "voiceOnlyPrepared": {
+        "video": "videos/scaterush-tiktok-voice-only.mp4",
+        "sha256": "db8f6a472d15f4bd4025f2101ab97b6037f7126f79e342c30ce979ad9b66cf09",
+        "purpose": "Root native commercial music adoption preparation; no selection/configuration yet",
+        "selectedAsPublicationMaster": false,
+        "backgroundMusic": false,
+        "publishThisVariant": false
+      },
+      "musicSelectedByRoot": true,
+      "finalOriginalTrackAdopted": true,
+      "rejectedPopularCandidate": {
+        "title": "Fadeaway",
+        "artist": "Official Sound Studio",
+        "officialTrendingObserved": true,
+        "displayedPosts": "3.9M",
+        "commercialPromotionApplicabilityConfirmed": false,
+        "currentJapanRank": null,
+        "used": false
+      }
+    }
+  },
+  "narrator": {
+    "engine": "VOICEVOX",
+    "speaker": "青山龍星",
+    "styleId": 13
+  },
+  "model": {
+    "name": "Revenant_Natural",
+    "currentVoiceDrivenActualCore": true,
+    "parts": [
+      {
+        "name": "opening",
+        "frames": 105,
+        "output": [
+          0,
+          3.5
+        ],
+        "voice": "hook"
+      },
+      {
+        "name": "ending",
+        "frames": 150,
+        "output": [
+          15,
+          20
+        ],
+        "voice": "follow"
+      },
+      {
+        "name": "youtube",
+        "frames": 150,
+        "output": [
+          15,
+          20
+        ],
+        "voice": "subscribe"
+      }
+    ],
+    "oldAvatarLoop": false,
+    "rawModelSdkPubliclyRedistributed": false
+  },
+  "publicationByRootOnly": true,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "goal": {
+    "tiktokFollowersBy20261130": 500,
+    "tiktokFollowersBy20261231": 1000,
+    "achievedVerified": false
+  },
+  "actualContainerDuration": 20.01,
+  "videoDuration": 20,
+  "audioAacPaddingSeconds": 0.01,
+  "revision": 2,
+  "priorRevision": {
+    "destination": "/mnt/f/Videos/ProjectP-ScateRush-Short-2026-10-28/revision-01",
+    "receiptSha256": "16554abf97e5f000ca44a4f72f14207485e738a3fb86d9c49edb6e9b83d51019",
+    "fileCount": 236,
+    "preserved": true,
+    "whyRejected": "Answer visible before the question audio ended; extra technical footer removed"
+  },
+  "productionState": "ROOT_FINAL_PRODUCTION_ACCEPTED",
+  "rootFinalAcceptance": {
+    "append": "acceptance/2026-10-27-original-bgm108",
+    "sha256": "4874445b49752c107aab66d902257aa769e7213ef1cb032030e91b86f258defd",
+    "rootReviewedSourceHead": "63ee038a9dd6923c9263fcbcf060512070f75134",
+    "requiredFixes": 0
+  }
+}

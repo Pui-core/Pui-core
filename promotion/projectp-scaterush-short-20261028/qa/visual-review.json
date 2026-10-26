@@ -1,0 +1,56 @@
+{
+  "status": "HISTORICAL_REV01_PREVIEW_PASS_SUPERSEDED_BY_ROOT_REQUIRED_ORDER_AND_FOOTER_FIX",
+  "reviewer": "Read-only helper publication_record_audit",
+  "scope": [
+    {
+      "file": "qa/preview-tiktok-0.2.png",
+      "sha256": "55908ecc7fd2c59e85729905b79fdc8acbb24d9d565b5488aaa2742cb1ee0ee2"
+    },
+    {
+      "file": "qa/preview-tiktok-1.6.png",
+      "sha256": "84dbff2fa82eab2a729b6f6d7fbe709a9c9d3422e30823b49133112ba169e21e"
+    },
+    {
+      "file": "qa/preview-tiktok-2.1.png",
+      "sha256": "464ad93d3b0e0306c013af984447c34516c0d5a5ac44125916357dec345233a5"
+    },
+    {
+      "file": "qa/preview-tiktok-8.1.png",
+      "sha256": "bf0f0e1ff9efaab7c7d10efa3a01eb6bfab91277a3ca9c4a4c242c0052ca93c9"
+    },
+    {
+      "file": "qa/preview-tiktok-8.6.png",
+      "sha256": "66ead4825cb4e30b41285f5c90da4b86a12dc9aa84c0b009bab79965124b63fc"
+    },
+    {
+      "file": "qa/preview-tiktok-17.png",
+      "sha256": "ba5cf1c72aaa83021eb3e9c3ac2456500d588fae2597c434af0ee8640642a11b"
+    },
+    {
+      "file": "covers/scaterush-sign.png",
+      "sha256": "569e038c84806794b473b5262d7806db7207d039601589c9323d7771841ee564"
+    }
+  ],
+  "requiredFixes": [],
+  "previewSignClearanceAndContinuedRun": true,
+  "webPrototypeDisclosure": true,
+  "slowDisclosure": true,
+  "followCtaHandle": true,
+  "sourceWriterViewedAlsoWholeOneSecondContact": true,
+  "finalMp4MotionContinuousWatch": false,
+  "wholeSubjectiveListen": false,
+  "rootFinalFReview": false,
+  "temporaryMusicNotFinal": true,
+  "rootRequiredFixes": [
+    {
+      "item": "answer precedes full hook audio",
+      "resolvedInRevision": 2,
+      "evidence": "qa/first-order-repair.json"
+    },
+    {
+      "item": "extra technical footer",
+      "resolvedInRevision": 2,
+      "evidence": "qa/final-tiktok-3.6.png"
+    }
+  ]
+}

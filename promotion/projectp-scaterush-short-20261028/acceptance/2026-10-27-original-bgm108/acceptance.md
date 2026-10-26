@@ -1,0 +1,13 @@
+[codex] From.[CTO]
+
+## ScateRush F02の制作受入
+
+PR58/head63ee038a9dd6923c9263fcbcf060512070f75134、F02/receipt4219c946820d0c39a1e6a0984b4de9d7f5aa0775390dbd986d4d70afad29b853を対象に、Root必須2件を解除する。問いの有声終端2.911秒の後に実際の看板通過3.12〜3.60秒、技術footer除去を最終連続抽出画面で確認した。主役・文字・2種CTAと実coverを目視、3master/cover/base SHAを独立照合。TT最終20.010000秒、1080x1920/H264/30fps600frames/AAC48k2chを直接ffprobeした。
+
+今回は許可済み自作BGM108 Connecting Lightsを背景に採用する。公式Trendingから通常取得できたFadeawayは、具体的な商用宣伝適用を確認できず使用しない。自作曲を人気曲、日本現在rank確認済み、CML採用完了と呼ばない。voice-onlyは将来の音源追加準備で、今回の公開対象ではない。
+
+担当の全AV/全句PCM-AAC同期/最終音量・Fから2EC/3FC/1PC再open/save/render・missing0/277payload照合を根拠に採る。Rootの画像/限定実測と、全編連続視聴/主観全編試聴falseは区別する。owner個人の創作採用や公開反応・人数成果は未証明。
+
+元は既存Web試作の自動入力収録で、現行iOS実機・人間の操作とは呼ばない。投稿はRootが別途、本人単独publisherで通常cover-gridの表示を確認して行う。現時点で動画添付/送信/予約0、実IDなし。同じScateRush本編がないため他作品へのRelatedを付けない。
+
+同じwriterがF02原票/3masterを保持した受入別appendとsource更新を行い、最新headの自己review/必要checksを満たして通常merge/制作124close/自分のclean merged WT整理まで継続する。最終sourceへのレビューは新headで更新する。

@@ -1,0 +1,49 @@
+{
+  "status": "PASS_FULL_AV_DECODE_FORMAT_LEVELS",
+  "outputs": [
+    {
+      "platform": "youtube",
+      "path": "videos/scaterush-youtube.mp4",
+      "sha256": "1c21454fc7edd36ea8330b15a0b130f1f782e4a910dfb9cb2f8720740b8903ef",
+      "bytes": 3995032,
+      "duration": 20.01,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "fps": "30/1",
+      "frames": 600,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "sampleRate": 48000,
+      "channels": 2,
+      "fullAvDecode": true,
+      "truePeakDbfs": -2.9,
+      "integratedLufs": -20
+    },
+    {
+      "platform": "tiktok",
+      "path": "videos/scaterush-tiktok.mp4",
+      "sha256": "ecb91dfa0eb0aaaf666e4bab91ce1292d6651a350a4c13fe20966d4bb790fdad",
+      "bytes": 3961866,
+      "duration": 20.01,
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "fps": "30/1",
+      "frames": 600,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "sampleRate": 48000,
+      "channels": 2,
+      "fullAvDecode": true,
+      "truePeakDbfs": -3.2,
+      "integratedLufs": -20.1
+    }
+  ],
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "rootVisualAcceptance": false,
+  "published": false
+}
