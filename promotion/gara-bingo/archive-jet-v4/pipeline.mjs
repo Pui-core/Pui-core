@@ -92,6 +92,26 @@ function timing(item, targetDuration) {
   return {sourceDuration,targetDuration,playbackRate};
 }
 function voiceTiming(v) {return timing(v,v.duration??(v.sourceOut-v.sourceIn)/(v.playbackRate??defaultPlaybackRate));}
+// Sample slicing and a complementary linear blend are ordinary PCM editing.
+// Decode/resample the song once so both sides retain the same sample clock.
+function floatPcm(file) {
+  const buffer=fs.readFileSync(file);let data,format;
+  if(buffer.toString('ascii',0,4)!=='RIFF'||buffer.toString('ascii',8,12)!=='WAVE')throw Error('PCM WAVE required: '+file);
+  for(let offset=12;offset+8<=buffer.length;) {
+    const id=buffer.toString('ascii',offset,offset+4),size=buffer.readUInt32LE(offset+4),start=offset+8;
+    if(start+size>buffer.length)throw Error('Truncated PCM WAVE: '+file);
+    if(id==='fmt ')format={tag:buffer.readUInt16LE(start),channels:buffer.readUInt16LE(start+2),rate:buffer.readUInt32LE(start+4),bits:buffer.readUInt16LE(start+14)};
+    if(id==='data')data=buffer.subarray(start,start+size);
+    offset=start+size+(size%2);
+  }
+  if(!data||!format||![3,65534].includes(format.tag)||format.channels!==2||format.rate!==48000||format.bits!==32||data.length%8)throw Error('Stereo 48k float PCM required: '+file);
+  return {data,samples:data.length/8};
+}
+function writeFloatPcm(file,data) {
+  if(data.length%8)throw Error('Incomplete stereo PCM sample.');
+  const header=Buffer.alloc(44);header.write('RIFF',0);header.writeUInt32LE(data.length+36,4);header.write('WAVEfmt ',8);header.writeUInt32LE(16,16);header.writeUInt16LE(3,20);header.writeUInt16LE(2,22);header.writeUInt32LE(48000,24);header.writeUInt32LE(48000*8,28);header.writeUInt16LE(8,32);header.writeUInt16LE(32,34);header.write('data',36);header.writeUInt32LE(data.length,40);
+  fs.writeFileSync(file,Buffer.concat([header,data]));
+}
 function requireExtracted(edit) {
   const evidence=readExtraction();
   for(const shot of edit.shots.filter(s=>s.kind==='archive')) {
@@ -101,15 +121,43 @@ function requireExtracted(edit) {
   const voice=path.join(root,'media/voice-mix.wav');
   if(edit.audioCutMode!==audioCutMode||'alignedAudio' in edit||evidence.voice?.sourceMode!==audioCutMode||evidence.voice.cutMode!==audioCutMode||evidence.voice.playbackRate!==defaultPlaybackRate||evidence.voice.pitchPreserved!==true||evidence.voice.sourceArchiveSha256!==edit.archiveSha256||evidence.voice?.editManifestSha256!==editSha()||!fs.existsSync(voice)||hash(voice)!==evidence.voice.sha256)throw Error('Continuous-sample voice timeline is missing or stale; padded alignedAudio is forbidden.');
   for(const v of edit.voice){const clock=voiceTiming(v),e=evidence.voice.events.find(e=>e.id===v.id);if(!e||e.sourceIn!==v.sourceIn||e.sourceOut!==v.sourceOut||e.start!==v.start||e.playbackRate!==clock.playbackRate||e.duration!==clock.targetDuration||e.sourceDuration!==clock.sourceDuration||e.targetDuration!==clock.targetDuration||e.pitchPreserved!==true)throw Error('Retimed voice event is stale: '+v.id);}
+  const staticFile=path.join(root,'qa/voice-static-gain.json'),gain=parse(fs.readFileSync(staticFile,'utf8'));
+  if(gain.editManifestSha256!==editSha()||!Number.isFinite(gain.gain)||gain.gain<=0||gain.dynamicNormalization!==false||gain.outputSha256!==evidence.voice.sha256||hash(path.join(root,gain.inputFile))!==gain.inputSha256||hash(staticFile)!==evidence.voice.staticGain.metadataSha256)throw Error('Static voice gain provenance is stale.');
+  if(edit.loop?.enabled&&JSON.stringify(evidence.voice.loopJoin?.declaration)!==JSON.stringify(edit.loop.voiceJoin))throw Error('Continuous voice loop declaration is stale.');
   return evidence;
+}
+
+async function buildLoopVoicePair(edit) {
+  if(!edit.loop?.enabled)return {events:new Map()};
+  const j=edit.loop.voiceJoin,prefix=edit.voice.find(v=>v.id===j.prefixCueId),head=edit.voice.find(v=>v.id===j.headCueId);
+  if(j.sampleRate!==48000||j.internalJoinFadeSeconds!==0||j.splitSamples!==Math.round(prefix.duration*48000)||j.totalSamples-j.splitSamples!==Math.round(head.duration*48000)||Math.abs(prefix.sourceOut-head.sourceIn)>1e-6)throw Error('Invalid shared voice loop clock.');
+  const raw=path.join(root,'media/voice-raw/loop-whole.wav'),whole=path.join(root,'media/voice-loop-whole.wav');
+  const continuous=`asetpts=N/SR/TB,aresample=48000:async=0,atempo=${j.playbackRate},aformat=channel_layouts=stereo`;
+  await run(FF,['-hide_banner','-y','-ss',String(j.sourceIn),'-t',String(j.sourceOut-j.sourceIn),'-i',nativePath(archive),'-map','0:a:0','-vn','-af',continuous,'-ac','2','-ar','48000','-c:a','pcm_s24le',nativePath(raw)],path.join(root,'qa/voice-loop-whole-continuous.json'));
+  const rawDuration=Number(probe(raw).format.duration),targetDuration=j.totalSamples/48000;
+  if(!Number.isFinite(rawDuration)||rawDuration<=targetDuration-.1)throw Error('Shared voice decode was unexpectedly short.');
+  const filter=`apad,atrim=end_sample=${j.totalSamples},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=${j.fadeInSeconds},afade=t=out:st=${Math.min(rawDuration,targetDuration)-j.fadeOutSeconds}:d=${j.fadeOutSeconds}`;
+  await run(FF,['-hide_banner','-y','-i',nativePath(raw),'-af',filter,'-ac','2','-ar','48000','-c:a','pcm_s24le',nativePath(whole)],path.join(root,'qa/voice-loop-whole.json'));
+  const events=new Map();
+  for(const [v,start,end,fadeIn,fadeOut]of [[prefix,0,j.splitSamples,j.fadeInSeconds,0],[head,j.splitSamples,j.totalSamples,0,j.fadeOutSeconds]]) {
+    const rawSlice=path.join(root,'media/voice-raw',v.id+'.wav'),output=path.join(root,'media/voice',v.id+'.wav');
+    for(const [input,out,pad]of [[raw,rawSlice,true],[whole,output,false]])await run(FF,['-hide_banner','-y','-i',nativePath(input),'-af',`${pad?'apad,':''}atrim=start_sample=${start}:end_sample=${end},asetpts=PTS-STARTPTS`,'-ac','2','-ar','48000','-c:a','pcm_s24le',nativePath(out)],path.join(root,'qa','voice-'+v.id+(pad?'-continuous':'')+'.json'));
+    const clock=voiceTiming(v),duration=clock.targetDuration;
+    events.set(v.id,{...v,...clock,duration,sourceMode:audioCutMode,cutMode:audioCutMode,pitchPreserved:true,file:path.relative(root,output),sha256:hash(output),rawFile:path.relative(root,rawSlice),rawSha256:hash(rawSlice),rawDuration:duration,
+      tailPaddingSamples:0,tailTrimSamples:0,fadeInSeconds:fadeIn,fadeOutSeconds:fadeOut,containsRealPerformerVoice:true,sharedLoopWhole:true,wholeStartSample:start,wholeEndSampleExclusive:end,internalJoinFadeSeconds:0});
+  }
+  const loopJoin={declaration:j,rawFile:path.relative(root,raw),rawSha256:hash(raw),rawDuration,targetFile:path.relative(root,whole),targetSha256:hash(whole),targetSamples:j.totalSamples,splitSamples:j.splitSamples,
+    tailPaddingSamples:Math.max(0,Math.round((targetDuration-rawDuration)*48000)),tailTrimSamples:Math.max(0,Math.round((rawDuration-targetDuration)*48000)),sourceArchiveSha256:edit.archiveSha256,editManifestSha256:editSha(),continuousFilter:continuous,targetFilter:filter,internalJoinFadeSeconds:0};
+  save(path.join(root,'qa/voice-loop-join.json'),loopJoin);return {events,loopJoin};
 }
 
 async function buildVoice(edit, sourceSeal) {
   if(!edit.voice.length)throw Error('At least one real archive voice event is required.');
   if(edit.audioCutMode!==audioCutMode||'alignedAudio' in edit)throw Error('Use direct original archive audio; gap-padded alignedAudio is forbidden.');
   fs.mkdirSync(path.join(root,'media/voice-raw'),{recursive:true});
-  const events=[];
+  const paired=await buildLoopVoicePair(edit),events=[];
   for(const v of edit.voice) {
+    if(paired.events.has(v.id)){events.push(paired.events.get(v.id));continue;}
     const clock=voiceTiming(v),duration=clock.targetDuration,raw=path.join(root,'media/voice-raw',v.id+'.wav'),output=path.join(root,'media/voice',v.id+'.wav');
     // Bound the original container interval before replacing timestamps. No
     // async filling/trimming, clock repair, or word-internal silence insertion.
@@ -124,13 +172,17 @@ async function buildVoice(edit, sourceSeal) {
     events.push({...v,...clock,duration,sourceMode:audioCutMode,cutMode:audioCutMode,pitchPreserved:true,file:path.relative(root,output),sha256:hash(output),rawFile:path.relative(root,raw),rawSha256:hash(raw),rawDuration,
       tailPaddingSamples:Math.max(0,Math.round((duration-rawDuration)*48000)),tailTrimSamples:Math.max(0,Math.round((rawDuration-duration)*48000)),fadeInSeconds:fadeIn,fadeOutSeconds:fadeOut,containsRealPerformerVoice:true});
   }
-  const output=path.join(root,'media/voice-mix.wav'), inputs=events.flatMap(e=>['-i',nativePath(path.join(root,e.file))]);
+  const output=path.join(root,'media/voice-mix.wav'),sum=path.join(root,'media/voice-sum.wav'), inputs=events.flatMap(e=>['-i',nativePath(path.join(root,e.file))]);
   const nodes=events.map((e,i)=>`[${i}:a]adelay=${Math.round(e.start*48000)}S:all=1[v${i}]`);
-  nodes.push(events.map((_,i)=>`[v${i}]`).join('')+`amix=inputs=${events.length}:normalize=0:dropout_transition=0,apad,atrim=duration=${edit.duration},loudnorm=I=-16:TP=-2.5:LRA=9,aresample=48000[out]`);
-  await run(FF,['-hide_banner','-y',...inputs,'-filter_complex',nodes.join(';'),'-map','[out]','-ac','2','-c:a','pcm_s24le',nativePath(output)],path.join(root,'qa/voice-timeline-mix.json'));
+  nodes.push(events.map((_,i)=>`[v${i}]`).join('')+`amix=inputs=${events.length}:normalize=0:dropout_transition=0,apad,atrim=end_sample=${Math.round(edit.duration*48000)}[out]`);
+  await run(FF,['-hide_banner','-y',...inputs,'-filter_complex',nodes.join(';'),'-map','[out]','-ac','2','-c:a','pcm_f32le',nativePath(sum)],path.join(root,'qa/voice-timeline-sum.json'));
+  const inputLevel=await measureLoudness(sum,path.join(root,'qa/voice-sum-levels.json')),gain=fixedGain(inputLevel,-16,-2.5);
+  await run(FF,['-hide_banner','-y','-i',nativePath(sum),'-af',`volume=${gain.gain}:precision=double`,'-ac','2','-c:a','pcm_s24le',nativePath(output)],path.join(root,'qa/voice-timeline-mix.json'));
+  const staticGain={gain:gain.gain,gainDb:gain.gainDb,inputFile:path.relative(root,sum),inputSha256:hash(sum),outputFile:path.relative(root,output),outputSha256:hash(output),inputLevel,normalization:gain,editManifestSha256:editSha(),dynamicNormalization:false,limiter:false,sourceSpeechControlsGain:false};
+  const staticFile=path.join(root,'qa/voice-static-gain.json');save(staticFile,staticGain);
   if(!staticStatsMatch(sourceSeal,inputStats(archive)))throw Error('Original archive changed while voice events were cut.');
   return {file:'media/voice-mix.wav',sha256:hash(output),editManifestSha256:editSha(),sourceArchive:sourceSeal,sourceArchiveSha256:sourceSeal.sha256,sourceMode:audioCutMode,cutMode:audioCutMode,playbackRate:defaultPlaybackRate,pitchPreserved:true,events,
-    sourceClock:'original container seek positions; continuous decoded samples within each phrase',normalization:'-16 LUFS, -2.5 dBTP target; final AAC and waveform continuity require separate checks'};
+    sourceClock:'original container seek positions; continuous decoded samples within each phrase',normalization:'one measured static scalar: -16 LUFS / -2.5 dBTP headroom; no AGC',staticGain:{...staticGain,metadataFile:path.relative(root,staticFile),metadataSha256:hash(staticFile)},loopJoin:paired.loopJoin};
 }
 
 export async function extract({shotIds,buildVoiceTimeline=shotIds===undefined}={}) {
@@ -181,6 +233,8 @@ export function prepare(selected=plans) {
 function inputSeals(p) {
   const edit=loadEdit();requireExtracted(edit);
   return {...assertBackground(),...characterSeals(),version,playbackRate:defaultPlaybackRate,audioCutMode,editManifestSha256:editSha(),sourceArchiveSha256:edit.archiveSha256,
+    voiceStaticGainMetadataSha256:hash(path.join(root,'qa/voice-static-gain.json')),voiceSumSha256:hash(path.join(root,'media/voice-sum.wav')),
+    ...(edit.loop?.enabled?{voiceLoopMetadataSha256:hash(path.join(root,'qa/voice-loop-join.json')),voiceLoopWholeSha256:hash(path.join(root,'media/voice-loop-whole.wav'))}:{}),
     musicGainMode:edit.musicGainMode,musicStart:edit.musicStart,musicMetadataSha256:hash(qa(p,'music-source')),musicRawPcmSha256:hash(path.join(folder(p),'media/music-source.wav')),
     clips:edit.shots.filter(s=>s.kind==='archive').map(s=>({id:s.id,file:path.relative(root,clipPath(s)),...timing(s,s.end-s.start),sha256:hash(clipPath(s))})),
     voiceEvents:edit.voice.map(v=>({id:v.id,start:v.start,...voiceTiming(v),pitchPreserved:true})),voiceSha256:hash(path.join(folder(p),'media/voice.wav')),musicSha256:hash(path.join(folder(p),'media/music.wav'))};
@@ -206,14 +260,33 @@ async function music(p,edit) {
   const raw=path.join(folder(p),'media/music-source.wav'),out=path.join(folder(p),'media/music.wav');
   // Preserve the chosen recording's natural dynamics. Analysis sets one scalar;
   // there is no speech-dependent gain, automation, limiter or final music AGC.
-  const sourceFilter=`atrim=start=${p.audioStart}:duration=${remaining},asetpts=PTS-STARTPTS,aresample=48000:async=0,aformat=channel_layouts=stereo,apad,atrim=duration=${edit.duration}`;
-  await run(FF,['-hide_banner','-y','-i',nativePath(local),'-vn','-af',sourceFilter,'-ac','2','-c:a','pcm_f32le',nativePath(raw)],qa(p,'music-source-decode'));
-  const level=await measureLoudness(raw,qa(p,'music-source-levels')),gain=fixedGain(level,-18,-3),fade=.005;
-  const filter=`volume=${gain.gain}:precision=double,afade=t=in:st=0:d=${fade},afade=t=out:st=${edit.duration-fade}:d=${fade}`;
-  await run(FF,['-hide_banner','-y','-i',nativePath(raw),'-vn','-af',filter,'-ac','2','-c:a','pcm_s24le',nativePath(out)],qa(p,'music-mix'));
+  let sourceFilter,normalizationSource=raw,loopJoin;
+  if(edit.loop?.enabled) {
+    const full=path.join(folder(p),'media/music-full-source.wav'),wrap=path.join(folder(p),'media/music-wrap-source.wav'),shaped=path.join(folder(p),'media/music-loop-source.wav');
+    sourceFilter='aresample=48000:async=0,aformat=channel_layouts=stereo';
+    await run(FF,['-hide_banner','-y','-i',nativePath(local),'-vn','-af',sourceFilter,'-ac','2','-c:a','pcm_f32le',nativePath(full)],qa(p,'music-source-decode'));
+    const decoded=floatPcm(full),sourceStartSample=Math.round(p.audioStart*48000),mainSampleCount=Math.round(edit.duration*48000),blendSampleCount=Math.round(edit.loop.musicJoinSeconds*48000),wrapStartSample=sourceStartSample-blendSampleCount;
+    if(blendSampleCount<2||wrapStartSample<0||sourceStartSample+mainSampleCount>decoded.samples)throw Error('Loop music source/sample range is invalid.');
+    const main=Buffer.from(decoded.data.subarray(sourceStartSample*8,(sourceStartSample+mainSampleCount)*8)),preroll=decoded.data.subarray(wrapStartSample*8,sourceStartSample*8),blended=Buffer.from(main),blendStartSample=mainSampleCount-blendSampleCount;
+    writeFloatPcm(raw,main);writeFloatPcm(wrap,preroll);
+    for(let sample=0;sample<blendSampleCount;sample++)for(let channel=0;channel<2;channel++) {
+      const destination=(blendStartSample+sample)*8+channel*4,w=sample/(blendSampleCount-1);
+      blended.writeFloatLE((1-w)*main.readFloatLE(destination)+w*preroll.readFloatLE(sample*8+channel*4),destination);
+    }
+    writeFloatPcm(shaped,blended);normalizationSource=shaped;
+    loopJoin={mode:'linear-preroll-wrap',fullSourceFile:path.relative(root,full),fullSourceSha256:hash(full),sourceStartSample,mainSampleCount,
+      wrapFile:path.relative(root,wrap),wrapSha256:hash(wrap),wrapStartSample,wrapEndSampleExclusive:sourceStartSample,blendStartSample,blendSampleCount,weightDenominator:blendSampleCount-1,
+      shapedFile:path.relative(root,shaped),shapedSha256:hash(shaped),sampleRate:48000,channels:2,endpoint:'last sample equals source immediately preceding first sample',speechDependent:false};
+  } else {
+    sourceFilter=`atrim=start=${p.audioStart}:duration=${remaining},asetpts=PTS-STARTPTS,aresample=48000:async=0,aformat=channel_layouts=stereo,apad,atrim=duration=${edit.duration}`;
+    await run(FF,['-hide_banner','-y','-i',nativePath(local),'-vn','-af',sourceFilter,'-ac','2','-c:a','pcm_f32le',nativePath(raw)],qa(p,'music-source-decode'));
+  }
+  const level=await measureLoudness(normalizationSource,qa(p,'music-source-levels')),gain=fixedGain(level,-18,-3),fade=edit.loop?.enabled?0:.005;
+  const filter=`volume=${gain.gain}:precision=double`+(fade?`,afade=t=in:st=0:d=${fade},afade=t=out:st=${edit.duration-fade}:d=${fade}`:'');
+  await run(FF,['-hide_banner','-y','-i',nativePath(normalizationSource),'-vn','-af',filter,'-ac','2','-c:a','pcm_s24le',nativePath(out)],qa(p,'music-mix'));
   save(qa(p,'music-source'),{song:p.song,artist:p.artist,file:path.basename(local),sha256:hash(local),previewStart:p.audioStart,previewEnd:p.audioStart+remaining,videoStart:0,
     sourceFile:path.relative(root,local),sourceSha256:hash(local),sourceStart:p.audioStart,sourceDuration:remaining,musicStart:0,musicGainMode:'constant',
-    rawPcmFile:path.relative(root,raw),rawPcmSha256:hash(raw),rawPcmFormat:'pcm_f32le',sourceFilter,sourceLevel:level,
+    rawPcmFile:path.relative(root,raw),rawPcmSha256:hash(raw),rawPcmFormat:'pcm_f32le',sourceFilter,sourceLevel:level,normalizationInputFile:path.relative(root,normalizationSource),normalizationInputSha256:hash(normalizationSource),loopJoin,
     musicGain:gain.gain,gain:gain.gain,musicGainDb:gain.gainDb,normalization:gain,fadeInSeconds:fade,fadeOutSeconds:fade,musicSha256:hash(out),editManifestSha256:editSha(),
     speechDependentGain:false,dynamicNormalization:false,ownerPreviewUseAuthorized:true,exactTikTokVersionVerified:false});return out;
 }
@@ -289,8 +362,32 @@ export async function render(selected=plans) {
       const suffix=mixed.suffix;if(suffix==='reference')referenceBusGainDb=mixed.report.busGainDb;
       await run(FF,['-hide_banner','-y','-i',nativePath(master),'-i',nativePath(mixed.file),'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','256k','-ar','48000','-t',String(edit.duration),'-movflags','+faststart',nativePath(movie(p,suffix))],qa(p,suffix+'-export'));
     }
-    createFilm(p,edit,master,voice,musicFile,referenceBusGainDb);console.log('Rendered '+p.id);
+    createFilm(p,edit,master,voice,musicFile,referenceBusGainDb);
+    if(edit.loop?.enabled)await loopCheck([p]);
+    console.log('Rendered '+p.id);
   }
+}
+export async function loopCheck(selected=plans) {
+  const edit=loadEdit();if(!edit.loop?.enabled)throw Error('The current edit does not declare a loop.');
+  const summary=[];
+  for(const p of selected) {
+    const input=parse(fs.readFileSync(qa(p,'render-input'),'utf8')),master=path.join(folder(p),'media/picture-master.mp4'),pcm=path.join(folder(p),'media/reference-mix.wav'),reference=movie(p,'reference');
+    if(input.projectSha256!==hash(project(p))||input.masterSha256!==hash(master)||JSON.stringify(input.assets)!==JSON.stringify(inputSeals(p)))throw Error('Loop build has stale native inputs.');
+    const samples=Math.round(edit.duration*48000),frames=Math.round(edit.duration*fps)*2,repeated=path.join(folder(p),'media/reference-2cycle.wav'),output=movie(p,'loop-2cycle');
+    await run(FF,['-hide_banner','-y','-i',nativePath(pcm),'-i',nativePath(pcm),'-filter_complex',`[0:a]atrim=end_sample=${samples},asetpts=PTS-STARTPTS[a];[1:a]atrim=end_sample=${samples},asetpts=PTS-STARTPTS[b];[a][b]concat=n=2:v=0:a=1[out]`,'-map','[out]','-ac','2','-ar','48000','-c:a','pcm_s24le',nativePath(repeated)],qa(p,'loop-2cycle-pcm'));
+    // Copy the native picture twice, and AAC-encode the complete two-cycle PCM
+    // once. Repeating separately encoded AAC would repeat codec padding too.
+    await run(FF,['-hide_banner','-y','-stream_loop','1','-i',nativePath(master),'-i',nativePath(repeated),'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','256k','-ar','48000','-frames:v',String(frames),'-t',String(edit.duration*2),'-movflags','+faststart',nativePath(output)],qa(p,'loop-2cycle-export'));
+    const data=probe(output,true,qa(p,'loop-2cycle-ffprobe')),v=data.streams.find(s=>s.codec_type==='video'),audio=data.streams.filter(s=>s.codec_type==='audio'),repeatedData=probe(repeated);
+    if(v?.width!==1080||v.height!==1920||v.r_frame_rate!=='30/1'||v.codec_name!=='h264'||Number(v.nb_read_frames)!==frames||audio.length!==1||audio[0].codec_name!=='aac'||Number(audio[0].sample_rate)!==48000||Math.abs(Number(data.format.duration)-edit.duration*2)>.06||Math.abs(Number(repeatedData.format.duration)*48000-samples*2)>.05)throw Error('Two-cycle metadata mismatch.');
+    await run(FF,['-v','error','-i',nativePath(output),'-f','null','-'],qa(p,'loop-2cycle-decode'));
+    const report={status:'PASS_TWO_CYCLE_TECHNICAL',id:p.id,sourceReferenceSha256:hash(reference),sourceMasterSha256:hash(master),sourcePcmSha256:hash(pcm),
+      repeatedPcmFile:path.relative(root,repeated),repeatedPcmSha256:hash(repeated),repeatedPcmSamples:samples*2,
+      output:{file:path.relative(root,output),sha256:hash(output),duration:Number(data.format.duration),frames,audioStreams:1},cycleDuration:edit.duration,cycles:2,duration:edit.duration*2,twiceFrames:frames,
+      projectSha256:input.projectSha256,editManifestSha256:editSha(),videoMode:'native picture stream copied twice',audioMode:'exact PCM concatenated twice; single AAC encode',audioSeamReviewed:false,archiveImageAiViewingPerformed:false};
+    save(qa(p,'loop-validation'),report);summary.push(report);console.log('Two-cycle technical PASS '+p.id);
+  }
+  save(path.join(root,'qa/loop-validation.json'),summary);return summary;
 }
 export async function previews(selected=plans) {
   const edit=loadEdit();
@@ -342,7 +439,13 @@ export async function verify(selected=plans) {
     const sample=edit.shots.find(s=>s.kind==='archive');if(!sample)throw Error('No real archive shot to verify.');const time=(sample.start+sample.end)/2;
     await run(EC,['render-frame','--project',nativePath(project(p)),'--comp',comp(p),'--time',String(time),'--out',nativePath(path.join(folder(p),'qa/local-only/ec-reopened.png')),'--json'],qa(p,'effectcraft-reopened-render'));
     await run(FC,['--project',nativePath(fc),'render','--seconds',String(time),'--out',nativePath(path.join(folder(p),'qa/local-only/fc-reopened.png'))],qa(p,'filmcraft-reopened-render'));
-    const result={id:p.id,title:p.title,technicalPassed:true,renderInputProjectSha256:input.projectSha256,renderInputAssets:input.assets,outputs,audio,characterFreePreview:isolation,nativeReopenAndRender:true,
+    let loop;
+    if(edit.loop?.enabled) {
+      const file=qa(p,'loop-validation');loop=parse(fs.readFileSync(file,'utf8'));
+      if(loop.status!=='PASS_TWO_CYCLE_TECHNICAL'||loop.projectSha256!==input.projectSha256||loop.editManifestSha256!==editSha()||loop.sourceReferenceSha256!==outputs.find(o=>o.containsAddedBgm).sha256||hash(path.join(root,loop.output.file))!==loop.output.sha256||hash(path.join(root,loop.repeatedPcmFile))!==loop.repeatedPcmSha256)throw Error('Two-cycle proof is stale.');
+      loop={...loop,metadataFile:path.relative(root,file),metadataSha256:hash(file)};
+    }
+    const result={id:p.id,title:p.title,technicalPassed:true,renderInputProjectSha256:input.projectSha256,renderInputAssets:input.assets,outputs,audio,characterFreePreview:isolation,nativeReopenAndRender:true,loop,
       audioCutMode,playbackRate:defaultPlaybackRate,pitchPreserved:true,audioContinuityReviewed:false,musicGainMode:'constant',musicStart:0,
       musicMetadataFile:path.relative(root,qa(p,'music-source')),musicMetadataSha256:hash(qa(p,'music-source')),finalMixes,
       humanRealtimeReview:false,archiveImageAiViewingPerformed:false,tiktokDeviceReview:false,ownerCreativeApproval:false};
@@ -373,5 +476,5 @@ export async function smoke() {
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
   const op=process.argv[2],id=process.argv[3];
   if(op==='smoke')await smoke();else if(op==='extract')await extract(id?{shotIds:[id],buildVoiceTimeline:false}:{});
-  else {const selected=id?plans.filter(p=>p.id===id):plans;if(!selected.length)throw Error('Unknown plan ID.');const actions={prepare,mix,render,previews,verify};if(!actions[op])throw Error('Use smoke | extract [shot-id] | prepare/mix/render/previews/verify [plan-id].');await actions[op](selected);}
+  else {const selected=id?plans.filter(p=>p.id===id):plans;if(!selected.length)throw Error('Unknown plan ID.');const actions={prepare,mix,render,previews,verify,'loop-check':loopCheck};if(!actions[op])throw Error('Use smoke | extract [shot-id] | prepare/mix/render/previews/verify/loop-check [plan-id].');await actions[op](selected);}
 }

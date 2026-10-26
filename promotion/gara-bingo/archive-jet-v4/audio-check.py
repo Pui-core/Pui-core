@@ -165,14 +165,63 @@ def pcm_metadata(filename):
             'seconds':float(p['format']['duration'])}
 
 
-def check_source(root, edit):
+def joined_reference(edit):
+    join=edit.get('loop',{}).get('voiceJoin')
+    if not join:
+        return {},None
+    whole,command=original_excerpt(edit['archive'],join,join['playbackRate'])
+    total=int(join['totalSamples']); split=int(join['splitSamples'])
+    if not 0<split<total or abs((join['sourceOut']-join['sourceIn'])/join['playbackRate']-total/RATE)>1e-6:
+        raise RuntimeError('Invalid declared single-atempo voice split.')
+    raw_frames=len(whole)
+    if len(whole)<total:
+        whole=np.pad(whole,((0,total-len(whole)),(0,0)))
+    else:
+        whole=whole[:total]
+    ids={join['prefixCueId'],join['headCueId']}
+    if len(ids)!=2 or not ids.issubset({v['id'] for v in edit['voice']}):
+        raise RuntimeError('Voice join references missing or repeated cues.')
+    return {join['prefixCueId']:whole[:split],join['headCueId']:whole[split:]}, {
+        'configuration':join,'command':command,'independentRawTempoFrames':raw_frames,
+        'targetFrames':total,'splitSamples':split,'method':'One original-container decode and atempo for the whole sentence, then sample split.'}
+
+
+def joined_voice_proof(root, edit, references, description):
+    join=description['configuration']; ids=[join['prefixCueId'],join['headCueId']]
+    baseline=np.concatenate([references[k] for k in ids])
+    raw_files=[root/'media/voice-raw'/(k+'.wav') for k in ids]
+    voice_files=[root/'media/voice'/(k+'.wav') for k in ids]
+    raw=np.concatenate([decode(p) for p in raw_files]); processed=np.concatenate([decode(p) for p in voice_files])
+    expected=baseline.astype(np.float64).copy()
+    ni=round(join['fadeInSeconds']*RATE); no=round(join['fadeOutSeconds']*RATE)
+    if ni:
+        expected[:ni]*=(np.arange(ni)/ni)[:,None]
+    if no:
+        audible=min(description['independentRawTempoFrames'],len(expected))
+        expected[audible-no:audible]*=((no-np.arange(no))/no)[:,None]
+    raw_error=float(np.max(np.abs(raw-baseline))) if raw.shape==baseline.shape else None
+    processed_error=float(np.max(np.abs(processed-expected))) if processed.shape==expected.shape else None
+    checks={'rawSingleTempoSplit':raw_error is not None and raw_error<=2e-6,
+            'onlyExternalFades':processed_error is not None and processed_error<=2e-6}
+    return {**description,'files':[{'file':str(p),'sha256':digest(p)} for p in raw_files+voice_files],
+            'rawMaximumSampleError':raw_error,'processedMaximumSampleError':processed_error,
+            'sampleErrorTolerance':2e-6,'checks':checks,'passed':all(checks.values())}
+
+
+def check_source(root, edit, joined=None):
     rows = []
+    joined=joined or {}
+    join=edit.get('loop',{}).get('voiceJoin',{})
     for event in edit['voice']:
         rate = event.get('playbackRate',edit.get('playbackRate',1))
         if abs(rate-1.25)>1e-9:
             raise RuntimeError('Expected explicit 1.25 playbackRate: '+event['id'])
         duration = event.get('duration',(event['sourceOut']-event['sourceIn'])/rate)
-        baseline, command = original_excerpt(edit['archive'],event,rate)
+        if event['id'] in joined:
+            baseline=joined[event['id']]
+            command={'method':'single-atempo-whole-then-split','voiceJoin':join}
+        else:
+            baseline, command = original_excerpt(edit['archive'],event,rate)
         raw_path = root/'media/voice-raw'/(event['id']+'.wav')
         voice_path = root/'media/voice'/(event['id']+'.wav')
         raw, voice = decode(raw_path),decode(voice_path)
@@ -192,7 +241,7 @@ def check_source(root, edit):
             'processedNoNewInternalHoles':voice_m['internalHoleCount']<=raw_m['internalHoleCount'],
             'rawMatchesIndependentAtTempo':raw_corr['normalizedCorrelation'] is not None and raw_corr['normalizedCorrelation']>=.985 and abs(raw_corr['lagMs'])<=2,
             'processedCorePreserved':voice_corr['normalizedCorrelation'] is not None and voice_corr['normalizedCorrelation']>=.985 and abs(voice_corr['lagMs'])<=2,
-            'edgeSamplesFaded':voice_m['firstSampleMax']<=.003 and voice_m['lastSampleMax']<=.003,
+            'edgeSamplesFaded':(event['id']==join.get('headCueId') or voice_m['firstSampleMax']<=.003) and (event['id']==join.get('prefixCueId') or voice_m['lastSampleMax']<=.003),
         }
         row = {'id':event['id'],'sourceIn':event['sourceIn'],'sourceOut':event['sourceOut'],'outputStart':event['start'],
                'playbackRate':rate,'targetDuration':duration,'baselineCommand':command,
@@ -256,13 +305,18 @@ def main():
         report['sourceArchiveSha256']=digest(edit['archive'])
         report['sourceArchiveSha256Recorded']=edit.get('archiveSha256')
         report['expectedVoiceCount']=len(edit['voice'])
-        report['sourceChecks']=check_source(root,edit)
+        joined,description=joined_reference(edit)
+        report['sourceChecks']=check_source(root,edit,joined)
+        if description:
+            report['joinedVoiceProof']=joined_voice_proof(root,edit,joined,description)
         report['finalChecks']=[] if args.skip_final else check_final(root,edit,args.plans.split(','))
         report['finalAACStatus']='NOT_RUN' if args.skip_final else 'CHECKED'
         report['checks']={'tonePitchAndNegativeControl':report['pitchCalibration']['passed'],
                           'allVoiceChecks':len(report['sourceChecks'])==report['expectedVoiceCount'] and report['expectedVoiceCount']>0 and all(r['passed'] for r in report['sourceChecks']),
                           'originalArchiveHash':report['sourceArchiveSha256']==report['sourceArchiveSha256Recorded'],
                           'manifestUnchanged':digest(manifest)==before}
+        if description:
+            report['checks']['singleAtTempoWrappedVoice']=report['joinedVoiceProof']['passed']
         if not args.skip_final:
             report['checks']['finalAAC']=all(r['passed'] for r in report['finalChecks'])
         old_clip=root/'qa/audio-check/negative-control-old-pad.wav'

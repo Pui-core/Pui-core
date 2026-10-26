@@ -103,6 +103,45 @@ def boundary_ramps(raw, fade_in, fade_out):
     return x
 
 
+def cyclic_music(root, folder, source, meta, edit):
+    """Only one declared 150ms linear original-source preroll wrap is allowed."""
+    join=meta['loopJoin']
+    count=round(edit['duration']*RATE)
+    origin=int(join['sourceStartSample']); wrap_start=int(join['wrapStartSample'])
+    wrap_end=int(join['wrapEndSampleExclusive']); blend_start=int(join['blendStartSample'])
+    blend_count=int(join['blendSampleCount']); denominator=int(join['weightDenominator'])
+    contract={'declaredMode':join['mode']=='linear-preroll-wrap',
+              'sourceOrigin':origin==10080,'mainLength':int(join['mainSampleCount'])==count,
+              'oneDeclared150msBlend':blend_count==7200 and blend_start==count-blend_count,
+              'adjacentPreroll':wrap_start==2880 and wrap_end==origin and wrap_end-wrap_start==blend_count,
+              'complementaryLinearWeights':denominator==blend_count-1,
+              'noBoundaryFade':meta['fadeInSeconds']==0 and meta['fadeOutSeconds']==0}
+    if not all(contract.values()):
+        raise RuntimeError('Cyclic music contract differs: '+str(contract))
+    full=audio.decode(source)
+    main=full[origin:origin+count].copy(); preroll=full[wrap_start:wrap_end].copy()
+    if len(main)!=count or len(preroll)!=blend_count:
+        raise RuntimeError('Original music has insufficient cyclic source samples.')
+    full_path=resolve_file(root,folder,join['fullSourceFile'])
+    wrap_path=resolve_file(root,folder,join['wrapFile'])
+    full_comparison=fixed_comparison(full,audio.decode(full_path),1)
+    # The wrap is shorter than fixed_comparison's 0.5s analysis window. Its
+    # entire sample array is checked directly instead, without fitting gain.
+    actual_wrap=audio.decode(wrap_path)
+    wrap_error=float(np.max(np.abs(actual_wrap.astype(np.float64)-preroll))) if actual_wrap.shape==preroll.shape else None
+    expected=main.astype(np.float64)
+    weight=np.arange(blend_count,dtype=np.float64)/denominator
+    expected[blend_start:]=(1-weight[:,None])*expected[blend_start:]+weight[:,None]*preroll
+    checks={**contract,'fullSourceHash':audio.digest(full_path)==join['fullSourceSha256'],
+            'wrapHash':audio.digest(wrap_path)==join['wrapSha256'],
+            'fullContinuousDecode':full_comparison['passed'],
+            'prerollSamples':wrap_error is not None and wrap_error<=2e-6}
+    proof={'mode':join['mode'],'parameters':join,'fullSourceFile':str(full_path),'fullSourceSha256':audio.digest(full_path),
+           'wrapFile':str(wrap_path),'wrapSha256':audio.digest(wrap_path),'wrapMaximumSampleError':wrap_error,
+           'fullSourceComparison':full_comparison,'checks':checks,'passed':all(checks.values())}
+    return main,expected,proof
+
+
 def check_plan(root, edit, manifest_sha, plan, pcm_only=False):
     folder=root/plan; meta_file=folder/'qa/music-source.json'; meta=load(meta_file)
     source=resolve_file(root,folder,meta.get('file') or meta['sourceFile'])
@@ -114,10 +153,16 @@ def check_plan(root, edit, manifest_sha, plan, pcm_only=False):
     music_start=float(meta['musicStart'] if 'musicStart' in meta else meta['videoStart'])
     fade_in=float(meta['fadeInSeconds']); fade_out=float(meta['fadeOutSeconds'])
     gain=float(meta['musicGain'])
-    original,command=raw_from_original(source,start,duration)
+    loop_proof=None
+    if meta.get('loopJoin'):
+        original,expected,loop_proof=cyclic_music(root,folder,source,meta,edit)
+        command={'method':'Continuous full source decode then sample slicing and the single declared complementary linear wrap.'}
+    else:
+        original,command=raw_from_original(source,start,duration)
     raw=audio.decode(raw_path); music=audio.decode(music_path)
     source_comparison=fixed_comparison(original,raw,1)
-    expected=boundary_ramps(raw,fade_in,fade_out)
+    if loop_proof is None:
+        expected=boundary_ramps(raw,fade_in,fade_out)
     music_comparison=fixed_comparison(expected,music,gain)
     source_metadata_sha=audio.digest(meta_file)
     checks={'musicStartsAtZero':music_start==0 and edit.get('musicStart')==0,
@@ -129,6 +174,8 @@ def check_plan(root, edit, manifest_sha, plan, pcm_only=False):
             'manifestHash':meta['editManifestSha256']==manifest_sha,
             'sourceMatchesOriginal':source_comparison['passed'],
             'musicFixedGain':music_comparison['passed']}
+    if loop_proof is not None:
+        checks['onlyDeclaredCyclicJoin']=loop_proof['passed']
     checks['rawPcmHash']=raw_sha==meta['rawPcmSha256'] and resolve_file(root,folder,meta['rawPcmFile']).resolve()==raw_path.resolve()
     # sourceFile/sourceSha256 may name the raw PCM or the original M4A; both
     # are sealed independently above, so require that pair to agree as well.
@@ -163,12 +210,13 @@ def check_plan(root, edit, manifest_sha, plan, pcm_only=False):
     return {'plan':plan,'sourceMetadataFile':str(meta_file),'sourceMetadataSha256':source_metadata_sha,
             'sourceFile':str(source),'sourceSha256':source_sha,'sourcePcmFile':str(raw_path),'sourcePcmSha256':raw_sha,
             'musicFile':str(music_path),'musicSha256':music_sha,'sourceCommand':command,
+            'loopJoinProof':loop_proof,
             'sourceComparison':source_comparison,'musicFixedGainComparison':music_comparison,
             'finalMixes':final,'checks':checks,'passed':all(checks.values())}
 
 
 def main():
-    parser=argparse.ArgumentParser(); parser.add_argument('root'); parser.add_argument('--plans',default='a-baibai,b-patissier,c-disco'); parser.add_argument('--pcm-only',action='store_true')
+    parser=argparse.ArgumentParser(); parser.add_argument('root'); parser.add_argument('--plans',default='a-baibai'); parser.add_argument('--pcm-only',action='store_true')
     args=parser.parse_args(); root=Path(args.root).resolve(); plans=args.plans.split(',')
     name='music-pcm-check.json' if args.pcm_only else 'music-check.json'
     report={'status':'RUNNING','method':'Independent source PCM comparison, declared constant gain sample residuals and 50ms gain windows; fixed scalar final bus sum.',

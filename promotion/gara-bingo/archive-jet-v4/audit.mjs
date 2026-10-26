@@ -109,6 +109,31 @@ export function matchingSpeechEvidence(edit,layers,archiveSlots,layout) {
     wipeIntervals:wipes.map(l=>({name:l.name,interval:interval(l)})),nativeLayerOrder:'front-to-back',
     scope:'Native source/timeline/rate, enabled archive geometry, complete speech coverage and absence of opaque scene wipes or unrelated foreground layers; no claim of AI lip/face inspection.'};
 }
+export function loopSeamEvidence(edit,layers,cameraRows,coverage) {
+  const loop=edit.loop,opening=edit.shots.find(s=>s.id===loop?.openingShotId),tail=edit.shots.find(s=>s.id===loop?.bridgeShotId);
+  if(!loop?.enabled||!opening||!tail)return {passed:false,error:'Missing enabled loop/opening/condition declarations.'};
+  const headVoice=edit.voice.find(v=>v.id===opening.voiceId),tailVoice=edit.voice.find(v=>v.id===tail.voiceId),join=loop.voiceJoin;
+  const first=cameraRows.find(r=>near(r.declaredTime,0))?.values,end=cameraRows.find(r=>near(r.declaredTime,edit.duration))?.values,
+    last=coverage.find(r=>near(r.time,edit.duration-1/FPS))?.camera;
+  const cameras=[first,last,end],expected={position:[540,960,0],scale:[104,104,100],anchor:[540,960,0],rotation:0,opacity:100};
+  const cameraMatches=cameras.every(v=>v&&Object.entries(expected).every(([k,x])=>Array.isArray(x)?vector(v[k],x,.001):near(v[k],x,.001)));
+  const clean=v=>Array.isArray(v)?v.map(clean):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).filter(([k])=>!['id','uid'].includes(k)).map(([k,x])=>[k,clean(x)])):v;
+  // Native root PropGroup.name repeats the layer's slot name; retain all
+  // child property names and values, normalizing only that nonvisual label.
+  const signature=l=>clean({source:l.source,props:{...l.props,name:'LOOP SEAM OVERLAY'},switches:l.switches,blend_mode:l.blend_mode,track_matte:l.track_matte,parent:l.parent});
+  const active=(l,t)=>l&&l.switches?.video===true&&l.in_point/TICKS<=t+1e-7&&l.out_point/TICKS>t+1e-7;
+  const overlays=['INSERT CAPTION PAPER ','INSERT PROMISE TITLE ','INSERT CAPTION ','INSERT HEADER PAPER ','INSERT HEADER '].map(prefix=>{
+    const a=layers.find(l=>l.name===prefix+opening.id),b=layers.find(l=>l.name===prefix+tail.id);
+    const passed=active(a,0)&&active(b,edit.duration-1/FPS)&&!animated(a.props).length&&!animated(b.props).length&&!effectsOrMasks(a)&&!effectsOrMasks(b)&&JSON.stringify(signature(a))===JSON.stringify(signature(b));
+    return {opening:a?.name,tail:b?.name,passed,...(a&&b?{openingPropertiesSha256:digest(signature(a)),tailPropertiesSha256:digest(signature(b))}:{})};
+  });
+  const sourceContinuity=opening.kind==='archive'&&tail.kind==='archive'&&near(opening.start,0)&&near(tail.end,edit.duration)&&near(tail.sourceOut,opening.sourceIn)&&near(tail.playbackRate,opening.playbackRate)&&tail.loopLeadIn===true;
+  const joinedVoiceDeclared=!!headVoice&&!!tailVoice&&join?.headCueId===headVoice.id&&join.prefixCueId===tailVoice.id&&near(tailVoice.start+tailVoice.duration,edit.duration)&&near(headVoice.start,0)&&near(tailVoice.sourceOut,headVoice.sourceIn)&&near(join.sourceSeam,headVoice.sourceIn)&&near(join.sourceIn,tailVoice.sourceIn)&&near(join.sourceOut,headVoice.sourceOut)&&near(join.playbackRate,headVoice.playbackRate)&&join.sampleRate===48000&&join.splitSamples===Math.round(tailVoice.duration*48000)&&join.totalSamples===Math.round((tailVoice.duration+headVoice.duration)*48000)&&join.internalJoinFadeSeconds===0;
+  const declaration=near(loop.seamTime,edit.duration)&&near(loop.bridgeDuration,tail.end-tail.start)&&near(loop.musicJoinSeconds,.15)&&near(loop.reasonEnd,tail.start)&&loop.reasonStart<loop.reasonEnd;
+  return {passed:declaration&&sourceContinuity&&joinedVoiceDeclared&&cameraMatches&&overlays.every(r=>r.passed),sourceContinuity,joinedVoiceDeclared,declaration,cameraMatches,
+    openingShotId:opening.id,tailShotId:tail.id,sourceSeam:opening.sourceIn,voiceJoin:join,cameraSamples:[{time:0,values:first},{time:edit.duration-1/FPS,values:last},{time:edit.duration,values:end}],overlays,permittedOverlayMetadataDifferences:['native IDs/UIDs','root PropGroup.name repeats the source slot layer name'],
+    scope:'Saved native camera/overlay properties and exact source continuation. Actual speech/music sample continuity and the encoded two-cycle seam require independent audio QA.'};
+}
 function backgroundAudit(root) {
   const filename=path.join(root,'media/bingo-paper-background.png'),manifestFile=path.join(root,'media/background-manifest.json');
   const manifest=read(manifestFile),backgroundSha256=hash(filename),backgroundManifestSha256=hash(manifestFile);
@@ -190,7 +215,7 @@ function auditPlan(root,plan,bg,edit,clips) {
       new Set(keys.map(k=>JSON.stringify(k.scale))).size>1&&Math.max(...keys.map(k=>k.rotation))-Math.min(...keys.map(k=>k.rotation))>.1);
     const backgroundAsset=textFootage[0],backgrounds=previewLayers.filter(l=>l.name===BACKGROUND&&l.source?.type==='Footage'&&l.source.item===backgroundAsset.id);
     check('named_full_frame_background',backgrounds.length===1&&backgrounds.every(l=>l.parent===previewCamera.id));assert();
-    const background=backgrounds[0],times=[...new Set(keys.map(k=>Math.min(k.time,plan.duration-1/FPS)).concat(keys.slice(1).map((k,i)=>(k.time+keys[i].time)/2)))].sort((a,b)=>a-b);
+    const background=backgrounds[0],times=[...new Set([0,plan.duration-1/FPS,...keys.map(k=>Math.min(k.time,plan.duration-1/FPS)),...keys.slice(1).map((k,i)=>(k.time+keys[i].time)/2)])].sort((a,b)=>a-b);
     const script=path.join(dir,'qa/wholeframe-native-readback.jsx');
     const jsx=`var keys=${JSON.stringify(keys)},times=${JSON.stringify(times)},camera=${previewCamera.id},background=${background.id},cache={};\n`+
       `function values(id,t){var out={},names=['position','scale','rotation','anchor','opacity'];for(var i=0;i<names.length;i++){var p=app.run('prop.get',{layer:id,path:'transform/'+names[i],time:t});out[names[i]]=p.value;if(i===0)out.sampledTime=p.time;}return out;}\n`+
@@ -229,6 +254,8 @@ function auditPlan(root,plan,bg,edit,clips) {
     }));
     report.matchingSpeech.frameCoverage={passed:liveCoverage.length>0&&report.matchingSpeech.rows.every(v=>liveCoverage.some(r=>r.voiceId===v.voiceId))&&liveCoverage.every(r=>r.passed),samples:liveCoverage,allVideoFramesClaimed:false};
     check('matching_live_video_covers_frame_at_sampled_camera_values',report.matchingSpeech.frameCoverage.passed);
+    report.loopSeam=loopSeamEvidence(edit,layers,nativeData.rows,nativeData.coverage);
+    check('loop_source_voice_declaration_native_camera_and_overlay_seam_match',report.loopSeam.passed,report.loopSeam);
     check('audit_inputs_unchanged',hash(mainFile)===report.mainProjectSha256&&hash(textFile)===report.textOnlyProjectSha256&&
       hash(layoutFile)===report.layoutSha256&&hash(textLayoutFile)===report.textOnlyLayoutSha256&&hash(bg.filename)===bg.backgroundSha256&&hash(bg.manifestFile)===bg.backgroundManifestSha256&&hash(path.join(root,'edit-manifest.json'))===report.editManifestSha256&&clips.every(c=>hash(path.join(root,c.file))===c.sha256));
     assert();report.passed=true;save(path.join(dir,'qa/audit.json'),report);return report;
@@ -244,6 +271,7 @@ export function auditArchive(root=defaultRoot,{selected=plans}={}) {
     const edit=loadEdit(root),clips=edit.shots.filter(s=>s.kind==='archive').map(s=>({id:s.id,file:'media/clips/'+s.id+'.mp4',sha256:hash(path.join(root,'media/clips',s.id+'.mp4')),playbackRate:s.playbackRate,sourceDuration:s.sourceOut-s.sourceIn,targetDuration:s.end-s.start}));
     if(!near(edit.playbackRate,playbackRate)||edit.pitchPreserved!==true||edit.audioCutMode!=='direct-container-seek-continuous-samples'||edit.alignedAudio)throw Error('Pitch-preserving direct-source edit required.');
     if(edit.compositionMode!=='live-during-all-speech'||edit.musicStart!==0||edit.musicGainMode!=='constant')throw Error('Matching live speech and constant music from zero are required.');
+    if(plans.length!==1||plans[0].id!=='a-baibai'||edit.voice.length!==6||edit.shots.filter(s=>s.kind==='archive').length!==6||edit.loop?.enabled!==true)throw Error('This loop revision requires A only, six matching voiced archive intervals and an enabled loop.');
     if(!near(edit.duration*FPS,Math.round(edit.duration*FPS),1e-6)||edit.voice.some(v=>!near(v.playbackRate,playbackRate)||v.pitchPreserved!==true))throw Error('Invalid frame clock or voice playback rate.');
     const sortedVoice=[...edit.voice].sort((a,b)=>a.start-b.start);
     for(let i=1;i<sortedVoice.length;i++){const previous=sortedVoice[i-1];if(sortedVoice[i].start<previous.start+(previous.sourceOut-previous.sourceIn)/previous.playbackRate-1/FPS)throw Error('Voice cues overlap after retiming.');}

@@ -11,10 +11,11 @@ const EC = '/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe';
 const FC = '/mnt/c/Program Files/FilmCraft/filmcraft-cli.exe';
 const FF = fs.realpathSync('/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe');
 const backgroundName = 'bingo-paper-background.png';
-const stems={'a-baibai':'A案_倍倍FIGHT','b-patissier':'B案_キスミーパティシエ','c-disco':'C案_チョコレイトディスコ'};
-const cueNames={opening:'01_冒頭のありがとう','first-viewer':'02_初見さん','gift-reaction':'03_ギフトの反応',bingo:'04_ビンゴ達成',closing:'05_締めのありがとう','teaser-promise':'06_歌ってみた予告'};
-function cueName(id){if(!cueNames[id])throw Error('Missing Japanese cue purpose: '+id);return cueNames[id];}
-const movieName=(p,suffix)=>stems[p.id]+'_切り抜き1.25倍_'+(suffix==='reference'?'曲入り確認用':'配信音声のみ')+'.mp4';
+const stems={'a-baibai':'A案_倍倍FIGHT'};
+const cueNames={teaser:'01_冒頭の歌ってみた予告',request:'02_初見さん',reaction:'03_ギフトの反応',bingo:'04_ビンゴ達成',closing:'05_締めのありがとう','loop-condition':'06_冒頭へつながる条件の声'};
+function cueName(voice){if(!voice||!cueNames[voice.role])throw Error('Missing Japanese cue purpose: '+voice?.role);return cueNames[voice.role];}
+const movieName=(p,suffix)=>stems[p.id]+'_ループ版_切り抜き1.25倍_'+(suffix==='reference'?'曲入り確認用':'配信音声のみ')+'.mp4';
+const loopMovieName=p=>stems[p.id]+'_ループ2周確認用.mp4';
 function hash(p) {
   const digest = crypto.createHash('sha256'), buffer = Buffer.allocUnsafe(1024*1024);
   const fd = fs.openSync(p, 'r');
@@ -87,10 +88,10 @@ export function packageDelivery({root = defaultRoot, destination = defaultDestin
   const allowedParent = canonical('/mnt/f/Users/pui/Documents/gara');
   if (toCanonical === allowedParent || !within(toCanonical, allowedParent)) throw Error('Delivery must be a new child folder under the gara media directory.');
   if (/^bingo-1124(?:-v\d+)?$/.test(path.basename(destination))) throw Error('Historical deliveries must be preserved.');
-  if (['bingo-thankyou-3plans-20261025', 'bingo-thankyou-tracking-v2-20261025', 'bingo-thankyou-wholeframe-v3-20261025','bingo-thankyou-archive-jet-v4-20261026','ビンゴ達成ありがとう_切り抜き差込版_音声修正_20261026'].includes(path.basename(destination))) throw Error('Historical thank-you deliveries must be preserved.');
+  if (['bingo-thankyou-3plans-20261025', 'bingo-thankyou-tracking-v2-20261025', 'bingo-thankyou-wholeframe-v3-20261025','bingo-thankyou-archive-jet-v4-20261026','ビンゴ達成ありがとう_切り抜き差込版_音声修正_20261026','ビンゴ達成ありがとう_ライブ感重視_音量一定_20261026'].includes(path.basename(destination))) throw Error('Historical thank-you deliveries must be preserved.');
   const existingReceipt=path.join(destination,'制作データ/qa/package.json');
   if(fs.existsSync(existingReceipt)&&parse(existingReceipt).version!==version)throw Error('A different revision already occupies this delivery folder. Preserve it and choose a new folder.');
-  if (plans.length !== 3 || new Set(plans.map(plan => plan.id)).size !== 3) throw Error('Expected three distinct plans.');
+  if (plans.length !== 1 || plans[0].id!=='a-baibai') throw Error('This revision delivers plan A only.');
   const edit = loadEdit(root), editSha256 = hash(path.join(root, 'edit-manifest.json'));
   const sharedMedia = [backgroundName, 'background-manifest.json', 'voice-mix.wav'];
   for (const name of sharedMedia) if (!fs.existsSync(path.join(root, 'media', name))) throw Error('Missing shared media: ' + name);
@@ -110,7 +111,7 @@ export function packageDelivery({root = defaultRoot, destination = defaultDestin
     const a = whole.plans.find(item => item.plan === plan.id), v = visual.plans.find(item => item.id === plan.id);
     const main = hash(path.join(root, plan.id, 'projects', plan.id + '.ecproj'));
     const text = hash(path.join(root, plan.id, 'projects', plan.id + '-text-only.ecproj'));
-    if (!a?.passed || a.matchingSpeech?.passed!==true || a.matchingSpeech?.frameCoverage?.passed!==true || a.matchingSpeech.voiceCount!==edit.voice.length || a.mainProjectSha256 !== main || a.textOnlyProjectSha256 !== text || a.editManifestSha256 !== editSha256 || a.backgroundSha256 !== backgroundEvidence.backgroundSha256 || a.backgroundManifestSha256 !== backgroundEvidence.backgroundManifestSha256
+    if (!a?.passed || a.loopSeam?.passed!==true || a.matchingSpeech?.passed!==true || a.matchingSpeech?.frameCoverage?.passed!==true || a.matchingSpeech.voiceCount!==edit.voice.length || a.mainProjectSha256 !== main || a.textOnlyProjectSha256 !== text || a.editManifestSha256 !== editSha256 || a.backgroundSha256 !== backgroundEvidence.backgroundSha256 || a.backgroundManifestSha256 !== backgroundEvidence.backgroundManifestSha256
       || a.layoutSha256 !== hash(path.join(root, plan.id, 'qa/layout.json')) || a.textOnlyLayoutSha256 !== hash(path.join(root, plan.id, 'qa/text-only-layout.json'))
       || v?.status !== 'PASS_TEXT_ONLY_VISUAL' || v.projectSha256 !== main || v.textOnlyProjectSha256 !== text || !Array.isArray(v.mandatoryFindings) || v.mandatoryFindings.length)
       throw Error('Whole-frame or visual evidence is stale or incomplete: ' + plan.id);
@@ -151,13 +152,14 @@ export function packageDelivery({root = defaultRoot, destination = defaultDestin
     for(const v of edit.voice){const c=q.sourceChecks.find(c=>c.id===v.id);if(!c?.passed||c.rawSha256!==hash(path.join(root,'media/voice-raw',v.id+'.wav'))||c.voiceSha256!==hash(path.join(root,'media/voice',v.id+'.wav'))||c.playbackRate!==playbackRate)throw Error('Waveform cue evidence changed: '+v.id);}
   }
   if(finalAudio.finalAACStatus!=='CHECKED'||finalAudio.checks?.finalAAC!==true)throw Error('Final AAC waveform check has not passed.');
+  if(edit.voice.length!==6||[sourceAudio,finalAudio].some(q=>q.joinedVoiceProof?.passed!==true||q.checks?.singleAtTempoWrappedVoice!==true))throw Error('All six current cues and the one-pass wrapped speech proof are required.');
   for(const p of plans)for(const variant of ['voice-only','reference']){const c=finalAudio.finalChecks?.find(c=>c.plan===p.id&&c.variant===variant),f=path.join(root,p.id,'videos',p.id+'-'+variant+'.mp4');if(!c?.passed||c.inputsUnchanged!==true||c.videoSha256!==hash(f))throw Error('Final AAC waveform evidence is stale: '+p.id+'/'+variant);}
   const voicePacketEquivalence=plans.map(p=>{
     const file=path.join(root,p.id,'videos',p.id+'-voice-only.mp4'),args=['-v','error','-i',native(file),'-map','0:a:0','-c:a','copy','-f','hash','-hash','sha256','-'];
     const r=spawnSync(FF,args,{encoding:'utf8',timeout:180000});if(r.error||r.status!==0||!/^SHA256=[a-f0-9]{64}$/i.test(r.stdout?.trim()))throw Error('Current AAC stream hash failed: '+p.id);
     return {id:p.id,file:path.relative(root,file),videoSha256:hash(file),audioPacketSha256:r.stdout.trim()};
   });
-  if(new Set(voicePacketEquivalence.map(p=>p.audioPacketSha256)).size!==1)throw Error('B/C voice-only AAC differs from waveform-checked A.');
+  if(new Set(voicePacketEquivalence.map(p=>p.audioPacketSha256)).size!==1)throw Error('Voice-only AAC packet evidence is inconsistent.');
   const audioEvidence={sourceReportSha256:hash(sourceCheckFile),finalReportSha256:hash(finalCheckFile),sourceStatus:sourceAudio.status,finalStatus:finalAudio.status,voicePacketEquivalence,asrUsedAsAudioQualityGate:false};
   const musicCheckFile=path.join(root,'qa/music-check.json'),musicCheck=parse(musicCheckFile);
   if(musicCheck.status!=='PASS_FIXED_MUSIC_LEVEL'||musicCheck.passed!==true||musicCheck.manifestSha256!==editSha256||musicCheck.negativeControl?.passed!==true||musicCheck.checks?.allRequestedPlans!==true||musicCheck.checks?.voiceDuckNegativeControlRejected!==true||musicCheck.checks?.manifestUnchanged!==true||musicCheck.plans?.length!==plans.length||musicCheck.plansRequested?.length!==plans.length||!plans.every(p=>musicCheck.plansRequested.includes(p.id)))throw Error('Current fixed-gain music evidence with a rejected speech-duck negative control is required.');
@@ -165,7 +167,7 @@ export function packageDelivery({root = defaultRoot, destination = defaultDestin
   function musicSeal(file,expected,label){if(typeof expected!=='string'||hash(file)!==expected)throw Error('Fixed-music input changed: '+label);sealedMusicInputs.push({file,sha256:expected});}
   for(const p of plans){
     const row=musicCheck.plans.find(r=>r.plan===p.id),folder=path.join(root,p.id);
-    if(!row?.passed||row.sourceComparison?.passed!==true||row.musicFixedGainComparison?.passed!==true||!row.checks||!Object.values(row.checks).every(v=>v===true)||row.finalMixes?.length!==2)throw Error('Fixed music or final static mix failed: '+p.id);
+    if(!row?.passed||row.sourceComparison?.passed!==true||row.musicFixedGainComparison?.passed!==true||row.loopJoinProof?.passed!==true||!row.checks||!Object.values(row.checks).every(v=>v===true)||row.finalMixes?.length!==2)throw Error('Fixed music, declared cyclic join or final static mix failed: '+p.id);
     musicSeal(path.join(folder,'qa/music-source.json'),row.sourceMetadataSha256,p.id+' source metadata');
     musicSeal(path.join(root,'audio-preview',p.audioFile),row.sourceSha256,p.id+' original trial');
     if(row.sourceSha256!==p.previewSha256)throw Error('Fixed-music source is not the approved trial: '+p.id);
@@ -180,7 +182,14 @@ export function packageDelivery({root = defaultRoot, destination = defaultDestin
       musicSeal(path.join(folder,'videos',p.id+'-'+variant+'.mp4'),mix.videoSha256,p.id+'/'+variant+' final movie');
     }
   }
-  const musicEvidence={status:musicCheck.status,reportSha256:hash(musicCheckFile),musicStart:0,gainMode:'constant',speechDucking:false,maximumBoundaryRampSeconds:.010,inputs:sealedMusicInputs};
+  const musicEvidence={status:musicCheck.status,reportSha256:hash(musicCheckFile),musicStart:0,gainMode:'constant-except-declared-cyclic-join',speechDucking:false,cyclicJoinSeconds:edit.loop?.musicJoinSeconds,inputs:sealedMusicInputs};
+  const plan=plans[0],work=path.join(root,plan.id),loopTechnicalFile=path.join(work,'qa/loop-validation.json'),loopTechnical=parse(loopTechnicalFile),twoCycleFile=path.join(work,'videos',plan.id+'-loop-2cycle.mp4'),twoCyclePcm=path.join(work,'media/reference-2cycle.wav');
+  if(loopTechnical.status!=='PASS_TWO_CYCLE_TECHNICAL'||loopTechnical.id!==plan.id||loopTechnical.cycles!==2||Math.abs(loopTechnical.cycleDuration-edit.duration)>1e-6||loopTechnical.editManifestSha256!==editSha256||loopTechnical.projectSha256!==hash(path.join(work,'projects',plan.id+'.ecproj'))||loopTechnical.sourceReferenceSha256!==hash(path.join(work,'videos',plan.id+'-reference.mp4'))||loopTechnical.sourceMasterSha256!==hash(path.join(work,'media/picture-master.mp4'))||loopTechnical.sourcePcmSha256!==hash(path.join(work,'media/reference-mix.wav'))||loopTechnical.repeatedPcmSha256!==hash(twoCyclePcm)||path.resolve(root,loopTechnical.output?.file||'')!==twoCycleFile||loopTechnical.output.sha256!==hash(twoCycleFile)||loopTechnical.output.frames!==Math.round(edit.duration*30)*2||Math.abs(loopTechnical.output.duration-edit.duration*2)>1/30||loopTechnical.output.audioStreams!==1)throw Error('Current two-cycle technical proof is missing or stale.');
+  const loopAudioFile=path.join(root,'qa/loop-audio-check.json'),loopAudio=parse(loopAudioFile);
+  if(loopAudio.status!=='PASS_AUDIO_LOOP'||loopAudio.passed!==true||loopAudio.manifestSha256!==editSha256||loopAudio.plan!==plan.id||loopAudio.negativeControl?.passed!==true||loopAudio.negativeControl?.abruptSeamRejected!==true||loopAudio.musicSeam?.passed!==true||loopAudio.joinedVoice?.passed!==true||!Array.isArray(loopAudio.inputs)||!loopAudio.inputs.length||loopAudio.finalAudio?.length!==2||loopAudio.twoCycle?.passed!==true||loopAudio.twoCycle.videoSha256!==hash(twoCycleFile)||loopAudio.twoCycle.pcmSha256!==hash(twoCyclePcm))throw Error('Current numerical voice/music/two-cycle seam evidence is required.');
+  const loopInputs=loopAudio.inputs.map(i=>{const file=path.resolve(root,i.file);if(!within(file,root)||hash(file)!==i.sha256)throw Error('Loop audio input changed: '+i.role);return {file,sha256:i.sha256,role:i.role};});
+  for(const variant of ['voice-only','reference']){const row=loopAudio.finalAudio.find(x=>x.variant===variant);if(!row?.passed||row.videoSha256!==hash(path.join(work,'videos',plan.id+'-'+variant+'.mp4'))||row.pcmSha256!==hash(path.join(work,'media',variant+'-mix.wav')))throw Error('Loop final audio proof is stale: '+variant);}
+  const loopEvidence={technicalReportSha256:hash(loopTechnicalFile),audioReportSha256:hash(loopAudioFile),twoCycleSha256:hash(twoCycleFile),inputs:loopInputs,technical:loopTechnical,audioStatus:loopAudio.status};
 
   const editable = path.join(destination, '制作データ');
   const copied = [], receipts = [], relinked = [];
@@ -223,12 +232,13 @@ export function packageDelivery({root = defaultRoot, destination = defaultDestin
   const deliveredBackground=mappedCopy('media/'+backgroundName,'制作データ/共通素材/淡色の紙背景.png');
   const deliveredManifest=mappedCopy('media/background-manifest.json','制作データ/media/background-manifest.json');
   mappedCopy('media/voice-mix.wav','制作データ/共通素材/配信音声ミックス_1.25倍速.wav');
+  for(const [from,to]of [['voice-raw/loop-whole.wav','音質検証用_処理前/ループの連続した発話.wav'],['voice-loop-whole.wav','音質検証用_ループ発話の全区間.wav'],['voice-sum.wav','音量検証用_配信音声の加算素材.wav']])mappedCopy('media/'+from,'制作データ/共通素材/'+to);
   for(const [from,to]of [['character-original.jpg','元の立ち絵.jpg'],['character-cutout.png','立ち絵_通常透過.png']])if(fs.existsSync(path.join(root,'media',from)))mappedCopy('media/'+from,'制作データ/共通素材/'+to);
   copy(path.join(root,'edit-manifest.json'),path.join(editable,'edit-manifest.json'));
-  for (const s of edit.shots.filter(s=>s.kind==='archive')) mappedCopy('media/clips/'+s.id+'.mp4','制作データ/共通素材/切り抜き/'+cueName(s.voiceId)+'.mp4');
-  for (const v of edit.voice){mappedCopy('media/voice/'+v.id+'.wav','制作データ/共通素材/発話/'+cueName(v.id)+'.wav');const raw='media/voice-raw/'+v.id+'.wav';if(fs.existsSync(path.join(root,raw)))mappedCopy(raw,'制作データ/共通素材/音質検証用_処理前/'+cueName(v.id)+'.wav');}
+  for (const s of edit.shots.filter(s=>s.kind==='archive')) mappedCopy('media/clips/'+s.id+'.mp4','制作データ/共通素材/切り抜き/'+cueName(edit.voice.find(v=>v.id===s.voiceId))+'.mp4');
+  for (const v of edit.voice){mappedCopy('media/voice/'+v.id+'.wav','制作データ/共通素材/発話/'+cueName(v)+'.wav');const raw='media/voice-raw/'+v.id+'.wav';if(fs.existsSync(path.join(root,raw)))mappedCopy(raw,'制作データ/共通素材/音質検証用_処理前/'+cueName(v)+'.wav');}
   // Preserve small provenance records, not the full archive or aligned analysis WAV.
-  for (const name of ['audio-timebase.json','archive-probe.json','ASR-REPORT.md','clip-candidates-final.json','clip-candidates-core-medium.json','selections.json','aligned-audio-crosscheck.json']) {
+  for (const name of ['audio-timebase.json','archive-probe.json','ASR-REPORT.md','clip-candidates-final.json','clip-candidates-core-medium.json','confirm-cover-promise-medium.json','selections.json','aligned-audio-crosscheck.json']) {
     const file=path.join(root,'research',name);
     if(fs.existsSync(file))copy(file,path.join(editable,'local-provenance',name));
   }
@@ -282,12 +292,14 @@ export function packageDelivery({root = defaultRoot, destination = defaultDestin
     for (const {plan, report, archive, character, wholeReport, mainWhole, textWhole} of evidence) {
       const work = path.join(root, plan.id), delivered = path.join(editable, plan.id);
       for (const name of ['source', 'qa']) copyTree(path.join(work, name), path.join(delivered, name));
-      for (const [from,to] of [['picture-master.mp4','映像マスター.mp4'],['voice.wav','配信音声_1.25倍速.wav'],['music.wav','追加曲.wav'],['music-source.wav','音量検証用_曲の原区間.wav'],['reference-sum.wav','音量検証用_調整前の曲入り.wav'],['voice-only-sum.wav','音量検証用_調整前の配信音声.wav'],['reference-mix.wav','音量検証用_曲入りミックス.wav'],['voice-only-mix.wav','音量検証用_配信音声ミックス.wav']])mappedCopy(plan.id+'/media/'+from,'制作データ/案別素材/'+stems[plan.id]+'/'+to);
+      for (const [from,to] of [['picture-master.mp4','映像マスター.mp4'],['voice.wav','配信音声_1.25倍速.wav'],['music.wav','追加曲.wav'],['music-source.wav','音量検証用_曲の原区間.wav'],['music-full-source.wav','音量検証用_曲の全抽出区間.wav'],['music-wrap-source.wav','音量検証用_冒頭直前の曲区間.wav'],['music-loop-source.wav','音量検証用_ループ接続済みの曲原区間.wav'],['reference-sum.wav','音量検証用_調整前の曲入り.wav'],['voice-only-sum.wav','音量検証用_調整前の配信音声.wav'],['reference-mix.wav','音量検証用_曲入りミックス.wav'],['voice-only-mix.wav','音量検証用_配信音声ミックス.wav']])mappedCopy(plan.id+'/media/'+from,'制作データ/案別素材/'+stems[plan.id]+'/'+to);
       const movieDigests = [];
       for (const suffix of ['reference', 'voice-only']) {
         const name = movieName(plan,suffix), from = path.join(work, 'videos',plan.id+'-'+suffix+'.mp4'), to = path.join(destination, name);
         copy(from, to); movieDigests.push({file:name, sha256:hash(to), bytes:fs.statSync(to).size});
       }
+      const loopName=loopMovieName(plan);copy(twoCycleFile,path.join(destination,loopName));movieDigests.push({file:loopName,sha256:hash(twoCycleFile),bytes:fs.statSync(twoCycleFile).size,cycles:2});
+      mappedCopy(plan.id+'/media/reference-2cycle.wav','制作データ/案別素材/'+stems[plan.id]+'/音量検証用_ループ2周ミックス.wav');
       const names = [plan.id + '.ecproj', plan.id + '-text-only.ecproj', plan.id + '.fcproj'];
       const purposes=['映像編集.ecproj','人物未読込確認.ecproj','映像と音声編集.fcproj'];
       const projects=names.map((name,i)=>mappedCopy(plan.id+'/projects/'+name,'編集原本/'+stems[plan.id]+'/'+stems[plan.id]+'_'+purposes[i],'project'));
@@ -342,11 +354,7 @@ export function packageDelivery({root = defaultRoot, destination = defaultDestin
     fs.writeFileSync(path.join(editable, 'qa/package-failed.json'), JSON.stringify({error:error.message, receipts}, null, 2) + '\n');
     throw error;
   }
-  const descriptions = {
-    'a-baibai':'ビンゴ盤面から達成マスへ、実際の配信リアクションを短くつなぎ、声とパン・ズームで達成を盛り上げます。',
-    'b-patissier':'配信の感謝を残しながら、紙ふぶき・数字・切り抜きをテンポよく切り替えます。',
-    'c-disco':'淡いビンゴ配色で配信の瞬間をつなぐ、強いジェットカットと全画面の動き。'
-  };
+  const descriptions = {'a-baibai':'本人の歌投稿予告から始まり、ビンゴ達成と感謝を経て、最後の条件の声から冒頭の予告へつながります。'};
   fs.writeFileSync(path.join(editable,'名前対応表.json'),JSON.stringify({version,files:fileMap,provenanceNote:'旧ASR資料は発話検索の出典。時刻補完WAVは今回の最終音源に使用せず、音切れ改善PASSの根拠にも使用しない。'},null,2)+'\n');
   fs.writeFileSync(path.join(editable,'再制作用ファイルを準備.mjs'),String.raw`/** Run only when regenerating from source. Published Japanese originals are never overwritten. */
 import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import{spawnSync}from'node:child_process';import{fileURLToPath}from'node:url';
@@ -359,20 +367,21 @@ const rows=[];for(const m of map){const from=path.resolve(delivery,m.deliveredRe
 `);
   copy(path.join(editable,'再制作用ファイルを準備.mjs'),path.join(editable,'制作ソース/再制作用ファイルを準備.mjs'));
   copy(path.join(editable,'名前対応表.json'),path.join(editable,'制作ソース/名前対応表.json'));
-  const cards = plans.map((plan, index) => `<article><div class="eyebrow">${String(index + 1).padStart(2, '0')}案</div><h2>${escape(plan.title)}</h2><p class="song">${escape(plan.song)}</p><video controls playsinline preload="metadata" src="${encodeURI(movieName(plan,'reference'))}"></video><p>${escape(descriptions[plan.id] || plan.description)}</p><div class="links"><a href="${encodeURI(movieName(plan,'reference'))}">切り抜き1.25倍・曲入り確認用</a><a href="${encodeURI(movieName(plan,'voice-only'))}">切り抜き1.25倍・配信音声のみ</a><a href="${encodeURI('編集原本/'+stems[plan.id]+'/')}">編集原本</a></div></article>`).join('\n');
-  fs.writeFileSync(path.join(destination, '3案を見比べる.html'), `<!doctype html>
-<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>おさゆ｜ライブ感重視・曲の音量一定・3案比較</title>
-<style>body{margin:0;background:#0c1020;color:#f7fbff;font:16px/1.75 system-ui,sans-serif}main{max-width:1180px;margin:auto;padding:48px 24px 64px}h1{line-height:1.35;font-size:clamp(26px,4vw,44px);margin:8px 0 18px}.intro{color:#bdd2d8;max-width:780px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:36px}article{border:1px solid #355061;background:#131b2d;border-radius:20px;padding:22px}.eyebrow{color:#a8f3e0;letter-spacing:.2em;font-size:12px}h2{font-size:23px;line-height:1.4;margin:8px 0}.song{color:#ff95d2;font-size:14px;min-height:48px}video{display:block;width:100%;aspect-ratio:9/16;background:#060b13;border-radius:12px}.links{display:flex;gap:12px;flex-wrap:wrap}a{color:#a8f3e0;text-underline-offset:4px}footer{margin-top:36px;color:#98afb8;font-size:14px}@media(max-width:900px){.grid{grid-template-columns:1fr}article{max-width:440px;margin:auto}.song{min-height:0}}</style>
-<main><div class="eyebrow">おさゆ / ライブ感重視 / 切り抜き1.25倍</div><h1>初ビンゴ、全マス達成！<br>ライブの声と映像で伝える・3案</h1><p class="intro">9:16・25秒。本人の声が聞こえる6区間は、その発話と一致する配信映像をフレーズ全体に表示し、間をビンゴ盤面・文字・元の立ち絵の演出でつなぎます。切り抜きと声はピッチを保つ1.25倍速。曲入り確認版は通常速度の試聴曲を冒頭から固定音量で流し、発話中も下げません。配信音声版は追加曲なしです。</p><div class="grid">${cards}</div><footer>曲入りは今回のプレビュー用です。投稿時は配信音声版へTikTok内の音源を冒頭から追加し、元の声と両立する一定の音量へ調整してください。<a href="${encodeURI('音源後付けガイド.md')}">音源ガイド</a> ／ <a href="${encodeURI('制作方針と投稿文.md')}">構成・投稿文</a><br>元配信のBGMやギフトSEは残る場合があります。純粋なボーカル分離音源ではありません。TikTok実機での同期と創作上の採用判断は別途確認となります。</footer></main></html>\n`);
-  const report = {status:'PASS_PORTABLE_NATIVE_PACKAGE', version,playbackRate,pitchPreserved:true,audioEvidence,musicEvidence, background:backgroundEvidence, destination:native(destination), nativeProjects:plans.length*3, plans:summaries, copiedBeforeRelink:copied, relinked, receipts,fileMap,
+  const cards = plans.map(plan => `<article><div class="eyebrow">A案 / LOOP</div><h2>${escape(plan.title)}</h2><p class="song">${escape(plan.song)}</p><video controls playsinline loop preload="metadata" src="${encodeURI(movieName(plan,'reference'))}"></video><p>${escape(descriptions[plan.id])}</p><div class="links"><a href="${encodeURI(movieName(plan,'reference'))}">曲入り確認用</a><a href="${encodeURI(movieName(plan,'voice-only'))}">配信音声のみ</a><a href="${encodeURI(loopMovieName(plan))}">実際につないだ2周確認用</a><a href="${encodeURI('編集原本/'+stems[plan.id]+'/')}">編集原本</a></div></article>`).join('\n');
+  fs.writeFileSync(path.join(destination, 'A案をループ再生する.html'), `<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>おさゆ｜A案・予告からつながるループ版</title>
+<style>body{margin:0;background:#0c1020;color:#f7fbff;font:16px/1.75 system-ui,sans-serif}main{max-width:1180px;margin:auto;padding:48px 24px 64px}h1{line-height:1.35;font-size:clamp(26px,4vw,44px);margin:8px 0 18px}.intro{color:#bdd2d8;max-width:780px}.grid{display:grid;grid-template-columns:minmax(0,500px);gap:24px;margin-top:36px;justify-content:center}article{border:1px solid #355061;background:#131b2d;border-radius:20px;padding:22px}.eyebrow{color:#a8f3e0;letter-spacing:.2em;font-size:12px}h2{font-size:23px;line-height:1.4;margin:8px 0}.song{color:#ff95d2;font-size:14px;min-height:48px}video{display:block;width:100%;aspect-ratio:9/16;background:#060b13;border-radius:12px}.links{display:flex;gap:12px;flex-wrap:wrap}a{color:#a8f3e0;text-underline-offset:4px}footer{margin-top:36px;color:#98afb8;font-size:14px}@media(max-width:900px){.grid{grid-template-columns:1fr}article{max-width:440px;margin:auto}.song{min-height:0}}</style>
+<main><div class="eyebrow">おさゆ / A案 / 予告からつながるループ</div><h1>初ビンゴ、全マス達成！<br>あの約束は、ここから。</h1><p class="intro">9:16・約${edit.duration.toFixed(3)}秒。冒頭の歌投稿予告と、最後の条件の声が元配信の一続きの発話になるよう配置しました。声が聞こえる間は対応する配信映像を表示し、間を元のビンゴ演出でつなぎます。切り抜きと声はピッチを保つ1.25倍速。曲は発話中も下げず、末尾0.15秒だけ冒頭へつながる処理を加えています。</p><div class="grid">${cards}</div><footer>プレーヤーのループ待ちと、動画そのものの接続を区別するため、実際の2周確認用も同梱しています。曲入りは私用プレビューです。投稿には配信音声版を使い、TikTokの曲を後付けします。<a href="${encodeURI('音源後付けガイド.md')}">音源ガイド</a> ／ <a href="${encodeURI('制作方針と投稿文.md')}">制作方針・投稿文</a><br>元配信のBGMやギフトSEが残る場合があります。数値検査と、人間の試聴・TikTok実機確認は区別しています。</footer></main></html>\n`);
+  const report = {status:'PASS_PORTABLE_NATIVE_PACKAGE', version,playbackRate,pitchPreserved:true,audioEvidence,musicEvidence,loopEvidence, background:backgroundEvidence, destination:native(destination), nativeProjects:plans.length*3, plans:summaries, copiedBeforeRelink:copied, relinked, receipts,fileMap,
     aiImagePolicy:'Archive videos and character-containing frames stay local; AI previews import only the approved background and gray placeholders.',
     humanRealtimeReview:false, tiktokDeviceReview:false, ownerCreativeApproval:false};
   fs.mkdirSync(path.join(editable, 'qa'), {recursive:true});
   if(hash(sourceCheckFile)!==audioEvidence.sourceReportSha256||hash(finalCheckFile)!==audioEvidence.finalReportSha256)throw Error('Waveform QA reports changed during packaging.');
   if(hash(musicCheckFile)!==musicEvidence.reportSha256||sealedMusicInputs.some(s=>hash(s.file)!==s.sha256))throw Error('Fixed music QA reports or inputs changed during packaging.');
+  if(hash(loopTechnicalFile)!==loopEvidence.technicalReportSha256||hash(loopAudioFile)!==loopEvidence.audioReportSha256||hash(twoCycleFile)!==loopEvidence.twoCycleSha256||loopInputs.some(i=>hash(i.file)!==i.sha256))throw Error('Loop QA reports or inputs changed during packaging.');
   fs.writeFileSync(path.join(editable, 'qa/package.json'), JSON.stringify(report, null, 2) + '\n');
   fs.mkdirSync(path.join(destination,'検証記録'),{recursive:true});
-  fs.writeFileSync(path.join(destination,'検証記録/納品検証.json'),JSON.stringify({status:report.status,version,playbackRate,frames:Math.round(edit.duration*30),duration:edit.duration,nativeProjects:9,movies:summaries.flatMap(s=>s.movies),sourceWaveformStatus:sourceAudio.status,finalWaveformStatus:finalAudio.status,fixedMusicStatus:musicCheck.status,musicStart:0,speechDucking:false,voiceCueCount:edit.voice.length,asrUsedAsAudioQualityGate:false,humanListening:finalAudio.humanListening,detail:'制作データ/qa/package.json'},null,2)+'\n');
+  fs.writeFileSync(path.join(destination,'検証記録/納品検証.json'),JSON.stringify({status:report.status,version,playbackRate,frames:Math.round(edit.duration*30),duration:edit.duration,nativeProjects:plans.length*3,movies:summaries.flatMap(s=>s.movies),sourceWaveformStatus:sourceAudio.status,finalWaveformStatus:finalAudio.status,fixedMusicStatus:musicCheck.status,loopAudioStatus:loopAudio.status,twoCycleTechnicalStatus:loopTechnical.status,musicStart:0,speechDucking:false,voiceCueCount:edit.voice.length,asrUsedAsAudioQualityGate:false,humanListening:finalAudio.humanListening,detail:'制作データ/qa/package.json'},null,2)+'\n');
   console.log(JSON.stringify({destination:report.destination, nativeProjects:report.nativeProjects, nativeReopenSaveAndRender:true, movieCount:summaries.reduce((sum, plan) => sum + plan.movies.length, 0)}));
   return report;
 }
