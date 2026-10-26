@@ -1,0 +1,3 @@
+# 履歴の読み方
+
+このフォルダは訂正前の記録を原文のまま保持します。旧full03は分岐Bではなく通常route6への着地で、両分岐に着地したという過去のPASS説明は現状の証明に使いません。現在の根拠は親README、ep2full05-summary.json、production-root-review.jsonと最新PR自己レビューです。

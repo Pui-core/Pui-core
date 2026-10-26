@@ -1,0 +1,267 @@
+{
+  "status": "PASS_TECHNICAL_PENDING_FINAL_IMAGES_AND_NATIVE_F_REOPEN",
+  "videoSha256": "dc31b831b51192d659a57afe3a7c225dec19e27fce05a255de5b7f8df4d56a4a",
+  "coverSha256": "4e295b4276ad1da2925ca469fb45377f9d16cb3d87ad6d81636417e639365205",
+  "frames": 2460,
+  "duration": 82.005,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLufs": -19.2,
+    "truePeakDbtp": -0.9,
+    "cueWindows": [
+      {
+        "cue": "voice-01.wav",
+        "at": 0.15,
+        "lag": 0,
+        "correlation": 0.9999915723932788,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-02.wav",
+        "at": 4.2,
+        "lag": 0,
+        "correlation": 0.999981299651235,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-03.wav",
+        "at": 7.9,
+        "lag": 0,
+        "correlation": 0.9999125582803892,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-04.wav",
+        "at": 11.9,
+        "lag": 0,
+        "correlation": 0.9999762240559207,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-05.wav",
+        "at": 15.8,
+        "lag": 0,
+        "correlation": 0.9997786164269956,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-06.wav",
+        "at": 24,
+        "lag": 0,
+        "correlation": 0.9998857937120429,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-07.wav",
+        "at": 28.6,
+        "lag": 0,
+        "correlation": 0.9999161482794182,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-08.wav",
+        "at": 32.2,
+        "lag": 0,
+        "correlation": 0.9997139252098355,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-09.wav",
+        "at": 36,
+        "lag": 0,
+        "correlation": 0.9998475148327509,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-10.wav",
+        "at": 52,
+        "lag": 0,
+        "correlation": 0.9999752888820087,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-11.wav",
+        "at": 63.3,
+        "lag": 0,
+        "correlation": 0.9998246834280385,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-12.wav",
+        "at": 69.3,
+        "lag": 0,
+        "correlation": 0.9999262835241844,
+        "lagMilliseconds": 0
+      },
+      {
+        "cue": "voice-13.wav",
+        "at": 75.3,
+        "lag": 0,
+        "correlation": 0.9999171326137355,
+        "lagMilliseconds": 0
+      }
+    ],
+    "scope": "Numerical AAC/reference alignment, not semantic or subjective listening"
+  },
+  "fullAvDecode": true,
+  "actualPlay": {
+    "sourceFrames": [
+      205,
+      1165
+    ],
+    "outputFrames": [
+      588,
+      1548
+    ],
+    "framesCompared": 960,
+    "rate": 1,
+    "roi": [
+      0,
+      0,
+      1920,
+      990
+    ],
+    "fullRunSsim": 0.988374,
+    "captionExcluded": true
+  },
+  "finalExtractedFrames": [
+    {
+      "file": "qa/final-00.png",
+      "time": 0
+    },
+    {
+      "file": "qa/final-01.png",
+      "time": 0.2
+    },
+    {
+      "file": "qa/final-02.png",
+      "time": 3.9666666667
+    },
+    {
+      "file": "qa/final-03.png",
+      "time": 4
+    },
+    {
+      "file": "qa/final-04.png",
+      "time": 7.5666666667
+    },
+    {
+      "file": "qa/final-05.png",
+      "time": 7.6
+    },
+    {
+      "file": "qa/final-06.png",
+      "time": 11.5666666667
+    },
+    {
+      "file": "qa/final-07.png",
+      "time": 11.6
+    },
+    {
+      "file": "qa/final-08.png",
+      "time": 15.5666666667
+    },
+    {
+      "file": "qa/final-09.png",
+      "time": 15.6
+    },
+    {
+      "file": "qa/final-10.png",
+      "time": 19.5666666667
+    },
+    {
+      "file": "qa/final-11.png",
+      "time": 19.6
+    },
+    {
+      "file": "qa/final-12.png",
+      "time": 25
+    },
+    {
+      "file": "qa/final-13.png",
+      "time": 29
+    },
+    {
+      "file": "qa/final-14.png",
+      "time": 32.5
+    },
+    {
+      "file": "qa/final-15.png",
+      "time": 34
+    },
+    {
+      "file": "qa/final-16.png",
+      "time": 37
+    },
+    {
+      "file": "qa/final-17.png",
+      "time": 46
+    },
+    {
+      "file": "qa/final-18.png",
+      "time": 51.5666666667
+    },
+    {
+      "file": "qa/final-19.png",
+      "time": 51.6
+    },
+    {
+      "file": "qa/final-20.png",
+      "time": 59.9666666667
+    },
+    {
+      "file": "qa/final-21.png",
+      "time": 60
+    },
+    {
+      "file": "qa/final-22.png",
+      "time": 62.9666666667
+    },
+    {
+      "file": "qa/final-23.png",
+      "time": 63
+    },
+    {
+      "file": "qa/final-24.png",
+      "time": 68.9666666667
+    },
+    {
+      "file": "qa/final-25.png",
+      "time": 69
+    },
+    {
+      "file": "qa/final-26.png",
+      "time": 71.9666666667
+    },
+    {
+      "file": "qa/final-27.png",
+      "time": 72
+    },
+    {
+      "file": "qa/final-28.png",
+      "time": 74.9666666667
+    },
+    {
+      "file": "qa/final-29.png",
+      "time": 75
+    },
+    {
+      "file": "qa/final-30.png",
+      "time": 76
+    },
+    {
+      "file": "qa/final-31.png",
+      "time": 81.9666666667
+    }
+  ],
+  "wholeDirectVideoWatch": false,
+  "wholeDirectSubjectiveListen": false,
+  "ownerCreativeAcceptance": false,
+  "published": false
+}

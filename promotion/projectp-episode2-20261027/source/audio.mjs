@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import {file,np,FF,run,hash,save} from './native.mjs';
+const edit=JSON.parse(fs.readFileSync(file('source/edit.json'),'utf8'));
+const narration=JSON.parse(fs.readFileSync(file('qa/narration.json'),'utf8'));
+const args=['-hide_banner','-y'];
+for(const c of narration.cues)args.push('-i',np(file('media/'+c.file)));
+const filters=narration.cues.map((c,i)=>`[${i}:a]adelay=${Math.round(c.at*1000)}|${Math.round(c.at*1000)}[v${i}]`);
+filters.push(narration.cues.map((_,i)=>`[v${i}]`).join('')+`amix=inputs=${narration.cues.length}:normalize=0:duration=longest,volume=1.45,apad,atrim=duration=${edit.duration}[voice]`);
+await run(FF,[...args,'-filter_complex',filters.join(';'),'-map','[voice]','-c:a','pcm_s24le','-ar','48000',np(file('media/narration-stem.wav'))],'audio-voice-assembly.json');
+await run(FF,['-hide_banner','-y','-i',np(file('media/connecting-lights-master.wav')),'-i',np(file('media/narration-stem.wav')),'-filter_complex','[0:a]volume=.65[bg];[bg][1:a]sidechaincompress=threshold=.025:ratio=4:attack=25:release=340:makeup=1:mix=1[duck]','-map','[duck]','-c:a','pcm_s24le','-ar','48000',np(file('media/background-stem.wav'))],'audio-background-duck.json');
+await run(FF,['-hide_banner','-y','-i',np(file('media/narration-stem.wav')),'-i',np(file('media/background-stem.wav')),'-filter_complex',`[0:a][1:a]amix=inputs=2:normalize=0:duration=longest,atrim=duration=${edit.duration}[mix]`,'-map','[mix]','-c:a','pcm_s24le','-ar','48000',np(file('media/reference-mix.wav'))],'audio-reference-mix.json');
+const loud=await run(FF,['-hide_banner','-i',np(file('media/reference-mix.wav')),'-filter_complex','ebur128=peak=true','-f','null','-'],'audio-reference-loudness.json');
+save('qa/audio-binding.json',{voiceSha256:hash(file('media/narration-stem.wav')),backgroundSha256:hash(file('media/background-stem.wav')),referenceMixSha256:hash(file('media/reference-mix.wav')),originalBgmSha256:hash(file('media/connecting-lights-master.wav')),duration:edit.duration,sampleRate:48000,channels:2,bits:24,voiceGain:1.45,backgroundGain:.65,ducking:{threshold:.025,ratio:4,attackMs:25,releaseMs:340},nativeFilmCraftTracks:['A1 narration-stem.wav','A2 background-stem.wav'],gameAudioRecorded:false,sfxAdded:false,credit:'VOICEVOX:青山龍星',directWholeSubjectiveAudition:false});
+console.log(loud.stderr.slice(-650));

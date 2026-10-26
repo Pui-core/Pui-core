@@ -1,0 +1,106 @@
+{
+  "checkedAt": "2026-10-26T09:27:45.832Z",
+  "scope": "Selected final MP4 frames and PhotoCraft covers inspected directly; not full real-time watch/listen",
+  "horizontalVideoSha256": "dc31b831b51192d659a57afe3a7c225dec19e27fce05a255de5b7f8df4d56a4a",
+  "shortVideoSha256": "cd818f84da5926eaf33caea0b4155e3e0fdc47c11484f8f90ba7e30789268db2",
+  "tiktokVideoSha256": "1735e42ee3200e709315d035f0d07c8a8ff4bb957408edd7781c93e5dcb9d3d2",
+  "resolved": [
+    {
+      "finding": "Shortened dialogue shown as verbatim",
+      "change": "Quote marks removed; screen and cue4/11 state summary; voice text and timing unchanged"
+    },
+    {
+      "finding": "Unselected popular track marked complete",
+      "change": "false plus Root-only operator; TikTok remains provisional draft"
+    },
+    {
+      "finding": "Horizontal opening obscured real gap",
+      "change": "Live actual frames601..721 and compact upper question; host starts4s"
+    },
+    {
+      "finding": "Short opening host hid explanatory text",
+      "change": "Both platforms remove opening host; retain matching ending Core only"
+    },
+    {
+      "finding": "Intro title used episode1 state",
+      "change": "4..7.6s now shows actual after-episode2-select frame65; no source UI rewritten"
+    },
+    {
+      "finding": "Zoom/cover left clipped objective text",
+      "change": "Game crop/reframing adjusted; game footing remains visible"
+    }
+  ],
+  "footing": {
+    "A": {
+      "frame": 627,
+      "y": 979.925
+    },
+    "B": {
+      "frame": 669,
+      "x": 801.4,
+      "y": 931.925,
+      "tile": "branches[1] y932, not route[6] y924"
+    },
+    "merge": 723
+  },
+  "transitionScope": "All cuts extracted, actual plays compared over 120 opening +960 horizontal +150 per vertical frames; A/B/merge before/at/after triplets extracted",
+  "images": [
+    {
+      "file": "qa/final-03.png",
+      "sha256": "b2ba1ac01704e45be945bd1821534d24f5fb450aeea2170a32c05bf7636aa17b"
+    },
+    {
+      "file": "qa/final-cold-B.png",
+      "sha256": "d39208eb722b57cf2d89966d30beaf0a8ae9c86559be4e5a0c4dd22e559d8fc7"
+    },
+    {
+      "file": "qa/final-land-B.png",
+      "sha256": "3cffdb8b206669bfbada610bc8587c142ce9bfc8bffa0f77beb18c14795c0574"
+    },
+    {
+      "file": "qa/final-merge.png",
+      "sha256": "b892548db590ca0815467e3be5b9c1459b550deb70e74e97b732888cc47fa508"
+    },
+    {
+      "file": "qa/final-21.png",
+      "sha256": "bc02db4fc4d868476d88b923400210cde1b787b4d667028ecece05f5b6122b75"
+    },
+    {
+      "file": "qa/final-24.png",
+      "sha256": "4167e69415994aec4fa95ade22ba028afc59ef35bcdc6c6fbd339d668a2501a1"
+    },
+    {
+      "file": "short/qa/final-01.png",
+      "sha256": "e00465c031bb7b14cd7d4a1da9f18db66ac337c0f328add0612d33a94e2b79ae"
+    },
+    {
+      "file": "short/qa/final-20.png",
+      "sha256": "9afe823b8223ab7341f79d93cfbb24a75a8c10d587a09365350c685673ed8ff2"
+    },
+    {
+      "file": "short/qa/final-23.png",
+      "sha256": "ba8112de00dc856c98f388ec82ebb9a04ce9936142aba7a72294925489172c48"
+    },
+    {
+      "file": "short/qa/final-tiktok-01.png",
+      "sha256": "e00465c031bb7b14cd7d4a1da9f18db66ac337c0f328add0612d33a94e2b79ae"
+    },
+    {
+      "file": "short/qa/final-tiktok-23.png",
+      "sha256": "581f2f26cc58bf7209d98b8ae23fed78307ac0b49ab6e7dd922d0fe170cc5185"
+    },
+    {
+      "file": "covers/episode2-futari-no-aizu.png",
+      "sha256": "4e295b4276ad1da2925ca469fb45377f9d16cb3d87ad6d81636417e639365205"
+    },
+    {
+      "file": "short/covers/episode2-short.png",
+      "sha256": "d6f50c45088a57997e64a5f306bab873af5a1c254effe4808b40891c7cc9021b"
+    }
+  ],
+  "mouthTiming": "Existing rendered Core uses matching unchanged voice windows; key times are quantized to30fps (up to half-frame at21.25s); no sample-accurate mouth-motion claim",
+  "wholeDirectVideoWatch": false,
+  "wholeSubjectiveAudioListen": false,
+  "ownerCreativeAcceptance": false,
+  "published": false
+}

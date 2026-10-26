@@ -1,0 +1,18 @@
+import fs from 'node:fs';import path from 'node:path';
+import {file,np,FF,FP,run,parse,save,digest} from './native.mjs';
+const platform=process.env.PROJECTP_SHORT_PLATFORM||'youtube';if(!['youtube','tiktok'].includes(platform))throw Error('Unsupported platform');const suffix=platform==='youtube'?'':'-tiktok';
+const output=file('videos/episode2-short'+suffix+'.mp4');
+const probe=parse((await run(FP,['-v','error','-count_frames','-show_streams','-show_format','-of','json',np(output)],'final-probe'+suffix+'.json')).stdout);
+const v=probe.streams.find(s=>s.codec_type==='video'),a=probe.streams.find(s=>s.codec_type==='audio');
+if(v?.width!==1080||v?.height!==1920||v?.avg_frame_rate!=='30/1'||+v.nb_read_frames!==825||a?.sample_rate!=='48000'||a?.channels!==2||Math.abs(+probe.format.duration-27.5)>.04)throw Error('Unexpected final AV format/count/duration');
+await run(FF,['-hide_banner','-v','error','-xerror','-i',np(output),'-f','null','-'],'final-full-decode'+suffix+'.json');
+const loud=await run(FF,['-hide_banner','-i',np(output),'-filter_complex','ebur128=peak=true','-f','null','-'],'final-loudness'+suffix+'.json');
+const summary=loud.stderr.slice(loud.stderr.lastIndexOf('Summary:')),integrated=+(summary.match(/I:\s*(-?[\d.]+) LUFS/)||[])[1],peak=+(summary.match(/Peak:\s*(-?[\d.]+) dBFS/)||[])[1];
+if(!Number.isFinite(integrated)||!Number.isFinite(peak)||peak>-.5||integrated< -23||integrated> -13)throw Error('Loudness/peak needs correction');
+const source=path.resolve(file('../media/game/frame-%06d.png'));
+const sim=await run(FF,['-hide_banner','-ss','7.5','-i',np(output),'-framerate','30','-start_number','601','-i',np(source),'-filter_complex','[0:v]trim=end_frame=150,setpts=PTS-STARTPTS,crop=1080:800:0:420,format=yuv444p[o];[1:v]trim=end_frame=150,setpts=PTS-STARTPTS,scale=2400:1350,crop=1080:800:660:515,format=yuv444p[s];[o][s]ssim=shortest=1','-an','-frames:v','150','-f','null','-'],'actual-play-ssim'+suffix+'.json');
+const ssim=+(sim.stderr.match(/All:([\d.]+)/)||[])[1];if(!Number.isFinite(ssim)||ssim<.975)throw Error('Actual zoomed play needs investigation: '+ssim);
+const times=[0,.2,3.7333333,3.7666667,7.4666667,7.5,8.3,8.3666667,8.4333333,9.7,9.7666667,9.8333333,11.5,11.5666667,11.6333333,12.4666667,12.5,13,16.2333333,16.2666667,17,21.2333333,21.2666667,25,27.4666667];
+for(let i=0;i<times.length;i++)await run(FF,['-hide_banner','-v','error','-y','-ss',String(times[i]),'-i',np(output),'-frames:v','1',np(file('qa/final'+suffix+'-'+String(i).padStart(2,'0')+'.png'))],'final-frame'+suffix+'-'+String(i).padStart(2,'0')+'.json');
+save('qa/final-technical'+suffix+'.json',{status:'PASS_TECHNICAL_PENDING_IMAGES_NATIVE_F_REOPEN',platform,videoSha256:await digest(output),coverSha256:await digest(file('covers/episode2-short.png')),frames:+v.nb_read_frames,duration:+probe.format.duration,size:[1080,1920],fps:30,audio:{sampleRate:48000,channels:2,integratedLufs:integrated,truePeakDbtp:peak},fullAvDecode:true,actualPlay:{sourceFrames:[601,751],output:[7.5,12.5],framesCompared:150,sourceScale:1.25,roi:[0,420,1080,800],fullRunSsim:ssim,captionExcluded:true},finalExtractedFrames:times.map((t,i)=>({file:'qa/final'+suffix+'-'+String(i).padStart(2,'0')+'.png',time:t})),wholeDirectVideoWatch:false,wholeDirectSubjectiveListen:false,ownerCreativeAcceptance:false,published:false});
+console.log(JSON.stringify({platform,frames:+v.nb_read_frames,duration:+probe.format.duration,integratedLufs:integrated,truePeak:peak,actualPlaySsim:ssim}));

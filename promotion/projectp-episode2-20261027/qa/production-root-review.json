@@ -1,81 +1,300 @@
 {
-  "schemaVersion": 1,
-  "issue": "Pui-core/-#117",
-  "stage": "段階2 ep2 full 実収録 (Root画像レビュー待ち)",
-  "engine": "claude (Coder1)",
-  "status": "FULL_GAME_CAPTURE_PASS_PENDING_ROOT_VISUAL_REVIEW",
-  "question": "第2話の急な二段の近道、ダッシュで渡れる？",
-  "answer_from_capture": "はい。switch0点灯で実体化する任意2枚の近道(branch0,branch1)を、開始時から有効なdashで実収録。branch0へdash着地、steepな2枚目gap(辺50px/上48px)をdashで越えて通常ルート上段(route[6])へ合流し、同じ次の島route[7]へ。落下0で三灯result到達。",
-  "source": {
-    "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
-    "gameVersion": "0.12.0",
-    "godot": "4.6.3-stable (official)",
-    "core_files_checked": 72,
-    "changed_core": [],
-    "note": "固定archive EMBERWAKE-71584a6.tar.gz 展開。project.godot pristine(444)。ゲームscene/logic未改変。"
+  "schemaVersion": 3,
+  "issue": "https://github.com/Pui-core/-/issues/117",
+  "status": "PRODUCTION_COMPLETE_ROOT_FINAL_SELECTED_IMAGES_ACCEPTED",
+  "createdAt": "2026-10-26T09:39:52.546Z",
+  "engine": "Claude capture/voice/438Core assets, Codex final video/native/delivery/QA",
+  "question": "急な二段の近道は、ダッシュで渡れるのか。",
+  "deliveryRoot": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01",
+  "nativeDependencyAudit": {
+    "file": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/publication/native-dependencies-20261026/append-delivery.json",
+    "sha256": "36fdd731ef700da95f5fb68b61b5339f0cd86951179cd017c8d2b1ca63d2207b",
+    "record": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/publication/native-dependencies-20261026/native-dependencies.json",
+    "recordSha256": "e2ffb0c1566f1bbbf348d87f49c944cdf627fd2de9a444d8d1fc5525f0aa8958"
   },
-  "continuation_save": {
-    "seeded_sha256": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
-    "save_sha256_before_scene": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
-    "profile_completed_before_input": [1],
-    "selected_episode_before_input": 1,
-    "note": "既知112私有saveをbyte一致で専用117 userdataへseed。未知save/上書きは拒否。"
+  "index": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/index.html",
+  "receipt": {
+    "file": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/delivery.json",
+    "sha256": "e04b4277d78a882212676b4cbd93d3ff1c5b3199ca53bd63783fdae88b52e1ce",
+    "fileCount": 2704,
+    "totalBytes": 3768611916
   },
-  "input_method": "Actual focused-GUI + play InputEventKey (TAB/ENTER/A/D/SPACE/X/E) only; no start_game/dialogue advance/progress/player/clock calls or writes. 観測はread-onlyでinput判断のみ。",
-  "ep2_geometry_observed": {
-    "spawn": [95, 1160],
-    "permanent_islands_route_index": [0, 1, 2, 3],
-    "hearths": [[508, 1028], [968, 884], [578, 752]],
-    "switches": [[598, 1028], [1058, 884]],
-    "optional_branch_tiles": [[641, 980, 104, 12], [795, 932, 104, 12]],
-    "normal_powered_group0": [[590, 988], [700, 960], [810, 924]],
-    "merge_island_route7": [920, 884, 160, 20],
-    "note": "branch(2枚,steep)とpowered route(3枚)はisland route[3]→route[7]を共有。branch上段(795,932)は通常route[6](810,924)の直下8pxで、合流帯で重なる。"
-  },
-  "route_taken": "spawn→route0..3(永続島)→hearth0+switch0→dash branch0→dash steep gap→merge(route[6]/branch1収束)→island route[7]→hearth1+switch1→powered group2 route8..11→island route[11]→hearth2→三灯result→title→手帳(2頁)",
-  "final": {
-    "selected_episode": 2,
-    "state_after_notebook": "title",
-    "hearth_lit": [0, 1, 2],
-    "switch_lit": [0, 1],
-    "falls": 0,
-    "dashes_used": 2,
-    "frame_count": 1745,
-    "fps": 30,
-    "render_size": [1920, 1080]
-  },
-  "attempts_preserved": [
-    {"attempt": "ep2full01", "result": "FAIL", "where": "branch-a dash", "cause": "jump early-cut (release at i=1→20px micro-hop)→dashが上昇を潰し落下", "receipt": "/home/pui/tmp/projectp117-capture-20261026/ep2full01/capture.json"},
-    {"attempt": "ep2full02", "result": "FAIL", "where": "branch-b steep gap", "cause": "branch-aはapex timing修正でdash成功。branch-bは収束帯route[6]へ着地したがlanded判定が厳格で未合格", "receipt": "/home/pui/tmp/projectp117-capture-20261026/ep2full02/capture.json"},
-    {"attempt": "ep2full03", "result": "PASS_FULL_CAPTURE_PENDING_ROOT_VISUAL_REVIEW", "where": "完走", "receipt": "/home/pui/tmp/projectp117-capture-20261026/ep2full03/capture.json"}
+  "videos": [
+    {
+      "file": "videos/emberwake-episode2-futari-no-aizu.mp4",
+      "bytes": 17165675,
+      "sha256": "dc31b831b51192d659a57afe3a7c225dec19e27fce05a255de5b7f8df4d56a4a",
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/videos/emberwake-episode2-futari-no-aizu.mp4",
+      "duration": 82.005,
+      "frames": 2460,
+      "size": [
+        1920,
+        1080
+      ],
+      "integratedLufs": -19.2,
+      "truePeakDbtp": -0.9,
+      "wholeVoicePhrases": 13,
+      "maxAacLagSamples": 0
+    },
+    {
+      "file": "short/videos/episode2-short.mp4",
+      "bytes": 5710480,
+      "sha256": "cd818f84da5926eaf33caea0b4155e3e0fdc47c11484f8f90ba7e30789268db2",
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/videos/episode2-short.mp4",
+      "duration": 27.52,
+      "frames": 825,
+      "size": [
+        1080,
+        1920
+      ],
+      "integratedLufs": -19.1,
+      "truePeakDbtp": -1.5,
+      "wholeVoicePhrases": 5,
+      "maxAacLagSamples": 0
+    },
+    {
+      "file": "short/videos/episode2-short-tiktok.mp4",
+      "bytes": 5706797,
+      "sha256": "1735e42ee3200e709315d035f0d07c8a8ff4bb957408edd7781c93e5dcb9d3d2",
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/videos/episode2-short-tiktok.mp4",
+      "duration": 27.52,
+      "frames": 825,
+      "size": [
+        1080,
+        1920
+      ],
+      "integratedLufs": -19.1,
+      "truePeakDbtp": -1.5,
+      "wholeVoicePhrases": 5,
+      "maxAacLagSamples": 0
+    }
   ],
-  "artifacts": {
-    "frames_dir": "/home/pui/tmp/projectp117-capture-20261026/ep2full03/frames (1745 PNG, 1920x1080)",
-    "receipt": "/home/pui/tmp/projectp117-capture-20261026/ep2full03/capture.json",
-    "launch": "/home/pui/tmp/projectp117-capture-20261026/ep2full03-launch.json",
-    "log": "/home/pui/tmp/projectp117-capture-20261026/ep2full03.log",
-    "driver": "/home/pui/tmp/projectp117-capture-20261026/source-117/capture-ep2-full.gd (sha256 5e03b424462d6721497f9d3e7950ff2ee98e4f8c1c9873dd0f6216b0f15652b4)",
-    "runner": "/home/pui/tmp/projectp117-capture-20261026/source-117/run-ep2-full.mjs"
+  "covers": [
+    {
+      "file": "covers/episode2-futari-no-aizu.png",
+      "bytes": 406468,
+      "sha256": "4e295b4276ad1da2925ca469fb45377f9d16cb3d87ad6d81636417e639365205",
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/covers/episode2-futari-no-aizu.png"
+    },
+    {
+      "file": "short/covers/episode2-short.png",
+      "bytes": 347244,
+      "sha256": "d6f50c45088a57997e64a5f306bab873af5a1c254effe4808b40891c7cc9021b",
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/covers/episode2-short.png"
+    }
+  ],
+  "nativeProjects": [
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/projects/episode2-futari-no-aizu.ecproj",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/projects/episode2-futari-no-aizu.fcproj",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/projects/episode2-short.ecproj",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/projects/episode2-short.fcproj",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/projects/episode2-short-tiktok.ecproj",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/projects/episode2-short-tiktok.fcproj"
+  ],
+  "photoCraft": [
+    {
+      "native": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/covers/episode2-futari-no-aizu.pcraft",
+      "reopened": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/projects/episode2-futari-no-aizu-reopened.pcraft",
+      "pixelsIdentical": true
+    },
+    {
+      "native": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/covers/episode2-short.pcraft",
+      "reopened": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/projects/episode2-short-reopened.pcraft",
+      "pixelsIdentical": true
+    }
+  ],
+  "images": {
+    "horizontalOpening": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/final-cold-B.png",
+      "sha256": "d39208eb722b57cf2d89966d30beaf0a8ae9c86559be4e5a0c4dd22e559d8fc7"
+    },
+    "horizontalTitle65": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/final-03.png",
+      "sha256": "b2ba1ac01704e45be945bd1821534d24f5fb450aeea2170a32c05bf7636aa17b"
+    },
+    "horizontalLandingA": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/final-land-A.png",
+      "sha256": "b9ce09ca588263a8fae80d88f5d1809411701023e22218c49c324e2c10548521"
+    },
+    "horizontalLandingB": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/final-land-B.png",
+      "sha256": "3cffdb8b206669bfbada610bc8587c142ce9bfc8bffa0f77beb18c14795c0574"
+    },
+    "horizontalMerge": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/final-merge.png",
+      "sha256": "b892548db590ca0815467e3be5b9c1459b550deb70e74e97b732888cc47fa508"
+    },
+    "horizontalResult": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/final-19.png",
+      "sha256": "f6b9e09dac4ab742467ecc7a5a2334f5cdb264b1f95a61c1d46942c429db4568"
+    },
+    "horizontalCounter": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/final-21.png",
+      "sha256": "bc02db4fc4d868476d88b923400210cde1b787b4d667028ecece05f5b6122b75"
+    },
+    "horizontalJournal": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/final-24.png",
+      "sha256": "4167e69415994aec4fa95ade22ba028afc59ef35bcdc6c6fbd339d668a2501a1"
+    },
+    "horizontalClosing": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/final-30.png",
+      "sha256": "765bc343117bd35bf5365e44cef5e894475dbd7e8bb591ff1fa14dcfc51fd8b6"
+    },
+    "shortOpening": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/final-01.png",
+      "sha256": "e00465c031bb7b14cd7d4a1da9f18db66ac337c0f328add0612d33a94e2b79ae"
+    },
+    "shortBranchA": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/final-07.png",
+      "sha256": "96e96e0467aa196dc71a262a258fed021720d650dce3526ccfc8d29a9e1928ee"
+    },
+    "shortBranchB": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/final-10.png",
+      "sha256": "b0ddb3da7e3a3bf17ab5287f1e719d4b9875285d0d68604c850d814b4ae59ba3"
+    },
+    "shortMerge": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/final-13.png",
+      "sha256": "c5a52e999a86cbb1583c51dd74d21cd5dd8063517eaf2b306fa7a3a17debfc5a"
+    },
+    "shortResult": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/final-20.png",
+      "sha256": "9afe823b8223ab7341f79d93cfbb24a75a8c10d587a09365350c685673ed8ff2"
+    },
+    "shortClosing": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/final-23.png",
+      "sha256": "ba8112de00dc856c98f388ec82ebb9a04ce9936142aba7a72294925489172c48"
+    },
+    "tiktokOpening": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/final-tiktok-01.png",
+      "sha256": "e00465c031bb7b14cd7d4a1da9f18db66ac337c0f328add0612d33a94e2b79ae"
+    },
+    "tiktokClosing": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/final-tiktok-23.png",
+      "sha256": "581f2f26cc58bf7209d98b8ae23fed78307ac0b49ab6e7dd922d0fe170cc5185"
+    },
+    "horizontalCover": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/covers/episode2-futari-no-aizu.png",
+      "sha256": "4e295b4276ad1da2925ca469fb45377f9d16cb3d87ad6d81636417e639365205"
+    },
+    "shortCover": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/covers/episode2-short.png",
+      "sha256": "d6f50c45088a57997e64a5f306bab873af5a1c254effe4808b40891c7cc9021b"
+    },
+    "nativeFHorizontal": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/delivery-horizontal-fc.png",
+      "sha256": "cda1a27d0cdbad37121eec02860be604426e27f84bf6c513ad99a2378cbde6b1"
+    },
+    "nativeFShort": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/delivery-short-youtube-fc.png",
+      "sha256": "e83aa8df5cf676392df11eed4737cfa5a847ff6946f32c1564bc356eb1855198"
+    },
+    "nativeFTiktok": {
+      "path": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/delivery-short-tiktok-fc.png",
+      "sha256": "e83aa8df5cf676392df11eed4737cfa5a847ff6946f32c1564bc356eb1855198"
+    }
   },
-  "review_images": {
-    "title_ep1_cleared": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000030.png",
-    "episode2_selected": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000065.png",
-    "conversation_depart": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000185.png",
-    "play_start": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000210.png",
-    "island3_hearth1": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000485.png",
-    "island3_switch1": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000552.png",
-    "dash_branch_a_fire": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000611.png",
-    "dash_branch_a_land": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000627.png",
-    "dash_branch_b_fire": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000653.png",
-    "dash_branch_b_land_merge": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000667.png",
-    "merge_island7": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000715.png",
-    "three_hearth_result": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-001085.png",
-    "notebook_page1": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-001460.png"
+  "qa": [
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/final-technical.json",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/whole-voice-aac.json",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/critical-visual-binding.json",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/qa/visual-review.json",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/final-technical.json",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/final-technical-tiktok.json",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/whole-voice-aac.json",
+    "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/short/qa/whole-voice-aac-tiktok.json"
+  ],
+  "capture": {
+    "attempt": "ep2full05",
+    "captureReceiptSha256": "14029377d2a5a81c8042a7e12c815c565676ac1a857ff50a6bb82d840071e261",
+    "driverSha256": "fc02714bf7d8b934aec4e2904f24f34a4ffc16dba6b8a7c791ecda98a4dbbed6",
+    "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+    "gameVersion": "0.12.0",
+    "frames": 1754,
+    "fps": 30,
+    "falls": 0,
+    "hearths": [
+      0,
+      1,
+      2
+    ],
+    "switches": [
+      0,
+      1
+    ],
+    "branchA": {
+      "frame": 627,
+      "playerPosition": [
+        716.283020019531,
+        979.925231933594
+      ],
+      "hearths": [
+        0
+      ],
+      "falls": 0
+    },
+    "branchB": {
+      "frame": 669,
+      "playerPosition": [
+        801.399963378906,
+        931.925231933594
+      ],
+      "hearths": [
+        0
+      ],
+      "falls": 0
+    },
+    "merge": {
+      "frame": 723,
+      "playerPosition": [
+        944.003784179688,
+        883.925231933594
+      ],
+      "hearths": [
+        0
+      ],
+      "falls": 0
+    },
+    "titleSelectedEpisode2Frame": 65,
+    "branchBNote": "branches[1] y932 exposed left lip; distinct from route[6] y924",
+    "ordinaryInput": true,
+    "progressOrPhysicsRewritten": false,
+    "rootAcceptedCaptureCase": "https://github.com/Pui-core/-/issues/117#issuecomment-6411697608",
+    "core72Unchanged": "Root accepted full05 launch proof; no new product audit repeated",
+    "seedSha256": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+    "saveSha256After": "cb431591a49c23e157ce213dc5634ad65794d5e9bf3452a3e455245bc5fc9b97",
+    "rawSaveBundled": false,
+    "rawUiOrAuthBundled": false
   },
-  "verified_by_coder": "frame-000611(dash airborne off island3 / »SHIFT/X / 1:2 OUR LITTLE SIGNAL), frame-000715(merge island7 / E◇ interact / 1灯目点灯), frame-001085(1章:2話 完了 / 落下0 / 01:10.50 / 再挑戦・話を選ぶ・次の話へ), frame-001460(手帳1/2 ふたりの合図 / 二度光ったら…) をCoderが実画像で目視。数値検査と区別。",
-  "remaining": [
-    "native横動画(PhotoCraft/EffectCraft/FilmCraft)・対応Short・TikTok版・F納品(ProjectP-Episode2-2026-10-27/revision-01)・最終MP4 QA・公開は未着手。本セッションは実収録(段階2)の完了まで。",
-    "HUD clockはPNG待ち込みでRTA/PB/人間初見の証拠ではない。ゲーム音はDummyで未収録。音楽主題動画は禁止。",
-    "Rootが上記review_images最終を目視し、横動画・Short制作とその後の公開を判断する。"
-  ]
+  "history": {
+    "full01": "fall preserved",
+    "full02": "alternate route6 footing; strict judgement stop, not a fall",
+    "full03": "prior accepted claim of both branches was incorrect; original receipts/PR49 preserved",
+    "full04": "both landings observed but CLI ended at frame910; stale RUNNING receipt retained",
+    "full05": "complete accepted capture1754f"
+  },
+  "resolvedFindings": [
+    "PP117-FOOTING-001: distinct actual A/B landings, driver and receipt SHA preserved",
+    "Shortened quote explicitly marked summary",
+    "Popular track selected flag false; provisional TT audio",
+    "Horizontal opening real live dash, compact overlay, host after4s",
+    "Short/TT opening host removed; full caption readable",
+    "Horizontal intro now actual episode2 selected title frame65"
+  ],
+  "publication": {
+    "published": false,
+    "actualVideoId": null,
+    "relatedVideoId": null,
+    "nativeRelatedConfigured": false,
+    "tiktokStatus": "draft_pending_root_final_audio_selection_and_publication",
+    "popularTrackOrJapanCmlVerified": false,
+    "operator": "Root only"
+  },
+  "wholeDirectVideoWatch": false,
+  "wholeSubjectiveAudioListen": false,
+  "ownerFinalCreativeAcceptance": false,
+  "sharedGuiBrowserRuntimeLeaseOperations": 0,
+  "rootFinalImages": "PASS selected final F images and independent media/cover/receipt/dependency SHA checks; separate from full direct viewing/listening and owner creative adoption",
+  "rootFinalVisualAcceptance": true,
+  "rootFinalAcceptanceCase": "https://github.com/Pui-core/-/issues/117#issuecomment-6412972385",
+  "rootFinalAcceptanceAt": "2026-10-26T09:45:36Z"
 }

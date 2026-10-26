@@ -1,0 +1,89 @@
+{
+  "status": "PASS_F_THREE_VARIANTS_3CRAFT_REOPEN_SAVE_RENDER_MISSING0_ALL_SHA",
+  "destination": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01",
+  "fileCount": 2704,
+  "totalBytes": 3768611916,
+  "nativeProjects": [
+    "projects/episode2-futari-no-aizu.ecproj",
+    "projects/episode2-futari-no-aizu.fcproj",
+    "short/projects/episode2-short.ecproj",
+    "short/projects/episode2-short.fcproj",
+    "short/projects/episode2-short-tiktok.ecproj",
+    "short/projects/episode2-short-tiktok.fcproj"
+  ],
+  "photoCraft": [
+    {
+      "native": "covers/episode2-futari-no-aizu.pcraft",
+      "reopened": "projects/episode2-futari-no-aizu-reopened.pcraft",
+      "pixelsIdentical": true
+    },
+    {
+      "native": "short/covers/episode2-short.pcraft",
+      "reopened": "short/projects/episode2-short-reopened.pcraft",
+      "pixelsIdentical": true
+    }
+  ],
+  "nativeReopenedSavedRendered": true,
+  "missingMedia": 0,
+  "photocraftReopenedPixelsIdentical": true,
+  "outputs": [
+    {
+      "file": "videos/emberwake-episode2-futari-no-aizu.mp4",
+      "bytes": 17165675,
+      "sha256": "dc31b831b51192d659a57afe3a7c225dec19e27fce05a255de5b7f8df4d56a4a"
+    },
+    {
+      "file": "short/videos/episode2-short.mp4",
+      "bytes": 5710480,
+      "sha256": "cd818f84da5926eaf33caea0b4155e3e0fdc47c11484f8f90ba7e30789268db2"
+    },
+    {
+      "file": "short/videos/episode2-short-tiktok.mp4",
+      "bytes": 5706797,
+      "sha256": "1735e42ee3200e709315d035f0d07c8a8ff4bb957408edd7781c93e5dcb9d3d2"
+    },
+    {
+      "file": "covers/episode2-futari-no-aizu.png",
+      "bytes": 406468,
+      "sha256": "4e295b4276ad1da2925ca469fb45377f9d16cb3d87ad6d81636417e639365205"
+    },
+    {
+      "file": "short/covers/episode2-short.png",
+      "bytes": 347244,
+      "sha256": "d6f50c45088a57997e64a5f306bab873af5a1c254effe4808b40891c7cc9021b"
+    }
+  ],
+  "checkedReceipts": [
+    "delivery-horizontal-ec-media.json",
+    "delivery-horizontal-ec-render.json",
+    "delivery-horizontal-fc-media.json",
+    "delivery-horizontal-fc-render.json",
+    "delivery-short-youtube-ec-media.json",
+    "delivery-short-youtube-ec-render.json",
+    "delivery-short-youtube-fc-media.json",
+    "delivery-short-youtube-fc-render.json",
+    "delivery-short-tiktok-ec-media.json",
+    "delivery-short-tiktok-ec-render.json",
+    "delivery-short-tiktok-fc-media.json",
+    "delivery-short-tiktok-fc-render.json",
+    "delivery-horizontal-pc-save.json",
+    "delivery-horizontal-pc-render.json",
+    "delivery-short-pc-save.json",
+    "delivery-short-pc-render.json"
+  ],
+  "wholeDirectVideoWatch": false,
+  "wholeSubjectiveAudioListen": false,
+  "ownerFinalVisualAcceptance": false,
+  "published": false,
+  "relatedVideoId": null,
+  "tiktokPopularTrackSelected": false,
+  "supplementalNativeDependencies": {
+    "file": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/publication/native-dependencies-20261026/append-delivery.json",
+    "sha256": "36fdd731ef700da95f5fb68b61b5339f0cd86951179cd017c8d2b1ca63d2207b",
+    "record": "/mnt/f/Videos/ProjectP-Episode2-2026-10-27/revision-01/publication/native-dependencies-20261026/native-dependencies.json",
+    "recordSha256": "e2ffb0c1566f1bbbf348d87f49c944cdf627fd2de9a444d8d1fc5525f0aa8958"
+  },
+  "deliveryReceiptSha256": "e04b4277d78a882212676b4cbd93d3ff1c5b3199ca53bd63783fdae88b52e1ce",
+  "receiptFile": "qa/delivery.json",
+  "manifestScope": "Final private F receipt covers all included payload files; receipt and ownership marker are excluded from its own file list. Licensed original MOC/atlas/SDK and raw saves are not included."
+}
