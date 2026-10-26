@@ -1,0 +1,340 @@
+{
+  "status": "PASS_SAMPLE_NATIVE_PC_EC_FC_F_REOPEN_SAVE_RENDER_MISSING0",
+  "issue": 129,
+  "destination": "/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02",
+  "sourceRoot": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/production/sample01",
+  "projects": [
+    "projects/truthorlie129-sample75-v02.ecproj",
+    "projects/truthorlie129-sample75-v02-corrected.ecproj",
+    "projects/truthorlie129-sample75-v02-corrected.fcproj"
+  ],
+  "photoCraft": {
+    "native": "covers/editorial-board.pcraft",
+    "reopened": "projects/editorial-board-reopened.pcraft",
+    "samePixels": true,
+    "sha256": "946798760a6959211295c942ad0dd6b7ad2fb93fde866a7c8f20821f539da0ac"
+  },
+  "dependencies": [
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.1.kind.path",
+      "relativeAsset": "media/actual-app-artwork-background.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.2.kind.path",
+      "relativeAsset": "media/editorial-board.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.3.kind.path",
+      "relativeAsset": "media/model-opening.mov",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.4.kind.path",
+      "relativeAsset": "media/round1-neutral-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.5.kind.path",
+      "relativeAsset": "media/round1-hi-cfr.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.6.kind.path",
+      "relativeAsset": "media/round1-result-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.7.kind.path",
+      "relativeAsset": "media/round1-score-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.8.kind.path",
+      "relativeAsset": "media/round2-neutral-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.9.kind.path",
+      "relativeAsset": "media/round2-hi-cfr.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.10.kind.path",
+      "relativeAsset": "media/round2-result-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.11.kind.path",
+      "relativeAsset": "media/round2-score-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.12.kind.path",
+      "relativeAsset": "media/truth1-neutral-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.13.kind.path",
+      "relativeAsset": "media/truth1-hi-cfr.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.14.kind.path",
+      "relativeAsset": "media/truth1-result-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.15.kind.path",
+      "relativeAsset": "media/round1-card1-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.16.kind.path",
+      "relativeAsset": "media/round1-card2-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.17.kind.path",
+      "relativeAsset": "media/round1-card3-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.18.kind.path",
+      "relativeAsset": "media/round1-card4-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02.ecproj",
+      "key": "items.19.kind.path",
+      "relativeAsset": "media/round1-card5-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.1.kind.path",
+      "relativeAsset": "media/round1-selected-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.2.kind.path",
+      "relativeAsset": "media/actual-app-artwork-background.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.3.kind.path",
+      "relativeAsset": "media/editorial-board.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.4.kind.path",
+      "relativeAsset": "media/model-opening.mov",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.5.kind.path",
+      "relativeAsset": "media/round1-neutral-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.6.kind.path",
+      "relativeAsset": "media/round1-hi-cfr.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.7.kind.path",
+      "relativeAsset": "media/round1-result-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.8.kind.path",
+      "relativeAsset": "media/round1-score-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.9.kind.path",
+      "relativeAsset": "media/round2-neutral-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.10.kind.path",
+      "relativeAsset": "media/round2-hi-cfr.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.11.kind.path",
+      "relativeAsset": "media/round2-result-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.12.kind.path",
+      "relativeAsset": "media/round2-score-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.13.kind.path",
+      "relativeAsset": "media/truth1-neutral-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.14.kind.path",
+      "relativeAsset": "media/truth1-hi-cfr.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.15.kind.path",
+      "relativeAsset": "media/truth1-result-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.16.kind.path",
+      "relativeAsset": "media/round1-card1-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.17.kind.path",
+      "relativeAsset": "media/round1-card2-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.18.kind.path",
+      "relativeAsset": "media/round1-card3-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.19.kind.path",
+      "relativeAsset": "media/round1-card4-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "key": "items.20.kind.path",
+      "relativeAsset": "media/round1-card5-hi.png",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.fcproj",
+      "key": "project.items.6.kind.Media.media.File.path",
+      "relativeAsset": "media/truthorlie129-picture-v02.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.fcproj",
+      "key": "project.items.7.kind.Media.media.File.path",
+      "relativeAsset": "media/narration-presented-stem.wav",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.fcproj",
+      "key": "project.items.8.kind.Media.media.File.path",
+      "relativeAsset": "media/background-cipher-stem.wav",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.fcproj",
+      "key": "project.items.9.kind.Media.media.File.path",
+      "relativeAsset": "media/truthorlie129-correction-vote.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/truthorlie129-sample75-v02-corrected.fcproj",
+      "key": "project.items.10.kind.Media.media.File.path",
+      "relativeAsset": "media/truthorlie129-correction-role.mp4",
+      "exists": true
+    }
+  ],
+  "externalActiveMedia": 0,
+  "missingMedia": 0,
+  "transforms": [
+    {
+      "path": "source/composition-sample-v02.jsx",
+      "sourceSha256": "439f022fe545adef089eb9af79bcc409a8aaaf068628e951f9f319bc736dc68a",
+      "deliverySha256": "21bdbe6a12b07a6e98f92e60d38222161413565b496fbc572ce0339872ab62a2",
+      "change": "Only compiled native media path relocation to owned F revision"
+    },
+    {
+      "path": "source/composition-sample-v02-corrected.jsx",
+      "sourceSha256": "4d0cf823b5ae2b52cc750bcc93cb8b9551cc41b99e50f64d0ef8af8fdf0cfe57",
+      "deliverySha256": "aeb2c2d2ae4afa267107b7f1795267852ee1f0eda4172a82f3f9d5238b667a68",
+      "change": "Only compiled native media path relocation to owned F revision"
+    },
+    {
+      "path": "projects/truthorlie129-sample75-v02.ecproj",
+      "sourceSha256": "1a839231ed33444b6c6dabd80d7fcd2db66189f15e2c55cec3365e78f0772899",
+      "deliverySha256": "4a5aebd9d7b7b7ebc22fedf2bd90193b522c3282185d46d1f0109b2dd6dbe9c2",
+      "change": "Media relocation and native reopen/save"
+    },
+    {
+      "path": "projects/truthorlie129-sample75-v02-corrected.ecproj",
+      "sourceSha256": "583536194d540ffbc9d83f485d64b6f755464bd3b5e013d79eae586f9cf88808",
+      "deliverySha256": "64320dd583fe2e3dec35f352c761ab14eacbf3dd99ce886544c48a23ea0638b6",
+      "change": "Media relocation and native reopen/save"
+    },
+    {
+      "path": "projects/truthorlie129-sample75-v02-corrected.fcproj",
+      "sourceSha256": "bd913332868c3a47f992faf94adb533ca7919bd28dc4a0e7cefe0444efca6ef6",
+      "deliverySha256": "ed4b36a7acc40a630cb8bff6c855e6fabc7202a585ad0eba1760a1a482bde47b",
+      "change": "Media relocation and native reopen/save"
+    }
+  ],
+  "checkedReceipts": [
+    "truthorlie129-sample75-v02-media",
+    "truthorlie129-sample75-v02-frame",
+    "truthorlie129-sample75-v02-corrected-media",
+    "truthorlie129-sample75-v02-corrected-frame",
+    "fc-media",
+    "fc-frame",
+    "pc-save",
+    "pc-frame",
+    "pc-info"
+  ],
+  "movie": {
+    "file": "videos/truthorlie129-editorial-sample75-v02-corrected-cipher.mp4",
+    "sha256": "4596b64bb4f0d74715e7181c6bfcf028a834aea5bc90e0dd7e50813baa5b447e",
+    "bytes": 14722805
+  },
+  "notFinal600SecondMaster": true,
+  "contentP1Unresolved": true,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "rootQualityAccepted": false,
+  "published": false,
+  "oldRevision01Changed": false
+}

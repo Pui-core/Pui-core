@@ -1,21 +1,31 @@
-# 嘘か誠か：テンポと構図の改稿サンプル（制作中）
+# 嘘か誠か：テンポと構図の改稿サンプル
 
-ownerが旧708秒本編を遅さ・単調さ・画面構成・BGMで差し戻したため、75秒の実編集サンプルを先行します。600秒以上の正式本編はまだ制作受入しておらず、このサンプルの引延ばしで埋めません。
+ownerによる旧708秒本編の差し戻しに対し、実3Craftで75秒の編集検証サンプルを作成しました。正式な600秒以上の本編、全編の主観視聴/試聴、CTOの創作受入は未達です。Draft/HOLDを維持します。
 
-旧版の冒頭30秒、セットアップ30秒、同じ84秒ラウンド構成を外し、実回答の比較、投票、結果、点数の変化、真実のみの選択を短く配置します。黄金比は注目点と余白のガイドとして使い、固定二分画面や数値だけで美しさを合格にしません。旧121の原本・素材・受入・旧予約票は不変です。
+確認入口は [F revision02のindex.html](/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/index.html)。[修正版MP4](/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/videos/truthorlie129-editorial-sample75-v02-corrected-cipher.mp4) は75.008秒、1920×1080/30fps、H.264/AAC48k stereoです。SHA256は `4596b64bb4f0d74715e7181c6bfcf028a834aea5bc90e0dd7e50813baa5b447e`。
 
-## 確認できた工程
+## 今回の修正と検査
 
-PhotoCraftの編集可能な背景原本/実PNG、EffectCraftの実原本と13プレビュー、新VOICEVOX14句、新しい声のRMSによる指定NaturalのCore360フレームを作成済みです。75秒のEC→FilmCraft実動画を現在書出し中。Rootの創作受入、最終全AV/声頭尾/連続視聴、Fからの原本再読込/描画は未完です。
+原1178×2556 PNG/録画を旧素材票のSHAと照合して再利用しました。大きな回答カードの黒い帯、真実のみの場面の無関係な半切れ、見出しの重なり、回答番号と本文の離れすぎを修正。投票部分は実選択回答→確定操作→結果へ切り替え、長いスクロールを除きました。実収録の速度は1倍で、架空の操作速度や結果は作りません。
 
-BGMはCipher / Kevin MacLeodの公式配布CC BY4.0候補を実取得した別trackで試用。フル帰属文はsource/music-credit.txt、条件はsource/bgm-cipher-license.json。主観試聴/最終採用/投稿時のclaim確認は未実施。旧自作108を新曲の作者と呼び替えません。
+PhotoCraftの編集原本/背景、EffectCraftの基礎75秒と8.8秒の修正区間、FilmCraftのV2修正映像/A1ナレーション/A2 BGMが実在します。F revision02から全3Craftを再読込・保存・描画し、active native参照の欠落0、参照先が新revision内に収まること、87項目の採用サンプルpackageのSHA対応を確認しました。旧v01は履歴として保持します。
 
-## 範囲と保持
+最終MP4の全映像/音声decode、29フレーム抽出、14/14 VOICEVOX句のAAC頭尾の数値照合を通過。最終 -18.0 LUFS / true peak -1.9 dBFS。今回生成した14句の最初の3句のRMSから、指定Revenant_Naturalを正式Coreで360フレーム/12秒描画しました。原モデル/SDK/MOC/atlasは不変・非同梱です。
 
-- 75秒サンプル1920×1080/30fpsを先行。PV5分は比較例で、制作は開始しません。
-- 実次期版1.03(23)の通常UIを自動操作した架空回答の収録から編集。人間の対戦/感情/RTAではありません。
-- 必須でない今回YouTubeのAIタグはOFFの最新方針。VOICEVOX:青山龍星とモデル/曲の必要creditは維持します。
-- source専任writerは共有GUI/browser/SNS/運用runtime/lease操作0。予約停止/公開はRoot単独publisher。
-- F新revision02の専用領域を使用し、旧revision01を変更しません。
+## 必須の残件
 
-Draft/HOLDのまま、まずRootの短い実サンプル判定へ進めます。
+- **PP129-STORY-001 / P1**：架空AA/BBの個人的回答を「どれが嘘」と当てる導入には、観客の判断根拠がありません。今75秒は編集比較だけに限定します。[正式構成案](正式構成案.md) は実ルールの予測→実操作→得点/分岐の検証へ改めます。685秒は計画であり、完成尺ではありません。配点2/連続正解ONの追加通常UI収録は未実施で、135秒を割く案にも密度不足の懸念を残します。
+- **PP129-CROP-002 / P2**：実修正と最終抽出を用意しましたが、CTOの再判定前です。13.5/28/29.3/30.5/41.8/62.4秒が重点です。境界の数値・黄金比の比率だけで美術PASSにしません。
+- **PP129-READ-003**：0.64秒の5回答は雰囲気用。戻り4.8秒＋各2.4秒の滞在を含む連続視聴で、内容が追えるかは未確認です。静止画の可読性だけで解除しません。
+
+## 曲と対象範囲
+
+Cipher / Kevin MacLeodの公式配布CC BY4.0候補を別トラックで試用しています。[帰属文](source/music-credit.txt) と [利用条件](source/bgm-cipher-license.json) を保持し、投稿時は説明欄にも転記します。主観試聴/創作採用/実upload時のclaimは未確認です。提供者のContent ID事前登録を利用者の登録義務と読み違えません。
+
+実次期版1.03(23)、固定製品commit `5b11516bba2be105f44c444eb6352eb757a8abd3` の通常UIを自動操作した架空回答の収録です。人間の対戦/反応/RTAや作者の意図を創作しません。PV5分は比較例で制作未開始。今回YouTubeの任意AIタグはOFF、VOICEVOX:青山龍星とモデル/音源の必要creditは維持します。
+
+共有GUI/browser/SNS/運用runtime/lease操作0。予約停止と公開はRoot単独publisherが扱います。旧121のrevision01・素材・原票は変更していません。製品F checkoutの他担当差分はROのgit showだけで参照し、新しい製品機能を作って尺を埋めません。
+
+## 証跡
+
+[実レンダー](qa/render-sample-v02-corrected-binding.json)、[高解像度素材](qa/high-source-binding.json)、[最終AV](qa/av-sample-v02-corrected-validation.json)、[声の頭尾](qa/voice-aac-edge-v02-corrected-validation.json)、[F再オープン](qa/delivery-sample-v02-corrected.json)、[package SHA](qa/sample-package-manifest.json) を参照してください。ログ上の成功と創作受入を区別します。
