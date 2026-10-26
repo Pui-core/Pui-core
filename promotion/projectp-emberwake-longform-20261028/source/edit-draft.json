@@ -6,10 +6,10 @@
   "fps": 30,
   "width": 1920,
   "height": 1080,
-  "duration": 551.2666666666667,
-  "frames": 16538,
-  "meaningfulUniqueFrames": 16298,
-  "meaningfulUniqueSeconds": 543.2666666666667,
+  "duration": 606.4333333333333,
+  "frames": 18193,
+  "meaningfulUniqueFrames": 17953,
+  "meaningfulUniqueSeconds": 598.4333333333333,
   "closingSeconds": 8,
   "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
   "version": "Production0.12.0 (not verified latest public release)",
@@ -23,7 +23,8 @@
     7,
     8,
     9,
-    10
+    10,
+    11
   ],
   "all15Completed": false,
   "fullEndingIncluded": false,
@@ -651,9 +652,71 @@
     },
     {
       "index": 40,
-      "kind": "author-closing",
+      "episode": 11,
+      "chapter": 4,
+      "kind": "actual-intro",
       "startFrame": 16298,
-      "endFrame": 16538,
+      "endFrame": 16673,
+      "sourceStartFrame": 115,
+      "sourceEndFrame": 490,
+      "sourceFile": "media/ep11-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        115,
+        240,
+        365
+      ]
+    },
+    {
+      "index": 41,
+      "episode": 11,
+      "chapter": 4,
+      "kind": "actual-play",
+      "startFrame": 16673,
+      "endFrame": 17593,
+      "sourceStartFrame": 490,
+      "sourceEndFrame": 1410,
+      "sourceFile": "media/ep11-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 42,
+      "episode": 11,
+      "chapter": 4,
+      "kind": "actual-result",
+      "startFrame": 17593,
+      "endFrame": 17833,
+      "sourceStartFrame": 1410,
+      "sourceEndFrame": 1650,
+      "sourceFile": "media/ep11-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "アッシュ：君の代わりに、この火を鐘楼へ。\nルミ：その燃料は、あなたの中の私なんだよ。\nアッシュ：朝が来たら、空の色を教えてくれ。"
+    },
+    {
+      "index": 43,
+      "episode": 11,
+      "chapter": 4,
+      "kind": "actual-memory",
+      "startFrame": 17833,
+      "endFrame": 17953,
+      "sourceStartFrame": 1780,
+      "sourceEndFrame": 1900,
+      "sourceFile": "media/ep11-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：灰の降る前、ルミと同じ太陽を見上げた日の空。"
+    },
+    {
+      "index": 44,
+      "kind": "author-closing",
+      "startFrame": 17953,
+      "endFrame": 18193,
       "newHostAnimation": true,
       "storyEndingNotClaimed": true
     }
@@ -1023,6 +1086,38 @@
       "playStartFrame": 15037,
       "endFrame": 16298,
       "meaningfulSeconds": 54.53333333333333
+    },
+    {
+      "id": 11,
+      "chapter": 4,
+      "episodeInChapter": 2,
+      "title": "灰の太陽",
+      "rawFrames": 1935,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "568c3cf7dfbce5e9c9e3ecbdf5b62f2070210349a4bf48af544825b438e3d846",
+      "startFrame": 16298,
+      "memory": "灰の降る前、ルミと同じ太陽を見上げた日の空。",
+      "intro": [
+        {
+          "frame": 115,
+          "text": "［記録の空には、灰の向こうに太陽が描かれている］"
+        },
+        {
+          "frame": 240,
+          "text": "ルミ：太陽は、なくなったんじゃない。"
+        },
+        {
+          "frame": 365,
+          "text": "ルミ：この火で道をつなげば、灰の空を開ける。"
+        }
+      ],
+      "resultText": "アッシュ：君の代わりに、この火を鐘楼へ。\nルミ：その燃料は、あなたの中の私なんだよ。\nアッシュ：朝が来たら、空の色を教えてくれ。",
+      "sourceDepartFrame": 490,
+      "sourceResultFrame": 1410,
+      "branch": [],
+      "playStartFrame": 16673,
+      "endFrame": 17953,
+      "meaningfulSeconds": 55.166666666666664
     }
   ],
   "bgm": {
@@ -1051,8 +1146,8 @@
       "endFrame": 14842
     },
     {
-      "startFrame": 16298,
-      "endFrame": 16538
+      "startFrame": 17953,
+      "endFrame": 18193
     }
   ],
   "limits": [

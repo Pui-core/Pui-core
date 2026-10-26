@@ -5,7 +5,7 @@ function add(id,at,end,text,caption,kind='commentary'){at=Math.round(at*30)/30;e
 function ep(id){return edit.episodes.find(e=>e.id===id);}
 function memoryStart(id){return edit.segments.find(s=>s.episode===id&&s.kind==='actual-memory').startFrame/30;}
 const start=id=>ep(id).startFrame/30,play=id=>ep(id).playStartFrame/30;
-add('opening',.1,7.6,'灯をつなぐほど、思い出を失う。自作ゲーム、エンバーウェイクです。','灯をつなぐほど、思い出を失う。\n自作ゲーム EMBERWAKE');
+add('opening',.1,7.6,'助けるために進むほど、思い出を失う。灯の先で、何が残るのでしょうか。','助けるために進むほど、思い出を失う。\n灯の先で、何が残る？');
 add('light-and-dash',play(1)+.25,play(1)+8.0,'まずは三つの灯へ。光を拾うと、ダッシュが使えるようになります。','まずは、三つの灯へ。\n光を集めると、ダッシュが使える。');
 add('first-cost',memoryStart(1),memoryStart(1)+3.8,'失ったのは、公園で過ごした午後。','失ったのは、公園で過ごした午後。');
 const branchA=ep(2).branch.find(b=>b.label==='branch-dash-landed-branch-a');
@@ -16,19 +16,19 @@ const mergeAt=play(2)+(merge.frame-ep(2).sourceDepartFrame)/30;
 add('branch-answer',mergeAt+.15,mergeAt+5.0,'二枚とも着地できました。近道は、同じ島へつながります。','二枚とも着地。\n近道も、同じ島へ。');
 add('way-home-question',play(3)+.5,play(3)+6.5,'帰り道を残しておけば、忘れても帰れるのでしょうか。','帰り道を残せば、\n忘れても帰れる？');
 if(ep(4)){
- add('rain-chapter',start(4)+.2,start(4)+6.0,'公園を抜けて、雨の街へ。ここからは、風も吹いています。','公園から、雨の街へ。\nここからは、風も吹く。');
+ add('rain-chapter',start(4)+.2,start(4)+7.7,'次に消えるのは、出来事だけでしょうか。雨の街で、その違いを見ます。','次に消えるのは、出来事だけ？\n雨の街で、その違いを見る。');
  add('rain-gameplay',play(4)+5.0,play(4)+10.8,'足場の位置と、風向き。踏み出す前に、次の着地点を見ます。','足場の位置と、風向き。\n次の着地点を見る。');
 }
 if(ep(5))add('normal-path-choice',play(5)+1,play(5)+7.8,'近道がある場所も、今回は通常の足場を順にたどります。','近道のある場所も、\n今回は通常ルートで。');
 if(ep(6))add('portrait-cost',memoryStart(6),memoryStart(6)+3.9,'今度は、顔を思い描く記憶まで。','今度は、顔を思い描く記憶まで。');
 if(ep(7)){
- add('blank-page-chapter',start(7)+.2,start(7)+6.0,'三つ目の章へ。公園とは、風向きも、背景も変わりました。','三つ目の章へ。\n風向きも、背景も変わる。');
+ add('blank-page-chapter',start(7)+.2,start(7)+7.7,'手帳に書いておけば、忘れずにいられるのでしょうか。声と、文字の違いを追います。','手帳に書けば、忘れずにいられる？\n声と、文字の違いを追う。');
  add('blank-page-route',play(7)+8,play(7)+14,'同じ三つの灯でも、上る位置は違います。道を見て、一段ずつ。','三つの灯へ。\n上る位置は、それぞれ違う。');
 }
 if(ep(8))add('voice-cost',memoryStart(8),memoryStart(8)+3.9,'声が聞こえても、親しさが遠ざかる。','声が聞こえても、\n親しさが遠ざかる。');
 if(ep(9))add('notebook-evidence',play(9)+4,play(9)+10,'進んだ後に、手帳を開きます。ここでも、失った記憶を確かめられます。','手帳を開いて、\n失った記憶を確かめる。');
 if(ep(10)){
- add('belfry-record-chapter',start(10)+.2,start(10)+6.0,'四つ目の章では、鐘楼の記録が見えてきます。','四つ目の章。\n鐘楼の記録へ。');
+ add('belfry-record-chapter',start(10)+.2,start(10)+7.7,'迎えに行くという約束まで、遠ざかったら。ここで、最初の言葉へ戻ります。','約束まで、遠ざかったら。\n最初の言葉へ、戻る。');
  add('belfry-wind',play(10)+6,play(10)+12,'風のある中段を抜けて、次の灯へ。足場の端を確かめながら進みます。','風のある中段を抜け、次の灯へ。');
 }
 if(ep(11))add('ashen-sun-cost',memoryStart(11),memoryStart(11)+3.9,'同じ太陽を見た空も、記憶の向こうへ。','同じ太陽を見た空も、\n記憶の向こうへ。');

@@ -1,0 +1,20 @@
+{
+  "status": "REQUIRED_FIX_IMPLEMENTED_PENDING_NATIVE_PREVIEW",
+  "issue": 127,
+  "episode": 9,
+  "problem": "Actual original memory label exceeds visible viewport at right edge",
+  "originalGameOrRawChanged": false,
+  "originalObservedText": "失った記憶：ルミと過ごした日々が、いつの出来事だったかという連なり。",
+  "displayLines": [
+    "ルミと過ごした日々が、",
+    "いつの出来事だったかという",
+    "連なり。"
+  ],
+  "nativeEditorialLabel": "手帳の表示テキスト／編集で改行",
+  "originalCaptureInset": true,
+  "sourceDurationFrames": 120,
+  "newDurationFrames": 120,
+  "durationAdded": 0,
+  "otherEpisodes1to11MemoryVisualAudit": "Only episode9 right clipping found;1/2/3/4/5/6/7/8/10/11 results and memory pages readable in bounded native PNG audit",
+  "finalNativePreviewConfirmed": false
+}

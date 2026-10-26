@@ -1,0 +1,161 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "fill": "#07131d",
+      "name": "Dark background"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\cover-game.png",
+      "scale": 135,
+      "fit": false,
+      "center": [
+        1470,
+        735
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        990,
+        1080
+      ],
+      "fill": "#07131d",
+      "name": "Question field"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        70,
+        110,
+        8,
+        350
+      ],
+      "fill": "#edb468",
+      "name": "Warm accent"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 95,
+      "text": "自作ゲーム EMBERWAKE",
+      "font": "Meiryo",
+      "size": 34,
+      "weight": 700,
+      "color": "#aac8bf",
+      "name": "Game context"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 200,
+      "text": "灯をつけると、",
+      "font": "Meiryo",
+      "size": 90,
+      "weight": 700,
+      "color": "#f1dfc0",
+      "name": "Hook"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 340,
+      "text": "思い出が消える。",
+      "font": "Meiryo",
+      "size": 84,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "Question payoff"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 490,
+      "text": "制作版0.12.0の実プレイ",
+      "font": "Meiryo",
+      "size": 36,
+      "weight": 700,
+      "color": "#aac8bf",
+      "name": "Scope"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\natural\\frame-000000.png",
+      "scale": 75,
+      "fit": false,
+      "center": [
+        365,
+        810
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        1000,
+        1920,
+        80
+      ],
+      "fill": "#07131d",
+      "name": "Footer field"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 600,
+      "y": 1020,
+      "text": "約束と、二段の近道。",
+      "font": "Meiryo",
+      "size": 34,
+      "weight": 700,
+      "color": "#f1dfc0",
+      "name": "Viewer promise"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 1440,
+      "y": 1025,
+      "text": "PROJECT P / ぷい",
+      "font": "Meiryo",
+      "size": 28,
+      "color": "#aac8bf",
+      "name": "Author"
+    }
+  ]
+]
