@@ -1,0 +1,24 @@
+{
+  "issue": 124,
+  "type": "immutable acceptance append",
+  "baseReceiptSha256": "4219c946820d0c39a1e6a0984b4de9d7f5aa0775390dbd986d4d70afad29b853",
+  "basePayloadFiles": 277,
+  "baseAndMastersUnchanged": true,
+  "files": [
+    {
+      "file": "acceptance.json",
+      "bytes": 3332,
+      "sha256": "4874445b49752c107aab66d902257aa769e7213ef1cb032030e91b86f258defd"
+    },
+    {
+      "file": "acceptance.md",
+      "bytes": 1828,
+      "sha256": "b6ae4ed5abb0aac7f4c57acf73c1bf539602aa0dbf92f5386ad0a98c6b6de930"
+    },
+    {
+      "file": "current-state.json",
+      "bytes": 2469,
+      "sha256": "679a9ae816bde17053a44196abc37ae6a091e8c941519210ca5cfb464db2ab85"
+    }
+  ]
+}

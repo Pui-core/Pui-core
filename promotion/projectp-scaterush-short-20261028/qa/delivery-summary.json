@@ -1,7 +1,7 @@
 {
   "issue": 124,
   "revision": 2,
-  "state": "PASS_F_TECHNICAL_TIKTOK_MUSIC_ADOPTION_PENDING",
+  "state": "ROOT_FINAL_PRODUCTION_ACCEPTED_ORIGINAL_BGM108",
   "deliveryRoot": "/mnt/f/Videos/ProjectP-ScateRush-Short-2026-10-28/revision-02",
   "receiptSha256": "4219c946820d0c39a1e6a0984b4de9d7f5aa0775390dbd986d4d70afad29b853",
   "fileCount": 277,
@@ -58,9 +58,9 @@
     "externalLinkedAssets": 0
   },
   "coreFrameCount": 405,
-  "tiktokFinalAudioState": "TEMPORARY_BGM108_AWAIT_ROOT_SELECTION",
+  "tiktokFinalAudioState": "ADOPTED_AUTHORIZED_ORIGINAL_BGM108",
   "tiktokPopularTrackSelected": false,
-  "rootFinalVisualAcceptance": false,
+  "rootFinalVisualAcceptance": true,
   "wholeDirectWatch": false,
   "wholeSubjectiveListen": false,
   "published": false,
@@ -75,5 +75,9 @@
       "Remove technical footer"
     ]
   },
-  "rootRequiredFixesImplemented": "qa/first-order-repair.json"
+  "rootRequiredFixesImplemented": "qa/first-order-repair.json",
+  "baseReceiptHistoricalState": "PASS_F_TECHNICAL_TIKTOK_MUSIC_ADOPTION_PENDING",
+  "acceptanceAppend": "acceptance/2026-10-27-original-bgm108",
+  "acceptanceManifestSha256": "ee6f34aa557d15022d5ad3090107cbb91536ad2510e391249a98dbfc13ab33ee",
+  "baseAndMastersUnchanged": true
 }

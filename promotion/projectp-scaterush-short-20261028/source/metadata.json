@@ -64,8 +64,15 @@
       "thirdPartyBrand": false,
       "aigcDisclosureRequired": true,
       "popularTrackSelectedByRoot": false,
-      "track": null,
-      "finalAudioState": "TEMPORARY_BGM108_AWAIT_ROOT_SELECTION",
+      "track": {
+        "kind": "original",
+        "title": "Connecting Lights",
+        "sourceIssue": 108,
+        "sha256": "4d3bdac03c4bbcd89511ea637265bd13d56e0f11f6b702ca4f01b66af49c50df",
+        "tiktokCatalogId": null,
+        "currentJapanRank": null
+      },
+      "finalAudioState": "ADOPTED_AUTHORIZED_ORIGINAL_BGM108",
       "finalPopularTrackAdopted": false,
       "nativeSoundConfigured": false,
       "actualPublishedAt": null,
@@ -75,7 +82,19 @@
         "sha256": "db8f6a472d15f4bd4025f2101ab97b6037f7126f79e342c30ce979ad9b66cf09",
         "purpose": "Root native commercial music adoption preparation; no selection/configuration yet",
         "selectedAsPublicationMaster": false,
-        "backgroundMusic": false
+        "backgroundMusic": false,
+        "publishThisVariant": false
+      },
+      "musicSelectedByRoot": true,
+      "finalOriginalTrackAdopted": true,
+      "rejectedPopularCandidate": {
+        "title": "Fadeaway",
+        "artist": "Official Sound Studio",
+        "officialTrendingObserved": true,
+        "displayedPosts": "3.9M",
+        "commercialPromotionApplicabilityConfirmed": false,
+        "currentJapanRank": null,
+        "used": false
       }
     }
   },
@@ -137,5 +156,12 @@
     "fileCount": 236,
     "preserved": true,
     "whyRejected": "Answer visible before the question audio ended; extra technical footer removed"
+  },
+  "productionState": "ROOT_FINAL_PRODUCTION_ACCEPTED",
+  "rootFinalAcceptance": {
+    "append": "acceptance/2026-10-27-original-bgm108",
+    "sha256": "4874445b49752c107aab66d902257aa769e7213ef1cb032030e91b86f258defd",
+    "rootReviewedSourceHead": "63ee038a9dd6923c9263fcbcf060512070f75134",
+    "requiredFixes": 0
   }
 }
