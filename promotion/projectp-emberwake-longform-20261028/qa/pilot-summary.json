@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "status": "FIRST_CHAPTER_REAL_CAPTURE_COMPLETE_PENDING_ROOT_REVIEW",
+  "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "version": "Production0.12.0",
+  "rawTotalSeconds": 181.36666666666667,
+  "episodes": [
+    {
+      "episode": 1,
+      "attempt": "ep01-pilot01",
+      "rawFrames": 1838,
+      "seconds": 61.266666666666666,
+      "captureReceiptSha256": "be5cfcf548d3c21dd6045ae2e3c067213c733933bb651e8f0f1d9fd3f2fb2521",
+      "launchReceiptSha256": "a2218492b6236960b3f36745f92520dd2c83e936921fe3b017568f5441975a81",
+      "engineExited": true,
+      "coreFilesChecked": 72,
+      "changedCore": [],
+      "completed": [
+        1
+      ],
+      "falls": 0,
+      "intro": [
+        {
+          "frame": 20,
+          "text": "ルミ：アッシュ、覚えてる？ あの日の約束。",
+          "readingFrames": 125
+        },
+        {
+          "frame": 145,
+          "text": "アッシュ：当たり前だろ。絶対迎えに行く。",
+          "readingFrames": 125
+        },
+        {
+          "frame": 270,
+          "text": "［小さな火が、鐘楼の窓へ身を向ける］",
+          "readingFrames": 125
+        }
+      ],
+      "play": {
+        "a": 395,
+        "b": 1373,
+        "seconds": 32.6
+      },
+      "result": {
+        "frame": 1373,
+        "text": "アッシュ：あの公園で、何をしてたんだっけ。\nルミ：……私の名前は、まだわかる？\nアッシュ：ルミ。君だけは、忘れない。"
+      },
+      "memory": {
+        "frame": 1683,
+        "text": "失った記憶：公園でルミと走り回った午後。"
+      },
+      "realLandings": 12,
+      "branchLandings": []
+    },
+    {
+      "episode": 2,
+      "attempt": "ep02-pilot01",
+      "rawFrames": 1832,
+      "seconds": 61.06666666666667,
+      "captureReceiptSha256": "0d16beec275e8a68ede5b19d37cbb18f5e15d0d080c6708aa524967c6442fdc2",
+      "launchReceiptSha256": "dc24cc03d737b5af1da9de19f2a808afd297a67a380e40a4815ae2f740941ded",
+      "engineExited": true,
+      "coreFilesChecked": 72,
+      "changedCore": [],
+      "completed": [
+        1,
+        2
+      ],
+      "falls": 0,
+      "intro": [
+        {
+          "frame": 70,
+          "text": "アッシュ：二度またたく。あいつの返事みたいだ。",
+          "readingFrames": 125
+        },
+        {
+          "frame": 195,
+          "text": "ルミ：昔、暗い道ではそうして呼び合ったね。",
+          "readingFrames": 125
+        },
+        {
+          "frame": 320,
+          "text": "アッシュ：お前も、エンって呼んでいいか。",
+          "readingFrames": 125
+        }
+      ],
+      "play": {
+        "a": 445,
+        "b": 1367,
+        "seconds": 30.733333333333334
+      },
+      "result": {
+        "frame": 1367,
+        "text": "［エンが二度、またたく］\nアッシュ：どうして、ふたつだったんだろう。\nルミ：今は、ここにいるっていう返事でいいよ。"
+      },
+      "memory": {
+        "frame": 1677,
+        "text": "失った記憶：暗い道で二度の灯を交わす合図を決めた夜。"
+      },
+      "realLandings": 11,
+      "branchLandings": [
+        {
+          "frame": 846,
+          "position": [
+            716.283020019531,
+            979.925231933594
+          ],
+          "expected": [
+            641,
+            980,
+            104,
+            12
+          ],
+          "actual": [
+            [
+              641,
+              980,
+              104,
+              12
+            ]
+          ]
+        },
+        {
+          "frame": 888,
+          "position": [
+            801.399963378906,
+            931.925231933594
+          ],
+          "expected": [
+            795,
+            932,
+            104,
+            12
+          ],
+          "actual": [
+            [
+              795,
+              932,
+              104,
+              12
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "episode": 3,
+      "attempt": "ep03-pilot01",
+      "rawFrames": 1771,
+      "seconds": 59.03333333333333,
+      "captureReceiptSha256": "042ca7ca55efd3e8e11f2dca5ccb13e58e376e7caa9a4c09ae3ebf3aff99651a",
+      "launchReceiptSha256": "5c1bde5ecc58bb4b0b6360bd081c90d7cc68991c377547a2a96a21d5be7f1ff9",
+      "engineExited": true,
+      "coreFilesChecked": 72,
+      "changedCore": [],
+      "completed": [
+        1,
+        2,
+        3
+      ],
+      "falls": 0,
+      "intro": [
+        {
+          "frame": 75,
+          "text": "ルミ：窓に灯が戻った。まだ間に合うんだね。",
+          "readingFrames": 125
+        },
+        {
+          "frame": 200,
+          "text": "アッシュ：帰り道も明るくしとく。ふたりで帰るんだ。",
+          "readingFrames": 125
+        }
+      ],
+      "play": {
+        "a": 325,
+        "b": 1306,
+        "seconds": 32.7
+      },
+      "result": {
+        "frame": 1306,
+        "text": "アッシュ：帰る道は書いた。忘れても、たどれる。\nルミ：道だけじゃ、思い出せないものもあるよ。\nアッシュ：それなら、帰ってから教えてくれ。"
+      },
+      "memory": {
+        "frame": 1616,
+        "text": "失った記憶：夕暮れの街をルミと並んで帰った道。"
+      },
+      "realLandings": 12,
+      "branchLandings": []
+    }
+  ],
+  "final600SecondsAchieved": false,
+  "all15Completed": false,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "rootFinalAcceptance": null
+}
