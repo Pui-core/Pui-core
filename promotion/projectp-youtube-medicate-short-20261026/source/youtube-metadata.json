@@ -12,9 +12,16 @@
   "relatedVideo": {
     "managementIssue": 109,
     "required": true,
-    "nativeFeatureConfirmed": false,
+    "nativeFeatureConfirmed": true,
     "videoId": null,
-    "actualLinkConfigured": false
+    "actualLinkConfigured": false,
+    "featureEvidence": {
+      "at": "2026-10-26T03:51:59Z",
+      "reportedBy": "Root singlepublisher",
+      "route": "OwnYouTubeStudio Settings/Channel/FeatureEligibility",
+      "nativeObserved": "Standard/Intermediate/Advanced all enabled",
+      "scope": "Prerequisite met; actualrelatedvideoID/link/publicationstillpending"
+    }
   },
   "publication": {
     "state": "prepared_not_uploaded",
