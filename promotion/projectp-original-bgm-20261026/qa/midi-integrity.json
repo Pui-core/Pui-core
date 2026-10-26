@@ -1,0 +1,65 @@
+{
+  "state": "MIDI_BYTE_PARSE_PASS_NATIVE_AUDIO_PENDING",
+  "at": "2026-10-26T03:36:05.696Z",
+  "outputs": [
+    {
+      "file": "midi/connecting-lights.mid",
+      "format": 1,
+      "tracks": 5,
+      "ppq": 480,
+      "bpm": 96,
+      "seconds": 80,
+      "notes": [
+        {
+          "track": "01 Lantern motif",
+          "count": 110
+        },
+        {
+          "track": "02 Soft chord bed",
+          "count": 156
+        },
+        {
+          "track": "03 Rounded bass",
+          "count": 61
+        },
+        {
+          "track": "04 Light pulse",
+          "count": 303
+        }
+      ],
+      "unmatchedNotes": 0,
+      "programChanges": 0,
+      "externalSysEx": 0
+    },
+    {
+      "file": "midi/connecting-lights-short.mid",
+      "format": 1,
+      "tracks": 5,
+      "ppq": 480,
+      "bpm": 96,
+      "seconds": 20,
+      "notes": [
+        {
+          "track": "01 Lantern motif",
+          "count": 32
+        },
+        {
+          "track": "02 Soft chord bed",
+          "count": 39
+        },
+        {
+          "track": "03 Rounded bass",
+          "count": 18
+        },
+        {
+          "track": "04 Light pulse",
+          "count": 97
+        }
+      ],
+      "unmatchedNotes": 0,
+      "programChanges": 0,
+      "externalSysEx": 0
+    }
+  ],
+  "nativeAudioVerified": false
+}
