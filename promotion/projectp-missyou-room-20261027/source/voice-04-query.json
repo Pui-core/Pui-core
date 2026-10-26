@@ -1,0 +1,131 @@
+{
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "イ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "i",
+          "vowel_length": 0.0919419378042221,
+          "pitch": 4.48140811920166
+        },
+        {
+          "text": "チ",
+          "consonant": "ch",
+          "consonant_length": 0.12874820828437805,
+          "vowel": "i",
+          "vowel_length": 0.03415293246507645,
+          "pitch": 4.686839580535889
+        },
+        {
+          "text": "ド",
+          "consonant": "d",
+          "consonant_length": 0.040720075368881226,
+          "vowel": "o",
+          "vowel_length": 0.20503728091716766,
+          "pitch": 4.513432025909424
+        }
+      ],
+      "accent": 3,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.33713021874427795,
+        "pitch": 0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ア",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "a",
+          "vowel_length": 0.0944351851940155,
+          "pitch": 4.922042369842529
+        },
+        {
+          "text": "プ",
+          "consonant": "p",
+          "consonant_length": 0.0758666843175888,
+          "vowel": "u",
+          "vowel_length": 0.05498962849378586,
+          "pitch": 4.990394115447998
+        },
+        {
+          "text": "リ",
+          "consonant": "r",
+          "consonant_length": 0.021013304591178894,
+          "vowel": "i",
+          "vowel_length": 0.06454278528690338,
+          "pitch": 4.712467193603516
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "o",
+          "vowel_length": 0.10000958293676376,
+          "pitch": 4.431869029998779
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "シュ",
+          "consonant": "sh",
+          "consonant_length": 0.12945254147052765,
+          "vowel": "u",
+          "vowel_length": 0.05934208631515503,
+          "pitch": 4.524624347686768
+        },
+        {
+          "text": "ウ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "u",
+          "vowel_length": 0.06741544604301453,
+          "pitch": 4.539579391479492
+        },
+        {
+          "text": "リョ",
+          "consonant": "ry",
+          "consonant_length": 0.034984976053237915,
+          "vowel": "o",
+          "vowel_length": 0.1132638081908226,
+          "pitch": 4.409862995147705
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "o",
+          "vowel_length": 0.1226334273815155,
+          "pitch": 4.337357521057129
+        }
+      ],
+      "accent": 4,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ],
+  "speedScale": 1.06,
+  "pitchScale": 0,
+  "intonationScale": 1.04,
+  "volumeScale": 1,
+  "prePhonemeLength": 0.045,
+  "postPhonemeLength": 0.15,
+  "pauseLength": null,
+  "pauseLengthScale": 1,
+  "outputSamplingRate": 48000,
+  "outputStereo": true,
+  "kana": "イチド'、ア'プリオ/シュウリョオ'"
+}

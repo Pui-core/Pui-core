@@ -1,0 +1,52 @@
+{
+  "issue": "Pui-core/-#118",
+  "title": "missyou『飾った日記は、アプリを閉じても残る？』実操作Short",
+  "status": "開発中・オフライン検証データ（TestFlight実配布/本番通信/APNs未証明）",
+  "producedUtc": "2026-10-26",
+  "pipeline": {
+    "capture": "Mac headless Simulator (own new UDID) + xcrun simctl recordVideo + xcodebuild test-without-building testA",
+    "normalize": "ffmpeg 8.0.1 -> CFR 1080x1920 30fps (VFR source made input/output seek disagree; normalized once for consistent cuts)",
+    "titles_subtitles_camera": "EffectCraft (JSX object model): footage push-in + motion blur + 教科書体(UD Digi Kyokasho NP) subtitles + persistent 開発中 ribbon + CTA",
+    "assembly": "FilmCraft (JSONL): visual master V1 + narration A2 + self-made BGM bed A3 (ducked) -> h264/AAC export",
+    "narration": "VOICEVOX 0.25.1 speaker13 青山龍星 (ノーマル)",
+    "bgm": "ProjectP self-made『灯りがつながる / connecting-lights』PR32 merged, delivered as game/app video background material"
+  },
+  "finalVideos": {
+    "youtube_short": {"file": "media/missyou118-short.mp4", "sha256": "4e9dc23f23bcf720f6faa491fc0c884c38982c9132d99375798efdd2f6b4f2c8",
+      "container": "h264 1080x1920 30fps + aac 48k stereo", "duration_s": 30.016, "bitrate_kbps": 12247,
+      "integrated_lufs": -14.4, "true_peak_dbfs": -1.5, "lra": 3.6, "fullDecode": "ok (ffmpeg -f null, no errors)"},
+    "tiktok_followcta": {"file": "media/missyou118-short-tt.mp4", "sha256": "26e99f24e18fd9ee17c1d4e83386be5051275e70d917793dc82edb76823e247d",
+      "container": "h264 1080x1920 30fps + aac 48k stereo", "duration_s": 30.016,
+      "integrated_lufs": -14.4, "true_peak_dbfs": -1.5, "fullDecode": "ok"}
+  },
+  "editingOriginals": {
+    "effectcraft": ["projects/missyou118-visual.ecproj (sha 766b63207a422a73732d6298e2adaf8c77152973151aa7796dc3509be95f783f)",
+                    "projects/missyou118-visual-tt.ecproj (sha b3eeb93be1d024de66aaf4ef27f64aa6ff4ab1c4f4b445943ec7f982ae3eac71)"],
+    "filmcraft": ["projects/missyou118-final.fcproj (sha 134315ae2b8c9716769cb1f09b5cf347b3ff6b8e125fcac7b792e0063011782e)",
+                  "projects/missyou118-final-tt.fcproj (sha 67066c1ba0f03a3724417ff6d512139e0f802d84d58f089d072634f691101da7)"],
+    "intermediateVisualMasters": ["media/visual-master.mp4 (4d0b8cb510e093335383a80809ea0a71db56a835f1c4b30e86d5d8361a7b2d6f)",
+                                  "media/visual-master-tt.mp4 (55b4bb1c068bf5aa473f3ff991882e4a77ee4330b4e107cafb95747046378754)"]
+  },
+  "audioBalance": {
+    "narration_window_0.4_3.0s_meanDb": -15.4, "narration_window_maxDb": -1.9,
+    "bgm_only_gap_4.6_5.4s_meanDb": -20.7, "note": "narration sits ~5dB above the ducked self-made BGM bed"
+  },
+  "checksPerformed": [
+    "全MP4 full decode (video+audio) エラー0",
+    "形式・尺・fps・解像度・音声codec 確認",
+    "EBU R128 integrated/true-peak/LRA 測定",
+    "ナレーション有声区間とBGM単独区間の相対音量で、声がBGM上に出ていることを数値確認",
+    "7キューの代表フレームを抽出し、字幕の可読性と額/花/日記の非被覆を目視",
+    "重要遷移（額0->1、花0->1、終了→再起動→保存復帰、日記の額『飾っています』）を実キャプチャの連続フレームで確認",
+    "FilmCraft export の offlineMedia=[]（素材欠損0）"
+  ],
+  "notVerified": [
+    "動画全編の実時間の直接視聴・試聴（未実施。数値検査と抽出フレーム目視のみ）",
+    "TestFlight実配布/本番2端末通信/APNs（製品側で未証明。本動画は開発中オフライン検証データとして明示）",
+    "ownerの創作採用・公開後反応（Root判断・未実施）"
+  ],
+  "limitations": [
+    "Live2Dアバターの口パク/表情オーバーレイは未収録（下記 avatar-status.md）。本Shortは実キャプチャ＋ナレーション＋字幕＋自作BGMで構成。",
+    "筆文字専用フォントが環境に無いため、タイトル/字幕は教科書体(UD Digi Kyokasho)を使用（brush/筆書体とは明記しない）。"
+  ]
+}
