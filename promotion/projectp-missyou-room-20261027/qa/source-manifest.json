@@ -1,0 +1,41 @@
+{
+  "captureDevice": {
+    "udid": "A43BF365-FFAF-40D6-BDB9-05FAC4F5A805",
+    "name": "ProjectP118-Missyou-Room",
+    "model": "iPhone SE (3rd generation)",
+    "os": "iOS 17.2 (21C62) Simulator",
+    "note": "前writerが作成した専有の新UDIDを継承。既QA/CI/owner端末(90CB../D476../CI985..)は一切操作せず。収録後は本UDIDのみ安全shutdownして保持。"
+  },
+  "privatePrefix": "/Users/pui-mac-core/codex-install/projectp118-missyou-room-20261027 (mode 700)",
+  "productsSource": "/Users/pui-mac-core/codex-install/missyou-170-dd/Build/Products (byte/SHA一致コピー; products-after-check OK=不変)",
+  "bundle": "com.pui-core.missyou.qa170.offline",
+  "test": {
+    "runner": "xcodebuild test-without-building -only-testing:MissYou170UITests/RoomQAUITests/testA_StampOnlyOpenDecorateAndRestart",
+    "result": {"passed": 1, "failed": 0, "skipped": 0, "expectedFailures": 0},
+    "flow": "launch(new) -> daily.action -> stamp.thanks(ありがとう) -> entry.seal -> page.open -> LETTER_FROM_FIRST -> room.keep.frame(額0->1) -> room.keep.flower(花0->1) -> telemetry[frame=2026-10-26;flowers=1;submitted=1;network=0] -> terminate -> launch(new, reset:false) -> room.frame persists(flowers=1) -> room.saved.open.2026-10-26 -> LETTER_FROM_FIRST 再表示",
+    "offlineEvidence": "testA telemetry network=0 / submitted=1 をアプリ内マイページで実収録。配信・実通信・実際の受信ではない。"
+  },
+  "capturedSource": {
+    "file": "normal-taps.mov (Mac private prefix, byte-exact pulled to Linux private /home/pui/tmp/projectp118-capture-20261026/)",
+    "sha256": "5fbb93a291836c55b8fb7ab164c81e4b9797fa7ede7cbbba4aee3f32b856d830",
+    "spec": "h264 750x1334 VFR ~118.7s (recordVideo). git/public には入れずprivate保持。"
+  },
+  "pilot": {"png_sha256": "af4708a58bcd27fff32bd9cb5e3e8f48467a7bbba3f3b09bd65455b4dc44d75d", "status": "前段でRoot目視合格済み（部屋・空の額/花瓶・未読1）"},
+  "recorderSafety": "mac-record.sh に HUP/TERM/INT/EXIT で自分のrecorder(PID+recordVideo+own UDID+own mov path を検証)だけ SIGINT finalize する trap を追加。他recorderへ signal しない。",
+  "segmentMap": {
+    "normalizedMaster": "CFR 1080x1920 30fps 変換後の実時間で裁断",
+    "seg1": "empty room (未読1) src 58.0s +5.6",
+    "seg2": "日記を開く→額に飾る src 94.0 +4.4",
+    "seg3": "額に飾りました→花にする src 95.5 +4.0",
+    "seg4": "飾られた部屋→終了 src 98.0 +4.0",
+    "seg5": "再起動/復帰 src 104.0 +4.0",
+    "seg6": "保存された部屋(persisted) src 106.5 +4.0",
+    "seg7": "日記の額『飾っています・この端末に保存されます』+再表示 src 109.0 +3.6 (+0.4 freeze)"
+  },
+  "bgmSource": {
+    "title": "灯りがつながる / connecting-lights (ProjectP自作, PR32 merged)",
+    "master_sha256": "4d3bdac03c4bbcd89511ea637265bd13d56e0f11f6b702ca4f01b66af49c50df",
+    "bed_30s_faded_sha256": "267f4a975b4842f6643e54b738ac4a9fe6e0f36a5881c69f6dc44a38c310df8c",
+    "note": "自作630音・外部sample/loop/VST0。実ゲーム・アプリ動画の背景素材として引渡済みの承認範囲で使用。YouTube版はこの自作BGM。TikTok版も当面この自作BGMを仮音源として使用し、TT人気曲/日本CMLの採用はRoot未選定（選定済みにしない）。"
+  }
+}

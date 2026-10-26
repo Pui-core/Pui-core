@@ -1,0 +1,259 @@
+{
+  "delivery": "F:\\Videos\\ProjectP-Missyou-Room-2026-10-27\\revision-01",
+  "issue": "Pui-core/-#118",
+  "producedUtc": "2026-10-26T10:07:25Z",
+  "fileCount": 61,
+  "totalBytes": 247995960,
+  "notes": [
+    "開発中・オフライン検証データ。配信/実通信/APNs未証明。",
+    "native/ のEC・FC編集原本はF-local(materials/)参照でF-portable。Fから再open: EC描画OK / FC missingMedia=0 を確認。",
+    "Live2Dアバター口パクは未同梱(qa/avatar-status.md)。TikTok版BGMは自作『灯りがつながる』の仮音源でTT楽曲はRoot未選定。",
+    "前writerのsource/・media/（F既存）は保全（上書きなし）。"
+  ],
+  "files": {
+    "index.html": {
+      "sha256": "f0bda70e8a90ae1698eaeb8562baf13b0d5e3a7cbc967079bcf96bf7f19c5619",
+      "bytes": 1673
+    },
+    "README.md": {
+      "sha256": "77fcbed2069cbcfbc0472ce32c7054f399563fed17f68b39a98a145ccd29f15c",
+      "bytes": 3108
+    },
+    "cover/cover.png": {
+      "sha256": "a9d0ca33ae2c1d620d98cb2925703d33d2704006ea48a41f19eb92516af3f5dd",
+      "bytes": 571744
+    },
+    "materials/bgm-bed.wav": {
+      "sha256": "267f4a975b4842f6643e54b738ac4a9fe6e0f36a5881c69f6dc44a38c310df8c",
+      "bytes": 8640102
+    },
+    "materials/visual-master-tt.mp4": {
+      "sha256": "55b4bb1c068bf5aa473f3ff991882e4a77ee4330b4e107cafb95747046378754",
+      "bytes": 55877509
+    },
+    "materials/visual-master.mp4": {
+      "sha256": "4d0b8cb510e093335383a80809ea0a71db56a835f1c4b30e86d5d8361a7b2d6f",
+      "bytes": 55871349
+    },
+    "materials/voice-01.wav": {
+      "sha256": "556f02ae1be6931d5fed24f44d6031cd365ccdbe8b3edc46900dac7009b7cd82",
+      "bytes": 548908
+    },
+    "materials/voice-02.wav": {
+      "sha256": "2f64e345d8a4b44587da6ccbe3d995b09e28414054c6ddec79a2ac39c7ceb3f8",
+      "bytes": 460844
+    },
+    "materials/voice-03.wav": {
+      "sha256": "3dfc3a19f8797a3084a9325b533283ab74371dc6e3065d4a9d79de946023c7aa",
+      "bytes": 415788
+    },
+    "materials/voice-04.wav": {
+      "sha256": "2a5b6e48abc321f012958e40ece64b4f4ce54d72ceba571cc38fa5dc2b82826e",
+      "bytes": 356396
+    },
+    "materials/voice-05.wav": {
+      "sha256": "73788729a85c31408f4686961d65327fe51a088f56c3e20969a7351b52b6edb5",
+      "bytes": 509996
+    },
+    "materials/voice-06.wav": {
+      "sha256": "753eb00895c140403650c716d22434d2e91a89f0198717ca02b1b33bd7101195",
+      "bytes": 454700
+    },
+    "materials/voice-07.wav": {
+      "sha256": "9e56bdb78c2e4d8966b740abfc1515d365291b8436844ef0304f5a6f1482e619",
+      "bytes": 430124
+    },
+    "materials/segments/seg1.mp4": {
+      "sha256": "1cbabd434600b203360c3642a0e4017600a5a3dc35e4464664a5281cc64bf4a7",
+      "bytes": 111187
+    },
+    "materials/segments/seg2.mp4": {
+      "sha256": "850fe5210f85308976a505c5c94d7f2130110be35fbc8b34396342707c67db4a",
+      "bytes": 453897
+    },
+    "materials/segments/seg3.mp4": {
+      "sha256": "0d91483db934e45c5d60175535ecb8c98a1891ff0a11fcc9207ebb0f16166909",
+      "bytes": 435886
+    },
+    "materials/segments/seg4.mp4": {
+      "sha256": "92d5a938d2de72dd6181e6831badeb705a30731183a3b340ea3ca58a41621796",
+      "bytes": 772401
+    },
+    "materials/segments/seg5.mp4": {
+      "sha256": "376ed6c78c086a2e1e8d3c0a9be25470c518cf371edfacbf29c88da5b3838c9f",
+      "bytes": 258945
+    },
+    "materials/segments/seg6.mp4": {
+      "sha256": "d0a9085dc1227221c206da8af3e96379e5184638c25b32cf04a98bb99c194dc9",
+      "bytes": 393627
+    },
+    "materials/segments/seg7.mp4": {
+      "sha256": "bdf3b7e288b8a33c7bb1c4d5fd2f987669046da2fd2d145ca950e0bee3eef625",
+      "bytes": 662421
+    },
+    "media/connecting-lights-master.wav": {
+      "sha256": "4d3bdac03c4bbcd89511ea637265bd13d56e0f11f6b702ca4f01b66af49c50df",
+      "bytes": 23616104
+    },
+    "media/voice-01.wav": {
+      "sha256": "556f02ae1be6931d5fed24f44d6031cd365ccdbe8b3edc46900dac7009b7cd82",
+      "bytes": 548908
+    },
+    "media/voice-02.wav": {
+      "sha256": "2f64e345d8a4b44587da6ccbe3d995b09e28414054c6ddec79a2ac39c7ceb3f8",
+      "bytes": 460844
+    },
+    "media/voice-03.wav": {
+      "sha256": "3dfc3a19f8797a3084a9325b533283ab74371dc6e3065d4a9d79de946023c7aa",
+      "bytes": 415788
+    },
+    "media/voice-04.wav": {
+      "sha256": "2a5b6e48abc321f012958e40ece64b4f4ce54d72ceba571cc38fa5dc2b82826e",
+      "bytes": 356396
+    },
+    "media/voice-05.wav": {
+      "sha256": "73788729a85c31408f4686961d65327fe51a088f56c3e20969a7351b52b6edb5",
+      "bytes": 509996
+    },
+    "media/voice-06.wav": {
+      "sha256": "753eb00895c140403650c716d22434d2e91a89f0198717ca02b1b33bd7101195",
+      "bytes": 454700
+    },
+    "media/voice-07.wav": {
+      "sha256": "9e56bdb78c2e4d8966b740abfc1515d365291b8436844ef0304f5a6f1482e619",
+      "bytes": 430124
+    },
+    "metadata/tiktok.md": {
+      "sha256": "63fc26de2e717f775a4fcae67bef1410c1bbca6e1e64124848002ad1820a70c7",
+      "bytes": 1307
+    },
+    "metadata/youtube.md": {
+      "sha256": "0cb12deb80ae0e9efb72603f29122a89ca4c6a3aad02a822e20e5847bc0f47de",
+      "bytes": 1534
+    },
+    "native/build-visual-tt.jsx": {
+      "sha256": "77b6c230d7ff204462fd21421874336f29fab6cb0d295f8212b64de725e092a7",
+      "bytes": 5016
+    },
+    "native/build-visual.jsx": {
+      "sha256": "19b4299295d7d34e8a4e6f331f6ad02a6587579e39c883f330b2cddfe1b251b6",
+      "bytes": 4997
+    },
+    "native/missyou118-final-tt.fcproj": {
+      "sha256": "aa8b2af238471ed13736570cb0c2c0ea3baf283be686d0d4b34da81e3ba7794b",
+      "bytes": 14662
+    },
+    "native/missyou118-final.fcproj": {
+      "sha256": "6e87b1c844bcb3233706d64ca80810435bb0baeccf0b4aebb5e40ab4ef9409ac",
+      "bytes": 14644
+    },
+    "native/missyou118-visual-tt.ecproj": {
+      "sha256": "036daffceac27b983d988427b206f35dd2cd1bfd93a4d9414a3b4482e8ea09f5",
+      "bytes": 643836
+    },
+    "native/missyou118-visual.ecproj": {
+      "sha256": "d2b5de50858fb104dd87a4c1ec952d62086aa17762ceab21bc868bbf449d9a25",
+      "bytes": 643792
+    },
+    "native/native.mjs": {
+      "sha256": "38f9d8146fc4070736478a4442486c7eb452c394496778e99dcd6bad65a09acd",
+      "bytes": 2169
+    },
+    "native/voice.mjs": {
+      "sha256": "6b74407bfa98eecf9c55d529c078db99a9982bf332dcde819d546e4b9775d72e",
+      "bytes": 2100
+    },
+    "qa/avatar-status.md": {
+      "sha256": "228266d941dbbcb3773bcbed93999be5509f1833ddc7a55822b4588655b3075a",
+      "bytes": 2640
+    },
+    "qa/frames-final.png": {
+      "sha256": "52b5a8ac7dc8ffc20d16af50eef6561498622f777768264398d1b2d64d879e37",
+      "bytes": 405145
+    },
+    "qa/frames-segments.png": {
+      "sha256": "4ec6f5b436d3138343c0703e32c939508c5c2aa597c880eefd5025e1380a2f02",
+      "bytes": 263464
+    },
+    "qa/narration.json": {
+      "sha256": "762e7b917c279b2e38d124400459e0192257b5f6a9598ddb02eba24c31cabd3c",
+      "bytes": 2359
+    },
+    "qa/source-manifest.json": {
+      "sha256": "8bd77f1006bcef9a31fe05207260b4bcf810dc8ea8ecd50dc48e69c3d4255479",
+      "bytes": 3380
+    },
+    "qa/technical.json": {
+      "sha256": "338fc20e5d2d25d5c179a6d52b3c439b8c0801dd9e3c1dcfa78a447315f12855",
+      "bytes": 4161
+    },
+    "source/AlphaBounds.java": {
+      "sha256": "b1cf142ff08b4d759e793163986677b317fb20c7f6abb37147a0a5c3fd0f35cf",
+      "bytes": 1872
+    },
+    "source/AvatarCore.java": {
+      "sha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+      "bytes": 9114
+    },
+    "source/live2d-renderer-LICENSE.txt": {
+      "sha256": "1108d5e6bbe9a2573e7fde064a7c08fed5ba6b49909488e9126341715a741a4b",
+      "bytes": 1065
+    },
+    "source/mac-pilot.sh": {
+      "sha256": "10085257ac751860b91df35018082acc01f05be46b4d0e7bffa0434e3526505f",
+      "bytes": 2936
+    },
+    "source/mac-record.sh": {
+      "sha256": "d40a4a0cf67578fcbe73f2e8d25b9ee21c3d479c91154092c7bdf9b55bba09de",
+      "bytes": 2380
+    },
+    "source/narration-cues.json": {
+      "sha256": "29108082f921879174610d507c5bdb875270b528e92066e37e8e2acd4437c37e",
+      "bytes": 685
+    },
+    "source/native.mjs": {
+      "sha256": "38f9d8146fc4070736478a4442486c7eb452c394496778e99dcd6bad65a09acd",
+      "bytes": 2169
+    },
+    "source/voice-01-query.json": {
+      "sha256": "14d4f14ea37c71a2b7ca6797dcba2364939dde131f07906d333cbced3d4f6d44",
+      "bytes": 5458
+    },
+    "source/voice-02-query.json": {
+      "sha256": "bb7a34cefc0a44c24920e1da1f2a53703e2063a4f73fd4b11e7d78e809668985",
+      "bytes": 4397
+    },
+    "source/voice-03-query.json": {
+      "sha256": "82234624cc9c09983316be79fdbe374fc301f2decc60996ba5c9b023f205a405",
+      "bytes": 4095
+    },
+    "source/voice-04-query.json": {
+      "sha256": "e8837b1e58554cb66a32961679d331ee365f87be500354abe7e31704f1ef172e",
+      "bytes": 3359
+    },
+    "source/voice-05-query.json": {
+      "sha256": "16342979925e81e7093452662093422444737f52363e09ac3ad021b120be2ed3",
+      "bytes": 5455
+    },
+    "source/voice-06-query.json": {
+      "sha256": "61937d99e0c61f7ecbec4226a73772bbf96f303ff8885f083c947fc874259d58",
+      "bytes": 4599
+    },
+    "source/voice-07-query.json": {
+      "sha256": "348ab6c952e3d9b631c3dcf2061e01cd914330eaf09f04f65762581c49e76aad",
+      "bytes": 4461
+    },
+    "source/voice.mjs": {
+      "sha256": "6b74407bfa98eecf9c55d529c078db99a9982bf332dcde819d546e4b9775d72e",
+      "bytes": 2100
+    },
+    "video/missyou118-short-tt.mp4": {
+      "sha256": "26e99f24e18fd9ee17c1d4e83386be5051275e70d917793dc82edb76823e247d",
+      "bytes": 45953950
+    },
+    "video/missyou118-short.mp4": {
+      "sha256": "4e9dc23f23bcf720f6faa491fc0c884c38982c9132d99375798efdd2f6b4f2c8",
+      "bytes": 45949194
+    }
+  }
+}
