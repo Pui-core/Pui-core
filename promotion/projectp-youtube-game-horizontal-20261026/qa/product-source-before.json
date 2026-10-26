@@ -1,0 +1,296 @@
+{
+  "repo": "https://github.com/Pui-core/EMBERWAKE",
+  "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "archiveSha256": "ddeee67721a14ac68ba42161e2e6a7fa5756c587ecb2898bf17d1c6c4a0d6870",
+  "files": [
+    {
+      "file": "project.godot",
+      "sha256": "a7f94835966c3bca4616a0c4d21c8d4299cd4235ad66cef5fd9554342426e2ba"
+    },
+    {
+      "file": "scenes/campaign.tscn",
+      "sha256": "6285d2b8937c222884d0d0df50d0f7cd903fc35da3c22122c5ef3ff7a34ab715"
+    },
+    {
+      "file": "scenes/campaign_demo.tscn",
+      "sha256": "8063d5d80bdf83fff533e305811278782eb270d2ba2a45b6a54969d1bfef561e"
+    },
+    {
+      "file": "scenes/main.tscn",
+      "sha256": "0361085afec6ce6c522d20ac8202f7545c5de7d24fd943c2d4cdfbea7f85e569"
+    },
+    {
+      "file": "scripts/audio.gd",
+      "sha256": "7f1709c5efc94292f3994c6318e6bdcf1553476cbe913285db21c24b8abbe34e"
+    },
+    {
+      "file": "scripts/campaign/catalog.gd",
+      "sha256": "ccd0d6de1cb99a70a955788ad1082deff7a24c15c3e3fad7825c8416975df0b2"
+    },
+    {
+      "file": "scripts/campaign/demo.gd",
+      "sha256": "1d0142117295b240d9621f80b565740cacfa977862342a3916f3914b4ebef2f8"
+    },
+    {
+      "file": "scripts/campaign/main.gd",
+      "sha256": "19300755d729e5509b8f99ffd4cc0134d0e18d2a25a5236b597ff23c724f0eee"
+    },
+    {
+      "file": "scripts/campaign/reunion.gd",
+      "sha256": "6d7f412fe9ae09cbbd8b0bd3113fce8e7794eeda9822dcc16182ac71f89c2040"
+    },
+    {
+      "file": "scripts/campaign/save.gd",
+      "sha256": "05bf884226e4d2c51a4b36b5e52b7f43cf47d74cce87696d0638ed92d3e7c70d"
+    },
+    {
+      "file": "scripts/campaign/story.json",
+      "sha256": "43f87eaedd0a918034d2ba939c85e0b7ba9a582c05746d59307887bb876e3b71"
+    },
+    {
+      "file": "scripts/campaign/world.gd",
+      "sha256": "dabae63e5a093f8c7d1beee40d94318d74c8563ad47d24ef1970ef6c88c5ca83"
+    },
+    {
+      "file": "scripts/episode_catalog.gd",
+      "sha256": "33e64f654f668b266201ca204fed2e10d7c03d52cd14cceb33caade4cf52bff6"
+    },
+    {
+      "file": "scripts/hud.gd",
+      "sha256": "44a7e681a0169a3ef1aab66cef23ddd994aa5ab94d254d66c6025534558d76a9"
+    },
+    {
+      "file": "scripts/input_hints.gd",
+      "sha256": "f0182efc0bba23dca4f86ad0088d7a6a1324d404e500d2e1042df3e67639b503"
+    },
+    {
+      "file": "scripts/journey_cores.gd",
+      "sha256": "84169290ed0de19415d81d1477d1dc237afa4087b2d95da3d1ca7688a6382293"
+    },
+    {
+      "file": "scripts/main.gd",
+      "sha256": "6da484803809dabdd77e78f652a46636658c9501713fa2c7d9c88ef910bc099d"
+    },
+    {
+      "file": "scripts/orientation_hint.gd",
+      "sha256": "1d1b67d4295eaf7f71cb5f822f6d479848cbfea1d411c25ecf1ab907fca9207e"
+    },
+    {
+      "file": "scripts/player.gd",
+      "sha256": "4dcc38dbc8c35586411c3d042dfb7c07100a0aec1ead48a1dabac6f64477f7fb"
+    },
+    {
+      "file": "scripts/portable_cores.gd",
+      "sha256": "dcfd7c55a5d6516ff94e0eebc3a804dc665c6d0c665bb68db0c047577dbf1c00"
+    },
+    {
+      "file": "scripts/promotion/capture_game.gd",
+      "sha256": "ade8deb7f13d1058bd0dfa2cbcfa91383c9eb3ee4b4c3f41136626ff4633f2c9"
+    },
+    {
+      "file": "scripts/promotion/projectp-demo/capture_projectp.gd",
+      "sha256": "83ff3350f4ac6c87b25c4ff5488dde37fc718991fcd2c15b9261d0ccd16ea7d4"
+    },
+    {
+      "file": "scripts/run_state.gd",
+      "sha256": "cd4fe6c89d952cc551cfaeb65ee442d67928e04066e5917654ea53029e472151"
+    },
+    {
+      "file": "scripts/save_store.gd",
+      "sha256": "6b14eae5ee1de950ea2a797ffe1b417d290e47567f2e9a7396bd4357ceb2d394"
+    },
+    {
+      "file": "scripts/sky.gd",
+      "sha256": "0354fac35e9ffeffd631ca39dd7b1940409102bfe759e38b24a9935f213f923e"
+    },
+    {
+      "file": "scripts/stone_circuit.gd",
+      "sha256": "26a7463f6634184da49f85eaf95c64a76f7a5cb476e391e90cbe0e8e950c5ab8"
+    },
+    {
+      "file": "scripts/story.gd",
+      "sha256": "b4b21aea6654c092510ab48ddae2204550314be4ca8a731bf5242bb8aae00144"
+    },
+    {
+      "file": "scripts/surface_art.gd",
+      "sha256": "05b8ebb2b685dcb0ebb4403e82ff07249d11537a01853cfae2a5beee4d1900ae"
+    },
+    {
+      "file": "scripts/traveler_visual.gd",
+      "sha256": "83036a49d01bd1e821323486db053c8d781dbe0174ea44e87dc72a10ee042320"
+    },
+    {
+      "file": "scripts/world.gd",
+      "sha256": "09d75d3399fbfa9ea3f6a41543025e1af90fc94dc0c8c0ea747b4737079c25b9"
+    },
+    {
+      "file": "scripts/world_aqueduct.gd",
+      "sha256": "f140a77ff31d5d6ead84cee881e8585e387a48e4ccff23267f70bc7178c8cc08"
+    },
+    {
+      "file": "scripts/world_belfry.gd",
+      "sha256": "e1b0fd255ba9424f01b0b8c8fca1070274be8b4c47e1a2a2fd3fd13f482dc658"
+    },
+    {
+      "file": "scripts/world_dawn.gd",
+      "sha256": "fa6fa660f11aee098944bfa091af3de3a561fc3058b01d0ef6e734a6d4bf7bef"
+    },
+    {
+      "file": "scripts/world_lighthouse.gd",
+      "sha256": "dfa06ee7f7a5e3b45fcfcec19dc6e608b942df0a6ae8491a60f028d8e1020c25"
+    },
+    {
+      "file": "scripts/world_wind.gd",
+      "sha256": "9ec79a923404f0be8de7cb76b66c4ed1fcda3dd719a1b338f6975bd3a9488591"
+    },
+    {
+      "file": "tests/ambient_visual_probe.gd",
+      "sha256": "6c85257c09920ab2f839749b3e8f2e6486cd07060463bb2fb381c92d83873316"
+    },
+    {
+      "file": "tests/aqueduct_probe.gd",
+      "sha256": "955e5e77a2abe8394f1b7ab8e38e43552ac771ddae4344cfe1f3910f51b0e159"
+    },
+    {
+      "file": "tests/aqueduct_route.gd",
+      "sha256": "684cff8b74c5faf289f6183580b7bf3e8ec73001933dfcf2d2bf82cfe86c8b91"
+    },
+    {
+      "file": "tests/aqueduct_visual_probe.gd",
+      "sha256": "4b8a4730b65d3f87dff800d09cb6092cb445a23f4070fbb4d8803c731126736d"
+    },
+    {
+      "file": "tests/belfry_route.gd",
+      "sha256": "50b64a918fd784d275b51241e50e13f26be04fa4716f55d2c95305b6ef7c80cb"
+    },
+    {
+      "file": "tests/belfry_visual_probe.gd",
+      "sha256": "3c0b63299323caca194803d0dc8ff8301a62c494b536bd5beaf77bf0d45f6708"
+    },
+    {
+      "file": "tests/campaign_playthrough_test.gd",
+      "sha256": "693334da62c7524297a2bf12f7cc51950e12bae4a341a4e9024025221cc57700"
+    },
+    {
+      "file": "tests/campaign_runtime_test.gd",
+      "sha256": "6b76dc2f65a0e5ebaf8641f6e872da919f1215aaf13c0f21140b4e1350db235c"
+    },
+    {
+      "file": "tests/campaign_visual_probe.gd",
+      "sha256": "3f12834c0276bab6cd83ba6f5c07c74812e28de8efe4a793c88f39055aeb4362"
+    },
+    {
+      "file": "tests/campaign_world_test.gd",
+      "sha256": "6872adce5b55087c0ad92ce8e17c3c1f3b124cd8a52d39af03b3a65c3bacd1bd"
+    },
+    {
+      "file": "tests/carry_recovery_test.gd",
+      "sha256": "f7358cebfaa06a6c948cb74d0532505d0b566c0965cd9f01a3cc26fe5cd605da"
+    },
+    {
+      "file": "tests/carry_release_visual_probe.gd",
+      "sha256": "ef75a62467c9558894a497eb43f90a4dea8a10439a8dafe57d2a2712ec89ff7c"
+    },
+    {
+      "file": "tests/chapter_circuit_test.gd",
+      "sha256": "2ad771c353ebd8e78ea8c12004fb3d6fb39c48f19751cb424db7a970a47bc539"
+    },
+    {
+      "file": "tests/chapter_circuit_visual_probe.gd",
+      "sha256": "4c911a86a1af94f7f39d2bbcd7c1303fd0a015994d100ea3c54894d408ae03cd"
+    },
+    {
+      "file": "tests/chapters_route.gd",
+      "sha256": "07f6475627fa5833620cef2cef9cdf2c5f4d50d3845dfed8980983aba8926b55"
+    },
+    {
+      "file": "tests/dawn_probe.gd",
+      "sha256": "7a8f9de12a3dd8777a06de32a13376af9d03020b16747d05bbbb47b5e7d81d85"
+    },
+    {
+      "file": "tests/dawn_route.gd",
+      "sha256": "91717464a2904ab48e3c4926e5a3100d6609ae7c5d49e061ec78db808da0b595"
+    },
+    {
+      "file": "tests/dawn_visual_probe.gd",
+      "sha256": "86d6c487b79a147230dab024fca6c2e5ee2e95dbfa0f3611f836cf0d269eabb3"
+    },
+    {
+      "file": "tests/detail64_visual_probe.gd",
+      "sha256": "d05a4630d923da223371d750bb971fd71dbf6224f1cec00c6aee942e3f8c64cb"
+    },
+    {
+      "file": "tests/episode_five_test.gd",
+      "sha256": "eaca3c998fee2c93702ee5da66323c06d0012efd6854816d48ca0b79236920db"
+    },
+    {
+      "file": "tests/episode_four_test.gd",
+      "sha256": "120db10ffaba51345f66f28744355da7d87d5800dd4ab38dbf279f48d43ab454"
+    },
+    {
+      "file": "tests/episode_three_test.gd",
+      "sha256": "32cab4779a07b53c2b583486679bd6e3a584b5f1c112ff13e5f65f8f2a274384"
+    },
+    {
+      "file": "tests/episode_two_test.gd",
+      "sha256": "63a51163ac32d3d7fdeaed1355fb8ca14e7372566c7f3e0501b5aaa42d32254a"
+    },
+    {
+      "file": "tests/input_hints_test.gd",
+      "sha256": "75ad2ddbc9b8c36e3c994000db3fe9c4245c66ef043a380bb38141725f8d3fc0"
+    },
+    {
+      "file": "tests/input_hints_visual_probe.gd",
+      "sha256": "f787eedbd7890d69cbdcc00a35f19cc65f0e6854141ab29a029b5fbeeb811cf6"
+    },
+    {
+      "file": "tests/jump_response_test.gd",
+      "sha256": "836100172aad0b4aba346b5d37ceea88da1413f1f528ca246e704e81e1b116cf"
+    },
+    {
+      "file": "tests/qa_stores.gd",
+      "sha256": "e579f5570b70d828b40a8fd09f3296b32861034638642b7e80305f7447c4f284"
+    },
+    {
+      "file": "tests/restart_input_test.gd",
+      "sha256": "db22b53057875b330cf719b4c5b01f9d0a44a7b3a473c71080514931ff6b2379"
+    },
+    {
+      "file": "tests/run_tests.gd",
+      "sha256": "71048e120199b8b1dfaa07ebfe80c7ad75394a53c8af8e29c6020705c5806a48"
+    },
+    {
+      "file": "tests/story_test.gd",
+      "sha256": "1d97d6e64e8b11752f863536d113d58f8a8af609bb652195baaac78b788286d8"
+    },
+    {
+      "file": "tests/story_visual_probe.gd",
+      "sha256": "e37bbe15f3cb7e37e9577e05a19e7716e5600bef3d533d507734c83059856d15"
+    },
+    {
+      "file": "tests/traversal_puzzle_test.gd",
+      "sha256": "18aad26e61ce54a49277c5e1a0789253512985597546e90eae3f7f8036d20fc5"
+    },
+    {
+      "file": "tests/visual_motion_probe.gd",
+      "sha256": "c1e0e1d525fd63cf084a8207410999c035d46664c0dacbea6d3e083354e238ed"
+    },
+    {
+      "file": "tests/visual_probe.gd",
+      "sha256": "9f507cc3589c2da4cf8868c8b38ed36aacbc8e86d54857332d1c087ec2859019"
+    },
+    {
+      "file": "tests/visual_state_test.gd",
+      "sha256": "e975b4093473c9e3f0c74e54018aeeff25461814132df27da15bed571e49aa91"
+    },
+    {
+      "file": "tests/web_persistence_test.gd",
+      "sha256": "188f1778bc7da2189f3563881cd551d056078a57b951312cd28a864890dccf62"
+    },
+    {
+      "file": "tests/web_persistence_visual_probe.gd",
+      "sha256": "fdd354a5c647562afdddd812cf8ba03fc0ccdc82369b7de31b71d590fdc3e61d"
+    }
+  ],
+  "coreReadOnly": true
+}

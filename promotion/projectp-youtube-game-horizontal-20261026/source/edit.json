@@ -1,0 +1,46 @@
+{
+  "title": "3つの灯をつけたら、ルミとの午後を忘れた｜自作ゲーム EMBERWAKE",
+  "question": "名前を覚えているうちに、迎えに行けるだろうか。",
+  "duration": 82,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "playStart": 19.6,
+  "playSourceStartFrame": 200,
+  "playSourceEndFrame": 1112,
+  "actualResultAt": 50,
+  "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "gameVersion": "0.12.0",
+  "captureMode": "Automated ordinary keyboard GUI and unmodified physics; not human or RTA",
+  "gameAudioRecorded": false,
+  "bgm": {
+    "source": "/mnt/f/Videos/ProjectP-Original-BGM-2026-10-26/revision-03-native-soundcraft/audio/connecting-lights-master.wav",
+    "sha256": "4d3bdac03c4bbcd89511ea637265bd13d56e0f11f6b702ca4f01b66af49c50df",
+    "usage": "Background for actual game/app video only; no standalone music publication",
+    "software": "SoundCraft0.12.1",
+    "nativeMusicSeconds": 80,
+    "nativeTailSeconds": 2,
+    "bpm": 96
+  },
+  "story": [
+    {"a":0,"b":4,"kind":"actual-result-cold-open","backgroundFrame":805,"quoteFrame":1160,"quotePixelCrop":[70,340,1260,78]},
+    {"a":4,"b":7.6,"kind":"title-and-author","frame":10},
+    {"a":7.6,"b":11.6,"kind":"actual-intro-lumi","frame":50},
+    {"a":11.6,"b":15.6,"kind":"actual-intro-ash","frame":95},
+    {"a":15.6,"b":19.6,"kind":"depart","sourceFrames":[110,200],"freezeHeadSeconds":1},
+    {"a":19.6,"b":50,"kind":"unbroken-actual-three-hearth-play","sourceFrames":[200,1112],"rate":1},
+    {"a":50,"b":60,"kind":"actual-result-readable","frame":1160},
+    {"a":60,"b":63,"kind":"actual-completion-count","frame":1400},
+    {"a":63,"b":69,"kind":"actual-journal-memory","sourceFrames":[1638,1818],"rate":1},
+    {"a":69,"b":72,"kind":"promise-recall-editorial","frame":95},
+    {"a":72,"b":75,"kind":"name-remains-editorial","frame":1160},
+    {"a":75,"b":82,"kind":"next-question","frame":1860}
+  ],
+  "limits": [
+    "Episode1 outcome only, not a full campaign playthrough",
+    "HUD wallclock includes PNG writing; never presented as speed record",
+    "Original notebook page1 clips a long line at the right edge and is excluded from the final edit",
+    "Original GUI quotes are shown as recorded; no fabricated conversation or owner emotions",
+    "111 old0.11 chip-stairs Short has a different question; no automatic funnel match claim"
+  ]
+}

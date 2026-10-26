@@ -1,0 +1,44 @@
+{
+  "software": "PhotoCraft actual crop",
+  "crops": [
+    {
+      "name": "actual-result-line",
+      "frame": 1160,
+      "rect": {
+        "x": 70,
+        "y": 340,
+        "width": 1260,
+        "height": 78
+      },
+      "sourceSha256": "3bcfd26ccb67aa5f9a347ab503cea346b5eed0159aab01af26cfe4022ba3ea1c",
+      "cropSha256": "0aff362e5d08ad5752f0600e324ce802ee185f96d77fb52870076d12d7e05199"
+    },
+    {
+      "name": "actual-count-before",
+      "frame": 10,
+      "rect": {
+        "x": 60,
+        "y": 1020,
+        "width": 1800,
+        "height": 60
+      },
+      "sourceSha256": "8a595794ed3540c5863662ee87552b03344c13a6846309bf23295dbb5d8a97f7",
+      "cropSha256": "4a65ca96b797879dabd71cb32e0a0cb31bb8fa3824cc8be951a4c861e7508df6"
+    },
+    {
+      "name": "actual-count-after",
+      "frame": 1400,
+      "rect": {
+        "x": 60,
+        "y": 1020,
+        "width": 1800,
+        "height": 60
+      },
+      "sourceSha256": "8f2341b5c42d636a7bdcc3fa57d25dc245146ccf297ff5903b8440b09de9c185",
+      "cropSha256": "cc9d6d6b51f20022741d336aff798259fad52f17887b0726477df8a8043555e8"
+    }
+  ],
+  "gameSourceUnmodified": true,
+  "uiRecreated": false,
+  "reason": "Explicit pixel crops avoid nested composition clipping/time-remap cache artifacts; preserve the true GUI text"
+}

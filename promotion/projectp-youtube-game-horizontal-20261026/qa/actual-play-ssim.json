@@ -1,0 +1,27 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-hide_banner",
+    "-ss",
+    "19.6",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\videos\\emberwake-first-forgetting.mp4",
+    "-framerate",
+    "30",
+    "-start_number",
+    "200",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\media\\game\\frame-%06d.png",
+    "-filter_complex",
+    "[0:v]trim=end_frame=912,setpts=PTS-STARTPTS,crop=1920:990:0:0,format=yuv444p[o];[1:v]trim=end_frame=912,setpts=PTS-STARTPTS,crop=1920:990:0:0,format=yuv444p[s];[o][s]ssim=shortest=1",
+    "-an",
+    "-frames:v",
+    "912",
+    "-f",
+    "null",
+    "-"
+  ],
+  "stdout": "",
+  "stderr": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\videos\\emberwake-first-forgetting.mp4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41mp42\r\n    encoder         : FilmCraft 0.10.0\r\n  Duration: 00:01:22.01, start: 0.000000, bitrate: 1544 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 1220 kb/s, 30 fps, 30 tbr, 30 tbn (default)\r\n    Metadata:\r\n      handler_name    : VideoHandler\r\n      vendor_id       : [0][0][0][0]\r\n  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 319 kb/s (default)\r\n    Metadata:\r\n      handler_name    : SoundHandler\r\n      vendor_id       : [0][0][0][0]\r\nInput #1, image2, from '\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\media\\game\\frame-%06d.png':\r\n  Duration: 00:00:55.60, start: 0.000000, bitrate: N/A\r\n  Stream #1:0: Video: png, rgba(pc, gbr/bt709/iec61966-2-1), 1920x1080, 30 fps, 30 tbr, 30 tbn\r\nStream mapping:\r\n  Stream #0:0 (h264) -> trim:default\r\n  Stream #1:0 (png) -> trim:default\r\n  ssim:default -> Stream #0:0 (wrapped_avframe)\r\nPress [q] to stop, [?] for help\r\nOutput #0, null, to 'pipe:':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41mp42\r\n    encoder         : Lavf62.3.100\r\n  Stream #0:0: Video: wrapped_avframe, yuv444p(tv, bt709, progressive), 1920x990 [SAR 1:1 DAR 64:33], q=2-31, 200 kb/s, 30 fps, 30 tbn\r\n    Metadata:\r\n      encoder         : Lavc62.11.100 wrapped_avframe\r\nframe=   66 fps=0.0 q=-0.0 size=N/A time=00:00:02.20 bitrate=N/A speed=4.35x elapsed=0:00:00.50    \rframe=  108 fps=106 q=-0.0 size=N/A time=00:00:03.60 bitrate=N/A speed=3.53x elapsed=0:00:01.02    \rframe=  151 fps= 98 q=-0.0 size=N/A time=00:00:05.03 bitrate=N/A speed=3.27x elapsed=0:00:01.53    \rframe=  193 fps= 94 q=-0.0 size=N/A time=00:00:06.43 bitrate=N/A speed=3.13x elapsed=0:00:02.05    \rframe=  232 fps= 90 q=-0.0 size=N/A time=00:00:07.73 bitrate=N/A speed=3.01x elapsed=0:00:02.56    \rframe=  274 fps= 89 q=-0.0 size=N/A time=00:00:09.13 bitrate=N/A speed=2.96x elapsed=0:00:03.08    \rframe=  313 fps= 87 q=-0.0 size=N/A time=00:00:10.43 bitrate=N/A speed= 2.9x elapsed=0:00:03.60    \rframe=  351 fps= 85 q=-0.0 size=N/A time=00:00:11.70 bitrate=N/A speed=2.84x elapsed=0:00:04.11    \rframe=  390 fps= 84 q=-0.0 size=N/A time=00:00:13.00 bitrate=N/A speed=2.81x elapsed=0:00:04.63    \rframe=  428 fps= 83 q=-0.0 size=N/A time=00:00:14.26 bitrate=N/A speed=2.77x elapsed=0:00:05.14    \rframe=  463 fps= 82 q=-0.0 size=N/A time=00:00:15.43 bitrate=N/A speed=2.73x elapsed=0:00:05.66    \rframe=  501 fps= 81 q=-0.0 size=N/A time=00:00:16.70 bitrate=N/A speed= 2.7x elapsed=0:00:06.17    \rframe=  541 fps= 81 q=-0.0 size=N/A time=00:00:18.03 bitrate=N/A speed=2.69x elapsed=0:00:06.69    \rframe=  581 fps= 81 q=-0.0 size=N/A time=00:00:19.36 bitrate=N/A speed=2.69x elapsed=0:00:07.20    \rframe=  620 fps= 80 q=-0.0 size=N/A time=00:00:20.66 bitrate=N/A speed=2.68x elapsed=0:00:07.72    \rframe=  662 fps= 80 q=-0.0 size=N/A time=00:00:22.06 bitrate=N/A speed=2.68x elapsed=0:00:08.23    \rframe=  701 fps= 80 q=-0.0 size=N/A time=00:00:23.36 bitrate=N/A speed=2.67x elapsed=0:00:08.75    \rframe=  742 fps= 80 q=-0.0 size=N/A time=00:00:24.73 bitrate=N/A speed=2.67x elapsed=0:00:09.27    \rframe=  783 fps= 80 q=-0.0 size=N/A time=00:00:26.10 bitrate=N/A speed=2.67x elapsed=0:00:09.78    \rframe=  824 fps= 80 q=-0.0 size=N/A time=00:00:27.46 bitrate=N/A speed=2.67x elapsed=0:00:10.30    \rframe=  867 fps= 80 q=-0.0 size=N/A time=00:00:28.90 bitrate=N/A speed=2.67x elapsed=0:00:10.81    \rframe=  908 fps= 80 q=-0.0 size=N/A time=00:00:30.26 bitrate=N/A speed=2.67x elapsed=0:00:11.33    \r[Parsed_ssim_8 @ 00000259e92f5140] SSIM Y:0.981242 (17.268211) U:0.992940 (21.512140) V:0.992368 (21.173713) All:0.988850 (19.527356)\r\n[out#0/null @ 00000259e77c5840] video:370KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nframe=  912 fps= 80 q=-0.0 Lsize=N/A time=00:00:30.40 bitrate=N/A speed=2.67x elapsed=0:00:11.40    \r\n"
+}

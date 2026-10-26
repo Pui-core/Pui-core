@@ -1,0 +1,79 @@
+{
+  "status": "PASS_BOUNDED_FINAL_EXTRACTS",
+  "videoSha256": "820091fc29b802c845080a780c8f143751dc3b74bd22b88f617fd50b4fbbbb7b",
+  "coverSha256": "83c8523899cf947aa8ec67e1a4b7618e9b9f6a93fb0f98e55225f000caea3eb4",
+  "reviewer": "Codex source writer",
+  "frames": [
+    {
+      "file": "qa/final-00.png",
+      "sha256": "4b8b13f8dd75e35165e6625f9f66403be536dc0a9d812ecff9cad5837c97b8cb"
+    },
+    {
+      "file": "qa/final-03.png",
+      "sha256": "a6d8456c99a60f91532947fbe3e3092587c79ad0ef36a43edf469fbc52beeae9"
+    },
+    {
+      "file": "qa/final-05.png",
+      "sha256": "0d1ff1eb56fcecf2e3ceda33d01424b69857da95f404fd6e3d561a35527c3a01"
+    },
+    {
+      "file": "qa/final-07.png",
+      "sha256": "9341090d7be8589c356d1e48a095a08010c2fae43dce597a0120000edb1dba45"
+    },
+    {
+      "file": "qa/final-13.png",
+      "sha256": "877f1a682e816cfe7822b4c69c9690faac9914375eead2884448bfd9c200b9c0"
+    },
+    {
+      "file": "qa/final-14.png",
+      "sha256": "b28a481358d127b9fb587b7c90ef00f46b6dffb383f4d4573e9dd2d74d3529cd"
+    },
+    {
+      "file": "qa/final-15.png",
+      "sha256": "311752d168fd114fba46c6c9d39c08ecfd5ff90d95bc0481e32b013ef3010f79"
+    },
+    {
+      "file": "qa/final-18.png",
+      "sha256": "574f183c96d3690caf69911d9462d762c831e851c7b1b225e5a30c7076d33024"
+    },
+    {
+      "file": "qa/final-20.png",
+      "sha256": "15d65951ea6a0ed43662ae8981139d6d36dc5c405bfa4d3748e07134ea51d30e"
+    },
+    {
+      "file": "qa/final-23.png",
+      "sha256": "26a7b8e48dddcc164721ab8b881b96ed07fd95fc96d84bbe72b033530c761162"
+    },
+    {
+      "file": "qa/final-29.png",
+      "sha256": "64feca99965b974000e6b6ed1cb8412a2de923c035f1b49f85135beab8a4200d"
+    },
+    {
+      "file": "qa/final-30.png",
+      "sha256": "b643520767b1352d501c902697834b5d8616a447f613d121d8ce17886c11a08b"
+    }
+  ],
+  "cover": {
+    "file": "covers/first-forgetting.png",
+    "sha256": "83c8523899cf947aa8ec67e1a4b7618e9b9f6a93fb0f98e55225f000caea3eb4",
+    "visibleHero": true,
+    "actualNatural": true
+  },
+  "findings": {
+    "importantStoryTextReadable": true,
+    "quoteCropFullyVisible": true,
+    "count0and1BothVisible": true,
+    "naturalHeadClear": true,
+    "gameplayVisible": true,
+    "visibleSoftwareWatermarkInReviewedImages": false
+  },
+  "fixes": [
+    "Replaced clipped nested GUI crops with actual PhotoCraft pixel crops",
+    "Moved thumbnail game crop so actual player and lit hearth are visible",
+    "Added clean fields under opening/closing text"
+  ],
+  "wholeDirectVideoWatch": false,
+  "wholeSubjectiveAudioListen": false,
+  "ownerCreativeAcceptance": false,
+  "nativeYouTubeView": false
+}

@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/PhotoCraft/photocraft-cli.exe",
+  "args": [
+    "run",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\media\\game\\frame-001160.png",
+    "--cmd",
+    "image.crop",
+    "--params",
+    "{\"x\":70,\"y\":340,\"width\":1260,\"height\":78,\"deleteCroppedPixels\":true,\"contentAware\":false}",
+    "--out",
+    "F:\\Videos\\ProjectP-YouTube-Game-Horizontal-2026-10-26\\revision-01\\photocraft-stage\\actual-result-line.png",
+    "--format",
+    "png"
+  ],
+  "stdout": "{\"command\":\"image.crop\",\"result\":{\"documentHeight\":78,\"documentWidth\":1260,\"height\":78,\"resolution\":72.0,\"width\":1260,\"x\":70,\"y\":340}}\n",
+  "stderr": ""
+}

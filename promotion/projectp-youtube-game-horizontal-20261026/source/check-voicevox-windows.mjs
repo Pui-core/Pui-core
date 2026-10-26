@@ -1,0 +1,1 @@
+const base="http://127.0.0.1:50025";const version=await(await fetch(base+"/version")).json();const speakers=await(await fetch(base+"/speakers")).json();console.log(JSON.stringify({version,speaker:speakers.find(s=>s.styles.some(v=>v.id===13))}));

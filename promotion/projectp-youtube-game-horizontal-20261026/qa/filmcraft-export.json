@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/FilmCraft/filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\projects\\first-forgetting.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-112\\\\promotion\\\\projectp-youtube-game-horizontal-20261026\\\\videos\\\\emberwake-first-forgetting.mp4\",\"format\":\"h264\",\"audio\":true,\"audioCodec\":\"aac\",\"bitrateMode\":\"crf\",\"crf\":17,\"hardwareEncoding\":\"off\",\"gpuRendering\":\"off\",\"wait\":true}"
+  ],
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-112\\\\promotion\\\\projectp-youtube-game-horizontal-20261026\\\\videos\\\\emberwake-first-forgetting.mp4\",\n  \"result\": {\n    \"bytes\": 15831660,\n    \"frames\": 2460,\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-112\\\\promotion\\\\projectp-youtube-game-horizontal-20261026\\\\videos\\\\emberwake-first-forgetting.mp4\",\n    \"render_fps\": 29.650616444873584,\n    \"seconds\": 82.9662346\n  }\n}\n",
+  "stderr": ""
+}
