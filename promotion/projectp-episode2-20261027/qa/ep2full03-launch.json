@@ -1,0 +1,49 @@
+{
+  "mode": "ep2-full",
+  "attempt": "ep2full03",
+  "started": "2026-10-26T08:01:27.385Z",
+  "launcherPid": 2675735,
+  "exe": "/usr/bin/xvfb-run",
+  "args": [
+    "-a",
+    "-s",
+    "-screen 0 1920x1080x24 -nolisten tcp",
+    "/home/pui/.local/bin/godot",
+    "--path",
+    "/home/pui/tmp/projectp117-capture-20261026/product",
+    "--rendering-method",
+    "gl_compatibility",
+    "--audio-driver",
+    "Dummy",
+    "--fixed-fps",
+    "30",
+    "--disable-vsync",
+    "--resolution",
+    "1920x1080",
+    "--script",
+    "/home/pui/tmp/projectp117-capture-20261026/source-117/capture-ep2-full.gd",
+    "--",
+    "--out",
+    "/home/pui/tmp/projectp117-capture-20261026/ep2full03"
+  ],
+  "driverSha256": "5e03b424462d6721497f9d3e7950ff2ee98e4f8c1c9873dd0f6216b0f15652b4",
+  "seededSaveSha256": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+  "ownedPaths": {
+    "workspace": "/home/pui/tmp/projectp117-capture-20261026",
+    "product": "/home/pui/tmp/projectp117-capture-20261026/product",
+    "out": "/home/pui/tmp/projectp117-capture-20261026/ep2full03",
+    "data": "/home/pui/tmp/projectp117-capture-20261026/ep2full03-userdata",
+    "config": "/home/pui/tmp/projectp117-capture-20261026/ep2full03-config",
+    "cache": "/home/pui/tmp/projectp117-capture-20261026/ep2full03-cache"
+  },
+  "limits": {
+    "nativeWallSeconds": 720,
+    "maxFrames": 6000
+  },
+  "status": "FINISHED",
+  "exitCode": 0,
+  "signal": null,
+  "finished": "2026-10-26T08:04:05.454Z",
+  "coreFilesChecked": 72,
+  "changedCore": []
+}
