@@ -1,0 +1,23 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\projects\\missyou118-tt.ecproj",
+    "render",
+    "--comp",
+    "missyou118 revision02",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\media\\missyou118-picture-tt.mov",
+    "--format",
+    "prores",
+    "--prores",
+    "4444",
+    "--audio",
+    "off",
+    "--progress",
+    "--json"
+  ],
+  "stdout": "{\"rendered\":[{\"comp\":\"missyou118 revision02\",\"output\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\tmp\\\\projectp118-repair-20261026\\\\media\\\\missyou118-picture-tt.mov\",\"seconds\":51.7017398}]}\n",
+  "stderr": "missyou118 revision02 → \\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\media\\missyou118-picture-tt.mov (1080×1920, 900 frames, Custom)\nprogress 0 900 0.0 -\nprogress 16 900 1.3 72.6\nprogress 32 900 2.4 65.7\nprogress 48 900 3.5 61.4\nprogress 64 900 4.6 60.3\nprogress 80 900 6.0 61.9\nprogress 96 900 7.3 60.8\nprogress 112 900 8.5 59.5\nprogress 128 900 9.4 56.8\nprogress 144 900 10.3 54.3\nprogress 160 900 11.2 52.0\nprogress 176 900 12.6 51.9\nprogress 192 900 13.6 50.0\nprogress 208 900 14.6 48.4\nprogress 224 900 15.5 46.7\nprogress 240 900 16.3 44.8\nprogress 256 900 17.0 42.7\nprogress 272 900 17.7 40.8\nprogress 288 900 18.4 39.1\nprogress 304 900 19.2 37.6\nprogress 320 900 19.9 36.2\nprogress 336 900 20.9 35.1\nprogress 352 900 21.8 33.9\nprogress 368 900 22.8 32.9\nprogress 384 900 23.7 31.9\nprogress 400 900 24.6 30.8\nprogress 416 900 25.7 29.9\nprogress 432 900 26.7 28.9\nprogress 448 900 27.6 27.8\nprogress 464 900 28.6 26.9\nprogress 480 900 29.5 25.8\nprogress 496 900 30.8 25.1\nprogress 512 900 31.8 24.1\nprogress 528 900 33.1 23.3\nprogress 544 900 33.9 22.2\nprogress 560 900 34.6 21.0\nprogress 576 900 35.3 19.8\nprogress 592 900 36.1 18.8\nprogress 608 900 36.8 17.7\nprogress 624 900 37.5 16.6\nprogress 640 900 38.4 15.6\nprogress 656 900 39.2 14.6\nprogress 672 900 40.0 13.6\nprogress 688 900 40.8 12.6\nprogress 704 900 41.5 11.5\nprogress 720 900 42.3 10.6\nprogress 736 900 43.0 9.6\nprogress 752 900 43.9 8.6\nprogress 768 900 44.7 7.7\nprogress 784 900 45.5 6.7\nprogress 800 900 46.3 5.8\nprogress 816 900 47.2 4.9\nprogress 832 900 48.0 3.9\nprogress 848 900 48.8 3.0\nprogress 864 900 49.7 2.1\nprogress 880 900 50.6 1.2\nprogress 896 900 51.5 0.2\nprogress 900 900 51.7 0.0\ndone: missyou118 revision02 → \\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\media\\missyou118-picture-tt.mov in 51.70s\n"
+}

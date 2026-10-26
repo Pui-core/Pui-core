@@ -1,0 +1,104 @@
+{
+  "status": "ROOT_FINAL_PRODUCTION_ACCEPTED",
+  "issue": "https://github.com/Pui-core/-/issues/118",
+  "sourcePr": "https://github.com/Pui-core/Pui-core/pull/53",
+  "reviewedSourceHead": "76171819f8e27adb674d558bb005e14948e95c3f",
+  "rootCase": "https://github.com/Pui-core/-/issues/118#issuecomment-6414749168",
+  "rootCaseCreatedAt": "2026-10-26T11:19:59Z",
+  "acceptedJst": "2026-10-26T20:19:59+09:00",
+  "trackingCase": "PP118-ACCEPTANCE-001",
+  "baseReceipt": "qa/delivery.json",
+  "baseReceiptSha256": "8fb36b96168a0b88a0a001370e5247d7cbebc865ca7ff2b38c158fd17101d0ba",
+  "basePayloadUnchanged": true,
+  "outputs": [
+    {
+      "file": "videos/missyou118.mp4",
+      "bytes": 4991799,
+      "sha256": "550734e573d6c60850ef1cfa9a0e36dcc5dfdba14b3417f99b6b1f786d4122b5"
+    },
+    {
+      "file": "videos/missyou118-tt.mp4",
+      "bytes": 4995676,
+      "sha256": "bc4193e372e07f15fc9f0d86286a83bbcefddea00749d8f340fee4815feab399"
+    },
+    {
+      "file": "covers/missyou118-cover.png",
+      "bytes": 457667,
+      "sha256": "3ca99493352a9fff8d2762dd3fb75b618d20f857d84a4632d67d226d4fa023b2"
+    }
+  ],
+  "requiredFixes": [
+    {
+      "id": "MODEL",
+      "result": "Accepted official Core 288 new frames and current voice binding; app UI separated from host"
+    },
+    {
+      "id": "PHOTOCRAFT",
+      "result": "Accepted actual editable cover, F reopen/render and PNG match"
+    },
+    {
+      "id": "HANDLE",
+      "result": "Wrong @ProjectP removed; prop_pui in metadata and TT follow CTA"
+    },
+    {
+      "id": "SIMULATOR",
+      "result": "Short baked 開発中の実画面・検証データ; exact Simulator/offline scope in documentation, no physical-device or production communication claim"
+    },
+    {
+      "id": "MARKER",
+      "result": "Internal identifier masked while actual stamp/actions/diary/date/state remain readable"
+    },
+    {
+      "id": "AUDIO_F_NATIVE",
+      "result": "Both final decodes and 7 full-phrase head/tail AAC checks accepted; 4 EC/FC plus PC reopened/saved/rendered and missing0; 22 EC/FC media references inside revision02"
+    }
+  ],
+  "rootViewedImages": [
+    {
+      "file": "qa/final-02.png",
+      "time": 0.8
+    },
+    {
+      "file": "qa/final-08.png",
+      "time": 7
+    },
+    {
+      "file": "qa/final-14.png",
+      "time": 10.7
+    },
+    {
+      "file": "qa/final-28.png",
+      "time": 23
+    },
+    {
+      "file": "qa/final-tt-33.png",
+      "time": 28.5
+    },
+    {
+      "file": "covers/missyou118-cover.png"
+    }
+  ],
+  "recordCorrection": {
+    "file": "qa/visual-review.json",
+    "entry": "qa/final-18.png",
+    "previousTimeLabel": 10.7,
+    "correctTime": 13,
+    "correct10Point7File": "qa/final-14.png",
+    "rootReviewedCorrect10Point7Image": true,
+    "technicalFramesExtractedCorrectFromStart": true,
+    "scope": "Only earlier Coder summary time label was wrong. Frozen source pixels and MP4s are unchanged. This append is the correction; do not rewrite the frozen base."
+  },
+  "wholeDirectVideoWatch": false,
+  "wholeSubjectiveAudioListen": false,
+  "published": false,
+  "actualVideoId": null,
+  "relatedVideoId": null,
+  "nativeRelatedVideoConfigured": false,
+  "tiktokPopularTrackSelected": false,
+  "tiktokAudioStatus": "Approved original background provisional; Root popular/Japan CML unverified",
+  "tiktokNativeCoverCropConfirmed": false,
+  "remainingOperationsOwner": "Root: publication/audio adoption/cover crop/analytics; no extra owner GO needed for authorized production completion",
+  "parent93Open": true,
+  "parent106Open": true,
+  "followersGoalAchieved": false
+}

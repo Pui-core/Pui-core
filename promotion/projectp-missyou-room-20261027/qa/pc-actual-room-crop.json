@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/PhotoCraft/photocraft-cli.exe",
+  "args": [
+    "run",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\media\\actual-persisted-room.png",
+    "--cmd",
+    "image.crop",
+    "--params",
+    "{\"x\":0,\"y\":350,\"width\":1080,\"height\":1120,\"deleteCroppedPixels\":true,\"contentAware\":false}",
+    "--out",
+    "F:\\Videos\\ProjectP-Missyou-Room-2026-10-27\\revision-02\\photocraft-stage\\room-crop.png",
+    "--format",
+    "png"
+  ],
+  "stdout": "{\"command\":\"image.crop\",\"result\":{\"documentHeight\":1120,\"documentWidth\":1080,\"height\":1120,\"resolution\":72.0,\"width\":1080,\"x\":0,\"y\":350}}\n",
+  "stderr": ""
+}

@@ -1,0 +1,41 @@
+{
+  "issue": "https://github.com/Pui-core/-/issues/118",
+  "priorSourcePr": "https://github.com/Pui-core/Pui-core/pull/51",
+  "previousRevision": "/mnt/f/Videos/ProjectP-Missyou-Room-2026-10-27/revision-01",
+  "previousReceiptSha256": "541dfb5c04153f35b8529918b6f00da661e3a6c0424cbd41d40746318aa21fdc",
+  "previousRevisionUnchanged": true,
+  "repairAssignment": "https://github.com/Pui-core/-/issues/118#issuecomment-6413513665",
+  "changes": [
+    {
+      "id": "MODEL",
+      "result": "288 new actual official Core frames from all relevant current voice samples, original model/SDK unchanged; rendered assets only bundled"
+    },
+    {
+      "id": "PHOTOCRAFT",
+      "result": "Actual editable PC cover made with recorded room and new Core frame"
+    },
+    {
+      "id": "HANDLE",
+      "result": "Removed wrong @ProjectP; follow CTA, metadata account prop_pui"
+    },
+    {
+      "id": "SIMULATOR",
+      "result": "No physical-device claim; precise offline Simulator scope retained in metadata and README"
+    },
+    {
+      "id": "MARKER",
+      "result": "Tracked local mint mask removes internal identifier while keeping original stamp/actions/state"
+    },
+    {
+      "id": "AUDIO",
+      "result": "All seven original full WAVs kept at sample-exact positions; final full-phrase PCM/AAC head/tail measurements"
+    },
+    {
+      "id": "LABEL",
+      "result": "Root final editorial request shortens both baked video/cover labels to 開発中の実画面・検証データ; no recapture/new voice/Core regeneration for this label change"
+    }
+  ],
+  "intermediateRevision02History": "Private history/before-short-disclosure retains the earlier longer-label outputs and numerical receipts. These are not final. Revision01 is independently preserved.",
+  "wholeSubjectiveAudioListen": false,
+  "published": false
+}

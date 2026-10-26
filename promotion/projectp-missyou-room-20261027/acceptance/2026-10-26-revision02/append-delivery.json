@@ -1,0 +1,24 @@
+{
+  "status": "PASS_ACCEPTANCE_APPEND_SHA",
+  "baseReceipt": "qa/delivery.json",
+  "baseReceiptSha256": "8fb36b96168a0b88a0a001370e5247d7cbebc865ca7ff2b38c158fd17101d0ba",
+  "basePayloadUnchanged": true,
+  "destination": "/mnt/f/Videos/ProjectP-Missyou-Room-2026-10-27/revision-02/acceptance/2026-10-26-revision02",
+  "sourceRelativeFolder": "acceptance/2026-10-26-revision02",
+  "files": [
+    {
+      "file": "root-acceptance.json",
+      "bytes": 3578,
+      "sha256": "9657a9df1a817b61762dc7ec1d56c381c63b8ac9647afc379497d1c303674a81",
+      "sourceAndDeliveryMatch": true
+    },
+    {
+      "file": "README.md",
+      "bytes": 923,
+      "sha256": "cd4711be26c79e96bb39225a9e7ded424cbea4a2d029af19968c8a755498e5bb",
+      "sourceAndDeliveryMatch": true
+    }
+  ],
+  "published": false,
+  "wholeSubjectiveAudioListen": false
+}

@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/FilmCraft/filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\projects\\missyou118.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\tmp\\\\projectp118-repair-20261026\\\\videos\\\\missyou118.mp4\",\"format\":\"h264\",\"audio\":true,\"audioCodec\":\"aac\",\"bitrateMode\":\"crf\",\"crf\":17,\"hardwareEncoding\":\"off\",\"gpuRendering\":\"off\",\"wait\":true}"
+  ],
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\tmp\\\\projectp118-repair-20261026\\\\videos\\\\missyou118.mp4\",\n  \"result\": {\n    \"bytes\": 4991799,\n    \"frames\": 900,\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\tmp\\\\projectp118-repair-20261026\\\\videos\\\\missyou118.mp4\",\n    \"render_fps\": 57.12037456342898,\n    \"seconds\": 15.7561992\n  }\n}\n",
+  "stderr": ""
+}

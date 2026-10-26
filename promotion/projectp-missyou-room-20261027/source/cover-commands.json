@@ -1,0 +1,158 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1080,
+        1920
+      ],
+      "fill": "#f8f2e7",
+      "name": "Warm background"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        75,
+        190,
+        7,
+        360
+      ],
+      "fill": "#963e5b",
+      "name": "Accent"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 185,
+      "text": "閉じても、",
+      "font": "Meiryo",
+      "size": 95,
+      "weight": 700,
+      "color": "#68303f",
+      "name": "Hook context"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 330,
+      "text": "日記は、残る？",
+      "font": "Meiryo",
+      "size": 91,
+      "weight": 700,
+      "color": "#963e5b",
+      "name": "Question"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 475,
+      "text": "missyou / 開発中",
+      "font": "Meiryo",
+      "size": 43,
+      "weight": 700,
+      "color": "#68303f",
+      "name": "App"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 550,
+      "text": "開発中の実画面・検証データ",
+      "font": "Meiryo",
+      "size": 30,
+      "color": "#7e6a63",
+      "name": "Truthful capture scope"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "F:\\Videos\\ProjectP-Missyou-Room-2026-10-27\\revision-02\\media\\room-crop.png",
+      "scale": 80,
+      "fit": false,
+      "center": [
+        580,
+        1050
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "F:\\Videos\\ProjectP-Missyou-Room-2026-10-27\\revision-02\\media\\natural\\frame-000000.png",
+      "scale": 56,
+      "fit": false,
+      "center": [
+        250,
+        1490
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 480,
+      "y": 1530,
+      "text": "額も、花も。",
+      "font": "Meiryo",
+      "size": 51,
+      "weight": 700,
+      "color": "#68303f",
+      "name": "Real result"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 480,
+      "y": 1620,
+      "text": "同じ日記も。",
+      "font": "Meiryo",
+      "size": 51,
+      "weight": 700,
+      "color": "#963e5b",
+      "name": "Persistent diary"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 1775,
+      "text": "PROJECT P / ぷい",
+      "font": "Meiryo",
+      "size": 37,
+      "weight": 700,
+      "color": "#68303f",
+      "name": "Author"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 1850,
+      "text": "再起動後の実画面",
+      "font": "Meiryo",
+      "size": 28,
+      "color": "#7e6a63",
+      "name": "Actual footage label"
+    }
+  ]
+]

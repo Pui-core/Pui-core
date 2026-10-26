@@ -1,24 +1,20 @@
-# YouTube Short メタデータ（草案 / Root公開判断前）
+# YouTube Short：公開下書き
 
-- 公開はRoot単独判断。本ファイルは下書き。予約投稿・アカウント操作はしていない。
+飾った日記は、アプリを閉じても残る？｜missyou 開発中
 
-## タイトル
-飾った日記は、アプリを閉じても残る？｜missyou 開発中オフライン検証 #Shorts
+missyou（開発中）のお部屋で、日記を額と折り紙の花に飾り、アプリ終了→resetなし再起動後に同じ日記を開きました。
 
-## 説明
-missyou（開発中）の「お部屋」で、送ったスタンプ日記を**額**や**折り紙の花**に飾り、アプリを終了→再起動しても、resetなしで同じ日記が残るかを実機（headless Simulator）で確かめた実操作の記録です。
+iOS Simulator上で通常のUI tapを自動化した、オフライン検証データの実操作収録です。画面の相手・日記は端末内のQA用データ。TestFlight実配布・本番2端末通信・APNsは未検証です。収録を抜粋し、額に飾った確認表示は一部静止して読みやすくしています。
 
-これは**開発中のオフライン検証データ**です。TestFlightでの配布・本番2端末通信・通知（APNs）は未証明で、画面の送受信は端末内のQA用（network=0 / submitted=1）です。実際の恋人からの受信や配信実績ではありません。
+ゲーム・アプリを作る、ぷい / PROJECT P。次の更新はチャンネル登録で。
 
-ナレーション：VOICEVOX（青山龍星）
-BGM：ProjectP自作『灯りがつながる』
-※対応する横動画はまだありません（関連動画なし）。
+音声：VOICEVOX:青山龍星
+モデル：Revenant_Natural（正式Core描画、今回の音声に同期）
+BGM：Connecting Lights（自作・背景用）
+映像：PhotoCraft / EffectCraft / FilmCraft
 
-## タグ
-#Shorts #missyou #アプリ開発 #インディー開発 #ProjectP #iOS #開発中 #オフライン検証
+#missyou #アプリ開発 #インディー開発 #ProjectP
 
-## 公開設定メモ
-- relatedActualVideoId: null（対応app横動画なし。既存ゲーム横動画へ架空の続きとして繋がない）
-- 音楽: 自作BGM『灯りがつながる』を使用（権利=本人作。外部sample/loop/VST 0）
-- 収益化/ContentID/YPP: 対象外
-- 目標（視聴/登録/配布）: 未達を維持。保証しない。
+- 動画：`videos/missyou118.mp4`
+- cover：`covers/missyou118-cover.png`
+- actualVideoId / relatedVideoId：null。Root公開担当、公開・関連設定は未実施。
