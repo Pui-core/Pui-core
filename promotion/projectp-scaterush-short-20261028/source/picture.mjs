@@ -1,0 +1,29 @@
+import fs from'node:fs';import{file,np,EC,run,parse,save,hash}from'./native.mjs';
+const platform=process.argv[2]||'youtube';if(!['youtube','tiktok'].includes(platform))throw Error('platform');
+const E={platform,paths:['game-original.mp4','model-opening.mov','model-'+(platform==='youtube'?'youtube':'ending')+'.mov'].map(p=>np(file('media/'+p)))};
+const jsx=`app.newProject();var E=${JSON.stringify(E)},boxes=[],shots=[];function r(n,p){return app.run(n,p||{});}function set(l,p,v){r('prop.set',{layer:l,path:p,value:v});}function key(l,p,t,v){r('prop.addKey',{layer:l,path:p,time:t,timeBase:'comp',value:v});}function span(l,a,b){r('layer.timing',{layers:[l],in:a,out:b});}function rect(n,w,h,x,y,c,a,b){var l=r('layer.newShape',{name:n,kind:'rect',size:[w,h],position:[x,y],fill:c,strokeWidth:0}).layer;span(l,a,b);return l;}
+function text(n,s,x,y,z,c,a,b,max){var l=r('layer.newText',{name:n,text:s,font:'Meiryo',style:'Bold',size:z,fill:c,position:[x,y],justify:'center'}).layer,q=app.project.activeItem.layer(n).sourceRectAtTime(a,false);if(q.width>max){z=Math.floor(z*max/q.width);r('layer.setText',{layer:l,size:z});q=app.project.activeItem.layer(n).sourceRectAtTime(a,false);}set(l,'transform/anchor',[q.left+q.width/2,q.top+q.height/2,0]);set(l,'transform/position',[x,y,0]);span(l,a,b);boxes.push({name:n,text:s,a:a,b:b,x:x,y:y,width:q.width,height:q.height});return l;}
+var im=r('file.import',{paths:E.paths,sequence:false});if(im.errors.length)throw Error(JSON.stringify(im.errors));var I=im.items;var comp=r('comp.new',{name:'ScateRush Short '+E.platform,width:1080,height:1920,frameRate:30,duration:20,background:'#0c151b',shutterAngle:0,motionBlurSamples:1}).comp;
+rect('Night field',1080,1920,540,960,'#0c151b',0,20);
+function game(n,a,b,src,speed,zoom){var l=r('layer.addItem',{item:I[0],time:a,duration:b-a}).layer;r('layer.rename',{layer:l,name:n});span(l,a,b);r('layer.enableTimeRemap',{layers:[l],value:true});key(l,'timeRemap',a,src);key(l,'timeRemap',b,src+(b-a)*speed);r('layer.setSwitch',{layers:[l],switch:'audio',value:false});set(l,'transform/anchor',[330,250,0]);set(l,'transform/position',[540,875,0]);set(l,'transform/scale',[185,185,100]);if(zoom){key(l,'transform/anchor',a,[470,250,0]);key(l,'transform/anchor',a+.5,[470,250,0]);key(l,'transform/anchor',a+.95,[330,250,0]);key(l,'transform/scale',a,[105,105,100]);key(l,'transform/scale',a+.5,[105,105,100]);key(l,'transform/scale',a+.95,[185,185,100]);}shots.push({name:n,output:[a,b],sourceStart:src,speed: speed,sourceEnd:src+(b-a)*speed,actualRecorded:true});}
+game('Actual first sign approach and clearance',0,6.25,7.8,.5,true);game('Actual distinct second sign clearance',6.25,11.25,11.2,.5,false);game('Actual next run momentum',11.25,15,19,1,false);game('Actual moving game under CTA',15,20,23,1,false);
+// Opaque editorial safe areas isolate action and prevent text/model collisions.
+rect('Upper safe lane',1080,510,540,255,'#0c151b',0,20);rect('Lower safe lane',1080,650,540,1605,'#0c151b',0,20);rect('Action top hairline',960,4,520,510,'#32d6c8',0,20);rect('Action lower hairline',960,4,520,1280,'#32d6c8',0,20);
+for(var i=0;i<2;i++){var a=i?15:0,b=i?20:3.5,l=r('layer.addItem',{item:I[i?2:1],time:a,duration:b-a}).layer;r('layer.rename',{layer:l,name:'New exact current voice officialCore '+(i?'CTA':'hook')});span(l,a,b);set(l,'transform/position',[845,1500,0]);set(l,'transform/scale',[39,39,100]);}
+text('Brand','SCATE RUSH',500,135,64,'#f3ecdf',0,20,920);text('Scope','Web試作画面',500,210,31,'#b4c8c7',0,20,920);
+text('Hook1','この看板、',500,325,66,'#f3ecdf',0,3.75,920);text('Hook2','跳ぶ？ くぐる？',500,420,82,'#f5cf55',0,3.75,960);
+text('Choice1','今回は、低い姿勢で。',500,345,62,'#f3ecdf',3.75,6.25,920);text('Choice2','看板の下を通過',500,430,66,'#32d6c8',3.75,6.25,920);
+text('Second1','次の看板も、',500,345,65,'#f3ecdf',6.25,11.25,920);text('Second2','下をくぐる。',500,430,76,'#32d6c8',6.25,11.25,920);
+text('Momentum','跳んで、くぐって、',500,345,58,'#f3ecdf',11.25,15,920);text('Momentum2','その先へ。',500,430,75,'#f5cf55',11.25,15,920);
+text('Slow disclosure','0.5× スロー',810,555,27,'#b4c8c7',0,11.25,360);
+text('Hook lower','実際の看板通過を、',350,1390,41,'#b4c8c7',0,3.75,620);text('Hook lower2','近くで見る。',350,1455,48,'#f3ecdf',0,3.75,620);
+text('Choice lower','低い姿勢 → 通過',500,1420,51,'#32d6c8',3.75,11.25,920);
+text('Momentum lower','SCATE RUSH',500,1420,55,'#f3ecdf',11.25,15,920);
+text('CTA top','このゲームの続きを、',500,350,58,'#f3ecdf',15,20,940);
+text('CTA top2',E.platform==='tiktok'?'フォローで。':'チャンネル登録で。',500,440,70,'#f5cf55',15,20,940);
+text('CTA lower',E.platform==='tiktok'?'フォローして':'チャンネル登録で',350,1400,44,'#f3ecdf',15,20,620);
+text('CTA lower2',E.platform==='tiktok'?'次の一本へ。':'次の一本へ。',350,1470,49,'#32d6c8',15,20,620);
+text('Handle',E.platform==='tiktok'?'@prop_pui':'PROJECT P / ぷい',350,1590,38,'#b4c8c7',15,20,620);
+text('Credits','VOICEVOX:青山龍星',500,1745,25,'#b4c8c7',0,20,920);text('Automation disclosure','記録済みWeb版 / 自動入力を編集',500,1790,25,'#b4c8c7',0,20,920);
+writeLn(JSON.stringify({comp:comp,platform:E.platform,duration:20,boxes:boxes,shots:shots,actualCoreIntervals:[[0,3.5],[15,20]],popularMusicConfirmed:false,published:false,relatedVideoId:null}));`;
+fs.writeFileSync(file('source/composition-'+platform+'.jsx'),jsx);const q=parse((await run(EC,['--empty','script',np(file('source/composition-'+platform+'.jsx')),'--save-as',np(file('projects/scaterush-'+platform+'.ecproj')),'--json'],'ec-build-'+platform+'.json')).stdout);if(!q.ok)throw Error(JSON.stringify(q));save('qa/layout-'+platform+'.json',{...parse(q.output),nativeSha256:hash(file('projects/scaterush-'+platform+'.ecproj'))});for(const t of[.2,1.6,2.1,4.5,8.1,8.6,12,17])await run(EC,['--project',np(file('projects/scaterush-'+platform+'.ecproj')),'render-frame','--comp','ScateRush Short '+platform,'--time',String(t),'--out',np(file('qa/preview-'+platform+'-'+t+'.png')),'--json'],'preview-'+platform+'-'+t+'.json');console.log('Native picture ready '+platform);
