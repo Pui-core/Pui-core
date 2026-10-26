@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "issue": "https://github.com/Pui-core/-/issues/117",
-  "status": "PRODUCTION_COMPLETE_NATIVE_F_AND_TECHNICAL_PASS_PENDING_ROOT_FINAL_IMAGES",
+  "status": "PRODUCTION_COMPLETE_ROOT_FINAL_SELECTED_IMAGES_ACCEPTED",
   "createdAt": "2026-10-26T09:39:52.546Z",
   "engine": "Claude capture/voice/438Core assets, Codex final video/native/delivery/QA",
   "question": "急な二段の近道は、ダッシュで渡れるのか。",
@@ -293,5 +293,8 @@
   "wholeSubjectiveAudioListen": false,
   "ownerFinalCreativeAcceptance": false,
   "sharedGuiBrowserRuntimeLeaseOperations": 0,
-  "rootFinalImages": "pending; immutable media/receipt not changed by later publication receipts"
+  "rootFinalImages": "PASS selected final F images and independent media/cover/receipt/dependency SHA checks; separate from full direct viewing/listening and owner creative adoption",
+  "rootFinalVisualAcceptance": true,
+  "rootFinalAcceptanceCase": "https://github.com/Pui-core/-/issues/117#issuecomment-6412972385",
+  "rootFinalAcceptanceAt": "2026-10-26T09:45:36Z"
 }

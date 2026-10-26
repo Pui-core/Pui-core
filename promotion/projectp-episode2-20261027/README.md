@@ -2,6 +2,8 @@
 
 [管理Issue117](https://github.com/Pui-core/-/issues/117) / 親[93](https://github.com/Pui-core/-/issues/93)・[106](https://github.com/Pui-core/-/issues/106)。一本の問いは「急な二段の近道、ダッシュで渡れる？」。実収録の両足場への着地から合流・結果を見せる3本と3Craft原本を完成した。公開・関連動画実設定・人気曲選定・成長目標の達成は別の未完事項。
 
+Rootの[最終画像・F受入](https://github.com/Pui-core/-/issues/117#issuecomment-6412972385)は2026-10-26 18:45:36 JSTに合格。制作117は最新自己レビュー/必要checks/merge後に完了扱いにする。直接全編視聴/試聴・owner個人の創作採用・公開成果は別の未検証事項として保持する。
+
 ## 納品
 
 `F:\Videos\ProjectP-Episode2-2026-10-27\revision-01\index.html` が再生一覧。`qa/delivery.json` SHA `e04b4277d78a882212676b4cbd93d3ff1c5b3199ca53bd63783fdae88b52e1ce`。対象2704files / 3768611916bytes、同一payloadの全SHA確認済み。
