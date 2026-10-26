@@ -1,18 +1,16 @@
 import fs from 'node:fs';
 import path from 'node:path';
-export const root = path.resolve(process.env.OSAYU_ARCHIVE_ROOT || '/home/pui/Videos/Osayu-Bingo/2026-10-26/archive-jet-v7');
-export const version = 'archive-jet-v7';
+export const root = path.resolve(process.env.OSAYU_ARCHIVE_ROOT || '/home/pui/Videos/Osayu-Bingo/2026-10-26/a-loop-v8');
+export const version = 'a-loop-v8';
 export const playbackRate = 1.25;
 export const previousRoot = '/home/pui/Videos/Osayu-Bingo/2026-10-25/thankyou-wholeframe-v3';
-export const destination = '/mnt/f/Users/pui/Documents/gara/ビンゴ達成ありがとう_ライブ感重視_音量一定_20261026';
+export const destination = '/mnt/f/Users/pui/Documents/gara/ビンゴ達成ありがとう_A案_予告からつながるループ版_20261026';
 export const archive = '/mnt/f/Users/pui/Documents/gara/配信アーカイブ/20261024_アーカイブ.mp4';
 export const TICKS = 254016000000;
 export const fps = 30;
 export const snap = t => Math.round(t*fps)/fps;
 export const plans = [
-  {id:'a-baibai',title:'A｜達成ラッシュ',song:'倍倍FIGHT!',artist:'CANDY TUNE',bpm:176,audioFile:'baibai-fight.m4a',previewSha256:'9462f11e4699ff67da2b53bdf777d55882552285e267b6d11ac78d1a4d98631f',audioStart:.210,accent:'#556EB4',second:'#CE82C8',tint:'#DCEBFF',index:0},
-  {id:'b-patissier',title:'B｜ありがとうの紙ふぶき',song:'キス・ミー・パティシエ',artist:'CANDY TUNE',bpm:192,audioFile:'kiss-me-patissier.m4a',previewSha256:'62ebfa490c1a1f4f78818d4face046c4adc36100a689f2dda5ce98b82c00d26c',audioStart:.088,accent:'#A34F97',second:'#7F9FDA',tint:'#F6DDF4',index:1},
-  {id:'c-disco',title:'C｜ビンゴ・パレード',song:'チョコレイト・ディスコ',artist:'Perfume',bpm:128,audioFile:'chocolate-disco.m4a',previewSha256:'e098b193b01a891aff57a3be845bc2dffcc5bfbfbc9e4005bc87348df87736f4',audioStart:.258,accent:'#705BAF',second:'#749ED8',tint:'#E5DFFD',index:2}
+  {id:'a-baibai',title:'A｜予告からつながる達成ループ',song:'倍倍FIGHT!',artist:'CANDY TUNE',bpm:176,audioFile:'baibai-fight.m4a',previewSha256:'9462f11e4699ff67da2b53bdf777d55882552285e267b6d11ac78d1a4d98631f',audioStart:.210,accent:'#556EB4',second:'#CE82C8',tint:'#DCEBFF',index:0}
 ];
 export function loadEdit(base = root) {
   const e = JSON.parse(fs.readFileSync(path.join(base,'edit-manifest.json'),'utf8'));
@@ -34,5 +32,7 @@ export function loadEdit(base = root) {
     for(const v of e.voice){const s=e.shots.find(s=>s.kind==='archive'&&s.voiceId===v.id),rate=v.playbackRate??1;
       if(!s||s.start>v.start+1e-6||s.end<v.start+v.duration-1e-6||Math.abs(s.playbackRate-rate)>1e-6||Math.abs(s.sourceIn+(v.start-s.start)*rate-v.sourceIn)>1e-6)throw Error('Speech is not covered by matching live footage: '+v.id);}
   }
+  if(e.loop?.enabled){const loop=e.loop,head=e.voice.find(v=>v.id===loop.voiceJoin?.headCueId),tail=e.voice.find(v=>v.id===loop.voiceJoin?.prefixCueId);
+    if(!head||!tail||head.start!==0||Math.abs(tail.start+tail.duration-e.duration)>1e-6||Math.abs(tail.sourceOut-head.sourceIn)>1e-6||Math.abs((loop.voiceJoin.sourceOut-loop.voiceJoin.sourceIn)/e.playbackRate*48000-loop.voiceJoin.totalSamples)>.001||loop.voiceJoin.splitSamples!==Math.round(tail.duration*48000)||loop.voiceJoin.totalSamples!==Math.round((tail.duration+head.duration)*48000))throw Error('Invalid continuous-sentence loop declaration.');}
   return e;
 }

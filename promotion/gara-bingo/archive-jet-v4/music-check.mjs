@@ -5,7 +5,7 @@ import {spawn} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 
 const directory = path.dirname(fileURLToPath(import.meta.url));
-export async function checkMusic({root, planIds = ['a-baibai','b-patissier','c-disco'], pcmOnly = false} = {}) {
+export async function checkMusic({root, planIds = ['a-baibai'], pcmOnly = false} = {}) {
   if (!root || !path.isAbsolute(root)) throw Error('An absolute delivery root is required.');
   const installed = '/home/pui/.local/share/ai-assistants-tools/whisper-venv/bin/python';
   const python = process.env.OSAYU_AUDIO_QA_PYTHON || (fs.existsSync(installed) ? installed : 'python3');
