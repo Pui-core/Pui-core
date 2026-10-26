@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "templateOnly": true,
+  "accountId": "prop_pui",
+  "dateJst": null,
+  "startObservedAt": null,
+  "startFollowers": null,
+  "endObservedAt": null,
+  "endFollowers": null,
+  "netFollowers": null,
+  "nativeAccountViews": null,
+  "nativeAccountProfileVisits": null,
+  "publishedPostIds": [],
+  "accountFollowRateProxy": null,
+  "proxyIsPostAttribution": false,
+  "qualityFailures": [],
+  "notes": [],
+  "rules": [
+    "純増 = endFollowers - startFollowers。時点が揃わない日・欠測はnull。",
+    "accountFollowRateProxyは同範囲views>0かつ純増取得時だけ。投稿ごとへ配賦しない。",
+    "複数投稿はpublicID/SHA単位で別receipt・別dueを持つ。既MIX予約receiptを上書きしない。"
+  ]
+}
