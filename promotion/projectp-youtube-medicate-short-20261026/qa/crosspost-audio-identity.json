@@ -1,0 +1,10 @@
+{
+  "status": "PASS_AAC_PACKET_BYTES_IDENTICAL_TO_APPROVED_MIX99",
+  "originVideoSha256": "7cc316e143590abe2b067e5af6d41649a9f12306d5d56fb10a105f62bd108246",
+  "newVideoSha256": "31079610d74e7a0fd707845f72973db7efb2cc4939c0587c53dc3bba19349cc0",
+  "oldAndNewAacBytes": 932413,
+  "newAacBytes": 932413,
+  "aacIdentical": true,
+  "aacSha256": "ae34c8a4912d725bc8180784098fe3cbc5424a0bd035c35fcf45bac4fc2505e2",
+  "scope": "Encoded AAC packets compare exact; this is not a subjective audio audition."
+}

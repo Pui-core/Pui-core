@@ -1,0 +1,69 @@
+{
+  "status": "ASSEMBLED_SAME_COMPLETE_PHRASE_SYMMETRIC_GAINS_AND_ENVELOPES",
+  "sources": {
+    "A": {
+      "sourceSha256": "ff9c3f40c23848a0ffe51b2984fa63b7684f75643b58e3e0ff8d430cb5d2dd67",
+      "sourceStart": 21.3,
+      "sourceEnd": 25.2,
+      "speed": 1,
+      "relativeGainDb": -0.33,
+      "commonGainDb": -1,
+      "peakDbfs": -2.5211572996477467,
+      "samples": 187200
+    },
+    "B": {
+      "sourceSha256": "759bce18cf69722a1e04e15aed8abd7eb967f324af9a959f7d11cd1d74bedb1f",
+      "sourceStart": 21.3,
+      "sourceEnd": 25.2,
+      "speed": 1,
+      "relativeGainDb": 0,
+      "commonGainDb": -1,
+      "peakDbfs": -2.531839097317969,
+      "samples": 187200
+    }
+  },
+  "sampleRate": 48000,
+  "totalSamples": 1108800,
+  "segments": [
+    {
+      "label": "A",
+      "round": 1,
+      "start": 2.4,
+      "end": 6.3
+    },
+    {
+      "label": "B",
+      "round": 1,
+      "start": 7,
+      "end": 10.9
+    },
+    {
+      "label": "A",
+      "round": 2,
+      "start": 11.6,
+      "end": 15.5
+    },
+    {
+      "label": "B",
+      "round": 2,
+      "start": 16.2,
+      "end": 20.1
+    }
+  ],
+  "fadeSource": {
+    "in": [
+      21.3,
+      21.4
+    ],
+    "out": [
+      25.19,
+      25.2
+    ]
+  },
+  "relativeGainDifferenceDb": -0.33,
+  "noOtherAudio": true,
+  "repeatedIdenticallyTwice": true,
+  "mixSha256": "baa31cd22ddc620dc41a81bad86b3b0867e70546be137d1630baaf1dcbdaa68f",
+  "directAudition": false,
+  "old24_3PreviewNotUsedBecauseEndsInsideNextPhrase": true
+}

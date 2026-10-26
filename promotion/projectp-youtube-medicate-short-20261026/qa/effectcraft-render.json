@@ -1,0 +1,23 @@
+{
+  "exit": 0,
+  "exe": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-YouTube-medicate-Short-2026-10-26\\revision-01\\projects\\mix-process.ecproj",
+    "render",
+    "--comp",
+    "ProjectP Mix Process",
+    "--out",
+    "F:\\Videos\\ProjectP-YouTube-medicate-Short-2026-10-26\\revision-01\\media\\picture.mov",
+    "--format",
+    "prores",
+    "--prores",
+    "4444",
+    "--audio",
+    "off",
+    "--progress",
+    "--json"
+  ],
+  "stdout": "{\"rendered\":[{\"comp\":\"ProjectP Mix Process\",\"output\":\"F:\\\\Videos\\\\ProjectP-YouTube-medicate-Short-2026-10-26\\\\revision-01\\\\media\\\\picture.mov\",\"seconds\":21.9898635}]}\n",
+  "stderr": "ProjectP Mix Process → F:\\Videos\\ProjectP-YouTube-medicate-Short-2026-10-26\\revision-01\\media\\picture.mov (1080×1920, 693 frames, Custom)\nprogress 0 693 0.0 -\nprogress 16 693 0.5 21.2\nprogress 32 693 0.8 17.5\nprogress 48 693 1.2 15.7\nprogress 64 693 1.5 14.7\nprogress 80 693 1.9 14.3\nprogress 96 693 2.3 14.0\nprogress 112 693 2.7 13.8\nprogress 128 693 3.1 13.8\nprogress 144 693 3.7 14.0\nprogress 160 693 4.2 14.1\nprogress 176 693 4.8 14.1\nprogress 192 693 5.3 13.9\nprogress 208 693 5.8 13.5\nprogress 224 693 6.3 13.3\nprogress 240 693 6.9 13.1\nprogress 256 693 7.5 12.8\nprogress 272 693 8.0 12.4\nprogress 288 693 8.5 12.0\nprogress 304 693 9.1 11.6\nprogress 320 693 9.6 11.2\nprogress 336 693 10.1 10.8\nprogress 352 693 10.6 10.3\nprogress 368 693 11.2 9.9\nprogress 384 693 11.8 9.5\nprogress 400 693 12.3 9.0\nprogress 416 693 12.9 8.6\nprogress 432 693 13.5 8.2\nprogress 448 693 14.0 7.7\nprogress 464 693 14.6 7.2\nprogress 480 693 15.0 6.7\nprogress 496 693 15.6 6.2\nprogress 512 693 16.1 5.7\nprogress 528 693 16.7 5.2\nprogress 544 693 17.3 4.7\nprogress 560 693 17.8 4.2\nprogress 576 693 18.4 3.7\nprogress 592 693 19.0 3.2\nprogress 608 693 19.5 2.7\nprogress 624 693 19.9 2.2\nprogress 640 693 20.4 1.7\nprogress 656 693 20.8 1.2\nprogress 672 693 21.3 0.7\nprogress 688 693 21.8 0.2\ndone: ProjectP Mix Process → F:\\Videos\\ProjectP-YouTube-medicate-Short-2026-10-26\\revision-01\\media\\picture.mov in 21.99s\n"
+}

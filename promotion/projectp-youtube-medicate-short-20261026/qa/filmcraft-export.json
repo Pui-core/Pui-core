@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-YouTube-medicate-Short-2026-10-26\\revision-01\\projects\\mix-process.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\":\"F:\\\\Videos\\\\ProjectP-YouTube-medicate-Short-2026-10-26\\\\revision-01\\\\videos\\\\mix-process.mp4\",\"format\":\"h264\",\"audio\":true,\"audioCodec\":\"aac\",\"bitrateMode\":\"crf\",\"crf\":17,\"hardwareEncoding\":\"off\",\"gpuRendering\":\"off\",\"wait\":true}"
+  ],
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"F:\\\\Videos\\\\ProjectP-YouTube-medicate-Short-2026-10-26\\\\revision-01\\\\videos\\\\mix-process.mp4\",\n  \"result\": {\n    \"bytes\": 3505734,\n    \"frames\": 693,\n    \"path\": \"F:\\\\Videos\\\\ProjectP-YouTube-medicate-Short-2026-10-26\\\\revision-01\\\\videos\\\\mix-process.mp4\",\n    \"render_fps\": 47.070168634686496,\n    \"seconds\": 14.7227006\n  }\n}\n",
+  "stderr": ""
+}

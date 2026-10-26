@@ -1,0 +1,12 @@
+{
+  "exit": 0,
+  "exe": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-YouTube-medicate-Short-2026-10-26\\revision-01\\projects\\mix-process.fcproj",
+    "exec",
+    "media.status"
+  ],
+  "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"55326a0cf7576969\",\n      \"size\": 433779096\n    },\n    \"item\": 4,\n    \"name\": \"picture.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-YouTube-medicate-Short-2026-10-26\\\\revision-01\\\\media\\\\picture.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"580eb817936c1356\",\n      \"size\": 6652902\n    },\n    \"item\": 5,\n    \"name\": \"mix-comparison.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-YouTube-medicate-Short-2026-10-26\\\\revision-01\\\\media\\\\mix-comparison.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+  "stderr": ""
+}

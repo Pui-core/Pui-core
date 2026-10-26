@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {root,file,np,PC,EC,FC,run,parse,hash,save} from './native.mjs';
+const ec=file('projects/mix-process.ecproj'),fc=file('projects/mix-process.fcproj');
+const er=parse((await run(EC,['--project',np(ec),'--save','run','footage.check','{"wait":true}','footage.missing','{}','--json'],'delivery-ec-check.json')).stdout);
+const missing=er.result?.find(x=>x.command==='footage.missing')?.result.missing;
+if(!Array.isArray(missing)||missing.length)throw Error('EC missing media');
+await run(EC,['--project',np(ec),'render-frame','--comp','ProjectP Mix Process','--time','22.5','--out',np(file('qa/delivery-effectcraft-cta.png')),'--json'],'delivery-ec-render.json');
+const fr=parse((await run(FC,['--project',np(fc),'exec','media.status'],'delivery-fc-media.json')).stdout);
+if(fr.length!==2||fr.some(x=>x.status!=='online'))throw Error('FC offline media');
+await run(FC,['--project',np(fc),'--save','render','--seconds','22.5','--out',np(file('qa/delivery-filmcraft-cta.png'))],'delivery-fc-render.json');
+await run(PC,['run',np(file('covers/mix-process-cover.pcraft')),'--out',np(file('projects/cover-reopened.pcraft'))],'delivery-pc-save.json');
+await run(PC,['convert',np(file('projects/cover-reopened.pcraft')),np(file('qa/delivery-photocraft-cover.png')),'--format','png'],'delivery-pc-render.json');
+if(hash(file('qa/delivery-photocraft-cover.png'))!==hash(file('covers/mix-process-cover.png')))throw Error('PC reopened render differs');
+const native={effectcraftSha256:hash(ec),filmcraftSha256:hash(fc),coverProjectSha256:hash(file('covers/mix-process-cover.pcraft'))};
+save('qa/native-reopen.json',{status:'PASS_F_NATIVE_REOPEN_SAVE_RENDER',missingMedia:0,mediaStatus:fr,...native,scope:'Three native apps opened/saved/rendered from actual dedicated F delivery. Not live YouTube playback or subjective audition.'});
+console.log(JSON.stringify({nativeReopen:true,missingMedia:0,...native}));
