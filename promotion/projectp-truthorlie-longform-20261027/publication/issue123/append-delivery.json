@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "kind": "append_only_reservation_and_pending_related_snapshot",
+  "managementIssue": 123,
+  "appendFolder": "publication/issue123/reservations-20261027",
+  "status": "PASS_RECORD_COPY_CONSISTENCY_ONLY_RELATED_REQUIRED",
+  "snapshotScope": "Three reservations and required unexecuted Related work at record time",
+  "fileCount": 9,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 3771,
+      "sourceSha256AtCopy": "37a07d45f2d63b406767a94ef52537c874fea8d5eb83646a49ce7546c3af5b4b",
+      "deliverySha256": "37a07d45f2d63b406767a94ef52537c874fea8d5eb83646a49ce7546c3af5b4b",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "youtube-long-scheduled.json",
+      "bytes": 2731,
+      "sourceSha256AtCopy": "ef22b250ba3e154c80db5dec249807e396ee3eb5f7142a40688e1761c8430a10",
+      "deliverySha256": "ef22b250ba3e154c80db5dec249807e396ee3eb5f7142a40688e1761c8430a10",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "youtube-short-scheduled.json",
+      "bytes": 3532,
+      "sourceSha256AtCopy": "39c42020348b0f0f4e7357d0b033b16b4b2189e987ec3fcf037a3690883b3ce8",
+      "deliverySha256": "39c42020348b0f0f4e7357d0b033b16b4b2189e987ec3fcf037a3690883b3ce8",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "tiktok-scheduled.json",
+      "bytes": 3460,
+      "sourceSha256AtCopy": "e9fae63fc72727735c68bcacdd86806a4923265661189539c22dbcda430c34be",
+      "deliverySha256": "e9fae63fc72727735c68bcacdd86806a4923265661189539c22dbcda430c34be",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "related-status.json",
+      "bytes": 2594,
+      "sourceSha256AtCopy": "6d1663e4ef45d56d502a41145200da8e90ef3c856134ae2b3a9e20e40508dd53",
+      "deliverySha256": "6d1663e4ef45d56d502a41145200da8e90ef3c856134ae2b3a9e20e40508dd53",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "root-youtube-long-scheduled.private.json",
+      "bytes": 1803,
+      "sourceSha256AtCopy": "faf2164cebd5984023425db044518f16c2bc3afb404daf5e8705be33e6dbf491",
+      "deliverySha256": "faf2164cebd5984023425db044518f16c2bc3afb404daf5e8705be33e6dbf491",
+      "privateDeliveryOnly": true
+    },
+    {
+      "file": "root-youtube-short-scheduled.private.json",
+      "bytes": 2231,
+      "sourceSha256AtCopy": "0a8f8049369f1952228865fa95eeaaf940c6cd3a0fe2b50ab9ddc840eae0a52b",
+      "deliverySha256": "0a8f8049369f1952228865fa95eeaaf940c6cd3a0fe2b50ab9ddc840eae0a52b",
+      "privateDeliveryOnly": true
+    },
+    {
+      "file": "root-tiktok-scheduled.private.json",
+      "bytes": 2076,
+      "sourceSha256AtCopy": "4dc3587f107006a0feb7fb3d7c7bdda1f8c5f737b0b0394c9b38b001df89635c",
+      "deliverySha256": "4dc3587f107006a0feb7fb3d7c7bdda1f8c5f737b0b0394c9b38b001df89635c",
+      "privateDeliveryOnly": true
+    },
+    {
+      "file": "root-related-required.snapshot.private.json",
+      "bytes": 1693,
+      "sourceSha256AtCopy": "244d268ab9e424b5681b250fe8c2daabad5bd1c88c6bb5727d4fd9ba6a13bb91",
+      "deliverySha256": "244d268ab9e424b5681b250fe8c2daabad5bd1c88c6bb5727d4fd9ba6a13bb91",
+      "privateDeliveryOnly": true
+    }
+  ],
+  "rootReceipts": {
+    "long": {
+      "file": "2026-10-27-truthorlie121-long-scheduled.json",
+      "sha256": "faf2164cebd5984023425db044518f16c2bc3afb404daf5e8705be33e6dbf491",
+      "privateOriginal": true
+    },
+    "short": {
+      "file": "2026-10-27-truthorlie121-short-scheduled.json",
+      "sha256": "0a8f8049369f1952228865fa95eeaaf940c6cd3a0fe2b50ab9ddc840eae0a52b",
+      "privateOriginal": true
+    },
+    "tiktok": {
+      "file": "2026-10-27-truthorlie121-scheduled.json",
+      "sha256": "4dc3587f107006a0feb7fb3d7c7bdda1f8c5f737b0b0394c9b38b001df89635c",
+      "privateOriginal": true
+    }
+  },
+  "rootFutureTaskSnapshot": {
+    "file": "2026-10-27-truthorlie-related-required.json",
+    "sha256AtRecord": "244d268ab9e424b5681b250fe8c2daabad5bd1c88c6bb5727d4fd9ba6a13bb91",
+    "mutableOperationalPreparation": true
+  },
+  "masterBindings": [
+    {
+      "file": "videos/truthorlie-seven-rounds.mp4",
+      "baseManifestSha256": "e1009b5c3f87e96eba13c0181028dad95fef2593f93868d344856eab4464071b",
+      "actualSha256": "e1009b5c3f87e96eba13c0181028dad95fef2593f93868d344856eab4464071b",
+      "unchanged": true
+    },
+    {
+      "file": "short/videos/truthorlie-short.mp4",
+      "baseManifestSha256": "61f71b4c2722ccc3c3081bd7e01f8ca60ecd223546c507bf8f65fac679fdecb4",
+      "actualSha256": "61f71b4c2722ccc3c3081bd7e01f8ca60ecd223546c507bf8f65fac679fdecb4",
+      "unchanged": true
+    },
+    {
+      "file": "short/videos/truthorlie-short-tt.mp4",
+      "baseManifestSha256": "9c7314e764bc901bff1883d57adc87023de665f51cabb36238cd543753889c73",
+      "actualSha256": "9c7314e764bc901bff1883d57adc87023de665f51cabb36238cd543753889c73",
+      "unchanged": true
+    },
+    {
+      "file": "covers/truthorlie-horizontal.png",
+      "baseManifestSha256": "fb31aa44bb5b8aa20dc171ad9c28280ed15306111788ff63de1613b58a5c6d2a",
+      "actualSha256": "fb31aa44bb5b8aa20dc171ad9c28280ed15306111788ff63de1613b58a5c6d2a",
+      "unchanged": true
+    },
+    {
+      "file": "covers/truthorlie-short.png",
+      "baseManifestSha256": "87e56838148aa08ca19a553f1560df21102496c51bfbc629bd98019ed8c916ad",
+      "actualSha256": "87e56838148aa08ca19a553f1560df21102496c51bfbc629bd98019ed8c916ad",
+      "unchanged": true
+    }
+  ],
+  "frozenReceiptChecks": [
+    {
+      "file": "qa/delivery.json",
+      "sha256": "de8fedd33e87ff5113a418d1a01322f4b6b00080507b11f0e059502ef20cf216",
+      "afterSha256": "de8fedd33e87ff5113a418d1a01322f4b6b00080507b11f0e059502ef20cf216",
+      "unchanged": true
+    },
+    {
+      "file": "acceptance/2026-10-27-root-final/README.md",
+      "sha256": "5796b1c61f0a8ca329f771403dad917889d646986ecc8d173aca0ec0fd4604aa",
+      "afterSha256": "5796b1c61f0a8ca329f771403dad917889d646986ecc8d173aca0ec0fd4604aa",
+      "unchanged": true
+    },
+    {
+      "file": "acceptance/2026-10-27-root-final/acceptance.md",
+      "sha256": "2cb6bf6ed7068d3bd3e844afa52a7af5af2e2d80d81f8e1d737a8d0c38346a16",
+      "afterSha256": "2cb6bf6ed7068d3bd3e844afa52a7af5af2e2d80d81f8e1d737a8d0c38346a16",
+      "unchanged": true
+    },
+    {
+      "file": "acceptance/2026-10-27-root-final/append-manifest.json",
+      "sha256": "f460bb51d87a71e89a601f8f9f7bdbae88ee54eefde4ff6a41668b1a219305a6",
+      "afterSha256": "f460bb51d87a71e89a601f8f9f7bdbae88ee54eefde4ff6a41668b1a219305a6",
+      "unchanged": true
+    },
+    {
+      "file": "acceptance/2026-10-27-root-final/receipt.json",
+      "sha256": "16b9bcee62585fc16d54518c1ea26173a9ffc8fe0a105c62a27d387118cfaecf",
+      "afterSha256": "16b9bcee62585fc16d54518c1ea26173a9ffc8fe0a105c62a27d387118cfaecf",
+      "unchanged": true
+    }
+  ],
+  "frozenProductionPayloadFiles": 765,
+  "wholePayloadRescanned": false,
+  "finalAcceptance": "pending_Related",
+  "mergeAllowed": false,
+  "issueCloseAllowed": false,
+  "sourceWriterGuiActions": 0,
+  "sourceWriterPublications": 0,
+  "globalOrRuntimeEdits": 0
+}

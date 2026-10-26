@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "service": "youtube",
+  "kind": "short",
+  "state": "scheduled_native_confirmed_related_pending_main_public",
+  "managementIssue": 123,
+  "productionIssue": 121,
+  "videoId": "4mxdwqgsOVA",
+  "videoUrl": "https://www.youtube.com/shorts/4mxdwqgsOVA",
+  "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+  "title": "この5つ、嘘はどれ？ 実際に投票すると… #嘘か誠か",
+  "scheduledPublishAtJst": "2026-10-27T19:15:00+09:00",
+  "scheduledPublishAtUtc": "2026-10-27T10:15:00.000Z",
+  "actualPublishAt": null,
+  "nativeConfirmedAt": "2026-10-26T20:34:19.2228207Z",
+  "durationSeconds": 40,
+  "videoSha256": "61f71b4c2722ccc3c3081bd7e01f8ca60ecd223546c507bf8f65fac679fdecb4",
+  "coverSha256": "87e56838148aa08ca19a553f1560df21102496c51bfbc629bd98019ed8c916ad",
+  "sourcePr": "https://github.com/Pui-core/Pui-core/pull/55",
+  "sourceHead": "c44aded23147d113ea1e0f10de42e2b84fc0194b",
+  "sourceMerge": "f06e11efc3f655feb842d302e733a5bcd7f22a0c",
+  "sourceDeliveryReceiptSha256": "de8fedd33e87ff5113a418d1a01322f4b6b00080507b11f0e059502ef20cf216",
+  "fileAttachIntents": 1,
+  "nativeFileConfirmAttempts": 1,
+  "coverAttachIntents": 1,
+  "scheduleIntents": 1,
+  "category": "ゲーム",
+  "madeForKids": false,
+  "paidPromotion": false,
+  "alteredContentDisclosure": true,
+  "checks": "copyright_and_community_native_no_issues",
+  "timezone": "Tokyo Standard Time / GMT+0900",
+  "music": {
+    "kind": "original_background_108_revision03",
+    "adoptedBy": "Root",
+    "popularTrackOrJapanCmlVerified": false
+  },
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "recordKind": "sanitized_reservation_snapshot",
+  "rootReceipt": {
+    "file": "2026-10-27-truthorlie121-short-scheduled.json",
+    "sha256": "0a8f8049369f1952228865fa95eeaaf940c6cd3a0fe2b50ab9ddc840eae0a52b",
+    "privateOriginal": true
+  },
+  "analytics": {
+    "actual24h": null,
+    "actual72h": null,
+    "computeFromActualPublish": true,
+    "scheduledZeroIsNotPerformance": true
+  },
+  "sourceWriterGuiActions": 0,
+  "sourceWriterPublications": 0,
+  "relatedVideoId": "pg8Ih4PAOBw",
+  "relatedVideoIdMeaning": "intended same-topic target only; native field is not configured",
+  "actualNativeRelatedVideoId": null,
+  "nativeRelatedConfigured": false,
+  "nativeRelatedFieldObserved": "なし",
+  "relatedFollowupRequired": true,
+  "relatedStatusRecord": "related-status.json",
+  "laterContentListEvidence": {
+    "observedAt": "2026-10-26T20:35:10.5146807Z",
+    "matchingEditVideoId": "4mxdwqgsOVA",
+    "nativeDateTimeLabel": "2026/10/27 19:15",
+    "proof": {
+      "file": "short-content-settled.json",
+      "sha256": "87a8268c9694c7e86bf49ebcdf80a7e24f6fc989d455b74542d919c6f6b1e6eb",
+      "privateOriginal": true
+    }
+  },
+  "savedMetadataReadback": {
+    "observedAt": "2026-10-26T20:35:55.3877081Z",
+    "titleExact": true,
+    "descriptionExact": true,
+    "madeForKids": false,
+    "paidPromotion": false,
+    "alteredContentDisclosure": true,
+    "category": "ゲーム",
+    "unrelatedDefaultTagCount": 0,
+    "proof": {
+      "file": "short-saved-disclosures-expanded.json",
+      "sha256": "3a32dd0acbc868cda80c63e84f097ce9b1c53870cec2e9b565003487a1495a12",
+      "privateOriginal": true
+    },
+    "selectionEvidence": "UIA selected states; paid/AI/category controls include offscreen exposed elements"
+  },
+  "nativeConfirmationProof": {
+    "file": "short-confirmation-settled.json",
+    "sha256": "994877b83594d244be74e2014f0eb032db220a1b733366667acbb9ef65396d41",
+    "privateOriginal": true
+  }
+}

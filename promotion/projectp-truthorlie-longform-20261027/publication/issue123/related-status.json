@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "kind": "reservation_snapshot_with_required_future_related_work",
+  "managementIssue": 123,
+  "productionIssue": 121,
+  "state": "required_wait_main_public",
+  "shortVideoId": "4mxdwqgsOVA",
+  "desiredMainVideoId": "pg8Ih4PAOBw",
+  "actualNativeRelatedVideoId": null,
+  "nativeRelatedConfigured": false,
+  "mainPublicConfirmed": false,
+  "currentMainVisibilityAsReported": "scheduled_private",
+  "nativePicker": {
+    "observedAt": "2026-10-26T20:32:06.2557874Z",
+    "exactTitleSearched": true,
+    "result": "no_matching_results",
+    "savedField": "なし",
+    "proof": {
+      "file": "short-related-long-search-read.json",
+      "sha256": "1aeb31b280438a5c0618cbb89ed60d07322253f355256c74b4b7b17d4aa08f3c",
+      "privateOriginal": true
+    }
+  },
+  "officialConstraint": "https://support.google.com/youtube/answer/14075157?hl=ja",
+  "requiredFutureWork": {
+    "state": "not_executed",
+    "earliestJst": "2026-10-27T18:45:00+09:00",
+    "targetExistingPatrolJst": "2026-10-27T19:00:00+09:00",
+    "completeBeforeJst": "2026-10-27T19:14:59+09:00",
+    "executor": "Root or one explicitly handed-off existing PM publisher with fresh exclusive lease",
+    "mainPublicConfirmation": "Verify pg8Ih4PAOBw is public and on the same channel after 18:45",
+    "nativeLinkage": "Edit Short4mxdwqgsOVA, select pg8Ih4PAOBw, SAVE, reload and verify destination ID",
+    "fallbackIfUnresolved": "Before19:15, stop this Short reservation via normal UI and keep private; record actual state",
+    "newCron": false,
+    "differentWorkDestinationAllowed": false,
+    "appendSeparatePublicAndLinkageReceipts": true,
+    "updateExistingDailyAfterActualExecution": true
+  },
+  "operationalPreparationSnapshot": {
+    "file": "2026-10-27-truthorlie-related-required.json",
+    "sha256AtRecord": "244d268ab9e424b5681b250fe8c2daabad5bd1c88c6bb5727d4fd9ba6a13bb91",
+    "mutableOperationalPreparation": true,
+    "privateOriginal": true
+  },
+  "acceptance": {
+    "reservationRecordTechnicalCheckOnly": true,
+    "shortToMainFunnelComplete": false,
+    "finalSelfApproveAllowed": false,
+    "mergeAllowed": false,
+    "issueCloseAllowed": false,
+    "ownWorktreeCleanupAllowed": false
+  },
+  "rootCase": "https://github.com/Pui-core/-/issues/123#issuecomment-6426951020",
+  "limits": [
+    "Future actions are required and have not executed.",
+    "Three reservation receipts do not prove public availability or Related linkage.",
+    "Final approval, merge and Issue123 close remain blocked until Root supplies actual linkage/save/reload evidence or the actual fallback state."
+  ]
+}

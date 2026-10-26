@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "service": "tiktok",
+  "kind": "short_follow",
+  "state": "scheduled_native_confirmed",
+  "managementIssue": 123,
+  "productionIssue": 121,
+  "videoId": "7701079834692209926",
+  "videoUrl": "https://www.tiktok.com/@prop_pui/video/7701079834692209926",
+  "accountId": "prop_pui",
+  "caption": "この5つ、嘘は何番だと思う？ 自作ゲーム「嘘か誠か」で実際に投票してみました。次期版の操作例で、回答は架空。通常UIの自動操作を編集しています。ゲーム・アプリ制作の続きを、フォローで見届けて。VOICEVOX:青山龍星 #嘘か誠か #自作ゲーム #アプリ開発 #ProjectP",
+  "captionSha256": "99811e9589337b0627ad30e61c355ab0fbfa06f49b18543e5da7e46f7460ed01",
+  "scheduledPublishAtJst": "2026-10-27T19:15:00+09:00",
+  "scheduledPublishAtUtc": "2026-10-27T10:15:00.000Z",
+  "actualPublishAt": null,
+  "nativeConfirmedAt": "2026-10-26T20:44:09.0840563Z",
+  "durationSeconds": 40,
+  "videoSha256": "9c7314e764bc901bff1883d57adc87023de665f51cabb36238cd543753889c73",
+  "coverSha256": "87e56838148aa08ca19a553f1560df21102496c51bfbc629bd98019ed8c916ad",
+  "sourcePr": "https://github.com/Pui-core/Pui-core/pull/55",
+  "sourceHead": "c44aded23147d113ea1e0f10de42e2b84fc0194b",
+  "sourceMerge": "f06e11efc3f655feb842d302e733a5bcd7f22a0c",
+  "sourceDeliveryReceiptSha256": "de8fedd33e87ff5113a418d1a01322f4b6b00080507b11f0e059502ef20cf216",
+  "fileAttachIntents": 1,
+  "nativeFileConfirmAttempts": 1,
+  "coverAttachIntents": 1,
+  "scheduleIntents": 1,
+  "visibility": "Anyone",
+  "ownBrandDisclosure": true,
+  "thirdPartyBrand": false,
+  "aigcDisclosure": true,
+  "highDefinition": true,
+  "commentsAllowed": true,
+  "copyrightCheck": "問題は見つかりませんでした。",
+  "contentCheck": "違反は見つかりませんでした",
+  "nativeCoverPanDownPixels": 40,
+  "music": {
+    "kind": "original_background_108_revision03",
+    "adoptedBy": "Root",
+    "popularTrackOrJapanCmlVerified": false
+  },
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "recordKind": "sanitized_reservation_snapshot",
+  "rootReceipt": {
+    "file": "2026-10-27-truthorlie121-scheduled.json",
+    "sha256": "4dc3587f107006a0feb7fb3d7c7bdda1f8c5f737b0b0394c9b38b001df89635c",
+    "privateOriginal": true
+  },
+  "analytics": {
+    "actual24h": null,
+    "actual72h": null,
+    "computeFromActualPublish": true,
+    "scheduledZeroIsNotPerformance": true
+  },
+  "sourceWriterGuiActions": 0,
+  "sourceWriterPublications": 0,
+  "captionCharacters": 139,
+  "captionSingleLine": true,
+  "nativeCoverAdjustmentMeaning": "Root moved the native viewport 40px down to keep the headline visible; source PNG unchanged",
+  "nativeScheduleEvidence": {
+    "observedAt": "2026-10-26T20:44:09.0840563Z",
+    "exactCaptionLinkMatched": true,
+    "nativeDateTimeLabel": "10月27日 午後7:15",
+    "proof": {
+      "file": "tiktok-after-schedule-native.json",
+      "sha256": "55927940054e7c48855c9a037e8b7fdf2260a0a0de122d7937042dffc02880a1",
+      "privateOriginal": true
+    },
+    "coverProof": {
+      "file": "tiktok-cover-final-native.png",
+      "sha256": "cd0526c611e7015dc73d285d2552ca07302024fdb9bb7821f7ec5ef0c27332b8",
+      "privateOriginal": true
+    },
+    "finalSettingsProof": {
+      "file": "tiktok-final-settings-native.png",
+      "sha256": "ff079a7bae3eefb300ae3de2ae82ce1b18203f9a34485fa33ac86443ad6bb619",
+      "privateOriginal": true
+    }
+  }
+}

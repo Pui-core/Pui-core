@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "service": "youtube",
+  "kind": "horizontal",
+  "state": "scheduled_native_confirmed",
+  "managementIssue": 123,
+  "productionIssue": 121,
+  "videoId": "pg8Ih4PAOBw",
+  "videoUrl": "https://www.youtube.com/watch?v=pg8Ih4PAOBw",
+  "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+  "title": "5つの答え、嘘はどれ？｜嘘か誠か 実画面で4ラウンド＋別ルール3ラウンド",
+  "scheduledPublishAtJst": "2026-10-27T18:45:00+09:00",
+  "scheduledPublishAtUtc": "2026-10-27T09:45:00.000Z",
+  "actualPublishAt": null,
+  "nativeConfirmedAt": "2026-10-26T20:27:41.2861474Z",
+  "durationSeconds": 708.01,
+  "horizontalMinimum600": true,
+  "videoSha256": "e1009b5c3f87e96eba13c0181028dad95fef2593f93868d344856eab4464071b",
+  "coverSha256": "fb31aa44bb5b8aa20dc171ad9c28280ed15306111788ff63de1613b58a5c6d2a",
+  "sourcePr": "https://github.com/Pui-core/Pui-core/pull/55",
+  "sourceHead": "c44aded23147d113ea1e0f10de42e2b84fc0194b",
+  "sourceMerge": "f06e11efc3f655feb842d302e733a5bcd7f22a0c",
+  "sourceDeliveryReceiptSha256": "de8fedd33e87ff5113a418d1a01322f4b6b00080507b11f0e059502ef20cf216",
+  "fileAttachIntents": 1,
+  "nativeFileConfirmAttempts": 1,
+  "coverAttachIntents": 1,
+  "scheduleIntents": 1,
+  "category": "ゲーム",
+  "madeForKids": false,
+  "paidPromotion": false,
+  "alteredContentDisclosure": true,
+  "checks": "copyright_and_community_native_no_issues",
+  "timezone": "Tokyo Standard Time / GMT+0900",
+  "music": {
+    "kind": "original_background_108_revision03",
+    "adoptedBy": "Root",
+    "popularTrackOrJapanCmlVerified": false
+  },
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "contentListRecheck": "pending",
+  "recordKind": "sanitized_reservation_snapshot",
+  "rootReceipt": {
+    "file": "2026-10-27-truthorlie121-long-scheduled.json",
+    "sha256": "faf2164cebd5984023425db044518f16c2bc3afb404daf5e8705be33e6dbf491",
+    "privateOriginal": true
+  },
+  "analytics": {
+    "actual24h": null,
+    "actual72h": null,
+    "computeFromActualPublish": true,
+    "scheduledZeroIsNotPerformance": true
+  },
+  "sourceWriterGuiActions": 0,
+  "sourceWriterPublications": 0,
+  "laterContentListEvidence": {
+    "observedAt": "2026-10-26T20:28:31.6312157Z",
+    "matchingEditVideoId": "pg8Ih4PAOBw",
+    "nativeDateTimeLabel": "2026/10/27 18:45",
+    "proof": {
+      "file": "long-content-settled.json",
+      "sha256": "966f97ba49f0a21af41ba725e7d062a31b61ab1d068874747190c2d5cf0fe374",
+      "privateOriginal": true
+    },
+    "originalReceiptPendingPreserved": true
+  },
+  "nativeConfirmationProof": {
+    "file": "long-confirmation-settled.json",
+    "sha256": "6ab8aef624061e2335f048798a0360aaaf06ba01843419ca5df4e5baefce831b",
+    "privateOriginal": true
+  }
+}
