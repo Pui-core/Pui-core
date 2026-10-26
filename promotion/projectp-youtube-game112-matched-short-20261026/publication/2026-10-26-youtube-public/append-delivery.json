@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_APPEND_ONLY_F_SHA_AND_FROZEN442_UNCHANGED",
+  "productionIssue": 114,
+  "parentIssue": 106,
+  "appendFolder": "publication/2026-10-26-youtube-public",
+  "createdAt": "2026-10-26T06:09:42.869Z",
+  "sourceRootReceiptSha256": "049f97daec98220c58f46e4b95b727f3c27f7ccd787c2f6bdfe53059b6260a87",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4147,
+      "sourceSha256": "b6f004dec13fcd2eff998bf295298fcdf3b374dcb25ea64b0ca54173608a3fb7",
+      "deliverySha256": "b6f004dec13fcd2eff998bf295298fcdf3b374dcb25ea64b0ca54173608a3fb7"
+    },
+    {
+      "file": "youtube-public.json",
+      "bytes": 4680,
+      "sourceSha256": "a5484978dadfae66963a60c54a6f77168ebcdc25da643e54f3443ea17b890d79",
+      "deliverySha256": "a5484978dadfae66963a60c54a6f77168ebcdc25da643e54f3443ea17b890d79"
+    },
+    {
+      "file": "tiktok-pending.json",
+      "bytes": 1189,
+      "sourceSha256": "24449a5282e2b3f41b05892b4d79a574b22327234acd20d23884c0e7510792e0",
+      "deliverySha256": "24449a5282e2b3f41b05892b4d79a574b22327234acd20d23884c0e7510792e0"
+    }
+  ],
+  "fileCount": 3,
+  "totalBytes": 10016,
+  "frozenProduction": {
+    "receipt": "qa/delivery.json",
+    "receiptSha256": "6fa93b70560ec178a782f851cede2b0caeaad139ffad6a25f7af17d2b6bef01c",
+    "filesVerified": 442,
+    "bytesVerified": 2712399272,
+    "changedFiles": 0,
+    "youtubeMasterSha256": "35011751b6e62194eea9e1f12a93f212db36d065c54b56b9377826f5481a3dfa",
+    "tiktokMasterSha256": "033c1f678098ffef3afe6b36c81bd221d9f2ebdd7cc6e0245881181f5cd0f2ad"
+  },
+  "publication": {
+    "youtubeShortId": "GrBDKzvnW58",
+    "relatedTargetId": "a0TstalrQ64",
+    "relatedDestinationConfirmedByRoot": true,
+    "relatedClickThroughMeasured": false
+  },
+  "tiktok": {
+    "state": "pending_foreground",
+    "fileAttachIntents": 0,
+    "publicationIntents": 0,
+    "scheduleIntents": 0,
+    "actualVideoId": null
+  },
+  "privateUiRawIncluded": false,
+  "authenticationIncluded": false,
+  "trackingParamsIncluded": false,
+  "guiActionsBySourceWriter": 0,
+  "sourceWriterPublications": 0,
+  "wholeDirectPlaybackAudition": false
+}
