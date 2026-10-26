@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "status": "PASS_DEDICATED_F_NATIVE_REOPEN_AND_ALL_DELIVERY_SHA",
   "destination": "F:\\Videos\\ProjectP-YouTube-medicate-Short-2026-10-26\\revision-01",
-  "fileCount": 123,
-  "totalBytes": 609890692,
+  "fileCount": 125,
+  "totalBytes": 609918061,
   "files": [
     {
       "file": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 4796,
-      "sha256": "ef359fc91774e50ad0ebf208cf9a681cde92e48cf6eeb46a7bb7163463282bec",
+      "bytes": 5948,
+      "sha256": "c25412bf9de332b4762f5c89db530a19a4c5f580c45318c87553bb2959ade308",
       "sourceInPublicGit": true
     },
     {
@@ -31,8 +31,8 @@
     },
     {
       "file": "index.html",
-      "bytes": 1105,
-      "sha256": "de79c70aa480768cebe96c49b4b6f30f370eb55bfd5de5fcfeafc26de92519e6",
+      "bytes": 1259,
+      "sha256": "5d0a9803a03574f50d3958fe3c45b89a936241fc60489a2882deef8e3f9b6fcf",
       "sourceInPublicGit": true
     },
     {
@@ -733,8 +733,8 @@
     },
     {
       "file": "source/youtube-metadata.json",
-      "bytes": 1815,
-      "sha256": "382d7d64f1aec442a097bf3def501619f0573a81078fc75e42a8d234a8be3fec",
+      "bytes": 2265,
+      "sha256": "74562e22740e91207a34cabd55b7db72550aa63e1f7226a3b363203705fc5254",
       "sourceInPublicGit": true
     },
     {
@@ -742,11 +742,23 @@
       "bytes": 3505734,
       "sha256": "31079610d74e7a0fd707845f72973db7efb2cc4939c0587c53dc3bba19349cc0",
       "sourceInPublicGit": true
+    },
+    {
+      "file": "source/publication-status.json",
+      "sha256": "50858cabdc6514ac4e3a3690549550d79d499afeb6431ae003dd52a743fabede",
+      "bytes": 1419,
+      "sourceInPublicGit": true
+    },
+    {
+      "file": "qa/history/delivery-before-owner-hold.json",
+      "sha256": "12c18d6c3873c07d62006370235571587be6b0503b7d6003afac08f6fb45bdda",
+      "bytes": 24194,
+      "sourceInPublicGit": true
     }
   ],
   "validation": {
-    "jsonFiles": 50,
-    "localLinks": 8,
+    "jsonFiles": 52,
+    "localLinks": 10,
     "missingMedia": 0,
     "nativeApps": [
       "PhotoCraft",
@@ -762,5 +774,13 @@
   },
   "publicConfirmed": false,
   "relatedVideoConfigured": false,
-  "subjectiveAudition": false
+  "subjectiveAudition": false,
+  "currentPublicationState": "owner_hold_no_publication",
+  "ownerDirective": "完成MVも含め、音楽関係の動画は投稿しない",
+  "publicationAuthorized": false,
+  "previousDelivery": {
+    "file": "qa/history/delivery-before-owner-hold.json",
+    "sha256": "12c18d6c3873c07d62006370235571587be6b0503b7d6003afac08f6fb45bdda",
+    "bytePreserved": true
+  }
 }

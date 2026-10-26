@@ -11,7 +11,7 @@
   "alteredContentDecision": "IllustratedsoftwareLive2Danimation andactualownerrecording; no synthesizedrealisticperson/voice, no automaticlabelclaim. Rootverifiesnativequestion.",
   "relatedVideo": {
     "managementIssue": 109,
-    "required": true,
+    "required": false,
     "nativeFeatureConfirmed": true,
     "videoId": null,
     "actualLinkConfigured": false,
@@ -21,18 +21,26 @@
       "route": "OwnYouTubeStudio Settings/Channel/FeatureEligibility",
       "nativeObserved": "Standard/Intermediate/Advanced all enabled",
       "scope": "Prerequisite met; actualrelatedvideoID/link/publicationstillpending"
-    }
+    },
+    "state": "not_to_be_configured_owner_hold"
   },
   "publication": {
-    "state": "prepared_not_uploaded",
+    "state": "owner_hold_no_publication",
     "videoId": null,
-    "actualPublishedAt": null
+    "actualPublishedAt": null,
+    "publicationAuthorized": false,
+    "ownerDirectiveDateJst": "2026-10-26",
+    "ownerDirective": "完成MVも含め、音楽関係の動画は投稿しない",
+    "recordedAt": "2026-10-26T04:06:21.846Z",
+    "submissionIntents": 0,
+    "publicReceipt": null
   },
   "musicRights": {
     "ownerConfirmedCredit": "曲・歌・MV：ぷい",
-    "useScope": "Ownermedicatecomparison+YouTubepublicationGO",
+    "useScope": "Historical owner music-use confirmation retained; current SNS publication permission withdrawn by latest 2026-10-26 owner directive",
     "exclusiveContentIdClaim": false,
     "royaltyRegistrationClaim": false
   },
-  "originalTikTokReservationUnchanged": true
+  "sourceWriterDidNotMutateTikTok": true,
+  "currentStatusRef": "publication-status.json"
 }

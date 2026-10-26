@@ -2,9 +2,13 @@
 
 [Shorts用23.1秒](videos/mix-process.mp4) ／ [カバー](covers/mix-process-cover.png) ／ [再生ページ](index.html)
 
-同じ歌のV5/V6を同じ区間で2回聴き比べ、最後に完成MVへつなぐYouTube向けの動画です。本人の実制作記録と実音源を使い、架空のDAW操作や反応は作っていません。旧TikTok版の動画・19:15予約・原本は変更していません。
+同じ歌のV5/V6を同じ区間で2回聴き比べ、最後に完成MVへつなぐYouTube向けの動画です。本人の実制作記録と実音源を使い、架空のDAW操作や反応は作っていません。本Shortsの制作時には旧TikTok版の動画・予約・原本を変更していません。今回の他serviceの取消操作はRoot担当で、本source担当は実行・確認していません。
 
-**制作・技術検査は完了、YouTubeの実機表示・関連動画設定・実公開はRootの確認待ちです。** この納品だけでクリック導線・登録者増加・収益化を達成したとは扱いません。Rootが10/26 12:51:59 JSTに本人Studioの標準・中級者・上級者向け機能がすべて「有効」と確認しました。これは前提機能の確認で、MVの実IDと関連動画リンクの設定・公開はまだ未確認です。
+**現在の状態：owner_hold_no_publication／音楽関係の動画は投稿しません。** 2026-10-26のowner指示「完成MVも含め、音楽関係の動画は投稿しない」により、本Shortsの公開許可も撤回されました。公開待ち・Rootへの投稿queueではありません。動画・音・カバー・編集原本は制作履歴として保全し、新たな投稿・関連動画設定を行いません。公開再開には、この保留を変更するownerの明示指示が必要です。
+
+現在の正本は [公開保留の記録](source/publication-status.json) と `source/youtube-metadata.json`。以下の制作・検品・導線計画は保留前の履歴です。`qa/frozen-delivery-binding.json`のREADY表示は当時の技術準備snapshotで、現在の公開許可ではありません。元のdelivery receiptはbyte一致で履歴保存しています。
+
+Rootが12:51:59 JSTに本人Studioの上級者向け機能有効を確認した事実は履歴として残しますが、MVの実ID・関連動画設定・公開の証明にはしません。YouTube公開IDと公開receiptはnullのままです。ゲーム・アプリの背景素材としての自作BGM制作（108）は別範囲で、本変更では編集していません。
 
 ## 音と比較
 
@@ -23,7 +27,7 @@ PhotoCraftで新しいモデル入りカバーを制作し、元の実PCM波形2
 - `projects/mix-process.fcproj`：最終映像と実比較WAV
 - `covers/mix-process-cover.pcraft`：専用カバー
 - `source/edit.json`：区間・条件・終端文
-- `source/youtube-metadata.json`、`title.txt`、`description.txt`：投稿用の下準備。関連動画IDは実設定までnullです。
+- `source/youtube-metadata.json`、`title.txt`、`description.txt`：投稿用の下準備。保留前の投稿準備データです。現在の公開保留を変更せず、動画ID・関連動画IDはnullのまま保持します。
 
 ## 確認した範囲
 
@@ -31,9 +35,9 @@ PhotoCraftで新しいモデル入りカバーを制作し、元の実PCM波形2
 
 `qa/frozen-delivery-binding.json`が最終媒体と原本のSHA、`qa/crosspost-audio-identity.json`がAAC完全一致、`qa/technical.json`・`audio-final.json`が技術検査、`qa/native-reopen.json`が納品先の3Craft確認、`qa/delivery.json`が全納品fileの対応です。
 
-## 再出力
+## 履歴を再出力する場合
 
-既設Windows PhotoCraft/EffectCraft/FilmCraftとFFmpegを使います。元の承認済みMIX99から描画済みlistener・比較音声・波形を準備し、新しい専用folderで実行します。既存TikTok納品を出力先へ指定しません。
+以下は保全した制作手順で、公開再開や自動投稿の許可ではありません。既設Windows PhotoCraft/EffectCraft/FilmCraftとFFmpegを使います。元の承認済みMIX99から描画済みlistener・比較音声・波形を準備し、新しい専用folderで実行します。既存TikTok納品を出力先へ指定しません。
 
 ```sh
 node source/prepare-reuse.mjs
