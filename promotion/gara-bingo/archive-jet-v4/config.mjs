@@ -1,10 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
-export const root = path.resolve(process.env.OSAYU_ARCHIVE_ROOT || '/home/pui/Videos/Osayu-Bingo/2026-10-26/archive-jet-v6');
-export const version = 'archive-jet-v6';
+export const root = path.resolve(process.env.OSAYU_ARCHIVE_ROOT || '/home/pui/Videos/Osayu-Bingo/2026-10-26/archive-jet-v7');
+export const version = 'archive-jet-v7';
 export const playbackRate = 1.25;
 export const previousRoot = '/home/pui/Videos/Osayu-Bingo/2026-10-25/thankyou-wholeframe-v3';
-export const destination = '/mnt/f/Users/pui/Documents/gara/ビンゴ達成ありがとう_切り抜き差込版_音声修正_20261026';
+export const destination = '/mnt/f/Users/pui/Documents/gara/ビンゴ達成ありがとう_ライブ感重視_音量一定_20261026';
 export const archive = '/mnt/f/Users/pui/Documents/gara/配信アーカイブ/20261024_アーカイブ.mp4';
 export const TICKS = 254016000000;
 export const fps = 30;
@@ -29,5 +29,10 @@ export function loadEdit(base = root) {
   if (Math.abs(end-e.duration)>1/120) throw Error('Edit does not cover the complete duration.');
   const voiceIds=new Set();
   for (const v of e.voice) {const rate=v.playbackRate??1,duration=(v.sourceOut-v.sourceIn)/rate;if (voiceIds.has(v.id)||!/^[a-z0-9-]+$/.test(v.id)||![v.sourceIn,v.sourceOut,v.start,rate,duration].every(Number.isFinite)||rate<=0||v.sourceIn<0||v.sourceOut<=v.sourceIn||v.start<0||v.start+duration>e.duration+1/30||v.duration!==undefined&&Math.abs(v.duration-duration)>1e-6) throw Error('Invalid voice event: '+v.id);voiceIds.add(v.id);}
+  if(e.compositionMode==='live-during-all-speech') {
+    if(e.musicStart!==0||e.musicGainMode!=='constant')throw Error('Live revision requires continuous fixed-gain music.');
+    for(const v of e.voice){const s=e.shots.find(s=>s.kind==='archive'&&s.voiceId===v.id),rate=v.playbackRate??1;
+      if(!s||s.start>v.start+1e-6||s.end<v.start+v.duration-1e-6||Math.abs(s.playbackRate-rate)>1e-6||Math.abs(s.sourceIn+(v.start-s.start)*rate-v.sourceIn)>1e-6)throw Error('Speech is not covered by matching live footage: '+v.id);}
+  }
   return e;
 }

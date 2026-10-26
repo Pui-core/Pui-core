@@ -181,28 +181,56 @@ export function prepare(selected=plans) {
 function inputSeals(p) {
   const edit=loadEdit();requireExtracted(edit);
   return {...assertBackground(),...characterSeals(),version,playbackRate:defaultPlaybackRate,audioCutMode,editManifestSha256:editSha(),sourceArchiveSha256:edit.archiveSha256,
+    musicGainMode:edit.musicGainMode,musicStart:edit.musicStart,musicMetadataSha256:hash(qa(p,'music-source')),musicRawPcmSha256:hash(path.join(folder(p),'media/music-source.wav')),
     clips:edit.shots.filter(s=>s.kind==='archive').map(s=>({id:s.id,file:path.relative(root,clipPath(s)),...timing(s,s.end-s.start),sha256:hash(clipPath(s))})),
     voiceEvents:edit.voice.map(v=>({id:v.id,start:v.start,...voiceTiming(v),pitchPreserved:true})),voiceSha256:hash(path.join(folder(p),'media/voice.wav')),musicSha256:hash(path.join(folder(p),'media/music.wav'))};
 }
-function duckExpression(edit) {
-  const factors=edit.voice.map(v=>{
-    const a=v.start,b=v.start+voiceTiming(v).targetDuration,attack=.04,release=.16,r=.22;
-    return `if(lt(t,${Math.max(0,a-attack)}),1,if(lt(t,${a}),1-${1-r}*(t-${Math.max(0,a-attack)})/${Math.min(a,attack)||attack},if(lt(t,${b}),${r},if(lt(t,${b+release}),${r}+${1-r}*(t-${b})/${release},1))))`;
-  });
-  return factors.reduce((a,b)=>`min(${a},${b})`,'1');
+async function measureLoudness(file,log) {
+  const result=await run(FF,['-hide_banner','-i',nativePath(file),'-af','ebur128=peak=true','-f','null','-'],log);
+  const integratedLufs=Number([...result.stderr.matchAll(/\bI:\s*(-?(?:\d+(?:\.\d+)?|inf))\s+LUFS/g)].at(-1)?.[1]);
+  const truePeakDbtp=Number([...result.stderr.matchAll(/Peak:\s*(-?(?:\d+(?:\.\d+)?|inf))\s+dBFS/g)].at(-1)?.[1]);
+  if(!Number.isFinite(integratedLufs)||!Number.isFinite(truePeakDbtp))throw Error('Cannot measure a non-silent fixed-gain source: '+file);
+  return {integratedLufs,truePeakDbtp};
+}
+function fixedGain(level,targetLufs,peakCeilingDbtp) {
+  const gainDb=Math.min(targetLufs-level.integratedLufs,peakCeilingDbtp-level.truePeakDbtp);
+  return {gainDb,gain:10**(gainDb/20),targetLufs,peakCeilingDbtp};
 }
 async function music(p,edit) {
+  if(edit.musicStart!==0||edit.musicGainMode!=='constant')throw Error('Music must start at film zero with constant gain.');
   const source=path.join(previousRoot,'audio-preview',p.audioFile), local=path.join(root,'audio-preview',p.audioFile);
   fs.mkdirSync(path.dirname(local),{recursive:true});if(!fs.existsSync(local))fs.copyFileSync(source,local);
   if(!/^[a-f0-9]{64}$/.test(p.previewSha256||'')||hash(local)!==p.previewSha256)throw Error('Preview music differs from its recorded source digest.');
-  const remaining=edit.duration-edit.drop, data=probe(local);
+  const remaining=edit.duration, data=probe(local);
   if(p.audioStart<0||p.audioStart+remaining>Number(data.format.duration)+.03)throw Error('Music preview is too short for this edit: '+p.id);
-  const out=path.join(folder(p),'media/music.wav');
-  const filter=`atrim=start=${p.audioStart}:duration=${remaining},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.04,adelay=${Math.round(edit.drop*48000)}S:all=1,apad,atrim=duration=${edit.duration},loudnorm=I=-16:TP=-3:LRA=9,aresample=48000,volume='${duckExpression(edit)}':eval=frame,afade=t=out:st=${edit.duration-.55}:d=0.55`;
-  await run(FF,['-hide_banner','-y','-i',nativePath(local),'-vn','-af',filter,'-ac','2','-c:a','pcm_s24le',nativePath(out)],qa(p,'music-mix'));
-  save(qa(p,'music-source'),{song:p.song,artist:p.artist,file:path.basename(local),sha256:hash(local),previewStart:p.audioStart,previewEnd:p.audioStart+remaining,videoStart:edit.drop,ownerPreviewUseAuthorized:true,exactTikTokVersionVerified:false});return out;
+  const raw=path.join(folder(p),'media/music-source.wav'),out=path.join(folder(p),'media/music.wav');
+  // Preserve the chosen recording's natural dynamics. Analysis sets one scalar;
+  // there is no speech-dependent gain, automation, limiter or final music AGC.
+  const sourceFilter=`atrim=start=${p.audioStart}:duration=${remaining},asetpts=PTS-STARTPTS,aresample=48000:async=0,aformat=channel_layouts=stereo,apad,atrim=duration=${edit.duration}`;
+  await run(FF,['-hide_banner','-y','-i',nativePath(local),'-vn','-af',sourceFilter,'-ac','2','-c:a','pcm_f32le',nativePath(raw)],qa(p,'music-source-decode'));
+  const level=await measureLoudness(raw,qa(p,'music-source-levels')),gain=fixedGain(level,-18,-3),fade=.005;
+  const filter=`volume=${gain.gain}:precision=double,afade=t=in:st=0:d=${fade},afade=t=out:st=${edit.duration-fade}:d=${fade}`;
+  await run(FF,['-hide_banner','-y','-i',nativePath(raw),'-vn','-af',filter,'-ac','2','-c:a','pcm_s24le',nativePath(out)],qa(p,'music-mix'));
+  save(qa(p,'music-source'),{song:p.song,artist:p.artist,file:path.basename(local),sha256:hash(local),previewStart:p.audioStart,previewEnd:p.audioStart+remaining,videoStart:0,
+    sourceFile:path.relative(root,local),sourceSha256:hash(local),sourceStart:p.audioStart,sourceDuration:remaining,musicStart:0,musicGainMode:'constant',
+    rawPcmFile:path.relative(root,raw),rawPcmSha256:hash(raw),rawPcmFormat:'pcm_f32le',sourceFilter,sourceLevel:level,
+    musicGain:gain.gain,gain:gain.gain,musicGainDb:gain.gainDb,normalization:gain,fadeInSeconds:fade,fadeOutSeconds:fade,musicSha256:hash(out),editManifestSha256:editSha(),
+    speechDependentGain:false,dynamicNormalization:false,ownerPreviewUseAuthorized:true,exactTikTokVersionVerified:false});return out;
 }
-function createFilm(p,edit,master,voice,musicFile) {
+async function fixedMix(p,edit,suffix,voice,musicFile) {
+  const reference=suffix==='reference',sum=path.join(folder(p),'media',suffix+'-sum.wav'),mixed=path.join(folder(p),'media',suffix+'-mix.wav');
+  if(reference)await run(FF,['-hide_banner','-y','-i',nativePath(voice),'-i',nativePath(musicFile),'-filter_complex',`[0:a][1:a]amix=inputs=2:normalize=0:dropout_transition=0,apad,atrim=duration=${edit.duration}[a]`,'-map','[a]','-ac','2','-c:a','pcm_f32le',nativePath(sum)],qa(p,suffix+'-sum'));
+  else await run(FF,['-hide_banner','-y','-i',nativePath(voice),'-af',`apad,atrim=duration=${edit.duration}`,'-ac','2','-c:a','pcm_f32le',nativePath(sum)],qa(p,suffix+'-sum'));
+  const level=await measureLoudness(sum,qa(p,suffix+'-sum-levels')),gain=fixedGain(level,-16,-1.8);
+  await run(FF,['-hide_banner','-y','-i',nativePath(sum),'-af',`volume=${gain.gain}:precision=double`,'-ac','2','-c:a','pcm_s24le',nativePath(mixed)],qa(p,suffix+'-audio-mix'));
+  const report={mixMode:'fixed-scalar-sum',busGain:gain.gain,busGainDb:gain.gainDb,normalization:gain,inputLevel:level,
+    inputVoiceFile:path.relative(root,voice),inputVoiceSha256:hash(voice),inputVoiceGain:1,
+    inputMusicFile:reference?path.relative(root,musicFile):null,inputMusicSha256:reference?hash(musicFile):null,inputMusicGain:reference?1:0,
+    sumFile:path.relative(root,sum),sumSha256:hash(sum),sumFormat:'pcm_f32le',pcmFile:path.relative(root,mixed),pcmSha256:hash(mixed),
+    editManifestSha256:editSha(),dynamicNormalization:false,limiter:false,speechDependentGain:false};
+  save(qa(p,suffix+'-fixed-mix'),report);return {file:mixed,report};
+}
+function createFilm(p,edit,master,voice,musicFile,busGainDb) {
   const output=path.join(folder(p),'projects',p.id+'.fcproj');
   const commands=[{id:'file.newProject',params:{name:'Osayu / '+version+' / '+p.title}},
     {id:'file.newSequence',params:{name:comp(p),width:1080,height:1920,fps,sampleRate:48000,video:1,audio:2}},
@@ -214,25 +242,54 @@ function createFilm(p,edit,master,voice,musicFile) {
     {id:'timeline.place',params:{item:items[1],track:'A1',seconds:0,duration:Math.round(edit.duration*TICKS),video:false,audio:true}},
     {id:'timeline.place',params:{item:items[2],track:'A2',seconds:0,duration:Math.round(edit.duration*TICKS),video:false,audio:true}}];
   call(FC,['--project',nativePath(output),'--save','run','-'],qa(p,'filmcraft-timeline'),clips.map(c=>JSON.stringify(c)).join('\n')+'\n');
+  call(FC,['--project',nativePath(output),'--save','exec','mixer.setStrip',JSON.stringify({strip:'Mix',volumeDb:busGainDb})],qa(p,'filmcraft-master-gain'));
   call(FC,['--project',nativePath(output),'inspect'],qa(p,'filmcraft-reopen'));
+  const sequence=Object.values(parse(fs.readFileSync(output,'utf8')).project.items).map(item=>item.kind?.Sequence).find(Boolean);
+  if(!sequence||Math.abs(sequence.master_volume_db-busGainDb)>1e-5)throw Error('Native FilmCraft master fixed gain was not preserved.');
+}
+async function prepareAudio(p,edit) {
+  directories(p);
+  const cacheFile=qa(p,'audio-preflight'),pipelineSha256=hash(fileURLToPath(import.meta.url));
+  try {
+    const cached=parse(fs.readFileSync(cacheFile,'utf8'));
+    if(cached.root===root&&cached.pipelineSha256===pipelineSha256&&JSON.stringify(cached.assets)===JSON.stringify(inputSeals(p))
+      &&cached.fixedMixes.every(m=>hash(qa(p,m.suffix+'-fixed-mix'))===m.metadataSha256&&hash(m.file)===m.report.pcmSha256))return cached;
+  } catch { /* Missing or stale preflight must be regenerated from its inputs. */ }
+  const voice=path.join(folder(p),'media/voice.wav');fs.copyFileSync(path.join(root,'media/voice-mix.wav'),voice);
+  const musicFile=await music(p,edit),fixedMixes=[];
+  for(const suffix of ['reference','voice-only']) {
+    const mixed=await fixedMix(p,edit,suffix,voice,musicFile),level=await measureLoudness(mixed.file,qa(p,suffix+'-preflight-levels'));
+    fixedMixes.push({...mixed,suffix,metadataSha256:hash(qa(p,suffix+'-fixed-mix')),level,
+      withinCurrentVerificationLimits:level.integratedLufs>=-19&&level.integratedLufs<=-12&&level.truePeakDbtp<=-1.5});
+  }
+  const report={root,id:p.id,pipelineSha256,assets:inputSeals(p),voice,musicFile,fixedMixes,musicGainMode:'constant',finalMixMode:'fixed-scalar-sum',sourceSpeechControlsMusic:false};
+  save(cacheFile,report);return report;
+}
+export async function mix(selected=plans) {
+  const edit=loadEdit();assertBackground();requireExtracted(edit);const summary=[];
+  for(const p of selected) {
+    const report=await prepareAudio(p,edit);summary.push(report);
+    console.log(JSON.stringify({id:p.id,preflight:report.fixedMixes.map(m=>({kind:m.suffix,...m.level,busGain:m.report.busGain,busGainDb:m.report.busGainDb,withinCurrentVerificationLimits:m.withinCurrentVerificationLimits}))}));
+  }
+  return summary;
 }
 export async function render(selected=plans) {
   const edit=loadEdit();assertBackground();requireExtracted(edit);
   for(const p of selected) {
     directories(p);
-    const voice=path.join(folder(p),'media/voice.wav');fs.copyFileSync(path.join(root,'media/voice-mix.wav'),voice);
-    const musicFile=await music(p,edit), assets=inputSeals(p), input={projectSha256:hash(project(p)),assets,startedAt:new Date().toISOString()};
+    const audio=await prepareAudio(p,edit),{voice,musicFile}=audio;
+    if(audio.fixedMixes.some(m=>!m.withinCurrentVerificationLimits))throw Error('Fixed audio preflight needs a level/headroom decision before native encoding: '+p.id);
+    const assets=inputSeals(p), input={projectSha256:hash(project(p)),assets,startedAt:new Date().toISOString()};
     const master=path.join(folder(p),'media/picture-master.mp4');
     await run(EC,['render','--project',nativePath(project(p)),'--comp',comp(p),'--out',nativePath(master),'--format','h264','--bitrate','18000','--audio','off','--progress','--json'],qa(p,'effectcraft-render'));
     if(hash(project(p))!==input.projectSha256||JSON.stringify(inputSeals(p))!==JSON.stringify(assets))throw Error('Native rendering inputs changed: '+p.id);
     save(qa(p,'render-input'),{...input,endedAt:new Date().toISOString(),masterSha256:hash(master)});
-    for(const suffix of ['reference','voice-only']) {
-      const mixed=path.join(folder(p),'media',suffix+'-mix.wav');
-      if(suffix==='reference')await run(FF,['-hide_banner','-y','-i',nativePath(voice),'-i',nativePath(musicFile),'-filter_complex',`[0:a][1:a]amix=inputs=2:normalize=0:dropout_transition=0,loudnorm=I=-16:TP=-1.5:LRA=9,aresample=48000,apad,atrim=duration=${edit.duration}[a]`,'-map','[a]','-ac','2','-c:a','pcm_s24le',nativePath(mixed)],qa(p,suffix+'-audio-mix'));
-      else await run(FF,['-hide_banner','-y','-i',nativePath(voice),'-af',`loudnorm=I=-16:TP=-1.5:LRA=9,aresample=48000,apad,atrim=duration=${edit.duration}`,'-ac','2','-c:a','pcm_s24le',nativePath(mixed)],qa(p,suffix+'-audio-mix'));
-      await run(FF,['-hide_banner','-y','-i',nativePath(master),'-i',nativePath(mixed),'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','256k','-ar','48000','-t',String(edit.duration),'-movflags','+faststart',nativePath(movie(p,suffix))],qa(p,suffix+'-export'));
+    let referenceBusGainDb;
+    for(const mixed of audio.fixedMixes) {
+      const suffix=mixed.suffix;if(suffix==='reference')referenceBusGainDb=mixed.report.busGainDb;
+      await run(FF,['-hide_banner','-y','-i',nativePath(master),'-i',nativePath(mixed.file),'-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','256k','-ar','48000','-t',String(edit.duration),'-movflags','+faststart',nativePath(movie(p,suffix))],qa(p,suffix+'-export'));
     }
-    createFilm(p,edit,master,voice,musicFile);console.log('Rendered '+p.id);
+    createFilm(p,edit,master,voice,musicFile,referenceBusGainDb);console.log('Rendered '+p.id);
   }
 }
 export async function previews(selected=plans) {
@@ -273,6 +330,12 @@ export async function verify(selected=plans) {
       outputs.push({file:path.relative(root,file),sha256:hash(file),bytes:fs.statSync(file).size,duration:Number(data.format.duration),frames:Number(v.nb_read_frames),audioStreams:1,containsAddedBgm:suffix==='reference',containsRealPerformerVoice:true,
         archiveAudioMayContainOriginalMusicOrSoundEffects:true,audioDescription:suffix==='reference'?'配信音声＋追加の試聴用BGM':'配信音声・追加BGMなし（元配信のBGM/SEが残る場合あり）'});
     }
+    const finalMixes=['reference','voice-only'].map(suffix=>{
+      const file=qa(p,suffix+'-fixed-mix'),m=parse(fs.readFileSync(file,'utf8'));
+      if(m.mixMode!=='fixed-scalar-sum'||!Number.isFinite(m.busGain)||m.busGain<=0||m.dynamicNormalization!==false||m.limiter!==false||m.speechDependentGain!==false
+        ||m.inputVoiceSha256!==input.assets.voiceSha256||m.inputMusicSha256!==(suffix==='reference'?input.assets.musicSha256:null)||hash(path.resolve(root,m.pcmFile))!==m.pcmSha256)throw Error('Static audio mix provenance is stale: '+suffix);
+      return {kind:suffix,metadataFile:path.relative(root,file),metadataSha256:hash(file),busGain:m.busGain,busGainDb:m.busGainDb,pcmSha256:m.pcmSha256};
+    });
     const isolation=assertTextOnly(p),fc=path.join(folder(p),'projects',p.id+'.fcproj');
     call(EC,['--project',nativePath(project(p)),'info','--json'],qa(p,'effectcraft-reopen'));call(EC,['--project',nativePath(project(p,true)),'info','--json'],qa(p,'text-only-reopen'));
     call(FC,['--project',nativePath(fc),'inspect'],qa(p,'filmcraft-final-reopen'));
@@ -280,7 +343,8 @@ export async function verify(selected=plans) {
     await run(EC,['render-frame','--project',nativePath(project(p)),'--comp',comp(p),'--time',String(time),'--out',nativePath(path.join(folder(p),'qa/local-only/ec-reopened.png')),'--json'],qa(p,'effectcraft-reopened-render'));
     await run(FC,['--project',nativePath(fc),'render','--seconds',String(time),'--out',nativePath(path.join(folder(p),'qa/local-only/fc-reopened.png'))],qa(p,'filmcraft-reopened-render'));
     const result={id:p.id,title:p.title,technicalPassed:true,renderInputProjectSha256:input.projectSha256,renderInputAssets:input.assets,outputs,audio,characterFreePreview:isolation,nativeReopenAndRender:true,
-      audioCutMode,playbackRate:defaultPlaybackRate,pitchPreserved:true,audioContinuityReviewed:false,
+      audioCutMode,playbackRate:defaultPlaybackRate,pitchPreserved:true,audioContinuityReviewed:false,musicGainMode:'constant',musicStart:0,
+      musicMetadataFile:path.relative(root,qa(p,'music-source')),musicMetadataSha256:hash(qa(p,'music-source')),finalMixes,
       humanRealtimeReview:false,archiveImageAiViewingPerformed:false,tiktokDeviceReview:false,ownerCreativeApproval:false};
     save(qa(p,'validation'),result);summary.push(result);console.log('Verified '+p.id);
   }
@@ -309,5 +373,5 @@ export async function smoke() {
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
   const op=process.argv[2],id=process.argv[3];
   if(op==='smoke')await smoke();else if(op==='extract')await extract(id?{shotIds:[id],buildVoiceTimeline:false}:{});
-  else {const selected=id?plans.filter(p=>p.id===id):plans;if(!selected.length)throw Error('Unknown plan ID.');const actions={prepare,render,previews,verify};if(!actions[op])throw Error('Use smoke | extract [shot-id] | prepare/render/previews/verify [plan-id].');await actions[op](selected);}
+  else {const selected=id?plans.filter(p=>p.id===id):plans;if(!selected.length)throw Error('Unknown plan ID.');const actions={prepare,mix,render,previews,verify};if(!actions[op])throw Error('Use smoke | extract [shot-id] | prepare/mix/render/previews/verify [plan-id].');await actions[op](selected);}
 }

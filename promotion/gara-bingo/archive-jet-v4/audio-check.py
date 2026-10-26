@@ -14,6 +14,7 @@ import numpy as np
 RATE = 48000
 ZERO = 1 / 32768
 MIN_HOLE = 96  # 2 ms; tiny zero crossings and quantization runs are excluded.
+OLD_HOLE_CONTROL_SHA256 = 'da68834c2d22d16ecea3e0e7e60fe8315644c72b64b0ca1d3a43a4950d718ba8'
 
 
 def digest(filename):
@@ -267,11 +268,13 @@ def main():
         old_clip=root/'qa/audio-check/negative-control-old-pad.wav'
         if not old_clip.exists():
             old_clip=root/'research/teaser-promise-aligned.wav'
+        report['checks']['oldInsertedHoleNegativeControlPresent']=old_clip.exists()
         if old_clip.exists():
             negative=metrics(decode(old_clip),left=.020,right=.020)
             report['oldInsertedHoleNegativeControl']={'file':str(old_clip),'sha256':digest(old_clip),
               'metrics':negative,'rejected':negative['internalHoleCount']>0,
               'knownSourceWordHole':6532.6735}
+            report['checks']['oldInsertedHoleNegativeControlHash']=digest(old_clip)==OLD_HOLE_CONTROL_SHA256
             report['checks']['oldInsertedHoleNegativeControlRejected']=negative['internalHoleCount']>0
         old=root/'research/AUDIO-DIAGNOSTIC-SUMMARY.json'
         if old.exists():

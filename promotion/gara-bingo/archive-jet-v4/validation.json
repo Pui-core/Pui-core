@@ -1,37 +1,53 @@
 {
-  "status": "PASS_GRAPHICS_WITH_BRIEF_INSERTS_AND_REPAIRED_PITCH_PRESERVING_AUDIO",
-  "version": "archive-jet-v6",
+  "status": "PASS_FIXED_MUSIC_AND_ALL_SPEECH_ON_MATCHING_LIVE_VIDEO",
+  "version": "archive-jet-v7",
   "date": "2026-10-26",
-  "issue": "https://github.com/Pui-core/-/issues/102",
-  "previous": "https://github.com/Pui-core/Pui-core/pull/28",
-  "ownerRequirements": {
-    "originalMovieMain": true,
-    "briefArchiveInserts": true,
-    "audioStutterRepair": true,
-    "archivePlaybackRate": 1.25,
-    "pitchPreserved": true,
-    "japaneseDeliveryNames": true
+  "issue": "https://github.com/Pui-core/-/issues/107",
+  "previous": {
+    "issue": "https://github.com/Pui-core/-/issues/102",
+    "codePr": "https://github.com/Pui-core/Pui-core/pull/29",
+    "deliveryPreserved": true
   },
+  "ownerRequirements": [
+    "曲は冒頭から固定音量、発話に連動して下げない",
+    "本人の声が聞こえる全区間は対応する配信映像を全画面表示",
+    "声と配信映像はピッチ保持1.25倍速",
+    "発話の合間に元のビンゴ演出と全画面追従を残す",
+    "感謝と歌ってみたサビ後日公開の予告、日本語用途名で3案納品"
+  ],
   "edit": {
     "duration": 25,
     "frames": 750,
-    "originalGraphicsSeconds": 20.599999999999998,
-    "archiveSeconds": 4.4,
-    "archiveCount": 4,
     "voiceCount": 6,
-    "drop": 2,
-    "climax": 17,
-    "outro": 21,
-    "manifestSha256": "e53f00c641a4c229b7779b2bcfdf1cd0efc76d5d0c205658b70c45c6a6dfdb1d",
-    "baseGraphicsCodeByteIdentical": true,
-    "baseGraphicsSourceSha256": "41ed7fe262160a6f50ce0a42e6562eeb587b371308ff655c9eec8936020b5e48",
-    "audioCutMode": "direct-container-seek-continuous-samples",
-    "sourceClock": "archive-container-seconds"
+    "archiveCount": 6,
+    "archiveSeconds": 12.8,
+    "originalGraphicsSeconds": 12.2,
+    "playbackRate": 1.25,
+    "pitchPreserved": true,
+    "musicStart": 0,
+    "musicPlaybackRate": 1,
+    "musicGainMode": "constant",
+    "speechDucking": false,
+    "boundaryDeclickSeconds": 0.005,
+    "matchingSpeechCoverage": 1,
+    "sourceClock": "archive-container-seconds",
+    "manifestSha256": "605a112a883cfb309914179b37415e91607e265082b73ca43e72097fe5b258ba",
+    "originalGraphicCodeByteIdentical": true,
+    "baseGraphicCodeSha256": "41ed7fe262160a6f50ce0a42e6562eeb587b371308ff655c9eec8936020b5e48"
   },
-  "repair": {
-    "cause": "An overly sensitive timestamp-gap repair inserted silence and removed samples at packet jitter. The old gap-filled WAV is no longer an audio source.",
-    "method": "Directly seek and decode original archive excerpts as continuous samples; atempo=1.25 preserves pitch; only edge fades and end padding/trimming are applied.",
-    "oldAudioQualityClaimRetracted": true,
+  "audio": {
+    "sourceMode": "direct-container-seek-continuous-samples",
+    "oldPaddedAudioExcluded": true,
+    "voiceTimingRepaired": true,
+    "musicNormalization": "One measured scalar per recording; natural dynamics retained",
+    "finalMix": "Fixed scalar times voice plus music; no speech-responsive AGC or limiter",
+    "sourceStatus": "PASS_PITCH_CONTINUITY_SOURCE",
+    "finalStatus": "PASS_PITCH_CONTINUITY_FINAL",
+    "musicStatus": "PASS_FIXED_MUSIC_LEVEL",
+    "sourceSha256": "54eabc199ceac5df7de778f41cd9740729d9b428e58b415cb143ae99173d676e",
+    "finalSha256": "04d73703d2490788ff057cef079bacd4430e670e68b267c9aefd2ccff7affb49",
+    "musicSha256": "b2bce394bf837fed1e73eddafd1235479590cfe6985ac49b2e5ebf3b93c613d5",
+    "voiceDuckNegativeControlRejected": true,
     "asrUsedAsAudioQualityGate": false
   },
   "sourceArchiveSha256": "8d1241d546b2d2298125980d46da012cb909bbd91971c09a4ae822e37c5ffcfe",
@@ -39,14 +55,130 @@
     {
       "id": "a-baibai",
       "title": "A｜達成ラッシュ",
-      "song": "倍倍FIGHT!",
-      "duration": 25,
-      "frames": 750,
+      "technicalPassed": true,
+      "renderInputProjectSha256": "72db061f9488eaef9351d42b7477c1cd0e3a8bda149f11fda583f9ba3e65611d",
+      "renderInputAssets": {
+        "backgroundSha256": "beeb93c9ffb791e113704cf8144db40858a7340803c1be860a3744e3a1edd779",
+        "backgroundManifestSha256": "5b539569a0cc05444bd8dfb3f16152fe761fdf3f95f1d6d02e354262313d76c8",
+        "characterOriginalSha256": "89729c246851b636dd535fb077e2098dca9f59f32e7cd19846e0a09e0aaf57c2",
+        "characterCutoutSha256": "e9947701b3ae601f8ef098c4e2ab0e55e76d0fa32f3c5aef0d08dca015b36bef",
+        "version": "archive-jet-v7",
+        "playbackRate": 1.25,
+        "audioCutMode": "direct-container-seek-continuous-samples",
+        "editManifestSha256": "605a112a883cfb309914179b37415e91607e265082b73ca43e72097fe5b258ba",
+        "sourceArchiveSha256": "8d1241d546b2d2298125980d46da012cb909bbd91971c09a4ae822e37c5ffcfe",
+        "musicGainMode": "constant",
+        "musicStart": 0,
+        "musicMetadataSha256": "a48fba8a390e025e73943187f1ce8dd1980cbd8f9658b7262405f2e0c777e925",
+        "musicRawPcmSha256": "3c7474b63beb47eea3173c376402829f413c5aaafc3bf0f387724800db918933",
+        "clips": [
+          {
+            "id": "opening-live",
+            "file": "media/clips/opening-live.mp4",
+            "sourceDuration": 3.25,
+            "targetDuration": 2.6,
+            "playbackRate": 1.25,
+            "sha256": "d30f7f51a9b20fed23387e8e752d1f186059ff89558a1d870e9705e21d861670"
+          },
+          {
+            "id": "first-viewer-live",
+            "file": "media/clips/first-viewer-live.mp4",
+            "sourceDuration": 3,
+            "targetDuration": 2.4000000000000012,
+            "playbackRate": 1.25,
+            "sha256": "b675aff32a0c8cd298621d343433af22814bdc51553932850e50a130541f7066"
+          },
+          {
+            "id": "gift-reaction-live",
+            "file": "media/clips/gift-reaction-live.mp4",
+            "sourceDuration": 1.875,
+            "targetDuration": 1.5,
+            "playbackRate": 1.25,
+            "sha256": "6d094603c14fee2d5ee41a4257ba75e6fd0fb813216149b104f07dec3f179e6b"
+          },
+          {
+            "id": "bingo-live",
+            "file": "media/clips/bingo-live.mp4",
+            "sourceDuration": 2.875,
+            "targetDuration": 2.3000000000000007,
+            "playbackRate": 1.25,
+            "sha256": "46b9b0c2344bbe904911d49d58c7a2b515f1fda59d23aecf1473313795f4ed84"
+          },
+          {
+            "id": "closing-live",
+            "file": "media/clips/closing-live.mp4",
+            "sourceDuration": 2.0833333333339397,
+            "targetDuration": 1.6666666666666679,
+            "playbackRate": 1.25,
+            "sha256": "4f2bf6c17da685033e97972871529792f392fdaf7f3e0032ff9b3f92ebc09bf7"
+          },
+          {
+            "id": "teaser-promise-live",
+            "file": "media/clips/teaser-promise-live.mp4",
+            "sourceDuration": 2.91666666666697,
+            "targetDuration": 2.333333333333332,
+            "playbackRate": 1.25,
+            "sha256": "6a4dd54f8ddc8b8d2f1da8b8ef8010af4cb3b08ead90d1b036514be918fc9080"
+          }
+        ],
+        "voiceEvents": [
+          {
+            "id": "opening",
+            "start": 0,
+            "sourceDuration": 3.25,
+            "targetDuration": 2.6,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "first-viewer",
+            "start": 6.866666666666666,
+            "sourceDuration": 3,
+            "targetDuration": 2.4,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "gift-reaction",
+            "start": 10.9,
+            "sourceDuration": 1.875,
+            "targetDuration": 1.5,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "bingo",
+            "start": 17.3,
+            "sourceDuration": 2.875,
+            "targetDuration": 2.3,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "closing",
+            "start": 21,
+            "sourceDuration": 1.875,
+            "targetDuration": 1.5,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "teaser-promise",
+            "start": 22.666666666666668,
+            "sourceDuration": 2.66666666666697,
+            "targetDuration": 2.1333333333333333,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          }
+        ],
+        "voiceSha256": "746598efcdd5315645b514e1ddf19407279b64713c96cc3acbdf049565857a24",
+        "musicSha256": "230950c00dd3e04378172b470fee3299b5aef87c9d18be52bd7f6b3093bf9be5"
+      },
       "outputs": [
         {
           "file": "a-baibai/videos/a-baibai-reference.mp4",
-          "sha256": "3fe3d98326b2cd55082d28a1405f8f897aa5433175c843dab8a564d32637117e",
-          "bytes": 56436990,
+          "sha256": "e75ecc08343047f21934f463b2f7033aa39f1f61d2040accabc03499213ec6e9",
+          "bytes": 56882672,
           "duration": 25,
           "frames": 750,
           "audioStreams": 1,
@@ -57,8 +189,8 @@
         },
         {
           "file": "a-baibai/videos/a-baibai-voice-only.mp4",
-          "sha256": "c667881340ff5617f812f7e6e0c4ca075cccdae6bd85fe934c741720756499cb",
-          "bytes": 56015512,
+          "sha256": "3b3dc84f89e66b29a460a2c07d3ebe3c1b9c8dca2bf709487eef7cdcb866996e",
+          "bytes": 56447308,
           "duration": 25,
           "frames": 750,
           "audioStreams": 1,
@@ -71,35 +203,185 @@
       "audio": {
         "reference": {
           "integratedLufs": -16.1,
-          "truePeakDbtp": -1.6
+          "truePeakDbtp": -1.9
         },
         "voiceOnly": {
-          "integratedLufs": -16.1,
-          "truePeakDbtp": -3.2
+          "integratedLufs": -16,
+          "truePeakDbtp": -3.6
         }
       },
-      "projectSha256": "a88e6194a6a572c9e849fba23caf59c7357c0aaa6f9e1e1ba73d3157f2ec724e",
-      "textOnlyProjectSha256": "61ab04d9e11d68d1843d52d2e28f08b655065660a66e98c254874becd52112c1",
-      "layoutSha256": "85bee2709c5acb30403d75fcaf8e54264864ee3d53993b8773ea9f39b7aee2d6",
-      "structureChecks": 24,
-      "nativeCameraSamples": 65,
-      "backgroundCoverageSamples": 129,
-      "reviewedFrameImages": 64,
-      "fullFrameWipes": 17,
-      "technicalPassed": true,
-      "nativeReopenAndRender": true
+      "characterFreePreview": {
+        "containsCharacter": false,
+        "containsArchive": false,
+        "aiViewingAllowed": true,
+        "projectSha256": "98caf07a4fc5bfbfba82cc91ac6b4c1efba112655d23df4b0679e561bb5d6dcc",
+        "mediaReferences": [
+          "bingo-paper-background.png",
+          "bingo-paper-background.png",
+          "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Osayu-Bingo\\2026-10-26\\archive-jet-v7\\media\\bingo-paper-background.png"
+        ],
+        "backgroundSha256": "beeb93c9ffb791e113704cf8144db40858a7340803c1be860a3744e3a1edd779",
+        "backgroundManifestSha256": "5b539569a0cc05444bd8dfb3f16152fe761fdf3f95f1d6d02e354262313d76c8"
+      },
+      "nativeReopenAndRender": true,
+      "audioCutMode": "direct-container-seek-continuous-samples",
+      "playbackRate": 1.25,
+      "pitchPreserved": true,
+      "audioContinuityReviewed": false,
+      "musicGainMode": "constant",
+      "musicStart": 0,
+      "musicMetadataFile": "a-baibai/qa/music-source.json",
+      "musicMetadataSha256": "a48fba8a390e025e73943187f1ce8dd1980cbd8f9658b7262405f2e0c777e925",
+      "finalMixes": [
+        {
+          "kind": "reference",
+          "metadataFile": "a-baibai/qa/reference-fixed-mix.json",
+          "metadataSha256": "4d06e0550d4f536952597f6d5e9d1d45a457f2e7baae74c49798f3bf95bd4f1e",
+          "busGain": 0.9772372209558107,
+          "busGainDb": -0.19999999999999996,
+          "pcmSha256": "5a6ebb48ba287133cb08c5ca555472873cfd35220d5b07040978fb15fa722236"
+        },
+        {
+          "kind": "voice-only",
+          "metadataFile": "a-baibai/qa/voice-only-fixed-mix.json",
+          "metadataSha256": "448bcadf0152ea7442c2d6cc346fc456bacf0372a34c0cc26e0fd79172d0d561",
+          "busGain": 0.9660508789898132,
+          "busGainDb": -0.3000000000000007,
+          "pcmSha256": "c0b9678b32979fe43ac0eb20af486bbe8018aed201f189a5b4e6c8dea41a3e68"
+        }
+      ],
+      "humanRealtimeReview": false,
+      "archiveImageAiViewingPerformed": false,
+      "tiktokDeviceReview": false,
+      "ownerCreativeApproval": false
     },
     {
       "id": "b-patissier",
       "title": "B｜ありがとうの紙ふぶき",
-      "song": "キス・ミー・パティシエ",
-      "duration": 25,
-      "frames": 750,
+      "technicalPassed": true,
+      "renderInputProjectSha256": "be8efef0d3f362eefffb3a95ba1173efd6a38bb2db4485590d293536fcd642e9",
+      "renderInputAssets": {
+        "backgroundSha256": "beeb93c9ffb791e113704cf8144db40858a7340803c1be860a3744e3a1edd779",
+        "backgroundManifestSha256": "5b539569a0cc05444bd8dfb3f16152fe761fdf3f95f1d6d02e354262313d76c8",
+        "characterOriginalSha256": "89729c246851b636dd535fb077e2098dca9f59f32e7cd19846e0a09e0aaf57c2",
+        "characterCutoutSha256": "e9947701b3ae601f8ef098c4e2ab0e55e76d0fa32f3c5aef0d08dca015b36bef",
+        "version": "archive-jet-v7",
+        "playbackRate": 1.25,
+        "audioCutMode": "direct-container-seek-continuous-samples",
+        "editManifestSha256": "605a112a883cfb309914179b37415e91607e265082b73ca43e72097fe5b258ba",
+        "sourceArchiveSha256": "8d1241d546b2d2298125980d46da012cb909bbd91971c09a4ae822e37c5ffcfe",
+        "musicGainMode": "constant",
+        "musicStart": 0,
+        "musicMetadataSha256": "1134c349af5845167d3ec59fcbeaa52e5a9b219fe72f1c2d48a4ea317a9f03dc",
+        "musicRawPcmSha256": "406e5071da9d7a653173f901e0ce0d2c345885b631043fc7fa0a1fde8b0b4079",
+        "clips": [
+          {
+            "id": "opening-live",
+            "file": "media/clips/opening-live.mp4",
+            "sourceDuration": 3.25,
+            "targetDuration": 2.6,
+            "playbackRate": 1.25,
+            "sha256": "d30f7f51a9b20fed23387e8e752d1f186059ff89558a1d870e9705e21d861670"
+          },
+          {
+            "id": "first-viewer-live",
+            "file": "media/clips/first-viewer-live.mp4",
+            "sourceDuration": 3,
+            "targetDuration": 2.4000000000000012,
+            "playbackRate": 1.25,
+            "sha256": "b675aff32a0c8cd298621d343433af22814bdc51553932850e50a130541f7066"
+          },
+          {
+            "id": "gift-reaction-live",
+            "file": "media/clips/gift-reaction-live.mp4",
+            "sourceDuration": 1.875,
+            "targetDuration": 1.5,
+            "playbackRate": 1.25,
+            "sha256": "6d094603c14fee2d5ee41a4257ba75e6fd0fb813216149b104f07dec3f179e6b"
+          },
+          {
+            "id": "bingo-live",
+            "file": "media/clips/bingo-live.mp4",
+            "sourceDuration": 2.875,
+            "targetDuration": 2.3000000000000007,
+            "playbackRate": 1.25,
+            "sha256": "46b9b0c2344bbe904911d49d58c7a2b515f1fda59d23aecf1473313795f4ed84"
+          },
+          {
+            "id": "closing-live",
+            "file": "media/clips/closing-live.mp4",
+            "sourceDuration": 2.0833333333339397,
+            "targetDuration": 1.6666666666666679,
+            "playbackRate": 1.25,
+            "sha256": "4f2bf6c17da685033e97972871529792f392fdaf7f3e0032ff9b3f92ebc09bf7"
+          },
+          {
+            "id": "teaser-promise-live",
+            "file": "media/clips/teaser-promise-live.mp4",
+            "sourceDuration": 2.91666666666697,
+            "targetDuration": 2.333333333333332,
+            "playbackRate": 1.25,
+            "sha256": "6a4dd54f8ddc8b8d2f1da8b8ef8010af4cb3b08ead90d1b036514be918fc9080"
+          }
+        ],
+        "voiceEvents": [
+          {
+            "id": "opening",
+            "start": 0,
+            "sourceDuration": 3.25,
+            "targetDuration": 2.6,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "first-viewer",
+            "start": 6.866666666666666,
+            "sourceDuration": 3,
+            "targetDuration": 2.4,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "gift-reaction",
+            "start": 10.9,
+            "sourceDuration": 1.875,
+            "targetDuration": 1.5,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "bingo",
+            "start": 17.3,
+            "sourceDuration": 2.875,
+            "targetDuration": 2.3,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "closing",
+            "start": 21,
+            "sourceDuration": 1.875,
+            "targetDuration": 1.5,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "teaser-promise",
+            "start": 22.666666666666668,
+            "sourceDuration": 2.66666666666697,
+            "targetDuration": 2.1333333333333333,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          }
+        ],
+        "voiceSha256": "746598efcdd5315645b514e1ddf19407279b64713c96cc3acbdf049565857a24",
+        "musicSha256": "f3016f841b2b6c5eb139cb360641c821770a5dfb62346deb591956cc04aba20f"
+      },
       "outputs": [
         {
           "file": "b-patissier/videos/b-patissier-reference.mp4",
-          "sha256": "4efb5a55d86e11c54ef3c9dfecb707aac338aca4371571aca18fa7684b94b097",
-          "bytes": 56127856,
+          "sha256": "c237dc81cbc16656b984542875655bf66bb768c42dd5d7740be257b6023d6c3c",
+          "bytes": 57129397,
           "duration": 25,
           "frames": 750,
           "audioStreams": 1,
@@ -110,8 +392,8 @@
         },
         {
           "file": "b-patissier/videos/b-patissier-voice-only.mp4",
-          "sha256": "05ac94f727daf0173382cc8acaa4b257c8c2bed62994144e6bbbff28eedfb686",
-          "bytes": 55706983,
+          "sha256": "13cbf9bfbdad74d5e668f7bdd3562c3dc2a73799d0e79cd6dcc86d42a2b3d5c2",
+          "bytes": 56698342,
           "duration": 25,
           "frames": 750,
           "audioStreams": 1,
@@ -123,36 +405,186 @@
       ],
       "audio": {
         "reference": {
-          "integratedLufs": -16.5,
-          "truePeakDbtp": -2.7
+          "integratedLufs": -16.6,
+          "truePeakDbtp": -1.9
         },
         "voiceOnly": {
-          "integratedLufs": -16.1,
-          "truePeakDbtp": -3.2
+          "integratedLufs": -16,
+          "truePeakDbtp": -3.6
         }
       },
-      "projectSha256": "b1a95ff602ea4193eacaa221570f8f6b5b5dee00bef154bea1d3c1373589303d",
-      "textOnlyProjectSha256": "a6d40ff8ab187161df87ca7305d2ac6d52393e7474f1d5036b9ae42427ccf01c",
-      "layoutSha256": "a0c32891e1c893393d4f57f3e65c622d027eddf20ea3ea7d36d12716d1f8da18",
-      "structureChecks": 24,
-      "nativeCameraSamples": 61,
-      "backgroundCoverageSamples": 121,
-      "reviewedFrameImages": 62,
-      "fullFrameWipes": 16,
-      "technicalPassed": true,
-      "nativeReopenAndRender": true
+      "characterFreePreview": {
+        "containsCharacter": false,
+        "containsArchive": false,
+        "aiViewingAllowed": true,
+        "projectSha256": "83638133d2d73bc5682edc4e727d6141dacbd265ea01fe10768632c31a3cc86d",
+        "mediaReferences": [
+          "bingo-paper-background.png",
+          "bingo-paper-background.png",
+          "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Osayu-Bingo\\2026-10-26\\archive-jet-v7\\media\\bingo-paper-background.png"
+        ],
+        "backgroundSha256": "beeb93c9ffb791e113704cf8144db40858a7340803c1be860a3744e3a1edd779",
+        "backgroundManifestSha256": "5b539569a0cc05444bd8dfb3f16152fe761fdf3f95f1d6d02e354262313d76c8"
+      },
+      "nativeReopenAndRender": true,
+      "audioCutMode": "direct-container-seek-continuous-samples",
+      "playbackRate": 1.25,
+      "pitchPreserved": true,
+      "audioContinuityReviewed": false,
+      "musicGainMode": "constant",
+      "musicStart": 0,
+      "musicMetadataFile": "b-patissier/qa/music-source.json",
+      "musicMetadataSha256": "1134c349af5845167d3ec59fcbeaa52e5a9b219fe72f1c2d48a4ea317a9f03dc",
+      "finalMixes": [
+        {
+          "kind": "reference",
+          "metadataFile": "b-patissier/qa/reference-fixed-mix.json",
+          "metadataSha256": "19372dcda7c79642550d2f0e0f3cb33e031733889b9bd59bcc0fc9174f092bec",
+          "busGain": 0.9120108393559098,
+          "busGainDb": -0.8,
+          "pcmSha256": "34d40048962ff7cf2212c544a48f2e1ff76904dda0f5a0a2e2672a04dcd6747c"
+        },
+        {
+          "kind": "voice-only",
+          "metadataFile": "b-patissier/qa/voice-only-fixed-mix.json",
+          "metadataSha256": "7c1deb06d7f7ff393ad56646f5fc1c8c471c34f027b6751b080399b4718bdd4e",
+          "busGain": 0.9660508789898132,
+          "busGainDb": -0.3000000000000007,
+          "pcmSha256": "c0b9678b32979fe43ac0eb20af486bbe8018aed201f189a5b4e6c8dea41a3e68"
+        }
+      ],
+      "humanRealtimeReview": false,
+      "archiveImageAiViewingPerformed": false,
+      "tiktokDeviceReview": false,
+      "ownerCreativeApproval": false
     },
     {
       "id": "c-disco",
       "title": "C｜ビンゴ・パレード",
-      "song": "チョコレイト・ディスコ",
-      "duration": 25,
-      "frames": 750,
+      "technicalPassed": true,
+      "renderInputProjectSha256": "4c874c7db926dd5d38a191c858265ea1da3bb095ecf03c7a875d84fb821d6e98",
+      "renderInputAssets": {
+        "backgroundSha256": "beeb93c9ffb791e113704cf8144db40858a7340803c1be860a3744e3a1edd779",
+        "backgroundManifestSha256": "5b539569a0cc05444bd8dfb3f16152fe761fdf3f95f1d6d02e354262313d76c8",
+        "characterOriginalSha256": "89729c246851b636dd535fb077e2098dca9f59f32e7cd19846e0a09e0aaf57c2",
+        "characterCutoutSha256": "e9947701b3ae601f8ef098c4e2ab0e55e76d0fa32f3c5aef0d08dca015b36bef",
+        "version": "archive-jet-v7",
+        "playbackRate": 1.25,
+        "audioCutMode": "direct-container-seek-continuous-samples",
+        "editManifestSha256": "605a112a883cfb309914179b37415e91607e265082b73ca43e72097fe5b258ba",
+        "sourceArchiveSha256": "8d1241d546b2d2298125980d46da012cb909bbd91971c09a4ae822e37c5ffcfe",
+        "musicGainMode": "constant",
+        "musicStart": 0,
+        "musicMetadataSha256": "ae286d683aa8813659de005cf4a8fdad97205573c8f12affea42839f977af38c",
+        "musicRawPcmSha256": "1f2aae24dfb91de7b85b362d48722e69f0e62604d8c4f93b1cdbba627e8406f5",
+        "clips": [
+          {
+            "id": "opening-live",
+            "file": "media/clips/opening-live.mp4",
+            "sourceDuration": 3.25,
+            "targetDuration": 2.6,
+            "playbackRate": 1.25,
+            "sha256": "d30f7f51a9b20fed23387e8e752d1f186059ff89558a1d870e9705e21d861670"
+          },
+          {
+            "id": "first-viewer-live",
+            "file": "media/clips/first-viewer-live.mp4",
+            "sourceDuration": 3,
+            "targetDuration": 2.4000000000000012,
+            "playbackRate": 1.25,
+            "sha256": "b675aff32a0c8cd298621d343433af22814bdc51553932850e50a130541f7066"
+          },
+          {
+            "id": "gift-reaction-live",
+            "file": "media/clips/gift-reaction-live.mp4",
+            "sourceDuration": 1.875,
+            "targetDuration": 1.5,
+            "playbackRate": 1.25,
+            "sha256": "6d094603c14fee2d5ee41a4257ba75e6fd0fb813216149b104f07dec3f179e6b"
+          },
+          {
+            "id": "bingo-live",
+            "file": "media/clips/bingo-live.mp4",
+            "sourceDuration": 2.875,
+            "targetDuration": 2.3000000000000007,
+            "playbackRate": 1.25,
+            "sha256": "46b9b0c2344bbe904911d49d58c7a2b515f1fda59d23aecf1473313795f4ed84"
+          },
+          {
+            "id": "closing-live",
+            "file": "media/clips/closing-live.mp4",
+            "sourceDuration": 2.0833333333339397,
+            "targetDuration": 1.6666666666666679,
+            "playbackRate": 1.25,
+            "sha256": "4f2bf6c17da685033e97972871529792f392fdaf7f3e0032ff9b3f92ebc09bf7"
+          },
+          {
+            "id": "teaser-promise-live",
+            "file": "media/clips/teaser-promise-live.mp4",
+            "sourceDuration": 2.91666666666697,
+            "targetDuration": 2.333333333333332,
+            "playbackRate": 1.25,
+            "sha256": "6a4dd54f8ddc8b8d2f1da8b8ef8010af4cb3b08ead90d1b036514be918fc9080"
+          }
+        ],
+        "voiceEvents": [
+          {
+            "id": "opening",
+            "start": 0,
+            "sourceDuration": 3.25,
+            "targetDuration": 2.6,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "first-viewer",
+            "start": 6.866666666666666,
+            "sourceDuration": 3,
+            "targetDuration": 2.4,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "gift-reaction",
+            "start": 10.9,
+            "sourceDuration": 1.875,
+            "targetDuration": 1.5,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "bingo",
+            "start": 17.3,
+            "sourceDuration": 2.875,
+            "targetDuration": 2.3,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "closing",
+            "start": 21,
+            "sourceDuration": 1.875,
+            "targetDuration": 1.5,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          },
+          {
+            "id": "teaser-promise",
+            "start": 22.666666666666668,
+            "sourceDuration": 2.66666666666697,
+            "targetDuration": 2.1333333333333333,
+            "playbackRate": 1.25,
+            "pitchPreserved": true
+          }
+        ],
+        "voiceSha256": "746598efcdd5315645b514e1ddf19407279b64713c96cc3acbdf049565857a24",
+        "musicSha256": "e08f5ed0bbce5bc165c24e2ac4beec84e5025a8ce0628c34f003471eb4c1f8db"
+      },
       "outputs": [
         {
           "file": "c-disco/videos/c-disco-reference.mp4",
-          "sha256": "fd9942d9b5afc6b90ee1642634e7375715d931c2817b6acc1623a734a037246d",
-          "bytes": 56186951,
+          "sha256": "18b5209ea3738807b4873bac0af999e7b65ab4ac706e9928c080f5160ce09fda",
+          "bytes": 57359151,
           "duration": 25,
           "frames": 750,
           "audioStreams": 1,
@@ -163,8 +595,8 @@
         },
         {
           "file": "c-disco/videos/c-disco-voice-only.mp4",
-          "sha256": "a727de6bfe94fc4f910cc542a4044c635bb6d2068f1a3893d9558bda59c150a2",
-          "bytes": 55762406,
+          "sha256": "b7607d9e03f7777f883c104ad7c6b3e1e076856cfebcc54c68c91e06d8eca8d3",
+          "bytes": 56926052,
           "duration": 25,
           "frames": 750,
           "audioStreams": 1,
@@ -176,299 +608,130 @@
       ],
       "audio": {
         "reference": {
-          "integratedLufs": -16.2,
-          "truePeakDbtp": -3.5
+          "integratedLufs": -16.1,
+          "truePeakDbtp": -1.8
         },
         "voiceOnly": {
-          "integratedLufs": -16.1,
-          "truePeakDbtp": -3.2
+          "integratedLufs": -16,
+          "truePeakDbtp": -3.6
         }
       },
-      "projectSha256": "2d5f76fbde2df4eb49b74f5f42453b1ebead60ce3fe0b9fb642edc5ffeaab7ce",
-      "textOnlyProjectSha256": "0fd5c13d73a03a8d9205f302b187a9677e1522ba56ffda95119cb5a33f81c4fa",
-      "layoutSha256": "c161c7a1ca7feb192f03e8ab9cfd6e7d3a5d3ec9f3f2161662c041b2f3745db7",
-      "structureChecks": 24,
-      "nativeCameraSamples": 64,
-      "backgroundCoverageSamples": 127,
-      "reviewedFrameImages": 63,
-      "fullFrameWipes": 18,
-      "technicalPassed": true,
-      "nativeReopenAndRender": true
+      "characterFreePreview": {
+        "containsCharacter": false,
+        "containsArchive": false,
+        "aiViewingAllowed": true,
+        "projectSha256": "54fba914d339f58f937d2c768709dd8a1e7e87728a3f19d2886e9f50d8133cf6",
+        "mediaReferences": [
+          "bingo-paper-background.png",
+          "bingo-paper-background.png",
+          "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Osayu-Bingo\\2026-10-26\\archive-jet-v7\\media\\bingo-paper-background.png"
+        ],
+        "backgroundSha256": "beeb93c9ffb791e113704cf8144db40858a7340803c1be860a3744e3a1edd779",
+        "backgroundManifestSha256": "5b539569a0cc05444bd8dfb3f16152fe761fdf3f95f1d6d02e354262313d76c8"
+      },
+      "nativeReopenAndRender": true,
+      "audioCutMode": "direct-container-seek-continuous-samples",
+      "playbackRate": 1.25,
+      "pitchPreserved": true,
+      "audioContinuityReviewed": false,
+      "musicGainMode": "constant",
+      "musicStart": 0,
+      "musicMetadataFile": "c-disco/qa/music-source.json",
+      "musicMetadataSha256": "ae286d683aa8813659de005cf4a8fdad97205573c8f12affea42839f977af38c",
+      "finalMixes": [
+        {
+          "kind": "reference",
+          "metadataFile": "c-disco/qa/reference-fixed-mix.json",
+          "metadataSha256": "cbf53fc693b415d19bd4ff8a698d02af041e81dbd1f0e3f794da64c2468ddce6",
+          "busGain": 0.9772372209558108,
+          "busGainDb": -0.1999999999999993,
+          "pcmSha256": "c2f386f156091608684e5279587e8e55391d6469f3ca56cd864887eb598ff65b"
+        },
+        {
+          "kind": "voice-only",
+          "metadataFile": "c-disco/qa/voice-only-fixed-mix.json",
+          "metadataSha256": "0aa94b8a7e84067ac15cab5e168dcf82933cef39cf7c80476d15de7192d84b12",
+          "busGain": 0.9660508789898132,
+          "busGainDb": -0.3000000000000007,
+          "pcmSha256": "c0b9678b32979fe43ac0eb20af486bbe8018aed201f189a5b4e6c8dea41a3e68"
+        }
+      ],
+      "humanRealtimeReview": false,
+      "archiveImageAiViewingPerformed": false,
+      "tiktokDeviceReview": false,
+      "ownerCreativeApproval": false
     }
   ],
   "qa": {
-    "auditStatus": "PASS_NATIVE_ARCHIVE_JET",
-    "auditSha256": "7ef955aa042a703b6092b66f05b43b01f85ff564949f85de8120fbcd30e560c4",
-    "visualStatus": "PASS_TEXT_ONLY_VISUAL",
-    "visualSha256": "6194001a142949452ed0a82f3cc3235d6dd8634dace3be646a02707531e81134",
-    "reviewedFrameImages": 189,
-    "nativeCameraSamples": 190,
-    "backgroundCoverageSamples": 377,
-    "sourceAudioStatus": "PASS_PITCH_CONTINUITY_SOURCE",
-    "sourceAudioReportSha256": "e1f13a39d754e0e4ebce805919eb0864f797cb1f08df210f3f9ccc7c99540ece",
-    "finalAudioStatus": "PASS_PITCH_CONTINUITY_FINAL",
-    "finalAudioReportSha256": "ac75fa0f5e301a7c68a5c2905cf1333b3aa14090289707a8a3bd4a759d4181e9",
-    "finalAudioVariants": 6,
-    "finalAudioChecks": {
-      "tonePitchAndNegativeControl": true,
-      "allVoiceChecks": true,
-      "originalArchiveHash": true,
-      "manifestUnchanged": true,
-      "finalAAC": true,
-      "oldInsertedHoleNegativeControlRejected": true
-    },
-    "pitchCalibration": {
-      "method": "Known 440Hz tone through real installed atempo; wrong-pitch speedup is a negative control.",
-      "inputHz": 440,
-      "inputSeconds": 4,
-      "expectedOutputSeconds": 3.2,
-      "frequencyToleranceHz": 1,
-      "durationToleranceSeconds": 0.02,
-      "results": {
-        "atempo125": {
-          "frequencyHz": 439.9543525908425,
-          "seconds": 3.200375,
-          "filter": "atempo=1.25",
-          "command": [
-            "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
-            "-v",
-            "error",
-            "-i",
-            "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Osayu-Bingo\\2026-10-26\\archive-jet-v6\\qa\\audio-check\\calibration\\tone-440Hz-4s.wav",
-            "-vn",
-            "-af",
-            "atempo=1.25",
-            "-ac",
-            "2",
-            "-ar",
-            "48000",
-            "-f",
-            "f32le",
-            "-"
-          ]
-        },
-        "wrongPitchControl": {
-          "frequencyHz": 550,
-          "seconds": 3.2,
-          "filter": "asetrate=60000,aresample=48000",
-          "command": [
-            "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
-            "-v",
-            "error",
-            "-i",
-            "\\\\wsl.localhost\\Ubuntu\\home\\pui\\Videos\\Osayu-Bingo\\2026-10-26\\archive-jet-v6\\qa\\audio-check\\calibration\\tone-440Hz-4s.wav",
-            "-vn",
-            "-af",
-            "asetrate=60000,aresample=48000",
-            "-ac",
-            "2",
-            "-ar",
-            "48000",
-            "-f",
-            "f32le",
-            "-"
-          ]
-        }
-      },
-      "pitchPreserved": true,
-      "durationRetimed": true,
-      "wrongPitchControlRejected": true,
-      "humanListening": false,
-      "passed": true
-    },
-    "oldInsertedHoleNegativeControl": {
-      "file": "/home/pui/Videos/Osayu-Bingo/2026-10-26/archive-jet-v6/qa/audio-check/negative-control-old-pad.wav",
-      "sha256": "da68834c2d22d16ecea3e0e7e60fe8315644c72b64b0ca1d3a43a4950d718ba8",
-      "metrics": {
-        "frames": 128000,
-        "seconds": 2.6666666666666665,
-        "interiorExclusionSeconds": [
-          0.02,
-          0.02
-        ],
-        "nearZeroThreshold": 0.000030517578125,
-        "minimumHoleMs": 2,
-        "internalHoleCount": 17,
-        "internalHoleMs": 118.08333333333333,
-        "internalHoles": [
-          {
-            "start": 0.03270833333333333,
-            "durationMs": 6.770833333333333
-          },
-          {
-            "start": 0.1935,
-            "durationMs": 8
-          },
-          {
-            "start": 0.31154166666666666,
-            "durationMs": 10.104166666666666
-          },
-          {
-            "start": 0.49772916666666667,
-            "durationMs": 6.875
-          },
-          {
-            "start": 0.6596458333333334,
-            "durationMs": 5.854166666666667
-          },
-          {
-            "start": 0.8225208333333334,
-            "durationMs": 5.75
-          },
-          {
-            "start": 0.9628541666666667,
-            "durationMs": 6.770833333333333
-          },
-          {
-            "start": 1.1247708333333333,
-            "durationMs": 6.6875
-          },
-          {
-            "start": 1.309625,
-            "durationMs": 7.125
-          },
-          {
-            "start": 1.4714791666666667,
-            "durationMs": 6.208333333333333
-          },
-          {
-            "start": 1.6129791666666666,
-            "durationMs": 6.875
-          },
-          {
-            "start": 1.7772916666666667,
-            "durationMs": 4.625
-          },
-          {
-            "start": 1.9367083333333333,
-            "durationMs": 6.875
-          },
-          {
-            "start": 2.1217083333333333,
-            "durationMs": 7.125
-          },
-          {
-            "start": 2.2388333333333335,
-            "durationMs": 8.020833333333334
-          },
-          {
-            "start": 2.401625,
-            "durationMs": 7.145833333333333
-          },
-          {
-            "start": 2.5866875,
-            "durationMs": 7.270833333333333
-          }
-        ],
-        "peak": 0.66864013671875,
-        "rms": 0.09834418445825577,
-        "maxInteriorSampleJump": 0.411712646484375,
-        "jumpP999": 0.18846704065799713,
-        "firstSampleMax": 0.386077880859375,
-        "lastSampleMax": 0.01995849609375,
-        "first20msRms": 0.294075071811676,
-        "last20msRms": 0.012007179670035839
-      },
-      "rejected": true,
-      "knownSourceWordHole": 6532.6735
-    },
-    "mandatoryVisualFindings": [],
-    "allMoviesFullyDecoded": true,
-    "archiveVideoInputToAI": false,
-    "characterImageInputToAI": false,
-    "currentModuleMatchesAllSixPreparedJsx": true
-  },
-  "sourceSha256": {
-    "README.md": "567baa98273a08ef7930e5629aa5504c4949f8f1bef3aef3c1f4c9b7e666e1c2",
-    "audio-check.mjs": "334325efcfe829faf94740de962bf5dc66ba415160a2bb08032be122df1443b7",
-    "audio-check.py": "f3d7a8d8534e2ba54fb8b3f74abcc36458963a5d315b3df3c0a377f47a5107f6",
-    "audit.mjs": "6ccaebc5af8d717767cde7ef97e54c9d6934ac0f234e8e102e4ad638f68061f7",
-    "base-graphics.mjs": "41ed7fe262160a6f50ce0a42e6562eeb587b371308ff655c9eec8936020b5e48",
-    "build-edit.mjs": "f455f7740169474fea4a0d6c68ef4dea2e2daa4eb385b32bac673481b0d80d9a",
-    "config.mjs": "9740a5e189c7194f9c33124049749f6631b8b63e8e6cfe28d31c4e9706527848",
-    "insert-edit.mjs": "e811a6f3cfa1545a32012f6c87188c6ccad446dec8af59c51a160b5ffe2686cd",
-    "motion.mjs": "a146a9ed16098ecbc3f97bd4776bc7b501a4ab43c0b5225dd548577a5a5cc4a4",
-    "package.mjs": "20a83d9a51d83723d6dd748077073da93ef000e395b70aca466167a245d4d7f1",
-    "pipeline.mjs": "5d5c1114f10e8bfd408402adead0c2c74741ae335ab6e17aaad3c46131a12675",
-    "背景生成プロンプト.md": "888a107f5cc8fb948e1d4e39f60c61f50bc841d2f35f2fa8c24d9f7c28b9b056",
-    "音源後付けガイド.md": "5d2e02c457f95e75e599977e05b720ec61cfaa08dd161229a6be55b14eba967d"
-  },
-  "portableDelivery": {
-    "status": "PASS_PORTABLE_NATIVE_PACKAGE",
-    "destination": "F:\\Users\\pui\\Documents\\gara\\ビンゴ達成ありがとう_切り抜き差込版_音声修正_20261026",
-    "nativeProjects": 9,
-    "movieCount": 6,
-    "japaneseNames": true,
-    "nativeReopenSaveAndRender": true,
-    "characterLayerPropertiesUnchanged": true,
-    "archiveLayerPropertiesUnchanged": true,
-    "wholeFrameKeysAndParentsUnchanged": true,
-    "report": "制作データ/qa/package.json",
-    "plans": [
+    "nativeStatus": "PASS_NATIVE_ARCHIVE_JET",
+    "structureChecksPerPlan": [
       {
         "id": "a-baibai",
-        "movies": [
-          {
-            "file": "A案_倍倍FIGHT_切り抜き1.25倍_曲入り確認用.mp4",
-            "sha256": "3fe3d98326b2cd55082d28a1405f8f897aa5433175c843dab8a564d32637117e",
-            "bytes": 56436990
-          },
-          {
-            "file": "A案_倍倍FIGHT_切り抜き1.25倍_配信音声のみ.mp4",
-            "sha256": "c667881340ff5617f812f7e6e0c4ca075cccdae6bd85fe934c741720756499cb",
-            "bytes": 56015512
-          }
-        ],
-        "nativeReopenSaveAndRender": true,
-        "characterLayerPropertiesUnchanged": true,
-        "archiveLayerPropertiesUnchanged": true,
-        "wholeFrameKeysAndParentsUnchanged": true
+        "count": 26,
+        "passed": true,
+        "matchingSpeech": true,
+        "liveSampleCount": 32,
+        "minimumLiveSourceMarginPixels": 18.229370006369436
       },
       {
         "id": "b-patissier",
-        "movies": [
-          {
-            "file": "B案_キスミーパティシエ_切り抜き1.25倍_曲入り確認用.mp4",
-            "sha256": "4efb5a55d86e11c54ef3c9dfecb707aac338aca4371571aca18fa7684b94b097",
-            "bytes": 56127856
-          },
-          {
-            "file": "B案_キスミーパティシエ_切り抜き1.25倍_配信音声のみ.mp4",
-            "sha256": "05ac94f727daf0173382cc8acaa4b257c8c2bed62994144e6bbbff28eedfb686",
-            "bytes": 55706983
-          }
-        ],
-        "nativeReopenSaveAndRender": true,
-        "characterLayerPropertiesUnchanged": true,
-        "archiveLayerPropertiesUnchanged": true,
-        "wholeFrameKeysAndParentsUnchanged": true
+        "count": 26,
+        "passed": true,
+        "matchingSpeech": true,
+        "liveSampleCount": 32,
+        "minimumLiveSourceMarginPixels": 25.92042858458558
       },
       {
         "id": "c-disco",
-        "movies": [
-          {
-            "file": "C案_チョコレイトディスコ_切り抜き1.25倍_曲入り確認用.mp4",
-            "sha256": "fd9942d9b5afc6b90ee1642634e7375715d931c2817b6acc1623a734a037246d",
-            "bytes": 56186951
-          },
-          {
-            "file": "C案_チョコレイトディスコ_切り抜き1.25倍_配信音声のみ.mp4",
-            "sha256": "a727de6bfe94fc4f910cc542a4044c635bb6d2068f1a3893d9558bda59c150a2",
-            "bytes": 55762406
-          }
-        ],
-        "nativeReopenSaveAndRender": true,
-        "characterLayerPropertiesUnchanged": true,
-        "archiveLayerPropertiesUnchanged": true,
-        "wholeFrameKeysAndParentsUnchanged": true
+        "count": 26,
+        "passed": true,
+        "matchingSpeech": true,
+        "liveSampleCount": 32,
+        "minimumLiveSourceMarginPixels": 17.19553072231281
       }
-    ]
+    ],
+    "cameraKeys": 141,
+    "backgroundCoverageSamples": 279,
+    "nativeAuditSha256": "527f64b03a29965042a49e43e929a306797bcbc43d52f37c3236d91654b7520d",
+    "safeVisualStatus": "PASS_TEXT_ONLY_VISUAL",
+    "safePreviewFrames": 223,
+    "visualSha256": "0ce8ca3f5655a84663c219ac69b1da2b9e7bb56614a1f01ed34842d47ed29077",
+    "sourceParitySha256": "68651f3dcc78e5c84c776f2201ef6d0b6821863f8c57a5a255b23e8ac979eaaf",
+    "sourceParityStatus": "PASS_CURRENT_MOTION_SOURCE_MATCHES_PREPARED_JSX",
+    "characterImageInputToAI": false,
+    "archiveVideoInputToAI": false,
+    "wholeFrameParentShared": true
+  },
+  "sourceSha256": {
+    "README.md": "34d997577238076132fbecd679d95a1e8cbd49c59ad2d199d49e13c58373e082",
+    "audio-check.mjs": "334325efcfe829faf94740de962bf5dc66ba415160a2bb08032be122df1443b7",
+    "audio-check.py": "817c05068bac556bc25490d114432ca83db6e4f7c6de32230159f318551cd136",
+    "audit.mjs": "3f47f3f7ea12ce499728bbadaab1462a360f94346f19b62be06fdb716f32fe46",
+    "base-graphics.mjs": "41ed7fe262160a6f50ce0a42e6562eeb587b371308ff655c9eec8936020b5e48",
+    "build-edit.mjs": "f455f7740169474fea4a0d6c68ef4dea2e2daa4eb385b32bac673481b0d80d9a",
+    "config.mjs": "1e31c151f9dac07f7ac7573aa367d27736b294bacea5bed54d9814c2dd87b949",
+    "insert-edit.mjs": "2e8c01602b27ccef255c96d6eb92f48257844a6b469b5042d9fb33eb639c43b3",
+    "motion.mjs": "2641ebacbcebcf7cb00e17ae90c6fbf45aab9feddacdb9c8a5b65ee2f89d5e44",
+    "music-check.mjs": "078021e1ed9a435c01d5db371ed360deb59af89fba8943bdf51bbcd407708baa",
+    "music-check.py": "08a6bc32bd9cda0f25ee30c1c203d946e1e9e504edf0f00162fbc1e2a1afbf51",
+    "package.mjs": "908ce94f7e3e08841b014f8adc24fc201cdfcce9e58a0ff0fdf7beefbfc4a580",
+    "pipeline.mjs": "c921ceb8130fc4b1372b487a88b932b144d0af8ca92e4c4d55074fffeae1d170",
+    "背景生成プロンプト.md": "888a107f5cc8fb948e1d4e39f60c61f50bc841d2f35f2fa8c24d9f7c28b9b056",
+    "音源後付けガイド.md": "41e841a11606fc4dd458b8d96bb4c8d4829e35c94804e205cb1643a8191d74d1"
+  },
+  "portableDelivery": {
+    "status": "PASS_PORTABLE_NATIVE_PACKAGE",
+    "destination": "/mnt/f/Users/pui/Documents/gara/ビンゴ達成ありがとう_ライブ感重視_音量一定_20261026",
+    "nativeProjects": 9,
+    "expectedNativeProjects": 9,
+    "expectedMovies": 6,
+    "japaneseUseNames": true,
+    "nativeFixedMasterGainPreserved": true
   },
   "limitations": [
-    "Numeric waveform continuity and pitch checks are separate from human listening.",
-    "AI viewing uses character/archive-free placeholders; actual expressions, mouth shapes and framing were not visually inspected.",
-    "The exact TikTok sound edition/offset and device synchronization remain unverified; C uses the standard Perfume public preview.",
-    "No SNS publication or retention measurement."
+    "数値音声検査と人物未読込の文字/図形目視を実施。人間による本番全編視聴・試聴を実施済みとは扱わない。",
+    "人物画像・本番配信映像のAI入力0。口形・表情・実際の人物の画角をAI検査したとは扱わない。",
+    "Cの指定TikTok音源と公開試聴の厳密な版/起点一致、TikTok実機、維持率は未確認。SNS投稿なし。"
   ],
   "humanRealtimeReview": false,
   "tiktokDeviceReview": false,
