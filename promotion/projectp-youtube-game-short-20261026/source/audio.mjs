@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import {file,np,FF,run,save,hash}from'./native.mjs';
+const e=JSON.parse(fs.readFileSync(file('source/edit.json'))),audit=JSON.parse(fs.readFileSync(file('qa/source-audio-audit.json')));
+if(!audit.pass||hash(file('media/bgm-source.wav'))!==e.musicSourceSha256)throw Error('Audio source binding mismatch');
+const args=['-hide_banner','-y','-i',np(file('media/editorial-sfx.wav'))];
+for(let i=1;i<=3;i++)args.push('-i',np(file('media/voice-'+i+'.wav')));
+const filters=[`[0:a]adelay=800|800,volume=${e.editorialSfxGain}[fx]`];
+for(let i=0;i<3;i++)filters.push(`[${i+1}:a]adelay=${Math.round(e.voicePositionsSeconds[i]*1000)}|${Math.round(e.voicePositionsSeconds[i]*1000)},volume=${e.voiceGain}[v${i}]`);
+filters.push(`[fx][v0][v1][v2]amix=inputs=4:normalize=0,apad,atrim=duration=${e.durationSeconds},volume=${e.commonMasterGainDb}dB[voicefx]`);
+await run(FF,[...args,'-filter_complex',filters.join(';'),'-map','[voicefx]','-c:a','pcm_s24le','-ar','48000',np(file('media/voice-sfx.wav'))],'audio-voice-sfx.json');
+const durations=audit.files.filter(x=>/^voice-[123]\.wav$/.test(x.file)).map(x=>x.durationSeconds);
+const ranges=e.voicePositionsSeconds.map((start,i)=>({start,end:start+durations[i],attack:.06,release:.20}));
+const duck=ranges.map(x=>`if(lt(t,${x.start-x.attack}),0,if(lt(t,${x.start}),((t-${x.start-x.attack})/${x.attack}),if(lt(t,${x.end}),1,if(lt(t,${x.end+x.release}),(1-(t-${x.end})/${x.release}),0))))`).join('+');
+const gain=`0.45-(0.45-0.12)*min(1,${duck})`;
+await run(FF,['-hide_banner','-y','-i',np(file('media/bgm-source.wav')),'-af',`atrim=duration=${e.durationSeconds},asetpts=PTS-STARTPTS,volume='${gain}':eval=frame,afade=t=in:st=0:d=0.02,afade=t=out:st=19.8:d=1,volume=${e.commonMasterGainDb}dB`,'-c:a','pcm_s24le','-ar','48000',np(file('media/music-bed.wav'))],'audio-music-bed.json');
+await run(FF,['-hide_banner','-y','-i',np(file('media/voice-sfx.wav')),'-i',np(file('media/music-bed.wav')),'-filter_complex',`[0:a][1:a]amix=inputs=2:normalize=0,atrim=duration=${e.durationSeconds}[mix]`,'-map','[mix]','-c:a','pcm_s24le','-ar','48000',np(file('media/reference-mix.wav'))],'audio-reference-mix.json');
+save('qa/audio-source-binding.json',{schemaVersion:1,voiceAndSfxOnlyFromIndependentOriginals:true,rawVoiceHashes:[1,2,3].map(i=>hash(file('media/voice-'+i+'.wav'))),rawSfxSha256:hash(file('media/editorial-sfx.wav')),nativeSoundCraftSourceSha256:hash(file('media/bgm-source.wav')),oldLicensedMusicUsed:false,voicePositions:e.voicePositionsSeconds,voiceDurations:durations,voiceEnds:e.voicePositionsSeconds.map((t,i)=>t+durations[i]),voiceFadeApplied:false,sfxShiftSeconds:.8,voiceGain:e.voiceGain,sfxGain:e.editorialSfxGain,commonMasterGainDb:e.commonMasterGainDb,musicOnlyDuck:{baseGain:.45,voiceGain:.12,ranges},musicOnlyTailFade:[19.8,20.8],voiceSfxSha256:hash(file('media/voice-sfx.wav')),musicBedSha256:hash(file('media/music-bed.wav')),referenceMixSha256:hash(file('media/reference-mix.wav')),subjectiveWholeAudition:false});

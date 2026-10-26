@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-26T04:42:33.288Z",
+  "exit": 0,
+  "tool": "photocraft-cli.exe",
+  "args": [
+    "run",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\source-cover.pcraft",
+    "--cmd",
+    "type.edit",
+    "--params",
+    "{\"layer\":17,\"text\":\"この道、\"}",
+    "--cmd",
+    "type.edit",
+    "--params",
+    "{\"layer\":18,\"text\":\"どうつなぐ？\"}",
+    "--out",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\covers\\game-short-cover.pcraft"
+  ],
+  "stdout": "{\"command\":\"type.edit\",\"result\":{\"antialias\":\"Smooth\",\"bounds\":[75,377,299,441],\"layer\":17,\"lines\":[{\"ascent\":72.083984375,\"baseline\":0.0,\"descent\":29.916015625,\"end\":4,\"start\":0,\"x0\":0.0,\"x1\":272.0}],\"orientation\":\"Horizontal\",\"paragraphs\":[{\"end\":4,\"start\":0,\"style\":{\"align\":\"Left\",\"auto_leading\":1.2000000476837158,\"direction\":\"Auto\",\"end_indent_pt\":0.0,\"first_line_indent_pt\":0.0,\"hyphenate\":false,\"space_after_pt\":0.0,\"space_before_pt\":0.0,\"start_indent_pt\":0.0}}],\"pxPerPt\":1.0,\"runs\":[{\"end\":4,\"start\":0,\"style\":{\"baseline\":\"Normal\",\"baseline_shift_pt\":0.0,\"caps\":\"Normal\",\"color\":{\"alpha\":1.0,\"c\":[0.9529411792755127,0.9058823585510254,0.7921568751335144,0.0],\"mode\":\"Rgb\"},\"discretionary_ligatures\":false,\"faux_bold\":false,\"faux_italic\":false,\"features\":[],\"font_family\":\"Meiryo\",\"font_style\":\"\",\"horizontal_scale\":1.0,\"italic\":false,\"kern\":0.0,\"kerning\":\"Metrics\",\"language\":null,\"leading_pt\":null,\"ligatures\":true,\"postscript_name\":\"Meiryo-Bold\",\"size_pt\":68.0,\"strikethrough\":false,\"tracking\":0.0,\"underline\":false,\"variations\":[],\"vertical_scale\":1.0,\"weight\":700}}],\"shape\":\"Point\",\"text\":\"この道、\",\"transform\":[1.0,0.0,0.0,1.0,70.0,435.0],\"warp\":null}}\n{\"command\":\"type.edit\",\"result\":{\"antialias\":\"Smooth\",\"bounds\":[77,482,462,547],\"layer\":18,\"lines\":[{\"ascent\":72.083984375,\"baseline\":0.0,\"descent\":29.916015625,\"end\":6,\"start\":0,\"x0\":0.0,\"x1\":408.0}],\"orientation\":\"Horizontal\",\"paragraphs\":[{\"end\":6,\"start\":0,\"style\":{\"align\":\"Left\",\"auto_leading\":1.2000000476837158,\"direction\":\"Auto\",\"end_indent_pt\":0.0,\"first_line_indent_pt\":0.0,\"hyphenate\":false,\"space_after_pt\":0.0,\"space_before_pt\":0.0,\"start_indent_pt\":0.0}}],\"pxPerPt\":1.0,\"runs\":[{\"end\":6,\"start\":0,\"style\":{\"baseline\":\"Normal\",\"baseline_shift_pt\":0.0,\"caps\":\"Normal\",\"color\":{\"alpha\":1.0,\"c\":[0.929411768913269,0.7058823704719543,0.40784314274787903,0.0],\"mode\":\"Rgb\"},\"discretionary_ligatures\":false,\"faux_bold\":false,\"faux_italic\":false,\"features\":[],\"font_family\":\"Meiryo\",\"font_style\":\"\",\"horizontal_scale\":1.0,\"italic\":false,\"kern\":0.0,\"kerning\":\"Metrics\",\"language\":null,\"leading_pt\":null,\"ligatures\":true,\"postscript_name\":\"Meiryo-Bold\",\"size_pt\":68.0,\"strikethrough\":false,\"tracking\":0.0,\"underline\":false,\"variations\":[],\"vertical_scale\":1.0,\"weight\":700}}],\"shape\":\"Point\",\"text\":\"どうつなぐ？\",\"transform\":[1.0,0.0,0.0,1.0,70.0,540.0],\"warp\":null}}\n",
+  "stderr": ""
+}

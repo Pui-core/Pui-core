@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-26T04:52:58.437Z",
+  "scope": "Independent full-PCM reconstruction of existing voice+sfx-no-music from3 originalVOICEVOX WAV and originaleditorialSFX only",
+  "files": [
+    {
+      "file": "voice-1.wav",
+      "sha256": "2b3ca20a7e268d5392ecbbbba1dfa27dc345916bb0ffa486f2e8cab7510b5660",
+      "containerFormat": 1,
+      "channels": 2,
+      "sampleRate": 48000,
+      "align": 4,
+      "bits": 16,
+      "effectiveFormat": 1,
+      "sampleFrames": 86528,
+      "durationSeconds": 1.8026666666666666,
+      "peak": 0.42889404296875,
+      "lastActiveSeconds": 1.8026458333333333
+    },
+    {
+      "file": "voice-2.wav",
+      "sha256": "eb90046ab6565e28c6c5cd6efd962e1a54f292d693ff91121e962b06a9ac9484",
+      "containerFormat": 1,
+      "channels": 2,
+      "sampleRate": 48000,
+      "align": 4,
+      "bits": 16,
+      "effectiveFormat": 1,
+      "sampleFrames": 79872,
+      "durationSeconds": 1.664,
+      "peak": 0.4473876953125,
+      "lastActiveSeconds": 1.6636041666666668
+    },
+    {
+      "file": "voice-3.wav",
+      "sha256": "856ebcd9f114bee71d321b67b921e136a25cd2c1c40b1b31aba7ddefa23e7835",
+      "containerFormat": 1,
+      "channels": 2,
+      "sampleRate": 48000,
+      "align": 4,
+      "bits": 16,
+      "effectiveFormat": 1,
+      "sampleFrames": 100864,
+      "durationSeconds": 2.1013333333333333,
+      "peak": 0.387237548828125,
+      "lastActiveSeconds": 2.1012916666666666
+    },
+    {
+      "file": "editorial-sfx.wav",
+      "sha256": "b02714e93a1c82995772d65c53569943f4122f137256384e23663fbc842a97ca",
+      "containerFormat": 1,
+      "channels": 2,
+      "sampleRate": 48000,
+      "align": 6,
+      "bits": 24,
+      "effectiveFormat": 1,
+      "sampleFrames": 960000,
+      "durationSeconds": 20,
+      "peak": 0.13247132301330566,
+      "lastActiveSeconds": 14.528916666666667
+    },
+    {
+      "file": "voice-sfx-no-music.wav",
+      "sha256": "843813d5d7af90c715f07b3871a419e594c86e5997655de5e5ccfac12b7bf510",
+      "containerFormat": 65534,
+      "channels": 2,
+      "sampleRate": 48000,
+      "align": 6,
+      "bits": 24,
+      "effectiveFormat": 1,
+      "sampleFrames": 960000,
+      "durationSeconds": 20,
+      "peak": 0.603973388671875,
+      "lastActiveSeconds": 16.701291666666666
+    }
+  ],
+  "voicePositionsOriginalSeconds": [
+    0.12,
+    5.15,
+    14.6
+  ],
+  "originalVoiceGain": 1.35,
+  "originalSfxGain": 0.85,
+  "maxAbsoluteReconstructionError": 1.1324882508156886e-7,
+  "errorRms": 3.370248974793673e-8,
+  "signalToErrorDb": 121.07092365326076,
+  "pass": true,
+  "oldLicensedMusicUsed": false,
+  "sourceAudition": false
+}

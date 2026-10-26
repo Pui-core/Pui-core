@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import {file,np,PC,run,save,parse,hash} from './native.mjs';
+const input=file('media/source-cover.pcraft');
+const info=parse((await run(PC,['info',np(input),'--compact'],'photocraft-input-info.json')).stdout);
+const one=info.layers.find(l=>l.name==='Hook one'),two=info.layers.find(l=>l.name==='Hook two');
+if(!one||!two)throw Error('Actual source cover layer names absent');
+const project=file('covers/game-short-cover.pcraft');
+await run(PC,['run',np(input),'--cmd','type.edit','--params',JSON.stringify({layer:one.id,text:'この道、'}),'--cmd','type.edit','--params',JSON.stringify({layer:two.id,text:'どうつなぐ？'}),'--out',np(project)],'photocraft-edit.json');
+const saved=parse((await run(PC,['info',np(project),'--compact'],'photocraft-saved-info.json')).stdout);
+if(saved.warnings.length||saved.width!==1080||saved.height!==1920)throw Error('Native cover inspection failed');
+await run(PC,['convert',np(project),np(file('covers/game-short-cover.png'))],'photocraft-render.json');
+await run(PC,['convert',np(project),np(file('qa/cover-reopened.pcraft'))],'photocraft-reopen-save.json');
+await run(PC,['convert',np(file('qa/cover-reopened.pcraft')),np(file('qa/cover-reopened.png'))],'photocraft-reopen-render.json');
+await run(PC,['run',np(project),'--cmd','image.imageSize','--params',JSON.stringify({width:270,height:480,resample:'lanczos'}),'--out',np(file('qa/cover-small.png'))],'photocraft-small.json');
+save('qa/cover-native-binding.json',{actualPhotoCraft:true,source:'media/source-cover.pcraft',sourceSha256:hash(input),project:'covers/game-short-cover.pcraft',projectSha256:hash(project),pngSha256:hash(file('covers/game-short-cover.png')),reopenedPngSha256:hash(file('qa/cover-reopened.png')),nativeWarnings:saved.warnings,editedHooks:saved.layers.filter(l=>l.name==='Hook one'||l.name==='Hook two').map(l=>({name:l.name,text:l.text.text,bounds:l.bounds})),desktopShortsThumbnailUploadConfirmed:false});

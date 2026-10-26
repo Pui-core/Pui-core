@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-26T04:42:02.502Z",
+  "exit": 0,
+  "tool": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\projects\\game-short.ecproj",
+    "run",
+    "footage.check",
+    "{\"wait\":true}",
+    "footage.missing",
+    "{}",
+    "--json"
+  ],
+  "stdout": "[{\"command\":\"footage.check\",\"result\":{\"checked\":1,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}]\n",
+  "stderr": ""
+}

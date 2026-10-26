@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-26T04:50:28.968Z",
+  "exit": 0,
+  "tool": "ffmpeg.exe",
+  "args": [
+    "-hide_banner",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\qa\\ssim-final-6.5.png",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\qa\\ssim-source-6.5.png",
+    "-filter_complex",
+    "[0:v]crop=480:360:600:260,format=gbrp[a];[1:v]crop=480:360:600:260,format=gbrp[b];[a][b]ssim",
+    "-frames:v",
+    "1",
+    "-f",
+    "null",
+    "-"
+  ],
+  "stdout": "",
+  "stderr": "Input #0, png_pipe, from 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\qa\\ssim-final-6.5.png':\r\n  Duration: N/A, bitrate: N/A\r\n  Stream #0:0: Video: png, rgb24(pc, gbr/bt709/bt709), 1080x1920 [SAR 1:1 DAR 9:16], 25 fps, 25 tbr, 25 tbn\r\nInput #1, png_pipe, from 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\qa\\ssim-source-6.5.png':\r\n  Duration: N/A, bitrate: N/A\r\n  Stream #1:0: Video: png, rgb48be(pc, gbr/bt709/bt709), 1080x1920, 25 fps, 25 tbr, 25 tbn\r\nStream mapping:\r\n  Stream #0:0 (png) -> crop:default\r\n  Stream #1:0 (png) -> crop:default\r\n  ssim:default -> Stream #0:0 (wrapped_avframe)\r\nPress [q] to stop, [?] for help\r\nOutput #0, null, to 'pipe:':\r\n  Metadata:\r\n    encoder         : Lavf62.3.100\r\n  Stream #0:0: Video: wrapped_avframe, gbrp(pc, gbr/bt709/bt709, progressive), 480x360 [SAR 1:1 DAR 4:3], q=2-31, 200 kb/s, 25 fps, 25 tbn\r\n    Metadata:\r\n      encoder         : Lavc62.11.100 wrapped_avframe\r\n[Parsed_ssim_4 @ 000001e825519480] SSIM R:0.985645 (18.429820) G:0.992484 (21.240278) B:0.971285 (15.418909) All:0.983138 (17.730887)\r\n[out#0/null @ 000001e825580e80] video:0KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nframe=    1 fps=0.0 q=-0.0 Lsize=N/A time=00:00:00.04 bitrate=N/A speed=0.871x elapsed=0:00:00.04    \r\n"
+}

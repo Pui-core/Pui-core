@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-26T04:46:08.514Z",
+  "exit": 0,
+  "tool": "ffmpeg.exe",
+  "args": [
+    "-hide_banner",
+    "-y",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\bgm-source.wav",
+    "-af",
+    "atrim=duration=20.8,asetpts=PTS-STARTPTS,volume='0.45-(0.45-0.12)*min(1,if(lt(t,0.8600000000000001),0,if(lt(t,0.92),((t-0.8600000000000001)/0.06),if(lt(t,2.7226666666666666),1,if(lt(t,2.9226666666666667),(1-(t-2.7226666666666666)/0.2),0))))+if(lt(t,5.890000000000001),0,if(lt(t,5.95),((t-5.890000000000001)/0.06),if(lt(t,7.614),1,if(lt(t,7.814),(1-(t-7.614)/0.2),0))))+if(lt(t,15.34),0,if(lt(t,15.4),((t-15.34)/0.06),if(lt(t,17.501333333333335),1,if(lt(t,17.701333333333334),(1-(t-17.501333333333335)/0.2),0)))))':eval=frame,afade=t=in:st=0:d=0.02,afade=t=out:st=19.8:d=1,volume=3dB",
+    "-c:a",
+    "pcm_s24le",
+    "-ar",
+    "48000",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\music-bed.wav"
+  ],
+  "stdout": "",
+  "stderr": "Input #0, wav, from 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\bgm-source.wav':\r\n  Duration: 00:00:22.00, bitrate: 2304 kb/s\r\n  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\nStream mapping:\r\n  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_s24le (native))\r\nPress [q] to stop, [?] for help\r\nOutput #0, wav, to 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\music-bed.wav':\r\n  Metadata:\r\n    ISFT            : Lavf62.3.100\r\n  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\n    Metadata:\r\n      encoder         : Lavc62.11.100 pcm_s24le\r\n[out#0/wav @ 00000211b0631c00] video:0KiB audio:5850KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.001703%\r\nsize=    5850KiB time=00:00:20.80 bitrate=2304.0kbits/s speed=3.4e+03x elapsed=0:00:00.00    \r\n"
+}

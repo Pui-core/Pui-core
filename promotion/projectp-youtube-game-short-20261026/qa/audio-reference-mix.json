@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-26T04:46:08.665Z",
+  "exit": 0,
+  "tool": "ffmpeg.exe",
+  "args": [
+    "-hide_banner",
+    "-y",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\voice-sfx.wav",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\music-bed.wav",
+    "-filter_complex",
+    "[0:a][1:a]amix=inputs=2:normalize=0,atrim=duration=20.8[mix]",
+    "-map",
+    "[mix]",
+    "-c:a",
+    "pcm_s24le",
+    "-ar",
+    "48000",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\reference-mix.wav"
+  ],
+  "stdout": "",
+  "stderr": "Input #0, wav, from 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\voice-sfx.wav':\r\n  Metadata:\r\n    encoder         : Lavf62.3.100\r\n  Duration: 00:00:20.80, bitrate: 2304 kb/s\r\n  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\nInput #1, wav, from 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\music-bed.wav':\r\n  Metadata:\r\n    encoder         : Lavf62.3.100\r\n  Duration: 00:00:20.80, bitrate: 2304 kb/s\r\n  Stream #1:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\nStream mapping:\r\n  Stream #0:0 (pcm_s24le) -> amix\r\n  Stream #1:0 (pcm_s24le) -> amix\r\n  atrim:default -> Stream #0:0 (pcm_s24le)\r\nPress [q] to stop, [?] for help\r\nOutput #0, wav, to 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\reference-mix.wav':\r\n  Metadata:\r\n    ISFT            : Lavf62.3.100\r\n  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\n    Metadata:\r\n      encoder         : Lavc62.11.100 pcm_s24le\r\n[out#0/wav @ 0000029025428ec0] video:0KiB audio:5850KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.001703%\r\nsize=    5850KiB time=00:00:20.80 bitrate=2304.0kbits/s speed=3.01e+03x elapsed=0:00:00.00    \r\n"
+}

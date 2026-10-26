@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-26T04:48:05.862Z",
+  "exit": 0,
+  "tool": "ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "0",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\videos\\game-short.mp4",
+    "-frames:v",
+    "1",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\qa\\ssim-final-0.png"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

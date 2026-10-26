@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-26T04:48:03.946Z",
+  "exit": 0,
+  "tool": "ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-y",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\reference-mix.wav",
+    "-vn",
+    "-ac",
+    "2",
+    "-ar",
+    "48000",
+    "-f",
+    "f32le",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\qa\\reference.f32"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

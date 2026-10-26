@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "productionIssue": 111,
+  "parentIssue": 106,
+  "fps": 30,
+  "introFrames": 24,
+  "introSeconds": 0.8,
+  "bodySeconds": 20,
+  "totalFrames": 624,
+  "durationSeconds": 20.8,
+  "introSourceFrame": 150,
+  "introSourceSeconds": 5,
+  "bodySourceFile": "media/game-body-silent.mov",
+  "bodyOffsetSeconds": 0.8,
+  "sourceBeforeRevealFrame": 143,
+  "sourceAfterRevealFrame": 144,
+  "newBeforeRevealFrame": 167,
+  "newAfterRevealFrame": 168,
+  "newRevealAtSeconds": 5.6,
+  "openingQuestionEndSeconds": 3.2,
+  "endCardStartSeconds": 18.8,
+  "voicePositionsSeconds": [
+    0.92,
+    5.95,
+    15.4
+  ],
+  "voiceGain": 1.35,
+  "editorialSfxGain": 0.85,
+  "commonMasterGainDb": 3,
+  "musicSourceFile": "media/bgm-source.wav",
+  "musicSourceSha256": "2387bf313b689b21467cbffb0b17195ff70ab7f4e2fb8c9bf244f85bbd74101d",
+  "oldLicensedMusicIncluded": false,
+  "topic": "Actual game core-stone mechanism, not music production",
+  "facts": {
+    "game": "EMBERWAKE 灰の灯",
+    "gameVersion": "0.11.0",
+    "mode": "EXPLORE",
+    "sourceCommit": "6233f5d33b24a35e91800357b7bcf8861049cf2a",
+    "actualRtaOrPb": false,
+    "freezeAndComparisonAreEdits": true
+  },
+  "model": {
+    "name": "Revenant_Natural",
+    "method": "Reuse actual Core-rendered host in frozen silent body picture, shifted with the original voice/SFX",
+    "sourceFrameCount": 600,
+    "newCoreRenderCount": 0,
+    "introIsSilentFreezeFromOriginalCoreFrame": 150,
+    "introSourceMouth": 0,
+    "cameraTracking": false
+  },
+  "publication": {
+    "service": "youtube",
+    "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+    "state": "source_ready_native_check_publication_pending",
+    "rootIsOnlyPublisher": true,
+    "videoId": null,
+    "publicConfirmed": false,
+    "relatedVideo": null,
+    "relatedVideoReason": "No published horizontal game video exists; no link promised"
+  }
+}

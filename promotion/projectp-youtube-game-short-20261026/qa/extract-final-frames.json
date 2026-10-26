@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-26T04:48:05.406Z",
+  "exit": 0,
+  "tool": "ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-y",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\videos\\game-short.mp4",
+    "-vf",
+    "select=eq(n\\,0)+eq(n\\,12)+eq(n\\,23)+eq(n\\,24)+eq(n\\,25)+eq(n\\,60)+eq(n\\,95)+eq(n\\,96)+eq(n\\,165)+eq(n\\,166)+eq(n\\,167)+eq(n\\,168)+eq(n\\,169)+eq(n\\,170)+eq(n\\,179)+eq(n\\,180)+eq(n\\,228)+eq(n\\,444)+eq(n\\,462)+eq(n\\,524)+eq(n\\,525)+eq(n\\,563)+eq(n\\,564)+eq(n\\,585)+eq(n\\,623)",
+    "-fps_mode",
+    "vfr",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\qa\\tmp-final-%03d.png"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

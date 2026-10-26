@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-26T04:42:30.587Z",
+  "exit": 0,
+  "tool": "effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\projects\\game-short.ecproj",
+    "get",
+    "ProjectP actual game short",
+    "Original silent game and Core body +24frames",
+    "timeRemap",
+    "--time",
+    "20.7666667",
+    "--json"
+  ],
+  "stdout": "{\"animated\":true,\"expression\":null,\"keys\":[{\"compTime\":0.8,\"in\":\"Linear\",\"layerTime\":0.0,\"out\":\"Linear\",\"time\":0.0,\"value\":0.0},{\"compTime\":20.8,\"in\":\"Linear\",\"layerTime\":20.0,\"out\":\"Linear\",\"time\":20.0,\"value\":20.0,\"warning\":\"Keyframe at comp time 20.8 s is outside the layer's active range [0.8 s, 20.8 s).\"}],\"layer\":27,\"match\":\"timeRemap\",\"name\":\"Time Remap\",\"time\":20.766666699999213,\"type\":\"scalar\",\"uid\":50,\"value\":19.966666699999212}\n",
+  "stderr": ""
+}

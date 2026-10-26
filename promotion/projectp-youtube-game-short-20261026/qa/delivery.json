@@ -1,0 +1,690 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-26T04:53:36.398Z",
+  "destination": "/mnt/f/Videos/ProjectP-YouTube-Game-Short-2026-10-26/revision-01",
+  "publicSourceFileCount": 111,
+  "publicSourceBytes": 11053831,
+  "sourceAndFMatch": true,
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 375,
+      "sourceSha256": "5dba0970cac09190d8289a67723547f687a74cd434b93f01f3d4f3ad5266a948",
+      "deliverySha256": "5dba0970cac09190d8289a67723547f687a74cd434b93f01f3d4f3ad5266a948"
+    },
+    {
+      "file": "README.md",
+      "bytes": 6162,
+      "sourceSha256": "ea9b18e2c86e4784754dc48494b288dbbcc24f70be29f3295f75ea182d3b18b3",
+      "deliverySha256": "ea9b18e2c86e4784754dc48494b288dbbcc24f70be29f3295f75ea182d3b18b3"
+    },
+    {
+      "file": "covers/game-short-cover.pcraft",
+      "bytes": 1210887,
+      "sourceSha256": "2758d47d551a0691df9b7e4ac275f595e89a8debbc4e0d274d6ca27296168e99",
+      "deliverySha256": "2758d47d551a0691df9b7e4ac275f595e89a8debbc4e0d274d6ca27296168e99"
+    },
+    {
+      "file": "covers/game-short-cover.png",
+      "bytes": 381712,
+      "sourceSha256": "f14ff268d8626cc02f595668c0411699cdb202e6edadaac6aa8609c4135cb84d",
+      "deliverySha256": "f14ff268d8626cc02f595668c0411699cdb202e6edadaac6aa8609c4135cb84d"
+    },
+    {
+      "file": "index.html",
+      "bytes": 1234,
+      "sourceSha256": "95e57770cae57dec7c42ba6b87adfec4e9a15c2808840cfc6240805e3f4ca075",
+      "deliverySha256": "95e57770cae57dec7c42ba6b87adfec4e9a15c2808840cfc6240805e3f4ca075"
+    },
+    {
+      "file": "projects/game-short.ecproj",
+      "bytes": 413016,
+      "sourceSha256": "23fc8bf9e83cd3c2ee3b685f69dacba6a748853950df88c52c33f6a3bcdae8e2",
+      "deliverySha256": "23fc8bf9e83cd3c2ee3b685f69dacba6a748853950df88c52c33f6a3bcdae8e2"
+    },
+    {
+      "file": "projects/game-short.fcproj",
+      "bytes": 6656,
+      "sourceSha256": "f38e23f4a9ab734b2d4e1c6e3e07923a455ede2c36ab11a9b95461b46155cd02",
+      "deliverySha256": "f38e23f4a9ab734b2d4e1c6e3e07923a455ede2c36ab11a9b95461b46155cd02"
+    },
+    {
+      "file": "qa/audio-music-bed.json",
+      "bytes": 1959,
+      "sourceSha256": "162457cb6d9b0a72f2c58b8675a17ca5f77d6546937a955d247a270967c5bf6b",
+      "deliverySha256": "162457cb6d9b0a72f2c58b8675a17ca5f77d6546937a955d247a270967c5bf6b"
+    },
+    {
+      "file": "qa/audio-reference-mix.json",
+      "bytes": 2003,
+      "sourceSha256": "e958327ef2e013c3dd73d6c674c3e1d7bea246dc3fd7c52e6774545e3afd1d3e",
+      "deliverySha256": "e958327ef2e013c3dd73d6c674c3e1d7bea246dc3fd7c52e6774545e3afd1d3e"
+    },
+    {
+      "file": "qa/audio-source-binding.json",
+      "bytes": 1680,
+      "sourceSha256": "cb15a5f5bee8e123b95b79ea91089fd5ccb56445a3805c0412ac37a94e6d11a3",
+      "deliverySha256": "cb15a5f5bee8e123b95b79ea91089fd5ccb56445a3805c0412ac37a94e6d11a3"
+    },
+    {
+      "file": "qa/audio-voice-sfx.json",
+      "bytes": 3177,
+      "sourceSha256": "1c032d103cae7b2dec42de7529b8830944de64832d8d61894b25890c2038db38",
+      "deliverySha256": "1c032d103cae7b2dec42de7529b8830944de64832d8d61894b25890c2038db38"
+    },
+    {
+      "file": "qa/cover-native-binding.json",
+      "bytes": 857,
+      "sourceSha256": "d3a8e3608439160ac95d92b808793b1bfc01efabe9dc02e18fb709ff2afe3a91",
+      "deliverySha256": "d3a8e3608439160ac95d92b808793b1bfc01efabe9dc02e18fb709ff2afe3a91"
+    },
+    {
+      "file": "qa/cover-small.png",
+      "bytes": 61023,
+      "sourceSha256": "4778cb222184bf96dfdf93e6424cee2f5212540b2ff2be4eca5da474ee746cf3",
+      "deliverySha256": "4778cb222184bf96dfdf93e6424cee2f5212540b2ff2be4eca5da474ee746cf3"
+    },
+    {
+      "file": "qa/decode-bed.json",
+      "bytes": 422,
+      "sourceSha256": "26fc1f2ca213e1e92e801d7e21ff9d25d57ee1d8eeafc8af61dbf6d7930c7d9e",
+      "deliverySha256": "26fc1f2ca213e1e92e801d7e21ff9d25d57ee1d8eeafc8af61dbf6d7930c7d9e"
+    },
+    {
+      "file": "qa/decode-final.json",
+      "bytes": 426,
+      "sourceSha256": "505c8e9e76c6618a8e686299c6320cf7f274980c1a2f82593e94421f396e3db7",
+      "deliverySha256": "505c8e9e76c6618a8e686299c6320cf7f274980c1a2f82593e94421f396e3db7"
+    },
+    {
+      "file": "qa/decode-reference.json",
+      "bytes": 432,
+      "sourceSha256": "4c0f55542a54bf6a26aa57a33cc0fa37be36ea919b3f7cbc7e68bedab4c4b80a",
+      "deliverySha256": "4c0f55542a54bf6a26aa57a33cc0fa37be36ea919b3f7cbc7e68bedab4c4b80a"
+    },
+    {
+      "file": "qa/decode-voiceSfx.json",
+      "bytes": 427,
+      "sourceSha256": "c7621acb09d0c3cf37c79e6d2a975361cad00de58034f73c1bb7835512a299ab",
+      "deliverySha256": "c7621acb09d0c3cf37c79e6d2a975361cad00de58034f73c1bb7835512a299ab"
+    },
+    {
+      "file": "qa/effectcraft-build.json",
+      "bytes": 2625,
+      "sourceSha256": "de7bea65d5fd4baad4600b5c80f646ad2ad2cd01c3fd2c9b2ab494741a9fbb5f",
+      "deliverySha256": "de7bea65d5fd4baad4600b5c80f646ad2ad2cd01c3fd2c9b2ab494741a9fbb5f"
+    },
+    {
+      "file": "qa/effectcraft-check.json",
+      "bytes": 503,
+      "sourceSha256": "6f091017c0bd7706ca5e34514904f64ab1ebe894c298fdedb323594d39e88f77",
+      "deliverySha256": "6f091017c0bd7706ca5e34514904f64ab1ebe894c298fdedb323594d39e88f77"
+    },
+    {
+      "file": "qa/effectcraft-full-render.json",
+      "bytes": 2127,
+      "sourceSha256": "443eef9f4356a09dbfc5b519d6c6a223504c61d656293b5a092d2b4a84017e1f",
+      "deliverySha256": "443eef9f4356a09dbfc5b519d6c6a223504c61d656293b5a092d2b4a84017e1f"
+    },
+    {
+      "file": "qa/extract-final-frames.json",
+      "bytes": 701,
+      "sourceSha256": "0496e8557f73ae2ba961121bdac178be810ae1cd3ad7ce959e74b9e056418555",
+      "deliverySha256": "0496e8557f73ae2ba961121bdac178be810ae1cd3ad7ce959e74b9e056418555"
+    },
+    {
+      "file": "qa/extract-original-frame150.json",
+      "bytes": 414,
+      "sourceSha256": "d10ae64f508f9a41dbb837d4297da969a0d69f79b86ce030cc0b654d4fddeeec",
+      "deliverySha256": "d10ae64f508f9a41dbb837d4297da969a0d69f79b86ce030cc0b654d4fddeeec"
+    },
+    {
+      "file": "qa/filmcraft-build.json",
+      "bytes": 513,
+      "sourceSha256": "19227be8939386cb45a4caee96402c32ab162f04817272cf1f37afcfc3a81cd1",
+      "deliverySha256": "19227be8939386cb45a4caee96402c32ab162f04817272cf1f37afcfc3a81cd1"
+    },
+    {
+      "file": "qa/filmcraft-export.json",
+      "bytes": 982,
+      "sourceSha256": "529a37e626594cceae897fc08e31bf6d0d6c2172170b336e80ac969e64ff2478",
+      "deliverySha256": "529a37e626594cceae897fc08e31bf6d0d6c2172170b336e80ac969e64ff2478"
+    },
+    {
+      "file": "qa/filmcraft-place.json",
+      "bytes": 520,
+      "sourceSha256": "b77daaec032f0ec3fc66e94a73e6dc79f55722ee0b43c2194f3fd2be36b27f5e",
+      "deliverySha256": "b77daaec032f0ec3fc66e94a73e6dc79f55722ee0b43c2194f3fd2be36b27f5e"
+    },
+    {
+      "file": "qa/filmcraft-reopen-media.json",
+      "bytes": 1292,
+      "sourceSha256": "ecbf553bbb37f71b194071a6008d5e56175c8197ee351273a708f5458da4e217",
+      "deliverySha256": "ecbf553bbb37f71b194071a6008d5e56175c8197ee351273a708f5458da4e217"
+    },
+    {
+      "file": "qa/filmcraft-reopen-render.json",
+      "bytes": 551,
+      "sourceSha256": "5cfde575d281b54682b0824443ff345753c87a9d028291e37f8ecd1f753b8a2a",
+      "deliverySha256": "5cfde575d281b54682b0824443ff345753c87a9d028291e37f8ecd1f753b8a2a"
+    },
+    {
+      "file": "qa/final-frame-0.png",
+      "bytes": 322099,
+      "sourceSha256": "b7daa3a1652219f7acbd2be619d4443c165eea4c7c6ccee423cb1ef719c3c64b",
+      "deliverySha256": "b7daa3a1652219f7acbd2be619d4443c165eea4c7c6ccee423cb1ef719c3c64b"
+    },
+    {
+      "file": "qa/final-frame-167.png",
+      "bytes": 458062,
+      "sourceSha256": "9bef80a16b561aa9427a3e717eeaa9525624ba47afe9091397ab5663e615fe77",
+      "deliverySha256": "9bef80a16b561aa9427a3e717eeaa9525624ba47afe9091397ab5663e615fe77"
+    },
+    {
+      "file": "qa/final-frame-168.png",
+      "bytes": 479678,
+      "sourceSha256": "a855423e5296820e431c51da158043b25078eca6c90f98fd2b788ab0d0695d4f",
+      "deliverySha256": "a855423e5296820e431c51da158043b25078eca6c90f98fd2b788ab0d0695d4f"
+    },
+    {
+      "file": "qa/final-frame-24.png",
+      "bytes": 344823,
+      "sourceSha256": "bad6e91e8b6b4c01261a42abb317b7e635f8900fdafaafa659b9f0f4a3caf5df",
+      "deliverySha256": "bad6e91e8b6b4c01261a42abb317b7e635f8900fdafaafa659b9f0f4a3caf5df"
+    },
+    {
+      "file": "qa/final-frame-462.png",
+      "bytes": 470654,
+      "sourceSha256": "1f429a196f549f453533fd00738517eab1ef5f2f83f8cd2b5e6cf0cd73db0802",
+      "deliverySha256": "1f429a196f549f453533fd00738517eab1ef5f2f83f8cd2b5e6cf0cd73db0802"
+    },
+    {
+      "file": "qa/final-frame-585.png",
+      "bytes": 487548,
+      "sourceSha256": "0373769775b3ddcadde52ed090d2f2aa0acedee62ea2db7d5821e9eaf6db09ce",
+      "deliverySha256": "0373769775b3ddcadde52ed090d2f2aa0acedee62ea2db7d5821e9eaf6db09ce"
+    },
+    {
+      "file": "qa/final-frame-623.png",
+      "bytes": 389958,
+      "sourceSha256": "e2512a48ca183bc29cd85a69b825e1ba038176b5546d0f4a72345c7327aa5007",
+      "deliverySha256": "e2512a48ca183bc29cd85a69b825e1ba038176b5546d0f4a72345c7327aa5007"
+    },
+    {
+      "file": "qa/final-levels-tool.json",
+      "bytes": 39061,
+      "sourceSha256": "fc3d2233f8546f17fd397b7e9c1a9e7bcbdd8e645acb1bdcb0bd13ae833b1aee",
+      "deliverySha256": "fc3d2233f8546f17fd397b7e9c1a9e7bcbdd8e645acb1bdcb0bd13ae833b1aee"
+    },
+    {
+      "file": "qa/final-levels.json",
+      "bytes": 610,
+      "sourceSha256": "c968624e5259ce1c873d6994f35403edf608e3ed4bad1220a9c333a70da4356b",
+      "deliverySha256": "c968624e5259ce1c873d6994f35403edf608e3ed4bad1220a9c333a70da4356b"
+    },
+    {
+      "file": "qa/final-probe-tool.json",
+      "bytes": 5750,
+      "sourceSha256": "629ae7513bdbf25da0d278f4db39763ca1b14c8be3e4bb635f6735597b9da181",
+      "deliverySha256": "629ae7513bdbf25da0d278f4db39763ca1b14c8be3e4bb635f6735597b9da181"
+    },
+    {
+      "file": "qa/final-probe.json",
+      "bytes": 3726,
+      "sourceSha256": "5c91e875bb30fd2e14754843be118f6a440202e1c73e19ae3982027b9edd16b8",
+      "deliverySha256": "5c91e875bb30fd2e14754843be118f6a440202e1c73e19ae3982027b9edd16b8"
+    },
+    {
+      "file": "qa/final-whole-av-decode.json",
+      "bytes": 283,
+      "sourceSha256": "ff427a23c69f01bf11a0397373969fff5618d13109f96f3d01ea2a2459fdabd6",
+      "deliverySha256": "ff427a23c69f01bf11a0397373969fff5618d13109f96f3d01ea2a2459fdabd6"
+    },
+    {
+      "file": "qa/layout.json",
+      "bytes": 2367,
+      "sourceSha256": "7699e91a27c76236f6393b4edb5f37822ad5d9e398330bef0b9614d3041fe163",
+      "deliverySha256": "7699e91a27c76236f6393b4edb5f37822ad5d9e398330bef0b9614d3041fe163"
+    },
+    {
+      "file": "qa/model-picture-binding.json",
+      "bytes": 1007,
+      "sourceSha256": "640b38d83d3872303d44de22364d6af5107cbc33cf72c55a7f79815ccb91c015",
+      "deliverySha256": "640b38d83d3872303d44de22364d6af5107cbc33cf72c55a7f79815ccb91c015"
+    },
+    {
+      "file": "qa/native-master-binding.json",
+      "bytes": 1048,
+      "sourceSha256": "9d6dfa6aca329e50cbc3d8ddc8e0336ca68ad26c0b0a097bb131087ab55b2789",
+      "deliverySha256": "9d6dfa6aca329e50cbc3d8ddc8e0336ca68ad26c0b0a097bb131087ab55b2789"
+    },
+    {
+      "file": "qa/photocraft-edit.json",
+      "bytes": 3221,
+      "sourceSha256": "1695401e913e0e2c336b05b6aaed617731d08612b442ec84ee6aa85e368834b4",
+      "deliverySha256": "1695401e913e0e2c336b05b6aaed617731d08612b442ec84ee6aa85e368834b4"
+    },
+    {
+      "file": "qa/photocraft-input-info.json",
+      "bytes": 6156,
+      "sourceSha256": "00032614545561ae63ad9e17962d34e4d05cc26e79d32004456c0de7b4f58ed0",
+      "deliverySha256": "00032614545561ae63ad9e17962d34e4d05cc26e79d32004456c0de7b4f58ed0"
+    },
+    {
+      "file": "qa/photocraft-render.json",
+      "bytes": 428,
+      "sourceSha256": "e7612f2c2c9667d93ea4d57fe0b4a5c89911d5afd6a15f183f8674ae864923a6",
+      "deliverySha256": "e7612f2c2c9667d93ea4d57fe0b4a5c89911d5afd6a15f183f8674ae864923a6"
+    },
+    {
+      "file": "qa/photocraft-reopen-render.json",
+      "bytes": 416,
+      "sourceSha256": "a528f4089bda5000ba514f7a4cebd48532d52bf97ca8bc010ced738fe9be36d9",
+      "deliverySha256": "a528f4089bda5000ba514f7a4cebd48532d52bf97ca8bc010ced738fe9be36d9"
+    },
+    {
+      "file": "qa/photocraft-reopen-save.json",
+      "bytes": 349,
+      "sourceSha256": "9a285cb6c9241f5d438bb1c8ff1217afb39ead60f70cb26cf8a7b0417a78e38a",
+      "deliverySha256": "9a285cb6c9241f5d438bb1c8ff1217afb39ead60f70cb26cf8a7b0417a78e38a"
+    },
+    {
+      "file": "qa/photocraft-saved-info.json",
+      "bytes": 6167,
+      "sourceSha256": "dfd8563dbde822a111f7e4e30ce5186e211a263e87c91fdd91bc52c9715b88ff",
+      "deliverySha256": "dfd8563dbde822a111f7e4e30ce5186e211a263e87c91fdd91bc52c9715b88ff"
+    },
+    {
+      "file": "qa/photocraft-small.json",
+      "bytes": 620,
+      "sourceSha256": "6a3e159952a4257646ca7fabeafaec3987340ec25903d351d096d45398174d58",
+      "deliverySha256": "6a3e159952a4257646ca7fabeafaec3987340ec25903d351d096d45398174d58"
+    },
+    {
+      "file": "qa/picture-source-binding.json",
+      "bytes": 631,
+      "sourceSha256": "1e62817746581fd0b30b9bb9cf54b0b61466faa3fa1c2eee224d7831aab688f2",
+      "deliverySha256": "1e62817746581fd0b30b9bb9cf54b0b61466faa3fa1c2eee224d7831aab688f2"
+    },
+    {
+      "file": "qa/preview-0.000.json",
+      "bytes": 642,
+      "sourceSha256": "2f0a4490dbacc759db2ff02562f496b57aa240b984c426db1dc132cd7487bb5a",
+      "deliverySha256": "2f0a4490dbacc759db2ff02562f496b57aa240b984c426db1dc132cd7487bb5a"
+    },
+    {
+      "file": "qa/preview-0.400.json",
+      "bytes": 644,
+      "sourceSha256": "42c254b9b25b8aebb0ac4a16c94990387908bfc8229d2eef91fb5c751ea77b44",
+      "deliverySha256": "42c254b9b25b8aebb0ac4a16c94990387908bfc8229d2eef91fb5c751ea77b44"
+    },
+    {
+      "file": "qa/preview-0.800.json",
+      "bytes": 644,
+      "sourceSha256": "538cfc969dc1f2cd4de4489fbcdfc8fedff95b58d28f4b5dd6a87b1f6d626514",
+      "deliverySha256": "538cfc969dc1f2cd4de4489fbcdfc8fedff95b58d28f4b5dd6a87b1f6d626514"
+    },
+    {
+      "file": "qa/preview-15.400.json",
+      "bytes": 648,
+      "sourceSha256": "b65156b28682bf86fd788da8309c71e4a9f2f494b22bdb5b2eb5127c9665a261",
+      "deliverySha256": "b65156b28682bf86fd788da8309c71e4a9f2f494b22bdb5b2eb5127c9665a261"
+    },
+    {
+      "file": "qa/preview-19.500.json",
+      "bytes": 648,
+      "sourceSha256": "90cb30eb0da2c8de02a38262195507642a20601e4109b890876c193d07951541",
+      "deliverySha256": "90cb30eb0da2c8de02a38262195507642a20601e4109b890876c193d07951541"
+    },
+    {
+      "file": "qa/preview-2.000.json",
+      "bytes": 642,
+      "sourceSha256": "1f921c3a7d2d2817a51d977f3b0a6c17aab03da3fa3801c3810158219692c2d6",
+      "deliverySha256": "1f921c3a7d2d2817a51d977f3b0a6c17aab03da3fa3801c3810158219692c2d6"
+    },
+    {
+      "file": "qa/preview-5.567.json",
+      "bytes": 666,
+      "sourceSha256": "84096f1f18fa95c417d19a2593eaaec21be00648162edad6bf3785f9347923be",
+      "deliverySha256": "84096f1f18fa95c417d19a2593eaaec21be00648162edad6bf3785f9347923be"
+    },
+    {
+      "file": "qa/preview-5.600.json",
+      "bytes": 644,
+      "sourceSha256": "45c7c12837abb3e66d65477861fcddf5bfe23b7c9fa19cc8340e2f3df5244e96",
+      "deliverySha256": "45c7c12837abb3e66d65477861fcddf5bfe23b7c9fa19cc8340e2f3df5244e96"
+    },
+    {
+      "file": "qa/preview-7.800.json",
+      "bytes": 644,
+      "sourceSha256": "5494af33a12c5133abe45b549f5f9b8f43d523899a0ce6c9c81883e883b78265",
+      "deliverySha256": "5494af33a12c5133abe45b549f5f9b8f43d523899a0ce6c9c81883e883b78265"
+    },
+    {
+      "file": "qa/raw-voice-sfx-binding.json",
+      "bytes": 908,
+      "sourceSha256": "cd144925953061a760b7ae1aa3cf3e144b0df6e8a0755c8724e94094247d94c7",
+      "deliverySha256": "cd144925953061a760b7ae1aa3cf3e144b0df6e8a0755c8724e94094247d94c7"
+    },
+    {
+      "file": "qa/source-audio-audit.json",
+      "bytes": 2628,
+      "sourceSha256": "283270842496d50365dcbf39eb373841328514539e6b09ad227a04ea6ae147c3",
+      "deliverySha256": "283270842496d50365dcbf39eb373841328514539e6b09ad227a04ea6ae147c3"
+    },
+    {
+      "file": "qa/source-body-probe-tool.json",
+      "bytes": 3169,
+      "sourceSha256": "f42846c81a0e80cb51270a93c10ea33d50840b7abd0ca785eb8daa935c61c8d8",
+      "deliverySha256": "f42846c81a0e80cb51270a93c10ea33d50840b7abd0ca785eb8daa935c61c8d8"
+    },
+    {
+      "file": "qa/source-body-probe.json",
+      "bytes": 2217,
+      "sourceSha256": "468a33303086f85b70e889f240e568e91074ca6c21e577f46e3f472f06ce8602",
+      "deliverySha256": "468a33303086f85b70e889f240e568e91074ca6c21e577f46e3f472f06ce8602"
+    },
+    {
+      "file": "qa/source-reuse.json",
+      "bytes": 3031,
+      "sourceSha256": "fa68d3252908e78507bd65e87f18a784b19ac97f07a6fa296d2da6fb8d15e8f9",
+      "deliverySha256": "fa68d3252908e78507bd65e87f18a784b19ac97f07a6fa296d2da6fb8d15e8f9"
+    },
+    {
+      "file": "qa/ssim-extract-final-0.json",
+      "bytes": 401,
+      "sourceSha256": "f98f3d06d446d5be0fc6a1d6aa5f07c750833fd675c7e9490504e7fe82a8f76f",
+      "deliverySha256": "f98f3d06d446d5be0fc6a1d6aa5f07c750833fd675c7e9490504e7fe82a8f76f"
+    },
+    {
+      "file": "qa/ssim-extract-final-1.json",
+      "bytes": 401,
+      "sourceSha256": "af8e77f7ae78b89eb8609092e0e085896c25e2eb9f4c3d5d55e4ba9200bc68d5",
+      "deliverySha256": "af8e77f7ae78b89eb8609092e0e085896c25e2eb9f4c3d5d55e4ba9200bc68d5"
+    },
+    {
+      "file": "qa/ssim-extract-final-15.4.json",
+      "bytes": 407,
+      "sourceSha256": "c9791de631e6084a0d828408cec87996741477e7257aabd22c9336d4f8c217a4",
+      "deliverySha256": "c9791de631e6084a0d828408cec87996741477e7257aabd22c9336d4f8c217a4"
+    },
+    {
+      "file": "qa/ssim-extract-final-19.5.json",
+      "bytes": 407,
+      "sourceSha256": "14585f50ccc65c07204685c1e0d76fa61c5e0ef72d9b7c9f46d2d425328ddfd0",
+      "deliverySha256": "14585f50ccc65c07204685c1e0d76fa61c5e0ef72d9b7c9f46d2d425328ddfd0"
+    },
+    {
+      "file": "qa/ssim-extract-final-5.6.json",
+      "bytes": 405,
+      "sourceSha256": "6456c881fc246b0b60dcc7279cc699a42bfe7d5f5329ed4bb43c1acbabe0513e",
+      "deliverySha256": "6456c881fc246b0b60dcc7279cc699a42bfe7d5f5329ed4bb43c1acbabe0513e"
+    },
+    {
+      "file": "qa/ssim-extract-final-6.5.json",
+      "bytes": 405,
+      "sourceSha256": "692e1d8383523a7c1cd10dc1590ee78889b7f47ed47801cb268f464648316281",
+      "deliverySha256": "692e1d8383523a7c1cd10dc1590ee78889b7f47ed47801cb268f464648316281"
+    },
+    {
+      "file": "qa/ssim-extract-source-0.json",
+      "bytes": 407,
+      "sourceSha256": "39ec422433328eedb929ba53b933d1484fe8a1867358208f4513adf931707b8a",
+      "deliverySha256": "39ec422433328eedb929ba53b933d1484fe8a1867358208f4513adf931707b8a"
+    },
+    {
+      "file": "qa/ssim-extract-source-1.json",
+      "bytes": 425,
+      "sourceSha256": "c42900d4cf7e84b17e116c418bc2b29ca2610bc2045c66b3b4ffe225989d8929",
+      "deliverySha256": "c42900d4cf7e84b17e116c418bc2b29ca2610bc2045c66b3b4ffe225989d8929"
+    },
+    {
+      "file": "qa/ssim-extract-source-15.4.json",
+      "bytes": 413,
+      "sourceSha256": "d74426b7cec3653da5b0a28b96c3b2397797a1c9f5d95f7f52cdff001242a539",
+      "deliverySha256": "d74426b7cec3653da5b0a28b96c3b2397797a1c9f5d95f7f52cdff001242a539"
+    },
+    {
+      "file": "qa/ssim-extract-source-19.5.json",
+      "bytes": 413,
+      "sourceSha256": "d29c78dde870dfdc4f6b1c4dc575f5b8e0c91a1aafa23efe10fa9268c2172fcd",
+      "deliverySha256": "d29c78dde870dfdc4f6b1c4dc575f5b8e0c91a1aafa23efe10fa9268c2172fcd"
+    },
+    {
+      "file": "qa/ssim-extract-source-5.6.json",
+      "bytes": 411,
+      "sourceSha256": "2f7ab43a50d402710fcc232983422f43cf2f34125373bf5e619a1d70d3f827cc",
+      "deliverySha256": "2f7ab43a50d402710fcc232983422f43cf2f34125373bf5e619a1d70d3f827cc"
+    },
+    {
+      "file": "qa/ssim-extract-source-6.5.json",
+      "bytes": 411,
+      "sourceSha256": "d993628a3b7d7a1efb312406c3e39cedecb30271a21a00e8ccb92c48b5f27b35",
+      "deliverySha256": "d993628a3b7d7a1efb312406c3e39cedecb30271a21a00e8ccb92c48b5f27b35"
+    },
+    {
+      "file": "qa/ssim-game-0.json",
+      "bytes": 1910,
+      "sourceSha256": "d3d7300cbcbfc14f58a29a9d16b6dac8cabd163134c4623ab0c3ce34c5fb0e09",
+      "deliverySha256": "d3d7300cbcbfc14f58a29a9d16b6dac8cabd163134c4623ab0c3ce34c5fb0e09"
+    },
+    {
+      "file": "qa/ssim-game-1.json",
+      "bytes": 1910,
+      "sourceSha256": "8a1841fea8cbdb824dcce50b95f50a60e45279b1cd783951033c504c764dd6b4",
+      "deliverySha256": "8a1841fea8cbdb824dcce50b95f50a60e45279b1cd783951033c504c764dd6b4"
+    },
+    {
+      "file": "qa/ssim-game-15.4.json",
+      "bytes": 1922,
+      "sourceSha256": "4ff1815783401db99b564451c918532486c8edc75c9638f40a7be231045b5166",
+      "deliverySha256": "4ff1815783401db99b564451c918532486c8edc75c9638f40a7be231045b5166"
+    },
+    {
+      "file": "qa/ssim-game-19.5.json",
+      "bytes": 1922,
+      "sourceSha256": "9049d056b6dd5ef4dd83133bd13bcb3a8e961801efb1c84d20416b6293796029",
+      "deliverySha256": "9049d056b6dd5ef4dd83133bd13bcb3a8e961801efb1c84d20416b6293796029"
+    },
+    {
+      "file": "qa/ssim-game-5.6.json",
+      "bytes": 1917,
+      "sourceSha256": "9862b6c92dd6be2da62d16f377ae5df7703a01985350dec2f39d5ce34f4854e5",
+      "deliverySha256": "9862b6c92dd6be2da62d16f377ae5df7703a01985350dec2f39d5ce34f4854e5"
+    },
+    {
+      "file": "qa/ssim-game-6.5.json",
+      "bytes": 1918,
+      "sourceSha256": "308e9e1e9328b80e755b74a0f237400020b0b51dc3a33b0288a609e9836e90be",
+      "deliverySha256": "308e9e1e9328b80e755b74a0f237400020b0b51dc3a33b0288a609e9836e90be"
+    },
+    {
+      "file": "qa/ssim-model-0.json",
+      "bytes": 1898,
+      "sourceSha256": "94e99d0f6102504ca381d3d78909755d91f37c2e5a95fe4724afddeb56446af4",
+      "deliverySha256": "94e99d0f6102504ca381d3d78909755d91f37c2e5a95fe4724afddeb56446af4"
+    },
+    {
+      "file": "qa/ssim-model-1.json",
+      "bytes": 1898,
+      "sourceSha256": "9a12e0842dc0323afdf2cf998f5588310186d4f9ef4afb91c6200be775521644",
+      "deliverySha256": "9a12e0842dc0323afdf2cf998f5588310186d4f9ef4afb91c6200be775521644"
+    },
+    {
+      "file": "qa/ssim-model-15.4.json",
+      "bytes": 1910,
+      "sourceSha256": "b983f6ce401674b76aa13abf0032084b93ebc883b6b28f5c10f93dcdc92b2a31",
+      "deliverySha256": "b983f6ce401674b76aa13abf0032084b93ebc883b6b28f5c10f93dcdc92b2a31"
+    },
+    {
+      "file": "qa/ssim-model-6.5.json",
+      "bytes": 1906,
+      "sourceSha256": "d72530ce533c638bc54b27fa740f2f8846f5f19f6f55a69beec5e9963a20136a",
+      "deliverySha256": "d72530ce533c638bc54b27fa740f2f8846f5f19f6f55a69beec5e9963a20136a"
+    },
+    {
+      "file": "qa/ssim-png-check.json",
+      "bytes": 1915,
+      "sourceSha256": "6ec4869ab00c8e18c69314de2b3a3444bb3d8605332f127faaba5b8c66284665",
+      "deliverySha256": "6ec4869ab00c8e18c69314de2b3a3444bb3d8605332f127faaba5b8c66284665"
+    },
+    {
+      "file": "qa/technical.json",
+      "bytes": 4084,
+      "sourceSha256": "226a1a51c8ff12f72ae420c1f1dd845c5fc4eaa7d9827e65a79db7fef1494db9",
+      "deliverySha256": "226a1a51c8ff12f72ae420c1f1dd845c5fc4eaa7d9827e65a79db7fef1494db9"
+    },
+    {
+      "file": "qa/time-remap-0.8.json",
+      "bytes": 878,
+      "sourceSha256": "00d9cdd3b740877be8c924e1587aca821b7aa62021d882205a519be4dfe29936",
+      "deliverySha256": "00d9cdd3b740877be8c924e1587aca821b7aa62021d882205a519be4dfe29936"
+    },
+    {
+      "file": "qa/time-remap-1.json",
+      "bytes": 876,
+      "sourceSha256": "b240d38161287e56a39769f445b11bb5926db94c3db2650f1576abc3dd3d0d30",
+      "deliverySha256": "b240d38161287e56a39769f445b11bb5926db94c3db2650f1576abc3dd3d0d30"
+    },
+    {
+      "file": "qa/time-remap-15.4.json",
+      "bytes": 881,
+      "sourceSha256": "697af9cb79edd765b782b62f3f4f6e7336eeb65943de03ec5a227c607411fa6d",
+      "deliverySha256": "697af9cb79edd765b782b62f3f4f6e7336eeb65943de03ec5a227c607411fa6d"
+    },
+    {
+      "file": "qa/time-remap-20.7666667.json",
+      "bytes": 915,
+      "sourceSha256": "9c0b8469d6507f51125d3d50379e9ac5d3fa4415c303e7c4106a170c3e14bb0e",
+      "deliverySha256": "9c0b8469d6507f51125d3d50379e9ac5d3fa4415c303e7c4106a170c3e14bb0e"
+    },
+    {
+      "file": "qa/time-remap-5.6.json",
+      "bytes": 878,
+      "sourceSha256": "3f2db11e39bd8059266d1ac03f13ccfd4d8453bd01d9db335f897b768c1e72c4",
+      "deliverySha256": "3f2db11e39bd8059266d1ac03f13ccfd4d8453bd01d9db335f897b768c1e72c4"
+    },
+    {
+      "file": "qa/time-remap-readback.json",
+      "bytes": 3657,
+      "sourceSha256": "4ca303764d1a062b9065933473b0ae00856926ad5b917e1f73bd4d6e8ee0f5ed",
+      "deliverySha256": "4ca303764d1a062b9065933473b0ae00856926ad5b917e1f73bd4d6e8ee0f5ed"
+    },
+    {
+      "file": "qa/visual-review.json",
+      "bytes": 1993,
+      "sourceSha256": "53fdde9def0cf107bba2513e9be369389c022344cf053775359ff36f896f4dd7",
+      "deliverySha256": "53fdde9def0cf107bba2513e9be369389c022344cf053775359ff36f896f4dd7"
+    },
+    {
+      "file": "source/audio.mjs",
+      "bytes": 2991,
+      "sourceSha256": "431cee56b98a781caef400aaae6217ed4f2888af40492fd1e211f94887a524e7",
+      "deliverySha256": "431cee56b98a781caef400aaae6217ed4f2888af40492fd1e211f94887a524e7"
+    },
+    {
+      "file": "source/audit-original-audio.mjs",
+      "bytes": 2585,
+      "sourceSha256": "1ea5dd40f51c10f1ff965041fb51895a3e25e117df28536f87f13df4139e26a3",
+      "deliverySha256": "1ea5dd40f51c10f1ff965041fb51895a3e25e117df28536f87f13df4139e26a3"
+    },
+    {
+      "file": "source/composition.jsx",
+      "bytes": 4991,
+      "sourceSha256": "18744f6c0fced508529768e7610b1df9c3dc7797bdedd70cb70da0a8c1c656be",
+      "deliverySha256": "18744f6c0fced508529768e7610b1df9c3dc7797bdedd70cb70da0a8c1c656be"
+    },
+    {
+      "file": "source/cover.mjs",
+      "bytes": 1958,
+      "sourceSha256": "02188683bba60a84fe91ecedeed1aa0219f1f2acd4ab53801bb5200d3b56f3fa",
+      "deliverySha256": "02188683bba60a84fe91ecedeed1aa0219f1f2acd4ab53801bb5200d3b56f3fa"
+    },
+    {
+      "file": "source/description.txt",
+      "bytes": 332,
+      "sourceSha256": "3644854a8d56dcdc776bca8bab53ead6ccc4f83c30da25feecf9e3520480fcc1",
+      "deliverySha256": "3644854a8d56dcdc776bca8bab53ead6ccc4f83c30da25feecf9e3520480fcc1"
+    },
+    {
+      "file": "source/edit.json",
+      "bytes": 1861,
+      "sourceSha256": "278c3f4660eef9d7315b50a3591e5d9fc7faa5f7a05a6241dc54dd8fe3e766ab",
+      "deliverySha256": "278c3f4660eef9d7315b50a3591e5d9fc7faa5f7a05a6241dc54dd8fe3e766ab"
+    },
+    {
+      "file": "source/filmcraft.mjs",
+      "bytes": 2512,
+      "sourceSha256": "4267fc2e61599a06e981d2979622c512a8bc63a0352650ff7fdce3f3655c29d8",
+      "deliverySha256": "4267fc2e61599a06e981d2979622c512a8bc63a0352650ff7fdce3f3655c29d8"
+    },
+    {
+      "file": "source/native.mjs",
+      "bytes": 2064,
+      "sourceSha256": "45a083594d934fefe18d558a65c4ba2e0bf6ee87217eae7305ad021c1c5bc3e8",
+      "deliverySha256": "45a083594d934fefe18d558a65c4ba2e0bf6ee87217eae7305ad021c1c5bc3e8"
+    },
+    {
+      "file": "source/picture.mjs",
+      "bytes": 5036,
+      "sourceSha256": "e901cd044044a623f8b13ba957618a929c0c9a4baac3ce46f7a4a08c3bbf435d",
+      "deliverySha256": "e901cd044044a623f8b13ba957618a929c0c9a4baac3ce46f7a4a08c3bbf435d"
+    },
+    {
+      "file": "source/prepare-inputs.mjs",
+      "bytes": 3434,
+      "sourceSha256": "aebbbc77b74e15d0684e8a7deee4a2808be07bbf40696bddf0db75fb65713beb",
+      "deliverySha256": "aebbbc77b74e15d0684e8a7deee4a2808be07bbf40696bddf0db75fb65713beb"
+    },
+    {
+      "file": "source/publication.json",
+      "bytes": 1874,
+      "sourceSha256": "82a48c4556c038760b7cf6cf0d363fdda110867d393e55edca1f9bd9a0f79cfc",
+      "deliverySha256": "82a48c4556c038760b7cf6cf0d363fdda110867d393e55edca1f9bd9a0f79cfc"
+    },
+    {
+      "file": "source/render-picture.mjs",
+      "bytes": 658,
+      "sourceSha256": "33434c2e53b00a301552e3ddde908fd2dae5186171285e97f0d5a9ae5f1cab6a",
+      "deliverySha256": "33434c2e53b00a301552e3ddde908fd2dae5186171285e97f0d5a9ae5f1cab6a"
+    },
+    {
+      "file": "source/title.txt",
+      "bytes": 80,
+      "sourceSha256": "c321b37a8bf17a83467ca3f7d7a16178a572d4a5ff12ac3f8a8e508d50136930",
+      "deliverySha256": "c321b37a8bf17a83467ca3f7d7a16178a572d4a5ff12ac3f8a8e508d50136930"
+    },
+    {
+      "file": "source/verify-raw-binding.mjs",
+      "bytes": 2019,
+      "sourceSha256": "32efd4a1405dc19b7e3b1a37de56ff5420cd8e423f8111e5aeeb48eb465cf6f0",
+      "deliverySha256": "32efd4a1405dc19b7e3b1a37de56ff5420cd8e423f8111e5aeeb48eb465cf6f0"
+    },
+    {
+      "file": "source/verify.mjs",
+      "bytes": 5513,
+      "sourceSha256": "78eb785ad260c65faab88738abca390ab4e53f08b8962a684d3b07c1d5c17276",
+      "deliverySha256": "78eb785ad260c65faab88738abca390ab4e53f08b8962a684d3b07c1d5c17276"
+    },
+    {
+      "file": "videos/game-short.mp4",
+      "bytes": 5830716,
+      "sourceSha256": "4c8932d42682c7cdacfb2a1f3f30d935c7daaa04d416162169bd3d46ae0a226d",
+      "deliverySha256": "4c8932d42682c7cdacfb2a1f3f30d935c7daaa04d416162169bd3d46ae0a226d"
+    }
+  ],
+  "originalSevenInputsStillMatch": true,
+  "missingMedia": 0,
+  "nativeProjects": [
+    "covers/game-short-cover.pcraft",
+    "projects/game-short.ecproj",
+    "projects/game-short.fcproj"
+  ],
+  "nativeReopenedAndRendered": true,
+  "publicSourceRawModelOrSdkIncluded": false,
+  "publicSourceStandaloneBgmOrVoiceIncluded": false,
+  "videoSha256": "4c8932d42682c7cdacfb2a1f3f30d935c7daaa04d416162169bd3d46ae0a226d",
+  "coverSha256": "f14ff268d8626cc02f595668c0411699cdb202e6edadaac6aa8609c4135cb84d",
+  "state": "source_ready_native_check_publication_pending",
+  "publicConfirmed": false
+}

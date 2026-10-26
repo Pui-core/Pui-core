@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-26T04:51:43.882Z",
+  "videoSha256": "4c8932d42682c7cdacfb2a1f3f30d935c7daaa04d416162169bd3d46ae0a226d",
+  "reviewedBy": "Coder / codex / image inspection",
+  "frameImages": [
+    {
+      "frame": 0,
+      "file": "qa/final-frame-0.png",
+      "sha256": "b7daa3a1652219f7acbd2be619d4443c165eea4c7c6ccee423cb1ef719c3c64b"
+    },
+    {
+      "frame": 24,
+      "file": "qa/final-frame-24.png",
+      "sha256": "bad6e91e8b6b4c01261a42abb317b7e635f8900fdafaafa659b9f0f4a3caf5df"
+    },
+    {
+      "frame": 167,
+      "file": "qa/final-frame-167.png",
+      "sha256": "9bef80a16b561aa9427a3e717eeaa9525624ba47afe9091397ab5663e615fe77"
+    },
+    {
+      "frame": 168,
+      "file": "qa/final-frame-168.png",
+      "sha256": "a855423e5296820e431c51da158043b25078eca6c90f98fd2b788ab0d0695d4f"
+    },
+    {
+      "frame": 462,
+      "file": "qa/final-frame-462.png",
+      "sha256": "1f429a196f549f453533fd00738517eab1ef5f2f83f8cd2b5e6cf0cd73db0802"
+    },
+    {
+      "frame": 585,
+      "file": "qa/final-frame-585.png",
+      "sha256": "0373769775b3ddcadde52ed090d2f2aa0acedee62ea2db7d5821e9eaf6db09ce"
+    },
+    {
+      "frame": 623,
+      "file": "qa/final-frame-623.png",
+      "sha256": "e2512a48ca183bc29cd85a69b825e1ba038176b5546d0f4a72345c7327aa5007"
+    }
+  ],
+  "additionalReviewedPreviewsSeconds": [
+    0,
+    0.8,
+    5.6,
+    19.5
+  ],
+  "coverFullAnd270x480Viewed": true,
+  "coverSha256": "f14ff268d8626cc02f595668c0411699cdb202e6edadaac6aa8609c4135cb84d",
+  "mandatoryVisualCorrections": [],
+  "findings": [
+    "First frozen stairs result is the real source frame150 and silent-mouth Core",
+    "Question text and model are legible and do not overlap",
+    "Frame167 before and168 after correspond to insertion reveal",
+    "Comparison shows both before and after; CTA and final title are readable",
+    "No RTA/PB/new-feature claim; no old licensed music credits visible"
+  ],
+  "continuousWholeVisualPlaybackClaim": false,
+  "wholeSubjectiveAudition": false
+}
