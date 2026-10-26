@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "kind": "sanitized_actual_publication_record",
+  "managementIssue": "https://github.com/Pui-core/-/issues/120",
+  "productionIssue": 117,
+  "platform": "youtube",
+  "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+  "state": "public_confirmed",
+  "videoId": "21388c4ZOxk",
+  "url": "https://www.youtube.com/watch?v=21388c4ZOxk",
+  "title": "急な二段の近道、ダッシュで渡れる？｜自作ゲーム EMBERWAKE 第2話 ふたりの合図",
+  "actualPublishedAt": "2026-10-26T10:46:11.000Z",
+  "actualPublishedAtJst": "2026-10-26T19:46:11+09:00",
+  "publishedTimeSource": "Official public player microformat publishDate",
+  "confirmedAt": "2026-10-26T10:47:44.145Z",
+  "videoSha256": "dc31b831b51192d659a57afe3a7c225dec19e27fce05a255de5b7f8df4d56a4a",
+  "coverSha256": "4e295b4276ad1da2925ca469fb45377f9d16cb3d87ad6d81636417e639365205",
+  "sourceProduction": {
+    "pr": "https://github.com/Pui-core/Pui-core/pull/50",
+    "head": "136d271fab55d893b727bbae2f8d22de03112699",
+    "merge": "b3e84e22a1f7f7081e3f26513414b81fa85765c1",
+    "deliveryReceiptSha256": "e04b4277d78a882212676b4cbd93d3ff1c5b3199ca53bd63783fdae88b52e1ce"
+  },
+  "settings": {
+    "visibility": "public",
+    "madeForKids": false,
+    "paidPromotion": false,
+    "aiDisclosure": true,
+    "category": "Gaming",
+    "language": "ja",
+    "unrelatedDefaultTagsRemoved": true,
+    "customCoverUploaded": true
+  },
+  "nativeMetadataExact": true,
+  "nativeCoverVisualConfirmed": true,
+  "fileAttachIntents": 1,
+  "coverAttachIntents": 1,
+  "publicationIntents": 1,
+  "reposts": 0,
+  "officialPublic": {
+    "playability": "OK",
+    "isPrivate": false,
+    "isUnlisted": false,
+    "durationSeconds": 82,
+    "sameChannel": true
+  },
+  "earlyViews": 0,
+  "earlyStatsAreNotMaturePerformance": true,
+  "analyticsDue": [
+    {
+      "kind": "24h",
+      "dueAt": "2026-10-27T10:46:11.000Z",
+      "state": "existing_PM_patrol_due"
+    },
+    {
+      "kind": "72h",
+      "dueAt": "2026-10-29T10:46:11.000Z",
+      "state": "existing_PM_patrol_due"
+    }
+  ],
+  "relatedShortAtLongConfirmation": {
+    "actualId": null,
+    "nativeRelatedConfigured": false,
+    "state": "pending_at_long_publication_confirmation",
+    "targetSlotJst": "2026-10-27T12:15:00+09:00",
+    "historicalSnapshot": true
+  },
+  "wholeDirectVideoWatch": false,
+  "wholeSubjectiveAudioListen": false,
+  "musicTopic": false,
+  "bgm": "original Connecting Lights background issue108 revision03",
+  "rootReceipt": {
+    "file": "2026-10-26-episode2-long-public.json",
+    "sha256": "5189d7647360825214d50150765678b0e40d8b7cda2fd5abc72bd4166a3ab0b3",
+    "privateOriginal": true
+  },
+  "sourceWriterActions": {
+    "gui": 0,
+    "newPublications": 0,
+    "profileChanges": 0,
+    "runtimeEdits": 0,
+    "leaseEdits": 0,
+    "dailyEdits": 0
+  },
+  "limits": [
+    "素材識別子20261027は公開実績ではない。実公開は10/26 19:46:11 JST。",
+    "早期視聴0を成熟実績としない。",
+    "relatedShortAtLongConfirmationは本編確認時点の履歴で、後刻のShort設定・予約は別receiptで示す。",
+    "既存制作receiptのpublished:falseを当時の履歴として保持する。"
+  ],
+  "redaction": {
+    "rawUiIncluded": false,
+    "htmlIncluded": false,
+    "privateAbsolutePathsIncluded": false,
+    "authenticationIncluded": false,
+    "mediaOrSdkIncluded": false
+  }
+}
