@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "managementIssue": 126,
+  "productionIssue": 124,
+  "type": "Fixed non-secret reservation snapshot",
+  "files": [
+    {
+      "file": "reservations.json",
+      "bytes": 8607,
+      "sha256": "88f0bc555478c6c88093627c0e1277b31a2b3a53b8f130b90ab835bcdfdcae84"
+    },
+    {
+      "file": "publisher-metadata.json",
+      "bytes": 2409,
+      "sha256": "0f6b4e018ee2b864a4ebe60a4c8dc73e02d8e5e170d105dbf9b95ef3518c0c00"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2455,
+      "sha256": "47e0e4a96525b753c1ad9e93de50e7cd244b72ee5f527867a175d17c24cc7a49"
+    }
+  ],
+  "rootReceiptSha256": {
+    "tiktok": "110434841b38b55875f51a8456673c91bde5d7fd8a8d7c980c44b11aacf01ea6",
+    "youtube": "1533944f6fa691f026a403e6e88e10b4a7b1b97ba3d6e69704bbf75c1527ce96"
+  },
+  "youtubeMetadataReviewSha256": "ac631aca0764e6539e34c91adf06f78e8131df0f78d1c9e54ec56da8b0065c74",
+  "basePayloadFiles": 277,
+  "baseReceiptSha256": "4219c946820d0c39a1e6a0984b4de9d7f5aa0775390dbd986d4d70afad29b853",
+  "acceptanceAppendManifestSha256": "ee6f34aa557d15022d5ad3090107cbb91536ad2510e391249a98dbfc13ab33ee",
+  "originalMediaBaseAcceptanceUnchanged": true
+}
