@@ -5,3 +5,23 @@ frames/**
 *-cache/
 product/
 *.log
+
+# Licensed/raw assets and standalone audio remain in private F delivery.
+media/
+videos/
+covers/
+model/
+short/media/
+short/videos/
+short/covers/
+*.moc3
+*.model3.json
+*.dll
+*.jar
+*.wav
+*.mov
+*.mp4
+userdata/
+frames/
+projects/
+short/projects/

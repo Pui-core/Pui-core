@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-26T09:16:08.897Z",
+  "existingCompletedCoreFrames": 438,
+  "newCoreRender": false,
+  "modelMovieSha256": "8eb1cee6642583e9907ca36bffccca992ae8257fc1eb533101ebe3e1de76bfb4",
+  "originalLicensedFilesUnchanged": [
+    {
+      "sha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e",
+      "unchanged": true,
+      "role": "MOC"
+    },
+    {
+      "sha256": "26f678bc97701a1e0958f3a82569e0efa36e260c1a8551222deb873bfb254c39",
+      "unchanged": true,
+      "role": "model manifest"
+    },
+    {
+      "sha256": "30efeaa8148d55ca0042cfd3d741f499d479f9034bf7985d248360e66e559f73",
+      "unchanged": true,
+      "role": "texture"
+    },
+    {
+      "sha256": "c09bd43ef3d9f02acc8ccdc12d46ba72a750de21aa07a7627fc6a8f04321e26a",
+      "unchanged": true,
+      "role": "texture"
+    }
+  ],
+  "voiceClassificationOnlyChanges": [
+    4,
+    11
+  ],
+  "voiceTextAndTimingUnchanged": true,
+  "modelActualCore": true,
+  "wholeSubjectiveListen": false
+}

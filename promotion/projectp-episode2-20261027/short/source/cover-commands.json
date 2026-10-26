@@ -1,0 +1,159 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1080,
+        1920
+      ],
+      "fill": "#08151e",
+      "name": "Dark background"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-ep2-horizontal-20261027\\media\\cover-game.png",
+      "scale": 77,
+      "fit": false,
+      "center": [
+        540,
+        1040
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        70,
+        240,
+        7,
+        470
+      ],
+      "fill": "#edb468",
+      "name": "Warm accent"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 240,
+      "text": "二段の近道、",
+      "font": "Meiryo",
+      "size": 86,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Question context"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 370,
+      "text": "ダッシュで",
+      "font": "Meiryo",
+      "size": 104,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "Question action"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 520,
+      "text": "渡れる？",
+      "font": "Meiryo",
+      "size": 118,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "Question"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 700,
+      "text": "同じ島へ、別の道。",
+      "font": "Meiryo",
+      "size": 45,
+      "weight": 700,
+      "color": "#aacac3",
+      "name": "Episode route context"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-ep2-horizontal-20261027\\media\\natural\\frame-000000.png",
+      "scale": 58,
+      "fit": false,
+      "center": [
+        760,
+        1440
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 90,
+      "y": 1400,
+      "text": "自作ゲーム",
+      "font": "Meiryo",
+      "size": 45,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Authorship"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 90,
+      "y": 1490,
+      "text": "EMBERWAKE",
+      "font": "Meiryo",
+      "size": 44,
+      "weight": 700,
+      "color": "#aacac3",
+      "name": "Game"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 90,
+      "y": 1625,
+      "text": "第2話「ふたりの合図」",
+      "font": "Meiryo",
+      "size": 37,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Episode"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 90,
+      "y": 1725,
+      "text": "PROJECT P / ぷい",
+      "font": "Meiryo",
+      "size": 34,
+      "color": "#aacac3",
+      "name": "Brand"
+    }
+  ]
+]

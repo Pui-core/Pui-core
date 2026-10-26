@@ -1,47 +1,38 @@
-# EMBERWAKE 本編2話「ふたりの合図」の横動画（段階1 pilot）
+# EMBERWAKE 第2話の横動画・対応Short（制作納品）
 
-実装管理: [Issue117](https://github.com/Pui-core/-/issues/117)。親承認は[Issue93](https://github.com/Pui-core/-/issues/93)/[Issue106](https://github.com/Pui-core/-/issues/106)。本編0.12.0の固定source `71584a6bd0c8852885157de71032fd9252e7a04c` の1章2話を、第1話クリア済みの正当な私有saveから継続して新規に実収録する。音楽主題動画は作らず、108の独自BGMはゲーム紹介の背景素材としてのみ使う。
+[管理Issue117](https://github.com/Pui-core/-/issues/117) / 親[93](https://github.com/Pui-core/-/issues/93)・[106](https://github.com/Pui-core/-/issues/106)。一本の問いは「急な二段の近道、ダッシュで渡れる？」。実収録の両足場への着地から合流・結果を見せる3本と3Craft原本を完成した。公開・関連動画実設定・人気曲選定・成長目標の達成は別の未完事項。
 
-本ディレクトリは **段階1（約10秒pilot）の原本と記録** を置く。Rootが実画像を目視してGOを出すまで、full収録・本レンダー・公開には進まない。
+## 納品
 
-## 収録の入口と保存領域
+`F:\Videos\ProjectP-Episode2-2026-10-27\revision-01\index.html` が再生一覧。`qa/delivery.json` SHA `e04b4277d78a882212676b4cbd93d3ff1c5b3199ca53bd63783fdae88b52e1ce`。対象2704files / 3768611916bytes、同一payloadの全SHA確認済み。
 
-- `/home/pui/tmp/projectp117-capture-20261026/product` は、GitHubの固定commit archive（`EMBERWAKE-71584a6.tar.gz`）を展開した専用コピー。`project.godot` はpristine（読取専用444）に戻し、`.godot` import cacheのみ生成した。ゲームのcore72ファイルは `qa/product-source-before.json` のSHAと照合し、pilot前後で変更0。
-- Godot 4.6.3 と Linux専用Xvfb を使う。Windowsのゲーム、共有デスクトップ、ownerの保存データ、稼働editorは操作しない。
-- 第2話は第1話クリアが前提のため、既知の112私有save（completed[1]/selected1、SHA256 `f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494`）をbyte一致で専用117 userdataへseedする一回の継続経路だけを用意した。未知save・上書き・別prefixは拒否し、製品のexisting-saveガードを一般には無効化しない。
+|用途|ファイル|尺/形式|最終SHA256|
+|---|---|---|---|
+|横動画|`videos/emberwake-episode2-futari-no-aizu.mp4`|82.005s / 1920×1080 / 30fps|`dc31b831b51192d659a57afe3a7c225dec19e27fce05a255de5b7f8df4d56a4a`|
+|YouTube Short|`short/videos/episode2-short.mp4`|27.52s / 1080×1920 / 30fps|`cd818f84da5926eaf33caea0b4155e3e0fdc47c11484f8f90ba7e30789268db2`|
+|TikTok follow候補・仮音源|`short/videos/episode2-short-tiktok.mp4`|27.52s / 1080×1920 / 30fps|`1735e42ee3200e709315d035f0d07c8a8ff4bb957408edd7781c93e5dcb9d3d2`|
 
-## pilot driver（`source/capture-ep2-pilot.gd` / `source/run-ep2-pilot.mjs`）
+補足のF自立性監査は `publication/native-dependencies-20261026/append-delivery.json` SHA `36fdd731ef700da95f5fb68b61b5339f0cd86951179cd017c8d2b1ca63d2207b`。base原票/メディアを変更しない別appendとして保存した。6 nativeの実絶対path参照を全てF117内/存在と照合し、私有tmp・旧112依存0。再制作sourceに書いた元製品・SDKの所在は編集原本の依存とは区別する。
 
-- main scene読込前に、実 `OS.get_user_data_dir()` と `user://` の保存先が所有117 prefix内であること、継続saveが存在し期待SHA256に一致することを照合する。外れれば読込前に失敗する。
-- 実 `InputEventKey`（TAB/ENTER）と実physicsだけで、タイトル → グリッド「1:2」押下で第2話選択 → 「物語を進める」 → 会話3頁（アッシュ／ルミ／アッシュ）を「次へ」「次へ」「出発」 → play到達、まで進める。内部の `start_game`・会話advance直呼び、座標・進行・時計の書換えはしない。ゲーム値は読み取りのみ。
-- 300枚/約10秒（30fps）を収録して正常終了する。壁時計上限90秒、枚数上限420。出力は実PNGと入力/観測原票。
+## 事実と修正
 
-実行例（Rootのpilot目視後にのみ後続のfull段階へ進む。本driverはpilot専用）:
+- 固定0.12.0/source `71584a6bd0c8852885157de71032fd9252e7a04c`、正当な第1話saveから通常TAB/ENTER・物理・キー入力を自動化して第2話へ続行。製品の進行・座標・時計・callbackを直接変更していない。
+- full05は1754f/30fps、A627 `(716.283,979.925)`、B669 `(801.400,931.925)`、island723、炉3/switch2/落下0、結果/手帳/タイトルまで。Bはy932で、通常route6のy924ではない。
+- **PP117-FOOTING-001修正根拠**：driver `fc02714bf7d8b934aec4e2904f24f34a4ffc16dba6b8a7c791ecda98a4dbbed6` とcapture `14029377d2a5a81c8042a7e12c815c565676ac1a857ff50a6bb82d840071e261`、[Root受入](https://github.com/Pui-core/-/issues/117#issuecomment-6411697608)。最新自己レビューに解除根拠を記録する。
+- 短縮した会話は引用符を外して「会話の要約」と明示。音声本文・時刻を変えず既438Coreを再利用。誤った人気曲選定済みflagもfalseへ訂正。
+- 横冒頭は実dash601→721のlive映像＋小さな上部overlay、hostは4秒後。Short/TTもliveで開始し、冒頭hostを除いて字幕全文を保護。横4–7.6秒は実際の第2話選択後frame65へ訂正。
+- Shortと本編は同じ問い。YouTubeは本編を見るCTA、関連実IDはnull/未設定。TikTokは別MP4で「このゲームの続きを、／フォローして見届けて。」。日本人気曲/CMLは未確認、108背景は仮音源でRoot採用・公開待ち。
 
-```sh
-node source/run-ep2-pilot.mjs <未使用の試行名>
-```
+## 検査範囲
 
-同名試行は再利用しない。各試行は未使用の出力・XDG data/config/cache prefixを使い、userdataへ既知saveをseedする。
+- PhotoCraft cover2原本、EffectCraft/FilmCraft各3原本を**Fから再open/save/render**。EC欠損0、FC各3素材online、PC再保存後PNG同一。
+- 3最終MP4の全AVdecode、H264/AAC48k/stereo/30fps/形式尺。横−19.2LUFS/−0.9dBTP、縦2本−19.1LUFS/−1.5dBTP。
+- 横13句・縦各5句は全文句PCM assembly一致、最終AACの全句と語頭語尾の相関、最大lag0samples。数値検査を主観試聴と同一視しない。
+- 実画面を横960f＋冒頭120f、縦各150fで比較。主要cut・A/B/合流の連続画像と最終字幕・coverを目視。Core口同期は30fps量子化（締め境界最大半frame）で、サンプル精度の口運動とは主張しない。
+- **直接の全編実時間視聴・主観試聴は未実施**。Root最終画像レビュー前は117をcloseせず継続WTを保持。公開ID/関連設定/24h72h実績/フォロワー成果は未確定。
 
-## 段階1 の実測（`qa/ep2pilot04-*.json`, `qa/pilot-root-review.json`）
+## 履歴と再配布範囲
 
-- status `PASS_PILOT_PENDING_ROOT_VISUAL_REVIEW`。selected_episode=2、state=play到達、frame_count=300。
-- continuation seed（112私有save）自体は不変で `f5eae6b…`（読込前 `save_sha256_before_scene`）。ただし117pilot内の実saveは通常の「1:2」選択で `selected=2` へ更新され、収録後SHA（`save_sha256_after`）は `4bbe2b36…` になる。初報の「読込前・収録後とも同一」は誤りで訂正した（元seed不変とpilot内saveの通常更新は別物）。core72 before/after SHA 同一（変更0）。
-- 確認画像（実在する絶対パスは `qa/pilot-root-review.json` に記載。本リポには生PNGを置かない）:
-  タイトル(1:1✓/失った記憶1/15) → 第2話選択(1章2話 ふたりの合図) → 会話「出発」 → play開始(1:2 OUR LITTLE SIGNAL / EXPLORE 00:00.00 / » SHIFT / X)。
-- PNG保存待ちがゲーム内壁時計HUDに含まれるため、RTA/PB・人間の初見プレイの証明ではない。ゲーム音はDummyで未収録。
+Claudeがfull05実収録・VOICEVOX13・438Coreを制作し、Codexが既完了を再利用して最終3動画・3Craft/F納品・検査を担当した。途中CLIが通知待ち最終応答で終了した履歴を保持し、Codexは同じownedhandleを実完了まで追跡した。01落下、02別足場の判定停止、03誤受入、04途中終了を初回成功へ書き換えない。旧README/03reviewはqa/history、元原票と修正前映像は私有workspaceに保持。
 
-## 段階2 full 実収録（完了・Root画像レビュー待ち）
-
-Rootのpilot合格（[#117 comment](https://github.com/Pui-core/-/issues/117)）後、`source/capture-ep2-full.gd` / `source/run-ep2-full.mjs` で第2話を最後まで実収録した。pilotと同じ固定source・save SHA・専用Xvfb・read-only観測の制約を維持し、実 `InputEventKey`（TAB/ENTER/A/D/SPACE/X/E）と実physicsだけで進めた。
-
-- 一本の問い「第2話の急な二段の近道、ダッシュで渡れる？」の答え: **はい**。switch0点灯で実体化する任意2枚の近道（branch0 `(641,980)` / branch1 `(795,932)`）を、開始時から有効なdashで越えた。1枚目へdash着地 → steepな2枚目gap（辺50px・上48px）をdashで越えて通常ルート上段 `route[6](810,924)` へ合流 → 同じ次の島 `route[7]` へ。通常の3枚の道と任意2枚の道は同じ島を共有し、合流帯で重なる。
-- 結果: `ep2full03` が完走。`hearth_lit [0,1,2]` / `switch_lit [0,1]` / **落下0** / dash2回 / 1745枚（30fps）/ `state` は手帳後に `title`。core72変更0・`exitCode 0`。詳細は `qa/ep2full03-capture.json` / `qa/ep2full03-launch.json`。
-- 失敗の保持（初回成功にしない）: `ep2full01`=branch-a dashでjump early-cutにより落下（FAIL保持）、`ep2full02`=branch-aはapex timing修正で成功、branch-bは収束帯route[6]着地が厳格判定で未合格（FAIL保持）。原票はいずれも私有workspaceに保持。
-- 生PNG原本・Root向け画像セット・絶対パスは `production-root-review.json`（本リポ `qa/` にミラー、生PNGは私有 `ep2full03/frames` と `ep2full-review/images`）。Coderは dash airborne / 合流 / 完了（落下0）/ 手帳 の実画像を目視済み。
-- HUD clockはPNG待ち込みでRTA/PB・人間初見の証拠ではない。ゲーム音はDummyで未収録。
-
-## 未着手（Rootの最終画像レビュー後）
-
-- native横動画（PhotoCraft/EffectCraft/FilmCraft）・対応Short・TikTok版（フォロー案内）・F納品（`ProjectP-Episode2-2026-10-27/revision-01`）・最終MP4 QA・公開。音楽主題動画は作らず、108 BGMは背景素材のみ。
+Gitには制作コード・台本・native hash/私有F所在・検査要約とhashだけを保存。元MOC/atlas/SDK、独立音源、動画・生画像、rawsave/rawUI/authは再配布しない。Fにはnative編集に必要な描画済み素材を揃え、元モデル/SDKは含めない。共有WindowsGUI/browser/SNS/runtime/lease操作0。音楽主題投稿はSNS-003-NOMUSIC-001に従って禁止を維持する。

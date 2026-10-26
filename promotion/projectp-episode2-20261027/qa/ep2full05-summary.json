@@ -1,0 +1,62 @@
+{
+  "attempt": "ep2full05",
+  "captureReceiptSha256": "14029377d2a5a81c8042a7e12c815c565676ac1a857ff50a6bb82d840071e261",
+  "driverSha256": "fc02714bf7d8b934aec4e2904f24f34a4ffc16dba6b8a7c791ecda98a4dbbed6",
+  "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "gameVersion": "0.12.0",
+  "frames": 1754,
+  "fps": 30,
+  "falls": 0,
+  "hearths": [
+    0,
+    1,
+    2
+  ],
+  "switches": [
+    0,
+    1
+  ],
+  "branchA": {
+    "frame": 627,
+    "playerPosition": [
+      716.283020019531,
+      979.925231933594
+    ],
+    "hearths": [
+      0
+    ],
+    "falls": 0
+  },
+  "branchB": {
+    "frame": 669,
+    "playerPosition": [
+      801.399963378906,
+      931.925231933594
+    ],
+    "hearths": [
+      0
+    ],
+    "falls": 0
+  },
+  "merge": {
+    "frame": 723,
+    "playerPosition": [
+      944.003784179688,
+      883.925231933594
+    ],
+    "hearths": [
+      0
+    ],
+    "falls": 0
+  },
+  "titleSelectedEpisode2Frame": 65,
+  "branchBNote": "branches[1] y932 exposed left lip; distinct from route[6] y924",
+  "ordinaryInput": true,
+  "progressOrPhysicsRewritten": false,
+  "rootAcceptedCaptureCase": "https://github.com/Pui-core/-/issues/117#issuecomment-6411697608",
+  "core72Unchanged": "Root accepted full05 launch proof; no new product audit repeated",
+  "seedSha256": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+  "saveSha256After": "cb431591a49c23e157ce213dc5634ad65794d5e9bf3452a3e455245bc5fc9b97",
+  "rawSaveBundled": false,
+  "rawUiOrAuthBundled": false
+}

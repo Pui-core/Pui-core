@@ -1,0 +1,150 @@
+{
+  "title": "急な二段の近道、ダッシュで渡れる？｜自作ゲーム EMBERWAKE 第2話 ふたりの合図",
+  "question": "急な二段の近道は、ダッシュで渡れるのか。",
+  "duration": 82,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "playStart": 19.6,
+  "playSourceStartFrame": 205,
+  "playSourceEndFrame": 1165,
+  "actualResultAt": 51.6,
+  "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "gameVersion": "0.12.0",
+  "episode": 2,
+  "captureAttempt": "ep2full05",
+  "captureMode": "Automated ordinary keyboard GUI and unmodified physics; not human or RTA",
+  "gameAudioRecorded": false,
+  "footingNote": "branch A landed frame627 (716.283,979.925)=branches[0] y980; branch B landed frame669 (801.400,931.925)=branches[1] y932 exposed left lip, NOT the overhanging powered route tile route[6] y924 (PP117-FOOTING-001 resolved).",
+  "bgm": {
+    "source": "/mnt/f/Videos/ProjectP-Original-BGM-2026-10-26/revision-03-native-soundcraft/audio/connecting-lights-master.wav",
+    "sha256": "4d3bdac03c4bbcd89511ea637265bd13d56e0f11f6b702ca4f01b66af49c50df",
+    "usage": "Background for actual game/app video only; no standalone music publication",
+    "software": "SoundCraft0.12.1",
+    "nativeMusicSeconds": 80,
+    "nativeTailSeconds": 2,
+    "bpm": 96
+  },
+  "story": [
+    {
+      "a": 0,
+      "b": 4,
+      "kind": "live-dash-cold-open",
+      "sourceFrames": [
+        601,
+        721
+      ],
+      "rate": 1
+    },
+    {
+      "a": 4,
+      "b": 7.6,
+      "kind": "title-and-author",
+      "frame": 65
+    },
+    {
+      "a": 7.6,
+      "b": 11.6,
+      "kind": "actual-intro-ash-signal",
+      "frame": 70
+    },
+    {
+      "a": 11.6,
+      "b": 15.6,
+      "kind": "actual-intro-lumi-en",
+      "frame": 115
+    },
+    {
+      "a": 15.6,
+      "b": 19.6,
+      "kind": "depart",
+      "sourceFrames": [
+        160,
+        205
+      ],
+      "freezeHeadSeconds": 1
+    },
+    {
+      "a": 19.6,
+      "b": 51.6,
+      "kind": "unbroken-actual-shortcut-play",
+      "sourceFrames": [
+        205,
+        1165
+      ],
+      "rate": 1
+    },
+    {
+      "a": 51.6,
+      "b": 60,
+      "kind": "actual-result-readable",
+      "frame": 1154
+    },
+    {
+      "a": 60,
+      "b": 63,
+      "kind": "actual-completion-count",
+      "frame": 1314
+    },
+    {
+      "a": 63,
+      "b": 69,
+      "kind": "actual-journal-signal",
+      "sourceFrames": [
+        1399,
+        1579
+      ],
+      "rate": 1
+    },
+    {
+      "a": 69,
+      "b": 72,
+      "kind": "answer-editorial",
+      "frame": 669
+    },
+    {
+      "a": 72,
+      "b": 75,
+      "kind": "signal-payoff-editorial",
+      "frame": 1154
+    },
+    {
+      "a": 75,
+      "b": 82,
+      "kind": "next-question",
+      "frame": 1314
+    }
+  ],
+  "limits": [
+    "Episode2 outcome only, not a full campaign playthrough",
+    "HUD wallclock (01:04.71) includes PNG writing; never presented as a speed or RTA record",
+    "Automated ordinary InputEventKey and unmodified physics; not a first-human-play claim",
+    "Game audio was not recorded (Dummy driver); only VOICEVOX narration and the self-made background BGM are present",
+    "The branch footing is recorded as actually landed: branch B is the optional tile y932, distinct from the powered route tile route[6] y924",
+    "TikTok follow-CTA variant uses a provisional background audio only; final popular-track selection and publication are Root's",
+    "Related YouTube Short id is null/pending; no connected-related-video claim"
+  ],
+  "hostSegments": [
+    {
+      "output": [
+        4,
+        7.6
+      ],
+      "sourceModel": [
+        4,
+        7.6
+      ]
+    },
+    {
+      "output": [
+        75,
+        82
+      ],
+      "sourceModel": [
+        7.6,
+        14.6
+      ]
+    }
+  ],
+  "endingNote": "Visual next-question refers explicitly to the next story episode; unchanged narration is an editorial journey question, not a claim that route choice changes the forgotten memory."
+}

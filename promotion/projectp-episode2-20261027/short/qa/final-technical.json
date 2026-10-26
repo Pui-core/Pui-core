@@ -1,0 +1,146 @@
+{
+  "status": "PASS_TECHNICAL_PENDING_IMAGES_NATIVE_F_REOPEN",
+  "platform": "youtube",
+  "videoSha256": "cd818f84da5926eaf33caea0b4155e3e0fdc47c11484f8f90ba7e30789268db2",
+  "coverSha256": "d6f50c45088a57997e64a5f306bab873af5a1c254effe4808b40891c7cc9021b",
+  "frames": 825,
+  "duration": 27.52,
+  "size": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLufs": -19.1,
+    "truePeakDbtp": -1.5
+  },
+  "fullAvDecode": true,
+  "actualPlay": {
+    "sourceFrames": [
+      601,
+      751
+    ],
+    "output": [
+      7.5,
+      12.5
+    ],
+    "framesCompared": 150,
+    "sourceScale": 1.25,
+    "roi": [
+      0,
+      420,
+      1080,
+      800
+    ],
+    "fullRunSsim": 0.98875,
+    "captionExcluded": true
+  },
+  "finalExtractedFrames": [
+    {
+      "file": "qa/final-00.png",
+      "time": 0
+    },
+    {
+      "file": "qa/final-01.png",
+      "time": 0.2
+    },
+    {
+      "file": "qa/final-02.png",
+      "time": 3.7333333
+    },
+    {
+      "file": "qa/final-03.png",
+      "time": 3.7666667
+    },
+    {
+      "file": "qa/final-04.png",
+      "time": 7.4666667
+    },
+    {
+      "file": "qa/final-05.png",
+      "time": 7.5
+    },
+    {
+      "file": "qa/final-06.png",
+      "time": 8.3
+    },
+    {
+      "file": "qa/final-07.png",
+      "time": 8.3666667
+    },
+    {
+      "file": "qa/final-08.png",
+      "time": 8.4333333
+    },
+    {
+      "file": "qa/final-09.png",
+      "time": 9.7
+    },
+    {
+      "file": "qa/final-10.png",
+      "time": 9.7666667
+    },
+    {
+      "file": "qa/final-11.png",
+      "time": 9.8333333
+    },
+    {
+      "file": "qa/final-12.png",
+      "time": 11.5
+    },
+    {
+      "file": "qa/final-13.png",
+      "time": 11.5666667
+    },
+    {
+      "file": "qa/final-14.png",
+      "time": 11.6333333
+    },
+    {
+      "file": "qa/final-15.png",
+      "time": 12.4666667
+    },
+    {
+      "file": "qa/final-16.png",
+      "time": 12.5
+    },
+    {
+      "file": "qa/final-17.png",
+      "time": 13
+    },
+    {
+      "file": "qa/final-18.png",
+      "time": 16.2333333
+    },
+    {
+      "file": "qa/final-19.png",
+      "time": 16.2666667
+    },
+    {
+      "file": "qa/final-20.png",
+      "time": 17
+    },
+    {
+      "file": "qa/final-21.png",
+      "time": 21.2333333
+    },
+    {
+      "file": "qa/final-22.png",
+      "time": 21.2666667
+    },
+    {
+      "file": "qa/final-23.png",
+      "time": 25
+    },
+    {
+      "file": "qa/final-24.png",
+      "time": 27.4666667
+    }
+  ],
+  "wholeDirectVideoWatch": false,
+  "wholeDirectSubjectiveListen": false,
+  "ownerCreativeAcceptance": false,
+  "published": false
+}

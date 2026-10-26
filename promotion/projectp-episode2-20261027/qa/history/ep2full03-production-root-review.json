@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "issue": "Pui-core/-#117",
+  "stage": "段階2 ep2 full 実収録 (Root画像レビュー待ち)",
+  "engine": "claude (Coder1)",
+  "status": "FULL_GAME_CAPTURE_PASS_PENDING_ROOT_VISUAL_REVIEW",
+  "question": "第2話の急な二段の近道、ダッシュで渡れる？",
+  "answer_from_capture": "はい。switch0点灯で実体化する任意2枚の近道(branch0,branch1)を、開始時から有効なdashで実収録。branch0へdash着地、steepな2枚目gap(辺50px/上48px)をdashで越えて通常ルート上段(route[6])へ合流し、同じ次の島route[7]へ。落下0で三灯result到達。",
+  "source": {
+    "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+    "gameVersion": "0.12.0",
+    "godot": "4.6.3-stable (official)",
+    "core_files_checked": 72,
+    "changed_core": [],
+    "note": "固定archive EMBERWAKE-71584a6.tar.gz 展開。project.godot pristine(444)。ゲームscene/logic未改変。"
+  },
+  "continuation_save": {
+    "seeded_sha256": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+    "save_sha256_before_scene": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+    "profile_completed_before_input": [1],
+    "selected_episode_before_input": 1,
+    "note": "既知112私有saveをbyte一致で専用117 userdataへseed。未知save/上書きは拒否。"
+  },
+  "input_method": "Actual focused-GUI + play InputEventKey (TAB/ENTER/A/D/SPACE/X/E) only; no start_game/dialogue advance/progress/player/clock calls or writes. 観測はread-onlyでinput判断のみ。",
+  "ep2_geometry_observed": {
+    "spawn": [95, 1160],
+    "permanent_islands_route_index": [0, 1, 2, 3],
+    "hearths": [[508, 1028], [968, 884], [578, 752]],
+    "switches": [[598, 1028], [1058, 884]],
+    "optional_branch_tiles": [[641, 980, 104, 12], [795, 932, 104, 12]],
+    "normal_powered_group0": [[590, 988], [700, 960], [810, 924]],
+    "merge_island_route7": [920, 884, 160, 20],
+    "note": "branch(2枚,steep)とpowered route(3枚)はisland route[3]→route[7]を共有。branch上段(795,932)は通常route[6](810,924)の直下8pxで、合流帯で重なる。"
+  },
+  "route_taken": "spawn→route0..3(永続島)→hearth0+switch0→dash branch0→dash steep gap→merge(route[6]/branch1収束)→island route[7]→hearth1+switch1→powered group2 route8..11→island route[11]→hearth2→三灯result→title→手帳(2頁)",
+  "final": {
+    "selected_episode": 2,
+    "state_after_notebook": "title",
+    "hearth_lit": [0, 1, 2],
+    "switch_lit": [0, 1],
+    "falls": 0,
+    "dashes_used": 2,
+    "frame_count": 1745,
+    "fps": 30,
+    "render_size": [1920, 1080]
+  },
+  "attempts_preserved": [
+    {"attempt": "ep2full01", "result": "FAIL", "where": "branch-a dash", "cause": "jump early-cut (release at i=1→20px micro-hop)→dashが上昇を潰し落下", "receipt": "/home/pui/tmp/projectp117-capture-20261026/ep2full01/capture.json"},
+    {"attempt": "ep2full02", "result": "FAIL", "where": "branch-b steep gap", "cause": "branch-aはapex timing修正でdash成功。branch-bは収束帯route[6]へ着地したがlanded判定が厳格で未合格", "receipt": "/home/pui/tmp/projectp117-capture-20261026/ep2full02/capture.json"},
+    {"attempt": "ep2full03", "result": "PASS_FULL_CAPTURE_PENDING_ROOT_VISUAL_REVIEW", "where": "完走", "receipt": "/home/pui/tmp/projectp117-capture-20261026/ep2full03/capture.json"}
+  ],
+  "artifacts": {
+    "frames_dir": "/home/pui/tmp/projectp117-capture-20261026/ep2full03/frames (1745 PNG, 1920x1080)",
+    "receipt": "/home/pui/tmp/projectp117-capture-20261026/ep2full03/capture.json",
+    "launch": "/home/pui/tmp/projectp117-capture-20261026/ep2full03-launch.json",
+    "log": "/home/pui/tmp/projectp117-capture-20261026/ep2full03.log",
+    "driver": "/home/pui/tmp/projectp117-capture-20261026/source-117/capture-ep2-full.gd (sha256 5e03b424462d6721497f9d3e7950ff2ee98e4f8c1c9873dd0f6216b0f15652b4)",
+    "runner": "/home/pui/tmp/projectp117-capture-20261026/source-117/run-ep2-full.mjs"
+  },
+  "review_images": {
+    "title_ep1_cleared": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000030.png",
+    "episode2_selected": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000065.png",
+    "conversation_depart": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000185.png",
+    "play_start": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000210.png",
+    "island3_hearth1": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000485.png",
+    "island3_switch1": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000552.png",
+    "dash_branch_a_fire": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000611.png",
+    "dash_branch_a_land": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000627.png",
+    "dash_branch_b_fire": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000653.png",
+    "dash_branch_b_land_merge": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000667.png",
+    "merge_island7": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-000715.png",
+    "three_hearth_result": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-001085.png",
+    "notebook_page1": "/home/pui/tmp/projectp117-capture-20261026/ep2full-review/images/frame-001460.png"
+  },
+  "verified_by_coder": "frame-000611(dash airborne off island3 / »SHIFT/X / 1:2 OUR LITTLE SIGNAL), frame-000715(merge island7 / E◇ interact / 1灯目点灯), frame-001085(1章:2話 完了 / 落下0 / 01:10.50 / 再挑戦・話を選ぶ・次の話へ), frame-001460(手帳1/2 ふたりの合図 / 二度光ったら…) をCoderが実画像で目視。数値検査と区別。",
+  "remaining": [
+    "native横動画(PhotoCraft/EffectCraft/FilmCraft)・対応Short・TikTok版・F納品(ProjectP-Episode2-2026-10-27/revision-01)・最終MP4 QA・公開は未着手。本セッションは実収録(段階2)の完了まで。",
+    "HUD clockはPNG待ち込みでRTA/PB/人間初見の証拠ではない。ゲーム音はDummyで未収録。音楽主題動画は禁止。",
+    "Rootが上記review_images最終を目視し、横動画・Short制作とその後の公開を判断する。"
+  ]
+}

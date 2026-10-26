@@ -6,11 +6,13 @@
 # progress/player/clock calls or writes. Continuation requires the known legitimate
 # episode-1-cleared private save (exact SHA256) inside the owned 117 prefix.
 #
-# Episode 2 "ふたりの合図" intentionally takes the OPTIONAL two-tile shortcut
-# (stage.branches, solid only after switch 0) crossed with the dash, which merges onto
-# the same next island (route[7]) as the ordinary three-tile powered route. Reaching /
-# falling / merging / result all follow the actual recorded physics; failures are
-# preserved as a FAIL receipt and are never retried over in the same attempt.
+# Episode 2 "ふたりの合図" attempts the OPTIONAL two-tile shortcut (stage.branches, solid
+# only after switch 0) crossed with the dash, which merges onto the same next island
+# (route[7]) as the ordinary three-tile powered route. A successful crossing requires the
+# player to actually land on BOTH branch tiles; the overhanging powered route tile
+# route[6] does not count for branch B (PP117-FOOTING-001). Reaching / falling / merging /
+# result all follow the actual recorded physics; failures are preserved as a FAIL receipt
+# and are never retried over in the same attempt.
 extends SceneTree
 
 const EXPECTED_SAVE_SHA := "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494"
@@ -249,10 +251,13 @@ func hop(target: Rect2) -> bool:
 	return false
 
 # Jump then a single real air-dash toward the steeper optional branch gap.
-# accept: footing rects that count as a successful crossing (defaults to [target]).
-# The steep branch's upper tile converges with the powered route's upper tile, so the
-# merge is recorded as landing on either — both are the shared path to the next island.
-func dash_hop(target: Rect2, label_value: String, accept: Array = []) -> bool:
+# accept: footing rects that count as a successful crossing (defaults to [target]). This
+# must be the real branch tile only — the powered route tile is a DIFFERENT platform and
+# is never a substitute for landing on the optional branch itself.
+# launch_x / land_x: when >=0, override the default take-off / aim x. Needed for branch B,
+# whose only exposed footing is its left lip (x<route[6] start); aiming at the branch
+# centre lands on the powered route tile that overhangs it, which does not count.
+func dash_hop(target: Rect2, label_value: String, accept: Array = [], launch_x: float = -1.0, land_x: float = -1.0) -> bool:
 	if accept.is_empty(): accept=[target]
 	var current := current_floor()
 	if current.size==Vector2.ZERO:
@@ -261,6 +266,8 @@ func dash_hop(target: Rect2, label_value: String, accept: Array = []) -> bool:
 	var direction := 1 if target.get_center().x>current.get_center().x else -1
 	var destination := target.position.x+22 if direction>0 else target.end.x-22
 	var launch := current.end.x-8 if direction>0 else current.position.x+8
+	if land_x>=0.0: destination=land_x
+	if launch_x>=0.0: launch=launch_x
 	if not await walk(launch): return false
 	move(direction)
 	await frames(2)
@@ -399,10 +406,12 @@ func full_episode_ep2() -> void:
 	if not await dash_hop(branches[0],"branch-a"):
 		fail("Dash onto branch tile A failed; attempt preserved (fall/short recorded)")
 		return
-	# Second steep dash across the widest gap. The upper branch tile and the powered
-	# route's upper tile (route[6]) converge here; landing on either is the real merge.
-	if not await dash_hop(branches[1],"branch-b",[branches[1],route[6]]):
-		fail("Dash across the steep branch gap failed; attempt preserved")
+	# Second steep dash across the widest gap. branch B (x795..899,y932) is overhung by
+	# the powered route tile route[6] (x810..914,y924), so its only exposed footing is the
+	# left lip x795..810. Launch from branch A's centre and aim the dash at that lip so the
+	# landing is on branch B itself, not the higher powered tile. route[6] is NOT accepted.
+	if not await dash_hop(branches[1],"branch-b",[branches[1]],branches[0].get_center().x,branches[1].position.x+8.0):
+		fail("Dash onto the second optional branch tile failed; attempt preserved (fell or landed on the powered route instead)")
 		return
 	# 4) Step up to island route[7] — the same island the ordinary three-tile route reaches.
 	if not await hop(route[7]):
@@ -462,6 +471,6 @@ func full_episode_ep2() -> void:
 	event("actual-final-title")
 	active=false
 	finishing=true
-	receipt("PASS_FULL_CAPTURE_PENDING_ROOT_VISUAL_REVIEW","Ordinary title/story/physics: permanent islands, hearth1+switch1, optional two-tile branch crossed by real air-dash, merge to shared island, hearth2+switch2, powered group 2, three-hearth result, notebook. Automated capture, not a human/RTA claim.")
+	receipt("PASS_FULL_CAPTURE_PENDING_ROOT_VISUAL_REVIEW","Ordinary title/story/physics: permanent islands, hearth1+switch1, both optional branch tiles (A and B) landed by real air-dash with branch B on its exposed left lip (not the powered route tile), merge to the shared island, hearth2+switch2, powered group 2, three-hearth result, notebook. Automated capture, not a human/RTA claim.")
 	print("PROJECTP117_FULL_COMPLETE frames=",count," dashes=",dashes_used)
 	quit(0)

@@ -1,0 +1,82 @@
+{
+  "videoSha256": "dc31b831b51192d659a57afe3a7c225dec19e27fce05a255de5b7f8df4d56a4a",
+  "opening": {
+    "sourceFrames": [
+      601,
+      721
+    ],
+    "output": [
+      0,
+      4
+    ],
+    "continuousFramesCompared": 120,
+    "roi": [
+      0,
+      280,
+      1920,
+      700
+    ],
+    "ssim": 0.989094,
+    "wholeGapVisible": true,
+    "hostAbsentBefore4": true,
+    "scope": "Full-frame source sequence plus compact upper overlay; pixel ROI proof separate from subjective viewing"
+  },
+  "images": [
+    {
+      "file": "qa/final-cold-A.png",
+      "time": 0.8666667,
+      "sourceFrame": 627
+    },
+    {
+      "file": "qa/final-cold-B.png",
+      "time": 2.2666667,
+      "sourceFrame": 669
+    },
+    {
+      "file": "qa/final-land-A-before.png",
+      "time": 33.6333333,
+      "sourceFrame": 626
+    },
+    {
+      "file": "qa/final-land-A.png",
+      "time": 33.6666667,
+      "sourceFrame": 627
+    },
+    {
+      "file": "qa/final-land-A-after.png",
+      "time": 33.7,
+      "sourceFrame": 628
+    },
+    {
+      "file": "qa/final-land-B-before.png",
+      "time": 35.0333333,
+      "sourceFrame": 668
+    },
+    {
+      "file": "qa/final-land-B.png",
+      "time": 35.0666667,
+      "sourceFrame": 669
+    },
+    {
+      "file": "qa/final-land-B-after.png",
+      "time": 35.1,
+      "sourceFrame": 670
+    },
+    {
+      "file": "qa/final-merge-before.png",
+      "time": 36.8333333,
+      "sourceFrame": 722
+    },
+    {
+      "file": "qa/final-merge.png",
+      "time": 36.8666667,
+      "sourceFrame": 723
+    },
+    {
+      "file": "qa/final-merge-after.png",
+      "time": 36.9,
+      "sourceFrame": 724
+    }
+  ],
+  "wholeDirectWatch": false
+}
