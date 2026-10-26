@@ -1,0 +1,161 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "fill": "#08151e",
+      "name": "Dark background"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\media\\cover-game.png",
+      "scale": 110,
+      "fit": false,
+      "center": [
+        1530,
+        690
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        990,
+        1080
+      ],
+      "fill": "#08151e",
+      "name": "Title field"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        70,
+        110,
+        8,
+        320
+      ],
+      "fill": "#edb468",
+      "name": "Warm accent"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 95,
+      "text": "自作ゲーム EMBERWAKE",
+      "font": "Meiryo",
+      "size": 34,
+      "weight": 700,
+      "color": "#aacac3",
+      "name": "Game and author context"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 200,
+      "text": "灯は、ついた。",
+      "font": "Meiryo",
+      "size": 91,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Clear"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 340,
+      "text": "思い出は、消えた。",
+      "font": "Meiryo",
+      "size": 83,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "Cost"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 110,
+      "y": 490,
+      "text": "第1話、最初の忘却。",
+      "font": "Meiryo",
+      "size": 42,
+      "weight": 700,
+      "color": "#aacac3",
+      "name": "Episode scope"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\media\\natural\\frame-000000.png",
+      "scale": 75,
+      "fit": false,
+      "center": [
+        350,
+        820
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        1000,
+        1920,
+        80
+      ],
+      "fill": "#07131d",
+      "name": "Footer field"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 580,
+      "y": 1020,
+      "text": "3つの灯の先で、何を失った？",
+      "font": "Meiryo",
+      "size": 35,
+      "weight": 700,
+      "color": "#f3e7ca",
+      "name": "Viewer question"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 1430,
+      "y": 1025,
+      "text": "PROJECT P / ぷい",
+      "font": "Meiryo",
+      "size": 28,
+      "color": "#aacac3",
+      "name": "Brand"
+    }
+  ]
+]

@@ -1,0 +1,41 @@
+{
+  "sourceDriver": "source/capture-pilot.gd",
+  "driverSha256": "15380418304ff8701a52ff5397b65bb656eb099217f7cb5cdf70a5385c7a59c7",
+  "actualReceiptSha256": "1217a3168d2bc5315d77d845a7021ee012f825b5f6f20d9f038b3d77b4b5db04",
+  "preview": {
+    "file": "/home/pui/tmp/projectp112-capture-20261026/pilot01/pilot-review.mp4",
+    "sha256": "7cb624a7affcb89c4de1667a7ae496513caf15687b92e7c103ccf53386326e3f",
+    "seconds": 10,
+    "fps": 30,
+    "sourceFrames": 300,
+    "audio": false
+  },
+  "imageReview": {
+    "frames": [
+      10,
+      50,
+      95,
+      140,
+      200
+    ],
+    "by": "Codex source writer",
+    "directVideoWatch": false,
+    "directAudioListen": false
+  },
+  "rootVisualReview": {
+    "status": "PASS_BOUNDED",
+    "atUtc": "2026-10-26T04:48:32Z",
+    "frames": [
+      10,
+      50,
+      95,
+      140,
+      200
+    ],
+    "scope": "Root directly viewed title/focus,3 story pages and actual EXPLORE world; checked ordinary input receipt and private save-prefix guard",
+    "wholeVideoWatch": false,
+    "wholeAudioListen": false,
+    "ownerCreativeAcceptance": false
+  },
+  "fullCaptureExecuted": false
+}

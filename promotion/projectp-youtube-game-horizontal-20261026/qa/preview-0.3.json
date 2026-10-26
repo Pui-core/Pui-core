@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\projects\\first-forgetting.ecproj",
+    "render-frame",
+    "--comp",
+    "EMBERWAKE First Forgetting",
+    "--time",
+    "0.3",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\qa\\preview-0.3.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":6,\"height\":1080,\"ms\":163.9,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-112\\\\promotion\\\\projectp-youtube-game-horizontal-20261026\\\\qa\\\\preview-0.3.png\",\"time\":0.3,\"width\":1920}\n",
+  "stderr": ""
+}

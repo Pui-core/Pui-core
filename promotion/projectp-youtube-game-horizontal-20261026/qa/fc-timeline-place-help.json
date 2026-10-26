@@ -1,0 +1,10 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/FilmCraft/filmcraft-cli.exe",
+  "args": [
+    "describe",
+    "timeline.place"
+  ],
+  "stdout": "{\n  \"defaultShortcut\": null,\n  \"enabled\": false,\n  \"id\": \"timeline.place\",\n  \"label\": \"Place Clip\",\n  \"menu\": [],\n  \"params\": \"{\\\"item\\\":id|\\\"items\\\":[id] (back to back, one undo step),\\\"track\\\":\\\"V1\\\"|id|\\\"A1\\\" (sound only)|\\\"new\\\" (a video track after the last)?,\\\"audioTrack\\\":\\\"A1\\\"|id|\\\"new\\\"?,\\\"time\\\":ticks|\\\"frame\\\":i64|\\\"seconds\\\":f64,\\\"insert\\\":bool,\\\"sourceIn\\\":ticks?,\\\"duration\\\":ticks?,\\\"video\\\":bool=true,\\\"audio\\\":bool=true}\",\n  \"shortcut\": null,\n  \"shortcuts\": []\n}\n",
+  "stderr": ""
+}

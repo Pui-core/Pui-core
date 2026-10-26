@@ -1,0 +1,39 @@
+{
+  "model": "Revenant_Natural / owner specified",
+  "originalFiles": [
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.moc3",
+      "sha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e"
+    },
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.model3.json",
+      "sha256": "26f678bc97701a1e0958f3a82569e0efa36e260c1a8551222deb873bfb254c39"
+    },
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.8192/texture_00.png",
+      "sha256": "30efeaa8148d55ca0042cfd3d741f499d479f9034bf7985d248360e66e559f73"
+    },
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.8192/texture_01.png",
+      "sha256": "c09bd43ef3d9f02acc8ccdc12d46ba72a750de21aa07a7627fc6a8f04321e26a"
+    }
+  ],
+  "originalsUnchanged": true,
+  "coreJarSha256": "5458a64ebe33b38350de1437399343b0d502f2353a34a97da76d56d118c0d186",
+  "coreNativeSha256": "71d5757025cd31c61be0d52ad79d4cd0de0465e1df6c4508c4fde70207613985",
+  "rendererSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+  "frames": 438,
+  "width": 600,
+  "height": 780,
+  "fps": 30,
+  "alpha": true,
+  "movSha256": "e8edd7b662538d628f675c7609b2e3dd02ad19ae1b70bacbcab35b214b6ec5b1",
+  "mouthFromNewVoiceOnly": true,
+  "cameraTracking": false,
+  "vTubeStudio": false,
+  "physicsSimulated": false,
+  "coreGeometry": true,
+  "softwareTriangleRenderer": true,
+  "limitation": "Software triangle and mask sampling approximates GPU rendering; normal blend and default color factors checked each frame; not a camera/physics capture",
+  "rawModelOrSdkBundled": false
+}

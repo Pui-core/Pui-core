@@ -1,0 +1,19 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/Live2D Cubism 5.3/app/jre/bin/java.exe",
+  "args": [
+    "-Xmx2g",
+    "-Djava.awt.headless=true",
+    "-Djava.library.path=C:\\Program Files\\Live2D Cubism 5.3\\app\\dll64",
+    "-cp",
+    "C:\\Program Files\\Live2D Cubism 5.3\\app\\lib\\Live2DCubismCore.jar;\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp112-capture-20261026\\model\\classes",
+    "AvatarCore",
+    "F:\\Users\\pui\\Desktop\\model\\SeeThrough-workflows\\Revenant_Natural\\Revenant_Natural.moc3",
+    "F:\\Users\\pui\\Desktop\\model\\SeeThrough-workflows\\Revenant_Natural\\Revenant_Natural.8192\\texture_00.png",
+    "F:\\Users\\pui\\Desktop\\model\\SeeThrough-workflows\\Revenant_Natural\\Revenant_Natural.8192\\texture_01.png",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\media\\natural",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp112-capture-20261026\\model\\schedule.csv"
+  ],
+  "stdout": "Native Core rendered 30 frames / 16.9315389s\r\nNative Core rendered 60 frames / 30.0203986s\r\nNative Core rendered 90 frames / 43.8898302s\r\nNative Core rendered 120 frames / 57.7087554s\r\nNative Core rendered 150 frames / 71.7462687s\r\nNative Core rendered 180 frames / 86.413614s\r\nNative Core rendered 210 frames / 100.8807118s\r\nNative Core rendered 240 frames / 115.3256823s\r\nNative Core rendered 270 frames / 171.1125766s\r\nNative Core rendered 300 frames / 225.4173616s\r\nNative Core rendered 330 frames / 240.0930813s\r\nNative Core rendered 360 frames / 252.537352s\r\nNative Core rendered 390 frames / 264.4298198s\r\nNative Core rendered 420 frames / 277.0883251s\r\nRendered 438 true Core frames, 600x780, no physics simulation; Core=06.00.0513 (100663809)\r\n",
+  "stderr": ""
+}

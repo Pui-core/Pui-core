@@ -1,0 +1,50 @@
+{
+  "mode": "full",
+  "attempt": "full01",
+  "started": "2026-10-26T04:49:11.249Z",
+  "launcherPid": 416115,
+  "exe": "/usr/bin/xvfb-run",
+  "args": [
+    "-a",
+    "-s",
+    "-screen 0 1920x1080x24 -nolisten tcp",
+    "/home/pui/.local/bin/godot",
+    "--path",
+    "/home/pui/tmp/projectp112-capture-20261026/product",
+    "--rendering-method",
+    "gl_compatibility",
+    "--audio-driver",
+    "Dummy",
+    "--fixed-fps",
+    "30",
+    "--disable-vsync",
+    "--resolution",
+    "1920x1080",
+    "--script",
+    "/home/pui/.claude/worktrees/Pui-core-issue-112/promotion/projectp-youtube-game-horizontal-20261026/source/capture.gd",
+    "--",
+    "--mode",
+    "full",
+    "--out",
+    "/home/pui/tmp/projectp112-capture-20261026/full01"
+  ],
+  "driverSha256": "296f5100a9ec871479151dcf4c65ff2d9ddbc2a17e702d589b09c5a581baefdf",
+  "ownedPaths": {
+    "workspace": "/home/pui/tmp/projectp112-capture-20261026",
+    "product": "/home/pui/tmp/projectp112-capture-20261026/product",
+    "out": "/home/pui/tmp/projectp112-capture-20261026/full01",
+    "data": "/home/pui/tmp/projectp112-capture-20261026/full01-userdata",
+    "config": "/home/pui/tmp/projectp112-capture-20261026/full01-config",
+    "cache": "/home/pui/tmp/projectp112-capture-20261026/full01-cache"
+  },
+  "limits": {
+    "nativeWallSeconds": 720,
+    "maxFrames": 5000
+  },
+  "status": "FINISHED",
+  "exitCode": 0,
+  "signal": null,
+  "finished": "2026-10-26T04:52:11.593Z",
+  "coreFilesChecked": 72,
+  "changedCore": []
+}

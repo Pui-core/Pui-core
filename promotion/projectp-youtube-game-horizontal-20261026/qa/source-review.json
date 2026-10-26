@@ -1,0 +1,30 @@
+{
+  "status": "PASS_BOUNDED_READONLY_REVIEW_WITH_ONE_PROVENANCE_FIX",
+  "reviewer": "Codex child horizontal_native_route_audit",
+  "scope": [
+    "source/*.mjs",
+    "source/capture.gd",
+    "source/edit.json",
+    "qa/full01-capture.json"
+  ],
+  "actualPlay": {
+    "frames": 912,
+    "outputFrames": [
+      588,
+      1500
+    ],
+    "sourceFrames": [
+      200,
+      1112
+    ],
+    "rate": 1
+  },
+  "unauthorizedGameStateWritesFound": false,
+  "dialogueClaimsSupportedByActualReceipt": true,
+  "mustFix": {
+    "finding": "Cold-open provenance omitted environment805 while quote came from1160",
+    "resolution": "edit.json now records backgroundFrame805,quoteFrame1160,and explicit PhotoCraft crop; unused generated story metadata updated with no visual renderer statement change"
+  },
+  "nativeFReopenAtReview": "PENDING; separate delivery receipt required",
+  "subjectivePlaybackPerformed": false
+}

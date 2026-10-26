@@ -1,0 +1,9 @@
+{
+  "exit": 1,
+  "exe": "/mnt/c/Program Files/nodejs/node.exe",
+  "args": [
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-112\\promotion\\projectp-youtube-game-horizontal-20261026\\source\\check-voicevox-windows.mjs"
+  ],
+  "stdout": "",
+  "stderr": "node:internal/deps/undici/undici:15845\r\n      Error.captureStackTrace(err);\r\n            ^\r\n\r\nTypeError: fetch failed\r\n    at node:internal/deps/undici/undici:15845:13\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\r\n    at async file://wsl.localhost/Ubuntu/home/pui/.claude/worktrees/Pui-core-issue-112/promotion/projectp-youtube-game-horizontal-20261026/source/check-voicevox-windows.mjs:1:57 {\r\n  [cause]: Error: connect ECONNREFUSED 127.0.0.1:50025\r\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {\r\n    errno: -4078,\r\n    code: 'ECONNREFUSED',\r\n    syscall: 'connect',\r\n    address: '127.0.0.1',\r\n    port: 50025\r\n  }\r\n}\r\n\r\nNode.js v24.11.1\r\n"
+}
