@@ -27,12 +27,21 @@ node source/run-ep2-pilot.mjs <未使用の試行名>
 ## 段階1 の実測（`qa/ep2pilot04-*.json`, `qa/pilot-root-review.json`）
 
 - status `PASS_PILOT_PENDING_ROOT_VISUAL_REVIEW`。selected_episode=2、state=play到達、frame_count=300。
-- continuation save SHA は読込前・収録後ともに `f5eae6b…` で同一。core72 before/after SHA 同一（変更0）。
+- continuation seed（112私有save）自体は不変で `f5eae6b…`（読込前 `save_sha256_before_scene`）。ただし117pilot内の実saveは通常の「1:2」選択で `selected=2` へ更新され、収録後SHA（`save_sha256_after`）は `4bbe2b36…` になる。初報の「読込前・収録後とも同一」は誤りで訂正した（元seed不変とpilot内saveの通常更新は別物）。core72 before/after SHA 同一（変更0）。
 - 確認画像（実在する絶対パスは `qa/pilot-root-review.json` に記載。本リポには生PNGを置かない）:
   タイトル(1:1✓/失った記憶1/15) → 第2話選択(1章2話 ふたりの合図) → 会話「出発」 → play開始(1:2 OUR LITTLE SIGNAL / EXPLORE 00:00.00 / » SHIFT / X)。
 - PNG保存待ちがゲーム内壁時計HUDに含まれるため、RTA/PB・人間の初見プレイの証明ではない。ゲーム音はDummyで未収録。
 
-## 未確認（後続のfull段階、Root GO後）
+## 段階2 full 実収録（完了・Root画像レビュー待ち）
 
-- ふたりの合図の任意2枚分岐 → dash → 通常経路合流 → 結果/手帳は未収録。急な二段近道をダッシュで渡れるかの実挙動は未検証。到達・転落・合流・結果は実収録に従って決める。
-- 横動画・対応Short・TikTok（フォロー案内）・納品・品質検査・公開は、Rootのpilot判定後に117本文で再依頼する範囲。
+Rootのpilot合格（[#117 comment](https://github.com/Pui-core/-/issues/117)）後、`source/capture-ep2-full.gd` / `source/run-ep2-full.mjs` で第2話を最後まで実収録した。pilotと同じ固定source・save SHA・専用Xvfb・read-only観測の制約を維持し、実 `InputEventKey`（TAB/ENTER/A/D/SPACE/X/E）と実physicsだけで進めた。
+
+- 一本の問い「第2話の急な二段の近道、ダッシュで渡れる？」の答え: **はい**。switch0点灯で実体化する任意2枚の近道（branch0 `(641,980)` / branch1 `(795,932)`）を、開始時から有効なdashで越えた。1枚目へdash着地 → steepな2枚目gap（辺50px・上48px）をdashで越えて通常ルート上段 `route[6](810,924)` へ合流 → 同じ次の島 `route[7]` へ。通常の3枚の道と任意2枚の道は同じ島を共有し、合流帯で重なる。
+- 結果: `ep2full03` が完走。`hearth_lit [0,1,2]` / `switch_lit [0,1]` / **落下0** / dash2回 / 1745枚（30fps）/ `state` は手帳後に `title`。core72変更0・`exitCode 0`。詳細は `qa/ep2full03-capture.json` / `qa/ep2full03-launch.json`。
+- 失敗の保持（初回成功にしない）: `ep2full01`=branch-a dashでjump early-cutにより落下（FAIL保持）、`ep2full02`=branch-aはapex timing修正で成功、branch-bは収束帯route[6]着地が厳格判定で未合格（FAIL保持）。原票はいずれも私有workspaceに保持。
+- 生PNG原本・Root向け画像セット・絶対パスは `production-root-review.json`（本リポ `qa/` にミラー、生PNGは私有 `ep2full03/frames` と `ep2full-review/images`）。Coderは dash airborne / 合流 / 完了（落下0）/ 手帳 の実画像を目視済み。
+- HUD clockはPNG待ち込みでRTA/PB・人間初見の証拠ではない。ゲーム音はDummyで未収録。
+
+## 未着手（Rootの最終画像レビュー後）
+
+- native横動画（PhotoCraft/EffectCraft/FilmCraft）・対応Short・TikTok版（フォロー案内）・F納品（`ProjectP-Episode2-2026-10-27/revision-01`）・最終MP4 QA・公開。音楽主題動画は作らず、108 BGMは背景素材のみ。
