@@ -1,16 +1,17 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "status": "DOCUMENT_COPY_SHA_MATCHED",
   "destination": "F:\\Videos\\ProjectP-Growth-2026-10-26\\revision-01-research",
-  "preparedAt": "2026-10-26T00:44:14.375Z",
+  "preparedAt": "2026-10-26T01:51:23.615Z",
   "sourceScope": "promotion/projectp-growth-20261026/",
-  "fileCount": 10,
-  "totalBytes": 43399,
+  "managementIssue": 105,
+  "fileCount": 14,
+  "totalBytes": 57155,
   "files": [
     {
       "file": "README.md",
-      "sha256": "3b9cdda30a3f6ce635bb0b6a339aad847908feace0a6b0cb4e67c07d14260a4f",
-      "bytes": 2440
+      "sha256": "f33590f1923678667255da2f6765c5eac75a74cbfa06e2fb16420924c3b6aaea",
+      "bytes": 2843
     },
     {
       "file": "data/account-day-template.json",
@@ -39,8 +40,28 @@
     },
     {
       "file": "index.html",
-      "sha256": "03fbe7bd37d967e93098a75ebbbe9aa8fb5c0cbe8c79c82c5699f038d4003868",
-      "bytes": 3192
+      "sha256": "9324c8e2dcfd5875235bf3c0606c109a819558a1a483f3e6bb4c6a6d5eef047c",
+      "bytes": 3618
+    },
+    {
+      "file": "qa/history/delivery-before-issue105.json",
+      "sha256": "b0f6459b6bc62017880ed7189163dbdd8165cc70d071aa309820c4ba3d1a2547",
+      "bytes": 2469
+    },
+    {
+      "file": "qa/publication/2026-10-26-app100-scheduled.json",
+      "sha256": "6e7c5b0c137e8edd434523b872d9131e2899846b00d8f8458bb786920005e71f",
+      "bytes": 3167
+    },
+    {
+      "file": "qa/publication/2026-10-26-core97-scheduled.json",
+      "sha256": "a77e9110e6566d9b5499387f8eca719e0363878da50fe21a7b7fc95377a650d4",
+      "bytes": 3429
+    },
+    {
+      "file": "qa/publication/2026-10-26-summary.md",
+      "sha256": "fa3b8cb0554465e14f6815aa1c868d222252073c1e18cb56cb69ec761755cb11",
+      "bytes": 3862
     },
     {
       "file": "制作-#0104結果を先に見せる短尺ブリーフ.md",
@@ -58,17 +79,26 @@
       "bytes": 4272
     }
   ],
+  "previousDelivery": {
+    "file": "qa/history/delivery-before-issue105.json",
+    "sha256": "b0f6459b6bc62017880ed7189163dbdd8165cc70d071aa309820c4ba3d1a2547",
+    "byteExact": true,
+    "meaning": "Issue104 creation-time manifest retained; README/index now link a later schedule addendum."
+  },
   "validation": {
-    "jsonCount": 5,
-    "localLinks": 21,
-    "plannedSlots": 21,
-    "zeroDenominatorEvaluationNull": true,
-    "scheduledMixIdentityPreserved": true,
-    "paceDatesMathVerified": true,
-    "existingMediaModified": false,
-    "nativeBrowserUsed": false,
-    "privateUiOrRawAssetsBundled": false,
+    "jsonCountExcludingCurrentReceipt": 8,
+    "localLinks": 27,
+    "addedSanitizedScheduleReceipts": 2,
+    "publicConfirmed": false,
+    "actualPublishedAt": null,
+    "distinctIdsAndJstUtcMatched": true,
+    "singleSubmissionIntentPerAddedPost": true,
+    "privateRuntimeIdentifiersOrRawUiBundled": false,
+    "historicalResearchAndPlanJsonUnchanged": true,
+    "existingMixScheduleUnchanged": true,
+    "mediaAudioModelOrCraftModified": false,
+    "browserOrOperatingRuntimeUsedBySourceWriter": false,
     "htmlRenderingOrUserClickVerified": false
   },
-  "receiptScope": "Receipt itself is excluded from its manifest; all source documents copied and hashed. This is not a publication receipt."
+  "receiptScope": "Document delivery manifest only, not a public-post receipt. Current receipt excludes itself from its manifest; its separate SHA verifies the source/F copy."
 }
