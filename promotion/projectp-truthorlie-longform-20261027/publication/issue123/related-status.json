@@ -3,7 +3,7 @@
   "kind": "reservation_snapshot_with_required_future_related_work",
   "managementIssue": 123,
   "productionIssue": 121,
-  "state": "required_wait_main_public",
+  "state": "owner_quality_hold_stop_old_reservations_pending",
   "shortVideoId": "4mxdwqgsOVA",
   "desiredMainVideoId": "pg8Ih4PAOBw",
   "actualNativeRelatedVideoId": null,
@@ -23,7 +23,7 @@
   },
   "officialConstraint": "https://support.google.com/youtube/answer/14075157?hl=ja",
   "requiredFutureWork": {
-    "state": "not_executed",
+    "state": "revoked_by_owner_quality_hold",
     "earliestJst": "2026-10-27T18:45:00+09:00",
     "targetExistingPatrolJst": "2026-10-27T19:00:00+09:00",
     "completeBeforeJst": "2026-10-27T19:14:59+09:00",
@@ -34,7 +34,10 @@
     "newCron": false,
     "differentWorkDestinationAllowed": false,
     "appendSeparatePublicAndLinkageReceipts": true,
-    "updateExistingDailyAfterActualExecution": true
+    "updateExistingDailyAfterActualExecution": true,
+    "originalStateAtReservationRecord": "not_executed",
+    "executionAllowed": false,
+    "supersededBy": "quality-hold-status.json"
   },
   "operationalPreparationSnapshot": {
     "file": "2026-10-27-truthorlie-related-required.json",
@@ -52,8 +55,15 @@
   },
   "rootCase": "https://github.com/Pui-core/-/issues/123#issuecomment-6426951020",
   "limits": [
+    "Owner withdrew old publication adoption. Earlier Related actions are revoked and must not execute.",
     "Future actions are required and have not executed.",
     "Three reservation receipts do not prove public availability or Related linkage.",
     "Final approval, merge and Issue123 close remain blocked until Root supplies actual linkage/save/reload evidence or the actual fallback state."
-  ]
+  ],
+  "reservationSnapshotState": "required_wait_main_public",
+  "ownerQualityHold": true,
+  "oldRelatedInstructionValid": false,
+  "relatedExecutionAllowed": false,
+  "currentStatusRecord": "quality-hold-status.json",
+  "historicalReservationCommit": "83675c8c18929fd1f0e542fcd3455ad2f0c8b07c"
 }

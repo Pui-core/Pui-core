@@ -1,28 +1,28 @@
-# TruthOrLie121：3予約の記録と未完のRelated（Issue123・Draft）
+# TruthOrLie121旧版：公開採用撤回・停止確認中（Issue123・Draft）
 
-**3本の予約を確認済み、ShortのRelatedは未設定です。** 10/27 18:45の本編[pg8Ih4PAOBw](https://www.youtube.com/watch?v=pg8Ih4PAOBw)、19:15の[YT Short4mxdwqgsOVA](https://www.youtube.com/shorts/4mxdwqgsOVA)、[TT7701079834692209926](https://www.tiktok.com/@prop_pui/video/7701079834692209926)を記録しました。全てactualPublishAt=nullで、実公開・導線完成・視聴成果は未確認です。
+**owner品質差し戻しにより、旧版の公開採用を撤回しました。旧本編へのRelated設定・19:15公開の指示は失効しています。** 新制作は[Issue129](https://github.com/Pui-core/-/issues/129)で、60〜90秒の実編集サンプルから品質を再判定します。新しい公開時刻は品質受入後に決め、旧夕方枠へ押し込みません。
 
-[本編receipt要約](./youtube-long-scheduled.json) ／ [YT Short](./youtube-short-scheduled.json) ／ [TikTok](./tiktok-scheduled.json) ／ [Related必須残件](./related-status.json) ／ [F追記manifest](./append-delivery.json) ／ [Rootの最新判断](https://github.com/Pui-core/-/issues/123#issuecomment-6426951020)
+[現在のHOLD/部分停止確認](./quality-hold-status.json) ／ [失効したRelated計画の履歴](./related-status.json) ／ [管理123](https://github.com/Pui-core/-/issues/123)
 
-## 予約記録の技術確認
+## 08:15時点で確認できた範囲
 
-本編708.01秒は横600秒条件を満たし、Short2版は40秒。各master/cover添付1・実schedule1、再送0。nativeの実ID・日時を正式receiptと結び付けています。本編receiptの保存時contentListRecheck=pendingは保持し、後続の同ID一覧18:45を別evidenceとして記録しました。YT Shortも19:15一覧と保存後title/description完全一致、kidsNo/paidNo/AIYes/ゲーム/defaulttags0を照合しました。UIAのoffscreen保存状態と全編目視は区別します。
+- 本編pg8Ih4PAOBw：08:14:20 JSTのnativeで、同IDの行が「非公開」「アップロード日」へ変わり、変更保存完了の通知を確認。通常保存click1。独立した通常再読込は入力0で行われておらず、再検証待ちです。
+- YT Short4mxdwqgsOVA：停止確認は未完。
+- TT7701079834692209926：停止確認は未完。
+- Rootの次窓08:25〜08:30は予定として記録し、このsnapshotで実行済みとはしません。全3件取消済みとは報告しません。
 
-TTは139文字single-line captionの完全一致リンク、19:15・Anyone・ownBrandOn/thirdOff/AIGCOn/HD/comments、最終著作権/簡易check問題なしを記録。Rootのnative cover pan40pxは元PNGの変更ではありません。
+現在の作業は旧予約の停止・非公開保持と実状態確認です。旧18:45実公開→19:00Related→19:15Short公開の指示は実行しません。runtimeのRelated requiredはowner_quality_hold_stop_old_reservations_pendingへ更新済みですが、source担当はruntime・GUI・browser・lease・SNSを操作していません。
 
-## 必須の未来作業：実Relatedを保存・再読込する
+## 保存する旧予約の履歴
 
-本編完全一致titleをnative pickerで検索した結果は一致なし。保存後フィールドも「なし」です。現在の本編は予約privateで、[公式条件](https://support.google.com/youtube/answer/14075157?hl=ja)の公開/限定公開を満たしていません。希望IDpg8Ih4PAOBwを、設定済みIDとは扱いません。
+本編[pg8Ih4PAOBw](https://www.youtube.com/watch?v=pg8Ih4PAOBw)18:45、[YT Short4mxdwqgsOVA](https://www.youtube.com/shorts/4mxdwqgsOVA)と[TT7701079834692209926](https://www.tiktok.com/@prop_pui/video/7701079834692209926)19:15を予約した当時の事実は保持します。これらのimmutable receiptを現在の停止状態へ上書きしません。
 
-1. 18:45以降、同チャンネルの本編pg8Ih4PAOBwの実公開を確認。
-2. 既存19:00 PM巡回または同時間帯のRoot1名が、新しい単独publisher leaseと実状態を確認。Short4mxdwqgsOVAへ同本編を設定し、保存・再読込で実IDを読む。
-3. 19:15前までに設定できなければ、通常UIでこのShortの公開予約を止め、非公開で保持して実状態を記録する。他作品へは繋がない。
-4. 実公開/連結receiptは予約原票を上書きせず別追記し、該当dailyへ反映する。24h/72hは実公開時刻から計算。
+[旧本編予約要約](./youtube-long-scheduled.json) ／ [旧YT Short予約要約](./youtube-short-scheduled.json) ／ [旧TT予約要約](./tiktok-scheduled.json) ／ [予約時F snapshot manifest](./append-delivery.json)
 
-この作業は未実行です。**記録の技術チェック成功と最終受入を分け、Draft PR・Issue123 OPEN・worktree保持を続けます。最終APPROVE/merge/closeは保留**です。新cronは追加していません。
+Fのpublication/issue123/reservations-20261027は、予約と旧Related未完を保存した時点の固定履歴です。現在の命令ではなく、書き換えていません。今回HOLDと停止結果は別appendに残す準備中で、最終2残件と本編再読込の証跡を待ちます。元765payload/base・旧受入・3master/2coverも保持します。
 
-## 保全と範囲
+## 保持する判定
 
-Fのpublication/issue123/reservations-20261027へ、この時点の予約/未完Relatedの固定snapshotと正式3receiptコピーを追加しました。将来の実設定は別appendに残すため、今回のF snapshotを実行済みに書き換えません。元765payload・base・受入appendは保持し、固定5原票と指定3master/2coverだけをSHA照合。765全payload再走査なし。
+ownerの品質指摘はP1未解除。テンポ/ジェットカット、主従・余白・黄金比を意識した美しさ、BGM差し替え比較を新制作129で扱い、旧108固定採用も撤回します。横600秒以上、実操作例/架空回答の明示、3Craft/Core/声の保全は継続。全編直接視聴・主観試聴falseを保持します。129制作prefixはこのrecord担当の変更範囲外です。
 
-次期1.03の操作例と架空回答で、公表1.02との差を保持。自作BGM108は背景採用で、日本人気曲/CML確認や音楽主題の投稿ではありません。全編直接視聴・主観試聴false、人数/収益化成果未達を維持。source担当のSNS GUI/browser/runtime/lease/daily操作0。public Gitは最小事実とbasename/SHAのみで、rawUI・画像・私的絶対パス・認証・モデル/SDK/メディアは含めません。
+Draft PR57・Issue123 OPEN・WT/branch保持を続け、merge/close/cleanupは行いません。停止完了や新品質採用、公開/人数/収益成果は未確認です。public Gitは最小事実とbasename/SHAのみで、rawUI・画像・私的絶対パス・認証・モデル/SDK・メディアを含めません。
