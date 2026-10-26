@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "recordIssue": 116,
+  "productionIssue": 100,
+  "parentIssue": 93,
+  "platform": "tiktok",
+  "accountId": "prop_pui",
+  "state": "published_public_metadata_confirmed",
+  "videoId": "7700784029481716999",
+  "url": "https://www.tiktok.com/@prop_pui/video/7700784029481716999",
+  "actualPublishedAtUtc": "2026-10-26T07:00:00.000Z",
+  "actualPublishedAtJst": "2026-10-26T16:00:00+09:00",
+  "confirmedAt": "2026-10-26T07:01:44.755Z",
+  "scheduledForJst": "2026-10-26T16:00:00+09:00",
+  "scheduleAndPublishedVideoIdUnchanged": true,
+  "scheduledReceiptSha256": "d683223ba6155a8c68bee36b3b3b90b411c6550a56da6a38c2cf1b333074a024",
+  "rootPublicReceiptSha256": "be81052e1b694ab543a0f161480ca85c4cbecbebc0c372cb2cfcaf721ff802e3",
+  "rootCaptionVerificationSha256": "302490e2eb06db085eb018c1f858ada18fbf06269bb8572facca445e14879b9e",
+  "source": {
+    "video": "videos/missyou-stamp.mp4",
+    "videoSha256": "a28dc095775670380fca6551f7c394a6d719601109b98999a4531e25f7213eee",
+    "cover": "covers/missyou-stamp-cover.png",
+    "coverSha256": "4ed364eccfc00465f6f1f9face133db98bce3d5b759812ed3311cc3637918d4d",
+    "caption": "source/caption.txt",
+    "captionSha256": "f2b083f31e20ddbd8e22b64bd7ddd7773b4251772d609c5244788cec76cacf76"
+  },
+  "publicMetadata": {
+    "httpStatus": 200,
+    "detailStatusCode": 0,
+    "id": "7700784029481716999",
+    "author": "prop_pui",
+    "privateItem": false,
+    "createTime": "1792998000",
+    "durationSeconds": 22,
+    "anonymousRequests": 1,
+    "authOrCookies": false,
+    "internalApiRequests": 0,
+    "mediaRequests": 0,
+    "playbackRequested": false
+  },
+  "captionVerification": {
+    "observedAt": "2026-10-26T07:09:00.029Z",
+    "sourceCaptionHashMatches": true,
+    "sourceCharacters": 192,
+    "publicCharacters": 190,
+    "exactTrimmed": false,
+    "whitespaceNormalizedEqual": true,
+    "publicCaption": "文章なしでも、送れる？ 交換日記アプリ「missyou」を、スタンプが主役の形へ。 一言は、添えたいときだけ。 ゲームもアプリも、つぎの制作をフォローで。 ※10/25の開発中の実画面を編集。検証データを使用した静止画の拡大で、操作録画ではありません。一般公開は準備中です。 ナレーション：VOICEVOX:青山龍星（合成音声） #missyou #アプリ開発 #個人開発 #ぷい",
+    "sourceCaptionFileSha256": "f2b083f31e20ddbd8e22b64bd7ddd7773b4251772d609c5244788cec76cacf76",
+    "legacyPublicReceiptDescriptionExactWithSchedule": false,
+    "legacyComparisonUsedAbsentScheduleCaption": true,
+    "legacyFlagValidAsCaptionMismatchEvidence": false,
+    "comparisonBasis": "Separate frozenF caption bytes versus actualofficial public description; raw exact equality is not claimed"
+  },
+  "limits": {
+    "playbackConfirmed": false,
+    "nativePublicRowThisTurn": false,
+    "directWholePlaybackAudition": false,
+    "appGeneralReleaseVerified": false,
+    "videoUsesStaticDevelopmentScreenEditsRatherThanRecordedTaps": true
+  },
+  "earlyObservation": {
+    "at": "2026-10-26T07:01:44.755Z",
+    "ageMinutes": 1.7459166666666666,
+    "playCount": 0,
+    "performanceJudgment": "not_due; early1.75min observation is not a24h/72h result",
+    "retention": null,
+    "followConversion": null
+  },
+  "analytics": {
+    "due24hUtc": "2026-10-27T07:00:00.000Z",
+    "due24hJst": "2026-10-27T16:00:00+09:00",
+    "due72hUtc": "2026-10-29T07:00:00.000Z",
+    "due72hJst": "2026-10-29T16:00:00+09:00",
+    "basis": "Actual confirmed publication time",
+    "parentIssue": 93
+  },
+  "operations": {
+    "originalScheduleSubmissionIntents": 1,
+    "newSubmissionsThisTurn": 0,
+    "sharedDesktopActionsThisTurn": 0,
+    "reposted": false,
+    "noResubmit": true,
+    "sourceWriterGuiRuntimeLeaseActions": 0
+  },
+  "goalTargetsAchieved": false,
+  "redaction": {
+    "rawHttpIncluded": false,
+    "privateUiIncluded": false,
+    "authenticationIncluded": false,
+    "clipboardIncluded": false,
+    "trackingParamsIncluded": false
+  }
+}
