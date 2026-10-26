@@ -10,11 +10,11 @@
 
 F納品：`F:\Videos\ProjectP-YouTube-Game-Short-2026-10-26\revision-01`。
 
-- PhotoCraft：`covers/game-short-cover.pcraft`。元の編集可能なカバーを複製し、問いを変更。保存後にFから再読込・再保存・PNG描画を実行し、PNG SHA一致・警告0を確認。
+- PhotoCraft：`covers/game-short-cover.pcraft`。元の編集可能なカバーを複製し、問いを変更。Fから再読込・再保存・PNG描画を実行した。原本検査の警告0、再描画PNGのSHA一致を確認。PNG化時の通常のflatten警告は想定内で、編集可能な原本は保持する。
 - EffectCraft：`projects/game-short.ecproj`。旧600枚の実Core描画を含む無音ProRes bodyを読み、0.8秒の無声introと字幕を追加する。元編集の内部にあるモデルやゲームを新規Coreとして再生成した原本ではない。
 - FilmCraft：`projects/game-short.fcproj`。V1は新EffectCraft無音描画、A1は独立した元VOX+編集SFX、A2は自作BGMのduck済み音。Fから再読込・online3・再描画・最終H.264/AAC出力を確認する。
 
-EC/FCはF納品の素材を参照する。Gitだけのcloneでは巨大な無音ProResやprivate原WAVが不足する。公開Gitにはrecipe・原本・カバー・ゲーム動画・検査証跡を置き、元モデル/MOC/atlas/SDK・生Core PNG一式・private BGM単体・元437MB ProRes・声の原WAVは再配布しない。F納品には必要な7素材をSHA検証して収めている。
+EC/FCはF納品の素材を参照する。Gitだけのcloneでは巨大な無音ProResやprivate原WAVが不足する。公開Gitにはrecipe・原本・カバー・ゲーム動画・検査証跡を置き、元モデル/MOC/atlas/SDK・生Core PNG一式・private BGM単体・元437MB ProRes・声の原WAVは再配布しない。F納品には必要な7素材をSHA検証して収めている。実行済み`source/composition.jsx`には原本作成時点の制作中状態を保持し、現在の状態は`source/publication.json`を正とする。
 
 ## 声・口・効果音・BGM
 
@@ -45,6 +45,7 @@ node source/cover.mjs
 node source/render-picture.mjs
 node source/filmcraft.mjs
 node source/verify.mjs
+node source/verify-raw-binding.mjs
 ```
 
 管理：[Issue111](https://github.com/Pui-core/-/issues/111) / 継続目標：[親106](https://github.com/Pui-core/-/issues/106)。

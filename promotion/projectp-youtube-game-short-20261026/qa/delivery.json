@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "at": "2026-10-26T04:53:36.398Z",
+  "at": "2026-10-26T04:56:10.832Z",
   "destination": "/mnt/f/Videos/ProjectP-YouTube-Game-Short-2026-10-26/revision-01",
   "publicSourceFileCount": 111,
-  "publicSourceBytes": 11053831,
+  "publicSourceBytes": 11054128,
   "sourceAndFMatch": true,
   "files": [
     {
@@ -14,9 +14,9 @@
     },
     {
       "file": "README.md",
-      "bytes": 6162,
-      "sourceSha256": "ea9b18e2c86e4784754dc48494b288dbbcc24f70be29f3295f75ea182d3b18b3",
-      "deliverySha256": "ea9b18e2c86e4784754dc48494b288dbbcc24f70be29f3295f75ea182d3b18b3"
+      "bytes": 6459,
+      "sourceSha256": "9ee430cf0cb16003fe1dbedf2ef17df48c8a9460a2378f087556888458cdb5a0",
+      "deliverySha256": "9ee430cf0cb16003fe1dbedf2ef17df48c8a9460a2378f087556888458cdb5a0"
     },
     {
       "file": "covers/game-short-cover.pcraft",
@@ -686,5 +686,6 @@
   "videoSha256": "4c8932d42682c7cdacfb2a1f3f30d935c7daaa04d416162169bd3d46ae0a226d",
   "coverSha256": "f14ff268d8626cc02f595668c0411699cdb202e6edadaac6aa8609c4135cb84d",
   "state": "source_ready_native_check_publication_pending",
-  "publicConfirmed": false
+  "publicConfirmed": false,
+  "docsCorrection": "Differentiate native PhotoCraft inspection warnings=0 from normal PNG flatten warning; no media changes"
 }
