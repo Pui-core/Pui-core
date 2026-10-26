@@ -1,0 +1,12 @@
+{
+  "state": "RESOLVED_BY_NATIVE_DC_BLOCKER_PENDING_RECHECK",
+  "observedFull": {
+    "fileSha256": "d908d6240bf92926113793d05d75dcba0a609a4f76883395244ac08e33897211",
+    "meanL": 0.000507998695975639,
+    "meanR": 0.0005097078574685062
+  },
+  "criterion": {
+    "maxAbsoluteMean": 0.0001
+  },
+  "change": "Native built-in dc_offset_removal,5Hz, eachtrack after existingFX. Originalnotes/relativefaders unchanged. OldF revision02 remains pre-DC preview; finalrevision03 follows."
+}
