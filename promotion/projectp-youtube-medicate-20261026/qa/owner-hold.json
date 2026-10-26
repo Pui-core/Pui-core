@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "issue": 109,
+  "parentIssue": 106,
+  "state": "owner_hold_no_publication",
+  "at": "2026-10-26T04:07:00.382Z",
+  "ownerInstructionDateJst": "2026-10-26",
+  "ownerInstruction": "完成MVも含め、音楽関係の動画は投稿しない",
+  "alsoInstruction": "音源制作は投稿しなくていい",
+  "scope": "Music-topic videos onTikTok/YouTube includingcompletedMV; doesnotprohibit privateBGMmaterial forgame/appvideos.",
+  "source": "Latest Root instruction received by soleIssue109 writer",
+  "previousPreparedSource": {
+    "pr": "https://github.com/Pui-core/Pui-core/pull/35",
+    "head": "71f1b58826b914cc311da006b04a8434fc5bcc2f",
+    "merge": "5c45540dc1ab8a25628dce0f33a5d82641cc6e93",
+    "metadataHistory": "metadata/history/youtube-publication-pre-owner-hold.json",
+    "metadataHistorySha256": "ba8eaa095c5740aa29742eca97fae9f3fb8d88354355725c5c767df46e1d339b",
+    "deliveryHistory": "qa/history/delivery-pre-owner-hold.json",
+    "deliveryHistorySha256": "758712c84261492e57b502acedebc63e38968870cf52df74058d49919734ef07"
+  },
+  "publicReceiptAwaitCancelled": true,
+  "autoRequeueAllowed": false,
+  "mediaPreserved": [
+    {
+      "file": "videos/medicate-v9-youtube-handwritten-final.mp4",
+      "sha256": "dcbe6c5d7ab3acb9130ef94bde0dde3da13ddf39a51460aba901afe72078dcbe"
+    },
+    {
+      "file": "thumbnail/medicate-youtube.png",
+      "sha256": "33115735ea6d4fa2d5df51f48642e7c4eedfa5fcc9f3537f26e7ee5c56530675"
+    },
+    {
+      "file": "native/medicate-youtube-thumbnail.pcraft",
+      "sha256": "3d5410ff3b8ac82d04868b060fec4f1ec74bb5d33aaac98d6122022effe3e4fe"
+    },
+    {
+      "file": "metadata/title.txt",
+      "sha256": "6368ded7400b14800a28f5a9a649956a29de931fcb435f2b5dfd823bb204facb"
+    },
+    {
+      "file": "metadata/description.txt",
+      "sha256": "01fbfa4686db24e6fe56701151c09c54b5c88f2ddc0853cfe023a6f75fa85a79"
+    }
+  ],
+  "sourceWriterGuiIntents": 0,
+  "sourceWriterSubmissionIntents": 0,
+  "publicConfirmed": false,
+  "rootReportedFileOpenOccurred": false,
+  "rootReportedPublicIntent": 0,
+  "videoId": null,
+  "notClaimed": [
+    "Publishedthenremoved",
+    "YPPachieved",
+    "Royaltyenabled",
+    "Allmusicmaterialcreationprohibited"
+  ]
+}

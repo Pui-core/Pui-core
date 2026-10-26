@@ -26,7 +26,7 @@
     "file": "thumbnail/medicate-youtube.png",
     "sha256": "33115735ea6d4fa2d5df51f48642e7c4eedfa5fcc9f3537f26e7ee5c56530675",
     "bytes": 1235000,
-    "state": "native_rendered_static_review_pass_root_native_preview_pending",
+    "state": "preserved_native_artifact_owner_hold_no_publication",
     "width": 1280,
     "height": 720,
     "editableNative": "native/medicate-youtube-thumbnail.pcraft",
@@ -34,21 +34,28 @@
     "rootStaticImageReviewed": true,
     "rootUploadedYouTubePreview": false
   },
-  "recommendedNativeSettings": {
-    "visibility": "public",
-    "madeForKids": false,
-    "alteredOrSyntheticContent": true,
-    "category": "Music",
-    "language": "Japanese"
-  },
-  "settingsAreRecommendationsNotObserved": true,
+  "recommendedNativeSettings": null,
   "publication": {
-    "state": "prepared_publication_pending",
+    "state": "owner_hold_no_publication",
+    "publicationAllowed": false,
+    "readyToPublish": false,
+    "ownerInstructionDateJst": "2026-10-26",
+    "ownerInstruction": "完成MVも含め、音楽関係の動画は投稿しない",
+    "recordedAt": "2026-10-26T04:07:00.382Z",
+    "instructionSource": "Latest owner instruction relayed by Root to Issue109 writer; overrides priorpublicationGO",
+    "awaitingPublicReceipt": false,
+    "autoRequeueAllowed": false,
     "videoId": null,
     "videoUrl": null,
     "actualPublishedAt": null,
     "publicConfirmed": false,
-    "rootIsOnlyPublisher": true
+    "rootIsOnlyPublisher": true,
+    "rootNativeOutcomeReported": {
+      "fileOpenOccurred": false,
+      "videoId": null,
+      "publicSubmissionIntents": 0,
+      "scope": "This attempt stopped before nativeFileOpen; no publicpost. ReportedbyRoot, not separatelyobservedby sourcewriter."
+    }
   },
   "credits": {
     "musicCreditBasis": "Previously owner-confirmed 曲・歌・MV：ぷい; does not assert sole beat composition or Content ID exclusivity.",
@@ -63,5 +70,7 @@
     "YPP achieved",
     "Continuous human performance or newly filmed footage",
     "Full subjective playback performed in this publication packaging task"
-  ]
+  ],
+  "usage": "archived_music_video_not_for_publication",
+  "preparedHistoryRef": "metadata/history/youtube-publication-pre-owner-hold.json"
 }
