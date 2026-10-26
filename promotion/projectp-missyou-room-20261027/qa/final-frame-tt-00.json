@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-y",
+    "-ss",
+    "0",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\videos\\missyou118-tt.mp4",
+    "-frames:v",
+    "1",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\qa\\final-tt-00.png"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

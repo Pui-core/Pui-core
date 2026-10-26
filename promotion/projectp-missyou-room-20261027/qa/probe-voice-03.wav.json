@@ -1,0 +1,14 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffprobe.exe",
+  "args": [
+    "-v",
+    "error",
+    "-show_format",
+    "-of",
+    "json",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\media\\voice-03.wav"
+  ],
+  "stdout": "{\r\n    \"format\": {\r\n        \"filename\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\tmp\\\\projectp118-repair-20261026\\\\media\\\\voice-03.wav\",\r\n        \"nb_streams\": 1,\r\n        \"nb_programs\": 0,\r\n        \"nb_stream_groups\": 0,\r\n        \"format_name\": \"wav\",\r\n        \"format_long_name\": \"WAV / WAVE (Waveform Audio)\",\r\n        \"duration\": \"2.165333\",\r\n        \"size\": \"415788\",\r\n        \"bit_rate\": \"1536162\",\r\n        \"probe_score\": 99\r\n    }\r\n}\r\n",
+  "stderr": ""
+}

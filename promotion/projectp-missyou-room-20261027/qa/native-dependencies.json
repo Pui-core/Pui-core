@@ -1,0 +1,167 @@
+{
+  "status": "PASS_F_REV02_ONLY",
+  "destination": "/mnt/f/Videos/ProjectP-Missyou-Room-2026-10-27/revision-02",
+  "nativeProjects": [
+    "projects/missyou118.ecproj",
+    "projects/missyou118.fcproj",
+    "projects/missyou118-tt.ecproj",
+    "projects/missyou118-tt.fcproj"
+  ],
+  "absoluteMediaReferences": [
+    {
+      "project": "projects/missyou118.ecproj",
+      "key": "items.1.kind.path",
+      "relativeAsset": "media/segments/seg1.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118.ecproj",
+      "key": "items.2.kind.path",
+      "relativeAsset": "media/segments/seg2.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118.ecproj",
+      "key": "items.3.kind.path",
+      "relativeAsset": "media/segments/seg3.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118.ecproj",
+      "key": "items.4.kind.path",
+      "relativeAsset": "media/segments/seg4.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118.ecproj",
+      "key": "items.5.kind.path",
+      "relativeAsset": "media/segments/seg5.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118.ecproj",
+      "key": "items.6.kind.path",
+      "relativeAsset": "media/segments/seg6.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118.ecproj",
+      "key": "items.7.kind.path",
+      "relativeAsset": "media/segments/seg7.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118.ecproj",
+      "key": "items.8.kind.path",
+      "relativeAsset": "media/natural.mov",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118.fcproj",
+      "key": "project.items.5.kind.Media.media.File.path",
+      "relativeAsset": "media/missyou118-picture.mov",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118.fcproj",
+      "key": "project.items.6.kind.Media.media.File.path",
+      "relativeAsset": "media/narration-stem.wav",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118.fcproj",
+      "key": "project.items.7.kind.Media.media.File.path",
+      "relativeAsset": "media/background-stem.wav",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118-tt.ecproj",
+      "key": "items.1.kind.path",
+      "relativeAsset": "media/segments/seg1.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118-tt.ecproj",
+      "key": "items.2.kind.path",
+      "relativeAsset": "media/segments/seg2.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118-tt.ecproj",
+      "key": "items.3.kind.path",
+      "relativeAsset": "media/segments/seg3.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118-tt.ecproj",
+      "key": "items.4.kind.path",
+      "relativeAsset": "media/segments/seg4.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118-tt.ecproj",
+      "key": "items.5.kind.path",
+      "relativeAsset": "media/segments/seg5.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118-tt.ecproj",
+      "key": "items.6.kind.path",
+      "relativeAsset": "media/segments/seg6.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118-tt.ecproj",
+      "key": "items.7.kind.path",
+      "relativeAsset": "media/segments/seg7.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118-tt.ecproj",
+      "key": "items.8.kind.path",
+      "relativeAsset": "media/natural.mov",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118-tt.fcproj",
+      "key": "project.items.5.kind.Media.media.File.path",
+      "relativeAsset": "media/missyou118-picture-tt.mov",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118-tt.fcproj",
+      "key": "project.items.6.kind.Media.media.File.path",
+      "relativeAsset": "media/narration-stem.wav",
+      "exists": true
+    },
+    {
+      "project": "projects/missyou118-tt.fcproj",
+      "key": "project.items.7.kind.Media.media.File.path",
+      "relativeAsset": "media/background-stem.wav",
+      "exists": true
+    }
+  ],
+  "missing": 0,
+  "allNativeMediaInsideThisRevision": true,
+  "privateTmpOrOldRevisionDependencies": 0,
+  "photoCraft": {
+    "native": "covers/missyou118-cover.pcraft",
+    "reopened": "projects/missyou118-cover-reopened.pcraft",
+    "smartObjects": [
+      {
+        "name": "frame-000000",
+        "kind": "embedded",
+        "fileName": "frame-000000.png"
+      },
+      {
+        "name": "room-crop",
+        "kind": "embedded",
+        "fileName": "room-crop.png"
+      }
+    ],
+    "externalLinkedAssets": 0,
+    "reopenedPngIdentical": true
+  },
+  "regenerationOnlyExternalTools": "Original app/capture host, official Cubism Core/JRE and original Natural model are documented generation inputs, not dependencies needed to reopen the delivered EC/FC/PC edits. No raw model/SDK is bundled.",
+  "jsxRuntimeDependency": false
+}

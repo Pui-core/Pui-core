@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\projects\\missyou118-tt.ecproj",
+    "render-frame",
+    "--comp",
+    "missyou118 revision02",
+    "--time",
+    "10.7",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\qa\\preview-tt-10.7.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":9,\"height\":1920,\"ms\":355.8,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\tmp\\\\projectp118-repair-20261026\\\\qa\\\\preview-tt-10.7.png\",\"time\":10.7,\"width\":1080}\n",
+  "stderr": ""
+}

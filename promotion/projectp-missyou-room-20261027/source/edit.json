@@ -1,0 +1,92 @@
+{
+  "issue": 118,
+  "revision": 2,
+  "duration": 30,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "story": [
+    {
+      "a": 0,
+      "b": 1.2,
+      "segment": 6,
+      "sourceStart": 1,
+      "kind": "actual-persisted-room-cold-open"
+    },
+    {
+      "a": 1.2,
+      "b": 5.6,
+      "segment": 1,
+      "sourceStart": 0,
+      "kind": "actual-empty-room-before"
+    },
+    {
+      "a": 5.6,
+      "b": 10,
+      "segment": 2,
+      "sourceStart": 0,
+      "freezeAfter": 1.5,
+      "kind": "open-and-frame-confirmation-hold"
+    },
+    {
+      "a": 10,
+      "b": 14,
+      "segment": 3,
+      "kind": "make-flower"
+    },
+    {
+      "a": 14,
+      "b": 18,
+      "segment": 4,
+      "kind": "terminate-app"
+    },
+    {
+      "a": 18,
+      "b": 22,
+      "segment": 5,
+      "kind": "relaunch-no-reset"
+    },
+    {
+      "a": 22,
+      "b": 26,
+      "segment": 6,
+      "kind": "persisted-room"
+    },
+    {
+      "a": 26,
+      "b": 30,
+      "segment": 7,
+      "kind": "same-diary-and-creator-cta"
+    }
+  ],
+  "modelIntervals": [
+    {
+      "output": [
+        0,
+        5.6
+      ],
+      "model": [
+        0,
+        5.6
+      ]
+    },
+    {
+      "output": [
+        26,
+        30
+      ],
+      "model": [
+        5.6,
+        9.6
+      ]
+    }
+  ],
+  "capture": "Frozen revision01 ordinary-tap recording; iOS Simulator, not physical hardware",
+  "realDevice": false,
+  "offline": true,
+  "productionNetwork": false,
+  "relatedVideoId": null,
+  "tiktokPopularTrackSelected": false,
+  "musicTopic": false,
+  "wholeDirectListen": false
+}

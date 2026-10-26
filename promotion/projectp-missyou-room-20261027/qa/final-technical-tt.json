@@ -1,0 +1,182 @@
+{
+  "status": "PASS_FINAL_FORMAT_DECODE_LEVEL_AND_TARGETED_MARKER_PIXEL_CHECK_PENDING_F_NATIVE",
+  "platform": "tiktok",
+  "video": "videos/missyou118-tt.mp4",
+  "videoSha256": "bc4193e372e07f15fc9f0d86286a83bbcefddea00749d8f340fee4815feab399",
+  "coverSha256": "3ca99493352a9fff8d2762dd3fb75b618d20f857d84a4632d67d226d4fa023b2",
+  "frames": 900,
+  "duration": 30.016,
+  "size": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLufs": -18.8,
+    "truePeakDbtp": -1.4
+  },
+  "fullAvDecode": true,
+  "marker": {
+    "sourceSegments": [
+      2,
+      3
+    ],
+    "outputInterval": [
+      5.6,
+      14
+    ],
+    "decodedFrames": 252,
+    "maskedFramesChecked": 165,
+    "maximumDarkPixelsInFormerTextLine": 0,
+    "fullIdentifierShown": false,
+    "scope": "Exact former glyph stripe inside tracked local patch; not OCR or full-frame privacy scan"
+  },
+  "framesExtracted": [
+    {
+      "file": "qa/final-tt-00.png",
+      "time": 0
+    },
+    {
+      "file": "qa/final-tt-01.png",
+      "time": 0.2
+    },
+    {
+      "file": "qa/final-tt-02.png",
+      "time": 0.8
+    },
+    {
+      "file": "qa/final-tt-03.png",
+      "time": 1.1666667
+    },
+    {
+      "file": "qa/final-tt-04.png",
+      "time": 1.2
+    },
+    {
+      "file": "qa/final-tt-05.png",
+      "time": 3
+    },
+    {
+      "file": "qa/final-tt-06.png",
+      "time": 5.5666667
+    },
+    {
+      "file": "qa/final-tt-07.png",
+      "time": 5.6
+    },
+    {
+      "file": "qa/final-tt-08.png",
+      "time": 7
+    },
+    {
+      "file": "qa/final-tt-09.png",
+      "time": 7.0666667
+    },
+    {
+      "file": "qa/final-tt-10.png",
+      "time": 7.1
+    },
+    {
+      "file": "qa/final-tt-11.png",
+      "time": 9.9666667
+    },
+    {
+      "file": "qa/final-tt-12.png",
+      "time": 10
+    },
+    {
+      "file": "qa/final-tt-13.png",
+      "time": 10.2
+    },
+    {
+      "file": "qa/final-tt-14.png",
+      "time": 10.7
+    },
+    {
+      "file": "qa/final-tt-15.png",
+      "time": 11.0666667
+    },
+    {
+      "file": "qa/final-tt-16.png",
+      "time": 11.1
+    },
+    {
+      "file": "qa/final-tt-17.png",
+      "time": 11.2
+    },
+    {
+      "file": "qa/final-tt-18.png",
+      "time": 13
+    },
+    {
+      "file": "qa/final-tt-19.png",
+      "time": 13.9666667
+    },
+    {
+      "file": "qa/final-tt-20.png",
+      "time": 14
+    },
+    {
+      "file": "qa/final-tt-21.png",
+      "time": 17.8
+    },
+    {
+      "file": "qa/final-tt-22.png",
+      "time": 17.9666667
+    },
+    {
+      "file": "qa/final-tt-23.png",
+      "time": 18
+    },
+    {
+      "file": "qa/final-tt-24.png",
+      "time": 18.1
+    },
+    {
+      "file": "qa/final-tt-25.png",
+      "time": 21.5
+    },
+    {
+      "file": "qa/final-tt-26.png",
+      "time": 21.9666667
+    },
+    {
+      "file": "qa/final-tt-27.png",
+      "time": 22
+    },
+    {
+      "file": "qa/final-tt-28.png",
+      "time": 23
+    },
+    {
+      "file": "qa/final-tt-29.png",
+      "time": 25.9666667
+    },
+    {
+      "file": "qa/final-tt-30.png",
+      "time": 26
+    },
+    {
+      "file": "qa/final-tt-31.png",
+      "time": 26.2
+    },
+    {
+      "file": "qa/final-tt-32.png",
+      "time": 27
+    },
+    {
+      "file": "qa/final-tt-33.png",
+      "time": 28.5
+    },
+    {
+      "file": "qa/final-tt-34.png",
+      "time": 29.9666667
+    }
+  ],
+  "wholeDirectVideoWatch": false,
+  "wholeSubjectiveAudioListen": false,
+  "ownerCreativeAcceptance": false,
+  "published": false
+}

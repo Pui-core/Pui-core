@@ -1,0 +1,19 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/Live2D Cubism 5.3/app/jre/bin/java.exe",
+  "args": [
+    "-Xmx2g",
+    "-Djava.awt.headless=true",
+    "-Djava.library.path=C:\\Program Files\\Live2D Cubism 5.3\\app\\dll64",
+    "-cp",
+    "C:\\Program Files\\Live2D Cubism 5.3\\app\\lib\\Live2DCubismCore.jar;\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\model\\classes",
+    "AvatarCore",
+    "F:\\Users\\pui\\Desktop\\model\\SeeThrough-workflows\\Revenant_Natural\\Revenant_Natural.moc3",
+    "F:\\Users\\pui\\Desktop\\model\\SeeThrough-workflows\\Revenant_Natural\\Revenant_Natural.8192\\texture_00.png",
+    "F:\\Users\\pui\\Desktop\\model\\SeeThrough-workflows\\Revenant_Natural\\Revenant_Natural.8192\\texture_01.png",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\media\\natural",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp118-repair-20261026\\model\\schedule.csv"
+  ],
+  "stdout": "Native Core rendered 30 frames / 11.9310291s\r\nNative Core rendered 60 frames / 23.5598733s\r\nNative Core rendered 90 frames / 35.1222321s\r\nNative Core rendered 120 frames / 46.556377s\r\nNative Core rendered 150 frames / 58.306493s\r\nNative Core rendered 180 frames / 69.5364397s\r\nNative Core rendered 210 frames / 81.1355507s\r\nNative Core rendered 240 frames / 92.8157913s\r\nNative Core rendered 270 frames / 103.6756182s\r\nRendered 288 true Core frames, 600x780, no physics simulation; Core=06.00.0513 (100663809)\r\n",
+  "stderr": ""
+}
