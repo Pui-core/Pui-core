@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS_TIKTOK_APPEND_ONLY_SHA_FROZEN442_AND_YOUTUBE_APPEND_UNCHANGED",
+  "productionIssue": 114,
+  "parentIssues": [
+    93,
+    106
+  ],
+  "appendFolder": "publication/2026-10-26-tiktok-scheduled",
+  "createdAt": "2026-10-26T06:49:24.756Z",
+  "sourceRootReceiptSha256": "fcfd888fc1decc496258df5258585ef938d0b555eb09ee83baa1152772758158",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 3746,
+      "sourceSha256": "f87eb7c9d53514fc23583d1f2b379e43eb0b8b88b7e686b9f18b48b6f9d2295b",
+      "deliverySha256": "f87eb7c9d53514fc23583d1f2b379e43eb0b8b88b7e686b9f18b48b6f9d2295b"
+    },
+    {
+      "file": "tiktok-scheduled.json",
+      "bytes": 4030,
+      "sourceSha256": "55e24b4c2e2015fd987fda80be05dc127b2f4c90fb81f0995bda34e22f54aa82",
+      "deliverySha256": "55e24b4c2e2015fd987fda80be05dc127b2f4c90fb81f0995bda34e22f54aa82"
+    }
+  ],
+  "fileCount": 2,
+  "totalBytes": 7776,
+  "frozenProduction": {
+    "receipt": "qa/delivery.json",
+    "receiptSha256": "6fa93b70560ec178a782f851cede2b0caeaad139ffad6a25f7af17d2b6bef01c",
+    "filesVerified": 442,
+    "bytesVerified": 2712399272,
+    "changedFiles": 0
+  },
+  "frozenYouTubePublication": {
+    "folder": "publication/2026-10-26-youtube-public",
+    "receiptSha256": "aeee96a25a7e62e64185494e987ab2176c933fb7f21866808cf04a69aa79bb33",
+    "filesVerified": 4,
+    "bytesVerified": 12136,
+    "changedFiles": 0
+  },
+  "tiktok": {
+    "state": "scheduled_confirmed",
+    "videoId": "7700862636182850822",
+    "scheduledForAtJst": "2026-10-26T19:15:00+09:00",
+    "actualPublishedAt": null,
+    "fileAttachIntents": 1,
+    "coverAttachIntents": 1,
+    "submissionIntents": 1,
+    "reposts": 0
+  },
+  "handoff": {
+    "actualPublicAndAnalyticsParentIssue": 93,
+    "dueFromActualPublish": false,
+    "provisionalTimesOnly": true,
+    "issue114AcceptedForProductionYouTubePublicFunnelAndTikTokSchedule": true
+  },
+  "privateUiRawIncluded": false,
+  "clipboardIncluded": false,
+  "authenticationIncluded": false,
+  "trackingParamsIncluded": false,
+  "guiActionsBySourceWriter": 0,
+  "sourceWriterPublications": 0,
+  "wholeDirectPlaybackAudition": false,
+  "finalizedAt": "2026-10-26T06:50:28.820Z"
+}
