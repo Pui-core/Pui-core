@@ -1,0 +1,32 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-framerate",
+    "30",
+    "-start_number",
+    "0",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-emberwake-longform-20261028\\production\\ep06-full01\\frames\\frame-%06d.png",
+    "-frames:v",
+    "1900",
+    "-c:v",
+    "libx264",
+    "-threads",
+    "2",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "12",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "-an",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\ep06-game.mp4"
+  ],
+  "stdout": "",
+  "stderr": ""
+}
