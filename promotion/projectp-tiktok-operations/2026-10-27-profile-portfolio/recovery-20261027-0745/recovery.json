@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "issue": "https://github.com/Pui-core/-/issues/125",
+  "parentIssue": "https://github.com/Pui-core/-/issues/93",
+  "account": "prop_pui",
+  "recordedAt": "2026-10-26T22:50:01.622Z",
+  "state": "RECOVERY_SAVE_NOT_CONFIRMED_OLD_BIO_PRESERVED",
+  "findingId": "PP125-BIO-SAVE-001",
+  "findingStatus": "UNRESOLVED",
+  "priorCheckpoint": {
+    "canonicalFile": "2026-10-27-profile125-attempt.json",
+    "sha256": "c505de46f48cae8be5a8341812b93243238a5bfdf5b6de58bda6b47c6ae04ad7",
+    "saveIntents": 2,
+    "bothExplicitUnknownErrorObserved": true,
+    "sourceHead": "a35c61081347ac93a9b3a98c6cf6699789e44573",
+    "sourceAndFCheckpointUnchanged": true,
+    "oldFManifestSha256": "494ed8105181f6d9ff5c0843b36e2b7f3eeeeb8de05158316cc44160b9036e36"
+  },
+  "recovery": {
+    "declaredInputWindowStartJst": "2026-10-27T07:45:00+09:00",
+    "declaredHardEndJst": "2026-10-27T07:50:00+09:00",
+    "rootInputWindowEndedAt": "2026-10-26T22:49:20.668Z",
+    "inputMethod": "Nativeで旧自己紹介の全文を選択し、別callのfresh readで全選択を確認。通常paste後のfresh readで新71文字が正確に入ったことを確認し、名前付き保存ボタンへ通常mouseを1回。",
+    "fullOldSelectionVerifiedAt": "2026-10-26T22:45:30.7821572Z",
+    "exactPastedBioVerifiedAt": "2026-10-26T22:45:41.2923413Z",
+    "intendedBioCharacters": 71,
+    "saveIntentEvidence": {
+      "file": "bio-save-intent3-trusted-paste.json",
+      "sha256": "f49937e2e71a482e9b6dd180cc0b35f23a326183eded749484f2539ea1987004",
+      "at": "2026-10-26T22:45:55.8447683Z",
+      "saveIntentOrdinal": 3
+    },
+    "saveCommandReturnedAt": "2026-10-26T22:45:55.920Z",
+    "saveIntentsInThisRecovery": 1,
+    "cumulativeSaveIntents": 3,
+    "additionalSaveIntentsAfterThisSave": 0,
+    "completionObserved": false,
+    "explicitErrorObservedAfterThisSave": false,
+    "modalPersistedAt": "2026-10-26T22:46:02.6967267Z",
+    "cancelledThenNormalReload": true,
+    "normalReloadObservedAt": "2026-10-26T22:47:13.5547975Z",
+    "oldBioStillPresent": true,
+    "newBioPresent": false,
+    "unsavedEditModalPresent": false,
+    "actualProfileUpdated": false
+  },
+  "oldBio": "ゲーム・道具・曲を作る、ぷい。\n『EMBERWAKE』制作の裏側を毎日。\nCAMPFIRE公開準備中｜次の一手をフォローで。",
+  "intendedBio": "ゲーム・アプリを作る、ぷい。EMBERWAKE／嘘か誠か／ScateRush／missyou。作品の仕掛けと更新を実画面で。続きをフォローで。",
+  "normalReloadDisplayedBio": "ゲーム・道具・曲を作る、ぷい。 『EMBERWAKE』制作の裏側を毎日。 CAMPFIRE公開準備中｜次の一手をフォローで。",
+  "proofSemantics": {
+    "canonicalRecoverySaveIntentObject": "単なるhittest観測。入力intent自体や完了の証拠としては使用しない。",
+    "actualSaveIntentFile": "bio-save-intent3-trusted-paste.json",
+    "saveOperationReturnIsPersistenceProof": false,
+    "explicitErrorNotObservedIsSuccessProof": false
+  },
+  "limitations": [
+    "今回は明示エラーを観測していない。初回2回のunknown errorと混ぜない。",
+    "保存を意図した通常mouse入力と、サーバーの要求受付・保存完了を区別する。",
+    "通常再読込後も旧bioを表示。新bioの実保存は未完了。",
+    "保存できない原因、推薦適格性、0再生との因果は未確定。後続の再生QA結果は本snapshotの判定対象に含めない。"
+  ],
+  "recommendationEligibility": null,
+  "causalLinkToZeroViews": null,
+  "writerOperations": {
+    "gui": 0,
+    "browser": 0,
+    "profile": 0,
+    "runtime": 0,
+    "lease": 0
+  },
+  "evidence": {
+    "canonicalRecovery": {
+      "file": "2026-10-27-profile125-recovery.json",
+      "sha256": "7441d0e8a3f69eca2fc96070a0d5942540e9e6be1fbaa91a19fd867b2d20844b"
+    },
+    "privateProofReferences": [
+      {
+        "file": "recovery-select-profile-result.json",
+        "sha256": "814c81132bd78be469bbdd93ef2dff07476dc8d5ee4e6988c84ac02c1ab87132"
+      },
+      {
+        "file": "recovery-profile-before-result.json",
+        "sha256": "b9158fe582862f13b2ca470cc961898acc758bf830a06e38dd01b6ae5a9a7260"
+      },
+      {
+        "file": "recovery-open-edit-result.json",
+        "sha256": "f8b3269604f188659e0e9414bc5a45bcd85c904a2be707f90dc929a4f35c7da2"
+      },
+      {
+        "file": "recovery-select-bio-result.json",
+        "sha256": "13b3813f0a3567723841185867d284f73460366e9f6d6979bf5dc6ad1996a404"
+      },
+      {
+        "file": "recovery-selection-fresh-result.json",
+        "sha256": "9471cf61842997bbf268050e83ef8f54dfcadaea103628b2e940d70f94fb27fe"
+      },
+      {
+        "file": "recovery-paste-bio-result.json",
+        "sha256": "f9708013914edc3709266d8be62ad1733d1328756a55fc932b3168c6c99b04a8"
+      },
+      {
+        "file": "recovery-paste-fresh-result.json",
+        "sha256": "6715ee005e0db861acf1431188fc0b05bc0d9a110dcfc6748bcee827932d37c1"
+      },
+      {
+        "file": "recovery-scroll-save-result.json",
+        "sha256": "737b15e7ee980ab7a063da5d4288199ee2ce6245a9974b2fad1dcdbb4b693b1a"
+      },
+      {
+        "file": "recovery-save-bounds-result.json",
+        "sha256": "f2c641ba6620e2e18cac3f9e7b2ba6802747552a30ef89b5a6442ee0c8c7c461"
+      },
+      {
+        "file": "bio-save-intent3-trusted-paste.json",
+        "sha256": "f49937e2e71a482e9b6dd180cc0b35f23a326183eded749484f2539ea1987004"
+      },
+      {
+        "file": "recovery-save-third-result.json",
+        "sha256": "1a7a8f06854809ff5c46d271b7688b97772acf78fc416704b1324778132a6ae2"
+      },
+      {
+        "file": "recovery-after-save-result.json",
+        "sha256": "1049e5cf2d8a60c5f350abdbbbd45f84f974dadca75a955a34637188700fbab4"
+      },
+      {
+        "file": "recovery-after-save-fresh-result.json",
+        "sha256": "c999b9a283c94f0ff6d5a919c32cc675fa78b70bee0b6db67cafdb9c2a1cf76b"
+      },
+      {
+        "file": "recovery-state-capture-result.json",
+        "sha256": "d9b73f6ef7171db3f2be6827dba68f4cfe8984ed226929f4be1a71241dc86d3b"
+      },
+      {
+        "file": "profile-recovery-state.png",
+        "sha256": "807460bda8fc9c12df146054bdb6fcbc6bb7f24dab90ead5edcfecaa0a94ee54"
+      },
+      {
+        "file": "recovery-save-hittest-result.json",
+        "sha256": "acb7107b160445421c51c0a0424bea48bafbf7c67d63ac440d75d5b4ae36a632"
+      },
+      {
+        "file": "recovery-cancel-result.json",
+        "sha256": "2c8c17c8b8f6dc20284bec4f3b3d6dcd3d35906dcb24917ebe723ef326ee548b"
+      },
+      {
+        "file": "recovery-reload-result.json",
+        "sha256": "4cd6011a6d08dab780cc3c20db552cf01bd219e7bfde5d840d0c7856732f0292"
+      },
+      {
+        "file": "recovery-profile-final-result.json",
+        "sha256": "72464610d5b270e2f07dc3a1c49fb45d9013294d226bd0faab8a016e2175d484"
+      },
+      {
+        "file": "recovery-window-terminal.json",
+        "sha256": "79cc6b4897e048114f90bed5273003538edfc59e7b351c5b6c4e429c3bdbfc73"
+      }
+    ],
+    "rawFilesIncluded": false
+  },
+  "disposition": "Draft/HOLD、最新自己レビューCHANGES_REQUESTED、PP125-BIO-SAVE-001未解除。merge/close/WT整理をしない。",
+  "requiredFollowup": "Rootが新bioを実保存し、通常再読込で完全一致を確認した証跡を別追記して最新headを再レビューする。",
+  "ownerQuestionPending": false
+}
