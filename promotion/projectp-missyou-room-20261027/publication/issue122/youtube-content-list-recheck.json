@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "separate_later_native_content_list_evidence",
+  "managementIssue": 122,
+  "productionIssue": 118,
+  "service": "youtube",
+  "videoId": "hEAgMuUNNLA",
+  "observedAt": "2026-10-26T12:43:22.1945531Z",
+  "nativeDocument": "YouTube Studio channel content",
+  "sameRowVideoBindingConfirmed": true,
+  "matchingEditVideoId": "hEAgMuUNNLA",
+  "nativeVisibility": "公開予約",
+  "scheduledDateDisplay": "2026/10/27",
+  "exactTimeSource": "youtube-scheduled.json retains 12:15 from the earlier native schedule confirmation",
+  "exactTimeDisplayedInThisListEvidence": false,
+  "actualPublishAt": null,
+  "originalReceiptContentListRecheck": "pending",
+  "originalReceiptUnchanged": true,
+  "rootReceipt": {
+    "file": "2026-10-27-missyou118-scheduled.json",
+    "sha256": "58b5857da8fc5a7f78f404c2a2b8e6561883ceed020e36f9613aecbf16f07c7a",
+    "privateOriginal": true
+  },
+  "proof": {
+    "file": "shorts-content-native-ready.json",
+    "sha256": "74dfc96e9da2bfe5627fc85cbcb8bb6d97c0cbc2c34bd620d75d331d389936d2",
+    "privateOriginal": true
+  },
+  "limits": [
+    "一覧の同DataItemとそのeditリンクを対応。別動画の日時を割り当てていない。",
+    "この一覧は公開予約日を表示。正確な12:15は先行する予約確認receiptで保持。",
+    "予約中の0や0:31の丸め表示を、公開成績や納品動画の実尺へ読み替えない。"
+  ],
+  "sourceWriterGuiActions": 0
+}

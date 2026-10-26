@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "kind": "sanitized_scheduled_publication_record",
+  "managementIssue": 122,
+  "productionIssue": 118,
+  "service": "youtube",
+  "state": "scheduled_native_confirmed",
+  "videoId": "hEAgMuUNNLA",
+  "videoUrl": "https://youtube.com/shorts/hEAgMuUNNLA",
+  "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+  "title": "飾った日記は、アプリを閉じても残る？｜missyou 開発中",
+  "scheduledPublishAtJst": "2026-10-27T12:15:00+09:00",
+  "scheduledPublishAtUtc": "2026-10-27T03:15:00.000Z",
+  "actualPublishAt": null,
+  "scheduledNativeConfirmedAt": "2026-10-26T12:39:42.5751389Z",
+  "masterSha256": "550734e573d6c60850ef1cfa9a0e36dcc5dfdba14b3417f99b6b1f786d4122b5",
+  "coverSha256": "3ca99493352a9fff8d2762dd3fb75b618d20f857d84a4632d67d226d4fa023b2",
+  "sourcePr": "https://github.com/Pui-core/Pui-core/pull/53",
+  "sourceHead": "dd9be6c8a02a1c54b145256c2fa918e7a8c0fe84",
+  "sourceMerge": "dcf29e8f6426a60cf1e436f7e2c26d3503c87468",
+  "sourceDeliveryReceiptSha256": "8fb36b96168a0b88a0a001370e5247d7cbebc865ca7ff2b38c158fd17101d0ba",
+  "fileAttachIntents": 1,
+  "nativeFileConfirmAttempts": 2,
+  "coverAttachIntents": 1,
+  "scheduleIntents": 1,
+  "category": "科学と技術",
+  "madeForKids": false,
+  "paidPromotion": false,
+  "alteredContentDisclosure": true,
+  "relatedVideoId": null,
+  "nativeRelatedConfigured": false,
+  "musicTopic": false,
+  "audio": {
+    "kind": "original_background_108_revision03",
+    "adoptedBy": "Root",
+    "popularTrackOrJapanCmlVerified": false
+  },
+  "confirmationText": "2026年10月27日 12:15",
+  "timezone": "GMT+0900",
+  "contentListRecheck": "pending",
+  "contentListRecheckMeaning": "保存時点のpendingを保持。後続確認は別evidenceに記録。",
+  "laterContentListEvidence": "youtube-content-list-recheck.json",
+  "wholeFinalDirectWatchListen": false,
+  "analytics": {
+    "actual24h": null,
+    "actual72h": null,
+    "computeFromActualPublish": true,
+    "scheduledZeroIsNotPerformance": true
+  },
+  "rootReceipt": {
+    "file": "2026-10-27-missyou118-scheduled.json",
+    "sha256": "58b5857da8fc5a7f78f404c2a2b8e6561883ceed020e36f9613aecbf16f07c7a",
+    "privateOriginal": true
+  },
+  "sourceWriterActions": {
+    "gui": 0,
+    "interop": 0,
+    "publications": 0,
+    "leaseEdits": 0,
+    "runtimeEdits": 0
+  },
+  "redaction": {
+    "rawUiIncluded": false,
+    "privateAbsolutePathsIncluded": false,
+    "authenticationIncluded": false,
+    "modelOrMediaIncluded": false
+  }
+}

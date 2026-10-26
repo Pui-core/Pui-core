@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "kind": "append_only_dual_scheduled_publication_delivery",
+  "managementIssue": "https://github.com/Pui-core/-/issues/122",
+  "appendFolder": "publication/issue122",
+  "status": "PASS_MINIMAL_RECORDS_AND_BOTH_ROOT_RECEIPT_COPY_SHA_MATCH",
+  "fileCount": 6,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 3508,
+      "sourceSha256": "dd388e963048cedde120e216f70f117681154ec9a0f2b573e744baee76048bd4",
+      "deliverySha256": "dd388e963048cedde120e216f70f117681154ec9a0f2b573e744baee76048bd4",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "youtube-scheduled.json",
+      "bytes": 2471,
+      "sourceSha256": "a37e4a0a5bca7dee331e607f6d54965fbea1a4e11574a5544172e72351e621e2",
+      "deliverySha256": "a37e4a0a5bca7dee331e607f6d54965fbea1a4e11574a5544172e72351e621e2",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "youtube-content-list-recheck.json",
+      "bytes": 1455,
+      "sourceSha256": "9e1c616249b826f3b1d4d1e7b55ea1222d634205bba26d182004dfeca2b5a124",
+      "deliverySha256": "9e1c616249b826f3b1d4d1e7b55ea1222d634205bba26d182004dfeca2b5a124",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "tiktok-scheduled.json",
+      "bytes": 3907,
+      "sourceSha256": "2984d7cb9eb4cd5b4c4d58bb79e3e68bd6d0542292faf9e1f6ab216fc947a5fa",
+      "deliverySha256": "2984d7cb9eb4cd5b4c4d58bb79e3e68bd6d0542292faf9e1f6ab216fc947a5fa",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "root-youtube-scheduled.private.json",
+      "bytes": 1617,
+      "sourceSha256": "58b5857da8fc5a7f78f404c2a2b8e6561883ceed020e36f9613aecbf16f07c7a",
+      "deliverySha256": "58b5857da8fc5a7f78f404c2a2b8e6561883ceed020e36f9613aecbf16f07c7a",
+      "privateDeliveryOnly": true
+    },
+    {
+      "file": "root-tiktok-scheduled.private.json",
+      "bytes": 1972,
+      "sourceSha256": "e3d6d96ba0edfbf72ad79c514bd8ec84afcb33e6f506e105ac1c94c6c420fe04",
+      "deliverySha256": "e3d6d96ba0edfbf72ad79c514bd8ec84afcb33e6f506e105ac1c94c6c420fe04",
+      "privateDeliveryOnly": true
+    }
+  ],
+  "rootReceipts": {
+    "youtube": {
+      "file": "2026-10-27-missyou118-scheduled.json",
+      "sha256": "58b5857da8fc5a7f78f404c2a2b8e6561883ceed020e36f9613aecbf16f07c7a",
+      "privateOriginal": true
+    },
+    "tiktok": {
+      "file": "2026-10-27-missyou118-scheduled.json",
+      "sha256": "e3d6d96ba0edfbf72ad79c514bd8ec84afcb33e6f506e105ac1c94c6c420fe04",
+      "privateOriginal": true
+    }
+  },
+  "masterAndCaptionBindings": [
+    {
+      "file": "videos/missyou118.mp4",
+      "baseManifestSha256": "550734e573d6c60850ef1cfa9a0e36dcc5dfdba14b3417f99b6b1f786d4122b5",
+      "actualSha256": "550734e573d6c60850ef1cfa9a0e36dcc5dfdba14b3417f99b6b1f786d4122b5",
+      "unchanged": true
+    },
+    {
+      "file": "videos/missyou118-tt.mp4",
+      "baseManifestSha256": "bc4193e372e07f15fc9f0d86286a83bbcefddea00749d8f340fee4815feab399",
+      "actualSha256": "bc4193e372e07f15fc9f0d86286a83bbcefddea00749d8f340fee4815feab399",
+      "unchanged": true
+    },
+    {
+      "file": "covers/missyou118-cover.png",
+      "baseManifestSha256": "3ca99493352a9fff8d2762dd3fb75b618d20f857d84a4632d67d226d4fa023b2",
+      "actualSha256": "3ca99493352a9fff8d2762dd3fb75b618d20f857d84a4632d67d226d4fa023b2",
+      "unchanged": true
+    },
+    {
+      "file": "source/tiktok-caption.txt",
+      "baseManifestSha256": "01ec588e19a6b0097876adc1cb528889011b3e89cbd6ce0aff9bb33a9d88fc4b",
+      "actualSha256": "01ec588e19a6b0097876adc1cb528889011b3e89cbd6ce0aff9bb33a9d88fc4b",
+      "unchanged": true
+    }
+  ],
+  "frozenReceiptChecks": [
+    {
+      "file": "qa/delivery.json",
+      "sha256": "8fb36b96168a0b88a0a001370e5247d7cbebc865ca7ff2b38c158fd17101d0ba",
+      "afterSha256": "8fb36b96168a0b88a0a001370e5247d7cbebc865ca7ff2b38c158fd17101d0ba",
+      "unchanged": true
+    },
+    {
+      "file": "acceptance/2026-10-26-revision02/append-delivery.json",
+      "sha256": "2c7a99398eeaf67b10a97d6d11afcf911e2fa29268582d07028c892d24768df5",
+      "afterSha256": "2c7a99398eeaf67b10a97d6d11afcf911e2fa29268582d07028c892d24768df5",
+      "unchanged": true
+    },
+    {
+      "file": "acceptance/2026-10-26-revision02/root-acceptance.json",
+      "sha256": "9657a9df1a817b61762dc7ec1d56c381c63b8ac9647afc379497d1c303674a81",
+      "afterSha256": "9657a9df1a817b61762dc7ec1d56c381c63b8ac9647afc379497d1c303674a81",
+      "unchanged": true
+    },
+    {
+      "file": "acceptance/2026-10-26-revision02/README.md",
+      "sha256": "cd4711be26c79e96bb39225a9e7ded424cbea4a2d029af19968c8a755498e5bb",
+      "afterSha256": "cd4711be26c79e96bb39225a9e7ded424cbea4a2d029af19968c8a755498e5bb",
+      "unchanged": true
+    }
+  ],
+  "frozenProductionPayloadFiles": 662,
+  "wholePayloadRescanned": false,
+  "originalProductionAndAcceptanceOverwritten": false,
+  "actualPublicConfirmed": false,
+  "sourceWriterGuiActions": 0,
+  "sourceWriterPublications": 0,
+  "globalOrRuntimeEdits": 0
+}

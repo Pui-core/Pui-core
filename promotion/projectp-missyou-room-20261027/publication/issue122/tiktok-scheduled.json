@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "kind": "sanitized_scheduled_publication_record",
+  "managementIssue": 122,
+  "productionIssue": 118,
+  "service": "tiktok",
+  "state": "scheduled_native_confirmed",
+  "accountId": "prop_pui",
+  "videoId": "7701070938569329926",
+  "videoUrl": "https://www.tiktok.com/@prop_pui/video/7701070938569329926",
+  "caption": "飾った日記は、アプリを閉じても残る？ 額と花に飾って、再起動後にもう一度。開発中の検証データです。この続きをフォローで見届けて。 ※iOS Simulator上の実アプリ操作・オフラインQAデータ。音声：VOICEVOX:青山龍星 #missyou #アプリ開発 #ProjectP",
+  "captionSha256": "cc0248afd7f57b2222d00ae94e30208be42436ca32511ca932effde5ba439f3b",
+  "captionCharacters": 141,
+  "captionSingleLine": true,
+  "publisherCaptionRepairPasteIntents": 1,
+  "sourceFCaptionFile": "source/tiktok-caption.txt",
+  "sourceFCaptionSha256": "01ec588e19a6b0097876adc1cb528889011b3e89cbd6ce0aff9bb33a9d88fc4b",
+  "sourceFCaptionUnchanged": true,
+  "scheduledPublishAtJst": "2026-10-27T12:15:00+09:00",
+  "scheduledPublishAtUtc": "2026-10-27T03:15:00.000Z",
+  "actualPublishAt": null,
+  "nativeConfirmedAt": "2026-10-26T20:09:14.2419850Z",
+  "videoSha256": "bc4193e372e07f15fc9f0d86286a83bbcefddea00749d8f340fee4815feab399",
+  "coverSha256": "3ca99493352a9fff8d2762dd3fb75b618d20f857d84a4632d67d226d4fa023b2",
+  "nativeCoverPanDownPixels": 60,
+  "nativeCoverAdjustmentMeaning": "Root adjusted the native cover viewport 60px downward to keep the headline visible; source PNG unchanged.",
+  "sourcePr": "https://github.com/Pui-core/Pui-core/pull/53",
+  "sourceHead": "dd9be6c8a02a1c54b145256c2fa918e7a8c0fe84",
+  "sourceMerge": "dcf29e8f6426a60cf1e436f7e2c26d3503c87468",
+  "sourceDeliveryReceiptSha256": "8fb36b96168a0b88a0a001370e5247d7cbebc865ca7ff2b38c158fd17101d0ba",
+  "fileAttachIntents": 1,
+  "nativeFileConfirmAttempts": 1,
+  "coverAttachIntents": 1,
+  "scheduleIntents": 1,
+  "duplicateSubmissions": 0,
+  "visibility": "Anyone",
+  "ownBrandDisclosure": true,
+  "thirdPartyBrand": false,
+  "aigcDisclosure": true,
+  "highDefinition": true,
+  "commentsAllowed": true,
+  "copyrightCheck": "問題は見つかりませんでした。",
+  "contentCheck": "違反は見つかりませんでした",
+  "music": {
+    "kind": "original_background_108_revision03",
+    "adoptedBy": "Root",
+    "popularTrackOrJapanCmlVerified": false
+  },
+  "wholeFinalDirectWatchListen": false,
+  "nativeScheduleEvidence": {
+    "observedAt": "2026-10-26T20:09:14.2419850Z",
+    "exactCaptionLinkMatched": true,
+    "nativeDateTimeLabel": "10月27日 午後12:15",
+    "proof": {
+      "file": "tiktok-posts-after-schedule-settled122.json",
+      "sha256": "b3f61b6778d3007000722c127cfd54cfd1fe87f8fce4759f5293f2ad39402ff3",
+      "privateOriginal": true
+    },
+    "postListScreenshot": {
+      "file": "tiktok-scheduled-postlist-native.png",
+      "sha256": "1109bca06b55f52cec9526245f20d6c628a092b72ef0f63ca8bb931366c78d8f",
+      "privateOriginal": true
+    },
+    "coverScreenshot": {
+      "file": "tiktok-cover-final-native.png",
+      "sha256": "1c002b12e9eb609e7a0c5e14dccc796642feaac19a570a0c5ecffb55fd4c730d",
+      "privateOriginal": true
+    }
+  },
+  "analytics": {
+    "actual24h": null,
+    "actual72h": null,
+    "computeFromActualPublish": true,
+    "scheduledZeroIsNotPerformance": true
+  },
+  "rootReceipt": {
+    "file": "2026-10-27-missyou118-scheduled.json",
+    "sha256": "e3d6d96ba0edfbf72ad79c514bd8ec84afcb33e6f506e105ac1c94c6c420fe04",
+    "privateOriginal": true
+  },
+  "sourceWriterActions": {
+    "gui": 0,
+    "interop": 0,
+    "publications": 0,
+    "leaseEdits": 0,
+    "runtimeEdits": 0
+  },
+  "redaction": {
+    "rawUiIncluded": false,
+    "screenshotsIncluded": false,
+    "privateAbsolutePathsIncluded": false,
+    "authenticationIncluded": false,
+    "modelOrMediaIncluded": false
+  }
+}
