@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "kind": "sanitized_native_observation_after24h",
+  "managementIssue": "https://github.com/Pui-core/-/issues/119",
+  "rootReviewedAt": "2026-10-26T10:26:41.129Z",
+  "sourceWriterActions": {
+    "gui": 0,
+    "publications": 0,
+    "profileChanges": 0,
+    "runtimeEdits": 0,
+    "newCron": 0
+  },
+  "youtube": {
+    "videoId": "y6-fuKgLq4k",
+    "actualPublishedAt": "2026-10-25T10:00:22.000Z",
+    "actualPublishedAtJst": "2026-10-25T19:00:22+09:00",
+    "scope": "since_publication",
+    "exactFirst24Hours": false,
+    "overview": {
+      "observedAt": "2026-10-26T10:09:34.4177248Z",
+      "ageHours": 24.153449,
+      "views": 673,
+      "subscriberNetChange": 1
+    },
+    "engagement": {
+      "observedAt": "2026-10-26T10:09:57.5399556Z",
+      "ageHours": 24.159872,
+      "engagedViews": 125,
+      "averageViewDurationDisplay": "0:10",
+      "averageViewDurationSeconds": 10,
+      "watchTimeHoursDisplayedRounded": 0.6,
+      "stayedToWatchPercent": 15.8,
+      "swipedAwayPercent": 84.2,
+      "engagementDenominatorRawCount": null,
+      "uniqueViewers": null,
+      "audienceRetentionCurve": null,
+      "completionRate": null,
+      "subscriberConversionRate": null,
+      "qualifiedMonetizationWatchHours": null,
+      "missingReason": "unique_viewers_processing_and_audience_retention_not_ready",
+      "retentionNoticeExposure": "UIA_exposed_offscreen_text_not_visual_confirmation"
+    },
+    "first24HoursDueAt": "2026-10-26T10:00:22.000Z",
+    "first72HoursDueAt": "2026-10-28T10:00:22.000Z",
+    "limits": [
+      "公開後約24.15時間の累計で、厳密な最初の24時間の集計ではない。",
+      "engagedViews/総視聴回数を継続率の分母へ読み替えない。平均時間は完了率ではない。",
+      "0.6時間はnativeの丸め表示であり、収益化対象再生時間を示さない。"
+    ]
+  },
+  "youtubeChannelEarly": {
+    "observedAt": "2026-10-26T10:08:23.1339452Z",
+    "scope": "channel_realtime_last_48_hours",
+    "subscribersCurrent": 129,
+    "viewsLast48Hours": 1934,
+    "videoRows": [
+      {
+        "sourceIssue": 114,
+        "videoId": "GrBDKzvnW58",
+        "actualPublishedAt": "2026-10-26T05:54:55.000Z",
+        "ageHours": 4.224481,
+        "viewsInChannelRealtimeLast48Hours": 1110,
+        "exactFirst24Hours": false
+      },
+      {
+        "sourceIssue": 111,
+        "videoId": "BTS-CO_mh9A",
+        "actualPublishedAt": "2026-10-26T05:22:54.000Z",
+        "ageHours": 4.758093,
+        "viewsInChannelRealtimeLast48Hours": 151,
+        "exactFirst24Hours": false
+      }
+    ],
+    "limits": [
+      "同じ観測時点でも公開後の経過時間は異なる。114と111の同齢比較や24h成績にはしない。",
+      "チャンネル登録者129と旧Shortの純増+1は別scope。"
+    ]
+  },
+  "tiktok": {
+    "firstAfter24h": {
+      "videoId": "7700540849909763336",
+      "actualPublishedAt": "2026-10-25T09:51:31.000Z",
+      "dueAt": "2026-10-26T09:51:31.000Z",
+      "observedAt": "2026-10-26T09:52:35.4015977Z",
+      "ageHours": 24.017889166666667,
+      "scope": "post_list_display_counts",
+      "viewsDisplayed": 0,
+      "likesDisplayed": 0,
+      "commentsDisplayed": 0,
+      "visibilityDisplay": "誰でも",
+      "listLoadedAt": "2026-10-26T09:49:53.6190213Z",
+      "pageRefreshThisWindow": false,
+      "followers": {
+        "count": 0,
+        "observedAt": "2026-10-26T09:54:08.5750793Z",
+        "scope": "account_own_home"
+      },
+      "averageWatchSeconds": null,
+      "completionRate": null,
+      "trafficSources": null,
+      "recommendationEligibility": null,
+      "accountCheck": null,
+      "limits": [
+        "成熟時刻後の一覧表示。18:49:53 JST読込の一覧を18:52:35に観測し、その窓では再読込していない。",
+        "人数は別時点のアカウント全体値で、この投稿への帰属ではない。表示は実配信ログではない。"
+      ]
+    },
+    "followup": {
+      "insights": {
+        "observedAt": "2026-10-26T10:10:42.3078043Z",
+        "scope": "account_global_last_7_days",
+        "views": null,
+        "profileViews": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "trafficSources": null,
+        "searchQueries": null,
+        "unavailableReason": "primary_metrics_unavailable_and_traffic_insufficient",
+        "limits": [
+          "主要値--の横にある差分0を、測定済みの主要値0へ昇格しない。",
+          "個別投稿の詳細分析や現在フォロワー数を取得した証拠ではない。"
+        ]
+      },
+      "postList": {
+        "observedAt": "2026-10-26T10:11:13.2353785Z",
+        "scope": "post_list_display_counts",
+        "rows": [
+          {
+            "postId": "7700784029481716999",
+            "sourceIssue": 100,
+            "visibilityDisplay": "誰でも",
+            "viewsDisplayed": 0,
+            "likesDisplayed": 0,
+            "commentsDisplayed": 0
+          },
+          {
+            "postId": "7700779309224529170",
+            "sourceIssue": 97,
+            "visibilityDisplay": "誰でも",
+            "viewsDisplayed": 0,
+            "likesDisplayed": 0,
+            "commentsDisplayed": 0
+          },
+          {
+            "postId": "7700540849909763336",
+            "sourceIssue": null,
+            "visibilityDisplay": "誰でも",
+            "viewsDisplayed": 0,
+            "likesDisplayed": 0,
+            "commentsDisplayed": 0
+          }
+        ],
+        "excludedScheduledPostId": "7700862636182850822",
+        "excludedReason": "19:11_observation_precedes_19:15_schedule"
+      },
+      "averageWatchSeconds": null,
+      "completionRate": null,
+      "newFollowersAttributed": null,
+      "recommendationEligibility": null,
+      "accountCheck": null
+    },
+    "laterOwnerReportedAccountCheck": {
+      "reportedAt": "2026-10-26T10:30:58.362Z",
+      "source": "owner_phone_text_reply",
+      "ownerAnswer": "チェックマークのみ",
+      "warningsReported": false,
+      "independentScreenObservation": false,
+      "perPostRecommendationEligibility": null,
+      "reachCause": null,
+      "earlierSnapshotNullsPreserved": true
+    },
+    "limits": [
+      "0や分析未提供から内容の敗因・shadowban・推薦適格性を断定しない。",
+      "19:11時点で予約中だった114の0は、後刻の実公開成績と混ぜない。"
+    ]
+  },
+  "nativeMusicAccess": {
+    "observedAt": "2026-10-26T10:20:49.9866838Z",
+    "entry": "TikTok Studio sidebar royalty-free music",
+    "bodyAvailable": true,
+    "sortOptions": [
+      "注目",
+      "新着"
+    ],
+    "japanPopularityRankingConfirmed": false,
+    "trackSelected": false,
+    "trackDownloaded": false,
+    "limits": [
+      "通常のStudio入口で本文を読めたという確認。",
+      "匿名CML入口の失敗をサービス全体の利用不可としない。選曲や権利範囲の確認は別。"
+    ]
+  },
+  "nextExperiment": {
+    "status": "hypothesis_not_proven_optimum",
+    "action": "実ゲーム・実アプリの変化を冒頭で早く見せるフックを次の動画で試す。",
+    "basis": "旧Shortのnative継続15.8%／swipe84.2%。維持率曲線は未提供。",
+    "comparison": "同じ公開後時間で継続・視聴・フォロー純増を確認する。",
+    "optimalDailyFrequency": null,
+    "causalClaim": false
+  },
+  "goals": {
+    "tiktok500By": "2026-11-30",
+    "tiktok1000By": "2026-12-31",
+    "achieved": false,
+    "parentIssuesRemainOpen": [
+      93,
+      106
+    ]
+  },
+  "proofs": {
+    "youtubeObservation": {
+      "file": "2026-10-26-y6-first24h-native.json",
+      "sha256": "038e4aea168916bb252ea18a214a1174de9f993d8e532ab3b16ae74164eaa2e4",
+      "privateOriginal": true
+    },
+    "tiktokFirstAfter24h": {
+      "file": "2026-10-26-first24h-native.json",
+      "sha256": "a9b4504449f38ce2f95a13de44fe8f8cfdc8be4cc6c762338c48696d8c065cc2",
+      "privateOriginal": true
+    },
+    "tiktokFollowup": {
+      "file": "2026-10-26-first24h-followup-native.json",
+      "sha256": "1484d1adfe631577ffb8b7d2d4b1427734abb43ae7eaa26102bb64049717ed67",
+      "privateOriginal": true
+    },
+    "ownerReportedAccountCheck": {
+      "file": "2026-10-26-owner-app-account-check.json",
+      "sha256": "af2a59efac366fb9783b52c69724731ac5f3b1b47e35e4322a252ade524c2fcc",
+      "privateOriginal": true
+    },
+    "nativeMusic": {
+      "file": "tt-music-sort-read.json",
+      "sha256": "c715cf298eaf2f778ee5c6f3a0ab1d449a50be271f41fefbfc05471168db9aa9",
+      "privateOriginal": true
+    },
+    "nativeYouTubeOverview": {
+      "file": "youtube-first-body.json",
+      "sha256": "bc16f2a998ba73e253c8d4a1adc8e9db64477ce5e4a77a0d742ceaddc4c19ad4",
+      "privateOriginal": true
+    },
+    "nativeYouTubeEngagement": {
+      "file": "youtube-first-engagement.json",
+      "sha256": "735829249a1f83a9daca2251d2fbf68cbe1e12c47783368b6ac75010101ea4d5",
+      "privateOriginal": true
+    }
+  },
+  "redaction": {
+    "rawUiIncluded": false,
+    "screenshotsIncluded": false,
+    "htmlIncluded": false,
+    "privateAbsolutePathsIncluded": false,
+    "authenticationIncluded": false,
+    "mediaIncluded": false
+  }
+}

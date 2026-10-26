@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "kind": "sanitized_actual_publication_record",
+  "managementIssue": "https://github.com/Pui-core/-/issues/119",
+  "productionIssue": 114,
+  "parentIssues": [
+    93,
+    106
+  ],
+  "platform": "tiktok",
+  "accountId": "prop_pui",
+  "state": "public_confirmed",
+  "videoId": "7700862636182850822",
+  "url": "https://www.tiktok.com/@prop_pui/video/7700862636182850822",
+  "actualPublishedAt": "2026-10-26T10:15:00.000Z",
+  "actualPublishedAtJst": "2026-10-26T19:15:00+09:00",
+  "publishedTimeSource": "official_public_page_createTime_not_exact_first_availability_probe",
+  "confirmedAt": "2026-10-26T10:17:17.708Z",
+  "confirmedAtJst": "2026-10-26T19:17:17.708+09:00",
+  "videoSha256": "033c1f678098ffef3afe6b36c81bd221d9f2ebdd7cc6e0245881181f5cd0f2ad",
+  "officialPublicPage": {
+    "httpStatus": 200,
+    "statusCode": 0,
+    "privateItem": false
+  },
+  "earlyStats": {
+    "diggCount": 0,
+    "shareCount": 0,
+    "commentCount": 0,
+    "playCount": 0,
+    "collectCount": "0"
+  },
+  "earlyStatsAgeMinutes": 2.2951333333333332,
+  "earlyStatsAreNotMaturePerformance": true,
+  "analyticsDue": [
+    {
+      "kind": "24h",
+      "dueAt": "2026-10-27T10:15:00.000Z",
+      "state": "existing_PM_patrol_due"
+    },
+    {
+      "kind": "72h",
+      "dueAt": "2026-10-29T10:15:00.000Z",
+      "state": "existing_PM_patrol_due"
+    }
+  ],
+  "recommendationEligibility": null,
+  "accountCheck": null,
+  "newSubmissions": 0,
+  "reposts": 0,
+  "musicTopic": false,
+  "oldMusic99Requeued": false,
+  "rootReceipt": {
+    "file": "2026-10-26-game114-public.json",
+    "sha256": "9cc2813e40b1bb0ad57ee16b188565355e61a7c75e22bf2bc310b1bd2fd6e325",
+    "privateOriginal": true
+  },
+  "previousScheduledReceipt": {
+    "file": "2026-10-26-game114-scheduled.json",
+    "sha256": "fcfd888fc1decc496258df5258585ef938d0b555eb09ee83baa1152772758158",
+    "privateOriginal": true,
+    "preservedAsHistory": true,
+    "publicRecord": "../2026-10-26-tiktok-scheduled/tiktok-scheduled.json"
+  },
+  "limits": [
+    "19:17:17 JSTにstatus0/privatefalseを観測。19:15はplatform createTimeで、最初にアクセス可能になった瞬間の測定ではない。",
+    "公開約2.3分の0再生を成熟実績としない。予約記録は書き換えず、この追記が後刻の公開確認を示す。"
+  ],
+  "sourceWriterActions": {
+    "gui": 0,
+    "newSubmissions": 0,
+    "profileChanges": 0,
+    "runtimeEdits": 0
+  },
+  "redaction": {
+    "rawUiIncluded": false,
+    "privateAbsolutePathsIncluded": false,
+    "authenticationIncluded": false,
+    "publicFactsAndHashesOnly": true
+  }
+}
