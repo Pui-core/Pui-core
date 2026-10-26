@@ -1,5 +1,7 @@
 # Root向け：Cakewalkの実保存と出力
 
+**履歴：これは当初の未実行手順です。** Sonar側で無料利用画面を越えたCWP/音声出力は成立していません。現在は別名の無料DAW SoundCraft0.12.1を正式な実制作経路として採用し、native原本と音源を出力済みです。[現在の再出力手順](SoundCraftでの再出力.md)を参照してください。下記を実行済みの証拠にしません。
+
 MIDI準備先：`F:\Videos\ProjectP-Original-BGM-2026-10-26\revision-01-source\midi\connecting-lights.mid`
 
 Sonar実体：`C:\Program Files\Cakewalk\Sonar\Sonar.exe`。既存のowner原本や未保存編集を保持し、新しい本曲専用projectだけを操作します。画面操作はRoot一人、共有画面告知と最新UIを根拠に行ってください。以下は期待する操作/結果で、未実行です。

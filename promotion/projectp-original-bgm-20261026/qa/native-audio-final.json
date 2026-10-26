@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-26T04:09:37.258Z",
+  "state": "PASS_NATIVE_AUDIO_AND_SOURCE_CORRESPONDENCE",
+  "software": "SoundCraft0.12.1 headless native DAW",
+  "wholeSubjectiveListening": false,
+  "usage": "Background production material for realgame/appvideos only; no standalone music/MIX/MV/music-making video publication.",
+  "versions": [
+    {
+      "kind": "full",
+      "seconds": 82,
+      "nativeNotes": [
+        {
+          "track": "01 Lantern motif",
+          "notes": 110,
+          "instrument": "subtractive_synth",
+          "faderDb": 11,
+          "pan": [
+            -0.6,
+            1
+          ]
+        },
+        {
+          "track": "02 Soft chord bed",
+          "notes": 156,
+          "instrument": "subtractive_synth",
+          "faderDb": 11,
+          "pan": [
+            -1,
+            0.3
+          ]
+        },
+        {
+          "track": "03 Rounded bass",
+          "notes": 61,
+          "instrument": "subtractive_synth",
+          "faderDb": 11,
+          "pan": [
+            -0.8,
+            0.8
+          ]
+        },
+        {
+          "track": "04 Light pulse",
+          "notes": 303,
+          "instrument": "drum_synth",
+          "faderDb": 11,
+          "pan": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "master": {
+        "file": "audio/connecting-lights-master.wav",
+        "frames": 3936000,
+        "seconds": 82,
+        "rate": 48000,
+        "bits": 24,
+        "channels": 2,
+        "peakDbfs": -2.9839112447988914,
+        "rmsLDbfs": -17.955995363807418,
+        "rmsRDbfs": -18.843677522060283,
+        "balanceDb": 0.8876821582528645,
+        "correlation": 0.958663553674548,
+        "differenceRmsDbfs": -28.709105709914922,
+        "dcL": 2.1773564621685e-9,
+        "dcR": 2.9729330927375856e-9,
+        "last200msPeakDbfs": -300,
+        "clippedFrames": 0,
+        "pcmSha256": "8fdf5add64f9227b204382c7da8405aa68c12d05143dac7a21a0e6233f25af32",
+        "fileSha256": "4d3bdac03c4bbcd89511ea637265bd13d56e0f11f6b702ca4f01b66af49c50df"
+      },
+      "stems": [
+        {
+          "file": "audio/stems/connecting-lights - 01 Lantern motif.wav",
+          "role": "lead",
+          "frames": 3936000,
+          "seconds": 82,
+          "rate": 48000,
+          "bits": 24,
+          "channels": 2,
+          "peakDbfs": -7.475771067093815,
+          "rmsLDbfs": -28.767178946027396,
+          "rmsRDbfs": -25.821786118184757,
+          "balanceDb": -2.9453928278426385,
+          "correlation": 0.9988327488808065,
+          "differenceRmsDbfs": -36.559864427094865,
+          "dcL": -1.050592437992251e-9,
+          "dcR": -5.585512494653221e-10,
+          "last200msPeakDbfs": -138.47379800543135,
+          "clippedFrames": 0,
+          "pcmSha256": "dc04cab494a7b45fc5a5e328f7b972d9443b681b437c7f9810754c3eca708875",
+          "fileSha256": "fec610251766c05b274a59152a7f55f62ce7f906556ca9f7ca193c97ab4c6aca"
+        },
+        {
+          "file": "audio/stems/connecting-lights - 02 Soft chord bed.wav",
+          "role": "keys",
+          "frames": 3936000,
+          "seconds": 82,
+          "rate": 48000,
+          "bits": 24,
+          "channels": 2,
+          "peakDbfs": -5.525391335770547,
+          "rmsLDbfs": -21.887403692653635,
+          "rmsRDbfs": -26.536648311648303,
+          "balanceDb": 4.649244618994667,
+          "correlation": 0.9997291364685755,
+          "differenceRmsDbfs": -29.529209138646397,
+          "dcL": -6.358131645171623e-10,
+          "dcR": -1.9940903516319708e-10,
+          "last200msPeakDbfs": -138.47379800543135,
+          "clippedFrames": 0,
+          "pcmSha256": "3f162fedcc0dc326126499f43a30308eb4a7bbf3afccfe10d8f4f4c6677086de",
+          "fileSha256": "a4a060fb0ddfd5203ac2cb9c2936d35dc22e76ca1b610c46fdf11527f9d3abc7"
+        },
+        {
+          "file": "audio/stems/connecting-lights - 03 Rounded bass.wav",
+          "role": "bass",
+          "frames": 3936000,
+          "seconds": 82,
+          "rate": 48000,
+          "bits": 24,
+          "channels": 2,
+          "peakDbfs": -11.784465626532413,
+          "rmsLDbfs": -20.880540140355603,
+          "rmsRDbfs": -20.880540137921997,
+          "balanceDb": -2.433603796103861e-9,
+          "correlation": 0.9999999999971864,
+          "differenceRmsDbfs": -141.48402734565636,
+          "dcL": 4.099394247783878e-9,
+          "dcR": 4.191890480072518e-9,
+          "last200msPeakDbfs": -138.47379800543135,
+          "clippedFrames": 0,
+          "pcmSha256": "9b750405d523ec624377c62e795b52146fc1d23913055d17a89b157e29aa6767",
+          "fileSha256": "b17da461614ce2897bed50e30f0b0bd7c19f9d38d44173c392b0a5fa59ff69e3"
+        },
+        {
+          "file": "audio/stems/connecting-lights - 04 Light pulse.wav",
+          "role": "drums",
+          "frames": 3936000,
+          "seconds": 82,
+          "rate": 48000,
+          "bits": 24,
+          "channels": 2,
+          "peakDbfs": -8.765017139754187,
+          "rmsLDbfs": -35.75821059880886,
+          "rmsRDbfs": -35.758210613441605,
+          "balanceDb": 1.4632749324217453e-8,
+          "correlation": 1.0000000000001767,
+          "differenceRmsDbfs": -141.483142531043,
+          "dcL": -4.719306782978337e-10,
+          "dcR": -4.078132834860949e-10,
+          "last200msPeakDbfs": -138.47379800543135,
+          "clippedFrames": 0,
+          "pcmSha256": "b2a5a4e6fff41f19cf7ee65603c5029e28a7a0355193db3d150af37470864101",
+          "fileSha256": "a7d89c4865ef5068a5aae1dbd9fee48406a2c3a9dfb7dca971d73f960cf00d1f"
+        }
+      ],
+      "sumQa": {
+        "maxAbsoluteError": 7.152557373046875e-7,
+        "rmsError": 2.1021305878535754e-7,
+        "tolerance": 0.000001430511474609375,
+        "qualification": "Stems native24bit dithering is enabled by the app; master dithering is disabled. Quantization noise tolerance is12LSBs, not a bit-identical sum claim."
+      },
+      "independent": {
+        "software": "FFmpeg8.0.1",
+        "status": 0,
+        "fullDecode": true,
+        "integratedLufs": -17.4,
+        "truePeakDbfs": -3,
+        "stderrSummary": "Summary:\r\n\r\n  Integrated loudness:\r\n    I:         -17.4 LUFS\r\n    Threshold: -27.4 LUFS\r\n\r\n  Loudness range:\r\n    LRA:         1.9 LU\r\n    Threshold: -37.4 LUFS\r\n    LRA low:   -18.5 LUFS\r\n    LRA high:  -16.6 LUFS\r\n\r\n  True peak:\r\n    Peak:       -3.0 dBFS\r\n[out#0/null @ 000002210ad81c40] video:0KiB audio:15375KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nsize=N/A time=00:01:22.00 bitrate=N/A speed= 397x elapsed=0:00:00.20    \r\n"
+      }
+    },
+    {
+      "kind": "short",
+      "seconds": 22,
+      "nativeNotes": [
+        {
+          "track": "01 Lantern motif",
+          "notes": 32,
+          "instrument": "subtractive_synth",
+          "faderDb": 11,
+          "pan": [
+            -0.6,
+            1
+          ]
+        },
+        {
+          "track": "02 Soft chord bed",
+          "notes": 39,
+          "instrument": "subtractive_synth",
+          "faderDb": 11,
+          "pan": [
+            -1,
+            0.3
+          ]
+        },
+        {
+          "track": "03 Rounded bass",
+          "notes": 18,
+          "instrument": "subtractive_synth",
+          "faderDb": 11,
+          "pan": [
+            -0.8,
+            0.8
+          ]
+        },
+        {
+          "track": "04 Light pulse",
+          "notes": 97,
+          "instrument": "drum_synth",
+          "faderDb": 11,
+          "pan": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "master": {
+        "file": "audio/connecting-lights-short-master.wav",
+        "frames": 1056000,
+        "seconds": 22,
+        "rate": 48000,
+        "bits": 24,
+        "channels": 2,
+        "peakDbfs": -2.1771134133425987,
+        "rmsLDbfs": -18.015812681810278,
+        "rmsRDbfs": -18.8239588709361,
+        "balanceDb": 0.8081461891258206,
+        "correlation": 0.9575182238254366,
+        "differenceRmsDbfs": -28.70589897481861,
+        "dcL": 4.246943827831384e-9,
+        "dcR": 3.82135763312831e-9,
+        "last200msPeakDbfs": -300,
+        "clippedFrames": 0,
+        "pcmSha256": "6c0dabb43c7f745926d79c99fdfa5704846acc8ecdd844dd96d5c67e6a12c4d5",
+        "fileSha256": "2387bf313b689b21467cbffb0b17195ff70ab7f4e2fb8c9bf244f85bbd74101d"
+      },
+      "stems": [
+        {
+          "file": "audio/short-stems/connecting-lights-short - 01 Lantern motif.wav",
+          "role": "lead",
+          "frames": 1056000,
+          "seconds": 22,
+          "rate": 48000,
+          "bits": 24,
+          "channels": 2,
+          "peakDbfs": -7.508717801939715,
+          "rmsLDbfs": -28.274771364850828,
+          "rmsRDbfs": -25.333177844320332,
+          "balanceDb": -2.941593520530494,
+          "correlation": 0.998814033984409,
+          "differenceRmsDbfs": -36.07907560736312,
+          "dcL": -8.045498168829716e-10,
+          "dcR": -1.910057934847745e-10,
+          "last200msPeakDbfs": -138.47379800543135,
+          "clippedFrames": 0,
+          "pcmSha256": "d6a90f26f08c46fa276793e526e52e1bb08ee7ea37866802a3305c5dc7e3981f",
+          "fileSha256": "06b3b56d7755e7a5807d140e781d9c906e4a80927d797a14d37c1460be44aef4"
+        },
+        {
+          "file": "audio/short-stems/connecting-lights-short - 02 Soft chord bed.wav",
+          "role": "keys",
+          "frames": 1056000,
+          "seconds": 22,
+          "rate": 48000,
+          "bits": 24,
+          "channels": 2,
+          "peakDbfs": -5.5250196822226325,
+          "rmsLDbfs": -22.01130343999333,
+          "rmsRDbfs": -26.65876400542452,
+          "balanceDb": 4.647460565431192,
+          "correlation": 0.9997246282442601,
+          "differenceRmsDbfs": -29.655490114082138,
+          "dcL": -3.8551110209840717e-10,
+          "dcR": -1.332073500662139e-9,
+          "last200msPeakDbfs": -138.47379800543135,
+          "clippedFrames": 0,
+          "pcmSha256": "93769fab8f47215816926c05a13750dcf52f443288222b8516eed04d89a822d8",
+          "fileSha256": "868f1a1e95bf0600ceff97d054e5cf793d2a20cc2960dc7186d43239cf4d6a4b"
+        },
+        {
+          "file": "audio/short-stems/connecting-lights-short - 03 Rounded bass.wav",
+          "role": "bass",
+          "frames": 1056000,
+          "seconds": 22,
+          "rate": 48000,
+          "bits": 24,
+          "channels": 2,
+          "peakDbfs": -11.196611491570309,
+          "rmsLDbfs": -20.983319045781883,
+          "rmsRDbfs": -20.983319047657822,
+          "balanceDb": 1.8759428649272593e-9,
+          "correlation": 0.9999999999987609,
+          "differenceRmsDbfs": -141.49428456361886,
+          "dcL": 4.261957876610033e-9,
+          "dcR": 4.280584328102343e-9,
+          "last200msPeakDbfs": -138.47379800543135,
+          "clippedFrames": 0,
+          "pcmSha256": "38c9b9dbf4791e2dbdc5ca6144a7a71e807db0595c19fd423e1dff69a363d5b5",
+          "fileSha256": "2628f5464f98ddb3f50419ef8bbfe8d4efb8cbc38bbeac12070a42aa9cd04e9e"
+        },
+        {
+          "file": "audio/short-stems/connecting-lights-short - 04 Light pulse.wav",
+          "role": "drums",
+          "frames": 1056000,
+          "seconds": 22,
+          "rate": 48000,
+          "bits": 24,
+          "channels": 2,
+          "peakDbfs": -4.334960640454815,
+          "rmsLDbfs": -34.619246378462535,
+          "rmsRDbfs": -34.619246371557104,
+          "balanceDb": -6.905428449799736e-9,
+          "correlation": 0.9999999999984472,
+          "differenceRmsDbfs": -141.4871176873219,
+          "dcL": 8.719437050096916e-10,
+          "dcR": 9.395633683060155e-10,
+          "last200msPeakDbfs": -138.47379800543135,
+          "clippedFrames": 0,
+          "pcmSha256": "64d962e8370eef882ef5f7bf0dc33fda5f237b3ccdb324da932507a1cffb6703",
+          "fileSha256": "f59bfb74ad8381145eb2170901c40be539de06808888c9c9a98fc6d2cf4d4097"
+        }
+      ],
+      "sumQa": {
+        "maxAbsoluteError": 7.152557373046875e-7,
+        "rmsError": 2.10582970476647e-7,
+        "tolerance": 0.000001430511474609375,
+        "qualification": "Stems native24bit dithering is enabled by the app; master dithering is disabled. Quantization noise tolerance is12LSBs, not a bit-identical sum claim."
+      },
+      "independent": {
+        "software": "FFmpeg8.0.1",
+        "status": 0,
+        "fullDecode": true,
+        "integratedLufs": -17.1,
+        "truePeakDbfs": -1.6,
+        "stderrSummary": "Summary:\r\n\r\n  Integrated loudness:\r\n    I:         -17.1 LUFS\r\n    Threshold: -27.2 LUFS\r\n\r\n  Loudness range:\r\n    LRA:         1.0 LU\r\n    Threshold: -37.3 LUFS\r\n    LRA low:   -17.7 LUFS\r\n    LRA high:  -16.7 LUFS\r\n\r\n  True peak:\r\n    Peak:       -1.6 dBFS\r\n[out#0/null @ 0000023e6515ff00] video:0KiB audio:4125KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nsize=N/A time=00:00:22.00 bitrate=N/A speed= 372x elapsed=0:00:00.05    \r\n"
+      }
+    }
+  ]
+}

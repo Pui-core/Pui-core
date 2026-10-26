@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "state": "PASS_F_NATIVE_REOPEN_AND_REBOUNCE",
+  "at": "2026-10-26T04:15:10.980Z",
+  "guiUsed": false,
+  "wholeSubjectiveListening": false,
+  "checks": [
+    {
+      "session": "native/connecting-lights.scraft",
+      "output": "audio/connecting-lights-master.wav",
+      "seconds": 82,
+      "exitCode": 0,
+      "nativeReopened": true,
+      "reRenderedPcmSha256": "8fdf5add64f9227b204382c7da8405aa68c12d05143dac7a21a0e6233f25af32",
+      "deliveredPcmSha256": "8fdf5add64f9227b204382c7da8405aa68c12d05143dac7a21a0e6233f25af32",
+      "pcmIdentical": true,
+      "stdout": "session.audio_health: {\"active_audio_end_samples\":0,\"active_audio_end_seconds\":0.0,\"audio_clips\":0,\"healthy\":true,\"issue_count\":0,\"issues\":[],\"scope\":\"All playlists; loaded audio availability and clip bounds only. Does not check files on disk, signal levels, plugins or routing.\"}\nfile.bounce_mix: {\"bytes\":23616104,\"lufs\":-17.36182975769043,\"path\":\"<VERIFICATION_TEMP>/connecting-lights-reopened.wav\",\"peak_db\":-2.9839112758636475,\"seconds\":82.0,\"true_peak_db\":-2.976539134979248}\n",
+      "stderr": ""
+    },
+    {
+      "session": "native/connecting-lights-short.scraft",
+      "output": "audio/connecting-lights-short-master.wav",
+      "seconds": 22,
+      "exitCode": 0,
+      "nativeReopened": true,
+      "reRenderedPcmSha256": "6c0dabb43c7f745926d79c99fdfa5704846acc8ecdd844dd96d5c67e6a12c4d5",
+      "deliveredPcmSha256": "6c0dabb43c7f745926d79c99fdfa5704846acc8ecdd844dd96d5c67e6a12c4d5",
+      "pcmIdentical": true,
+      "stdout": "session.audio_health: {\"active_audio_end_samples\":0,\"active_audio_end_seconds\":0.0,\"audio_clips\":0,\"healthy\":true,\"issue_count\":0,\"issues\":[],\"scope\":\"All playlists; loaded audio availability and clip bounds only. Does not check files on disk, signal levels, plugins or routing.\"}\nfile.bounce_mix: {\"bytes\":6336104,\"lufs\":-17.087162017822266,\"path\":\"<VERIFICATION_TEMP>/connecting-lights-short-reopened.wav\",\"peak_db\":-2.1771135330200195,\"seconds\":22.0,\"true_peak_db\":-1.8372244834899902}\n",
+      "stderr": ""
+    }
+  ]
+}

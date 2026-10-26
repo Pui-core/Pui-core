@@ -1,0 +1,44 @@
+{
+  "bpm": 96,
+  "secondsPerBeat": 0.625,
+  "barSeconds": 2.5,
+  "usage": "Private backgroundproductionmaterialforrealgame/appvideos; no music/MIX/MV/musicmakingvideo publication.",
+  "full": {
+    "audio": "audio/connecting-lights-master.wav",
+    "musicEnd": 80,
+    "renderEnd": 82,
+    "sections": [
+      {
+        "at": 0,
+        "name": "First light"
+      },
+      {
+        "at": 10,
+        "name": "Find the connection"
+      },
+      {
+        "at": 30,
+        "name": "A new route"
+      },
+      {
+        "at": 50,
+        "name": "Listen and choose"
+      },
+      {
+        "at": 60,
+        "name": "Lights connected"
+      }
+    ]
+  },
+  "short": {
+    "audio": "audio/connecting-lights-short-master.wav",
+    "fromCompositionSeconds": [
+      10,
+      30
+    ],
+    "musicEnd": 20,
+    "renderEnd": 22,
+    "followingSectionNotesExcluded": true,
+    "pcmIdenticalToFullCropClaim": false
+  }
+}

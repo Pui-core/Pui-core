@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "tool": "SoundCraft 0.12.1 native CLI",
+  "commonFaderGainDb": 11,
+  "sampleRate": 48000,
+  "bitDepth": 24,
+  "fullSeconds": 82,
+  "shortSeconds": 22,
+  "tracks": [
+    {
+      "name": "01 Lantern motif",
+      "role": "lead",
+      "plugin": "subtractive_synth",
+      "pan": [
+        -0.6,
+        1
+      ],
+      "faderDb": 0,
+      "params": {
+        "osc1_wave": 2,
+        "osc2_wave": 3,
+        "osc2_semitones": 12,
+        "osc2_detune": 0,
+        "osc_mix": 14,
+        "cutoff": 4500,
+        "resonance": 4,
+        "filter_env_amount": 0,
+        "amp_attack": 3,
+        "amp_decay": 270,
+        "amp_sustain": 12,
+        "amp_release": 330,
+        "filter_attack": 3,
+        "filter_decay": 270,
+        "filter_sustain": 0,
+        "filter_release": 250,
+        "glide": 0,
+        "velocity": 85,
+        "level": -6.5
+      },
+      "fx": [
+        {
+          "plugin": "room_reverb",
+          "params": {
+            "mix": 10,
+            "pre_delay": 9,
+            "decay": 0.62,
+            "size": 25,
+            "damping": 6200,
+            "diffusion": 78,
+            "width": 80,
+            "low_cut": 300
+          }
+        },
+        {
+          "plugin": "dc_offset_removal",
+          "params": {
+            "cutoff": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "02 Soft chord bed",
+      "role": "keys",
+      "plugin": "subtractive_synth",
+      "pan": [
+        -1,
+        0.3
+      ],
+      "faderDb": 0,
+      "params": {
+        "osc1_wave": 3,
+        "osc2_wave": 3,
+        "osc2_semitones": 0,
+        "osc2_detune": 6,
+        "osc_mix": 32,
+        "cutoff": 950,
+        "resonance": 3,
+        "filter_env_amount": 0,
+        "amp_attack": 110,
+        "amp_decay": 900,
+        "amp_sustain": 35,
+        "amp_release": 900,
+        "filter_attack": 60,
+        "filter_decay": 600,
+        "filter_sustain": 25,
+        "filter_release": 650,
+        "glide": 0,
+        "velocity": 75,
+        "level": -11.5
+      },
+      "fx": [
+        {
+          "plugin": "room_reverb",
+          "params": {
+            "mix": 7,
+            "pre_delay": 6,
+            "decay": 0.8,
+            "size": 20,
+            "damping": 4500,
+            "diffusion": 78,
+            "width": 90,
+            "low_cut": 250
+          }
+        },
+        {
+          "plugin": "dc_offset_removal",
+          "params": {
+            "cutoff": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "03 Rounded bass",
+      "role": "bass",
+      "plugin": "subtractive_synth",
+      "pan": [
+        -0.8,
+        0.8
+      ],
+      "faderDb": 0,
+      "params": {
+        "osc1_wave": 2,
+        "osc2_wave": 3,
+        "osc2_semitones": 0,
+        "osc2_detune": 0,
+        "osc_mix": 25,
+        "cutoff": 260,
+        "resonance": 3,
+        "filter_env_amount": 8,
+        "amp_attack": 5,
+        "amp_decay": 250,
+        "amp_sustain": 62,
+        "amp_release": 85,
+        "filter_attack": 3,
+        "filter_decay": 180,
+        "filter_sustain": 20,
+        "filter_release": 90,
+        "glide": 0,
+        "velocity": 72,
+        "level": -6.5
+      },
+      "fx": [
+        {
+          "plugin": "dc_offset_removal",
+          "params": {
+            "cutoff": 5
+          }
+        }
+      ]
+    },
+    {
+      "name": "04 Light pulse",
+      "role": "drums",
+      "plugin": "drum_synth",
+      "pan": [
+        -1,
+        1
+      ],
+      "faderDb": 0,
+      "params": {
+        "level": -11.5,
+        "kick_tune": -2,
+        "kick_decay": 140,
+        "snare_tune": -1,
+        "snare_snappy": 18,
+        "snare_decay": 100,
+        "hat_decay": 40,
+        "open_hat_decay": 250,
+        "tom_tune": 0,
+        "tom_decay": 250,
+        "cymbal_decay": 650
+      },
+      "fx": [
+        {
+          "plugin": "dc_offset_removal",
+          "params": {
+            "cutoff": 5
+          }
+        }
+      ]
+    }
+  ],
+  "levelDecision": {
+    "firstNativeIntegratedLufs": -29.851938247680664,
+    "firstNativeTruePeakDb": -15.584315299987793,
+    "change": "Native instrument output +1.5dB and each native fader +12dB, same relative arrangement/FX/pan. No offline audio normalization or limiter.",
+    "expectedIntegratedLufs": -17.35,
+    "expectedTruePeakDb": -3.08,
+    "qualification": "Expected values are estimates; final actual bounce is checked separately.",
+    "secondNativeShortTruePeakDb": -0.666616857,
+    "finalChange": "Reduce common native fader from12dB to11dB on both versions, preserving identical instrumental settings/relative gain; native output +1.5dB from initialpass remains.",
+    "expectedShortTruePeakDb": -1.67
+  },
+  "dcDecision": "Remove measured finite DC through native5Hz blocker pertrack; verify finalPCM/stemsum and retain previouspreview bytes separately."
+}
