@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "state": "native_publication_confirmation_blocked",
+  "managementIssue": "https://github.com/Pui-core/-/issues/115",
+  "parentIssue": "https://github.com/Pui-core/-/issues/93",
+  "productionIssue": "https://github.com/Pui-core/-/issues/100",
+  "platform": "tiktok",
+  "accountId": "prop_pui",
+  "videoId": "7700784029481716999",
+  "videoUrl": "https://www.tiktok.com/@prop_pui/video/7700784029481716999",
+  "scheduledForJst": "2026-10-26T16:00:00+09:00",
+  "observedAt": "2026-10-26T07:10:19.728Z",
+  "publicConfirmed": null,
+  "nativeAccountVerified": false,
+  "nativePublicRowVerified": false,
+  "actualPublishedAt": null,
+  "due24hUtc": null,
+  "due72hUtc": null,
+  "source": {
+    "video": "../../videos/missyou-stamp.mp4",
+    "videoSha256": "a28dc095775670380fca6551f7c394a6d719601109b98999a4531e25f7213eee",
+    "cover": "../../covers/missyou-stamp-cover.png",
+    "coverSha256": "4ed364eccfc00465f6f1f9face133db98bce3d5b759812ed3311cc3637918d4d",
+    "caption": "../../source/caption.txt",
+    "captionSha256": "f2b083f31e20ddbd8e22b64bd7ddd7773b4251772d609c5244788cec76cacf76",
+    "originalQaUnchanged": true
+  },
+  "connection": {
+    "strictProbeSucceeded": true,
+    "strictProbeAt": "2026-10-26T07:10:04.465Z",
+    "identityMatchedExistingReader": true,
+    "identityIsNotAccountProof": true,
+    "service": "tiktok",
+    "action": "read",
+    "readerSha256": "30f879bfdcecda64ff8dfc0eba68fb05df953cbabfb30c1753736edaac97316c",
+    "readAttempts": 1,
+    "readExitCode": 1,
+    "failure": {
+      "stage": "operation",
+      "kind": "OPERATION_EXCEPTION",
+      "exceptionTypes": [
+        "System.Management.Automation.ParseException"
+      ],
+      "hresults": [
+        "0x80131501"
+      ],
+      "category": "ParserError",
+      "site": {
+        "line": 20,
+        "offset": 171,
+        "script": "operation"
+      },
+      "operationInvoked": true,
+      "retry": false
+    },
+    "accountVerified": false
+  },
+  "finiteOperation": {
+    "acquiredAt": "2026-10-26T07:09:39.778Z",
+    "expiresAt": "2026-10-26T07:24:39.779Z",
+    "guiStartedAt": "2026-10-26T07:10:01.535Z",
+    "guiEndedAt": "2026-10-26T07:10:19.728Z",
+    "guiDurationSeconds": 18.193,
+    "maxGuiSeconds": 180,
+    "releasedAt": "2026-10-26T07:11:07.063Z",
+    "claimReleased": true,
+    "leaseReleased": true,
+    "nominationReleased": true,
+    "explicitNominationSource": "https://github.com/Pui-core/-/issues/115#issuecomment-6410260644",
+    "acquisitionCasMatched": true,
+    "backupsPreservedPrivately": true,
+    "studioSelections": 0,
+    "navigations": 0,
+    "zoomChanges": 0,
+    "homeVerified": false,
+    "homeQualification": "read失敗のため終端Homeを確認できず、追加操作なし",
+    "intents": {
+      "post": 0,
+      "attach": 0,
+      "coverAttach": 0,
+      "send": 0,
+      "schedule": 0,
+      "delete": 0,
+      "profileSave": 0
+    },
+    "maxLeaseMs": 900000,
+    "leaseConfiguredTtlMs": 900001,
+    "leaseConfiguredTtlWithinLimit": false,
+    "leaseHeldMs": 87285,
+    "leaseHeldWithinLimit": true,
+    "leasePrecisionQualification": "取得時刻と期限を別のclock readで算出したため、設定TTLは上限15分より1ms長い。逸脱を保持しPASSとしない。実保持87.285秒で解放し、期限/15分を越えたGUI操作はない。"
+  },
+  "priorPublicMetadata": {
+    "receiptRef": "receipts/2026-10-26-app100-public.json",
+    "receiptSha256": "be81052e1b694ab543a0f161480ca85c4cbecbebc0c372cb2cfcaf721ff802e3",
+    "checkedAt": "2026-10-26T07:01:44.755Z",
+    "publicConfirmed": true,
+    "actualPublishedAtUtc": "2026-10-26T07:00:00.000Z",
+    "due24hUtc": "2026-10-27T07:00:00.000Z",
+    "due72hUtc": "2026-10-29T07:00:00.000Z",
+    "qualification": "着手前の匿名metadata観測。今回のnative読取成功ではない。既存receipt・dailyの公開状態/時刻/dueを不変更で保持した。"
+  },
+  "evidence": {
+    "runtimeObservationReceiptSha256": "d64bd9512c4a2ea0caba2ff0ffb7dc88838ce1d45e6cad4e746ac37dde251ea3",
+    "rawStoredPrivately": true,
+    "rawIncludedInGit": false,
+    "files": [
+      {
+        "file": "probe.json",
+        "sha256": "e0808acfcfb992601c644b1e1584eb3828184ddc26e96a3a928c83d29658b664"
+      },
+      {
+        "file": "probe.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "file": "probe.exitcode",
+        "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      },
+      {
+        "file": "native-read.json",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "file": "native-read.stderr",
+        "sha256": "3fa029eaee66e0b600f97ec409e9ee49b24a10ab57c202d5928c90d876f759fb"
+      },
+      {
+        "file": "native-read-result.json",
+        "sha256": "c1df420267c33a4e8371da6ba29886dcffc41c96d262a0dbbbde01d32039cd91"
+      }
+    ],
+    "acquisitionRecordSha256": "63ec4338e9ac6f4510f68a881387d32ceac827b7c39f656c6f5e94e93e4b7d50",
+    "releaseRecordSha256": "bb730ab075f4e58a13657e164a24104c80c2afba42e731dde18204337d9cfa81",
+    "dailyNonTargetUnchanged": true,
+    "oldRuntimeReceiptsUnchanged": true
+  },
+  "constraints": {
+    "parent93MustRemainOpen": true,
+    "repeatPublicationAllowed": false,
+    "music99RemainsCancelled": true,
+    "music109And110RemainOnHold": true,
+    "game114ReservationUnchanged": {
+      "videoId": "7700862636182850822",
+      "scheduledForJst": "2026-10-26T19:15:00+09:00"
+    },
+    "earlyZeroIsNotPerformanceEvidence": true,
+    "followersGoalAchieved": false,
+    "fullPlaybackVerifiedThisObservation": false,
+    "subjectiveAudioAuditionThisObservation": false
+  },
+  "followup": "既存CTO→PM-ReviewGate→PM-Dispatcherへhandoff済み。native確認はPS1 ParseExceptionで未完了。本Issue内で修復/retry/guard弱化をしない。別の根拠付き修復と明示publisher指名後に同じ実IDだけを再確認し、再投稿しない。"
+}

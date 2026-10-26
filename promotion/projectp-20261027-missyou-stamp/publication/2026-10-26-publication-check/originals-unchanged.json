@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "baseCommit": "07e60c5134267126610e4369cf9cd59435929c6e",
+  "scope": "promotion/projectp-20261027-missyou-stamp/",
+  "originalTrackedFiles": 217,
+  "originalFilesUnchangedExceptReadme": 216,
+  "readme": {
+    "beforeSha256": "21709188f40f8afe6d3eac6cfceda93e1356f9f4d9fc685af48ec6660730a722",
+    "afterSha256": "695f96cddde3bdc5bb098613dd567a381d9bd5c8ee333cc5bf99722c6d282517",
+    "change": "末尾追記のみ。旧README全byteをprefixとして保持。"
+  },
+  "originalManifestSha256": "0266f56191bdcd93ea7d47a0bdf629678f2ceec0d616d2f042bad3aef87a29a0",
+  "criticalFiles": [
+    {
+      "file": "covers/missyou-stamp-cover.png",
+      "sha256": "4ed364eccfc00465f6f1f9face133db98bce3d5b759812ed3311cc3637918d4d"
+    },
+    {
+      "file": "qa/current-status.json",
+      "sha256": "9e5d07affd340b47cab6d89fc46669443934d047d45330a593544177f3dad55e"
+    },
+    {
+      "file": "qa/delivery-production-863.json",
+      "sha256": "30d5bddb8c5df1b10d74d0494087808e1cd45174246ba448810bd813ae6f891d"
+    },
+    {
+      "file": "qa/delivery.json",
+      "sha256": "71445c03bf8dcf7714322fbfc58e5c8aca44e6d7c98b8e79ef85508f67a66152"
+    },
+    {
+      "file": "qa/native-ui/native-ui.json",
+      "sha256": "a896ea5a98aa60869bde5994f75092e15ef339c98ebf94a46a1b0f40772217ac"
+    },
+    {
+      "file": "source/caption.txt",
+      "sha256": "f2b083f31e20ddbd8e22b64bd7ddd7773b4251772d609c5244788cec76cacf76"
+    },
+    {
+      "file": "videos/missyou-stamp.mp4",
+      "sha256": "a28dc095775670380fca6551f7c394a6d719601109b98999a4531e25f7213eee"
+    }
+  ],
+  "dailyUpdatedScope": "app100.publicationObservationClaim / app100.nativePublicationObservation のみ。既存公開metadata・他post・legacy top-levelを保持。",
+  "oldRuntimeRecords": 8,
+  "oldRuntimeRecordsUnchanged": true,
+  "productionVerificationRerun": false,
+  "productionVerificationReason": "制作再検証scriptは旧QAへ書き込むため実行せず、今回の追記JSON・SHA・scope・保全を検証。",
+  "deliverySyncPerformed": false,
+  "deliveryQualification": "今回のpublication追記はGit sourceのみ。既存F納品と過去delivery receiptを今回の追記へ拡張しない。"
+}
