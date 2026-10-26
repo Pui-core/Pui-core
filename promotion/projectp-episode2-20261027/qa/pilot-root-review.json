@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "issue": "Pui-core/-#117",
+  "stage": "段階1 ep2 pilot (約10秒)",
+  "engine": "claude (Coder1, 引継ぎ元 codex capacity error)",
+  "status": "PASS_PILOT_PENDING_ROOT_VISUAL_REVIEW",
+  "decision_needed": "Rootが実画像を目視し、full収録GOを判断する。GO前にfull captureは行わない。",
+  "source": {
+    "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+    "gameVersion": "0.12.0",
+    "godot": "4.6.3-stable (official)",
+    "core_files_checked": 72,
+    "changed_core": [],
+    "product_tree": "/home/pui/tmp/projectp117-capture-20261026/product (pinned archive EMBERWAKE-71584a6.tar.gz より展開, project.godot pristine 444, .godot import cache生成済)"
+  },
+  "continuation_save": {
+    "source": "/home/pui/tmp/projectp112-capture-20261026/full01-userdata/godot/app_userdata/EMBERWAKE/emberwake-campaign-1.0-jump-1.1.json",
+    "expected_sha256": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+    "seeded_sha256": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+    "save_sha256_before_scene": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+    "save_sha256_after": "4bbe2b36514d17b8e6d008e8b4574b0cb33cbe4dc8b5704ecf06034d7e76a13f",
+    "profile_completed_before_input": [
+      1
+    ],
+    "selected_episode_before_input": 1,
+    "note": "既知112私有saveをbyte一致で専用117 userdataへseed。未知save/上書きは拒否。製品のexisting-saveガードは一般無効化せず、本pilot専用の継続経路のみ。"
+  },
+  "userdata_proof": {
+    "actual_save_path": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04-userdata/godot/app_userdata/EMBERWAKE/emberwake-campaign-1.0-jump-1.1.json",
+    "actual_user_data_dir": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04-userdata/godot/app_userdata/EMBERWAKE",
+    "backup_existed_before_scene": false,
+    "expected_data_root": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04-userdata",
+    "expected_save_sha256": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+    "main_scene_instantiated": true,
+    "profile_completed_before_input": [
+      1
+    ],
+    "save_existed_before_scene": true,
+    "save_sha256_before_scene": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+    "selected_episode_before_input": 1,
+    "xdg_cache_home": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04-cache",
+    "xdg_config_home": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04-config",
+    "xdg_data_home": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04-userdata"
+  },
+  "godot_userpath": {
+    "expected_data_root": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04-userdata",
+    "actual_user_data_dir": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04-userdata/godot/app_userdata/EMBERWAKE",
+    "actual_save_path": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04-userdata/godot/app_userdata/EMBERWAKE/emberwake-campaign-1.0-jump-1.1.json"
+  },
+  "input_method": "Actual focused-GUI InputEventKey (TAB/ENTER) only; no start_game/dialogue/progress/player/clock calls or writes",
+  "ordinary_ui_path": [
+    "title(1章1話, 1:1✓, 失った記憶1/15)",
+    "episode grid \"1:2\" を Focus/TAB→Enter で押下 → select_episode(2)",
+    "selected_episode=2, 見出し 1章2話 ふたりの合図",
+    "\"物語を進める\" 押下 → 会話(state=story)",
+    "会話 3ページ(アッシュ/ルミ/アッシュ) 次へ→次へ→出発",
+    "state=play 到達, 目標\"灯の通り道を組み替え…\", HUD 1:2 OUR LITTLE SIGNAL, EXPLORE 00:00.00"
+  ],
+  "final": {
+    "selected_episode": 2,
+    "state": "play",
+    "frame_count": 300,
+    "fps": 30
+  },
+  "key_event_frames": {
+    "ordinary-title": 0,
+    "before-button-1:2": 50,
+    "after-button-1:2": 55,
+    "after-episode2-select": 65,
+    "before-button-物語を進める": 65,
+    "after-button-物語を進める": 70,
+    "actual-intro-page": 70,
+    "before-button-次へ": 110,
+    "after-button-次へ": 115,
+    "before-button-出発": 200,
+    "after-button-出発": 205,
+    "ordinary-depart-play": 205
+  },
+  "artifacts": {
+    "receipt": {
+      "path": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04/capture.json",
+      "exists": true
+    },
+    "launch": {
+      "path": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04-launch.json",
+      "exists": true
+    },
+    "log": {
+      "path": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04.log",
+      "exists": true
+    },
+    "frames_dir": {
+      "path": "/home/pui/tmp/projectp117-capture-20261026/ep2pilot04/frames",
+      "count": 300
+    },
+    "driver": {
+      "path": "/home/pui/tmp/projectp117-capture-20261026/source-117/capture-ep2-pilot.gd",
+      "sha256": "582317fa209d8f083f149c4b65bfa9247d184c16df2c108c4d50ee86c3a8588e"
+    },
+    "runner": {
+      "path": "/home/pui/tmp/projectp117-capture-20261026/source-117/run-ep2-pilot.mjs"
+    }
+  },
+  "review_images": {
+    "title_ep1_cleared": {
+      "path": "/home/pui/tmp/projectp117-capture-20261026/pilot-review/images/frame-000030.png",
+      "exists": true
+    },
+    "episode2_selected": {
+      "path": "/home/pui/tmp/projectp117-capture-20261026/pilot-review/images/frame-000060.png",
+      "exists": true
+    },
+    "conversation_depart": {
+      "path": "/home/pui/tmp/projectp117-capture-20261026/pilot-review/images/frame-000185.png",
+      "exists": true
+    },
+    "ep2_gameplay_start": {
+      "path": "/home/pui/tmp/projectp117-capture-20261026/pilot-review/images/frame-000210.png",
+      "exists": true
+    },
+    "ep2_gameplay_late": {
+      "path": "/home/pui/tmp/projectp117-capture-20261026/pilot-review/images/frame-000299.png",
+      "exists": true
+    }
+  },
+  "facts": [
+    "実InputEventKey(TAB/ENTER)と実physicsのみ。内部start_game/会話advance直呼び・座標/進行/時計書換えなし。",
+    "core72 before/after SHA同一(変更0)。save SHAも前後で f5eae6b 同一。",
+    "ゲームscene/logic未改変。project.godotはpristine(444)。",
+    "Godot 4.6.3-stable (official), render 1920x1080, logical 480x270, fps30, 300フレーム(≈10s)。",
+    "dashはep2で開始時から可(» SHIFT / X 表示)。EXPLORE 00:00.00=移動入力前でタイマー未開始。"
+  ],
+  "unverified": [
+    "ふたりの合図の任意2枚分岐→dash→通常経路合流→結果/手帳は未収録(full段階)。",
+    "急な二段近道をダッシュで渡れるかの実挙動は未検証。到達/転落/合流/結果は実収録に従う。",
+    "HUD clockはPNGエンコード待ち込みで、RTA/PB/人間初見の証拠ではない。",
+    "音声はDummyドライバ、ゲーム音は未収録/未検証。",
+    "横動画/Short/TikTok・納品・公開はRoot GO後の後続段階。"
+  ],
+  "next_action": "Root が上記review_imagesを目視しGOを出せば、full収録(スイッチ/任意分岐→dash→合流→結果/手帳)を別起動で依頼。"
+}
