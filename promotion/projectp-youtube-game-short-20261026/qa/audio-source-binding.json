@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "voiceAndSfxOnlyFromIndependentOriginals": true,
+  "rawVoiceHashes": [
+    "2b3ca20a7e268d5392ecbbbba1dfa27dc345916bb0ffa486f2e8cab7510b5660",
+    "eb90046ab6565e28c6c5cd6efd962e1a54f292d693ff91121e962b06a9ac9484",
+    "856ebcd9f114bee71d321b67b921e136a25cd2c1c40b1b31aba7ddefa23e7835"
+  ],
+  "rawSfxSha256": "b02714e93a1c82995772d65c53569943f4122f137256384e23663fbc842a97ca",
+  "nativeSoundCraftSourceSha256": "2387bf313b689b21467cbffb0b17195ff70ab7f4e2fb8c9bf244f85bbd74101d",
+  "oldLicensedMusicUsed": false,
+  "voicePositions": [
+    0.92,
+    5.95,
+    15.4
+  ],
+  "voiceDurations": [
+    1.8026666666666666,
+    1.664,
+    2.1013333333333333
+  ],
+  "voiceEnds": [
+    2.7226666666666666,
+    7.614,
+    17.501333333333335
+  ],
+  "voiceFadeApplied": false,
+  "sfxShiftSeconds": 0.8,
+  "voiceGain": 1.35,
+  "sfxGain": 0.85,
+  "commonMasterGainDb": 3,
+  "musicOnlyDuck": {
+    "baseGain": 0.45,
+    "voiceGain": 0.12,
+    "ranges": [
+      {
+        "start": 0.92,
+        "end": 2.7226666666666666,
+        "attack": 0.06,
+        "release": 0.2
+      },
+      {
+        "start": 5.95,
+        "end": 7.614,
+        "attack": 0.06,
+        "release": 0.2
+      },
+      {
+        "start": 15.4,
+        "end": 17.501333333333335,
+        "attack": 0.06,
+        "release": 0.2
+      }
+    ]
+  },
+  "musicOnlyTailFade": [
+    19.8,
+    20.8
+  ],
+  "voiceSfxSha256": "d941b94d79042c047b6cd053a106486193ee0eacca2b3e05a04aa9872eb6db01",
+  "musicBedSha256": "7f76dd59dba41affaeabd299f3d077227cf3e1d89f29abd4a25979ac3a174641",
+  "referenceMixSha256": "9d1969d544950e13b6f72f24ebe205f076162ffb12bf5c11d2b50bac6eb8467d",
+  "subjectiveWholeAudition": false
+}

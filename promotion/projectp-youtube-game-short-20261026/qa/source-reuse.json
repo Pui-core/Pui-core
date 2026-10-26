@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "sourceProductionIssue": 97,
+  "newProductionIssue": 111,
+  "checkedInputs": [
+    {
+      "file": "media/game-body-silent.mov",
+      "sourceFile": "media/core-puzzle-picture.mov",
+      "sha256": "4def67a55f04e40555e6c30b9e2a974992c3b173a027c3817e17989af8fa89c4",
+      "bytes": 437534065,
+      "manifestMatch": true
+    },
+    {
+      "file": "media/voice-1.wav",
+      "sourceFile": "media/voice-1.wav",
+      "sha256": "2b3ca20a7e268d5392ecbbbba1dfa27dc345916bb0ffa486f2e8cab7510b5660",
+      "bytes": 346156,
+      "manifestMatch": true
+    },
+    {
+      "file": "media/voice-2.wav",
+      "sourceFile": "media/voice-2.wav",
+      "sha256": "eb90046ab6565e28c6c5cd6efd962e1a54f292d693ff91121e962b06a9ac9484",
+      "bytes": 319532,
+      "manifestMatch": true
+    },
+    {
+      "file": "media/voice-3.wav",
+      "sourceFile": "media/voice-3.wav",
+      "sha256": "856ebcd9f114bee71d321b67b921e136a25cd2c1c40b1b31aba7ddefa23e7835",
+      "bytes": 403500,
+      "manifestMatch": true
+    },
+    {
+      "file": "media/editorial-sfx.wav",
+      "sourceFile": "media/editorial-sfx.wav",
+      "sha256": "b02714e93a1c82995772d65c53569943f4122f137256384e23663fbc842a97ca",
+      "bytes": 5760044,
+      "manifestMatch": true
+    },
+    {
+      "file": "media/source-cover.pcraft",
+      "sourceFile": "covers/core-puzzle-cover.pcraft",
+      "sha256": "d7da9d7c8c793e9210ab5639e34282ad1d302386d6cebe3eaf322e5cb6c6d63e",
+      "bytes": 1213956,
+      "manifestMatch": true
+    },
+    {
+      "file": "media/bgm-source.wav",
+      "sourceIssue": 108,
+      "sha256": "2387bf313b689b21467cbffb0b17195ff70ab7f4e2fb8c9bf244f85bbd74101d",
+      "bytes": 6336104,
+      "nativeSoundCraftFinal": true
+    }
+  ],
+  "sourceSilentBodyBinding": {
+    "videoSha256": "cb68c46bf1f6530a85764a895f58265cb852813a3d025415774046d967bdfdfd",
+    "effectcraftSha256": "9901bdc2ae4c97896b1aaf270bca9c066330ad5263020acc79401f52a31b11cc",
+    "filmcraftSha256": "4a67fc9bedeb5976763e708961ea17b08309ccf7ba28abfad06a023ea3858ecc",
+    "masterSha256": "4def67a55f04e40555e6c30b9e2a974992c3b173a027c3817e17989af8fa89c4",
+    "mixSha256": "843813d5d7af90c715f07b3871a419e594c86e5997655de5e5ccfac12b7bf510",
+    "music": false,
+    "state": "PROVISIONAL_PENDING_ACTUAL_POPULAR_SOUND_AND_NEW_MODEL_UI"
+  },
+  "pictureSourceHasAudioStream": false,
+  "sourceNativeCoreCueFileSha256": "9b1049c039cf0327d2e599b68ba16d181a54ce5dce8957fe0de999ebf922acc4",
+  "sourceMocSha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e",
+  "introSourceFrame": 150,
+  "introActualCoreCue": {
+    "frame": 150,
+    "time": 5,
+    "rms": 0,
+    "mouth": 0,
+    "eye": 1,
+    "headX": 1.2310589002586678,
+    "headY": -1.4003950051282164,
+    "headZ": 0.2662988599870806,
+    "bodyX": 0.2719508785793411,
+    "breath": 0.24395177735205964
+  },
+  "bodyTimeShiftFrames": 24,
+  "bodyTimeShiftSeconds": 0.8,
+  "voiceAndSfxTimeShiftSeconds": 0.8,
+  "coreRegenerated": false,
+  "licensedMusicCopied": false,
+  "inputMediaModified": false
+}

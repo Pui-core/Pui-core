@@ -1,0 +1,80 @@
+{
+  "sha256": "4def67a55f04e40555e6c30b9e2a974992c3b173a027c3817e17989af8fa89c4",
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "prores",
+        "codec_long_name": "Apple ProRes (iCodec Pro)",
+        "profile": "4444",
+        "codec_type": "video",
+        "codec_tag_string": "ap4h",
+        "codec_tag": "0x68347061",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1080,
+        "coded_height": 1920,
+        "has_b_frames": 0,
+        "pix_fmt": "yuv444p12le",
+        "level": -99,
+        "refs": 1,
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/30",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 600,
+        "duration": "20.000000",
+        "bit_rate": "175012411",
+        "bits_per_raw_sample": "12",
+        "nb_frames": "600",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Apple ProRes 4444"
+        }
+      }
+    ],
+    "format": {
+      "filename": "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\game-body-silent.mov",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "20.000000",
+      "size": "437534065",
+      "bit_rate": "175013626",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "qt  ",
+        "minor_version": "512",
+        "compatible_brands": "qt  "
+      }
+    }
+  }
+}

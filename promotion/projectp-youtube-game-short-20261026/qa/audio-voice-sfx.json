@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-26T04:46:08.367Z",
+  "exit": 0,
+  "tool": "ffmpeg.exe",
+  "args": [
+    "-hide_banner",
+    "-y",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\editorial-sfx.wav",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\voice-1.wav",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\voice-2.wav",
+    "-i",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\voice-3.wav",
+    "-filter_complex",
+    "[0:a]adelay=800|800,volume=0.85[fx];[1:a]adelay=920|920,volume=1.35[v0];[2:a]adelay=5950|5950,volume=1.35[v1];[3:a]adelay=15400|15400,volume=1.35[v2];[fx][v0][v1][v2]amix=inputs=4:normalize=0,apad,atrim=duration=20.8,volume=3dB[voicefx]",
+    "-map",
+    "[voicefx]",
+    "-c:a",
+    "pcm_s24le",
+    "-ar",
+    "48000",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\voice-sfx.wav"
+  ],
+  "stdout": "",
+  "stderr": "[aist#0:0/pcm_s24le @ 000001829f53e880] Guessed Channel Layout: stereo\r\nInput #0, wav, from 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\editorial-sfx.wav':\r\n  Duration: 00:00:20.00, bitrate: 2304 kb/s\r\n  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\n[aist#1:0/pcm_s16le @ 000001829f544940] Guessed Channel Layout: stereo\r\nInput #1, wav, from 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\voice-1.wav':\r\n  Duration: 00:00:01.80, bitrate: 1536 kb/s\r\n  Stream #1:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\n[aist#2:0/pcm_s16le @ 000001829fa31100] Guessed Channel Layout: stereo\r\nInput #2, wav, from 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\voice-2.wav':\r\n  Duration: 00:00:01.66, bitrate: 1536 kb/s\r\n  Stream #2:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\n[aist#3:0/pcm_s16le @ 000001829fa88540] Guessed Channel Layout: stereo\r\nInput #3, wav, from 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\voice-3.wav':\r\n  Duration: 00:00:02.10, bitrate: 1536 kb/s\r\n  Stream #3:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s\r\nStream mapping:\r\n  Stream #0:0 (pcm_s24le) -> adelay:default\r\n  Stream #1:0 (pcm_s16le) -> adelay:default\r\n  Stream #2:0 (pcm_s16le) -> adelay:default\r\n  Stream #3:0 (pcm_s16le) -> adelay:default\r\n  volume:default -> Stream #0:0 (pcm_s24le)\r\nPress [q] to stop, [?] for help\r\nOutput #0, wav, to 'F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\media\\voice-sfx.wav':\r\n  Metadata:\r\n    ISFT            : Lavf62.3.100\r\n  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s\r\n    Metadata:\r\n      encoder         : Lavc62.11.100 pcm_s24le\r\n[out#0/wav @ 000001829f540700] video:0KiB audio:5850KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.001703%\r\nsize=    5850KiB time=00:00:20.80 bitrate=2304.0kbits/s speed=2.44e+03x elapsed=0:00:00.00    \r\n"
+}

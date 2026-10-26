@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-26T04:48:20.331Z",
+  "status": "PASS_TECHNICAL_NATIVE_UI_PUBLICATION_PENDING",
+  "videoSha256": "4c8932d42682c7cdacfb2a1f3f30d935c7daaa04d416162169bd3d46ae0a226d",
+  "wholeAvDecode": true,
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 624,
+    "duration": 20.8,
+    "audioCodec": "aac",
+    "sampleRate": 48000
+  },
+  "levels": {
+    "integratedLufs": -19.5,
+    "truePeakDbfs": -1.3
+  },
+  "maxPcmRoleSumError": 0,
+  "aacSignalToErrorDb": 33.28913744253682,
+  "aacReferenceSync": [
+    {
+      "kind": "voice 1 full raw sample range",
+      "begin": 0.92,
+      "end": 2.7226666666666666,
+      "lagSamples": 0,
+      "correlation": 0.999717990587264,
+      "gainDb": -0.01233487676956179
+    },
+    {
+      "kind": "voice 1 end incl post silence",
+      "begin": 2.3226666666666667,
+      "end": 2.7226666666666666,
+      "lagSamples": 0,
+      "correlation": 0.9999319457135386,
+      "gainDb": -0.0018084659500290788
+    },
+    {
+      "kind": "voice 2 full raw sample range",
+      "begin": 5.95,
+      "end": 7.614,
+      "lagSamples": 0,
+      "correlation": 0.9995083504591836,
+      "gainDb": -0.01862543200350345
+    },
+    {
+      "kind": "voice 2 end incl post silence",
+      "begin": 7.214,
+      "end": 7.614,
+      "lagSamples": 0,
+      "correlation": 0.9990297554533344,
+      "gainDb": -0.06668379215090613
+    },
+    {
+      "kind": "voice 3 full raw sample range",
+      "begin": 15.4,
+      "end": 17.501333333333335,
+      "lagSamples": 0,
+      "correlation": 0.99987274641676,
+      "gainDb": -0.010198142985416249
+    },
+    {
+      "kind": "voice 3 end incl post silence",
+      "begin": 17.101333333333333,
+      "end": 17.501333333333335,
+      "lagSamples": 0,
+      "correlation": 0.9996636914317282,
+      "gainDb": -0.028838989666283076
+    },
+    {
+      "kind": "editorial SFX and changed picture anchor",
+      "begin": 5.55,
+      "end": 5.75,
+      "lagSamples": 0,
+      "correlation": 0.9998633538369736,
+      "gainDb": -0.021137962095886077
+    }
+  ],
+  "gamePictureSourceSsim": [
+    {
+      "outputSeconds": 0,
+      "sourceSeconds": 5,
+      "gameRegionSsim": 0.993792,
+      "comparison": "exact separately decoded PNG frames in matching RGB, not a pipelined two-video average"
+    },
+    {
+      "outputSeconds": 1,
+      "sourceSeconds": 0.19999999999999996,
+      "gameRegionSsim": 0.992592,
+      "comparison": "exact separately decoded PNG frames in matching RGB, not a pipelined two-video average"
+    },
+    {
+      "outputSeconds": 5.6,
+      "sourceSeconds": 4.8,
+      "gameRegionSsim": 0.987594,
+      "comparison": "exact separately decoded PNG frames in matching RGB, not a pipelined two-video average"
+    },
+    {
+      "outputSeconds": 6.5,
+      "sourceSeconds": 5.7,
+      "gameRegionSsim": 0.993549,
+      "comparison": "exact separately decoded PNG frames in matching RGB, not a pipelined two-video average"
+    },
+    {
+      "outputSeconds": 15.4,
+      "sourceSeconds": 14.6,
+      "gameRegionSsim": 0.989405,
+      "comparison": "exact separately decoded PNG frames in matching RGB, not a pipelined two-video average"
+    },
+    {
+      "outputSeconds": 19.5,
+      "sourceSeconds": 18.7,
+      "gameRegionSsim": 0.985433,
+      "comparison": "exact separately decoded PNG frames in matching RGB, not a pipelined two-video average"
+    }
+  ],
+  "voiceEnds": [
+    {
+      "voice": 1,
+      "start": 0.92,
+      "duration": 1.8026666666666666,
+      "end": 2.7226666666666666
+    },
+    {
+      "voice": 2,
+      "start": 5.95,
+      "duration": 1.664,
+      "end": 7.614
+    },
+    {
+      "voice": 3,
+      "start": 15.4,
+      "duration": 2.1013333333333333,
+      "end": 17.501333333333335
+    }
+  ],
+  "voiceFadeApplied": false,
+  "onlyMusicTailFades": true,
+  "introSilentFrozenOriginalCoreMouth": 0,
+  "bodyAndVoiceShiftFrames": 24,
+  "originalBodyCoreFramesReused": 600,
+  "newCoreRenders": 0,
+  "oldLicensedMusicIncluded": false,
+  "relatedVideoPromised": false,
+  "directSubjectiveAudition": false,
+  "publicConfirmed": false
+}

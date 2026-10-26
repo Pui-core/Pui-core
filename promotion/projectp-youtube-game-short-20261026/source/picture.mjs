@@ -1,0 +1,24 @@
+import fs from 'node:fs';
+import {file,np,EC,run,save,parse,hash} from './native.mjs';
+const edit=JSON.parse(fs.readFileSync(file('source/edit.json'),'utf8'));
+const config={...edit,body:np(file(edit.bodySourceFile)),compName:'ProjectP actual game short'};
+const jsx=`app.newProject();app.beginUndoGroup('Actual game result first, body source preserved');var E=${JSON.stringify(config)},boxes=[];
+function r(id,p){return app.run(id,p||{});}function set(l,p,v){r('prop.set',{layer:l,path:p,value:v});}function key(l,p,t,v){r('prop.addKey',{layer:l,path:p,time:Math.round(t*30)/30,timeBase:'comp',value:v});}function timing(l,a,b){r('layer.timing',{layers:[l],in:a,out:b});}
+function rect(n,w,h,x,y,a,b){var l=r('layer.newShape',{name:n,kind:'rect',size:[w,h],position:[x,y],fill:'#08151E',strokeWidth:0}).layer;timing(l,a,b);return l;}
+function txt(n,str,x,y,size,color,a,b){var l=r('layer.newText',{name:n,text:str,font:'Meiryo',style:'Bold',size:size,fill:color,position:[x,y],justify:'center'}).layer;var o=app.project.activeItem.layer(n),q=o.sourceRectAtTime(a,false);if(q.width>530){size=Math.floor(size*530/q.width);r('layer.setText',{layer:l,size:size});q=o.sourceRectAtTime(a,false);}set(l,'transform/anchor',[q.left+q.width/2,q.top+q.height/2,0]);set(l,'transform/position',[x,y,0]);timing(l,a,b);r('layer.setSwitch',{layers:[l],switch:'motionBlur',value:false});boxes.push({name:n,text:str,center:[x,y],width:q.width,height:q.height,in:a,out:b});return l;}
+var imported=r('file.import',{paths:[E.body]});if(imported.errors.length)throw Error(JSON.stringify(imported.errors));var movie=imported.items[0];
+var main=r('comp.new',{name:E.compName,width:1080,height:1920,frameRate:30,duration:E.durationSeconds,background:'#08151E'}).comp;r('file.projectSettings',{workingSpace:'rec709',outputSpace:'rec709',bitDepth:8});
+function bodyLayer(name,a,b,sa,sb){var l=r('layer.addItem',{item:movie,time:a,duration:b-a}).layer;r('layer.rename',{layer:l,name:name});set(l,'transform/anchor',[540,960,0]);set(l,'transform/position',[540,960,0]);set(l,'transform/scale',[100,100,100]);r('layer.enableTimeRemap',{layers:[l],value:true});key(l,'timeRemap',a,sa);key(l,'timeRemap',b,sb);timing(l,a,b);r('layer.setSwitch',{layers:[l],switch:'audio',value:false});r('layer.setSwitch',{layers:[l],switch:'motionBlur',value:false});return l;}
+var intro=bodyLayer('Result freeze - original Core mouth zero',0,E.introSeconds,E.introSourceSeconds,E.introSourceSeconds);
+var body=bodyLayer('Original silent game and Core body +24frames',E.bodyOffsetSeconds,E.durationSeconds,0,E.bodySeconds);
+var labels=[{a:0,b:E.introSeconds,one:'横並びが、',two:'階段へ。',body:'どうして、こうなる？'},{a:E.introSeconds,b:E.openingQuestionEndSeconds,one:'この道、',two:'どうつなぐ？',body:'芯石を、差し込んでみる。'},{a:E.endCardStartSeconds,b:E.durationSeconds,one:'つぎの仕掛けも、',two:'見ていく？',body:'チャンネル登録で、制作のつづきを。'}];
+for(var i=0;i<labels.length;i++){var q=labels[i];rect('Readable header plate '+i,598,650,299,325,q.a,q.b);txt('Game header one '+i,q.one,310,300,64,'#F3E7CA',q.a,q.b);txt('Game header two '+i,q.two,310,405,70,'#EDB468',q.a,q.b);txt('Game header detail '+i,q.body,310,510,28,'#C3D2D0',q.a,q.b);}
+app.endUndoGroup();writeLn(JSON.stringify({comp:main,compName:E.compName,introLayer:intro,bodyLayer:body,boxes:boxes,duration:E.durationSeconds,totalFrames:E.totalFrames,introSourceFrame:E.introSourceFrame,bodySourceFrameShift:E.introFrames,voiceFrameShift:E.introFrames,licensedMusicInPicture:false}));`;
+fs.writeFileSync(file('source/composition.jsx'),jsx);
+const project=file('projects/game-short.ecproj');
+const built=parse((await run(EC,['--empty','script',np(file('source/composition.jsx')),'--save-as',np(project),'--json'],'effectcraft-build.json')).stdout);
+if(!built.ok)throw Error(JSON.stringify(built));save('qa/layout.json',parse(built.output));
+const audit=parse((await run(EC,['--project',np(project),'run','footage.check','{"wait":true}','footage.missing','{}','--json'],'effectcraft-check.json')).stdout);
+const missing=(Array.isArray(audit)?audit:audit.result)?.find(x=>x.command==='footage.missing')?.result?.missing;if(!Array.isArray(missing)||missing.length)throw Error('Missing picture media');
+for(const time of[0,.4,.8,2,5.5666666667,5.6,7.8,15.4,19.5])await run(EC,['--project',np(project),'render-frame','--comp',config.compName,'--time',String(time),'--out',np(file('qa/preview-'+time.toFixed(3)+'.png')),'--json'],'preview-'+time.toFixed(3)+'.json');
+save('qa/picture-source-binding.json',{effectcraft:'projects/game-short.ecproj',effectcraftSha256:hash(project),compositionSha256:hash(file('source/composition.jsx')),silentBodySha256:hash(file(edit.bodySourceFile)),introSourceFrame:150,introModelMouth:0,bodyAndVoiceShiftFrames:24,coreReRendered:false,pictureDuration:20.8,actualGameSource:'Original v0.11.0 EXPLORE capture with freeze/comparison edits',noRtaClaim:true,noRelatedVideoPromised:true,publicConfirmed:false});

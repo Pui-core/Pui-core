@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-26T04:46:28.554Z",
+  "exit": 0,
+  "tool": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\projects\\game-short.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\":\"F:\\\\Videos\\\\ProjectP-YouTube-Game-Short-2026-10-26\\\\revision-01\\\\videos\\\\game-short.mp4\",\"format\":\"h264\",\"audio\":true,\"audioCodec\":\"aac\",\"bitrateMode\":\"crf\",\"crf\":17,\"hardwareEncoding\":\"off\",\"gpuRendering\":\"off\",\"wait\":true}"
+  ],
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"F:\\\\Videos\\\\ProjectP-YouTube-Game-Short-2026-10-26\\\\revision-01\\\\videos\\\\game-short.mp4\",\n  \"result\": {\n    \"bytes\": 5830716,\n    \"frames\": 624,\n    \"path\": \"F:\\\\Videos\\\\ProjectP-YouTube-Game-Short-2026-10-26\\\\revision-01\\\\videos\\\\game-short.mp4\",\n    \"render_fps\": 33.78771492763446,\n    \"seconds\": 18.468251\n  }\n}\n",
+  "stderr": ""
+}

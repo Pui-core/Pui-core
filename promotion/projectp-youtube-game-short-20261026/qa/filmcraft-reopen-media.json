@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-26T04:46:09.666Z",
+  "exit": 0,
+  "tool": "filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\projects\\game-short.fcproj",
+    "exec",
+    "media.status"
+  ],
+  "stdout": "[\n  {\n    \"identity\": {\n      \"fingerprint\": \"89fc85f7fd85b98c\",\n      \"size\": 453571009\n    },\n    \"item\": 5,\n    \"name\": \"game-short-picture.mov\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-YouTube-Game-Short-2026-10-26\\\\revision-01\\\\media\\\\game-short-picture.mov\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"92af12d9ec604a5c\",\n      \"size\": 5990502\n    },\n    \"item\": 6,\n    \"name\": \"voice-sfx.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-YouTube-Game-Short-2026-10-26\\\\revision-01\\\\media\\\\voice-sfx.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  },\n  {\n    \"identity\": {\n      \"fingerprint\": \"f0ab9fd541c72bad\",\n      \"size\": 5990502\n    },\n    \"item\": 7,\n    \"name\": \"music-bed.wav\",\n    \"path\": \"F:\\\\Videos\\\\ProjectP-YouTube-Game-Short-2026-10-26\\\\revision-01\\\\media\\\\music-bed.wav\",\n    \"proxy\": null,\n    \"status\": \"online\"\n  }\n]\n",
+  "stderr": ""
+}

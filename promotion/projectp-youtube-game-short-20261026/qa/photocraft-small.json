@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-26T04:42:38.228Z",
+  "exit": 0,
+  "tool": "photocraft-cli.exe",
+  "args": [
+    "run",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\covers\\game-short-cover.pcraft",
+    "--cmd",
+    "image.imageSize",
+    "--params",
+    "{\"width\":270,\"height\":480,\"resample\":\"lanczos\"}",
+    "--out",
+    "F:\\Videos\\ProjectP-YouTube-Game-Short-2026-10-26\\revision-01\\qa\\cover-small.png"
+  ],
+  "stdout": "{\"command\":\"image.imageSize\",\"result\":{\"height\":480,\"width\":270}}\n",
+  "stderr": "warning: 12 layer(s) flattened; layers, masks and blend modes are not kept\n"
+}
