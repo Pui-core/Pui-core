@@ -1,0 +1,374 @@
+{
+  "status": "REVIEW_SAMPLE_ONLY_NOT_FORMAL600",
+  "duration": 76,
+  "frames": 2280,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "shots": [
+    {
+      "id": "hook-jump1",
+      "episode": 1,
+      "sourceStart": 452,
+      "sourceEnd": 512,
+      "start": 0,
+      "end": 60,
+      "kind": "play"
+    },
+    {
+      "id": "hook-jump3",
+      "episode": 1,
+      "sourceStart": 557,
+      "sourceEnd": 617,
+      "start": 60,
+      "end": 120,
+      "kind": "play"
+    },
+    {
+      "id": "hook-jump5",
+      "episode": 1,
+      "sourceStart": 791,
+      "sourceEnd": 851,
+      "start": 120,
+      "end": 180,
+      "kind": "play"
+    },
+    {
+      "id": "promise",
+      "episode": 1,
+      "sourceStart": 145,
+      "sourceEnd": 265,
+      "start": 180,
+      "end": 300,
+      "kind": "story",
+      "heading": "最初の約束",
+      "lines": [
+        "アッシュ：当たり前だろ。",
+        "絶対迎えに行く。"
+      ]
+    },
+    {
+      "id": "light1",
+      "episode": 1,
+      "sourceStart": 650,
+      "sourceEnd": 710,
+      "start": 300,
+      "end": 360,
+      "kind": "play"
+    },
+    {
+      "id": "toward-light2",
+      "episode": 1,
+      "sourceStart": 900,
+      "sourceEnd": 960,
+      "start": 360,
+      "end": 420,
+      "kind": "play"
+    },
+    {
+      "id": "light2",
+      "episode": 1,
+      "sourceStart": 984,
+      "sourceEnd": 1044,
+      "start": 420,
+      "end": 480,
+      "kind": "play"
+    },
+    {
+      "id": "light3-result-transition",
+      "episode": 1,
+      "sourceStart": 1283,
+      "sourceEnd": 1343,
+      "start": 480,
+      "end": 540,
+      "kind": "play"
+    },
+    {
+      "id": "first-result",
+      "episode": 1,
+      "sourceStart": 1343,
+      "sourceEnd": 1553,
+      "start": 540,
+      "end": 750,
+      "kind": "result",
+      "heading": "灯をつけた、そのあとで。",
+      "lines": [
+        "アッシュ：あの公園で、何をしてたんだっけ。",
+        "ルミ：……私の名前は、まだわかる？",
+        "アッシュ：ルミ。君だけは、忘れない。"
+      ]
+    },
+    {
+      "id": "first-memory",
+      "episode": 1,
+      "sourceStart": 1683,
+      "sourceEnd": 1803,
+      "start": 750,
+      "end": 870,
+      "kind": "memory",
+      "heading": "失った記憶",
+      "lines": [
+        "公園でルミと",
+        "走り回った午後。"
+      ],
+      "observed": "失った記憶：公園でルミと走り回った午後。"
+    },
+    {
+      "id": "branch-before",
+      "episode": 2,
+      "sourceStart": 640,
+      "sourceEnd": 715,
+      "start": 870,
+      "end": 945,
+      "kind": "play"
+    },
+    {
+      "id": "branch-approach",
+      "episode": 2,
+      "sourceStart": 730,
+      "sourceEnd": 820,
+      "start": 945,
+      "end": 1035,
+      "kind": "play"
+    },
+    {
+      "id": "branch-unbroken",
+      "episode": 2,
+      "sourceStart": 820,
+      "sourceEnd": 957,
+      "start": 1035,
+      "end": 1172,
+      "kind": "branch",
+      "continuousAtoBtoMerge": true
+    },
+    {
+      "id": "branch-answer",
+      "episode": 2,
+      "sourceStart": 957,
+      "sourceEnd": 1105,
+      "start": 1172,
+      "end": 1320,
+      "kind": "play"
+    },
+    {
+      "id": "rain-wind",
+      "episode": 4,
+      "sourceStart": 837,
+      "sourceEnd": 1017,
+      "start": 1320,
+      "end": 1500,
+      "kind": "play",
+      "context": "雨の街。空中で受ける向かい風。"
+    },
+    {
+      "id": "voice-result",
+      "episode": 8,
+      "sourceStart": 1382,
+      "sourceEnd": 1622,
+      "start": 1500,
+      "end": 1740,
+      "kind": "result",
+      "heading": "声は届く。なのに。",
+      "lines": [
+        "ルミ：アッシュ、聞こえる？",
+        "アッシュ：聞こえる。……ごめん、君は、誰？",
+        "ルミ：あなたを、待っている人。"
+      ]
+    },
+    {
+      "id": "voice-memory",
+      "episode": 8,
+      "sourceStart": 1752,
+      "sourceEnd": 1872,
+      "start": 1740,
+      "end": 1860,
+      "kind": "memory",
+      "heading": "失った記憶",
+      "lines": [
+        "呼びかける声を、",
+        "ルミの声だと感じ取る親しさ。"
+      ],
+      "observed": "失った記憶：呼びかける声を、ルミの声だと感じ取る親しさ。"
+    },
+    {
+      "id": "sequence-approach",
+      "episode": 9,
+      "sourceStart": 1340,
+      "sourceEnd": 1400,
+      "start": 1860,
+      "end": 1920,
+      "kind": "play"
+    },
+    {
+      "id": "sequence-memory",
+      "episode": 9,
+      "sourceStart": 1757,
+      "sourceEnd": 1877,
+      "start": 1920,
+      "end": 2040,
+      "kind": "memory",
+      "heading": "失った記憶",
+      "lines": [
+        "ルミと過ごした日々が、",
+        "いつの出来事だったかという",
+        "連なり。"
+      ],
+      "observed": "失った記憶：ルミと過ごした日々が、いつの出来事だったかという連なり。",
+      "originalRightClipping": true
+    },
+    {
+      "id": "closing",
+      "episode": null,
+      "sourceStart": 0,
+      "sourceEnd": 240,
+      "start": 2040,
+      "end": 2280,
+      "kind": "closing"
+    }
+  ],
+  "voices": [
+    {
+      "id": "opening",
+      "at": 0.1,
+      "end": 5.5201675921791,
+      "text": "助けるために進むほど、思い出を失う。灯の先で、何が残るのでしょうか。",
+      "caption": "助けるために進むほど、思い出を失う。\n灯の先で、何が残る？",
+      "kind": "commentary",
+      "file": "voice-01.wav",
+      "predictedDuration": 5.420167592179101,
+      "speedScale": 1.06,
+      "sha256": "84ccfcb1f8d8c11b5e5c4f083e1357ddc1009b1131831dbf2cb015ffe4b01ade",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "light-and-dash",
+      "at": 10.1,
+      "end": 14.884357360635164,
+      "text": "まずは三つの灯へ。光を拾うと、ダッシュが使えるようになります。",
+      "caption": "まずは、三つの灯へ。\n光を集めると、ダッシュが使える。",
+      "kind": "commentary",
+      "file": "voice-02.wav",
+      "predictedDuration": 4.7843573606351635,
+      "speedScale": 1.06,
+      "sha256": "bf39e683ab1c56c9c4582864e0460936127a525981a7120ed144255eca49556b",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "first-cost",
+      "at": 25,
+      "end": 27.606906273578698,
+      "text": "失ったのは、公園で過ごした午後。",
+      "caption": "失ったのは、公園で過ごした午後。",
+      "kind": "commentary",
+      "file": "voice-03.wav",
+      "predictedDuration": 2.6069062735786974,
+      "speedScale": 1.06,
+      "sha256": "1f1652788a2f88a184bd3b6dfb5a1602f90256e1600f34c8812cd4dbf6faded0",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "branch-question",
+      "at": 29.1,
+      "end": 34.096221290286984,
+      "text": "次は、急な二段の近道。ここは、ダッシュで渡れるでしょうか。",
+      "caption": "急な二段の近道。\nダッシュで渡れる？",
+      "kind": "commentary",
+      "file": "voice-04.wav",
+      "predictedDuration": 4.996221290286982,
+      "speedScale": 1.06,
+      "sha256": "d6aedce99564dea7ad79e9cd290be90d9975c82a3302cf179ffca0c5c939331a",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "branch-answer",
+      "at": 39.16666666666667,
+      "end": 43.387732503766536,
+      "text": "二枚とも着地できました。近道は、同じ島へつながります。",
+      "caption": "二枚とも着地。\n近道も、同じ島へ。",
+      "kind": "commentary",
+      "file": "voice-05.wav",
+      "predictedDuration": 4.221065837099867,
+      "speedScale": 1.06,
+      "sha256": "7b2a67bc81d064d3909e01833cac386b4c9dd943f0b7151a5dee96788983fbc1",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "rain-gameplay",
+      "at": 44.1,
+      "end": 49.01041591972675,
+      "text": "足場の位置と、風向き。踏み出す前に、次の着地点を見ます。",
+      "caption": "足場の位置と、風向き。\n次の着地点を見る。",
+      "kind": "commentary",
+      "file": "voice-08.wav",
+      "predictedDuration": 4.910415919726749,
+      "speedScale": 1.06,
+      "sha256": "afde250b7fc0f4f22837097e556561146a3938e3d518f70246ffea224a3c0c94",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "voice-cost",
+      "at": 58,
+      "end": 60.58565874297664,
+      "text": "声が聞こえても、親しさが遠ざかる。",
+      "caption": "声が聞こえても、\n親しさが遠ざかる。",
+      "kind": "commentary",
+      "file": "voice-13.wav",
+      "predictedDuration": 2.5856587429766384,
+      "speedScale": 1.06,
+      "sha256": "7bc2bbe7f430c0494f77c6c76a2e979a84f5d58e6f65e28395e8c1ab55942321",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "days-or-sequence",
+      "at": 62.1,
+      "end": 68.00337718979368,
+      "text": "今度、ほどけるのは、何をしたかだけではありません。日々の、順番やつながりです。",
+      "caption": "出来事だけではなく、\n日々の順番や、つながりまで。",
+      "kind": "commentary",
+      "file": "voice-24.wav",
+      "predictedDuration": 5.903377189793677,
+      "speedScale": 1.06,
+      "sha256": "0e947f8ed00b41645fe6f92979a28386dddb8233ab5b9b9d9f392763ddcc30e2"
+    },
+    {
+      "id": "closing",
+      "at": 68.1,
+      "end": 73.12771594176877,
+      "text": "作品の仕掛けと、その続きを。チャンネル登録して、見届けてください。",
+      "caption": "作品の仕掛けと、その続きを。\nチャンネル登録で。",
+      "kind": "author-cta",
+      "file": "voice-19.wav",
+      "predictedDuration": 5.027715941768772,
+      "speedScale": 1.06,
+      "sha256": "72a6f20fa47ea385028e8850e525dc5d5285d8d1f1f09b5fc9cdb971834a60c5",
+      "reusedSameProductionPhrase": true
+    }
+  ],
+  "branch": {
+    "A": 35.36666666666667,
+    "B": 36.766666666666666,
+    "merge": 38.56666666666666,
+    "continuousSource": [
+      820,
+      957
+    ]
+  },
+  "layout": {
+    "goldenRatioDividerX": 1186.625258399798,
+    "safeLeft": 118,
+    "quoteFieldWidth": 1187,
+    "actualCaptureInsetWidth": 730,
+    "actionFrame": "Full scene retained for game geography; authored close view on actual branch"
+  },
+  "background": {
+    "source": "Original108 / TEMPORARY COMPARISON ONLY",
+    "acceptedForFinal": false
+  },
+  "noRepeatedSourceFrames": true,
+  "noSlowdown": true,
+  "noFreeze": true,
+  "gameAudioRecorded": false,
+  "newSfxAdded": false,
+  "wholeDirectWatch": false,
+  "subjectiveListen": false
+}

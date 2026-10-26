@@ -1,5 +1,6 @@
 import fs from 'node:fs';import {file,np,EC,FC,run,parse,save,hash,digest} from './native.mjs';
 const edit=JSON.parse(fs.readFileSync(file('source/edit.json'))),tick=254016000000;
+if(fs.existsSync(file('qa/editorial-direction.json'))&&JSON.parse(fs.readFileSync(file('qa/editorial-direction.json'))).sequential661FullRenderHold)throw Error('Sequential661 draft is superseded by owner quality correction; review jetcut sample before a newly authored formal edit');
 if(edit.meaningfulUniqueSeconds<600||edit.status!=='MEASURED_UNIQUE_FOOTAGE_GE600_PENDING_FINAL_RENDER')throw Error('No unmeasured/short plan may render as formal longform');
 const ec=file('projects/emberwake-longform.ecproj'),picture=file('media/emberwake-longform-picture.mov');
 if(fs.existsSync(picture))throw Error('Existing rendered picture retained; use explicit revision for repair');

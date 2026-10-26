@@ -1,0 +1,147 @@
+{
+  "quoteChecks": [
+    {
+      "shot": "promise",
+      "actualText": "アッシュ：当たり前だろ。絶対迎えに行く。",
+      "editedLines": [
+        "アッシュ：当たり前だろ。",
+        "絶対迎えに行く。"
+      ],
+      "actualObservationFrame": 145,
+      "oneToOneTextMatch": true,
+      "sourceFrames": [
+        145,
+        265
+      ],
+      "outputFrames": [
+        180,
+        300
+      ],
+      "durationSeconds": 4
+    },
+    {
+      "shot": "first-result",
+      "actualText": "アッシュ：あの公園で、何をしてたんだっけ。\nルミ：……私の名前は、まだわかる？\nアッシュ：ルミ。君だけは、忘れない。",
+      "editedLines": [
+        "アッシュ：あの公園で、何をしてたんだっけ。",
+        "ルミ：……私の名前は、まだわかる？",
+        "アッシュ：ルミ。君だけは、忘れない。"
+      ],
+      "actualObservationFrame": 1373,
+      "oneToOneTextMatch": true,
+      "sourceFrames": [
+        1343,
+        1553
+      ],
+      "outputFrames": [
+        540,
+        750
+      ],
+      "durationSeconds": 7
+    },
+    {
+      "shot": "first-memory",
+      "actualText": "失った記憶：公園でルミと走り回った午後。",
+      "editedLines": [
+        "公園でルミと",
+        "走り回った午後。"
+      ],
+      "actualObservationFrame": 1683,
+      "oneToOneTextMatch": true,
+      "sourceFrames": [
+        1683,
+        1803
+      ],
+      "outputFrames": [
+        750,
+        870
+      ],
+      "durationSeconds": 4
+    },
+    {
+      "shot": "voice-result",
+      "actualText": "ルミ：アッシュ、聞こえる？\nアッシュ：聞こえる。……ごめん、君は、誰？\nルミ：あなたを、待っている人。",
+      "editedLines": [
+        "ルミ：アッシュ、聞こえる？",
+        "アッシュ：聞こえる。……ごめん、君は、誰？",
+        "ルミ：あなたを、待っている人。"
+      ],
+      "actualObservationFrame": 1442,
+      "oneToOneTextMatch": true,
+      "sourceFrames": [
+        1382,
+        1622
+      ],
+      "outputFrames": [
+        1500,
+        1740
+      ],
+      "durationSeconds": 8
+    },
+    {
+      "shot": "voice-memory",
+      "actualText": "失った記憶：呼びかける声を、ルミの声だと感じ取る親しさ。",
+      "editedLines": [
+        "呼びかける声を、",
+        "ルミの声だと感じ取る親しさ。"
+      ],
+      "actualObservationFrame": 1752,
+      "oneToOneTextMatch": true,
+      "sourceFrames": [
+        1752,
+        1872
+      ],
+      "outputFrames": [
+        1740,
+        1860
+      ],
+      "durationSeconds": 4
+    },
+    {
+      "shot": "sequence-memory",
+      "actualText": "失った記憶：ルミと過ごした日々が、いつの出来事だったかという連なり。",
+      "editedLines": [
+        "ルミと過ごした日々が、",
+        "いつの出来事だったかという",
+        "連なり。"
+      ],
+      "actualObservationFrame": 1757,
+      "oneToOneTextMatch": true,
+      "sourceFrames": [
+        1757,
+        1877
+      ],
+      "outputFrames": [
+        1920,
+        2040
+      ],
+      "durationSeconds": 4
+    }
+  ],
+  "allQuoteTextMatchesActualObservedUi": true,
+  "sourceRepeatedFrames": 0,
+  "rate": 1,
+  "freezeFrames": 0,
+  "actualSourceSeconds": 68,
+  "newAnimatedClosingSeconds": 8,
+  "shotCount": 20,
+  "sourceEpisodeIds": [
+    1,
+    2,
+    4,
+    8,
+    9
+  ],
+  "completeEpisodeRunClaimed": false,
+  "formal600Complete": false,
+  "visualFramesViewed": [
+    0.5,
+    20,
+    36.766666666666666,
+    54,
+    66,
+    71
+  ],
+  "allStoryMemoryBodiesInsideQuoteField": true,
+  "subjectiveListen": false
+}

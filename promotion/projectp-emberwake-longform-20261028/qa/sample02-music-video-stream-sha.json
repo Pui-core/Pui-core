@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\videos\\emberwake-fullbleed-revision02-floating-cities.mp4",
+    "-map",
+    "0:v:0",
+    "-c",
+    "copy",
+    "-f",
+    "hash",
+    "-hash",
+    "sha256",
+    "-"
+  ],
+  "stdout": "SHA256=7a05c67a57dc093cbf07436071e9ff8db2977a26db87709729308828ae1af9fb\n",
+  "stderr": ""
+}

@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/FilmCraft/filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-fullbleed-revision02-floating-cities.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\videos\\\\emberwake-fullbleed-revision02-floating-cities.mp4\",\"format\":\"h264\",\"audio\":true,\"audioCodec\":\"aac\",\"bitrateMode\":\"crf\",\"crf\":17,\"hardwareEncoding\":\"off\",\"gpuRendering\":\"off\",\"wait\":true}"
+  ],
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\videos\\\\emberwake-fullbleed-revision02-floating-cities.mp4\",\n  \"result\": {\n    \"bytes\": 8872490,\n    \"frames\": 600,\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\videos\\\\emberwake-fullbleed-revision02-floating-cities.mp4\",\n    \"render_fps\": 26.172106331771882,\n    \"seconds\": 22.9251705\n  }\n}\n",
+  "stderr": ""
+}

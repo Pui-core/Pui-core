@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-jetcut-sample01.ecproj",
+    "render-frame",
+    "--comp",
+    "EMBERWAKE Jetcut Review Sample01",
+    "--time",
+    "54",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\qa\\sample01-54.000.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":7,\"height\":1080,\"ms\":481.7,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\qa\\\\sample01-54.000.png\",\"time\":54.0,\"width\":1920}\n",
+  "stderr": ""
+}

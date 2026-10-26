@@ -1,5 +1,5 @@
 {
-  "status": "REQUIRED_FIX_IMPLEMENTED_PENDING_NATIVE_PREVIEW",
+  "status": "NATIVE_PREVIEW_TEXT_FIX_CONFIRMED_OLD661_ASSEMBLY_NOT_EDITORIALLY_ACCEPTED",
   "issue": 127,
   "episode": 9,
   "problem": "Actual original memory label exceeds visible viewport at right edge",
@@ -16,5 +16,13 @@
   "newDurationFrames": 120,
   "durationAdded": 0,
   "otherEpisodes1to11MemoryVisualAudit": "Only episode9 right clipping found;1/2/3/4/5/6/7/8/10/11 results and memory pages readable in bounded native PNG audit",
-  "finalNativePreviewConfirmed": false
+  "finalNativePreviewConfirmed": true,
+  "preview": {
+    "file": "qa/preview-485.733.png",
+    "sha256": "df1692e432f5c26d9185ee5c6dd78fbc4fb709600b60938091d82265f1a50a6a",
+    "observedLines": 3,
+    "sourceDurationFrames": 120,
+    "newDurationFrames": 120
+  },
+  "formalMovieQualityPass": false
 }

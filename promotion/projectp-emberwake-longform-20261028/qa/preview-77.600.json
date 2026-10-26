@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-longform.ecproj",
+    "render-frame",
+    "--comp",
+    "EMBERWAKE Formal Longform",
+    "--time",
+    "77.6",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\qa\\preview-77.600.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":14,\"height\":1080,\"ms\":360.9,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\qa\\\\preview-77.600.png\",\"time\":77.6,\"width\":1920}\n",
+  "stderr": ""
+}

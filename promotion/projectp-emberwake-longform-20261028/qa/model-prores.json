@@ -1,0 +1,26 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-framerate",
+    "30",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\natural\\frame-%06d.png",
+    "-c:v",
+    "prores_ks",
+    "-threads",
+    "2",
+    "-profile:v",
+    "4",
+    "-pix_fmt",
+    "yuva444p10le",
+    "-alpha_bits",
+    "16",
+    "-an",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\natural.mov"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

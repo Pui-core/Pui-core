@@ -1,0 +1,19 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/Live2D Cubism 5.3/app/jre/bin/java.exe",
+  "args": [
+    "-Xmx2g",
+    "-Djava.awt.headless=true",
+    "-Djava.library.path=C:\\Program Files\\Live2D Cubism 5.3\\app\\dll64",
+    "-cp",
+    "C:\\Program Files\\Live2D Cubism 5.3\\app\\lib\\Live2DCubismCore.jar;\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-emberwake-longform-20261028\\production\\model\\classes",
+    "AvatarCore",
+    "F:\\Users\\pui\\Desktop\\model\\SeeThrough-workflows\\Revenant_Natural\\Revenant_Natural.moc3",
+    "F:\\Users\\pui\\Desktop\\model\\SeeThrough-workflows\\Revenant_Natural\\Revenant_Natural.8192\\texture_00.png",
+    "F:\\Users\\pui\\Desktop\\model\\SeeThrough-workflows\\Revenant_Natural\\Revenant_Natural.8192\\texture_01.png",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\natural",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-emberwake-longform-20261028\\production\\model\\schedule.csv"
+  ],
+  "stdout": "Native Core rendered 30 frames / 14.5074613s\r\nNative Core rendered 60 frames / 25.9890139s\r\nNative Core rendered 90 frames / 35.8060234s\r\nNative Core rendered 120 frames / 45.7910664s\r\nNative Core rendered 150 frames / 57.5011643s\r\nNative Core rendered 180 frames / 68.8608583s\r\nNative Core rendered 210 frames / 78.621522s\r\nNative Core rendered 240 frames / 89.7847014s\r\nNative Core rendered 270 frames / 99.5574793s\r\nNative Core rendered 300 frames / 110.0771061s\r\nNative Core rendered 330 frames / 121.221268s\r\nNative Core rendered 360 frames / 131.5649436s\r\nNative Core rendered 390 frames / 142.78731s\r\nNative Core rendered 420 frames / 156.9464831s\r\nNative Core rendered 450 frames / 169.50168s\r\nNative Core rendered 480 frames / 178.4197433s\r\nNative Core rendered 510 frames / 187.3498266s\r\nNative Core rendered 540 frames / 196.1824045s\r\nNative Core rendered 570 frames / 211.0293334s\r\nNative Core rendered 600 frames / 221.60904s\r\nNative Core rendered 630 frames / 231.2358157s\r\nNative Core rendered 660 frames / 242.0261381s\r\nNative Core rendered 690 frames / 251.9897562s\r\nNative Core rendered 720 frames / 262.6696384s\r\nNative Core rendered 750 frames / 273.1134079s\r\nNative Core rendered 780 frames / 283.7334664s\r\nNative Core rendered 810 frames / 293.2626801s\r\nNative Core rendered 840 frames / 303.5469813s\r\nNative Core rendered 870 frames / 321.368072s\r\nNative Core rendered 900 frames / 338.4245987s\r\nNative Core rendered 930 frames / 355.6786716s\r\nNative Core rendered 960 frames / 378.3158225s\r\nNative Core rendered 990 frames / 391.3343383s\r\nNative Core rendered 1020 frames / 404.9062277s\r\nNative Core rendered 1050 frames / 416.5642638s\r\nNative Core rendered 1080 frames / 435.3029828s\r\nNative Core rendered 1110 frames / 447.8318473s\r\nNative Core rendered 1140 frames / 458.3057366s\r\nNative Core rendered 1170 frames / 471.7880915s\r\nRendered 1188 true Core frames, 600x780, no physics simulation; Core=06.00.0513 (100663809)\r\n",
+  "stderr": ""
+}

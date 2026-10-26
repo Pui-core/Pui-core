@@ -1,0 +1,25 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\voice-01.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\sample02-ash.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\sample02-lumi.wav",
+    "-filter_complex",
+    "[0:a]adelay=4800S|4800S[v0];[1:a]adelay=580800S|580800S[v1];[2:a]adelay=796800S|796800S[v2];[v0][v1][v2]amix=inputs=3:normalize=0,volume=1.4,apad,atrim=duration=20[v]",
+    "-map",
+    "[v]",
+    "-c:a",
+    "pcm_s24le",
+    "-ar",
+    "48000",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\sample02-narration.wav"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

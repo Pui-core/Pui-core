@@ -1,0 +1,92 @@
+{
+  "model": "Revenant_Natural / owner specified",
+  "originalFiles": [
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.moc3",
+      "sha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e"
+    },
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.model3.json",
+      "sha256": "26f678bc97701a1e0958f3a82569e0efa36e260c1a8551222deb873bfb254c39"
+    },
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.8192/texture_00.png",
+      "sha256": "30efeaa8148d55ca0042cfd3d741f499d479f9034bf7985d248360e66e559f73"
+    },
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.8192/texture_01.png",
+      "sha256": "c09bd43ef3d9f02acc8ccdc12d46ba72a750de21aa07a7627fc6a8f04321e26a"
+    }
+  ],
+  "originalsUnchanged": true,
+  "coreJarSha256": "5458a64ebe33b38350de1437399343b0d502f2353a34a97da76d56d118c0d186",
+  "coreNativeSha256": "71d5757025cd31c61be0d52ad79d4cd0de0465e1df6c4508c4fde70207613985",
+  "rendererSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+  "frames": 1188,
+  "width": 600,
+  "height": 780,
+  "fps": 30,
+  "intervals": [
+    {
+      "output": [
+        0,
+        7.6
+      ],
+      "model": [
+        0,
+        7.6
+      ]
+    },
+    {
+      "output": [
+        159.36666666666667,
+        167.36666666666667
+      ],
+      "model": [
+        7.6,
+        15.6
+      ]
+    },
+    {
+      "output": [
+        323.96666666666664,
+        331.96666666666664
+      ],
+      "model": [
+        15.6,
+        23.6
+      ]
+    },
+    {
+      "output": [
+        488.73333333333335,
+        496.73333333333335
+      ],
+      "model": [
+        23.6,
+        31.6
+      ]
+    },
+    {
+      "output": [
+        653.3,
+        661.3
+      ],
+      "model": [
+        31.6,
+        39.6
+      ]
+    }
+  ],
+  "alpha": true,
+  "movSha256": "25bdce2c0b1343519fa8a357b9339681102f47981302e7ffe5cab2528d748fd0",
+  "mouthFromNewVoiceOnly": true,
+  "oldCoreFramesReused": false,
+  "cameraTracking": false,
+  "vTubeStudio": false,
+  "physicsSimulated": false,
+  "coreGeometry": true,
+  "softwareTriangleRenderer": true,
+  "rawModelOrSdkBundled": false,
+  "limitation": "Software triangle/mask rendering approximates GPU output; not a camera or VTubeStudio physical recording"
+}

@@ -1,0 +1,23 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\floating-cities-candidate.mp3",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\sample02-narration.wav",
+    "-filter_complex",
+    "[0:a]atrim=duration=20,asetpts=PTS-STARTPTS,aresample=48000,volume=.55,afade=t=out:st=18.5:d=1.5[b];[b][1:a]sidechaincompress=threshold=.025:ratio=4:attack=18:release=320[bg]",
+    "-map",
+    "[bg]",
+    "-c:a",
+    "pcm_s24le",
+    "-ar",
+    "48000",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\sample02-floating-background.wav"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

@@ -8,6 +8,8 @@
   "credit": "VOICEVOX:青山龍星",
   "voiceActorRecording": false,
   "wholeDirectAudition": false,
+  "reusedCurrentProductionPhrases": 19,
+  "newlySynthesizedPhrases": 7,
   "cues": [
     {
       "id": "opening",
@@ -19,7 +21,8 @@
       "file": "voice-01.wav",
       "predictedDuration": 5.420167592179101,
       "speedScale": 1.06,
-      "sha256": "84ccfcb1f8d8c11b5e5c4f083e1357ddc1009b1131831dbf2cb015ffe4b01ade"
+      "sha256": "84ccfcb1f8d8c11b5e5c4f083e1357ddc1009b1131831dbf2cb015ffe4b01ade",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "light-and-dash",
@@ -31,7 +34,8 @@
       "file": "voice-02.wav",
       "predictedDuration": 4.7843573606351635,
       "speedScale": 1.06,
-      "sha256": "bf39e683ab1c56c9c4582864e0460936127a525981a7120ed144255eca49556b"
+      "sha256": "bf39e683ab1c56c9c4582864e0460936127a525981a7120ed144255eca49556b",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "first-cost",
@@ -43,7 +47,8 @@
       "file": "voice-03.wav",
       "predictedDuration": 2.6069062735786974,
       "speedScale": 1.06,
-      "sha256": "1f1652788a2f88a184bd3b6dfb5a1602f90256e1600f34c8812cd4dbf6faded0"
+      "sha256": "1f1652788a2f88a184bd3b6dfb5a1602f90256e1600f34c8812cd4dbf6faded0",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "branch-question",
@@ -55,7 +60,8 @@
       "file": "voice-04.wav",
       "predictedDuration": 4.996221290286982,
       "speedScale": 1.06,
-      "sha256": "d6aedce99564dea7ad79e9cd290be90d9975c82a3302cf179ffca0c5c939331a"
+      "sha256": "d6aedce99564dea7ad79e9cd290be90d9975c82a3302cf179ffca0c5c939331a",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "branch-answer",
@@ -67,7 +73,8 @@
       "file": "voice-05.wav",
       "predictedDuration": 4.221065837099867,
       "speedScale": 1.06,
-      "sha256": "7b2a67bc81d064d3909e01833cac386b4c9dd943f0b7151a5dee96788983fbc1"
+      "sha256": "7b2a67bc81d064d3909e01833cac386b4c9dd943f0b7151a5dee96788983fbc1",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "way-home-question",
@@ -79,7 +86,8 @@
       "file": "voice-06.wav",
       "predictedDuration": 3.6454011273384093,
       "speedScale": 1.06,
-      "sha256": "f3fb2787bb762885a800460bf6b454820d7a54a44014b0a6c5844ae20fa5b9e2"
+      "sha256": "f3fb2787bb762885a800460bf6b454820d7a54a44014b0a6c5844ae20fa5b9e2",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "rain-chapter",
@@ -91,7 +99,8 @@
       "file": "voice-07.wav",
       "predictedDuration": 5.124580328599462,
       "speedScale": 1.06,
-      "sha256": "e2950bbb029202a1f7ae361e912fb714c15f9c40b743787dd5b20e685177f144"
+      "sha256": "e2950bbb029202a1f7ae361e912fb714c15f9c40b743787dd5b20e685177f144",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "rain-gameplay",
@@ -103,7 +112,8 @@
       "file": "voice-08.wav",
       "predictedDuration": 4.910415919726749,
       "speedScale": 1.06,
-      "sha256": "afde250b7fc0f4f22837097e556561146a3938e3d518f70246ffea224a3c0c94"
+      "sha256": "afde250b7fc0f4f22837097e556561146a3938e3d518f70246ffea224a3c0c94",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "normal-path-choice",
@@ -115,7 +125,32 @@
       "file": "voice-09.wav",
       "predictedDuration": 4.023739831751247,
       "speedScale": 1.06,
-      "sha256": "fc40f619aa7b0d1e2b7fe20cc6df4fc0b0f48c1107b7f81a52a0a438df322e93"
+      "sha256": "fc40f619aa7b0d1e2b7fe20cc6df4fc0b0f48c1107b7f81a52a0a438df322e93",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "rain-to-smile",
+      "at": 244.7,
+      "end": 253.2,
+      "text": "前の話では、雨宿りした時間を失いました。では、笑った出来事は残せるのでしょうか。",
+      "caption": "雨宿りした時間の次は、\n笑った出来事も、失う？",
+      "kind": "commentary",
+      "file": "voice-20.wav",
+      "predictedDuration": 6.520323394728157,
+      "speedScale": 1.06,
+      "sha256": "e1e8492a5c0e5dc56624f2f18dd604efe1d89438cc53e71eb270e5464ee1a70f"
+    },
+    {
+      "id": "face-or-event",
+      "at": 287.6333333333333,
+      "end": 296.1333333333333,
+      "text": "時間や出来事が消えるだけなら、顔を見れば思い出せるでしょうか。次は、面影をたどります。",
+      "caption": "時間や出来事を忘れても、\n顔を見れば、思い出せる？",
+      "kind": "commentary",
+      "file": "voice-21.wav",
+      "predictedDuration": 6.300938757646758,
+      "speedScale": 1.06,
+      "sha256": "2bb7bf9ea138232836c839e821e589c743b3a12431ac6b2486a52d4068eceb42"
     },
     {
       "id": "portrait-cost",
@@ -127,7 +162,8 @@
       "file": "voice-10.wav",
       "predictedDuration": 2.548480205220996,
       "speedScale": 1.06,
-      "sha256": "be8a27ba21d559d3e11c64210e269d8ae173bbc4deec793bafdb7a457eca9c61"
+      "sha256": "be8a27ba21d559d3e11c64210e269d8ae173bbc4deec793bafdb7a457eca9c61",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "blank-page-chapter",
@@ -139,7 +175,8 @@
       "file": "voice-11.wav",
       "predictedDuration": 5.790580340837533,
       "speedScale": 1.06,
-      "sha256": "94e40f3a4e05b67d2f7b90d842ebf394b807a21f618e5e1a79e15decc7b6df84"
+      "sha256": "94e40f3a4e05b67d2f7b90d842ebf394b807a21f618e5e1a79e15decc7b6df84",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "blank-page-route",
@@ -151,7 +188,32 @@
       "file": "voice-12.wav",
       "predictedDuration": 5.172027277620334,
       "speedScale": 1.06,
-      "sha256": "af3c07c52a600b6508d299f8bed691d83b4b3eeff6fdfe467bb2a038795e0f41"
+      "sha256": "af3c07c52a600b6508d299f8bed691d83b4b3eeff6fdfe467bb2a038795e0f41",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "written-goal",
+      "at": 357.46666666666664,
+      "end": 365.46666666666664,
+      "text": "迎えに来た目的は、手帳に書いてあります。でも、決意したいきさつまで、残せるのでしょうか。",
+      "caption": "目的は、手帳にある。\n決意したいきさつも、残せる？",
+      "kind": "commentary",
+      "file": "voice-22.wav",
+      "predictedDuration": 6.765964672093121,
+      "speedScale": 1.06,
+      "sha256": "0eb62422e6227b6d5579a62e3936fd32a4902ebd2598f17311c65a66662ec8ca"
+    },
+    {
+      "id": "voice-or-familiarity",
+      "at": 398.76666666666665,
+      "end": 407.26666666666665,
+      "text": "ルミからの呼びかけは届いています。聞こえることと、誰の声か感じ取ることは、同じでしょうか。",
+      "caption": "声が聞こえることと、\n誰の声か感じ取ること。",
+      "kind": "commentary",
+      "file": "voice-23.wav",
+      "predictedDuration": 6.520104333600908,
+      "speedScale": 1.06,
+      "sha256": "b5022cd6693fb785b22a69d122db690fdee7897628a3cab88a8a1f3d51297e79"
     },
     {
       "id": "voice-cost",
@@ -163,7 +225,8 @@
       "file": "voice-13.wav",
       "predictedDuration": 2.5856587429766384,
       "speedScale": 1.06,
-      "sha256": "7bc2bbe7f430c0494f77c6c76a2e979a84f5d58e6f65e28395e8c1ab55942321"
+      "sha256": "7bc2bbe7f430c0494f77c6c76a2e979a84f5d58e6f65e28395e8c1ab55942321",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "notebook-evidence",
@@ -175,7 +238,20 @@
       "file": "voice-14.wav",
       "predictedDuration": 5.720642591265013,
       "speedScale": 1.06,
-      "sha256": "18355907af818b086e19b86ff50eb69865b2a4cb08762e70933e6e9b075a5f1b"
+      "sha256": "18355907af818b086e19b86ff50eb69865b2a4cb08762e70933e6e9b075a5f1b",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "days-or-sequence",
+      "at": 465,
+      "end": 473,
+      "text": "今度、ほどけるのは、何をしたかだけではありません。日々の、順番やつながりです。",
+      "caption": "出来事だけではなく、\n日々の順番や、つながりまで。",
+      "kind": "commentary",
+      "file": "voice-24.wav",
+      "predictedDuration": 5.903377189793677,
+      "speedScale": 1.06,
+      "sha256": "0e947f8ed00b41645fe6f92979a28386dddb8233ab5b9b9d9f392763ddcc30e2"
     },
     {
       "id": "belfry-record-chapter",
@@ -187,7 +263,8 @@
       "file": "voice-15.wav",
       "predictedDuration": 5.393204903951231,
       "speedScale": 1.06,
-      "sha256": "6144a94e57582e7c1070e2b2bd0717b8d3a9111530f73a2757532bc3cb993145"
+      "sha256": "6144a94e57582e7c1070e2b2bd0717b8d3a9111530f73a2757532bc3cb993145",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "belfry-wind",
@@ -199,7 +276,32 @@
       "file": "voice-16.wav",
       "predictedDuration": 5.304512419351991,
       "speedScale": 1.06,
-      "sha256": "c3576cde7c450740d6e8f1ec5980e4c9d43fa070740aaf1e55a7e487567c7857"
+      "sha256": "c3576cde7c450740d6e8f1ec5980e4c9d43fa070740aaf1e55a7e487567c7857",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "promise-after-forgetting",
+      "at": 521.2333333333333,
+      "end": 529.7333333333333,
+      "text": "迎えに行く。その言葉が、ここまでの道をつないでいます。約束は、記憶が消えても残るのでしょうか。",
+      "caption": "迎えに行く、という約束。\n記憶が消えても、残る？",
+      "kind": "commentary",
+      "file": "voice-25.wav",
+      "predictedDuration": 7.2972252358917915,
+      "speedScale": 1.06,
+      "sha256": "c9363326e172eef94f22c57dd7d889e37202960e5ab17d7763d9328b05420274"
+    },
+    {
+      "id": "lumi-also-forgets",
+      "at": 562.7666666666667,
+      "end": 571.2666666666667,
+      "text": "ルミの中でも、二人の日々は薄れています。ここでは、アッシュだけの忘却ではありません。",
+      "caption": "ルミの中でも、\n二人の日々は、薄れていく。",
+      "kind": "commentary",
+      "file": "voice-26.wav",
+      "predictedDuration": 6.122173849546685,
+      "speedScale": 1.06,
+      "sha256": "5a0ebdedb35d502d5e9b3e49018cc7d606d02d9afed6293d94ca92616300a823"
     },
     {
       "id": "ashen-sun-cost",
@@ -211,7 +313,8 @@
       "file": "voice-17.wav",
       "predictedDuration": 2.86800212861232,
       "speedScale": 1.06,
-      "sha256": "35e02e42407c92a50d37c3ae73dce5e8c5a39789b939f7038aba4de34e955d6e"
+      "sha256": "35e02e42407c92a50d37c3ae73dce5e8c5a39789b939f7038aba4de34e955d6e",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "promise-question",
@@ -223,7 +326,8 @@
       "file": "voice-18.wav",
       "predictedDuration": 5.021686257180178,
       "speedScale": 1.06,
-      "sha256": "993a47d9758ac27744f32dfa595e3d1f4e3a8a025f41bf44e5b79aaed80aee87"
+      "sha256": "993a47d9758ac27744f32dfa595e3d1f4e3a8a025f41bf44e5b79aaed80aee87",
+      "reusedSameProductionPhrase": true
     },
     {
       "id": "closing",
@@ -235,7 +339,8 @@
       "file": "voice-19.wav",
       "predictedDuration": 5.027715941768772,
       "speedScale": 1.06,
-      "sha256": "72a6f20fa47ea385028e8850e525dc5d5285d8d1f1f09b5fc9cdb971834a60c5"
+      "sha256": "72a6f20fa47ea385028e8850e525dc5d5285d8d1f1f09b5fc9cdb971834a60c5",
+      "reusedSameProductionPhrase": true
     }
   ]
 }

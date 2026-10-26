@@ -1,0 +1,162 @@
+{
+  "status": "PASS_SHORT_CLIP_TECHNICAL_PENDING_CONTINUOUS_CREATIVE_REVIEW",
+  "videoSha256": "2016e078b332b6d4a8fb7227b8d67717879dd073b267dfdb313a75d0698fd5d4",
+  "videoPacketSha256": "SHA256=7a05c67a57dc093cbf07436071e9ff8db2977a26db87709729308828ae1af9fb",
+  "duration": 20.01,
+  "frames": 600,
+  "fullAvDecode": true,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLufs": -19.2,
+    "truePeakDbtp": -3.5,
+    "voices": [
+      {
+        "id": "opening",
+        "file": "voice-01.wav",
+        "at": 0.1,
+        "samples": 260096,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999462722958338,
+        "headCorrelation": 0.9999293917250145,
+        "tailCorrelation": 0.9999709818783736
+      },
+      {
+        "id": "ash",
+        "file": "sample02-ash.wav",
+        "at": 12.1,
+        "samples": 163840,
+        "pcmMaxError": 1.7285346987083727e-7,
+        "lag": 0,
+        "correlation": 0.9999672158812394,
+        "headCorrelation": 0.9999675294808168,
+        "tailCorrelation": 0.9999495938675432
+      },
+      {
+        "id": "lumi",
+        "file": "sample02-lumi.wav",
+        "at": 16.6,
+        "samples": 98304,
+        "pcmMaxError": 2.0265579214751028e-7,
+        "lag": 0,
+        "correlation": 0.999927959037277,
+        "headCorrelation": 0.999973422118531,
+        "tailCorrelation": 0.9999246830927092
+      }
+    ],
+    "allPhrasesAndHeadTailVerified": true
+  },
+  "finalFrames": [
+    {
+      "file": "qa/sample02-final-00.png",
+      "time": 0
+    },
+    {
+      "file": "qa/sample02-final-01.png",
+      "time": 0.5
+    },
+    {
+      "file": "qa/sample02-final-02.png",
+      "time": 1.9666666666666666
+    },
+    {
+      "file": "qa/sample02-final-03.png",
+      "time": 2
+    },
+    {
+      "file": "qa/sample02-final-04.png",
+      "time": 2.6666666666666665
+    },
+    {
+      "file": "qa/sample02-final-05.png",
+      "time": 2.7333333333333334
+    },
+    {
+      "file": "qa/sample02-final-06.png",
+      "time": 3.3666666666666667
+    },
+    {
+      "file": "qa/sample02-final-07.png",
+      "time": 3.433333333333333
+    },
+    {
+      "file": "qa/sample02-final-08.png",
+      "time": 3.966666666666667
+    },
+    {
+      "file": "qa/sample02-final-09.png",
+      "time": 4
+    },
+    {
+      "file": "qa/sample02-final-10.png",
+      "time": 5.966666666666667
+    },
+    {
+      "file": "qa/sample02-final-11.png",
+      "time": 6
+    },
+    {
+      "file": "qa/sample02-final-12.png",
+      "time": 7.666666666666667
+    },
+    {
+      "file": "qa/sample02-final-13.png",
+      "time": 9.066666666666666
+    },
+    {
+      "file": "qa/sample02-final-14.png",
+      "time": 10.866666666666667
+    },
+    {
+      "file": "qa/sample02-final-15.png",
+      "time": 11.966666666666667
+    },
+    {
+      "file": "qa/sample02-final-16.png",
+      "time": 12
+    },
+    {
+      "file": "qa/sample02-final-17.png",
+      "time": 13
+    },
+    {
+      "file": "qa/sample02-final-18.png",
+      "time": 16.466666666666665
+    },
+    {
+      "file": "qa/sample02-final-19.png",
+      "time": 16.5
+    },
+    {
+      "file": "qa/sample02-final-20.png",
+      "time": 17.5
+    },
+    {
+      "file": "qa/sample02-final-21.png",
+      "time": 19.966666666666665
+    }
+  ],
+  "continuousActualBranchSource": [
+    796,
+    976
+  ],
+  "hostCurrentVoiceSha256": "84ccfcb1f8d8c11b5e5c4f083e1357ddc1009b1131831dbf2cb015ffe4b01ade",
+  "hostCoreCurrentProduction": true,
+  "hostTimeMap": [
+    0,
+    3.4
+  ],
+  "introRmsSameWaveform": true,
+  "creditsFile": "metadata/sample02-credits.txt",
+  "subjectiveListen": false,
+  "wholeDirectContinuousWatch": false,
+  "formal600Complete": false,
+  "musicCandidate": false,
+  "finalMusicAdopted": false
+}
