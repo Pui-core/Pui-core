@@ -1,0 +1,52 @@
+{
+  "status": "PASS_F_3_MASTERS_NATIVE_REOPEN_SAVE_RENDER_MISSING0_ALL_PACKAGED_SHA",
+  "destination": "/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-01",
+  "fileCount": 765,
+  "totalBytes": 26263759327,
+  "receipt": "qa/delivery.json in F package",
+  "receiptSha256": "de8fedd33e87ff5113a418d1a01322f4b6b00080507b11f0e059502ef20cf216",
+  "outputs": [
+    {
+      "file": "videos/truthorlie-seven-rounds.mp4",
+      "bytes": 91193066,
+      "sha256": "e1009b5c3f87e96eba13c0181028dad95fef2593f93868d344856eab4464071b"
+    },
+    {
+      "file": "short/videos/truthorlie-short.mp4",
+      "bytes": 7869053,
+      "sha256": "61f71b4c2722ccc3c3081bd7e01f8ca60ecd223546c507bf8f65fac679fdecb4"
+    },
+    {
+      "file": "short/videos/truthorlie-short-tt.mp4",
+      "bytes": 7859529,
+      "sha256": "9c7314e764bc901bff1883d57adc87023de665f51cabb36238cd543753889c73"
+    },
+    {
+      "file": "covers/truthorlie-horizontal.png",
+      "bytes": 823452,
+      "sha256": "fb31aa44bb5b8aa20dc171ad9c28280ed15306111788ff63de1613b58a5c6d2a"
+    },
+    {
+      "file": "covers/truthorlie-short.png",
+      "bytes": 781756,
+      "sha256": "87e56838148aa08ca19a553f1560df21102496c51bfbc629bd98019ed8c916ad"
+    }
+  ],
+  "nativeProjects": [
+    "projects/truthorlie-horizontal.ecproj",
+    "projects/truthorlie-horizontal.fcproj",
+    "short/projects/truthorlie-short.ecproj",
+    "short/projects/truthorlie-short.fcproj",
+    "short/projects/truthorlie-short-tt.ecproj",
+    "short/projects/truthorlie-short-tt.fcproj"
+  ],
+  "nativeReopenedSavedRendered": true,
+  "missingMedia": 0,
+  "nativeDependenciesSha256": "10fdfc6c03a4c53729c4574948f71086d1b358cd573f5c0b313283c9f16e1859",
+  "rootFinalVisualAcceptance": false,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "published": false,
+  "relatedVideoId": null,
+  "tiktokPopularTrackSelected": false
+}

@@ -1,0 +1,82 @@
+{
+  "status": "PASS_ACTUAL_NEUTRAL_BEFORE_PREDICTION_FOR_ALL7_ROUNDS",
+  "rounds": [
+    {
+      "round": "round1",
+      "actualChosenVoteMatchedSourceSecond": 80,
+      "matchPrecisionSeconds": 0.5,
+      "allEditorialPreVoteMovingSourceEndsAt": 78,
+      "minimumMarginSeconds": 2,
+      "selectedVoteAttachmentSha256": "382ae11d51d8d7b6dc47543ce72932823e5a8c91c7bfc576bfe75c2a2e3489af",
+      "noChosenVoteInPrePredictionMovingInterval": true
+    },
+    {
+      "round": "round2",
+      "actualChosenVoteMatchedSourceSecond": 63,
+      "matchPrecisionSeconds": 0.5,
+      "allEditorialPreVoteMovingSourceEndsAt": 61,
+      "minimumMarginSeconds": 2,
+      "selectedVoteAttachmentSha256": "403c326a1594206ca42fbc9be23fd4dcf475d32c6d773bb0ed1f366a48ce75b3",
+      "noChosenVoteInPrePredictionMovingInterval": true
+    },
+    {
+      "round": "round3",
+      "actualChosenVoteMatchedSourceSecond": 65.5,
+      "matchPrecisionSeconds": 0.5,
+      "allEditorialPreVoteMovingSourceEndsAt": 63,
+      "minimumMarginSeconds": 2.5,
+      "selectedVoteAttachmentSha256": "4def56deeb7e89448c0356649a601f39ad07c2bf20940e38f6d265dd18f70535",
+      "noChosenVoteInPrePredictionMovingInterval": true
+    },
+    {
+      "round": "round4",
+      "actualChosenVoteMatchedSourceSecond": 75,
+      "matchPrecisionSeconds": 0.5,
+      "allEditorialPreVoteMovingSourceEndsAt": 73,
+      "minimumMarginSeconds": 2,
+      "selectedVoteAttachmentSha256": "efd3838ac936ab31fc6675d70928036776cb2c40e230950ddda5b9f507aa3f89",
+      "noChosenVoteInPrePredictionMovingInterval": true
+    },
+    {
+      "round": "truth1",
+      "actualChosenVoteMatchedSourceSecond": 69.5,
+      "matchPrecisionSeconds": 0.5,
+      "allEditorialPreVoteMovingSourceEndsAt": 66.5,
+      "minimumMarginSeconds": 3,
+      "selectedVoteAttachmentSha256": "29c794086e54079abdbeae5888a08cc4e3a8aba20f96a86ffb0a1f7dba177a03",
+      "noChosenVoteInPrePredictionMovingInterval": true
+    },
+    {
+      "round": "truth2",
+      "actualChosenVoteMatchedSourceSecond": 68,
+      "matchPrecisionSeconds": 0.5,
+      "allEditorialPreVoteMovingSourceEndsAt": 66,
+      "minimumMarginSeconds": 2,
+      "selectedVoteAttachmentSha256": "85bf1a110b1ba65ca873164c66e93dcf2bd4b5bc22307a574d319be4ef63b13b",
+      "noChosenVoteInPrePredictionMovingInterval": true
+    },
+    {
+      "round": "truth3",
+      "actualChosenVoteMatchedSourceSecond": 71,
+      "matchPrecisionSeconds": 0.5,
+      "allEditorialPreVoteMovingSourceEndsAt": 69,
+      "minimumMarginSeconds": 2,
+      "selectedVoteAttachmentSha256": "c3baeba309edb37271f1497b3a4dc71768302321ad2665e931d08a443ed4b787",
+      "noChosenVoteInPrePredictionMovingInterval": true
+    }
+  ],
+  "short": {
+    "coldSource": [
+      61,
+      64
+    ],
+    "thinkSource": [
+      69,
+      77
+    ],
+    "chosenVoteAfter": 80
+  },
+  "inputLieSelectionNeverAdopted": true,
+  "staticQuestionCardsDerivedFromUnselectedNeutralAttachment": true,
+  "wholeDirectWatch": false
+}

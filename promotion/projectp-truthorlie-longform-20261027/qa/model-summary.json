@@ -1,0 +1,58 @@
+{
+  "model": "Owner specified Revenant_Natural",
+  "originals": [
+    {
+      "file": "Revenant_Natural.moc3",
+      "sha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e"
+    },
+    {
+      "file": "Revenant_Natural.model3.json",
+      "sha256": "26f678bc97701a1e0958f3a82569e0efa36e260c1a8551222deb873bfb254c39"
+    },
+    {
+      "file": "texture_00.png",
+      "sha256": "30efeaa8148d55ca0042cfd3d741f499d479f9034bf7985d248360e66e559f73"
+    },
+    {
+      "file": "texture_01.png",
+      "sha256": "c09bd43ef3d9f02acc8ccdc12d46ba72a750de21aa07a7627fc6a8f04321e26a"
+    }
+  ],
+  "originalsUnchanged": true,
+  "coreJarSha256": "5458a64ebe33b38350de1437399343b0d502f2353a34a97da76d56d118c0d186",
+  "coreNativeSha256": "71d5757025cd31c61be0d52ad79d4cd0de0465e1df6c4508c4fde70207613985",
+  "rendererSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+  "voiceCues": [
+    {
+      "id": "hook",
+      "at": 0,
+      "file": "voice-hook.wav",
+      "sha256": "fb162ec792d92fbb625bfc1407fc21f1577121c4880d25b068872eaaccbf166c"
+    },
+    {
+      "id": "promise",
+      "at": 3,
+      "file": "voice-promise.wav",
+      "sha256": "d6b5c1651b98e98c7400ce2d718f0755b459dcc5ba04c11d299d5af48e4f1ca4"
+    }
+  ],
+  "frames": 900,
+  "width": 600,
+  "height": 780,
+  "fps": 30,
+  "alpha": true,
+  "movSha256": "fb2d0436c782e72f9a494993ca31d3e580a4e14209b321e3dba97e68c8d335e8",
+  "coreGeometry": true,
+  "softwareTriangleRenderer": true,
+  "limitation": "Software triangle/mask sampling approximation, not GPU/camera/physics tracking",
+  "oldAvatarLoop": false,
+  "rawModelOrSdkBundled": false,
+  "mainOutput": [
+    0,
+    30
+  ],
+  "shortOutput": [
+    0,
+    3
+  ]
+}

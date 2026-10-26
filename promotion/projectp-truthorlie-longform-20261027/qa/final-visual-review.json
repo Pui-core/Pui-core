@@ -1,0 +1,73 @@
+{
+  "status": "NO_MUST_FIX_IN_11_ACTUALLY_VIEWED_FINAL_STILLS",
+  "reviewer": "publication_record_audit plus delegated read-only image review; separate from Root",
+  "images": [
+    {
+      "file": "qa/final-main-0.5.png",
+      "sha256": "e2011baece0169e4de5f575671b4cf986c2e286403dae5a852904ac9fc6002cd",
+      "actualViewed": true
+    },
+    {
+      "file": "qa/final-main-89.png",
+      "sha256": "9082311ad333c1ea1a19550ba74dcd9fe12cde56dae0514073b31e7e457088dc",
+      "actualViewed": true
+    },
+    {
+      "file": "qa/final-main-398.png",
+      "sha256": "d9aecdabe174d386dbc18c25d91d17c210b1ece2e9e17ba46f6e4b987cf1970b",
+      "actualViewed": true
+    },
+    {
+      "file": "qa/final-main-489.png",
+      "sha256": "7a254e8cae62256e7996342f390b3d24a5280ff92c5877f8c9bb904e0e556a2e",
+      "actualViewed": true
+    },
+    {
+      "file": "qa/final-main-554.png",
+      "sha256": "51bf2a4dbbb1b725e4f7521f88506e659528c49a58a3031608ba065a2bf5330c",
+      "actualViewed": true
+    },
+    {
+      "file": "qa/final-main-646.4.png",
+      "sha256": "fb48142c20ea1b4abaa685a9b09525638ad1db5842588038fbc7d922c67e3421",
+      "actualViewed": true
+    },
+    {
+      "file": "qa/final-main-681.png",
+      "sha256": "28627713212049b0160d2a59c31d73a94007aaeccd1de0e871330d0da445e26a",
+      "actualViewed": true
+    },
+    {
+      "file": "qa/final-short-0.5.png",
+      "sha256": "fb7a3622aee58bba040041801bed0540140e6d43d0ba424621a6c84d63e30c6a",
+      "actualViewed": true
+    },
+    {
+      "file": "qa/final-tt-37.png",
+      "sha256": "40f8a78def757bde05012159603fbe8d608ee26833199f082588a19592da0ed3",
+      "actualViewed": true
+    },
+    {
+      "file": "covers/truthorlie-horizontal.png",
+      "sha256": "fb31aa44bb5b8aa20dc171ad9c28280ed15306111788ff63de1613b58a5c6d2a",
+      "actualViewed": true
+    },
+    {
+      "file": "covers/truthorlie-short.png",
+      "sha256": "87e56838148aa08ca19a553f1560df21102496c51bfbc629bd98019ed8c916ad",
+      "actualViewed": true
+    }
+  ],
+  "findings": [
+    "Visible answers in554/646.4 are neutral gold; offscreen answers not verified by those stills",
+    "681 shows actualBBwinner3R and draw4R histories with nonoverlapping gap",
+    "Score/captions align in specified main stills",
+    "Short and covers have no face/text occlusion; TTfollow CTA and@prop_pui are visible",
+    "Next-version/fictional-answer disclosure visible"
+  ],
+  "rootFinalAcceptance": false,
+  "continuousCorrectionWatch": false,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "scope": "Bounded still review only; not a substitute for Root final F acceptance."
+}

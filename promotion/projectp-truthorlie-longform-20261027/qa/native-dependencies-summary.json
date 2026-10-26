@@ -1,0 +1,32 @@
+{
+  "status": "PASS_F_REV01_ONLY_3EC_3FC_2PC_REOPEN_SAVE_RENDER",
+  "nativeProjects": [
+    "projects/truthorlie-horizontal.ecproj",
+    "projects/truthorlie-horizontal.fcproj",
+    "short/projects/truthorlie-short.ecproj",
+    "short/projects/truthorlie-short.fcproj",
+    "short/projects/truthorlie-short-tt.ecproj",
+    "short/projects/truthorlie-short-tt.fcproj"
+  ],
+  "missing": 0,
+  "allActiveNativeMediaInsideThisRevision": true,
+  "privateTmpOrOldFDependencies": 0,
+  "photoCraft": [
+    {
+      "native": "covers/truthorlie-horizontal.pcraft",
+      "reopened": "projects/truthorlie-horizontal-cover-reopened.pcraft",
+      "reopenedPixelsIdentical": true,
+      "externalLinkedAssets": 0,
+      "embeddedImageCount": 2
+    },
+    {
+      "native": "covers/truthorlie-short.pcraft",
+      "reopened": "projects/truthorlie-short-cover-reopened.pcraft",
+      "reopenedPixelsIdentical": true,
+      "externalLinkedAssets": 0,
+      "embeddedImageCount": 2
+    }
+  ],
+  "fullFReceiptSha256": "10fdfc6c03a4c53729c4574948f71086d1b358cd573f5c0b313283c9f16e1859",
+  "regenerationInputsAreSeparate": true
+}
