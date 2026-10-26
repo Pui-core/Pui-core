@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "productionIssue": 124,
+  "managementIssue": 126,
+  "title": "この看板、跳ぶ？くぐる？｜ScateRush",
+  "tiktok": {
+    "caption": "この看板、跳ぶ？くぐる？ Web試作画面の自動入力を編集した操作例です。ScateRushの続きはフォローで。 VOICEVOX:青山龍星 #ScateRush #自作ゲーム #ProjectP",
+    "captionCharacters": 97,
+    "captionTextUtf8Sha256": "73a9d6f73eaaa5ae1bff27f5b803f9d00f977e416d362bfa529a5d5d9d46d51e"
+  },
+  "youtube": {
+    "description": "この看板、跳ぶ？くぐる？\nScateRushの看板の下を通過する、2つの場面を見てみよう。\nこのゲームの続きは、チャンネル登録で。\n\nアプリ情報（iPhone版）：https://apps.apple.com/jp/app/scaterush/id6779438091\n※映像は旧Web試作版の自動入力を収録・編集。看板の場面は0.5倍スローです。\n\nナレーション：VOICEVOX:青山龍星\nモデル：Revenant_Natural\n背景：ProjectP自作BGM「Connecting Lights」\n#ScateRush #自作ゲーム #Shorts",
+    "descriptionTextUtf8Sha256": "abace1e6a1b4d93ea6daad0a6e0e48ad0a1dcaae0d91febf1c327a15c44bca9f"
+  },
+  "publisherEdits": [
+    "Removed caption answer before viewing to preserve question hook",
+    "Single-line TikTok whitespace normalization",
+    "Shortened internal model/Core production description; retained narration/model/BGM credit and Web/automation/slow disclosure"
+  ],
+  "sourceOriginalDocuments": {
+    "caption": {
+      "relativePath": "source/tiktok-caption.txt",
+      "sha256": "6e7fdaf729374b65279bb8c0c5d058e3a8a65558ad213a53d55aa6f10e5c87e8",
+      "unchanged": true
+    },
+    "description": {
+      "relativePath": "source/youtube-description.txt",
+      "sha256": "3f0fc64f23931a93603a16570fee7d415e8c7c06e251d5e74b0f22b77be7630d",
+      "unchanged": true
+    }
+  },
+  "disclosuresRetained": [
+    "Old Web prototype",
+    "Normal automatic inputs",
+    "0.5x sign scenes",
+    "VOICEVOX:青山龍星",
+    "Revenant_Natural",
+    "Original BGM108 Connecting Lights"
+  ],
+  "textHashDefinition": "SHA256 of UTF8 text value, without adding an artifact end-of-file newline",
+  "submittedMasters": {
+    "tiktok": "ecb91dfa0eb0aaaf666e4bab91ce1292d6651a350a4c13fe20966d4bb790fdad",
+    "youtube": "1c21454fc7edd36ea8330b15a0b130f1f782e4a910dfb9cb2f8720740b8903ef"
+  },
+  "voiceOnlyNotForThisPublication": true
+}
