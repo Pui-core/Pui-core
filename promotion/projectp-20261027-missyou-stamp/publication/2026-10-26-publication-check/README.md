@@ -29,3 +29,18 @@ readは07:10:19 UTCにexit 1。安全な診断は `OPERATION_EXCEPTION / System.
 必須のnative公開確認は阻害のまま。Issue115と親93へ具体理由・private原票保持場所を報告し、既存CTO→PM-ReviewGate→PM-Dispatcherへhandoffした。次のnative確認には既設PS1の別の根拠付き修復と新たな単独publisher指名が必要。公開未知を理由に再投稿しない。新cron・常駐loop・接続/認証/料金/global環境の変更はない。
 
 今回の検証対象は新JSONの実ID/account/SHA/null/予算整合、失敗原票SHA、非対象daily/旧runtime記録/旧sourceの不変、変更scopeと内部リンク。制作の全編再検品・直接試聴・24h/72h分析・人数成果を新たにPASSとしていない。
+
+## 追記: 修復reader後のnative再確認（2026-10-26 recheck / 成功）
+
+上記の阻害記録は不変更のまま保持する。その後、子[Pui-core/claude-codex_agents#84](https://github.com/Pui-core/claude-codex_agents/issues/84) / PR85（MERGED、merge `09452e54…`、head `f317b984…`）でreaderのroot causeを修復した。原因は実WinPS 5.1のANSI codepage(cp932)がBOMなしUTF-8の日本語リテラルを誤読してParseException(L20 C171)を起こしていたこと。新readerはASCII-onlyでどのcodepageでも同一にparseする（SHA `127ff7f339279dc0c166b6b6691fa9fa70d6c456089451a4a7368157fc2518c3`、read専用・fail-closed）。guard/caller/session-probe/元Root readerは無変更。
+
+単独publisher `publisher-app100-claude-recheck`（runId `root-dispatch-app100-recheck-20261026T0752Z`）として、released両原票をCAS照合（lease SHA `cd55d426…` / nomination SHA `8bfa18ce…`、旧holder=`publisher-app100-codex`）後にdaily.lock/flockでclaimを取得。修復readerを `~/.claude/projectp-tiktok/tools/` へSHA一致・非破壊で限定配備（既存helper無変更）。DESKTOP事前告知の後、既存Firefoxへstrict probe成功→**1回だけread（exit0）**。tab選択・navigation・zoom変更0、investActions=0、document=`TikTok Studio`。
+
+native結果: 本人account `prop_pui` を確認。app100 missyouは TikTok Studio ホームの「最近の投稿」に、公開済みgame97(12:15)と並んで分析0/0/0で掲載され、19:15予約のgame114は未掲載だった。これにより app100 は**公開済み掲載としてnative確認**（`publicConfirmed:true`）。表示時刻ラベルは `10月26日 午後4:00`。ただし当該ビューは分精度ラベル（予約16:00と同値）のみで秒精度の実公開時刻や明示的可視性ラベル（誰でも等）を表示しないため、`nativeActualPublishedAt=null`・`nativeVisibilityLabelExplicit=null` とし、匿名公式receipt `be81052e…` の16:00実公開・27/29日16:00 dueを出典として保持・上書きしない。詳細は[native-recheck-2026-10-26.json](native-recheck-2026-10-26.json)。
+
+差戻しの解除根拠:
+
+- **PP115-NATIVE-001（解除）**: reader ParseExceptionによるnative読取阻害は解消。1回のreadが成功し、本人account・app100の公開済み掲載をnative確認した。残件（非ブロッキング）は、このビューでは明示的可視性ラベルと秒精度の実公開時刻が得られないこと。これは指名時に許容された `nativeActual=null` の分岐であり、公開失敗を意味しない。
+- **PP115-LEASE-001（今回再発なし）**: 期限を単一clock readから算出し、TTL 900000ms=15分以内を検算。旧900001msの逸脱原票は訂正・上書きしない。
+
+保全: 元の阻害receipt(`receipt.json`, exit1)・匿名公式receipt・caption補正(`302490e2…`)・予約source receiptは不変更。rawUI・socket・PID/HWND・lease原本・秘密はGitへ入れず、private tmp(`mode600`)に保持。116/PR47の別folderには触れていない。F同期・全編再生/試聴・24h/72h分析・人数目標は今回もPASSにしていない。99取消・109/110音楽hold・114の19:15予約・親93 OPENを維持する。

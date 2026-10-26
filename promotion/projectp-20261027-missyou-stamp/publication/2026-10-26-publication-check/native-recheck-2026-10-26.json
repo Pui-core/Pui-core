@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "kind": "native-recheck-append",
+  "managementIssue": 115,
+  "productionIssue": 100,
+  "parentIssue": 93,
+  "accountId": "prop_pui",
+  "videoId": "7700784029481716999",
+  "videoUrl": "https://www.tiktok.com/@prop_pui/video/7700784029481716999",
+  "scope": "Repaired-reader native recheck; read-only; no production/publish/attach/schedule/delete/profile-save (all 0).",
+  "repairedReader": {
+    "child": "Pui-core/claude-codex_agents#84",
+    "pr": 85,
+    "prState": "MERGED",
+    "prMerge": "09452e542b27189e304a6df7076b50574b4900db",
+    "frozenHead": "f317b984f7c89220410b8c97c883ee71b514adb9",
+    "readerPath": "ops/pm-automation/projectp/read-tiktok-studio.ps1",
+    "readerSha256": "127ff7f339279dc0c166b6b6691fa9fa70d6c456089451a4a7368157fc2518c3",
+    "deployPath": "~/.claude/projectp-tiktok/tools/read-tiktok-studio.ps1",
+    "deploySha256Match": true,
+    "rootCause": "WinPS 5.1 ANSI codepage (cp932) misdecoded BOM-less UTF-8 Japanese literals (ParseException L20 C171). ASCII-only reader parses identically under any codepage.",
+    "helpersUnchanged": "invoke-guarded.ps1 / projectp-interop.mjs / session-probe.ps1 unchanged; legacy Root reader not overwritten."
+  },
+  "observation": {
+    "nativeAccountVerified": true,
+    "nativeView": "TikTok Studio Home / 最近の投稿 widget",
+    "nativePublishedListing": true,
+    "nativePublishedListingBasis": "app100 listed in Home Recent Posts with engagement analytics alongside confirmed-public game97 (12:15); future-scheduled game114 (19:15) absent.",
+    "publicConfirmed": true,
+    "nativeObservedPostTimeLabel": "10月26日 午後4:00",
+    "nativeVisibilityLabelExplicit": null,
+    "nativeActualPublishedAt": null,
+    "actualTimeNote": "Home widget shows minute-granularity label equal to scheduled 16:00 JST; no seconds-precision native actual timestamp exposed.",
+    "due24hUtc": null,
+    "due72hUtc": null,
+    "dueSource": "anonymous-official be81052e1b694ab543a0f161480ca85c4cbecbebc0c372cb2cfcaf721ff802e3 (16:00 actual; 27/29 16:00 JST due) UNCHANGED",
+    "readExitCode": 0,
+    "readAttempts": 1,
+    "strictProbeSucceeded": true,
+    "inputActions": 0,
+    "document": "TikTok Studio",
+    "homeVerified": true,
+    "zoomChanges": 0
+  },
+  "lease": {
+    "owner": "publisher-app100-claude-recheck",
+    "runId": "root-dispatch-app100-recheck-20261026T0752Z",
+    "ttlMs": 900000,
+    "ttlWithin15min": true,
+    "casAgainstReleased": {
+      "prevOwner": "publisher-app100-codex",
+      "prevRunId": "dispatcher-app100-20261026T0703Z",
+      "leaseShaVerified": "cd55d426691b8cabb6c940febe0cb185fc11402ce9b2853b2eba54e67b76efea",
+      "nominationShaVerified": "8bfa18cea7d73a14bf94a1746c375531da60d9e0eab9a9d9f596323fa06cdc21"
+    },
+    "note": "Prior 900001ms over-limit original preserved; this run recomputed from a single clock read = 900000ms."
+  },
+  "holdResolution": {
+    "PP115-NATIVE-001": "RESOLVED: reader ParseException block cleared; 1 native read succeeded; app100 natively confirmed published/listed on prop_pui. Residual non-blocking: no explicit native visibility label nor seconds actual time exposed in Home widget.",
+    "PP115-LEASE-001": "NOT RECURRING THIS RUN: single-clock-read TTL 900000ms <= 15min verified; prior over-limit original unchanged."
+  },
+  "preservation": {
+    "priorBlockedReceipt": "receipt.json (exit1 ParseException) UNCHANGED",
+    "priorAnonymousReceiptSha256": "be81052e1b694ab543a0f161480ca85c4cbecbebc0c372cb2cfcaf721ff802e3",
+    "captionCorrectionSha256": "302490e2eb06db085eb018c1f858ada18fbf06269bb8572facca445e14879b9e",
+    "rawUiPrivate": "/home/pui/tmp/projectp-app100-recheck-20261026T0752Z/native-read.json (mode600, not in git)",
+    "noSecretsOrRawUiInGit": true
+  }
+}
