@@ -27,7 +27,7 @@ node source/run-ep2-pilot.mjs <未使用の試行名>
 ## 段階1 の実測（`qa/ep2pilot04-*.json`, `qa/pilot-root-review.json`）
 
 - status `PASS_PILOT_PENDING_ROOT_VISUAL_REVIEW`。selected_episode=2、state=play到達、frame_count=300。
-- continuation save SHA は読込前・収録後ともに `f5eae6b…` で同一。core72 before/after SHA 同一（変更0）。
+- continuation seed（112私有save）自体は不変で `f5eae6b…`（読込前 `save_sha256_before_scene`）。ただし117pilot内の実saveは通常の「1:2」選択で `selected=2` へ更新され、収録後SHA（`save_sha256_after`）は `4bbe2b36…` になる。初報の「読込前・収録後とも同一」は誤りで訂正した（元seed不変とpilot内saveの通常更新は別物）。core72 before/after SHA 同一（変更0）。
 - 確認画像（実在する絶対パスは `qa/pilot-root-review.json` に記載。本リポには生PNGを置かない）:
   タイトル(1:1✓/失った記憶1/15) → 第2話選択(1章2話 ふたりの合図) → 会話「出発」 → play開始(1:2 OUR LITTLE SIGNAL / EXPLORE 00:00.00 / » SHIFT / X)。
 - PNG保存待ちがゲーム内壁時計HUDに含まれるため、RTA/PB・人間の初見プレイの証明ではない。ゲーム音はDummyで未収録。

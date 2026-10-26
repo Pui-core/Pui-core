@@ -125,7 +125,7 @@
   },
   "facts": [
     "実InputEventKey(TAB/ENTER)と実physicsのみ。内部start_game/会話advance直呼び・座標/進行/時計書換えなし。",
-    "core72 before/after SHA同一(変更0)。save SHAも前後で f5eae6b 同一。",
+    "core72 before/after SHA同一(変更0)。112継続seed自体は不変(f5eae6b)。ただし117pilot内の実saveは通常の1:2選択でselected=2へ更新され、収録後SHAは4bbe2b36…(save_sha256_before_scene=f5eae6b / save_sha256_after=4bbe2b36参照)。前後同一は誤りで訂正済み。",
     "ゲームscene/logic未改変。project.godotはpristine(444)。",
     "Godot 4.6.3-stable (official), render 1920x1080, logical 480x270, fps30, 300フレーム(≈10s)。",
     "dashはep2で開始時から可(» SHIFT / X 表示)。EXPLORE 00:00.00=移動入力前でタイマー未開始。"
