@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "kind": "append_only_old_reservation_withdrawal_delivery",
+  "managementIssue": 123,
+  "appendFolder": "publication/issue123/withdrawal-20261027",
+  "status": "PASS_WITHDRAWAL_RECORD_COPY_CONSISTENCY_ONLY",
+  "scope": "Three old reservations withdrawn; not a new production acceptance or actual-publication receipt",
+  "fileCount": 5,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 1456,
+      "sourceSha256AtCopy": "545b34550bb6155d58ea0ee7b0c734e3f0b8ec289766e9fe668d2850cda25234",
+      "deliverySha256": "545b34550bb6155d58ea0ee7b0c734e3f0b8ec289766e9fe668d2850cda25234",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "withdrawal-status.json",
+      "bytes": 8650,
+      "sourceSha256AtCopy": "98a24fe51eba8458c9ed83f1d7359bc422f7dcb4f8c05d601d144caa1f24d60c",
+      "deliverySha256": "98a24fe51eba8458c9ed83f1d7359bc422f7dcb4f8c05d601d144caa1f24d60c",
+      "privateDeliveryOnly": false
+    },
+    {
+      "file": "root-youtube-long-cancelled.private.json",
+      "bytes": 2452,
+      "sourceSha256AtCopy": "5b1bf07312ba36b29787f430a4ddb9cf97531b5c791bd080211899acfc2f8d62",
+      "deliverySha256": "5b1bf07312ba36b29787f430a4ddb9cf97531b5c791bd080211899acfc2f8d62",
+      "privateDeliveryOnly": true
+    },
+    {
+      "file": "root-youtube-short-cancelled.private.json",
+      "bytes": 2472,
+      "sourceSha256AtCopy": "e8963a97f1f70f568bc1be0432166437a9ae384f65cd4ab97a584ccfe2433b4b",
+      "deliverySha256": "e8963a97f1f70f568bc1be0432166437a9ae384f65cd4ab97a584ccfe2433b4b",
+      "privateDeliveryOnly": true
+    },
+    {
+      "file": "root-tiktok-cancelled.private.json",
+      "bytes": 1752,
+      "sourceSha256AtCopy": "c4f81d1e34056c8c55e95b39dcc9af93f707a81156fd7cb46a960f4d4e14dc5e",
+      "deliverySha256": "c4f81d1e34056c8c55e95b39dcc9af93f707a81156fd7cb46a960f4d4e14dc5e",
+      "privateDeliveryOnly": true
+    }
+  ],
+  "originalReservationFManifest": {
+    "file": "publication/issue123/reservations-20261027/append-delivery.json",
+    "sha256": "a56039d7ebf7c18651addf16ae3a7eef6870a9f41f0048a131e05d10d958e927",
+    "unchanged": true
+  },
+  "frozenReceiptChecks": [
+    {
+      "file": "qa/delivery.json",
+      "sha256": "de8fedd33e87ff5113a418d1a01322f4b6b00080507b11f0e059502ef20cf216",
+      "afterSha256": "de8fedd33e87ff5113a418d1a01322f4b6b00080507b11f0e059502ef20cf216",
+      "unchanged": true
+    },
+    {
+      "file": "acceptance/2026-10-27-root-final/README.md",
+      "sha256": "5796b1c61f0a8ca329f771403dad917889d646986ecc8d173aca0ec0fd4604aa",
+      "afterSha256": "5796b1c61f0a8ca329f771403dad917889d646986ecc8d173aca0ec0fd4604aa",
+      "unchanged": true
+    },
+    {
+      "file": "acceptance/2026-10-27-root-final/acceptance.md",
+      "sha256": "2cb6bf6ed7068d3bd3e844afa52a7af5af2e2d80d81f8e1d737a8d0c38346a16",
+      "afterSha256": "2cb6bf6ed7068d3bd3e844afa52a7af5af2e2d80d81f8e1d737a8d0c38346a16",
+      "unchanged": true
+    },
+    {
+      "file": "acceptance/2026-10-27-root-final/append-manifest.json",
+      "sha256": "f460bb51d87a71e89a601f8f9f7bdbae88ee54eefde4ff6a41668b1a219305a6",
+      "afterSha256": "f460bb51d87a71e89a601f8f9f7bdbae88ee54eefde4ff6a41668b1a219305a6",
+      "unchanged": true
+    },
+    {
+      "file": "acceptance/2026-10-27-root-final/receipt.json",
+      "sha256": "16b9bcee62585fc16d54518c1ea26173a9ffc8fe0a105c62a27d387118cfaecf",
+      "afterSha256": "16b9bcee62585fc16d54518c1ea26173a9ffc8fe0a105c62a27d387118cfaecf",
+      "unchanged": true
+    }
+  ],
+  "masterBindingsFromPreservedReservationManifest": [
+    {
+      "file": "videos/truthorlie-seven-rounds.mp4",
+      "baseManifestSha256": "e1009b5c3f87e96eba13c0181028dad95fef2593f93868d344856eab4464071b",
+      "actualSha256": "e1009b5c3f87e96eba13c0181028dad95fef2593f93868d344856eab4464071b",
+      "unchanged": true
+    },
+    {
+      "file": "short/videos/truthorlie-short.mp4",
+      "baseManifestSha256": "61f71b4c2722ccc3c3081bd7e01f8ca60ecd223546c507bf8f65fac679fdecb4",
+      "actualSha256": "61f71b4c2722ccc3c3081bd7e01f8ca60ecd223546c507bf8f65fac679fdecb4",
+      "unchanged": true
+    },
+    {
+      "file": "short/videos/truthorlie-short-tt.mp4",
+      "baseManifestSha256": "9c7314e764bc901bff1883d57adc87023de665f51cabb36238cd543753889c73",
+      "actualSha256": "9c7314e764bc901bff1883d57adc87023de665f51cabb36238cd543753889c73",
+      "unchanged": true
+    },
+    {
+      "file": "covers/truthorlie-horizontal.png",
+      "baseManifestSha256": "fb31aa44bb5b8aa20dc171ad9c28280ed15306111788ff63de1613b58a5c6d2a",
+      "actualSha256": "fb31aa44bb5b8aa20dc171ad9c28280ed15306111788ff63de1613b58a5c6d2a",
+      "unchanged": true
+    },
+    {
+      "file": "covers/truthorlie-short.png",
+      "baseManifestSha256": "87e56838148aa08ca19a553f1560df21102496c51bfbc629bd98019ed8c916ad",
+      "actualSha256": "87e56838148aa08ca19a553f1560df21102496c51bfbc629bd98019ed8c916ad",
+      "unchanged": true
+    }
+  ],
+  "masterFilesRehashedForThisAppend": false,
+  "frozenProductionPayloadFiles": 765,
+  "wholePayloadRescanned": false,
+  "originalSchedulesUnchanged": true,
+  "quality129AcceptanceGranted": false,
+  "oldRelatedExecutionAllowed": false,
+  "sourceWriterGuiActions": 0,
+  "globalOrRuntimeEdits": 0,
+  "manualLockChanges": 0
+}

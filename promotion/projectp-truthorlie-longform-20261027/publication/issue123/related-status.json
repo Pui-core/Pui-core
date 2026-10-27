@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "kind": "revoked_related_plan_with_withdrawal_record",
+  "managementIssue": 123,
+  "productionIssue": 121,
+  "state": "old_reservations_withdrawn_related_revoked",
+  "shortVideoId": "4mxdwqgsOVA",
+  "desiredMainVideoId": "pg8Ih4PAOBw",
+  "actualNativeRelatedVideoId": null,
+  "nativeRelatedConfigured": false,
+  "mainPublicConfirmed": false,
+  "currentMainVisibilityAsReported": "private_unscheduled_confirmed",
+  "nativePicker": {
+    "observedAt": "2026-10-26T20:32:06.2557874Z",
+    "exactTitleSearched": true,
+    "result": "no_matching_results",
+    "savedField": "なし",
+    "proof": {
+      "file": "short-related-long-search-read.json",
+      "sha256": "1aeb31b280438a5c0618cbb89ed60d07322253f355256c74b4b7b17d4aa08f3c",
+      "privateOriginal": true
+    }
+  },
+  "officialConstraint": "https://support.google.com/youtube/answer/14075157?hl=ja",
+  "requiredFutureWork": {
+    "state": "revoked_by_owner_quality_hold",
+    "earliestJst": "2026-10-27T18:45:00+09:00",
+    "targetExistingPatrolJst": "2026-10-27T19:00:00+09:00",
+    "completeBeforeJst": "2026-10-27T19:14:59+09:00",
+    "executor": "Root or one explicitly handed-off existing PM publisher with fresh exclusive lease",
+    "mainPublicConfirmation": "Verify pg8Ih4PAOBw is public and on the same channel after 18:45",
+    "nativeLinkage": "Edit Short4mxdwqgsOVA, select pg8Ih4PAOBw, SAVE, reload and verify destination ID",
+    "fallbackIfUnresolved": "Before19:15, stop this Short reservation via normal UI and keep private; record actual state",
+    "newCron": false,
+    "differentWorkDestinationAllowed": false,
+    "appendSeparatePublicAndLinkageReceipts": true,
+    "updateExistingDailyAfterActualExecution": true,
+    "originalStateAtReservationRecord": "not_executed",
+    "executionAllowed": false,
+    "supersededBy": "withdrawal-20261027/withdrawal-status.json"
+  },
+  "operationalPreparationSnapshot": {
+    "file": "2026-10-27-truthorlie-related-required.json",
+    "sha256AtRecord": "244d268ab9e424b5681b250fe8c2daabad5bd1c88c6bb5727d4fd9ba6a13bb91",
+    "mutableOperationalPreparation": true,
+    "privateOriginal": true
+  },
+  "acceptance": {
+    "scope": "old_reservation_withdrawal_record_only",
+    "allThreeStopsConfirmed": true,
+    "shortToMainFunnelComplete": false,
+    "newQualityAcceptanceGranted": false,
+    "oldPublicationAllowed": false,
+    "recordEligibleForLatestSelfReviewAndNormalMerge": true
+  },
+  "rootCase": "https://github.com/Pui-core/-/issues/123#issuecomment-6426951020",
+  "limits": [
+    "旧公開・Related手順はowner品質差し戻しで撤回済み。旧版への関連付け・公開は再開しません。",
+    "3予約票と08:15のHOLDは当時の履歴です。後続の全停止証跡はcurrentStatusRecordに分離しました。",
+    "Issue123の受入は旧3予約withdrawalの記録です。再制作129の完成、品質採用、Related成功、公開実績を示しません。"
+  ],
+  "reservationSnapshotState": "required_wait_main_public",
+  "ownerQualityHold": true,
+  "oldRelatedInstructionValid": false,
+  "relatedExecutionAllowed": false,
+  "currentStatusRecord": "withdrawal-20261027/withdrawal-status.json",
+  "historicalReservationCommit": "83675c8c18929fd1f0e542fcd3455ad2f0c8b07c",
+  "acceptanceAtPartialHoldSnapshot": {
+    "reservationRecordTechnicalCheckOnly": true,
+    "shortToMainFunnelComplete": false,
+    "finalSelfApproveAllowed": false,
+    "mergeAllowed": false,
+    "issueCloseAllowed": false,
+    "ownWorktreeCleanupAllowed": false
+  }
+}

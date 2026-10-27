@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "kind": "owner_quality_hold_partial_stop_snapshot",
+  "managementIssue": 123,
+  "qualityIssue": "https://github.com/Pui-core/-/issues/129",
+  "snapshotAt": "2026-10-26T23:15:05.498Z",
+  "ownerQualityHoldAt": "2026-10-26T23:07:52.836Z",
+  "oldPublicationAdoptionWithdrawn": true,
+  "oldRelatedInstructionRevoked": true,
+  "oldRelatedExecutionAllowed": false,
+  "currentInstruction": "Stop old three reservations and hold private; do not link or publish old revision.",
+  "oldEveningSlotsReusedForRemake": false,
+  "newReleaseTimeAfterQualityAcceptanceOnly": true,
+  "qualityP1Resolved": false,
+  "remakeOwnerRequirements": {
+    "horizontalMinimumSeconds": 600,
+    "firstRealEditSampleSeconds": [
+      60,
+      90
+    ],
+    "fasterPacingAndJetCuts": true,
+    "redesignLayoutWithGoldenRatioGuidesAndVisualChecks": true,
+    "compareAndReplacePriorBgmAdoption": true,
+    "ownerRequestedUnnecessaryYouTubeAiTagOff": true,
+    "humanReactionsMayNotBeFabricated": true
+  },
+  "oldVideoStatesAsOfSnapshot": {
+    "youtubeLong": {
+      "videoId": "pg8Ih4PAOBw",
+      "desired": "private_unscheduled",
+      "observedState": "native_private_save_confirmed_fresh_reload_pending",
+      "nativePrivateSaveConfirmed": true,
+      "nativeScheduledRowGone": true,
+      "normalPhysicalSaveClicksReported": 1,
+      "saveIntent": 1,
+      "nativeObservedAt": "2026-10-26T23:14:20.0001963Z",
+      "exactEditVideoIdVerified": true,
+      "nativeVisibilityLabel": "非公開",
+      "nativeDateMeaning": "アップロード日",
+      "saveCompletionNoticeConfirmed": true,
+      "independentNormalReloadVerified": false,
+      "normalReloadReverificationPending": true,
+      "publisherReportedReloadInputCount": 0,
+      "fullyReverifiedCancellation": false
+    },
+    "youtubeShort": {
+      "videoId": "4mxdwqgsOVA",
+      "desired": "private_unscheduled",
+      "stopConfirmed": false,
+      "state": "pending_native_stop"
+    },
+    "tiktok": {
+      "videoId": "7701079834692209926",
+      "desired": "cancelled",
+      "stopConfirmed": false,
+      "state": "pending_native_stop"
+    }
+  },
+  "allThreeStopsConfirmed": false,
+  "nextPublisherWindowAsPlanned": {
+    "startJst": "2026-10-27T08:25:00+09:00",
+    "endJst": "2026-10-27T08:30:00+09:00",
+    "executionConfirmedByThisRecord": false
+  },
+  "relatedHandoff": {
+    "previous18h45To19h00To19h15InstructionValid": false,
+    "nativeRelatedConfigured": false,
+    "actualRelatedVideoId": null,
+    "doNotConfigureToOldMain": true,
+    "newDestinationRequiresNewQualityAcceptance": true
+  },
+  "runtimePreparationSnapshot": {
+    "state": "owner_quality_hold_stop_old_reservations_pending",
+    "ownerQualityHold": {
+      "at": "2026-10-26T23:07:52.836Z",
+      "issue": 129,
+      "reason": "Owner rejected current longform pace/layout/BGM and explicitly requested remake",
+      "oldPublicationAdoptionWithdrawn": true,
+      "desiredOldYouTubeState": "private_unscheduled",
+      "desiredOldTikTokState": "cancelled",
+      "actualCancellationConfirmed": false
+    },
+    "file": "2026-10-27-truthorlie-related-required.json",
+    "sha256AtRecord": "60cab7fddef02da09ae039e11d0bb279a5eafabfeaeae85cc5480cc636737062",
+    "mutableOperationalPreparation": true
+  },
+  "proofs": {
+    "windowTerminal": {
+      "file": "window0810-terminal.json",
+      "sha256": "1bc17acf069bb4fe85f4cebc620ec8b3f446209786c7178dbbe4fc717d9ed2d4",
+      "privateOriginal": true
+    },
+    "privateSave": {
+      "file": "pg8-after-private-save.json",
+      "sha256": "225a3abf100601840bb23992646fdfe01f8f33abf6165f53f287e43382de286f",
+      "privateOriginal": true
+    },
+    "saveIntent": {
+      "file": "cancel-save-intent-pg8Ih4PAOBw.json",
+      "sha256": "c97574443bb99d992af9bf2d36c6d92c09ad4017bd608694ae5b23eac11186b6",
+      "privateOriginal": true
+    }
+  },
+  "preservation": {
+    "originalReservationReceiptsImmutable": true,
+    "frozen765PayloadUnchanged": true,
+    "acceptanceAppendUnchanged": true,
+    "reservationFSnapshotUnchanged": true,
+    "holdFAppendAwaitingFinalStopEvidence": true
+  },
+  "acceptance": {
+    "recordScope": "quality_hold_and_partial_stop_evidence_preparation",
+    "finalApproveAllowed": false,
+    "mergeAllowed": false,
+    "issueCloseAllowed": false,
+    "worktreeCleanupAllowed": false
+  },
+  "sourceWriterActions": {
+    "gui": 0,
+    "browser": 0,
+    "sns": 0,
+    "runtime": 0,
+    "lease": 0,
+    "quality129Prefix": 0
+  },
+  "limits": [
+    "Native private-save confirmation is distinguished from an independent normal reload recheck.",
+    "Short and TikTok stop confirmation are not yet supplied in this snapshot.",
+    "Earlier reservation and Related plans remain historical; owner quality hold supersedes them."
+  ]
+}
