@@ -1,0 +1,79 @@
+{
+  "videoSha256": "e3d65a7e1a1f856c9e5c1bae682c4558c84e0f95e6e54231047e67f6cd800ec0",
+  "allNativeRepairFramesMatched": true,
+  "framesCompared": 592,
+  "diagnosticSize": [
+    160,
+    90
+  ],
+  "comparison": "Every repaired frame from final AAC/H264 master against its exact Native EffectCraft ProRes source; RGB RMSE allows lossy reencoding. Audio verified separately.",
+  "comparisons": [
+    {
+      "file": "media/firstcut04h-picture-0.mov",
+      "start": 622,
+      "end": 879,
+      "frames": 257,
+      "rmse": 2.9416679985887795,
+      "maxFrameRmse": 3.45704460593256
+    },
+    {
+      "file": "media/firstcut04g-picture-1.mov",
+      "start": 919,
+      "end": 1088,
+      "frames": 169,
+      "rmse": 2.72951041368231,
+      "maxFrameRmse": 3.098084085366309
+    },
+    {
+      "file": "media/firstcut04g-picture-2.mov",
+      "start": 7498,
+      "end": 7664,
+      "frames": 166,
+      "rmse": 2.6520272265397087,
+      "maxFrameRmse": 2.6551792504182936
+    }
+  ],
+  "boundaries": [
+    {
+      "file": "qa/firstcut04h-boundaries/boundary-01.png",
+      "frames": [
+        621,
+        622,
+        623,
+        878,
+        879
+      ],
+      "repair": "media/firstcut04h-picture-0.mov"
+    },
+    {
+      "file": "qa/firstcut04h-boundaries/boundary-02.png",
+      "frames": [
+        918,
+        919,
+        920,
+        1087,
+        1088
+      ],
+      "repair": "media/firstcut04g-picture-1.mov"
+    },
+    {
+      "file": "qa/firstcut04h-boundaries/boundary-03.png",
+      "frames": [
+        7497,
+        7498,
+        7499,
+        7663,
+        7664
+      ],
+      "repair": "media/firstcut04g-picture-2.mov"
+    }
+  ],
+  "directBoundaryImagesInspected": [],
+  "shortContextRemaining": 0,
+  "rawGameFramesRepeated": 0,
+  "originalClippedRowFullyCovered": null,
+  "hudCleanupScope": "Compare all actual adjusted frames; direct composition inspection is separately recorded.",
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "rootAccepted": false
+}

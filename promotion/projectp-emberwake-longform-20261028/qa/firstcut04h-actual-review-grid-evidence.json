@@ -1,0 +1,63 @@
+{
+  "sha256": "e3d65a7e1a1f856c9e5c1bae682c4558c84e0f95e6e54231047e67f6cd800ec0",
+  "frames": [
+    630,
+    735,
+    840,
+    933,
+    960,
+    1005,
+    1065,
+    1500,
+    7515,
+    7605,
+    7662,
+    7665
+  ],
+  "seconds": [
+    21,
+    24.5,
+    28,
+    31.1,
+    32,
+    33.5,
+    35.5,
+    50,
+    250.5,
+    253.5,
+    255.4,
+    255.5
+  ],
+  "image": "qa/firstcut04h-actual-review-grid.png",
+  "inspected": true,
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "directlyInspectedBoundaryImages": [
+    "qa/firstcut04h-boundaries/boundary-01.png",
+    "qa/firstcut04h-boundaries/boundary-02.png",
+    "qa/firstcut04h-boundaries/boundary-03.png",
+    "qa/firstcut04h-caption-transition.png"
+  ],
+  "directFullHdFrames": [
+    "qa/firstcut04h-actual-21.png",
+    "qa/firstcut04h-actual-24.5.png",
+    "qa/firstcut04h-actual-31.1.png",
+    "qa/firstcut04h-actual-33.5.png",
+    "qa/firstcut04h-actual-250.5.png",
+    "qa/firstcut04h-actual-282.png",
+    "qa/firstcut04h-actual-318.png"
+  ],
+  "observations": [
+    "21 and 24.5 seconds: enlarged captions on dark backing remain legible in the 480px review grid, route stays visible in sampled frames",
+    "24.233 seconds: previous caption changes directly to destination; 20.733 and 29.300 boundaries checked",
+    "31–36 seconds: first episode footage maintained; 4:09–4:15: enlarged episode dialogue maintained",
+    "282 and 318 seconds: no cropped SHIFT/X fragments on these sampled frames"
+  ],
+  "limits": [
+    "no full continuous watch or subjective audio",
+    "no direct smartphone playback",
+    "other 103 historical crop windows not individually reinspected",
+    "7:26 art comparison remains unchanged",
+    "no retention outcome"
+  ]
+}
