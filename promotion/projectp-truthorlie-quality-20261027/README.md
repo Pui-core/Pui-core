@@ -4,9 +4,13 @@ ownerによる旧708秒本編の差し戻しに対し、実3Craftで75秒の編�
 
 確認入口は [F revision02のindex.html](/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/index.html)。[修正版MP4](/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/videos/truthorlie129-editorial-sample75-v02-corrected-cipher.mp4) は75.008秒、1920×1080/30fps、H.264/AAC48k stereoです。SHA256は `4596b64bb4f0d74715e7181c6bfcf028a834aea5bc90e0dd7e50813baa5b447e`。
 
+## 今回の得点と累計の読み順
+
+[READ修正44秒版](story-block-read-v02/README.md) を別版として追加しました。単独得点場面と35〜41秒の比較で「今回 +1」「累計」を明示し、だました場合だけ2点を獲得したという誤読を防ぎます。44秒の語り口はCTOがこの範囲で採用済み。今回のREAD修正は最終連続区間で再判定する段階で、正式600秒/主観全編視聴・試聴は未達です。
+
 ## 正式構成の次段
 
-実ルールの予測と結果へ改めた [44秒の実2ケースブロック](story-block/README.md) を追加しました。新VOX9句/新RMS Core240fを含み、Fからの3Craft再オープン/最終AV/声頭尾/61項目SHAを確認済みです。P1の構成採用はまだ未達です。
+実ルールの予測と結果へ改めた [44秒の実2ケースブロック](story-block/README.md) を追加しました。新VOX9句/新RMS Core240fを含み、Fからの3Craft再オープン/最終AV/声頭尾/61項目SHAを確認済みです。この44秒の語り口方向は限定採用済み、正式600秒の受入は未達です。
 
 75秒のCROP必須修正は、CTOが最終13.5/29.3/41.8/62.4秒を再確認してこの4場面の範囲で採用しました。62.4秒の右端装飾の整えは本編の軽微候補、全編の主観視聴/試聴とREAD/Storyは未解除です。
 

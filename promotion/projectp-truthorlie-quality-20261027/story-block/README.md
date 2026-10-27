@@ -1,6 +1,6 @@
 # 得点の行き先を比べる実44秒ブロック
 
-P1の構成差し戻しに対して、個人的な架空回答を推測させる導入を外し、条件を先に伝えて実2ケースの得点を検証するブロックを制作しました。全600秒の本編は未完成、全編主観視聴/試聴とCTOの構成採用は未達です。
+P1の構成差し戻しに対して、個人的な架空回答を推測させる導入を外し、条件を先に伝えて実2ケースの得点を検証するブロックを制作しました。全600秒の本編は未完成、全編主観視聴/試聴は未達です。CTOはこの44秒の語り口に限って採用しましたが、累計1/2が今回獲得の違いに誤読され得るREAD003を差し戻しました。[修正版](../story-block-read-v02/README.md) を別に保持しています。
 
 [Fの検品入口](/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/story-block/index.html) / [実MP4](/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/story-block/videos/truthorlie129-rules-block44-cipher.mp4)。44.010秒、H264 1920×1080/30fps/1320frame、AAC48k stereo。SHA256 `948c5bfccf22e2b2002246b1fb6e54cedac559e6255a970bcb4e72ce8a9bef80`。
 
