@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "kind": "old_reservation_withdrawal_append",
+  "managementIssue": 123,
+  "productionIssue": 121,
+  "qualityIssue": "https://github.com/Pui-core/-/issues/129",
+  "latestNativeObservationAt": "2026-10-27T00:35:58.1596169Z",
+  "acceptanceScope": "old_three_reservations_withdrawn_and_evidence_recorded",
+  "allThreeStopsConfirmed": true,
+  "oldPublicationAdoptionWithdrawn": true,
+  "oldRelatedInstructionRevoked": true,
+  "oldRelatedExecutionAllowed": false,
+  "old18h45To19h00To19h15SequenceWillNotResume": true,
+  "relatedConfigured": false,
+  "actualRelatedVideoId": null,
+  "youtubeLong": {
+    "service": "youtube",
+    "kind": "long",
+    "videoId": "pg8Ih4PAOBw",
+    "originalScheduledForJst": "2026-10-27T18:45:00+09:00",
+    "state": "private_unscheduled_confirmed",
+    "visibility": "private",
+    "scheduleCancelled": true,
+    "savedAt": "2026-10-26T23:14:20.0001963Z",
+    "normalToolbarReloadVerifiedAt": "2026-10-26T23:25:17.3581944Z",
+    "normalReloadConfirmed": true,
+    "nativeVisibilityLabel": "非公開",
+    "nativeDateMeaning": "アップロード日",
+    "cancellationReceipt": {
+      "file": "2026-10-27-truthorlie121-long-quality-hold.json",
+      "sha256": "5b1bf07312ba36b29787f430a4ddb9cf97531b5c791bd080211899acfc2f8d62",
+      "privateOriginal": true
+    },
+    "originalScheduleReceipt": {
+      "file": "2026-10-27-truthorlie121-long-scheduled.json",
+      "sha256": "faf2164cebd5984023425db044518f16c2bc3afb404daf5e8705be33e6dbf491",
+      "immutable": true
+    },
+    "oldMediaSha256": "e1009b5c3f87e96eba13c0181028dad95fef2593f93868d344856eab4464071b",
+    "videoIdPreserved": true,
+    "additionalUploads": 0,
+    "relatedChanged": false,
+    "titleAndDescriptionIntentionallyEdited": false,
+    "metadataFullExactRevalidation": false,
+    "separateAiMetadataChangeCoveredByThisRecord": false,
+    "actualPublicConfirmed": false,
+    "actualPublishedAt": null,
+    "post24hMetricsDue": null,
+    "post72hMetricsDue": null,
+    "proofs": [
+      {
+        "file": "pg8-private-refreshed-0825.json",
+        "sha256": "c5831f245e98ca381924a8554e9d525008e6666fab592786afebab8a4913c113",
+        "privateOriginal": true
+      },
+      {
+        "file": "pg8-after-private-save.json",
+        "sha256": "225a3abf100601840bb23992646fdfe01f8f33abf6165f53f287e43382de286f",
+        "privateOriginal": true
+      },
+      {
+        "file": "cancel-save-intent-pg8Ih4PAOBw.json",
+        "sha256": "c97574443bb99d992af9bf2d36c6d92c09ad4017bd608694ae5b23eac11186b6",
+        "privateOriginal": true
+      },
+      {
+        "file": "window0810-terminal.json",
+        "sha256": "1bc17acf069bb4fe85f4cebc620ec8b3f446209786c7178dbbe4fc717d9ed2d4",
+        "privateOriginal": true
+      },
+      {
+        "file": "window0825-terminal.json",
+        "sha256": "4f051e32024353356961748ea568e34eeff15b3bf5ecefb5b8d461706ebd0c74",
+        "privateOriginal": true
+      }
+    ]
+  },
+  "youtubeShort": {
+    "service": "youtube",
+    "kind": "short",
+    "videoId": "4mxdwqgsOVA",
+    "originalScheduledForJst": "2026-10-27T19:15:00+09:00",
+    "state": "private_unscheduled_confirmed",
+    "visibility": "private",
+    "scheduleCancelled": true,
+    "savedAt": "2026-10-26T23:27:22.6597719Z",
+    "normalToolbarReloadVerifiedAt": "2026-10-26T23:27:49.4298245Z",
+    "normalReloadConfirmed": true,
+    "nativeVisibilityLabel": "非公開",
+    "nativeDateMeaning": "アップロード日",
+    "cancellationReceipt": {
+      "file": "2026-10-27-truthorlie121-short-quality-hold.json",
+      "sha256": "e8963a97f1f70f568bc1be0432166437a9ae384f65cd4ab97a584ccfe2433b4b",
+      "privateOriginal": true
+    },
+    "originalScheduleReceipt": {
+      "file": "2026-10-27-truthorlie121-short-scheduled.json",
+      "sha256": "0a8f8049369f1952228865fa95eeaaf940c6cd3a0fe2b50ab9ddc840eae0a52b",
+      "immutable": true
+    },
+    "oldMediaSha256": "61f71b4c2722ccc3c3081bd7e01f8ca60ecd223546c507bf8f65fac679fdecb4",
+    "videoIdPreserved": true,
+    "additionalUploads": 0,
+    "relatedChanged": false,
+    "titleAndDescriptionIntentionallyEdited": false,
+    "metadataFullExactRevalidation": false,
+    "separateAiMetadataChangeCoveredByThisRecord": false,
+    "actualPublicConfirmed": false,
+    "actualPublishedAt": null,
+    "post24hMetricsDue": null,
+    "post72hMetricsDue": null,
+    "proofs": [
+      {
+        "file": "short129-private-refreshed.json",
+        "sha256": "47f058e90543087217e2c5a50aa9124d987a3e16d7d6cc4b6dc0e41dcc1cde75",
+        "privateOriginal": true
+      },
+      {
+        "file": "short129-after-private-native-save.json",
+        "sha256": "becdb17854e0e30b6914ec419ebf3888b8d7c275563f84d22391bbd2be119f8f",
+        "privateOriginal": true
+      },
+      {
+        "file": "cancel-save-native-intent-4mxdwqgsOVA.json",
+        "sha256": "4a957a52a603925658d4dbf9e571e8003f28eb55f7055d0c2ee93fb39d5014ff",
+        "privateOriginal": true
+      },
+      {
+        "file": "window0810-terminal.json",
+        "sha256": "1bc17acf069bb4fe85f4cebc620ec8b3f446209786c7178dbbe4fc717d9ed2d4",
+        "privateOriginal": true
+      },
+      {
+        "file": "window0825-terminal.json",
+        "sha256": "4f051e32024353356961748ea568e34eeff15b3bf5ecefb5b8d461706ebd0c74",
+        "privateOriginal": true
+      }
+    ]
+  },
+  "tiktok": {
+    "service": "tiktok",
+    "videoId": "7701079834692209926",
+    "originalScheduledForJst": "2026-10-27T19:15:00+09:00",
+    "state": "owner_reported_deleted_and_absent_after_native_toolbar_refresh",
+    "ownerReportedDeletedOnPhone": true,
+    "independentPhoneInspection": false,
+    "nativeToolbarRefreshConfirmed": true,
+    "nativeDisappearanceVerifiedAt": "2026-10-27T00:35:58.1596169Z",
+    "oldIdLinkCount": 0,
+    "operatorDeletionActions": 0,
+    "operatorUploadActions": 0,
+    "otherPostMutations": 0,
+    "otherReservationChecks": [
+      {
+        "videoId": "7701070938569329926",
+        "matchingLinks": 1,
+        "nativeScheduledText": "10月27日 午後12:15"
+      },
+      {
+        "videoId": "7701100271014792466",
+        "matchingLinks": 1,
+        "nativeScheduledText": "10月28日 午後12:15"
+      }
+    ],
+    "cancellationReceipt": {
+      "file": "2026-10-27-truthorlie121-quality-hold.json",
+      "sha256": "c4f81d1e34056c8c55e95b39dcc9af93f707a81156fd7cb46a960f4d4e14dc5e",
+      "privateOriginal": true
+    },
+    "originalScheduleReceipt": {
+      "file": "2026-10-27-truthorlie121-scheduled.json",
+      "sha256": "4dc3587f107006a0feb7fb3d7c7bdda1f8c5f737b0b0394c9b38b001df89635c",
+      "privateOriginal": true
+    },
+    "oldMediaSha256": "9c7314e764bc901bff1883d57adc87023de665f51cabb36238cd543753889c73",
+    "actualPublicConfirmed": false,
+    "actualPublishedAt": null,
+    "post24hMetricsDue": null,
+    "post72hMetricsDue": null,
+    "proofs": [
+      {
+        "file": "03-refreshed-1.json",
+        "sha256": "1f426a1a5732f6f115e71cd581636dd49e57aab441d92e1fa0a680735a739a9e",
+        "privateOriginal": true
+      },
+      {
+        "file": "result.json",
+        "sha256": "5e95b7d46a6079ab1c576b04cdc829e80ec6201adafabc5f53583bb2c17f52f4",
+        "privateOriginal": true
+      },
+      {
+        "file": "controller.json",
+        "sha256": "80931d96b0ff183cd9cc8077155089be863fc1fb07fb571537e6952dfe8d5bda",
+        "privateOriginal": true
+      }
+    ],
+    "limitations": [
+      "スマホ削除はowner申告。Rootがスマホ上の削除操作を独立確認した記録ではありません。",
+      "通常更新後の本人投稿一覧から旧IDリンク0件、他2予約を各1件で確認した時点の記録です。",
+      "消失証跡の書出し完了後、Homeへ戻る処理だけが読み取り専用HOME変数への代入で失敗。別投稿の変更0。後で別の有限操作により既存YouTubeタブを選択しました。"
+    ]
+  },
+  "historicalSnapshots": {
+    "reservations": "../append-delivery.json",
+    "partialHold0815": "../quality-hold-status.json",
+    "historicalOnly": true
+  },
+  "preservation": {
+    "immutableSchedulesUnchanged": true,
+    "oldMediaNotRewritten": true,
+    "frozen765PayloadRescanned": false,
+    "baseReceiptAndAcceptanceUnchanged": true,
+    "reservationFAppendUnchanged": true
+  },
+  "limits": {
+    "quality129Complete": false,
+    "qualityAcceptanceGranted": false,
+    "republishingAllowed": false,
+    "actualPublicationProved": false,
+    "followerOrRevenueGoalAchieved": false,
+    "fullWatchAndSubjectiveListenVerifiedByThisRecord": false
+  },
+  "sourceWriterActions": {
+    "gui": 0,
+    "browser": 0,
+    "runtime": 0,
+    "lease": 0,
+    "sns": 0,
+    "quality129Prefix": 0,
+    "manualLockChanges": 0
+  }
+}

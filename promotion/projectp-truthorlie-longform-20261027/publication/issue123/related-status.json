@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "kind": "reservation_snapshot_with_required_future_related_work",
+  "kind": "revoked_related_plan_with_withdrawal_record",
   "managementIssue": 123,
   "productionIssue": 121,
-  "state": "owner_quality_hold_stop_old_reservations_pending",
+  "state": "old_reservations_withdrawn_related_revoked",
   "shortVideoId": "4mxdwqgsOVA",
   "desiredMainVideoId": "pg8Ih4PAOBw",
   "actualNativeRelatedVideoId": null,
   "nativeRelatedConfigured": false,
   "mainPublicConfirmed": false,
-  "currentMainVisibilityAsReported": "scheduled_private",
+  "currentMainVisibilityAsReported": "private_unscheduled_confirmed",
   "nativePicker": {
     "observedAt": "2026-10-26T20:32:06.2557874Z",
     "exactTitleSearched": true,
@@ -37,7 +37,7 @@
     "updateExistingDailyAfterActualExecution": true,
     "originalStateAtReservationRecord": "not_executed",
     "executionAllowed": false,
-    "supersededBy": "quality-hold-status.json"
+    "supersededBy": "withdrawal-20261027/withdrawal-status.json"
   },
   "operationalPreparationSnapshot": {
     "file": "2026-10-27-truthorlie-related-required.json",
@@ -46,24 +46,31 @@
     "privateOriginal": true
   },
   "acceptance": {
+    "scope": "old_reservation_withdrawal_record_only",
+    "allThreeStopsConfirmed": true,
+    "shortToMainFunnelComplete": false,
+    "newQualityAcceptanceGranted": false,
+    "oldPublicationAllowed": false,
+    "recordEligibleForLatestSelfReviewAndNormalMerge": true
+  },
+  "rootCase": "https://github.com/Pui-core/-/issues/123#issuecomment-6426951020",
+  "limits": [
+    "旧公開・Related手順はowner品質差し戻しで撤回済み。旧版への関連付け・公開は再開しません。",
+    "3予約票と08:15のHOLDは当時の履歴です。後続の全停止証跡はcurrentStatusRecordに分離しました。",
+    "Issue123の受入は旧3予約withdrawalの記録です。再制作129の完成、品質採用、Related成功、公開実績を示しません。"
+  ],
+  "reservationSnapshotState": "required_wait_main_public",
+  "ownerQualityHold": true,
+  "oldRelatedInstructionValid": false,
+  "relatedExecutionAllowed": false,
+  "currentStatusRecord": "withdrawal-20261027/withdrawal-status.json",
+  "historicalReservationCommit": "83675c8c18929fd1f0e542fcd3455ad2f0c8b07c",
+  "acceptanceAtPartialHoldSnapshot": {
     "reservationRecordTechnicalCheckOnly": true,
     "shortToMainFunnelComplete": false,
     "finalSelfApproveAllowed": false,
     "mergeAllowed": false,
     "issueCloseAllowed": false,
     "ownWorktreeCleanupAllowed": false
-  },
-  "rootCase": "https://github.com/Pui-core/-/issues/123#issuecomment-6426951020",
-  "limits": [
-    "Owner withdrew old publication adoption. Earlier Related actions are revoked and must not execute.",
-    "Future actions are required and have not executed.",
-    "Three reservation receipts do not prove public availability or Related linkage.",
-    "Final approval, merge and Issue123 close remain blocked until Root supplies actual linkage/save/reload evidence or the actual fallback state."
-  ],
-  "reservationSnapshotState": "required_wait_main_public",
-  "ownerQualityHold": true,
-  "oldRelatedInstructionValid": false,
-  "relatedExecutionAllowed": false,
-  "currentStatusRecord": "quality-hold-status.json",
-  "historicalReservationCommit": "83675c8c18929fd1f0e542fcd3455ad2f0c8b07c"
+  }
 }
