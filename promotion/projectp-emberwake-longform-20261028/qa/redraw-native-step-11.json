@@ -1,0 +1,16 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/PhotoCraft/photocraft-cli.exe",
+  "args": [
+    "run",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\redraw-material-127\\redraw-10.pcraft",
+    "--cmd",
+    "shape.create",
+    "--params",
+    "{\"kind\":\"path\",\"path\":{\"subpaths\":[{\"closed\":true,\"knots\":[[280,192],[296,192],[296,200],[280,200]]},{\"closed\":true,\"knots\":[[320,192],[336,192],[336,200],[320,200]]},{\"closed\":true,\"knots\":[[296,200],[320,200],[320,208],[296,208]]}],\"fillRule\":\"nonzero\"},\"fill\":\"#a7a58c\",\"name\":\"顔の陰\"}",
+    "--out",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\redraw-material-127\\redraw-11.pcraft"
+  ],
+  "stdout": "{\"command\":\"shape.create\",\"result\":{\"bounds\":[280,192,56,16],\"fill\":\"#a7a58c\",\"kind\":\"path\",\"layer\":14,\"live\":null,\"name\":\"顔の陰\",\"path\":{\"fillRule\":\"nonzero\",\"inverted\":false,\"subpaths\":[{\"closed\":true,\"knots\":[{\"anchor\":[280.0,192.0],\"in\":[280.0,192.0],\"out\":[280.0,192.0],\"smooth\":false},{\"anchor\":[296.0,192.0],\"in\":[296.0,192.0],\"out\":[296.0,192.0],\"smooth\":false},{\"anchor\":[296.0,200.0],\"in\":[296.0,200.0],\"out\":[296.0,200.0],\"smooth\":false},{\"anchor\":[280.0,200.0],\"in\":[280.0,200.0],\"out\":[280.0,200.0],\"smooth\":false}],\"op\":\"combine\"},{\"closed\":true,\"knots\":[{\"anchor\":[320.0,192.0],\"in\":[320.0,192.0],\"out\":[320.0,192.0],\"smooth\":false},{\"anchor\":[336.0,192.0],\"in\":[336.0,192.0],\"out\":[336.0,192.0],\"smooth\":false},{\"anchor\":[336.0,200.0],\"in\":[336.0,200.0],\"out\":[336.0,200.0],\"smooth\":false},{\"anchor\":[320.0,200.0],\"in\":[320.0,200.0],\"out\":[320.0,200.0],\"smooth\":false}],\"op\":\"combine\"},{\"closed\":true,\"knots\":[{\"anchor\":[296.0,200.0],\"in\":[296.0,200.0],\"out\":[296.0,200.0],\"smooth\":false},{\"anchor\":[320.0,200.0],\"in\":[320.0,200.0],\"out\":[320.0,200.0],\"smooth\":false},{\"anchor\":[320.0,208.0],\"in\":[320.0,208.0],\"out\":[320.0,208.0],\"smooth\":false},{\"anchor\":[296.0,208.0],\"in\":[296.0,208.0],\"out\":[296.0,208.0],\"smooth\":false}],\"op\":\"combine\"}]},\"stroke\":null}}\n",
+  "stderr": ""
+}

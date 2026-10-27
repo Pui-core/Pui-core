@@ -1,0 +1,18 @@
+{
+  "status": "HOLD_VISUAL_NATIVE_RENDER_INCOMPATIBILITY",
+  "video": "videos/emberwake-art-history20b.mp4",
+  "sha256": "d5e3979c46889988f579cff08f8f615837d8a45ad96b87f1c360950b6b7699b6",
+  "frames": 600,
+  "seconds": 20.01,
+  "technicalAvDecodePassed": true,
+  "visualFailedInterval": [
+    10,
+    13
+  ],
+  "observed": "Final MP4 frames at10.5 and12 show colorbars; pre-render Native still previews did not. Late static PNG layer rendering cause not established.",
+  "originalsPreserved": true,
+  "replacementRevision": "emberwake-art-history20c",
+  "replacementUsesExistingUnseenActualGameplay": true,
+  "formal600Complete": false,
+  "published": false
+}

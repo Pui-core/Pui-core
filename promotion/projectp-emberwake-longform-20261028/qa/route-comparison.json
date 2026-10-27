@@ -1,0 +1,180 @@
+{
+  "status": "ACTUAL_NORMAL_AND_BRANCH_ROUTES_VERIFIED_PENDING_EDIT",
+  "episode": 2,
+  "sameLegitimateSeedSha256": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+  "normal": {
+    "attempt": "ep02-normal-route01",
+    "frames": 1884,
+    "rawSeconds": 62.8,
+    "actualFootings": [
+      {
+        "frame": 839,
+        "rect": [
+          590,
+          988,
+          104,
+          14
+        ],
+        "position": [
+          601.524658203125,
+          987.997314453125
+        ],
+        "onFloor": true
+      },
+      {
+        "frame": 893,
+        "rect": [
+          700,
+          960,
+          104,
+          14
+        ],
+        "position": [
+          725.462036132812,
+          959.987731933594
+        ],
+        "onFloor": true
+      },
+      {
+        "frame": 944,
+        "rect": [
+          810,
+          924,
+          104,
+          14
+        ],
+        "position": [
+          834.466247558594,
+          923.995544433594
+        ],
+        "onFloor": true
+      },
+      {
+        "frame": 994,
+        "rect": [
+          920,
+          884,
+          160,
+          20
+        ],
+        "position": [
+          943.470458984375,
+          883.997253417969
+        ],
+        "onFloor": true
+      }
+    ],
+    "dashesUsed": 0,
+    "xPresses": 0,
+    "falls": 0,
+    "completed": [
+      1,
+      2
+    ],
+    "saveSha256": "cb431591a49c23e157ce213dc5634ad65794d5e9bf3452a3e455245bc5fc9b97",
+    "ownedEngineGone": true,
+    "visualFrames": [
+      {
+        "frame": 839,
+        "sha256": "59e8f3cbccfb5780f133cb9e806eb248803608a9a6256adb83c1977f86b00253"
+      },
+      {
+        "frame": 893,
+        "sha256": "17a5200dc43c3c8fcbd5096caeb1ef40ea335d5c1aec4e5cde8781b61a6d9a9b"
+      },
+      {
+        "frame": 944,
+        "sha256": "ae78bfc44598225ad596ea265b2835cec0cdb81f6b966757ead27bd71603d7b3"
+      },
+      {
+        "frame": 994,
+        "sha256": "e1c75e1e12013992dfc5ac71de1734020bfb757e82dc849ba7a3da94e47d6f28"
+      }
+    ]
+  },
+  "branch": {
+    "attempt": "ep02-pilot01",
+    "actualFootings": [
+      {
+        "label": "branch-dash-landed-branch-a",
+        "frame": 846,
+        "rects": [
+          [
+            641,
+            980,
+            104,
+            12
+          ]
+        ],
+        "position": [
+          716.283020019531,
+          979.925231933594
+        ]
+      },
+      {
+        "label": "branch-dash-landed-branch-b",
+        "frame": 888,
+        "rects": [
+          [
+            795,
+            932,
+            104,
+            12
+          ]
+        ],
+        "position": [
+          801.399963378906,
+          931.925231933594
+        ]
+      },
+      {
+        "label": "actual-branch-merge-on-island",
+        "frame": 942,
+        "rects": [
+          [
+            920,
+            884,
+            160,
+            20
+          ]
+        ],
+        "position": [
+          944.003784179688,
+          883.925231933594
+        ]
+      }
+    ],
+    "dashesUsed": 2,
+    "falls": 0,
+    "completed": [
+      1,
+      2
+    ]
+  },
+  "sameMergeIsland": [
+    920,
+    884,
+    160,
+    20
+  ],
+  "visualLandingCheck": {
+    "status": "DIRECT_RAW_PNG_REVIEW",
+    "normalFrames": [
+      839,
+      893,
+      944,
+      994
+    ],
+    "normalImageSha256": [
+      "59e8f3cbccfb5780f133cb9e806eb248803608a9a6256adb83c1977f86b00253",
+      "17a5200dc43c3c8fcbd5096caeb1ef40ea335d5c1aec4e5cde8781b61a6d9a9b",
+      "ae78bfc44598225ad596ea265b2835cec0cdb81f6b966757ead27bd71603d7b3",
+      "e1c75e1e12013992dfc5ac71de1734020bfb757e82dc849ba7a3da94e47d6f28"
+    ],
+    "branchBFrame": 888,
+    "rootPilotBranchBPreviouslyReviewed": true
+  },
+  "duplicateStoryOrResultSecondsCountedAsNew": 0,
+  "competitiveTimingComparison": false,
+  "formal600Complete": false
+}

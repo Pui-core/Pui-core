@@ -1,0 +1,16 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/PhotoCraft/photocraft-cli.exe",
+  "args": [
+    "run",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\redraw-material-127\\redraw-08.pcraft",
+    "--cmd",
+    "shape.create",
+    "--params",
+    "{\"kind\":\"path\",\"path\":{\"subpaths\":[{\"closed\":true,\"knots\":[[256,56],[296,56],[296,64],[256,64]]},{\"closed\":true,\"knots\":[[296,64],[304,64],[304,72],[296,72]]},{\"closed\":true,\"knots\":[[304,72],[312,72],[312,80],[304,80]]},{\"closed\":true,\"knots\":[[312,80],[320,80],[320,88],[312,88]]}],\"fillRule\":\"nonzero\"},\"fill\":\"#96c9b4\",\"name\":\"フードの縁\"}",
+    "--out",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\redraw-material-127\\redraw-09.pcraft"
+  ],
+  "stdout": "{\"command\":\"shape.create\",\"result\":{\"bounds\":[256,56,64,32],\"fill\":\"#96c9b4\",\"kind\":\"path\",\"layer\":12,\"live\":null,\"name\":\"フードの縁\",\"path\":{\"fillRule\":\"nonzero\",\"inverted\":false,\"subpaths\":[{\"closed\":true,\"knots\":[{\"anchor\":[256.0,56.0],\"in\":[256.0,56.0],\"out\":[256.0,56.0],\"smooth\":false},{\"anchor\":[296.0,56.0],\"in\":[296.0,56.0],\"out\":[296.0,56.0],\"smooth\":false},{\"anchor\":[296.0,64.0],\"in\":[296.0,64.0],\"out\":[296.0,64.0],\"smooth\":false},{\"anchor\":[256.0,64.0],\"in\":[256.0,64.0],\"out\":[256.0,64.0],\"smooth\":false}],\"op\":\"combine\"},{\"closed\":true,\"knots\":[{\"anchor\":[296.0,64.0],\"in\":[296.0,64.0],\"out\":[296.0,64.0],\"smooth\":false},{\"anchor\":[304.0,64.0],\"in\":[304.0,64.0],\"out\":[304.0,64.0],\"smooth\":false},{\"anchor\":[304.0,72.0],\"in\":[304.0,72.0],\"out\":[304.0,72.0],\"smooth\":false},{\"anchor\":[296.0,72.0],\"in\":[296.0,72.0],\"out\":[296.0,72.0],\"smooth\":false}],\"op\":\"combine\"},{\"closed\":true,\"knots\":[{\"anchor\":[304.0,72.0],\"in\":[304.0,72.0],\"out\":[304.0,72.0],\"smooth\":false},{\"anchor\":[312.0,72.0],\"in\":[312.0,72.0],\"out\":[312.0,72.0],\"smooth\":false},{\"anchor\":[312.0,80.0],\"in\":[312.0,80.0],\"out\":[312.0,80.0],\"smooth\":false},{\"anchor\":[304.0,80.0],\"in\":[304.0,80.0],\"out\":[304.0,80.0],\"smooth\":false}],\"op\":\"combine\"},{\"closed\":true,\"knots\":[{\"anchor\":[312.0,80.0],\"in\":[312.0,80.0],\"out\":[312.0,80.0],\"smooth\":false},{\"anchor\":[320.0,80.0],\"in\":[320.0,80.0],\"out\":[320.0,80.0],\"smooth\":false},{\"anchor\":[320.0,88.0],\"in\":[320.0,88.0],\"out\":[320.0,88.0],\"smooth\":false},{\"anchor\":[312.0,88.0],\"in\":[312.0,88.0],\"out\":[312.0,88.0],\"smooth\":false}],\"op\":\"combine\"}]},\"stroke\":null}}\n",
+  "stderr": ""
+}

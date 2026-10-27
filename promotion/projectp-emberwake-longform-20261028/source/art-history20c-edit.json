@@ -1,0 +1,214 @@
+{
+  "name": "emberwake-art-history20c",
+  "comp": "EMBERWAKE retained art comparison20c",
+  "duration": 20,
+  "frames": 600,
+  "fps": 30,
+  "status": "INDEPENDENT_ART_COMPARISON_ONLY",
+  "shots": [
+    {
+      "id": "idle retained art comparison",
+      "file": "media/traveler-art-history-0.png",
+      "sourceStart": 0,
+      "start": 0,
+      "end": 60,
+      "camera": {
+        "anchor": [
+          960,
+          540
+        ],
+        "position": [
+          960,
+          540
+        ],
+        "scale": 100
+      },
+      "still": true
+    },
+    {
+      "id": "historical24 pose sequence",
+      "file": "media/traveler-old24-demo.mov",
+      "sourceStart": 0,
+      "start": 60,
+      "end": 300,
+      "camera": {
+        "anchor": [
+          256,
+          256
+        ],
+        "position": [
+          550,
+          615
+        ],
+        "scale": 100
+      }
+    },
+    {
+      "id": "redrawn64 pose sequence",
+      "file": "media/traveler-demo.mov",
+      "sourceStart": 0,
+      "start": 60,
+      "end": 300,
+      "camera": {
+        "anchor": [
+          256,
+          256
+        ],
+        "position": [
+          1270,
+          615
+        ],
+        "scale": 100
+      }
+    },
+    {
+      "id": "current game in place of unsupported late still PNGs",
+      "file": "media/ep06-game.mp4",
+      "sourceStart": 510,
+      "start": 300,
+      "end": 390
+    },
+    {
+      "id": "current production gameplay context",
+      "file": "media/ep06-game.mp4",
+      "sourceStart": 600,
+      "start": 390,
+      "end": 480
+    },
+    {
+      "id": "current production actual landing",
+      "file": "media/ep06-game.mp4",
+      "sourceStart": 690,
+      "start": 480,
+      "end": 600,
+      "camera": {
+        "anchor": [
+          960,
+          800
+        ],
+        "position": [
+          733,
+          645
+        ],
+        "scale": 180
+      }
+    }
+  ],
+  "voices": [
+    {
+      "id": "question",
+      "text": "同じ大きさのまま、原画を細かく。左右で、形を比べてください。",
+      "at": 0.1,
+      "windowEnd": 5.5,
+      "reuseFrom": {
+        "spec": "source/emberwake-art-history20b-measured.json",
+        "id": "question"
+      }
+    },
+    {
+      "id": "art",
+      "text": "左は二十四ピクセル、右は六十四ピクセル。動く姿勢と、灯の形が変わっています。",
+      "at": 5.6,
+      "windowEnd": 13,
+      "reuseFrom": {
+        "spec": "source/emberwake-art-history20b-measured.json",
+        "id": "art"
+      }
+    },
+    {
+      "id": "world",
+      "text": "ゲームで見渡せる範囲は維持。足元と、次の着地点を見ながら進みます。",
+      "at": 13.2,
+      "windowEnd": 19.9,
+      "reuseFrom": {
+        "spec": "source/emberwake-art-history20b-measured.json",
+        "id": "world"
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "id": "header",
+      "lines": [
+        "大きさを変えず、細部を描く。"
+      ],
+      "at": 2,
+      "end": 10,
+      "y": 74,
+      "size": 58
+    },
+    {
+      "id": "source",
+      "lines": [
+        "保存された原画の動作比較"
+      ],
+      "at": 2,
+      "end": 10,
+      "y": 170,
+      "size": 28,
+      "color": "#AAC8BF"
+    },
+    {
+      "id": "old",
+      "lines": [
+        "0.8  原画24px"
+      ],
+      "at": 2,
+      "end": 10,
+      "x": 360,
+      "y": 897,
+      "size": 38,
+      "color": "#AAC8BF"
+    },
+    {
+      "id": "new",
+      "lines": [
+        "0.9  再描画64px"
+      ],
+      "at": 2,
+      "end": 10,
+      "x": 1080,
+      "y": 897,
+      "size": 38,
+      "color": "#EDB468"
+    },
+    {
+      "id": "scope",
+      "lines": [
+        "本編制作版0.12.0／実画面"
+      ],
+      "at": 13,
+      "end": 15.4,
+      "y": 100,
+      "size": 30,
+      "color": "#AAC8BF"
+    }
+  ],
+  "previewTimes": [
+    0.5,
+    3,
+    6.5,
+    8.3,
+    10,
+    10.5,
+    11.5,
+    12,
+    12.967,
+    13,
+    14,
+    17,
+    19.5
+  ],
+  "materialReenactmentNotHistoricalGui": true,
+  "historicalOldGameRecording": false,
+  "productVersion": "0.12.0",
+  "sourceRate": 1,
+  "gameAudioRecorded": false,
+  "addedSfx": false,
+  "hostAbsentBecauseMaterialComparison": true,
+  "sourceDesignHasAiDerivedElements": true,
+  "thisMaterialPassImageGenerationUsed": false,
+  "formal600Complete": false,
+  "subjectiveListen": false,
+  "wholeDirectWatch": false
+}

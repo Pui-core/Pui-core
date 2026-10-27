@@ -1,0 +1,13 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/FilmCraft/filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-jetcut03b-comparison.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\videos\\\\emberwake-jetcut03b-comparison.mp4\",\"format\":\"h264\",\"audio\":true,\"audioCodec\":\"aac\",\"bitrateMode\":\"crf\",\"crf\":17,\"hardwareEncoding\":\"off\",\"gpuRendering\":\"off\",\"wait\":true}"
+  ],
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\videos\\\\emberwake-jetcut03b-comparison.mp4\",\n  \"result\": {\n    \"bytes\": 29241227,\n    \"frames\": 2160,\n    \"path\": \"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\videos\\\\emberwake-jetcut03b-comparison.mp4\",\n    \"render_fps\": 44.320934766597404,\n    \"seconds\": 48.7354342\n  }\n}\n",
+  "stderr": ""
+}

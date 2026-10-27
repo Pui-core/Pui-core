@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-jetcut03b-comparison.ecproj",
+    "render-frame",
+    "--comp",
+    "EMBERWAKE choices and memory review03b",
+    "--time",
+    "0.5",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\qa\\emberwake-jetcut03b-comparison-0.500.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":6,\"height\":1080,\"ms\":397.9,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\qa\\\\emberwake-jetcut03b-comparison-0.500.png\",\"time\":0.5,\"width\":1920}\n",
+  "stderr": ""
+}

@@ -1,0 +1,140 @@
+{
+  "status": "TECHNICAL_REVIEW_BLOCK_PASS_PENDING_CREATIVE_CONTINUOUS_REVIEW",
+  "videoSha256": "6444a834251061c661962c87b2f87b9aba742fd8bb670a155e288ddf6418bf3b",
+  "duration": 20.01,
+  "frames": 600,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "fullAvDecode": true,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLufs": -18.8,
+    "truePeakDbtp": -2.7,
+    "voices": [
+      {
+        "id": "question",
+        "file": "emberwake-art-history20-voice-001.wav",
+        "at": 0.1,
+        "samples": 256512,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999366226499156,
+        "headCorrelation": 0.9999921007741118,
+        "tailCorrelation": 0.9999382529106858
+      },
+      {
+        "id": "art",
+        "file": "emberwake-art-history20b-voice-002.wav",
+        "at": 5.6,
+        "samples": 299520,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999362730807644,
+        "headCorrelation": 0.9999709810891649,
+        "tailCorrelation": 0.9998342458286327
+      },
+      {
+        "id": "world",
+        "file": "emberwake-art-history20b-voice-003.wav",
+        "at": 13.2,
+        "samples": 250880,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.999925982350229,
+        "headCorrelation": 0.9999813144360369,
+        "tailCorrelation": 0.9997058818529686
+      }
+    ],
+    "allPhrasesAndHeadTailVerified": true
+  },
+  "finalFrames": [
+    {
+      "file": "qa/emberwake-art-history20d-final-000.png",
+      "time": 0.5
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-001.png",
+      "time": 1.9666666666666666
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-002.png",
+      "time": 2
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-003.png",
+      "time": 3
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-004.png",
+      "time": 6.5
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-005.png",
+      "time": 8.3
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-006.png",
+      "time": 9.966666666666667
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-007.png",
+      "time": 10
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-008.png",
+      "time": 10.5
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-009.png",
+      "time": 11.5
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-010.png",
+      "time": 12
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-011.png",
+      "time": 12.966666666666667
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-012.png",
+      "time": 12.967
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-013.png",
+      "time": 13
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-014.png",
+      "time": 14
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-015.png",
+      "time": 15.966666666666667
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-016.png",
+      "time": 16
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-017.png",
+      "time": 17
+    },
+    {
+      "file": "qa/emberwake-art-history20d-final-018.png",
+      "time": 19.5
+    }
+  ],
+  "quoteProvenance": "Any quoted game dialogue is read by VOICEVOX narrator with edited line breaks",
+  "sourceRate": 1,
+  "noGameplayFreeze": true,
+  "staticArtMaterialSeconds": 2,
+  "subjectiveListen": false,
+  "wholeDirectWatch": false,
+  "formal600Complete": false,
+  "published": false
+}

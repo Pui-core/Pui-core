@@ -10,28 +10,32 @@ const product=path.join(workspace,'product');
 const [epText,attempt,previousAttempt]=process.argv.slice(2);
 const episode=Number(epText);
 if(!Number.isInteger(episode)||episode<1||episode>15||!/^ep[0-9]{2}-[a-z0-9-]+$/.test(attempt||''))throw Error('episode 1..15 and unique epNN-name required');
+const normalRoute=process.argv.includes('--normal-route');if(normalRoute&&episode!==2)throw Error('Normal-route comparison currently scoped to actual episode2');
+const replayComparison=process.argv.includes('--replay-short-vs-hold');if(replayComparison&&episode!==1)throw Error('Replay comparison currently scoped to actual episode1');
+const takeBranch=episode===2&&!normalRoute;
 const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const before=JSON.parse(fs.readFileSync(path.join(root,'qa/product-source-before.json')));
 for(const f of before.files)if(hash(path.join(product,f.file))!==f.sha256)throw Error('Pinned core changed '+f.file);
 const out=path.join(workspace,attempt),data=out+'-userdata',config=out+'-config',cache=out+'-cache';
 if([out,data,config,cache].some(p=>fs.existsSync(p)))throw Error('Attempt/profile already exists; preserve it');
 let seedSha='',seedSource=null;
-if(episode>1){
+if(episode>1||replayComparison){
  if(!/^ep[0-9]{2}-[a-z0-9-]+$/.test(previousAttempt||''))throw Error('Previous owned finite attempt required');
  const prior=JSON.parse(fs.readFileSync(path.join(workspace,previousAttempt,'capture.json')));
- if(prior.status!=='PASS_EPISODE_CAPTURE_PENDING_REVIEW'||prior.episode!==episode-1||JSON.stringify(prior.completed_final)!==JSON.stringify(Array.from({length:episode-1},(_,i)=>i+1)))throw Error('Previous normal completed state invalid');
+ const expectedPrior=replayComparison?1:episode-1;
+ if(prior.status!=='PASS_EPISODE_CAPTURE_PENDING_REVIEW'||prior.episode!==expectedPrior||JSON.stringify(prior.completed_final)!==JSON.stringify(Array.from({length:expectedPrior},(_,i)=>i+1)))throw Error('Previous normal completed state invalid');
  seedSource=path.join(workspace,previousAttempt+'-userdata/godot/app_userdata/EMBERWAKE/emberwake-campaign-1.0-jump-1.1.json');
  seedSha=hash(seedSource);if(seedSha!==prior.save_sha256_after)throw Error('Previous legitimate save SHA changed');
  const saved=JSON.parse(fs.readFileSync(seedSource));if(JSON.stringify(saved.completed)!==JSON.stringify(prior.completed_final))throw Error('Actual save progress differs');
 }
 fs.mkdirSync(out,{recursive:true});
 if(seedSource){const dest=path.join(data,'godot/app_userdata/EMBERWAKE/emberwake-campaign-1.0-jump-1.1.json');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.copyFileSync(seedSource,dest);if(hash(dest)!==seedSha)throw Error('Seed copy changed');}
-const driver=path.join(source,'capture-episode.gd');
-const args=['-a','-s','-screen 0 1920x1080x24 -nolisten tcp','/home/pui/.local/bin/godot','--path',product,'--rendering-method','gl_compatibility','--audio-driver','Dummy','--fixed-fps','30','--disable-vsync','--resolution','1920x1080','--script',driver,'--','--out',out,'--episode',String(episode),'--seed-sha',seedSha,'--branch',String(episode===2)];
+const driver=path.join(source,replayComparison?'capture-replay.gd':'capture-episode.gd');
+const args=['-a','-s','-screen 0 1920x1080x24 -nolisten tcp','/home/pui/.local/bin/godot','--path',product,'--rendering-method','gl_compatibility','--audio-driver','Dummy','--fixed-fps','30','--disable-vsync','--resolution','1920x1080','--script',driver,'--','--out',out,'--episode',String(episode),'--seed-sha',seedSha,'--branch',String(takeBranch)];
 const env={...process.env,XDG_DATA_HOME:data,XDG_CONFIG_HOME:config,XDG_CACHE_HOME:cache,PROJECTP_CAPTURE_DATA_ROOT:data,LP_NUM_THREADS:'2',LIBGL_ALWAYS_SOFTWARE:'1'};
 const log=fs.openSync(out+'.log','wx');
 const child=spawn('/usr/bin/xvfb-run',args,{env,detached:true,stdio:['ignore',log,log]});
-const launch={schemaVersion:1,episode,attempt,started:new Date().toISOString(),launcherPid:child.pid,args,driverSha256:hash(driver),seedSha256:seedSha,seedSource,owned:{workspace,product,out,data,config,cache},limits:{wallSeconds:720,maxFrames:6000},status:'RUNNING'};
+const launch={schemaVersion:1,episode,attempt,takeBranch,normalRouteComparison:normalRoute,replayShortVsHoldComparison:replayComparison,started:new Date().toISOString(),launcherPid:child.pid,args,driverSha256:hash(driver),baseDriverSha256:hash(path.join(source,'capture-episode.gd')),seedSha256:seedSha,seedSource,owned:{workspace,product,out,data,config,cache},limits:{wallSeconds:720,maxFrames:6000},status:'RUNNING'};
 fs.writeFileSync(out+'-launch.json',JSON.stringify(launch,null,2)+'\n');console.log(JSON.stringify(launch));
 let receivedStopSignal=null;let wallBoundReached=false;const watchdog=setTimeout(()=>{wallBoundReached=true;try{process.kill(-child.pid,'SIGTERM');}catch(error){if(error.code!=='ESRCH')console.error(error);}},720000);
 for(const signal of ['SIGINT','SIGTERM'])process.once(signal,()=>{receivedStopSignal=signal;try{process.kill(-child.pid,signal);}catch(error){if(error.code!=='ESRCH')console.error(error);}});

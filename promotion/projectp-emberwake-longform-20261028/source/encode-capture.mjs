@@ -7,10 +7,13 @@ if(receipt.status!=='PASS_EPISODE_CAPTURE_PENDING_REVIEW'||launch.status!=='FINI
 const captureFiles=fs.readdirSync(path.join(base,'frames')).filter(n=>/^frame-[0-9]{6}\.png$/.test(n)).sort();
 if(captureFiles.length!==receipt.frame_count)throw Error('Actual PNG count differs');
 const inputs=captureFiles.map((name,i)=>{if(name!=='frame-'+String(i).padStart(6,'0')+'.png')throw Error('Raw frame discontinuity');const p=path.join(base,'frames',name);return{file:name,bytes:fs.statSync(p).size,sha256:hash(p)};});
-const key='ep'+String(receipt.episode).padStart(2,'0'),output=file('media/'+key+'-game.mp4');
+const episodeKey='ep'+String(receipt.episode).padStart(2,'0'),key=process.argv[3]||episodeKey;
+if(key!==episodeKey&&(!key.startsWith(episodeKey+'-')||!/^ep[0-9]{2}-[a-z0-9-]+$/.test(key)))throw Error('Unique same-episode comparison output key required');
+const output=file('media/'+key+'-game.mp4');
 if(fs.existsSync(output))throw Error('Encoded game already exists; preserve it');
 await run(FF,['-v','error','-framerate','30','-start_number','0','-i',np(path.join(base,'frames/frame-%06d.png')),'-frames:v',String(receipt.frame_count),'-c:v','libx264','-threads','2','-preset','veryfast','-crf','12','-pix_fmt','yuv420p','-movflags','+faststart','-an',np(output)],key+'-raw-encode.json');
 const probe=parse((await run(FP,['-v','error','-show_streams','-show_format','-of','json',np(output)],key+'-raw-probe.json')).stdout),v=probe.streams.find(x=>x.codec_type==='video');
 if(v.width!==1920||v.height!==1080||Number(v.nb_frames)!==receipt.frame_count||v.r_frame_rate!=='30/1'||probe.streams.some(x=>x.codec_type==='audio'))throw Error('Encoded raw dimensions/frames/fps/audio mismatch');
 const summary={schemaVersion:1,episode:receipt.episode,attempt,sourceCommit:receipt.sourceCommit,gameVersion:receipt.gameVersion,captureReceiptSha256:hash(receiptPath),launchReceiptSha256:hash(base+'-launch.json'),rawFrames:receipt.frame_count,fps:30,duration:receipt.frame_count/30,inputs,video:'media/'+key+'-game.mp4',videoSha256:await digest(output),gameAudioRecorded:false,completed:receipt.completed_final,hearths:receipt.hearth_lit_final,switches:receipt.switch_lit_final,falls:receipt.falls_final,ordinaryInputOnly:true,coreFilesChecked:launch.coreFilesChecked,changedCore:launch.changedCore,events:receipt.events.map(({buttons,...e})=>e),inputEvents:receipt.input_events,wholeDirectWatch:false};
+if(receipt.control_comparison)summary.controlComparison=receipt.control_comparison;
 save('qa/'+key+'-capture-binding.json',summary);console.log(JSON.stringify({episode:receipt.episode,frames:receipt.frame_count,seconds:receipt.frame_count/30,sha256:summary.videoSha256,completed:summary.completed}));

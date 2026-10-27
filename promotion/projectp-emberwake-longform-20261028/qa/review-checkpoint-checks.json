@@ -1,0 +1,56 @@
+{
+  "nodeSyntaxFiles": [
+    "run-capture.mjs",
+    "encode-capture.mjs",
+    "metadata.mjs",
+    "jetcut-project.mjs",
+    "jetcut-verify.mjs",
+    "scan-native-output.mjs",
+    "sprite-materials.mjs",
+    "sprite-old24-materials.mjs",
+    "history-asset-board.mjs",
+    "redraw-material.mjs",
+    "review03-delivery.mjs"
+  ],
+  "allSyntaxPassed": true,
+  "productCoreFiles": 72,
+  "productChangedFiles": [],
+  "captureFiniteRunsVerified": [
+    "ep02-normal-route01",
+    "ep01-replay-controls01",
+    "ep13-selective01"
+  ],
+  "fullLongformRenderStarted": false,
+  "formal600Complete": false,
+  "recordedOwnedFiniteRunTermination": [
+    {
+      "attempt": "ep02-normal-route01",
+      "status": "FINISHED",
+      "exitCode": 0,
+      "coreFiles": 72,
+      "changedCore": [],
+      "ownedEnginePid": 2526242,
+      "ownedEngineGone": true
+    },
+    {
+      "attempt": "ep01-replay-controls01",
+      "status": "FINISHED",
+      "exitCode": 0,
+      "coreFiles": 72,
+      "changedCore": [],
+      "ownedEnginePid": 2597029,
+      "ownedEngineGone": true
+    },
+    {
+      "attempt": "ep13-selective01",
+      "status": "FINISHED",
+      "exitCode": 0,
+      "coreFiles": 72,
+      "changedCore": [],
+      "ownedEnginePid": 2676567,
+      "ownedEngineGone": true
+    }
+  ],
+  "runtimeStartedDuringThisChecksPass": false,
+  "gameCaptureActualModes": "Independent Xvfb/ordinary InputEventKey/unmodified physics; no shared GUI"
+}
