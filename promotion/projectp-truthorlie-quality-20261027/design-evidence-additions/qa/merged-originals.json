@@ -1,0 +1,228 @@
+{
+  "baseMasterSha256": "83dd07ec3b4b7fb6b3745ed41a82adc48e7660ddbb0533619a5ea539ed6baf26",
+  "baseVoiceCues": [
+    {
+      "id": "hook",
+      "file": "voice-hook.wav",
+      "sha256": "cbf1f0817100b22270653f0b4f0895fa78d1950a5c8e18f5b3a457c03674eba1"
+    },
+    {
+      "id": "rule",
+      "file": "voice-rule.wav",
+      "sha256": "8b7bed64b16ceb4b55c71fb711b85f3542265f8f067d4e83d4f60d3ade243d77"
+    },
+    {
+      "id": "case1",
+      "file": "voice-case1.wav",
+      "sha256": "f4b78ea826aa3f71ddcffe18efc2fe5ce57042a014df37bfb2700745e4c667fc"
+    },
+    {
+      "id": "hit",
+      "file": "voice-hit.wav",
+      "sha256": "d4930d930bbdb38e8ef7d36b748de8b55f44ae3ce2ff3d56538822cd3bddbfa1"
+    },
+    {
+      "id": "switch",
+      "file": "voice-switch.wav",
+      "sha256": "e3b7803f11b43f4d13fe5b26b837f699ad220f8b381ddd96b242ce913fe7900d"
+    },
+    {
+      "id": "case2",
+      "file": "voice-case2.wav",
+      "sha256": "14562e611e1a96e87c491b4830788fed45af12ffe12931cb1bccb026b761e489"
+    },
+    {
+      "id": "miss",
+      "file": "voice-miss.wav",
+      "sha256": "d124c15f9e5295715566df869b5f55f35589088eda5b25132910b736792d4bf0"
+    },
+    {
+      "id": "consequence",
+      "file": "voice-consequence.wav",
+      "sha256": "450476b21fe26335560dfe9b22518fbf04f77893cffd7d20d780f576e1f71cfe"
+    },
+    {
+      "id": "next",
+      "file": "voice-next.wav",
+      "sha256": "9989a2dca9cb5ff1e26af56afb70b6974f0b22b9355249418b92ee61ee367935"
+    },
+    {
+      "id": "d2-01",
+      "file": "voice-d2-01.wav",
+      "sha256": "377ab7f5a9d943cc282bc5fdd362f9fc50143cb672229b0ec1dccff52c4d0459"
+    },
+    {
+      "id": "d2-02",
+      "file": "voice-d2-02.wav",
+      "sha256": "f7693b0735bda7b44cf315ae18632c1658091225f7e70af7f95880feff302ade"
+    },
+    {
+      "id": "d2-03",
+      "file": "voice-d2-03.wav",
+      "sha256": "34fafeb6cc47ff2df762373ec889c7783c4f779f8c767d8d0299eb859240b743"
+    },
+    {
+      "id": "d2-04",
+      "file": "voice-d2-04.wav",
+      "sha256": "e6adae27d0eb16530b713eefd0c2e06acbca5e089ca4a1e36b03f621239ec7c2"
+    },
+    {
+      "id": "d2-05",
+      "file": "voice-d2-05.wav",
+      "sha256": "6e5a65a3d114a0f6874dfb53939a70bac0aa7debccb6f6bc939011568814e063"
+    },
+    {
+      "id": "d3-01",
+      "file": "voice-d3-01.wav",
+      "sha256": "cf6e5431413de09814beaaae200847b0cbac991c61d67bc1067eaf020e24d91c"
+    },
+    {
+      "id": "d3-02",
+      "file": "voice-d3-02.wav",
+      "sha256": "539216c52e32e5d85eebb98e7a89e3e9d858703faa6189a60f89fc9eeec96cf6"
+    },
+    {
+      "id": "d3-03",
+      "file": "voice-d3-03.wav",
+      "sha256": "35976021808969f8c2e2aa432cf776bc8f83f6f3b9d4f877b54a2dd8c4628124"
+    },
+    {
+      "id": "d4-01",
+      "file": "voice-d4-01.wav",
+      "sha256": "27ecf47f0206b1ea3e9045ca543cf752b27fa1d20063ead29e08cb97e776b5eb"
+    },
+    {
+      "id": "d4-02",
+      "file": "voice-d4-02.wav",
+      "sha256": "d531f01f87d46e686f8fbe5072e8445767afe8db7fef3f8969aec90951159cdd"
+    },
+    {
+      "id": "d4-03",
+      "file": "voice-d4-03.wav",
+      "sha256": "4a96cf7d427f9fb2c571382a4bc2f8157e1e251a51c9dd2185fff914dd12dc6e"
+    },
+    {
+      "id": "d4-04",
+      "file": "voice-d4-04.wav",
+      "sha256": "33ba085314999b88236ff56e742084c82fb00ab33d10a14d7c26d14d0b2c4161"
+    },
+    {
+      "id": "d4-05",
+      "file": "voice-d4-05.wav",
+      "sha256": "d0a2ade3f3c01b7986bc46ada75de672de93cc6472bc6a7edaf6dc9f96aa9966"
+    },
+    {
+      "id": "d5-01",
+      "file": "voice-d5-01.wav",
+      "sha256": "aa804e4fa3794509ff1bde5ea4a8223eed565ab21b1047a7f1269daa14dc6e2b"
+    },
+    {
+      "id": "d5-02",
+      "file": "voice-d5-02.wav",
+      "sha256": "f647dd8a65b4fef0fdbddc6539428d2930b3235cc7d42a306db7a6c13f2f7aae"
+    },
+    {
+      "id": "d5-03",
+      "file": "voice-d5-03.wav",
+      "sha256": "0ca625d8905fe78ab1e45ae6f1b3f3cdebe379a3652f411754c1006cbcb884d8"
+    },
+    {
+      "id": "d5-04",
+      "file": "voice-d5-04.wav",
+      "sha256": "df1c9786d5312e0a60c34a95ce0f5e2b12b1c52215f26bc2112b74ee62cfe112"
+    },
+    {
+      "id": "d5-05",
+      "file": "voice-d5-05.wav",
+      "sha256": "783bdb61060f5037a7f7222815d3a913a31b533e9b3da8337110b0cd06efe9db"
+    },
+    {
+      "id": "d5-06",
+      "file": "voice-d5-06.wav",
+      "sha256": "f15bc7a307e4364a2b53bc710bdf84a8b2458316866259a6917fc2149e9d6440"
+    },
+    {
+      "id": "d6-01",
+      "file": "voice-d6-01.wav",
+      "sha256": "1b60d2eff74cb1bb527ac90874fe3d01c3aaf5de61aba9c9907844ab0dded347"
+    },
+    {
+      "id": "d6-02",
+      "file": "voice-d6-02.wav",
+      "sha256": "d2775667e36cc040c094aed177f528beddce9a0b10dfc60cf7c691e01de0af9d"
+    },
+    {
+      "id": "d6-03",
+      "file": "voice-d6-03.wav",
+      "sha256": "cfb00b04fa2c297ba764e4538f1273de4e8ac08aa2b256330446a9d1fc47daeb"
+    },
+    {
+      "id": "d6-04",
+      "file": "voice-d6-04.wav",
+      "sha256": "5c46e145d8c39f8c00e8cf455eec9f2452b97e0d0c403f4afd27718fe28cdae7"
+    },
+    {
+      "id": "d6-05",
+      "file": "voice-d6-05.wav",
+      "sha256": "c228004d52e6a55b1c8157a68c36ad74827df60e6f0de58061b7fd9128fbdfff"
+    },
+    {
+      "id": "d6-06",
+      "file": "voice-d6-06.wav",
+      "sha256": "9ab95614a00a95a8611b7657543efc247d25f2c055361e92640ad9174274146f"
+    }
+  ],
+  "newCues": [
+    {
+      "id": "logo-question",
+      "file": "voice-logo-question.wav",
+      "sha256": "51391d0e9a0cafa856b31d14f67631b4ae0f85c562224f6d4e22634528558774"
+    },
+    {
+      "id": "logo-changes",
+      "file": "voice-logo-changes.wav",
+      "sha256": "958d030a4dd3fdef7736a3c87d4e61660c1b3f9bc882d4eb1c5883e018b5e9bf"
+    },
+    {
+      "id": "night-choice-short",
+      "file": "voice-night-choice-short.wav",
+      "sha256": "ca3b91fa5ca9dc67ed2edce09809ac8d4f37872912acd541b586eecce27d9901"
+    },
+    {
+      "id": "night-app-short",
+      "file": "voice-night-app-short.wav",
+      "sha256": "a4a4a189fbc6e767af62b5772a4d185594687153810b9f8746351700dad7ad04"
+    },
+    {
+      "id": "paper-evolution",
+      "file": "voice-paper-evolution.wav",
+      "sha256": "e75fec8a0756cb90a3f455fd220fa1e0b5c83e770e6287f4517fcf3157ed38b9"
+    },
+    {
+      "id": "paper-text-short",
+      "file": "voice-paper-text-short.wav",
+      "sha256": "16ac008836a4f3c33c5a707ac7e2a2a690b82a541b21a749b0a2ace221625aa9"
+    },
+    {
+      "id": "field-change",
+      "file": "voice-field-change.wav",
+      "sha256": "feed56c62955ca82b10b58821ad0ed6d6b0c318f4adf562f72d5d203fb0406b1"
+    },
+    {
+      "id": "footer-change",
+      "file": "voice-footer-change.wav",
+      "sha256": "270871c005925f082df5dc2cbc224848772c388af5271d8780dbc88c7313ba02"
+    },
+    {
+      "id": "seal-change",
+      "file": "voice-seal-change.wav",
+      "sha256": "82fd44aba7bc9fb4c283fb7207d4d6358bc5da16d52b6f1d00b65cd88ac064e7"
+    },
+    {
+      "id": "return-short",
+      "file": "voice-return-short.wav",
+      "sha256": "5d1bcc00f19d3f1a84e58cd1b2aab2305ae6134148696211e98bf3ac946e84ba"
+    }
+  ],
+  "noOriginalEdits": true
+}

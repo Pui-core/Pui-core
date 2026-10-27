@@ -1,0 +1,20 @@
+{
+  "status": "PASS_EC_FC_SAME_TIME_NATIVE_RENDER_PIXEL_IDENTICAL",
+  "rows": [
+    {
+      "engine": "ec",
+      "time": 118.43333333333334,
+      "privateSha256": "7556f97aee8655f8cbeb580278dbcaae9319c2fcb884f5b6ba6554fd9f94a203",
+      "deliverySha256": "7556f97aee8655f8cbeb580278dbcaae9319c2fcb884f5b6ba6554fd9f94a203",
+      "pixelsIdentical": true
+    },
+    {
+      "engine": "fc",
+      "time": 118.43333333333334,
+      "privateSha256": "b237dd51acd529c78c930397c80de11a6a57ac8f8bd63bccbb266b0cb49a94c3",
+      "deliverySha256": "b237dd51acd529c78c930397c80de11a6a57ac8f8bd63bccbb266b0cb49a94c3",
+      "pixelsIdentical": true
+    }
+  ],
+  "wholeMovieRenderComparison": false
+}

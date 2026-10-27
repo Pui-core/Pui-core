@@ -1,0 +1,36 @@
+private struct PlayPaperFieldModifier: ViewModifier {
+    private var fieldShape: RoundedRectangle {
+        RoundedRectangle(cornerRadius: 14, style: .continuous)
+    }
+
+    func body(content: Content) -> some View {
+        content
+            .font(.body.weight(.semibold))
+            .foregroundStyle(MysteryPalette.letterTextPrimary)
+            .tint(MysteryPalette.amber)
+            .padding(.horizontal, 16)
+            .padding(.top, 14)
+            .padding(.bottom, 13)
+            .frame(maxWidth: .infinity, minHeight: 54, alignment: .leading)
+            .background(
+                fieldShape
+                    .fill(MysteryPalette.paperReadable.opacity(0.98))
+            )
+            .overlay(
+                fieldShape
+                    .stroke(MysteryPalette.letterTextPrimary.opacity(0.4), lineWidth: 1.4)
+            )
+            .overlay(alignment: .topLeading) {
+                Capsule(style: .continuous)
+                    .fill(MysteryPalette.amber.opacity(0.76))
+                    .frame(width: 30, height: 3)
+                    .padding(.leading, 16)
+                    .padding(.top, 7)
+            }
+            .shadow(color: MysteryPalette.shadow.opacity(0.12), radius: 5, y: 2)
+            .contentShape(fieldShape)
+            .mysteryRelativeCardWidth(horizontalInsetRatio: 0.04, minHorizontalInset: 10, maxHorizontalInset: 22)
+    }
+}
+
+private struct RuleListRow: View {

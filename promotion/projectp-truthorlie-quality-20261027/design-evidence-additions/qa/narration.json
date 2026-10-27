@@ -1,0 +1,99 @@
+{
+  "engine": "VOICEVOX",
+  "engineVersion": "0.25.1",
+  "speaker": "青山龍星",
+  "styleId": 13,
+  "cues": [
+    {
+      "id": "logo-question",
+      "text": "このロゴ、前は誠が赤でした。いま赤いのは、どちらでしょう。",
+      "file": "voice-logo-question.wav",
+      "sha256": "51391d0e9a0cafa856b31d14f67631b4ae0f85c562224f6d4e22634528558774",
+      "sourceWaveSeconds": 4.117333333333334,
+      "at": 0.1,
+      "end": 4.383333333333334
+    },
+    {
+      "id": "logo-changes",
+      "text": "嘘が赤、誠がクリームへ。その直前には、字もこの筆字へ。原画に残る、二つの変更です。",
+      "file": "voice-logo-changes.wav",
+      "sha256": "958d030a4dd3fdef7736a3c87d4e61660c1b3f9bc882d4eb1c5883e018b5e9bf",
+      "sourceWaveSeconds": 7.104,
+      "at": 5.333333333333333,
+      "end": 12.6
+    },
+    {
+      "id": "night-choice-short",
+      "text": "本人が選んだのは、ミステリー、夜の卓上のA案。この背景の原画が、紙の下へ広がります。",
+      "file": "voice-night-choice-short.wav",
+      "sha256": "ca3b91fa5ca9dc67ed2edce09809ac8d4f37872912acd541b586eecce27d9901",
+      "sourceWaveSeconds": 6.762666666666667,
+      "at": 12.799999999999999,
+      "end": 19.73333333333333
+    },
+    {
+      "id": "night-app-short",
+      "text": "供述、推理、結果。同じ暗い部屋に、場面ごとの紙が重なる実画面です。",
+      "file": "voice-night-app-short.wav",
+      "sha256": "a4a4a189fbc6e767af62b5772a4d185594687153810b9f8746351700dad7ad04",
+      "sourceWaveSeconds": 5.866666666666666,
+      "at": 19.933333333333334,
+      "end": 25.966666666666665
+    },
+    {
+      "id": "paper-evolution",
+      "text": "手紙の原画は三段階。封筒の折り線から、古紙と中央の枠へ。そして、中央の角丸枠を外す変更です。",
+      "file": "voice-paper-evolution.wav",
+      "sha256": "e75fec8a0756cb90a3f455fd220fa1e0b5c83e770e6287f4517fcf3157ed38b9",
+      "sourceWaveSeconds": 7.658666666666667,
+      "at": 26.166666666666668,
+      "end": 34
+    },
+    {
+      "id": "paper-text-short",
+      "text": "同じ比較用の文字を置くと、囲みの有無が分かります。端の汚れや欠けは残っています。",
+      "file": "voice-paper-text-short.wav",
+      "sha256": "16ac008836a4f3c33c5a707ac7e2a2a690b82a541b21a749b0a2ace221625aa9",
+      "sourceWaveSeconds": 5.1946666666666665,
+      "at": 34.2,
+      "end": 39.56666666666666
+    },
+    {
+      "id": "field-change",
+      "text": "入力欄の原画も変わりましたが、実際の名前欄は画像の直貼りではありません。枠と文字を、画面側で別に描いています。",
+      "file": "voice-field-change.wav",
+      "sha256": "feed56c62955ca82b10b58821ad0ed6d6b0c318f4adf562f72d5d203fb0406b1",
+      "sourceWaveSeconds": 7.765333333333333,
+      "at": 39.766666666666666,
+      "end": 47.699999999999996
+    },
+    {
+      "id": "footer-change",
+      "text": "下の帯は、濃い茶色から明るい紙へ。実画面の文字と四つの入口は、画像と別の表示です。",
+      "file": "voice-footer-change.wav",
+      "sha256": "270871c005925f082df5dc2cbc224848772c388af5271d8780dbc88c7313ba02",
+      "sourceWaveSeconds": 6.218666666666667,
+      "at": 47.9,
+      "end": 54.3
+    },
+    {
+      "id": "seal-change",
+      "text": "緑の封、赤い嘘、金色の判断。実際の結果では、嘘と投票の印が、同じ回答に残ります。",
+      "file": "voice-seal-change.wav",
+      "sha256": "82fd44aba7bc9fb4c283fb7207d4d6358bc5da16d52b6f1d00b65cd88ac064e7",
+      "sourceWaveSeconds": 7.434666666666667,
+      "at": 54.5,
+      "end": 62.1
+    },
+    {
+      "id": "return-short",
+      "text": "見た目の紙の上で、一票と得点が記録になります。",
+      "file": "voice-return-short.wav",
+      "sha256": "5d1bcc00f19d3f1a84e58cd1b2aab2305ae6134148696211e98bf3ac946e84ba",
+      "sourceWaveSeconds": 3.296,
+      "at": 62.300000000000004,
+      "end": 65.76666666666667
+    }
+  ],
+  "wholeSubjectiveListen": false
+}

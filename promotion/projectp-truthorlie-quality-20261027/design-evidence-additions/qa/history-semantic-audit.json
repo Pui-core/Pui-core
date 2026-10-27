@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-27T13:49:53.054Z",
+  "task": "管理129 追加65.8667秒・10句の一度限り意味監査",
+  "verdict": "指定範囲で必須の意味修正を検出せず。正式全編の品質受入ではない",
+  "mandatoryFindings": [],
+  "inputs": [
+    {
+      "file": "source/narration-input.json",
+      "sha256": "4907afbb2e4a735f3f406c5e5e98e3efdef7d740f04afb472f1fbc492993b65c"
+    },
+    {
+      "file": "qa/asset-history-binding.json",
+      "sha256": "762b240576d53fa4674cad6666b7860857692fc5002859e88bbd374485a8363d"
+    },
+    {
+      "file": "qa/field-reality-binding.json",
+      "sha256": "095a4db8027464c50bfe54ac5af2e45bff548ffb8a2b1e2810a47b1718a63996"
+    }
+  ],
+  "observations": [
+    "owner Issue9の実コメントはA選択。直前提案のAはミステリー/夜の卓上であり、現台本はその選択を述べる範囲。個別背景原画自体をownerが承認したとは断言していない。",
+    "筆字9617c4b→色入替96888c9の順はGit記録と一致。現pinのロゴ原画は色入替版と同じSHA。",
+    "原画履歴22件は指定Git revision/pathから再読して全SHA一致。メディア22件もbindingと全SHA一致。新収録とみなしていない。",
+    "紙三段階と同一比較文字は説明用図として表記。過去アプリの実スクリーンショットに昇格していない。",
+    "名前TextFieldはTitleView.swift1381-1385からplayPaperFieldを適用。modifier3069-3104はRoundedRectangle/Capsuleを描画しfield原画を直貼りしていない。",
+    "footerはTitleView.swift426-469で帯画像・個別tab背景画像・icon画像・Text/tabButtonを別に構成。現台本の文字と入口を帯画像と別表示とする範囲は整合。",
+    "seal-change提示実画像は同じカードに嘘と投票を実表示。金色icon原画と同じ観測に基づく説明。",
+    "return-shortは既履歴一覧への移行。GameHistoryStoreはrounds/scoreを保持するが、履歴詳細UIを新観測済みとする説明はない。"
+  ],
+  "inspectedImages": [
+    "native-logo-question.png",
+    "native-logo-changes.png",
+    "native-night-choice-short.png",
+    "native-night-app-short.png",
+    "native-paper-evolution.png",
+    "native-paper-text-short.png",
+    "native-field-change.png",
+    "native-footer-change.png",
+    "native-seal-change.png",
+    "native-return-short.png"
+  ],
+  "notVerified": [
+    "65.8667秒MP4の連続視聴",
+    "10句音声の主観試聴と頭尾",
+    "全編600秒の内容密度と美術",
+    "履歴詳細/再起動後保存の実UI観測",
+    "新素材権利の全面再監査"
+  ],
+  "sourceFProductGuiSimulatorMutations": 0
+}

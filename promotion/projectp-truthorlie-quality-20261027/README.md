@@ -1,10 +1,10 @@
 # 嘘か誠か：再制作129
 
-ownerによる旧708秒本編の差し戻しに対し、現在は実素材の密度を詰めた203.7667秒の本編組立を進めています。正式600秒以上には396.2333秒の新内容が不足。固定604秒へ短い句を割り付けた計画は撤回しました。全編の主観視聴/試聴、創作受入も未達でDraft/HOLDを維持します。
+現MP4は269.653秒。旧203秒を保全し、実Git原画の変遷と本人の方向選択65.8667秒を結合しました。正式600秒には330.3667秒の新しい内容が不足し、PP129-PACE-004/全編主観視聴・試聴/美術・テンポ/BGM採用/公開はDraft・HOLDを維持します。固定604秒へ短い句を割り付けた計画は撤回済みです。
 
-最新の制作入口は [現素材の本編組立](fullmaster-firstcut/README.md)。実UIと未収録のコード計算例を区別し、旧7Rの1178×2556原画と安定録画フレームを使っています。75秒/44秒は下記の別版として保持します。
+最新入口は [原画比較を結合した現269秒](design-evidence-additions/README.md)。F:/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/design-evidence-additions/index.html。44句AAC頭尾・全AV・31最終画像・2継ぎ目grid・NativePC10/EC4/FC3再openの範囲を記録し、技術検査と全編の創作受入を区別します。
 
-確認入口は [F revision02のindex.html](/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/index.html)。[修正版MP4](/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/videos/truthorlie129-editorial-sample75-v02-corrected-cipher.mp4) は75.008秒、1920×1080/30fps、H.264/AAC48k stereoです。SHA256は `4596b64bb4f0d74715e7181c6bfcf028a834aea5bc90e0dd7e50813baa5b447e`。
+旧 [203秒の本編組立](fullmaster-firstcut/README.md)、75秒/44秒の局所版と原票は保持しています。旧203秒のSHA83dd07…は不変。今回のFにはその編集原本もsegments/baseへ複写・再リンクし、フォルダー内で再編集できるようにしました。
 
 ## 今回の得点と累計の読み順
 
