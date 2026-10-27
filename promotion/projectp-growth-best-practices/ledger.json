@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "title": "ProjectP構成ナレッジ台帳",
+  "managementIssue": "https://github.com/Pui-core/-/issues/131",
+  "updatedAtUtc": "2026-10-27T11:42:05.619Z",
+  "ruleId": "SNS-003-AUDIT-001",
+  "winnerCount": 0,
+  "statusDefinitions": {
+    "observed_owner": "本人の指標/事実の観測。比較の成功や構成因果を意味しない。",
+    "hypothesis_external": "実際の外部動画を出典/視聴範囲付きで参照する仮説。本人の勝ちパターンではない。",
+    "unverified": "構成や効果をまだ実検証していない案。",
+    "expired": "現在の実行/採用には使わず履歴として保持。"
+  },
+  "entries": [
+    {
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T11:40:55.008Z",
+      "revalidateOnJst": "2026-11-03",
+      "expiresOnJst": "2026-11-03",
+      "id": "PP-OWNER-OBS-001",
+      "status": "observed_owner",
+      "topic": "旧YouTube Short y6",
+      "observationIds": [
+        "OBS-YT-Y6-20261026"
+      ],
+      "evidenceUrl": "https://www.youtube.com/shorts/y6-fuKgLq4k",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "observationOnly": "約24.15h673views/+1、継続15.8%/swipe84.2%、平均10s。観測は10/26であり今日の最新値ではない。",
+      "limits": "Native指標の観測のみ。未視聴の構成欄はnull。単一post/未知分母から勝ちを決めない。",
+      "nextExperimentId": "PP-STRUCTURE-HYP-001"
+    },
+    {
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T11:40:55.008Z",
+      "revalidateOnJst": "2026-11-03",
+      "expiresOnJst": "2026-11-03",
+      "id": "PP-OWNER-OBS-002",
+      "status": "observed_owner",
+      "topic": "TikTok初回の一覧0表示",
+      "observationIds": [
+        "OBS-TT-FIRST-20261026"
+      ],
+      "evidenceUrl": "https://www.tiktok.com/@prop_pui/video/7700540849909763336",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "observationOnly": "成熟時刻後の一覧0表示。個別維持/露出分母は未取得。",
+      "limits": "配信/適格性/原因とcreative効果はいずれも未確定。QA再生は成果に含めない。",
+      "nextExperimentId": null
+    },
+    {
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T11:40:55.008Z",
+      "revalidateOnJst": "2026-11-03",
+      "expiresOnJst": "2026-11-03",
+      "id": "PP-STRUCTURE-HYP-001",
+      "status": "unverified",
+      "topic": "次の新しいScateRush実走",
+      "observationIds": [
+        "OBS-YT-Y6-20261026"
+      ],
+      "evidenceUrl": "https://github.com/Pui-core/-/issues/131",
+      "structure": {
+        "opening": "冒頭約1秒に実際の通過結果を先出しする情報順を試す。",
+        "secondsUntilResult": null,
+        "development": "同種の危険と通過過程を新しい別の実走で示す。",
+        "cutsAndMotion": "既に受け入れた主役追従/可読性/声の語尾の品質を固定。",
+        "typography": "近い字幕位置/文字面積を維持。",
+        "sound": "同じ話速/声量/BGM相対量を維持し音楽主題にしない。",
+        "endingAndCta": "同じ固有CTAを維持。"
+      },
+      "singleChangedVariable": "冒頭約1秒の情報順",
+      "variantA": "危険の状況→通過結果",
+      "variantB": "実通過を約0.8秒先出し→状況と過程",
+      "materialRule": "新しい別の実操作。既投稿/既予約を再投稿せず、別実走の違いは交絡として残す。",
+      "metrics": {
+        "primary": "Native stayed-to-watch/冒頭維持を同じ+72hで比較。+24hも別保存。",
+        "rawDenominatorRequiredForRateClaim": true,
+        "secondary": [
+          "平均視聴時間の正しいnative範囲",
+          "投稿へ明示帰属したfollow/subscriberのみ"
+        ],
+        "missingOrZero": "null。視聴回数/engagedviewsから分母を逆算しない。"
+      },
+      "decisionRule": {
+        "status": "internal_exploratory_design_not_official_or_owner_optimum",
+        "maxPairs": 2,
+        "maxFreshPosts": 4,
+        "timeLimitDaysAfterFirstActualPublication": 7,
+        "promising": "2つの近い別実話ペアで同方向、品質と平均視聴時間/転換を悪化させない場合のみ次の再現候補。統計的優劣や因果の保証なし。",
+        "stop": "最大2pair又は7日で一度判定。欠測/0分母/片側未成熟/別作品の混同なら不足として閉じ、閾値達成のため連投しない。"
+      },
+      "scheduled": false,
+      "published": false,
+      "nextExperimentId": null
+    },
+    {
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T11:40:55.008Z",
+      "revalidateOnJst": "2026-11-03",
+      "expiresOnJst": "2026-11-03",
+      "id": "PP-EXPIRED-MUSIC-001",
+      "status": "expired",
+      "topic": "旧104のMIX/MV投稿枠",
+      "observationIds": [],
+      "evidenceUrl": "https://github.com/Pui-core/-/issues/104",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "expiredReason": "最新owner指示で音楽主題投稿を除外。背景BGMの許諾済み利用と分ける。",
+      "nextExperimentId": null
+    },
+    {
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T11:40:55.008Z",
+      "revalidateOnJst": "2026-11-03",
+      "expiresOnJst": "2026-11-03",
+      "id": "PP-EXPIRED-TRUTH-001",
+      "status": "expired",
+      "topic": "旧TruthOrLie予約公開/Related順序",
+      "observationIds": [],
+      "evidenceUrl": "https://github.com/Pui-core/-/issues/93#issuecomment-6430667915",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "expiredReason": "129差戻しと取消済み。旧receiptは保持するが再実行しない。",
+      "nextExperimentId": null
+    }
+  ],
+  "externalExamples": [
+    {
+      "id": "EXT-DISCOVERY-UUAG-001",
+      "ownership": "external",
+      "url": "https://www.youtube.com/shorts/uuagMgasqw4",
+      "sourceCheckedOnJst": "2026-10-27",
+      "sourceObservedAtUtc": null,
+      "reportedPublicationDateText": "8/24",
+      "actualPublishedAtUtc": null,
+      "secondaryMetricDateText": "9/24 17:59",
+      "secondaryListCacheDateText": "10/2 23:56",
+      "sourceDateTimezone": null,
+      "sourceDateYearNotIndependentlyVerified": true,
+      "views": null,
+      "followers": null,
+      "metricDenominator": null,
+      "officialVideoFetch": "cache_miss",
+      "actuallyViewed": false,
+      "structureObserved": false,
+      "status": "not_adopted_as_current_trend_or_structure",
+      "hypothesis": null,
+      "limits": [
+        "The latest-list cache containsAugust–September uploads.",
+        "Secondary metric date is earlier than audit day; no current metric inferred.",
+        "No title/thumbnail inference is promoted into a viewed opening, payoff, sound or edit sequence."
+      ],
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-10-28",
+      "secondaryDiscoveryUrls": [
+        "https://yutura.net/channel/76576/latest/",
+        "https://yutura.net/channel/76576/video/uuagMgasqw4/"
+      ],
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "validatedOnProjectP": false,
+      "confirmedWinner": false
+    },
+    {
+      "id": "EXT-DISCOVERY-E74-001",
+      "ownership": "external",
+      "url": "https://www.youtube.com/shorts/e74r3caVpCw",
+      "sourceCheckedOnJst": "2026-10-27",
+      "sourceObservedAtUtc": null,
+      "actualPublishedAtUtc": null,
+      "views": null,
+      "followers": null,
+      "metricDenominator": null,
+      "officialVideoFetch": "cache_miss",
+      "actuallyViewed": false,
+      "structureObserved": false,
+      "status": "not_adopted_as_current_trend_or_structure",
+      "hypothesis": null,
+      "limits": [
+        "No successful official video fetch or viewing.",
+        "No current performance or actual structure measured."
+      ],
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-10-28",
+      "secondaryDiscoveryUrls": [],
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "validatedOnProjectP": false,
+      "confirmedWinner": false
+    }
+  ],
+  "requirements": {
+    "notEvidenceOfGrowth": [
+      "実素材/指定モデル/3Craftと声の語頭語尾・可読性",
+      "横動画600秒最低、反復/待機/減速での水増し禁止",
+      "NOMUSIC、単独publisher、共有GUIの有限窓",
+      "必要な利用条件/creditを維持"
+    ],
+    "optimalPostsPerDay": null,
+    "unlimitedDailyPostsIsAuthorizationNotScientificOptimum": true,
+    "noAccountGainAllocation": true,
+    "noMixedPlatformDenominator": true
+  },
+  "updateProtocol": "README.md"
+}
