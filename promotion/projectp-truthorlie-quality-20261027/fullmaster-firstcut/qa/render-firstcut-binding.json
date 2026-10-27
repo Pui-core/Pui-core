@@ -1,0 +1,40 @@
+{
+  "duration": 203.76666666666668,
+  "actualOutputDuration": 203.776,
+  "frames": 6113,
+  "output": "videos/truthorlie129-current-content-cipher.mp4",
+  "sha256": "83dd07ec3b4b7fb6b3745ed41a82adc48e7660ddbb0533619a5ea539ed6baf26",
+  "ecSha256": "225e94f27e155c9d5f642e34546bcc17cf598773efb797d053664d3d6046b919",
+  "fcSha256": "38c7ae210d977e0333fa2dc93d4437eb31270b149c1b8447d25d4b2a8a0cedd2",
+  "nativePhotoCraftNewMaterials": 6,
+  "nativeCorrectionPatches": [
+    {
+      "id": "review-mismatch-crop-v02",
+      "start": 91.5,
+      "end": 95.7,
+      "file": "media/review-mismatch-corrected-native.mp4",
+      "sha256": "90dd7d7cbfbe5a20ba38915d10ba34f36116945d2c3c714890818b87129d0703"
+    }
+  ],
+  "nativeEffectCraftCamera": true,
+  "nativeEffectCraftBezierKeys": 674,
+  "actualNativeFilmCraft": true,
+  "offlineMedia": [],
+  "voiceCues": 34,
+  "newVoiceCues": 25,
+  "openingReusedCues": 9,
+  "coreFromAcceptedOpening": {
+    "frames": 240,
+    "seconds": 8,
+    "currentNineOpeningWavRmsBound": true,
+    "regenerated": false
+  },
+  "formal600Master": false,
+  "remainingDistinctContentSecondsTo600": 396.23333333333335,
+  "wholePhraseBedGuard": true,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "bgmSubjectiveAdoption": false,
+  "published": false,
+  "newMacThreeRoundUiRecordings": 0
+}

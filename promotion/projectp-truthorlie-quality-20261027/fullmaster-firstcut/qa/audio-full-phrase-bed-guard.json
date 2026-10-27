@@ -1,0 +1,283 @@
+{
+  "reason": "Numerical final AAC tail interference at d5-03, not voice clipping",
+  "sourceVoiceWavesUnchanged": true,
+  "allPhrasesProtected": true,
+  "smoothAttackSeconds": 0.1,
+  "smoothReleaseSeconds": 0.22,
+  "additionalBedGainFloor": 0.35,
+  "guards": [
+    {
+      "id": "hook",
+      "voiceStart": 0.2,
+      "completeWaveEnd": 2.5573333333333332,
+      "guardStart": 0.1,
+      "guardEnd": 2.7773333333333334,
+      "floor": 0.35
+    },
+    {
+      "id": "rule",
+      "voiceStart": 3.8,
+      "completeWaveEnd": 7.928,
+      "guardStart": 3.7,
+      "guardEnd": 8.148,
+      "floor": 0.35
+    },
+    {
+      "id": "case1",
+      "voiceStart": 10,
+      "completeWaveEnd": 12.602666666666666,
+      "guardStart": 9.9,
+      "guardEnd": 12.822666666666667,
+      "floor": 0.35
+    },
+    {
+      "id": "hit",
+      "voiceStart": 16,
+      "completeWaveEnd": 18.826666666666668,
+      "guardStart": 15.9,
+      "guardEnd": 19.046666666666667,
+      "floor": 0.35
+    },
+    {
+      "id": "switch",
+      "voiceStart": 21,
+      "completeWaveEnd": 23.261333333333333,
+      "guardStart": 20.9,
+      "guardEnd": 23.481333333333332,
+      "floor": 0.35
+    },
+    {
+      "id": "case2",
+      "voiceStart": 24,
+      "completeWaveEnd": 26.858666666666668,
+      "guardStart": 23.9,
+      "guardEnd": 27.078666666666667,
+      "floor": 0.35
+    },
+    {
+      "id": "miss",
+      "voiceStart": 30,
+      "completeWaveEnd": 32.83733333333333,
+      "guardStart": 29.9,
+      "guardEnd": 33.05733333333333,
+      "floor": 0.35
+    },
+    {
+      "id": "consequence",
+      "voiceStart": 35,
+      "completeWaveEnd": 39.66133333333333,
+      "guardStart": 34.9,
+      "guardEnd": 39.88133333333333,
+      "floor": 0.35
+    },
+    {
+      "id": "next",
+      "voiceStart": 41.1,
+      "completeWaveEnd": 43.77733333333333,
+      "guardStart": 41,
+      "guardEnd": 43.99733333333333,
+      "floor": 0.35
+    },
+    {
+      "id": "d2-01",
+      "voiceStart": 44.1,
+      "completeWaveEnd": 49.465333333333334,
+      "guardStart": 44,
+      "guardEnd": 49.68533333333333,
+      "floor": 0.35
+    },
+    {
+      "id": "d2-02",
+      "voiceStart": 50.833333333333336,
+      "completeWaveEnd": 56.64666666666667,
+      "guardStart": 50.733333333333334,
+      "guardEnd": 56.86666666666667,
+      "floor": 0.35
+    },
+    {
+      "id": "d2-03",
+      "voiceStart": 57,
+      "completeWaveEnd": 61.032,
+      "guardStart": 56.9,
+      "guardEnd": 61.252,
+      "floor": 0.35
+    },
+    {
+      "id": "d2-04",
+      "voiceStart": 61.4,
+      "completeWaveEnd": 66.91466666666666,
+      "guardStart": 61.3,
+      "guardEnd": 67.13466666666666,
+      "floor": 0.35
+    },
+    {
+      "id": "d2-05",
+      "voiceStart": 67.26666666666667,
+      "completeWaveEnd": 73.16533333333334,
+      "guardStart": 67.16666666666667,
+      "guardEnd": 73.38533333333334,
+      "floor": 0.35
+    },
+    {
+      "id": "d3-01",
+      "voiceStart": 73.53333333333333,
+      "completeWaveEnd": 79.95466666666667,
+      "guardStart": 73.43333333333334,
+      "guardEnd": 80.17466666666667,
+      "floor": 0.35
+    },
+    {
+      "id": "d3-02",
+      "voiceStart": 80.33333333333333,
+      "completeWaveEnd": 87.33066666666667,
+      "guardStart": 80.23333333333333,
+      "guardEnd": 87.55066666666667,
+      "floor": 0.35
+    },
+    {
+      "id": "d3-03",
+      "voiceStart": 87.7,
+      "completeWaveEnd": 95.444,
+      "guardStart": 87.6,
+      "guardEnd": 95.664,
+      "floor": 0.35
+    },
+    {
+      "id": "d4-01",
+      "voiceStart": 95.8,
+      "completeWaveEnd": 103.74666666666667,
+      "guardStart": 95.7,
+      "guardEnd": 103.96666666666667,
+      "floor": 0.35
+    },
+    {
+      "id": "d4-02",
+      "voiceStart": 105.1,
+      "completeWaveEnd": 110.7,
+      "guardStart": 105,
+      "guardEnd": 110.92,
+      "floor": 0.35
+    },
+    {
+      "id": "d4-03",
+      "voiceStart": 111.06666666666666,
+      "completeWaveEnd": 116.304,
+      "guardStart": 110.96666666666667,
+      "guardEnd": 116.524,
+      "floor": 0.35
+    },
+    {
+      "id": "d4-04",
+      "voiceStart": 117.66666666666667,
+      "completeWaveEnd": 120.86666666666666,
+      "guardStart": 117.56666666666666,
+      "guardEnd": 121.08666666666667,
+      "floor": 0.35
+    },
+    {
+      "id": "d4-05",
+      "voiceStart": 121.23333333333333,
+      "completeWaveEnd": 125.93733333333333,
+      "guardStart": 121.13333333333334,
+      "guardEnd": 126.15733333333333,
+      "floor": 0.35
+    },
+    {
+      "id": "d5-01",
+      "voiceStart": 126.3,
+      "completeWaveEnd": 132.14533333333333,
+      "guardStart": 126.2,
+      "guardEnd": 132.36533333333333,
+      "floor": 0.35
+    },
+    {
+      "id": "d5-02",
+      "voiceStart": 133.5,
+      "completeWaveEnd": 137.948,
+      "guardStart": 133.4,
+      "guardEnd": 138.168,
+      "floor": 0.35
+    },
+    {
+      "id": "d5-03",
+      "voiceStart": 138.3,
+      "completeWaveEnd": 144.67866666666666,
+      "guardStart": 138.2,
+      "guardEnd": 144.89866666666666,
+      "floor": 0.35
+    },
+    {
+      "id": "d5-04",
+      "voiceStart": 146.03333333333333,
+      "completeWaveEnd": 152.32666666666665,
+      "guardStart": 145.93333333333334,
+      "guardEnd": 152.54666666666665,
+      "floor": 0.35
+    },
+    {
+      "id": "d5-05",
+      "voiceStart": 152.7,
+      "completeWaveEnd": 158.08666666666667,
+      "guardStart": 152.6,
+      "guardEnd": 158.30666666666667,
+      "floor": 0.35
+    },
+    {
+      "id": "d5-06",
+      "voiceStart": 158.46666666666667,
+      "completeWaveEnd": 166.73333333333332,
+      "guardStart": 158.36666666666667,
+      "guardEnd": 166.95333333333335,
+      "floor": 0.35
+    },
+    {
+      "id": "d6-01",
+      "voiceStart": 167.1,
+      "completeWaveEnd": 172.91333333333333,
+      "guardStart": 167,
+      "guardEnd": 173.13333333333333,
+      "floor": 0.35
+    },
+    {
+      "id": "d6-02",
+      "voiceStart": 173.26666666666668,
+      "completeWaveEnd": 178.93066666666667,
+      "guardStart": 173.16666666666666,
+      "guardEnd": 179.15066666666667,
+      "floor": 0.35
+    },
+    {
+      "id": "d6-03",
+      "voiceStart": 179.3,
+      "completeWaveEnd": 185.30533333333332,
+      "guardStart": 179.2,
+      "guardEnd": 185.52533333333332,
+      "floor": 0.35
+    },
+    {
+      "id": "d6-04",
+      "voiceStart": 185.66666666666666,
+      "completeWaveEnd": 191.75733333333332,
+      "guardStart": 185.56666666666666,
+      "guardEnd": 191.97733333333332,
+      "floor": 0.35
+    },
+    {
+      "id": "d6-05",
+      "voiceStart": 192.13333333333333,
+      "completeWaveEnd": 199.03466666666668,
+      "guardStart": 192.03333333333333,
+      "guardEnd": 199.25466666666668,
+      "floor": 0.35
+    },
+    {
+      "id": "d6-06",
+      "voiceStart": 199.4,
+      "completeWaveEnd": 203.48533333333333,
+      "guardStart": 199.3,
+      "guardEnd": 203.60533333333333,
+      "floor": 0.35
+    }
+  ],
+  "subjectiveListen": false
+}

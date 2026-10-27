@@ -1,0 +1,51 @@
+[
+  [
+    "shape.create",
+    {
+      "name": "State seal",
+      "kind": "ellipse",
+      "rect": [
+        16,
+        16,
+        208,
+        208
+      ],
+      "fill": "#862E39",
+      "stroke": {
+        "width": 4,
+        "color": "#DCA6A2"
+      }
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "name": "State inset ring",
+      "kind": "ellipse",
+      "rect": [
+        30,
+        30,
+        180,
+        180
+      ],
+      "fill": null,
+      "stroke": {
+        "width": 2,
+        "color": "#F1DDAD"
+      }
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "State identity",
+      "text": "嘘",
+      "x": 73,
+      "y": 155,
+      "font": "Yu Mincho",
+      "weight": 700,
+      "size": 90,
+      "color": "#F1E1BD"
+    }
+  ]
+]

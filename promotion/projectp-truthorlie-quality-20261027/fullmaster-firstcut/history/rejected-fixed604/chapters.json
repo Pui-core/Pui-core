@@ -1,0 +1,15 @@
+{
+  "overallQuestion": "どの選択が、誰の点になる？",
+  "plannedDuration": 604,
+  "chapters": [
+    {"id":1,"start":0,"end":44,"question":"同じ1点、取る役割は？","answer":"的中は推理側、全員外れは出題側。今回獲得と累計を分ける","evidence":"READ局所解除済み44秒。実通常R1/R2、配点1","kinds":["実UI"],"newUiRequired":false},
+    {"id":2,"start":44,"end":164,"question":"五つとも本当なのに番号を選ぶと？","answer":"真実のみの宣言と投票は別。実3分岐で得点先を確認","evidence":"truth3:全部真実→2番→AA+1、truth1:全部真実→真実のみ→BB+1、truth2:嘘3→真実のみ→BB+1","kinds":["実UI","条件/投票/結果の編集図解"],"newUiRequired":false},
+    {"id":3,"start":164,"end":252,"question":"出題側の印は、推理側にも見える？","answer":"この収録の入力/非公開指定/受渡し/neutral/結果の表示差を順に見る","evidence":"R1入力start/answer1/3/5/private-before-reveal/top-neutral/score、R2 scoreの嘘と投票の別ラベル","kinds":["実UI","情報の流れの編集図解"],"newUiRequired":false},
+    {"id":4,"start":252,"end":360,"question":"ひとりが当てたら、全員に点？","answer":"コード計算例で1名的中/2名的中/全外れ/真実のみの得点ベクトルを分ける","evidence":"固定製品pinのGameEngine/VotingModels。配点1、連続OFF、A出題/B,C投票の計算例","kinds":["コードからの計算例・3人UI未収録"],"newUiRequired":false,"actualThreePlayerUi":false},
+    {"id":5,"start":360,"end":480,"question":"同じ的中なのに、得点が変わるのはいつ？","answer":"配点/連続ONとOFF、自分の前回推理・不正解を挟む計算例を比較","evidence":"固定pinの式とstreak更新。配点2でBB+2/AA+2/BB+3は計算例、実UI成功ではない","kinds":["コードからの計算例・新3R実収録0"],"newUiRequired":false,"newThreeRoundUiRecordings":0,"excludedClaim":"出題者の点は設定に関係なく常に1点"},
+    {"id":6,"start":480,"end":604,"question":"2点なら勝ち、と言える？","answer":"実通常R3/R4→2対2引分け、別3R→1対2、履歴の各条件で回収","evidence":"通常R3/R4の条件/投票/結果/累計、実4R最終/別3R最終、実履歴navigationと2記録","kinds":["実UI","試合別の累計編集図解"],"newUiRequired":false}
+  ],
+  "notEvidence": ["架空個人事実の嘘当てを最後まで引張る", "作者の動機/人間の反応", "次版予定", "未実験の必勝/戦略効果", "新Mac配点2/連続ONの成功映像"],
+  "assemblyState": "制作中・完成尺ではない",
+  "noPilotApprovalGate": true
+}

@@ -1,0 +1,1294 @@
+{
+  "complete": true,
+  "productPin": "5b11516bba2be105f44c444eb6352eb757a8abd3",
+  "version": "1.03(23)",
+  "normalUiAutomated": true,
+  "allNamesAndAnswersFictional": true,
+  "newMacThreeRoundRecordings": 0,
+  "rounds": {
+    "round1": {
+      "id": "round1",
+      "label": "第1ラウンド",
+      "speaker": "AA",
+      "guesser": "BB",
+      "questions": [
+        "実は今も持っている子どもの頃の宝物",
+        "人にすすめたいけど説明が難しい作品",
+        "初めて自分のお金で買ったもの",
+        "理想のプロポーズのシチュエーション",
+        "家でついやってしまうだらしない行動"
+      ],
+      "answers": [
+        "小さな木の電車",
+        "静かな短編映画",
+        "赤い自転車",
+        "旅行先の海辺",
+        "ソファでそのまま寝る"
+      ],
+      "lie": 3,
+      "vote": 3,
+      "outcome": "投票的中",
+      "score": {
+        "AA": 0,
+        "BB": 1
+      },
+      "attempt": "coder-firstvote06",
+      "local": true,
+      "cfr": "media/round1-hi-cfr.mp4",
+      "cfrSha256": "d400d459e68a3b86418219cae6a94b9e5ebd656a13a77ff18d8d8f413e7b7009",
+      "duration": 89.733333,
+      "rawSha256": "5a0f572b9c60d6c99d610efb68d3f1e7f1affd6233581ed1f3527e30d335ba25",
+      "shots": {
+        "score": {
+          "file": "media/evidence/round1/round1-actual-score-and-review.png",
+          "sourceTime": 88.5,
+          "sha256": "ae20db414f9378e09a529f289d800ab4fb6f43ad5001fea2e9b84bffb90ce90f"
+        },
+        "result": {
+          "file": "media/evidence/round1/round1-actual-first-result.png",
+          "sourceTime": 84,
+          "sha256": "809b8d31e64d9273a0dd8556dd2048eae1d0a5520f1cf12262a3ebab361dff7c"
+        },
+        "vote": {
+          "file": "media/evidence/round1/round1-vote-selection.png",
+          "sourceTime": 80,
+          "sha256": "382ae11d51d8d7b6dc47543ce72932823e5a8c91c7bfc576bfe75c2a2e3489af"
+        },
+        "neutral": {
+          "file": "media/evidence/round1/round1-guessing-bottom-neutral.png",
+          "sourceTime": 59.5,
+          "sha256": "0c46991f73c2b40b79e64292a740f04f3698ae8b7bc689769f30030ee2947f80"
+        }
+      }
+    },
+    "round2": {
+      "id": "round2",
+      "label": "第2ラウンド",
+      "speaker": "BB",
+      "guesser": "AA",
+      "questions": [
+        "透明人間になれたらやってみたいこと",
+        "買う前にレビューを見すぎるもの",
+        "疲れた日に食べると回復するもの",
+        "休日に時間を忘れてしまうこと",
+        "テスト前にやりがちだったこと"
+      ],
+      "answers": [
+        "美術館をゆっくり歩く",
+        "ワイヤレスイヤホン",
+        "温かい味噌汁",
+        "小説を読むこと",
+        "机の片づけ"
+      ],
+      "lie": 5,
+      "vote": 2,
+      "outcome": "正解者なし",
+      "score": {
+        "AA": 0,
+        "BB": 2
+      },
+      "attempt": "coder-round2-vote01",
+      "local": true,
+      "cfr": "media/round2-hi-cfr.mp4",
+      "cfrSha256": "af30770f63e5e3d8a7b12c6e70d5790c7e8e67ad210db3d132fc9c15c8a12e0b",
+      "duration": 79.433333,
+      "rawSha256": "7f1f903976c07aa34e17189f2886261f00dfb7ecc6abbacb25c6846a60d25315",
+      "shots": {
+        "score": {
+          "file": "media/evidence/round2/round2-actual-score-review.png",
+          "sourceTime": 71.5,
+          "sha256": "fd6d73544879b981ac887282ad46505687fc003bdc1ca16aef574329f7816146"
+        },
+        "result": {
+          "file": "media/evidence/round2/round2-actual-result.png",
+          "sourceTime": 67.5,
+          "sha256": "70f540f0792995ca4e3e008bf048a0a1c18254e2d3d71b83ef7fe0235f063e90"
+        },
+        "vote": {
+          "file": "media/evidence/round2/round2-vote-selected.png",
+          "sourceTime": 63,
+          "sha256": "403c326a1594206ca42fbc9be23fd4dcf475d32c6d773bb0ed1f366a48ce75b3"
+        },
+        "neutral": {
+          "file": "media/evidence/round2/round2-guessing-bottom-neutral.png",
+          "sourceTime": 44.5,
+          "sha256": "13da33617e8aece4c7065d88702b590cadce6a6de8bc98fa8455e3e777f2de7a"
+        }
+      }
+    },
+    "round3": {
+      "id": "round3",
+      "label": "第3ラウンド",
+      "speaker": "AA",
+      "guesser": "BB",
+      "questions": [
+        "ひそかに自慢に思っていること",
+        "いつか手放したい悩み",
+        "値段を見ずに買ってみたいもの",
+        "最近人にすすめたい作品",
+        "部活やサークルで起きた事件"
+      ],
+      "answers": [
+        "毎朝の散歩が一年続いた",
+        "朝の寝坊",
+        "海辺の小さな家",
+        "旅を描いた短編集",
+        "文化祭の看板を逆さに付けた"
+      ],
+      "lie": 3,
+      "vote": 5,
+      "outcome": "正解者なし",
+      "score": {
+        "AA": 1,
+        "BB": 2
+      },
+      "attempt": "coder-round3-vote02",
+      "local": true,
+      "cfr": "media/round3-hi-cfr.mp4",
+      "cfrSha256": "680e64278885368665b5e428a2449d9af25b4e99afe4c525077ff315a63125d9",
+      "duration": 76.866667,
+      "rawSha256": "c621db60f6410cd04153f7d6a03629ad75b75b980fb2714cbd40365bb32057cc",
+      "shots": {
+        "score": {
+          "file": "media/evidence/round3/round3-actual-score-review.png",
+          "sourceTime": 72,
+          "sha256": "4136a926461ce831d9bb498410239a5ac732c7f84331dff5d995134db0cbea8f"
+        },
+        "result": {
+          "file": "media/evidence/round3/round3-actual-result.png",
+          "sourceTime": 69,
+          "sha256": "d56b40003b80e31a571e78a3aeec433a982336bcbf34e02a7a31d8c747811105"
+        },
+        "vote": {
+          "file": "media/evidence/round3/round3-vote-selected.png",
+          "sourceTime": 65.5,
+          "sha256": "4def56deeb7e89448c0356649a601f39ad07c2bf20940e38f6d265dd18f70535"
+        },
+        "neutral": {
+          "file": "media/evidence/round3/round3-guessing-bottom-neutral.png",
+          "sourceTime": 48.5,
+          "sha256": "39463830529c685c9110d3de5344481ff744157671a6387b87bfbc629624c461"
+        }
+      }
+    },
+    "round4": {
+      "id": "round4",
+      "label": "第4ラウンド",
+      "speaker": "BB",
+      "guesser": "AA",
+      "questions": [
+        "魔法が1つ使えるなら欲しい能力",
+        "冷蔵庫に必ず入っているもの",
+        "子どもの頃に本気で怖がっていた場所",
+        "旅行の荷物に必ず入れるもの",
+        "人生でまだ諦めていないこと"
+      ],
+      "answers": [
+        "忘れ物をすぐ見つける力",
+        "無糖のヨーグルト",
+        "夜の学校の階段",
+        "小さなノート",
+        "自分の絵本を作ること"
+      ],
+      "lie": 2,
+      "vote": 2,
+      "outcome": "投票的中",
+      "score": {
+        "AA": 2,
+        "BB": 2
+      },
+      "attempt": "coder-round4-final01",
+      "local": true,
+      "cfr": "media/round4-hi-cfr.mp4",
+      "cfrSha256": "3e8b253797c8a45b2de55bea25195ffe08b1db203f787fb9141d10ed654b4dfe",
+      "duration": 102.066667,
+      "rawSha256": "5e75c6b497c8670b67872cf012742229b075bb2e9d4c239e43d11e5f4c76d8b7",
+      "shots": {
+        "score": {
+          "file": "media/evidence/round4/round4-actual-score-review.png",
+          "sourceTime": 83.5,
+          "sha256": "ded86a6b7a1bec372f7cc071afcde2e7893ac5b930515766b0198f61cca623aa"
+        },
+        "result": {
+          "file": "media/evidence/round4/round4-actual-result.png",
+          "sourceTime": 80,
+          "sha256": "76d658fb6ca3eee61bddb25cb1a2df3fbff561571888c3911f14409f290f2558"
+        },
+        "vote": {
+          "file": "media/evidence/round4/round4-vote-selected.png",
+          "sourceTime": 75,
+          "sha256": "efd3838ac936ab31fc6675d70928036776cb2c40e230950ddda5b9f507aa3f89"
+        },
+        "neutral": {
+          "file": "media/evidence/round4/round4-guessing-bottom-neutral.png",
+          "sourceTime": 58.5,
+          "sha256": "53bda7288ddeabcab8eba79686cde70df5b2a3a65ba45bf581996cd60b7217e3"
+        }
+      }
+    },
+    "truth1": {
+      "id": "truth1",
+      "label": "別試合 第1ラウンド",
+      "speaker": "AA",
+      "guesser": "BB",
+      "questions": [
+        "デートで行ってみたい場所",
+        "明日から1年休みをもらえたらすること",
+        "死ぬまでに行ってみたい場所",
+        "実家や家の独特なルール",
+        "人には言いにくい小さな贅沢"
+      ],
+      "answers": [
+        "海の見える水族館",
+        "各地の美術館を巡る",
+        "北欧の小さな町",
+        "玄関で靴をそろえる",
+        "夜に少し高いチョコ"
+      ],
+      "lie": null,
+      "declaredTruth": true,
+      "vote": "真実のみ",
+      "outcome": "真実のみ",
+      "score": {
+        "AA": 0,
+        "BB": 1
+      },
+      "attempt": "coder-truth1-vote02",
+      "cfr": "media/truth1-hi-cfr.mp4",
+      "cfrSha256": "e32fca55ead63b6d52a6cad95d0f588b03bf75a348c2da1bc176562c30570216",
+      "duration": 77.966667,
+      "rawSha256": "18c002d0949c97734c441046536a9e510aa60a8626c03670a7c9248a1d64e225",
+      "shots": {
+        "score": {
+          "file": "media/evidence/truth1/truth1-actual-score-review.png",
+          "sourceTime": 76.5,
+          "sha256": "87e74785353d1d58848fd42968c07aa29955912eeb2ceddc27bf2b726b7383bd"
+        },
+        "result": {
+          "file": "media/evidence/truth1/truth1-actual-result.png",
+          "sourceTime": 72.5,
+          "sha256": "d48a9499b7dce3761a8caea18593612f1133289f25d846b1e08e265bd066d38d"
+        },
+        "vote": {
+          "file": "media/evidence/truth1/truth1-vote-selected.png",
+          "sourceTime": 69.5,
+          "sha256": "29c794086e54079abdbeae5888a08cc4e3a8aba20f96a86ffb0a1f7dba177a03"
+        },
+        "neutral": {
+          "file": "media/evidence/truth1/truth1-guessing-bottom-neutral-answers.png",
+          "sourceTime": 54,
+          "sha256": "3047201fcc56133fbc8b6aca96ce67734bfa81e6a765ac65dfd64225dd52a1b3"
+        }
+      }
+    },
+    "truth2": {
+      "id": "truth2",
+      "label": "別試合 第2ラウンド",
+      "speaker": "BB",
+      "guesser": "AA",
+      "questions": [
+        "人には理解されにくいこだわり",
+        "自分の機嫌を取る方法",
+        "最近一気見してしまったもの",
+        "ひそかに自慢に思っていること",
+        "送る相手を間違えかけたメッセージ"
+      ],
+      "answers": [
+        "本棚を背の高さでそろえる",
+        "近所をゆっくり歩く",
+        "世界の駅を紹介する番組",
+        "地図を見ずに近所を案内できる",
+        "家族への買い物メモ"
+      ],
+      "lie": 3,
+      "declaredTruth": false,
+      "vote": "真実のみ",
+      "outcome": "正解者なし",
+      "score": {
+        "AA": 0,
+        "BB": 2
+      },
+      "attempt": "coder-truth2-vote01",
+      "cfr": "media/truth2-hi-cfr.mp4",
+      "cfrSha256": "d600a3c46c75f61c7095dd74e07d962e4f55f09474f43dd9757c93341b6208ec",
+      "duration": 78.2,
+      "rawSha256": "c4d2890405f0a06600c62eceae2dbf5c2628aabf8f99ed2d3c27379023e14d0b",
+      "shots": {
+        "score": {
+          "file": "media/evidence/truth2/truth2-actual-score-review.png",
+          "sourceTime": 77,
+          "sha256": "ee6fc3a9d67cdf9e1d929d584bcebde7f1a4f6d67fad92e63b9c325e06c0015a"
+        },
+        "result": {
+          "file": "media/evidence/truth2/truth2-actual-result.png",
+          "sourceTime": 73.5,
+          "sha256": "8f60307819c4423896a1349130c21779ca3ebb479e5ab4859e739bb2863b10ae"
+        },
+        "vote": {
+          "file": "media/evidence/truth2/truth2-vote-selected.png",
+          "sourceTime": 68,
+          "sha256": "85bf1a110b1ba65ca873164c66e93dcf2bd4b5bc22307a574d319be4ef63b13b"
+        },
+        "neutral": {
+          "file": "media/evidence/truth2/truth2-guessing-bottom-neutral.png",
+          "sourceTime": 53.5,
+          "sha256": "8a6f5113f8a645cf2e14f938db92dad0ccd298592d531540afb8cf44d6ec49f2"
+        }
+      }
+    },
+    "truth3": {
+      "id": "truth3",
+      "label": "別試合 第3ラウンド",
+      "speaker": "AA",
+      "guesser": "BB",
+      "questions": [
+        "ライブやイベントで忘れられない場面",
+        "旅行中に性格が出ると思う瞬間",
+        "実は今も持っている子どもの頃の宝物",
+        "家の中で落ち着く場所",
+        "人間関係で地味に苦手なこと"
+      ],
+      "answers": [
+        "会場全体で手拍子がそろった時",
+        "地図を開く前に道を探す時",
+        "青いビー玉",
+        "窓のそばの椅子",
+        "大人数の前で自己紹介すること"
+      ],
+      "lie": null,
+      "declaredTruth": true,
+      "vote": 2,
+      "outcomePending": false,
+      "attempt": "coder-truth3-final01",
+      "outcome": "真実のみ",
+      "score": {
+        "AA": 1,
+        "BB": 2
+      },
+      "cfr": "media/truth3-hi-cfr.mp4",
+      "cfrSha256": "7a92d1476f3bb0dec23a05bfc38b53e284dec163d5de6501ba40842dfcf19513",
+      "duration": 94.433333,
+      "rawSha256": "6f8865751605f1c2ad7acbcbe0edabc4d51be32f27c84ae380201d17cedfa326",
+      "shots": {
+        "score": {
+          "file": "media/evidence/truth3/truth3-actual-score-review.png",
+          "sourceTime": 80,
+          "sha256": "0a7c8b308fb4516888f133884d80f14271bef0b5c2b4ea6e2d5a1f55d9750ace"
+        },
+        "result": {
+          "file": "media/evidence/truth3/truth3-actual-result.png",
+          "sourceTime": 76.5,
+          "sha256": "3f83d1855755901af17f7d717a8a0d22509b949166a38ecb3d42b7712acfb546"
+        },
+        "vote": {
+          "file": "media/evidence/truth3/truth3-vote-selected.png",
+          "sourceTime": 71,
+          "sha256": "c3baeba309edb37271f1497b3a4dc71768302321ad2665e931d08a443ed4b787"
+        },
+        "neutral": {
+          "file": "media/evidence/truth3/truth3-guessing-bottom-neutral-answers.png",
+          "sourceTime": 56.5,
+          "sha256": "d9e9b9712fd04d84446f049f9f0dcd4150661930dd82f8251f70a36d84e41ff2"
+        }
+      }
+    }
+  },
+  "extras": [
+    {
+      "file": "media/evidence/normal4R-actual-final-detail.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/3A229AA4-D5C2-4E57-900E-738C26788DB5.png",
+      "sha256": "228b785c7c3a91a9fcbaeabb187908e7d829869b9c2fc5006cc783324ac0e78c",
+      "size": [
+        1178,
+        2556
+      ]
+    },
+    {
+      "file": "media/evidence/normal4R-actual-final-result.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/A7C29E5D-7E67-41D7-B8D7-09C72C9B9D10.png",
+      "sha256": "74ab2cc451278e32dcb4bfce7e453e96a0d8d05f87cadbe924a66e01d78c022f",
+      "size": [
+        1178,
+        2556
+      ]
+    },
+    {
+      "file": "media/evidence/truth3R-actual-final-detail.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/978BF7CE-2A20-4859-8BF0-38DF6A6A13D0.png",
+      "sha256": "084d56c7293bc4a5e0f01251147c306a3ee31bc60dfe27d406b1d57f15d40f56",
+      "size": [
+        1178,
+        2556
+      ]
+    },
+    {
+      "file": "media/evidence/truth3R-actual-final-result.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/E512807E-00F2-4B0B-8BEF-5CC4F45939DA.png",
+      "sha256": "8021f806c1ccf6cdacfd971277bc68aeeda6c7c3e5a9043eb35757a60ef7ba7a",
+      "size": [
+        1178,
+        2556
+      ]
+    },
+    {
+      "file": "media/evidence/actual-history-list-lower.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-history01/attachments/0A371428-7007-4750-9CFA-7A3032274E75.png",
+      "sha256": "7a8cc60fb53e496737994a51112c3a74642df47a96a45ca508fcf3d4846663d8",
+      "size": [
+        1178,
+        2556
+      ]
+    },
+    {
+      "file": "media/evidence/actual-history-list-top.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-history01/attachments/C4E11C31-EA68-403A-B111-F7B9ADD6801F.png",
+      "sha256": "b1b68fce25bf9942ed899ddce49810d1c888e4888a688591f9b72a82999287e3",
+      "size": [
+        1178,
+        2556
+      ]
+    },
+    {
+      "file": "media/evidence/history-entry-play-selection.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-history01/attachments/26AF93F4-D66D-4E25-B4C9-10EBEFD4E6D2.png",
+      "sha256": "c7e32b57fd5877cb358d1a84f1c35f03e8b89d3914594bca1a7b9480e9549d0b",
+      "size": [
+        1178,
+        2556
+      ]
+    },
+    {
+      "file": "media/setup-hi-cfr.mp4",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-setup03/normal-ui.mov",
+      "rawSha256": "658b5c5c88f446a91836b69169ba67ef5e6aaceaedc71f92c2779a3aa3fb218f",
+      "sha256": "014478a23c8e50abff63eac49095bc5ab71c55e3a8afac4056284948e1828f75",
+      "duration": 70.633333,
+      "size": [
+        1178,
+        2556
+      ],
+      "fps": "30/1"
+    },
+    {
+      "file": "media/truth-setup-hi-cfr.mp4",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth-setup01/normal-ui.mov",
+      "rawSha256": "74f2358e32555d7d6d6f30d25c200d61fc721154b3682024c1dca46f520c1689",
+      "sha256": "ad1eec54cc8d60770b9586c29d0927bab8338e158ad236b5ef5e68cfe3b68ff8",
+      "duration": 49.466667,
+      "size": [
+        1178,
+        2556
+      ],
+      "fps": "30/1"
+    },
+    {
+      "file": "media/history-hi-cfr.mp4",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-history01/normal-ui.mov",
+      "rawSha256": "29783e2454a7225e33d5b46851397531def33499f35b609167de05fe66dd8209",
+      "sha256": "c0937ab82d3e7af7a6ce716cad35e9bb190ac17239666591022d943ef07ecade",
+      "duration": 45.466667,
+      "size": [
+        1178,
+        2556
+      ],
+      "fps": "30/1"
+    }
+  ],
+  "originalAttachments": [
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-actual-score-and-review.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/9E60894A-CA14-4AB2-BDEE-13FAD6415673.png",
+      "sha256": "ae20db414f9378e09a529f289d800ab4fb6f43ad5001fea2e9b84bffb90ce90f",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-actual-first-result.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/0438611B-A850-4B47-ABA7-67DC88EDD184.png",
+      "sha256": "809b8d31e64d9273a0dd8556dd2048eae1d0a5520f1cf12262a3ebab361dff7c",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-vote-selection.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/7E2C16D4-AD9D-4787-AF09-DC16BF00B002.png",
+      "sha256": "382ae11d51d8d7b6dc47543ce72932823e5a8c91c7bfc576bfe75c2a2e3489af",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-guessing-bottom-neutral.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/EE2C6961-DA54-41AE-8CE5-FCD7FAE295DB.png",
+      "sha256": "0c46991f73c2b40b79e64292a740f04f3698ae8b7bc689769f30030ee2947f80",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-guessing-top-neutral.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/DACA6399-9E39-4E5B-911E-EA6258A569F1.png",
+      "sha256": "98b408e2b7e494833d487191076ae07497f3d5bf6387c19c34d278cde53eccfe",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-lie-selected-private-before-reveal.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/29D5264D-64A9-42EB-B37D-007093BFF09D.png",
+      "sha256": "febe33f209ff21c4b9fcfe130467ba8dc892bd6a6eb339ea71f69c6ec92eb283",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-answer-5.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/A591D439-9DCE-46B3-A46E-C0BC78C9FDA8.png",
+      "sha256": "9ec75a2141db0e00b0f7622967c9c8fecef21eeb1bba3df18a6402dbd1c61c04",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-answer-4.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/210DF3AA-29FA-4E36-A91E-2D52585309A9.png",
+      "sha256": "e10b8f914d124c5cb76fd1cff2392e734ab07481a5e7e76a5802550ca0d7f9b7",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-answer-3.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/662E6579-FF45-4A86-A4D3-15DF1AE43671.png",
+      "sha256": "15d5a7ed2d1123c0db9dfc007d52c71ad9e36157bb696aaf1bd46e8734d22f50",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-answer-2.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/12E1A6B3-30BD-4B04-84EF-35BB0BF56362.png",
+      "sha256": "d2fe2b2fae2c5a20fd271727ab7d0ae2c2f525c0987ecabe5669b7229d8a2818",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-answer-1.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/6F6F877B-203D-4EE5-B3FE-4B7A7BA77C5E.png",
+      "sha256": "ab608ba5ec3b1b0e116ad32afe81c5d0704095a53ffd0ad80b88632fb74ef5e6",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/native-clear-menu.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/6CA3F026-F95B-4904-B353-7CEC88557865.png",
+      "sha256": "6a2b04065e43f25039fbd91e39fda5558f655e749e56bf425daa951ce58230e6",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round1/round1-input-start.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-firstvote06/attachments/370FC379-BC22-4F78-BBE3-A8FBE0F1110F.png",
+      "sha256": "bcdde18f59a6d14c005e0474110c594d1f62abc50f70781c67a11dab81e18814",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-actual-score-review.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/7799D6AB-3676-401F-982A-C95CFC332A36.png",
+      "sha256": "fd6d73544879b981ac887282ad46505687fc003bdc1ca16aef574329f7816146",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-actual-result.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/DFDD7178-3CDC-4516-A7A4-D0D2E13FAC93.png",
+      "sha256": "70f540f0792995ca4e3e008bf048a0a1c18254e2d3d71b83ef7fe0235f063e90",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-vote-selected.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/B2A7AACC-B01A-4788-A861-6C38D0E5A69D.png",
+      "sha256": "403c326a1594206ca42fbc9be23fd4dcf475d32c6d773bb0ed1f366a48ce75b3",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-guessing-bottom-neutral.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/C5805ED8-1599-4F68-ACE5-98FAE656540C.png",
+      "sha256": "13da33617e8aece4c7065d88702b590cadce6a6de8bc98fa8455e3e777f2de7a",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-guessing-top-neutral.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/1E5CAE5C-E517-4278-B5D8-1CAA7B71A2C0.png",
+      "sha256": "a6715673a492101ad4ed5b974cceda9c1a19cc22ca93df39c700a0e7346608fd",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-lie-selected-private-before-reveal.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/1150ADDB-11C2-48F1-823E-3C65295BEF3A.png",
+      "sha256": "2007490fa4fb2be01f27a22922e75b264f0df4b4ed0fb0f24394b6a98bd04b6d",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-answer-5.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/0C7DDD75-E773-455C-B6CE-D9A1FB7B71BE.png",
+      "sha256": "55ae9a96a3bf345052660cd307bad0d30e187fbe5d7fed02c20ab3c86b3cbd7a",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-answer-4.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/A32D3972-0819-4658-8D8B-613F35990786.png",
+      "sha256": "9898d9ae9da66bb9e7fbc97961edaaa7835035e064bf7092660dcbfdac6d793c",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-answer-3.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/47940A2B-6AEC-4CA7-A052-F7CC4491F72E.png",
+      "sha256": "0121f1b33b0e487a725985007acd1e587106ceb02c993b94bbb44cc1137b79f1",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-answer-2.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/BC8C3DCA-A300-47E9-BEE6-E688A5F6A22E.png",
+      "sha256": "c84f52e2aab25b5c7976b9bd60dcf0d98f38a02fdd8794ace177a6b3223aecfc",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-answer-1.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/99BC9DFA-AC16-443B-BD6E-A36C41FB7119.png",
+      "sha256": "c2c8b2d2841087ff882f7939c3345752c965ae534443c5955408205e78275f89",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round2/round2-input-start.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round2-vote01/attachments/54FDB18A-B3AF-444D-9785-00F887FC8871.png",
+      "sha256": "74877d923b2b409362bee0b4670c94d5d43250d8729f5a79f0793e0981d0061c",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-actual-score-review.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/10436625-C317-401E-9534-19219F90569F.png",
+      "sha256": "4136a926461ce831d9bb498410239a5ac732c7f84331dff5d995134db0cbea8f",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-actual-result.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/3B70B01A-261E-40B6-B2BA-6A6C645C1B01.png",
+      "sha256": "d56b40003b80e31a571e78a3aeec433a982336bcbf34e02a7a31d8c747811105",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-vote-selected.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/9745757C-E035-4E28-8954-74B8A7157AD0.png",
+      "sha256": "4def56deeb7e89448c0356649a601f39ad07c2bf20940e38f6d265dd18f70535",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-guessing-bottom-neutral.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/587BCDE2-7A9C-456A-924C-E34BB8FD2D96.png",
+      "sha256": "39463830529c685c9110d3de5344481ff744157671a6387b87bfbc629624c461",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-guessing-top-neutral.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/F78B222D-47EE-4905-B252-E87600306F34.png",
+      "sha256": "964dd5ee2fec3de4516171110d31f82373d59ba1bd3b3f28822221a2c05c38e5",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-lie-selected-private-before-reveal.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/4D415855-523B-4ADE-BCB7-853EF259E179.png",
+      "sha256": "e9033d7b12eaef3a79dc2f76716ac7b2fd8784b53873aa3ead3417fefe661730",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-answer-5.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/ECB4A690-DD1C-4408-8B09-0B4402B7EA42.png",
+      "sha256": "733968ca927b0a270b69b0fa0014edec456440eb37de3be64eb3091dd052522c",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-answer-4.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/26110BE1-43F2-43F9-BFF5-E3E7767B269E.png",
+      "sha256": "2b66b1a79eade7d725c961dbb273fb52331e520f23aa0152abb54f8dc3f19a86",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-answer-3.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/511787D1-459B-4E79-B54D-2FCE86950B9E.png",
+      "sha256": "a2d18dd2abad277ef5527b60149cebd4a91b90afcd84a782ae5f63c810328735",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-answer-2.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/49D9698E-9470-41AB-A518-E89B1D61773E.png",
+      "sha256": "244419e8e637c3d132ab3f0a772d30a636eae2063467ebbba1e56638b5644e3f",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-answer-1.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/419D9093-F251-447C-9AE3-E0F9D85CA38D.png",
+      "sha256": "f4f21b84de4e29246e0c6e1af46dcaeabc41cb4d68101b6618d6ed547f453318",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round3/round3-input-start.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round3-vote02/attachments/9035EF5D-C3B6-4AC3-A6F4-5AAF50149364.png",
+      "sha256": "648bfa2a5f6b832eacb71dc064622ce055215d10a2b3b0c31d1fa5ddfe30852e",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/normal4R-actual-final-detail.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/3A229AA4-D5C2-4E57-900E-738C26788DB5.png",
+      "sha256": "228b785c7c3a91a9fcbaeabb187908e7d829869b9c2fc5006cc783324ac0e78c",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/normal4R-actual-final-result.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/A7C29E5D-7E67-41D7-B8D7-09C72C9B9D10.png",
+      "sha256": "74ab2cc451278e32dcb4bfce7e453e96a0d8d05f87cadbe924a66e01d78c022f",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-actual-answer-review-bottom.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/F92BE8C7-EABB-4652-A7B2-DFA576876E8E.png",
+      "sha256": "5a5c4f2cb1a2637a2270ddf99a3555bc9160b43b28aedac1e72560f1bbf95aab",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-actual-score-review.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/C779AAE0-A315-49C0-BB23-B8E193657275.png",
+      "sha256": "ded86a6b7a1bec372f7cc071afcde2e7893ac5b930515766b0198f61cca623aa",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-actual-result.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/73B09E7B-8D31-4C95-AAC9-B49E16C2DF7C.png",
+      "sha256": "76d658fb6ca3eee61bddb25cb1a2df3fbff561571888c3911f14409f290f2558",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-vote-selected.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/787BB22F-2E99-47F7-BE99-6DCC9AE27A92.png",
+      "sha256": "efd3838ac936ab31fc6675d70928036776cb2c40e230950ddda5b9f507aa3f89",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-guessing-bottom-neutral.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/6A5F2761-29DE-40DD-A326-A8230F431D84.png",
+      "sha256": "53bda7288ddeabcab8eba79686cde70df5b2a3a65ba45bf581996cd60b7217e3",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-guessing-top-neutral.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/5DBCDE6E-59CA-49B0-B095-37BC0B7F056A.png",
+      "sha256": "63685972e90c92c019e6aa890a3a19e8c87ffb6696ef1326b26c4890b44c6ffa",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-lie-selected-private-before-reveal.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/561A8949-38A9-4DEA-98F0-F8970567E937.png",
+      "sha256": "13b9dcc355ab50358eb89f677c161ef023abb756e8bc5d1e9b458c2b619e0bc8",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-answer-5.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/13BB626A-12C4-454E-AA0B-26C7DF60DA22.png",
+      "sha256": "a62d9c100545763c8797790c3912c79c3a70c88a375c5a5706b005d4e1a30641",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-answer-4.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/0B991108-906D-40CB-A3AF-78D43DFB7B26.png",
+      "sha256": "8842c693b32f8d630d9e98d60902d2800e8b781fdfb2b9543e45cb146f4ed03c",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-answer-3.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/BA16548B-CFEA-4CF4-B7BB-BC7DFEE02E58.png",
+      "sha256": "12c0a81646fc00cab35b8f5ed5b41afb7affccdad192de7b8d7473e5fb2a1890",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-answer-2.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/43C7F09A-8DDE-47AC-91B9-F515E756AEE7.png",
+      "sha256": "11626a76e85bdcacc0fa4943ebd7a72a443f8898b9b86f87dcded5fb3eff5eec",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-answer-1.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/868B90E1-FCD7-47B4-9FE6-837ADCED8E9E.png",
+      "sha256": "4fbb044ef1c78bd9eb6f889a1d9dcd46250a67b1538e00c49a2a65beb04d45ec",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/round4/round4-input-start.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-round4-final01/attachments/659306EA-6E74-4409-BD14-C34EF259B36D.png",
+      "sha256": "774fd85c630c652e9ad15e7c7e52af53f3c15ffa2bab855e51c86be9df5df58f",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth1/truth1-actual-score-review.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth1-vote02/attachments/F560DD6D-7AF5-4686-B3D2-B9EE2D1BAD04.png",
+      "sha256": "87e74785353d1d58848fd42968c07aa29955912eeb2ceddc27bf2b726b7383bd",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth1/truth1-actual-result.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth1-vote02/attachments/AC1BCE9B-AE4D-4358-B17A-785CB0790392.png",
+      "sha256": "d48a9499b7dce3761a8caea18593612f1133289f25d846b1e08e265bd066d38d",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth1/truth1-vote-selected.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth1-vote02/attachments/969A9E17-839E-4CFD-B6F8-8A12019D54BC.png",
+      "sha256": "29c794086e54079abdbeae5888a08cc4e3a8aba20f96a86ffb0a1f7dba177a03",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth1/truth1-guessing-bottom-neutral-answers.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth1-vote02/attachments/6D7E2FB5-0F58-42FB-B407-1D6C45955855.png",
+      "sha256": "3047201fcc56133fbc8b6aca96ce67734bfa81e6a765ac65dfd64225dd52a1b3",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth1/truth1-guessing-top-neutral-answers.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth1-vote02/attachments/530B57C9-EEF3-4EFF-813D-BAED67C68D33.png",
+      "sha256": "6f6f4aa2f7665a743580353f3407edc7256f46fbc77a05a5721387bb77cbe23c",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth1/truth1-answer-5.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth1-vote02/attachments/4A88FCF8-1BC2-4C30-8C6E-E84ACB667C32.png",
+      "sha256": "1a0559fbfb2bd187f47f1052eb9960a734f1fa364546be2d8a2c5385020c0092",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth1/truth1-answer-4.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth1-vote02/attachments/6805F221-64DE-4761-A0B4-CF58216B1F00.png",
+      "sha256": "0564106e3a344ff569b07f2b7f6048018a94d42b60426fcb84ffa7fc5b484efd",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth1/truth1-answer-3.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth1-vote02/attachments/79884074-4B11-4DDB-A4A9-212206025EC0.png",
+      "sha256": "963cf5b94bf28ec743f2b084369af14d860a992ecd8dcc82edf4fb2b9130c87f",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth1/truth1-answer-2.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth1-vote02/attachments/25C3BDEA-D9DF-4DD4-AAEC-B236338D6063.png",
+      "sha256": "3e7e427c35d8949b41f471098f748d9efc50ed39180b271bf5459c03dbae8ccb",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth1/truth1-answer-1.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth1-vote02/attachments/291A831C-676D-40E1-B85B-7269339AC09C.png",
+      "sha256": "04580fbf6eba7ed22bb72109bde8e7fd5d9f0fdde7c597cccbbc1f2449dbc77d",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth1/truth1-declared-private-before-vote.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth1-vote02/attachments/CD067724-0B34-4542-A91C-FCF6DDA85936.png",
+      "sha256": "e11c24dae140c79b0a7ee25255b9015294749921f56fbf8551a14c1281716c72",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-actual-score-review.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/C296F39E-195E-4893-92FB-11785464B13E.png",
+      "sha256": "ee6fc3a9d67cdf9e1d929d584bcebde7f1a4f6d67fad92e63b9c325e06c0015a",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-actual-result.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/862FD1E5-84F1-4BF6-BD3F-3C02FC309551.png",
+      "sha256": "8f60307819c4423896a1349130c21779ca3ebb479e5ab4859e739bb2863b10ae",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-vote-selected.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/7876C519-9B25-4B6F-AE94-53071C60FCF9.png",
+      "sha256": "85bf1a110b1ba65ca873164c66e93dcf2bd4b5bc22307a574d319be4ef63b13b",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-guessing-bottom-neutral.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/F7DE4E84-044A-4DA3-BB75-83F6674E3D39.png",
+      "sha256": "8a6f5113f8a645cf2e14f938db92dad0ccd298592d531540afb8cf44d6ec49f2",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-guessing-top-neutral.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/6627A37A-FC12-4957-9474-3C69C74B0A32.png",
+      "sha256": "30f8b36e62e08e0cff3bb9d6f3df0edae92977418be0f2daa856f8bf23c33e28",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-lie-selected-private-before-reveal.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/60A3351F-ACBE-496F-AC69-B9D89776F9EB.png",
+      "sha256": "4cdfca1eb3a1f0caa706f3843778abc2c28bcfdb7109555bdae8e5d266b13a0a",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-answer-5.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/CCCF1C1F-6F45-498F-9A94-0B85D2DE5BD6.png",
+      "sha256": "61d1893f8cee57f0c00ed63626faaf1a270e63845113efd6b9e16b76a5da5bf5",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-answer-4.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/5A64F35D-AE0B-4841-9FA4-A811BBFF62E1.png",
+      "sha256": "baea3ee96f0c983fa00ef756b95b78aaba632068df42be406de570fc7b1a3270",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-answer-3.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/B36E9CC3-E4B7-4D80-926B-A9485214D6CF.png",
+      "sha256": "504ca2c620c68b9511456cb141d98bef6251c0cf72be8a822240c5a36a481fa7",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-answer-2.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/DAB12681-13A8-481B-B730-9B4C7223825F.png",
+      "sha256": "5ae21b9d5ae490373327124e00a85dcbde5174e17060807ab94d12c2314647be",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-answer-1.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/F455502C-0DC8-4B57-98EB-734206C79D66.png",
+      "sha256": "0846cba4aaf43bee309766b6b0904ad7d8c8429752a4dda048bd898454a5d085",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth2/truth2-input-start.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth2-vote01/attachments/51C15175-5240-437A-AF57-D0604B25E994.png",
+      "sha256": "05681f86cb8009b2120061585e3d091862e8c667519fab3cbaf239accfed1ab3",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3R-actual-final-detail.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/978BF7CE-2A20-4859-8BF0-38DF6A6A13D0.png",
+      "sha256": "084d56c7293bc4a5e0f01251147c306a3ee31bc60dfe27d406b1d57f15d40f56",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3R-actual-final-result.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/E512807E-00F2-4B0B-8BEF-5CC4F45939DA.png",
+      "sha256": "8021f806c1ccf6cdacfd971277bc68aeeda6c7c3e5a9043eb35757a60ef7ba7a",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3-actual-score-review.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/0CC2CE18-5717-40BF-A088-FC868B4158D0.png",
+      "sha256": "0a7c8b308fb4516888f133884d80f14271bef0b5c2b4ea6e2d5a1f55d9750ace",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3-actual-result.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/C62032E7-D13D-48AD-9946-C771224E5EB4.png",
+      "sha256": "3f83d1855755901af17f7d717a8a0d22509b949166a38ecb3d42b7712acfb546",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3-vote-selected.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/911311A1-3EAF-4ECD-A4B2-52066BAB6D8C.png",
+      "sha256": "c3baeba309edb37271f1497b3a4dc71768302321ad2665e931d08a443ed4b787",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3-guessing-bottom-neutral-answers.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/2199F269-D629-40AD-BFA0-16941864BBB7.png",
+      "sha256": "d9e9b9712fd04d84446f049f9f0dcd4150661930dd82f8251f70a36d84e41ff2",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3-guessing-top-neutral-answers.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/B7CA1CAD-C4A4-4D2A-A612-0800A670AC25.png",
+      "sha256": "caa944b7abd3f711c59c85f3175f7a45eb98ffdca99ca48c42a4e0660241a6d3",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3-answer-5.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/30648171-5B85-4CC6-BF88-CC5E816271D0.png",
+      "sha256": "7bfc592b98c4e2265bea786a641d50c92f8ab0fdcdbf9f9d362c73820add261a",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3-answer-4.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/8E06D015-943F-4CDC-A0A8-20823A36C2C8.png",
+      "sha256": "d0b683a6e8ed40ea9ed6f9afe3da1680ca118be2c9b2f392c7ab55474b70976a",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3-answer-3.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/5626759D-E4E4-4C21-B15D-F8FBCE4707E1.png",
+      "sha256": "d40a6f80a2ce79b6a51f4120024ed810693642d5003a2492704254f7acdc2471",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3-answer-2.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/63237227-BDE1-44CF-A413-17ED6A367B0A.png",
+      "sha256": "85cf69a2e9d70ebe2f942fead99c50229cb4b94ea181fb4de7d6515ff4bebe01",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3-answer-1.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/F981B870-1A94-4AF5-9EEE-D7A3F9CAF132.png",
+      "sha256": "4c87c9fda527593f641833ec4ec200952af17608671bcf6a4fce18c642423196",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    },
+    {
+      "kind": "Original attachment",
+      "file": "media/evidence/truth3/truth3-declared-private-before-vote.png",
+      "source": "/home/pui/tmp/projectp-longform-20261027/capture/coder-truth3-final01/attachments/67A7D6B0-215A-46EC-8A40-9DBF61D91EB9.png",
+      "sha256": "40dfde30c921cbcc7344254f44b87a4fed07be7250d90ef71ec1ce09bf31d084",
+      "width": 1178,
+      "height": 2556,
+      "noResize": true
+    }
+  ],
+  "originalsUnchanged": true,
+  "noResize": true,
+  "noGameSpeedClaims": true
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "audit_id": "129-child-handoff-20261027",
+  "id_kind": "issue",
+  "audited_at": "2026-10-27T12:29:09.343Z",
+  "previous_manifest": null,
+  "product": "TruthOrLie quality129 / Codex child",
+  "cli_version": "0.164.0-alpha.11.1",
+  "invocation": "Existing VS Code Codex app-server child; no restart",
+  "actual_model": null,
+  "actual_model_evidence": {
+    "currentAfterRootChange": "Unknown; no new child turn metadata after Root migration",
+    "latestObservedTurnModel": "gpt-6.1-sol",
+    "effort": "ultra",
+    "timestamp": "2026-10-27T11:41:58.050Z",
+    "matchingThreadMetadata": true,
+    "rawRolloutNotCopied": true,
+    "configIsNotRuntimeEvidence": true
+  },
+  "configured_model": "gpt-6.1-terra",
+  "claimed_model": {
+    "rootReport": "Root switched sol to terra; not generalized to child"
+  },
+  "permissions": "never approval; full-access workspace",
+  "sandbox": "danger-full-access",
+  "network": "enabled",
+  "tools": [
+    "functions.exec",
+    "exec_command",
+    "native headless Craft",
+    "collaboration"
+  ],
+  "skills": [
+    {
+      "name": "projectp-video",
+      "skill_sha256": "a2deaa2c5166eb43a860db9c2252fc41ae9796f08e68faaf4f66dc8c532139e8"
+    },
+    {
+      "name": "kinetic-short-video",
+      "skill_sha256": "e0ea0e7d6f9e75938113ce0e6f222ed80a6783743292243f2fd292e8ab30b54d"
+    },
+    {
+      "name": "monthly-prompt-manager",
+      "skill_sha256": "05c52d963c34d4717aa7b2a8a9f84e049086242c7d93b04d3ec4b1d0d66d599a"
+    },
+    {
+      "name": "model-change-skill-audit",
+      "skill_sha256": "aac9295d0519b513ddb3880a5fd1637032a3a722ecd3f30251216c0bbc4792f9"
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "current-real-content-mp4",
+      "sha256": "83dd07ec3b4b7fb6b3745ed41a82adc48e7660ddbb0533619a5ea539ed6baf26"
+    },
+    {
+      "id": "native-editor-reference",
+      "sha256": "51def46ef5cd738ab806090d9ea7cda80a78c710ccfe6a4afb10dc19459b78e8"
+    }
+  ],
+  "comparison_status": "旧新未比較",
+  "static_status": "Only selected skill files and current evidence read; full inventory not run",
+  "behavior_status": "Current production receipts passed, no controlled model comparison",
+  "overall_status": "未検証",
+  "worktree": "Pui-core-issue-129",
+  "branch": "feature/issue-129-truthorlie-quality",
+  "sourceHeadAtPreparation": "f8e903efb98f0ce5485376e6abc617a44b6fe8a2",
+  "pr": "https://github.com/Pui-core/Pui-core/pull/63",
+  "soleWriterPrefix": "promotion/projectp-truthorlie-quality-20261027/",
+  "ownedProductionProcesses": 0,
+  "actualMp4Seconds": 203.776,
+  "frames": 6113,
+  "remainingDistinctContentSecondsTo600": 396.23333333333335,
+  "formal600Master": false,
+  "voiceHeadTail34": true,
+  "FNativeMissingMedia": 0,
+  "FActiveExternalMedia": 0,
+  "newMacUiRecordings": 0,
+  "published": false,
+  "unverified_reasons": [
+    "Current child model after Root migration unconfirmed",
+    "No identical fixture old/new model comparison",
+    "Formal600 content gap396.2333s",
+    "Whole realtime watch/listen and creative adoption incomplete"
+  ],
+  "evidence_paths": [
+    "qa/render-firstcut-binding.json",
+    "qa/voice-aac-edge-firstcut-validation.json",
+    "qa/delivery-firstcut.json",
+    "qa/native-relocation-pixel-compare.json",
+    "source/content-gap.json"
+  ]
+}
