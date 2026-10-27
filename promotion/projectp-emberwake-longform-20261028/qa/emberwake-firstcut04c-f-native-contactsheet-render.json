@@ -1,0 +1,16 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\videos\\emberwake-firstcut04c-f-native.mp4",
+    "-vf",
+    "fps=2,scale=320:180:flags=area,drawtext=fontfile='C\\:/Windows/Fonts/consola.ttf':text='%{pts\\:hms}':fontcolor=white:fontsize=18:box=1:boxcolor=black@0.6:x=6:y=6,tile=5x4:nb_frames=20:padding=2:margin=2:color=0x07131D",
+    "-an",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\qa\\contact04c\\sheet-%03d.png"
+  ],
+  "stdout": "",
+  "stderr": ""
+}
