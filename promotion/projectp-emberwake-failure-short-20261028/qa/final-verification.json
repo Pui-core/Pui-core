@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-27T18:03:08.242Z",
+  "finalVideoSha256": "f24a1d071d39813d22b1a2364df7fe432c0d82b4d9290eba0ae53a2594e5070a",
+  "sourceRecordingSha256": "c0b94ae3e559809216db5536c13f3ca4c9121fc2dd7b1630c91c2257df78eb86",
+  "counterCrops": [
+    {
+      "sourceSeconds": 0,
+      "sha256": "42e83aa7c1051fd4dcf959f413dcd409e10a4e78326c141883b84e050c82a2b1"
+    },
+    {
+      "sourceSeconds": 64.1,
+      "sha256": "6a29330bd3247d11c119b053f894112094f174c93ea64c2e8071af4bce6cd938"
+    }
+  ],
+  "format": {
+    "video": "h264",
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "frames": 390,
+    "audio": "aac",
+    "containerSeconds": "13.013000"
+  },
+  "fullAudioVideoDecodeExit": 0,
+  "voiceCues": [
+    {
+      "id": "hook",
+      "lagSamples": 0,
+      "wholeCorrelation": 0.999985893846084,
+      "headCorrelation": 0.9999913450161393,
+      "tailCorrelation": 0.9999647084672706
+    },
+    {
+      "id": "replay",
+      "lagSamples": 0,
+      "wholeCorrelation": 0.9999279881877318,
+      "headCorrelation": 0.9999304131415463,
+      "tailCorrelation": 0.9999849650145934
+    },
+    {
+      "id": "result",
+      "lagSamples": 0,
+      "wholeCorrelation": 0.9999340799980876,
+      "headCorrelation": 0.99999007521558,
+      "tailCorrelation": 0.9999604777325767
+    },
+    {
+      "id": "follow",
+      "lagSamples": 0,
+      "wholeCorrelation": 0.9999741017922362,
+      "headCorrelation": 0.9999102248194435,
+      "tailCorrelation": 0.999968165034891
+    }
+  ],
+  "loudnessLufs": -20.4,
+  "truePeakDbfs": -5.2,
+  "reviewedImages": [
+    "qa/final-contact.png",
+    "qa/final-end-contact.png",
+    "qa/transition-0.45.png",
+    "qa/transition-8.05.png",
+    "qa/transition-9.45.png"
+  ],
+  "nativeReopen": [
+    "PhotoCraft info",
+    "EffectCraft info",
+    "FilmCraft inspect"
+  ],
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "nativeSound": false,
+  "published": false
+}
