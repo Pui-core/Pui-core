@@ -19,4 +19,12 @@ Rootは[YouTube公式の開示基準](https://support.google.com/youtube/answer/
 
 元動画/編集原本/F納品/immutable公開・予約receiptは不変。本件のF記録は `F:\Videos\ProjectP-Operations-2026-10-27\youtube-ai-labels-128\` へ別追記する。source担当はGUI/browser/runtime/lease/SNS操作を行わず、raw原票・UI・clipboard・ブラウザ固有識別子・lease情報をsource/Fへ複製しない。参照する原票は非秘密の識別名とSHAで結ぶ。
 
-この初期記録は方針と対象の準備段階で、実設定変更の完了を示さない。継続指示正本/PMcacheの反映と、各動画の現在設定はRootの正式後票を受けて追記する。人数・視聴・収益化の効果は未計測である。
+準備時head `5784c606fa91b7f0069c8d7240ea57e6b64ea7d4` の0/9は履歴として保持する。現在は実OFF3/9・残6件で、非AI設定の必要な再照合も未完のためDraft/HOLD。継続指示正本/PMcacheの方針反映を読取確認した。人数・視聴・収益化の効果は未計測である。
+
+## 確認済み3件の別追記
+
+`observations/2026-10-27-confirmed-3/` にRootの非秘密metadata要約を保存した。hEAgMuUNNLAは08:58:15 JST、pg8Ih4PAOBwは08:59:48 JST、a0TstalrQ64は09:38:57 JSTに実toolbar更新後のNo保持を独立確認している。旧controllerのHOLD原票は修正しない。未保存のNo選択が見かけだけだった、という原因の断定はしない。
+
+a0は全6Editfieldsと他12非AIcontrolsが一致した一方、audience radioのgetterはfalse/Off→true/Onと異なる。保存前後の明示本文は「子ども向けでない動画として設定」で一致し、元upload時のnative Noとも整合する。raw fingerprint一致とは記録せず、意味上の保持と分けた。
+
+前2件の公開/予約状態・全metadataは今回の票では完全再照合していない。別件129の品質保留による旧Truthの非公開化と、本件AI操作が公開/予約を変更しない意図は分ける。元予約票は当時の履歴で、現在状態を示す票へ上書きしない。全9件のNoと必要な他設定保持が揃うまでAPPROVE/ready/merge/closeを行わない。

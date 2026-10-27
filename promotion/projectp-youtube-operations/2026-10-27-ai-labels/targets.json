@@ -4,15 +4,29 @@
   "platform": "YouTube",
   "expectedChannelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
   "sourceBase": "f2154ee881c11764ca2c27a456366d9aa0bbfcf0",
-  "state": "prepared_hold",
+  "state": "partial_3_of_9_hold",
   "requiredTargetCount": 9,
-  "completedTargetCount": 0,
+  "completedTargetCount": 3,
   "allTargetsComplete": false,
   "rootOfficialPolicyReviewReported": true,
   "sourceWriterIndependentNativeReview": false,
-  "canonicalPolicyUpdatedConfirmed": false,
-  "pmCacheUpdatedConfirmed": false,
-  "canonicalPolicyEvidence": null,
+  "canonicalPolicyUpdatedConfirmed": true,
+  "pmCacheUpdatedConfirmed": true,
+  "canonicalPolicyEvidence": {
+    "observedAt": "2026-10-26T23:04:48.302Z",
+    "method": "Read-only exact policy paragraph; no document mutation",
+    "canonical": {
+      "document": "運用-#0001継続指示と定型作業.md",
+      "rule": "SNS-003-YT-AI-001",
+      "paragraphSha256": "a13934c90f37ddd578d66179c3cec13ab51f2a7005a8d19890ee99970e70d836",
+      "confirmed": true
+    },
+    "pmCache": {
+      "document": "pm-cache.md",
+      "policyParagraphSha256": "92b9fa99ef83426ac81d3852fd58a455dfefd48c938dbc5273ccb8a40d9ded85",
+      "confirmed": true
+    }
+  },
   "sourceWriterGuiBrowserRuntimeLeaseSnsActions": 0,
   "newMediaAttachments": 0,
   "reposts": 0,
@@ -97,18 +111,23 @@
         "scheduledForUtc": null
       },
       "operation": {
-        "status": "pending_root_native_receipt",
-        "nativeIdentityConfirmed": false,
+        "status": "ai_off_confirmed_other_settings_pending",
+        "nativeIdentityConfirmed": true,
         "nativeBefore": null,
-        "nativeAfter": null,
-        "saved": false,
-        "rereadConfirmed": false,
-        "confirmedAt": null,
+        "nativeAfter": false,
+        "saved": true,
+        "rereadConfirmed": true,
+        "confirmedAt": "2026-10-27T00:38:57.0873542Z",
         "publicationStatePreserved": null,
         "schedulePreserved": null,
         "relatedPreserved": null,
         "creditsPreserved": null,
-        "receiptReference": null
+        "receiptReference": {
+          "sourceFile": "observations/2026-10-27-confirmed-3/2026-10-27-ai-off-a0TstalrQ64.json",
+          "canonicalReceipt": "2026-10-27-ai-off-a0TstalrQ64.json",
+          "canonicalReceiptSha256": "e970e05b51aa08c33393d128d23ee29c614a3460868e7c37c5edf3b83e1f64c2"
+        },
+        "nonAiSettingsFullyCompared": false
       }
     },
     {
@@ -190,18 +209,23 @@
         "scheduledForUtc": "2026-10-27T03:15:00.000Z"
       },
       "operation": {
-        "status": "pending_root_native_receipt",
-        "nativeIdentityConfirmed": false,
+        "status": "ai_off_confirmed_other_settings_pending",
+        "nativeIdentityConfirmed": true,
         "nativeBefore": null,
-        "nativeAfter": null,
-        "saved": false,
-        "rereadConfirmed": false,
-        "confirmedAt": null,
+        "nativeAfter": false,
+        "saved": true,
+        "rereadConfirmed": true,
+        "confirmedAt": "2026-10-26T23:58:15.7647704Z",
         "publicationStatePreserved": null,
         "schedulePreserved": null,
         "relatedPreserved": null,
         "creditsPreserved": null,
-        "receiptReference": null
+        "receiptReference": {
+          "sourceFile": "observations/2026-10-27-confirmed-3/2026-10-27-ai-off-hEAgMuUNNLA.json",
+          "canonicalReceipt": "2026-10-27-ai-off-hEAgMuUNNLA.json",
+          "canonicalReceiptSha256": "bafa50f2767a9af8fb3506bb04aa03a02c0ed9ac852fee9316fd1e11d5b27c38"
+        },
+        "nonAiSettingsFullyCompared": false
       }
     },
     {
@@ -221,18 +245,23 @@
         "scheduledForUtc": "2026-10-27T09:45:00.000Z"
       },
       "operation": {
-        "status": "pending_root_native_receipt",
-        "nativeIdentityConfirmed": false,
+        "status": "ai_off_confirmed_other_settings_pending",
+        "nativeIdentityConfirmed": true,
         "nativeBefore": null,
-        "nativeAfter": null,
-        "saved": false,
-        "rereadConfirmed": false,
-        "confirmedAt": null,
+        "nativeAfter": false,
+        "saved": true,
+        "rereadConfirmed": true,
+        "confirmedAt": "2026-10-26T23:59:48.3275212Z",
         "publicationStatePreserved": null,
         "schedulePreserved": null,
         "relatedPreserved": null,
         "creditsPreserved": null,
-        "receiptReference": null
+        "receiptReference": {
+          "sourceFile": "observations/2026-10-27-confirmed-3/2026-10-27-ai-off-pg8Ih4PAOBw.json",
+          "canonicalReceipt": "2026-10-27-ai-off-pg8Ih4PAOBw.json",
+          "canonicalReceiptSha256": "ff5c63a3a1dd7e0db521affa550982602825942f1edad48d0abd88bfd1b919ce"
+        },
+        "nonAiSettingsFullyCompared": false
       }
     },
     {
@@ -297,5 +326,7 @@
         "receiptReference": null
       }
     }
-  ]
+  ],
+  "completedAiOffTargetCount": 3,
+  "nonAiPreservationGateComplete": false
 }
