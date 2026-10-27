@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "managementIssue": "https://github.com/Pui-core/-/issues/128",
+  "platform": "YouTube",
+  "expectedChannelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+  "sourceBase": "f2154ee881c11764ca2c27a456366d9aa0bbfcf0",
+  "state": "partial_4_of_9_hold",
+  "requiredTargetCount": 9,
+  "completedTargetCount": 4,
+  "allTargetsComplete": false,
+  "rootOfficialPolicyReviewReported": true,
+  "sourceWriterIndependentNativeReview": false,
+  "canonicalPolicyUpdatedConfirmed": true,
+  "pmCacheUpdatedConfirmed": true,
+  "canonicalPolicyEvidence": {
+    "observedAt": "2026-10-26T23:04:48.302Z",
+    "method": "Read-only exact policy paragraph; no document mutation",
+    "canonical": {
+      "document": "運用-#0001継続指示と定型作業.md",
+      "rule": "SNS-003-YT-AI-001",
+      "paragraphSha256": "a13934c90f37ddd578d66179c3cec13ab51f2a7005a8d19890ee99970e70d836",
+      "confirmed": true
+    },
+    "pmCache": {
+      "document": "pm-cache.md",
+      "policyParagraphSha256": "92b9fa99ef83426ac81d3852fd58a455dfefd48c938dbc5273ccb8a40d9ded85",
+      "confirmed": true
+    }
+  },
+  "sourceWriterGuiBrowserRuntimeLeaseSnsActions": 0,
+  "newMediaAttachments": 0,
+  "reposts": 0,
+  "immutableBaselineFilesModified": 0,
+  "targets": [
+    {
+      "videoId": "y6-fuKgLq4k",
+      "url": "https://www.youtube.com/watch?v=y6-fuKgLq4k",
+      "topic": "EMBERWAKE",
+      "requestedAlteredContentDisclosure": false,
+      "baseline": {
+        "kind": "observation",
+        "file": "2026-10-26-preexisting-y6-public.json",
+        "sha256": "d5aee0751b15a2dc5a2a6b151a19dc266e30c35a95395e6611b6cb1d959ee303",
+        "title": "その一手で、何秒縮める？｜EMBERWAKE制作本格化！ #Shorts #RTA #ゲーム制作",
+        "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+        "publicationState": "previously_public_confirmed",
+        "actualPublishedAt": "2026-10-25T10:00:22.000Z",
+        "scheduledForJst": null,
+        "scheduledForUtc": null
+      },
+      "operation": {
+        "status": "pending_root_native_receipt",
+        "nativeIdentityConfirmed": false,
+        "nativeBefore": null,
+        "nativeAfter": null,
+        "saved": false,
+        "rereadConfirmed": false,
+        "confirmedAt": null,
+        "publicationStatePreserved": null,
+        "schedulePreserved": null,
+        "relatedPreserved": null,
+        "creditsPreserved": null,
+        "receiptReference": null
+      }
+    },
+    {
+      "videoId": "BTS-CO_mh9A",
+      "url": "https://www.youtube.com/watch?v=BTS-CO_mh9A",
+      "topic": "EMBERWAKE",
+      "requestedAlteredContentDisclosure": false,
+      "baseline": {
+        "kind": "publication_receipt",
+        "file": "2026-10-26-game111-public.json",
+        "sha256": "6859cf09441ec36a0b05d5c7bf00a8f1af69b810aacbd10d84290c9016cb1535",
+        "title": "この道、どうつなぐ？ 芯石ひとつで足場が階段に｜EMBERWAKE",
+        "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+        "publicationState": "public_confirmed",
+        "actualPublishedAt": "2026-10-26T05:22:54.000Z",
+        "scheduledForJst": null,
+        "scheduledForUtc": null
+      },
+      "operation": {
+        "status": "pending_root_native_receipt",
+        "nativeIdentityConfirmed": false,
+        "nativeBefore": null,
+        "nativeAfter": null,
+        "saved": false,
+        "rereadConfirmed": false,
+        "confirmedAt": null,
+        "publicationStatePreserved": null,
+        "schedulePreserved": null,
+        "relatedPreserved": null,
+        "creditsPreserved": null,
+        "receiptReference": null
+      }
+    },
+    {
+      "videoId": "a0TstalrQ64",
+      "url": "https://www.youtube.com/watch?v=a0TstalrQ64",
+      "topic": "EMBERWAKE",
+      "requestedAlteredContentDisclosure": false,
+      "baseline": {
+        "kind": "publication_receipt",
+        "file": "2026-10-26-game112-public.json",
+        "sha256": "42b2fe4c3ea10ed23b1033dcb4eaae896cadf2e19f5fbe3c9ff84c96813cf5eb",
+        "title": "3つの灯をつけたら、ルミとの午後を忘れた｜自作ゲーム EMBERWAKE",
+        "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+        "publicationState": "public_confirmed",
+        "actualPublishedAt": "2026-10-26T05:32:25.000Z",
+        "scheduledForJst": null,
+        "scheduledForUtc": null
+      },
+      "operation": {
+        "status": "ai_off_confirmed_other_settings_pending",
+        "nativeIdentityConfirmed": true,
+        "nativeBefore": null,
+        "nativeAfter": false,
+        "saved": true,
+        "rereadConfirmed": true,
+        "confirmedAt": "2026-10-27T00:38:57.0873542Z",
+        "publicationStatePreserved": null,
+        "schedulePreserved": null,
+        "relatedPreserved": null,
+        "creditsPreserved": null,
+        "receiptReference": {
+          "sourceFile": "observations/2026-10-27-confirmed-3/2026-10-27-ai-off-a0TstalrQ64.json",
+          "canonicalReceipt": "2026-10-27-ai-off-a0TstalrQ64.json",
+          "canonicalReceiptSha256": "e970e05b51aa08c33393d128d23ee29c614a3460868e7c37c5edf3b83e1f64c2"
+        },
+        "nonAiSettingsFullyCompared": false
+      }
+    },
+    {
+      "videoId": "GrBDKzvnW58",
+      "url": "https://www.youtube.com/watch?v=GrBDKzvnW58",
+      "topic": "EMBERWAKE",
+      "requestedAlteredContentDisclosure": false,
+      "baseline": {
+        "kind": "publication_receipt",
+        "file": "2026-10-26-game114-public.json",
+        "sha256": "049f97daec98220c58f46e4b95b727f3c27f7ccd787c2f6bdfe53059b6260a87",
+        "title": "クリアしたら、思い出が1つ消えた｜自作ゲーム EMBERWAKE",
+        "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+        "publicationState": "public_confirmed",
+        "actualPublishedAt": "2026-10-26T05:54:55.000Z",
+        "scheduledForJst": null,
+        "scheduledForUtc": null
+      },
+      "operation": {
+        "status": "pending_root_native_receipt",
+        "nativeIdentityConfirmed": false,
+        "nativeBefore": null,
+        "nativeAfter": null,
+        "saved": false,
+        "rereadConfirmed": false,
+        "confirmedAt": null,
+        "publicationStatePreserved": null,
+        "schedulePreserved": null,
+        "relatedPreserved": null,
+        "creditsPreserved": null,
+        "receiptReference": null
+      }
+    },
+    {
+      "videoId": "21388c4ZOxk",
+      "url": "https://www.youtube.com/watch?v=21388c4ZOxk",
+      "topic": "EMBERWAKE",
+      "requestedAlteredContentDisclosure": false,
+      "baseline": {
+        "kind": "publication_receipt",
+        "file": "2026-10-26-episode2-long-public.json",
+        "sha256": "5189d7647360825214d50150765678b0e40d8b7cda2fd5abc72bd4166a3ab0b3",
+        "title": "急な二段の近道、ダッシュで渡れる？｜自作ゲーム EMBERWAKE 第2話 ふたりの合図",
+        "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+        "publicationState": "public_confirmed",
+        "actualPublishedAt": "2026-10-26T10:46:11.000Z",
+        "scheduledForJst": null,
+        "scheduledForUtc": null
+      },
+      "operation": {
+        "status": "ai_off_confirmed_non_ai_raw_fields_match_other_settings_pending",
+        "nativeIdentityConfirmed": true,
+        "nativeBefore": null,
+        "nativeAfter": false,
+        "saved": true,
+        "rereadConfirmed": true,
+        "confirmedAt": "2026-10-27T01:23:42.8503264Z",
+        "publicationStatePreserved": null,
+        "schedulePreserved": null,
+        "relatedPreserved": null,
+        "creditsPreserved": null,
+        "receiptReference": {
+          "sourceFile": "observations/2026-10-27-confirmed-4/2026-10-27-ai-off-21388c4ZOxk.json",
+          "canonicalReceipt": "2026-10-27-ai-off-21388c4ZOxk.json",
+          "canonicalReceiptSha256": "37712de28995e0263440a30058b4826bdb2bc8e9737a46f3b56a55a5353b9ac3"
+        },
+        "nonAiSettingsFullyCompared": false,
+        "all6EditFieldsExactlyEqual": true,
+        "nonAiControlRawFingerprintMatch": true
+      }
+    },
+    {
+      "videoId": "hEAgMuUNNLA",
+      "url": "https://www.youtube.com/watch?v=hEAgMuUNNLA",
+      "topic": "missyou",
+      "requestedAlteredContentDisclosure": false,
+      "baseline": {
+        "kind": "schedule_receipt",
+        "file": "2026-10-27-missyou118-scheduled.json",
+        "sha256": "58b5857da8fc5a7f78f404c2a2b8e6561883ceed020e36f9613aecbf16f07c7a",
+        "title": "飾った日記は、アプリを閉じても残る？｜missyou 開発中",
+        "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+        "publicationState": "scheduled_native_confirmed",
+        "actualPublishedAt": null,
+        "scheduledForJst": "2026-10-27T12:15:00+09:00",
+        "scheduledForUtc": "2026-10-27T03:15:00.000Z"
+      },
+      "operation": {
+        "status": "ai_off_confirmed_other_settings_pending",
+        "nativeIdentityConfirmed": true,
+        "nativeBefore": null,
+        "nativeAfter": false,
+        "saved": true,
+        "rereadConfirmed": true,
+        "confirmedAt": "2026-10-26T23:58:15.7647704Z",
+        "publicationStatePreserved": null,
+        "schedulePreserved": null,
+        "relatedPreserved": null,
+        "creditsPreserved": null,
+        "receiptReference": {
+          "sourceFile": "observations/2026-10-27-confirmed-3/2026-10-27-ai-off-hEAgMuUNNLA.json",
+          "canonicalReceipt": "2026-10-27-ai-off-hEAgMuUNNLA.json",
+          "canonicalReceiptSha256": "bafa50f2767a9af8fb3506bb04aa03a02c0ed9ac852fee9316fd1e11d5b27c38"
+        },
+        "nonAiSettingsFullyCompared": false
+      }
+    },
+    {
+      "videoId": "pg8Ih4PAOBw",
+      "url": "https://www.youtube.com/watch?v=pg8Ih4PAOBw",
+      "topic": "TruthOrLie",
+      "requestedAlteredContentDisclosure": false,
+      "baseline": {
+        "kind": "schedule_receipt",
+        "file": "2026-10-27-truthorlie121-long-scheduled.json",
+        "sha256": "faf2164cebd5984023425db044518f16c2bc3afb404daf5e8705be33e6dbf491",
+        "title": "5つの答え、嘘はどれ？｜嘘か誠か 実画面で4ラウンド＋別ルール3ラウンド",
+        "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+        "publicationState": "scheduled_native_confirmed",
+        "actualPublishedAt": null,
+        "scheduledForJst": "2026-10-27T18:45:00+09:00",
+        "scheduledForUtc": "2026-10-27T09:45:00.000Z"
+      },
+      "operation": {
+        "status": "ai_off_confirmed_other_settings_pending",
+        "nativeIdentityConfirmed": true,
+        "nativeBefore": null,
+        "nativeAfter": false,
+        "saved": true,
+        "rereadConfirmed": true,
+        "confirmedAt": "2026-10-26T23:59:48.3275212Z",
+        "publicationStatePreserved": null,
+        "schedulePreserved": null,
+        "relatedPreserved": null,
+        "creditsPreserved": null,
+        "receiptReference": {
+          "sourceFile": "observations/2026-10-27-confirmed-3/2026-10-27-ai-off-pg8Ih4PAOBw.json",
+          "canonicalReceipt": "2026-10-27-ai-off-pg8Ih4PAOBw.json",
+          "canonicalReceiptSha256": "ff5c63a3a1dd7e0db521affa550982602825942f1edad48d0abd88bfd1b919ce"
+        },
+        "nonAiSettingsFullyCompared": false
+      }
+    },
+    {
+      "videoId": "4mxdwqgsOVA",
+      "url": "https://www.youtube.com/watch?v=4mxdwqgsOVA",
+      "topic": "TruthOrLie",
+      "requestedAlteredContentDisclosure": false,
+      "baseline": {
+        "kind": "schedule_receipt",
+        "file": "2026-10-27-truthorlie121-short-scheduled.json",
+        "sha256": "0a8f8049369f1952228865fa95eeaaf940c6cd3a0fe2b50ab9ddc840eae0a52b",
+        "title": "この5つ、嘘はどれ？ 実際に投票すると… #嘘か誠か",
+        "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+        "publicationState": "scheduled_native_confirmed_related_pending_main_public",
+        "actualPublishedAt": null,
+        "scheduledForJst": "2026-10-27T19:15:00+09:00",
+        "scheduledForUtc": "2026-10-27T10:15:00.000Z"
+      },
+      "operation": {
+        "status": "pending_root_native_receipt",
+        "nativeIdentityConfirmed": false,
+        "nativeBefore": null,
+        "nativeAfter": null,
+        "saved": false,
+        "rereadConfirmed": false,
+        "confirmedAt": null,
+        "publicationStatePreserved": null,
+        "schedulePreserved": null,
+        "relatedPreserved": null,
+        "creditsPreserved": null,
+        "receiptReference": null
+      }
+    },
+    {
+      "videoId": "OrPT1gl7Vx0",
+      "url": "https://www.youtube.com/watch?v=OrPT1gl7Vx0",
+      "topic": "ScateRush",
+      "requestedAlteredContentDisclosure": false,
+      "baseline": {
+        "kind": "schedule_receipt",
+        "file": "2026-10-28-scaterush124-scheduled.json",
+        "sha256": "1533944f6fa691f026a403e6e88e10b4a7b1b97ba3d6e69704bbf75c1527ce96",
+        "title": "この看板、跳ぶ？くぐる？｜ScateRush",
+        "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+        "publicationState": "scheduled_confirmed",
+        "actualPublishedAt": null,
+        "scheduledForJst": "2026-10-28T12:15:00+09:00",
+        "scheduledForUtc": "2026-10-28T03:15:00.000Z"
+      },
+      "operation": {
+        "status": "pending_root_native_receipt",
+        "nativeIdentityConfirmed": false,
+        "nativeBefore": null,
+        "nativeAfter": null,
+        "saved": false,
+        "rereadConfirmed": false,
+        "confirmedAt": null,
+        "publicationStatePreserved": null,
+        "schedulePreserved": null,
+        "relatedPreserved": null,
+        "creditsPreserved": null,
+        "receiptReference": null
+      }
+    }
+  ],
+  "completedAiOffTargetCount": 4,
+  "nonAiPreservationGateComplete": false
+}

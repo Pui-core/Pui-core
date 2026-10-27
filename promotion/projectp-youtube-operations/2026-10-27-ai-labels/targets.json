@@ -4,9 +4,9 @@
   "platform": "YouTube",
   "expectedChannelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
   "sourceBase": "f2154ee881c11764ca2c27a456366d9aa0bbfcf0",
-  "state": "partial_3_of_9_hold",
+  "state": "partial_4_of_9_hold",
   "requiredTargetCount": 9,
-  "completedTargetCount": 3,
+  "completedTargetCount": 4,
   "allTargetsComplete": false,
   "rootOfficialPolicyReviewReported": true,
   "sourceWriterIndependentNativeReview": false,
@@ -178,18 +178,25 @@
         "scheduledForUtc": null
       },
       "operation": {
-        "status": "pending_root_native_receipt",
-        "nativeIdentityConfirmed": false,
+        "status": "ai_off_confirmed_non_ai_raw_fields_match_other_settings_pending",
+        "nativeIdentityConfirmed": true,
         "nativeBefore": null,
-        "nativeAfter": null,
-        "saved": false,
-        "rereadConfirmed": false,
-        "confirmedAt": null,
+        "nativeAfter": false,
+        "saved": true,
+        "rereadConfirmed": true,
+        "confirmedAt": "2026-10-27T01:23:42.8503264Z",
         "publicationStatePreserved": null,
         "schedulePreserved": null,
         "relatedPreserved": null,
         "creditsPreserved": null,
-        "receiptReference": null
+        "receiptReference": {
+          "sourceFile": "observations/2026-10-27-confirmed-4/2026-10-27-ai-off-21388c4ZOxk.json",
+          "canonicalReceipt": "2026-10-27-ai-off-21388c4ZOxk.json",
+          "canonicalReceiptSha256": "37712de28995e0263440a30058b4826bdb2bc8e9737a46f3b56a55a5353b9ac3"
+        },
+        "nonAiSettingsFullyCompared": false,
+        "all6EditFieldsExactlyEqual": true,
+        "nonAiControlRawFingerprintMatch": true
       }
     },
     {
@@ -327,6 +334,6 @@
       }
     }
   ],
-  "completedAiOffTargetCount": 3,
+  "completedAiOffTargetCount": 4,
   "nonAiPreservationGateComplete": false
 }
