@@ -4,9 +4,9 @@
   "platform": "YouTube",
   "expectedChannelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
   "sourceBase": "f2154ee881c11764ca2c27a456366d9aa0bbfcf0",
-  "state": "partial_4_of_9_hold",
+  "state": "partial_5_of_9_hold",
   "requiredTargetCount": 9,
-  "completedTargetCount": 4,
+  "completedTargetCount": 5,
   "allTargetsComplete": false,
   "rootOfficialPolicyReviewReported": true,
   "sourceWriterIndependentNativeReview": false,
@@ -49,18 +49,27 @@
         "scheduledForUtc": null
       },
       "operation": {
-        "status": "pending_root_native_receipt",
-        "nativeIdentityConfirmed": false,
-        "nativeBefore": null,
-        "nativeAfter": null,
+        "status": "already_no_verified_other_settings_pending",
+        "nativeIdentityConfirmed": true,
+        "nativeBefore": false,
+        "nativeAfter": false,
         "saved": false,
-        "rereadConfirmed": false,
-        "confirmedAt": null,
+        "rereadConfirmed": true,
+        "confirmedAt": "2026-10-27T01:48:01.2809718Z",
         "publicationStatePreserved": null,
         "schedulePreserved": null,
         "relatedPreserved": null,
         "creditsPreserved": null,
-        "receiptReference": null
+        "receiptReference": {
+          "sourceFile": "observations/2026-10-27-confirmed-5/2026-10-27-ai-off-y6-fuKgLq4k.json",
+          "canonicalReceipt": "2026-10-27-ai-off-y6-fuKgLq4k.json",
+          "canonicalReceiptSha256": "8343885f4380e6c4fe59fb14bcb8607dcb18b559a718af9072468f696fd8e3ba"
+        },
+        "aiStateChanged": false,
+        "metadataSaveActions": 0,
+        "nonAiSettingsFullyCompared": false,
+        "all6EditFieldsExactlyEqual": true,
+        "nonAiControlRawFingerprintMatch": false
       }
     },
     {
@@ -334,6 +343,12 @@
       }
     }
   ],
-  "completedAiOffTargetCount": 4,
-  "nonAiPreservationGateComplete": false
+  "completedAiOffTargetCount": 5,
+  "nonAiPreservationGateComplete": false,
+  "remainingTargetIds": [
+    "BTS-CO_mh9A",
+    "GrBDKzvnW58",
+    "4mxdwqgsOVA",
+    "OrPT1gl7Vx0"
+  ]
 }

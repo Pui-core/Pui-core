@@ -19,7 +19,7 @@ Rootは[YouTube公式の開示基準](https://support.google.com/youtube/answer/
 
 元動画/編集原本/F納品/immutable公開・予約receiptは不変。本件のF記録は `F:\Videos\ProjectP-Operations-2026-10-27\youtube-ai-labels-128\` へ別追記する。source担当はGUI/browser/runtime/lease/SNS操作を行わず、raw原票・UI・clipboard・ブラウザ固有識別子・lease情報をsource/Fへ複製しない。参照する原票は非秘密の識別名とSHAで結ぶ。
 
-準備時head `5784c606fa91b7f0069c8d7240ea57e6b64ea7d4` の0/9は履歴として保持する。現在は実OFF4/9・残5件で、非AI設定の必要な再照合も未完のためDraft/HOLD。継続指示正本/PMcacheの方針反映を読取確認した。人数・視聴・収益化の効果は未計測である。
+準備時head `5784c606fa91b7f0069c8d7240ea57e6b64ea7d4` の0/9は履歴として保持する。現在は実No確認5/9・残4件で、非AI設定の必要な再照合も未完のためDraft/HOLD。継続指示正本/PMcacheの方針反映を読取確認した。人数・視聴・収益化の効果は未計測である。
 
 ## 確認済み3件の別追記
 
@@ -35,3 +35,12 @@ a0は全6Editfieldsと他12非AIcontrolsが一致した一方、audience radio�
 `observations/2026-10-27-confirmed-4/` に21388c4ZOxkの正式票要約を追加。2026-10-27 10:23:42.850 JSTにSave1・実toolbar更新1後のNo保持、全6Editfieldsと他非AIcontrolsのraw一致を確認した。現在は実OFF4/9・残5件。公開/予約/Relatedの全再照合は別に未完で、Draft/HOLDを維持する。
 
 旧3件の後票・a0のraw差・原controllerは変更しない。旧3件manifestのroot README/targets payloadはsource head `eb2a3d4ab07aa052227e28d83e664fab830fccab` と凍結F append-20261027-confirmed-3のsnapshotとして解決する。今後のroot README/targetsは最新stateであり、過去snapshotを上書きするものではない。4件目以降のappendは自身のフォルダ内に独立snapshotを保存する。
+
+
+## 4本目と5本目を合わせた最新append
+
+`observations/2026-10-27-confirmed-5/` に4本目213の同一後票と5本目y6を保存。y6-fuKgLq4kは元からNoで、AI選択0・Save0・通常toolbar更新1後、10:48:01.280 JSTにNo保持と全6Editfields一致をRootの追加readで確認した。5件全てを新しく変更した意味ではない。
+
+y6のremix「動画と音声」のgetterはfalse/Off→true/Onで、保存前は両選択肢がfalseだった。AI/metadata/remix書込は0。raw差と元controller HOLDを保全し、raw全一致や従前のremixサーバー設定の独立再検証を主張しない。
+
+現在の実No確認は5/9。残りはBTS-CO_mh9A、GrBDKzvnW58、4mxdwqgsOVA、OrPT1gl7Vx0。公開/予約/Related等の必要な再照合も未完のためDraft/HOLDを継続する。4件時点のappendとmanifest f66edb37…は履歴として不変に保つ。
