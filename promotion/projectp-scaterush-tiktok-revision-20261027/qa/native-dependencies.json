@@ -1,0 +1,71 @@
+{
+  "status": "PASS_F_1EC_1FC_1PC_REOPEN_SAVE_RENDER",
+  "activeNativeAssetsInsideThisRevision": true,
+  "privateTmpOrOldFActiveDependencies": 0,
+  "missing": 0,
+  "dependencies": [
+    {
+      "project": "projects/scaterush-revision.ecproj",
+      "key": "items.1.kind.path",
+      "relativeAsset": "media/game-original.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/scaterush-revision.ecproj",
+      "key": "items.2.kind.path",
+      "relativeAsset": "media/game-ambient.mp4",
+      "exists": true
+    },
+    {
+      "project": "projects/scaterush-revision.ecproj",
+      "key": "items.3.kind.path",
+      "relativeAsset": "media/model-main.mov",
+      "exists": true
+    },
+    {
+      "project": "projects/scaterush-revision.ecproj",
+      "key": "items.4.kind.path",
+      "relativeAsset": "media/model-ending.mov",
+      "exists": true
+    },
+    {
+      "project": "projects/scaterush-voice-sfx.fcproj",
+      "key": "project.items.5.kind.Media.media.File.path",
+      "relativeAsset": "media/picture-tiktok.mov",
+      "exists": true
+    },
+    {
+      "project": "projects/scaterush-voice-sfx.fcproj",
+      "key": "project.items.6.kind.Media.media.File.path",
+      "relativeAsset": "media/narration-tiktok.wav",
+      "exists": true
+    },
+    {
+      "project": "projects/scaterush-voice-sfx.fcproj",
+      "key": "project.items.7.kind.Media.media.File.path",
+      "relativeAsset": "media/sfx.wav",
+      "exists": true
+    }
+  ],
+  "photoCraft": {
+    "smartObjects": [
+      {
+        "name": "avatar-cover",
+        "kind": "embedded"
+      },
+      {
+        "name": "actual-cover",
+        "kind": "embedded"
+      },
+      {
+        "name": "ambient-cover",
+        "kind": "embedded"
+      }
+    ],
+    "embedded": true,
+    "externalLinkedAssets": 0,
+    "reopenedPixelsIdentical": true
+  },
+  "regenerationOnlyExternalInputs": "Specified original Natural model, official Core SDK/JRE and generation tools are not editing dependencies; raw SDK/MOC/atlas not bundled.",
+  "nativeMusicPending": true
+}

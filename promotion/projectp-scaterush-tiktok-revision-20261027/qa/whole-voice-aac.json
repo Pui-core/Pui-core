@@ -1,0 +1,62 @@
+{
+  "status": "PASS_FULL_PHRASE_PCM_AND_FINAL_AAC_HEAD_TAIL_SYNC",
+  "finalAacVerified": true,
+  "videoSha256": "c43434bc1250160faf86f092695bc5906d4fa2eccc43c7be58905fa29d2b5521",
+  "cues": [
+    {
+      "id": "question",
+      "text": "くぐれる？",
+      "at": 0.65,
+      "declaredEnd": 1.5,
+      "wavSeconds": 0.8106666666666666,
+      "wholePcmMaxError": 1.1324882509544665e-7,
+      "firstVoicedSecond": 0.07841666666666666,
+      "lastVoicedSecond": 0.6798333333333333,
+      "lagSamples": 0,
+      "wholeCorrelation": 0.9999915709768369,
+      "headCorrelation": 0.999996753501183,
+      "tailCorrelation": 0.9999353812668966,
+      "sourceWaveSha256": "f8e93970998a418f4dcf7c6e2f0aba234bda771775eaa3e0d8f3642e3faaf060",
+      "wholePhraseRetained": true
+    },
+    {
+      "id": "clearance",
+      "text": "抜けた。",
+      "at": 1.65,
+      "declaredEnd": 2.75,
+      "wavSeconds": 0.672,
+      "wholePcmMaxError": 1.0132789607375514e-7,
+      "firstVoicedSecond": 0.062375,
+      "lastVoicedSecond": 0.5822708333333333,
+      "lagSamples": 0,
+      "wholeCorrelation": 0.9999529806292575,
+      "headCorrelation": 0.9999902870354509,
+      "tailCorrelation": 0.9999823364285936,
+      "sourceWaveSha256": "f6dfa6c52a3135031a51b433837859f839b40ac52045415d46ffe18a6571e046",
+      "wholePhraseRetained": true
+    },
+    {
+      "id": "follow",
+      "text": "このゲームの続きは、フォローで。",
+      "at": 3.1,
+      "declaredEnd": 5.5,
+      "wavSeconds": 2.24,
+      "wholePcmMaxError": 1.2516975400611585e-7,
+      "firstVoicedSecond": 0.078,
+      "lastVoicedSecond": 2.1184166666666666,
+      "lagSamples": 0,
+      "wholeCorrelation": 0.999984153922392,
+      "headCorrelation": 0.9999892539687678,
+      "tailCorrelation": 0.9999715578110804,
+      "sourceWaveSha256": "c9f12e43ca5eb343723564260dca3b0f15d464b2ae62711b81cb2718e41e1f62",
+      "wholePhraseRetained": true
+    }
+  ],
+  "sampleRate": 48000,
+  "voiceGain": 1.45,
+  "wholeDecodePerformed": true,
+  "streamedPcmOnDisk": true,
+  "minimumWholeCorrelation": 0.9999529806292575,
+  "maxAbsoluteLagSamples": 0,
+  "wholeSubjectiveListen": false
+}
