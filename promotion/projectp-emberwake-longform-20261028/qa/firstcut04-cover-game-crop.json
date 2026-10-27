@@ -1,0 +1,18 @@
+{
+  "exit": 1,
+  "exe": "/mnt/c/Program Files/PhotoCraft/photocraft-cli.exe",
+  "args": [
+    "run",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-emberwake-longform-20261028\\production\\ep01-pilot01\\frames\\frame-000800.png",
+    "--cmd",
+    "image.crop",
+    "--params",
+    "{\"x\":860,\"y\":650,\"width\":700,\"height\":400,\"deleteCroppedPixels\":true,\"contentAware\":false}",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\covers\\firstcut04-game-crop.png",
+    "--format",
+    "png"
+  ],
+  "stdout": "{\"command\":\"image.crop\",\"result\":{\"documentHeight\":400,\"documentWidth\":700,\"height\":400,\"resolution\":72.0,\"width\":700,\"x\":860,\"y\":650}}\n",
+  "stderr": "error: I/O: wrote \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\covers\\firstcut04-game-crop.png, but could not confirm the save is durable; it may not survive a power loss or crash: ファンクションが間違っています。 (os error 1)\n"
+}

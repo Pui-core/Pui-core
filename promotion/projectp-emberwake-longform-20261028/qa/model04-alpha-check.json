@@ -1,0 +1,16 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/Live2D Cubism 5.3/app/jre/bin/java.exe",
+  "args": [
+    "-Xmx1g",
+    "-Djava.awt.headless=true",
+    "-cp",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-emberwake-longform-20261028\\production\\model04\\classes",
+    "AlphaBounds",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\natural04",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\qa\\model04-alpha-bounds.json",
+    "932"
+  ],
+  "stdout": "{\"frames\":932,\"headBand\":[0,0,600,280],\"alphaThreshold\":16,\"topMarginMinPx\":24,\"topMarginMaxPx\":24,\"headAlphaLeftMinPx\":186,\"headAlphaRightMaxPx\":431,\"headEdgeContactPixels\":0,\"partialAlphaCountRange\":[35443,35621],\"failedFrames\":[],\"scope\":\"All rendered PNG head-band margins; bust sleeve/torso edges intentionally cropped\"}\r\n",
+  "stderr": ""
+}

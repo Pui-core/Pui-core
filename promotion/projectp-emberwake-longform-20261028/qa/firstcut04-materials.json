@@ -1,0 +1,75 @@
+{
+  "nativePhotoCraftSources": true,
+  "imageGenerationThisPass": false,
+  "originalDesignHasAiDerivedElements": true,
+  "materials": [
+    {
+      "mode": "art-pair",
+      "kind": "retained-art-version-comparison",
+      "frames": 243,
+      "seconds": 8.1,
+      "sourceTransitions": [
+        {
+          "from": 0,
+          "input": "media/traveler-art-history-0.png",
+          "sha256": "48c787243b39d164946e50ec2f3b37712d58a0c6f35e333f4710df58bd2925ff"
+        },
+        {
+          "from": 81,
+          "input": "media/traveler-art-history-16.png",
+          "sha256": "11ab09107b4550b806842690a8956855ff6577d86a8b568a6df69f7f4efafd07"
+        },
+        {
+          "from": 162,
+          "input": "media/traveler-art-history-26.png",
+          "sha256": "3bd702cf27da95fea5a36149250642d05ef860ab43e9ecfca0a65e7e7299c1bd"
+        }
+      ],
+      "file": "media/firstcut04-art-pair.mov",
+      "sha256": "361f7dcb778de550626425296a9cb2030e95bd9016b7a0ff004a0294293b8a2b",
+      "staticSourceArtIsNotFrozenGameplay": true
+    },
+    {
+      "mode": "art-detail",
+      "kind": "current-reconstruction-not-historical-gui",
+      "frames": 264,
+      "seconds": 8.8,
+      "sourceTransitions": [
+        {
+          "from": 0,
+          "input": "media/redraw-steps/step-05.png",
+          "sha256": "3fdb0a545806a5ceb01d516a4598baa4ca1a5ca210db822ba167924eaa807bd0"
+        },
+        {
+          "from": 44,
+          "input": "media/redraw-steps/step-07.png",
+          "sha256": "8b28c106af75915b49eceeb06c6f70a9c4aca6def0e83e98706177647bde87d9"
+        },
+        {
+          "from": 88,
+          "input": "media/redraw-steps/step-10.png",
+          "sha256": "919f23a3d251d45ae1e36d56c26faf22195591b1d19f2a5fdb3e75ba12df27fb"
+        },
+        {
+          "from": 132,
+          "input": "media/redraw-steps/step-13.png",
+          "sha256": "a4f79bcdd200cd719fd325c8fa4b66b5336012b09a5ba17dac1688c4adf7ce1f"
+        },
+        {
+          "from": 176,
+          "input": "media/redraw-steps/step-16.png",
+          "sha256": "4475d7385f76db429ea43760b6326245d1836248137794d1d95df118eab94ccc"
+        },
+        {
+          "from": 220,
+          "input": "media/redraw-steps/step-19.png",
+          "sha256": "b60895e9555a80ee1bd944ba4709e0ccfd5546fdfe6ddeb932a6adea419a552b"
+        }
+      ],
+      "file": "media/firstcut04-art-detail.mov",
+      "sha256": "29a169304c66814348d30bdc984f8196875697ab241513a3a7fa53be2a56f10a",
+      "staticSourceArtIsNotFrozenGameplay": true
+    }
+  ],
+  "formal600Complete": false
+}

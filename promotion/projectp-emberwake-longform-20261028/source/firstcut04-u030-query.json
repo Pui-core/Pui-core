@@ -1,0 +1,155 @@
+{
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "ド",
+          "consonant": "d",
+          "consonant_length": 0.05624990910291672,
+          "vowel": "o",
+          "vowel_length": 0.07162615656852722,
+          "pitch": 4.604316711425781
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "o",
+          "vowel_length": 0.09315021336078644,
+          "pitch": 4.862583637237549
+        },
+        {
+          "text": "シ",
+          "consonant": "sh",
+          "consonant_length": 0.0853271633386612,
+          "vowel": "I",
+          "vowel_length": 0.03692053258419037,
+          "pitch": 0
+        },
+        {
+          "text": "テ",
+          "consonant": "t",
+          "consonant_length": 0.029548928141593933,
+          "vowel": "e",
+          "vowel_length": 0.18997710943222046,
+          "pitch": 4.376986503601074
+        }
+      ],
+      "accent": 1,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.32296624779701233,
+        "pitch": 0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "フ",
+          "consonant": "f",
+          "consonant_length": 0.07456382364034653,
+          "vowel": "U",
+          "vowel_length": 0.039404891431331635,
+          "pitch": 0
+        },
+        {
+          "text": "タ",
+          "consonant": "t",
+          "consonant_length": 0.028738848865032196,
+          "vowel": "a",
+          "vowel_length": 0.06733546406030655,
+          "pitch": 4.943793773651123
+        },
+        {
+          "text": "ツ",
+          "consonant": "ts",
+          "consonant_length": 0.08565083146095276,
+          "vowel": "u",
+          "vowel_length": 0.0169234499335289,
+          "pitch": 4.937617301940918
+        },
+        {
+          "text": "ダ",
+          "consonant": "d",
+          "consonant_length": 0.028736673295497894,
+          "vowel": "a",
+          "vowel_length": 0.07106546312570572,
+          "pitch": 4.853542804718018
+        },
+        {
+          "text": "ッ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "cl",
+          "vowel_length": 0.12666596472263336,
+          "pitch": 0
+        },
+        {
+          "text": "タ",
+          "consonant": "t",
+          "consonant_length": 0.027794495224952698,
+          "vowel": "a",
+          "vowel_length": 0.06874725222587585,
+          "pitch": 4.676265716552734
+        }
+      ],
+      "accent": 6,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.07019063830375671,
+          "pitch": 4.65631628036499
+        },
+        {
+          "text": "ダ",
+          "consonant": "d",
+          "consonant_length": 0.034450918436050415,
+          "vowel": "a",
+          "vowel_length": 0.07316902279853821,
+          "pitch": 4.437312602996826
+        },
+        {
+          "text": "ロ",
+          "consonant": "r",
+          "consonant_length": 0.02777668833732605,
+          "vowel": "o",
+          "vowel_length": 0.09593629837036133,
+          "pitch": 4.349587440490723
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "o",
+          "vowel_length": 0.14846137166023254,
+          "pitch": 4.339033126831055
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ],
+  "speedScale": 1.04,
+  "pitchScale": 0,
+  "intonationScale": 1.04,
+  "volumeScale": 1,
+  "prePhonemeLength": 0.045,
+  "postPhonemeLength": 0.15,
+  "pauseLength": null,
+  "pauseLengthScale": 1,
+  "outputSamplingRate": 48000,
+  "outputStereo": true,
+  "kana": "ド'オ_シテ、_フタツダッタ'/ン'ダロオ"
+}

@@ -1,0 +1,26 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-firstcut04b.ecproj",
+    "render",
+    "--comp",
+    "EMBERWAKE formal firstcut04",
+    "--start",
+    "318.96666666666664",
+    "--end",
+    "322.46666666666664",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04b-patch3-2.mov",
+    "--format",
+    "prores",
+    "--prores",
+    "4444",
+    "--audio",
+    "off",
+    "--json"
+  ],
+  "stdout": "{\"rendered\":[{\"comp\":\"EMBERWAKE formal firstcut04\",\"output\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\media\\\\firstcut04b-patch3-2.mov\",\"seconds\":8.1265093}]}\n",
+  "stderr": "EMBERWAKE formal firstcut04 → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04b-patch3-2.mov (1920×1080, 105 frames, Custom)\ndone: EMBERWAKE formal firstcut04 → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04b-patch3-2.mov in 8.13s\n"
+}

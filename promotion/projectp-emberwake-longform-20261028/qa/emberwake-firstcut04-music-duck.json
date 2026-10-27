@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\emberwake-firstcut04-music.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\emberwake-firstcut04-narration.wav",
+    "-filter_complex",
+    "[0:a][1:a]sidechaincompress=threshold=0.025:ratio=4:attack=18:release=320:makeup=1[duck]",
+    "-map",
+    "[duck]",
+    "-c:a",
+    "pcm_s24le",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\emberwake-firstcut04-music-ducked.wav"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

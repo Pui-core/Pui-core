@@ -1,0 +1,154 @@
+{
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "ワ",
+          "consonant": "w",
+          "consonant_length": 0.0507330447435379,
+          "vowel": "a",
+          "vowel_length": 0.05363718420267105,
+          "pitch": 4.456361293792725
+        },
+        {
+          "text": "タ",
+          "consonant": "t",
+          "consonant_length": 0.05548350512981415,
+          "vowel": "a",
+          "vowel_length": 0.06343133747577667,
+          "pitch": 4.9074530601501465
+        },
+        {
+          "text": "シ",
+          "consonant": "sh",
+          "consonant_length": 0.09747515618801117,
+          "vowel": "i",
+          "vowel_length": 0.018995560705661774,
+          "pitch": 4.951804161071777
+        },
+        {
+          "text": "ノ",
+          "consonant": "n",
+          "consonant_length": 0.03432396799325943,
+          "vowel": "o",
+          "vowel_length": 0.069509357213974,
+          "pitch": 4.86924409866333
+        }
+      ],
+      "accent": 4,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ナ",
+          "consonant": "n",
+          "consonant_length": 0.04513809084892273,
+          "vowel": "a",
+          "vowel_length": 0.07623311877250671,
+          "pitch": 4.728297710418701
+        },
+        {
+          "text": "マ",
+          "consonant": "m",
+          "consonant_length": 0.05005884915590286,
+          "vowel": "a",
+          "vowel_length": 0.08603823930025101,
+          "pitch": 4.641027450561523
+        },
+        {
+          "text": "エ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "e",
+          "vowel_length": 0.07193096727132797,
+          "pitch": 4.523474216461182
+        },
+        {
+          "text": "ワ",
+          "consonant": "w",
+          "consonant_length": 0.061146803200244904,
+          "vowel": "a",
+          "vowel_length": 0.215974822640419,
+          "pitch": 4.370326519012451
+        }
+      ],
+      "accent": 4,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.2657080292701721,
+        "pitch": 0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "マ",
+          "consonant": "m",
+          "consonant_length": 0.05275362730026245,
+          "vowel": "a",
+          "vowel_length": 0.0658593624830246,
+          "pitch": 4.676898002624512
+        },
+        {
+          "text": "ダ",
+          "consonant": "d",
+          "consonant_length": 0.03845726698637009,
+          "vowel": "a",
+          "vowel_length": 0.07382313907146454,
+          "pitch": 4.761283874511719
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ワ",
+          "consonant": "w",
+          "consonant_length": 0.04078035056591034,
+          "vowel": "a",
+          "vowel_length": 0.0692722275853157,
+          "pitch": 4.437007904052734
+        },
+        {
+          "text": "カ",
+          "consonant": "k",
+          "consonant_length": 0.08254729211330414,
+          "vowel": "a",
+          "vowel_length": 0.06463660299777985,
+          "pitch": 4.42169189453125
+        },
+        {
+          "text": "ル",
+          "consonant": "r",
+          "consonant_length": 0.02607622742652893,
+          "vowel": "u",
+          "vowel_length": 0.11147565394639969,
+          "pitch": 4.36815071105957
+        }
+      ],
+      "accent": 2,
+      "pause_mora": null,
+      "is_interrogative": true
+    }
+  ],
+  "speedScale": 1.04,
+  "pitchScale": 0,
+  "intonationScale": 1.04,
+  "volumeScale": 1,
+  "prePhonemeLength": 0.045,
+  "postPhonemeLength": 0.15,
+  "pauseLength": null,
+  "pauseLengthScale": 1,
+  "outputSamplingRate": 48000,
+  "outputStereo": true,
+  "kana": "ワタシノ'/ナマエワ'、マ'ダ/ワカ'ル？"
+}

@@ -1,0 +1,134 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "fill": "#07131d",
+      "name": "Background"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04\\photocraft-stage\\firstcut04-game-crop.png",
+      "scale": 250,
+      "fit": false,
+      "center": [
+        1635,
+        610
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        915,
+        1080
+      ],
+      "fill": "#07131d",
+      "name": "Readable question"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        95,
+        173,
+        7,
+        380
+      ],
+      "fill": "#edb468",
+      "name": "Warm accent"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 132,
+      "y": 95,
+      "text": "EMBERWAKE",
+      "font": "Meiryo",
+      "size": 43,
+      "weight": 700,
+      "color": "#aac8bf",
+      "name": "Game"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 132,
+      "y": 224,
+      "text": "助けたい。",
+      "font": "Meiryo",
+      "size": 104,
+      "weight": 700,
+      "color": "#f1dfc0",
+      "name": "Promise"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 132,
+      "y": 388,
+      "text": "でも、",
+      "font": "Meiryo",
+      "size": 95,
+      "weight": 700,
+      "color": "#f1dfc0",
+      "name": "Turn"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 132,
+      "y": 540,
+      "text": "忘れていく。",
+      "font": "Meiryo",
+      "size": 94,
+      "weight": 700,
+      "color": "#edb468",
+      "name": "Cost"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 132,
+      "y": 786,
+      "text": "落下・近道・手帳を比べる",
+      "font": "Meiryo",
+      "size": 37,
+      "weight": 700,
+      "color": "#aac8bf",
+      "name": "Concrete promise"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "x": 132,
+      "y": 944,
+      "text": "ぷい｜ゲームをつくる",
+      "font": "Meiryo",
+      "size": 29,
+      "color": "#aac8bf",
+      "name": "Author"
+    }
+  ]
+]

@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import {file,np,EC,FF,run,parse,save,copy,hash} from './native.mjs';
+const E=JSON.parse(fs.readFileSync(file('source/firstcut04-edit.json'))),p=file('projects/'+E.name+'.ecproj'),before=file('projects/'+E.name+'-prehost.ecproj');
+if(fs.existsSync(before))throw Error('Native finalization already attempted; inspect retained evidence');
+copy(p,before);
+const native=JSON.parse(fs.readFileSync(p)),comp=native.items[native.activeComp];
+const textLayers=comp.kind.layers.filter(l=>l.name.endsWith(' source')||l.name.endsWith(' source shadow')).map(l=>({id:l.id,name:l.name}));
+const host=E.shots.filter(s=>s.kind==='live2d-host');if(host.length!==4)throw Error('Expected current four host intervals');
+const jsx=`var H=${JSON.stringify(host)},T=${JSON.stringify(textLayers)};function r(i,p){return app.run(i,p||{});}function set(l,p,v){r('prop.set',{layer:l,path:p,value:v});}function key(l,p,t,v){r('prop.addKey',{layer:l,path:p,time:t,timeBase:'comp',value:v});}var im=r('file.import',{paths:[${JSON.stringify(np(file('media/natural04.mov')))}]});if(im.errors.length||im.items.length!==1)throw Error(JSON.stringify(im));for(var i=0;i<H.length;i++){var s=H[i],a=s.start/30,b=s.end/30,c=s.camera,l=r('layer.addItem',{item:im.items[0],time:a,duration:b-a}).layer;r('layer.rename',{layer:l,name:s.id});r('layer.enableTimeRemap',{layers:[l],value:true});key(l,'timeRemap',a,s.sourceStart/30);key(l,'timeRemap',b,(s.sourceStart+s.end-s.start)/30);r('layer.timing',{layers:[l],in:a,out:b});r('layer.setSwitch',{layers:[l],switch:'audio',value:false});set(l,'transform/anchor',[c.anchor[0],c.anchor[1],0]);set(l,'transform/position',[c.position[0],c.position[1],0]);set(l,'transform/scale',[c.scale,c.scale,100]);key(l,'transform/opacity',a,0);key(l,'transform/opacity',a+.12,100);key(l,'transform/opacity',b-.2,100);key(l,'transform/opacity',b,0);}for(var i=0;i<T.length;i++)r('layer.setText',{layer:T[i].id,text:'実ゲームの表示テキスト／編集で改行'});writeLn(JSON.stringify({hostIntervals:H.length,updatedProvenanceLayers:T.length}));`;
+fs.writeFileSync(file('source/firstcut04-finalize.jsx'),jsx);
+const r=parse((await run(EC,['--project',np(p),'script',np(file('source/firstcut04-finalize.jsx')),'--save-as',np(p),'--json'],'emberwake-firstcut04-native-finalize.json')).stdout);if(!r.ok)throw Error(JSON.stringify(r));
+const measured=JSON.parse(fs.readFileSync(file('source/'+E.name+'-measured.json')));save('source/'+E.name+'-measured.json',{...measured,shots:E.shots,overlays:E.overlays,modelBinding:'qa/model04-binding.json',musicBinding:'qa/'+E.name+'-music.json'});
+save('qa/'+E.name+'-finalization.json',{nativeProjectSha256:hash(p),beforeHostProjectRetained:true,currentHostIntervals:host,quoteProvenanceUpdated:true});
+for(const t of [.5,2.5,98,440,610,618])await run(EC,['--project',np(p),'render-frame','--comp',E.comp,'--time',String(t),'--out',np(file('qa/'+E.name+'-finalized-'+t+'.png')),'--json'],E.name+'-finalized-preview-'+t+'.json');
+const loud=await run(FF,['-hide_banner','-i',np(file('media/'+E.name+'-mix-reference.wav')),'-filter_complex','ebur128=peak=true','-f','null','-'],E.name+'-reference-loudness.json');
+const tail=loud.stderr.slice(loud.stderr.lastIndexOf('Summary:')),peak=Number(tail.match(/Peak:\s*([-0-9.]+) dBFS/)?.[1]);if(!Number.isFinite(peak)||peak> -1.8)throw Error('Reference mix peak needs repair');
+console.log(JSON.stringify({nativeFinalized:true,hostIntervals:4,referencePeak:peak}));
