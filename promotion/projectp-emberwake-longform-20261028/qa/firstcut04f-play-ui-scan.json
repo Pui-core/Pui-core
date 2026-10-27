@@ -1,0 +1,101 @@
+{
+  "rawSelectedGameplayFramesScanned": 11306,
+  "files": [
+    {
+      "file": "media/ep01-game.mp4",
+      "frames": 836,
+      "maxOrangePixels": 20
+    },
+    {
+      "file": "media/ep01-replay-controls01-game.mp4",
+      "frames": 250,
+      "maxOrangePixels": 20
+    },
+    {
+      "file": "media/ep02-game.mp4",
+      "frames": 800,
+      "maxOrangePixels": 18
+    },
+    {
+      "file": "media/ep02-normal-route01-game.mp4",
+      "frames": 498,
+      "maxOrangePixels": 20
+    },
+    {
+      "file": "media/ep03-game.mp4",
+      "frames": 864,
+      "maxOrangePixels": 17
+    },
+    {
+      "file": "media/ep10-game.mp4",
+      "frames": 636,
+      "maxOrangePixels": 49
+    },
+    {
+      "file": "media/ep11-game.mp4",
+      "frames": 851,
+      "maxOrangePixels": 20
+    },
+    {
+      "file": "media/ep12-game.mp4",
+      "frames": 897,
+      "maxOrangePixels": 45
+    },
+    {
+      "file": "media/ep04-game.mp4",
+      "frames": 859,
+      "maxOrangePixels": 53
+    },
+    {
+      "file": "media/ep05-game.mp4",
+      "frames": 698,
+      "maxOrangePixels": 18
+    },
+    {
+      "file": "media/ep06-game.mp4",
+      "frames": 811,
+      "maxOrangePixels": 21
+    },
+    {
+      "file": "media/ep07-game.mp4",
+      "frames": 850,
+      "maxOrangePixels": 53
+    },
+    {
+      "file": "media/ep08-game.mp4",
+      "frames": 814,
+      "maxOrangePixels": 20
+    },
+    {
+      "file": "media/ep09-game.mp4",
+      "frames": 762,
+      "maxOrangePixels": 15
+    },
+    {
+      "file": "media/ep13-game.mp4",
+      "frames": 880,
+      "maxOrangePixels": 20
+    }
+  ],
+  "positiveControl": {
+    "file": "media/ep02-game.mp4",
+    "sourceFrame": 1305,
+    "observedResultUi": true,
+    "orangePixels": 203
+  },
+  "threshold": 100,
+  "diagnosticRegion": [
+    90,
+    85,
+    1000,
+    90
+  ],
+  "diagnosticSize": [
+    200,
+    18
+  ],
+  "candidates": [],
+  "scope": "Heuristic known amber title area of full raw game UI. Checks cropped actual-play/context frames. Full-frame100% retry/title UI is intentional and excluded, as are actual-ui quote shots. Threshold100 separates known result-title control203 from ordinary HUD colors max53. Supports capture-state bounds and direct final-image review; not a semantic quality/continuous-watch proof.",
+  "pass": true,
+  "rootAccepted": false
+}

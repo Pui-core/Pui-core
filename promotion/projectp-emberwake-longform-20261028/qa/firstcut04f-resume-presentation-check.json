@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-27T17:54:12.591Z",
+  "agent": "resume_emberwake127",
+  "videoSha256": "e42986000d3b48c1cbe912eaf8f584d3492ed57fad8d1222ebc13479cd4f5e22",
+  "videoDurationSeconds": 620.885,
+  "check": {
+    "fSourceVideoShaEqual": true,
+    "ffprobe": "1920x1080 h264 30fps; 48kHz stereo AAC",
+    "presentationCopyEquality": [
+      "index.html",
+      "README.md",
+      "metadata/youtube.json",
+      "metadata/description.txt",
+      "metadata/firstcut04-credits.txt"
+    ],
+    "allEightLocalIndexReferencesExist": true
+  },
+  "images": [
+    {
+      "interval": "0–19秒",
+      "path": "qa/root-independent-20261028/first20.png",
+      "sha256": "738d90d3aa7c9aa842070dd294b486ea0708a557cf54ab65aea84bd5034d5442"
+    },
+    {
+      "interval": "435–454秒",
+      "path": "qa/root-independent-20261028/s435-455.png",
+      "sha256": "03fae24aaae393ef922a85d5ca27849b0f35158cbcbef57a822c16e0d99588f7"
+    },
+    {
+      "interval": "601–620秒",
+      "path": "qa/root-independent-20261028/s601-621.png",
+      "sha256": "67abd0c8f28a3c685e89b6bde75864def9efd350982a07c0b11a288daf0952fe"
+    }
+  ],
+  "observed": "冒頭0〜3秒にモデルがスキップボタン右端枠と重なるが、文字と物語本文は読める。該当ボタンは動画中で操作対象ではない。抽出した後半では重要情報の隠れは見つからず。3区間60枚の静止画像を点検、全域の保証ではない。",
+  "continuousWatch": false,
+  "subjectiveListen": false,
+  "creativeAcceptance": false,
+  "published": false
+}

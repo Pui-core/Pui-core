@@ -1,0 +1,26 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-firstcut04e.ecproj",
+    "render",
+    "--comp",
+    "EMBERWAKE formal firstcut04",
+    "--start",
+    "36.266666666666666",
+    "--end",
+    "41.266666666666666",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04e-extra-play-camera-0.mov",
+    "--format",
+    "prores",
+    "--prores",
+    "4444",
+    "--audio",
+    "off",
+    "--json"
+  ],
+  "stdout": "{\"rendered\":[{\"comp\":\"EMBERWAKE formal firstcut04\",\"output\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\media\\\\firstcut04e-extra-play-camera-0.mov\",\"seconds\":7.917687}]}\n",
+  "stderr": "EMBERWAKE formal firstcut04 → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04e-extra-play-camera-0.mov (1920×1080, 150 frames, Custom)\ndone: EMBERWAKE formal firstcut04 → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04e-extra-play-camera-0.mov in 7.92s\n"
+}

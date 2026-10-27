@@ -1,0 +1,26 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-firstcut04f.ecproj",
+    "render",
+    "--comp",
+    "EMBERWAKE formal firstcut04",
+    "--start",
+    "374.3666666666667",
+    "--end",
+    "377.8666666666667",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04f-dialogue-question-clean.mov",
+    "--format",
+    "prores",
+    "--prores",
+    "4444",
+    "--audio",
+    "off",
+    "--json"
+  ],
+  "stdout": "{\"rendered\":[{\"comp\":\"EMBERWAKE formal firstcut04\",\"output\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\media\\\\firstcut04f-dialogue-question-clean.mov\",\"seconds\":4.9390477}]}\n",
+  "stderr": "EMBERWAKE formal firstcut04 → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04f-dialogue-question-clean.mov (1920×1080, 105 frames, Custom)\ndone: EMBERWAKE formal firstcut04 → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04f-dialogue-question-clean.mov in 4.94s\n"
+}

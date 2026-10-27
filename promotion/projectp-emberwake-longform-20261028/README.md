@@ -1,12 +1,14 @@
 # EMBERWAKE 正式本編（制作中）
 
-全編第一稿04dをFのNative FilmCraftから実620.885秒／18626フレームで出力。SHA256 `ddb6263a9f0fd9a4c77f6bae6b101d5e386aa9ce826927d1d338d0ba961422d3`。入口は `index.html`、Fは `F:\Videos\ProjectP-EMBERWAKE-Longform-2026-10-28\firstcut-04d\index.html`。旧04cとその原本/検査は保持する。
+全編第一稿04fをFのNative FilmCraftから実620.885秒／18626フレームで出力。SHA256 `e42986000d3b48c1cbe912eaf8f584d3492ed57fad8d1222ebc13479cd4f5e22`。入口は `index.html`、Fは `F:\Videos\ProjectP-EMBERWAKE-Longform-2026-10-28\firstcut-04f\index.html`。旧04c/04d/04e、その原本・raw・失敗票は保持する。
 
-元04cの意図しない1秒未満context操作挿入47箇所を再割付。42区間1697フレームをNative EffectCraftで描画し、最終MP4の全修正フレームと照合。42境界の210実画像を目視し、別操作への瞬間的な割込みがないことを確認。31UI置換は元captureの画面状態と引用文が一致。55.8秒は手帳でなく、3行outroを載せた第1話完了ページであり、以前の報告誤記と継承された話数metadataを訂正した。記録は `qa/firstcut04d-ui-binding-audit.json`。
+04dの元47箇所の短い別操作挿入修正を引き継ぎ、04eで旧Y790/160%のcontext103カットと実play6カットの画角、原UI境界29割付を修正した。さらに04fでは、会話の語尾が無関係なゲーム画へ途切れる問題を修正。u003など4句の実UIを語尾まで延長し、u085の語尾も同じ実結果UIへ接続。u037「忘れても、たどれる」とu120「今は、足元を見て」は、対応する実際の道・足元に話者付き編集字幕を重ねる意味のあるL-cutとした。377.2秒付近の問いは右の2行へ移し、元見出しとの重なりを除いた。
 
-全AV decode0、113句のPCM組立/最終AAC全句と頭尾、最大lag0sample、-19LUFS／TP-1.8、全18626fの既知bar/全黒0。Fの3Craft再open/save/render・EC欠損0・FC45online・Source素材不可視での全編Native出力、素材復元と所有job終端を確認。全編の直接視聴/主観試聴、BGM採用、Root創作受入、公開は未完了。技術検査をプロ品質/成長実績へ読み替えない。
+04fのNative修正7区間328fを最終MP4と全frame照合し、継承した04eの画角・画面境界修正9565fも最新04fで照合した。7境界35抽出と9枚の実最終全画面を直接目視。17.5秒の問いUI、193.8/591.4秒の編集字幕、377.2秒の問い、282/318秒の旧HUD断片解消を確認。55.8秒は手帳でなく第1話完了ページ。旧04eの39境界195抽出の目視を、04f全編視聴として数えない。確認範囲は `qa/firstcut04f-review-scope.json`。
 
-必須P1は継続：新たに282秒/318秒の旧context画角で元操作案内の末尾だけが残る欠陥を実最終PNGで確認。103カットの旧Y790/160%を対象に、主人公と着地点を保ちながら原案内を画角外へ除く04e修正を継続する。現04dを公開・merge・close・cleanupしない。`qa/firstcut04d-review-scope.json` が最新の確認範囲。旧04cの63枚2fps票/12枚目視と、04dの42境界目視を全編連続視聴へ読み替えない。
+全AV decode0、113句のPCM組立と最終AAC全句・頭尾／最大lag0sample、-19LUFS／TP-1.8、全18626fの既知bar/全黒0。Fの3Craft再open/save/render、EC欠損0／FC10online、Source素材不可視での全編Native出力と素材復元を確認。実保存FCは15Vクリップ／2Aトラック、穴・速度変更なし。Nativeは00:14:29〜00:22:24 JST、workerは00:23:47正常終了し、所有Linux/Windows childの終端を確認した。
+
+**自己HOLD**：全編の直接視聴・主観試聴、読む間と速い切替えの連続したテンポ、声/BGMの創作採用、Root最終受入は未完了。これらはP1解除条件として残し、技術照合や抽出画像だけでプロ品質・成長実績にしない。公開0、Draftを維持し、merge/close/cleanupしない。既存04d snapshotを上書きしない保全条件で、入口・配信文を04fへ揃える。
 
 Source UNC入力の旧04/04b全編書出し2回は143終了の原票と途中MP4を保持する。owner停止と断定せず、同条件で連続再起動しなかった。Fローカル＋専用detached有限workerはexit0で終了し、所有worker/Native childの終端とSource素材復元を確認。原画面・モデル・旧作品は削除しない。
 

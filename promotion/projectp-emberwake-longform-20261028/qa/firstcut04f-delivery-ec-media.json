@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04f\\projects\\emberwake-firstcut04f.ecproj",
+    "--save",
+    "run",
+    "footage.check",
+    "{\"wait\":true}",
+    "footage.missing",
+    "{}",
+    "--json"
+  ],
+  "stdout": "{\"result\":[{\"command\":\"footage.check\",\"result\":{\"checked\":20,\"missing\":0,\"probed\":0}},{\"command\":\"footage.missing\",\"result\":{\"missing\":[]}}],\"saved\":\"F:\\\\Videos\\\\ProjectP-EMBERWAKE-Longform-2026-10-28\\\\firstcut-04f\\\\projects\\\\emberwake-firstcut04f.ecproj\"}\n",
+  "stderr": ""
+}

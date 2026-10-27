@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffprobe.exe",
+  "args": [
+    "-v",
+    "error",
+    "-count_frames",
+    "-show_streams",
+    "-of",
+    "json",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04e-camera-02-safeplay.mov"
+  ],
+  "stdout": "{\r\n    \"streams\": [\r\n        {\r\n            \"index\": 0,\r\n            \"codec_name\": \"prores\",\r\n            \"codec_long_name\": \"Apple ProRes (iCodec Pro)\",\r\n            \"profile\": \"4444\",\r\n            \"codec_type\": \"video\",\r\n            \"codec_tag_string\": \"ap4h\",\r\n            \"codec_tag\": \"0x68347061\",\r\n            \"width\": 1920,\r\n            \"height\": 1080,\r\n            \"coded_width\": 1920,\r\n            \"coded_height\": 1080,\r\n            \"has_b_frames\": 0,\r\n            \"pix_fmt\": \"yuv444p12le\",\r\n            \"level\": -99,\r\n            \"refs\": 1,\r\n            \"id\": \"0x1\",\r\n            \"r_frame_rate\": \"30/1\",\r\n            \"avg_frame_rate\": \"30/1\",\r\n            \"time_base\": \"1/30\",\r\n            \"start_pts\": 0,\r\n            \"start_time\": \"0.000000\",\r\n            \"duration_ts\": 297,\r\n            \"duration\": \"9.900000\",\r\n            \"bit_rate\": \"140570055\",\r\n            \"bits_per_raw_sample\": \"12\",\r\n            \"nb_frames\": \"297\",\r\n            \"nb_read_frames\": \"297\",\r\n            \"disposition\": {\r\n                \"default\": 1,\r\n                \"dub\": 0,\r\n                \"original\": 0,\r\n                \"comment\": 0,\r\n                \"lyrics\": 0,\r\n                \"karaoke\": 0,\r\n                \"forced\": 0,\r\n                \"hearing_impaired\": 0,\r\n                \"visual_impaired\": 0,\r\n                \"clean_effects\": 0,\r\n                \"attached_pic\": 0,\r\n                \"timed_thumbnails\": 0,\r\n                \"non_diegetic\": 0,\r\n                \"captions\": 0,\r\n                \"descriptions\": 0,\r\n                \"metadata\": 0,\r\n                \"dependent\": 0,\r\n                \"still_image\": 0,\r\n                \"multilayer\": 0\r\n            },\r\n            \"tags\": {\r\n                \"language\": \"und\",\r\n                \"handler_name\": \"VideoHandler\",\r\n                \"vendor_id\": \"[0][0][0][0]\",\r\n                \"encoder\": \"Apple ProRes 4444\"\r\n            }\r\n        }\r\n    ]\r\n}\r\n",
+  "stderr": ""
+}
