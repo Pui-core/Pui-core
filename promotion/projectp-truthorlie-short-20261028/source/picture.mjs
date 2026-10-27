@@ -1,0 +1,25 @@
+import fs from 'node:fs';
+import {file,np,EC,run,parse,save,hash} from './native.mjs';
+const names=['card-01.png','card-02.png','card-03.png','card-04.png','card-05.png','card-04-truth.png','seal-truth.png','seal-lie.png','logo.png','natural-still.png'];
+const paths=names.map(p=>np(file('media/'+p)));
+const jsx=`app.newProject();var E=${JSON.stringify(paths)},boxes=[];
+function r(n,p){return app.run(n,p||{});}function set(l,p,v){r('prop.set',{layer:l,path:p,value:v});}function key(l,p,t,v){r('prop.addKey',{layer:l,path:p,time:t,timeBase:'comp',value:v});}function span(l,a,b){r('layer.timing',{layers:[l],in:a,out:b});}
+function rect(n,w,h,x,y,c,a,b){var l=r('layer.newShape',{name:n,kind:'rect',size:[w,h],position:[x,y],fill:c,strokeWidth:0}).layer;span(l,a,b);return l;}
+function text(n,s,x,y,z,c,a,b,max){var l=r('layer.newText',{name:n,text:s,font:'Meiryo',style:'Bold',size:z,fill:c,position:[x,y],justify:'center'}).layer,q=app.project.activeItem.layer(n).sourceRectAtTime(a,false);if(q.width>max){z=Math.floor(z*max/q.width);r('layer.setText',{layer:l,size:z});q=app.project.activeItem.layer(n).sourceRectAtTime(a,false);}set(l,'transform/anchor',[q.left+q.width/2,q.top+q.height/2,0]);set(l,'transform/position',[x,y,0]);span(l,a,b);boxes.push({name:n,text:s,from:a,to:b,width:q.width,height:q.height,x:x,y:y});return l;}
+var im=r('file.import',{paths:E,sequence:false});if(im.errors.length)throw Error(JSON.stringify(im.errors));var I=im.items;
+var comp=r('comp.new',{name:'Truth or Lie vertical fictional duel',width:1080,height:1920,frameRate:30,duration:18,background:'#07111a',shutterAngle:0,motionBlurSamples:1}).comp;
+rect('Night',1080,1920,540,960,'#07111a',0,18);rect('Top fine line',930,3,500,452,'#c5a26b',0,14.5);
+function image(n,i,a,b,x,y,s){var l=r('layer.addItem',{item:I[i],time:a,duration:b-a}).layer;r('layer.rename',{layer:l,name:n});span(l,a,b);set(l,'transform/position',[x,y,0]);set(l,'transform/scale',[s,s,100]);return l;}
+text('Scope','架空の2人対戦・演出例',500,245,38,'#d9c8a6',0,14.5,900);
+text('Question1','この5つ、',500,322,68,'#f1e7d6',0,8,900);text('Question2','嘘はどれ？',500,398,80,'#e6be7b',0,8,900);
+for(var j=0;j<5;j++){var a=.18+j*.12,y=555+j*174,l=image('Evidence '+(j+1),j,a,8,500,y,100);key(l,'transform/position',a,[560,y+45,0]);key(l,'transform/position',a+.24,[500,y,0]);key(l,'transform/opacity',a,0);key(l,'transform/opacity',a+.16,100);if(j===1){key(l,'transform/scale',7.2,[100,100,100]);key(l,'transform/scale',7.6,[105,105,100]);key(l,'transform/position',7.2,[500,y,0]);key(l,'transform/position',7.6,[515,y,0]);}}
+text('Voting prompt','あなたなら、どれに投票？',500,1480,44,'#f3dfbf',1,8,900);
+text('Vote1','相手は②に投票',500,322,68,'#f1e7d6',8,10.7,900);text('Vote2','でも、',500,405,65,'#e6be7b',8,10.7,900);
+var vote=image('Second testimony',1,8,10.7,500,775,100);key(vote,'transform/position',8,[500,855,0]);key(vote,'transform/position',8.25,[500,775,0]);var trueSeal=image('Truth mark',6,9.3,10.7,730,1045,70);key(trueSeal,'transform/scale',9.3,[105,105,100]);key(trueSeal,'transform/scale',9.5,[70,70,100]);text('Truth','②は真実。',500,1320,87,'#a6d6c3',9.3,10.7,900);
+text('Lie1','嘘は④',500,322,90,'#e88b8e',10.7,14.5,900);text('Lie2','本当の答えは？',500,405,62,'#f1e7d6',10.7,14.5,900);
+var old=image('Fourth false testimony',3,10.7,11.65,500,810,100);var actual=image('Fourth corrected testimony',5,11.65,14.5,500,810,100);key(actual,'transform/position',11.65,[560,810,0]);key(actual,'transform/position',11.9,[500,810,0]);var lie=image('Lie mark',7,11.8,14.5,725,1110,70);key(lie,'transform/scale',11.8,[105,105,100]);key(lie,'transform/scale',12.05,[70,70,100]);text('Reveal','本当はホラー映画。',500,1280,55,'#f1e7d6',11.65,14.5,900);
+var logo=image('App logo',8,14.5,18,500,550,55);key(logo,'transform/scale',14.5,[50,50,100]);key(logo,'transform/scale',14.8,[55,55,100]);var avatar=image('Revenant Natural still',9,14.5,18,200,1180,50);key(avatar,'transform/position',14.5,[160,1180,0]);key(avatar,'transform/position',14.85,[200,1180,0]);
+text('AppStore1','iPhoneで配信中',670,995,62,'#f1e7d6',14.5,18,740);text('AppStore2','App Storeで',680,1130,56,'#e6be7b',14.5,18,620);text('AppStore3','嘘か誠か を検索',680,1210,56,'#e6be7b',14.5,18,620);text('CTA','次の嘘は、あなたの番。',500,1450,47,'#f1e7d6',14.5,18,920);
+writeLn(JSON.stringify({comp:comp,boxes:boxes,fictional:true,scope:'reconstructed fictional example, no actual play',model:'static still',published:false}));`;
+fs.writeFileSync(file('source/composition.jsx'),jsx);
+const result=parse((await run(EC,['--empty','script',np(file('source/composition.jsx')),'--save-as',np(file('projects/truthorlie-vertical-v2.ecproj')),'--json'],'ec-v2-build.json')).stdout);if(!result.ok)throw Error(JSON.stringify(result));save('qa/ec-v2-project.json',{...parse(result.output),projectSha256:hash(file('projects/truthorlie-vertical-v2.ecproj')),rendered:false,layoutVerified:false});console.log('EffectCraft project saved; render and visual inspection pending.');
