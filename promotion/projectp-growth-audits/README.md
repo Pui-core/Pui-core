@@ -1,6 +1,6 @@
 # ProjectP 日次・公開後・週次監査
 
-[10/27の監査](daily/監査-2026-10-27.md) ／ [日次JSON](daily/2026-10-27.json) ／ [20:53のpartial後票](daily/2026-10-27-evening-partial.json) ／ [21:43の再読込後票](daily/2026-10-27-2143-refreshed.json) ／ [構成ナレッジ](../projectp-growth-best-practices/README.md) ／ [管理131](https://github.com/Pui-core/-/issues/131)
+[10/28の個別分析](daily/監査-2026-10-28.md) ／ [10/28の観察票](daily/2026-10-28-0311-individual.json) ／ [10/27の監査](daily/監査-2026-10-27.md) ／ [日次JSON](daily/2026-10-27.json) ／ [20:53のpartial後票](daily/2026-10-27-evening-partial.json) ／ [21:43の再読込後票](daily/2026-10-27-2143-refreshed.json) ／ [構成ナレッジ](../projectp-growth-best-practices/README.md) ／ [管理131](https://github.com/Pui-core/-/issues/131)
 
 **確認済み勝者0。** 高品質の中心は実公開後に再生・フォロワー/登録者が増えやすいことです。視認性・声・事実の正確さ・技術的整合・構図/テンポ等の制作前検査も必要ですが、技術PASSや黄金比/見た目だけで伸長を認定しません。SNS-003-AUDIT-001 / SNS-003-QUALITY-GROWTH-002に沿い、既存巡回/goalから更新します。新cron・常駐loopは作りません。
 
@@ -8,7 +8,7 @@
 
 1. JST日付で日次票を作り、記録時刻・元の観測時刻・実公開日時・公開後時間・platform・範囲・地域filterを残します。地域未提供はnull。日本語UIをJapan視聴者数と読み替えません。
 2. 本人の実IDと実公開+24h/+72hを優先し、別窓/作品/媒体を混ぜません。成熟時刻後の累計観測と厳密な最初の24hは別。予約/一覧表示/再生位置表示は実公開・第三者視聴・聴感採用の証明ではありません。
-3. 0表示と未取得nullを区別。0viewsから0impressionsと推定せず、未知/0の露出分母から構成や音源を原因断定しません。native率の分母をviews/engagedviewsから逆算せず、平均時間を完視聴率にしません。本人QA再生は伸長根拠から除きます。
+3. 0表示と未取得nullを区別。0表示と正の再生時間が同時表示される場合は、各値と分母不明をそのまま残す。0viewsから0impressionsと推定せず、未知/0の露出分母から構成や音源を原因断定しません。native率の分母をviews/engagedviewsから逆算せず、平均時間を完視聴率にしません。本人QA再生は伸長根拠から除きます。
 4. Root単独観測から最小URL/ID/時刻/metricを受領。rawUI/認証/HTML/私的絶対パス/メディアはGit/Fへコピーしません。partialは後票で追記し、鮮度/公開状態/必要分析が未証明ならHOLD。過去値で埋めません。
 5. trendは出典URL/確認時刻/地域/期間/限界/再確認日を残します。順位本文未取得は0件、二次rankingの古い日付は保持。カタログ1.2M表示を日本順位や今日の実績へ昇格しません。
 6. 週次に構成ledgerの適用先・期限・維持/失効を再点検。期限は監査上の再確認日で、効果保証ではありません。投稿上限撤廃を最適本数の証明にしません。投稿帰属が無いfollowersはアカウント全体として保持し、各postへ配分しません。
