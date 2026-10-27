@@ -2,9 +2,9 @@
 
 管理 Issue: https://github.com/Pui-core/-/issues/134
 
-TikTok / Shorts向けの18秒、1080×1920 / 30fpsの制作原本。既存 #198 の架空の2人・配点1点の例を、縦画面で読みやすい5枚の回答カードとして再構成する。相手の選択も架空であり、実UI・実際の人の対戦を映したものではない。iPhone版はApp Storeで配信中。
+TikTok / Shorts向けの14.5秒、1080×1920 / 30fpsの制作原本。既存 #198 の架空の2人・配点1点の例を、縦画面で読みやすい5枚の回答カードとして再構成する。相手の選択も架空であり、実UI・実際の人の対戦を映したものではない。iPhone版はApp Storeで配信中。
 
-F納品: `F:\Videos\ProjectP-TruthOrLie-Short-2026-10-28\revision-01`。PhotoCraftの新カード原本、EffectCraftの縦原本、実素材・音声、確認画像を保存。FilmCraft仕上げと全編出力は未完了。既存の横PVと原本は変更していない。VOICEVOX:青山龍星を使用。
+F納品: `F:\Videos\ProjectP-TruthOrLie-Short-2026-10-28\revision-01`。PhotoCraftの新カード原本、EffectCraftの縦原本v3、実素材・音声、確認画像を保存。元の18秒v2原本も保持し、一覧の保持を5.3秒へ短縮したv3を別途作成。FilmCraft仕上げと全編出力は未完了。既存の横PVと原本は変更していない。VOICEVOX:青山龍星を使用。
 
 正式配布先: https://apps.apple.com/jp/app/id6783599249 。TikTok本文のURLがタップ可能かは未確認。YouTube Shorts本文のURLはクリック不可のため、チャンネルのプロフィールリンクを案内する。
 
