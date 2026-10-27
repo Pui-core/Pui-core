@@ -1,0 +1,61 @@
+{
+  "part": "opening",
+  "plan": {
+    "duration": 8,
+    "outputStart": 0,
+    "cues": [
+      "hook",
+      "rule"
+    ]
+  },
+  "model": "Owner specified Revenant_Natural",
+  "originals": [
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.moc3",
+      "sha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e"
+    },
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.model3.json",
+      "sha256": "26f678bc97701a1e0958f3a82569e0efa36e260c1a8551222deb873bfb254c39"
+    },
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.8192/texture_00.png",
+      "sha256": "30efeaa8148d55ca0042cfd3d741f499d479f9034bf7985d248360e66e559f73"
+    },
+    {
+      "path": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.8192/texture_01.png",
+      "sha256": "c09bd43ef3d9f02acc8ccdc12d46ba72a750de21aa07a7627fc6a8f04321e26a"
+    }
+  ],
+  "originalsUnchanged": true,
+  "coreJarSha256": "5458a64ebe33b38350de1437399343b0d502f2353a34a97da76d56d118c0d186",
+  "coreNativeSha256": "71d5757025cd31c61be0d52ad79d4cd0de0465e1df6c4508c4fde70207613985",
+  "rendererSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+  "voiceCues": [
+    {
+      "id": "hook",
+      "at": 0.2,
+      "file": "voice-hook.wav",
+      "sha256": "cbf1f0817100b22270653f0b4f0895fa78d1950a5c8e18f5b3a457c03674eba1"
+    },
+    {
+      "id": "rule",
+      "at": 3.8,
+      "file": "voice-rule.wav",
+      "sha256": "8b7bed64b16ceb4b55c71fb711b85f3542265f8f067d4e83d4f60d3ade243d77"
+    }
+  ],
+  "scheduleSha256": "ff3484722c1071c249c31bca2e4ef6f53e1c97343a0c188b01b9a592b543dc4a",
+  "frames": 240,
+  "width": 600,
+  "height": 780,
+  "fps": 30,
+  "alpha": true,
+  "mov": "media/model-opening.mov",
+  "movSha256": "b7f874b079947b8cc6aa0cff6e978d0cfbbe1c5c5ed368ef634f59b040f428f5",
+  "coreGeometry": true,
+  "softwareTriangleRenderer": true,
+  "limitation": "Software triangle/mask sampling approximation, not GPU/camera/physics tracking",
+  "oldAvatarLoop": false,
+  "rawModelOrSdkBundled": false
+}

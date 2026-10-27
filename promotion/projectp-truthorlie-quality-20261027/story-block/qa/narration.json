@@ -1,0 +1,102 @@
+{
+  "engine": "VOICEVOX",
+  "engineVersion": "0.25.1",
+  "speaker": "青山龍星",
+  "styleId": 13,
+  "style": "ノーマル",
+  "credit": "VOICEVOX:青山龍星",
+  "voiceActorRecording": false,
+  "wholeDirectAudition": false,
+  "cues": [
+    {
+      "id": "hook",
+      "at": 0.2,
+      "end": 3.4,
+      "text": "この一票、誰の得点になる？",
+      "file": "voice-hook.wav",
+      "predictedDuration": 2.254140830543535,
+      "speedScale": 1.16,
+      "sha256": "cbf1f0817100b22270653f0b4f0895fa78d1950a5c8e18f5b3a457c03674eba1"
+    },
+    {
+      "id": "rule",
+      "at": 3.8,
+      "end": 9.6,
+      "text": "的中で一点。全員外すと、出題した側に一点です。",
+      "file": "voice-rule.wav",
+      "predictedDuration": 4.147232982917079,
+      "speedScale": 1.16,
+      "sha256": "8b7bed64b16ceb4b55c71fb711b85f3542265f8f067d4e83d4f60d3ade243d77"
+    },
+    {
+      "id": "case1",
+      "at": 10,
+      "end": 13.8,
+      "text": "嘘は三番。三番に投票します。",
+      "file": "voice-case1.wav",
+      "predictedDuration": 2.6439064767237372,
+      "speedScale": 1.16,
+      "sha256": "f4b78ea826aa3f71ddcffe18efc2fe5ce57042a014df37bfb2700745e4c667fc"
+    },
+    {
+      "id": "hit",
+      "at": 16,
+      "end": 20.5,
+      "text": "投票的中。推理するBBに一点。",
+      "file": "voice-hit.wav",
+      "predictedDuration": 2.811413551240132,
+      "speedScale": 1.16,
+      "sha256": "d4930d930bbdb38e8ef7d36b748de8b55f44ae3ce2ff3d56538822cd3bddbfa1"
+    },
+    {
+      "id": "switch",
+      "at": 21,
+      "end": 23.8,
+      "text": "今度は、出題と推理を交代。",
+      "file": "voice-switch.wav",
+      "predictedDuration": 2.2729554862708885,
+      "speedScale": 1.16,
+      "sha256": "e3b7803f11b43f4d13fe5b26b837f699ad220f8b381ddd96b242ce913fe7900d"
+    },
+    {
+      "id": "case2",
+      "at": 24,
+      "end": 28.8,
+      "text": "嘘は五番。でも、二番に投票。",
+      "file": "voice-case2.wav",
+      "predictedDuration": 2.9130340689112404,
+      "speedScale": 1.16,
+      "sha256": "14562e611e1a96e87c491b4830788fed45af12ffe12931cb1bccb026b761e489"
+    },
+    {
+      "id": "miss",
+      "at": 30,
+      "end": 34.6,
+      "text": "正解者なし。出題したBBに一点。",
+      "file": "voice-miss.wav",
+      "predictedDuration": 2.8719211806922127,
+      "speedScale": 1.16,
+      "sha256": "d124c15f9e5295715566df869b5f55f35589088eda5b25132910b736792d4bf0"
+    },
+    {
+      "id": "consequence",
+      "at": 35,
+      "end": 41,
+      "text": "見抜いても、だましても。同じBBが、別の取り方で得点しました。",
+      "file": "voice-consequence.wav",
+      "predictedDuration": 4.663255788940808,
+      "speedScale": 1.16,
+      "sha256": "450476b21fe26335560dfe9b22518fbf04f77893cffd7d20d780f576e1f71cfe"
+    },
+    {
+      "id": "next",
+      "at": 41.1,
+      "end": 44,
+      "text": "嘘か誠か。次は、嘘がない回。",
+      "file": "voice-next.wav",
+      "predictedDuration": 2.702316465860811,
+      "speedScale": 1.16,
+      "sha256": "9989a2dca9cb5ff1e26af56afb70b6974f0b22b9355249418b92ee61ee367935"
+    }
+  ]
+}

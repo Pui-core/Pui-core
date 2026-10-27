@@ -1,0 +1,435 @@
+{
+  "status": "PASS_RULE_BLOCK_ACTIVE_PACKAGE_SHA",
+  "issue": 129,
+  "destination": "/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/story-block",
+  "files": [
+    {
+      "file": "covers/editorial-board.pcraft",
+      "bytes": 73428,
+      "sourceSha256": "e4a3925355b93b31e6c30bafc42e451c96e5e1aeb0b7d380c954d35f614db8da",
+      "deliverySha256": "e4a3925355b93b31e6c30bafc42e451c96e5e1aeb0b7d380c954d35f614db8da",
+      "relocated": false
+    },
+    {
+      "file": "index.html",
+      "bytes": 4575,
+      "sourceSha256": "2c14547409070d4c8f9eec8ecafdfd59a1c334743d34b6d5b8d20875b5e21880",
+      "deliverySha256": "2c14547409070d4c8f9eec8ecafdfd59a1c334743d34b6d5b8d20875b5e21880",
+      "relocated": false
+    },
+    {
+      "file": "media/actual-app-artwork-background.png",
+      "bytes": 2101216,
+      "sourceSha256": "a499badc14e6541e2c854e057de3998ed9b587750acf1951af508a40c62ebb0c",
+      "deliverySha256": "a499badc14e6541e2c854e057de3998ed9b587750acf1951af508a40c62ebb0c",
+      "relocated": false
+    },
+    {
+      "file": "media/background-cipher-stem.wav",
+      "bytes": 12632280,
+      "sourceSha256": "fb620f84ccc90924f090724efc0a1cd3fc87017c3cab14928780c52428b0554d",
+      "deliverySha256": "fb620f84ccc90924f090724efc0a1cd3fc87017c3cab14928780c52428b0554d",
+      "relocated": false
+    },
+    {
+      "file": "media/editorial-board.png",
+      "bytes": 14706,
+      "sourceSha256": "e38a8ad0f2dec5036c1494a136a69006ab1b597d4ae28f00079dc55923f66e37",
+      "deliverySha256": "e38a8ad0f2dec5036c1494a136a69006ab1b597d4ae28f00079dc55923f66e37",
+      "relocated": false
+    },
+    {
+      "file": "media/model-opening.mov",
+      "bytes": 191172327,
+      "sourceSha256": "b7f874b079947b8cc6aa0cff6e978d0cfbbe1c5c5ed368ef634f59b040f428f5",
+      "deliverySha256": "b7f874b079947b8cc6aa0cff6e978d0cfbbe1c5c5ed368ef634f59b040f428f5",
+      "relocated": false
+    },
+    {
+      "file": "media/narration-presented-stem.wav",
+      "bytes": 12672102,
+      "sourceSha256": "3079dbcbdeb39b02a8eb57abdc546fa543223ba3b1832abe46e97b874b10e84e",
+      "deliverySha256": "3079dbcbdeb39b02a8eb57abdc546fa543223ba3b1832abe46e97b874b10e84e",
+      "relocated": false
+    },
+    {
+      "file": "media/round1-hi-cfr.mp4",
+      "bytes": 40286532,
+      "sourceSha256": "d400d459e68a3b86418219cae6a94b9e5ebd656a13a77ff18d8d8f413e7b7009",
+      "deliverySha256": "d400d459e68a3b86418219cae6a94b9e5ebd656a13a77ff18d8d8f413e7b7009",
+      "relocated": false
+    },
+    {
+      "file": "media/round1-result-hi.png",
+      "bytes": 3494437,
+      "sourceSha256": "809b8d31e64d9273a0dd8556dd2048eae1d0a5520f1cf12262a3ebab361dff7c",
+      "deliverySha256": "809b8d31e64d9273a0dd8556dd2048eae1d0a5520f1cf12262a3ebab361dff7c",
+      "relocated": false
+    },
+    {
+      "file": "media/round1-score-hi.png",
+      "bytes": 3330531,
+      "sourceSha256": "ae20db414f9378e09a529f289d800ab4fb6f43ad5001fea2e9b84bffb90ce90f",
+      "deliverySha256": "ae20db414f9378e09a529f289d800ab4fb6f43ad5001fea2e9b84bffb90ce90f",
+      "relocated": false
+    },
+    {
+      "file": "media/round1-selected-hi.png",
+      "bytes": 1901208,
+      "sourceSha256": "7020f39f39177e9e15cc1ed109dcd2c99e5bfe0103dc08c642ba1323d9c7d234",
+      "deliverySha256": "7020f39f39177e9e15cc1ed109dcd2c99e5bfe0103dc08c642ba1323d9c7d234",
+      "relocated": false
+    },
+    {
+      "file": "media/round2-hi-cfr.mp4",
+      "bytes": 38715439,
+      "sourceSha256": "af30770f63e5e3d8a7b12c6e70d5790c7e8e67ad210db3d132fc9c15c8a12e0b",
+      "deliverySha256": "af30770f63e5e3d8a7b12c6e70d5790c7e8e67ad210db3d132fc9c15c8a12e0b",
+      "relocated": false
+    },
+    {
+      "file": "media/round2-result-hi.png",
+      "bytes": 3484144,
+      "sourceSha256": "70f540f0792995ca4e3e008bf048a0a1c18254e2d3d71b83ef7fe0235f063e90",
+      "deliverySha256": "70f540f0792995ca4e3e008bf048a0a1c18254e2d3d71b83ef7fe0235f063e90",
+      "relocated": false
+    },
+    {
+      "file": "media/round2-score-hi.png",
+      "bytes": 3333743,
+      "sourceSha256": "fd6d73544879b981ac887282ad46505687fc003bdc1ca16aef574329f7816146",
+      "deliverySha256": "fd6d73544879b981ac887282ad46505687fc003bdc1ca16aef574329f7816146",
+      "relocated": false
+    },
+    {
+      "file": "media/round2-selected-hi.png",
+      "bytes": 1863765,
+      "sourceSha256": "28dd0f1dcb0fc5124f043b3a79c0cef463abbbd8f9d64e0e79a5cf3821393950",
+      "deliverySha256": "28dd0f1dcb0fc5124f043b3a79c0cef463abbbd8f9d64e0e79a5cf3821393950",
+      "relocated": false
+    },
+    {
+      "file": "media/truthorlie129-rules-picture44.mp4",
+      "bytes": 14399793,
+      "sourceSha256": "3de5d1f8a0733602f3c2dd446e9d7b8bb1fb1a6018cf01b4b5ac89d1a74e9895",
+      "deliverySha256": "3de5d1f8a0733602f3c2dd446e9d7b8bb1fb1a6018cf01b4b5ac89d1a74e9895",
+      "relocated": false
+    },
+    {
+      "file": "qa/av-story-block-validation.json",
+      "bytes": 2916,
+      "sourceSha256": "e8615c6a229383540217deddc02afe6a8dd4476cb64664e0da6b48417676b9f1",
+      "deliverySha256": "e8615c6a229383540217deddc02afe6a8dd4476cb64664e0da6b48417676b9f1",
+      "relocated": false
+    },
+    {
+      "file": "qa/delivery-story-block.json",
+      "bytes": 4382,
+      "sourceSha256": "f163feb0946cede4ee8722649a6d0cffc452b00ced27353a19c30330c84b47aa",
+      "deliverySha256": "f163feb0946cede4ee8722649a6d0cffc452b00ced27353a19c30330c84b47aa",
+      "relocated": false
+    },
+    {
+      "file": "qa/model-binding-opening.json",
+      "bytes": 2200,
+      "sourceSha256": "5a6f353efb801608ead9d492b6819f2d9decdb98f3c5f665d6de0419f3073f64",
+      "deliverySha256": "5a6f353efb801608ead9d492b6819f2d9decdb98f3c5f665d6de0419f3073f64",
+      "relocated": false
+    },
+    {
+      "file": "qa/narration.json",
+      "bytes": 3172,
+      "sourceSha256": "02b38f0b9f5656e12dbf6a572631af60a6f6a1cdbd2f68d73608104b19153818",
+      "deliverySha256": "02b38f0b9f5656e12dbf6a572631af60a6f6a1cdbd2f68d73608104b19153818",
+      "relocated": false
+    },
+    {
+      "file": "qa/story-final-1.png",
+      "bytes": 455487,
+      "sourceSha256": "3cba334fb46284ceeb2accdc6a30eb533cc25f261a8d212eb082d61ec8686f15",
+      "deliverySha256": "3cba334fb46284ceeb2accdc6a30eb533cc25f261a8d212eb082d61ec8686f15",
+      "relocated": false
+    },
+    {
+      "file": "qa/story-final-11.5.png",
+      "bytes": 462917,
+      "sourceSha256": "6865d0f606687e88faf4ed70c993e6e507946286ae524b185a6347cf6eeafb88",
+      "deliverySha256": "6865d0f606687e88faf4ed70c993e6e507946286ae524b185a6347cf6eeafb88",
+      "relocated": false
+    },
+    {
+      "file": "qa/story-final-16.5.png",
+      "bytes": 435067,
+      "sourceSha256": "aed00830e0f945af49475315b87f962912a2ae8888d02018fb8069f52fba5642",
+      "deliverySha256": "aed00830e0f945af49475315b87f962912a2ae8888d02018fb8069f52fba5642",
+      "relocated": false
+    },
+    {
+      "file": "qa/story-final-19.png",
+      "bytes": 420900,
+      "sourceSha256": "165b3b14c882adeb6512d41721df02b4bbd3dadbe904ce35f0c2ad85ef3b9b0a",
+      "deliverySha256": "165b3b14c882adeb6512d41721df02b4bbd3dadbe904ce35f0c2ad85ef3b9b0a",
+      "relocated": false
+    },
+    {
+      "file": "qa/story-final-25.5.png",
+      "bytes": 483407,
+      "sourceSha256": "fe17f92dc0d30faa75470ed811a53368fc7baec67f9d884bd95e89b08776df7e",
+      "deliverySha256": "fe17f92dc0d30faa75470ed811a53368fc7baec67f9d884bd95e89b08776df7e",
+      "relocated": false
+    },
+    {
+      "file": "qa/story-final-30.5.png",
+      "bytes": 436933,
+      "sourceSha256": "f56717ceab05681cce4dc0e95a6ba5feea465f42aa5cd25539f5830ce71deaba",
+      "deliverySha256": "f56717ceab05681cce4dc0e95a6ba5feea465f42aa5cd25539f5830ce71deaba",
+      "relocated": false
+    },
+    {
+      "file": "qa/story-final-33.png",
+      "bytes": 396561,
+      "sourceSha256": "2de52e36ee2f1133867750aa1389a51652d71cf6d39554f3747567b0f4651a5a",
+      "deliverySha256": "2de52e36ee2f1133867750aa1389a51652d71cf6d39554f3747567b0f4651a5a",
+      "relocated": false
+    },
+    {
+      "file": "qa/story-final-37.png",
+      "bytes": 411824,
+      "sourceSha256": "09f3294ab425da60c9991d00c63e437c4969f6398b751decc8c9ebd3612c4699",
+      "deliverySha256": "09f3294ab425da60c9991d00c63e437c4969f6398b751decc8c9ebd3612c4699",
+      "relocated": false
+    },
+    {
+      "file": "qa/story-final-6.png",
+      "bytes": 472162,
+      "sourceSha256": "b1becf55dfe2e7361049f0f2b95a2adc9ddc971c1b057fbf824cbbdbb1437946",
+      "deliverySha256": "b1becf55dfe2e7361049f0f2b95a2adc9ddc971c1b057fbf824cbbdbb1437946",
+      "relocated": false
+    },
+    {
+      "file": "qa/voice-aac-edge-story-block-validation.json",
+      "bytes": 5259,
+      "sourceSha256": "a48d7f38970d4388df711752e4969548a229fed9e6d8d5efd05ecc22ffe2bd44",
+      "deliverySha256": "a48d7f38970d4388df711752e4969548a229fed9e6d8d5efd05ecc22ffe2bd44",
+      "relocated": false
+    },
+    {
+      "file": "source/AlphaBounds.java",
+      "bytes": 1872,
+      "sourceSha256": "b1cf142ff08b4d759e793163986677b317fb20c7f6abb37147a0a5c3fd0f35cf",
+      "deliverySha256": "b1cf142ff08b4d759e793163986677b317fb20c7f6abb37147a0a5c3fd0f35cf",
+      "relocated": false
+    },
+    {
+      "file": "source/AvatarCore.java",
+      "bytes": 9114,
+      "sourceSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+      "deliverySha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+      "relocated": false
+    },
+    {
+      "file": "source/audio-sample.mjs",
+      "bytes": 4380,
+      "sourceSha256": "5ede34a70264630ce489065434a83903ac7879ab40369cd60c625e83bc47f2f4",
+      "deliverySha256": "5ede34a70264630ce489065434a83903ac7879ab40369cd60c625e83bc47f2f4",
+      "relocated": false
+    },
+    {
+      "file": "source/bgm-cipher-license.json",
+      "bytes": 1061,
+      "sourceSha256": "54ff6b41560b661ba1730bbb9f560d189d57e6b946b35cc1573981685a683ac6",
+      "deliverySha256": "54ff6b41560b661ba1730bbb9f560d189d57e6b946b35cc1573981685a683ac6",
+      "relocated": false
+    },
+    {
+      "file": "source/composition-story-block.jsx",
+      "bytes": 8621,
+      "sourceSha256": "b86e4a43d6aa1e07bf884a345da02e32d5bb1c12f5100385006fad4f01841390",
+      "deliverySha256": "833dcf47eb654eb2593ea4e14ad8bf5fed27a16cde352c94496a87c4889345db",
+      "relocated": true
+    },
+    {
+      "file": "source/deliver-story-block.mjs",
+      "bytes": 5137,
+      "sourceSha256": "d0c77727bb6166c4d58c2adc9e61c244f55fbaa032eda410804941275f2b869b",
+      "deliverySha256": "d0c77727bb6166c4d58c2adc9e61c244f55fbaa032eda410804941275f2b869b",
+      "relocated": false
+    },
+    {
+      "file": "source/live2d-renderer-LICENSE.txt",
+      "bytes": 1065,
+      "sourceSha256": "1108d5e6bbe9a2573e7fde064a7c08fed5ba6b49909488e9126341715a741a4b",
+      "deliverySha256": "1108d5e6bbe9a2573e7fde064a7c08fed5ba6b49909488e9126341715a741a4b",
+      "relocated": false
+    },
+    {
+      "file": "source/model-cues-opening.json",
+      "bytes": 84994,
+      "sourceSha256": "d9ed27cc10fa5bca7f4db5cf4c0e3a39e6078731fa457f9451ba19a666ebb2e8",
+      "deliverySha256": "d9ed27cc10fa5bca7f4db5cf4c0e3a39e6078731fa457f9451ba19a666ebb2e8",
+      "relocated": false
+    },
+    {
+      "file": "source/model.mjs",
+      "bytes": 5158,
+      "sourceSha256": "75c19e84b3909f680962e78ce728cf8a82e1706b365203e09620cc73ef343386",
+      "deliverySha256": "75c19e84b3909f680962e78ce728cf8a82e1706b365203e09620cc73ef343386",
+      "relocated": false
+    },
+    {
+      "file": "source/music-credit.txt",
+      "bytes": 291,
+      "sourceSha256": "c46ade35cee2428140f03fead31f8a46768192dda1ebe88e5827b29349e09620",
+      "deliverySha256": "c46ade35cee2428140f03fead31f8a46768192dda1ebe88e5827b29349e09620",
+      "relocated": false
+    },
+    {
+      "file": "source/narration-cues.json",
+      "bytes": 1115,
+      "sourceSha256": "13d08684f8482feac1939342583fd91deaa856dba2b091f360d808a53005b02f",
+      "deliverySha256": "13d08684f8482feac1939342583fd91deaa856dba2b091f360d808a53005b02f",
+      "relocated": false
+    },
+    {
+      "file": "source/native.mjs",
+      "bytes": 2234,
+      "sourceSha256": "f9de2c5da65155b4d47300de93cd2ce98571be14151674db6de81187cc987ee2",
+      "deliverySha256": "f9de2c5da65155b4d47300de93cd2ce98571be14151674db6de81187cc987ee2",
+      "relocated": false
+    },
+    {
+      "file": "source/package-story-block.mjs",
+      "bytes": 5066,
+      "sourceSha256": "b20d8862d2f32e394f1ab73a885ea94d779b893b0e007d53e4c0fae97df099ee",
+      "deliverySha256": "b20d8862d2f32e394f1ab73a885ea94d779b893b0e007d53e4c0fae97df099ee",
+      "relocated": false
+    },
+    {
+      "file": "source/picture-story-block.mjs",
+      "bytes": 8417,
+      "sourceSha256": "8e6a01e5a37cab741cf355034bd24d922675f409fc505b172b3a81509ba04694",
+      "deliverySha256": "8e6a01e5a37cab741cf355034bd24d922675f409fc505b172b3a81509ba04694",
+      "relocated": false
+    },
+    {
+      "file": "source/render-story-block.mjs",
+      "bytes": 2466,
+      "sourceSha256": "ebb788a714f80bbfa42a133048d985c70c5c4301815a1cd992bccac98dbe869a",
+      "deliverySha256": "ebb788a714f80bbfa42a133048d985c70c5c4301815a1cd992bccac98dbe869a",
+      "relocated": false
+    },
+    {
+      "file": "source/verify-story-block.mjs",
+      "bytes": 2444,
+      "sourceSha256": "6903405c15a9b2236b2051d728b496f71231b88bd98b9ef3bd6dcc2a726963e1",
+      "deliverySha256": "6903405c15a9b2236b2051d728b496f71231b88bd98b9ef3bd6dcc2a726963e1",
+      "relocated": false
+    },
+    {
+      "file": "source/verify-story-voice.mjs",
+      "bytes": 2461,
+      "sourceSha256": "875c114224d675e574970db7fbc59a114274322811e34139bb47e02a5d3aab54",
+      "deliverySha256": "875c114224d675e574970db7fbc59a114274322811e34139bb47e02a5d3aab54",
+      "relocated": false
+    },
+    {
+      "file": "source/voice-case1-query.json",
+      "bytes": 5433,
+      "sourceSha256": "78b0926a87c838c0f781ed2c3e5be3f86bb755f034a99384a4b61947c57f7dfa",
+      "deliverySha256": "78b0926a87c838c0f781ed2c3e5be3f86bb755f034a99384a4b61947c57f7dfa",
+      "relocated": false
+    },
+    {
+      "file": "source/voice-case2-query.json",
+      "bytes": 4941,
+      "sourceSha256": "49caf3ca8ae468a19b487d74cae88b55bb31d46a624221e459d589e632b401af",
+      "deliverySha256": "49caf3ca8ae468a19b487d74cae88b55bb31d46a624221e459d589e632b401af",
+      "relocated": false
+    },
+    {
+      "file": "source/voice-consequence-query.json",
+      "bytes": 9682,
+      "sourceSha256": "b2f40e4466743b1bf235f93d8204b64a71333332f75addc58773c007d25936ac",
+      "deliverySha256": "b2f40e4466743b1bf235f93d8204b64a71333332f75addc58773c007d25936ac",
+      "relocated": false
+    },
+    {
+      "file": "source/voice-hit-query.json",
+      "bytes": 6104,
+      "sourceSha256": "221b4db281cc622ac32bcc439220742b18355e2338907af0898d277d8de193fc",
+      "deliverySha256": "221b4db281cc622ac32bcc439220742b18355e2338907af0898d277d8de193fc",
+      "relocated": false
+    },
+    {
+      "file": "source/voice-hook-query.json",
+      "bytes": 4756,
+      "sourceSha256": "61a4e2867a6b61f04ff285a1379852380b3dd3d7bb54b1ca9d1b058564de2275",
+      "deliverySha256": "61a4e2867a6b61f04ff285a1379852380b3dd3d7bb54b1ca9d1b058564de2275",
+      "relocated": false
+    },
+    {
+      "file": "source/voice-miss-query.json",
+      "bytes": 6223,
+      "sourceSha256": "617e317c4cab5a7d3fd2a68f001610a123b4d76d262af5084a1ec851df38c8ea",
+      "deliverySha256": "617e317c4cab5a7d3fd2a68f001610a123b4d76d262af5084a1ec851df38c8ea",
+      "relocated": false
+    },
+    {
+      "file": "source/voice-next-query.json",
+      "bytes": 5308,
+      "sourceSha256": "7cd7088d814147c6c6e5ece4d8a51ab56a1a39e0d0f46e7be86f0112e7f7e480",
+      "deliverySha256": "7cd7088d814147c6c6e5ece4d8a51ab56a1a39e0d0f46e7be86f0112e7f7e480",
+      "relocated": false
+    },
+    {
+      "file": "source/voice-rule-query.json",
+      "bytes": 8893,
+      "sourceSha256": "daab1861874acb8b5458cdf23f9a737dbf5a889b310adc1c1eae7277c4cf3bca",
+      "deliverySha256": "daab1861874acb8b5458cdf23f9a737dbf5a889b310adc1c1eae7277c4cf3bca",
+      "relocated": false
+    },
+    {
+      "file": "source/voice-switch-query.json",
+      "bytes": 4857,
+      "sourceSha256": "115b0631580c7358ef41e42aa9546957334ca0a4a081a2b2c90edbd26c66d04f",
+      "deliverySha256": "115b0631580c7358ef41e42aa9546957334ca0a4a081a2b2c90edbd26c66d04f",
+      "relocated": false
+    },
+    {
+      "file": "source/voice.mjs",
+      "bytes": 2652,
+      "sourceSha256": "c4d2edeb06b372f87ae8a83fe284073ea862e395d2098e60ea4ad5854848ea19",
+      "deliverySha256": "c4d2edeb06b372f87ae8a83fe284073ea862e395d2098e60ea4ad5854848ea19",
+      "relocated": false
+    },
+    {
+      "file": "videos/truthorlie129-rules-block44-cipher.mp4",
+      "bytes": 5484842,
+      "sourceSha256": "948c5bfccf22e2b2002246b1fb6e54cedac559e6255a970bcb4e72ce8a9bef80",
+      "deliverySha256": "948c5bfccf22e2b2002246b1fb6e54cedac559e6255a970bcb4e72ce8a9bef80",
+      "relocated": false
+    },
+    {
+      "file": "projects/truthorlie129-rules-block44.ecproj",
+      "bytes": 1265722,
+      "deliverySha256": "cdf77f4ee33cfd454d349e1d07872ac176689efbd4cc366f7ba123ca9a2061be",
+      "nativeReopenSave": true
+    },
+    {
+      "file": "projects/truthorlie129-rules-block44.fcproj",
+      "bytes": 17756,
+      "deliverySha256": "7114f975c88a52df6fb1709db4a836fad31c6839399477c696c28c6951a12817",
+      "nativeReopenSave": true
+    },
+    {
+      "file": "projects/editorial-board-reopened.pcraft",
+      "bytes": 73437,
+      "deliverySha256": "946798760a6959211295c942ad0dd6b7ad2fb93fde866a7c8f20821f539da0ac",
+      "nativeReopenSave": true
+    }
+  ],
+  "wholeSubjectiveListen": false,
+  "rootStoryAccepted": false,
+  "notFull600SecondMaster": true,
+  "published": false
+}

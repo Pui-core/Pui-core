@@ -38,7 +38,19 @@
   "openFindings": [
     "PP129-STORY-001/P1",
     "PP129-READ-003/continuous-review",
-    "PP129-CROP-002/Root-recheck-pending"
+    "whole-subjective-watch-and-listen",
+    "formal600-master"
   ],
-  "bgmCandidate": "Cipher / Kevin MacLeod / CC BY4.0; subjective adoption pending"
+  "bgmCandidate": "Cipher / Kevin MacLeod / CC BY4.0; subjective adoption pending",
+  "cropRootRecheck": {
+    "acceptedScope": [
+      13.5,
+      29.3,
+      41.8,
+      62.4
+    ],
+    "majorBlackBandAndUnrelatedCardAndHeadlineOverlapRemoved": true,
+    "acceptanceMeaning": "CTO message accepts mandatory CROP correction only in these4 final frames; not whole sample creative acceptance",
+    "minorCandidate": "62.4 right decorative badge edge when making full edit"
+  }
 }

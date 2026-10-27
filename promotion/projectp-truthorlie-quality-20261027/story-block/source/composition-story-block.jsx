@@ -1,0 +1,49 @@
+app.newProject();var E={"high":{},"names":["actual-app-artwork-background.png","editorial-board.png","model-opening.mov","round1-selected-hi.png","round1-result-hi.png","round1-score-hi.png","round1-hi-cfr.mp4","round2-selected-hi.png","round2-result-hi.png","round2-score-hi.png","round2-hi-cfr.mp4"],"paths":["\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block\\media\\actual-app-artwork-background.png","\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block\\media\\editorial-board.png","\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block\\media\\model-opening.mov","\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block\\media\\round1-selected-hi.png","\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block\\media\\round1-result-hi.png","\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block\\media\\round1-score-hi.png","\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block\\media\\round1-hi-cfr.mp4","\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block\\media\\round2-selected-hi.png","\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block\\media\\round2-result-hi.png","\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block\\media\\round2-score-hi.png","\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block\\media\\round2-hi-cfr.mp4"],"duration":44},boxes=[],shots=[];function r(n,p){return app.run(n,p||{});}function set(l,p,v){r('prop.set',{layer:l,path:p,value:v});}function key(l,p,t,v){r('prop.addKey',{layer:l,path:p,time:Math.round(t*30)/30,timeBase:'comp',value:v});}function span(l,a,b){r('layer.timing',{layers:[l],in:a,out:b});}var imp=r('file.import',{paths:E.paths,sequence:false});if(imp.errors.length)throw Error(JSON.stringify(imp.errors));function item(n){var i=E.names.indexOf(n);if(i<0)throw Error(n);return imp.items[i];}var main=r('comp.new',{name:'TruthOrLie129 Rules Evidence Block44',width:1920,height:1080,frameRate:30,duration:E.duration,background:'#120F12',shutterAngle:0,motionBlurSamples:1}).comp;r('file.projectSettings',{workingSpace:'rec709',outputSpace:'rec709',bitDepth:8});
+function im(n,f,a,b,x,y,scale,anchor){var l=r('layer.addItem',{item:item(f),time:a,duration:b-a}).layer;r('layer.rename',{layer:l,name:n});span(l,a,b);set(l,'transform/position',[x,y,0]);if(anchor)set(l,'transform/anchor',[anchor[0],anchor[1],0]);set(l,'transform/scale',[scale,scale,100]);r('layer.setSwitch',{layers:[l],switch:'audio',value:false});return l;}
+function text(n,s,x,y,z,a,b,max,c,serif){var l=r('layer.newText',{name:n,text:s,font:serif?'Yu Mincho':'Yu Gothic',style:serif?'Demibold':'Bold',size:z,fill:c||'#F3E9D7',position:[x,y],justify:'center'}).layer;r('layer.setText',{layer:l,tracking:serif?30:5,leading:'auto'});var q=app.project.activeItem.layer(n).sourceRectAtTime(a,false);if(q.width>max){z=Math.floor(z*max/q.width);r('layer.setText',{layer:l,size:z});q=app.project.activeItem.layer(n).sourceRectAtTime(a,false);}set(l,'transform/anchor',[q.left+q.width/2,q.top+q.height/2,0]);set(l,'transform/position',[x,y,0]);span(l,a,b);r('layer.setSwitch',{layers:[l],switch:'motionBlur',value:false});key(l,'transform/position',a,[x,y+22,0]);key(l,'transform/position',a+.16,[x,y,0]);key(l,'transform/opacity',a,0);key(l,'transform/opacity',a+.1,100);boxes.push({name:n,text:s,output:[a,b],center:[x,y],width:q.width,height:q.height,size:z});return l;}
+function crop(n,f,a,b,rect,x,y,scale){if(E.high[f]){var hh=E.high[f];f=hh.file;rect=[rect[0]*hh.x,rect[1]*hh.y,rect[2]*hh.x,rect[3]*hh.y];scale=scale/hh.x;}var l=im(n,f,a,b,x,y,scale,[rect[0]+rect[2]/2,rect[1]+rect[3]/2]);r('layer.addMask',{layer:l,shape:'rect',rect:rect,mode:'add'});shots.push({name:n,source:f,output:[a,b],sourceRect:rect,outputCenter:[x,y],scale:scale});return l;}
+function v(n,f,a,b,src,rect,x,y,scale){var l=crop(n,f,a,b,rect,x,y,scale);r('layer.enableTimeRemap',{layers:[l],value:true});key(l,'timeRemap',a,src);key(l,'timeRemap',b,src+b-a);shots[shots.length-1].sourceStart=src;shots[shots.length-1].sourceEnd=src+b-a;shots[shots.length-1].speed=1;return l;}
+
+im('PhotoCraft editorial ground','editorial-board.png',0,44,960,540,100);
+var art=im('Actual app artwork backdrop','actual-app-artwork-background.png',0,44,960,540,225,[427,922]);set(art,'transform/opacity',32);
+var host=im('New rule voice RMS Core','model-opening.mov',0,8,1670,815,40,[300,390]);set(host,'transform/opacity',0);key(host,'transform/opacity',0,0);key(host,'transform/opacity',3.4,0);key(host,'transform/opacity',3.5,100);
+crop('Actual selected second answer cold condition','round2-selected-hi.png',0,3.4,[115,1608,940,210],960,600,155);
+text('Opening question','この1点、誰に入る？',1187,255,67,0,3.4,1350,'#E1C392',true);
+text('Given actual condition','嘘 05　→　投票 02',1187,365,38,0,3.4,1200,'#F3E9D7',false);
+text('Current rule setting','今回の設定',960,300,32,3.4,10,1300,'#BDA68E',false);
+text('Correct scoring rule','的中　→　推理する側に 1点',960,470,58,3.4,10,1550,'#E1C392',true);
+text('Nobody correct scoring rule','全員外れ　→　出題した側に 1点',960,640,56,3.4,10,1600,'#F3E9D7',true);
+text('Actual configured base point note','的中配点1・この収録のルール',960,790,27,3.4,10,1300,'#BDA68E',false);
+text('Case1 label','01　推理するのは BB',1187,240,41,10,14,1400,'#C7B49D',false);
+text('Case1 known condition','嘘 03　→　投票 03',1187,350,63,10,14,1400,'#E1C392',true);
+crop('Actual selected third answer','round1-selected-hi.png',10,14,[107,1201,919,137],960,610,165);
+v('Actual R1 vote confirmation','round1-hi-cfr.mp4',14,15.2,82.5,[87,2090,999,386],960,590,98);
+text('Case1 confirmation','一票を、確定。',1187,235,55,14,15.2,1400,'#F3E9D7',true);
+crop('Actual R1 result header','round1-result-hi.png',15.2,18.2,[115,350,930,350],1187,540,108);
+text('Case1 result label','推理側へ',360,420,68,15.2,18.2,600,'#E1C392',true);
+crop('Actual R1 BB score row','round1-score-hi.png',18.2,21,[205,190,785,112],960,590,165);
+text('Case1 awarded role','推理した BB に、1点。',1187,320,63,18.2,21,1450,'#E1C392',true);
+text('Role swap title','出題と推理を、交代。',960,400,68,21,24,1500,'#E1C392',true);
+text('Role swap actual roles','出題 BB　 /　 推理 AA',960,590,45,21,24,1400,'#F3E9D7',false);
+text('Case2 label','02　推理するのは AA',1187,240,41,24,28,1400,'#C7B49D',false);
+text('Case2 known condition','嘘 05　→　投票 02',1187,350,63,24,28,1400,'#E1C392',true);
+crop('Actual R2 selected second answer','round2-selected-hi.png',24,28,[115,1608,940,210],960,610,155);
+v('Actual R2 confirmation button','round2-hi-cfr.mp4',28,29,65.5,[100,2080,1000,340],960,590,98);
+text('Case2 confirmation','外れたら、どっちへ？',1187,235,55,28,29,1400,'#F3E9D7',true);
+crop('Actual R2 result header','round2-result-hi.png',29,32,[115,350,930,350],1187,540,108);
+text('Case2 no correct label','出題側へ',350,420,68,29,32,580,'#E1C392',true);
+crop('Actual R2 BB score row','round2-score-hi.png',32,35,[205,190,785,112],960,590,165);
+text('Case2 awarded role','出題した BB に、1点。',1187,320,63,32,35,1450,'#E1C392',true);
+crop('Actual comparison BB first point','round1-score-hi.png',35,41,[205,190,785,112],550,580,90);
+crop('Actual comparison BB second point','round2-score-hi.png',35,41,[205,190,785,112],1370,580,90);
+text('Compare first role','見抜いた BB',550,395,47,35,41,720,'#E1C392',true);
+text('Compare second role','だました BB',1370,395,47,35,41,720,'#E1C392',true);
+text('Compare first actual condition','嘘 03 ＝ 投票 03',550,740,34,35,41,720,'#F3E9D7',false);
+text('Compare second actual condition','嘘 05 ≠ 投票 02',1370,740,34,35,41,720,'#F3E9D7',false);
+text('Comparison link','→',960,580,51,35,41,100,'#BDA68E',false);
+text('Next observation','では、嘘がない回は？',960,465,75,41,44,1550,'#E1C392',true);
+text('Game title close','嘘か誠か',960,670,43,41,44,1300,'#F3E9D7',true);
+text('Current production credits','VOICEVOX:青山龍星 / Revenant_Natural',960,895,21,41,44,1700,'#BDA68E',false);
+text('Music credit','Music: Cipher — Kevin MacLeod / CC BY4.0',960,940,18,41,44,1700,'#BDA68E',false);
+text('Actual scope','次期版1.03(23)・自動操作例・回答は架空',960,1040,20,0,44,1750,'#BDA68E',false);
+writeLn(JSON.stringify({comp:main,duration:E.duration,boxes,shots,newCoreOutput:[0,8],viewerGetsKnownLieAndVoteBeforeOutcome:true,actualR1Scores:{AA:0,BB:1},actualR2Scores:{AA:0,BB:2},fictionalPersonalFactGuessing:false,notFull600Master:true}));
