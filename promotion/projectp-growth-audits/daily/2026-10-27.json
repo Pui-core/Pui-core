@@ -4,10 +4,10 @@
   "managementIssue": "https://github.com/Pui-core/-/issues/131",
   "auditDateJst": "2026-10-27",
   "recordedAtUtc": "2026-10-27T11:40:55.008Z",
-  "updatedAtUtc": "2026-10-27T11:42:05.619Z",
+  "updatedAtUtc": "2026-10-27T12:46:16.651Z",
   "timezone": "Asia/Tokyo",
   "ruleId": "SNS-003-AUDIT-001",
-  "status": "HOLD_AWAITING_ROOT_NATIVE",
+  "status": "HOLD_REFRESHED_LIST_PUBLICATION_AND_ANALYTICS_UNVERIFIED",
   "winnerCount": 0,
   "region": {
     "targetMarket": "JP",
@@ -108,17 +108,40 @@
     }
   ],
   "latestNative": {
-    "status": "awaiting_root_handoff",
-    "observedAtUtc": null,
-    "sourceUrl": null,
-    "ownerAccount": null,
-    "observations": [],
-    "missing": [
-      "today_owner_post_list",
-      "today_owner_post_analytics",
-      "missyou_actual_publication_and_post_age"
+    "status": "root_refreshed_list_received_individual_publication_and_analytics_unverified",
+    "observedAtUtc": "2026-10-27T12:43:07.4442212Z",
+    "sourceUrl": "https://www.tiktok.com/tiktokstudio/content",
+    "ownerAccount": "prop_pui",
+    "observations": [
+      {
+        "id": "OBS-TT-EVENING-20261027",
+        "record": "2026-10-27-evening-partial.json",
+        "scope": "own_post_list_display_counts_including_future_reservation",
+        "displayedRows": 6,
+        "allDisplayedViewCountsZero": true,
+        "futureReservationRowsExcluded": [
+          "7701100271014792466"
+        ]
+      },
+      {
+        "id": "OBS-TT-REFRESHED-2143-20261027",
+        "record": "2026-10-27-2143-refreshed.json",
+        "scope": "own_post_list_display_counts_after_ordinary_browser_reload",
+        "displayedRows": 5,
+        "allDisplayedViewLikeCommentCountsZero": true,
+        "deletedScheduledIdAbsent": "7701100271014792466"
+      }
     ],
-    "qaSelfPlaybackExcluded": true
+    "missing": [
+      "missyou_actual_publication_and_post_age",
+      "individual_public_state_and_third_party_playback",
+      "impression_or_exposure_denominator",
+      "post_analytics_retention_and_attributed_follows",
+      "metric_reflection_delay"
+    ],
+    "qaSelfPlaybackExcluded": true,
+    "currentObservationId": "OBS-TT-REFRESHED-2143-20261027",
+    "independentDocumentReloadConfirmed": true
   },
   "trendAudit": {
     "status": "root_web_observed_no_japan_rankings",
@@ -246,7 +269,7 @@
     "viewCountOnlySuccess": false,
     "qaSelfPlaybackIsGrowthEvidence": false
   },
-  "nextExperimentId": "PP-STRUCTURE-HYP-001",
+  "nextExperimentId": "PP-TT-JOINT-002",
   "supersessions": [
     {
       "id": "INVALID-MUSIC-SLOTS",
@@ -266,13 +289,81 @@
   "acceptance": {
     "sourceRecordsValid": true,
     "sourceFCopyVerified": true,
-    "rootLatestNativeReceived": false,
-    "mergeGate": "HOLD until required Root native is received or Root explicitly accepts a documented missing-data result."
+    "rootLatestNativeReceived": true,
+    "mergeGate": "HOLD: normal document reload confirmed at21:43, but individual publication and required post analytics/metric update delay remain unverified.",
+    "rootLatestNativeComplete": false
   },
   "cadence": {
     "daily": "Current source/date/region check via existing goal/patrol only.",
     "postAge": "Prefer actual publication+24h/+72h, keep platform and window separate.",
     "weekly": "Reevaluate structure, conversion and expiry in existing patrol; next planned review2026-11-03.",
     "newCron": false
-  }
+  },
+  "latestOwnerRules": [
+    {
+      "id": "SNS-003-QUALITY-GROWTH-002",
+      "effectiveOnJst": "2026-10-27",
+      "summary": "Quality primarily means videos likely to increase views and followers/subscribers; verify with actual post-publication outcomes, not production inspection alone."
+    },
+    {
+      "id": "SNS-002-STRUCTURE-SOUND-001",
+      "effectiveOnJst": "2026-10-27",
+      "summary": "Next TikTok jointly revise structure and select an audible actual native platform track; synchronize cuts/movement and preserve voice and applicable terms."
+    }
+  ],
+  "growthQuality": {
+    "status": "NOT_VERIFIED",
+    "prepublicationChecks": "Readability/voice/real-material accuracy/technical integrity and owner art-direction are necessary checks, not evidence of growth.",
+    "postpublicationCriteria": [
+      "Actual views/reach with correct native scope",
+      "Followers/subscribers actually attributed where available",
+      "Retention/swipe/watch-time/conversion under comparable platform, post-age and material conditions"
+    ],
+    "unknownOrZeroExposure": "Keep unknown exposure null; do not infer zero impressions from zero view display or infer structure/sound causality.",
+    "attribution": "Account totals or daily net followers are not assigned to individual posts."
+  },
+  "soundCandidate": {
+    "title": "Digital Horizon",
+    "artist": "Blinking Frog Blast",
+    "durationSeconds": 42,
+    "observedAtUtc": "2026-10-27T12:18:47.986Z",
+    "reportedBy": "Root",
+    "catalogScope": "own native royalty-free catalog",
+    "displayedCountText": "1.2M",
+    "displayedCountIsNotCurrentJapanRanking": true,
+    "region": null,
+    "timeWindow": null,
+    "soundId": null,
+    "bpm": null,
+    "listened": false,
+    "selected": false,
+    "nativeSoundApplied": false,
+    "audibleMixVerified": false,
+    "commercialUseForTargetPostVerified": null,
+    "sourceIssue": "https://github.com/Pui-core/-/issues/132",
+    "conclusion": "Unselected catalog candidate with native player progress observed; no Root auditory evaluation, winning-track evidence, current Japan ranking or causal explanation for zero views.",
+    "nativePlaybackDisplay": {
+      "reportedBy": "Root",
+      "observedAtJstMinute": "2026-10-27 21:37 JST",
+      "exactObservedAtUtc": null,
+      "progressDisplay": "00:11/00:42",
+      "artworkControlOperated": true,
+      "progressObserved": true,
+      "rootAuditoryEvaluationPerformed": false,
+      "postSoundSelectionPerformed": false,
+      "meaning": "Player progress is an observed UI state; it is not a subjective listening/quality judgment or assignment to a post."
+    },
+    "stateAsReportedThroughJstMinute": "2026-10-27 21:37 JST"
+  },
+  "revisionNotes": [
+    {
+      "previousHead": "32e55519bc01209cecc8358f9ae6ed775958726b",
+      "revisedAtUtc": "2026-10-27T12:41:34.514Z",
+      "reason": "Append partial native and latest owner quality/joint structure-sound policy; keep historical observations unchanged."
+    },
+    {
+      "revisedAtUtc": "2026-10-27T12:46:16.651Z",
+      "reason": "Append later21:43 ordinary document-reload result; retain20:53 partial unchanged and do not publish raw document runtime identifiers."
+    }
+  ]
 }

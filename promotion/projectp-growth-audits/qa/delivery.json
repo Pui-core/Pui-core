@@ -1,46 +1,65 @@
 {
   "schemaVersion": 1,
   "managementIssue": "https://github.com/Pui-core/-/issues/131",
-  "copiedAtUtc": "2026-10-27T11:45:50.179Z",
-  "status": "DRAFT_HOLD_LATEST_NATIVE_PENDING",
+  "copiedAtUtc": "2026-10-27T12:47:47.337Z",
+  "status": "DRAFT_HOLD_REFRESHED_LIST_PUBLICATION_ANALYTICS_UNVERIFIED",
   "sourceRepository": "https://github.com/Pui-core/Pui-core",
   "sourceBranch": "feature/issue-131-growth-audits",
   "sourceBase": "a6c3d5b2988fe59b18ec646c8823ab8d185d5c85",
+  "previousHead": "32e55519bc01209cecc8358f9ae6ed775958726b",
   "destination": "F:/Videos/ProjectP-Growth-Audits-2026-10-27/revision-01",
   "payloads": [
     {
       "path": "projectp-growth-audits/README.md",
-      "bytes": 2494,
-      "sha256": "11ed079be16ef73c39f85003e1a839d8a2fd49e1f61e56ba27f688fd125314af"
+      "bytes": 3696,
+      "sha256": "5e357ae5e0e80949c30d9eecd499d3b5ad15b6b7e66b7d24a973a6e355d5e58a"
+    },
+    {
+      "path": "projectp-growth-audits/daily/2026-10-27-2143-refreshed.json",
+      "bytes": 4135,
+      "sha256": "45c211783e669786613881476abe03bb7986c0d43f90927f42176c7641c5990c"
+    },
+    {
+      "path": "projectp-growth-audits/daily/2026-10-27-evening-partial.json",
+      "bytes": 5693,
+      "sha256": "d5e1df10b25c9515c503b7c7618a7ae95d0e13b92b092140587a56be82456060"
     },
     {
       "path": "projectp-growth-audits/daily/2026-10-27.json",
-      "bytes": 11010,
-      "sha256": "1824da3098d9aa12403df221147696dded724ba1b975c96ae684b22ab900eaaf"
+      "bytes": 15364,
+      "sha256": "0b63b3fd67bc904ccb9e0224992d6a3716e671012ee1c5756546fb380384a522"
     },
     {
       "path": "projectp-growth-audits/daily/監査-2026-10-27.md",
-      "bytes": 4903,
-      "sha256": "2cd76c4d1ebea7603462a89d2a7c3f667e311d129aac906e4ada8443dbe1aada"
+      "bytes": 7595,
+      "sha256": "050bbf2af721e9d7853f724da6beb62ecfcfe83e5309d79180b9c7a54b0858ce"
+    },
+    {
+      "path": "projectp-growth-audits/qa/history/delivery-initial-32e5551.json",
+      "bytes": 1660,
+      "sha256": "4bf12c16063577c4e77744395246ea6a51cf43efcc2e89c76a4373839ed91f68"
     },
     {
       "path": "projectp-growth-audits/qa/validation.json",
-      "bytes": 1301,
-      "sha256": "f0693fb17c391e034c98d7d5206ec4a4c5844768509f0e33f138b2bdbb6a1257"
+      "bytes": 1919,
+      "sha256": "5e8c27ee07759015206ca3e7d270cb5293b4551e3b725056e2b8f8f4e47e8961"
     },
     {
       "path": "projectp-growth-best-practices/README.md",
-      "bytes": 2274,
-      "sha256": "60f00fc6563307abb212c4d99bfb3c1d848891df1650d53e3483f36c8cad8a71"
+      "bytes": 3151,
+      "sha256": "08289437474fd29d01a88b2b1510e2b2d7133cfc29bf7481667f12f30dc7f66b"
     },
     {
       "path": "projectp-growth-best-practices/ledger.json",
-      "bytes": 9923,
-      "sha256": "e9ef552a2c97865e239a4f10b97309fe17f44ec20cd169da8c85101f79ed71c2"
+      "bytes": 17246,
+      "sha256": "af85a94b3f0457a2db455c88d39508379509346d0213a5dfed94400971d5ccbc"
     }
   ],
   "copyShaMismatches": 0,
   "rawUiAuthHtmlMediaIncluded": false,
-  "nativeMissing": true,
+  "partialAndRefreshedNativeReceived": true,
+  "requiredPublicationAndAnalyticsComplete": false,
+  "priorDeliveryReceiptSha256": "4bf12c16063577c4e77744395246ea6a51cf43efcc2e89c76a4373839ed91f68",
+  "priorReceiptPreservedAt": "projectp-growth-audits/qa/history/delivery-initial-32e5551.json",
   "writerGuiBrowserWindowsMacSnsRuntimeLeaseActions": 0
 }

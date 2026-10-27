@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "ProjectP構成ナレッジ台帳",
   "managementIssue": "https://github.com/Pui-core/-/issues/131",
-  "updatedAtUtc": "2026-10-27T11:42:05.619Z",
+  "updatedAtUtc": "2026-10-27T12:46:16.651Z",
   "ruleId": "SNS-003-AUDIT-001",
   "winnerCount": 0,
   "statusDefinitions": {
@@ -109,7 +109,11 @@
       },
       "scheduled": false,
       "published": false,
-      "nextExperimentId": null
+      "nextExperimentId": null,
+      "activeForCurrentTikTok": false,
+      "executionStatus": "historical_unverified_single_factor_proposal_not_current_tiktok_instruction",
+      "supersededForNextTikTokBy": "PP-TT-JOINT-002",
+      "limits": "Retained as an untested historical proposal. It is not the current next-TikTok execution plan; joint revision cannot isolate this variable."
     },
     {
       "confirmedWinner": false,
@@ -156,6 +160,103 @@
       },
       "expiredReason": "129差戻しと取消済み。旧receiptは保持するが再実行しない。",
       "nextExperimentId": null
+    },
+    {
+      "id": "PP-OWNER-OBS-003",
+      "status": "observed_owner",
+      "topic": "10/27 evening TikTok Studio list",
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T12:41:34.514Z",
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-10-28",
+      "observationIds": [
+        "OBS-TT-EVENING-20261027"
+      ],
+      "evidenceUrl": "https://www.tiktok.com/tiktokstudio/content",
+      "sourceRecord": "../projectp-growth-audits/daily/2026-10-27-evening-partial.json",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "observationOnly": "20:53JST6 list rows display0views, including one future reservation excluded from performance.",
+      "limits": "Independent fresh server reload, current actual-publication timestamps, exposure/retention and attributed follows are unverified. Displayed0 is not an impression denominator or a creative cause.",
+      "nextExperimentId": "PP-TT-JOINT-002"
+    },
+    {
+      "id": "PP-TT-JOINT-002",
+      "status": "unverified",
+      "topic": "次TikTokの構成と実native音源の改善セット",
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T12:41:34.514Z",
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-11-03",
+      "ruleId": "SNS-002-STRUCTURE-SOUND-001",
+      "observationIds": [
+        "OBS-TT-EVENING-20261027"
+      ],
+      "evidenceUrl": "https://github.com/Pui-core/-/issues/132",
+      "structure": {
+        "opening": "実際の見せ場を先に置き、一つの問いを明確にする。",
+        "secondsUntilResult": null,
+        "development": "説明と重複を短くし、実結果で問いを回収する。",
+        "cutsAndMotion": "実選択したnative曲の拍にカット/動きを合わせる。未選定のBPM/拍位置は推測しない。",
+        "typography": "主役と字幕の可読性を保つ。",
+        "sound": "本人TikTokで実際に利用可能な曲を選択し、曲名/ID/区間/確認日、商用条件と声の可聴性を確認する。",
+        "endingAndCta": "見せた実作品に対応する短い案内。"
+      },
+      "changedVariables": [
+        "structure",
+        "actual_audible_native_platform_sound"
+      ],
+      "singleChangedVariable": null,
+      "comparisonType": "joint_revision_package_not_single_factor_AB",
+      "actualTrackSelected": false,
+      "scheduledOrPublishedByThisWriter": false,
+      "decisionRule": {
+        "primary": [
+          "Comparable actual views and post-attributed follows/subscribers when available",
+          "Retention/swipe/watch time with correct native denominator at actual+24h/+72h separately"
+        ],
+        "missing": "Keep unknowns null. Do not allocate account-level followers or treat scheduled rows/QA playback as success.",
+        "causalLimit": "Changing structure and sound together cannot identify either one as the cause; missing sound causing0 views remains unproven.",
+        "finiteReview": "Review once each required actual+24h/+72h becomes available; missing/freshness failures stay HOLD rather than being filled from stale list counts."
+      },
+      "scope": "Current next-TikTok instruction; no automatic reuse of TikTok-only music on YouTube.",
+      "nextExperimentId": null
+    },
+    {
+      "id": "PP-OWNER-OBS-004",
+      "status": "observed_owner",
+      "topic": "21:43再読込後のTikTok一覧5行",
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T12:46:16.651Z",
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-10-28",
+      "observationIds": [
+        "OBS-TT-REFRESHED-2143-20261027"
+      ],
+      "evidenceUrl": "https://www.tiktok.com/tiktokstudio/content",
+      "sourceRecord": "../projectp-growth-audits/daily/2026-10-27-2143-refreshed.json",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "observationOnly": "通常再読込後、残る5行のviews/likes/commentsすべて表示0。owner削除したScate予約IDは一覧にない。",
+      "limits": "Document再読込は確認。反映遅延、個別公開状態、配信面/露出分母/維持/帰属は別途不明。20:53の鮮度未確認partialと分離し、0原因/勝者は確定しない。",
+      "nextExperimentId": "PP-TT-JOINT-002"
     }
   ],
   "externalExamples": [
@@ -247,7 +348,67 @@
     "optimalPostsPerDay": null,
     "unlimitedDailyPostsIsAuthorizationNotScientificOptimum": true,
     "noAccountGainAllocation": true,
-    "noMixedPlatformDenominator": true
+    "noMixedPlatformDenominator": true,
+    "currentTikTokSingleFactorAB": false
   },
-  "updateProtocol": "README.md"
+  "updateProtocol": "README.md",
+  "activeTikTokExperimentId": "PP-TT-JOINT-002",
+  "qualityDefinition": {
+    "ruleId": "SNS-003-QUALITY-GROWTH-002",
+    "growthIsPrimary": true,
+    "definition": "再生・フォロワー/登録者が増えやすいことを品質の中心に置く。",
+    "prepublicationRequiredChecks": [
+      "視認性/可読性",
+      "音はめと声の可聴性",
+      "実素材と事実の正確さ",
+      "技術的な破損/同期の検査",
+      "既存ownerの構図/テンポ/3Craft/モデル等の要望"
+    ],
+    "prepublicationChecksProveGrowth": false,
+    "postpublicationEvidence": [
+      "同じplatform/公開後経過を考慮した再生・到達",
+      "nativeで投稿に明示帰属するfollow/subscriber",
+      "実分母付き維持/視聴時間/転換"
+    ],
+    "unknownFollowerAttribution": null,
+    "unknownExposureDenominator": null,
+    "doNotInfer": [
+      "技術PASS/黄金比/見た目/カット数だけから成長効果",
+      "0表示だけから構成/音源/制限の原因",
+      "アカウント純増を各postへ配分"
+    ]
+  },
+  "handoffPolicy": {
+    "existingPr": "https://github.com/Pui-core/Pui-core/pull/64",
+    "preserveExistingBranchAndUnmergedWork": true,
+    "actualRuntimeModels": {
+      "thisWriter": null,
+      "root": null,
+      "otherSessions": null
+    },
+    "actualModelClaimAllowedOnlyWithSessionMetadata": true,
+    "configDefaultIsNotProofOfOtherRunningSessionModel": true
+  },
+  "soundCandidates": [
+    {
+      "id": "PP-SOUND-CAND-001",
+      "status": "unverified",
+      "title": "Digital Horizon",
+      "evidenceRecord": "../projectp-growth-audits/daily/2026-10-27.json",
+      "evidenceJsonPointer": "/soundCandidate",
+      "stateAsReportedThroughJstMinute": "2026-10-27 21:37 JST",
+      "displayedCountText": "1.2M",
+      "region": null,
+      "timeWindow": null,
+      "playerProgressObserved": true,
+      "rootAuditoryQualityJudgmentPerformed": false,
+      "postSoundSelected": false,
+      "winningTrack": false,
+      "currentJapanTrendVerified": false,
+      "growthEffect": null,
+      "causeOfZeroViews": null,
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-10-28"
+    }
+  ]
 }
