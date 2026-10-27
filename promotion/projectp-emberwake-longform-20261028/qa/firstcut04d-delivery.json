@@ -1,0 +1,3818 @@
+{
+  "state": "ACTUAL_F_NATIVE_FULL_EXPORT_3CRAFT_PORTABLE_PENDING_ROOT",
+  "resumedKnownCopyEnomem": true,
+  "copyMethod": "bounded 64KiB pipeline plus SHA256",
+  "destination": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/firstcut-04d",
+  "sourceRoot": "/home/pui/.claude/worktrees/Pui-core-issue-127/promotion/projectp-emberwake-longform-20261028",
+  "name": "emberwake-firstcut04d",
+  "tag": "emberwake-firstcut04d-f-native",
+  "plannedSeconds": 620.8666666666667,
+  "frames": 18626,
+  "copiedFiles": [
+    {
+      "file": "media/ep01-game.mp4",
+      "bytes": 7300362,
+      "sha256": "8082f7412768f54287bec7f0a3533addb25e4b924a2370980c4b396657e8962b"
+    },
+    {
+      "file": "media/ep02-game.mp4",
+      "bytes": 7060409,
+      "sha256": "a9f5096ddef0570ea90ab38deaf7314553cc0b53602c67ef85feb29a7aabf344"
+    },
+    {
+      "file": "media/ep03-game.mp4",
+      "bytes": 6839797,
+      "sha256": "0a214099a67ef4415304f89d5c9089170a21f55dfdc8cdb3514b7f16e4d4f3d3"
+    },
+    {
+      "file": "media/ep01-replay-controls01-game.mp4",
+      "bytes": 9231654,
+      "sha256": "c0b94ae3e559809216db5536c13f3ca4c9121fc2dd7b1630c91c2257df78eb86"
+    },
+    {
+      "file": "media/ep10-game.mp4",
+      "bytes": 8198726,
+      "sha256": "86be728eb6bfa7da0c8ecc306ea4c6f5409303d3140bc1a42d2fbc63bc72236d"
+    },
+    {
+      "file": "media/ep02-normal-route01-game.mp4",
+      "bytes": 7196929,
+      "sha256": "0c2072edc8ff8b73ae102cce2763a0dcd1d072c186e97e7b3de784b8e014f500"
+    },
+    {
+      "file": "media/ep11-game.mp4",
+      "bytes": 7714374,
+      "sha256": "c18f98c15aecc0f4c3534b86ace041f9bbe248250a528e80bc463c5443f591d5"
+    },
+    {
+      "file": "media/ep12-game.mp4",
+      "bytes": 7980169,
+      "sha256": "d71826944113f59fd071d83c3ca866439a5592cc03c1bf4432565f913d95f9be"
+    },
+    {
+      "file": "media/ep04-game.mp4",
+      "bytes": 7202780,
+      "sha256": "31bfcc50f1fc4f27bb677bb35728b0ce4eb93c7294409f2c8f425ad773768f05"
+    },
+    {
+      "file": "media/ep05-game.mp4",
+      "bytes": 6942815,
+      "sha256": "23606f19c045caaa077fe1a482cdf052f1c41aaf6b1dd24df8c4e11ca9cc7c73"
+    },
+    {
+      "file": "media/ep06-game.mp4",
+      "bytes": 7055411,
+      "sha256": "2c64ad5e6d0ae933e68120e9c3c26e333d6bfbd12e7f1580df713e843af8889a"
+    },
+    {
+      "file": "media/ep07-game.mp4",
+      "bytes": 7169604,
+      "sha256": "29d1d66f4f88f12daec7c62f0daa6690118e86851859f2648317a50a463c9ade"
+    },
+    {
+      "file": "media/ep08-game.mp4",
+      "bytes": 6650156,
+      "sha256": "673835a895aff3cb515a47638967ea29045354a5f2580730d65ea8f8f06bc018"
+    },
+    {
+      "file": "media/ep09-game.mp4",
+      "bytes": 6501720,
+      "sha256": "3ce469a22f0d8f91cc57c60f014c9171bf3f4ff8dec824cf88786d646a263993"
+    },
+    {
+      "file": "media/firstcut04-art-pair.mov",
+      "bytes": 137528369,
+      "sha256": "361f7dcb778de550626425296a9cb2030e95bd9016b7a0ff004a0294293b8a2b"
+    },
+    {
+      "file": "media/traveler-old24-demo.mov",
+      "bytes": 15311656,
+      "sha256": "90a732739e6c3cde21ac91cb6cf04bace0b7db11bfded30ea9d09ddfc9186e72"
+    },
+    {
+      "file": "media/traveler-demo.mov",
+      "bytes": 3543617,
+      "sha256": "638965a0bbea18ddac93ada28c36a9ccfb340703578387fe1bd8620869eda293"
+    },
+    {
+      "file": "media/firstcut04-art-detail.mov",
+      "bytes": 4155345,
+      "sha256": "29a169304c66814348d30bdc984f8196875697ab241513a3a7fa53be2a56f10a"
+    },
+    {
+      "file": "media/ep13-game.mp4",
+      "bytes": 7599746,
+      "sha256": "c02f815967307f7917c813f1919dc922a3a7fc44f1f7aa4ded497597692c9e5a"
+    },
+    {
+      "file": "media/natural04.mov",
+      "bytes": 742267993,
+      "sha256": "1ab2b27c4e8e18ae13a9351248b761508be972d4879df479dfbeefb1394c3a34"
+    },
+    {
+      "file": "media/firstcut04d-visual-base.mp4",
+      "bytes": 191073365,
+      "sha256": "1f58ccd4855dabaae817a41db8f8b0d204577e9a83a0acbae4816b22c0380938"
+    },
+    {
+      "file": "media/firstcut04d-patch-00.mov",
+      "bytes": 4459190,
+      "sha256": "3a4356e0d48443afc31d65be8b2b8f9a3ec2e025e11aa63868c169d4d1978676"
+    },
+    {
+      "file": "media/firstcut04d-patch-01.mov",
+      "bytes": 28316278,
+      "sha256": "3c78ab16604ada930a8db6ca7ccc47447db0de7c557624d6483e0a7876b8fa1a"
+    },
+    {
+      "file": "media/firstcut04d-patch-02.mov",
+      "bytes": 8805807,
+      "sha256": "c23f9e1260b3f18b6f8ed1ec102662b3f8ba4c2a50fccbce17e1952708d84867"
+    },
+    {
+      "file": "media/firstcut04d-patch-03.mov",
+      "bytes": 1174879,
+      "sha256": "793a27a3bd8e4b8ca1daf5471e6207bc1268ec5d4e345d41479b3006d486cc14"
+    },
+    {
+      "file": "media/firstcut04d-patch-04.mov",
+      "bytes": 6474541,
+      "sha256": "47f0c8f3f0c60b1959ae5d4e655903ed622d29dcc7a7f6b249f3b1a31572e31f"
+    },
+    {
+      "file": "media/firstcut04d-patch-05.mov",
+      "bytes": 10770473,
+      "sha256": "8a12a815a9b0aad2da58f334ad989b36300aa92b7042ddb6009bae8105ab849e"
+    },
+    {
+      "file": "media/firstcut04d-patch-06.mov",
+      "bytes": 132819111,
+      "sha256": "5c71dd7ec6dc59403fb065a7f0ba153b47c8ce50211b35d1ad8f9dd59dd0ffc0"
+    },
+    {
+      "file": "media/firstcut04d-patch-07.mov",
+      "bytes": 13136624,
+      "sha256": "5e26258391ba03ee156e929da4c395c797accf08287268ba53c0d53dddc666d4"
+    },
+    {
+      "file": "media/firstcut04d-patch-08.mov",
+      "bytes": 9114366,
+      "sha256": "71e3934119f181cdae40b3f8a6716a64b010c81df6e5b6f3acf68bddd1fd4142"
+    },
+    {
+      "file": "media/firstcut04d-patch-09.mov",
+      "bytes": 15267492,
+      "sha256": "68f07ff4d2819ae773fe00ea9c36a17583d2b4ea2c146e575e73d24c25a2babc"
+    },
+    {
+      "file": "media/firstcut04d-patch-10.mov",
+      "bytes": 10510205,
+      "sha256": "86a8f143a74bc15dcc324977fa39e07d90125208e2fbe6fa6234b3c35ac30573"
+    },
+    {
+      "file": "media/firstcut04d-patch-11.mov",
+      "bytes": 7443403,
+      "sha256": "638e715be6daaee2902164465a82b633f144511ecdf12753b6a47172bd37da4b"
+    },
+    {
+      "file": "media/firstcut04d-patch-12.mov",
+      "bytes": 5910883,
+      "sha256": "9b574b2924bec70e7fbb2a10d4b9a5c50930f5c4c5852b628e0954cfee3c9017"
+    },
+    {
+      "file": "media/firstcut04d-patch-13.mov",
+      "bytes": 109026050,
+      "sha256": "7f69af179f588034ae33f9b518d85add9a54a1c705c93d08c39107a232b0a4b0"
+    },
+    {
+      "file": "media/firstcut04d-patch-14.mov",
+      "bytes": 9425271,
+      "sha256": "52a02aab72f1d68c58b3296cea7c9757fd22eb698b7ab5ff551f198b1b89242f"
+    },
+    {
+      "file": "media/firstcut04d-patch-15.mov",
+      "bytes": 1861443,
+      "sha256": "55ac8ecf76ffef02e1f0c23b4ff0eefd8188ac342f71ae948529dd023e292ad4"
+    },
+    {
+      "file": "media/firstcut04d-patch-16.mov",
+      "bytes": 15620436,
+      "sha256": "4da107fd903f9cc492e73eb8a3cef4de1319d96a5bb7946d39096d643c6928a2"
+    },
+    {
+      "file": "media/firstcut04d-patch-17.mov",
+      "bytes": 519820,
+      "sha256": "1588ef62f6ce0927ad68a78bb1c7ebda5c8246eecf85b3dad0dcf0fa79f383a5"
+    },
+    {
+      "file": "media/firstcut04d-patch-18.mov",
+      "bytes": 10909390,
+      "sha256": "252a4af726f274b1bfe48998468b1b4b90e4f9ce8053e62d8e1bca4f125e6667"
+    },
+    {
+      "file": "media/firstcut04d-patch-19.mov",
+      "bytes": 10759672,
+      "sha256": "1405bfb0f223a29140017fd0f66491b371f0e1732af15edac5d8d696808fa0a4"
+    },
+    {
+      "file": "media/firstcut04d-patch-20.mov",
+      "bytes": 8678903,
+      "sha256": "df887766df47b4a1b5fb5a43fcdf84d0460f64cc5d20e9fbcf0b6ba15bf11bf9"
+    },
+    {
+      "file": "media/firstcut04d-patch-21.mov",
+      "bytes": 6507635,
+      "sha256": "5ef570c1583671f4c1b279442c279459b951ff0c68249b0b478a5f35a7411641"
+    },
+    {
+      "file": "media/firstcut04d-patch-22.mov",
+      "bytes": 14817436,
+      "sha256": "a23858e8403e1aed9c14f5151d038946fb806a4be8e6fc0f4723f96453059428"
+    },
+    {
+      "file": "media/firstcut04d-patch-23.mov",
+      "bytes": 2458815,
+      "sha256": "329613cdf08dd6cf318f6569307051a9297b624d7bcd1d175d992e01a9c62a0d"
+    },
+    {
+      "file": "media/firstcut04d-patch-24.mov",
+      "bytes": 11162373,
+      "sha256": "e4c7e819fd9d16dcb432e1275aa353166064e4231333f4936c19647d86934a34"
+    },
+    {
+      "file": "media/firstcut04d-patch-25.mov",
+      "bytes": 14516762,
+      "sha256": "0e4b59bba4e85de53928545f50d5a199cec1df6e5ad8b20cb2e9bf0e48e86ce8"
+    },
+    {
+      "file": "media/firstcut04d-patch-26.mov",
+      "bytes": 19031969,
+      "sha256": "5ebf6fa4638f192c79e61be3a781d4fdc9c1a519ca9af46ce389885d9dd50cc5"
+    },
+    {
+      "file": "media/firstcut04d-patch-27.mov",
+      "bytes": 1548721,
+      "sha256": "84901c6f7e5beafbfa821cb702f4b42db078e7e7f6ffb5474465cb1f5a91b649"
+    },
+    {
+      "file": "media/firstcut04d-patch-28.mov",
+      "bytes": 14073409,
+      "sha256": "1e004678ed0f1c3186c71d408cbc8056577bd9c9b8fb5ec2641e1b13806a038b"
+    },
+    {
+      "file": "media/firstcut04d-patch-29.mov",
+      "bytes": 7234103,
+      "sha256": "1d5c148a4e34124ee60200af7a7b9074a75ed421b65f8077fbfaecc9ecd00ab6"
+    },
+    {
+      "file": "media/firstcut04d-patch-30.mov",
+      "bytes": 8348429,
+      "sha256": "5cdedb1327f1a382048cbb5762ec14bfa024760fb4231bb841b3d1e30d7a9929"
+    },
+    {
+      "file": "media/firstcut04d-patch-31.mov",
+      "bytes": 12746878,
+      "sha256": "1a64c547a17ec00cd4dbb3873e5c4de871ca53b88bdf154f397d3d90baa2a7f5"
+    },
+    {
+      "file": "media/firstcut04d-patch-32.mov",
+      "bytes": 4188335,
+      "sha256": "e71766c67a7c7cda2d011347c5662119b3fd8cc66f3d54ac19ef2f7b77cb5e8c"
+    },
+    {
+      "file": "media/firstcut04d-patch-33.mov",
+      "bytes": 13520088,
+      "sha256": "80a01bfaf44e89bb926b17a2533e81897cb3d150d349a6ab697b6c6bbcc2bec3"
+    },
+    {
+      "file": "media/firstcut04d-patch-34.mov",
+      "bytes": 52968151,
+      "sha256": "db3c6158ac257d833922951da21b1f76a3163781160752bb97b0473f0c635c13"
+    },
+    {
+      "file": "media/firstcut04d-patch-35-fullrow.mov",
+      "bytes": 84749532,
+      "sha256": "e8f6d4c0008a587a982d6cea91413f4dd9ababdbdd3ed880d217273364b374aa"
+    },
+    {
+      "file": "media/firstcut04d-patch-36.mov",
+      "bytes": 16088067,
+      "sha256": "a9163f33b1b96443592075729cdb5b31e836a85cc1168627763ffe443c17b8a2"
+    },
+    {
+      "file": "media/firstcut04d-patch-37.mov",
+      "bytes": 100222140,
+      "sha256": "7221d4a58de982c48dd2ce92922ce67d147516cd153183bab12378dabc2ad258"
+    },
+    {
+      "file": "media/firstcut04d-patch-38.mov",
+      "bytes": 63591039,
+      "sha256": "09e1287d46b2761a9e470dcd47770b873dd255a5b322106dae8ad38058934407"
+    },
+    {
+      "file": "media/firstcut04d-patch-39.mov",
+      "bytes": 5049321,
+      "sha256": "0a9a6765514056b7230bc7f6547abf239b1e069b91380ef35d1c55c12c46d3f6"
+    },
+    {
+      "file": "media/firstcut04d-patch-40.mov",
+      "bytes": 8641111,
+      "sha256": "ed736814cbd931cb0f23aeb5e37dfba5103f3eaf656c9785e48bbbb5232af7c9"
+    },
+    {
+      "file": "media/firstcut04d-patch-41.mov",
+      "bytes": 12644385,
+      "sha256": "c9d03907107f5b00da4a0fa0d1319867bde52f045a02d6e9f8dfe88e88bdf40a"
+    },
+    {
+      "file": "media/emberwake-firstcut04-narration.wav",
+      "bytes": 178809702,
+      "sha256": "f166ac487af015757547b9a124dcaa8b10da650c9525cc96a4d194be6a6c200f"
+    },
+    {
+      "file": "media/emberwake-firstcut04-music-ducked.wav",
+      "bytes": 178569442,
+      "sha256": "4a0583a7113694ef65fa6787a6c45e957245f84d4f6ea2586281beaa98250ac8"
+    },
+    {
+      "file": "media/firstcut04-u001.wav",
+      "bytes": 1214508,
+      "sha256": "b487781f72b4d2e4d68c3b1a3d8f26fa3578a87f0c5876c8fb29605d7e78dde3"
+    },
+    {
+      "file": "media/firstcut04-u002.wav",
+      "bytes": 1493036,
+      "sha256": "bf03f825479539eae7f29a7a8983b66759f0bc8c2213f747a5ff84ae18522d0f"
+    },
+    {
+      "file": "media/firstcut04-u003.wav",
+      "bytes": 620588,
+      "sha256": "e0d9444624c2c87312b94e3742c59294ba12646538ec14335e38f60a250d9a95"
+    },
+    {
+      "file": "media/firstcut04-u004.wav",
+      "bytes": 471084,
+      "sha256": "7dddddf94929c16ea168d1e5e09a561acbbf0b083028b0a25359ff054f08ef41"
+    },
+    {
+      "file": "media/firstcut04-u005.wav",
+      "bytes": 1445932,
+      "sha256": "062e5dbf76ca16217763e7573301b2a963744519966aabbc2651254d330b4baa"
+    },
+    {
+      "file": "media/firstcut04-u006.wav",
+      "bytes": 1456172,
+      "sha256": "e98920fb1cfe28c0065f2422b4c92ab8e04cd2eddc729866c06d7b7bd7188c43"
+    },
+    {
+      "file": "media/firstcut04-u007.wav",
+      "bytes": 514092,
+      "sha256": "d2ecad0529c8eb7c6423baff34cee82877f6ad5143619e951dabaec1f64d5fd5"
+    },
+    {
+      "file": "media/firstcut04-u008.wav",
+      "bytes": 1732652,
+      "sha256": "38a6bb8bbd33263887c30180e3d805c389d13cf7d8f73d56e98798278e4fcba8"
+    },
+    {
+      "file": "media/firstcut04-u009.wav",
+      "bytes": 505900,
+      "sha256": "b0e069725f273cbeef5d9a29e4e59ddb29882900af5216081f8614ffb828bca1"
+    },
+    {
+      "file": "media/firstcut04-u010.wav",
+      "bytes": 426028,
+      "sha256": "c73965a9074fa6ff57f8b708cb0d9ecba3a1ee48808239edf44e5c1f7623ab3c"
+    },
+    {
+      "file": "media/firstcut04-u011.wav",
+      "bytes": 483372,
+      "sha256": "d02e6e75fbff2cbb6291bf26b38235da3ab8e37831a80979122420cc1eed229f"
+    },
+    {
+      "file": "media/firstcut04-u012.wav",
+      "bytes": 395308,
+      "sha256": "ee9f974f27e005889a2e0c6d575648d4b279c7814be407c48800a8ebf9cc7aea"
+    },
+    {
+      "file": "media/firstcut04-u013.wav",
+      "bytes": 1490988,
+      "sha256": "23a889aa4d0d954ef854d6c3c2a64d34aa6e0a018855bff4fc5dcb6272877f94"
+    },
+    {
+      "file": "media/firstcut04-u014.wav",
+      "bytes": 1323052,
+      "sha256": "a5fbde14ab84879e2dcb71f4341bd7f811ed1c01c0a96fa53a2ee358da9fb59e"
+    },
+    {
+      "file": "media/firstcut04-u015.wav",
+      "bytes": 1433644,
+      "sha256": "a31bb6e7f58c0859fae4a85d1ae7550a7eaf08dbc34fb9e67f56c7ab04cc35ae"
+    },
+    {
+      "file": "media/firstcut04-u017.wav",
+      "bytes": 847916,
+      "sha256": "847edb20787f700407bc2e3f292248a5ce8370f82e8668c9618968c56d144539"
+    },
+    {
+      "file": "media/firstcut04-u018.wav",
+      "bytes": 1120300,
+      "sha256": "f9e9c8a2d480c01d859b3a9765522c71307d3364e9ef2c8eff36bf6cca62eca1"
+    },
+    {
+      "file": "media/firstcut04-u019.wav",
+      "bytes": 415788,
+      "sha256": "54c5cff690b6cead6b6b6235dfa88c69d9f8402c17be1d5db4b98eb91f980be2"
+    },
+    {
+      "file": "media/firstcut04-u020.wav",
+      "bytes": 1513516,
+      "sha256": "7ed4b9515b3e512ff379e256cb723a656128a5f2b1148f4ce0f87f2e227ba87d"
+    },
+    {
+      "file": "media/firstcut04-u022.wav",
+      "bytes": 1536044,
+      "sha256": "695259134a728fdaabe8f7d78cef2ebc4f3283a391309e29cc13b634b393e2ce"
+    },
+    {
+      "file": "media/firstcut04-u023.wav",
+      "bytes": 522284,
+      "sha256": "f3b58f02f87d7f779fe7a67d1521c8f9a44046bdd4e30526593c0c0c321e5384"
+    },
+    {
+      "file": "media/firstcut04-u024.wav",
+      "bytes": 1665068,
+      "sha256": "e25c4dd1e0aa3783faf55f3ab4d4493265416ee5b414d4a1d0a436638e45831d"
+    },
+    {
+      "file": "media/firstcut04-u025.wav",
+      "bytes": 1486892,
+      "sha256": "8ce1e6ea41cd3fecee4e3e03f0367a6f9f7ddfaf2a0e2a58655974f873cea206"
+    },
+    {
+      "file": "media/firstcut04-u026.wav",
+      "bytes": 759852,
+      "sha256": "e156ca9c138efa9ac9320a7fe9ec5b53e6a49b7ba303be9664570501bdd686f7"
+    },
+    {
+      "file": "media/firstcut04-u027.wav",
+      "bytes": 952364,
+      "sha256": "98df4a5128477c553e6725433475acb1f62144c3997083ce385360b38710e1bc"
+    },
+    {
+      "file": "media/firstcut04-u028.wav",
+      "bytes": 1531948,
+      "sha256": "c1599f69c580e0a71e3278d963cd0bdb3b4cb8ea1fc26862130b39c34ee6855e"
+    },
+    {
+      "file": "media/firstcut04-u029.wav",
+      "bytes": 579628,
+      "sha256": "341ed83f94cefc168e79ee115557a79225c11200cb378bc7c0d440bcee1aed4a"
+    },
+    {
+      "file": "media/firstcut04-u030.wav",
+      "bytes": 403500,
+      "sha256": "0b197fdcdcfde654afa3325f79360891807c7a96a1941db80a5e40e2bfb41a1c"
+    },
+    {
+      "file": "media/firstcut04-u031.wav",
+      "bytes": 512044,
+      "sha256": "4cc6e7620f785fe05d7802e507c0a46e6dd06112e31feaef92a217e9ac9fa504"
+    },
+    {
+      "file": "media/firstcut04-u032.wav",
+      "bytes": 1169452,
+      "sha256": "6f3fc6975834ec52b584501a5700a68d0e027ff0492851147afe6579ccdc3788"
+    },
+    {
+      "file": "media/firstcut04-u034.wav",
+      "bytes": 1697836,
+      "sha256": "75ebbd162df9b1230fba058885187f5cbb9c651a23f8a0ddad3715d09a4003d6"
+    },
+    {
+      "file": "media/firstcut04-u035.wav",
+      "bytes": 1710124,
+      "sha256": "4ec214b7226e969c413b8e2106b083ead1f8d7a2cefd7831a9aef2a22a248d29"
+    },
+    {
+      "file": "media/firstcut04-u036.wav",
+      "bytes": 587820,
+      "sha256": "5ff0ca44664a25e33383fe573d18eb5dcef1719fd6f098b3b8e6d00bcaf60607"
+    },
+    {
+      "file": "media/firstcut04-u037.wav",
+      "bytes": 606252,
+      "sha256": "e4857a3387bd3257e2ea2c6d818c8ddf941af902b850ae3073b5b80f6311fefd"
+    },
+    {
+      "file": "media/firstcut04-u038.wav",
+      "bytes": 518188,
+      "sha256": "572d2f0caeb17979e429ba04c72fa8aa95c01f64a254f45a51f05b0f5d24615b"
+    },
+    {
+      "file": "media/firstcut04-u039.wav",
+      "bytes": 491564,
+      "sha256": "2e24ea6dd0aa5c841a0a52f98263b18cc99ddaafb69551f9fa8c34cb36f1e66e"
+    },
+    {
+      "file": "media/firstcut04-u040.wav",
+      "bytes": 485420,
+      "sha256": "faa1b7536d70604d34bdd776827744e74658ac304bec9e36bad9157873b45c41"
+    },
+    {
+      "file": "media/firstcut04-u041.wav",
+      "bytes": 1325100,
+      "sha256": "8daf41b404c0ba2e8f99d1342e723be3c2e02dc3ab83700124bc1795da4cff08"
+    },
+    {
+      "file": "media/firstcut04-u042.wav",
+      "bytes": 1386540,
+      "sha256": "ecb4977e147a534ee91713d40a33859cc7dd117560070d4227f2daccc96e0584"
+    },
+    {
+      "file": "media/firstcut04-u044.wav",
+      "bytes": 1359916,
+      "sha256": "20ccc85f8047811b28fe5e81f2944cbbc6b70dabe9011bc03df212c74e5594aa"
+    },
+    {
+      "file": "media/firstcut04-u045.wav",
+      "bytes": 1746988,
+      "sha256": "df1332daefbaeb53f13628b0871a47cd089ff552db15c92ae0d3be1a8491a95d"
+    },
+    {
+      "file": "media/firstcut04-u046.wav",
+      "bytes": 542764,
+      "sha256": "47960b57f45f95aa6350809fd8510d474e73bda821425c9de0ede56fd0dc3f75"
+    },
+    {
+      "file": "media/firstcut04-u047.wav",
+      "bytes": 436268,
+      "sha256": "ac88031d5fb3e0ff347356c5adbb7b771ac41cd3611af29e345b12e80f0aa973"
+    },
+    {
+      "file": "media/firstcut04-u048.wav",
+      "bytes": 385068,
+      "sha256": "66ad5d6f98f20cc10485f1de64f3aa5fb1b12bac8b4b1e989b5f91826f01090a"
+    },
+    {
+      "file": "media/firstcut04-u049.wav",
+      "bytes": 1476652,
+      "sha256": "807efd843782e15e094c9c5f77c5d669a14ac323e3065cb0d301ed3f4b7ee7ab"
+    },
+    {
+      "file": "media/firstcut04-u050.wav",
+      "bytes": 415788,
+      "sha256": "32f46100df0b9e36d13b8a32847bb5eab0516317f6a3f36e9a9e24e9e90d1f3d"
+    },
+    {
+      "file": "media/firstcut04-u051.wav",
+      "bytes": 548908,
+      "sha256": "a0e2d0f5ca170ba2e650ff7fe251b2785ffa1f17ca2f17ae173e151c560bdaad"
+    },
+    {
+      "file": "media/firstcut04-u052.wav",
+      "bytes": 706604,
+      "sha256": "d24cdc44bdde5dc0b864dc6d8e27b7eb5db0258f157e824d3c779441d4ba3663"
+    },
+    {
+      "file": "media/firstcut04-u054.wav",
+      "bytes": 1517612,
+      "sha256": "ab0952d4540fdbc9dc95e8f6949a40fb6421a28051deb789558bfaa626b6f98a"
+    },
+    {
+      "file": "media/firstcut04-u055.wav",
+      "bytes": 555052,
+      "sha256": "5e67c9058600a213d2d5f1de6ced96899e46832ffe910f1e35e45f4c1dc2936a"
+    },
+    {
+      "file": "media/firstcut04-u056.wav",
+      "bytes": 335916,
+      "sha256": "3f509c67c1f00c434ae0694ace1fb9148efd8b98f8df9e0520b9cdd1438d5d90"
+    },
+    {
+      "file": "media/firstcut04-u057.wav",
+      "bytes": 643116,
+      "sha256": "60fb34dcde745781d54385ed0cf175b8075b920363ad7e73df6b29ec60eaef16"
+    },
+    {
+      "file": "media/firstcut04-u058.wav",
+      "bytes": 512044,
+      "sha256": "5abfad1f0fe8d86de2660e1663f2d3a8d6a83dcc0ed0e280cfea924e2acb81cf"
+    },
+    {
+      "file": "media/firstcut04-u059.wav",
+      "bytes": 487468,
+      "sha256": "25cb655d77cd00b9b2bb5889bbd358673af8de606663a43307db6d42031d8dc2"
+    },
+    {
+      "file": "media/firstcut04-u062.wav",
+      "bytes": 1458220,
+      "sha256": "b532d1107bb1217355227984dbfc523d696205e57c4ef3c0687397901eb2aedc"
+    },
+    {
+      "file": "media/firstcut04-u063.wav",
+      "bytes": 444460,
+      "sha256": "211a13cc55fbb232460d4c8873f2ad6025e9c7c4bb00390283961954d8081105"
+    },
+    {
+      "file": "media/firstcut04-u064.wav",
+      "bytes": 651308,
+      "sha256": "10d15a9f8db24836c43f71de08fdca2d025c13f0ebda35944dc24f3a18dbe741"
+    },
+    {
+      "file": "media/firstcut04-u065.wav",
+      "bytes": 536620,
+      "sha256": "a06b203766857012319cac46308e0baa2b8fdfef0861569f6e24bb77ca92bee1"
+    },
+    {
+      "file": "media/firstcut04-u066.wav",
+      "bytes": 579628,
+      "sha256": "5a642fe1d93ec2344a1c65e2861bc78c83d0e4c841fe04b4211696ee4d6e752d"
+    },
+    {
+      "file": "media/firstcut04-u067.wav",
+      "bytes": 727084,
+      "sha256": "649a595e94733d3557657b43cf3c356d396bb75c57ef6cd86a4b653fa32e09de"
+    },
+    {
+      "file": "media/firstcut04-u068.wav",
+      "bytes": 841772,
+      "sha256": "5a7fbfeb2b371d65643524e705b6940690fbb18ab1c357a81f579c1372ac3ceb"
+    },
+    {
+      "file": "media/firstcut04-u069.wav",
+      "bytes": 1486892,
+      "sha256": "5ea4d83e2a254cd7c27609d14f047e23186490b25dfb9ebaf0175fce1907b823"
+    },
+    {
+      "file": "media/firstcut04-u070.wav",
+      "bytes": 1507372,
+      "sha256": "0d4d08f2a3103591710941b59ebc343ec4cd5c945242869500238a8008b75c96"
+    },
+    {
+      "file": "media/firstcut04-u071.wav",
+      "bytes": 411692,
+      "sha256": "961280e07b2bf5eac1ec9ff996909a9aff8dabc976261f8d6dea551993155869"
+    },
+    {
+      "file": "media/firstcut04-u072.wav",
+      "bytes": 432172,
+      "sha256": "8d8ec9e9ec2a9bf067d25f4edd4d463d2d585813919e49af3c72731b796752f4"
+    },
+    {
+      "file": "media/firstcut04-u073.wav",
+      "bytes": 575532,
+      "sha256": "6516255d0562854fb5c68872ba2ca6c43fcf5e1af0eaa0d027d530071fb92bb0"
+    },
+    {
+      "file": "media/firstcut04-u074.wav",
+      "bytes": 495660,
+      "sha256": "5c8e45fc9d7970c7f53a18cc68757bd745c57c51172a0b4bccb13b000e00c7f7"
+    },
+    {
+      "file": "media/firstcut04-u075.wav",
+      "bytes": 507948,
+      "sha256": "5b9001c56d993104b8b9ae265363217a1ffc98ac0682bb208ef5351ae63b0fc7"
+    },
+    {
+      "file": "media/firstcut04-u076.wav",
+      "bytes": 645164,
+      "sha256": "e1e6c1e9f507278e29985306796ee645e6fc6f9143b8fcbf70eb2855486a53df"
+    },
+    {
+      "file": "media/firstcut04-u077.wav",
+      "bytes": 884780,
+      "sha256": "c248b124f449729c3d6db4d7fa64fd18add059003bf91c66a12a2557db836223"
+    },
+    {
+      "file": "media/firstcut04-u078.wav",
+      "bytes": 1550380,
+      "sha256": "f095198603e9b16fab6cd9b72ec8f93c5f4ac1c7a610d8da3d35bdeb40772667"
+    },
+    {
+      "file": "media/firstcut04-u079.wav",
+      "bytes": 1474604,
+      "sha256": "36e7fc51de2ecef8bdd1ede595fa21c40574749c343ab6aef3eb0a1b67cebf1c"
+    },
+    {
+      "file": "media/firstcut04-u080.wav",
+      "bytes": 1620012,
+      "sha256": "ab9a19894870959a145a8b1ccf4b02263a744e8a0998ee2457ebe8ddc4d0a1ac"
+    },
+    {
+      "file": "media/firstcut04-u081.wav",
+      "bytes": 645164,
+      "sha256": "875db0c37c25d78ffa09aefb49b2e2295f96293b590c4494fbbf99e035ee7d47"
+    },
+    {
+      "file": "media/firstcut04-u082.wav",
+      "bytes": 356396,
+      "sha256": "30f196d7505f3d98511905852b19a5b59ed006273f66ebdd0edda61da796a441"
+    },
+    {
+      "file": "media/firstcut04-u083.wav",
+      "bytes": 460844,
+      "sha256": "00b7c483b2b4f4ba256fdb417dd68fcdd4b088368f0d10d179b23869d4c55963"
+    },
+    {
+      "file": "media/firstcut04-u084.wav",
+      "bytes": 356396,
+      "sha256": "1b6a06ccd26e1c23cfb36a7dcba04074e37c780a0c14f2aef2c6bafc9399f654"
+    },
+    {
+      "file": "media/firstcut04-u085.wav",
+      "bytes": 675884,
+      "sha256": "c99e139df0c4c16832e33a7eba275a88e4a63ba4e3803b75e4121830817aa02d"
+    },
+    {
+      "file": "media/firstcut04-u086.wav",
+      "bytes": 407596,
+      "sha256": "11815410d2d8b642c03878eebf964e411bc120a1b6a7179d27a9dbcd1f79ac84"
+    },
+    {
+      "file": "media/firstcut04-u087.wav",
+      "bytes": 636972,
+      "sha256": "14298423e9f80bfc42a4e0dd74eaa1bb22d12668f4ab4cc34dc972b2f077b497"
+    },
+    {
+      "file": "media/firstcut04-u088.wav",
+      "bytes": 1187884,
+      "sha256": "931bfb07485bd24502ee5733582c3e7ad191a3555ca757e5f1c205d79c39cd20"
+    },
+    {
+      "file": "media/firstcut04-u089.wav",
+      "bytes": 1290284,
+      "sha256": "1ee5bc06a83efa7358886a23130ca09ca79cb5f2ab191d3f640d0cdbd79ac6f9"
+    },
+    {
+      "file": "media/firstcut04-u091.wav",
+      "bytes": 393260,
+      "sha256": "4528c487e0a9947569547736e479ba7a6af9972393ccb1a6d3af56244026857d"
+    },
+    {
+      "file": "media/firstcut04-u092.wav",
+      "bytes": 581676,
+      "sha256": "912c8dbaf3f75b91117033e32d7ef299fb0c39777094d17d4c20a0950e24d313"
+    },
+    {
+      "file": "media/firstcut04-u093.wav",
+      "bytes": 694316,
+      "sha256": "ae744f146fface565cc0f225e4e331e2be61f6db73f42fa8066a2dc173b8ca76"
+    },
+    {
+      "file": "media/firstcut04-u094.wav",
+      "bytes": 671788,
+      "sha256": "5b9cefc28ea2fbccd576a968e640c66d445ce0275f4c9832004b64c874baf705"
+    },
+    {
+      "file": "media/firstcut04-u095.wav",
+      "bytes": 1458220,
+      "sha256": "6c6422d23a0e47a805c9631a64534d42e2f7341cb7a8e6c7a74d9e7ef94a0d5b"
+    },
+    {
+      "file": "media/firstcut04-u096.wav",
+      "bytes": 1665068,
+      "sha256": "7477132af8f10df44226597f985bc4cbbc1522ad3569373a779c7c32d1a1f615"
+    },
+    {
+      "file": "media/firstcut04-u097.wav",
+      "bytes": 1611820,
+      "sha256": "1484a9f5b7d9522f5b93a7b54d664dfab6bf6f65543f82043c9b06940d1e91d8"
+    },
+    {
+      "file": "media/firstcut04-u098.wav",
+      "bytes": 1513516,
+      "sha256": "52d790d4851b28491235fe68e2acfa0c4295e4895bad5c6444e819926362741a"
+    },
+    {
+      "file": "media/firstcut04-u099.wav",
+      "bytes": 1599532,
+      "sha256": "50380fe88b4c55659037ae5565b1155842a60edd17e98a3c7f7dba2d4d9c0d70"
+    },
+    {
+      "file": "media/firstcut04-u100.wav",
+      "bytes": 1646636,
+      "sha256": "3e18b58e7d058c5a17c2ba84d69baa450732d0f5a7820e7f94c6144d00eda27f"
+    },
+    {
+      "file": "media/firstcut04-u101.wav",
+      "bytes": 1880108,
+      "sha256": "cd73a07b63d99c41d244460871977ceda4bce5734900f939dc9de3a1a1518aef"
+    },
+    {
+      "file": "media/firstcut04-u103.wav",
+      "bytes": 1822764,
+      "sha256": "a53a3f0faa2bfc6b3661033022dac8f27641f0d28aa8b2b5a92aef82c1949b93"
+    },
+    {
+      "file": "media/firstcut04-u104.wav",
+      "bytes": 1777708,
+      "sha256": "5f594e37da3139fa216d580efd1398370b573a3b8e52a9e6c32e9de8767b432f"
+    },
+    {
+      "file": "media/firstcut04-u105.wav",
+      "bytes": 1761324,
+      "sha256": "59735b20b275625dd57c115b0caa2a7b3291615e71330fce69f85cc8ee3cff31"
+    },
+    {
+      "file": "media/firstcut04-u108.wav",
+      "bytes": 1544236,
+      "sha256": "3aa5ffb59637092ebdbc0d182128cdf487031e3fbae18393a617502973791252"
+    },
+    {
+      "file": "media/firstcut04-u109.wav",
+      "bytes": 1234988,
+      "sha256": "7af10755e86b954fbdafb94db5fb4d321d55530b3e9477efedc246080acd9fa2"
+    },
+    {
+      "file": "media/firstcut04-u110.wav",
+      "bytes": 1634348,
+      "sha256": "62168ff231a6762d3e0037b965c064687e5ebe7ec91783cf390aa7656023d72f"
+    },
+    {
+      "file": "media/firstcut04-u111.wav",
+      "bytes": 1755180,
+      "sha256": "55e22d831b3efb01b95cd1f6adb3f807144b262a10a00f24c7a5def40ab7155a"
+    },
+    {
+      "file": "media/firstcut04-u112.wav",
+      "bytes": 1804332,
+      "sha256": "7dfd4eaf9f5bb5171bab6197acdc1ae5fe652948b71f8b0043b0373a6a478e62"
+    },
+    {
+      "file": "media/firstcut04-u113.wav",
+      "bytes": 1480748,
+      "sha256": "5381337c66828f2d042221fd40591233c5ca94f6542926091861f5a68aee888b"
+    },
+    {
+      "file": "media/firstcut04-u115.wav",
+      "bytes": 540716,
+      "sha256": "8166171088b9c1352b1b595d7cb8137e240f718cd1ac66acbc401037f9780f8f"
+    },
+    {
+      "file": "media/firstcut04-u116.wav",
+      "bytes": 471084,
+      "sha256": "c796cc15b0db35dba7073265d69a3cdf2a023e8f13cfb5dd4db0990011c62e84"
+    },
+    {
+      "file": "media/firstcut04-u117.wav",
+      "bytes": 1777708,
+      "sha256": "4ec774eccaefe0870707a38061f7afa9effdaa2620cd66ec13466cdd752bdf35"
+    },
+    {
+      "file": "media/firstcut04-u118.wav",
+      "bytes": 503852,
+      "sha256": "067a6c2f7855a4c07b2b9114682e0bfb309bd3647a3d88b0610362a31ca3fad6"
+    },
+    {
+      "file": "media/firstcut04-u119.wav",
+      "bytes": 1771564,
+      "sha256": "6409b0bfe4fd13e3eecf8ca639fd93606f7925eb894a44d8484ac0fb4e505c9c"
+    },
+    {
+      "file": "media/firstcut04-u120.wav",
+      "bytes": 706604,
+      "sha256": "ddf5c6799868e10c71929e8abf4c1735e6b2599c44f48fad64b815ccddad4e6e"
+    },
+    {
+      "file": "media/firstcut04-u121.wav",
+      "bytes": 561196,
+      "sha256": "2ca70966386ca69c21f3bdb388eb129425874cc50778b8217fbf600d8019312b"
+    },
+    {
+      "file": "media/firstcut04-u122.wav",
+      "bytes": 1591340,
+      "sha256": "0577a133c47f07637d321ad7470ecfe2a155b1a1669ffa2e9724d9f5e1ebd315"
+    },
+    {
+      "file": "media/firstcut04-u123.wav",
+      "bytes": 133164,
+      "sha256": "2214cbe98e95ceef443d6eaabe1c5b1d76004954a28a823e296213d4ce5a9ee0"
+    },
+    {
+      "file": "media/firstcut04-u124.wav",
+      "bytes": 1415212,
+      "sha256": "4d6214f51dd1d0ce901a4e901b7894e31a5588cf65fb8ae3224a0054c19053ec"
+    },
+    {
+      "file": "media/firstcut04-u125.wav",
+      "bytes": 1558572,
+      "sha256": "0acb86c18297183f3d72fc914c7f7273631a32f8eaf4432ee6ac2b059ecfa2d6"
+    },
+    {
+      "file": "projects/emberwake-firstcut04d.ecproj",
+      "bytes": 11411662,
+      "sha256": "b283d317a1448a6aaefafa9731a1f453ed2b9dfdf8d28738f654d3c2a5ff2fd3"
+    },
+    {
+      "file": "projects/emberwake-firstcut04d.fcproj",
+      "bytes": 116614,
+      "sha256": "2d97148eba37e973448951a31de0dcedfd861265235c6a137a1df50a20fb1a46"
+    },
+    {
+      "file": "covers/emberwake-firstcut04.pcraft",
+      "bytes": 701511,
+      "sha256": "c361ee83204eff06e081c38631cd140bd9fd9acf5c46cec1347dcac22a48ebfa"
+    },
+    {
+      "file": "covers/emberwake-firstcut04.png",
+      "bytes": 177781,
+      "sha256": "a363bf24e0a66504f439cc6a40dca3795320a1d1f42dd8a9cae78697f076e604"
+    },
+    {
+      "file": "covers/firstcut04-game-crop-F.png",
+      "bytes": 12220,
+      "sha256": "cb5aef0b1bab46eec887d80cae605505d346f9f91780a60eca3c0ec66e7e741d"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-0.500.png",
+      "bytes": 226791,
+      "sha256": "46f4f4e4708eeeec02cfe3018f6ea65fec95b99e8bd375c85c65c4f14bb106e4"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-101.000.png",
+      "bytes": 253099,
+      "sha256": "80e19b27dcdd2f1e2132768832e794f66eccc634640d826852da387725903698"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-120.000.png",
+      "bytes": 246554,
+      "sha256": "50c19a7793196e0ae40ee7ecf8287ebafd389008c5896e4a7d4eb0310d7b948b"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-137.000.png",
+      "bytes": 240112,
+      "sha256": "dffe570f0013aab1565dd868b9853dd77dd04f101a41428e62b4b850a2cde715"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-144.000.png",
+      "bytes": 264483,
+      "sha256": "4676b3eb18a50d6722fad39bd0a3d835eda5de89c9ff447d768bb22c57763fd1"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-164.000.png",
+      "bytes": 307742,
+      "sha256": "74eb4567de1dc2a3320f60695cace66bdb6adf6136e75a632d41f3a29a336048"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-190.000.png",
+      "bytes": 238327,
+      "sha256": "f099078d3d0751e4fae564e21b027675ba30f2adfc6c26e962f70c97c2c2a9f5"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-2.500.png",
+      "bytes": 226847,
+      "sha256": "0164a4a69b6b3b0cd211cea4ab8df1421fdacb42d220f661636279e62262b1a6"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-240.000.png",
+      "bytes": 187030,
+      "sha256": "b5d339b86f3a2c4f28f99578624f0902e4e9cb227c336393e93adbc99708832d"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-29.000.png",
+      "bytes": 200691,
+      "sha256": "1212d95e590022dc2525aaca1dea3f081f68cbaae733f22c88585f405e0bcc0c"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-290.000.png",
+      "bytes": 225947,
+      "sha256": "7682661d56ab853ecc69950e8cf813313ff082701399c4da240a81c48753d128"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-340.000.png",
+      "bytes": 268415,
+      "sha256": "2eeb38efe3134c99b27b6ae2543940de4d4ce282857d22d288207dc75300e733"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-38.000.png",
+      "bytes": 236542,
+      "sha256": "b05609d8d74660d7edf6489dd935604e051a1130f7fdbbd0ea701dcc2173aefe"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-390.000.png",
+      "bytes": 266604,
+      "sha256": "e86cc7a3c3ca5e395b0b69cc9720c1d64bc8573e7f04c9f197fa658baf21c458"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-4.100.png",
+      "bytes": 166475,
+      "sha256": "c98ea713c92a4b7e6a29225ddfd24562fabe86b823aee7441e87db2c439dd8b3"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-450.000.png",
+      "bytes": 260727,
+      "sha256": "bb3392cfe19342e12b889e35776ed06ecf09e4b6bf1bbbe30fbc189550b1de79"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-458.000.png",
+      "bytes": 70369,
+      "sha256": "15987e0efca9bb0eff122b1e0b3d0c94e953551bfd714d6c96222c261a32143d"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-466.000.png",
+      "bytes": 63369,
+      "sha256": "45990b91c35a5f07942f5784dfbb1f4528406212971b6467a39e56a865890dab"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-485.000.png",
+      "bytes": 97848,
+      "sha256": "11fc669ba7cd81fa3581a121b61e6c3a7407cc15a7ada81b645d3d8bdf74a305"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-495.000.png",
+      "bytes": 119004,
+      "sha256": "5b651beb1f6515d0c0e8346dd171c11596df488da7be89e9c8293e6b7ea64152"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-505.000.png",
+      "bytes": 112369,
+      "sha256": "96cd589d3d3f8f81f35c87e45619039f81da6f4407d6121740eac5ad317adec8"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-525.000.png",
+      "bytes": 232068,
+      "sha256": "220351f7c73e82c37e43698ff6fb1e3e1d8ed959407fad3b737decdc973e4622"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-550.000.png",
+      "bytes": 261533,
+      "sha256": "a5aac557c568feb33afafe421f9a156349e51309277d8c0481f1dbe9d3314df4"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-570.000.png",
+      "bytes": 156185,
+      "sha256": "24679d7a2bd6ed5f43f945032895f86f80ce2e82ab924b9d1242af15239f3204"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-600.000.png",
+      "bytes": 276399,
+      "sha256": "bd1599314701a81ba7a2c90342bcd07763d1a9afda81b9b4450a11c14f77fb70"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-618.000.png",
+      "bytes": 242019,
+      "sha256": "20f735e86fc5320173eb3ec1eb759e3840558ef90bf1d4ff6a74b1b193913f6b"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-72.000.png",
+      "bytes": 220954,
+      "sha256": "3dcce7a5a55f46499ac4577cf41adfae3d4cede3a3ad28bb4a9db43d5fca260a"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-87.000.png",
+      "bytes": 174835,
+      "sha256": "f996ea46b0429bfefbab79c67c7374bca232b3323c1ffc1e610045dab47cd796"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-9.000.png",
+      "bytes": 241272,
+      "sha256": "457f776da34317b5b95ffb895bb4808b3ec49fea39e26c38ce8ab07647b7c359"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-96.000.png",
+      "bytes": 211361,
+      "sha256": "78875e2100974fefd02c81afd40b9f5025eae0ffa3145eb6d36586d40f60b565"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-ec-build.json",
+      "bytes": 19300,
+      "sha256": "c1a6d916fcadced2dd27d18daf4fc378aa004e34dc86760f021c3408e6eb62e7"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-ec-render.json",
+      "bytes": 40323,
+      "sha256": "ed925c9d6516c380ec5423cd0063ad022bb1769b0a74ea3e996fe4ec7563c1fc"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-fc-build.json",
+      "bytes": 579,
+      "sha256": "60232ae6d60d76d120c07525721901bc9a7241e90cbf12190f42ec38777dcbee"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-fc-place.json",
+      "bytes": 586,
+      "sha256": "42464797606c6c68425785592b4c7c20010a55eedf11d18d001aab0c0344defd"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalization.json",
+      "bytes": 1819,
+      "sha256": "8e6a8cb8000847902014ad0f2e413aebc3824ea0f0ae0cface8ed59fd9133704"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-0.5.png",
+      "bytes": 257774,
+      "sha256": "45fa21e0ecbba4a971ea698ffc21221b82aac4230b77382c91f28a238b212a68"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-2.5.png",
+      "bytes": 257864,
+      "sha256": "df12d9ca69cef5b23847d1f3f03ba689ba421c34dbb18dde3b6fe6330e872587"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-440.png",
+      "bytes": 230523,
+      "sha256": "8d2a69f6ed5e09a1f5d257fd106732f469ecc47638624bd84078d0531c63fccf"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-610.png",
+      "bytes": 222949,
+      "sha256": "5c61f0bff54a369d1078df603674ea38b9b350286d567ee95e78c01a82d51c99"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-618.png",
+      "bytes": 273853,
+      "sha256": "237a18d6a9a1456d98f43453d244cfc8ea69ab57d9eb0f3a4c2c57807604f688"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-98.png",
+      "bytes": 363862,
+      "sha256": "8e67ad321b2887818171eda2907bee6ef5b810537ac0709ee2bf8767f5cbb3bc"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-preview-0.5.json",
+      "bytes": 895,
+      "sha256": "72ed80018090ba9f332eb1b29766fd8d3191896ed8d2407e2b866e255371f030"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-preview-2.5.json",
+      "bytes": 895,
+      "sha256": "02bcc7344c52fc3a8b369d56425a5a3bd3ce7e6131bad772cb7de3773ccb5e4d"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-preview-440.json",
+      "bytes": 897,
+      "sha256": "11c4db24114f7a145c905dbdc01ad56727e1fb1c749a61a8a2b610306fe009ac"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-preview-610.json",
+      "bytes": 897,
+      "sha256": "b102f0c4181ddce7516df4804db9b322a52eede5ba8f22edd0ebb2e04795dd93"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-preview-618.json",
+      "bytes": 897,
+      "sha256": "96338fc3a0e4f13a0eef4201534ad2b6a95a3b55bd8deef4d541331261cd00d8"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-finalized-preview-98.json",
+      "bytes": 893,
+      "sha256": "bb9ebacae9cc04117efeee22543186d5f2efe552ff562ef942f775b935ce689c"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-layout.json",
+      "bytes": 19686,
+      "sha256": "ba196d5f84fb6421e01ad17e7be3622c70efaf3076cda2b669f8c069abdb03ef"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-mix-reference.json",
+      "bytes": 954,
+      "sha256": "6b262fad0176e2e3c0656381109661ad01f2ee6350c684b8820155c81564b6ea"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-music-arrangement.json",
+      "bytes": 1766,
+      "sha256": "d050c7cf441dc994d7bef1aae6248b09d68e31332c9abd4da1dd5d6595a8a4c4"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-music-duck.json",
+      "bytes": 966,
+      "sha256": "7eaf266ad7a508fb4d00968f246782945d9752a7e5fb0eb3126ef5e68b17db9d"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-music.json",
+      "bytes": 1285,
+      "sha256": "7be785b2a24af08a2bd31a278fb0796c808e134504b7f805b655027b6e74a663"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-native-finalize.json",
+      "bytes": 1026,
+      "sha256": "2b5c17494edbbb74fa419bdfcd9fbd7f5d9658036bfe69b4b9a7e66176b64228"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-0.500.json",
+      "bytes": 879,
+      "sha256": "3a845b0055c230bf78bdd1a0cefdd43547d9b4d8ce3ff2c4da9b7882fe7690c6"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-101.000.json",
+      "bytes": 885,
+      "sha256": "f25c2998ca31c3fea7eb1dd449c975e8886550de19082fbf7e546462cbbd260f"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-120.000.json",
+      "bytes": 885,
+      "sha256": "a63e1d798007d2ad0451d77f7c60e7d96571d224d3f03d3278b0b303d6a3100f"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-137.000.json",
+      "bytes": 885,
+      "sha256": "fe62d949bb4b33e3e91f124cf62cf5865087acc31899a54e7f903cb357580ac0"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-144.000.json",
+      "bytes": 885,
+      "sha256": "c8426143e646c71f391fdacf58a72fe99e9847b8ddd964455e1713b401015735"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-164.000.json",
+      "bytes": 885,
+      "sha256": "18ca17eb7daee6e210a7b8253a9fd32c76724a51270343d44d528c2875634722"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-190.000.json",
+      "bytes": 885,
+      "sha256": "c48d25bb56455b4517c79d2a37f66ff52fc36ff48fb23c5adb5816bac7194013"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-2.500.json",
+      "bytes": 879,
+      "sha256": "2b707b9624a4a006d79d41ca53209873999ae89a2108437092cf6eaf1e04a4a6"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-240.000.json",
+      "bytes": 884,
+      "sha256": "333c224bf4505e4c1084fad7f8e95778e70451dba0f23566b373b39ab880cd45"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-29.000.json",
+      "bytes": 881,
+      "sha256": "b101c654c481b99d5254ffb5ce40b2270e936b693a67d578a8554746f7b1a550"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-290.000.json",
+      "bytes": 884,
+      "sha256": "1a9b723adfb581c3eb6602d3c48bbb26efa277e5847df746cf5c301264c0c5d2"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-340.000.json",
+      "bytes": 885,
+      "sha256": "89a7ad6c6b3b14ca5e9735f5f16af79d1044b26356b0d941a9dcb98778ea7bfc"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-38.000.json",
+      "bytes": 881,
+      "sha256": "c0a11462762eb195f05c55c9b7dc0036f183ba7ecff738ed4e5736702f6dd79f"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-390.000.json",
+      "bytes": 885,
+      "sha256": "38432409d8a32b5175fe1ca891f07a61ed2d982727291207f7c9ba1015a50d72"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-4.100.json",
+      "bytes": 878,
+      "sha256": "3041a8c982fef56fcd27dbd47c1c85591b2299eff20b23a50efa968ac101c578"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-450.000.json",
+      "bytes": 884,
+      "sha256": "aa1092b2865f4cc094b388d374ba54ebad07771e4e59f7135d509ee054a6859e"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-458.000.json",
+      "bytes": 884,
+      "sha256": "cd47f8164ebf2b580f08c0aa5f910fbc5e46d29c99189a7bb410c345785b84f1"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-466.000.json",
+      "bytes": 884,
+      "sha256": "748a62c523274b54e842a015a07e3dee3076a6e723f1f68015e83dace24acf12"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-485.000.json",
+      "bytes": 884,
+      "sha256": "9005d479e25803a0309049f9cec996c9bee47beb7050b63e78dd6f1ba972d324"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-495.000.json",
+      "bytes": 884,
+      "sha256": "9e258b7376cfbd172bab2a5eeecc8cf5a1699a2c3174736a91fbb14bc9bcb148"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-505.000.json",
+      "bytes": 884,
+      "sha256": "5c6961599bbf1c6c9d20aa954124fb33cddd17ae3a36c86f28d59beb44f99581"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-525.000.json",
+      "bytes": 885,
+      "sha256": "96341368d9e519f9105e7a5c90efc1282416bbaba4371286e71fd8ef9f76f50a"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-550.000.json",
+      "bytes": 885,
+      "sha256": "9500294e0463106aa693ba9839c22efc0230ddb16dcde6fb6c9d9b310797861a"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-570.000.json",
+      "bytes": 885,
+      "sha256": "443edcda1e7d5da9dd102a4f0c611791f458f8eecb3aa82821af56633bffb1cc"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-600.000.json",
+      "bytes": 885,
+      "sha256": "506748c5064462ca2fa3a8505a89d49ffc0d2a05d95ae023b32c3a59648a3610"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-618.000.json",
+      "bytes": 885,
+      "sha256": "2bdca00ad521130755089647ec7dbadf1e3ac0f7abbc6df3e81ec4590f9a51b3"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-72.000.json",
+      "bytes": 881,
+      "sha256": "e6bb7ebf9d0af66810e69e19c574e6ddc9d39083a53f68e8150077d4c0906d12"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-87.000.json",
+      "bytes": 881,
+      "sha256": "b33c47cc73e6e5747336f04832281986f364ef01cc86e03d219e49bb16595c99"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-9.000.json",
+      "bytes": 877,
+      "sha256": "6632252a13b22f76de5e7cd7a784377e1170dddb2fab98e26d64ad6affbb1561"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-preview-96.000.json",
+      "bytes": 881,
+      "sha256": "3c71491d847f890f045e2a44b4f4a2ac4d8ec2a28ddd7186b8a09e16b5165881"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-reference-loudness.json",
+      "bytes": 1100861,
+      "sha256": "1c1352de1c0ce8fba061307e0a2979e8ef51e3d8d5616ffd5792fcedfb8497b6"
+    },
+    {
+      "file": "qa/emberwake-firstcut04-voice-assembly.json",
+      "bytes": 24706,
+      "sha256": "5bb8f04cb5f3050b340d39f9fa9d56784ef3712dd72c2ebf4d4b767ba292136e"
+    },
+    {
+      "file": "qa/emberwake-firstcut04b-fc-build.json",
+      "bytes": 593,
+      "sha256": "0ea2c9c3d1514fee7c4a769388c292a60c584c9a3e7e1c9468fe99d7af7b2c06"
+    },
+    {
+      "file": "qa/emberwake-firstcut04b-fc-place.json",
+      "bytes": 1393,
+      "sha256": "240ac31f66188514d04708a6ab28964f4e0809a22978d77824c549d181dae034"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-allframe-scan.json",
+      "bytes": 423,
+      "sha256": "bb25233306c0fd4b1884712bba29cc6b642845f402299c265790152c957fa142"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-contactsheet-render.json",
+      "bytes": 845,
+      "sha256": "3e8e2f0adc5b66a2c393aec60d013cc2c5f6979e27d53c34c3c36e10d4b9759c"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-fc-export.json",
+      "bytes": 1310,
+      "sha256": "6560235c494bb4129c2e1432ba42b15bd5910b15552e8246cb10cd490ae815fd"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-000.png",
+      "bytes": 249616,
+      "sha256": "a33c850cccbb994cf33b7f657e89f33796684cce17010c8c866a182a5ac2468f"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-001.png",
+      "bytes": 249584,
+      "sha256": "331e9363e6be6a073411c908d7d5aacbef4ed7279595b3515c0e19c11d1f5593"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-002.png",
+      "bytes": 178832,
+      "sha256": "1acac0354a0aeee8fc6bff8c8d63eaac9825a8f307496300aef0e935950ed929"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-003.png",
+      "bytes": 312381,
+      "sha256": "3de8b2ea8b82ed22f2d5c5f7734750fc0154bdb90b5fc6ee595b89411713ed4b"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-004.png",
+      "bytes": 482759,
+      "sha256": "dfeb5dd50ef93e69212941e5590693d8c09ae57631d5140cc494ae9d65ed6c4e"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-005.png",
+      "bytes": 549513,
+      "sha256": "dcb85c0d8f37d28ff7a7a59e9b28f27b22dfe0b34f6325324498ab801ffe2ba7"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-006.png",
+      "bytes": 453710,
+      "sha256": "939f3451203facc06e4abb2e4466ce768ee36b06073c481207fc2825ea2b8367"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-007.png",
+      "bytes": 227317,
+      "sha256": "900432ed334923fba6a4ea74965a5acd7760b4c5b929ad2dc764225e3459aab7"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-008.png",
+      "bytes": 211024,
+      "sha256": "3500deb3edab8b85022d79566303ad74f508b27409dc78e449df3470318609a2"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-009.png",
+      "bytes": 216262,
+      "sha256": "da6d838b2e8a6f6f02bd9303c35191556fc2cfc2ddd5720e8346e43b5cce9bea"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-010.png",
+      "bytes": 174785,
+      "sha256": "b6f53e03d7b87ef7e5ec891bd7684cebc3c783f854cfceb69b6e2ac31342386d"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-011.png",
+      "bytes": 340238,
+      "sha256": "9a08b11cdebaf7f56adadaf4971fc509aa877733920ce3702f239e09edd4704b"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-012.png",
+      "bytes": 374348,
+      "sha256": "3e9d4028e5cb0ce345a325250faa993266435ee9b33b29abb844385c10cb57ab"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-013.png",
+      "bytes": 127259,
+      "sha256": "f62bd3b7f0dd62d1794f272139687b36c5f515468864e39113392c19d48e9ee5"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-014.png",
+      "bytes": 390308,
+      "sha256": "b33cf611e7169cef058d020bdcf7957a723731b2588edb11c00b2ee79a7e5f84"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-015.png",
+      "bytes": 219340,
+      "sha256": "0467bdcd8e0a99eb8408d6a31e229c41b300fab5195032dbf1634ba3cdd90a40"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-016.png",
+      "bytes": 408885,
+      "sha256": "3c5f78ba626f817c22281b81de4565232f1b324830382bc8a1305beccadd63d8"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-017.png",
+      "bytes": 168685,
+      "sha256": "97550ac5e6504a9d49db36f7de5b1c760730d580475cdd88e38d85d7b94ca3c2"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-018.png",
+      "bytes": 345207,
+      "sha256": "11de366aa85a9df76ec4e16f388cdd97433dc6f1dcf4c0eaa8070baf71a47d08"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-019.png",
+      "bytes": 238592,
+      "sha256": "e72c53fb7587d7935879ce03f73d1f534c51e065db33759a16d31ed7a8f71870"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-020.png",
+      "bytes": 203280,
+      "sha256": "eae6bb1cc50f4116fd65e84259c24c305c144ca4457fe29f70ad930e4cd38062"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-021.png",
+      "bytes": 224767,
+      "sha256": "2eee1c4ef0e5751cebd0394399a8b1f6d4fbd52e96cf04cace3e666cda8ec73c"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-022.png",
+      "bytes": 425717,
+      "sha256": "f68a74174fd185c2d5f2b2019552edfa3a698e9a6556c36aadec7f87d01fa3d1"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-023.png",
+      "bytes": 455083,
+      "sha256": "eac6543f01021bf3a3ae1b2d312983eb145478ea9b9029443966122715038d58"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-024.png",
+      "bytes": 453851,
+      "sha256": "a1633b6d70163c56edf0eff2943432edf58292cabf98811491e917ef06451299"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-025.png",
+      "bytes": 453851,
+      "sha256": "a1633b6d70163c56edf0eff2943432edf58292cabf98811491e917ef06451299"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-026.png",
+      "bytes": 304065,
+      "sha256": "02d353f74eadf53f2fb88e6e57d79788b06c5721d62e07f9ca3d1e32e092eb97"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-027.png",
+      "bytes": 374089,
+      "sha256": "bccef39ad743505400768f4ab167f7dfc11491ce240d35b5a8891c85f0f400f1"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-028.png",
+      "bytes": 228981,
+      "sha256": "620781e130cd229176bc56554df250d49dfb7341279e649d2085694e1257f808"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-029.png",
+      "bytes": 476421,
+      "sha256": "96e24c65c62fe95e8aa3e674fa6db60deb376f5947dfd4f2b555dabb5cd879da"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-030.png",
+      "bytes": 473357,
+      "sha256": "cf5596afe55e973aea500f6a9027fd03eed1df171282a03518f2aaa897481b80"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-031.png",
+      "bytes": 529853,
+      "sha256": "01d13b616a7cf7f00424914302d5666c22dadba91ac1e0ea2ddc77f850d45018"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-032.png",
+      "bytes": 374067,
+      "sha256": "af17fa29154ff9bfbcea3d94a533e0cc5971a1b9747cc272599aa62b42d8d173"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-033.png",
+      "bytes": 206359,
+      "sha256": "dd81f56cfb08728e4c508c151fb1ef6cf52b90515770db1beda4a72c364f9fc0"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-034.png",
+      "bytes": 207016,
+      "sha256": "ec362fe657a4dd050532836fab1b4e44ba102eb5dc9b3a47bd08451177a3a35e"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-035.png",
+      "bytes": 230302,
+      "sha256": "d0aff50a0d7e426aaba24da954a2a5fb61c71b8ef58514a165d763c407c59ae1"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-036.png",
+      "bytes": 339542,
+      "sha256": "2ae9d4d8c9943b456b714a6d9dd88378e5ba4124d82e10b6d75be3b8404c4a1f"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-037.png",
+      "bytes": 243037,
+      "sha256": "c8f5f7e48516ddcabcb845f3c56fa6df459dc985f4ab10d369c23cf3d63cce00"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-038.png",
+      "bytes": 242887,
+      "sha256": "e320fa762ef0b636c76b2d18b8af3cf278daad6c49140dffda53678b550bc020"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-039.png",
+      "bytes": 164154,
+      "sha256": "ba03aee73ec1e8bfb25ccf67a7ea449b8a4da2a9187fe6cd5ea624b1cc543e61"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-040.png",
+      "bytes": 222050,
+      "sha256": "1e84ceb14dde76966007289245384f587cae702e3887c36202cecba3a746c7b1"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-041.png",
+      "bytes": 257472,
+      "sha256": "ec3b02f2d7b240571c6a31ff94c28d6ec3e76ea9fcbc30f4d8afdd856375a379"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-042.png",
+      "bytes": 132157,
+      "sha256": "426b19a3ee6032db444137a5f012fb8a42c7187c1de7ea52be1f176f27c70c87"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-043.png",
+      "bytes": 134237,
+      "sha256": "863506da1b76c9e12f9ff2a12e416b15222646297699ea7d2e28204390effe5d"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-044.png",
+      "bytes": 239058,
+      "sha256": "fd72d203810a8fae983176d05ede1024d4c6664c2cd71b943c01af613affd3d9"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-045.png",
+      "bytes": 243111,
+      "sha256": "8ea490e49ff07fbc7c83087cd1f314f38838f8bf64a32e72e2e9d6730bedc8d6"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-046.png",
+      "bytes": 225776,
+      "sha256": "9b3a545863e05d8ee408508f3d02a8e95c2c419893b6ceaf555d70cf1bb7e0f5"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-047.png",
+      "bytes": 224780,
+      "sha256": "a349e42ad88eebfa6f092095759a82bd96c1b7951641c98f10d5b7e9542a1a39"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-048.png",
+      "bytes": 241015,
+      "sha256": "6c657f4b6e05e4ff724ffcb73c531378d6ab88c032d55e6d08f1a5d1ed3b06b6"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-049.png",
+      "bytes": 268364,
+      "sha256": "e7b7efb5199c56abe78f6b45b14fceb037a7dfd3582119b714260d521da62bbc"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-050.png",
+      "bytes": 190833,
+      "sha256": "df526d911779d89da427b8ae6512cd2fdd481145c8ca834a6af19ea30111ff9b"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-051.png",
+      "bytes": 216350,
+      "sha256": "59a7b729f7d44c523fd2605a231e4c4ddad2ee9295bfdb97b0a98b9e33f796e0"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-052.png",
+      "bytes": 227594,
+      "sha256": "0e80fffcde612126fb1b23d92f7c143427e3eec65270d9d20a606666b8801cc3"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-053.png",
+      "bytes": 235229,
+      "sha256": "a3def477fe5f4ef12fa908cc25151e91c2cdf6b9e43672b28f4d9995f225aa50"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-054.png",
+      "bytes": 236328,
+      "sha256": "cff56e6a8bc8220e59c73b259a27b5bdb8d4dae6db16a8edf11e50a270279b55"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-055.png",
+      "bytes": 184612,
+      "sha256": "40efa897f9edcd8a95f2e2e93cc872b8e6c89cb98a5978b6591902e120f91205"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-056.png",
+      "bytes": 176004,
+      "sha256": "60992076e75198157e083f00fa5c89b01cf79aabbf63f738b35bc2c4aee188cd"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-057.png",
+      "bytes": 139221,
+      "sha256": "4613bd89dbea895751f46e9346aa03d21782d6bf1ff9f3637d9a12d3829a8aae"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-058.png",
+      "bytes": 90325,
+      "sha256": "ed622b052361e96c5371c9eb24fb5e1b536acddb63067ec00176a9035f0d1655"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-059.png",
+      "bytes": 108895,
+      "sha256": "11cc34ecaebd98d8ec85d72b7c7e4efa789c450d523408b578e9438f8468f148"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-060.png",
+      "bytes": 112509,
+      "sha256": "907e75c8ca6361ba8eb0062d6e5ef2c3c42aa7c5bc367211d01e258f187d3fa8"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-061.png",
+      "bytes": 119900,
+      "sha256": "88525ecd1ff7493a2a21699fca76032aeb7e9b4e6bbd9dc2a266a275a5154ecb"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-062.png",
+      "bytes": 133724,
+      "sha256": "d441779ccf37c570dd3d87c647efd2f1baf1edbeb02355b924fc9bd2041a3423"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-063.png",
+      "bytes": 133724,
+      "sha256": "d441779ccf37c570dd3d87c647efd2f1baf1edbeb02355b924fc9bd2041a3423"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-064.png",
+      "bytes": 141762,
+      "sha256": "30eb96b61edceb22f58c6aa56839e2292fa789b485c645c8f264d5a157be96da"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-065.png",
+      "bytes": 177232,
+      "sha256": "d55a5db49b8190b1c469854e2d079bf4be31cf07fa8f1786416e99cd48f7b12a"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-066.png",
+      "bytes": 177232,
+      "sha256": "d55a5db49b8190b1c469854e2d079bf4be31cf07fa8f1786416e99cd48f7b12a"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-067.png",
+      "bytes": 137585,
+      "sha256": "14900d1b6c6c4d6b9f0ced6a8464517da6d66f1186b4f50c49d72d7e5e252b33"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-068.png",
+      "bytes": 166252,
+      "sha256": "2a06d835e8d768c17d0cb6f0bdc4ab3b61266896a7f604b99af68e9b54d292c3"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-069.png",
+      "bytes": 166252,
+      "sha256": "2a06d835e8d768c17d0cb6f0bdc4ab3b61266896a7f604b99af68e9b54d292c3"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-070.png",
+      "bytes": 108784,
+      "sha256": "6209ba7c5c16e0a12ac287da00a526dfbc53fe908f48624e6ea310c9ad22fcdc"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-071.png",
+      "bytes": 201566,
+      "sha256": "940346eb0b355db6d8734003ac6f8d7f0f9e9b6996a0b9c7d0edc8eaada775d5"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-072.png",
+      "bytes": 194276,
+      "sha256": "6a9bfbb31ef09a77a450872e214c9c8d931e907c1026bb81322c380b287e7158"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-073.png",
+      "bytes": 480747,
+      "sha256": "5a1ca5089b8a07865af1afc01a6fce57f027d8aa689b5855d39c8ed7386504be"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-074.png",
+      "bytes": 481909,
+      "sha256": "3a3d82830fbbd8c1bd80de061b527a2c2f43aad2a2f10c0a3d1f24e1c0f4e967"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-075.png",
+      "bytes": 386622,
+      "sha256": "967c12ac4de36873f7333592bc88576c0b45f76292ec091641a1f3baac03c0bd"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-076.png",
+      "bytes": 243129,
+      "sha256": "bd35a7cc0898dad0891743892a2ac00586189242e85d7f2cb5cc6db9a9be6d32"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-077.png",
+      "bytes": 244630,
+      "sha256": "7f1369a77faec10dc7279ee17a47ef26468e3a86ab31a8b8fbaa5e3f9b1c4194"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-078.png",
+      "bytes": 211056,
+      "sha256": "2ee7e68af1991f0509fa574a7b96936124a91dbf797b818ff4ff633f67c24d85"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-079.png",
+      "bytes": 469715,
+      "sha256": "7f9df372b94167fc0ab77fc59b8d7c1e45656a2cb4010edf30186acb208d6b8e"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-080.png",
+      "bytes": 156279,
+      "sha256": "59c387120192e9c2119abfdad4554b7dce6be01314b63ae63a250b38bad02a21"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-081.png",
+      "bytes": 156218,
+      "sha256": "e015d11aa3c6c79885a6dd04a97042f9d51a760686066f33f66728a1c41d5797"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-082.png",
+      "bytes": 264484,
+      "sha256": "d4166bc0099df71a66c67227cac6bbb35ff0f16d26c1b2d85ddff99397702f45"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-0.json",
+      "bytes": 663,
+      "sha256": "7628d702e9399c835bd2936cef34b5b81a2350a652e41230d18723c6bcbef295"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-1.json",
+      "bytes": 663,
+      "sha256": "9746c09b50dbe6148d8ae2264c646f2a2d42e67c4dad4f8851c08ba272a8d08d"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-10.json",
+      "bytes": 677,
+      "sha256": "dfc404ae0eb9d3021872a70b745f1f0366bd939f49b3e98ddc4239e9f97d3edf"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-11.json",
+      "bytes": 662,
+      "sha256": "2c003f449c3964ffe580e5869a7a1398a451cfd4161d9e08f245317782246aaf"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-12.json",
+      "bytes": 677,
+      "sha256": "03b5d4f492b29ffa9fc77388bc109abf54cc25506329fb4dc2d8067a7adb40eb"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-13.json",
+      "bytes": 665,
+      "sha256": "245d5674c8ccd97e8050d94503e8319fb06cab4a2deb9d698bc7242687ca9c3f"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-14.json",
+      "bytes": 677,
+      "sha256": "b8b70f58919df109166228a002f1de91a99f286df417ec9d1273358efe451b98"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-15.json",
+      "bytes": 677,
+      "sha256": "1ced5cd65dcc4defc4f27d31ac545d7dd931acf5e7e3d07a486d801e7e1f70ab"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-16.json",
+      "bytes": 662,
+      "sha256": "7a59d6b38589c5e24c588b3c4a00d55898117cef4330ef340ef7d4453f49312a"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-17.json",
+      "bytes": 666,
+      "sha256": "0bc17a65185f21c05a068d49db6856fba9bebe4ea8000e93e1c2871d8ca72fb5"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-18.json",
+      "bytes": 677,
+      "sha256": "29e413015eaa6b40363b85bd89e59868231aab76fe7f55fc0c008f548d5490e3"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-19.json",
+      "bytes": 663,
+      "sha256": "35268404e36fc27de647c179ba9890432232730c2ceeb10eadd45a8b4e30ae4c"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-2.json",
+      "bytes": 663,
+      "sha256": "5672767f978a6108f5106c4c0ad0fe79c2f3ccfe7e5d5184e7be4cec9055401a"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-20.json",
+      "bytes": 667,
+      "sha256": "261ef5a477ba13e785b61635733b2ba253a3fd186a28c0ab39529baf95d85fd7"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-21.json",
+      "bytes": 663,
+      "sha256": "9bb660f43fa5eab59a448e49320adb6512ead6643488845795a1ce4d0b763f3c"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-22.json",
+      "bytes": 678,
+      "sha256": "ac7e1f076992b9079a6b51994ab9544ea47c4653c0c29a962718826369bdeb0f"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-23.json",
+      "bytes": 678,
+      "sha256": "5a23ff699f877fa6e4b40e82b06d559880701b12fda71fa22574ae755879f79f"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-24.json",
+      "bytes": 678,
+      "sha256": "f8a675cdadb9e62d533dfc6f4eaf8719e5323e59b14df83ef3310e8bebee951e"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-25.json",
+      "bytes": 665,
+      "sha256": "7b87fd5cbc6fc0ef90aef3a8b95392be6808d83f148894b04582b496c0953259"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-26.json",
+      "bytes": 667,
+      "sha256": "ee704daf7e7dda7c7c9fd5dc1a26711310c6902902f72e9454bbc45f79f0469c"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-27.json",
+      "bytes": 663,
+      "sha256": "7a42f8cf96dad7a4d2d7f2ffb12049f5ae999019f7d8b72e9999e45c048a0166"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-28.json",
+      "bytes": 678,
+      "sha256": "27adcb0e5dc4db117812fd7b833e1d10d6b02c39699fee04c46e38eedf61dba5"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-29.json",
+      "bytes": 663,
+      "sha256": "8a646f98e9640974e820aa96c66d199a229179d2cd485fae403038e5508447ae"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-3.json",
+      "bytes": 661,
+      "sha256": "2ef768afb663289c35c0ae26d594d643d4de41b337de7d2e1333d3ba01f9b2c5"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-30.json",
+      "bytes": 678,
+      "sha256": "11e36a9f80b86c4050a650a43241f95e23e35b37db195fe2ccb0b6fe6c66c5cf"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-31.json",
+      "bytes": 663,
+      "sha256": "d24dc75fc7d718ba396d0d683aec31829cbb7ce0f15435129a6078cea99b08dd"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-32.json",
+      "bytes": 678,
+      "sha256": "872b06ef445e3bfcc7938f07d92080ed9ebcf445bc3ff1be60c5e38528c144f4"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-33.json",
+      "bytes": 678,
+      "sha256": "ce5c886e5a03236abec522e127d5f72b890a1ff4a2bfa40687bd5d6ad988cad2"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-34.json",
+      "bytes": 665,
+      "sha256": "d8a90be56dd3d9722aa8f3bb9aba38d044db0db962b19b199abefefc84af689a"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-35.json",
+      "bytes": 663,
+      "sha256": "81ea4db470d987977cbc63c706854488a1745b89424c2431fe39b3748924074a"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-36.json",
+      "bytes": 678,
+      "sha256": "d29b1f24715f7adc38a5190eb3a02abe116289ed17c73a67511cdcfb1fda1a89"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-37.json",
+      "bytes": 678,
+      "sha256": "0e9ddf5daa9cffe92b41c1130e9c50e9e2dcfa086bcbebc41c331a9cab2d6893"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-38.json",
+      "bytes": 665,
+      "sha256": "ae301d777a114f25966ec3aebd77392b2232d4d5dd1ab6c9cb234ffd1b1bdde9"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-39.json",
+      "bytes": 663,
+      "sha256": "9e08b359e4418493900aff43bf5b0db9c4fa0699eb2539d506f2c15680e80ce8"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-4.json",
+      "bytes": 662,
+      "sha256": "26c3f01cfaf2c9bae0adac6aa5917cbe5a5e14480ffc0f2195b69778a0d07882"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-40.json",
+      "bytes": 663,
+      "sha256": "e9092cfd29f32afeab0128d709194bb6b741dc6ae0dba152ce985b785aa1c6af"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-41.json",
+      "bytes": 677,
+      "sha256": "f89e75a9bbd17193f19016f8b0fd36e6e2c9de04f5dce0122a177ba87052a827"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-42.json",
+      "bytes": 678,
+      "sha256": "461eafe99080ea9fa80785f5ab2f3c932bacdb8e82938ef544a313947ea074ef"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-43.json",
+      "bytes": 663,
+      "sha256": "93dbe47a2da99932e29d70bbadbd94554fe9842d756b2925fe4788aec53ba49c"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-44.json",
+      "bytes": 663,
+      "sha256": "894304f780db88422f454a9c3398835efc7dc6c6156a5d61fd675ac0d3d2731e"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-45.json",
+      "bytes": 677,
+      "sha256": "fa012527825992acd8bd1974e0f3b7756525f9d5f892b0260d83093ee062f074"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-46.json",
+      "bytes": 678,
+      "sha256": "6cdf58338d3bfa958b5204642b39b1d0c07973703adbe93ccce1e9e89b10a2c1"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-47.json",
+      "bytes": 665,
+      "sha256": "82346eb001ef1fdd2d0fa741d58179554486e2cfe5156df420a1d54b9f096416"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-48.json",
+      "bytes": 663,
+      "sha256": "ba5f5cda804499436bff7059666655b7a046cff64ec4f66d982d6f6a9504e649"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-49.json",
+      "bytes": 665,
+      "sha256": "2191fc7cc6ae310990353ed5af071ecbd09aea7aa6660370c87bac96ccd83804"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-5.json",
+      "bytes": 662,
+      "sha256": "2cf31429e8c08894dc3ff71024704319834323759b8cacf13d04935194f83f87"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-50.json",
+      "bytes": 678,
+      "sha256": "0d048727a58e6484e6a9da3ee499533115538d2e33edd1a965eb3e2837aa073a"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-51.json",
+      "bytes": 677,
+      "sha256": "29ad9053fd64c05c510ab056c98a1f618f441afa7c61808821635c3633051754"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-52.json",
+      "bytes": 677,
+      "sha256": "f7a47655af39c8f2928a11415ce27ab00cc2c059ee9c670d2440bb8e196f4a63"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-53.json",
+      "bytes": 663,
+      "sha256": "b7c59df19b24b117d383b3cf71b745487fff29dfbc8494d5afc34dc440bd1236"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-54.json",
+      "bytes": 667,
+      "sha256": "bab335105073e0bf4b20419aeb52f2f9f4cf2b7a47a154b9549e0f54bb57fe07"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-55.json",
+      "bytes": 677,
+      "sha256": "7edd4aa71e5c323991a889f13e5041887d98570d95ada8a9f93839820c813122"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-56.json",
+      "bytes": 663,
+      "sha256": "fb108911515ca441f40299fd60fe71e7b74750336fd5109182aaa291be9d7ac3"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-57.json",
+      "bytes": 667,
+      "sha256": "8177ff8558dccb02151bb79780413b7609552de416e36a84f6014d722c4edc48"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-58.json",
+      "bytes": 677,
+      "sha256": "517fe6279c3c8c8f23998c559053b2c87fb6397f26b5f763236d1592b10e7bc2"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-59.json",
+      "bytes": 663,
+      "sha256": "bc469868900534701c4048a55e443120528d8fb7fefdd643580fee9ee37bb167"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-6.json",
+      "bytes": 662,
+      "sha256": "ef6fb67d1b846caa0583161bd77af6684046dbfe3c9b7b373f9e264f166109c7"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-60.json",
+      "bytes": 678,
+      "sha256": "2ef5ea54505db47c354b6f8ce1e1ca1ece32cdda4c8f54786a80854b20ab7746"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-61.json",
+      "bytes": 678,
+      "sha256": "6d1984c2c61d16b65cd14e98fa4e0f6b48d42a145066c636549eaa2258da5094"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-62.json",
+      "bytes": 663,
+      "sha256": "a883059f5a175a47ab3b43ee004a4adb4213f6080f43201942666bdcaa4ae98f"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-63.json",
+      "bytes": 678,
+      "sha256": "fa5e8fbd49c5d0ef7470988d22fbad5fc2b9ca43bbcc413c042c9f9fedd5466b"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-64.json",
+      "bytes": 677,
+      "sha256": "7d3b32b26faa902b7b31c2e3bdeb95aed615a5ea932c7fce6274bd37d50ea82b"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-65.json",
+      "bytes": 663,
+      "sha256": "52c676754f48c86cc81e04cec3d0173a3481b3ae148fbc163946c0cd63516204"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-66.json",
+      "bytes": 677,
+      "sha256": "a1add45d4022253bb9d8a5edc01910831dc5d5609ec655451858f6ab07ebd900"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-67.json",
+      "bytes": 677,
+      "sha256": "a5f8ec072d933771d089caca150bb9478aeff969835ed79130213b14e98f72ec"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-68.json",
+      "bytes": 663,
+      "sha256": "856dadc3ed6517f5300b0f130edba87c158a7f6d58652777b303b365cbf21915"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-69.json",
+      "bytes": 678,
+      "sha256": "3d2a878b86761d242e539a76dc4e27161baba36348a32bd6f2ed1609009d6c51"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-7.json",
+      "bytes": 677,
+      "sha256": "dad103424392a57ea9a94ac7e24239748e7810c52ef3912f8c6f2977dfc81837"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-70.json",
+      "bytes": 678,
+      "sha256": "31248e73cb967efbc851dfcac93c88610de668a508822ffa6e6d5b92f72453be"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-71.json",
+      "bytes": 677,
+      "sha256": "f59ae5d2d3800f4a96be00609b43aeca055c3e9f0547ebdeb45ccfc38651c3b3"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-72.json",
+      "bytes": 677,
+      "sha256": "ad99d60c3140a654cd6c1d9fd8795598feb472d8b374cd4b97d2c8716039d0ad"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-73.json",
+      "bytes": 663,
+      "sha256": "1a248f090e68c2cf9e8d937ac5b68605a7937dc08435257423a8f030cd27d1a6"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-74.json",
+      "bytes": 663,
+      "sha256": "23eb61c597c700cbb84272692731af587192cb868c05b605f9cd7fe47ee488ae"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-75.json",
+      "bytes": 677,
+      "sha256": "69a08e1163b4f7f0fc4e765af940e5a4522549b1c056651b3ab8cdee0560c531"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-76.json",
+      "bytes": 677,
+      "sha256": "7c32d033cfd9915f0c7eeedc808e786261614da6fba653c07ea017c21a2a25e8"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-77.json",
+      "bytes": 665,
+      "sha256": "713716c2f504bda4598afcbf2d0d284f4493d1507bfc86be30dbb5abab7a02c1"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-78.json",
+      "bytes": 663,
+      "sha256": "0f5f16eabbc255c366c366d2b530da0eb99b7dcee2fd700576f7338d22d69cc9"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-79.json",
+      "bytes": 663,
+      "sha256": "e2ed2227d2171cf2f3ceb5b02550659bd1156f40ea373d3a915f36d437e26dc7"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-8.json",
+      "bytes": 662,
+      "sha256": "f9528416ce9ff88c9d82d0c4591278fbf158d34ec044c392b23f8c1fb25ebf0b"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-80.json",
+      "bytes": 666,
+      "sha256": "dc911a6c22b0fb44bc0e72eef0baaff38a1f77d5c7169b9aa175df8c430bf75b"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-81.json",
+      "bytes": 677,
+      "sha256": "44442f9bfa0571094321626bc06833472b86cd2ba33d2ba5321efe85e8b33d91"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-82.json",
+      "bytes": 663,
+      "sha256": "38a2c354b692df2535f866dbf11cbc9193ccd2815fdb0803523fd9a850bd75e9"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-frame-9.json",
+      "bytes": 677,
+      "sha256": "29a380069af0daf08b7dc354feb0f0e444fb486371a9efcc0642b81eeb78bb50"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-full-decode.json",
+      "bytes": 416,
+      "sha256": "907617be231f20789cfa1554e656d467338597629de61bf36a51d963fbd40fa6"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-loudness.json",
+      "bytes": 1101566,
+      "sha256": "c5928a277fe54078675f9ca06b13e6a67bcfa2435d15a6001e80590ddf427c0a"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-probe.json",
+      "bytes": 5905,
+      "sha256": "5a70bf6e91e444deeda4605a44f6766877985cf9ef42b883eda159401c01e3ed"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-render.json",
+      "bytes": 645,
+      "sha256": "dd5423a54ad8fa6fde81dfd55a2d865cbe699a5b02965b4cca8f8225d3ac8320"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-verification-probe.json",
+      "bytes": 6043,
+      "sha256": "ec4d7cb9c761e716731e2d25727857c39d5490f544ee21565cc097207ff9e29c"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-verification.json",
+      "bytes": 47400,
+      "sha256": "b3c880e2d4381e4a24cb82011937b635d873e1a3022d1d3074001098560c9cb2"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-fc-assembly.json",
+      "bytes": 3527,
+      "sha256": "da1626a3fa0c667dcc19bf45d81798d4c70cbbca6da9c2cb66ec177cec5e3644"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-fc-build.json",
+      "bytes": 599,
+      "sha256": "8fe0910bb76f6e6569710fc2aa78f14937364cd61d59c0940e4e91d2d98cbb8e"
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-fc-place.json",
+      "bytes": 1717,
+      "sha256": "dbf411397ed93065edb02fc2c13c12a86c07e07c7584e449fae1a95ef80659b0"
+    },
+    {
+      "file": "qa/emberwake-firstcut04d-fc-assembly.json",
+      "bytes": 18506,
+      "sha256": "d09b2e5924e67516fd071ef7229d5862c5245cf542fa7fb0b95f2b52db354415"
+    },
+    {
+      "file": "qa/emberwake-firstcut04d-fc-build.json",
+      "bytes": 704,
+      "sha256": "9a9d7e70237441425461b033a66c424c4c5366bf0e0322628340c6aa793f29c5"
+    },
+    {
+      "file": "qa/emberwake-firstcut04d-fc-place.json",
+      "bytes": 7424,
+      "sha256": "5693adf1698b5a78298078843ed98b4b47b79e72db2652255eb4e7d44df86c07"
+    },
+    {
+      "file": "qa/firstcut04-F-ec-camera.png",
+      "bytes": 166335,
+      "sha256": "34688a284b5d308b39245bd83270122511a77c575a31b85037534e38ea6445f8"
+    },
+    {
+      "file": "qa/firstcut04-F-ec-opening.png",
+      "bytes": 257774,
+      "sha256": "45fa21e0ecbba4a971ea698ffc21221b82aac4230b77382c91f28a238b212a68"
+    },
+    {
+      "file": "qa/firstcut04-F-fc-camera.png",
+      "bytes": 218838,
+      "sha256": "225494d48499be4681ace53cd2b27389a99020c1e2c5ffbccc53b654f5cee8bf"
+    },
+    {
+      "file": "qa/firstcut04-F-pc.png",
+      "bytes": 177781,
+      "sha256": "a363bf24e0a66504f439cc6a40dca3795320a1d1f42dd8a9cae78697f076e604"
+    },
+    {
+      "file": "qa/firstcut04-art-detail-finite.json",
+      "bytes": 821,
+      "sha256": "a75c45195c1f6c998f7dbb378e97dadc6ec9076a6c4a6c8921cd2de77be594e4"
+    },
+    {
+      "file": "qa/firstcut04-art-pair-finite.json",
+      "bytes": 817,
+      "sha256": "5860264ff2ef7ddefd173b9255afdbcb4538f6d7e690c36432b40cae8657a41a"
+    },
+    {
+      "file": "qa/firstcut04-camera-sampling.json",
+      "bytes": 1411,
+      "sha256": "d0c64060a2b7ca2169de8f0c432952f2fd72a8f5c53979a8cf1414cbb72afa45"
+    },
+    {
+      "file": "qa/firstcut04-chapter-binding.json",
+      "bytes": 153769,
+      "sha256": "85ad118a42cc24d5afa6b225954dade530f1f5d17753c38480f90c71ebcb50b1"
+    },
+    {
+      "file": "qa/firstcut04-contactsheet.json",
+      "bytes": 10076,
+      "sha256": "28d34dfff792418d3b89b6e1c3d296cfd676fea452b0784d4c4ca9dae050a316"
+    },
+    {
+      "file": "qa/firstcut04-cover-binding.json",
+      "bytes": 517,
+      "sha256": "2a6cb03d028ed69ce022e88d88070bb360ba973a56f5ebcd2e64c34322ce4eff"
+    },
+    {
+      "file": "qa/firstcut04-cover-build.json",
+      "bytes": 5085,
+      "sha256": "13e75beed9df468bf71b255055b7c86b11aa0d2557db217c1a9fccfa7c0f9a70"
+    },
+    {
+      "file": "qa/firstcut04-cover-export.json",
+      "bytes": 478,
+      "sha256": "dba57bd3c9a1ae36331e6f26d14b56b3d8a0bea3b93c1391d1958160cd8642e9"
+    },
+    {
+      "file": "qa/firstcut04-cover-game-crop-F-recovery.json",
+      "bytes": 746,
+      "sha256": "90f38f075960e9ed7ddada4a34d1cf456a544ba37d2048b5bfc68db469a80dac"
+    },
+    {
+      "file": "qa/firstcut04-cover-game-crop.json",
+      "bytes": 1125,
+      "sha256": "3203cff1059be5edb1ba4713626ba98f416282c96ba0916a6738ede6819d2dff"
+    },
+    {
+      "file": "qa/firstcut04-cover-info.json",
+      "bytes": 5720,
+      "sha256": "684416fddbc96723140e1609e15bbf37ca3610a77a8ed9e929f67280c798d388"
+    },
+    {
+      "file": "qa/firstcut04-delivery-ec-camera.json",
+      "bytes": 700,
+      "sha256": "f9157921fbef874225253bd6ff9b2e98e97447b6a7af34caaaa7c73320ef843a"
+    },
+    {
+      "file": "qa/firstcut04-delivery-ec-media.json",
+      "bytes": 666,
+      "sha256": "48553982535be727872d063bb09e84604fa8cd0abf1d82443f1a75c862ebdba7"
+    },
+    {
+      "file": "qa/firstcut04-delivery-ec-opening.json",
+      "bytes": 674,
+      "sha256": "d1e10515f5e18ea6b153fd91e9d88fbea15dfd3d28db4a231340bb291cb039ee"
+    },
+    {
+      "file": "qa/firstcut04-delivery-fc-camera.json",
+      "bytes": 570,
+      "sha256": "973ef1ffbea2e6bcc03ec1e2fecfe2af2815430fd9bdb13ddd11505f8d38fc98"
+    },
+    {
+      "file": "qa/firstcut04-delivery-fc-media.json",
+      "bytes": 3909,
+      "sha256": "c134b5ad99727b3f5285661c352e006a17e37987f44c79489cbcb18ad186493b"
+    },
+    {
+      "file": "qa/firstcut04-delivery-pc-render.json",
+      "bytes": 460,
+      "sha256": "3c0fc931c3973f680f0fb884534094cd0a0a42df89890e560783aea500106021"
+    },
+    {
+      "file": "qa/firstcut04-delivery-pc-save.json",
+      "bytes": 378,
+      "sha256": "c5a407ff8bd67f2093361b972f80b6f856db8870e5b16469b345933a3b926a58"
+    },
+    {
+      "file": "qa/firstcut04-delivery.json",
+      "bytes": 69938,
+      "sha256": "5644f3253db1a4533bd264957975d90be83f3c2df1e4f1ea2e1a395111377aed"
+    },
+    {
+      "file": "qa/firstcut04-export-interruption.json",
+      "bytes": 901,
+      "sha256": "a7e4caf1c17b48e7a61c270fb7cc025afcbf5d0634faad104a42159ebe6eecf7"
+    },
+    {
+      "file": "qa/firstcut04-materials.json",
+      "bytes": 2538,
+      "sha256": "bca042492e3151f704ae18ac95507493089af6993fc729fbe2ec6900ced2fc38"
+    },
+    {
+      "file": "qa/firstcut04-presentation.json",
+      "bytes": 582,
+      "sha256": "51433a22e5bb44948d11370f80bbb8d6ef739843666259b09b418c282d99cd7b"
+    },
+    {
+      "file": "qa/firstcut04-product-source-after.json",
+      "bytes": 239,
+      "sha256": "4777f9154f774a0cae2fb031389bf273149b373fef33b5761bd3a16a94cfbf07"
+    },
+    {
+      "file": "qa/firstcut04-quote-source.json",
+      "bytes": 11987,
+      "sha256": "93752c2b4b28943100463804163d2e6f254ce7e7ae4206088fec9bddfe43ab99"
+    },
+    {
+      "file": "qa/firstcut04-review-scope.json",
+      "bytes": 3298,
+      "sha256": "e3c9d643b1e2ce49a8476597bc3b740158d82d407fa3b46fa0a5fbe017c07a52"
+    },
+    {
+      "file": "qa/firstcut04-stage.json",
+      "bytes": 68901,
+      "sha256": "63c2647ea0365321092094454163e9416289136fbc4ebad0a55120b2508013fa"
+    },
+    {
+      "file": "qa/firstcut04b-camera-0.png",
+      "bytes": 182274,
+      "sha256": "6ab0ee810ee2529332a0f90f9493e1bd699a07f443ecacf302d546a762c8f80a"
+    },
+    {
+      "file": "qa/firstcut04b-camera-1.png",
+      "bytes": 167428,
+      "sha256": "0837391e1f675bc80c718fa916ca2fad347e8b2a854e329eae0171537612902d"
+    },
+    {
+      "file": "qa/firstcut04b-camera-2.png",
+      "bytes": 174231,
+      "sha256": "0aac7df11bbcc0e8a5c987b96b13deaeb0d2f605ea55c381f7c9240bdb651414"
+    },
+    {
+      "file": "qa/firstcut04b-camera-3.png",
+      "bytes": 179072,
+      "sha256": "c6ce9a55aa3d4c9f5d83724205a3c7a8c5fcf5f6b34888d02679c949416bf1ce"
+    },
+    {
+      "file": "qa/firstcut04b-camera-4.png",
+      "bytes": 177830,
+      "sha256": "24da082ea9ae8f86de23247d79d2287ad75f5a35bca85ff27d2cbb70c2b73c98"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-0.png",
+      "bytes": 174645,
+      "sha256": "9a8252caa2c95be452ca87e969adee8306197159bc2effb3b0e17b0c48919eb7"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-1.png",
+      "bytes": 157674,
+      "sha256": "d27a736a376fd0ea7be9151d344ee73ab188f7cd6940dd5950ee937a4ab99e5a"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-2.png",
+      "bytes": 164934,
+      "sha256": "a4d31e99e1b1f55b7d13b6a037da295f342567776223c852d3feb8076717d513"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-3.png",
+      "bytes": 171211,
+      "sha256": "2e9a2a17a1c9b8abf65d25fb46499711b21cf9a6b42fff9d9ba652f110ae4e50"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-4.png",
+      "bytes": 172233,
+      "sha256": "60d977b580a37b27a843d224cd24516d623fdbff95571c426ca7d99e019b3663"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-0.png",
+      "bytes": 225470,
+      "sha256": "29708bcc062d9139d908bf7d4848ca1a9932a84b85912903fe937226fe75afa5"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-1.png",
+      "bytes": 195296,
+      "sha256": "42f2ff36b6500130587452e545f0f5498e5b54d356bbbba10bbbb1c2ceba9277"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-2.png",
+      "bytes": 216990,
+      "sha256": "be5306b2ddb16fdcf539d6b4954c6bb89f1e2befbc856b88fc0a59dd5d60a13b"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-3.png",
+      "bytes": 223307,
+      "sha256": "dcf0e3ef444abc5c815b293b7992b98155cc307d6b794d093cbbd81b7ff91435"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-4.png",
+      "bytes": 217954,
+      "sha256": "f265679429424d82e2ff5025aa8bfda45f4a003c98ffa0023fffcec4bfbbcef1"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-native.json",
+      "bytes": 993,
+      "sha256": "a641007ea9c941f143561de1b76352419d7da0118409a6f1ccf05e3f1b4f3c25"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-preview-0.json",
+      "bytes": 922,
+      "sha256": "8133061fa84ef9c47d27a5929ca11db6c0e9a6a586ef253e6d87071e45274f9f"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-preview-1.json",
+      "bytes": 922,
+      "sha256": "997f4d65f47ffa1b23d7e66d43f619cb4afcbe2d847d891448a7b21f0422281b"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-preview-2.json",
+      "bytes": 922,
+      "sha256": "1df34838e0faff84498022096cc64e67b411cfd99acb86fb1b9d6a2da71adef6"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-preview-3.json",
+      "bytes": 920,
+      "sha256": "c84e99f971c185871738011f36d941ffa360103a859c44aa0753da6405a97182"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-preview-4.json",
+      "bytes": 920,
+      "sha256": "500a45a9df7bcb9d12271546437a206d23ed9dfb4c9ce41c0af3c4f6aecfee3d"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-probe-0.json",
+      "bytes": 2647,
+      "sha256": "9f9cae451d533763f94d71ee81b530868c6a21ac0050e9f98b518066475aa17f"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-probe-1.json",
+      "bytes": 2647,
+      "sha256": "2ae977e5f97798dbbb3509c4842fa5e0e750923cd9b3d3135cd9878f8841a47c"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-probe-2.json",
+      "bytes": 2647,
+      "sha256": "e78d5baa91bd47d19afb7b1c108bcad79fcefc9549cbf91f1b6b64e4d72ca763"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-probe-3.json",
+      "bytes": 2647,
+      "sha256": "dbeffd3e095226f555f8ebca5da2c81df74692efc997731b249d87d4e2ff810d"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-probe-4.json",
+      "bytes": 2647,
+      "sha256": "be9a87758a9c668aac9088af7dd7b8d477f2e120c18a86ca08d6fccd5a891716"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-render-0.json",
+      "bytes": 1450,
+      "sha256": "3bba63f6eab1f418b76af56e99e3a56552b80e3880206ad4dd39e5eb62fc3424"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-render-1.json",
+      "bytes": 1452,
+      "sha256": "8768d6bb7a7f990edaae6efeb448d1dbd0621044eb590af9718a394213492d9b"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-render-2.json",
+      "bytes": 1452,
+      "sha256": "1aba9cfae4d98e6c8a10b37c782867c01354e47697328c54828d8fbf4153004d"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-render-3.json",
+      "bytes": 1452,
+      "sha256": "976b2c70a7aaf5e079e3f0366faaa7d049bc1cc88f91af60cccc1eab16a300a7"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final-render-4.json",
+      "bytes": 1450,
+      "sha256": "15357274ab6bd96d59749d815d1fe67661ef6991af0dc4f66e2ec65e5c8d57da"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-0.png",
+      "bytes": 171356,
+      "sha256": "dcba7220319fc3d8a0d4e19174d3d43a35e7c5b0472eb4bbc04b204b650c6cf6"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-1.png",
+      "bytes": 154811,
+      "sha256": "71a233f58046d865531ba25d65d7d8f2eaf4a0e7ba818a7e69001a4d716fca9a"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-2.png",
+      "bytes": 161088,
+      "sha256": "d09b3dc949b1f3b7bcc9e8cdea0768c6c69549a9fa963de0ecaf95312fde3044"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-3.png",
+      "bytes": 166335,
+      "sha256": "34688a284b5d308b39245bd83270122511a77c575a31b85037534e38ea6445f8"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-4.png",
+      "bytes": 168710,
+      "sha256": "e1da1b88de6ef61eee670c674b49526bf3e0474e96ac063261a0b54c9410075c"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-native.json",
+      "bytes": 993,
+      "sha256": "a641007ea9c941f143561de1b76352419d7da0118409a6f1ccf05e3f1b4f3c25"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-preview-0.json",
+      "bytes": 924,
+      "sha256": "7ccc94c47a13d793234060cb6fa71c93957ea65ae34ca663cb9a7e6c198f7759"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-preview-1.json",
+      "bytes": 924,
+      "sha256": "795369505b770dc8fbf1f9b3fef52cf0bdad537b956dcd60bfddbf28ec1bcdaf"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-preview-2.json",
+      "bytes": 924,
+      "sha256": "b73e80fc1af52877e76a22545be4f4eb2ac81eef4e1b0f3136de7947ef924063"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-preview-3.json",
+      "bytes": 922,
+      "sha256": "2240de2051755c84720d6560ed5885ddaa2bb4456895445fb8e0d1c51078da76"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-preview-4.json",
+      "bytes": 922,
+      "sha256": "80907552e244e2f1f0a1f14777fb1854a8e53715fc61e0801ce67dd3634f015f"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-probe-0.json",
+      "bytes": 2647,
+      "sha256": "e1255c823f67e9041bee89c98ba8d460247b918127ae645fd6ba36e79961adea"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-probe-1.json",
+      "bytes": 2647,
+      "sha256": "b1e159ed4ae6273ceacf1481dae35c757268116b7813c0dae0000d1698ceeb40"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-probe-2.json",
+      "bytes": 2647,
+      "sha256": "7c495eac704ea38de5052d77a025a90ef02f6429c8fc248dd4a296e993e9c1b5"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-probe-3.json",
+      "bytes": 2647,
+      "sha256": "d2b8875a0adeb47ab7bc74a9f6991506fa7721d381694031f330c06b91ea017a"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-probe-4.json",
+      "bytes": 2647,
+      "sha256": "25ad6e71ea185f3b1276dc18fcbdc641d9677de0e1fc2a62e9f8de66aa851aed"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-render-0.json",
+      "bytes": 1451,
+      "sha256": "f357251cf89a8f1bf1d8c69b15cc76a101107e3c061774ec8025dec2dc64a5a7"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-render-1.json",
+      "bytes": 1452,
+      "sha256": "f28004b06fbd7f0bf834c3073ec50c221e75c584b8a8ee4a456ea90eb6f6d0e4"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-render-2.json",
+      "bytes": 1452,
+      "sha256": "3383302410c9a9f7422fe6910aff0af4a1b105c0ef57cf9fcb1e546856dced3d"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-render-3.json",
+      "bytes": 1451,
+      "sha256": "cdd33cc574c85b6d133b1e207ffd7ac066937d34a85a8cded96f643b462cb920"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-final4-render-4.json",
+      "bytes": 1450,
+      "sha256": "03ab4654f253cce22a257b59ab6d55d5e0f8dec87cb015bad0c016aa889f6327"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-native.json",
+      "bytes": 993,
+      "sha256": "a641007ea9c941f143561de1b76352419d7da0118409a6f1ccf05e3f1b4f3c25"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-preview-0.json",
+      "bytes": 910,
+      "sha256": "0102b558557dad7e79afc2726eb34ed0ccca2b4fa213aa5f198a5cdf4d9753b4"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-preview-1.json",
+      "bytes": 910,
+      "sha256": "b57ba9dd1ae0610b55b764fcdbe482de1e4ed28bd0778596fead2581900278ab"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-preview-2.json",
+      "bytes": 910,
+      "sha256": "d548b0883728ed5919348d6e75ca0c4dbcb784a5e4597b8ffe67f98a104dd367"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-preview-3.json",
+      "bytes": 908,
+      "sha256": "c13a25c412e73cf91bd213d8442335efbaf687b43f24799fd1d6f57fa1a461ae"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-preview-4.json",
+      "bytes": 908,
+      "sha256": "c9bbd2150118ec16fea54ad3f76384bc531d69943c5b24162a3322e079525e51"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-probe-0.json",
+      "bytes": 2647,
+      "sha256": "0a16531f2c5db92932a651c09976cc2b339ae34ac316c179d4fda4b121552fd8"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-probe-1.json",
+      "bytes": 2647,
+      "sha256": "8ee358ad2a98f3f745802eeb767f4713e3c07cbfb0016f9814f6567f50cf71d8"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-probe-2.json",
+      "bytes": 2647,
+      "sha256": "fbf657fd43ad7c2107efc20e31b5da8c5d9047bad325448b7aecaaa8058cd52e"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-probe-3.json",
+      "bytes": 2647,
+      "sha256": "e6a7d17b4976f73e8a7afc45ba1006758e5f57c301a96ea6832f55d89ddaa36d"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-probe-4.json",
+      "bytes": 2647,
+      "sha256": "397ad35647c8e467590bec88270112e93ce8a6f05dd9ca19695d394e1edc1af0"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-render-0.json",
+      "bytes": 1453,
+      "sha256": "17c7ea0cb6beba724eb21275fdc0cb9d3dac606094476a16589f8b2bf4536e08"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-render-1.json",
+      "bytes": 1451,
+      "sha256": "ce36e7287d68b95960b2a416ff9c00e8d27277f7ed0e2f6276e0db438efa3d62"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-render-2.json",
+      "bytes": 1452,
+      "sha256": "3df5a0a69527d22b60cd93ca6babaf597a7f3ed62c95acc7ee8a776343e6db71"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-render-3.json",
+      "bytes": 1452,
+      "sha256": "edbe9fbc1e2876e381d2d7eb8f205fe7225cdd833d0a1040281183d8869eff14"
+    },
+    {
+      "file": "qa/firstcut04b-camera-clean-render-4.json",
+      "bytes": 1450,
+      "sha256": "3622b750a499a2c6f6888c8503ee6566408b93ca3b4bf08c5774d5ad626dc181"
+    },
+    {
+      "file": "qa/firstcut04b-camera-native.json",
+      "bytes": 993,
+      "sha256": "a641007ea9c941f143561de1b76352419d7da0118409a6f1ccf05e3f1b4f3c25"
+    },
+    {
+      "file": "qa/firstcut04b-camera-patches-v1.json",
+      "bytes": 8672,
+      "sha256": "3fee4ba78000721150aac160e349ca11d237e52318178303465830490ce0b6c9"
+    },
+    {
+      "file": "qa/firstcut04b-camera-patches-v2.json",
+      "bytes": 8677,
+      "sha256": "63d3976d53b63ad194050a4df3b7aeacdd9259ffd19139fedbbfe2aa98c2d8c3"
+    },
+    {
+      "file": "qa/firstcut04b-camera-patches-v3.json",
+      "bytes": 8677,
+      "sha256": "253433310b04daf7d4503d59dc1f3a16894278edd183eceec18873b509d6d18a"
+    },
+    {
+      "file": "qa/firstcut04b-camera-patches.json",
+      "bytes": 8677,
+      "sha256": "77221f1569ae7a074a8abfafeb83297f6ce6a41aa571310b63e5342eed83e26c"
+    },
+    {
+      "file": "qa/firstcut04b-camera-preview-0.json",
+      "bytes": 898,
+      "sha256": "44416f31ea80b631786a92f5104a1348ced74fb7eb2140d8ff57ff76a38df485"
+    },
+    {
+      "file": "qa/firstcut04b-camera-preview-1.json",
+      "bytes": 898,
+      "sha256": "04bc683a693893d6f95c4d11c2126fba830f02fc3248d569a39b09ccd1fa3000"
+    },
+    {
+      "file": "qa/firstcut04b-camera-preview-2.json",
+      "bytes": 898,
+      "sha256": "1f8c1e123d191e0afc7b4afa867e64b89ca10a6e40ce99e81eef85b198cc7588"
+    },
+    {
+      "file": "qa/firstcut04b-camera-preview-3.json",
+      "bytes": 896,
+      "sha256": "1d423a3b2596ca0abb9c4da1b605cd25057cdeee45aa05cd8c84a6c440cc5828"
+    },
+    {
+      "file": "qa/firstcut04b-camera-preview-4.json",
+      "bytes": 896,
+      "sha256": "a3d47f00e205b39ddd927d4ea90ed667c07183d1dc4f01d54d62f4dfd7f84aa7"
+    },
+    {
+      "file": "qa/firstcut04b-camera-probe-0.json",
+      "bytes": 2646,
+      "sha256": "c6c2a22047e809bef307652caf08bd5f98b3bd529f4a6a510ceb026f9b344d79"
+    },
+    {
+      "file": "qa/firstcut04b-camera-probe-1.json",
+      "bytes": 2646,
+      "sha256": "5909cb65d6d729f25c8a8d7e1bbb5f4a57370485b6fbcdd8acf284dec94ba7cd"
+    },
+    {
+      "file": "qa/firstcut04b-camera-probe-2.json",
+      "bytes": 2646,
+      "sha256": "0c849e4f1d1357dcf94defd36a4e5f1b748f873ae7adf0ac0fde5d0d7971f7b8"
+    },
+    {
+      "file": "qa/firstcut04b-camera-probe-3.json",
+      "bytes": 2646,
+      "sha256": "3f33bad864e0f27975bb08484583cf0c817b972ec2ce165a4076cf3758a09b39"
+    },
+    {
+      "file": "qa/firstcut04b-camera-probe-4.json",
+      "bytes": 2646,
+      "sha256": "aa39c15d5bdf2c7e34fd3ce0e35552f87a3066b489ac1242c358da56cba7fe8a"
+    },
+    {
+      "file": "qa/firstcut04b-camera-render-0.json",
+      "bytes": 1447,
+      "sha256": "6fd72fb02ec1db2ced042016607207f5ce7e908d4d51bec4d8d97d9c4598caa0"
+    },
+    {
+      "file": "qa/firstcut04b-camera-render-1.json",
+      "bytes": 1447,
+      "sha256": "b337097bb5b919ebe7108cb0020ee5d8c6bccb4b50a9af55c6b319fa329e01e3"
+    },
+    {
+      "file": "qa/firstcut04b-camera-render-2.json",
+      "bytes": 1448,
+      "sha256": "091d83f972e79a0904dbeb97f461a6cd9be905cb8b92bccd1f405fc91ef4e199"
+    },
+    {
+      "file": "qa/firstcut04b-camera-render-3.json",
+      "bytes": 1448,
+      "sha256": "a084a1612b10ad4c7e80e8af1684029da32f6c6c380232cc8cb7c5a81d1b1f68"
+    },
+    {
+      "file": "qa/firstcut04b-camera-render-4.json",
+      "bytes": 1446,
+      "sha256": "64cc49139895f59b6d51ad5ad4f723bb242a019b05a48b7ef13fa58dc46751e0"
+    },
+    {
+      "file": "qa/firstcut04b-camera-sampling.json",
+      "bytes": 343,
+      "sha256": "f37fcd2b04b872b4dafeae44de51ced0c45de05df7efcf25c70db3a1803d7228"
+    },
+    {
+      "file": "qa/firstcut04b-export-interruption.json",
+      "bytes": 746,
+      "sha256": "3e51b42d14e02bead5fa56b865a214f2845c16a7dd6fed6513b81eca0b603b76"
+    },
+    {
+      "file": "qa/firstcut04c-native-timeline.json",
+      "bytes": 2319,
+      "sha256": "fd91c0d3d57a194dd2cab4e6af817b3dc11cabd77911639acc016793a36ae33e"
+    },
+    {
+      "file": "qa/firstcut04c-picture-patches.json",
+      "bytes": 9247,
+      "sha256": "a780819e119687153780364772c774e1da37d392e032fd98c1e49045ec0f5563"
+    },
+    {
+      "file": "qa/firstcut04c-question-native.json",
+      "bytes": 997,
+      "sha256": "e92c6fb2d0010894d350d92e388c659b896724eb06965c869cfc2a467d4f01df"
+    },
+    {
+      "file": "qa/firstcut04c-question-next.png",
+      "bytes": 288108,
+      "sha256": "30a252b8c63167566b721adb150823b22c7a491dd7e012af039f5d54ca7937a4"
+    },
+    {
+      "file": "qa/firstcut04c-question-preview-next.json",
+      "bytes": 906,
+      "sha256": "61abd641844715b003022bac70409e6224959878ae75eded7500c973e0733492"
+    },
+    {
+      "file": "qa/firstcut04c-question-preview-writing.json",
+      "bytes": 914,
+      "sha256": "a5051cd0c424de646702ac7ca65dbaccd9a4b7a9f69a801331ce88e802976f47"
+    },
+    {
+      "file": "qa/firstcut04c-question-probe-next.json",
+      "bytes": 2652,
+      "sha256": "33d3e127e49e5afe9081334b3041893110a1aab36284b614e10725a7b2f5ed6e"
+    },
+    {
+      "file": "qa/firstcut04c-question-probe-writing.json",
+      "bytes": 2655,
+      "sha256": "bb42651dee90f340580e0d4c15777a3078467b0053ad9ec38e19d1b240319ca7"
+    },
+    {
+      "file": "qa/firstcut04c-question-render-next.json",
+      "bytes": 1472,
+      "sha256": "5492f850e328ba4b534a047a6a96fffa11653d674e013046bbdcb55ad45e0d17"
+    },
+    {
+      "file": "qa/firstcut04c-question-render-writing.json",
+      "bytes": 1494,
+      "sha256": "4da07d92fc6ce7ee4a0035cf432330c865b2fc457ea897fe40a2fcaff2c14b14"
+    },
+    {
+      "file": "qa/firstcut04c-question-writing.png",
+      "bytes": 245066,
+      "sha256": "940122d94f5ea6b316486c34ac2613ee8c37b52d426198fafe0e530490c5cb87"
+    },
+    {
+      "file": "qa/firstcut04d-card-fullrow-preview.json",
+      "bytes": 896,
+      "sha256": "0e9ab2873b92ce0d94487a00eb48deb804d4430fcb373063e25811a97679d462"
+    },
+    {
+      "file": "qa/firstcut04d-card-fullwidth.json",
+      "bytes": 730,
+      "sha256": "d5efe51ab77b91c551120ee919e0495caf6ffcd5079719199f8d25551f009b1c"
+    },
+    {
+      "file": "qa/firstcut04d-card-row-probe.json",
+      "bytes": 2655,
+      "sha256": "4a571fcdd0d0f00168196f35713c6785179746909c78629c0f9b29b30c1cc486"
+    },
+    {
+      "file": "qa/firstcut04d-card-row-render.json",
+      "bytes": 1471,
+      "sha256": "dfa78d712bf91ebb265a28734002696d6e1cc3b3f686a2f21e9492b9063e7eba"
+    },
+    {
+      "file": "qa/firstcut04d-native-125.5.png",
+      "bytes": 171386,
+      "sha256": "4add323450376e3e4477a4c8e9b1b8ce27e13baa5d4ac6f7384343efd94b330e"
+    },
+    {
+      "file": "qa/firstcut04d-native-218.png",
+      "bytes": 230908,
+      "sha256": "aa95194c02f74012fc93212503523330837421d26e4ac7378f8f58fe0c1be693"
+    },
+    {
+      "file": "qa/firstcut04d-native-414.8-fullrow.png",
+      "bytes": 222463,
+      "sha256": "f96d68aa9d563ee498abc931d78e74dee44cf043dfb95d4707dbfec604c82869"
+    },
+    {
+      "file": "qa/firstcut04d-native-414.8.png",
+      "bytes": 227648,
+      "sha256": "afc0728230426c042bfc77b7d25f453286c8ade777093a7cffa670d6353d2041"
+    },
+    {
+      "file": "qa/firstcut04d-native-462.8.png",
+      "bytes": 69986,
+      "sha256": "75f932e3b9e7eaf60f188e3186044159e1fdb3b43a87fed8ae7aab55edd6d267"
+    },
+    {
+      "file": "qa/firstcut04d-native-55.8.png",
+      "bytes": 282663,
+      "sha256": "6e7897e4f44d13156517427bcedaa3d3d6ee3fe590e76cfdeffffb79724ad4c5"
+    },
+    {
+      "file": "qa/firstcut04d-native-561.8.png",
+      "bytes": 291536,
+      "sha256": "cb661526ac9372f80cb532b308056c17f49fc154e22623ecc5b9ff50da30dcb6"
+    },
+    {
+      "file": "qa/firstcut04d-native-build.json",
+      "bytes": 1730,
+      "sha256": "96a00f374d730e4a76cae1c80140392eda6fec84c52276d79df06cc3061169e6"
+    },
+    {
+      "file": "qa/firstcut04d-native-frame-125.5.json",
+      "bytes": 880,
+      "sha256": "50c4921e951d54ed93770541fbd41ef642b6261dec2bda193655d705bd124bea"
+    },
+    {
+      "file": "qa/firstcut04d-native-frame-218.json",
+      "bytes": 874,
+      "sha256": "92f3293b754351f8b2be73d8a65de679979be637e589500b91103688a6838faa"
+    },
+    {
+      "file": "qa/firstcut04d-native-frame-414.8.json",
+      "bytes": 880,
+      "sha256": "e4dc198d9556c0294c1a9debb6f1096b95ce3d69934d1f0abe46a2cb2486ba96"
+    },
+    {
+      "file": "qa/firstcut04d-native-frame-462.8.json",
+      "bytes": 880,
+      "sha256": "1150af935df20e6df522fe58ba2a6f3273b343a94c3bcdc3e2f34915230d3233"
+    },
+    {
+      "file": "qa/firstcut04d-native-frame-55.8.json",
+      "bytes": 876,
+      "sha256": "fa1124198d072472c537e020e0a270b299acbdee1be3988223590a0779bf199f"
+    },
+    {
+      "file": "qa/firstcut04d-native-frame-561.8.json",
+      "bytes": 880,
+      "sha256": "a6e5c6eddd4e0b4533074b961a69d68a5491b9f2e38b3854c8e056b30b7d1d03"
+    },
+    {
+      "file": "qa/firstcut04d-native-layout.json",
+      "bytes": 785,
+      "sha256": "2d85e7d7c6272f02ce9c0d20f44d265d94593bcac5f0e088a23814a227bf4fa5"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-0.json",
+      "bytes": 1450,
+      "sha256": "e822d3987de167166af3007e100d50482c647c43c6c09836fdd4c7bb30ac28dd"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-1.json",
+      "bytes": 1437,
+      "sha256": "189334878de94463694e4b62d381b7d97ee92303e1a907142674c63a2bc7ba9d"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-10.json",
+      "bytes": 1438,
+      "sha256": "f28b9340a26d45decf353c71458f09183fa2808b05b236442b6319f358b8e52d"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-11.json",
+      "bytes": 1460,
+      "sha256": "379958ad3379767378468e3579b09d68c4d16efbef6e19511bb6d51214b4ac1c"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-12.json",
+      "bytes": 1451,
+      "sha256": "5a5e822cdbd6c28a97fda7fd55c2c1f80378f37f2b58f945dfb4ebc0bf2a7ebb"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-13.json",
+      "bytes": 1454,
+      "sha256": "524b0ada6c4706d148ec7b5540ab17a385ec55f625bae2116286554cccedac2c"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-14.json",
+      "bytes": 1451,
+      "sha256": "7552a3e413d0d1af6f8e7da8a8a171c2dab05c38f060541f28edc8c757eaf22c"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-15.json",
+      "bytes": 1459,
+      "sha256": "e17fc4665a69e2ffc3e4ccf233b14179b07f7885db78ec0e1f033dc9be6e62d6"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-16.json",
+      "bytes": 1451,
+      "sha256": "e686ae1b8e1ed6a6daf1321fc200557ee5e8a0688d33c6792c3613f213df13fd"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-17.json",
+      "bytes": 1450,
+      "sha256": "29cc743f9616e246e744834c4acf20a7010fe9d9c927e953d94d51a2ddaac4cf"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-18.json",
+      "bytes": 1451,
+      "sha256": "b61ac82deada668e788b29442c100c85ea027d8bca46f4bba19dc7a68c303527"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-19.json",
+      "bytes": 1450,
+      "sha256": "54558dbefc90c53c10dbe0b27eb499b8f80810c0a50b0714863169e6990d5f33"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-2.json",
+      "bytes": 1423,
+      "sha256": "47c7af4d1222ecda64dea855c739d980a638ac17bd943a6f7c83875978107bf6"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-20.json",
+      "bytes": 1446,
+      "sha256": "d407b5486b5dabef64d98e2aa74ee785607c90abad2f5952382fdd2c7c082365"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-21.json",
+      "bytes": 1432,
+      "sha256": "30872263903962d556269f671688c9e627d353f649c5e7eff57a8ad21f571cba"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-22.json",
+      "bytes": 1423,
+      "sha256": "6d4bccc9d213cb4f792a835445d35bf3c394c8cc3ca7e808174a4f0035c9e287"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-23.json",
+      "bytes": 1436,
+      "sha256": "fa7c70422e7c8d4537516dcc351379052242d331933e9cf180a6343127e41621"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-24.json",
+      "bytes": 1438,
+      "sha256": "c3e20873479e3039ddd5ba9578b2b86835df425a122611875e407426fa9e07ce"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-25.json",
+      "bytes": 1449,
+      "sha256": "45ff75c70cffc306bf4d83e7a345bfd1be5b0bc654fadd67e7202a5eed11cb35"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-26.json",
+      "bytes": 1445,
+      "sha256": "d761175dec064cb182b38924e5b0a41bef6f9ad5cd7ea6cda52c12f5ff64392d"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-27.json",
+      "bytes": 1449,
+      "sha256": "905ef86893dab9bd49d01198b6fa4a2b6f5d3557586e4da5effffe66cd1cef8c"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-28.json",
+      "bytes": 1437,
+      "sha256": "b9a19e9f6cf6a6d529c04b2760b86646e5af26d2784c34267d55ca0577483a83"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-29.json",
+      "bytes": 1438,
+      "sha256": "4f203bdd0da7f9bc756f1401ef5fd538bf1916a0f4be7863abb00d634dec53fd"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-3.json",
+      "bytes": 1435,
+      "sha256": "651e9e52e46550b078366d9a3aa6ca92c7a460c7f4c8d2149b52d52f698ae62f"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-30.json",
+      "bytes": 1451,
+      "sha256": "1c776b631b83b62c87e8403ef0afd645760f7f57cf0bf8f96b8b4343a373806d"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-31.json",
+      "bytes": 1425,
+      "sha256": "54b83325e1d4425adc141bb8909864c35295ec78478edc36840ce6e4fa92615e"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-32.json",
+      "bytes": 1448,
+      "sha256": "503c5d33ef05d345e3f7efecd4c9df303cfb478838d6276857338a8a537bd65a"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-33.json",
+      "bytes": 1449,
+      "sha256": "a674755dbf60ede022f4b229245a286d258d1fd8243213b801e03fe5c2273035"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-34.json",
+      "bytes": 1438,
+      "sha256": "7f5d32b0cff74bd7c3b5d999c8aa73131d278dd6efd894a793dbef6d7678373e"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-35.json",
+      "bytes": 1439,
+      "sha256": "72e231062fedbf49fc9579601049382093484ea905f8e23d4419b0bdf5595c85"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-36.json",
+      "bytes": 1450,
+      "sha256": "b5d6a2cfcf2bc19af1951f4f74fcd75be9a7d66400d3bfcd9178112729b0a385"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-37.json",
+      "bytes": 1452,
+      "sha256": "f0b1ba5bf4c462e94a17473ced6d46bbe291aa3f33b153a5ffe624985c9d6e1a"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-38.json",
+      "bytes": 1450,
+      "sha256": "3fca6eb01a914d598167d59ce2311c01c286d88780f54af8a147503285fe8d57"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-39.json",
+      "bytes": 1448,
+      "sha256": "5dfd49ee8dda980fead9cbbfd1e460303fba5db77a8530e10f9408fe9b55caba"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-4.json",
+      "bytes": 1459,
+      "sha256": "42c54dacb54dbe8e912ed94e80a178636b17e7c82182a331b5e8b1e859cfc6ec"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-40.json",
+      "bytes": 1436,
+      "sha256": "580c25e26bec13c5dd5a16e79634ac5e5e1c3abf3a6f59eb7a0b0fe8f97dc9de"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-41.json",
+      "bytes": 1437,
+      "sha256": "ea3426d1298069d9813875afa29759efaf79a6f4cae217c201e74cfd8550e71b"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-5.json",
+      "bytes": 1434,
+      "sha256": "1d18c8b23ae540af333daa2e78fce8821f2a83795cf3b2139288acd907eb8639"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-6.json",
+      "bytes": 1440,
+      "sha256": "97967c09695b897a7ec4a5aff45c794213bb5c5b5a13d766b5c5e0ad8334710f"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-7.json",
+      "bytes": 1451,
+      "sha256": "2d822c0d96a24a862424d4c9af109413638aeebf0ca453ffa1acb190baac6378"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-8.json",
+      "bytes": 1438,
+      "sha256": "eb8b3b449c42470a12da1a295c68a7634f8d12764b7f2a7633677e727d388b0a"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-9.json",
+      "bytes": 1436,
+      "sha256": "93b88ea76179d7fb7be85c7741fdb2a7ed115f229bdd9fe920624eb894bb0d91"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-0.json",
+      "bytes": 2641,
+      "sha256": "5a9f4a1dc6c3fae3403f4aaaeb9340f7e80f6ad8a55be4aec2471dbdf265c4f6"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-1.json",
+      "bytes": 2644,
+      "sha256": "46a813ca27d4c6b3df40d4b02322f540542733cc7416df69bac2ba214dab053b"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-10.json",
+      "bytes": 2644,
+      "sha256": "7404e574f23deee628f1f0d982c99059ed54175eae819526ce881324cb9ddfc6"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-11.json",
+      "bytes": 2644,
+      "sha256": "7e00ca51bd3a8287689f7c91182c90f6a8f747ac89c396de68030bf774593f98"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-12.json",
+      "bytes": 2644,
+      "sha256": "04a677f443d75f67cc8160f5d596079fbbd6b53d3a0e19ebd4078d99923c736e"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-13.json",
+      "bytes": 2647,
+      "sha256": "e8f691467291f71bbecd5921bbc0a4a1da3485a99ba7f329d99c076a14bbb589"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-14.json",
+      "bytes": 2644,
+      "sha256": "95c0a7c43683eb034d78e2a11bd6d6f05ef3596be29cbf1a3a546469883fd747"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-15.json",
+      "bytes": 2641,
+      "sha256": "d017e36652bd01598d57c2ac370b76fe124d7e44e27f464d788b4c5977a1b4d6"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-16.json",
+      "bytes": 2644,
+      "sha256": "165356c2e9b1a9c90e822926d22ec2407715c1b8b13634d3836785edb23be0bd"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-17.json",
+      "bytes": 2641,
+      "sha256": "cce9250d79a136dfcef9ca7dc00983db7c19b89cc7412786038acd82f7b95839"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-18.json",
+      "bytes": 2644,
+      "sha256": "e68610706cfc3948e6b10aac3d45bf96aa2e40d7b9e07ffe20bd9dcb89315b81"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-19.json",
+      "bytes": 2644,
+      "sha256": "049329a19d42a770b9184eb49ed2e7f3fdd688a363bb7701b46794119cdfc557"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-2.json",
+      "bytes": 2644,
+      "sha256": "1f0a77d7d15f2046c0d0bb94823c93143fd5234c725743e7acd4d0f1a05b5d06"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-20.json",
+      "bytes": 2644,
+      "sha256": "92ba7ec68612530694be3ed8054f83103d718ef52547e30a7a6ab3ca12ffdeab"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-21.json",
+      "bytes": 2644,
+      "sha256": "fe7fdad0106d289b3da8b3e0cb569ae998d256be787c2a1562ac6d0d608e8c84"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-22.json",
+      "bytes": 2644,
+      "sha256": "a0832e0eaaa9bf57f6b5642c4b993bf415b98272dd532b9de8c2855540f8984d"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-23.json",
+      "bytes": 2641,
+      "sha256": "87970c3e8b9a6a6c4659e2eccd493ab4111e8941d625e239a3d63e6e20b80ef1"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-24.json",
+      "bytes": 2644,
+      "sha256": "f2c4c65ed14aaac079ef02a60c74ccc64877aefff25d0f5ec930b87f9e057afa"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-25.json",
+      "bytes": 2644,
+      "sha256": "41fbb9dfc5457afbae2f1d9544cb06b64fa0a6f047cb16b4b51f91a7c760d13d"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-26.json",
+      "bytes": 2644,
+      "sha256": "3f1a68008093f260bf7dcee1f12e528673f4a2324bfddfb2e5876fe40cb28c0a"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-27.json",
+      "bytes": 2641,
+      "sha256": "dce9d482c72ed412e51449c4579614b365619d2a806e75a389a2fadfc70c4cfd"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-28.json",
+      "bytes": 2644,
+      "sha256": "864acb2f18cd54c057c58e29db2b16d65aa797d7ca92528850c7af3eb4be73ab"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-29.json",
+      "bytes": 2644,
+      "sha256": "23c4dc0d31cb7f18d1978f0f0f37cf0b3f74405d576ab4df3264c8e77283c5a8"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-3.json",
+      "bytes": 2641,
+      "sha256": "7ad522b3254bfc36cf283e22e0f969c564f1b42677c54bbc8e1e306d58e0ac64"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-30.json",
+      "bytes": 2644,
+      "sha256": "552e63ca745162e7fb3ad8c3c76c545b2ed1adf8af2482595d2744032610d2b3"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-31.json",
+      "bytes": 2644,
+      "sha256": "537425b73c8a42c1041c08ea75c5f95ba1d679c514d5d9b9c5f52048ffb6b7ba"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-32.json",
+      "bytes": 2641,
+      "sha256": "033232395ca36e71773581e264eda144ce8164743818bcc596bec2d73fcf241c"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-33.json",
+      "bytes": 2644,
+      "sha256": "d989785199c8fb3bcac4e3508ae2d864239761c6b442e5bb209813dcf604f62e"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-34.json",
+      "bytes": 2647,
+      "sha256": "33dbd7b873cfea370a458bf7b41eaa457bc3386caf9b7e439b6ffadb59f3e2de"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-35.json",
+      "bytes": 2647,
+      "sha256": "bf78918811621c32b436f16161ea513aa3fac587af2fffae568c274d59ae45af"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-36.json",
+      "bytes": 2644,
+      "sha256": "96b5eb580248660854f4a2a07ba23eef5a4d9acefb02c17b50451dcd392fdd1c"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-37.json",
+      "bytes": 2646,
+      "sha256": "15a916af96a80fee41f57a3aac009c3d83750d6b7c4efec2b52205edd9eadd14"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-38.json",
+      "bytes": 2647,
+      "sha256": "19494a939b41c5c4a623e191a2224f8055e86509966f25027af753f9d7751aa8"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-39.json",
+      "bytes": 2641,
+      "sha256": "da60788f9435df1797cfd295af9a5c8cc25ae6008d2c5add46e4a7d73f04fb31"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-4.json",
+      "bytes": 2644,
+      "sha256": "ec1348755d18e306790cb388396f24be17279e54f3ba2f854e7c27085f2ea30a"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-40.json",
+      "bytes": 2644,
+      "sha256": "2acd860f3dcbf6e2a586862fd9b0ca6ee56a0f1951ae89e76210439ed2fa554d"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-41.json",
+      "bytes": 2644,
+      "sha256": "2b24fc31773975b9629ca5e145e9e542f84b6778f4c90476e559d0ab8d821236"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-5.json",
+      "bytes": 2644,
+      "sha256": "63789b32cec057bc93b34849f5555df37aba4e14b3ed4a8740dff51e29437865"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-6.json",
+      "bytes": 2647,
+      "sha256": "a93375087bfc5ddc29f4c6c7e1e8db187d2837b217915959ed9afde998c28a10"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-7.json",
+      "bytes": 2644,
+      "sha256": "c0f83b43485569d2c379cffe8d8132c23e41785593d593be75acc777cd5ea519"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-8.json",
+      "bytes": 2644,
+      "sha256": "9f99b38adab1d0004b1898d8dfb50e4b6fc257c74c57c21fb19f5a57fae96d6f"
+    },
+    {
+      "file": "qa/firstcut04d-native-range-probe-9.json",
+      "bytes": 2644,
+      "sha256": "49cbfd77db3a57f07d2a01671950c3424748f7065371c692a0c6b4f9d86805f6"
+    },
+    {
+      "file": "qa/firstcut04d-picture-patches.json",
+      "bytes": 8984,
+      "sha256": "21d6dee9a5b0bd76afcff37a15887efaa9b5dd78402800fce9f4f52431d8f24a"
+    },
+    {
+      "file": "qa/firstcut04d-plan.json",
+      "bytes": 45192,
+      "sha256": "ae8b6cd7ca7ebd63e3cdbe35ed0697bd5085884a33bc30171a985e5e15db83cc"
+    },
+    {
+      "file": "qa/firstcut04d-stage-copy-interruption.json",
+      "bytes": 491,
+      "sha256": "e6415633099d6359774ebb9e2c2ca546b61d41a52c93958ed4bd086214aeb728"
+    },
+    {
+      "file": "qa/free-bgm-candidate.json",
+      "bytes": 5653,
+      "sha256": "c6d3ab399e9336828fb76517ca63f2e9b6c28ce77077e28c676b4a7c50c9f5bd"
+    },
+    {
+      "file": "qa/model04-alpha-bounds.json",
+      "bytes": 325,
+      "sha256": "c9d1455677e9f72739f4124490df7e4da57869a0cb77c48428cdb9da7e2888b0"
+    },
+    {
+      "file": "qa/model04-alpha-check.json",
+      "bytes": 1008,
+      "sha256": "dd1d31302a3654f67b5ba8ea949d56abcc8faa4b844c5f4c060ca0cb6ed59ed0"
+    },
+    {
+      "file": "qa/model04-binding.json",
+      "bytes": 2429,
+      "sha256": "1c236504043f9ee08da49a8884bc09107b18a8ea2cbae7f3ac071d5cf5d75750"
+    },
+    {
+      "file": "qa/model04-compile.json",
+      "bytes": 685,
+      "sha256": "5776547674a8ae39702d3a34f07f71fad5565e9e929a95526b29db5aaf7633ad"
+    },
+    {
+      "file": "qa/model04-native-render.json",
+      "bytes": 2764,
+      "sha256": "8cb37b6a7b316bc8548df864741fb9315c782b5ba9faa103501b06fbc9868cc9"
+    },
+    {
+      "file": "qa/model04-prores.json",
+      "bytes": 762,
+      "sha256": "e92ff6fe20088cac51314f0e22eee4c4881a1ee4c3ede038b8da3498cfbebfa8"
+    },
+    {
+      "file": "photocraft-stage/firstcut04-game-crop.png",
+      "sourceAlias": "covers/firstcut04-game-crop-F.png",
+      "bytes": 12220,
+      "sha256": "cb5aef0b1bab46eec887d80cae605505d346f9f91780a60eca3c0ec66e7e741d"
+    },
+    {
+      "file": "photocraft-stage/emberwake-firstcut04.pcraft",
+      "sourceAlias": "covers/emberwake-firstcut04.pcraft",
+      "bytes": 701511,
+      "sha256": "c361ee83204eff06e081c38631cd140bd9fd9acf5c46cec1347dcac22a48ebfa"
+    },
+    {
+      "file": "photocraft-stage/emberwake-firstcut04.png",
+      "sourceAlias": "covers/emberwake-firstcut04.png",
+      "bytes": 177781,
+      "sha256": "a363bf24e0a66504f439cc6a40dca3795320a1d1f42dd8a9cae78697f076e604"
+    }
+  ],
+  "dependencies": [
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.1.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep01-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.2.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep02-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.3.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep03-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.4.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep01-replay-controls01-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.5.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep10-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.6.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep02-normal-route01-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.7.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep11-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.8.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep12-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.9.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep04-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.10.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep05-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.11.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep06-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.12.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep07-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.13.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep08-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.14.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep09-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.15.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04-art-pair.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.16.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\traveler-old24-demo.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.17.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\traveler-demo.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.18.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04-art-detail.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.19.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\ep13-game.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.ecproj.items.12363.kind.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\natural04.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.5.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-visual-base.mp4"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.6.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-00.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.7.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-01.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.8.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-02.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.9.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-03.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.10.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-04.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.11.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-05.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.12.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-06.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.13.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-07.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.14.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-08.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.15.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-09.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.16.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-10.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.17.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-11.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.18.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-12.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.19.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-13.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.20.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-14.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.21.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-15.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.22.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-16.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.23.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-17.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.24.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-18.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.25.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-19.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.26.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-20.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.27.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-21.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.28.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-22.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.29.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-23.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.30.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-24.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.31.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-25.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.32.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-26.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.33.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-27.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.34.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-28.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.35.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-29.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.36.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-30.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.37.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-31.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.38.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-32.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.39.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-33.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.40.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-34.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.41.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-35-fullrow.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.42.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-36.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.43.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-37.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.44.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-38.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.45.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-39.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.46.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-40.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.47.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\firstcut04d-patch-41.mov"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.48.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\emberwake-firstcut04-narration.wav"
+    },
+    {
+      "field": "projects/emberwake-firstcut04d.fcproj.project.items.49.kind.Media.media.File.path",
+      "path": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04d\\media\\emberwake-firstcut04-music-ducked.wav"
+    }
+  ],
+  "missing": 0,
+  "fcOnlineMedia": 45,
+  "sourceMediaTemporarilyUnavailable": true,
+  "sourceMediaRestored": true,
+  "externalOwnerFilesRenamed": false,
+  "rawModelOrSdkBundled": false,
+  "pcImageSourcesEmbedded": [
+    {
+      "kind": "embedded",
+      "file_name": "firstcut04-game-crop.png",
+      "blob": "c6843e5bd336811662c01d24b0c715beba7049449988b16f014695f9e4b5bf55"
+    }
+  ],
+  "previousFRevisionRequired": false,
+  "nativeProjects": [
+    "projects/emberwake-firstcut04d.ecproj",
+    "projects/emberwake-firstcut04d.fcproj",
+    "covers/emberwake-firstcut04.pcraft",
+    "projects/emberwake-firstcut04-reopened.pcraft"
+  ],
+  "receipts": [
+    "firstcut04d-delivery-ec-media.json",
+    "firstcut04d-delivery-ec-camera.json",
+    "firstcut04d-delivery-ec-opening.json",
+    "firstcut04d-delivery-fc-media.json",
+    "firstcut04d-delivery-fc-camera.json",
+    "firstcut04d-delivery-pc-save.json",
+    "firstcut04d-delivery-pc-render.json"
+  ],
+  "wholeFcExportComplete": true,
+  "rootAccepted": false,
+  "published": false,
+  "finalVideo": "videos/emberwake-firstcut04d-f-native.mp4",
+  "finalVideoSha256": "ddb6263a9f0fd9a4c77f6bae6b101d5e386aa9ce826927d1d338d0ba961422d3",
+  "actualSeconds": 620.885,
+  "sourceRenderSuccess": false,
+  "preliminarySourceExportsInterrupted": [
+    "emberwake-firstcut04",
+    "emberwake-firstcut04b"
+  ],
+  "sourceMediaUnavailableDuringWholeExport": true,
+  "sourceMediaUnavailableDuringNativeProof": true,
+  "nativeFHashes": {
+    "projects/emberwake-firstcut04d.ecproj": "39e6142b29f14f7813b1561791d535198090678853d05c35cf83b74fbb9fe847",
+    "projects/emberwake-firstcut04d.fcproj": "338f0a5c7dd00122406705e2f509fffba6a49fc72f16367ebe5b855f6eec941b",
+    "covers/emberwake-firstcut04.pcraft": "c361ee83204eff06e081c38631cd140bd9fd9acf5c46cec1347dcac22a48ebfa",
+    "projects/emberwake-firstcut04-reopened.pcraft": "2b6c695c3ca4ed7d5347a4ca77ba0a2ea469e49d1dbca0a6f225189c07d29674"
+  },
+  "privateOwnedJob": "/home/pui/tmp/projectp-emberwake-longform-20261028/firstcut04d-F-job01",
+  "publicVideoId": null
+}

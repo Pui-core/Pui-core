@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-firstcut04d.ecproj",
+    "--save",
+    "run",
+    "prop.set",
+    "{\"layer\":13492,\"path\":\"transform/scale\",\"value\":[111,100,100]}",
+    "--json"
+  ],
+  "stdout": "{\"result\":[{\"command\":\"prop.set\",\"result\":[111.0,100.0,100.0]}],\"saved\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\projects\\\\emberwake-firstcut04d.ecproj\"}\n",
+  "stderr": ""
+}

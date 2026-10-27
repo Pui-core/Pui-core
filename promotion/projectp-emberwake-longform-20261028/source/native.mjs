@@ -19,5 +19,5 @@ export function run(exe,args,receipt,input){return new Promise((resolve,reject)=
 export function copy(a,b){fs.mkdirSync(path.dirname(b),{recursive:true});fs.copyFileSync(a,b);if(hash(a)!==hash(b))throw Error('Copy hash differs: '+b);}
 // A portable-F proof deliberately hides only this task's source media.
 // A concurrent helper must not recreate an empty media directory and block restoration.
-for(const hidden of ['media-hidden-for-F-proof','media-hidden-for-F-proof04'])if(fs.existsSync(file(hidden))&&!fs.existsSync(file('media')))throw Error('Owned F native proof is active; use its F assets or wait for source media restoration');
+if(fs.readdirSync(root).some(n=>n.startsWith('media-hidden-for-F-proof')))throw Error('Owned F native proof is active; use its F assets or wait for source media restoration');
 for(const p of ['source','media','projects','videos','covers','qa'])fs.mkdirSync(file(p),{recursive:true});

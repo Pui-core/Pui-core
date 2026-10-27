@@ -1,0 +1,2082 @@
+{
+  "changes": [
+    {
+      "type": "replace",
+      "reason": "Remove two fractional scraps and match the second-episode narration",
+      "oldIds": [
+        "u025 context-actual-play 68",
+        "u025 context-actual-play 69",
+        "u025 context-actual-play 70",
+        "u025 context-actual-play 71"
+      ],
+      "shot": {
+        "id": "u025 continuous same-episode context",
+        "file": "media/ep02-normal-route01-game.mp4",
+        "sourceStart": 445,
+        "start": 3747,
+        "end": 3986,
+        "unit": "u025",
+        "kind": "context-actual-play",
+        "camera": {
+          "anchor": [
+            459,
+            740
+          ],
+          "position": [
+            733,
+            645
+          ],
+          "scale": 185
+        },
+        "cameraPath": [
+          {
+            "time": 124.9,
+            "anchor": [
+              459,
+              740
+            ]
+          },
+          {
+            "time": 125.56666666666666,
+            "anchor": [
+              459,
+              740
+            ]
+          },
+          {
+            "time": 126.06666666666666,
+            "anchor": [
+              548,
+              740
+            ]
+          },
+          {
+            "time": 126.56666666666666,
+            "anchor": [
+              771.1111111111111,
+              740
+            ]
+          },
+          {
+            "time": 127.06666666666666,
+            "anchor": [
+              832,
+              740
+            ]
+          },
+          {
+            "time": 127.56666666666666,
+            "anchor": [
+              831.5555555555555,
+              740
+            ]
+          },
+          {
+            "time": 128.06666666666666,
+            "anchor": [
+              956,
+              740
+            ]
+          },
+          {
+            "time": 128.56666666666666,
+            "anchor": [
+              968,
+              740
+            ]
+          },
+          {
+            "time": 129.06666666666666,
+            "anchor": [
+              968,
+              740
+            ]
+          },
+          {
+            "time": 129.56666666666666,
+            "anchor": [
+              968,
+              740
+            ]
+          },
+          {
+            "time": 130.06666666666666,
+            "anchor": [
+              956,
+              740
+            ]
+          },
+          {
+            "time": 130.56666666666666,
+            "anchor": [
+              960,
+              740
+            ]
+          },
+          {
+            "time": 131.06666666666666,
+            "anchor": [
+              972,
+              740
+            ]
+          },
+          {
+            "time": 131.56666666666666,
+            "anchor": [
+              952,
+              740
+            ]
+          },
+          {
+            "time": 132.06666666666666,
+            "anchor": [
+              968,
+              740
+            ]
+          },
+          {
+            "time": 132.56666666666666,
+            "anchor": [
+              972,
+              740
+            ]
+          },
+          {
+            "time": 132.86666666666667,
+            "anchor": [
+              972,
+              740
+            ]
+          }
+        ]
+      },
+      "affected": [
+        3747,
+        3986
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Keep the visible actual Next/Depart/Skip controls and release the matching quote page for uninterrupted reading",
+      "oldIds": [
+        "u044 actual-ui 20",
+        "u044 actual-ui 21",
+        "u044 actual-play 22"
+      ],
+      "shot": {
+        "id": "u044 ordinary captured dialogue button sequence",
+        "file": "media/ep02-normal-route01-game.mp4",
+        "sourceStart": 221,
+        "start": 6527,
+        "end": 6746,
+        "unit": "u044",
+        "kind": "actual-ui",
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        }
+      },
+      "affected": [
+        6527,
+        6746
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Replace two tiny flashes with the actual matching notebook page",
+      "oldIds": [
+        "u093 context-actual-play 196",
+        "u093 context-actual-play 197",
+        "u093 context-actual-play 198"
+      ],
+      "shot": {
+        "id": "u093 actual memory with explicit editorial reflow",
+        "file": "media/ep09-game.mp4",
+        "sourceStart": 1757,
+        "start": 12402,
+        "end": 12518,
+        "unit": "u093",
+        "kind": "actual-ui-edited-reflow",
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        }
+      },
+      "affected": [
+        12402,
+        12518
+      ]
+    },
+    {
+      "type": "retime-art-only",
+      "oldIds": [
+        "u099 media/traveler-old24-demo.mov"
+      ],
+      "shot": {
+        "id": "u099 media/traveler-old24-demo.mov",
+        "file": "media/traveler-old24-demo.mov",
+        "sourceStart": 0,
+        "start": 13633,
+        "end": 13889,
+        "camera": {
+          "anchor": [
+            256,
+            256
+          ],
+          "position": [
+            550,
+            615
+          ],
+          "scale": 100
+        },
+        "unit": "u099",
+        "kind": "retained-art-motion",
+        "comparisonParallel": true,
+        "sourceEnd": 240,
+        "artVisualizationRate": 0.9375
+      },
+      "oldEnd": 13873,
+      "affected": [
+        13633,
+        13889
+      ],
+      "reason": "Fit the six illustrative poses to the existing natural narration; no freeze/loop/gameplay speed change"
+    },
+    {
+      "type": "retime-art-only",
+      "oldIds": [
+        "u099 media/traveler-demo.mov"
+      ],
+      "shot": {
+        "id": "u099 media/traveler-demo.mov",
+        "file": "media/traveler-demo.mov",
+        "sourceStart": 0,
+        "start": 13633,
+        "end": 13889,
+        "camera": {
+          "anchor": [
+            256,
+            256
+          ],
+          "position": [
+            1270,
+            615
+          ],
+          "scale": 100
+        },
+        "unit": "u099",
+        "kind": "retained-art-motion",
+        "comparisonParallel": true,
+        "sourceEnd": 240,
+        "artVisualizationRate": 0.9375
+      },
+      "oldEnd": 13873,
+      "affected": [
+        13633,
+        13889
+      ],
+      "reason": "Fit the six illustrative poses to the existing natural narration; no freeze/loop/gameplay speed change"
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u004 context-actual-play 39"
+      ],
+      "shot": {
+        "id": "u004 context-actual-play 39 continuous actual UI",
+        "file": "media/ep01-game.mp4",
+        "sourceStart": 217,
+        "start": 613,
+        "end": 622,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u004",
+        "kind": "actual-ui",
+        "sourceEpisode": 1,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        613,
+        622
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u009 context-actual-play 51"
+      ],
+      "shot": {
+        "id": "u009 context-actual-play 51 continuous actual UI",
+        "file": "media/ep01-game.mp4",
+        "sourceStart": 1529,
+        "start": 1587,
+        "end": 1602,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u009",
+        "kind": "actual-ui",
+        "sourceEpisode": 1,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        1587,
+        1602
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u010 context-actual-play 53"
+      ],
+      "shot": {
+        "id": "u010 context-actual-play 53 continuous actual UI",
+        "file": "media/ep01-game.mp4",
+        "sourceStart": 1544,
+        "start": 1674,
+        "end": 1676,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u010",
+        "kind": "actual-ui",
+        "sourceEpisode": 1,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        1674,
+        1676
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u011 context-actual-play 55"
+      ],
+      "shot": {
+        "id": "u011 context-actual-play 55 continuous actual UI",
+        "file": "media/ep01-game.mp4",
+        "sourceStart": 1546,
+        "start": 1748,
+        "end": 1759,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u011",
+        "kind": "actual-ui",
+        "sourceEpisode": 1,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        1748,
+        1759
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u029 context-actual-play 76"
+      ],
+      "shot": {
+        "id": "u029 context-actual-play 76 continuous actual UI",
+        "file": "media/ep02-game.mp4",
+        "sourceStart": 267,
+        "start": 4709,
+        "end": 4735,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u029",
+        "kind": "actual-ui",
+        "sourceEpisode": 2,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        4709,
+        4735
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u031 context-actual-play 79"
+      ],
+      "shot": {
+        "id": "u031 context-actual-play 79 continuous actual UI",
+        "file": "media/ep02-game.mp4",
+        "sourceStart": 1450,
+        "start": 4878,
+        "end": 4894,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u031",
+        "kind": "actual-ui",
+        "sourceEpisode": 2,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        4878,
+        4894
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u036 context-actual-play 89"
+      ],
+      "shot": {
+        "id": "u036 context-actual-play 89 continuous actual UI",
+        "file": "media/ep03-game.mp4",
+        "sourceStart": 272,
+        "start": 5702,
+        "end": 5730,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u036",
+        "kind": "actual-ui",
+        "sourceEpisode": 3,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        5702,
+        5730
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u038 context-actual-play 93"
+      ],
+      "shot": {
+        "id": "u038 context-actual-play 93 continuous actual UI",
+        "file": "media/ep03-game.mp4",
+        "sourceStart": 1462,
+        "start": 5904,
+        "end": 5921,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u038",
+        "kind": "actual-ui",
+        "sourceEpisode": 3,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        5904,
+        5921
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u039 context-actual-play 95"
+      ],
+      "shot": {
+        "id": "u039 context-actual-play 95 continuous actual UI",
+        "file": "media/ep03-game.mp4",
+        "sourceStart": 1479,
+        "start": 5993,
+        "end": 6005,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u039",
+        "kind": "actual-ui",
+        "sourceEpisode": 3,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        5993,
+        6005
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u040 context-actual-play 97"
+      ],
+      "shot": {
+        "id": "u040 context-actual-play 97 continuous actual UI",
+        "file": "media/ep03-game.mp4",
+        "sourceStart": 1688,
+        "start": 6077,
+        "end": 6089,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u040",
+        "kind": "actual-ui",
+        "sourceEpisode": 3,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        6077,
+        6089
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u046 context-actual-play 108"
+      ],
+      "shot": {
+        "id": "u046 context-actual-play 108 continuous actual UI",
+        "file": "media/ep04-game.mp4",
+        "sourceStart": 152,
+        "start": 7097,
+        "end": 7117,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u046",
+        "kind": "actual-ui",
+        "sourceEpisode": 4,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        7097,
+        7117
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u047 context-actual-play 110"
+      ],
+      "shot": {
+        "id": "u047 context-actual-play 110 continuous actual UI",
+        "file": "media/ep04-game.mp4",
+        "sourceStart": 277,
+        "start": 7189,
+        "end": 7193,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u047",
+        "kind": "actual-ui",
+        "sourceEpisode": 4,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        7189,
+        7193
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u050 context-actual-play 116"
+      ],
+      "shot": {
+        "id": "u050 context-actual-play 116 continuous actual UI",
+        "file": "media/ep04-game.mp4",
+        "sourceStart": 1509,
+        "start": 7570,
+        "end": 7571,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u050",
+        "kind": "actual-ui",
+        "sourceEpisode": 4,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        7570,
+        7571
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u051 context-actual-play 118"
+      ],
+      "shot": {
+        "id": "u051 context-actual-play 118 continuous actual UI",
+        "file": "media/ep04-game.mp4",
+        "sourceStart": 1510,
+        "start": 7643,
+        "end": 7664,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u051",
+        "kind": "actual-ui",
+        "sourceEpisode": 4,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        7643,
+        7664
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u055 context-actual-play 125"
+      ],
+      "shot": {
+        "id": "u055 context-actual-play 125 continuous actual UI",
+        "file": "media/ep05-game.mp4",
+        "sourceStart": 157,
+        "start": 8098,
+        "end": 8120,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u055",
+        "kind": "actual-ui",
+        "sourceEpisode": 5,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        8098,
+        8120
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u058 context-actual-play 130"
+      ],
+      "shot": {
+        "id": "u058 context-actual-play 130 continuous actual UI",
+        "file": "media/ep05-game.mp4",
+        "sourceStart": 1517,
+        "start": 8360,
+        "end": 8376,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u058",
+        "kind": "actual-ui",
+        "sourceEpisode": 5,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        8360,
+        8376
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u059 context-actual-play 132"
+      ],
+      "shot": {
+        "id": "u059 context-actual-play 132 continuous actual UI",
+        "file": "media/ep05-game.mp4",
+        "sourceStart": 1533,
+        "start": 8448,
+        "end": 8460,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u059",
+        "kind": "actual-ui",
+        "sourceEpisode": 5,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        8448,
+        8460
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u063 context-actual-play 137"
+      ],
+      "shot": {
+        "id": "u063 context-actual-play 137 continuous actual UI",
+        "file": "media/ep06-game.mp4",
+        "sourceStart": 162,
+        "start": 8766,
+        "end": 8771,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u063",
+        "kind": "actual-ui",
+        "sourceEpisode": 6,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        8766,
+        8771
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u065 context-actual-play 141"
+      ],
+      "shot": {
+        "id": "u065 context-actual-play 141 continuous actual UI",
+        "file": "media/ep06-game.mp4",
+        "sourceStart": 1519,
+        "start": 8952,
+        "end": 8972,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u065",
+        "kind": "actual-ui",
+        "sourceEpisode": 6,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        8952,
+        8972
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u066 context-actual-play 143"
+      ],
+      "shot": {
+        "id": "u066 context-actual-play 143 continuous actual UI",
+        "file": "media/ep06-game.mp4",
+        "sourceStart": 1539,
+        "start": 9044,
+        "end": 9070,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u066",
+        "kind": "actual-ui",
+        "sourceEpisode": 6,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        9044,
+        9070
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u072 context-actual-play 156"
+      ],
+      "shot": {
+        "id": "u072 context-actual-play 156 continuous actual UI",
+        "file": "media/ep07-game.mp4",
+        "sourceStart": 292,
+        "start": 9955,
+        "end": 9958,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u072",
+        "kind": "actual-ui",
+        "sourceEpisode": 7,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        9955,
+        9958
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u073 context-actual-play 158"
+      ],
+      "shot": {
+        "id": "u073 context-actual-play 158 continuous actual UI",
+        "file": "media/ep07-game.mp4",
+        "sourceStart": 417,
+        "start": 10030,
+        "end": 10056,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u073",
+        "kind": "actual-ui",
+        "sourceEpisode": 7,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        10030,
+        10056
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u074 context-actual-play 160"
+      ],
+      "shot": {
+        "id": "u074 context-actual-play 160 continuous actual UI",
+        "file": "media/ep07-game.mp4",
+        "sourceStart": 1538,
+        "start": 10128,
+        "end": 10141,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u074",
+        "kind": "actual-ui",
+        "sourceEpisode": 7,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        10128,
+        10141
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u075 context-actual-play 162"
+      ],
+      "shot": {
+        "id": "u075 context-actual-play 162 continuous actual UI",
+        "file": "media/ep07-game.mp4",
+        "sourceStart": 1551,
+        "start": 10213,
+        "end": 10228,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u075",
+        "kind": "actual-ui",
+        "sourceEpisode": 7,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        10213,
+        10228
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u083 context-actual-play 180"
+      ],
+      "shot": {
+        "id": "u083 context-actual-play 180 continuous actual UI",
+        "file": "media/ep08-game.mp4",
+        "sourceStart": 422,
+        "start": 11471,
+        "end": 11479,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u083",
+        "kind": "actual-ui",
+        "sourceEpisode": 8,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        11471,
+        11479
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u092 context-actual-play 195"
+      ],
+      "shot": {
+        "id": "u092 context-actual-play 195 continuous actual UI",
+        "file": "media/ep09-game.mp4",
+        "sourceStart": 427,
+        "start": 12375,
+        "end": 12402,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u092",
+        "kind": "actual-ui",
+        "sourceEpisode": 9,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        12375,
+        12402
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u115 context-actual-play 219"
+      ],
+      "shot": {
+        "id": "u115 context-actual-play 219 continuous actual UI",
+        "file": "media/ep09-game.mp4",
+        "sourceStart": 1531,
+        "start": 16898,
+        "end": 16918,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u115",
+        "kind": "actual-ui",
+        "sourceEpisode": 9,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        16898,
+        16918
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u116 context-actual-play 221"
+      ],
+      "shot": {
+        "id": "u116 context-actual-play 221 continuous actual UI",
+        "file": "media/ep09-game.mp4",
+        "sourceStart": 1551,
+        "start": 16990,
+        "end": 16999,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u116",
+        "kind": "actual-ui",
+        "sourceEpisode": 9,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        16990,
+        16999
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u118 context-actual-play 226"
+      ],
+      "shot": {
+        "id": "u118 context-actual-play 226 continuous actual UI",
+        "file": "media/ep11-game.mp4",
+        "sourceStart": 1482,
+        "start": 17355,
+        "end": 17366,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u118",
+        "kind": "actual-ui",
+        "sourceEpisode": 11,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        17355,
+        17366
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u118 context-actual-play 227"
+      ],
+      "shot": {
+        "id": "u118 context-actual-play 227 continuous actual UI",
+        "file": "media/ep11-game.mp4",
+        "sourceStart": 1493,
+        "start": 17366,
+        "end": 17369,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u118",
+        "kind": "actual-ui",
+        "sourceEpisode": 11,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        17366,
+        17369
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Remove fractional gameplay flash after the spoken quote",
+      "oldIds": [
+        "u121 context-actual-play 234"
+      ],
+      "shot": {
+        "id": "u121 context-actual-play 234 continuous actual UI",
+        "file": "media/ep13-game.mp4",
+        "sourceStart": 447,
+        "start": 17842,
+        "end": 17865,
+        "camera": {
+          "anchor": [
+            960,
+            540
+          ],
+          "position": [
+            960,
+            540
+          ],
+          "scale": 100
+        },
+        "unit": "u121",
+        "kind": "actual-ui",
+        "sourceEpisode": 13,
+        "continuityRepair": true,
+        "continuityScope": "Same observed UI page and quote; unused source frames, not claimed temporally adjacent"
+      },
+      "affected": [
+        17842,
+        17865
+      ]
+    },
+    {
+      "type": "replace",
+      "reason": "Replace the 17-frame foreign fragment with one continuous action segment",
+      "oldIds": [
+        "u089 context-actual-play 191",
+        "u089 context-actual-play 192"
+      ],
+      "shot": {
+        "id": "u089 continuous action after the voice discussion",
+        "file": "media/ep09-game.mp4",
+        "sourceStart": 480,
+        "start": 12131,
+        "end": 12234,
+        "unit": "u089",
+        "kind": "context-actual-play",
+        "camera": {
+          "anchor": [
+            459,
+            740
+          ],
+          "position": [
+            733,
+            645
+          ],
+          "scale": 185
+        },
+        "cameraPath": [
+          {
+            "time": 404.3666666666667,
+            "anchor": [
+              459,
+              740
+            ]
+          },
+          {
+            "time": 404.8666666666667,
+            "anchor": [
+              459,
+              740
+            ]
+          },
+          {
+            "time": 405.3666666666667,
+            "anchor": [
+              472,
+              740
+            ]
+          },
+          {
+            "time": 405.8666666666667,
+            "anchor": [
+              696,
+              740
+            ]
+          },
+          {
+            "time": 406.3666666666667,
+            "anchor": [
+              915.1111111111111,
+              740
+            ]
+          },
+          {
+            "time": 406.8666666666667,
+            "anchor": [
+              920,
+              740
+            ]
+          },
+          {
+            "time": 407.3666666666667,
+            "anchor": [
+              920,
+              740
+            ]
+          },
+          {
+            "time": 407.8,
+            "anchor": [
+              920,
+              740
+            ]
+          }
+        ]
+      },
+      "affected": [
+        12131,
+        12234
+      ]
+    },
+    {
+      "type": "extend-existing",
+      "oldIds": [
+        "u005 context-actual-play 41",
+        "u005 context-actual-play 42"
+      ],
+      "representative": "u005 context-actual-play 41",
+      "shot": {
+        "id": "u005 context-actual-play 41",
+        "file": "media/ep01-game.mp4",
+        "sourceStart": 1008,
+        "start": 727,
+        "end": 854,
+        "camera": {
+          "anchor": [
+            968,
+            790
+          ],
+          "position": [
+            733,
+            645
+          ],
+          "scale": 160
+        },
+        "unit": "u005",
+        "kind": "context-actual-play",
+        "sourceEpisode": 1,
+        "mergedUnits": [
+          "u005"
+        ],
+        "mergedOriginalIds": [
+          "u005 context-actual-play 41",
+          "u005 context-actual-play 42"
+        ]
+      },
+      "affected": [
+        832,
+        854
+      ],
+      "reason": "Join source-contiguous action using one consistent camera",
+      "oldStart": 727,
+      "oldEnd": 832
+    },
+    {
+      "type": "extend-existing",
+      "oldIds": [
+        "u005 context-actual-play 41",
+        "u006 context-actual-play 43"
+      ],
+      "representative": "u005 context-actual-play 41",
+      "shot": {
+        "id": "u005 context-actual-play 41",
+        "file": "media/ep01-game.mp4",
+        "sourceStart": 1008,
+        "start": 727,
+        "end": 879,
+        "camera": {
+          "anchor": [
+            968,
+            790
+          ],
+          "position": [
+            733,
+            645
+          ],
+          "scale": 160
+        },
+        "unit": "u005",
+        "kind": "context-actual-play",
+        "sourceEpisode": 1,
+        "mergedUnits": [
+          "u005",
+          "u006"
+        ],
+        "mergedOriginalIds": [
+          "u005 context-actual-play 41",
+          "u005 context-actual-play 42",
+          "u006 context-actual-play 43"
+        ]
+      },
+      "affected": [
+        854,
+        879
+      ],
+      "reason": "Join source-contiguous action using one consistent camera",
+      "oldStart": 727,
+      "oldEnd": 854
+    },
+    {
+      "type": "extend-existing",
+      "oldIds": [
+        "u015 context-actual-play 62",
+        "u015 context-actual-play 63"
+      ],
+      "representative": "u015 context-actual-play 62",
+      "shot": {
+        "id": "u015 context-actual-play 62",
+        "file": "media/ep03-game.mp4",
+        "sourceStart": 770,
+        "start": 2385,
+        "end": 2510,
+        "camera": {
+          "anchor": [
+            960,
+            790
+          ],
+          "position": [
+            733,
+            645
+          ],
+          "scale": 160
+        },
+        "unit": "u015",
+        "kind": "context-actual-play",
+        "sourceEpisode": 3,
+        "mergedUnits": [
+          "u015"
+        ],
+        "mergedOriginalIds": [
+          "u015 context-actual-play 62",
+          "u015 context-actual-play 63"
+        ]
+      },
+      "affected": [
+        2490,
+        2510
+      ],
+      "reason": "Join source-contiguous action using one consistent camera",
+      "oldStart": 2385,
+      "oldEnd": 2490
+    },
+    {
+      "type": "extend-existing",
+      "oldIds": [
+        "u049 context-actual-play 113",
+        "u049 context-actual-play 114"
+      ],
+      "representative": "u049 context-actual-play 113",
+      "shot": {
+        "id": "u049 context-actual-play 113",
+        "file": "media/ep04-game.mp4",
+        "sourceStart": 584,
+        "start": 7366,
+        "end": 7498,
+        "camera": {
+          "anchor": [
+            964,
+            790
+          ],
+          "position": [
+            733,
+            645
+          ],
+          "scale": 160
+        },
+        "unit": "u049",
+        "kind": "context-actual-play",
+        "sourceEpisode": 4,
+        "mergedUnits": [
+          "u049"
+        ],
+        "mergedOriginalIds": [
+          "u049 context-actual-play 113",
+          "u049 context-actual-play 114"
+        ]
+      },
+      "affected": [
+        7471,
+        7498
+      ],
+      "reason": "Join source-contiguous action using one consistent camera",
+      "oldStart": 7366,
+      "oldEnd": 7471
+    },
+    {
+      "type": "extend-existing",
+      "oldIds": [
+        "u062 context-actual-play 134",
+        "u062 context-actual-play 135"
+      ],
+      "representative": "u062 context-actual-play 134",
+      "shot": {
+        "id": "u062 context-actual-play 134",
+        "file": "media/ep06-game.mp4",
+        "sourceStart": 570,
+        "start": 8565,
+        "end": 8694,
+        "camera": {
+          "anchor": [
+            964,
+            790
+          ],
+          "position": [
+            733,
+            645
+          ],
+          "scale": 160
+        },
+        "unit": "u062",
+        "kind": "context-actual-play",
+        "sourceEpisode": 6,
+        "mergedUnits": [
+          "u062"
+        ],
+        "mergedOriginalIds": [
+          "u062 context-actual-play 134",
+          "u062 context-actual-play 135"
+        ]
+      },
+      "affected": [
+        8670,
+        8694
+      ],
+      "reason": "Join source-contiguous action using one consistent camera",
+      "oldStart": 8565,
+      "oldEnd": 8670
+    },
+    {
+      "type": "extend-existing",
+      "oldIds": [
+        "u069 context-actual-play 149",
+        "u069 context-actual-play 150"
+      ],
+      "representative": "u069 context-actual-play 149",
+      "shot": {
+        "id": "u069 context-actual-play 149",
+        "file": "media/ep06-game.mp4",
+        "sourceStart": 1020,
+        "start": 9435,
+        "end": 9569,
+        "camera": {
+          "anchor": [
+            459,
+            790
+          ],
+          "position": [
+            733,
+            645
+          ],
+          "scale": 160
+        },
+        "unit": "u069",
+        "kind": "context-actual-play",
+        "sourceEpisode": 6,
+        "mergedUnits": [
+          "u069"
+        ],
+        "mergedOriginalIds": [
+          "u069 context-actual-play 149",
+          "u069 context-actual-play 150"
+        ]
+      },
+      "affected": [
+        9540,
+        9569
+      ],
+      "reason": "Join source-contiguous action using one consistent camera",
+      "oldStart": 9435,
+      "oldEnd": 9540
+    },
+    {
+      "type": "extend-existing",
+      "oldIds": [
+        "u079 context-actual-play 171",
+        "u079 context-actual-play 172"
+      ],
+      "representative": "u079 context-actual-play 171",
+      "shot": {
+        "id": "u079 context-actual-play 171",
+        "file": "media/ep07-game.mp4",
+        "sourceStart": 1245,
+        "start": 10836,
+        "end": 10968,
+        "camera": {
+          "anchor": [
+            963.1111111111111,
+            790
+          ],
+          "position": [
+            733,
+            645
+          ],
+          "scale": 160
+        },
+        "unit": "u079",
+        "kind": "context-actual-play",
+        "sourceEpisode": 7,
+        "mergedUnits": [
+          "u079"
+        ],
+        "mergedOriginalIds": [
+          "u079 context-actual-play 171",
+          "u079 context-actual-play 172"
+        ]
+      },
+      "affected": [
+        10941,
+        10968
+      ],
+      "reason": "Join source-contiguous action using one consistent camera",
+      "oldStart": 10836,
+      "oldEnd": 10941
+    },
+    {
+      "type": "extend-existing",
+      "oldIds": [
+        "u088 context-actual-play 188",
+        "u088 context-actual-play 189"
+      ],
+      "representative": "u088 context-actual-play 188",
+      "shot": {
+        "id": "u088 context-actual-play 188",
+        "file": "media/ep08-game.mp4",
+        "sourceStart": 1136,
+        "start": 11893,
+        "end": 12026,
+        "camera": {
+          "anchor": [
+            970.5454545454545,
+            790
+          ],
+          "position": [
+            733,
+            645
+          ],
+          "scale": 160
+        },
+        "unit": "u088",
+        "kind": "context-actual-play",
+        "sourceEpisode": 8,
+        "mergedUnits": [
+          "u088"
+        ],
+        "mergedOriginalIds": [
+          "u088 context-actual-play 188",
+          "u088 context-actual-play 189"
+        ]
+      },
+      "affected": [
+        11998,
+        12026
+      ],
+      "reason": "Join source-contiguous action using one consistent camera",
+      "oldStart": 11893,
+      "oldEnd": 11998
+    },
+    {
+      "type": "extend-existing",
+      "oldIds": [
+        "u095 context-actual-play 202",
+        "u095 context-actual-play 203"
+      ],
+      "representative": "u095 context-actual-play 202",
+      "shot": {
+        "id": "u095 context-actual-play 202",
+        "file": "media/ep09-game.mp4",
+        "sourceStart": 856,
+        "start": 12736,
+        "end": 12865,
+        "camera": {
+          "anchor": [
+            967.2,
+            790
+          ],
+          "position": [
+            733,
+            645
+          ],
+          "scale": 160
+        },
+        "unit": "u095",
+        "kind": "context-actual-play",
+        "sourceEpisode": 9,
+        "mergedUnits": [
+          "u095"
+        ],
+        "mergedOriginalIds": [
+          "u095 context-actual-play 202",
+          "u095 context-actual-play 203"
+        ]
+      },
+      "affected": [
+        12841,
+        12865
+      ],
+      "reason": "Join source-contiguous action using one consistent camera",
+      "oldStart": 12736,
+      "oldEnd": 12841
+    },
+    {
+      "type": "move-next-question",
+      "affected": [
+        16829,
+        16934
+      ],
+      "reason": "Keep the brief question clear of the original HUD time"
+    }
+  ],
+  "hiddenOriginalLayers": [
+    "u025 context-actual-play 68",
+    "u025 context-actual-play 69",
+    "u025 context-actual-play 70",
+    "u025 context-actual-play 71",
+    "u044 actual-ui 20",
+    "u044 actual-ui 21",
+    "u044 actual-play 22",
+    "u093 context-actual-play 196",
+    "u093 context-actual-play 197",
+    "u093 context-actual-play 198",
+    "u099 context-actual-play 210",
+    "u099 context-actual-play 211",
+    "u004 context-actual-play 39",
+    "u009 context-actual-play 51",
+    "u010 context-actual-play 53",
+    "u011 context-actual-play 55",
+    "u029 context-actual-play 76",
+    "u031 context-actual-play 79",
+    "u036 context-actual-play 89",
+    "u038 context-actual-play 93",
+    "u039 context-actual-play 95",
+    "u040 context-actual-play 97",
+    "u046 context-actual-play 108",
+    "u047 context-actual-play 110",
+    "u050 context-actual-play 116",
+    "u051 context-actual-play 118",
+    "u055 context-actual-play 125",
+    "u058 context-actual-play 130",
+    "u059 context-actual-play 132",
+    "u063 context-actual-play 137",
+    "u065 context-actual-play 141",
+    "u066 context-actual-play 143",
+    "u072 context-actual-play 156",
+    "u073 context-actual-play 158",
+    "u074 context-actual-play 160",
+    "u075 context-actual-play 162",
+    "u083 context-actual-play 180",
+    "u092 context-actual-play 195",
+    "u115 context-actual-play 219",
+    "u116 context-actual-play 221",
+    "u118 context-actual-play 226",
+    "u118 context-actual-play 227",
+    "u121 context-actual-play 234",
+    "u089 context-actual-play 191",
+    "u089 context-actual-play 192",
+    "u005 context-actual-play 42",
+    "u006 context-actual-play 43",
+    "u015 context-actual-play 63",
+    "u049 context-actual-play 114",
+    "u062 context-actual-play 135",
+    "u069 context-actual-play 150",
+    "u079 context-actual-play 172",
+    "u088 context-actual-play 189",
+    "u095 context-actual-play 203"
+  ],
+  "cards": [
+    {
+      "id": "u093 notebook editorial reflow",
+      "start": 12402,
+      "end": 12518,
+      "text": "ルミと過ごした日々が、いつの出来事だったかという連なり。",
+      "label": "手帳の表示テキスト／編集で改行",
+      "coversOriginalClippedRow": true
+    }
+  ],
+  "repairWindows": [
+    [
+      613,
+      622
+    ],
+    [
+      832,
+      879
+    ],
+    [
+      1587,
+      1602
+    ],
+    [
+      1674,
+      1676
+    ],
+    [
+      1748,
+      1759
+    ],
+    [
+      2490,
+      2510
+    ],
+    [
+      3747,
+      3986
+    ],
+    [
+      4709,
+      4735
+    ],
+    [
+      4878,
+      4894
+    ],
+    [
+      5702,
+      5730
+    ],
+    [
+      5904,
+      5921
+    ],
+    [
+      5993,
+      6005
+    ],
+    [
+      6077,
+      6089
+    ],
+    [
+      6527,
+      6746
+    ],
+    [
+      7097,
+      7117
+    ],
+    [
+      7189,
+      7193
+    ],
+    [
+      7471,
+      7498
+    ],
+    [
+      7570,
+      7571
+    ],
+    [
+      7643,
+      7664
+    ],
+    [
+      8098,
+      8120
+    ],
+    [
+      8360,
+      8376
+    ],
+    [
+      8448,
+      8460
+    ],
+    [
+      8670,
+      8694
+    ],
+    [
+      8766,
+      8771
+    ],
+    [
+      8952,
+      8972
+    ],
+    [
+      9044,
+      9070
+    ],
+    [
+      9540,
+      9569
+    ],
+    [
+      9955,
+      9958
+    ],
+    [
+      10030,
+      10056
+    ],
+    [
+      10128,
+      10141
+    ],
+    [
+      10213,
+      10228
+    ],
+    [
+      10941,
+      10968
+    ],
+    [
+      11471,
+      11479
+    ],
+    [
+      11998,
+      12026
+    ],
+    [
+      12131,
+      12234
+    ],
+    [
+      12375,
+      12518
+    ],
+    [
+      12841,
+      12865
+    ],
+    [
+      13633,
+      13889
+    ],
+    [
+      16829,
+      16934
+    ],
+    [
+      16990,
+      16999
+    ],
+    [
+      17355,
+      17369
+    ],
+    [
+      17842,
+      17865
+    ]
+  ],
+  "framesToRender": 1697,
+  "shortContextRemaining": 0,
+  "gameplaySourceFramesRepeated": 0,
+  "voicesUnchanged": true,
+  "voiceCueTimesUnchanged": true,
+  "durationFrames": 18626,
+  "plannedSeconds": 620.8666666666667,
+  "artRate": 0.9375,
+  "actualRenderComplete": false,
+  "rootAccepted": false
+}

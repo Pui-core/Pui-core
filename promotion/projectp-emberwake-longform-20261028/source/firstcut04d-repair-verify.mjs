@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import {spawnSync} from 'node:child_process';
+import {file,np,FF,run,save,digest} from './native.mjs';
+const tag='emberwake-firstcut04d-f-native',render=JSON.parse(fs.readFileSync(file('qa/'+tag+'-render.json'))),patch=JSON.parse(fs.readFileSync(file('qa/firstcut04d-picture-patches.json'))),p=file(render.video),pixels=160*90*3;
+if(!render.fullAvDecode||!patch.originalClippedRowFullyCovered)throw Error('Actual full master and completed card correction required');
+const expr=patch.patches.map(x=>'between(n\\,'+x.start+'\\,'+(x.end-1)+')').join('+');
+function decode(path,filter,frames){const q=spawnSync(FF,['-v','error','-i',np(path),'-vf',filter,'-an','-vsync','0','-pix_fmt','rgb24','-f','rawvideo','-'],{encoding:null,maxBuffer:frames*pixels+1000000,timeout:180000});if(q.status!==0||q.stdout.length!==frames*pixels)throw Error('Finite repair-frame decode failed '+path+' '+q.status+' '+q.stderr);return q.stdout;}
+const actual=decode(p,'select='+expr+',scale=160:90:flags=area',patch.frames),comparisons=[];let cursor=0;
+for(const x of patch.patches){const expected=decode(file(x.file),'scale=160:90:flags=area',x.frames);let maxFrameRmse=0,sum=0;for(let f=0;f<x.frames;f++){let sq=0;for(let n=0;n<pixels;n++){const d=expected[f*pixels+n]-actual[(cursor+f)*pixels+n];sq+=d*d;}sum+=sq;maxFrameRmse=Math.max(maxFrameRmse,Math.sqrt(sq/pixels));}const rmse=Math.sqrt(sum/(x.frames*pixels));if(maxFrameRmse>10)throw Error('Final/native repair pixels differ beyond reencode tolerance '+x.file+' '+maxFrameRmse);comparisons.push({file:x.file,start:x.start,end:x.end,frames:x.frames,rmse,maxFrameRmse});cursor+=x.frames;}
+const dir='qa/firstcut04d-boundaries';if(fs.existsSync(file(dir)))throw Error('Retain prior actual-master boundary diagnostic');fs.mkdirSync(file(dir));
+const points=x=>x.frames===1?[x.start-2,x.start-1,x.start,x.end,x.end+1]:x.frames===2?[x.start-1,x.start,x.start+1,x.end,x.end+1]:x.frames===3?[x.start-2,x.start-1,x.start,x.end-1,x.end]:[x.start-1,x.start,x.start+1,x.end-1,x.end];
+const selected=patch.patches.flatMap(points),unique=[...new Set(selected)].sort((a,b)=>a-b);
+if(unique.length!==selected.length)throw Error('Boundary sample grouping needs explicit distinct frames');
+const select=unique.map(n=>'eq(n\\,'+n+')').join('+'),filter='select='+select+",scale=384:216:flags=area,drawtext=fontfile='C\\:/Windows/Fonts/consola.ttf':text='%{pts\\:hms}':fontsize=18:fontcolor=white:box=1:boxcolor=black@0.7:x=5:y=5,tile=5x1:nb_frames=5:padding=2:margin=2:color=0x07131d";
+await run(FF,['-v','error','-i',np(p),'-vf',filter,'-an','-vsync','0',np(file(dir+'/boundary-%02d.png'))],'firstcut04d-boundary-render.json');
+const images=fs.readdirSync(file(dir)).filter(n=>/^boundary-\d+\.png$/.test(n)).sort();if(images.length!==patch.patches.length)throw Error('Boundary images incomplete');
+save('qa/firstcut04d-repair-verification.json',{videoSha256:await digest(p),allNativeRepairFramesMatched:true,framesCompared:cursor,diagnosticSize:[160,90],comparison:'Every repaired frame from final AAC/H264 master against its exact Native EffectCraft ProRes source; RGB RMSE allows lossy reencoding. Audio verified separately.',comparisons,boundaries:images.map((n,i)=>({file:dir+'/'+n,frames:selected.slice(i*5,i*5+5),repair:patch.patches[i].file})),directBoundaryImagesInspected:[],shortContextRemaining:0,rawGameFramesRepeated:0,originalClippedRowFullyCovered:true,wholeDirectWatch:false,subjectiveListen:false,rootAccepted:false});
+console.log(JSON.stringify({allNativeRepairFramesMatched:true,framesCompared:cursor,boundaries:images.length,creativeAcceptance:false}));

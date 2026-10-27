@@ -1,10 +1,12 @@
 # EMBERWAKE 正式本編（制作中）
 
-助けて進むと何を失い、何を頼りにするかを追う全編第一稿04c。Fローカルの修正済み原本からFilmCraftで実620.885秒/18626フレームのMP4を正常出力し、Sourceと同SHAで保持している。113句の自然な音声実尺588.064秒とは区別する。全AV decode、113句のPCM組立と最終AAC頭尾、最大ずれ0sample、-19.0 LUFS/TP-1.8、全18626fの既知bar/全黒0を確認。Fの3Craft再open/save/renderと、Source素材を一時不可視にした全編Native書出しも確認し、Source素材は復元済み。全編の創作受入・直接視聴/主観試聴・BGM採用・公開は未完了で、制作HOLDを維持する。
+全編第一稿04dをFのNative FilmCraftから実620.885秒／18626フレームで出力。SHA256 `ddb6263a9f0fd9a4c77f6bae6b101d5e386aa9ce826927d1d338d0ba961422d3`。入口は `index.html`、Fは `F:\Videos\ProjectP-EMBERWAKE-Longform-2026-10-28\firstcut-04d\index.html`。旧04cとその原本/検査は保持する。
 
-入口は `index.html`。専用F入口は `F:\Videos\ProjectP-EMBERWAKE-Longform-2026-10-28\firstcut-04\index.html`。動画 `videos/emberwake-firstcut04c-f-native.mp4` のSHA256は `1f58ccd4855dabaae817a41db8f8b0d204577e9a83a0acbae4816b22c0380938`。全域2fpsの画像票63枚を生成し、開始/中盤/末尾にまたがる12枚（各10秒範囲）を抜き出して目視した。全83診断frameの抽出も記録。連続視聴や全63枚目視へ読み替えない。別話の操作映像を説明の背景に使う区間、短い会話間の一瞬の操作カット、原手帳長文と改行字幕の見せ方は、密度と読みやすさの創作確認対象。
+元04cの意図しない1秒未満context操作挿入47箇所を再割付。42区間1697フレームをNative EffectCraftで描画し、最終MP4の全修正フレームと照合。42境界の210実画像を目視し、別操作への瞬間的な割込みがないことを確認。31UI置換は元captureの画面状態と引用文が一致。55.8秒は手帳でなく、3行outroを載せた第1話完了ページであり、以前の報告誤記と継承された話数metadataを訂正した。記録は `qa/firstcut04d-ui-binding-audit.json`。
 
-必須P1: 意図しない1秒未満のcontext操作挿入が47箇所、計25.133秒ある。u010の55.8〜55.867秒は2フレームだけ別の操作画面が入る。割付の端数由来で、意味のあるジェットカットとは扱わない。自然な声と600秒を保ち、実UI/操作の連続割付へ修正するまで公開品質HOLD。記録は `qa/firstcut04-review-scope.json`。
+全AV decode0、113句のPCM組立/最終AAC全句と頭尾、最大lag0sample、-19LUFS／TP-1.8、全18626fの既知bar/全黒0。Fの3Craft再open/save/render・EC欠損0・FC45online・Source素材不可視での全編Native出力、素材復元と所有job終端を確認。全編の直接視聴/主観試聴、BGM採用、Root創作受入、公開は未完了。技術検査をプロ品質/成長実績へ読み替えない。
+
+必須P1は継続：新たに282秒/318秒の旧context画角で元操作案内の末尾だけが残る欠陥を実最終PNGで確認。103カットの旧Y790/160%を対象に、主人公と着地点を保ちながら原案内を画角外へ除く04e修正を継続する。現04dを公開・merge・close・cleanupしない。`qa/firstcut04d-review-scope.json` が最新の確認範囲。旧04cの63枚2fps票/12枚目視と、04dの42境界目視を全編連続視聴へ読み替えない。
 
 Source UNC入力の旧04/04b全編書出し2回は143終了の原票と途中MP4を保持する。owner停止と断定せず、同条件で連続再起動しなかった。Fローカル＋専用detached有限workerはexit0で終了し、所有worker/Native childの終端とSource素材復元を確認。原画面・モデル・旧作品は削除しない。
 
