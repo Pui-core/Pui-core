@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAtUtc": "2026-10-27T12:47:15.446Z",
+  "checkedAtUtc": "2026-10-27T12:52:52.948Z",
   "status": "AVAILABLE_RECORDS_VALID_HOLD_PUBLICATION_ANALYTICS",
   "passed": true,
   "checks": [
@@ -31,7 +31,8 @@
     "unviewed_external_structure_null",
     "music_oldtruth_sequences_stay_expired",
     "unique_ledger_ids",
-    "payload_json_links_scope_private_raw_auth_check"
+    "payload_json_links_scope_private_raw_auth_check",
+    "unperformed_sound_step_names_auditory_quality_not_player_progress"
   ],
   "filesCheckedExcludingCurrentReceipts": 8,
   "jsonParsedExcludingCurrentReceipts": 5,
