@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "ProjectP構成ナレッジ台帳",
   "managementIssue": "https://github.com/Pui-core/-/issues/131",
-  "updatedAtUtc": "2026-10-27T12:46:16.651Z",
+  "updatedAtUtc": "2026-10-28T01:32:00Z",
   "ruleId": "SNS-003-AUDIT-001",
   "winnerCount": 0,
   "statusDefinitions": {
@@ -257,6 +257,35 @@
       "observationOnly": "通常再読込後、残る5行のviews/likes/commentsすべて表示0。owner削除したScate予約IDは一覧にない。",
       "limits": "Document再読込は確認。反映遅延、個別公開状態、配信面/露出分母/維持/帰属は別途不明。20:53の鮮度未確認partialと分離し、0原因/勝者は確定しない。",
       "nextExperimentId": "PP-TT-JOINT-002"
+    },
+    {
+      "id": "PP-EXT-TRUTH-QUESTION-001",
+      "status": "unverified",
+      "topic": "嘘か誠か：問い・根拠・回答の見やすさ",
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-28T01:32:00Z",
+      "revalidateOnJst": "2026-11-04",
+      "expiresOnJst": "2026-11-04",
+      "observationIds": [],
+      "externalExampleIds": [
+        "EXT-PLAYROOM-001",
+        "EXT-KIBO-001"
+      ],
+      "evidenceUrl": "https://github.com/Pui-core/-/issues/134",
+      "structure": {
+        "opening": "一つの推理問題と5つの回答を明瞭に示す案。",
+        "secondsUntilResult": null,
+        "development": "視聴者が推理できる根拠を見やすく示す案。",
+        "cutsAndMotion": null,
+        "typography": "問い・回答・根拠を安全域内で読みやすく示す案。",
+        "sound": null,
+        "endingAndCta": "実配信先のアプリ名検索／リンクへ案内する。"
+      },
+      "singleChangedVariable": "問い・回答・根拠の視認性",
+      "decisionRule": "#134の実公開と+24h/+72h以降に各時刻・媒体・分母・再生・コメント・投稿帰属フォローが取得可能なら記録。未取得はnull。比較可能な基準がなければ優劣は未確定で次の実験候補に留める。",
+      "limits": "外部例は未視聴で、今回の企画との因果・日本TikTok効果を証明しない。#134の視認性と音源その他は同時変更されうるため単一要因の因果は判断できない。",
+      "nextExperimentId": null
     }
   ],
   "externalExamples": [
@@ -336,6 +365,96 @@
       },
       "validatedOnProjectP": false,
       "confirmedWinner": false
+    },
+    {
+      "ownership": "external",
+      "sourceCheckedOnJst": "2026-10-28",
+      "sourceObservedAtUtc": "2026-10-28T01:32:00Z",
+      "actuallyViewed": false,
+      "structureObserved": false,
+      "validatedOnProjectP": false,
+      "confirmedWinner": false,
+      "revalidateOnJst": "2026-11-04",
+      "expiresOnJst": "2026-11-04",
+      "id": "EXT-PLAYROOM-001",
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/@playroom527/video/7661490963218550036",
+      "sourceUrl": "https://note.com/playroom_game/n/ndca289a37d7c",
+      "sourceType": "developer_self_report",
+      "sourcePublishedAtJst": "2026-10-18T10:17:00+09:00",
+      "actualPublishedAtUtc": null,
+      "durationSeconds": null,
+      "metrics": {
+        "views": 24000,
+        "viewsApproximate": true,
+        "comments": 15,
+        "shares": 24,
+        "measuredAtUtc": null
+      },
+      "metricDenominator": null,
+      "officialVideoFetch": "restricted",
+      "status": "external_example_indirect_hypothesis",
+      "sourceReportedDescription": "「すぐ行く」の「すぐ」は何分以内かという問いに、大きな赤文字で「6分」と表示したと作者が説明。映像の順序や冒頭は直接確認していない。",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "hypothesis": "体験できる問いと根拠・回答の視認性はアプリの関心を生む可能性がある。ProjectPで未検証。",
+      "limits": [
+        "数値は開発者の自己報告で観測日時や直接指標の根拠は未提示。",
+        "TikTok実動画を取得・視聴できず、尺・冒頭・編集・音・投稿日時・現在の指標は不明。",
+        "465/1770の指名検索とTikTok由来は作者の推測で、因果は未証明。",
+        "他者の結果は本人の勝者や視聴予測ではない。"
+      ]
+    },
+    {
+      "ownership": "external",
+      "sourceCheckedOnJst": "2026-10-28",
+      "sourceObservedAtUtc": "2026-10-28T01:32:00Z",
+      "actuallyViewed": false,
+      "structureObserved": false,
+      "validatedOnProjectP": false,
+      "confirmedWinner": false,
+      "revalidateOnJst": "2026-11-04",
+      "expiresOnJst": "2026-11-04",
+      "id": "EXT-KIBO-001",
+      "platform": "YouTube Shorts",
+      "url": "https://www.youtube.com/shorts/R5edCiHUuMw",
+      "sourceUrl": "https://digitalcreators.jp/channel/ja/UCh2AeLv_0Eme8Y_V4kmUWHQ/",
+      "sourceType": "third_party_aggregate",
+      "sourcePublicationDateText": "2026/08/15 18:03",
+      "actualPublishedAtUtc": null,
+      "durationSeconds": 44,
+      "metrics": {
+        "views": 738953,
+        "likes": 6757,
+        "comments": 186,
+        "measuredAtUtc": null
+      },
+      "metricDenominator": null,
+      "officialVideoFetch": "throttled",
+      "status": "external_example_indirect_hypothesis",
+      "sourceReportedDescription": "「1円玉が何枚あれば1万円は作れるのか？」という題名。数値は第三者集計ページの表示。",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "hypothesis": "具体的な量や選択肢の問いを一目で伝える編集を候補とするが、実際の動画冒頭は未観測。",
+      "limits": [
+        "第三者集計の時点は不明。現在値ではなく、検索応答に約1か月前のキャッシュ情報。",
+        "実動画を取得・視聴できず、冒頭・編集・音・維持率・投稿時刻の厳密なtimezoneは未確認。",
+        "YouTube ShortでありTikTokの効果を示さない。規模の異なる既存チャンネルのため本人の予測値にしない。"
+      ]
     }
   ],
   "requirements": {
