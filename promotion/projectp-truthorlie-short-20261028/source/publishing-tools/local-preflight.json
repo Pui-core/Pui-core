@@ -1,0 +1,62 @@
+{
+  "scope": "One upload draft for Issue134; scripts authored here, executed exclusively by Root",
+  "sourceVideoSha256": "be3f9162f922dc3ab404eff56432b47dfa6f5e6bca72887a1e78aee19b7838da",
+  "videoId": "2KGUzjEmfwg",
+  "currentVisibility": "private draft as reported by Root",
+  "scriptSnapshots": [
+    {
+      "file": "youtube134-filepicker-probe.ps1",
+      "sha256": "d88a0e053e768373e6d67aad0f54c65ac15f778f64ea6cde42e83a180ca5480f"
+    },
+    {
+      "file": "youtube134-filepicker-set-open.ps1",
+      "sha256": "a0835f835516f3935c9524a241c162c09c51a1f805d5433d77776494edc32d14"
+    },
+    {
+      "file": "youtube134-metadata.ps1",
+      "sha256": "1f0d2f96d63a0912c342cc79356b34db3d9fc4905320a3a8db8445cb52d68857"
+    }
+  ],
+  "filepicker": {
+    "rootPsParseErrors": 0,
+    "probe": {
+      "ownedDialog": true,
+      "session": 1,
+      "filenameCtrlId": 1148,
+      "openCtrlId": 1
+    },
+    "set": {
+      "atUtc": "2026-10-28T14:15:46.5398696Z",
+      "method": "WM_SETTEXT",
+      "filenameReadbackExact": true,
+      "openIntents": 0
+    },
+    "open": {
+      "atUtc": "2026-10-28T14:16:07.5601278Z",
+      "nativeOpenSentOnce": true,
+      "createNewIntentSaved": true,
+      "fileAttachIntent": 1,
+      "publicationIntents": 0
+    }
+  },
+  "metadata": {
+    "staticReview": "No major finding by /root/voice_trial; no execution/GUI/lease operations by reviewer",
+    "rootPsParseOrExecution": "Actual Root title action succeeded with exact readback; no GUI execution by script author",
+    "rootTitleResult": {
+      "at": "2026-10-28T14:26:14.9109846Z",
+      "action": "title",
+      "videoId": "2KGUzjEmfwg",
+      "runtimeId": "42,69024,4,-11478",
+      "changed": true,
+      "readbackExact": true,
+      "publicationIntents": 0
+    },
+    "descriptionLastObserved": {
+      "status": "normal foreground refused before setting",
+      "publicationIntents": 0
+    }
+  },
+  "publicationIntentsByAuthor": 0,
+  "rawUiOrLeaseContentsCopied": false,
+  "proofScope": "Observed creation of private upload draft plus guarded metadata setup. Final public status remains Root-owned."
+}
