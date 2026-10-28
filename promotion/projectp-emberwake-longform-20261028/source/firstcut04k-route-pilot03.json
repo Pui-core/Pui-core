@@ -1,0 +1,27 @@
+{
+  "name": "emberwake-firstcut04k-route-pilot03",
+  "comp": "EMBERWAKE 04k route comparison pilot",
+  "duration": 7,
+  "frames": 210,
+  "fps": 30,
+  "shots": [
+    {"id": "actual normal route", "file": "media/ep02-normal-route01-game.mp4", "sourceStart": 847, "start": 0, "end": 210, "camera": {"anchor": [960, 540], "position": [480, 560], "scale": 43}},
+    {"id": "actual dash route", "file": "media/ep02-game.mp4", "sourceStart": 795, "start": 0, "end": 210, "camera": {"anchor": [960, 540], "position": [1440, 560], "scale": 43}}
+  ],
+  "voices": [
+    {"id": "branch", "text": "ダッシュなら、上の二段へ。この枝も、同じ足場へ合流します。", "at": 0.5, "windowEnd": 6.5, "quote": false, "reuseFrom": {"spec": "source/emberwake-jetcut03b-comparison-measured.json", "id": "branch"}}
+  ],
+  "overlays": [
+    {"id": "question", "lines": ["ふたつの道、同じ場所へ"], "x": 118, "y": 72, "size": 62, "at": 0, "end": 7, "maxWidth": 1650},
+    {"id": "normal", "lines": ["通常ルート"], "x": 100, "y": 250, "size": 46, "at": 0, "end": 7, "maxWidth": 800},
+    {"id": "dash", "lines": ["ダッシュの枝"], "x": 1060, "y": 250, "size": 46, "at": 0, "end": 7, "maxWidth": 800},
+    {"id": "method", "lines": ["同一開始条件の実収録／自動入力／タイム比較ではありません"], "x": 118, "y": 865, "size": 28, "at": 0, "end": 7, "maxWidth": 1650},
+    {"id": "shared", "lines": ["同じ足場に合流"], "x": 118, "y": 930, "size": 48, "color": "#E8B66A", "at": 4.9, "end": 7, "maxWidth": 1650}
+  ],
+  "previewTimes": [1, 4.9, 6],
+  "sourceEvidence": "Both merge at source frames 994/942. Two clips start at 847/795, so merge at frame 147 in each. Source recordings have no game audio; they are automation, not race-timing comparison.",
+  "scope": "7秒の比較試作。正式10分動画ではない。",
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "published": false
+}

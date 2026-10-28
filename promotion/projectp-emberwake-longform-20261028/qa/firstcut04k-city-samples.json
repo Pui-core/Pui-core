@@ -1,0 +1,71 @@
+{
+  "samples": [
+    {
+      "episode": 3,
+      "second": 16,
+      "proposed": "公園の柵・ベンチ",
+      "file": "/home/pui/.claude/worktrees/Pui-core-issue-127/promotion/projectp-emberwake-longform-20261028/qa/firstcut04k-city-ep3.png"
+    },
+    {
+      "episode": 5,
+      "second": 20,
+      "proposed": "雨の軒・窓",
+      "file": "/home/pui/.claude/worktrees/Pui-core-issue-127/promotion/projectp-emberwake-longform-20261028/qa/firstcut04k-city-ep5.png"
+    },
+    {
+      "episode": 8,
+      "second": 21,
+      "proposed": "額縁のような形",
+      "file": "/home/pui/.claude/worktrees/Pui-core-issue-127/promotion/projectp-emberwake-longform-20261028/qa/firstcut04k-city-ep8.png"
+    },
+    {
+      "episode": 10,
+      "second": 20,
+      "proposed": "歯車・機械",
+      "file": "/home/pui/.claude/worktrees/Pui-core-issue-127/promotion/projectp-emberwake-longform-20261028/qa/firstcut04k-city-ep10.png"
+    },
+    {
+      "episode": 13,
+      "second": 33,
+      "proposed": "アーチ・階段",
+      "file": "/home/pui/.claude/worktrees/Pui-core-issue-127/promotion/projectp-emberwake-longform-20261028/qa/firstcut04k-city-ep13.png"
+    }
+  ],
+  "source": "original captured gameplay, not final video",
+  "inspected": [
+    {
+      "episode": 3,
+      "second": 16,
+      "file": "/home/pui/.claude/worktrees/Pui-core-issue-127/promotion/projectp-emberwake-longform-20261028/qa/firstcut04k-city-ep3.png"
+    },
+    {
+      "episode": 5,
+      "second": 20,
+      "file": "/home/pui/.claude/worktrees/Pui-core-issue-127/promotion/projectp-emberwake-longform-20261028/qa/firstcut04k-city-ep5.png"
+    },
+    {
+      "episode": 8,
+      "second": 21,
+      "file": "/home/pui/.claude/worktrees/Pui-core-issue-127/promotion/projectp-emberwake-longform-20261028/qa/firstcut04k-city-ep8.png"
+    },
+    {
+      "episode": 10,
+      "second": 20,
+      "file": "/home/pui/.claude/worktrees/Pui-core-issue-127/promotion/projectp-emberwake-longform-20261028/qa/firstcut04k-city-ep10.png"
+    },
+    {
+      "episode": 13,
+      "second": 33,
+      "file": "/home/pui/.claude/worktrees/Pui-core-issue-127/promotion/projectp-emberwake-longform-20261028/qa/firstcut04k-city-ep13.png"
+    }
+  ],
+  "subjectiveWatch": false,
+  "observations": [
+    "ep03 16s does not show bench/fence",
+    "ep05 20s does not show rain/awning/windows",
+    "ep08 21s shows rectangular outlines",
+    "ep10 20s shows gear-like outlines",
+    "ep13 33s arch cropped; ep13 45s shows arches"
+  ],
+  "scope": "Selected original source stills; not the full recording"
+}
