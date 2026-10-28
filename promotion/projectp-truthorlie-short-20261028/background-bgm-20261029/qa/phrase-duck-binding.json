@@ -1,0 +1,113 @@
+{
+  "plan": {
+    "targetVoiceOverMusicDb": 12.5,
+    "cues": [
+      {
+        "id": "hook",
+        "firstVoiced": 0.19237500000000002,
+        "lastVoiced": 2.9036666666666666,
+        "gapBeforeDb": 7.6081357710207005,
+        "gain": 0.5693860052357355,
+        "duckDb": -4.8918642289793,
+        "start": 0.09237500000000001,
+        "attack": 0.08,
+        "holdUntil": 2.9436666666666667,
+        "release": 0.18
+      },
+      {
+        "id": "rule",
+        "firstVoiced": 3.4172708333333333,
+        "lastVoiced": 5.941,
+        "gapBeforeDb": 5.265534876490242,
+        "gain": 0.43478719370946217,
+        "duckDb": -7.234465123509757,
+        "start": 3.317270833333333,
+        "attack": 0.08,
+        "holdUntil": 5.981,
+        "release": 0.18
+      },
+      {
+        "id": "vote",
+        "firstVoiced": 6.382416666666667,
+        "lastVoiced": 8.904020833333334,
+        "gapBeforeDb": 8.33808287697142,
+        "gain": 0.6193043690220912,
+        "duckDb": -4.16191712302858,
+        "start": 6.282416666666667,
+        "attack": 0.08,
+        "holdUntil": 8.944020833333333,
+        "release": 0.18
+      },
+      {
+        "id": "result",
+        "firstVoiced": 9.799229166666667,
+        "lastVoiced": 12.162749999999999,
+        "gapBeforeDb": 13.181058856127311,
+        "gain": 1,
+        "duckDb": 0,
+        "start": 9.699229166666667,
+        "attack": 0.08,
+        "holdUntil": 12.202749999999998,
+        "release": 0.18
+      },
+      {
+        "id": "title",
+        "firstVoiced": 13.4805,
+        "lastVoiced": 15.602229166666666,
+        "gapBeforeDb": 0.5408765699527196,
+        "gain": 0.2523735452097053,
+        "duckDb": -11.959123430047281,
+        "start": 13.3805,
+        "attack": 0.08,
+        "holdUntil": 15.642229166666665,
+        "release": 0.18
+      },
+      {
+        "id": "cta",
+        "firstVoiced": 16.817708333333336,
+        "lastVoiced": 17.9431875,
+        "gapBeforeDb": 6.398030782223159,
+        "gain": 0.49533787775738586,
+        "duckDb": -6.101969217776841,
+        "start": 16.717708333333334,
+        "attack": 0.08,
+        "holdUntil": 17.9831875,
+        "release": 0.18
+      }
+    ],
+    "changesMusicOnly": true,
+    "voiceGain": 1,
+    "sfxGain": 1,
+    "sourceTimingUnchanged": true,
+    "reason": "First-pass title voice/music gap 0.54dB required BGM attenuation in voiced spans; no increase or fade of original voice/SE"
+  },
+  "finalMusicSha256": "0eced4fbe328b36384c32b1850e769c78cf5a2a62de87f663e4109c56c92186d",
+  "measuredCueVoiceOverMusicDb": [
+    {
+      "id": "hook",
+      "gapDb": 12.498268695700203
+    },
+    {
+      "id": "rule",
+      "gapDb": 12.499999843149647
+    },
+    {
+      "id": "vote",
+      "gapDb": 12.485684339025562
+    },
+    {
+      "id": "result",
+      "gapDb": 13.181058856127311
+    },
+    {
+      "id": "title",
+      "gapDb": 12.452266325235058
+    },
+    {
+      "id": "cta",
+      "gapDb": 12.50000003905015
+    }
+  ],
+  "minimumMeasuredGapDb": 12.452266325235058,
+  "subjectiveAudition": false
+}

@@ -1,0 +1,37 @@
+{
+  "issue": 145,
+  "offlineProjectSha256": "3840a11721a43261d0d90883d89d8f89e62cb2a3c362edb483c3d9994546de68",
+  "jsonReadbackVerified": true,
+  "allFourMediaInsideNewStage": true,
+  "dependencies": [
+    {
+      "id": 5,
+      "name": "truthorlie-real-v10-picture.mov",
+      "sha256": "ad635bba0c9863a20fe007197207d01976d6b9ba74908266b5072ce9547d4cc2",
+      "bytes": 701909011
+    },
+    {
+      "id": 6,
+      "name": "narration-real-v9.wav",
+      "sha256": "a8052a999efb483db9c2209f559b315907ed2f460b227839d1f6b4f996f4adcf",
+      "bytes": 5529702
+    },
+    {
+      "id": 7,
+      "name": "sfx-real-v9.wav",
+      "sha256": "1e352d7fcc2ad9b59a99017b400c70152ae12b15ef7e7cb41e9fe53e7af9b68e",
+      "bytes": 5529702
+    },
+    {
+      "id": 11,
+      "name": "cipher-bed-v11.wav",
+      "sha256": "0eced4fbe328b36384c32b1850e769c78cf5a2a62de87f663e4109c56c92186d",
+      "bytes": 5529816
+    }
+  ],
+  "sequenceSeconds": 19.2,
+  "videoTracks": 1,
+  "audioTracks": 3,
+  "nativeReopenPerformed": false,
+  "nativeAppInvocationsByWriter": 0
+}
