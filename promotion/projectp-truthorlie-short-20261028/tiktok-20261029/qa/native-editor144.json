@@ -18,6 +18,28 @@
     "rootReportedLength": 198,
     "rootReportedLinebreaksFlattened": true,
     "byteExactReplacementClaimed": false,
+    "selectionAttempt": {
+      "selectAtUtc": "2026-10-28T22:07:05Z",
+      "immediateReadReflectedWholeSelection": false,
+      "laterWholeSelectionObservedAtUtc": "2026-10-28T22:07:22Z",
+      "laterSelectionMatchedWholeDamagedCaption": true,
+      "hasFocusAtLaterSelectionRead": false,
+      "evidence": "Root-reported asynchronous selection observations."
+    },
+    "afterSelectedValueSet": {
+      "atUtc": "2026-10-28T22:09:20.1671055Z",
+      "receiptSha256": "4679a68bed2747e0cd56a4d748d7b0fbddd40fdd046542ec78a797a7a563095e",
+      "captionValueLength": 372,
+      "documentRangeTextLength": 374,
+      "nativeSnapshotHasFocus": true,
+      "originalStemRemained": true,
+      "normalizedDesiredCaptionCopies": 2,
+      "semanticReplacementMatched": false,
+      "normalizationUsedForThisComparison": "CRLF/CR/LF to one ASCII space each, trimEnd; no other whitespace or word changes",
+      "causeInferred": false,
+      "publicationIntents": 0,
+      "evidence": "Writer read only selected metadata and compared the existing private caption receipt with the frozen desired ticket. Raw text/selection/UI rows are not copied into Git."
+    },
     "repairComplete": false,
     "evidence": "Root's live caption report. Writer did not run value input; final replacement/semantic normalization requires subsequent native readback."
   },
