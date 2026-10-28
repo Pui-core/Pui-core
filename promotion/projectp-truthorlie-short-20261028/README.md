@@ -13,3 +13,9 @@ F納品先: `F:\Videos\ProjectP-TruthOrLie-Short-2026-10-28\revision-01`。Photo
 最終MP4の全AVデコード・4句のAAC頭尾相関とlag0・全秒画像と主要3遷移・末尾11枚の連続画像を確認。PhotoCraft、EffectCraft、FilmCraftのF原本を再openし、AV素材のオフライン表示なし。最終AAC実測 -19.8 LUFS / TP -2.7 dBFS。これらは直接の全編視聴・試聴や視聴者の評価ではない。
 
 未確認: TikTok・YouTube実機UIの重なり、商用利用可能なTikTok音源と地域条件、BGMと声の聴感、全編の直接視聴、公開後の再生・フォロー。投稿・予約はしていない。Draft/HOLD。
+
+## 配信版のルール照合（2026-10-28）
+
+日本のApp Store紹介文は「全員がひとつのお題に答え」、その中に嘘つきがいると説明している。一方、[ゲーム側 Issue #151 の報告](https://github.com/Pui-core/com.pui-core.truthorlie/issues/151)は、commit `92f86c4` を `1.02 (18)` のArchive・ASCアップロードに対応付けている。同commitの [AnswerEntryView.swift](https://github.com/Pui-core/com.pui-core.truthorlie/blob/92f86c4/Sources/TruthOrLie/AnswerEntryView.swift) は「5つの回答のうち、1つだけ嘘を紛れ込ませます」と記載し、質問ごとに入力欄を表示している。既存のASC確認記録では公開版は1.02 (18)だが、配信中IPAの現物・SHAと当該ソースの一致は今回確認できていない。
+
+両説明の違いを理由に、動画を「全員が同一お題に回答する」設定へ変更しない。動画の手掛かりは架空の演出であり、製品のヒント機能や実プレイを示すものではない。ストア説明とソースの整合、配信バイナリの直接確認は別途未確認として残す。
