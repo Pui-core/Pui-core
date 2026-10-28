@@ -1,0 +1,77 @@
+{
+  "checks": [
+    {
+      "id": "u098",
+      "start": 0.02,
+      "duration": 7.882666666666666,
+      "correlation": 0.9999371798362121,
+      "lagSamples": 0
+    },
+    {
+      "id": "u099",
+      "start": 8.12,
+      "duration": 8.330666666666668,
+      "correlation": 0.9999199599073771,
+      "lagSamples": 0
+    },
+    {
+      "id": "u100",
+      "start": 16.653333333333332,
+      "duration": 8.576,
+      "correlation": 0.9999562195148323,
+      "lagSamples": 0
+    },
+    {
+      "id": "jump01",
+      "start": 25.453333333333333,
+      "duration": 7.605333333333333,
+      "correlation": 0.9999444860864952,
+      "lagSamples": 0
+    },
+    {
+      "id": "jump02",
+      "start": 33.28666666666667,
+      "duration": 6.784,
+      "correlation": 0.9999528467911272,
+      "lagSamples": 0
+    },
+    {
+      "id": "jump03",
+      "start": 40.28666666666667,
+      "duration": 8.810666666666666,
+      "correlation": 0.9999571044498424,
+      "lagSamples": 0
+    },
+    {
+      "id": "jump04",
+      "start": 49.32,
+      "duration": 7.050666666666666,
+      "correlation": 0.9999469917759191,
+      "lagSamples": 0
+    },
+    {
+      "id": "jump05",
+      "start": 56.58666666666667,
+      "duration": 9.706666666666667,
+      "correlation": 0.9999302218421743,
+      "lagSamples": 0
+    },
+    {
+      "id": "jump07",
+      "start": 66.52,
+      "duration": 9.386666666666667,
+      "correlation": 0.9999540010713923,
+      "lagSamples": 0
+    },
+    {
+      "id": "jump06",
+      "start": 76.11999999999999,
+      "duration": 8.245333333333333,
+      "correlation": 0.9999524033516451,
+      "lagSamples": 0
+    }
+  ],
+  "threshold": 0.98,
+  "pass": true,
+  "note": "Correlation with source narration verifies placement and signal, not audibility, mix quality, full viewing, or subjective listening."
+}

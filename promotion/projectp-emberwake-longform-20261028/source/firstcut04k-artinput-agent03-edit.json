@@ -1,0 +1,117 @@
+{
+  "name": "firstcut04k-artinput-agent03",
+  "comp": "EMBERWAKE art and input independent pilot",
+  "seconds": 84.56666666666666,
+  "frames": 2537,
+  "cues": [
+    {
+      "id": "u098",
+      "text": "保存されている原画を、同じ表示枠で比べます。左は二十四ピクセル、右は六十四ピクセルへ描き直した版です。",
+      "file": "media/firstcut04-u098.wav",
+      "sha256": "52d790d4851b28491235fe68e2acfa0c4295e4895bad5c6444e819926362741a",
+      "at": 0.02,
+      "start": 0,
+      "end": 8.1,
+      "duration": 7.882666666666666
+    },
+    {
+      "id": "u099",
+      "text": "歩く、上がる、頂点、落ちる、着地、ダッシュ。動く姿勢を、左右で比べてください。",
+      "file": "media/firstcut04-u099.wav",
+      "sha256": "50380fe88b4c55659037ae5565b1155842a60edd17e98a3c7f7dba2d4d9c0d70",
+      "at": 8.12,
+      "start": 8.1,
+      "end": 16.633333333333333,
+      "duration": 8.330666666666668
+    },
+    {
+      "id": "u100",
+      "text": "フードの縁、顔の面、前後の脚、手元の灯。大きな形を保ちながら、元絵の中で描き分ける部分が増えています。",
+      "file": "media/firstcut04-u100.wav",
+      "sha256": "3e18b58e7d058c5a17c2ba84d69baa450732d0f5a7820e7f94c6144d00eda27f",
+      "at": 16.653333333333332,
+      "start": 16.633333333333333,
+      "end": 25.433333333333334,
+      "duration": 8.576
+    },
+    {
+      "id": "jump01",
+      "text": "最初のプレイテストでは、操作感はいい一方で、ジャンプの待ちが長く、タイムを狙う時の邪魔になると指摘されました。",
+      "file": "media/firstcut04k-jump01.wav",
+      "sha256": "14c4e05741449f1d060cb78292db63ed9b27e3c04d8813a4c73c244964cdf7f3",
+      "at": 25.453333333333333,
+      "start": 25.433333333333334,
+      "end": 33.266666666666666,
+      "duration": 7.605333333333333
+    },
+    {
+      "id": "jump02",
+      "text": "調べると、押してすぐ離した入力が、着地の前後で長押しと同じ大きなジャンプに変わる場合がありました。",
+      "file": "media/firstcut04k-jump02.wav",
+      "sha256": "faa8aa751c8570170aaa3d42240b3376ee387621050a15781b4c718f3605236e",
+      "at": 33.28666666666667,
+      "start": 33.266666666666666,
+      "end": 40.266666666666666,
+      "duration": 6.784
+    },
+    {
+      "id": "jump03",
+      "text": "六十ヘルツの当時の計測では、同じタイミングの短押しで、旧版は高さおよそ五十七ピクセル、修正後はおよそ十九ピクセル。",
+      "file": "media/firstcut04k-jump03.wav",
+      "sha256": "e6f09da7502bb39e322c68c397d9385f0bd9345f8dd9bb6e1367221c7c8b90d9",
+      "at": 40.28666666666667,
+      "start": 40.266666666666666,
+      "end": 49.3,
+      "duration": 8.810666666666666
+    },
+    {
+      "id": "jump04",
+      "text": "空中にいる長さも四十六ティックから二十三ティックへ。短く押した意図が、短い跳躍として残ります。",
+      "file": "media/firstcut04k-jump04.wav",
+      "sha256": "7426fe6225b919bd79471efec922b9bc59654b66ecf852f2810e1268fe8ce9b2",
+      "at": 49.32,
+      "start": 49.3,
+      "end": 56.56666666666667,
+      "duration": 7.050666666666666
+    },
+    {
+      "id": "jump05",
+      "text": "一方、長く押した時の最大の高さは変えていません。着地直前に押して離した入力も記録し、接地した時に一回だけ受け取るようにしました。",
+      "file": "media/firstcut04k-jump05.wav",
+      "sha256": "4dc2c919a107c864d3d66de4f60906745d8724387380a59ff9c18dee6a9df149",
+      "at": 56.58666666666667,
+      "start": 56.56666666666667,
+      "end": 66.5,
+      "duration": 9.706666666666667
+    },
+    {
+      "id": "jump07",
+      "text": "着地の九ティック前に押して離した入力も、接地した時に受け取ります。十二ティック前は期限切れ。これは六十ヘルツでの当時の計測です。",
+      "file": "media/firstcut04k-jump07.wav",
+      "sha256": "5c1627802bfeee3fe19dd8068196442a915b696526ba22a0dfa9256739efcaf3",
+      "at": 66.52,
+      "start": 66.5,
+      "end": 76.1,
+      "duration": 9.386666666666667
+    },
+    {
+      "id": "jump06",
+      "text": "これは当時の入力計測の記録です。いま見ている短押しと長押しの収録は、修正前と修正後のプレイ比較ではありません。",
+      "file": "media/firstcut04k-jump06.wav",
+      "sha256": "4b99b94a0768e0e25a48fd9b903ad06be78a868a0d50145ed342f6ab3a6e423e",
+      "at": 76.11999999999999,
+      "start": 76.1,
+      "end": 84.56666666666666,
+      "duration": 8.245333333333333
+    }
+  ],
+  "inputs": {
+    "prior": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\videos\\emberwake-firstcut04j-f-native.mp4",
+    "game": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\ep01-replay-controls01-game.mp4",
+    "game01": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\ep01-game.mp4"
+  },
+  "scope": "Independent draft; art from saved source, numbers from documented 60Hz record; gameplay shows current version only",
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "published": false
+}

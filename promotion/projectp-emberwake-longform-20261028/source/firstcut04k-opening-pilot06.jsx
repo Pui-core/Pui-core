@@ -1,0 +1,1 @@
+var r=app.run('layer.newShape',{name:'quote contrast',kind:'rect',size:[1080,280],position:[600,250],fill:'#07131D',strokeWidth:0});app.run('prop.set',{layer:r.layer,path:'transform/opacity',value:78});app.run('layer.timing',{layers:[r.layer],in:14.7,out:20.8});app.run('layer.arrange',{layers:[r.layer],above:177});writeLn(JSON.stringify(r));

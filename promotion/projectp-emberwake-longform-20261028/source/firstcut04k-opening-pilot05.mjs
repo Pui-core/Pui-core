@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import {file,np,EC,run,parse,copy} from './native.mjs';
+const original=file('projects/emberwake-firstcut04k-opening-pilot04.ecproj'),next=file('projects/emberwake-firstcut04k-opening-pilot05.ecproj');
+if(fs.existsSync(next))throw Error('Preserve prior pilot');copy(original,next);
+const info=parse((await run(EC,['--project',np(next),'info','--json'],'firstcut04k-opening-pilot05-info.json')).stdout);
+const anchors={'first episode backdrop quote1':900,'first episode backdrop quote2':960};
+const layers=info.activeComp.layers.filter(x=>Object.hasOwn(anchors,x.name)).map(x=>({id:x.id,x:anchors[x.name]}));if(layers.length!==2)throw Error('Quote backgrounds not found');
+const jsx=`var a=${JSON.stringify(layers)};for(var i=0;i<a.length;i++){app.run('prop.set',{layer:a[i].id,path:'transform/anchor',value:[a[i].x,800,0]});app.run('prop.set',{layer:a[i].id,path:'transform/position',value:[733,625,0]});app.run('prop.set',{layer:a[i].id,path:'transform/scale',value:[170,170,100]});}writeLn(JSON.stringify(a));`;
+fs.writeFileSync(file('source/firstcut04k-opening-pilot05.jsx'),jsx,{flag:'wx'});
+const r=parse((await run(EC,['--project',np(next),'script',np(file('source/firstcut04k-opening-pilot05.jsx')),'--save-as',np(next),'--json'],'firstcut04k-opening-pilot05-build.json')).stdout);if(!r.ok)throw Error('Native edit failed');
+for(const t of [14.7,15.5,17.9,18.2,19,20.5])await run(EC,['--project',np(next),'render-frame','--comp','EMBERWAKE 04k opening pilot','--time',String(t),'--out',np(file(`qa/firstcut04k-opening-pilot05-${t}.png`)),'--json'],`firstcut04k-opening-pilot05-${t}.json`);
+console.log('Quote backgrounds corrected');

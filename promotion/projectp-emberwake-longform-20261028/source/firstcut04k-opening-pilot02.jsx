@@ -1,0 +1,1 @@
+var a=[{"id":54,"name":"short press falls","x":400},{"id":30,"name":"first episode actual movement","x":500}];for(var i=0;i<a.length;i++)app.run('prop.set',{layer:a[i].id,path:'transform/anchor',value:[a[i].x,780,0]});writeLn(JSON.stringify(a));
