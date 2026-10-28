@@ -1,0 +1,40 @@
+{
+  "catalogRows": {
+    "source": "source/catalog-rows144.ps1",
+    "sha256": "553cd7b1489233dd10f30c82cdeaebadac2991b1d8fb33da869f2116c1ab4aab",
+    "actions": ["readCatalog", "scrollCatalog"],
+    "utf8Bom": true,
+    "windowsPowerShellParserErrors": 0,
+    "embeddedCSharpCompile": "passed",
+    "optionalScroll": "Observed song TabItem 42,51187480,4,-18703 only; ScrollItemPattern.ScrollIntoView once, unsupported stops without fallback",
+    "independentStaticReview": "missyou_finish reviewed matching SHA in full: no mandatory findings; no execution or GUI",
+    "pageHeaderRequired": true
+  },
+  "usageModal": {
+    "source": "source/usage-modal144.ps1",
+    "sha256": "0869788812dda15db1bbab8464cfaa29021ed428b615f51f74ad76b47e8b685d",
+    "actions": ["readUsage"],
+    "utf8Bom": true,
+    "windowsPowerShellParserErrors": 0,
+    "embeddedCSharpCompile": "passed",
+    "mutationMethods": [],
+    "modalGuard": "Observed visible exact title 18497 and OK18502 replace page-header visibility only for this public read-only modality; fixed window/tab/document and official URL/lease/asset checks stay",
+    "imageGroupPaneMetadataIncluded": true
+  },
+  "common": {
+    "actualNewWindowOnly": 51187480,
+    "observedDocumentRuntimeId": "42,51187480,4,-18262",
+    "protected69024ChildrenRead": false,
+    "perTypeControlLimit": 200,
+    "outputRowLimit": 600,
+    "clockLimitSeconds": 15,
+    "ownMarkerMissing": "Return false, only public catalog/usage read. No authority for uploads or music selection.",
+    "publicHref": "Only allowlisted TikTok public music paths; auth/signed URLs and edit values are not output",
+    "nativeFunctionsInvokedByWriter": 0,
+    "writerExecutedSources": false,
+    "writerGuiActions": 0,
+    "writerLeaseReads": 0,
+    "writerPublicationIntents": 0,
+    "doesNotVerifyMusicRightsOrBpm": true
+  }
+}

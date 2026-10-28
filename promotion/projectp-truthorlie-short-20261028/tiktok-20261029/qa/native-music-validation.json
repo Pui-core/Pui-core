@@ -1,0 +1,17 @@
+{
+  "helper": "source/native-music144.ps1",
+  "sha256": "c98ee455ae1645908f9b753420aa1589ccf1f4510027fbac69bb6a4ad15b567d",
+  "utf8Bom": true,
+  "windowsPowerShellParserErrors": 0,
+  "embeddedCSharpCompile": "passed",
+  "nativeFunctionsInvokedByWriter": 0,
+  "writerExecutedHelper": false,
+  "sourceActions": ["readUpload", "musicNav", "readCatalog"],
+  "invokeMethodCallSites": 1,
+  "invokeTarget": "Observed native button 42,51187480,4,-18284, exact Japanese royalty-free catalog name",
+  "mutationLimit": "One music navigation only, CreateNew intent then fresh account/origin/target/asset recheck; no upload or publication methods",
+  "readCatalogOwnAccountRule": "Only exact official sound-library plus observed document/header. Missing own href means false and does not authorize upload actions.",
+  "independentStaticReview": "reference_review checked the complete matching SHA and reported no mandatory findings; no execution or GUI by reviewer",
+  "rootExecutionRecordedSeparately": "qa/new-window-20261029.json",
+  "limitations": "Static inspection and Root's single navigation do not establish music eligibility, selected audio, beat alignment, listening quality or publication."
+}

@@ -10,7 +10,7 @@
 - NAS：`\\100.105.2.75\private\work\videos\2026-10-29\嘘か誠か\0513_投票と得点_実口パク_v10\声・効果音版.mp4`
 - captionと技術QAは隣の `../model-motion-20261029/metadata/` と `../model-motion-20261029/qa/`。App Storeは https://apps.apple.com/jp/app/id6783599249 。正式Core/RMSによる16.8–19.2秒の72f実口パクと最終画像の確認を継承する。Rootの受入は技術・場面目視の範囲。全編直接試聴、ownerの創作採用、集客向上を確認済みにしない。
 
-## Rootの有限な実行手順（この手順自体は未実行）
+## Rootの有限な実行手順（PR76初稿・以後の実測は末尾）
 
 1. YouTube142の予約処理が完了してから、Rootが144の有限窓を事前宣言し、既存5aliasを同一run/owner/prop_pui/tiktokへ通常CASで取得する。既存のInterop接続確認を実施する。今回の既知identityはFirefox PID34828、Session1、birth `2026-10-27T17:54:34.0063169Z`。socket番号5291は参考値であり、再探索結果と同じ接続先を優先する。root環境やsocketを永続変更しない。
 2. `source/read-own-window.ps1 -Action inventory -BoundRunId <現在のrun> -BoundExpiry <同じ期限> -BoundOwner <同じowner>` をRootの既存Interop経由で1回だけ実行し、返却HWND集合を私有tmpへ記録する。writerによる実観測は0。保護HWND69024は `FromHandle` を行わず、子のTab/Docも読まない。この窓の133（tab RID `42,69024,4,-68`）とYouTube142を変更しない。
@@ -29,10 +29,36 @@ Mozillaの[公式CLI仕様](https://firefox-source-docs.mozilla.org/browser/Comm
 - inspectは新窓とselected tabを固定し、表示名だけのowner判定や旧helperのown-marker例外を許可しない。nativeにexact `https://www.tiktok.com/@prop_pui` リンクが露出しなければ未確認として拒否する。根拠なく条件を弱めない。
 - rawUI・実lease・認証・個人声・SDK/MOCはGitへ入れない。実観測結果はRootの私有tmpへ。Gitへ残す結果は必要最小の非秘密要約だけ。
 
-Source検査の記録は `qa/validation.json`。Windows PowerShellのParserで構文エラー0、抽出した固定C#型はcompile成功（native関数の呼出0）。`source/check-readonly.ps1` はSourceを実行せずAST/importを列挙する検査用。今回この検査PS1の直接実行は既存の署名policyで拒否されたため、policyを変更せず明示的なParser呼出とC#compileだけ実施した。helperの実UIA/lease読取や別窓起動は未実施。
+PR76時点のwriter検査記録は `qa/validation.json`。Windows PowerShellのParserで構文エラー0、抽出した固定C#型はcompile成功（native関数の呼出0）。`source/check-readonly.ps1` はSourceを実行せずAST/importを列挙する検査用。この検査PS1の直接実行は既存の署名policyで拒否されたため、policyを変更せず明示的なParser呼出とC#compileだけ実施した。writerはhelperの実UIA/lease読取や別窓起動を実施していない。
 
 ## 次工程に残る実確認
 
 TikTokネイティブ曲の日本向け商用アプリ宣伝可否、実sound ID/曲/開始位置/音量、150BPM想定gridへの実音はめ、6句全体の聴感・captionのnative持続・投稿設定は未確認。旧Digital Horizonや132の試聴回答を流用しない。150BPMは0.4秒gridという既存編集条件であり、曲選択の証明ではない。
 
 このSource PRのmergeは読取helper・手順の完了のみ。管理144の実投稿、receipt、24h/72h分析予定が揃うまではIssueを完了にしない。Rootは公開直前のfrozen asset/caption/native曲/設定/本人accountを再確認し、`CreateNew`一回intent→native投稿一度→ID/実時刻/音源/リンク読戻しを別工程で行う。
+
+## 10月29日06時台：Rootの新窓実測
+
+`qa/new-window-20261029.json` は、Rootの通常CLI一回と新窓/Docの実測を、rawUI・lease・認証を複製せず要約した記録。Root実行の `source/open-new-window-root.ps1` はSHA `ec7049a93ce88dde846c943c10cc5460587c829adfb8c7318e8f891f9d7c5845` のまま保存した実行済みSourceであり、再実行用の汎用helperではない。元の読取helper `read-own-window.ps1` のSHA `afe36ec84cef6ff318a39b30e99fca2e906ee8f00b62be2d9ff524d23328525d` は不変。
+
+Rootが06:21:55 JSTに通常CLIを1回起動し、新HWND51187480、selected tab `42,51187480,4,-17035`、可視Doc `42,51187480,4,-18262` を実観測した。旧69024の子UIは読まない。06:22:33のinspectは公式upload URLの後、exact本人hrefが見つからず停止し、その時点では本人accountが未確認だった。窓作成だけからログイン/添付/音源/投稿の成功を推定しなかった。
+
+06:25:23にRootが観測済みavatarへ標準ExpandCollapseのExpandを行い、本人のexactプロフィールhrefを露出させた。06:25:31に不変のstrict helperによるinspectが成功。writerは非秘密の既存確認票のSHA・本人account・新窓/tab/Doc・local asset SHAを読取確認した。未露出markerの例外は追加していない。
+
+## 新窓だけのnative読取とカタログ移動
+
+`source/native-music144.ps1` は上記の実観測済み新窓/tab/Docへ固定したBOM付きPS1。Rootだけが使う。`readUpload` はfreshなexact本人href・official upload address・v10 SHAを要求して現在のcontrol metadataを読む。`musicNav` は加えて実観測ボタン `42,51187480,4,-18284`、完全名「ロイヤリティフリーの楽曲」・Enabled・Invoke可能を照合し、私有`CreateNew`ナビ意図票→全条件再確認→Invoke一度だけ。添付・保存・最終投稿・focus・キー・マウスの経路はない。
+
+RootはSHA `c98ee455ae1645908f9b753420aa1589ccf1f4510027fbac69bb6a4ad15b567d` のhelperで06:29:52にmusicNavを一度実行した。直前の本人確認はtrue、返却時のcatalogVerifiedはfalse。直後のRoot inventoryでは同じ新窓/tab/Docが見えており、旧69024は子読取0。ナビ要求をカタログの表示成功や音源権利確認へ読み替えない。
+
+`readCatalog` だけはRootが実観測した `-ExpectedCatalogDocumentRuntimeId` を必須とし、同じ新窓/tab、official sound-library addressと完全一致headerを確認して公開楽曲カタログを読む。profile menuが閉じて本人hrefが出なければ`ownAccountVerified=false`で返し、アップロード操作へは使わない。readCatalogからInvokeする経路はない。曲ID・JP商用可否・拍・開始位置は実表示で別途確認する。生UI出力は私有tmpに保持し、Gitには選択した非秘密結果だけ残す。
+
+新helperはWindows Parserエラー0、固定C#読取型compile成功、writerのnative呼出0。独立補助が同SHA全文を静的確認して必須指摘なし。実音源や聴感を確認済みとはしていない。検証の範囲は `qa/native-music-validation.json` を参照。
+
+Rootの06:30:12のカタログ読取はofficial sound-library、同じ実測Doc、見出しを確認して成功した。本人hrefは閉じており`ownAccountVerified=false`の公開catalog読取として記録。一般的な利用制限に関するnative文言が見えたことだけで、日本向け商用アプリ宣伝の適合やBPMを確定していない。
+
+追加の `source/catalog-rows144.ps1` はGroup/DataItem/Hyperlinkと親RIDを含む限定reader。public music URLだけを出力し、曲の行と無名buttonの対応をRootが読める。`scrollCatalog` だけは観測済み曲Tab18703へのScrollItem一回で、pattern未対応なら停止する。曲採用や投稿のInvokeは持たない。カタログheaderがmodalで隠れていれば停止する。
+
+Rootが「使い方」を開くとページheaderが隠れたため、別の `source/usage-modal144.ps1` を用意した。`readUsage` 一種類だけ、観測済みtitle18497/OK18502の完全名・可視を確認し、same newwindow/tab/Docとofficial sound-library・5alias・assetのguardを維持する。Group/Image/Paneのmetadataまで読むが、OKのInvokeやscrollも持たない。このmodal限定の読取条件をuploadやmedia操作へ転用しない。検査は `qa/catalog-readers-validation.json` 。ライセンスの本文やJP範囲は実表示の確認待ち。
+
+writerはRoot CLIの既存Sourceとmetadata-onlyのbefore票のSHA一致、私有intentの必要な非秘密fieldsだけを読取確認した。新窓のlive UIA/lease/起動はRoot専管。Rootの実観測をwriter自身のGUI実行済みと扱わない。
