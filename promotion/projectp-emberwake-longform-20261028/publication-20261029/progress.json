@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "issue": 142,
   "sourceBase": "aa5045591ab29b88ed03661f8ed041256f3255e7",
-  "phase": "entry-close-confirmed-empty-upload-stage-prepared",
+  "phase": "accepted-v07-empty-upload-file-select-and-picker-probe-ready",
   "scripts": [
     {
       "file": "youtube142-entry-control.ps1",
@@ -11,6 +11,14 @@
     {
       "file": "youtube142-upload-stage.ps1",
       "sha256": "2e6f4f3402b511374682c5be8bda1a00bda65885e3f00c2cc9e33676d7262116"
+    },
+    {
+      "file": "youtube142-file-select.ps1",
+      "sha256": "c5199006e43812962239892635c8a2bc494f032584d79cc62cf709c739dd0568"
+    },
+    {
+      "file": "youtube142-filepicker-probe.ps1",
+      "sha256": "cb07328a2ccd9e4e33533ee84de97925b585b62f25e30190692fac936c635a84"
     }
   ],
   "entry": {
@@ -40,9 +48,11 @@
   "asset": {
     "requiredIssue": 141,
     "requiredRevision": "v07",
-    "accepted": false,
-    "finalFile": null,
-    "finalSha256": null,
+    "accepted": true,
+    "rootAcceptanceUrl": "https://github.com/Pui-core/-/issues/141#issuecomment-6479380594",
+    "finalFile": "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\demo07-natural\\videos\\emberwake-v07-bgm.mp4",
+    "finalSha256": "ce39d1223e7a9dfc59488b9c828f5c44bac363fd59334484f519f5dbbdef7241",
+    "preparedSha256": "d487b218626f916c1ca281fa7f58fc306ff5bcdd8d657bc846af3b244aee3fec",
     "newVideoId": null,
     "noV06Fallback": true
   },
@@ -53,6 +63,29 @@
     "fileAttachment": 0,
     "publication": 0
   },
-  "stageExecution": "Not yet recorded; Root runs PS parse and native action",
-  "rawUiOrLeaseContentsSaved": false
+  "stageExecution": {
+    "actor": "Root",
+    "createInvokes": 1,
+    "openUploadInvokes": 1,
+    "emptyModal": {
+      "atUtc": "2026-10-28T20:00:16.3304033Z",
+      "headerRuntimeId": "42,69024,4,-15771",
+      "fileSelectRuntimeId": "42,69024,4,-15859"
+    },
+    "fileSelectionActions": 0,
+    "fileAttachIntents": 0,
+    "publicationIntents": 0
+  },
+  "rawUiOrLeaseContentsSaved": false,
+  "probeRepair": {
+    "priorDraftSha256": "206e8ee1e20b197f06d766436da12e0919e4f4745930eb20b5eb53e792f28314",
+    "priorDraftExecuted": false,
+    "cause": "JavaScript replacement-string suffix expansion of PowerShell dollar-apostrophe text",
+    "fix": "Rebuilt from original with callback literal replacements",
+    "currentProbeSha256": "cb07328a2ccd9e4e33533ee84de97925b585b62f25e30190692fac936c635a84",
+    "nativePsParserErrors": 0,
+    "oneBodyAndTwoSingleLineTabDocConditions": true,
+    "independentStaticReview": "Prior mandatory finding cleared; no new major finding"
+  },
+  "syntaxOnlyProof": "syntax-frozen-v07.json"
 }
