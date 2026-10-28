@@ -1,0 +1,133 @@
+{
+  "recordedAt": "2026-10-28T11:50:34.215Z",
+  "managementIssue": "https://github.com/Pui-core/-/issues/137",
+  "scope": "private owner-voice experiment; no adoption or publication",
+  "model": {
+    "id": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+    "license": "Apache-2.0",
+    "source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "filesDownloaded": 11,
+    "weightBytes": 2511637364
+  },
+  "reference": {
+    "ownerPermission": true,
+    "kind": "Owner original unmixed singing/rap; not verified neutral speaking",
+    "durationSeconds": 8,
+    "transcriptSupplied": false,
+    "retainedPrivately": true,
+    "inGit": false
+  },
+  "generation": {
+    "text": "このゲーム、あなたなら右と左、どっちを選ぶ？",
+    "mode": "x_vector_only_mode=True; no transcript; no training",
+    "device": "cpu",
+    "cpuThreads": 4,
+    "seed": 20261028,
+    "maxNewTokens": 110,
+    "topK": 50,
+    "topP": 1,
+    "temperaturePassed": 0.8,
+    "subtalkerDoSample": false,
+    "training": false,
+    "externalAudioApi": false,
+    "voicevoxUsedForReferenceOrTraining": false,
+    "elapsedSeconds": 94.92
+  },
+  "rawClone": {
+    "durationSeconds": 4.72,
+    "sampleRate": 24000,
+    "frames": 113280,
+    "sha256": "07fdb44bfe7b64807f5adffe2c252ec79c9ebc5c390425f079b68dcf2654d01e",
+    "peakDbfs": -10.208822285747017,
+    "rmsDbfs": -27.102812459251794,
+    "head100msPeakDbfs": -41.5539874427866,
+    "tail100msPeakDbfs": -49.019838914655985,
+    "allDecoded": true,
+    "finite": true
+  },
+  "reproductionCli": {
+    "offline": true,
+    "elapsedSeconds": 54.7,
+    "outputSha256": "07fdb44bfe7b64807f5adffe2c252ec79c9ebc5c390425f079b68dcf2654d01e",
+    "exactSameSha256": true,
+    "exitCode": 0
+  },
+  "voicevox": {
+    "speaker": "青山龍星",
+    "style": "ノーマル",
+    "styleId": 13,
+    "engineVersion": "0.25.1",
+    "speedScale": 1.12,
+    "intonationScale": 1.12,
+    "prePhonemeLength": 0.035,
+    "postPhonemeLength": 0.1,
+    "credit": "VOICEVOX:青山龍星",
+    "privateComparisonOnly": true,
+    "licenseSources": [
+      "https://voicevox.hiroshiba.jp/term/",
+      "https://www.virvoxproject.com/voicevoxの利用規約"
+    ],
+    "businessUsePriorApplicationCondition": true
+  },
+  "comparison": {
+    "targetLufs": -20,
+    "method": "Same integrated loudness target; constant gain per file only. No tempo/pitch changes, no padding/trimming, no EQ/denoise/fades/limiting.",
+    "sameText": true,
+    "deliverySpeedAndPausesDiffer": true,
+    "files": [
+      {
+        "name": "本人声クローン_v01.wav",
+        "durationSeconds": 4.72,
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "gainDb": 5.91,
+        "lufsI": -20.01,
+        "truePeakDbtp": -4.28,
+        "sha256": "84bc975dd8090149b96b96da112e4c59bb811f3ddcd3b5e6b8dda07e6878d672",
+        "fullDecodeExit": 0,
+        "copyShaMatched": true,
+        "windowsFileExists": true
+      },
+      {
+        "name": "VOICEVOX比較_v01.wav",
+        "durationSeconds": 3.616,
+        "sampleRate": 24000,
+        "channels": 1,
+        "bitDepth": 16,
+        "gainDb": 5.219999999999999,
+        "lufsI": -19.99,
+        "truePeakDbtp": -1.03,
+        "sha256": "4216c8e0c28526c0ca838bc2b67c0cefc87346e42509ac736bfd500cb0c24e70",
+        "fullDecodeExit": 0,
+        "copyShaMatched": true,
+        "windowsFileExists": true
+      }
+    ],
+    "storedAudioCount": 2,
+    "nasAudioCopies": 0
+  },
+  "supplementaryOfflineAsr": {
+    "model": "Systran/faster-whisper-small",
+    "revision": "536b0662742c02347bc0e980a01041f333bce120",
+    "cloneRecognizedText": "このゲーム、あなたなら右と左、どっちを選ぶ",
+    "voicevoxRecognizedText": "このゲーム、あなたなら右と左、どっちを選ぶ",
+    "expectedText": "このゲーム、あなたなら右と左、どっちを選ぶ？",
+    "notDirectListening": true
+  },
+  "directListening": false,
+  "speakerSimilarityAssessed": false,
+  "naturalnessAssessed": false,
+  "ownerCreativeAcceptance": null,
+  "commercialVideoAdoption": false,
+  "published": false,
+  "growthEffectAssessed": false,
+  "privacy": {
+    "rawAudioInGit": false,
+    "generatedAudioInGit": false,
+    "modelsInGit": false,
+    "lyricsInGit": false,
+    "credentialsInGit": false
+  }
+}
