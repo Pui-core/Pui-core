@@ -1,0 +1,21 @@
+{
+  "source": "source/read-native-editor144.ps1",
+  "sha256": "a231d464198d41f3804ab93e6637d1ffc2e0c5a20c102674aca1f55b9b7f7657",
+  "purpose": "Read existing pinned editor/filter metadata without changing focus, window, tab, selection or content",
+  "utf8Bom": true,
+  "windowsPowerShellParserErrors": 0,
+  "embeddedCSharpCompile": "passed",
+  "astMutationMethodNames": [],
+  "nativeFunctionsInvokedByWriter": 0,
+  "writerExecutedReader": false,
+  "independentStaticReview": "missyou_finish checked matching a231 SHA in full and found no mandatory issues; no execution/GUI/lease/edits by reviewer",
+  "binding": "Own-before adf8, uploaded ticket aa27, source SHA, fixed new window/tab/document and actual native filename/completion plus filter marker18621",
+  "targetAriaMetadata": ["42,51187480,4,-18621", "42,51187480,4,-19021", "42,51187480,4,-19022"],
+  "countryReadRule": "Report lexical candidates only, no native JP claim; owner-stated region JP is separate",
+  "foregroundObservation": "GetForegroundWindow is read before/after UIA getters; no restoring or changing focus. A difference alone does not attribute a cause.",
+  "nodeLimit": 2400,
+  "visibleOutputLimit": 1600,
+  "clockLimitSeconds": 15,
+  "rawUiToGit": false,
+  "doesNotAuthorizeGuiMutationOrPublication": true
+}
