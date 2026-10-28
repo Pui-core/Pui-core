@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {queryInputText,readingCacheMatches} from '../demo05/reading.mjs';
+import {file,hash,save} from '../native.mjs';
+export const baseline='/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film';
+export const stage='/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo06-reading-fix';
+const ids=['course1-15','course2-01','course5-12'],plan=JSON.parse(fs.readFileSync(file('source/demo05/edit-plan.json'))),used=plan.sections.flatMap(s=>s.units).filter(u=>u.wav),records=[],unchanged=[];
+for(const d of ['source/queries','media/voice','media/audio','projects','videos','qa','public-ready-demo06'])fs.mkdirSync(path.join(stage,d),{recursive:true});
+const fetchOk=async(p,o={})=>{const r=await fetch('http://127.0.0.1:50031'+p,{...o,signal:AbortSignal.timeout(60000)});if(!r.ok)throw Error('VOICEVOX HTTP'+r.status);return r;};
+const speaker=(await(await fetchOk('/speakers')).json()).find(s=>s.name==='玄野武宏'&&s.styles.some(s=>s.id===11));if(!speaker)throw Error('Required original speaker unavailable');
+for(const u of used){const oldWav=path.join(baseline,'media/voice',path.basename(u.wav));if(hash(oldWav)!==u.sha256)throw Error('Baseline original voice changed '+u.id);if(!ids.includes(u.id)){if(!readingCacheMatches(u,u.text))throw Error('Unexpected reading change '+u.id);unchanged.push({id:u.id,path:oldWav,sha256:u.sha256,cacheReusable:true});continue;}
+ const spokenText=queryInputText(u.text);if(readingCacheMatches(u,u.text)||!spokenText.includes('しょうろう'))throw Error('Bad old reading cache accepted');
+ const query=await(await fetchOk('/audio_query?'+new URLSearchParams({text:spokenText,speaker:'11'}),{method:'POST'})).json(),oldQuery=JSON.parse(fs.readFileSync(file('source/demo05/queries/'+u.id+'.json')));
+ for(const p of ['speedScale','pitchScale','intonationScale','volumeScale','prePhonemeLength','postPhonemeLength','outputSamplingRate','outputStereo'])query[p]=oldQuery[p];
+ const matches=[];for(let p=0;p<query.accent_phrases.length;p++){const m=query.accent_phrases[p].moras;for(let j=0;j+3<m.length;j++){const a=m.slice(j,j+4);if(a[0].consonant==='sh'&&a[0].vowel==='o'&&!a[1].consonant&&a[1].vowel==='o'&&a[2].consonant==='r'&&a[2].vowel==='o'&&!a[3].consonant&&a[3].vowel==='o'&&a.every(x=>Number.isFinite(x.vowel_length)&&x.vowel_length>0))matches.push({phrase:p,index:j,moras:a});}}
+ if(matches.length!==1)throw Error('Required local sho-o-ro-o sequence absent/ambiguous '+u.id);
+ const qfile=file('source/demo06/queries/'+u.id+'.json'),wav=path.join(stage,'media/voice',u.id+'-shouro-v06.wav');if(fs.existsSync(qfile)||fs.existsSync(wav))throw Error('Versioned repair retained');save('source/demo06/queries/'+u.id+'.json',query);fs.copyFileSync(qfile,path.join(stage,'source/queries',u.id+'.json'));
+ const buf=Buffer.from(await(await fetchOk('/synthesis?speaker=11',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(query)})).arrayBuffer());fs.writeFileSync(wav,buf,{flag:'wx'});let bytes=0,rate=0;for(let p=12;p+8<buf.length;){const n=buf.readUInt32LE(p+4),id=buf.toString('ascii',p,p+4);if(id==='fmt ')rate=buf.readUInt32LE(p+16);if(id==='data')bytes=n;p+=8+n+(n%2);}const seconds=bytes/rate;if(!rate||u.voiceOffset+seconds>u.duration)throw Error('Corrected complete voice exceeds existing cue '+u.id);
+ const item={id:u.id,displayText:u.text,spokenText,wav,sha256:hash(wav),query:qfile,querySha256:hash(qfile),oldQuerySha256:hash(file('source/demo05/queries/'+u.id+'.json')),oldVoiceSha256:u.sha256,seconds,oldSeconds:u.seconds,cueStart:u.globalFrame/30,cueDuration:u.duration,voiceOffset:u.voiceOffset,speaker:11,readingProof:matches[0],subjectiveListen:false};records.push(item);console.log(JSON.stringify({id:u.id,seconds,oldSeconds:u.seconds,reading:matches[0].moras.map(m=>m.text).join('/')}));
+}
+if(records.length!==3||unchanged.length!==73)throw Error('Exactly3 repaired plus73 unchanged required');save('qa/demo06/reading-generation.json',{records,unchanged,other73Unchanged:true,oldBadCachesRejected:3,newCorrectedCacheReusable:records.every(r=>readingCacheMatches({text:r.displayText,spokenText:r.spokenText},r.displayText)),stage,baseline,published:false});console.log(JSON.stringify({corrected:3,unchanged:73,stage}));

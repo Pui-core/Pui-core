@@ -32,12 +32,12 @@
       "title": "制作中のEMBERWAKE"
     }
   ],
-  "actualDurationSeconds": 606.485,
+  "actualDurationSeconds": 606.466667,
   "frames": 18194,
-  "video": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/videos/emberwake-demo05-v01-bgm.mp4",
-  "videoSha256": "37ee9bbee9fc6479dcc38576068d2960f006b60446d1b2443598be747518f13b",
-  "voiceOnlyVideo": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/videos/emberwake-demo05-v01-voice.mp4",
-  "voiceOnlySha256": "82026446341844523b9fb1ebfde8480fe87b052dcdc20bf248cfa695144536ec",
+  "video": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo06-reading-fix/videos/emberwake-demo05-v06-bgm.mp4",
+  "videoSha256": "ff327308346a0c1b7f7b14f122a2adf443351a9882ce9ed063c7a5315f7d778e",
+  "voiceOnlyVideo": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo06-reading-fix/videos/emberwake-demo05-v06-voice.mp4",
+  "voiceOnlySha256": "03af92e6745333dbba17c0c158bcffa91c0219db186f9b74a4712e13fda8c612",
   "cover": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/covers/demo05-cover-v02.jpg",
   "coverSha256": "0d32f0f7e486d450861abdd34fa5514b86803d4753266c8b6d4ee4cff5bde28d",
   "gameMode": "Bundled demo0.11 five courses included in production package0.12.0",
@@ -75,19 +75,28 @@
   "archives": [
     {
       "kind": "bgm",
-      "path": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-29\\エンバーウェイク\\0007_芯石5コース_実録構成改_v05\\BGM版.mp4",
-      "sha256": "37ee9bbee9fc6479dcc38576068d2960f006b60446d1b2443598be747518f13b",
+      "path": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-29\\エンバーウェイク\\0057_芯石5コース_読み修正_v06\\BGM版.mp4",
+      "sha256": "ff327308346a0c1b7f7b14f122a2adf443351a9882ce9ed063c7a5315f7d778e",
       "decodedFromNas": true,
       "sourceRetained": true
     },
     {
       "kind": "voice",
-      "path": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-29\\エンバーウェイク\\0007_芯石5コース_実録構成改_v05\\声のみ版.mp4",
-      "sha256": "82026446341844523b9fb1ebfde8480fe87b052dcdc20bf248cfa695144536ec",
+      "path": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-29\\エンバーウェイク\\0057_芯石5コース_読み修正_v06\\声のみ版.mp4",
+      "sha256": "03af92e6745333dbba17c0c158bcffa91c0219db186f9b74a4712e13fda8c612",
       "decodedFromNas": true,
       "sourceRetained": true
     }
   ],
-  "rootMediaAccepted": true,
-  "rootMediaAcceptanceUrl": "https://github.com/Pui-core/-/issues/127#issuecomment-6472751865"
+  "rootMediaAccepted": false,
+  "rootMediaAcceptanceUrl": null,
+  "deliveryVersion": "v06",
+  "audioReadingRevisionIssue": 140,
+  "readingOverrides": {
+    "鐘楼": "しょうろう"
+  },
+  "previousMediaVersion": "v05",
+  "previousVideoSha256": "37ee9bbee9fc6479dcc38576068d2960f006b60446d1b2443598be747518f13b",
+  "previousVoiceOnlySha256": "82026446341844523b9fb1ebfde8480fe87b052dcdc20bf248cfa695144536ec",
+  "rootMediaAcceptanceState": "reading_revision_verified_pending_root_handoff"
 }

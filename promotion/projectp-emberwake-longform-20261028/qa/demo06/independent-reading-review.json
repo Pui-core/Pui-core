@@ -1,0 +1,116 @@
+{
+  "reviewer": "voice_trial",
+  "reviewedArtifactSha256": "75a2e19392cc0f804aac6c27399b6e8c012f07d752733114d07b217a4b9d2ce4",
+  "corrected": [
+    {
+      "id": "course1-15",
+      "querySha256": "fda00266491c0725e4bed0286ec7774ca3ee4e9e4bef209151f8816955c2c0ed",
+      "wavSha256": "43602bcad11c94a4edc151a71e1fa5cc8a1c42d1bc1d219f1163ee8886515b9c",
+      "seconds": 6.741333333333333,
+      "subject": "鐘楼",
+      "acceptedMoras": [
+        {
+          "text": "ショ",
+          "consonant": "sh",
+          "vowel": "o"
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "vowel": "o"
+        },
+        {
+          "text": "ロ",
+          "consonant": "r",
+          "vowel": "o"
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "vowel": "o"
+        }
+      ]
+    },
+    {
+      "id": "course2-01",
+      "querySha256": "6f20074f453f893a03b22c7c96445146a9197a639036c092b548538f8bab6a96",
+      "wavSha256": "aa22305d6a0b5a66bc7fbbd3f2173c090356185cc267c8ce788a24b9331dc145",
+      "seconds": 6.058666666666666,
+      "subject": "鐘楼",
+      "acceptedMoras": [
+        {
+          "text": "ショ",
+          "consonant": "sh",
+          "vowel": "o"
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "vowel": "o"
+        },
+        {
+          "text": "ロ",
+          "consonant": "r",
+          "vowel": "o"
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "vowel": "o"
+        }
+      ]
+    },
+    {
+      "id": "course5-12",
+      "querySha256": "1b705fcadaab14a260cbb04061605647e844dc43dd8f0209e6b4eea20f3ca0c1",
+      "wavSha256": "ee385b8d02c29f73d89f16cebba449dd0e9f4b45df43a4ba6f40759c751264a3",
+      "seconds": 6.229333333333333,
+      "subject": "鐘楼",
+      "acceptedMoras": [
+        {
+          "text": "ショ",
+          "consonant": "sh",
+          "vowel": "o"
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "vowel": "o"
+        },
+        {
+          "text": "ロ",
+          "consonant": "r",
+          "vowel": "o"
+        },
+        {
+          "text": "オ",
+          "consonant": null,
+          "vowel": "o"
+        }
+      ]
+    }
+  ],
+  "scope": {
+    "threeQueryAndWaveHashes": true,
+    "localFourMorasAndFinitePositiveVowelLengths": true,
+    "shAndRConsonantLengthsPositive": true,
+    "allEightOldSettingsUnchanged": true,
+    "speaker11AndPcm16Mono48k": true,
+    "allCorrectedCuesFitOriginalWindows": true,
+    "all73OldWaveActualHashesUnchanged": true,
+    "used76EqualsThreePlus73": true,
+    "badLegacyCacheRejected": true,
+    "correctedSpokenTextCacheAccepted": true
+  },
+  "unusedGeneratedCue": "course2-13 is outside current edit plan; not a missing used cue",
+  "excluded": {
+    "generation": true,
+    "editing": true,
+    "git": true,
+    "gui": true,
+    "subjectiveListening": true,
+    "finalMp4Verification": true
+  },
+  "decision": "PASS within stated query and original-wave scope",
+  "source": "Independent read-only agent message received in this session; final AAC QA remains a separate producer check"
+}
