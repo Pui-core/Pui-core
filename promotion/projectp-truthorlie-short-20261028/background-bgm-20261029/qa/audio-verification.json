@@ -1,0 +1,151 @@
+{
+  "issue": 145,
+  "duration": 19.2,
+  "sampleRate": 48000,
+  "channels": 2,
+  "videoSha256": "280cf05c0d3a0b9f7b10d7d84ef0bccfbf21125f15f1969035e97f65601a2289",
+  "mixSha256": "2dceac47b0ba7a84cd468ca6e5985d25ffc8bbc77e08ad418919a222e4b34c76",
+  "musicbedSha256": "0eced4fbe328b36384c32b1850e769c78cf5a2a62de87f663e4109c56c92186d",
+  "narrationSha256": "a8052a999efb483db9c2209f559b315907ed2f460b227839d1f6b4f996f4adcf",
+  "sfxSha256": "1e352d7fcc2ad9b59a99017b400c70152ae12b15ef7e7cb41e9fe53e7af9b68e",
+  "pcmMixMaxSumError": 0,
+  "voiceSeAmplitudesAndRelativeTimingPreserved": true,
+  "masterGain": 1,
+  "cues": [
+    {
+      "id": "hook",
+      "text": "外れた一票。得点するのは、どっち？",
+      "at": 0.16,
+      "firstVoiced": 0.19237500000000002,
+      "lastVoiced": 2.9036666666666666,
+      "sourceTailPad": 0.11497916666666666,
+      "sourceNarrationUnchanged": true,
+      "bestLagInterleavedSamples": 0,
+      "lagSeconds": 0,
+      "whole": 0.999767789962328,
+      "head": 0.9996841180715191,
+      "middle": 0.9992603392828314,
+      "tail": 0.9997432202409582,
+      "voiceOverMusicDb": 12.498268695700203
+    },
+    {
+      "id": "rule",
+      "text": "この回、五つの回答に、嘘は一つ。",
+      "at": 3.36,
+      "firstVoiced": 3.4172708333333333,
+      "lastVoiced": 5.941,
+      "sourceTailPad": 0.07497916666666667,
+      "sourceNarrationUnchanged": true,
+      "bestLagInterleavedSamples": 0,
+      "lagSeconds": 0,
+      "whole": 0.999800822354742,
+      "head": 0.9999384035907304,
+      "middle": 0.9997173688471992,
+      "tail": 0.9997071984282657,
+      "voiceOverMusicDb": 12.499999843149647
+    },
+    {
+      "id": "vote",
+      "text": "投票は二番。でも、嘘は五番。",
+      "at": 6.32,
+      "firstVoiced": 6.382416666666667,
+      "lastVoiced": 8.904020833333334,
+      "sourceTailPad": 0.10395833333333333,
+      "sourceNarrationUnchanged": true,
+      "bestLagInterleavedSamples": 0,
+      "lagSeconds": 0,
+      "whole": 0.9999251506660951,
+      "head": 0.9999603257356213,
+      "middle": 0.9999163822989036,
+      "tail": 0.9999237742040147,
+      "voiceOverMusicDb": 12.485684339025562
+    },
+    {
+      "id": "result",
+      "text": "全員が外したので、出題側に一点。",
+      "at": 9.76,
+      "firstVoiced": 9.799229166666667,
+      "lastVoiced": 12.162749999999999,
+      "sourceTailPad": 0.09322916666666667,
+      "sourceNarrationUnchanged": true,
+      "bestLagInterleavedSamples": 0,
+      "lagSeconds": 0,
+      "whole": 0.9998710348271088,
+      "head": 0.9998392549853553,
+      "middle": 0.9998168422271977,
+      "tail": 0.999886525614579,
+      "voiceOverMusicDb": 13.181058856127311
+    },
+    {
+      "id": "title",
+      "text": "自作ゲーム、うそか、まことか。",
+      "at": 13.44,
+      "firstVoiced": 13.4805,
+      "lastVoiced": 15.602229166666666,
+      "sourceTailPad": 0.09908333333333333,
+      "sourceNarrationUnchanged": true,
+      "bestLagInterleavedSamples": 0,
+      "lagSeconds": 0,
+      "whole": 0.9995842671712761,
+      "head": 0.999538301623888,
+      "middle": 0.9998308296477346,
+      "tail": 0.9999097574393863,
+      "voiceOverMusicDb": 12.452266325235058
+    },
+    {
+      "id": "cta",
+      "text": "アイフォーンで配信中。",
+      "at": 16.8,
+      "firstVoiced": 16.817708333333336,
+      "lastVoiced": 17.9431875,
+      "sourceTailPad": 0.10479166666666667,
+      "sourceNarrationUnchanged": true,
+      "bestLagInterleavedSamples": 0,
+      "lagSeconds": 0,
+      "whole": 0.9998457035332062,
+      "head": 0.9997439621102101,
+      "middle": 0.999808644941042,
+      "tail": 0.9998711052167508,
+      "voiceOverMusicDb": 12.50000003905015
+    }
+  ],
+  "musicEdits": {
+    "officialTrack": "Cipher — Kevin MacLeod",
+    "isrc": "USUAN1100844",
+    "sourceIn": 0.824,
+    "sourceOut": 20.024,
+    "sourceSeconds": 19.2,
+    "retainedV9BedGain": 2,
+    "gainChangeDb": 6.020599913279624,
+    "retainedProcessing": {
+      "loudnorm": {
+        "I": -27,
+        "LRA": 7,
+        "TP": -6
+      },
+      "level": 0.45,
+      "postPcmGain": 0.6666666666666666,
+      "sidechain": {
+        "threshold": 0.055,
+        "ratio": 2.2,
+        "attackMs": 12,
+        "releaseMs": 180
+      },
+      "fadeIn": [
+        0,
+        0.03
+      ],
+      "fadeOut": [
+        18.8,
+        19.2
+      ]
+    },
+    "fadeProtectsFirstVoicedAt": 0.19237500000000002,
+    "fadeOutAfterFinalVoiceAt": 17.9431875,
+    "additionalPhraseDuckingPlan": "qa/phrase-duck-plan.json",
+    "finalMinimumVoiceOverMusicDb": 12.452266325235058
+  },
+  "fullSubjectiveListen": false,
+  "nativeTikTokSoundSelected": false,
+  "published": false
+}

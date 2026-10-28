@@ -1,0 +1,26 @@
+{
+  "issue": 145,
+  "checkedAt": "2026-10-28T22:51:30.585Z",
+  "nativeCliExecutionAllowed": false,
+  "installedNativeCliObserved": {
+    "EffectCraft": "PE32+ Windows console/Rust; executable strings are not proof of no Window/focus entry route",
+    "FilmCraft": "PE32+ Windows console; no verified entry implementation"
+  },
+  "nativeExeInvocations": 0,
+  "nativeHelpInvocations": 0,
+  "decision": "Use Root-authorized audio-only FFmpeg fallback with packet-copy accepted v10 picture; no Windows exe processes",
+  "fallbackBasis": "projectp-video/references/production.md 音だけを修正する場合 + Issue145 Root clarification",
+  "toolProvenance": {
+    "source": "https://ffmpeg.org/download.html",
+    "provider": "https://github.com/BtbN/FFmpeg-Builds/releases",
+    "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-n9.0-latest-linux64-gpl-shared-9.0.tar.xz",
+    "sha256": "3ffc4dafa2309adb18f5f598f5e23e84f3d400c1444f2538dcbcfb0d5c60b5ac",
+    "size": 69756360,
+    "platform": "Linux x86_64, private non-GUI ELF tools; no Windows exe"
+  },
+  "privateToolLocation": "/home/pui/tmp/projectp145-tools",
+  "gui": 0,
+  "focusCalls": 0,
+  "mouseKeyboardActions": 0,
+  "publicationIntents": 0
+}
