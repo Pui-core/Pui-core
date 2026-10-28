@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "auditId": "PP-GROWTH-AUDIT-20261027",
+  "managementIssue": "https://github.com/Pui-core/-/issues/131",
+  "auditDateJst": "2026-10-27",
+  "recordedAtUtc": "2026-10-27T11:40:55.008Z",
+  "updatedAtUtc": "2026-10-27T12:46:16.651Z",
+  "timezone": "Asia/Tokyo",
+  "ruleId": "SNS-003-AUDIT-001",
+  "status": "HOLD_REFRESHED_LIST_PUBLICATION_AND_ANALYTICS_UNVERIFIED",
+  "winnerCount": 0,
+  "region": {
+    "targetMarket": "JP",
+    "nativeAudienceGeo": null,
+    "nativeRegionFilter": null,
+    "meaning": "Japan is the requested market; account locale and observation time do not establish audience country."
+  },
+  "scope": {
+    "platforms": [
+      "tiktok",
+      "youtube"
+    ],
+    "portfolio": [
+      "TruthOrLie",
+      "ScateRush",
+      "missyou",
+      "EMBERWAKE",
+      "other_verified_current_or_finished_apps"
+    ],
+    "musicTopicUploads": false,
+    "horizontalMinimumSeconds": 600,
+    "countsAndSuccessNotGuaranteed": true
+  },
+  "historicalObservations": [
+    {
+      "id": "OBS-YT-Y6-20261026",
+      "ownership": "owner",
+      "evidenceKind": "historical_native_snapshot",
+      "videoId": "y6-fuKgLq4k",
+      "url": "https://www.youtube.com/shorts/y6-fuKgLq4k",
+      "sourceIssue": "https://github.com/Pui-core/-/issues/119",
+      "sourcePublicRecord": "https://github.com/Pui-core/Pui-core/blob/4619ef4c288eec15aee519b3e5959ecd5df39176/promotion/projectp-growth-20261026/data/2026-10-26-evening-native-observation.json",
+      "sourceRecordSha256": "fc8c40ab447f309b05b06c64d7bdcd6a1177a2cff3d059a252cac402b7d84e5d",
+      "actualPublishedAtUtc": "2026-10-25T10:00:22.000Z",
+      "scope": "since_publication",
+      "exact24Hours": false,
+      "overview": {
+        "observedAt": "2026-10-26T10:09:34.4177248Z",
+        "ageHours": 24.153449,
+        "views": 673,
+        "subscriberNetChange": 1,
+        "denominator": null
+      },
+      "engagement": {
+        "observedAt": "2026-10-26T10:09:57.5399556Z",
+        "ageHours": 24.159872,
+        "engagedViews": 125,
+        "averageViewDurationSeconds": 10,
+        "stayedToWatchPercent": 15.8,
+        "swipedAwayPercent": 84.2,
+        "stayedRawDenominator": null,
+        "completionRate": null,
+        "retentionCurve": null,
+        "uniqueViewers": null,
+        "subscriberConversionRate": null
+      },
+      "first24HoursDueAt": "2026-10-26T10:00:22.000Z",
+      "first72HoursDueAt": "2026-10-28T10:00:22.000Z",
+      "viewedByThisWriter": false,
+      "analysis": "Older since-publication snapshot, not today latest performance and not a successful structure comparison.",
+      "limitations": [
+        "Overview and engagement are separate snapshots about23seconds apart.",
+        "125/673 is not the native stayed-to-watch denominator.",
+        "10seconds is not completion.",
+        "The single +1 is not proof of a repeatable follow/subscriber conversion effect.",
+        "No channel/account gains are attributed to this post beyond its explicitly shown native subscriber change."
+      ]
+    },
+    {
+      "id": "OBS-TT-FIRST-20261026",
+      "ownership": "owner",
+      "evidenceKind": "historical_native_list_display",
+      "videoId": "7700540849909763336",
+      "url": "https://www.tiktok.com/@prop_pui/video/7700540849909763336",
+      "sourceIssue": "https://github.com/Pui-core/-/issues/119",
+      "sourcePublicRecord": "https://github.com/Pui-core/Pui-core/blob/4619ef4c288eec15aee519b3e5959ecd5df39176/promotion/projectp-growth-20261026/data/2026-10-26-evening-native-observation.json",
+      "actualPublishedAtUtc": "2026-10-25T09:51:31.000Z",
+      "observedAtUtc": "2026-10-26T09:52:35.4015977Z",
+      "ageHours": 24.017889166666667,
+      "scope": "post_list_display_counts",
+      "viewsDisplayed": 0,
+      "likesDisplayed": 0,
+      "commentsDisplayed": 0,
+      "listLoadedAtUtc": "2026-10-26T09:49:53.6190213Z",
+      "pageRefreshedThisWindow": false,
+      "averageWatchSeconds": null,
+      "completionRate": null,
+      "attributedFollows": null,
+      "exposureDenominator": null,
+      "recommendationEligibility": null,
+      "causeOfZeroViews": null,
+      "viewedByThisWriter": false,
+      "limitations": [
+        "The list was loaded before the24h due then observed after it, without refresh in that window.",
+        "Displayed zero and unavailable analytics are separate.",
+        "Zero exposure cannot validate a weak hook, a restriction, or its cause."
+      ]
+    }
+  ],
+  "latestNative": {
+    "status": "root_refreshed_list_received_individual_publication_and_analytics_unverified",
+    "observedAtUtc": "2026-10-27T12:43:07.4442212Z",
+    "sourceUrl": "https://www.tiktok.com/tiktokstudio/content",
+    "ownerAccount": "prop_pui",
+    "observations": [
+      {
+        "id": "OBS-TT-EVENING-20261027",
+        "record": "2026-10-27-evening-partial.json",
+        "scope": "own_post_list_display_counts_including_future_reservation",
+        "displayedRows": 6,
+        "allDisplayedViewCountsZero": true,
+        "futureReservationRowsExcluded": [
+          "7701100271014792466"
+        ]
+      },
+      {
+        "id": "OBS-TT-REFRESHED-2143-20261027",
+        "record": "2026-10-27-2143-refreshed.json",
+        "scope": "own_post_list_display_counts_after_ordinary_browser_reload",
+        "displayedRows": 5,
+        "allDisplayedViewLikeCommentCountsZero": true,
+        "deletedScheduledIdAbsent": "7701100271014792466"
+      }
+    ],
+    "missing": [
+      "missyou_actual_publication_and_post_age",
+      "individual_public_state_and_third_party_playback",
+      "impression_or_exposure_denominator",
+      "post_analytics_retention_and_attributed_follows",
+      "metric_reflection_delay"
+    ],
+    "qaSelfPlaybackExcluded": true,
+    "currentObservationId": "OBS-TT-REFRESHED-2143-20261027",
+    "independentDocumentReloadConfirmed": true
+  },
+  "trendAudit": {
+    "status": "root_web_observed_no_japan_rankings",
+    "auditRecordedAtUtc": "2026-10-27T11:42:05.619Z",
+    "sourceCheckedOnJst": "2026-10-27",
+    "sourceObservedAtUtc": null,
+    "observationMode": "Root Web tool handoff, not independent writer fetch; cache responses possible.",
+    "requestedRegion": "JP",
+    "selectedRegionConfirmed": false,
+    "redirectChecks": [
+      {
+        "url": "https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/ja",
+        "finalUrl": "https://ads.tiktok.com/creative/creativeCenter/trends",
+        "bodyScope": "13navigation lines/Log in only",
+        "japanRankingsAcquired": false,
+        "trackNamesAcquired": false
+      },
+      {
+        "url": "https://ads.tiktok.com/business/creativecenter/inspiration/popular/music/pc/ja",
+        "finalUrl": "https://ads.tiktok.com/creative/creativeCenter/trends",
+        "bodyScope": "13navigation lines/Log in only",
+        "japanRankingsAcquired": false,
+        "trackNamesAcquired": false
+      },
+      {
+        "url": "https://ads.tiktok.com/business/creativecenter/inspiration/popular/pc/ja",
+        "finalUrl": "https://ads.tiktok.com/creative/creativeCenter/trends",
+        "bodyScope": "13navigation lines/Log in only",
+        "japanRankingsAcquired": false,
+        "trackNamesAcquired": false
+      }
+    ],
+    "officialGuide": {
+      "url": "https://ads.tiktok.com/resources/help/article/how-to-use-trends?lang=en",
+      "displayedLastUpdated": "July2026",
+      "supports": "Log in→Trends→industry/timeframe→SeeAnalytics navigation guidance.",
+      "doesNotSupport": [
+        "Actual current Japanese ranking retrieval",
+        "A specific track selected or usable for this video",
+        "The trend data being datedJuly2026"
+      ]
+    },
+    "rankings": [],
+    "tracks": [],
+    "japanRankingsAcquired": false,
+    "musicSelected": false,
+    "sourceMetricDate": null,
+    "expiresAtUtc": "2026-10-28T11:00:00Z",
+    "expiryMeaning": "Operational recheck date, not a platform trend lifespan."
+  },
+  "externalExamples": {
+    "status": "catalogued_but_not_adopted",
+    "sourceCheckedOnJst": "2026-10-27",
+    "sourceObservedAtUtc": null,
+    "entries": [
+      {
+        "id": "EXT-DISCOVERY-UUAG-001",
+        "ownership": "external",
+        "url": "https://www.youtube.com/shorts/uuagMgasqw4",
+        "secondaryDiscoveryUrls": [
+          "https://yutura.net/channel/76576/latest/",
+          "https://yutura.net/channel/76576/video/uuagMgasqw4/"
+        ],
+        "sourceCheckedOnJst": "2026-10-27",
+        "sourceObservedAtUtc": null,
+        "reportedPublicationDateText": "8/24",
+        "actualPublishedAtUtc": null,
+        "secondaryMetricDateText": "9/24 17:59",
+        "secondaryListCacheDateText": "10/2 23:56",
+        "sourceDateTimezone": null,
+        "sourceDateYearNotIndependentlyVerified": true,
+        "views": null,
+        "followers": null,
+        "metricDenominator": null,
+        "officialVideoFetch": "cache_miss",
+        "actuallyViewed": false,
+        "structureObserved": false,
+        "status": "not_adopted_as_current_trend_or_structure",
+        "hypothesis": null,
+        "limits": [
+          "The latest-list cache containsAugust–September uploads.",
+          "Secondary metric date is earlier than audit day; no current metric inferred.",
+          "No title/thumbnail inference is promoted into a viewed opening, payoff, sound or edit sequence."
+        ],
+        "revalidateOnJst": "2026-10-28",
+        "expiresOnJst": "2026-10-28"
+      },
+      {
+        "id": "EXT-DISCOVERY-E74-001",
+        "ownership": "external",
+        "url": "https://www.youtube.com/shorts/e74r3caVpCw",
+        "secondaryDiscoveryUrls": [],
+        "sourceCheckedOnJst": "2026-10-27",
+        "sourceObservedAtUtc": null,
+        "actualPublishedAtUtc": null,
+        "views": null,
+        "followers": null,
+        "metricDenominator": null,
+        "officialVideoFetch": "cache_miss",
+        "actuallyViewed": false,
+        "structureObserved": false,
+        "status": "not_adopted_as_current_trend_or_structure",
+        "hypothesis": null,
+        "limits": [
+          "No successful official video fetch or viewing.",
+          "No current performance or actual structure measured."
+        ],
+        "revalidateOnJst": "2026-10-28",
+        "expiresOnJst": "2026-10-28"
+      }
+    ],
+    "channelCheck": {
+      "url": "https://www.youtube.com/channel/UCh2AeLv_0Eme8Y_V4kmUWHQ",
+      "bodyScope": "navigation/footer2025 only",
+      "actualVideoContentObserved": false,
+      "meaning": "Footer year is not a current metric date or proof of a successful structure."
+    },
+    "viewedExamples": 0,
+    "projectpValidatedPatterns": 0
+  },
+  "interpretation": {
+    "confirmedWinners": [],
+    "creativeEffectsFromTikTokZero": null,
+    "optimalDailyPostCount": null,
+    "viewCountOnlySuccess": false,
+    "qaSelfPlaybackIsGrowthEvidence": false
+  },
+  "nextExperimentId": "PP-TT-JOINT-002",
+  "supersessions": [
+    {
+      "id": "INVALID-MUSIC-SLOTS",
+      "sourceIssue": "https://github.com/Pui-core/-/issues/104",
+      "status": "expired",
+      "scope": "Old MIX/MV or music-topic slots only; original research preserved as history.",
+      "reason": "Latest NOMUSIC owner instruction."
+    },
+    {
+      "id": "INVALID-OLD-TRUTH-SEQUENCE",
+      "sourceIssue": "https://github.com/Pui-core/-/issues/93#issuecomment-6430667915",
+      "status": "expired",
+      "scope": "Old18:45 main→19:00 related→19:15 short/TT publication chain.",
+      "reason": "Issue129 quality return and explicit withdrawal. No old reservation is revived."
+    }
+  ],
+  "acceptance": {
+    "sourceRecordsValid": true,
+    "sourceFCopyVerified": true,
+    "rootLatestNativeReceived": true,
+    "mergeGate": "HOLD: normal document reload confirmed at21:43, but individual publication and required post analytics/metric update delay remain unverified.",
+    "rootLatestNativeComplete": false
+  },
+  "cadence": {
+    "daily": "Current source/date/region check via existing goal/patrol only.",
+    "postAge": "Prefer actual publication+24h/+72h, keep platform and window separate.",
+    "weekly": "Reevaluate structure, conversion and expiry in existing patrol; next planned review2026-11-03.",
+    "newCron": false
+  },
+  "latestOwnerRules": [
+    {
+      "id": "SNS-003-QUALITY-GROWTH-002",
+      "effectiveOnJst": "2026-10-27",
+      "summary": "Quality primarily means videos likely to increase views and followers/subscribers; verify with actual post-publication outcomes, not production inspection alone."
+    },
+    {
+      "id": "SNS-002-STRUCTURE-SOUND-001",
+      "effectiveOnJst": "2026-10-27",
+      "summary": "Next TikTok jointly revise structure and select an audible actual native platform track; synchronize cuts/movement and preserve voice and applicable terms."
+    }
+  ],
+  "growthQuality": {
+    "status": "NOT_VERIFIED",
+    "prepublicationChecks": "Readability/voice/real-material accuracy/technical integrity and owner art-direction are necessary checks, not evidence of growth.",
+    "postpublicationCriteria": [
+      "Actual views/reach with correct native scope",
+      "Followers/subscribers actually attributed where available",
+      "Retention/swipe/watch-time/conversion under comparable platform, post-age and material conditions"
+    ],
+    "unknownOrZeroExposure": "Keep unknown exposure null; do not infer zero impressions from zero view display or infer structure/sound causality.",
+    "attribution": "Account totals or daily net followers are not assigned to individual posts."
+  },
+  "soundCandidate": {
+    "title": "Digital Horizon",
+    "artist": "Blinking Frog Blast",
+    "durationSeconds": 42,
+    "observedAtUtc": "2026-10-27T12:18:47.986Z",
+    "reportedBy": "Root",
+    "catalogScope": "own native royalty-free catalog",
+    "displayedCountText": "1.2M",
+    "displayedCountIsNotCurrentJapanRanking": true,
+    "region": null,
+    "timeWindow": null,
+    "soundId": null,
+    "bpm": null,
+    "selected": false,
+    "nativeSoundApplied": false,
+    "audibleMixVerified": false,
+    "commercialUseForTargetPostVerified": null,
+    "sourceIssue": "https://github.com/Pui-core/-/issues/132",
+    "conclusion": "Unselected catalog candidate with native player progress observed; no Root auditory evaluation, winning-track evidence, current Japan ranking or causal explanation for zero views.",
+    "nativePlaybackDisplay": {
+      "reportedBy": "Root",
+      "observedAtJstMinute": "2026-10-27 21:37 JST",
+      "exactObservedAtUtc": null,
+      "progressDisplay": "00:11/00:42",
+      "artworkControlOperated": true,
+      "progressObserved": true,
+      "rootAuditoryEvaluationPerformed": false,
+      "postSoundSelectionPerformed": false,
+      "meaning": "Player progress is an observed UI state; it is not a subjective listening/quality judgment or assignment to a post."
+    },
+    "stateAsReportedThroughJstMinute": "2026-10-27 21:37 JST",
+    "rootAuditoryQualityEvaluationPerformed": false
+  },
+  "revisionNotes": [
+    {
+      "previousHead": "32e55519bc01209cecc8358f9ae6ed775958726b",
+      "revisedAtUtc": "2026-10-27T12:41:34.514Z",
+      "reason": "Append partial native and latest owner quality/joint structure-sound policy; keep historical observations unchanged."
+    },
+    {
+      "revisedAtUtc": "2026-10-27T12:46:16.651Z",
+      "reason": "Append later21:43 ordinary document-reload result; retain20:53 partial unchanged and do not publish raw document runtime identifiers."
+    }
+  ]
+}
