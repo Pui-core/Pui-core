@@ -78,3 +78,7 @@ writerはprobe/controlのWindows Parserと固定C# compileだけを実行し、n
 Rootが06:57にread→set一回と完全readback→Openメッセージ一回を実行し、06:59:03のnative画面でv10ファイル名と5.8MBアップロード完了を確認した。ローカルSHAと凍結dialogの送信・native表示を対応付ける証跡であり、プラットフォーム再encode後のbyte同一性を検証したものではない。再添付やOpen再送はしない。
 
 `source/open-native-music144.ps1` はアップロード済みticket aa27とnative filename/completeを照合し、Rootの実測した楽曲ボタン11499だけを標準ScrollItemで表示→fresh本人リンク/asset確認→CreateNew意図→再確認→Invoke一度で開く。`read` は作用0。profileの標準Expandは必要時最大2回で、OS focus/global input、曲採用、再アップロード、公開経路はない。caption修復は別工程なので、このprivate editor移動へcaption一致gateを追加しない。音源のJP範囲や選曲を確認済みとはしない。
+
+captionでは最初のValuePattern設定が元のstemへ追記され、TextRange全選択だけでも非同期反映後の再設定が追記となった。失敗を削除せず時点別に記録した。Rootがfresh本人確認→captionへの通常UIA SetFocusとHasKeyboardFocus確認→全選択→反映の読取poll→SetValue一回に変え、07:12:06の別読取で修復を確認した。DocRangeはticket全文174字＋末尾LF一個と一致し、ValuePatternは改行を空白へ変えて末尾改行を除いた173字で一致。stem/重複なし。ValuePatternのbyte完全一致とは呼ばず、この正規化条件を明示する。clipboard/global key/mouse/OS強制focusは使っていない。Rootの修復Sourceと最終確認SHAを保存。
+
+Rootは07:12:08にnative楽曲エディターを一度開き、フィルターの「商用利用」を実観測した。ラベルがあることと、フィルター適用・JP範囲・実選曲を確定したことは分ける。Source/PRとworktreeは編集工程の区切りまで引き続き保持する。
