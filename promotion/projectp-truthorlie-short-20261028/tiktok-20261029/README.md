@@ -10,7 +10,7 @@
 - NAS：`\\100.105.2.75\private\work\videos\2026-10-29\嘘か誠か\0513_投票と得点_実口パク_v10\声・効果音版.mp4`
 - captionと技術QAは隣の `../model-motion-20261029/metadata/` と `../model-motion-20261029/qa/`。App Storeは https://apps.apple.com/jp/app/id6783599249 。正式Core/RMSによる16.8–19.2秒の72f実口パクと最終画像の確認を継承する。Rootの受入は技術・場面目視の範囲。全編直接試聴、ownerの創作採用、集客向上を確認済みにしない。
 
-## Rootの有限な実行手順（この手順自体は未実行）
+## Rootの有限な実行手順（PR76初稿・以後の実測は末尾）
 
 1. YouTube142の予約処理が完了してから、Rootが144の有限窓を事前宣言し、既存5aliasを同一run/owner/prop_pui/tiktokへ通常CASで取得する。既存のInterop接続確認を実施する。今回の既知identityはFirefox PID34828、Session1、birth `2026-10-27T17:54:34.0063169Z`。socket番号5291は参考値であり、再探索結果と同じ接続先を優先する。root環境やsocketを永続変更しない。
 2. `source/read-own-window.ps1 -Action inventory -BoundRunId <現在のrun> -BoundExpiry <同じ期限> -BoundOwner <同じowner>` をRootの既存Interop経由で1回だけ実行し、返却HWND集合を私有tmpへ記録する。writerによる実観測は0。保護HWND69024は `FromHandle` を行わず、子のTab/Docも読まない。この窓の133（tab RID `42,69024,4,-68`）とYouTube142を変更しない。
@@ -29,10 +29,18 @@ Mozillaの[公式CLI仕様](https://firefox-source-docs.mozilla.org/browser/Comm
 - inspectは新窓とselected tabを固定し、表示名だけのowner判定や旧helperのown-marker例外を許可しない。nativeにexact `https://www.tiktok.com/@prop_pui` リンクが露出しなければ未確認として拒否する。根拠なく条件を弱めない。
 - rawUI・実lease・認証・個人声・SDK/MOCはGitへ入れない。実観測結果はRootの私有tmpへ。Gitへ残す結果は必要最小の非秘密要約だけ。
 
-Source検査の記録は `qa/validation.json`。Windows PowerShellのParserで構文エラー0、抽出した固定C#型はcompile成功（native関数の呼出0）。`source/check-readonly.ps1` はSourceを実行せずAST/importを列挙する検査用。今回この検査PS1の直接実行は既存の署名policyで拒否されたため、policyを変更せず明示的なParser呼出とC#compileだけ実施した。helperの実UIA/lease読取や別窓起動は未実施。
+PR76時点のwriter検査記録は `qa/validation.json`。Windows PowerShellのParserで構文エラー0、抽出した固定C#型はcompile成功（native関数の呼出0）。`source/check-readonly.ps1` はSourceを実行せずAST/importを列挙する検査用。この検査PS1の直接実行は既存の署名policyで拒否されたため、policyを変更せず明示的なParser呼出とC#compileだけ実施した。writerはhelperの実UIA/lease読取や別窓起動を実施していない。
 
 ## 次工程に残る実確認
 
 TikTokネイティブ曲の日本向け商用アプリ宣伝可否、実sound ID/曲/開始位置/音量、150BPM想定gridへの実音はめ、6句全体の聴感・captionのnative持続・投稿設定は未確認。旧Digital Horizonや132の試聴回答を流用しない。150BPMは0.4秒gridという既存編集条件であり、曲選択の証明ではない。
 
 このSource PRのmergeは読取helper・手順の完了のみ。管理144の実投稿、receipt、24h/72h分析予定が揃うまではIssueを完了にしない。Rootは公開直前のfrozen asset/caption/native曲/設定/本人accountを再確認し、`CreateNew`一回intent→native投稿一度→ID/実時刻/音源/リンク読戻しを別工程で行う。
+
+## 10月29日06時台：Rootの新窓実測
+
+`qa/new-window-20261029.json` は、Rootの通常CLI一回と新窓/Docの実測を、rawUI・lease・認証を複製せず要約した記録。Root実行の `source/open-new-window-root.ps1` はSHA `ec7049a93ce88dde846c943c10cc5460587c829adfb8c7318e8f891f9d7c5845` のまま保存した実行済みSourceであり、再実行用の汎用helperではない。元の読取helper `read-own-window.ps1` のSHA `afe36ec84cef6ff318a39b30e99fca2e906ee8f00b62be2d9ff524d23328525d` は不変。
+
+Rootが06:21:55 JSTに通常CLIを1回起動し、新HWND51187480、selected tab `42,51187480,4,-17035`、可視Doc `42,51187480,4,-18262` を実観測した。旧69024の子UIは読まない。06:22:33のinspectは公式upload URLの後、exact本人hrefが見つからず停止したため、**本人accountはまだ未確認**。これは窓作成の成功であり、ログイン/添付/音源/投稿の成功ではない。Rootが限定したheader/プロフィール表示の実確認を続ける。新しいhelperも未確認markerの例外を設けない。
+
+writerはRoot CLIの既存Sourceとmetadata-onlyのbefore票のSHA一致、私有intentの必要な非秘密fieldsだけを読取確認した。新窓のlive UIA/lease/起動はRoot専管。Rootの実観測をwriter自身のGUI実行済みと扱わない。

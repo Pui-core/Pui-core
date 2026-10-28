@@ -1,0 +1,61 @@
+{
+  "issue": 144,
+  "actor": "Root sole live executor",
+  "originalReadonlyHelperSha256": "afe36ec84cef6ff318a39b30e99fca2e906ee8f00b62be2d9ff524d23328525d",
+  "executedCliHelperSha256": "ec7049a93ce88dde846c943c10cc5460587c829adfb8c7318e8f891f9d7c5845",
+  "cliHelperSource": "source/open-new-window-root.ps1",
+  "beforeInventory": {
+    "atUtc": "2026-10-28T21:21:16.2026740Z",
+    "sha256": "3e91903a167997e8babe44a77370ce005fc9516f1ea3166b66299be2db1a0df5",
+    "handles": [69024, 36638500],
+    "protectedWindow": 69024,
+    "protectedChildrenRead": false,
+    "ownAccountVerified": false,
+    "mutations": 0,
+    "evidence": "Writer read the existing metadata-only inventory, not page bodies or account/auth data."
+  },
+  "launch": {
+    "intentCreatedAtUtc": "2026-10-28T21:21:55.3874724Z",
+    "normalCliNewWindowIntents": 1,
+    "launcherPid": 15228,
+    "argumentArray": ["--new-window", "https://www.tiktok.com/tiktokstudio/upload"],
+    "beforeWindowSetCompared": true,
+    "intentMode": "CreateNew; no repeat on uncertain result",
+    "oldTabsTouched": 0,
+    "publicationIntents": 0,
+    "evidence": "Selected non-secret fields from Root's existing local intent; launcher result reported by Root."
+  },
+  "newWindow": {
+    "hwnd": 51187480,
+    "browserPid": 34828,
+    "session": 1,
+    "browserBirthUtc": "2026-10-27T17:54:34.0063169Z",
+    "selectedTabRuntimeId": "42,51187480,4,-17035",
+    "documentRuntimeId": "42,51187480,4,-18262",
+    "loadedObservedAtUtc": "2026-10-28T21:22:25Z",
+    "selectedStudioTab": true,
+    "visibleStudioDocument": true,
+    "evidence": "Guarded live inventory reported by Root. Writer did not execute UIA."
+  },
+  "firstInspect": {
+    "atUtc": "2026-10-28T21:22:33Z",
+    "officialUploadAddressAccepted": true,
+    "exactOwnProfileHrefExposed": false,
+    "ownAccountVerified": false,
+    "result": "Stopped before own-account acceptance; no upload or publication.",
+    "evidence": "Root reported the original helper's rejection; no marker exception was added."
+  },
+  "writerExecution": {
+    "guiActions": 0,
+    "leaseReads": 0,
+    "leaseMutations": 0,
+    "firefoxCliLaunches": 0,
+    "publicationIntents": 0
+  },
+  "rawUiCopied": false,
+  "actualLeaseCopied": false,
+  "authenticationCopied": false,
+  "uploadedMediaVerified": false,
+  "nativeMusicVerified": false,
+  "posted": false
+}
