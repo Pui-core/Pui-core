@@ -1,3 +1,5 @@
+> 読み修正版v06は [README-demo06.md](README-demo06.md) を参照。v05は３句の誤読を含む保全版です。
+
 # EMBERWAKE：芯石５コースの完成稿
 
 その石、どこに置く？ 橋と帰り道が変わるゲーム｜EMBERWAKE

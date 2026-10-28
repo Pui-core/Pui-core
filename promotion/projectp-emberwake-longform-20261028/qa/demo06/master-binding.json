@@ -1,0 +1,658 @@
+{
+  "outputs": {
+    "voice": {
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo06-reading-fix/media/audio/demo06-voice-master.wav",
+      "sha256": "e72a37a376fd70138976c00cbee0d743fdbc57beec7bfb9fbc293aa037600eef"
+    },
+    "mix": {
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo06-reading-fix/media/audio/demo06-bgm-master.wav",
+      "sha256": "07b3146cd8566ac37b6903254704a3337ed58a978196985690f0d804b5d68f48"
+    }
+  },
+  "frames": 29110400,
+  "sampleRate": 48000,
+  "seconds": 606.4666666666667,
+  "correctedRanges": [
+    {
+      "id": "course1-15",
+      "displayText": "鐘楼では、近い受け口が必ず先とは限りません。渡るための形と、登るための形を使い分けました。",
+      "spokenText": "しょうろうでは、近い受け口が必ず先とは限りません。渡るための形と、登るための形を使い分けました。",
+      "wav": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo06-reading-fix/media/voice/course1-15-shouro-v06.wav",
+      "sha256": "43602bcad11c94a4edc151a71e1fa5cc8a1c42d1bc1d219f1163ee8886515b9c",
+      "query": "/home/pui/.claude/worktrees/Pui-core-issue-140-audio-reading/promotion/projectp-emberwake-longform-20261028/source/demo06/queries/course1-15.json",
+      "querySha256": "fda00266491c0725e4bed0286ec7774ca3ee4e9e4bef209151f8816955c2c0ed",
+      "oldQuerySha256": "db302b52fc4721b19cc580115f675ce20e7803f8e37ba8a1493d8d9eadeb934f",
+      "oldVoiceSha256": "56c66ca12068bcabb3d0a0448980e04b8b758274c8860afc6edc1288424d9dab",
+      "seconds": 6.741333333333333,
+      "oldSeconds": 6.677333333333333,
+      "cueStart": 140.66666666666666,
+      "cueDuration": 8,
+      "voiceOffset": 0.12,
+      "speaker": 11,
+      "readingProof": {
+        "phrase": 0,
+        "index": 0,
+        "moras": [
+          {
+            "text": "ショ",
+            "consonant": "sh",
+            "consonant_length": 0.09711458534002304,
+            "vowel": "o",
+            "vowel_length": 0.07539575546979904,
+            "pitch": 4.8424482345581055
+          },
+          {
+            "text": "オ",
+            "consonant": null,
+            "consonant_length": null,
+            "vowel": "o",
+            "vowel_length": 0.08987320214509964,
+            "pitch": 4.942458629608154
+          },
+          {
+            "text": "ロ",
+            "consonant": "r",
+            "consonant_length": 0.03928621858358383,
+            "vowel": "o",
+            "vowel_length": 0.06369499117136002,
+            "pitch": 4.92184591293335
+          },
+          {
+            "text": "オ",
+            "consonant": null,
+            "consonant_length": null,
+            "vowel": "o",
+            "vowel_length": 0.060777366161346436,
+            "pitch": 4.886499404907227
+          }
+        ]
+      },
+      "subjectiveListen": false,
+      "start": 6752000,
+      "end": 7136000
+    },
+    {
+      "id": "course2-01",
+      "displayText": "二つ目は風の回廊です。芯石を運ぶ鐘楼とは違い、据え付けの回路と動く足場を使います。",
+      "spokenText": "二つ目は風の回廊です。芯石を運ぶしょうろうとは違い、据え付けの回路と動く足場を使います。",
+      "wav": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo06-reading-fix/media/voice/course2-01-shouro-v06.wav",
+      "sha256": "aa22305d6a0b5a66bc7fbbd3f2173c090356185cc267c8ce788a24b9331dc145",
+      "query": "/home/pui/.claude/worktrees/Pui-core-issue-140-audio-reading/promotion/projectp-emberwake-longform-20261028/source/demo06/queries/course2-01.json",
+      "querySha256": "6f20074f453f893a03b22c7c96445146a9197a639036c092b548538f8bab6a96",
+      "oldQuerySha256": "556c380a767ca573bc79c9c503e70153879f2b2f2266ca7aab6a9cc5ec3c9253",
+      "oldVoiceSha256": "562eba3f0d2baac03fbbfb605e40f765e469c1e31d1fbb6539a287950ed1c4b9",
+      "seconds": 6.058666666666666,
+      "oldSeconds": 5.984,
+      "cueStart": 167.76666666666668,
+      "cueDuration": 6.6,
+      "voiceOffset": 0.12,
+      "speaker": 11,
+      "readingProof": {
+        "phrase": 5,
+        "index": 0,
+        "moras": [
+          {
+            "text": "ショ",
+            "consonant": "sh",
+            "consonant_length": 0.09911087900400162,
+            "vowel": "o",
+            "vowel_length": 0.07518582791090012,
+            "pitch": 5.054710865020752
+          },
+          {
+            "text": "オ",
+            "consonant": null,
+            "consonant_length": null,
+            "vowel": "o",
+            "vowel_length": 0.06462003290653229,
+            "pitch": 5.068056106567383
+          },
+          {
+            "text": "ロ",
+            "consonant": "r",
+            "consonant_length": 0.04179796576499939,
+            "vowel": "o",
+            "vowel_length": 0.06281807273626328,
+            "pitch": 5.059834003448486
+          },
+          {
+            "text": "オ",
+            "consonant": null,
+            "consonant_length": null,
+            "vowel": "o",
+            "vowel_length": 0.07383158802986145,
+            "pitch": 5.021242618560791
+          }
+        ]
+      },
+      "subjectiveListen": false,
+      "start": 8052800,
+      "end": 8369600
+    },
+    {
+      "id": "course5-12",
+      "displayText": "鐘楼では石を残して戻り、水路や屋根では回収して運び直しました。いつも同じ答えにはなりません。",
+      "spokenText": "しょうろうでは石を残して戻り、水路や屋根では回収して運び直しました。いつも同じ答えにはなりません。",
+      "wav": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo06-reading-fix/media/voice/course5-12-shouro-v06.wav",
+      "sha256": "ee385b8d02c29f73d89f16cebba449dd0e9f4b45df43a4ba6f40759c751264a3",
+      "query": "/home/pui/.claude/worktrees/Pui-core-issue-140-audio-reading/promotion/projectp-emberwake-longform-20261028/source/demo06/queries/course5-12.json",
+      "querySha256": "1b705fcadaab14a260cbb04061605647e844dc43dd8f0209e6b4eea20f3ca0c1",
+      "oldQuerySha256": "20bf3d0a155d19f41ed119aae8baf3ce5fb59193224f81192215b6f4be55b1b3",
+      "oldVoiceSha256": "1dbfc18951bbc954f52ad8c5800657ce562400818f77b6f7d682b742b70104ed",
+      "seconds": 6.229333333333333,
+      "oldSeconds": 6.165333333333334,
+      "cueStart": 568,
+      "cueDuration": 8.333333333333334,
+      "voiceOffset": 0.12,
+      "speaker": 11,
+      "readingProof": {
+        "phrase": 0,
+        "index": 0,
+        "moras": [
+          {
+            "text": "ショ",
+            "consonant": "sh",
+            "consonant_length": 0.09711458534002304,
+            "vowel": "o",
+            "vowel_length": 0.07539575546979904,
+            "pitch": 4.8649821281433105
+          },
+          {
+            "text": "オ",
+            "consonant": null,
+            "consonant_length": null,
+            "vowel": "o",
+            "vowel_length": 0.08987320214509964,
+            "pitch": 4.9850687980651855
+          },
+          {
+            "text": "ロ",
+            "consonant": "r",
+            "consonant_length": 0.03928621858358383,
+            "vowel": "o",
+            "vowel_length": 0.06394563615322113,
+            "pitch": 4.983023166656494
+          },
+          {
+            "text": "オ",
+            "consonant": null,
+            "consonant_length": null,
+            "vowel": "o",
+            "vowel_length": 0.061159610748291016,
+            "pitch": 4.949552059173584
+          }
+        ]
+      },
+      "subjectiveListen": false,
+      "start": 27264000,
+      "end": 27664000
+    }
+  ],
+  "other73": [
+    {
+      "id": "open-01",
+      "voicePcmSha256": "1736f3372dc351a0b8bb73d1d1fc53a2997b8b14b2a68deaaf987fb3510c87bd",
+      "bgmPcmSha256": "c7ac5e0c352255ee4bc1903f416175603c184444fa0e635772170dd660c3924a",
+      "byteIdentical": true
+    },
+    {
+      "id": "open-02",
+      "voicePcmSha256": "9ed07eeca302af4ad191c51b67cde4dfef32c23a57dcd98c6d277a11b981aa5c",
+      "bgmPcmSha256": "262f62c17b804d93c4ccc675d78402d1cec4785fe17c51ec1d68a776a3d93969",
+      "byteIdentical": true
+    },
+    {
+      "id": "open-03",
+      "voicePcmSha256": "a11953ee265fe4a6bd5b750a96362beebdfba5c0ac007b7a88ffccbbb41d8c0f",
+      "bgmPcmSha256": "aba46343abe08e95d52153fa53a9c5d1251674cfbf129ff94a6b30c674149796",
+      "byteIdentical": true
+    },
+    {
+      "id": "open-04",
+      "voicePcmSha256": "4c922911acad5a8eeebb4fb298b3eaa0a5bf7f9a70512c74183445880326a2eb",
+      "bgmPcmSha256": "afbef68c21205690a6c20fef78e0b1088e330f27dda729015a7ff6516c10f9b2",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-01",
+      "voicePcmSha256": "c211966a070e0692e959b9d2f90ef9914998fa162eaa3444d21f406a426cde13",
+      "bgmPcmSha256": "eab5cb61bbfa37892127d6aafbfbb00e37a8516bd32872a8514f3b17886d2a45",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-02",
+      "voicePcmSha256": "1378371cacbd19411c23fb082968d5a8a87770b9adeba41126d89e9c684c1358",
+      "bgmPcmSha256": "d1812f0054a9266c4d037ea3d685768527ec3aeda9582dee35ac219b110a22b3",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-03",
+      "voicePcmSha256": "8248e35a4f1a10770b8aaeb02d916e5ffd95951e5083b2583df520869248b9fd",
+      "bgmPcmSha256": "7e76a20e726a87a6707c02cbcd935d9511ed7cccbf2b61eb4c6824e14d43bfca",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-04",
+      "voicePcmSha256": "b65755a84bff366743cd59eecdd8c281d509fe245e3a7ecaab8298dfdd3dfed1",
+      "bgmPcmSha256": "7f2ae49fd1c99ebfb839700107a0f522f1ea26fec1457ed0bf037bd1cd87711d",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-05",
+      "voicePcmSha256": "004d8433ec4f21dd9f2366f518929dc693a715a4d31a8f6e7eedfa3c8601befd",
+      "bgmPcmSha256": "a10baa4cf3022fc385045dbb7a92f44a78dd9d9772eb2d4fdf334545021bfd01",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-06",
+      "voicePcmSha256": "f09aa680b6205a50bf29ffe7eab67a6223dd3850bc8eb39fdba6c27401f3bc60",
+      "bgmPcmSha256": "292e8f5eaee6c889f12d7209c6fb83a067880c47eb96bbea489a8607926384ab",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-07",
+      "voicePcmSha256": "bb45ae9f16cb0f71a236e1476e8536bddf6ef8f9c225ff0d3a2081bd7d8feafa",
+      "bgmPcmSha256": "fd95b0d2c0e7fb6c29bf92f81ede0d65ef342d794edced845113e07d0edc7601",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-08",
+      "voicePcmSha256": "657dbf3c59d423be5ff9175c8e403a0eaf970482ff8abb4df4281fb2dd37a7d6",
+      "bgmPcmSha256": "79cb6898b7f1c70d16599e111037bea9f681b2469dd9e4bc3e21e1a9b4530bdc",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-09",
+      "voicePcmSha256": "93ed740c500439a8793882b3109f4931961bec34146642a93498a84b3107b6db",
+      "bgmPcmSha256": "6c44cfef3fdf4a361169b8790cfe17766dc0b843d0012342cd539a5ed4615d8c",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-10",
+      "voicePcmSha256": "2674a7fb0a494d253c3338dac77952dca42795e4e86719acb3488d3a02fceec7",
+      "bgmPcmSha256": "089f9ef2c7c2bc418f0958a5d39f4ea59cfc9d2dbde4f1401ac2123726733ac1",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-11",
+      "voicePcmSha256": "163c78afa802630959c8d1b767d7604cffea76253d367561bb4e2d495c0aac0c",
+      "bgmPcmSha256": "e2b5d5985ecfddf0d45655e48e890080b933b8d9dd60d649f9e5d999aa738236",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-12",
+      "voicePcmSha256": "5e2aa6bad845722b3890f91db071e132e204d3adb1b79f54b551c7e0496e33a5",
+      "bgmPcmSha256": "99493c7bf4c08bcdea7eeae58bc23a4eb0d39deb31fc6248ee7212ad3c255367",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-13",
+      "voicePcmSha256": "0e04b051deacb27a615003bece4df7292b8f32deae806a7ba5443c884bf97504",
+      "bgmPcmSha256": "3fe6f18d97fe0260d21dfc4656efa4e26885a1668c04918ef8095743029b63cd",
+      "byteIdentical": true
+    },
+    {
+      "id": "course1-14",
+      "voicePcmSha256": "b5689977a6992a56fd29a381a3568aae8ae81bcb0bb61d88fed22e146267f5fd",
+      "bgmPcmSha256": "86c2cbce99487957e3391283603fedaa08764f2b43a9efbf0df00d6999b838e1",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-02",
+      "voicePcmSha256": "196b1e0c5db5643b80d124db4203b7876549fd0f552c4a5b2f49fd609cc9895e",
+      "bgmPcmSha256": "67a9c3f86096ad75e326da2af093117cf4d66f17a43e885bbe8b0d466bd699f9",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-03",
+      "voicePcmSha256": "8f726ec93922d64f06732651c3ae68d234b27e33fd716665125a6e54a6868077",
+      "bgmPcmSha256": "8c1ef9b48e7e764d8f9646a6618eb88b8a86f67a440c52ee878817ab0964ab93",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-04",
+      "voicePcmSha256": "d07fd09ec5f9e7c54641bf2961f971f122559987791702e3b2f2ba6ca6b7326e",
+      "bgmPcmSha256": "ccd1e3b55b885cc390fd4b50ddf57237f62ee6701d205d89ee32582421906660",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-05",
+      "voicePcmSha256": "068901613cbd6185c712191b8c2e54cd2d44daa70eb6c51f02368bfbed53c53c",
+      "bgmPcmSha256": "8ffe1fdea9dfad46cc8b30948d72024b004fd46acd7bac5522673dd7e71a4fe3",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-06",
+      "voicePcmSha256": "d3935ac2abee24d93ca1f446d8a713fe43de25171f1ce7100ba9d7cf6e9d42a0",
+      "bgmPcmSha256": "4e61baa2cc1d7676c7759ed4b9d439c94244beb10aedf627b71b62cd3b984d78",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-07",
+      "voicePcmSha256": "cf5fea7a4e410be5afc40833ba5744d423d51927abe263b73b0a185b02fd4302",
+      "bgmPcmSha256": "6e799422f4293e12d1324316645cd21413d1ea05dca428de1755dc6b04834610",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-08",
+      "voicePcmSha256": "10c5cf75f8ef917b0a4e8be5b93b535901e6022f14e47f6512df593d0c7de352",
+      "bgmPcmSha256": "e4448a5354f302b4897fed7e0ed1a9ff9c4f1552842c91b35052fd32a7b11839",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-09",
+      "voicePcmSha256": "c461d6a77c6f4b1b7b374b062faf2a8111d47b5a09955ad228606d5cfd7f4704",
+      "bgmPcmSha256": "dcb82a228f126a25ea1b3337d4d7a940ebbfc5ad0638065d98435d21278cc3a3",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-10",
+      "voicePcmSha256": "cbe7163ec32f69ab88d8a49b2fcf85e1a40bcde42f79ccc241ca1b8093f17bc5",
+      "bgmPcmSha256": "13bfbf24245a2088dd3d489556f4c9a6e58b5f22e837cb66c1ae851b9e9f005a",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-11",
+      "voicePcmSha256": "5c3859d131487edd263742ccbdb50b766f86a389ea0f37ad8ea75b5c2c5bded8",
+      "bgmPcmSha256": "fa9dea7622a2bf4562b3f21764b8f5e191d10d1d073d72110db0cc0865badf5d",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-12",
+      "voicePcmSha256": "0852afc65557a768ed5bb1bf7f6df1a67001a2becfdc2875e0185bff31f9a8ce",
+      "bgmPcmSha256": "3222afdd3e0ec4d93463a74e10d2546300c2e5be534e804fa0fe9ba6a990795c",
+      "byteIdentical": true
+    },
+    {
+      "id": "course2-14",
+      "voicePcmSha256": "18b369fae5c62bb0295ab561e4aa17f29569acb51135f5c0c6024545c8d8f8ee",
+      "bgmPcmSha256": "557f81de829c738937ac8fac9c48fa17d684114618271620129bd151b4ab1949",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-01",
+      "voicePcmSha256": "68ed31dc6d25cf87531e8cc975ca4d090315c126bb255170e66a7e1c93d02efc",
+      "bgmPcmSha256": "c0f8fd93674ef75eab37cb9fc41b0d2740000daabddf8d2de43bdc2fc2cfd777",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-02",
+      "voicePcmSha256": "1441fa5806923cae827671d7d7bd2949cad0055bb91e3b0591771ebe0f5b26d2",
+      "bgmPcmSha256": "ee01ae16b13228a214a2319b5592c64b94cd8b98b04c7b9371c46a1374142e39",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-03",
+      "voicePcmSha256": "39067ad1108c157d8f583fe6702058dabcf2267ee77d32e9cdfeb251f29e1417",
+      "bgmPcmSha256": "b74497e9513f4d704b17525191de8dcd354e27cc88358c9f8f2585b35e5cad31",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-04",
+      "voicePcmSha256": "f3b114b4303a284e7a22744ea3b1443794f09bf3da4aecc20d025a3d709674e0",
+      "bgmPcmSha256": "de04577eee5c2a23f2894e9f1333f43e8f5ff5e8eeb2885ad3f454ee90df73be",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-05",
+      "voicePcmSha256": "0ab5af4574dd39309ddf3fce240b09e7c8177189403dac538acc04b0f4208ca8",
+      "bgmPcmSha256": "49a22e2f7413f658e6b4e5abc8e0b3a1b06ed0c598375066b64b7051f65d383e",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-06",
+      "voicePcmSha256": "1688f4bac759e14bea9eea5201184a7f9ba32e992aaa976fbed2d4ee03dd3694",
+      "bgmPcmSha256": "028291da74c8e8ed6ffba2c65fff819f12ccf7f6490c98bd393bfe9aee83d7eb",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-07",
+      "voicePcmSha256": "df74bf2a2e331fcde2e2ddb3179c003f02ecad321f786a90640fd6fb996834e6",
+      "bgmPcmSha256": "34d4c62e84ea26d6edd775a732a155123ac4fc7b8caf30716d03e98f1f21ade7",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-08",
+      "voicePcmSha256": "a161c6e3f7fc3006ea5defa9bfe4e879be1d0d7997934fbd6ecbc3bc158c5ac4",
+      "bgmPcmSha256": "5edb13dc85ebfb4f649d2134ad675f94d80e1fb87f6966237b7ab18553fe5fc8",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-09",
+      "voicePcmSha256": "c6206a4a78d3390b9a39f58160f5d7870db93db307da9acbdf5621f0f136a9fa",
+      "bgmPcmSha256": "3a76655b9da0b22acb9e9df75f101393d8a59bcab3efebfce6c5b84304ea47b8",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-10",
+      "voicePcmSha256": "3d464f77799881833607fb58ae1eefc06a1c6e1814a59f8ec40ce9fd21997529",
+      "bgmPcmSha256": "3936da088fd32a4abaaaaffa578f0f0472657e6928bb88bfb1b9c8e98764d2f7",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-11",
+      "voicePcmSha256": "de6c4bb729790215796409fc3cc475fc154d2bf7691f5e39e581a4787bcc45b6",
+      "bgmPcmSha256": "69a13b6e937f8fef3d9f80e9e34c4cdebf29b3daed1c656c8a97e0d719e15a5c",
+      "byteIdentical": true
+    },
+    {
+      "id": "course3-12",
+      "voicePcmSha256": "84e09425466b5e9af30aea901a9ab246796aed64344e951d6eb720685c57377e",
+      "bgmPcmSha256": "cf4a52e7a1773fa475b806d4f354e011d32f21795a5be3098ce1eab840bfcb95",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-01",
+      "voicePcmSha256": "feb3dfdaa5930f97508b62e4c29b33a3762529b18fe6df163caa6461de368cdc",
+      "bgmPcmSha256": "b8f271691c34f1c3b89b7af148448a7a6476c93beb0347114085096aeebe83c1",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-02",
+      "voicePcmSha256": "9952bca089d44d9f860bc80480eef0e36d636ddf3e925b48983d936f47caae52",
+      "bgmPcmSha256": "7f02e350ae320bd2b61e76d4072276752108229bc3f70be9df67d39b2c3563e9",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-03",
+      "voicePcmSha256": "66213991dfe7173c4a0454fbad5310dfac3f611fd045e73f3fea5990d604a62a",
+      "bgmPcmSha256": "ab0873c9050fc8fb773a9713c82015b7ecaa0183bf9cde1f68a9f6850483fd87",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-04",
+      "voicePcmSha256": "7bffda319d3edda271baeee20295028a582620317644b5a6fa25a9f657c8f627",
+      "bgmPcmSha256": "22a9aabe35a35261ec93327cad5c5a2bb4050ba7a9df86db7fa91185a7b2abcb",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-05",
+      "voicePcmSha256": "0d2b9b77f1b1916c418436665aeea2e82fd15bf4bff8f235635fe355a77f66c2",
+      "bgmPcmSha256": "f57818218dc220d4d62231de9b6a6f5f2792a58e0cdc592c241a1877ca164cfb",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-06",
+      "voicePcmSha256": "64395b3a4a589dbf62946cbe0fe857e154d791ceb9d5cb1d87480047a262448f",
+      "bgmPcmSha256": "9e97722fbbc47859d6a1a7ea200d04e78186adf5f9b743c561af557390475bed",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-07",
+      "voicePcmSha256": "1028b2547f02327d62358f8fcd6be1d3640971b87d76f043a70da71a12755e36",
+      "bgmPcmSha256": "4c464089696f798b2045b7981af1f29aa5c6cd1af49c0a7fa6d18a83e65778dd",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-08",
+      "voicePcmSha256": "013295bd6edc4c2f4b91f19780d9a6dce7572341e1512191daef60c974484e5e",
+      "bgmPcmSha256": "3a5209dad25857d76d736111563777f0b965f34bb7ce854d1a9ca5a9845a56c0",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-09",
+      "voicePcmSha256": "3b3070c38609f7f8a7c6d21bfce3d6e051c8030ce55a5f96f5eb408a03684265",
+      "bgmPcmSha256": "63b255a273940e3a48244e3fa28b07dffb98bfc44561f4e7f5dd85a84d9d15ef",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-10",
+      "voicePcmSha256": "479f11c8eb728f2d72ef7ba026c3f4bcbe75688a0a4d3fab06bdf9311140e1b9",
+      "bgmPcmSha256": "6a54ce5e016a6584feeaff2f27126ffaf4941f897cbe1879dd82017f64cf4240",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-11",
+      "voicePcmSha256": "5b0f09a45f2bdcba03ecef99c2e545da239abedb6ece0d129ccb7f4e49d7bd9c",
+      "bgmPcmSha256": "30e23bf04fb44b26c34bbe6a031135a91b95667e749717e2a4ee6486c8cc2f57",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-12",
+      "voicePcmSha256": "0c6e19309e5c345d2f03025292c5d2b5e3369956733eae29dfa126a55431d1fc",
+      "bgmPcmSha256": "04f9b7491fbef10f5f1554f973a50b9841696ba7951dcbfb05516ed409877040",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-13",
+      "voicePcmSha256": "a81b9d17238d3bc3f3fb36383527a955e7742dac7b5f4d528906ccb33f1294e3",
+      "bgmPcmSha256": "6402bf5f30f29a0b501bf28510efa96229d2f1366ffeae884b42dbc3ce258310",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-14",
+      "voicePcmSha256": "d8c91c062f40c1fc79d8a4a58fbed04bad0c739dea875314f797b65ab972479e",
+      "bgmPcmSha256": "a40290d712e885a0e9b74bec4fa39f823afdb73f6e7d868d1a412c5bf6473f67",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-15",
+      "voicePcmSha256": "ce433a28ed72681acfcbecea65f619abac6380554ba518f1bab6b9638e7f13f9",
+      "bgmPcmSha256": "26a03103e097a9e35eb1c613cb778e8bff246e9d42fc2813277192b93cf60017",
+      "byteIdentical": true
+    },
+    {
+      "id": "course4-16",
+      "voicePcmSha256": "0877ce14b8dc1e1a7c254cb5087bd2ce5b3c7db4a96df473b142b02f67b5ee6e",
+      "bgmPcmSha256": "b9a48d9170de2e1959aaa7f166dff1303f3df62a9f97a1eaa7a30bbe8b42f170",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-01",
+      "voicePcmSha256": "bd839f6dd45d1827939af1bcc41a7960b7ad32f6f129e3f68d73a1ecbcf19452",
+      "bgmPcmSha256": "ffceb0b0d9f74f4c769c04ada61ad1d1d5a79840870f6966bc15310acaf090ca",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-02",
+      "voicePcmSha256": "26429ca0c7b1badceef9cc3c1a659b455611862c5e8606a7644e08278c0dce04",
+      "bgmPcmSha256": "948f00ffaf4444cc76a3179a0135194564f6a9e4629e2ae496cc9fe46019fc03",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-03",
+      "voicePcmSha256": "5d04fa32a9360cd634a1fc3b42688fc0bcd5fe64f0edefbf2c6b60ee357d6715",
+      "bgmPcmSha256": "ab0ed6dc9ae5f3eed747b43f77112ea280ddca984cf0bd4130b34363c6be7208",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-04",
+      "voicePcmSha256": "353a4163d54dc85c2a26f97dab5bcca530c1eb420a0a5ea500f77cbfc914d831",
+      "bgmPcmSha256": "13923b50e57f87288c77eda22349f98a8b71435162fa2357cd645b6b56d656d8",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-05",
+      "voicePcmSha256": "f8f01c63f85f4da5bcb1a8a48d390f5e8cdff231ee554fffbab5f559c15990b8",
+      "bgmPcmSha256": "3b4a6eeef76d6b82c670fd34bd71ce21d80d0c052d124f5c34a83f3a50fb7db1",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-06",
+      "voicePcmSha256": "30c188fb62cf434a695e8513feaaee36af0c598c774f1b3bbb7d52192a18d5c5",
+      "bgmPcmSha256": "171640698914e5123bccc72fbc3348852721b1aa7dcf4f48a552c40c16d9f659",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-07",
+      "voicePcmSha256": "c5c7448bc3313aeb238e9fc8df03b403655fdba0a4ec8b67be41a837cf492962",
+      "bgmPcmSha256": "6c5d703e2e2c81a9ced91972fddc88a497bb931afc83876ff824137935ff80dc",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-08",
+      "voicePcmSha256": "2da85e8cb0ca0f9d426b43f5b753e92347d3cd9f467bb42e53ed6555067d9f94",
+      "bgmPcmSha256": "3aeec812fa7f9ff8dd62af12286a468692bfc3c279cc26d8a18ac48b14bff0c1",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-09",
+      "voicePcmSha256": "51b6e63d9d19436650c437e2ebd124cbf0db871f727e5670f9a1cba6838e09cf",
+      "bgmPcmSha256": "c40d02de74ead32f6fb189e9da30469d630be1016453c3c265a53ed834d0a0ed",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-10",
+      "voicePcmSha256": "15ab3b4789ac34f2f9a5f89de0f6b1079db11148f530bc883fc00625d44f0bef",
+      "bgmPcmSha256": "3b044c3199f3d4ce1747e90d404cd6b2d7f6d816a45e12a78ba8a911848ef80b",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-11",
+      "voicePcmSha256": "7bef11ec3037f76c8f207f3a458f5c22c7203e5eaaf1e722c194076dc3a926b9",
+      "bgmPcmSha256": "e920682b85ccdb102f21df731a85428f436a42ffcb1a7e2969834128578ea18c",
+      "byteIdentical": true
+    },
+    {
+      "id": "course5-13",
+      "voicePcmSha256": "07bff4857f2bc66fdfd30a90a828562ecbaad188f71c271cd50b1aa21b0945d6",
+      "bgmPcmSha256": "7e69be95e88d9d29e5ad699e0b5085052d925a7d6ba03175817115a9d3c43797",
+      "byteIdentical": true
+    },
+    {
+      "id": "close-01",
+      "voicePcmSha256": "40ff052aa15a727133b6a66abcb992ae693686bce2d7bf6a507432eb0e6abe32",
+      "bgmPcmSha256": "085f86ac9a765f202216f09ff3a69561e40547da015089c9ed55815a99e5fac7",
+      "byteIdentical": true
+    },
+    {
+      "id": "close-02",
+      "voicePcmSha256": "a4d7ff3e063a262ac1c5de757820e1be730523e4802e65b9ba8b8b48ad3f0c32",
+      "bgmPcmSha256": "7cc87849c9e1effe86a5e31b62a7ff166a2c6c2a5cdfd5d59c8604b790a240cf",
+      "byteIdentical": true
+    },
+    {
+      "id": "close-03",
+      "voicePcmSha256": "adcac46d56772b0185023ef4f4ee250b99f8b1352b3ce0a32903d91f1e1679e6",
+      "bgmPcmSha256": "969f9b3e3d44dd5c93942f7055e42afecdcdb2a1d3c3b544fc94174d45b428ae",
+      "byteIdentical": true
+    }
+  ],
+  "allOutside3CueWindowsByteIdentical": true,
+  "oldMasters": {
+    "raw": {
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/audio/demo05-voice-raw.wav",
+      "sha256": "6bf50617fda6bddb951c059924639e82ca9840228ed1502a42b6a49958fa5c07",
+      "seconds": 606.466667
+    },
+    "voice": {
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/audio/demo05-voice-master.wav",
+      "sha256": "52b43054545b6d16252dc928ea5fa6c60aea7715781a5b15a83ca9e5823973fb",
+      "seconds": 606.466667
+    },
+    "music": {
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/audio/demo05-music-master-v02.wav",
+      "sha256": "4140f36d33949b37ec476fc0b325b134c30ab87504d3f1088d7c127dc7965305",
+      "seconds": 606.466667
+    },
+    "mix": {
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/audio/demo05-bgm-master.wav",
+      "sha256": "7699a1ca2871b873015b3c5db4443cb99e698f7435a4dc571ba656ea319f94b1",
+      "seconds": 606.466667
+    }
+  },
+  "baselineNormalizationFilter": "loudnorm=I=-16:TP=-2:LRA=11:measured_I=-21.78:measured_LRA=5.60:measured_TP=-1.68:measured_thresh=-32.37:offset=0.71:linear=true",
+  "crossfadeOnlyInsideChangedWindowsMs": 50,
+  "other73WaveFilesUnchanged": true,
+  "subjectiveListen": false
+}
