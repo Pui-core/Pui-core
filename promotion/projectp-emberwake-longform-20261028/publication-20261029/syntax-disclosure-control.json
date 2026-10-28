@@ -1,0 +1,11 @@
+{
+  "file": "youtube142-disclosure-control.ps1",
+  "sha256": "c72f1f9c8889ec94f28d20fdac2eb4f9bfaa246e002742315c53860dccf70caf",
+  "parser": {
+    "errors": 0,
+    "details": []
+  },
+  "helperExecuted": false,
+  "fix": "After at most one select, bounded fresh read-only polling; no second selection",
+  "rootObservedOldAttempt": "Immediate read failed; independent fresh read later confirmed selected=true; no resend"
+}

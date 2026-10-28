@@ -2,8 +2,12 @@
   "schemaVersion": 1,
   "issue": 142,
   "sourceBase": "aa5045591ab29b88ed03661f8ed041256f3255e7",
-  "phase": "native-metadata-exact-cover-standard-picker-ready",
+  "phase": "native-date-time-visible-final-button-disabled",
   "scripts": [
+    {
+      "file": "youtube142-category-control.ps1",
+      "sha256": "d1badc8146b52874634882e4690987976707daefc57f37263a6d4d644ce61ef5"
+    },
     {
       "file": "youtube142-cover-select.ps1",
       "sha256": "8789a57267c095096da6c09855449d5a9e63697a76315b1a64debaa02eea4554"
@@ -11,6 +15,14 @@
     {
       "file": "youtube142-cover-standard-picker.ps1",
       "sha256": "c210c41989d4443eed89096d0cad7a9a25bfe2f1a023540f87679c73737c0a25"
+    },
+    {
+      "file": "youtube142-datetime-control.ps1",
+      "sha256": "952750c5cfa3594757161286dc32a5214910ea4d03c3fd52189b768c964967f2"
+    },
+    {
+      "file": "youtube142-disclosure-control.ps1",
+      "sha256": "c72f1f9c8889ec94f28d20fdac2eb4f9bfaa246e002742315c53860dccf70caf"
     },
     {
       "file": "youtube142-entry-control.ps1",
@@ -35,6 +47,10 @@
     {
       "file": "youtube142-upload-stage.ps1",
       "sha256": "2e6f4f3402b511374682c5be8bda1a00bda65885e3f00c2cc9e33676d7262116"
+    },
+    {
+      "file": "youtube142-visibility-control.ps1",
+      "sha256": "055b7f0b18a69ed7c95a570c7a9657cae50e6d4b09079a39af5cdf5fa5197399"
     }
   ],
   "entry": {
@@ -157,11 +173,11 @@
       "notKidsSelected": true,
       "notKidsChanged": false
     },
-    "categoryNativeVerified": false,
+    "categoryNativeVerified": true,
     "coverSelector": {
       "rootInvokeAtUtc": "2026-10-28T20:32:31Z",
       "controlRuntimeId": "42,69024,4,-15924",
-      "coverAttachmentIntents": 0
+      "coverAttachmentIntents": 1
     },
     "coverStandardPicker": {
       "dialogHwnd": 90707982,
@@ -172,8 +188,108 @@
       "openHwnd": 82905094,
       "openId": 1,
       "coverSha256": "0d32f0f7e486d450861abdd34fa5514b86803d4753266c8b6d4ee4cff5bde28d",
-      "rootExecution": "Not yet recorded",
+      "rootExecution": {
+        "setReadbackExact": true,
+        "openSentOnce": true,
+        "rootOpenAtUtc": "2026-10-28T20:39:31Z",
+        "serverPreviewVisuallyConfirmedByRoot": true,
+        "visualBasis": "Root PrintWindow capture of own 69024 showed accepted cover text 置く場所で、道が変わる。 matching cover 0d32"
+      },
       "reason": "Root explicit standard control-message choice after filename and Combo UIA unsupported; not automatic fallback"
+    },
+    "categoryNativeReceipt": {
+      "at": "2026-10-28T20:50:31.4986885Z",
+      "issue": 142,
+      "action": "selectGaming",
+      "videoId": "VdD_3xdOGFQ",
+      "itemRuntimeId": "42,69024,4,-16759",
+      "selectionSentOnce": true,
+      "nativeCategoryName": "ゲーム",
+      "nativeReadbackExact": true,
+      "categoryGamingVerified": true,
+      "publicationIntents": 0,
+      "osFocusActions": 0,
+      "globalKeyMouseActions": 0
     }
+  },
+  "contextualDisclosure": {
+    "nativeRead": {
+      "at": "2026-10-28T20:52:46.3057469Z",
+      "issue": 142,
+      "action": "readDisclosure",
+      "videoId": "VdD_3xdOGFQ",
+      "runtimeId": "42,69024,4,-16148",
+      "contextualQuestionExact": true,
+      "noSelected": true,
+      "workflowAiUseNotDenied": true,
+      "inputActions": 0,
+      "publicationIntents": 0,
+      "osFocusActions": 0,
+      "globalKeyMouseActions": 0
+    },
+    "oneSelectEarlierReadbackDelayed": true,
+    "noRepeatSelect": true,
+    "helperReadbackFix": "One Select maximum followed by bounded fresh read-only polling; no claim that all workflow tools were non-AI"
+  },
+  "visibility": {
+    "actor": "Root",
+    "selectedAtUtc": "2026-10-28T20:53:05Z",
+    "selected": true
+  },
+  "schedule": {
+    "targetJst": "2026-10-29T12:15:00+09:00",
+    "dateInputReceipt": {
+      "at": "2026-10-28T21:00:39.8185334Z",
+      "issue": 142,
+      "action": "setDate",
+      "videoId": "VdD_3xdOGFQ",
+      "runtimeId": "42,69024,4,-17093",
+      "changed": true,
+      "valueReadbackExact": true,
+      "desired": "2026/10/29",
+      "dateButtonActual29": false,
+      "dateButtonNames": [
+        "2026/10/30",
+        "2026/10/30"
+      ],
+      "publicationIntents": 0,
+      "osFocusActions": 0,
+      "globalKeyMouseActions": 0,
+      "status": "No submit; Root must read full native date/time/noPremiere/checks before final intent"
+    },
+    "timeInputReceipt": {
+      "at": "2026-10-28T21:00:50.8269707Z",
+      "issue": 142,
+      "action": "setTime",
+      "videoId": "VdD_3xdOGFQ",
+      "runtimeId": "42,69024,4,-15835",
+      "changed": true,
+      "valueReadbackExact": true,
+      "desired": "12:15",
+      "dateButtonActual29": null,
+      "dateButtonNames": [],
+      "publicationIntents": 0,
+      "osFocusActions": 0,
+      "globalKeyMouseActions": 0,
+      "status": "No submit; Root must read full native date/time/noPremiere/checks before final intent"
+    },
+    "dateModelCommitConfirmed": true,
+    "noPremiereConfirmed": true,
+    "submitIntents": 0,
+    "reservationConfirmed": false,
+    "rootExecutionScript": "Separate Root clone root142-datetime.ps1 with dateHost correction",
+    "sourceHelperAutoVariableFix": "Renamed PS $host to $dateHost before Source/helper body execution; native parser errors0",
+    "dateModelObservedAtUtc": "2026-10-28T21:02:00.6795886Z",
+    "initialTimeResetAfterDateRerender": true,
+    "freshRootObservation": {
+      "atUtc": "2026-10-28T21:03:59Z",
+      "date": "2026/10/29",
+      "time": "12:15",
+      "timeZone": "GMT+0900",
+      "finalButtonRuntimeId": "42,69024,4,-16883",
+      "nativeIsEnabled": false
+    },
+    "noPremiereBasis": "Root and source writer read-only native image inspection of the unchecked premiere box; this does not establish button enabled state or reservation",
+    "imageEnabledInferenceCorrected": "White button appearance is not native IsEnabled evidence; native false retained and no Submit"
   }
 }
