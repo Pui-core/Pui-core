@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "issue": 142,
   "sourceBase": "aa5045591ab29b88ed03661f8ed041256f3255e7",
-  "phase": "native-date-time-visible-final-button-disabled",
+  "phase": "native-scheduled-persisted-related-waits-for-public",
   "scripts": [
     {
       "file": "youtube142-category-control.ps1",
@@ -39,6 +39,14 @@
     {
       "file": "youtube142-metadata.ps1",
       "sha256": "336179b44ba8e0be69d1bbcf21095fad901654d982feed6ee0a526d2758c98d2"
+    },
+    {
+      "file": "youtube142-schedule-submit.ps1",
+      "sha256": "ce8a0818f49e4f5dc51ca591c4740ad5d508dc12ef2b120ddae296afd97eafb1"
+    },
+    {
+      "file": "youtube142-scheduled-close.ps1",
+      "sha256": "3c7cb41eb48502c0bef061e0369f93bdae2bfc479a81d0e7815e05ac73b071d6"
     },
     {
       "file": "youtube142-standard-filepicker.ps1",
@@ -106,7 +114,9 @@
     },
     "fileSelectionActions": 1,
     "fileAttachIntents": 1,
-    "publicationIntents": 0
+    "publicationIntents": 1,
+    "scheduleSubmitIntents": 1,
+    "published": false
   },
   "rawUiOrLeaseContentsSaved": false,
   "probeRepair": {
@@ -275,8 +285,8 @@
     },
     "dateModelCommitConfirmed": true,
     "noPremiereConfirmed": true,
-    "submitIntents": 0,
-    "reservationConfirmed": false,
+    "submitIntents": 1,
+    "reservationConfirmed": true,
     "rootExecutionScript": "Separate Root clone root142-datetime.ps1 with dateHost correction",
     "sourceHelperAutoVariableFix": "Renamed PS $host to $dateHost before Source/helper body execution; native parser errors0",
     "dateModelObservedAtUtc": "2026-10-28T21:02:00.6795886Z",
@@ -290,6 +300,57 @@
       "nativeIsEnabled": false
     },
     "noPremiereBasis": "Root and source writer read-only native image inspection of the unchecked premiere box; this does not establish button enabled state or reservation",
-    "imageEnabledInferenceCorrected": "White button appearance is not native IsEnabled evidence; native false retained and no Submit"
+    "imageEnabledInferenceCorrected": "White button appearance is not native IsEnabled evidence; native false retained and no Submit",
+    "rootSchedulePreflightSha256": "35450f64797c57cc99540967e9913a386160f066019be8b3e5e7f0963eafd9e5",
+    "frozenPreflightObservedAtUtc": "2026-10-28T21:09:01.3707315Z",
+    "actualCustomTarget": {
+      "runtimeId": "42,69024,4,-15991",
+      "automationId": "done-button",
+      "nativeEnabled": true,
+      "innerLabelRuntimeId": "42,69024,4,-16883",
+      "innerNativeEnabled": false,
+      "formReadyProven": true,
+      "commandTargetAcceptedByRoot": true,
+      "runtimeBasis": "Exact formal-provider command identity accepted by Root, followed by single standard Invoke and actual same-VID scheduled completion/persistent content row"
+    },
+    "requiredFinding": "Actual command identity and actual reservation result resolved; Related remains pending until long video is public or unlisted",
+    "finalHelperBodyExecuted": true,
+    "domDisabledOrAriaRead": false,
+    "domEvidenceStatus": "Not read; recorded as a limit, not added as a permanent owner-unspecified gate",
+    "finalStaticReview": "ce8 helper: no major static finding after actual-provider identity was supplied; no runtime success claim",
+    "finalHelperActor": "Root",
+    "nativeSubmitInvocations": 1,
+    "reservationCanonicalSha256": "8949cbe873c235b7eab46e2726c63346f32670ff486713919c957f43dabed938",
+    "scheduleInvokeAtUtc": "2026-10-28T21:16:42.9429815Z",
+    "nativeConfirmedAtUtc": "2026-10-28T21:17:11.9470056Z",
+    "persistedAfterCompletionCloseAtUtc": "2026-10-28T21:19:38.0767191Z",
+    "actualPublishedAt": null,
+    "published": false,
+    "asyncResult": "Initial 3-second read unchanged, separate later read confirmed schedule; no resend",
+    "completionClose": {
+      "at": "2026-10-28T21:19:35.3725386Z",
+      "issue": 142,
+      "action": "closeScheduledCompletion",
+      "videoId": "VdD_3xdOGFQ",
+      "closeRuntimeId": "42,69024,4,-17102",
+      "closeInvokes": 1,
+      "publicationIntentsAdded": 0,
+      "fileAttachIntents": 0,
+      "osFocusActions": 0,
+      "globalKeyMouseActions": 0,
+      "status": "Inspect fresh own-channel content; no additional scheduling or publication"
+    }
+  },
+  "related": {
+    "shortVideoId": "BTS-CO_mh9A",
+    "state": "pending_until_long_public_or_unlisted",
+    "otherStoryShortsUnchanged": true
+  },
+  "limits": {
+    "scheduledIsNotPublic": true,
+    "fullRealtimeWatchListenNotPerformed": true,
+    "ownerCreativeAdoptionUnconfirmed": true,
+    "growthNotProven": true,
+    "domDisabledAttributesNotRead": true
   }
 }
