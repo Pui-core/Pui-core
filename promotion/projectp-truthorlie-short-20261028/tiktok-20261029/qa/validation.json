@@ -1,0 +1,18 @@
+{
+  "checkedAtUtc": "2026-10-28T21:00:07Z",
+  "helperSha256": "afe36ec84cef6ff318a39b30e99fca2e906ee8f00b62be2d9ff524d23328525d",
+  "windowsPowerShellParserErrors": 0,
+  "commandAstNames": ["Add-Type", "Assert-Window", "ConvertFrom-Json", "ConvertTo-Json", "Elements-OfType", "Get-Content", "Get-FileHash", "Get-Process", "Guard", "Read-Tabs", "Select-Object", "Set-StrictMode", "Where-Object"],
+  "invokeMemberAstNames": ["AddSeconds", "FindAll", "ForPid", "FromHandle", "GetCurrentPattern", "GetCurrentProcess", "GetRuntimeId", "GetWindowThreadProcessId", "IsWindow", "new", "Parse", "StartNew", "ToLowerInvariant", "ToString", "ToUniversalTime"],
+  "win32Imports": ["EnumWindows", "IsWindowVisible", "GetClassName", "IsWindow", "GetWindowThreadProcessId"],
+  "embeddedCSharpCompile": "passed",
+  "nativeFunctionsInvoked": 0,
+  "helperExecuted": false,
+  "desktopObservation": false,
+  "leaseReads": 0,
+  "guiActions": 0,
+  "firefoxLaunchExecuted": false,
+  "publicationIntents": 0,
+  "staticCheckerDirectExecution": "Unsigned check-readonly.ps1 was refused by the existing execution policy. Policy was unchanged. Explicit Parser.ParseFile and compilation of the extracted constant C# type were run as read-only commands instead; the helper was never invoked.",
+  "validationLimit": "Syntax, AST call inspection and compile only. Live window discovery, exact account-link exposure, timeout behaviour and new-window resolution are unverified. The allowlist is not a complete security proof."
+}
