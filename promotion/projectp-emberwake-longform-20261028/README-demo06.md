@@ -1,3 +1,5 @@
+> 指定モデル追加版v07は [README-demo07.md](README-demo07.md) を参照。v06は音声読み修正までの保全版です。
+
 # EMBERWAKE v06：鐘楼の読みを３句修正
 
 対象はcourse1-15 / course2-01 / course5-12。表示の「鐘楼」を保ち、音声queryInputは「しょうろう」へ指定した。独立確認でショ(sh,o)→オ(o)→ロ(r,o)→オ(o)の４moraと全設定/実WAV SHA/旧cue枠内を確認した。v05/旧127WT/NAS/原本は保全している。

@@ -1,0 +1,24 @@
+{
+  "originalIssue": 97,
+  "originalSource": "promotion/projectp-20261026-core-puzzle/source/AvatarCore.java",
+  "sourceSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+  "reusedSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+  "sameUtility": true,
+  "notice": "MIT license retained; no SDK/model binaries in Git or NAS",
+  "previewIndependentReview": {
+    "reviewer": "missyou_finish",
+    "images": [
+      {
+        "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/qa/close-preview-0.5.png",
+        "sha256": "be3d939a450408fd72e65a8786248e657a186f1bac16379008cf3df9d6b1523a"
+      },
+      {
+        "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/qa/close-preview-15.7.png",
+        "sha256": "bf130bb6bd500facc232207b203a761e61958f6b99236ab56568a1388f10981d"
+      }
+    ],
+    "finding": "No model face/UI/CTA/icon/credit overlap or text clipping seen",
+    "scope": "Two still EC previews only; no Core/continuous/audio/finalMp4 judgment"
+  },
+  "nativeContinuous": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/qa/close-native-continuous.png"
+}
