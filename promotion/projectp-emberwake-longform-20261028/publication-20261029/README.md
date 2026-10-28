@@ -32,3 +32,9 @@ Rootが05:21:07 JSTに設定・実読戻し一致、05:21:16にOpen1回を実行
 - `youtube142-cover-select.ps1`: 同じ2票とexact metadata/NoKids、受入cover実SHAを照合し、観測した15924「ファイルをアップロード」で標準filepickerを開くだけ。必要な時は同一controlの標準ScrollIntoViewを使う。cover添付そのものと公開は行わない。
 
 両方の実Parser errors0、実操作はRootのみ。Gaming希望値はnative読戻しまで未設定/未検証として扱う。添付の成功・metadataの成功・予約成立・実公開を区別する。
+
+## Metadataの実確認とcover専用picker
+
+Rootが05:31:33/43 JSTにタイトル・説明の完全読戻し一致、05:31:54にNoKids選択済み（変更0）を確認。05:32:31にcover upload15924を一回Invokeし、新しい画像用dialogを実probeした。Gamingはまだnative未確認。
+
+`youtube142-cover-standard-picker.ps1` は、この別dialog90707982/PID49096/birth/Session/ownerchain、Edit192876156 ID1148、Open82905094 ID1に限定する。受入BGM ce39とcover 0d32、asset票・draft票、同VIDとタイトル/説明/NoKidsの実値を読み直す。親browserのfieldがmodalで無効でも、read-onlyの実値確認まで拒否しない。専用cover intentをCreateNewして一回だけOpenする。BGM添付のintentと混用しない。Parser errors0と静的review・実操作を区別し、Rootの添付結果が出るまで画像添付成功とは記録しない。

@@ -2,11 +2,15 @@
   "schemaVersion": 1,
   "issue": 142,
   "sourceBase": "aa5045591ab29b88ed03661f8ed041256f3255e7",
-  "phase": "one-upload-observed-draft-metadata-and-cover-prepared",
+  "phase": "native-metadata-exact-cover-standard-picker-ready",
   "scripts": [
     {
       "file": "youtube142-cover-select.ps1",
       "sha256": "8789a57267c095096da6c09855449d5a9e63697a76315b1a64debaa02eea4554"
+    },
+    {
+      "file": "youtube142-cover-standard-picker.ps1",
+      "sha256": "c210c41989d4443eed89096d0cad7a9a25bfe2f1a023540f87679c73737c0a25"
     },
     {
       "file": "youtube142-entry-control.ps1",
@@ -144,9 +148,32 @@
   "metadataAndCover": {
     "implemented": true,
     "assetAndDraftTicketsSeparate": true,
-    "expectedInitialTitle": "emberwake v07 bgm",
-    "legacyDescriptionHash": "0cea4d8b7cd2995a6f0b83259adb80339cca69d120b06daaf30fceaccdbd5616",
+    "videoId": "VdD_3xdOGFQ",
+    "rootMetadata": {
+      "titleAtUtc": "2026-10-28T20:31:33Z",
+      "descriptionAtUtc": "2026-10-28T20:31:43Z",
+      "bothReadbackExact": true,
+      "notKidsAtUtc": "2026-10-28T20:31:54Z",
+      "notKidsSelected": true,
+      "notKidsChanged": false
+    },
     "categoryNativeVerified": false,
-    "rootExecution": "Not yet recorded"
+    "coverSelector": {
+      "rootInvokeAtUtc": "2026-10-28T20:32:31Z",
+      "controlRuntimeId": "42,69024,4,-15924",
+      "coverAttachmentIntents": 0
+    },
+    "coverStandardPicker": {
+      "dialogHwnd": 90707982,
+      "dialogPid": 49096,
+      "dialogBirthUtc": "2026-10-28T20:32:31.5922150Z",
+      "filenameHwnd": 192876156,
+      "filenameId": 1148,
+      "openHwnd": 82905094,
+      "openId": 1,
+      "coverSha256": "0d32f0f7e486d450861abdd34fa5514b86803d4753266c8b6d4ee4cff5bde28d",
+      "rootExecution": "Not yet recorded",
+      "reason": "Root explicit standard control-message choice after filename and Combo UIA unsupported; not automatic fallback"
+    }
   }
 }
