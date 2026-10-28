@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {file,np,FC,FF,FP,run,parse,save,digest,hash} from '../native.mjs';
+const root='/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film',n='demo05-opening-pilot-voice',project=path.join(root,'projects',n+'.fcproj'),out=path.join(root,'videos',n+'.mp4');fs.mkdirSync(path.dirname(out),{recursive:true});
+if([project,out].some(fs.existsSync))throw Error('Preserve existing pilot');
+const video=JSON.parse(fs.readFileSync(file('qa/demo05/demo05-v01-open-picture-binding.json'))),voice=JSON.parse(fs.readFileSync(file('qa/demo05/demo05-v01-open-native.json')));
+if(!video.fullDecode)throw Error('Actual native picture required');
+const inputs=[video.picture,voice.voice],cmds=[{id:'file.newProject',params:{name:'EMBERWAKE demo0.11 導入 実プレイ'}},{id:'file.newSequence',params:{name:'導入32.6秒',width:1920,height:1080,fps:30,sampleRate:48000,video:1,audio:1}},{id:'file.import',params:{paths:inputs.map(np)}}];let items;
+for(const line of (await run(FC,['--save-as',np(project),'run','-'],'demo05/pilot-fc-init.json',cmds.map(JSON.stringify).join('\n')+'\n')).stdout.trim().split(/\r?\n/)){const o=parse(line);if(o.ok===false)throw Error(line);if(o.result?.items)items=o.result.items;}
+if(items?.length!==2)throw Error('Native pilot imports');const place=items.map((item,i)=>({id:'timeline.place',params:{item,track:i?'A1':'V1',frame:0,duration:video.frames*8467200000,video:i===0,audio:i===1}}));await run(FC,['--project',np(project),'--save','run','-'],'demo05/pilot-fc-place.json',place.map(JSON.stringify).join('\n')+'\n');
+const result=parse((await run(FC,['--project',np(project),'exec','file.exportMedia',JSON.stringify({path:np(out),format:'h264',audio:true,audioCodec:'aac',bitrateMode:'crf',crf:17,hardwareEncoding:'off',gpuRendering:'off',wait:true})],'demo05/pilot-fc-export.json')).stdout);if(result.offlineMedia?.length)throw Error('Offline pilot media');
+const probe=parse((await run(FP,['-v','error','-count_frames','-show_streams','-show_format','-of','json',np(out)],'demo05/pilot-probe.json')).stdout);if(Number(probe.streams.find(s=>s.codec_type==='video').nb_read_frames)!==978||!probe.streams.some(s=>s.codec_type==='audio'))throw Error('Pilot shape');await run(FF,['-v','error','-xerror','-i',np(out),'-f','null','-'],'demo05/pilot-decode.json');
+save('qa/demo05/pilot-binding.json',{out,sha256:await digest(out),project,projectSha256:hash(project),seconds:Number(probe.format.duration),frames:978,fullDecode:true,fullFilm:false,wholeDirectWatch:false,subjectiveListen:false,published:false});console.log(JSON.stringify({out,seconds:probe.format.duration,sha256:await digest(out)}));

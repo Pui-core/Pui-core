@@ -1,0 +1,11 @@
+{
+  "course4": {
+    "revision": "v03",
+    "reason": "所持の説明中に次の設置へ進んで手元が空く誤対応を避け、実設置前の停止図解と落下前後を使う。尺・声・他章は変更しない。",
+    "shots": {
+      "course4-10": {"view":"freeze-detail","sourceAt":37.6,"note":"実フレームを止めて確認／落下後・設置前","sourceState":{"falls":1,"B":"carried"}},
+      "course4-15": {"view":"freeze-compare","sourceAt":35.9,"sourceAfter":37.6,"note":"実フレーム比較／落下数は収録記録","beforeState":{"falls":0,"B":"carried"},"afterState":{"falls":1,"B":"carried"}}
+    }
+  },
+  "close": {"revision":"v02","reason":"連番PNGを静止画として明示importし、刻印１・２・３を別素材として保つ。","shots":{}}
+}
