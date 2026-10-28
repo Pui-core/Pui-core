@@ -4,14 +4,16 @@
 
 ## 現在の完成動画
 
-完成動画の保存先は `\\100.105.2.75\private\work\videos\`。2026-10-28 20:44 制作の 2 本だけを保存し、Windows Get-FileHash の一致、NAS 上を直接読む FFmpeg 全デコード exit 0、動画だけの一覧を確認済み。ローカルの原本・音声・依存素材は `F:\Videos\ProjectP-Missyou15-Preview-2026-10-28\revision-05-final\` に保持する。最終 MP4 は Craft 原本の入力ではないため、NAS 検証後にこの 2 本のローカル書出しを削除しても原本は壊れない。再度 QA する場合は再出力するか、NAS の同一 SHA の動画を読む。
+完成動画の保存先は `\\100.105.2.75\private\work\videos\`。2026-10-28 20:44 制作の 2 本だけを保存し、Windows Get-FileHash の一致、NAS 上を直接読む FFmpeg 全デコード exit 0、動画だけの一覧を確認済み。2026-10-28 20:51 JST、receipt とローカル / NAS の両 SHA を再照合後、許可されたローカル最終 MP4 の 2 本を実削除した。以後の視聴・投稿準備・追加確認は下表の NAS パスを使用し、削除済みの `revision-05-final/videos/missyou-story05-{voice,bgm}.mp4` を現在の納品先として案内しない。
+
+ローカルの原本・ProRes・WAV・依存素材・QA と他 revision は `F:\Videos\ProjectP-Missyou15-Preview-2026-10-28\` に保持。最終 MP4 は Craft 原本の入力ではなく、削除で原本の依存は変わっていない。ローカルで制作を再開する場合に限り `render-story05.mjs` で再出力する。過去の出力時 QA にある F のパスは、その検査を実行した時点の履歴である。
 
 | 用途 | ファイル | SHA-256 |
 | --- | --- | --- |
 | TikTok でのネイティブ音源追加用 | `20261028_2044_ミスユー_手紙体験_構成改_v05_声のみ.mp4` | `fe72eeb533208d585ac2cc02c4477b1ba046223f94b5dd43b2e9b694f310f989` |
 | BGM を含む動画 | `20261028_2044_ミスユー_手紙体験_構成改_v05_BGM.mp4` | `e3bb792f11fa7d5ec31955e15ac86b6a4d0b1c510fc5307263779b0d386419ec` |
 
-納品 receipt は NAS の videos に入れず、`F:\ProjectP-制作記録\NAS登録\20261028-ミスユー-v05-{BGM,声のみ}.json` に保持。
+納品 receipt は NAS の videos に入れず、`F:\ProjectP-制作記録\NAS登録\20261028-ミスユー-v05-{BGM,声のみ}.json` に保持。両 receipt の `sourceDeleted=true`、`sourceDeletedAtUtc`（BGM: `2026-10-28T11:51:30.2886743Z`、声のみ: `2026-10-28T11:51:30.3813508Z`）を確認。保存・SHA 照合・NAS 直接デコードの再現スクリプトは同じ制作記録側の `archive-video.ps1`。実行ポリシーは変更していない。
 
 両版とも H.264、1080×1920、30 fps、映像 404 フレーム / 13.466667 秒。AAC は 48 kHz ステレオ / 13.482 秒。FilmCraft の offlineMedia は空、全編のデコードは成功。
 
