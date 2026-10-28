@@ -15,7 +15,15 @@ def main():
     parser.add_argument("--voicevox", type=Path, required=True)
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--ffmpeg", default="ffmpeg")
+    parser.add_argument("--clone-name", default="本人声クローン_v01.wav")
+    parser.add_argument("--voicevox-name", default="VOICEVOX比較_v01.wav")
     args = parser.parse_args()
+    for name in (args.clone_name, args.voicevox_name):
+        if (Path(name).name != name or Path(name).suffix.lower() != ".wav"
+                or any(c in name for c in '/\\:*?"<>|')):
+            parser.error("Comparison names must be plain WAV file names")
+    if args.clone_name.casefold() == args.voicevox_name.casefold():
+        parser.error("Comparison file names must differ")
     dest = args.out_dir.resolve()
     if dest.is_relative_to(Path(__file__).resolve().parents[2]):
         parser.error("Audio outputs must remain outside the Git repository")
@@ -40,8 +48,8 @@ def main():
         matches = re.findall(r'\{\s*"input_i"[\s\S]*?\}', result.stderr)
         return json.loads(matches[-1])
 
-    files = [{"input": args.clone.resolve(strict=True), "name": "本人声クローン_v01.wav"},
-             {"input": args.voicevox.resolve(strict=True), "name": "VOICEVOX比較_v01.wav"}]
+    files = [{"input": args.clone.resolve(strict=True), "name": args.clone_name},
+             {"input": args.voicevox.resolve(strict=True), "name": args.voicevox_name}]
     for f in files:
         if (dest / f["name"]).exists():
             parser.error("Refusing to overwrite an existing comparison")

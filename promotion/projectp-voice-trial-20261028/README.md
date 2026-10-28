@@ -2,7 +2,9 @@
 
 管理 [#137](https://github.com/Pui-core/-/issues/137)、親 [#93](https://github.com/Pui-core/-/issues/93) / [#106](https://github.com/Pui-core/-/issues/106)。2026-10-28のowner指示に基づく小規模試験の再現コードと非秘密metadataを保存する。完成動画・公開用音声の納品場所ではない。
 
-本人の未MIX録音8秒から、公式Qwen3-TTS 0.6B Baseの話者特徴だけを使い、4.72秒の台詞を生成した。同文のVOICEVOX比較音声は3.616秒。直接試聴・本人らしさ・自然さ・集客効果は未評価で、動画への採用・公開はしていない。
+v01は本人の未MIX録音8秒から話者特徴だけを使って4.72秒の台詞を生成した。同文のVOICEVOX比較音声は3.616秒。提出後、ownerの実試聴で「不完全・棒読み・抑揚不足」と差し戻された。本人に似ているとの採用判定は受けていない。v01と当時の技術記録は保全する。
+
+管理 [#138](https://github.com/Pui-core/-/issues/138) のv02では、無声部分の多い先頭参照をやめ、ASR2モデルで同じ語句を認識できる明瞭な句を選び、参照音声と対応文字起こしを使うICLへ変更した。v02は4.32秒の私的試聴候補。制作者による直接試聴・本人らしさ・自然さ・集客効果は未評価で、動画への採用・公開はしていない。
 
 ## 保存範囲
 
@@ -55,3 +57,28 @@ timeout --signal=TERM --kill-after=15s 1200s "$trial_root/venv/bin/python" repro
 - 比較音声のcreditは `VOICEVOX:青山龍星`。[VOICEVOX規約](https://voicevox.hiroshiba.jp/term/) と [VirVox公式話者規約](https://www.virvoxproject.com/voicevoxの利用規約) を2026-10-28に確認。青山龍星は企業・個人事業主や企業契約個人の利用に事前申請が必要。私用比較から、本番の事業利用や公開許諾済みへ読み替えない。
 
 この記録の完了は、視聴維持・登録者・フォロワー目標の達成や声の採用を意味しない。
+
+## v02：参照の選び直しとICL
+
+v01の参照は先頭8秒を取り出しただけで、20ms RMSが−35dBFSを超える割合は24.75%だった。v02では、曖昧な語句を含む隣接行を除き、小型・中型の既存Whisperが同じ語句を認識した3.57秒の句を採用した。同じRMS閾値を超える割合は84.92%。前後の低エネルギー境界で切り出した。これらは参照選定の補助であり、RMSを音声認識や自然さの証明としない。通常会話の参照ではなく、本人のラップ録音という限界は残る。
+
+公式実装の `generate_voice_clone()` / `create_voice_clone_prompt()` に従い、`x_vector_only_mode=False` と対応する `ref_text` を使用。v01で無視していた参照音声コードと文字を条件へ加え、subtalker samplingを有効にした。標準話者への差し替え、ピッチの揺らし、話速の後加工は行っていない。Baseのclone APIへCustomVoice向けの感情instructを追加したとは扱わない。
+
+```bash
+timeout --signal=TERM --kill-after=15s 1200s "$trial_root/venv/bin/python" reproduce.py \
+  --reference /absolute/private/clear-owner-phrase.wav \
+  --reference-text-file /absolute/private/matching-transcript.txt \
+  --mode icl --subtalker-sampling --offline \
+  --out-dir "$trial_root/icl-v02" --model-cache "$trial_root/hf-cache"
+"$trial_root/venv/bin/python" match_levels.py \
+  --clone "$trial_root/icl-v02/owner-voice-clone-experiment-v2-icl.wav" \
+  --voicevox /absolute/private/voicevox-raw.wav --clone-name 本人声クローン_v02.wav \
+  --out-dir "$trial_root/comparison-v02" --ffmpeg /absolute/path/to/ffmpeg
+```
+
+文字起こしはprivateなファイルから読み込み、Git内への配置を拒否する。Gitには文字起こし本文、原録音パス、音声、参照波形、モデルを保存しない。旧v01とVOICEVOX比較の試聴WAVはSHA不変で保持し、v02だけを別名で追加。詳細な非秘密測定は [v02-result.json](v02-result.json) に保存する。音量は同じ約−20LUFS、台詞も同じだが、参照・ICL・samplingが変わるため各変更の効果を単独で分離した試験ではない。
+
+- 実装参照：[Qwen公式clone API](https://github.com/QwenLM/Qwen3-TTS/blob/main/qwen_tts/inference/qwen3_tts_model.py)。
+- v02の生成・文字認識・数値検査を、ownerによる抑揚の採用判定と読み替えない。
+
+既設librosaのpYINで有声F0も参考測定した。2048サンプル窓・hop256・65〜500Hz、voiced判定かつ確率0.5以上・RMS−45dBFS超を採用。v02は33/406フレームだけでp10=137.73Hz、p90=150.20Hz（1.50半音）。v01は8/443フレームで必要数を満たさず、両者の抑揚範囲が改善したとの比較は成立しない。1024窓・確率0.8以上の初回測定では両方0フレームだった。少数の有声推定を自然さ・本人らしさ・発話全体の証明にしない。

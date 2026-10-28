@@ -1,0 +1,166 @@
+{
+  "recordedAt": "2026-10-28T12:38:45.662Z",
+  "managementIssue": "https://github.com/Pui-core/-/issues/138",
+  "previousIssue": "https://github.com/Pui-core/-/issues/137",
+  "scope": "Private revision candidate; not adopted or published",
+  "ownerFeedbackOnV01": {
+    "directlyListened": true,
+    "assessment": [
+      "incomplete",
+      "monotonous reading",
+      "insufficient intonation"
+    ],
+    "ownerLikenessApproved": false
+  },
+  "model": {
+    "id": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "revision": "5d83992436eae1d760afd27aff78a71d676296fc",
+    "license": "Apache-2.0",
+    "reusedExistingModel": true,
+    "newModelDownloads": 0
+  },
+  "referenceSelection": {
+    "sourceKind": "Owner original unmixed rap lead",
+    "durationSeconds": 3.57,
+    "sampleRate": 24000,
+    "channels": 1,
+    "asrSmallAndMediumWordsAgree": true,
+    "matchingPrivateTranscriptSupplied": true,
+    "adjacentAmbiguousLinesExcluded": true,
+    "cropAtLowEnergyBoundaries": true,
+    "aboveMinus35RmsPct": 84.91620111731844,
+    "previousReferenceAboveMinus35RmsPct": 24.75,
+    "energyWindowMs": 20,
+    "energyRatioIsNotSpeechRecognition": true,
+    "neutralSpeakingReference": false,
+    "directListening": false,
+    "referenceAudioAndTextInGit": false
+  },
+  "generation": {
+    "text": "このゲーム、あなたなら右と左、どっちを選ぶ？",
+    "mode": "icl",
+    "xVectorOnlyMode": false,
+    "referenceTranscriptSupplied": true,
+    "subtalkerSampling": true,
+    "seed": 20261028,
+    "maxNewTokens": 110,
+    "device": "cpu",
+    "cpuThreads": 4,
+    "elapsedSeconds": 71.77,
+    "exitCode": 0,
+    "training": false,
+    "externalAudioApi": false,
+    "standardSpeakerSubstitution": false,
+    "postPitchVariation": false,
+    "voicevoxUsedForTrainingOrReference": false
+  },
+  "rawOutput": {
+    "durationSeconds": 4.32,
+    "sampleRate": 24000,
+    "frames": 103680,
+    "sha256": "6e908e895d2f45e582e9c566635425079d79aaf5e5417ba8e1b51091ecb31bba",
+    "peakDbfs": -5.848430159749315,
+    "rmsDbfs": -20.69217456488903,
+    "head100msPeakDbfs": -13.876108348350016,
+    "tail100msPeakDbfs": -49.24742982952597,
+    "fullDecode": true,
+    "finite": true
+  },
+  "matchedOutput": {
+    "file": "本人声クローン_v02.wav",
+    "durationSeconds": 4.32,
+    "sampleRate": 24000,
+    "channels": 1,
+    "bitDepth": 16,
+    "lufsI": -19.99,
+    "truePeakDbtp": -4.98,
+    "gainDb": 0.7899999999999991,
+    "sha256": "b1e5764dedf3901719a84048269863d16713e54a4a4e4d85895c4c5fd4dd4090",
+    "constantGainOnly": true,
+    "timeStretch": false,
+    "trimOrPadding": false,
+    "pitchPostProcessing": false,
+    "copyShaMatched": true,
+    "windowsFileExists": true
+  },
+  "previousAudioPreserved": {
+    "v01Sha256": "84bc975dd8090149b96b96da112e4c59bb811f3ddcd3b5e6b8dda07e6878d672",
+    "voicevoxV01Sha256": "4216c8e0c28526c0ca838bc2b67c0cefc87346e42509ac736bfd500cb0c24e70"
+  },
+  "supplementaryOfflineAsr": {
+    "model": "Systran/faster-whisper-small",
+    "recognizedText": "このゲーム、あなたなら右と左、どっちを選ぶ",
+    "expectedText": "このゲーム、あなたなら右と左、どっちを選ぶ？",
+    "fullTextMatchesExceptPunctuation": true,
+    "notDirectListening": true
+  },
+  "f0ReferenceMeasurement": {
+    "method": "librosa.pyin",
+    "librosaVersion": "1.0.0",
+    "notNaturalnessOrIdentityEvidence": true,
+    "files": [
+      {
+        "file": "本人声クローン_v01.wav",
+        "allFrames": 443,
+        "retainedVoicedFrames": 8,
+        "voicedFrameRule": "pYIN voiced flag, voiced probability >=0.5, RMS > -45 dBFS, finite F0",
+        "analysisBandHz": [
+          65,
+          500
+        ],
+        "frameLength": 2048,
+        "hopLength": 256,
+        "elapsedSeconds": 1.6379751859999487,
+        "maxVoicedProbability": 0.6860828109301793,
+        "insufficientReliableFrames": true
+      },
+      {
+        "file": "本人声クローン_v02.wav",
+        "allFrames": 406,
+        "retainedVoicedFrames": 33,
+        "voicedFrameRule": "pYIN voiced flag, voiced probability >=0.5, RMS > -45 dBFS, finite F0",
+        "analysisBandHz": [
+          65,
+          500
+        ],
+        "frameLength": 2048,
+        "hopLength": 256,
+        "elapsedSeconds": 0.17284428400012075,
+        "maxVoicedProbability": 0.7571601330199094,
+        "p10Hz": 137.7302022667084,
+        "p50Hz": 141.7660052464835,
+        "p90Hz": 150.19585059339548,
+        "p10p90SemitoneWidth": 1.499999999999997
+      }
+    ],
+    "strictInitialAttempt": {
+      "frameLength": 1024,
+      "voicedProbabilityThreshold": 0.8,
+      "retainedFrames": [
+        {
+          "file": "本人声クローン_v01.wav",
+          "count": 0
+        },
+        {
+          "file": "本人声クローン_v02.wav",
+          "count": 0
+        }
+      ]
+    },
+    "comparisonConclusion": "Insufficient reliable voiced frames in v01; no supported conclusion that intonation range improved",
+    "coverageWarning": "v02 retained33/406 frames only; p10/p90 are narrow-subset references, not whole-delivery or naturalness evidence"
+  },
+  "directListening": false,
+  "speakerSimilarityAssessed": false,
+  "naturalnessImprovementAssessed": false,
+  "ownerV02Acceptance": null,
+  "published": false,
+  "nasAudioCopies": 0,
+  "privacy": {
+    "rawAudioInGit": false,
+    "generatedAudioInGit": false,
+    "modelsInGit": false,
+    "lyricsOrTranscriptInGit": false,
+    "originalRecordingPathInGit": false
+  }
+}
