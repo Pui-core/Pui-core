@@ -1,5 +1,9 @@
 # 嘘か誠か v10：TikTok別窓の準備
 
+**現在のowner制約：バックグラウンドで進め、マウス・前面化・focusを奪わない。** GUIの変更はfocus/activationを起こさないと証明できる経路以外HOLD。このフォルダーの過去のSetFocus/Expand/Scroll/Invoke/新窓起動を含むhelperは実行履歴であり、そのまま再実行しない。最新範囲は `operating-constraints.json` を優先する。caption修復の通常UIA focusも成功時の履歴として保全し、現在の指示では再実行しない。
+
+背景での読取は `source/read-native-editor144.ps1`。pinned新窓/own proof/uploaded asset/native filter markerの照合後、UIA gettersだけで読み、focus/window/tab/contentを変更しない。Aria/ItemStatus等が露出しなければ未確認のまま返す。国名文字列の候補はnative地域の確定に使わない。**地域JPはownerの直接回答で確認済み**で、再質問しない。これは曲のJP商用権利確認とは別である。Source PRとworktreeはDraftで保持し、現在のTT private editor/旧133を保全する。
+
 管理 [144](https://github.com/Pui-core/-/issues/144) のSource準備のみ。RootがGUI・5alias lease・添付・公開の唯一の担当。writerはFirefox起動、GUI、lease変更、投稿を実行しない。
 
 ## 継承する完成動画
