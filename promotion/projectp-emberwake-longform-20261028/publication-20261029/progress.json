@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "issue": 142,
+  "sourceBase": "aa5045591ab29b88ed03661f8ed041256f3255e7",
+  "phase": "entry-close-confirmed-empty-upload-stage-prepared",
+  "scripts": [
+    {
+      "file": "youtube142-entry-control.ps1",
+      "sha256": "abdfb56262206b80d3c186de1cbe516cced6e8ffbddf09d8ff29a3dd2aba0196"
+    },
+    {
+      "file": "youtube142-upload-stage.ps1",
+      "sha256": "2e6f4f3402b511374682c5be8bda1a00bda65885e3f00c2cc9e33676d7262116"
+    }
+  ],
+  "entry": {
+    "actor": "Root",
+    "nativeCloseResult": {
+      "at": "2026-10-28T19:51:51.7848233Z",
+      "issue": 142,
+      "action": "closeCompleted134",
+      "targetRuntimeId": "42,69024,4,-14713",
+      "targetName": "閉じる",
+      "invokeSentOnce": true,
+      "publicationIntents": 0,
+      "fileAttachIntents": 0,
+      "osFocusActions": 0,
+      "globalKeyMouseActions": 0,
+      "status": "verify-fresh-native-pane-closed-before-create-upload"
+    },
+    "receiptSha256": "fc0433e7f3af3f3ba16955b810194238d48de9068dffa05499bc3a035656a8b1",
+    "oldPublicCanonicalSha256": "7b544094f9ac8d66e98b79c5d3ba3c3a59bde07d42cb8516587850f6a2cbb687",
+    "freshAfterClose": {
+      "atUtc": "2026-10-28T19:52:00.5754880Z",
+      "ownUcMatched": true,
+      "createButtonRuntimeId": "42,69024,4,-9837",
+      "enabled": true
+    }
+  },
+  "asset": {
+    "requiredIssue": 141,
+    "requiredRevision": "v07",
+    "accepted": false,
+    "finalFile": null,
+    "finalSha256": null,
+    "newVideoId": null,
+    "noV06Fallback": true
+  },
+  "authorActions": {
+    "gui": 0,
+    "lease": 0,
+    "fileSelection": 0,
+    "fileAttachment": 0,
+    "publication": 0
+  },
+  "stageExecution": "Not yet recorded; Root runs PS parse and native action",
+  "rawUiOrLeaseContentsSaved": false
+}
