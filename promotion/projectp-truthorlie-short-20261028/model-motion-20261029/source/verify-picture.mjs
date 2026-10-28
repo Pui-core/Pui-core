@@ -1,0 +1,28 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+import {file,np,FF,run,save,hash,digest} from './native.mjs';
+import {baseline,startFrame,frames} from './common.mjs';
+const tick=254016000000,project=JSON.parse(fs.readFileSync(file('projects/truthorlie-real-v10.ecproj'))),allLayers=Object.values(project.items).flatMap(item=>item.kind?.layers||[]),host=allLayers.find(l=>l.name==='Natural / 72 true Core frames, speech RMS');
+if(!host||host.start_time!==16.8*tick||host.in_point!==16.8*tick||host.out_point!==19.2*tick)throw Error('Actual native model timing changed');
+const remap=host.props.children.find(p=>p.match==='timeRemap'),keys=remap?.keys.map(k=>({storedLayerLocalSeconds:k.time/tick,sourceSeconds:k.value.v}));
+if(JSON.stringify(keys)!==JSON.stringify([{storedLayerLocalSeconds:0,sourceSeconds:0},{storedLayerLocalSeconds:2.4,sourceSeconds:2.4}]))throw Error('Actual native source time remap must be local0→2.4');
+const video=file('videos/truthorlie-real-v10-voice.mp4'),picture=file('media/truthorlie-real-v10-picture.mov'),oldPicture=path.join(baseline,'media/truthorlie-real-v9-picture.mov'),baselineBinding=JSON.parse(fs.readFileSync(file('source/baseline/final-bindings.json')));
+if(await digest(oldPicture)!==baselineBinding.pictureSha256)throw Error('Old frozen picture changed');
+const packetHash=async(p,name)=>(await run(FF,['-v','error','-i',np(p),'-map','0:v:0','-c:v','copy','-frames:v','504','-f','hash','-hash','sha256','-'],name)).stdout.trim();
+const oldHash=await packetHash(oldPicture,'premodel-old-packet-hash.json'),newHash=await packetHash(picture,'premodel-new-packet-hash.json');
+if(oldHash!==newHash)throw Error('Frames0–503 picture packets differ; inspect before accepting');
+const faceDir=file('qa/face');fs.mkdirSync(faceDir,{recursive:true});
+await run(FF,['-v','error','-i',np(video),'-vf',"select='between(n,512,575)',crop=120:120:675:1170",'-vsync','0',np(path.join(faceDir,'face-%03d.png'))],'final-face-extract.json');
+await run(FF,['-v','error','-framerate','30','-i',np(path.join(faceDir,'face-%03d.png')),'-vf','scale=240:240:flags=neighbor,tile=8x8','-frames:v','1',np(file('qa/final-face-contact.png'))],'final-face-contact.json');
+await run(FF,['-v','error','-i',np(video),'-vf','fps=1,scale=270:480,tile=5x4','-frames:v','1',np(file('qa/final-whole-contact.png'))],'final-whole-contact.json');
+for(const n of [15,60,195,237,294,324,375,441,498,513,528,552,570])await run(FF,['-v','error','-i',np(video),'-vf',`select='eq(n,${n})'`,'-vsync','0','-frames:v','1',np(file('qa/final-frame-'+n+'.png'))]);
+execFileSync('javac',['--release','17','-d',file('source/classes'),file('source/FaceMetrics.java')]);execFileSync('java',['-cp',file('source/classes'),'FaceMetrics',faceDir,file('qa/final-face-metrics.json')]);
+const metrics=JSON.parse(fs.readFileSync(file('qa/final-face-metrics.json'))),cues=JSON.parse(fs.readFileSync(file('source/model-cues.json'))),input=new Map(cues.frames.map(r=>[r.globalFrame,r]));
+const rows=metrics.frames.map(r=>({...r,expectedMouth:input.get(r.globalFrame).mouth,expectedEye:input.get(r.globalFrame).eye,rms:input.get(r.globalFrame).rms}));
+const corr=(a,b)=>{const ma=a.reduce((n,x)=>n+x,0)/a.length,mb=b.reduce((n,x)=>n+x,0)/b.length;let xy=0,xx=0,yy=0;for(let i=0;i<a.length;i++){const x=a[i]-ma,y=b[i]-mb;xy+=x*y;xx+=x*x;yy+=y*y;}return xy/Math.sqrt(xx*yy);};
+const lags=[];for(let lag=-4;lag<=4;lag++){const pairs=rows.flatMap((r,i)=>rows[i+lag]?[{a:r.expectedMouth,b:rows[i+lag].mouthDarkPixels}]:[]);lags.push({lagFrames:lag,correlation:corr(pairs.map(p=>p.a),pairs.map(p=>p.b))});}
+const best=lags.reduce((a,b)=>a.correlation>b.correlation?a:b),mouthValues=rows.map(r=>r.mouthDarkPixels),eyeValues=rows.map(r=>r.eyesDarkPixels),faceHashes=Array.from({length:64},(_,i)=>hash(path.join(faceDir,`face-${String(i+1).padStart(3,'0')}.png`)));
+if(new Set(faceHashes).size<16||Math.max(...mouthValues)-Math.min(...mouthValues)<6||!Number.isFinite(best.correlation)||best.correlation<.9||best.lagFrames!==0)throw Error('Actual final face lacks visible dynamic range or speech phase alignment');
+save('qa/picture-acceptance.json',{issue:143,videoSha256:await digest(video),nativeProjectSha256:hash(file('projects/truthorlie-real-v10.ecproj')),layer:{name:host.name,startSeconds:host.start_time/tick,inSeconds:host.in_point/tick,outSeconds:host.out_point/tick,storedRemapKeys:keys,compToSource:{comp:[16.8,19.2],source:[0,2.4]}},unchangedBeforeModel:{frameRangeHalfOpen:[0,504],pictureProresPacketHashOld:oldHash,pictureProresPacketHashNew:newHash,byteIdentical:true},faceRoi:{rect:[675,1170,120,120],globalFramesHalfOpen:[512,576],frames:64,uniqueFrames:new Set(faceHashes).size,contactSha256:hash(file('qa/final-face-contact.png')),mouthDarkPixelRange:[Math.min(...mouthValues),Math.max(...mouthValues)],eyesDarkPixelRange:[Math.min(...eyeValues),Math.max(...eyeValues)],expectedMouthToDarkAreaCorrelation:lags,bestLag:best,rows},keyFrameFiles:[513,528,552,570].map(n=>({globalFrame:n,modelFrame:n-startFrame,globalSeconds:n/30,expectedMouth:input.get(n).mouth,expectedEye:input.get(n).eye,file:'qa/final-frame-'+n+'.png',sha256:hash(file('qa/final-frame-'+n+'.png'))})),all72ModelFramesBound:true,modelFrames:frames,wholeRealtimeWatch:false,subjectiveListen:false,visualReviewerPending:true,published:false});
+console.log(JSON.stringify({unchangedPremodel504:true,nativeRemapKeys:keys,finalFaceFrames:64,uniqueFinalFaceFrames:new Set(faceHashes).size,mouthPixelRange:[Math.min(...mouthValues),Math.max(...mouthValues)],bestLag:best}));

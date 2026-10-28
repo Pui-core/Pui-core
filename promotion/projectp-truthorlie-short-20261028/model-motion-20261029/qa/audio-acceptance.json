@@ -1,0 +1,169 @@
+{
+  "status": "PASS_SOURCE6_FULL_PCM_AND_FINAL_AAC_HEAD_MIDDLE_TAIL",
+  "duration": 19.2,
+  "frames": 576,
+  "size": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "narrationSha256": "a8052a999efb483db9c2209f559b315907ed2f460b227839d1f6b4f996f4adcf",
+  "sfxSha256": "1e352d7fcc2ad9b59a99017b400c70152ae12b15ef7e7cb41e9fe53e7af9b68e",
+  "videoSha256": "e683ad00bad973a09456fd49895f8eddcde884be9c37f2ae5dca8bbaa4935592",
+  "sampleRate": 48000,
+  "truePeakDbfs": -1.6,
+  "fullAvDecodeExit": 0,
+  "sourceCues": [
+    {
+      "id": "hook",
+      "at": 0.16,
+      "end": 3.1,
+      "text": "外れた一票。得点するのは、どっち？",
+      "file": "voice-real-v9-hook.wav",
+      "sha256": "69fbc8a7e929f549b6de484c9b6282bab537e0fc132158012b71639ae7e6fdcd",
+      "predictedDuration": 2.7537400274519372,
+      "speed": 1.13,
+      "kana": "ハズレタ'/イッ'ピョオ、ト_クテン'/スル'/ノワ'、ド'ッチ？",
+      "actualDuration": 2.8586666666666667,
+      "firstVoiced": 0.19237500000000002,
+      "lastVoiced": 2.9036666666666666,
+      "sourceTailPad": 0.11497916666666666,
+      "maxPcmError": 0
+    },
+    {
+      "id": "rule",
+      "at": 3.36,
+      "end": 6.1,
+      "text": "この回、五つの回答に、嘘は一つ。",
+      "file": "voice-real-v9-rule.wav",
+      "sha256": "3404f52708eaac7cb72116596bdbf20e51dae55c79fd11501646961cfdd97800",
+      "predictedDuration": 2.6741674293070696,
+      "speed": 1.2361388468249401,
+      "kana": "コノ'/カ'イ、イツ'ツノ/カイトオニ'、ウ'ソワ/_ヒト'ツ",
+      "actualDuration": 2.656,
+      "firstVoiced": 3.4172708333333333,
+      "lastVoiced": 5.941,
+      "sourceTailPad": 0.07497916666666667,
+      "maxPcmError": 0
+    },
+    {
+      "id": "vote",
+      "at": 6.32,
+      "end": 9.5,
+      "text": "投票は二番。でも、嘘は五番。",
+      "file": "voice-real-v9-vote.wav",
+      "sha256": "2f51df31d8d13d68dc768e1b423b546c5c776286be760ffac68a525771e421af",
+      "predictedDuration": 2.6869938857892977,
+      "speed": 1.13,
+      "kana": "トオヒョオワ'/ニ'バン、デ'モ、ウ'ソワ/ゴ'バン",
+      "actualDuration": 2.688,
+      "firstVoiced": 6.382416666666667,
+      "lastVoiced": 8.904020833333334,
+      "sourceTailPad": 0.10395833333333333,
+      "maxPcmError": 0
+    },
+    {
+      "id": "result",
+      "at": 9.76,
+      "end": 13.45,
+      "text": "全員が外したので、出題側に一点。",
+      "file": "voice-real-v9-result.wav",
+      "sha256": "4ae4dd75c61301bffe40dc882e8de58db724edbc41d36a2e96a2d82b358c0b32",
+      "predictedDuration": 2.5006565859465475,
+      "speed": 1.13,
+      "kana": "ゼンインガ'/ハズ_シタ'ノデ、_シュツダイガワニ'/イッ'テン",
+      "actualDuration": 2.496,
+      "firstVoiced": 9.799229166666667,
+      "lastVoiced": 12.162749999999999,
+      "sourceTailPad": 0.09322916666666667,
+      "maxPcmError": 0
+    },
+    {
+      "id": "title",
+      "at": 13.44,
+      "end": 16.15,
+      "text": "自作ゲーム、うそか、まことか。",
+      "file": "voice-real-v9-title.wav",
+      "sha256": "6c2116d5af9dea5fd11818da7d2fa9a46180db1582ed845b61e4fd5621bfaba8",
+      "predictedDuration": 2.2968101315899236,
+      "speed": 1.13,
+      "kana": "ジサクゲ'エム、ウ'ソカ、マコトカ'",
+      "actualDuration": 2.2613333333333334,
+      "firstVoiced": 13.4805,
+      "lastVoiced": 15.602229166666666,
+      "sourceTailPad": 0.09908333333333333,
+      "maxPcmError": 0
+    },
+    {
+      "id": "cta",
+      "at": 16.8,
+      "end": 18.75,
+      "text": "アイフォーンで配信中。",
+      "file": "voice-real-v9-cta.wav",
+      "sha256": "0702259e2272098f2b0e647f38ac15fbe9b4725476a0ff17ac8764bd7521b1e3",
+      "predictedDuration": 1.2651075263571951,
+      "speed": 1.13,
+      "kana": "アイフォ'オンデ/ハイシンチュウ'",
+      "actualDuration": 1.248,
+      "firstVoiced": 16.817708333333336,
+      "lastVoiced": 17.9431875,
+      "sourceTailPad": 0.10479166666666667,
+      "maxPcmError": 0
+    }
+  ],
+  "finalAac": [
+    {
+      "cue": "hook",
+      "lagSamples": 0,
+      "whole": 0.9999311039771849,
+      "head": 0.9999865567461659,
+      "middle": 0.9998573543085347,
+      "tail": 0.9999863962613026
+    },
+    {
+      "cue": "rule",
+      "lagSamples": 0,
+      "whole": 0.9997934106769225,
+      "head": 0.9997610289455878,
+      "middle": 0.9997113190982116,
+      "tail": 0.9995413553857354
+    },
+    {
+      "cue": "vote",
+      "lagSamples": 0,
+      "whole": 0.9999439324719828,
+      "head": 0.9999571880462059,
+      "middle": 0.9997914261528558,
+      "tail": 0.9999777861322193
+    },
+    {
+      "cue": "result",
+      "lagSamples": 0,
+      "whole": 0.9999232391758957,
+      "head": 0.999831876507216,
+      "middle": 0.9962852899754262,
+      "tail": 0.9999629199456453
+    },
+    {
+      "cue": "title",
+      "lagSamples": 0,
+      "whole": 0.9998162058570397,
+      "head": 0.9999683474432649,
+      "middle": 0.9999555804794366,
+      "tail": 0.9999381247967335
+    },
+    {
+      "cue": "cta",
+      "lagSamples": 0,
+      "whole": 0.9998878240490666,
+      "head": 0.999782143238661,
+      "middle": 0.999743235069359,
+      "tail": 0.9999974451054557
+    }
+  ],
+  "voiceOrSfxChanged": false,
+  "nativeMusicSelected": false,
+  "wholeRealtimeWatch": false,
+  "subjectiveListen": false,
+  "published": false
+}
