@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import {file,hash,save} from './native.mjs';
+const text='着地の九ティック前に押して離した入力も、接地した時に受け取ります。十二ティック前は期限切れ。これは六十ヘルツでの当時の計測です。';
+const base='http://127.0.0.1:50031', out=file('media/firstcut04k-jump07.wav');
+if(fs.existsSync(out)||fs.existsSync(file('source/firstcut04k-jump07-query.json')))throw Error('Preserve existing voice');
+const version=await(await fetch(base+'/version')).json(),prior=JSON.parse(fs.readFileSync(file('qa/narration.json')));
+if(version!==prior.engineVersion||prior.speaker!=='青山龍星'||prior.styleId!==13)throw Error('VOICEVOX engine or narrator differs');
+const qr=await fetch(base+'/audio_query?text='+encodeURIComponent(text)+'&speaker=13',{method:'POST'});if(!qr.ok)throw Error('Query failed');const q=await qr.json();
+q.speedScale=1.06;q.intonationScale=1.04;q.prePhonemeLength=.045;q.postPhonemeLength=.15;q.outputSamplingRate=48000;q.outputStereo=true;
+const r=await fetch(base+'/synthesis?speaker=13',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(q)});if(!r.ok)throw Error('Synthesis failed');
+fs.writeFileSync(out,Buffer.from(await r.arrayBuffer()),{flag:'wx'});save('source/firstcut04k-jump07-query.json',q);
+const b=fs.readFileSync(out);let rate=0,data=0;for(let p=12;p+8<=b.length;){let id=b.toString('ascii',p,p+4),n=b.readUInt32LE(p+4);if(id==='fmt ')rate=b.readUInt32LE(p+16);if(id==='data')data+=n;p+=8+n+(n%2);}if(!rate||!data)throw Error('Bad WAV');
+save('source/firstcut04k-jump07.json',{id:'jump07',text,file:'media/firstcut04k-jump07.wav',sha256:hash(out),duration:data/rate,source:'production/product/docs/verification-jump-response.md',engineVersion:version,subjectiveListen:false});console.log(JSON.stringify({duration:data/rate}));

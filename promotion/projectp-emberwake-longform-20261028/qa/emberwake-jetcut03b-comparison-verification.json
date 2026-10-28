@@ -1,0 +1,403 @@
+{
+  "status": "TECHNICAL_REVIEW_BLOCK_PASS_PENDING_CREATIVE_CONTINUOUS_REVIEW",
+  "videoSha256": "587a7b326ff2596be34af4657e628a3195d8badc79ec1c1c43e2049ba4ce4244",
+  "duration": 72,
+  "frames": 2160,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "fullAvDecode": true,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLufs": -18.8,
+    "truePeakDbtp": -2.6,
+    "voices": [
+      {
+        "id": "normal",
+        "file": "emberwake-jetcut03-comparison-voice-001.wav",
+        "at": 0.1,
+        "samples": 241152,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999366428554177,
+        "headCorrelation": 0.9999898640394878,
+        "tailCorrelation": 0.9999746631507742
+      },
+      {
+        "id": "branch",
+        "file": "emberwake-jetcut03-comparison-voice-002.wav",
+        "at": 7.6,
+        "samples": 227328,
+        "pcmMaxError": 2.0265579214751028e-7,
+        "lag": 0,
+        "correlation": 0.9999583887880187,
+        "headCorrelation": 0.9999816691182928,
+        "tailCorrelation": 0.999696966412142
+      },
+      {
+        "id": "cost",
+        "file": "emberwake-jetcut03-comparison-voice-003.wav",
+        "at": 14,
+        "samples": 208384,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999363430283235,
+        "headCorrelation": 0.9999581065952843,
+        "tailCorrelation": 0.9999797458053802
+      },
+      {
+        "id": "test",
+        "file": "emberwake-jetcut03-comparison-voice-004.wav",
+        "at": 18.8,
+        "samples": 238080,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999473149773813,
+        "headCorrelation": 0.9999790021148077,
+        "tailCorrelation": 0.9999900820917238
+      },
+      {
+        "id": "short",
+        "file": "emberwake-jetcut03-comparison-voice-005.wav",
+        "at": 24.1,
+        "samples": 132096,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9998806148447874,
+        "headCorrelation": 0.9998356532451351,
+        "tailCorrelation": 0.9999670675062143
+      },
+      {
+        "id": "held",
+        "file": "emberwake-jetcut03-comparison-voice-006.wav",
+        "at": 31,
+        "samples": 163840,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999476595505171,
+        "headCorrelation": 0.9999965307076937,
+        "tailCorrelation": 0.9999943918918403
+      },
+      {
+        "id": "counter",
+        "file": "emberwake-jetcut03-comparison-voice-007.wav",
+        "at": 37,
+        "samples": 259072,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999599125518197,
+        "headCorrelation": 0.9999937695191682,
+        "tailCorrelation": 0.9999922407366951
+      },
+      {
+        "id": "advance",
+        "file": "emberwake-jetcut03-comparison-voice-008.wav",
+        "at": 44.5,
+        "samples": 271360,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999322139152999,
+        "headCorrelation": 0.9999981117498912,
+        "tailCorrelation": 0.9995774428159735
+      },
+      {
+        "id": "ash-route",
+        "file": "emberwake-jetcut03-comparison-voice-009.wav",
+        "at": 52.1,
+        "samples": 151552,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999162104132281,
+        "headCorrelation": 0.9999893041217307,
+        "tailCorrelation": 0.9999784042971813
+      },
+      {
+        "id": "lumi-route",
+        "file": "emberwake-jetcut03-comparison-voice-010.wav",
+        "at": 57.4,
+        "samples": 129536,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999783957727422,
+        "headCorrelation": 0.9999801615945572,
+        "tailCorrelation": 0.9999771321730262
+      },
+      {
+        "id": "memory-route",
+        "file": "emberwake-jetcut03-comparison-voice-011.wav",
+        "at": 64,
+        "samples": 288768,
+        "pcmMaxError": 1.8477439889252878e-7,
+        "lag": 0,
+        "correlation": 0.999946637552918,
+        "headCorrelation": 0.9999712971351817,
+        "tailCorrelation": 0.9999930058103137
+      }
+    ],
+    "allPhrasesAndHeadTailVerified": true
+  },
+  "finalFrames": [
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-000.png",
+      "time": 0.5
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-001.png",
+      "time": 2.966666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-002.png",
+      "time": 3
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-003.png",
+      "time": 5.966666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-004.png",
+      "time": 6
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-005.png",
+      "time": 7.466666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-006.png",
+      "time": 7.5
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-007.png",
+      "time": 9.067
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-008.png",
+      "time": 13.466666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-009.png",
+      "time": 13.5
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-010.png",
+      "time": 16.966666666666665
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-011.png",
+      "time": 17
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-012.png",
+      "time": 20.966666666666665
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-013.png",
+      "time": 21
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-014.png",
+      "time": 23.966666666666665
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-015.png",
+      "time": 24
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-016.png",
+      "time": 24.6
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-017.png",
+      "time": 25.533333333333335
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-018.png",
+      "time": 25.566666666666666
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-019.png",
+      "time": 25.8
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-020.png",
+      "time": 26.266666666666666
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-021.png",
+      "time": 26.3
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-022.png",
+      "time": 26.966666666666665
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-023.png",
+      "time": 27
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-024.png",
+      "time": 28.533333333333335
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-025.png",
+      "time": 28.566666666666666
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-026.png",
+      "time": 30.933333333333334
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-027.png",
+      "time": 30.966666666666665
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-028.png",
+      "time": 31.4
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-029.png",
+      "time": 31.533333333333335
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-030.png",
+      "time": 31.566666666666666
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-031.png",
+      "time": 32
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-032.png",
+      "time": 32.63333333333333
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-033.png",
+      "time": 32.666666666666664
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-034.png",
+      "time": 33.96666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-035.png",
+      "time": 34
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-036.png",
+      "time": 36.96666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-037.png",
+      "time": 37
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-038.png",
+      "time": 38
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-039.png",
+      "time": 39.96666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-040.png",
+      "time": 40
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-041.png",
+      "time": 42.96666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-042.png",
+      "time": 43
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-043.png",
+      "time": 44
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-044.png",
+      "time": 44.733333333333334
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-045.png",
+      "time": 44.766666666666666
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-046.png",
+      "time": 45
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-047.png",
+      "time": 45.4
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-048.png",
+      "time": 45.43333333333333
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-049.png",
+      "time": 49.4
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-050.png",
+      "time": 49.43333333333333
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-051.png",
+      "time": 51.96666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-052.png",
+      "time": 52
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-053.png",
+      "time": 53
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-054.png",
+      "time": 55.96666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-055.png",
+      "time": 56
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-056.png",
+      "time": 59
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-057.png",
+      "time": 59.96666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-058.png",
+      "time": 60
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-059.png",
+      "time": 63.96666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-060.png",
+      "time": 64
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-061.png",
+      "time": 67.96666666666667
+    },
+    {
+      "file": "qa/emberwake-jetcut03b-comparison-final-062.png",
+      "time": 68
+    }
+  ],
+  "quoteProvenance": "Actual game dialogue quoted by VOICEVOX narrator; edited line breaks",
+  "sourceRate": 1,
+  "noFreeze": true,
+  "subjectiveListen": false,
+  "wholeDirectWatch": false,
+  "formal600Complete": false,
+  "published": false
+}

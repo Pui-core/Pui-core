@@ -1,0 +1,24 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {file,np,PC,EC,FC,run,parse,save,hash} from '../native.mjs';
+const plan=JSON.parse(fs.readFileSync(file('source/demo05/edit-plan.json'))),overrides=JSON.parse(fs.readFileSync(file('source/demo05/shot-overrides.json'))),stage='/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film',proof=path.join(stage,'projects/proof'),qa=path.join(stage,'qa/native-proof');fs.mkdirSync(proof,{recursive:true});fs.mkdirSync(qa,{recursive:true});
+const nativePath=p=>p.replace(/\\+/g,'/').replace(/^F:/i,'/mnt/f');
+function assertF(p){const local=path.resolve(nativePath(p));if(!local.startsWith(stage+'/')||!fs.existsSync(local))throw Error('Native dependency outside existing owned F stage '+p);return local;}
+const result={pc:[],ec:[],fc:[],fOnly:true,subjectiveListen:false,wholeDirectWatch:false};
+const resume=process.argv.includes('--resume');
+for(let i=1;i<=3;i++){
+ const original=path.join(stage,`projects/demo05-core-${i}.pcraft`),target=path.join(proof,`core-${i}-reopened.pcraft`),png=path.join(qa,`core-${i}.png`);if([target,png].some(fs.existsSync)&&(!resume||![target,png].every(fs.existsSync)))throw Error('Preserve native proof');
+ if(!fs.existsSync(target)){await run(PC,['run',np(original),'--out',np(target)],`demo05/native-pc-${i}-reopen.json`);await run(PC,['convert',np(target),np(png),'--format','png'],`demo05/native-pc-${i}-render.json`);}if(hash(png)!==hash(path.join(stage,`media/core-${i}.png`)))throw Error('Native PC roundtrip pixel PNG differs');result.pc.push({original,originalSha256:hash(original),reopened:target,reopenedSha256:hash(target),pngSha256:hash(png),identicalExport:true});
+}
+for(const s of plan.sections){
+ const name=`demo05-${overrides[s.id]?.revision||'v01'}-${s.id}`,original=path.join(stage,'projects',name+'.ecproj'),target=path.join(proof,name+'-reopened.ecproj'),png=path.join(qa,name+'.png');if([target,png].some(fs.existsSync)&&(!resume||![target,png].every(fs.existsSync)))throw Error('Preserve native proof');
+ const code="var a=[];for(var i=1;i<=app.project.numItems;i++){var q=app.project.item(i);if(q.file)a.push({id:q.id,path:q.file.fsName,missing:q.footageMissing});}writeLn(JSON.stringify(a));";
+ const opened=parse((fs.existsSync(target)?JSON.parse(fs.readFileSync(file(`qa/demo05/native-ec-${s.id}-reopen.json`))):await run(EC,['--project',np(original),'--save-as',np(target),'script','--eval',code,'--json'],`demo05/native-ec-${s.id}-reopen.json`)).stdout);if(!opened.ok)throw Error('EC native reopen');const inputs=JSON.parse(opened.output);for(const input of inputs){if(input.missing)throw Error('EC missing actual footage');input.localPath=assertF(input.path);input.sha256=hash(input.localPath);}
+ const info=parse((await run(EC,['--project',np(target),'info','--json'],`demo05/native-ec-${s.id}-info.json`)).stdout);if(info.activeComp.duration!==s.seconds||info.activeComp.width!==1920||info.activeComp.height!==1080)throw Error('EC native source settings');if(s.id==='close'&&info.project.items.some(i=>i.type==='Image Sequence'))throw Error('Closing diagrams must remain three stills');
+ if(!fs.existsSync(png))await run(EC,['--project',np(target),'render-frame','--comp','EMBERWAKE demo05 '+s.id,'--time','1','--out',np(png),'--json'],`demo05/native-ec-${s.id}-render.json`);result.ec.push({id:s.id,original,originalSha256:hash(original),reopened:target,reopenedSha256:hash(target),inputs,missing:0,pngSha256:hash(png)});
+}
+for(const kind of ['voice','bgm']){
+ const original=path.join(stage,'projects','emberwake-demo05-v01-'+kind+'.fcproj'),target=path.join(proof,'final-'+kind+'-reopened.fcproj'),png=path.join(qa,'final-'+kind+'.png');if(fs.existsSync(target)||fs.existsSync(png)&&!resume)throw Error('Preserve native proof');if(fs.existsSync(png))fs.renameSync(png,path.join(qa,'final-'+kind+'-first-render.png'));fs.copyFileSync(original,target);if(hash(original)!==hash(target))throw Error('Native proof project copy differs');
+ await run(FC,['--project',np(target),'--save','render','--seconds','460','--out',np(png)],`demo05/native-fc-${kind}-reopen-render.json`);const status=parse((await run(FC,['--project',np(target),'exec','media.status','{}'],`demo05/native-fc-${kind}-status.json`)).stdout),missing=parse((await run(FC,['--project',np(target),'exec','media.findMissing','{}'],`demo05/native-fc-${kind}-missing.json`)).stdout);if(!Array.isArray(status)||status.length!==8||status.some(i=>i.status!=='online')||missing.missing.length)throw Error('FC online/missing proof');for(const input of status)assertF(input.path);result.fc.push({kind,original,originalSha256:hash(original),reopened:target,reopenedSha256:hash(target),online:8,missing:0,pngSha256:hash(png)});
+}
+save('qa/demo05/f-native-proof.json',result);console.log(JSON.stringify({PhotoCraft:result.pc.length,EffectCraft:result.ec.length,FilmCraft:result.fc.length,fOnly:true,missing:0}));

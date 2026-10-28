@@ -1,0 +1,12 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/FilmCraft/filmcraft-cli.exe",
+  "args": [
+    "--save-as",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-firstcut04f.fcproj",
+    "run",
+    "-"
+  ],
+  "stdout": "{\"id\":\"file.newProject\",\"line\":1,\"ok\":true,\"result\":null}\n{\"id\":\"file.newSequence\",\"line\":2,\"ok\":true,\"result\":{\"sequence\":4}}\n{\"id\":\"file.import\",\"line\":3,\"ok\":true,\"result\":{\"errors\":[],\"items\":[5,6,7,8,9,10,11,12,13,14]}}\n",
+  "stderr": ""
+}

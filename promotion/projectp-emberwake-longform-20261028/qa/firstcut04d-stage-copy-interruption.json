@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-27T13:19:22.878Z",
+  "phase": "Copy voices before native relink/proof",
+  "observed": "fs.copyFileSync ENOMEM at firstcut04-u065.wav; destination absent",
+  "sourceMediaHidden": false,
+  "sourceMediaUntouched": true,
+  "nativeProofStarted": false,
+  "stageComplete": false,
+  "originalF04cPreserved": true,
+  "recovery": "Known own incomplete F stage only; SHA check existing files and copy with 64KiB streaming pipeline. No render restart or unrelated-process action."
+}

@@ -1,0 +1,41 @@
+{
+  "seconds": 606.4666666666667,
+  "narrator": "VOICEVOX:玄野武宏",
+  "voiceTargetLufs": -16,
+  "voiceTargetTruePeak": -2,
+  "musicBaseTargetLufs": -25,
+  "gameAudioRecorded": false,
+  "subjectiveListen": false,
+  "backgroundOnly": true,
+  "musicTailRepair": {
+    "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/audio/demo05-music-master.wav",
+    "originalSha256": "524e25fd48b63f4cd06a232ffc0b51680de0cb4676bbc6063ff23d275c6fc90d",
+    "missingSeconds": 0.08343766666666852,
+    "reason": "loudnorm/aresample output timestamps shortened the already-faded music-only stem. Append the83ms silent tail; completed voice and mix are preserved. The mixed master already lasts exactly the voice timeline."
+  },
+  "rightsRecheck": "/home/pui/tmp/projectp127-peritune-20261028/rights-recheck-20261028/official-mp3-sha-recheck.json",
+  "terms": "https://peritune.com/about/",
+  "license": "2026年3月以降の独自規約／ゲーム実プレイ背景BGMのみ／音源単体再配布・ContentID登録なし",
+  "outputs": {
+    "raw": {
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/audio/demo05-voice-raw.wav",
+      "sha256": "6bf50617fda6bddb951c059924639e82ca9840228ed1502a42b6a49958fa5c07",
+      "seconds": 606.466667
+    },
+    "voice": {
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/audio/demo05-voice-master.wav",
+      "sha256": "52b43054545b6d16252dc928ea5fa6c60aea7715781a5b15a83ca9e5823973fb",
+      "seconds": 606.466667
+    },
+    "music": {
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/audio/demo05-music-master-v02.wav",
+      "sha256": "4140f36d33949b37ec476fc0b325b134c30ab87504d3f1088d7c127dc7965305",
+      "seconds": 606.466667
+    },
+    "mix": {
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/audio/demo05-bgm-master.wav",
+      "sha256": "7699a1ca2871b873015b3c5db4443cb99e698f7435a4dc571ba656ea319f94b1",
+      "seconds": 606.466667
+    }
+  }
+}

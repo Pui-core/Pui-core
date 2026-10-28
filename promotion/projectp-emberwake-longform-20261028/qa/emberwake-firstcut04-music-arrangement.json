@@ -1,0 +1,23 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\floating-cities-candidate.mp3",
+    "-filter_complex",
+    "[0:a]atrim=start=8:duration=75,asetpts=PTS-STARTPTS,aresample=48000,volume=0.48,afade=t=in:d=1.2,afade=t=out:st=73.2:d=1.8,adelay=0S|0S[m0];[0:a]atrim=start=32:duration=109,asetpts=PTS-STARTPTS,aresample=48000,volume=0.38,afade=t=in:d=1.2,afade=t=out:st=107.2:d=1.8,adelay=3720000S|3720000S[m1];[0:a]atrim=start=4:duration=138,asetpts=PTS-STARTPTS,aresample=48000,volume=0.44,afade=t=in:d=1.2,afade=t=out:st=136.2:d=1.8,adelay=9120000S|9120000S[m2];[0:a]atrim=start=42:duration=101,asetpts=PTS-STARTPTS,aresample=48000,volume=0.38,afade=t=in:d=1.2,afade=t=out:st=99.2:d=1.8,adelay=15936000S|15936000S[m3];[0:a]atrim=start=12:duration=99,asetpts=PTS-STARTPTS,aresample=48000,volume=0.48,afade=t=in:d=1.2,afade=t=out:st=97.2:d=1.8,adelay=21011200S|21011200S[m4];[0:a]atrim=start=38:duration=80.86666666666667,asetpts=PTS-STARTPTS,aresample=48000,volume=0.43,afade=t=in:d=1.2,afade=t=out:st=79.06666666666668:d=1.8,adelay=25920000S|25920000S[m5];[m0][m1][m2][m3][m4][m5]amix=inputs=6:normalize=0,apad,atrim=duration=620.8666666666667[music]",
+    "-map",
+    "[music]",
+    "-ar",
+    "48000",
+    "-ac",
+    "2",
+    "-c:a",
+    "pcm_s24le",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\emberwake-firstcut04-music.wav"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

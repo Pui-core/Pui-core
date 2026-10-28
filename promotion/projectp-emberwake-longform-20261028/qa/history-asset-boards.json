@@ -1,0 +1,415 @@
+{
+  "historicalSource": "traveler_motion.png 0.8",
+  "currentSource": "traveler_detail64.png introduced0.9, retained in pinned0.12",
+  "historyCommits": [
+    "fc810ca",
+    "40aebcb725c8beed0a36d3d3681d2bd4fc16f440"
+  ],
+  "boards": [
+    {
+      "pose": "待機",
+      "index": 0,
+      "file": "media/traveler-art-history-0.png",
+      "sha256": "48c787243b39d164946e50ec2f3b37712d58a0c6f35e333f4710df58bd2925ff",
+      "native": "projects/traveler-art-history-0.pcraft",
+      "nativeSha256": "bf2ca301a471fe7480158fa2bc22a451e41490320de36220043387300f4af7d7",
+      "historicalCellSha256": "69902cbb99ce7d25e033c4bf67d51fb368e75403e5c77a53b589e565cf3eb49a",
+      "newCellSha256": "b60895e9555a80ee1bd944ba4709e0ccfd5546fdfe6ddeb932a6adea419a552b",
+      "commands": [
+        [
+          "shape.create",
+          {
+            "kind": "rect",
+            "rect": [
+              0,
+              0,
+              1920,
+              1080
+            ],
+            "fill": {
+              "gradient": {
+                "stops": [
+                  [
+                    0,
+                    "#102B35"
+                  ],
+                  [
+                    1,
+                    "#06131E"
+                  ]
+                ],
+                "angle": 25,
+                "style": "linear"
+              }
+            },
+            "name": "Deep world background"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 118,
+            "y": 74,
+            "text": "大きさを変えず、細部を描く。",
+            "font": "Meiryo",
+            "size": 58,
+            "weight": 700,
+            "color": "#F1DFC0",
+            "name": "Visual question"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 120,
+            "y": 170,
+            "text": "保存された原画の比較　／　待機",
+            "font": "Meiryo",
+            "size": 28,
+            "color": "#AAC8BF",
+            "name": "Actual historical material context"
+          }
+        ],
+        [
+          "file.placeEmbedded",
+          {
+            "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\traveler-old24-cells\\frame-00.png",
+            "scale": 100,
+            "fit": false,
+            "center": [
+              550,
+              615
+            ],
+            "smartObject": true
+          }
+        ],
+        [
+          "file.placeEmbedded",
+          {
+            "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\traveler-cells\\frame-00.png",
+            "scale": 100,
+            "fit": false,
+            "center": [
+              1270,
+              615
+            ],
+            "smartObject": true
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 360,
+            "y": 897,
+            "text": "0.8  原画24px",
+            "font": "Meiryo",
+            "size": 38,
+            "weight": 700,
+            "color": "#AAC8BF",
+            "name": "Historical source label"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 1080,
+            "y": 897,
+            "text": "0.9  再描画64px",
+            "font": "Meiryo",
+            "size": 38,
+            "weight": 700,
+            "color": "#EDB468",
+            "name": "Redrawn source label"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 118,
+            "y": 1005,
+            "text": "フード・顔・灯の輪郭  ／  ゲーム内の描画枠と画角は維持",
+            "font": "Meiryo",
+            "size": 26,
+            "color": "#AAC8BF",
+            "name": "Grounded display change"
+          }
+        ]
+      ]
+    },
+    {
+      "pose": "上昇",
+      "index": 16,
+      "file": "media/traveler-art-history-16.png",
+      "sha256": "11ab09107b4550b806842690a8956855ff6577d86a8b568a6df69f7f4efafd07",
+      "native": "projects/traveler-art-history-16.pcraft",
+      "nativeSha256": "788701879d448ca0be9781c8efc042922a03bd4f4365052215b34c9a3d1c64cc",
+      "historicalCellSha256": "f26efdd3c769e03efbfb72e3dabe4e4967096cd1650b80b50e35173511515d3a",
+      "newCellSha256": "a3a67822c38074852398781cd9dce11f4f452d4d53ed1711f37dc160163ab790",
+      "commands": [
+        [
+          "shape.create",
+          {
+            "kind": "rect",
+            "rect": [
+              0,
+              0,
+              1920,
+              1080
+            ],
+            "fill": {
+              "gradient": {
+                "stops": [
+                  [
+                    0,
+                    "#102B35"
+                  ],
+                  [
+                    1,
+                    "#06131E"
+                  ]
+                ],
+                "angle": 25,
+                "style": "linear"
+              }
+            },
+            "name": "Deep world background"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 118,
+            "y": 74,
+            "text": "大きさを変えず、細部を描く。",
+            "font": "Meiryo",
+            "size": 58,
+            "weight": 700,
+            "color": "#F1DFC0",
+            "name": "Visual question"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 120,
+            "y": 170,
+            "text": "保存された原画の比較　／　上昇",
+            "font": "Meiryo",
+            "size": 28,
+            "color": "#AAC8BF",
+            "name": "Actual historical material context"
+          }
+        ],
+        [
+          "file.placeEmbedded",
+          {
+            "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\traveler-old24-cells\\frame-16.png",
+            "scale": 100,
+            "fit": false,
+            "center": [
+              550,
+              615
+            ],
+            "smartObject": true
+          }
+        ],
+        [
+          "file.placeEmbedded",
+          {
+            "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\traveler-cells\\frame-16.png",
+            "scale": 100,
+            "fit": false,
+            "center": [
+              1270,
+              615
+            ],
+            "smartObject": true
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 360,
+            "y": 897,
+            "text": "0.8  原画24px",
+            "font": "Meiryo",
+            "size": 38,
+            "weight": 700,
+            "color": "#AAC8BF",
+            "name": "Historical source label"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 1080,
+            "y": 897,
+            "text": "0.9  再描画64px",
+            "font": "Meiryo",
+            "size": 38,
+            "weight": 700,
+            "color": "#EDB468",
+            "name": "Redrawn source label"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 118,
+            "y": 1005,
+            "text": "袖と裾、前後の脚  ／  ゲーム内の描画枠と画角は維持",
+            "font": "Meiryo",
+            "size": 26,
+            "color": "#AAC8BF",
+            "name": "Grounded display change"
+          }
+        ]
+      ]
+    },
+    {
+      "pose": "ダッシュ",
+      "index": 26,
+      "file": "media/traveler-art-history-26.png",
+      "sha256": "3bd702cf27da95fea5a36149250642d05ef860ab43e9ecfca0a65e7e7299c1bd",
+      "native": "projects/traveler-art-history-26.pcraft",
+      "nativeSha256": "6def45074626cb20426a2c1aa04342db3fbf7033ff9e11cbb9b1aab881f2510c",
+      "historicalCellSha256": "cd94f9755d8353ccfd097364143bec688dd45b2e08a11b932d88401ef59501ae",
+      "newCellSha256": "bb8a2ae6f5374c8f41f196972a13aec4120e6bc1896406de640e187817b89c86",
+      "commands": [
+        [
+          "shape.create",
+          {
+            "kind": "rect",
+            "rect": [
+              0,
+              0,
+              1920,
+              1080
+            ],
+            "fill": {
+              "gradient": {
+                "stops": [
+                  [
+                    0,
+                    "#102B35"
+                  ],
+                  [
+                    1,
+                    "#06131E"
+                  ]
+                ],
+                "angle": 25,
+                "style": "linear"
+              }
+            },
+            "name": "Deep world background"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 118,
+            "y": 74,
+            "text": "大きさを変えず、細部を描く。",
+            "font": "Meiryo",
+            "size": 58,
+            "weight": 700,
+            "color": "#F1DFC0",
+            "name": "Visual question"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 120,
+            "y": 170,
+            "text": "保存された原画の比較　／　ダッシュ",
+            "font": "Meiryo",
+            "size": 28,
+            "color": "#AAC8BF",
+            "name": "Actual historical material context"
+          }
+        ],
+        [
+          "file.placeEmbedded",
+          {
+            "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\traveler-old24-cells\\frame-26.png",
+            "scale": 100,
+            "fit": false,
+            "center": [
+              550,
+              615
+            ],
+            "smartObject": true
+          }
+        ],
+        [
+          "file.placeEmbedded",
+          {
+            "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\traveler-cells\\frame-26.png",
+            "scale": 100,
+            "fit": false,
+            "center": [
+              1270,
+              615
+            ],
+            "smartObject": true
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 360,
+            "y": 897,
+            "text": "0.8  原画24px",
+            "font": "Meiryo",
+            "size": 38,
+            "weight": 700,
+            "color": "#AAC8BF",
+            "name": "Historical source label"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 1080,
+            "y": 897,
+            "text": "0.9  再描画64px",
+            "font": "Meiryo",
+            "size": 38,
+            "weight": 700,
+            "color": "#EDB468",
+            "name": "Redrawn source label"
+          }
+        ],
+        [
+          "type.create",
+          {
+            "x": 118,
+            "y": 1005,
+            "text": "前傾する姿勢と手の位置  ／  ゲーム内の描画枠と画角は維持",
+            "font": "Meiryo",
+            "size": 26,
+            "color": "#AAC8BF",
+            "name": "Grounded display change"
+          }
+        ]
+      ]
+    }
+  ],
+  "nativePhotoCraft": true,
+  "oldGameplayRecorded": false,
+  "productModified": false,
+  "sourceDesignHasAiDerivedElements": true,
+  "thisMaterialPassImageGenerationUsed": false,
+  "visualReview": {
+    "status": "ALL_THREE_NATIVE_EXPORTS_DIRECTLY_VIEWED",
+    "sourceIndices": [
+      0,
+      16,
+      26
+    ],
+    "notOldGameplay": true
+  },
+  "formal600Complete": false
+}

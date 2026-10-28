@@ -1,0 +1,22 @@
+{
+  "exe": "/mnt/c/Program Files/FilmCraft/filmcraft-cli.exe",
+  "args": [
+    "--project",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\firstcut-04f\\projects\\emberwake-firstcut04f.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\":\"F:\\\\Videos\\\\ProjectP-EMBERWAKE-Longform-2026-10-28\\\\firstcut-04f\\\\videos\\\\emberwake-firstcut04f-f-native.mp4\",\"format\":\"h264\",\"audio\":true,\"audioCodec\":\"aac\",\"bitrateMode\":\"crf\",\"crf\":17,\"hardwareEncoding\":\"off\",\"gpuRendering\":\"off\",\"range\":\"entire\",\"wait\":true}"
+  ],
+  "pid": 2568277,
+  "parentPid": 2568268,
+  "birth": "18558212",
+  "started": "2026-10-27T15:14:29.296Z",
+  "maxSeconds": 1800,
+  "exit": 0,
+  "signal": null,
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"F:\\\\Videos\\\\ProjectP-EMBERWAKE-Longform-2026-10-28\\\\firstcut-04f\\\\videos\\\\emberwake-firstcut04f-f-native.mp4\",\n  \"result\": {\n    \"bytes\": 181406367,\n    \"frames\": 18626,\n    \"path\": \"F:\\\\Videos\\\\ProjectP-EMBERWAKE-Longform-2026-10-28\\\\firstcut-04f\\\\videos\\\\emberwake-firstcut04f-f-native.mp4\",\n    \"render_fps\": 39.25251137024037,\n    \"seconds\": 474.5174092\n  }\n}\n",
+  "stderr": "",
+  "ended": "2026-10-27T15:22:24.171Z",
+  "watchdogFired": false,
+  "interrupted": false
+}

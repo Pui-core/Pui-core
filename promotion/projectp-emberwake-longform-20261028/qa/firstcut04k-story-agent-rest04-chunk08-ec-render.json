@@ -1,0 +1,22 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\firstcut04k-story-agent-rest04-chunk08.ecproj",
+    "render",
+    "--comp",
+    "EMBERWAKE story quotations remaining episodes",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04k-story-agent-rest04-chunk08-picture.mov",
+    "--format",
+    "prores",
+    "--prores",
+    "4444",
+    "--audio",
+    "off",
+    "--json"
+  ],
+  "stdout": "{\"rendered\":[{\"comp\":\"EMBERWAKE story quotations remaining episodes\",\"output\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\media\\\\firstcut04k-story-agent-rest04-chunk08-picture.mov\",\"seconds\":33.2721798}]}\n",
+  "stderr": "EMBERWAKE story quotations remaining episodes → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04k-story-agent-rest04-chunk08-picture.mov (1920×1080, 791 frames, Custom)\ndone: EMBERWAKE story quotations remaining episodes → \\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\firstcut04k-story-agent-rest04-chunk08-picture.mov in 33.27s\n"
+}

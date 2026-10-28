@@ -1,0 +1,1 @@
+var ids=[28,4];for(var i=0;i<ids.length;i++){var id=ids[i];app.run('layer.addMask',{layer:id,shape:'rect',rect:[370,300,1180,668],mode:'Add'});app.run('prop.set',{layer:id,path:'transform/anchor',value:[960,634,0]});app.run('prop.set',{layer:id,path:'transform/scale',value:[70,70,100]});}writeLn(JSON.stringify({layers:ids.length}));

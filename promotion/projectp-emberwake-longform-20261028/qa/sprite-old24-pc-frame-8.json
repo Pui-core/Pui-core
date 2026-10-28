@@ -1,0 +1,22 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/PhotoCraft/photocraft-cli.exe",
+  "args": [
+    "run",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-emberwake-longform-20261028\\production\\product\\assets\\characters\\traveler_motion.png",
+    "--cmd",
+    "image.crop",
+    "--params",
+    "{\"x\":0,\"y\":24,\"width\":24,\"height\":24,\"deleteCroppedPixels\":true,\"contentAware\":false}",
+    "--cmd",
+    "image.imageSize",
+    "--params",
+    "{\"width\":512,\"height\":512,\"resample\":\"nearest\"}",
+    "--out",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\native-source-assets-127-old24\\traveler-08.png",
+    "--format",
+    "png"
+  ],
+  "stdout": "{\"command\":\"image.crop\",\"result\":{\"documentHeight\":24,\"documentWidth\":24,\"height\":24,\"resolution\":72.0,\"width\":24,\"x\":0,\"y\":24}}\n{\"command\":\"image.imageSize\",\"result\":{\"height\":512,\"width\":512}}\n",
+  "stderr": ""
+}

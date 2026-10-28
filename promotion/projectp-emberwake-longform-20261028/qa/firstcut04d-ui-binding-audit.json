@@ -1,0 +1,631 @@
+{
+  "at": "2026-10-27T13:27:41.614Z",
+  "reportCorrection": "55.8s is episode1 actual completion/result UI containing the three outro quotes, not a notebook page. Prior parent message wording corrected.",
+  "bindings": [
+    {
+      "unit": "u004",
+      "output": [
+        613,
+        622
+      ],
+      "sourceFile": "media/ep01-game.mp4",
+      "sourceFrames": [
+        217,
+        226
+      ],
+      "actualEpisode": 1,
+      "originalCarriedEpisodeField": 1,
+      "expectedText": "当たり前だろ。絶対迎えに行く。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 145,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    },
+    {
+      "unit": "u009",
+      "output": [
+        1587,
+        1602
+      ],
+      "sourceFile": "media/ep01-game.mp4",
+      "sourceFrames": [
+        1529,
+        1544
+      ],
+      "actualEpisode": 1,
+      "originalCarriedEpisodeField": 2,
+      "expectedText": "あの公園で、何をしてたんだっけ。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1373,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u010",
+      "output": [
+        1674,
+        1676
+      ],
+      "sourceFile": "media/ep01-game.mp4",
+      "sourceFrames": [
+        1544,
+        1546
+      ],
+      "actualEpisode": 1,
+      "originalCarriedEpisodeField": 2,
+      "expectedText": "……私の名前は、まだわかる？",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1373,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u011",
+      "output": [
+        1748,
+        1759
+      ],
+      "sourceFile": "media/ep01-game.mp4",
+      "sourceFrames": [
+        1546,
+        1557
+      ],
+      "actualEpisode": 1,
+      "originalCarriedEpisodeField": 2,
+      "expectedText": "ルミ。君だけは、忘れない。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1373,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u029",
+      "output": [
+        4709,
+        4735
+      ],
+      "sourceFile": "media/ep02-game.mp4",
+      "sourceFrames": [
+        267,
+        293
+      ],
+      "actualEpisode": 2,
+      "originalCarriedEpisodeField": 10,
+      "expectedText": "昔、暗い道ではそうして呼び合ったね。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 195,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    },
+    {
+      "unit": "u031",
+      "output": [
+        4878,
+        4894
+      ],
+      "sourceFile": "media/ep02-game.mp4",
+      "sourceFrames": [
+        1450,
+        1466
+      ],
+      "actualEpisode": 2,
+      "originalCarriedEpisodeField": 10,
+      "expectedText": "今は、ここにいるっていう返事でいいよ。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1367,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u036",
+      "output": [
+        5702,
+        5730
+      ],
+      "sourceFile": "media/ep03-game.mp4",
+      "sourceFrames": [
+        272,
+        300
+      ],
+      "actualEpisode": 3,
+      "originalCarriedEpisodeField": 11,
+      "expectedText": "帰り道も明るくしとく。ふたりで帰るんだ。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 200,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    },
+    {
+      "unit": "u038",
+      "output": [
+        5904,
+        5921
+      ],
+      "sourceFile": "media/ep03-game.mp4",
+      "sourceFrames": [
+        1462,
+        1479
+      ],
+      "actualEpisode": 3,
+      "originalCarriedEpisodeField": 11,
+      "expectedText": "道だけじゃ、思い出せないものもあるよ。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1306,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u039",
+      "output": [
+        5993,
+        6005
+      ],
+      "sourceFile": "media/ep03-game.mp4",
+      "sourceFrames": [
+        1479,
+        1491
+      ],
+      "actualEpisode": 3,
+      "originalCarriedEpisodeField": 11,
+      "expectedText": "それなら、帰ってから教えてくれ。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1306,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u040",
+      "output": [
+        6077,
+        6089
+      ],
+      "sourceFile": "media/ep03-game.mp4",
+      "sourceFrames": [
+        1688,
+        1700
+      ],
+      "actualEpisode": 3,
+      "originalCarriedEpisodeField": 11,
+      "expectedText": "夕暮れの街をルミと並んで帰った道。",
+      "observedState": "story",
+      "observedEvent": "actual-notebook-page",
+      "observedFrame": 1616,
+      "quotePresent": true,
+      "uiClass": "actual-notebook-page"
+    },
+    {
+      "unit": "u046",
+      "output": [
+        7097,
+        7117
+      ],
+      "sourceFile": "media/ep04-game.mp4",
+      "sourceFrames": [
+        152,
+        172
+      ],
+      "actualEpisode": 4,
+      "originalCarriedEpisodeField": 4,
+      "expectedText": "ここで泣いた日、何も聞かなかったよね。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 80,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    },
+    {
+      "unit": "u047",
+      "output": [
+        7189,
+        7193
+      ],
+      "sourceFile": "media/ep04-game.mp4",
+      "sourceFrames": [
+        277,
+        281
+      ],
+      "actualEpisode": 4,
+      "originalCarriedEpisodeField": 4,
+      "expectedText": "話せるまで、待つつもりだった。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 205,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    },
+    {
+      "unit": "u050",
+      "output": [
+        7570,
+        7571
+      ],
+      "sourceFile": "media/ep04-game.mp4",
+      "sourceFrames": [
+        1509,
+        1510
+      ],
+      "actualEpisode": 4,
+      "originalCarriedEpisodeField": 4,
+      "expectedText": "雨の音しか、思い出せない。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1425,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u051",
+      "output": [
+        7643,
+        7664
+      ],
+      "sourceFile": "media/ep04-game.mp4",
+      "sourceFrames": [
+        1510,
+        1531
+      ],
+      "actualEpisode": 4,
+      "originalCarriedEpisodeField": 4,
+      "expectedText": "隣に座ってくれただけで、よかったんだ。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1425,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u055",
+      "output": [
+        8098,
+        8120
+      ],
+      "sourceFile": "media/ep05-game.mp4",
+      "sourceFrames": [
+        157,
+        179
+      ],
+      "actualEpisode": 5,
+      "originalCarriedEpisodeField": 5,
+      "expectedText": "笑わせようとして、灰を顔につけたでしょ。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 85,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    },
+    {
+      "unit": "u058",
+      "output": [
+        8360,
+        8376
+      ],
+      "sourceFile": "media/ep05-game.mp4",
+      "sourceFrames": [
+        1517,
+        1533
+      ],
+      "actualEpisode": 5,
+      "originalCarriedEpisodeField": 5,
+      "expectedText": "何がおかしかったのか、もうわからない。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1433,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u059",
+      "output": [
+        8448,
+        8460
+      ],
+      "sourceFile": "media/ep05-game.mp4",
+      "sourceFrames": [
+        1533,
+        1545
+      ],
+      "actualEpisode": 5,
+      "originalCarriedEpisodeField": 5,
+      "expectedText": "笑ったことまで、嘘にはならないよ。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1433,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u063",
+      "output": [
+        8766,
+        8771
+      ],
+      "sourceFile": "media/ep06-game.mp4",
+      "sourceFrames": [
+        162,
+        167
+      ],
+      "actualEpisode": 6,
+      "originalCarriedEpisodeField": 6,
+      "expectedText": "壁に、ふたりの影が残ってる。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 90,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    },
+    {
+      "unit": "u065",
+      "output": [
+        8952,
+        8972
+      ],
+      "sourceFile": "media/ep06-game.mp4",
+      "sourceFrames": [
+        1519,
+        1539
+      ],
+      "actualEpisode": 6,
+      "originalCarriedEpisodeField": 6,
+      "expectedText": "俺が会いに行くのは、どんな顔の子だっけ。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1435,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u066",
+      "output": [
+        9044,
+        9070
+      ],
+      "sourceFile": "media/ep06-game.mp4",
+      "sourceFrames": [
+        1539,
+        1565
+      ],
+      "actualEpisode": 6,
+      "originalCarriedEpisodeField": 6,
+      "expectedText": "顔がわからなくても、待ってる人はいるよ。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1435,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u072",
+      "output": [
+        9955,
+        9958
+      ],
+      "sourceFile": "media/ep07-game.mp4",
+      "sourceFrames": [
+        292,
+        295
+      ],
+      "actualEpisode": 7,
+      "originalCarriedEpisodeField": 7,
+      "expectedText": "鐘楼へ行け。あの子を助けろ。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 220,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    },
+    {
+      "unit": "u073",
+      "output": [
+        10030,
+        10056
+      ],
+      "sourceFile": "media/ep07-game.mp4",
+      "sourceFrames": [
+        417,
+        443
+      ],
+      "actualEpisode": 7,
+      "originalCarriedEpisodeField": 7,
+      "expectedText": "書いたあなたは、今のあなたを信じたんだね。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 345,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    },
+    {
+      "unit": "u074",
+      "output": [
+        10128,
+        10141
+      ],
+      "sourceFile": "media/ep07-game.mp4",
+      "sourceFrames": [
+        1538,
+        1551
+      ],
+      "actualEpisode": 7,
+      "originalCarriedEpisodeField": 7,
+      "expectedText": "どうして助けたいのか、説明できない。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1454,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u075",
+      "output": [
+        10213,
+        10228
+      ],
+      "sourceFile": "media/ep07-game.mp4",
+      "sourceFrames": [
+        1551,
+        1566
+      ],
+      "actualEpisode": 7,
+      "originalCarriedEpisodeField": 7,
+      "expectedText": "説明できなくても、ここまで来てくれた。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1454,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u083",
+      "output": [
+        11471,
+        11479
+      ],
+      "sourceFile": "media/ep08-game.mp4",
+      "sourceFrames": [
+        422,
+        430
+      ],
+      "actualEpisode": 8,
+      "originalCarriedEpisodeField": 8,
+      "expectedText": "迎えに行くって書いたのは、俺だ。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 350,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    },
+    {
+      "unit": "u092",
+      "output": [
+        12375,
+        12402
+      ],
+      "sourceFile": "media/ep09-game.mp4",
+      "sourceFrames": [
+        427,
+        454
+      ],
+      "actualEpisode": 9,
+      "originalCarriedEpisodeField": 9,
+      "expectedText": "ここにいる、だったな。ひとりじゃない。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 355,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    },
+    {
+      "unit": "u115",
+      "output": [
+        16898,
+        16918
+      ],
+      "sourceFile": "media/ep09-game.mp4",
+      "sourceFrames": [
+        1531,
+        1551
+      ],
+      "actualEpisode": 9,
+      "originalCarriedEpisodeField": 9,
+      "expectedText": "隣にいたのが、いつのことかもわからない。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1447,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u116",
+      "output": [
+        16990,
+        16999
+      ],
+      "sourceFile": "media/ep09-game.mp4",
+      "sourceFrames": [
+        1551,
+        1560
+      ],
+      "actualEpisode": 9,
+      "originalCarriedEpisodeField": 9,
+      "expectedText": "それでも、待たせたままにはできない。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1447,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u118",
+      "output": [
+        17355,
+        17366
+      ],
+      "sourceFile": "media/ep11-game.mp4",
+      "sourceFrames": [
+        1482,
+        1493
+      ],
+      "actualEpisode": 11,
+      "originalCarriedEpisodeField": 12,
+      "expectedText": "朝が来たら、空の色を教えてくれ。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1470,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u118",
+      "output": [
+        17366,
+        17369
+      ],
+      "sourceFile": "media/ep11-game.mp4",
+      "sourceFrames": [
+        1493,
+        1496
+      ],
+      "actualEpisode": 11,
+      "originalCarriedEpisodeField": 13,
+      "expectedText": "朝が来たら、空の色を教えてくれ。",
+      "observedState": "result",
+      "observedEvent": "actual-result",
+      "observedFrame": 1470,
+      "quotePresent": true,
+      "uiClass": "actual-result-page"
+    },
+    {
+      "unit": "u121",
+      "output": [
+        17842,
+        17865
+      ],
+      "sourceFile": "media/ep13-game.mp4",
+      "sourceFrames": [
+        447,
+        470
+      ],
+      "actualEpisode": 13,
+      "originalCarriedEpisodeField": 13,
+      "expectedText": "待っている人がいる。それは、わかる。",
+      "observedState": "story",
+      "observedEvent": "actual-intro-page",
+      "observedFrame": 375,
+      "quotePresent": true,
+      "uiClass": "actual-intro-page"
+    }
+  ],
+  "allQuoteTextPresent": true,
+  "metadataEpisodeCorrected": true,
+  "renderSourceOrTimingChanged": false,
+  "finalBoundaryCheckPending": true,
+  "wholeDirectWatch": false
+}

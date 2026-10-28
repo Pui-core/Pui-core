@@ -1,0 +1,1 @@
+var a=[{"id":177,"x":960},{"id":153,"x":900}];for(var i=0;i<a.length;i++){app.run('prop.set',{layer:a[i].id,path:'transform/anchor',value:[a[i].x,800,0]});app.run('prop.set',{layer:a[i].id,path:'transform/position',value:[733,625,0]});app.run('prop.set',{layer:a[i].id,path:'transform/scale',value:[170,170,100]});}writeLn(JSON.stringify(a));

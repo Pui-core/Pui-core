@@ -1,0 +1,31 @@
+{
+  "retired": {
+    "size": [
+      100,
+      9
+    ],
+    "scale": "area",
+    "positiveControlDetected": false,
+    "reason": "Averaging the thin title glyphs does not retain their color threshold; no gameplay-clear claim was made."
+  },
+  "current": {
+    "size": [
+      200,
+      18
+    ],
+    "scale": "neighbor",
+    "positiveControlRequired": true,
+    "threshold": 100,
+    "scope": "Cropped gameplay only; intentional 100% frame retry/title UI excluded"
+  },
+  "qualityPassFromRetiredAttempt": false,
+  "intermediate": {
+    "threshold": 10,
+    "rawSamples": 11619,
+    "flags": 571,
+    "ordinaryHudColorsMaximumObserved": 53,
+    "knownResultTitleControl": 203,
+    "intentionalFullFrameRetryTitleFramesAtOrAbove100": 17,
+    "firstIntermediateAllClearClaim": false
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "source": "/home/pui/tmp/projectp127-content-inventory-20261028",
+  "images": [
+    {
+      "file": "qa/firstcut04k-source-proof/branch-a.png",
+      "sha256": "23f80071760af2525b5aa294eb4cb10ad6af57d8f8d3051f3278d019db9fd00f"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/branch-b.png",
+      "sha256": "b5c52360c41cfc68e8929e2246836e5fd778a3df927e26cebe61e267bc67669d"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/branch-merge.png",
+      "sha256": "30d0740c0ddf1b50b5f8544348bf69236215a353dbc4f2c10acac95041b02ac2"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/long-end.png",
+      "sha256": "1b7c92a5b38cebc304839b0857a05c0951f1214b560ae5e3535903d23ca4ea6c"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/long-start.png",
+      "sha256": "c4477eef116aa2e9049248d6d4cf97e73c004c38f201a59242aeddbeb62646bb"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/normal-1.png",
+      "sha256": "70ebae45bc93979da3e08ac2ea9ad757d5ccf40a64ceb024d9d1cd8c3a5619b8"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/normal-2.png",
+      "sha256": "00c05f401e1ae03a4c4041fb65a61c5bd3e484b45a59c947a08215a30a76886f"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/normal-3.png",
+      "sha256": "4f9c1f8cdffc9cf69cecd8436b34d73bd00591c1e117e953aac3a5813a94f342"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/normal-merge.png",
+      "sha256": "675ce27b4d305c98f84fa52f27fad2a2dbcbcb5c9d55f800e56fc9b2deca536b"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/press-frame-200.png",
+      "sha256": "6fcac80ff218e3528c82f63c3fbe9d7d0a3f631493b389ae18dee86cdad0ac94"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/press-frame-205.png",
+      "sha256": "84ef2f1f57c8328f82ec35aeee4e4f78dcf027fd802dfb23ade9bc8d6875e19a"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/press-frame-210.png",
+      "sha256": "53f3dc6ef18fd18b5c11f6e71644b8b6a564427bcafdaa9ea5e4e7c0ea646a1e"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/press-frame-215.png",
+      "sha256": "47c2738f68681d4e67099d7b178db9f5eee56ea2dc1daa9027b09440864efa36"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/press-frame-220.png",
+      "sha256": "9088182d1308814c521723bdb557e45d392dbaa4b67f31cf00828876d785576d"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/press-frame-404.png",
+      "sha256": "0f3761624625050c9ba2e16538fbfcbbc26a790b0734d7d83fc2f2861293dce8"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/press-frame-410.png",
+      "sha256": "02358c964d2c2e5df138d773462ca89c87e1183bce603d428db6aaf0d1cebac9"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/press-frame-415.png",
+      "sha256": "2f8dacd4b334931759fc3dd68399f3a9d47201d07b2cfaddefe1525d74332acf"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/press-frame-420.png",
+      "sha256": "34efe9a240b75e1df5d5162200359fe3933343b56b860bd79a3ea16500b3ecb6"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/press-frame-425.png",
+      "sha256": "97f7251dc24b018335b06a8fca38a6770a9ee61035908af9f3dd648bd6e6fd1e"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/short-end.png",
+      "sha256": "beaad4a4e1126dd485965bd48f99353dcca3f34a186be605449dfe1a56f7e130"
+    },
+    {
+      "file": "qa/firstcut04k-source-proof/short-start.png",
+      "sha256": "799310a07bc164a52f5ffc33a64da970150f31fa0916f200e76d16351afad11b"
+    }
+  ],
+  "observations": [
+    "Subagent viewed ep02 normal and branch merge and receipt confirms identical footing rectangle",
+    "Subagent viewed ep01 short and long sampled sequences and receipt confirms input and result",
+    "Side-by-side is planned; not yet rendered",
+    "Auto-input, game audio unrecorded and in-game timer is not an RTA result"
+  ],
+  "scope": "sampled actual source frames, not full direct watch",
+  "published": false
+}

@@ -1,0 +1,306 @@
+{
+  "name": "emberwake-firstcut04k-opening-pilot04",
+  "comp": "EMBERWAKE 04k opening pilot",
+  "duration": 20.8,
+  "frames": 624,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "actual short press fall",
+      "file": "media/ep01-replay-controls01-game.mp4",
+      "sourceStart": 196,
+      "start": 0,
+      "end": 60,
+      "camera": {
+        "anchor": [
+          480,
+          780
+        ],
+        "position": [
+          733,
+          645
+        ],
+        "scale": 160
+      }
+    },
+    {
+      "id": "first episode actual movement",
+      "file": "media/ep01-game.mp4",
+      "sourceStart": 395,
+      "start": 60,
+      "end": 201,
+      "camera": {
+        "anchor": [
+          500,
+          780
+        ],
+        "position": [
+          733,
+          645
+        ],
+        "scale": 160
+      }
+    },
+    {
+      "id": "actual held jump",
+      "file": "media/ep01-replay-controls01-game.mp4",
+      "sourceStart": 400,
+      "start": 201,
+      "end": 261,
+      "camera": {
+        "anchor": [
+          960,
+          780
+        ],
+        "position": [
+          733,
+          645
+        ],
+        "scale": 160
+      }
+    },
+    {
+      "id": "actual normal route",
+      "file": "media/ep02-normal-route01-game.mp4",
+      "sourceStart": 839,
+      "start": 261,
+      "end": 321,
+      "camera": {
+        "anchor": [
+          960,
+          780
+        ],
+        "position": [
+          733,
+          645
+        ],
+        "scale": 160
+      }
+    },
+    {
+      "id": "actual branch",
+      "file": "media/ep02-game.mp4",
+      "sourceStart": 846,
+      "start": 321,
+      "end": 381,
+      "camera": {
+        "anchor": [
+          960,
+          780
+        ],
+        "position": [
+          733,
+          645
+        ],
+        "scale": 160
+      }
+    },
+    {
+      "id": "actual 2-way merge comparison",
+      "file": "videos/emberwake-firstcut04k-route-pilot03.mp4",
+      "sourceStart": 147,
+      "start": 381,
+      "end": 441,
+      "camera": {
+        "anchor": [
+          960,
+          540
+        ],
+        "position": [
+          960,
+          540
+        ],
+        "scale": 100
+      }
+    },
+    {
+      "id": "first episode backdrop quote1",
+      "file": "media/ep01-game.mp4",
+      "sourceStart": 620,
+      "start": 441,
+      "end": 546,
+      "camera": {
+        "anchor": [
+          900,
+          740
+        ],
+        "position": [
+          733,
+          645
+        ],
+        "scale": 160
+      }
+    },
+    {
+      "id": "first episode backdrop quote2",
+      "file": "media/ep01-game.mp4",
+      "sourceStart": 725,
+      "start": 546,
+      "end": 624,
+      "camera": {
+        "anchor": [
+          960,
+          740
+        ],
+        "position": [
+          733,
+          645
+        ],
+        "scale": 160
+      }
+    }
+  ],
+  "voices": [
+    {
+      "id": "u001",
+      "text": "クリアしたのに、公園で過ごした午後を忘れている。助けて進むと、何を失うのでしょうか。",
+      "at": 0.1,
+      "windowEnd": 6.5,
+      "quote": false,
+      "reuseFrom": {
+        "spec": "source/firstcut04-voice-measured.json",
+        "id": "u001"
+      }
+    },
+    {
+      "id": "u002",
+      "text": "失敗した時と、新しい話を終えた時。それから、違う道を選んだ時。実際の結果と手帳を比べます。",
+      "at": 6.7,
+      "windowEnd": 14.6,
+      "quote": false,
+      "reuseFrom": {
+        "spec": "source/firstcut04-voice-measured.json",
+        "id": "u002"
+      }
+    },
+    {
+      "id": "u003",
+      "text": "アッシュ、覚えてる？ あの日の約束。",
+      "at": 14.7,
+      "windowEnd": 18.1,
+      "quote": true,
+      "reuseFrom": {
+        "spec": "source/firstcut04-voice-measured.json",
+        "id": "u003"
+      }
+    },
+    {
+      "id": "u004",
+      "text": "当たり前だろ。絶対迎えに行く。",
+      "at": 18.2,
+      "windowEnd": 20.8,
+      "quote": true,
+      "reuseFrom": {
+        "spec": "source/firstcut04-voice-measured.json",
+        "id": "u004"
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "id": "opening",
+      "lines": [
+        "助けて、忘れていく。"
+      ],
+      "x": 118,
+      "y": 96,
+      "size": 74,
+      "at": 0,
+      "end": 6.7,
+      "maxWidth": 1600
+    },
+    {
+      "id": "lost",
+      "lines": [
+        "失った記憶",
+        "ルミと走り回った午後"
+      ],
+      "x": 118,
+      "y": 235,
+      "size": 52,
+      "lineHeight": 76,
+      "at": 0.7,
+      "end": 6.7,
+      "maxWidth": 1500
+    },
+    {
+      "id": "fall",
+      "lines": [
+        "落ちたら？"
+      ],
+      "x": 118,
+      "y": 100,
+      "size": 68,
+      "at": 6.7,
+      "end": 10.7,
+      "maxWidth": 1550
+    },
+    {
+      "id": "paths",
+      "lines": [
+        "違う道を選んだら？"
+      ],
+      "x": 118,
+      "y": 100,
+      "size": 68,
+      "at": 10.7,
+      "end": 12.7,
+      "maxWidth": 1550
+    },
+    {
+      "id": "quote1",
+      "lines": [
+        "アッシュ、覚えてる？",
+        "あの日の約束。"
+      ],
+      "x": 118,
+      "y": 160,
+      "size": 72,
+      "lineHeight": 98,
+      "at": 14.7,
+      "end": 18.2,
+      "maxWidth": 1550
+    },
+    {
+      "id": "quote2",
+      "lines": [
+        "当たり前だろ。",
+        "絶対迎えに行く。"
+      ],
+      "x": 118,
+      "y": 160,
+      "size": 72,
+      "lineHeight": 98,
+      "at": 18.2,
+      "end": 20.8,
+      "maxWidth": 1550
+    },
+    {
+      "id": "quote-source",
+      "lines": [
+        "実ゲームの台詞／編集で表示"
+      ],
+      "x": 118,
+      "y": 1015,
+      "size": 25,
+      "at": 14.7,
+      "end": 20.8,
+      "maxWidth": 1550
+    }
+  ],
+  "previewTimes": [
+    0.5,
+    3,
+    7.4,
+    9.4,
+    11.4,
+    13.4,
+    15.5,
+    19
+  ],
+  "evidence": "Actual ep01 memory/quotes; actual ep01 short and long presses; actual ep02 normal and branch landing. Auto-input; no game audio captured.",
+  "scope": "20.8秒の冒頭試作であり、10分本編ではない。",
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "published": false
+}

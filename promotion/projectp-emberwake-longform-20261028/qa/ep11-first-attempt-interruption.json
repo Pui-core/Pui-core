@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "attempt": "ep11-full01",
+  "status": "INCOMPLETE_EXTERNAL_SIGTERM_PRESERVED",
+  "nativeCaptureReceiptPresent": false,
+  "partialFrames": 1532,
+  "lastEvent": {
+    "label": "actual-result",
+    "frame": 1470,
+    "state": "result",
+    "hearths": [
+      0,
+      1,
+      2
+    ]
+  },
+  "sourceCoreFilesChecked": 72,
+  "changedCore": [],
+  "wallBoundReached": false,
+  "signal": "SIGTERM",
+  "runnerReceivedSignal": "SIGTERM",
+  "signalMeaning": "Generic SIGTERM observed; original ownerStopSignal field is not evidence of an owner instruction",
+  "knownSignalChain": "Range received SIGTERM, forwarded to current runner, which forwarded to its owned Xvfb process group",
+  "originalSender": null,
+  "observedOwnerStopInstruction": false,
+  "ownedProcessGroupConfirmedGone": true,
+  "originalLaunchReceiptSha256": "6bec646f44edfcf38bbe1c7cb4af4058b26bb6719ee757b2e118f7d483eff2cb",
+  "interruptionObservationSha256": "de075227fca4c854858903aa719e212f05aba40effaed99812ac40f78fb9d877",
+  "automaticRetry": false,
+  "manualReplacementAttempt": "ep11-full02",
+  "replacementSuccess": null,
+  "oldAttemptModified": false
+}

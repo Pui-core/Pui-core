@@ -1,0 +1,58 @@
+{
+  "track": "Floating Cities",
+  "artist": "Kevin MacLeod",
+  "sourceSha256": "e7365652410d1fbc8a14d87537855d625c1a5fa8b7de8c626f47c13256ef2ddd",
+  "license": "CC BY4.0",
+  "conditions": "qa/free-bgm-candidate.json",
+  "spans": [
+    {
+      "at": 0,
+      "source": 8,
+      "duration": 75,
+      "gain": 0.48
+    },
+    {
+      "at": 77.5,
+      "source": 32,
+      "duration": 109,
+      "gain": 0.38
+    },
+    {
+      "at": 190,
+      "source": 4,
+      "duration": 138,
+      "gain": 0.44
+    },
+    {
+      "at": 332,
+      "source": 42,
+      "duration": 101,
+      "gain": 0.38
+    },
+    {
+      "at": 437.7333333333,
+      "source": 12,
+      "duration": 99,
+      "gain": 0.48
+    },
+    {
+      "at": 540,
+      "source": 38,
+      "duration": 80.86666666666667,
+      "gain": 0.43
+    }
+  ],
+  "ducking": {
+    "threshold": 0.025,
+    "ratio": 4,
+    "attackMs": 18,
+    "releaseMs": 320
+  },
+  "arrangedSha256": "86ecdb1adc6c81eb8af80c0feb19201e0b5372bb7f4818de1d1817649c510e5b",
+  "duckedSha256": "4a0583a7113694ef65fa6787a6c45e957245f84d4f6ea2586281beaa98250ac8",
+  "referenceSha256": "2a9c4d1afd95bbf3c2cae519da759b4d9afb8841c72d7c98a6af668d57e543fa",
+  "subjectiveListen": false,
+  "creativeAdoption": false,
+  "recordedGameSound": false,
+  "addedGameSfx": false
+}

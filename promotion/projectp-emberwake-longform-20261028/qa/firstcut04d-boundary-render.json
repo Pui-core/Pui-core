@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\videos\\emberwake-firstcut04d-f-native.mp4",
+    "-vf",
+    "select=eq(n\\,612)+eq(n\\,613)+eq(n\\,614)+eq(n\\,621)+eq(n\\,622)+eq(n\\,831)+eq(n\\,832)+eq(n\\,833)+eq(n\\,878)+eq(n\\,879)+eq(n\\,1586)+eq(n\\,1587)+eq(n\\,1588)+eq(n\\,1601)+eq(n\\,1602)+eq(n\\,1673)+eq(n\\,1674)+eq(n\\,1675)+eq(n\\,1676)+eq(n\\,1677)+eq(n\\,1747)+eq(n\\,1748)+eq(n\\,1749)+eq(n\\,1758)+eq(n\\,1759)+eq(n\\,2489)+eq(n\\,2490)+eq(n\\,2491)+eq(n\\,2509)+eq(n\\,2510)+eq(n\\,3746)+eq(n\\,3747)+eq(n\\,3748)+eq(n\\,3985)+eq(n\\,3986)+eq(n\\,4708)+eq(n\\,4709)+eq(n\\,4710)+eq(n\\,4734)+eq(n\\,4735)+eq(n\\,4877)+eq(n\\,4878)+eq(n\\,4879)+eq(n\\,4893)+eq(n\\,4894)+eq(n\\,5701)+eq(n\\,5702)+eq(n\\,5703)+eq(n\\,5729)+eq(n\\,5730)+eq(n\\,5903)+eq(n\\,5904)+eq(n\\,5905)+eq(n\\,5920)+eq(n\\,5921)+eq(n\\,5992)+eq(n\\,5993)+eq(n\\,5994)+eq(n\\,6004)+eq(n\\,6005)+eq(n\\,6076)+eq(n\\,6077)+eq(n\\,6078)+eq(n\\,6088)+eq(n\\,6089)+eq(n\\,6526)+eq(n\\,6527)+eq(n\\,6528)+eq(n\\,6745)+eq(n\\,6746)+eq(n\\,7096)+eq(n\\,7097)+eq(n\\,7098)+eq(n\\,7116)+eq(n\\,7117)+eq(n\\,7188)+eq(n\\,7189)+eq(n\\,7190)+eq(n\\,7192)+eq(n\\,7193)+eq(n\\,7470)+eq(n\\,7471)+eq(n\\,7472)+eq(n\\,7497)+eq(n\\,7498)+eq(n\\,7568)+eq(n\\,7569)+eq(n\\,7570)+eq(n\\,7571)+eq(n\\,7572)+eq(n\\,7642)+eq(n\\,7643)+eq(n\\,7644)+eq(n\\,7663)+eq(n\\,7664)+eq(n\\,8097)+eq(n\\,8098)+eq(n\\,8099)+eq(n\\,8119)+eq(n\\,8120)+eq(n\\,8359)+eq(n\\,8360)+eq(n\\,8361)+eq(n\\,8375)+eq(n\\,8376)+eq(n\\,8447)+eq(n\\,8448)+eq(n\\,8449)+eq(n\\,8459)+eq(n\\,8460)+eq(n\\,8669)+eq(n\\,8670)+eq(n\\,8671)+eq(n\\,8693)+eq(n\\,8694)+eq(n\\,8765)+eq(n\\,8766)+eq(n\\,8767)+eq(n\\,8770)+eq(n\\,8771)+eq(n\\,8951)+eq(n\\,8952)+eq(n\\,8953)+eq(n\\,8971)+eq(n\\,8972)+eq(n\\,9043)+eq(n\\,9044)+eq(n\\,9045)+eq(n\\,9069)+eq(n\\,9070)+eq(n\\,9539)+eq(n\\,9540)+eq(n\\,9541)+eq(n\\,9568)+eq(n\\,9569)+eq(n\\,9953)+eq(n\\,9954)+eq(n\\,9955)+eq(n\\,9957)+eq(n\\,9958)+eq(n\\,10029)+eq(n\\,10030)+eq(n\\,10031)+eq(n\\,10055)+eq(n\\,10056)+eq(n\\,10127)+eq(n\\,10128)+eq(n\\,10129)+eq(n\\,10140)+eq(n\\,10141)+eq(n\\,10212)+eq(n\\,10213)+eq(n\\,10214)+eq(n\\,10227)+eq(n\\,10228)+eq(n\\,10940)+eq(n\\,10941)+eq(n\\,10942)+eq(n\\,10967)+eq(n\\,10968)+eq(n\\,11470)+eq(n\\,11471)+eq(n\\,11472)+eq(n\\,11478)+eq(n\\,11479)+eq(n\\,11997)+eq(n\\,11998)+eq(n\\,11999)+eq(n\\,12025)+eq(n\\,12026)+eq(n\\,12130)+eq(n\\,12131)+eq(n\\,12132)+eq(n\\,12233)+eq(n\\,12234)+eq(n\\,12374)+eq(n\\,12375)+eq(n\\,12376)+eq(n\\,12517)+eq(n\\,12518)+eq(n\\,12840)+eq(n\\,12841)+eq(n\\,12842)+eq(n\\,12864)+eq(n\\,12865)+eq(n\\,13632)+eq(n\\,13633)+eq(n\\,13634)+eq(n\\,13888)+eq(n\\,13889)+eq(n\\,16828)+eq(n\\,16829)+eq(n\\,16830)+eq(n\\,16933)+eq(n\\,16934)+eq(n\\,16989)+eq(n\\,16990)+eq(n\\,16991)+eq(n\\,16998)+eq(n\\,16999)+eq(n\\,17354)+eq(n\\,17355)+eq(n\\,17356)+eq(n\\,17368)+eq(n\\,17369)+eq(n\\,17841)+eq(n\\,17842)+eq(n\\,17843)+eq(n\\,17864)+eq(n\\,17865),scale=384:216:flags=area,drawtext=fontfile='C\\:/Windows/Fonts/consola.ttf':text='%{pts\\:hms}':fontsize=18:fontcolor=white:box=1:boxcolor=black@0.7:x=5:y=5,tile=5x1:nb_frames=5:padding=2:margin=2:color=0x07131d",
+    "-an",
+    "-vsync",
+    "0",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\qa\\firstcut04d-boundaries\\boundary-%02d.png"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

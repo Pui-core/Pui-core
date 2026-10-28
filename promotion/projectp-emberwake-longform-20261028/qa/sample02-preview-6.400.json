@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-fullbleed-revision02.ecproj",
+    "render-frame",
+    "--comp",
+    "EMBERWAKE FullBleed Revision02",
+    "--time",
+    "6.4",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\qa\\sample02-6.400.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":5,\"height\":1080,\"ms\":443.8,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\qa\\\\sample02-6.400.png\",\"time\":6.4,\"width\":1920}\n",
+  "stderr": ""
+}

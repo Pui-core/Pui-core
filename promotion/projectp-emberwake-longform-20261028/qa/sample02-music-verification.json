@@ -1,0 +1,73 @@
+{
+  "status": "PASS_SHORT_CLIP_TECHNICAL_PENDING_CONTINUOUS_CREATIVE_REVIEW",
+  "videoSha256": "0128ca85446e04083d915c0b9b05be22842488ada1a02c49a26dbc6ec75cbc9e",
+  "videoPacketSha256": "SHA256=7a05c67a57dc093cbf07436071e9ff8db2977a26db87709729308828ae1af9fb",
+  "duration": 20.01,
+  "frames": 600,
+  "fullAvDecode": true,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "audio": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "integratedLufs": -21.4,
+    "truePeakDbtp": -3.5,
+    "voices": [
+      {
+        "id": "opening",
+        "file": "voice-01.wav",
+        "at": 0.1,
+        "samples": 260096,
+        "pcmMaxError": 1.7881393432617188e-7,
+        "lag": 0,
+        "correlation": 0.9999381757435123,
+        "headCorrelation": 0.9998095901412404,
+        "tailCorrelation": 0.9999803291257034
+      },
+      {
+        "id": "ash",
+        "file": "sample02-ash.wav",
+        "at": 12.1,
+        "samples": 163840,
+        "pcmMaxError": 1.7285346987083727e-7,
+        "lag": 0,
+        "correlation": 0.9999587528814197,
+        "headCorrelation": 0.9999410408243222,
+        "tailCorrelation": 0.999971055770059
+      },
+      {
+        "id": "lumi",
+        "file": "sample02-lumi.wav",
+        "at": 16.6,
+        "samples": 98304,
+        "pcmMaxError": 2.0265579214751028e-7,
+        "lag": 0,
+        "correlation": 0.9999159701684289,
+        "headCorrelation": 0.9999663295740444,
+        "tailCorrelation": 0.999923400371756
+      }
+    ],
+    "allPhrasesAndHeadTailVerified": true
+  },
+  "finalFrames": [],
+  "continuousActualBranchSource": [
+    796,
+    976
+  ],
+  "hostCurrentVoiceSha256": "84ccfcb1f8d8c11b5e5c4f083e1357ddc1009b1131831dbf2cb015ffe4b01ade",
+  "hostCoreCurrentProduction": true,
+  "hostTimeMap": [
+    0,
+    3.4
+  ],
+  "introRmsSameWaveform": true,
+  "creditsFile": "metadata/sample02-credits.txt",
+  "subjectiveListen": false,
+  "wholeDirectContinuousWatch": false,
+  "formal600Complete": false,
+  "musicCandidate": true,
+  "finalMusicAdopted": false
+}

@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {file,run,np,FF,FP,parse,digest,save,hash} from '../native.mjs';
+
+const attempt=process.argv[2];
+if(!/^demo0[1-5]-[a-z0-9-]+$/.test(attempt||''))throw Error('Explicit unique capture attempt required');
+const launch=JSON.parse(fs.readFileSync(file('qa/demo05/'+attempt+'-launch.json')));
+if(launch.status!=='FINISHED'||launch.exitCode!==0||!launch.archiveAndPrivateCoreUnchanged||!launch.ownedEngineGone)throw Error('Capture not accepted for encoding');
+const receipt=JSON.parse(fs.readFileSync(path.join(launch.out,'capture.json')));
+if(hash(path.join(launch.out,'capture.json'))!==launch.captureReceiptSha256)throw Error('Capture receipt changed');
+const names=fs.readdirSync(launch.out).filter(n=>/^frame-[0-9]{6}\.png$/.test(n)).sort();
+if(names.length!==receipt.frameCount)throw Error('Frame count mismatch');
+const output=file('media/demo05/'+attempt+'.mp4');
+if(fs.existsSync(output))throw Error('Raw source output exists; preserve it');
+const frames=names.map((name,i)=>{if(name!==`frame-${String(i).padStart(6,'0')}.png`)throw Error('Non-contiguous capture frames');const p=path.join(launch.out,name);return{file:name,bytes:fs.statSync(p).size,sha256:hash(p)}});
+await run(FF,['-v','error','-framerate','30','-start_number','0','-i',np(path.join(launch.out,'frame-%06d.png')),'-frames:v',String(receipt.frameCount),'-an','-c:v','libx264','-threads','2','-preset','fast','-crf','16','-pix_fmt','yuv420p','-movflags','+faststart',np(output)],'demo05/'+attempt+'-encode.json');
+const probe=parse((await run(FP,['-v','error','-count_frames','-show_streams','-show_format','-of','json',np(output)],'demo05/'+attempt+'-probe.json')).stdout);
+const v=probe.streams.find(s=>s.codec_type==='video');
+if(v.width!==1920||v.height!==1080||v.avg_frame_rate!=='30/1'||Number(v.nb_read_frames)!==receipt.frameCount||probe.streams.some(s=>s.codec_type==='audio'))throw Error('Output does not match native raw capture');
+await run(FF,['-v','error','-xerror','-i',np(output),'-f','null','-'],'demo05/'+attempt+'-decode.json');
+const binding={schemaVersion:1,attempt,course:receipt.course,variant:receipt.variant,video:'media/demo05/'+attempt+'.mp4',sha256:await digest(output),width:1920,height:1080,fps:30,frames:receipt.frameCount,seconds:Number(probe.format.duration),gameAudioRecorded:false,source:launch.source,driverSha256:launch.driverSha256,captureReceiptSha256:launch.captureReceiptSha256,archiveAndPrivateCoreUnchanged:true,ownedEngineGone:true,sourcePng:frames,events:receipt.events,routeTrace:receipt.routeTrace,setup:receipt.inputMethod,fullDecode:true,wholeRealtimeWatch:false,subjectiveAudioListen:false};
+save('qa/demo05/'+attempt+'-binding.json',binding);
+console.log(JSON.stringify({...binding,sourcePng:undefined,events:undefined,routeTrace:undefined}));

@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/PhotoCraft/photocraft-cli.exe",
+  "args": [
+    "run",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-emberwake-longform-20261028\\production\\ep01-pilot01\\frames\\frame-000800.png",
+    "--cmd",
+    "image.crop",
+    "--params",
+    "{\"x\":730,\"y\":500,\"width\":1000,\"height\":560,\"deleteCroppedPixels\":true,\"contentAware\":false}",
+    "--out",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\revision-01\\photocraft-stage\\cover-game.png",
+    "--format",
+    "png"
+  ],
+  "stdout": "{\"command\":\"image.crop\",\"result\":{\"documentHeight\":560,\"documentWidth\":1000,\"height\":560,\"resolution\":72.0,\"width\":1000,\"x\":730,\"y\":500}}\n",
+  "stderr": ""
+}

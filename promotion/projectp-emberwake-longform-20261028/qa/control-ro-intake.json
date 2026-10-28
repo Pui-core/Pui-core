@@ -1,0 +1,20 @@
+{
+  "reviewer": "control_comparisons_ro / independent read-only helper",
+  "productVersion": "0.12.0",
+  "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "privateMemo": "/home/pui/tmp/projectp-emberwake-longform-20261028/control-comparison-ro.md",
+  "preferredActualCases": [
+    "Episode2 ordinary4-footing route vs actual2-footing dash branch, same legitimate seed and merge",
+    "Episode1 short press vs hold and R/replay memory invariance, observed outcome only"
+  ],
+  "windCase": "Secondary only; chapter1wind0, chapter2wind applies in air and outside dash",
+  "sourceSetterOrDirectCallbackFound": false,
+  "mustFixes": [
+    "Actual key hold frame difference",
+    "Actual start floor/position/velocity/world equality and separate comparison acceptance"
+  ],
+  "fixesImplementedBeforeFinitePilot": true,
+  "pilotResult": "PENDING",
+  "formal600Complete": false,
+  "reference": "https://docs.godotengine.org/en/4.6/tutorials/scripting/gdscript/gdscript_basics.html"
+}

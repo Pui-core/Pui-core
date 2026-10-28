@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import {file,np,FF,FP,run,parse,save,hash,digest} from './native.mjs';
+const N='firstcut04l-story-bgm-candidate', out=file(`media/${N}.wav`),music='/home/pui/tmp/projectp127-peritune-20261028/Rainwalk.mp3';
+if(fs.existsSync(out))throw Error('Existing candidate protected');
+if(hash(music)!=='68230b60f6053bd23bfd04c364dcaefdf2272b0f5a360ba5249864d3e40206c8')throw Error('Music source mismatch');
+const voices=['media/firstcut04l-story-pilot-v6-1-voice.wav','media/firstcut04l-story-pilot-v7-2-voice.wav'];for(const p of voices)if(!fs.existsSync(file(p)))throw Error('Missing '+p);
+const duration=1864/30, fade=duration-.5;
+const graph=`[0:a][1:a]concat=n=2:v=0:a=1[v];[2:a]atrim=duration=${duration},volume=0.05,afade=t=in:st=0:d=0.4,afade=t=out:st=${fade}:d=0.5[b];[v][b]amix=inputs=2:normalize=0:duration=first[out]`;
+await run(FF,['-v','error','-i',np(file(voices[0])),'-i',np(file(voices[1])),'-i',np(music),'-filter_complex',graph,'-map','[out]','-c:a','pcm_s24le','-ar','48000',np(out)],N+'-mix.json');
+const p=parse((await run(FP,['-v','error','-show_format','-show_streams','-of','json',np(out)],N+'-probe.json')).stdout);if(Math.abs(Number(p.format.duration)-duration)>.04)throw Error('Candidate duration mismatch');
+await run(FF,['-hide_banner','-nostats','-i',np(out),'-filter_complex','ebur128=peak=true','-f','null','-'],N+'-loudness.json');
+save('qa/'+N+'-result.json',{duration:Number(p.format.duration),sha256:await digest(out),music:'Rainwalk / PeriTune',musicSourceHash:hash(music),musicGain:0.05,source:'https://peritune.com/blog/2026/09/14/rainwalk/',terms:'https://peritune.com/about/',voice:voices,voiceMix:'unscaled; music gain -26.02 dB relative to source',subjectiveListen:false,creativeAccepted:false,contentIdClaim:false,published:false});console.log(JSON.stringify({duration:Number(p.format.duration),sha256:await digest(out)}));

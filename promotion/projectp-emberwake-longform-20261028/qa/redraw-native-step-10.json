@@ -1,0 +1,16 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/PhotoCraft/photocraft-cli.exe",
+  "args": [
+    "run",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\redraw-material-127\\redraw-09.pcraft",
+    "--cmd",
+    "shape.create",
+    "--params",
+    "{\"kind\":\"path\",\"path\":{\"subpaths\":[{\"closed\":true,\"knots\":[[320,296],[328,296],[328,304],[320,304]]},{\"closed\":true,\"knots\":[[312,304],[336,304],[336,312],[312,312]]},{\"closed\":true,\"knots\":[[320,312],[352,312],[352,320],[320,320]]},{\"closed\":true,\"knots\":[[336,320],[360,320],[360,328],[336,328]]},{\"closed\":true,\"knots\":[[344,328],[352,328],[352,336],[344,336]]}],\"fillRule\":\"nonzero\"},\"fill\":\"#acb68f\",\"name\":\"袖の暖色\"}",
+    "--out",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\redraw-material-127\\redraw-10.pcraft"
+  ],
+  "stdout": "{\"command\":\"shape.create\",\"result\":{\"bounds\":[312,296,48,40],\"fill\":\"#acb68f\",\"kind\":\"path\",\"layer\":13,\"live\":null,\"name\":\"袖の暖色\",\"path\":{\"fillRule\":\"nonzero\",\"inverted\":false,\"subpaths\":[{\"closed\":true,\"knots\":[{\"anchor\":[320.0,296.0],\"in\":[320.0,296.0],\"out\":[320.0,296.0],\"smooth\":false},{\"anchor\":[328.0,296.0],\"in\":[328.0,296.0],\"out\":[328.0,296.0],\"smooth\":false},{\"anchor\":[328.0,304.0],\"in\":[328.0,304.0],\"out\":[328.0,304.0],\"smooth\":false},{\"anchor\":[320.0,304.0],\"in\":[320.0,304.0],\"out\":[320.0,304.0],\"smooth\":false}],\"op\":\"combine\"},{\"closed\":true,\"knots\":[{\"anchor\":[312.0,304.0],\"in\":[312.0,304.0],\"out\":[312.0,304.0],\"smooth\":false},{\"anchor\":[336.0,304.0],\"in\":[336.0,304.0],\"out\":[336.0,304.0],\"smooth\":false},{\"anchor\":[336.0,312.0],\"in\":[336.0,312.0],\"out\":[336.0,312.0],\"smooth\":false},{\"anchor\":[312.0,312.0],\"in\":[312.0,312.0],\"out\":[312.0,312.0],\"smooth\":false}],\"op\":\"combine\"},{\"closed\":true,\"knots\":[{\"anchor\":[320.0,312.0],\"in\":[320.0,312.0],\"out\":[320.0,312.0],\"smooth\":false},{\"anchor\":[352.0,312.0],\"in\":[352.0,312.0],\"out\":[352.0,312.0],\"smooth\":false},{\"anchor\":[352.0,320.0],\"in\":[352.0,320.0],\"out\":[352.0,320.0],\"smooth\":false},{\"anchor\":[320.0,320.0],\"in\":[320.0,320.0],\"out\":[320.0,320.0],\"smooth\":false}],\"op\":\"combine\"},{\"closed\":true,\"knots\":[{\"anchor\":[336.0,320.0],\"in\":[336.0,320.0],\"out\":[336.0,320.0],\"smooth\":false},{\"anchor\":[360.0,320.0],\"in\":[360.0,320.0],\"out\":[360.0,320.0],\"smooth\":false},{\"anchor\":[360.0,328.0],\"in\":[360.0,328.0],\"out\":[360.0,328.0],\"smooth\":false},{\"anchor\":[336.0,328.0],\"in\":[336.0,328.0],\"out\":[336.0,328.0],\"smooth\":false}],\"op\":\"combine\"},{\"closed\":true,\"knots\":[{\"anchor\":[344.0,328.0],\"in\":[344.0,328.0],\"out\":[344.0,328.0],\"smooth\":false},{\"anchor\":[352.0,328.0],\"in\":[352.0,328.0],\"out\":[352.0,328.0],\"smooth\":false},{\"anchor\":[352.0,336.0],\"in\":[352.0,336.0],\"out\":[352.0,336.0],\"smooth\":false},{\"anchor\":[344.0,336.0],\"in\":[344.0,336.0],\"out\":[344.0,336.0],\"smooth\":false}],\"op\":\"combine\"}]},\"stroke\":null}}\n",
+  "stderr": ""
+}

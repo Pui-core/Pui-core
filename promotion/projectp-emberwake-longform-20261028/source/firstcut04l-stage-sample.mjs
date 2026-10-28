@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pipeline} from 'node:stream/promises';
+import {root,file,np,digest} from './native.mjs';
+const version=process.argv[2];if(!/^v(?:10|11)$/.test(version))throw Error('v10 or v11 required');
+const dest=`/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/firstcut-04l-pilot-${version}-F`;
+const from=np(root),to=np(dest),native=[1,2].flatMap(i=>[`projects/firstcut04l-story-pilot-${version}-${i}.ecproj`,`projects/firstcut04l-story-pilot-${version}-${i}.fcproj`]).concat([`projects/firstcut04l-story-pilot-assembly-${version}.fcproj`,`projects/firstcut04l-story-pilot-bgm-assembly-${version}.fcproj`]);
+function refs(v,out=[]){if(typeof v==='string'&&/^(?:[a-z]:\\|\\\\)/i.test(v)&&/\.(?:mp4|mov|wav|png|jpg|jpeg|m4a|aac)$/i.test(v))out.push(v);else if(Array.isArray(v))v.forEach(x=>refs(x,out));else if(v&&typeof v==='object')Object.values(v).forEach(x=>refs(x,out));return out;}
+function relink(v){return typeof v==='string'&&(v===from||v.startsWith(from+'\\'))?to+v.slice(from.length):Array.isArray(v)?v.map(relink):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,relink(x)])):v;}
+const documents=native.map(n=>JSON.parse(fs.readFileSync(file(n),'utf8'))),all=documents.flatMap(x=>refs(x));if(all.some(x=>!x.startsWith(from+'\\')))throw Error('Unexpected native reference');
+const extra=[`videos/firstcut04l-story-pilot-assembly-${version}.mp4`,`videos/firstcut04l-story-pilot-bgm-assembly-${version}.mp4`,`qa/firstcut04l-story-pilot-assembly-${version}-contact.png`,'projects/traveler-material.pcraft','media/traveler-demo.mov',...['u041','u042','u070','u071','u072','u073','u074','u075','u076','u077','u078','u079'].flatMap(x=>[`media/firstcut04-${x}.wav`,`source/firstcut04-${x}-query.json`]),`source/firstcut04l-story-pilot-${version}.mjs`,...([1,2].map(i=>`source/firstcut04l-story-pilot-${version}-${i}-edit.json`))];
+const deps=[...new Set(all.map(x=>x.slice(from.length+1).replaceAll('\\','/')).concat(extra))];for(const rel of deps)if(!fs.existsSync(file(rel)))throw Error('Missing source '+rel);
+fs.mkdirSync(dest,{recursive:false});let copied=[];
+for(const rel of deps){const d=path.join(dest,rel);fs.mkdirSync(path.dirname(d),{recursive:true});await pipeline(fs.createReadStream(file(rel),{highWaterMark:4096}),fs.createWriteStream(d,{flags:'wx',highWaterMark:4096}));const sha=await digest(file(rel));if(sha!==await digest(d))throw Error('Hash mismatch '+rel);copied.push({file:rel,sha256:sha});}
+for(let i=0;i<native.length;i++){let dst=path.join(dest,native[i]);fs.mkdirSync(path.dirname(dst),{recursive:true});fs.writeFileSync(dst,JSON.stringify(relink(documents[i]),null,2)+'\n',{flag:'wx'});}
+const outrefs=native.flatMap(n=>refs(JSON.parse(fs.readFileSync(path.join(dest,n),'utf8'))));if(outrefs.some(x=>!x.startsWith(to+'\\')||!fs.existsSync(path.join(dest,x.slice(to.length+1).replaceAll('\\','/')))))throw Error('Relink dependency missing');
+const report={state:'PRESERVED_PENDING_NATIVE_REOPEN_AND_HUMAN_REVIEW',version,destination:dest,copied,dependencies:outrefs.length,masterComplete:false,subjectiveListen:false,wholeDirectWatch:false,published:false};fs.mkdirSync(path.join(dest,'qa'),{recursive:true});fs.writeFileSync(path.join(dest,'qa/stage-manifest.json'),JSON.stringify(report,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify({destination:dest,files:copied.length,dependencies:outrefs.length}));

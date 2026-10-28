@@ -1,0 +1,39 @@
+{
+  "videoSha256": "ddb6263a9f0fd9a4c77f6bae6b101d5e386aa9ce826927d1d338d0ba961422d3",
+  "contextP1": {
+    "state": "IMPLEMENTED_AND_TECHNICALLY_VERIFIED_PENDING_ROOT_RELEASE",
+    "originalContextFragments": 47,
+    "originalSeconds": 25.133333333333333,
+    "repairedNativeFrames": 1697,
+    "boundaryImagesDirectlyInspected": 42,
+    "boundaryFrames": 210,
+    "samePageBindingQuotes": 31,
+    "sourceGameFramesRepeated": 0,
+    "shortContextRemaining": 0
+  },
+  "newMandatoryFindings": [
+    {
+      "id": "PP127-HUD-CROP-P1",
+      "state": "OPEN",
+      "description": "Original ordinary-control hint cropped to a suffix in old context cameras; e.g282s /X,318s »SHIFT/X. 103 oldY790/160% context shots may expose the bottom hint. Correct with bounded Native camera revision and new final master.",
+      "examples": [
+        "qa/firstcut04d-final-hud-282.png",
+        "qa/firstcut04d-final-hud-318.png"
+      ]
+    }
+  ],
+  "directFinalFramesInspected": [
+    "qa/firstcut04d-final-hud-282.png",
+    "qa/firstcut04d-final-hud-318.png"
+  ],
+  "rootLimitedNativeFrames": [
+    "qa/firstcut04d-native-55.8.png",
+    "qa/firstcut04d-native-218.png",
+    "qa/firstcut04d-native-561.8.png"
+  ],
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "bgmCreativeAdoption": false,
+  "rootAccepted": false,
+  "published": false
+}

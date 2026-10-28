@@ -1,0 +1,164 @@
+{
+  "videoSha256": "e42986000d3b48c1cbe912eaf8f584d3492ed57fad8d1222ebc13479cd4f5e22",
+  "allNativeRepairFramesMatched": true,
+  "framesCompared": 328,
+  "diagnosticSize": [
+    160,
+    90
+  ],
+  "comparison": "Every repaired frame from final AAC/H264 master against its exact Native EffectCraft ProRes source; RGB RMSE allows lossy reencoding. Audio verified separately.",
+  "comparisons": [
+    {
+      "file": "media/firstcut04f-dialogue-0.mov",
+      "start": 508,
+      "end": 541,
+      "frames": 33,
+      "rmse": 2.3358764400082057,
+      "maxFrameRmse": 2.337842864535437
+    },
+    {
+      "file": "media/firstcut04f-dialogue-1.mov",
+      "start": 5802,
+      "end": 5832,
+      "frames": 30,
+      "rmse": 3.1664872025169633,
+      "maxFrameRmse": 3.2321983976051785
+    },
+    {
+      "file": "media/firstcut04f-dialogue-2.mov",
+      "start": 8252,
+      "end": 8288,
+      "frames": 36,
+      "rmse": 2.40554325974105,
+      "maxFrameRmse": 2.4083381391724448
+    },
+    {
+      "file": "media/firstcut04f-dialogue-3.mov",
+      "start": 8843,
+      "end": 8880,
+      "frames": 37,
+      "rmse": 2.426867772909597,
+      "maxFrameRmse": 2.432139166644443
+    },
+    {
+      "file": "media/firstcut04f-dialogue-question-clean.mov",
+      "start": 11231,
+      "end": 11336,
+      "frames": 105,
+      "rmse": 2.3840010442187265,
+      "maxFrameRmse": 2.391889265676666
+    },
+    {
+      "file": "media/firstcut04f-dialogue-5.mov",
+      "start": 11614,
+      "end": 11655,
+      "frames": 41,
+      "rmse": 2.44182528596757,
+      "maxFrameRmse": 2.4447032691257387
+    },
+    {
+      "file": "media/firstcut04f-dialogue-6.mov",
+      "start": 17724,
+      "end": 17770,
+      "frames": 46,
+      "rmse": 3.120468211647634,
+      "maxFrameRmse": 3.5114857834551185
+    }
+  ],
+  "boundaries": [
+    {
+      "file": "qa/firstcut04f-boundaries/boundary-01.png",
+      "frames": [
+        507,
+        508,
+        509,
+        540,
+        541
+      ],
+      "repair": "media/firstcut04f-dialogue-0.mov"
+    },
+    {
+      "file": "qa/firstcut04f-boundaries/boundary-02.png",
+      "frames": [
+        5801,
+        5802,
+        5803,
+        5831,
+        5832
+      ],
+      "repair": "media/firstcut04f-dialogue-1.mov"
+    },
+    {
+      "file": "qa/firstcut04f-boundaries/boundary-03.png",
+      "frames": [
+        8251,
+        8252,
+        8253,
+        8287,
+        8288
+      ],
+      "repair": "media/firstcut04f-dialogue-2.mov"
+    },
+    {
+      "file": "qa/firstcut04f-boundaries/boundary-04.png",
+      "frames": [
+        8842,
+        8843,
+        8844,
+        8879,
+        8880
+      ],
+      "repair": "media/firstcut04f-dialogue-3.mov"
+    },
+    {
+      "file": "qa/firstcut04f-boundaries/boundary-05.png",
+      "frames": [
+        11230,
+        11231,
+        11232,
+        11335,
+        11336
+      ],
+      "repair": "media/firstcut04f-dialogue-question-clean.mov"
+    },
+    {
+      "file": "qa/firstcut04f-boundaries/boundary-06.png",
+      "frames": [
+        11613,
+        11614,
+        11615,
+        11654,
+        11655
+      ],
+      "repair": "media/firstcut04f-dialogue-5.mov"
+    },
+    {
+      "file": "qa/firstcut04f-boundaries/boundary-07.png",
+      "frames": [
+        17723,
+        17724,
+        17725,
+        17769,
+        17770
+      ],
+      "repair": "media/firstcut04f-dialogue-6.mov"
+    }
+  ],
+  "directBoundaryImagesInspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "shortContextRemaining": 0,
+  "rawGameFramesRepeated": 0,
+  "originalClippedRowFullyCovered": true,
+  "hudCleanupScope": "328 current dialogue/question Native repair frames are verified here; 9565 inherited camera/state repair frames are independently verified against the actual 04e/04f masters in firstcut04f-inherited-verification.json.",
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "rootAccepted": false,
+  "boundaryReviewScope": "7 actual final-master boundary strips, 5 extracted frames each, directly inspected. u003 remains on the real question UI through the full phrase. u037/u120 are intentionally captioned semantic L-cuts over the corresponding path/footing. Not continuous whole watch or listening."
+}

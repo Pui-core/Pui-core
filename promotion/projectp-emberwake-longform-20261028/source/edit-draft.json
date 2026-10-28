@@ -1,0 +1,1160 @@
+{
+  "schemaVersion": 1,
+  "status": "DRAFT_MEASURED_PARTIAL_NOT600",
+  "title": "火を灯すと、何を失う？｜自作ゲーム EMBERWAKE 制作版",
+  "question": "助けるために道を進むほど、どんな記憶を失うのか。二段の近道は本当に渡れるのか。",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration": 606.4333333333333,
+  "frames": 18193,
+  "meaningfulUniqueFrames": 17953,
+  "meaningfulUniqueSeconds": 598.4333333333333,
+  "closingSeconds": 8,
+  "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "version": "Production0.12.0 (not verified latest public release)",
+  "selectedEpisodeIds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "all15Completed": false,
+  "fullEndingIncluded": false,
+  "gameAudioRecorded": false,
+  "captureMode": "Ordinary InputEventKey and unmodified physics; automated finite recording, not human/RTA/PB",
+  "segments": [
+    {
+      "index": 0,
+      "episode": 1,
+      "chapter": 1,
+      "kind": "actual-intro",
+      "startFrame": 0,
+      "endFrame": 375,
+      "sourceStartFrame": 20,
+      "sourceEndFrame": 395,
+      "sourceFile": "media/ep01-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        20,
+        145,
+        270
+      ]
+    },
+    {
+      "index": 1,
+      "episode": 1,
+      "chapter": 1,
+      "kind": "actual-play",
+      "startFrame": 375,
+      "endFrame": 1293,
+      "sourceStartFrame": 395,
+      "sourceEndFrame": 1313,
+      "sourceFile": "media/ep01-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 2,
+      "episode": 1,
+      "chapter": 1,
+      "kind": "actual-result",
+      "startFrame": 1293,
+      "endFrame": 1533,
+      "sourceStartFrame": 1313,
+      "sourceEndFrame": 1553,
+      "sourceFile": "media/ep01-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "アッシュ：あの公園で、何をしてたんだっけ。\nルミ：……私の名前は、まだわかる？\nアッシュ：ルミ。君だけは、忘れない。"
+    },
+    {
+      "index": 3,
+      "episode": 1,
+      "chapter": 1,
+      "kind": "actual-memory",
+      "startFrame": 1533,
+      "endFrame": 1653,
+      "sourceStartFrame": 1683,
+      "sourceEndFrame": 1803,
+      "sourceFile": "media/ep01-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：公園でルミと走り回った午後。"
+    },
+    {
+      "index": 4,
+      "episode": 2,
+      "chapter": 1,
+      "kind": "actual-intro",
+      "startFrame": 1653,
+      "endFrame": 2028,
+      "sourceStartFrame": 70,
+      "sourceEndFrame": 445,
+      "sourceFile": "media/ep02-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        70,
+        195,
+        320
+      ]
+    },
+    {
+      "index": 5,
+      "episode": 2,
+      "chapter": 1,
+      "kind": "actual-play",
+      "startFrame": 2028,
+      "endFrame": 2890,
+      "sourceStartFrame": 445,
+      "sourceEndFrame": 1307,
+      "sourceFile": "media/ep02-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 6,
+      "episode": 2,
+      "chapter": 1,
+      "kind": "actual-result",
+      "startFrame": 2890,
+      "endFrame": 3130,
+      "sourceStartFrame": 1307,
+      "sourceEndFrame": 1547,
+      "sourceFile": "media/ep02-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "［エンが二度、またたく］\nアッシュ：どうして、ふたつだったんだろう。\nルミ：今は、ここにいるっていう返事でいいよ。"
+    },
+    {
+      "index": 7,
+      "episode": 2,
+      "chapter": 1,
+      "kind": "actual-memory",
+      "startFrame": 3130,
+      "endFrame": 3250,
+      "sourceStartFrame": 1677,
+      "sourceEndFrame": 1797,
+      "sourceFile": "media/ep02-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：暗い道で二度の灯を交わす合図を決めた夜。"
+    },
+    {
+      "index": 8,
+      "episode": 3,
+      "chapter": 1,
+      "kind": "actual-intro",
+      "startFrame": 3250,
+      "endFrame": 3500,
+      "sourceStartFrame": 75,
+      "sourceEndFrame": 325,
+      "sourceFile": "media/ep03-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        75,
+        200
+      ]
+    },
+    {
+      "index": 9,
+      "episode": 3,
+      "chapter": 1,
+      "kind": "actual-play",
+      "startFrame": 3500,
+      "endFrame": 4421,
+      "sourceStartFrame": 325,
+      "sourceEndFrame": 1246,
+      "sourceFile": "media/ep03-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 10,
+      "episode": 3,
+      "chapter": 1,
+      "kind": "actual-result",
+      "startFrame": 4421,
+      "endFrame": 4661,
+      "sourceStartFrame": 1246,
+      "sourceEndFrame": 1486,
+      "sourceFile": "media/ep03-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "アッシュ：帰る道は書いた。忘れても、たどれる。\nルミ：道だけじゃ、思い出せないものもあるよ。\nアッシュ：それなら、帰ってから教えてくれ。"
+    },
+    {
+      "index": 11,
+      "episode": 3,
+      "chapter": 1,
+      "kind": "actual-memory",
+      "startFrame": 4661,
+      "endFrame": 4781,
+      "sourceStartFrame": 1616,
+      "sourceEndFrame": 1736,
+      "sourceFile": "media/ep03-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：夕暮れの街をルミと並んで帰った道。"
+    },
+    {
+      "index": 12,
+      "episode": 4,
+      "chapter": 2,
+      "kind": "actual-intro",
+      "startFrame": 4781,
+      "endFrame": 5156,
+      "sourceStartFrame": 80,
+      "sourceEndFrame": 455,
+      "sourceFile": "media/ep04-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        80,
+        205,
+        330
+      ]
+    },
+    {
+      "index": 13,
+      "episode": 4,
+      "chapter": 2,
+      "kind": "actual-play",
+      "startFrame": 5156,
+      "endFrame": 6066,
+      "sourceStartFrame": 455,
+      "sourceEndFrame": 1365,
+      "sourceFile": "media/ep04-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 14,
+      "episode": 4,
+      "chapter": 2,
+      "kind": "actual-result",
+      "startFrame": 6066,
+      "endFrame": 6306,
+      "sourceStartFrame": 1365,
+      "sourceEndFrame": 1605,
+      "sourceFile": "media/ep04-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "アッシュ：雨の音しか、思い出せない。\nルミ：隣に座ってくれただけで、よかったんだ。"
+    },
+    {
+      "index": 15,
+      "episode": 4,
+      "chapter": 2,
+      "kind": "actual-memory",
+      "startFrame": 6306,
+      "endFrame": 6426,
+      "sourceStartFrame": 1735,
+      "sourceEndFrame": 1855,
+      "sourceFile": "media/ep04-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：雨宿りの軒下で、泣くルミの隣に座った時間。"
+    },
+    {
+      "index": 16,
+      "episode": 5,
+      "chapter": 2,
+      "kind": "actual-intro",
+      "startFrame": 6426,
+      "endFrame": 6801,
+      "sourceStartFrame": 85,
+      "sourceEndFrame": 460,
+      "sourceFile": "media/ep05-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        85,
+        210,
+        335
+      ]
+    },
+    {
+      "index": 17,
+      "episode": 5,
+      "chapter": 2,
+      "kind": "actual-play",
+      "startFrame": 6801,
+      "endFrame": 7714,
+      "sourceStartFrame": 460,
+      "sourceEndFrame": 1373,
+      "sourceFile": "media/ep05-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 18,
+      "episode": 5,
+      "chapter": 2,
+      "kind": "actual-result",
+      "startFrame": 7714,
+      "endFrame": 7954,
+      "sourceStartFrame": 1373,
+      "sourceEndFrame": 1613,
+      "sourceFile": "media/ep05-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "アッシュ：何がおかしかったのか、もうわからない。\nルミ：笑ったことまで、嘘にはならないよ。"
+    },
+    {
+      "index": 19,
+      "episode": 5,
+      "chapter": 2,
+      "kind": "actual-memory",
+      "startFrame": 7954,
+      "endFrame": 8074,
+      "sourceStartFrame": 1743,
+      "sourceEndFrame": 1863,
+      "sourceFile": "media/ep05-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：灰だらけの自分を見て、ルミが笑った日の出来事。"
+    },
+    {
+      "index": 20,
+      "episode": 6,
+      "chapter": 2,
+      "kind": "actual-intro",
+      "startFrame": 8074,
+      "endFrame": 8449,
+      "sourceStartFrame": 90,
+      "sourceEndFrame": 465,
+      "sourceFile": "media/ep06-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        90,
+        215,
+        340
+      ]
+    },
+    {
+      "index": 21,
+      "episode": 6,
+      "chapter": 2,
+      "kind": "actual-play",
+      "startFrame": 8449,
+      "endFrame": 9359,
+      "sourceStartFrame": 465,
+      "sourceEndFrame": 1375,
+      "sourceFile": "media/ep06-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 22,
+      "episode": 6,
+      "chapter": 2,
+      "kind": "actual-result",
+      "startFrame": 9359,
+      "endFrame": 9599,
+      "sourceStartFrame": 1375,
+      "sourceEndFrame": 1615,
+      "sourceFile": "media/ep06-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "アッシュ：俺が会いに行くのは、どんな顔の子だっけ。\nルミ：顔がわからなくても、待ってる人はいるよ。"
+    },
+    {
+      "index": 23,
+      "episode": 6,
+      "chapter": 2,
+      "kind": "actual-memory",
+      "startFrame": 9599,
+      "endFrame": 9719,
+      "sourceStartFrame": 1745,
+      "sourceEndFrame": 1865,
+      "sourceFile": "media/ep06-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：ルミの顔と、表情を自分の記憶から思い描く力。"
+    },
+    {
+      "index": 24,
+      "episode": 7,
+      "chapter": 3,
+      "kind": "actual-intro",
+      "startFrame": 9719,
+      "endFrame": 10094,
+      "sourceStartFrame": 95,
+      "sourceEndFrame": 470,
+      "sourceFile": "media/ep07-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        95,
+        220,
+        345
+      ]
+    },
+    {
+      "index": 25,
+      "episode": 7,
+      "chapter": 3,
+      "kind": "actual-play",
+      "startFrame": 10094,
+      "endFrame": 11018,
+      "sourceStartFrame": 470,
+      "sourceEndFrame": 1394,
+      "sourceFile": "media/ep07-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 26,
+      "episode": 7,
+      "chapter": 3,
+      "kind": "actual-result",
+      "startFrame": 11018,
+      "endFrame": 11258,
+      "sourceStartFrame": 1394,
+      "sourceEndFrame": 1634,
+      "sourceFile": "media/ep07-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "アッシュ：どうして助けたいのか、説明できない。\nルミ：説明できなくても、ここまで来てくれた。"
+    },
+    {
+      "index": 27,
+      "episode": 7,
+      "chapter": 3,
+      "kind": "actual-memory",
+      "startFrame": 11258,
+      "endFrame": 11378,
+      "sourceStartFrame": 1764,
+      "sourceEndFrame": 1884,
+      "sourceFile": "media/ep07-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：ルミを迎えに行くと決めた日の、決意に至るいきさつ。"
+    },
+    {
+      "index": 28,
+      "episode": 8,
+      "chapter": 3,
+      "kind": "actual-intro",
+      "startFrame": 11378,
+      "endFrame": 11753,
+      "sourceStartFrame": 100,
+      "sourceEndFrame": 475,
+      "sourceFile": "media/ep08-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        100,
+        225,
+        350
+      ]
+    },
+    {
+      "index": 29,
+      "episode": 8,
+      "chapter": 3,
+      "kind": "actual-play",
+      "startFrame": 11753,
+      "endFrame": 12660,
+      "sourceStartFrame": 475,
+      "sourceEndFrame": 1382,
+      "sourceFile": "media/ep08-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 30,
+      "episode": 8,
+      "chapter": 3,
+      "kind": "actual-result",
+      "startFrame": 12660,
+      "endFrame": 12900,
+      "sourceStartFrame": 1382,
+      "sourceEndFrame": 1622,
+      "sourceFile": "media/ep08-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "ルミ：アッシュ、聞こえる？\nアッシュ：聞こえる。……ごめん、君は、誰？\nルミ：あなたを、待っている人。"
+    },
+    {
+      "index": 31,
+      "episode": 8,
+      "chapter": 3,
+      "kind": "actual-memory",
+      "startFrame": 12900,
+      "endFrame": 13020,
+      "sourceStartFrame": 1752,
+      "sourceEndFrame": 1872,
+      "sourceFile": "media/ep08-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：呼びかける声を、ルミの声だと感じ取る親しさ。"
+    },
+    {
+      "index": 32,
+      "episode": 9,
+      "chapter": 3,
+      "kind": "actual-intro",
+      "startFrame": 13020,
+      "endFrame": 13395,
+      "sourceStartFrame": 105,
+      "sourceEndFrame": 480,
+      "sourceFile": "media/ep09-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        105,
+        230,
+        355
+      ]
+    },
+    {
+      "index": 33,
+      "episode": 9,
+      "chapter": 3,
+      "kind": "actual-play",
+      "startFrame": 13395,
+      "endFrame": 14302,
+      "sourceStartFrame": 480,
+      "sourceEndFrame": 1387,
+      "sourceFile": "media/ep09-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 34,
+      "episode": 9,
+      "chapter": 3,
+      "kind": "actual-result",
+      "startFrame": 14302,
+      "endFrame": 14542,
+      "sourceStartFrame": 1387,
+      "sourceEndFrame": 1627,
+      "sourceFile": "media/ep09-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "アッシュ：隣にいたのが、いつのことかもわからない。\nアッシュ：それでも、待たせたままにはできない。"
+    },
+    {
+      "index": 35,
+      "episode": 9,
+      "chapter": 3,
+      "kind": "actual-memory",
+      "startFrame": 14542,
+      "endFrame": 14662,
+      "sourceStartFrame": 1757,
+      "sourceEndFrame": 1877,
+      "sourceFile": "media/ep09-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：ルミと過ごした日々が、いつの出来事だったかという連なり。"
+    },
+    {
+      "index": 36,
+      "episode": 10,
+      "chapter": 4,
+      "kind": "actual-intro",
+      "startFrame": 14662,
+      "endFrame": 15037,
+      "sourceStartFrame": 110,
+      "sourceEndFrame": 485,
+      "sourceFile": "media/ep10-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        110,
+        235,
+        360
+      ]
+    },
+    {
+      "index": 37,
+      "episode": 10,
+      "chapter": 4,
+      "kind": "actual-play",
+      "startFrame": 15037,
+      "endFrame": 15938,
+      "sourceStartFrame": 485,
+      "sourceEndFrame": 1386,
+      "sourceFile": "media/ep10-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 38,
+      "episode": 10,
+      "chapter": 4,
+      "kind": "actual-result",
+      "startFrame": 15938,
+      "endFrame": 16178,
+      "sourceStartFrame": 1386,
+      "sourceEndFrame": 1626,
+      "sourceFile": "media/ep10-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "ルミ：私が眠れば、夜を少しだけ引き延ばせた。\nアッシュ：もう、ひとりで支えなくていい。\nルミ：私の中でも、ふたりの日々が薄れていく。"
+    },
+    {
+      "index": 39,
+      "episode": 10,
+      "chapter": 4,
+      "kind": "actual-memory",
+      "startFrame": 16178,
+      "endFrame": 16298,
+      "sourceStartFrame": 1756,
+      "sourceEndFrame": 1876,
+      "sourceFile": "media/ep10-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：鐘楼へ向かうルミと最後に言葉を交わした場面。"
+    },
+    {
+      "index": 40,
+      "episode": 11,
+      "chapter": 4,
+      "kind": "actual-intro",
+      "startFrame": 16298,
+      "endFrame": 16673,
+      "sourceStartFrame": 115,
+      "sourceEndFrame": 490,
+      "sourceFile": "media/ep11-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualPageFrames": [
+        115,
+        240,
+        365
+      ]
+    },
+    {
+      "index": 41,
+      "episode": 11,
+      "chapter": 4,
+      "kind": "actual-play",
+      "startFrame": 16673,
+      "endFrame": 17593,
+      "sourceStartFrame": 490,
+      "sourceEndFrame": 1410,
+      "sourceFile": "media/ep11-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "threeHearths": true,
+      "unbroken": true,
+      "endingPagesSkipped": false
+    },
+    {
+      "index": 42,
+      "episode": 11,
+      "chapter": 4,
+      "kind": "actual-result",
+      "startFrame": 17593,
+      "endFrame": 17833,
+      "sourceStartFrame": 1410,
+      "sourceEndFrame": 1650,
+      "sourceFile": "media/ep11-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "アッシュ：君の代わりに、この火を鐘楼へ。\nルミ：その燃料は、あなたの中の私なんだよ。\nアッシュ：朝が来たら、空の色を教えてくれ。"
+    },
+    {
+      "index": 43,
+      "episode": 11,
+      "chapter": 4,
+      "kind": "actual-memory",
+      "startFrame": 17833,
+      "endFrame": 17953,
+      "sourceStartFrame": 1780,
+      "sourceEndFrame": 1900,
+      "sourceFile": "media/ep11-game.mp4",
+      "rate": 1,
+      "freeze": false,
+      "actualText": "失った記憶：灰の降る前、ルミと同じ太陽を見上げた日の空。"
+    },
+    {
+      "index": 44,
+      "kind": "author-closing",
+      "startFrame": 17953,
+      "endFrame": 18193,
+      "newHostAnimation": true,
+      "storyEndingNotClaimed": true
+    }
+  ],
+  "episodes": [
+    {
+      "id": 1,
+      "chapter": 1,
+      "episodeInChapter": 1,
+      "title": "灰の公園",
+      "rawFrames": 1838,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "be5cfcf548d3c21dd6045ae2e3c067213c733933bb651e8f0f1d9fd3f2fb2521",
+      "startFrame": 0,
+      "memory": "公園でルミと走り回った午後。",
+      "intro": [
+        {
+          "frame": 20,
+          "text": "ルミ：アッシュ、覚えてる？ あの日の約束。"
+        },
+        {
+          "frame": 145,
+          "text": "アッシュ：当たり前だろ。絶対迎えに行く。"
+        },
+        {
+          "frame": 270,
+          "text": "［小さな火が、鐘楼の窓へ身を向ける］"
+        }
+      ],
+      "resultText": "アッシュ：あの公園で、何をしてたんだっけ。\nルミ：……私の名前は、まだわかる？\nアッシュ：ルミ。君だけは、忘れない。",
+      "sourceDepartFrame": 395,
+      "sourceResultFrame": 1313,
+      "branch": [],
+      "playStartFrame": 375,
+      "endFrame": 1653,
+      "meaningfulSeconds": 55.1
+    },
+    {
+      "id": 2,
+      "chapter": 1,
+      "episodeInChapter": 2,
+      "title": "ふたりの合図",
+      "rawFrames": 1832,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "0d16beec275e8a68ede5b19d37cbb18f5e15d0d080c6708aa524967c6442fdc2",
+      "startFrame": 1653,
+      "memory": "暗い道で二度の灯を交わす合図を決めた夜。",
+      "intro": [
+        {
+          "frame": 70,
+          "text": "アッシュ：二度またたく。あいつの返事みたいだ。"
+        },
+        {
+          "frame": 195,
+          "text": "ルミ：昔、暗い道ではそうして呼び合ったね。"
+        },
+        {
+          "frame": 320,
+          "text": "アッシュ：お前も、エンって呼んでいいか。"
+        }
+      ],
+      "resultText": "［エンが二度、またたく］\nアッシュ：どうして、ふたつだったんだろう。\nルミ：今は、ここにいるっていう返事でいいよ。",
+      "sourceDepartFrame": 445,
+      "sourceResultFrame": 1307,
+      "branch": [
+        {
+          "label": "branch-dash-landed-branch-a",
+          "frame": 846,
+          "position": [
+            716.283020019531,
+            979.925231933594
+          ],
+          "rect": [
+            [
+              641,
+              980,
+              104,
+              12
+            ]
+          ]
+        },
+        {
+          "label": "branch-dash-landed-branch-b",
+          "frame": 888,
+          "position": [
+            801.399963378906,
+            931.925231933594
+          ],
+          "rect": [
+            [
+              795,
+              932,
+              104,
+              12
+            ]
+          ]
+        },
+        {
+          "label": "actual-branch-merge-on-island",
+          "frame": 942,
+          "position": [
+            944.003784179688,
+            883.925231933594
+          ],
+          "rect": [
+            [
+              920,
+              884,
+              160,
+              20
+            ]
+          ]
+        }
+      ],
+      "playStartFrame": 2028,
+      "endFrame": 3250,
+      "meaningfulSeconds": 53.233333333333334
+    },
+    {
+      "id": 3,
+      "chapter": 1,
+      "episodeInChapter": 3,
+      "title": "遠い鐘楼",
+      "rawFrames": 1771,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "042ca7ca55efd3e8e11f2dca5ccb13e58e376e7caa9a4c09ae3ebf3aff99651a",
+      "startFrame": 3250,
+      "memory": "夕暮れの街をルミと並んで帰った道。",
+      "intro": [
+        {
+          "frame": 75,
+          "text": "ルミ：窓に灯が戻った。まだ間に合うんだね。"
+        },
+        {
+          "frame": 200,
+          "text": "アッシュ：帰り道も明るくしとく。ふたりで帰るんだ。"
+        }
+      ],
+      "resultText": "アッシュ：帰る道は書いた。忘れても、たどれる。\nルミ：道だけじゃ、思い出せないものもあるよ。\nアッシュ：それなら、帰ってから教えてくれ。",
+      "sourceDepartFrame": 325,
+      "sourceResultFrame": 1246,
+      "branch": [],
+      "playStartFrame": 3500,
+      "endFrame": 4781,
+      "meaningfulSeconds": 51.03333333333333
+    },
+    {
+      "id": 4,
+      "chapter": 2,
+      "episodeInChapter": 1,
+      "title": "雨宿り",
+      "rawFrames": 1890,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "5999fce507365e63915a7ab2db0c4c650d89e61f321d6a2fa2eb39f267ccedf2",
+      "startFrame": 4781,
+      "memory": "雨宿りの軒下で、泣くルミの隣に座った時間。",
+      "intro": [
+        {
+          "frame": 80,
+          "text": "ルミ：ここで泣いた日、何も聞かなかったよね。"
+        },
+        {
+          "frame": 205,
+          "text": "アッシュ：話せるまで、待つつもりだった。"
+        },
+        {
+          "frame": 330,
+          "text": "ルミ：今も、待ってくれる？"
+        }
+      ],
+      "resultText": "アッシュ：雨の音しか、思い出せない。\nルミ：隣に座ってくれただけで、よかったんだ。",
+      "sourceDepartFrame": 455,
+      "sourceResultFrame": 1365,
+      "branch": [],
+      "playStartFrame": 5156,
+      "endFrame": 6426,
+      "meaningfulSeconds": 54.833333333333336
+    },
+    {
+      "id": 5,
+      "chapter": 2,
+      "episodeInChapter": 2,
+      "title": "ほどけた笑顔",
+      "rawFrames": 1898,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "7db506017a51633fdae1f6d73e76e1870685d3cb2cc6b417c9333c536c61312a",
+      "startFrame": 6426,
+      "memory": "灰だらけの自分を見て、ルミが笑った日の出来事。",
+      "intro": [
+        {
+          "frame": 85,
+          "text": "ルミ：笑わせようとして、灰を顔につけたでしょ。"
+        },
+        {
+          "frame": 210,
+          "text": "アッシュ：あれは、転んだだけだ。"
+        },
+        {
+          "frame": 335,
+          "text": "ルミ：知ってる。だから、余計におかしかった。"
+        }
+      ],
+      "resultText": "アッシュ：何がおかしかったのか、もうわからない。\nルミ：笑ったことまで、嘘にはならないよ。",
+      "sourceDepartFrame": 460,
+      "sourceResultFrame": 1373,
+      "branch": [],
+      "playStartFrame": 6801,
+      "endFrame": 8074,
+      "meaningfulSeconds": 54.93333333333333
+    },
+    {
+      "id": 6,
+      "chapter": 2,
+      "episodeInChapter": 3,
+      "title": "顔のない肖像",
+      "rawFrames": 1900,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "1af9467b5304baa1017b5fc636eedd26d36155b424e570d74c0626289a9d687a",
+      "startFrame": 8074,
+      "memory": "ルミの顔と、表情を自分の記憶から思い描く力。",
+      "intro": [
+        {
+          "frame": 90,
+          "text": "アッシュ：壁に、ふたりの影が残ってる。"
+        },
+        {
+          "frame": 215,
+          "text": "ルミ：背の低いほうが私。すぐ追いつくって言ったね。"
+        },
+        {
+          "frame": 340,
+          "text": "アッシュ：そんな約束まで、してたのか。"
+        }
+      ],
+      "resultText": "アッシュ：俺が会いに行くのは、どんな顔の子だっけ。\nルミ：顔がわからなくても、待ってる人はいるよ。",
+      "sourceDepartFrame": 465,
+      "sourceResultFrame": 1375,
+      "branch": [],
+      "playStartFrame": 8449,
+      "endFrame": 9719,
+      "meaningfulSeconds": 54.833333333333336
+    },
+    {
+      "id": 7,
+      "chapter": 3,
+      "episodeInChapter": 1,
+      "title": "余白の手帳",
+      "rawFrames": 1919,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "430ab259e3fac416ec0cfb1e88571261580064b251d748117021e2f95e695496",
+      "startFrame": 9719,
+      "memory": "ルミを迎えに行くと決めた日の、決意に至るいきさつ。",
+      "intro": [
+        {
+          "frame": 95,
+          "text": "アッシュ：同じことが、何度も書いてある。"
+        },
+        {
+          "frame": 220,
+          "text": "アッシュ：鐘楼へ行け。あの子を助けろ。"
+        },
+        {
+          "frame": 345,
+          "text": "ルミ：書いたあなたは、今のあなたを信じたんだね。"
+        }
+      ],
+      "resultText": "アッシュ：どうして助けたいのか、説明できない。\nルミ：説明できなくても、ここまで来てくれた。",
+      "sourceDepartFrame": 470,
+      "sourceResultFrame": 1394,
+      "branch": [],
+      "playStartFrame": 10094,
+      "endFrame": 11378,
+      "meaningfulSeconds": 55.3
+    },
+    {
+      "id": 8,
+      "chapter": 3,
+      "episodeInChapter": 2,
+      "title": "遠ざかる声",
+      "rawFrames": 1907,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "fd5f5cd4081aebf30d9f372cff82d97111a2c1e164c41376f79549107c2b2f9c",
+      "startFrame": 11378,
+      "memory": "呼びかける声を、ルミの声だと感じ取る親しさ。",
+      "intro": [
+        {
+          "frame": 100,
+          "text": "ルミ：アッシュ。声が届くうちに、言っておきたい。"
+        },
+        {
+          "frame": 225,
+          "text": "ルミ：無理をしてほしかったわけじゃない。"
+        },
+        {
+          "frame": 350,
+          "text": "アッシュ：迎えに行くって書いたのは、俺だ。"
+        }
+      ],
+      "resultText": "ルミ：アッシュ、聞こえる？\nアッシュ：聞こえる。……ごめん、君は、誰？\nルミ：あなたを、待っている人。",
+      "sourceDepartFrame": 475,
+      "sourceResultFrame": 1382,
+      "branch": [],
+      "playStartFrame": 11753,
+      "endFrame": 13020,
+      "meaningfulSeconds": 54.733333333333334
+    },
+    {
+      "id": 9,
+      "chapter": 3,
+      "episodeInChapter": 3,
+      "title": "消えない矢印",
+      "rawFrames": 1912,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "c21d9bca13069fc5171fe57b6cab8f8f41bf089d4ca4ae44c161dc8a97ca99d5",
+      "startFrame": 13020,
+      "memory": "ルミと過ごした日々が、いつの出来事だったかという連なり。",
+      "intro": [
+        {
+          "frame": 105,
+          "text": "アッシュ：この矢印は、俺の字だ。"
+        },
+        {
+          "frame": 230,
+          "text": "［エンが進む道の手前で、二度またたく］"
+        },
+        {
+          "frame": 355,
+          "text": "アッシュ：ここにいる、だったな。ひとりじゃない。"
+        }
+      ],
+      "resultText": "アッシュ：隣にいたのが、いつのことかもわからない。\nアッシュ：それでも、待たせたままにはできない。",
+      "sourceDepartFrame": 480,
+      "sourceResultFrame": 1387,
+      "branch": [],
+      "playStartFrame": 13395,
+      "endFrame": 14662,
+      "meaningfulSeconds": 54.733333333333334
+    },
+    {
+      "id": 10,
+      "chapter": 4,
+      "episodeInChapter": 1,
+      "title": "眠りの記録",
+      "rawFrames": 1911,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "c9c001c8e12bfd34064ad9f02f7f5e7498d5c1fef0f17b635fbe4de57aab4d3d",
+      "startFrame": 14662,
+      "memory": "鐘楼へ向かうルミと最後に言葉を交わした場面。",
+      "intro": [
+        {
+          "frame": 110,
+          "text": "［鐘楼の記録には、少女が灯へ身を預ける姿］"
+        },
+        {
+          "frame": 235,
+          "text": "アッシュ：閉じ込められたんじゃ、なかったのか。"
+        },
+        {
+          "frame": 360,
+          "text": "ルミ：何もしなければ、街ごと消えるところだった。"
+        }
+      ],
+      "resultText": "ルミ：私が眠れば、夜を少しだけ引き延ばせた。\nアッシュ：もう、ひとりで支えなくていい。\nルミ：私の中でも、ふたりの日々が薄れていく。",
+      "sourceDepartFrame": 485,
+      "sourceResultFrame": 1386,
+      "branch": [],
+      "playStartFrame": 15037,
+      "endFrame": 16298,
+      "meaningfulSeconds": 54.53333333333333
+    },
+    {
+      "id": 11,
+      "chapter": 4,
+      "episodeInChapter": 2,
+      "title": "灰の太陽",
+      "rawFrames": 1935,
+      "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "captureReceiptSha256": "568c3cf7dfbce5e9c9e3ecbdf5b62f2070210349a4bf48af544825b438e3d846",
+      "startFrame": 16298,
+      "memory": "灰の降る前、ルミと同じ太陽を見上げた日の空。",
+      "intro": [
+        {
+          "frame": 115,
+          "text": "［記録の空には、灰の向こうに太陽が描かれている］"
+        },
+        {
+          "frame": 240,
+          "text": "ルミ：太陽は、なくなったんじゃない。"
+        },
+        {
+          "frame": 365,
+          "text": "ルミ：この火で道をつなげば、灰の空を開ける。"
+        }
+      ],
+      "resultText": "アッシュ：君の代わりに、この火を鐘楼へ。\nルミ：その燃料は、あなたの中の私なんだよ。\nアッシュ：朝が来たら、空の色を教えてくれ。",
+      "sourceDepartFrame": 490,
+      "sourceResultFrame": 1410,
+      "branch": [],
+      "playStartFrame": 16673,
+      "endFrame": 17953,
+      "meaningfulSeconds": 55.166666666666664
+    }
+  ],
+  "bgm": {
+    "source": "/mnt/f/Videos/ProjectP-Original-BGM-2026-10-26/revision-03-native-soundcraft/audio/connecting-lights-master.wav",
+    "sha256": "4d3bdac03c4bbcd89511ea637265bd13d56e0f11f6b702ca4f01b66af49c50df",
+    "bpm": 96,
+    "licensed": "Own original composition108",
+    "musicFrames": 2400,
+    "backgroundOnly": true
+  },
+  "hostIntervals": [
+    {
+      "startFrame": 0,
+      "endFrame": 228
+    },
+    {
+      "startFrame": 4781,
+      "endFrame": 4961
+    },
+    {
+      "startFrame": 9719,
+      "endFrame": 9899
+    },
+    {
+      "startFrame": 14662,
+      "endFrame": 14842
+    },
+    {
+      "startFrame": 17953,
+      "endFrame": 18193
+    }
+  ],
+  "limits": [
+    "No repeated game frames or slowed gameplay to reach600",
+    "First long notebook page omitted; menu navigation omitted",
+    "No stone-carrying or path-rearrangement implementation claims",
+    "Old82second posts and their receipts retained; no SNS operation by source writer",
+    "HUD wallclock includes PNG writing; no time record claim"
+  ]
+}

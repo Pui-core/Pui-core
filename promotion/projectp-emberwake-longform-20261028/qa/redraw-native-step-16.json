@@ -1,0 +1,16 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/PhotoCraft/photocraft-cli.exe",
+  "args": [
+    "run",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\redraw-material-127\\redraw-15.pcraft",
+    "--cmd",
+    "shape.create",
+    "--params",
+    "{\"kind\":\"path\",\"path\":{\"subpaths\":[{\"closed\":true,\"knots\":[[392,312],[456,312],[456,320],[392,320]]}],\"fillRule\":\"nonzero\"},\"fill\":\"#f0d499\",\"name\":\"枠の光\"}",
+    "--out",
+    "F:\\Videos\\ProjectP-EMBERWAKE-Longform-2026-10-28\\redraw-material-127\\redraw-16.pcraft"
+  ],
+  "stdout": "{\"command\":\"shape.create\",\"result\":{\"bounds\":[392,312,64,8],\"fill\":\"#f0d499\",\"kind\":\"path\",\"layer\":19,\"live\":null,\"name\":\"枠の光\",\"path\":{\"fillRule\":\"nonzero\",\"inverted\":false,\"subpaths\":[{\"closed\":true,\"knots\":[{\"anchor\":[392.0,312.0],\"in\":[392.0,312.0],\"out\":[392.0,312.0],\"smooth\":false},{\"anchor\":[456.0,312.0],\"in\":[456.0,312.0],\"out\":[456.0,312.0],\"smooth\":false},{\"anchor\":[456.0,320.0],\"in\":[456.0,320.0],\"out\":[456.0,320.0],\"smooth\":false},{\"anchor\":[392.0,320.0],\"in\":[392.0,320.0],\"out\":[392.0,320.0],\"smooth\":false}],\"op\":\"combine\"}]},\"stroke\":null}}\n",
+  "stderr": ""
+}

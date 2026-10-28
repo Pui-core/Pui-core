@@ -1,0 +1,245 @@
+{
+  "name": "emberwake-art-history20b",
+  "comp": "EMBERWAKE retained art comparison20b",
+  "duration": 20,
+  "frames": 600,
+  "fps": 30,
+  "status": "AUTHORED_JETCUT_REVIEW_NOT_FORMAL600",
+  "shots": [
+    {
+      "id": "idle retained art comparison",
+      "file": "media/traveler-art-history-0.png",
+      "sourceStart": 0,
+      "start": 0,
+      "end": 60,
+      "camera": {
+        "anchor": [
+          960,
+          540
+        ],
+        "position": [
+          960,
+          540
+        ],
+        "scale": 100
+      },
+      "still": true
+    },
+    {
+      "id": "historical24 pose sequence",
+      "file": "media/traveler-old24-demo.mov",
+      "sourceStart": 0,
+      "start": 60,
+      "end": 300,
+      "camera": {
+        "anchor": [
+          256,
+          256
+        ],
+        "position": [
+          550,
+          615
+        ],
+        "scale": 100
+      }
+    },
+    {
+      "id": "redrawn64 pose sequence",
+      "file": "media/traveler-demo.mov",
+      "sourceStart": 0,
+      "start": 60,
+      "end": 300,
+      "camera": {
+        "anchor": [
+          256,
+          256
+        ],
+        "position": [
+          1270,
+          615
+        ],
+        "scale": 100
+      }
+    },
+    {
+      "id": "rise retained art comparison",
+      "file": "media/traveler-art-history-16.png",
+      "sourceStart": 0,
+      "start": 300,
+      "end": 345,
+      "camera": {
+        "anchor": [
+          960,
+          540
+        ],
+        "position": [
+          960,
+          540
+        ],
+        "scale": 100
+      },
+      "still": true
+    },
+    {
+      "id": "dash retained art comparison",
+      "file": "media/traveler-art-history-26.png",
+      "sourceStart": 0,
+      "start": 345,
+      "end": 390,
+      "camera": {
+        "anchor": [
+          960,
+          540
+        ],
+        "position": [
+          960,
+          540
+        ],
+        "scale": 100
+      },
+      "still": true
+    },
+    {
+      "id": "current production gameplay context",
+      "file": "media/ep06-game.mp4",
+      "sourceStart": 600,
+      "start": 390,
+      "end": 480
+    },
+    {
+      "id": "current production actual landing",
+      "file": "media/ep06-game.mp4",
+      "sourceStart": 690,
+      "start": 480,
+      "end": 600,
+      "camera": {
+        "anchor": [
+          960,
+          800
+        ],
+        "position": [
+          733,
+          645
+        ],
+        "scale": 180
+      }
+    }
+  ],
+  "voices": [
+    {
+      "id": "question",
+      "text": "同じ大きさのまま、原画を細かく。左右で、形を比べてください。",
+      "at": 0.1,
+      "windowEnd": 5.5,
+      "reuseFrom": {
+        "spec": "source/emberwake-art-history20-measured.json",
+        "id": "question"
+      },
+      "file": "emberwake-art-history20-voice-001.wav",
+      "duration": 5.344,
+      "end": 5.444,
+      "sha256": "2547a9d8217e74587ec89639596cf428d1a49a39c18e1018e56cb78c11fda824"
+    },
+    {
+      "id": "art",
+      "text": "左は二十四ピクセル、右は六十四ピクセル。動く姿勢と、灯の形が変わっています。",
+      "at": 5.6,
+      "windowEnd": 13,
+      "file": "emberwake-art-history20b-voice-002.wav",
+      "duration": 6.24,
+      "end": 11.84,
+      "sha256": "6c85b213a839f1d29f4b6be51cbadac73c228874989fabd0298e24bdaa91ba24"
+    },
+    {
+      "id": "world",
+      "text": "ゲームで見渡せる範囲は維持。足元と、次の着地点を見ながら進みます。",
+      "at": 13.2,
+      "windowEnd": 19.9,
+      "file": "emberwake-art-history20b-voice-003.wav",
+      "duration": 5.226666666666667,
+      "end": 18.426666666666666,
+      "sha256": "eafb4ebd14848da8ff62e6110a3fb2a1c3d2a0abbf5fc195ce4273972e944fc6"
+    }
+  ],
+  "overlays": [
+    {
+      "id": "header",
+      "lines": [
+        "大きさを変えず、細部を描く。"
+      ],
+      "at": 2,
+      "end": 10,
+      "y": 74,
+      "size": 58
+    },
+    {
+      "id": "source",
+      "lines": [
+        "保存された原画の動作比較"
+      ],
+      "at": 2,
+      "end": 10,
+      "y": 170,
+      "size": 28,
+      "color": "#AAC8BF"
+    },
+    {
+      "id": "old",
+      "lines": [
+        "0.8  原画24px"
+      ],
+      "at": 2,
+      "end": 10,
+      "x": 360,
+      "y": 897,
+      "size": 38,
+      "color": "#AAC8BF"
+    },
+    {
+      "id": "new",
+      "lines": [
+        "0.9  再描画64px"
+      ],
+      "at": 2,
+      "end": 10,
+      "x": 1080,
+      "y": 897,
+      "size": 38,
+      "color": "#EDB468"
+    },
+    {
+      "id": "scope",
+      "lines": [
+        "本編制作版0.12.0／実画面"
+      ],
+      "at": 13,
+      "end": 15.4,
+      "y": 100,
+      "size": 30,
+      "color": "#AAC8BF"
+    }
+  ],
+  "previewTimes": [
+    0.5,
+    3,
+    6.5,
+    8.3,
+    10.5,
+    12,
+    14,
+    17,
+    19.5
+  ],
+  "materialReenactmentNotHistoricalGui": true,
+  "historicalOldGameRecording": false,
+  "productVersion": "0.12.0",
+  "sourceRate": 1,
+  "gameAudioRecorded": false,
+  "addedSfx": false,
+  "hostAbsentBecauseMaterialComparison": true,
+  "sourceDesignHasAiDerivedElements": true,
+  "thisMaterialPassImageGenerationUsed": false,
+  "formal600Complete": false,
+  "subjectiveListen": false,
+  "wholeDirectWatch": false
+}

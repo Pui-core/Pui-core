@@ -1,0 +1,169 @@
+{
+  "status": "VISUAL_REVISION02_REVIEW_ONLY",
+  "duration": 20,
+  "frames": 600,
+  "openingSeconds": 12,
+  "quoteSeconds": 8,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "jump",
+      "episode": 1,
+      "sourceStart": 791,
+      "start": 0,
+      "end": 60
+    },
+    {
+      "id": "move",
+      "episode": 1,
+      "sourceStart": 900,
+      "start": 60,
+      "end": 120
+    },
+    {
+      "id": "light",
+      "episode": 1,
+      "sourceStart": 984,
+      "start": 120,
+      "end": 180
+    },
+    {
+      "id": "branch-unbroken",
+      "episode": 2,
+      "sourceStart": 796,
+      "start": 180,
+      "end": 360
+    },
+    {
+      "id": "quote-context",
+      "episode": 8,
+      "sourceStart": 1100,
+      "start": 360,
+      "end": 600
+    }
+  ],
+  "quotes": [
+    {
+      "id": "ash",
+      "speaker": "アッシュ",
+      "text": "聞こえる。……ごめん、君は、誰？",
+      "lines": [
+        "聞こえる。",
+        "……ごめん、君は、誰？"
+      ],
+      "at": 12.1,
+      "windowEnd": 16.5,
+      "file": "sample02-ash.wav",
+      "duration": 3.30613473660541,
+      "end": 15.40613473660541,
+      "sha256": "ff76b987e21f36762a47ad76a9aca18f0d9706b7408f8b1daf723639bc00c61a"
+    },
+    {
+      "id": "lumi",
+      "speaker": "ルミ",
+      "text": "あなたを、待っている人。",
+      "lines": [
+        "あなたを、",
+        "待っている人。"
+      ],
+      "at": 16.6,
+      "windowEnd": 20,
+      "file": "sample02-lumi.wav",
+      "duration": 2.0803314010039813,
+      "end": 18.680331401003983,
+      "sha256": "6365357bc753f3c34c13933947e1aab65e46376949e1ae25832538f60b76ca14"
+    }
+  ],
+  "voices": [
+    {
+      "id": "opening",
+      "at": 0.1,
+      "end": 5.5201675921791,
+      "text": "助けるために進むほど、思い出を失う。灯の先で、何が残るのでしょうか。",
+      "caption": "助けるために進むほど、思い出を失う。\n灯の先で、何が残る？",
+      "kind": "commentary",
+      "file": "voice-01.wav",
+      "predictedDuration": 5.420167592179101,
+      "speedScale": 1.06,
+      "sha256": "84ccfcb1f8d8c11b5e5c4f083e1357ddc1009b1131831dbf2cb015ffe4b01ade",
+      "reusedSameProductionPhrase": true
+    },
+    {
+      "id": "ash",
+      "speaker": "アッシュ",
+      "text": "聞こえる。……ごめん、君は、誰？",
+      "lines": [
+        "聞こえる。",
+        "……ごめん、君は、誰？"
+      ],
+      "at": 12.1,
+      "windowEnd": 16.5,
+      "file": "sample02-ash.wav",
+      "duration": 3.30613473660541,
+      "end": 15.40613473660541,
+      "sha256": "ff76b987e21f36762a47ad76a9aca18f0d9706b7408f8b1daf723639bc00c61a"
+    },
+    {
+      "id": "lumi",
+      "speaker": "ルミ",
+      "text": "あなたを、待っている人。",
+      "lines": [
+        "あなたを、",
+        "待っている人。"
+      ],
+      "at": 16.6,
+      "windowEnd": 20,
+      "file": "sample02-lumi.wav",
+      "duration": 2.0803314010039813,
+      "end": 18.680331401003983,
+      "sha256": "6365357bc753f3c34c13933947e1aab65e46376949e1ae25832538f60b76ca14"
+    }
+  ],
+  "camera": {
+    "scale": 160,
+    "anchor": [
+      960,
+      780
+    ],
+    "position": [
+      733,
+      645
+    ],
+    "reason": "Actor near left golden intersection; room ahead toward actual landing; source UI/hint/control rail cropped out, no410px header"
+  },
+  "host": {
+    "scale": 20,
+    "position": [
+      1780,
+      1002
+    ],
+    "interval": [
+      0,
+      3.4
+    ],
+    "bodyHeightPx": 156,
+    "secondaryToRealGame": true,
+    "currentVoiceMatchedCore": true
+  },
+  "branch": {
+    "A": 7.666666666666667,
+    "B": 9.066666666666666,
+    "merge": 10.866666666666667,
+    "sourceContinuous": [
+      796,
+      976
+    ]
+  },
+  "noRepeatedSourceFrames": true,
+  "rate": 1,
+  "noFreeze": true,
+  "noFullSentenceDuplicationWithOriginalUi": true,
+  "quoteActualEpisode": 8,
+  "bgm": false,
+  "bgmReason": "Visual correction isolated from separate music comparison",
+  "gameAudioRecorded": false,
+  "addedSfx": false,
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "formal600Complete": false
+}

@@ -1,0 +1,123 @@
+{
+  "videoSha256": "1f58ccd4855dabaae817a41db8f8b0d204577e9a83a0acbae4816b22c0380938",
+  "directFinalFramesInspected": [
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-000.png",
+      "time": 0.5
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-018.png",
+      "time": 96.75333333333333
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-035.png",
+      "time": 190
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-053.png",
+      "time": 450
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-065.png",
+      "time": 495
+    },
+    {
+      "file": "qa/emberwake-firstcut04c-f-native-final-082.png",
+      "time": 618
+    }
+  ],
+  "directContactSheetsInspected": [
+    1,
+    9,
+    14,
+    19,
+    25,
+    33,
+    40,
+    45,
+    49,
+    54,
+    57,
+    62
+  ],
+  "wholeContactSheetsGenerated": 63,
+  "samplingFps": 2,
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "rootAccepted": false,
+  "firstcutCreativeReviewItems": [
+    {
+      "item": "Sub-second context inserts between some quoted UI pages",
+      "count": 47,
+      "totalSeconds": 25.133333333333333,
+      "examples": [
+        {
+          "unit": "u004",
+          "at": 20.433333333333334,
+          "end": 20.733333333333334
+        },
+        {
+          "unit": "u005",
+          "at": 27.733333333333334,
+          "end": 28.466666666666665
+        },
+        {
+          "unit": "u006",
+          "at": 28.466666666666665,
+          "end": 29.3
+        },
+        {
+          "unit": "u009",
+          "at": 52.9,
+          "end": 53.4
+        },
+        {
+          "unit": "u010",
+          "at": 55.8,
+          "end": 55.86666666666667
+        },
+        {
+          "unit": "u011",
+          "at": 58.266666666666666,
+          "end": 58.63333333333333
+        },
+        {
+          "unit": "u015",
+          "at": 83,
+          "end": 83.66666666666667
+        },
+        {
+          "unit": "u025",
+          "at": 124.9,
+          "end": 125.43333333333334
+        }
+      ]
+    },
+    {
+      "item": "Different-episode gameplay sometimes backs explanatory narration; evidence-specific comparisons themselves use the bound actual episode. Source episode bindings remain explicit in the edit specification."
+    },
+    {
+      "item": "Some original long journal lines are clipped in the pinned game UI; full VOX and edited multi-line captions retain their text. Original UI is not claimed fully readable."
+    },
+    {
+      "item": "BGM/voice/overall pacing still require subjective continuous review; metrics alone are not creative adoption"
+    }
+  ],
+  "mandatoryFixes": [
+    {
+      "id": "unintended-subsecond-context-inserts",
+      "severity": "P1",
+      "observedCount": 47,
+      "observedTotalSeconds": 25.133333333333333,
+      "shortestObservedSeconds": 0.06666666666666667,
+      "exampleUnit": "u010",
+      "exampleOutput": [
+        55.8,
+        55.86666666666667
+      ],
+      "expected": "No unintended 2-frame or other sub-second context flashes between readable dialogue/continuous action",
+      "fixDirection": "Reallocate contiguous actual UI/play and join semantic footage; retain natural voice and at least600s without repeated raw frames or freezes",
+      "status": "OPEN"
+    }
+  ]
+}

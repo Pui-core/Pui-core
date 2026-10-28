@@ -1,0 +1,1777 @@
+{
+  "fixedStory": "production/product/scripts/campaign/story.json",
+  "storySha256": "43f87eaedd0a918034d2ba939c85e0b7ba9a582c05746d59307887bb876e3b71",
+  "scheduleFrames": 18190,
+  "scheduleSeconds": 606.3333333333334,
+  "rows": [
+    {
+      "id": "u046",
+      "chapter": "face",
+      "episode": 4,
+      "kind": "quote",
+      "text": "ここで泣いた日、何も聞かなかったよね。",
+      "rawText": "ルミ：ここで泣いた日、何も聞かなかったよね。",
+      "sourceField": "intro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "ルミ：ここで泣いた日、何も聞かなかったよね。",
+      "sourceExact": true,
+      "voiceSeconds": 2.826666666666654,
+      "scheduledAt": 313.46666666666664,
+      "candidates": [
+        {
+          "file": "media/ep04-game.mp4",
+          "sourceStart": 2.6666666666666665,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "sourceStart": 5.066666666666666,
+          "seconds": 0.6666666666666666,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 3.0666666666666664,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u047",
+      "chapter": "face",
+      "episode": 4,
+      "kind": "quote",
+      "text": "話せるまで、待つつもりだった。",
+      "rawText": "アッシュ：話せるまで、待つつもりだった。",
+      "sourceField": "intro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "アッシュ：話せるまで、待つつもりだった。",
+      "sourceExact": true,
+      "voiceSeconds": 2.2719999999999914,
+      "scheduledAt": 316.5,
+      "candidates": [
+        {
+          "file": "media/ep04-game.mp4",
+          "sourceStart": 6.833333333333333,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "sourceStart": 9.233333333333333,
+          "seconds": 0.13333333333333333,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.533333333333333,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u048",
+      "chapter": "face",
+      "episode": 4,
+      "kind": "quote",
+      "text": "今も、待ってくれる？",
+      "rawText": "ルミ：今も、待ってくれる？",
+      "sourceField": "intro",
+      "sourceIndex": 2,
+      "pinnedStoryValue": "ルミ：今も、待ってくれる？",
+      "sourceExact": true,
+      "voiceSeconds": 2.00533333333334,
+      "scheduledAt": 319,
+      "candidates": [
+        {
+          "file": "media/ep04-game.mp4",
+          "sourceStart": 11,
+          "seconds": 2.2666666666666666,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.2666666666666666,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u050",
+      "chapter": "face",
+      "episode": 4,
+      "kind": "quote",
+      "text": "雨の音しか、思い出せない。",
+      "rawText": "アッシュ：雨の音しか、思い出せない。",
+      "sourceField": "outro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "アッシュ：雨の音しか、思い出せない。",
+      "sourceExact": true,
+      "voiceSeconds": 2.1653333333333364,
+      "scheduledAt": 321.23333333333335,
+      "candidates": [
+        {
+          "file": "media/ep04-game.mp4",
+          "sourceStart": 45.5,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "sourceStart": 50.3,
+          "seconds": 0.03333333333333333,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.433333333333333,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u051",
+      "chapter": "face",
+      "episode": 4,
+      "kind": "quote",
+      "text": "隣に座ってくれただけで、よかったんだ。",
+      "rawText": "ルミ：隣に座ってくれただけで、よかったんだ。",
+      "sourceField": "outro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "ルミ：隣に座ってくれただけで、よかったんだ。",
+      "sourceExact": true,
+      "voiceSeconds": 2.8586666666666645,
+      "scheduledAt": 323.6,
+      "candidates": [
+        {
+          "file": "media/ep04-game.mp4",
+          "sourceStart": 47.9,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "sourceStart": 50.333333333333336,
+          "seconds": 0.7,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 3.0999999999999996,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u052",
+      "chapter": "face",
+      "episode": 4,
+      "kind": "quote",
+      "text": "雨宿りの軒下で、泣くルミの隣に座った時間。",
+      "rawText": "雨宿りの軒下で、泣くルミの隣に座った時間。",
+      "sourceField": "memory",
+      "sourceIndex": null,
+      "pinnedStoryValue": "雨宿りの軒下で、泣くルミの隣に座った時間。",
+      "sourceExact": true,
+      "voiceSeconds": 3.680000000000007,
+      "scheduledAt": 326.6666666666667,
+      "candidates": [
+        {
+          "file": "media/ep04-game.mp4",
+          "sourceStart": 57.833333333333336,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.4,
+      "warnings": [
+        "tagged source segments shorter than narration, not full-word duration proof"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u052.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "4 samples at successive seconds show same memory; selected 04j tagged 2.4s is shorter than 3.68s voice, continuous frames still need check"
+      }
+    },
+    {
+      "id": "u055",
+      "chapter": "face",
+      "episode": 5,
+      "kind": "quote",
+      "text": "笑わせようとして、灰を顔につけたでしょ。",
+      "rawText": "ルミ：笑わせようとして、灰を顔につけたでしょ。",
+      "sourceField": "intro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "ルミ：笑わせようとして、灰を顔につけたでしょ。",
+      "sourceExact": true,
+      "voiceSeconds": 2.890666666666675,
+      "scheduledAt": 330.56666666666666,
+      "candidates": [
+        {
+          "file": "media/ep05-game.mp4",
+          "sourceStart": 2.8333333333333335,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep05-game.mp4",
+          "sourceStart": 5.233333333333333,
+          "seconds": 0.7333333333333333,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 3.1333333333333333,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u056",
+      "chapter": "face",
+      "episode": 5,
+      "kind": "quote",
+      "text": "あれは、転んだだけだ。",
+      "rawText": "アッシュ：あれは、転んだだけだ。",
+      "sourceField": "intro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "アッシュ：あれは、転んだだけだ。",
+      "sourceExact": true,
+      "voiceSeconds": 1.7493333333333112,
+      "scheduledAt": 333.6666666666667,
+      "candidates": [
+        {
+          "file": "media/ep05-game.mp4",
+          "sourceStart": 7,
+          "seconds": 2,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u057",
+      "chapter": "face",
+      "episode": 5,
+      "kind": "quote",
+      "text": "知ってる。だから、余計におかしかった。",
+      "rawText": "ルミ：知ってる。だから、余計におかしかった。",
+      "sourceField": "intro",
+      "sourceIndex": 2,
+      "pinnedStoryValue": "ルミ：知ってる。だから、余計におかしかった。",
+      "sourceExact": true,
+      "voiceSeconds": 3.349333333333334,
+      "scheduledAt": 335.6333333333333,
+      "candidates": [
+        {
+          "file": "media/ep05-game.mp4",
+          "sourceStart": 11.166666666666666,
+          "seconds": 3.6,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 3.6,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u058",
+      "chapter": "face",
+      "episode": 5,
+      "kind": "quote",
+      "text": "何がおかしかったのか、もうわからない。",
+      "rawText": "アッシュ：何がおかしかったのか、もうわからない。",
+      "sourceField": "outro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "アッシュ：何がおかしかったのか、もうわからない。",
+      "sourceExact": true,
+      "voiceSeconds": 2.6666666666666856,
+      "scheduledAt": 339.2,
+      "candidates": [
+        {
+          "file": "media/ep05-game.mp4",
+          "sourceStart": 45.766666666666666,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep05-game.mp4",
+          "sourceStart": 50.56666666666667,
+          "seconds": 0.5333333333333333,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.933333333333333,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u059",
+      "chapter": "face",
+      "episode": 5,
+      "kind": "quote",
+      "text": "笑ったことまで、嘘にはならないよ。",
+      "rawText": "ルミ：笑ったことまで、嘘にはならないよ。",
+      "sourceField": "outro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "ルミ：笑ったことまで、嘘にはならないよ。",
+      "sourceExact": true,
+      "voiceSeconds": 2.538666666666643,
+      "scheduledAt": 342.1,
+      "candidates": [
+        {
+          "file": "media/ep05-game.mp4",
+          "sourceStart": 48.166666666666664,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep05-game.mp4",
+          "sourceStart": 51.1,
+          "seconds": 0.4,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.8,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u063",
+      "chapter": "face",
+      "episode": 6,
+      "kind": "quote",
+      "text": "壁に、ふたりの影が残ってる。",
+      "rawText": "アッシュ：壁に、ふたりの影が残ってる。",
+      "sourceField": "intro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "アッシュ：壁に、ふたりの影が残ってる。",
+      "sourceExact": true,
+      "voiceSeconds": 2.3146666666666533,
+      "scheduledAt": 344.8666666666667,
+      "candidates": [
+        {
+          "file": "media/ep06-game.mp4",
+          "sourceStart": 3,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "sourceStart": 5.4,
+          "seconds": 0.16666666666666666,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.5666666666666664,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u064",
+      "chapter": "face",
+      "episode": 6,
+      "kind": "quote",
+      "text": "背の低いほうが私。すぐ追いつくって言ったね。",
+      "rawText": "ルミ：背の低いほうが私。すぐ追いつくって言ったね。",
+      "sourceField": "intro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "ルミ：背の低いほうが私。すぐ追いつくって言ったね。",
+      "sourceExact": true,
+      "voiceSeconds": 3.391999999999996,
+      "scheduledAt": 347.4,
+      "candidates": [
+        {
+          "file": "media/ep06-game.mp4",
+          "sourceStart": 7.166666666666667,
+          "seconds": 3.6333333333333333,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 3.6333333333333333,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u065",
+      "chapter": "face",
+      "episode": 6,
+      "kind": "quote",
+      "text": "俺が会いに行くのは、どんな顔の子だっけ。",
+      "rawText": "アッシュ：俺が会いに行くのは、どんな顔の子だっけ。",
+      "sourceField": "outro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "アッシュ：俺が会いに行くのは、どんな顔の子だっけ。",
+      "sourceExact": true,
+      "voiceSeconds": 2.7946666666666715,
+      "scheduledAt": 351,
+      "candidates": [
+        {
+          "file": "media/ep06-game.mp4",
+          "sourceStart": 45.833333333333336,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "sourceStart": 50.63333333333333,
+          "seconds": 0.6666666666666666,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 3.0666666666666664,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u066",
+      "chapter": "face",
+      "episode": 6,
+      "kind": "quote",
+      "text": "顔がわからなくても、待ってる人はいるよ。",
+      "rawText": "ルミ：顔がわからなくても、待ってる人はいるよ。",
+      "sourceField": "outro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "ルミ：顔がわからなくても、待ってる人はいるよ。",
+      "sourceExact": true,
+      "voiceSeconds": 3.018666666666661,
+      "scheduledAt": 354,
+      "candidates": [
+        {
+          "file": "media/ep06-game.mp4",
+          "sourceStart": 48.233333333333334,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "sourceStart": 51.3,
+          "seconds": 0.8666666666666667,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 3.2666666666666666,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u067",
+      "chapter": "face",
+      "episode": 6,
+      "kind": "quote",
+      "text": "ルミの顔と、表情を自分の記憶から思い描く力。",
+      "rawText": "ルミの顔と、表情を自分の記憶から思い描く力。",
+      "sourceField": "memory",
+      "sourceIndex": null,
+      "pinnedStoryValue": "ルミの顔と、表情を自分の記憶から思い描く力。",
+      "sourceExact": true,
+      "voiceSeconds": 3.78666666666669,
+      "scheduledAt": 357.23333333333335,
+      "candidates": [
+        {
+          "file": "media/ep06-game.mp4",
+          "sourceStart": 58.166666666666664,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.4,
+      "warnings": [
+        "tagged source segments shorter than narration, not full-word duration proof"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u067.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "4 successive sampled memory screens match the quotation; 2.4s tagged source is shorter than 3.79s voice"
+      }
+    },
+    {
+      "id": "u068",
+      "chapter": "face",
+      "episode": 6,
+      "kind": "quote",
+      "text": "ルミ。鐘楼で待つ、大切な人。顔は思い出せない。",
+      "rawText": "ルミ。鐘楼で待つ、大切な人。顔は思い出せない。",
+      "sourceField": "notebook",
+      "sourceIndex": null,
+      "pinnedStoryValue": "ルミ。鐘楼で待つ、大切な人。顔は思い出せない。",
+      "sourceExact": true,
+      "voiceSeconds": 4.3840000000000146,
+      "scheduledAt": 361.23333333333335,
+      "candidates": [
+        {
+          "file": "media/ep06-game.mp4",
+          "sourceStart": 56,
+          "seconds": 2,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2,
+      "warnings": [
+        "tagged source segments shorter than narration, not full-word duration proof"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u068.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "initial notebook matches for sampled +0.5,+1.5s then changes to memory page at +2.5s; 4.38s voice exceeds source page"
+      }
+    },
+    {
+      "id": "u036",
+      "chapter": "writing",
+      "episode": 3,
+      "kind": "quote",
+      "text": "帰り道も明るくしとく。ふたりで帰るんだ。",
+      "rawText": "アッシュ：帰り道も明るくしとく。ふたりで帰るんだ。",
+      "sourceField": "intro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "アッシュ：帰り道も明るくしとく。ふたりで帰るんだ。",
+      "sourceExact": true,
+      "voiceSeconds": 3.061333333333323,
+      "scheduledAt": 365.8333333333333,
+      "candidates": [
+        {
+          "file": "media/ep03-game.mp4",
+          "sourceStart": 6.666666666666667,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "sourceStart": 9.066666666666666,
+          "seconds": 0.9333333333333333,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 3.333333333333333,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u037",
+      "chapter": "writing",
+      "episode": 3,
+      "kind": "quote",
+      "text": "帰る道は書いた。忘れても、たどれる。",
+      "rawText": "アッシュ：帰る道は書いた。忘れても、たどれる。",
+      "sourceField": "outro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "アッシュ：帰る道は書いた。忘れても、たどれる。",
+      "sourceExact": true,
+      "voiceSeconds": 3.1573333333333267,
+      "scheduledAt": 369.1,
+      "candidates": [
+        {
+          "file": "media/ep03-game.mp4",
+          "sourceStart": 41.53333333333333,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.4,
+      "warnings": [
+        "tagged source segments shorter than narration, not full-word duration proof"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u037.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "six sampled seconds show complete original result page with three actual dialogue lines; 3.16s voice may fit continuous span pending frame-level check"
+      }
+    },
+    {
+      "id": "u038",
+      "chapter": "writing",
+      "episode": 3,
+      "kind": "quote",
+      "text": "道だけじゃ、思い出せないものもあるよ。",
+      "rawText": "ルミ：道だけじゃ、思い出せないものもあるよ。",
+      "sourceField": "outro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "ルミ：道だけじゃ、思い出せないものもあるよ。",
+      "sourceExact": true,
+      "voiceSeconds": 2.698666666666668,
+      "scheduledAt": 372.46666666666664,
+      "candidates": [
+        {
+          "file": "media/ep03-game.mp4",
+          "sourceStart": 43.93333333333333,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "sourceStart": 48.733333333333334,
+          "seconds": 0.5666666666666667,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.966666666666667,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u039",
+      "chapter": "writing",
+      "episode": 3,
+      "kind": "quote",
+      "text": "それなら、帰ってから教えてくれ。",
+      "rawText": "アッシュ：それなら、帰ってから教えてくれ。",
+      "sourceField": "outro",
+      "sourceIndex": 2,
+      "pinnedStoryValue": "アッシュ：それなら、帰ってから教えてくれ。",
+      "sourceExact": true,
+      "voiceSeconds": 2.5600000000000023,
+      "scheduledAt": 375.3666666666667,
+      "candidates": [
+        {
+          "file": "media/ep03-game.mp4",
+          "sourceStart": 46.333333333333336,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "sourceStart": 49.3,
+          "seconds": 0.4,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.8,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u040",
+      "chapter": "writing",
+      "episode": 3,
+      "kind": "quote",
+      "text": "夕暮れの街をルミと並んで帰った道。",
+      "rawText": "夕暮れの街をルミと並んで帰った道。",
+      "sourceField": "memory",
+      "sourceIndex": null,
+      "pinnedStoryValue": "夕暮れの街をルミと並んで帰った道。",
+      "sourceExact": true,
+      "voiceSeconds": 2.5279999999999916,
+      "scheduledAt": 378.1333333333333,
+      "candidates": [
+        {
+          "file": "media/ep03-game.mp4",
+          "sourceStart": 53.86666666666667,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "sourceStart": 56.266666666666666,
+          "seconds": 0.4,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.8,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u041",
+      "chapter": "writing",
+      "episode": 3,
+      "kind": "quote",
+      "text": "鐘楼のルミを助け、ふたりで帰る。火は記憶を使う。それでも、止まればあの子の灯が消える。",
+      "rawText": "鐘楼のルミを助け、ふたりで帰る。火は記憶を使う。それでも、止まればあの子の灯が消える。",
+      "sourceField": "notebook",
+      "sourceIndex": null,
+      "pinnedStoryValue": "鐘楼のルミを助け、ふたりで帰る。火は記憶を使う。それでも、止まればあの子の灯が消える。",
+      "sourceExact": true,
+      "voiceSeconds": 6.901333333333326,
+      "scheduledAt": 380.8666666666667,
+      "candidates": [
+        {
+          "file": "media/ep03-game.mp4",
+          "sourceStart": 51.7,
+          "seconds": 2,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2,
+      "warnings": [
+        "tagged source segments shorter than narration, not full-word duration proof"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u041.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "notebook text cut at right edge; next memory page appears by +2.5s; do not show as fully readable, use correctly attributed editorial reflow"
+      }
+    },
+    {
+      "id": "u042",
+      "chapter": "writing",
+      "episode": 3,
+      "kind": "narration",
+      "text": "道順を書けることと、隣を歩いた時間を思い出せること。会話と手帳を並べると、二つが分かれて見えます。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 7.22133333333332,
+      "scheduledAt": 388,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u070",
+      "chapter": "purpose",
+      "episode": 7,
+      "kind": "narration",
+      "text": "顔を思い出せない相手を、それでも助けに行く。理由を確かめようとしたアッシュが見つけるのは、同じ指示の書かれた手帳です。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 7.850666666666655,
+      "scheduledAt": 395.43333333333334,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u071",
+      "chapter": "purpose",
+      "episode": 7,
+      "kind": "quote",
+      "text": "同じことが、何度も書いてある。",
+      "rawText": "アッシュ：同じことが、何度も書いてある。",
+      "sourceField": "intro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "アッシュ：同じことが、何度も書いてある。",
+      "sourceExact": true,
+      "voiceSeconds": 2.1440000000000055,
+      "scheduledAt": 403.5,
+      "candidates": [
+        {
+          "file": "media/ep07-game.mp4",
+          "sourceStart": 3.1666666666666665,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.4,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u072",
+      "chapter": "purpose",
+      "episode": 7,
+      "kind": "quote",
+      "text": "鐘楼へ行け。あの子を助けろ。",
+      "rawText": "アッシュ：鐘楼へ行け。あの子を助けろ。",
+      "sourceField": "intro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "アッシュ：鐘楼へ行け。あの子を助けろ。",
+      "sourceExact": true,
+      "voiceSeconds": 2.250666666666689,
+      "scheduledAt": 405.8666666666667,
+      "candidates": [
+        {
+          "file": "media/ep07-game.mp4",
+          "sourceStart": 7.333333333333333,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "sourceStart": 9.733333333333333,
+          "seconds": 0.1,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.5,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u073",
+      "chapter": "purpose",
+      "episode": 7,
+      "kind": "quote",
+      "text": "書いたあなたは、今のあなたを信じたんだね。",
+      "rawText": "ルミ：書いたあなたは、今のあなたを信じたんだね。",
+      "sourceField": "intro",
+      "sourceIndex": 2,
+      "pinnedStoryValue": "ルミ：書いたあなたは、今のあなたを信じたんだね。",
+      "sourceExact": true,
+      "voiceSeconds": 2.9973333333333585,
+      "scheduledAt": 408.3333333333333,
+      "candidates": [
+        {
+          "file": "media/ep07-game.mp4",
+          "sourceStart": 11.5,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "sourceStart": 13.9,
+          "seconds": 0.8666666666666667,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 3.2666666666666666,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u074",
+      "chapter": "purpose",
+      "episode": 7,
+      "kind": "quote",
+      "text": "どうして助けたいのか、説明できない。",
+      "rawText": "アッシュ：どうして助けたいのか、説明できない。",
+      "sourceField": "outro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "アッシュ：どうして助けたいのか、説明できない。",
+      "sourceExact": true,
+      "voiceSeconds": 2.5813333333333617,
+      "scheduledAt": 411.53333333333336,
+      "candidates": [
+        {
+          "file": "media/ep07-game.mp4",
+          "sourceStart": 46.46666666666667,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "sourceStart": 51.266666666666666,
+          "seconds": 0.43333333333333335,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.833333333333333,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u075",
+      "chapter": "purpose",
+      "episode": 7,
+      "kind": "quote",
+      "text": "説明できなくても、ここまで来てくれた。",
+      "rawText": "ルミ：説明できなくても、ここまで来てくれた。",
+      "sourceField": "outro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "ルミ：説明できなくても、ここまで来てくれた。",
+      "sourceExact": true,
+      "voiceSeconds": 2.645333333333326,
+      "scheduledAt": 414.3333333333333,
+      "candidates": [
+        {
+          "file": "media/ep07-game.mp4",
+          "sourceStart": 48.86666666666667,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "sourceStart": 51.7,
+          "seconds": 0.5,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.9,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u076",
+      "chapter": "purpose",
+      "episode": 7,
+      "kind": "quote",
+      "text": "ルミを迎えに行くと決めた日の、決意に至るいきさつ。",
+      "rawText": "ルミを迎えに行くと決めた日の、決意に至るいきさつ。",
+      "sourceField": "memory",
+      "sourceIndex": null,
+      "pinnedStoryValue": "ルミを迎えに行くと決めた日の、決意に至るいきさつ。",
+      "sourceExact": true,
+      "voiceSeconds": 3.3600000000000136,
+      "scheduledAt": 417.2,
+      "candidates": [
+        {
+          "file": "media/ep07-game.mp4",
+          "sourceStart": 58.8,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.4,
+      "warnings": [
+        "tagged source segments shorter than narration, not full-word duration proof"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u076.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "four successive sampled memory screens match quotation, then returns to title; original tagged 2.4s shorter than 3.36s voice"
+      }
+    },
+    {
+      "id": "u077",
+      "chapter": "purpose",
+      "episode": 7,
+      "kind": "quote",
+      "text": "鐘楼へ行け。ルミを助けろ。これは俺が、俺に頼んだこと。",
+      "rawText": "鐘楼へ行け。ルミを助けろ。これは俺が、俺に頼んだこと。",
+      "sourceField": "notebook",
+      "sourceIndex": null,
+      "pinnedStoryValue": "鐘楼へ行け。ルミを助けろ。これは俺が、俺に頼んだこと。",
+      "sourceExact": true,
+      "voiceSeconds": 4.608000000000004,
+      "scheduledAt": 420.76666666666665,
+      "candidates": [
+        {
+          "file": "media/ep07-game.mp4",
+          "sourceStart": 56.63333333333333,
+          "seconds": 2,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2,
+      "warnings": [
+        "tagged source segments shorter than narration, not full-word duration proof"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u077.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "two sampled seconds show notebook then switches to memory page; 4.61s voice longer than visible original page"
+      }
+    },
+    {
+      "id": "u078",
+      "chapter": "purpose",
+      "episode": 7,
+      "kind": "narration",
+      "text": "助けに行くという目標は、文字に残っています。一方で、そう決めたいきさつは、失った記憶の側に移っています。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 8.074666666666644,
+      "scheduledAt": 425.6,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u081",
+      "chapter": "voice",
+      "episode": 8,
+      "kind": "quote",
+      "text": "アッシュ。声が届くうちに、言っておきたい。",
+      "rawText": "ルミ：アッシュ。声が届くうちに、言っておきたい。",
+      "sourceField": "intro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "ルミ：アッシュ。声が届くうちに、言っておきたい。",
+      "sourceExact": true,
+      "voiceSeconds": 3.3600000000000136,
+      "scheduledAt": 433.9,
+      "candidates": [
+        {
+          "file": "media/ep08-game.mp4",
+          "sourceStart": 3.3333333333333335,
+          "seconds": 3.6,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 3.6,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u082",
+      "chapter": "voice",
+      "episode": 8,
+      "kind": "quote",
+      "text": "無理をしてほしかったわけじゃない。",
+      "rawText": "ルミ：無理をしてほしかったわけじゃない。",
+      "sourceField": "intro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "ルミ：無理をしてほしかったわけじゃない。",
+      "sourceExact": true,
+      "voiceSeconds": 1.8559999999999945,
+      "scheduledAt": 437.46666666666664,
+      "candidates": [
+        {
+          "file": "media/ep08-game.mp4",
+          "sourceStart": 7.5,
+          "seconds": 2.1,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.1,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u083",
+      "chapter": "voice",
+      "episode": 8,
+      "kind": "quote",
+      "text": "迎えに行くって書いたのは、俺だ。",
+      "rawText": "アッシュ：迎えに行くって書いたのは、俺だ。",
+      "sourceField": "intro",
+      "sourceIndex": 2,
+      "pinnedStoryValue": "アッシュ：迎えに行くって書いたのは、俺だ。",
+      "sourceExact": true,
+      "voiceSeconds": 2.3999999999999773,
+      "scheduledAt": 439.53333333333336,
+      "candidates": [
+        {
+          "file": "media/ep08-game.mp4",
+          "sourceStart": 11.666666666666666,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "sourceStart": 14.066666666666666,
+          "seconds": 0.26666666666666666,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.6666666666666665,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u084",
+      "chapter": "voice",
+      "episode": 8,
+      "kind": "quote",
+      "text": "アッシュ、聞こえる？",
+      "rawText": "ルミ：アッシュ、聞こえる？",
+      "sourceField": "outro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "ルミ：アッシュ、聞こえる？",
+      "sourceExact": true,
+      "voiceSeconds": 1.8559999999999945,
+      "scheduledAt": 442.1333333333333,
+      "candidates": [
+        {
+          "file": "media/ep08-game.mp4",
+          "sourceStart": 46.06666666666667,
+          "seconds": 2.1,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.1,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u085",
+      "chapter": "voice",
+      "episode": 8,
+      "kind": "quote",
+      "text": "聞こえる。……ごめん、君は、誰？",
+      "rawText": "アッシュ：聞こえる。……ごめん、君は、誰？",
+      "sourceField": "outro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "アッシュ：聞こえる。……ごめん、君は、誰？",
+      "sourceExact": true,
+      "voiceSeconds": 3.519999999999982,
+      "scheduledAt": 444.2,
+      "candidates": [
+        {
+          "file": "media/ep08-game.mp4",
+          "sourceStart": 48.166666666666664,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "sourceStart": 46,
+          "seconds": 0.06666666666666667,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "sourceStart": 52.93333333333333,
+          "seconds": 1.3,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 3.7666666666666666,
+      "warnings": [
+        "source time reverses; do not combine blindly"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u085.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "six sampled seconds from source 48.167s show same result page with all three exact lines; prior two-frame reversal unnecessary in principle; full frame-level audit pending"
+      }
+    },
+    {
+      "id": "u086",
+      "chapter": "voice",
+      "episode": 8,
+      "kind": "quote",
+      "text": "あなたを、待っている人。",
+      "rawText": "ルミ：あなたを、待っている人。",
+      "sourceField": "outro",
+      "sourceIndex": 2,
+      "pinnedStoryValue": "ルミ：あなたを、待っている人。",
+      "sourceExact": true,
+      "voiceSeconds": 2.122666666666646,
+      "scheduledAt": 447.93333333333334,
+      "candidates": [
+        {
+          "file": "media/ep08-game.mp4",
+          "sourceStart": 50.56666666666667,
+          "seconds": 2.3666666666666667,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.3666666666666667,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u087",
+      "chapter": "voice",
+      "episode": 8,
+      "kind": "quote",
+      "text": "呼びかける声を、ルミの声だと感じ取る親しさ。",
+      "rawText": "呼びかける声を、ルミの声だと感じ取る親しさ。",
+      "sourceField": "memory",
+      "sourceIndex": null,
+      "pinnedStoryValue": "呼びかける声を、ルミの声だと感じ取る親しさ。",
+      "sourceExact": true,
+      "voiceSeconds": 3.3173333333333517,
+      "scheduledAt": 450.26666666666665,
+      "candidates": [
+        {
+          "file": "media/ep08-game.mp4",
+          "sourceStart": 58.4,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.4,
+      "warnings": [
+        "tagged source segments shorter than narration, not full-word duration proof"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u087.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "four sampled memory screens match then returns to title; 2.4s tagged shorter than voice3.32s"
+      }
+    },
+    {
+      "id": "u088",
+      "chapter": "voice",
+      "episode": 8,
+      "kind": "quote",
+      "text": "鐘楼へ行け。待っている人を助けろ。声が知らないものになっても、行き先は変わらない。",
+      "rawText": "鐘楼へ行け。待っている人を助けろ。声が知らないものになっても、行き先は変わらない。",
+      "sourceField": "notebook",
+      "sourceIndex": null,
+      "pinnedStoryValue": "鐘楼へ行け。待っている人を助けろ。声が知らないものになっても、行き先は変わらない。",
+      "sourceExact": true,
+      "voiceSeconds": 6.186666666666667,
+      "scheduledAt": 453.8,
+      "candidates": [
+        {
+          "file": "media/ep08-game.mp4",
+          "sourceStart": 56.233333333333334,
+          "seconds": 2,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2,
+      "warnings": [
+        "tagged source segments shorter than narration, not full-word duration proof"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u088.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "notebook text cut at right edge; next memory page appears by +2.5s; use correct attributed editorial reflow or omit"
+      }
+    },
+    {
+      "id": "u089",
+      "chapter": "voice",
+      "episode": 8,
+      "kind": "narration",
+      "text": "呼びかけは届いています。けれど、それが親しい相手の声だと感じることだけが、遠ざかっていきます。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 6.720000000000027,
+      "scheduledAt": 460.2,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u091",
+      "chapter": "voice",
+      "episode": 9,
+      "kind": "quote",
+      "text": "この矢印は、俺の字だ。",
+      "rawText": "アッシュ：この矢印は、俺の字だ。",
+      "sourceField": "intro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "アッシュ：この矢印は、俺の字だ。",
+      "sourceExact": true,
+      "voiceSeconds": 2.048000000000002,
+      "scheduledAt": 467.1333333333333,
+      "candidates": [
+        {
+          "file": "media/ep09-game.mp4",
+          "sourceStart": 3.5,
+          "seconds": 2.3,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.3,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u092",
+      "chapter": "voice",
+      "episode": 9,
+      "kind": "quote",
+      "text": "ここにいる、だったな。ひとりじゃない。",
+      "rawText": "アッシュ：ここにいる、だったな。ひとりじゃない。",
+      "sourceField": "intro",
+      "sourceIndex": 2,
+      "pinnedStoryValue": "アッシュ：ここにいる、だったな。ひとりじゃない。",
+      "sourceExact": true,
+      "voiceSeconds": 3.0293333333333408,
+      "scheduledAt": 469.4,
+      "candidates": [
+        {
+          "file": "media/ep09-game.mp4",
+          "sourceStart": 11.833333333333334,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "sourceStart": 14.233333333333333,
+          "seconds": 0.9,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 3.3,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u093",
+      "chapter": "voice",
+      "episode": 9,
+      "kind": "quote",
+      "text": "ルミと過ごした日々が、いつの出来事だったかという連なり。",
+      "rawText": "ルミと過ごした日々が、いつの出来事だったかという連なり。",
+      "sourceField": "memory",
+      "sourceIndex": null,
+      "pinnedStoryValue": "ルミと過ごした日々が、いつの出来事だったかという連なり。",
+      "sourceExact": true,
+      "voiceSeconds": 3.6159999999999854,
+      "scheduledAt": 472.6333333333333,
+      "candidates": [
+        {
+          "file": "media/ep09-game.mp4",
+          "sourceStart": 58.56666666666667,
+          "seconds": 3.8666666666666667,
+          "kind": "actual-ui-edited-reflow",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 3.8666666666666667,
+      "warnings": [
+        "editorial reflow, label it and verify original text truncation"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u093.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "source memory text cut at right edge; original 04j used explicit edited reflow; preserve attribution and verify artwork"
+      }
+    },
+    {
+      "id": "u094",
+      "chapter": "voice",
+      "episode": 9,
+      "kind": "quote",
+      "text": "鐘楼へ。待つ人を助けろ。エンと進め。",
+      "rawText": "鐘楼へ。待つ人を助けろ。エンと進め。",
+      "sourceField": "notebook",
+      "sourceIndex": null,
+      "pinnedStoryValue": "鐘楼へ。待つ人を助けろ。エンと進め。",
+      "sourceExact": true,
+      "voiceSeconds": 3.4986666666666792,
+      "scheduledAt": 476.46666666666664,
+      "candidates": [
+        {
+          "file": "media/ep09-game.mp4",
+          "sourceStart": 56.4,
+          "seconds": 2,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2,
+      "warnings": [
+        "tagged source segments shorter than narration, not full-word duration proof"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u094.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "sampled notebook page changes to truncated memory by +2.5s; 3.50s voice longer than original page"
+      }
+    },
+    {
+      "id": "u095",
+      "chapter": "voice",
+      "episode": 9,
+      "kind": "narration",
+      "text": "今度ほどけるのは、日々の順番やつながりです。何があったかだけでなく、それがいつのことだったかも、遠くなります。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 7.594666666666683,
+      "scheduledAt": 480.1666666666667,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u096",
+      "chapter": "voice",
+      "episode": 9,
+      "kind": "narration",
+      "text": "書き残す文章は、ここで短くなっています。これは初めからの全文を並べた一覧ではなく、その話の後に残された記録です。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 8.672000000000025,
+      "scheduledAt": 487.96666666666664,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u108",
+      "chapter": "city",
+      "episode": 1,
+      "kind": "narration",
+      "text": "もう一つ、進む場所の違いも見ます。同じ旅人を追っていても、周りに置かれている形や色は、章ごとに変わります。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 8.042666666666662,
+      "scheduledAt": 496.8666666666667,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u111",
+      "chapter": "city",
+      "episode": 7,
+      "kind": "narration",
+      "text": "さらに先では、空の額縁のような形が現れます。顔を思い描けない、という言葉の後では、この余白も違って見えるかもしれません。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 9.141333333333364,
+      "scheduledAt": 505.1333333333333,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u112",
+      "chapter": "city",
+      "episode": 10,
+      "kind": "narration",
+      "text": "鐘楼の章では、歯車や機械の形へ変わります。これは章の違いで、記憶を一つ失うたびに背景が消えた、という変化ではありません。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 9.397333333333336,
+      "scheduledAt": 514.5,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u113",
+      "chapter": "city",
+      "episode": 13,
+      "kind": "narration",
+      "text": "階段の先には、空へ開くアーチ。終幕の答えはここでは見せず、今どこへ足を置くかが読める画面を残します。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 7.711999999999989,
+      "scheduledAt": 524.1,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u115",
+      "chapter": "next",
+      "episode": 9,
+      "kind": "quote",
+      "text": "隣にいたのが、いつのことかもわからない。",
+      "rawText": "アッシュ：隣にいたのが、いつのことかもわからない。",
+      "sourceField": "outro",
+      "sourceIndex": 0,
+      "pinnedStoryValue": "アッシュ：隣にいたのが、いつのことかもわからない。",
+      "sourceExact": true,
+      "voiceSeconds": 2.816000000000031,
+      "scheduledAt": 546.5333333333333,
+      "candidates": [
+        {
+          "file": "media/ep09-game.mp4",
+          "sourceStart": 46.233333333333334,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "sourceStart": 51.03333333333333,
+          "seconds": 0.6666666666666666,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 3.0666666666666664,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u116",
+      "chapter": "next",
+      "episode": 9,
+      "kind": "quote",
+      "text": "それでも、待たせたままにはできない。",
+      "rawText": "アッシュ：それでも、待たせたままにはできない。",
+      "sourceField": "outro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "アッシュ：それでも、待たせたままにはできない。",
+      "sourceExact": true,
+      "voiceSeconds": 2.4533333333333758,
+      "scheduledAt": 549.5666666666667,
+      "candidates": [
+        {
+          "file": "media/ep09-game.mp4",
+          "sourceStart": 48.63333333333333,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "sourceStart": 51.7,
+          "seconds": 0.3,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.6999999999999997,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u117",
+      "chapter": "next",
+      "episode": 9,
+      "kind": "narration",
+      "text": "先へ進むほど失うものが変わり、手帳に残る言葉も変わる。道順、名前、助けるという指示が、同じものとしては残りません。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 9.258666666666613,
+      "scheduledAt": 552.2333333333333,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u118",
+      "chapter": "next",
+      "episode": 11,
+      "kind": "quote",
+      "text": "朝が来たら、空の色を教えてくれ。",
+      "rawText": "アッシュ：朝が来たら、空の色を教えてくれ。",
+      "sourceField": "outro",
+      "sourceIndex": 2,
+      "pinnedStoryValue": "アッシュ：朝が来たら、空の色を教えてくれ。",
+      "sourceExact": true,
+      "voiceSeconds": 2.6240000000000236,
+      "scheduledAt": 561.7,
+      "candidates": [
+        {
+          "file": "media/ep11-game.mp4",
+          "sourceStart": 47,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "sourceStart": 49.4,
+          "seconds": 0.36666666666666664,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "sourceStart": 49.766666666666666,
+          "seconds": 0.1,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 2.8666666666666667,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u119",
+      "chapter": "next",
+      "episode": 11,
+      "kind": "narration",
+      "text": "この言葉は、思い出せないものを相手へ尋ねています。記録に頼るだけでなく、もう一度教えてもらうという会話も、道の先に置かれています。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 9.226666666666688,
+      "scheduledAt": 564.5333333333333,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u120",
+      "chapter": "next",
+      "episode": 13,
+      "kind": "quote",
+      "text": "覚えようとしなくていい。今は、足元を見て。",
+      "rawText": "ルミ：覚えようとしなくていい。今は、足元を見て。",
+      "sourceField": "intro",
+      "sourceIndex": 1,
+      "pinnedStoryValue": "ルミ：覚えようとしなくていい。今は、足元を見て。",
+      "sourceExact": true,
+      "voiceSeconds": 3.67999999999995,
+      "scheduledAt": 573.9666666666667,
+      "candidates": [
+        {
+          "file": "media/ep13-game.mp4",
+          "sourceStart": 8.333333333333334,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 2.4,
+      "warnings": [
+        "tagged source segments shorter than narration, not full-word duration proof"
+      ],
+      "review": "raw sources verified only by metadata; images not individually audited",
+      "visualSampling": {
+        "sheet": "/home/pui/tmp/projectp127-story04k-agent/u120.png",
+        "method": "6 source frames sampled at about 1s apart; not continuous frame proof",
+        "observed": "first four sampled seconds show same intro line, then next dialogue appears; possible fit for 3.68s voice, exact transition check pending"
+      }
+    },
+    {
+      "id": "u121",
+      "chapter": "next",
+      "episode": 13,
+      "kind": "quote",
+      "text": "待っている人がいる。それは、わかる。",
+      "rawText": "アッシュ：待っている人がいる。それは、わかる。",
+      "sourceField": "intro",
+      "sourceIndex": 2,
+      "pinnedStoryValue": "アッシュ：待っている人がいる。それは、わかる。",
+      "sourceExact": true,
+      "voiceSeconds": 2.9226666666667143,
+      "scheduledAt": 577.8666666666667,
+      "candidates": [
+        {
+          "file": "media/ep13-game.mp4",
+          "sourceStart": 12.5,
+          "seconds": 2.4,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        },
+        {
+          "file": "media/ep13-game.mp4",
+          "sourceStart": 14.9,
+          "seconds": 0.7666666666666667,
+          "kind": "actual-ui",
+          "continuityRepair": true
+        }
+      ],
+      "candidateSeconds": 3.1666666666666665,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u122",
+      "chapter": "next",
+      "episode": 13,
+      "kind": "narration",
+      "text": "誰を待たせているのかを、前と同じようには語れなくても。今は、待っている人がいることと、目の前の足元が残っています。",
+      "rawText": null,
+      "sourceField": null,
+      "sourceIndex": null,
+      "pinnedStoryValue": null,
+      "sourceExact": null,
+      "voiceSeconds": 8.288000000000011,
+      "scheduledAt": 581,
+      "candidates": [],
+      "candidateSeconds": 0,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    },
+    {
+      "id": "u123",
+      "chapter": "next",
+      "episode": 13,
+      "kind": "quote",
+      "text": "走れ。",
+      "rawText": "走れ。",
+      "sourceField": "notebook",
+      "sourceIndex": null,
+      "pinnedStoryValue": "走れ。",
+      "sourceExact": true,
+      "voiceSeconds": 0.6933333333333849,
+      "scheduledAt": 589.5,
+      "candidates": [
+        {
+          "file": "media/ep13-game.mp4",
+          "sourceStart": 57.03333333333333,
+          "seconds": 0.9333333333333333,
+          "kind": "actual-ui",
+          "continuityRepair": false
+        }
+      ],
+      "candidateSeconds": 0.9333333333333333,
+      "warnings": [],
+      "review": "raw sources verified only by metadata; images not individually audited"
+    }
+  ],
+  "quoteCount": 48,
+  "exactQuotes": 48,
+  "issueRows": 13,
+  "scope": "Candidate source offsets come from 04j project metadata, not claim of continuous visual verification",
+  "published": false,
+  "visualSampleCount": 13,
+  "editingGuard": "No freeze/loop merely to fill cue; use editorial reflow explicitly attributed for truncated originals; pair exact recorded speaker/episode; no unsupported background scenery"
+}

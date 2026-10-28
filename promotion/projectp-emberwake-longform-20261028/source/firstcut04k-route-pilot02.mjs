@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import {file,np,EC,run,parse,copy} from './native.mjs';
+const from=file('projects/emberwake-firstcut04k-route-pilot.ecproj');
+const to=file('projects/emberwake-firstcut04k-route-pilot02.ecproj');
+if(fs.existsSync(to))throw Error('Preserve existing version');
+copy(from,to);
+const info=parse((await run(EC,['--project',np(to),'info','--json'],'firstcut04k-route-pilot02-info.json')).stdout);
+const layers=info.activeComp.layers.filter(x=>['actual normal route','actual dash route'].includes(x.name));
+if(layers.length!==2)throw Error('Exact route layers required');
+const src=`var ids=${JSON.stringify(layers.map(x=>x.id))};for(var i=0;i<ids.length;i++){var id=ids[i];app.run('layer.addMask',{layer:id,shape:'rect',rect:[370,300,1180,668],mode:'Add'});app.run('prop.set',{layer:id,path:'transform/anchor',value:[960,634,0]});app.run('prop.set',{layer:id,path:'transform/scale',value:[70,70,100]});}writeLn(JSON.stringify({layers:ids.length}));`;
+fs.writeFileSync(file('source/firstcut04k-route-pilot02.jsx'),src,{flag:'wx'});
+const built=parse((await run(EC,['--project',np(to),'script',np(file('source/firstcut04k-route-pilot02.jsx')),'--save-as',np(to),'--json'],'firstcut04k-route-pilot02-build.json')).stdout);
+if(!built.ok)throw Error('EffectCraft did not save comparison');
+for(const t of [1,4.9,6])await run(EC,['--project',np(to),'render-frame','--comp','EMBERWAKE 04k route comparison pilot','--time',String(t),'--out',np(file(`qa/firstcut04k-route-pilot02-${t}.png`)),'--json'],`firstcut04k-route-pilot02-${t}.json`);
+console.log('EffectCraft pilot02 saved and three frames rendered');

@@ -1,0 +1,6278 @@
+{
+  "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "chapters": [
+    {
+      "id": "cost",
+      "title": "助けて進むと、何を失う？",
+      "question": "失敗と、物語を先へ進めることは同じ代償か",
+      "newEvidence": "最初の実喪失と約束、初回clear後のlost0→1",
+      "next": "失敗したときにも失った数は増えるか",
+      "at": 0,
+      "end": 76,
+      "units": [
+        "u001",
+        "u002",
+        "u003",
+        "u004",
+        "u005",
+        "u006",
+        "u007",
+        "u008",
+        "u009",
+        "u010",
+        "u011",
+        "u012",
+        "u013",
+        "u014"
+      ]
+    },
+    {
+      "id": "failure",
+      "title": "落ちた時、失うものは？",
+      "question": "落下/R/済話再訪でも失った記憶数が増えるか",
+      "newEvidence": "同じ出発状態の短押し実落下/長押し実着地、lost1→1と同じsave",
+      "next": "別の道なら代償を選べるか",
+      "at": 76,
+      "end": 132.86666666666667,
+      "units": [
+        "u015",
+        "u017",
+        "u018",
+        "u019",
+        "u020",
+        "u022",
+        "u023",
+        "u024",
+        "u025"
+      ]
+    },
+    {
+      "id": "path",
+      "title": "近道で、代償は変わる？",
+      "question": "通常4足場と任意2足場はどこに着くか",
+      "newEvidence": "両方の実着地/同じ合流/同じ2話の喪失内容",
+      "next": "道を覚えられないなら、文字に頼れるか",
+      "at": 132.86666666666667,
+      "end": 187.66666666666666,
+      "units": [
+        "u026",
+        "u027",
+        "u028",
+        "u029",
+        "u030",
+        "u031",
+        "u032",
+        "u034",
+        "u035"
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "書いておけば、帰れる？",
+      "question": "行き先を書き残すことは、一緒に帰った記憶を保つことか",
+      "newEvidence": "3話の道/手帳/帰り道を失う実文章",
+      "next": "出来事を忘れても、面影は頼りになるか",
+      "at": 187.66666666666666,
+      "end": 234.16666666666666,
+      "units": [
+        "u036",
+        "u037",
+        "u038",
+        "u039",
+        "u040",
+        "u041",
+        "u042",
+        "u044",
+        "u045"
+      ]
+    },
+    {
+      "id": "face",
+      "title": "顔を見れば、思い出せる？",
+      "question": "忘却の対象は出来事から何へ移るか",
+      "newEvidence": "雨宿り/笑顔の出来事/顔を思い描く力の相違",
+      "next": "助けたい理由まで消えたら何を頼るか",
+      "at": 234.16666666666666,
+      "end": 318.96666666666664,
+      "units": [
+        "u046",
+        "u047",
+        "u048",
+        "u049",
+        "u050",
+        "u051",
+        "u052",
+        "u054",
+        "u055",
+        "u056",
+        "u057",
+        "u058",
+        "u059",
+        "u062",
+        "u063",
+        "u064",
+        "u065",
+        "u066",
+        "u067",
+        "u068",
+        "u069"
+      ]
+    },
+    {
+      "id": "purpose",
+      "title": "理由を忘れても、進める？",
+      "question": "手帳に書いた目標と、その理由は同じものか",
+      "newEvidence": "7話の過去の自分からの依頼/決意のいきさつの喪失",
+      "next": "声が聞こえれば相手を知れるか",
+      "at": 318.96666666666664,
+      "end": 374.26666666666665,
+      "units": [
+        "u070",
+        "u071",
+        "u072",
+        "u073",
+        "u074",
+        "u075",
+        "u076",
+        "u077",
+        "u078",
+        "u079",
+        "u080"
+      ]
+    },
+    {
+      "id": "voice",
+      "title": "聞こえるのに、君は誰？",
+      "question": "聞こえる音と親しい声として感じることの違い",
+      "newEvidence": "8話の呼びかけ/応答/声の親しさ喪失と9話の時間の連なり",
+      "next": "変わる物語を、画面は何で支えるか",
+      "at": 374.26666666666665,
+      "end": 437.73333333333335,
+      "units": [
+        "u081",
+        "u082",
+        "u083",
+        "u084",
+        "u085",
+        "u086",
+        "u087",
+        "u088",
+        "u089",
+        "u091",
+        "u092",
+        "u093",
+        "u094",
+        "u095",
+        "u096"
+      ]
+    },
+    {
+      "id": "form",
+      "title": "頼れる一歩を、どう見せる？",
+      "question": "見た目の版差と入力修正は何を変え、何を変えていないか",
+      "newEvidence": "保存24px/64px原画の実差分、画角保持、旧inputfix記録と現入力の区別",
+      "next": "同じ旅人が進む街には何の違いがあるか",
+      "at": 437.73333333333335,
+      "end": 510.3333333333333,
+      "units": [
+        "u097",
+        "u098",
+        "u099",
+        "u100",
+        "u101",
+        "u103",
+        "u104",
+        "u105"
+      ]
+    },
+    {
+      "id": "city",
+      "title": "街を進み、何が残る？",
+      "question": "章が変わると画面で何が違うか",
+      "newEvidence": "公園/雨の軒/額縁/鐘楼/アーチの実画面と、残す指示の短さ",
+      "next": "待つ人の名前を思い出せなくても次の一歩を選べるか",
+      "at": 510.3333333333333,
+      "end": 560.8666666666667,
+      "units": [
+        "u108",
+        "u109",
+        "u110",
+        "u111",
+        "u112",
+        "u113"
+      ]
+    },
+    {
+      "id": "next",
+      "title": "最後に、何を頼りにする？",
+      "question": "記憶と記録と今の選択はどう繋がるか",
+      "newEvidence": "9話のそれでも待たせない、13話の足元を見る/待つ人/走れ",
+      "next": "終幕を伏せ、自分なら何を残すかを問う",
+      "at": 560.8666666666667,
+      "end": 620.8666666666667,
+      "units": [
+        "u115",
+        "u116",
+        "u117",
+        "u118",
+        "u119",
+        "u120",
+        "u121",
+        "u122",
+        "u123",
+        "u124",
+        "u125"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "unit": "u001",
+      "chapter": "cost",
+      "at": 0,
+      "end": 6.533333333333333,
+      "text": "クリアしたのに、公園で過ごした午後を忘れている。助けて進むと、何を失うのでしょうか。",
+      "quote": false,
+      "evidence": "Actual ep1 notebook memory / first clear",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            1683,
+            1803
+          ],
+          "output": [
+            0,
+            120
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            395,
+            471
+          ],
+          "output": [
+            120,
+            196
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u001.wav",
+      "voiceSha256": "b487781f72b4d2e4d68c3b1a3d8f26fa3578a87f0c5876c8fb29605d7e78dde3"
+    },
+    {
+      "unit": "u002",
+      "chapter": "cost",
+      "at": 6.533333333333333,
+      "end": 14.533333333333333,
+      "text": "失敗した時と、新しい話を終えた時。それから、違う道を選んだ時。実際の結果と手帳を比べます。",
+      "quote": false,
+      "evidence": "Declared tests; no future outcome invented",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            471,
+            565
+          ],
+          "output": [
+            196,
+            290
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            715,
+            820
+          ],
+          "output": [
+            290,
+            395
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            820,
+            861
+          ],
+          "output": [
+            395,
+            436
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u002.wav",
+      "voiceSha256": "bf03f825479539eae7f29a7a8983b66759f0bc8c2213f747a5ff84ae18522d0f"
+    },
+    {
+      "unit": "u003",
+      "chapter": "cost",
+      "at": 14.533333333333333,
+      "end": 18.033333333333335,
+      "text": "アッシュ、覚えてる？ あの日の約束。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            20,
+            92
+          ],
+          "output": [
+            436,
+            508
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            861,
+            894
+          ],
+          "output": [
+            508,
+            541
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u003.wav",
+      "voiceSha256": "e0d9444624c2c87312b94e3742c59294ba12646538ec14335e38f60a250d9a95"
+    },
+    {
+      "unit": "u004",
+      "chapter": "cost",
+      "at": 18.033333333333335,
+      "end": 20.733333333333334,
+      "text": "当たり前だろ。絶対迎えに行く。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            145,
+            217
+          ],
+          "output": [
+            541,
+            613
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            894,
+            903
+          ],
+          "output": [
+            613,
+            622
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u004.wav",
+      "voiceSha256": "7dddddf94929c16ea168d1e5e09a561acbbf0b083028b0a25359ff054f08ef41"
+    },
+    {
+      "unit": "u005",
+      "chapter": "cost",
+      "at": 20.733333333333334,
+      "end": 28.466666666666665,
+      "text": "迎えに行く相手はルミ。目的地は鐘楼です。最初の約束は、まだ当たり前のように言える言葉として始まります。",
+      "quote": false,
+      "evidence": "ep1 intro and notebook; editorial reading explicitly tied to dialogue",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            903,
+            1008
+          ],
+          "output": [
+            622,
+            727
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            1008,
+            1113
+          ],
+          "output": [
+            727,
+            832
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            1113,
+            1135
+          ],
+          "output": [
+            832,
+            854
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u005.wav",
+      "voiceSha256": "062e5dbf76ca16217763e7573301b2a963744519966aabbc2651254d330b4baa"
+    },
+    {
+      "unit": "u006",
+      "chapter": "cost",
+      "at": 28.466666666666665,
+      "end": 36.266666666666666,
+      "text": "歩く、跳ぶ、灯を拾う。最初の話では、三つの光を拾うと空中ダッシュが使えるようになります。",
+      "quote": false,
+      "evidence": "Pinned campaign Main and actual first unlock",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            1135,
+            1160
+          ],
+          "output": [
+            854,
+            879
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            1273,
+            1313
+          ],
+          "output": [
+            879,
+            919
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            445,
+            550
+          ],
+          "output": [
+            919,
+            1024
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            550,
+            614
+          ],
+          "output": [
+            1024,
+            1088
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u006.wav",
+      "voiceSha256": "e98920fb1cfe28c0065f2422b4c92ab8e04cd2eddc729866c06d7b7bd7188c43"
+    },
+    {
+      "unit": "u007",
+      "chapter": "cost",
+      "at": 36.266666666666666,
+      "end": 41.266666666666666,
+      "text": "三つ目の光から、ダッシュ習得へ",
+      "quote": false,
+      "evidence": "Actual initial collection/has_dash transition, not fixture",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            565,
+            715
+          ],
+          "output": [
+            1088,
+            1238
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u007.wav",
+      "voiceSha256": "d2ecad0529c8eb7c6423baff34cee82877f6ad5143619e951dabaec1f64d5fd5"
+    },
+    {
+      "unit": "u008",
+      "chapter": "cost",
+      "at": 41.266666666666666,
+      "end": 50.5,
+      "text": "炉は三つ。対応する印と回路の線を見て、道を開き、次の炉へ向かいます。ここで点けているのは、先へ進むための灯です。",
+      "quote": false,
+      "evidence": "Actual three hearths/two switches; chips/holes absent, no carry promise",
+      "sourceSegments": [
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            614,
+            719
+          ],
+          "output": [
+            1238,
+            1343
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            719,
+            796
+          ],
+          "output": [
+            1343,
+            1420
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            976,
+            1071
+          ],
+          "output": [
+            1420,
+            1515
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u008.wav",
+      "voiceSha256": "38a6bb8bbd33263887c30180e3d805c389d13cf7d8f73d56e98798278e4fcba8"
+    },
+    {
+      "unit": "u009",
+      "chapter": "cost",
+      "at": 50.5,
+      "end": 53.4,
+      "text": "あの公園で、何をしてたんだっけ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            1313,
+            1385
+          ],
+          "output": [
+            1515,
+            1587
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            1071,
+            1086
+          ],
+          "output": [
+            1587,
+            1602
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u009.wav",
+      "voiceSha256": "b0e069725f273cbeef5d9a29e4e59ddb29882900af5216081f8614ffb828bca1"
+    },
+    {
+      "unit": "u010",
+      "chapter": "cost",
+      "at": 53.4,
+      "end": 55.86666666666667,
+      "text": "……私の名前は、まだわかる？",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            1385,
+            1457
+          ],
+          "output": [
+            1602,
+            1674
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            1086,
+            1088
+          ],
+          "output": [
+            1674,
+            1676
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u010.wav",
+      "voiceSha256": "c73965a9074fa6ff57f8b708cb0d9ecba3a1ee48808239edf44e5c1f7623ab3c"
+    },
+    {
+      "unit": "u011",
+      "chapter": "cost",
+      "at": 55.86666666666667,
+      "end": 58.63333333333333,
+      "text": "ルミ。君だけは、忘れない。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            1457,
+            1529
+          ],
+          "output": [
+            1676,
+            1748
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            1088,
+            1099
+          ],
+          "output": [
+            1748,
+            1759
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u011.wav",
+      "voiceSha256": "d02e6e75fbff2cbb6291bf26b38235da3ab8e37831a80979122420cc1eed229f"
+    },
+    {
+      "unit": "u012",
+      "chapter": "cost",
+      "at": 58.63333333333333,
+      "end": 60.93333333333333,
+      "text": "公園でルミと走り回った午後。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            1099,
+            1168
+          ],
+          "output": [
+            1759,
+            1828
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u012.wav",
+      "voiceSha256": "ee9f974f27e005889a2e0c6d575648d4b279c7814be407c48800a8ebf9cc7aea"
+    },
+    {
+      "unit": "u013",
+      "chapter": "cost",
+      "at": 60.93333333333333,
+      "end": 68.9,
+      "text": "名前は言えても、一緒に走り回った午後は思い出せない。最初の喪失は、相手のすべてを一度に消すものではありません。",
+      "quote": false,
+      "evidence": "ep1 outro/memory; narrowly describes the first result",
+      "sourceSegments": [
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            1168,
+            1273
+          ],
+          "output": [
+            1828,
+            1933
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            1273,
+            1307
+          ],
+          "output": [
+            1933,
+            1967
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            366,
+            400
+          ],
+          "output": [
+            1967,
+            2001
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            599,
+            665
+          ],
+          "output": [
+            2001,
+            2067
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u013.wav",
+      "voiceSha256": "23a889aa4d0d954ef854d6c3c2a64d34aa6e0a018855bff4fc5dcb6272877f94"
+    },
+    {
+      "unit": "u014",
+      "chapter": "cost",
+      "at": 68.9,
+      "end": 76,
+      "text": "タイトルの、失った記憶という表示が、ゼロから一つへ。最初の午後が、この数に加わりました。",
+      "quote": false,
+      "evidence": "Observed ep1 title0 and title1",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            1160,
+            1273
+          ],
+          "output": [
+            2067,
+            2180
+          ],
+          "kind": "actual-play"
+        },
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            0,
+            20
+          ],
+          "output": [
+            2180,
+            2200
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            1593,
+            1613
+          ],
+          "output": [
+            2200,
+            2220
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep01-game.mp4",
+          "frames": [
+            1618,
+            1678
+          ],
+          "output": [
+            2220,
+            2280
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u014.wav",
+      "voiceSha256": "a5fbde14ab84879e2dcb71f4341bd7f811ed1c01c0a96fa53a2ee358da9fb59e"
+    },
+    {
+      "unit": "u015",
+      "chapter": "failure",
+      "at": 76,
+      "end": 83.66666666666667,
+      "text": "それなら、足場から落ちた時にも、この数は増えるのでしょうか。同じ話を開き直して、実際に試します。",
+      "quote": false,
+      "evidence": "Owned replay from exact completed[1] save",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            665,
+            770
+          ],
+          "output": [
+            2280,
+            2385
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            770,
+            875
+          ],
+          "output": [
+            2385,
+            2490
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            875,
+            895
+          ],
+          "output": [
+            2490,
+            2510
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u015.wav",
+      "voiceSha256": "a31bb6e7f58c0859fae4a85d1ae7550a7eaf08dbc34fb9e67f56c7ab04cc35ae"
+    },
+    {
+      "unit": "u017",
+      "chapter": "failure",
+      "at": 83.66666666666667,
+      "end": 88.3,
+      "text": "短く押すと届かず、実際に落下。出発地点へ戻ります。",
+      "quote": false,
+      "evidence": "Actual short1 display frame, fall increments1 and checkpoint return",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-replay-controls01-game.mp4",
+          "frames": [
+            121,
+            217
+          ],
+          "output": [
+            2510,
+            2606
+          ],
+          "kind": "actual-play"
+        },
+        {
+          "file": "media/ep01-replay-controls01-game.mp4",
+          "frames": [
+            217,
+            260
+          ],
+          "output": [
+            2606,
+            2649
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u017.wav",
+      "voiceSha256": "847edb20787f700407bc2e3f292248a5ce8370f82e8668c9618968c56d144539"
+    },
+    {
+      "unit": "u018",
+      "chapter": "failure",
+      "at": 88.3,
+      "end": 94.36666666666666,
+      "text": "普通の再挑戦で最初へ戻り、もう一度。同じ場所から、今度は長く押します。",
+      "quote": false,
+      "evidence": "Actual ordinary R and normal story skip; no state setter",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-replay-controls01-game.mp4",
+          "frames": [
+            260,
+            390
+          ],
+          "output": [
+            2701,
+            2831
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [
+        {
+          "unit": "u018",
+          "start": 2649,
+          "end": 2701,
+          "type": "same-start",
+          "title": "出発条件をそろえる",
+          "label": "今回の実入力観測"
+        }
+      ],
+      "voiceFile": "firstcut04-u018.wav",
+      "voiceSha256": "f9e9c8a2d480c01d859b3a9765522c71307d3364e9ef2c8eff36bf6cca62eca1"
+    },
+    {
+      "unit": "u019",
+      "chapter": "failure",
+      "at": 94.36666666666666,
+      "end": 96.73333333333333,
+      "text": "上の足場に、着地できました。",
+      "quote": false,
+      "evidence": "Actual held18 display frames, target landing, no fall",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-replay-controls01-game.mp4",
+          "frames": [
+            390,
+            461
+          ],
+          "output": [
+            2831,
+            2902
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u019.wav",
+      "voiceSha256": "54c5cff690b6cead6b6b6235dfa88c69d9f8402c17be1d5db4b98eb91f980be2"
+    },
+    {
+      "unit": "u020",
+      "chapter": "failure",
+      "at": 96.73333333333333,
+      "end": 104.83333333333333,
+      "text": "落下や再挑戦のあとも、失った記憶数は一つのまま。この収録で確かめられたのは、数がさらに増えないことです。",
+      "quote": false,
+      "evidence": "Actual completed[1]/lost1→1; not proof of restoration",
+      "sourceSegments": [
+        {
+          "file": "media/ep01-replay-controls01-game.mp4",
+          "frames": [
+            0,
+            53
+          ],
+          "output": [
+            2902,
+            2955
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep01-replay-controls01-game.mp4",
+          "frames": [
+            1706,
+            1726
+          ],
+          "output": [
+            2955,
+            2975
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep01-replay-controls01-game.mp4",
+          "frames": [
+            1731,
+            1791
+          ],
+          "output": [
+            2975,
+            3035
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep01-replay-controls01-game.mp4",
+          "frames": [
+            1796,
+            1906
+          ],
+          "output": [
+            3035,
+            3145
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u020.wav",
+      "voiceSha256": "7ed4b9515b3e512ff379e256cb723a656128a5f2b1148f4ce0f87f2e227ba87d"
+    },
+    {
+      "unit": "u022",
+      "chapter": "failure",
+      "at": 104.83333333333333,
+      "end": 113.03333333333333,
+      "text": "次に、物語としてまだ終えていない第二話へ進みます。進んだ後の手帳には、最初の午後とは違う喪失が記されます。",
+      "quote": false,
+      "evidence": "Actual fresh first completion of episode2",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            895,
+            1000
+          ],
+          "output": [
+            3145,
+            3250
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            1000,
+            1105
+          ],
+          "output": [
+            3250,
+            3355
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            1105,
+            1141
+          ],
+          "output": [
+            3355,
+            3391
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u022.wav",
+      "voiceSha256": "695259134a728fdaabe8f7d78cef2ebc4f3283a391309e29cc13b634b393e2ce"
+    },
+    {
+      "unit": "u023",
+      "chapter": "failure",
+      "at": 113.03333333333333,
+      "end": 116,
+      "text": "暗い道で二度の灯を交わす合図を決めた夜。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            1141,
+            1230
+          ],
+          "output": [
+            3391,
+            3480
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u023.wav",
+      "voiceSha256": "f3b58f02f87d7f779fe7a67d1521c8f9a44046bdd4e30526593c0c0c321e5384"
+    },
+    {
+      "unit": "u024",
+      "chapter": "failure",
+      "at": 116,
+      "end": 124.9,
+      "text": "第一話のあとが一つ、第二話のあとが二つ。失敗の回数を増やした場面ではなく、新しい話を終えた場面で増えています。",
+      "quote": false,
+      "evidence": "Observed ep1 and ep2 titles; no competitive timing",
+      "sourceSegments": [
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            0,
+            67
+          ],
+          "output": [
+            3480,
+            3547
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            1587,
+            1607
+          ],
+          "output": [
+            3547,
+            3567
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            1612,
+            1672
+          ],
+          "output": [
+            3567,
+            3627
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            1677,
+            1797
+          ],
+          "output": [
+            3627,
+            3747
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u024.wav",
+      "voiceSha256": "e25c4dd1e0aa3783faf55f3ab4d4493265416ee5b414d4a1d0a436638e45831d"
+    },
+    {
+      "unit": "u025",
+      "chapter": "failure",
+      "at": 124.9,
+      "end": 132.86666666666667,
+      "text": "では、通る道を変えれば、この代償から離れられるのでしょうか。第二話には、上を通る任意の足場があります。",
+      "quote": false,
+      "evidence": "Actual episode2 normal-vs-branch comparison",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            1230,
+            1246
+          ],
+          "output": [
+            3747,
+            3763
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep10-game.mp4",
+          "frames": [
+            485,
+            500
+          ],
+          "output": [
+            3763,
+            3778
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep10-game.mp4",
+          "frames": [
+            788,
+            893
+          ],
+          "output": [
+            3778,
+            3883
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep10-game.mp4",
+          "frames": [
+            893,
+            996
+          ],
+          "output": [
+            3883,
+            3986
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u025.wav",
+      "voiceSha256": "8ce1e6ea41cd3fecee4e3e03f0367a6f9f7ddfaf2a0e2a58655974f873cea206"
+    },
+    {
+      "unit": "u026",
+      "chapter": "path",
+      "at": 132.86666666666667,
+      "end": 140.36666666666667,
+      "text": "まずは通常の道。四つの足場を、順にたどります。",
+      "quote": false,
+      "evidence": "Normal capture actual landings839/893/944/994",
+      "sourceSegments": [
+        {
+          "file": "media/ep02-normal-route01-game.mp4",
+          "frames": [
+            788,
+            1013
+          ],
+          "output": [
+            3986,
+            4211
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u026.wav",
+      "voiceSha256": "e156ca9c138efa9ac9320a7fe9ec5b53e6a49b7ba303be9664570501bdd686f7"
+    },
+    {
+      "unit": "u027",
+      "chapter": "path",
+      "at": 140.36666666666667,
+      "end": 146.36666666666667,
+      "text": "ダッシュの枝では、上の二段へ。二枚とも、実際に着地しました。",
+      "quote": false,
+      "evidence": "Branch actual A846/B888/merge942; continuous796..976",
+      "sourceSegments": [
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            796,
+            976
+          ],
+          "output": [
+            4211,
+            4391
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u027.wav",
+      "voiceSha256": "98df4a5128477c553e6725433475acb1f62144c3997083ce385360b38710e1bc"
+    },
+    {
+      "unit": "u028",
+      "chapter": "path",
+      "at": 146.36666666666667,
+      "end": 154.56666666666666,
+      "text": "二つの経路が着くのは、同じ足場です。違う道を通っても、ここから先は、次の灯へ向かう道につながっています。",
+      "quote": false,
+      "evidence": "Same merge island; HUD clock not RTA/PB",
+      "sourceSegments": [
+        {
+          "file": "media/ep10-game.mp4",
+          "frames": [
+            996,
+            1101
+          ],
+          "output": [
+            4391,
+            4496
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep10-game.mp4",
+          "frames": [
+            1101,
+            1206
+          ],
+          "output": [
+            4496,
+            4601
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep10-game.mp4",
+          "frames": [
+            1206,
+            1242
+          ],
+          "output": [
+            4601,
+            4637
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u028.wav",
+      "voiceSha256": "c1599f69c580e0a71e3278d963cd0bdb3b4cb8ea1fc26862130b39c34ee6855e"
+    },
+    {
+      "unit": "u029",
+      "chapter": "path",
+      "at": 154.56666666666666,
+      "end": 157.83333333333334,
+      "text": "昔、暗い道ではそうして呼び合ったね。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            195,
+            267
+          ],
+          "output": [
+            4637,
+            4709
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep10-game.mp4",
+          "frames": [
+            1242,
+            1268
+          ],
+          "output": [
+            4709,
+            4735
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u029.wav",
+      "voiceSha256": "341ed83f94cefc168e79ee115557a79225c11200cb378bc7c0d440bcee1aed4a"
+    },
+    {
+      "unit": "u030",
+      "chapter": "path",
+      "at": 157.83333333333334,
+      "end": 160.2,
+      "text": "どうして、ふたつだったんだろう。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            1307,
+            1378
+          ],
+          "output": [
+            4735,
+            4806
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u030.wav",
+      "voiceSha256": "0b197fdcdcfde654afa3325f79360891807c7a96a1941db80a5e40e2bfb41a1c"
+    },
+    {
+      "unit": "u031",
+      "chapter": "path",
+      "at": 160.2,
+      "end": 163.13333333333333,
+      "text": "今は、ここにいるっていう返事でいいよ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep02-game.mp4",
+          "frames": [
+            1378,
+            1450
+          ],
+          "output": [
+            4806,
+            4878
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep10-game.mp4",
+          "frames": [
+            1268,
+            1284
+          ],
+          "output": [
+            4878,
+            4894
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u031.wav",
+      "voiceSha256": "4cc6e7620f785fe05d7802e507c0a46e6dd06112e31feaef92a217e9ac9fa504"
+    },
+    {
+      "unit": "u032",
+      "chapter": "path",
+      "at": 163.13333333333333,
+      "end": 169.46666666666667,
+      "text": "ルミは鐘楼で待っている。小さな火の名前はエン。二度光ったら、ここにいるという返事。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep10-game.mp4",
+          "frames": [
+            1284,
+            1386
+          ],
+          "output": [
+            4894,
+            4996
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            490,
+            578
+          ],
+          "output": [
+            4996,
+            5084
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u032.wav",
+      "voiceSha256": "6f3fc6975834ec52b584501a5700a68d0e027ff0492851147afe6579ccdc3788"
+    },
+    {
+      "unit": "u034",
+      "chapter": "path",
+      "at": 169.46666666666667,
+      "end": 178.53333333333333,
+      "text": "今回の通常道と近道で、第二話の喪失内容は同じでした。道の選択が、そのまま記憶の選択になる、とは言えません。",
+      "quote": false,
+      "evidence": "Actual same-stage normal/branch result texts; limited to this comparison",
+      "sourceSegments": [
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            578,
+            683
+          ],
+          "output": [
+            5084,
+            5189
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            683,
+            788
+          ],
+          "output": [
+            5189,
+            5294
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            788,
+            850
+          ],
+          "output": [
+            5294,
+            5356
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u034.wav",
+      "voiceSha256": "75ebbd162df9b1230fba058885187f5cbb9c651a23f8a0ddad3715d09a4003d6"
+    },
+    {
+      "unit": "u035",
+      "chapter": "path",
+      "at": 178.53333333333333,
+      "end": 187.66666666666666,
+      "text": "行き先や合図を、文字に置いておく。それなら、帰る道も書いておけば安心なのでしょうか。次の会話が、その先を問い直します。",
+      "quote": false,
+      "evidence": "Bridge from ep2 notebook to ep3 outro",
+      "sourceSegments": [
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            850,
+            955
+          ],
+          "output": [
+            5356,
+            5461
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            955,
+            1060
+          ],
+          "output": [
+            5461,
+            5566
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            1060,
+            1124
+          ],
+          "output": [
+            5566,
+            5630
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u035.wav",
+      "voiceSha256": "4ec214b7226e969c413b8e2106b083ead1f8d7a2cefd7831a9aef2a22a248d29"
+    },
+    {
+      "unit": "u036",
+      "chapter": "writing",
+      "at": 187.66666666666666,
+      "end": 191,
+      "text": "帰り道も明るくしとく。ふたりで帰るんだ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            200,
+            272
+          ],
+          "output": [
+            5630,
+            5702
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            1124,
+            1152
+          ],
+          "output": [
+            5702,
+            5730
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u036.wav",
+      "voiceSha256": "5ff0ca44664a25e33383fe573d18eb5dcef1719fd6f098b3b8e6d00bcaf60607"
+    },
+    {
+      "unit": "u037",
+      "chapter": "writing",
+      "at": 191,
+      "end": 194.4,
+      "text": "帰る道は書いた。忘れても、たどれる。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            1246,
+            1318
+          ],
+          "output": [
+            5730,
+            5802
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            1152,
+            1182
+          ],
+          "output": [
+            5802,
+            5832
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u037.wav",
+      "voiceSha256": "e4857a3387bd3257e2ea2c6d818c8ddf941af902b850ae3073b5b80f6311fefd"
+    },
+    {
+      "unit": "u038",
+      "chapter": "writing",
+      "at": 194.4,
+      "end": 197.36666666666667,
+      "text": "道だけじゃ、思い出せないものもあるよ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            1318,
+            1390
+          ],
+          "output": [
+            5832,
+            5904
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            1182,
+            1199
+          ],
+          "output": [
+            5904,
+            5921
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u038.wav",
+      "voiceSha256": "572d2f0caeb17979e429ba04c72fa8aa95c01f64a254f45a51f05b0f5d24615b"
+    },
+    {
+      "unit": "u039",
+      "chapter": "writing",
+      "at": 197.36666666666667,
+      "end": 200.16666666666666,
+      "text": "それなら、帰ってから教えてくれ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            1390,
+            1462
+          ],
+          "output": [
+            5921,
+            5993
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            1199,
+            1211
+          ],
+          "output": [
+            5993,
+            6005
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u039.wav",
+      "voiceSha256": "2e24ea6dd0aa5c841a0a52f98263b18cc99ddaafb69551f9fa8c34cb36f1e66e"
+    },
+    {
+      "unit": "u040",
+      "chapter": "writing",
+      "at": 200.16666666666666,
+      "end": 202.96666666666667,
+      "text": "夕暮れの街をルミと並んで帰った道。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            1616,
+            1688
+          ],
+          "output": [
+            6005,
+            6077
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            1211,
+            1223
+          ],
+          "output": [
+            6077,
+            6089
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u040.wav",
+      "voiceSha256": "faa1b7536d70604d34bdd776827744e74658ac304bec9e36bad9157873b45c41"
+    },
+    {
+      "unit": "u041",
+      "chapter": "writing",
+      "at": 202.96666666666667,
+      "end": 210.13333333333333,
+      "text": "鐘楼のルミを助け、ふたりで帰る。火は記憶を使う。それでも、止まればあの子の灯が消える。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            1551,
+            1611
+          ],
+          "output": [
+            6089,
+            6149
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            1223,
+            1328
+          ],
+          "output": [
+            6149,
+            6254
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            1328,
+            1378
+          ],
+          "output": [
+            6254,
+            6304
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u041.wav",
+      "voiceSha256": "8daf41b404c0ba2e8f99d1342e723be3c2e02dc3ab83700124bc1795da4cff08"
+    },
+    {
+      "unit": "u042",
+      "chapter": "writing",
+      "at": 210.13333333333333,
+      "end": 217.56666666666666,
+      "text": "道順を書けることと、隣を歩いた時間を思い出せること。会話と手帳を並べると、二つが分かれて見えます。",
+      "quote": false,
+      "evidence": "Editorial reading, grounded in exact ep3 dialogue/notebook",
+      "sourceSegments": [
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            1378,
+            1410
+          ],
+          "output": [
+            6304,
+            6336
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            495,
+            600
+          ],
+          "output": [
+            6336,
+            6441
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            600,
+            686
+          ],
+          "output": [
+            6441,
+            6527
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u042.wav",
+      "voiceSha256": "ecb4977e147a534ee91713d40a33859cc7dd117560070d4227f2daccc96e0584"
+    },
+    {
+      "unit": "u044",
+      "chapter": "writing",
+      "at": 217.56666666666666,
+      "end": 224.86666666666667,
+      "text": "実際の画面では、短い会話を送ってから出発できます。先へ進みたい時には、スキップも選べます。",
+      "quote": false,
+      "evidence": "Actual normal intro next/depart/skip UI, not reconstructed GUI",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            75,
+            200
+          ],
+          "output": [
+            6527,
+            6652
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            272,
+            325
+          ],
+          "output": [
+            6652,
+            6705
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            325,
+            366
+          ],
+          "output": [
+            6705,
+            6746
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u044.wav",
+      "voiceSha256": "20ccc85f8047811b28fe5e81f2944cbbc6b70dabe9011bc03df212c74e5594aa"
+    },
+    {
+      "unit": "u045",
+      "chapter": "writing",
+      "at": 224.86666666666667,
+      "end": 234.16666666666666,
+      "text": "読むか、先へ進むかを選べても、物語で新しい話を終えたという結果は同じ。次は、失う対象そのものの違いを見ます。",
+      "quote": false,
+      "evidence": "Source practice first completion; no new untested gameplay branch promise",
+      "sourceSegments": [
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            686,
+            791
+          ],
+          "output": [
+            6746,
+            6851
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            791,
+            896
+          ],
+          "output": [
+            6851,
+            6956
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            896,
+            965
+          ],
+          "output": [
+            6956,
+            7025
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u045.wav",
+      "voiceSha256": "df1332daefbaeb53f13628b0871a47cd089ff552db15c92ae0d3be1a8491a95d"
+    },
+    {
+      "unit": "u046",
+      "chapter": "face",
+      "at": 234.16666666666666,
+      "end": 237.23333333333332,
+      "text": "ここで泣いた日、何も聞かなかったよね。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            80,
+            152
+          ],
+          "output": [
+            7025,
+            7097
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            455,
+            475
+          ],
+          "output": [
+            7097,
+            7117
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u046.wav",
+      "voiceSha256": "47960b57f45f95aa6350809fd8510d474e73bda821425c9de0ede56fd0dc3f75"
+    },
+    {
+      "unit": "u047",
+      "chapter": "face",
+      "at": 237.23333333333332,
+      "end": 239.76666666666668,
+      "text": "話せるまで、待つつもりだった。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            205,
+            277
+          ],
+          "output": [
+            7117,
+            7189
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            475,
+            479
+          ],
+          "output": [
+            7189,
+            7193
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u047.wav",
+      "voiceSha256": "ac88031d5fb3e0ff347356c5adbb7b771ac41cd3611af29e345b12e80f0aa973"
+    },
+    {
+      "unit": "u048",
+      "chapter": "face",
+      "at": 239.76666666666668,
+      "end": 242.03333333333333,
+      "text": "今も、待ってくれる？",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            330,
+            398
+          ],
+          "output": [
+            7193,
+            7261
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u048.wav",
+      "voiceSha256": "66ad5d6f98f20cc10485f1de64f3aa5fb1b12bac8b4b1e989b5f91826f01090a"
+    },
+    {
+      "unit": "u049",
+      "chapter": "face",
+      "at": 242.03333333333333,
+      "end": 249.93333333333334,
+      "text": "雨の街で語られるのは、隣で待っていた時間です。派手な出来事だけが、二人の記憶として置かれているわけではありません。",
+      "quote": false,
+      "evidence": "Editorial reading of ep4 intro and memory, no owner intent claim",
+      "sourceSegments": [
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            479,
+            584
+          ],
+          "output": [
+            7261,
+            7366
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            584,
+            689
+          ],
+          "output": [
+            7366,
+            7471
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            689,
+            716
+          ],
+          "output": [
+            7471,
+            7498
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u049.wav",
+      "voiceSha256": "807efd843782e15e094c9c5f77c5d669a14ac323e3065cb0d301ed3f4b7ee7ab"
+    },
+    {
+      "unit": "u050",
+      "chapter": "face",
+      "at": 249.93333333333334,
+      "end": 252.36666666666667,
+      "text": "雨の音しか、思い出せない。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            1365,
+            1437
+          ],
+          "output": [
+            7498,
+            7570
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            716,
+            717
+          ],
+          "output": [
+            7570,
+            7571
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u050.wav",
+      "voiceSha256": "32f46100df0b9e36d13b8a32847bb5eab0516317f6a3f36e9a9e24e9e90d1f3d"
+    },
+    {
+      "unit": "u051",
+      "chapter": "face",
+      "at": 252.36666666666667,
+      "end": 255.46666666666667,
+      "text": "隣に座ってくれただけで、よかったんだ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            1437,
+            1509
+          ],
+          "output": [
+            7571,
+            7643
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            717,
+            738
+          ],
+          "output": [
+            7643,
+            7664
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u051.wav",
+      "voiceSha256": "a0e2d0f5ca170ba2e650ff7fe251b2785ffa1f17ca2f17ae173e151c560bdaad"
+    },
+    {
+      "unit": "u052",
+      "chapter": "face",
+      "at": 255.46666666666667,
+      "end": 259.4,
+      "text": "雨宿りの軒下で、泣くルミの隣に座った時間。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            1735,
+            1807
+          ],
+          "output": [
+            7664,
+            7736
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            738,
+            784
+          ],
+          "output": [
+            7736,
+            7782
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u052.wav",
+      "voiceSha256": "d24cdc44bdde5dc0b864dc6d8e27b7eb5db0258f157e824d3c779441d4ba3663"
+    },
+    {
+      "unit": "u054",
+      "chapter": "face",
+      "at": 259.4,
+      "end": 267.53333333333336,
+      "text": "次の話では、泣いていた時間から、笑った出来事へ。失う内容が変わると、残された言葉の意味も変わります。",
+      "quote": false,
+      "evidence": "ep4→ep5 actual text difference",
+      "sourceSegments": [
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            460,
+            500
+          ],
+          "output": [
+            7782,
+            7822
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            762,
+            867
+          ],
+          "output": [
+            7822,
+            7927
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            867,
+            966
+          ],
+          "output": [
+            7927,
+            8026
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u054.wav",
+      "voiceSha256": "ab0952d4540fdbc9dc95e8f6949a40fb6421a28051deb789558bfaa626b6f98a"
+    },
+    {
+      "unit": "u055",
+      "chapter": "face",
+      "at": 267.53333333333336,
+      "end": 270.6666666666667,
+      "text": "笑わせようとして、灰を顔につけたでしょ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            85,
+            157
+          ],
+          "output": [
+            8026,
+            8098
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            966,
+            988
+          ],
+          "output": [
+            8098,
+            8120
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u055.wav",
+      "voiceSha256": "5e67c9058600a213d2d5f1de6ced96899e46832ffe910f1e35e45f4c1dc2936a"
+    },
+    {
+      "unit": "u056",
+      "chapter": "face",
+      "at": 270.6666666666667,
+      "end": 272.6666666666667,
+      "text": "あれは、転んだだけだ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            210,
+            270
+          ],
+          "output": [
+            8120,
+            8180
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u056.wav",
+      "voiceSha256": "3f509c67c1f00c434ae0694ace1fb9148efd8b98f8df9e0520b9cdd1438d5d90"
+    },
+    {
+      "unit": "u057",
+      "chapter": "face",
+      "at": 272.6666666666667,
+      "end": 276.26666666666665,
+      "text": "知ってる。だから、余計におかしかった。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            335,
+            407
+          ],
+          "output": [
+            8180,
+            8252
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            988,
+            1024
+          ],
+          "output": [
+            8252,
+            8288
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u057.wav",
+      "voiceSha256": "60fb34dcde745781d54385ed0cf175b8075b920363ad7e73df6b29ec60eaef16"
+    },
+    {
+      "unit": "u058",
+      "chapter": "face",
+      "at": 276.26666666666665,
+      "end": 279.2,
+      "text": "何がおかしかったのか、もうわからない。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            1373,
+            1445
+          ],
+          "output": [
+            8288,
+            8360
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            1024,
+            1040
+          ],
+          "output": [
+            8360,
+            8376
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u058.wav",
+      "voiceSha256": "5abfad1f0fe8d86de2660e1663f2d3a8d6a83dcc0ed0e280cfea924e2acb81cf"
+    },
+    {
+      "unit": "u059",
+      "chapter": "face",
+      "at": 279.2,
+      "end": 282,
+      "text": "笑ったことまで、嘘にはならないよ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            1445,
+            1517
+          ],
+          "output": [
+            8376,
+            8448
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            1040,
+            1052
+          ],
+          "output": [
+            8448,
+            8460
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u059.wav",
+      "voiceSha256": "25cb655d77cd00b9b2bb5889bbd358673af8de606663a43307db6d42031d8dc2"
+    },
+    {
+      "unit": "u062",
+      "chapter": "face",
+      "at": 282,
+      "end": 289.8,
+      "text": "出来事や、その時の時間を忘れるだけなら、顔を見れば思い出せるのでしょうか。次に遠ざかるのは、面影です。",
+      "quote": false,
+      "evidence": "Bridge to ep6 face memory",
+      "sourceSegments": [
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            465,
+            570
+          ],
+          "output": [
+            8460,
+            8565
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            570,
+            675
+          ],
+          "output": [
+            8565,
+            8670
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            675,
+            699
+          ],
+          "output": [
+            8670,
+            8694
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u062.wav",
+      "voiceSha256": "b532d1107bb1217355227984dbfc523d696205e57c4ef3c0687397901eb2aedc"
+    },
+    {
+      "unit": "u063",
+      "chapter": "face",
+      "at": 289.8,
+      "end": 292.3666666666667,
+      "text": "壁に、ふたりの影が残ってる。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            90,
+            162
+          ],
+          "output": [
+            8694,
+            8766
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            699,
+            704
+          ],
+          "output": [
+            8766,
+            8771
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u063.wav",
+      "voiceSha256": "211a13cc55fbb232460d4c8873f2ad6025e9c7c4bb00390283961954d8081105"
+    },
+    {
+      "unit": "u064",
+      "chapter": "face",
+      "at": 292.3666666666667,
+      "end": 296,
+      "text": "背の低いほうが私。すぐ追いつくって言ったね。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            215,
+            287
+          ],
+          "output": [
+            8771,
+            8843
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            704,
+            741
+          ],
+          "output": [
+            8843,
+            8880
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u064.wav",
+      "voiceSha256": "10d15a9f8db24836c43f71de08fdca2d025c13f0ebda35944dc24f3a18dbe741"
+    },
+    {
+      "unit": "u065",
+      "chapter": "face",
+      "at": 296,
+      "end": 299.06666666666666,
+      "text": "俺が会いに行くのは、どんな顔の子だっけ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            1375,
+            1447
+          ],
+          "output": [
+            8880,
+            8952
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            741,
+            761
+          ],
+          "output": [
+            8952,
+            8972
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u065.wav",
+      "voiceSha256": "a06b203766857012319cac46308e0baa2b8fdfef0861569f6e24bb77ca92bee1"
+    },
+    {
+      "unit": "u066",
+      "chapter": "face",
+      "at": 299.06666666666666,
+      "end": 302.3333333333333,
+      "text": "顔がわからなくても、待ってる人はいるよ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            1447,
+            1519
+          ],
+          "output": [
+            8972,
+            9044
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            761,
+            787
+          ],
+          "output": [
+            9044,
+            9070
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u066.wav",
+      "voiceSha256": "5a642fe1d93ec2344a1c65e2861bc78c83d0e4c841fe04b4211696ee4d6e752d"
+    },
+    {
+      "unit": "u067",
+      "chapter": "face",
+      "at": 302.3333333333333,
+      "end": 306.3666666666667,
+      "text": "ルミの顔と、表情を自分の記憶から思い描く力。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            1745,
+            1817
+          ],
+          "output": [
+            9070,
+            9142
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            787,
+            836
+          ],
+          "output": [
+            9142,
+            9191
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u067.wav",
+      "voiceSha256": "649a595e94733d3557657b43cf3c356d396bb75c57ef6cd86a4b653fa32e09de"
+    },
+    {
+      "unit": "u068",
+      "chapter": "face",
+      "at": 306.3666666666667,
+      "end": 311,
+      "text": "ルミ。鐘楼で待つ、大切な人。顔は思い出せない。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            1680,
+            1740
+          ],
+          "output": [
+            9191,
+            9251
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            836,
+            915
+          ],
+          "output": [
+            9251,
+            9330
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u068.wav",
+      "voiceSha256": "5a7fbfeb2b371d65643524e705b6940690fbb18ab1c357a81f579c1372ac3ceb"
+    },
+    {
+      "unit": "u069",
+      "chapter": "face",
+      "at": 311,
+      "end": 318.96666666666664,
+      "text": "失うのは、顔を記憶から思い描く力。旅を続ける画面には、同じ灯と、進むための足場が残っています。",
+      "quote": false,
+      "evidence": "Pinned ep6 memory; current texture remains, no false visual effect",
+      "sourceSegments": [
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            915,
+            1020
+          ],
+          "output": [
+            9330,
+            9435
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            1020,
+            1125
+          ],
+          "output": [
+            9435,
+            9540
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            1125,
+            1154
+          ],
+          "output": [
+            9540,
+            9569
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u069.wav",
+      "voiceSha256": "5ea4d83e2a254cd7c27609d14f047e23186490b25dfb9ebaf0175fce1907b823"
+    },
+    {
+      "unit": "u070",
+      "chapter": "purpose",
+      "at": 318.96666666666664,
+      "end": 327.03333333333336,
+      "text": "顔を思い出せない相手を、それでも助けに行く。理由を確かめようとしたアッシュが見つけるのは、同じ指示の書かれた手帳です。",
+      "quote": false,
+      "evidence": "ep7 intro, not invented feeling",
+      "sourceSegments": [
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            470,
+            575
+          ],
+          "output": [
+            9569,
+            9674
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            575,
+            680
+          ],
+          "output": [
+            9674,
+            9779
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            680,
+            712
+          ],
+          "output": [
+            9779,
+            9811
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u070.wav",
+      "voiceSha256": "0d4d08f2a3103591710941b59ebc343ec4cd5c945242869500238a8008b75c96"
+    },
+    {
+      "unit": "u071",
+      "chapter": "purpose",
+      "at": 327.03333333333336,
+      "end": 329.43333333333334,
+      "text": "同じことが、何度も書いてある。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            95,
+            167
+          ],
+          "output": [
+            9811,
+            9883
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u071.wav",
+      "voiceSha256": "961280e07b2bf5eac1ec9ff996909a9aff8dabc976261f8d6dea551993155869"
+    },
+    {
+      "unit": "u072",
+      "chapter": "purpose",
+      "at": 329.43333333333334,
+      "end": 331.93333333333334,
+      "text": "鐘楼へ行け。あの子を助けろ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            220,
+            292
+          ],
+          "output": [
+            9883,
+            9955
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            712,
+            715
+          ],
+          "output": [
+            9955,
+            9958
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u072.wav",
+      "voiceSha256": "8d8ec9e9ec2a9bf067d25f4edd4d463d2d585813919e49af3c72731b796752f4"
+    },
+    {
+      "unit": "u073",
+      "chapter": "purpose",
+      "at": 331.93333333333334,
+      "end": 335.2,
+      "text": "書いたあなたは、今のあなたを信じたんだね。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            345,
+            417
+          ],
+          "output": [
+            9958,
+            10030
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            715,
+            741
+          ],
+          "output": [
+            10030,
+            10056
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u073.wav",
+      "voiceSha256": "6516255d0562854fb5c68872ba2ca6c43fcf5e1af0eaa0d027d530071fb92bb0"
+    },
+    {
+      "unit": "u074",
+      "chapter": "purpose",
+      "at": 335.2,
+      "end": 338.03333333333336,
+      "text": "どうして助けたいのか、説明できない。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            1394,
+            1466
+          ],
+          "output": [
+            10056,
+            10128
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            741,
+            754
+          ],
+          "output": [
+            10128,
+            10141
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u074.wav",
+      "voiceSha256": "5c8e45fc9d7970c7f53a18cc68757bd745c57c51172a0b4bccb13b000e00c7f7"
+    },
+    {
+      "unit": "u075",
+      "chapter": "purpose",
+      "at": 338.03333333333336,
+      "end": 340.93333333333334,
+      "text": "説明できなくても、ここまで来てくれた。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            1466,
+            1538
+          ],
+          "output": [
+            10141,
+            10213
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            754,
+            769
+          ],
+          "output": [
+            10213,
+            10228
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u075.wav",
+      "voiceSha256": "5b9001c56d993104b8b9ae265363217a1ffc98ac0682bb208ef5351ae63b0fc7"
+    },
+    {
+      "unit": "u076",
+      "chapter": "purpose",
+      "at": 340.93333333333334,
+      "end": 344.53333333333336,
+      "text": "ルミを迎えに行くと決めた日の、決意に至るいきさつ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            1764,
+            1836
+          ],
+          "output": [
+            10228,
+            10300
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            769,
+            805
+          ],
+          "output": [
+            10300,
+            10336
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u076.wav",
+      "voiceSha256": "e1e6c1e9f507278e29985306796ee645e6fc6f9143b8fcbf70eb2855486a53df"
+    },
+    {
+      "unit": "u077",
+      "chapter": "purpose",
+      "at": 344.53333333333336,
+      "end": 349.4,
+      "text": "鐘楼へ行け。ルミを助けろ。これは俺が、俺に頼んだこと。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            1699,
+            1759
+          ],
+          "output": [
+            10336,
+            10396
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            805,
+            891
+          ],
+          "output": [
+            10396,
+            10482
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u077.wav",
+      "voiceSha256": "c248b124f449729c3d6db4d7fa64fd18add059003bf91c66a12a2557db836223"
+    },
+    {
+      "unit": "u078",
+      "chapter": "purpose",
+      "at": 349.4,
+      "end": 357.7,
+      "text": "助けに行くという目標は、文字に残っています。一方で、そう決めたいきさつは、失った記憶の側に移っています。",
+      "quote": false,
+      "evidence": "Exact ep7 notebook/memory contrast",
+      "sourceSegments": [
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            891,
+            996
+          ],
+          "output": [
+            10482,
+            10587
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            996,
+            1101
+          ],
+          "output": [
+            10587,
+            10692
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            1101,
+            1140
+          ],
+          "output": [
+            10692,
+            10731
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u078.wav",
+      "voiceSha256": "f095198603e9b16fab6cd9b72ec8f93c5f4ac1c7a610d8da3d35bdeb40772667"
+    },
+    {
+      "unit": "u079",
+      "chapter": "purpose",
+      "at": 357.7,
+      "end": 365.6,
+      "text": "手帳を読めば、今することは確かめられる。その指示を信じるかどうかは、記録を読んでいる現在のアッシュへ戻ってきます。",
+      "quote": false,
+      "evidence": "Editorial reading of past self asking present self; no owner psychology",
+      "sourceSegments": [
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            1140,
+            1245
+          ],
+          "output": [
+            10731,
+            10836
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            1245,
+            1350
+          ],
+          "output": [
+            10836,
+            10941
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            1350,
+            1377
+          ],
+          "output": [
+            10941,
+            10968
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u079.wav",
+      "voiceSha256": "36e7fc51de2ecef8bdd1ede595fa21c40574749c343ab6aef3eb0a1b67cebf1c"
+    },
+    {
+      "unit": "u080",
+      "chapter": "purpose",
+      "at": 365.6,
+      "end": 374.26666666666665,
+      "text": "目的が文字で残るなら、呼びかける声は何を残せるのでしょうか。ここからは、聞こえることと、誰の声か感じることを分けます。",
+      "quote": false,
+      "evidence": "Bridge to actual ep8 familiarity loss",
+      "sourceSegments": [
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            475,
+            560
+          ],
+          "output": [
+            10968,
+            11053
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            841,
+            946
+          ],
+          "output": [
+            11053,
+            11158
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            946,
+            1016
+          ],
+          "output": [
+            11158,
+            11228
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u080.wav",
+      "voiceSha256": "ab9a19894870959a145a8b1ccf4b02263a744e8a0998ee2457ebe8ddc4d0a1ac"
+    },
+    {
+      "unit": "u081",
+      "chapter": "voice",
+      "at": 374.26666666666665,
+      "end": 377.8666666666667,
+      "text": "アッシュ。声が届くうちに、言っておきたい。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            100,
+            172
+          ],
+          "output": [
+            11228,
+            11300
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1016,
+            1052
+          ],
+          "output": [
+            11300,
+            11336
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u081.wav",
+      "voiceSha256": "875db0c37c25d78ffa09aefb49b2e2295f96293b590c4494fbbf99e035ee7d47"
+    },
+    {
+      "unit": "u082",
+      "chapter": "voice",
+      "at": 377.8666666666667,
+      "end": 379.96666666666664,
+      "text": "無理をしてほしかったわけじゃない。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            225,
+            288
+          ],
+          "output": [
+            11336,
+            11399
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u082.wav",
+      "voiceSha256": "30f196d7505f3d98511905852b19a5b59ed006273f66ebdd0edda61da796a441"
+    },
+    {
+      "unit": "u083",
+      "chapter": "voice",
+      "at": 379.96666666666664,
+      "end": 382.6333333333333,
+      "text": "迎えに行くって書いたのは、俺だ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            350,
+            422
+          ],
+          "output": [
+            11399,
+            11471
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1052,
+            1060
+          ],
+          "output": [
+            11471,
+            11479
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u083.wav",
+      "voiceSha256": "00b7c483b2b4f4ba256fdb417dd68fcdd4b088368f0d10d179b23869d4c55963"
+    },
+    {
+      "unit": "u084",
+      "chapter": "voice",
+      "at": 382.6333333333333,
+      "end": 384.73333333333335,
+      "text": "アッシュ、聞こえる？",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1382,
+            1445
+          ],
+          "output": [
+            11479,
+            11542
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u084.wav",
+      "voiceSha256": "1b6a06ccd26e1c23cfb36a7dcba04074e37c780a0c14f2aef2c6bafc9399f654"
+    },
+    {
+      "unit": "u085",
+      "chapter": "voice",
+      "at": 384.73333333333335,
+      "end": 388.5,
+      "text": "聞こえる。……ごめん、君は、誰？",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1445,
+            1517
+          ],
+          "output": [
+            11542,
+            11614
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1060,
+            1101
+          ],
+          "output": [
+            11614,
+            11655
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u085.wav",
+      "voiceSha256": "c99e139df0c4c16832e33a7eba275a88e4a63ba4e3803b75e4121830817aa02d"
+    },
+    {
+      "unit": "u086",
+      "chapter": "voice",
+      "at": 388.5,
+      "end": 390.8666666666667,
+      "text": "あなたを、待っている人。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1517,
+            1588
+          ],
+          "output": [
+            11655,
+            11726
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u086.wav",
+      "voiceSha256": "11815410d2d8b642c03878eebf964e411bc120a1b6a7179d27a9dbcd1f79ac84"
+    },
+    {
+      "unit": "u087",
+      "chapter": "voice",
+      "at": 390.8666666666667,
+      "end": 394.43333333333334,
+      "text": "呼びかける声を、ルミの声だと感じ取る親しさ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1752,
+            1824
+          ],
+          "output": [
+            11726,
+            11798
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1101,
+            1136
+          ],
+          "output": [
+            11798,
+            11833
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u087.wav",
+      "voiceSha256": "14298423e9f80bfc42a4e0dd74eaa1bb22d12668f4ab4cc34dc972b2f077b497"
+    },
+    {
+      "unit": "u088",
+      "chapter": "voice",
+      "at": 394.43333333333334,
+      "end": 400.8666666666667,
+      "text": "鐘楼へ行け。待っている人を助けろ。声が知らないものになっても、行き先は変わらない。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1687,
+            1747
+          ],
+          "output": [
+            11833,
+            11893
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1136,
+            1241
+          ],
+          "output": [
+            11893,
+            11998
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1241,
+            1269
+          ],
+          "output": [
+            11998,
+            12026
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u088.wav",
+      "voiceSha256": "931bfb07485bd24502ee5733582c3e7ad191a3555ca757e5f1c205d79c39cd20"
+    },
+    {
+      "unit": "u089",
+      "chapter": "voice",
+      "at": 400.8666666666667,
+      "end": 407.8,
+      "text": "呼びかけは届いています。けれど、それが親しい相手の声だと感じることだけが、遠ざかっていきます。",
+      "quote": false,
+      "evidence": "Exact memory meaning; recorded game audio Dummy, narration not game voice acting",
+      "sourceSegments": [
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1269,
+            1374
+          ],
+          "output": [
+            12026,
+            12131
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep07-game.mp4",
+          "frames": [
+            1377,
+            1394
+          ],
+          "output": [
+            12131,
+            12148
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            480,
+            566
+          ],
+          "output": [
+            12148,
+            12234
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u089.wav",
+      "voiceSha256": "1ee5bc06a83efa7358886a23130ca09ca79cb5f2ab191d3f640d0cdbd79ac6f9"
+    },
+    {
+      "unit": "u091",
+      "chapter": "voice",
+      "at": 407.8,
+      "end": 410.1,
+      "text": "この矢印は、俺の字だ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            105,
+            174
+          ],
+          "output": [
+            12234,
+            12303
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u091.wav",
+      "voiceSha256": "4528c487e0a9947569547736e479ba7a6af9972393ccb1a6d3af56244026857d"
+    },
+    {
+      "unit": "u092",
+      "chapter": "voice",
+      "at": 410.1,
+      "end": 413.4,
+      "text": "ここにいる、だったな。ひとりじゃない。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            355,
+            427
+          ],
+          "output": [
+            12303,
+            12375
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            566,
+            593
+          ],
+          "output": [
+            12375,
+            12402
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u092.wav",
+      "voiceSha256": "912c8dbaf3f75b91117033e32d7ef299fb0c39777094d17d4c20a0950e24d313"
+    },
+    {
+      "unit": "u093",
+      "chapter": "voice",
+      "at": 413.4,
+      "end": 417.26666666666665,
+      "text": "ルミと過ごした日々が、いつの出来事だったかという連なり。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            593,
+            698
+          ],
+          "output": [
+            12402,
+            12507
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            1374,
+            1382
+          ],
+          "output": [
+            12507,
+            12515
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            965,
+            968
+          ],
+          "output": [
+            12515,
+            12518
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u093.wav",
+      "voiceSha256": "ae744f146fface565cc0f225e4e331e2be61f6db73f42fa8066a2dc173b8ca76"
+    },
+    {
+      "unit": "u094",
+      "chapter": "voice",
+      "at": 417.26666666666665,
+      "end": 421.03333333333336,
+      "text": "鐘楼へ。待つ人を助けろ。エンと進め。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            1692,
+            1752
+          ],
+          "output": [
+            12518,
+            12578
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            698,
+            751
+          ],
+          "output": [
+            12578,
+            12631
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u094.wav",
+      "voiceSha256": "5b9cefc28ea2fbccd576a968e640c66d445ce0275f4c9832004b64c874baf705"
+    },
+    {
+      "unit": "u095",
+      "chapter": "voice",
+      "at": 421.03333333333336,
+      "end": 428.8333333333333,
+      "text": "今度ほどけるのは、日々の順番やつながりです。何があったかだけでなく、それがいつのことだったかも、遠くなります。",
+      "quote": false,
+      "evidence": "Ep9 actual memory, reading with edited line breaks",
+      "sourceSegments": [
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            751,
+            856
+          ],
+          "output": [
+            12631,
+            12736
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            856,
+            961
+          ],
+          "output": [
+            12736,
+            12841
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            961,
+            985
+          ],
+          "output": [
+            12841,
+            12865
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u095.wav",
+      "voiceSha256": "6c6422d23a0e47a805c9631a64534d42e2f7341cb7a8e6c7a74d9e7ef94a0d5b"
+    },
+    {
+      "unit": "u096",
+      "chapter": "voice",
+      "at": 428.8333333333333,
+      "end": 437.73333333333335,
+      "text": "書き残す文章は、ここで短くなっています。これは初めからの全文を並べた一覧ではなく、その話の後に残された記録です。",
+      "quote": false,
+      "evidence": "Actual journal only latest completed episode notebook/memory",
+      "sourceSegments": [
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            985,
+            1090
+          ],
+          "output": [
+            12865,
+            12970
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            1090,
+            1195
+          ],
+          "output": [
+            12970,
+            13075
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            1195,
+            1252
+          ],
+          "output": [
+            13075,
+            13132
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u096.wav",
+      "voiceSha256": "7477132af8f10df44226597f985bc4cbbc1522ad3569373a779c7c32d1a1f615"
+    },
+    {
+      "unit": "u097",
+      "chapter": "form",
+      "at": 437.73333333333335,
+      "end": 446.3333333333333,
+      "text": "記憶の変化は、ここまで見た物語の出来事です。では、それを遊ぶ画面の見た目は、制作の中でどう変わったのでしょうか。",
+      "quote": false,
+      "evidence": "Explicit separation of narrative forgetfulness and actual art version changes",
+      "sourceSegments": [
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            1154,
+            1259
+          ],
+          "output": [
+            13132,
+            13237
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            1259,
+            1364
+          ],
+          "output": [
+            13237,
+            13342
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            784,
+            832
+          ],
+          "output": [
+            13342,
+            13390
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u097.wav",
+      "voiceSha256": "1484a9f5b7d9522f5b93a7b54d664dfab6bf6f65543f82043c9b06940d1e91d8"
+    },
+    {
+      "unit": "u098",
+      "chapter": "form",
+      "at": 446.3333333333333,
+      "end": 454.43333333333334,
+      "text": "保存されている原画を、同じ表示枠で比べます。左は二十四ピクセル、右は六十四ピクセルへ描き直した版です。",
+      "quote": false,
+      "evidence": "Actual retained0.8/0.9 source art; no historic gameplay claim",
+      "sourceSegments": [
+        {
+          "file": "media/firstcut04-art-pair.mov",
+          "frames": [
+            0,
+            243
+          ],
+          "output": [
+            13390,
+            13633
+          ],
+          "kind": "retained-art-comparison"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u098.wav",
+      "voiceSha256": "52d790d4851b28491235fe68e2acfa0c4295e4895bad5c6444e819926362741a"
+    },
+    {
+      "unit": "u099",
+      "chapter": "form",
+      "at": 454.43333333333334,
+      "end": 462.96666666666664,
+      "text": "歩く、上がる、頂点、落ちる、着地、ダッシュ。動く姿勢を、左右で比べてください。",
+      "quote": false,
+      "evidence": "Retained source frame maps/fps, not generated gameplay",
+      "sourceSegments": [
+        {
+          "file": "media/traveler-old24-demo.mov",
+          "frames": [
+            0,
+            240
+          ],
+          "output": [
+            13633,
+            13873
+          ],
+          "kind": "retained-art-motion"
+        },
+        {
+          "file": "media/traveler-demo.mov",
+          "frames": [
+            0,
+            240
+          ],
+          "output": [
+            13633,
+            13873
+          ],
+          "kind": "retained-art-motion"
+        },
+        {
+          "file": "media/ep06-game.mp4",
+          "frames": [
+            1364,
+            1375
+          ],
+          "output": [
+            13873,
+            13884
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            832,
+            837
+          ],
+          "output": [
+            13884,
+            13889
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u099.wav",
+      "voiceSha256": "50380fe88b4c55659037ae5565b1155842a60edd17e98a3c7f7dba2d4d9c0d70"
+    },
+    {
+      "unit": "u100",
+      "chapter": "form",
+      "at": 462.96666666666664,
+      "end": 471.76666666666665,
+      "text": "フードの縁、顔の面、前後の脚、手元の灯。大きな形を保ちながら、元絵の中で描き分ける部分が増えています。",
+      "quote": false,
+      "evidence": "Actual observed pixel differences; no unrecorded owner intention",
+      "sourceSegments": [
+        {
+          "file": "media/firstcut04-art-detail.mov",
+          "frames": [
+            0,
+            264
+          ],
+          "output": [
+            13889,
+            14153
+          ],
+          "kind": "current-native-redraw-reconstruction"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u100.wav",
+      "voiceSha256": "3e18b58e7d058c5a17c2ba84d69baa450732d0f5a7820e7f94c6144d00eda27f"
+    },
+    {
+      "unit": "u101",
+      "chapter": "form",
+      "at": 471.76666666666665,
+      "end": 481.76666666666665,
+      "text": "制作記録では、キャラクターがゲーム内で占める枠と、見渡せる範囲を維持しています。原画を細かくすることと、カメラを近づけることを分けた変更です。",
+      "quote": false,
+      "evidence": "docs/detail64-rendering.md and commit40aebcb, not forgetfulness effect",
+      "sourceSegments": [
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            837,
+            942
+          ],
+          "output": [
+            14153,
+            14258
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            942,
+            1047
+          ],
+          "output": [
+            14258,
+            14363
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            1047,
+            1137
+          ],
+          "output": [
+            14363,
+            14453
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u101.wav",
+      "voiceSha256": "cd73a07b63d99c41d244460871977ceda4bce5734900f939dc9de3a1a1518aef"
+    },
+    {
+      "unit": "u103",
+      "chapter": "form",
+      "at": 481.76666666666665,
+      "end": 491.46666666666664,
+      "text": "操作にも、別の制作記録があります。旧版では、離した短い入力が大きなジャンプになったり、着地直前の入力が消えたりしていました。",
+      "quote": false,
+      "evidence": "docs/verification-jump-response.md historical observations",
+      "sourceSegments": [],
+      "charts": [
+        {
+          "unit": "u103",
+          "start": 14453,
+          "end": 14744,
+          "type": "historical-height",
+          "title": "押した入力へ応える",
+          "label": "制作史：旧版 → jump-1.1／当時の計測記録"
+        }
+      ],
+      "voiceFile": "firstcut04-u103.wav",
+      "voiceSha256": "a53a3f0faa2bfc6b3661033022dac8f27641f0d28aa8b2b5a92aef82c1949b93"
+    },
+    {
+      "unit": "u104",
+      "chapter": "form",
+      "at": 491.46666666666664,
+      "end": 500.93333333333334,
+      "text": "その修正では、離した入力を保持し、接地した時に一度だけ受け取るようにしています。ここでの前後は、当時の計測記録の比較です。",
+      "quote": false,
+      "evidence": "Historical jump-1.1 fix, not present short-vs-held test",
+      "sourceSegments": [],
+      "charts": [
+        {
+          "unit": "u104",
+          "start": 14744,
+          "end": 15028,
+          "type": "historical-consumption",
+          "title": "押した入力へ応える",
+          "label": "制作史：旧版 → jump-1.1／当時の計測記録"
+        }
+      ],
+      "voiceFile": "firstcut04-u104.wav",
+      "voiceSha256": "5f594e37da3139fa216d580efd1398370b573a3b8e52a9e6c32e9de8767b432f"
+    },
+    {
+      "unit": "u105",
+      "chapter": "form",
+      "at": 500.93333333333334,
+      "end": 510.3333333333333,
+      "text": "今回の短押しと長押しの違いは、その修正前後の映像ではありません。同じ制作版の中で、押す長さを変えた時の実際の違いです。",
+      "quote": false,
+      "evidence": "Prevents history/current comparison conflation",
+      "sourceSegments": [],
+      "charts": [
+        {
+          "unit": "u105",
+          "start": 15028,
+          "end": 15310,
+          "type": "current-height",
+          "title": "同じ版の中で、押す長さを変える",
+          "label": "今回の同条件2試行／旧修正の前後ではありません"
+        }
+      ],
+      "voiceFile": "firstcut04-u105.wav",
+      "voiceSha256": "59735b20b275625dd57c115b0caa2a7b3291615e71330fce69f85cc8ee3cff31"
+    },
+    {
+      "unit": "u108",
+      "chapter": "city",
+      "at": 510.3333333333333,
+      "end": 518.6,
+      "text": "もう一つ、進む場所の違いも見ます。同じ旅人を追っていても、周りに置かれている形や色は、章ごとに変わります。",
+      "quote": false,
+      "evidence": "Pinned campaign World actual chapter architecture",
+      "sourceSegments": [
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            968,
+            1073
+          ],
+          "output": [
+            15310,
+            15415
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            1073,
+            1178
+          ],
+          "output": [
+            15415,
+            15520
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            1178,
+            1216
+          ],
+          "output": [
+            15520,
+            15558
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u108.wav",
+      "voiceSha256": "3aa5ffb59637092ebdbc0d182128cdf487031e3fbae18393a617502973791252"
+    },
+    {
+      "unit": "u109",
+      "chapter": "city",
+      "at": 518.6,
+      "end": 525.2333333333333,
+      "text": "公園には柵と、空いたベンチ。大きな街の形の手前に、小さな場所の手掛かりがあります。",
+      "quote": false,
+      "evidence": "Actual chapter1 drawing motifs, not dynamic memory removal",
+      "sourceSegments": [
+        {
+          "file": "media/ep03-game.mp4",
+          "frames": [
+            400,
+            599
+          ],
+          "output": [
+            15558,
+            15757
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u109.wav",
+      "voiceSha256": "7af10755e86b954fbdafb94db5fb4d321d55530b3e9477efedc246080acd9fa2"
+    },
+    {
+      "unit": "u110",
+      "chapter": "city",
+      "at": 525.2333333333333,
+      "end": 533.9666666666667,
+      "text": "雨の街では、軒や閉じた窓の形へ。雨宿りの会話があった場所と、今通っている足場を、同じ画面の中で見比べます。",
+      "quote": false,
+      "evidence": "Actual chapter2 motifs; editorial association with ep4 dialogue",
+      "sourceSegments": [
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            500,
+            762
+          ],
+          "output": [
+            15757,
+            16019
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u110.wav",
+      "voiceSha256": "62168ff231a6762d3e0037b965c064687e5ebe7ec91783cf390aa7656023d72f"
+    },
+    {
+      "unit": "u111",
+      "chapter": "city",
+      "at": 533.9666666666667,
+      "end": 543.3333333333334,
+      "text": "さらに先では、空の額縁のような形が現れます。顔を思い描けない、という言葉の後では、この余白も違って見えるかもしれません。",
+      "quote": false,
+      "evidence": "Actual chapter3 blank frames; explicitly editorial interpretation",
+      "sourceSegments": [
+        {
+          "file": "media/ep08-game.mp4",
+          "frames": [
+            560,
+            841
+          ],
+          "output": [
+            16019,
+            16300
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u111.wav",
+      "voiceSha256": "55e22d831b3efb01b95cd1f6adb3f807144b262a10a00f24c7a5def40ab7155a"
+    },
+    {
+      "unit": "u112",
+      "chapter": "city",
+      "at": 543.3333333333334,
+      "end": 552.9333333333333,
+      "text": "鐘楼の章では、歯車や機械の形へ変わります。これは章の違いで、記憶を一つ失うたびに背景が消えた、という変化ではありません。",
+      "quote": false,
+      "evidence": "Actual chapter4 drawing; no dynamic forgetfulness effect",
+      "sourceSegments": [
+        {
+          "file": "media/ep10-game.mp4",
+          "frames": [
+            500,
+            788
+          ],
+          "output": [
+            16300,
+            16588
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u112.wav",
+      "voiceSha256": "7dfd4eaf9f5bb5171bab6197acdc1ae5fe652948b71f8b0043b0373a6a478e62"
+    },
+    {
+      "unit": "u113",
+      "chapter": "city",
+      "at": 552.9333333333333,
+      "end": 560.8666666666667,
+      "text": "階段の先には、空へ開くアーチ。終幕の答えはここでは見せず、今どこへ足を置くかが読める画面を残します。",
+      "quote": false,
+      "evidence": "Actual chapter5 captured environment only; ending14/15 excluded",
+      "sourceSegments": [
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            900,
+            1138
+          ],
+          "output": [
+            16588,
+            16826
+          ],
+          "kind": "actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u113.wav",
+      "voiceSha256": "5381337c66828f2d042221fd40591233c5ca94f6542926091861f5a68aee888b"
+    },
+    {
+      "unit": "u115",
+      "chapter": "next",
+      "at": 560.8666666666667,
+      "end": 563.9333333333333,
+      "text": "隣にいたのが、いつのことかもわからない。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            1387,
+            1459
+          ],
+          "output": [
+            16826,
+            16898
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            1252,
+            1272
+          ],
+          "output": [
+            16898,
+            16918
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u115.wav",
+      "voiceSha256": "8166171088b9c1352b1b595d7cb8137e240f718cd1ac66acbc401037f9780f8f"
+    },
+    {
+      "unit": "u116",
+      "chapter": "next",
+      "at": 563.9333333333333,
+      "end": 566.6333333333333,
+      "text": "それでも、待たせたままにはできない。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            1459,
+            1531
+          ],
+          "output": [
+            16918,
+            16990
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            1272,
+            1281
+          ],
+          "output": [
+            16990,
+            16999
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u116.wav",
+      "voiceSha256": "c796cc15b0db35dba7073265d69a3cdf2a023e8f13cfb5dd4db0990011c62e84"
+    },
+    {
+      "unit": "u117",
+      "chapter": "next",
+      "at": 566.6333333333333,
+      "end": 576.1,
+      "text": "先へ進むほど失うものが変わり、手帳に残る言葉も変わる。道順、名前、助けるという指示が、同じものとしては残りません。",
+      "quote": false,
+      "evidence": "Actual quoted notebook sequence; not whole ending claim",
+      "sourceSegments": [
+        {
+          "file": "media/ep09-game.mp4",
+          "frames": [
+            1281,
+            1386
+          ],
+          "output": [
+            16999,
+            17104
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            1216,
+            1321
+          ],
+          "output": [
+            17104,
+            17209
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            1321,
+            1395
+          ],
+          "output": [
+            17209,
+            17283
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u117.wav",
+      "voiceSha256": "4ec774eccaefe0870707a38061f7afa9effdaa2620cd66ec13466cdd752bdf35"
+    },
+    {
+      "unit": "u118",
+      "chapter": "next",
+      "at": 576.1,
+      "end": 578.9666666666667,
+      "text": "朝が来たら、空の色を教えてくれ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep11-game.mp4",
+          "frames": [
+            1410,
+            1482
+          ],
+          "output": [
+            17283,
+            17355
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep12-game.mp4",
+          "frames": [
+            1395,
+            1406
+          ],
+          "output": [
+            17355,
+            17366
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            500,
+            503
+          ],
+          "output": [
+            17366,
+            17369
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u118.wav",
+      "voiceSha256": "067a6c2f7855a4c07b2b9114682e0bfb309bd3647a3d88b0610362a31ca3fad6"
+    },
+    {
+      "unit": "u119",
+      "chapter": "next",
+      "at": 578.9666666666667,
+      "end": 588.4,
+      "text": "この言葉は、思い出せないものを相手へ尋ねています。記録に頼るだけでなく、もう一度教えてもらうという会話も、道の先に置かれています。",
+      "quote": false,
+      "evidence": "Editorial reading of exact ep11 question; no ending explanation",
+      "sourceSegments": [
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            503,
+            608
+          ],
+          "output": [
+            17369,
+            17474
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            608,
+            713
+          ],
+          "output": [
+            17474,
+            17579
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            713,
+            786
+          ],
+          "output": [
+            17579,
+            17652
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u119.wav",
+      "voiceSha256": "6409b0bfe4fd13e3eecf8ca639fd93606f7925eb894a44d8484ac0fb4e505c9c"
+    },
+    {
+      "unit": "u120",
+      "chapter": "next",
+      "at": 588.4,
+      "end": 592.3333333333334,
+      "text": "覚えようとしなくていい。今は、足元を見て。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            250,
+            322
+          ],
+          "output": [
+            17652,
+            17724
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            786,
+            832
+          ],
+          "output": [
+            17724,
+            17770
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u120.wav",
+      "voiceSha256": "ddf5c6799868e10c71929e8abf4c1735e6b2599c44f48fad64b815ccddad4e6e"
+    },
+    {
+      "unit": "u121",
+      "chapter": "next",
+      "at": 592.3333333333334,
+      "end": 595.5,
+      "text": "待っている人がいる。それは、わかる。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            375,
+            447
+          ],
+          "output": [
+            17770,
+            17842
+          ],
+          "kind": "actual-ui"
+        },
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            832,
+            855
+          ],
+          "output": [
+            17842,
+            17865
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u121.wav",
+      "voiceSha256": "2ca70966386ca69c21f3bdb388eb129425874cc50778b8217fbf600d8019312b"
+    },
+    {
+      "unit": "u122",
+      "chapter": "next",
+      "at": 595.5,
+      "end": 604,
+      "text": "誰を待たせているのかを、前と同じようには語れなくても。今は、待っている人がいることと、目の前の足元が残っています。",
+      "quote": false,
+      "evidence": "Ep13 intro meaning; no ep13 name-link loss reveal",
+      "sourceSegments": [
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            855,
+            900
+          ],
+          "output": [
+            17865,
+            17910
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            1138,
+            1243
+          ],
+          "output": [
+            17910,
+            18015
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            1243,
+            1348
+          ],
+          "output": [
+            18015,
+            18120
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u122.wav",
+      "voiceSha256": "0577a133c47f07637d321ad7470ecfe2a155b1a1669ffa2e9724d9f5e1ebd315"
+    },
+    {
+      "unit": "u123",
+      "chapter": "next",
+      "at": 604,
+      "end": 604.9333333333333,
+      "text": "走れ。",
+      "quote": true,
+      "evidence": "Pinned story field + same-episode observed capture text",
+      "sourceSegments": [
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            1711,
+            1739
+          ],
+          "output": [
+            18120,
+            18148
+          ],
+          "kind": "actual-ui"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u123.wav",
+      "voiceSha256": "2214cbe98e95ceef443d6eaabe1c5b1d76004954a28a823e296213d4ce5a9ee0"
+    },
+    {
+      "unit": "u124",
+      "chapter": "next",
+      "at": 604.9333333333333,
+      "end": 612.5333333333333,
+      "text": "もし、思い出せることが少なくなっても、何かを書き残せるなら。あなたは、どんな言葉を自分に渡しますか。",
+      "quote": false,
+      "evidence": "Viewer question, no outcome promise",
+      "sourceSegments": [
+        {
+          "file": "media/ep13-game.mp4",
+          "frames": [
+            1348,
+            1406
+          ],
+          "output": [
+            18148,
+            18206
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            1137,
+            1242
+          ],
+          "output": [
+            18206,
+            18311
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            1242,
+            1307
+          ],
+          "output": [
+            18311,
+            18376
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u124.wav",
+      "voiceSha256": "4d6214f51dd1d0ce901a4e901b7894e31a5588cf65fb8ae3224a0054c19053ec"
+    },
+    {
+      "unit": "u125",
+      "chapter": "next",
+      "at": 612.5333333333333,
+      "end": 620.8666666666667,
+      "text": "EMBERWAKE、制作版の記録です。作品の仕掛けと、その続きを、チャンネルで見届けてください。",
+      "quote": false,
+      "evidence": "Real project call to follow; no invented release/store/date",
+      "sourceSegments": [
+        {
+          "file": "media/ep04-game.mp4",
+          "frames": [
+            1307,
+            1365
+          ],
+          "output": [
+            18376,
+            18434
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            1052,
+            1157
+          ],
+          "output": [
+            18434,
+            18539
+          ],
+          "kind": "context-actual-play"
+        },
+        {
+          "file": "media/ep05-game.mp4",
+          "frames": [
+            1157,
+            1244
+          ],
+          "output": [
+            18539,
+            18626
+          ],
+          "kind": "context-actual-play"
+        }
+      ],
+      "charts": [],
+      "voiceFile": "firstcut04-u125.wav",
+      "voiceSha256": "0acb86c18297183f3d72fc914c7f7273631a32f8eaf4432ee6ac2b059ecfa2d6"
+    }
+  ],
+  "usedSourceIntervals": {
+    "media/ep01-game.mp4": [
+      {
+        "start": 1683,
+        "end": 1803,
+        "unit": "u001",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 565,
+        "end": 715,
+        "unit": "u007",
+        "kind": "actual-play"
+      },
+      {
+        "start": 1160,
+        "end": 1273,
+        "unit": "u014",
+        "kind": "actual-play"
+      },
+      {
+        "start": 0,
+        "end": 20,
+        "unit": "u014",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1593,
+        "end": 1613,
+        "unit": "u014",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1618,
+        "end": 1678,
+        "unit": "u014",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 395,
+        "end": 471,
+        "unit": "u001",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 471,
+        "end": 565,
+        "unit": "u002",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 715,
+        "end": 820,
+        "unit": "u002",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 820,
+        "end": 861,
+        "unit": "u002",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 20,
+        "end": 92,
+        "unit": "u003",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 861,
+        "end": 894,
+        "unit": "u003",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 145,
+        "end": 217,
+        "unit": "u004",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 894,
+        "end": 903,
+        "unit": "u004",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 903,
+        "end": 1008,
+        "unit": "u005",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1008,
+        "end": 1113,
+        "unit": "u005",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1113,
+        "end": 1135,
+        "unit": "u005",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1135,
+        "end": 1160,
+        "unit": "u006",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1273,
+        "end": 1313,
+        "unit": "u006",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1313,
+        "end": 1385,
+        "unit": "u009",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1385,
+        "end": 1457,
+        "unit": "u010",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1457,
+        "end": 1529,
+        "unit": "u011",
+        "kind": "actual-ui"
+      }
+    ],
+    "media/ep01-replay-controls01-game.mp4": [
+      {
+        "start": 121,
+        "end": 217,
+        "unit": "u017",
+        "kind": "actual-play"
+      },
+      {
+        "start": 217,
+        "end": 260,
+        "unit": "u017",
+        "kind": "actual-play"
+      },
+      {
+        "start": 260,
+        "end": 390,
+        "unit": "u018",
+        "kind": "actual-play"
+      },
+      {
+        "start": 390,
+        "end": 461,
+        "unit": "u019",
+        "kind": "actual-play"
+      },
+      {
+        "start": 0,
+        "end": 53,
+        "unit": "u020",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1706,
+        "end": 1726,
+        "unit": "u020",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1731,
+        "end": 1791,
+        "unit": "u020",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1796,
+        "end": 1906,
+        "unit": "u020",
+        "kind": "actual-ui"
+      }
+    ],
+    "media/ep02-game.mp4": [
+      {
+        "start": 0,
+        "end": 67,
+        "unit": "u024",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1587,
+        "end": 1607,
+        "unit": "u024",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1612,
+        "end": 1672,
+        "unit": "u024",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1677,
+        "end": 1797,
+        "unit": "u024",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 796,
+        "end": 976,
+        "unit": "u027",
+        "kind": "actual-play"
+      },
+      {
+        "start": 445,
+        "end": 550,
+        "unit": "u006",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 550,
+        "end": 614,
+        "unit": "u006",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 614,
+        "end": 719,
+        "unit": "u008",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 719,
+        "end": 796,
+        "unit": "u008",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 976,
+        "end": 1071,
+        "unit": "u008",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1071,
+        "end": 1086,
+        "unit": "u009",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1086,
+        "end": 1088,
+        "unit": "u010",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1088,
+        "end": 1099,
+        "unit": "u011",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1099,
+        "end": 1168,
+        "unit": "u012",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1168,
+        "end": 1273,
+        "unit": "u013",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1273,
+        "end": 1307,
+        "unit": "u013",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 195,
+        "end": 267,
+        "unit": "u029",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1307,
+        "end": 1378,
+        "unit": "u030",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1378,
+        "end": 1450,
+        "unit": "u031",
+        "kind": "actual-ui"
+      }
+    ],
+    "media/ep02-normal-route01-game.mp4": [
+      {
+        "start": 788,
+        "end": 1013,
+        "unit": "u026",
+        "kind": "actual-play"
+      }
+    ],
+    "media/ep03-game.mp4": [
+      {
+        "start": 75,
+        "end": 200,
+        "unit": "u044",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 272,
+        "end": 325,
+        "unit": "u044",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 325,
+        "end": 366,
+        "unit": "u044",
+        "kind": "actual-play"
+      },
+      {
+        "start": 400,
+        "end": 599,
+        "unit": "u109",
+        "kind": "actual-play"
+      },
+      {
+        "start": 366,
+        "end": 400,
+        "unit": "u013",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 599,
+        "end": 665,
+        "unit": "u013",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 665,
+        "end": 770,
+        "unit": "u015",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 770,
+        "end": 875,
+        "unit": "u015",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 875,
+        "end": 895,
+        "unit": "u015",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 895,
+        "end": 1000,
+        "unit": "u022",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1000,
+        "end": 1105,
+        "unit": "u022",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1105,
+        "end": 1141,
+        "unit": "u022",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1141,
+        "end": 1230,
+        "unit": "u023",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1230,
+        "end": 1246,
+        "unit": "u025",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 200,
+        "end": 272,
+        "unit": "u036",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1246,
+        "end": 1318,
+        "unit": "u037",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1318,
+        "end": 1390,
+        "unit": "u038",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1390,
+        "end": 1462,
+        "unit": "u039",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1616,
+        "end": 1688,
+        "unit": "u040",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1551,
+        "end": 1611,
+        "unit": "u041",
+        "kind": "actual-ui"
+      }
+    ],
+    "media/ep05-game.mp4": [
+      {
+        "start": 500,
+        "end": 762,
+        "unit": "u110",
+        "kind": "actual-play"
+      },
+      {
+        "start": 460,
+        "end": 500,
+        "unit": "u054",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 762,
+        "end": 867,
+        "unit": "u054",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 867,
+        "end": 966,
+        "unit": "u054",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 85,
+        "end": 157,
+        "unit": "u055",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 966,
+        "end": 988,
+        "unit": "u055",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 210,
+        "end": 270,
+        "unit": "u056",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 335,
+        "end": 407,
+        "unit": "u057",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 988,
+        "end": 1024,
+        "unit": "u057",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1373,
+        "end": 1445,
+        "unit": "u058",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1024,
+        "end": 1040,
+        "unit": "u058",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1445,
+        "end": 1517,
+        "unit": "u059",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1040,
+        "end": 1052,
+        "unit": "u059",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1052,
+        "end": 1157,
+        "unit": "u125",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1157,
+        "end": 1244,
+        "unit": "u125",
+        "kind": "context-actual-play"
+      }
+    ],
+    "media/ep08-game.mp4": [
+      {
+        "start": 560,
+        "end": 841,
+        "unit": "u111",
+        "kind": "actual-play"
+      },
+      {
+        "start": 475,
+        "end": 560,
+        "unit": "u080",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 841,
+        "end": 946,
+        "unit": "u080",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 946,
+        "end": 1016,
+        "unit": "u080",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 100,
+        "end": 172,
+        "unit": "u081",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1016,
+        "end": 1052,
+        "unit": "u081",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 225,
+        "end": 288,
+        "unit": "u082",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 350,
+        "end": 422,
+        "unit": "u083",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1052,
+        "end": 1060,
+        "unit": "u083",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1382,
+        "end": 1445,
+        "unit": "u084",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1445,
+        "end": 1517,
+        "unit": "u085",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1060,
+        "end": 1101,
+        "unit": "u085",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1517,
+        "end": 1588,
+        "unit": "u086",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1752,
+        "end": 1824,
+        "unit": "u087",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1101,
+        "end": 1136,
+        "unit": "u087",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1687,
+        "end": 1747,
+        "unit": "u088",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1136,
+        "end": 1241,
+        "unit": "u088",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1241,
+        "end": 1269,
+        "unit": "u088",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1269,
+        "end": 1374,
+        "unit": "u089",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1374,
+        "end": 1382,
+        "unit": "u093",
+        "kind": "context-actual-play"
+      }
+    ],
+    "media/ep10-game.mp4": [
+      {
+        "start": 500,
+        "end": 788,
+        "unit": "u112",
+        "kind": "actual-play"
+      },
+      {
+        "start": 485,
+        "end": 500,
+        "unit": "u025",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 788,
+        "end": 893,
+        "unit": "u025",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 893,
+        "end": 996,
+        "unit": "u025",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 996,
+        "end": 1101,
+        "unit": "u028",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1101,
+        "end": 1206,
+        "unit": "u028",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1206,
+        "end": 1242,
+        "unit": "u028",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1242,
+        "end": 1268,
+        "unit": "u029",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1268,
+        "end": 1284,
+        "unit": "u031",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1284,
+        "end": 1386,
+        "unit": "u032",
+        "kind": "context-actual-play"
+      }
+    ],
+    "media/ep13-game.mp4": [
+      {
+        "start": 900,
+        "end": 1138,
+        "unit": "u113",
+        "kind": "actual-play"
+      },
+      {
+        "start": 500,
+        "end": 503,
+        "unit": "u118",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 503,
+        "end": 608,
+        "unit": "u119",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 608,
+        "end": 713,
+        "unit": "u119",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 713,
+        "end": 786,
+        "unit": "u119",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 250,
+        "end": 322,
+        "unit": "u120",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 786,
+        "end": 832,
+        "unit": "u120",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 375,
+        "end": 447,
+        "unit": "u121",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 832,
+        "end": 855,
+        "unit": "u121",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 855,
+        "end": 900,
+        "unit": "u122",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1138,
+        "end": 1243,
+        "unit": "u122",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1243,
+        "end": 1348,
+        "unit": "u122",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1711,
+        "end": 1739,
+        "unit": "u123",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1348,
+        "end": 1406,
+        "unit": "u124",
+        "kind": "context-actual-play"
+      }
+    ],
+    "media/ep11-game.mp4": [
+      {
+        "start": 490,
+        "end": 578,
+        "unit": "u032",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 578,
+        "end": 683,
+        "unit": "u034",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 683,
+        "end": 788,
+        "unit": "u034",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 788,
+        "end": 850,
+        "unit": "u034",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 850,
+        "end": 955,
+        "unit": "u035",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 955,
+        "end": 1060,
+        "unit": "u035",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1060,
+        "end": 1124,
+        "unit": "u035",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1124,
+        "end": 1152,
+        "unit": "u036",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1152,
+        "end": 1182,
+        "unit": "u037",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1182,
+        "end": 1199,
+        "unit": "u038",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1199,
+        "end": 1211,
+        "unit": "u039",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1211,
+        "end": 1223,
+        "unit": "u040",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1223,
+        "end": 1328,
+        "unit": "u041",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1328,
+        "end": 1378,
+        "unit": "u041",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1378,
+        "end": 1410,
+        "unit": "u042",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1410,
+        "end": 1482,
+        "unit": "u118",
+        "kind": "actual-ui"
+      }
+    ],
+    "media/ep12-game.mp4": [
+      {
+        "start": 495,
+        "end": 600,
+        "unit": "u042",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 600,
+        "end": 686,
+        "unit": "u042",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 686,
+        "end": 791,
+        "unit": "u045",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 791,
+        "end": 896,
+        "unit": "u045",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 896,
+        "end": 965,
+        "unit": "u045",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 965,
+        "end": 968,
+        "unit": "u093",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 968,
+        "end": 1073,
+        "unit": "u108",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1073,
+        "end": 1178,
+        "unit": "u108",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1178,
+        "end": 1216,
+        "unit": "u108",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1216,
+        "end": 1321,
+        "unit": "u117",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1321,
+        "end": 1395,
+        "unit": "u117",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1395,
+        "end": 1406,
+        "unit": "u118",
+        "kind": "context-actual-play"
+      }
+    ],
+    "media/ep04-game.mp4": [
+      {
+        "start": 80,
+        "end": 152,
+        "unit": "u046",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 455,
+        "end": 475,
+        "unit": "u046",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 205,
+        "end": 277,
+        "unit": "u047",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 475,
+        "end": 479,
+        "unit": "u047",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 330,
+        "end": 398,
+        "unit": "u048",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 479,
+        "end": 584,
+        "unit": "u049",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 584,
+        "end": 689,
+        "unit": "u049",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 689,
+        "end": 716,
+        "unit": "u049",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1365,
+        "end": 1437,
+        "unit": "u050",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 716,
+        "end": 717,
+        "unit": "u050",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1437,
+        "end": 1509,
+        "unit": "u051",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 717,
+        "end": 738,
+        "unit": "u051",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1735,
+        "end": 1807,
+        "unit": "u052",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 738,
+        "end": 784,
+        "unit": "u052",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 784,
+        "end": 832,
+        "unit": "u097",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 832,
+        "end": 837,
+        "unit": "u099",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 837,
+        "end": 942,
+        "unit": "u101",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 942,
+        "end": 1047,
+        "unit": "u101",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1047,
+        "end": 1137,
+        "unit": "u101",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1137,
+        "end": 1242,
+        "unit": "u124",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1242,
+        "end": 1307,
+        "unit": "u124",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1307,
+        "end": 1365,
+        "unit": "u125",
+        "kind": "context-actual-play"
+      }
+    ],
+    "media/ep06-game.mp4": [
+      {
+        "start": 465,
+        "end": 570,
+        "unit": "u062",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 570,
+        "end": 675,
+        "unit": "u062",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 675,
+        "end": 699,
+        "unit": "u062",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 90,
+        "end": 162,
+        "unit": "u063",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 699,
+        "end": 704,
+        "unit": "u063",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 215,
+        "end": 287,
+        "unit": "u064",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 704,
+        "end": 741,
+        "unit": "u064",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1375,
+        "end": 1447,
+        "unit": "u065",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 741,
+        "end": 761,
+        "unit": "u065",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1447,
+        "end": 1519,
+        "unit": "u066",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 761,
+        "end": 787,
+        "unit": "u066",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1745,
+        "end": 1817,
+        "unit": "u067",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 787,
+        "end": 836,
+        "unit": "u067",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1680,
+        "end": 1740,
+        "unit": "u068",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 836,
+        "end": 915,
+        "unit": "u068",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 915,
+        "end": 1020,
+        "unit": "u069",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1020,
+        "end": 1125,
+        "unit": "u069",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1125,
+        "end": 1154,
+        "unit": "u069",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1154,
+        "end": 1259,
+        "unit": "u097",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1259,
+        "end": 1364,
+        "unit": "u097",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1364,
+        "end": 1375,
+        "unit": "u099",
+        "kind": "context-actual-play"
+      }
+    ],
+    "media/ep07-game.mp4": [
+      {
+        "start": 470,
+        "end": 575,
+        "unit": "u070",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 575,
+        "end": 680,
+        "unit": "u070",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 680,
+        "end": 712,
+        "unit": "u070",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 95,
+        "end": 167,
+        "unit": "u071",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 220,
+        "end": 292,
+        "unit": "u072",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 712,
+        "end": 715,
+        "unit": "u072",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 345,
+        "end": 417,
+        "unit": "u073",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 715,
+        "end": 741,
+        "unit": "u073",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1394,
+        "end": 1466,
+        "unit": "u074",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 741,
+        "end": 754,
+        "unit": "u074",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1466,
+        "end": 1538,
+        "unit": "u075",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 754,
+        "end": 769,
+        "unit": "u075",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1764,
+        "end": 1836,
+        "unit": "u076",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 769,
+        "end": 805,
+        "unit": "u076",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1699,
+        "end": 1759,
+        "unit": "u077",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 805,
+        "end": 891,
+        "unit": "u077",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 891,
+        "end": 996,
+        "unit": "u078",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 996,
+        "end": 1101,
+        "unit": "u078",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1101,
+        "end": 1140,
+        "unit": "u078",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1140,
+        "end": 1245,
+        "unit": "u079",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1245,
+        "end": 1350,
+        "unit": "u079",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1350,
+        "end": 1377,
+        "unit": "u079",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1377,
+        "end": 1394,
+        "unit": "u089",
+        "kind": "context-actual-play"
+      }
+    ],
+    "media/ep09-game.mp4": [
+      {
+        "start": 480,
+        "end": 566,
+        "unit": "u089",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 105,
+        "end": 174,
+        "unit": "u091",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 355,
+        "end": 427,
+        "unit": "u092",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 566,
+        "end": 593,
+        "unit": "u092",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 593,
+        "end": 698,
+        "unit": "u093",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1692,
+        "end": 1752,
+        "unit": "u094",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 698,
+        "end": 751,
+        "unit": "u094",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 751,
+        "end": 856,
+        "unit": "u095",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 856,
+        "end": 961,
+        "unit": "u095",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 961,
+        "end": 985,
+        "unit": "u095",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 985,
+        "end": 1090,
+        "unit": "u096",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1090,
+        "end": 1195,
+        "unit": "u096",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1195,
+        "end": 1252,
+        "unit": "u096",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1387,
+        "end": 1459,
+        "unit": "u115",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1252,
+        "end": 1272,
+        "unit": "u115",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1459,
+        "end": 1531,
+        "unit": "u116",
+        "kind": "actual-ui"
+      },
+      {
+        "start": 1272,
+        "end": 1281,
+        "unit": "u116",
+        "kind": "context-actual-play"
+      },
+      {
+        "start": 1281,
+        "end": 1386,
+        "unit": "u117",
+        "kind": "context-actual-play"
+      }
+    ]
+  },
+  "duration": 620.8666666666667,
+  "frames": 18626,
+  "firstActualLoss": {
+    "outputFrames": [
+      0,
+      120
+    ],
+    "sourceFile": "media/ep01-game.mp4",
+    "sourceFrames": [
+      1683,
+      1803
+    ]
+  },
+  "status": "BINDING_BEFORE_RENDER_NOT_MASTER_SUCCESS",
+  "formal600Complete": false
+}

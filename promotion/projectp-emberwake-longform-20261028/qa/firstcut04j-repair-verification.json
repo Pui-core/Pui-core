@@ -1,0 +1,174 @@
+{
+  "videoSha256": "87c629f2edc21b9bd4a9fe45fc30375e3ad41d11613d05d93146f301b162c884",
+  "allNativeRepairFramesMatched": true,
+  "framesCompared": 1151,
+  "diagnosticSize": [
+    160,
+    90
+  ],
+  "comparison": "Every repaired frame from final AAC/H264 master against its exact Native EffectCraft ProRes source; RGB RMSE allows lossy reencoding. Audio verified separately.",
+  "comparisons": [
+    {
+      "file": "media/firstcut04h-picture-0.mov",
+      "start": 622,
+      "end": 879,
+      "frames": 257,
+      "rmse": 2.9416679985887795,
+      "maxFrameRmse": 3.45704460593256
+    },
+    {
+      "file": "media/firstcut04g-picture-1.mov",
+      "start": 919,
+      "end": 1088,
+      "frames": 169,
+      "rmse": 2.72951041368231,
+      "maxFrameRmse": 3.098084085366309
+    },
+    {
+      "file": "media/firstcut04i-picture-0.mov",
+      "start": 1967,
+      "end": 2001,
+      "frames": 34,
+      "rmse": 2.595277049365436,
+      "maxFrameRmse": 2.6458781710986425
+    },
+    {
+      "file": "media/firstcut04i-picture-1.mov",
+      "start": 4496,
+      "end": 4601,
+      "frames": 105,
+      "rmse": 2.962611073681071,
+      "maxFrameRmse": 3.3646583668963963
+    },
+    {
+      "file": "media/firstcut04j-picture-caption.mov",
+      "start": 4992,
+      "end": 5084,
+      "frames": 92,
+      "rmse": 2.817852662796097,
+      "maxFrameRmse": 2.877076544766309
+    },
+    {
+      "file": "media/firstcut04g-picture-2.mov",
+      "start": 7498,
+      "end": 7664,
+      "frames": 166,
+      "rmse": 2.6520272265397087,
+      "maxFrameRmse": 2.6551792504182936
+    },
+    {
+      "file": "media/firstcut04i-picture-3.mov",
+      "start": 10968,
+      "end": 11053,
+      "frames": 85,
+      "rmse": 2.690370699162232,
+      "maxFrameRmse": 2.7902649880797528
+    },
+    {
+      "file": "media/firstcut04i-picture-4.mov",
+      "start": 13390,
+      "end": 13633,
+      "frames": 243,
+      "rmse": 3.417052182517269,
+      "maxFrameRmse": 3.4367364471846553
+    }
+  ],
+  "boundaries": [
+    {
+      "file": "qa/firstcut04j-boundaries/boundary-01.png",
+      "frames": [
+        621,
+        622,
+        623,
+        878,
+        879
+      ],
+      "repair": "media/firstcut04h-picture-0.mov"
+    },
+    {
+      "file": "qa/firstcut04j-boundaries/boundary-02.png",
+      "frames": [
+        918,
+        919,
+        920,
+        1087,
+        1088
+      ],
+      "repair": "media/firstcut04g-picture-1.mov"
+    },
+    {
+      "file": "qa/firstcut04j-boundaries/boundary-03.png",
+      "frames": [
+        1966,
+        1967,
+        1968,
+        2000,
+        2001
+      ],
+      "repair": "media/firstcut04i-picture-0.mov"
+    },
+    {
+      "file": "qa/firstcut04j-boundaries/boundary-04.png",
+      "frames": [
+        4495,
+        4496,
+        4497,
+        4600,
+        4601
+      ],
+      "repair": "media/firstcut04i-picture-1.mov"
+    },
+    {
+      "file": "qa/firstcut04j-boundaries/boundary-05.png",
+      "frames": [
+        4991,
+        4992,
+        4993,
+        5083,
+        5084
+      ],
+      "repair": "media/firstcut04j-picture-caption.mov"
+    },
+    {
+      "file": "qa/firstcut04j-boundaries/boundary-06.png",
+      "frames": [
+        7497,
+        7498,
+        7499,
+        7663,
+        7664
+      ],
+      "repair": "media/firstcut04g-picture-2.mov"
+    },
+    {
+      "file": "qa/firstcut04j-boundaries/boundary-07.png",
+      "frames": [
+        10967,
+        10968,
+        10969,
+        11052,
+        11053
+      ],
+      "repair": "media/firstcut04i-picture-3.mov"
+    },
+    {
+      "file": "qa/firstcut04j-boundaries/boundary-08.png",
+      "frames": [
+        13389,
+        13390,
+        13391,
+        13632,
+        13633
+      ],
+      "repair": "media/firstcut04i-picture-4.mov"
+    }
+  ],
+  "directBoundaryImagesInspected": [],
+  "shortContextRemaining": 0,
+  "rawGameFramesRepeated": 0,
+  "originalClippedRowFullyCovered": null,
+  "hudCleanupScope": "Compare all actual adjusted frames; direct composition inspection is separately recorded.",
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "rootAccepted": false
+}

@@ -1,0 +1,155 @@
+{
+  "comp": 5,
+  "boxes": [
+    {
+      "name": "Opening brand",
+      "text": "EMBERWAKE",
+      "x": 118,
+      "y": 65,
+      "width": 167.83447265625,
+      "height": 18.39599609375,
+      "a": 0,
+      "b": 1.8,
+      "size": 25
+    },
+    {
+      "name": "Opening question1",
+      "text": "助けるために、",
+      "x": 118,
+      "y": 135,
+      "width": 418.880859375,
+      "height": 58.78125,
+      "a": 0.1,
+      "b": 2.7,
+      "size": 66
+    },
+    {
+      "name": "Opening question2",
+      "text": "思い出を使える？",
+      "x": 118,
+      "y": 225,
+      "width": 510.275390625,
+      "height": 59.2001953125,
+      "a": 0.1,
+      "b": 2.7,
+      "size": 66
+    },
+    {
+      "name": "Branch cue",
+      "text": "二段の近道へ。",
+      "x": 118,
+      "y": 118,
+      "width": 292.037109375,
+      "height": 41.3056640625,
+      "a": 6.1,
+      "b": 7.3,
+      "size": 46
+    },
+    {
+      "name": "Quote speaker 0",
+      "text": "アッシュ",
+      "x": 118,
+      "y": 100,
+      "width": 95.30029296875,
+      "height": 21.42333984375,
+      "a": 12,
+      "b": 16.5,
+      "size": 25
+    },
+    {
+      "name": "Quote sentence 0 0",
+      "text": "聞こえる。",
+      "x": 118,
+      "y": 165,
+      "width": 251.201171875,
+      "height": 50.919921875,
+      "a": 12,
+      "b": 16.5,
+      "size": 58
+    },
+    {
+      "name": "Quote sentence 0 1",
+      "text": "……ごめん、君は、誰？",
+      "x": 118,
+      "y": 250,
+      "width": 617.5810546875,
+      "height": 52.9873046875,
+      "a": 12,
+      "b": 16.5,
+      "size": 58
+    },
+    {
+      "name": "Quote speaker 1",
+      "text": "ルミ",
+      "x": 118,
+      "y": 100,
+      "width": 47.8759765625,
+      "height": 21.39892578125,
+      "a": 16.5,
+      "b": 20,
+      "size": 25
+    },
+    {
+      "name": "Quote sentence 1 0",
+      "text": "あなたを、",
+      "x": 118,
+      "y": 165,
+      "width": 249.841796875,
+      "height": 51.54296875,
+      "a": 16.5,
+      "b": 20,
+      "size": 58
+    },
+    {
+      "name": "Quote sentence 1 1",
+      "text": "待っている人。",
+      "x": 118,
+      "y": 250,
+      "width": 370.8544921875,
+      "height": 51.7978515625,
+      "a": 16.5,
+      "b": 20,
+      "size": 58
+    },
+    {
+      "name": "Quote small provenance",
+      "text": "実ゲームの台詞／編集で改行",
+      "x": 118,
+      "y": 1025,
+      "width": 258.876953125,
+      "height": 18.193359375,
+      "a": 12,
+      "b": 20,
+      "size": 20
+    }
+  ],
+  "fullBleed": true,
+  "camera": {
+    "scale": 160,
+    "anchor": [
+      960,
+      780
+    ],
+    "position": [
+      733,
+      645
+    ],
+    "reason": "Actor near left golden intersection; room ahead toward actual landing; source UI/hint/control rail cropped out, no410px header"
+  },
+  "host": {
+    "scale": 20,
+    "position": [
+      1780,
+      1002
+    ],
+    "interval": [
+      0,
+      3.4
+    ],
+    "bodyHeightPx": 156,
+    "secondaryToRealGame": true,
+    "currentVoiceMatchedCore": true
+  },
+  "seconds": 20,
+  "frames": 600
+}

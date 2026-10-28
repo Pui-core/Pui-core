@@ -1,0 +1,78 @@
+{
+  "revision": "04f",
+  "state": "ACTUAL_FULL_04F_TECHNICAL_AND_SELECTED_IMAGE_REVIEW_COMPLETE_PENDING_CREATIVE_ACCEPTANCE",
+  "priorActualMaster": {
+    "revision": "04e",
+    "sha256": "97afd0e6820548db12508a2cfcfe95d6ab846afaefce95519463c39e966dc6d6",
+    "seconds": 620.885,
+    "frames": 18626
+  },
+  "repair": {
+    "dialogueNativeWindows": 7,
+    "dialogueNativeFrames": 328,
+    "questionOverlapAt": 377.2,
+    "semanticLCuts": [
+      "u037",
+      "u120"
+    ],
+    "newAudioOrMasterLengthChange": false
+  },
+  "checksPending": [],
+  "directImageEvidence": {
+    "current04fBoundaryStrips": 7,
+    "current04fBoundaryFrameExtracts": 35,
+    "current04fFullFrameImages": 9,
+    "previous04eBoundaryStrips": 39,
+    "previous04eBoundaryFrameExtracts": 195,
+    "scope": "Selected actual images across each named revision; not a continuous whole watch. The 04e camera/state pictures are additionally checked for inherited correspondence in actual 04f."
+  },
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "bgmCreativeAdoption": false,
+  "rootAccepted": false,
+  "formal600Complete": false,
+  "publishApproved": false,
+  "published": false,
+  "video": "videos/emberwake-firstcut04f-f-native.mp4",
+  "videoSha256": "e42986000d3b48c1cbe912eaf8f584d3492ed57fad8d1222ebc13479cd4f5e22",
+  "actualSeconds": 620.885,
+  "frames": 18626,
+  "checksComplete": [
+    "actual F master full AV decode and F/Source SHA",
+    "113 PCM phrase assembly and final AAC all phrase/head/tail; maximum lag 0 samples",
+    "all 18626 encoded frames known fullframe bars and black 0",
+    "all 328 current Native repair frames match latest master",
+    "9565 unchanged 04e camera/state repair frames match actual latest master",
+    "7 actual boundary strips and 9 full composition frames directly inspected",
+    "actual F-saved 15V clips/2A tracks/no gaps or speed change",
+    "own worker and Linux/Windows Native children ended; Source media restored"
+  ],
+  "mandatoryRemaining": [
+    "continuous whole video watch with actual audio for pace, readability and sustained engagement",
+    "subjective voice/music balance and BGM creative adoption",
+    "Root final creative acceptance",
+    "latest head self review and required GitHub checks"
+  ],
+  "issues": [
+    {
+      "id": "PP127-HUD-CROP-P1",
+      "state": "TECHNICAL_REPAIR_VERIFIED_LATEST_04F_PENDING_WHOLE_CREATIVE_GATE",
+      "evidence": [
+        "qa/firstcut04f-inherited-verification.json",
+        "qa/firstcut04f-final-review-images.json"
+      ]
+    },
+    {
+      "id": "PP127-CONTEXT-FLASH-P1",
+      "state": "SPECIFIED_REPAIRS_AND_VOICE_UI_BINDINGS_VERIFIED_PENDING_CONTINUOUS_WHOLE_REVIEW",
+      "evidence": [
+        "qa/firstcut04f-repair-verification.json",
+        "qa/firstcut04f-picture-patches.json"
+      ],
+      "semanticLCuts": [
+        "u037 path",
+        "u120 footing"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "duration": 661.3,
+  "sampleRate": 48000,
+  "channels": 2,
+  "bits": 24,
+  "voiceSha256": "a041a68b5216f1b0ccfef9bc839e90e967cce5d0db3b2bd0d2db3f28a56a78ee",
+  "backgroundSha256": "a1757cbf07edf0746594ad88671fbcae9a5932e5a3cc932bd192d03c4c61f566",
+  "referenceMixSha256": "4689c2898d213fff72f0827fd1a4c95fcfed419e9b6f25965ace69b6f132d154",
+  "originalBgmSha256": "4d3bdac03c4bbcd89511ea637265bd13d56e0f11f6b702ca4f01b66af49c50df",
+  "voiceGain": 1.535069474600459,
+  "masterDb": 0.8,
+  "unscaledIntegratedLufs": -19.5,
+  "unscaledTruePeakDbtp": -2.6,
+  "backgroundArrangement": {
+    "sourceSeconds": 82,
+    "musicalSeconds": 80,
+    "repeats": 9,
+    "wholeBarCrossfadeSeconds": 2.5,
+    "bpm": 96,
+    "purpose": "Background-only arrangement; no repeated video padding"
+  },
+  "ducking": {
+    "threshold": 0.025,
+    "ratio": 4,
+    "attackMs": 18,
+    "releaseMs": 320
+  },
+  "nativeFilmCraftTracks": [
+    "A1 narration-stem.wav",
+    "A2 background-stem.wav"
+  ],
+  "gameAudioRecorded": false,
+  "sfxAdded": false,
+  "credit": "VOICEVOX:青山龍星",
+  "wholeDirectSubjectiveListen": false
+}

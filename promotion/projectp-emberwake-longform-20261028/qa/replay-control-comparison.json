@@ -1,0 +1,139 @@
+{
+  "status": "ACTUAL_INPUT_AND_REPLAY_COMPARISON_ESTABLISHED_PENDING_VISUAL_EDIT",
+  "attempt": "ep01-replay-controls01",
+  "captureReceiptSha256": "adf5c1df5f58c84027be6c4d3718deb2c78e5ba331cd7bc7cdded59d6083a3fc",
+  "rawFrames": 1951,
+  "rawSeconds": 65.03333333333333,
+  "startConditionDelta": {
+    "vx": 0,
+    "vy": 0,
+    "x": 0,
+    "y": 0
+  },
+  "startsEquivalent": true,
+  "comparisonEstablished": true,
+  "trials": [
+    {
+      "actual_hold_display_frames": 1,
+      "actual_release_frame": 197,
+      "end_falls": 1,
+      "end_frame": 225,
+      "end_position": [
+        95,
+        1160
+      ],
+      "label": "short-press",
+      "maximum_hold_display_frames": 1,
+      "min_y": 1104.19519042969,
+      "on_floor_at_start": true,
+      "outcome": "ACTUAL_FALL_AND_CHECKPOINT_RETURN",
+      "start_falls": 0,
+      "start_floor": [
+        200,
+        1124,
+        104,
+        14
+      ],
+      "start_frame": 196,
+      "start_position": [
+        293.605224609375,
+        1123.92529296875
+      ],
+      "start_velocity": [
+        0,
+        0
+      ],
+      "start_world": {
+        "collected": [
+          0
+        ],
+        "has_dash": false,
+        "hearths": [],
+        "switches": []
+      },
+      "target": [
+        300,
+        1088,
+        104,
+        14
+      ]
+    },
+    {
+      "actual_hold_display_frames": 18,
+      "actual_release_frame": 418,
+      "end_falls": 0,
+      "end_frame": 426,
+      "end_position": [
+        325.708129882812,
+        1087.99536132812
+      ],
+      "label": "long-hold",
+      "maximum_hold_display_frames": 24,
+      "min_y": 1066.765625,
+      "on_floor_at_start": true,
+      "outcome": "ACTUAL_TARGET_LANDING",
+      "start_falls": 0,
+      "start_floor": [
+        200,
+        1124,
+        104,
+        14
+      ],
+      "start_frame": 400,
+      "start_position": [
+        293.605224609375,
+        1123.92529296875
+      ],
+      "start_velocity": [
+        0,
+        0
+      ],
+      "start_world": {
+        "collected": [
+          0
+        ],
+        "has_dash": false,
+        "hearths": [],
+        "switches": []
+      },
+      "target": [
+        300,
+        1088,
+        104,
+        14
+      ]
+    }
+  ],
+  "completedFinal": [
+    1
+  ],
+  "saveSha256": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+  "sameSaveShaAsLegitimateSeed": true,
+  "normalReplayRecapturedStoryAndResultNotCountedAsNewDuration": true,
+  "gameAudioRecorded": false,
+  "visualReview": {
+    "status": "DIRECT_RAW_PNG_REVIEW_AND_EDITED_FINAL_FRAME_REVIEW",
+    "rawFrames": [
+      196,
+      202,
+      217,
+      225,
+      400,
+      412,
+      418
+    ],
+    "sha256": [
+      "1ff9238f6ccac7d794f49bbfd29ef731d15b675b6e210f1d0b091828cd3b63eb",
+      "9a23a55817bcf837c89ff385f0bed974a30c4173956a60298c8f3d2ba91c4edc",
+      "9221eaafd3b0656a6acfd2c3884686cf8bff4f62e2fcac0edde4e118190733d8",
+      "cd61417834de218a249769d85c7d8fe3b8de33bfbacfcd1649fe639abf7a6592",
+      "c57fe75ed482ea8e43d88339283401add48a91b1d5eed914747494cab2beb31c",
+      "882bbb432f52f8a073e8e89609ef89774424b9d6be93339182bfa5b26c5dab70",
+      "81c9cabfa29433788ebfea45e82a7adf76529b2d8cc21f19f4018d79f75cc82b"
+    ],
+    "actualHoldDisplayFrames": 18,
+    "requestedMaximumNotClaimedActual": 24,
+    "noCompetitiveTimingClaim": true
+  },
+  "formal600Complete": false
+}

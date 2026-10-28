@@ -1,0 +1,18 @@
+{
+  "exit": 1,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-longform.ecproj",
+    "render-frame",
+    "--comp",
+    "EMBERWAKE Formal Longform",
+    "--time",
+    "82.36666666666666",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\qa\\preview-82.367.png",
+    "--json"
+  ],
+  "stdout": "",
+  "stderr": "<3>WSL (1125754 - ) ERROR: UtilAcceptVsock:281: accept4 failed 110\n"
+}

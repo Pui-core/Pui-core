@@ -1,0 +1,134 @@
+{
+  "videoSha256": "e42986000d3b48c1cbe912eaf8f584d3492ed57fad8d1222ebc13479cd4f5e22",
+  "previousMasterSha256": "97afd0e6820548db12508a2cfcfe95d6ab846afaefce95519463c39e966dc6d6",
+  "scope": "Every 04e Native camera/state repair frame except the deliberately replaced 04f dialogue ranges. Compare actual 04f against actual 04e; original Native-to-04e correspondence remains in the 04e repair receipt.",
+  "framesCompared": 9565,
+  "previousRepairFrames": 9824,
+  "excludedCurrentRepairFrames": 259,
+  "ranges": [
+    [
+      120,
+      436
+    ],
+    [
+      622,
+      919
+    ],
+    [
+      1024,
+      1515
+    ],
+    [
+      1759,
+      2180
+    ],
+    [
+      2280,
+      2510
+    ],
+    [
+      3145,
+      3480
+    ],
+    [
+      4391,
+      4637
+    ],
+    [
+      4894,
+      5630
+    ],
+    [
+      6149,
+      6527
+    ],
+    [
+      6746,
+      7025
+    ],
+    [
+      7366,
+      7498
+    ],
+    [
+      7736,
+      8026
+    ],
+    [
+      8460,
+      8694
+    ],
+    [
+      9142,
+      9191
+    ],
+    [
+      9251,
+      9569
+    ],
+    [
+      9674,
+      9811
+    ],
+    [
+      10300,
+      10336
+    ],
+    [
+      10396,
+      11228
+    ],
+    [
+      11798,
+      11833
+    ],
+    [
+      11893,
+      12131
+    ],
+    [
+      12578,
+      13390
+    ],
+    [
+      14153,
+      14453
+    ],
+    [
+      15310,
+      16300
+    ],
+    [
+      16588,
+      16826
+    ],
+    [
+      16999,
+      17283
+    ],
+    [
+      17474,
+      17652
+    ],
+    [
+      17865,
+      18120
+    ],
+    [
+      18148,
+      18626
+    ]
+  ],
+  "diagnosticSize": [
+    160,
+    90
+  ],
+  "maxFrameRmse": 1.003120132386944,
+  "worstFrame": 11944,
+  "rmse": 0.5541093856662432,
+  "tolerance": 10,
+  "allInheritedRepairFramesMatched": true,
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "rootAccepted": false
+}

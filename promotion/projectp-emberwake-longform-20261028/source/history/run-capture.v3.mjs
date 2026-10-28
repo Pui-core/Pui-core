@@ -1,0 +1,39 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {spawn} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+const source=path.dirname(fileURLToPath(import.meta.url));
+const root=path.resolve(source,'..');
+const workspace='/home/pui/tmp/projectp-emberwake-longform-20261028/production';
+const product=path.join(workspace,'product');
+const [epText,attempt,previousAttempt]=process.argv.slice(2);
+const episode=Number(epText);
+if(!Number.isInteger(episode)||episode<1||episode>15||!/^ep[0-9]{2}-[a-z0-9-]+$/.test(attempt||''))throw Error('episode 1..15 and unique epNN-name required');
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const before=JSON.parse(fs.readFileSync(path.join(root,'qa/product-source-before.json')));
+for(const f of before.files)if(hash(path.join(product,f.file))!==f.sha256)throw Error('Pinned core changed '+f.file);
+const out=path.join(workspace,attempt),data=out+'-userdata',config=out+'-config',cache=out+'-cache';
+if([out,data,config,cache].some(p=>fs.existsSync(p)))throw Error('Attempt/profile already exists; preserve it');
+let seedSha='',seedSource=null;
+if(episode>1){
+ if(!/^ep[0-9]{2}-[a-z0-9-]+$/.test(previousAttempt||''))throw Error('Previous owned finite attempt required');
+ const prior=JSON.parse(fs.readFileSync(path.join(workspace,previousAttempt,'capture.json')));
+ if(prior.status!=='PASS_EPISODE_CAPTURE_PENDING_REVIEW'||prior.episode!==episode-1||JSON.stringify(prior.completed_final)!==JSON.stringify(Array.from({length:episode-1},(_,i)=>i+1)))throw Error('Previous normal completed state invalid');
+ seedSource=path.join(workspace,previousAttempt+'-userdata/godot/app_userdata/EMBERWAKE/emberwake-campaign-1.0-jump-1.1.json');
+ seedSha=hash(seedSource);if(seedSha!==prior.save_sha256_after)throw Error('Previous legitimate save SHA changed');
+ const saved=JSON.parse(fs.readFileSync(seedSource));if(JSON.stringify(saved.completed)!==JSON.stringify(prior.completed_final))throw Error('Actual save progress differs');
+}
+fs.mkdirSync(out,{recursive:true});
+if(seedSource){const dest=path.join(data,'godot/app_userdata/EMBERWAKE/emberwake-campaign-1.0-jump-1.1.json');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.copyFileSync(seedSource,dest);if(hash(dest)!==seedSha)throw Error('Seed copy changed');}
+const driver=path.join(source,'capture-episode.gd');
+const args=['-a','-s','-screen 0 1920x1080x24 -nolisten tcp','/home/pui/.local/bin/godot','--path',product,'--rendering-method','gl_compatibility','--audio-driver','Dummy','--fixed-fps','30','--disable-vsync','--resolution','1920x1080','--script',driver,'--','--out',out,'--episode',String(episode),'--seed-sha',seedSha,'--branch',String(episode===2)];
+const env={...process.env,XDG_DATA_HOME:data,XDG_CONFIG_HOME:config,XDG_CACHE_HOME:cache,PROJECTP_CAPTURE_DATA_ROOT:data,LP_NUM_THREADS:'2',LIBGL_ALWAYS_SOFTWARE:'1'};
+const log=fs.openSync(out+'.log','wx');
+const child=spawn('/usr/bin/xvfb-run',args,{env,detached:true,stdio:['ignore',log,log]});
+const launch={schemaVersion:1,episode,attempt,started:new Date().toISOString(),launcherPid:child.pid,args,driverSha256:hash(driver),seedSha256:seedSha,seedSource,owned:{workspace,product,out,data,config,cache},limits:{wallSeconds:720,maxFrames:6000},status:'RUNNING'};
+fs.writeFileSync(out+'-launch.json',JSON.stringify(launch,null,2)+'\n');console.log(JSON.stringify(launch));
+let ownerStopSignal=null;let wallBoundReached=false;const watchdog=setTimeout(()=>{wallBoundReached=true;try{process.kill(-child.pid,'SIGTERM');}catch(error){if(error.code!=='ESRCH')console.error(error);}},720000);
+for(const signal of ['SIGINT','SIGTERM'])process.once(signal,()=>{ownerStopSignal=signal;try{process.kill(-child.pid,signal);}catch(error){if(error.code!=='ESRCH')console.error(error);}});
+child.on('error',error=>{console.error(error);process.exitCode=1;});
+child.on('close',(code,signal)=>{clearTimeout(watchdog);fs.closeSync(log);const changed=before.files.filter(f=>hash(path.join(product,f.file))!==f.sha256).map(f=>f.file);const receiptPath=path.join(out,'capture.json');const receipt=fs.existsSync(receiptPath)?JSON.parse(fs.readFileSync(receiptPath)):null;let saveActual=null;if(receipt?.save_exists_after){const p=path.join(data,'godot/app_userdata/EMBERWAKE/emberwake-campaign-1.0-jump-1.1.json');saveActual={sha256:hash(p),completed:JSON.parse(fs.readFileSync(p)).completed};}const engineGone=receipt? !fs.existsSync('/proc/'+receipt.owned_pid):null;const ok=code===0&&!wallBoundReached&&!ownerStopSignal&&engineGone===true&&changed.length===0&&receipt?.status==='PASS_EPISODE_CAPTURE_PENDING_REVIEW'&&receipt?.save_sha256_after===saveActual?.sha256&&JSON.stringify(saveActual?.completed)===JSON.stringify(Array.from({length:episode},(_,i)=>i+1));const final={...launch,status:ok?'FINISHED':'FAILED',exitCode:code,signal,finished:new Date().toISOString(),coreFilesChecked:before.files.length,changedCore:changed,wallBoundReached,ownerStopSignal,ownedEnginePid:receipt?.owned_pid||null,ownedEngineGone:engineGone,receiptSha256:receipt?hash(receiptPath):null,saveActual};fs.writeFileSync(out+'-launch.json',JSON.stringify(final,null,2)+'\n');console.log(JSON.stringify(final));if(!ok)process.exitCode=1;});

@@ -1,0 +1,33 @@
+{
+  "status": "SELF_IMAGE_REVIEW_ONLY_PENDING_ROOT_CREATIVE_ACCEPTANCE",
+  "review03c": {
+    "wholeTechnicalAv": true,
+    "allFrameFallbackScan": true,
+    "cutBoundaryContactReviewOfPrevious03bFoundAndFixedResultUiClip": true,
+    "correctedFinalMp4Frames": [
+      {
+        "file": "qa/emberwake-jetcut03c-comparison-final-051.png",
+        "time": 49.45
+      },
+      {
+        "file": "qa/emberwake-jetcut03c-comparison-final-052.png",
+        "time": 51.9
+      }
+    ],
+    "checkpointCameraFinalReviewed": "qa/emberwake-jetcut03c-comparison-final-019.png",
+    "nativeSourceBeforeAfterVersionPreserved": [
+      "03",
+      "03b",
+      "03c"
+    ],
+    "sourceReplacement": [
+      1325,
+      1402
+    ]
+  },
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "formal600Complete": false,
+  "fullFinalFDependencyProof": false,
+  "rootLatestInstruction": "Finish03c and separate short art comparison; commit/push, record selfHOLD, then idle for Root review. Do not fill fixed502/602 plans."
+}

@@ -1,0 +1,25 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-v",
+    "error",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\emberwake-art-history20-voice-001.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\emberwake-art-history20b-voice-002.wav",
+    "-i",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\emberwake-art-history20b-voice-003.wav",
+    "-filter_complex",
+    "[0:a]adelay=4800S|4800S[v0];[1:a]adelay=268800S|268800S[v1];[2:a]adelay=633600S|633600S[v2];[v0][v1][v2]amix=inputs=3:normalize=0,volume=1.4,apad,atrim=duration=20[v]",
+    "-map",
+    "[v]",
+    "-c:a",
+    "pcm_s24le",
+    "-ar",
+    "48000",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\media\\emberwake-art-history20b-narration.wav"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

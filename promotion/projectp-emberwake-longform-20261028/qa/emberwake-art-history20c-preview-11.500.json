@@ -1,0 +1,18 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Program Files/EffectCraft/effectcraft-cli.exe",
+  "args": [
+    "--project",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\projects\\emberwake-art-history20c.ecproj",
+    "render-frame",
+    "--comp",
+    "EMBERWAKE retained art comparison20c",
+    "--time",
+    "11.5",
+    "--out",
+    "\\\\wsl.localhost\\Ubuntu\\home\\pui\\.claude\\worktrees\\Pui-core-issue-127\\promotion\\projectp-emberwake-longform-20261028\\qa\\emberwake-art-history20c-11.500.png",
+    "--json"
+  ],
+  "stdout": "{\"comp\":5,\"height\":1080,\"ms\":299.7,\"path\":\"\\\\\\\\wsl.localhost\\\\Ubuntu\\\\home\\\\pui\\\\.claude\\\\worktrees\\\\Pui-core-issue-127\\\\promotion\\\\projectp-emberwake-longform-20261028\\\\qa\\\\emberwake-art-history20c-11.500.png\",\"time\":11.5,\"width\":1920}\n",
+  "stderr": ""
+}

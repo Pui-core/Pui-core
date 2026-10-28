@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import {file,np,EC,run,parse,copy} from './native.mjs';
+const original=file('projects/emberwake-firstcut04k-opening-pilot.ecproj'), next=file('projects/emberwake-firstcut04k-opening-pilot02.ecproj');
+if(fs.existsSync(next))throw Error('Preserve old pilot');copy(original,next);
+const info=parse((await run(EC,['--project',np(next),'info','--json'],'firstcut04k-opening-pilot02-info.json')).stdout);
+const names={'first episode actual movement':500,'short press falls':400};
+const layers=info.activeComp.layers.filter(x=>Object.hasOwn(names,x.name)).map(x=>({id:x.id,name:x.name,x:names[x.name]}));
+if(layers.length!==2)throw Error('Exact actor shots not found');
+const jsx=`var a=${JSON.stringify(layers)};for(var i=0;i<a.length;i++)app.run('prop.set',{layer:a[i].id,path:'transform/anchor',value:[a[i].x,780,0]});writeLn(JSON.stringify(a));`;
+fs.writeFileSync(file('source/firstcut04k-opening-pilot02.jsx'),jsx,{flag:'wx'});
+const result=parse((await run(EC,['--project',np(next),'script',np(file('source/firstcut04k-opening-pilot02.jsx')),'--save-as',np(next),'--json'],'firstcut04k-opening-pilot02-build.json')).stdout);if(!result.ok)throw Error('Native edit failed');
+for(const t of [2.05,3,5,6.65,6.7,7,7.4,8.5])await run(EC,['--project',np(next),'render-frame','--comp','EMBERWAKE 04k opening pilot','--time',String(t),'--out',np(file(`qa/firstcut04k-opening-pilot02-${t}.png`)),'--json'],`firstcut04k-opening-pilot02-${t}.json`);
+console.log('Separate opening pilot camera corrected');

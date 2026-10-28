@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import {file,np,EC,run,parse,copy,save} from './native.mjs';
+const project=file('projects/emberwake-firstcut04g.ecproj'),backup=file('projects/emberwake-firstcut04g-before-cropfix.ecproj');
+if(fs.existsSync(backup))throw Error('Prior crop backup exists');copy(project,backup);
+const p=JSON.parse(fs.readFileSync(project)),layers=p.items[p.activeComp].kind.layers;
+for(const id of [237,12484,14360])if(!layers.some(l=>l.id===id&&l.switches.video))throw Error('Expected crop layer missing '+id);
+const jsx=`function r(i,p){return app.run(i,p||{});}function set(l,p,v){r('prop.set',{layer:l,path:p,value:v});}var ids=[237,12484,14360];for(var i=0;i<ids.length;i++){set(ids[i],'transform/anchor',[960,740,0]);set(ids[i],'transform/position',[960,645,0]);set(ids[i],'transform/scale',[185,185,100]);}writeLn(JSON.stringify({corrected:ids.length}));`;
+fs.writeFileSync(file('source/firstcut04g-cropfix.jsx'),jsx);
+const built=parse((await run(EC,['--project',np(project),'script',np(file('source/firstcut04g-cropfix.jsx')),'--save-as',np(project),'--json'],'firstcut04g-cropfix-build.json')).stdout);if(!built.ok)throw Error('Native crop fix failed');
+const E=JSON.parse(fs.readFileSync(file('source/firstcut04g-edit.json')));for(const s of E.shots.filter(s=>s.unit==='u005'&&s.kind==='context-actual-play'||s.id==='u006 episode1 replay 04g 1'))s.camera={anchor:[960,740],position:[960,645],scale:185};E.revision04g.cropFix='reframe avoids both clipped original objective text and protagonist clipping';save('source/firstcut04g-edit.json',E);save('source/emberwake-firstcut04g-measured.json',E);
+for(const t of [21,24,28,33.5,35.5])await run(EC,['--project',np(project),'render-frame','--comp',E.comp,'--time',String(t),'--out',np(file('qa/firstcut04g-cropfix-'+t+'.png')),'--json'],'firstcut04g-cropfix-preview-'+t+'.json');
+console.log(JSON.stringify({stage:'corrected-native-previews-ready',masterComplete:false}));

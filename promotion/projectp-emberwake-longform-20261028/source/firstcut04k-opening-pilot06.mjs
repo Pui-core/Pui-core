@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import {file,np,EC,run,parse,copy} from './native.mjs';
+const old=file('projects/emberwake-firstcut04k-opening-pilot05.ecproj'),next=file('projects/emberwake-firstcut04k-opening-pilot06.ecproj');
+if(fs.existsSync(next))throw Error('Preserve prior pilot');copy(old,next);
+const info=parse((await run(EC,['--project',np(next),'info','--json'],'firstcut04k-opening-pilot06-info.json')).stdout);
+const bg=info.activeComp.layers.find(x=>x.name==='first episode backdrop quote2');if(!bg)throw Error('Quote background missing');
+const jsx=`var r=app.run('layer.newShape',{name:'quote contrast',kind:'rect',size:[1080,280],position:[600,250],fill:'#07131D',strokeWidth:0});app.run('prop.set',{layer:r.layer,path:'transform/opacity',value:78});app.run('layer.timing',{layers:[r.layer],in:14.7,out:20.8});app.run('layer.arrange',{layers:[r.layer],above:${bg.id}});writeLn(JSON.stringify(r));`;
+fs.writeFileSync(file('source/firstcut04k-opening-pilot06.jsx'),jsx,{flag:'wx'});
+const result=parse((await run(EC,['--project',np(next),'script',np(file('source/firstcut04k-opening-pilot06.jsx')),'--save-as',np(next),'--json'],'firstcut04k-opening-pilot06-build.json')).stdout);if(!result.ok)throw Error('Quote contrast failed');
+for(const t of [0.5,3,13.4,15.5,19])await run(EC,['--project',np(next),'render-frame','--comp','EMBERWAKE 04k opening pilot','--time',String(t),'--out',np(file(`qa/firstcut04k-opening-pilot06-${t}.png`)),'--json'],`firstcut04k-opening-pilot06-${t}.json`);
+console.log('Quote contrast saved');

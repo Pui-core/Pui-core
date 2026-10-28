@@ -1,0 +1,160 @@
+{
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "キ",
+          "consonant": "k",
+          "consonant_length": 0.09060030430555344,
+          "vowel": "I",
+          "vowel_length": 0.05170769244432449,
+          "pitch": 0
+        },
+        {
+          "text": "コ",
+          "consonant": "k",
+          "consonant_length": 0.04622854292392731,
+          "vowel": "o",
+          "vowel_length": 0.08716479688882828,
+          "pitch": 4.640274524688721
+        },
+        {
+          "text": "エ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "e",
+          "vowel_length": 0.08427609503269196,
+          "pitch": 4.52235221862793
+        },
+        {
+          "text": "ル",
+          "consonant": "r",
+          "consonant_length": 0.030468910932540894,
+          "vowel": "u",
+          "vowel_length": 0.18668735027313232,
+          "pitch": 4.372791767120361
+        }
+      ],
+      "accent": 4,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.39997413754463196,
+        "pitch": 0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ゴ",
+          "consonant": "g",
+          "consonant_length": 0.0641355812549591,
+          "vowel": "o",
+          "vowel_length": 0.09026359021663666,
+          "pitch": 4.520517349243164
+        },
+        {
+          "text": "メ",
+          "consonant": "m",
+          "consonant_length": 0.062039896845817566,
+          "vowel": "e",
+          "vowel_length": 0.11626110970973969,
+          "pitch": 4.549339771270752
+        },
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.17469610273838043,
+          "pitch": 4.392209053039551
+        }
+      ],
+      "accent": 3,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.35572755336761475,
+        "pitch": 0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "キ",
+          "consonant": "k",
+          "consonant_length": 0.07118362933397293,
+          "vowel": "i",
+          "vowel_length": 0.05331078916788101,
+          "pitch": 4.598785400390625
+        },
+        {
+          "text": "ミ",
+          "consonant": "m",
+          "consonant_length": 0.0493440106511116,
+          "vowel": "i",
+          "vowel_length": 0.06738010793924332,
+          "pitch": 4.492245674133301
+        },
+        {
+          "text": "ワ",
+          "consonant": "w",
+          "consonant_length": 0.057531557977199554,
+          "vowel": "a",
+          "vowel_length": 0.21788382530212402,
+          "pitch": 4.398620128631592
+        }
+      ],
+      "accent": 3,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.5458675026893616,
+        "pitch": 0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ダ",
+          "consonant": "d",
+          "consonant_length": 0.06337668001651764,
+          "vowel": "a",
+          "vowel_length": 0.09533568471670151,
+          "pitch": 4.5402398109436035
+        },
+        {
+          "text": "レ",
+          "consonant": "r",
+          "consonant_length": 0.020190171897411346,
+          "vowel": "e",
+          "vowel_length": 0.21616719663143158,
+          "pitch": 4.423017501831055
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": true
+    }
+  ],
+  "speedScale": 1.06,
+  "pitchScale": 0,
+  "intonationScale": 1.04,
+  "volumeScale": 1,
+  "prePhonemeLength": 0.045,
+  "postPhonemeLength": 0.15,
+  "pauseLength": null,
+  "pauseLengthScale": 1,
+  "outputSamplingRate": 48000,
+  "outputStereo": true,
+  "kana": "_キコエル'、ゴメン'、キミワ'、ダ'レ？"
+}

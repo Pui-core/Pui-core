@@ -1,0 +1,24 @@
+{
+  "reviewer": "single127 / raw PNG direct visual",
+  "episode": 12,
+  "attempt": "ep12-full01",
+  "checks": [
+    {
+      "path": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep12-full01/frames/frame-001481.png",
+      "sha256": "64228fe9ac9e6a045b975d152310f7a5287f67f03a7f64ec5dfad74745ab6dbe",
+      "kind": "actual result",
+      "fullBodyTextVisible": true,
+      "observedTextMatchesReceipt": true
+    },
+    {
+      "path": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep12-full01/frames/frame-001791.png",
+      "sha256": "b2ca2a2084810fb77130ed44f9b2f9b7c6eed282e3c6d21615b2824030fa628e",
+      "kind": "notebook memory page2",
+      "fullBodyTextVisible": true,
+      "observedTextMatchesReceipt": true
+    }
+  ],
+  "storyEndpoint": "4章3話 約束のかたち",
+  "finalEnding15NotCaptured": true,
+  "finalMovieQualityPass": false
+}

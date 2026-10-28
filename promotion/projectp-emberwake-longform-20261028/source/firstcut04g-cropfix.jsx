@@ -1,0 +1,1 @@
+function r(i,p){return app.run(i,p||{});}function set(l,p,v){r('prop.set',{layer:l,path:p,value:v});}var ids=[237,12484,14360];for(var i=0;i<ids.length;i++){set(ids[i],'transform/anchor',[960,740,0]);set(ids[i],'transform/position',[960,645,0]);set(ids[i],'transform/scale',[185,185,100]);}writeLn(JSON.stringify({corrected:ids.length}));
