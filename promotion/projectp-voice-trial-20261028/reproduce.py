@@ -17,6 +17,9 @@ def main():
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--model-cache", type=Path, required=True)
     parser.add_argument("--offline", action="store_true")
+    parser.add_argument("--mode", choices=("xvector", "icl"), default="xvector")
+    parser.add_argument("--reference-text-file", type=Path)
+    parser.add_argument("--subtalker-sampling", action="store_true")
     args = parser.parse_args()
     repo = Path(__file__).resolve().parents[2]
     reference = args.reference.resolve(strict=True)
@@ -27,7 +30,20 @@ def main():
             parser.error("Output and model cache must be outside the Git repository")
     if not reference.is_file():
         parser.error("Reference must be an explicitly supplied local audio file")
-    output = out_dir / "owner-voice-clone-experiment-v1.wav"
+    reference_text = None
+    if args.mode == "icl":
+        if args.reference_text_file is None:
+            parser.error("ICL requires the matching private reference transcript file")
+        transcript_path = args.reference_text_file.resolve(strict=True)
+        if transcript_path.is_relative_to(repo):
+            parser.error("Private reference transcripts must remain outside Git")
+        reference_text = transcript_path.read_text(encoding="utf-8").strip()
+        if not reference_text or len(reference_text) > 800:
+            parser.error("Supply a short, nonempty matching reference transcript")
+    elif args.reference_text_file is not None:
+        parser.error("Reference transcript is only used in ICL mode")
+    output = out_dir / ("owner-voice-clone-experiment-v2-icl.wav" if args.mode == "icl"
+                        else "owner-voice-clone-experiment-v1.wav")
     receipt = out_dir / "trial-result.json"
     if output.exists() or receipt.exists():
         parser.error("Refusing to overwrite a previous trial")
@@ -71,8 +87,10 @@ def main():
     with torch.inference_mode():
         waves, rate = model.generate_voice_clone(
             text=TEXT, language="Japanese", ref_audio=(audio, sample_rate),
-            x_vector_only_mode=True, max_new_tokens=110, do_sample=True,
-            top_k=50, top_p=1.0, temperature=0.8, subtalker_dosample=False,
+            ref_text=reference_text, x_vector_only_mode=(args.mode == "xvector"),
+            max_new_tokens=110, do_sample=True,
+            top_k=50, top_p=1.0, temperature=0.8,
+            subtalker_dosample=args.subtalker_sampling,
         )
     wave = np.asarray(waves[0], dtype=np.float32)
     if not len(wave) or not np.isfinite(wave).all():
@@ -84,7 +102,13 @@ def main():
         "status": "private-experiment-not-adopted-or-published", "modelId": MODEL_ID,
         "modelRevision": MODEL_REVISION, "license": "Apache-2.0", "device": "cpu",
         "pid": os.getpid(), "torchVersion": torch.__version__, "text": TEXT,
-        "mode": "x_vector_only_mode=True; no transcript; no training",
+        "mode": args.mode, "training": False,
+        "xVectorOnlyMode": args.mode == "xvector",
+        "referenceTranscriptSupplied": reference_text is not None,
+        "referenceTranscriptSha256": (hashlib.sha256(reference_text.encode()).hexdigest()
+                                      if reference_text is not None else None),
+        "subtalkerSampling": args.subtalker_sampling,
+        "referenceDurationSeconds": len(audio) / sample_rate,
         "referenceSha256": hashlib.sha256(reference.read_bytes()).hexdigest(),
         "outputSha256": hashlib.sha256(output.read_bytes()).hexdigest(),
         "sampleRate": decoded_rate, "frames": len(decoded),
