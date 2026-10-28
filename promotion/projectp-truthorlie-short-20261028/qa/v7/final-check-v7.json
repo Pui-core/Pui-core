@@ -1,0 +1,24 @@
+{
+  "sha256": "5db4773cbca90c63b249f55a59fda15c32f2e54b07e3467dac7a653dbf1df1e1",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "frames": "435",
+    "fps": "30/1",
+    "duration": "14.506000",
+    "video": "h264",
+    "audio": "aac"
+  },
+  "fullDecode": "exit 0",
+  "loudnessRaw": "qa/ffmpeg-loudness-v7.json",
+  "contact": "qa/final-contact-v7.png",
+  "transitions": [
+    "qa/transition-vote-v7.png",
+    "qa/transition-lie-v7.png",
+    "qa/transition-cta-v7.png"
+  ],
+  "wholeRealTimeWatch": false,
+  "wholeSubjectiveListen": false,
+  "nativeMusicSelected": false,
+  "published": false
+}
