@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import {file,np,FC,FP,FF,run,parse,save,digest} from './native.mjs';
+const project=file('projects/firstcut04k-artinput-agent10.fcproj'),output=file('videos/firstcut04k-artinput-agent10-recovered.mp4');
+if(!fs.existsSync(project)||fs.existsSync(output)) throw Error('Missing native FilmCraft project or output already exists');
+const p={path:np(output),format:'h264',audio:true,audioCodec:'aac',bitrateMode:'crf',crf:17,hardwareEncoding:'off',gpuRendering:'off',wait:true};
+const x=parse((await run(FC,['--project',np(project),'exec','file.exportMedia',JSON.stringify(p)],'firstcut04k-artinput10-recover-export.json')).stdout);
+if(x.offlineMedia?.length) throw Error('Offline media');
+const q=parse((await run(FP,['-v','error','-count_frames','-show_streams','-show_format','-of','json',np(output)],'firstcut04k-artinput10-recover-probe.json')).stdout);
+const video=q.streams.find(x=>x.codec_type==='video'), audio=q.streams.find(x=>x.codec_type==='audio');
+if(video.width!==1920||video.height!==1080||video.avg_frame_rate!=='30/1'||Number(q.format.duration)<84||!audio) throw Error('Unexpected output characteristics');
+await run(FF,['-v','error','-xerror','-i',np(output),'-f','null','-'],'firstcut04k-artinput10-recover-decode.json');
+save('qa/firstcut04k-artinput10-recover-result.json',{duration:Number(q.format.duration),frames:Number(video.nb_read_frames),sha256:await digest(output),avDecode:true,wholeDirectWatch:false,subjectiveListen:false,published:false});
+console.log(JSON.stringify({duration:Number(q.format.duration),sha256:await digest(output)}));

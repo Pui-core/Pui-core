@@ -1,0 +1,17 @@
+import fs from 'node:fs';import {file,np,FC,FP,FF,run,parse,save,digest,hash} from './native.mjs';
+const n='firstcut04k-full-own',plan=JSON.parse(fs.readFileSync(file('source/firstcut04k-full-plan-own.json'))),project=file(`projects/${n}.fcproj`),output=file(`videos/${n}.mp4`),ticks=8467200000;
+if(plan.frames<18000||plan.actualAssembly||plan.published)throw Error('Unacceptable plan state');
+if(!process.argv.includes('--render')){
+ if(fs.existsSync(project)||fs.existsSync(output))throw Error('preserve earlier output');
+ const paths=[...new Set(plan.segments.flatMap(x=>[x.file,x.audioFile]))];for(const p of paths)if(!fs.existsSync(file(p)))throw Error('missing '+p);
+ const cmds=[{id:'file.newProject',params:{name:'EMBERWAKE 04k full edit'}},{id:'file.newSequence',params:{name:'EMBERWAKE 04k full edit',width:1920,height:1080,fps:30,sampleRate:48000,video:1,audio:1}},{id:'file.import',params:{paths:paths.map(p=>np(file(p)))}}];
+ const result=await run(FC,['--save-as',np(project),'run','-'],n+'-fc-build.json',cmds.map(x=>JSON.stringify(x)).join('\n')+'\n');let items;for(const line of result.stdout.trim().split(/\r?\n/)){const x=parse(line);if(x.ok===false)throw Error(line);if(x.result?.items)items=x.result.items;}if(items?.length!==paths.length)throw Error('missing imports');
+ const by=new Map(paths.map((p,i)=>[p,items[i]])),places=[];for(const s of plan.segments){places.push({id:'timeline.place',params:{item:by.get(s.file),track:'V1',frame:s.startFrame,sourceIn:s.sourceFrame*ticks,duration:s.frames*ticks,video:true,audio:false}});places.push({id:'timeline.place',params:{item:by.get(s.audioFile),track:'A1',frame:s.startFrame,sourceIn:s.audioFrame*ticks,duration:s.frames*ticks,video:false,audio:true}});}
+ const placed=await run(FC,['--project',np(project),'--save','run','-'],n+'-fc-place.json',places.map(x=>JSON.stringify(x)).join('\n')+'\n');for(const line of placed.stdout.trim().split(/\r?\n/)){const x=parse(line);if(x.ok===false)throw Error(line);}
+ save('qa/'+n+'-assembly.json',{frames:plan.frames,seconds:plan.seconds,segments:plan.segments.length,projectSha256:hash(project),sourcePaths:paths,exported:false,published:false,subjectiveListen:false});console.log(JSON.stringify({project,segments:plan.segments.length,seconds:plan.seconds}));
+}else{
+ if(!fs.existsSync(project)||fs.existsSync(output))throw Error('missing native project or preserve earlier output');
+ const p={path:np(output),format:'h264',audio:true,audioCodec:'aac',bitrateMode:'crf',crf:17,hardwareEncoding:'off',gpuRendering:'off',wait:true};const r=parse((await run(FC,['--project',np(project),'exec','file.exportMedia',JSON.stringify(p)],n+'-fc-export.json')).stdout);if(r.offlineMedia?.length)throw Error('offline media');
+ const q=parse((await run(FP,['-v','error','-count_frames','-show_streams','-show_format','-of','json',np(output)],n+'-probe.json')).stdout),v=q.streams.find(x=>x.codec_type==='video');if(Number(v.nb_read_frames)!==plan.frames||v.width!==1920||v.height!==1080||!q.streams.some(x=>x.codec_type==='audio'))throw Error('actual output mismatch');await run(FF,['-v','error','-xerror','-i',np(output),'-f','null','-'],n+'-decode.json');
+ save('qa/'+n+'-result.json',{seconds:Number(q.format.duration),frames:plan.frames,sha256:await digest(output),fullAvDecode:true,voiceOnly:true,musicPresent:false,wholeDirectWatch:false,subjectiveListen:false,editorialAccepted:false,published:false});console.log(JSON.stringify({seconds:Number(q.format.duration),frames:plan.frames,sha256:await digest(output)}));
+}
