@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "recordIssue": 139,
+  "recordIssueUrl": "https://github.com/Pui-core/-/issues/139",
+  "productionIssue": 124,
+  "reservationIssue": 126,
+  "parentIssues": [
+    93,
+    106
+  ],
+  "platform": "youtube",
+  "state": "public_confirmed",
+  "videoId": "OrPT1gl7Vx0",
+  "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+  "url": "https://youtube.com/shorts/OrPT1gl7Vx0",
+  "title": "この看板、跳ぶ？くぐる？｜ScateRush",
+  "scheduledForJst": "2026-10-28T12:15:00+09:00",
+  "scheduledForUtc": "2026-10-28T03:15:00.000Z",
+  "actualPublishedAt": "2026-10-28T03:15:04.000Z",
+  "actualPublishedAtJst": "2026-10-28T12:15:04+09:00",
+  "publicationTimeBasis": "公式匿名watch HTMLのplayerMicroformatRenderer.publishDate",
+  "confirmedAt": "2026-10-28T14:42:10.345Z",
+  "recordedAt": "2026-10-28T15:03:14.802Z",
+  "appStoreUrl": "https://apps.apple.com/jp/app/scaterush/id6779438091",
+  "analyticsDue": {
+    "basis": "Official anonymous watch microformat publishDate; not scheduled time",
+    "first24hAt": "2026-10-29T03:15:04.000Z",
+    "hours72At": "2026-10-31T03:15:04.000Z",
+    "first24hAtJst": "2026-10-29T12:15:04+09:00",
+    "hours72AtJst": "2026-10-31T12:15:04+09:00"
+  },
+  "source": {
+    "pullRequest": "https://github.com/Pui-core/Pui-core/pull/58",
+    "head": "f654c600f1e0c97a765ce8d88c6177eaee52fb48",
+    "merge": "51bdbaaead8eeed1e99ad55e072e5a026c7a2eff",
+    "videoSha256": "1c21454fc7edd36ea8330b15a0b130f1f782e4a910dfb9cb2f8720740b8903ef",
+    "coverSha256": "569e038c84806794b473b5262d7806db7207d039601589c9323d7771841ee564",
+    "association": "同じ動画IDを持つ既存予約票が制作原本SHAと対応する。YouTube再エンコード後の映像とのbyte一致を意味しない。"
+  },
+  "references": {
+    "previousReservations": {
+      "file": "../publication/issue126/reservations.json",
+      "sha256": "88f0bc555478c6c88093627c0e1277b31a2b3a53b8f130b90ab835bcdfdcae84",
+      "historicalSnapshotAt": "2026-10-26T22:28:28.233Z",
+      "youtubeScheduledReceiptSha256": "1533944f6fa691f026a403e6e88e10b4a7b1b97ba3d6e69704bbf75c1527ce96"
+    },
+    "publicMetadata": {
+      "file": "public-metadata.json",
+      "sha256": "582f4d4a57778a6c5496215f460c82bed876546102e91617dd46f1ce051b8c29"
+    },
+    "ledgerRecord": {
+      "file": "ledger-record.json",
+      "sha256": "a6650727d0f001f6f8199445cb435ac200e0b2ac731e1afcdc5839dbd8e52766"
+    },
+    "canonicalPrivateReceipt": {
+      "name": "2026-10-28-scaterush124-public.json",
+      "sha256": "d20d6494f3c87c63fa46879f2d16340c8229f13cb61d2c17fc912537a1c08d9b",
+      "privatePathsIncluded": false
+    }
+  },
+  "scope": {
+    "existingProductionFilesModified": false,
+    "rawHtmlIncluded": false,
+    "privateUiIncluded": false,
+    "authenticationOrLeaseIncluded": false,
+    "originalVoiceIncluded": false,
+    "otherProjectsModified": false,
+    "tiktokChanged": false,
+    "newUploadActions": 0,
+    "newPublicationActions": 0,
+    "newScheduleActions": 0,
+    "reposts": 0,
+    "nativeAnalyticsNewFetch": false,
+    "guiActions": 0
+  },
+  "limitations": [
+    "公開1238再生は2026-10-28 23:42:10 JSTの公開HTML表示。Native Analytics・保持率・登録者の増減・おすすめ配信の原因分析ではない。",
+    "24時間・72時間は確認予定であり、その時点の分析を実施済みとはしない。",
+    "旧予約票は作成時点の履歴として保全。TikTok旧124の取消と新132の票は別管理で、本追記では更新・状態判定しない。",
+    "直接全編視聴・音の主観試聴は今回実施していない。継続目標の達成は未判定。"
+  ]
+}
