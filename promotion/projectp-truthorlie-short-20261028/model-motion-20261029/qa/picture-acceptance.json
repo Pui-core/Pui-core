@@ -1,0 +1,663 @@
+{
+  "issue": 143,
+  "videoSha256": "e683ad00bad973a09456fd49895f8eddcde884be9c37f2ae5dca8bbaa4935592",
+  "nativeProjectSha256": "4909e5f807bb5809ee263083cb097d631ca3c605f7ec3b361903c7fb74ed0292",
+  "layer": {
+    "name": "Natural / 72 true Core frames, speech RMS",
+    "startSeconds": 16.8,
+    "inSeconds": 16.8,
+    "outSeconds": 19.2,
+    "storedRemapKeys": [
+      {
+        "storedLayerLocalSeconds": 0,
+        "sourceSeconds": 0
+      },
+      {
+        "storedLayerLocalSeconds": 2.4,
+        "sourceSeconds": 2.4
+      }
+    ],
+    "compToSource": {
+      "comp": [
+        16.8,
+        19.2
+      ],
+      "source": [
+        0,
+        2.4
+      ]
+    }
+  },
+  "unchangedBeforeModel": {
+    "frameRangeHalfOpen": [
+      0,
+      504
+    ],
+    "pictureProresPacketHashOld": "SHA256=38e10f90bcd2b36e9775335a29a5759bae74a1c8105d9d09b49de2bf370bb7db",
+    "pictureProresPacketHashNew": "SHA256=38e10f90bcd2b36e9775335a29a5759bae74a1c8105d9d09b49de2bf370bb7db",
+    "byteIdentical": true
+  },
+  "faceRoi": {
+    "rect": [
+      675,
+      1170,
+      120,
+      120
+    ],
+    "globalFramesHalfOpen": [
+      512,
+      576
+    ],
+    "frames": 64,
+    "uniqueFrames": 55,
+    "contactSha256": "d56c3f7ebc5bf06c1964cb08463d2e56c9a0cac346019bc285638031d1e4d99f",
+    "mouthDarkPixelRange": [
+      3,
+      27
+    ],
+    "eyesDarkPixelRange": [
+      201,
+      290
+    ],
+    "expectedMouthToDarkAreaCorrelation": [
+      {
+        "lagFrames": -4,
+        "correlation": 0.4782875060305746
+      },
+      {
+        "lagFrames": -3,
+        "correlation": 0.4799897691132531
+      },
+      {
+        "lagFrames": -2,
+        "correlation": 0.6475210695566981
+      },
+      {
+        "lagFrames": -1,
+        "correlation": 0.8300476779244219
+      },
+      {
+        "lagFrames": 0,
+        "correlation": 0.9752234844204675
+      },
+      {
+        "lagFrames": 1,
+        "correlation": 0.8789478109745562
+      },
+      {
+        "lagFrames": 2,
+        "correlation": 0.7353070140491622
+      },
+      {
+        "lagFrames": 3,
+        "correlation": 0.5796984872136637
+      },
+      {
+        "lagFrames": 4,
+        "correlation": 0.574187915502908
+      }
+    ],
+    "bestLag": {
+      "lagFrames": 0,
+      "correlation": 0.9752234844204675
+    },
+    "rows": [
+      {
+        "globalFrame": 512,
+        "mouthDarkPixels": 19,
+        "eyesDarkPixels": 217,
+        "expectedMouth": 0.6463440911658632,
+        "expectedEye": 1,
+        "rms": 0.10977774213046797
+      },
+      {
+        "globalFrame": 513,
+        "mouthDarkPixels": 27,
+        "eyesDarkPixels": 273,
+        "expectedMouth": 0.7685642088137615,
+        "expectedEye": 1,
+        "rms": 0.1193550221177401
+      },
+      {
+        "globalFrame": 514,
+        "mouthDarkPixels": 17,
+        "eyesDarkPixels": 274,
+        "expectedMouth": 0.546058252002849,
+        "expectedEye": 1,
+        "rms": 0.07761016733938057
+      },
+      {
+        "globalFrame": 515,
+        "mouthDarkPixels": 14,
+        "eyesDarkPixels": 274,
+        "expectedMouth": 0.4111564489738746,
+        "expectedEye": 1,
+        "rms": 0.06141614012911056
+      },
+      {
+        "globalFrame": 516,
+        "mouthDarkPixels": 14,
+        "eyesDarkPixels": 275,
+        "expectedMouth": 0.34369185109265477,
+        "expectedEye": 1,
+        "rms": 0.054043556876622
+      },
+      {
+        "globalFrame": 517,
+        "mouthDarkPixels": 12,
+        "eyesDarkPixels": 274,
+        "expectedMouth": 0.17350699088593466,
+        "expectedEye": 1,
+        "rms": 0.02706090741036092
+      },
+      {
+        "globalFrame": 518,
+        "mouthDarkPixels": 10,
+        "eyesDarkPixels": 276,
+        "expectedMouth": 0.15259752230851684,
+        "expectedEye": 1,
+        "rms": 0.028721069454715618
+      },
+      {
+        "globalFrame": 519,
+        "mouthDarkPixels": 5,
+        "eyesDarkPixels": 277,
+        "expectedMouth": 0.0883920326004235,
+        "expectedEye": 1,
+        "rms": 0.018401740246200813
+      },
+      {
+        "globalFrame": 520,
+        "mouthDarkPixels": 4,
+        "eyesDarkPixels": 276,
+        "expectedMouth": 0.04962711956665918,
+        "expectedEye": 1,
+        "rms": 0.013756484777806846
+      },
+      {
+        "globalFrame": 521,
+        "mouthDarkPixels": 5,
+        "eyesDarkPixels": 276,
+        "expectedMouth": 0.0827088585274709,
+        "expectedEye": 1,
+        "rms": 0.02059589851312941
+      },
+      {
+        "globalFrame": 522,
+        "mouthDarkPixels": 14,
+        "eyesDarkPixels": 280,
+        "expectedMouth": 0.4759308613438688,
+        "expectedEye": 1,
+        "rms": 0.0867147040893285
+      },
+      {
+        "globalFrame": 523,
+        "mouthDarkPixels": 14,
+        "eyesDarkPixels": 279,
+        "expectedMouth": 0.4627496448907269,
+        "expectedEye": 1,
+        "rms": 0.07237986899858083
+      },
+      {
+        "globalFrame": 524,
+        "mouthDarkPixels": 14,
+        "eyesDarkPixels": 279,
+        "expectedMouth": 0.40329444915630175,
+        "expectedEye": 1,
+        "rms": 0.0626340632080926
+      },
+      {
+        "globalFrame": 525,
+        "mouthDarkPixels": 10,
+        "eyesDarkPixels": 280,
+        "expectedMouth": 0.1549588119393297,
+        "expectedEye": 1,
+        "rms": 0.02206245555215531
+      },
+      {
+        "globalFrame": 526,
+        "mouthDarkPixels": 9,
+        "eyesDarkPixels": 279,
+        "expectedMouth": 0.11960836471077965,
+        "expectedEye": 1,
+        "rms": 0.023658791461753714
+      },
+      {
+        "globalFrame": 527,
+        "mouthDarkPixels": 8,
+        "eyesDarkPixels": 281,
+        "expectedMouth": 0.10719501800955056,
+        "expectedEye": 1,
+        "rms": 0.02262581918368955
+      },
+      {
+        "globalFrame": 528,
+        "mouthDarkPixels": 13,
+        "eyesDarkPixels": 282,
+        "expectedMouth": 0.34011706944716863,
+        "expectedEye": 1,
+        "rms": 0.06277448203507675
+      },
+      {
+        "globalFrame": 529,
+        "mouthDarkPixels": 13,
+        "eyesDarkPixels": 282,
+        "expectedMouth": 0.36590535358403,
+        "expectedEye": 1,
+        "rms": 0.06001926750206775
+      },
+      {
+        "globalFrame": 530,
+        "mouthDarkPixels": 12,
+        "eyesDarkPixels": 282,
+        "expectedMouth": 0.25420396797484957,
+        "expectedEye": 1,
+        "rms": 0.04015578122702609
+      },
+      {
+        "globalFrame": 531,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 282,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0.0035977814863040435
+      },
+      {
+        "globalFrame": 532,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 283,
+        "expectedMouth": 0.008576405818497853,
+        "expectedEye": 1,
+        "rms": 0.00946426440803622
+      },
+      {
+        "globalFrame": 533,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 283,
+        "expectedMouth": 0.05606735915835071,
+        "expectedEye": 1,
+        "rms": 0.017308908360418238
+      },
+      {
+        "globalFrame": 534,
+        "mouthDarkPixels": 9,
+        "eyesDarkPixels": 281,
+        "expectedMouth": 0.16420566113493076,
+        "expectedEye": 1,
+        "rms": 0.034312067204999845
+      },
+      {
+        "globalFrame": 535,
+        "mouthDarkPixels": 8,
+        "eyesDarkPixels": 280,
+        "expectedMouth": 0.14995268618647878,
+        "expectedEye": 1,
+        "rms": 0.028555357811593633
+      },
+      {
+        "globalFrame": 536,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 280,
+        "expectedMouth": 0.09504707509303281,
+        "expectedEye": 1,
+        "rms": 0.01961924734283577
+      },
+      {
+        "globalFrame": 537,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 287,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0.0030659363395698245
+      },
+      {
+        "globalFrame": 538,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 286,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0.00029039444007245566
+      },
+      {
+        "globalFrame": 539,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 286,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0.00009153047926934155
+      },
+      {
+        "globalFrame": 540,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 288,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0.00009325354974729933
+      },
+      {
+        "globalFrame": 541,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 290,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0.00004918445270167907
+      },
+      {
+        "globalFrame": 542,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 290,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 543,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 289,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 544,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 286,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 545,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 286,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 546,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 286,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 547,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 283,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 548,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 283,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 549,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 273,
+        "expectedMouth": 0,
+        "expectedEye": 0.8742553740855512,
+        "rms": 0
+      },
+      {
+        "globalFrame": 550,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 243,
+        "expectedMouth": 0,
+        "expectedEye": 0.5201329700547073,
+        "rms": 0
+      },
+      {
+        "globalFrame": 551,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 212,
+        "expectedMouth": 0,
+        "expectedEye": 0.15363782324520114,
+        "rms": 0
+      },
+      {
+        "globalFrame": 552,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 201,
+        "expectedMouth": 0,
+        "expectedEye": 0,
+        "rms": 0
+      },
+      {
+        "globalFrame": 553,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 208,
+        "expectedMouth": 0,
+        "expectedEye": 0.15363782324519926,
+        "rms": 0
+      },
+      {
+        "globalFrame": 554,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 234,
+        "expectedMouth": 0,
+        "expectedEye": 0.5201329700547073,
+        "rms": 0
+      },
+      {
+        "globalFrame": 555,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 266,
+        "expectedMouth": 0,
+        "expectedEye": 0.8742553740855494,
+        "rms": 0
+      },
+      {
+        "globalFrame": 556,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 277,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 557,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 277,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 558,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 278,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 559,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 279,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 560,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 279,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 561,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 281,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 562,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 280,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 563,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 280,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 564,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 281,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 565,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 281,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 566,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 281,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 567,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 282,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 568,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 284,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 569,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 284,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 570,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 284,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 571,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 282,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 572,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 282,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 573,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 281,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 574,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 281,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      },
+      {
+        "globalFrame": 575,
+        "mouthDarkPixels": 3,
+        "eyesDarkPixels": 281,
+        "expectedMouth": 0,
+        "expectedEye": 1,
+        "rms": 0
+      }
+    ]
+  },
+  "keyFrameFiles": [
+    {
+      "globalFrame": 513,
+      "modelFrame": 9,
+      "globalSeconds": 17.1,
+      "expectedMouth": 0.7685642088137615,
+      "expectedEye": 1,
+      "file": "qa/final-frame-513.png",
+      "sha256": "c41564a882b406140e74df9e01156fe8a64c3684122c2530c60fa6e19a594e96"
+    },
+    {
+      "globalFrame": 528,
+      "modelFrame": 24,
+      "globalSeconds": 17.6,
+      "expectedMouth": 0.34011706944716863,
+      "expectedEye": 1,
+      "file": "qa/final-frame-528.png",
+      "sha256": "865b97aa67ee2b5d51769bc33e2fa8d1eaa6328e5fff177d58399f968dde8ced"
+    },
+    {
+      "globalFrame": 552,
+      "modelFrame": 48,
+      "globalSeconds": 18.4,
+      "expectedMouth": 0,
+      "expectedEye": 0,
+      "file": "qa/final-frame-552.png",
+      "sha256": "95c1352ed1b9f4cfbae1176d868eafe53f5ec8d4bc78581b95d29f9fef046fb6"
+    },
+    {
+      "globalFrame": 570,
+      "modelFrame": 66,
+      "globalSeconds": 19,
+      "expectedMouth": 0,
+      "expectedEye": 1,
+      "file": "qa/final-frame-570.png",
+      "sha256": "ecbbf63951e7ef7ec37048341d124d8ac7aecf5a043d0a2ab990520906e99c1f"
+    }
+  ],
+  "all72ModelFramesBound": true,
+  "modelFrames": 72,
+  "wholeRealtimeWatch": false,
+  "subjectiveListen": false,
+  "visualReviewerPending": true,
+  "published": false
+}

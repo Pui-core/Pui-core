@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "issue": 143,
+  "state": "TECHNICAL_AND_EXTRACTED_VISUAL_READY_NATIVE_TIKTOK_REVIEW_PENDING",
+  "version": "v10",
+  "videoSha256": "e683ad00bad973a09456fd49895f8eddcde884be9c37f2ae5dca8bbaa4935592",
+  "validatedSeconds": 19.2,
+  "validatedFrames": 576,
+  "validatedCueCount": 6,
+  "validatedCoreFrames": 72,
+  "narrationAndSfxPreserved": true,
+  "nonModelPictureFramesPreserved": 504,
+  "phaseAlignment": {
+    "bestLagFrames": 0,
+    "correlation": 0.9752234844204675
+  },
+  "nas": {
+    "schemaVersion": 1,
+    "issue": 143,
+    "version": "v10",
+    "state": "completed_candidate_not_posted",
+    "variant": "voice_sfx_no_bgm",
+    "durationSeconds": 19.2,
+    "frames": 576,
+    "size": [
+      1080,
+      1920
+    ],
+    "sha256": "e683ad00bad973a09456fd49895f8eddcde884be9c37f2ae5dca8bbaa4935592",
+    "bytes": 6085357,
+    "nasRelativeFile": "2026-10-29\\嘘か誠か\\0513_投票と得点_実口パク_v10\\声・効果音版.mp4",
+    "nasDirectDecodeExit": 0,
+    "nasHashMatched": true,
+    "localFinalKeptForRootUpload": true,
+    "sourceDeleted": false,
+    "nativeMusicSelected": false,
+    "nativeMusicBpmAndStartConfirmed": false,
+    "tiktokRegionRightsConfirmed": false,
+    "captionAppStoreUrl": "https://apps.apple.com/jp/app/id6783599249",
+    "guiActions": 0,
+    "publicationIntents": 0,
+    "posted": false,
+    "reservationSubmitted": false
+  },
+  "visual": {
+    "schemaVersion": 1,
+    "issue": 143,
+    "videoSha256": "e683ad00bad973a09456fd49895f8eddcde884be9c37f2ae5dca8bbaa4935592",
+    "reviewedAt": "2026-10-28T20:24:58.198Z",
+    "directImageInspection": true,
+    "coreInputDiagnosticFrames": [
+      0,
+      9,
+      48
+    ],
+    "finalFrames": [
+      513,
+      552,
+      570
+    ],
+    "finalContactFrames": [
+      512,
+      576
+    ],
+    "mouthChangeVisible": true,
+    "blinkVisible": true,
+    "headHairEyesMouthMissing": false,
+    "storePhoneCreditOccluded": false,
+    "independentReviewer": "reference_review",
+    "independentFinalImagesViewed": 5,
+    "independentRequiredDefects": 0,
+    "scope": "抽出静止画と64連続face ROIの目視。全編リアルタイム再生・聴感・owner創作採用の証明ではない。",
+    "wholeRealtimeWatch": false,
+    "subjectiveListen": false,
+    "ownerCreativeApproval": false
+  },
+  "unverified": {
+    "wholeRealtimeWatch": false,
+    "subjectiveListen": false,
+    "ownerReviewedThisVersion": false,
+    "tiktokNativeSound": false,
+    "japanCmlUse": false,
+    "actualMusicBeatStart": false,
+    "platformPreview": false,
+    "posted": false,
+    "reserved": false,
+    "viewGrowthEffect": false
+  },
+  "source134ReadOnlyHead": "6ed1a1cb5d56e17be5095dcbc812266a5d3a8eaf",
+  "source134Pr": "https://github.com/Pui-core/Pui-core/pull/67"
+}
