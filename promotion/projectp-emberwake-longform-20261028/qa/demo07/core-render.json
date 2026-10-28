@@ -1,0 +1,43 @@
+{
+  "exit": 0,
+  "stdout": "Native Core rendered 30 frames / 3.4590397s\r\nNative Core rendered 60 frames / 6.6420533s\r\nNative Core rendered 90 frames / 9.7939838s\r\nNative Core rendered 120 frames / 12.9582353s\r\nNative Core rendered 150 frames / 16.0409213s\r\nNative Core rendered 180 frames / 19.1625104s\r\nNative Core rendered 210 frames / 22.3114469s\r\nNative Core rendered 240 frames / 25.3692048s\r\nNative Core rendered 270 frames / 28.5016353s\r\nNative Core rendered 300 frames / 31.623201s\r\nNative Core rendered 330 frames / 34.8549491s\r\nNative Core rendered 360 frames / 38.0491303s\r\nNative Core rendered 390 frames / 41.1860926s\r\nNative Core rendered 420 frames / 44.3423486s\r\nNative Core rendered 450 frames / 47.4489353s\r\nNative Core rendered 480 frames / 50.5952903s\r\nNative Core rendered 510 frames / 53.8967764s\r\nNative Core rendered 540 frames / 57.2375671s\r\nNative Core rendered 570 frames / 60.408283s\r\nNative Core rendered 600 frames / 63.6078006s\r\nNative Core rendered 630 frames / 67.1258838s\r\nNative Core rendered 660 frames / 70.3083773s\r\nRendered 685 true Core frames, 600x780, no physics simulation; Core=06.00.0513 (100663809)\r\n",
+  "stderr": "WARNING: A restricted method in java.lang.System has been called\nWARNING: java.lang.System::loadLibrary has been called by com.live2d.sdk.cubism.core.Live2DCubismCoreJNI in an unnamed module (file:/C:/Program%20Files/Live2D%20Cubism%205.3/app/lib/Live2DCubismCore.jar)\nWARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module\nWARNING: Restricted methods will be blocked in a future release unless native access is enabled\n\r\n",
+  "ownedPid": 932856,
+  "frames": 685,
+  "fps": 30,
+  "dependencies": [
+    {
+      "name": "Revenant_Natural.model3.json",
+      "source": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.model3.json",
+      "local": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/private/model/Revenant_Natural.model3.json",
+      "sha256": "26f678bc97701a1e0958f3a82569e0efa36e260c1a8551222deb873bfb254c39"
+    },
+    {
+      "name": "Revenant_Natural.moc3",
+      "source": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.moc3",
+      "local": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/private/model/Revenant_Natural.moc3",
+      "sha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e"
+    },
+    {
+      "name": "Revenant_Natural.8192/texture_00.png",
+      "source": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.8192/texture_00.png",
+      "local": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/private/model/Revenant_Natural.8192/texture_00.png",
+      "sha256": "30efeaa8148d55ca0042cfd3d741f499d479f9034bf7985d248360e66e559f73"
+    },
+    {
+      "name": "Revenant_Natural.8192/texture_01.png",
+      "source": "/mnt/f/Users/pui/Desktop/model/SeeThrough-workflows/Revenant_Natural/Revenant_Natural.8192/texture_01.png",
+      "local": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/private/model/Revenant_Natural.8192/texture_01.png",
+      "sha256": "c09bd43ef3d9f02acc8ccdc12d46ba72a750de21aa07a7627fc6a8f04321e26a"
+    }
+  ],
+  "coreJarSha256": "5458a64ebe33b38350de1437399343b0d502f2353a34a97da76d56d118c0d186",
+  "coreNativeSha256": "71d5757025cd31c61be0d52ad79d4cd0de0465e1df6c4508c4fde70207613985",
+  "rendererSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+  "narrationSha256": "e72a37a376fd70138976c00cbee0d743fdbc57beec7bfb9fbc293aa037600eef",
+  "rawSdkBundled": false,
+  "physics": false,
+  "tracking": false,
+  "modelOrSdkInGitOrNas": false,
+  "privateLocalModelCopy": true
+}

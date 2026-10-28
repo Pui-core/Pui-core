@@ -1,0 +1,1773 @@
+{
+  "kind": "voice",
+  "out": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/videos/emberwake-v07-voice.mp4",
+  "sha256": "d86395b90ca6513de3524f346f2be614b2ad4599e03516ec7060dc9b3f354ddd",
+  "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/projects/emberwake-v07-voice.fcproj",
+  "seconds": 606.466667,
+  "frames": 18194,
+  "video": {
+    "index": 0,
+    "codec_name": "h264",
+    "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+    "profile": "High",
+    "codec_type": "video",
+    "codec_tag_string": "avc1",
+    "codec_tag": "0x31637661",
+    "width": 1920,
+    "height": 1080,
+    "coded_width": 1920,
+    "coded_height": 1088,
+    "has_b_frames": 1,
+    "sample_aspect_ratio": "1:1",
+    "display_aspect_ratio": "16:9",
+    "pix_fmt": "yuv420p",
+    "level": 41,
+    "color_range": "tv",
+    "color_space": "bt709",
+    "color_transfer": "bt709",
+    "color_primaries": "bt709",
+    "chroma_location": "left",
+    "field_order": "progressive",
+    "refs": 2,
+    "is_avc": "true",
+    "nal_length_size": "4",
+    "id": "0x1",
+    "r_frame_rate": "30/1",
+    "avg_frame_rate": "30/1",
+    "time_base": "1/30",
+    "start_pts": 0,
+    "start_time": "0.000000",
+    "duration_ts": 18194,
+    "duration": "606.466667",
+    "bit_rate": "3835014",
+    "bits_per_raw_sample": "8",
+    "nb_frames": "18194",
+    "nb_read_frames": "18194",
+    "extradata_size": 50,
+    "disposition": {
+      "default": 1,
+      "dub": 0,
+      "original": 0,
+      "comment": 0,
+      "lyrics": 0,
+      "karaoke": 0,
+      "forced": 0,
+      "hearing_impaired": 0,
+      "visual_impaired": 0,
+      "clean_effects": 0,
+      "attached_pic": 0,
+      "timed_thumbnails": 0,
+      "non_diegetic": 0,
+      "captions": 0,
+      "descriptions": 0,
+      "metadata": 0,
+      "dependent": 0,
+      "still_image": 0,
+      "multilayer": 0
+    },
+    "tags": {
+      "language": "und",
+      "handler_name": "VideoHandler",
+      "vendor_id": "[0][0][0][0]"
+    }
+  },
+  "audio": {
+    "index": 1,
+    "codec_name": "aac",
+    "codec_long_name": "AAC (Advanced Audio Coding)",
+    "profile": "LC",
+    "codec_type": "audio",
+    "codec_tag_string": "mp4a",
+    "codec_tag": "0x6134706d",
+    "sample_fmt": "fltp",
+    "sample_rate": "48000",
+    "channels": 2,
+    "channel_layout": "stereo",
+    "bits_per_sample": 0,
+    "initial_padding": 0,
+    "id": "0x2",
+    "r_frame_rate": "0/0",
+    "avg_frame_rate": "0/0",
+    "time_base": "1/48000",
+    "start_pts": 0,
+    "start_time": "0.000000",
+    "duration_ts": 29110368,
+    "duration": "606.466000",
+    "bit_rate": "153076",
+    "nb_frames": "28430",
+    "nb_read_frames": "28429",
+    "extradata_size": 5,
+    "disposition": {
+      "default": 1,
+      "dub": 0,
+      "original": 0,
+      "comment": 0,
+      "lyrics": 0,
+      "karaoke": 0,
+      "forced": 0,
+      "hearing_impaired": 0,
+      "visual_impaired": 0,
+      "clean_effects": 0,
+      "attached_pic": 0,
+      "timed_thumbnails": 0,
+      "non_diegetic": 0,
+      "captions": 0,
+      "descriptions": 0,
+      "metadata": 0,
+      "dependent": 0,
+      "still_image": 0,
+      "multilayer": 0
+    },
+    "tags": {
+      "language": "und",
+      "handler_name": "SoundHandler",
+      "vendor_id": "[0][0][0][0]"
+    }
+  },
+  "lufs": -16.3,
+  "truePeak": -1.5,
+  "fullDecode": true,
+  "allAacPacketsAndTimestampsIdentical": true,
+  "audioProof": [
+    {
+      "label": "v06",
+      "count": 28430,
+      "sha256": "cd3faed01577312542cd64bc17084c80c74542d1c0eb2e6b23105f53cd134f22"
+    },
+    {
+      "label": "v07",
+      "count": 28430,
+      "sha256": "cd3faed01577312542cd64bc17084c80c74542d1c0eb2e6b23105f53cd134f22"
+    }
+  ],
+  "inherited76CueHeadBodyTailQa": {
+    "kind": "voice",
+    "finalSha256": "03af92e6745333dbba17c0c158bcffa91c0219db186f9b74a4712e13fda8c612",
+    "checks": [
+      {
+        "id": "open-01",
+        "corrected": false,
+        "start": 0.12,
+        "seconds": 5.738666666666667,
+        "head": {
+          "correlation": 0.9997660989588504,
+          "lagSamples": 0,
+          "referenceEnergy": 47.53241509798672
+        },
+        "body": {
+          "correlation": 0.9993058570230513,
+          "lagSamples": 0,
+          "referenceEnergy": 239.3584614854021
+        },
+        "tail": {
+          "correlation": 0.9995076504800403,
+          "lagSamples": 0,
+          "referenceEnergy": 28.364051218499295
+        }
+      },
+      {
+        "id": "open-02",
+        "corrected": false,
+        "start": 8.12,
+        "seconds": 5.994666666666666,
+        "head": {
+          "correlation": 0.9999642598177926,
+          "lagSamples": 0,
+          "referenceEnergy": 21.78871614756702
+        },
+        "body": {
+          "correlation": 0.9990656091910317,
+          "lagSamples": 0,
+          "referenceEnergy": 583.0011341776452
+        },
+        "tail": {
+          "correlation": 0.9994399719920918,
+          "lagSamples": 0,
+          "referenceEnergy": 38.78100704756954
+        }
+      },
+      {
+        "id": "open-03",
+        "corrected": false,
+        "start": 14.719999999999999,
+        "seconds": 6.314666666666667,
+        "head": {
+          "correlation": 0.9993319633405717,
+          "lagSamples": 0,
+          "referenceEnergy": 66.74904222099845
+        },
+        "body": {
+          "correlation": 0.999299178755455,
+          "lagSamples": 0,
+          "referenceEnergy": 220.8117944697656
+        },
+        "tail": {
+          "correlation": 0.9996559979325421,
+          "lagSamples": 0,
+          "referenceEnergy": 17.496134353076098
+        }
+      },
+      {
+        "id": "open-04",
+        "corrected": false,
+        "start": 24.720000000000002,
+        "seconds": 5.92,
+        "head": {
+          "correlation": 0.9996717713046372,
+          "lagSamples": 0,
+          "referenceEnergy": 126.50592567170304
+        },
+        "body": {
+          "correlation": 0.9996952618744738,
+          "lagSamples": 0,
+          "referenceEnergy": 320.8872471814365
+        },
+        "tail": {
+          "correlation": 0.9997670147458774,
+          "lagSamples": 0,
+          "referenceEnergy": 20.73287898171353
+        }
+      },
+      {
+        "id": "course1-01",
+        "corrected": false,
+        "start": 32.72,
+        "seconds": 6.357333333333333,
+        "head": {
+          "correlation": 0.999894474528195,
+          "lagSamples": 0,
+          "referenceEnergy": 117.67867274816095
+        },
+        "body": {
+          "correlation": 0.9998450892879869,
+          "lagSamples": 0,
+          "referenceEnergy": 134.54231286328624
+        },
+        "tail": {
+          "correlation": 0.999645982216352,
+          "lagSamples": 0,
+          "referenceEnergy": 65.19707487536772
+        }
+      },
+      {
+        "id": "course1-02",
+        "corrected": false,
+        "start": 39.68666666666667,
+        "seconds": 6.421333333333333,
+        "head": {
+          "correlation": 0.9993384707531823,
+          "lagSamples": 0,
+          "referenceEnergy": 112.88773348250064
+        },
+        "body": {
+          "correlation": 0.9984266205188238,
+          "lagSamples": 0,
+          "referenceEnergy": 211.92506599134256
+        },
+        "tail": {
+          "correlation": 0.9988578976802088,
+          "lagSamples": 0,
+          "referenceEnergy": 67.3818050070843
+        }
+      },
+      {
+        "id": "course1-03",
+        "corrected": false,
+        "start": 46.72,
+        "seconds": 6.282666666666667,
+        "head": {
+          "correlation": 0.9996471189325541,
+          "lagSamples": 0,
+          "referenceEnergy": 57.40970423274665
+        },
+        "body": {
+          "correlation": 0.9994512412883887,
+          "lagSamples": 0,
+          "referenceEnergy": 343.56220961398543
+        },
+        "tail": {
+          "correlation": 0.9997401175895368,
+          "lagSamples": 0,
+          "referenceEnergy": 19.811791005898478
+        }
+      },
+      {
+        "id": "course1-04",
+        "corrected": false,
+        "start": 53.62,
+        "seconds": 5.8773333333333335,
+        "head": {
+          "correlation": 0.9999453038772288,
+          "lagSamples": 0,
+          "referenceEnergy": 101.09994029183538
+        },
+        "body": {
+          "correlation": 0.9996056565225645,
+          "lagSamples": 0,
+          "referenceEnergy": 165.4963385979705
+        },
+        "tail": {
+          "correlation": 0.9995914982638315,
+          "lagSamples": 0,
+          "referenceEnergy": 19.87259698109946
+        }
+      },
+      {
+        "id": "course1-05",
+        "corrected": false,
+        "start": 61.419999999999995,
+        "seconds": 6.421333333333333,
+        "head": {
+          "correlation": 0.9997458910780594,
+          "lagSamples": 0,
+          "referenceEnergy": 118.23363795329587
+        },
+        "body": {
+          "correlation": 0.9987625338711489,
+          "lagSamples": 0,
+          "referenceEnergy": 415.4834525162424
+        },
+        "tail": {
+          "correlation": 0.9996039354025322,
+          "lagSamples": 0,
+          "referenceEnergy": 22.918522974138813
+        }
+      },
+      {
+        "id": "course1-06",
+        "corrected": false,
+        "start": 68.45333333333333,
+        "seconds": 6.453333333333333,
+        "head": {
+          "correlation": 0.9990898843843729,
+          "lagSamples": 0,
+          "referenceEnergy": 116.7474113076992
+        },
+        "body": {
+          "correlation": 0.999259445775754,
+          "lagSamples": 0,
+          "referenceEnergy": 228.3954646441279
+        },
+        "tail": {
+          "correlation": 0.9998561014469222,
+          "lagSamples": 0,
+          "referenceEnergy": 26.8353164105962
+        }
+      },
+      {
+        "id": "course1-07",
+        "corrected": false,
+        "start": 75.52000000000001,
+        "seconds": 5.770666666666667,
+        "head": {
+          "correlation": 0.9987797429795428,
+          "lagSamples": 0,
+          "referenceEnergy": 189.61401629734485
+        },
+        "body": {
+          "correlation": 0.9991949424586554,
+          "lagSamples": 0,
+          "referenceEnergy": 481.3323734088126
+        },
+        "tail": {
+          "correlation": 0.9991944618414056,
+          "lagSamples": 0,
+          "referenceEnergy": 109.94389366231972
+        }
+      },
+      {
+        "id": "course1-08",
+        "corrected": false,
+        "start": 81.92,
+        "seconds": 6.592,
+        "head": {
+          "correlation": 0.9997552952085917,
+          "lagSamples": 0,
+          "referenceEnergy": 52.58421344042486
+        },
+        "body": {
+          "correlation": 0.9995239768614267,
+          "lagSamples": 0,
+          "referenceEnergy": 228.43865664521473
+        },
+        "tail": {
+          "correlation": 0.9995927409277439,
+          "lagSamples": 0,
+          "referenceEnergy": 26.29351098253944
+        }
+      },
+      {
+        "id": "course1-09",
+        "corrected": false,
+        "start": 89.12,
+        "seconds": 6.464,
+        "head": {
+          "correlation": 0.9999793611006357,
+          "lagSamples": 0,
+          "referenceEnergy": 118.14089614031727
+        },
+        "body": {
+          "correlation": 0.9992326226169909,
+          "lagSamples": 0,
+          "referenceEnergy": 210.89889207915368
+        },
+        "tail": {
+          "correlation": 0.9995484737404632,
+          "lagSamples": 0,
+          "referenceEnergy": 83.4881624132938
+        }
+      },
+      {
+        "id": "course1-10",
+        "corrected": false,
+        "start": 97.12,
+        "seconds": 6.037333333333334,
+        "head": {
+          "correlation": 0.9999144345765394,
+          "lagSamples": 0,
+          "referenceEnergy": 73.1280919906058
+        },
+        "body": {
+          "correlation": 0.9996262524427327,
+          "lagSamples": 0,
+          "referenceEnergy": 77.26049407931045
+        },
+        "tail": {
+          "correlation": 0.9997119723875361,
+          "lagSamples": 0,
+          "referenceEnergy": 31.85839449451671
+        }
+      },
+      {
+        "id": "course1-11",
+        "corrected": false,
+        "start": 105.32000000000001,
+        "seconds": 6.304,
+        "head": {
+          "correlation": 0.9996018602752708,
+          "lagSamples": 0,
+          "referenceEnergy": 107.66828616442142
+        },
+        "body": {
+          "correlation": 0.9992747653373844,
+          "lagSamples": 0,
+          "referenceEnergy": 389.5596765661737
+        },
+        "tail": {
+          "correlation": 0.9998562267405124,
+          "lagSamples": 0,
+          "referenceEnergy": 14.8508186596056
+        }
+      },
+      {
+        "id": "course1-12",
+        "corrected": false,
+        "start": 112.25333333333334,
+        "seconds": 6.730666666666667,
+        "head": {
+          "correlation": 0.9996741836855367,
+          "lagSamples": 0,
+          "referenceEnergy": 74.80910708203275
+        },
+        "body": {
+          "correlation": 0.9995747701959032,
+          "lagSamples": 0,
+          "referenceEnergy": 224.29863599499294
+        },
+        "tail": {
+          "correlation": 0.9999612251933804,
+          "lagSamples": 0,
+          "referenceEnergy": 15.712224267684647
+        }
+      },
+      {
+        "id": "course1-13",
+        "corrected": false,
+        "start": 119.58666666666667,
+        "seconds": 6.709333333333333,
+        "head": {
+          "correlation": 0.9996471501755649,
+          "lagSamples": 0,
+          "referenceEnergy": 75.59194616780889
+        },
+        "body": {
+          "correlation": 0.9995409126784933,
+          "lagSamples": 0,
+          "referenceEnergy": 228.4515988173612
+        },
+        "tail": {
+          "correlation": 0.9996619942502112,
+          "lagSamples": 0,
+          "referenceEnergy": 38.92037242364214
+        }
+      },
+      {
+        "id": "course1-14",
+        "corrected": false,
+        "start": 130.38666666666668,
+        "seconds": 6.592,
+        "head": {
+          "correlation": 0.9992355181852293,
+          "lagSamples": 0,
+          "referenceEnergy": 215.6088103631365
+        },
+        "body": {
+          "correlation": 0.9994768935996656,
+          "lagSamples": 0,
+          "referenceEnergy": 208.44611234092517
+        },
+        "tail": {
+          "correlation": 0.999741828225837,
+          "lagSamples": 0,
+          "referenceEnergy": 21.068720765786406
+        }
+      },
+      {
+        "id": "course1-15",
+        "corrected": true,
+        "start": 140.78666666666666,
+        "seconds": 6.741333333333333,
+        "head": {
+          "correlation": 0.9997832400911737,
+          "lagSamples": 0,
+          "referenceEnergy": 142.67969375822125
+        },
+        "body": {
+          "correlation": 0.999565122799636,
+          "lagSamples": 0,
+          "referenceEnergy": 219.60628238725292
+        },
+        "tail": {
+          "correlation": 0.9996092614122118,
+          "lagSamples": 0,
+          "referenceEnergy": 19.0933087775877
+        }
+      },
+      {
+        "id": "course2-01",
+        "corrected": true,
+        "start": 167.88666666666668,
+        "seconds": 6.058666666666666,
+        "head": {
+          "correlation": 0.9999764044108209,
+          "lagSamples": 0,
+          "referenceEnergy": 91.90538353445919
+        },
+        "body": {
+          "correlation": 0.9995632612001398,
+          "lagSamples": 0,
+          "referenceEnergy": 498.26575223455177
+        },
+        "tail": {
+          "correlation": 0.9997195405697087,
+          "lagSamples": 0,
+          "referenceEnergy": 25.32123602033999
+        }
+      },
+      {
+        "id": "course2-02",
+        "corrected": false,
+        "start": 174.48666666666668,
+        "seconds": 5.941333333333334,
+        "head": {
+          "correlation": 0.9998305934653726,
+          "lagSamples": 0,
+          "referenceEnergy": 74.77291638762247
+        },
+        "body": {
+          "correlation": 0.9983764808612089,
+          "lagSamples": 0,
+          "referenceEnergy": 275.3724667446853
+        },
+        "tail": {
+          "correlation": 0.9997981584659839,
+          "lagSamples": 0,
+          "referenceEnergy": 24.516244777990416
+        }
+      },
+      {
+        "id": "course2-03",
+        "corrected": false,
+        "start": 181.05333333333334,
+        "seconds": 6.336,
+        "head": {
+          "correlation": 0.9997342990785278,
+          "lagSamples": 0,
+          "referenceEnergy": 86.20419154573682
+        },
+        "body": {
+          "correlation": 0.9989520117262818,
+          "lagSamples": 0,
+          "referenceEnergy": 693.3460564843674
+        },
+        "tail": {
+          "correlation": 0.999792973126013,
+          "lagSamples": 0,
+          "referenceEnergy": 28.862628349376056
+        }
+      },
+      {
+        "id": "course2-04",
+        "corrected": false,
+        "start": 188.35333333333332,
+        "seconds": 5.952,
+        "head": {
+          "correlation": 0.9995174939072545,
+          "lagSamples": 0,
+          "referenceEnergy": 148.70833416041873
+        },
+        "body": {
+          "correlation": 0.9996642121466227,
+          "lagSamples": 0,
+          "referenceEnergy": 509.98284469554557
+        },
+        "tail": {
+          "correlation": 0.999913788794,
+          "lagSamples": 0,
+          "referenceEnergy": 19.708150980097194
+        }
+      },
+      {
+        "id": "course2-05",
+        "corrected": false,
+        "start": 196.68666666666667,
+        "seconds": 6.058666666666666,
+        "head": {
+          "correlation": 0.9993229206085882,
+          "lagSamples": 0,
+          "referenceEnergy": 175.52417709062104
+        },
+        "body": {
+          "correlation": 0.9995196091615833,
+          "lagSamples": 0,
+          "referenceEnergy": 158.47293586283376
+        },
+        "tail": {
+          "correlation": 0.9994832124244858,
+          "lagSamples": 0,
+          "referenceEnergy": 29.781849285125553
+        }
+      },
+      {
+        "id": "course2-06",
+        "corrected": false,
+        "start": 203.38666666666668,
+        "seconds": 6.293333333333333,
+        "head": {
+          "correlation": 0.9998219740338833,
+          "lagSamples": 0,
+          "referenceEnergy": 85.87638431435994
+        },
+        "body": {
+          "correlation": 0.9994700118963172,
+          "lagSamples": 0,
+          "referenceEnergy": 354.48857657887817
+        },
+        "tail": {
+          "correlation": 0.9997991591437492,
+          "lagSamples": 0,
+          "referenceEnergy": 33.37504205723853
+        }
+      },
+      {
+        "id": "course2-07",
+        "corrected": false,
+        "start": 210.28666666666666,
+        "seconds": 5.269333333333333,
+        "head": {
+          "correlation": 0.9990530501924918,
+          "lagSamples": 0,
+          "referenceEnergy": 124.93359965308372
+        },
+        "body": {
+          "correlation": 0.9993670828458305,
+          "lagSamples": 0,
+          "referenceEnergy": 356.412471686139
+        },
+        "tail": {
+          "correlation": 0.9998109203875956,
+          "lagSamples": 0,
+          "referenceEnergy": 31.895413402354126
+        }
+      },
+      {
+        "id": "course2-08",
+        "corrected": false,
+        "start": 216.18666666666667,
+        "seconds": 6.602666666666667,
+        "head": {
+          "correlation": 0.9997972172837319,
+          "lagSamples": 0,
+          "referenceEnergy": 97.79563905672893
+        },
+        "body": {
+          "correlation": 0.9992914476480356,
+          "lagSamples": 0,
+          "referenceEnergy": 360.8236844228223
+        },
+        "tail": {
+          "correlation": 0.9996349814307671,
+          "lagSamples": 0,
+          "referenceEnergy": 18.311797468629393
+        }
+      },
+      {
+        "id": "course2-09",
+        "corrected": false,
+        "start": 223.42000000000002,
+        "seconds": 6.357333333333333,
+        "head": {
+          "correlation": 0.9995896791179362,
+          "lagSamples": 0,
+          "referenceEnergy": 149.06441106165258
+        },
+        "body": {
+          "correlation": 0.9992762443749105,
+          "lagSamples": 0,
+          "referenceEnergy": 114.31107466263911
+        },
+        "tail": {
+          "correlation": 0.9998878535181391,
+          "lagSamples": 0,
+          "referenceEnergy": 26.514990343773
+        }
+      },
+      {
+        "id": "course2-10",
+        "corrected": false,
+        "start": 230.38666666666668,
+        "seconds": 6.688,
+        "head": {
+          "correlation": 0.9998069562375029,
+          "lagSamples": 0,
+          "referenceEnergy": 147.66688492386317
+        },
+        "body": {
+          "correlation": 0.9993656025369461,
+          "lagSamples": 0,
+          "referenceEnergy": 796.1956032644772
+        },
+        "tail": {
+          "correlation": 0.9997169697674926,
+          "lagSamples": 0,
+          "referenceEnergy": 24.742584567250848
+        }
+      },
+      {
+        "id": "course2-11",
+        "corrected": false,
+        "start": 237.68666666666667,
+        "seconds": 6.762666666666667,
+        "head": {
+          "correlation": 0.9996216403573941,
+          "lagSamples": 0,
+          "referenceEnergy": 93.98663271932934
+        },
+        "body": {
+          "correlation": 0.9996927687389241,
+          "lagSamples": 0,
+          "referenceEnergy": 290.6384596840384
+        },
+        "tail": {
+          "correlation": 0.9993600473256992,
+          "lagSamples": 0,
+          "referenceEnergy": 28.067748185962632
+        }
+      },
+      {
+        "id": "course2-12",
+        "corrected": false,
+        "start": 245.05333333333334,
+        "seconds": 6.218666666666667,
+        "head": {
+          "correlation": 0.9999319038496483,
+          "lagSamples": 0,
+          "referenceEnergy": 97.00356868392377
+        },
+        "body": {
+          "correlation": 0.999181838162789,
+          "lagSamples": 0,
+          "referenceEnergy": 294.8423530032067
+        },
+        "tail": {
+          "correlation": 0.9995169971311705,
+          "lagSamples": 0,
+          "referenceEnergy": 40.46869108983521
+        }
+      },
+      {
+        "id": "course2-14",
+        "corrected": false,
+        "start": 251.88666666666668,
+        "seconds": 5.941333333333334,
+        "head": {
+          "correlation": 0.9993619280708597,
+          "lagSamples": 0,
+          "referenceEnergy": 127.52456528587365
+        },
+        "body": {
+          "correlation": 0.9987763106358265,
+          "lagSamples": 0,
+          "referenceEnergy": 473.1469276222457
+        },
+        "tail": {
+          "correlation": 0.9997584429808472,
+          "lagSamples": 0,
+          "referenceEnergy": 11.08541166847875
+        }
+      },
+      {
+        "id": "course3-01",
+        "corrected": false,
+        "start": 259.38666666666666,
+        "seconds": 5.8133333333333335,
+        "head": {
+          "correlation": 0.9997645834301994,
+          "lagSamples": 0,
+          "referenceEnergy": 62.4826982336935
+        },
+        "body": {
+          "correlation": 0.9996710408143225,
+          "lagSamples": 0,
+          "referenceEnergy": 255.96798152026716
+        },
+        "tail": {
+          "correlation": 0.9998935575042764,
+          "lagSamples": 0,
+          "referenceEnergy": 24.317700672635123
+        }
+      },
+      {
+        "id": "course3-02",
+        "corrected": false,
+        "start": 265.82,
+        "seconds": 5.888,
+        "head": {
+          "correlation": 0.999678644341639,
+          "lagSamples": 0,
+          "referenceEnergy": 51.07373945779269
+        },
+        "body": {
+          "correlation": 0.999665577264649,
+          "lagSamples": 0,
+          "referenceEnergy": 287.76804783302055
+        },
+        "tail": {
+          "correlation": 0.9998579367689795,
+          "lagSamples": 0,
+          "referenceEnergy": 26.734344866327582
+        }
+      },
+      {
+        "id": "course3-03",
+        "corrected": false,
+        "start": 272.32,
+        "seconds": 5.984,
+        "head": {
+          "correlation": 0.9998480879695912,
+          "lagSamples": 0,
+          "referenceEnergy": 81.87015911306999
+        },
+        "body": {
+          "correlation": 0.9990236069292343,
+          "lagSamples": 0,
+          "referenceEnergy": 390.1823561488794
+        },
+        "tail": {
+          "correlation": 0.999452955757136,
+          "lagSamples": 0,
+          "referenceEnergy": 34.04611438441341
+        }
+      },
+      {
+        "id": "course3-04",
+        "corrected": false,
+        "start": 278.92,
+        "seconds": 5.589333333333333,
+        "head": {
+          "correlation": 0.999856841809268,
+          "lagSamples": 0,
+          "referenceEnergy": 62.558325727795925
+        },
+        "body": {
+          "correlation": 0.9992799233866985,
+          "lagSamples": 0,
+          "referenceEnergy": 459.95229607869544
+        },
+        "tail": {
+          "correlation": 0.9997619446171606,
+          "lagSamples": 0,
+          "referenceEnergy": 28.258199355085498
+        }
+      },
+      {
+        "id": "course3-05",
+        "corrected": false,
+        "start": 285.12,
+        "seconds": 6.314666666666667,
+        "head": {
+          "correlation": 0.9997691000214629,
+          "lagSamples": 0,
+          "referenceEnergy": 235.34778317343742
+        },
+        "body": {
+          "correlation": 0.9999186653905436,
+          "lagSamples": 0,
+          "referenceEnergy": 541.3421386203881
+        },
+        "tail": {
+          "correlation": 0.9997879305967583,
+          "lagSamples": 0,
+          "referenceEnergy": 21.059420628595284
+        }
+      },
+      {
+        "id": "course3-06",
+        "corrected": false,
+        "start": 292.05333333333334,
+        "seconds": 5.685333333333333,
+        "head": {
+          "correlation": 0.9997383967914772,
+          "lagSamples": 0,
+          "referenceEnergy": 113.87715718566655
+        },
+        "body": {
+          "correlation": 0.9995991998788657,
+          "lagSamples": 0,
+          "referenceEnergy": 214.6294459388619
+        },
+        "tail": {
+          "correlation": 0.9990639210030248,
+          "lagSamples": 0,
+          "referenceEnergy": 63.58918204211785
+        }
+      },
+      {
+        "id": "course3-07",
+        "corrected": false,
+        "start": 298.35333333333335,
+        "seconds": 6.432,
+        "head": {
+          "correlation": 0.999331123334535,
+          "lagSamples": 0,
+          "referenceEnergy": 225.17802825208352
+        },
+        "body": {
+          "correlation": 0.9992643200815421,
+          "lagSamples": 0,
+          "referenceEnergy": 668.1738212652789
+        },
+        "tail": {
+          "correlation": 0.9996158740639708,
+          "lagSamples": 0,
+          "referenceEnergy": 41.584115092134134
+        }
+      },
+      {
+        "id": "course3-08",
+        "corrected": false,
+        "start": 305.38666666666666,
+        "seconds": 6.570666666666667,
+        "head": {
+          "correlation": 0.9997205206330015,
+          "lagSamples": 0,
+          "referenceEnergy": 86.00141180867473
+        },
+        "body": {
+          "correlation": 0.9993023569952549,
+          "lagSamples": 0,
+          "referenceEnergy": 274.67565469952154
+        },
+        "tail": {
+          "correlation": 0.9996273833239682,
+          "lagSamples": 0,
+          "referenceEnergy": 44.726856906110676
+        }
+      },
+      {
+        "id": "course3-09",
+        "corrected": false,
+        "start": 318.08666666666664,
+        "seconds": 6.218666666666667,
+        "head": {
+          "correlation": 0.9999035857133846,
+          "lagSamples": 0,
+          "referenceEnergy": 31.046907382970854
+        },
+        "body": {
+          "correlation": 0.999586011685953,
+          "lagSamples": 0,
+          "referenceEnergy": 290.8854263814419
+        },
+        "tail": {
+          "correlation": 0.9997595370805333,
+          "lagSamples": 0,
+          "referenceEnergy": 9.582724396018099
+        }
+      },
+      {
+        "id": "course3-10",
+        "corrected": false,
+        "start": 324.92,
+        "seconds": 6.176,
+        "head": {
+          "correlation": 0.9994079743580844,
+          "lagSamples": 0,
+          "referenceEnergy": 98.9625063172918
+        },
+        "body": {
+          "correlation": 0.999091726353722,
+          "lagSamples": 0,
+          "referenceEnergy": 405.44667624522504
+        },
+        "tail": {
+          "correlation": 0.999660056693801,
+          "lagSamples": 0,
+          "referenceEnergy": 39.552130898906334
+        }
+      },
+      {
+        "id": "course3-11",
+        "corrected": false,
+        "start": 331.72,
+        "seconds": 7.050666666666666,
+        "head": {
+          "correlation": 0.9999929507243707,
+          "lagSamples": 0,
+          "referenceEnergy": 149.5891881441883
+        },
+        "body": {
+          "correlation": 0.9993007005233393,
+          "lagSamples": 0,
+          "referenceEnergy": 606.623290343005
+        },
+        "tail": {
+          "correlation": 0.9998030241936129,
+          "lagSamples": 0,
+          "referenceEnergy": 93.08075607688627
+        }
+      },
+      {
+        "id": "course3-12",
+        "corrected": false,
+        "start": 339.38666666666666,
+        "seconds": 5.824,
+        "head": {
+          "correlation": 0.999388519877068,
+          "lagSamples": 0,
+          "referenceEnergy": 125.69519443174609
+        },
+        "body": {
+          "correlation": 0.9992257253244307,
+          "lagSamples": 0,
+          "referenceEnergy": 256.5543818305896
+        },
+        "tail": {
+          "correlation": 0.9994967555567781,
+          "lagSamples": 0,
+          "referenceEnergy": 18.698729026997256
+        }
+      },
+      {
+        "id": "course4-01",
+        "corrected": false,
+        "start": 364.2866666666667,
+        "seconds": 6.304,
+        "head": {
+          "correlation": 0.9999919073000464,
+          "lagSamples": 0,
+          "referenceEnergy": 143.4759456532324
+        },
+        "body": {
+          "correlation": 0.9993644043214454,
+          "lagSamples": 0,
+          "referenceEnergy": 587.1548336421647
+        },
+        "tail": {
+          "correlation": 0.9993611445659412,
+          "lagSamples": 0,
+          "referenceEnergy": 99.51181403205302
+        }
+      },
+      {
+        "id": "course4-02",
+        "corrected": false,
+        "start": 373.7866666666667,
+        "seconds": 5.888,
+        "head": {
+          "correlation": 0.9990038262123503,
+          "lagSamples": 0,
+          "referenceEnergy": 140.9373613391097
+        },
+        "body": {
+          "correlation": 0.9996354834322079,
+          "lagSamples": 0,
+          "referenceEnergy": 228.7860647128053
+        },
+        "tail": {
+          "correlation": 0.99979779442041,
+          "lagSamples": 0,
+          "referenceEnergy": 25.398481964899887
+        }
+      },
+      {
+        "id": "course4-03",
+        "corrected": false,
+        "start": 380.2866666666667,
+        "seconds": 5.866666666666666,
+        "head": {
+          "correlation": 0.9995770906179533,
+          "lagSamples": 0,
+          "referenceEnergy": 144.6979266779215
+        },
+        "body": {
+          "correlation": 0.9993472945904507,
+          "lagSamples": 0,
+          "referenceEnergy": 270.35300777017886
+        },
+        "tail": {
+          "correlation": 0.9996719366565536,
+          "lagSamples": 0,
+          "referenceEnergy": 24.790221026454027
+        }
+      },
+      {
+        "id": "course4-04",
+        "corrected": false,
+        "start": 386.75333333333333,
+        "seconds": 6.325333333333333,
+        "head": {
+          "correlation": 0.9995648393312445,
+          "lagSamples": 0,
+          "referenceEnergy": 149.39761726786492
+        },
+        "body": {
+          "correlation": 0.9994136379923975,
+          "lagSamples": 0,
+          "referenceEnergy": 341.0523819331884
+        },
+        "tail": {
+          "correlation": 0.9999772084418626,
+          "lagSamples": 0,
+          "referenceEnergy": 45.71112804847529
+        }
+      },
+      {
+        "id": "course4-05",
+        "corrected": false,
+        "start": 393.68666666666667,
+        "seconds": 6.069333333333334,
+        "head": {
+          "correlation": 0.9987007181724215,
+          "lagSamples": 0,
+          "referenceEnergy": 180.44407847238304
+        },
+        "body": {
+          "correlation": 0.9990014001954198,
+          "lagSamples": 0,
+          "referenceEnergy": 287.40045882182955
+        },
+        "tail": {
+          "correlation": 0.9996193396019899,
+          "lagSamples": 0,
+          "referenceEnergy": 73.59106804785148
+        }
+      },
+      {
+        "id": "course4-06",
+        "corrected": false,
+        "start": 400.4866666666667,
+        "seconds": 5.8133333333333335,
+        "head": {
+          "correlation": 0.9997639510740192,
+          "lagSamples": 0,
+          "referenceEnergy": 81.54935510434953
+        },
+        "body": {
+          "correlation": 0.9989295432026509,
+          "lagSamples": 0,
+          "referenceEnergy": 403.3131062109244
+        },
+        "tail": {
+          "correlation": 0.9996848347181821,
+          "lagSamples": 0,
+          "referenceEnergy": 33.983931656503884
+        }
+      },
+      {
+        "id": "course4-07",
+        "corrected": false,
+        "start": 409.4866666666667,
+        "seconds": 5.333333333333333,
+        "head": {
+          "correlation": 0.9999848080798047,
+          "lagSamples": 0,
+          "referenceEnergy": 31.802501713619495
+        },
+        "body": {
+          "correlation": 0.9993263390631361,
+          "lagSamples": 0,
+          "referenceEnergy": 247.94227330664557
+        },
+        "tail": {
+          "correlation": 0.9997644143914649,
+          "lagSamples": 0,
+          "referenceEnergy": 27.363123183978463
+        }
+      },
+      {
+        "id": "course4-08",
+        "corrected": false,
+        "start": 415.42,
+        "seconds": 6.1866666666666665,
+        "head": {
+          "correlation": 0.9990310846022049,
+          "lagSamples": 0,
+          "referenceEnergy": 221.70043736582147
+        },
+        "body": {
+          "correlation": 0.9997806594719736,
+          "lagSamples": 0,
+          "referenceEnergy": 443.3110229567484
+        },
+        "tail": {
+          "correlation": 0.9993465991916136,
+          "lagSamples": 0,
+          "referenceEnergy": 26.39560818626823
+        }
+      },
+      {
+        "id": "course4-09",
+        "corrected": false,
+        "start": 422.22,
+        "seconds": 6.069333333333334,
+        "head": {
+          "correlation": 0.9997853787567993,
+          "lagSamples": 0,
+          "referenceEnergy": 58.978467491727606
+        },
+        "body": {
+          "correlation": 0.9993399973997722,
+          "lagSamples": 0,
+          "referenceEnergy": 245.1788707912754
+        },
+        "tail": {
+          "correlation": 0.9997134141474247,
+          "lagSamples": 0,
+          "referenceEnergy": 8.215281218871601
+        }
+      },
+      {
+        "id": "course4-10",
+        "corrected": false,
+        "start": 428.92,
+        "seconds": 6.4,
+        "head": {
+          "correlation": 0.999020115013069,
+          "lagSamples": 0,
+          "referenceEnergy": 144.44973828234504
+        },
+        "body": {
+          "correlation": 0.9994902511706818,
+          "lagSamples": 0,
+          "referenceEnergy": 97.2775492344561
+        },
+        "tail": {
+          "correlation": 0.9992116710160773,
+          "lagSamples": 0,
+          "referenceEnergy": 48.56372781181015
+        }
+      },
+      {
+        "id": "course4-11",
+        "corrected": false,
+        "start": 435.92,
+        "seconds": 6.794666666666667,
+        "head": {
+          "correlation": 0.9998448268415386,
+          "lagSamples": 0,
+          "referenceEnergy": 165.94188934732307
+        },
+        "body": {
+          "correlation": 0.9992606561211085,
+          "lagSamples": 0,
+          "referenceEnergy": 281.91090159141146
+        },
+        "tail": {
+          "correlation": 0.9989201630110283,
+          "lagSamples": 0,
+          "referenceEnergy": 20.730962955013606
+        }
+      },
+      {
+        "id": "course4-12",
+        "corrected": false,
+        "start": 443.32,
+        "seconds": 5.941333333333334,
+        "head": {
+          "correlation": 0.9994639938368324,
+          "lagSamples": 0,
+          "referenceEnergy": 176.09729818051423
+        },
+        "body": {
+          "correlation": 0.9993229538853915,
+          "lagSamples": 0,
+          "referenceEnergy": 432.21391884086916
+        },
+        "tail": {
+          "correlation": 0.999345981009059,
+          "lagSamples": 0,
+          "referenceEnergy": 133.01797692412688
+        }
+      },
+      {
+        "id": "course4-13",
+        "corrected": false,
+        "start": 451.12,
+        "seconds": 5.941333333333334,
+        "head": {
+          "correlation": 0.9999847677770046,
+          "lagSamples": 0,
+          "referenceEnergy": 131.83027911393197
+        },
+        "body": {
+          "correlation": 0.9994969600883418,
+          "lagSamples": 0,
+          "referenceEnergy": 139.89615324097687
+        },
+        "tail": {
+          "correlation": 0.9998984353023931,
+          "lagSamples": 0,
+          "referenceEnergy": 32.536322398425526
+        }
+      },
+      {
+        "id": "course4-14",
+        "corrected": false,
+        "start": 458.52,
+        "seconds": 5.962666666666666,
+        "head": {
+          "correlation": 0.9995103387321065,
+          "lagSamples": 0,
+          "referenceEnergy": 141.31512547354768
+        },
+        "body": {
+          "correlation": 0.9996126929119776,
+          "lagSamples": 0,
+          "referenceEnergy": 424.1671754808419
+        },
+        "tail": {
+          "correlation": 0.9997023578649162,
+          "lagSamples": 0,
+          "referenceEnergy": 17.901371251662784
+        }
+      },
+      {
+        "id": "course4-15",
+        "corrected": false,
+        "start": 465.52,
+        "seconds": 6.922666666666666,
+        "head": {
+          "correlation": 0.9999874004172353,
+          "lagSamples": 0,
+          "referenceEnergy": 51.06510344166863
+        },
+        "body": {
+          "correlation": 0.999923631557398,
+          "lagSamples": 0,
+          "referenceEnergy": 152.19322334944914
+        },
+        "tail": {
+          "correlation": 0.9997455784596093,
+          "lagSamples": 0,
+          "referenceEnergy": 6.900738373255538
+        }
+      },
+      {
+        "id": "course4-16",
+        "corrected": false,
+        "start": 473.05333333333334,
+        "seconds": 7.093333333333334,
+        "head": {
+          "correlation": 0.9999863178076085,
+          "lagSamples": 0,
+          "referenceEnergy": 128.34795126885675
+        },
+        "body": {
+          "correlation": 0.9995817347787084,
+          "lagSamples": 0,
+          "referenceEnergy": 256.903461818537
+        },
+        "tail": {
+          "correlation": 0.9995627964498838,
+          "lagSamples": 0,
+          "referenceEnergy": 13.014880658146307
+        }
+      },
+      {
+        "id": "course5-01",
+        "corrected": false,
+        "start": 482.25333333333333,
+        "seconds": 5.738666666666667,
+        "head": {
+          "correlation": 0.9990068670048252,
+          "lagSamples": 0,
+          "referenceEnergy": 182.41384831466533
+        },
+        "body": {
+          "correlation": 0.9995075731348777,
+          "lagSamples": 0,
+          "referenceEnergy": 263.5970072152995
+        },
+        "tail": {
+          "correlation": 0.9998156584848175,
+          "lagSamples": 0,
+          "referenceEnergy": 21.92611027903952
+        }
+      },
+      {
+        "id": "course5-02",
+        "corrected": false,
+        "start": 488.85333333333335,
+        "seconds": 6.261333333333333,
+        "head": {
+          "correlation": 0.9997388643401329,
+          "lagSamples": 0,
+          "referenceEnergy": 90.53000571707582
+        },
+        "body": {
+          "correlation": 0.999335778363459,
+          "lagSamples": 0,
+          "referenceEnergy": 235.4974493640536
+        },
+        "tail": {
+          "correlation": 0.9994080961382864,
+          "lagSamples": 0,
+          "referenceEnergy": 53.94427771456598
+        }
+      },
+      {
+        "id": "course5-03",
+        "corrected": false,
+        "start": 495.72,
+        "seconds": 6.613333333333333,
+        "head": {
+          "correlation": 0.9996737961078463,
+          "lagSamples": 0,
+          "referenceEnergy": 107.33266803647798
+        },
+        "body": {
+          "correlation": 0.9993334183959496,
+          "lagSamples": 0,
+          "referenceEnergy": 517.5207631456257
+        },
+        "tail": {
+          "correlation": 0.9995428574213209,
+          "lagSamples": 0,
+          "referenceEnergy": 15.507226778040144
+        }
+      },
+      {
+        "id": "course5-04",
+        "corrected": false,
+        "start": 506.32,
+        "seconds": 5.312,
+        "head": {
+          "correlation": 0.9999909342230532,
+          "lagSamples": 0,
+          "referenceEnergy": 133.06477208354065
+        },
+        "body": {
+          "correlation": 0.9995597664679067,
+          "lagSamples": 0,
+          "referenceEnergy": 300.8152946393423
+        },
+        "tail": {
+          "correlation": 0.9995326288951049,
+          "lagSamples": 0,
+          "referenceEnergy": 16.818716382232186
+        }
+      },
+      {
+        "id": "course5-05",
+        "corrected": false,
+        "start": 513.72,
+        "seconds": 6.1546666666666665,
+        "head": {
+          "correlation": 0.9997565346958728,
+          "lagSamples": 0,
+          "referenceEnergy": 119.15425934363506
+        },
+        "body": {
+          "correlation": 0.999050640960149,
+          "lagSamples": 0,
+          "referenceEnergy": 177.3971205593713
+        },
+        "tail": {
+          "correlation": 0.9998348420827934,
+          "lagSamples": 0,
+          "referenceEnergy": 11.240664348934388
+        }
+      },
+      {
+        "id": "course5-06",
+        "corrected": false,
+        "start": 520.4866666666667,
+        "seconds": 5.632,
+        "head": {
+          "correlation": 0.999702138205303,
+          "lagSamples": 0,
+          "referenceEnergy": 148.4015303596338
+        },
+        "body": {
+          "correlation": 0.999484228948798,
+          "lagSamples": 0,
+          "referenceEnergy": 197.05107508920213
+        },
+        "tail": {
+          "correlation": 0.999658534911337,
+          "lagSamples": 0,
+          "referenceEnergy": 19.223295065856412
+        }
+      },
+      {
+        "id": "course5-07",
+        "corrected": false,
+        "start": 526.9866666666667,
+        "seconds": 5.152,
+        "head": {
+          "correlation": 0.9996782506542905,
+          "lagSamples": 0,
+          "referenceEnergy": 122.80716250017565
+        },
+        "body": {
+          "correlation": 0.9993669789240602,
+          "lagSamples": 0,
+          "referenceEnergy": 286.7606705176354
+        },
+        "tail": {
+          "correlation": 0.9997919756474838,
+          "lagSamples": 0,
+          "referenceEnergy": 55.1269495685913
+        }
+      },
+      {
+        "id": "course5-08",
+        "corrected": false,
+        "start": 534.6866666666667,
+        "seconds": 5.973333333333334,
+        "head": {
+          "correlation": 0.999830203602406,
+          "lagSamples": 0,
+          "referenceEnergy": 76.59182342203376
+        },
+        "body": {
+          "correlation": 0.9987568824709561,
+          "lagSamples": 0,
+          "referenceEnergy": 223.54117563620193
+        },
+        "tail": {
+          "correlation": 0.9996422205331522,
+          "lagSamples": 0,
+          "referenceEnergy": 48.52170015337662
+        }
+      },
+      {
+        "id": "course5-09",
+        "corrected": false,
+        "start": 541.9866666666667,
+        "seconds": 6.8693333333333335,
+        "head": {
+          "correlation": 0.9999179304167657,
+          "lagSamples": 0,
+          "referenceEnergy": 67.5935281452711
+        },
+        "body": {
+          "correlation": 0.9988401951659309,
+          "lagSamples": 0,
+          "referenceEnergy": 317.79385846979295
+        },
+        "tail": {
+          "correlation": 0.9991834834467388,
+          "lagSamples": 0,
+          "referenceEnergy": 41.045602638133914
+        }
+      },
+      {
+        "id": "course5-10",
+        "corrected": false,
+        "start": 549.4866666666667,
+        "seconds": 6.016,
+        "head": {
+          "correlation": 0.9996191550763168,
+          "lagSamples": 0,
+          "referenceEnergy": 142.12367693726927
+        },
+        "body": {
+          "correlation": 0.9994477565427926,
+          "lagSamples": 0,
+          "referenceEnergy": 265.7383317110178
+        },
+        "tail": {
+          "correlation": 0.9999333339729459,
+          "lagSamples": 0,
+          "referenceEnergy": 28.7951533627589
+        }
+      },
+      {
+        "id": "course5-11",
+        "corrected": false,
+        "start": 556.12,
+        "seconds": 6.474666666666667,
+        "head": {
+          "correlation": 0.999673005227531,
+          "lagSamples": 0,
+          "referenceEnergy": 99.42504388850155
+        },
+        "body": {
+          "correlation": 0.999304560707831,
+          "lagSamples": 0,
+          "referenceEnergy": 334.83240195857917
+        },
+        "tail": {
+          "correlation": 0.9994719021548059,
+          "lagSamples": 0,
+          "referenceEnergy": 28.267300027365167
+        }
+      },
+      {
+        "id": "course5-12",
+        "corrected": true,
+        "start": 568.12,
+        "seconds": 6.229333333333333,
+        "head": {
+          "correlation": 0.9999052314720078,
+          "lagSamples": 0,
+          "referenceEnergy": 127.59557791564687
+        },
+        "body": {
+          "correlation": 0.9993538100135342,
+          "lagSamples": 0,
+          "referenceEnergy": 395.8422198224431
+        },
+        "tail": {
+          "correlation": 0.9999492983629292,
+          "lagSamples": 0,
+          "referenceEnergy": 18.78557934219959
+        }
+      },
+      {
+        "id": "course5-13",
+        "corrected": false,
+        "start": 576.4533333333334,
+        "seconds": 6.325333333333333,
+        "head": {
+          "correlation": 0.9996645669997658,
+          "lagSamples": 0,
+          "referenceEnergy": 77.46711615415853
+        },
+        "body": {
+          "correlation": 0.999391318657232,
+          "lagSamples": 0,
+          "referenceEnergy": 470.83261713998456
+        },
+        "tail": {
+          "correlation": 0.9998583485242115,
+          "lagSamples": 0,
+          "referenceEnergy": 8.048931168441486
+        }
+      },
+      {
+        "id": "close-01",
+        "corrected": false,
+        "start": 583.7533333333333,
+        "seconds": 7.008,
+        "head": {
+          "correlation": 0.999406814798247,
+          "lagSamples": 0,
+          "referenceEnergy": 126.96269311633888
+        },
+        "body": {
+          "correlation": 0.999313202886575,
+          "lagSamples": 0,
+          "referenceEnergy": 480.53859103571546
+        },
+        "tail": {
+          "correlation": 0.9997795490331016,
+          "lagSamples": 0,
+          "referenceEnergy": 17.474665940671066
+        }
+      },
+      {
+        "id": "close-02",
+        "corrected": false,
+        "start": 591.3866666666667,
+        "seconds": 6.474666666666667,
+        "head": {
+          "correlation": 0.9997850860236078,
+          "lagSamples": 0,
+          "referenceEnergy": 157.27960669061682
+        },
+        "body": {
+          "correlation": 0.9990859701916283,
+          "lagSamples": 0,
+          "referenceEnergy": 290.81243811255916
+        },
+        "tail": {
+          "correlation": 0.9998755810858337,
+          "lagSamples": 0,
+          "referenceEnergy": 10.03045134497008
+        }
+      },
+      {
+        "id": "close-03",
+        "corrected": false,
+        "start": 599.0866666666667,
+        "seconds": 5.824,
+        "head": {
+          "correlation": 0.9998646276663499,
+          "lagSamples": 0,
+          "referenceEnergy": 21.826029905370515
+        },
+        "body": {
+          "correlation": 0.9996199528015816,
+          "lagSamples": 0,
+          "referenceEnergy": 340.7516402147214
+        },
+        "tail": {
+          "correlation": 0.9997341307055941,
+          "lagSamples": 0,
+          "referenceEnergy": 32.61727525411228
+        }
+      }
+    ],
+    "count": 76,
+    "minCorrelation": 0.9983764808612089,
+    "maximumLagSamples": 0,
+    "lufs": -16.3,
+    "truePeak": -1.5,
+    "headBodyTailPass": true,
+    "completeRepairedCuesFit": true,
+    "other73MasterPcmByteIdentical": true,
+    "h264PacketsIdentical": true,
+    "fullDecode": true,
+    "independentReading": "four-mora sho-o-ro-o separately confirmed; PCM correlation alone is not reading verification",
+    "wholeDirectWatch": false,
+    "subjectiveListen": false
+  },
+  "previousFinalSha256": "03af92e6745333dbba17c0c158bcffa91c0219db186f9b74a4712e13fda8c612",
+  "nativePicture": {
+    "picture": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/media/picture/demo07-native-full.mp4",
+    "sha256": "5d4ddf15bc9f0077bc2786bebb3c34037aa88d2fabc71a6782ebc645542926c6",
+    "frames": 18194,
+    "seconds": 606.4666666666667,
+    "originalGameSections": 6,
+    "changedClosingFrames": 685,
+    "wholeDirectWatch": false
+  },
+  "sourceCapture": 0,
+  "changedClosingFrames": 685,
+  "wholeDirectWatch": false,
+  "subjectiveListen": false,
+  "published": false
+}

@@ -34,10 +34,10 @@
   ],
   "actualDurationSeconds": 606.466667,
   "frames": 18194,
-  "video": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo06-reading-fix/videos/emberwake-demo05-v06-bgm.mp4",
-  "videoSha256": "ff327308346a0c1b7f7b14f122a2adf443351a9882ce9ed063c7a5315f7d778e",
-  "voiceOnlyVideo": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo06-reading-fix/videos/emberwake-demo05-v06-voice.mp4",
-  "voiceOnlySha256": "03af92e6745333dbba17c0c158bcffa91c0219db186f9b74a4712e13fda8c612",
+  "video": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/videos/emberwake-v07-bgm.mp4",
+  "videoSha256": "ce39d1223e7a9dfc59488b9c828f5c44bac363fd59334484f519f5dbbdef7241",
+  "voiceOnlyVideo": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/videos/emberwake-v07-voice.mp4",
+  "voiceOnlySha256": "d86395b90ca6513de3524f346f2be614b2ad4599e03516ec7060dc9b3f354ddd",
   "cover": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/covers/demo05-cover-v02.jpg",
   "coverSha256": "0d32f0f7e486d450861abdd34fa5514b86803d4753266c8b6d4ee4cff5bde28d",
   "gameMode": "Bundled demo0.11 five courses included in production package0.12.0",
@@ -75,28 +75,37 @@
   "archives": [
     {
       "kind": "bgm",
-      "path": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-29\\エンバーウェイク\\0057_芯石5コース_読み修正_v06\\BGM版.mp4",
-      "sha256": "ff327308346a0c1b7f7b14f122a2adf443351a9882ce9ed063c7a5315f7d778e",
+      "path": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-29\\エンバーウェイク\\0503_芯石5コース_モデル追加_v07\\BGM版.mp4",
+      "sha256": "ce39d1223e7a9dfc59488b9c828f5c44bac363fd59334484f519f5dbbdef7241",
       "decodedFromNas": true,
       "sourceRetained": true
     },
     {
       "kind": "voice",
-      "path": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-29\\エンバーウェイク\\0057_芯石5コース_読み修正_v06\\声のみ版.mp4",
-      "sha256": "03af92e6745333dbba17c0c158bcffa91c0219db186f9b74a4712e13fda8c612",
+      "path": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-29\\エンバーウェイク\\0503_芯石5コース_モデル追加_v07\\声のみ版.mp4",
+      "sha256": "d86395b90ca6513de3524f346f2be614b2ad4599e03516ec7060dc9b3f354ddd",
       "decodedFromNas": true,
       "sourceRetained": true
     }
   ],
   "rootMediaAccepted": true,
-  "rootMediaAcceptanceUrl": "https://github.com/Pui-core/-/issues/140#issuecomment-6473949337",
-  "deliveryVersion": "v06",
+  "rootMediaAcceptanceUrl": "https://github.com/Pui-core/-/issues/141#issuecomment-6479380594",
+  "deliveryVersion": "v07",
   "audioReadingRevisionIssue": 140,
   "readingOverrides": {
     "鐘楼": "しょうろう"
   },
-  "previousMediaVersion": "v05",
-  "previousVideoSha256": "37ee9bbee9fc6479dcc38576068d2960f006b60446d1b2443598be747518f13b",
-  "previousVoiceOnlySha256": "82026446341844523b9fb1ebfde8480fe87b052dcdc20bf248cfa695144536ec",
-  "rootMediaAcceptanceState": "reading_revision_accepted"
+  "previousMediaVersion": "v06",
+  "previousVideoSha256": "ff327308346a0c1b7f7b14f122a2adf443351a9882ce9ed063c7a5315f7d778e",
+  "previousVoiceOnlySha256": "03af92e6745333dbba17c0c158bcffa91c0219db186f9b74a4712e13fda8c612",
+  "rootMediaAcceptanceState": "model_revision_accepted",
+  "specifiedModel": "Revenant_Natural",
+  "modelFrameCount": 685,
+  "modelVisibleGlobalFrames": [
+    17509,
+    18194
+  ],
+  "modelDriver": "Retained v06 voice PCM RMS, official Core; blink/head/breath scripted; no camera/human tracking",
+  "modelAdditionIssue": 141,
+  "rootCanonicalPreparationSha256": "a8fc58c2f3d71e0e2596c7dab1a160ae66ee47d29ba6264c4693b3ece5d2d715"
 }

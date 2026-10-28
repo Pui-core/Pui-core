@@ -1,0 +1,87 @@
+{
+  "finalBgmSha256": "ce39d1223e7a9dfc59488b9c828f5c44bac363fd59334484f519f5dbbdef7241",
+  "reviewer": "missyou_finish",
+  "images": [
+    {
+      "time": 584.133333,
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/qa/final/actual-584.133333.png",
+      "sha256": "3d275f7c91b55f2cdf3966dd404ae89fd61cead6b4f48653aa26b4e195fd08e5"
+    },
+    {
+      "time": 606.433333,
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/qa/final/actual-606.433333.png",
+      "sha256": "74be79b5692a6096443df85aaabe7414edf076a0c36e6836dd5732a2787c2e55"
+    },
+    {
+      "start": 586.0333333333333,
+      "fps": 10,
+      "consecutiveFrames": 15,
+      "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/qa/final/mouth-blink-continuous.png",
+      "sha256": "f4cc003d126fbdc889f547e0cdbc12e203f10d250c1d406e855cd6d2fad5998d",
+      "crop": [
+        170,
+        330,
+        240,
+        260
+      ]
+    }
+  ],
+  "independentActualImageHashesMatched": true,
+  "findings": [
+    "Natural face, game UI/results, CTA, stone icons and credits unobscured; no mandatory text clipping seen",
+    "15 consecutive final-image samples at10fps show mouth open/closed and both-eye blink changes; not merely a static portrait"
+  ],
+  "excluded": [
+    "RMS remeasurement",
+    "audio synchronization remeasurement",
+    "whole direct playback",
+    "subjective listening"
+  ],
+  "producerActualImageReview": {
+    "images": [
+      {
+        "time": 584.133333,
+        "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/qa/final/actual-584.133333.png",
+        "sha256": "3d275f7c91b55f2cdf3966dd404ae89fd61cead6b4f48653aa26b4e195fd08e5"
+      },
+      {
+        "time": 606.433333,
+        "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/qa/final/actual-606.433333.png",
+        "sha256": "74be79b5692a6096443df85aaabe7414edf076a0c36e6836dd5732a2787c2e55"
+      },
+      {
+        "start": 586.0333333333333,
+        "fps": 10,
+        "consecutiveFrames": 15,
+        "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/qa/final/mouth-blink-continuous.png",
+        "sha256": "f4cc003d126fbdc889f547e0cdbc12e203f10d250c1d406e855cd6d2fad5998d",
+        "crop": [
+          170,
+          330,
+          240,
+          260
+        ]
+      },
+      {
+        "start": 583.6333333333333,
+        "fps": 1,
+        "consecutiveFrames": 23,
+        "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo07-natural/qa/final/close-all-seconds.png",
+        "sha256": "a3a2cfd9514a0cae8fafa6acd27b136d767bcc26302811ae986024b99d50b2ed",
+        "blankCells": 2
+      }
+    ],
+    "finding": "No model/UI/CTA/credit overlap; mouth/blink changes visible in final continuous sheet",
+    "wholeDirectWatch": false,
+    "subjectiveListen": false
+  },
+  "published": false,
+  "rootMediaAcceptance": {
+    "url": "https://github.com/Pui-core/-/issues/141#issuecomment-6479380594",
+    "actualFinalImagesViewed": 4,
+    "acceptance": "APPROVE",
+    "wholeDirectWatch": false,
+    "subjectiveListen": false,
+    "ownerCreativeAcceptance": false
+  }
+}
