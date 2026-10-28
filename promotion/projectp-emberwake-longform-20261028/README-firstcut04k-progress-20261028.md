@@ -17,3 +17,13 @@ PeriTune公式のRainwalkとSecret Corridorを背景用候補として取得し�
 `source/firstcut04k-full-plan-own.json` は、前半、第3話〜各話、原画／入力、背景比較と締めを順序に沿って配置し、114句の重複0・18616f（620.533秒）を算出。元音声と実画面を使い、無音や静止映像で尺を引き延ばしていない。元のu005とu097/u101の台詞は独立音声として挿入した。FilmCraft原本 `projects/firstcut04k-full-own.fcproj` を作成し、実InspectでV1/A1各27区間・先頭0／終端18616f・隙間0を確認。12:38時点、所有jobの本編MP4書き出しが実行中。部分ファイルを完成扱いしない。実際の全AV decode・主要境界の表示・全編視聴と音の聴感はまだ未検査。
 
 Rainwalk候補は10分20.533秒のBGM用トラックとして生成したが、映画全編への統合・聴感・クリエイティブ採用は未完了。音源単体の再配布・Content ID登録はしない。初回背景比較の元UI文字切れ版も保全し、採用しない。
+
+## 実出力と品質差戻し
+
+FilmCraft実MP4 `videos/firstcut04k-full-own.mp4` は620.544秒／18616フレーム、SHA `fcd8fcb89043aa71adc832046872adbe62187fa31403b644ccfd9ed6f89033f2`。全AVデコード、接合26箇所の前後52画像抽出、15秒間隔シートと声のみの -19.9 LUFS／真ピーク -1.8 dBTP を確認した。
+
+CTOと制作担当は時間順シートと複数原寸画像から、4:30〜10:10に同型の横スクロール画面と左上の引用が続く問題を確認し、ownerの『単調・画面構成・飽きる』という差戻しは未解決と判定した。0秒の実フレームには大きな見出しがない。これは創作上のCHANGES_REQUESTEDであり、尺とデコードを通過したことによって解除されない。実素材の新しい比較・判断・変化を軸に全体を再設計する。BGM未採用、通し視聴・直接聴感・公開効果も未確認。証跡 `qa/firstcut04k-full-own-creative-review.json`。
+
+## Fドライブ保全
+
+差戻し中の実MP4とFilmCraft原本、背景比較のEffectCraft原本、PhotoCraftカバーを `F:\Videos\ProjectP-EMBERWAKE-Longform-2026-10-28\firstcut-04k-candidate\` に別途保全。元動画とコピーのSHAが一致し、FilmCraftの対象24素材がonline、F上のFilmCraft・EffectCraft・PhotoCraftを再読込して代表画像を出力した。動画は声のみでBGM未採用。F上の原本を使った全編再書き出し・連続視聴と聴感は未実施で、公開差戻しは維持。
