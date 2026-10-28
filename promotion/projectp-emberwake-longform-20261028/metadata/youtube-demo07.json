@@ -88,8 +88,8 @@
       "sourceRetained": true
     }
   ],
-  "rootMediaAccepted": false,
-  "rootMediaAcceptanceUrl": null,
+  "rootMediaAccepted": true,
+  "rootMediaAcceptanceUrl": "https://github.com/Pui-core/-/issues/141#issuecomment-6479380594",
   "deliveryVersion": "v07",
   "audioReadingRevisionIssue": 140,
   "readingOverrides": {
@@ -98,7 +98,7 @@
   "previousMediaVersion": "v06",
   "previousVideoSha256": "ff327308346a0c1b7f7b14f122a2adf443351a9882ce9ed063c7a5315f7d778e",
   "previousVoiceOnlySha256": "03af92e6745333dbba17c0c158bcffa91c0219db186f9b74a4712e13fda8c612",
-  "rootMediaAcceptanceState": "model_revision_verified_pending_root_handoff",
+  "rootMediaAcceptanceState": "model_revision_accepted",
   "specifiedModel": "Revenant_Natural",
   "modelFrameCount": 685,
   "modelVisibleGlobalFrames": [
@@ -106,5 +106,6 @@
     18194
   ],
   "modelDriver": "Retained v06 voice PCM RMS, official Core; blink/head/breath scripted; no camera/human tracking",
-  "modelAdditionIssue": 141
+  "modelAdditionIssue": 141,
+  "rootCanonicalPreparationSha256": "a8fc58c2f3d71e0e2596c7dab1a160ae66ee47d29ba6264c4693b3ece5d2d715"
 }

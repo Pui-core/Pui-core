@@ -33,3 +33,5 @@ Issue97の600f実装と同一SHAのAvatarCore.javaを再利用しMIT noticeを�
 静止画像と連続frame sheetの目視、技術検査、Rootのメディア受入、ownerの創作採用、投稿後の成果は別である。全編通し視聴・主観試聴は未実施。共有GUI/lease/公開操作0。local finalはRoot次公開用に保持する。
 
 完成2本の全AVdecode0、全AAC28430packetの時刻含むv06同一、最終連続画像、NAS2SHA/直接decode0を確認した。NAS：2026-10-29/エンバーウェイク/0503_芯石5コース_モデル追加_v07/。Coreのgeometry/UV/maskを既存CPU三角形サンプラーで描画し、VTSのGPU/physics描画を再現したとは主張しない。
+
+Rootメディア受入：[管理141のAPPROVE](https://github.com/Pui-core/-/issues/141#issuecomment-6479380594)。canonical準備票SHA `a8fc58c2f3d71e0e2596c7dab1a160ae66ee47d29ba6264c4693b3ece5d2d715`。公開/予約はRootの別工程で、ここでは未実施。
