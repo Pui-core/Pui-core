@@ -1,6 +1,6 @@
 # ScateRush132：実公開のメタデータ確認
 
-2026-10-28 21:50:22 JSTにRootが取得した[公式公開ページ](https://www.tiktok.com/@prop_pui/video/7701370032986524946)の匿名HTMLを照合。detail statusCode0、ID `7701370032986524946`、author `prop_pui`、`privateItem=false` を確認した。
+Rootの2026-10-28 21:50:22 JSTの確認票と、取得済み[公式公開ページ](https://www.tiktok.com/@prop_pui/video/7701370032986524946)の匿名HTMLを照合。detail statusCode0、ID `7701370032986524946`、author `prop_pui`、`privateItem=false` を確認した。
 
 公開itemの `createTime=1793157300` は **2026-10-28 12:15 JST**。予定時刻と一致するが、公開時刻の根拠は予定票ではなく公式公開itemのtimestamp。実際に12:15の画面を監視していたとの主張ではない。
 
