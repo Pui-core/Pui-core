@@ -1,0 +1,53 @@
+{
+  "issue": 144,
+  "phase": "Uploaded private editor; caption repair and audio eligibility pending",
+  "uploadedAssetTicketSha256": "aa27affd8fbd624eeb099dd7ef8bb465cbbbff2caf3e43b41a0707028f814004",
+  "sourceVideoSha256": "e683ad00bad973a09456fd49895f8eddcde884be9c37f2ae5dca8bbaa4935592",
+  "observedControls": {
+    "captionComboBoxRid": "42,51187480,4,-11363",
+    "captionValuePatternAvailable": true,
+    "editButtonRid": "42,51187480,4,-11496",
+    "nativeMusicButtonRid": "42,51187480,4,-11499",
+    "nativeMusicButtonName": "楽曲",
+    "nativeMusicInitiallyOffscreen": true,
+    "evidence": "Root reported the native all-tree snapshot at 2026-10-28T22:01:57Z, not inferred from the visible-only reader."
+  },
+  "captionObservedProblem": {
+    "readAtUtc": "2026-10-28T22:03:35Z",
+    "rootReportedValueSetAppendedToStem": true,
+    "rootReportedLength": 198,
+    "rootReportedLinebreaksFlattened": true,
+    "byteExactReplacementClaimed": false,
+    "repairComplete": false,
+    "evidence": "Root's live caption report. Writer did not run value input; final replacement/semantic normalization requires subsequent native readback."
+  },
+  "openerPrepared": {
+    "source": "source/open-native-music144.ps1",
+    "sha256": "4b643d548d838ab5ccb8aaf1872caea3ef0746f20020a6477f5be202b5a750fe",
+    "actions": ["read", "openNativeMusic"],
+    "utf8Bom": true,
+    "windowsPowerShellParserErrors": 0,
+    "embeddedCSharpCompile": "passed",
+    "nativeFunctionsInvokedByWriter": 0,
+    "independentStaticReview": "missyou_finish reviewed matching SHA in full, no mandatory findings; no execution/GUI/edits",
+    "targetRid": "42,51187480,4,-11499",
+    "scrollIntoViewCallsMaximum": 1,
+    "profileExpansionCallsMaximum": 2,
+    "invokeCallsMaximum": 1,
+    "intentMode": "CreateNew once, fresh own link/native asset/target checks after scroll and before Invoke",
+    "captionExactMatchAddedAsGate": false,
+    "rootExecutionRecorded": false,
+    "reuploadAllowed": false,
+    "publicationAllowed": false
+  },
+  "nativeMusicSelected": false,
+  "nativeMusicJpCommercialUseVerified": false,
+  "actualBeatAlignmentVerified": false,
+  "wholeListeningVerified": false,
+  "writerGuiActions": 0,
+  "writerLeaseReads": 0,
+  "rawUiCopied": false,
+  "authenticationCopied": false,
+  "posted": false,
+  "sourcePrMustStayDraftUntilLiveBoundary": true
+}

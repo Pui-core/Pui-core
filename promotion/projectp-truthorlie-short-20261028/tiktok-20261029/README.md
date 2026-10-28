@@ -62,3 +62,19 @@ Rootの06:30:12のカタログ読取はofficial sound-library、同じ実測Doc�
 Rootが「使い方」を開くとページheaderが隠れたため、別の `source/usage-modal144.ps1` を用意した。`readUsage` 一種類だけ、観測済みtitle18497/OK18502の完全名・可視を確認し、same newwindow/tab/Docとofficial sound-library・5alias・assetのguardを維持する。Group/Image/Paneのmetadataまで読むが、OKのInvokeやscrollも持たない。このmodal限定の読取条件をuploadやmedia操作へ転用しない。検査は `qa/catalog-readers-validation.json` 。ライセンスの本文やJP範囲は実表示の確認待ち。
 
 writerはRoot CLIの既存Sourceとmetadata-onlyのbefore票のSHA一致、私有intentの必要な非秘密fieldsだけを読取確認した。新窓のlive UIA/lease/起動はRoot専管。Rootの実観測をwriter自身のGUI実行済みと扱わない。
+
+## 第3段階：標準ファイルダイアログ
+
+SourceのPRとLinux worktreeを今回の実工程の区切りまでDraftで保持する。準備だけで小分けのmerge/削除を繰り返さない。Rootが通常のアップロード導線へ戻るとサーバーが`from`/`tab`を付けたため、公式https/www host/pathは固定したまま、queryキー2件以内をこの2種類に限定する。query値・認証は記録しない。Rootのheader/選択helperのSourceは`source/root-*.ps1`に保存。
+
+Rootは06:46:58に新窓のexact本人hrefを確認し、実測の動画選択ボタン18574を一度Invokeした。新窓をownerとする標準#32770（62789604/PID48244/Session1）を06:52:18のprobeで確認。Edit1148とOpen1、filename hostはnativeに存在するが、UIAでは全てPaneでValue/Invoke Patternが無かった。旧69024の子UIやフォルダー一覧は読んでいない。詳細は`qa/filepicker144.json`。
+
+`source/filepicker-probe144.ps1`は凍結own-before ticket、asset、新窓/tab/Docとofficial upload originを結び、標準ダイアログのowner chain・PID/session/birthと標準控件のmetadataだけを読む。ファイル名の値やディレクトリ内容、入力経路はない。
+
+Rootが標準Win32メッセージによる制御を明示選択したため、`source/filepicker-control144.ps1`は同じticketと実probeのSHA、実測dialog/控件/親class・ID・所有・可視有効・ES_READONLY=0へ固定する。`read`はWM_GETTEXTの結果をempty/desired/otherに分類し全文を返さない。`set`はempty時だけWM_SETTEXT一回、desired時は再設定せず、完全readbackを確認。otherは上書きしない。`open`はdesiredとfresh guard、CreateNewの一回添付意図票、再確認の後BM_CLICKを一回送る。各メッセージは2秒のSendMessageTimeoutWで送り、focus/global input/公開の経路は持たない。送信とアップロード成功は別で、Rootのnative読戻しが必要。
+
+writerはprobe/controlのWindows Parserと固定C# compileだけを実行し、native呼出・GUI・lease・ファイル入力は0。本人確認ticketに任意の短い失効を追加しておらず、同じ所有modalの継続中でも、期限切れのlease窓では操作しない。音源のJP商用範囲・実選曲と投稿は引き続き未完了。
+
+Rootが06:57にread→set一回と完全readback→Openメッセージ一回を実行し、06:59:03のnative画面でv10ファイル名と5.8MBアップロード完了を確認した。ローカルSHAと凍結dialogの送信・native表示を対応付ける証跡であり、プラットフォーム再encode後のbyte同一性を検証したものではない。再添付やOpen再送はしない。
+
+`source/open-native-music144.ps1` はアップロード済みticket aa27とnative filename/completeを照合し、Rootの実測した楽曲ボタン11499だけを標準ScrollItemで表示→fresh本人リンク/asset確認→CreateNew意図→再確認→Invoke一度で開く。`read` は作用0。profileの標準Expandは必要時最大2回で、OS focus/global input、曲採用、再アップロード、公開経路はない。caption修復は別工程なので、このprivate editor移動へcaption一致gateを追加しない。音源のJP範囲や選曲を確認済みとはしない。
