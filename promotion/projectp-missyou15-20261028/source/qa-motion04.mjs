@@ -1,0 +1,12 @@
+import { file, np, FP, FF, EC, FC, PC, run, parse, save, digest } from './native.mjs';
+const v=file('videos/missyou15-motion04-voice.mp4');
+const p=await run(FP,['-v','error','-show_entries','format=duration:stream=codec_name,codec_type,width,height,r_frame_rate,sample_rate,channels','-of','json',np(v)],'motion04-probe.json');
+const metadata=parse(p.stdout);if(!(Number(metadata.format?.duration)>=13.1&&Number(metadata.format?.duration)<13.4))throw Error('Unexpected duration');
+await run(FF,['-y','-v','error','-i',np(v),'-f','null','-'],'motion04-decode.json');
+await run(FF,['-y','-v','error','-i',np(v),'-vf','fps=1,scale=270:480,tile=5x3:nb_frames=15','-frames:v','1','-threads','1',np(file('qa/motion04-final-contact.png'))],'motion04-contact.json');
+await run(FF,['-y','-v','error','-ss','6.4','-t','1.2','-i',np(v),'-vf','fps=10,scale=270:480,tile=4x3:nb_frames=12','-frames:v','1','-threads','1',np(file('qa/motion04-diary-contact.png'))],'motion04-diary-contact.json');
+await run(EC,['--project',np(file('projects/missyou15-motion04.ecproj')),'info','--json'],'motion04-ec-reopen.json');
+await run(FC,['--project',np(file('projects/missyou15-motion04.fcproj')),'inspect'],'motion04-fc-reopen.json');
+await run(PC,['convert',np(file('projects/diary-anonymized.pcraft')),np(file('qa/motion04-pc-reopen.png')),'--format','png'],'motion04-pc-reopen-convert.json');
+save('qa/motion04-quality-summary.json',{videoSha256:await digest(v),sourceClipSha256:await digest(file('media/diary-transition-safe.mp4')),duration:Number(metadata.format.duration),streams:metadata.streams,allAvDecoded:true,sourceFramesReviewed:36,privacy:'source crop and upper fixed mask reviewed; final contact review needed',sound:'voice only, TikTok sound not selected',wholeDirectWatch:false,wholeSubjectiveListen:false,tiktokNativePreview:false,published:false});
+console.log('AV decode, contacts and 3Craft re-open complete');
