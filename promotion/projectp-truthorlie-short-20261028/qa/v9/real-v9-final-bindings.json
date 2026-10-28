@@ -1,0 +1,57 @@
+{
+  "duration": 19.2,
+  "frames": 576,
+  "fps": 30,
+  "size": [
+    1080,
+    1920
+  ],
+  "speaker": "VOICEVOX:玄野武宏",
+  "nativeEffectCraftRendered": true,
+  "nativeFilmCraftExported": true,
+  "effectcraftSha256": "ca4436e94920851d7dd237da27dc0313f5580539c69ab612058a7530ccd52301",
+  "pictureSha256": "3cdeb3d6699af1b40a3e24bb0c1babbdfd11582d892851289cbcfb39c45fee18",
+  "bindings": [
+    {
+      "variant": "voice",
+      "video": "videos/truthorlie-real-v9-voice.mp4",
+      "sha256": "41b0ac8828b01342f7f895d73abde7672be4a190dfc08e867e7a398b6f00a90a",
+      "filmcraftSha256": "654699c29fd43ee96fa9e21c1901494498ce77af6176e0ec49fa4cf4feaf2843",
+      "audioTracks": [
+        {
+          "file": "narration-real-v9.wav",
+          "sha256": "a8052a999efb483db9c2209f559b315907ed2f460b227839d1f6b4f996f4adcf"
+        },
+        {
+          "file": "sfx-real-v9.wav",
+          "sha256": "1e352d7fcc2ad9b59a99017b400c70152ae12b15ef7e7cb41e9fe53e7af9b68e"
+        }
+      ],
+      "offlineMedia": []
+    },
+    {
+      "variant": "bgm",
+      "video": "videos/truthorlie-real-v9-bgm.mp4",
+      "sha256": "be3f9162f922dc3ab404eff56432b47dfa6f5e6bca72887a1e78aee19b7838da",
+      "filmcraftSha256": "dd1360ed993523a76ce9fb942d6e7ef4259c429c1d25cbb38ad896dcf9927b14",
+      "audioTracks": [
+        {
+          "file": "narration-real-v9.wav",
+          "sha256": "a8052a999efb483db9c2209f559b315907ed2f460b227839d1f6b4f996f4adcf"
+        },
+        {
+          "file": "sfx-real-v9.wav",
+          "sha256": "1e352d7fcc2ad9b59a99017b400c70152ae12b15ef7e7cb41e9fe53e7af9b68e"
+        },
+        {
+          "file": "musicbed-real-v9.wav",
+          "sha256": "82a14a3f449a669f598569ae21a452944121561a7f0f19a95b55cb1b07904aff"
+        }
+      ],
+      "offlineMedia": []
+    }
+  ],
+  "wholeSubjectiveListen": false,
+  "wholeRealtimeWatch": false,
+  "published": false
+}

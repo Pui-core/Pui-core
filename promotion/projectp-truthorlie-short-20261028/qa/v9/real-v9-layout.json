@@ -1,0 +1,190 @@
+{
+  "comp": 16,
+  "boxes": [
+    {
+      "name": "Hook eyebrow",
+      "text": "嘘か誠か / この回の配点は1点",
+      "a": 0,
+      "b": 3.2,
+      "x": 500,
+      "y": 220,
+      "width": 401.87939453125,
+      "height": 28.8583984375
+    },
+    {
+      "name": "Hook headline",
+      "text": "はずした一票。得点は？",
+      "a": 0,
+      "b": 3.2,
+      "x": 500,
+      "y": 325,
+      "width": 789.646484375,
+      "height": 68.0380859375
+    },
+    {
+      "name": "Five eyebrow",
+      "text": "通常回の2人例",
+      "a": 3.2,
+      "b": 5.6,
+      "x": 500,
+      "y": 220,
+      "width": 191.3603515625,
+      "height": 26.5078125
+    },
+    {
+      "name": "Five headline",
+      "text": "5回答に、嘘は1つ。",
+      "a": 3.2,
+      "b": 5.6,
+      "x": 500,
+      "y": 325,
+      "width": 642.4775390625,
+      "height": 66.3759765625
+    },
+    {
+      "name": "Vote eyebrow",
+      "text": "投票するのは 操作例AA",
+      "a": 5.6,
+      "b": 8.4,
+      "x": 500,
+      "y": 220,
+      "width": 312.95361328125,
+      "height": 26.06884765625
+    },
+    {
+      "name": "Vote headline",
+      "text": "②に投票。",
+      "a": 5.6,
+      "b": 8.4,
+      "x": 500,
+      "y": 325,
+      "width": 321.7265625,
+      "height": 67.568359375
+    },
+    {
+      "name": "Reveal eyebrow",
+      "text": "同じラウンドの実結果",
+      "a": 8.4,
+      "b": 10.4,
+      "x": 500,
+      "y": 220,
+      "width": 287.564453125,
+      "height": 26.26708984375
+    },
+    {
+      "name": "Reveal headline",
+      "text": "でも、嘘は⑤。",
+      "a": 8.4,
+      "b": 10.4,
+      "x": 500,
+      "y": 325,
+      "width": 471.60546875,
+      "height": 68.3994140625
+    },
+    {
+      "name": "Score eyebrow",
+      "text": "この回は全員不正解",
+      "a": 10.4,
+      "b": 13.6,
+      "x": 500,
+      "y": 220,
+      "width": 257.6015625,
+      "height": 25.87060546875
+    },
+    {
+      "name": "Score headline",
+      "text": "出題側に、+1点。",
+      "a": 10.4,
+      "b": 13.6,
+      "x": 500,
+      "y": 325,
+      "width": 580.943359375,
+      "height": 65.9423828125
+    },
+    {
+      "name": "Scoring setting",
+      "text": "配点1の通常回・この2人例の結果",
+      "a": 10.4,
+      "b": 13.6,
+      "x": 500,
+      "y": 1465,
+      "width": 474.06689453125,
+      "height": 28.6689453125
+    },
+    {
+      "name": "Two ways to play",
+      "text": "当てる。だます。",
+      "a": 13.6,
+      "b": 16,
+      "x": 500,
+      "y": 565,
+      "width": 440.2734375,
+      "height": 55.546875
+    },
+    {
+      "name": "Availability",
+      "text": "iPhoneで配信中",
+      "a": 16.2,
+      "b": 19.2,
+      "x": 735,
+      "y": 845,
+      "width": 350.77880859375,
+      "height": 41.859375
+    },
+    {
+      "name": "Store action",
+      "text": "App Storeで",
+      "a": 16.4,
+      "b": 19.2,
+      "x": 735,
+      "y": 955,
+      "width": 270.83203125,
+      "height": 41.916015625
+    },
+    {
+      "name": "Store query",
+      "text": "嘘か誠か を検索",
+      "a": 16.6,
+      "b": 19.2,
+      "x": 735,
+      "y": 1030,
+      "width": 319.04296875,
+      "height": 39.724609375
+    },
+    {
+      "name": "Actual screenshot note",
+      "text": "実アプリ1.03検証・架空回答",
+      "a": 16,
+      "b": 19.2,
+      "x": 280,
+      "y": 1540,
+      "width": 320.390625,
+      "height": 22.37109375
+    },
+    {
+      "name": "Voice credit",
+      "text": "声：VOICEVOX:玄野武宏",
+      "a": 16,
+      "b": 19.2,
+      "x": 500,
+      "y": 1620,
+      "width": 333.935546875,
+      "height": 25.375
+    },
+    {
+      "name": "Scope",
+      "text": "架空回答の自動操作例・映像の寄りと効果音は編集",
+      "a": 0,
+      "b": 19.2,
+      "x": 500,
+      "y": 1720,
+      "width": 574.5361328125,
+      "height": 23.25439453125
+    }
+  ],
+  "duration": 19.2,
+  "story": "One actual QA round, lie5/vote2/no correct voter/authorBB +1. UI is real; captions/crops/scale accents are editorial.",
+  "natural": "Static portrait only; no source voice-video timing reused.",
+  "projectSha256": "ca4436e94920851d7dd237da27dc0313f5580539c69ab612058a7530ccd52301",
+  "nominalBpm": 150
+}

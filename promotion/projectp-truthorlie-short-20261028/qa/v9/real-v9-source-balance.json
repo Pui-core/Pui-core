@@ -1,0 +1,52 @@
+{
+  "status": "VOICE_OVER_MUSIC_10DB_PLUS_EACH_PHRASE",
+  "cues": [
+    {
+      "id": "hook",
+      "voiceDbfs": -24.89535427994258,
+      "musicDbfs": -41.695903323864975,
+      "sfxDbfs": -72.59046938886888,
+      "voiceAboveMusicDb": 16.80054904392239
+    },
+    {
+      "id": "rule",
+      "voiceDbfs": -26.909384192009686,
+      "musicDbfs": -41.37745560983709,
+      "sfxDbfs": -69.26883450860356,
+      "voiceAboveMusicDb": 14.468071417827401
+    },
+    {
+      "id": "vote",
+      "voiceDbfs": -24.283401968120685,
+      "musicDbfs": -41.664865544628185,
+      "sfxDbfs": -52.84481560355815,
+      "voiceAboveMusicDb": 17.381463576507503
+    },
+    {
+      "id": "result",
+      "voiceDbfs": -20.587230583052825,
+      "musicDbfs": -42.72550547516679,
+      "sfxDbfs": -45.73128771553154,
+      "voiceAboveMusicDb": 22.138274892113966
+    },
+    {
+      "id": "title",
+      "voiceDbfs": -24.950439185664784,
+      "musicDbfs": -35.36479695770066,
+      "sfxDbfs": -71.52560646166856,
+      "voiceAboveMusicDb": 10.41435777203587
+    },
+    {
+      "id": "cta",
+      "voiceDbfs": -21.838553066286334,
+      "musicDbfs": -40.89670205537818,
+      "sfxDbfs": -53.93050440243318,
+      "voiceAboveMusicDb": 19.05814898909184
+    }
+  ],
+  "sourceVoiceSha256": "a8052a999efb483db9c2209f559b315907ed2f460b227839d1f6b4f996f4adcf",
+  "sourceMusicSha256": "82a14a3f449a669f598569ae21a452944121561a7f0f19a95b55cb1b07904aff",
+  "actualFinalAacBinding": "real-v9-final-check.json",
+  "numericalMeasurementOnly": true,
+  "subjectiveListen": false
+}
