@@ -20,3 +20,5 @@
 - 新FilmCraft２原本は新master参照へ更新し、８素材online。旧F原本の映像素材を参照し続けるので、v05制作領域も保持する。Rootアップロード用のlocalfinal２本を削除しない。
 
 全編通し視聴・主観試聴、公開後の成果は未実施。新規公開/GUI/lease操作は0。
+
+Rootの読み差戻し解除・メディア受入：[管理140のAPPROVE](https://github.com/Pui-core/-/issues/140#issuecomment-6473949337)。公開は未実施。canonical準備票SHAは`19a238059ad3ae3b7c8942375f204e79b951e655d6b098735e296410ccee24aa`。
