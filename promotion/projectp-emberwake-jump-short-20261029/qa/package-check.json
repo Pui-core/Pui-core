@@ -1,0 +1,35 @@
+{
+  "issue": 152,
+  "manifestSha256": "5239d3a9643f145b8a0b54d2928d59b37a525768db2c86c6dbb5812034f3ae1e",
+  "manifestEntries": 50,
+  "manifestHashesMatch": true,
+  "syntaxChecked": [
+    "audio.mjs",
+    "background.mjs",
+    "check-package.mjs",
+    "cover.mjs",
+    "curate.mjs",
+    "deliver.mjs",
+    "inspect-headers.mjs",
+    "picture.mjs",
+    "prepare.mjs",
+    "qa.mjs",
+    "rebalance-audio-v03.mjs",
+    "render.mjs",
+    "repair-headers.mjs"
+  ],
+  "nativeJsonParsed": 3,
+  "sourceBranch": "feature/issue-152-emberwake-jump-short",
+  "changedFilesWithinPrefix": true,
+  "scopeChangedFiles": [
+    "promotion/projectp-emberwake-jump-short-20261029/README.md",
+    "promotion/projectp-emberwake-jump-short-20261029/qa/package-manifest.json",
+    "promotion/projectp-emberwake-jump-short-20261029/qa/provenance.json",
+    "promotion/projectp-emberwake-jump-short-20261029/source/curate.mjs"
+  ],
+  "finalMp4InGit": 0,
+  "modelSdkOrVoiceAudioInGit": 0,
+  "sharedGui": 0,
+  "wholeRealtimeWatch": false,
+  "subjectiveListen": false
+}

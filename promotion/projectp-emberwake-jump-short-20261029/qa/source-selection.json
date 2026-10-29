@@ -1,0 +1,206 @@
+{
+  "at": "2026-10-29T11:38:28.630Z",
+  "verdict": "BEST_SINGLE_CANDIDATE_FOR_ROOT_VISUAL_ACCEPTANCE_NOT_PRODUCTION",
+  "concept": "同じ足場、短押しと長押しで届く高さが変わる",
+  "suggestedLengthSeconds": [
+    8,
+    12
+  ],
+  "notForcedTo15": true,
+  "source": {
+    "path": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/firstcut-04i/media/ep01-replay-controls01-game.mp4",
+    "bytes": 9231654,
+    "sha256": "c0b94ae3e559809216db5536c13f3ca4c9121fc2dd7b1630c91c2257df78eb86",
+    "tracks": [
+      {
+        "type": "vide",
+        "timescale": 15360,
+        "durationUnits": 998912,
+        "seconds": 65.03333333333333,
+        "samples": 1951,
+        "averageFps": 30
+      }
+    ],
+    "method": "read-only ISO BMFF metadata parse; no decode/ffprobe run"
+  },
+  "capture": {
+    "path": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep01-replay-controls01/capture.json",
+    "sha256": "adf5c1df5f58c84027be6c4d3718deb2c78e5ba331cd7bc7cdded59d6083a3fc",
+    "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+    "gameVersion": "0.12.0",
+    "input": "Ordinary Focus/Enter/Tab and movement/Space/X/E InputEventKey; no product setters or callbacks",
+    "audio": "Dummy; actual game audio not recorded"
+  },
+  "startCondition": {
+    "shortFrame": 196,
+    "holdFrame": 400,
+    "position": [
+      293.605224609375,
+      1123.92529296875
+    ],
+    "velocity": [
+      0,
+      0
+    ],
+    "floor": [
+      200,
+      1124,
+      104,
+      14
+    ],
+    "target": [
+      300,
+      1088,
+      104,
+      14
+    ],
+    "world": {
+      "collected": [
+        0
+      ],
+      "has_dash": false,
+      "hearths": [],
+      "switches": []
+    },
+    "positionExactlyEqual": true,
+    "velocityExactlyEqual": true,
+    "floorExactlyEqual": true,
+    "worldExactlyEqual": true,
+    "onFloorBoth": true
+  },
+  "ranges": [
+    {
+      "role": "short input and failed landing",
+      "framesInclusive": [
+        190,
+        230
+      ],
+      "secondsStart": 6.333333333333333,
+      "secondsEndExclusive": 7.7,
+      "actualPressFrame": 196,
+      "releaseFrame": 197,
+      "holdTicks": 1,
+      "firstObservedReturnFrame": 217,
+      "outcome": "falls1 and checkpoint x95/y1160; does not land target"
+    },
+    {
+      "role": "long hold and real target landing",
+      "framesInclusive": [
+        394,
+        432
+      ],
+      "secondsStart": 13.133333333333333,
+      "secondsEndExclusive": 14.433333333333334,
+      "actualPressFrame": 400,
+      "releaseFrame": 418,
+      "holdTicks": 18,
+      "firstObservedLandingFrame": 418,
+      "targetPosition": [
+        325.708129882812,
+        1087.99536132812
+      ],
+      "outcome": "target top y1088, observed y1087.99536/on_floor true/falls0"
+    }
+  ],
+  "imagesViewed": [
+    {
+      "frame": 196,
+      "path": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep01-replay-controls01/frames/frame-000196.png"
+    },
+    {
+      "frame": 202,
+      "path": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep01-replay-controls01/frames/frame-000202.png"
+    },
+    {
+      "frame": 213,
+      "path": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep01-replay-controls01/frames/frame-000213.png"
+    },
+    {
+      "frame": 225,
+      "path": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep01-replay-controls01/frames/frame-000225.png"
+    },
+    {
+      "frame": 400,
+      "path": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep01-replay-controls01/frames/frame-000400.png"
+    },
+    {
+      "frame": 410,
+      "path": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep01-replay-controls01/frames/frame-000410.png"
+    },
+    {
+      "frame": 418,
+      "path": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep01-replay-controls01/frames/frame-000418.png"
+    },
+    {
+      "frame": 426,
+      "path": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep01-replay-controls01/frames/frame-000426.png"
+    }
+  ],
+  "overlap": {
+    "issue133": {
+      "plan": "/home/pui/.claude/worktrees/Pui-core-issue-133/promotion/projectp-emberwake-failure-short-20261028/source/plan.json",
+      "sameRawSha256": true,
+      "declaredEvidenceFrames": [
+        0,
+        213,
+        219,
+        1923
+      ],
+      "sharedSelectedFrames": [
+        213,
+        219
+      ],
+      "existingQuestion": "落下後と一話再訪後の失った記憶1/15",
+      "newQuestion": "同じ足場からの押下長と実着地差",
+      "newInformation": "1tick対18tick、開始条件同値、長押しでの目標足場着地418"
+    },
+    "issue151": {
+      "manifest": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/source-assets-full-clean.json",
+      "ep01ReplayNotDeclaredAsInput": true,
+      "existingQuestion": "灯を運ぶ実ゲーム断片とクラファン開始の60秒PV"
+    },
+    "issue146": {
+      "storyboard": "/mnt/f/Videos/ProjectP-EMBERWAKE-DevStory-2026-10-29/devstory-v01/source/storyboard.json",
+      "existingJumpChapter": "32–214秒、別の固定足場/旧新実runtimeによる入力更新順とjump高さの制作秘話",
+      "newFormat": "開発版の通常ルートにある実足場での同条件2試行。横動画の短いコピー再投稿ではなく独立した操作の問い。",
+      "verificationScope": "declared source/storyboard and existing media list; not complete rendered-frame matching"
+    }
+  },
+  "visualFacts": [
+    "f196/f400は同じ足場右端で静止、位置速度/floor/worldは原票で完全一致",
+    "f202短押しは目標足場より低い位置、f213落下、f225復帰を実画像確認",
+    "f410長押しは高く上がり、f418/426で目標足場上に立つ実画像確認",
+    "フル画面にHUD・公園の文言・上側ルートがある。actor/出発足場/目標足場を残し上部を除くcrop設計が必要"
+  ],
+  "disclosure": [
+    "開発中の実画面、通常入力を自動化した検証収録",
+    "ゲーム音は未収録。編集SEを実ゲーム音と呼ばない",
+    "開発中/提供時期未定。2026年12月提供と断言しない",
+    "CF目標50万円/12月23日まで/本編提供時期未定はRootが今回実確認済みの文面へ委ねる"
+  ],
+  "unverified": [
+    "continuous final clip playback and listening",
+    "crop/portrait readability and camera matching",
+    "3Craft/native model/new audio/editing/export/NAS",
+    "actual social music/format/post metrics",
+    "raw end sections/COMPLETE are excluded by selected windows but final editorial output still needs review"
+  ],
+  "actions": {
+    "sourceEdit": 0,
+    "productEdit": 0,
+    "craft": 0,
+    "gui": 0,
+    "post": 0,
+    "newIssue": 0
+  },
+  "sessionReview": {
+    "path": "/mnt/e/knowleade/71_セッション振り返り/codex/01a1876e-2bcc-7be3-bf8a-2a0118c2074c_576a260a.md",
+    "version": 1,
+    "sha256": "d2c2df2d61dc0b81bd254bb1258982297eaa36c42a9ca4ac1050b48cdca9a9eb",
+    "readBackAt": "2026-10-29T11:41:26.940Z",
+    "fullActualMarkdownRead": true,
+    "cliExit": 0,
+    "commonChanged": [],
+    "policyRevision": "236c7c65659e488ed2e4fd9b9ef0d9a43bbe4ca9dff54c85353b2aab2a146b3f"
+  }
+}

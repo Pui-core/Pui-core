@@ -1,0 +1,143 @@
+{
+  "issue": 152,
+  "raw": {
+    "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/firstcut-04i/media/ep01-replay-controls01-game.mp4",
+    "sha256": "c0b94ae3e559809216db5536c13f3ca4c9121fc2dd7b1630c91c2257df78eb86",
+    "fps": 30,
+    "ordinaryInputAutomation": true,
+    "gameAudioRecorded": false
+  },
+  "capture": {
+    "file": "/home/pui/tmp/projectp-emberwake-longform-20261028/production/ep01-replay-controls01/capture.json",
+    "sha256": "adf5c1df5f58c84027be6c4d3718deb2c78e5ba331cd7bc7cdded59d6083a3fc",
+    "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+    "gameVersion": "0.12.0",
+    "ordinaryInputAutomation": true,
+    "productSetters": false
+  },
+  "comparison": {
+    "startPosition": [
+      293.605224609375,
+      1123.92529296875
+    ],
+    "startVelocity": [
+      0,
+      0
+    ],
+    "startFloor": [
+      200,
+      1124,
+      104,
+      14
+    ],
+    "targetFloor": [
+      300,
+      1088,
+      104,
+      14
+    ],
+    "short": {
+      "press": 196,
+      "release": 197,
+      "returnToCheckpoint": 217,
+      "checkpointPosition": [
+        95,
+        1160
+      ],
+      "checkpointFloor": [
+        32,
+        1160,
+        210,
+        48
+      ]
+    },
+    "hold": {
+      "press": 400,
+      "release": 418,
+      "targetLanding": 418
+    },
+    "horizontalReleaseFromStartFrames": 9,
+    "matchedHorizontalSamples": 18,
+    "matchedXDifference": 0,
+    "wallclockHudNotRta": true
+  },
+  "clips": [
+    {
+      "id": "short",
+      "start": 176,
+      "endExclusive": 217,
+      "outputFrames": 48,
+      "motionRate": 1,
+      "freezeTailFrames": 7
+    },
+    {
+      "id": "hold",
+      "start": 394,
+      "endExclusive": 433,
+      "outputFrames": 48,
+      "motionRate": 1,
+      "freezeTailFrames": 9
+    },
+    {
+      "id": "short-detail",
+      "start": 196,
+      "endExclusive": 214,
+      "outputFrames": 24,
+      "motionRate": 1,
+      "freezeTailFrames": 6
+    },
+    {
+      "id": "hold-detail",
+      "start": 400,
+      "endExclusive": 418,
+      "outputFrames": 24,
+      "motionRate": 1,
+      "freezeTailFrames": 6
+    },
+    {
+      "id": "landing",
+      "start": 418,
+      "endExclusive": 454,
+      "outputFrames": 36,
+      "motionRate": 1,
+      "freezeTailFrames": 0
+    }
+  ],
+  "crop": [
+    740,
+    430,
+    720,
+    650
+  ],
+  "model": {
+    "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/private/core-closing/natural-silent.mov",
+    "sha256": "21fdd74aa90391da2e40dc9310a21c11875b77b02f349c575a2c90c8e40d4af1",
+    "kind": "Reused actual CoreJNI 120-frame silent blink/idle, not newly performed motion or lip-sync",
+    "sourceRange": [
+      0.6,
+      2.6
+    ],
+    "globalRange": [
+      6,
+      8
+    ],
+    "mouthRange": [
+      0,
+      0
+    ],
+    "newMotion": false,
+    "lipSync": false
+  },
+  "overlap": {
+    "unposted133": "Same raw includes f213/219; different question about fall/memory. New creative compares held input and landing; frames disclosed.",
+    "published151": "Different demo raw; current ep01 replay not used",
+    "published146": "Mechanic discussion uses separate fixed-footing fixture; this is short actual comparison"
+  },
+  "providedDate": {
+    "demo": "2026-12 expected",
+    "mainGame": "unconfirmed",
+    "ownerLatest": true
+  },
+  "originalFilesPreserved": true,
+  "newRecording": 0
+}

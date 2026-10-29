@@ -1,0 +1,46 @@
+{
+  "issue": 152,
+  "at": "2026-10-29T12:29:27.6961363Z",
+  "action": "deliver",
+  "nasDirectory": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-29\\エンバーウェイク\\2135_押下で変わる跳躍_見出し音改_v03",
+  "consoleWindow": 0,
+  "foregroundBefore": 51187480,
+  "decoder": "C:\\ffmpeg\\bin\\ffmpeg.exe",
+  "decoderSha256": "83b7d64913f17eb1042dde8ce4384f7a820585e850ab4f99853a47a800275329",
+  "entries": [
+    {
+      "source": "F:\\Videos\\ProjectP-EMBERWAKE-Jump-2026-10-29\\jump-v01\\videos\\emberwake-jump-v03-bgm.mp4",
+      "variant": "bgm",
+      "nasDirectDecodeErrors": "",
+      "nasDirectDecodeExitCode": 0,
+      "bytes": 3003149,
+      "nasSha256": "9e1a38827ec67bdc59876bc4abc7627e8927c95960bc1a529d7332dcc607bbf2",
+      "sourceSha256": "9e1a38827ec67bdc59876bc4abc7627e8927c95960bc1a529d7332dcc607bbf2",
+      "copied": true,
+      "nasPath": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-29\\エンバーウェイク\\2135_押下で変わる跳躍_見出し音改_v03\\BGM版.mp4"
+    },
+    {
+      "source": "F:\\Videos\\ProjectP-EMBERWAKE-Jump-2026-10-29\\jump-v01\\videos\\emberwake-jump-v03-voice.mp4",
+      "variant": "voice",
+      "nasDirectDecodeErrors": "",
+      "nasDirectDecodeExitCode": 0,
+      "bytes": 3002942,
+      "nasSha256": "c669117064ac5c37f151ddf47d3869156c058634c525e01e3db65fcd36c2df11",
+      "sourceSha256": "c669117064ac5c37f151ddf47d3869156c058634c525e01e3db65fcd36c2df11",
+      "copied": true,
+      "nasPath": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-29\\エンバーウェイク\\2135_押下で変わる跳躍_見出し音改_v03\\声・効果音版.mp4"
+    }
+  ],
+  "mouseInput": 0,
+  "globalKeyInput": 0,
+  "foregroundOrFocusWrites": 0,
+  "posted": false,
+  "nasDirectoryFiles": [
+    "BGM版.mp4",
+    "声・効果音版.mp4"
+  ],
+  "foregroundAfter": 51187480,
+  "foregroundUnchanged": true,
+  "consoleWindowAfter": 0,
+  "finishedAt": "2026-10-29T12:29:29.8535273Z"
+}
