@@ -1,4 +1,61 @@
-# おさゆ配信Shorts：音声と字幕配置の修正版
+# おさゆ配信Shorts：話者ごとの左右字幕と書体
+
+
+管理: [字幕の再修正Issue153](https://github.com/Pui-core/-/issues/153)。v2は顔を避ける構造だけでは字幕品質を満たせず、ownerから再差し戻し。v3は指定2チャンネルと追加4チャンネルの実公開フレームを比較し、書体・多層の縁・短句・話者の左右を作り直した。元映像の人物位置をAIで確認したとは扱わない。
+
+## v3の字幕制作
+
+検証済みv2の字幕前run映像と、各BGM版の完成AACを使う。映像だけを再描画し、音声は各版からstream copyする。音声の取り直し・速度変更・再エンコードは行わない。
+
+```bash
+node restyle.mjs /absolute/private-v3-plan.json /absolute/revision-02 /absolute/revision-03/render preview
+node restyle.mjs /absolute/private-v3-plan.json /absolute/revision-02 /absolute/revision-03/render render
+node caption-regression.mjs
+node regression.mjs
+```
+
+private計画には、v2計画のJSON SHA256をbasePlanSha、書体ごとのfamily/path/sha256をfonts、各clipのspeakersを明示する。各字幕はspeakerを必須とし、fontTreatmentとemphasisで書体を選ぶ。元のspeaker引数が戻り値から落ちていた欠陥を繰り返さず、色から話者を推測しない。切り出し区間・速度がv2と違えば、描画前に拒否する。
+
+- おさゆは左、凸者は右の編集上の固定レーン。色と小さな話者名も固定し、同じ人の連続発話は同じ側へ置く。これは元映像での人物の左右位置を実見した結果ではない。
+- 主字幕は左端76/右端1004、中心y284。名前はy126。2行までの短い句を大きく置き、太い白内縁・話者色の外縁・黒外周を重ねる。字幕帯や英字ブランドは使わない。
+- 通常会話はKeifont、数字・強い短句はDela Gothic One。ためらう返答や弱い声量の感謝は851チカラヨワク、強い抗議や強まる反復だけ851チカラヅヨクを使う。静的に不揃いな字形であり、声の震えを検出したとは言わない。今回の最終版は全文の振動アニメーションを付けない。
+- Delaは字面が低いため、同じ字号を機械的に使わない。1行/2行の縦倍率を分け、実libass描画の輪郭で収まりを確認する。
+- 名前と2行本文が接触した初稿を修正。人物を含まない黒地の実描画から、本文の境界・名前との画素重複・映像領域への侵入を検査する。
+- 謝罪中に相手の反応字幕が出続ける箇所を、謝罪2句→反応へ分割。文脈と音声の相対比較を根拠とし、短い重複発話の話者や音素境界まで確定した扱いにはしない。
+- previewは映像をimportせず、矩形だけを描く。本番とpreviewのASS/plan/renderer SHAを記録し、旧previewを最終確認へ流用しない。フォントの出力先コピーもSHAを確認する。
+
+### v3最終出力の確認
+
+- 58字幕は通常40・強調11・柔らかい手書き5・強い手書き2。全話者レーンの不一致0、文字だけの確定プレビューを別担当も確認。
+- 本文の実輪郭下端は最大403px、映像開始432px。名前との実描画重複0。最終映像の全2,759フレームで字幕の元映像領域への描画差0。
+- 8本の全8,634 AAC packetsについて、データ・PTS/DTS・duration・skip_samples等とcodec/extradataがv2と一致。全5,518映像フレームの枚数・先頭0・30fpsのPTS、全8本の厳格AVdecodeを確認。
+- 完成receipt・検査前後・NASコピーのSHAを照合。元の音声を変更していないことの検証であり、声の人物同定や人間の聴感の確定とは区別する。
+
+
+## 書体の導入と出典
+
+ownerの導入許可に基づきLinuxのユーザーフォントへ取得・導入し、Windows FFmpegはfontsdirで同じ実ファイルを読む。公開Gitへフォント本体は同梱せず、作者の配布元と規約を制作記録へ保存する。
+
+| 書体 | 一次資料 | 今回の用途 |
+| --- | --- | --- |
+| Keifont | [すもももじ公式](https://font.sumomo.ne.jp/font_1.html)・Apache 2.0 | 通常の会話と話者名 |
+| Dela Gothic One | [Google Fonts公式/OFL](https://github.com/google/fonts/tree/main/ofl/delagothicone) | 数字、短い強調、見出し |
+| 851チカラヨワク / チカラヅヨク | [作者公式規約](https://pm85122.onamae.jp/851fontTerm.html) | 声の調子に合わせる手書き風 |
+
+指定例の正確なフォント名を同定したわけではない。スクリーンショットは不揃いな手書き字形の参考であり、アニメーションの証拠とはしない。
+
+## 追加の参照と検証範囲
+
+- [けんき指定チャンネルの例](https://www.youtube.com/shorts/aSLKpETTiQQ)：黒い上下、極太の装飾文字、黒と白の縁。
+- [V好きの一般人の例](https://www.youtube.com/shorts/bGstdRSAJMQ)：話者色の塗り、太い白内縁、色/黒外縁、短い1〜2行。
+- [V切り抜き日記](https://www.youtube.com/shorts/x7C5q9lClQc)、[ぶいすぽ博物館](https://www.youtube.com/shorts/zhO8D6JUmXs)、[ンデ](https://www.youtube.com/shorts/BuBiYTDScKc)：肉厚な書体、人物色と多層縁、短い句の切替を比較。
+- [にじさんじ愛好家](https://www.youtube.com/shorts/RZviroOj900)：黒余白は参考。字幕が小さいため主基準にはしない。
+
+公式storyboardは1秒間隔、公開縦画像は字体の補助として実見。元フォント名・細かなイージング・音声同期・再生数との因果は未同定。原動画・音源・画像は制作物へ流用していない。左右固定は今回のowner仕様であり、参考全chが左右振りをしているという報告ではない。
+
+数値検査とキャラ未読込の目視、実音声出力、ownerの創作採用、投稿後の効果は分ける。v3の音声はv2との全AAC packet/timestamp/extradata比較で確認し、元声の自然さの再評価には置き換えない。
+
+---
 
 管理: [修正Issue150](https://github.com/Pui-core/-/issues/150)、[旧制作Issue148](https://github.com/Pui-core/-/issues/148)。元動画・音声・発話全文・完成MP4は公開Gitへ入れず、NASへは動画だけを保存する。
 
