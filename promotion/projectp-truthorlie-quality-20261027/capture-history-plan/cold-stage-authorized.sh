@@ -1,12 +1,20 @@
 #!/bin/bash
 # Root-authorized COLD READ/BACKUP ONLY. No boot/GUI/record/install/shutdown commands.
 set -euo pipefail
-root=/Users/pui-mac-core/codex-install/projectp129-history-cold-20261027T1500Z
+# This stage is not a standalone entry point. The watchdog owns the whole process
+# group and its deadline before any mkdir, copy, ps, Ruby, or status-file IO.
+case "${PP129_RUN_ROOT-}" in /*/projectp129-cold-*) ;; *) exit 78;; esac
+case "${PP129_RUN_TOKEN-}" in ????????-????-????-????-????????????) ;; *) exit 78;; esac
+case "${PP129_WATCHDOG_PID-}" in ''|*[!0-9]*) exit 78;; esac
+test "${PP129_WORKER_PID-}" = "$PPID" || exit 78
+kill -0 "$PP129_WATCHDOG_PID" 2>/dev/null || exit 78
+root="$PP129_RUN_ROOT"
 old=/Users/pui-mac-core/codex-install/projectp121-truthorlie-20261027
 device=6FC6BC4F-4CD9-4946-83F6-944ABAE9D15E
 out="$root/receipts"
 mkdir "$out"
-mkdir "$root/active-cold.lock"
+# active-cold.lock was exclusively created by this run's guarded worker.
+test -d "$root/active-cold.lock"
 child=; birth=; needle=; hold=0; cleanup_mode=0
 finished=0; fresh_state_verified=0
 stop_at=$((SECONDS+600))
@@ -63,7 +71,8 @@ cleanup() {
  trap - EXIT HUP TERM INT
  cleanup_mode=1
  if test -n "$child";then stop_child || true;fi
- if test "$hold" = 0;then rmdir "$root/active-cold.lock" || rc=75;else rc=75;fi
+ # Keep the intent lock as a permanent single-use marker, including on failure.
+ if test "$hold" != 0;then rc=75;fi
  date -u '+%Y-%m-%dT%H:%M:%SZ' > "$out/finished-at.txt"
  printf '%s\n' "$rc" > "$out/stage.exit"
  printf 'finished=%s freshStateVerified=%s hold=%s sourceOverwrites=0 boot=0 gui=0 record=0 install=0 shutdown=0\n' "$finished" "$fresh_state_verified" "$hold" > "$out/terminal.txt"
