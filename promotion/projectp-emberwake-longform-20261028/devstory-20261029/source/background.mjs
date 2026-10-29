@@ -26,5 +26,5 @@ export async function run(exe,args,receipt,{input,env={},timeoutMs=180000,privat
     p.on('error',reject);p.on('close',code=>{clearTimeout(timer);const result={exe,args,pid:p.pid,started,ended:new Date().toISOString(),code,timedOut,stdout,stderr,privateDisplay,waylandUnset:true,sharedDesktopInput:0};if(receipt)save(receipt,result);if(code!==0||timedOut||(failOnScriptError&&/SCRIPT ERROR:|Parse Error:/.test(stdout+stderr)))reject(Error(JSON.stringify(result).slice(-3500)));else resolve(result);});
   });
 }
-export const native=(name,args,receipt,input)=>run(cli[name],args,receipt,{privateDisplay:true,input});
+export const native=(name,args,receipt,input,timeoutMs=180000)=>run(cli[name],args,receipt,{privateDisplay:true,input,timeoutMs});
 export const ff=(args,receipt)=>run(ffRoot+'/bin/ffmpeg',['-nostdin','-hide_banner','-loglevel','error','-threads','2','-filter_threads','2','-filter_complex_threads','2',...args],receipt,{env:{LD_LIBRARY_PATH:ffRoot+'/lib'}});
