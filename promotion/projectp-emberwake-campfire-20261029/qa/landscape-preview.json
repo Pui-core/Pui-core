@@ -56,5 +56,12 @@
     "fullRealtimePlayback": false
   },
   "published": false,
-  "nasDelivery": false
+  "nasDelivery": false,
+  "independentBoundedVisualReview": {
+    "source": "reference_review",
+    "actualEncodedImages": 6,
+    "scope": "First3shots and closing preview images only, not all60s or listening",
+    "mandatoryDefects": [],
+    "gameStoneCopyAndCtaVisible": true
+  }
 }
