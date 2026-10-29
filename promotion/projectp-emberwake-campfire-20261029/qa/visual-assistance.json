@@ -1,0 +1,39 @@
+{
+  "issue": 151,
+  "kind": "Separate-agent bounded image QA assistance, not a formal cross-engine PR approval",
+  "reviewer": "reference_review",
+  "vertical": {
+    "version": "v03",
+    "times": [
+      54.8,
+      55.6,
+      56.7,
+      57.9,
+      59.7
+    ],
+    "frames": 5,
+    "mainActorAboveCta": true,
+    "naturalDoesNotOccludeActorOrCopy": true,
+    "mouthClosedSeen": true
+  },
+  "landscape": {
+    "version": "preview-v02",
+    "encodedRepresentatives": 6,
+    "first3ShotsAndClosing": true,
+    "stoneActorAndCopyVisible": true,
+    "rightCtaAndLeftGameAndModelSeparated": true
+  },
+  "mandatoryDefects": [],
+  "notObservedInReviewedStillScope": [
+    "explicit solution sequence",
+    "exit name",
+    "COMPLETE",
+    "story ending"
+  ],
+  "notAssessed": [
+    "entire60second tempo",
+    "subjective audio",
+    "entire60second creative adoption",
+    "continuous blink"
+  ]
+}

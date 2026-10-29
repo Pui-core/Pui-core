@@ -1,0 +1,270 @@
+{
+  "issue": 151,
+  "mode": "full",
+  "file": "videos/emberwake-campfire-landscape-full-v02.mp4",
+  "sha256": "af647aefe9073b2d1c55ad3b132048a6b911421b35d989a58c09e77e9e32a7f6",
+  "duration": 60,
+  "width": 1920,
+  "height": 1080,
+  "fps": "30/1",
+  "frames": "1800",
+  "fullAVDecode": true,
+  "decodeDiagnostics": "",
+  "independentLandscapeComposition": true,
+  "verticalFrameUsed": false,
+  "native": {
+    "effectcraft": {
+      "file": "projects/full-v02.ecproj",
+      "sha256": "07a9cf3808258a18e8bbe15e05d1f67287301411f1d425fc6d3917fb748e0b6d"
+    },
+    "filmcraft": {
+      "file": "projects/full-v02.fcproj",
+      "sha256": "67f0eb8a06badaea471b8a6e4865b7f3e709648342da92566db4f4443b0c68a1"
+    }
+  },
+  "music": {
+    "sameCipher": true,
+    "sameBeatAndOffset": true,
+    "originalAacCopy": true
+  },
+  "core": {
+    "global": [
+      56.4,
+      60
+    ],
+    "actualIn": 56.4,
+    "mouthAlways0": true,
+    "sourceFrames": 108,
+    "sha256": "21fdd74aa90391da2e40dc9310a21c11875b77b02f349c575a2c90c8e40d4af1"
+  },
+  "subjectiveListen": false,
+  "actualOutputVisualReview": {
+    "authorViewedAll26SceneRepresentatives": true,
+    "consecutiveTransitions": [
+      {
+        "at": 1.6,
+        "frames": 22
+      },
+      {
+        "at": 54.4,
+        "frames": 22
+      },
+      {
+        "at": 56.4,
+        "frames": 22
+      }
+    ],
+    "actorStoneAndCopyClear": true,
+    "ctaAndNaturalNonOcclusion": true,
+    "noSolutionOrderExitCompleteEndingSeen": true,
+    "normalIndividualArrowsAndEUiRemain": true,
+    "scope": "Selected promotional fragments only; no complete-game spoiler assessment.",
+    "finalEncodedModelBlinkClosedAt58OpenAt59_7": true
+  },
+  "published": false,
+  "nasDelivery": false,
+  "actualPtsAndMusicProof": {
+    "all1800PtsUniform30": true,
+    "audio": {
+      "originalAacPackets": 2814,
+      "allPayloadAndPtsIdentical": true,
+      "reuseMeasuredLufs": -15.9,
+      "reuseTruePeakDbFS": -2,
+      "all60OneSecondBinsNonzeroInherited": true
+    }
+  },
+  "nativePlayback": {
+    "projectSha256": "07a9cf3808258a18e8bbe15e05d1f67287301411f1d425fc6d3917fb748e0b6d",
+    "readDidNotChangeProject": true,
+    "remapLayers": 27,
+    "keys": 54,
+    "allOnlyTwoEndpoints": true,
+    "coreSource": [
+      0,
+      3.6
+    ],
+    "coreGlobal": [
+      56.4,
+      60
+    ],
+    "all26ShotStartAndEndMatch": true
+  },
+  "visual": {
+    "authorViewedAll26SceneRepresentatives": true,
+    "consecutiveTransitions": [
+      {
+        "at": 1.6,
+        "frames": 22
+      },
+      {
+        "at": 54.4,
+        "frames": 22
+      },
+      {
+        "at": 56.4,
+        "frames": 22
+      }
+    ],
+    "actorStoneAndCopyClear": true,
+    "ctaAndNaturalNonOcclusion": true,
+    "noSolutionOrderExitCompleteEndingSeen": true,
+    "normalIndividualArrowsAndEUiRemain": true,
+    "scope": "Selected promotional fragments only; no complete-game spoiler assessment.",
+    "finalEncodedModelBlinkClosedAt58OpenAt59_7": true
+  },
+  "sceneRepresentatives": [
+    {
+      "id": "First leap",
+      "at": 0.8,
+      "sha256": "206feeb83537df7f815a45ed5a5c98a4f78e801af388ff7a4ce642b2b41beb73"
+    },
+    {
+      "id": "Carry detail",
+      "at": 2,
+      "sha256": "85b48f54034fb205eca26a4505269b69b10ca6c2aa452f8ba121550917a46d0b"
+    },
+    {
+      "id": "Commit jump",
+      "at": 3.2,
+      "sha256": "65d7d968d6421751ca1a69db99c52a489cb0137e011d304a398a52904fc712e8"
+    },
+    {
+      "id": "Step into moon",
+      "at": 4.8,
+      "sha256": "8ff1b70330f6f30732fc16725476556ac641f7f8d61ff05d8ab756d4ed41e453"
+    },
+    {
+      "id": "World reveal",
+      "at": 7.2,
+      "sha256": "f64ed237df1231df386201c8b97bdde51f7ee6425100ba61b5c7a0037c974120"
+    },
+    {
+      "id": "Wordmark motion",
+      "at": 9.6,
+      "sha256": "2eac0d163719893c2be69236358896f4b5d6fe702331beccae12f3e955aa2cbc"
+    },
+    {
+      "id": "Beat closeup",
+      "at": 10.8,
+      "sha256": "11675ab136ca49790bcece6a03b895e25811ab61faab197a9cc2563ccbc8857e"
+    },
+    {
+      "id": "Beat ascent",
+      "at": 12,
+      "sha256": "e4a13e883d0ad5ebd7dbbab245e08d3e657e65ff2a2a381e3df0e88dce9b5c76"
+    },
+    {
+      "id": "Crowdfunding begins",
+      "at": 14,
+      "sha256": "a023103145d7586c089437fad8088e6e667255381e59659892bab8e9667619ec"
+    },
+    {
+      "id": "Carry in motion",
+      "at": 16.8,
+      "sha256": "231ff88b88e3458b14e8ca03eedf415c1f8ee67a6ae927134943db4a3dc0c5fd"
+    },
+    {
+      "id": "Choose your foothold",
+      "at": 20,
+      "sha256": "bdea9c02904479c016a7012394ae96f55d520d46023daae485619738d0acc301"
+    },
+    {
+      "id": "Aqueduct climb",
+      "at": 23.2,
+      "sha256": "a6757335be40d3dea78df17bf495e578b8915810abae1160281c887128888703"
+    },
+    {
+      "id": "Wind timing",
+      "at": 26.4,
+      "sha256": "1d545053d88b17ce521bc4a4f0fef99e0e52ad44bb2b747fbfab314b213ef758"
+    },
+    {
+      "id": "Stone and body together",
+      "at": 29.6,
+      "sha256": "dc3e21a66df81958aa6db94bf933399eddaed8e32a556eaedc37ab167cab8555"
+    },
+    {
+      "id": "Moonward reprise",
+      "at": 32.8,
+      "sha256": "b65a999fe41d0dc130656cc2418d79f191bb1e76eff5c45027c9e176d3f816d0"
+    },
+    {
+      "id": "Aqueduct close detail",
+      "at": 36,
+      "sha256": "a71bde850ce1f97b969377caac02b9136dea449c2a2ce7cac3360a8be9eafad1"
+    },
+    {
+      "id": "Wind and light",
+      "at": 39.2,
+      "sha256": "c798a110aa4e043a9d09f59fc977cc2749a06267b74715ea4a8478f1ab61e299"
+    },
+    {
+      "id": "Support main-game creation",
+      "at": 42.4,
+      "sha256": "7ab5f0e67f17eab2baac9277b339242bc96b3273d36e797cf243c658f1dd97a5"
+    },
+    {
+      "id": "Cut rhythm one",
+      "at": 44.8,
+      "sha256": "a0b69b64b44cd40d84dffb6100a0feacb4178ea6a5afeb40615056c986548d40"
+    },
+    {
+      "id": "Cut rhythm two",
+      "at": 46.4,
+      "sha256": "924bad0772b4cdef6a9215d8d7be621ed0d95525b1fd0781c7eeb7e70edeab40"
+    },
+    {
+      "id": "Cut rhythm three",
+      "at": 47.6,
+      "sha256": "c04e719388a7355277eb17b1fc7a5a174ab5c3a0e2c2045df1c7506a816cd132"
+    },
+    {
+      "id": "Cut rhythm four",
+      "at": 48.4,
+      "sha256": "8d40eb88a6f2c515c657c8d503428297f585ac70fe69c192dab431dff53585b7"
+    },
+    {
+      "id": "Game identity",
+      "at": 50.4,
+      "sha256": "22f6f5db42cbd510f704f4a3750e922c28cee4abaafb4955d420f1a187018c78"
+    },
+    {
+      "id": "Campaign starts",
+      "at": 53.2,
+      "sha256": "be64ec5d4a2daae6a7250312808d43fdfc450714c986d5a12b5abab4588e43d2"
+    },
+    {
+      "id": "Support destination first",
+      "at": 56,
+      "sha256": "59cca91f94c69377d4478081ec84ad9875cf7ab6e51f3f8e9f226dde78ff93fe"
+    },
+    {
+      "id": "Support destination final",
+      "at": 58.8,
+      "sha256": "d96d5596563290d26330a164d4ce6c347a40dc675926fb0dafd7db975c102ce6"
+    }
+  ],
+  "transitions": [
+    {
+      "at": 1.6,
+      "frames": 22
+    },
+    {
+      "at": 54.4,
+      "frames": 22
+    },
+    {
+      "at": 56.4,
+      "frames": 22
+    }
+  ],
+  "fullRealtimePlayback": false,
+  "fullSubjectiveListen": false,
+  "independentBoundedVisualReview": {
+    "source": "reference_review",
+    "actualEncodedImages": 6,
+    "scope": "First3shots and closing preview images only, not all60s or listening",
+    "mandatoryDefects": [],
+    "gameStoneCopyAndCtaVisible": true
+  }
+}

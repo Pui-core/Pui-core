@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import {stage,native,ff,hash,save} from './background.mjs';
+const root=stage+'/landscape-v01',image=root+'/covers/game-frame.png',pc=root+'/covers/campfire-landscape-cover.pcraft';
+if(fs.existsSync(pc))throw Error('Preserve existing cover');
+const game=root+'/media/wind-transfer-air.mp4';
+await ff(['-ss','1.2','-i',game,'-frames:v','1',image],root+'/qa/cover-frame.json');
+const cmds=[['file.placeEmbedded',{path:image,scale:100,center:[960,520],fit:false,smartObject:true}],['shape.create',{kind:'rect',rect:[0,0,1920,220],fill:'#090d13',name:'Title field'}],['shape.create',{kind:'rect',rect:[0,900,1920,180],fill:'#090d13',name:'Launch field'}],['shape.create',{kind:'rect',rect:[100,204,1720,4],fill:'#dcab71',name:'Ember rule'}],['type.create',{x:100,y:145,text:'EMBERWAKE',font:'Meiryo',style:'Bold',weight:700,size:138,color:'#f6dfb5',name:'Game name'}],['type.create',{x:1300,y:142,text:'灰の灯',font:'Meiryo',style:'Bold',size:68,color:'#d8aa70',name:'Japanese title'}],['type.create',{x:100,y:1020,text:'クラファン開始',font:'Meiryo',style:'Bold',weight:700,size:86,color:'#f6dfb5',name:'Launch'}],['type.create',{x:1090,y:970,text:'目標50万円 / 2026.12.23まで',font:'Meiryo',style:'Bold',size:37,color:'#d8aa70',name:'Campaign condition'}],['type.create',{x:1090,y:1030,text:'CAMPFIREで EMBERWAKE を検索',font:'Meiryo',style:'Bold',size:34,color:'#bbb6ae',name:'Search CTA'}],['type.create',{x:1260,y:865,text:'開発中の実ゲーム映像',font:'Meiryo',style:'Bold',size:25,color:'#bbb6ae',name:'Development label'}]];
+const args=['run','--new',JSON.stringify({width:1920,height:1080,name:'EMBERWAKE CAMPFIRE landscape cover',background:'#090d13',resolution:72})];for(const[id,p]of cmds)args.push('--cmd',id,'--params',JSON.stringify(p));
+await native('photocraft',[...args,'--out',pc],root+'/qa/pc-cover-save.json');
+const info=await native('photocraft',['info',pc,'--compact'],root+'/qa/pc-cover-reopen.json'),j=JSON.parse(info.stdout);
+if(j.warnings.length||j.layers.filter(l=>l.kind==='Type').some(l=>l.bounds[0]<0||l.bounds[1]<0||l.bounds[0]+l.bounds[2]>1920||l.bounds[1]+l.bounds[3]>1080))throw Error('Cover text clipping');
+for(const format of ['png','jpg'])await native('photocraft',['convert',pc,root+'/covers/campfire-landscape-cover.'+format,'--format',format],root+'/qa/pc-cover-'+format+'.json');
+await ff(['-i',root+'/covers/campfire-landscape-cover.png','-vf','scale=320:180','-frames:v','1',root+'/covers/campfire-landscape-cover-320.png'],root+'/qa/cover-small.json');
+save(root+'/qa/cover.json',{issue:151,canvas:[1920,1080],game:{file:game,sha256:hash(game),at:1.2,frameSha256:hash(image)},photocraft:{file:pc,sha256:hash(pc),savedReopenedExported:true},outputs:Object.fromEntries(['png','jpg'].map(format=>[format,{file:root+'/covers/campfire-landscape-cover.'+format,sha256:hash(root+'/covers/campfire-landscape-cover.'+format)}])),actualVisualReview:'PENDING',imageGenerated:false});
