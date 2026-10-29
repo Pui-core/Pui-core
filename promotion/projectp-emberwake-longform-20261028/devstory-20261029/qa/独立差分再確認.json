@@ -1,0 +1,44 @@
+{
+  "issue": 146,
+  "reviewer": "reference_review",
+  "scope": "bounded static actual-image/actual-remap verification; not full final MP4 acceptance",
+  "findings": [
+    {
+      "ids": [
+        "J09 second jump metric",
+        "J11 box text bounds",
+        "J12 title-axis overlap"
+      ],
+      "movieSha": "537fe7a008f34905c9276cf84b9d6a1742521462369df815c528e5b7184336b5",
+      "localFramesAtSeconds": [
+        123,
+        151,
+        165
+      ],
+      "result": "3 prior findings resolved in actual repaired movie frames",
+      "limitations": "three stills; no listening/whole-playback/growth claim"
+    },
+    {
+      "ids": [
+        "C04 Q release",
+        "C05 E reacquisition"
+      ],
+      "movieSha": "bce4ca5b4bd429be8d45a5bfcd45f95d71634bf6991fe6face50d1e73e3b8c14",
+      "localFramesAtSeconds": [
+        43.1,
+        43.5,
+        59.4,
+        59.9
+      ],
+      "actualEventFromPersistedLinearKeys": [
+        43.25,
+        59.63095238095
+      ],
+      "result": "same marked stone separates from hand and is then held again; 4 stills agree with persisted source phase",
+      "limitations": "not exact subframe render or continuous-operation/audio acceptance"
+    }
+  ],
+  "originalsPreserved": true,
+  "sharedDesktopInput": 0,
+  "finalMovieStillPending": true
+}
