@@ -1,0 +1,103 @@
+{
+  "issue": 151,
+  "purpose": "Owner-specified Natural at closing only; fresh silent mouth input, not music-driven lipsync",
+  "output": {
+    "filename": "natural-silent.mov",
+    "canvas": [
+      600,
+      780
+    ],
+    "fps": 30,
+    "frames": 120,
+    "duration": 4,
+    "pixelFormat": "yuva444p12le",
+    "codec": "ProRes4444",
+    "audioStream": false,
+    "sha256": "21fdd74aa90391da2e40dc9310a21c11875b77b02f349c575a2c90c8e40d4af1"
+  },
+  "input": {
+    "type": "Generated private48kHz24bitStereoPCMzero",
+    "sourceFrames": 192000,
+    "sourceSeconds": [
+      0,
+      4
+    ],
+    "wavSha256": "5fef74d2dcdc7a08b774d6695c3683fbff7150ac3d579356ea49663ae8b428cd",
+    "samplesPerFrame": 1600,
+    "rmsFrames": 120,
+    "rmsAllZero": true,
+    "mouthRange": [
+      0,
+      0
+    ],
+    "pcmFromBgm": false,
+    "voiceSynthesis": false
+  },
+  "motion": {
+    "mouth": "same RMS gate/smoothing; measured silence resets0 every frame",
+    "blink": "one existing cosine pulse center1.6s/halfwidth.13s, eye=1-pulse",
+    "headX": "-.8+1.1*sin(t*.7)",
+    "headY": "-.4+.4*sin(t*.9)",
+    "headZ": ".25*sin(t*.65)",
+    "bodyX": ".12*sin(t*.6)",
+    "breath": ".22+.08*sin(t*1.8)",
+    "cameraTracking": false,
+    "physics": false
+  },
+  "dependencies": {
+    "rendererSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+    "licenseSha256": "1108d5e6bbe9a2573e7fde064a7c08fed5ba6b49909488e9126341715a741a4b",
+    "coreJarSha256": "5458a64ebe33b38350de1437399343b0d502f2353a34a97da76d56d118c0d186",
+    "coreNativeSha256": "71d5757025cd31c61be0d52ad79d4cd0de0465e1df6c4508c4fde70207613985",
+    "javaSha256": "7180e8f195ccec98d332cc5b16d2e33f69acf623afbb2bbc12eff061b0123a6a",
+    "modelDependencies": [
+      {
+        "name": "Revenant_Natural.model3.json",
+        "sha256": "26f678bc97701a1e0958f3a82569e0efa36e260c1a8551222deb873bfb254c39"
+      },
+      {
+        "name": "Revenant_Natural.moc3",
+        "sha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e"
+      },
+      {
+        "name": "Revenant_Natural.8192/texture_00.png",
+        "sha256": "30efeaa8148d55ca0042cfd3d741f499d479f9034bf7985d248360e66e559f73"
+      },
+      {
+        "name": "Revenant_Natural.8192/texture_01.png",
+        "sha256": "c09bd43ef3d9f02acc8ccdc12d46ba72a750de21aa07a7627fc6a8f04321e26a"
+      }
+    ],
+    "modelName": "Revenant_Natural"
+  },
+  "execution": {
+    "case": "Reuse146 pinned CUI Java/CoreJNI/BufferedImage only",
+    "javaHeadless": true,
+    "createNoWindow": true,
+    "useShellExecute": false,
+    "allStandardStreamsRedirected": true,
+    "javaActiveProcessorCount": 2,
+    "windowsPriority": "BelowNormal",
+    "linuxPriority": "nice10/ioniceidle",
+    "duplicateRootProcessRejected": true,
+    "ownedDeadlineAndCleanup": true,
+    "sharedGuiActions": 0
+  },
+  "reproduction": {
+    "fullPrivateDriver": "source/render-silent.mjs",
+    "fullPrivateWrapper": "source/run-core.ps1",
+    "driverSha256": "010508e985a751e569b5a0d610a8cfdae8afed8bc4ac6bace0f1366c99e6ac43",
+    "wrapperSha256": "00665006901272f509f8b1b11245b6ef90c889f6e68e55aba1f933e22fd74321",
+    "scheduleSha256": "a84e4685b343220faf6d81bd46ea670b1cae7aef945651589e725325b2f99dbc",
+    "root": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/private/core-closing",
+    "old146Preserved": true
+  },
+  "finalWriterHint": {
+    "requestedUse": "First108frames/local0–3.6seconds for finalglobal56.4–60.0; no regeneration or time stretch required",
+    "scaleAndPlacement": "Writer controls placement/actual non-occlusion; no inherited146 landscape coordinates"
+  },
+  "redistribution": {
+    "sdkJarDllMocAtlasCopiedToGitOrNas": false,
+    "sourceReadyContains": "Only this recipe, bounded QA metadata and README; no model/SDK/frame/WAV/MOV bytes"
+  }
+}

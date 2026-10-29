@@ -1,0 +1,103 @@
+{
+  "issue": 151,
+  "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/private/core-closing/natural-silent.mov",
+  "sha256": "21fdd74aa90391da2e40dc9310a21c11875b77b02f349c575a2c90c8e40d4af1",
+  "frameCount": 120,
+  "fps": 30,
+  "duration": 4,
+  "canvas": [
+    600,
+    780
+  ],
+  "alphaPixelFormat": "yuva444p12le",
+  "noAudio": true,
+  "rmsAllZero": true,
+  "mouthRange": [
+    0,
+    0
+  ],
+  "closedEyeFrames": 1,
+  "uniqueNativeFrames": 120,
+  "samePoseDiagnostic": {
+    "mouthChangedPixels": 0,
+    "eyesChangedPixels": 2405,
+    "mouthRoi": [
+      230,
+      205,
+      140,
+      70
+    ],
+    "eyesRoi": [
+      210,
+      150,
+      180,
+      60
+    ],
+    "samePoseExceptNamedInput": true,
+    "diagnosticOnly": true
+  },
+  "allNativePngHeadAlpha": {
+    "frames": 120,
+    "headBand": [
+      0,
+      0,
+      600,
+      280
+    ],
+    "alphaThreshold": 16,
+    "topMarginMinPx": 24,
+    "topMarginMaxPx": 24,
+    "headAlphaLeftMinPx": 187,
+    "headAlphaRightMaxPx": 430,
+    "headEdgeContactPixels": 0,
+    "partialAlphaCountRange": [
+      35424,
+      35568
+    ],
+    "failedFrames": [],
+    "scope": "All rendered PNG head-band margins; bust sleeve/torso edges intentionally cropped"
+  },
+  "fullMovDecodeExit": 0,
+  "actualMovVisualFrames": [
+    0,
+    48,
+    60
+  ],
+  "actualMovVisualMandatoryDefects": [],
+  "coreVersion": "06.00.0513",
+  "runtime": {
+    "consoleBefore": 0,
+    "consoleAfter": 0,
+    "foregroundBefore": 0,
+    "foregroundAfter": 0,
+    "observationScope": "This noninteractive no-console CUI case only",
+    "runs": [
+      {
+        "id": "silent120",
+        "ownedWindowsPid": 49312,
+        "exit": 0,
+        "ownedMainWindowHandleAllZero": true,
+        "observedHandleSamples": 29,
+        "foregroundUnchanged": true,
+        "headless": true,
+        "createNoWindow": true
+      },
+      {
+        "id": "isolated3",
+        "ownedWindowsPid": 46028,
+        "exit": 0,
+        "ownedMainWindowHandleAllZero": true,
+        "observedHandleSamples": 3,
+        "foregroundUnchanged": true,
+        "headless": true,
+        "createNoWindow": true
+      }
+    ]
+  },
+  "limitations": [
+    "No final game/CTA composite verified",
+    "No subjective audio/listening: material has no audio",
+    "No owner creative adoption/publication/growth/revenue claim",
+    "Native PNG full-alpha scan and 3 actual encoded MOV samples are separate scopes"
+  ]
+}

@@ -28,4 +28,4 @@ export async function run(exe,args,receipt,{input,env={},timeoutMs=180000,privat
   });
 }
 export const native=(name,args,receipt,input,timeoutMs=180000)=>run(cli[name],args,receipt,{privateDisplay:true,input,timeoutMs});
-export const ff=(args,receipt)=>run(ffRoot+'/bin/ffmpeg',['-nostdin','-hide_banner','-loglevel','error','-threads','2','-filter_threads','2','-filter_complex_threads','2',...args],receipt,{env:{LD_LIBRARY_PATH:ffRoot+'/lib'}});
+export async function ff(args,receipt){const r=await run(ffRoot+'/bin/ffmpeg',['-nostdin','-hide_banner','-loglevel','error','-threads','2','-filter_threads','2','-filter_complex_threads','2',...args],receipt,{env:{LD_LIBRARY_PATH:ffRoot+'/lib'}});if(/already exists|Error opening|non monotonically|Invalid data|No such file/i.test(r.stderr))throw Error('FFmpeg diagnostic failure: '+r.stderr);return r;}
