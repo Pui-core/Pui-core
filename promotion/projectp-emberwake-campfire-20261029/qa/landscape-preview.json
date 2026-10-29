@@ -1,0 +1,60 @@
+{
+  "issue": 151,
+  "mode": "preview",
+  "file": "videos/emberwake-campfire-landscape-preview-v02.mp4",
+  "sha256": "42318fa13f747279a2c160b230415248d341afbfdfe560dd53072d117f0eec71",
+  "duration": 9.6,
+  "width": 1920,
+  "height": 1080,
+  "fps": "30/1",
+  "frames": "288",
+  "fullAVDecode": true,
+  "decodeDiagnostics": "",
+  "independentLandscapeComposition": true,
+  "verticalFrameUsed": false,
+  "native": {
+    "effectcraft": {
+      "file": "projects/preview-v02.ecproj",
+      "sha256": "671dbfc2552810ccfb7f868ce41e292417d394f3553cb15b3f9b9eb542be269b"
+    },
+    "filmcraft": {
+      "file": "projects/preview-v02.fcproj",
+      "sha256": "6a354aeedfe41770d83dfbeca015fe76c12dd76924818cbf1762a3416697694a"
+    }
+  },
+  "music": {
+    "sameCipher": true,
+    "sameBeatAndOffset": true,
+    "originalAacCopy": false
+  },
+  "core": {
+    "global": [
+      56.4,
+      60
+    ],
+    "actualIn": 6,
+    "mouthAlways0": true,
+    "sourceFrames": 108,
+    "sha256": "21fdd74aa90391da2e40dc9310a21c11875b77b02f349c575a2c90c8e40d4af1"
+  },
+  "subjectiveListen": false,
+  "actualOutputVisualReview": {
+    "frames": [
+      0.4,
+      1.9,
+      3,
+      6.3,
+      7.6,
+      9.3
+    ],
+    "contact": "qa/preview-encoded-contact.png",
+    "authorViewed": true,
+    "mandatoryDefects": [],
+    "handStoneBandOverlapFixed": true,
+    "ctaModelNonOcclusion": true,
+    "individualArrowsAndEUiRemain": true,
+    "fullRealtimePlayback": false
+  },
+  "published": false,
+  "nasDelivery": false
+}

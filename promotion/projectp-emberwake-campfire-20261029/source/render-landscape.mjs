@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import {stage,native,ff,run,ffRoot,hash,save} from './background.mjs';
+const mode=process.argv[2]||'preview',version=process.argv[3]||'v02';
+if(!['preview','full'].includes(mode)||!/^v[0-9]{2}$/.test(version))throw Error('preview|full vNN');
+const root=stage+'/landscape-v01',name=mode+'-'+version,layout=JSON.parse(fs.readFileSync(root+'/qa/'+name+'-layout.json'));
+const picture=root+'/media/'+name+'.mov',fc=root+'/projects/'+name+'.fcproj',videoOnly=root+'/media/'+name+'-picture.mp4',final=root+'/videos/emberwake-campfire-landscape-'+name+'.mp4';
+if(fs.existsSync(picture)||fs.existsSync(fc)||fs.existsSync(final))throw Error('Preserve existing landscape output');
+await native('effectcraft',['--project',layout.project,'render','--comp',layout.compName,'--out',picture,'--format','prores','--prores','standard','--audio','off','--progress','--json'],root+'/qa/ec-'+name+'-render.json',undefined,900000);
+let music=root+'/media/pv-music-60.wav';
+if(mode==='preview'){music=root+'/media/preview-music.wav';if(!fs.existsSync(music))await ff(['-i',root+'/media/pv-music-60.wav','-filter_complex','[0:a]asplit=2[a][b];[a]atrim=start=0:duration=4,asetpts=PTS-STARTPTS[x];[b]atrim=start=54.4:duration=5.6,asetpts=PTS-STARTPTS[y];[x][y]concat=n=2:v=0:a=1[out]','-map','[out]','-c:a','pcm_s24le',music],root+'/qa/preview-music.json');}
+const r=await native('filmcraft',['--save-as',fc,'run','-'],root+'/qa/fc-'+name+'-save.json',[{id:'file.newProject',params:{name:'151 CAMPFIRE landscape '+name}},{id:'file.newSequence',params:{name:'151 landscape '+name,width:1920,height:1080,fps:30,sampleRate:48000,video:1,audio:1}},{id:'file.import',params:{paths:[picture,music]}}].map(x=>JSON.stringify(x)).join('\n')+'\n');
+let items;for(const l of r.stdout.trim().split(/\r?\n/)){const j=JSON.parse(l);if(j.ok===false)throw Error(l);if(j.result?.items)items=j.result.items;}if(items?.length!==2)throw Error('Import');
+await native('filmcraft',['--project',fc,'--save','run','-'],root+'/qa/fc-'+name+'-place.json',[{id:'timeline.place',params:{item:items[0],track:'V1',seconds:0,duration:layout.duration*254016000000,video:true,audio:false}},{id:'timeline.place',params:{item:items[1],track:'A1',seconds:0,duration:layout.duration*254016000000,video:false,audio:true}}].map(x=>JSON.stringify(x)).join('\n')+'\n');
+await native('filmcraft',['--project',fc,'inspect'],root+'/qa/fc-'+name+'-reopen.json');
+const e=await native('filmcraft',['--project',fc,'exec','file.exportMedia',JSON.stringify({path:mode==='full'?videoOnly:final,format:'h264',audio:mode==='preview',audioCodec:'aac',bitrateMode:'crf',crf:18,hardwareEncoding:'off',gpuRendering:'off',wait:true})],root+'/qa/fc-'+name+'-export.json',undefined,900000);
+if(JSON.parse(e.stdout).offlineMedia?.length)throw Error('Offline media');
+if(mode==='full')await ff(['-i',videoOnly,'-i',stage+'/pv-v01/videos/emberwake-campfire-pv60-v03.mp4','-map','0:v:0','-map','1:a:0','-c','copy','-t','60','-movflags','+faststart',final],root+'/qa/'+name+'-original-aac-mux.json');
+const d=await ff(['-i',final,'-map','0:v:0','-map','0:a:0','-f','null','-'],root+'/qa/'+name+'-decode.json');
+const p=await run(ffRoot+'/bin/ffprobe',['-v','error','-count_frames','-show_streams','-show_format','-of','json',final],root+'/qa/'+name+'-probe.json',{env:{LD_LIBRARY_PATH:ffRoot+'/lib'}}),info=JSON.parse(p.stdout),v=info.streams.find(s=>s.codec_type==='video'),a=info.streams.find(s=>s.codec_type==='audio');
+if(v.width!==1920||v.height!==1080||v.r_frame_rate!=='30/1'||Number(v.nb_read_frames)!==Math.round(layout.duration*30)||Math.abs(Number(v.duration)-layout.duration)>.034||a.sample_rate!=='48000'||a.channels!==2)throw Error('Landscape format');
+save(root+'/qa/'+name+'-output.json',{issue:151,mode,file:final,sha256:hash(final),duration:layout.duration,width:v.width,height:v.height,fps:v.r_frame_rate,frames:v.nb_read_frames,fullAVDecode:true,decodeDiagnostics:d.stderr,independentLandscapeComposition:true,verticalFrameUsed:false,native:{effectcraft:{file:layout.project,sha256:hash(layout.project)},filmcraft:{file:fc,sha256:hash(fc)}},music:{sameCipher:true,sameBeatAndOffset:true,originalAacCopy:mode==='full'},core:layout.core,subjectiveListen:false,actualOutputVisualReview:'PENDING',published:false,nasDelivery:false});
+console.log(JSON.stringify({ready:true,mode,file:final,sha256:hash(final)}));
