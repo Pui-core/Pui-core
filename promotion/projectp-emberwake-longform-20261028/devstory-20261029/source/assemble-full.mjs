@@ -1,0 +1,26 @@
+import fs from 'node:fs';
+import {stage,native,ff,save,hash} from './background.mjs';
+const root=stage+'/devstory-v01',project=root+'/projects/emberwake-devstory-v01.fcproj',movie=root+'/videos/emberwake-devstory-v01-bgm.mp4';
+const adoptedAudio=JSON.parse(fs.readFileSync(root+'/qa/adopted-full-audio.json'));
+for(const x of ['voice','music','sfx','mix'])if(hash(adoptedAudio[x].file)!==adoptedAudio[x].sha256)throw Error('Adopted audio differs '+x);
+const sections=['INTRO','J','V','C','H','CLOSE'].map(s=>JSON.parse(fs.readFileSync(root+'/qa/'+s+'-repaired-picture-binding.json')));
+for(const s of sections)if(s.decodeExit!==0||hash(s.file)!==s.fileSha||hash(s.project)!==s.projectSha)throw Error('Picture binding changed '+s.section);
+const narration=adoptedAudio.voice.file,music=adoptedAudio.music.file,sfx=adoptedAudio.sfx.file,mix=adoptedAudio.mix.file;
+const voices=JSON.parse(fs.readFileSync(root+'/qa/full-voice-r3-binding.json'));if(hash(narration)!==voices.sha256)throw Error('Narration changed');
+const input=[...sections.map(s=>s.file),narration,music,sfx],inputs=input.map(file=>({file,sha256:hash(file)}));
+if(fs.existsSync(root+'/qa/full-film-binding.json'))throw Error('Final export already exists; inspect checkpoint');
+if(fs.existsSync(project)||fs.existsSync(movie))throw Error('Unbound assembly checkpoint retained');
+fs.mkdirSync(root+'/videos',{recursive:true});
+const jsonl=a=>a.map(c=>JSON.stringify(c)).join('\n')+'\n';
+const built=await native('filmcraft',['--save-as',project,'run','-'],root+'/qa/full-film-build.json',jsonl([{id:'file.newProject',params:{name:'EMBERWAKE 制作秘話 / same-tick input, art, release, hints'}},{id:'file.newSequence',params:{name:'制作秘話 10分32秒',width:1280,height:720,fps:30,sampleRate:48000,video:1,audio:3}},{id:'file.import',params:{paths:input}}]));
+let ids;for(const line of built.stdout.trim().split(/\r?\n/)){const r=JSON.parse(line);if(r.ok===false)throw Error(line);if(r.result?.items)ids=r.result.items;}if(ids?.length!==9)throw Error('Native imported item identity/count');
+let at=0;const place=[];for(let i=0;i<6;i++){place.push({id:'timeline.place',params:{item:ids[i],track:'V1',seconds:at,duration:sections[i].duration*254016000000,video:true,audio:false}});at+=sections[i].duration;}
+if(at!==632)throw Error('Full picture duration mismatch');
+for(let i=0;i<3;i++)place.push({id:'timeline.place',params:{item:ids[6+i],track:'A'+(i+1),seconds:0,duration:632*254016000000,video:false,audio:true}});
+await native('filmcraft',['--project',project,'--save','run','-'],root+'/qa/full-film-place.json',jsonl(place));
+await native('filmcraft',['--project',project,'inspect'],root+'/qa/full-film-reopen.json');
+save(root+'/qa/full-film-input-binding.json',{issue:146,duration:632,frames:18960,size:[1280,720],fps:30,sections:sections.map(s=>({section:s.section,duration:s.duration,fileSha:s.fileSha,projectSha:s.projectSha})),inputs,mix,expectedMixSha:hash(mix),project,projectSha:hash(project),nativeReopenPerformed:true,output:movie,exportStarted:new Date().toISOString(),sharedDesktopInput:0,subjectiveListen:false});
+await native('filmcraft',['--project',project,'exec','file.exportMedia',JSON.stringify({path:movie,format:'h264',audio:true,audioCodec:'aac',bitrateMode:'crf',crf:18,hardwareEncoding:'off',gpuRendering:'off',wait:true})],root+'/qa/full-film-export.json',undefined,3600000);
+await ff(['-i',movie,'-map','0:v:0','-map','0:a:0','-f','null','-'],root+'/qa/full-film-AV-decode.json');
+save(root+'/qa/full-film-binding.json',{...JSON.parse(fs.readFileSync(root+'/qa/full-film-input-binding.json')),file:movie,fileSha:hash(movie),bytes:fs.statSync(movie).size,projectSha:hash(project),nativeExportExit:0,fullAVDecodeExit:0,subjectiveListen:false,ownerCreativeAdoption:false,published:false,nasRegistered:false});
+console.log(JSON.stringify({nativeFullExportReady:movie,sha256:hash(movie),fullAVDecodeExit:0}));

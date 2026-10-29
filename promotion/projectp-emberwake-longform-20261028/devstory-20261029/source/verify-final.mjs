@@ -1,0 +1,32 @@
+import fs from 'node:fs';
+import {stage,ff,run,ffRoot,save,hash} from './background.mjs';
+const root=stage+'/devstory-v01',binding=JSON.parse(fs.readFileSync(root+'/qa/full-film-binding.json')),movie=binding.file,sha=hash(movie);
+if(sha!==binding.fileSha||binding.fullAVDecodeExit!==0)throw Error('Final binding differs');
+const dir=root+'/qa/final';fs.mkdirSync(dir,{recursive:true});
+const probe=await run(ffRoot+'/bin/ffprobe',['-v','error','-count_frames','-show_streams','-show_format','-of','json',movie],dir+'/probe.json',{env:{LD_LIBRARY_PATH:ffRoot+'/lib'}}),meta=JSON.parse(probe.stdout),v=meta.streams.find(s=>s.codec_type==='video'),a=meta.streams.find(s=>s.codec_type==='audio');
+if(v.width!==1280||v.height!==720||v.r_frame_rate!=='30/1'||Number(v.nb_read_frames)!==18960||Number(a.sample_rate)!==48000||a.channels!==2||Math.abs(Number(meta.format.duration)-632)>.1)throw Error('Full movie format differs');
+const decoded=dir+'/actual-aac.wav';if(fs.existsSync(decoded))throw Error('Existing decoded final audio retained');
+await ff(['-i',movie,'-map','0:a:0','-ar','48000','-ac','2','-c:a','pcm_s24le',decoded],dir+'/audio-decode.json');
+function pcm(file){const b=fs.readFileSync(file);let format,bits,block,offset,bytes,rate;for(let p=12;p+8<=b.length;){const n=b.readUInt32LE(p+4),id=b.toString('ascii',p,p+4);if(id==='fmt '){format=b.readUInt16LE(p+8);rate=b.readUInt32LE(p+12);block=b.readUInt16LE(p+20);bits=b.readUInt16LE(p+22);}if(id==='data'){offset=p+8;bytes=n;break;}p+=8+n+(n%2);}if(format!==1||bits!==24||rate!==48000||block!==6)throw Error('Unexpected PCM '+file);return {b,frames:bytes/6,read:f=>f<0||f>=bytes/6?0:(b.readIntLE(offset+f*6,3)+b.readIntLE(offset+f*6+3,3))/16777216};}
+const actual=pcm(decoded),expected=pcm(binding.mix),voice=pcm(binding.inputs[6].file),music=pcm(binding.inputs[7].file),sfx=pcm(binding.inputs[8].file),voiceBinding=JSON.parse(fs.readFileSync(root+'/qa/full-voice-r3-binding.json'));
+const correlation=(x,y)=>{let xx=0,yy=0,xy=0;for(let i=0;i<x.length;i++){xx+=x[i]*x[i];yy+=y[i]*y[i];xy+=x[i]*y[i];}return xy/Math.sqrt(Math.max(1e-30,xx*yy));};
+const cueChecks=[];
+for(const c of voiceBinding.cues){const start=c.at+c.active.start,end=c.at+c.active.end,centers=[Math.min(end-.06,start+.1),(start+end)/2,Math.max(start+.06,end-.1)],checks=[];
+ for(let part=0;part<3;part++){const n=5760,first=Math.round((centers[part]-.06)*48000),ref=Float64Array.from({length:n},(_,i)=>expected.read(first+i));let best={corr:-2,lag:0};
+  for(let lag=-128;lag<=128;lag+=2){let xx=0,yy=0,xy=0;for(let i=0;i<n;i+=4){const x=ref[i],y=actual.read(first+i+lag);xx+=x*x;yy+=y*y;xy+=x*y;}const corr=xy/Math.sqrt(Math.max(1e-30,xx*yy));if(corr>best.corr)best={corr,lag};}
+  const residual=Float64Array.from({length:n},(_,i)=>actual.read(first+i+best.lag)-music.read(first+i)-sfx.read(first+i)),vref=Float64Array.from({length:n},(_,i)=>voice.read(first+i));checks.push({part:['head','middle','tail'][part],center:centers[part],mixCorrelation:best.corr,lagSamples:best.lag,voiceResidualCorrelation:correlation(vref,residual)});
+ }cueChecks.push({id:c.id,at:c.at,active:[start,end],checks});
+}
+const audio={file:movie,fileSha:sha,expectedMixSha:hash(binding.mix),decodedFrames:actual.frames,expectedFrames:632*48000,expectedVoiceSha:hash(binding.inputs[6].file),cueCount:cueChecks.length,cueChecks,minMixCorrelation:Math.min(...cueChecks.flatMap(c=>c.checks.map(x=>x.mixCorrelation))),minVoiceResidualCorrelation:Math.min(...cueChecks.flatMap(c=>c.checks.map(x=>x.voiceResidualCorrelation))),maxAbsoluteLagSamples:Math.max(...cueChecks.flatMap(c=>c.checks.map(x=>Math.abs(x.lagSamples)))),subjectiveListen:false};
+save(dir+'/AAC-cue-checks.json',audio);if(audio.minMixCorrelation<.90||audio.maxAbsoluteLagSamples>96)throw Error('AAC cue preservation needs inspection');
+await ff(['-loglevel','info','-i',movie,'-map','0:a:0','-af','ebur128=peak=true','-f','null','-'],dir+'/loudness.json');
+const plan=JSON.parse(fs.readFileSync(root+'/source/full-cues-r3.json')),body=plan.cues||plan.body||plan;const times=[.2,.6,7.6,12.9,14.9,17.2,24.5,28.5];
+const cueArray=Array.isArray(body)?body:Array.isArray(plan)?plan:[];
+for(const c of cueArray){if(c.id?.startsWith('OPEN'))continue;const start=c.start??c.at;if(typeof start==='number'&&start>=32&&start<606){times.push(start+2,start+10);}}
+if(times.length<40)for(let t=34;t<606;t+=14)times.push(t,t+8);
+times.push(425.13,425.37,441.53,441.77,619.1,620.2,620.6,621.0,630.5,631.8);const unique=[...new Set(times.map(t=>Math.round(t*30)/30))].sort((a,b)=>a-b),frames=[];
+for(let i=0;i<unique.length;i++){const t=unique[i],file=dir+'/frame-'+String(i).padStart(3,'0')+'.png';await ff(['-ss',String(t),'-i',movie,'-frames:v','1',file],dir+'/frame-'+i+'.json');frames.push({time:t,file});}
+const perSheet=16;for(let offset=0;offset<frames.length;offset+=perSheet){const part=frames.slice(offset,offset+perSheet),args=part.flatMap(f=>['-i',f.file]),filters=part.map((f,i)=>`[${i}:v]scale=320:180,drawtext=fontfile=/mnt/c/Windows/Fonts/consola.ttf:text='${f.time.toFixed(3)}s':fontsize=16:fontcolor=white:box=1:boxcolor=black@0.8:x=4:y=4[p${i}]`);filters.push(part.map((_,i)=>`[p${i}]`).join('')+`xstack=inputs=${part.length}:layout=`+part.map((_,i)=>(i%4)*320+'_'+Math.floor(i/4)*180).join('|')+':fill=black[out]');await ff([...args,'-filter_complex',filters.join(';'),'-map','[out]','-frames:v','1',dir+'/contact-'+Math.floor(offset/perSheet)+'.png'],dir+'/contact-'+Math.floor(offset/perSheet)+'.json');}
+await ff(['-ss','620.2','-i',movie,'-t','1.5','-vf','fps=10,crop=300:390:860:275,scale=150:195,tile=5x3','-frames:v','1',dir+'/natural-continuous.png'],dir+'/natural-continuous.json');
+save(dir+'/verification-summary.json',{file:movie,fileSha:sha,format:{duration:Number(meta.format.duration),frames:Number(v.nb_read_frames),size:[v.width,v.height],fps:v.r_frame_rate,audio:[a.codec_name,a.sample_rate,a.channels]},fullAVDecodeExit:0,audio:{cueCount:audio.cueCount,minMixCorrelation:audio.minMixCorrelation,minVoiceResidualCorrelation:audio.minVoiceResidualCorrelation,maxAbsoluteLagSamples:audio.maxAbsoluteLagSamples},frames,modelSourceSha:'747ca8afba634c94ba2c44a0a17b00047c9c6ff40e93c9ecf3680ed01d4cd1a4',subjectiveListen:false,frameVisualReview:false,ownerCreativeAdoption:false,nasRegistered:false,published:false});
+console.log(JSON.stringify({finalQAReady:true,file:movie,fileSha:sha,frames:frames.length,audio}));
