@@ -122,7 +122,7 @@ test('same-run rejection and another run never overwrite or stop an existing liv
   assert.equal(last(ended).outcome,'interrupted');assert.equal(last(ended).terminal,true);assert.equal(alive(pid),false);
 });
 
-test('production cold execution is refused on Linux before creating a run root',t=>{
+test('production cold execution without its fixed base and explicit GO is refused before creating a run root',t=>{
   const f=fixture(t,'');
   const result=spawnSync(process.execPath,[cli,'run','--base',f.base,'--run-id','refused'],{encoding:'utf8',timeout:3000});
   assert.equal(result.status,78);assert.equal(fs.existsSync(path.join(f.base,'projectp129-cold-refused')),false);

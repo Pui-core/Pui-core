@@ -166,7 +166,7 @@ async function main() {
     if (!/^[A-Za-z0-9][A-Za-z0-9_-]{0,79}$/.test(runId) || !path.isAbsolute(opts.base || '')) throw Error('absolute --base and safe unique run-id required');
     let fixture;
     if (opts.fixture) {
-      if (process.env.PP129_LOCAL_FIXTURE !== '1' || process.platform !== 'linux' || !path.isAbsolute(opts.fixture)) throw Error('fixture requires explicit local Linux test mode');
+      if (process.env.PP129_LOCAL_FIXTURE !== '1' || !['linux','darwin'].includes(process.platform) || !path.isAbsolute(opts.fixture)) throw Error('fixture requires explicit local Linux/Darwin test mode');
       fixture = {script:opts.fixture, delayAt:opts['delay-at'], delayMs:number(opts['delay-ms'],1000,30000)};
     } else if (process.platform !== 'darwin' || opts['cold-read-go'] !== '129' || opts.base !== '/Users/pui-mac-core/codex-install') {
       throw Error('cold run requires explicit fresh Root GO129 on the Mac; runtime/authorization unverified here');
