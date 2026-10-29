@@ -1,0 +1,44 @@
+{
+  "prototype": "ありがとう",
+  "ppem": 384,
+  "style": {
+    "bodyColors": [
+      "#A0ECFA",
+      "#6FD6F0",
+      "#43C1E3"
+    ],
+    "rimColor": "#28AAD4",
+    "rimEm": 0.01,
+    "whiteBorderEm": 0.07,
+    "shadowColor": "#6c8d9e",
+    "shadowOpacity": 0.1,
+    "shadowOffsetAt256": [
+      1,
+      4
+    ],
+    "shadowBlurAt256": 5,
+    "heightRatio": 0.85,
+    "radiusPercentile": 98,
+    "smoothAt256": 2.8,
+    "light": [
+      -0.45,
+      -0.55,
+      0.7
+    ],
+    "ambient": 0.84,
+    "diffuseGain": 0.16,
+    "specularBroadPower": 14,
+    "specularBroadGain": 0.15,
+    "specularTightPower": 60,
+    "specularTightGain": 0.35,
+    "capsule": true,
+    "capsuleAngle": -30,
+    "capsuleCoreAlpha": 0.88,
+    "capsuleHaloAlpha": 0.13
+  },
+  "renderer": "render-jelly-sdf.py; PhotoCraft native layered composition",
+  "nativeProjectSha256": "fba317039f5c1e30092b0f0a28f595f378b8b276aa0ac67f3e0fddeea819703a",
+  "previewSha256": "d51ec1a800430e55ef67bb3eb54d17d8fc5e029957853d9871a66b59942da31f",
+  "ownerCreativeAcceptance": false,
+  "ibisPaintValidation": "owner will test; no agent result claimed"
+}

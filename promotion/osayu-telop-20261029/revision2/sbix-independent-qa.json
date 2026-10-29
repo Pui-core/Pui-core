@@ -1,0 +1,76 @@
+{
+  "audit": "Independent read-only final sbix structural audit",
+  "auditor": "photocraft_discovery",
+  "checkedAt": "2026-10-29T02:23:17.577761+00:00",
+  "file": "OsayuPukuJelly-SBIX.ttf",
+  "sha256": "cead14d4d8e459a32ba876cdab0666f35331af318c2ad5a931f9f0f4313224b9",
+  "bytes": 163657096,
+  "fontFamily": "Osayu Puku Jelly",
+  "postScriptName": "OsayuPukuJelly-SBIX",
+  "baseFont": "OsayuPukuJelly-Base.ttf",
+  "baseFontSha256": "f8937bea63838af9de9f0bbef07b50159596c9959fc28deb3f8e8e757e854943",
+  "sourceCmapExactlyPreserved": true,
+  "cmapCodepoints": 7088,
+  "glyphCount": 7220,
+  "expectedNonemptyEncodedGlyphs": 7079,
+  "expectedNonemptyEncodedCodepoints": 7079,
+  "sbixFlags": 1,
+  "strikes": [
+    {
+      "ppem": 256,
+      "resolution": 72
+    }
+  ],
+  "embeddedPngRecords": 7079,
+  "uniqueColoredGlyphs": 7079,
+  "allPngCRCsChecked": 35395,
+  "allPngsDecoded": 7079,
+  "allEmbeddedPngsMatchActualSourceAndManifest": true,
+  "allNonemptyEncodedGlyphsHaveColor": true,
+  "missingColorGlyphs": [],
+  "minimumTransparentMarginsLTRB": [
+    18,
+    21,
+    16,
+    13
+  ],
+  "dimensionRangeMinWMinHMaxWMaxH": [
+    153,
+    129,
+    371,
+    401
+  ],
+  "pngColorTypeCounts": {
+    "3": 7079
+  },
+  "minimumNontransparentPixels": 5922,
+  "chromaticBitmaps": 7079,
+  "globalSfntChecksum": "0xb1b0afba",
+  "japaneseCoverage": {
+    "joyo": {
+      "expected": 2136,
+      "coloredNonempty": 2136,
+      "missing": []
+    },
+    "jis0208Level1And2": {
+      "expected": 6355,
+      "coloredNonempty": 6355,
+      "missing": []
+    },
+    "nameCharacters音桜夢": {
+      "expected": 3,
+      "coloredNonempty": 3,
+      "missing": []
+    }
+  },
+  "officialJoyoSource": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/",
+  "officialJoyoSourceSha256": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+  "failureCount": 0,
+  "failures": [],
+  "elapsedSeconds": 9.44,
+  "limitations": [
+    "No app or device operations. User owns ibisPaint verification.",
+    "Structural cmap/bitmap checks do not verify the artistic quality or exact iPhone app rendering."
+  ],
+  "status": "PASS"
+}
