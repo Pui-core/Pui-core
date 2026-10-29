@@ -4,6 +4,7 @@ import path from 'node:path';
 import {spawn,execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import {buildCaptions,layout} from './captions.mjs';
+import {verifySpeakerAudit} from './speaker-audit.mjs';
 const [planFile,baseArg,outArg,mode='render']=process.argv.slice(2);
 if(!planFile||!baseArg||!outArg||!['render','preview'].includes(mode))throw Error('Usage: node restyle.mjs plan.json previous-revision output [render|preview]');
 const plan=JSON.parse(fs.readFileSync(planFile)),base=path.resolve(baseArg),out=path.resolve(outArg);
@@ -24,6 +25,10 @@ const jobs=plan.clips.map(clip=>{
   if(edit.planSha!==plan.basePlanSha||JSON.stringify(edit.layout.video)!==JSON.stringify(layout.video)||!edit.groups.every(g=>g.audioEvidence))throw Error('Previous validated edit/evidence mismatch');
   return {clip,old,edit,...buildCaptions(clip,edit,plan.fonts)};
 });
+if(!plan.speakerAudit?.path||!plan.speakerAudit?.sha256)throw Error('Reviewed source-audio speaker audit is required');
+const auditBytes=fs.readFileSync(plan.speakerAudit.path);
+if(digest(auditBytes)!==plan.speakerAudit.sha256)throw Error('Speaker audit hash mismatch');
+const speakerEvidence=verifySpeakerAudit(plan,JSON.parse(auditBytes));
 fs.mkdirSync(path.join(out,'fonts'),{recursive:true});
 for(const [role,font]of Object.entries(plan.fonts)){
   if(!font.sha256||digest(fs.readFileSync(font.path))!==font.sha256)throw Error('Font hash mismatch');
@@ -35,7 +40,7 @@ for(const job of jobs){
   const {clip,old,edit,ass,audit}=job;if(process.env.CLIP&&process.env.CLIP!==clip.id)continue;
   const dir=path.join(out,clip.id);fs.mkdirSync(dir,{recursive:true});
   fs.writeFileSync(path.join(dir,'captions.ass'),ass);
-  const revision={basePlanSha:plan.basePlanSha,planSha:digest(JSON.stringify(plan)),captionRendererSha:digest(fs.readFileSync(new URL('./captions.mjs',import.meta.url))),restyleRendererSha:digest(fs.readFileSync(new URL(import.meta.url))),assSha:digest(ass),layout,audioReencoded:false,editorialSpeakerLanes:true,sourceScreenSidesVerified:false};
+  const revision={basePlanSha:plan.basePlanSha,planSha:digest(JSON.stringify(plan)),captionRendererSha:digest(fs.readFileSync(new URL('./captions.mjs',import.meta.url))),restyleRendererSha:digest(fs.readFileSync(new URL(import.meta.url))),speakerAuditSha:plan.speakerAudit.sha256,speakerEvidence,assSha:digest(ass),layout,audioReencoded:false,speakerNamesDisplayed:false,editorialSpeakerLanes:true,sourceScreenSidesVerified:false};
   fs.writeFileSync(path.join(dir,'caption-audit.json'),JSON.stringify({...revision,captions:audit},null,2));
   const assFilter=`ass=filename='${clip.id}/captions.ass':fontsdir='fonts'`;
   if(mode==='preview'){
