@@ -1,0 +1,150 @@
+{
+  "issue": 151,
+  "assets": [
+    {
+      "id": "jump-city",
+      "originalFilename": "demo01-main01.mp4",
+      "sourceSha256": "2e48b186fd93e56ae05632f829b26da0ec8a3002ccf3eea75dba7d3b5829169a",
+      "from": 0.15,
+      "duration": 3.3,
+      "crop": [
+        0,
+        360,
+        1920,
+        720
+      ],
+      "stageFile": "media/jump-city-clean.mp4",
+      "sha256": "9de9c214624074f3ba23a53145d4d9fbab59e35b0a10b3f85c7516923df6db82",
+      "kind": "actual 2D game recorded input, cinematic editorial crop; no route demonstration",
+      "exclusion": "Remove HUD, poster, and explicit puzzle-order signs before editorial framing."
+    },
+    {
+      "id": "wind-leap",
+      "originalFilename": "demo02-ferry01.mp4",
+      "sourceSha256": "7b9b6f6b5a9f87fd84f9321e2d725a6637da0bc994fa2fafde8a9b470378acfd",
+      "from": 7.9,
+      "duration": 3.3,
+      "crop": [
+        0,
+        360,
+        1920,
+        720
+      ],
+      "stageFile": "media/wind-leap-clean.mp4",
+      "sha256": "a47223ada3b2df1045ce4148834003955074a23bb27914027dbd7e7a6089a125",
+      "kind": "actual 2D game recorded input; isolated leap crop",
+      "exclusion": "Remove HUD, poster, and explicit puzzle-order signs before editorial framing."
+    },
+    {
+      "id": "moon-run",
+      "originalFilename": "demo03-main01.mp4",
+      "sourceSha256": "eec015d2d7114f496458045f0638bbff82da3f65f83c43172594b1cae668fa42",
+      "from": 0.15,
+      "duration": 3.3,
+      "crop": [
+        0,
+        360,
+        1920,
+        720
+      ],
+      "stageFile": "media/moon-run-clean.mp4",
+      "sha256": "5b159cb5a1ca11699733b46584687664b2fadad1ff5a46dd5cd5c621fc970453",
+      "kind": "actual 2D game recorded input; isolated movement crop",
+      "exclusion": "Remove HUD, poster, and explicit puzzle-order signs before editorial framing."
+    },
+    {
+      "id": "core-floor",
+      "originalFilename": "c-new-safe_floor.mp4",
+      "sourceSha256": "285046cf9d04138edc52c7c2e0098be46254c86695bb4c6aa04e296924743196",
+      "from": 0.1,
+      "duration": 2.8,
+      "crop": [
+        70,
+        230,
+        460,
+        220
+      ],
+      "stageFile": "media/core-floor-clean.mp4",
+      "sha256": "070bdbbba7035ebd5a0a41ebe4c4051fbeb79588df952744718a6a9712d3af2b",
+      "kind": "actual game safe-floor scripted input fixture, not a puzzle solution",
+      "exclusion": "Remove HUD, poster, and explicit puzzle-order signs before editorial framing."
+    },
+    {
+      "id": "core-carry",
+      "originalFilename": "v-motion-new.mp4",
+      "sourceSha256": "8aec61d3793cd88f3c40c2c209542ede70cf1bad2292b398155cfa6bfb814cb8",
+      "from": 0.45,
+      "duration": 0.8,
+      "crop": null,
+      "stageFile": "media/core-carry.mp4",
+      "sha256": "ad88c2995d6a70ee38d49d4d388360d18c7d0e9c745f9d59f772d3b2e38fd5c2",
+      "kind": "actual renderer fixed entrance input fixture, tightly cropped actor motion"
+    },
+    {
+      "id": "stone-flight",
+      "originalFilename": "demo03-main01.mp4",
+      "sourceSha256": "eec015d2d7114f496458045f0638bbff82da3f65f83c43172594b1cae668fa42",
+      "from": 8.4,
+      "duration": 3.3,
+      "crop": [
+        0,
+        360,
+        1920,
+        720
+      ],
+      "stageFile": "media/stone-flight.mp4",
+      "sha256": "4a6bde89e33358cad90f510def663da334cc5caf2e691d0bcaad53b55854a6ca",
+      "kind": "Actual recorded 2Dgame fragment, HUD/puzzle-order signage excluded, no generated scene or character"
+    },
+    {
+      "id": "aqueduct-run",
+      "originalFilename": "demo04-well01.mp4",
+      "sourceSha256": "17fa32578378d33d2a4eb2445a29f6dd653614532ad4e677bd6df282fae62f02",
+      "from": 5.5,
+      "duration": 3.3,
+      "crop": [
+        0,
+        360,
+        1920,
+        720
+      ],
+      "stageFile": "media/aqueduct-run.mp4",
+      "sha256": "7127357e0b743dc188280288959690b4f1ee7074c61a6658f7cb9389d24fbe1c",
+      "kind": "Actual recorded 2Dgame fragment, HUD/puzzle-order signage excluded, no generated scene or character"
+    },
+    {
+      "id": "wind-ascent",
+      "originalFilename": "demo02-growth01.mp4",
+      "sourceSha256": "2619734e2e0164b228e2ef89c723b9e1e3da85757837bc355fc2bcf9a0c2395b",
+      "from": 1.6,
+      "duration": 3.3,
+      "crop": [
+        0,
+        360,
+        1920,
+        720
+      ],
+      "stageFile": "media/wind-ascent.mp4",
+      "sha256": "0f222bdd1df470d3ac7b733560ee81c5dc93ae45f7068dea8b548fd8cc27ca34",
+      "kind": "Actual recorded 2Dgame fragment, HUD/puzzle-order signage excluded, no generated scene or character"
+    },
+    {
+      "id": "wind-transfer",
+      "originalFilename": "demo02-ferry01.mp4",
+      "sourceSha256": "7b9b6f6b5a9f87fd84f9321e2d725a6637da0bc994fa2fafde8a9b470378acfd",
+      "from": 13,
+      "duration": 3.3,
+      "crop": [
+        0,
+        360,
+        1920,
+        720
+      ],
+      "stageFile": "media/wind-transfer-air.mp4",
+      "sha256": "c39868c708ee9a2a4ebce3f6eb65af590fb2be8ff70205df00768eef4ae88646",
+      "kind": "Actual recorded 2Dgame fragment, HUD/puzzle-order signage excluded, no generated scene or character",
+      "editorialReason": "Use isolated airborne traverse after the earlier shrine approach, preserving central protagonist and avoiding interaction context."
+    }
+  ],
+  "constraint": "Original recordings preserved; isolated cinematic edits are not a full route or human playthrough."
+}

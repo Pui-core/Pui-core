@@ -1,0 +1,326 @@
+{
+  "issue": 151,
+  "duration": 60,
+  "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/projects/pv60-v02.ecproj",
+  "sha256": "c37574662329c5bc098bc234d1c552eda4b369a2339728a7796ccf280cfec6d6",
+  "shots": [
+    {
+      "id": "Carry in motion",
+      "asset": "stone-flight",
+      "a": 15.2,
+      "b": 18.4,
+      "from": 0,
+      "anchorA": [
+        960,
+        700
+      ],
+      "anchorB": [
+        960,
+        650
+      ],
+      "scaleA": 250,
+      "scaleB": 225,
+      "copy": "どこへ、運ぶ？"
+    },
+    {
+      "id": "Choose your foothold",
+      "asset": "wind-ascent",
+      "a": 18.4,
+      "b": 21.6,
+      "from": 0,
+      "anchorA": [
+        960,
+        730
+      ],
+      "anchorB": [
+        960,
+        680
+      ],
+      "scaleA": 225,
+      "scaleB": 250,
+      "copy": "足場を選び。"
+    },
+    {
+      "id": "Aqueduct climb",
+      "asset": "aqueduct-run",
+      "a": 21.6,
+      "b": 24.8,
+      "from": 0,
+      "anchorA": [
+        960,
+        730
+      ],
+      "anchorB": [
+        960,
+        710
+      ],
+      "scaleA": 255,
+      "scaleB": 230,
+      "copy": "上へ、進む。"
+    },
+    {
+      "id": "Wind timing",
+      "asset": "wind-transfer",
+      "a": 24.8,
+      "b": 28,
+      "from": 0,
+      "anchorA": [
+        960,
+        820
+      ],
+      "anchorB": [
+        960,
+        800
+      ],
+      "scaleA": 220,
+      "scaleB": 245,
+      "copy": "一瞬の、判断。"
+    },
+    {
+      "id": "Stone and body together",
+      "asset": "stone-flight",
+      "a": 28,
+      "b": 31.2,
+      "from": 1,
+      "rate": 0.5,
+      "anchorA": [
+        960,
+        680
+      ],
+      "anchorB": [
+        960,
+        650
+      ],
+      "scaleA": 300,
+      "scaleB": 275,
+      "copy": "灯を、離さず。",
+      "slow": true
+    },
+    {
+      "id": "Moonward reprise",
+      "asset": "moon-run",
+      "a": 31.2,
+      "b": 34.4,
+      "from": 0,
+      "anchorA": [
+        390,
+        740
+      ],
+      "anchorB": [
+        965,
+        700
+      ],
+      "scaleA": 220,
+      "scaleB": 235,
+      "copy": ""
+    },
+    {
+      "id": "Aqueduct close detail",
+      "asset": "aqueduct-run",
+      "a": 34.4,
+      "b": 37.6,
+      "from": 0.03,
+      "anchorA": [
+        960,
+        730
+      ],
+      "anchorB": [
+        960,
+        710
+      ],
+      "scaleA": 300,
+      "scaleB": 265,
+      "copy": "まだ、制作中。"
+    },
+    {
+      "id": "Wind and light",
+      "asset": "wind-ascent",
+      "a": 37.6,
+      "b": 40.8,
+      "from": 0.03,
+      "anchorA": [
+        960,
+        720
+      ],
+      "anchorB": [
+        960,
+        675
+      ],
+      "scaleA": 245,
+      "scaleB": 215,
+      "copy": "この世界の、続きを。"
+    },
+    {
+      "id": "Support main-game creation",
+      "asset": "stone-flight",
+      "a": 40.8,
+      "b": 44,
+      "from": 0.03,
+      "anchorA": [
+        960,
+        690
+      ],
+      "anchorB": [
+        960,
+        650
+      ],
+      "scaleA": 245,
+      "scaleB": 220,
+      "copy": "本編制作を、応援する。"
+    },
+    {
+      "id": "Cut rhythm one",
+      "asset": "jump-city",
+      "a": 44,
+      "b": 45.6,
+      "from": 1.35,
+      "anchorA": [
+        770,
+        675
+      ],
+      "anchorB": [
+        950,
+        690
+      ],
+      "scaleA": 280,
+      "scaleB": 235,
+      "copy": ""
+    },
+    {
+      "id": "Cut rhythm two",
+      "asset": "wind-transfer",
+      "a": 45.6,
+      "b": 47.2,
+      "from": 1,
+      "anchorA": [
+        960,
+        820
+      ],
+      "anchorB": [
+        960,
+        800
+      ],
+      "scaleA": 260,
+      "scaleB": 230,
+      "copy": ""
+    },
+    {
+      "id": "Cut rhythm three",
+      "asset": "core-floor",
+      "a": 47.2,
+      "b": 48,
+      "from": 0,
+      "anchorA": [
+        265,
+        300
+      ],
+      "anchorB": [
+        265,
+        285
+      ],
+      "scaleA": 590,
+      "scaleB": 550,
+      "copy": ""
+    },
+    {
+      "id": "Cut rhythm four",
+      "asset": "wind-leap",
+      "a": 48,
+      "b": 48.8,
+      "from": 0.3,
+      "anchorA": [
+        980,
+        675
+      ],
+      "anchorB": [
+        990,
+        700
+      ],
+      "scaleA": 270,
+      "scaleB": 245,
+      "copy": ""
+    },
+    {
+      "id": "Game identity",
+      "asset": "moon-run",
+      "a": 48.8,
+      "b": 52,
+      "from": 0,
+      "anchorA": [
+        390,
+        735
+      ],
+      "anchorB": [
+        960,
+        700
+      ],
+      "scaleA": 230,
+      "scaleB": 210,
+      "logo": true,
+      "copy": ""
+    },
+    {
+      "id": "Campaign starts",
+      "asset": "wind-transfer",
+      "a": 52,
+      "b": 54.4,
+      "from": 0.3,
+      "anchorA": [
+        960,
+        820
+      ],
+      "anchorB": [
+        960,
+        800
+      ],
+      "scaleA": 240,
+      "scaleB": 220,
+      "copy": "クラファン開始",
+      "sub": "物語・演出・検証など 本編制作へ"
+    },
+    {
+      "id": "Support destination first",
+      "asset": "stone-flight",
+      "a": 54.4,
+      "b": 57.6,
+      "from": 0.03,
+      "anchorA": [
+        960,
+        680
+      ],
+      "anchorB": [
+        960,
+        650
+      ],
+      "scaleA": 230,
+      "scaleB": 215,
+      "cta": true,
+      "copy": ""
+    },
+    {
+      "id": "Support destination final",
+      "asset": "wind-transfer",
+      "a": 57.6,
+      "b": 60,
+      "from": 0.3,
+      "anchorA": [
+        960,
+        820
+      ],
+      "anchorB": [
+        960,
+        800
+      ],
+      "scaleA": 230,
+      "scaleB": 210,
+      "cta": true,
+      "copy": ""
+    }
+  ],
+  "originalOpeningMovieSha256": "59778d72e2a88c3a02da78d87b233d92caa6abd0c39a24bacc1e1cca3d2a864a",
+  "gameGenerated": false,
+  "narration": false,
+  "model": false,
+  "framesReady": true,
+  "wholePictureRendered": false
+}

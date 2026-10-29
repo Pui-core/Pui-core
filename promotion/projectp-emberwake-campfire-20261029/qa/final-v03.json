@@ -1,0 +1,281 @@
+{
+  "issue": 151,
+  "file": "videos/emberwake-campfire-pv60-v03.mp4",
+  "sha256": "24fe267487fe22e6524fe3229d37af70057b3212104ca3fe7dbdd6e3dd98aa51",
+  "state": "制作/技術・限定実画像QA完了、公開とNAS配送はRoot別工程",
+  "boundary": 54.4,
+  "redrawnOnlyLastSeconds": 5.6,
+  "gameRecapture": false,
+  "whole60NativeRedraw": false,
+  "originalFileSha256": "d378a4c74744658903d999e81ee0b28c0f59c5a565d0978808fa864526d7f183",
+  "retainedDecodedFrames": 1632,
+  "retainedDecodedFramesByteIdentical": true,
+  "h264PrefixPackets": 1632,
+  "h264PrefixPacketMismatches": [
+    {
+      "at": "0.000000",
+      "key": true
+    },
+    {
+      "at": "2.000000",
+      "key": true
+    },
+    {
+      "at": "4.000000",
+      "key": true
+    },
+    {
+      "at": "6.000000",
+      "key": true
+    },
+    {
+      "at": "8.000000",
+      "key": true
+    },
+    {
+      "at": "8.800000",
+      "key": true
+    },
+    {
+      "at": "10.800000",
+      "key": true
+    },
+    {
+      "at": "12.800000",
+      "key": true
+    },
+    {
+      "at": "14.800000",
+      "key": true
+    },
+    {
+      "at": "15.300000",
+      "key": true
+    },
+    {
+      "at": "17.300000",
+      "key": true
+    },
+    {
+      "at": "19.300000",
+      "key": true
+    },
+    {
+      "at": "21.300000",
+      "key": true
+    },
+    {
+      "at": "23.300000",
+      "key": true
+    },
+    {
+      "at": "25.300000",
+      "key": true
+    },
+    {
+      "at": "27.300000",
+      "key": true
+    },
+    {
+      "at": "28.000000",
+      "key": true
+    },
+    {
+      "at": "30.000000",
+      "key": true
+    },
+    {
+      "at": "32.000000",
+      "key": true
+    },
+    {
+      "at": "34.000000",
+      "key": true
+    },
+    {
+      "at": "36.000000",
+      "key": true
+    },
+    {
+      "at": "38.000000",
+      "key": true
+    },
+    {
+      "at": "40.000000",
+      "key": true
+    },
+    {
+      "at": "42.000000",
+      "key": true
+    },
+    {
+      "at": "44.000000",
+      "key": true
+    },
+    {
+      "at": "45.600000",
+      "key": true
+    },
+    {
+      "at": "47.200000",
+      "key": true
+    },
+    {
+      "at": "48.000000",
+      "key": true
+    },
+    {
+      "at": "48.800000",
+      "key": true
+    },
+    {
+      "at": "50.800000",
+      "key": true
+    },
+    {
+      "at": "52.800000",
+      "key": true
+    }
+  ],
+  "h264PrefixNonKeyPacketsByteIdentical": true,
+  "audio": {
+    "packets": 2814,
+    "allAacPacketPayloadsByteIdentical": true,
+    "source": "original v02 fullAAC, no audio re-encode or filter",
+    "allAacPtsIdentical": true,
+    "inheritedFromIdenticalAac": {
+      "integratedLUFS": -15.9,
+      "lraLU": 3,
+      "truePeakDbFS": -2,
+      "samplePeakDbFS": -2.244712311094616,
+      "clippedSamples": 0,
+      "oneSecondBins": 60,
+      "allBinsNonzero": true
+    }
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "frames": "1800",
+    "duration": "60.000000",
+    "exactUniform30fpsPts": true
+  },
+  "core": {
+    "sha256": "21fdd74aa90391da2e40dc9310a21c11875b77b02f349c575a2c90c8e40d4af1",
+    "global": [
+      56.4,
+      60
+    ],
+    "source": [
+      0,
+      3.6
+    ],
+    "frames": 108,
+    "mouthAlways0": true,
+    "position": [
+      150,
+      1100
+    ],
+    "scale": 24
+  },
+  "native": {
+    "wordmark.pcraft": {
+      "relativePath": "projects/wordmark.pcraft",
+      "sha256": "04c7714f03a3ac89602efb50ae0e7ff93af1f7d796d9be5395f92946717b5fb6"
+    },
+    "pv60-v02.ecproj": {
+      "relativePath": "projects/pv60-v02.ecproj",
+      "sha256": "c37574662329c5bc098bc234d1c552eda4b369a2339728a7796ccf280cfec6d6"
+    },
+    "pv60-v02.fcproj": {
+      "relativePath": "projects/pv60-v02.fcproj",
+      "sha256": "30c35f8d0492b85373123dc479199cbb82c6724e6414a0561ca4e138eff32b03"
+    },
+    "closing-natural.ecproj": {
+      "relativePath": "projects/closing-natural.ecproj",
+      "sha256": "e5a5287668e7903f441c39937dd2a33dd07bcea47a597700d966f3343f1661fc"
+    },
+    "closing-natural.fcproj": {
+      "relativePath": "projects/closing-natural.fcproj",
+      "sha256": "b095892b02fad4ad0405fb29e911d53691afd3bfdc1b3d0e02d52759df4236f4"
+    },
+    "pv60-v03.fcproj": {
+      "relativePath": "projects/pv60-v03.fcproj",
+      "sha256": "ae8503ef64a3ab131e7d3041e1fa93bfaaf842408695ba7552986d2c4bbd3e74"
+    }
+  },
+  "wholeAVDecode": true,
+  "subjectiveListen": false,
+  "published": false,
+  "nasDelivery": false,
+  "retainedDecodedProof": "natural-final/fresh-prefix-proof.json",
+  "finalVisualReview": {
+    "actualFullFrames": [
+      54.8,
+      55.6,
+      56.7,
+      57.9,
+      59.7,
+      58
+    ],
+    "entrySheet": {
+      "center": 56.4,
+      "frames": 22
+    },
+    "modelAboveCta": true,
+    "actorAboveCta": true,
+    "noModelCtaOverlap": true,
+    "noTextClippingSeen": true,
+    "finalEncodedBlinkAt58sObserved": true
+  },
+  "selftest": {
+    "nativeExecution": true,
+    "savedReopened": true,
+    "fullAvDecode": true,
+    "actualStillAndConsecutiveFramesViewed": true,
+    "subjectiveListen": false,
+    "realtimeWholePlayback": false,
+    "ownerCreativeAdoption": false
+  },
+  "visual": {
+    "openingIndependent": {
+      "representatives": 10,
+      "transitions": [
+        1.6,
+        8.8
+      ],
+      "framesPerTransition": 22,
+      "mandatoryDefects": 0
+    },
+    "allSceneSelfReview": {
+      "representatives": 26,
+      "transitions": [
+        15.2,
+        26,
+        54.4
+      ],
+      "mandatoryDefectsAfterCorrection": 0
+    },
+    "closingSelfReview": {
+      "representatives": [
+        54.8,
+        55.6,
+        56.7,
+        57.9,
+        58,
+        59.7
+      ],
+      "entryConsecutiveFrames": 22,
+      "modelMouthClosed": true,
+      "blinkSeen": true,
+      "nonOcclusion": true
+    },
+    "scope": "No solution-order board/exit/COMPLETE/story ending seen in reviewed selected scenes. Individual arrows and E/diamond UI remain; not an entire-game spoiler assessment."
+  },
+  "recovery": {
+    "rejectedInitialMux": "1/30 and1/15360 track timebases concatenated incorrectly; preserved under private/rejected-timebase-v03",
+    "fix": "Copy remux tail to1/15360 before joining; fresh full decode,1632 frame hash and1800 uniform pts verified",
+    "staleQa": "Existing framemd5 output errors were caught; fresh distinct files reran and matched. FFmpeg wrapper now rejects diagnostic errors even if exit0."
+  }
+}

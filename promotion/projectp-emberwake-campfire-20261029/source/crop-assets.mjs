@@ -1,0 +1,4 @@
+import fs from'node:fs';import{stage,ff,hash,save}from'./background.mjs';
+const root=stage+'/pv-v01',j=JSON.parse(fs.readFileSync(root+'/source-assets.json'));
+for(const a of j.assets){if(!['jump-city','wind-leap','moon-run','core-floor'].includes(a.id))continue;const original=a.file,crop=a.id==='core-floor'?[70,230,460,220]:[0,360,1920,720],out=root+'/media/'+a.id+'-clean.mp4';if(fs.existsSync(out))throw Error('Existing clean crop');await ff(['-i',original,'-vf',`crop=${crop[2]}:${crop[3]}:${crop[0]}:${crop[1]}`,'-an','-c:v','libx264','-preset','veryfast','-crf','16','-pix_fmt','yuv420p',out],root+'/qa/clean-'+a.id+'.json');Object.assign(a,{uncroppedSha256:a.sha256,crop,file:out,width:crop[2],height:crop[3],sha256:hash(out),exclusion:'Remove HUD, poster, and explicit puzzle-order signs before editorial framing.'});}
+save(root+'/source-assets-clean.json',j);

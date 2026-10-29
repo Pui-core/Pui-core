@@ -1,0 +1,26 @@
+import fs from 'node:fs';
+import {native,hash,save} from './background.mjs';
+// config: outputDir (empty), deliveryDir (empty), source (official actual screenshot03), publicFacts.
+const c=JSON.parse(fs.readFileSync(process.argv[2])),root=c.outputDir,dst=c.deliveryDir;
+const facts=JSON.parse(fs.readFileSync(c.publicFacts));
+if(facts.projectId!==993744||facts.campaign.goalYen!==500000||facts.campaign.endDate!=='2026-12-23'||!facts.publication.publiclyReadable)throw Error('Public facts differ');
+if(hash(c.source)!=='b04546c173878efd2bb71a79269d3bbe5e006023ade9e0cae7bb1aecbf5f155c')throw Error('Actual screenshot differs');
+fs.mkdirSync(root+'/qa',{recursive:true});fs.mkdirSync(dst,{recursive:true});
+const stem='emberwake-campfire-launch-v02',project=root+'/'+stem+'.pcraft',crop=root+'/real-game-r2.png';
+if(fs.existsSync(project)||fs.existsSync(dst+'/'+stem+'.pcraft'))throw Error('Existing output retained; inspect previous checkpoint');
+await native('photocraft',['run',c.source,'--cmd','image.crop','--params',JSON.stringify({x:640,y:220,width:1280,height:860,deleteCroppedPixels:true,contentAware:false}),'--out',crop,'--format','png'],root+'/qa/game-crop.json');
+const commands=[["shape.create",{"kind":"rect","rect":[0,0,1600,900],"fill":"#07131c","name":"Dark ash base"}],["file.placeEmbedded",{"path":"/home/pui/tmp/projectp151-announcement-image/media/real-game-r2.png","fit":false,"scale":100,"center":[1144,470],"smartObject":true}],["shape.create",{"kind":"rect","rect":[0,0,530,900],"fill":"#07131c","name":"Quiet left for readable title"}],["shape.create",{"kind":"rect","rect":[530,0,310,900],"fill":{"gradient":{"stops":[[0,"#07131c"],[0.28,"#07131cf0"],[1,"#07131c00"]],"angle":0,"scale":100,"style":"linear"}},"name":"Ash to actual game soft edge"}],["type.create",{"name":"Game title","text":"EMBERWAKE","x":64,"y":147,"size":85,"color":"#f5eedc","font":"Meiryo","style":"Bold","weight":700}],["type.create",{"name":"Japanese game title","text":"/ 灰の灯","x":68,"y":216,"size":48,"color":"#f5eedc","font":"Meiryo","style":"Bold","weight":700}],["shape.create",{"kind":"rect","rect":[68,257,88,4],"fill":"#f3b565","name":"Warm ember rule"}],["type.create",{"name":"Crowdfunding","text":"クラウドファンディング","x":68,"y":356,"size":42,"color":"#f5eedc","font":"Meiryo","style":"Bold","weight":700}],["type.create",{"name":"Launch","text":"開始","x":64,"y":466,"size":92,"color":"#f3b565","font":"Meiryo","style":"Bold","weight":700}],["type.create",{"name":"Public campaign terms","text":"目標50万円｜12月23日まで","x":68,"y":589,"size":36,"color":"#f5eedc","font":"Meiryo","style":"Bold","weight":700}],["type.create",{"name":"Search platform","text":"CAMPFIREで","x":68,"y":741,"size":30,"color":"#a9c1c3","font":"Meiryo","style":"Bold","weight":700}],["type.create",{"name":"Search action","text":"EMBERWAKE を検索","x":68,"y":791,"size":34,"color":"#f5eedc","font":"Meiryo","style":"Bold","weight":700}],["type.create",{"name":"Development gameplay note","text":"開発中の実ゲーム画面","x":1194,"y":869,"size":21,"color":"#a9c1c3","font":"Meiryo","style":"Bold","weight":700}]];
+for(const row of commands)if(row[0]==='file.placeEmbedded')row[1].path=crop;
+const args=['run','--new',JSON.stringify({width:1600,height:900,resolution:72,name:'EMBERWAKE クラファン開始告知151',background:'#07131c'})];
+for(const[id,params]of commands)args.push('--cmd',id,'--params',JSON.stringify(params));
+await native('photocraft',[...args,'--out',project],root+'/qa/native-save.json');
+const info=JSON.parse((await native('photocraft',['info',project,'--compact'],root+'/qa/native-reopen.json')).stdout);
+if(info.width!==1600||info.height!==900||info.warnings.length)throw Error('Native project differs');
+for(const l of info.layers.filter(l=>l.kind==='Type'))if(l.bounds[0]<0||l.bounds[1]<0||l.bounds[0]+l.bounds[2]>1600||l.bounds[1]+l.bounds[3]>900)throw Error('Type clipping');
+await native('photocraft',['convert',project,root+'/'+stem+'.png','--format','png'],root+'/qa/private-png.json');
+fs.copyFileSync(project,dst+'/'+stem+'.pcraft');
+await native('photocraft',['info',dst+'/'+stem+'.pcraft','--compact'],root+'/qa/delivered-native-reopen.json');
+for(const[ext,format]of[['png','png'],['jpg','jpeg']])await native('photocraft',['convert',dst+'/'+stem+'.pcraft',dst+'/'+stem+'.'+ext,'--format',format],root+'/qa/delivered-'+ext+'.json');
+if(hash(root+'/'+stem+'.png')!==hash(dst+'/'+stem+'.png'))throw Error('Delivered original reexport differs');
+for(const width of[1280,320])await native('photocraft',['run',dst+'/'+stem+'.pcraft','--cmd','image.imageSize','--params',JSON.stringify({width,height:width*9/16,resample:'lanczos'}),'--out',dst+'/'+stem+'-'+width+'.png','--format','png'],root+'/qa/preview-'+width+'.json');
+save(root+'/image-output.json',{canvas:[1600,900],sourceSha:hash(c.source),outputs:Object.fromEntries(['pcraft','png','jpg'].map(x=>[x,{file:dst+'/'+stem+'.'+x,sha256:hash(dst+'/'+stem+'.'+x)}])),actualVisualReview:false,published:false});

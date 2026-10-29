@@ -1,0 +1,26 @@
+{
+  "issue": 151,
+  "tools": {
+    "photocraft": {
+      "version": "0.15.1",
+      "platform": "official Linux x86_64 release previously audited and used in146",
+      "cliSha256": "16fbb244d69d5c32dd60435e95b1c893d04bf7ef6e3d37fb967eecb57f6e0bea"
+    },
+    "effectcraft": {
+      "version": "0.14.0",
+      "platform": "official Linux x86_64 release previously audited and used in146",
+      "cliSha256": "884a7be8d82ea3e5534cd1c35db4ddc8880e3c3a8d2c1040a256546f84b6d125"
+    },
+    "filmcraft": {
+      "version": "0.10.0",
+      "platform": "official Linux x86_64 release previously audited and used in146",
+      "cliSha256": "4d168e81acf5c1fc986eb2a6e5f7cbf73732607aac3423e16494a486a4802ac0"
+    }
+  },
+  "privateXvfb": true,
+  "dedicatedXdg": true,
+  "waylandUnset": true,
+  "cpuMax": 2,
+  "sharedWindowsActions": 0,
+  "sdkBinariesInGit": false
+}

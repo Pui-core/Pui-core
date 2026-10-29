@@ -1,0 +1,165 @@
+{
+  "issue": 151,
+  "state": "completed private announcement image; not posted",
+  "facts": {
+    "projectId": 993744,
+    "url": "https://camp-fire.jp/projects/993744/view",
+    "goalYen": 500000,
+    "endDate": "2026-12-23",
+    "sourceFactsSha": "6962188cac4d1afeaae6dfb2ab77d034a09538d2aec637ce4e7773b4a4ec0b2a"
+  },
+  "source": {
+    "relativeFile": "screenshots/03-I-climbing-the-belfry.png",
+    "sha": "b04546c173878efd2bb71a79269d3bbe5e006023ade9e0cae7bb1aecbf5f155c",
+    "kind": "actual game screenshot",
+    "crop": [
+      640,
+      220,
+      1280,
+      860
+    ],
+    "scale": 1,
+    "generatedImage": false,
+    "oldComposedCardUsed": false
+  },
+  "canvas": [
+    1600,
+    900
+  ],
+  "native": {
+    "app": "PhotoCraft official Linux0.15.1",
+    "cliSha": "16fbb244d69d5c32dd60435e95b1c893d04bf7ef6e3d37fb967eecb57f6e0bea",
+    "savedReopenedExported": true,
+    "deliveredReopened": true,
+    "reexportPngByteSame": true
+  },
+  "textBounds": [
+    {
+      "name": "Development gameplay note",
+      "text": "開発中の実ゲーム画面",
+      "bounds": [
+        1194,
+        851,
+        211,
+        21
+      ]
+    },
+    {
+      "name": "Search action",
+      "text": "EMBERWAKE を検索",
+      "bounds": [
+        69,
+        762,
+        346,
+        32
+      ]
+    },
+    {
+      "name": "Search platform",
+      "text": "CAMPFIREで",
+      "bounds": [
+        68,
+        718,
+        196,
+        26
+      ]
+    },
+    {
+      "name": "Public campaign terms",
+      "text": "目標50万円｜12月23日まで",
+      "bounds": [
+        70,
+        557,
+        467,
+        38
+      ]
+    },
+    {
+      "name": "Launch",
+      "text": "開始",
+      "bounds": [
+        69,
+        389,
+        179,
+        84
+      ]
+    },
+    {
+      "name": "Crowdfunding",
+      "text": "クラウドファンディング",
+      "bounds": [
+        68,
+        318,
+        463,
+        42
+      ]
+    },
+    {
+      "name": "Japanese game title",
+      "text": "/ 灰の灯",
+      "bounds": [
+        68,
+        176,
+        189,
+        49
+      ]
+    },
+    {
+      "name": "Game title",
+      "text": "EMBERWAKE",
+      "bounds": [
+        70,
+        84,
+        574,
+        64
+      ]
+    }
+  ],
+  "outputs": {
+    "emberwake-campfire-launch-v02.pcraft": {
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/private/announcement/emberwake-campfire-launch-v02.pcraft",
+      "sha256": "042817d80a236efa3240e3fe5f91f43fe79a48040f1f10962e471dd822a278d7",
+      "bytes": 474006
+    },
+    "emberwake-campfire-launch-v02.png": {
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/private/announcement/emberwake-campfire-launch-v02.png",
+      "sha256": "de927bc8f9dbdd41c3f5037d13da689b580aa40d0db0d940e2cc4b40cdfa99b9",
+      "bytes": 88788
+    },
+    "emberwake-campfire-launch-v02.jpg": {
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/private/announcement/emberwake-campfire-launch-v02.jpg",
+      "sha256": "353522ec48d27fcc9bc7a752d284eac6207eaa5f692ffc4860e17c8181defefe",
+      "bytes": 143400
+    },
+    "emberwake-campfire-launch-v02-1280.png": {
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/private/announcement/emberwake-campfire-launch-v02-1280.png",
+      "sha256": "bcaea460830210c87a2a6bf5cd6e2d35c38f9b7e7de2414ca0ff62724767a5b7",
+      "bytes": 133222
+    },
+    "emberwake-campfire-launch-v02-320.png": {
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/private/announcement/emberwake-campfire-launch-v02-320.png",
+      "sha256": "5a3288deee3739f2bbf44931817b46063e68946417dc9497f2a935680d999a4b",
+      "bytes": 33214
+    }
+  },
+  "visualReview": {
+    "reviewer": "missyou_finish",
+    "actual1280And320Viewed": true,
+    "mainTextAndTermsReadable": true,
+    "characterLightAndStoneNotCovered": true,
+    "croppedHudFragmentRemoved": true,
+    "sourceScreenshotAndExistingMainViewed": true,
+    "noSolutionExitCompleteInChosenCrop": true,
+    "notWholeGameInspection": true,
+    "ownerCreativeAdoption": false
+  },
+  "privateXvfb": true,
+  "dedicatedXdg": true,
+  "cpuLimit": 2,
+  "sourceEdits": 0,
+  "windowsGuiInput": 0,
+  "nasCopy": 0,
+  "modelOrVideoRerender": 0,
+  "profileLinkClaim": false,
+  "recipeExecution": "Original private build-announcement-v02.mjs actually executed; portable recipe is syntax checked, not rerun"
+}

@@ -1,0 +1,92 @@
+{
+  "issue": 151,
+  "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/videos/emberwake-campfire-opening-v02.mp4",
+  "sha256": "13bd5ef02b6397f278e13b16a6aa9f76a262b7b16205c1a068423fe150f427d6",
+  "decodeExit": 0,
+  "streams": [
+    {
+      "codec": "h264",
+      "type": "video",
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "duration": "15.200000",
+      "frames": "456"
+    },
+    {
+      "codec": "aac",
+      "type": "audio",
+      "fps": "0/0",
+      "duration": "15.210000",
+      "frames": "713",
+      "rate": "48000",
+      "channels": 2
+    }
+  ],
+  "aacLoudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -16.8 LUFS\n    Threshold: -26.8 LUFS\n\n  Loudness range:\n    LRA:         3.3 LU\n    Threshold: -37.2 LUFS\n    LRA low:   -18.0 LUFS\n    LRA high:  -14.7 LUFS\n\n  True peak:\n    Peak:       -3.0 dBFS\n",
+  "visual": {
+    "actualFinalFrames": 10,
+    "continuousTransitions": [
+      {
+        "at": 1.6,
+        "frames": 22
+      },
+      {
+        "at": 8.8,
+        "frames": 22
+      }
+    ],
+    "authorActuallyViewedContactAndBothTransitions": true,
+    "independentRequiredChanges": 0,
+    "proposals": [
+      "Closer central placement ofhands/stone in later closeups",
+      "Show body andcarriedcore moving together later"
+    ],
+    "spoilerSequenceExitEndingNotSeenInReviewedScope": true,
+    "manifestSha256": "13bd5ef02b6397f278e13b16a6aa9f76a262b7b16205c1a068423fe150f427d6"
+  },
+  "technicalNative": {
+    "issue": 151,
+    "state": "15.2second actual opening draft; full60notcomplete; unpublished",
+    "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/videos/emberwake-campfire-opening-v02.mp4",
+    "sha256": "13bd5ef02b6397f278e13b16a6aa9f76a262b7b16205c1a068423fe150f427d6",
+    "duration": 15.2,
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "photocraft": {
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/projects/wordmark.pcraft",
+      "sha256": "04c7714f03a3ac89602efb50ae0e7ff93af1f7d796d9be5395f92946717b5fb6"
+    },
+    "effectcraft": {
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/projects/opening-v02.ecproj",
+      "sha256": "977e4960dc260b48303482b396b47c8902763ff4e7486d5a2bbfb184ebbff288"
+    },
+    "filmcraft": {
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/projects/opening-v02.fcproj",
+      "sha256": "81110cce32715d07f276c7b2bc1b8d40db3d987a37f6af2ba90edfb625ea90fd"
+    },
+    "music": {
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/media/opening-music.wav",
+      "sha256": "1bd4153df7ddad1f32c17a5eb4c04290edf4dd029e8a04e3c43d2227689c3e33",
+      "source": "Cipher / Kevin MacLeod / CC BY4.0",
+      "bpm": 150,
+      "sourceStart": 0.835,
+      "beatSeconds": 0.4,
+      "signalOnsetAnalysis": "qa/beat-analysis.json"
+    },
+    "voice": false,
+    "natural": false,
+    "gameGeneration": false,
+    "sharedWindowsGuiActions": 0,
+    "subjectiveListen": false,
+    "ownerAdoption": false,
+    "finalQA": "PENDING"
+  },
+  "narration": false,
+  "naturalRmsNotApplicable": true,
+  "subjectiveListen": false,
+  "whole60NotApproved": true
+}
