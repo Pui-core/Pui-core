@@ -8,11 +8,11 @@ export const ROOT = process.env.OSAYU_TELOP_ROOT || '/home/pui/Videos/Osayu-Telo
 const PC = process.env.PHOTOCRAFT_CLI || '/mnt/c/Program Files/PhotoCraft/photocraft-cli.exe';
 const IM = '/mnt/c/Program Files/ImageMagick-7.1.2-Q16-HDRI/magick.exe';
 const STAGE = process.env.OSAYU_TELOP_STAGE || '/mnt/c/Users/pui/AppData/Local/Temp/osayu-telop-149';
-export const FONT = 'Cherry Bomb One';
+export const FONT = 'Osayu Puku';
 export const WORDS = [
   ['01-arigatou', 'ありがとう'], ['02-ohasayu', 'おはさゆ'],
-  ['03-welcome', 'はじめまして'], ['04-wait', 'ちょっとまってね'],
-  ['05-live', 'はいしんちゅう'], ['06-sing', 'うたいます'],
+  ['03-welcome', '初見さん歓迎'], ['04-wait', 'ちょっと待ってね'],
+  ['05-live', '配信中'], ['06-sing', '歌ってみた'],
   ['07-otsusayu', 'おつさゆ'], ['08-matane', 'またね'],
 ];
 
@@ -147,10 +147,10 @@ export function init() {
   for (const p of [STAGE, ROOT, ...['PNG', 'PSD', 'PhotoCraft', 'qa'].map(p => path.join(ROOT, p))]) fs.mkdirSync(p, {recursive: true});
   const fontList = JSON.parse(run(['run', '--new', '{"width":16,"height":16,"background":"transparent"}', '--cmd', 'type.fonts', '--params', JSON.stringify({family: FONT})]).trim());
   if (!fontList.result?.faces?.some(f => f.family === FONT)) throw Error('Install the bundled OFL font in Windows before rendering.');
-  const font=path.join(ROOT,'assets/cherry-bomb-one/CherryBombOne-Regular.ttf');
-  const installed='/mnt/c/Users/pui/AppData/Local/Microsoft/Windows/Fonts/CherryBombOne-Regular.ttf';
+  const font=path.join(ROOT,'font/OsayuPuku-Regular.ttf');
+  const installed='/mnt/c/Users/pui/AppData/Local/Microsoft/Windows/Fonts/OsayuPuku-Regular.ttf';
   if (sha(font)!==sha(installed)) throw Error('Installed font differs from the bundled original');
-  fs.writeFileSync(path.join(ROOT,'qa/font.json'),JSON.stringify({family:FONT,sha256:sha(font),faces:fontList.result.faces,source:'https://github.com/google/fonts/tree/main/ofl/cherrybombone',license:'OFL-1.1',modified:false},null,2));
+  fs.writeFileSync(path.join(ROOT,'qa/font.json'),JSON.stringify({family:FONT,sha256:sha(font),faces:fontList.result.faces,source:['https://github.com/google/fonts/tree/main/ofl/cherrybombone','https://github.com/google/fonts/tree/main/ofl/mochiypopone'],license:'OFL-1.1',modified:true},null,2));
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname)) {
   init();

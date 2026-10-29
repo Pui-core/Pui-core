@@ -1,13 +1,15 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {gzipSync} from 'node:zlib';
 import {ROOT, WORDS, FONT, init, exec, win, run, author, sha} from './build.mjs';
 
 const STAGE='/mnt/c/Users/pui/AppData/Local/Temp/osayu-telop-149';
-const DELIVERY=process.env.OSAYU_TELOP_DELIVERY || '/mnt/f/Users/pui/Documents/gara/おさゆ_水色テロップ_20261029';
+const DELIVERY=process.env.OSAYU_TELOP_DELIVERY || '/mnt/f/Users/pui/Documents/gara/おさゆ_ぷくフォント_20261029';
 const IM='/mnt/c/Program Files/ImageMagick-7.1.2-Q16-HDRI/magick.exe';
 const REPO=path.resolve(new URL('../',import.meta.url).pathname);
-const PHONE=path.join(ROOT,'iPhone');
+const PHONE=path.join(ROOT,'iPhone-font');
 init();
+const fontBuild=JSON.parse(fs.readFileSync(path.join(ROOT,'font/font-qa.json'),'utf8'));
 fs.mkdirSync(PHONE,{recursive:true});
 function pngSize(file) {
   const b=fs.readFileSync(file); if (b.subarray(1,4).toString()!=='PNG') throw Error('Not PNG');
@@ -35,52 +37,71 @@ run(['convert',win(path.join(STAGE,'osayu-preview.pcraft')),win(path.join(STAGE,
 fs.cpSync(path.join(ROOT,'PNG'),path.join(PHONE,'PNG'),{recursive:true});
 fs.copyFileSync(path.join(STAGE,'osayu-layer-sheet.psd'),path.join(PHONE,'おさゆ_レイヤー素材.psd'));
 fs.copyFileSync(path.join(STAGE,'osayu-preview.png'),path.join(PHONE,'見本一覧.png'));
-// Bundle only the final font, unchanged, with its own original license.
-fs.cpSync(path.join(ROOT,'assets/cherry-bomb-one'),path.join(PHONE,'文字入力用フォント'),{recursive:true});
-const guide=`おさゆ 水色テロップ / 2026-10-29
+const fonts=path.join(PHONE,'フォント');fs.mkdirSync(fonts,{recursive:true});
+fs.copyFileSync(path.join(ROOT,'font/OsayuPuku-Regular.ttf'),path.join(fonts,'OsayuPuku-Regular.ttf'));
+fs.copyFileSync(path.join(ROOT,'assets/cherry-bomb-one/OFL.txt'),path.join(fonts,'OFL-CherryBombOne.txt'));
+fs.copyFileSync(path.join(ROOT,'assets/OFL.txt'),path.join(fonts,'OFL-MochiyPopOne.txt'));
+const guide=`おさゆ ぷく / Osayu Puku / 2026-10-29
 
-最初は PNG フォルダの画像を使ってください。
-水色のツヤ・白フチ込みで、背景が透明な画像です。
+【好きな文字を入力するフォントを追加】
+1. ZIPをiPhoneの「ファイル」に保存し、タップして展開します。
+2. フォント/OsayuPuku-Regular.ttf を長押し→共有→ibisPaintを選びます。
+3. ibisPaintでキャンバスを開き、文字入れのフォント一覧から
+   「おさゆ ぷく」または「Osayu Puku」を選び、好きな言葉を入力します。
+   外部ブラウザから取得したファイルを共有するのが現在の公式手順です。
+
+【水色のぷっくり文字にする】
+1. 文字入れの「スタイル」で文字色を #70D0E7、ふちどりの色を白へ。
+   ふちの太さは文字サイズの約7〜9%を出発点に、読める太さへ調整します。
+2. 元の文字レイヤーを複製して残します。
+3. 加工用レイヤーに「ベベル (内側)」を使い、光源を左上へ。
+   高さ・滑らかさ・ハイライトの大きさを調整します。
+   編集可能な文字に直接フィルターを掛けられない場合は、複製側をラスタライズします。
+4. 文言を変えるときは残しておいた文字レイヤーを編集し、効果を掛け直します。
+   TTF自体に色やツヤは含まれません。上記は見本へ近づける調整手順です。
+
+【フォントについて】
+PhotoCraftで英数字・かな・記号294文字の輪郭と太さ・間隔を調整しました。
+Cherry Bomb One (Satsuyako) と Mochiy Pop One (FONTDASU) を元にした派生書体です。
+日本語の常用漢字2,136字とJIS第1・第2水準の漢字6,355字に対応しています。
+かな等以外は元のMochiy Pop Oneを継承しています。中国語の網羅を目的にしていません。
+すべての漢字・絵文字への対応は保証しません。横書きの表示用として検証しています。
+元の著作権表示とOFL-1.1を同梱。動画・配信などで利用できます。
+
+【すぐ使える見本画像】
+PNGフォルダには水色のツヤ・白フチ込みで、背景が透明な画像8点があります。
 
 【ibisPaintに画像を入れる】
-1. ZIPをiPhoneの「ファイル」に保存し、タップして展開します。
-2. ibisPaintでキャンバスを開き、レイヤー画面の写真読み込みからPNGを選びます。
+1. ibisPaintでキャンバスを開き、レイヤー画面の写真読み込みからPNGを選びます。
    または「ファイル」でPNGの共有→ibisPaintへ読み込みます。
-3. サイズと位置を調整します。白い紙のように見えても、PNGの背景は透明です。
-4. 素材を書き出すときは「透過PNG」を選びます。
+2. サイズと位置を調整します。白い紙のように見えても、PNGの背景は透明です。
+3. 素材を書き出すときは「透過PNG」を選びます。
 
 【レイヤー版】
 「おさゆ_レイヤー素材.psd」は、言葉ごとに画像レイヤーを分けた素材一覧です。
 「ファイル」等の共有→ibisPaintで取り込めます。各レイヤーを選択・移動できます。
 PSD上の文字は画像です。文章の打ち替えはできません。
 
-【好きな文字を入力する場合】
-文字入力用フォント/CherryBombOne-Regular.ttf は、今回のベース書体です。
-ファイルの共有→ibisPaintへ追加し、文字入れのフォント一覧で「${FONT}」を選びます。
-この書体は作者Satsuyakoによる既存の公開フォントで、今回新作したフォントではありません。
-ひらがな・カタカナ中心の書体で、漢字は別書体を使ってください。
-TTFに水色・ツヤ・白フチは入っていません。完成した装飾はPNGで保たれます。
-新しい文言に同じ装飾を付けるPhotoCraft用ソースと編集原本は別フォルダへ保存しています。
-
 【内容】
 ${WORDS.map(([,t],i)=>String(i+1).padStart(2,'0')+' '+t).join('\n')}
 
 【利用・確認】
-フォントはOFL-1.1。元のOFL.txtを同梱しています。
-文字素材は動画・配信の背景や重ね素材として使えます。
 PCで透過・文字表示・PhotoCraft再読込・PSD往復を検証します。
 iPhone実機/ibisPaintでの取り込み・表示は未検証です。
 
 公式の取り込み案内:
 https://ibispaint.com/historyAndRights.jsp?newsID=290994073
 https://ibispaint.com/newFeature.jsp?lang=ja
+https://ibispaint.com/lecture/index.jsp?lang=ja&no=37
+https://ibispaint.com/lecture/index.jsp?no=113
 `;
 fs.writeFileSync(path.join(PHONE,'はじめに.txt'),guide);
 fs.mkdirSync(DELIVERY,{recursive:true});
 for(const d of ['PNG','PhotoCraft']) fs.cpSync(path.join(ROOT,d),path.join(DELIVERY,d),{recursive:true});
 fs.cpSync(PHONE,path.join(DELIVERY,'iPhone'),{recursive:true});
 fs.mkdirSync(path.join(DELIVERY,'制作ソース'),{recursive:true});
-for(const file of ['build.mjs','package.mjs']) fs.copyFileSync(new URL(file,import.meta.url),path.join(DELIVERY,'制作ソース',file));
+for(const file of ['build.mjs','package.mjs','extract-glyphs.mjs','compile-font.py','requirements-font.txt','font-proof.mjs']) fs.copyFileSync(new URL(file,import.meta.url),path.join(DELIVERY,'制作ソース',file));
+fs.copyFileSync(path.join(ROOT,'native-glyphs.json'),path.join(DELIVERY,'制作ソース/native-glyphs.json'));
 fs.copyFileSync(path.join(STAGE,'osayu-preview.png'),path.join(DELIVERY,'見本一覧.png'));
 
 const checks=[];
@@ -111,8 +132,18 @@ run(['convert',win(path.join(STAGE,'osayu-layer-sheet.pcraft')),win(path.join(ST
 run(['convert',win(psd),win(path.join(STAGE,'sheet-psd.png')),'--format','png'],'sheet-readback');
 if(sha(path.join(STAGE,'sheet-native.png'))!==sha(path.join(STAGE,'sheet-psd.png'))) throw Error('PSD roundtrip changed composite');
 const report={checkedAt:new Date().toISOString(),issue:'https://github.com/Pui-core/-/issues/149',renderer:'PhotoCraft CLI',font:JSON.parse(fs.readFileSync(path.join(ROOT,'qa/font.json'),'utf8')),images:checks,psd:{layers:8,pixelRoundtrip:true,sha256:sha(psd)},iphoneTest:false,ibisPaintTest:false,sourceCodeIsReproductionAuthority:true};
+if(fontBuild.sha256!==report.font.sha256 || !fontBuild.deterministicRebuild || !fontBuild.replacementCountersPreserved)throw Error('Font compilation mismatch');
+if(fontBuild.japaneseCoverage?.joyo?.supportedNonempty!==2136 || fontBuild.japaneseCoverage?.jis0208Level1And2?.supportedNonempty!==6355)throw Error('Required Japanese kanji missing');
+report.fontBuild=structuredClone(fontBuild);delete report.fontBuild.replacements;
+delete report.fontBuild.charsetSelection.removedCodepoints;
 fs.writeFileSync(path.join(ROOT,'qa/validation.json'),JSON.stringify(report,null,2));
 fs.mkdirSync(path.join(REPO,'delivery'),{recursive:true});
+fs.mkdirSync(path.join(REPO,'font'),{recursive:true});
+fs.copyFileSync(path.join(fonts,'OsayuPuku-Regular.ttf'),path.join(REPO,'font/OsayuPuku-Regular.ttf'));
+for(const file of ['OFL-CherryBombOne.txt','OFL-MochiyPopOne.txt'])fs.writeFileSync(path.join(REPO,'font',file),fs.readFileSync(path.join(fonts,file),'utf8').replace(/\r\n/g,'\n').replace(/[ \t]+$/gm,''));
+fs.writeFileSync(path.join(REPO,'font/native-glyphs.json.gz'),gzipSync(fs.readFileSync(path.join(ROOT,'native-glyphs.json')),{level:9}));
+fs.copyFileSync(path.join(ROOT,'cherry-codepoints.json'),path.join(REPO,'font/cherry-codepoints.json'));
+for(const file of ['joyo-codepoints.json','jis0208-level1-level2-codepoints.json'])fs.copyFileSync(path.join(ROOT,'kanji-qa',file),path.join(REPO,'font',file));
 const zip=path.join(DELIVERY,'osayu-telop-iphone.zip');
 const archive=path.join(STAGE,'osayu-telop-iphone-build.zip');
 fs.rmSync(archive,{force:true});

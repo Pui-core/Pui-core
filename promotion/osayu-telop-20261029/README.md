@@ -1,54 +1,82 @@
-# おさゆの水色テロップ
+# おさゆ ぷく — Osayu Puku
 
-動画・配信へ重ねる、丸い水色文字と白フチの素材8点。
-PhotoCraftの文字・レイヤースタイル・図形で制作しています。
+おさゆの動画・配信に使う、丸く太い字のフォントです。
+iPhoneのibisPaintへ追加して、好きな言葉を入力できます。
 
-[iPhone向け素材ZIP](delivery/osayu-telop-iphone.zip) / [見本一覧](delivery/preview.png)
+[フォント本体 TTF](font/OsayuPuku-Regular.ttf) / [iPhone向け一式ZIP](delivery/osayu-telop-iphone.zip)
 
-![素材一覧](delivery/preview.png)
+![フォント見本](delivery/font-preview.png)
 
-## iPhoneのibisPaintで使う
+## ibisPaintへ追加
 
-ZIPを「ファイル」に保存して展開し、`PNG`の画像をibisPaintのキャンバスへ読み込みます。
-PNGには色・ツヤ・白フチが含まれ、背景が透明です。
-`おさゆ_レイヤー素材.psd`では8つの言葉を別々の画像レイヤーとして移動できます。
+1. iPhoneでTTFを「ファイル」に保存します。ZIPの場合は展開します。
+2. `OsayuPuku-Regular.ttf`を長押し→共有→ibisPaintを選びます。
+3. 文字入れのフォント一覧から「おさゆ ぷく」または「Osayu Puku」を選び、好きな言葉を入力します。
 
-フォント追加用に、作者Satsuyakoの既存書体**Cherry Bomb One**の元TTF・OFLを同梱しています。
-ひらがな・カタカナを中心とする書体です。TTFの色や装飾は入力先で設定します。
-文字素材の装飾はPhotoCraftで作成したものです。
-[フォントの出典](https://github.com/google/fonts/tree/main/ofl/cherrybombone)
+外部ブラウザで取得したファイルを共有する方法は、[ibisPaintの公式案内](https://ibispaint.com/historyAndRights.jsp?newsID=290994073)に基づきます。
+iPhone実機とibisPaint内での取り込み・表示は未検証です。
 
-ibisPaintの公式手順では、外部ブラウザで取得したファイルを共有から取り込みます。
-詳しい手順と文字一覧はZIP内の`はじめに.txt`にあります。
-[フォント取り込みの公式案内](https://ibispaint.com/historyAndRights.jsp?newsID=290994073)、
-[PNG・PSD取り込みの公式案内](https://ibispaint.com/newFeature.jsp?lang=ja)
+## 水色のぷっくり文字にする
+
+TTFには字形が入っています。色・白フチ・ツヤはibisPaintで設定します。
+
+1. 文字入れの「スタイル」で文字色を`#70D0E7`、ふちどりを白にします。
+2. 元の文字レイヤーを複製して残し、加工用の複製へ「ベベル (内側)」を使います。
+3. 光源を左上にし、高さ・滑らかさ・ハイライトの大きさを調整します。文字を変えたときは効果を掛け直します。
+
+これは見本へ近づける調整手順です。設定値は文字サイズへ合わせて調整します。
+[文字装飾の公式案内](https://ibispaint.com/lecture/index.jsp?lang=ja&no=37)、
+[ベベルの公式案内](https://ibispaint.com/lecture/index.jsp?no=113)
+
+![装飾見本](delivery/preview.png)
+
+ZIPには装飾済み透過PNG8点と、言葉ごとの画像レイヤーを持つPSDも含みます。
+詳しい取り込み・装飾手順はZIP内の`はじめに.txt`を参照してください。
+
+## 字形と出典
+
+PhotoCraftで英数字・かな・記号294文字をアウトライン化し、横幅・高さ・丸い輪郭・間隔を調整しました。
+TTFコンパイラでこれらの実輪郭を組み立て、漢字等はMochiy Pop Oneから継承しています。
+常用漢字2,136字とJIS第1・第2水準の漢字6,355字を含む、日本語向けの収録範囲です。
+文化庁の[常用漢字の公式音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/)の全字と、JIS漢字の輪郭・文字コードを検査します。
+横書きの表示用として検証し、全漢字・絵文字・縦書きへの対応は保証しません。
+
+Cherry Bomb One（Satsuyako）とMochiy Pop One（FONTDASU）に基づく**OFL-1.1の派生書体**です。
+元の著作権表示とライセンスを`font`およびZIPへ同梱しています。
+[Cherry Bomb One](https://github.com/google/fonts/tree/main/ofl/cherrybombone)、
+[Mochiy Pop One](https://github.com/google/fonts/tree/main/ofl/mochiypopone)
 
 ## 制作と再現
 
-対象: [管理Issue149](https://github.com/Pui-core/-/issues/149)。
-元の参照画像・キャラクター画像を含みません。
-ベース書体をWindowsへ同梱ファイルと同じ版で追加し、PhotoCraft CLIとImageMagickを用意します。
-ImageMagickは透過の測定とツヤ配置用の画素測定に使用します。描画・編集はPhotoCraftが行います。
+対象: [管理Issue149](https://github.com/Pui-core/-/issues/149)。元の参照画像・キャラクター画像を含みません。
+`source/extract-glyphs.mjs`がPhotoCraftから実輪郭を取得し、`source/compile-font.py`がTTFへ変換します。
+`font/native-glyphs.json.gz`に取得した輪郭を保存しています。`requirements-font.txt`はコンパイラ依存の固定版です。
 
 ```bash
 export OSAYU_TELOP_ROOT=/home/pui/Videos/Osayu-Telop/2026-10-29
-# $OSAYU_TELOP_ROOT/assets/cherry-bomb-one/ に元TTF・OFL・METADATA.pbを配置
+# assetsに出典と同じ元TTF/OFLを配置し、WindowsにCherry Bomb Oneを追加
+node source/extract-glyphs.mjs
+# font配下の日本語文字一覧をROOT/kanji-qaへ配置
+# タスク専用venvへ source/requirements-font.txt を導入
+font-venv/bin/python source/compile-font.py
+# 作成したOsayu PukuをWindowsに追加してから実行
 node source/build.mjs
 node source/package.mjs
+node source/font-proof.mjs
 ```
 
-`source/build.mjs`が字形、装飾、文字ごとのツヤ、トリムを含む再現用の正本です。
-処理中に残すcommands JSONは基本スタイルのみで、全操作を表すものではありません。
-`source/package.mjs`はPhotoCraft原本を再読込し、PNG・8画像レイヤーのPSD・iPhone用ZIPを検査して納品します。
-Windows納品の`PhotoCraft`に、色文字・白フチの2つの編集可能な文字レイヤーと独立したツヤ図形を持つ原本8点があります。
-文言を変更した場合は、ツヤ配置と余白を再制作・再検査してください。
+輪郭取得の入力文字はCherry Bomb OneのASCIIおよびU+3000〜30FFの294文字です。
+`source/build.mjs`はフォントを用いたPhotoCraftの装飾見本、ツヤ配置と余白の制作正本です。
+基本commands JSONだけでは全操作を表しません。
+Windows納品先の`PhotoCraft`には編集可能な文字と独立したツヤ図形の原本があります。
 
 ## 確認範囲
 
-- 8点の透明画素・非透明画素と24pxの外周余白を実測。
-- Windows納品先の原本8点をPhotoCraftで再読込・保存・PNGへ書出し、元PNGとSHA一致。
-- PSDの8画像レイヤーと、PhotoCraft原本／PSDの合成PNG一致。
-- 担当者が文字だけの一覧を目視。ベース書体の元TTFとWindows導入済みTTFのSHA一致。
-- ZIP展開検査。結果は[validation.json](validation.json)。
+- TTF全字形の構造、294文字の穴と輪郭方向、元書体の対応文字の保持、二度のコンパイル一致。
+- 作成TTFをWindowsへ追加し、PhotoCraftで自由入力のかな・漢字・英数字と編集可能な16文字レイヤーを描画・再保存・再描画。
+- 使用TTFとWindows追加済みTTFのSHA一致。
+- 装飾8点の透過・外周24px余白、納品先原本の再読込とPNG一致、PSDの8画像レイヤーと合成一致、ZIP展開。
+- 担当者による最終一覧とフォント見本の目視。
 
-iPhone実機とibisPaint内での取り込み・表示、ownerの創作採用は未確認です。
+検査記録: [validation.json](validation.json)、[font-proof.json](font-proof.json)。
+iPhone／ibisPaintの実操作とownerの創作採用は未確認です。
