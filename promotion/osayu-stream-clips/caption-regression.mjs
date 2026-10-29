@@ -7,17 +7,27 @@ import {createHash} from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {buildCaptions,layout} from './captions.mjs';
+import {verifySpeakerAudit} from './speaker-audit.mjs';
 const fonts={normal:{family:'Test Normal'},reaction:{family:'Test Reaction'},shaky:{family:'Test Handdrawn'}};
 const speakers={host:{label:'配信者',side:'left',color:'#E84C89'},guest:{label:'相手',side:'right',color:'#3B8DE5'}};
 const edit={duration:3,groups:[{start:10,end:13,speed:1.2,outputStart:0,duration:3}]};
 const clip={title:'短い見出し',speakers,cuts:[{captions:[{start:10,end:11,text:'発話',speaker:'host'},{start:11,end:12,text:'返事',speaker:'guest'},{start:12,end:13,text:'反応',speaker:'host',fontTreatment:'handdrawn-wobbly'}]}]};
 const good=buildCaptions(clip,edit,fonts);
+assert.doesNotMatch(good.ass,/-name,/,'Speaker-name events must not be drawn');
+assert.doesNotMatch(good.ass,/配信者|相手/,'Visible speaker names must not survive in caption text');
 assert.deepEqual(good.audit.map(x=>x.side),['left','right','left']);
 assert.deepEqual(good.audit.map(x=>x.anchor[0]),[76,1004,76],'A font change must not move a speaker to the other lane');
 const missing=structuredClone(clip);delete missing.cuts[0].captions[0].speaker;
 assert.throws(()=>buildCaptions(missing,edit,fonts),/annotated speaker/,'Colour alone must never recreate missing speaker metadata');
 const escaped=structuredClone(clip);escaped.cuts[0].captions[0].start=9;
 assert.throws(()=>buildCaptions(escaped,edit,fonts),/did not map/);
+const audit={schemaVersion:1,sourceAudioMode:'original-mp4-natural-speed-direct-seek',decisions:clip.cuts[0].captions.map(s=>({clipId:'example',start:s.start,end:s.end,speaker:s.speaker,status:'reviewed',evidence:['original-audio-comparison']})),ownerConfirmations:[{clipId:'example',start:11,end:12,speaker:'guest',source:'owner'}]};
+const reviewedPlan={clips:[{...clip,id:'example'}]};
+assert.equal(verifySpeakerAudit(reviewedPlan,audit).decisionCount,3);
+const stale=structuredClone(reviewedPlan);stale.clips[0].cuts[0].captions[1].speaker='host';
+assert.throws(()=>verifySpeakerAudit(stale,audit),/disagrees/,'A valid left/right tag can still be the wrong voice');
+const ownerMismatch=structuredClone(audit);ownerMismatch.ownerConfirmations[0].speaker='host';
+assert.throws(()=>verifySpeakerAudit(reviewedPlan,ownerMismatch),/Owner-confirmed/);
 const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'osayu-caption-regression-'));
 try{
   const base=path.join(tmp,'base'),out=path.join(tmp,'output'),input=path.join(tmp,'plan.json');
@@ -32,4 +42,4 @@ try{
   assert.notEqual(r.status,0);assert.match(r.stderr,/cannot alter source intervals or speed/);
   assert.equal(fs.existsSync(out),false,'Reject an audio edit before creating output or launching a media process');
 }finally{fs.rmSync(tmp,{recursive:true});}
-console.log('PASS: required speaker, stable lanes, caption bounds and caption-only timeline guard');
+console.log('PASS: stable lanes, no visible speaker names, reviewed audio decisions/owner example, and unchanged audio timeline');

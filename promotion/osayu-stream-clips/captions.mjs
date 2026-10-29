@@ -9,7 +9,7 @@ const units=s=>[...s].reduce((n,c)=>n+(c.charCodeAt(0)<128?.55:1),0);
 export function buildCaptions(clip,edit,fonts){
   if(!fonts?.normal?.family||!fonts?.reaction?.family||!fonts?.shaky?.family)throw Error('All three font roles must be explicit');
   const speakers=clip.speakers;
-  if(!speakers||Object.values(speakers).some(s=>!['left','right','center'].includes(s.side)||!s.label||!/^#[0-9A-Fa-f]{6}$/.test(s.color)))throw Error('Explicit speaker lanes, labels and colours required');
+  if(!speakers||Object.values(speakers).some(s=>!['left','right','center'].includes(s.side)||!/^#[0-9A-Fa-f]{6}$/.test(s.color)))throw Error('Explicit speaker lanes and colours required');
   let ass=`[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 2\nScaledBorderAndShadow: yes\n\n[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\nStyle: Main,${fonts.normal.family},96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,-1,0,1,0,0,5,44,44,0,1\n\n[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n`;
   const audit=[];
   function outlined(a,b,name,text,{font,size,x,y,align=5,fill='#FFFFFF',outer='#000000',shaky=false,shake=false,tilt=0,label=false,scaleY=100}){
@@ -20,7 +20,7 @@ export function buildCaptions(clip,edit,fonts){
       ass+=event(layer,a,b,name,`{\\an${align}\\pos(${x},${y})\\fn${font}\\fs${size}\\fscy${scaleY}\\fsp-1\\bord${border}\\shad0\\1c${rgb(fill)}\\3c${rgb(stroke)}\\frz${tilt}${motion}}`+shaText(text));
     }
   }
-  outlined(0,edit.duration,'title',clip.title,{font:fonts.reaction.family,size:80,x:540,y:66,fill:'#FFED6A',outer:'#000000',label:true});
+  outlined(0,edit.duration,'title',clip.title,{font:fonts.reaction.family,size:108,x:540,y:80,fill:'#FFED6A',outer:'#000000',label:true});
   for(const group of edit.groups){
     for(const sub of clip.cuts.flatMap(c=>c.captions||[]).filter(s=>s.start>=group.start-.01&&s.end<=group.end+.01)){
       const speaker=speakers[sub.speaker];
@@ -42,9 +42,8 @@ export function buildCaptions(clip,edit,fonts){
       if(!(a>=0&&b>a&&b<=edit.duration+.01))throw Error('Caption escaped the validated timeline');
       const handdrawn=['shaky','rough'].includes(role);
       outlined(a,b,sub.speaker,sub.text,{font:fonts[role].family,size,x,y:284,align,fill:handdrawn?'#FFFFFF':speaker.color,outer:speaker.color,shaky:handdrawn,shake:sub.shake===true,scaleY:role==='reaction'?(lines.length>1?105:125):100});
-      // Names make the editorial left/right lanes unambiguous even for vertical collabs.
-      outlined(a,b,sub.speaker+'-name',speaker.label,{font:fonts.normal.family,size:36,x,y:126,align,fill:'#FFFFFF',outer:speaker.color,label:true});
-      audit.push({speaker:sub.speaker,side:speaker.side,label:speaker.label,start:a,end:b,text:sub.text,role,font:fonts[role].family,size,anchor:[x,284],alignment:align,shaky:role==='shaky',animatedShake:sub.shake===true});
+      // The speaker ID stays in metadata; only position and colour are visible.
+      audit.push({speaker:sub.speaker,side:speaker.side,start:a,end:b,text:sub.text,role,font:fonts[role].family,size,anchor:[x,284],alignment:align,shaky:role==='shaky',animatedShake:sub.shake===true});
     }
   }
   if(audit.length!==clip.cuts.reduce((n,c)=>n+(c.captions||[]).length,0))throw Error('A caption did not map to exactly one source run');
