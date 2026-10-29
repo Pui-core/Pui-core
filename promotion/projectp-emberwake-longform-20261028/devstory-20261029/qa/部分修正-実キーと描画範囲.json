@@ -1,0 +1,461 @@
+{
+  "issue": 146,
+  "state": "partial renders underway; not final delivery",
+  "sections": [
+    {
+      "section": "INTRO",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-DevStory-2026-10-29/devstory-v01/projects/opening-timing01.ecproj",
+      "projectSha": "d8d9c3cc8ecb9f13127795ff0a488a6e6cd928a1780a0acdcc8f5a16290dcea6",
+      "duration": 32,
+      "ranges": [
+        [
+          24,
+          32
+        ]
+      ],
+      "fixes": [
+        {
+          "name": "Lead into chapter",
+          "in": 27.5,
+          "out": 32,
+          "before": [
+            {
+              "compTime": 27.5,
+              "value": 0.45
+            },
+            {
+              "compTime": 30.5,
+              "value": 3
+            },
+            {
+              "compTime": 32,
+              "value": 2.7
+            }
+          ],
+          "after": [
+            {
+              "compTime": 27.5,
+              "value": 0.45
+            },
+            {
+              "compTime": 32,
+              "value": 2.7
+            }
+          ]
+        },
+        {
+          "name": "One more earlier condition",
+          "in": 24,
+          "out": 27.5,
+          "before": [
+            {
+              "compTime": 24,
+              "value": 0.45
+            },
+            {
+              "compTime": 27,
+              "value": 3
+            },
+            {
+              "compTime": 27.5,
+              "value": 2.9
+            }
+          ],
+          "after": [
+            {
+              "compTime": 24,
+              "value": 0.45
+            },
+            {
+              "compTime": 27.5,
+              "value": 2.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "J",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-DevStory-2026-10-29/devstory-v01/projects/chapter-J-layout03.ecproj",
+      "projectSha": "478319fbc0365ccf9beda275159dac4f04074b4223206c13ef42120258d55f16",
+      "duration": 182,
+      "ranges": [
+        [
+          15,
+          19
+        ],
+        [
+          29,
+          33
+        ],
+        [
+          43,
+          51
+        ],
+        [
+          120,
+          126
+        ],
+        [
+          149,
+          154
+        ],
+        [
+          162,
+          173
+        ]
+      ],
+      "fixes": []
+    },
+    {
+      "section": "V",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-DevStory-2026-10-29/devstory-v01/projects/chapter-V-layout04.ecproj",
+      "projectSha": "11cae5e0ede42994cbdf9c4b0e8a4768f91fece1b8f0632082ee85eb74a11381",
+      "duration": 168,
+      "ranges": [
+        [
+          102,
+          107
+        ],
+        [
+          121,
+          126
+        ],
+        [
+          144,
+          154
+        ]
+      ],
+      "fixes": []
+    },
+    {
+      "section": "C",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-DevStory-2026-10-29/devstory-v01/projects/chapter-C-timing01.ecproj",
+      "projectSha": "41469fa0e85a1acaed1fccdd40a159a0b324925b5074a1154512ed7eabf6e82f",
+      "duration": 140,
+      "ranges": [
+        [
+          4,
+          14
+        ],
+        [
+          18,
+          33
+        ],
+        [
+          36,
+          47
+        ],
+        [
+          56,
+          61
+        ],
+        [
+          64,
+          98
+        ],
+        [
+          112,
+          117
+        ],
+        [
+          126,
+          131
+        ],
+        [
+          134,
+          140
+        ]
+      ],
+      "fixes": [
+        {
+          "name": "C-10 reacquire proof",
+          "in": 134.7,
+          "out": 140,
+          "before": [
+            {
+              "compTime": 134.7,
+              "value": 2.15
+            },
+            {
+              "compTime": 138.7,
+              "value": 4
+            },
+            {
+              "compTime": 140,
+              "value": 3.4750000000000028
+            }
+          ],
+          "after": [
+            {
+              "compTime": 134.7,
+              "value": 2.15
+            },
+            {
+              "compTime": 140,
+              "value": 3.4750000000000028
+            }
+          ]
+        },
+        {
+          "name": "C-10 actual operation",
+          "in": 126,
+          "out": 130.2,
+          "before": [
+            {
+              "compTime": 126,
+              "value": 0
+            },
+            {
+              "compTime": 130,
+              "value": 4
+            },
+            {
+              "compTime": 130.2,
+              "value": 2.729999999999993
+            }
+          ],
+          "after": [
+            {
+              "compTime": 126,
+              "value": 0
+            },
+            {
+              "compTime": 130.2,
+              "value": 2.729999999999993
+            }
+          ]
+        },
+        {
+          "name": "C-07 actual operation",
+          "in": 84,
+          "out": 88.2,
+          "before": [
+            {
+              "compTime": 84,
+              "value": 0
+            },
+            {
+              "compTime": 88,
+              "value": 4
+            },
+            {
+              "compTime": 88.2,
+              "value": 2.7300000000000018
+            }
+          ],
+          "after": [
+            {
+              "compTime": 84,
+              "value": 0
+            },
+            {
+              "compTime": 88.2,
+              "value": 2.7300000000000018
+            }
+          ]
+        },
+        {
+          "name": "C-06 actual operation",
+          "in": 70,
+          "out": 74.2,
+          "before": [
+            {
+              "compTime": 70,
+              "value": 0.4
+            },
+            {
+              "compTime": 74,
+              "value": 4
+            },
+            {
+              "compTime": 74.2,
+              "value": 1.660000000000001
+            }
+          ],
+          "after": [
+            {
+              "compTime": 70,
+              "value": 0.4
+            },
+            {
+              "compTime": 74.2,
+              "value": 1.660000000000001
+            }
+          ]
+        },
+        {
+          "name": "C-05 reacquire proof",
+          "in": 64.7,
+          "out": 70,
+          "before": [
+            {
+              "compTime": 64.7,
+              "value": 2.15
+            },
+            {
+              "compTime": 68.7,
+              "value": 4
+            },
+            {
+              "compTime": 70,
+              "value": 3.474999999999999
+            }
+          ],
+          "after": [
+            {
+              "compTime": 64.7,
+              "value": 2.15
+            },
+            {
+              "compTime": 70,
+              "value": 3.474999999999999
+            }
+          ]
+        },
+        {
+          "name": "C-05 actual operation",
+          "in": 56,
+          "out": 60.2,
+          "before": [
+            {
+              "compTime": 56,
+              "value": 2.15
+            },
+            {
+              "compTime": 60,
+              "value": 4
+            },
+            {
+              "compTime": 60.2,
+              "value": 3.3260000000000005
+            }
+          ],
+          "after": [
+            {
+              "compTime": 56,
+              "value": 2.15
+            },
+            {
+              "compTime": 60.2,
+              "value": 3.3260000000000005
+            }
+          ]
+        },
+        {
+          "name": "C-04 actual operation",
+          "in": 42,
+          "out": 46.2,
+          "before": [
+            {
+              "compTime": 42,
+              "value": 1.5
+            },
+            {
+              "compTime": 46,
+              "value": 4
+            },
+            {
+              "compTime": 46.2,
+              "value": 2.3400000000000007
+            }
+          ],
+          "after": [
+            {
+              "compTime": 42,
+              "value": 1.5
+            },
+            {
+              "compTime": 46.2,
+              "value": 2.3400000000000007
+            }
+          ]
+        },
+        {
+          "name": "C-03 Q proof",
+          "in": 36.7,
+          "out": 42,
+          "before": [
+            {
+              "compTime": 36.7,
+              "value": 1.4
+            },
+            {
+              "compTime": 40.7,
+              "value": 4
+            },
+            {
+              "compTime": 42,
+              "value": 2.724999999999999
+            }
+          ],
+          "after": [
+            {
+              "compTime": 36.7,
+              "value": 1.4
+            },
+            {
+              "compTime": 42,
+              "value": 2.724999999999999
+            }
+          ]
+        },
+        {
+          "name": "C-03 actual operation",
+          "in": 28,
+          "out": 32.2,
+          "before": [
+            {
+              "compTime": 28,
+              "value": 0
+            },
+            {
+              "compTime": 32,
+              "value": 4
+            },
+            {
+              "compTime": 32.2,
+              "value": 2.7300000000000018
+            }
+          ],
+          "after": [
+            {
+              "compTime": 28,
+              "value": 0
+            },
+            {
+              "compTime": 32.2,
+              "value": 2.7300000000000018
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "H",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-DevStory-2026-10-29/devstory-v01/projects/chapter-H-layout03.ecproj",
+      "projectSha": "e778718140828401afce3cff0d678ab7438ea39392e985ca60be6fad19198ebf",
+      "duration": 84,
+      "ranges": [
+        [
+          9,
+          14
+        ],
+        [
+          23,
+          28
+        ]
+      ],
+      "fixes": []
+    },
+    {
+      "section": "CLOSE",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-DevStory-2026-10-29/devstory-v01/projects/chapter-CLOSE.ecproj",
+      "projectSha": "4b3df2b1b6c4433edf51b978ae60014e7251c5903f42dbde9472cc4039a9bc52",
+      "duration": 26,
+      "ranges": [],
+      "fixes": []
+    }
+  ],
+  "preservation": "original projects/movies retained; original intra packets copied unchanged outside repair ranges; voice/model not regenerated"
+}

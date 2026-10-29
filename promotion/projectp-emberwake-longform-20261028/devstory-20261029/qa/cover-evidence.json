@@ -1,0 +1,116 @@
+{
+  "issue": 146,
+  "role": "thumbnail only",
+  "canvas": [
+    1280,
+    720
+  ],
+  "artifacts": {
+    "emberwake-devstory-cover-v01.pcraft": {
+      "bytes": 227447,
+      "sha256": "c8fed7fc00c959691e5955f86044f2fe5db76bcb69c47e2cb6643563f3b63dca"
+    },
+    "emberwake-devstory-cover-v01.png": {
+      "bytes": 43530,
+      "sha256": "4ca630cffd1ac0b43e145311cb515571685c549e0799462b0ce98ab76fe5c357"
+    },
+    "emberwake-devstory-cover-v01.jpg": {
+      "bytes": 77820,
+      "sha256": "52c6e2462c7e2a4e39ca436a876a7904e237c66c4627b5982defc118c34f3f0d"
+    },
+    "emberwake-devstory-cover-v01-320.png": {
+      "bytes": 12678,
+      "sha256": "754749a58e9c57da5faa77a8de23ca4bd75a11e08536714eb037f3ef62dc87e8"
+    }
+  },
+  "sources": [
+    {
+      "version": "old",
+      "frame": "j-old/tap0/frame-0022.png",
+      "sha256": "88fd628237e47b0b883163e8e59e0fa396ae1b6c0197ffee80f31297353598c1",
+      "captureSha256": "a7abb2627af1e9816695aeea999c5d603827b85260a62511edd5666c9a906fb1",
+      "case": "tap0",
+      "peakStep": 22,
+      "height": 56.80810546875,
+      "camera": [
+        240,
+        1092
+      ],
+      "logicalCrop": [
+        40,
+        108,
+        140,
+        130
+      ]
+    },
+    {
+      "version": "new",
+      "frame": "j-new/tap0/frame-0012.png",
+      "sha256": "6c06629aa59eb5a7ef669c6d2c988cbf13b76b0810325c4af28c14c54b78b262",
+      "captureSha256": "3c1530ff59c1984e1e99f4fa26947484d3f4ca3d01b9abd3277f57dcb56bdf60",
+      "case": "tap0",
+      "peakStep": 12,
+      "height": 18.6407470703125,
+      "camera": [
+        240,
+        1092
+      ],
+      "logicalCrop": [
+        40,
+        108,
+        140,
+        130
+      ]
+    }
+  ],
+  "comparison": {
+    "input": "press/release same physics update, process-private scripted fixture",
+    "eachVersionAtOwnPeak": true,
+    "notSameSimultaneousFrame": true,
+    "crop": [
+      4,
+      0,
+      112,
+      108
+    ],
+    "scale": 4,
+    "resampling": "nearest",
+    "placements": [
+      [
+        112,
+        228
+      ],
+      [
+        720,
+        228
+      ]
+    ],
+    "worldFloorY": 1160,
+    "coverFloorY": 608
+  },
+  "formalNative": {
+    "name": "PhotoCraft",
+    "version": "0.15.1",
+    "platform": "official Linux x86_64",
+    "cliSha256": "16fbb244d69d5c32dd60435e95b1c893d04bf7ef6e3d37fb967eecb57f6e0bea",
+    "privateXvfb": true,
+    "windowsGuiActions": 0,
+    "savedReopenedExported": true,
+    "deliveryNativeReexportByteShaIdentical": true
+  },
+  "review": {
+    "creator1280And320Viewed": true,
+    "independent1280And320Viewed": true,
+    "root1280And320Viewed": true,
+    "rootAdoptedAsThumbnail": true,
+    "mainClipping": false,
+    "sourceSpoilerExposureSeen": false,
+    "smallFooterAuxiliary": true
+  },
+  "limitations": [
+    "Raw frames/capture JSON/Core/model/runtime/cache/private logs remain outside Git and NAS.",
+    "Game imagery is real renderer capture from input fixture, not ordinary manual play or route completion.",
+    "Root thumbnail adoption is not owner creative review or publication.",
+    "Actual CTR, watch retention, subscribers, purchases and revenue unknown."
+  ]
+}

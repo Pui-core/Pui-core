@@ -1,0 +1,607 @@
+{
+  "issue": 146,
+  "state": "private corrected BGM candidate, waiting writer adoption and mux",
+  "method": {
+    "observed": "Original four branches individually nonzero; original amix output at250/400/550s alreadyzero before loudnorm. At50s amix signal exceeds J alone, indicating unwanted overlap/alignment in original combination case.",
+    "upstreamLibraryRootCauseNotProven": true,
+    "probeMetrics": "inline probeResults",
+    "repair": "Independent chapter-local PCM renders normalized toI-31/TP-8/LRA7 then exact global frame placement inNode. No amix/adelay for chapter combination."
+  },
+  "format": {
+    "duration": 632,
+    "rate": 48000,
+    "channels": 2,
+    "bed": "IEEEfloat32",
+    "duck": "PCM signedint24",
+    "mix": "PCM signedint24"
+  },
+  "chapters": [
+    {
+      "id": "j",
+      "at": 0,
+      "duration": 214,
+      "frames": 10272000,
+      "sha256": "3fc1f456f80d8767398ada8657a15cb34d4255c4849b121d1496fc31126596d9",
+      "stats": {
+        "samples": 20544000,
+        "nonzero": 20544000,
+        "rmsDbFS": -31.97518310235859,
+        "peakDbFS": -12.202622875492779
+      }
+    },
+    {
+      "id": "v",
+      "at": 214,
+      "duration": 168,
+      "frames": 8064000,
+      "sha256": "c14b125c8d3d59f29cec2f1da6dff13ad0b6d27865924b3427110bc13f5bd6fe",
+      "stats": {
+        "samples": 16128000,
+        "nonzero": 16128000,
+        "rmsDbFS": -32.80293092322183,
+        "peakDbFS": -17.21736830211869
+      }
+    },
+    {
+      "id": "c",
+      "at": 382,
+      "duration": 140,
+      "frames": 6720000,
+      "sha256": "b8406f3862574996b1624a0fd8898a35c78a0db6d24d48c0bb6f40b02b7e2a96",
+      "stats": {
+        "samples": 13440000,
+        "nonzero": 13440000,
+        "rmsDbFS": -33.19735296032805,
+        "peakDbFS": -14.668799805099571
+      }
+    },
+    {
+      "id": "h",
+      "at": 522,
+      "duration": 110,
+      "frames": 5280000,
+      "sha256": "3d79e651a0f29e1aa77bc4fc03d65a19f4e569200c304a19b8353ec3357a8765",
+      "stats": {
+        "samples": 10560000,
+        "nonzero": 10560000,
+        "rmsDbFS": -33.10212875485794,
+        "peakDbFS": -17.21736830211869
+      }
+    }
+  ],
+  "windows": [
+    {
+      "at": 50,
+      "duration": 0.5,
+      "bed": {
+        "samples": 48000,
+        "nonzero": 48000,
+        "rmsDbFS": -28.828637071020896,
+        "peakDbFS": -16.50195910958104
+      },
+      "ducked": {
+        "samples": 48000,
+        "nonzero": 48000,
+        "rmsDbFS": -39.286120387114906,
+        "peakDbFS": -26.959444319974466
+      }
+    },
+    {
+      "at": 250,
+      "duration": 0.5,
+      "bed": {
+        "samples": 48000,
+        "nonzero": 48000,
+        "rmsDbFS": -40.54868476178115,
+        "peakDbFS": -27.195968184590413
+      },
+      "ducked": {
+        "samples": 48000,
+        "nonzero": 47999,
+        "rmsDbFS": -47.38359123430251,
+        "peakDbFS": -34.030866535650766
+      }
+    },
+    {
+      "at": 400,
+      "duration": 0.5,
+      "bed": {
+        "samples": 48000,
+        "nonzero": 48000,
+        "rmsDbFS": -31.521438851736278,
+        "peakDbFS": -17.044271545098045
+      },
+      "ducked": {
+        "samples": 48000,
+        "nonzero": 47999,
+        "rmsDbFS": -37.79930174879659,
+        "peakDbFS": -23.322127514082467
+      }
+    },
+    {
+      "at": 550,
+      "duration": 0.5,
+      "bed": {
+        "samples": 48000,
+        "nonzero": 48000,
+        "rmsDbFS": -35.08503740929679,
+        "peakDbFS": -23.67520085838002
+      },
+      "ducked": {
+        "samples": 48000,
+        "nonzero": 48000,
+        "rmsDbFS": -39.149836533804304,
+        "peakDbFS": -25.193752338310368
+      }
+    }
+  ],
+  "voice": {
+    "sha256": "19cf2caced202497f5d4a5eadd808c0caecfbe4a6b45ac45a5333605a0473e4b",
+    "gain": 1,
+    "cues": 52,
+    "minimumVoiceOverMusicDb": 14.049985219840934,
+    "requestedVoiceMarginDb": 14.05,
+    "quantizedMixMinusMusicMinusSfxEqualsVoiceAtEverySample": true
+  },
+  "sfx": {
+    "sha256": "fa5bea125bcb57750078c916a407949a0bc526ee8e041d3ea41301e0af9ffe80",
+    "qAt": 425.25,
+    "unchanged": true
+  },
+  "duck": {
+    "attackSeconds": 0.02,
+    "tailHoldSeconds": 0.04,
+    "releaseSeconds": 0.18,
+    "musicPeakGuard": 1
+  },
+  "peak": {
+    "pcm": 6348829,
+    "dbFS": -2.4199254074205037,
+    "at": 347.188625,
+    "clippedSamples": 0
+  },
+  "inputs": {
+    "source": "42e1689deaaabdf9f0ea01f98fd7be364ebc2cf1ea38ab54ecb786901779d2aa",
+    "voiceBinding": "3ce71908cdeedac73c5eb9ee1207e5976586b04f1fd2a14d13560bc2f76fd30e",
+    "audioBinding": "abeadc51ba65eb542e070c752d80386fd0e039e15cf0ce92a80a203d43e8fa52",
+    "voice": "19cf2caced202497f5d4a5eadd808c0caecfbe4a6b45ac45a5333605a0473e4b",
+    "sfx": "fa5bea125bcb57750078c916a407949a0bc526ee8e041d3ea41301e0af9ffe80",
+    "cipher": "d3d0614535a61d748e2fd8d5117fc4d781022a7624794802a2462d8af3fdd522",
+    "daybreak": "abcb4ace07ebe6813cfc0ca9773514ddd3c6a2e535cd3b4fcdf0cf643179c2eb"
+  },
+  "outputs": {
+    "bed": {
+      "sha256": "99dad61067925fc1973d7295921d3b602937bf1d9deffbb47383ae4895dfcbc2",
+      "bytes": 242688058
+    },
+    "duck": {
+      "sha256": "d6c2db2381db8313e5144189c7c425dd13c9442594c87fc08c039519dc97f3da",
+      "bytes": 182016044
+    },
+    "mix": {
+      "sha256": "92388757c173a26eb8a4e13ae0542e46a02f506e53c7c6948000a65315d8fc9b",
+      "bytes": 182016044
+    }
+  },
+  "cueLevels": [
+    {
+      "id": "OPEN-hook",
+      "voiceRmsDb": -24.96124671634795,
+      "duckedMusicRmsDb": -39.01124752791614,
+      "voiceOverMusicDb": 14.05000081156819
+    },
+    {
+      "id": "OPEN-1",
+      "voiceRmsDb": -26.140810598712033,
+      "duckedMusicRmsDb": -40.19081145396199,
+      "voiceOverMusicDb": 14.050000855249959
+    },
+    {
+      "id": "OPEN-2",
+      "voiceRmsDb": -25.55150439872023,
+      "duckedMusicRmsDb": -40.055458168141556,
+      "voiceOverMusicDb": 14.503953769421326
+    },
+    {
+      "id": "OPEN-3",
+      "voiceRmsDb": -25.560610717250164,
+      "duckedMusicRmsDb": -39.80002175448153,
+      "voiceOverMusicDb": 14.239411037231363
+    },
+    {
+      "id": "OPEN-hold",
+      "voiceRmsDb": -26.194819052025498,
+      "duckedMusicRmsDb": -40.244820116760145,
+      "voiceOverMusicDb": 14.050001064734648
+    },
+    {
+      "id": "OPEN-normal",
+      "voiceRmsDb": -27.652505826130582,
+      "duckedMusicRmsDb": -41.70250702857042,
+      "voiceOverMusicDb": 14.05000120243984
+    },
+    {
+      "id": "OPEN-instant",
+      "voiceRmsDb": -28.242450249091874,
+      "duckedMusicRmsDb": -42.29245141853406,
+      "voiceOverMusicDb": 14.050001169442183
+    },
+    {
+      "id": "OPEN-5",
+      "voiceRmsDb": -26.043587239206964,
+      "duckedMusicRmsDb": -40.09358849507818,
+      "voiceOverMusicDb": 14.050001255871216
+    },
+    {
+      "id": "OPEN-6",
+      "voiceRmsDb": -26.40098341192973,
+      "duckedMusicRmsDb": -40.45098419843931,
+      "voiceOverMusicDb": 14.050000786509578
+    },
+    {
+      "id": "J-01",
+      "voiceRmsDb": -26.97739001273913,
+      "duckedMusicRmsDb": -41.02739089846974,
+      "voiceOverMusicDb": 14.050000885730611
+    },
+    {
+      "id": "J-02",
+      "voiceRmsDb": -27.321893765461187,
+      "duckedMusicRmsDb": -41.37189515755856,
+      "voiceOverMusicDb": 14.050001392097375
+    },
+    {
+      "id": "J-03",
+      "voiceRmsDb": -26.71938132400943,
+      "duckedMusicRmsDb": -40.76939050606576,
+      "voiceOverMusicDb": 14.050009182056332
+    },
+    {
+      "id": "J-04",
+      "voiceRmsDb": -25.03939375578476,
+      "duckedMusicRmsDb": -39.0893796100506,
+      "voiceOverMusicDb": 14.049985854265838
+    },
+    {
+      "id": "J-05",
+      "voiceRmsDb": -27.27913789671812,
+      "duckedMusicRmsDb": -41.329139170937495,
+      "voiceOverMusicDb": 14.050001274219376
+    },
+    {
+      "id": "J-06",
+      "voiceRmsDb": -27.42744473570096,
+      "duckedMusicRmsDb": -41.47744525959946,
+      "voiceOverMusicDb": 14.050000523898504
+    },
+    {
+      "id": "J-07",
+      "voiceRmsDb": -26.12997510972314,
+      "duckedMusicRmsDb": -40.17997603739679,
+      "voiceOverMusicDb": 14.05000092767365
+    },
+    {
+      "id": "J-08",
+      "voiceRmsDb": -26.75156002749709,
+      "duckedMusicRmsDb": -40.80156141456725,
+      "voiceOverMusicDb": 14.050001387070164
+    },
+    {
+      "id": "J-09",
+      "voiceRmsDb": -26.268601802879843,
+      "duckedMusicRmsDb": -40.318602909778235,
+      "voiceOverMusicDb": 14.050001106898392
+    },
+    {
+      "id": "J-10",
+      "voiceRmsDb": -25.974077772199635,
+      "duckedMusicRmsDb": -40.0240791656622,
+      "voiceOverMusicDb": 14.050001393462566
+    },
+    {
+      "id": "J-11",
+      "voiceRmsDb": -27.81539452536325,
+      "duckedMusicRmsDb": -41.86539561932159,
+      "voiceOverMusicDb": 14.05000109395834
+    },
+    {
+      "id": "J-12",
+      "voiceRmsDb": -25.205949313626334,
+      "duckedMusicRmsDb": -39.25595035076939,
+      "voiceOverMusicDb": 14.050001037143055
+    },
+    {
+      "id": "J-13",
+      "voiceRmsDb": -27.03919703980819,
+      "duckedMusicRmsDb": -41.08919823127782,
+      "voiceOverMusicDb": 14.05000119146963
+    },
+    {
+      "id": "V-01",
+      "voiceRmsDb": -25.28353337981627,
+      "duckedMusicRmsDb": -39.33392186234263,
+      "voiceOverMusicDb": 14.050388482526358
+    },
+    {
+      "id": "V-02",
+      "voiceRmsDb": -24.008528740227266,
+      "duckedMusicRmsDb": -38.05853001732928,
+      "voiceOverMusicDb": 14.050001277102016
+    },
+    {
+      "id": "V-03",
+      "voiceRmsDb": -26.742300339398035,
+      "duckedMusicRmsDb": -40.792301201759955,
+      "voiceOverMusicDb": 14.05000086236192
+    },
+    {
+      "id": "V-04",
+      "voiceRmsDb": -26.124645908677294,
+      "duckedMusicRmsDb": -40.17463112851823,
+      "voiceOverMusicDb": 14.049985219840934
+    },
+    {
+      "id": "V-05",
+      "voiceRmsDb": -27.127208065409466,
+      "duckedMusicRmsDb": -41.17720907218762,
+      "voiceOverMusicDb": 14.050001006778157
+    },
+    {
+      "id": "V-06",
+      "voiceRmsDb": -27.96891461135135,
+      "duckedMusicRmsDb": -42.01891598755849,
+      "voiceOverMusicDb": 14.050001376207142
+    },
+    {
+      "id": "V-07",
+      "voiceRmsDb": -27.529837286112155,
+      "duckedMusicRmsDb": -41.57983818857169,
+      "voiceOverMusicDb": 14.050000902459537
+    },
+    {
+      "id": "V-08",
+      "voiceRmsDb": -26.15865535998598,
+      "duckedMusicRmsDb": -40.20865657692222,
+      "voiceOverMusicDb": 14.050001216936245
+    },
+    {
+      "id": "V-09",
+      "voiceRmsDb": -26.88288990312797,
+      "duckedMusicRmsDb": -40.9328909602,
+      "voiceOverMusicDb": 14.050001057072027
+    },
+    {
+      "id": "V-10",
+      "voiceRmsDb": -26.02528967860545,
+      "duckedMusicRmsDb": -40.07529886001119,
+      "voiceOverMusicDb": 14.050009181405738
+    },
+    {
+      "id": "V-11",
+      "voiceRmsDb": -26.52132810206947,
+      "duckedMusicRmsDb": -40.57132938951504,
+      "voiceOverMusicDb": 14.050001287445571
+    },
+    {
+      "id": "V-12",
+      "voiceRmsDb": -26.443749591168242,
+      "duckedMusicRmsDb": -40.49375023814913,
+      "voiceOverMusicDb": 14.050000646980891
+    },
+    {
+      "id": "C-01",
+      "voiceRmsDb": -26.895212040012147,
+      "duckedMusicRmsDb": -40.94759866191575,
+      "voiceOverMusicDb": 14.0523866219036
+    },
+    {
+      "id": "C-02",
+      "voiceRmsDb": -25.5098775573116,
+      "duckedMusicRmsDb": -39.55987838564954,
+      "voiceOverMusicDb": 14.05000082833794
+    },
+    {
+      "id": "C-03",
+      "voiceRmsDb": -25.858756706701534,
+      "duckedMusicRmsDb": -39.90875747300021,
+      "voiceOverMusicDb": 14.050000766298673
+    },
+    {
+      "id": "C-04",
+      "voiceRmsDb": -26.488825539551012,
+      "duckedMusicRmsDb": -40.53882657463333,
+      "voiceOverMusicDb": 14.050001035082321
+    },
+    {
+      "id": "C-05",
+      "voiceRmsDb": -26.314246217789048,
+      "duckedMusicRmsDb": -40.36424705651299,
+      "voiceOverMusicDb": 14.050000838723939
+    },
+    {
+      "id": "C-06",
+      "voiceRmsDb": -25.9656810543307,
+      "duckedMusicRmsDb": -40.01568236861088,
+      "voiceOverMusicDb": 14.05000131428018
+    },
+    {
+      "id": "C-07",
+      "voiceRmsDb": -25.69036714476259,
+      "duckedMusicRmsDb": -39.740368243248916,
+      "voiceOverMusicDb": 14.050001098486327
+    },
+    {
+      "id": "C-08",
+      "voiceRmsDb": -27.601947269366413,
+      "duckedMusicRmsDb": -41.65194861248486,
+      "voiceOverMusicDb": 14.050001343118446
+    },
+    {
+      "id": "C-09",
+      "voiceRmsDb": -26.194480658443094,
+      "duckedMusicRmsDb": -40.244481755098505,
+      "voiceOverMusicDb": 14.05000109665541
+    },
+    {
+      "id": "C-10",
+      "voiceRmsDb": -26.41601336731444,
+      "duckedMusicRmsDb": -40.46601462016673,
+      "voiceOverMusicDb": 14.05000125285229
+    },
+    {
+      "id": "H-01",
+      "voiceRmsDb": -24.45993531785582,
+      "duckedMusicRmsDb": -38.510397832358365,
+      "voiceOverMusicDb": 14.050462514502545
+    },
+    {
+      "id": "H-02",
+      "voiceRmsDb": -24.910024912966605,
+      "duckedMusicRmsDb": -38.96002609541925,
+      "voiceOverMusicDb": 14.050001182452647
+    },
+    {
+      "id": "H-03",
+      "voiceRmsDb": -26.4457891256634,
+      "duckedMusicRmsDb": -40.49579581021936,
+      "voiceOverMusicDb": 14.050006684555964
+    },
+    {
+      "id": "H-04",
+      "voiceRmsDb": -26.81701349392234,
+      "duckedMusicRmsDb": -40.867014614851456,
+      "voiceOverMusicDb": 14.050001120929117
+    },
+    {
+      "id": "H-05",
+      "voiceRmsDb": -26.445463202583404,
+      "duckedMusicRmsDb": -40.49546409748041,
+      "voiceOverMusicDb": 14.050000894897003
+    },
+    {
+      "id": "H-06",
+      "voiceRmsDb": -24.355642746088456,
+      "duckedMusicRmsDb": -38.40564365911752,
+      "voiceOverMusicDb": 14.050000913029066
+    },
+    {
+      "id": "CLOSE-01",
+      "voiceRmsDb": -24.15557835499973,
+      "duckedMusicRmsDb": -38.20557972608063,
+      "voiceOverMusicDb": 14.0500013710809
+    },
+    {
+      "id": "CLOSE-02",
+      "voiceRmsDb": -25.65457959626887,
+      "duckedMusicRmsDb": -39.72425772175701,
+      "voiceOverMusicDb": 14.069678125488142
+    }
+  ],
+  "limitations": [
+    "No subjective listening or final mux/AV synchronization performed.",
+    "OriginalJ BGM was re-rendered from the same intendedCipher source because retaining the original faultyamix could preserve unwanted overlap. Voice-r3 andQr2SFX unchanged.",
+    "Source/old WAVs unchanged. Writer owns adoption, Source integration and canonical Fcopies.",
+    "BGM licenses and credits unchanged from original approved two sources; no new music introduced.",
+    "Transferred recipe is the actual recipe with path arguments extracted; node syntax checked, transferred variant not re-executed.",
+    "Private raw/full PCM, transient probe files, runtime/cache and unrelated artifacts are not Git/NAS inputs."
+  ],
+  "probeResults": {
+    "beforeAmix": [
+      {
+        "chapter": "j",
+        "at": 50,
+        "rmsDbFS": -14.912868704002163,
+        "peakDbFS": -2.0551773518641907,
+        "nonzeroChannelSamples": 48000
+      },
+      {
+        "chapter": "v",
+        "at": 250,
+        "rmsDbFS": -25.552073427797367,
+        "peakDbFS": -12.198401817013423,
+        "nonzeroChannelSamples": 48000
+      },
+      {
+        "chapter": "c",
+        "at": 400,
+        "rmsDbFS": -15.702044527865056,
+        "peakDbFS": -0.9098691835587525,
+        "nonzeroChannelSamples": 48000
+      },
+      {
+        "chapter": "h",
+        "at": 550,
+        "rmsDbFS": -19.94007568309015,
+        "peakDbFS": -8.534790814362559,
+        "nonzeroChannelSamples": 48000
+      }
+    ],
+    "afterAmixVsLoudnorm": [
+      {
+        "group": "pre",
+        "at": 50,
+        "samples": 48000,
+        "nz": 48000,
+        "rmsDb": -7.290466974154324,
+        "peakDb": 5.184549901143052
+      },
+      {
+        "group": "pre",
+        "at": 250,
+        "samples": 48000,
+        "nz": 0,
+        "rmsDb": -240,
+        "peakDb": -240
+      },
+      {
+        "group": "pre",
+        "at": 400,
+        "samples": 48000,
+        "nz": 0,
+        "rmsDb": -240,
+        "peakDb": -240
+      },
+      {
+        "group": "pre",
+        "at": 550,
+        "samples": 48000,
+        "nz": 0,
+        "rmsDb": -240,
+        "peakDb": -240
+      },
+      {
+        "group": "post",
+        "at": 50,
+        "samples": 48000,
+        "nz": 48000,
+        "rmsDb": -29.75753766162796,
+        "peakDb": -17.258866922773283
+      },
+      {
+        "group": "post",
+        "at": 250,
+        "samples": 48000,
+        "nz": 0,
+        "rmsDb": -240,
+        "peakDb": -240
+      },
+      {
+        "group": "post",
+        "at": 400,
+        "samples": 48000,
+        "nz": 0,
+        "rmsDb": -240,
+        "peakDb": -240
+      },
+      {
+        "group": "post",
+        "at": 550,
+        "samples": 48000,
+        "nz": 0,
+        "rmsDb": -240,
+        "peakDb": -240
+      }
+    ],
+    "scope": "Each entry is a0.5second sample region, 48000 channel samples. Not subjective listening or upstream library cause proof."
+  }
+}

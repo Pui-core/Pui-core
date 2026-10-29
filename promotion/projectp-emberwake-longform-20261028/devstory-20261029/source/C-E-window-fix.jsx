@@ -1,0 +1,17 @@
+app.run('layer.timing',{layers:[325],in:0,out:1.65});
+app.run('layer.timing',{layers:[286],in:0,out:1.65});
+app.run('layer.timing',{layers:[247],in:0,out:1.65});
+app.run('layer.timing',{layers:[223],in:0,out:1.65});
+app.run('layer.timing',{layers:[199],in:0,out:1.65});
+app.run('layer.timing',{layers:[1508],in:14,out:15.65});
+app.run('layer.timing',{layers:[1469],in:14,out:15.65});
+app.run('layer.timing',{layers:[1430],in:14,out:15.65});
+app.run('layer.timing',{layers:[1406],in:14,out:15.65});
+app.run('layer.timing',{layers:[1382],in:14,out:15.65});
+function r(i,p){return app.run(i,p||{});}function s(l,p,v){r('prop.set',{layer:l,path:p,value:v});}function text(n,v,x,y,z,a,b){var l=r('layer.newText',{name:n,text:v,font:'Meiryo',style:'Bold',size:z,fill:'#20242c',position:[x,y],justify:'center'}).layer;var q=app.project.activeItem.layer(n).sourceRectAtTime(a,false);s(l,'transform/anchor',[q.left+q.width/2,q.top+q.height/2,0]);s(l,'transform/position',[x,y,0]);r('layer.timing',{layers:[l],in:a,out:b});}var extra=r('file.import',{paths:["/mnt/f/Videos/ProjectP-EMBERWAKE-DevStory-2026-10-29/devstory-v01/media/c-old-E-state.png","/mnt/f/Videos/ProjectP-EMBERWAKE-DevStory-2026-10-29/devstory-v01/media/c-new-E-state.png"],sequence:false}).items;
+var still=r('layer.addItem',{item:extra[0],time:1.65,duration:2.55}).layer;r('layer.rename',{layer:still,name:'E-only state 0 0'});s(still,'transform/anchor',[193.5,166.5,0]);s(still,'transform/position',[320,399,0]);s(still,'transform/scale',[129.19896640826875,129.19896640826875,100]);r('layer.timing',{layers:[still],in:1.65,out:4.2});
+var still=r('layer.addItem',{item:extra[1],time:1.65,duration:2.55}).layer;r('layer.rename',{layer:still,name:'E-only state 0 1'});s(still,'transform/anchor',[193.5,166.5,0]);s(still,'transform/position',[960,399,0]);s(still,'transform/scale',[129.19896640826875,129.19896640826875,100]);r('layer.timing',{layers:[still],in:1.65,out:4.2});
+text('E-only state caption 0','E直後も、両方とも所持',640,655,28,1.65,4.2);text('E-only state scope 0','入力直後の比較静止',640,704,19,1.65,4.2);
+var still=r('layer.addItem',{item:extra[0],time:15.65,duration:2.55}).layer;r('layer.rename',{layer:still,name:'E-only state 14 0'});s(still,'transform/anchor',[193.5,166.5,0]);s(still,'transform/position',[320,399,0]);s(still,'transform/scale',[129.19896640826875,129.19896640826875,100]);r('layer.timing',{layers:[still],in:15.65,out:18.2});
+var still=r('layer.addItem',{item:extra[1],time:15.65,duration:2.55}).layer;r('layer.rename',{layer:still,name:'E-only state 14 1'});s(still,'transform/anchor',[193.5,166.5,0]);s(still,'transform/position',[960,399,0]);s(still,'transform/scale',[129.19896640826875,129.19896640826875,100]);r('layer.timing',{layers:[still],in:15.65,out:18.2});
+text('E-only state caption 14','E直後も、両方とも所持',640,655,28,15.65,18.2);text('E-only state scope 14','入力直後の比較静止',640,704,19,15.65,18.2);

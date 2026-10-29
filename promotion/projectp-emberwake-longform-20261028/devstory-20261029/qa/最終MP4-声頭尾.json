@@ -1,0 +1,1623 @@
+{
+  "fileSha": "a9904191f195e47f060bca912f8de7fe8ee076ddb0d95f991b98d5d95656aa8f",
+  "cueCount": 52,
+  "minMixCorrelation": 0.9965869471425979,
+  "minHeadTailVoiceResidualCorrelation": 0.9977091988547134,
+  "maxAbsoluteLagSamples": 0,
+  "middleLowCorrelationExplanation": "The six low-residual-correlation middle windows are near-silence within phrases: expected voice RMS −66.22 to −83.05dBFS; mix correlation remains >=0.9965869 and lag0. All 52 head/tail residual correlations >=0.997709.",
+  "cues": [
+    {
+      "id": "OPEN-hook",
+      "at": 0.1,
+      "active": [
+        0.11812500000000001,
+        1.8265
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 0.218125,
+          "mixCorrelation": 0.9987139649107193,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9987197453606983
+        },
+        {
+          "part": "middle",
+          "center": 0.9723125,
+          "mixCorrelation": 0.9990235654477,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9990277989975797
+        },
+        {
+          "part": "tail",
+          "center": 1.7265,
+          "mixCorrelation": 0.9998184078526425,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997777527299495
+        }
+      ]
+    },
+    {
+      "id": "OPEN-1",
+      "at": 2.05,
+      "active": [
+        2.0738749999999997,
+        5.846291666666667
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 2.173875,
+          "mixCorrelation": 0.999743563583545,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996420138913353
+        },
+        {
+          "part": "middle",
+          "center": 3.9600833333333334,
+          "mixCorrelation": 0.9999810619841829,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998438844341397
+        },
+        {
+          "part": "tail",
+          "center": 5.746291666666667,
+          "mixCorrelation": 0.9994842304004272,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9994389928556406
+        }
+      ]
+    },
+    {
+      "id": "OPEN-2",
+      "at": 6.1,
+      "active": [
+        6.127895833333333,
+        8.468020833333334
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 6.227895833333332,
+          "mixCorrelation": 0.9999260405772112,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999264917279759
+        },
+        {
+          "part": "middle",
+          "center": 7.297958333333334,
+          "mixCorrelation": 0.999727742708323,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997163349488847
+        },
+        {
+          "part": "tail",
+          "center": 8.368020833333334,
+          "mixCorrelation": 0.9996951833478357,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996553279120561
+        }
+      ]
+    },
+    {
+      "id": "OPEN-3",
+      "at": 9.1,
+      "active": [
+        9.133666666666667,
+        11.45625
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 9.233666666666666,
+          "mixCorrelation": 0.9999964773278603,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999958330045072
+        },
+        {
+          "part": "middle",
+          "center": 10.294958333333334,
+          "mixCorrelation": 0.9998612230160546,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998612240586866
+        },
+        {
+          "part": "tail",
+          "center": 11.356250000000001,
+          "mixCorrelation": 0.9996840077597335,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.999658642923942
+        }
+      ]
+    },
+    {
+      "id": "OPEN-hold",
+      "at": 12.12,
+      "active": [
+        12.135416666666666,
+        13.770104166666666
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 12.235416666666666,
+          "mixCorrelation": 0.9998564737230416,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998559084306019
+        },
+        {
+          "part": "middle",
+          "center": 12.952760416666667,
+          "mixCorrelation": 0.9999846029835096,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999834413907666
+        },
+        {
+          "part": "tail",
+          "center": 13.670104166666667,
+          "mixCorrelation": 0.9999323250781834,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999302797425027
+        }
+      ]
+    },
+    {
+      "id": "OPEN-normal",
+      "at": 14.12,
+      "active": [
+        14.138104166666666,
+        15.238520833333332
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 14.238104166666666,
+          "mixCorrelation": 0.9999264068938901,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999232843739582
+        },
+        {
+          "part": "middle",
+          "center": 14.688312499999999,
+          "mixCorrelation": 0.9999398491160664,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999257752101544
+        },
+        {
+          "part": "tail",
+          "center": 15.138520833333333,
+          "mixCorrelation": 0.9999700797382226,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999642090482311
+        }
+      ]
+    },
+    {
+      "id": "OPEN-instant",
+      "at": 16.12,
+      "active": [
+        16.135083333333334,
+        17.7860625
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 16.235083333333336,
+          "mixCorrelation": 0.9983959943254488,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9983789165959567
+        },
+        {
+          "part": "middle",
+          "center": 16.960572916666667,
+          "mixCorrelation": 0.9993329220707539,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9993347729970289
+        },
+        {
+          "part": "tail",
+          "center": 17.6860625,
+          "mixCorrelation": 0.9999700798825634,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.999967013784633
+        }
+      ]
+    },
+    {
+      "id": "OPEN-5",
+      "at": 20,
+      "active": [
+        20.051395833333334,
+        22.0486875
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 20.151395833333336,
+          "mixCorrelation": 0.9999772956222353,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999773270422084
+        },
+        {
+          "part": "middle",
+          "center": 21.050041666666665,
+          "mixCorrelation": 0.9999886304675223,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999884632771082
+        },
+        {
+          "part": "tail",
+          "center": 21.9486875,
+          "mixCorrelation": 0.9999823862244411,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999814099925876
+        }
+      ]
+    },
+    {
+      "id": "OPEN-6",
+      "at": 24,
+      "active": [
+        24.036854166666668,
+        27.4525
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 24.13685416666667,
+          "mixCorrelation": 0.9999434798378913,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999430127956846
+        },
+        {
+          "part": "middle",
+          "center": 25.744677083333336,
+          "mixCorrelation": 0.9999880351789292,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.8294463808448483
+        },
+        {
+          "part": "tail",
+          "center": 27.3525,
+          "mixCorrelation": 0.9995569010738554,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9995566141093596
+        }
+      ]
+    },
+    {
+      "id": "J-01",
+      "at": 32.12,
+      "active": [
+        32.154291666666666,
+        43.17695833333333
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 32.25429166666667,
+          "mixCorrelation": 0.9977644352769245,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9977091988547134
+        },
+        {
+          "part": "middle",
+          "center": 37.665625,
+          "mixCorrelation": 0.9970812035029666,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.6553253954076672
+        },
+        {
+          "part": "tail",
+          "center": 43.07695833333333,
+          "mixCorrelation": 0.9985740742615024,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9982476528585088
+        }
+      ]
+    },
+    {
+      "id": "J-02",
+      "at": 46.12,
+      "active": [
+        46.17964583333333,
+        57.123666666666665
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 46.27964583333333,
+          "mixCorrelation": 0.9998194911023215,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998127406590811
+        },
+        {
+          "part": "middle",
+          "center": 51.65165625,
+          "mixCorrelation": 0.9973544304503446,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9972180219976463
+        },
+        {
+          "part": "tail",
+          "center": 57.023666666666664,
+          "mixCorrelation": 0.9992586267911334,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.999012560669312
+        }
+      ]
+    },
+    {
+      "id": "J-03",
+      "at": 60.12,
+      "active": [
+        60.1738125,
+        70.67985416666666
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 60.2738125,
+          "mixCorrelation": 0.9990981999606307,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9990653520757715
+        },
+        {
+          "part": "middle",
+          "center": 65.42683333333332,
+          "mixCorrelation": 0.997525418601669,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.997445127587168
+        },
+        {
+          "part": "tail",
+          "center": 70.57985416666666,
+          "mixCorrelation": 0.9998498803658477,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998288654998783
+        }
+      ]
+    },
+    {
+      "id": "J-04",
+      "at": 74.12,
+      "active": [
+        74.14847916666668,
+        84.3810625
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 74.24847916666667,
+          "mixCorrelation": 0.9999158640824333,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999072809046708
+        },
+        {
+          "part": "middle",
+          "center": 79.26477083333333,
+          "mixCorrelation": 0.9994322430877298,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9993773641692534
+        },
+        {
+          "part": "tail",
+          "center": 84.2810625,
+          "mixCorrelation": 0.9996277246123744,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996188106651875
+        }
+      ]
+    },
+    {
+      "id": "J-05",
+      "at": 88.12,
+      "active": [
+        88.17795833333334,
+        97.73022916666667
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 88.27795833333333,
+          "mixCorrelation": 0.999911055833072,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999071197647347
+        },
+        {
+          "part": "middle",
+          "center": 92.95409375,
+          "mixCorrelation": 0.9999676844285318,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999643984099924
+        },
+        {
+          "part": "tail",
+          "center": 97.63022916666668,
+          "mixCorrelation": 0.9996134001319882,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9995555455974243
+        }
+      ]
+    },
+    {
+      "id": "J-06",
+      "at": 102.12,
+      "active": [
+        102.14812500000001,
+        112.82350000000001
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 102.248125,
+          "mixCorrelation": 0.9997898020919013,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997855578006318
+        },
+        {
+          "part": "middle",
+          "center": 107.48581250000001,
+          "mixCorrelation": 0.9997528478794735,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997488847607385
+        },
+        {
+          "part": "tail",
+          "center": 112.72350000000002,
+          "mixCorrelation": 0.9996955704724342,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996703754094718
+        }
+      ]
+    },
+    {
+      "id": "J-07",
+      "at": 116.12,
+      "active": [
+        116.18145833333334,
+        127.23952083333333
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 116.28145833333333,
+          "mixCorrelation": 0.9994854452189595,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9994840824948213
+        },
+        {
+          "part": "middle",
+          "center": 121.71048958333333,
+          "mixCorrelation": 0.9998857359325926,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998742056132135
+        },
+        {
+          "part": "tail",
+          "center": 127.13952083333334,
+          "mixCorrelation": 0.9998958054131151,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998765259206798
+        }
+      ]
+    },
+    {
+      "id": "J-08",
+      "at": 130.12,
+      "active": [
+        130.15183333333334,
+        140.675
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 130.25183333333334,
+          "mixCorrelation": 0.9996139172605224,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996106760632953
+        },
+        {
+          "part": "middle",
+          "center": 135.41341666666668,
+          "mixCorrelation": 0.9980633945147633,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.994573576053448
+        },
+        {
+          "part": "tail",
+          "center": 140.57500000000002,
+          "mixCorrelation": 0.9999932264191752,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999929342657986
+        }
+      ]
+    },
+    {
+      "id": "J-09",
+      "at": 144.12,
+      "active": [
+        144.14847916666668,
+        155.94489583333333
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 144.24847916666667,
+          "mixCorrelation": 0.9978826624876626,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9978674201925741
+        },
+        {
+          "part": "middle",
+          "center": 150.04668750000002,
+          "mixCorrelation": 0.9985041887933566,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9984526907816437
+        },
+        {
+          "part": "tail",
+          "center": 155.84489583333334,
+          "mixCorrelation": 0.999828000539262,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998199127679516
+        }
+      ]
+    },
+    {
+      "id": "J-10",
+      "at": 158.12,
+      "active": [
+        158.1530625,
+        170.08283333333333
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 158.2530625,
+          "mixCorrelation": 0.9998094068803689,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997626806790594
+        },
+        {
+          "part": "middle",
+          "center": 164.11794791666665,
+          "mixCorrelation": 0.9997549592643273,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997533379700597
+        },
+        {
+          "part": "tail",
+          "center": 169.98283333333333,
+          "mixCorrelation": 0.9989429473647101,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9985124798518344
+        }
+      ]
+    },
+    {
+      "id": "J-11",
+      "at": 172.12,
+      "active": [
+        172.15502083333334,
+        182.37689583333335
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 172.25502083333333,
+          "mixCorrelation": 0.9993461776440848,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9992410041508775
+        },
+        {
+          "part": "middle",
+          "center": 177.26595833333334,
+          "mixCorrelation": 0.9992797373781037,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9991323476074799
+        },
+        {
+          "part": "tail",
+          "center": 182.27689583333336,
+          "mixCorrelation": 0.9998296517515257,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998235791440166
+        }
+      ]
+    },
+    {
+      "id": "J-12",
+      "at": 186.12,
+      "active": [
+        186.15254166666668,
+        198.25627083333333
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 186.25254166666667,
+          "mixCorrelation": 0.9998845933416873,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998834741985716
+        },
+        {
+          "part": "middle",
+          "center": 192.20440625,
+          "mixCorrelation": 0.9998423050994544,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998407719019857
+        },
+        {
+          "part": "tail",
+          "center": 198.15627083333334,
+          "mixCorrelation": 0.9998740294457984,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998405344742161
+        }
+      ]
+    },
+    {
+      "id": "J-13",
+      "at": 200.12,
+      "active": [
+        200.14822916666668,
+        212.57795833333333
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 200.24822916666668,
+          "mixCorrelation": 0.9997002425080155,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996957438021532
+        },
+        {
+          "part": "middle",
+          "center": 206.36309375000002,
+          "mixCorrelation": 0.9999342215647453,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999353045142241
+        },
+        {
+          "part": "tail",
+          "center": 212.47795833333333,
+          "mixCorrelation": 0.9998403657719771,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998357487890303
+        }
+      ]
+    },
+    {
+      "id": "V-01",
+      "at": 214.12,
+      "active": [
+        214.17816666666667,
+        224.69935416666667
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 214.27816666666666,
+          "mixCorrelation": 0.9999759633215102,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999753020983083
+        },
+        {
+          "part": "middle",
+          "center": 219.43876041666667,
+          "mixCorrelation": 0.999988780995177,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999884515328725
+        },
+        {
+          "part": "tail",
+          "center": 224.59935416666667,
+          "mixCorrelation": 0.9998460494526864,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998359339463988
+        }
+      ]
+    },
+    {
+      "id": "V-02",
+      "at": 228.12,
+      "active": [
+        228.15354166666668,
+        240.11972916666667
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 228.25354166666668,
+          "mixCorrelation": 0.9998128196380478,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998103398926691
+        },
+        {
+          "part": "middle",
+          "center": 234.13663541666668,
+          "mixCorrelation": 0.9999569217905916,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.934466012326565
+        },
+        {
+          "part": "tail",
+          "center": 240.01972916666668,
+          "mixCorrelation": 0.9999815414799604,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999795133705515
+        }
+      ]
+    },
+    {
+      "id": "V-03",
+      "at": 242.12,
+      "active": [
+        242.15397916666666,
+        252.88195833333333
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 242.25397916666665,
+          "mixCorrelation": 0.9997656855364238,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997640764896126
+        },
+        {
+          "part": "middle",
+          "center": 247.51796875,
+          "mixCorrelation": 0.9999587781218252,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9936696861182476
+        },
+        {
+          "part": "tail",
+          "center": 252.78195833333334,
+          "mixCorrelation": 0.99981336904989,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997919314742413
+        }
+      ]
+    },
+    {
+      "id": "V-04",
+      "at": 256.12,
+      "active": [
+        256.1770416666667,
+        267.1272916666667
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 256.2770416666667,
+          "mixCorrelation": 0.999859671253094,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998533399037194
+        },
+        {
+          "part": "middle",
+          "center": 261.6521666666667,
+          "mixCorrelation": 0.9997833901995972,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997790934965738
+        },
+        {
+          "part": "tail",
+          "center": 267.02729166666666,
+          "mixCorrelation": 0.999988018407891,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999876457177261
+        }
+      ]
+    },
+    {
+      "id": "V-05",
+      "at": 270.12,
+      "active": [
+        270.1457291666667,
+        280.33285416666666
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 270.2457291666667,
+          "mixCorrelation": 0.9998149624085442,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.999802407359932
+        },
+        {
+          "part": "middle",
+          "center": 275.23929166666665,
+          "mixCorrelation": 0.9999312528638572,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999305587312346
+        },
+        {
+          "part": "tail",
+          "center": 280.23285416666664,
+          "mixCorrelation": 0.9995637391844209,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.999500508208948
+        }
+      ]
+    },
+    {
+      "id": "V-06",
+      "at": 284.12,
+      "active": [
+        284.17689583333333,
+        293.505625
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 284.27689583333336,
+          "mixCorrelation": 0.9999047903074602,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999033636176459
+        },
+        {
+          "part": "middle",
+          "center": 288.84126041666667,
+          "mixCorrelation": 0.9998589335656975,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998140912000305
+        },
+        {
+          "part": "tail",
+          "center": 293.405625,
+          "mixCorrelation": 0.9999900057987929,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999882938196325
+        }
+      ]
+    },
+    {
+      "id": "V-07",
+      "at": 298.12,
+      "active": [
+        298.1485,
+        309.5830625
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 298.24850000000004,
+          "mixCorrelation": 0.9997753730313339,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997729554024581
+        },
+        {
+          "part": "middle",
+          "center": 303.86578125,
+          "mixCorrelation": 0.9999871823043094,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999863050090216
+        },
+        {
+          "part": "tail",
+          "center": 309.48306249999996,
+          "mixCorrelation": 0.999976427207784,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999754130265337
+        }
+      ]
+    },
+    {
+      "id": "V-08",
+      "at": 312.12,
+      "active": [
+        312.17629166666666,
+        323.18629166666665
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 312.2762916666667,
+          "mixCorrelation": 0.9999888818467622,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.99998867819692
+        },
+        {
+          "part": "middle",
+          "center": 317.68129166666665,
+          "mixCorrelation": 0.999972488859067,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999720713965881
+        },
+        {
+          "part": "tail",
+          "center": 323.0862916666666,
+          "mixCorrelation": 0.9999550516281793,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999322957761045
+        }
+      ]
+    },
+    {
+      "id": "V-09",
+      "at": 326.12,
+      "active": [
+        326.1551666666667,
+        338.01104166666664
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 326.2551666666667,
+          "mixCorrelation": 0.9999941448825986,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999941181569778
+        },
+        {
+          "part": "middle",
+          "center": 332.08310416666666,
+          "mixCorrelation": 0.9999944683873436,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999943344782067
+        },
+        {
+          "part": "tail",
+          "center": 337.9110416666666,
+          "mixCorrelation": 0.9999911870314815,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999894845790879
+        }
+      ]
+    },
+    {
+      "id": "V-10",
+      "at": 340.12,
+      "active": [
+        340.1698125,
+        351.0254166666667
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 340.2698125,
+          "mixCorrelation": 0.9999915526349137,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999916939629833
+        },
+        {
+          "part": "middle",
+          "center": 345.5976145833333,
+          "mixCorrelation": 0.999905199257231,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.999899153836248
+        },
+        {
+          "part": "tail",
+          "center": 350.92541666666665,
+          "mixCorrelation": 0.9997515553588325,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996491826639833
+        }
+      ]
+    },
+    {
+      "id": "V-11",
+      "at": 354.12,
+      "active": [
+        354.15108333333336,
+        365.1245
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 354.2510833333334,
+          "mixCorrelation": 0.9999910374670272,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999908018937843
+        },
+        {
+          "part": "middle",
+          "center": 359.63779166666666,
+          "mixCorrelation": 0.9999924193979837,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999925969052595
+        },
+        {
+          "part": "tail",
+          "center": 365.0245,
+          "mixCorrelation": 0.9995000847201988,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9994299892579591
+        }
+      ]
+    },
+    {
+      "id": "V-12",
+      "at": 368.12,
+      "active": [
+        368.1533958333333,
+        380.5208958333333
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 368.25339583333334,
+          "mixCorrelation": 0.9999833102885327,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.999982259722661
+        },
+        {
+          "part": "middle",
+          "center": 374.33714583333335,
+          "mixCorrelation": 0.9999083019900804,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998988793763516
+        },
+        {
+          "part": "tail",
+          "center": 380.4208958333333,
+          "mixCorrelation": 0.9998618173901254,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998596782100955
+        }
+      ]
+    },
+    {
+      "id": "C-01",
+      "at": 382.12,
+      "active": [
+        382.1479166666667,
+        393.7126875
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 382.2479166666667,
+          "mixCorrelation": 0.998536235213475,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9986106372196369
+        },
+        {
+          "part": "middle",
+          "center": 387.93030208333334,
+          "mixCorrelation": 0.9998818363057591,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998855468274496
+        },
+        {
+          "part": "tail",
+          "center": 393.6126875,
+          "mixCorrelation": 0.9985533873144274,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.998416241554383
+        }
+      ]
+    },
+    {
+      "id": "C-02",
+      "at": 396.12,
+      "active": [
+        396.15664583333336,
+        404.824
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 396.2566458333334,
+          "mixCorrelation": 0.9986152544416607,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.998595158116516
+        },
+        {
+          "part": "middle",
+          "center": 400.4903229166667,
+          "mixCorrelation": 0.9997749443091336,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.23256075822697342
+        },
+        {
+          "part": "tail",
+          "center": 404.724,
+          "mixCorrelation": 0.999626975466853,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996184137992916
+        }
+      ]
+    },
+    {
+      "id": "C-03",
+      "at": 410.12,
+      "active": [
+        410.1713541666667,
+        420.6053958333333
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 410.2713541666667,
+          "mixCorrelation": 0.9986998089357861,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9986353159108405
+        },
+        {
+          "part": "middle",
+          "center": 415.388375,
+          "mixCorrelation": 0.9999868020494576,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999743322163394
+        },
+        {
+          "part": "tail",
+          "center": 420.5053958333333,
+          "mixCorrelation": 0.9992269393795682,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.999173275765039
+        }
+      ]
+    },
+    {
+      "id": "C-04",
+      "at": 424.12,
+      "active": [
+        424.1441041666667,
+        435.68120833333336
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 424.2441041666667,
+          "mixCorrelation": 0.999944022731537,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999430011363785
+        },
+        {
+          "part": "middle",
+          "center": 429.91265625000005,
+          "mixCorrelation": 0.9998262451003116,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.8878653778286376
+        },
+        {
+          "part": "tail",
+          "center": 435.58120833333334,
+          "mixCorrelation": 0.9981521383504135,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9978434805565201
+        }
+      ]
+    },
+    {
+      "id": "C-05",
+      "at": 438.12,
+      "active": [
+        438.1518541666667,
+        448.75258333333335
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 438.2518541666667,
+          "mixCorrelation": 0.9996363901045116,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996214805308286
+        },
+        {
+          "part": "middle",
+          "center": 443.45221875000004,
+          "mixCorrelation": 0.999334189367887,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9993233273635188
+        },
+        {
+          "part": "tail",
+          "center": 448.6525833333333,
+          "mixCorrelation": 0.999026492333513,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9989598335413632
+        }
+      ]
+    },
+    {
+      "id": "C-06",
+      "at": 452.12,
+      "active": [
+        452.1734583333333,
+        462.2062291666667
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 452.27345833333334,
+          "mixCorrelation": 0.9992873811028204,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9992763132592588
+        },
+        {
+          "part": "middle",
+          "center": 457.18984375,
+          "mixCorrelation": 0.9965869471425979,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9920268941248649
+        },
+        {
+          "part": "tail",
+          "center": 462.10622916666665,
+          "mixCorrelation": 0.9992204576062771,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9991059270824888
+        }
+      ]
+    },
+    {
+      "id": "C-07",
+      "at": 466.12,
+      "active": [
+        466.1557916666667,
+        476.57829166666664
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 466.2557916666667,
+          "mixCorrelation": 0.9995933336075911,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9995496497012238
+        },
+        {
+          "part": "middle",
+          "center": 471.36704166666664,
+          "mixCorrelation": 0.999882793974505,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9969420297816317
+        },
+        {
+          "part": "tail",
+          "center": 476.4782916666666,
+          "mixCorrelation": 0.9984893880999356,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9983717770650469
+        }
+      ]
+    },
+    {
+      "id": "C-08",
+      "at": 480.12,
+      "active": [
+        480.15591666666666,
+        490.92941666666667
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 480.2559166666667,
+          "mixCorrelation": 0.9998713223693589,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997474122245782
+        },
+        {
+          "part": "middle",
+          "center": 485.54266666666666,
+          "mixCorrelation": 0.9997133425407875,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996516616690195
+        },
+        {
+          "part": "tail",
+          "center": 490.82941666666665,
+          "mixCorrelation": 0.9997997623115581,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997825938179217
+        }
+      ]
+    },
+    {
+      "id": "C-09",
+      "at": 494.12,
+      "active": [
+        494.15070833333334,
+        505.30533333333335
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 494.25070833333336,
+          "mixCorrelation": 0.9999556849579574,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999545222255027
+        },
+        {
+          "part": "middle",
+          "center": 499.72802083333335,
+          "mixCorrelation": 0.9993738625964015,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9993133103092454
+        },
+        {
+          "part": "tail",
+          "center": 505.20533333333333,
+          "mixCorrelation": 0.9999595380733829,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999453768532026
+        }
+      ]
+    },
+    {
+      "id": "C-10",
+      "at": 508.12,
+      "active": [
+        508.17164583333334,
+        520.9748958333333
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 508.27164583333337,
+          "mixCorrelation": 0.9997884658726601,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997858927761721
+        },
+        {
+          "part": "middle",
+          "center": 514.5732708333334,
+          "mixCorrelation": 0.9999630981170322,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999313001788587
+        },
+        {
+          "part": "tail",
+          "center": 520.8748958333333,
+          "mixCorrelation": 0.999993519080169,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999927781172094
+        }
+      ]
+    },
+    {
+      "id": "H-01",
+      "at": 522.12,
+      "active": [
+        522.1753958333334,
+        532.9658125
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 522.2753958333334,
+          "mixCorrelation": 0.9995974002867445,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9995977437472837
+        },
+        {
+          "part": "middle",
+          "center": 527.5706041666667,
+          "mixCorrelation": 0.99995800659655,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9250913851834398
+        },
+        {
+          "part": "tail",
+          "center": 532.8658125,
+          "mixCorrelation": 0.999752972516455,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9997234872072477
+        }
+      ]
+    },
+    {
+      "id": "H-02",
+      "at": 536.12,
+      "active": [
+        536.1712291666666,
+        546.7110833333334
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 536.2712291666667,
+          "mixCorrelation": 0.9999826137217686,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.999982215210161
+        },
+        {
+          "part": "middle",
+          "center": 541.44115625,
+          "mixCorrelation": 0.9999850525062991,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999801497301405
+        },
+        {
+          "part": "tail",
+          "center": 546.6110833333333,
+          "mixCorrelation": 0.9995736158660523,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.999491944613771
+        }
+      ]
+    },
+    {
+      "id": "H-03",
+      "at": 550.12,
+      "active": [
+        550.1460208333333,
+        560.7842708333334
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 550.2460208333333,
+          "mixCorrelation": 0.9985297449843572,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9982963405737201
+        },
+        {
+          "part": "middle",
+          "center": 555.4651458333333,
+          "mixCorrelation": 0.9984288681523763,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9984191755050357
+        },
+        {
+          "part": "tail",
+          "center": 560.6842708333334,
+          "mixCorrelation": 0.99998477251311,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999805419333038
+        }
+      ]
+    },
+    {
+      "id": "H-04",
+      "at": 564.12,
+      "active": [
+        564.1489791666667,
+        574.2391666666666
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 564.2489791666667,
+          "mixCorrelation": 0.9998402309719162,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998381619495567
+        },
+        {
+          "part": "middle",
+          "center": 569.1940729166666,
+          "mixCorrelation": 0.9999806824472834,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999800235549925
+        },
+        {
+          "part": "tail",
+          "center": 574.1391666666666,
+          "mixCorrelation": 0.9997989694886995,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.999772361814543
+        }
+      ]
+    },
+    {
+      "id": "H-05",
+      "at": 578.12,
+      "active": [
+        578.1687291666667,
+        589.3475625
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 578.2687291666667,
+          "mixCorrelation": 0.9998672918741768,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998645537700558
+        },
+        {
+          "part": "middle",
+          "center": 583.7581458333334,
+          "mixCorrelation": 0.9999787301773783,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999779876206978
+        },
+        {
+          "part": "tail",
+          "center": 589.2475625,
+          "mixCorrelation": 0.9995219067479212,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9992177925585446
+        }
+      ]
+    },
+    {
+      "id": "H-06",
+      "at": 592.12,
+      "active": [
+        592.1757083333333,
+        604.205375
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 592.2757083333333,
+          "mixCorrelation": 0.9999857296686762,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999867943141647
+        },
+        {
+          "part": "middle",
+          "center": 598.1905416666666,
+          "mixCorrelation": 0.9998452733561222,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9998440997227529
+        },
+        {
+          "part": "tail",
+          "center": 604.105375,
+          "mixCorrelation": 0.9996631244940793,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996509068063757
+        }
+      ]
+    },
+    {
+      "id": "CLOSE-01",
+      "at": 606.12,
+      "active": [
+        606.1495416666667,
+        615.8053541666667
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 606.2495416666667,
+          "mixCorrelation": 0.9994710100070531,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9994592520171505
+        },
+        {
+          "part": "middle",
+          "center": 610.9774479166667,
+          "mixCorrelation": 0.9999794969664969,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999728802206608
+        },
+        {
+          "part": "tail",
+          "center": 615.7053541666667,
+          "mixCorrelation": 0.9996771012192933,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9996494799890372
+        }
+      ]
+    },
+    {
+      "id": "CLOSE-02",
+      "at": 619.12,
+      "active": [
+        619.1518958333334,
+        629.01725
+      ],
+      "checks": [
+        {
+          "part": "head",
+          "center": 619.2518958333334,
+          "mixCorrelation": 0.999530304481544,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9995200505911553
+        },
+        {
+          "part": "middle",
+          "center": 624.0845729166667,
+          "mixCorrelation": 0.9999150859730593,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999081744493796
+        },
+        {
+          "part": "tail",
+          "center": 628.91725,
+          "mixCorrelation": 0.9999777945893079,
+          "lagSamples": 0,
+          "voiceResidualCorrelation": 0.9999753366520541
+        }
+      ]
+    }
+  ],
+  "subjectiveListen": false
+}
