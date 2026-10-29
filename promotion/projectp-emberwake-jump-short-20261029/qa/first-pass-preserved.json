@@ -1,0 +1,67 @@
+{
+  "issue": 152,
+  "reason": "P1 header drift in actual Native/FC output despite stored y230; preserve initial artifacts",
+  "pngs": [
+    {
+      "file": "first-pass/qa/frame-0_3.png",
+      "sha256": "49984655f2752d5ca3c59db71be4027968f12903441c0845812034fec4ca384d"
+    },
+    {
+      "file": "first-pass/qa/frame-1_2.png",
+      "sha256": "658d4461e047aad2a7f98a2a4d3cac758a9649730ad8ecb2feb080c31938673c"
+    },
+    {
+      "file": "first-pass/qa/frame-2_2.png",
+      "sha256": "b791acd8cc650bc17ac880bb00d2be7be0ec40ad3523b648e8c2fcc519e90f84"
+    },
+    {
+      "file": "first-pass/qa/frame-2_6.png",
+      "sha256": "f2200d3c2432b1a28f7e22992f9a498f09e8dfcdc561ea076710418a9fefc842"
+    },
+    {
+      "file": "first-pass/qa/frame-3_6.png",
+      "sha256": "7468122759fb874847efb6b1f3795a7f0442960a81290d2f50d1a3f03b77a877"
+    },
+    {
+      "file": "first-pass/qa/frame-4_4.png",
+      "sha256": "d72252cc9b9933fc2c4efea8f2024dd31083164659f563371c86eeb3766fc4a1"
+    },
+    {
+      "file": "first-pass/qa/frame-5_2.png",
+      "sha256": "5a15762fb4a9e8ccb66f0d41591ec17924c570b392209997c215b9abbc89e56e"
+    },
+    {
+      "file": "first-pass/qa/frame-6_9.png",
+      "sha256": "9bd20ead862e36cdf2350026a5500eee20508a8bf47f21935525f4612a5d0d13"
+    }
+  ],
+  "projects": [
+    {
+      "file": "projects/jump-v01.ecproj",
+      "sha256": "8a095978ce9ec0f9880f4a9e12e144a235fa2c504803a0b7d24e488a89edc52a"
+    },
+    {
+      "file": "projects/jump-v01-voice.fcproj",
+      "sha256": "464cf975dda826b9e0ff0c74da97fe52f00f860c2d8264297865d166ffcdf86b"
+    },
+    {
+      "file": "projects/jump-v01-bgm.fcproj",
+      "sha256": "574fd88c9ef612be9262e66c0001523b0c3c984c6f0b583ac5702c1fb7163a64"
+    }
+  ],
+  "videos": [
+    {
+      "file": "videos/emberwake-jump-v01-voice.mp4",
+      "sha256": "8c020cdbf86a26671d8e04aad6a06429371b9b5f300ebc723151f46c9e5d7b18"
+    },
+    {
+      "file": "videos/emberwake-jump-v01-bgm.mp4",
+      "sha256": "4d20d8d09fe2a6d95657221dc39910f531cfb3377b4a9e619410e89939f2e2d0"
+    }
+  ],
+  "nativePicture": {
+    "file": "media/jump-picture-v01.mov",
+    "sha256": "c0da519dc5138ad0d691e21ee93281c9e6f61ac8f4c80fa074d55cc987203ece"
+  },
+  "newVersion": "v02; initial files retained unchanged"
+}

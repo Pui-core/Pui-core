@@ -1,0 +1,8908 @@
+{
+  "method": "Actual decoded RGB: heading ROI x0..1079,y0..309, includes unsafe top rows; game-band y310..359 classified separately. Same warm-pixel predicate as failed full-360 inspection. Entrance frames 0..3/96..99 excluded only.",
+  "originalFailedInspection": "final-v03-heading-bounds.json",
+  "originalFailedInspectionSha256": "42226c6126dbc5281844e33b44a16ebf8324eb15a4fd2c6f61a305450e69bead",
+  "final": {
+    "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/videos/emberwake-jump-v03-bgm.mp4",
+    "sha256": "9e1a38827ec67bdc59876bc4abc7627e8927c95960bc1a529d7332dcc607bbf2",
+    "decodedFrames": 240,
+    "checkedFrames": 172,
+    "failures": [],
+    "centerRange": [
+      540,
+      540.5
+    ],
+    "topRange": [
+      182,
+      194
+    ],
+    "bottomRange": [
+      259,
+      263
+    ],
+    "rows": [
+      {
+        "frame": 0,
+        "time": 0,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 1,
+        "time": 0.03333333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 2,
+        "time": 0.06666666666666667,
+        "heading": {
+          "pixels": 16232,
+          "bbox": [
+            206,
+            200,
+            875,
+            277
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 3,
+        "time": 0.1,
+        "heading": {
+          "pixels": 16201,
+          "bbox": [
+            206,
+            192,
+            875,
+            270
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 4,
+        "time": 0.13333333333333333,
+        "heading": {
+          "pixels": 16405,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 5,
+        "time": 0.16666666666666666,
+        "heading": {
+          "pixels": 16432,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 6,
+        "time": 0.2,
+        "heading": {
+          "pixels": 16432,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 7,
+        "time": 0.23333333333333334,
+        "heading": {
+          "pixels": 16467,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 8,
+        "time": 0.26666666666666666,
+        "heading": {
+          "pixels": 16470,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 9,
+        "time": 0.3,
+        "heading": {
+          "pixels": 16293,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 10,
+        "time": 0.3333333333333333,
+        "heading": {
+          "pixels": 16301,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 11,
+        "time": 0.36666666666666664,
+        "heading": {
+          "pixels": 16329,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 12,
+        "time": 0.4,
+        "heading": {
+          "pixels": 16156,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 13,
+        "time": 0.43333333333333335,
+        "heading": {
+          "pixels": 16204,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 14,
+        "time": 0.4666666666666667,
+        "heading": {
+          "pixels": 16217,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 15,
+        "time": 0.5,
+        "heading": {
+          "pixels": 15957,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 16,
+        "time": 0.5333333333333333,
+        "heading": {
+          "pixels": 16093,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 17,
+        "time": 0.5666666666666667,
+        "heading": {
+          "pixels": 16101,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 18,
+        "time": 0.6,
+        "heading": {
+          "pixels": 15992,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 19,
+        "time": 0.6333333333333333,
+        "heading": {
+          "pixels": 16111,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 20,
+        "time": 0.6666666666666666,
+        "heading": {
+          "pixels": 16113,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 21,
+        "time": 0.7,
+        "heading": {
+          "pixels": 16048,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 22,
+        "time": 0.7333333333333333,
+        "heading": {
+          "pixels": 16179,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 23,
+        "time": 0.7666666666666667,
+        "heading": {
+          "pixels": 16167,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 24,
+        "time": 0.8,
+        "heading": {
+          "pixels": 16139,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 25,
+        "time": 0.8333333333333334,
+        "heading": {
+          "pixels": 16177,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 26,
+        "time": 0.8666666666666667,
+        "heading": {
+          "pixels": 16185,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 27,
+        "time": 0.9,
+        "heading": {
+          "pixels": 16033,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 28,
+        "time": 0.9333333333333333,
+        "heading": {
+          "pixels": 16170,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 29,
+        "time": 0.9666666666666667,
+        "heading": {
+          "pixels": 16139,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 30,
+        "time": 1,
+        "heading": {
+          "pixels": 15939,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 31,
+        "time": 1.0333333333333334,
+        "heading": {
+          "pixels": 16100,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 32,
+        "time": 1.0666666666666667,
+        "heading": {
+          "pixels": 16108,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 33,
+        "time": 1.1,
+        "heading": {
+          "pixels": 15945,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 34,
+        "time": 1.1333333333333333,
+        "heading": {
+          "pixels": 16002,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 35,
+        "time": 1.1666666666666667,
+        "heading": {
+          "pixels": 15991,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 36,
+        "time": 1.2,
+        "heading": {
+          "pixels": 15894,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 37,
+        "time": 1.2333333333333334,
+        "heading": {
+          "pixels": 16086,
+          "bbox": [
+            206,
+            184,
+            875,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 38,
+        "time": 1.2666666666666666,
+        "heading": {
+          "pixels": 16085,
+          "bbox": [
+            206,
+            184,
+            875,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1338,
+          "bbox": [
+            576,
+            326,
+            626,
+            359
+          ],
+          "centerX": 601
+        }
+      },
+      {
+        "frame": 39,
+        "time": 1.3,
+        "heading": {
+          "pixels": 16057,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 40,
+        "time": 1.3333333333333333,
+        "heading": {
+          "pixels": 16175,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 41,
+        "time": 1.3666666666666667,
+        "heading": {
+          "pixels": 16171,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 42,
+        "time": 1.4,
+        "heading": {
+          "pixels": 16083,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 43,
+        "time": 1.4333333333333333,
+        "heading": {
+          "pixels": 16169,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 44,
+        "time": 1.4666666666666666,
+        "heading": {
+          "pixels": 16145,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 45,
+        "time": 1.5,
+        "heading": {
+          "pixels": 16095,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 46,
+        "time": 1.5333333333333334,
+        "heading": {
+          "pixels": 16105,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 47,
+        "time": 1.5666666666666667,
+        "heading": {
+          "pixels": 16121,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 48,
+        "time": 1.6,
+        "heading": {
+          "pixels": 15894,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 49,
+        "time": 1.6333333333333333,
+        "heading": {
+          "pixels": 15909,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 50,
+        "time": 1.6666666666666667,
+        "heading": {
+          "pixels": 15909,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 51,
+        "time": 1.7,
+        "heading": {
+          "pixels": 15905,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 52,
+        "time": 1.7333333333333334,
+        "heading": {
+          "pixels": 16066,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 53,
+        "time": 1.7666666666666666,
+        "heading": {
+          "pixels": 16066,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 54,
+        "time": 1.8,
+        "heading": {
+          "pixels": 16122,
+          "bbox": [
+            206,
+            184,
+            875,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 55,
+        "time": 1.8333333333333333,
+        "heading": {
+          "pixels": 16168,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 56,
+        "time": 1.8666666666666667,
+        "heading": {
+          "pixels": 16178,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 57,
+        "time": 1.9,
+        "heading": {
+          "pixels": 16131,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 58,
+        "time": 1.9333333333333333,
+        "heading": {
+          "pixels": 16238,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 59,
+        "time": 1.9666666666666666,
+        "heading": {
+          "pixels": 16187,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 60,
+        "time": 2,
+        "heading": {
+          "pixels": 16643,
+          "bbox": [
+            205,
+            182,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 61,
+        "time": 2.033333333333333,
+        "heading": {
+          "pixels": 16776,
+          "bbox": [
+            205,
+            182,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 62,
+        "time": 2.066666666666667,
+        "heading": {
+          "pixels": 16776,
+          "bbox": [
+            205,
+            182,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 63,
+        "time": 2.1,
+        "heading": {
+          "pixels": 16621,
+          "bbox": [
+            205,
+            182,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 64,
+        "time": 2.1333333333333333,
+        "heading": {
+          "pixels": 16620,
+          "bbox": [
+            205,
+            182,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 65,
+        "time": 2.1666666666666665,
+        "heading": {
+          "pixels": 16681,
+          "bbox": [
+            205,
+            182,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 66,
+        "time": 2.2,
+        "heading": {
+          "pixels": 16600,
+          "bbox": [
+            205,
+            182,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 67,
+        "time": 2.2333333333333334,
+        "heading": {
+          "pixels": 16640,
+          "bbox": [
+            205,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 68,
+        "time": 2.2666666666666666,
+        "heading": {
+          "pixels": 16640,
+          "bbox": [
+            205,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 69,
+        "time": 2.3,
+        "heading": {
+          "pixels": 16493,
+          "bbox": [
+            205,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 70,
+        "time": 2.3333333333333335,
+        "heading": {
+          "pixels": 16564,
+          "bbox": [
+            205,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 71,
+        "time": 2.3666666666666667,
+        "heading": {
+          "pixels": 16658,
+          "bbox": [
+            205,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 72,
+        "time": 2.4,
+        "heading": {
+          "pixels": 17136,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 73,
+        "time": 2.433333333333333,
+        "heading": {
+          "pixels": 17055,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 74,
+        "time": 2.466666666666667,
+        "heading": {
+          "pixels": 16922,
+          "bbox": [
+            205,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 75,
+        "time": 2.5,
+        "heading": {
+          "pixels": 16754,
+          "bbox": [
+            205,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 76,
+        "time": 2.533333333333333,
+        "heading": {
+          "pixels": 16825,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 77,
+        "time": 2.566666666666667,
+        "heading": {
+          "pixels": 16818,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 78,
+        "time": 2.6,
+        "heading": {
+          "pixels": 16613,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 79,
+        "time": 2.6333333333333333,
+        "heading": {
+          "pixels": 16597,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 80,
+        "time": 2.6666666666666665,
+        "heading": {
+          "pixels": 16598,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 81,
+        "time": 2.7,
+        "heading": {
+          "pixels": 16377,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 82,
+        "time": 2.7333333333333334,
+        "heading": {
+          "pixels": 16382,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 83,
+        "time": 2.7666666666666666,
+        "heading": {
+          "pixels": 16377,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 84,
+        "time": 2.8,
+        "heading": {
+          "pixels": 16253,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 85,
+        "time": 2.8333333333333335,
+        "heading": {
+          "pixels": 16313,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 86,
+        "time": 2.8666666666666667,
+        "heading": {
+          "pixels": 16313,
+          "bbox": [
+            205,
+            184,
+            875,
+            263
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 87,
+        "time": 2.9,
+        "heading": {
+          "pixels": 16217,
+          "bbox": [
+            205,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 88,
+        "time": 2.933333333333333,
+        "heading": {
+          "pixels": 16346,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 89,
+        "time": 2.966666666666667,
+        "heading": {
+          "pixels": 16346,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 90,
+        "time": 3,
+        "heading": {
+          "pixels": 16304,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 91,
+        "time": 3.033333333333333,
+        "heading": {
+          "pixels": 16381,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 92,
+        "time": 3.066666666666667,
+        "heading": {
+          "pixels": 16382,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 93,
+        "time": 3.1,
+        "heading": {
+          "pixels": 16331,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 94,
+        "time": 3.1333333333333333,
+        "heading": {
+          "pixels": 16338,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 95,
+        "time": 3.1666666666666665,
+        "heading": {
+          "pixels": 16326,
+          "bbox": [
+            206,
+            184,
+            875,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 96,
+        "time": 3.2,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 97,
+        "time": 3.2333333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 98,
+        "time": 3.2666666666666666,
+        "heading": {
+          "pixels": 15054,
+          "bbox": [
+            200,
+            210,
+            881,
+            275
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 99,
+        "time": 3.3,
+        "heading": {
+          "pixels": 15218,
+          "bbox": [
+            200,
+            202,
+            881,
+            268
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 100,
+        "time": 3.3333333333333335,
+        "heading": {
+          "pixels": 15474,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 101,
+        "time": 3.3666666666666667,
+        "heading": {
+          "pixels": 15470,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 102,
+        "time": 3.4,
+        "heading": {
+          "pixels": 15398,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 103,
+        "time": 3.433333333333333,
+        "heading": {
+          "pixels": 15412,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 104,
+        "time": 3.466666666666667,
+        "heading": {
+          "pixels": 15413,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 105,
+        "time": 3.5,
+        "heading": {
+          "pixels": 15177,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 106,
+        "time": 3.533333333333333,
+        "heading": {
+          "pixels": 15181,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 107,
+        "time": 3.566666666666667,
+        "heading": {
+          "pixels": 15251,
+          "bbox": [
+            200,
+            194,
+            881,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 108,
+        "time": 3.6,
+        "heading": {
+          "pixels": 15011,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 109,
+        "time": 3.6333333333333333,
+        "heading": {
+          "pixels": 15054,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 110,
+        "time": 3.6666666666666665,
+        "heading": {
+          "pixels": 15058,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 111,
+        "time": 3.7,
+        "heading": {
+          "pixels": 14841,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 112,
+        "time": 3.7333333333333334,
+        "heading": {
+          "pixels": 15005,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 113,
+        "time": 3.7666666666666666,
+        "heading": {
+          "pixels": 15011,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1143,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 114,
+        "time": 3.8,
+        "heading": {
+          "pixels": 14880,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1143,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 115,
+        "time": 3.8333333333333335,
+        "heading": {
+          "pixels": 15038,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1142,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 116,
+        "time": 3.8666666666666667,
+        "heading": {
+          "pixels": 15010,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1142,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 117,
+        "time": 3.9,
+        "heading": {
+          "pixels": 14969,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1142,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 118,
+        "time": 3.933333333333333,
+        "heading": {
+          "pixels": 15002,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1142,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 119,
+        "time": 3.966666666666667,
+        "heading": {
+          "pixels": 14957,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1142,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 120,
+        "time": 4,
+        "heading": {
+          "pixels": 15762,
+          "bbox": [
+            200,
+            193,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 121,
+        "time": 4.033333333333333,
+        "heading": {
+          "pixels": 15845,
+          "bbox": [
+            200,
+            193,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 122,
+        "time": 4.066666666666666,
+        "heading": {
+          "pixels": 15826,
+          "bbox": [
+            200,
+            193,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 123,
+        "time": 4.1,
+        "heading": {
+          "pixels": 15556,
+          "bbox": [
+            200,
+            193,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 124,
+        "time": 4.133333333333334,
+        "heading": {
+          "pixels": 15538,
+          "bbox": [
+            200,
+            193,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 125,
+        "time": 4.166666666666667,
+        "heading": {
+          "pixels": 15577,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 126,
+        "time": 4.2,
+        "heading": {
+          "pixels": 15342,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 127,
+        "time": 4.233333333333333,
+        "heading": {
+          "pixels": 15428,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 128,
+        "time": 4.266666666666667,
+        "heading": {
+          "pixels": 15445,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 129,
+        "time": 4.3,
+        "heading": {
+          "pixels": 15313,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 130,
+        "time": 4.333333333333333,
+        "heading": {
+          "pixels": 15540,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 131,
+        "time": 4.366666666666666,
+        "heading": {
+          "pixels": 15532,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 132,
+        "time": 4.4,
+        "heading": {
+          "pixels": 15541,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 133,
+        "time": 4.433333333333334,
+        "heading": {
+          "pixels": 15715,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 134,
+        "time": 4.466666666666667,
+        "heading": {
+          "pixels": 15699,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 135,
+        "time": 4.5,
+        "heading": {
+          "pixels": 15667,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 136,
+        "time": 4.533333333333333,
+        "heading": {
+          "pixels": 15754,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 137,
+        "time": 4.566666666666666,
+        "heading": {
+          "pixels": 15756,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 138,
+        "time": 4.6,
+        "heading": {
+          "pixels": 15484,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 139,
+        "time": 4.633333333333334,
+        "heading": {
+          "pixels": 15482,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 140,
+        "time": 4.666666666666667,
+        "heading": {
+          "pixels": 15482,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 141,
+        "time": 4.7,
+        "heading": {
+          "pixels": 15482,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 142,
+        "time": 4.733333333333333,
+        "heading": {
+          "pixels": 15656,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 143,
+        "time": 4.766666666666667,
+        "heading": {
+          "pixels": 15681,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 144,
+        "time": 4.8,
+        "heading": {
+          "pixels": 15794,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 145,
+        "time": 4.833333333333333,
+        "heading": {
+          "pixels": 15869,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 146,
+        "time": 4.866666666666666,
+        "heading": {
+          "pixels": 15854,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 147,
+        "time": 4.9,
+        "heading": {
+          "pixels": 15651,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 148,
+        "time": 4.933333333333334,
+        "heading": {
+          "pixels": 15616,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 149,
+        "time": 4.966666666666667,
+        "heading": {
+          "pixels": 15623,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 150,
+        "time": 5,
+        "heading": {
+          "pixels": 15287,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 151,
+        "time": 5.033333333333333,
+        "heading": {
+          "pixels": 15326,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 152,
+        "time": 5.066666666666666,
+        "heading": {
+          "pixels": 15332,
+          "bbox": [
+            200,
+            192,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 153,
+        "time": 5.1,
+        "heading": {
+          "pixels": 15157,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 154,
+        "time": 5.133333333333334,
+        "heading": {
+          "pixels": 15201,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 155,
+        "time": 5.166666666666667,
+        "heading": {
+          "pixels": 15210,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 156,
+        "time": 5.2,
+        "heading": {
+          "pixels": 15126,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 157,
+        "time": 5.233333333333333,
+        "heading": {
+          "pixels": 15307,
+          "bbox": [
+            200,
+            193,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 158,
+        "time": 5.266666666666667,
+        "heading": {
+          "pixels": 15311,
+          "bbox": [
+            200,
+            193,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 159,
+        "time": 5.3,
+        "heading": {
+          "pixels": 15268,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 160,
+        "time": 5.333333333333333,
+        "heading": {
+          "pixels": 15248,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 161,
+        "time": 5.366666666666666,
+        "heading": {
+          "pixels": 15221,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 162,
+        "time": 5.4,
+        "heading": {
+          "pixels": 15147,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 163,
+        "time": 5.433333333333334,
+        "heading": {
+          "pixels": 15260,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 164,
+        "time": 5.466666666666667,
+        "heading": {
+          "pixels": 15268,
+          "bbox": [
+            200,
+            194,
+            881,
+            259
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 165,
+        "time": 5.5,
+        "heading": {
+          "pixels": 15048,
+          "bbox": [
+            200,
+            194,
+            881,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 166,
+        "time": 5.533333333333333,
+        "heading": {
+          "pixels": 15090,
+          "bbox": [
+            200,
+            194,
+            881,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 167,
+        "time": 5.566666666666666,
+        "heading": {
+          "pixels": 15086,
+          "bbox": [
+            200,
+            194,
+            881,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 168,
+        "time": 5.6,
+        "heading": {
+          "pixels": 14946,
+          "bbox": [
+            200,
+            194,
+            881,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 169,
+        "time": 5.633333333333334,
+        "heading": {
+          "pixels": 14975,
+          "bbox": [
+            200,
+            194,
+            881,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 170,
+        "time": 5.666666666666667,
+        "heading": {
+          "pixels": 15003,
+          "bbox": [
+            200,
+            194,
+            881,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 171,
+        "time": 5.7,
+        "heading": {
+          "pixels": 14898,
+          "bbox": [
+            200,
+            194,
+            881,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 172,
+        "time": 5.733333333333333,
+        "heading": {
+          "pixels": 15046,
+          "bbox": [
+            200,
+            194,
+            881,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 173,
+        "time": 5.766666666666667,
+        "heading": {
+          "pixels": 15054,
+          "bbox": [
+            200,
+            194,
+            881,
+            260
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 174,
+        "time": 5.8,
+        "heading": {
+          "pixels": 15024,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 175,
+        "time": 5.833333333333333,
+        "heading": {
+          "pixels": 15184,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 176,
+        "time": 5.866666666666666,
+        "heading": {
+          "pixels": 15189,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 177,
+        "time": 5.9,
+        "heading": {
+          "pixels": 15152,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 178,
+        "time": 5.933333333333334,
+        "heading": {
+          "pixels": 15272,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 179,
+        "time": 5.966666666666667,
+        "heading": {
+          "pixels": 15236,
+          "bbox": [
+            200,
+            194,
+            881,
+            261
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 180,
+        "time": 6,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 181,
+        "time": 6.033333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 182,
+        "time": 6.066666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 183,
+        "time": 6.1,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 184,
+        "time": 6.133333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 185,
+        "time": 6.166666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 186,
+        "time": 6.2,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 187,
+        "time": 6.233333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 188,
+        "time": 6.266666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 189,
+        "time": 6.3,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 190,
+        "time": 6.333333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 191,
+        "time": 6.366666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 192,
+        "time": 6.4,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 193,
+        "time": 6.433333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 194,
+        "time": 6.466666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 195,
+        "time": 6.5,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 196,
+        "time": 6.533333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 197,
+        "time": 6.566666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 198,
+        "time": 6.6,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 199,
+        "time": 6.633333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 200,
+        "time": 6.666666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 201,
+        "time": 6.7,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 202,
+        "time": 6.733333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 203,
+        "time": 6.766666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 204,
+        "time": 6.8,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 205,
+        "time": 6.833333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 206,
+        "time": 6.866666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 207,
+        "time": 6.9,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 208,
+        "time": 6.933333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 209,
+        "time": 6.966666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 210,
+        "time": 7,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 211,
+        "time": 7.033333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 212,
+        "time": 7.066666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 213,
+        "time": 7.1,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 214,
+        "time": 7.133333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 215,
+        "time": 7.166666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 216,
+        "time": 7.2,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 217,
+        "time": 7.233333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 218,
+        "time": 7.266666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 219,
+        "time": 7.3,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 220,
+        "time": 7.333333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 221,
+        "time": 7.366666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 222,
+        "time": 7.4,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 223,
+        "time": 7.433333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 224,
+        "time": 7.466666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 225,
+        "time": 7.5,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 226,
+        "time": 7.533333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 227,
+        "time": 7.566666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 228,
+        "time": 7.6,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 229,
+        "time": 7.633333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 230,
+        "time": 7.666666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 231,
+        "time": 7.7,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 232,
+        "time": 7.733333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 233,
+        "time": 7.766666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 234,
+        "time": 7.8,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 235,
+        "time": 7.833333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 236,
+        "time": 7.866666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 237,
+        "time": 7.9,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 238,
+        "time": 7.933333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 239,
+        "time": 7.966666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      }
+    ]
+  },
+  "priorFinalControl": {
+    "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/videos/emberwake-jump-v01-bgm.mp4",
+    "sha256": "4d20d8d09fe2a6d95657221dc39910f531cfb3377b4a9e619410e89939f2e2d0",
+    "decodedFrames": 240,
+    "checkedFrames": 172,
+    "failures": [],
+    "centerRange": [
+      539.5,
+      540.5
+    ],
+    "topRange": [
+      190,
+      196
+    ],
+    "bottomRange": [
+      263,
+      269
+    ],
+    "rows": [
+      {
+        "frame": 0,
+        "time": 0,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 1,
+        "time": 0.03333333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 2,
+        "time": 0.06666666666666667,
+        "heading": {
+          "pixels": 16215,
+          "bbox": [
+            206,
+            206,
+            875,
+            283
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 3,
+        "time": 0.1,
+        "heading": {
+          "pixels": 16237,
+          "bbox": [
+            206,
+            198,
+            875,
+            275
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 4,
+        "time": 0.13333333333333333,
+        "heading": {
+          "pixels": 16290,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 5,
+        "time": 0.16666666666666666,
+        "heading": {
+          "pixels": 16290,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 6,
+        "time": 0.2,
+        "heading": {
+          "pixels": 16290,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 7,
+        "time": 0.23333333333333334,
+        "heading": {
+          "pixels": 16296,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 8,
+        "time": 0.26666666666666666,
+        "heading": {
+          "pixels": 16296,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 9,
+        "time": 0.3,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 10,
+        "time": 0.3333333333333333,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 11,
+        "time": 0.36666666666666664,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 12,
+        "time": 0.4,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 13,
+        "time": 0.43333333333333335,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 14,
+        "time": 0.4666666666666667,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 15,
+        "time": 0.5,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 16,
+        "time": 0.5333333333333333,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 17,
+        "time": 0.5666666666666667,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 18,
+        "time": 0.6,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 19,
+        "time": 0.6333333333333333,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 20,
+        "time": 0.6666666666666666,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 21,
+        "time": 0.7,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 22,
+        "time": 0.7333333333333333,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 23,
+        "time": 0.7666666666666667,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 24,
+        "time": 0.8,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 25,
+        "time": 0.8333333333333334,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 26,
+        "time": 0.8666666666666667,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 27,
+        "time": 0.9,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 28,
+        "time": 0.9333333333333333,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 29,
+        "time": 0.9666666666666667,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 30,
+        "time": 1,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 31,
+        "time": 1.0333333333333334,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 32,
+        "time": 1.0666666666666667,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 33,
+        "time": 1.1,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 34,
+        "time": 1.1333333333333333,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 35,
+        "time": 1.1666666666666667,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 36,
+        "time": 1.2,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 37,
+        "time": 1.2333333333333334,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 38,
+        "time": 1.2666666666666666,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 1340,
+          "bbox": [
+            576,
+            326,
+            626,
+            359
+          ],
+          "centerX": 601
+        }
+      },
+      {
+        "frame": 39,
+        "time": 1.3,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 40,
+        "time": 1.3333333333333333,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 41,
+        "time": 1.3666666666666667,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 42,
+        "time": 1.4,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 43,
+        "time": 1.4333333333333333,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 44,
+        "time": 1.4666666666666666,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 45,
+        "time": 1.5,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 46,
+        "time": 1.5333333333333334,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 47,
+        "time": 1.5666666666666667,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 48,
+        "time": 1.6,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 49,
+        "time": 1.6333333333333333,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 50,
+        "time": 1.6666666666666667,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 51,
+        "time": 1.7,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 52,
+        "time": 1.7333333333333334,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 53,
+        "time": 1.7666666666666666,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 54,
+        "time": 1.8,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 55,
+        "time": 1.8333333333333333,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 56,
+        "time": 1.8666666666666667,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 57,
+        "time": 1.9,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 58,
+        "time": 1.9333333333333333,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 59,
+        "time": 1.9666666666666666,
+        "heading": {
+          "pixels": 16292,
+          "bbox": [
+            204,
+            190,
+            875,
+            267
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 60,
+        "time": 2,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 61,
+        "time": 2.033333333333333,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 62,
+        "time": 2.066666666666667,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 63,
+        "time": 2.1,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 64,
+        "time": 2.1333333333333333,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 65,
+        "time": 2.1666666666666665,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 66,
+        "time": 2.2,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 67,
+        "time": 2.2333333333333334,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 68,
+        "time": 2.2666666666666666,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 69,
+        "time": 2.3,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 70,
+        "time": 2.3333333333333335,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 71,
+        "time": 2.3666666666666667,
+        "heading": {
+          "pixels": 16759,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 72,
+        "time": 2.4,
+        "heading": {
+          "pixels": 17179,
+          "bbox": [
+            205,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 73,
+        "time": 2.433333333333333,
+        "heading": {
+          "pixels": 17005,
+          "bbox": [
+            204,
+            190,
+            875,
+            269
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 74,
+        "time": 2.466666666666667,
+        "heading": {
+          "pixels": 16978,
+          "bbox": [
+            204,
+            190,
+            875,
+            269
+          ],
+          "centerX": 539.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 75,
+        "time": 2.5,
+        "heading": {
+          "pixels": 16846,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 76,
+        "time": 2.533333333333333,
+        "heading": {
+          "pixels": 16845,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 77,
+        "time": 2.566666666666667,
+        "heading": {
+          "pixels": 16845,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 78,
+        "time": 2.6,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 79,
+        "time": 2.6333333333333333,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 80,
+        "time": 2.6666666666666665,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 81,
+        "time": 2.7,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 82,
+        "time": 2.7333333333333334,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 83,
+        "time": 2.7666666666666666,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 84,
+        "time": 2.8,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 85,
+        "time": 2.8333333333333335,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 86,
+        "time": 2.8666666666666667,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 87,
+        "time": 2.9,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 88,
+        "time": 2.933333333333333,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 89,
+        "time": 2.966666666666667,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 90,
+        "time": 3,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 91,
+        "time": 3.033333333333333,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 92,
+        "time": 3.066666666666667,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 93,
+        "time": 3.1,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 94,
+        "time": 3.1333333333333333,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 95,
+        "time": 3.1666666666666665,
+        "heading": {
+          "pixels": 16838,
+          "bbox": [
+            206,
+            190,
+            875,
+            269
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 96,
+        "time": 3.2,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 97,
+        "time": 3.2333333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 98,
+        "time": 3.2666666666666666,
+        "heading": {
+          "pixels": 15327,
+          "bbox": [
+            200,
+            212,
+            881,
+            278
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 99,
+        "time": 3.3,
+        "heading": {
+          "pixels": 15794,
+          "bbox": [
+            200,
+            204,
+            881,
+            271
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 100,
+        "time": 3.3333333333333335,
+        "heading": {
+          "pixels": 15619,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 101,
+        "time": 3.3666666666666667,
+        "heading": {
+          "pixels": 15620,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 102,
+        "time": 3.4,
+        "heading": {
+          "pixels": 15620,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 103,
+        "time": 3.433333333333333,
+        "heading": {
+          "pixels": 15624,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 104,
+        "time": 3.466666666666667,
+        "heading": {
+          "pixels": 15624,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 105,
+        "time": 3.5,
+        "heading": {
+          "pixels": 15597,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 106,
+        "time": 3.533333333333333,
+        "heading": {
+          "pixels": 15597,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 107,
+        "time": 3.566666666666667,
+        "heading": {
+          "pixels": 15597,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 108,
+        "time": 3.6,
+        "heading": {
+          "pixels": 15597,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 109,
+        "time": 3.6333333333333333,
+        "heading": {
+          "pixels": 15597,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 110,
+        "time": 3.6666666666666665,
+        "heading": {
+          "pixels": 15597,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 111,
+        "time": 3.7,
+        "heading": {
+          "pixels": 15597,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 112,
+        "time": 3.7333333333333334,
+        "heading": {
+          "pixels": 15597,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 113,
+        "time": 3.7666666666666666,
+        "heading": {
+          "pixels": 15621,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1104,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 114,
+        "time": 3.8,
+        "heading": {
+          "pixels": 15621,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1104,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 115,
+        "time": 3.8333333333333335,
+        "heading": {
+          "pixels": 15621,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1104,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 116,
+        "time": 3.8666666666666667,
+        "heading": {
+          "pixels": 15621,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1104,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 117,
+        "time": 3.9,
+        "heading": {
+          "pixels": 15621,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1104,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 118,
+        "time": 3.933333333333333,
+        "heading": {
+          "pixels": 15621,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1104,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 119,
+        "time": 3.966666666666667,
+        "heading": {
+          "pixels": 15621,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 1104,
+          "bbox": [
+            582,
+            318,
+            633,
+            359
+          ],
+          "centerX": 607.5
+        }
+      },
+      {
+        "frame": 120,
+        "time": 4,
+        "heading": {
+          "pixels": 15812,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 121,
+        "time": 4.033333333333333,
+        "heading": {
+          "pixels": 15811,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 122,
+        "time": 4.066666666666666,
+        "heading": {
+          "pixels": 15811,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 123,
+        "time": 4.1,
+        "heading": {
+          "pixels": 15817,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 124,
+        "time": 4.133333333333334,
+        "heading": {
+          "pixels": 15819,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 125,
+        "time": 4.166666666666667,
+        "heading": {
+          "pixels": 15814,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 126,
+        "time": 4.2,
+        "heading": {
+          "pixels": 15814,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 127,
+        "time": 4.233333333333333,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 128,
+        "time": 4.266666666666667,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 129,
+        "time": 4.3,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 130,
+        "time": 4.333333333333333,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 131,
+        "time": 4.366666666666666,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 132,
+        "time": 4.4,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 133,
+        "time": 4.433333333333334,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 134,
+        "time": 4.466666666666667,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 135,
+        "time": 4.5,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 136,
+        "time": 4.533333333333333,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 137,
+        "time": 4.566666666666666,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 138,
+        "time": 4.6,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 139,
+        "time": 4.633333333333334,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 140,
+        "time": 4.666666666666667,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 141,
+        "time": 4.7,
+        "heading": {
+          "pixels": 15816,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 142,
+        "time": 4.733333333333333,
+        "heading": {
+          "pixels": 15818,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 143,
+        "time": 4.766666666666667,
+        "heading": {
+          "pixels": 15818,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 144,
+        "time": 4.8,
+        "heading": {
+          "pixels": 15882,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 145,
+        "time": 4.833333333333333,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 146,
+        "time": 4.866666666666666,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 147,
+        "time": 4.9,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 148,
+        "time": 4.933333333333334,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 149,
+        "time": 4.966666666666667,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 150,
+        "time": 5,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 151,
+        "time": 5.033333333333333,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 152,
+        "time": 5.066666666666666,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 153,
+        "time": 5.1,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 154,
+        "time": 5.133333333333334,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 155,
+        "time": 5.166666666666667,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 156,
+        "time": 5.2,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 157,
+        "time": 5.233333333333333,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 158,
+        "time": 5.266666666666667,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 159,
+        "time": 5.3,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 160,
+        "time": 5.333333333333333,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 161,
+        "time": 5.366666666666666,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 162,
+        "time": 5.4,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 163,
+        "time": 5.433333333333334,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 164,
+        "time": 5.466666666666667,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 165,
+        "time": 5.5,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 166,
+        "time": 5.533333333333333,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 167,
+        "time": 5.566666666666666,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 168,
+        "time": 5.6,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 169,
+        "time": 5.633333333333334,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 170,
+        "time": 5.666666666666667,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 171,
+        "time": 5.7,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 172,
+        "time": 5.733333333333333,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 173,
+        "time": 5.766666666666667,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 174,
+        "time": 5.8,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 175,
+        "time": 5.833333333333333,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 176,
+        "time": 5.866666666666666,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 177,
+        "time": 5.9,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 178,
+        "time": 5.933333333333334,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 179,
+        "time": 5.966666666666667,
+        "heading": {
+          "pixels": 15883,
+          "bbox": [
+            200,
+            196,
+            881,
+            263
+          ],
+          "centerX": 540.5
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 180,
+        "time": 6,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 181,
+        "time": 6.033333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 182,
+        "time": 6.066666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 183,
+        "time": 6.1,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 184,
+        "time": 6.133333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 185,
+        "time": 6.166666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 186,
+        "time": 6.2,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 187,
+        "time": 6.233333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 188,
+        "time": 6.266666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 189,
+        "time": 6.3,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 190,
+        "time": 6.333333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 191,
+        "time": 6.366666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 192,
+        "time": 6.4,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 193,
+        "time": 6.433333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 194,
+        "time": 6.466666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 195,
+        "time": 6.5,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 196,
+        "time": 6.533333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 197,
+        "time": 6.566666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 198,
+        "time": 6.6,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 199,
+        "time": 6.633333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 200,
+        "time": 6.666666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 201,
+        "time": 6.7,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 202,
+        "time": 6.733333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 203,
+        "time": 6.766666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 204,
+        "time": 6.8,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 205,
+        "time": 6.833333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 206,
+        "time": 6.866666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 207,
+        "time": 6.9,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 208,
+        "time": 6.933333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 209,
+        "time": 6.966666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 210,
+        "time": 7,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 211,
+        "time": 7.033333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 212,
+        "time": 7.066666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 213,
+        "time": 7.1,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 214,
+        "time": 7.133333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 215,
+        "time": 7.166666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 216,
+        "time": 7.2,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 217,
+        "time": 7.233333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 218,
+        "time": 7.266666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 219,
+        "time": 7.3,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 220,
+        "time": 7.333333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 221,
+        "time": 7.366666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 222,
+        "time": 7.4,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 223,
+        "time": 7.433333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 224,
+        "time": 7.466666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 225,
+        "time": 7.5,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 226,
+        "time": 7.533333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 227,
+        "time": 7.566666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 228,
+        "time": 7.6,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 229,
+        "time": 7.633333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 230,
+        "time": 7.666666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 231,
+        "time": 7.7,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 232,
+        "time": 7.733333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 233,
+        "time": 7.766666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 234,
+        "time": 7.8,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 235,
+        "time": 7.833333333333333,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 236,
+        "time": 7.866666666666666,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 237,
+        "time": 7.9,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 238,
+        "time": 7.933333333333334,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      },
+      {
+        "frame": 239,
+        "time": 7.966666666666667,
+        "heading": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        },
+        "excludedGameBand": {
+          "pixels": 0,
+          "bbox": null,
+          "centerX": null
+        }
+      }
+    ]
+  },
+  "historicalUnsafeControl": "NOT REPRODUCED: retained actual v01 MP4 and first-pass frame-4_4.png have safe top around190..196. Initial report of top clipping cannot be validated against retained files; do not manufacture RED.",
+  "classification": [
+    {
+      "frame": 38,
+      "time": 1.2666666666666666,
+      "original360px": {
+        "frame": 38,
+        "time": 1.2666666666666666,
+        "pixels": 17423,
+        "bbox": [
+          206,
+          184,
+          875,
+          359
+        ],
+        "centerX": 540.5
+      },
+      "heading": {
+        "pixels": 16085,
+        "bbox": [
+          206,
+          184,
+          875,
+          260
+        ],
+        "centerX": 540.5
+      },
+      "excludedGameBand": {
+        "pixels": 1338,
+        "bbox": [
+          576,
+          326,
+          626,
+          359
+        ],
+        "centerX": 601
+      },
+      "classification": "Gold game light below the independently measured heading; retained original failed result"
+    },
+    {
+      "frame": 113,
+      "time": 3.7666666666666666,
+      "original360px": {
+        "frame": 113,
+        "time": 3.7666666666666666,
+        "pixels": 16154,
+        "bbox": [
+          200,
+          194,
+          881,
+          359
+        ],
+        "centerX": 540.5
+      },
+      "heading": {
+        "pixels": 15011,
+        "bbox": [
+          200,
+          194,
+          881,
+          259
+        ],
+        "centerX": 540.5
+      },
+      "excludedGameBand": {
+        "pixels": 1143,
+        "bbox": [
+          582,
+          318,
+          633,
+          359
+        ],
+        "centerX": 607.5
+      },
+      "classification": "Gold game light below the independently measured heading; retained original failed result"
+    },
+    {
+      "frame": 114,
+      "time": 3.8,
+      "original360px": {
+        "frame": 114,
+        "time": 3.8,
+        "pixels": 16023,
+        "bbox": [
+          200,
+          194,
+          881,
+          359
+        ],
+        "centerX": 540.5
+      },
+      "heading": {
+        "pixels": 14880,
+        "bbox": [
+          200,
+          194,
+          881,
+          259
+        ],
+        "centerX": 540.5
+      },
+      "excludedGameBand": {
+        "pixels": 1143,
+        "bbox": [
+          582,
+          318,
+          633,
+          359
+        ],
+        "centerX": 607.5
+      },
+      "classification": "Gold game light below the independently measured heading; retained original failed result"
+    },
+    {
+      "frame": 115,
+      "time": 3.8333333333333335,
+      "original360px": {
+        "frame": 115,
+        "time": 3.8333333333333335,
+        "pixels": 16180,
+        "bbox": [
+          200,
+          194,
+          881,
+          359
+        ],
+        "centerX": 540.5
+      },
+      "heading": {
+        "pixels": 15038,
+        "bbox": [
+          200,
+          194,
+          881,
+          259
+        ],
+        "centerX": 540.5
+      },
+      "excludedGameBand": {
+        "pixels": 1142,
+        "bbox": [
+          582,
+          318,
+          633,
+          359
+        ],
+        "centerX": 607.5
+      },
+      "classification": "Gold game light below the independently measured heading; retained original failed result"
+    },
+    {
+      "frame": 116,
+      "time": 3.8666666666666667,
+      "original360px": {
+        "frame": 116,
+        "time": 3.8666666666666667,
+        "pixels": 16152,
+        "bbox": [
+          200,
+          194,
+          881,
+          359
+        ],
+        "centerX": 540.5
+      },
+      "heading": {
+        "pixels": 15010,
+        "bbox": [
+          200,
+          194,
+          881,
+          259
+        ],
+        "centerX": 540.5
+      },
+      "excludedGameBand": {
+        "pixels": 1142,
+        "bbox": [
+          582,
+          318,
+          633,
+          359
+        ],
+        "centerX": 607.5
+      },
+      "classification": "Gold game light below the independently measured heading; retained original failed result"
+    },
+    {
+      "frame": 117,
+      "time": 3.9,
+      "original360px": {
+        "frame": 117,
+        "time": 3.9,
+        "pixels": 16111,
+        "bbox": [
+          200,
+          194,
+          881,
+          359
+        ],
+        "centerX": 540.5
+      },
+      "heading": {
+        "pixels": 14969,
+        "bbox": [
+          200,
+          194,
+          881,
+          259
+        ],
+        "centerX": 540.5
+      },
+      "excludedGameBand": {
+        "pixels": 1142,
+        "bbox": [
+          582,
+          318,
+          633,
+          359
+        ],
+        "centerX": 607.5
+      },
+      "classification": "Gold game light below the independently measured heading; retained original failed result"
+    },
+    {
+      "frame": 118,
+      "time": 3.933333333333333,
+      "original360px": {
+        "frame": 118,
+        "time": 3.933333333333333,
+        "pixels": 16144,
+        "bbox": [
+          200,
+          194,
+          881,
+          359
+        ],
+        "centerX": 540.5
+      },
+      "heading": {
+        "pixels": 15002,
+        "bbox": [
+          200,
+          194,
+          881,
+          259
+        ],
+        "centerX": 540.5
+      },
+      "excludedGameBand": {
+        "pixels": 1142,
+        "bbox": [
+          582,
+          318,
+          633,
+          359
+        ],
+        "centerX": 607.5
+      },
+      "classification": "Gold game light below the independently measured heading; retained original failed result"
+    },
+    {
+      "frame": 119,
+      "time": 3.966666666666667,
+      "original360px": {
+        "frame": 119,
+        "time": 3.966666666666667,
+        "pixels": 16099,
+        "bbox": [
+          200,
+          194,
+          881,
+          359
+        ],
+        "centerX": 540.5
+      },
+      "heading": {
+        "pixels": 14957,
+        "bbox": [
+          200,
+          194,
+          881,
+          259
+        ],
+        "centerX": 540.5
+      },
+      "excludedGameBand": {
+        "pixels": 1142,
+        "bbox": [
+          582,
+          318,
+          633,
+          359
+        ],
+        "centerX": 607.5
+      },
+      "classification": "Gold game light below the independently measured heading; retained original failed result"
+    }
+  ],
+  "wholeRealtimeWatch": false,
+  "sharedGui": 0
+}

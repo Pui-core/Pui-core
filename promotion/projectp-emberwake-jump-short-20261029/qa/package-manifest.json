@@ -1,0 +1,256 @@
+{
+  "issue": 152,
+  "scope": "Only152 source prefix; Native editorial originals and small own-game QA images. No raw video, model/SDK, music/voice wavefiles or final MP4 in Git.",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 8148,
+      "sha256": "1625218ebf05c03ac05008d4ed0d61f99e375a37a91b5765b54ecd5caa0d05bd"
+    },
+    {
+      "file": "covers/jump-cover-v03-320.png",
+      "bytes": 37945,
+      "sha256": "4741780a3b6bba5c0e1d8f5af65ab0d98fc1d39e07158600a7f499c1f6e3cdf8"
+    },
+    {
+      "file": "covers/jump-cover-v03.jpg",
+      "bytes": 123794,
+      "sha256": "d0f3709c0e03babf2511f449268da33d244428b04f237f76a720a08c11afb962"
+    },
+    {
+      "file": "covers/jump-cover-v03.pcraft",
+      "bytes": 493695,
+      "sha256": "1bd446a4d2f157dfa3b84ca92efd5046e225540f2beefe3c18ab67473ff737ae"
+    },
+    {
+      "file": "media/header-answer-v03.png",
+      "bytes": 21634,
+      "sha256": "3bfd3a2e8cae1d2bda9691217a9f19458353337658431eef76bca241b67314cf"
+    },
+    {
+      "file": "media/header-question-v03.png",
+      "bytes": 18004,
+      "sha256": "12974d3609e2fc8090eb541b803edbe0201c00a7d2b0c49164e0b655f106ca65"
+    },
+    {
+      "file": "projects/header-answer-v03.pcraft",
+      "bytes": 86792,
+      "sha256": "4527f618aff62749955c4546df38a6436df3b031138df16ef9259249a0c10f7e"
+    },
+    {
+      "file": "projects/header-question-v03.pcraft",
+      "bytes": 63607,
+      "sha256": "72a1a24c616c7a63b25b9c9aeb96c066096e32acda75828b2b9328095ff24007"
+    },
+    {
+      "file": "projects/jump-v03-bgm.fcproj",
+      "bytes": 8165,
+      "sha256": "6c0994eb003bbc2a13d7454b4a9b1dc4bf5217b34b5beaca2b04c3506244f89d"
+    },
+    {
+      "file": "projects/jump-v03-voice.fcproj",
+      "bytes": 6596,
+      "sha256": "7994e283c0b9ec27ab156d9c25d8c7413f9a8eb99f836be5e3aca96ea91691cc"
+    },
+    {
+      "file": "projects/jump-v03.ecproj",
+      "bytes": 950762,
+      "sha256": "81214786f6d8eec6f52fe48853cc728c87525caea2db28c84b8d9d801318f12d"
+    },
+    {
+      "file": "projects/wordmark.pcraft",
+      "bytes": 62626,
+      "sha256": "b2c12d2762771ee8c4e4f258badd136413792daa5f278c52d0b3f56043a3cd6e"
+    },
+    {
+      "file": "qa/audio-summary.json",
+      "bytes": 10960,
+      "sha256": "3b6297022eae7dfb6cacc99273d6cbfb7e0cd7d94708edd66db5f3a7cccf8efc"
+    },
+    {
+      "file": "qa/cover-v03-binding.json",
+      "bytes": 1085,
+      "sha256": "8b88aec8d001f3e97d22d9c8e597dc22c50348842618f54566843e5d45cc2968"
+    },
+    {
+      "file": "qa/false-positive-frame-113.png",
+      "bytes": 97529,
+      "sha256": "699acc93767fd65ca9696301cc6c487ead2a8db50ff1afb3e51647e8b9249bb1"
+    },
+    {
+      "file": "qa/false-positive-frame-38.png",
+      "bytes": 89606,
+      "sha256": "567e4e55d38edd2b619096913fcd1bb27f8a53ea37fbacd68ac8fb3e4bbfa87c"
+    },
+    {
+      "file": "qa/final-v03-7_966667.png",
+      "bytes": 422856,
+      "sha256": "3e4af91bcec173c6e0f10d867212a17c36545ab78cb9f2ed846192e20458b695"
+    },
+    {
+      "file": "qa/final-v03-bgm-decode.json",
+      "bytes": 711,
+      "sha256": "108232d21cb42031ce55c59f96c125484ee8c973192d6225e02bfa009f94bd87"
+    },
+    {
+      "file": "qa/final-v03-bgm-format.json",
+      "bytes": 5973,
+      "sha256": "a5351e6e21bfa3aa06c4d4972c228680561e3573cb4a690be57363be7048ca43"
+    },
+    {
+      "file": "qa/final-v03-heading-bounds.json",
+      "bytes": 41800,
+      "sha256": "42226c6126dbc5281844e33b44a16ebf8324eb15a4fd2c6f61a305450e69bead"
+    },
+    {
+      "file": "qa/final-v03-heading-classified.json",
+      "bytes": 175109,
+      "sha256": "5d9a8ddfa0e69133e869aa891829158d14c95a501e1e70c94cb9cd95de7c11bf"
+    },
+    {
+      "file": "qa/final-v03-heading-strip.png",
+      "bytes": 918730,
+      "sha256": "dc2b69598da796d20ba2c375fcf3b29aeed068ff8a532225a7fe0195ce549c35"
+    },
+    {
+      "file": "qa/final-v03-quality.json",
+      "bytes": 4071,
+      "sha256": "9e466a970869cbacfa18516a9820f93f23530a1392e527f65efcb72ffc889b26"
+    },
+    {
+      "file": "qa/final-v03-voice-decode.json",
+      "bytes": 713,
+      "sha256": "dbc2ef58136da886cc66dc2070e123496fe9282bca97c40d14a59c7ffe607e8e"
+    },
+    {
+      "file": "qa/final-v03-voice-format.json",
+      "bytes": 5823,
+      "sha256": "404750a84d60dd2b9d809c2d1fbcbeae959d335e9c203af612df5c67c499a85f"
+    },
+    {
+      "file": "qa/final-v03-whole-sheet.png",
+      "bytes": 751026,
+      "sha256": "30b9d6f6198ee66ce1d68c8ed82b9f08ec25fb41ebf3e1bc3321c47858cccebe"
+    },
+    {
+      "file": "qa/first-pass-preserved.json",
+      "bytes": 2233,
+      "sha256": "01ec711f965f04911aeb9e569cb76d676b008d6e097b5fd6f4d3166e4adfd20a"
+    },
+    {
+      "file": "qa/input-binding.json",
+      "bytes": 20150,
+      "sha256": "b3cbd6c7ecca0638af9fe797ad28d6687131ceb55c687ee73654b5a41ebbd31d"
+    },
+    {
+      "file": "qa/nas-deliver-initial-name.json",
+      "bytes": 1965,
+      "sha256": "6e16af74dff4ff2390ac30816a1dfa99ed91357cd14e5554de8492ccab9bef13"
+    },
+    {
+      "file": "qa/nas-deliver.json",
+      "bytes": 1963,
+      "sha256": "8d5c85d05b9b42b9d545358184c0ba26cae3315b324c9dd77894d67cd5e354e0"
+    },
+    {
+      "file": "qa/nas-directory-time-correction.json",
+      "bytes": 664,
+      "sha256": "b18b11d8f75729da5ae90906e0219e87f7549264e35fed57baf29c60d408e401"
+    },
+    {
+      "file": "qa/output-binding-v03.json",
+      "bytes": 2643,
+      "sha256": "ea7055d5a56d488fd1c3f3910ed001e792bece20465a46ffe4f4159f66c64299"
+    },
+    {
+      "file": "qa/provenance.json",
+      "bytes": 3203,
+      "sha256": "5ff7f4a7c0ab927b7ffe6f73a8fe3204e35f164b4d6c0d90453a29ea1f411037"
+    },
+    {
+      "file": "qa/source-adoption.json",
+      "bytes": 1069,
+      "sha256": "d08cd2c1d0a20c2805acefd694a36275d23c2e9adcdebf6b0622a059c544fde5"
+    },
+    {
+      "file": "qa/source-selection.json",
+      "bytes": 7267,
+      "sha256": "3f9db627b51920fb334dde47fbfec62629589f23e7abf407538cd0551b2770bd"
+    },
+    {
+      "file": "source/audio.mjs",
+      "bytes": 3306,
+      "sha256": "4a7f86b0a4333557b52065d3f41b0c8fb1b77da182ce3fe58cd1dcdc0910a6ea"
+    },
+    {
+      "file": "source/background.mjs",
+      "bytes": 3815,
+      "sha256": "f493aedfd6280c4abf83dda2aa65bf8f30d5a48c78cd68fdecc65ddcc8ed99e7"
+    },
+    {
+      "file": "source/check-package.mjs",
+      "bytes": 2077,
+      "sha256": "d0b87dca49f77d1c743378147826804aebc351854a1cae68e8923a993e3ee7cb"
+    },
+    {
+      "file": "source/cover.mjs",
+      "bytes": 2748,
+      "sha256": "1efab7b78ec000c880a5fa6290725b2f4806b5feaebbbb06dec925ffb0e0b2eb"
+    },
+    {
+      "file": "source/curate.mjs",
+      "bytes": 4688,
+      "sha256": "fc7af604b8cd910912dd4888d1062d79f1ed3229a27bfa40abf4a1c489595441"
+    },
+    {
+      "file": "source/deliver-background.ps1",
+      "bytes": 5938,
+      "sha256": "32a8018e20b0fb4493f9c1eae077116afb85ae42d47368ea4334eef333006090"
+    },
+    {
+      "file": "source/deliver.mjs",
+      "bytes": 1827,
+      "sha256": "783b1cc04c0b24809cae416fc24f3504aee295e32c87ab3bf89952fef1a41cd9"
+    },
+    {
+      "file": "source/inspect-headers.mjs",
+      "bytes": 4531,
+      "sha256": "f1ddbc0d774f6188f02962c20591893756f439d7a1e9c2c8098493060a9bbe55"
+    },
+    {
+      "file": "source/picture.mjs",
+      "bytes": 6849,
+      "sha256": "1cda98559cc202f22749321363d1166c8b78d907acc97fd9a46903fa773a9727"
+    },
+    {
+      "file": "source/posting.json",
+      "bytes": 1965,
+      "sha256": "4fc2232def29ccb66514ba65420ca53e9ede0e264727a7a7a044a1f58ab0ee18"
+    },
+    {
+      "file": "source/prepare.mjs",
+      "bytes": 3025,
+      "sha256": "4f287ed67b33b049027b5a51c2d3b43aa429fa30e1e2b5611d257e2fdc2b9192"
+    },
+    {
+      "file": "source/qa.mjs",
+      "bytes": 5571,
+      "sha256": "b1acd5e92f732a23b1c81e885d3671107f9cafbf03030b7537b3f787587a47de"
+    },
+    {
+      "file": "source/rebalance-audio-v03.mjs",
+      "bytes": 1883,
+      "sha256": "a268f58c5709a7b2dcc14017c271fcef594ce4b9c21654f574e1e3647ffc5fa5"
+    },
+    {
+      "file": "source/render.mjs",
+      "bytes": 3844,
+      "sha256": "90d15f8509c03e73cd9fef7fc1b08d646369d8a809cf7c51027d45e29143f4fa"
+    },
+    {
+      "file": "source/repair-headers.mjs",
+      "bytes": 4771,
+      "sha256": "67da1b42376641985cbf28eacb6283b4032cb6ae9434d8932ea6cdd6adb88e7d"
+    }
+  ]
+}

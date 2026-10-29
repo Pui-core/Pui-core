@@ -1,0 +1,97 @@
+{
+  "issue": 152,
+  "seconds": 8,
+  "frames": 240,
+  "results": [
+    {
+      "variant": "voice",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/videos/emberwake-jump-v03-voice.mp4",
+      "sha256": "c669117064ac5c37f151ddf47d3869156c058634c525e01e3db65fcd36c2df11",
+      "bytes": 3002942,
+      "video": {
+        "codec": "h264",
+        "width": 1080,
+        "height": 1920,
+        "frames": 240,
+        "fps": 30,
+        "seconds": 8
+      },
+      "audio": {
+        "codec": "aac",
+        "rate": 48000,
+        "channels": 2,
+        "seconds": 8
+      },
+      "fullDecodeExit": 0,
+      "decodeReceipt": "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/qa/final-v03-voice-decode.json"
+    },
+    {
+      "variant": "bgm",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/videos/emberwake-jump-v03-bgm.mp4",
+      "sha256": "9e1a38827ec67bdc59876bc4abc7627e8927c95960bc1a529d7332dcc607bbf2",
+      "bytes": 3003149,
+      "video": {
+        "codec": "h264",
+        "width": 1080,
+        "height": 1920,
+        "frames": 240,
+        "fps": 30,
+        "seconds": 8
+      },
+      "audio": {
+        "codec": "aac",
+        "rate": 48000,
+        "channels": 2,
+        "seconds": 8
+      },
+      "fullDecodeExit": 0,
+      "decodeReceipt": "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/qa/final-v03-bgm-decode.json"
+    }
+  ],
+  "pictureVariantsSameDecodedFrames": true,
+  "pictureFrameCount": 240,
+  "nativeProjectsCreatedReopenedRenderedInFinalFPackage": true,
+  "activeOfflineMedia": [],
+  "knownExistingFReferences": [
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/short.mov",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/hold.mov",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/short-detail.mov",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/hold-detail.mov",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/landing.mov",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/wordmark.png",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/natural-silent.mov",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/header-question-v02.png",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/header-answer-v02.png",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/header-question-v03.png",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/header-answer-v03.png",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/jump-picture-v03.mov",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/voice-v03.wav",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/sfx.wav",
+    "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/media/music-v03.wav"
+  ],
+  "headerInspection": "final-v03-heading-classified.json",
+  "headerInspectionSha256": "5d9a8ddfa0e69133e869aa891829158d14c95a501e1e70c94cb9cd95de7c11bf",
+  "historicalUnsafeControl": "NOT REPRODUCED: retained actual v01 MP4 and first-pass frame-4_4.png have safe top around190..196. Initial report of top clipping cannot be validated against retained files; do not manufacture RED.",
+  "rootCreativeAcceptance": "Root actual Native/final images accepted; final Source verdict pending",
+  "rootReview": "/home/pui/tmp/projectp129-mac-preflight-20261029-2025/root152-v03-review.json",
+  "independentAudio": {
+    "file": "/home/pui/tmp/projectp152-audio-ro-20261029/audio-qa-v03.json",
+    "sha256": "3cdacb01d860ff3fe8502b0ab76e4a4b1ef6e5d3e7b052e2daf0f7eb1e75632e",
+    "numericalIssuesReleased": true,
+    "directListening": false
+  },
+  "nasReceipt": "nas-deliver.json",
+  "nasFilesOnly": [
+    "BGM版.mp4",
+    "声・効果音版.mp4"
+  ],
+  "wholeSubjectiveListen": false,
+  "wholeRealtimeWatch": false,
+  "selectedFramesAndSheetsVisuallyReadBy": [
+    "Writer",
+    "Root"
+  ],
+  "newCapture": 0,
+  "sharedGui": 0,
+  "posted": false
+}

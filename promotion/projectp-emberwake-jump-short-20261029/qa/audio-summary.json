@@ -1,0 +1,384 @@
+{
+  "issue": 152,
+  "version": "v03",
+  "scope": "既存の独立RO音声QA結果の軽量抽出。新しいdecode/test/GUI/Source編集/finishは実施していない。",
+  "evidence": [
+    {
+      "name": "audio-qa-v03.json",
+      "sha256": "3cdacb01d860ff3fe8502b0ab76e4a4b1ef6e5d3e7b052e2daf0f7eb1e75632e"
+    },
+    {
+      "name": "v03-wav-qa.json",
+      "sha256": "b8bee79c81bcf0fd7d18b53a270af85a73dce517cacfa5949a3ebe17b84ede72"
+    },
+    {
+      "name": "v03-music-tail-validation.json",
+      "sha256": "8a47668c39407f6203e02f43dc3caa212d0f293d3a69a23bf1c8cd1f3b358fcb"
+    },
+    {
+      "name": "music-tail-diagnosis.json",
+      "sha256": "9799a0e17310a0978e5ff61c32494afe701286c56a2041e2b4e0fbdfbf239a58"
+    }
+  ],
+  "finals": [
+    {
+      "variant": "voice",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/videos/emberwake-jump-v03-voice.mp4",
+      "sha256": "c669117064ac5c37f151ddf47d3869156c058634c525e01e3db65fcd36c2df11",
+      "bindingMatches": true,
+      "fileStableAfter": true,
+      "exportCode": 0,
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2,
+        "startTime": "0.000000",
+        "duration": "8.000000"
+      },
+      "video": {
+        "startTime": "0.000000",
+        "duration": "8.000000",
+        "frames": "240"
+      },
+      "decodedFrames": 384000,
+      "durationSeconds": 8,
+      "truePeakDbTP": -3.8,
+      "samplePeakDbFS": -3.7615709343803214,
+      "clipSamples": 0,
+      "nonfiniteSamples": 0,
+      "lagSamples": 0,
+      "stereoCorrelation": 0.999876085709381,
+      "minimumCueHeadTailCorrelation": 0.999601111480622,
+      "cueHeadTail40ms": [
+        {
+          "cue": "short",
+          "part": "head40ms",
+          "samples": 1920,
+          "correlation": 0.9999996192990592,
+          "gainDb": 0.0013071595053326605
+        },
+        {
+          "cue": "short",
+          "part": "tail40ms",
+          "samples": 1920,
+          "correlation": 0.9999910937097163,
+          "gainDb": 0.003547484566114615
+        },
+        {
+          "cue": "hold",
+          "part": "head40ms",
+          "samples": 1920,
+          "correlation": 0.999994253370681,
+          "gainDb": 0.001997738417946603
+        },
+        {
+          "cue": "hold",
+          "part": "tail40ms",
+          "samples": 1920,
+          "correlation": 0.9999772210020547,
+          "gainDb": -0.012123771237565396
+        },
+        {
+          "cue": "result",
+          "part": "head40ms",
+          "samples": 1920,
+          "correlation": 0.999601111480622,
+          "gainDb": -0.06175643543568385
+        },
+        {
+          "cue": "result",
+          "part": "tail40ms",
+          "samples": 1920,
+          "correlation": 0.9996196329977296,
+          "gainDb": -0.05894410065642882
+        }
+      ],
+      "dropouts6ms": {
+        "referenceGateDb": -55,
+        "activeWindows": 236,
+        "minActualToExpectedDb": -0.17633642291760812,
+        "belowMinus6DbCount": 0
+      }
+    },
+    {
+      "variant": "bgm",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Jump-2026-10-29/jump-v01/videos/emberwake-jump-v03-bgm.mp4",
+      "sha256": "9e1a38827ec67bdc59876bc4abc7627e8927c95960bc1a529d7332dcc607bbf2",
+      "bindingMatches": true,
+      "fileStableAfter": true,
+      "exportCode": 0,
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2,
+        "startTime": "0.000000",
+        "duration": "8.000000"
+      },
+      "video": {
+        "startTime": "0.000000",
+        "duration": "8.000000",
+        "frames": "240"
+      },
+      "decodedFrames": 384000,
+      "durationSeconds": 8,
+      "truePeakDbTP": -3.5,
+      "samplePeakDbFS": -3.462738423410065,
+      "clipSamples": 0,
+      "nonfiniteSamples": 0,
+      "lagSamples": 0,
+      "stereoCorrelation": 0.9997206700735736,
+      "minimumCueHeadTailCorrelation": 0.9993713377009364,
+      "cueHeadTail40ms": [
+        {
+          "cue": "short",
+          "part": "head40ms",
+          "samples": 1920,
+          "correlation": 0.999984660860887,
+          "gainDb": -0.0036872552995191156
+        },
+        {
+          "cue": "short",
+          "part": "tail40ms",
+          "samples": 1920,
+          "correlation": 0.9999800051092587,
+          "gainDb": -0.003340220202020027
+        },
+        {
+          "cue": "hold",
+          "part": "head40ms",
+          "samples": 1920,
+          "correlation": 0.9995692654197869,
+          "gainDb": -0.055651488937386875
+        },
+        {
+          "cue": "hold",
+          "part": "tail40ms",
+          "samples": 1920,
+          "correlation": 0.9999826909394264,
+          "gainDb": 0.003071041093826979
+        },
+        {
+          "cue": "result",
+          "part": "head40ms",
+          "samples": 1920,
+          "correlation": 0.9993713377009364,
+          "gainDb": 0.013740325211842038
+        },
+        {
+          "cue": "result",
+          "part": "tail40ms",
+          "samples": 1920,
+          "correlation": 0.9994920308383998,
+          "gainDb": -0.0013406404057710705
+        }
+      ],
+      "dropouts6ms": {
+        "referenceGateDb": -55,
+        "activeWindows": 1331,
+        "minActualToExpectedDb": -0.279420360687214,
+        "belowMinus6DbCount": 0
+      }
+    }
+  ],
+  "voiceSourcePreservation": [
+    {
+      "cue": "short",
+      "sourceSha256": "ad7c1e4e24577042ac8d9014d061cbc7073aa4f984ebcf341534b1d229a070f4",
+      "sourceToNewStemGain": 2,
+      "correlation": 1,
+      "relativeResidualDb": -240,
+      "baselineEnergySeconds": {
+        "onset": 0.6900000000000001,
+        "offset": 1.145
+      }
+    },
+    {
+      "cue": "hold",
+      "sourceSha256": "08be82ebedeb82a4fb031abd5fbdba48377befbdf0c14068946890acb702bca3",
+      "sourceToNewStemGain": 2,
+      "correlation": 1,
+      "relativeResidualDb": -240,
+      "baselineEnergySeconds": {
+        "onset": 1.9549999999999998,
+        "offset": 2.325
+      }
+    },
+    {
+      "cue": "result",
+      "sourceSha256": "6a65df8cdec063043558185e97abd08eb4cf32f6c050149d6df50a562daeab98",
+      "sourceToNewStemGain": 2,
+      "correlation": 1,
+      "relativeResidualDb": -240,
+      "baselineEnergySeconds": {
+        "onset": 3.04,
+        "offset": 3.405
+      }
+    }
+  ],
+  "relativeMix": [
+    {
+      "cue": "short",
+      "band": "full",
+      "voiceRmsDb": -26.79074345136136,
+      "musicRmsDb": -36.868303277308826,
+      "voiceMinusMusicDb": 10.077559825947464,
+      "activeWindowsAboveMinus45Db": 21,
+      "activeWindowsMusicLouder": 5,
+      "activeMedianVoiceMinusMusicDb": 6.7605557657028825
+    },
+    {
+      "cue": "hold",
+      "band": "full",
+      "voiceRmsDb": -21.65418244794926,
+      "musicRmsDb": -31.069764161817247,
+      "voiceMinusMusicDb": 9.415581713867986,
+      "activeWindowsAboveMinus45Db": 17,
+      "activeWindowsMusicLouder": 5,
+      "activeMedianVoiceMinusMusicDb": 4.573567290439278
+    },
+    {
+      "cue": "result",
+      "band": "full",
+      "voiceRmsDb": -19.879034162032873,
+      "musicRmsDb": -30.678626854912537,
+      "voiceMinusMusicDb": 10.799592692879664,
+      "activeWindowsAboveMinus45Db": 18,
+      "activeWindowsMusicLouder": 4,
+      "activeMedianVoiceMinusMusicDb": 10.4186418879357
+    },
+    {
+      "cue": "short",
+      "band": "speech300to4000",
+      "voiceRmsDb": -29.417036064040612,
+      "musicRmsDb": -38.61852167200738,
+      "voiceMinusMusicDb": 9.20148560796677,
+      "activeWindowsAboveMinus45Db": 20,
+      "activeWindowsMusicLouder": 6,
+      "activeMedianVoiceMinusMusicDb": 7.89521634094223
+    },
+    {
+      "cue": "hold",
+      "band": "speech300to4000",
+      "voiceRmsDb": -22.31602776809971,
+      "musicRmsDb": -32.44361389591482,
+      "voiceMinusMusicDb": 10.127586127815114,
+      "activeWindowsAboveMinus45Db": 15,
+      "activeWindowsMusicLouder": 5,
+      "activeMedianVoiceMinusMusicDb": 5.196074445864505
+    },
+    {
+      "cue": "result",
+      "band": "speech300to4000",
+      "voiceRmsDb": -21.6792116673084,
+      "musicRmsDb": -33.322548985527064,
+      "voiceMinusMusicDb": 11.643337318218663,
+      "activeWindowsAboveMinus45Db": 17,
+      "activeWindowsMusicLouder": 4,
+      "activeMedianVoiceMinusMusicDb": 9.04102554825225
+    }
+  ],
+  "musicTailRepair": {
+    "oldFailure": "旧musicは5.120秒で意図せず打切り。原曲同区間の伴奏は連続しており、処理後に生じた欠落と切り分けた。旧chain内部の具体的な原因は未確定。",
+    "oldSourceSeconds": [
+      0.835,
+      8.835
+    ],
+    "oldVersusSourceOneSecond": [
+      {
+        "from": 5,
+        "to": 6,
+        "sourceRmsDb": -28.482150347434725,
+        "oldProcessedRmsDb": -37.54712074503024,
+        "oldProcessedNonzeroSamples": 11520
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "sourceRmsDb": -28.86004276576955,
+        "oldProcessedRmsDb": -240,
+        "oldProcessedNonzeroSamples": 0
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "sourceRmsDb": -28.699162214764105,
+        "oldProcessedRmsDb": -240,
+        "oldProcessedNonzeroSamples": 0
+      }
+    ],
+    "v03Boundary20ms": [
+      {
+        "from": 5.1,
+        "to": 5.12,
+        "musicRmsDb": -29.709848764849447,
+        "sourceCorrelation": 0.9999999999346751
+      },
+      {
+        "from": 5.12,
+        "to": 5.14,
+        "musicRmsDb": -28.71359708086457,
+        "sourceCorrelation": 0.9999999999653544
+      },
+      {
+        "from": 5.14,
+        "to": 5.16,
+        "musicRmsDb": -29.429119025533307,
+        "sourceCorrelation": 0.9999999999604432
+      },
+      {
+        "from": 5.16,
+        "to": 5.18,
+        "musicRmsDb": -28.787096256654927,
+        "sourceCorrelation": 0.9999999998760575
+      }
+    ],
+    "v03MusicOneSecond": [
+      {
+        "from": 5,
+        "to": 6,
+        "rmsDb": -27.692209110869772
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "rmsDb": -28.070532721309963
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "rmsDb": -29.138224917590733
+      }
+    ],
+    "intendedFadeSeconds": [
+      7.7,
+      8
+    ],
+    "fadeSourceGainEndpoints": [
+      {
+        "from": 7.7,
+        "to": 7.725,
+        "fittedSourceGain": 1.0482953298995443
+      },
+      {
+        "from": 7.975,
+        "to": 8,
+        "fittedSourceGain": 0.04361039427471325
+      }
+    ],
+    "lastStereoSamples": [
+      -0.0000034570693969726562,
+      0.0000032186508178710938
+    ],
+    "disposition": "数値QA範囲で5.120秒の打切りと冒頭声優先の指摘を解除。"
+  },
+  "subjectiveListening": {
+    "performed": false,
+    "wholeRealtimeListening": false,
+    "intelligibilityAndNaturalness": "未検証。数値QAを聴感PASSへ読み替えない。"
+  },
+  "remainingMandatoryAudioFindingsInMeasuredScope": 0,
+  "limitations": [
+    "映像全体・NAS納品・公開・ownerの創作採用は本音声QAの受入対象外。",
+    "再生数・送客・実売上は未測定。"
+  ]
+}
