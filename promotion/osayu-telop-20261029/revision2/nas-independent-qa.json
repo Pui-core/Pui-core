@@ -1,0 +1,88 @@
+{
+  "Audit": "Independent NAS readback against delivery receipt",
+  "CheckedAt": "2026-10-29T02:30:06.7435625Z",
+  "LogicalFolder": "gara",
+  "ReadOnly": true,
+  "FileCount": 7,
+  "AllMatch": true,
+  "Files": [
+    {
+      "Name": "おさゆ_ぷくシール_色付き_v2.ttf",
+      "Exists": true,
+      "Bytes": 163657096,
+      "SHA256": "cead14d4d8e459a32ba876cdab0666f35331af318c2ad5a931f9f0f4313224b9",
+      "ExpectedBytes": 163657096,
+      "ExpectedSHA256": "cead14d4d8e459a32ba876cdab0666f35331af318c2ad5a931f9f0f4313224b9",
+      "BytesMatch": true,
+      "HashMatch": true,
+      "Match": true
+    },
+    {
+      "Name": "おさゆ_ぷくシール_色付き互換_v2.ttf",
+      "Exists": true,
+      "Bytes": 17049956,
+      "SHA256": "43b713bfacbf1704bead255d04de2b97bab7d68de1ad54a851916ade95b3231b",
+      "ExpectedBytes": 17049956,
+      "ExpectedSHA256": "43b713bfacbf1704bead255d04de2b97bab7d68de1ad54a851916ade95b3231b",
+      "BytesMatch": true,
+      "HashMatch": true,
+      "Match": true
+    },
+    {
+      "Name": "おさゆ_ぷくシール_見本_v2.png",
+      "Exists": true,
+      "Bytes": 937394,
+      "SHA256": "c5953beb93ab6a3482565ebf59175409ffbc2b693e24321a0fc73f4d7ad49d05",
+      "ExpectedBytes": 937394,
+      "ExpectedSHA256": "c5953beb93ab6a3482565ebf59175409ffbc2b693e24321a0fc73f4d7ad49d05",
+      "BytesMatch": true,
+      "HashMatch": true,
+      "Match": true
+    },
+    {
+      "Name": "おさゆ_ぷくシール_使い方_v2.txt",
+      "Exists": true,
+      "Bytes": 2422,
+      "SHA256": "72ccc8d58b2adece652eaa1a226974961277f481a9ec89c3587decd2ca1dc62d",
+      "ExpectedBytes": 2422,
+      "ExpectedSHA256": "72ccc8d58b2adece652eaa1a226974961277f481a9ec89c3587decd2ca1dc62d",
+      "BytesMatch": true,
+      "HashMatch": true,
+      "Match": true
+    },
+    {
+      "Name": "おさゆ_ぷくシール_v2_ライセンス\\OFL-CherryBombOne.txt",
+      "Exists": true,
+      "Bytes": 4485,
+      "SHA256": "0e04cbdaa14fc3e98b6ad1c9156b04d952cbdd0d31845766bae4cb543a71bcba",
+      "ExpectedBytes": 4485,
+      "ExpectedSHA256": "0e04cbdaa14fc3e98b6ad1c9156b04d952cbdd0d31845766bae4cb543a71bcba",
+      "BytesMatch": true,
+      "HashMatch": true,
+      "Match": true
+    },
+    {
+      "Name": "おさゆ_ぷくシール_v2_ライセンス\\OFL-MochiyPopOne.txt",
+      "Exists": true,
+      "Bytes": 4387,
+      "SHA256": "76be26178f13ef82866cf6a5c54272191bb583c203ad7035021c7681c9043558",
+      "ExpectedBytes": 4387,
+      "ExpectedSHA256": "76be26178f13ef82866cf6a5c54272191bb583c203ad7035021c7681c9043558",
+      "BytesMatch": true,
+      "HashMatch": true,
+      "Match": true
+    },
+    {
+      "Name": "おさゆ_ぷくシール_v2_ライセンス\\OFL-ZenMaruGothic.txt",
+      "Exists": true,
+      "Bytes": 4402,
+      "SHA256": "2a20cf7ce1909d8ee1e949095d340f7d7656705f7c810a2d6faf56800ad0cb3d",
+      "ExpectedBytes": 4402,
+      "ExpectedSHA256": "2a20cf7ce1909d8ee1e949095d340f7d7656705f7c810a2d6faf56800ad0cb3d",
+      "BytesMatch": true,
+      "HashMatch": true,
+      "Match": true
+    }
+  ],
+  "AppOrDeviceOperations": false
+}

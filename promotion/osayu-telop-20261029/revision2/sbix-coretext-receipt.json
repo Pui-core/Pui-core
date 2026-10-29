@@ -1,0 +1,47 @@
+{
+  "timestampUtc": "2026-10-29T02:26:13.149502+00:00",
+  "nativeExecution": "SSH puis-mac / custom Swift CoreText process",
+  "platform": "macOS CoreText headless",
+  "os": "Version 15.7.7 (Build 24G720)",
+  "processScopeFontRegistration": true,
+  "iphoneTest": false,
+  "ibisPaintTest": false,
+  "allFiveWordsColored": true,
+  "redFallbackPixels": 0,
+  "allFamilyAliasesResolve": true,
+  "edgeClippingObserved": false,
+  "actualFinalFontPreviewVisuallyInspected": true,
+  "visualObservation": "Cyan puffy bodies, white sticker border, soft oval gloss and shadows render in actual sequential CoreText text. No overlap or cut edges observed in five whole words. Dense kanji counters remain readable at 180pt.",
+  "files": [
+    {
+      "file": "OsayuPukuJelly-SBIX.ttf",
+      "sha256": "cead14d4d8e459a32ba876cdab0666f35331af318c2ad5a931f9f0f4313224b9",
+      "remoteSha256Match": true
+    },
+    {
+      "file": "test-coretext.swift",
+      "sha256": "8f31cc6e5e875ee96ea2788516644b8489c0b3918fcb65e12f3c71e73b42cae6",
+      "remoteSha256Match": true
+    },
+    {
+      "file": "coretext-report.json",
+      "sha256": "c9abe6b52d26eedfa4af2db3ad34e1430405617ea6057dc5d1861098941949f0",
+      "remoteSha256Match": true
+    },
+    {
+      "file": "OsayuPukuJelly-SBIX-transparent.png",
+      "sha256": "507910be97e2cd1b1354b13ee0c20ee1d158ab0f00bc90dddfab79987108224b",
+      "remoteSha256Match": true
+    },
+    {
+      "file": "OsayuPukuJelly-SBIX-offwhite.png",
+      "sha256": "c5953beb93ab6a3482565ebf59175409ffbc2b693e24321a0fc73f4d7ad49d05",
+      "remoteSha256Match": true
+    },
+    {
+      "file": "OsayuPukuJelly-SBIX-white.png",
+      "sha256": "e3c07206c7f38d541bf08df572288612343df01c86d1a048cc58e85d236536a1",
+      "remoteSha256Match": true
+    }
+  ]
+}

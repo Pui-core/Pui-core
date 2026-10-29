@@ -1,0 +1,47 @@
+{
+  "issue": "Pui-core/-#149",
+  "status": "Delivered to owner-specified NAS gara",
+  "fonts": [
+    {
+      "format": "sbix",
+      "file": "おさゆ_ぷくシール_色付き_v2.ttf",
+      "bytes": 163657096,
+      "sha256": "cead14d4d8e459a32ba876cdab0666f35331af318c2ad5a931f9f0f4313224b9"
+    },
+    {
+      "format": "COLRv0",
+      "file": "おさゆ_ぷくシール_色付き互換_v2.ttf",
+      "bytes": 17049956,
+      "sha256": "43b713bfacbf1704bead255d04de2b97bab7d68de1ad54a851916ade95b3231b"
+    }
+  ],
+  "automatedChecks": {
+    "cmap": 7088,
+    "coloredNonemptyGlyphs": 7079,
+    "joyo": 2136,
+    "jis0208Kanji": 6355,
+    "allSbixPngsCRCDecodedAndMatched": true,
+    "allGlyfCompiled": true,
+    "sourceFontsLicensed": "OFL-1.1",
+    "nasAllSevenFileHashMatches": true
+  },
+  "actualOperations": {
+    "photoCraftNativeSaveReopenExportPNGMatch": true,
+    "macOSCoreTextFinalFontRegistrationAndDraw": true,
+    "macOS": "15.7.7",
+    "inputTextFill": "red",
+    "allFiveWordsColored": true,
+    "redFallbackPixels": 0,
+    "japaneseEnglishFamilyAliasMatch": true,
+    "edgeClippingObserved": false,
+    "finalPreviewsVisuallyInspected": true
+  },
+  "unverified": {
+    "iPhone": true,
+    "ibisPaint": true,
+    "ownerCreativeAcceptance": true,
+    "revenueImpact": true
+  },
+  "ownerInstruction": "ibisPaint verification is handled by owner; place font files in NAS gara",
+  "scope": "Only task source/artifacts; original reference/character art excluded; previous mono version preserved"
+}

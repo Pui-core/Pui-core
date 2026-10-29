@@ -1,0 +1,46 @@
+{
+  "version": "2.000",
+  "material": "aqua puffy sticker",
+  "bodyColors": [
+    "#A0ECFA",
+    "#6FD6F0",
+    "#43C1E3"
+  ],
+  "rimColor": "#28AAD4",
+  "rimEm": 0.01,
+  "whiteBorderEm": 0.07,
+  "shadowColor": "#6c8d9e",
+  "shadowOpacity": 0.1,
+  "shadowOffsetAt256": [
+    1,
+    4
+  ],
+  "shadowBlurAt256": 5,
+  "heightRatio": 0.85,
+  "radiusPercentile": 98,
+  "smoothAt256": 2.8,
+  "light": [
+    -0.45,
+    -0.55,
+    0.7
+  ],
+  "ambient": 0.84,
+  "diffuseGain": 0.16,
+  "specularBroadPower": 14,
+  "specularBroadGain": 0.15,
+  "specularTightPower": 60,
+  "specularTightGain": 0.35,
+  "capsule": true,
+  "capsuleAngle": -30,
+  "capsuleCoreAlpha": 0.88,
+  "capsuleHaloAlpha": 0.13,
+  "rasterSupersample": 2,
+  "glintShape": "ellipse",
+  "bitmapPpem": 256,
+  "quantizer": "libimagequant",
+  "quantizerQuality": [
+    90,
+    100
+  ],
+  "quantizerDither": 0.7
+}
