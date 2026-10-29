@@ -39,7 +39,17 @@
     "short": {
       "press": 196,
       "release": 197,
-      "returnToStartFloor": 217
+      "returnToCheckpoint": 217,
+      "checkpointPosition": [
+        95,
+        1160
+      ],
+      "checkpointFloor": [
+        32,
+        1160,
+        210,
+        48
+      ]
     },
     "hold": {
       "press": 400,
