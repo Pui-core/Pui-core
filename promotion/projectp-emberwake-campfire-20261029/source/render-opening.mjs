@@ -1,0 +1,18 @@
+import fs from'node:fs';import{stage,native,ff,hash,save}from'./background.mjs';
+const root=stage+'/pv-v01',D=15.2,project=root+'/projects/opening-v02.ecproj',picture=root+'/media/opening-v02.mov';
+const resume=process.argv.includes('--resume-picture');
+if(!resume){if(fs.existsSync(picture))throw Error('Picture already exists; inspect receipt');await native('effectcraft',['--project',project,'render','--comp','151 CAMPFIRE opening','--out',picture,'--format','prores','--prores','standard','--audio','off','--progress','--json'],root+'/qa/ec-opening-render.json',undefined,600000);}
+else if(JSON.parse(fs.readFileSync(root+'/qa/ec-opening-render.json')).code!==0)throw Error('No completed existing picture');
+const fullMusic=root+'/media/pv-music-60.wav',music=root+'/media/opening-music.wav';
+if(!fs.existsSync(fullMusic))await ff(['-i',root+'/media/Cipher.mp3','-af','atrim=start=0.835:duration=60,asetpts=PTS-STARTPTS,loudnorm=I=-18:TP=-2:LRA=7,afade=t=in:d=0.015,afade=t=out:st=59.2:d=0.8,aresample=48000,apad,atrim=duration=60','-ac','2','-ar','48000','-c:a','pcm_s24le',fullMusic],root+'/qa/music-60.json');
+if(!fs.existsSync(music))await ff(['-i',fullMusic,'-af','atrim=duration=15.2,afade=t=out:st=15.1:d=0.1','-c:a','pcm_s24le',music],root+'/qa/music-opening.json');
+const fc=root+'/projects/opening-v02.fcproj',video=root+'/videos/emberwake-campfire-opening-v02.mp4';
+if(fs.existsSync(fc)||fs.existsSync(video))throw Error('Existing FilmCraft output');
+const b=await native('filmcraft',['--save-as',fc,'run','-'],root+'/qa/fc-opening-save.json',[{id:'file.newProject',params:{name:'151 CAMPFIRE realgame opening'}},{id:'file.newSequence',params:{name:'151 vertical15',width:1080,height:1920,fps:30,sampleRate:48000,video:1,audio:1}},{id:'file.import',params:{paths:[picture,music]}}].map(x=>JSON.stringify(x)).join('\n')+'\n');
+let items;for(const l of b.stdout.trim().split(/\r?\n/)){const v=JSON.parse(l);if(v.ok===false)throw Error(l);if(v.result?.items)items=v.result.items;}if(items?.length!==2)throw Error('Native import');
+await native('filmcraft',['--project',fc,'--save','run','-'],root+'/qa/fc-opening-place.json',[{id:'timeline.place',params:{item:items[0],track:'V1',seconds:0,duration:D*254016000000,video:true,audio:false}},{id:'timeline.place',params:{item:items[1],track:'A1',seconds:0,duration:D*254016000000,video:false,audio:true}}].map(x=>JSON.stringify(x)).join('\n')+'\n');
+await native('filmcraft',['--project',fc,'inspect'],root+'/qa/fc-opening-reopen.json');
+const e=await native('filmcraft',['--project',fc,'exec','file.exportMedia',JSON.stringify({path:video,format:'h264',audio:true,audioCodec:'aac',bitrateMode:'crf',crf:18,hardwareEncoding:'off',gpuRendering:'off',wait:true})],root+'/qa/fc-opening-export.json',undefined,600000);
+let result;try{result=JSON.parse(e.stdout);}catch{}if(result?.offlineMedia?.length)throw Error('Offline media');
+save(root+'/qa/opening-output.json',{issue:151,state:'15.2second actual opening draft; full60notcomplete; unpublished',file:video,sha256:hash(video),duration:D,size:[1080,1920],fps:30,photocraft:{file:root+'/projects/wordmark.pcraft',sha256:hash(root+'/projects/wordmark.pcraft')},effectcraft:{file:project,sha256:hash(project)},filmcraft:{file:fc,sha256:hash(fc)},music:{file:music,sha256:hash(music),source:'Cipher / Kevin MacLeod / CC BY4.0',bpm:150,sourceStart:.835,beatSeconds:.4,signalOnsetAnalysis:'qa/beat-analysis.json'},voice:false,natural:false,gameGeneration:false,sharedWindowsGuiActions:0,subjectiveListen:false,ownerAdoption:false,finalQA:'PENDING'});
+console.log(JSON.stringify({openingReady:true,video,sha256:hash(video)}));
