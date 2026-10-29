@@ -16,6 +16,7 @@ v1はownerから「音がぶちぶち」「字幕が顔にかぶる」と差し�
 node score.mjs /absolute/original-bed.wav
 node render.mjs /absolute/private-plan.json /absolute/output render
 node render.mjs /absolute/private-plan.json /absolute/output preview
+node regression.mjs
 ```
 
 `FFMPEG`・`FFPROBE`で実行ファイルを指定できる。既定は既存Windows FFmpegをWSLから呼ぶ。`CLIP=<id>`で1本を選べる。ソース編集・制作はLinux側の専用worktreeで行う。
@@ -40,6 +41,7 @@ node render.mjs /absolute/private-plan.json /absolute/output preview
 ```
 
 時刻は元MP4コンテナの秒。`alignedAudio`のある旧指定は描画前に拒否する。同期WAVはASR探索用であり、完成声の入力にはできない。
+`regression.mjs`は正しい音声モードへ不良のWAV指定を添え、別の入力不備に隠れず拒否されることを確かめる。メディアや外部ソフトなしで実行できる。
 
 - 元MP4の各区間を直接seekし、`asetpts=N/SR/TB,aresample=48000:async=0,atempo=<速度>`で連続PCM化する。許容速度は1.15〜1.25倍。今回の修正版は全編1.20倍。
 - 連続する同速区間はまとめて処理し、句端ごとに音をミュートしない。別の発話へ飛ぶ切れ目だけ15ms/20msの端フェードを使う。
