@@ -1,0 +1,49 @@
+{
+  "issue": 156,
+  "at": "2026-10-30T01:13:24.5306108Z",
+  "action": "deliver",
+  "productionTime": "1007",
+  "productionDate": "2026-10-30",
+  "nasDirectory": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-30\\エンバーウェイク\\1007_灯で変わる道_構成刷新_v05",
+  "consoleWindow": 0,
+  "foregroundBefore": 333188,
+  "decoder": "C:\\ffmpeg\\bin\\ffmpeg.exe",
+  "decoderSha256": "83b7d64913f17eb1042dde8ce4384f7a820585e850ab4f99853a47a800275329",
+  "entries": [
+    {
+      "source": "F:\\Videos\\ProjectP-EMBERWAKE-Intro60-2026-10-30\\intro65-v01\\videos\\emberwake-intro65-v05-bgm.mp4",
+      "variant": "bgm",
+      "nasDirectDecodeErrors": "",
+      "nasDirectDecodeExitCode": 0,
+      "bytes": 27143372,
+      "nasSha256": "0a9a2d2991a886cea0c9c79555be5c814839366770ff7118339839a728c997db",
+      "sourceSha256": "0a9a2d2991a886cea0c9c79555be5c814839366770ff7118339839a728c997db",
+      "copied": true,
+      "nasPath": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-30\\エンバーウェイク\\1007_灯で変わる道_構成刷新_v05\\BGM版.mp4"
+    },
+    {
+      "source": "F:\\Videos\\ProjectP-EMBERWAKE-Intro60-2026-10-30\\intro65-v01\\videos\\emberwake-intro65-v05-voice.mp4",
+      "variant": "voice",
+      "nasDirectDecodeErrors": "",
+      "nasDirectDecodeExitCode": 0,
+      "bytes": 27142911,
+      "nasSha256": "6479c1e53a97dc5ae785e0ccd32dce653bcf9451b7179a506ca0d2745c8aa4de",
+      "sourceSha256": "6479c1e53a97dc5ae785e0ccd32dce653bcf9451b7179a506ca0d2745c8aa4de",
+      "copied": true,
+      "nasPath": "\\\\100.105.2.75\\private\\work\\videos\\2026-10-30\\エンバーウェイク\\1007_灯で変わる道_構成刷新_v05\\声・効果音版.mp4"
+    }
+  ],
+  "mouseInput": 0,
+  "globalKeyInput": 0,
+  "foregroundOrFocusWrites": 0,
+  "clipboardAccess": 0,
+  "posted": false,
+  "nasDirectoryFiles": [
+    "BGM版.mp4",
+    "声・効果音版.mp4"
+  ],
+  "foregroundAfter": 333188,
+  "foregroundUnchanged": true,
+  "consoleWindowAfter": 0,
+  "finishedAt": "2026-10-30T01:13:31.1192921Z"
+}

@@ -1,0 +1,1 @@
+import{ff}from'./background.mjs';import{root,pvRoot}from'./plan.mjs';for(const n of[0,30,60,89])await ff(['-i',pvRoot+'/media/jump-city-clean.mp4','-vf',`select=eq(n\\,${n})`,'-frames:v','1',root+'/qa/jumpcity-source-'+n+'.png'],root+'/qa/jumpcity-source-'+n+'.json');

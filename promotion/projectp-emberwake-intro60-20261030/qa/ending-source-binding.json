@@ -1,0 +1,111 @@
+{
+  "issue": 156,
+  "endings": [
+    {
+      "id": "identity-walk",
+      "a": 47,
+      "b": 50,
+      "file": "moon-run-clean.mp4",
+      "head": "EMBERWAKE / 灰の灯",
+      "sub": "跳躍と灯りで、道をつなぐ。",
+      "focus": [
+        960,
+        370
+      ],
+      "input": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/media/moon-run-clean.mp4",
+      "sourceSha256": "5b159cb5a1ca11699733b46584687664b2fadad1ff5a46dd5cd5c621fc970453",
+      "output": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/identity-walk.mov",
+      "sha256": "df4b3a983a2898cf3060e5b6c04becde3a8af50ea6f89617377aa7dd13e92fe8",
+      "noFinalVideoReuse": true,
+      "noFreezeTail": true,
+      "rate": 1
+    },
+    {
+      "id": "identity-leap",
+      "a": 50,
+      "b": 53,
+      "file": "wind-leap-clean.mp4",
+      "head": "ぷい / ProjectP が制作中",
+      "sub": "開発中のアクションゲーム",
+      "focus": [
+        960,
+        400
+      ],
+      "input": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/media/wind-leap-clean.mp4",
+      "sourceSha256": "a47223ada3b2df1045ce4148834003955074a23bb27914027dbd7e7a6089a125",
+      "output": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/identity-leap.mov",
+      "sha256": "5f576f4bc8d49f1f45dfda80ac04261d990624391e2d34f5d941697b4900ffdf",
+      "noFinalVideoReuse": true,
+      "noFreezeTail": true,
+      "rate": 1
+    },
+    {
+      "id": "demo-state",
+      "a": 53,
+      "b": 56,
+      "file": "jump-city-clean.mp4",
+      "head": "デモ：2026年12月見込み",
+      "sub": "本編の提供時期は、未定です。",
+      "focus": [
+        960,
+        370
+      ],
+      "input": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/media/jump-city-clean.mp4",
+      "sourceSha256": "9de9c214624074f3ba23a53145d4d9fbab59e35b0a10b3f85c7516923df6db82",
+      "output": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/demo-state.mov",
+      "sha256": "4be7ef3aad9a9af0453b8ef3691aa79e90c7da22e235084044d782f5fa535b3b",
+      "noFinalVideoReuse": true,
+      "noFreezeTail": true,
+      "rate": 1
+    },
+    {
+      "id": "support-check",
+      "a": 56,
+      "b": 59,
+      "assetId": "stone-flight",
+      "originalFrom": 11.8,
+      "originalTo": 14.8,
+      "head": "CAMPFIREで制作支援受付中",
+      "sub": "支援内容・条件を、ページで確認。",
+      "crop": [
+        650,
+        430,
+        720,
+        650
+      ],
+      "input": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/raw/demo03-main01.mp4",
+      "sourceSha256": "eec015d2d7114f496458045f0638bbff82da3f65f83c43172594b1cae668fa42",
+      "output": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/support-check.mov",
+      "sha256": "1bf1c2e4501886bab9253c22b7a86ac597cef7d16826bd99800413da3169fe88",
+      "noFinalVideoReuse": true,
+      "noFreezeTail": true,
+      "rate": 1
+    },
+    {
+      "id": "search-route",
+      "a": 59,
+      "b": 65,
+      "assetId": "wind-transfer",
+      "originalFrom": 16.3,
+      "originalTo": 22.3,
+      "head": "CAMPFIREで検索",
+      "sub": "EMBERWAKE / 灰の灯",
+      "crop": [
+        650,
+        430,
+        720,
+        650
+      ],
+      "input": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/raw/demo02-ferry01.mp4",
+      "sourceSha256": "7b9b6f6b5a9f87fd84f9321e2d725a6637da0bc994fa2fafde8a9b470378acfd",
+      "output": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/search-route.mov",
+      "sha256": "0216083b2c7b85abce99143e17fd61f11bd40972c76d5891b3f83ef1f8585003",
+      "noFinalVideoReuse": true,
+      "noFreezeTail": true,
+      "rate": 1
+    }
+  ],
+  "additionalActualFootage": 18,
+  "firstAndLastCandidateFramesInspected": true,
+  "rootVisualAcceptance": "pending"
+}

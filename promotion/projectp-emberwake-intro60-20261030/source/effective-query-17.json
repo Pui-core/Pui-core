@@ -1,0 +1,92 @@
+{
+  "accent_phrases": [
+    {
+      "moras": [
+        {
+          "text": "エ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "e",
+          "vowel_length": 0.13308492302894592,
+          "pitch": 4.794265270233154
+        },
+        {
+          "text": "ン",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "N",
+          "vowel_length": 0.09562618285417557,
+          "pitch": 4.960831165313721
+        },
+        {
+          "text": "バ",
+          "consonant": "b",
+          "consonant_length": 0.0422586053609848,
+          "vowel": "a",
+          "vowel_length": 0.10236277431249619,
+          "pitch": 4.755477428436279
+        },
+        {
+          "text": "ア",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "a",
+          "vowel_length": 0.1648419201374054,
+          "pitch": 4.548430442810059
+        }
+      ],
+      "accent": 2,
+      "pause_mora": {
+        "text": "、",
+        "consonant": null,
+        "consonant_length": null,
+        "vowel": "pau",
+        "vowel_length": 0.48977717757225037,
+        "pitch": 0
+      },
+      "is_interrogative": false
+    },
+    {
+      "moras": [
+        {
+          "text": "ウェ",
+          "consonant": "w",
+          "consonant_length": 0.041239671409130096,
+          "vowel": "e",
+          "vowel_length": 0.06539414077997208,
+          "pitch": 4.886690616607666
+        },
+        {
+          "text": "イ",
+          "consonant": null,
+          "consonant_length": null,
+          "vowel": "i",
+          "vowel_length": 0.08547057956457138,
+          "pitch": 4.971708297729492
+        },
+        {
+          "text": "ク",
+          "consonant": "k",
+          "consonant_length": 0.08475112169981003,
+          "vowel": "u",
+          "vowel_length": 0.11983215063810349,
+          "pitch": 4.6317057609558105
+        }
+      ],
+      "accent": 1,
+      "pause_mora": null,
+      "is_interrogative": false
+    }
+  ],
+  "speedScale": 1.18,
+  "pitchScale": 0.015,
+  "intonationScale": 1.3,
+  "volumeScale": 1,
+  "prePhonemeLength": 0.035,
+  "postPhonemeLength": 0.1,
+  "pauseLength": null,
+  "pauseLengthScale": 1,
+  "outputSamplingRate": 48000,
+  "outputStereo": true,
+  "kana": "エン'バア、ウェ'イク"
+}

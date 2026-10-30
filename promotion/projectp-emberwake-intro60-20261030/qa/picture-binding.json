@@ -1,0 +1,674 @@
+{
+  "issue": 156,
+  "duration": 65,
+  "frames": 1950,
+  "ec": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/intro65-v01.ecproj",
+  "ecSha256": "e9a0bdb3dcf7cb779711daf97a3f5af90d7659d7c9fb262fd0828fe0f4a1f195",
+  "headers": [
+    {
+      "id": "hook",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-hook.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-hook.pcraft",
+      "sha256": "4d15ceaaaf38a9ff3f8bb6b4332cbf182060684a83e8da5b890d5a521a9bc9b6",
+      "bounds": [
+        46,
+        55,
+        746,
+        72
+      ],
+      "anchor": [
+        419,
+        91
+      ]
+    },
+    {
+      "id": "first-step",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-first-step.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-first-step.pcraft",
+      "sha256": "0abea2a3aea881292e10b42543f491168a8a0c7184d7272a2b578d126ba96ea9",
+      "bounds": [
+        45,
+        54,
+        566,
+        72
+      ],
+      "anchor": [
+        328,
+        90
+      ]
+    },
+    {
+      "id": "short",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-short.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-short.pcraft",
+      "sha256": "9913dc08ba178b58ed09da4227928b06d2ae28d0827b1c115ccd34fc655c2371",
+      "bounds": [
+        40,
+        55,
+        614,
+        71
+      ],
+      "anchor": [
+        347,
+        90.5
+      ]
+    },
+    {
+      "id": "hold",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-hold.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-hold.pcraft",
+      "sha256": "5e505176d0b8121095c82919d2e845bb69c5752f6adfe14c31cd5253bbf021a3",
+      "bounds": [
+        41,
+        56,
+        535,
+        70
+      ],
+      "anchor": [
+        308.5,
+        91
+      ]
+    },
+    {
+      "id": "next-jump",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-next-jump.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-next-jump.pcraft",
+      "sha256": "5e06422d757cd0e1034fb3520772021b806043bd43e8e2df72c91888e2745a0d",
+      "bounds": [
+        43,
+        54,
+        568,
+        72
+      ],
+      "anchor": [
+        327,
+        90
+      ]
+    },
+    {
+      "id": "approach",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-approach.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-approach.pcraft",
+      "sha256": "0c230d422dbfd0ecaff887957a9d8a3b44d27de211a312859ec0d125b4861174",
+      "bounds": [
+        40,
+        55,
+        648,
+        72
+      ],
+      "anchor": [
+        364,
+        91
+      ]
+    },
+    {
+      "id": "light",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-light.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-light.pcraft",
+      "sha256": "2e61f6f2bcd0f20ca2da5604d3221b1256abdfcb4ac75403a4d3276d3e1e371f",
+      "bounds": [
+        39,
+        54,
+        649,
+        73
+      ],
+      "anchor": [
+        363.5,
+        90.5
+      ]
+    },
+    {
+      "id": "switch",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-switch.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-switch.pcraft",
+      "sha256": "384b63b1fbdcb3c8cd0d3e6c18ad135cc293ac1e8469ff79cf2c280621b695cd",
+      "bounds": [
+        39,
+        54,
+        572,
+        72
+      ],
+      "anchor": [
+        325,
+        90
+      ]
+    },
+    {
+      "id": "new-path",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-new-path.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-new-path.pcraft",
+      "sha256": "b995130bea3ba73c1d9cf0c75704ff35e4e13edd3d031309eb38d1ca69ee88d3",
+      "bounds": [
+        39,
+        55,
+        572,
+        72
+      ],
+      "anchor": [
+        325,
+        91
+      ]
+    },
+    {
+      "id": "other-stage",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-other-stage.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-other-stage.pcraft",
+      "sha256": "6177fc2f391b4302be5c97bfab9906e5578e10d4bf3e2f42f8ad2a73bd6b4386",
+      "bounds": [
+        39,
+        54,
+        569,
+        72
+      ],
+      "anchor": [
+        323.5,
+        90
+      ]
+    },
+    {
+      "id": "other-change",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-other-change.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-other-change.pcraft",
+      "sha256": "abb5f6d756b5fffb6a5fcda7865d4af7477d39274b92befd435cd207d5c2c7f9",
+      "bounds": [
+        45,
+        55,
+        643,
+        73
+      ],
+      "anchor": [
+        366.5,
+        91.5
+      ]
+    },
+    {
+      "id": "other-ascent",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-other-ascent.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-other-ascent.pcraft",
+      "sha256": "20b5555942aa14bb355b9ce8efab99bfa2d0abe4520635812514112c48be808c",
+      "bounds": [
+        40,
+        54,
+        725,
+        72
+      ],
+      "anchor": [
+        402.5,
+        90
+      ]
+    },
+    {
+      "id": "wind-ascent",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-wind-ascent.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-wind-ascent.pcraft",
+      "sha256": "c6a0e6faf977c381693284fa73e2e893dbda1faa9ccd7a0be9144c7e49729a82",
+      "bounds": [
+        40,
+        55,
+        648,
+        71
+      ],
+      "anchor": [
+        364,
+        90.5
+      ]
+    },
+    {
+      "id": "aqueduct",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-aqueduct.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-aqueduct.pcraft",
+      "sha256": "6febd28412002ac055a0007469c8ed45c1e4b01e117f2560776d85d81b7a5f75",
+      "bounds": [
+        39,
+        55,
+        726,
+        71
+      ],
+      "anchor": [
+        402,
+        90.5
+      ]
+    },
+    {
+      "id": "carry",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-carry.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-carry.pcraft",
+      "sha256": "17453e690e57a73624f8955b9582095fcf59c2004f3560382e28bbb0a3fc85db",
+      "bounds": [
+        40,
+        54,
+        802,
+        72
+      ],
+      "anchor": [
+        441,
+        90
+      ]
+    },
+    {
+      "id": "transfer",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-transfer.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-transfer.pcraft",
+      "sha256": "633c189559677437391dac14b1ce67af2a18e9d639cf2f5f4f1dc858555017df",
+      "bounds": [
+        39,
+        55,
+        572,
+        72
+      ],
+      "anchor": [
+        325,
+        91
+      ]
+    },
+    {
+      "id": "identity-walk",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-identity-walk.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-identity-walk.pcraft",
+      "sha256": "4744a36784924e5e3e43331cb759aed54072d7b23cf74fa3b913187c055ff75d",
+      "bounds": [
+        45,
+        56,
+        850,
+        78
+      ],
+      "anchor": [
+        470,
+        95
+      ]
+    },
+    {
+      "id": "identity-leap",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-identity-leap.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-identity-leap.pcraft",
+      "sha256": "c9f151a6bea68ae43aa60bf1b6a89e22d4cf9d470c0f2e188a0a28c85355569a",
+      "bounds": [
+        39,
+        61,
+        828,
+        75
+      ],
+      "anchor": [
+        453,
+        98.5
+      ]
+    },
+    {
+      "id": "demo-state",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-demo-state.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-demo-state.pcraft",
+      "sha256": "32dfe6afdb369da885bff42a9e3ab4b25c42b7f7e5800659e80426a745f92d90",
+      "bounds": [
+        40,
+        52,
+        930,
+        75
+      ],
+      "anchor": [
+        505,
+        89.5
+      ]
+    },
+    {
+      "id": "support-check",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-support-check.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-support-check.pcraft",
+      "sha256": "3f7babc887d310bffd3ca0ceab9bb93339e1bffdd05ed4e9671ebe1586a900b3",
+      "bounds": [
+        41,
+        60,
+        956,
+        66
+      ],
+      "anchor": [
+        519,
+        93
+      ]
+    },
+    {
+      "id": "search-route",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-search-route.png",
+      "project": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/heading-search-route.pcraft",
+      "sha256": "e822b2cbc6021676696929a797a75a9bcf620c87da8d815c06e339c1b017a85a",
+      "bounds": [
+        42,
+        55,
+        656,
+        71
+      ],
+      "anchor": [
+        370,
+        90.5
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "id": "hook",
+      "a": 0,
+      "b": 2,
+      "ep": "ep01-replay-controls01",
+      "from": 832,
+      "to": 892,
+      "head": "この灯り、道になる？",
+      "sub": "跳ぶだけでは、終わらない。",
+      "chapter": "問い",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "first-step",
+      "a": 2,
+      "b": 5,
+      "ep": "ep02-normal-route01",
+      "from": 445,
+      "to": 535,
+      "head": "まずは、足場へ。",
+      "sub": "開発中の実プレイ",
+      "chapter": "01 / 入力",
+      "crop": [
+        640,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "short",
+      "a": 5,
+      "b": 7,
+      "ep": "ep01-replay-controls01",
+      "from": 175,
+      "to": 235,
+      "head": "短押し：届かない",
+      "sub": "同じ位置・同じ移動で比較",
+      "chapter": "01 / 入力",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "hold",
+      "a": 7,
+      "b": 9,
+      "ep": "ep01-replay-controls01",
+      "from": 382,
+      "to": 442,
+      "head": "長押し：届いた",
+      "sub": "変えたのは、押す長さ。",
+      "chapter": "01 / 入力",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "next-jump",
+      "a": 9,
+      "b": 12,
+      "ep": "ep02-normal-route01",
+      "from": 535,
+      "to": 625,
+      "head": "一歩ずつ、上へ。",
+      "sub": "次の足場を見て、跳ぶ。",
+      "chapter": "01 / 入力",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "approach",
+      "a": 12,
+      "b": 15,
+      "ep": "ep01-replay-controls01",
+      "from": 610,
+      "to": 700,
+      "head": "次の目的は、灯り。",
+      "sub": "跳躍の先に、別の判断がある。",
+      "chapter": "02 / 灯り",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "light",
+      "a": 15,
+      "b": 18,
+      "ep": "ep01-replay-controls01",
+      "from": 700,
+      "to": 790,
+      "head": "近づいて、点ける。",
+      "sub": "最初の灯が、点いた。",
+      "chapter": "02 / 灯り",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "switch",
+      "a": 18,
+      "b": 21,
+      "ep": "ep01-replay-controls01",
+      "from": 790,
+      "to": 880,
+      "head": "足場が、現れた。",
+      "sub": "スイッチの前後を、実画面で。",
+      "chapter": "02 / 灯り",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "new-path",
+      "a": 21,
+      "b": 24,
+      "ep": "ep01-replay-controls01",
+      "from": 880,
+      "to": 970,
+      "head": "今度は、渡れる。",
+      "sub": "見ていた場所が、進める道へ。",
+      "chapter": "02 / 灯り",
+      "crop": [
+        600,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "other-stage",
+      "a": 24,
+      "b": 28,
+      "ep": "ep02-normal-route01",
+      "from": 600,
+      "to": 720,
+      "head": "場所が変われば、",
+      "sub": "段差も、足場の間隔も変わる。",
+      "chapter": "03 / 次の場所",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "other-change",
+      "a": 28,
+      "b": 32,
+      "ep": "ep02-normal-route01",
+      "from": 720,
+      "to": 840,
+      "head": "また、道をつなぐ。",
+      "sub": "別の足場で、操作と変化を確かめる。",
+      "chapter": "03 / 次の場所",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "other-ascent",
+      "a": 32,
+      "b": 35,
+      "ep": "ep02-normal-route01",
+      "from": 840,
+      "to": 930,
+      "head": "次の一歩が、見えた。",
+      "sub": "ここから先の答えは、伏せておく。",
+      "chapter": "03 / 次の場所",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "wind-ascent",
+      "a": 35,
+      "b": 38,
+      "file": "wind-ascent.mp4",
+      "head": "別の街でも、上へ。",
+      "sub": "実際の別場面 / 解法・結末は非表示",
+      "focus": [
+        960,
+        370
+      ]
+    },
+    {
+      "id": "aqueduct",
+      "a": 38,
+      "b": 41,
+      "file": "aqueduct-run.mp4",
+      "head": "足場の間隔を、読む。",
+      "sub": "実際の別場面",
+      "focus": [
+        960,
+        370
+      ]
+    },
+    {
+      "id": "carry",
+      "a": 41,
+      "b": 44,
+      "file": "stone-flight.mp4",
+      "head": "次の足場へ、飛び移る。",
+      "sub": "実際の別場面",
+      "focus": [
+        960,
+        330
+      ]
+    },
+    {
+      "id": "transfer",
+      "a": 44,
+      "b": 47,
+      "file": "wind-transfer-air.mp4",
+      "head": "渡り方を、探す。",
+      "sub": "実際の別場面",
+      "focus": [
+        960,
+        450
+      ]
+    },
+    {
+      "id": "identity-walk",
+      "a": 47,
+      "b": 50,
+      "file": "moon-run-clean.mp4",
+      "head": "EMBERWAKE / 灰の灯",
+      "sub": "跳躍と灯りで、道をつなぐ。",
+      "focus": [
+        960,
+        370
+      ]
+    },
+    {
+      "id": "identity-leap",
+      "a": 50,
+      "b": 53,
+      "file": "wind-leap-clean.mp4",
+      "head": "ぷい / ProjectP が制作中",
+      "sub": "開発中のアクションゲーム",
+      "focus": [
+        960,
+        400
+      ]
+    },
+    {
+      "id": "demo-state",
+      "a": 53,
+      "b": 56,
+      "file": "jump-city-clean.mp4",
+      "head": "デモ：2026年12月見込み",
+      "sub": "本編の提供時期は、未定です。",
+      "focus": [
+        960,
+        370
+      ]
+    },
+    {
+      "id": "support-check",
+      "a": 56,
+      "b": 59,
+      "assetId": "stone-flight",
+      "originalFrom": 11.8,
+      "originalTo": 14.8,
+      "head": "CAMPFIREで制作支援受付中",
+      "sub": "支援内容・条件を、ページで確認。",
+      "crop": [
+        650,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "search-route",
+      "a": 59,
+      "b": 65,
+      "assetId": "wind-transfer",
+      "originalFrom": 16.3,
+      "originalTo": 22.3,
+      "head": "CAMPFIREで検索",
+      "sub": "EMBERWAKE / 灰の灯",
+      "crop": [
+        650,
+        430,
+        720,
+        650
+      ]
+    }
+  ],
+  "fullWatch": false,
+  "subjectiveListen": false,
+  "sourceSpeed": 1,
+  "freezeTailFrames": 0,
+  "actualGameplayAll65": true,
+  "model": "Revenant_Natural silent idle/blink 47–51s; no mouth sync",
+  "layout": "Native PhotoCraft text bounds -> centered alpha title; EC gameplay720x650 at150% ->1080x975; source HUD/story/order removed before EC"
+}

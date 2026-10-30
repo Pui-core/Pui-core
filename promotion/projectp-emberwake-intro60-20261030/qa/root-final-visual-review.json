@@ -1,0 +1,31 @@
+{
+  "issue": 156,
+  "reviewer": "Root CTO",
+  "recordedAt": "2026-10-30T01:17:47.414Z",
+  "source": "Root direct delegated review message after actual final image views",
+  "outputSha256": "0a9a2d2991a886cea0c9c79555be5c814839366770ff7118339839a728c997db",
+  "selectedFinalImagesAccepted": true,
+  "additionalMandatoryImageFixes": 0,
+  "images": [
+    {
+      "file": "qa/final-whole-sheet.png",
+      "sha256": "c02f4282df92e3bdd0c602db0fac33a7c39fa38cea7dd736dfc565352b393fe4"
+    },
+    {
+      "file": "qa/final-hook-result-strip.png",
+      "sha256": "f6bf628bf2ef8854fa35aafee67f9811e05d3124088b711b116529628fc36b84"
+    },
+    {
+      "file": "qa/final-switch-result-strip.png",
+      "sha256": "704f8e2b930cb32d0f58435d737cf2bf6c10708211c6bf9c3139695947a819b1"
+    },
+    {
+      "file": "qa/final-jumpcity-tracking-strip.png",
+      "sha256": "863c43f7fb9220381efaf6d33ab4213aa58ad252d9e0fab7df21186281692356"
+    }
+  ],
+  "wholeRealtimeWatch": false,
+  "subjectiveListen": false,
+  "actualMobileUI": false,
+  "publicationAccepted": false
+}
