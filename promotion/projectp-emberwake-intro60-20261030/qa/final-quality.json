@@ -1,0 +1,85 @@
+{
+  "issue": 156,
+  "checkedAt": "2026-10-30T01:12:16.135Z",
+  "outputs": [
+    {
+      "variant": "bgm",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/videos/emberwake-intro65-v05-bgm.mp4",
+      "sha256": "0a9a2d2991a886cea0c9c79555be5c814839366770ff7118339839a728c997db",
+      "format": {
+        "duration": 65.002,
+        "videoDuration": 65,
+        "audioDuration": 65.002,
+        "frames": 1950,
+        "width": 1080,
+        "height": 1920,
+        "fps": "30/1",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "audioCodec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "lag": 0,
+      "clips": 0,
+      "minCueHeadTailCorrelation": 0.9794294414317679,
+      "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -23.9 LUFS\n    Threshold: -34.0 LUFS\n\n  Loudness range:\n    LRA:         4.2 LU\n    Threshold: -43.9 LUFS\n    LRA low:   -26.4 LUFS\n    LRA high:  -22.1 LUFS\n\n  True peak:\n    Peak:       -3.9 dBFS\n[out#0/null @ 0x61d3e9e724c0] video:0KiB audio:12188KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nsize=N/A time=00:01:05.00 bitrate=N/A speed= 196x elapsed=0:00:00.33    \n"
+    },
+    {
+      "variant": "voice",
+      "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/videos/emberwake-intro65-v05-voice.mp4",
+      "sha256": "6479c1e53a97dc5ae785e0ccd32dce653bcf9451b7179a506ca0d2745c8aa4de",
+      "format": {
+        "duration": 65.002,
+        "videoDuration": 65,
+        "audioDuration": 65.002,
+        "frames": 1950,
+        "width": 1080,
+        "height": 1920,
+        "fps": "30/1",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "audioCodec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "lag": 0,
+      "clips": 0,
+      "minCueHeadTailCorrelation": 0.9992905456474616,
+      "loudnessSummary": "Summary:\n\n  Integrated loudness:\n    I:         -23.6 LUFS\n    Threshold: -34.5 LUFS\n\n  Loudness range:\n    LRA:         6.9 LU\n    Threshold: -46.0 LUFS\n    LRA low:   -29.7 LUFS\n    LRA high:  -22.8 LUFS\n\n  True peak:\n    Peak:       -4.0 dBFS\n[out#0/null @ 0x56ff640ad1c0] video:0KiB audio:12188KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nsize=N/A time=00:01:05.00 bitrate=N/A speed= 163x elapsed=0:00:00.39    \n"
+    }
+  ],
+  "videoAllFramesEqual": true,
+  "nativeDependencyReferences": 57,
+  "missingDependencies": [],
+  "actualFinalFrames": [
+    0.1,
+    0.5,
+    5.6,
+    7.7,
+    16.5,
+    19.9,
+    22.5,
+    30.2,
+    36.5,
+    42.4,
+    48.3,
+    54.5,
+    57.2,
+    62,
+    64.9666667
+  ],
+  "subjectiveListen": false,
+  "wholeRealtimeWatch": false,
+  "rootFinalImageAcceptance": {
+    "status": "SELECTED_FINAL_IMAGES_ACCEPTED",
+    "reviewer": "Root CTO",
+    "receipt": "root-final-visual-review.json",
+    "wholeRealtimeWatch": false,
+    "subjectiveListen": false,
+    "actualMobileUI": false
+  },
+  "publicAccepted": false,
+  "published": false,
+  "sharedDesktopInputs": 0
+}

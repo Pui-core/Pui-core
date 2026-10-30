@@ -1,0 +1,85 @@
+{
+  "issue": 156,
+  "ec": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/projects/intro65-v04.ecproj",
+  "sha256": "b73a7a51400300bf15c72f8973ad26b176774b4341f0ccee43a1f6f2c429fb52",
+  "fixed": [
+    {
+      "id": "hook",
+      "old": "Gameplay hook v02",
+      "file": "hook-safe-v04.mov",
+      "a": 0,
+      "b": 2,
+      "anchor": [
+        500,
+        325,
+        0
+      ],
+      "scale": 108
+    },
+    {
+      "id": "switch",
+      "old": "Gameplay switch v02",
+      "file": "switch-safe-v04.mov",
+      "a": 18,
+      "b": 21,
+      "anchor": [
+        500,
+        325,
+        0
+      ],
+      "scale": 108
+    },
+    {
+      "id": "demo-state",
+      "old": "Gameplay demo-state",
+      "file": "demo-state-tracked-v04.mov",
+      "a": 53,
+      "b": 56,
+      "anchor": [
+        360,
+        325,
+        0
+      ],
+      "scale": 180
+    }
+  ],
+  "heads": [
+    {
+      "id": "service",
+      "png": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/cta-service-v04.png",
+      "bounds": [
+        41,
+        72,
+        415,
+        53
+      ],
+      "anchor": [
+        248.5,
+        98.5
+      ]
+    },
+    {
+      "id": "query",
+      "png": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/cta-query-v04.png",
+      "bounds": [
+        45,
+        61,
+        685,
+        64
+      ],
+      "anchor": [
+        387.5,
+        93
+      ]
+    }
+  ],
+  "ctaSafeY": [
+    180,
+    280
+  ],
+  "oldVersionsPreserved": true,
+  "sourceRate": 1,
+  "freezeTail": 0,
+  "rootAcceptance": "pending fixed snapshots",
+  "nativeFramesReady": true
+}

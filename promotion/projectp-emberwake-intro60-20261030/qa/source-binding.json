@@ -1,0 +1,351 @@
+{
+  "issue": 156,
+  "raw": {
+    "ep01-replay-controls01": "c0b94ae3e559809216db5536c13f3ca4c9121fc2dd7b1630c91c2257df78eb86",
+    "ep02-normal-route01": "0c2072edc8ff8b73ae102cce2763a0dcd1d072c186e97e7b3de784b8e014f500"
+  },
+  "rawShots": [
+    {
+      "id": "hook",
+      "a": 0,
+      "b": 2,
+      "ep": "ep01-replay-controls01",
+      "from": 772,
+      "to": 832,
+      "head": "この灯り、道になる？",
+      "sub": "跳ぶだけでは、終わらない。",
+      "chapter": "問い",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "first-step",
+      "a": 2,
+      "b": 5,
+      "ep": "ep02-normal-route01",
+      "from": 445,
+      "to": 535,
+      "head": "まずは、足場へ。",
+      "sub": "開発中の実プレイ",
+      "chapter": "01 / 入力",
+      "crop": [
+        640,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "short",
+      "a": 5,
+      "b": 7,
+      "ep": "ep01-replay-controls01",
+      "from": 175,
+      "to": 235,
+      "head": "短押し：届かない",
+      "sub": "同じ位置・同じ移動で比較",
+      "chapter": "01 / 入力",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "hold",
+      "a": 7,
+      "b": 9,
+      "ep": "ep01-replay-controls01",
+      "from": 382,
+      "to": 442,
+      "head": "長押し：届いた",
+      "sub": "変えたのは、押す長さ。",
+      "chapter": "01 / 入力",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "next-jump",
+      "a": 9,
+      "b": 12,
+      "ep": "ep02-normal-route01",
+      "from": 535,
+      "to": 625,
+      "head": "一歩ずつ、上へ。",
+      "sub": "次の足場を見て、跳ぶ。",
+      "chapter": "01 / 入力",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "approach",
+      "a": 12,
+      "b": 15,
+      "ep": "ep01-replay-controls01",
+      "from": 610,
+      "to": 700,
+      "head": "次の目的は、灯り。",
+      "sub": "跳躍の先に、別の判断がある。",
+      "chapter": "02 / 灯り",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "light",
+      "a": 15,
+      "b": 18,
+      "ep": "ep01-replay-controls01",
+      "from": 700,
+      "to": 790,
+      "head": "近づいて、点ける。",
+      "sub": "最初の灯が、点いた。",
+      "chapter": "02 / 灯り",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "switch",
+      "a": 18,
+      "b": 21,
+      "ep": "ep01-replay-controls01",
+      "from": 790,
+      "to": 880,
+      "head": "足場が、現れた。",
+      "sub": "スイッチの前後を、実画面で。",
+      "chapter": "02 / 灯り",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "new-path",
+      "a": 21,
+      "b": 24,
+      "ep": "ep01-replay-controls01",
+      "from": 880,
+      "to": 970,
+      "head": "今度は、渡れる。",
+      "sub": "見ていた場所が、進める道へ。",
+      "chapter": "02 / 灯り",
+      "crop": [
+        600,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "other-stage",
+      "a": 24,
+      "b": 28,
+      "ep": "ep02-normal-route01",
+      "from": 600,
+      "to": 720,
+      "head": "場所が変われば、",
+      "sub": "段差も、足場の間隔も変わる。",
+      "chapter": "03 / 次の場所",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "other-change",
+      "a": 28,
+      "b": 32,
+      "ep": "ep02-normal-route01",
+      "from": 720,
+      "to": 840,
+      "head": "また、道をつなぐ。",
+      "sub": "別の足場で、操作と変化を確かめる。",
+      "chapter": "03 / 次の場所",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    },
+    {
+      "id": "other-ascent",
+      "a": 32,
+      "b": 35,
+      "ep": "ep02-normal-route01",
+      "from": 840,
+      "to": 930,
+      "head": "次の一歩が、見えた。",
+      "sub": "ここから先の答えは、伏せておく。",
+      "chapter": "03 / 次の場所",
+      "crop": [
+        740,
+        430,
+        720,
+        650
+      ]
+    }
+  ],
+  "montage": [
+    {
+      "id": "wind-ascent",
+      "a": 35,
+      "b": 38,
+      "file": "wind-ascent.mp4",
+      "head": "別の街でも、上へ。",
+      "sub": "実際の別場面 / 解法・結末は非表示",
+      "focus": [
+        960,
+        370
+      ],
+      "provenance": {
+        "id": "wind-ascent",
+        "source": "demo02-growth01",
+        "from": 1.6,
+        "duration": 3.3,
+        "input": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/raw/demo02-growth01.mp4",
+        "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/media/wind-ascent.mp4",
+        "sourceSha256": "2619734e2e0164b228e2ef89c723b9e1e3da85757837bc355fc2bcf9a0c2395b",
+        "crop": [
+          0,
+          360,
+          1920,
+          720
+        ],
+        "width": 1920,
+        "height": 720,
+        "sha256": "0f222bdd1df470d3ac7b733560ee81c5dc93ae45f7068dea8b548fd8cc27ca34",
+        "kind": "Actual recorded 2Dgame fragment, HUD/puzzle-order signage excluded, no generated scene or character"
+      }
+    },
+    {
+      "id": "aqueduct",
+      "a": 38,
+      "b": 41,
+      "file": "aqueduct-run.mp4",
+      "head": "足場の間隔を、読む。",
+      "sub": "実際の別場面",
+      "focus": [
+        960,
+        370
+      ],
+      "provenance": {
+        "id": "aqueduct-run",
+        "source": "demo04-well01",
+        "from": 5.5,
+        "duration": 3.3,
+        "input": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/raw/demo04-well01.mp4",
+        "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/media/aqueduct-run.mp4",
+        "sourceSha256": "17fa32578378d33d2a4eb2445a29f6dd653614532ad4e677bd6df282fae62f02",
+        "crop": [
+          0,
+          360,
+          1920,
+          720
+        ],
+        "width": 1920,
+        "height": 720,
+        "sha256": "7127357e0b743dc188280288959690b4f1ee7074c61a6658f7cb9389d24fbe1c",
+        "kind": "Actual recorded 2Dgame fragment, HUD/puzzle-order signage excluded, no generated scene or character"
+      }
+    },
+    {
+      "id": "carry",
+      "a": 41,
+      "b": 44,
+      "file": "stone-flight.mp4",
+      "head": "灯りを持って、進む。",
+      "sub": "実際の別場面",
+      "focus": [
+        960,
+        330
+      ],
+      "provenance": {
+        "id": "stone-flight",
+        "source": "demo03-main01",
+        "from": 8.4,
+        "duration": 3.3,
+        "input": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/raw/demo03-main01.mp4",
+        "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/media/stone-flight.mp4",
+        "sourceSha256": "eec015d2d7114f496458045f0638bbff82da3f65f83c43172594b1cae668fa42",
+        "crop": [
+          0,
+          360,
+          1920,
+          720
+        ],
+        "width": 1920,
+        "height": 720,
+        "sha256": "4a6bde89e33358cad90f510def663da334cc5caf2e691d0bcaad53b55854a6ca",
+        "kind": "Actual recorded 2Dgame fragment, HUD/puzzle-order signage excluded, no generated scene or character"
+      }
+    },
+    {
+      "id": "transfer",
+      "a": 44,
+      "b": 47,
+      "file": "wind-transfer-air.mp4",
+      "head": "渡り方を、探す。",
+      "sub": "実際の別場面",
+      "focus": [
+        960,
+        450
+      ],
+      "provenance": {
+        "id": "wind-transfer",
+        "source": "demo02-ferry01",
+        "from": 13,
+        "duration": 3.3,
+        "input": "/mnt/f/Videos/ProjectP-EMBERWAKE-Longform-2026-10-28/demo05-course-film/media/raw/demo02-ferry01.mp4",
+        "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/media/wind-transfer-air.mp4",
+        "sourceSha256": "7b9b6f6b5a9f87fd84f9321e2d725a6637da0bc994fa2fafde8a9b470378acfd",
+        "crop": [
+          0,
+          360,
+          1920,
+          720
+        ],
+        "width": 1920,
+        "height": 720,
+        "sha256": "c39868c708ee9a2a4ebce3f6eb65af590fb2be8ff70205df00768eef4ae88646",
+        "kind": "Actual recorded 2Dgame fragment, HUD/puzzle-order signage excluded, no generated scene or character",
+        "editorialReason": "Use isolated airborne traverse after the earlier shrine approach, preserving central protagonist and avoiding interaction context."
+      }
+    }
+  ],
+  "core": {
+    "file": "/mnt/f/Videos/ProjectP-EMBERWAKE-Campfire-2026-10-29/pv-v01/private/core-closing/natural-silent.mov",
+    "sha256": "21fdd74aa90391da2e40dc9310a21c11875b77b02f349c575a2c90c8e40d4af1",
+    "kind": "Revenant_Natural real Core silent idle/blink, not mouth sync"
+  },
+  "actualGameAudio": false,
+  "sourceMotionRate": 1,
+  "newCapture": false,
+  "old152FinalUsed": false,
+  "old151FinalUsed": false,
+  "wholeListen": false
+}

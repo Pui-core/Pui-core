@@ -1,0 +1,23 @@
+{
+  "issue": 156,
+  "source": "Root delegated finite read-only offline ASR auxiliary",
+  "privateEvidencePath": "/home/pui/tmp/projectp156-asr-aux-20261030/asr.actual.json",
+  "evidenceSha256": "d90128c9455327b716bc755badc4f0e9f5a27284826d7f3b86e4d4e679995b3d",
+  "inputSha256Before": "35d9936563e060611849dfe15eb561cc2617b7ad29bca4624f1aa1b21593c2c5",
+  "inputSha256After": "35d9936563e060611849dfe15eb561cc2617b7ad29bca4624f1aa1b21593c2c5",
+  "inputUnchanged": true,
+  "model": "existing local small model",
+  "localFilesOnly": true,
+  "actualDevice": "cpu",
+  "actualComputeType": "int8_float32",
+  "state": "completed",
+  "segments": 10,
+  "audioDuration": 65,
+  "majorWordsAndFinalSentenceRecognized": true,
+  "campfireASRSpellingUncertain": "キャンクファイアー",
+  "pConsonantInActualQueryVerified": true,
+  "subjectiveListen": false,
+  "finalAacWordSemanticQualityAccepted": false,
+  "externalAudioSend": false,
+  "downloads": false
+}
