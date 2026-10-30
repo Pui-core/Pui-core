@@ -1,0 +1,143 @@
+{
+  "at": "2026-10-30T02:09:36.591Z",
+  "passed": true,
+  "mainSha256": "27ead04e86756d17aaaa13932aead7493d7f2d0e4e57976e3176eee3796df8f2",
+  "previewSha256": "bcc98188e569e4a53cf97d84f5feadd7ddcfefeca0bb3e2155f4703610b95d2d",
+  "characterBounds": {
+    "x": 500,
+    "y": 760,
+    "width": 450,
+    "height": 900
+  },
+  "checks": [
+    {
+      "id": "exact_media_allowlist",
+      "passed": true
+    },
+    {
+      "id": "approved_stage",
+      "passed": true
+    },
+    {
+      "id": "existing_conventional_cutout",
+      "passed": true
+    },
+    {
+      "id": "original_preserved",
+      "passed": true
+    },
+    {
+      "id": "preview_character_imports_zero",
+      "passed": true
+    },
+    {
+      "id": "one_character_layer",
+      "passed": true
+    },
+    {
+      "id": "top_independent_character",
+      "passed": true
+    },
+    {
+      "id": "character_full_duration",
+      "passed": true
+    },
+    {
+      "id": "fixed_transform",
+      "passed": true,
+      "detail": {
+        "position": [
+          725,
+          1210,
+          0
+        ],
+        "anchor": [
+          452.5,
+          905,
+          0
+        ],
+        "scale": [
+          49.72375690607735,
+          49.72375690607735,
+          100
+        ],
+        "opacity": 100
+      }
+    },
+    {
+      "id": "character_animation_zero",
+      "passed": true,
+      "detail": {
+        "fields": []
+      }
+    },
+    {
+      "id": "character_effects_masks_zero",
+      "passed": true
+    },
+    {
+      "id": "character_no_blur_3d_adjustment",
+      "passed": true
+    },
+    {
+      "id": "global_effects_absent",
+      "passed": true
+    },
+    {
+      "id": "native_canvas_timing",
+      "passed": true
+    },
+    {
+      "id": "preview_production_moving_layers_equal",
+      "passed": true,
+      "detail": {
+        "sharedLayers": 76,
+        "mismatch": []
+      }
+    },
+    {
+      "id": "landed_text_clear_of_character",
+      "passed": true,
+      "detail": {
+        "overlaps": []
+      }
+    },
+    {
+      "id": "landed_text_inside_reserved_ui_margins",
+      "passed": true,
+      "detail": {
+        "outside": [],
+        "note": "Numeric working margins; actual TikTok mobile UI remains unverified"
+      }
+    },
+    {
+      "id": "landed_text_boxes_nonoverlapping",
+      "passed": true,
+      "detail": {
+        "overlaps": []
+      }
+    },
+    {
+      "id": "current_facts_no_legacy_or_time",
+      "passed": true
+    },
+    {
+      "id": "film_single_silent_master",
+      "passed": true
+    },
+    {
+      "id": "film_no_timing_or_scale_change",
+      "passed": true
+    },
+    {
+      "id": "film_identity_motion",
+      "passed": true
+    },
+    {
+      "id": "film_master_media_present",
+      "passed": true
+    }
+  ],
+  "characterImagesShownToAI": 0,
+  "previewFootage": 1
+}

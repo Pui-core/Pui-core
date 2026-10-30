@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-30T02:12:13.039Z",
+  "projectSha256": "bcc98188e569e4a53cf97d84f5feadd7ddcfefeca0bb3e2155f4703610b95d2d",
+  "mainProjectSha256": "27ead04e86756d17aaaa13932aead7493d7f2d0e4e57976e3176eee3796df8f2",
+  "characterImportsInReviewedProject": 0,
+  "stableContact": {
+    "path": "/home/pui/Videos/Osayu/2026-10-30/photo7702088056479747346/revision-03/qa/preview/contact.png",
+    "sha256": "e7ca91805c64e54a13fcaafd0ab850075b058752992a74bc2a0f46e2043c5707"
+  },
+  "stableFrames": 14,
+  "transitionContact": {
+    "path": "/home/pui/Videos/Osayu/2026-10-30/photo7702088056479747346/revision-03/qa/preview/transitions/contact.png",
+    "sha256": "bb1d97e4bd3d9de9044bced8c5e1e6a16b86c82bfb54cf60d47ad84b782d69c4"
+  },
+  "transitionFrames": 36,
+  "reviewed": true,
+  "findings": [
+    "日付・先生名・意気込み・単一CTAが着地後に読める",
+    "全場面の重要文字が人物予約領域と重ならない",
+    "6切替の飛来/ワイプ中の一時的見切れと、読ませる着地を区別",
+    "final企画名45px・先生フルネーム45pxへ拡大後のrevision03を確認"
+  ],
+  "unverified": [
+    "human full realtime viewing of character-containing main",
+    "TikTok mobile UI",
+    "music audition and synchronization"
+  ],
+  "characterImageAIViews": 0
+}

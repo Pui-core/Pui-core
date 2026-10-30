@@ -1,0 +1,76 @@
+{
+  "at": "2026-10-30T02:09:58.705Z",
+  "destination": "F:/Users/pui/Documents/gara/おさゆ_1103チュートリアルバトル_20261030_v03",
+  "linuxPath": "/mnt/f/Users/pui/Documents/gara/おさゆ_1103チュートリアルバトル_20261030_v03",
+  "video": {
+    "file": "osayu-1103-tutorial-battle-v03-tiktok-silent.mp4",
+    "sha256": "826971b9db9ab630099a1d3373771931564194b520ed60a9273f87f9da2d1bb4",
+    "bytes": 4303974,
+    "audioStreams": 0,
+    "duration": "19.000000",
+    "wholeDecodeExit": 0
+  },
+  "linuxNativeReopenSaveAndRedraw": true,
+  "windowsNativeReopenSaveAndRedraw": true,
+  "windowsProjects": [
+    {
+      "file": "osayu-tutorial-battle.ecproj",
+      "reopenSaveExit": 0,
+      "sha256": "2240f657e151ae5744b6ba7094c1bd067c9d27df2248e12610cc8ffeee4090b3"
+    },
+    {
+      "file": "character-free-preview.ecproj",
+      "reopenSaveExit": 0,
+      "sha256": "cfe90f482276c6179aa15112fbf04d4bc3e186627b80ec663af28e024c75a275"
+    },
+    {
+      "file": "osayu-tutorial-battle.fcproj",
+      "reopenSaveExit": 0,
+      "sha256": "82ed659087b7bce720a3c8a141090cb452e4fd849ac8e039f5ea83021494e31c"
+    }
+  ],
+  "copyVerification": {
+    "files": 254,
+    "allShaMatch": true,
+    "phase": "Before intentional project relinking, native save and relocated QA updates"
+  },
+  "characterAIInput": 0,
+  "post": 0,
+  "sharedDesktopInput": 0,
+  "unverified": [
+    "owner creative acceptance",
+    "human full realtime viewing of character-containing final",
+    "TikTok mobile UI",
+    "sound audition/selection/synchronization",
+    "publication and growth"
+  ],
+  "linuxProjects": [
+    {
+      "file": "osayu-tutorial-battle.ecproj",
+      "sha256": "c9d738151b3aab8d9ca16dd8d5f9d2542c61ad58467ea236371a8db0e34ca0b1"
+    },
+    {
+      "file": "character-free-preview.ecproj",
+      "sha256": "3db6fc48b1966ccdd54cb5e0271b1f44dc05ee2d35665b5b634208e04418c3fa"
+    },
+    {
+      "file": "osayu-tutorial-battle.fcproj",
+      "sha256": "9fd48e4dd72703ac955a2a5c20e838ec7f9f631da27ef4ec74a526a8f451e62d"
+    }
+  ],
+  "windowsAndLinuxNativeStructureEqual": true,
+  "windowsLinuxComparison": [
+    {
+      "name": "osayu-tutorial-battle.ecproj",
+      "itemsAndSettingsEqual": true
+    },
+    {
+      "name": "character-free-preview.ecproj",
+      "itemsAndSettingsEqual": true
+    },
+    {
+      "name": "osayu-tutorial-battle.fcproj",
+      "itemsAndSettingsEqual": true
+    }
+  ]
+}
