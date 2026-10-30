@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {root,native,ff,probe,hash,save} from './runtime.mjs';
+import {duration,fps,compName} from './motion.mjs';
+const project=path.join(root,'projects/osayu-tutorial-battle.fcproj'),master=path.join(root,'media/picture-master.mp4');
+if(fs.existsSync(project))throw Error('Preserve existing FilmCraft project; use a new revision');
+const commands=[{id:'file.newProject',params:{name:'Osayu / November 3 tutorial battle'}},{id:'file.newSequence',params:{name:compName,width:1080,height:1920,fps,sampleRate:48000,video:1,audio:0}},{id:'file.import',params:{paths:[master]}}];
+const result=await native('filmcraft',['--save-as',project,'run','-'],path.join(root,'qa/fc-create.json'),commands.map(j=>JSON.stringify(j)).join('\n')+'\n');
+let items;for(const line of result.stdout.split(/\r?\n/).filter(Boolean)){const j=JSON.parse(line),r=j.result||j;if(r.items)items=r.items;}
+if(items?.length!==1)throw Error('Expected one imported silent master');
+await native('filmcraft',['--project',project,'--save','run','-'],path.join(root,'qa/fc-place.json'),JSON.stringify({id:'timeline.place',params:{item:items[0],track:'V1',seconds:0,duration:duration*254016000000,video:true,audio:false}})+'\n');
+await native('filmcraft',['--project',project,'--save','inspect'],path.join(root,'qa/fc-reopen-save.json'));
+const rendered=path.join(root,'videos/filmcraft-export-silent.mp4'),posting=path.join(root,'videos/osayu-1103-tutorial-battle-v03-tiktok-silent.mp4');
+await native('filmcraft',['--project',project,'exec','file.exportMedia',JSON.stringify({path:rendered,format:'h264',audio:false,bitrateMode:'crf',crf:18,hardwareEncoding:'off',wait:true})],path.join(root,'qa/fc-export.json'),undefined,240000);
+await ff(['-y','-i',rendered,'-map','0:v:0','-c:v','copy','-an','-movflags','+faststart',posting],path.join(root,'qa/posting-remux.json'));
+const probed=await probe(['-count_frames','-show_streams','-show_format','-of','json',posting],path.join(root,'qa/posting-probe.json'));
+const p=JSON.parse(probed.stdout),vs=p.streams.filter(s=>s.codec_type==='video'),as=p.streams.filter(s=>s.codec_type==='audio');
+if(vs.length!==1||as.length!==0||vs[0].width!==1080||vs[0].height!==1920||vs[0].avg_frame_rate!=='30/1'||Number(vs[0].nb_read_frames)!==duration*fps||Math.abs(Number(p.format.duration)-duration)>.01)throw Error('Posting stream validation failed');
+const decoded=await ff(['-i',posting,'-map','0:v:0','-an','-f','null','-'],path.join(root,'qa/posting-all-decode.json'));
+if(decoded.stderr.trim())throw Error('Decoder emitted error diagnostics');
+save(path.join(root,'qa/posting-master.json'),{passed:true,path:posting,bytes:fs.statSync(posting).size,sha256:hash(posting),duration:Number(p.format.duration),width:vs[0].width,height:vs[0].height,frames:Number(vs[0].nb_read_frames),fps:vs[0].avg_frame_rate,codec:vs[0].codec_name,audioStreams:as.length,wholeDecodeExit:decoded.code,wholeDecodeStderr:decoded.stderr,filmcraftProjectSha256:hash(project),containsCharacter:true,aiViewingAllowed:false});
+console.log(JSON.stringify({posting,sha256:hash(posting),frames:duration*fps,audioStreams:0,wholeDecodeExit:decoded.code}));
