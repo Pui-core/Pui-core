@@ -1,0 +1,701 @@
+{
+  "status": "PASS_TECHNICAL_VOICE_SFX_NATIVE_MUSIC_PENDING",
+  "issue": 132,
+  "destination": "/mnt/f/Videos/ProjectP-ScateRush-TikTok-Revision-2026-10-27/revision-01",
+  "fileCount": 111,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 1958,
+      "sha256": "13891046add05ba646a661ee8328af033346a55e505f378517958f3232c547d9",
+      "deliverySha256": "13891046add05ba646a661ee8328af033346a55e505f378517958f3232c547d9"
+    },
+    {
+      "file": "covers/scaterush-revision.pcraft",
+      "bytes": 2735693,
+      "sha256": "e6ddf9ecaecbe48591c8721f8417b3b2ba3fe7298c64acf75f8e8170e29f55c4",
+      "deliverySha256": "e6ddf9ecaecbe48591c8721f8417b3b2ba3fe7298c64acf75f8e8170e29f55c4"
+    },
+    {
+      "file": "covers/scaterush-revision.png",
+      "bytes": 341055,
+      "sha256": "52fab7432a52d97b2c2d0a1c3c4905e92230972090f946ff8e2c9227aea98ca1",
+      "deliverySha256": "52fab7432a52d97b2c2d0a1c3c4905e92230972090f946ff8e2c9227aea98ca1"
+    },
+    {
+      "file": "media/actual-cover.png",
+      "bytes": 54735,
+      "sha256": "2096cbf623f68ddf0672cb584fcb52275c87d4c3fe4f6665eb2bf20c483fbdf2",
+      "deliverySha256": "2096cbf623f68ddf0672cb584fcb52275c87d4c3fe4f6665eb2bf20c483fbdf2"
+    },
+    {
+      "file": "media/ambient-cover.png",
+      "bytes": 4144,
+      "sha256": "8f27f8967ec011712dcd30b8e5f37f0875ce22d5ba6c979ddb9ade803537e23e",
+      "deliverySha256": "8f27f8967ec011712dcd30b8e5f37f0875ce22d5ba6c979ddb9ade803537e23e"
+    },
+    {
+      "file": "media/avatar-cover.png",
+      "bytes": 715145,
+      "sha256": "40db28d59edede08ef250cdfe4b6b5b21dc65600710494263b4c2a1992c780b9",
+      "deliverySha256": "40db28d59edede08ef250cdfe4b6b5b21dc65600710494263b4c2a1992c780b9"
+    },
+    {
+      "file": "media/game-ambient.mp4",
+      "bytes": 311328,
+      "sha256": "8234815d61c96da96d7d1ee001d95e2ef4b84d6d2a9cb076c756d48e97502bb1",
+      "deliverySha256": "8234815d61c96da96d7d1ee001d95e2ef4b84d6d2a9cb076c756d48e97502bb1"
+    },
+    {
+      "file": "media/game-original.mp4",
+      "bytes": 4420943,
+      "sha256": "0dd061d7a732eb7c7aabbb5787cdd88d29df83828af0a40fd1bf27bd5a1e6687",
+      "deliverySha256": "0dd061d7a732eb7c7aabbb5787cdd88d29df83828af0a40fd1bf27bd5a1e6687"
+    },
+    {
+      "file": "media/model-ending.mov",
+      "bytes": 119511965,
+      "sha256": "e7ccfd8d073a16c489b46b2ea377b43032b7dab9d337f19526aa1e3ac9048110",
+      "deliverySha256": "e7ccfd8d073a16c489b46b2ea377b43032b7dab9d337f19526aa1e3ac9048110"
+    },
+    {
+      "file": "media/model-main.mov",
+      "bytes": 52627990,
+      "sha256": "44163fe9ee81993e5eb7bce5149306a28856bc2c706d640c3f0898c294b399d3",
+      "deliverySha256": "44163fe9ee81993e5eb7bce5149306a28856bc2c706d640c3f0898c294b399d3"
+    },
+    {
+      "file": "media/narration-tiktok.wav",
+      "bytes": 1728044,
+      "sha256": "ed37ff3f461973ff9a7e5ad1581ae5f1740a2af487290ae887b4a7ead9fa3b52",
+      "deliverySha256": "ed37ff3f461973ff9a7e5ad1581ae5f1740a2af487290ae887b4a7ead9fa3b52"
+    },
+    {
+      "file": "media/picture-tiktok.mov",
+      "bytes": 129674318,
+      "sha256": "bcd150a12c48498102dc87b8c345673d07010092b83dd12475b361cc82d422c3",
+      "deliverySha256": "bcd150a12c48498102dc87b8c345673d07010092b83dd12475b361cc82d422c3"
+    },
+    {
+      "file": "media/reference-tiktok.wav",
+      "bytes": 1728102,
+      "sha256": "1ff37129186af660751297cbe722d61820cfa0d11bc0c962a49f6bc70be39f00",
+      "deliverySha256": "1ff37129186af660751297cbe722d61820cfa0d11bc0c962a49f6bc70be39f00"
+    },
+    {
+      "file": "media/sfx.wav",
+      "bytes": 1728044,
+      "sha256": "8efd111685df1cb303b81102d325a8d6796aaf1153224e160b9bc8008416cbdb",
+      "deliverySha256": "8efd111685df1cb303b81102d325a8d6796aaf1153224e160b9bc8008416cbdb"
+    },
+    {
+      "file": "media/voice-clearance.wav",
+      "bytes": 129068,
+      "sha256": "f6dfa6c52a3135031a51b433837859f839b40ac52045415d46ffe18a6571e046",
+      "deliverySha256": "f6dfa6c52a3135031a51b433837859f839b40ac52045415d46ffe18a6571e046"
+    },
+    {
+      "file": "media/voice-follow.wav",
+      "bytes": 430124,
+      "sha256": "c9f12e43ca5eb343723564260dca3b0f15d464b2ae62711b81cb2718e41e1f62",
+      "deliverySha256": "c9f12e43ca5eb343723564260dca3b0f15d464b2ae62711b81cb2718e41e1f62"
+    },
+    {
+      "file": "media/voice-question.wav",
+      "bytes": 155692,
+      "sha256": "f8e93970998a418f4dcf7c6e2f0aba234bda771775eaa3e0d8f3642e3faaf060",
+      "deliverySha256": "f8e93970998a418f4dcf7c6e2f0aba234bda771775eaa3e0d8f3642e3faaf060"
+    },
+    {
+      "file": "models/ending-schedule.csv",
+      "bytes": 13743,
+      "sha256": "825d8cf837541c186413978351eefeb210acff4c18ed0f2776b4921504219cd1",
+      "deliverySha256": "825d8cf837541c186413978351eefeb210acff4c18ed0f2776b4921504219cd1"
+    },
+    {
+      "file": "models/main-schedule.csv",
+      "bytes": 6049,
+      "sha256": "99a191513193dc4d38ca504bbf4cdf569224d35a467823e5cc5be123c58bf9b1",
+      "deliverySha256": "99a191513193dc4d38ca504bbf4cdf569224d35a467823e5cc5be123c58bf9b1"
+    },
+    {
+      "file": "photocraft-stage/scaterush-revision.pcraft",
+      "bytes": 2735693,
+      "sha256": "e6ddf9ecaecbe48591c8721f8417b3b2ba3fe7298c64acf75f8e8170e29f55c4",
+      "deliverySha256": "e6ddf9ecaecbe48591c8721f8417b3b2ba3fe7298c64acf75f8e8170e29f55c4"
+    },
+    {
+      "file": "photocraft-stage/scaterush-revision.png",
+      "bytes": 341055,
+      "sha256": "52fab7432a52d97b2c2d0a1c3c4905e92230972090f946ff8e2c9227aea98ca1",
+      "deliverySha256": "52fab7432a52d97b2c2d0a1c3c4905e92230972090f946ff8e2c9227aea98ca1"
+    },
+    {
+      "file": "projects/scaterush-cover-reopened.pcraft",
+      "bytes": 2735699,
+      "sha256": "77a5f3750a7e7f41ef87d400b2beec58c21920de3a184d6eb5c272d3e3b3d5ec",
+      "deliverySha256": "77a5f3750a7e7f41ef87d400b2beec58c21920de3a184d6eb5c272d3e3b3d5ec"
+    },
+    {
+      "file": "projects/scaterush-revision.ecproj",
+      "bytes": 494359,
+      "sha256": "87ad23ce490490ec2926e6e64392d15e81ddc8053232bab698a826d1ba65f2b4",
+      "deliverySha256": "87ad23ce490490ec2926e6e64392d15e81ddc8053232bab698a826d1ba65f2b4"
+    },
+    {
+      "file": "projects/scaterush-voice-sfx.fcproj",
+      "bytes": 17587,
+      "sha256": "7a23689e1d23808f1807769270fd62cf00973361deb9a63a0c278bcf92102d80",
+      "deliverySha256": "7a23689e1d23808f1807769270fd62cf00973361deb9a63a0c278bcf92102d80"
+    },
+    {
+      "file": "qa/audio-binding.json",
+      "bytes": 1683,
+      "sha256": "a476b87be509ca6801cfd605e052095b58d4c5d539b1a771069d41ec935b2c10",
+      "deliverySha256": "a476b87be509ca6801cfd605e052095b58d4c5d539b1a771069d41ec935b2c10"
+    },
+    {
+      "file": "qa/audio-reference.json",
+      "bytes": 770,
+      "sha256": "4ffb3e256bca550a6c88763288cba6952d0f819d898c04a7b9ea66f8aa786ff1",
+      "deliverySha256": "4ffb3e256bca550a6c88763288cba6952d0f819d898c04a7b9ea66f8aa786ff1"
+    },
+    {
+      "file": "qa/cover-binding.json",
+      "bytes": 560,
+      "sha256": "2fe20ceb3b9323d3d6ed0ea03918e2f5c5d6ba73b72548791c9ff0ea73c23ef6",
+      "deliverySha256": "2fe20ceb3b9323d3d6ed0ea03918e2f5c5d6ba73b72548791c9ff0ea73c23ef6"
+    },
+    {
+      "file": "qa/delivery-cover.png",
+      "bytes": 341055,
+      "sha256": "52fab7432a52d97b2c2d0a1c3c4905e92230972090f946ff8e2c9227aea98ca1",
+      "deliverySha256": "52fab7432a52d97b2c2d0a1c3c4905e92230972090f946ff8e2c9227aea98ca1"
+    },
+    {
+      "file": "qa/delivery-ec-media.json",
+      "bytes": 673,
+      "sha256": "f0183420ad11d6bee9a7383ec145de19ad86362e0fcc489cadcb2c1146426142",
+      "deliverySha256": "f0183420ad11d6bee9a7383ec145de19ad86362e0fcc489cadcb2c1146426142"
+    },
+    {
+      "file": "qa/delivery-ec-render.json",
+      "bytes": 670,
+      "sha256": "1f1d4ab58b277bb05b8394a3646647d1c33d33f9a6323f7159b7297077aff2bc",
+      "deliverySha256": "1f1d4ab58b277bb05b8394a3646647d1c33d33f9a6323f7159b7297077aff2bc"
+    },
+    {
+      "file": "qa/delivery-ec.png",
+      "bytes": 404178,
+      "sha256": "236ee9a193ff3fe05df1f1a37d7a1cc96e49b6e2cf77bf8b0f4b9ec9962c9a81",
+      "deliverySha256": "236ee9a193ff3fe05df1f1a37d7a1cc96e49b6e2cf77bf8b0f4b9ec9962c9a81"
+    },
+    {
+      "file": "qa/delivery-fc-media.json",
+      "bytes": 1317,
+      "sha256": "c0ae661e73da5473115fe7648a415e316b37383823f6d053aaff44581cd4d3e1",
+      "deliverySha256": "c0ae661e73da5473115fe7648a415e316b37383823f6d053aaff44581cd4d3e1"
+    },
+    {
+      "file": "qa/delivery-fc-render.json",
+      "bytes": 554,
+      "sha256": "0eafd37c9e75f00b1af16efca7214a9a244f33ae80bcaa1c2c1bb9c8c52cc4cb",
+      "deliverySha256": "0eafd37c9e75f00b1af16efca7214a9a244f33ae80bcaa1c2c1bb9c8c52cc4cb"
+    },
+    {
+      "file": "qa/delivery-fc.png",
+      "bytes": 535672,
+      "sha256": "6dd2c10dcb59f6e827aa84c1016f53876f592354a164fbbf7942e003f569cd0c",
+      "deliverySha256": "6dd2c10dcb59f6e827aa84c1016f53876f592354a164fbbf7942e003f569cd0c"
+    },
+    {
+      "file": "qa/delivery-pc-info.json",
+      "bytes": 5933,
+      "sha256": "bdec0a67ff7b926a08f6597cf2f45bdfd137df3d58e0195af0ca159565b061f7",
+      "deliverySha256": "bdec0a67ff7b926a08f6597cf2f45bdfd137df3d58e0195af0ca159565b061f7"
+    },
+    {
+      "file": "qa/delivery-pc-render.json",
+      "bytes": 468,
+      "sha256": "1f5ac1d9134b7cd58f0e51ebd8c58b35a77ec9f7f7de470d2b276318812b6e93",
+      "deliverySha256": "1f5ac1d9134b7cd58f0e51ebd8c58b35a77ec9f7f7de470d2b276318812b6e93"
+    },
+    {
+      "file": "qa/delivery-pc-save.json",
+      "bytes": 385,
+      "sha256": "70adf07e4c298b699542d3b45f2e07740d07a538b93a5793f59aa75a529e1ca9",
+      "deliverySha256": "70adf07e4c298b699542d3b45f2e07740d07a538b93a5793f59aa75a529e1ca9"
+    },
+    {
+      "file": "qa/ec-build.json",
+      "bytes": 3598,
+      "sha256": "ec7b385284c755c5ff938d360e0d8ea2ca78c9b1ecaf060f653eed23a3d9934f",
+      "deliverySha256": "ec7b385284c755c5ff938d360e0d8ea2ca78c9b1ecaf060f653eed23a3d9934f"
+    },
+    {
+      "file": "qa/ec-render.json",
+      "bytes": 1496,
+      "sha256": "675384ee9266c6c15755fda9d2c708a4922da04736d1f6fd1792725faca430d5",
+      "deliverySha256": "675384ee9266c6c15755fda9d2c708a4922da04736d1f6fd1792725faca430d5"
+    },
+    {
+      "file": "qa/fc-build.json",
+      "bytes": 539,
+      "sha256": "1787ce08aeab92ad5755b1d75e8fb474fb42455fae36a377cef5ec76af76c27d",
+      "deliverySha256": "1787ce08aeab92ad5755b1d75e8fb474fb42455fae36a377cef5ec76af76c27d"
+    },
+    {
+      "file": "qa/fc-export.json",
+      "bytes": 1150,
+      "sha256": "d48256805dd3347ee20553cd39a043f78fa2105a13149bfebe8cb3ffa33b7a32",
+      "deliverySha256": "d48256805dd3347ee20553cd39a043f78fa2105a13149bfebe8cb3ffa33b7a32"
+    },
+    {
+      "file": "qa/fc-place.json",
+      "bytes": 546,
+      "sha256": "75c249307ba33a8371d28c597affbd8f958610269e88ac7607b8b0e2a9c24613",
+      "deliverySha256": "75c249307ba33a8371d28c597affbd8f958610269e88ac7607b8b0e2a9c24613"
+    },
+    {
+      "file": "qa/final/0.1.png",
+      "bytes": 215257,
+      "sha256": "094d5bb163de5d0b5143c1a6dffba081d41c0a5245dcd0527ea36d6b032beb16",
+      "deliverySha256": "094d5bb163de5d0b5143c1a6dffba081d41c0a5245dcd0527ea36d6b032beb16"
+    },
+    {
+      "file": "qa/final/0.2.png",
+      "bytes": 243514,
+      "sha256": "8abb212daa863b501bfbfa9d64189b4757496b42aecda8ace40283c368faebcc",
+      "deliverySha256": "8abb212daa863b501bfbfa9d64189b4757496b42aecda8ace40283c368faebcc"
+    },
+    {
+      "file": "qa/final/0.3.png",
+      "bytes": 269238,
+      "sha256": "d7a18d3f010398f9b53c318d20f7d198e54b2e30a325263fb083e8b5c5af4325",
+      "deliverySha256": "d7a18d3f010398f9b53c318d20f7d198e54b2e30a325263fb083e8b5c5af4325"
+    },
+    {
+      "file": "qa/final/0.4.png",
+      "bytes": 290681,
+      "sha256": "bdbb1c1d300e058b547dde60a87887ed5711689e0c241cf1a5efc0da9fbe3d63",
+      "deliverySha256": "bdbb1c1d300e058b547dde60a87887ed5711689e0c241cf1a5efc0da9fbe3d63"
+    },
+    {
+      "file": "qa/final/0.5.png",
+      "bytes": 316561,
+      "sha256": "d06926f6da8028870a27ce0e95d32ff12056c8a3c801279a4f7e42f19633c5d7",
+      "deliverySha256": "d06926f6da8028870a27ce0e95d32ff12056c8a3c801279a4f7e42f19633c5d7"
+    },
+    {
+      "file": "qa/final/0.5667.png",
+      "bytes": 314790,
+      "sha256": "a35de8333532f1e93f6962c5b44abf0ecf5e480ef71b4716806ae2513fe80348",
+      "deliverySha256": "a35de8333532f1e93f6962c5b44abf0ecf5e480ef71b4716806ae2513fe80348"
+    },
+    {
+      "file": "qa/final/0.6333.png",
+      "bytes": 288986,
+      "sha256": "4f99efacdc46075b7da91066f51994745cc6c71ec2443b03de91cbe8a878e402",
+      "deliverySha256": "4f99efacdc46075b7da91066f51994745cc6c71ec2443b03de91cbe8a878e402"
+    },
+    {
+      "file": "qa/final/0.8.png",
+      "bytes": 376545,
+      "sha256": "c0bc297c5da84d38ff1373fa5f48c529e0fe645d82d213d64ad48da4405cb29e",
+      "deliverySha256": "c0bc297c5da84d38ff1373fa5f48c529e0fe645d82d213d64ad48da4405cb29e"
+    },
+    {
+      "file": "qa/final/1.3.png",
+      "bytes": 526979,
+      "sha256": "3266f271e54eb3b09d264e6a2347c32f14a1f1e948b6116f1dd51b861d2a43df",
+      "deliverySha256": "3266f271e54eb3b09d264e6a2347c32f14a1f1e948b6116f1dd51b861d2a43df"
+    },
+    {
+      "file": "qa/final/1.4667.png",
+      "bytes": 558904,
+      "sha256": "b955f3fdc9a1d6f15af802444486aff88d444f5a639b45074d228130cf0ca915",
+      "deliverySha256": "b955f3fdc9a1d6f15af802444486aff88d444f5a639b45074d228130cf0ca915"
+    },
+    {
+      "file": "qa/final/1.5333.png",
+      "bytes": 543119,
+      "sha256": "e11602f644f3ecba0e09471f0516b58196dc04978dab7fef71f1146e4f5be383",
+      "deliverySha256": "e11602f644f3ecba0e09471f0516b58196dc04978dab7fef71f1146e4f5be383"
+    },
+    {
+      "file": "qa/final/1.6.png",
+      "bytes": 501562,
+      "sha256": "eed2193172ae27903e2f63eaad7b493110ee64bb272beb43c93c47331d134f90",
+      "deliverySha256": "eed2193172ae27903e2f63eaad7b493110ee64bb272beb43c93c47331d134f90"
+    },
+    {
+      "file": "qa/final/1.7.png",
+      "bytes": 486891,
+      "sha256": "012f28fbc8da31b759026c8f013961f6cd7fd4b832683c071655163321d3c479",
+      "deliverySha256": "012f28fbc8da31b759026c8f013961f6cd7fd4b832683c071655163321d3c479"
+    },
+    {
+      "file": "qa/final/1.8.png",
+      "bytes": 509563,
+      "sha256": "70dd9bd318eb136857339ed5502cb2383ccb617f10f8d729278d5e62a1cac82d",
+      "deliverySha256": "70dd9bd318eb136857339ed5502cb2383ccb617f10f8d729278d5e62a1cac82d"
+    },
+    {
+      "file": "qa/final/1.9.png",
+      "bytes": 486409,
+      "sha256": "6844df8ef7bc9110da0f1e6f52a479e8a93222bbe7d6fe58c3a10551ca9905b0",
+      "deliverySha256": "6844df8ef7bc9110da0f1e6f52a479e8a93222bbe7d6fe58c3a10551ca9905b0"
+    },
+    {
+      "file": "qa/final/1.png",
+      "bytes": 448150,
+      "sha256": "8942150e2edefdf3cfc49849328fc9f5f4e5a6727b504dea73983eef29f937f7",
+      "deliverySha256": "8942150e2edefdf3cfc49849328fc9f5f4e5a6727b504dea73983eef29f937f7"
+    },
+    {
+      "file": "qa/final/2.1.png",
+      "bytes": 494706,
+      "sha256": "92adbdbcda16c257c11527b401d75df0bb6cf90f949987b2718ab5d495a28fe1",
+      "deliverySha256": "92adbdbcda16c257c11527b401d75df0bb6cf90f949987b2718ab5d495a28fe1"
+    },
+    {
+      "file": "qa/final/2.4.png",
+      "bytes": 516932,
+      "sha256": "484826f7b37943474a8e37b4bb6e34257285574e1366ffae9b5efe2b56127019",
+      "deliverySha256": "484826f7b37943474a8e37b4bb6e34257285574e1366ffae9b5efe2b56127019"
+    },
+    {
+      "file": "qa/final/2.8.png",
+      "bytes": 214543,
+      "sha256": "11699684348500ca7d4c6e35e0410670700bcd3b5bd27771fd3f875aaa06a181",
+      "deliverySha256": "11699684348500ca7d4c6e35e0410670700bcd3b5bd27771fd3f875aaa06a181"
+    },
+    {
+      "file": "qa/final/2.9667.png",
+      "bytes": 294479,
+      "sha256": "f56b4cb84b4f4f6525c7714724e068f7a2e6e1f64517ea68a6328dd317a8d77c",
+      "deliverySha256": "f56b4cb84b4f4f6525c7714724e068f7a2e6e1f64517ea68a6328dd317a8d77c"
+    },
+    {
+      "file": "qa/final/3.0333.png",
+      "bytes": 425308,
+      "sha256": "3dc094338cd19c5fea246e8e6cf32d949ea57a97d54287eef919eb5670b0d060",
+      "deliverySha256": "3dc094338cd19c5fea246e8e6cf32d949ea57a97d54287eef919eb5670b0d060"
+    },
+    {
+      "file": "qa/final/4.5.png",
+      "bytes": 582588,
+      "sha256": "73acb1ec8ac30b0be10cc662243bfb78c1683d1a8f28d368c8e2c7f6944ac1bd",
+      "deliverySha256": "73acb1ec8ac30b0be10cc662243bfb78c1683d1a8f28d368c8e2c7f6944ac1bd"
+    },
+    {
+      "file": "qa/final/5.8.png",
+      "bytes": 541574,
+      "sha256": "fe92434e7b8215380f70b01f5033147f97ec3856029705c5a40195702421d3c1",
+      "deliverySha256": "fe92434e7b8215380f70b01f5033147f97ec3856029705c5a40195702421d3c1"
+    },
+    {
+      "file": "qa/final/5.9667.png",
+      "bytes": 641732,
+      "sha256": "7432d187dc8760c6ecda8713161fb94ae0b4b1766425c9915c285b49aa53b433",
+      "deliverySha256": "7432d187dc8760c6ecda8713161fb94ae0b4b1766425c9915c285b49aa53b433"
+    },
+    {
+      "file": "qa/final-format-and-decode.json",
+      "bytes": 738,
+      "sha256": "57e9eb97ff845087aaa440b44cc866de186a908c2cdbb230e5ff08e1150c2775",
+      "deliverySha256": "57e9eb97ff845087aaa440b44cc866de186a908c2cdbb230e5ff08e1150c2775"
+    },
+    {
+      "file": "qa/final-full-decode.json",
+      "bytes": 470,
+      "sha256": "642b483bed639b927a5f753a13137b78be9564f877921b068009b6d3f7f3a5cd",
+      "deliverySha256": "642b483bed639b927a5f753a13137b78be9564f877921b068009b6d3f7f3a5cd"
+    },
+    {
+      "file": "qa/final-levels.json",
+      "bytes": 13046,
+      "sha256": "4f50f04987b87cf6792c1b022899b7f9c8409b026d4c41b72dbe067843016d66",
+      "deliverySha256": "4f50f04987b87cf6792c1b022899b7f9c8409b026d4c41b72dbe067843016d66"
+    },
+    {
+      "file": "qa/final-probe.json",
+      "bytes": 5822,
+      "sha256": "59f349ec25aa6b7c69993399155494245b9c9ef3b936e6ca2003f3e54cce8db0",
+      "deliverySha256": "59f349ec25aa6b7c69993399155494245b9c9ef3b936e6ca2003f3e54cce8db0"
+    },
+    {
+      "file": "qa/layout.json",
+      "bytes": 3417,
+      "sha256": "ab68146fbdead9f82de675444be6ca027cb54ed44a89459e4a1e1d56cae378ba",
+      "deliverySha256": "ab68146fbdead9f82de675444be6ca027cb54ed44a89459e4a1e1d56cae378ba"
+    },
+    {
+      "file": "qa/model-binding-main.json",
+      "bytes": 2226,
+      "sha256": "c5980d3545baa4441792fb4ad553c30078a60841e683b7078063771a2f14e302",
+      "deliverySha256": "c5980d3545baa4441792fb4ad553c30078a60841e683b7078063771a2f14e302"
+    },
+    {
+      "file": "qa/model-main-alpha-bounds.json",
+      "bytes": 324,
+      "sha256": "6a834cb5a73fa90d5a263a12742e2686f5944df0b7b5a821848d1277cc585765",
+      "deliverySha256": "6a834cb5a73fa90d5a263a12742e2686f5944df0b7b5a821848d1277cc585765"
+    },
+    {
+      "file": "qa/model-main-alpha-check.json",
+      "bytes": 926,
+      "sha256": "fc5b15d4823c106ce15a20e2706987181a00cacd71b1b53a54bf482924e05aa5",
+      "deliverySha256": "fc5b15d4823c106ce15a20e2706987181a00cacd71b1b53a54bf482924e05aa5"
+    },
+    {
+      "file": "qa/model-main-native-render.json",
+      "bytes": 1225,
+      "sha256": "7c1568771bf38592766f12c75431231830de5f51435f186638eb19cda8786af5",
+      "deliverySha256": "7c1568771bf38592766f12c75431231830de5f51435f186638eb19cda8786af5"
+    },
+    {
+      "file": "qa/model-main-prores.json",
+      "bytes": 671,
+      "sha256": "54cf763fcd15043f0eaa6977ff449a7eeaa3e6196cb315737c84982ca1ce5eb5",
+      "deliverySha256": "54cf763fcd15043f0eaa6977ff449a7eeaa3e6196cb315737c84982ca1ce5eb5"
+    },
+    {
+      "file": "qa/narration-tiktok.json",
+      "bytes": 1242,
+      "sha256": "d1079091f5708630d45066a8bd4b5eb6b6e3ec41076138febe606fb36a707a24",
+      "deliverySha256": "d1079091f5708630d45066a8bd4b5eb6b6e3ec41076138febe606fb36a707a24"
+    },
+    {
+      "file": "qa/narration.json",
+      "bytes": 842,
+      "sha256": "6cd078d984f33d4df18f6fbe6bc4fe70c10fcbdac5a96c5182200f33b6e9be1b",
+      "deliverySha256": "6cd078d984f33d4df18f6fbe6bc4fe70c10fcbdac5a96c5182200f33b6e9be1b"
+    },
+    {
+      "file": "qa/native-dependencies.json",
+      "bytes": 2041,
+      "sha256": "b86db87f17365e706a2e1f8f6977c7b058a3131a7ec7e03424c751f5bd15d0e4",
+      "deliverySha256": "b86db87f17365e706a2e1f8f6977c7b058a3131a7ec7e03424c751f5bd15d0e4"
+    },
+    {
+      "file": "qa/pc-build.json",
+      "bytes": 3643,
+      "sha256": "1589ec8a4ed2b083d4a44f321a7bfba9c36e358cbe0a75f42d6df8bd33f82e1f",
+      "deliverySha256": "1589ec8a4ed2b083d4a44f321a7bfba9c36e358cbe0a75f42d6df8bd33f82e1f"
+    },
+    {
+      "file": "qa/pc-info.json",
+      "bytes": 5933,
+      "sha256": "5361492efceb91eb105365e21194afe48f1fefba4e98606383e7f468f126c76b",
+      "deliverySha256": "5361492efceb91eb105365e21194afe48f1fefba4e98606383e7f468f126c76b"
+    },
+    {
+      "file": "qa/pc-render.json",
+      "bytes": 488,
+      "sha256": "2d07c8ffe28d6834c14c4a98067aa3a020e93e4cfc11064ae7a5c20427fd35ee",
+      "deliverySha256": "2d07c8ffe28d6834c14c4a98067aa3a020e93e4cfc11064ae7a5c20427fd35ee"
+    },
+    {
+      "file": "qa/provenance.json",
+      "bytes": 2400,
+      "sha256": "7dc6b09b497daa792803eca3b272f30d09687257eafd7a6154ad3adf21029955",
+      "deliverySha256": "7dc6b09b497daa792803eca3b272f30d09687257eafd7a6154ad3adf21029955"
+    },
+    {
+      "file": "qa/render-binding.json",
+      "bytes": 671,
+      "sha256": "4d694c7ad57b228fba77f34b9de61505b58493fe8d7a5ba72d82fe261cca091c",
+      "deliverySha256": "4d694c7ad57b228fba77f34b9de61505b58493fe8d7a5ba72d82fe261cca091c"
+    },
+    {
+      "file": "qa/whole-voice-aac-tiktok.json",
+      "bytes": 2142,
+      "sha256": "00706251c5a2799ade1fce1c1a2c650c42a3215522c5455856835864aab65b2d",
+      "deliverySha256": "00706251c5a2799ade1fce1c1a2c650c42a3215522c5455856835864aab65b2d"
+    },
+    {
+      "file": "source/AlphaBounds.java",
+      "bytes": 1872,
+      "sha256": "b1cf142ff08b4d759e793163986677b317fb20c7f6abb37147a0a5c3fd0f35cf",
+      "deliverySha256": "b1cf142ff08b4d759e793163986677b317fb20c7f6abb37147a0a5c3fd0f35cf"
+    },
+    {
+      "file": "source/AvatarCore.java",
+      "bytes": 9114,
+      "sha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+      "deliverySha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a"
+    },
+    {
+      "file": "source/audio.mjs",
+      "bytes": 3061,
+      "sha256": "fe9d9d0459a2a10d9f08c73d1420700f404f95b6c81dc0d5a13ad46aa2d0e43b",
+      "deliverySha256": "fe9d9d0459a2a10d9f08c73d1420700f404f95b6c81dc0d5a13ad46aa2d0e43b"
+    },
+    {
+      "file": "source/composition.jsx",
+      "bytes": 5507,
+      "sha256": "f19d98c5dd49ebdea5dd815ef6644d32fc8e5c217ae827d561ffe9ceb9e3ad96",
+      "deliverySha256": "f19d98c5dd49ebdea5dd815ef6644d32fc8e5c217ae827d561ffe9ceb9e3ad96"
+    },
+    {
+      "file": "source/cover-commands.json",
+      "bytes": 2361,
+      "sha256": "c30aca4909d8bc6f2166034b9f91658ebb07192dbafa32f65d745beb60bb0fe3",
+      "deliverySha256": "c30aca4909d8bc6f2166034b9f91658ebb07192dbafa32f65d745beb60bb0fe3"
+    },
+    {
+      "file": "source/cover.mjs",
+      "bytes": 2507,
+      "sha256": "f2222cfed8bb56b751f8aa90818654192757772105060084fe32975e9030d0f0",
+      "deliverySha256": "f2222cfed8bb56b751f8aa90818654192757772105060084fe32975e9030d0f0"
+    },
+    {
+      "file": "source/deliver.mjs",
+      "bytes": 8151,
+      "sha256": "eb25b4165d522afc191e45e68c0e1552ece3dc1947cf8637852005010a57cee0",
+      "deliverySha256": "eb25b4165d522afc191e45e68c0e1552ece3dc1947cf8637852005010a57cee0"
+    },
+    {
+      "file": "source/live2d-renderer-LICENSE.txt",
+      "bytes": 1065,
+      "sha256": "1108d5e6bbe9a2573e7fde064a7c08fed5ba6b49909488e9126341715a741a4b",
+      "deliverySha256": "1108d5e6bbe9a2573e7fde064a7c08fed5ba6b49909488e9126341715a741a4b"
+    },
+    {
+      "file": "source/metadata.json",
+      "bytes": 3596,
+      "sha256": "0c44c4e1205cb28f139163e13fda34556383a7a338a7b9f53eaa9649f3754d59",
+      "deliverySha256": "0c44c4e1205cb28f139163e13fda34556383a7a338a7b9f53eaa9649f3754d59"
+    },
+    {
+      "file": "source/model-cues-ending.json",
+      "bytes": 51706,
+      "sha256": "42d189b6e7d9c9c77c6935fcec1c555d863ca5682720df4129f201aefc760c7b",
+      "deliverySha256": "42d189b6e7d9c9c77c6935fcec1c555d863ca5682720df4129f201aefc760c7b"
+    },
+    {
+      "file": "source/model-cues-main.json",
+      "bytes": 23388,
+      "sha256": "53047d2fc65c6b8949e6e2099ebf728afb61085466c603188a3b15ca1912059f",
+      "deliverySha256": "53047d2fc65c6b8949e6e2099ebf728afb61085466c603188a3b15ca1912059f"
+    },
+    {
+      "file": "source/model-cues-opening.json",
+      "bytes": 37284,
+      "sha256": "72135dfc1a5e54c0a6534a62af19dc379e0a545f60999115667d77748e0c50ab",
+      "deliverySha256": "72135dfc1a5e54c0a6534a62af19dc379e0a545f60999115667d77748e0c50ab"
+    },
+    {
+      "file": "source/model.mjs",
+      "bytes": 5164,
+      "sha256": "1d25619dd54bd6dbd4a9534fba08349fbe4a57a762886a1d7a6f84cbbfa8730c",
+      "deliverySha256": "1d25619dd54bd6dbd4a9534fba08349fbe4a57a762886a1d7a6f84cbbfa8730c"
+    },
+    {
+      "file": "source/narration-cues.json",
+      "bytes": 257,
+      "sha256": "22a6e651b1ccdd97d72595d5f45e9b9fdcb43ac49a3bfead86ad4c43727b80dd",
+      "deliverySha256": "22a6e651b1ccdd97d72595d5f45e9b9fdcb43ac49a3bfead86ad4c43727b80dd"
+    },
+    {
+      "file": "source/native.mjs",
+      "bytes": 2177,
+      "sha256": "97061581386db9f4925c01ab3a7bb62509237fabec13f86fc9162351a2a285b9",
+      "deliverySha256": "97061581386db9f4925c01ab3a7bb62509237fabec13f86fc9162351a2a285b9"
+    },
+    {
+      "file": "source/picture.mjs",
+      "bytes": 4767,
+      "sha256": "8c483a5e379ed8b07351c1fe3273495ea9545f100b48a7bc52092ebfddc68dc4",
+      "deliverySha256": "8c483a5e379ed8b07351c1fe3273495ea9545f100b48a7bc52092ebfddc68dc4"
+    },
+    {
+      "file": "source/plan.json",
+      "bytes": 2211,
+      "sha256": "93e441232079db9ebc9ca84e83b45a2d982be56cdbd47f47bc1ec71fdd6a068e",
+      "deliverySha256": "93e441232079db9ebc9ca84e83b45a2d982be56cdbd47f47bc1ec71fdd6a068e"
+    },
+    {
+      "file": "source/provenance.mjs",
+      "bytes": 2408,
+      "sha256": "75f30bd29ac9eb23a2abc4509b63ec3e6cb84eefad702920e29bb7211c319288",
+      "deliverySha256": "75f30bd29ac9eb23a2abc4509b63ec3e6cb84eefad702920e29bb7211c319288"
+    },
+    {
+      "file": "source/render.mjs",
+      "bytes": 2151,
+      "sha256": "35f9693e2c11e86d1fafd4a3830d10f338eef0438e8bdb0ac12bd5f93508ef29",
+      "deliverySha256": "35f9693e2c11e86d1fafd4a3830d10f338eef0438e8bdb0ac12bd5f93508ef29"
+    },
+    {
+      "file": "source/tiktok-caption.txt",
+      "bytes": 245,
+      "sha256": "c994a06dc07c2bf398a12cbf724e63eca3adba7396ee8aea10d2c6f614ec610f",
+      "deliverySha256": "c994a06dc07c2bf398a12cbf724e63eca3adba7396ee8aea10d2c6f614ec610f"
+    },
+    {
+      "file": "source/verify-audio.mjs",
+      "bytes": 3533,
+      "sha256": "1a3b378725c76459d592ca533151f380022eb10e4f9676f34829ce705e528df2",
+      "deliverySha256": "1a3b378725c76459d592ca533151f380022eb10e4f9676f34829ce705e528df2"
+    },
+    {
+      "file": "source/verify.mjs",
+      "bytes": 1866,
+      "sha256": "033cf19008a07d74bac29fa9296df6afbb510e98cad4ba68b532af13b5869096",
+      "deliverySha256": "033cf19008a07d74bac29fa9296df6afbb510e98cad4ba68b532af13b5869096"
+    },
+    {
+      "file": "source/voice-clearance-query.json",
+      "bytes": 1116,
+      "sha256": "325fb25304702d9f9a4016d23cd6ce52296b5fbd20b2482da490906e83946ff8",
+      "deliverySha256": "325fb25304702d9f9a4016d23cd6ce52296b5fbd20b2482da490906e83946ff8"
+    },
+    {
+      "file": "source/voice-question-query.json",
+      "bytes": 1353,
+      "sha256": "7b6cbf0660cbe2d24c1e8b7e11334cc7c574f9d652bc3edc9dac96f2283a1d89",
+      "deliverySha256": "7b6cbf0660cbe2d24c1e8b7e11334cc7c574f9d652bc3edc9dac96f2283a1d89"
+    },
+    {
+      "file": "source/voice.mjs",
+      "bytes": 2652,
+      "sha256": "b6b50e9b623d184784b591e2295ce3ef1cad4ca5a02b4039bc903ef12c861326",
+      "deliverySha256": "b6b50e9b623d184784b591e2295ce3ef1cad4ca5a02b4039bc903ef12c861326"
+    },
+    {
+      "file": "videos/scaterush-tiktok-voice-sfx.mp4",
+      "bytes": 3187874,
+      "sha256": "c43434bc1250160faf86f092695bc5906d4fa2eccc43c7be58905fa29d2b5521",
+      "deliverySha256": "c43434bc1250160faf86f092695bc5906d4fa2eccc43c7be58905fa29d2b5521"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "videos/scaterush-tiktok-voice-sfx.mp4",
+      "bytes": 3187874,
+      "sha256": "c43434bc1250160faf86f092695bc5906d4fa2eccc43c7be58905fa29d2b5521"
+    },
+    {
+      "file": "covers/scaterush-revision.png",
+      "bytes": 341055,
+      "sha256": "52fab7432a52d97b2c2d0a1c3c4905e92230972090f946ff8e2c9227aea98ca1"
+    }
+  ],
+  "nativeReopenedSavedRendered": true,
+  "missingMedia": 0,
+  "dependenciesSha256": "b86db87f17365e706a2e1f8f6977c7b058a3131a7ec7e03424c751f5bd15d0e4",
+  "rootFinalFReview": false,
+  "nativeMusicConfigured": false,
+  "beatSyncComplete": false,
+  "oldReservationStopConfirmed": true,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "published": false,
+  "oldReservationCancellation": {
+    "receipt": "2026-10-28-scaterush124-owner-deleted.json",
+    "sha256": "9551f9b9ad1a41ce3b0fa3b9eed7d1fbec9fe0945ee4603f910345cb51622075",
+    "rootVerifiedAt": "2026-10-27T21:43:07+09:00"
+  }
+}

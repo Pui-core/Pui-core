@@ -1,0 +1,71 @@
+{
+  "issue": 132,
+  "previousProductionIssue": 124,
+  "previousRevision": 2,
+  "previousUnmodified": true,
+  "records": [
+    {
+      "file": "media/game-original.mp4",
+      "sha256": "0dd061d7a732eb7c7aabbb5787cdd88d29df83828af0a40fd1bf27bd5a1e6687",
+      "wholeAssetReused": true
+    },
+    {
+      "file": "media/voice-follow.wav",
+      "sha256": "c9f12e43ca5eb343723564260dca3b0f15d464b2ae62711b81cb2718e41e1f62",
+      "wholeAssetReused": true
+    },
+    {
+      "file": "media/model-ending.mov",
+      "sha256": "e7ccfd8d073a16c489b46b2ea377b43032b7dab9d337f19526aa1e3ac9048110",
+      "wholeAssetReused": true
+    }
+  ],
+  "newQuestionAndClearance": {
+    "model": "Owner specified Revenant_Natural",
+    "modelMocSha256": "6b63e0fcd6c8bc5142689ab5c0d2340b2fe59d5124e57290dd438c2ec01ad03e",
+    "coreJarSha256": "5458a64ebe33b38350de1437399343b0d502f2353a34a97da76d56d118c0d186",
+    "coreNativeSha256": "71d5757025cd31c61be0d52ad79d4cd0de0465e1df6c4508c4fde70207613985",
+    "rendererSha256": "f2dcf18d38f05d3bfa30565f5e0b59903710ee881c5302b6676b0002c269ec3a",
+    "frames": 66,
+    "output": [
+      0.6,
+      2.8
+    ],
+    "coreGeometry": true,
+    "actualRenderExit": 0,
+    "movSha256": "44163fe9ee81993e5eb7bce5149306a28856bc2c706d640c3f0898c294b399d3",
+    "voiceCues": [
+      {
+        "id": "question",
+        "at": 0.65,
+        "file": "voice-question.wav",
+        "sha256": "f8e93970998a418f4dcf7c6e2f0aba234bda771775eaa3e0d8f3642e3faaf060"
+      },
+      {
+        "id": "clearance",
+        "at": 1.65,
+        "file": "voice-clearance.wav",
+        "sha256": "f6dfa6c52a3135031a51b433837859f839b40ac52045415d46ffe18a6571e046"
+      }
+    ],
+    "scheduleSha256": "99a191513193dc4d38ca504bbf4cdf569224d35a467823e5cc5be123c58bf9b1",
+    "originalsUnchanged": true,
+    "oldAvatarLoop": false,
+    "limitation": "Software triangle/mask sampling approximation, not GPU/camera/physics tracking"
+  },
+  "follow": {
+    "output": [
+      3,
+      6
+    ],
+    "usedFrames": 90,
+    "wholeOriginalVoice": true,
+    "oldVoiceOffset": 0.09999999999999964,
+    "newVoiceOffset": 0.10000000000000009,
+    "exactOffsetPreserved": true,
+    "movSha256": "e7ccfd8d073a16c489b46b2ea377b43032b7dab9d337f19526aa1e3ac9048110",
+    "scheduleSha256": "825d8cf837541c186413978351eefeb210acff4c18ed0f2776b4921504219cd1"
+  },
+  "rawModelOrSdkBundled": false,
+  "nativeMusicConfigured": false
+}
