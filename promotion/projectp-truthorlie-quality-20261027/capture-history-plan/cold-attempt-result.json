@@ -1,0 +1,93 @@
+{
+  "status": "HOLD_COLD_PREFLIGHT_TIMEOUT_NO_APP_DATA_READ_NO_BACKUP",
+  "rootAuthorization": "Cold read/new-private-backup/extract-compare/Ruby syntax only, after fresh Shutdown and consumer0; no boot/GUI/record/install/shutdown",
+  "remoteRoot": "/Users/pui-mac-core/codex-install/projectp129-history-cold-20261027T1500Z",
+  "startedUtc": "2026-10-27T15:04:09Z",
+  "finishedUtc": "2026-10-27T15:04:55Z",
+  "elapsedSeconds": 46,
+  "exit": 124,
+  "targetUdid": "6FC6BC4F-4CD9-4946-83F6-944ABAE9D15E",
+  "nativeRubySyntax": {
+    "files": [
+      "history-data-inspect-prepared.rb",
+      "cold-manifest-prepared.rb",
+      "target-consumers-prepared.rb",
+      "verify-cold.rb"
+    ],
+    "allFour": "Syntax OK",
+    "actualBehaviorNotVerified": true
+  },
+  "failure": {
+    "command": "xcrun simctl list devices --json",
+    "limitSeconds": 25,
+    "pid": 18368,
+    "ppid": 18256,
+    "uid": 501,
+    "birth": "Wed Oct 28 00:04:29 2026",
+    "termination": "TERM after PID/PPID/UID/birth/needle match, wait; no retry"
+  },
+  "cleanup": {
+    "helperPid": 18256,
+    "observedAbsentPids": [
+      18256,
+      18272,
+      18333,
+      18346,
+      18355,
+      18368
+    ],
+    "observedUtc": "2026-10-27T15:08:13Z",
+    "ownedResiduals": 0,
+    "noOtherProcessStopped": true
+  },
+  "targetState": {
+    "finalDirectPlistState": 1,
+    "interpretation": "Shutdown in device.plist only",
+    "registeredSimctlState": null,
+    "currentConsumerCheckExecuted": false,
+    "notUsedAsBackupGateSubstitute": true
+  },
+  "reached": {
+    "freshRegisteredState": false,
+    "getAppContainer": false,
+    "appDataRead": false,
+    "archive": false,
+    "extract": false,
+    "backupCreated": false,
+    "backupDirectoryEmpty": true,
+    "newUi": false
+  },
+  "actions": {
+    "sshReadAndPrivateUploads": true,
+    "simctlListReadAttempts": 1,
+    "retries": 0,
+    "boot": 0,
+    "gui": 0,
+    "record": 0,
+    "install": 0,
+    "shutdown": 0,
+    "appDataWrites": 0,
+    "oldRootWrites": 0,
+    "sharedServicesStopped": 0
+  },
+  "proof": {
+    "terminalArchiveSha256": "1c6986c66a7d45ee08cc2d736b23c91bb52d3126a3d40f0c5edc2934acd46a0a",
+    "remoteArchiveSha256": "1c6986c66a7d45ee08cc2d736b23c91bb52d3126a3d40f0c5edc2934acd46a0a",
+    "archiveShaMatches": true,
+    "rawPrivateOnly": true,
+    "terminalReceiptSha256": "b07e28046e77f371662ab18def20c8f32d47812feb20c3c358e9e92b7500d32b",
+    "cleanupReceiptSha256": "4dbeddd31c649106433d18e2737e9d9f2502af67e7bb97c8496ad0f5a118ce4b"
+  },
+  "limits": {
+    "strictWallClock600ForAllDirectIoNotVerified": true,
+    "actualWithin600": true,
+    "externalWatchdogRequiredForFutureStrictCap": true,
+    "deviceOsByteUnchangedNotClaimed": true
+  },
+  "video": {
+    "addedSeconds": 0,
+    "current269Unchanged": true,
+    "formal600": false,
+    "remaining330_3667": true
+  }
+}

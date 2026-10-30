@@ -1,0 +1,73 @@
+[
+  [
+    "shape.create",
+    {
+      "name": "Gold vote token",
+      "kind": "ellipse",
+      "rect": [
+        12,
+        12,
+        216,
+        216
+      ],
+      "fill": {
+        "gradient": {
+          "stops": [
+            [
+              0,
+              "#8C662D"
+            ],
+            [
+              0.4,
+              "#F0D797"
+            ],
+            [
+              0.7,
+              "#C29F5C"
+            ],
+            [
+              1,
+              "#795527"
+            ]
+          ],
+          "angle": 130
+        }
+      },
+      "stroke": {
+        "width": 4,
+        "color": "#E9CF96"
+      }
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "name": "Token inset ring",
+      "kind": "ellipse",
+      "rect": [
+        30,
+        30,
+        180,
+        180
+      ],
+      "fill": null,
+      "stroke": {
+        "width": 2,
+        "color": "#5D4424"
+      }
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "Vote identity",
+      "text": "票",
+      "x": 73,
+      "y": 155,
+      "font": "Yu Mincho",
+      "weight": 700,
+      "size": 90,
+      "color": "#3E2C18"
+    }
+  ]
+]

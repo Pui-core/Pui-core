@@ -1,0 +1,131 @@
+{
+  "issue": 129,
+  "status": "PASS_RULE_BLOCK_F_3CRAFT_REOPEN_SAVE_RENDER_MISSING0",
+  "destination": "/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/story-block",
+  "sourceRoot": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/production/story-block",
+  "projects": [
+    "projects/truthorlie129-rules-block44.ecproj",
+    "projects/truthorlie129-rules-block44.fcproj"
+  ],
+  "photoCraft": {
+    "native": "covers/editorial-board.pcraft",
+    "reopened": "projects/editorial-board-reopened.pcraft",
+    "pixelsIdentical": true
+  },
+  "dependencies": [
+    {
+      "project": "projects/truthorlie129-rules-block44.ecproj",
+      "key": "items.1.kind.path",
+      "file": "media/actual-app-artwork-background.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.ecproj",
+      "key": "items.2.kind.path",
+      "file": "media/editorial-board.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.ecproj",
+      "key": "items.3.kind.path",
+      "file": "media/model-opening.mov"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.ecproj",
+      "key": "items.4.kind.path",
+      "file": "media/round1-selected-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.ecproj",
+      "key": "items.5.kind.path",
+      "file": "media/round1-result-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.ecproj",
+      "key": "items.6.kind.path",
+      "file": "media/round1-score-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.ecproj",
+      "key": "items.7.kind.path",
+      "file": "media/round1-hi-cfr.mp4"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.ecproj",
+      "key": "items.8.kind.path",
+      "file": "media/round2-selected-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.ecproj",
+      "key": "items.9.kind.path",
+      "file": "media/round2-result-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.ecproj",
+      "key": "items.10.kind.path",
+      "file": "media/round2-score-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.ecproj",
+      "key": "items.11.kind.path",
+      "file": "media/round2-hi-cfr.mp4"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.fcproj",
+      "key": "project.items.5.kind.Media.media.File.path",
+      "file": "media/truthorlie129-rules-picture44.mp4"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.fcproj",
+      "key": "project.items.6.kind.Media.media.File.path",
+      "file": "media/narration-presented-stem.wav"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44.fcproj",
+      "key": "project.items.7.kind.Media.media.File.path",
+      "file": "media/background-cipher-stem.wav"
+    }
+  ],
+  "transforms": [
+    {
+      "file": "source/composition-story-block.jsx",
+      "sourceSha256": "b86e4a43d6aa1e07bf884a345da02e32d5bb1c12f5100385006fad4f01841390",
+      "deliverySha256": "833dcf47eb654eb2593ea4e14ad8bf5fed27a16cde352c94496a87c4889345db",
+      "reason": "Only native media paths relocated"
+    },
+    {
+      "file": "projects/truthorlie129-rules-block44.ecproj",
+      "sourceSha256": "2310d038cdae76b6b6f086aa2d7565bb487e95f14af18da8fa06b51a747b71f9",
+      "deliverySha256": "cdf77f4ee33cfd454d349e1d07872ac176689efbd4cc366f7ba123ca9a2061be",
+      "reason": "F relocation and native reopen/save"
+    },
+    {
+      "file": "projects/truthorlie129-rules-block44.fcproj",
+      "sourceSha256": "6cf207676dd937506b9dd704a2dbd838104c9423be02b693bb530897fd48aab5",
+      "deliverySha256": "7114f975c88a52df6fb1709db4a836fad31c6839399477c696c28c6951a12817",
+      "reason": "F relocation and native reopen/save"
+    }
+  ],
+  "checked": [
+    "ec-media",
+    "ec-frame",
+    "fc-media",
+    "fc-frame",
+    "pc-save",
+    "pc-frame"
+  ],
+  "missingMedia": 0,
+  "externalActiveDependencies": 0,
+  "movie": {
+    "file": "videos/truthorlie129-rules-block44-cipher.mp4",
+    "sha256": "948c5bfccf22e2b2002246b1fb6e54cedac559e6255a970bcb4e72ce8a9bef80",
+    "bytes": 5484842
+  },
+  "newVoiceCues": 9,
+  "newCoreFrames": 240,
+  "newCoreSeconds": 8,
+  "original75Unchanged": true,
+  "storyRootAccepted": false,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "notFull600SecondMaster": true,
+  "published": false
+}

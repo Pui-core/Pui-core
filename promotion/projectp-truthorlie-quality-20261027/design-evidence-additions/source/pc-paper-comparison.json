@@ -1,0 +1,125 @@
+[
+  [
+    "shape.create",
+    {
+      "name": "Quiet editorial ground",
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "fill": {
+        "gradient": {
+          "stops": [
+            [
+              0,
+              "#211B1C"
+            ],
+            [
+              0.618,
+              "#141315"
+            ],
+            [
+              1,
+              "#302720"
+            ]
+          ],
+          "angle": 115
+        }
+      }
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\design-evidence-additions\\media\\letter-local-before.png",
+      "scale": 65,
+      "fit": false,
+      "center": [
+        520,
+        565
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\design-evidence-additions\\media\\letter-local-after.png",
+      "scale": 65,
+      "fit": false,
+      "center": [
+        1400,
+        565
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "before tag",
+      "text": "中央に枠がある版",
+      "x": 240,
+      "y": 330,
+      "size": 37,
+      "color": "#E8D9BE",
+      "font": "Yu Mincho",
+      "weight": 700
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "after tag",
+      "text": "中央の枠を外した版",
+      "x": 1120,
+      "y": 330,
+      "size": 37,
+      "color": "#E8D9BE",
+      "font": "Yu Mincho",
+      "weight": 700
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "compare words before",
+      "text": "ローカルで遊ぶ",
+      "x": 285,
+      "y": 590,
+      "size": 55,
+      "color": "#251C16",
+      "font": "Yu Mincho",
+      "weight": 700
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "compare words after",
+      "text": "ローカルで遊ぶ",
+      "x": 1165,
+      "y": 590,
+      "size": 55,
+      "color": "#251C16",
+      "font": "Yu Mincho",
+      "weight": 700
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "comparison identity",
+      "text": "原画へ同じ比較用文字を重ねた説明図",
+      "x": 570,
+      "y": 930,
+      "size": 28,
+      "color": "#BEAC91",
+      "font": "Yu Gothic",
+      "weight": 700
+    }
+  ]
+]

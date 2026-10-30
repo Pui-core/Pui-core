@@ -1,0 +1,144 @@
+{
+  "issue": 129,
+  "status": "PASS_RULE_BLOCK_F_3CRAFT_REOPEN_SAVE_RENDER_MISSING0",
+  "destination": "/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/story-block-read-v02",
+  "sourceRoot": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/production/story-block-read-v02",
+  "projects": [
+    "projects/truthorlie129-rules-block44-read-v02.ecproj",
+    "projects/truthorlie129-rules-block44-read-v02.fcproj"
+  ],
+  "photoCraft": {
+    "native": "covers/editorial-board.pcraft",
+    "reopened": "projects/editorial-board-reopened.pcraft",
+    "pixelsIdentical": true
+  },
+  "dependencies": [
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.1.kind.path",
+      "file": "media/actual-app-artwork-background.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.2.kind.path",
+      "file": "media/editorial-board.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.3.kind.path",
+      "file": "media/model-opening.mov"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.4.kind.path",
+      "file": "media/round1-selected-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.5.kind.path",
+      "file": "media/round1-result-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.6.kind.path",
+      "file": "media/round1-score-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.7.kind.path",
+      "file": "media/round1-hi-cfr.mp4"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.8.kind.path",
+      "file": "media/round2-selected-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.9.kind.path",
+      "file": "media/round2-result-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.10.kind.path",
+      "file": "media/round2-score-hi.png"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.11.kind.path",
+      "file": "media/round2-hi-cfr.mp4"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "key": "project.items.6.kind.Media.media.File.path",
+      "file": "media/truthorlie129-rules-picture44-base.mp4"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "key": "project.items.7.kind.Media.media.File.path",
+      "file": "media/narration-presented-stem.wav"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "key": "project.items.8.kind.Media.media.File.path",
+      "file": "media/background-cipher-stem.wav"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "key": "project.items.9.kind.Media.media.File.path",
+      "file": "media/read-v02-first-score.mp4"
+    },
+    {
+      "project": "projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "key": "project.items.10.kind.Media.media.File.path",
+      "file": "media/read-v02-second-score-and-comparison.mp4"
+    }
+  ],
+  "transforms": [
+    {
+      "file": "source/composition-story-block.jsx",
+      "sourceSha256": "04c3e4e60520274de2f47f799d55f104e99d9e2c8248206d9038e52e0aaa12fc",
+      "deliverySha256": "67cef9b34474f08d8281660f3df99f13faa1b3046cf7ec89527e8887335d34ea",
+      "reason": "Only native media paths relocated"
+    },
+    {
+      "file": "projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "sourceSha256": "f8a9ab8d3a6c69229539412f34f95924adb2c54beffea5b3765338f7f7d24099",
+      "deliverySha256": "85b7eeac01fc09dbeeaec4133d394f51dfbd1d87bf4b77d846e30d3d0270b622",
+      "reason": "F relocation and native reopen/save"
+    },
+    {
+      "file": "projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "sourceSha256": "53feca5317ca76681cdd053746894cb8004d53158906a474cd63f38f635b18eb",
+      "deliverySha256": "d81467ed9edb5851739e205e1e2cf1bc54b06c43cf71d975634c734397eeae47",
+      "reason": "F relocation and native reopen/save"
+    }
+  ],
+  "checked": [
+    "ec-media",
+    "ec-frame",
+    "fc-media",
+    "fc-frame",
+    "pc-save",
+    "pc-frame"
+  ],
+  "missingMedia": 0,
+  "externalActiveDependencies": 0,
+  "movie": {
+    "file": "videos/truthorlie129-rules-block44-read-v02-cipher.mp4",
+    "sha256": "822bce9f019086d9a5e12cfb6f395c9a0ef17657a29b7ed49e9d71b2d9724509",
+    "bytes": 5530791
+  },
+  "voiceCues": 9,
+  "coreFrames": 240,
+  "coreSeconds": 8,
+  "voiceRmsBindingUnchanged": true,
+  "coreRegenerated": false,
+  "original75Unchanged": true,
+  "storyDirectionAcceptedForPrior44Only": true,
+  "rootReadFixAccepted": false,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "notFull600SecondMaster": true,
+  "published": false
+}

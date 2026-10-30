@@ -1,0 +1,1176 @@
+{
+  "complete": true,
+  "rounds": [
+    {
+      "id": "round1",
+      "attempt": "coder-firstvote06",
+      "cfr": "media/round1-cfr.mp4",
+      "duration": 89.733333,
+      "sha256": "2c94f04d0d28fe240cc85c4ab82ebec066aa78353ee7f4032b99463df6f19c69",
+      "rawSha256": "5a0f572b9c60d6c99d610efb68d3f1e7f1affd6233581ed1f3527e30d335ba25",
+      "cards": [
+        {
+          "file": "media/round1-card1.png",
+          "width": 840,
+          "height": 228,
+          "originalAx": {
+            "question": [
+              91.4,
+              176.3,
+              196.7,
+              38
+            ],
+            "answer": [
+              91.4,
+              222.3,
+              111.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            358,
+            840,
+            228
+          ],
+          "sha256": "e9beaabc6cd30bfb50ab64915e7a84091dcde893d0cf2efe770c8609c25b2f74"
+        },
+        {
+          "file": "media/round1-card2.png",
+          "width": 840,
+          "height": 227,
+          "originalAx": {
+            "question": [
+              91.4,
+              288.7,
+              168.7,
+              38
+            ],
+            "answer": [
+              91.4,
+              334.7,
+              111.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            612,
+            840,
+            227
+          ],
+          "sha256": "ed2acb161861df4fa2ce80750a5f6262e679805ce753b06be11096908bf32317"
+        },
+        {
+          "file": "media/round1-card3.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              401,
+              196.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              427,
+              79.7,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            865,
+            840,
+            182
+          ],
+          "sha256": "a9b7f32ec62ec9bf375e53a73a11a90c6b9dc15302da90524b81d21aa6cf85c5"
+        },
+        {
+          "file": "media/round1-card4.png",
+          "width": 840,
+          "height": 227,
+          "originalAx": {
+            "question": [
+              91.4,
+              493.3,
+              126.3,
+              38
+            ],
+            "answer": [
+              91.4,
+              539.3,
+              95.7,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1073,
+            840,
+            227
+          ],
+          "sha256": "c91cdc0298da42ba57d615ffd155ba50f33fd28598d0fbeed177acce05997984"
+        },
+        {
+          "file": "media/round1-card5.png",
+          "width": 840,
+          "height": 227,
+          "originalAx": {
+            "question": [
+              91.4,
+              605.7,
+              140.3,
+              38
+            ],
+            "answer": [
+              91.4,
+              651.7,
+              159.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1326,
+            840,
+            227
+          ],
+          "sha256": "7952056ad4d56f155d2a941dd1caff2a9f2829331dc22143444ec6989a5d3ede"
+        }
+      ],
+      "shots": {
+        "neutral": {
+          "time": 59.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 64751,
+          "attachmentSha256": "0c46991f73c2b40b79e64292a740f04f3698ae8b7bc689769f30030ee2947f80"
+        },
+        "result": {
+          "time": 84,
+          "sampleInterval": 0.5,
+          "graySquaredError": 70944,
+          "attachmentSha256": "809b8d31e64d9273a0dd8556dd2048eae1d0a5520f1cf12262a3ebab361dff7c"
+        },
+        "score": {
+          "time": 88.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 68581,
+          "attachmentSha256": "ae20db414f9378e09a529f289d800ab4fb6f43ad5001fea2e9b84bffb90ce90f"
+        },
+        "vote": {
+          "time": 80,
+          "sampleInterval": 0.5,
+          "attachmentSha256": "382ae11d51d8d7b6dc47543ce72932823e5a8c91c7bfc576bfe75c2a2e3489af"
+        }
+      },
+      "actualNeutralScreenshot": true,
+      "selectedLieNotShownBeforeVote": true
+    },
+    {
+      "id": "round2",
+      "attempt": "coder-round2-vote01",
+      "cfr": "media/round2-cfr.mp4",
+      "duration": 79.433333,
+      "sha256": "67cfd782ed70ddd7818bdfb71502563259c675ee6eb7961c696b5ef8fc40c4a3",
+      "rawSha256": "7f1f903976c07aa34e17189f2886261f00dfb7ecc6abbacb25c6846a60d25315",
+      "cards": [
+        {
+          "file": "media/round2-card1.png",
+          "width": 840,
+          "height": 227,
+          "originalAx": {
+            "question": [
+              91.4,
+              196.3,
+              168.7,
+              38
+            ],
+            "answer": [
+              91.4,
+              242.3,
+              159.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            404,
+            840,
+            227
+          ],
+          "sha256": "e844174f220b6e5d21cb7183734b0cec9151a1f9edc25a349e2e5321a08a10e5"
+        },
+        {
+          "file": "media/round2-card2.png",
+          "width": 840,
+          "height": 227,
+          "originalAx": {
+            "question": [
+              91.4,
+              308.7,
+              182.7,
+              38
+            ],
+            "answer": [
+              91.4,
+              354.7,
+              143.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            657,
+            840,
+            227
+          ],
+          "sha256": "18d5f2d9e9787c7fd9809fe6a8d3687fceb9db2dc586490848e3fc122c1ce598"
+        },
+        {
+          "file": "media/round2-card3.png",
+          "width": 840,
+          "height": 227,
+          "originalAx": {
+            "question": [
+              91.4,
+              421,
+              182.7,
+              38
+            ],
+            "answer": [
+              91.4,
+              467,
+              95.7,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            910,
+            840,
+            227
+          ],
+          "sha256": "b4ae6f196f9093dc9aa049968fdd3abf480db89519ebe012f5c38b05d97f9b68"
+        },
+        {
+          "file": "media/round2-card4.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              533.3,
+              196.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              559.3,
+              111.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1163,
+            840,
+            182
+          ],
+          "sha256": "64e1fa525ab6870ffe9553e1495156774b8f001bacbee31ed2f115af93d68d5a"
+        },
+        {
+          "file": "media/round2-card5.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              625.7,
+              196.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              651.7,
+              79.7,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1371,
+            840,
+            182
+          ],
+          "sha256": "38f291196f7bec622c0345a593a9403ebe5809935d4cb82184ed656ad01d4cdc"
+        }
+      ],
+      "shots": {
+        "neutral": {
+          "time": 44.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 61258,
+          "attachmentSha256": "13da33617e8aece4c7065d88702b590cadce6a6de8bc98fa8455e3e777f2de7a"
+        },
+        "result": {
+          "time": 67.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 72288,
+          "attachmentSha256": "70f540f0792995ca4e3e008bf048a0a1c18254e2d3d71b83ef7fe0235f063e90"
+        },
+        "score": {
+          "time": 71.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 65652,
+          "attachmentSha256": "fd6d73544879b981ac887282ad46505687fc003bdc1ca16aef574329f7816146"
+        },
+        "vote": {
+          "time": 63,
+          "sampleInterval": 0.5,
+          "attachmentSha256": "403c326a1594206ca42fbc9be23fd4dcf475d32c6d773bb0ed1f366a48ce75b3"
+        }
+      },
+      "actualNeutralScreenshot": true,
+      "selectedLieNotShownBeforeVote": true
+    },
+    {
+      "id": "round3",
+      "attempt": "coder-round3-vote02",
+      "cfr": "media/round3-cfr.mp4",
+      "duration": 76.866667,
+      "sha256": "8a90abfa19960b3d92477413f3c2076ca3e198b01b8b495d8f38da8718eaf4ee",
+      "rawSha256": "c621db60f6410cd04153f7d6a03629ad75b75b980fb2714cbd40365bb32057cc",
+      "cards": [
+        {
+          "file": "media/round3-card1.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              234.3,
+              196.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              260.3,
+              175,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            489,
+            840,
+            182
+          ],
+          "sha256": "57d426fd76591cd407c3c00d16669556fa2bdf25c292dc1d78d1da3cd8619bfb"
+        },
+        {
+          "file": "media/round3-card2.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              326.7,
+              140.3,
+              18
+            ],
+            "answer": [
+              91.4,
+              352.7,
+              63.7,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            697,
+            840,
+            182
+          ],
+          "sha256": "b0d001a4f912305555e6226301207054f8c3292ebb87d2f44752943ea03ff430"
+        },
+        {
+          "file": "media/round3-card3.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              419,
+              196.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              445,
+              111.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            905,
+            840,
+            182
+          ],
+          "sha256": "b209c67ed9cf1b74b4963ea52e778d9f964dbb467c74a6d59371a34087f2f639"
+        },
+        {
+          "file": "media/round3-card4.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              511.3,
+              154.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              537.3,
+              127.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1113,
+            840,
+            182
+          ],
+          "sha256": "2c9e0ec4e216ba0af1b39a0d61b81bcf2f189c1321ebb7f0e1ca0a1b81d0e2bb"
+        },
+        {
+          "file": "media/round3-card5.png",
+          "width": 840,
+          "height": 231,
+          "originalAx": {
+            "question": [
+              91.4,
+              603.7,
+              182.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              629.7,
+              159.3,
+              42.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1322,
+            840,
+            231
+          ],
+          "sha256": "1d49d9762ebac567a95ada2be11c935fdc48b640f7c6246a6cf3689f4f39b141"
+        }
+      ],
+      "shots": {
+        "neutral": {
+          "time": 48.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 61532,
+          "attachmentSha256": "39463830529c685c9110d3de5344481ff744157671a6387b87bfbc629624c461"
+        },
+        "result": {
+          "time": 69,
+          "sampleInterval": 0.5,
+          "graySquaredError": 72410,
+          "attachmentSha256": "d56b40003b80e31a571e78a3aeec433a982336bcbf34e02a7a31d8c747811105"
+        },
+        "score": {
+          "time": 72,
+          "sampleInterval": 0.5,
+          "graySquaredError": 64592,
+          "attachmentSha256": "4136a926461ce831d9bb498410239a5ac732c7f84331dff5d995134db0cbea8f"
+        },
+        "vote": {
+          "time": 65.5,
+          "sampleInterval": 0.5,
+          "attachmentSha256": "4def56deeb7e89448c0356649a601f39ad07c2bf20940e38f6d265dd18f70535"
+        }
+      },
+      "actualNeutralScreenshot": true,
+      "selectedLieNotShownBeforeVote": true
+    },
+    {
+      "id": "round4",
+      "attempt": "coder-round4-final01",
+      "cfr": "media/round4-cfr.mp4",
+      "duration": 102.066667,
+      "sha256": "7a110aece0ce42e3be75fd35b4df3ca21aaa9f9bfc82f424c869d305b2ea81bf",
+      "rawSha256": "5e75c6b497c8670b67872cf012742229b075bb2e9d4c239e43d11e5f4c76d8b7",
+      "cards": [
+        {
+          "file": "media/round4-card1.png",
+          "width": 840,
+          "height": 227,
+          "originalAx": {
+            "question": [
+              91.4,
+              216.3,
+              179.3,
+              38
+            ],
+            "answer": [
+              91.4,
+              262.3,
+              175,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            449,
+            840,
+            227
+          ],
+          "sha256": "5cac3e213772eb468fb33646689f28bacc211ef6073ffffd50c8afdb865cce0b"
+        },
+        {
+          "file": "media/round4-card2.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              328.7,
+              182.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              354.7,
+              127.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            702,
+            840,
+            182
+          ],
+          "sha256": "3ed8f60678f2a316fbaf4054fefbe5f176b8d420490044b351f55bc041649fb4"
+        },
+        {
+          "file": "media/round4-card3.png",
+          "width": 840,
+          "height": 227,
+          "originalAx": {
+            "question": [
+              91.4,
+              421,
+              182.7,
+              38
+            ],
+            "answer": [
+              91.4,
+              467,
+              111.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            910,
+            840,
+            227
+          ],
+          "sha256": "51c2477e78aecd15e2bdbc8f83bc2bc427260c61ca0058bc5886ffd7d56c9c7b"
+        },
+        {
+          "file": "media/round4-card4.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              533.3,
+              182.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              559.3,
+              95.7,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1163,
+            840,
+            182
+          ],
+          "sha256": "d1bf63c898ab7f07e02346a7bdfc7d19056aec9ad1cdf4be9d50ace01c54a3e9"
+        },
+        {
+          "file": "media/round4-card5.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              625.7,
+              182.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              651.7,
+              159.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1371,
+            840,
+            182
+          ],
+          "sha256": "9306f7baabd043a04fb1817d37854c769e8bc498e78f7b4e76c49536ee0203e8"
+        }
+      ],
+      "shots": {
+        "neutral": {
+          "time": 58.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 61167,
+          "attachmentSha256": "53bda7288ddeabcab8eba79686cde70df5b2a3a65ba45bf581996cd60b7217e3"
+        },
+        "result": {
+          "time": 80,
+          "sampleInterval": 0.5,
+          "graySquaredError": 72190,
+          "attachmentSha256": "76d658fb6ca3eee61bddb25cb1a2df3fbff561571888c3911f14409f290f2558"
+        },
+        "score": {
+          "time": 83.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 63660,
+          "attachmentSha256": "ded86a6b7a1bec372f7cc071afcde2e7893ac5b930515766b0198f61cca623aa"
+        },
+        "vote": {
+          "time": 75,
+          "sampleInterval": 0.5,
+          "attachmentSha256": "efd3838ac936ab31fc6675d70928036776cb2c40e230950ddda5b9f507aa3f89"
+        }
+      },
+      "actualNeutralScreenshot": true,
+      "selectedLieNotShownBeforeVote": true
+    },
+    {
+      "id": "truth1",
+      "attempt": "coder-truth1-vote02",
+      "cfr": "media/truth1-cfr.mp4",
+      "duration": 77.966667,
+      "sha256": "d5d3ae0b61455d5a0013ef0f99840612febdde7556965688e85cbb4fceace8b0",
+      "rawSha256": "18c002d0949c97734c441046536a9e510aa60a8626c03670a7c9248a1d64e225",
+      "cards": [
+        {
+          "file": "media/truth1-card1.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              236.3,
+              168.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              262.3,
+              127.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            494,
+            840,
+            182
+          ],
+          "sha256": "727e52f66af1d54c6ed1917e2f3aad3c99ddeec81caa7d79b56bcdf034e730ca"
+        },
+        {
+          "file": "media/truth1-card2.png",
+          "width": 840,
+          "height": 227,
+          "originalAx": {
+            "question": [
+              91.4,
+              328.7,
+              126.3,
+              38
+            ],
+            "answer": [
+              91.4,
+              374.7,
+              143.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            702,
+            840,
+            227
+          ],
+          "sha256": "0ad139979269d2136e71df0f10ad87fcb6c9687e5461d046bc280bed90a87651"
+        },
+        {
+          "file": "media/truth1-card3.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              441,
+              182.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              467,
+              111.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            955,
+            840,
+            182
+          ],
+          "sha256": "f8b5c538dfe52ff29e6a1f420754a13dcc30a5af3028760170d22da0475bc1e3"
+        },
+        {
+          "file": "media/truth1-card4.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              533.3,
+              154.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              559.3,
+              143.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1163,
+            840,
+            182
+          ],
+          "sha256": "668a40cb8618f649fd5e47ed432c59e611255762b4cbf24d97c776ec7a5b593f"
+        },
+        {
+          "file": "media/truth1-card5.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              625.7,
+              182.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              651.7,
+              143.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1371,
+            840,
+            182
+          ],
+          "sha256": "c80b28bf02d82461abd11df3865b12581a31eba626546e9b1c426d321a096100"
+        }
+      ],
+      "shots": {
+        "neutral": {
+          "time": 54,
+          "sampleInterval": 0.5,
+          "graySquaredError": 61710,
+          "attachmentSha256": "3047201fcc56133fbc8b6aca96ce67734bfa81e6a765ac65dfd64225dd52a1b3"
+        },
+        "result": {
+          "time": 72.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 69205,
+          "attachmentSha256": "d48a9499b7dce3761a8caea18593612f1133289f25d846b1e08e265bd066d38d"
+        },
+        "score": {
+          "time": 76.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 59842,
+          "attachmentSha256": "87e74785353d1d58848fd42968c07aa29955912eeb2ceddc27bf2b726b7383bd"
+        },
+        "vote": {
+          "time": 69.5,
+          "sampleInterval": 0.5,
+          "attachmentSha256": "29c794086e54079abdbeae5888a08cc4e3a8aba20f96a86ffb0a1f7dba177a03"
+        }
+      },
+      "actualNeutralScreenshot": true,
+      "selectedLieNotShownBeforeVote": true
+    },
+    {
+      "id": "truth2",
+      "attempt": "coder-truth2-vote01",
+      "cfr": "media/truth2-cfr.mp4",
+      "duration": 78.2,
+      "sha256": "070b589428a44e05c7c35847b1371358994eef0f24891759f61806278c3738d1",
+      "rawSha256": "c4d2890405f0a06600c62eceae2dbf5c2628aabf8f99ed2d3c27379023e14d0b",
+      "cards": [
+        {
+          "file": "media/truth2-card1.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              214.3,
+              196.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              240.3,
+              191,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            444,
+            840,
+            182
+          ],
+          "sha256": "2e7a1e69a6dfcf28689edff0273bd0208d1e92392814c0fee03e342b60086a12"
+        },
+        {
+          "file": "media/truth2-card2.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              306.7,
+              140.3,
+              18
+            ],
+            "answer": [
+              91.4,
+              332.7,
+              143.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            652,
+            840,
+            182
+          ],
+          "sha256": "06d82fb12fcb5f47b9506219766fc790c30b33a71c173badba9068c3401aa6c0"
+        },
+        {
+          "file": "media/truth2-card3.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              399,
+              182.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              425,
+              175,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            860,
+            840,
+            182
+          ],
+          "sha256": "c8063948da4daec15e4be95e819a636a3a8347c26a4bfcf0e8963a275b183f3e"
+        },
+        {
+          "file": "media/truth2-card4.png",
+          "width": 840,
+          "height": 232,
+          "originalAx": {
+            "question": [
+              91.4,
+              491.3,
+              196.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              517.3,
+              175,
+              42.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1068,
+            840,
+            232
+          ],
+          "sha256": "c6e7563c8beab022e650548235bd0dfd0d40f98beb7338eff20404529c5e96bd"
+        },
+        {
+          "file": "media/truth2-card5.png",
+          "width": 840,
+          "height": 227,
+          "originalAx": {
+            "question": [
+              91.4,
+              605.7,
+              154.7,
+              38
+            ],
+            "answer": [
+              91.4,
+              651.7,
+              143.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1326,
+            840,
+            227
+          ],
+          "sha256": "dac1f5d3d5a0b965798f7dd0ba78cf11b8c19fdd742433be3adcc85adfd4cdac"
+        }
+      ],
+      "shots": {
+        "neutral": {
+          "time": 53.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 62455,
+          "attachmentSha256": "8a6f5113f8a645cf2e14f938db92dad0ccd298592d531540afb8cf44d6ec49f2"
+        },
+        "result": {
+          "time": 73.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 72132,
+          "attachmentSha256": "8f60307819c4423896a1349130c21779ca3ebb479e5ab4859e739bb2863b10ae"
+        },
+        "score": {
+          "time": 77,
+          "sampleInterval": 0.5,
+          "graySquaredError": 66477,
+          "attachmentSha256": "ee6fc3a9d67cdf9e1d929d584bcebde7f1a4f6d67fad92e63b9c325e06c0015a"
+        },
+        "vote": {
+          "time": 68,
+          "sampleInterval": 0.5,
+          "attachmentSha256": "85bf1a110b1ba65ca873164c66e93dcf2bd4b5bc22307a574d319be4ef63b13b"
+        }
+      },
+      "actualNeutralScreenshot": true,
+      "selectedLieNotShownBeforeVote": true
+    },
+    {
+      "id": "truth3",
+      "attempt": "coder-truth3-final01",
+      "cfr": "media/truth3-cfr.mp4",
+      "duration": 94.433333,
+      "sha256": "2ad2309617a110ba9ae5eb9fbecd0343151a2a33215ef3fdd016949afd1dde79",
+      "rawSha256": "6f8865751605f1c2ad7acbcbe0edabc4d51be32f27c84ae380201d17cedfa326",
+      "cards": [
+        {
+          "file": "media/truth3-card1.png",
+          "width": 840,
+          "height": 277,
+          "originalAx": {
+            "question": [
+              91.4,
+              172.3,
+              126.3,
+              38
+            ],
+            "answer": [
+              91.4,
+              218.3,
+              143.3,
+              42.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            349,
+            840,
+            277
+          ],
+          "sha256": "ec71e44967d5acd14c0dbb7c121220cd20c85ea28b9d2d20fe2abc5f72f34511"
+        },
+        {
+          "file": "media/truth3-card2.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              306.7,
+              196.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              332.7,
+              191,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            652,
+            840,
+            182
+          ],
+          "sha256": "146f68822f4ae2faa135ae2a2aa8ae7680fab3e5aa0f9691db73163a90a3b005"
+        },
+        {
+          "file": "media/truth3-card3.png",
+          "width": 840,
+          "height": 227,
+          "originalAx": {
+            "question": [
+              91.4,
+              399,
+              196.7,
+              38
+            ],
+            "answer": [
+              91.4,
+              445,
+              79.7,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            860,
+            840,
+            227
+          ],
+          "sha256": "bea0790a9f014f762493a20c1070c4580f7c2386190184631bdfa61d03c35a75"
+        },
+        {
+          "file": "media/truth3-card4.png",
+          "width": 840,
+          "height": 182,
+          "originalAx": {
+            "question": [
+              91.4,
+              511.3,
+              140.3,
+              18
+            ],
+            "answer": [
+              91.4,
+              537.3,
+              111.3,
+              20.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1113,
+            840,
+            182
+          ],
+          "sha256": "0410ff6623a2f0c09ac5fc829eac414e9455285aa43ee24646384104ee96b5cb"
+        },
+        {
+          "file": "media/truth3-card5.png",
+          "width": 840,
+          "height": 231,
+          "originalAx": {
+            "question": [
+              91.4,
+              603.7,
+              182.7,
+              18
+            ],
+            "answer": [
+              91.4,
+              629.7,
+              191,
+              42.3
+            ]
+          },
+          "sourceRect": [
+            22,
+            1322,
+            840,
+            231
+          ],
+          "sha256": "2a160528b368b9d2c5a0dc5393d732b3599e0ac507d25fe301d954452f42a775"
+        }
+      ],
+      "shots": {
+        "neutral": {
+          "time": 56.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 61189,
+          "attachmentSha256": "d9e9b9712fd04d84446f049f9f0dcd4150661930dd82f8251f70a36d84e41ff2"
+        },
+        "result": {
+          "time": 76.5,
+          "sampleInterval": 0.5,
+          "graySquaredError": 70265,
+          "attachmentSha256": "3f83d1855755901af17f7d717a8a0d22509b949166a38ecb3d42b7712acfb546"
+        },
+        "score": {
+          "time": 80,
+          "sampleInterval": 0.5,
+          "graySquaredError": 68064,
+          "attachmentSha256": "0a7c8b308fb4516888f133884d80f14271bef0b5c2b4ea6e2d5a1f55d9750ace"
+        },
+        "vote": {
+          "time": 71,
+          "sampleInterval": 0.5,
+          "attachmentSha256": "c3baeba309edb37271f1497b3a4dc71768302321ad2665e931d08a443ed4b787"
+        }
+      },
+      "actualNeutralScreenshot": true,
+      "selectedLieNotShownBeforeVote": true
+    }
+  ],
+  "normalUi": true,
+  "allAnswersFictional": true
+}

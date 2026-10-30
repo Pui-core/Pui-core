@@ -1,0 +1,492 @@
+[
+  {
+    "id": "d2-01",
+    "chapter": 2,
+    "title": "全部本当。02へ投票すると？",
+    "kind": "predict",
+    "ref": "truth3.vote",
+    "text": "五つとも本当の回です。BBは二番へ投票。点を取るのは、どちらでしょう。",
+    "predictionSeconds": 1,
+    "state": {
+      "condition": "全部真実",
+      "vote": "02",
+      "choices": [
+        "推理BBへ？",
+        "出題AAへ？"
+      ]
+    },
+    "start": 44,
+    "end": 50.733333333333334,
+    "duration": 6.733333333333333,
+    "voiceSeconds": 5.365333333333333,
+    "tailReadSeconds": 0.268,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d2-02",
+    "chapter": 2,
+    "title": "出題AAへ、今回+1。",
+    "kind": "actual",
+    "ref": "truth3.result-score",
+    "text": "出題したAAに一点。真実のみは回の状態で、二番への投票は的中していません。",
+    "state": {
+      "gain": "AA +1",
+      "cumulative": "AA0→1 / BB2のまま"
+    },
+    "start": 50.733333333333334,
+    "end": 56.9,
+    "duration": 6.166666666666667,
+    "voiceSeconds": 5.8133333333333335,
+    "tailReadSeconds": 0.253333,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d2-03",
+    "chapter": 2,
+    "title": "別ラウンド。真実のみを選ぶと？",
+    "kind": "actual",
+    "ref": "truth1.vote-result",
+    "text": "別ラウンドの全部本当では、真実のみを選んだBBに一点。",
+    "state": {
+      "condition": "全部真実",
+      "vote": "真実のみ",
+      "gain": "BB +1",
+      "cumulative": "BB0→1"
+    },
+    "start": 56.9,
+    "end": 61.3,
+    "duration": 4.4,
+    "voiceSeconds": 4.032,
+    "tailReadSeconds": 0.268,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d2-04",
+    "chapter": 2,
+    "title": "嘘03。それでも真実のみ？",
+    "kind": "actual",
+    "ref": "truth2.vote-result",
+    "text": "今度は嘘三番があるのに、真実のみへ。外れたので、出題BBに一点です。",
+    "state": {
+      "condition": "嘘03",
+      "vote": "真実のみ",
+      "gain": "BB +1",
+      "cumulative": "BB1→2"
+    },
+    "start": 61.3,
+    "end": 67.16666666666667,
+    "duration": 5.866666666666666,
+    "voiceSeconds": 5.514666666666667,
+    "tailReadSeconds": 0.252,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d2-05",
+    "chapter": 2,
+    "title": "状態と、投票を照合する。",
+    "kind": "matrix",
+    "ref": "truth-cases",
+    "text": "状態と投票が合えば推理側。誰も合わなければ出題側。三例は、この分かれ目です。",
+    "visualReadSeconds": 5.5,
+    "start": 67.16666666666667,
+    "end": 73.43333333333334,
+    "duration": 6.266666666666667,
+    "voiceSeconds": 5.898666666666666,
+    "tailReadSeconds": 0.268,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d3-01",
+    "chapter": 3,
+    "title": "出題側の指定。",
+    "kind": "motion",
+    "ref": "round1.input-private",
+    "text": "出題側は五つを入力し、三番を嘘に指定。受け渡し前には、その印が見えています。",
+    "start": 73.43333333333334,
+    "end": 80.23333333333333,
+    "duration": 6.8,
+    "voiceSeconds": 6.421333333333333,
+    "tailReadSeconds": 0.278667,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d3-02",
+    "chapter": 3,
+    "title": "同じ回答。印がない。",
+    "kind": "compare",
+    "ref": "private-neutral",
+    "text": "推理側の同じ回答には、印がありません。指定された嘘を見せずに、一票を選ぶ場面へ切り替わります。",
+    "visualReadSeconds": 6,
+    "start": 80.23333333333333,
+    "end": 87.6,
+    "duration": 7.366666666666666,
+    "voiceSeconds": 6.997333333333334,
+    "tailReadSeconds": 0.269333,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d3-03",
+    "chapter": 3,
+    "title": "結果で、2つの印を照合。",
+    "kind": "compare",
+    "ref": "review-match-miss",
+    "text": "結果で、嘘と投票を照合。的中なら同じ三番に二つの印。外れた実例は、投票二番と嘘五番です。",
+    "visualReadSeconds": 6.5,
+    "start": 87.6,
+    "end": 95.7,
+    "duration": 8.1,
+    "voiceSeconds": 7.744,
+    "tailReadSeconds": 0.256,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d4-01",
+    "chapter": 4,
+    "title": "1人が当たると、Aにも？",
+    "kind": "calc-predict",
+    "ref": "one-correct",
+    "text": "三人の計算例です。配点一、連続オフ。Aが出題し、Bだけが的中したら、Aにも点が入る？",
+    "predictionSeconds": 1,
+    "state": {
+      "votes": [
+        "—",
+        "03",
+        "02"
+      ],
+      "condition": "嘘03",
+      "choices": [
+        "Aにも +1？",
+        "正解Bだけ？"
+      ]
+    },
+    "start": 95.7,
+    "end": 105,
+    "duration": 9.3,
+    "voiceSeconds": 7.946666666666666,
+    "tailReadSeconds": 0.253333,
+    "classification": "コード計算例・実UI未収録"
+  },
+  {
+    "id": "d4-02",
+    "chapter": 4,
+    "title": "正解Bに、今回+1。",
+    "kind": "calc-answer",
+    "ref": "one-correct",
+    "text": "Bに一点、AとCは零。一人でも正解がいれば、全員外れにはなりません。",
+    "state": {
+      "awards": [
+        0,
+        1,
+        0
+      ]
+    },
+    "start": 105,
+    "end": 110.96666666666667,
+    "duration": 5.966666666666667,
+    "voiceSeconds": 5.6,
+    "tailReadSeconds": 0.266667,
+    "classification": "コード計算例・実UI未収録"
+  },
+  {
+    "id": "d4-03",
+    "chapter": 4,
+    "title": "正解が2人なら、山分け？",
+    "kind": "calc-predict",
+    "ref": "two-correct",
+    "text": "BもCも的中したら、一点を山分け？それとも、それぞれ一点でしょうか。",
+    "predictionSeconds": 1,
+    "state": {
+      "votes": [
+        "—",
+        "03",
+        "03"
+      ],
+      "condition": "嘘03",
+      "choices": [
+        "山分け？",
+        "それぞれ +1？"
+      ]
+    },
+    "start": 110.96666666666667,
+    "end": 117.56666666666666,
+    "duration": 6.6,
+    "voiceSeconds": 5.237333333333333,
+    "tailReadSeconds": 0.262667,
+    "classification": "コード計算例・実UI未収録"
+  },
+  {
+    "id": "d4-04",
+    "chapter": 4,
+    "title": "それぞれ、今回+1。",
+    "kind": "calc-answer",
+    "ref": "two-correct",
+    "text": "それぞれ一点。正解した投票ごとの加点です。",
+    "state": {
+      "awards": [
+        0,
+        1,
+        1
+      ]
+    },
+    "start": 117.56666666666666,
+    "end": 121.13333333333334,
+    "duration": 3.566666666666667,
+    "voiceSeconds": 3.2,
+    "tailReadSeconds": 0.266667,
+    "classification": "コード計算例・実UI未収録"
+  },
+  {
+    "id": "d4-05",
+    "chapter": 4,
+    "title": "2人とも外れたら。",
+    "kind": "calc-answer",
+    "ref": "none-correct",
+    "text": "二人とも外すと、出題したAに一点。全員が外れたときの分岐です。",
+    "state": {
+      "votes": [
+        "—",
+        "02",
+        "05"
+      ],
+      "condition": "嘘03",
+      "awards": [
+        1,
+        0,
+        0
+      ]
+    },
+    "start": 121.13333333333334,
+    "end": 126.2,
+    "duration": 5.066666666666666,
+    "voiceSeconds": 4.704,
+    "tailReadSeconds": 0.262667,
+    "classification": "コード計算例・実UI未収録"
+  },
+  {
+    "id": "d5-01",
+    "chapter": 5,
+    "title": "基本2。初めての的中は？",
+    "kind": "calc-predict",
+    "ref": "streak-first",
+    "text": "ここも計算例。基本二、連続オン。BBの最初の的中は、何点でしょう。",
+    "predictionSeconds": 1,
+    "state": {
+      "base": 2,
+      "streak": 0,
+      "choices": [
+        "今回 +2？",
+        "今回 +3？"
+      ]
+    },
+    "start": 126.2,
+    "end": 133.4,
+    "duration": 7.2,
+    "voiceSeconds": 5.8453333333333335,
+    "tailReadSeconds": 0.254667,
+    "classification": "コード計算例・実UI未収録"
+  },
+  {
+    "id": "d5-02",
+    "chapter": 5,
+    "title": "今回+2。累計0→2。",
+    "kind": "calc-answer",
+    "ref": "streak-first",
+    "text": "前回までの連続が零なので、今回は二点。累計は零から二です。",
+    "state": {
+      "base": 2,
+      "streak": 0,
+      "gain": 2,
+      "before": 0,
+      "after": 2
+    },
+    "start": 133.4,
+    "end": 138.2,
+    "duration": 4.8,
+    "voiceSeconds": 4.448,
+    "tailReadSeconds": 0.252,
+    "classification": "コード計算例・実UI未収録"
+  },
+  {
+    "id": "d5-03",
+    "chapter": 5,
+    "title": "BBの次の推理も的中すると？",
+    "kind": "calc-predict",
+    "ref": "streak-second",
+    "text": "次のAAの的中はAAに二点。BBの次の推理も当たると、今度は二点？三点？",
+    "predictionSeconds": 1,
+    "state": {
+      "base": 2,
+      "streak": 1,
+      "choices": [
+        "今回 +2？",
+        "今回 +3？"
+      ]
+    },
+    "start": 138.2,
+    "end": 145.93333333333334,
+    "duration": 7.733333333333333,
+    "voiceSeconds": 6.378666666666667,
+    "tailReadSeconds": 0.254667,
+    "classification": "コード計算例・実UI未収録"
+  },
+  {
+    "id": "d5-04",
+    "chapter": 5,
+    "title": "今回+3。累計2→5。",
+    "kind": "calc-answer",
+    "ref": "streak-second",
+    "text": "基本二に連続分一を足して、今回三点。BB累計は二から五。今回五点ではありません。",
+    "state": {
+      "base": 2,
+      "streak": 1,
+      "gain": 3,
+      "before": 2,
+      "after": 5
+    },
+    "start": 145.93333333333334,
+    "end": 152.6,
+    "duration": 6.666666666666667,
+    "voiceSeconds": 6.293333333333333,
+    "tailReadSeconds": 0.273333,
+    "classification": "コード計算例・実UI未収録"
+  },
+  {
+    "id": "d5-05",
+    "chapter": 5,
+    "title": "OFFは4。ONは5。",
+    "kind": "calc-compare",
+    "ref": "streak-on-off",
+    "text": "連続をオフに置けば、同じ二回の的中は二と二で合計四。オンなら二と三で五です。",
+    "state": {
+      "off": [
+        2,
+        2
+      ],
+      "on": [
+        2,
+        3
+      ]
+    },
+    "start": 152.6,
+    "end": 158.36666666666667,
+    "duration": 5.766666666666667,
+    "voiceSeconds": 5.386666666666667,
+    "tailReadSeconds": 0.28,
+    "classification": "コード計算例・実UI未収録"
+  },
+  {
+    "id": "d5-06",
+    "chapter": 5,
+    "title": "自分が、一度外すと？",
+    "kind": "calc-answer",
+    "ref": "streak-miss",
+    "text": "BB自身の外れが間に入ると連続は零へ。次の推理的中は基本二に戻り、推理加点は二、零、二です。",
+    "state": {
+      "gains": [
+        2,
+        0,
+        2
+      ],
+      "scope": "BB自身の推理加点だけ"
+    },
+    "start": 158.36666666666667,
+    "end": 167,
+    "duration": 8.633333333333333,
+    "voiceSeconds": 8.266666666666667,
+    "tailReadSeconds": 0.266667,
+    "classification": "コード計算例・実UI未収録"
+  },
+  {
+    "id": "d6-01",
+    "chapter": 6,
+    "title": "実4R。AAも、2つの役割で。",
+    "kind": "actual",
+    "ref": "round3-round4-results",
+    "text": "実四ラウンドへ戻ると、AAは三回目に出題で一点、最後は二番を見抜いて一点。",
+    "state": {
+      "gains": [
+        "出題 +1",
+        "推理 +1"
+      ],
+      "cumulative": "AA0→1→2 / BB2"
+    },
+    "start": 167,
+    "end": 173.16666666666666,
+    "duration": 6.166666666666667,
+    "voiceSeconds": 5.8133333333333335,
+    "tailReadSeconds": 0.253333,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d6-02",
+    "chapter": 6,
+    "title": "2対2。実結果は引き分け。",
+    "kind": "actual",
+    "ref": "normal-final",
+    "text": "最終は二対二で、引き分け。二点に届いたこと自体が、勝ちを決めたわけではありません。",
+    "start": 173.16666666666666,
+    "end": 179.2,
+    "duration": 6.033333333333333,
+    "voiceSeconds": 5.664,
+    "tailReadSeconds": 0.269333,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d6-03",
+    "chapter": 6,
+    "title": "同じ2点。別試合では勝利。",
+    "kind": "compare",
+    "ref": "finals",
+    "text": "別の三ラウンドは一対二でBBが勝利。同じ二点でも、相手の累計と試合条件が違います。",
+    "visualReadSeconds": 6,
+    "start": 179.2,
+    "end": 185.56666666666666,
+    "duration": 6.366666666666666,
+    "voiceSeconds": 6.005333333333334,
+    "tailReadSeconds": 0.261333,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d6-04",
+    "chapter": 6,
+    "title": "完了した試合は、履歴へ。",
+    "kind": "motion",
+    "ref": "history",
+    "text": "完了した試合は履歴へ。三ラウンドの勝利と四ラウンドの引き分けを、別の記録として確認できます。",
+    "visualReadSeconds": 6,
+    "start": 185.56666666666666,
+    "end": 192.03333333333333,
+    "duration": 6.466666666666667,
+    "voiceSeconds": 6.0906666666666665,
+    "tailReadSeconds": 0.276,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d6-05",
+    "chapter": 6,
+    "title": "どの選択が、誰の点へ？",
+    "kind": "matrix",
+    "ref": "closing",
+    "text": "どの選択が、誰の点になるか。回の状態と投票を照合して、今回の獲得と累計を分けて追います。",
+    "start": 192.03333333333333,
+    "end": 199.3,
+    "duration": 7.266666666666667,
+    "voiceSeconds": 6.9013333333333335,
+    "tailReadSeconds": 0.265333,
+    "classification": "実UIと編集による条件整理"
+  },
+  {
+    "id": "d6-06",
+    "chapter": 6,
+    "title": "嘘か誠か",
+    "kind": "closing",
+    "ref": "identity",
+    "text": "自作ゲーム、嘘か誠か。次は、自分たちの答えで。",
+    "start": 199.3,
+    "end": 203.76666666666668,
+    "duration": 4.466666666666667,
+    "voiceSeconds": 4.085333333333334,
+    "tailReadSeconds": 0.281333,
+    "classification": "実UIと編集による条件整理"
+  }
+]

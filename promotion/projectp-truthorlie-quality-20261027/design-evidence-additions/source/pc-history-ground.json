@@ -1,0 +1,34 @@
+[
+  [
+    "shape.create",
+    {
+      "name": "Quiet editorial ground",
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "fill": {
+        "gradient": {
+          "stops": [
+            [
+              0,
+              "#211B1C"
+            ],
+            [
+              0.618,
+              "#141315"
+            ],
+            [
+              1,
+              "#302720"
+            ]
+          ],
+          "angle": 115
+        }
+      }
+    }
+  ]
+]

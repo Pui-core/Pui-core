@@ -1,0 +1,138 @@
+{
+  "status": "PREPARED_RECORDING_NOT_EXECUTED_COLD_PREFLIGHT_HOLD",
+  "issue": 129,
+  "sourceHeadBeforePreparation": "58ed9a8d83bab0871334322e4e8c649e81ae3b83",
+  "operator": "/root/truthorlie_quality129",
+  "macOperator": "Root finite-window assignment pending",
+  "target": {
+    "udid": "6FC6BC4F-4CD9-4946-83F6-944ABAE9D15E",
+    "name": "ProjectP121 TruthOrLie Capture",
+    "runtime": "iOS17.2",
+    "lastKnownState": "Shutdown",
+    "currentStateNotFreshlyCheckedByThisWorker": true,
+    "oldIssueClosedDoesNotProveExclusiveUse": true,
+    "otherUdidRunningPerRoot": true
+  },
+  "preservation": {
+    "oldRoot": "/Users/pui-mac-core/codex-install/projectp121-truthorlie-20261027",
+    "coldAppDataBackupRequired": true,
+    "entireDeviceBytePreservationClaim": false,
+    "devicePlistCopy": true,
+    "installedBinarySha256": "51bcf0e740e1253a44edbcc2f038d765cc9d7716804b0ec35e0c34d04b988d70",
+    "oldHarness3ShaRetain": true,
+    "exactSavedDataKey": "gameHistory.records",
+    "archiveExtractHashVerificationRequired": true,
+    "beforeAfterHistoryDataShaRequired": true,
+    "actualContainerUuid": null,
+    "actualBackupCreated": false
+  },
+  "execution": {
+    "firstChoice": "Root TigerVNC ordinary navigation plus target-specific simctl recordVideo; no XCTest",
+    "newPrivateMacRoot": true,
+    "finiteWindowRequiredByRootTask": true,
+    "windowTemplateNotAuthorization": true,
+    "noOldHarnessCall": true,
+    "noProductInstall": true,
+    "noOldRunnerInstall": true,
+    "noNewRunnerInstall": true,
+    "noCloneOrErase": true,
+    "maxWindowSeconds": 900,
+    "maxCaptureSeconds": 180,
+    "maxBootstatusSeconds": 120,
+    "repeatSameFailure": false
+  },
+  "uiEvidence": {
+    "inputBeforeFreshTargetScreenshotWindowMatchForbidden": true,
+    "rootWindowConfirmationBinds": [
+      "window ID",
+      "target UDID",
+      "named foreground Simulator",
+      "native screenshot SHA",
+      "confirmation time"
+    ],
+    "route": [
+      "existing app",
+      "history list",
+      "identify AA/BB 4R draw/date",
+      "match detail",
+      "final score AA2 BB2",
+      "expand R1",
+      "actual red bicycle with lie/vote and roles"
+    ],
+    "expectedFromOldRecordingOnly": true,
+    "newObservedSuccess": false,
+    "noNewGameOrSettingsMutation": true
+  },
+  "cleanup": {
+    "finallyBeforeBootRequest": true,
+    "ownedPidIdentity": [
+      "PID",
+      "PPID",
+      "UID",
+      "birth",
+      "unique command/output path"
+    ],
+    "bootRequestAloneNotOwnership": true,
+    "normalRecorderStop": "SIGINT then wait max30s",
+    "qaFailureSeparatedFromResidualOwnership": true,
+    "freshRootReleaseRequired": true,
+    "releaseMaxAgeSeconds": 90,
+    "freshTargetConsumerCheckBeforeShutdown": true,
+    "shutdownOnlyOwnAcceptedBootTarget": true,
+    "allCasesBeforeShutdown": true,
+    "unknownOtherUseNoStop": true,
+    "finalPlistAndSimctlRecheckRequired": true,
+    "forbidden": [
+      "shutdown all",
+      "killall",
+      "pkill",
+      "shared CoreSimulator stop",
+      "Simulator.app global quit",
+      "device deletion",
+      "erase",
+      "automatic data restore"
+    ]
+  },
+  "acceptance": {
+    "nativeRawVideo": true,
+    "ffprobeAndFullDecode": true,
+    "correctRecordAndR1Matched": true,
+    "beforeAfterAppDataAndBinaryHarnessHashes": true,
+    "ownedProcessesZero": true,
+    "selfStartedDeviceShutdownConfirmed": true,
+    "checklistOnlyNotSuccess": true
+  },
+  "currentMaster": {
+    "containerSeconds": 269.653,
+    "videoFrames": 8089,
+    "sha256": "294b9cc6c49df07db94a3db75a4885b67ac816d52019d97b2a53d0e706f539d1",
+    "formal600": false,
+    "remainingTo600": 330.3666666666667,
+    "additionalVideoSecondsThisPreparation": 0
+  },
+  "macActionsThisPreparation": {
+    "sshReadAndPrivateUploads": true,
+    "simctlReadAttempts": 1,
+    "boot": 0,
+    "gui": 0,
+    "record": 0,
+    "install": 0,
+    "shutdown": 0
+  },
+  "sourceEvidence": [
+    {
+      "sourcePath": "Sources/TruthOrLie/GameHistoryStore.swift",
+      "pin": "5b11516bba2be105f44c444eb6352eb757a8abd3",
+      "gitBlob": "9ee993e41e8146944b5f4a47a5144ce64f00266a",
+      "sha256": "2f636e1b861758e193bedb8828d5cb9a4a7297cf97e7e90cfc0d8be61bef70ea"
+    },
+    {
+      "sourcePath": "Sources/TruthOrLie/HistoryView.swift",
+      "pin": "5b11516bba2be105f44c444eb6352eb757a8abd3",
+      "gitBlob": "b71a73137f8ad83bbd36ac8513cbe7018cd98dac",
+      "sha256": "89aa39d2dda7fcd2d40930067a1346f0627a27574d3f92fc0d0fe2688955a488"
+    }
+  ],
+  "coldAttempt": "cold-attempt-result.json",
+  "rubyNativeSyntax": "4 files Syntax OK only"
+}

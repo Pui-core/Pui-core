@@ -1,0 +1,53 @@
+{
+  "status": "PASS_6_SOURCE_ALIGNMENT_SSIM_AND_TWO_WINDOWS_PREPARED",
+  "sourceInAligned": [
+    {
+      "baseTime": 10,
+      "masterTime": 10,
+      "ssim": 0.999719
+    },
+    {
+      "baseTime": 37,
+      "masterTime": 37,
+      "ssim": 0.999739
+    },
+    {
+      "baseTime": 74,
+      "masterTime": 139.86666666666667,
+      "ssim": 0.996202
+    },
+    {
+      "baseTime": 93,
+      "masterTime": 158.86666666666667,
+      "ssim": 0.99597
+    },
+    {
+      "baseTime": 140,
+      "masterTime": 205.86666666666667,
+      "ssim": 0.998351
+    },
+    {
+      "baseTime": 199,
+      "masterTime": 264.8666666666667,
+      "ssim": 0.999497
+    }
+  ],
+  "windows": [
+    {
+      "id": "entry",
+      "start": 72.8,
+      "duration": 1.4,
+      "grid": "qa/continuity-entry.png",
+      "clip": "qa/continuity-entry.mp4"
+    },
+    {
+      "id": "return",
+      "start": 138.7,
+      "duration": 1.4,
+      "grid": "qa/continuity-return.png",
+      "clip": "qa/continuity-return.mp4"
+    }
+  ],
+  "wholeWatch": false,
+  "subjectiveListen": false
+}

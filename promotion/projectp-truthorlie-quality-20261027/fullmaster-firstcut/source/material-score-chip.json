@@ -1,0 +1,48 @@
+[
+  [
+    "shape.create",
+    {
+      "name": "Score paper",
+      "kind": "rect",
+      "rect": [
+        12,
+        12,
+        616,
+        216
+      ],
+      "fill": {
+        "gradient": {
+          "stops": [
+            [
+              0,
+              "#EFE0BE"
+            ],
+            [
+              1,
+              "#D8BD8C"
+            ]
+          ],
+          "angle": 100
+        }
+      }
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "name": "Fine inset",
+      "kind": "rect",
+      "rect": [
+        28,
+        28,
+        584,
+        184
+      ],
+      "fill": null,
+      "stroke": {
+        "width": 2,
+        "color": "#A3895E"
+      }
+    }
+  ]
+]

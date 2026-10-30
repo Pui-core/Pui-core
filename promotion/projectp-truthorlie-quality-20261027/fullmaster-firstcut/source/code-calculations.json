@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-10-27T01:44:49.418Z",
+  "preparedBy": "/root/growth_next_experiment_ro",
+  "issue": 129,
+  "repository": "Pui-core/com.pui-core.truthorlie",
+  "pin": "5b11516bba2be105f44c444eb6352eb757a8abd3",
+  "tree": "7a81d4102ec3cef6e632d0bf135229b6d14630e0",
+  "classification": "code-derived calculation examples; realUI not recorded",
+  "scope": {
+    "MacRestart": 0,
+    "gui": 0,
+    "snsLease": 0,
+    "productSourceOrFChanges": 0,
+    "newTests": 0,
+    "oldTestsExecuted": 0,
+    "SwiftAppOrGameEngineExecuted": 0
+  },
+  "sources": [
+    {
+      "repositoryPath": "Sources/TruthOrLie/VotingModels.swift",
+      "privatePath": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/fullmaster-calculation-ro/pinned/VotingModels.swift",
+      "sha256": "cf9cee8ba85b05c13094cbff30803e57628d0c98a098e54c16272574ef2bdb6e",
+      "gitBlobOid": "6dbc99452fb2039b0180d0bd2e86303ad5c3eeca",
+      "url": "https://github.com/Pui-core/com.pui-core.truthorlie/blob/5b11516bba2be105f44c444eb6352eb757a8abd3/Sources/TruthOrLie/VotingModels.swift"
+    },
+    {
+      "repositoryPath": "Sources/TruthOrLie/Models/GameEngine.swift",
+      "privatePath": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/fullmaster-calculation-ro/pinned/GameEngine.swift",
+      "sha256": "b91763481082795e93239bd334c060115ccc4453ba06440238ab1b39b3dff256",
+      "gitBlobOid": "44891544539ac9242f9ee21b1d765a8e50b5b585",
+      "url": "https://github.com/Pui-core/com.pui-core.truthorlie/blob/5b11516bba2be105f44c444eb6352eb757a8abd3/Sources/TruthOrLie/Models/GameEngine.swift"
+    },
+    {
+      "repositoryPath": "Sources/TruthOrLie/Models/GameModels.swift",
+      "privatePath": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/fullmaster-calculation-ro/pinned/GameModels.swift",
+      "sha256": "c815ee12093d6d23cf24ceabc947eb6f3eedd37a42181f703db905c711cb07e7",
+      "gitBlobOid": "40e2de40d23eb6468bce447d98bbd4d492092c0e",
+      "url": "https://github.com/Pui-core/com.pui-core.truthorlie/blob/5b11516bba2be105f44c444eb6352eb757a8abd3/Sources/TruthOrLie/Models/GameModels.swift"
+    },
+    {
+      "repositoryPath": "Sources/TruthOrLie/ScoreboardView.swift",
+      "privatePath": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/fullmaster-calculation-ro/pinned/ScoreboardView.swift",
+      "sha256": "89abe40da5d0aff81663a7050a0e5c4614efa7320004a0a6440779cf59485b17",
+      "gitBlobOid": "43eba981d25632829248c3cd5c2fad8c8c1225c1",
+      "url": "https://github.com/Pui-core/com.pui-core.truthorlie/blob/5b11516bba2be105f44c444eb6352eb757a8abd3/Sources/TruthOrLie/ScoreboardView.swift"
+    },
+    {
+      "repositoryPath": "Sources/TruthOrLie/RuleSettingsViews.swift",
+      "privatePath": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/fullmaster-calculation-ro/pinned/RuleSettingsViews.swift",
+      "sha256": "c80f1a8c9771dccfd0e34fb21a423c3cdef6fe8c6b8477325df48abd0a4c2157",
+      "gitBlobOid": "3545006cc8b35ce639cab32cbea9d8a5a7eb12e8",
+      "url": "https://github.com/Pui-core/com.pui-core.truthorlie/blob/5b11516bba2be105f44c444eb6352eb757a8abd3/Sources/TruthOrLie/RuleSettingsViews.swift"
+    },
+    {
+      "repositoryPath": "Sources/TruthOrLie/TitleView.swift",
+      "privatePath": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/fullmaster-calculation-ro/pinned/TitleView.swift",
+      "sha256": "013253096ec40aead2e6639d72214bc53b70b501732df6b065f27f656db46081",
+      "gitBlobOid": "07eae45b113019a3553a26d7071982f041ddc593",
+      "url": "https://github.com/Pui-core/com.pui-core.truthorlie/blob/5b11516bba2be105f44c444eb6352eb757a8abd3/Sources/TruthOrLie/TitleView.swift"
+    },
+    {
+      "repositoryPath": "Tests/TruthOrLieTests/GameEngineTests.swift",
+      "privatePath": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/fullmaster-calculation-ro/pinned/GameEngineTests.swift",
+      "sha256": "13785a1991b025b4b4cff7a908d8dabfef6423cc785ee3fcdda0de2be7fc4305",
+      "gitBlobOid": "951f3f2711d10ec3176076143a629a2ab4d40673",
+      "url": "https://github.com/Pui-core/com.pui-core.truthorlie/blob/5b11516bba2be105f44c444eb6352eb757a8abd3/Tests/TruthOrLieTests/GameEngineTests.swift"
+    },
+    {
+      "repositoryPath": "Tests/TruthOrLieTests/PeerTruthOnlyFlowTests.swift",
+      "privatePath": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/fullmaster-calculation-ro/pinned/PeerTruthOnlyFlowTests.swift",
+      "sha256": "58b66c6c7adb525ce869ef76540f2d5b1894bd469f56eaff1300abddc1925d52",
+      "gitBlobOid": "b4a520797eb03d6dca03b4ca70ac8e39f8c274bb",
+      "url": "https://github.com/Pui-core/com.pui-core.truthorlie/blob/5b11516bba2be105f44c444eb6352eb757a8abd3/Tests/TruthOrLieTests/PeerTruthOnlyFlowTests.swift"
+    },
+    {
+      "repositoryPath": "Tests/TruthOrLieTests/TruthOnlyHostRuleTests.swift",
+      "privatePath": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/fullmaster-calculation-ro/pinned/TruthOnlyHostRuleTests.swift",
+      "sha256": "b32a7e8ee688d626b985548692c6c6567fb634f9578d0b76d7c5f00f96d7bb3c",
+      "gitBlobOid": "19188922ed26bf046940230cc7b70edb670606be",
+      "url": "https://github.com/Pui-core/com.pui-core.truthorlie/blob/5b11516bba2be105f44c444eb6352eb757a8abd3/Tests/TruthOrLieTests/TruthOnlyHostRuleTests.swift"
+    }
+  ],
+  "refs": {
+    "voterFormula": {
+      "path": "Sources/TruthOrLie/VotingModels.swift",
+      "lines": [
+        133,
+        138
+      ],
+      "expression": "isCorrect ? correctGuessPoints + (consecutiveBonusEnabled ? previousStreak : 0) : 0"
+    },
+    "allVoterAwards": {
+      "path": "Sources/TruthOrLie/Models/GameEngine.swift",
+      "lines": [
+        295,
+        300
+      ],
+      "expression": "addPoints for every positive vote result; if no correct vote, answerer gains correctGuessPoints once"
+    },
+    "truthIndex": {
+      "path": "Sources/TruthOrLie/Models/GameEngine.swift",
+      "lines": [
+        260,
+        278
+      ],
+      "expression": "Truth-only correctGuessIndex = VotingRule.noLieGuessIndex(-1); normal = actualLieIndex"
+    },
+    "perVoterHistory": {
+      "path": "Sources/TruthOrLie/Models/GameEngine.swift",
+      "lines": [
+        532,
+        545
+      ],
+      "expression": "For each completed past vote result: streak[voter] = isCorrect ? previous+1 : 0; non-voting answerer has no update"
+    },
+    "voterEligibility": {
+      "path": "Sources/TruthOrLie/Models/GameEngine.swift",
+      "lines": [
+        350,
+        363
+      ],
+      "expression": "Each round answerer rotates; eligible voters exclude the answerer"
+    },
+    "completion": {
+      "path": "Sources/TruthOrLie/VotingModels.swift",
+      "lines": [
+        84,
+        90
+      ],
+      "expression": "completedCount must equal eligible voter count"
+    },
+    "summaryTrap": {
+      "path": "Sources/TruthOrLie/Models/GameModels.swift",
+      "lines": [
+        218,
+        227
+      ],
+      "expression": "outcome.awardedPlayer stores first positive voter or fallback; it is not the entire award vector"
+    },
+    "scoreStorage": {
+      "path": "Sources/TruthOrLie/Models/GameModels.swift",
+      "lines": [
+        97,
+        124
+      ],
+      "expression": "playerOne/playerTwo/additionalPoints accumulate separately"
+    }
+  },
+  "formula": {
+    "P": "correctGuessPoints (normalized1...5)",
+    "k": "That voters consecutive correct previous own inference outcomes; answererturns ignored",
+    "voterGain": "correct ? P + (bonusON ? k : 0) : 0",
+    "answererGain": "if every completed vote is incorrect then P once, else0",
+    "nextK": "own correct => oldk+1; ownincorrect =>0; no vote by that person in this round =>unchanged",
+    "noPointPoolOrSplit": true
+  },
+  "threePlayers": {
+    "displayLabel": "計算例・実UI未収録 / 配点1・連続OFF / A出題・BとCの投票完了後",
+    "vectorOrder": [
+      "A",
+      "B",
+      "C"
+    ],
+    "meaning": "Round gain vector, not whole-match score unless starting from0",
+    "P": 1,
+    "bonus": false,
+    "participants": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answerer": "A",
+    "voters": [
+      "B",
+      "C"
+    ],
+    "cases": [
+      {
+        "id": "B_ONLY_CORRECT",
+        "mode": "normal",
+        "actualLieIndex": 2,
+        "votes": {
+          "B": 2,
+          "C": 0
+        },
+        "correct": {
+          "B": true,
+          "C": false
+        },
+        "delta": [
+          0,
+          1,
+          0
+        ],
+        "answererCondition": "at least one correct; no answerer points"
+      },
+      {
+        "id": "B_C_BOTH_CORRECT",
+        "mode": "normal",
+        "actualLieIndex": 2,
+        "votes": {
+          "B": 2,
+          "C": 2
+        },
+        "correct": {
+          "B": true,
+          "C": true
+        },
+        "delta": [
+          0,
+          1,
+          1
+        ],
+        "answererCondition": "no answerer points; each correct voter gains1, no split/first-winner-only"
+      },
+      {
+        "id": "NOBODY_CORRECT",
+        "mode": "normal",
+        "actualLieIndex": 2,
+        "votes": {
+          "B": 0,
+          "C": 1
+        },
+        "correct": {
+          "B": false,
+          "C": false
+        },
+        "delta": [
+          1,
+          0,
+          0
+        ],
+        "answererCondition": "every eligible voter incorrect; addP once toA, not once per incorrect voter"
+      },
+      {
+        "id": "ONE_CORRECT_TRUTH_ONLY",
+        "mode": "actual_truth_only_round",
+        "correctIndex": -1,
+        "votes": {
+          "B": -1,
+          "C": 0
+        },
+        "correct": {
+          "B": true,
+          "C": false
+        },
+        "delta": [
+          0,
+          1,
+          0
+        ],
+        "mirrorIfCOnly": [
+          0,
+          0,
+          1
+        ],
+        "answererCondition": "at least one correct;A0. Choosingtruth-only in an ordinarylie round is not automaticallycorrect."
+      }
+    ]
+  },
+  "twoPlayers": {
+    "displayLabel": "計算例・実UI未収録 / 配点2・連続ON / 2人3R全的中",
+    "P": 2,
+    "bonus": true,
+    "initialScore": {
+      "AA": 0,
+      "BB": 0
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "answerer": "AA",
+        "voter": "BB",
+        "voterPreviousOwnStreak": 0,
+        "voterCorrect": true,
+        "delta": {
+          "AA": 0,
+          "BB": 2
+        },
+        "score": {
+          "AA": 0,
+          "BB": 2
+        }
+      },
+      {
+        "round": 2,
+        "answerer": "BB",
+        "voter": "AA",
+        "voterPreviousOwnStreak": 0,
+        "voterCorrect": true,
+        "delta": {
+          "AA": 2,
+          "BB": 0
+        },
+        "score": {
+          "AA": 2,
+          "BB": 2
+        },
+        "BBStreakStill": 1
+      },
+      {
+        "round": 3,
+        "answerer": "AA",
+        "voter": "BB",
+        "voterPreviousOwnStreak": 1,
+        "voterCorrect": true,
+        "delta": {
+          "AA": 0,
+          "BB": 3
+        },
+        "score": {
+          "AA": 2,
+          "BB": 5
+        }
+      }
+    ],
+    "bonusOffComparison": {
+      "sameAllCorrectRoundOutcomes": true,
+      "BBInferenceGains": [
+        2,
+        2
+      ],
+      "final": {
+        "AA": 2,
+        "BB": 4
+      }
+    },
+    "whyNoExtraBBPointAtRound2": "AA is correct, so questionerBB gets no fallback point; questionerturn itself does not resetBB inference streak"
+  },
+  "resetExample": {
+    "displayLabel": "計算例・実UI未収録 / BB自身の推理加点だけ / 配点2・連続ON",
+    "ownInferenceOutcomes": [
+      "correct",
+      "wrong",
+      "correct"
+    ],
+    "previousOwnK": [
+      0,
+      1,
+      0
+    ],
+    "inferenceGains": [
+      2,
+      0,
+      2
+    ],
+    "nextOwnK": [
+      1,
+      0,
+      1
+    ],
+    "cumulativeInferencePoints": [
+      2,
+      2,
+      4
+    ],
+    "excluded": "Any separate answerer points and other players totals; do not label this isolated track the full match score.",
+    "otherPersonsWrong": "Another voter being wrong does not resetBB; only that persons own vote result updates their ownk.",
+    "notYetCoveredByReadTestBody": "No dedicated self-wrong-reset assertion was found in bounded pin test search; reset is directly derived fromEngine541."
+  },
+  "uiWordingMismatch": {
+    "label": "Static UI wording does not follow custombasepoints",
+    "actualCode": {
+      "path": "Sources/TruthOrLie/Models/GameEngine.swift",
+      "lines": [
+        299,
+        300
+      ],
+      "rule": "allwrong answerer gains configuredP"
+    },
+    "uiRefs": [
+      {
+        "path": "Sources/TruthOrLie/RuleSettingsViews.swift",
+        "lines": [
+          73,
+          119
+        ],
+        "wording": "出題者に1点"
+      },
+      {
+        "path": "Sources/TruthOrLie/TitleView.swift",
+        "lines": [
+          1637,
+          1855
+        ],
+        "wording": "全員が外した場合は出題者に1点"
+      }
+    ],
+    "matchingWhenP": 1,
+    "mismatchWhenP": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "testBodySupport": {
+      "path": "Tests/TruthOrLieTests/GameEngineTests.swift",
+      "lines": [
+        498,
+        510
+      ],
+      "assertion": "configuredP5, allwrong, answerer5"
+    },
+    "safeNarration": "この計算例は配点1。全員が外すと、出題者に1点。",
+    "avoid": "全設定で、出題者ボーナスは必ず1点。",
+    "productChange": 0
+  },
+  "existingTestTextEvidence": [
+    {
+      "path": "Tests/TruthOrLieTests/GameEngineTests.swift",
+      "lines": [
+        369,
+        391
+      ],
+      "supports": "Defaultsinglecorrect and wrongfallback"
+    },
+    {
+      "path": "Tests/TruthOrLieTests/GameEngineTests.swift",
+      "lines": [
+        445,
+        475
+      ],
+      "supports": "Several voters can get points independently"
+    },
+    {
+      "path": "Tests/TruthOrLieTests/GameEngineTests.swift",
+      "lines": [
+        477,
+        495
+      ],
+      "supports": "Allwrong fallbackonce"
+    },
+    {
+      "path": "Tests/TruthOrLieTests/GameEngineTests.swift",
+      "lines": [
+        498,
+        510
+      ],
+      "supports": "FallbackusesconfiguredP"
+    },
+    {
+      "path": "Tests/TruthOrLieTests/GameEngineTests.swift",
+      "lines": [
+        519,
+        545
+      ],
+      "supports": "Exact2playerP2/bonusONthree-round2/2/5calculation"
+    },
+    {
+      "path": "Tests/TruthOrLieTests/GameEngineTests.swift",
+      "lines": [
+        548,
+        563
+      ],
+      "supports": "Actualtruth-onlyround,-1correct,defaultgain1"
+    },
+    {
+      "path": "Tests/TruthOrLieTests/GameEngineTests.swift",
+      "lines": [
+        394,
+        404
+      ],
+      "supports": "No-lieguess in normalround iswrong"
+    }
+  ],
+  "testExecutionStatus": "All above are source text read only. No historicalpass/CIresult verified or reused; no newtests run.",
+  "presentation": {
+    "requiredOnDiagram": "計算例・実UI未収録",
+    "settingsOnEachDiagram": true,
+    "useDistinctSimpleMathLayoutNotFakeGameScreenshot": true,
+    "original7R": "ExistingP1 footage cannot be relabeled as P2/bonusON. ThisRO adds no newUI evidence."
+  }
+}
