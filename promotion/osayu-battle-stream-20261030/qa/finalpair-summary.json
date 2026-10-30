@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "issue": 158,
+  "status": "two_videos_delivered_technical_verification_passed",
+  "variants": [
+    {
+      "variant": "solo",
+      "structureChecks": 25,
+      "allStructureChecksPassed": true,
+      "negativeAndRegressionTests": 15,
+      "testFailures": 0,
+      "decodedFrames": 570,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "duration": 19,
+      "audioStreams": 0,
+      "wholeDecodeExit": 0,
+      "nativeTrackedTargetMaxErrorPixels": 0.4040610178209934,
+      "nativeTrackingWindowTravelPixels": [
+        {
+          "id": "date",
+          "travel": 54
+        },
+        {
+          "id": "teacher",
+          "travel": 64
+        },
+        {
+          "id": "resolve",
+          "travel": 64
+        },
+        {
+          "id": "cheer",
+          "travel": 62
+        }
+      ],
+      "finalCleanMatrixVsPixelMaxErrorPixels": 3.297178029663165,
+      "finalCleanActualWindowTravelPixels": [
+        {
+          "id": "date",
+          "travel": 56
+        },
+        {
+          "id": "teacher",
+          "travel": 66
+        },
+        {
+          "id": "resolve",
+          "travel": 64
+        },
+        {
+          "id": "cheer",
+          "travel": 62
+        }
+      ],
+      "sourceBytesPreserved": true,
+      "losslessOpaqueProof": {
+        "sampleTimes": 17,
+        "allComparedChannelsExact": true,
+        "method": "Source-resolution exact alpha over padded reconstruction footprint; native lossless rendering vs isolated native reference"
+      },
+      "filmIdentityTransform": true,
+      "nasBytesShaAndActualWholeDecodeMatched": true,
+      "aiSafePreviewFootageImports": 0,
+      "aiSafePreviewSceneTimes": [
+        1.4,
+        5,
+        9,
+        13,
+        17
+      ],
+      "characterAIInputs": 0
+    },
+    {
+      "variant": "collab",
+      "structureChecks": 25,
+      "allStructureChecksPassed": true,
+      "negativeAndRegressionTests": 15,
+      "testFailures": 0,
+      "decodedFrames": 570,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "duration": 19,
+      "audioStreams": 0,
+      "wholeDecodeExit": 0,
+      "nativeTrackedTargetMaxErrorPixels": 0.4040610178209934,
+      "nativeTrackingWindowTravelPixels": [
+        {
+          "id": "date",
+          "travel": 54
+        },
+        {
+          "id": "teacher",
+          "travel": 64
+        },
+        {
+          "id": "resolve",
+          "travel": 64
+        },
+        {
+          "id": "cheer",
+          "travel": 62
+        }
+      ],
+      "finalCleanMatrixVsPixelMaxErrorPixels": 3.297178029663165,
+      "finalCleanActualWindowTravelPixels": [
+        {
+          "id": "date",
+          "travel": 56
+        },
+        {
+          "id": "teacher",
+          "travel": 66
+        },
+        {
+          "id": "resolve",
+          "travel": 64
+        },
+        {
+          "id": "cheer",
+          "travel": 62
+        }
+      ],
+      "sourceBytesPreserved": true,
+      "losslessOpaqueProof": {
+        "sampleTimes": 17,
+        "allComparedChannelsExact": true,
+        "method": "Source-resolution exact alpha over padded reconstruction footprint; native lossless rendering vs isolated native reference"
+      },
+      "filmIdentityTransform": true,
+      "nasBytesShaAndActualWholeDecodeMatched": true,
+      "aiSafePreviewFootageImports": 0,
+      "aiSafePreviewSceneTimes": [
+        1.4,
+        5,
+        9,
+        13,
+        17
+      ],
+      "characterAIInputs": 0
+    }
+  ],
+  "background": {
+    "kind": "limited_private_candidate",
+    "actualStreamProvenanceConfirmed": false,
+    "characterFree": null,
+    "independentFixedBase": true,
+    "aiPreviewImports": 0
+  },
+  "editablePackage": {
+    "byteVerifiedCopies": true,
+    "nativeRelinkReopenSaveCount": 6,
+    "nativeRedrawCount": 4
+  },
+  "humanFullViewing": false,
+  "ownerCreativeAcceptance": false,
+  "snsPosted": false,
+  "musicAdded": false,
+  "newWorkers": 0,
+  "cronStarted": 0,
+  "completionNotificationSent": false
+}
