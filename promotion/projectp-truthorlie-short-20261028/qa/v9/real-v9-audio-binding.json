@@ -1,0 +1,144 @@
+{
+  "duration": 19.2,
+  "speaker": "VOICEVOX:玄野武宏",
+  "speakerId": 11,
+  "version": "0.25.1",
+  "cues": [
+    {
+      "id": "hook",
+      "at": 0.16,
+      "end": 3.1,
+      "text": "外れた一票。得点するのは、どっち？",
+      "file": "voice-real-v9-hook.wav",
+      "sha256": "69fbc8a7e929f549b6de484c9b6282bab537e0fc132158012b71639ae7e6fdcd",
+      "predictedDuration": 2.7537400274519372,
+      "speed": 1.13,
+      "kana": "ハズレタ'/イッ'ピョオ、ト_クテン'/スル'/ノワ'、ド'ッチ？"
+    },
+    {
+      "id": "rule",
+      "at": 3.36,
+      "end": 6.1,
+      "text": "この回、五つの回答に、嘘は一つ。",
+      "file": "voice-real-v9-rule.wav",
+      "sha256": "3404f52708eaac7cb72116596bdbf20e51dae55c79fd11501646961cfdd97800",
+      "predictedDuration": 2.6741674293070696,
+      "speed": 1.2361388468249401,
+      "kana": "コノ'/カ'イ、イツ'ツノ/カイトオニ'、ウ'ソワ/_ヒト'ツ"
+    },
+    {
+      "id": "vote",
+      "at": 6.32,
+      "end": 9.5,
+      "text": "投票は二番。でも、嘘は五番。",
+      "file": "voice-real-v9-vote.wav",
+      "sha256": "2f51df31d8d13d68dc768e1b423b546c5c776286be760ffac68a525771e421af",
+      "predictedDuration": 2.6869938857892977,
+      "speed": 1.13,
+      "kana": "トオヒョオワ'/ニ'バン、デ'モ、ウ'ソワ/ゴ'バン"
+    },
+    {
+      "id": "result",
+      "at": 9.76,
+      "end": 13.45,
+      "text": "全員が外したので、出題側に一点。",
+      "file": "voice-real-v9-result.wav",
+      "sha256": "4ae4dd75c61301bffe40dc882e8de58db724edbc41d36a2e96a2d82b358c0b32",
+      "predictedDuration": 2.5006565859465475,
+      "speed": 1.13,
+      "kana": "ゼンインガ'/ハズ_シタ'ノデ、_シュツダイガワニ'/イッ'テン"
+    },
+    {
+      "id": "title",
+      "at": 13.44,
+      "end": 16.15,
+      "text": "自作ゲーム、うそか、まことか。",
+      "file": "voice-real-v9-title.wav",
+      "sha256": "6c2116d5af9dea5fd11818da7d2fa9a46180db1582ed845b61e4fd5621bfaba8",
+      "predictedDuration": 2.2968101315899236,
+      "speed": 1.13,
+      "kana": "ジサクゲ'エム、ウ'ソカ、マコトカ'"
+    },
+    {
+      "id": "cta",
+      "at": 16.8,
+      "end": 18.75,
+      "text": "アイフォーンで配信中。",
+      "file": "voice-real-v9-cta.wav",
+      "sha256": "0702259e2272098f2b0e647f38ac15fbe9b4725476a0ff17ac8764bd7521b1e3",
+      "predictedDuration": 1.2651075263571951,
+      "speed": 1.13,
+      "kana": "アイフォ'オンデ/ハイシンチュウ'"
+    }
+  ],
+  "events": [
+    {
+      "at": 1.6,
+      "s": 0
+    },
+    {
+      "at": 3.2,
+      "s": 0
+    },
+    {
+      "at": 4,
+      "s": 0
+    },
+    {
+      "at": 4.8,
+      "s": 0
+    },
+    {
+      "at": 6,
+      "s": 1
+    },
+    {
+      "at": 7.2,
+      "s": 1
+    },
+    {
+      "at": 8.4,
+      "s": 0
+    },
+    {
+      "at": 10.4,
+      "s": 2
+    },
+    {
+      "at": 12,
+      "s": 0
+    },
+    {
+      "at": 14.4,
+      "s": 0
+    },
+    {
+      "at": 16.8,
+      "s": 1
+    }
+  ],
+  "sourceWavsPreserved": true,
+  "music": "Cipher / Kevin MacLeod",
+  "nominalBpm": 150,
+  "musicSourceIn": 0.824,
+  "wholeSubjectiveListen": false,
+  "musicProcessing": {
+    "start": 0.824,
+    "excerptSeconds": 19.2,
+    "loudnorm": {
+      "I": -27,
+      "LRA": 7,
+      "TP": -6
+    },
+    "level": 0.45,
+    "postPcmGain": 0.6666666666666666,
+    "sidechain": {
+      "threshold": 0.055,
+      "ratio": 2.2,
+      "attackMs": 12,
+      "releaseMs": 180
+    },
+    "fadeIn": 0.03,
+    "fadeOut": 0.4
+  }
+}

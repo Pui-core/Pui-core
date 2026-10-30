@@ -1,0 +1,20 @@
+{
+  "bgmSha256": "be3f9162f922dc3ab404eff56432b47dfa6f5e6bca72887a1e78aee19b7838da",
+  "voiceSha256": "41b0ac8828b01342f7f895d73abde7672be4a190dfc08e867e7a398b6f00a90a",
+  "videoPacketsEqual": true,
+  "values": [
+    {
+      "variant": "voice",
+      "videoPacketSha256": "SHA256=95804ac6a8cec3b4bf206bd984cb3a5bb035770085980add2cf58df674fd750f"
+    },
+    {
+      "variant": "bgm",
+      "videoPacketSha256": "SHA256=95804ac6a8cec3b4bf206bd984cb3a5bb035770085980add2cf58df674fd750f"
+    }
+  ],
+  "actualFinalSheet": "real-v9-final-contact.png",
+  "sheetSha256": "a0d458092073c5aa053ba03d71be196a6f9cfec70b68bbf95b25ea2b9841c7e7",
+  "contactReceiptSha256": "a77746e783c95cc43abbc2f16a8bc49815d68f4a70791f91723ec4515a2421b1",
+  "sheetReextractedFromFinalBgm": true,
+  "finalQaRun": "All contact/transition/actual frames were re-extracted after the final FilmCraft audio remix, in the same successful qa-real-v9 pass that bound be3f9162... to final-check."
+}

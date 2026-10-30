@@ -1,0 +1,98 @@
+{
+  "inputSha256": "af30770f63e5e3d8a7b12c6e70d5790c7e8e67ad210db3d132fc9c15c8a12e0b",
+  "rawSha256": "7f1f903976c07aa34e17189f2886261f00dfb7ecc6abbacb25c6846a60d25315",
+  "recording": "coder-round2-vote01/normal-ui.mov",
+  "driverSha256": "ac2a7a39ce10bbdab58e7cc910c42fd2ba144bb2840307e654ee752f670d3467",
+  "testSummarySha256": "805746ef83ff674c319be24190e2da7d1a6b652b1757d79291b64dd2c999b45d",
+  "testPassed": 1,
+  "answers": [
+    "美術館をゆっくり歩く",
+    "ワイヤレスイヤホン",
+    "温かい味噌汁",
+    "小説を読むこと",
+    "机の片づけ"
+  ],
+  "lieZeroBased": 4,
+  "voteZeroBased": 1,
+  "speaker": "操作例BB",
+  "guesser": "操作例AA",
+  "actualResult": "正解者なし・操作例BBに1点",
+  "actualScore": {
+    "AA": 0,
+    "BB": 2,
+    "roundDelta": {
+      "AA": 0,
+      "BB": 1
+    }
+  },
+  "clips": [
+    {
+      "id": "five",
+      "from": 44.7,
+      "to": 47.9,
+      "crop": [
+        1100,
+        1500,
+        40,
+        570
+      ],
+      "file": "media/r2-five-v9.mp4",
+      "sha256": "1181525600f3e9488832137def645a4953d349e532fe7ebdfd2ace5c9ee3f39b"
+    },
+    {
+      "id": "vote",
+      "from": 61.8,
+      "to": 63.4,
+      "crop": [
+        1100,
+        1510,
+        40,
+        480
+      ],
+      "file": "media/r2-vote-v9.mp4",
+      "sha256": "47e696cb036de692d3156c93178e196dced12f28948f72b638acfa0ebd2d589e"
+    },
+    {
+      "id": "confirm",
+      "from": 65.2,
+      "to": 67.2,
+      "crop": [
+        1100,
+        2230,
+        40,
+        200
+      ],
+      "file": "media/r2-confirm-v9.mp4",
+      "sha256": "5d95cb3243669095865c4b7e822cf8f0258a694af202dfd886031d33928e71c5"
+    },
+    {
+      "id": "result",
+      "from": 67.1,
+      "to": 69.1,
+      "crop": [
+        1100,
+        1350,
+        40,
+        280
+      ],
+      "file": "media/r2-result-v9.mp4",
+      "sha256": "147e5269c0f00ed100523ca03ae543ceb6a06158571c9c902b14de3051c92f77"
+    },
+    {
+      "id": "score",
+      "from": 70.7,
+      "to": 73.1,
+      "crop": [
+        1100,
+        2200,
+        40,
+        160
+      ],
+      "file": "media/r2-score-v9.mp4",
+      "sha256": "44917a5399afe098a8cb55aaee73d30fb85b2956c59b05be0ee7a8704fcbdf72"
+    }
+  ],
+  "allClipsSameRecordedRound": true,
+  "fictionalAnswers": true,
+  "noNewUiOrVotesSynthesized": true
+}

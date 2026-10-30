@@ -1,0 +1,121 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1080,
+        1920
+      ],
+      "fill": "#07111a",
+      "name": "Night"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "F:\\Videos\\ProjectP-TruthOrLie-Short-2026-10-28\\revision-01\\media\\logo.png",
+      "scale": 49,
+      "fit": false,
+      "center": [
+        540,
+        440
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        68,
+        660,
+        944,
+        4
+      ],
+      "fill": "#c5a26b",
+      "name": "Gold line"
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "F:\\Videos\\ProjectP-TruthOrLie-Short-2026-10-28\\revision-01\\media\\card-02.png",
+      "scale": 93,
+      "fit": false,
+      "center": [
+        540,
+        890
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "F:\\Videos\\ProjectP-TruthOrLie-Short-2026-10-28\\revision-01\\media\\card-04.png",
+      "scale": 93,
+      "fit": false,
+      "center": [
+        540,
+        1090
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "file.placeEmbedded",
+    {
+      "path": "F:\\Videos\\ProjectP-TruthOrLie-Short-2026-10-28\\revision-01\\media\\natural-still.png",
+      "scale": 45,
+      "fit": false,
+      "center": [
+        245,
+        1460
+      ],
+      "smartObject": true
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "Hook",
+      "text": "この5つ、嘘はどれ？",
+      "x": 78,
+      "y": 650,
+      "font": "Meiryo",
+      "weight": 700,
+      "size": 72,
+      "color": "#f1e7d6"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "Disclosure",
+      "text": "架空の2人対戦・演出例",
+      "x": 360,
+      "y": 1390,
+      "font": "Meiryo",
+      "weight": 700,
+      "size": 40,
+      "color": "#d9c8a6"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "Store",
+      "text": "App Storeで配信中",
+      "x": 360,
+      "y": 1490,
+      "font": "Meiryo",
+      "weight": 700,
+      "size": 43,
+      "color": "#e6be7b"
+    }
+  ]
+]
