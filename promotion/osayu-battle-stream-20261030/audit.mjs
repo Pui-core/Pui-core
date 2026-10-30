@@ -26,7 +26,8 @@ export function auditProject(p,layout){
  const comp=composition(p),layers=comp.kind.layers,rig=layers.find(x=>x.name.startsWith('STAGE CAMERA'));
  const checks=[],samples=[];const check=(id,pass,detail)=>checks.push({id,passed:!!pass,...(detail?{detail}:{})});
  check('canvas_and_time',comp.kind.width===1080&&comp.kind.height===1920&&comp.kind.duration===duration*ticks&&comp.kind.frame_rate.num/comp.kind.frame_rate.den===fps);
- check('neutral_footage_imports_zero',Object.values(p.items).filter(x=>x.kind?.type==='Footage').length===0);
+ const footage=Object.values(p.items).filter(x=>x.kind?.type==='Footage');
+ check('media_import_boundary',footage.length===(layout.includeCharacter?characterBoxes(layout.variant).length+1:0));
  check('independent_camera',rig?.parent===null);
  check('camera_anchor',JSON.stringify(prop(rig,'anchor').value.v)===JSON.stringify([...anchor,0]));
  const marker=s=>layers.find(x=>x.name==='TRACKING PROBE '+s.id),spatial=layers.find(x=>x.name==='CAMERA SPATIAL PROBE');
@@ -59,6 +60,6 @@ export function auditProject(p,layout){
  check('text_boxes_never_overlap',textCollisions.length===0,{violations:textCollisions.slice(0,5),count:textCollisions.length});
  check('facts_current_without_fabricated_time',layout.boxes.some(x=>x.text==='セラ・ネージュ'||x.text==='先生は セラ・ネージュ')&&!layout.boxes.some(x=>/11\/24|22:00|ビンゴ|BINGO|150BPM|2026/.test(x.text)));
  check('visible_spatial_camera_reference',layers.some(x=>x.name==='STAGE SPATIAL REFERENCE BASELINE'&&x.parent===rig.id)&&spatial?.parent===rig.id&&!prop(spatial,'position').keys?.length);
- return {passed:checks.every(x=>x.passed),variant:layout.variant,checks,samples,characterImagesAIViewed:0,backgroundConfirmed:false,provisional:true};
+ return {passed:checks.every(x=>x.passed),variant:layout.variant,checks,samples,characterImagesAIViewed:0,backgroundConfirmed:false,backgroundCandidateUsed:!!layout.backgroundCandidateUsed};
 }
 export function readAudit(projectFile,layoutFile){return auditProject(JSON.parse(fs.readFileSync(projectFile)),JSON.parse(fs.readFileSync(layoutFile)));}

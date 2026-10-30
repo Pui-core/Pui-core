@@ -12,7 +12,7 @@ export const ffRoot=process.env.OSAYU158_FFMPEG || '/home/pui/tmp/projectp145-to
 export const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 export function save(p,v){fs.mkdirSync(path.dirname(p),{recursive:true,mode:0o700});fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n',{mode:0o600});}
 export function parseNative(s){const i=s.indexOf('{');if(i<0)throw Error('Native response missing');return JSON.parse(s.slice(i).trim());}
-export async function run(exe,args,name,{display=false,timeoutMs=180000,env={},consumeStdout}={}) {
+export async function run(exe,args,name,{display=false,timeoutMs=180000,env={},consumeStdout,input}={}) {
   const runtime=path.join(root,'runtime'), receipt=path.join(root,'qa',name+'.json');
   for(const d of ['run','config','cache','data'])fs.mkdirSync(path.join(runtime,d),{recursive:true,mode:0o700});
   fs.mkdirSync(path.dirname(receipt),{recursive:true,mode:0o700});
@@ -24,7 +24,8 @@ export async function run(exe,args,name,{display=false,timeoutMs=180000,env={},c
   const command=['-n','10','ionice','-c','3','taskset','-c',cpu,...(display?['xvfb-run','-a','-s','-screen 0 1280x720x24 -nolisten tcp']:[]),exe,...args];
   const startedAt=new Date().toISOString(); let stdout='',stderr='',timedOut=false;
   return await new Promise((resolve,reject)=>{
-    const p=spawn('nice',command,{env:childEnv,detached:true,stdio:['ignore','pipe','pipe']});
+    const p=spawn('nice',command,{env:childEnv,detached:true,stdio:[input===undefined?'ignore':'pipe','pipe','pipe']});
+    if(input!==undefined)p.stdin.end(input);
     const stop=()=>{try{process.kill(-p.pid,'SIGTERM');}catch{}};
     process.once('SIGINT',stop);process.once('SIGTERM',stop);
     fs.appendFileSync(path.join(root,'qa/owned-processes.jsonl'),JSON.stringify({pid:p.pid,startedAt,name,exe})+'\n');
@@ -48,4 +49,5 @@ export async function run(exe,args,name,{display=false,timeoutMs=180000,env={},c
   });
 }
 export const native=(args,name)=>run(effect,args,name,{display:true});
+export const filmNative=(args,name,input)=>run(film,args,name,{display:true,input,timeoutMs:240000});
 export const ff=(args,name)=>run(path.join(ffRoot,'bin/ffmpeg'),['-nostdin','-hide_banner','-loglevel','error','-threads','2','-filter_threads','2',...args],name,{env:{LD_LIBRARY_PATH:path.join(ffRoot,'lib')}});

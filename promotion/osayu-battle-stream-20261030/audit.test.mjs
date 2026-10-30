@@ -1,8 +1,11 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';
 import {spawnSync} from 'node:child_process';
+import os from 'node:os';
 import {auditProject,composition,prop,ticks} from './audit.mjs';
 import {acceptedBinding} from './binding.mjs';
 import {composition as generatedComposition} from './motion.mjs';
+import {fixedLayer} from './production-audit.mjs';
+import {characterBoxes} from './plan.mjs';
 const root=process.env.OSAYU158_ROOT;
 if(!root)throw Error('Run against the actual saved neutral native project');
 const variant=process.env.OSAYU158_VARIANT||'solo';
@@ -21,15 +24,26 @@ test('parenting the character reservation to camera is rejected',()=>{const r=mu
 test('camera pan without the fixed-world spatial reference is rejected',()=>{const r=mutated(l=>{l.find(x=>x.name==='CAMERA SPATIAL PROBE').parent=null;});assert.ok(failed(r,'visible_spatial_camera_reference'));});
 test('production without explicit accepted background binding is rejected',()=>{assert.throws(()=>acceptedBinding(),/BACKGROUND_UNCONFIRMED/);assert.throws(()=>acceptedBinding(new URL('./binding.example.json',import.meta.url)),/BACKGROUND_UNCONFIRMED/);});
 test('both production CLIs refuse before writing or launching native tools',()=>{
- const env={...process.env};delete env.OSAYU158_BINDING;
+ const temp=fs.mkdtempSync(path.join(os.tmpdir(),'osayu158-reject-')),env={...process.env,OSAYU158_ROOT:temp};delete env.OSAYU158_BINDING;
  for(const file of ['build.mjs','render.mjs']){const r=spawnSync(process.execPath,[new URL('./'+file,import.meta.url).pathname,'production','--variant',variant],{env,encoding:'utf8',timeout:5000});assert.equal(r.status,1);assert.match(r.stderr,/BACKGROUND_UNCONFIRMED/);}
- assert.equal(fs.existsSync(path.join(root,'projects',variant+'-production.ecproj')),false);
- assert.equal(fs.existsSync(path.join(root,'videos',variant+'-production.mp4')),false);
+ assert.deepEqual(fs.readdirSync(temp),[]);fs.rmdirSync(temp);
 });
 test('clean neutral and probe native projects have identical shared layers',()=>{
  const clean=JSON.parse(fs.readFileSync(path.join(root,'projects',variant+'-neutral.ecproj')));
  const normalized=p=>{const l=composition(p).kind.layers,names=new Map(l.map(x=>[x.id,x.name]));
   function visit(v,key){if(key==='parent'&&v!==null)return names.get(v);if(Array.isArray(v))return v.map(x=>visit(x));if(v&&typeof v==='object')return Object.fromEntries(Object.entries(v).filter(([k])=>!['id','uid'].includes(k)).map(([k,x])=>[k,visit(x,k)]));return v;}
-  return l.filter(x=>!x.name.startsWith('TRACKING PROBE')&&x.name!=='CAMERA SPATIAL PROBE').map(x=>visit(x));};
+  return l.filter(x=>!x.name.includes('PROBE')).map(x=>visit(x));};
  assert.deepEqual(normalized(project),normalized(clean));
 });
+if(process.env.OSAYU158_BINDING){
+ const binding=JSON.parse(fs.readFileSync(process.env.OSAYU158_BINDING));
+ const bindingFailure=(change,pattern)=>{const b=structuredClone(binding);change(b);const temp=fs.mkdtempSync(path.join(os.tmpdir(),'osayu158-binding-')),p=path.join(temp,'private.json');try{fs.writeFileSync(p,JSON.stringify(b),{mode:0o600});assert.throws(()=>acceptedBinding(p,variant),pattern);}finally{fs.unlinkSync(p);fs.rmdirSync(temp);}};
+ test('limited candidate use keeps provenance and character-free state unknown',()=>{const b=acceptedBinding(process.env.OSAYU158_BINDING,variant);assert.equal(b.background.actualStreamProvenanceConfirmed,false);assert.equal(b.background.characterFree,null);});
+ test('candidate cannot silently claim confirmed provenance or character-free',()=>{bindingFailure(b=>b.background.actualStreamProvenanceConfirmed=true,/BACKGROUND_UNCONFIRMED/);bindingFailure(b=>b.background.characterFree=true,/BACKGROUND_UNCONFIRMED/);});
+ test('candidate must stay outside the stage camera',()=>bindingFailure(b=>b.background.cameraPolicy='stage_camera',/BACKGROUND_MUST_REMAIN_FIXED/));
+ test('bound media hash changes are rejected without changing the original',()=>bindingFailure(b=>b.character.sha256='0'.repeat(64),/BINDING_BYTES_CHANGED/));
+ test('production character with animated opacity or effects is rejected',()=>{
+  const p=JSON.parse(fs.readFileSync(path.join(root,'projects',variant+'-production.ecproj'))),b=characterBoxes(variant)[0],l=composition(p).kind.layers.find(x=>x.name==='CHARACTER ORIGINAL FIXED '+b.id);
+  assert.equal(fixedLayer(l,b),true);const altered=structuredClone(l);prop(altered,'opacity').keys=[{time:0,value:{v:0}}];assert.equal(fixedLayer(altered,b),false);
+ });
+}

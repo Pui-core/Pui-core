@@ -1,53 +1,65 @@
-# おさゆ11/3バトル告知：配信背景への差替え準備
+# おさゆ11月3日バトル告知：通常版とセラ先輩版
 
-管理 [Issue158](https://github.com/Pui-core/-/issues/158) の**未完成の制作基盤**です。本人の配信背景は未確定で、現段階のneutral版は図形だけの機構確認用です。完成デザイン、本人背景の採用、本番人物の検証、NAS納品を意味しません。旧157、旧v03、旧V4は変更していません。
+管理 [Issue158](https://github.com/Pui-core/-/issues/158) の2構図を制作するコードです。最新の二本提出指示により、背景の任意質問だけを理由に制作を止めず、PM指定の背景候補を私的制作版へ限定使用します。**実配信由来・人物混在は未確認**であり、確認済み・人物なしとは報告しません。
 
-## 前版から変える構造
+## 二つの構図
 
-- 全画面の左寄せ大文字の反復を、上部の配信ウィンドウと固定情報レールを分ける構造へ変更する準備です。背景の構図に合わせて位置・余白を確定するため、現時点の配置や灰色を完成デザインとしません。
-- ステージ上の情報を「11/3と挑戦 → 先生 → 意気込み → 応援 → 日付と導線」に展開します。開始時刻・年・ルール・スコアを追加していません。
-- 開始時の短い飛び込みだけにせず、対象自体が移動する間もカメラが追い、読める位置で保持し、別対象へ移り、最後は全体へ戻ります。日付と導線の固定レールはカメラから独立しています。
-- 人物は追従しません。予約矩形を確保し、人物をimportしないneutral原本を独立して保存します。本番人物の位置・サイズ等は全編固定の独立overlayにします。
+- solo：上部の配信盤面と、下部のおさゆ一人・挑戦・先生・意気込みの情報帯を分離。
+- collab：配信盤面の下を、挑戦するおさゆ／先生セラ・ネージュの対向名札と二人の固定立ち絵へ組み替えます。単に二体目を重ねません。
+- 全画面の左寄せ大文字の反復から、日付ヘッダー・移動する盤面・独立人物・共通の下部導線へ情報階層を変更。追従→着地→次対象→全体復帰を実描画し、同camera下のworld固定目盛りが視点移動の基準になります。
+- 19秒／1080×1920／30fps／音声stream0。11月3日、チュートリアルバトル、セラ先輩、意気込み、応援、プロフィール→配信を維持。年・開始時刻・ルール・実スコアは追加しません。旧157・旧v03・旧V4は保持します。
 
-## solo / collab
+## 素材とAI確認の境界
 
-同じ11/3告知を `--variant solo` / `--variant collab` で分離します。native原本・動画・検証票の名前にもvariantを含め、上書きしません。collabはおさゆと先生の二人分を独立固定overlayとして予約し、情報レールを上側の共通帯と下側の導線へ組み替えます。二人ともneutral版にはimportしません。
+人物・背景候補・人物入り映像・私有画像path/digest・rawログはSourceに含めません。私的bindingの現bytes/SHA/寸法とコピー後の同一性を照合します。人物は既存の通常透過済み原本とowner指定相手PNGを固定合成し、生成・AI背景除去・ポーズや表情変更は行いません。
 
-先生のowner指定立ち絵は通常固定合成の利用GOに限ります。包括ライセンス・顔やポーズの生成許可が確認済みとは扱いません。元PNGのalphaを保持し、初期配置と等方scaleだけを設定します。
+未知背景全体はカメラ外の独立した全編固定base。上に不透明なneutral全画面を残しません。人物も位置・等方scale・回転・不透明度を全編固定し、親・キー・式・効果・マスク・ブラー・3Dなしです。
 
-## 背景と素材の境界
+neutral / preview は人物と未知背景をimport自体せず、同じ文字・盤面・cameraと予約領域だけで保存・描画。AIが見るのはfootage import0と原本/動画の同一性を確認した別原本だけ。本番は通常ソフトの構造・数値検査に限定します。
 
-私有画像、キャラ入り画像・映像、元画像の識別hash、私的な参照パス、rawログはこのSourceに含めません。neutral原本のfootage importは0です。
+## 私的binding
 
-`binding.example.json` は意図的に未確定です。本番用の私有bindingには、PMが確認した本人配信背景、その画像に人物が含まれないこと、通常透過済み人物の参照が必要です。現bytes・SHA・寸法と結び付け、私的コピー後も実体を照合します。識別hashをSourceへhardcodeしません。存在するだけの画像や旧stageを自動採用しません。背景が未確定の間、`build.mjs production` と `render.mjs production` はネイティブ起動・本番ファイル作成前に拒否します。
+binding.example.jsonは未設定の例です。制作はPM指示に紐付く実体を指定します。
 
-背景採用後も、現在の骨組みをそのまま本番完成と扱いません。同じwriterが実背景に合わせて構図を調整し、人物なし確認原本と本番の共通レイヤー照合、人物の可逆数値検証、再リンク・再保存・再描画、NAS実体の照合を続けます。
+- 確認済み本人背景と限定使用候補を区別。候補は kind=stream_background_candidate / usageAuthorizedByPM=true / actualStreamProvenanceConfirmed=false / characterFree=null / usage=fixed_base_private_production を保持します。
+- cameraPolicy=independent_fixed_baseを必須とし、虚偽の確認済み値で通しません。未指定・実体変更・別camera方針は拒否。
+- 素材識別値は私的bindingだけ。存在するファイルや旧生成stageを自動採用しません。限定使用は包括ライセンスや実配信由来の証明ではありません。
 
-## 独立したLinux実行
+## 実行
 
-既存EffectCraft 0.14.0、FFmpeg、Xvfbを使います。新しいダウンロードや認証はありません。`OSAYU158_ROOT` は素材を公開しない専用Linux領域へ指定します。既存projectやrenderを上書きせず、別revisionを使います。必要に応じて `OSAYU158_NATIVE_TOOLS` / `OSAYU158_FFMPEG` で既存ツールの所在を指定できます。
+既存Linux EffectCraft 0.14.0／FilmCraft 0.10.0／FFmpegを専用XDG・Xvfb・CPU2個・低優先度・有限timeoutで使います。共有desktop/input/focus/clipboard、新認証・DL・常駐・cron・課金・SNS投稿・音源追加・自前通知はありません。
 
 ```bash
-export OSAYU158_ROOT="$HOME/private-use/osayu158-revision"
+export OSAYU158_ROOT="$HOME/private-use/osayu158-new-revision"
+export OSAYU158_BINDING="$HOME/private-use/osayu158-private-binding.json"
 for variant in solo collab; do
-  node build.mjs neutral --variant "$variant" --probe
-  node build.mjs neutral --variant "$variant"
+  for mode in neutral production; do
+    node build.mjs "$mode" --variant "$variant" --probe
+    node build.mjs "$mode" --variant "$variant"
+    node render.mjs "$mode" --variant "$variant" --probe
+    node video-audit.mjs --variant "$variant" --mode "$mode"
+    node render.mjs "$mode" --variant "$variant"
+  done
+  node production-audit.mjs --variant "$variant"
   OSAYU158_VARIANT="$variant" node --test audit.test.mjs
-  node render.mjs neutral --variant "$variant" --probe
-  node video-audit.mjs --variant "$variant"
-  node render.mjs neutral --variant "$variant"
+  node opaque-proof.mjs --variant "$variant"
+  node film.mjs --variant "$variant"
+  node final-motion-audit.mjs --variant "$variant"
 done
+node package.mjs
+# OSAYU158_NAS_FOLDERへ明示したNASの新しい版folderを指定
+node deliver.mjs
 ```
 
-専用XDGとXvfb、CPU2個、低優先度、有限timeoutを使います。自分が起動したprocess groupの終了を待って確認し、共有desktop・既存プロセスを操作しません。
+既存原本・動画・別SHAの納品は上書きしません。再実行は保存済み工程と実体を確認し、別revisionまたは未完了工程から進めます。Windowsは既存SMBの標準COPYとNAS実体のheadless FFprobe/FFmpeg検査だけ。unsigned PS1・ExecutionPolicy変更/Bypassは使いません。
 
-## 機構の検証
+## 検証
 
-- 保存されたnative原本のlinearキー、親子関係、anchor/scale/positionから、全570フレームの実screen座標を求めます。追従区間の誤差、対象の画面内維持、全体復帰、文字同士・人物予約領域との重なりを検査します。
-- neutral-probeの**実ネイティブ描画MP4**を全フレームdecodeし、動く対象の緑の目印と固定ワールド位置の青い基準点の重心を保存原本の座標と比較します。全追従windowで固定基準が画面上を移動することも実測します。clean版にも同じstage rig配下の目盛り・基準線を残し、追従の周辺が静止する見え方を防ぎます。数式やcameraPositionSpanだけで描画成功としません。四分の一解像度での画素・圧縮誤差を含み、許容は元解像度6pxです。
-- clean neutralとprobeの共通レイヤーを保存原本から照合します。緑の目印は本番へ含めません。
-- 固定カメラ、誤対象、全体復帰なし、人物予約領域の親子付け、未確定背景の本番CLIsを負例として拒否します。
+- 保存native行列で全570frameの対象座標・追従誤差・画面内維持・文字/人物予約領域の衝突・全体復帰を検査。
+- 実native probe動画の緑の対象と青いworld基準を全frameで照合。人物未import版と本番、probeとcleanの共通レイヤーも一致確認。
+- 最終FilmCraft MP4の実画素から、clean版のピンクの盤面目盛りを全570frame計測。四分の一解像度の圧縮/画素誤差を含む許容6pxで照合し、全追従区間の実移動を確認。数式だけを描画の証拠にしません。
+- 通常のalpha数値処理で人物の不透明内側を選び、native可逆PNGを独立固定人物のnative描画と比較。全編固定構造、元ファイル同一性、サンプルの画素一致を分けて記録。
+- FilmCraftの単一無音master・等倍・恒等時間/位置/scaleを確認。再リンクした原本を実再読込・保存・再描画。
+- NASには通常版.mp4とセラ先輩版.mp4だけを納品。元/先bytes/SHA、NAS実体の570frame・19秒・30fps・音声0・全decode・process終了を照合。原本とQAは私的編集保管へ。
 
-## 未実施
-
-本人背景の選定、背景に基づく最終デザイン、本番人物のimport・描画・数値比較、FilmCraft最終編集、NAS納品、ownerの創作採用、TikTok実機・音源・投稿・公開後効果は未実施です。機構検査の成功をこれらの完了へ読み替えません。
+技術検査、人物未import版のAI目視、人物入り全編の人間視聴、owner創作採用、実配信由来確認、SNS公開/成長は別々です。未確認を採用・公開・成長実績に置き換えません。

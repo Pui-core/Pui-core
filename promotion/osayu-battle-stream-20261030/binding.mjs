@@ -2,12 +2,16 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 
-/** Acceptance is supplied by the PM, never inferred from file existence or an old stage. */
+/** Permission and provenance are separate. Unknown people in a candidate remain fixed. */
 export function acceptedBinding(file,variant='solo') {
   if (!file) throw Error('BACKGROUND_UNCONFIRMED: explicit private PM binding required');
   const b=JSON.parse(fs.readFileSync(file,'utf8'));
-  if(b.schemaVersion!==1 || b.issue!==158 || b.background?.kind!=='owner_stream_background' || b.background?.acceptedByPM!==true || b.background?.characterFree!==true)
-    throw Error('BACKGROUND_UNCONFIRMED: confirmed character-free stream background required');
+  const bg=b.background;
+  const confirmed=bg?.kind==='owner_stream_background'&&bg.acceptedByPM===true&&bg.characterFree===true;
+  const candidate=b.schemaVersion===2&&bg?.kind==='stream_background_candidate'&&bg.usageAuthorizedByPM===true&&bg.actualStreamProvenanceConfirmed===false&&bg.characterFree===null&&bg.usage==='fixed_base_private_production'&&typeof b.authorization==='string'&&b.authorization.trim();
+  if(![1,2].includes(b.schemaVersion)||b.issue!==158||(!confirmed&&!candidate))
+    throw Error('BACKGROUND_UNCONFIRMED: explicit confirmed or limited candidate-use contract required');
+  if(bg.cameraPolicy!=='independent_fixed_base')throw Error('BACKGROUND_MUST_REMAIN_FIXED');
   if(typeof b.background.provenance!=='string'||!b.background.provenance.trim())throw Error('BACKGROUND_PROVENANCE_MISSING');
   const characters=variant==='collab'?[b.character,b.collaborator]:[b.character];
   if(!['solo','collab'].includes(variant))throw Error('UNKNOWN_VARIANT');

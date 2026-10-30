@@ -1,6 +1,6 @@
-/** Provisional geometry only. A confirmed stream background still determines final art direction. */
+/** Stream-board design. Candidate provenance is recorded separately from use permission. */
 export const width = 1080, height = 1920, fps = 30, duration = 19;
-export const compName = 'Osayu158 stream-layout mechanism';
+export const compName = 'Osayu158 November 3 stream battle';
 export const anchor = [540, 480];
 export const characterBox = {x: 500, y: 760, width: 450, height: 900};
 export const characterBoxes = variant => {
