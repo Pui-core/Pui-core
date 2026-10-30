@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "status": "neutral_verified_production_waiting",
+  "issue": 158,
+  "sourceScope": "promotion/osayu-battle-stream-20261030/",
+  "backgroundConfirmed": false,
+  "productionComplete": false,
+  "nasDelivered": false,
+  "characterImagesAiViewed": 0,
+  "variants": [
+    {
+      "variant": "solo",
+      "reservedPeople": 1,
+      "footageImports": 0,
+      "durationSeconds": 19,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "audioStreams": 0,
+      "structureChecks": 17,
+      "allStructureChecksPassed": true,
+      "nativeRenderedTrackingFrames": 570,
+      "nativeTrackedFrames": 307,
+      "nativeTargetMaxErrorPixels": 4.164081024537757,
+      "nativeTargetTrackedMaxErrorPixels": 0.4040610178209934,
+      "nativeSpatialReferenceMaxErrorPixels": 4.192150252947977,
+      "nativeSpatialReferenceScreenTravelPixels": 624,
+      "trackingWindows": [
+        {
+          "id": "date",
+          "frames": 62,
+          "screenTravelPixels": 56
+        },
+        {
+          "id": "teacher",
+          "frames": 85,
+          "screenTravelPixels": 64.18181818181819
+        },
+        {
+          "id": "resolve",
+          "frames": 83,
+          "screenTravelPixels": 64.26086956521738
+        },
+        {
+          "id": "cheer",
+          "frames": 77,
+          "screenTravelPixels": 63.81818181818181
+        }
+      ],
+      "negativeAndRegressionTests": 10,
+      "testFailures": 0,
+      "cleanNeutralWholeDecodeExit": 0,
+      "visualReview": {
+        "source": "clean neutral native-render contact",
+        "sceneTimesSeconds": [
+          1.4,
+          5,
+          9,
+          13,
+          17
+        ],
+        "viewed": true,
+        "characterInputs": 0
+      },
+      "backgroundConfirmed": false,
+      "productionComplete": false
+    },
+    {
+      "variant": "collab",
+      "reservedPeople": 2,
+      "footageImports": 0,
+      "durationSeconds": 19,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "audioStreams": 0,
+      "structureChecks": 17,
+      "allStructureChecksPassed": true,
+      "nativeRenderedTrackingFrames": 570,
+      "nativeTrackedFrames": 307,
+      "nativeTargetMaxErrorPixels": 4.164081024537757,
+      "nativeTargetTrackedMaxErrorPixels": 0.4040610178209934,
+      "nativeSpatialReferenceMaxErrorPixels": 4.192150252947977,
+      "nativeSpatialReferenceScreenTravelPixels": 624,
+      "trackingWindows": [
+        {
+          "id": "date",
+          "frames": 62,
+          "screenTravelPixels": 56
+        },
+        {
+          "id": "teacher",
+          "frames": 85,
+          "screenTravelPixels": 64.18181818181819
+        },
+        {
+          "id": "resolve",
+          "frames": 83,
+          "screenTravelPixels": 64.26086956521738
+        },
+        {
+          "id": "cheer",
+          "frames": 77,
+          "screenTravelPixels": 63.81818181818181
+        }
+      ],
+      "negativeAndRegressionTests": 10,
+      "testFailures": 0,
+      "cleanNeutralWholeDecodeExit": 0,
+      "visualReview": {
+        "source": "clean neutral native-render contact",
+        "sceneTimesSeconds": [
+          1.4,
+          5,
+          9,
+          13,
+          17
+        ],
+        "viewed": true,
+        "characterInputs": 0
+      },
+      "backgroundConfirmed": false,
+      "productionComplete": false
+    }
+  ]
+}
