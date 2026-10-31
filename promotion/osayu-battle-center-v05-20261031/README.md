@@ -7,3 +7,5 @@ schema 4の私的bindingは人物素材のhash・bytes・寸法だけを保持�
 実EffectCraft／FilmCraftと人物素材操作はRoot専管。Rootは新しいLinux専有dirにidentity proof、両版のneutral／production／probeとfilmを作り、原本を再読込し、全decodeする。neutralのfootage 0と原本・renderのhashを照合した後だけneutralを視認する。人物入り本番は構造・hash・数値のみで確認する。納品はRootが新version folderへ完成動画2本だけを置き、NAS側のbytes・SHA・全decodeを確認する。技術検査・owner創作採用・実納品は別の状態。
 
 Source側の有限検証: `node --test promotion/osayu-battle-center-v05-20261031/*.test.mjs`。実native render、実物の全frame audit、独立Claude最新head reviewとNAS到達は別途必要であり、このテストだけで成功としない。
+
+最終工程は各版 `node film.mjs --variant "$variant" --tag stream-v1` とし、その後 `node delivery-handoff.mjs` を実行する。handoffは `*-final-stream-v1.private.json` と同名の最終動画だけを参照する。
