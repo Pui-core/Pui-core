@@ -1,5 +1,5 @@
 import fs from 'node:fs';import path from 'node:path';
-import {root,filmNative,ff,run,ffRoot,save,hash} from './runtime.mjs';
+import {root,filmNative,ff,run,ffmpegPath,ffprobePath,ffEnv,save,hash} from './runtime.mjs';
 import {duration,fps,variantArg} from './plan.mjs';
 import {verifyFilmInputs} from './film-inputs.mjs';
 const variant=variantArg(),ti=process.argv.indexOf('--tag'),tag=ti<0?'':process.argv[ti+1];if(tag&&!/^[a-z0-9-]+$/.test(tag))throw Error('Invalid tag');const stem=variant+'-final'+(tag?'-'+tag:''),runName=variant+(tag?'-'+tag:''),project=path.join(root,'projects',stem+'.fcproj'),master=path.join(root,'videos',variant+'-production.mp4');
@@ -13,7 +13,7 @@ await filmNative(['--project',project,'--save','run','-'],runName+'-film-place',
 await filmNative(['--project',project,'--save','inspect'],runName+'-film-reopen');
 const out=path.join(root,'videos',stem+'.mp4');if(fs.existsSync(out))throw Error('Existing final retained');
 await filmNative(['--project',project,'exec','file.exportMedia',JSON.stringify({path:out,format:'h264',audio:false,bitrateMode:'crf',crf:18,hardwareEncoding:'off',wait:true})],runName+'-film-export');
-const probe=JSON.parse((await run(path.join(ffRoot,'bin/ffprobe'),['-v','error','-count_frames','-show_streams','-show_format','-of','json',out],runName+'-final-probe',{env:{LD_LIBRARY_PATH:path.join(ffRoot,'lib')}})).stdout);
+const probe=JSON.parse((await run(ffprobePath,['-v','error','-count_frames','-show_streams','-show_format','-of','json',out],runName+'-final-probe',{env:ffEnv})).stdout);
 const video=probe.streams.filter(x=>x.codec_type==='video'),audio=probe.streams.filter(x=>x.codec_type==='audio');
 if(video.length!==1||audio.length||video[0].width!==1080||video[0].height!==1920||video[0].avg_frame_rate!=='30/1'||Number(video[0].nb_read_frames)!==duration*fps||Math.abs(Number(probe.format.duration)-duration)>.01)throw Error('Final stream mismatch');
 await ff(['-i',out,'-map','0:v:0','-an','-f','null','-'],runName+'-final-decode');

@@ -4,7 +4,7 @@
 
 schema 4の私的bindingは人物素材のhash・bytes・寸法だけを保持し、背景に外部mediaを持たない。`make-binding.mjs` は旧bindingから人物metadataだけを検証付きで新規作成する。background SourceのSHAと全570frameの被覆結果は保存原本のauditからFilm最終receiptへ接続する。背景の「actualStreamProvenanceConfirmed=false」は新規制作を意味し、実配信原本を主張しない。
 
-実EffectCraft／FilmCraftと人物素材操作はRoot専管。Rootは新しいLinux専有dirにidentity proof、両版のneutral／production／probeとfilmを作り、原本を再読込し、全decodeする。neutralのfootage 0と原本・renderのhashを照合した後だけneutralを視認する。人物入り本番は構造・hash・数値のみで確認する。納品はRootが新version folderへ完成動画2本だけを置き、NAS側のbytes・SHA・全decodeを確認する。技術検査・owner創作採用・実納品は別の状態。
+実EffectCraft／FilmCraftの標準経路はWindowsの専有作業領域。OSAYU160_ROOT、OSAYU160_BINDING、OSAYU160_IDENTITY_ROOTをWindows絶対パスで指定する。既存のWindows CLIとFFmpegを使い、子processにSystemRoot・windir・専用TEMP/TMPを渡し、作業processを低優先度・CPU 2個に制限する。CLIとFFmpegの配置が異なる時はOSAYU160_EFFECTCRAFT、OSAYU160_FILMCRAFT、OSAYU160_FFMPEGを指定する。Linux固有の検証は既存WSL経路で行う。新しい専有dirにidentity proof、両版のneutral／production／probeとfilmを作り、原本を再読込し、全decodeする。neutralのfootage 0と原本・renderのhashを照合した後だけneutralを視認する。人物入り本番は構造・hash・数値のみで確認する。納品はRootが新version folderへ完成動画2本だけを置き、NAS側のbytes・SHA・全decodeを確認する。技術検査・owner創作採用・実納品は別の状態。
 
 Source側の有限検証: `node --test promotion/osayu-battle-center-v05-20261031/*.test.mjs`。実native render、実物の全frame audit、独立Claude最新head reviewとNAS到達は別途必要であり、このテストだけで成功としない。
 

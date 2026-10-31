@@ -1,8 +1,8 @@
 /** Isolated, lossless, non-AI reference render. Do not display its output. */
-import fs from 'node:fs';import path from 'node:path';import {root,native,run,ffRoot,hash,save} from './runtime.mjs';import {acceptedBinding,stageBinding} from './binding.mjs';import {characterBoxes,variantArg} from './plan.mjs';
+import fs from 'node:fs';import path from 'node:path';import {root,native,run,ffmpegPath,ffprobePath,ffEnv,hash,save} from './runtime.mjs';import {acceptedBinding,stageBinding} from './binding.mjs';import {characterBoxes,variantArg} from './plan.mjs';
 const color=process.env.OSAYU160_PROOF_COLOR||'srgb';if(!['rec709','srgb'].includes(color))throw Error('Unsupported proof color');
 const variant=variantArg(),binding=acceptedBinding(process.env.OSAYU160_BINDING,variant),assets=stageBinding(binding,root,variant),dir=path.join(root,'qa','numeric-only',variant);fs.mkdirSync(dir,{recursive:true,mode:0o700});
-async function raw(file,name){const chunks=[];await run(path.join(ffRoot,'bin/ffmpeg'),['-nostdin','-hide_banner','-loglevel','error','-threads','2','-i',file,'-frames:v','1','-vf','format=rgba','-f','rawvideo','pipe:1'],name,{env:{LD_LIBRARY_PATH:path.join(ffRoot,'lib')},consumeStdout:b=>chunks.push(b)});return Buffer.concat(chunks);}
+async function raw(file,name){const chunks=[];await run(ffmpegPath,['-nostdin','-hide_banner','-loglevel','error','-threads','2','-i',file,'-frames:v','1','-vf','format=rgba','-f','rawvideo','pipe:1'],name,{env:ffEnv,consumeStdout:b=>chunks.push(b)});return Buffer.concat(chunks);}
 const results=[];
 for(const [i,box] of characterBoxes(variant).entries()){
  const asset=assets.characters[i],project=path.join(dir,box.id+'-identity.ecproj'),jsx=path.join(dir,box.id+'-identity.jsx'),png=path.join(dir,box.id+'-identity.png');
