@@ -48,7 +48,7 @@ class Runner {
             if(state==WAIT_OBJECT_0+1){TerminateJobObject(job,1);return 125;}
             if(state!=WAIT_OBJECT_0)throw new Win32Exception(Marshal.GetLastWin32Error(),"wait");
             uint exit;Check(GetExitCodeProcess(pi.process,out exit),"exit code");
-            ACCOUNTING info;Check(QueryInformationJobObject(job,1,out info,(uint)Marshal.SizeOf(typeof(ACCOUNTING)),IntPtr.Zero),"job accounting");
+            ACCOUNTING info;for(int i=0;;i++){Check(QueryInformationJobObject(job,1,out info,(uint)Marshal.SizeOf(typeof(ACCOUNTING)),IntPtr.Zero),"job accounting");if(info.active==0||i>=40)break;Thread.Sleep(50);}
             if(info.active!=0){TerminateJobObject(job,1);Console.Error.WriteLine("OWNED_DESCENDANTS_REMAIN");return 126;}
             return exit==0?0:1;
         } catch(Exception e) {if(pi.process!=IntPtr.Zero&&!assigned)TerminateProcess(pi.process,1);Console.Error.WriteLine("JOB_RUNNER_ERROR: "+e.Message);return 127;}

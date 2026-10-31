@@ -1,6 +1,7 @@
 import fs from 'node:fs';import path from 'node:path';
 import {root,run,ff,ffprobePath,ffEnv,hash,save} from './runtime.mjs';
 import {duration,fps,variantArg} from './plan.mjs';
+import {sourceFingerprint} from './source-fingerprint.mjs';
 const variant=variantArg(),mode=process.argv[2];if(!['production','neutral','neutral-probe'].includes(mode))throw Error('Unknown render mode');
 const stem=variant+'-'+mode,project=path.join(root,'projects',stem+'.ecproj'),video=path.join(root,'videos',stem+'.mp4');
 const original=JSON.parse(fs.readFileSync(path.join(root,'qa',stem+'-render-summary.json'))),projectHash=hash(project),videoHash=hash(video);
@@ -11,4 +12,4 @@ if(v.length!==1||a.length||v[0].width!==1080||v[0].height!==1920||v[0].avg_frame
 await ff(['-i',video,'-map','0:v:0','-an','-f','null','-'],stem+'-strict-decode');
 if(hash(video)!==videoHash||hash(project)!==projectHash)throw Error('Render changed during verification');
 const receipt=path.join(root,'qa',stem+'-strict-verification.json');if(fs.existsSync(receipt))throw Error('Existing verification retained');
-save(receipt,{variant,mode,projectHash,videoHash,frames:duration*fps,audioStreams:0,strictDecode:true});console.log(JSON.stringify({variant,mode,frames:duration*fps,strictDecode:true}));
+save(receipt,{variant,mode,projectHash,videoHash,frames:duration*fps,audioStreams:0,strictDecode:true,sourceSha256:sourceFingerprint().sha256});console.log(JSON.stringify({variant,mode,frames:duration*fps,strictDecode:true}));
