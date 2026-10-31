@@ -48,6 +48,6 @@ export async function run(exe,args,name,{display=false,timeoutMs=180000,env={},c
     });
   });
 }
-export const native=(args,name)=>run(effect,args,name,{display:true,timeoutMs:600000});
+export const native=(args,name)=>run(effect,args,name,{display:true,timeoutMs:1800000});
 export const filmNative=(args,name,input)=>run(film,args,name,{display:true,input,timeoutMs:240000});
 export const ff=(args,name)=>run(path.join(ffRoot,'bin/ffmpeg'),['-nostdin','-hide_banner','-loglevel','error','-threads','2','-filter_threads','2',...args],name,{env:{LD_LIBRARY_PATH:path.join(ffRoot,'lib')}});
