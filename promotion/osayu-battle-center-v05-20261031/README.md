@@ -11,3 +11,5 @@ Source側の有限検証: `node --test promotion/osayu-battle-center-v05-2026103
 最終工程は各版 `node film.mjs --variant "$variant" --tag stream-v1` とし、その後 `node delivery-handoff.mjs` を実行する。handoffは `*-final-stream-v1.private.json` と同名の最終動画だけを参照する。
 
 Windowsでは付属のJob launcherを.NET Frameworkの `csc.exe` で専用作業領域にコンパイルする。各版のneutral／production／neutral-probeそれぞれについて `verify-render.mjs <mode> --variant <variant>` で570 frame・音声0・厳格decodeを検証する。各原本をaudit後、`source-attest.mjs neutral --variant <variant>`、`source-attest.mjs production --variant <variant>`、`source-attest.mjs neutral --variant <variant> --probe` を実行する。生成し直したJSXと保存済みJSXを比較し、原本・audit・現行Sourceをhashで結ぶ。Sourceが変わった場合は新しい版で証跡を作り直す。`compare.mjs`、`compare-probe.mjs`、`probe-audit.mjs` とidentity/opaque proofの結果もFilm前に必須。
+
+Sourceの照合は現行compositionと保存JSXの一致と、現行検証に使うコードを示す。過去の描画やauditが必ず現行の全ツール版で実行されたという主張ではない。描画時と検証時の実行記録・tool版は別に残す。
