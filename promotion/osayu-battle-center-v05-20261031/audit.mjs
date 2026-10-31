@@ -1,0 +1,15 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {frames,cameraAt,scenesFor,targetAt,variantArg} from './plan.mjs';
+import {root,hash,save} from './runtime.mjs';import path from 'node:path';
+const variant=variantArg(),mode=process.argv[2];assert(['neutral','production'].includes(mode));
+const stem=`${variant}-${mode}${process.argv.includes('--probe')?'-probe':''}`;
+const file=path.join(root,'projects',`${stem}.ecproj`),p=JSON.parse(fs.readFileSync(file));
+const items=Object.values(p.items),footage=items.filter(i=>i.kind?.type==='Footage');if(mode==='neutral')assert.equal(footage.length,0);
+const comp=items.find(i=>i.kind?.type==='Comp');const layers=comp.kind.layers,rig=layers.find(l=>l.name==='WORLD CAMERA — ALL CONTENT');assert(rig);assert(layers.every(l=>l===rig||l.parent===rig.id),'all visual layers must share camera');
+function find(o,name){if(!o||typeof o!=='object')return; if(o.match===name&&o.node==='Prop')return o;for(const v of Object.values(o)){if(typeof v==='object'){const r=find(v,name);if(r)return r;}}}
+assert.deepEqual(find(rig.props,'anchor').value.v,[540,960,0]);assert.equal(find(rig.props,'rotation').value.v,0);assert.equal(find(rig.props,'opacity').value.v,100);assert.equal(rig.parent,null);
+for(const name of ['position','scale']){const keys=find(rig.props,name).keys;assert.equal(keys.length,frames.length);for(let i=0;i<frames.length;i++){const a=keys[i].value.v,b=cameraAt(frames[i].time,variant)[name];assert(a.every((x,j)=>Math.abs(x-b[j])<.001),`${name} frame ${i}`);}}
+for(const s of scenesFor(variant)){const inScene=frames.filter(f=>f.time>=s.from&&f.time<s.to);for(const [prefix,dy] of [['CARD',0],['ACCENT',-150],['SUB',-75],['HEADING',20],['NOTE',105]]){const layer=layers.find(l=>l.name===prefix+' '+s.id),keys=find(layer.props.children.find(x=>x.match==='transform'),'position').keys;assert.equal(keys.length,inScene.length);for(let i=0;i<keys.length;i++){const target=targetAt(s,inScene[i].time),v=keys[i].value.v;assert(Math.abs(v[0]-target[0])<.001&&Math.abs(v[1]-target[1]-dy)<.001,`target ${s.id} ${prefix} ${i}`);}}const c=cameraAt(s.from+.9,variant),start=cameraAt(s.from,variant);assert(c.scale[0]>=131);assert(Math.hypot(c.position[0]-start.position[0],c.position[1]-start.position[1])>100);const pt=[c.position[0]+(s.center[0]-540)*c.scale[0]/100,c.position[1]+(s.center[1]-960)*c.scale[1]/100];assert(Math.hypot(pt[0]-540,pt[1]-960)<.01);}
+const layout=JSON.parse(fs.readFileSync(path.join(root,'qa',`${stem}-layout.json`)));
+for(const s of scenesFor(variant)){const c=cameraAt(s.from+.9,variant),k=c.scale[0]/100;for(const b of layout.boxes.filter(b=>b.name.endsWith(' '+s.id))){const x=c.position[0]+(b.x-540)*k,y=c.position[1]+(b.y-960)*k;assert(x>=0&&y>=0&&x+b.width*k<=1080&&y+b.height*k<=1920,`clipped landing text ${b.name}`);}}
+const report={variant,mode,projectHash:hash(file),footageCount:footage.length,sharedCameraLayerCount:layers.length-1,cameraFrames:frames.length,creativeAcceptance:false};save(path.join(root,'qa',`${stem}-camera-structure.json`),report);console.log(JSON.stringify(report));
