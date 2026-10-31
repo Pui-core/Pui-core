@@ -1,30 +1,9 @@
-# おさゆ11/3バトル：中央カメラ再制作
+# おさゆ11/3バトル：新規配信風背景と中央カメラ
 
-管理 [Issue 160](https://github.com/Pui-core/-/issues/160) のsolo／collabを、人物を含む共通world cameraで構成する。各場面で中心へ寄り、動く主文を追従して全体へ戻る。soloとcollabは左右のカメラ経路を変え、collabは二人の構図にする。旧版は保持する。人物・未知背景はneutral原本にimportしない。本番素材のAI入力・生成・表情／ポーズ変更は行わない。背景は限定使用候補で実配信由来と人物混在は未確認。
+管理 [Issue 160](https://github.com/Pui-core/-/issues/160) のowner訂正「配信背景っぽいのを作って」を受け、旧出典待ち OS160-BG-001 は撤回。実配信元の画像は使わず、`background.mjs` の矩形・色・場面別ラインから人物・素材画像なしの背景を新規制作する。soloはミント／ピンクの光枠と中央スポット、collabは二窓の異なる構成。画面全体の共通cameraは場面別に寄り量・移動・着地を変える。人物の生成・AI入力・ローカル変形アニメーションは行わない。旧r94と原本は保持。
 
-`OSAYU160_ROOT` に独立した私的Linuxディレクトリ、`OSAYU160_BINDING` にschema 3の私的bindingを指定する。bindingはIssue 160、候補の未確認状態、明示許可、cameraPolicy `shared_world_camera` と実素材のbytes・SHA・寸法を検証する。画像や個人素材の識別値はGitに入れない。`OSAYU160_IDENTITY_ROOT` にsRGB恒等描画の私的検証ルートを指定する。
+schema 4の私的bindingは人物素材のhash・bytes・寸法だけを保持し、背景に外部mediaを持たない。`make-binding.mjs` は旧bindingから人物metadataだけを検証付きで新規作成する。background SourceのSHAと全570frameの被覆結果は保存原本のauditからFilm最終receiptへ接続する。背景の「actualStreamProvenanceConfirmed=false」は新規制作を意味し、実配信原本を主張しない。
 
-```sh
-for variant in solo collab; do
-  node build.mjs neutral --variant "$variant"
-  node render.mjs neutral --variant "$variant"
-  node audit.mjs neutral --variant "$variant"
-  node build.mjs production --variant "$variant"
-  node render.mjs production --variant "$variant"
-  node audit.mjs production --variant "$variant"
-  node compare.mjs --variant "$variant"
-  node opaque-camera-proof.mjs --variant "$variant"
-  node build.mjs neutral --variant "$variant" --probe
-  node render.mjs neutral --variant "$variant" --probe
-  node compare-probe.mjs --variant "$variant"
-  node probe-audit.mjs --variant "$variant"
-  node audit.mjs neutral --variant "$variant" --probe
-  node film.mjs --variant "$variant" --tag r94
-done
-```
+実EffectCraft／FilmCraftと人物素材操作はRoot専管。Rootは新しいLinux専有dirにidentity proof、両版のneutral／production／probeとfilmを作り、原本を再読込し、全decodeする。neutralのfootage 0と原本・renderのhashを照合した後だけneutralを視認する。人物入り本番は構造・hash・数値のみで確認する。納品はRootが新version folderへ完成動画2本だけを置き、NAS側のbytes・SHA・全decodeを確認する。技術検査・owner創作採用・実納品は別の状態。
 
-原本は独立Xvfb・XDGでEffectCraft、最終編集はFilmCraftを使用する。既存出力を上書きしない。`audit.mjs` は原本の親、570フレームのカメラと対象の値、実背景寸法からの全画面coverage、保存layoutに基づく全フレーム文字範囲を検査し、`probe-audit.mjs` は人物・未知背景をimportしない検証用映像のマーカーを実画素で測定する。これらは人物同士の見え方や創作採用を保証しない。neutral連続frameの実見、本番の素材同一性、再リンク、実描画と全decode、独立レビュー、NAS実体の検証は別途必要。技術検査をownerの創作採用に置き換えない。
-
-素材の等倍・整数位置・恒等カメラ検査は別の新しい私的`OSAYU160_ROOT`で `identity-proof.mjs --variant solo` と `--variant collab` を実行する。sRGBの通常native可逆出力を元PNGと比較する検証であり、Rec.709本番が元RGBと完全一致する証拠にはしない。同じRec.709・同じカメラの本番と人物分離参照の不透明内部を `opaque-camera-proof.mjs` で比較する。背景候補の配信由来はOS160-BG-001として未確認のまま管理する。
-
-FilmCraft取込前にproduction MP4のbytes/SHAをrender-summaryと、原本SHAをbinding／camera-structureと照合する。素材bindingと同一性proofも照合し、完了後に再照合して、最終票へ入力と原本のhash・sourceBindingを残す。既存の旧最終MP4には事後的に入力因果を推定せず、新tagでFilmCraftのみを再実行する。背景候補の実配信由来は別途未確認である。
+Source側の有限検証: `node --test promotion/osayu-battle-center-v05-20261031/*.test.mjs`。実native render、実物の全frame audit、独立Claude最新head reviewとNAS到達は別途必要であり、このテストだけで成功としない。

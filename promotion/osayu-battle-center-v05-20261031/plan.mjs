@@ -9,7 +9,7 @@ export const scenes=[
 {id:'cheer',from:11.1,to:14.8,heading:'応援、待ってます！',sub:'みんなと一緒に',note:'プロフィールから配信へ',center:[700,850]},
 {id:'return',from:14.8,to:19,heading:'11/3',sub:'チュートリアルバトル',note:'プロフィールから配信へ',center:[540,850]}];
 const smooth=t=>{t=Math.max(0,Math.min(1,t));return t*t*(3-2*t)};
-export const scenesFor=v=>scenes.map(s=>({...s,center:v==='collab'?[1080-s.center[0],s.center[1]]:s.center}));
-export function targetAt(s,t){const u=Math.max(0,Math.min(1,(t-s.from-1.2)/(s.to-s.from-2)));return [s.center[0]+(s.center[0]>540?-65:65)*Math.sin(Math.PI*u),s.center[1]];}
-export function cameraAt(t,v='solo'){const list=scenesFor(v),s=list.find(x=>t>=x.from&&t<x.to)||list.at(-1),local=t-s.from,rem=s.to-t;const f=Math.min(smooth(local/.65),smooth(rem/.65));const target=targetAt(s,t),scale=1+.32*f;return {position:[540-(target[0]-540)*scale*f,960-(target[1]-960)*scale*f,0],scale:[100*scale,100*scale,100],rotation:0};}
+export const scenesFor=v=>scenes.map((s,i)=>({...s,center:v==='collab'?[1080-s.center[0],s.center[1]]:s.center, zoom:(v==='solo'?[.32,.25,.30,.23,.20]:[.27,.32,.23,.29,.22])[i], travel:(v==='solo'?[65,44,58,40,25]:[42,65,36,60,30])[i], ramp:(v==='solo'?[.65,.8,.55,.9,.7]:[.8,.55,.9,.6,.85])[i]}));
+export function targetAt(s,t){const u=Math.max(0,Math.min(1,(t-s.from-1.2)/(s.to-s.from-2)));return [s.center[0]+(s.center[0]>540?-s.travel:s.travel)*Math.sin(Math.PI*u),s.center[1]];}
+export function cameraAt(t,v='solo'){const list=scenesFor(v),s=list.find(x=>t>=x.from&&t<x.to)||list.at(-1),local=t-s.from,rem=s.to-t;const f=Math.min(smooth(local/s.ramp),smooth(rem/s.ramp));const target=targetAt(s,t),scale=1+s.zoom*f;return {position:[540-(target[0]-540)*scale*f,960-(target[1]-960)*scale*f,0],scale:[100*scale,100*scale,100],rotation:0};}
 export const frames=Array.from({length:duration*fps},(_,frame)=>({frame,time:frame/fps}));
