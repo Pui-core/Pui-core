@@ -1,0 +1,6 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {root,hash,save} from './runtime.mjs';import {variantArg} from './plan.mjs';
+const v=variantArg(),load=s=>{const file=path.join(root,'projects',`${v}-neutral${s}.ecproj`),p=JSON.parse(fs.readFileSync(file));assert(!Object.values(p.items).some(i=>i.kind?.type==='Footage'));return {file,layers:Object.values(p.items).find(i=>i.kind?.type==='Comp').kind.layers}};
+const a=load(''),b=load('-probe');function norm(o){if(Array.isArray(o))return o.map(norm);if(o&&typeof o==='object')return Object.fromEntries(Object.entries(o).filter(([k])=>!['id','uid','parent'].includes(k)).map(([k,x])=>[k,norm(x)]));return o;}
+for(const l of a.layers){const other=b.layers.find(x=>x.name===l.name);assert(other,`missing ${l.name}`);assert.deepEqual(norm(l),norm(other),`probe differs in ${l.name}`)}
+assert.equal(b.layers.length,a.layers.length+6);assert.equal(b.layers.filter(l=>l.name==='CAMERA PROBE'||l.name.startsWith('TARGET PROBE ')).length,6);
+const out={variant:v,sharedLayers:a.layers.length,neutralProjectHash:hash(a.file),probeProjectHash:hash(b.file),footageCount:0};save(path.join(root,'qa',`${v}-probe-shared-structure.json`),out);console.log(JSON.stringify(out));
