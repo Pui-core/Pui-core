@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import {spawn,spawnSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
 
 export const root=process.env.OSAYU160_ROOT;
 if(!root || !path.isAbsolute(root) || root===path.parse(root).root || (process.platform!=='win32'&&root.startsWith('/mnt/'))) throw Error('OSAYU160_ROOT must be an independent private directory');
@@ -27,15 +28,18 @@ export async function run(exe,args,name,{display=false,timeoutMs=180000,env={},c
     const limiterScript = "$p=Get-Process -Id "+process.pid+" -ErrorAction Stop; $mask=[long]$p.ProcessorAffinity; $bits=@(); for($i=0;$i -lt 63;$i++){ $b=[long]1 -shl $i; if(($mask -band $b) -ne 0){$bits += $b; if($bits.Count -eq 2){break}} }; if($bits.Count -ne 2){throw 'fewer than two allowed CPUs'}; $p.PriorityClass='BelowNormal'; $p.ProcessorAffinity=[IntPtr]($bits[0] -bor $bits[1])";
     const limiter=spawnSync(path.join(systemRoot,'System32','WindowsPowerShell','v1.0','powershell.exe'),['-NoProfile','-NonInteractive','-Command',limiterScript],{windowsHide:true,env:childEnv,timeout:15000,stdio:'ignore'});
     if(limiter.error||limiter.status!==0)throw Error('OWNED_WINDOWS_RESOURCE_LIMIT_FAILED');
+    const jobSource=fileURLToPath(new URL('./windows-job-runner.cs',import.meta.url)),binDir=path.join(runtime,'bin');fs.mkdirSync(binDir,{recursive:true});
+    const jobRunner=path.join(binDir,`job-${process.pid}-${hash(jobSource).slice(0,16)}.exe`);
+    if(!fs.existsSync(jobRunner)){const csc=path.join(systemRoot,'Microsoft.NET','Framework64','v4.0.30319','csc.exe');const compiled=spawnSync(csc,['/nologo','/optimize+','/out:'+jobRunner,jobSource],{env:childEnv,windowsHide:true,timeout:30000,encoding:'utf8'});if(compiled.error||compiled.status!==0)throw Error('JOB_RUNNER_COMPILE_FAILED '+(compiled.stderr||compiled.stdout||''));}
     const startedAt=new Date().toISOString();let stdout='',stderr='',timedOut=false,consumeError;
     return await new Promise((resolve,reject)=>{
-      const p=spawn(exe,args,{env:childEnv,windowsHide:true,stdio:[input===undefined?'ignore':'pipe','pipe','pipe']});
+      const p=spawn(jobRunner,[String(process.pid),exe,...args],{env:childEnv,windowsHide:true,stdio:[input===undefined?'ignore':'pipe','pipe','pipe']});
       if(input!==undefined)p.stdin.end(input);
       fs.appendFileSync(path.join(root,'qa','owned-processes.jsonl'),JSON.stringify({pid:p.pid,startedAt,name,exe,platform:'win32'})+'\n');
-      const timer=setTimeout(()=>{timedOut=true;if(p.pid){const killer=spawn(path.join(systemRoot,'System32','taskkill.exe'),['/PID',String(p.pid),'/T','/F'],{windowsHide:true,stdio:'ignore',env:childEnv});killer.on('error',()=>{});}},timeoutMs);
+      const timer=setTimeout(()=>{timedOut=true;p.kill();},timeoutMs);
       p.stdout.on('data',b=>{if(consumeStdout){try{consumeStdout(b);}catch(e){consumeError=e;p.kill();}}else stdout+=b;});p.stderr.on('data',b=>stderr+=b);
       p.on('error',e=>{clearTimeout(timer);reject(e)});
-      p.on('close',code=>{clearTimeout(timer);const v={pid:p.pid,startedAt,endedAt:new Date().toISOString(),code,timedOut,processGroupRemaining:null,processTreeVerification:'not checked',display,sharedDesktopInput:0,platform:'win32',stdout,stderr};save(receipt,v);if(consumeError)reject(consumeError);else if(code!==0||timedOut||/SCRIPT ERROR:|Parse Error:/.test(stdout+stderr))reject(Error(name+' failed; inspect private receipt'));else resolve(v)});
+      p.on('close',code=>{clearTimeout(timer);const v={pid:p.pid,startedAt,endedAt:new Date().toISOString(),code,timedOut,processGroupRemaining:code===0?false:null,processTreeVerification:code===0?'windows-job-empty':'failed-or-unverified',jobSourceSha256:hash(jobSource),display,sharedDesktopInput:0,platform:'win32',stdout,stderr};save(receipt,v);if(consumeError)reject(consumeError);else if(code!==0||timedOut||/SCRIPT ERROR:|Parse Error:/.test(stdout+stderr))reject(Error(name+' failed; inspect private receipt'));else resolve(v)});
     });
   }
 
@@ -75,4 +79,4 @@ export async function run(exe,args,name,{display=false,timeoutMs=180000,env={},c
 }
 export const native=(args,name)=>run(effect,args,name,{display:true,timeoutMs:1800000});
 export const filmNative=(args,name,input)=>run(film,args,name,{display:true,input,timeoutMs:240000});
-export const ff=(args,name)=>run(ffmpegPath,['-nostdin','-hide_banner','-loglevel','error','-threads','2','-filter_threads','2',...args],name,{env:ffEnv});
+export const ff=async(args,name)=>{const result=await run(ffmpegPath,['-nostdin','-hide_banner','-loglevel','error','-xerror','-threads','2','-filter_threads','2',...args],name,{env:ffEnv});if(result.stderr.trim())throw Error(name+' emitted decode errors');return result;};
