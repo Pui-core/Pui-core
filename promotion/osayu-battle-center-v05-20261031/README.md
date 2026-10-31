@@ -13,6 +13,7 @@ for variant in solo collab; do
   node render.mjs production --variant "$variant"
   node audit.mjs production --variant "$variant"
   node compare.mjs --variant "$variant"
+  node opaque-camera-proof.mjs --variant "$variant"
   node build.mjs neutral --variant "$variant" --probe
   node render.mjs neutral --variant "$variant" --probe
   node compare-probe.mjs --variant "$variant"
@@ -22,3 +23,5 @@ done
 ```
 
 原本は独立Xvfb・XDGでEffectCraft、最終編集はFilmCraftを使用する。既存出力を上書きしない。`audit.mjs` は原本の親、570フレームのカメラと対象の値を検査し、`probe-audit.mjs` は人物・未知背景をimportしない検証用映像のマーカーを実画素で測定する。これらは人物同士の見え方や創作採用を保証しない。neutral連続frameの実見、本番の素材同一性、再リンク、実描画と全decode、独立レビュー、NAS実体の検証は別途必要。技術検査をownerの創作採用に置き換えない。
+
+素材の等倍・整数位置・恒等カメラ検査は別の新しい私的`OSAYU160_ROOT`で `identity-proof.mjs --variant solo` と `--variant collab` を実行する。sRGBの通常native可逆出力を元PNGと比較する検証であり、Rec.709本番が元RGBと完全一致する証拠にはしない。同じRec.709・同じカメラの本番と人物分離参照の不透明内部を `opaque-camera-proof.mjs` で比較する。背景候補の配信由来はOS160-BG-001として未確認のまま管理する。
