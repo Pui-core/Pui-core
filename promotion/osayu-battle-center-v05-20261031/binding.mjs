@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 
-/** Permission and provenance are separate. Unknown people in a candidate remain fixed. */
+/** Permission and provenance are separate; candidate content and stream origin remain unconfirmed. */
 export function acceptedBinding(file,variant='solo') {
   if (!file) throw Error('BACKGROUND_UNCONFIRMED: explicit private PM binding required');
   const b=JSON.parse(fs.readFileSync(file,'utf8'));
