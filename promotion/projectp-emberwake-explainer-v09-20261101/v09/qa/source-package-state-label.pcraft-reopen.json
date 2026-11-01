@@ -1,0 +1,18 @@
+{
+  "args": [
+    "C:/Program Files/PhotoCraft/photocraft-cli.exe",
+    "info",
+    "C:/Users/pui/.claude/worktrees/Pui-core-issue-156-explainer-v09/promotion/projectp-emberwake-explainer-v09-20261101/v09/projects/state-label.pcraft",
+    "--compact"
+  ],
+  "pid": 60060,
+  "started": 1793537069.654595,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.18242859840393066,
+  "stdout": "{\"activeLayer\":4,\"channels\":{\"alpha\":[],\"colors\":[{\"name\":\"Red\",\"visible\":true},{\"name\":\"Green\",\"visible\":true},{\"name\":\"Blue\",\"visible\":true}],\"composite\":\"RGB\",\"compositeVisible\":true,\"layerMaskView\":null,\"quickMask\":null,\"target\":{\"kind\":\"composite\"}},\"depth\":8,\"file\":\"C:/Users/pui/.claude/worktrees/Pui-core-issue-156-explainer-v09/promotion/projectp-emberwake-explainer-v09-20261101/v09/projects/state-label.pcraft\",\"hasSelection\":false,\"height\":220,\"historySource\":{\"label\":\"Open\",\"state\":0},\"isolatedLayers\":[],\"lastAppliedComp\":null,\"layerComps\":[],\"layerMaskView\":null,\"layers\":[{\"blend\":\"Normal\",\"bounds\":[63,130,591,50],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":4,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"switch_lit.has(group)\",\"opacity\":1.0,\"selected\":true,\"text\":{\"font\":\"Consolas\",\"sizePt\":52.0,\"text\":\"switch_lit.has(group)\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[64,37,518,53],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":3,\"kind\":\"Type\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"同じスイッチの状態\",\"opacity\":1.0,\"selected\":false,\"text\":{\"font\":\"Meiryo\",\"sizePt\":58.0,\"text\":\"同じスイッチの状態\"},\"vectorMaskEnabled\":null,\"visible\":true},{\"blend\":\"Normal\",\"bounds\":[0,0,900,220],\"clipped\":false,\"fill\":1.0,\"hasMask\":false,\"hasVectorMask\":false,\"hasXmp\":false,\"id\":2,\"kind\":\"Pixel\",\"labelColor\":\"none\",\"linkGroup\":null,\"name\":\"Background\",\"opacity\":1.0,\"selected\":false,\"vectorMaskEnabled\":null,\"visible\":true}],\"measurement\":{\"count\":0,\"countGroups\":0,\"ruler\":null,\"scale\":\"1 pixels = 1.0000 pixels\"},\"mode\":\"Rgb\",\"name\":\"state-label.pcraft\",\"notes\":[],\"path\":\"C:/Users/pui/.claude/worktrees/Pui-core-issue-156-explainer-v09/promotion/projectp-emberwake-explainer-v09-20261101/v09/projects/state-label.pcraft\",\"quickMask\":false,\"resolution\":72.0,\"selectedLayers\":[4],\"selectionBounds\":null,\"snapshots\":[],\"symmetry\":null,\"timeline\":null,\"variables\":null,\"warnings\":[],\"width\":900}\n",
+  "stderr": ""
+}

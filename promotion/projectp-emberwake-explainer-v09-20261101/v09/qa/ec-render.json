@@ -1,0 +1,31 @@
+{
+  "args": [
+    "C:/Program Files/EffectCraft/effectcraft-cli.exe",
+    "--gpu",
+    "--project",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v09/projects/explainer.ecproj",
+    "render",
+    "--comp",
+    "156 v09 narrated explanation",
+    "--out",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v09/media/explainer-picture.mov",
+    "--format",
+    "prores",
+    "--prores",
+    "standard",
+    "--audio",
+    "off",
+    "--progress",
+    "--json"
+  ],
+  "pid": 39072,
+  "started": 1793536281.3760314,
+  "timeoutSeconds": 240,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 115.47944045066833,
+  "stdout": "{\"rendered\":[{\"comp\":\"156 v09 narrated explanation\",\"output\":\"C:\\\\Users\\\\pui\\\\private-use\\\\emberwake-video156-20261101\\\\v09\\\\media\\\\explainer-picture.mov\",\"seconds\":113.1747988}]}\n",
+  "stderr": "156 v09 narrated explanation → C:\\Users\\pui\\private-use\\emberwake-video156-20261101\\v09\\media\\explainer-picture.mov (1080×1920, 1368 frames, Custom)\nprogress 0 1368 0.0 -\nprogress 16 1368 1.5 125.7\nprogress 32 1368 3.1 130.3\nprogress 48 1368 4.6 126.1\nprogress 64 1368 6.0 123.3\nprogress 80 1368 7.4 118.6\nprogress 96 1368 8.6 114.0\nprogress 112 1368 10.0 112.2\nprogress 128 1368 11.2 108.1\nprogress 144 1368 12.3 104.7\nprogress 160 1368 13.5 102.1\nprogress 176 1368 14.6 98.8\nprogress 192 1368 15.6 95.5\nprogress 208 1368 16.6 92.8\nprogress 224 1368 17.8 91.1\nprogress 240 1368 18.9 88.7\nprogress 256 1368 20.0 86.9\nprogress 272 1368 21.0 84.5\nprogress 288 1368 22.0 82.5\nprogress 304 1368 23.0 80.3\nprogress 320 1368 24.0 78.7\nprogress 336 1368 25.1 77.0\nprogress 352 1368 26.1 75.4\nprogress 368 1368 27.2 73.8\nprogress 384 1368 28.1 72.1\nprogress 400 1368 29.2 70.6\nprogress 416 1368 30.2 69.1\nprogress 432 1368 31.5 68.3\nprogress 448 1368 32.7 67.1\nprogress 464 1368 33.8 65.8\nprogress 480 1368 35.0 64.7\nprogress 496 1368 36.2 63.6\nprogress 512 1368 37.5 62.6\nprogress 528 1368 38.9 61.9\nprogress 544 1368 40.2 60.9\nprogress 560 1368 41.8 60.3\nprogress 576 1368 43.3 59.5\nprogress 592 1368 44.9 58.8\nprogress 608 1368 46.6 58.2\nprogress 624 1368 48.3 57.6\nprogress 640 1368 50.0 56.8\nprogress 656 1368 52.0 56.5\nprogress 672 1368 54.2 56.1\nprogress 688 1368 55.6 54.9\nprogress 704 1368 57.2 54.0\nprogress 720 1368 58.9 53.0\nprogress 736 1368 60.5 51.9\nprogress 752 1368 62.3 51.0\nprogress 768 1368 64.3 50.3\nprogress 784 1368 66.0 49.2\nprogress 800 1368 67.7 48.1\nprogress 816 1368 69.4 46.9\nprogress 832 1368 71.1 45.8\nprogress 848 1368 72.7 44.6\nprogress 864 1368 74.3 43.3\nprogress 880 1368 75.9 42.1\nprogress 896 1368 77.5 40.8\nprogress 912 1368 78.8 39.4\nprogress 928 1368 80.0 38.0\nprogress 944 1368 81.4 36.6\nprogress 960 1368 82.7 35.1\nprogress 976 1368 83.9 33.7\nprogress 992 1368 85.3 32.3\nprogress 1008 1368 86.9 31.0\nprogress 1024 1368 88.2 29.6\nprogress 1040 1368 89.5 28.2\nprogress 1056 1368 90.8 26.8\nprogress 1072 1368 91.9 25.4\nprogress 1088 1368 92.9 23.9\nprogress 1104 1368 93.9 22.5\nprogress 1120 1368 95.1 21.1\nprogress 1136 1368 96.2 19.6\nprogress 1152 1368 97.3 18.2\nprogress 1168 1368 98.4 16.8\nprogress 1184 1368 99.6 15.5\nprogress 1200 1368 100.7 14.1\nprogress 1216 1368 101.8 12.7\nprogress 1232 1368 103.0 11.4\nprogress 1248 1368 104.2 10.0\nprogress 1264 1368 105.5 8.7\nprogress 1280 1368 107.0 7.4\nprogress 1296 1368 108.2 6.0\nprogress 1312 1368 109.3 4.7\nprogress 1328 1368 110.4 3.3\nprogress 1344 1368 111.5 2.0\nprogress 1360 1368 112.5 0.7\nprogress 1368 1368 113.2 0.0\ndone: 156 v09 narrated explanation → C:\\Users\\pui\\private-use\\emberwake-video156-20261101\\v09\\media\\explainer-picture.mov in 113.17s\n"
+}
