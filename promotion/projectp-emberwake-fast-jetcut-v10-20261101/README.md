@@ -1,3 +1,15 @@
+# 最新：プロフィール誘導 v10-r3（私的preview）
+
+現用稿は[プロフィール誘導差分](v10/r3/宣伝-156プロフィール誘導差分-v10-r3.md)。末尾の検索案内だけを「支援はプロフィールのリンクから」へ変更しました。実プロフィールのtarget993744への到達設定/受入はRoot未確認で、公開時の必須条件です。
+
+MP4 `C:/Users/pui/private-use/emberwake-video156-20261101/v10/r3/videos/emberwake-v10-r3-fast12-profile.mp4` / SHA256 `20c7f3af0e7d9a07b677a23972c882729715dcafa8141a89948e9af39d07b56d` / 4411103bytes / 映像33.600s・1008f。本文889f decoded完全一致、前9句WAV/配置不変。新CTA1句・PC/EC/FC原本・全最終AACのQAを追加。
+
+今回の依存は[v10-r3 manifest](v10/r3/依存manifest-profile.json)、前版のSHA固定依存/収録/code-pinは旧head702917bから継承。全編実聴/実時間視聴/実mobile/独立QA/創作採用・公開受入は未完です。
+
+以下は旧r2当時の納品記録をそのまま保持します。旧MP4/原本/Source/QAは改書きしません。
+
+---
+
 # 宣伝156：読み上げ1.20倍・ジェットカットとCAMPFIRE告知 v10-r2
 
 現用は33.9秒の編集修正稿。ownerの「1.2倍ぐらい」「CAMPFIRE告知」を反映。旧v09-r2/提示済み15秒1.30版/その原本を全て保持する。同じcreativeのテンポと導線修正であり、新ゲーム機能や新収録ではない。

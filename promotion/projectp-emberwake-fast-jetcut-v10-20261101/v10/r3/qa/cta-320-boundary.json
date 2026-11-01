@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-threads",
+    "2",
+    "-filter_threads",
+    "2",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r3/videos/emberwake-v10-r3-fast12-profile.mp4",
+    "-vf",
+    "select='eq(n,888)+eq(n,889)+eq(n,890)+eq(n,893)+eq(n,950)+eq(n,1007)',scale=320:568,tile=3x2:padding=4:margin=4",
+    "-frames:v",
+    "1",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r3/qa/cta-320-boundary.png"
+  ],
+  "pid": 38420,
+  "started": 1793542278.5071054,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 1.999967336654663,
+  "stdout": "",
+  "stderr": ""
+}
