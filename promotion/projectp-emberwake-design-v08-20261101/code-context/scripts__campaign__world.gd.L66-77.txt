@@ -1,0 +1,12 @@
+
+func _draw_gates() -> void:
+	# The wire ends at matching marked, hollow stones before they become solid.
+	for group in 2:
+		var source: Vector2 = switches[group]+Vector2(0,-14)
+		var target: Vector2 = route[4+group*4].get_center()+Vector2(0,-8)
+		var tint := AMBER if switch_lit.has(group) else Color("537774")
+		draw_polyline(PackedVector2Array([source,Vector2(source.x,target.y-22),Vector2(target.x,target.y-22),target]),tint,1)
+		for i in range(4+group*4,7+group*4):
+			var rect: Rect2 = route[i]
+			if not switch_lit.has(group): draw_rect(rect,Color(0.55,0.77,0.74,0.42),false,1)
+			rune(rect.get_center()+Vector2(0,-7),group,MINT if not switch_lit.has(group) else AMBER,3)

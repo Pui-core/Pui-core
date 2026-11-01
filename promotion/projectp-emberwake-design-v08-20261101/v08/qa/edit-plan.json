@@ -1,0 +1,32 @@
+{
+  "fps": 30,
+  "frames": 510,
+  "shots": [
+    {
+      "sourceFrame": 745,
+      "frames": 150,
+      "role": "new before -> normal E -> actual activation",
+      "timelineFrame": 0
+    },
+    {
+      "image": true,
+      "frames": 180,
+      "role": "explicit code explanation still background",
+      "timelineFrame": 150
+    },
+    {
+      "sourceFrame": 933,
+      "frames": 180,
+      "role": "new normal walk/jump -> solid step landing",
+      "timelineFrame": 330
+    }
+  ],
+  "raw": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/capture.avi",
+  "rawSha256": "eaf9331496850d6cf86d885d8cff48a0cd45ea95b040b0fdd17c59024d31c5b3",
+  "source": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "codeInterval": [
+    5,
+    11
+  ],
+  "codeIntervalAudio": "intentionally silent; no invented typing sound"
+}

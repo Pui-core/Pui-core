@@ -1,0 +1,32 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-threads",
+    "2",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/videos/emberwake-v08-code-circuit-preview17.mp4",
+    "-map",
+    "0:a:0",
+    "-ar",
+    "48000",
+    "-ac",
+    "2",
+    "-f",
+    "f32le",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/qa/final.f32"
+  ],
+  "pid": 43864,
+  "started": 1793522117.802114,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.3037989139556885,
+  "stdout": "",
+  "stderr": ""
+}

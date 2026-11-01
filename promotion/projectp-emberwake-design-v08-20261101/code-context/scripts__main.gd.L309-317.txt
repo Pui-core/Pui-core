@@ -1,0 +1,9 @@
+			audio.play("hearth")
+		return
+	if nearby.kind == "switch":
+		world.switch_lit.append(index)
+		world.burst(nearby.position+Vector2(0,-12),EmberWorld.AMBER,18)
+		audio.play("hearth")
+		world.update_gates()
+		if world.gate_open[1]:
+			hud.notify("○ ○  →  ↑")

@@ -1,0 +1,195 @@
+{
+  "phase": "new code-linked representative cut v08, not final ad",
+  "final": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/videos/emberwake-v08-code-circuit-preview17.mp4",
+  "sha256": "f036237e819b3b39e52d53bdaf6869f961bcaf52b183082628fa69c0c5c452d6",
+  "bytes": 2465514,
+  "metadata": {
+    "duration": 17,
+    "frames": 510,
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "video": "h264",
+    "audio": "aac stereo"
+  },
+  "fullAvDecode": {
+    "code": 0,
+    "stderr": ""
+  },
+  "raw": {
+    "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/capture.avi",
+    "sha256": "eaf9331496850d6cf86d885d8cff48a0cd45ea95b040b0fdd17c59024d31c5b3",
+    "newRecording": true,
+    "oldV07RawUsed": false,
+    "version": "0.12.0",
+    "source": "71584a6bd0c8852885157de71032fd9252e7a04c",
+    "scene": "res://scenes/campaign.tscn",
+    "coreChanged": [],
+    "codeFilesPinned": 71,
+    "ordinaryProcessInputOnly": true,
+    "completedThroughout": [
+      1
+    ],
+    "falls": 0,
+    "actualSwitch1OffOn": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "firstNewStepLandingObserved": true
+  },
+  "code": {
+    "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+    "runtimeScene": "res://scenes/campaign.tscn",
+    "version": "0.12.0",
+    "quotes": [
+      {
+        "file": "scripts/campaign/world.gd",
+        "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+        "lineStart": 77,
+        "lineEnd": 77,
+        "fullFileSha256": "dabae63e5a093f8c7d1beee40d94318d74c8563ad47d24ef1970ef6c88c5ca83",
+        "exactRangeSha256": "866b776d01731ee1feef75b1d77f51ad2bbfbd9186eca861b4fe5e977a5fbb97",
+        "exactUtf8": "\t\t\trune(rect.get_center()+Vector2(0,-7),group,MINT if not switch_lit.has(group) else AMBER,3)",
+        "displayFragment": "MINT if not switch_lit.has(group) else AMBER",
+        "displayKind": "exact substring of line"
+      },
+      {
+        "file": "scripts/campaign/world.gd",
+        "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+        "lineStart": 38,
+        "lineEnd": 38,
+        "fullFileSha256": "dabae63e5a093f8c7d1beee40d94318d74c8563ad47d24ef1970ef6c88c5ca83",
+        "exactRangeSha256": "e4fe985868e5874ce7b7924cda26681e0384c00e860e0911f12b945c0165c648",
+        "exactUtf8": "\t\troute_bodies[body_index].collision_layer = 1 if on else 0",
+        "displayFragment": "collision_layer = 1 if on else 0",
+        "displayKind": "exact substring of line"
+      },
+      {
+        "file": "scripts/campaign/world.gd",
+        "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+        "lineStart": 39,
+        "lineEnd": 40,
+        "fullFileSha256": "dabae63e5a093f8c7d1beee40d94318d74c8563ad47d24ef1970ef6c88c5ca83",
+        "exactRangeSha256": "53c0629522ce317b7752584ab3957f619458337b9c522b8b05663f2579327522",
+        "exactUtf8": "\t\tplatforms.erase(rect)\n\t\tif on: platforms.append(rect)",
+        "displayFragment": "platforms.erase(rect)\n\t\tif on: platforms.append(rect)",
+        "displayKind": "source lines, outer whitespace removed"
+      },
+      {
+        "file": "scripts/world.gd",
+        "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+        "lineStart": 163,
+        "lineEnd": 168,
+        "fullFileSha256": "09d75d3399fbfa9ea3f6a41543025e1af90fc94dc0c8c0ea747b4737079c25b9",
+        "exactRangeSha256": "8e3d6eb3d55820cc436eed17bd217088f8412941d1487d8b84c1e5cbeecd8f1c",
+        "exactUtf8": "\tfor i in switches.size():\n\t\tvar p := switches[i]\n\t\tvar lit := switch_lit.has(i)\n\t\tdraw_rect(Rect2(p.x-8,p.y-18,16,18),Color(\"203a44\"))\n\t\tdraw_rect(Rect2(p.x-10,p.y-3,20,3),Color(\"5c7d77\"))\n\t\trune(p+Vector2(0,-12),1,AMBER if lit else MINT,5)",
+        "displayFragment": "for i in switches.size():\n\t\tvar p := switches[i]\n\t\tvar lit := switch_lit.has(i)\n\t\tdraw_rect(Rect2(p.x-8,p.y-18,16,18),Color(\"203a44\"))\n\t\tdraw_rect(Rect2(p.x-10,p.y-3,20,3),Color(\"5c7d77\"))\n\t\trune(p+Vector2(0,-12),1,AMBER if lit else MINT,5)",
+        "displayKind": "source lines, outer whitespace removed"
+      }
+    ],
+    "authorDirectStatement": null,
+    "editorExplanation": "この丸印の切替を、描画と通過判定が同じswitch_litから読む。作者の感情や狙いを推定した発言ではない。",
+    "legacyExcluded": "stone_circuit.gd and older mode production-plan are not displayed as active campaign runtime code."
+  },
+  "nativeMediaReferences": [
+    {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/capture.avi",
+      "bytes": 85441952,
+      "sha256": "eaf9331496850d6cf86d885d8cff48a0cd45ea95b040b0fdd17c59024d31c5b3"
+    },
+    {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/frames/raw-01.png",
+      "bytes": 299247,
+      "sha256": "8b7b2ae870ca23fa5a7e8bef02a373dc2040349d5978481d762bbfca2e750e22"
+    },
+    {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/circuit-cut.mov",
+      "bytes": 166735648,
+      "sha256": "83c180db6d855ce6fef8619cfd1ae142130691805f0510e7cbe47b1805b43900"
+    },
+    {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/code-draw-v2.png",
+      "bytes": 63415,
+      "sha256": "d48d13d3674d231e68967f069e8fa9cdda554bde8f6ca3a96226f848357c8ec2"
+    },
+    {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/code-collision.png",
+      "bytes": 60116,
+      "sha256": "ded2ff0ed4af9d10f095853a720fc250bd3549272e05ae6a624eb69837b08307"
+    },
+    {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/circle-before.png",
+      "bytes": 152120,
+      "sha256": "b9db0ea4741a4aad9351a59b098d8dc83e5c45bd2a1906758af152ceb880915a"
+    },
+    {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/circle-after.png",
+      "bytes": 180704,
+      "sha256": "20f4f79e0ec6576ff84f843b92446e18f80714f208827bf248382a601b5b3765"
+    },
+    {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/circuit-picture-v2.mov",
+      "bytes": 278622542,
+      "sha256": "ce97209fa12cbebb2821c54e9049083112c0ef9b9d1124782ab8ed75c677d7ad"
+    },
+    {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/capture.avi",
+      "bytes": 85441952,
+      "sha256": "eaf9331496850d6cf86d885d8cff48a0cd45ea95b040b0fdd17c59024d31c5b3"
+    }
+  ],
+  "nativeMissing": 0,
+  "audio": {
+    "kind": "new actual game event tones; Dummy driver omits ambient start",
+    "addedBgm": false,
+    "VOICEVOX": false,
+    "editorialSE": false,
+    "codeSectionSilent": [
+      5,
+      11
+    ],
+    "channels": [
+      {
+        "channel": "L",
+        "lagSamples": 0,
+        "correlation": 0.9999997814815701
+      },
+      {
+        "channel": "R",
+        "lagSamples": 0,
+        "correlation": 0.9999997814815701
+      }
+    ],
+    "peak": 0.053767669945955276,
+    "clippedSamples": 0,
+    "subjectiveListen": false
+  },
+  "preservedOwnerLinkedV07": [
+    {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/videos/emberwake-v07-checkpoint-preview16.mp4",
+      "sha256": "713209531a563549132bd2ab97ed4203fa3527f07908f657958a138d6171c524",
+      "bytes": 2357801
+    },
+    {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/videos/emberwake-v07-checkpoint-preview16-v2.mp4",
+      "sha256": "5cadde6d29a96d80d4c58add22242384d413ec0bbe6802725aca3413d717c3ce",
+      "bytes": 2776122
+    }
+  ],
+  "realtimeWholeWatch": false,
+  "mobilePhysicalDevice": false,
+  "independentReview": "pending Root",
+  "ownerCreativeAcceptance": "pending",
+  "NASCopy": false,
+  "published": false,
+  "visualReview": "separate visual-review.json after actual extracted-image review",
+  "sourcePR96": "7d2d3aabaa0b71ff602a110e4c74cc6bb916e84b preserved, no new push in this milestone"
+}

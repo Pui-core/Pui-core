@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-threads",
+    "2",
+    "-filter_threads",
+    "2",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/videos/emberwake-v08-code-circuit-preview17.mp4",
+    "-vf",
+    "select='between(n,400,429)',scale=216:384,tile=10x3:padding=2:margin=2",
+    "-frames:v",
+    "1",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/qa/landing-continuous.png"
+  ],
+  "pid": 59072,
+  "started": 1793522116.6721485,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.48924827575683594,
+  "stdout": "",
+  "stderr": ""
+}

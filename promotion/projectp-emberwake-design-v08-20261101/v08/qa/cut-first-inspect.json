@@ -1,0 +1,24 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/circuit-cut.mov",
+    "-frames:v",
+    "1",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/qa/cut-first.png"
+  ],
+  "pid": 31096,
+  "started": 1793521944.9619992,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.12829065322875977,
+  "stdout": "",
+  "stderr": ""
+}

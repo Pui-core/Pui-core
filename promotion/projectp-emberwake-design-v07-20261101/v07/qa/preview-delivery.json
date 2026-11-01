@@ -1,0 +1,183 @@
+{
+  "version": "v07 representative cut, not full65",
+  "final": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/videos/emberwake-v07-checkpoint-preview16.mp4",
+  "sha256": "713209531a563549132bd2ab97ed4203fa3527f07908f657958a138d6171c524",
+  "bytes": 2357801,
+  "format": {
+    "duration": "16.000000",
+    "frames": 480,
+    "width": 1080,
+    "height": 1920,
+    "video": "h264",
+    "audio": "aac",
+    "fps": 30
+  },
+  "fullAvDecodeExit": 0,
+  "nativeDependencyFiles": [
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/projects/v07-cut.fcproj",
+      "sha256": "d79ae3783822abdfc4e1ec7680ee6266677fa35e75279c132a91c2c5f8b16037",
+      "bytes": 10271
+    },
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/projects/v07-final.fcproj",
+      "sha256": "caa529d5244446c5f2e2244cc7b768b1814b049abe333b86624981048e8c0d60",
+      "bytes": 7104
+    },
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/projects/v07-heading.pcraft",
+      "sha256": "d14b83e538111d0e652c7f1ea4b8166ff94ba12e21666168b1fa194a3de85568",
+      "bytes": 78545
+    },
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/projects/v07-memory-after.pcraft",
+      "sha256": "68ddc623e321ad4550a6db21244ab3fd5f271996139c7cd2b3a93984d390cf08",
+      "bytes": 338820
+    },
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/projects/v07-memory-before.pcraft",
+      "sha256": "f91e9c1a4e977e2ce04d80b732fd68f09bf7c1599aa6dbebbb38987642970151",
+      "bytes": 338821
+    },
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/projects/v07-preview.ecproj",
+      "sha256": "6503a90135f8df81ad505c1268309e51effc07f15d49451771d4c4da13a01a33",
+      "bytes": 533255
+    },
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/media/v07-cut.mov",
+      "sha256": "4ff2da2e4a8aa12b512f1e38f8070d12909c3921260c2b8518f39391379df33d",
+      "bytes": 146570566
+    },
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/media/v07-heading.png",
+      "sha256": "205ea94dc0167cacfa99477df312646337e4f2d2580bfc89b1ca399c3745a315",
+      "bytes": 26314
+    },
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/media/v07-memory-after.png",
+      "sha256": "3eee280ebe4e34e581427fe4345d6bc6e27a6a807daa961713ef6d75f9d22908",
+      "bytes": 81213
+    },
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/media/v07-memory-before.png",
+      "sha256": "3eee280ebe4e34e581427fe4345d6bc6e27a6a807daa961713ef6d75f9d22908",
+      "bytes": 81213
+    },
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/media/v07-native-final.mp4",
+      "sha256": "9465ad5ffed9fd36f41420cf57503a8147321a2a8597b16c40788cd75c0202cc",
+      "bytes": 2348764
+    },
+    {
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/media/v07-picture.mov",
+      "sha256": "22a61849f525428786c1124c3e9fd686d77ee90041ef2c4fbdc0de5ad656385c",
+      "bytes": 213043342
+    }
+  ],
+  "raw": {
+    "file": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/episode2-capture01/capture.avi",
+    "sha256": "e4f87633b8de324fca82ebeb01ed81d74dca6006ec7dec753ed0d5f68d232915",
+    "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+    "version": "0.12.0",
+    "dimensions": [
+      1440,
+      810
+    ],
+    "frames": 1140,
+    "inputLog": "episode2-capture01/capture.json",
+    "productFilesChanged": [],
+    "newCapture": true,
+    "previousFinalOrOldRawUsed": false
+  },
+  "audio": {
+    "kind": "newly captured native game audio only",
+    "narration": false,
+    "addedMusic": false,
+    "actualPeak": 0.05134885385632515,
+    "clippedSamples": 0,
+    "channels": [
+      {
+        "channel": "L",
+        "lagSamples": 0,
+        "correlation": 0.9999996942696142
+      },
+      {
+        "channel": "R",
+        "lagSamples": 0,
+        "correlation": 0.9999996942696142
+      }
+    ],
+    "headTailVoiceCheck": "not applicable: no narration in representative cut",
+    "subjectiveListen": false
+  },
+  "observations": [
+    {
+      "event": "episode2-title-before-input-memory1",
+      "frame": 60,
+      "falls": 0,
+      "hearths": [],
+      "labels": [
+        "EMBERWAKE",
+        "本編制作版  /  最後の灯を、君に。",
+        "1章：2話　ふたりの合図",
+        "1章 約束",
+        "2章 面影",
+        "3章 忘却",
+        "4章 帰る場所",
+        "5章 最後の灯を、\n    君に。",
+        "失った記憶 1 / 15　落下・再挑戦では増えません"
+      ]
+    },
+    {
+      "event": "second-checkpoint-before-fall",
+      "frame": 739,
+      "falls": 0,
+      "hearths": [
+        0,
+        1
+      ],
+      "labels": [
+        "灯の通り道を組み替え、閉じた街路の先へ火を運ぶ。"
+      ]
+    },
+    {
+      "event": "actual-fall-return-second-checkpoint",
+      "frame": 864,
+      "falls": 1,
+      "hearths": [
+        0,
+        1
+      ],
+      "labels": [
+        "灯の通り道を組み替え、閉じた街路の先へ火を運ぶ。"
+      ]
+    },
+    {
+      "event": "episode2-title-after-memory1-without-clear",
+      "frame": 1049,
+      "falls": 1,
+      "hearths": [
+        0,
+        1
+      ],
+      "labels": [
+        "EMBERWAKE",
+        "本編制作版  /  最後の灯を、君に。",
+        "1章：2話　ふたりの合図",
+        "1章 約束",
+        "2章 面影",
+        "3章 忘却",
+        "4章 帰る場所",
+        "5章 最後の灯を、\n    君に。",
+        "失った記憶 1 / 15　落下・再挑戦では増えません"
+      ]
+    }
+  ],
+  "wholeRealtimeWatch": false,
+  "mobilePhysicalDevice": false,
+  "independentReview": "pending Root",
+  "ownerCreativeAcceptance": "pending",
+  "published": false,
+  "nasCopy": false
+}

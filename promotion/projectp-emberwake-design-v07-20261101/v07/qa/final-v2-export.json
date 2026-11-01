@@ -1,0 +1,20 @@
+{
+  "args": [
+    "C:/Program Files/FilmCraft/filmcraft-cli.exe",
+    "--project",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v07/projects/v07-final-tracked.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\": \"C:/Users/pui/private-use/emberwake-video156-20261101/v07/media/v07-native-final-tracked.mp4\", \"format\": \"h264\", \"audio\": true, \"audioCodec\": \"aac\", \"crf\": 18, \"hardwareEncoding\": \"off\", \"gpuRendering\": \"off\", \"wait\": true}"
+  ],
+  "pid": 63568,
+  "started": 1793520431.5672264,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 9.620266199111938,
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"C:\\\\Users\\\\pui\\\\private-use\\\\emberwake-video156-20261101\\\\v07\\\\media\\\\v07-native-final-tracked.mp4\",\n  \"result\": {\n    \"bytes\": 2767077,\n    \"frames\": 480,\n    \"path\": \"C:\\\\Users\\\\pui\\\\private-use\\\\emberwake-video156-20261101\\\\v07\\\\media\\\\v07-native-final-tracked.mp4\",\n    \"render_fps\": 50.66657206091739,\n    \"seconds\": 9.4737019\n  }\n}\n",
+  "stderr": ""
+}
