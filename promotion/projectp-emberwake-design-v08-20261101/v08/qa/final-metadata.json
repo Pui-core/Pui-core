@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/circuit-native.mp4",
+    "-map",
+    "0",
+    "-c",
+    "copy",
+    "-metadata",
+    "title=EMBERWAKE / 丸印と道をつなぐ実装 v08 代表カット",
+    "-metadata",
+    "comment=Source71584a6bd0c8852885157de71032fd9252e7a04c 0.12.0 campaign.tscn. New normal process-input capture; no product-code/state setters. Actual game code substrings: scripts/campaign/world.gd L77 and L38; exact pin in code-pin.json. Editorial explanation, not an author quotation. Native game event sound, no VOICEVOX, added music or editorial SE. Code section intentionally silent. Preview, no publication acceptance.",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/videos/emberwake-v08-code-circuit-preview17.mp4"
+  ],
+  "pid": 66412,
+  "started": 1793522074.9676254,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.10289883613586426,
+  "stdout": "",
+  "stderr": ""
+}

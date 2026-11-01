@@ -1,0 +1,23 @@
+{
+  "args": [
+    "C:/Program Files/PhotoCraft/photocraft-cli.exe",
+    "run",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/frames/detail-03.png",
+    "--cmd",
+    "image.crop",
+    "--params",
+    "{\"x\": 120, \"y\": 390, \"width\": 790, \"height\": 300, \"targetWidth\": 1000, \"targetHeight\": 380, \"resample\": \"lanczos\", \"deleteCroppedPixels\": true}",
+    "--out",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/projects/circle-after.pcraft"
+  ],
+  "pid": 23576,
+  "started": 1793521745.7315943,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.10505127906799316,
+  "stdout": "{\"command\":\"image.crop\",\"result\":{\"documentHeight\":380,\"documentWidth\":1000,\"height\":300,\"resolution\":72.0,\"width\":790,\"x\":120,\"y\":390}}\n",
+  "stderr": ""
+}

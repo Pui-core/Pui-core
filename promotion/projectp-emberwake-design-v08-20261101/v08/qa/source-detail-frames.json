@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-threads",
+    "2",
+    "-filter_threads",
+    "2",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/capture.avi",
+    "-vf",
+    "select='eq(n,745)+eq(n,755)+eq(n,965)+eq(n,975)'",
+    "-fps_mode",
+    "vfr",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/frames/detail-%02d.png"
+  ],
+  "pid": 62252,
+  "started": 1793521633.7284129,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 1.6376361846923828,
+  "stdout": "",
+  "stderr": ""
+}

@@ -1,0 +1,129 @@
+{
+  "scope": "Source packaging delta only; no new render, encode, capture or full suite",
+  "finalSha256": "f036237e819b3b39e52d53bdaf6869f961bcaf52b183082628fa69c0c5c452d6",
+  "finalBytes": 2465514,
+  "oldV07Commit": "7d2d3aabaa0b71ff602a110e4c74cc6bb916e84b",
+  "oldV07FilesByteUnchanged": 71,
+  "newPrefixOnly": "promotion/projectp-emberwake-design-v08-20261101",
+  "coreFilesByteVerifiedAgainstFixedGit": 71,
+  "coreChanged": [],
+  "nativeReopened": [
+    {
+      "file": "C:/Users/pui/.claude/worktrees/Pui-core-issue-156-design-v07/promotion/projectp-emberwake-design-v08-20261101/v08/projects/circuit-cut.fcproj",
+      "bytes": 6225,
+      "sha256": "63d1591058e6b6bef7783de627cb1b3448bfd6aa07ea412b4ae15f84803c68d1",
+      "reopenExit": 0,
+      "hashUnchangedAfterReopen": true
+    },
+    {
+      "file": "C:/Users/pui/.claude/worktrees/Pui-core-issue-156-design-v07/promotion/projectp-emberwake-design-v08-20261101/v08/projects/circuit-final.fcproj",
+      "bytes": 5906,
+      "sha256": "36ebf10711aeb566c11492bca025acce6ed3e312ba6f0130066bb58900731fdc",
+      "reopenExit": 0,
+      "hashUnchangedAfterReopen": true
+    },
+    {
+      "file": "C:/Users/pui/.claude/worktrees/Pui-core-issue-156-design-v07/promotion/projectp-emberwake-design-v08-20261101/v08/projects/circuit-preview-v2.ecproj",
+      "bytes": 905777,
+      "sha256": "12708d77ec65f822255957e2c1d1141f1374acf29bfdf387daf8cf783d4af45f",
+      "reopenExit": 0,
+      "hashUnchangedAfterReopen": true
+    },
+    {
+      "file": "C:/Users/pui/.claude/worktrees/Pui-core-issue-156-design-v07/promotion/projectp-emberwake-design-v08-20261101/v08/projects/code-draw-v2.pcraft",
+      "bytes": 168220,
+      "sha256": "f485661bf0b3be34f1bb4a4ed137bdc224b78993922a63f45f0deede88d24660",
+      "reopenExit": 0,
+      "hashUnchangedAfterReopen": true
+    },
+    {
+      "file": "C:/Users/pui/.claude/worktrees/Pui-core-issue-156-design-v07/promotion/projectp-emberwake-design-v08-20261101/v08/projects/code-collision.pcraft",
+      "bytes": 163245,
+      "sha256": "a7160857f149aaa980b8f439d0f76e9cddb59830f8845bcedf1ca5f8a13e9ac8",
+      "reopenExit": 0,
+      "hashUnchangedAfterReopen": true
+    },
+    {
+      "file": "C:/Users/pui/.claude/worktrees/Pui-core-issue-156-design-v07/promotion/projectp-emberwake-design-v08-20261101/v08/projects/circle-before.pcraft",
+      "bytes": 577888,
+      "sha256": "8c15df259f38cf153abc32217ad2d9dd8b4126e2f651e677bfdc474e10729e6b",
+      "reopenExit": 0,
+      "hashUnchangedAfterReopen": true
+    },
+    {
+      "file": "C:/Users/pui/.claude/worktrees/Pui-core-issue-156-design-v07/promotion/projectp-emberwake-design-v08-20261101/v08/projects/circle-after.pcraft",
+      "bytes": 703701,
+      "sha256": "443507d61a25fdf58848cdaba552b252206375746ee6531e21f1ecddcbffb524",
+      "reopenExit": 0,
+      "hashUnchangedAfterReopen": true
+    }
+  ],
+  "nativeMediaReferences": [
+    {
+      "project": "circuit-cut.fcproj",
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/capture.avi",
+      "bytes": 85441952,
+      "sha256": "eaf9331496850d6cf86d885d8cff48a0cd45ea95b040b0fdd17c59024d31c5b3"
+    },
+    {
+      "project": "circuit-cut.fcproj",
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/frames/raw-01.png",
+      "bytes": 299247,
+      "sha256": "8b7b2ae870ca23fa5a7e8bef02a373dc2040349d5978481d762bbfca2e750e22"
+    },
+    {
+      "project": "circuit-final.fcproj",
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/circuit-picture-v2.mov",
+      "bytes": 278622542,
+      "sha256": "ce97209fa12cbebb2821c54e9049083112c0ef9b9d1124782ab8ed75c677d7ad"
+    },
+    {
+      "project": "circuit-final.fcproj",
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/capture.avi",
+      "bytes": 85441952,
+      "sha256": "eaf9331496850d6cf86d885d8cff48a0cd45ea95b040b0fdd17c59024d31c5b3"
+    },
+    {
+      "project": "circuit-preview-v2.ecproj",
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/circuit-cut.mov",
+      "bytes": 166735648,
+      "sha256": "83c180db6d855ce6fef8619cfd1ae142130691805f0510e7cbe47b1805b43900"
+    },
+    {
+      "project": "circuit-preview-v2.ecproj",
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/code-draw-v2.png",
+      "bytes": 63415,
+      "sha256": "d48d13d3674d231e68967f069e8fa9cdda554bde8f6ca3a96226f848357c8ec2"
+    },
+    {
+      "project": "circuit-preview-v2.ecproj",
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/code-collision.png",
+      "bytes": 60116,
+      "sha256": "ded2ff0ed4af9d10f095853a720fc250bd3549272e05ae6a624eb69837b08307"
+    },
+    {
+      "project": "circuit-preview-v2.ecproj",
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/circle-before.png",
+      "bytes": 152120,
+      "sha256": "b9db0ea4741a4aad9351a59b098d8dc83e5c45bd2a1906758af152ceb880915a"
+    },
+    {
+      "project": "circuit-preview-v2.ecproj",
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/circle-after.png",
+      "bytes": 180704,
+      "sha256": "20f4f79e0ec6576ff84f843b92446e18f80714f208827bf248382a601b5b3765"
+    }
+  ],
+  "nativeMissing": 0,
+  "codeContextExactBytes": 4,
+  "containerSeconds": 17.002,
+  "videoSeconds": 17.0,
+  "audioSeconds": 17.002,
+  "existingAVQAReusedFromIdenticalFinalSHA": "v08/qa/delivery.json",
+  "cloneAloneStandalone": false,
+  "wholeRealtimeViewing": false,
+  "subjectiveListen": false,
+  "physicalMobile": false,
+  "independentQA": "pending Root existing Reviewer",
+  "ownerCreativeAcceptance": "pending"
+}

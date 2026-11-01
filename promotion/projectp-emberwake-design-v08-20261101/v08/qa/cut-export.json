@@ -1,0 +1,20 @@
+{
+  "args": [
+    "C:/Program Files/FilmCraft/filmcraft-cli.exe",
+    "--project",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v08/projects/circuit-cut.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\": \"C:/Users/pui/private-use/emberwake-video156-20261101/v08/media/circuit-cut.mov\", \"format\": \"prores\", \"audio\": false, \"hardwareEncoding\": \"off\", \"gpuRendering\": \"off\", \"wait\": true}"
+  ],
+  "pid": 62588,
+  "started": 1793521833.0810726,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 7.453531503677368,
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"C:\\\\Users\\\\pui\\\\private-use\\\\emberwake-video156-20261101\\\\v08\\\\media\\\\circuit-cut.mov\",\n  \"result\": {\n    \"bytes\": 166735648,\n    \"frames\": 510,\n    \"path\": \"C:\\\\Users\\\\pui\\\\private-use\\\\emberwake-video156-20261101\\\\v08\\\\media\\\\circuit-cut.mov\",\n    \"render_fps\": 69.66602490142394,\n    \"seconds\": 7.3206416\n  }\n}\n",
+  "stderr": ""
+}

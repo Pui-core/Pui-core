@@ -1,0 +1,60 @@
+{
+  "final": {
+    "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/videos/emberwake-v08-code-circuit-preview17.mp4",
+    "caseRelative": "videos/emberwake-v08-code-circuit-preview17.mp4",
+    "bytes": 2465514,
+    "sha256": "f036237e819b3b39e52d53bdaf6869f961bcaf52b183082628fa69c0c5c452d6"
+  },
+  "duration": {
+    "video": 17.0,
+    "audio": 17.002,
+    "container": 17.002,
+    "frames": 510,
+    "fps": 30
+  },
+  "recording": {
+    "file": {
+      "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/capture.avi",
+      "caseRelative": "circuit-capture01/capture.avi",
+      "bytes": 85441952,
+      "sha256": "eaf9331496850d6cf86d885d8cff48a0cd45ea95b040b0fdd17c59024d31c5b3"
+    },
+    "scene": "res://scenes/campaign.tscn",
+    "version": "0.12.0",
+    "source": "71584a6bd0c8852885157de71032fd9252e7a04c",
+    "engine": "4.6.3.stable.official.7d41c59c4",
+    "modeDisplay": "物語モード",
+    "internalMode": "practice",
+    "modeEvidence": "capture-circuit.gd drive asserts game.run.mode==practice after ordinary title navigation; failure terminates capture",
+    "ordinaryInputOnly": true,
+    "sharedDesktopInput": 0,
+    "seedSha256": "f5eae6b0b22ff83476b9d9e7846ce6da6fef79f53ebf0fadfdefcf875afb1494",
+    "completedBeforeAndAfter": [
+      1
+    ],
+    "falls": 0,
+    "clear": false,
+    "coreFilesUnchanged": 71,
+    "configuredRenderDimensions": [
+      960,
+      540
+    ],
+    "actualMovieDimensions": [
+      1440,
+      810
+    ],
+    "movieFrames": 1113,
+    "callbackFrames": 1112
+  },
+  "storyRuntime": "current campaign scene, not legacy main.tscn/Wind world",
+  "evidence": {
+    "inputAndTrajectory": "v08/circuit-capture01/capture.json",
+    "launch": "v08/circuit-capture01/launch.json",
+    "sourcePreflight": "v08/circuit-capture01/preflight.json",
+    "rawLocation": "依存manifest.json",
+    "codeContext": "code-context/",
+    "technicalQA": "v08/qa/delivery.json"
+  },
+  "scope": "17-second representative partial preview; not 65-second ad/CTA/creative or public acceptance",
+  "historicalReceiptNote": "copied production-time delivery/source notes retain their original phase and old head; this binding is the append-only Source packaging state"
+}

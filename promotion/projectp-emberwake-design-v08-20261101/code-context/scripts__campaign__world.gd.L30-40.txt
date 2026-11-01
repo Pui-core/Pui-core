@@ -1,0 +1,11 @@
+func update_gates() -> void:
+	super.update_gates()
+	if stage==null or stage.is_empty(): return
+	var body_index := 0
+	for i in route.size():
+		if i<4 or i%4==3: continue
+		var on := switch_lit.has(0 if i<8 else 1)
+		var rect: Rect2 = route[i]
+		route_bodies[body_index].collision_layer = 1 if on else 0
+		platforms.erase(rect)
+		if on: platforms.append(rect)
