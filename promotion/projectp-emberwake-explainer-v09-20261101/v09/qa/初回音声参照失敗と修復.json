@@ -1,0 +1,10 @@
+{
+  "firstUnpublishedExport": "C:/Users/pui/private-use/emberwake-video156-20261101/v09/videos/emberwake-v09-narrated-intro45.mp4",
+  "sha256": "6f427a093e40da0bed1da3e0c5fe909f7a604675ebf6ad8e1a0fdedb682c6431",
+  "observedDefect": "cue06 decoded as silence in both channels while source WAV was audible numerically; per-cue reference matching rejected it",
+  "nativeReference": "relative v09/audio/voice-06-reading-r2.wav",
+  "fixedBy": "all absolute voice paths in voice-binding-r3 + separately saved explainer-final-r2.fcproj / intro45-r2.mp4",
+  "videoStreamUnchanged": "SHA256=e44ea963d25cad402fbd2f0a3b49614c5dd7584379ee1f7838e5473e4f5534ee",
+  "oldArtifactsPreserved": true,
+  "newVerification": "delivery-r2.json: nine cues, L/R independent head+tail36 checks passed. Numerical checks do not establish subjective listening."
+}

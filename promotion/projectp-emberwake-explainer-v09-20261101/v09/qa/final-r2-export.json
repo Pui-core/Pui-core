@@ -1,0 +1,20 @@
+{
+  "args": [
+    "C:/Program Files/FilmCraft/filmcraft-cli.exe",
+    "--project",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v09/projects/explainer-final-r2.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\": \"C:/Users/pui/private-use/emberwake-video156-20261101/v09/media/explainer-native-r2.mp4\", \"format\": \"h264\", \"audio\": true, \"audioCodec\": \"aac\", \"crf\": 18, \"hardwareEncoding\": \"off\", \"gpuRendering\": \"off\", \"wait\": true}"
+  ],
+  "pid": 54440,
+  "started": 1793536701.3013408,
+  "timeoutSeconds": 240,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 37.59235763549805,
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"C:\\\\Users\\\\pui\\\\private-use\\\\emberwake-video156-20261101\\\\v09\\\\media\\\\explainer-native-r2.mp4\",\n  \"result\": {\n    \"bytes\": 5517451,\n    \"frames\": 1368,\n    \"path\": \"C:\\\\Users\\\\pui\\\\private-use\\\\emberwake-video156-20261101\\\\v09\\\\media\\\\explainer-native-r2.mp4\",\n    \"render_fps\": 36.57025226192089,\n    \"seconds\": 37.4074532\n  }\n}\n",
+  "stderr": ""
+}

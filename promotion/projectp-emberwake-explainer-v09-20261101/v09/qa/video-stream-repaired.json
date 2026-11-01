@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v09/videos/emberwake-v09-narrated-intro45-r2.mp4",
+    "-map",
+    "0:v:0",
+    "-c",
+    "copy",
+    "-f",
+    "hash",
+    "-hash",
+    "sha256",
+    "-"
+  ],
+  "pid": 64392,
+  "started": 1793536768.9998217,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.1342620849609375,
+  "stdout": "SHA256=e44ea963d25cad402fbd2f0a3b49614c5dd7584379ee1f7838e5473e4f5534ee\n",
+  "stderr": ""
+}

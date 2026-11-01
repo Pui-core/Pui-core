@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v09/media/explainer-native-r2.mp4",
+    "-map",
+    "0",
+    "-c",
+    "copy",
+    "-metadata",
+    "title=EMBERWAKE 開発解説：どの道が変わるかを、押す前に / v09 冒頭稿",
+    "-metadata",
+    "comment=Temporary narration VOICEVOX:玄野武宏 (speaker11). No owner/Hytacka voice imitation; no music, game audio or editorial SE. Original 0.12.0 Source71584a6 campaign.tscn recording and real bounded product-code excerpts. Annotated freezes, implementation diagram and explicit replay. Editorial explanation, not invented author history. 45.6-second opening preview; not full long-form or publication acceptance.",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v09/videos/emberwake-v09-narrated-intro45-r2.mp4"
+  ],
+  "pid": 63456,
+  "started": 1793536738.8979242,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.11719536781311035,
+  "stdout": "",
+  "stderr": ""
+}

@@ -1,0 +1,54 @@
+{
+  "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "runtimeScene": "res://scenes/campaign.tscn",
+  "version": "0.12.0",
+  "quotes": [
+    {
+      "file": "scripts/campaign/world.gd",
+      "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "lineStart": 77,
+      "lineEnd": 77,
+      "fullFileSha256": "dabae63e5a093f8c7d1beee40d94318d74c8563ad47d24ef1970ef6c88c5ca83",
+      "exactRangeSha256": "866b776d01731ee1feef75b1d77f51ad2bbfbd9186eca861b4fe5e977a5fbb97",
+      "exactUtf8": "\t\t\trune(rect.get_center()+Vector2(0,-7),group,MINT if not switch_lit.has(group) else AMBER,3)",
+      "displayFragment": "MINT if not switch_lit.has(group) else AMBER",
+      "displayKind": "exact substring of line"
+    },
+    {
+      "file": "scripts/campaign/world.gd",
+      "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "lineStart": 38,
+      "lineEnd": 38,
+      "fullFileSha256": "dabae63e5a093f8c7d1beee40d94318d74c8563ad47d24ef1970ef6c88c5ca83",
+      "exactRangeSha256": "e4fe985868e5874ce7b7924cda26681e0384c00e860e0911f12b945c0165c648",
+      "exactUtf8": "\t\troute_bodies[body_index].collision_layer = 1 if on else 0",
+      "displayFragment": "collision_layer = 1 if on else 0",
+      "displayKind": "exact substring of line"
+    },
+    {
+      "file": "scripts/campaign/world.gd",
+      "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "lineStart": 39,
+      "lineEnd": 40,
+      "fullFileSha256": "dabae63e5a093f8c7d1beee40d94318d74c8563ad47d24ef1970ef6c88c5ca83",
+      "exactRangeSha256": "53c0629522ce317b7752584ab3957f619458337b9c522b8b05663f2579327522",
+      "exactUtf8": "\t\tplatforms.erase(rect)\n\t\tif on: platforms.append(rect)",
+      "displayFragment": "platforms.erase(rect)\n\t\tif on: platforms.append(rect)",
+      "displayKind": "source lines, outer whitespace removed"
+    },
+    {
+      "file": "scripts/world.gd",
+      "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "lineStart": 163,
+      "lineEnd": 168,
+      "fullFileSha256": "09d75d3399fbfa9ea3f6a41543025e1af90fc94dc0c8c0ea747b4737079c25b9",
+      "exactRangeSha256": "8e3d6eb3d55820cc436eed17bd217088f8412941d1487d8b84c1e5cbeecd8f1c",
+      "exactUtf8": "\tfor i in switches.size():\n\t\tvar p := switches[i]\n\t\tvar lit := switch_lit.has(i)\n\t\tdraw_rect(Rect2(p.x-8,p.y-18,16,18),Color(\"203a44\"))\n\t\tdraw_rect(Rect2(p.x-10,p.y-3,20,3),Color(\"5c7d77\"))\n\t\trune(p+Vector2(0,-12),1,AMBER if lit else MINT,5)",
+      "displayFragment": "for i in switches.size():\n\t\tvar p := switches[i]\n\t\tvar lit := switch_lit.has(i)\n\t\tdraw_rect(Rect2(p.x-8,p.y-18,16,18),Color(\"203a44\"))\n\t\tdraw_rect(Rect2(p.x-10,p.y-3,20,3),Color(\"5c7d77\"))\n\t\trune(p+Vector2(0,-12),1,AMBER if lit else MINT,5)",
+      "displayKind": "source lines, outer whitespace removed"
+    }
+  ],
+  "authorDirectStatement": null,
+  "editorExplanation": "この丸印の切替を、描画と通過判定が同じswitch_litから読む。作者の感情や狙いを推定した発言ではない。",
+  "legacyExcluded": "stone_circuit.gd and older mode production-plan are not displayed as active campaign runtime code."
+}
