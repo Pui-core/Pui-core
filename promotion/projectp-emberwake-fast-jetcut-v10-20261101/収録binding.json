@@ -1,0 +1,45 @@
+{
+  "source": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "version": "0.12.0",
+  "scene": "res://scenes/campaign.tscn",
+  "mode": "物語 / practice",
+  "evidence": [
+    {
+      "repoFile": "promotion/projectp-emberwake-design-v08-20261101/v08/circuit-capture01/preflight.json",
+      "commit": "7719ae6e210713a5330dde59b2cb15bba52b6bf3",
+      "privateFile": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/preflight.json",
+      "sha256": "c47f93d505e602c74e4928f8c097d7a80aa3c0f021270e98b6a01a680a0fcb25",
+      "bytes": 10641
+    },
+    {
+      "repoFile": "promotion/projectp-emberwake-design-v08-20261101/v08/circuit-capture01/launch.json",
+      "commit": "7719ae6e210713a5330dde59b2cb15bba52b6bf3",
+      "privateFile": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/launch.json",
+      "sha256": "93acd810e464b05c2a9f7ae5b3bf644cea6411571b5efee607de0e5ba4ad864d",
+      "bytes": 1064
+    },
+    {
+      "repoFile": "promotion/projectp-emberwake-design-v08-20261101/v08/circuit-capture01/capture.json",
+      "commit": "7719ae6e210713a5330dde59b2cb15bba52b6bf3",
+      "privateFile": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/capture.json",
+      "sha256": "2fc9311028383df7bc0a953c696b6c5bc005e12b44b3492aed4398e099ba98d3",
+      "bytes": 472881
+    }
+  ],
+  "originalCoreFilesUnchanged": 71,
+  "coreChanged": [],
+  "ordinaryProcessInputAutomation": true,
+  "independentProfile": true,
+  "newV10Capture": false,
+  "inputStateSetters": false,
+  "backgroundSharedInput": 0,
+  "raw": {
+    "path": "C:/Users/pui/private-use/emberwake-video156-20261101/v08/circuit-capture01/capture.avi",
+    "bytes": 85441952,
+    "sha256": "eaf9331496850d6cf86d885d8cff48a0cd45ea95b040b0fdd17c59024d31c5b3"
+  },
+  "notes": [
+    "原callback1112 / movie1113f、描画実1440x810。旧source票の差異を保持。",
+    "switch1/body3:6 collision000→111後route8着地。落下0/クリア0/completed[1]。"
+  ]
+}

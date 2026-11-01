@@ -1,0 +1,32 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-threads",
+    "2",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r2/videos/emberwake-v10-r2-fast12-campfire.mp4",
+    "-map",
+    "0:a:0",
+    "-ar",
+    "48000",
+    "-ac",
+    "2",
+    "-f",
+    "f32le",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r2/qa/final-audio.f32"
+  ],
+  "pid": 71644,
+  "started": 1793541241.6531944,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.15048623085021973,
+  "stdout": "",
+  "stderr": ""
+}

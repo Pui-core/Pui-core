@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-threads",
+    "2",
+    "-filter_threads",
+    "2",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r2/videos/emberwake-v10-r2-fast12-campfire.mp4",
+    "-vf",
+    "select='eq(n,156)+eq(n,157)+eq(n,158)+eq(n,172)+eq(n,173)+eq(n,174)+eq(n,262)+eq(n,263)+eq(n,264)+eq(n,270)+eq(n,271)+eq(n,272)+eq(n,343)+eq(n,344)+eq(n,345)+eq(n,349)+eq(n,350)+eq(n,351)+eq(n,478)+eq(n,479)+eq(n,480)+eq(n,489)+eq(n,490)+eq(n,491)+eq(n,550)+eq(n,551)+eq(n,552)+eq(n,555)+eq(n,556)+eq(n,557)+eq(n,617)+eq(n,618)+eq(n,619)+eq(n,621)+eq(n,622)+eq(n,623)+eq(n,696)+eq(n,697)+eq(n,698)+eq(n,700)+eq(n,701)+eq(n,702)+eq(n,789)+eq(n,790)+eq(n,791)+eq(n,796)+eq(n,797)+eq(n,798)+eq(n,888)+eq(n,889)+eq(n,890)',scale=180:320,tile=9x6:padding=2:margin=2",
+    "-frames:v",
+    "1",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r2/qa/final-cuts.png"
+  ],
+  "pid": 61792,
+  "started": 1793541268.7091162,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 1.3814175128936768,
+  "stdout": "",
+  "stderr": ""
+}

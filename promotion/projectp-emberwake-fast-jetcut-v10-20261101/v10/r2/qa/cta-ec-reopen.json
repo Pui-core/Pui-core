@@ -1,0 +1,20 @@
+{
+  "args": [
+    "C:/Program Files/EffectCraft/effectcraft-cli.exe",
+    "--gpu",
+    "--project",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r2/projects/campfire.ecproj",
+    "info",
+    "--json"
+  ],
+  "pid": 70548,
+  "started": 1793541012.7446313,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 2.123722791671753,
+  "stdout": "{\"activeComp\":{\"background\":[0.027450980618596077,0.08235294371843338,0.11764705926179886],\"duration\":4.266666666666667,\"frameRate\":30.0,\"height\":1920,\"id\":2,\"layers\":[{\"blendMode\":\"Normal\",\"id\":65,\"in\":0.0,\"index\":1,\"label\":\"Red\",\"name\":\"voice\",\"out\":4.266666666666667,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":26,\"in\":0.0,\"index\":2,\"label\":\"Red\",\"name\":\"brand\",\"out\":4.266666666666667,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Text\"},{\"blendMode\":\"Normal\",\"id\":3,\"in\":0.0,\"index\":3,\"label\":\"Lavender\",\"name\":\"campfire.png\",\"out\":4.266666666666667,\"parent\":null,\"start\":0.0,\"stretch\":100.0,\"switches\":{\"adjustment\":false,\"audio\":true,\"collapse\":false,\"effects\":true,\"frame_blend\":\"Off\",\"guide\":false,\"locked\":false,\"motion_blur\":false,\"quality\":\"Best\",\"sampling\":\"Bilinear\",\"shy\":false,\"solo\":false,\"three_d\":false,\"video\":true},\"trackMatte\":null,\"type\":\"Footage\"}],\"name\":\"CAMPFIRE v10 r2\",\"preserveFrameRate\":false,\"preserveResolution\":false,\"resolution\":\"Auto\",\"resolutionFactor\":null,\"width\":1080,\"workArea\":[0.0,4.266666666666667]},\"commands\":731,\"effects\":307,\"mode\":\"headless\",\"project\":{\"activeComp\":2,\"bitDepth\":\"8 bpc\",\"dirty\":false,\"items\":[{\"id\":1,\"label\":\"Lavender\",\"name\":\"campfire.png\",\"parent\":null,\"size\":[1080,1080],\"type\":\"Image\"},{\"duration\":4.266666666666667,\"frameRate\":30.0,\"id\":2,\"label\":\"Sandstone\",\"layers\":3,\"name\":\"CAMPFIRE v10 r2\",\"parent\":null,\"size\":[1080,1920],\"type\":\"Composition\"}],\"path\":\"C:/Users/pui/private-use/emberwake-video156-20261101/v10/r2/projects/campfire.ecproj\",\"renderer\":{\"active\":\"gpu\",\"adapter\":\"NVIDIA GeForce RTX 4070 SUPER (Vulkan)\",\"gpuAcceleration\":true,\"renderer\":\"Mercury GPU Acceleration\",\"why\":null},\"selectedLayers\":[],\"time\":0.0,\"undo\":[]},\"version\":\"0.14.0\"}\n",
+  "stderr": ""
+}

@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/media/whole-native.mp4",
+    "-map",
+    "0",
+    "-c",
+    "copy",
+    "-metadata",
+    "title=EMBERWAKE v10 fast narration jetcut whole",
+    "-metadata",
+    "comment=VOICEVOX:玄野武宏. TTS speed1.326 versus prior1.02 (relative1.30). Jet cuts remove waiting/repetition, preserve words and gameplay cause/effect. No global MP4 speedup, music or editorial SE. Source71584a6 campaign0.12.0. Preview/partial until independent QA and owner acceptance.",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/videos/emberwake-v10-whole.mp4"
+  ],
+  "pid": 68136,
+  "started": 1793540734.7596936,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.4142110347747803,
+  "stdout": "",
+  "stderr": ""
+}

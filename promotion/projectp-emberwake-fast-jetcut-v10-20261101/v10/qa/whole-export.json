@@ -1,0 +1,20 @@
+{
+  "args": [
+    "C:/Program Files/FilmCraft/filmcraft-cli.exe",
+    "--project",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/projects/whole-final.fcproj",
+    "exec",
+    "file.exportMedia",
+    "{\"path\": \"C:/Users/pui/private-use/emberwake-video156-20261101/v10/media/whole-native.mp4\", \"format\": \"h264\", \"audio\": true, \"audioCodec\": \"aac\", \"crf\": 18, \"hardwareEncoding\": \"off\", \"gpuRendering\": \"off\", \"wait\": true}"
+  ],
+  "pid": 57160,
+  "started": 1793540709.801468,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 24.95521378517151,
+  "stdout": "{\n  \"job\": 1,\n  \"offlineMedia\": [],\n  \"path\": \"C:\\\\Users\\\\pui\\\\private-use\\\\emberwake-video156-20261101\\\\v10\\\\media\\\\whole-native.mp4\",\n  \"result\": {\n    \"bytes\": 3866383,\n    \"frames\": 829,\n    \"path\": \"C:\\\\Users\\\\pui\\\\private-use\\\\emberwake-video156-20261101\\\\v10\\\\media\\\\whole-native.mp4\",\n    \"render_fps\": 33.51962711844903,\n    \"seconds\": 24.7317787\n  }\n}\n",
+  "stderr": ""
+}

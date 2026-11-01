@@ -1,0 +1,216 @@
+{
+  "version": "v10 fast voice jetcut preview",
+  "final": "C:/Users/pui/private-use/emberwake-video156-20261101/v10/videos/emberwake-v10-preview.mp4",
+  "sha256": "9965bdd17db1918276a986b7dced88c25fb08dd7ecff4a8140d5b25d91eed607",
+  "bytes": 2364108,
+  "videoSeconds": "15.000000",
+  "audioSeconds": "15.018000",
+  "containerSeconds": "15.018000",
+  "frames": 450,
+  "fps": 30,
+  "size": [
+    1080,
+    1920
+  ],
+  "codecs": [
+    "h264",
+    "aac stereo"
+  ],
+  "fullAvDecode": 0,
+  "decodeStderr": "",
+  "oldVoiceSpeed": 1.02,
+  "newVoiceSpeed": 1.326,
+  "relativeRate": 1.3,
+  "globalVideoSpeedup": false,
+  "cueCount": 5,
+  "cueQA": [
+    {
+      "id": "01",
+      "plannedAt": 0.04,
+      "nativeAt": 0.03333333333333333,
+      "voicedStart": 0.08045833333333334,
+      "voicedEnd": 2.5841458333333334,
+      "clipVoiceTailMargin": 0.0491875,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998269372279015
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9999811552688209
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998269372279015
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9999811552688209
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "plannedAt": 2.6613333333333333,
+      "nativeAt": 2.6666666666666665,
+      "voicedStart": 2.697395833333333,
+      "voicedEnd": 5.1981875,
+      "clipVoiceTailMargin": 0.035145833333333334,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998354823095285
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9999724900594202
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998354823095285
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9999724900594202
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "plannedAt": 5.250666666666667,
+      "nativeAt": 5.266666666666667,
+      "voicedStart": 5.3118125,
+      "voicedEnd": 8.211958333333333,
+      "clipVoiceTailMargin": 0.05470833333333333,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9996545079862758
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9994972725968431
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9996545079862758
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9994972725968431
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "plannedAt": 8.266666666666666,
+      "nativeAt": 8.266666666666667,
+      "voicedStart": 8.307708333333334,
+      "voicedEnd": 10.611541666666668,
+      "clipVoiceTailMargin": 0.055125,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998247047978831
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9998259683277243
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998247047978831
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9998259683277243
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "plannedAt": 10.685333333333332,
+      "nativeAt": 10.7,
+      "voicedStart": 10.714875,
+      "voicedEnd": 14.9600625,
+      "clipVoiceTailMargin": 0.0399375,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998313307039091
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9998474271723055
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998313307039091
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9998474271723055
+        }
+      ]
+    }
+  ],
+  "minCorrelation": 0.9994972725968431,
+  "clippedSamples": 0,
+  "peak": 0.7581412196159363,
+  "minVoicedGap": 0.09575000000000067,
+  "oldFinalSeconds": 45.6,
+  "newWholeTargetSeconds": 27.633333333333333,
+  "oldChars": 281,
+  "newChars": 225,
+  "removedCueGapsSeconds": 0.64,
+  "jetCutPlan": "edit-plan.json",
+  "imageReview": "separate visual review after actual viewing",
+  "subjectiveListen": false,
+  "wholeRealtimeWatch": false,
+  "physicalMobile": false,
+  "independentQA": "pending Root",
+  "ownerCreativeAcceptance": "pending",
+  "NASCopy": false,
+  "published": false
+}

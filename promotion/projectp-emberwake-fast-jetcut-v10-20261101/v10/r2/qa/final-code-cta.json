@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-threads",
+    "2",
+    "-filter_threads",
+    "2",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r2/videos/emberwake-v10-r2-fast12-campfire.mp4",
+    "-vf",
+    "select='eq(n,530)+eq(n,600)+eq(n,900)+eq(n,950)+eq(n,1000)+eq(n,1016)',scale=320:568,tile=3x2:padding=4:margin=4",
+    "-frames:v",
+    "1",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r2/qa/final-code-cta-320.png"
+  ],
+  "pid": 69476,
+  "started": 1793541270.0926285,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 1.2538447380065918,
+  "stdout": "",
+  "stderr": ""
+}

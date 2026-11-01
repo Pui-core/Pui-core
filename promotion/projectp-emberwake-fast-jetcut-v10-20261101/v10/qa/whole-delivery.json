@@ -1,0 +1,352 @@
+{
+  "version": "v10 fast voice jetcut whole",
+  "final": "C:/Users/pui/private-use/emberwake-video156-20261101/v10/videos/emberwake-v10-whole.mp4",
+  "sha256": "f39e3b1ccc1326f13945008e514423924d1e8c033c15e95b1ec3bf7017bed5eb",
+  "bytes": 3881406,
+  "videoSeconds": "27.633333",
+  "audioSeconds": "27.648000",
+  "containerSeconds": "27.648000",
+  "frames": 829,
+  "fps": 30,
+  "size": [
+    1080,
+    1920
+  ],
+  "codecs": [
+    "h264",
+    "aac stereo"
+  ],
+  "fullAvDecode": 0,
+  "decodeStderr": "",
+  "oldVoiceSpeed": 1.02,
+  "newVoiceSpeed": 1.326,
+  "relativeRate": 1.3,
+  "globalVideoSpeedup": false,
+  "cueCount": 9,
+  "cueQA": [
+    {
+      "id": "01",
+      "plannedAt": 0.04,
+      "nativeAt": 0.03333333333333333,
+      "voicedStart": 0.08045833333333334,
+      "voicedEnd": 2.5841458333333334,
+      "clipVoiceTailMargin": 0.0491875,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998269372279015
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9999811552688209
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998269372279015
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9999811552688209
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "plannedAt": 2.6613333333333333,
+      "nativeAt": 2.6666666666666665,
+      "voicedStart": 2.697395833333333,
+      "voicedEnd": 5.1981875,
+      "clipVoiceTailMargin": 0.035145833333333334,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998354823095285
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9999724900594202
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998354823095285
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9999724900594202
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "plannedAt": 5.250666666666667,
+      "nativeAt": 5.266666666666667,
+      "voicedStart": 5.3118125,
+      "voicedEnd": 8.211958333333333,
+      "clipVoiceTailMargin": 0.05470833333333333,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9996545079862758
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9994972725968431
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9996545079862758
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9994972725968431
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "plannedAt": 8.266666666666666,
+      "nativeAt": 8.266666666666667,
+      "voicedStart": 8.307708333333334,
+      "voicedEnd": 10.611541666666668,
+      "clipVoiceTailMargin": 0.055125,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998247047978831
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9998259683277243
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998247047978831
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9998259683277243
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "plannedAt": 10.685333333333332,
+      "nativeAt": 10.7,
+      "voicedStart": 10.714875,
+      "voicedEnd": 14.9600625,
+      "clipVoiceTailMargin": 0.0399375,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998313307039091
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9998474271723055
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998313307039091
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9998474271723055
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "plannedAt": 15.013333333333332,
+      "nativeAt": 15.0,
+      "voicedStart": 15.046416666666667,
+      "voicedEnd": 19.020333333333333,
+      "clipVoiceTailMargin": 0.04633333333333333,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9999490470179673
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9998635867835672
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9999490470179673
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9998635867835672
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "plannedAt": 19.106666666666666,
+      "nativeAt": 19.1,
+      "voicedStart": 19.125979166666667,
+      "voicedEnd": 21.536125,
+      "clipVoiceTailMargin": 0.03054166666666667,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998310901198205
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.999883420440053
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998310901198205
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.999883420440053
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "plannedAt": 21.610666666666667,
+      "nativeAt": 21.6,
+      "voicedStart": 21.643625,
+      "voicedEnd": 24.473395833333335,
+      "clipVoiceTailMargin": 0.0599375,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.999709125217924
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9999591326010508
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.999709125217924
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9999591326010508
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "plannedAt": 24.552,
+      "nativeAt": 24.566666666666666,
+      "voicedStart": 24.6,
+      "voicedEnd": 27.296333333333333,
+      "clipVoiceTailMargin": 0.037,
+      "checks": [
+        {
+          "channel": "L",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998782662163237
+        },
+        {
+          "channel": "L",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9993845348930741
+        },
+        {
+          "channel": "R",
+          "part": "head",
+          "lagSamples": 0,
+          "correlation": 0.9998782662163237
+        },
+        {
+          "channel": "R",
+          "part": "tail",
+          "lagSamples": 0,
+          "correlation": 0.9993845348930741
+        }
+      ]
+    }
+  ],
+  "minCorrelation": 0.9993845348930741,
+  "clippedSamples": 0,
+  "peak": 0.7581412196159363,
+  "minVoicedGap": 0.08635416666666806,
+  "oldFinalSeconds": 45.6,
+  "newWholeTargetSeconds": 27.633333333333333,
+  "oldChars": 281,
+  "newChars": 225,
+  "removedCueGapsSeconds": 0.64,
+  "jetCutPlan": "edit-plan.json",
+  "imageReview": "separate visual review after actual viewing",
+  "subjectiveListen": false,
+  "wholeRealtimeWatch": false,
+  "physicalMobile": false,
+  "independentQA": "pending Root",
+  "ownerCreativeAcceptance": "pending",
+  "NASCopy": false,
+  "published": false
+}
