@@ -52,8 +52,8 @@
     },
     {
       "file": "v09/production.py",
-      "bytes": 1246,
-      "sha256": "ec370fb14a380199c0a4cce42e0bc5b91d004eecbe8f517fde6f54addbb965ec"
+      "bytes": 1245,
+      "sha256": "b7f297ce6b7cf24b9fd6ea2fbe6110d0ccb4ddd89722a285a37752c281474b9a"
     },
     {
       "file": "v09/projects/control-clear.pcraft",
@@ -386,5 +386,6 @@
   "finalSha256": "1cc67d9ab34108ce9513ef12e65df03d8d74a748031aca4e45f4b667dc3b7ac3",
   "pythonSyntax": "passed",
   "nativeReopen": "7 new originals and2 reused code originals; no renderer rerun during packaging",
-  "independentReview": "pending Root"
+  "independentReview": "pending Root",
+  "packagingNote": "Source production helper EOF blank removed; execution semantics and media/native originals unchanged. Original helper remains preserved in preceding commit/private case."
 }

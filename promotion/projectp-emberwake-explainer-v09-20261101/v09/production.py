@@ -19,4 +19,3 @@ def jsrun(tag,project,commands,new=False):
     return native(tag,FC,args,'\n'.join(json.dumps(c,ensure_ascii=False) for c in commands)+'\n')
 def results(rec):return [json.loads(l) for l in rec['stdout'].splitlines() if l.strip()]
 def sha(p):return hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()
-
