@@ -1,0 +1,48 @@
+{
+  "frames": 480,
+  "fps": 30,
+  "shots": [
+    {
+      "name": "checkpoint-fall-return",
+      "sourceFrame": 739,
+      "frames": 210,
+      "timelineFrame": 0
+    },
+    {
+      "name": "pause-rule",
+      "sourceFrame": 949,
+      "frames": 60,
+      "timelineFrame": 210
+    },
+    {
+      "name": "memory-before",
+      "sourceFrame": 60,
+      "frames": 60,
+      "timelineFrame": 270
+    },
+    {
+      "name": "memory-after",
+      "sourceFrame": 1049,
+      "frames": 90,
+      "timelineFrame": 330
+    },
+    {
+      "name": "result-still",
+      "image": true,
+      "frames": 60,
+      "timelineFrame": 420
+    }
+  ],
+  "raw": "C:/Users/pui/private-use/emberwake-video156-20261101/v07/episode2-capture01/capture.avi",
+  "rawSha256": "e4f87633b8de324fca82ebeb01ed81d74dca6006ec7dec753ed0d5f68d232915",
+  "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "rawActualDimensions": [
+    1440,
+    810
+  ],
+  "harnessConfiguredDimensions": [
+    960,
+    540
+  ],
+  "note": "MovieWriter uses project window override dimensions; actual stream metadata controls all edits. Capture callback count1139 vs native movie1140: event frame labels are observational, verify pixel boundaries."
+}

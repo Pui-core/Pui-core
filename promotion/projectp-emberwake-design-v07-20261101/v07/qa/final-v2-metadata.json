@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v07/media/v07-native-final-tracked.mp4",
+    "-map",
+    "0",
+    "-c",
+    "copy",
+    "-metadata",
+    "title=落ちたら、思い出も消える？ / EMBERWAKE v07 代表カット v2",
+    "-metadata",
+    "comment=New episode2 practice capture, Source71584a6bd0c8852885157de71032fd9252e7a04c, Godot4.6.3. Ordinary process-local input automation; no game-code changes or product-state setters. One fall after second checkpoint, return, no clear, memory1/15 before/after. Native MovieWriter game audio; no narration or added BGM. Editorial tracked crop and comparison cards. Preview only, not publication acceptance.",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v07/videos/emberwake-v07-checkpoint-preview16-v2.mp4"
+  ],
+  "pid": 48140,
+  "started": 1793520441.189046,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.06587004661560059,
+  "stdout": "",
+  "stderr": ""
+}
