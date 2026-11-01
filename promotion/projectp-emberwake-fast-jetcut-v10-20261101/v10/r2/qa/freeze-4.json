@@ -1,0 +1,28 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-threads",
+    "2",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/media/remaining-picture.mov",
+    "-vf",
+    "select=eq(n\\,60)",
+    "-frames:v",
+    "1",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r2/frames/hold-04.png"
+  ],
+  "pid": 70188,
+  "started": 1793541077.4256172,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.6968021392822266,
+  "stdout": "",
+  "stderr": ""
+}

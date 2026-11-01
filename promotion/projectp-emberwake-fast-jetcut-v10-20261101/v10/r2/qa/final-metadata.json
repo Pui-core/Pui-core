@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r2/media/final-native.mp4",
+    "-map",
+    "0",
+    "-c",
+    "copy",
+    "-metadata",
+    "title=EMBERWAKE v10 r2 narration1.20 CAMPFIRE",
+    "-metadata",
+    "comment=VOICEVOX:玄野武宏. speedScale1.224 versus v09 1.02, relative1.20. Jet cuts preserve action and words. No music or SE. CAMPFIRE https://camp-fire.jp/projects/993744/view . Technical draft; subjective listening, mobile and owner acceptance pending.",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/r2/videos/emberwake-v10-r2-fast12-campfire.mp4"
+  ],
+  "pid": 63248,
+  "started": 1793541115.9876294,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.10347366333007812,
+  "stdout": "",
+  "stderr": ""
+}

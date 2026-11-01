@@ -1,0 +1,32 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-threads",
+    "2",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/videos/emberwake-v10-whole.mp4",
+    "-map",
+    "0:a:0",
+    "-ar",
+    "48000",
+    "-ac",
+    "2",
+    "-f",
+    "f32le",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/qa/whole-audio.f32"
+  ],
+  "pid": 49480,
+  "started": 1793540760.207332,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.11893105506896973,
+  "stdout": "",
+  "stderr": ""
+}

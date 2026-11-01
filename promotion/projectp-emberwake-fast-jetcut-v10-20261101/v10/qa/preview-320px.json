@@ -1,0 +1,30 @@
+{
+  "args": [
+    "C:/Users/pui/AppData/Local/Microsoft/WinGet/Links/ffmpeg.exe",
+    "-nostdin",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-threads",
+    "2",
+    "-filter_threads",
+    "2",
+    "-i",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/videos/emberwake-v10-preview.mp4",
+    "-vf",
+    "select='eq(n,30)+eq(n,105)+eq(n,180)+eq(n,240)+eq(n,310)+eq(n,400)',scale=320:568,tile=3x2:padding=4:margin=4",
+    "-frames:v",
+    "1",
+    "C:/Users/pui/private-use/emberwake-video156-20261101/v10/qa/preview-320px.png"
+  ],
+  "pid": 11852,
+  "started": 1793540415.8417277,
+  "timeoutSeconds": 180,
+  "offscreen": true,
+  "sharedInput": 0,
+  "code": 0,
+  "timedOut": false,
+  "elapsed": 0.6567230224609375,
+  "stdout": "",
+  "stderr": ""
+}

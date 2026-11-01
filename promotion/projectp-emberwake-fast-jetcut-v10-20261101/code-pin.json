@@ -1,0 +1,59 @@
+{
+  "sourceCommit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+  "runtimeScene": "res://scenes/campaign.tscn",
+  "version": "0.12.0",
+  "quotes": [
+    {
+      "file": "scripts/campaign/world.gd",
+      "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "lineStart": 77,
+      "lineEnd": 77,
+      "fullFileSha256": "dabae63e5a093f8c7d1beee40d94318d74c8563ad47d24ef1970ef6c88c5ca83",
+      "exactRangeSha256": "866b776d01731ee1feef75b1d77f51ad2bbfbd9186eca861b4fe5e977a5fbb97",
+      "exactUtf8": "\t\t\trune(rect.get_center()+Vector2(0,-7),group,MINT if not switch_lit.has(group) else AMBER,3)",
+      "displayFragment": "switch_lit.has(group)",
+      "displayKind": "exact substring of line",
+      "displayFragmentSha256": "f0ce3cb432a612a1221fa8e8ffd76f2475bdaf723a9d92c1caa66b12321b4834"
+    },
+    {
+      "file": "scripts/campaign/world.gd",
+      "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "lineStart": 38,
+      "lineEnd": 38,
+      "fullFileSha256": "dabae63e5a093f8c7d1beee40d94318d74c8563ad47d24ef1970ef6c88c5ca83",
+      "exactRangeSha256": "e4fe985868e5874ce7b7924cda26681e0384c00e860e0911f12b945c0165c648",
+      "exactUtf8": "\t\troute_bodies[body_index].collision_layer = 1 if on else 0",
+      "displayFragment": "1 if on else 0",
+      "displayKind": "exact substring of line",
+      "displayFragmentSha256": "79d31455d8cd4e8dbd589dc0786b06e8bb35c5cde62e0a524e9953b22aa619a2"
+    },
+    {
+      "file": "scripts/campaign/world.gd",
+      "commit": "71584a6bd0c8852885157de71032fd9252e7a04c",
+      "lineStart": 39,
+      "lineEnd": 40,
+      "fullFileSha256": "dabae63e5a093f8c7d1beee40d94318d74c8563ad47d24ef1970ef6c88c5ca83",
+      "exactRangeSha256": "53c0629522ce317b7752584ab3957f619458337b9c522b8b05663f2579327522",
+      "exactUtf8": "\t\tplatforms.erase(rect)\n\t\tif on: platforms.append(rect)",
+      "displayFragment": "platforms.erase(rect)\n\t\tif on: platforms.append(rect)",
+      "displayKind": "source lines, outer whitespace removed",
+      "displayFragmentSha256": "9f4aa7106187b1e0283932569f98954531620c8eaabdb0bd6a42544f07d018a1"
+    }
+  ],
+  "authorDirectStatement": null,
+  "editorExplanation": "この丸印の切替を、描画と通過判定が同じswitch_litから読む。作者の感情や狙いを推定した発言ではない。",
+  "legacyExcluded": "stone_circuit.gd and older mode production-plan are not displayed as active campaign runtime code.",
+  "context": [
+    {
+      "lineStart": 34,
+      "lineEnd": 40,
+      "exactUtf8": "\tfor i in route.size():\n\t\tif i<4 or i%4==3: continue\n\t\tvar on := switch_lit.has(0 if i<8 else 1)\n\t\tvar rect: Rect2 = route[i]\n\t\troute_bodies[body_index].collision_layer = 1 if on else 0\n\t\tplatforms.erase(rect)\n\t\tif on: platforms.append(rect)"
+    },
+    {
+      "lineStart": 71,
+      "lineEnd": 77,
+      "exactUtf8": "\t\tvar target: Vector2 = route[4+group*4].get_center()+Vector2(0,-8)\n\t\tvar tint := AMBER if switch_lit.has(group) else Color(\"537774\")\n\t\tdraw_polyline(PackedVector2Array([source,Vector2(source.x,target.y-22),Vector2(target.x,target.y-22),target]),tint,1)\n\t\tfor i in range(4+group*4,7+group*4):\n\t\t\tvar rect: Rect2 = route[i]\n\t\t\tif not switch_lit.has(group): draw_rect(rect,Color(0.55,0.77,0.74,0.42),false,1)\n\t\t\trune(rect.get_center()+Vector2(0,-7),group,MINT if not switch_lit.has(group) else AMBER,3)"
+    }
+  ],
+  "contextNote": "L73配線/L76輪郭/L77刻印色/L38collisionは別処理。短い色式で全機構を実装すると説明しない。"
+}
