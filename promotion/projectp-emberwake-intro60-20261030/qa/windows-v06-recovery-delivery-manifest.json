@@ -750,12 +750,57 @@
     "TikTok native music"
   ],
   "publication": false,
-  "nasWritten": false,
+  "nasWritten": true,
   "sharedInput": 0,
   "preserved": [
     "Linux SourceWT and original case",
     "old partial picture and logs",
     "v05 originals and videos"
   ],
-  "failure": "Initial metadata pipe decoded UTF-8 as cp932; failed metadata MP4 preserved in qa; corrected UTF-8 remux final SHA only"
+  "failure": "Initial metadata pipe decoded UTF-8 as cp932; failed metadata MP4 preserved in qa; corrected UTF-8 remux final SHA only",
+  "nasDelivery": {
+    "state": "verified_physical_origin",
+    "completedAt": "2026-11-01T02:06:14.286983+00:00",
+    "directory": "/home/pui/private-use/nas/data/work/videos/2026-11-01/エンバーウェイク/1104_点灯同期修正_v06",
+    "windowsReadbackDirectory": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\private-use\\nas\\data\\work\\videos\\2026-11-01\\エンバーウェイク\\1104_点灯同期修正_v06",
+    "route": "Existing private share Linux host bind source; Windows readback via WSL UNC",
+    "originReceipt": {
+      "privateCaseRelativePath": "attempt01/qa/nas-origin-delivery-v06.json",
+      "sha256": "ed2f93af299ce8a774787dd94dfe35ba95b877fb745f48bf3ae428ab5e41f6dd"
+    },
+    "windowsReadbackReceipt": {
+      "privateCaseRelativePath": "attempt01/qa/nas-origin-windows-readback-v06.json",
+      "sha256": "705532f7ecfd4d59bf0fdef616fafa90ce8dea2e6aa197b7182a8e8b7866a3ab"
+    },
+    "destinationAbsentBefore": true,
+    "resolvedWithinShareRoot": true,
+    "exclusiveCopy": true,
+    "directoryContainsOnlyTwoVideos": true,
+    "localCopiesRetained": true,
+    "smbWindowsAccessRestored": false,
+    "items": [
+      {
+        "variant": "bgm",
+        "fileName": "BGM版.mp4",
+        "bytes": 27140862,
+        "sha256": "9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06",
+        "fullAvDecodeExit": 0,
+        "decodeStderrEmpty": true,
+        "sha256AfterDecode": "9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06",
+        "windowsWslUncReadbackMatches": true
+      },
+      {
+        "variant": "voice",
+        "fileName": "声・効果音版.mp4",
+        "bytes": 27140399,
+        "sha256": "e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c",
+        "fullAvDecodeExit": 0,
+        "decodeStderrEmpty": true,
+        "sha256AfterDecode": "e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c",
+        "windowsWslUncReadbackMatches": true
+      }
+    ],
+    "scope": "NAS technical candidate delivery supplement. Independent technical approval is recorded in README; realtime watch, subjective listening, mobile, creative adoption and publication acceptance remain unverified.",
+    "oldAccessDeniedReceiptPreserved": "attempt01/qa/nas-delivery-v06.json"
+  }
 }

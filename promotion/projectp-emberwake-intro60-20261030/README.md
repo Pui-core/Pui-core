@@ -15,7 +15,9 @@ v06の2動画は生成済み。Windows EffectCraft0.14.0 / RTX4070SUPER Vulkan�
 
 独立Reviewerはhead `d8aa3179591cd84c35c89bcbc42e7267bc4e1ab1` と上記2SHAについて、Source技術受入・固定MP4の計数/抽出画像をAPPROVEと判定した（[COMMENT review 5725587521](https://github.com/Pui-core/Pui-core/pull/95#pullrequestreview-5725587521)、正式GitHub APPROVEDとは別）。全AV decode、全1950decoded frame一致、57 unique activeメディア依存欠損0、L/R別AAC21句頭尾・lag0・clip0を独立照合。点灯523f、字幕初可視524f・切替567f、有声17.5003〜18.8177秒を確認している。本READMEの追補は、その後の文書差分としてRootが独立Reviewerへ渡す。
 
-**全編実時間視聴・主観実聴・実mobile/UI・owner創作採用・公開受入は未完。** TikTok native曲も未選定で、技術APPROVEを創作採用・公開・宣伝実績へ昇格しない。NAS納品はRootから引渡し後、2026-11-01 09:26 JSTに新規フォルダー作成を試みたがAccess deniedで未達。コピー0件、NAS bytes/SHA/全AV decodeは未実施。私有case `attempt01/qa/nas-delivery-v06.json` に失敗原票を保持し、アクセス回復後に新規dirへ2動画のみをコピーして検証する。ローカル動画は削除しない。
+NAS実物理保存先へのv06技術候補納品は、2026-11-01 11:06 JSTに完了。既存SMB共有のLinux host bind source `/home/pui/private-use/nas/data/work/videos/2026-11-01/エンバーウェイク/1104_点灯同期修正_v06/` に、宛先不在・ShareRoot内resolveを確認して2動画だけをexclusive copyした。`BGM版.mp4` は27,140,862 bytes、`声・効果音版.mp4` は27,140,399 bytesで、上表2SHAと一致。NAS実fileからの全AV decodeは両方exit0/stderr空、decode後SHAも同一。WindowsのWSL UNC経路から同物理fileをreadbackしbytes/SHA一致を確認した。対応と元票SHAは[納品manifestのnasDelivery](qa/windows-v06-recovery-delivery-manifest.json)に追補。元票 `attempt01/qa/nas-origin-delivery-v06.json` のSHA256は `ed2f93af299ce8a774787dd94dfe35ba95b877fb745f48bf3ae428ab5e41f6dd`。ローカル2MP4も保持する。
+
+**Windows SMB経路のAccessDenied自体の修復、全編実時間視聴・主観実聴・実mobile/UI・owner創作採用・公開受入は未完。** 09:26 JSTのSMB書込み失敗票 `attempt01/qa/nas-delivery-v06.json` は保全し、上記Linux実保存先での成功票と区別する。TikTok native曲も未選定で、技術納品・数値検査を実聴・創作採用・公開・宣伝実績へ昇格しない。
 
 ## v05 完成候補の履歴（保全・現行v06とは別）
 
