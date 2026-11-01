@@ -2,7 +2,22 @@
 
 管理 [Issue156](https://github.com/Pui-core/-/issues/156) の新しい65秒縦動画1creative。ownerが8秒版を拒否した変更を反映し、8秒最終動画・既公開151の最終動画を使わず、実rawから構成を作り直した。2音版は同じ全映像であり、別の投稿2本にするためのものではない。**制作/NAS/Sourceの候補納品であり、未公開。主観の実聴取は未検証のため公開受入ではない。**
 
-## 完成候補
+## v06 最新制作候補（2026-11-01）
+
+v06の2動画は生成済み。Windows EffectCraft0.14.0 / RTX4070SUPER Vulkanで全1950frameを141.69秒で描画し、FilmCraft0.10.0で書き出した。Linuxでの140frame停滞・30分timeoutの旧partial、失敗版、原本、全ログは保全している。復旧手順と原票の参照は [Windows復旧](source/windows-v06-recovery/README.md)、原本・依存と最終動画の対応は [納品manifest](qa/windows-v06-recovery-delivery-manifest.json)。
+
+ローカル動画は `C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/videos/` に2本とも保持する。
+
+| ファイル | 実AV時間/映像frame | SHA-256 |
+|---|---|---|
+| emberwake-intro65-v06-bgm.mp4 | 65.002秒 / 1950frame | 9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06 |
+| emberwake-intro65-v06-voice.mp4 | 65.002秒 / 1950frame | e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c |
+
+独立Reviewerはhead `d8aa3179591cd84c35c89bcbc42e7267bc4e1ab1` と上記2SHAについて、Source技術受入・固定MP4の計数/抽出画像をAPPROVEと判定した（[COMMENT review 5725587521](https://github.com/Pui-core/Pui-core/pull/95#pullrequestreview-5725587521)、正式GitHub APPROVEDとは別）。全AV decode、全1950decoded frame一致、57 unique activeメディア依存欠損0、L/R別AAC21句頭尾・lag0・clip0を独立照合。点灯523f、字幕初可視524f・切替567f、有声17.5003〜18.8177秒を確認している。本READMEの追補は、その後の文書差分としてRootが独立Reviewerへ渡す。
+
+**全編実時間視聴・主観実聴・実mobile/UI・owner創作採用・公開受入は未完。** TikTok native曲も未選定で、技術APPROVEを創作採用・公開・宣伝実績へ昇格しない。NAS納品はRootから引渡し後、2026-11-01 09:26 JSTに新規フォルダー作成を試みたがAccess deniedで未達。コピー0件、NAS bytes/SHA/全AV decodeは未実施。私有case `attempt01/qa/nas-delivery-v06.json` に失敗原票を保持し、アクセス回復後に新規dirへ2動画のみをコピーして検証する。ローカル動画は削除しない。
+
+## v05 完成候補の履歴（保全・現行v06とは別）
 
 NAS：`\\100.105.2.75\private\work\videos\2026-10-30\エンバーウェイク\1007_灯で変わる道_構成刷新_v05\`。制作日の作品別フォルダーに動画2本だけを保存。HHmmは主BGM版の実更新時刻をWindowsで取得した。
 
@@ -15,7 +30,7 @@ NAS：`\\100.105.2.75\private\work\videos\2026-10-30\エンバーウェイク\10
 
 ## v06 限定修正（公開前・Issue156 RC-156-02 / CR-156-01）
 
-v05の最終動画（上表）は保全し、公開前の独立レビューで出た指摘だけを新headのv06で直す。**v06の動画SHA・納品先・検証結果は、描画・書出し・QA完了後にこの節へ追記する（現時点は修正Source/原本/音声配置までで、動画は未生成）。**
+v05の最終動画（上表）は保全し、公開前の独立レビューで出た指摘をv06で修正した。**v06の動画は生成・技術検証済み。現在の2MP4/SHA・Windows回復完走・独立技術受入と残る未確認は、冒頭の「v06 最新制作候補」を参照する。** 以下は限定修正の内容と来歴であり、旧失敗版/partial/ログも保持する。
 
 - **RC-156-02（cue07が結果より先行）**: 最終MP4/原素材の30fps連続frameで、台座の点灯は**frame523＝17.4333秒が最初の点灯**（frame522は未点灯。台座周辺輝度85.57→97.14、原素材`light.mov`も73番で同時刻）。既存cue07 WAV（`voice-07.wav`）は再生成せず、`plan.mjs`のcue07 `at`を16.0→17.46へ移して有声開始を17.5003秒（点灯の約2frame後）、終端18.8177秒にした。cue08（19.8886秒開始）との間は約1.07秒、cue06終端との間も保持。SFXのchime（17.4秒）・他cue・BGM・全体の速度は不変で、再配置による音声の変化は15.95〜19.02秒のduckingのみ（共通gainはv05と同値0.78797）。
 - **字幕**: 結果字幕「最初の灯が、点いた。」を点灯frame(17.4333秒)から18.9秒へ移し、点灯前の副行は外した（見出し「近づいて、点ける。」は維持）。元のlight shot（15〜18秒）内だけでは結果後に約0.57秒しか読めないため、次shot冒頭（スイッチ見出しの区間）まで保持し、スイッチ副行「スイッチの前後を、実画面で。」は18.9秒開始に遅らせた。映像素材・尺65秒/1950frame・その他layerは変更なし。
