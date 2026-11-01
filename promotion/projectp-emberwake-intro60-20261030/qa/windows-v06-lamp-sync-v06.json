@@ -1,0 +1,97 @@
+{
+  "issue": 156,
+  "task": "RC-156-02",
+  "lampFrame": 523,
+  "lampSeconds": 17.433333333333334,
+  "captionLayers": {
+    "light": {
+      "text": "最初の灯が、点いた。",
+      "inFrame": 523,
+      "outFrame": 567,
+      "fadeInOpacity0AtStart": true,
+      "fullOpacityFrame": 525
+    },
+    "switch": {
+      "text": "スイッチの前後を、実画面で。",
+      "inFrame": 567,
+      "outSeconds": 21
+    },
+    "resultTextLayerOwners": [
+      "Detail light"
+    ]
+  },
+  "results": [
+    {
+      "variant": "bgm",
+      "sha256": "9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06",
+      "firstLitFrame": 523,
+      "firstLitSeconds": 17.433333333333334,
+      "timeline": {
+        "baselineYavg": 32.62515428571429,
+        "resultCaptionYavg": 43.44870322580643,
+        "followingSublineYavg": 48.7533,
+        "firstVisibleFrame": 524,
+        "endTransitionFrame": 567
+      },
+      "pedestalYavg": [
+        85.7,
+        85.08,
+        85.14,
+        85.61,
+        85.53,
+        85.56,
+        85.54,
+        85.57,
+        97.13,
+        96.29,
+        96.46,
+        96.84,
+        97.06,
+        97.46,
+        97.69,
+        97.77
+      ]
+    },
+    {
+      "variant": "voice",
+      "sha256": "e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c",
+      "firstLitFrame": 523,
+      "firstLitSeconds": 17.433333333333334,
+      "timeline": {
+        "baselineYavg": 32.62515428571429,
+        "resultCaptionYavg": 43.44870322580643,
+        "followingSublineYavg": 48.7533,
+        "firstVisibleFrame": 524,
+        "endTransitionFrame": 567
+      },
+      "pedestalYavg": [
+        85.7,
+        85.08,
+        85.14,
+        85.61,
+        85.53,
+        85.56,
+        85.54,
+        85.57,
+        97.13,
+        96.29,
+        96.46,
+        96.84,
+        97.06,
+        97.46,
+        97.69,
+        97.77
+      ]
+    }
+  ],
+  "cue07": {
+    "actualStart": 17.5003125,
+    "actualEnd": 18.817697916666667,
+    "afterLampSeconds": 0.06697916666666615,
+    "gapToCue08": 1.0709062500000002,
+    "gapAfterCue06": 2.96971875
+  },
+  "cue08Start": 19.888604166666667,
+  "pass": true,
+  "note": "native layer readback + final MP4 frame statistics + frame sheets; not subjective listening or real-time watch"
+}

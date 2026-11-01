@@ -1,0 +1,173 @@
+{
+  "issue": 156,
+  "checkedAt": "2026-11-01T00:00:05.127Z",
+  "outputs": [
+    {
+      "variant": "bgm",
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/videos/emberwake-intro65-v06-bgm.mp4",
+      "sha256": "9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06",
+      "format": {
+        "duration": 65.002,
+        "videoDuration": 65,
+        "audioDuration": 65.002,
+        "frames": 1950,
+        "width": 1080,
+        "height": 1920,
+        "fps": "30/1",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "audioCodec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "lag": 0,
+      "clips": 0,
+      "minCueHeadTailCorrelation": 0.9794294415355016,
+      "loudnessSummary": "Summary:\r\n\r\n  Integrated loudness:\r\n    I:         -23.9 LUFS\r\n    Threshold: -34.0 LUFS\r\n\r\n  Loudness range:\r\n    LRA:         4.2 LU\r\n    Threshold: -43.9 LUFS\r\n    LRA low:   -26.4 LUFS\r\n    LRA high:  -22.1 LUFS\r\n\r\n  True peak:\r\n    Peak:       -3.9 dBFS\r\n[out#0/null @ 0000018ce97dca00] video:0KiB audio:12188KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nsize=N/A time=00:01:05.00 bitrate=N/A speed= 375x elapsed=0:00:00.17    \r\n"
+    },
+    {
+      "variant": "voice",
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/videos/emberwake-intro65-v06-voice.mp4",
+      "sha256": "e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c",
+      "format": {
+        "duration": 65.002,
+        "videoDuration": 65,
+        "audioDuration": 65.002,
+        "frames": 1950,
+        "width": 1080,
+        "height": 1920,
+        "fps": "30/1",
+        "videoCodec": "h264",
+        "pixelFormat": "yuv420p",
+        "audioCodec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "lag": 0,
+      "clips": 0,
+      "minCueHeadTailCorrelation": 0.9992905456473963,
+      "loudnessSummary": "Summary:\r\n\r\n  Integrated loudness:\r\n    I:         -23.6 LUFS\r\n    Threshold: -34.5 LUFS\r\n\r\n  Loudness range:\r\n    LRA:         6.6 LU\r\n    Threshold: -46.0 LUFS\r\n    LRA low:   -29.4 LUFS\r\n    LRA high:  -22.8 LUFS\r\n\r\n  True peak:\r\n    Peak:       -4.0 dBFS\r\n[out#0/null @ 00000271efb36180] video:0KiB audio:12188KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nsize=N/A time=00:01:05.00 bitrate=N/A speed= 184x elapsed=0:00:00.35    \r\n"
+    }
+  ],
+  "videoAllFramesEqual": true,
+  "nativeDependencyReferences": 60,
+  "dependencyReport": {
+    "ec": [
+      "case:dependencies/033-hook.mov",
+      "case:dependencies/007-first-step.mov",
+      "case:dependencies/045-short.mov",
+      "case:dependencies/030-hold.mov",
+      "case:dependencies/040-next-jump.mov",
+      "case:dependencies/000-approach.mov",
+      "case:dependencies/037-light.mov",
+      "case:dependencies/049-switch.mov",
+      "case:dependencies/039-new-path.mov",
+      "case:dependencies/043-other-stage.mov",
+      "case:dependencies/042-other-change.mov",
+      "case:dependencies/041-other-ascent.mov",
+      "case:dependencies/051-wind-ascent.mov",
+      "case:dependencies/001-aqueduct.mov",
+      "case:dependencies/002-carry.mov",
+      "case:dependencies/050-transfer.mov",
+      "case:dependencies/036-identity-walk.mov",
+      "case:dependencies/034-identity-leap.mov",
+      "case:dependencies/006-demo-state.mov",
+      "case:dependencies/046-support-check.mov",
+      "case:dependencies/044-search-route.mov",
+      "case:dependencies/014-heading-hook.png",
+      "case:dependencies/012-heading-first-step.png",
+      "case:dependencies/024-heading-short.png",
+      "case:dependencies/013-heading-hold.png",
+      "case:dependencies/019-heading-next-jump.png",
+      "case:dependencies/008-heading-approach.png",
+      "case:dependencies/017-heading-light.png",
+      "case:dependencies/027-heading-switch.png",
+      "case:dependencies/018-heading-new-path.png",
+      "case:dependencies/022-heading-other-stage.png",
+      "case:dependencies/021-heading-other-change.png",
+      "case:dependencies/020-heading-other-ascent.png",
+      "case:dependencies/029-heading-wind-ascent.png",
+      "case:dependencies/009-heading-aqueduct.png",
+      "case:dependencies/010-heading-carry.png",
+      "case:dependencies/028-heading-transfer.png",
+      "case:dependencies/016-heading-identity-walk.png",
+      "case:dependencies/015-heading-identity-leap.png",
+      "case:dependencies/011-heading-demo-state.png",
+      "case:dependencies/025-heading-support-check.png",
+      "case:dependencies/023-heading-search-route.png",
+      "case:dependencies/038-natural-silent.mov",
+      "case:dependencies/052-wordmark.png",
+      "case:dependencies/032-hook-wide-v02.mov",
+      "case:dependencies/048-switch-wide-v02.mov",
+      "case:dependencies/035-identity-walk-tracked-v02.mov",
+      "case:dependencies/026-heading-switch-question-v02.png",
+      "case:dependencies/031-hook-safe-v04.mov",
+      "case:dependencies/047-switch-safe-v04.mov",
+      "case:dependencies/005-demo-state-tracked-v04.mov",
+      "case:dependencies/004-cta-service-v04.png",
+      "case:dependencies/003-cta-query-v04.png"
+    ],
+    "fc": {
+      "bgm": [
+        "case:media/intro65-v06-picture.mov",
+        "case:media/voice-r6.wav",
+        "case:media/sfx-r6.wav",
+        "case:media/music-r6.wav"
+      ],
+      "voice": [
+        "case:media/intro65-v06-picture.mov",
+        "case:media/voice-r6.wav",
+        "case:media/sfx-r6.wav"
+      ]
+    },
+    "missing": [],
+    "external": []
+  },
+  "captionLayers": {
+    "light": {
+      "text": "最初の灯が、点いた。",
+      "inFrame": 523,
+      "outFrame": 567,
+      "fadeInOpacity0AtStart": true,
+      "fullOpacityFrame": 525
+    },
+    "switch": {
+      "text": "スイッチの前後を、実画面で。",
+      "inFrame": 567,
+      "outSeconds": 21
+    },
+    "resultTextLayerOwners": [
+      "Detail light"
+    ]
+  },
+  "missingDependencies": [],
+  "actualFinalFrames": [
+    0.1,
+    0.5,
+    5.6,
+    7.7,
+    16.5,
+    17.3,
+    17.4333333,
+    17.5,
+    17.7,
+    18.5,
+    19,
+    19.9,
+    22.5,
+    30.2,
+    36.5,
+    42.4,
+    48.3,
+    54.5,
+    57.2,
+    62,
+    64.9666667
+  ],
+  "subjectiveListen": false,
+  "wholeRealtimeWatch": false,
+  "rootFinalImageAcceptance": "pending",
+  "publicAccepted": false,
+  "published": false,
+  "sharedDesktopInputs": 0
+}
