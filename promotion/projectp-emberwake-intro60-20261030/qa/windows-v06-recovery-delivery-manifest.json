@@ -1,0 +1,806 @@
+{
+  "task": "orbit-emberwake-video156-v06-recovery-20261101",
+  "sourceBaseHead": "d4d05aba3ac7247b3b99c2d3e2c4fd22aa69e419",
+  "writer": "codex:01a19460-4946-76d0-938a-f3898c3f8530",
+  "outputs": [
+    {
+      "variant": "bgm",
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/videos/emberwake-intro65-v06-bgm.mp4",
+      "sha256": "9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06",
+      "nativeFilmcraftProject": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/projects/intro65-v06-bgm.fcproj",
+      "projectSha256": "055252d8e81a47c7f2b8fbb6c932dd19395582098c943040be92c14ab91f9707",
+      "audioTracks": [
+        {
+          "file": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/voice-r6.wav",
+          "sha256": "634ef1290833ac056e916010d12c275ebd2e9838246f37e165738b80908ae24f"
+        },
+        {
+          "file": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/sfx-r6.wav",
+          "sha256": "6865400c4032096be64e681a6f2833652daeb09874de61813a79b179196347d5"
+        },
+        {
+          "file": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/music-r6.wav",
+          "sha256": "7d6edf593db241a9009d8e3689b8fa371320579699ba56146643c00967ec13f5"
+        }
+      ],
+      "offlineMedia": []
+    },
+    {
+      "variant": "voice",
+      "file": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/videos/emberwake-intro65-v06-voice.mp4",
+      "sha256": "e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c",
+      "nativeFilmcraftProject": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/projects/intro65-v06-voice.fcproj",
+      "projectSha256": "a0c4c7a8e209dc8b0f0b24625ba5f72c5c9e539854b42d79d431f75bdb9a2f2c",
+      "audioTracks": [
+        {
+          "file": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/voice-r6.wav",
+          "sha256": "634ef1290833ac056e916010d12c275ebd2e9838246f37e165738b80908ae24f"
+        },
+        {
+          "file": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/sfx-r6.wav",
+          "sha256": "6865400c4032096be64e681a6f2833652daeb09874de61813a79b179196347d5"
+        }
+      ],
+      "offlineMedia": []
+    }
+  ],
+  "picture": {
+    "path": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/intro65-v06-picture.mov",
+    "sha256": "05f53957d5d05add231f685456273bd6b7bc1cf419879359403bd1fd535148d9"
+  },
+  "nativeOriginals": [
+    {
+      "path": "C:\\Users\\pui\\private-use\\emberwake-video156-20261101\\attempt01\\projects\\intro65-v06.ecproj",
+      "sha256": "5c0779e4fdcd9a1fe225bdaec67dbf2916565cffe43b5fe9d2eff664e5fec754"
+    },
+    {
+      "path": "C:\\Users\\pui\\private-use\\emberwake-video156-20261101\\attempt01\\projects\\intro65-v06-bgm.fcproj",
+      "sha256": "055252d8e81a47c7f2b8fbb6c932dd19395582098c943040be92c14ab91f9707"
+    },
+    {
+      "path": "C:\\Users\\pui\\private-use\\emberwake-video156-20261101\\attempt01\\projects\\intro65-v06-voice.fcproj",
+      "sha256": "a0c4c7a8e209dc8b0f0b24625ba5f72c5c9e539854b42d79d431f75bdb9a2f2c"
+    },
+    {
+      "path": "C:\\Users\\pui\\private-use\\emberwake-video156-20261101\\attempt01\\covers\\intro65-cover-v05.pcraft",
+      "sha256": "f4726440d9f289ffaa7ae66f35de749559ed32cf6da089bc54c27340313aa38a"
+    },
+    {
+      "path": "C:\\Users\\pui\\private-use\\emberwake-video156-20261101\\attempt01\\covers\\intro65-cover-v06.pcraft",
+      "sha256": "dd2bbddc4d0337925b0990508ace1800cd900dd2eaea50562be9bfb048f97084"
+    }
+  ],
+  "dependencies": [
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/approach.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/000-approach.mov",
+      "sha256": "d65c8f828b108a4ebfa7e8c9f6e0745e6986b7cfc1685e303201e118b371d2e8",
+      "bytes": 9517000
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/aqueduct.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/001-aqueduct.mov",
+      "sha256": "d08fffa28c860c798728cacaab18246b3d384d6c055b30e654c0c0c8ca3b2bd5",
+      "bytes": 8266909
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/carry.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/002-carry.mov",
+      "sha256": "5c3740d38e3db5d10eef41d206c37b84caf5c23735db4b44a86590b3ba771b46",
+      "bytes": 10135319
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/cta-query-v04.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/003-cta-query-v04.png",
+      "sha256": "cc8a2fa2ebfe49cc62601b707dfeb37e89bc173838552d13e35b4e8a4e572e14",
+      "bytes": 13182
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/cta-service-v04.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/004-cta-service-v04.png",
+      "sha256": "c02f9e527293bfe6c58d624454634e99877fe8159846576a5a616f742fee7d33",
+      "bytes": 6701
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/demo-state-tracked-v04.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/005-demo-state-tracked-v04.mov",
+      "sha256": "6f5c495d8e65bff8a64c57cd9aa2617615b80765007febb40a6a84b0ad83c9f1",
+      "bytes": 10587822
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/demo-state.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/006-demo-state.mov",
+      "sha256": "4be7ef3aad9a9af0453b8ef3691aa79e90c7da22e235084044d782f5fa535b3b",
+      "bytes": 8976667
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/first-step.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/007-first-step.mov",
+      "sha256": "daa6a14df0ab65ab7dc339c6c168b3cb111c21241ab25e0ce1358a42821983aa",
+      "bytes": 8938508
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-approach.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/008-heading-approach.png",
+      "sha256": "0c230d422dbfd0ecaff887957a9d8a3b44d27de211a312859ec0d125b4861174",
+      "bytes": 13268
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-aqueduct.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/009-heading-aqueduct.png",
+      "sha256": "6febd28412002ac055a0007469c8ed45c1e4b01e117f2560776d85d81b7a5f75",
+      "bytes": 13970
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-carry.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/010-heading-carry.png",
+      "sha256": "17453e690e57a73624f8955b9582095fcf59c2004f3560382e28bbb0a3fc85db",
+      "bytes": 20066
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-demo-state.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/011-heading-demo-state.png",
+      "sha256": "32dfe6afdb369da885bff42a9e3ab4b25c42b7f7e5800659e80426a745f92d90",
+      "bytes": 14480
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-first-step.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/012-heading-first-step.png",
+      "sha256": "0abea2a3aea881292e10b42543f491168a8a0c7184d7272a2b578d126ba96ea9",
+      "bytes": 10599
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-hold.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/013-heading-hold.png",
+      "sha256": "5e505176d0b8121095c82919d2e845bb69c5752f6adfe14c31cd5253bbf021a3",
+      "bytes": 8383
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-hook.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/014-heading-hook.png",
+      "sha256": "4d15ceaaaf38a9ff3f8bb6b4332cbf182060684a83e8da5b890d5a521a9bc9b6",
+      "bytes": 15502
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-identity-leap.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/015-heading-identity-leap.png",
+      "sha256": "c9f151a6bea68ae43aa60bf1b6a89e22d4cf9d470c0f2e188a0a28c85355569a",
+      "bytes": 14765
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-identity-walk.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/016-heading-identity-walk.png",
+      "sha256": "4744a36784924e5e3e43331cb759aed54072d7b23cf74fa3b913187c055ff75d",
+      "bytes": 13988
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-light.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/017-heading-light.png",
+      "sha256": "2e61f6f2bcd0f20ca2da5604d3221b1256abdfcb4ac75403a4d3276d3e1e371f",
+      "bytes": 12861
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-new-path.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/018-heading-new-path.png",
+      "sha256": "b995130bea3ba73c1d9cf0c75704ff35e4e13edd3d031309eb38d1ca69ee88d3",
+      "bytes": 12924
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-next-jump.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/019-heading-next-jump.png",
+      "sha256": "5e06422d757cd0e1034fb3520772021b806043bd43e8e2df72c91888e2745a0d",
+      "bytes": 8708
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-other-ascent.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/020-heading-other-ascent.png",
+      "sha256": "20b5555942aa14bb355b9ce8efab99bfa2d0abe4520635812514112c48be808c",
+      "bytes": 15007
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-other-change.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/021-heading-other-change.png",
+      "sha256": "abb5f6d756b5fffb6a5fcda7865d4af7477d39274b92befd435cd207d5c2c7f9",
+      "bytes": 13315
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-other-stage.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/022-heading-other-stage.png",
+      "sha256": "6177fc2f391b4302be5c97bfab9906e5578e10d4bf3e2f42f8ad2a73bd6b4386",
+      "bytes": 14534
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-search-route.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/023-heading-search-route.png",
+      "sha256": "e822b2cbc6021676696929a797a75a9bcf620c87da8d815c06e339c1b017a85a",
+      "bytes": 11978
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-short.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/024-heading-short.png",
+      "sha256": "9913dc08ba178b58ed09da4227928b06d2ae28d0827b1c115ccd34fc655c2371",
+      "bytes": 11305
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-support-check.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/025-heading-support-check.png",
+      "sha256": "3f7babc887d310bffd3ca0ceab9bb93339e1bffdd05ed4e9671ebe1586a900b3",
+      "bytes": 15798
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-switch-question-v02.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/026-heading-switch-question-v02.png",
+      "sha256": "e22944b57cc6bb422e6d4d9055d645efb47cf15b22fe025cf4e5ead9587d1d2e",
+      "bytes": 14789
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-switch.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/027-heading-switch.png",
+      "sha256": "384b63b1fbdcb3c8cd0d3e6c18ad135cc293ac1e8469ff79cf2c280621b695cd",
+      "bytes": 11507
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-transfer.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/028-heading-transfer.png",
+      "sha256": "633c189559677437391dac14b1ce67af2a18e9d639cf2f5f4f1dc858555017df",
+      "bytes": 12451
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/heading-wind-ascent.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/029-heading-wind-ascent.png",
+      "sha256": "c6a0e6faf977c381693284fa73e2e893dbda1faa9ccd7a0be9144c7e49729a82",
+      "bytes": 11417
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/hold.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/030-hold.mov",
+      "sha256": "14af7a223ce94d742df15a6313e3577564c724f46d6f4dbd390d9f4397e26721",
+      "bytes": 6185273
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/hook-safe-v04.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/031-hook-safe-v04.mov",
+      "sha256": "4420a1513b0f6611afd3348c0ea1919d8ce25e1943a3fcb01b302ec35439476f",
+      "bytes": 9560646
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/hook-wide-v02.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/032-hook-wide-v02.mov",
+      "sha256": "b4e73799affb26871f01cfd83dbd194f62434708b33f318240a21ec99561a8cf",
+      "bytes": 9857050
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/hook.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/033-hook.mov",
+      "sha256": "f9f90aba16f9eba42c7f5a06b493395f2c1daa9a8a3e550273e77492a92c1e04",
+      "bytes": 5380802
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/identity-leap.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/034-identity-leap.mov",
+      "sha256": "5f576f4bc8d49f1f45dfda80ac04261d990624391e2d34f5d941697b4900ffdf",
+      "bytes": 9437406
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/identity-walk-tracked-v02.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/035-identity-walk-tracked-v02.mov",
+      "sha256": "ca7b1a92944891845ac65d6e44e8419483a6fa0e96611f1d292bc9ffca7ed58a",
+      "bytes": 8338816
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/identity-walk.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/036-identity-walk.mov",
+      "sha256": "df4b3a983a2898cf3060e5b6c04becde3a8af50ea6f89617377aa7dd13e92fe8",
+      "bytes": 7911559
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/light.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/037-light.mov",
+      "sha256": "b753d547bc137b6e83784ca0128a424c0f7d31511acee6bb6951752dd8a6d22e",
+      "bytes": 9900795
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/natural-silent.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/038-natural-silent.mov",
+      "sha256": "21fdd74aa90391da2e40dc9310a21c11875b77b02f349c575a2c90c8e40d4af1",
+      "bytes": 95619509
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/new-path.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/039-new-path.mov",
+      "sha256": "89540150409fd01e4af605e9abb8626613c4f2d2bbffb5e5d8bf90002054a631",
+      "bytes": 10188264
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/next-jump.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/040-next-jump.mov",
+      "sha256": "4ff65a594f220c15d8b2c7efc27933e682565ed571473d3463892f397b56dd55",
+      "bytes": 9516284
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/other-ascent.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/041-other-ascent.mov",
+      "sha256": "669290f00456e0f7f631ea346e2a735ee8d667087143c427b5ac189f12622a0e",
+      "bytes": 9501293
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/other-change.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/042-other-change.mov",
+      "sha256": "974b0a5e4c2898152eca1570d7b2aab59468455ae19ab6b5a43875cec7a28acd",
+      "bytes": 12843849
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/other-stage.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/043-other-stage.mov",
+      "sha256": "aca80236f4974a5f18c5981fe88680c2da26b661d0b19fdce1f0d1fd53d28962",
+      "bytes": 12800699
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/search-route.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/044-search-route.mov",
+      "sha256": "0216083b2c7b85abce99143e17fd61f11bd40972c76d5891b3f83ef1f8585003",
+      "bytes": 19186596
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/short.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/045-short.mov",
+      "sha256": "9aaf81ff44fd7f80bb236b4735431ad81c7981385bc5c94bb363b3fd51d1553d",
+      "bytes": 5939419
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/support-check.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/046-support-check.mov",
+      "sha256": "1bf1c2e4501886bab9253c22b7a86ac597cef7d16826bd99800413da3169fe88",
+      "bytes": 11825947
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/switch-safe-v04.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/047-switch-safe-v04.mov",
+      "sha256": "2abaf8966d51613364ca96427c185c586dfffe5b76505edf88a9bf6d9bb4b8e4",
+      "bytes": 14264103
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/switch-wide-v02.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/048-switch-wide-v02.mov",
+      "sha256": "a3f96c05aba108ef106ff8a231254fd5d30027ee5f63fd9a338b5fc00555f1c4",
+      "bytes": 14634575
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/switch.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/049-switch.mov",
+      "sha256": "de100e4bac7545e28610bdf96395f60b24e84afed5ddd0adda661aae83a04d39",
+      "bytes": 8363881
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/transfer.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/050-transfer.mov",
+      "sha256": "5c051525f3784aea9ccddd443fe24982f8dd93bc9ac36908bd355f97ed8b2bfc",
+      "bytes": 7334436
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/wind-ascent.mov",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/051-wind-ascent.mov",
+      "sha256": "2e1eb2e2a648d9029f9859d8f72640f5dfa4e78a09d1996d95b5843e2da57cc8",
+      "bytes": 8086705
+    },
+    {
+      "original": "/mnt/f/Videos/ProjectP-EMBERWAKE-Intro60-2026-10-30/intro65-v01/media/wordmark.png",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/dependencies/052-wordmark.png",
+      "sha256": "23af4a427c1af70695273d5ae34da6b25c04660255da212797996768468ffbb4",
+      "bytes": 14807
+    },
+    {
+      "original": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\private-use\\projectp156-v06-case-20261031\\media\\sfx-r6.f32",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/sfx-r6.f32",
+      "sha256": "261931857136a133a562a9ce68b80b8cad03ca9e8e3a2b51d6fc9488b6867333",
+      "bytes": 24960000
+    },
+    {
+      "original": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\private-use\\projectp156-v06-case-20261031\\media\\music-r6.wav",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/music-r6.wav",
+      "sha256": "7d6edf593db241a9009d8e3689b8fa371320579699ba56146643c00967ec13f5",
+      "bytes": 18720102
+    },
+    {
+      "original": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\private-use\\projectp156-v06-case-20261031\\media\\voice-r6.wav",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/voice-r6.wav",
+      "sha256": "634ef1290833ac056e916010d12c275ebd2e9838246f37e165738b80908ae24f",
+      "bytes": 18720102
+    },
+    {
+      "original": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\private-use\\projectp156-v06-case-20261031\\media\\sfx-r6.wav",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/sfx-r6.wav",
+      "sha256": "6865400c4032096be64e681a6f2833652daeb09874de61813a79b179196347d5",
+      "bytes": 18720102
+    },
+    {
+      "original": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\private-use\\projectp156-v06-case-20261031\\media\\voice-r6.f32",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/voice-r6.f32",
+      "sha256": "5b155d44f0f1bef554688d8fe726c1c86279a7af3d5eebcdcf5d542392695c5d",
+      "bytes": 24960000
+    },
+    {
+      "original": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\private-use\\projectp156-v06-case-20261031\\media\\music-r6.f32",
+      "copy": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/media/music-r6.f32",
+      "sha256": "7129a876392ea3da09f528f434a91e6880fcccbf011d470222edb539427fefa1",
+      "bytes": 24960000
+    }
+  ],
+  "quality": {
+    "issue": 156,
+    "checkedAt": "2026-11-01T00:00:05.127Z",
+    "outputs": [
+      {
+        "variant": "bgm",
+        "file": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/videos/emberwake-intro65-v06-bgm.mp4",
+        "sha256": "9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06",
+        "format": {
+          "duration": 65.002,
+          "videoDuration": 65,
+          "audioDuration": 65.002,
+          "frames": 1950,
+          "width": 1080,
+          "height": 1920,
+          "fps": "30/1",
+          "videoCodec": "h264",
+          "pixelFormat": "yuv420p",
+          "audioCodec": "aac",
+          "sampleRate": "48000",
+          "channels": 2
+        },
+        "lag": 0,
+        "clips": 0,
+        "minCueHeadTailCorrelation": 0.9794294415355016,
+        "loudnessSummary": "Summary:\r\n\r\n  Integrated loudness:\r\n    I:         -23.9 LUFS\r\n    Threshold: -34.0 LUFS\r\n\r\n  Loudness range:\r\n    LRA:         4.2 LU\r\n    Threshold: -43.9 LUFS\r\n    LRA low:   -26.4 LUFS\r\n    LRA high:  -22.1 LUFS\r\n\r\n  True peak:\r\n    Peak:       -3.9 dBFS\r\n[out#0/null @ 0000018ce97dca00] video:0KiB audio:12188KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nsize=N/A time=00:01:05.00 bitrate=N/A speed= 375x elapsed=0:00:00.17    \r\n"
+      },
+      {
+        "variant": "voice",
+        "file": "C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/videos/emberwake-intro65-v06-voice.mp4",
+        "sha256": "e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c",
+        "format": {
+          "duration": 65.002,
+          "videoDuration": 65,
+          "audioDuration": 65.002,
+          "frames": 1950,
+          "width": 1080,
+          "height": 1920,
+          "fps": "30/1",
+          "videoCodec": "h264",
+          "pixelFormat": "yuv420p",
+          "audioCodec": "aac",
+          "sampleRate": "48000",
+          "channels": 2
+        },
+        "lag": 0,
+        "clips": 0,
+        "minCueHeadTailCorrelation": 0.9992905456473963,
+        "loudnessSummary": "Summary:\r\n\r\n  Integrated loudness:\r\n    I:         -23.6 LUFS\r\n    Threshold: -34.5 LUFS\r\n\r\n  Loudness range:\r\n    LRA:         6.6 LU\r\n    Threshold: -46.0 LUFS\r\n    LRA low:   -29.4 LUFS\r\n    LRA high:  -22.8 LUFS\r\n\r\n  True peak:\r\n    Peak:       -4.0 dBFS\r\n[out#0/null @ 00000271efb36180] video:0KiB audio:12188KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\r\nsize=N/A time=00:01:05.00 bitrate=N/A speed= 184x elapsed=0:00:00.35    \r\n"
+      }
+    ],
+    "videoAllFramesEqual": true,
+    "nativeDependencyReferences": 60,
+    "dependencyReport": {
+      "ec": [
+        "case:dependencies/033-hook.mov",
+        "case:dependencies/007-first-step.mov",
+        "case:dependencies/045-short.mov",
+        "case:dependencies/030-hold.mov",
+        "case:dependencies/040-next-jump.mov",
+        "case:dependencies/000-approach.mov",
+        "case:dependencies/037-light.mov",
+        "case:dependencies/049-switch.mov",
+        "case:dependencies/039-new-path.mov",
+        "case:dependencies/043-other-stage.mov",
+        "case:dependencies/042-other-change.mov",
+        "case:dependencies/041-other-ascent.mov",
+        "case:dependencies/051-wind-ascent.mov",
+        "case:dependencies/001-aqueduct.mov",
+        "case:dependencies/002-carry.mov",
+        "case:dependencies/050-transfer.mov",
+        "case:dependencies/036-identity-walk.mov",
+        "case:dependencies/034-identity-leap.mov",
+        "case:dependencies/006-demo-state.mov",
+        "case:dependencies/046-support-check.mov",
+        "case:dependencies/044-search-route.mov",
+        "case:dependencies/014-heading-hook.png",
+        "case:dependencies/012-heading-first-step.png",
+        "case:dependencies/024-heading-short.png",
+        "case:dependencies/013-heading-hold.png",
+        "case:dependencies/019-heading-next-jump.png",
+        "case:dependencies/008-heading-approach.png",
+        "case:dependencies/017-heading-light.png",
+        "case:dependencies/027-heading-switch.png",
+        "case:dependencies/018-heading-new-path.png",
+        "case:dependencies/022-heading-other-stage.png",
+        "case:dependencies/021-heading-other-change.png",
+        "case:dependencies/020-heading-other-ascent.png",
+        "case:dependencies/029-heading-wind-ascent.png",
+        "case:dependencies/009-heading-aqueduct.png",
+        "case:dependencies/010-heading-carry.png",
+        "case:dependencies/028-heading-transfer.png",
+        "case:dependencies/016-heading-identity-walk.png",
+        "case:dependencies/015-heading-identity-leap.png",
+        "case:dependencies/011-heading-demo-state.png",
+        "case:dependencies/025-heading-support-check.png",
+        "case:dependencies/023-heading-search-route.png",
+        "case:dependencies/038-natural-silent.mov",
+        "case:dependencies/052-wordmark.png",
+        "case:dependencies/032-hook-wide-v02.mov",
+        "case:dependencies/048-switch-wide-v02.mov",
+        "case:dependencies/035-identity-walk-tracked-v02.mov",
+        "case:dependencies/026-heading-switch-question-v02.png",
+        "case:dependencies/031-hook-safe-v04.mov",
+        "case:dependencies/047-switch-safe-v04.mov",
+        "case:dependencies/005-demo-state-tracked-v04.mov",
+        "case:dependencies/004-cta-service-v04.png",
+        "case:dependencies/003-cta-query-v04.png"
+      ],
+      "fc": {
+        "bgm": [
+          "case:media/intro65-v06-picture.mov",
+          "case:media/voice-r6.wav",
+          "case:media/sfx-r6.wav",
+          "case:media/music-r6.wav"
+        ],
+        "voice": [
+          "case:media/intro65-v06-picture.mov",
+          "case:media/voice-r6.wav",
+          "case:media/sfx-r6.wav"
+        ]
+      },
+      "missing": [],
+      "external": []
+    },
+    "captionLayers": {
+      "light": {
+        "text": "最初の灯が、点いた。",
+        "inFrame": 523,
+        "outFrame": 567,
+        "fadeInOpacity0AtStart": true,
+        "fullOpacityFrame": 525
+      },
+      "switch": {
+        "text": "スイッチの前後を、実画面で。",
+        "inFrame": 567,
+        "outSeconds": 21
+      },
+      "resultTextLayerOwners": [
+        "Detail light"
+      ]
+    },
+    "missingDependencies": [],
+    "actualFinalFrames": [
+      0.1,
+      0.5,
+      5.6,
+      7.7,
+      16.5,
+      17.3,
+      17.4333333,
+      17.5,
+      17.7,
+      18.5,
+      19,
+      19.9,
+      22.5,
+      30.2,
+      36.5,
+      42.4,
+      48.3,
+      54.5,
+      57.2,
+      62,
+      64.9666667
+    ],
+    "subjectiveListen": false,
+    "wholeRealtimeWatch": false,
+    "rootFinalImageAcceptance": "pending",
+    "publicAccepted": false,
+    "published": false,
+    "sharedDesktopInputs": 0
+  },
+  "lamp": {
+    "issue": 156,
+    "task": "RC-156-02",
+    "lampFrame": 523,
+    "lampSeconds": 17.433333333333334,
+    "captionLayers": {
+      "light": {
+        "text": "最初の灯が、点いた。",
+        "inFrame": 523,
+        "outFrame": 567,
+        "fadeInOpacity0AtStart": true,
+        "fullOpacityFrame": 525
+      },
+      "switch": {
+        "text": "スイッチの前後を、実画面で。",
+        "inFrame": 567,
+        "outSeconds": 21
+      },
+      "resultTextLayerOwners": [
+        "Detail light"
+      ]
+    },
+    "results": [
+      {
+        "variant": "bgm",
+        "sha256": "9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06",
+        "firstLitFrame": 523,
+        "firstLitSeconds": 17.433333333333334,
+        "timeline": {
+          "baselineYavg": 32.62515428571429,
+          "resultCaptionYavg": 43.44870322580643,
+          "followingSublineYavg": 48.7533,
+          "firstVisibleFrame": 524,
+          "endTransitionFrame": 567
+        },
+        "pedestalYavg": [
+          85.7,
+          85.08,
+          85.14,
+          85.61,
+          85.53,
+          85.56,
+          85.54,
+          85.57,
+          97.13,
+          96.29,
+          96.46,
+          96.84,
+          97.06,
+          97.46,
+          97.69,
+          97.77
+        ]
+      },
+      {
+        "variant": "voice",
+        "sha256": "e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c",
+        "firstLitFrame": 523,
+        "firstLitSeconds": 17.433333333333334,
+        "timeline": {
+          "baselineYavg": 32.62515428571429,
+          "resultCaptionYavg": 43.44870322580643,
+          "followingSublineYavg": 48.7533,
+          "firstVisibleFrame": 524,
+          "endTransitionFrame": 567
+        },
+        "pedestalYavg": [
+          85.7,
+          85.08,
+          85.14,
+          85.61,
+          85.53,
+          85.56,
+          85.54,
+          85.57,
+          97.13,
+          96.29,
+          96.46,
+          96.84,
+          97.06,
+          97.46,
+          97.69,
+          97.77
+        ]
+      }
+    ],
+    "cue07": {
+      "actualStart": 17.5003125,
+      "actualEnd": 18.817697916666667,
+      "afterLampSeconds": 0.06697916666666615,
+      "gapToCue08": 1.0709062500000002,
+      "gapAfterCue06": 2.96971875
+    },
+    "cue08Start": 19.888604166666667,
+    "pass": true,
+    "note": "native layer readback + final MP4 frame statistics + frame sheets; not subjective listening or real-time watch"
+  },
+  "lr": {
+    "pass": true,
+    "channels": [
+      {
+        "variant": "bgm",
+        "channel": "L",
+        "lagSamples": 0.0,
+        "clips": 0,
+        "minHeadTail": 0.9794294415355016
+      },
+      {
+        "variant": "bgm",
+        "channel": "R",
+        "lagSamples": 0.0,
+        "clips": 0,
+        "minHeadTail": 0.979171770808815
+      },
+      {
+        "variant": "voice",
+        "channel": "L",
+        "lagSamples": 0.0,
+        "clips": 0,
+        "minHeadTail": 0.9992905456473963
+      },
+      {
+        "variant": "voice",
+        "channel": "R",
+        "lagSamples": 0.0,
+        "clips": 0,
+        "minHeadTail": 0.9992905456473963
+      }
+    ]
+  },
+  "photocraft": {
+    "originalVersion": "v05 unchanged artwork",
+    "resavedVersion": "v06 packaging only",
+    "resaveReceipt": "C:\\Users\\pui\\private-use\\emberwake-video156-20261101\\qa\\pc-resave.json",
+    "renderReceipt": "C:\\Users\\pui\\private-use\\emberwake-video156-20261101\\qa\\pc-render.json"
+  },
+  "viewed": [
+    "first-final-sheet.png",
+    "native-reopened-525.png",
+    "lamp-caption-sheet-bgm.png",
+    "final-jumpcity-tracking-strip.png"
+  ],
+  "unverified": [
+    "whole realtime watch",
+    "subjective audio listen",
+    "mobile UI",
+    "independent cross review",
+    "publication acceptance",
+    "TikTok native music"
+  ],
+  "publication": false,
+  "nasWritten": true,
+  "sharedInput": 0,
+  "preserved": [
+    "Linux SourceWT and original case",
+    "old partial picture and logs",
+    "v05 originals and videos"
+  ],
+  "failure": "Initial metadata pipe decoded UTF-8 as cp932; failed metadata MP4 preserved in qa; corrected UTF-8 remux final SHA only",
+  "nasDelivery": {
+    "state": "verified_physical_origin",
+    "completedAt": "2026-11-01T02:06:14.286983+00:00",
+    "directory": "/home/pui/private-use/nas/data/work/videos/2026-11-01/エンバーウェイク/1104_点灯同期修正_v06",
+    "windowsReadbackDirectory": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\private-use\\nas\\data\\work\\videos\\2026-11-01\\エンバーウェイク\\1104_点灯同期修正_v06",
+    "route": "Existing private share Linux host bind source; Windows readback via WSL UNC",
+    "originReceipt": {
+      "privateCaseRelativePath": "attempt01/qa/nas-origin-delivery-v06.json",
+      "sha256": "ed2f93af299ce8a774787dd94dfe35ba95b877fb745f48bf3ae428ab5e41f6dd"
+    },
+    "windowsReadbackReceipt": {
+      "privateCaseRelativePath": "attempt01/qa/nas-origin-windows-readback-v06.json",
+      "sha256": "705532f7ecfd4d59bf0fdef616fafa90ce8dea2e6aa197b7182a8e8b7866a3ab"
+    },
+    "destinationAbsentBefore": true,
+    "resolvedWithinShareRoot": true,
+    "exclusiveCopy": true,
+    "directoryContainsOnlyTwoVideos": true,
+    "localCopiesRetained": true,
+    "smbWindowsAccessRestored": false,
+    "items": [
+      {
+        "variant": "bgm",
+        "fileName": "BGM版.mp4",
+        "bytes": 27140862,
+        "sha256": "9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06",
+        "fullAvDecodeExit": 0,
+        "decodeStderrEmpty": true,
+        "sha256AfterDecode": "9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06",
+        "windowsWslUncReadbackMatches": true
+      },
+      {
+        "variant": "voice",
+        "fileName": "声・効果音版.mp4",
+        "bytes": 27140399,
+        "sha256": "e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c",
+        "fullAvDecodeExit": 0,
+        "decodeStderrEmpty": true,
+        "sha256AfterDecode": "e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c",
+        "windowsWslUncReadbackMatches": true
+      }
+    ],
+    "scope": "NAS technical candidate delivery supplement. Independent technical approval is recorded in README; realtime watch, subjective listening, mobile, creative adoption and publication acceptance remain unverified.",
+    "oldAccessDeniedReceiptPreserved": "attempt01/qa/nas-delivery-v06.json"
+  }
+}

@@ -1,0 +1,8 @@
+import fs from 'node:fs';import {ff,hash,save}from './attempt01/source/background.mjs';
+const root='C:/Users/pui/private-use/emberwake-video156-20261101/attempt01',out=root+'/videos/emberwake-intro65-v06-bgm.mp4',raw=root+'/media/intro65-v06-bgm-native.mp4';
+fs.renameSync(out,root+'/qa/failed-metadata-encoding-bgm.mp4');
+const exp=JSON.parse(fs.readFileSync(root+'/qa/fc-v06-bgm-export.json'));if(exp.code||JSON.parse(exp.stdout).result.frames!==1950)throw Error('Invalid prior native export');
+await ff(['-i',raw,'-map','0','-c','copy','-metadata','title=EMBERWAKE 灰の灯 / 実作品紹介65秒','-metadata','comment=Actual development-game footage. Ordinary key inputs were automated. Game audio not recorded; editorial SFX. Voice: VOICEVOX:玄野武宏. Music: Cipher / Kevin MacLeod (incompetech.com). Source: https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100844 . CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ . Changes: excerpt, level, voice ducking, fade.',out],root+'/qa/final-v06-bgm-metadata.json');
+let s=fs.readFileSync(root+'/source/v06-render.mjs','utf8').replace("['bgm','voice']","['voice']");fs.writeFileSync(root+'/source/v06-render-voice.mjs',s);
+process.argv.push('--export-only');await import('./attempt01/source/v06-render-voice.mjs');
+const p=root+'/qa/output-binding-v06.json',b=JSON.parse(fs.readFileSync(p));b.bindings.unshift({variant:'bgm',file:out,sha256:hash(out),nativeFilmcraftProject:root+'/projects/intro65-v06-bgm.fcproj',projectSha256:hash(root+'/projects/intro65-v06-bgm.fcproj'),audioTracks:['voice-r6.wav','sfx-r6.wav','music-r6.wav'].map(n=>({file:root+'/media/'+n,sha256:hash(root+'/media/'+n)})),offlineMedia:[]});save(p,b);

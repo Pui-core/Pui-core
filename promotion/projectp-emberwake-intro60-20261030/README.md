@@ -2,7 +2,24 @@
 
 管理 [Issue156](https://github.com/Pui-core/-/issues/156) の新しい65秒縦動画1creative。ownerが8秒版を拒否した変更を反映し、8秒最終動画・既公開151の最終動画を使わず、実rawから構成を作り直した。2音版は同じ全映像であり、別の投稿2本にするためのものではない。**制作/NAS/Sourceの候補納品であり、未公開。主観の実聴取は未検証のため公開受入ではない。**
 
-## 完成候補
+## v06 最新制作候補（2026-11-01）
+
+v06の2動画は生成済み。Windows EffectCraft0.14.0 / RTX4070SUPER Vulkanで全1950frameを141.69秒で描画し、FilmCraft0.10.0で書き出した。Linuxでの140frame停滞・30分timeoutの旧partial、失敗版、原本、全ログは保全している。復旧手順と原票の参照は [Windows復旧](source/windows-v06-recovery/README.md)、原本・依存と最終動画の対応は [納品manifest](qa/windows-v06-recovery-delivery-manifest.json)。
+
+ローカル動画は `C:/Users/pui/private-use/emberwake-video156-20261101/attempt01/videos/` に2本とも保持する。
+
+| ファイル | 実AV時間/映像frame | SHA-256 |
+|---|---|---|
+| emberwake-intro65-v06-bgm.mp4 | 65.002秒 / 1950frame | 9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06 |
+| emberwake-intro65-v06-voice.mp4 | 65.002秒 / 1950frame | e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c |
+
+独立Reviewerはhead `d8aa3179591cd84c35c89bcbc42e7267bc4e1ab1` と上記2SHAについて、Source技術受入・固定MP4の計数/抽出画像をAPPROVEと判定した（[COMMENT review 5725587521](https://github.com/Pui-core/Pui-core/pull/95#pullrequestreview-5725587521)、正式GitHub APPROVEDとは別）。全AV decode、全1950decoded frame一致、57 unique activeメディア依存欠損0、L/R別AAC21句頭尾・lag0・clip0を独立照合。点灯523f、字幕初可視524f・切替567f、有声17.5003〜18.8177秒を確認している。本READMEの追補は、その後の文書差分としてRootが独立Reviewerへ渡す。
+
+NAS実物理保存先へのv06技術候補納品は、2026-11-01 11:06 JSTに完了。既存SMB共有のLinux host bind source `/home/pui/private-use/nas/data/work/videos/2026-11-01/エンバーウェイク/1104_点灯同期修正_v06/` に、宛先不在・ShareRoot内resolveを確認して2動画だけをexclusive copyした。`BGM版.mp4` は27,140,862 bytes、`声・効果音版.mp4` は27,140,399 bytesで、上表2SHAと一致。NAS実fileからの全AV decodeは両方exit0/stderr空、decode後SHAも同一。WindowsのWSL UNC経路から同物理fileをreadbackしbytes/SHA一致を確認した。対応と元票SHAは[納品manifestのnasDelivery](qa/windows-v06-recovery-delivery-manifest.json)に追補。元票 `attempt01/qa/nas-origin-delivery-v06.json` のSHA256は `ed2f93af299ce8a774787dd94dfe35ba95b877fb745f48bf3ae428ab5e41f6dd`。ローカル2MP4も保持する。
+
+**Windows SMB経路のAccessDenied自体の修復、全編実時間視聴・主観実聴・実mobile/UI・owner創作採用・公開受入は未完。** 09:26 JSTのSMB書込み失敗票 `attempt01/qa/nas-delivery-v06.json` は保全し、上記Linux実保存先での成功票と区別する。TikTok native曲も未選定で、技術納品・数値検査を実聴・創作採用・公開・宣伝実績へ昇格しない。
+
+## v05 完成候補の履歴（保全・現行v06とは別）
 
 NAS：`\\100.105.2.75\private\work\videos\2026-10-30\エンバーウェイク\1007_灯で変わる道_構成刷新_v05\`。制作日の作品別フォルダーに動画2本だけを保存。HHmmは主BGM版の実更新時刻をWindowsで取得した。
 
@@ -12,6 +29,16 @@ NAS：`\\100.105.2.75\private\work\videos\2026-10-30\エンバーウェイク\10
 | 声・効果音版.mp4 | 65.002秒 / 1950frame | 6479c1e53a97dc5ae785e0ccd32dce653bcf9451b7179a506ca0d2745c8aa4de |
 
 編集原本/依存は `F:\Videos\ProjectP-EMBERWAKE-Intro60-2026-10-30\intro65-v01\`。PhotoCraft0.15.1、EffectCraft0.14.0、FilmCraft0.10.0の実原本をその場所から保存・再open・描画・書出しした。SourceのprojectsはF参照の同SHAバックアップで、Gitだけに全raw/model/audioが同梱されるという意味ではない。旧版/原raw/モデル/全制作依存・133144未保存・129保留WT・F本体feature14を保持した。
+
+## v06 限定修正（公開前・Issue156 RC-156-02 / CR-156-01）
+
+v05の最終動画（上表）は保全し、公開前の独立レビューで出た指摘をv06で修正した。**v06の動画は生成・技術検証済み。現在の2MP4/SHA・Windows回復完走・独立技術受入と残る未確認は、冒頭の「v06 最新制作候補」を参照する。** 以下は限定修正の内容と来歴であり、旧失敗版/partial/ログも保持する。
+
+- **RC-156-02（cue07が結果より先行）**: 最終MP4/原素材の30fps連続frameで、台座の点灯は**frame523＝17.4333秒が最初の点灯**（frame522は未点灯。台座周辺輝度85.57→97.14、原素材`light.mov`も73番で同時刻）。既存cue07 WAV（`voice-07.wav`）は再生成せず、`plan.mjs`のcue07 `at`を16.0→17.46へ移して有声開始を17.5003秒（点灯の約2frame後）、終端18.8177秒にした。cue08（19.8886秒開始）との間は約1.07秒、cue06終端との間も保持。SFXのchime（17.4秒）・他cue・BGM・全体の速度は不変で、再配置による音声の変化は15.95〜19.02秒のduckingのみ（共通gainはv05と同値0.78797）。
+- **字幕**: 結果字幕「最初の灯が、点いた。」を点灯frame(17.4333秒)から18.9秒へ移し、点灯前の副行は外した（見出し「近づいて、点ける。」は維持）。元のlight shot（15〜18秒）内だけでは結果後に約0.57秒しか読めないため、次shot冒頭（スイッチ見出しの区間）まで保持し、スイッチ副行「スイッチの前後を、実画面で。」は18.9秒開始に遅らせた。映像素材・尺65秒/1950frame・その他layerは変更なし。
+- **CR-156-01（12月見込み）**: 必須認定は独立Reviewerが撤回し条件付き限定（C1〜C4）へ。動画の画面・声（cue19）は変更しない（「見込み」とSteam審査通過後という条件は両立する）。投稿文2フィールド（YouTube説明・TikTok caption）へ「Windows向けデモはSteam審査通過後に提供予定／状況により変更／本編の提供時期は未定」を併記した（`source/posting.json`）。「準備中」は出典が無いため入れていない。「確定」「配信中」「審査通過済み」「審査中」と読める語は使わない。12月見込みの出所は`posting.json`の`provenance`、CAMPFIRE条件は公開直前に再取得（C4）。ページ編集・支援額の売上扱いは0。
+- **検査scriptの修正（PM事前点検 RO-V06-01〜03）**: 判定を純粋関数 `source/v06-checks.mjs` に切り出し、`source/v06-checks.test.mjs` の合成fixture（メディア/ネイティブ非使用）で修正前の欠陥と修正後の拒否を記録した。(1) 音声: 範囲外/サンプル不足/非有限/無音/デコード長不足は例外（旧判定は期待2秒・実1秒でtail 0サンプル・NaNのまま通過）。(2) 字幕: 保存原本のlayer本文・in=523f・out=567f・fade-in key・後続副行の開始を独立照合し、最終MP4の連続frame統計(453〜600f)で開始(523〜525f)・保持・終端(567〜568f)・後続副行の別本文を照合（526f〜580fの誤字幕は拒否）。(3) 依存: EffectCraft/FilmCraftの参照を現Linux caseとFの両方で集めて存在検査し、FCの必須参照（picture・voice/sfx/music-r6）の欠落・許可root外・旧版(r5/v05)参照を拒否（公開資料には相対名のみ）。
+- 検証の想定範囲: 実原本のreopen/save/render、修正区間の連続frame（`source/v06-lamp-qa.mjs`）、cue PCM配置・最終AAC頭尾/lag/clip・相対音量（`source/v06-qa.mjs`）、全AV decode、65秒/1950frame、2音版の映像同一、active依存の欠損0。声の再合成なし。実聴・全編視聴・JPnative曲・実モバイルUIは引き続き未検証で、この修正だけで公開受入にはしない。
 
 ## 構成と根拠
 

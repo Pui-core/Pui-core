@@ -1,0 +1,1498 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "variant": "bgm",
+      "sha256": "9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06",
+      "channel": "L",
+      "best": {
+        "correlation": 0.9985125241745625,
+        "expectedRms": 0.04860477939311576,
+        "actualRms": 0.048537176961912926,
+        "n": 48000,
+        "lag": 0
+      },
+      "peak": 0.6389601826667786,
+      "clip": 0,
+      "cueChecks": [
+        {
+          "id": "01",
+          "text": "この灯り、道になる？",
+          "kana": "コノ'/アカリ'、ミチニ'/ナ'ル？",
+          "voiced": [
+            0.207625,
+            1.51115625
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 62570,
+          "headCorrelation": 0.9998880065866108,
+          "tailCorrelation": 0.9999679150938452,
+          "wholeCorrelation": 0.9998228223331971,
+          "actualExpectedRmsDb": -0.009087027065442472,
+          "voiceMusicDb": 10.65464584183145
+        },
+        {
+          "id": "02",
+          "text": "跳ぶだけ、と思ったら。",
+          "kana": "トブダケ'、ト'/オモ'ッタラ",
+          "voiced": [
+            2.6557500000000003,
+            3.8180104166666666
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 55789,
+          "headCorrelation": 0.9996268903754137,
+          "tailCorrelation": 0.9996031840098486,
+          "wholeCorrelation": 0.999711959356852,
+          "actualExpectedRmsDb": -0.005878239799459264,
+          "voiceMusicDb": 11.338546164801516
+        },
+        {
+          "id": "03",
+          "text": "短く押すと、届かない。",
+          "kana": "ミジカ'クオ_スト、トドカ'ナイ",
+          "voiced": [
+            5.154541666666667,
+            6.630364583333334
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 70840,
+          "headCorrelation": 0.9992227121942964,
+          "tailCorrelation": 0.9999217064656766,
+          "wholeCorrelation": 0.999711424200793,
+          "actualExpectedRmsDb": -0.012784483673340025,
+          "voiceMusicDb": 11.545928809088682
+        },
+        {
+          "id": "04",
+          "text": "押し続けると、届いた。",
+          "kana": "オ_シツズケ'ルト、トド'イタ",
+          "voiced": [
+            7.2167916666666665,
+            8.579052083333334
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 65389,
+          "headCorrelation": 0.9999442052059091,
+          "tailCorrelation": 0.9997829964717245,
+          "wholeCorrelation": 0.9995624386181488,
+          "actualExpectedRmsDb": -0.022182615470303698,
+          "voiceMusicDb": 8.136582261528995
+        },
+        {
+          "id": "05",
+          "text": "同じ足場でも、入力で結果が変わる。",
+          "kana": "オナジ'/アシバ'デモ、ニュウリョクデ'/ケッカガ'/カワル'",
+          "voiced": [
+            9.484729166666666,
+            11.711552083333332
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 106888,
+          "headCorrelation": 0.9999542025721322,
+          "tailCorrelation": 0.9989443591417041,
+          "wholeCorrelation": 0.9997695472840334,
+          "actualExpectedRmsDb": -0.005588997481686956,
+          "voiceMusicDb": 14.331216927493353
+        },
+        {
+          "id": "06",
+          "text": "足場をたどって、灯りのもとへ。",
+          "kana": "アシバ'オ/タド'ッテ、アカリノ'/モト'エ",
+          "voiced": [
+            12.723270833333332,
+            14.53059375
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 86752,
+          "headCorrelation": 0.9995830933083216,
+          "tailCorrelation": 0.9998871743999401,
+          "wholeCorrelation": 0.9996240295927693,
+          "actualExpectedRmsDb": 0.0013799289998092856,
+          "voiceMusicDb": 7.1327215695377175
+        },
+        {
+          "id": "07",
+          "text": "最初の灯が、点いた。",
+          "kana": "サイショノ'/ヒ'ガ、ツ'イタ",
+          "voiced": [
+            17.5003125,
+            18.817697916666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 63235,
+          "headCorrelation": 0.9999543094783283,
+          "tailCorrelation": 0.9965293189637877,
+          "wholeCorrelation": 0.9994976390350084,
+          "actualExpectedRmsDb": -0.014080773975581136,
+          "voiceMusicDb": 5.011656922912238
+        },
+        {
+          "id": "08",
+          "text": "スイッチを入れると、足場が現れた。",
+          "kana": "スイ'ッチオ/イレルト'、アシバ'ガ/アラワレ'タ",
+          "voiced": [
+            19.888604166666667,
+            22.011010416666668
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 101876,
+          "headCorrelation": 0.9998888130268222,
+          "tailCorrelation": 0.9988777743357101,
+          "wholeCorrelation": 0.9997012916186325,
+          "actualExpectedRmsDb": -0.015880625279639345,
+          "voiceMusicDb": 8.071545836395785
+        },
+        {
+          "id": "09",
+          "text": "見えていた道を、実際に渡れる。",
+          "kana": "ミエ'テ/イタ'/ミチオ'、ジッサイニ'/ワタレル'",
+          "voiced": [
+            22.48570833333333,
+            24.327906249999998
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 88426,
+          "headCorrelation": 0.9976439814217314,
+          "tailCorrelation": 0.998922433927608,
+          "wholeCorrelation": 0.9996512163998487,
+          "actualExpectedRmsDb": -0.013694109860403567,
+          "voiceMusicDb": 10.128459392613124
+        },
+        {
+          "id": "10",
+          "text": "次の場所では、段差も変わる。",
+          "kana": "ツギ'ノ/バショデワ'、ダンサモ'/カワル'",
+          "voiced": [
+            25.351833333333335,
+            27.049864583333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 81506,
+          "headCorrelation": 0.9999472041336117,
+          "tailCorrelation": 0.9986975767027123,
+          "wholeCorrelation": 0.9985355162935521,
+          "actualExpectedRmsDb": 0.0049071605736806575,
+          "voiceMusicDb": 6.810039363181076
+        },
+        {
+          "id": "11",
+          "text": "また灯りをつないで、先へ。",
+          "kana": "マタ'/アカリオ'/ツナイデ'、サキエ'",
+          "voiced": [
+            29.638583333333333,
+            31.264864583333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 78062,
+          "headCorrelation": 0.9996361789979724,
+          "tailCorrelation": 0.9978451202892442,
+          "wholeCorrelation": 0.9980605371434164,
+          "actualExpectedRmsDb": -0.011986628355560814,
+          "voiceMusicDb": 9.311842928473684
+        },
+        {
+          "id": "12",
+          "text": "答えは、ここまで。",
+          "kana": "コタ'エワ、ココマ'デ",
+          "voiced": [
+            33.05960416666667,
+            34.21576041666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 55496,
+          "headCorrelation": 0.9988038927724636,
+          "tailCorrelation": 0.9978772704350233,
+          "wholeCorrelation": 0.9989710811903982,
+          "actualExpectedRmsDb": -0.021221443153936648,
+          "voiceMusicDb": 7.762459091997224
+        },
+        {
+          "id": "13",
+          "text": "別の街では、上へ。",
+          "kana": "ベツノ'/マチ'デワ、ウエエ'",
+          "voiced": [
+            35.456125,
+            36.91019791666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 69796,
+          "headCorrelation": 0.9966203521099772,
+          "tailCorrelation": 0.9989043956936793,
+          "wholeCorrelation": 0.9993603066613836,
+          "actualExpectedRmsDb": 0.00014071663558260202,
+          "voiceMusicDb": 11.570185607178686
+        },
+        {
+          "id": "14",
+          "text": "足場の間隔を見て。",
+          "kana": "アシバ'ノ/カンカクオ'/ミ'テ",
+          "voiced": [
+            38.42183333333333,
+            39.45194791666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 49446,
+          "headCorrelation": 0.9996504761088293,
+          "tailCorrelation": 0.9990324317678205,
+          "wholeCorrelation": 0.9978166332793845,
+          "actualExpectedRmsDb": 0.0041612310311446785,
+          "voiceMusicDb": 10.693008337348665
+        },
+        {
+          "id": "15",
+          "text": "次の足場へ、飛び移る。",
+          "kana": "ツギ'ノ/アシバ'エ、トビウツル'",
+          "voiced": [
+            41.35202083333333,
+            42.93490625
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 75978,
+          "headCorrelation": 0.9995160923936496,
+          "tailCorrelation": 0.9995198846425947,
+          "wholeCorrelation": 0.9985241356282101,
+          "actualExpectedRmsDb": -0.007549464286013987,
+          "voiceMusicDb": 8.066031595669527
+        },
+        {
+          "id": "16",
+          "text": "ひとつずつ、進める道を探す。",
+          "kana": "_ヒトツズ'ツ、ススメル'/ミチオ'/サガス'",
+          "voiced": [
+            44.537625,
+            46.43173958333333
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 90918,
+          "headCorrelation": 0.9996128369406055,
+          "tailCorrelation": 0.9984219082928811,
+          "wholeCorrelation": 0.9987900325206674,
+          "actualExpectedRmsDb": -0.008522207616773827,
+          "voiceMusicDb": 6.822496121181185
+        },
+        {
+          "id": "17",
+          "text": "EMBERWAKE。",
+          "kana": "エン'バア、ウェ'イク",
+          "voiced": [
+            47.43595833333333,
+            48.63246875
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 57433,
+          "headCorrelation": 0.9794294415355016,
+          "tailCorrelation": 0.9999486119962768,
+          "wholeCorrelation": 0.9937928295230677,
+          "actualExpectedRmsDb": 0.07637442832774044,
+          "voiceMusicDb": 6.959007476595696
+        },
+        {
+          "id": "18",
+          "text": "開発中のアクションゲームです。",
+          "kana": "カイハ_ツチュウノ'/ア_クションゲ'エムデ_ス",
+          "voiced": [
+            50.15470833333333,
+            51.582760416666666
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 68547,
+          "headCorrelation": 0.9994000511925076,
+          "tailCorrelation": 0.999757712933135,
+          "wholeCorrelation": 0.998164542308964,
+          "actualExpectedRmsDb": -0.0004691401776003103,
+          "voiceMusicDb": 11.084543974873524
+        },
+        {
+          "id": "19",
+          "text": "デモは、2026年12月の提供見込み。",
+          "kana": "デ'モワ、ニセ'ン/ニ'ジュウ/ロク'ネン/ジュウニガツ'ノ/テエキョオミ'コミ",
+          "voiced": [
+            53.05558333333333,
+            55.791072916666664
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 131304,
+          "headCorrelation": 0.9989271050318166,
+          "tailCorrelation": 0.9999458413910585,
+          "wholeCorrelation": 0.9991200240280705,
+          "actualExpectedRmsDb": -0.006812119148969495,
+          "voiceMusicDb": 10.808836078756027
+        },
+        {
+          "id": "20",
+          "text": "キャンプファイヤーで、制作支援を受付中。",
+          "kana": "キャ'ン/_プフアイ'ヤアデ、セエサ_クシ'エンオ/ウケ_ツケチュウ'",
+          "voiced": [
+            56.86470833333333,
+            59.371593749999995
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 120331,
+          "headCorrelation": 0.999720781051258,
+          "tailCorrelation": 0.9999701848400854,
+          "wholeCorrelation": 0.9994957823829625,
+          "actualExpectedRmsDb": -0.0029331030730160414,
+          "voiceMusicDb": 12.503698729209747
+        },
+        {
+          "id": "21",
+          "text": "エンバーウェイクで検索して、内容をご確認ください。",
+          "kana": "エン'バア、ウェ'イクデ/ケンサク'/_シテ'、ナイヨオオ'/ゴカ'クニン/クダサ'イ",
+          "voiced": [
+            60.28814583333333,
+            63.663302083333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 162008,
+          "headCorrelation": 0.9986292637464879,
+          "tailCorrelation": 0.995329555290011,
+          "wholeCorrelation": 0.9988487033999677,
+          "actualExpectedRmsDb": -0.005889921982079726,
+          "voiceMusicDb": 11.90409826016306
+        }
+      ]
+    },
+    {
+      "variant": "bgm",
+      "sha256": "9b2f622d74bb91bd8e40c3f28c9ca13aff8adce4e6e0cfb476f5518e3146fc06",
+      "channel": "R",
+      "best": {
+        "correlation": 0.9988848328500999,
+        "expectedRms": 0.04774101026980834,
+        "actualRms": 0.04771789740850142,
+        "n": 48000,
+        "lag": 0
+      },
+      "peak": 0.6185650825500488,
+      "clip": 0,
+      "cueChecks": [
+        {
+          "id": "01",
+          "text": "この灯り、道になる？",
+          "kana": "コノ'/アカリ'、ミチニ'/ナ'ル？",
+          "voiced": [
+            0.207625,
+            1.51115625
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 62570,
+          "headCorrelation": 0.9998513141109832,
+          "tailCorrelation": 0.9999691899294345,
+          "wholeCorrelation": 0.9997580745443331,
+          "actualExpectedRmsDb": -0.007799094548246124,
+          "voiceMusicDb": 11.246695248974019
+        },
+        {
+          "id": "02",
+          "text": "跳ぶだけ、と思ったら。",
+          "kana": "トブダケ'、ト'/オモ'ッタラ",
+          "voiced": [
+            2.6557500000000003,
+            3.8180104166666666
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 55789,
+          "headCorrelation": 0.9996665186784094,
+          "tailCorrelation": 0.9997095950099297,
+          "wholeCorrelation": 0.9997192539265688,
+          "actualExpectedRmsDb": -0.021401380798224744,
+          "voiceMusicDb": 11.265742272844982
+        },
+        {
+          "id": "03",
+          "text": "短く押すと、届かない。",
+          "kana": "ミジカ'クオ_スト、トドカ'ナイ",
+          "voiced": [
+            5.154541666666667,
+            6.630364583333334
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 70840,
+          "headCorrelation": 0.9993870963091884,
+          "tailCorrelation": 0.9999531618082985,
+          "wholeCorrelation": 0.9996419211285732,
+          "actualExpectedRmsDb": -0.01159776261070359,
+          "voiceMusicDb": 10.283196110671742
+        },
+        {
+          "id": "04",
+          "text": "押し続けると、届いた。",
+          "kana": "オ_シツズケ'ルト、トド'イタ",
+          "voiced": [
+            7.2167916666666665,
+            8.579052083333334
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 65389,
+          "headCorrelation": 0.9999377300664757,
+          "tailCorrelation": 0.9997948173447477,
+          "wholeCorrelation": 0.9996208012526283,
+          "actualExpectedRmsDb": -0.03382241835888854,
+          "voiceMusicDb": 9.09146693908099
+        },
+        {
+          "id": "05",
+          "text": "同じ足場でも、入力で結果が変わる。",
+          "kana": "オナジ'/アシバ'デモ、ニュウリョクデ'/ケッカガ'/カワル'",
+          "voiced": [
+            9.484729166666666,
+            11.711552083333332
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 106888,
+          "headCorrelation": 0.9999483095687577,
+          "tailCorrelation": 0.9991661475328215,
+          "wholeCorrelation": 0.9997248823011863,
+          "actualExpectedRmsDb": -0.00982403636053111,
+          "voiceMusicDb": 14.183261506254354
+        },
+        {
+          "id": "06",
+          "text": "足場をたどって、灯りのもとへ。",
+          "kana": "アシバ'オ/タド'ッテ、アカリノ'/モト'エ",
+          "voiced": [
+            12.723270833333332,
+            14.53059375
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 86752,
+          "headCorrelation": 0.9994848550360831,
+          "tailCorrelation": 0.9999252435495709,
+          "wholeCorrelation": 0.9995860070328098,
+          "actualExpectedRmsDb": -0.012328471019641313,
+          "voiceMusicDb": 6.3159960299934115
+        },
+        {
+          "id": "07",
+          "text": "最初の灯が、点いた。",
+          "kana": "サイショノ'/ヒ'ガ、ツ'イタ",
+          "voiced": [
+            17.5003125,
+            18.817697916666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 63235,
+          "headCorrelation": 0.9999498791443936,
+          "tailCorrelation": 0.9972477214070968,
+          "wholeCorrelation": 0.9995012984071625,
+          "actualExpectedRmsDb": -0.01148657944355677,
+          "voiceMusicDb": 6.3161902227933595
+        },
+        {
+          "id": "08",
+          "text": "スイッチを入れると、足場が現れた。",
+          "kana": "スイ'ッチオ/イレルト'、アシバ'ガ/アラワレ'タ",
+          "voiced": [
+            19.888604166666667,
+            22.011010416666668
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 101876,
+          "headCorrelation": 0.9997731130137179,
+          "tailCorrelation": 0.9991169220996029,
+          "wholeCorrelation": 0.9996903119899345,
+          "actualExpectedRmsDb": -0.016003468797788325,
+          "voiceMusicDb": 8.518996695263034
+        },
+        {
+          "id": "09",
+          "text": "見えていた道を、実際に渡れる。",
+          "kana": "ミエ'テ/イタ'/ミチオ'、ジッサイニ'/ワタレル'",
+          "voiced": [
+            22.48570833333333,
+            24.327906249999998
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 88426,
+          "headCorrelation": 0.9978535926375958,
+          "tailCorrelation": 0.9988977363421617,
+          "wholeCorrelation": 0.9996680384392732,
+          "actualExpectedRmsDb": -0.010815015136244924,
+          "voiceMusicDb": 9.848976537271419
+        },
+        {
+          "id": "10",
+          "text": "次の場所では、段差も変わる。",
+          "kana": "ツギ'ノ/バショデワ'、ダンサモ'/カワル'",
+          "voiced": [
+            25.351833333333335,
+            27.049864583333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 81506,
+          "headCorrelation": 0.9998896286500004,
+          "tailCorrelation": 0.9994913785632591,
+          "wholeCorrelation": 0.9986262866628569,
+          "actualExpectedRmsDb": 0.009627771804466789,
+          "voiceMusicDb": 6.788654502611746
+        },
+        {
+          "id": "11",
+          "text": "また灯りをつないで、先へ。",
+          "kana": "マタ'/アカリオ'/ツナイデ'、サキエ'",
+          "voiced": [
+            29.638583333333333,
+            31.264864583333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 78062,
+          "headCorrelation": 0.9997332284676629,
+          "tailCorrelation": 0.9968886793280202,
+          "wholeCorrelation": 0.9978707616373711,
+          "actualExpectedRmsDb": 0.004965630505143313,
+          "voiceMusicDb": 11.931499307530427
+        },
+        {
+          "id": "12",
+          "text": "答えは、ここまで。",
+          "kana": "コタ'エワ、ココマ'デ",
+          "voiced": [
+            33.05960416666667,
+            34.21576041666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 55496,
+          "headCorrelation": 0.9990279643835879,
+          "tailCorrelation": 0.9978582775973496,
+          "wholeCorrelation": 0.9990923461938688,
+          "actualExpectedRmsDb": 0.007143945934762652,
+          "voiceMusicDb": 7.682198327679436
+        },
+        {
+          "id": "13",
+          "text": "別の街では、上へ。",
+          "kana": "ベツノ'/マチ'デワ、ウエエ'",
+          "voiced": [
+            35.456125,
+            36.91019791666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 69796,
+          "headCorrelation": 0.9969381960654181,
+          "tailCorrelation": 0.9986284464530997,
+          "wholeCorrelation": 0.9994492155537689,
+          "actualExpectedRmsDb": -0.011895450245595915,
+          "voiceMusicDb": 11.375860636862956
+        },
+        {
+          "id": "14",
+          "text": "足場の間隔を見て。",
+          "kana": "アシバ'ノ/カンカクオ'/ミ'テ",
+          "voiced": [
+            38.42183333333333,
+            39.45194791666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 49446,
+          "headCorrelation": 0.9997762111205006,
+          "tailCorrelation": 0.9989148225306125,
+          "wholeCorrelation": 0.9979879744169594,
+          "actualExpectedRmsDb": 0.013903978593979469,
+          "voiceMusicDb": 9.749804290766967
+        },
+        {
+          "id": "15",
+          "text": "次の足場へ、飛び移る。",
+          "kana": "ツギ'ノ/アシバ'エ、トビウツル'",
+          "voiced": [
+            41.35202083333333,
+            42.93490625
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 75978,
+          "headCorrelation": 0.9996040649395235,
+          "tailCorrelation": 0.9992764527298303,
+          "wholeCorrelation": 0.9987441693317116,
+          "actualExpectedRmsDb": -0.014923135508849326,
+          "voiceMusicDb": 9.561449165736223
+        },
+        {
+          "id": "16",
+          "text": "ひとつずつ、進める道を探す。",
+          "kana": "_ヒトツズ'ツ、ススメル'/ミチオ'/サガス'",
+          "voiced": [
+            44.537625,
+            46.43173958333333
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 90918,
+          "headCorrelation": 0.9997768720582285,
+          "tailCorrelation": 0.9989779335971727,
+          "wholeCorrelation": 0.9987941266072895,
+          "actualExpectedRmsDb": 0.017789103734914123,
+          "voiceMusicDb": 7.515240979971422
+        },
+        {
+          "id": "17",
+          "text": "EMBERWAKE。",
+          "kana": "エン'バア、ウェ'イク",
+          "voiced": [
+            47.43595833333333,
+            48.63246875
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 57433,
+          "headCorrelation": 0.979171770808815,
+          "tailCorrelation": 0.9999681844203825,
+          "wholeCorrelation": 0.9947300786571966,
+          "actualExpectedRmsDb": 0.04017590355677805,
+          "voiceMusicDb": 7.745203316231581
+        },
+        {
+          "id": "18",
+          "text": "開発中のアクションゲームです。",
+          "kana": "カイハ_ツチュウノ'/ア_クションゲ'エムデ_ス",
+          "voiced": [
+            50.15470833333333,
+            51.582760416666666
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 68547,
+          "headCorrelation": 0.9993221197814283,
+          "tailCorrelation": 0.9999157991614527,
+          "wholeCorrelation": 0.9984343015854249,
+          "actualExpectedRmsDb": -0.0015829875872139625,
+          "voiceMusicDb": 11.614762814684529
+        },
+        {
+          "id": "19",
+          "text": "デモは、2026年12月の提供見込み。",
+          "kana": "デ'モワ、ニセ'ン/ニ'ジュウ/ロク'ネン/ジュウニガツ'ノ/テエキョオミ'コミ",
+          "voiced": [
+            53.05558333333333,
+            55.791072916666664
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 131304,
+          "headCorrelation": 0.9987906883422268,
+          "tailCorrelation": 0.9999403788495949,
+          "wholeCorrelation": 0.9992292884358505,
+          "actualExpectedRmsDb": -0.0016853737287505287,
+          "voiceMusicDb": 12.1931491362202
+        },
+        {
+          "id": "20",
+          "text": "キャンプファイヤーで、制作支援を受付中。",
+          "kana": "キャ'ン/_プフアイ'ヤアデ、セエサ_クシ'エンオ/ウケ_ツケチュウ'",
+          "voiced": [
+            56.86470833333333,
+            59.371593749999995
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 120331,
+          "headCorrelation": 0.9997115337320935,
+          "tailCorrelation": 0.9999667641054856,
+          "wholeCorrelation": 0.9995454973374984,
+          "actualExpectedRmsDb": -0.00606561876375672,
+          "voiceMusicDb": 12.707371529373862
+        },
+        {
+          "id": "21",
+          "text": "エンバーウェイクで検索して、内容をご確認ください。",
+          "kana": "エン'バア、ウェ'イクデ/ケンサク'/_シテ'、ナイヨオオ'/ゴカ'クニン/クダサ'イ",
+          "voiced": [
+            60.28814583333333,
+            63.663302083333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 162008,
+          "headCorrelation": 0.9989658366817364,
+          "tailCorrelation": 0.9969698296713089,
+          "wholeCorrelation": 0.9990684990934443,
+          "actualExpectedRmsDb": -0.008829144110891873,
+          "voiceMusicDb": 12.771965057252178
+        }
+      ]
+    },
+    {
+      "variant": "voice",
+      "sha256": "e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c",
+      "channel": "L",
+      "best": {
+        "correlation": 0.9999052066938621,
+        "expectedRms": 0.03417656235884456,
+        "actualRms": 0.034151125478305705,
+        "n": 48000,
+        "lag": 0
+      },
+      "peak": 0.6306010484695435,
+      "clip": 0,
+      "cueChecks": [
+        {
+          "id": "01",
+          "text": "この灯り、道になる？",
+          "kana": "コノ'/アカリ'、ミチニ'/ナ'ル？",
+          "voiced": [
+            0.207625,
+            1.51115625
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 62570,
+          "headCorrelation": 0.9999873864006619,
+          "tailCorrelation": 0.9999900819196,
+          "wholeCorrelation": 0.9999786879888009,
+          "actualExpectedRmsDb": -0.002184790180567246,
+          "voiceMusicDb": 10.65464584183145
+        },
+        {
+          "id": "02",
+          "text": "跳ぶだけ、と思ったら。",
+          "kana": "トブダケ'、ト'/オモ'ッタラ",
+          "voiced": [
+            2.6557500000000003,
+            3.8180104166666666
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 55789,
+          "headCorrelation": 0.9999878507896132,
+          "tailCorrelation": 0.999648420248913,
+          "wholeCorrelation": 0.9998671601519626,
+          "actualExpectedRmsDb": -0.004949265690064272,
+          "voiceMusicDb": 11.338546164801516
+        },
+        {
+          "id": "03",
+          "text": "短く押すと、届かない。",
+          "kana": "ミジカ'クオ_スト、トドカ'ナイ",
+          "voiced": [
+            5.154541666666667,
+            6.630364583333334
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 70840,
+          "headCorrelation": 0.9999994690748364,
+          "tailCorrelation": 0.9999673738683936,
+          "wholeCorrelation": 0.999842050023165,
+          "actualExpectedRmsDb": -0.012571900364174111,
+          "voiceMusicDb": 11.545928809088682
+        },
+        {
+          "id": "04",
+          "text": "押し続けると、届いた。",
+          "kana": "オ_シツズケ'ルト、トド'イタ",
+          "voiced": [
+            7.2167916666666665,
+            8.579052083333334
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 65389,
+          "headCorrelation": 0.999983695075011,
+          "tailCorrelation": 0.9995575768321323,
+          "wholeCorrelation": 0.9997633313936027,
+          "actualExpectedRmsDb": -0.0057266186222708244,
+          "voiceMusicDb": 8.136582261528995
+        },
+        {
+          "id": "05",
+          "text": "同じ足場でも、入力で結果が変わる。",
+          "kana": "オナジ'/アシバ'デモ、ニュウリョクデ'/ケッカガ'/カワル'",
+          "voiced": [
+            9.484729166666666,
+            11.711552083333332
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 106888,
+          "headCorrelation": 0.9999759717465536,
+          "tailCorrelation": 0.9996152094321692,
+          "wholeCorrelation": 0.9999129268086933,
+          "actualExpectedRmsDb": -0.005826297747202069,
+          "voiceMusicDb": 14.331216927493353
+        },
+        {
+          "id": "06",
+          "text": "足場をたどって、灯りのもとへ。",
+          "kana": "アシバ'オ/タド'ッテ、アカリノ'/モト'エ",
+          "voiced": [
+            12.723270833333332,
+            14.53059375
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 86752,
+          "headCorrelation": 0.9999652227666541,
+          "tailCorrelation": 0.9999536118468666,
+          "wholeCorrelation": 0.999900678053367,
+          "actualExpectedRmsDb": -0.0025160828409249826,
+          "voiceMusicDb": 7.1327215695377175
+        },
+        {
+          "id": "07",
+          "text": "最初の灯が、点いた。",
+          "kana": "サイショノ'/ヒ'ガ、ツ'イタ",
+          "voiced": [
+            17.5003125,
+            18.817697916666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 63235,
+          "headCorrelation": 0.9999978190402787,
+          "tailCorrelation": 0.9994939794314839,
+          "wholeCorrelation": 0.9998227893334316,
+          "actualExpectedRmsDb": -0.014073035393262861,
+          "voiceMusicDb": 5.011656922912238
+        },
+        {
+          "id": "08",
+          "text": "スイッチを入れると、足場が現れた。",
+          "kana": "スイ'ッチオ/イレルト'、アシバ'ガ/アラワレ'タ",
+          "voiced": [
+            19.888604166666667,
+            22.011010416666668
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 101876,
+          "headCorrelation": 0.999978106070459,
+          "tailCorrelation": 0.9992905456473963,
+          "wholeCorrelation": 0.9999224272074931,
+          "actualExpectedRmsDb": -0.0050510406652374325,
+          "voiceMusicDb": 8.071545836395785
+        },
+        {
+          "id": "09",
+          "text": "見えていた道を、実際に渡れる。",
+          "kana": "ミエ'テ/イタ'/ミチオ'、ジッサイニ'/ワタレル'",
+          "voiced": [
+            22.48570833333333,
+            24.327906249999998
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 88426,
+          "headCorrelation": 0.9999797286227887,
+          "tailCorrelation": 0.9995078540496536,
+          "wholeCorrelation": 0.9998780395676908,
+          "actualExpectedRmsDb": -0.004037033054846561,
+          "voiceMusicDb": 10.128459392613124
+        },
+        {
+          "id": "10",
+          "text": "次の場所では、段差も変わる。",
+          "kana": "ツギ'ノ/バショデワ'、ダンサモ'/カワル'",
+          "voiced": [
+            25.351833333333335,
+            27.049864583333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 81506,
+          "headCorrelation": 0.9999599740622164,
+          "tailCorrelation": 0.9998420207401361,
+          "wholeCorrelation": 0.9999049670716678,
+          "actualExpectedRmsDb": -0.006236937528198727,
+          "voiceMusicDb": 6.810039363181076
+        },
+        {
+          "id": "11",
+          "text": "また灯りをつないで、先へ。",
+          "kana": "マタ'/アカリオ'/ツナイデ'、サキエ'",
+          "voiced": [
+            29.638583333333333,
+            31.264864583333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 78062,
+          "headCorrelation": 0.9999898063568388,
+          "tailCorrelation": 0.9999780814406135,
+          "wholeCorrelation": 0.9998606528613129,
+          "actualExpectedRmsDb": -0.005956089642282192,
+          "voiceMusicDb": 9.311842928473684
+        },
+        {
+          "id": "12",
+          "text": "答えは、ここまで。",
+          "kana": "コタ'エワ、ココマ'デ",
+          "voiced": [
+            33.05960416666667,
+            34.21576041666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 55496,
+          "headCorrelation": 0.9999974109279157,
+          "tailCorrelation": 0.999372462134161,
+          "wholeCorrelation": 0.999952298576533,
+          "actualExpectedRmsDb": -0.006783793435005407,
+          "voiceMusicDb": 7.762459091997224
+        },
+        {
+          "id": "13",
+          "text": "別の街では、上へ。",
+          "kana": "ベツノ'/マチ'デワ、ウエエ'",
+          "voiced": [
+            35.456125,
+            36.91019791666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 69796,
+          "headCorrelation": 0.9999697829253913,
+          "tailCorrelation": 0.9999081984735345,
+          "wholeCorrelation": 0.9999539962661134,
+          "actualExpectedRmsDb": -0.006083752777829724,
+          "voiceMusicDb": 11.570185607178686
+        },
+        {
+          "id": "14",
+          "text": "足場の間隔を見て。",
+          "kana": "アシバ'ノ/カンカクオ'/ミ'テ",
+          "voiced": [
+            38.42183333333333,
+            39.45194791666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 49446,
+          "headCorrelation": 0.9999989705163799,
+          "tailCorrelation": 0.999731629401489,
+          "wholeCorrelation": 0.9998395582036986,
+          "actualExpectedRmsDb": -0.016014629253438363,
+          "voiceMusicDb": 10.693008337348665
+        },
+        {
+          "id": "15",
+          "text": "次の足場へ、飛び移る。",
+          "kana": "ツギ'ノ/アシバ'エ、トビウツル'",
+          "voiced": [
+            41.35202083333333,
+            42.93490625
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 75978,
+          "headCorrelation": 0.9999679029773519,
+          "tailCorrelation": 0.9999970156448745,
+          "wholeCorrelation": 0.9999076041755698,
+          "actualExpectedRmsDb": -0.0011218256133216555,
+          "voiceMusicDb": 8.066031595669527
+        },
+        {
+          "id": "16",
+          "text": "ひとつずつ、進める道を探す。",
+          "kana": "_ヒトツズ'ツ、ススメル'/ミチオ'/サガス'",
+          "voiced": [
+            44.537625,
+            46.43173958333333
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 90918,
+          "headCorrelation": 0.9999909475176667,
+          "tailCorrelation": 0.9999951909471456,
+          "wholeCorrelation": 0.999924984047608,
+          "actualExpectedRmsDb": -0.0074056431304624125,
+          "voiceMusicDb": 6.822496121181185
+        },
+        {
+          "id": "17",
+          "text": "EMBERWAKE。",
+          "kana": "エン'バア、ウェ'イク",
+          "voiced": [
+            47.43595833333333,
+            48.63246875
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 57433,
+          "headCorrelation": 0.999916553586245,
+          "tailCorrelation": 0.9999871509769407,
+          "wholeCorrelation": 0.999844593504206,
+          "actualExpectedRmsDb": -0.008270747177498459,
+          "voiceMusicDb": 6.959007476595696
+        },
+        {
+          "id": "18",
+          "text": "開発中のアクションゲームです。",
+          "kana": "カイハ_ツチュウノ'/ア_クションゲ'エムデ_ス",
+          "voiced": [
+            50.15470833333333,
+            51.582760416666666
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 68547,
+          "headCorrelation": 0.9999800053577848,
+          "tailCorrelation": 0.9999835254745151,
+          "wholeCorrelation": 0.9999025001299859,
+          "actualExpectedRmsDb": -0.009948705528518145,
+          "voiceMusicDb": 11.084543974873524
+        },
+        {
+          "id": "19",
+          "text": "デモは、2026年12月の提供見込み。",
+          "kana": "デ'モワ、ニセ'ン/ニ'ジュウ/ロク'ネン/ジュウニガツ'ノ/テエキョオミ'コミ",
+          "voiced": [
+            53.05558333333333,
+            55.791072916666664
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 131304,
+          "headCorrelation": 0.9999708796513282,
+          "tailCorrelation": 0.9999874619717297,
+          "wholeCorrelation": 0.9999488041231905,
+          "actualExpectedRmsDb": -0.0036891536835273035,
+          "voiceMusicDb": 10.808836078756027
+        },
+        {
+          "id": "20",
+          "text": "キャンプファイヤーで、制作支援を受付中。",
+          "kana": "キャ'ン/_プフアイ'ヤアデ、セエサ_クシ'エンオ/ウケ_ツケチュウ'",
+          "voiced": [
+            56.86470833333333,
+            59.371593749999995
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 120331,
+          "headCorrelation": 0.999983597431123,
+          "tailCorrelation": 0.9999933806769513,
+          "wholeCorrelation": 0.9999094940701251,
+          "actualExpectedRmsDb": -0.005341449782995408,
+          "voiceMusicDb": 12.503698729209747
+        },
+        {
+          "id": "21",
+          "text": "エンバーウェイクで検索して、内容をご確認ください。",
+          "kana": "エン'バア、ウェ'イクデ/ケンサク'/_シテ'、ナイヨオオ'/ゴカ'クニン/クダサ'イ",
+          "voiced": [
+            60.28814583333333,
+            63.663302083333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 162008,
+          "headCorrelation": 0.999709067187202,
+          "tailCorrelation": 0.9999849536899462,
+          "wholeCorrelation": 0.9999051168790942,
+          "actualExpectedRmsDb": -0.008174444746927263,
+          "voiceMusicDb": 11.90409826016306
+        }
+      ]
+    },
+    {
+      "variant": "voice",
+      "sha256": "e579458970b8b04579206c5f5304632b3d476bb36beaebdd0cdc80bd7fdabf5c",
+      "channel": "R",
+      "best": {
+        "correlation": 0.9999052066938621,
+        "expectedRms": 0.03417656235884456,
+        "actualRms": 0.034151125478305705,
+        "n": 48000,
+        "lag": 0
+      },
+      "peak": 0.6306010484695435,
+      "clip": 0,
+      "cueChecks": [
+        {
+          "id": "01",
+          "text": "この灯り、道になる？",
+          "kana": "コノ'/アカリ'、ミチニ'/ナ'ル？",
+          "voiced": [
+            0.207625,
+            1.51115625
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 62570,
+          "headCorrelation": 0.9999873864006619,
+          "tailCorrelation": 0.9999900819196,
+          "wholeCorrelation": 0.9999786879888009,
+          "actualExpectedRmsDb": -0.002184790180567246,
+          "voiceMusicDb": 11.246695248974019
+        },
+        {
+          "id": "02",
+          "text": "跳ぶだけ、と思ったら。",
+          "kana": "トブダケ'、ト'/オモ'ッタラ",
+          "voiced": [
+            2.6557500000000003,
+            3.8180104166666666
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 55789,
+          "headCorrelation": 0.9999878507896132,
+          "tailCorrelation": 0.999648420248913,
+          "wholeCorrelation": 0.9998671601519626,
+          "actualExpectedRmsDb": -0.004949265690064272,
+          "voiceMusicDb": 11.265742272844982
+        },
+        {
+          "id": "03",
+          "text": "短く押すと、届かない。",
+          "kana": "ミジカ'クオ_スト、トドカ'ナイ",
+          "voiced": [
+            5.154541666666667,
+            6.630364583333334
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 70840,
+          "headCorrelation": 0.9999994690748364,
+          "tailCorrelation": 0.9999673738683936,
+          "wholeCorrelation": 0.999842050023165,
+          "actualExpectedRmsDb": -0.012571900364174111,
+          "voiceMusicDb": 10.283196110671742
+        },
+        {
+          "id": "04",
+          "text": "押し続けると、届いた。",
+          "kana": "オ_シツズケ'ルト、トド'イタ",
+          "voiced": [
+            7.2167916666666665,
+            8.579052083333334
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 65389,
+          "headCorrelation": 0.999983695075011,
+          "tailCorrelation": 0.9995575768321323,
+          "wholeCorrelation": 0.9997633313936027,
+          "actualExpectedRmsDb": -0.0057266186222708244,
+          "voiceMusicDb": 9.09146693908099
+        },
+        {
+          "id": "05",
+          "text": "同じ足場でも、入力で結果が変わる。",
+          "kana": "オナジ'/アシバ'デモ、ニュウリョクデ'/ケッカガ'/カワル'",
+          "voiced": [
+            9.484729166666666,
+            11.711552083333332
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 106888,
+          "headCorrelation": 0.9999759717465536,
+          "tailCorrelation": 0.9996152094321692,
+          "wholeCorrelation": 0.9999129268086933,
+          "actualExpectedRmsDb": -0.005826297747202069,
+          "voiceMusicDb": 14.183261506254354
+        },
+        {
+          "id": "06",
+          "text": "足場をたどって、灯りのもとへ。",
+          "kana": "アシバ'オ/タド'ッテ、アカリノ'/モト'エ",
+          "voiced": [
+            12.723270833333332,
+            14.53059375
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 86752,
+          "headCorrelation": 0.9999652227666541,
+          "tailCorrelation": 0.9999536118468666,
+          "wholeCorrelation": 0.999900678053367,
+          "actualExpectedRmsDb": -0.0025160828409249826,
+          "voiceMusicDb": 6.3159960299934115
+        },
+        {
+          "id": "07",
+          "text": "最初の灯が、点いた。",
+          "kana": "サイショノ'/ヒ'ガ、ツ'イタ",
+          "voiced": [
+            17.5003125,
+            18.817697916666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 63235,
+          "headCorrelation": 0.9999978190402787,
+          "tailCorrelation": 0.9994939794314839,
+          "wholeCorrelation": 0.9998227893334316,
+          "actualExpectedRmsDb": -0.014073035393262861,
+          "voiceMusicDb": 6.3161902227933595
+        },
+        {
+          "id": "08",
+          "text": "スイッチを入れると、足場が現れた。",
+          "kana": "スイ'ッチオ/イレルト'、アシバ'ガ/アラワレ'タ",
+          "voiced": [
+            19.888604166666667,
+            22.011010416666668
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 101876,
+          "headCorrelation": 0.999978106070459,
+          "tailCorrelation": 0.9992905456473963,
+          "wholeCorrelation": 0.9999224272074931,
+          "actualExpectedRmsDb": -0.0050510406652374325,
+          "voiceMusicDb": 8.518996695263034
+        },
+        {
+          "id": "09",
+          "text": "見えていた道を、実際に渡れる。",
+          "kana": "ミエ'テ/イタ'/ミチオ'、ジッサイニ'/ワタレル'",
+          "voiced": [
+            22.48570833333333,
+            24.327906249999998
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 88426,
+          "headCorrelation": 0.9999797286227887,
+          "tailCorrelation": 0.9995078540496536,
+          "wholeCorrelation": 0.9998780395676908,
+          "actualExpectedRmsDb": -0.004037033054846561,
+          "voiceMusicDb": 9.848976537271419
+        },
+        {
+          "id": "10",
+          "text": "次の場所では、段差も変わる。",
+          "kana": "ツギ'ノ/バショデワ'、ダンサモ'/カワル'",
+          "voiced": [
+            25.351833333333335,
+            27.049864583333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 81506,
+          "headCorrelation": 0.9999599740622164,
+          "tailCorrelation": 0.9998420207401361,
+          "wholeCorrelation": 0.9999049670716678,
+          "actualExpectedRmsDb": -0.006236937528198727,
+          "voiceMusicDb": 6.788654502611746
+        },
+        {
+          "id": "11",
+          "text": "また灯りをつないで、先へ。",
+          "kana": "マタ'/アカリオ'/ツナイデ'、サキエ'",
+          "voiced": [
+            29.638583333333333,
+            31.264864583333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 78062,
+          "headCorrelation": 0.9999898063568388,
+          "tailCorrelation": 0.9999780814406135,
+          "wholeCorrelation": 0.9998606528613129,
+          "actualExpectedRmsDb": -0.005956089642282192,
+          "voiceMusicDb": 11.931499307530427
+        },
+        {
+          "id": "12",
+          "text": "答えは、ここまで。",
+          "kana": "コタ'エワ、ココマ'デ",
+          "voiced": [
+            33.05960416666667,
+            34.21576041666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 55496,
+          "headCorrelation": 0.9999974109279157,
+          "tailCorrelation": 0.999372462134161,
+          "wholeCorrelation": 0.999952298576533,
+          "actualExpectedRmsDb": -0.006783793435005407,
+          "voiceMusicDb": 7.682198327679436
+        },
+        {
+          "id": "13",
+          "text": "別の街では、上へ。",
+          "kana": "ベツノ'/マチ'デワ、ウエエ'",
+          "voiced": [
+            35.456125,
+            36.91019791666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 69796,
+          "headCorrelation": 0.9999697829253913,
+          "tailCorrelation": 0.9999081984735345,
+          "wholeCorrelation": 0.9999539962661134,
+          "actualExpectedRmsDb": -0.006083752777829724,
+          "voiceMusicDb": 11.375860636862956
+        },
+        {
+          "id": "14",
+          "text": "足場の間隔を見て。",
+          "kana": "アシバ'ノ/カンカクオ'/ミ'テ",
+          "voiced": [
+            38.42183333333333,
+            39.45194791666667
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 49446,
+          "headCorrelation": 0.9999989705163799,
+          "tailCorrelation": 0.999731629401489,
+          "wholeCorrelation": 0.9998395582036986,
+          "actualExpectedRmsDb": -0.016014629253438363,
+          "voiceMusicDb": 9.749804290766967
+        },
+        {
+          "id": "15",
+          "text": "次の足場へ、飛び移る。",
+          "kana": "ツギ'ノ/アシバ'エ、トビウツル'",
+          "voiced": [
+            41.35202083333333,
+            42.93490625
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 75978,
+          "headCorrelation": 0.9999679029773519,
+          "tailCorrelation": 0.9999970156448745,
+          "wholeCorrelation": 0.9999076041755698,
+          "actualExpectedRmsDb": -0.0011218256133216555,
+          "voiceMusicDb": 9.561449165736223
+        },
+        {
+          "id": "16",
+          "text": "ひとつずつ、進める道を探す。",
+          "kana": "_ヒトツズ'ツ、ススメル'/ミチオ'/サガス'",
+          "voiced": [
+            44.537625,
+            46.43173958333333
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 90918,
+          "headCorrelation": 0.9999909475176667,
+          "tailCorrelation": 0.9999951909471456,
+          "wholeCorrelation": 0.999924984047608,
+          "actualExpectedRmsDb": -0.0074056431304624125,
+          "voiceMusicDb": 7.515240979971422
+        },
+        {
+          "id": "17",
+          "text": "EMBERWAKE。",
+          "kana": "エン'バア、ウェ'イク",
+          "voiced": [
+            47.43595833333333,
+            48.63246875
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 57433,
+          "headCorrelation": 0.999916553586245,
+          "tailCorrelation": 0.9999871509769407,
+          "wholeCorrelation": 0.999844593504206,
+          "actualExpectedRmsDb": -0.008270747177498459,
+          "voiceMusicDb": 7.745203316231581
+        },
+        {
+          "id": "18",
+          "text": "開発中のアクションゲームです。",
+          "kana": "カイハ_ツチュウノ'/ア_クションゲ'エムデ_ス",
+          "voiced": [
+            50.15470833333333,
+            51.582760416666666
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 68547,
+          "headCorrelation": 0.9999800053577848,
+          "tailCorrelation": 0.9999835254745151,
+          "wholeCorrelation": 0.9999025001299859,
+          "actualExpectedRmsDb": -0.009948705528518145,
+          "voiceMusicDb": 11.614762814684529
+        },
+        {
+          "id": "19",
+          "text": "デモは、2026年12月の提供見込み。",
+          "kana": "デ'モワ、ニセ'ン/ニ'ジュウ/ロク'ネン/ジュウニガツ'ノ/テエキョオミ'コミ",
+          "voiced": [
+            53.05558333333333,
+            55.791072916666664
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 131304,
+          "headCorrelation": 0.9999708796513282,
+          "tailCorrelation": 0.9999874619717297,
+          "wholeCorrelation": 0.9999488041231905,
+          "actualExpectedRmsDb": -0.0036891536835273035,
+          "voiceMusicDb": 12.1931491362202
+        },
+        {
+          "id": "20",
+          "text": "キャンプファイヤーで、制作支援を受付中。",
+          "kana": "キャ'ン/_プフアイ'ヤアデ、セエサ_クシ'エンオ/ウケ_ツケチュウ'",
+          "voiced": [
+            56.86470833333333,
+            59.371593749999995
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 120331,
+          "headCorrelation": 0.999983597431123,
+          "tailCorrelation": 0.9999933806769513,
+          "wholeCorrelation": 0.9999094940701251,
+          "actualExpectedRmsDb": -0.005341449782995408,
+          "voiceMusicDb": 12.707371529373862
+        },
+        {
+          "id": "21",
+          "text": "エンバーウェイクで検索して、内容をご確認ください。",
+          "kana": "エン'バア、ウェ'イクデ/ケンサク'/_シテ'、ナイヨオオ'/ゴカ'クニン/クダサ'イ",
+          "voiced": [
+            60.28814583333333,
+            63.663302083333335
+          ],
+          "headSamples": 3840,
+          "tailSamples": 3840,
+          "wholeSamples": 162008,
+          "headCorrelation": 0.999709067187202,
+          "tailCorrelation": 0.9999849536899462,
+          "wholeCorrelation": 0.9999051168790942,
+          "actualExpectedRmsDb": -0.008174444746927263,
+          "voiceMusicDb": 12.771965057252178
+        }
+      ]
+    }
+  ],
+  "subjectiveListen": false
+}

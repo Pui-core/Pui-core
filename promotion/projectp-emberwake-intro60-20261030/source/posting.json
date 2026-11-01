@@ -1,18 +1,25 @@
 {
   "issue": 156,
   "creative": "emberwake-intro65-20261030",
-  "status": "production_candidate_not_published",
+  "status": "production_candidate_v06_not_published",
   "youtube": {
     "title": "この灯り、道になる？ 跳躍と仕掛けを実プレイで紹介【EMBERWAKE】",
-    "description": "跳ぶだけと思ったら、灯りで進める道が変わった。開発中の『EMBERWAKE / 灰の灯』を、短押しと長押しの比較、点灯、足場の変化から紹介します。\n\nCAMPFIREで制作支援を受付中です。CAMPFIREで「EMBERWAKE」と検索し、プロジェクトの内容・支援条件をご確認ください。\n支援ページ：https://camp-fire.jp/projects/993744/view\nデモは2026年12月提供見込み。本編の提供時期は未定です。\n\nぷい / ProjectP\n開発中の実ゲーム映像。通常のキー入力を自動化して収録しています。原ゲーム音は未収録、SEは編集音です。比較は同じ位置・速度・足場から行っています。後半は別の実場面です。結末・謎の解答は伏せています。\n\n音声：VOICEVOX:玄野武宏\n音楽：Cipher / Kevin MacLeod (incompetech.com)\nSource: https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100844\nLicense: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/\n変更：抜粋・音量調整・声区間のducking・fade。\n\n#EMBERWAKE #灰の灯 #自作ゲーム #ゲーム制作 #CAMPFIRE",
+    "description": "跳ぶだけと思ったら、灯りで進める道が変わった。開発中の『EMBERWAKE / 灰の灯』を、短押しと長押しの比較、点灯、足場の変化から紹介します。\n\nCAMPFIREで制作支援を受付中です。CAMPFIREで「EMBERWAKE」と検索し、プロジェクトの内容・支援条件をご確認ください。\n支援ページ：https://camp-fire.jp/projects/993744/view\nデモは2026年12月の提供を見込んでいます。Windows向けデモはSteam審査通過後に提供予定で、状況により変更する場合があります。本編の提供時期は未定です。\n\nぷい / ProjectP\n開発中の実ゲーム映像。通常のキー入力を自動化して収録しています。原ゲーム音は未収録、SEは編集音です。比較は同じ位置・速度・足場から行っています。後半は別の実場面です。結末・謎の解答は伏せています。\n\n音声：VOICEVOX:玄野武宏\n音楽：Cipher / Kevin MacLeod (incompetech.com)\nSource: https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100844\nLicense: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/\n変更：抜粋・音量調整・声区間のducking・fade。\n\n#EMBERWAKE #灰の灯 #自作ゲーム #ゲーム制作 #CAMPFIRE",
     "externalUrlClickableInShortsDescription": false,
     "relatedVideoId": null,
     "relatedStatus": "not_configured",
     "publishedVideoId": null
   },
   "tiktok": {
-    "caption": "跳ぶだけ？ 灯りをつなぐと、進める道が変わった。開発中『EMBERWAKE / 灰の灯』を実プレイで。制作支援の詳細はCAMPFIREで「EMBERWAKE」を検索。https://camp-fire.jp/projects/993744/view デモ2026年12月提供見込み／本編時期未定。音声 VOICEVOX:玄野武宏。自動化した通常キー操作の収録／編集SE。#EMBERWAKE #灰の灯 #自作ゲーム #ゲーム制作 #CAMPFIRE",
-    "nativeMusic": {"status":"not_selected_or_verified","country":"JP","musicId":null,"startMillis":null,"endMillis":null,"mix":null},
+    "caption": "跳ぶだけ？ 灯りをつなぐと、進める道が変わった。開発中『EMBERWAKE / 灰の灯』を実プレイで。制作支援の詳細はCAMPFIREで「EMBERWAKE」を検索。https://camp-fire.jp/projects/993744/view デモ2026年12月提供見込み（Windows／Steam審査通過後・状況により変更）／本編時期未定。音声 VOICEVOX:玄野武宏。自動化した通常キー操作の収録／編集SE。#EMBERWAKE #灰の灯 #自作ゲーム #ゲーム制作 #CAMPFIRE",
+    "nativeMusic": {
+      "status": "not_selected_or_verified",
+      "country": "JP",
+      "musicId": null,
+      "startMillis": null,
+      "endMillis": null,
+      "mix": null
+    },
     "profileLinkVerified": false,
     "publishedVideoId": null
   },
@@ -23,6 +30,28 @@
     "fullGameDelivery": "undetermined",
     "crowdfundingPageEdits": 0,
     "realRevenue": null,
-    "retentionOrFollowerGrowth": null
-  }
+    "retentionOrFollowerGrowth": null,
+    "demoConditions": {
+      "platform": "Windows",
+      "condition": "Steam審査通過後に提供予定",
+      "mayChange": true,
+      "fullGameDelivery": "undetermined",
+      "wordingToAvoid": [
+        "確定",
+        "配信中",
+        "審査通過済み",
+        "審査中"
+      ]
+    }
+  },
+  "version": "v06",
+  "provenance": {
+    "decemberEstimate": "ownerの会話発言「DEMOは12月に提供できそうだからそのままでいい」(2026-10-29T11:36:50Z, user本文)。Root一次event実読で来歴確認済み。現在も維持されているかはowner変更が無い限り撤回なしとして扱い、「ownerが現在も確認済み」とは書かない",
+    "campfireCondition": "PM観測(2026-10-31 13:47頃JST, 公開ページRO取得)。本Source writerは未取得",
+    "recheck": "公開直前にCAMPFIREページの該当文言を再取得して再照合(C4)"
+  },
+  "changesFromV05": [
+    "youtube.description: Windows／Steam審査通過後・状況により変更を併記(「準備中」は出典が無いため不採用)",
+    "tiktok.caption: Windows／Steam審査通過後・状況により変更を併記"
+  ]
 }
