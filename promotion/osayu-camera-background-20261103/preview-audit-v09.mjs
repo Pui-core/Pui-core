@@ -33,7 +33,7 @@ for(const variant of process.argv.slice(2).length?process.argv.slice(2):['solo',
    if(q[0]<24||z[0]>1056||q[1]<100||z[1]>1840)violations.push({frame:f,name:l.name,q,z});
   }
  }
- const report={variant,projectSHA256:hash(project),characterImports:0,frameCount:preview.frames,cuts:cutFrames.slice(0,-1).map((a,i)=>({fromFrame:a,toFrame:cutFrames[i+1],frames:cutFrames[i+1]-a})),maxCameraHoldFrames:maxHold,readableCheckedFrames:readFrames,readableTextOrReservationCropViolations:violations.length,violations:violations.slice(0,10),synchronization:synchronization.map(x=>({...x,deltaMs:Math.round((x.sourceSeconds-x.measuredTransient)*1000)})),actualRenderedMotionChecked:false,ownerCreativeAcceptance:false,TikTokVersionVerified:false};
+ const report={variant,projectSHA256:hash(project),characterImports:0,frameCount:preview.frames,cuts:cutFrames.slice(0,-1).map((a,i)=>({fromFrame:a,toFrame:cutFrames[i+1],frames:cutFrames[i+1]-a})),maxCameraHoldFrames:maxHold,readableCheckedFrames:readFrames,readableTextOrReservationCropViolations:violations.length,violations:violations.slice(0,10),synchronization:synchronization.map(x=>({...x,deltaMs:x.measuredTransient===null?null:Math.round((x.sourceSeconds-x.measuredTransient)*1000)})),actualRenderedMotionChecked:false,ownerCreativeAcceptance:false,TikTokVersionVerified:false};
  save(path.join(root,'qa',variant+'-candidate-native-audit.json'),report);
  if(violations.length||maxHold>=90||report.cuts.some(x=>x.frames>150))throw Error('native audit '+JSON.stringify(violations.slice(0,3)));
  console.log(JSON.stringify({variant,nativeAudit:true,frames:preview.frames,maxHold,readFrames}));

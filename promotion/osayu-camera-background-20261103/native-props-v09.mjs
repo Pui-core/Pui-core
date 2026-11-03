@@ -1,0 +1,3 @@
+export const TPS=254016000000;
+export function prop(l,key){let n=l.props;for(const p of key.split('/'))n=n.children?.find(x=>x.match===p);if(!n)throw Error('Missing property '+key);return n;}
+export function at(p,t){const k=p.keys;if(!k?.length)return p.value.v;const i=k.findIndex(x=>x.time>=t*TPS-1);if(i<0)return k.at(-1).value.v;if(i===0||Math.abs(k[i].time-t*TPS)<2)return k[i].value.v;const a=k[i-1],b=k[i],u=(t*TPS-a.time)/(b.time-a.time);if(a.out_interp!=='Linear'||b.in_interp!=='Linear')throw Error('Unhandled interpolation');return Array.isArray(a.value.v)?a.value.v.map((x,j)=>x+(b.value.v[j]-x)*u):a.value.v+(b.value.v-a.value.v)*u;}

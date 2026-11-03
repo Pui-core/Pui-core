@@ -17,5 +17,7 @@ export const synchronization=[
  {frame:56,time:56/30,sourceSeconds:46.0755+56/30,measuredTransient:47.951,action:'quick pullback reaches wide framing'},
  {frame:85,time:85/30,sourceSeconds:46.0755+85/30,measuredTransient:48.9088,action:'new shot and opposite popup entry'},
  {frame:99,time:99/30,sourceSeconds:46.0755+99/30,measuredTransient:49.3578,action:'second popup lands; camera stops for reading'},
- {frame:141,time:141/30,sourceSeconds:46.0755+141/30,measuredTransient:50.7646,action:'pullback/exit acceleration'}
+ {frame:141,time:141/30,sourceSeconds:46.0755+141/30,measuredTransient:50.7646,action:'wide framing reached; camera hold (solo f140, collab f141)'},
+ {frame:159,time:159/30,sourceSeconds:46.0755+159/30,measuredTransient:null,action:'popup exit design starts at unchanged origin'},
+ {frame:160,time:160/30,sourceSeconds:46.0755+160/30,measuredTransient:null,action:'first changed popup exit position'}
 ];
