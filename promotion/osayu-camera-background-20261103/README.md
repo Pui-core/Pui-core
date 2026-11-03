@@ -26,6 +26,7 @@ foreach ($variant in @('solo','collab')) {
   node build.mjs $variant production
   node audit.mjs $variant production
   node compare.mjs $variant
+  node character-proof.mjs $variant
   node render.mjs $variant production 19
   node pixel-safety.mjs $variant production 19
   node film.mjs $variant
@@ -39,6 +40,7 @@ foreach ($variant in @('solo','collab')) {
 - `build` は保存→native再読込、参照mediaのallowlistとSHAを確認。neutralは人物をimportしない。AIへ渡せるのは来歴を照合したPhotoCraft背景とneutral出力のみ。
 - `audit` は保存原本のcameraキーを各frameで読み戻し、文字・人物のcrop、人物の親・ローカルtransform・effect等を照合する。親子付けはcameraが恒等の時点で行い、その後にキーを追加する。初回試作で先にキーを入れると`compensate:true`が非恒等の初期cameraを子へ焼き込みcropを起こしたため修正した。
 - `compare` は人物の予約形状と本番人物レイヤーだけを除き、neutralと本番の全共有layer構造を比較する。
+- `character-proof` は人物を表示せず、等倍の完全不透明RGBと、3時点の本番合成/人物のみの参照描画を数値比較する。後者は元画像のalphaから補間範囲全体が不透明な画素だけを選ぶ。出力alphaの8bit丸めを使うと半透明の縁を誤って含むため、差分許容値を広げず元alphaで判定する。検査用PNGをAIへ入力しない。
 - `render` は出力の全decodeと570frame/無音/寸法を確認。`pixel-safety` は背景平面の外側のmagenta sentinelを非AIのRGB数値処理で検出し、人物入りframeを出力・表示しない。
 - `film` は検証済みmasterのみを参照し、19秒を無変形・無音で配置、原本再読込、最終出力の全decodeとhash鎖を確認する。
 - 構造/数値検査は演出の採用を保証しない。安全neutralの見た目、動きの連続性、人物入り本番のowner私的再生、異モデルnative独立QA、owner創作採用、実NAS照合は別に記録する。未実施を合格へ変更しない。
