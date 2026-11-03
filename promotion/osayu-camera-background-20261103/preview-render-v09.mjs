@@ -1,0 +1,32 @@
+import fs from 'node:fs';import path from 'node:path';
+import {root,native,filmNative,run,ff,ffprobePath,save,hash} from './runtime.mjs';
+import {preview} from './preview-plan-v09.mjs';
+const TPS=254016000000;
+for(const variant of process.argv.slice(2).length?process.argv.slice(2):['solo','collab']){
+ const stem=variant+'-candidate-neutral',project=path.join(root,'projects',stem+'.ecproj'),master=path.join(root,'videos',stem+'-motion.mp4'),filmProject=path.join(root,'projects',stem+'-music.fcproj'),out=path.join(root,'videos',stem+'-skyhigh.mp4');
+ if(fs.existsSync(master)||fs.existsSync(filmProject)||fs.existsSync(out))throw Error('Preserve prior preview');
+ const audit=JSON.parse(fs.readFileSync(path.join(root,'qa',variant+'-candidate-native-audit.json'))),binding=JSON.parse(fs.readFileSync(path.join(root,'qa',variant+'-candidate-binding.json')));
+ if(audit.projectSHA256!==hash(project)||binding.projectSHA256!==hash(project)||binding.footage.some(x=>hash(x.path)!==x.sha256)||audit.readableTextOrReservationCropViolations||audit.maxCameraHoldFrames>=90||audit.cuts.some(x=>x.frames>150)||binding.characterImports!==0)throw Error('Unsafe/unverified preview');
+ await native(['--project',project,'render','--comp',preview.compName,'--out',master,'--format','h264','--start','0','--end',String(preview.duration),'--fps','30','--audio','off','--bitrate','10000','--progress'],stem+'-motion-render');
+ if(hash(project)!==audit.projectSHA256)throw Error('Native changed');
+ const audio=path.join(root,'audio/candidate-elektronomia-sky-high-regular.mp3');if(hash(audio)!==preview.sourceSHA256)throw Error('Audio changed');
+ const create=[{id:'file.newProject',params:{name:'Osayu v09 '+variant+' music candidate neutral'}},{id:'file.newSequence',params:{name:preview.compName,width:1080,height:1920,fps:30,sampleRate:48000,video:1,audio:1}},{id:'file.import',params:{paths:[master,audio]}}];
+ const r=await filmNative(['--save-as',filmProject,'run','-'],stem+'-film-create',create.map(x=>JSON.stringify(x)).join('\n')+'\n');
+ let items;for(const line of r.stdout.split(/\r?\n/).filter(x=>x.startsWith('{'))){const q=JSON.parse(line),v=q.result||q;if(v.items)items=v.items;}if(items?.length!==2)throw Error('Film import');
+ const place=[{id:'timeline.place',params:{item:items[0],track:'V1',seconds:0,duration:Math.round(preview.duration*TPS),video:true,audio:false}},{id:'timeline.place',params:{item:items[1],track:'A1',seconds:0,sourceIn:Math.round(preview.sourceIn*TPS),duration:Math.round(preview.duration*TPS),video:false,audio:true}}];
+ await filmNative(['--project',filmProject,'--save','run','-'],stem+'-film-place',place.map(x=>JSON.stringify(x)).join('\n')+'\n');
+ let p=JSON.parse(fs.readFileSync(filmProject)),seq=Object.values(p.project.items).find(x=>x.kind?.Sequence)?.kind.Sequence,a=seq.audio_tracks.flatMap(x=>x.items);
+ if(a.length!==1||a[0].source_in!==Math.round(preview.sourceIn*TPS)||a[0].duration!==Math.round(preview.duration*TPS))throw Error('Film audio timing');
+ const edits=[{id:'clip.audioGain',params:{clips:[a[0].id],mode:'set',db:-6}},{id:'sequence.applyAudioTransition',params:{clip:a[0].id,effect:'constant_power',frames:3,edge:'out'}}];
+ await filmNative(['--project',filmProject,'--save','run','-'],stem+'-film-audio-envelope',edits.map(x=>JSON.stringify(x)).join('\n')+'\n');
+ await filmNative(['--project',filmProject,'--save','inspect'],stem+'-film-reopen');
+ await filmNative(['--project',filmProject,'exec','file.exportMedia',JSON.stringify({path:out,format:'h264',audio:true,audioCodec:'aac',bitrateMode:'crf',crf:18,hardwareEncoding:'off',wait:true})],stem+'-film-export');
+ const probe=JSON.parse((await run(ffprobePath,['-v','error','-count_frames','-show_streams','-show_format','-of','json',out],stem+'-final-probe')).stdout),v=probe.streams.find(s=>s.codec_type==='video'),au=probe.streams.filter(s=>s.codec_type==='audio');
+ if(v?.width!==1080||v?.height!==1920||v.avg_frame_rate!=='30/1'||Number(v.nb_read_frames)!==preview.frames||au.length!==1)throw Error('Preview streams');
+ await ff(['-i',out,'-map','0:v:0','-map','0:a:0','-f','null','-'],stem+'-full-decode');
+ await ff(['-i',out,'-vn','-ac','1','-ar','11025','-c:a','pcm_f32le','-f','f32le',path.join(root,'qa',stem+'-audio-11025.f32')],stem+'-audio-numeric-decode');
+ const safeFrames=path.join(root,'qa','safe-neutral',variant);fs.mkdirSync(safeFrames,{recursive:true});
+ await ff(['-i',out,'-vf','fps=5,scale=270:480','-an',path.join(safeFrames,'sample-%03d.png')],stem+'-safe-neutral-samples');
+ save(path.join(root,'qa',stem+'-receipt.json'),{project,projectSHA256:hash(project),filmProject,filmProjectSHA256:hash(filmProject),out,sha256:hash(out),bytes:fs.statSync(out).size,videoFrames:preview.frames,audioStreams:au.length,sourceSHA256:preview.sourceSHA256,sourceIn:preview.sourceIn,sourceOut:preview.sourceIn+preview.duration,sourceGainDB:-6,tailFadeFrames:3,decode:true,characterImports:0,neutral:true,TikTokSoundIdentityVerified:false,actualAudition:false,ownerCreativeAcceptance:false});
+ console.log(JSON.stringify({variant,out,decode:true,audioStreams:au.length}));
+}

@@ -1,3 +1,29 @@
+# v09 背景・音源同期の候補プレビュー
+
+From.[ショート動画ディレクター] — Issue160の継続。
+
+v08の背景・ポップアップに創作差戻しがあり、曲と使用区間を先に確認して通常／コラボ各無音・音ありを作る依頼へ更新された。この作業版は、PhotoCraftの素材レイヤー背景と実音源に同期した短いneutral見本を追加する。TikTok音源ID／同一versionは未確認で、全編4本の完成・創作承認・公開を意味しない。
+
+実配信の原画像待ちは過去owner訂正で撤回済み。既知の人物なしV2背景を参照素材として使用し、PhotoCraftで単独ステージと二者のガラスwing構成を別に保存する。実配信原本と称さない。人物mediaは読み込まず、EffectCraftの予約矩形のみを用いる。
+
+`OSAYU160_ROOT` は新しいprivate作業dirを指定する。`media/approved-v2-stage-background.png` と出所を照合した音源候補をprivateに置く。音源・画像・native・絶対private pathはこのrepoへ追加しない。
+
+```text
+node background.mjs
+node preview-build-v09.mjs solo
+node preview-build-v09.mjs collab
+node preview-audit-v09.mjs
+node preview-render-v09.mjs
+```
+
+見本は169frame／30fps、85・84frameの2cut。原盤の測定済みアクセントへ、popupの減速・着地、斜めcameraの急接近・引き、次shotを対応させる。人物なしPhotoCraft背景だけをimportした保存nativeを照合してから描画する。FilmCraftで同一の実音源候補を指定区間・-6dB・末尾3frame fadeで組み、音声ありMP4をexportする。数値検査は創作採用や実聴の代用ではない。
+
+残工程: TikTok音源の同一版確認、必要な修正と全編構成、人物本番の非AI export、各企画の無音／音ありの映像一致、最終音源指定txt、同Reviewerの独立QA、通常merge、新NAS納品。既存v08/PR100と旧NASは保持する。
+
+以下はv08以前の工程記録。v09の全編用pipelineとして実行しない。
+
+---
+
 # おさゆ11/3告知：曲線背景と斜め・寄り引きの改訂
 
 管理 [Issue 160](https://github.com/Pui-core/-/issues/160)。旧通常版・コラボ版はownerが等速、高低差不足、直線主体の背景を理由に不採用。旧PR94と既存私物/NASは保持し、新しいPhotoCraft背景・EffectCraft原本・FilmCraft最終版を別prefixへ作る。
