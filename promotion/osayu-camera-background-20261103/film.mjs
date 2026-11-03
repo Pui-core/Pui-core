@@ -1,7 +1,8 @@
 import fs from 'node:fs';import path from 'node:path';
 import {root,filmNative,run,ff,ffprobePath,save,hash} from './runtime.mjs';
+import {revision} from './plan.mjs';
 const [variant]=process.argv.slice(2);if(!['solo','collab'].includes(variant))throw Error('variant');
-const master=path.join(root,'videos',variant+'-production-full.mp4'),project=path.join(root,'projects',variant+'-final.fcproj'),out=path.join(root,'videos',variant+'-final-v07.mp4');
+const master=path.join(root,'videos',variant+'-production-full.mp4'),project=path.join(root,'projects',variant+'-final.fcproj'),out=path.join(root,'videos',variant+'-final-'+revision+'.mp4');
 if(fs.existsSync(project)||fs.existsSync(out))throw Error('Keep existing final');
 const receipt=JSON.parse(fs.readFileSync(path.join(root,'qa',variant+'-production-19s-receipt.json'))),audit=JSON.parse(fs.readFileSync(path.join(root,'qa',variant+'-production-audit.json')));
 if(receipt.sha256!==hash(master)||receipt.frames!==570||!receipt.decode||audit.projectSHA256!==receipt.projectHash)throw Error('Unverified Film input');
