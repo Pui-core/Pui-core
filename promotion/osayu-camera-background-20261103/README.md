@@ -19,12 +19,14 @@ node background.mjs
 foreach ($variant in @('solo','collab')) {
   node build.mjs $variant neutral
   node audit.mjs $variant neutral
+  node cut-audit.mjs $variant neutral
   node render.mjs $variant neutral 6
   # 最初の区切りを提出し、実描画を確認してから通し制作する。
   node render.mjs $variant neutral 19
   node pixel-safety.mjs $variant neutral 19
   node build.mjs $variant production
   node audit.mjs $variant production
+  node cut-audit.mjs $variant production
   node compare.mjs $variant
   node character-proof.mjs $variant
   node render.mjs $variant production 19
@@ -47,3 +49,11 @@ foreach ($variant in @('solo','collab')) {
 - 構造/数値検査は演出の採用を保証しない。安全neutralの見た目、動きの連続性、人物入り本番のowner私的再生、異モデルnative独立QA、owner創作採用、実NAS照合は別に記録する。未実施を合格へ変更しない。
 
 完成動画だけを新しい私的NAS版へ置き、NAS側bytes/SHA/full decodeを確認する。Source mergeだけでは全体完了にしない。NAS設定/認証/ACLは担当範囲外。
+
+## v08：新しいカット長条件
+
+静止の連続提示は3秒未満、実際に見える動きのあるカットは5秒以下。v07の告知面切替をカットと数えた独立QAは保持する。v08では共通背景の連続カメラを19秒の一ショットと読める余地をなくし、既存の告知切替4点で画角も切り替える。次場面へ移る補間区間だけを出側の最終poseで保持し、境界で入側poseへ切り替える。各場面内の斜めの接近、引き、高さ、緩急、本文、尺は保持する。
+
+通常版の5カットは3.2/4.0/3.9/3.7/4.2秒、コラボ版は3.0/3.5/4.3/4.0/4.2秒。新規背景生成は行わず、v07の背景PNG/.pcraft/provenanceをSHA照合して新caseへコピーする。背景ファイル名のv07は素材の出自を表す。
+
+`cut-audit.mjs <variant> <neutral|production>` は保存原本のカメラを全570frame読み、4境界の実pose不連続、cut長、連続停止、文字面の時間を確認する。画角の数値変化だけで見えるcutとは断定せず、安全neutralの境界前後と最終映像の非AI数値probeも照合する。新しい最終SHAで同Reviewerの必要deltaを受け、新NAS v08へ納品する。旧v07/旧QA/NAS原票は上書きしない。新条件による未計測旧稿のBAD加算は行わない。
