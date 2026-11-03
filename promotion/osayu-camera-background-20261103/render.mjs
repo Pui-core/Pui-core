@@ -8,6 +8,8 @@ if(fs.existsSync(out))throw Error('Retain existing render');
 const projectHash=hash(project);
 const audit=JSON.parse(fs.readFileSync(path.join(root,'qa',stem+'-audit.json'))),binding=JSON.parse(fs.readFileSync(path.join(root,'qa',stem+'-binding.json')));
 if(audit.projectSHA256!==projectHash||binding.projectSHA256!==projectHash||binding.footage.some(x=>hash(x.path)!==x.sha256))throw Error('Render inputs changed since audit');
+const cuts=JSON.parse(fs.readFileSync(path.join(root,'qa',stem+'-cut-audit.json')));
+if(cuts.projectSHA256!==projectHash||cuts.frames!==570||!Number.isInteger(cuts.maxStillFrames)||cuts.maxStillFrames>=90||cuts.cuts?.length!==5||cuts.cuts.some(x=>!Number.isInteger(x.frames)||x.frames<=0||x.frames>150))throw Error('Cut limits not verified for render input');
 if(mode==='production'){
  const compare=JSON.parse(fs.readFileSync(path.join(root,'qa',variant+'-neutral-production-compare.json')));
  if(!compare.sharedStructureMatches||compare.productionSHA256!==projectHash||compare.neutralSHA256!==hash(path.join(root,'projects',variant+'-neutral.ecproj')))throw Error('Production not matched to safe neutral');

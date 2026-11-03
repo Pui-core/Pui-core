@@ -1,5 +1,6 @@
 export const width=1080,height=1920,fps=30,duration=19;
-export const compName='Osayu curved studio v07';
+export const revision='v08';
+export const compName='Osayu curved studio '+revision;
 export const characterBoxes=v=>v==='solo'?[{id:'osayu',x:410,y:990,w:260,h:520,sw:905,sh:1810}]:[{id:'osayu',x:285,y:1020,w:220,h:440,sw:905,sh:1810},{id:'collaborator',x:575,y:1020,w:220,h:440,sw:2000,sh:4000}];
 const content={
  date:['11/3','チュートリアルバトル','おさゆ、挑戦。'],
@@ -50,6 +51,9 @@ export function cameraAt(t,v){
  const keys=cameraKeys[v];if(!keys)throw Error('variant');
  const i=Math.max(0,keys.findIndex((k,n)=>n===keys.length-1||t<keys[n+1][0]));
  const a=keys[i],b=keys[Math.min(i+1,keys.length-1)],u=b[0]===a[0]?0:Math.max(0,Math.min(1,(t-a[0])/(b[0]-a[0]))),e=u*u*(3-2*u);
- const q=a.slice(1).map((x,j)=>x+(b[j+1]-x)*e),[x,y,s,yaw,pitch]=q;
+ // Keep the outgoing pose until the next information scene, then cut to its
+ // distinct incoming framing. Never reset cut length by splitting equal frames.
+ const boundary=scenesFor(v).slice(1).some(scene=>scene.from===b[0]);
+ const q=a.slice(1).map((x,j)=>x+(b[j+1]-x)*(boundary?0:e)),[x,y,s,yaw,pitch]=q;
  return {target:[x,y],zoom:s,position:[540+(540-x)*s,960+(960-y)*s,0],scale:[s*100,s*100,100],yaw,pitch};
 }
