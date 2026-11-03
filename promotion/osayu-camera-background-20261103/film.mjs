@@ -16,7 +16,8 @@ const p=JSON.parse(fs.readFileSync(project)),seq=Object.values(p.project.items).
 const param=(e,n)=>Object.values(e?.params?.[n]?.value||{})[0],motion=clip?.effects.find(e=>e.effect==='motion'),opacity=clip?.effects.find(e=>e.effect==='opacity');
 if(clips.length!==1||seq.audio_tracks.length||clip.start!==0||clip.source_in!==0||clip.duration!==19*254016000000||clip.speed!==1||clip.reverse||clip.frame_hold||clip.scale_to_frame||param(motion,'scale')!==100||param(motion,'scale_width')!==100||param(motion,'rotation')!==0||param(opacity,'opacity')!==100)throw Error('Film transform');
 const eq=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
-if(seq.master_effects?.length||clip.effects.some(x=>!['motion','opacity'].includes(x.effect))||!eq(param(motion,'position'),{x:540,y:960})||!eq(param(motion,'anchor'),{x:540,y:960}))throw Error('Film composition/position changed');
+const timeRemap=clip.effects.find(e=>e.effect==='time_remap');
+if(seq.master_effects?.length||seq.video_tracks.some(t=>t.effects?.length||t.transitions?.length||!t.enabled)||!clip.enabled||clip.effects.length!==3||clip.effects.some(x=>!['motion','opacity','time_remap'].includes(x.effect))||param(timeRemap,'speed')!==100||!eq(param(motion,'position'),{x:540,y:960})||!eq(param(motion,'anchor'),{x:540,y:960}))throw Error('Film composition/position changed');
 const media=p.project.items[String(clip.item)]?.kind?.Media;if(media.offline||media.media?.File?.path!==master)throw Error('Film reference');
 await filmNative(['--project',project,'exec','file.exportMedia',JSON.stringify({path:out,format:'h264',audio:false,bitrateMode:'crf',crf:18,hardwareEncoding:'off',wait:true})],variant+'-film-export');
 const probe=JSON.parse((await run(ffprobePath,['-v','error','-count_frames','-show_streams','-show_format','-of','json',out],variant+'-final-probe')).stdout),v=probe.streams[0];
