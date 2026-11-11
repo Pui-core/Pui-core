@@ -1,0 +1,35 @@
+{
+  "recordingEvidence": "real-v9-evidence.json",
+  "qaRecording": "Existing 1.03 simulator QA fictional-answer fixture; not downloaded Store IPA",
+  "versionSourcePin": "5b11516bba2be105f44c444eb6352eb757a8abd3",
+  "referenceCodeHead": "8497942345c4a8f84e26b0388e760a1628714e6d",
+  "referenceCode": "Pui-core/com.pui-core.truthorlie Sources/TruthOrLie/Models/GameEngine.swift",
+  "codeRule": "With no correct voter, add scoringSettings.correctGuessPoints to answerPlayer; current fixture uses 1",
+  "referenceTest": "Tests/TruthOrLieTests/GameEngineTests.swift::testWrongGuessAwardsAnswerPlayer",
+  "fixture": {
+    "round": 2,
+    "answerPlayer": "操作例BB",
+    "voter": "操作例AA",
+    "lieOneBased": 5,
+    "voteOneBased": 2,
+    "correctVoters": 0,
+    "totalVoters": 1,
+    "roundAward": {
+      "BB": 1,
+      "AA": 0
+    },
+    "totalScore": {
+      "BB": 2,
+      "AA": 0
+    }
+  },
+  "currentStore": {
+    "url": "https://apps.apple.com/jp/app/id6783599249",
+    "version": "1.03",
+    "country": "jp",
+    "releaseDate": "2026-10-26T20:41:05Z",
+    "verification": "Root Apple official Lookup 2026-10-28; raw copied separately"
+  },
+  "publicIpaShaMatched": false,
+  "guardrail": "Caption and scope label distinguish fictional QA example. No generalization from one individual wrong vote to all multiplayer scoring settings."
+}

@@ -1,0 +1,19 @@
+import fs from'node:fs';
+import{file,np,EC,FC,FF,run,parse,save,hash,digest}from'./native.mjs';
+const tick=254016000000,duration=19.2,ec=file('projects/truthorlie-real-v9.ecproj'),picture=file('media/truthorlie-real-v9-picture.mov');
+const reusedPicture=process.argv.includes('--reuse-picture');
+if(reusedPicture){const previous=parse(fs.readFileSync(file('qa/real-v9-final-bindings.json'),'utf8'));if(previous.effectcraftSha256!==hash(ec)||previous.pictureSha256!==await digest(picture))throw Error('Picture reuse requires the same verified project and rendered ProRes');}
+else{await run(EC,['--project',np(ec),'info','--json'],'real-v9-effectcraft-reopen.json');await run(EC,['--project',np(ec),'render','--comp','TruthOrLie real vote v9 19.2s','--out',np(picture),'--format','prores','--prores','4444','--audio','off','--progress','--json'],'real-v9-effectcraft-render.json');}
+const bindings=[];
+for(const id of['voice','bgm']){
+const project=file('projects/truthorlie-real-v9-'+id+'.fcproj'),output=file('videos/truthorlie-real-v9-'+id+'.mp4'),audios=['narration-real-v9.wav','sfx-real-v9.wav',...(id==='bgm'?['musicbed-real-v9.wav']:[])];
+const first=await run(FC,['--save-as',np(project),'run','-'],'real-v9-filmcraft-'+id+'-build.json',[
+{id:'file.newProject',params:{name:'TruthOrLie / one real vote'}},{id:'file.newSequence',params:{name:'TruthOrLie real v9 '+id,width:1080,height:1920,fps:30,sampleRate:48000,video:1,audio:audios.length}},{id:'file.import',params:{paths:[np(picture),...audios.map(n=>np(file('media/'+n)))]}}
+].map(x=>JSON.stringify(x)).join('\n')+'\n');let items;for(const line of first.stdout.trim().split(/\r?\n/)){const j=parse(line);if(j.ok===false)throw Error(line);if(j.result?.items)items=j.result.items;}if(items?.length!==1+audios.length)throw Error('Import mismatch');
+const cmds=[{id:'timeline.place',params:{item:items[0],track:'V1',seconds:0,duration:duration*tick,video:true,audio:false}},...audios.map((n,i)=>({id:'timeline.place',params:{item:items[i+1],track:'A'+(i+1),seconds:0,duration:duration*tick,video:false,audio:true}}))];
+await run(FC,['--project',np(project),'--save','run','-'],'real-v9-filmcraft-'+id+'-place.json',cmds.map(x=>JSON.stringify(x)).join('\n')+'\n');await run(FC,['--project',np(project),'inspect'],'real-v9-filmcraft-'+id+'-reopen.json');
+const exported=parse((await run(FC,['--project',np(project),'exec','file.exportMedia',JSON.stringify({path:np(output),format:'h264',audio:true,audioCodec:'aac',bitrateMode:'crf',crf:17,hardwareEncoding:'off',gpuRendering:'off',wait:true})],'real-v9-filmcraft-'+id+'-export.json')).stdout);if(exported.offlineMedia?.length)throw Error('Offline media');
+// Credit also travels inside the BGM MP4. Public posting still uses full caption credit.
+if(id==='bgm'){const native=file('media/truthorlie-real-v9-bgm-native.mp4');fs.renameSync(output,native);const credit='Music: Cipher — Kevin MacLeod (incompetech.com)\nSource: https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100844\nLicense: CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/\nEdits: excerpt, level, voice ducking and fade.\nVoice: VOICEVOX:玄野武宏';await run(FF,['-hide_banner','-v','error','-y','-i',np(native),'-map','0','-c','copy','-metadata','comment='+credit,np(output)],'real-v9-bgm-credit-metadata.json');}
+bindings.push({variant:id,video:'videos/truthorlie-real-v9-'+id+'.mp4',sha256:await digest(output),filmcraftSha256:hash(project),audioTracks:audios.map(n=>({file:n,sha256:hash(file('media/'+n))})),offlineMedia:exported.offlineMedia||[]});}
+save('qa/real-v9-final-bindings.json',{duration,frames:576,fps:30,size:[1080,1920],speaker:'VOICEVOX:玄野武宏',nativeEffectCraftRendered:true,reusedPicture,nativeFilmCraftExported:true,effectcraftSha256:hash(ec),pictureSha256:await digest(picture),bindings,wholeSubjectiveListen:false,wholeRealtimeWatch:false,published:false});console.log('Real-game v9 voice/SFX and Cipher BGM MP4s exported.');

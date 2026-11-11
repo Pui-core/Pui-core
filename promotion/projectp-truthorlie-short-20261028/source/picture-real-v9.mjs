@@ -1,0 +1,59 @@
+import fs from 'node:fs';
+import {file,np,EC,run,parse,save,hash} from './native.mjs';
+const duration=19.2;
+const shots=[
+{id:'Cold open / the actual second vote',name:'r2-vote-v9.mp4',a:0,b:1.6,w:1100,h:1510,s:76,x:500,y:1030,from:0},
+{id:'Five actual answers',name:'r2-five-v9.mp4',a:1.6,b:3.2,w:1100,h:1500,s:76,x:500,y:1030,punch:1.035},
+{id:'Answer two / actual screenshot crop',name:'r2-card2-v9.mp4',a:3.2,b:4,w:1030,h:370,s:84,x:500,y:1000,punch:1.08},
+{id:'Answer five / actual screenshot crop',name:'r2-card5-v9.mp4',a:4,b:4.8,w:1030,h:300,s:84,x:500,y:1000,punch:1.08},
+{id:'Five answers in context',name:'r2-five-v9.mp4',a:4.8,b:5.6,w:1100,h:1500,s:76,x:500,y:1030,from:.6},
+{id:'Recorded second answer selection',name:'r2-vote-v9.mp4',a:5.6,b:7.2,w:1100,h:1510,s:76,x:500,y:1030,from:0},
+{id:'Actual confirm button and result transition',name:'r2-confirm-v9.mp4',a:7.2,b:9.2,w:1100,h:2230,s:56,x:500,y:1040},
+{id:'Recorded result / lie five vote two',name:'r2-result-v9.mp4',a:9.2,b:10.4,w:1100,h:1350,s:76,x:500,y:1010,punch:1.03},
+{id:'Actual author score / plus one',name:'r2-scoreplus-v9.mp4',a:10.4,b:12,w:900,h:220,s:94,x:500,y:960,punch:1.09},
+{id:'Actual no-correct-player result',name:'r2-resultline-v9.mp4',a:12,b:13.6,w:1030,h:500,s:84,x:500,y:980},
+{id:'Score and answer review / same recorded round',name:'r2-score-v9.mp4',a:13.6,b:16,w:1100,h:2200,s:57,x:500,y:1065}
+];
+const inputs=[np(file('media/round2-neutral-hi.png')),np(file('media/round2-score-hi.png')),np(file('media/logo.png')),np(file('media/natural-still.png')),...shots.map(s=>np(file('media/'+s.name)))];
+save('source/real-v9-shots.json',{duration,shots,cropsOnly:true,noInventedAppAnimation:true});
+const jsx=`app.newProject();app.beginUndoGroup('Truth or Lie v9 / one real recorded vote');var E=${JSON.stringify(inputs)},S=${JSON.stringify(shots)},D=${duration},boxes=[];
+function r(id,p){return app.run(id,p||{});}function set(l,p,v){r('prop.set',{layer:l,path:p,value:v});}function key(l,p,t,v){r('prop.addKey',{layer:l,path:p,time:Math.round(t*30)/30,timeBase:'comp',value:v});}function span(l,a,b){r('layer.timing',{layers:[l],in:Math.round(a*30)/30,out:Math.round(b*30)/30});}
+function rect(n,w,h,x,y,c,a,b,o){var l=r('layer.newShape',{name:n,kind:'rect',size:[w,h],position:[x,y],fill:c,strokeWidth:0}).layer;span(l,a,b);if(o!==undefined)set(l,'transform/opacity',o);return l;}
+function text(n,s,x,y,z,c,a,b,max,arrive){var l=r('layer.newText',{name:n,text:s,font:'Meiryo',style:'Bold',size:z,fill:c,position:[x,y],justify:'center'}).layer,zr=app.project.activeItem.layer(n).sourceRectAtTime(a,false);if(zr.width>(max||850)){z=Math.floor(z*(max||850)/zr.width);r('layer.setText',{layer:l,size:z});zr=app.project.activeItem.layer(n).sourceRectAtTime(a,false);}set(l,'transform/anchor',[zr.left+zr.width/2,zr.top+zr.height/2,0]);set(l,'transform/position',[x,y,0]);span(l,a,b);r('layer.setSwitch',{layers:[l],switch:'motionBlur',value:false});if(arrive){key(l,'transform/position',a,[x+38,y+8,0]);key(l,'transform/position',a+.1667,[x-3,y,0]);key(l,'transform/position',a+.2333,[x,y,0]);key(l,'transform/opacity',a,0);key(l,'transform/opacity',a+.0667,100);}boxes.push({name:n,text:s,a:a,b:b,x:x,y:y,width:zr.width,height:zr.height});return l;}
+function add(item,n,a,b,w,h,x,y,s){var l=r('layer.addItem',{item:item,time:a,duration:b-a}).layer;r('layer.rename',{layer:l,name:n});set(l,'transform/anchor',[w/2,h/2,0]);set(l,'transform/position',[x,y,0]);set(l,'transform/scale',[s,s,100]);span(l,a,b);r('layer.setSwitch',{layers:[l],switch:'audio',value:false});return l;}
+function label(n,k,s,a,b){text(n+' eyebrow',k,500,220,29,'#C2A783',a,b,850,false);text(n+' headline',s,500,325,74,'#F7E9D1',a,b,850,true);rect(n+' accent',96,4,500,404,'#B88653',a,b);}
+var im=r('file.import',{paths:E,sequence:false});if(im.errors.length)throw Error(JSON.stringify(im.errors));var I=im.items;
+var comp=r('comp.new',{name:'TruthOrLie real vote v9 19.2s',width:1080,height:1920,frameRate:30,duration:D,background:'#130E10',shutterAngle:110,shutterPhase:-55,motionBlurSamples:4}).comp;r('file.projectSettings',{workingSpace:'rec709',outputSpace:'rec709',bitDepth:8});
+rect('Deep burgundy backdrop',1080,1920,540,960,'#130E10',0,D);rect('Amber left rail',3,1220,73,1000,'#90643F',0,16,34);rect('Amber right rail',3,1220,928,1000,'#90643F',0,16,34);
+// Detail shots retain the surrounding real screen as context, with deliberate dimming.
+var context=add(I[0],'Actual five-answer context behind editorial detail',3.2,4.8,1178,2556,500,1020,51);set(context,'transform/opacity',19);
+var scoreContext=add(I[1],'Actual score context behind plus-one detail',10.4,13.6,1178,2556,500,1030,51);set(scoreContext,'transform/opacity',17);
+for(var j=0;j<S.length;j++){var s=S[j],l=add(I[j+4],s.id,s.a,s.b,s.w,s.h,s.x,s.y,s.s);if(s.from!==undefined){r('layer.enableTimeRemap',{layers:[l],value:true});key(l,'timeRemap',s.a,s.from);key(l,'timeRemap',s.b,s.from+s.b-s.a);}if(s.punch){key(l,'transform/scale',s.a,[s.s*s.punch,s.s*s.punch,100]);key(l,'transform/scale',s.a+.1667,[s.s*.995,s.s*.995,100]);key(l,'transform/scale',s.a+.2333,[s.s,s.s,100]);r('layer.setSwitch',{layers:[l],switch:'motionBlur',value:true});}}
+// Opaque title field avoids a source scroll or adjacent card behind a headline.
+rect('Title reading field',1080,450,540,225,'#130E10',0,16,97);
+label('Hook','嘘か誠か / この回の配点は1点','はずした一票。得点は？',0,3.2);
+label('Five','通常回の2人例','5回答に、嘘は1つ。',3.2,5.6);
+label('Vote','投票するのは 操作例AA','②に投票。',5.6,8.4);
+label('Reveal','同じラウンドの実結果','でも、嘘は⑤。',8.4,10.4);
+label('Score','この回は全員不正解','出題側に、+1点。',10.4,13.6);
+text('Scoring setting','配点1の通常回・この2人例の結果',500,1465,31,'#D1BB97',10.4,13.6,850,false);
+for(var j=0;j<3;j++){var t=[1.6,7.2,10.4][j],line=rect('Editorial amber swipe '+j,180,7,-120,445,'#CE9B5A',t,t+.1667,46);key(line,'transform/position',t,[-120,445,0]);key(line,'transform/position',t+.1667,[1190,445,0]);key(line,'transform/opacity',t+.1,46);key(line,'transform/opacity',t+.1667,0);r('layer.setSwitch',{layers:[line],switch:'motionBlur',value:true});}
+var flash=rect('One result accent light',1080,1920,540,960,'#DAB979',10.4,10.5,11);key(flash,'transform/opacity',10.4,11);key(flash,'transform/opacity',10.5,0);
+// Brand introduction follows the proof; no new invented quiz is shown.
+rect('Brand header field',1080,620,540,310,'#130E10',13.6,D,100);
+var logo=add(I[2],'Official app logo',13.6,D,1508,730,500,300,54);key(logo,'transform/scale',13.6,[49,49,100]);key(logo,'transform/scale',13.8,[55,55,100]);key(logo,'transform/scale',13.8667,[54,54,100]);
+text('Two ways to play','当てる。だます。',500,565,60,'#E6BD7B',13.6,16,850,true);
+// The last 3.2 seconds carry one clear store action and a small author portrait.
+rect('Closing clean field',1080,1320,540,1120,'#130E10',16,D);
+var screen=add(I[1],'Same actual score / closing reference still',16,D,1178,2556,280,1055,35);key(screen,'transform/position',16,[235,1055,0]);key(screen,'transform/position',16.2,[280,1055,0]);
+text('Availability','iPhoneで配信中',735,845,47,'#F7E9D1',16.2,D,420,true);
+text('Store action','App Storeで',735,955,44,'#E6BD7B',16.4,D,420,true);
+text('Store query','嘘か誠か を検索',735,1030,44,'#E6BD7B',16.6,D,430,true);
+var host=add(I[3],'Natural / static editorial portrait, no lip sync',16.8,D,600,780,735,1305,39);key(host,'transform/position',16.8,[1165,1305,0]);key(host,'transform/position',17,[725,1305,0]);key(host,'transform/position',17.0667,[735,1305,0]);r('layer.setSwitch',{layers:[host],switch:'motionBlur',value:true});
+text('Actual screenshot note','実アプリ1.03検証・架空回答',280,1540,24,'#C6AF8C',16,D,460,false);
+text('Voice credit','声：VOICEVOX:玄野武宏',500,1620,28,'#D1BB97',16,D,850,false);
+rect('Scope background',880,62,500,1720,'#130E10',0,D,98);text('Scope','架空回答の自動操作例・映像の寄りと効果音は編集',500,1720,25,'#C6AF8C',0,D,840,false);
+app.endUndoGroup();writeLn(JSON.stringify({comp:comp,boxes:boxes,duration:D,story:'One actual QA round, lie5/vote2/no correct voter/authorBB +1. UI is real; captions/crops/scale accents are editorial.',natural:'Static portrait only; no source voice-video timing reused.'}));`;
+fs.writeFileSync(file('source/composition-real-v9.jsx'),jsx);
+const b=parse((await run(EC,['--empty','script',np(file('source/composition-real-v9.jsx')),'--save-as',np(file('projects/truthorlie-real-v9.ecproj')),'--json'],'real-v9-effectcraft-build.json')).stdout);if(!b.ok)throw Error(JSON.stringify(b));save('qa/real-v9-layout.json',{...parse(b.output),projectSha256:hash(file('projects/truthorlie-real-v9.ecproj')),nominalBpm:150});
+for(const t of [.5,2,3.5,4.3,5.2,6.5,7.8,8.7,9.8,10.8,12.5,14.7,16.4,17.6,18.9])await run(EC,['--project',np(file('projects/truthorlie-real-v9.ecproj')),'render-frame','--comp','TruthOrLie real vote v9 19.2s','--time',String(t),'--out',np(file('qa/real-v9-preview-'+t+'.png')),'--json'],'real-v9-preview-'+t+'.json');console.log('Real-game v9 native EffectCraft project and previews generated.');

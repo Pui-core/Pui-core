@@ -1,0 +1,48 @@
+{
+  "status": "PASS_FULL_PCM_FINAL_AAC_HEAD_TAIL",
+  "videoSha256": "1f8383f2ed653851ed7e8858a2b52b28e84c1e1f90a44d1666620cd16a8698bb",
+  "cues": [
+    {
+      "id": "hook",
+      "at": 0.2,
+      "pcmMaxError": 4.470348358154297e-8,
+      "lagSamples": 0,
+      "wholeCorrelation": 0.9998953551358293,
+      "headCorrelation": 0.999939214782286,
+      "tailCorrelation": 0.999940827778216,
+      "sourceWaveSha256": "fb162ec792d92fbb625bfc1407fc21f1577121c4880d25b068872eaaccbf166c"
+    },
+    {
+      "id": "vote",
+      "at": 5.4,
+      "pcmMaxError": 5.960464477539063e-8,
+      "lagSamples": 0,
+      "wholeCorrelation": 0.9999546792702746,
+      "headCorrelation": 0.9999834467560199,
+      "tailCorrelation": 0.9999837519589152,
+      "sourceWaveSha256": "d10fb75c0469d8f56e574eaf15ace1fc4b1408fe1c71f6b0437ceceaff233211"
+    },
+    {
+      "id": "reveal",
+      "at": 8.1,
+      "pcmMaxError": 5.960464477539063e-8,
+      "lagSamples": 0,
+      "wholeCorrelation": 0.9999425131881142,
+      "headCorrelation": 0.9999981669865103,
+      "tailCorrelation": 0.9999886618048583,
+      "sourceWaveSha256": "7fb7bc94051868b8b198896c550e7216b547692bed6bfdd10eca1840807faeba"
+    },
+    {
+      "id": "cta",
+      "at": 11.15,
+      "pcmMaxError": 5.960464477539063e-8,
+      "lagSamples": 0,
+      "wholeCorrelation": 0.9999241081616038,
+      "headCorrelation": 0.9999982954278094,
+      "tailCorrelation": 0.9999289712714453,
+      "sourceWaveSha256": "552cb762cb545008398bede9bc5c518a2b2296af154c8031c3885cb444c27b02"
+    }
+  ],
+  "sampleRate": 48000,
+  "wholeSubjectiveListen": false
+}

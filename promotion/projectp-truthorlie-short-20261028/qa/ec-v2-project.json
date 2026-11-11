@@ -1,0 +1,152 @@
+{
+  "comp": 11,
+  "boxes": [
+    {
+      "name": "Scope",
+      "text": "架空の2人対戦・演出例",
+      "from": 0,
+      "to": 14.5,
+      "width": 402.8779296875,
+      "height": 33.9736328125,
+      "x": 500,
+      "y": 245
+    },
+    {
+      "name": "Question1",
+      "text": "この5つ、",
+      "from": 0,
+      "to": 8,
+      "width": 267.119140625,
+      "height": 55.017578125,
+      "x": 500,
+      "y": 322
+    },
+    {
+      "name": "Question2",
+      "text": "嘘はどれ？",
+      "from": 0,
+      "to": 8,
+      "width": 375.234375,
+      "height": 72.1875,
+      "x": 500,
+      "y": 398
+    },
+    {
+      "name": "Voting prompt",
+      "text": "あなたなら、どれに投票？",
+      "from": 1,
+      "to": 8,
+      "width": 514.916015625,
+      "height": 40.26171875,
+      "x": 500,
+      "y": 1480
+    },
+    {
+      "name": "Vote1",
+      "text": "相手は②に投票",
+      "from": 8,
+      "to": 10.7,
+      "width": 473.34375,
+      "height": 62.35546875,
+      "x": 500,
+      "y": 322
+    },
+    {
+      "name": "Vote2",
+      "text": "でも、",
+      "from": 8,
+      "to": 10.7,
+      "width": 150.97900390625,
+      "height": 57.0654296875,
+      "x": 500,
+      "y": 405
+    },
+    {
+      "name": "Truth",
+      "text": "②は真実。",
+      "from": 9.3,
+      "to": 10.7,
+      "width": 378.24609375,
+      "height": 80.33056640625,
+      "x": 500,
+      "y": 1320
+    },
+    {
+      "name": "Lie1",
+      "text": "嘘は④",
+      "from": 10.7,
+      "to": 14.5,
+      "width": 259.892578125,
+      "height": 83.1884765625,
+      "x": 500,
+      "y": 322
+    },
+    {
+      "name": "Lie2",
+      "text": "本当の答えは？",
+      "from": 10.7,
+      "to": 14.5,
+      "width": 417.9248046875,
+      "height": 55.7939453125,
+      "x": 500,
+      "y": 405
+    },
+    {
+      "name": "Reveal",
+      "text": "本当はホラー映画。",
+      "from": 11.65,
+      "to": 14.5,
+      "width": 461.77978515625,
+      "height": 49.01123046875,
+      "x": 500,
+      "y": 1280
+    },
+    {
+      "name": "AppStore1",
+      "text": "iPhoneで配信中",
+      "from": 14.5,
+      "to": 18,
+      "width": 462.7294921875,
+      "height": 55.21875,
+      "x": 670,
+      "y": 995
+    },
+    {
+      "name": "AppStore2",
+      "text": "App Storeで",
+      "from": 14.5,
+      "to": 18,
+      "width": 344.6953125,
+      "height": 53.34765625,
+      "x": 680,
+      "y": 1130
+    },
+    {
+      "name": "AppStore3",
+      "text": "嘘か誠か を検索",
+      "from": 14.5,
+      "to": 18,
+      "width": 406.0546875,
+      "height": 50.55859375,
+      "x": 680,
+      "y": 1210
+    },
+    {
+      "name": "CTA",
+      "text": "次の嘘は、あなたの番。",
+      "from": 14.5,
+      "to": 18,
+      "width": 487.9462890625,
+      "height": 42.70849609375,
+      "x": 500,
+      "y": 1450
+    }
+  ],
+  "fictional": true,
+  "scope": "reconstructed fictional example, no actual play",
+  "model": "static still",
+  "published": false,
+  "projectSha256": "5fd758826e22c70a8896a81ecf63760e714653bef5df0808668a813938228e0f",
+  "rendered": false,
+  "layoutVerified": false
+}

@@ -1,0 +1,125 @@
+{
+  "scope": "One upload draft for Issue134; scripts authored here, executed exclusively by Root",
+  "sourceVideoSha256": "be3f9162f922dc3ab404eff56432b47dfa6f5e6bca72887a1e78aee19b7838da",
+  "videoId": "2KGUzjEmfwg",
+  "currentVisibility": "public_confirmed_native_and_official_anonymous",
+  "scriptSnapshots": [
+    {
+      "file": "youtube134-filepicker-probe.ps1",
+      "sha256": "d88a0e053e768373e6d67aad0f54c65ac15f778f64ea6cde42e83a180ca5480f"
+    },
+    {
+      "file": "youtube134-filepicker-set-open.ps1",
+      "sha256": "a0835f835516f3935c9524a241c162c09c51a1f805d5433d77776494edc32d14"
+    },
+    {
+      "file": "youtube134-metadata.ps1",
+      "sha256": "1f0d2f96d63a0912c342cc79356b34db3d9fc4905320a3a8db8445cb52d68857"
+    }
+  ],
+  "filepicker": {
+    "rootPsParseErrors": 0,
+    "probe": {
+      "ownedDialog": true,
+      "session": 1,
+      "filenameCtrlId": 1148,
+      "openCtrlId": 1
+    },
+    "set": {
+      "atUtc": "2026-10-28T14:15:46.5398696Z",
+      "method": "WM_SETTEXT",
+      "filenameReadbackExact": true,
+      "openIntents": 0
+    },
+    "open": {
+      "atUtc": "2026-10-28T14:16:07.5601278Z",
+      "nativeOpenSentOnce": true,
+      "createNewIntentSaved": true,
+      "fileAttachIntent": 1,
+      "publicationIntents": 0
+    }
+  },
+  "metadata": {
+    "staticReview": "No major finding by /root/voice_trial; no execution/GUI/lease operations by reviewer",
+    "rootPsParseOrExecution": "Actual Root title action succeeded with exact readback; no GUI execution by script author",
+    "rootTitleResult": {
+      "at": "2026-10-28T14:26:14.9109846Z",
+      "action": "title",
+      "videoId": "2KGUzjEmfwg",
+      "runtimeId": "42,69024,4,-11478",
+      "changed": true,
+      "readbackExact": true,
+      "publicationIntents": 0
+    },
+    "descriptionLastObserved": {
+      "version": "v2",
+      "status": "exact readback confirmed by Root",
+      "atUtc": "2026-10-28T14:40:18Z",
+      "osFocusActions": 0
+    },
+    "descriptionV2": {
+      "rootReportedAtUtc": "2026-10-28T14:40:18Z",
+      "readbackExact": true,
+      "osFocusActions": 0,
+      "publicationIntents": 0
+    },
+    "descriptionV1Stopped": {
+      "status": "normal foreground refused before setting",
+      "publicationIntents": 0
+    }
+  },
+  "publicationIntentsByAuthor": 0,
+  "rawUiOrLeaseContentsCopied": false,
+  "proofScope": "Observed creation of private upload draft plus guarded metadata setup. Final public status remains Root-owned.",
+  "additionalScriptSnapshots": [
+    {
+      "file": "youtube134-visibility-control.ps1",
+      "sha256": "000770fe4e8e7ab23c22c042b68cac66da4ec669b565d8726585522e2f977e8b"
+    },
+    {
+      "file": "youtube134-publication-control.ps1",
+      "sha256": "d11812be915c6594d0c62e03c33101a0d9426eab7732967b55edd142acdf5255"
+    },
+    {
+      "file": "youtube134-description-control-v2.ps1",
+      "sha256": "519d65bce3afe5826144f3af033fc55233854f924e59c7896af112f222bca7b8",
+      "author": "Root"
+    }
+  ],
+  "frozenPreparedV2Sha256": "e99687f05a17de1267dc72df690d54b8ee52b23be67708d7f3ed2c486ab4784c",
+  "observedExternalTitleSuffixPreserved": true,
+  "visibilityNavigation": {
+    "atUtc": "2026-10-28T14:42:41.5455703Z",
+    "rootExecuted": true,
+    "selectedReadbackExact": true,
+    "preflight": {
+      "titleExact": true,
+      "descriptionExact": true,
+      "notKidsSelected": true
+    },
+    "nativeProofSha256": "da6b81c28ab4e6036097105661b02e466b5baaad1d2e5d0fdf6f9d0b70db88c3",
+    "publicationIntents": 0,
+    "osFocusActions": 0,
+    "globalKeyMouseActions": 0
+  },
+  "publicationHelper": {
+    "staticReview": "No major finding by /root/voice_trial, SHA d11812be...f5255",
+    "rootExecution": {
+      "nativeInvokeSentOnce": true,
+      "atUtc": "2026-10-28T14:50:18.2558867Z",
+      "actualPublishedAt": "2026-10-28T14:50:20.000Z",
+      "anonymousConfirmedAt": "2026-10-28T14:52:01.643Z",
+      "publicationIntents": 1,
+      "fileAttachIntents": 1,
+      "url": "https://www.youtube.com/shorts/2KGUzjEmfwg"
+    },
+    "maxIntent": 1,
+    "createNew": true,
+    "noRetry": true,
+    "noOsFocusOrGlobalInput": true
+  },
+  "canonicalReceiptSha256": "7b544094f9ac8d66e98b79c5d3ba3c3a59bde07d42cb8516587850f6a2cbb687",
+  "localFinalExportsDeleted": true,
+  "projectInputsPreserved": true,
+  "helpersHistoricalNotReplayableAfterCleanup": true
+}

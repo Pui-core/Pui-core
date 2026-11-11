@@ -1,0 +1,20 @@
+{
+  "exit": 0,
+  "exe": "/mnt/c/Users/pui/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe",
+  "args": [
+    "-nostdin",
+    "-v",
+    "error",
+    "-i",
+    "F:\\Videos\\ProjectP-TruthOrLie-Short-2026-10-28\\revision-01\\videos\\truthorlie-vertical-v5-voice-only.mp4",
+    "-map",
+    "0:v:0",
+    "-map",
+    "0:a:0",
+    "-f",
+    "null",
+    "-"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

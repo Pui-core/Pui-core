@@ -1,0 +1,91 @@
+[
+  [
+    "shape.create",
+    {
+      "name": "Ivory paper",
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        880,
+        154
+      ],
+      "fill": {
+        "gradient": {
+          "stops": [
+            [
+              0,
+              "#cbb48b"
+            ],
+            [
+              0.35,
+              "#eee1c5"
+            ],
+            [
+              1,
+              "#d5c19b"
+            ]
+          ],
+          "angle": 90
+        }
+      }
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "name": "Inner border",
+      "kind": "rect",
+      "rect": [
+        8,
+        8,
+        864,
+        138
+      ],
+      "fill": null,
+      "stroke": {
+        "width": 2,
+        "color": "#a88958"
+      }
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "Number",
+      "text": "05",
+      "x": 24,
+      "y": 95,
+      "font": "Yu Mincho",
+      "weight": 700,
+      "size": 54,
+      "color": "#8c302f"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "Question",
+      "text": "住んでみたい街",
+      "x": 120,
+      "y": 57,
+      "font": "Yu Gothic",
+      "weight": 700,
+      "size": 31,
+      "color": "#695238"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "Answer",
+      "text": "京都",
+      "x": 120,
+      "y": 120,
+      "font": "Yu Mincho",
+      "weight": 700,
+      "size": 53,
+      "color": "#302319"
+    }
+  ]
+]

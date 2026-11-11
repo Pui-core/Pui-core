@@ -1,0 +1,25 @@
+# 配信中「嘘か誠か」縦型短尺
+
+現在の完成稿は [v9：実際の投票と得点を見せる19.2秒](README-v9.md)。[YouTube公開版](https://www.youtube.com/shorts/2KGUzjEmfwg) は2026-10-28 23:50:20 JST公開。[投稿文](投稿文-v9.md) と [最終検査](qa/v9/real-v9-final-check.json) を参照。完成動画の正本はNAS、Fの最終書出し2本は照合後に削除済み。v5〜v8と旧原本は制作履歴として保全した。以下はv5当時の記録であり、現在の動画・音源・配信版・納品先の説明には使わない。
+
+## v5の記録
+
+[管理 Issue #134](https://github.com/Pui-core/-/issues/134)
+
+既存の横PV #198 に含まれる5回答と正誤を、TikTok・Shorts向け14.5秒の縦動画に再構成した。架空の2人対戦・演出例であり、実際のプレイ画面や実在人物の会話ではない。視聴者が根拠を持って選べるよう、④と矛盾する架空の手掛かりを新たに添えた。
+
+[確認用動画](videos/truthorlie-vertical-v5-voice-only.mp4)は1080×1920 / 30fps / H.264・AAC、SHA-256 `46672f4cfb21330493cb0c2d9c7c10069c1326559d1a736c9d10a0f1eb1c42bd`。声はVOICEVOX:青山龍星。音楽は未選定で、約2秒〜5秒台は読了のため声がない。TikTok音源を選ぶ前のレビュー用であり完成した音楽ミックスではない。
+
+配布先は日本の [App Store](https://apps.apple.com/jp/app/id6783599249)。TikTok本文URLのタップ可否は未確認。YouTube Shorts本文のURLはクリック不可のため、チャンネルのプロフィールリンクを案内する。2〜10人というストア表記を各人数での実機成功と取り違えない。
+
+F納品先: `F:\Videos\ProjectP-TruthOrLie-Short-2026-10-28\revision-01`。PhotoCraftのカード・カバー、EffectCraftのv5原本、FilmCraftのv5原本、実動画とすべてのリンク素材を保持。FilmCraftが参照する214MBの `media/picture-v5.mov` はFに保持し、Gitに含めていない。Source側のプロジェクトはF素材への参照で、Fが利用できない環境での自動再リンクは未検証。旧v4映像と原本もFに保持。
+
+最終MP4の全AVデコード・4句のAAC頭尾相関とlag0・全秒画像と主要3遷移・末尾11枚の連続画像を確認。PhotoCraft、EffectCraft、FilmCraftのF原本を再openし、AV素材のオフライン表示なし。最終AAC実測 -19.8 LUFS / TP -2.7 dBFS。これらは直接の全編視聴・試聴や視聴者の評価ではない。
+
+未確認: TikTok・YouTube実機UIの重なり、商用利用可能なTikTok音源と地域条件、BGMと声の聴感、全編の直接視聴、公開後の再生・フォロー。投稿・予約はしていない。Draft/HOLD。
+
+## 配信版のルール照合（2026-10-28）
+
+日本のApp Store紹介文は「全員がひとつのお題に答え」、その中に嘘つきがいると説明している。一方、[ゲーム側 Issue #151 の報告](https://github.com/Pui-core/com.pui-core.truthorlie/issues/151)は、commit `92f86c4` を `1.02 (18)` のArchive・ASCアップロードに対応付けている。同commitの [AnswerEntryView.swift](https://github.com/Pui-core/com.pui-core.truthorlie/blob/92f86c4/Sources/TruthOrLie/AnswerEntryView.swift) は「5つの回答のうち、1つだけ嘘を紛れ込ませます」と記載し、質問ごとに入力欄を表示している。既存のASC確認記録では公開版は1.02 (18)だが、配信中IPAの現物・SHAと当該ソースの一致は今回確認できていない。
+
+両説明の違いを理由に、動画を「全員が同一お題に回答する」設定へ変更しない。動画の手掛かりは架空の演出であり、製品のヒント機能や実プレイを示すものではない。ストア説明とソースの整合、配信バイナリの直接確認は別途未確認として残す。

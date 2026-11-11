@@ -1,0 +1,46 @@
+{
+  "kind": "Supplementary offline ASR, not direct listening",
+  "sourceSha256": "be3f9162f922dc3ab404eff56432b47dfa6f5e6bca72887a1e78aee19b7838da",
+  "modelPath": "/home/pui/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+  "fullText": "外れた一票、得点するのはどっち?この回、5つの回答に嘘は1つ投票は2番、でも嘘は5番全員が外したので、出題側に1点自作ゲーム、嘘か誠か?iPhoneで配信中",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.24,
+      "text": "外れた一票、得点するのはどっち?",
+      "avgLogprob": -0.28018543160105325
+    },
+    {
+      "start": 3.24,
+      "end": 6.24,
+      "text": "この回、5つの回答に嘘は1つ",
+      "avgLogprob": -0.28018543160105325
+    },
+    {
+      "start": 6.24,
+      "end": 9.6,
+      "text": "投票は2番、でも嘘は5番",
+      "avgLogprob": -0.28018543160105325
+    },
+    {
+      "start": 9.6,
+      "end": 13.3,
+      "text": "全員が外したので、出題側に1点",
+      "avgLogprob": -0.28018543160105325
+    },
+    {
+      "start": 13.3,
+      "end": 16.62,
+      "text": "自作ゲーム、嘘か誠か?",
+      "avgLogprob": -0.28018543160105325
+    },
+    {
+      "start": 16.62,
+      "end": 19.62,
+      "text": "iPhoneで配信中",
+      "avgLogprob": -0.28018543160105325
+    }
+  ],
+  "elapsedSeconds": 15.115765440999894,
+  "noExternalUpload": true
+}

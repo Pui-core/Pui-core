@@ -1,0 +1,67 @@
+{
+  "duration": 18,
+  "samples": 864000,
+  "gain": 1.25,
+  "inputPeak": 19175,
+  "voice": "VOICEVOX:青山龍星",
+  "cues": [
+    {
+      "id": "hook",
+      "text": "この五つ、嘘はどれ？",
+      "at": 0.2,
+      "end": 2.5,
+      "file": "voice-hook.wav",
+      "predictedDuration": 1.8929456126577449,
+      "speedScale": 1.06,
+      "sha256": "fb162ec792d92fbb625bfc1407fc21f1577121c4880d25b068872eaaccbf166c",
+      "peak": 11164,
+      "wavSeconds": 2.016,
+      "firstVoicedOutput": 0.2796875,
+      "lastVoicedOutput": 2.05975
+    },
+    {
+      "id": "vote",
+      "text": "二番に投票。真実だった。",
+      "at": 8.1,
+      "end": 10.65,
+      "file": "voice-vote.wav",
+      "predictedDuration": 2.366773741425208,
+      "speedScale": 1.06,
+      "sha256": "d10fb75c0469d8f56e574eaf15ace1fc4b1408fe1c71f6b0437ceceaff233211",
+      "peak": 19175,
+      "wavSeconds": 2.368,
+      "firstVoicedOutput": 8.1655625,
+      "lastVoicedOutput": 10.313416666666667
+    },
+    {
+      "id": "reveal",
+      "text": "嘘は四番。ホラー映画。",
+      "at": 10.8,
+      "end": 14.25,
+      "file": "voice-reveal.wav",
+      "predictedDuration": 2.3196722322477483,
+      "speedScale": 1.06,
+      "sha256": "7fb7bc94051868b8b198896c550e7216b547692bed6bfdd10eca1840807faeba",
+      "peak": 13274,
+      "wavSeconds": 2.3146666666666667,
+      "firstVoicedOutput": 10.865979166666667,
+      "lastVoicedOutput": 12.959395833333334
+    },
+    {
+      "id": "cta",
+      "text": "嘘か誠か、配信中。",
+      "at": 14.65,
+      "end": 17.9,
+      "file": "voice-cta.wav",
+      "predictedDuration": 2.1670142358766413,
+      "speedScale": 1.06,
+      "sha256": "552cb762cb545008398bede9bc5c518a2b2296af154c8031c3885cb444c27b02",
+      "peak": 15474,
+      "wavSeconds": 2.176,
+      "firstVoicedOutput": 14.715416666666666,
+      "lastVoicedOutput": 16.67075
+    }
+  ],
+  "music": false,
+  "wholeSubjectiveListen": false
+}
