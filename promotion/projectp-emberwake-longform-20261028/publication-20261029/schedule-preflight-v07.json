@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "issue": 142,
+  "productionIssue": 141,
+  "revision": "v07",
+  "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+  "videoId": "VdD_3xdOGFQ",
+  "observedAt": "2026-10-28T21:09:01.3707315Z",
+  "rootReviewed": true,
+  "frozenAssetSha256": "d487b218626f916c1ca281fa7f58fc306ff5bcdd8d657bc846af3b244aee3fec",
+  "frozenDraftSha256": "9736e2d1c74f731471395d1528c715ed67e7a34b48f70c296a8004b42a0ab89e",
+  "metadataProofSha256": "7547ecc53037ac01fe0c417e5d4a386ca611136926db5801d06c43f6f5c21326",
+  "videoSha256": "ce39d1223e7a9dfc59488b9c828f5c44bac363fd59334484f519f5dbbdef7241",
+  "schedule": {
+    "date": "2026/10/29",
+    "time": "12:15",
+    "plannedForJst": "2026-10-29T12:15:00+09:00",
+    "timeZone": "Asia/Tokyo",
+    "nativeTimeZone": "デフォルトはローカル タイムゾーン（GMT+0900）",
+    "visibility": "public",
+    "premiere": false,
+    "dateCommitted": true,
+    "nativeTimeOptionSelected": true
+  },
+  "nativeChecks": {
+    "copyright": "complete_no_issues",
+    "communityGuidelines": "complete_no_issues"
+  },
+  "category": "ゲーム",
+  "madeForKids": false,
+  "contextualDisclosureNoSelected": true,
+  "customCoverNativeVisuallyVerified": true,
+  "rootNativeVisual": {
+    "imagePath": "/home/pui/tmp/projectp-publish-20261029/youtube142-preflight-native.png",
+    "imageSha256": "0a5afb03030020cff1217ee2e01d3c13fa301a051d7626d5976377d783b33079",
+    "imageReceipt": "/home/pui/tmp/projectp-publish-20261028/preflight-native142.json",
+    "noPremiereUnchecked": true,
+    "dateAndTimeDisplayedExact": true,
+    "source": "standard PrintWindow of own pinned Firefox window; Root image inspection"
+  },
+  "nativeSubmitTarget": {
+    "runtimeId": "42,69024,4,-15991",
+    "type": "ControlType.Group",
+    "name": "",
+    "automationId": "done-button",
+    "className": "style-scope ytcp-uploads-dialog",
+    "frameworkId": "Gecko",
+    "enabled": true,
+    "offscreen": false,
+    "focusable": true,
+    "rect": "3199,973,170,39",
+    "labelDescendantRuntimeId": "42,69024,4,-16883",
+    "label": "スケジュールを設定",
+    "innerIsEnabled": false,
+    "sourceReceipt": "/home/pui/tmp/projectp-publish-20261028/submit-wrapper-info142.json",
+    "sourceReceiptSha256": "fe9c3b6ec1ff7009791ce82a6388db66ae0e398df7030efb1c889e908833fad9"
+  },
+  "rootDisposition": "Invoke the actual visible enabled focusable custom done-button once with standard UIA; do not invoke or force the disabled inner button",
+  "publicationIntents": 0,
+  "scheduled": false,
+  "published": false
+}

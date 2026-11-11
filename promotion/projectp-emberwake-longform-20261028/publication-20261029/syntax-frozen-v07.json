@@ -1,0 +1,21 @@
+{
+  "kind": "Syntax only; helpers not executed, no GUI/lease/intent operations",
+  "preparedSha256": "d487b218626f916c1ca281fa7f58fc306ff5bcdd8d657bc846af3b244aee3fec",
+  "fPreparedCopySha256": "d487b218626f916c1ca281fa7f58fc306ff5bcdd8d657bc846af3b244aee3fec",
+  "probeNameConditionsSingleLine": 2,
+  "probeBodyCopies": 1,
+  "helpers": [
+    {
+      "file": "youtube142-filepicker-probe.ps1",
+      "errors": 0,
+      "details": [],
+      "sha256": "cb07328a2ccd9e4e33533ee84de97925b585b62f25e30190692fac936c635a84"
+    },
+    {
+      "file": "youtube142-file-select.ps1",
+      "errors": 0,
+      "details": [],
+      "sha256": "c5199006e43812962239892635c8a2bc494f032584d79cc62cf709c739dd0568"
+    }
+  ]
+}
