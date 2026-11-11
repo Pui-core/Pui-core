@@ -1,0 +1,533 @@
+{
+  "schemaVersion": 1,
+  "title": "ProjectP構成ナレッジ台帳",
+  "managementIssue": "https://github.com/Pui-core/-/issues/131",
+  "updatedAtUtc": "2026-10-28T01:32:00Z",
+  "ruleId": "SNS-003-AUDIT-001",
+  "winnerCount": 0,
+  "statusDefinitions": {
+    "observed_owner": "本人の指標/事実の観測。比較の成功や構成因果を意味しない。",
+    "hypothesis_external": "実際の外部動画を出典/視聴範囲付きで参照する仮説。本人の勝ちパターンではない。",
+    "unverified": "構成や効果をまだ実検証していない案。",
+    "expired": "現在の実行/採用には使わず履歴として保持。"
+  },
+  "entries": [
+    {
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T11:40:55.008Z",
+      "revalidateOnJst": "2026-11-03",
+      "expiresOnJst": "2026-11-03",
+      "id": "PP-OWNER-OBS-001",
+      "status": "observed_owner",
+      "topic": "旧YouTube Short y6",
+      "observationIds": [
+        "OBS-YT-Y6-20261026"
+      ],
+      "evidenceUrl": "https://www.youtube.com/shorts/y6-fuKgLq4k",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "observationOnly": "約24.15h673views/+1、継続15.8%/swipe84.2%、平均10s。観測は10/26であり今日の最新値ではない。",
+      "limits": "Native指標の観測のみ。未視聴の構成欄はnull。単一post/未知分母から勝ちを決めない。",
+      "nextExperimentId": "PP-STRUCTURE-HYP-001"
+    },
+    {
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T11:40:55.008Z",
+      "revalidateOnJst": "2026-11-03",
+      "expiresOnJst": "2026-11-03",
+      "id": "PP-OWNER-OBS-002",
+      "status": "observed_owner",
+      "topic": "TikTok初回の一覧0表示",
+      "observationIds": [
+        "OBS-TT-FIRST-20261026"
+      ],
+      "evidenceUrl": "https://www.tiktok.com/@prop_pui/video/7700540849909763336",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "observationOnly": "成熟時刻後の一覧0表示。個別維持/露出分母は未取得。",
+      "limits": "配信/適格性/原因とcreative効果はいずれも未確定。QA再生は成果に含めない。",
+      "nextExperimentId": null
+    },
+    {
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T11:40:55.008Z",
+      "revalidateOnJst": "2026-11-03",
+      "expiresOnJst": "2026-11-03",
+      "id": "PP-STRUCTURE-HYP-001",
+      "status": "unverified",
+      "topic": "次の新しいScateRush実走",
+      "observationIds": [
+        "OBS-YT-Y6-20261026"
+      ],
+      "evidenceUrl": "https://github.com/Pui-core/-/issues/131",
+      "structure": {
+        "opening": "冒頭約1秒に実際の通過結果を先出しする情報順を試す。",
+        "secondsUntilResult": null,
+        "development": "同種の危険と通過過程を新しい別の実走で示す。",
+        "cutsAndMotion": "既に受け入れた主役追従/可読性/声の語尾の品質を固定。",
+        "typography": "近い字幕位置/文字面積を維持。",
+        "sound": "同じ話速/声量/BGM相対量を維持し音楽主題にしない。",
+        "endingAndCta": "同じ固有CTAを維持。"
+      },
+      "singleChangedVariable": "冒頭約1秒の情報順",
+      "variantA": "危険の状況→通過結果",
+      "variantB": "実通過を約0.8秒先出し→状況と過程",
+      "materialRule": "新しい別の実操作。既投稿/既予約を再投稿せず、別実走の違いは交絡として残す。",
+      "metrics": {
+        "primary": "Native stayed-to-watch/冒頭維持を同じ+72hで比較。+24hも別保存。",
+        "rawDenominatorRequiredForRateClaim": true,
+        "secondary": [
+          "平均視聴時間の正しいnative範囲",
+          "投稿へ明示帰属したfollow/subscriberのみ"
+        ],
+        "missingOrZero": "null。視聴回数/engagedviewsから分母を逆算しない。"
+      },
+      "decisionRule": {
+        "status": "internal_exploratory_design_not_official_or_owner_optimum",
+        "maxPairs": 2,
+        "maxFreshPosts": 4,
+        "timeLimitDaysAfterFirstActualPublication": 7,
+        "promising": "2つの近い別実話ペアで同方向、品質と平均視聴時間/転換を悪化させない場合のみ次の再現候補。統計的優劣や因果の保証なし。",
+        "stop": "最大2pair又は7日で一度判定。欠測/0分母/片側未成熟/別作品の混同なら不足として閉じ、閾値達成のため連投しない。"
+      },
+      "scheduled": false,
+      "published": false,
+      "nextExperimentId": null,
+      "activeForCurrentTikTok": false,
+      "executionStatus": "historical_unverified_single_factor_proposal_not_current_tiktok_instruction",
+      "supersededForNextTikTokBy": "PP-TT-JOINT-002",
+      "limits": "Retained as an untested historical proposal. It is not the current next-TikTok execution plan; joint revision cannot isolate this variable."
+    },
+    {
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T11:40:55.008Z",
+      "revalidateOnJst": "2026-11-03",
+      "expiresOnJst": "2026-11-03",
+      "id": "PP-EXPIRED-MUSIC-001",
+      "status": "expired",
+      "topic": "旧104のMIX/MV投稿枠",
+      "observationIds": [],
+      "evidenceUrl": "https://github.com/Pui-core/-/issues/104",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "expiredReason": "最新owner指示で音楽主題投稿を除外。背景BGMの許諾済み利用と分ける。",
+      "nextExperimentId": null
+    },
+    {
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T11:40:55.008Z",
+      "revalidateOnJst": "2026-11-03",
+      "expiresOnJst": "2026-11-03",
+      "id": "PP-EXPIRED-TRUTH-001",
+      "status": "expired",
+      "topic": "旧TruthOrLie予約公開/Related順序",
+      "observationIds": [],
+      "evidenceUrl": "https://github.com/Pui-core/-/issues/93#issuecomment-6430667915",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "expiredReason": "129差戻しと取消済み。旧receiptは保持するが再実行しない。",
+      "nextExperimentId": null
+    },
+    {
+      "id": "PP-OWNER-OBS-003",
+      "status": "observed_owner",
+      "topic": "10/27 evening TikTok Studio list",
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T12:41:34.514Z",
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-10-28",
+      "observationIds": [
+        "OBS-TT-EVENING-20261027"
+      ],
+      "evidenceUrl": "https://www.tiktok.com/tiktokstudio/content",
+      "sourceRecord": "../projectp-growth-audits/daily/2026-10-27-evening-partial.json",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "observationOnly": "20:53JST6 list rows display0views, including one future reservation excluded from performance.",
+      "limits": "Independent fresh server reload, current actual-publication timestamps, exposure/retention and attributed follows are unverified. Displayed0 is not an impression denominator or a creative cause.",
+      "nextExperimentId": "PP-TT-JOINT-002"
+    },
+    {
+      "id": "PP-TT-JOINT-002",
+      "status": "unverified",
+      "topic": "次TikTokの構成と実native音源の改善セット",
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T12:41:34.514Z",
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-11-03",
+      "ruleId": "SNS-002-STRUCTURE-SOUND-001",
+      "observationIds": [
+        "OBS-TT-EVENING-20261027"
+      ],
+      "evidenceUrl": "https://github.com/Pui-core/-/issues/132",
+      "structure": {
+        "opening": "実際の見せ場を先に置き、一つの問いを明確にする。",
+        "secondsUntilResult": null,
+        "development": "説明と重複を短くし、実結果で問いを回収する。",
+        "cutsAndMotion": "実選択したnative曲の拍にカット/動きを合わせる。未選定のBPM/拍位置は推測しない。",
+        "typography": "主役と字幕の可読性を保つ。",
+        "sound": "本人TikTokで実際に利用可能な曲を選択し、曲名/ID/区間/確認日、商用条件と声の可聴性を確認する。",
+        "endingAndCta": "見せた実作品に対応する短い案内。"
+      },
+      "changedVariables": [
+        "structure",
+        "actual_audible_native_platform_sound"
+      ],
+      "singleChangedVariable": null,
+      "comparisonType": "joint_revision_package_not_single_factor_AB",
+      "actualTrackSelected": false,
+      "scheduledOrPublishedByThisWriter": false,
+      "decisionRule": {
+        "primary": [
+          "Comparable actual views and post-attributed follows/subscribers when available",
+          "Retention/swipe/watch time with correct native denominator at actual+24h/+72h separately"
+        ],
+        "missing": "Keep unknowns null. Do not allocate account-level followers or treat scheduled rows/QA playback as success.",
+        "causalLimit": "Changing structure and sound together cannot identify either one as the cause; missing sound causing0 views remains unproven.",
+        "finiteReview": "Review once each required actual+24h/+72h becomes available; missing/freshness failures stay HOLD rather than being filled from stale list counts."
+      },
+      "scope": "Current next-TikTok instruction; no automatic reuse of TikTok-only music on YouTube.",
+      "nextExperimentId": null
+    },
+    {
+      "id": "PP-OWNER-OBS-004",
+      "status": "observed_owner",
+      "topic": "21:43再読込後のTikTok一覧5行",
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-27T12:46:16.651Z",
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-10-28",
+      "observationIds": [
+        "OBS-TT-REFRESHED-2143-20261027"
+      ],
+      "evidenceUrl": "https://www.tiktok.com/tiktokstudio/content",
+      "sourceRecord": "../projectp-growth-audits/daily/2026-10-27-2143-refreshed.json",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "observationOnly": "通常再読込後、残る5行のviews/likes/commentsすべて表示0。owner削除したScate予約IDは一覧にない。",
+      "limits": "Document再読込は確認。反映遅延、個別公開状態、配信面/露出分母/維持/帰属は別途不明。20:53の鮮度未確認partialと分離し、0原因/勝者は確定しない。",
+      "nextExperimentId": "PP-TT-JOINT-002"
+    },
+    {
+      "id": "PP-EXT-TRUTH-QUESTION-001",
+      "status": "unverified",
+      "topic": "嘘か誠か：問い・根拠・回答の見やすさ",
+      "confirmedWinner": false,
+      "validatedOnProjectP": false,
+      "reviewedAtUtc": "2026-10-28T01:32:00Z",
+      "revalidateOnJst": "2026-11-04",
+      "expiresOnJst": "2026-11-04",
+      "observationIds": [],
+      "externalExampleIds": [
+        "EXT-PLAYROOM-001",
+        "EXT-KIBO-001"
+      ],
+      "evidenceUrl": "https://github.com/Pui-core/-/issues/134",
+      "structure": {
+        "opening": "一つの推理問題と5つの回答を明瞭に示す案。",
+        "secondsUntilResult": null,
+        "development": "視聴者が推理できる根拠を見やすく示す案。",
+        "cutsAndMotion": null,
+        "typography": "問い・回答・根拠を安全域内で読みやすく示す案。",
+        "sound": null,
+        "endingAndCta": "実配信先のアプリ名検索／リンクへ案内する。"
+      },
+      "singleChangedVariable": "問い・回答・根拠の視認性",
+      "decisionRule": "#134の実公開と+24h/+72h以降に各時刻・媒体・分母・再生・コメント・投稿帰属フォローが取得可能なら記録。未取得はnull。比較可能な基準がなければ優劣は未確定で次の実験候補に留める。",
+      "limits": "外部例は未視聴で、今回の企画との因果・日本TikTok効果を証明しない。#134の視認性と音源その他は同時変更されうるため単一要因の因果は判断できない。",
+      "nextExperimentId": null
+    }
+  ],
+  "externalExamples": [
+    {
+      "id": "EXT-DISCOVERY-UUAG-001",
+      "ownership": "external",
+      "url": "https://www.youtube.com/shorts/uuagMgasqw4",
+      "sourceCheckedOnJst": "2026-10-27",
+      "sourceObservedAtUtc": null,
+      "reportedPublicationDateText": "8/24",
+      "actualPublishedAtUtc": null,
+      "secondaryMetricDateText": "9/24 17:59",
+      "secondaryListCacheDateText": "10/2 23:56",
+      "sourceDateTimezone": null,
+      "sourceDateYearNotIndependentlyVerified": true,
+      "views": null,
+      "followers": null,
+      "metricDenominator": null,
+      "officialVideoFetch": "cache_miss",
+      "actuallyViewed": false,
+      "structureObserved": false,
+      "status": "not_adopted_as_current_trend_or_structure",
+      "hypothesis": null,
+      "limits": [
+        "The latest-list cache containsAugust–September uploads.",
+        "Secondary metric date is earlier than audit day; no current metric inferred.",
+        "No title/thumbnail inference is promoted into a viewed opening, payoff, sound or edit sequence."
+      ],
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-10-28",
+      "secondaryDiscoveryUrls": [
+        "https://yutura.net/channel/76576/latest/",
+        "https://yutura.net/channel/76576/video/uuagMgasqw4/"
+      ],
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "validatedOnProjectP": false,
+      "confirmedWinner": false
+    },
+    {
+      "id": "EXT-DISCOVERY-E74-001",
+      "ownership": "external",
+      "url": "https://www.youtube.com/shorts/e74r3caVpCw",
+      "sourceCheckedOnJst": "2026-10-27",
+      "sourceObservedAtUtc": null,
+      "actualPublishedAtUtc": null,
+      "views": null,
+      "followers": null,
+      "metricDenominator": null,
+      "officialVideoFetch": "cache_miss",
+      "actuallyViewed": false,
+      "structureObserved": false,
+      "status": "not_adopted_as_current_trend_or_structure",
+      "hypothesis": null,
+      "limits": [
+        "No successful official video fetch or viewing.",
+        "No current performance or actual structure measured."
+      ],
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-10-28",
+      "secondaryDiscoveryUrls": [],
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "validatedOnProjectP": false,
+      "confirmedWinner": false
+    },
+    {
+      "ownership": "external",
+      "sourceCheckedOnJst": "2026-10-28",
+      "sourceObservedAtUtc": "2026-10-28T01:32:00Z",
+      "actuallyViewed": false,
+      "structureObserved": false,
+      "validatedOnProjectP": false,
+      "confirmedWinner": false,
+      "revalidateOnJst": "2026-11-04",
+      "expiresOnJst": "2026-11-04",
+      "id": "EXT-PLAYROOM-001",
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/@playroom527/video/7661490963218550036",
+      "sourceUrl": "https://note.com/playroom_game/n/ndca289a37d7c",
+      "sourceType": "developer_self_report",
+      "sourcePublishedAtJst": "2026-10-18T10:17:00+09:00",
+      "actualPublishedAtUtc": null,
+      "durationSeconds": null,
+      "metrics": {
+        "views": 24000,
+        "viewsApproximate": true,
+        "comments": 15,
+        "shares": 24,
+        "measuredAtUtc": null
+      },
+      "metricDenominator": null,
+      "officialVideoFetch": "restricted",
+      "status": "external_example_indirect_hypothesis",
+      "sourceReportedDescription": "「すぐ行く」の「すぐ」は何分以内かという問いに、大きな赤文字で「6分」と表示したと作者が説明。映像の順序や冒頭は直接確認していない。",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "hypothesis": "体験できる問いと根拠・回答の視認性はアプリの関心を生む可能性がある。ProjectPで未検証。",
+      "limits": [
+        "数値は開発者の自己報告で観測日時や直接指標の根拠は未提示。",
+        "TikTok実動画を取得・視聴できず、尺・冒頭・編集・音・投稿日時・現在の指標は不明。",
+        "465/1770の指名検索とTikTok由来は作者の推測で、因果は未証明。",
+        "他者の結果は本人の勝者や視聴予測ではない。"
+      ]
+    },
+    {
+      "ownership": "external",
+      "sourceCheckedOnJst": "2026-10-28",
+      "sourceObservedAtUtc": "2026-10-28T01:32:00Z",
+      "actuallyViewed": false,
+      "structureObserved": false,
+      "validatedOnProjectP": false,
+      "confirmedWinner": false,
+      "revalidateOnJst": "2026-11-04",
+      "expiresOnJst": "2026-11-04",
+      "id": "EXT-KIBO-001",
+      "platform": "YouTube Shorts",
+      "url": "https://www.youtube.com/shorts/R5edCiHUuMw",
+      "sourceUrl": "https://digitalcreators.jp/channel/ja/UCh2AeLv_0Eme8Y_V4kmUWHQ/",
+      "sourceType": "third_party_aggregate",
+      "sourcePublicationDateText": "2026/08/15 18:03",
+      "actualPublishedAtUtc": null,
+      "durationSeconds": 44,
+      "metrics": {
+        "views": 738953,
+        "likes": 6757,
+        "comments": 186,
+        "measuredAtUtc": null
+      },
+      "metricDenominator": null,
+      "officialVideoFetch": "throttled",
+      "status": "external_example_indirect_hypothesis",
+      "sourceReportedDescription": "「1円玉が何枚あれば1万円は作れるのか？」という題名。数値は第三者集計ページの表示。",
+      "structure": {
+        "opening": null,
+        "secondsUntilResult": null,
+        "development": null,
+        "cutsAndMotion": null,
+        "typography": null,
+        "sound": null,
+        "endingAndCta": null
+      },
+      "hypothesis": "具体的な量や選択肢の問いを一目で伝える編集を候補とするが、実際の動画冒頭は未観測。",
+      "limits": [
+        "第三者集計の時点は不明。現在値ではなく、検索応答に約1か月前のキャッシュ情報。",
+        "実動画を取得・視聴できず、冒頭・編集・音・維持率・投稿時刻の厳密なtimezoneは未確認。",
+        "YouTube ShortでありTikTokの効果を示さない。規模の異なる既存チャンネルのため本人の予測値にしない。"
+      ]
+    }
+  ],
+  "requirements": {
+    "notEvidenceOfGrowth": [
+      "実素材/指定モデル/3Craftと声の語頭語尾・可読性",
+      "横動画600秒最低、反復/待機/減速での水増し禁止",
+      "NOMUSIC、単独publisher、共有GUIの有限窓",
+      "必要な利用条件/creditを維持"
+    ],
+    "optimalPostsPerDay": null,
+    "unlimitedDailyPostsIsAuthorizationNotScientificOptimum": true,
+    "noAccountGainAllocation": true,
+    "noMixedPlatformDenominator": true,
+    "currentTikTokSingleFactorAB": false
+  },
+  "updateProtocol": "README.md",
+  "activeTikTokExperimentId": "PP-TT-JOINT-002",
+  "qualityDefinition": {
+    "ruleId": "SNS-003-QUALITY-GROWTH-002",
+    "growthIsPrimary": true,
+    "definition": "再生・フォロワー/登録者が増えやすいことを品質の中心に置く。",
+    "prepublicationRequiredChecks": [
+      "視認性/可読性",
+      "音はめと声の可聴性",
+      "実素材と事実の正確さ",
+      "技術的な破損/同期の検査",
+      "既存ownerの構図/テンポ/3Craft/モデル等の要望"
+    ],
+    "prepublicationChecksProveGrowth": false,
+    "postpublicationEvidence": [
+      "同じplatform/公開後経過を考慮した再生・到達",
+      "nativeで投稿に明示帰属するfollow/subscriber",
+      "実分母付き維持/視聴時間/転換"
+    ],
+    "unknownFollowerAttribution": null,
+    "unknownExposureDenominator": null,
+    "doNotInfer": [
+      "技術PASS/黄金比/見た目/カット数だけから成長効果",
+      "0表示だけから構成/音源/制限の原因",
+      "アカウント純増を各postへ配分"
+    ]
+  },
+  "handoffPolicy": {
+    "existingPr": "https://github.com/Pui-core/Pui-core/pull/64",
+    "preserveExistingBranchAndUnmergedWork": true,
+    "actualRuntimeModels": {
+      "thisWriter": null,
+      "root": null,
+      "otherSessions": null
+    },
+    "actualModelClaimAllowedOnlyWithSessionMetadata": true,
+    "configDefaultIsNotProofOfOtherRunningSessionModel": true
+  },
+  "soundCandidates": [
+    {
+      "id": "PP-SOUND-CAND-001",
+      "status": "unverified",
+      "title": "Digital Horizon",
+      "evidenceRecord": "../projectp-growth-audits/daily/2026-10-27.json",
+      "evidenceJsonPointer": "/soundCandidate",
+      "stateAsReportedThroughJstMinute": "2026-10-27 21:37 JST",
+      "displayedCountText": "1.2M",
+      "region": null,
+      "timeWindow": null,
+      "playerProgressObserved": true,
+      "rootAuditoryQualityJudgmentPerformed": false,
+      "postSoundSelected": false,
+      "winningTrack": false,
+      "currentJapanTrendVerified": false,
+      "growthEffect": null,
+      "causeOfZeroViews": null,
+      "revalidateOnJst": "2026-10-28",
+      "expiresOnJst": "2026-10-28"
+    }
+  ]
+}

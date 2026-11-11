@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "OBS-TT-REFRESHED-2143-20261027",
+  "managementIssue": "https://github.com/Pui-core/-/issues/131",
+  "kind": "sanitized_refreshed_native_list_observation",
+  "recordedAtUtc": "2026-10-27T12:46:16.651Z",
+  "observedAtUtc": "2026-10-27T12:43:07.4442212Z",
+  "observedAtJst": "2026-10-27T21:43:07.444+09:00",
+  "sourcePacketSha256": "784064276df93a0d24b9a396ec21aff28a75affce677f56b6e78709d3892efe3",
+  "platform": "tiktok",
+  "accountId": "prop_pui",
+  "sourceUrl": "https://www.tiktok.com/tiktokstudio/content",
+  "scope": "own_post_list_display_counts_after_ordinary_browser_reload",
+  "independentDocumentReloadConfirmed": true,
+  "refreshEvidence": "Root confirmed document identity changed after ordinary browser reload; private runtime identifiers omitted.",
+  "metricReflectionDelayOrServerDataAge": null,
+  "regionFilter": null,
+  "audienceGeo": null,
+  "displayedRows": 5,
+  "observations": [
+    {
+      "videoId": "7701070938569329926",
+      "url": "https://www.tiktok.com/@prop_pui/video/7701070938569329926",
+      "viewsDisplayed": 0,
+      "likesDisplayed": 0,
+      "commentsDisplayed": 0,
+      "actualPublishedAtUtc": null,
+      "publicationAgeHours": null,
+      "individualPublicStateRevalidated": false,
+      "performanceUse": "refreshed_list_display_only_not_individual_publication_or_distribution_proof"
+    },
+    {
+      "videoId": "7700862636182850822",
+      "url": "https://www.tiktok.com/@prop_pui/video/7700862636182850822",
+      "viewsDisplayed": 0,
+      "likesDisplayed": 0,
+      "commentsDisplayed": 0,
+      "actualPublishedAtUtc": null,
+      "publicationAgeHours": null,
+      "individualPublicStateRevalidated": false,
+      "performanceUse": "refreshed_list_display_only_not_individual_publication_or_distribution_proof"
+    },
+    {
+      "videoId": "7700784029481716999",
+      "url": "https://www.tiktok.com/@prop_pui/video/7700784029481716999",
+      "viewsDisplayed": 0,
+      "likesDisplayed": 0,
+      "commentsDisplayed": 0,
+      "actualPublishedAtUtc": null,
+      "publicationAgeHours": null,
+      "individualPublicStateRevalidated": false,
+      "performanceUse": "refreshed_list_display_only_not_individual_publication_or_distribution_proof"
+    },
+    {
+      "videoId": "7700779309224529170",
+      "url": "https://www.tiktok.com/@prop_pui/video/7700779309224529170",
+      "viewsDisplayed": 0,
+      "likesDisplayed": 0,
+      "commentsDisplayed": 0,
+      "actualPublishedAtUtc": null,
+      "publicationAgeHours": null,
+      "individualPublicStateRevalidated": false,
+      "performanceUse": "refreshed_list_display_only_not_individual_publication_or_distribution_proof"
+    },
+    {
+      "videoId": "7700540849909763336",
+      "url": "https://www.tiktok.com/@prop_pui/video/7700540849909763336",
+      "viewsDisplayed": 0,
+      "likesDisplayed": 0,
+      "commentsDisplayed": 0,
+      "actualPublishedAtUtc": null,
+      "publicationAgeHours": null,
+      "individualPublicStateRevalidated": false,
+      "performanceUse": "refreshed_list_display_only_not_individual_publication_or_distribution_proof"
+    }
+  ],
+  "ownerReportedDeletedScheduledIdAbsent": "7701100271014792466",
+  "otherFiveRowsRetained": true,
+  "unavailable": {
+    "impressions": null,
+    "exposureDenominator": null,
+    "retention": null,
+    "completionRate": null,
+    "postAttributedFollowers": null,
+    "individualPublicationState": null,
+    "metricReflectionDelay": null,
+    "zeroViewsCause": null
+  },
+  "qaSelfPlaybackUsedAsSuccess": false,
+  "writerGuiSnsActions": 0,
+  "limits": [
+    "表示上の数値であり視聴完了率・配信面・内訳・反映遅延は不明",
+    "公開状態は別途各投稿で確認し、0表示の原因を断定しない",
+    "The document reload is observed; metrics update delay/server aggregation age remain unknown.",
+    "All5 zero displays are not evidence of zero impressions or a cause attributable to structure/sound.",
+    "The ScateRush scheduled ID is absent after owner deletion; this writer performed no deletion."
+  ],
+  "status": "REFRESHED_LIST_OBSERVED_PUBLICATION_AND_ANALYTICS_UNVERIFIED"
+}

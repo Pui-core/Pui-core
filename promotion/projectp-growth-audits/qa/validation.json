@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "checkedAtUtc": "2026-10-28T01:32:34.867Z",
+  "status": "EXTERNAL_CASE_METADATA_VERIFIED_VIDEO_UNVIEWED_HOLD",
+  "passed": true,
+  "checks": [
+    "external_case_ids_unique",
+    "self_report_and_third_party_separated",
+    "source_times_and_unknown_metric_times",
+    "video_unviewed_structure_null",
+    "platform_denominators_not_mixed",
+    "projectp_hypothesis_not_winner",
+    "all_json_parse"
+  ],
+  "jsonParsed": 10,
+  "notVerified": [
+    "external_video_playback_and_opening",
+    "external_metrics_observed_at_source",
+    "native_24_72h_post_performance",
+    "recommendation_eligibility_and_distribution_denominator",
+    "F_document_click_or_render"
+  ]
+}
