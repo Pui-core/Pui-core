@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "managementIssue": "https://github.com/Pui-core/-/issues/125",
+  "parentIssue": "https://github.com/Pui-core/-/issues/93",
+  "sourceRepository": "Pui-core/Pui-core",
+  "recordedAt": "2026-10-26T21:30:37.636Z",
+  "state": "PLATFORM_SAVE_ERROR_OLD_BIO_PRESERVED",
+  "account": "prop_pui",
+  "profileUrl": "https://www.tiktok.com/@prop_pui",
+  "purpose": "ゲーム・アプリ横断の発信へ自己紹介のみを更新する。実更新は未達。",
+  "oldBio": "ゲーム・道具・曲を作る、ぷい。\n『EMBERWAKE』制作の裏側を毎日。\nCAMPFIRE公開準備中｜次の一手をフォローで。",
+  "intendedBio": "ゲーム・アプリを作る、ぷい。EMBERWAKE／嘘か誠か／ScateRush／missyou。作品の仕掛けと更新を実画面で。続きをフォローで。",
+  "intendedCharacters": 71,
+  "intendedBioSha256": "0c6fb8297488aded4193f54f4bd765a6960037e4dc559a29aa818543cc3d7c5e",
+  "actualProfileUpdated": false,
+  "attempts": [
+    {
+      "number": 1,
+      "method": "通常の有効な保存ボタンをnative InvokePatternで1回実行",
+      "platformErrorObservedAt": "2026-10-26T21:26:27.6378502Z",
+      "platformError": "不明なエラーが発生しました。もう一度お試しください。",
+      "normalReloadAt": "2026-10-26T21:27:44.6883039Z",
+      "normalReloadObservedBio": "ゲーム・道具・曲を作る、ぷい。 『EMBERWAKE』制作の裏側を毎日。 CAMPFIRE公開準備中｜次の一手をフォローで。",
+      "newBioVisibleAfterReload": false,
+      "unsavedEditModalAfterReload": false
+    },
+    {
+      "number": 2,
+      "retryOf": 1,
+      "method": "明示エラー後の取消・通常再読込で旧値を確認してから、同じ文を通常mouseで1回保存",
+      "platformErrorObservedAt": "2026-10-26T21:29:11.6462961Z",
+      "platformError": "不明なエラーが発生しました。もう一度お試しください。",
+      "normalReloadAt": "2026-10-26T21:29:58.6614673Z",
+      "normalReloadObservedBio": "ゲーム・道具・曲を作る、ぷい。 『EMBERWAKE』制作の裏側を毎日。 CAMPFIRE公開準備中｜次の一手をフォローで。",
+      "newBioVisibleAfterReload": false,
+      "unsavedEditModalAfterReload": false
+    }
+  ],
+  "saveIntents": 2,
+  "retries": 1,
+  "onlyRequestedField": "bio",
+  "otherProfileFieldInputs": 0,
+  "writerOperations": {
+    "gui": 0,
+    "browser": 0,
+    "profile": 0,
+    "runtime": 0,
+    "lease": 0,
+    "videoUpload": 0,
+    "postOrSchedule": 0
+  },
+  "publisherScope": {
+    "profileField": "自己紹介",
+    "otherProfileFieldInputs": 0,
+    "postOrSchedule": 0,
+    "promoteOrPayment": 0,
+    "newAccount": 0,
+    "authExtraction": 0
+  },
+  "accountNoticeObservation": {
+    "at": "2026-10-26T21:29:58.6614673Z",
+    "context": "本人の通常プロフィールを通常再読込した後の表示",
+    "accountWholeRecommendationIneligibilityBannerObserved": false,
+    "followersDisplayed": 0,
+    "actualRecommendationEligibility": null,
+    "profileSaveErrorCausalLinkToViews": null,
+    "individualVideoPhoneReport": "本人報告の個別動画案内なし・スマホ0は別観測。スマホ画面を独立確認していない。"
+  },
+  "limitations": [
+    "保存ボタンの操作成功やexit0をサーバーへの保存成功と同一視しない。",
+    "通常再読込では旧bioの表示を確認。改行を含む旧実編集値と表示上の空白正規化を区別する。",
+    "プロフィール保存エラーの原因、おすすめ推薦適格性、0再生の原因・因果関係は未確定。",
+    "バナーなし・フォロワー0の観測を適格性PASSや施策の成果にしない。",
+    "新bioは未反映。実保存と再読込後の新bio一致が完了条件。"
+  ],
+  "evidence": {
+    "canonicalAttempt": {
+      "file": "2026-10-27-profile125-attempt.json",
+      "sha256": "c505de46f48cae8be5a8341812b93243238a5bfdf5b6de58bda6b47c6ae04ad7"
+    },
+    "accountNotice": {
+      "file": "2026-10-27-account-profile-recommendation-notice.json",
+      "sha256": "7fa6c0595c6d2275632d4438896db8ff3c71f1e018d26c977e4ad350b80644ff"
+    },
+    "privateRawProofReferences": [
+      {
+        "file": "bio-set-result.json",
+        "sha256": "5e1b3772decf1caae0aa9e10d1e01a620f586a9b3c67b638acb2705f48d0332a"
+      },
+      {
+        "file": "bio-save-intent.json",
+        "sha256": "7b28e87a9e13699b92745649f06da94f06d342154ec9243a859a37d75232510f"
+      },
+      {
+        "file": "bio-save-result.json",
+        "sha256": "8806d4094de8046f98edd4b68624494e109b50686b1e60938b439672b5f9acc1"
+      },
+      {
+        "file": "profile-post-save-read-result.json",
+        "sha256": "34b65aae40ea70aeb3d83baf7e1a4a5bf3e3100ac228aeaa8f75624543786fe3"
+      },
+      {
+        "file": "profile-after-reload-result.json",
+        "sha256": "fe6af50302707ce0313efeb96f8c67aca1d2552bc6ad6f8bcd947cd6b88ef307"
+      },
+      {
+        "file": "retry-bio-set-result.json",
+        "sha256": "0202b95c9517548b8bd84f158552d25fff5ca38f82f0949df68d832929d1079c"
+      },
+      {
+        "file": "bio-save-intent2.json",
+        "sha256": "25ca4ee136766767237f3aad7bf71b3bf455d224941c5b2384518a046804fd5a"
+      },
+      {
+        "file": "bio-save-normal-result.json",
+        "sha256": "79caf219b378a1ff2e32c527387d5f807930f15397c370a8659a5fa779dc7d18"
+      },
+      {
+        "file": "profile-post-normal-save-result.json",
+        "sha256": "4c4eb3a3e6c33abda2d8293b3d872c89bc32083a6d5b14722c3049e25bfaea55"
+      },
+      {
+        "file": "profile-final-normal-reload-result.json",
+        "sha256": "0c31651d5938009eb450f9bc755c3631aa33cc9a6b4d9ffe6fb48edcb40d45de"
+      },
+      {
+        "file": "window-ended.json",
+        "sha256": "c3e1a9c0aaa730f7713f122b6e03d82908b1a883feb8baae1ecc94fc036f5c1b"
+      }
+    ],
+    "rawFilesIncludedInSource": false
+  },
+  "sourceState": "Draft/HOLD: 実プロフィール更新が未達。記録技術チェックと運用受入を分ける。",
+  "requiredFollowup": [
+    "旧値・候補文・今回のエラー原票を保全したまま、Rootが保存エラーの原因を確認する。",
+    "別の有限な通常操作を行う場合も、最新サーバー実値を読み、自己紹介だけを変更する。",
+    "新bioの実保存と通常再読込後の完全一致を取得してから、このPRの最新headを再レビューする。"
+  ],
+  "ownerQuestionPending": false
+}

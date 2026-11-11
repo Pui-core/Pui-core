@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "issue": 125,
+  "checkedAt": "2026-10-26T21:32:54.285Z",
+  "sourceBaseBeforeEdit": "51bdbaaead8eeed1e99ad55e072e5a026c7a2eff",
+  "scope": "promotion/projectp-tiktok-operations/2026-10-27-profile-portfolio/",
+  "technicalRecordStatus": "PASS",
+  "operationalAcceptance": "HOLD_PROFILE_BIO_SAVE_NOT_COMPLETED",
+  "latestReviewRequired": "自己レビュー: CHANGES_REQUESTED",
+  "checks": {
+    "canonicalRootAttemptShaMatched": true,
+    "accountNoticeShaMatched": true,
+    "allElevenPrivateProofShasMatched": true,
+    "privateProofCount": 11,
+    "bothNativePlatformErrorsObserved": true,
+    "bothNormalReloadsShowOldBio": true,
+    "bothNormalReloadsHaveNoNewBioOrEditModal": true,
+    "oldBioNewlinesPreserved": true,
+    "intendedBioCharacters": 71,
+    "saveIntents": 2,
+    "retries": 1,
+    "onlyBioRequested": true,
+    "otherProfileInputs": 0,
+    "rawUiClipboardBrowserIdentityLeaseContentsExcluded": true,
+    "recordWriterGuiBrowserRuntimeLeaseActions": 0,
+    "automatedImplementationTests": "Not applicable: immutable operation record only"
+  },
+  "files": [
+    {
+      "file": "README.md",
+      "sha256": "7167f54a5bbd985757b36668ef45b4495cc3a4b127c9808bb8a8c92ce1d4fcc1"
+    },
+    {
+      "file": "profile-update.json",
+      "sha256": "040314f74cc38ef4eb13448c1bb3673e6698e119704843c02fcead588f7dd6a9"
+    }
+  ],
+  "delivery": {
+    "root": "F:\\Videos\\ProjectP-Operations-2026-10-27\\profile-portfolio-125",
+    "payloadFiles": [
+      "README.md",
+      "profile-update.json",
+      "record-validation.json"
+    ],
+    "manifest": "append-manifest.json",
+    "scope": "New dedicated document append only; previous videos and receipts unchanged"
+  },
+  "recommendationEligibility": null,
+  "growthOutcome": null
+}

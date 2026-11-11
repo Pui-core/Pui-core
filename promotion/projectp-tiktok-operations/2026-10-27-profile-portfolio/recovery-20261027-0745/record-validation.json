@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "issue": 125,
+  "checkedAt": "2026-10-26T22:53:06.731Z",
+  "technicalRecordStatus": "PASS",
+  "operationalAcceptance": "HOLD_PROFILE_BIO_SAVE_NOT_COMPLETED",
+  "requiredReview": "自己レビュー: CHANGES_REQUESTED",
+  "checks": {
+    "rootRecoveryCanonicalShaMatched": true,
+    "priorCanonicalShaUnchanged": true,
+    "allRecoveryPrivateProofsShaMatched": true,
+    "recoveryPrivateProofCount": 20,
+    "fullOldSelectionFreshReadMatches": true,
+    "new71BioFreshReadMatches": true,
+    "actualThirdIntentFileAndOrdinalVerified": true,
+    "canonicalHittestObjectNotUsedAsInputIntent": true,
+    "thirdAfterSaveModalPersists": true,
+    "thirdAfterSaveExplicitErrorObserved": false,
+    "finalOrdinaryReloadOwnProfileOldBio": true,
+    "finalOrdinaryReloadNewBioAndEditModalAbsent": true,
+    "cumulativeSaveIntents": 3,
+    "oldSourceAndFCheckpointFilesUnchanged": true,
+    "rawUiCursorClipboardIdentityLeaseContentsExcluded": true,
+    "writerGuiBrowserProfileRuntimeLeaseActions": 0,
+    "implementationTestsRequired": false
+  },
+  "files": [
+    {
+      "file": "README.md",
+      "sha256": "84066dd9be9ba926db3e407ca5be743c861b87b0b1758adf954215af78c65063"
+    },
+    {
+      "file": "recovery.json",
+      "sha256": "ea0b88dde28f55d37710068e32018242c556bcdc6414dc7d6710c3a8fe535d1d"
+    }
+  ],
+  "sourcePrefix": "promotion/projectp-tiktok-operations/2026-10-27-profile-portfolio/recovery-20261027-0745/",
+  "deliveryAppendDirectory": "recovery-20261027-0745/",
+  "oldFManifestSha256": "494ed8105181f6d9ff5c0843b36e2b7f3eeeeb8de05158316cc44160b9036e36"
+}
