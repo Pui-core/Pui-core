@@ -1,0 +1,43 @@
+{
+  "issue": 132,
+  "state": "RETAIN_V4_HOLD_NATIVE_OFFSET_AND_FINAL_QUALITY_PENDING",
+  "videoSha256": "c43434bc1250160faf86f092695bc5906d4fa2eccc43c7be58905fa29d2b5521",
+  "baseReceiptSha256": "f89b4f34852d89798bf32de4f7f31515b4337ec4f6de5d84d96cab74dfd74fd0",
+  "mediaEdited": false,
+  "newRevisionRendered": false,
+  "nativeProjectsEdited": false,
+  "nativeThreeCraftQaReusedFromUnchangedBase": true,
+  "rootEditorObservation": {
+    "case": "https://github.com/Pui-core/-/issues/132#issuecomment-6443284058",
+    "title": "Digital Horizon",
+    "artist": "Blinking Frog Blast",
+    "trackMaintainedOnReopen": true,
+    "gainDbDisplayedOnReopen": -12,
+    "displayedGainIsListeningProof": false,
+    "sourceOffset": null,
+    "trackId": null,
+    "actualPublishedAssociation": false,
+    "formalPublishOrScheduleSubmit": 0,
+    "observedMinuteJst": "2026-10-27T22:36+09:00",
+    "timePrecision": "minute"
+  },
+  "audioSource": {
+    "officialStudioDownloadSha256": "7a0d3d73d9b0ee01fed2ea2fc61fd97da18cabd769e07aab3ed950387068dba9",
+    "durationSeconds": 42.8176,
+    "audioCopiedToSourceOrF": false,
+    "pcmCopiedToSourceOrF": false
+  },
+  "uncertainty": {
+    "bpm": null,
+    "metricalDownbeat": null,
+    "nativeSourceOffset": null,
+    "subjectiveWholeListen": false,
+    "wholeVideoWatch": false,
+    "growthEffectVerified": false
+  },
+  "decision": "Keep original v4 master and Root unsent stage. Conditional one-frame candidate is not robust to unknown native source offset.",
+  "actualPublishedAt": null,
+  "views": null,
+  "retention": null,
+  "followConversion": null
+}

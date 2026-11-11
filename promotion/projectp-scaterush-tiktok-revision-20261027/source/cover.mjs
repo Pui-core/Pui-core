@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import{file,np,PC,run,parse,save,hash,copy}from'./native.mjs';
+copy(file('qa/raw-8.8.png'),file('media/actual-cover.png'));
+// A dedicated local F staging directory avoids old PhotoCraft roots and never edits rev02.
+const stage='/mnt/f/Videos/ProjectP-ScateRush-TikTok-Revision-2026-10-27/revision-01/photocraft-stage';fs.mkdirSync(stage,{recursive:true});
+const commands=[['file.placeEmbedded',{path:np(file('media/ambient-cover.png')),scale:750,fit:false,center:[540,960],smartObject:true}],['file.placeEmbedded',{path:np(file('media/actual-cover.png')),scale:330,fit:false,center:[1427,893],smartObject:true}],['file.placeEmbedded',{path:np(file('media/avatar-cover.png')),scale:43,fit:false,center:[820,1590],smartObject:true}]];
+const text=(name,text,x,y,size,color)=>commands.push(['type.create',{name,text,x,y,font:'Meiryo',weight:700,size,color}]);
+text('Brand','SCATE RUSH',80,105,36,'#f3ecdf');text('Scope','Web試作画面',80,160,25,'#9eb6b4');text('Question','この看板、',80,380,68,'#f3ecdf');text('Question action','どう抜ける？',80,510,96,'#f5cf55');text('CTA','ゲームの続きを',80,1535,44,'#f3ecdf');text('Follow','フォローで。',80,1620,62,'#32d6c8');text('Handle','@prop_pui',80,1720,36,'#9eb6b4');
+save('source/cover-commands.json',commands);const args=['run','--new',JSON.stringify({width:1080,height:1920,name:'ScateRush132 actual clearance',background:'#11151a',resolution:72})];for(const[id,p]of commands)args.push('--cmd',id,'--params',JSON.stringify(p));
+await run(PC,[...args,'--out',np(stage+'/scaterush-revision.pcraft')],'pc-build.json');await run(PC,['convert',np(stage+'/scaterush-revision.pcraft'),np(stage+'/scaterush-revision.png'),'--format','png'],'pc-render.json');
+for(const ext of['pcraft','png'])copy(stage+'/scaterush-revision.'+ext,file('covers/scaterush-revision.'+ext));const info=parse((await run(PC,['info',np(stage+'/scaterush-revision.pcraft'),'--compact'],'pc-info.json')).stdout);if(info.warnings?.length)throw Error('PC warnings');
+save('qa/cover-binding.json',{native:'covers/scaterush-revision.pcraft',png:'covers/scaterush-revision.png',nativeSha256:hash(file('covers/scaterush-revision.pcraft')),pngSha256:hash(file('covers/scaterush-revision.png')),actualFrame:8.8,actualGameFrameSha256:hash(file('media/actual-cover.png')),avatarFrameSha256:hash(file('media/avatar-cover.png')),actualPhotoCraft:true,rawModelSdkBundled:false,visualReviewPending:true});console.log('132 actual PhotoCraft cover ready');

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "scope": "ScateRush old/new posts only; unrelated daily fields omitted",
+  "runtimeDailyRef": "daily/2026-10-28.json",
+  "dailyBeforeSha256": "ebc1d7e34e5cfc3f5257b79f353801457980e564c294056571a366b7e33bfe14",
+  "dailyAfterSha256": "50d430fc5772aaf2203aded418f7a9e0cb5f59dd35c390efc74f9efb4eabb912",
+  "previousDailySnapshotRef": "history/2026-10-28-before-scaterush132-public-20261028T130808454Z.json",
+  "immutablePreviousReceiptsPreserved": true,
+  "noDuplicatePostIds": true,
+  "publicReceiptSha256": "cb8a3923d6da818c6f4abcf271faa4826855ee43fd735b0e0437304ebe6cd6d4",
+  "posts": [
+    {
+      "productionIssue": 124,
+      "managementIssue": 126,
+      "topic": "ScateRush",
+      "state": "cancelled_owner_deleted_native_absence_confirmed",
+      "videoId": "7701100271014792466",
+      "url": "https://www.tiktok.com/@prop_pui/video/7701100271014792466",
+      "scheduledForJst": "2026-10-28T12:15:00+09:00",
+      "actualPublishedAt": null,
+      "receiptSha256": "110434841b38b55875f51a8456673c91bde5d7fd8a8d7c980c44b11aacf01ea6",
+      "videoSha256": "ecb91dfa0eb0aaaf666e4bab91ce1292d6651a350a4c13fe20966d4bb790fdad",
+      "analyticsDue": {
+        "basis": "Cancelled predecessor; no publication or analytics due",
+        "first24hAt": null,
+        "hours72At": null
+      },
+      "previousStateBeforeCancellation": "scheduled_confirmed",
+      "cancellationReceiptRef": "cancellations/2026-10-28-scaterush124-owner-deleted.json",
+      "cancellationReceiptSha256": "9551f9b9ad1a41ce3b0fa3b9eed7d1fbec9fe0945ee4603f910345cb51622075",
+      "cancelledConfirmedAt": "2026-10-27T21:43:07+09:00",
+      "replacementVideoId": "7701370032986524946",
+      "receiptRef": "receipts/2026-10-28-scaterush124-scheduled.json"
+    },
+    {
+      "productionIssue": 132,
+      "managementIssue": 132,
+      "topic": "ScateRush",
+      "state": "published_public_metadata_confirmed",
+      "videoId": "7701370032986524946",
+      "url": "https://www.tiktok.com/@prop_pui/video/7701370032986524946",
+      "scheduledForJst": "2026-10-28T12:15:00+09:00",
+      "actualPublishedAt": "2026-10-28T03:15:00.000Z",
+      "actualPublishedAtJst": "2026-10-28T12:15:00+09:00",
+      "receiptSha256": "cb8a3923d6da818c6f4abcf271faa4826855ee43fd735b0e0437304ebe6cd6d4",
+      "videoSha256": "c43434bc1250160faf86f092695bc5906d4fa2eccc43c7be58905fa29d2b5521",
+      "scheduleReceiptRef": "preparations/2026-10-28-scaterush132-schedule-confirmed.json",
+      "scheduleReceiptSha256": "6db3204ad22c68e6e038dae867925d7477c47d239b3a0bc9ef0cb397913a9ccb",
+      "predecessorVideoId": "7701100271014792466",
+      "publicMusicId": "7659693296944580646",
+      "analyticsDue": {
+        "basis": "Actual createTime in the official public item, not an unverified schedule estimate",
+        "first24hAt": "2026-10-29T03:15:00.000Z",
+        "hours72At": "2026-10-31T03:15:00.000Z",
+        "first24hAtJst": "2026-10-29T12:15:00+09:00",
+        "hours72AtJst": "2026-10-31T12:15:00+09:00"
+      },
+      "qualityHoldRetained": true,
+      "noResubmit": true,
+      "receiptRef": "receipts/2026-10-28-scaterush132-public.json"
+    }
+  ]
+}

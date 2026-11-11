@@ -1,0 +1,119 @@
+{
+  "issue": 132,
+  "duration": 6,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "music": {
+    "selected": false,
+    "nativeConfigured": false,
+    "trackId": null,
+    "bpm": null,
+    "beatOrigin": null
+  },
+  "shots": [
+    {
+      "name": "Cold open actual sign clearance normal speed",
+      "output": [
+        0,
+        0.6
+      ],
+      "source": 8.4,
+      "speed": 1
+    },
+    {
+      "name": "Close sign and player during the short question",
+      "output": [
+        0.6,
+        1.5
+      ],
+      "source": 8.24,
+      "speed": 0.4
+    },
+    {
+      "name": "Actual sign clearance normal speed",
+      "output": [
+        1.5,
+        1.9
+      ],
+      "source": 8.6,
+      "speed": 1
+    },
+    {
+      "name": "Actual exit from clearance",
+      "output": [
+        1.9,
+        3
+      ],
+      "source": 9,
+      "speed": 1
+    },
+    {
+      "name": "Actual moving continuation behind follow CTA",
+      "output": [
+        3,
+        6
+      ],
+      "source": 10.1,
+      "speed": 1
+    }
+  ],
+  "cues": [
+    {
+      "id": "question",
+      "text": "くぐれる？",
+      "at": 0.65,
+      "end": 1.5,
+      "file": "voice-question.wav"
+    },
+    {
+      "id": "clearance",
+      "text": "抜けた。",
+      "at": 1.65,
+      "end": 2.75,
+      "file": "voice-clearance.wav"
+    },
+    {
+      "id": "follow",
+      "text": "このゲームの続きは、フォローで。",
+      "at": 3.1,
+      "end": 5.5,
+      "file": "voice-follow.wav"
+    }
+  ],
+  "actualCore": [
+    {
+      "file": "model-main.mov",
+      "output": [
+        0.6,
+        2.8
+      ],
+      "sourceStart": 0,
+      "voice": [
+        "question",
+        "clearance"
+      ],
+      "newVoiceDrivenCore": true
+    },
+    {
+      "file": "model-ending.mov",
+      "output": [
+        3,
+        6
+      ],
+      "sourceStart": 0,
+      "oldOutputStart": 15,
+      "voice": "follow",
+      "wholeVoiceOffsetPreserved": true
+    }
+  ],
+  "sourceFacts": {
+    "webPrototype": true,
+    "recordedKeyboardAutomation": true,
+    "humanFirstPlay": false,
+    "rta": false,
+    "currentIphoneVersion": false,
+    "fabricatedFailure": false
+  },
+  "state": "PICTURE_VOICE_SFX_DRAFT_NATIVE_MUSIC_PENDING"
+}
