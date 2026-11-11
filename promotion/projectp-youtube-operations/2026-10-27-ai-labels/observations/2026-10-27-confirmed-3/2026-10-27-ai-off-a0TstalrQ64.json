@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "managementIssue": 128,
+  "platform": "YouTube",
+  "videoId": "a0TstalrQ64",
+  "channelId": "UCZsCpCNJ-BBKEv7EMz1P73Q",
+  "changedField": "alteredContentDisclosure",
+  "after": false,
+  "actualNoAfterNativeToolbarRefreshConfirmed": true,
+  "confirmedAt": "2026-10-27T00:38:57.0873542Z",
+  "saveIntentCount": 1,
+  "mediaUploads": 0,
+  "publicationOrScheduleIntentionallyChangedByThisAiOperation": false,
+  "actualVisibilityRevalidatedHere": false,
+  "publicationScheduleRelatedFullyRevalidated": false,
+  "creditFieldsIntentionallyChanged": false,
+  "allMetadataExactComparison": false,
+  "originalMediaAndImmutablePublicationReceiptsPreserved": true,
+  "controllerReportsRewritten": false,
+  "rootIndependentVerification": true,
+  "receiptReference": {
+    "file": "2026-10-27-ai-off-a0TstalrQ64.json",
+    "sha256": "e970e05b51aa08c33393d128d23ee29c614a3460868e7c37c5edf3b83e1f64c2"
+  },
+  "nonAiComparison": {
+    "all6EditFieldsExactlyEqual": true,
+    "other12NonAiControlsEqual": true,
+    "rawOtherControlsFingerprintEqual": false,
+    "audienceRadioGetterDifference": {
+      "beforeSelected": false,
+      "beforeToggle": "Off",
+      "afterSelected": true,
+      "afterToggle": "On"
+    },
+    "explicitAudienceStatusBeforeAfter": "この動画は子ども向けでない動画として設定されています",
+    "audienceSemanticStatusMatches": true,
+    "priorUploadNativeAudienceNoReportedByRoot": true,
+    "rawDifferencePreserved": true
+  },
+  "history": {
+    "initialFileLaunchRejectedByExecutionPolicyBeforeUi": true,
+    "policyChanged": false,
+    "rootUsedExistingNormalCommandInterface": true,
+    "saveOnce": true,
+    "nativeToolbarRefreshOnce": true,
+    "sourceControllerComplete": false,
+    "sourceControllerHoldReason": "Three reload readiness reads ended before the page became ready",
+    "rootIndependentReexpandConfirmedNo": true
+  },
+  "state": "ai_off_confirmed_other_settings_pending"
+}
