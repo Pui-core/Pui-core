@@ -1,0 +1,85 @@
+{
+  "shots": [
+    {
+      "id": "Room door opens",
+      "file": "room-entry.mp4",
+      "at": 0,
+      "end": 0.9666667,
+      "width": 1024,
+      "height": 2048,
+      "position": [
+        540,
+        960
+      ],
+      "scale": 105.5,
+      "sourceIn": 0.35
+    },
+    {
+      "id": "Sealed letter / peer has sent",
+      "file": "sealed-story05.mp4",
+      "at": 0.9666667,
+      "end": 2.8666667,
+      "width": 1100,
+      "height": 1800,
+      "position": [
+        500,
+        1010
+      ],
+      "scale": 65,
+      "sourceIn": 0.3
+    },
+    {
+      "id": "Choose the thanks stamp / actual selection",
+      "file": "select-story05.mp4",
+      "at": 2.8666667,
+      "end": 4.3333333,
+      "width": 1100,
+      "height": 1800,
+      "position": [
+        500,
+        1010
+      ],
+      "scale": 65
+    },
+    {
+      "id": "Seal button / recorded selected state",
+      "file": "seal-detail-story05.mp4",
+      "at": 4.3333333,
+      "end": 5.7666667,
+      "width": 1100,
+      "height": 760,
+      "position": [
+        500,
+        985
+      ],
+      "scale": 76
+    },
+    {
+      "id": "Mutual page / actual opened state",
+      "file": "opened-story05.mp4",
+      "at": 5.7666667,
+      "end": 7.2,
+      "width": 1100,
+      "height": 1800,
+      "position": [
+        500,
+        1010
+      ],
+      "scale": 65
+    },
+    {
+      "id": "Two stamps and message / editorial detail cut",
+      "file": "page-detail-story05.mp4",
+      "at": 7.2,
+      "end": 9.6,
+      "width": 1100,
+      "height": 1250,
+      "position": [
+        500,
+        980
+      ],
+      "scale": 76
+    }
+  ],
+  "cutStyle": "Explicit editorial cuts; original real UI preserved, fictional name/text overlays disclosed. The peer has already sent."
+}

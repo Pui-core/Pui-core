@@ -1,0 +1,116 @@
+{
+  "duration": 11.533333333333333,
+  "shots": [
+    {
+      "id": "Room opens / shortened editorial playback",
+      "file": "room-entry.mp4",
+      "a": 0,
+      "b": 0.48,
+      "w": 1024,
+      "h": 2048,
+      "x": 540,
+      "y": 960,
+      "s": 105.5,
+      "from": 0.35,
+      "to": 1.35
+    },
+    {
+      "id": "Still sealed / peer already sent",
+      "file": "sealed-story05.mp4",
+      "a": 0.48,
+      "b": 1.92,
+      "w": 1100,
+      "h": 1800,
+      "x": 500,
+      "y": 1010,
+      "s": 65,
+      "punch": 1.05
+    },
+    {
+      "id": "Actual stamp selection / match cut",
+      "file": "select-story05.mp4",
+      "a": 1.92,
+      "b": 2.88,
+      "w": 1100,
+      "h": 1800,
+      "x": 500,
+      "y": 1010,
+      "s": 65
+    },
+    {
+      "id": "Thanks stamp / directed close cut",
+      "file": "thanks-detail-speed06.mp4",
+      "a": 2.88,
+      "b": 3.84,
+      "w": 280,
+      "h": 340,
+      "x": 500,
+      "y": 980,
+      "s": 205,
+      "punch": 1.12,
+      "rotate": -1.1,
+      "from": 0.28
+    },
+    {
+      "id": "Actual selected seal button",
+      "file": "seal-detail-story05.mp4",
+      "a": 3.84,
+      "b": 4.8,
+      "w": 1100,
+      "h": 760,
+      "x": 500,
+      "y": 985,
+      "s": 76,
+      "punch": 1.07,
+      "from": 0.28
+    },
+    {
+      "id": "Mutual page completed / result",
+      "file": "opened-story05.mp4",
+      "a": 4.8,
+      "b": 5.76,
+      "w": 1100,
+      "h": 1800,
+      "x": 500,
+      "y": 1010,
+      "s": 65,
+      "punch": 1.04
+    },
+    {
+      "id": "Two stamps together / detail",
+      "file": "page-detail-story05.mp4",
+      "a": 5.76,
+      "b": 6.72,
+      "w": 1100,
+      "h": 1250,
+      "x": 500,
+      "y": 980,
+      "s": 76,
+      "punch": 1.035
+    },
+    {
+      "id": "Short message / detail",
+      "file": "message-detail-speed06.mp4",
+      "a": 6.72,
+      "b": 7.68,
+      "w": 1100,
+      "h": 760,
+      "x": 500,
+      "y": 985,
+      "s": 76,
+      "punch": 1.045
+    },
+    {
+      "id": "Page in context / return match cut",
+      "file": "opened-story05.mp4",
+      "a": 7.68,
+      "b": 8.64,
+      "w": 1100,
+      "h": 1800,
+      "x": 500,
+      "y": 1010,
+      "s": 65
+    }
+  ],
+  "semanticCuts": "Sealed -> actual selection -> thanks -> actual selected seal -> completed mutual page -> two stamps -> sentence -> full context. No invented button press or opening animation."
+}
