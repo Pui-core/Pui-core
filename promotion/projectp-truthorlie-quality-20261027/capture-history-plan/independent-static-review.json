@@ -1,0 +1,31 @@
+{
+  "status": "STATIC_REVIEW_ONLY_NOT_RUNTIME_ACCEPTANCE",
+  "reviewer": "/root/truthorlie_quality129/sim129_plan_ro",
+  "findingsAddressed": [
+    "GUI target screenshot/named window match before first input",
+    "Fresh Root release window ID+UDID and final consumer check",
+    "Boot request alone is not accepted ownership",
+    "QA failure separated from residual/unsafe shutdown state"
+  ],
+  "currentLimitation": "Whole strict600-second envelope does not include every direct cp/ps/mkdir; future outer ownedPID deadline guard required. Actual cold attempt ended46s.",
+  "macActionsByReviewer": 0,
+  "filesReviewed": [
+    {
+      "file": "batch-control-prepared.sh",
+      "sha256": "7f16c3bd201dfaabb96b82db95bdd351fbabef2c6c3e2b5b121d8b2abd219d27"
+    },
+    {
+      "file": "target-consumers-prepared.rb",
+      "sha256": "3b7337af70df5af1990b1a9820fd10108ff864e8c6e74fe581d01aa89b0d19a7"
+    },
+    {
+      "file": "cold-stage-authorized.sh",
+      "sha256": "4e13fc8b46808d2a165933f9f558e6f2b77653b1cfdb3d0d0f53082ad233e1be"
+    },
+    {
+      "file": "verify-cold.rb",
+      "sha256": "b6aba9330665be6796c839f706f091e2422e202d72c64f2463ba368dcf164c1c"
+    }
+  ],
+  "runtimePass": false
+}

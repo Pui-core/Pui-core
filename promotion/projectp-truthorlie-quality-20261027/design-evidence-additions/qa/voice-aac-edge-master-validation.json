@@ -1,0 +1,848 @@
+{
+  "status": "PASS_ALL44_FINAL_AAC_HEAD_TAIL_NUMERICAL",
+  "source": "presented narration stem:34 base cues plus10 new design-evidence cues",
+  "referenceSha256": "281ef2baf8676657a8d5c293e997c5cce73601c454c5dcc33aa40dcbc8786fbc",
+  "finalSha256": "294b9cc6c49df07db94a3db75a4885b67ac816d52019d97b2a53d0e706f539d1",
+  "sampleRate": 48000,
+  "cues": [
+    {
+      "id": "hook",
+      "expectedPhraseStartSeconds": 0.25,
+      "expectedPhraseEndSeconds": 2.375,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.19016209376433937,
+        "finalRms": 0.18946857644282067,
+        "correlation": 0.9999099224445875
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.04026314372339344,
+        "finalRms": 0.04027945564017324,
+        "correlation": 0.9996180531177246
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "rule",
+      "expectedPhraseStartSeconds": 3.855,
+      "expectedPhraseEndSeconds": 7.795,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.15378961611758185,
+        "finalRms": 0.1532599690657147,
+        "correlation": 0.9997500599130259
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.07941844601761201,
+        "finalRms": 0.07937353458941016,
+        "correlation": 0.9999675534967646
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "case1",
+      "expectedPhraseStartSeconds": 10.05,
+      "expectedPhraseEndSeconds": 12.47,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.1157021511075529,
+        "finalRms": 0.11573830220274729,
+        "correlation": 0.9996699579848048
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.07632035023070124,
+        "finalRms": 0.07592338398415611,
+        "correlation": 0.9996687251658943
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "hit",
+      "expectedPhraseStartSeconds": 16.055,
+      "expectedPhraseEndSeconds": 18.69,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.19585443712883782,
+        "finalRms": 0.19586751305999847,
+        "correlation": 0.9999562452633717
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.04269999365583299,
+        "finalRms": 0.04270544167957571,
+        "correlation": 0.9987702804698277
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "switch",
+      "expectedPhraseStartSeconds": 21.05,
+      "expectedPhraseEndSeconds": 23.105,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.22972386868780664,
+        "finalRms": 0.2298280050321476,
+        "correlation": 0.9997958137713826
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.07348501629649223,
+        "finalRms": 0.07312444562319884,
+        "correlation": 0.999720704876907
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "case2",
+      "expectedPhraseStartSeconds": 24.045,
+      "expectedPhraseEndSeconds": 26.735,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.11889057335513101,
+        "finalRms": 0.11887583889538182,
+        "correlation": 0.9993791565498125
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.04990567491644321,
+        "finalRms": 0.049758751076821796,
+        "correlation": 0.998696408057075
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "miss",
+      "expectedPhraseStartSeconds": 30.07,
+      "expectedPhraseEndSeconds": 32.7,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.11788566810671322,
+        "finalRms": 0.11781943560818557,
+        "correlation": 0.9997225462653153
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.040372698606924565,
+        "finalRms": 0.04033700317428228,
+        "correlation": 0.9969726544015064
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "consequence",
+      "expectedPhraseStartSeconds": 35.045,
+      "expectedPhraseEndSeconds": 39.545,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.16291938871418934,
+        "finalRms": 0.16281215650042413,
+        "correlation": 0.9982752197400784
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06473488296502569,
+        "finalRms": 0.06466673135965598,
+        "correlation": 0.9997422931986956
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "next",
+      "expectedPhraseStartSeconds": 41.14,
+      "expectedPhraseEndSeconds": 43.64,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.1401282591040542,
+        "finalRms": 0.13996697632785732,
+        "correlation": 0.9994057695479796
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.08347264543589297,
+        "finalRms": 0.08328727263383845,
+        "correlation": 0.9986963214001319
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d2-01",
+      "expectedPhraseStartSeconds": 44.14,
+      "expectedPhraseEndSeconds": 49.315,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.11281962901774495,
+        "finalRms": 0.11292733883118751,
+        "correlation": 0.9993205240403614
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.058604278597145266,
+        "finalRms": 0.05865011477052567,
+        "correlation": 0.9992072686595284
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d2-02",
+      "expectedPhraseStartSeconds": 50.89833333333333,
+      "expectedPhraseEndSeconds": 56.51833333333333,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.07762317266693618,
+        "finalRms": 0.07719456069433288,
+        "correlation": 0.999073792884134
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.05871278073443654,
+        "finalRms": 0.059471888512171764,
+        "correlation": 0.9957649709990374
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d2-03",
+      "expectedPhraseStartSeconds": 57.055,
+      "expectedPhraseEndSeconds": 60.875,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.16150817724722027,
+        "finalRms": 0.16179182940046252,
+        "correlation": 0.9989560106988183
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.03467401315551251,
+        "finalRms": 0.034624083518758786,
+        "correlation": 0.9797781115400314
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d2-04",
+      "expectedPhraseStartSeconds": 61.455,
+      "expectedPhraseEndSeconds": 66.775,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.2279834262658539,
+        "finalRms": 0.22795779133038896,
+        "correlation": 0.9997137402152073
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.07192924778834588,
+        "finalRms": 0.07191409362551311,
+        "correlation": 0.9994057357514645
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d2-05",
+      "expectedPhraseStartSeconds": 67.33666666666667,
+      "expectedPhraseEndSeconds": 73.03666666666666,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.19212380065822704,
+        "finalRms": 0.1921790448813496,
+        "correlation": 0.9992842047934796
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.07339184923903168,
+        "finalRms": 0.07334229833443924,
+        "correlation": 0.9994863005631742
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "logo-question",
+      "expectedPhraseStartSeconds": 73.58833333333334,
+      "expectedPhraseEndSeconds": 77.50333333333333,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.14448961384592232,
+        "finalRms": 0.14475021702983124,
+        "correlation": 0.9979439472644315
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.05470465288766373,
+        "finalRms": 0.05473926989237556,
+        "correlation": 0.9988576393397036
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "logo-changes",
+      "expectedPhraseStartSeconds": 78.81166666666667,
+      "expectedPhraseEndSeconds": 85.73666666666666,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.102016628284301,
+        "finalRms": 0.10165851012094043,
+        "correlation": 0.9982914012500486
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.07283606260548224,
+        "finalRms": 0.07278388113889649,
+        "correlation": 0.9996822123362332
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "night-choice-short",
+      "expectedPhraseStartSeconds": 86.31833333333333,
+      "expectedPhraseEndSeconds": 92.86333333333333,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.2315524244277652,
+        "finalRms": 0.23169554499658268,
+        "correlation": 0.9998804576490619
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06999903617620287,
+        "finalRms": 0.069714317263384,
+        "correlation": 0.995446116949608
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "night-app-short",
+      "expectedPhraseStartSeconds": 93.42166666666667,
+      "expectedPhraseEndSeconds": 99.09666666666666,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.16207641977989368,
+        "finalRms": 0.16225792442597317,
+        "correlation": 0.9987499933160976
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.07186024630049033,
+        "finalRms": 0.07185141333992946,
+        "correlation": 0.9994001052189021
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "paper-evolution",
+      "expectedPhraseStartSeconds": 99.655,
+      "expectedPhraseEndSeconds": 107.125,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.16571126159311939,
+        "finalRms": 0.16496262898629116,
+        "correlation": 0.9996004081418731
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.07033174288546691,
+        "finalRms": 0.07031054050817392,
+        "correlation": 0.999909799006452
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "paper-text-short",
+      "expectedPhraseStartSeconds": 107.67333333333333,
+      "expectedPhraseEndSeconds": 112.69333333333333,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.191856807626637,
+        "finalRms": 0.1915347602291352,
+        "correlation": 0.9998693991334805
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06851053824479342,
+        "finalRms": 0.06810984649667941,
+        "correlation": 0.9992799177824777
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "field-change",
+      "expectedPhraseStartSeconds": 113.245,
+      "expectedPhraseEndSeconds": 120.83,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.17105719283085538,
+        "finalRms": 0.17104523324926754,
+        "correlation": 0.9998736145848828
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06042101431076674,
+        "finalRms": 0.05991148094221529,
+        "correlation": 0.9990756033003039
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "footer-change",
+      "expectedPhraseStartSeconds": 121.39333333333333,
+      "expectedPhraseEndSeconds": 127.42333333333333,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.04677261375614994,
+        "finalRms": 0.0464317818339203,
+        "correlation": 0.9986514652843249
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.0713938388329992,
+        "finalRms": 0.07135248017862078,
+        "correlation": 0.9999422087219871
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "seal-change",
+      "expectedPhraseStartSeconds": 127.97833333333334,
+      "expectedPhraseEndSeconds": 135.23333333333332,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.17195096762669496,
+        "finalRms": 0.17150765326227177,
+        "correlation": 0.9995331191686622
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06710766434041482,
+        "finalRms": 0.06713134578084022,
+        "correlation": 0.999097666906277
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "return-short",
+      "expectedPhraseStartSeconds": 135.77833333333334,
+      "expectedPhraseEndSeconds": 138.89333333333335,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.1147568019788342,
+        "finalRms": 0.11514505068008556,
+        "correlation": 0.9977198842433486
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06953923188578934,
+        "finalRms": 0.0689205948742249,
+        "correlation": 0.9983283028154545
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d3-01",
+      "expectedPhraseStartSeconds": 139.465,
+      "expectedPhraseEndSeconds": 145.685,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.06923798515629032,
+        "finalRms": 0.0690866497287322,
+        "correlation": 0.9985983221375117
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06625588707206014,
+        "finalRms": 0.06550423593674788,
+        "correlation": 0.9975119745738039
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d3-02",
+      "expectedPhraseStartSeconds": 146.275,
+      "expectedPhraseEndSeconds": 153.06,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.08056670934956053,
+        "finalRms": 0.08057079337386784,
+        "correlation": 0.9981303321662975
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06225491836380896,
+        "finalRms": 0.06168912136192043,
+        "correlation": 0.9979336724695417
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d3-03",
+      "expectedPhraseStartSeconds": 153.62166666666667,
+      "expectedPhraseEndSeconds": 161.17166666666665,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.17658657121618174,
+        "finalRms": 0.17625152829678764,
+        "correlation": 0.998332073268502
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.069516067413202,
+        "finalRms": 0.06896475334602567,
+        "correlation": 0.998520582925426
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d4-01",
+      "expectedPhraseStartSeconds": 161.73666666666668,
+      "expectedPhraseEndSeconds": 169.40166666666667,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.10099974822200433,
+        "finalRms": 0.1010719310158731,
+        "correlation": 0.9976124886355993
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.0380079390067239,
+        "finalRms": 0.03792942019858845,
+        "correlation": 0.9987465056801315
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d4-02",
+      "expectedPhraseStartSeconds": 171.02166666666668,
+      "expectedPhraseEndSeconds": 176.44166666666666,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.2038501447488693,
+        "finalRms": 0.20359264769549185,
+        "correlation": 0.9997061139551606
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.04511350913987832,
+        "finalRms": 0.04622404515472282,
+        "correlation": 0.9985950672548236
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d4-03",
+      "expectedPhraseStartSeconds": 176.99333333333334,
+      "expectedPhraseEndSeconds": 182.03833333333333,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.21730665295844656,
+        "finalRms": 0.21669294300537564,
+        "correlation": 0.999692523337162
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.054200950593714325,
+        "finalRms": 0.05424326901793843,
+        "correlation": 0.9998081993808502
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d4-04",
+      "expectedPhraseStartSeconds": 183.59833333333333,
+      "expectedPhraseEndSeconds": 186.60333333333332,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.09458736685969295,
+        "finalRms": 0.09438549205314681,
+        "correlation": 0.9996401474611369
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.07479076025962306,
+        "finalRms": 0.07476029457838902,
+        "correlation": 0.9999710581830464
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d4-05",
+      "expectedPhraseStartSeconds": 187.175,
+      "expectedPhraseEndSeconds": 191.67,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.02658400604416805,
+        "finalRms": 0.026610890702998706,
+        "correlation": 0.9988633027635491
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06889652268785335,
+        "finalRms": 0.06885244809821618,
+        "correlation": 0.9999482569172762
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d5-01",
+      "expectedPhraseStartSeconds": 192.21666666666667,
+      "expectedPhraseEndSeconds": 197.85166666666666,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.10703863294905523,
+        "finalRms": 0.10694526303969844,
+        "correlation": 0.999967839467002
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.053089049847869454,
+        "finalRms": 0.0530940434025719,
+        "correlation": 0.999896558372718
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d5-02",
+      "expectedPhraseStartSeconds": 199.43666666666667,
+      "expectedPhraseEndSeconds": 203.67666666666668,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.21938580056062568,
+        "finalRms": 0.21918080248138738,
+        "correlation": 0.9999519611957274
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06824506238499173,
+        "finalRms": 0.06820793535343286,
+        "correlation": 0.9999649230688112
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d5-03",
+      "expectedPhraseStartSeconds": 204.22166666666666,
+      "expectedPhraseEndSeconds": 210.38666666666666,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.12844256350554836,
+        "finalRms": 0.1278035501945107,
+        "correlation": 0.9978268324453515
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.023451685758670494,
+        "finalRms": 0.024222638024761406,
+        "correlation": 0.9942551775482076
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d5-04",
+      "expectedPhraseStartSeconds": 211.95,
+      "expectedPhraseEndSeconds": 218.065,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.040041406859416595,
+        "finalRms": 0.039950227626180064,
+        "correlation": 0.9977991050117753
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.04655269840037693,
+        "finalRms": 0.0466597194118947,
+        "correlation": 0.9960409401597801
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d5-05",
+      "expectedPhraseStartSeconds": 218.61666666666667,
+      "expectedPhraseEndSeconds": 223.81666666666666,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.19883996333682555,
+        "finalRms": 0.19858850513413373,
+        "correlation": 0.9996894329981575
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.07039178232261388,
+        "finalRms": 0.07035249788842268,
+        "correlation": 0.9999779984935342
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d5-06",
+      "expectedPhraseStartSeconds": 224.38833333333332,
+      "expectedPhraseEndSeconds": 232.46333333333334,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.18213316991216374,
+        "finalRms": 0.18241615698421193,
+        "correlation": 0.999834693631306
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06953714870302351,
+        "finalRms": 0.06948932035825532,
+        "correlation": 0.9999888479023077
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d6-01",
+      "expectedPhraseStartSeconds": 233.03166666666667,
+      "expectedPhraseEndSeconds": 238.62666666666667,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.10151818848024208,
+        "finalRms": 0.10144725296252428,
+        "correlation": 0.9999740372383029
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.034575151368852315,
+        "finalRms": 0.0346399621672161,
+        "correlation": 0.9998440281026278
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d6-02",
+      "expectedPhraseStartSeconds": 239.20333333333335,
+      "expectedPhraseEndSeconds": 244.66833333333332,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.07083361332256535,
+        "finalRms": 0.0707099216884504,
+        "correlation": 0.9999638420760288
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.044646054729037876,
+        "finalRms": 0.04461747201141001,
+        "correlation": 0.9999925639611462
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d6-03",
+      "expectedPhraseStartSeconds": 245.22666666666666,
+      "expectedPhraseEndSeconds": 251.03166666666667,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.13805655951324408,
+        "finalRms": 0.13783735710808073,
+        "correlation": 0.9999707431789471
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06503161006927605,
+        "finalRms": 0.06457119168429008,
+        "correlation": 0.9995668056257517
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d6-04",
+      "expectedPhraseStartSeconds": 251.58833333333334,
+      "expectedPhraseEndSeconds": 257.49333333333334,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.16971885802285502,
+        "finalRms": 0.1695899440770709,
+        "correlation": 0.9999817354391912
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06604236347002422,
+        "finalRms": 0.06546148928293527,
+        "correlation": 0.999206827273333
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d6-05",
+      "expectedPhraseStartSeconds": 258.05,
+      "expectedPhraseEndSeconds": 264.765,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.17376077856296412,
+        "finalRms": 0.17376021905799163,
+        "correlation": 0.9999843135989143
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.06466990244689512,
+        "finalRms": 0.06398936450086003,
+        "correlation": 0.9990864214679149
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    },
+    {
+      "id": "d6-06",
+      "expectedPhraseStartSeconds": 265.33666666666664,
+      "expectedPhraseEndSeconds": 269.2216666666667,
+      "head": {
+        "samples": 5760,
+        "referenceRms": 0.0867494054853721,
+        "finalRms": 0.08643859600341511,
+        "correlation": 0.9999143877736675
+      },
+      "tail": {
+        "samples": 5760,
+        "referenceRms": 0.03932573374575291,
+        "finalRms": 0.03914953375383254,
+        "correlation": 0.9997612106099946
+      },
+      "wholeWithinCue": true,
+      "headAndTailPresent": true
+    }
+  ],
+  "all44Present": true,
+  "subjectiveListen": false,
+  "numericalCorrelationIsNotAudition": true
+}

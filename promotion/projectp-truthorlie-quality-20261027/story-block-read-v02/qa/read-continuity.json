@@ -1,0 +1,591 @@
+{
+  "status": "PASS_FINAL_NATIVE_AV_EXCERPTS_AND_6FPS_SEQUENCE_CREATED",
+  "finalMasterSha256": "822bce9f019086d9a5e12cfb6f395c9a0ef17657a29b7ed49e9d71b2d9724509",
+  "segments": [
+    {
+      "id": "first-score",
+      "start": 18,
+      "end": 21.2,
+      "clip": "qa/read-continuity-first-score.mp4",
+      "clipSha256": "54e8199e569592a8ea94ff1ed4a1fd6f85896dce6aa40f71a35fc4cb8d4b215e",
+      "clipDuration": 3.2,
+      "clipVideoFrames": "96",
+      "sampling": "Every5th decoded frame at native30fps: 6fps sequence; nominal source time=start+index/6",
+      "frames": [
+        {
+          "file": "qa/read-sequence/first-score/frame-001.jpg",
+          "nominalMasterTime": 18,
+          "sha256": "337c892202991080f1577319addf8ca0d23173680eb7fda8e1a915e4ce7cf4d7"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-002.jpg",
+          "nominalMasterTime": 18.166667,
+          "sha256": "456eeea24746f6beecedc95b7b978839dc9ece77ae6c2fe6f146dcd92af8ee25"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-003.jpg",
+          "nominalMasterTime": 18.333333,
+          "sha256": "9560ae488601cfc2fa97857ee1d7908c5cc01d7034dd18bc206ec48199df07b0"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-004.jpg",
+          "nominalMasterTime": 18.5,
+          "sha256": "0a06972c3ac506502f297abe7b9688159c9b772977588d19a890cf643a95ff30"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-005.jpg",
+          "nominalMasterTime": 18.666667,
+          "sha256": "ab0fca30070023392d22122fd6e2ab3a45a9d78e6b5b0e1a0e7e620ca9d081ed"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-006.jpg",
+          "nominalMasterTime": 18.833333,
+          "sha256": "be3f45620fc64bc12a1f105453ef1d6269001e054019d4e42bac2c185c131c1a"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-007.jpg",
+          "nominalMasterTime": 19,
+          "sha256": "f61af7ef48034c0f6356913d3571b52c6ab44c62b61a805eb8567552e876758d"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-008.jpg",
+          "nominalMasterTime": 19.166667,
+          "sha256": "be3f45620fc64bc12a1f105453ef1d6269001e054019d4e42bac2c185c131c1a"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-009.jpg",
+          "nominalMasterTime": 19.333333,
+          "sha256": "be3f45620fc64bc12a1f105453ef1d6269001e054019d4e42bac2c185c131c1a"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-010.jpg",
+          "nominalMasterTime": 19.5,
+          "sha256": "7fdc6b8925d09a768154f0e34927964a08f8146d4d3ecbbc637ad92ced890bb6"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-011.jpg",
+          "nominalMasterTime": 19.666667,
+          "sha256": "be3f45620fc64bc12a1f105453ef1d6269001e054019d4e42bac2c185c131c1a"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-012.jpg",
+          "nominalMasterTime": 19.833333,
+          "sha256": "be3f45620fc64bc12a1f105453ef1d6269001e054019d4e42bac2c185c131c1a"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-013.jpg",
+          "nominalMasterTime": 20,
+          "sha256": "05d171aa3a5facabae55f790cdfc984cffbcb68e76f66c64e9c5923f6cc0e47c"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-014.jpg",
+          "nominalMasterTime": 20.166667,
+          "sha256": "81f47ad4032e44d6d88d3553b8c0d1f6ddfc87d26739869992de189aee3c0e3b"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-015.jpg",
+          "nominalMasterTime": 20.333333,
+          "sha256": "176e8e27b21bd004dec7edef1b1c318dda490f28d3c1d04d4b5a8e7529ea3673"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-016.jpg",
+          "nominalMasterTime": 20.5,
+          "sha256": "dcefa88eea93c090555ed9afe0d0e0826fa636937c306df9fb8dfb15abf524af"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-017.jpg",
+          "nominalMasterTime": 20.666667,
+          "sha256": "176e8e27b21bd004dec7edef1b1c318dda490f28d3c1d04d4b5a8e7529ea3673"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-018.jpg",
+          "nominalMasterTime": 20.833333,
+          "sha256": "176e8e27b21bd004dec7edef1b1c318dda490f28d3c1d04d4b5a8e7529ea3673"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-019.jpg",
+          "nominalMasterTime": 21,
+          "sha256": "8816b56b16f09528d508804fe2e14a2e1e7972c843a9967258d3cef4f601e0d5"
+        },
+        {
+          "file": "qa/read-sequence/first-score/frame-020.jpg",
+          "nominalMasterTime": 21.166667,
+          "sha256": "2cabf7a766ca11ce57d5dbc68c395bff75fec450a78f44407ecb8db53873c9bb"
+        }
+      ]
+    },
+    {
+      "id": "second-score-and-comparison",
+      "start": 31.8,
+      "end": 41.2,
+      "clip": "qa/read-continuity-second-score-and-comparison.mp4",
+      "clipSha256": "83ad627bbb5b68ee7489030144f6b980b748f10ae60f8ca2493ae8f64649af76",
+      "clipDuration": 9.4,
+      "clipVideoFrames": "282",
+      "sampling": "Every5th decoded frame at native30fps: 6fps sequence; nominal source time=start+index/6",
+      "frames": [
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-001.jpg",
+          "nominalMasterTime": 31.8,
+          "sha256": "50960e7926cd7c7d8bbad114ead6e24bf16de799bbabdb56dbe10d57c3158a43"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-002.jpg",
+          "nominalMasterTime": 31.966667,
+          "sha256": "50960e7926cd7c7d8bbad114ead6e24bf16de799bbabdb56dbe10d57c3158a43"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-003.jpg",
+          "nominalMasterTime": 32.133333,
+          "sha256": "8c59d14b8db0b0192a6b6cdb16533693fc966aa7d3539629c2d703c42da580bb"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-004.jpg",
+          "nominalMasterTime": 32.3,
+          "sha256": "d5f83aba4af65e905a48458bba818793839cffdb381051ba3340fbcb8cc678c1"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-005.jpg",
+          "nominalMasterTime": 32.466667,
+          "sha256": "d3f064e132819fd4133256157686ef59a5552fcba156a8f9d3a1651c3bbdbff1"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-006.jpg",
+          "nominalMasterTime": 32.633333,
+          "sha256": "299c9c8a62de16d80d505bfdd11eebdc716d55a373dabcaf82fb7df99a7567ca"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-007.jpg",
+          "nominalMasterTime": 32.8,
+          "sha256": "1e969539e1c571c078b5f9a3988a14ef2e8505cd17262c2a5abf6e7e6f1ea8a0"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-008.jpg",
+          "nominalMasterTime": 32.966667,
+          "sha256": "f64cb50b2d65d08171d180bda6a0fbc27052a11a1bb38ed4962e7aaafa5d045e"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-009.jpg",
+          "nominalMasterTime": 33.133333,
+          "sha256": "f64cb50b2d65d08171d180bda6a0fbc27052a11a1bb38ed4962e7aaafa5d045e"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-010.jpg",
+          "nominalMasterTime": 33.3,
+          "sha256": "6703f2c335cff829a419c73aab930885a05a6c9d8d154dc7b6cbac56a7a73e8d"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-011.jpg",
+          "nominalMasterTime": 33.466667,
+          "sha256": "f64cb50b2d65d08171d180bda6a0fbc27052a11a1bb38ed4962e7aaafa5d045e"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-012.jpg",
+          "nominalMasterTime": 33.633333,
+          "sha256": "f64cb50b2d65d08171d180bda6a0fbc27052a11a1bb38ed4962e7aaafa5d045e"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-013.jpg",
+          "nominalMasterTime": 33.8,
+          "sha256": "1e969539e1c571c078b5f9a3988a14ef2e8505cd17262c2a5abf6e7e6f1ea8a0"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-014.jpg",
+          "nominalMasterTime": 33.966667,
+          "sha256": "1e969539e1c571c078b5f9a3988a14ef2e8505cd17262c2a5abf6e7e6f1ea8a0"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-015.jpg",
+          "nominalMasterTime": 34.133333,
+          "sha256": "133c9da39d4a2a2d24a854888024bcb43777967d8c1189e837daefd6146a79c1"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-016.jpg",
+          "nominalMasterTime": 34.3,
+          "sha256": "dbf78d7d8b7c4753bb148bf802693e249e6d1888a256f2a08c60ed1de8060af0"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-017.jpg",
+          "nominalMasterTime": 34.466667,
+          "sha256": "e44a29c34920297bb1fab744370b7aecbe4b6f276c543bf34448e616b3f125f8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-018.jpg",
+          "nominalMasterTime": 34.633333,
+          "sha256": "e44a29c34920297bb1fab744370b7aecbe4b6f276c543bf34448e616b3f125f8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-019.jpg",
+          "nominalMasterTime": 34.8,
+          "sha256": "2e8e228236fb3a4047f87d98c28a5097cf3b649b22b2b193a2a1f6a7c5de3331"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-020.jpg",
+          "nominalMasterTime": 34.966667,
+          "sha256": "5924cfafd472df224b2f1e337d518f4c5bcb0dd0d84a2dfb3dd2e9fc6a6a761f"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-021.jpg",
+          "nominalMasterTime": 35.133333,
+          "sha256": "f84cf39929e509aee02dcb4339694fa03638ff27f6c3b6343458792a818a7dcc"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-022.jpg",
+          "nominalMasterTime": 35.3,
+          "sha256": "096c0e24e8740be3c04ae4ef95caefc97b862ed9c9b38873258df3f141ab707a"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-023.jpg",
+          "nominalMasterTime": 35.466667,
+          "sha256": "c04123c4fac6733b99c3a7b0d26b7424886ceec42d3a422ccfabcbd8dc9d2ab1"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-024.jpg",
+          "nominalMasterTime": 35.633333,
+          "sha256": "c04123c4fac6733b99c3a7b0d26b7424886ceec42d3a422ccfabcbd8dc9d2ab1"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-025.jpg",
+          "nominalMasterTime": 35.8,
+          "sha256": "c686db3d6eefbb859423e1f7cb18889110cab7aa4c7e27ff4d60c7dc8ac1f69f"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-026.jpg",
+          "nominalMasterTime": 35.966667,
+          "sha256": "c686db3d6eefbb859423e1f7cb18889110cab7aa4c7e27ff4d60c7dc8ac1f69f"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-027.jpg",
+          "nominalMasterTime": 36.133333,
+          "sha256": "a381c3225fd286bc6a5dc9fd9ff5b14f14f8f788e3461c95fd53ef9c0aa58ae9"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-028.jpg",
+          "nominalMasterTime": 36.3,
+          "sha256": "e663d9ed0ada0a412b5343aae9e704ee081f652dc98569c6b66112e07b9449a4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-029.jpg",
+          "nominalMasterTime": 36.466667,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-030.jpg",
+          "nominalMasterTime": 36.633333,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-031.jpg",
+          "nominalMasterTime": 36.8,
+          "sha256": "242dcf1bbfc5902562a3994ae4225b382e9eebb584a5fec41d7e5ec8ab9ea0b4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-032.jpg",
+          "nominalMasterTime": 36.966667,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-033.jpg",
+          "nominalMasterTime": 37.133333,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-034.jpg",
+          "nominalMasterTime": 37.3,
+          "sha256": "e663d9ed0ada0a412b5343aae9e704ee081f652dc98569c6b66112e07b9449a4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-035.jpg",
+          "nominalMasterTime": 37.466667,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-036.jpg",
+          "nominalMasterTime": 37.633333,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-037.jpg",
+          "nominalMasterTime": 37.8,
+          "sha256": "242dcf1bbfc5902562a3994ae4225b382e9eebb584a5fec41d7e5ec8ab9ea0b4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-038.jpg",
+          "nominalMasterTime": 37.966667,
+          "sha256": "242dcf1bbfc5902562a3994ae4225b382e9eebb584a5fec41d7e5ec8ab9ea0b4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-039.jpg",
+          "nominalMasterTime": 38.133333,
+          "sha256": "a381c3225fd286bc6a5dc9fd9ff5b14f14f8f788e3461c95fd53ef9c0aa58ae9"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-040.jpg",
+          "nominalMasterTime": 38.3,
+          "sha256": "e663d9ed0ada0a412b5343aae9e704ee081f652dc98569c6b66112e07b9449a4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-041.jpg",
+          "nominalMasterTime": 38.466667,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-042.jpg",
+          "nominalMasterTime": 38.633333,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-043.jpg",
+          "nominalMasterTime": 38.8,
+          "sha256": "242dcf1bbfc5902562a3994ae4225b382e9eebb584a5fec41d7e5ec8ab9ea0b4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-044.jpg",
+          "nominalMasterTime": 38.966667,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-045.jpg",
+          "nominalMasterTime": 39.133333,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-046.jpg",
+          "nominalMasterTime": 39.3,
+          "sha256": "e663d9ed0ada0a412b5343aae9e704ee081f652dc98569c6b66112e07b9449a4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-047.jpg",
+          "nominalMasterTime": 39.466667,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-048.jpg",
+          "nominalMasterTime": 39.633333,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-049.jpg",
+          "nominalMasterTime": 39.8,
+          "sha256": "242dcf1bbfc5902562a3994ae4225b382e9eebb584a5fec41d7e5ec8ab9ea0b4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-050.jpg",
+          "nominalMasterTime": 39.966667,
+          "sha256": "242dcf1bbfc5902562a3994ae4225b382e9eebb584a5fec41d7e5ec8ab9ea0b4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-051.jpg",
+          "nominalMasterTime": 40.133333,
+          "sha256": "a381c3225fd286bc6a5dc9fd9ff5b14f14f8f788e3461c95fd53ef9c0aa58ae9"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-052.jpg",
+          "nominalMasterTime": 40.3,
+          "sha256": "e663d9ed0ada0a412b5343aae9e704ee081f652dc98569c6b66112e07b9449a4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-053.jpg",
+          "nominalMasterTime": 40.466667,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-054.jpg",
+          "nominalMasterTime": 40.633333,
+          "sha256": "f2e45b33746744859ac280aee77da8678e92e133e2e77b7f1a221c2e880b28a8"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-055.jpg",
+          "nominalMasterTime": 40.8,
+          "sha256": "242dcf1bbfc5902562a3994ae4225b382e9eebb584a5fec41d7e5ec8ab9ea0b4"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-056.jpg",
+          "nominalMasterTime": 40.966667,
+          "sha256": "cd2f2ffccc928ff511c024852f8ae2115c4061fa62c9f54e6e21a8383bcfa966"
+        },
+        {
+          "file": "qa/read-sequence/second-score-and-comparison/frame-057.jpg",
+          "nominalMasterTime": 41.133333,
+          "sha256": "2ac72259d9133888e9f79fec9306a46ecfbc7a5f26db030338c9ce51e93e5c90"
+        }
+      ]
+    }
+  ],
+  "totalSampledFrames": 77,
+  "nativeLabels": [
+    {
+      "name": "Case1 awarded role",
+      "text": "推理した BB",
+      "output": [
+        18.2,
+        21
+      ],
+      "center": [
+        1187,
+        290
+      ],
+      "width": 327.7870178222656,
+      "height": 51.515625,
+      "size": 56
+    },
+    {
+      "name": "Case1 current gain",
+      "text": "今回 +1",
+      "output": [
+        18.2,
+        21
+      ],
+      "center": [
+        1187,
+        400
+      ],
+      "width": 227.80499267578125,
+      "height": 59.375,
+      "size": 64
+    },
+    {
+      "name": "Case1 cumulative score",
+      "text": "累計 0 → 1",
+      "output": [
+        18.2,
+        21
+      ],
+      "center": [
+        1187,
+        780
+      ],
+      "width": 250.13609313964844,
+      "height": 46.81640625,
+      "size": 51
+    },
+    {
+      "name": "Case2 awarded role",
+      "text": "出題した BB",
+      "output": [
+        32,
+        35
+      ],
+      "center": [
+        1187,
+        290
+      ],
+      "width": 324.9432678222656,
+      "height": 51.5703125,
+      "size": 56
+    },
+    {
+      "name": "Case2 current gain",
+      "text": "今回 +1",
+      "output": [
+        32,
+        35
+      ],
+      "center": [
+        1187,
+        400
+      ],
+      "width": 227.80499267578125,
+      "height": 59.375,
+      "size": 64
+    },
+    {
+      "name": "Case2 cumulative score",
+      "text": "累計 1 → 2",
+      "output": [
+        32,
+        35
+      ],
+      "center": [
+        1187,
+        780
+      ],
+      "width": 251.03257751464844,
+      "height": 46.81640625,
+      "size": 51
+    },
+    {
+      "name": "Compare first current gain",
+      "text": "今回 +1",
+      "output": [
+        35,
+        41
+      ],
+      "center": [
+        550,
+        430
+      ],
+      "width": 170.85374450683594,
+      "height": 44.53125,
+      "size": 48
+    },
+    {
+      "name": "Compare second current gain",
+      "text": "今回 +1",
+      "output": [
+        35,
+        41
+      ],
+      "center": [
+        1370,
+        430
+      ],
+      "width": 170.85374450683594,
+      "height": 44.53125,
+      "size": 48
+    },
+    {
+      "name": "Compare first cumulative",
+      "text": "累計 1",
+      "output": [
+        35,
+        41
+      ],
+      "center": [
+        550,
+        710
+      ],
+      "width": 123.34833526611328,
+      "height": 41.30859375,
+      "size": 45
+    },
+    {
+      "name": "Compare second cumulative",
+      "text": "累計 2",
+      "output": [
+        35,
+        41
+      ],
+      "center": [
+        1370,
+        710
+      ],
+      "width": 124.13935089111328,
+      "height": 41.30859375,
+      "size": 45
+    },
+    {
+      "name": "Compare cumulative progress",
+      "text": "累計 1 → 2",
+      "output": [
+        35,
+        41
+      ],
+      "center": [
+        960,
+        910
+      ],
+      "width": 231.92315673828125,
+      "height": 41.30859375,
+      "size": 45
+    }
+  ],
+  "annotationOrder": "role → current +1 → actual UI score row → cumulative total",
+  "priorMasterKept": true,
+  "voiceNineCuesUnchanged": true,
+  "coreRmsBindingUnchanged": true,
+  "rootReadFixAccepted": false,
+  "wholeSubjectiveWatch": false,
+  "wholeSubjectiveListen": false,
+  "notFull600Master": true
+}

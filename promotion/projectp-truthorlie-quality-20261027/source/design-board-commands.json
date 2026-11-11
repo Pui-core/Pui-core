@@ -1,0 +1,98 @@
+[
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "fill": "#120F12",
+      "name": "Warm charcoal"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        1187,
+        1080
+      ],
+      "fill": "#120F12",
+      "name": "Golden ratio main field"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        1187,
+        64,
+        1,
+        952
+      ],
+      "fill": "#120F12",
+      "name": "Golden ratio division"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        64,
+        96,
+        42,
+        3
+      ],
+      "fill": "#D8B581",
+      "name": "Small editorial accent"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "kind": "rect",
+      "rect": [
+        64,
+        1006,
+        1792,
+        1
+      ],
+      "fill": "#4A3528",
+      "name": "Main baseline"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "Small app identity",
+      "text": "嘘か誠か",
+      "x": 124,
+      "y": 104,
+      "font": "Yu Mincho",
+      "weight": 700,
+      "size": 30,
+      "color": "#EBDAC0"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "Editorial series",
+      "text": "TRUTH / LIE",
+      "x": 1500,
+      "y": 100,
+      "font": "Yu Gothic",
+      "weight": 500,
+      "size": 21,
+      "color": "#BDA68E"
+    }
+  ]
+]

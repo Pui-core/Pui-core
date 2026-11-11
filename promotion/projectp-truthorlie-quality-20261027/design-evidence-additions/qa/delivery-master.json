@@ -1,0 +1,747 @@
+{
+  "issue": 129,
+  "status": "PASS_CURRENT269_F_3CRAFT_REOPEN_SAVE_RENDER_MISSING0_ONLY",
+  "destination": "/mnt/f/Videos/ProjectP-TruthOrLie-2026-10-27/revision-02/design-evidence-additions",
+  "sourceRoot": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/production/design-evidence-additions",
+  "projects": [
+    "projects/truthorlie129-design-history.ecproj",
+    "projects/truthorlie129-with-design-history.ecproj",
+    "projects/truthorlie129-with-design-history.fcproj",
+    "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+    "segments/base/projects/truthorlie129-firstcut-current.fcproj",
+    "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+    "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.fcproj"
+  ],
+  "dependencies": [
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.1.kind.path",
+      "file": "media/actual-answer.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.2.kind.path",
+      "file": "media/actual-guess.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.3.kind.path",
+      "file": "media/actual-history.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.4.kind.path",
+      "file": "media/actual-names.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.5.kind.path",
+      "file": "media/actual-result.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.6.kind.path",
+      "file": "media/actual-review.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.7.kind.path",
+      "file": "media/actual-title.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.8.kind.path",
+      "file": "media/button-after.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.9.kind.path",
+      "file": "media/button-before.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.10.kind.path",
+      "file": "media/field-after.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.11.kind.path",
+      "file": "media/field-before.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.12.kind.path",
+      "file": "media/footer-after.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.13.kind.path",
+      "file": "media/footer-before.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.14.kind.path",
+      "file": "media/history-ground.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.15.kind.path",
+      "file": "media/history-scope.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.16.kind.path",
+      "file": "media/letter-local-after.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.17.kind.path",
+      "file": "media/letter-local-before.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.18.kind.path",
+      "file": "media/letter-local-initial.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.19.kind.path",
+      "file": "media/letter-online-after.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.20.kind.path",
+      "file": "media/letter-online-before.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.21.kind.path",
+      "file": "media/logo-before-brush.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.22.kind.path",
+      "file": "media/logo-before-color.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.23.kind.path",
+      "file": "media/logo-brush.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.24.kind.path",
+      "file": "media/logo-color.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.25.kind.path",
+      "file": "media/night.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.26.kind.path",
+      "file": "media/option-paper.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.27.kind.path",
+      "file": "media/paper-comparison.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.28.kind.path",
+      "file": "media/question-paper.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.29.kind.path",
+      "file": "media/seal-lie.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.30.kind.path",
+      "file": "media/seal-truth.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.31.kind.path",
+      "file": "media/seal-vote.png"
+    },
+    {
+      "project": "projects/truthorlie129-design-history.ecproj",
+      "key": "items.32.kind.path",
+      "file": "media/title-current.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.1.kind.path",
+      "file": "media/actual-answer.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.2.kind.path",
+      "file": "media/actual-guess.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.3.kind.path",
+      "file": "media/actual-history.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.4.kind.path",
+      "file": "media/actual-names.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.5.kind.path",
+      "file": "media/actual-result.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.6.kind.path",
+      "file": "media/actual-review.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.7.kind.path",
+      "file": "media/actual-title.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.8.kind.path",
+      "file": "media/button-after.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.9.kind.path",
+      "file": "media/button-before.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.10.kind.path",
+      "file": "media/field-after.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.11.kind.path",
+      "file": "media/field-before.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.12.kind.path",
+      "file": "media/footer-after.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.13.kind.path",
+      "file": "media/footer-before.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.14.kind.path",
+      "file": "media/history-ground.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.15.kind.path",
+      "file": "media/history-scope.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.16.kind.path",
+      "file": "media/letter-local-after.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.17.kind.path",
+      "file": "media/letter-local-before.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.18.kind.path",
+      "file": "media/letter-local-initial.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.19.kind.path",
+      "file": "media/letter-online-after.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.20.kind.path",
+      "file": "media/letter-online-before.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.21.kind.path",
+      "file": "media/logo-before-brush.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.22.kind.path",
+      "file": "media/logo-before-color.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.23.kind.path",
+      "file": "media/logo-brush.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.24.kind.path",
+      "file": "media/logo-color.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.25.kind.path",
+      "file": "media/night.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.26.kind.path",
+      "file": "media/option-paper.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.27.kind.path",
+      "file": "media/paper-comparison.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.28.kind.path",
+      "file": "media/question-paper.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.29.kind.path",
+      "file": "media/seal-lie.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.30.kind.path",
+      "file": "media/seal-truth.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.31.kind.path",
+      "file": "media/seal-vote.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.32.kind.path",
+      "file": "media/title-current.png"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.ecproj",
+      "key": "items.2236.kind.path",
+      "file": "media/base-203.mp4"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.fcproj",
+      "key": "project.items.5.kind.Media.media.File.path",
+      "file": "media/base-203.mp4"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.fcproj",
+      "key": "project.items.6.kind.Media.media.File.path",
+      "file": "media/design-history-picture.mp4"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.fcproj",
+      "key": "project.items.7.kind.Media.media.File.path",
+      "file": "media/narration-presented-stem.wav"
+    },
+    {
+      "project": "projects/truthorlie129-with-design-history.fcproj",
+      "key": "project.items.8.kind.Media.media.File.path",
+      "file": "media/background-cipher-stem.wav"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.1.kind.path",
+      "file": "segments/base/media/editorial-board.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.2.kind.path",
+      "file": "segments/base/media/actual-app-artwork-background.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.3.kind.path",
+      "file": "segments/base/media/paper-panel.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.4.kind.path",
+      "file": "segments/base/media/score-chip.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.5.kind.path",
+      "file": "segments/base/media/vote-token.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.6.kind.path",
+      "file": "segments/base/media/truth-badge.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.7.kind.path",
+      "file": "segments/base/media/lie-badge.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.8.kind.path",
+      "file": "segments/base/media/calculation-rail.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.9.kind.path",
+      "file": "segments/base/segments/opening/videos/truthorlie129-rules-block44-read-v02-cipher.mp4"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.10.kind.path",
+      "file": "segments/base/media/stable-t3private.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.11.kind.path",
+      "file": "segments/base/media/stable-t3vote.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.12.kind.path",
+      "file": "segments/base/media/evidence/truth3/truth3-actual-result.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.13.kind.path",
+      "file": "segments/base/media/stable-t1vote.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.14.kind.path",
+      "file": "segments/base/media/evidence/truth1/truth1-actual-result.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.15.kind.path",
+      "file": "segments/base/media/stable-t2vote.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.16.kind.path",
+      "file": "segments/base/media/evidence/truth2/truth2-actual-result.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.17.kind.path",
+      "file": "segments/base/media/evidence/round1/round1-answer-3.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.18.kind.path",
+      "file": "segments/base/media/stable-r1private.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.19.kind.path",
+      "file": "segments/base/media/evidence/round1/round1-guessing-bottom-neutral.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.20.kind.path",
+      "file": "segments/base/media/stable-r1score.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.21.kind.path",
+      "file": "segments/base/media/stable-r2score.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.22.kind.path",
+      "file": "segments/base/media/evidence/round3/round3-actual-result.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.23.kind.path",
+      "file": "segments/base/media/evidence/round4/round4-actual-result.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.24.kind.path",
+      "file": "segments/base/media/evidence/normal4R-actual-final-result.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.25.kind.path",
+      "file": "segments/base/media/evidence/truth3R-actual-final-result.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.26.kind.path",
+      "file": "segments/base/media/stable-history.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "key": "items.27.kind.path",
+      "file": "segments/base/media/stable-historylower.png"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.fcproj",
+      "key": "project.items.6.kind.Media.media.File.path",
+      "file": "segments/base/media/truthorlie129-dense-content-picture.mp4"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.fcproj",
+      "key": "project.items.7.kind.Media.media.File.path",
+      "file": "segments/base/media/narration-presented-stem.wav"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.fcproj",
+      "key": "project.items.8.kind.Media.media.File.path",
+      "file": "segments/base/media/background-cipher-stem.wav"
+    },
+    {
+      "project": "segments/base/projects/truthorlie129-firstcut-current.fcproj",
+      "key": "project.items.9.kind.Media.media.File.path",
+      "file": "segments/base/media/review-mismatch-corrected-native.mp4"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.1.kind.path",
+      "file": "segments/base/segments/opening/media/actual-app-artwork-background.png"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.2.kind.path",
+      "file": "segments/base/segments/opening/media/editorial-board.png"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.3.kind.path",
+      "file": "segments/base/segments/opening/media/model-opening.mov"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.4.kind.path",
+      "file": "segments/base/segments/opening/media/round1-selected-hi.png"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.5.kind.path",
+      "file": "segments/base/segments/opening/media/round1-result-hi.png"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.6.kind.path",
+      "file": "segments/base/segments/opening/media/round1-score-hi.png"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.7.kind.path",
+      "file": "segments/base/segments/opening/media/round1-hi-cfr.mp4"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.8.kind.path",
+      "file": "segments/base/segments/opening/media/round2-selected-hi.png"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.9.kind.path",
+      "file": "segments/base/segments/opening/media/round2-result-hi.png"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.10.kind.path",
+      "file": "segments/base/segments/opening/media/round2-score-hi.png"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "key": "items.11.kind.path",
+      "file": "segments/base/segments/opening/media/round2-hi-cfr.mp4"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "key": "project.items.6.kind.Media.media.File.path",
+      "file": "segments/base/segments/opening/media/truthorlie129-rules-picture44-base.mp4"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "key": "project.items.7.kind.Media.media.File.path",
+      "file": "segments/base/segments/opening/media/narration-presented-stem.wav"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "key": "project.items.8.kind.Media.media.File.path",
+      "file": "segments/base/segments/opening/media/background-cipher-stem.wav"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "key": "project.items.9.kind.Media.media.File.path",
+      "file": "segments/base/segments/opening/media/read-v02-first-score.mp4"
+    },
+    {
+      "project": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "key": "project.items.10.kind.Media.media.File.path",
+      "file": "segments/base/segments/opening/media/read-v02-second-score-and-comparison.mp4"
+    }
+  ],
+  "transforms": [
+    {
+      "file": "projects/truthorlie129-design-history.ecproj",
+      "sourceSha256": "358bab4568b236eed10c909c4a721c8372ef391c89b8023e042bfe3425d817c9",
+      "reason": "Relocate own private media paths to new F folder",
+      "deliverySha256": "8dbf600cd72b634cd92942567cd4e0b6129bb9a178937fc98189c13ce7c92c97"
+    },
+    {
+      "file": "projects/truthorlie129-with-design-history.ecproj",
+      "sourceSha256": "0265af47056ee79381109386aa748a2485ec6fcaeabf45adbc8e4b540ea18905",
+      "reason": "Relocate own private media paths to new F folder",
+      "deliverySha256": "997aa3c6798503795b40493421bdd17df09218fa73d1bcd231fbf35c080e69f9"
+    },
+    {
+      "file": "projects/truthorlie129-with-design-history.fcproj",
+      "sourceSha256": "23b3d671f9c6470bd170f10cadf7e2efb75157d733dd48880bb808500cdeeeba",
+      "reason": "Relocate own private media paths to new F folder",
+      "deliverySha256": "292216de4081d893557a73803f0c5aff726640fc12006f01a48f48107a587325"
+    },
+    {
+      "file": "segments/base/projects/truthorlie129-firstcut-current.ecproj",
+      "sourceSha256": "b594192ebd380f4a161499389943e2f52e0cc264ecb1f53d5c1bb8a91a1e70d8",
+      "reason": "Copy preserved editable203 originals; relocate from old F folder into new self-contained segment",
+      "deliverySha256": "a25e8d955f8c67e48d95c6abd6e37570f7679e3251b4c8688adb6c5aa65780e4"
+    },
+    {
+      "file": "segments/base/projects/truthorlie129-firstcut-current.fcproj",
+      "sourceSha256": "2bb8c5470b031ad6b69f9c505d64168e26bb099778d6701ce153ee863c51573c",
+      "reason": "Copy preserved editable203 originals; relocate from old F folder into new self-contained segment",
+      "deliverySha256": "fe3d9af4e40c3cd73538dd608dd6c03fc214221e07ae4973640d917a63dfd9b3"
+    },
+    {
+      "file": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.ecproj",
+      "sourceSha256": "529cb1f0eeafea35c90e102e65cedc070d13e3af5e0637c01fd840259e4bb078",
+      "reason": "Copy preserved editable203 originals; relocate from old F folder into new self-contained segment",
+      "deliverySha256": "74fe22e0e5e035d733717d3042bb9b6917ae1266f12febc9cd71f904d63234a6"
+    },
+    {
+      "file": "segments/base/segments/opening/projects/truthorlie129-rules-block44-read-v02.fcproj",
+      "sourceSha256": "336d4ce235e118383f28cf1a0a13321dd6cc6adac9846dca1bc6002f8b44fca1",
+      "reason": "Copy preserved editable203 originals; relocate from old F folder into new self-contained segment",
+      "deliverySha256": "38833c7822019265f15bf6ab7f109146d12b7faa91508e1c7c3aea0984683f60"
+    }
+  ],
+  "checked": [
+    "ec-design-media",
+    "ec-design-frame",
+    "ec-main-media",
+    "ec-main-frame",
+    "ec-base-media",
+    "ec-base-frame",
+    "ec-opening-media",
+    "ec-opening-frame",
+    "fc-main-media",
+    "fc-main-frame",
+    "fc-base-media",
+    "fc-base-frame",
+    "fc-opening-media",
+    "fc-opening-frame",
+    "pc-history-ground.pcraft-save",
+    "pc-history-ground.pcraft-frame",
+    "pc-history-scope.pcraft-save",
+    "pc-history-scope.pcraft-frame",
+    "pc-paper-comparison.pcraft-save",
+    "pc-paper-comparison.pcraft-frame",
+    "pc-base-calculation-rail.pcraft-save",
+    "pc-base-calculation-rail.pcraft-frame",
+    "pc-base-editorial-board.pcraft-save",
+    "pc-base-editorial-board.pcraft-frame",
+    "pc-base-lie-badge.pcraft-save",
+    "pc-base-lie-badge.pcraft-frame",
+    "pc-base-paper-panel.pcraft-save",
+    "pc-base-paper-panel.pcraft-frame",
+    "pc-base-score-chip.pcraft-save",
+    "pc-base-score-chip.pcraft-frame",
+    "pc-base-truth-badge.pcraft-save",
+    "pc-base-truth-badge.pcraft-frame",
+    "pc-base-vote-token.pcraft-save",
+    "pc-base-vote-token.pcraft-frame"
+  ],
+  "photoCraft": [
+    {
+      "native": "covers/history-ground.pcraft",
+      "reopened": "projects/history-ground-reopened.pcraft",
+      "pixelsIdentical": true
+    },
+    {
+      "native": "covers/history-scope.pcraft",
+      "reopened": "projects/history-scope-reopened.pcraft",
+      "pixelsIdentical": true
+    },
+    {
+      "native": "covers/paper-comparison.pcraft",
+      "reopened": "projects/paper-comparison-reopened.pcraft",
+      "pixelsIdentical": true
+    },
+    {
+      "native": "segments/base/covers/calculation-rail.pcraft",
+      "reopened": "segments/base/projects/calculation-rail-reopened.pcraft",
+      "pixelsIdentical": true
+    },
+    {
+      "native": "segments/base/covers/editorial-board.pcraft",
+      "reopened": "segments/base/projects/editorial-board-reopened.pcraft",
+      "pixelsIdentical": true
+    },
+    {
+      "native": "segments/base/covers/lie-badge.pcraft",
+      "reopened": "segments/base/projects/lie-badge-reopened.pcraft",
+      "pixelsIdentical": true
+    },
+    {
+      "native": "segments/base/covers/paper-panel.pcraft",
+      "reopened": "segments/base/projects/paper-panel-reopened.pcraft",
+      "pixelsIdentical": true
+    },
+    {
+      "native": "segments/base/covers/score-chip.pcraft",
+      "reopened": "segments/base/projects/score-chip-reopened.pcraft",
+      "pixelsIdentical": true
+    },
+    {
+      "native": "segments/base/covers/truth-badge.pcraft",
+      "reopened": "segments/base/projects/truth-badge-reopened.pcraft",
+      "pixelsIdentical": true
+    },
+    {
+      "native": "segments/base/covers/vote-token.pcraft",
+      "reopened": "segments/base/projects/vote-token-reopened.pcraft",
+      "pixelsIdentical": true
+    }
+  ],
+  "photoCraftVerified": 10,
+  "effectCraftVerified": 4,
+  "filmCraftVerified": 3,
+  "missingMedia": 0,
+  "externalActiveDependencies": 0,
+  "movie": {
+    "file": "videos/truthorlie129-current-with-design-history.mp4",
+    "sha256": "294b9cc6c49df07db94a3db75a4885b67ac816d52019d97b2a53d0e706f539d1",
+    "bytes": 32588851
+  },
+  "actualSeconds": 269.6333333333333,
+  "remainingDistinctContentSecondsTo600": 330.3666666666667,
+  "formal600Master": false,
+  "newMacUiRecordings": 0,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "rootCreativeAccepted": false,
+  "published": false
+}

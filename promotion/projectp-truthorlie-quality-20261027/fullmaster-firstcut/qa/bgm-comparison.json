@@ -1,0 +1,33 @@
+{
+  "status": "COMPARISON_ARTIFACTS_PREPARED_NOT_AUDITIONED",
+  "seconds": 30,
+  "records": [
+    {
+      "name": "cipher",
+      "file": "qa/bgm-comparison-cipher-opening30.wav",
+      "sha256": "2f70bbe2079cfafa4b2d18ddc9bdbd9381d52053492f5a32d956c0018135a29a",
+      "sourceSha256": "d3d0614535a61d748e2fd8d5117fc4d781022a7624794802a2462d8af3fdd522",
+      "sourceOffset": 0.824,
+      "uncompressedBedLoudnessTarget": -31,
+      "sameNarrationStemSha256": "69e712e2fb002af4fbcea2d4fb3f79448dbc56bd23613dc89a143b5bb41ed58a",
+      "listen": false,
+      "adopted": false
+    },
+    {
+      "name": "crypto",
+      "file": "qa/bgm-comparison-crypto-opening30.wav",
+      "sha256": "48263b40cdb19c46cd872713f831a6850ec1350e9765946910f9bd95520849be",
+      "sourceSha256": "f09ba8bff00baca85fcdcde3b7f5d6b34a09c2c0b44b007a9123ee42f7d1bcf2",
+      "sourceOffset": 0.024,
+      "uncompressedBedLoudnessTarget": -31,
+      "sameNarrationStemSha256": "69e712e2fb002af4fbcea2d4fb3f79448dbc56bd23613dc89a143b5bb41ed58a",
+      "listen": false,
+      "adopted": false
+    }
+  ],
+  "sameNarration": true,
+  "normalizationForComparisonOnly": true,
+  "finalCipherExistingMixUnchanged": true,
+  "license": "CC BY4.0; attribution required for chosen track",
+  "newPublication": false
+}

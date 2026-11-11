@@ -1,0 +1,66 @@
+[
+  [
+    "shape.create",
+    {
+      "name": "Warm paper gradient",
+      "kind": "rect",
+      "rect": [
+        16,
+        16,
+        928,
+        508
+      ],
+      "fill": {
+        "gradient": {
+          "stops": [
+            [
+              0,
+              "#F0E2C3"
+            ],
+            [
+              0.6,
+              "#E4CFA4"
+            ],
+            [
+              1,
+              "#CDB385"
+            ]
+          ],
+          "angle": 115
+        }
+      }
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "name": "Inset thin rule",
+      "kind": "rect",
+      "rect": [
+        38,
+        38,
+        884,
+        464
+      ],
+      "fill": null,
+      "stroke": {
+        "width": 2,
+        "color": "#96784C"
+      }
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "name": "Upper light",
+      "kind": "rect",
+      "rect": [
+        45,
+        45,
+        870,
+        2
+      ],
+      "fill": "#FBF1DB"
+    }
+  ]
+]

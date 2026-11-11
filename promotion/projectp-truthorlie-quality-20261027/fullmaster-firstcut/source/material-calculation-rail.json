@@ -1,0 +1,43 @@
+[
+  [
+    "shape.create",
+    {
+      "name": "Dark calculation field",
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        960,
+        130
+      ],
+      "fill": "#1B1819"
+    }
+  ],
+  [
+    "shape.create",
+    {
+      "name": "Calculation edge",
+      "kind": "rect",
+      "rect": [
+        0,
+        0,
+        5,
+        130
+      ],
+      "fill": "#D6B87F"
+    }
+  ],
+  [
+    "type.create",
+    {
+      "name": "Calculation identity",
+      "text": "計算例  /  実UI未収録",
+      "x": 38,
+      "y": 82,
+      "font": "Yu Gothic",
+      "weight": 700,
+      "size": 39,
+      "color": "#EAD8AF"
+    }
+  ]
+]

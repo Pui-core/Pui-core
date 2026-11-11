@@ -1,0 +1,229 @@
+{
+  "normalMatch": {
+    "rounds": 4,
+    "final": "引き分け",
+    "score": {
+      "AA": 2,
+      "BB": 2
+    }
+  },
+  "rounds": [
+    {
+      "id": "round1",
+      "label": "第1ラウンド",
+      "speaker": "AA",
+      "guesser": "BB",
+      "questions": [
+        "実は今も持っている子どもの頃の宝物",
+        "人にすすめたいけど説明が難しい作品",
+        "初めて自分のお金で買ったもの",
+        "理想のプロポーズのシチュエーション",
+        "家でついやってしまうだらしない行動"
+      ],
+      "answers": [
+        "小さな木の電車",
+        "静かな短編映画",
+        "赤い自転車",
+        "旅行先の海辺",
+        "ソファでそのまま寝る"
+      ],
+      "lie": 3,
+      "vote": 3,
+      "outcome": "投票的中",
+      "score": {
+        "AA": 0,
+        "BB": 1
+      },
+      "attempt": "coder-firstvote06",
+      "local": true
+    },
+    {
+      "id": "round2",
+      "label": "第2ラウンド",
+      "speaker": "BB",
+      "guesser": "AA",
+      "questions": [
+        "透明人間になれたらやってみたいこと",
+        "買う前にレビューを見すぎるもの",
+        "疲れた日に食べると回復するもの",
+        "休日に時間を忘れてしまうこと",
+        "テスト前にやりがちだったこと"
+      ],
+      "answers": [
+        "美術館をゆっくり歩く",
+        "ワイヤレスイヤホン",
+        "温かい味噌汁",
+        "小説を読むこと",
+        "机の片づけ"
+      ],
+      "lie": 5,
+      "vote": 2,
+      "outcome": "正解者なし",
+      "score": {
+        "AA": 0,
+        "BB": 2
+      },
+      "attempt": "coder-round2-vote01",
+      "local": true
+    },
+    {
+      "id": "round3",
+      "label": "第3ラウンド",
+      "speaker": "AA",
+      "guesser": "BB",
+      "questions": [
+        "ひそかに自慢に思っていること",
+        "いつか手放したい悩み",
+        "値段を見ずに買ってみたいもの",
+        "最近人にすすめたい作品",
+        "部活やサークルで起きた事件"
+      ],
+      "answers": [
+        "毎朝の散歩が一年続いた",
+        "朝の寝坊",
+        "海辺の小さな家",
+        "旅を描いた短編集",
+        "文化祭の看板を逆さに付けた"
+      ],
+      "lie": 3,
+      "vote": 5,
+      "outcome": "正解者なし",
+      "score": {
+        "AA": 1,
+        "BB": 2
+      },
+      "attempt": "coder-round3-vote02",
+      "local": true
+    },
+    {
+      "id": "round4",
+      "label": "第4ラウンド",
+      "speaker": "BB",
+      "guesser": "AA",
+      "questions": [
+        "魔法が1つ使えるなら欲しい能力",
+        "冷蔵庫に必ず入っているもの",
+        "子どもの頃に本気で怖がっていた場所",
+        "旅行の荷物に必ず入れるもの",
+        "人生でまだ諦めていないこと"
+      ],
+      "answers": [
+        "忘れ物をすぐ見つける力",
+        "無糖のヨーグルト",
+        "夜の学校の階段",
+        "小さなノート",
+        "自分の絵本を作ること"
+      ],
+      "lie": 2,
+      "vote": 2,
+      "outcome": "投票的中",
+      "score": {
+        "AA": 2,
+        "BB": 2
+      },
+      "attempt": "coder-round4-final01",
+      "local": true
+    },
+    {
+      "id": "truth1",
+      "label": "別試合 第1ラウンド",
+      "speaker": "AA",
+      "guesser": "BB",
+      "questions": [
+        "デートで行ってみたい場所",
+        "明日から1年休みをもらえたらすること",
+        "死ぬまでに行ってみたい場所",
+        "実家や家の独特なルール",
+        "人には言いにくい小さな贅沢"
+      ],
+      "answers": [
+        "海の見える水族館",
+        "各地の美術館を巡る",
+        "北欧の小さな町",
+        "玄関で靴をそろえる",
+        "夜に少し高いチョコ"
+      ],
+      "lie": null,
+      "declaredTruth": true,
+      "vote": "真実のみ",
+      "outcome": "真実のみ",
+      "score": {
+        "AA": 0,
+        "BB": 1
+      },
+      "attempt": "coder-truth1-vote02"
+    },
+    {
+      "id": "truth2",
+      "label": "別試合 第2ラウンド",
+      "speaker": "BB",
+      "guesser": "AA",
+      "questions": [
+        "人には理解されにくいこだわり",
+        "自分の機嫌を取る方法",
+        "最近一気見してしまったもの",
+        "ひそかに自慢に思っていること",
+        "送る相手を間違えかけたメッセージ"
+      ],
+      "answers": [
+        "本棚を背の高さでそろえる",
+        "近所をゆっくり歩く",
+        "世界の駅を紹介する番組",
+        "地図を見ずに近所を案内できる",
+        "家族への買い物メモ"
+      ],
+      "lie": 3,
+      "declaredTruth": false,
+      "vote": "真実のみ",
+      "outcome": "正解者なし",
+      "score": {
+        "AA": 0,
+        "BB": 2
+      },
+      "attempt": "coder-truth2-vote01"
+    },
+    {
+      "id": "truth3",
+      "label": "別試合 第3ラウンド",
+      "speaker": "AA",
+      "guesser": "BB",
+      "questions": [
+        "ライブやイベントで忘れられない場面",
+        "旅行中に性格が出ると思う瞬間",
+        "実は今も持っている子どもの頃の宝物",
+        "家の中で落ち着く場所",
+        "人間関係で地味に苦手なこと"
+      ],
+      "answers": [
+        "会場全体で手拍子がそろった時",
+        "地図を開く前に道を探す時",
+        "青いビー玉",
+        "窓のそばの椅子",
+        "大人数の前で自己紹介すること"
+      ],
+      "lie": null,
+      "declaredTruth": true,
+      "vote": 2,
+      "outcomePending": false,
+      "attempt": "coder-truth3-final01",
+      "outcome": "真実のみ",
+      "score": {
+        "AA": 1,
+        "BB": 2
+      }
+    }
+  ],
+  "allAnswersFictional": true,
+  "normalUiAutomated": true,
+  "humanMatchClaim": false,
+  "truthMatch": {
+    "rounds": 3,
+    "manualDeclaration": true,
+    "randomTruthOnly": false,
+    "final": "操作例BB の勝利",
+    "score": {
+      "AA": 1,
+      "BB": 2
+    }
+  }
+}

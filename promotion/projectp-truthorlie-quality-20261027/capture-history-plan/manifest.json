@@ -1,0 +1,77 @@
+{
+  "status": "RECORDING_PREPARED_COLD_PREFLIGHT_HOLD_NO_BACKUP",
+  "files": [
+    {
+      "file": "batch-control-prepared.sh",
+      "bytes": 10734,
+      "sha256": "7f16c3bd201dfaabb96b82db95bdd351fbabef2c6c3e2b5b121d8b2abd219d27"
+    },
+    {
+      "file": "cold-attempt-result.json",
+      "bytes": 2817,
+      "sha256": "791c4cc8c9de9e71573bd9cf0f03acabae3dd09ee53f9e0bff7dfb4e0f5c6771"
+    },
+    {
+      "file": "cold-manifest-prepared.rb",
+      "bytes": 1468,
+      "sha256": "282158d2fe3a067b4e53c15d618430fe6c2e30236d7f7ef57c4e51a7fe894fab"
+    },
+    {
+      "file": "cold-stage-authorized.sh",
+      "bytes": 8947,
+      "sha256": "4e13fc8b46808d2a165933f9f558e6f2b77653b1cfdb3d0d0f53082ad233e1be"
+    },
+    {
+      "file": "edit-intake.json",
+      "bytes": 1870,
+      "sha256": "b5955acb36e6189d4c31a6bd81d1b3ec489bd07ca161da4112571cc401ab1ad0"
+    },
+    {
+      "file": "history-data-inspect-prepared.rb",
+      "bytes": 2390,
+      "sha256": "aae09d8e704f7cf4852b4dd9e2d39b77d678f81dd7a84179151d0b7e7e98e4a4"
+    },
+    {
+      "file": "independent-static-review.json",
+      "bytes": 1201,
+      "sha256": "673991f29dcdefe8a4d851fd8f388006817acf0acb0a8a01f2829ec497d6abe8"
+    },
+    {
+      "file": "plan.json",
+      "bytes": 4551,
+      "sha256": "4e3efd0daa42cd772f961f3f401d2bf6a81be3a2a3e84216c8870f151fcd8984"
+    },
+    {
+      "file": "preparation-verification.json",
+      "bytes": 1632,
+      "sha256": "1c41f80fa6bf5652eeb0f37ac3493324a7c2375222ecdfb10e7ab73127866cf2"
+    },
+    {
+      "file": "target-consumers-prepared.rb",
+      "bytes": 1401,
+      "sha256": "3b7337af70df5af1990b1a9820fd10108ff864e8c6e74fe581d01aa89b0d19a7"
+    },
+    {
+      "file": "verify-cold.rb",
+      "bytes": 2520,
+      "sha256": "b6aba9330665be6796c839f706f091e2422e202d72c64f2463ba368dcf164c1c"
+    },
+    {
+      "file": "window.template.json",
+      "bytes": 573,
+      "sha256": "44503637c22a94ae79ccbb4bcf2208a260f5b16274fe98b59fbd3a98b5c8bd19"
+    },
+    {
+      "file": "収録-#0129履歴詳細の保全と有限手順.md",
+      "bytes": 14655,
+      "sha256": "6f50d6189cba7de4b42ba82a5a82f466f6c115b0b46d7b565ea1210b29652893"
+    }
+  ],
+  "privateRawArchive": {
+    "file": "terminal-records.tar.gz",
+    "sha256": "1c6986c66a7d45ee08cc2d736b23c91bb52d3126a3d40f0c5edc2934acd46a0a",
+    "copiedToGit": false
+  },
+  "newUiAndVideoSeconds": 0,
+  "bootGuiRecordInstallShutdown": 0
+}

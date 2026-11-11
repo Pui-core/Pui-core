@@ -1,0 +1,53 @@
+{
+  "status": "PREPARED_NO_CAPTURE_NO_ADDED_SECONDS",
+  "keepAtMost6Chapters": true,
+  "bindToChapter": 6,
+  "question": "2対2で終わったあと、何を見返せる？",
+  "shots": [
+    {
+      "order": 1,
+      "material": "existing actual final4R draw",
+      "meaning": "AA2 BB2 final result anchors the saved record",
+      "newObservation": false
+    },
+    {
+      "order": 2,
+      "material": "pending actual history row",
+      "meaning": "same names,4R,draw/date; only matched record",
+      "newObservation": false,
+      "pending": true
+    },
+    {
+      "order": 3,
+      "material": "pending actual match detail final score",
+      "meaning": "final score remains AA2 BB2 in that record",
+      "newObservation": false,
+      "pending": true
+    },
+    {
+      "order": 4,
+      "material": "pending actual R1 expansion",
+      "meaning": "saved question/response and lie/vote roles vs existing R1 result",
+      "newObservation": false,
+      "pending": true
+    },
+    {
+      "order": 5,
+      "material": "existing actual R1 review",
+      "meaning": "compare same red bicycle and lie3/vote3, without inventing a second game",
+      "newObservation": false
+    }
+  ],
+  "narrationDraft": [
+    "対戦は2対2の引き分けでした。この一件を、履歴から開きます。",
+    "最終スコアだけでなく、最初のラウンドの解答も見返します。",
+    "赤い自転車。嘘と投票の印は、さっきの結果と一致するでしょうか。"
+  ],
+  "draftNarrationNotSynthesized": true,
+  "doNotSpeakSuccessUntilObserved": true,
+  "measureSceneSecondsAfterActualUiOnly": true,
+  "noDurationPadding": true,
+  "doNotCountExistingSetupAsNewCapture": true,
+  "existingSetupCandidate": "2〜10人/名前/4R195問summary can connect briefly if it adds a new question; not proof of saved recall",
+  "timingAdded": 0
+}

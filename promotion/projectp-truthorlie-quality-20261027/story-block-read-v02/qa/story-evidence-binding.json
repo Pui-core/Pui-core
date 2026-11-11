@@ -1,0 +1,54 @@
+{
+  "pin": "5b11516bba2be105f44c444eb6352eb757a8abd3",
+  "productVersion": "1.03(23)",
+  "normalUiAutomated": true,
+  "answersAndNamesFictional": true,
+  "fictionalPersonalFactGuessing": false,
+  "cases": [
+    {
+      "id": "round1",
+      "speaker": "AA",
+      "guesser": "BB",
+      "lie": 3,
+      "vote": 3,
+      "result": "投票的中",
+      "scores": {
+        "AA": 0,
+        "BB": 1
+      },
+      "selectedOriginalCfrTime": 82.5,
+      "cfrSha256": "d400d459e68a3b86418219cae6a94b9e5ebd656a13a77ff18d8d8f413e7b7009",
+      "selectedSha256": "7020f39f39177e9e15cc1ed109dcd2c99e5bfe0103dc08c642ba1323d9c7d234",
+      "resultSha256": "809b8d31e64d9273a0dd8556dd2048eae1d0a5520f1cf12262a3ebab361dff7c",
+      "scoreSha256": "ae20db414f9378e09a529f289d800ab4fb6f43ad5001fea2e9b84bffb90ce90f"
+    },
+    {
+      "id": "round2",
+      "speaker": "BB",
+      "guesser": "AA",
+      "lie": 5,
+      "vote": 2,
+      "result": "正解者なし",
+      "scores": {
+        "AA": 0,
+        "BB": 2
+      },
+      "selectedOriginalCfrTime": 62.6,
+      "cfrSha256": "af30770f63e5e3d8a7b12c6e70d5790c7e8e67ad210db3d132fc9c15c8a12e0b",
+      "selectedSha256": "28dd0f1dcb0fc5124f043b3a79c0cef463abbbd8f9d64e0e79a5cf3821393950",
+      "resultSha256": "70f540f0792995ca4e3e008bf048a0a1c18254e2d3d71b83ef7fe0235f063e90",
+      "scoreSha256": "fd6d73544879b981ac887282ad46505687fc003bdc1ca16aef574329f7816146"
+    }
+  ],
+  "highOriginalSourceBindingSha256": "b81f53c22a2049fd5a0005e1c6f270d5ed3cb5786b68783fc27e2d9c87b6092d",
+  "newVoiceCues": 9,
+  "newCoreFrames": 240,
+  "newCoreRenderedSeconds": 8,
+  "newCoreVisibleOutputSeconds": [
+    3.5,
+    8
+  ],
+  "modelOpeningBindingSha256": "5a6f353efb801608ead9d492b6819f2d9decdb98f3c5f665d6de0419f3073f64",
+  "full600Master": false,
+  "published": false
+}

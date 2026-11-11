@@ -1,0 +1,143 @@
+{
+  "status": "PASS_FINAL_SAMPLE_FORMAT_AND_FULL_DECODE",
+  "duration": 44.01,
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "codec": "h264",
+    "frames": "1320"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": "48000",
+    "channels": 2
+  },
+  "sha256": "822bce9f019086d9a5e12cfb6f395c9a0ef17657a29b7ed49e9d71b2d9724509",
+  "sceneBoundaryTimes": [
+    0,
+    3.4,
+    10,
+    14,
+    15.2,
+    18.2,
+    21,
+    24,
+    28,
+    29,
+    32,
+    35,
+    41,
+    44
+  ],
+  "uniqueSceneIntervals": 13,
+  "layerShotRecords": 11,
+  "layerShotCountIsNotEditCount": true,
+  "wholeVoicePhrases": 9,
+  "finalExtracts": [
+    {
+      "time": 1,
+      "file": "qa/story-final-1.png",
+      "sha256": "3cba334fb46284ceeb2accdc6a30eb533cc25f261a8d212eb082d61ec8686f15"
+    },
+    {
+      "time": 6,
+      "file": "qa/story-final-6.png",
+      "sha256": "b1becf55dfe2e7361049f0f2b95a2adc9ddc971c1b057fbf824cbbdbb1437946"
+    },
+    {
+      "time": 11.5,
+      "file": "qa/story-final-11.5.png",
+      "sha256": "6865d0f606687e88faf4ed70c993e6e507946286ae524b185a6347cf6eeafb88"
+    },
+    {
+      "time": 16.5,
+      "file": "qa/story-final-16.5.png",
+      "sha256": "aed00830e0f945af49475315b87f962912a2ae8888d02018fb8069f52fba5642"
+    },
+    {
+      "time": 18.4,
+      "file": "qa/story-final-18.4.png",
+      "sha256": "f0cd58b1ce7f781e47da81cc8557e9bbff8d6dc7d10f83844e0a710bb4f2cb73"
+    },
+    {
+      "time": 19,
+      "file": "qa/story-final-19.png",
+      "sha256": "a5f2ca1103dda25251a936b2ae25cd299109d3655d6af19de7e25d71f7ef89b2"
+    },
+    {
+      "time": 20.8,
+      "file": "qa/story-final-20.8.png",
+      "sha256": "5cbca761fd24798b8a7cd7dcca332b1f05569665a056d50285c3e0081b6930b9"
+    },
+    {
+      "time": 22,
+      "file": "qa/story-final-22.png",
+      "sha256": "37cf4da772a12e51fec9b97f70d75e2fc93a6887953157148b389c7856988eb4"
+    },
+    {
+      "time": 25.5,
+      "file": "qa/story-final-25.5.png",
+      "sha256": "fe17f92dc0d30faa75470ed811a53368fc7baec67f9d884bd95e89b08776df7e"
+    },
+    {
+      "time": 30.5,
+      "file": "qa/story-final-30.5.png",
+      "sha256": "f56717ceab05681cce4dc0e95a6ba5feea465f42aa5cd25539f5830ce71deaba"
+    },
+    {
+      "time": 32.2,
+      "file": "qa/story-final-32.2.png",
+      "sha256": "eb14abe8cde2617d46501315b619dba9a2b6876e62f92e1a0885969a25ffde68"
+    },
+    {
+      "time": 33,
+      "file": "qa/story-final-33.png",
+      "sha256": "0f6292ffa109fbf9866a35509caf33346321f9a4319b88e977df0d8ed7d945f3"
+    },
+    {
+      "time": 34.8,
+      "file": "qa/story-final-34.8.png",
+      "sha256": "9b0f3ff3f4b6de9253a2202f30c8497c24d4a9bdf5e30f02bdfe630eca727414"
+    },
+    {
+      "time": 35.2,
+      "file": "qa/story-final-35.2.png",
+      "sha256": "c6650879efb58bdd3b539485322f1c9a3af85a1dc837626f2a16c469a65e42cc"
+    },
+    {
+      "time": 37,
+      "file": "qa/story-final-37.png",
+      "sha256": "289adb6af405bf45b3211db33c9a6b966e7f9c905e7e41be8c14fcd801e2d327"
+    },
+    {
+      "time": 38.5,
+      "file": "qa/story-final-38.5.png",
+      "sha256": "67cb205b0627203f4654f63e69ecc8b8ab6d7e753b299fc6f2b34646c1768534"
+    },
+    {
+      "time": 40.8,
+      "file": "qa/story-final-40.8.png",
+      "sha256": "289adb6af405bf45b3211db33c9a6b966e7f9c905e7e41be8c14fcd801e2d327"
+    },
+    {
+      "time": 41.2,
+      "file": "qa/story-final-41.2.png",
+      "sha256": "f03e49f5d2a071e234d8c2b2bc9e0426bde9dd87440497e50f5dd7fa996a52ea"
+    },
+    {
+      "time": 42.5,
+      "file": "qa/story-final-42.5.png",
+      "sha256": "1cbb502c1596239f0ec45c0782b66d2b230f5b2eaf3a1e44e70115bdc929e968"
+    }
+  ],
+  "nativeTextBoxes": 37,
+  "textBoundsInsideFrame": true,
+  "subjectiveWholeListen": false,
+  "wholeDirectWatch": false,
+  "rootVisualQualityAccepted": false,
+  "notFull600SecondMaster": true,
+  "coreFrames": 240,
+  "voiceRmsBindingUnchanged": true,
+  "coreRegenerated": false
+}

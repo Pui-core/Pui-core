@@ -1,0 +1,42 @@
+{
+  "currentDistinctContentSeconds": 203.76666666666668,
+  "requiredFormalSeconds": 600,
+  "remainingDistinctContentSeconds": 396.23333333333335,
+  "noCommittedNewCaptureDuration": true,
+  "additionalObservations": [
+    {
+      "priority": 1,
+      "observation": "履歴1件の詳細からラウンド展開・表示の変化",
+      "evidenceNow": "一覧2件のみ収録済み。詳細タップ後/展開の原録画0",
+      "purpose": "同じ実試合の結果から、どの投票/回答だったかを観客が照合する問い",
+      "unknown": "詳細遷移・展開後の実レイアウト/可読箇所/実所要時間"
+    },
+    {
+      "priority": 2,
+      "observation": "配点2/連続ONの実2人3R",
+      "evidenceNow": "コード計算例だけ。新Sim/install/cloneは未達、test/record/得点assert0",
+      "purpose": "同じ的中なのに次の自分の推理だけ+3になる変化を実UIで検証",
+      "unknown": "実3Rの得点行/連続の表示/最終結果"
+    },
+    {
+      "priority": 3,
+      "observation": "ルールの保存→別値へ変更→再適用",
+      "evidenceNow": "設定code ROのみ。完了操作を含む旧録画0",
+      "purpose": "準備の選択が次の試合条件へ戻る変化を確認",
+      "unknown": "実保存名/成功表示/設定の差分。質問本文テンプレ保存ではない"
+    },
+    {
+      "priority": 4,
+      "observation": "3人のB投票完了→C未投票→C完了→結果",
+      "evidenceNow": "3人加点はコード計算例だけ。3人の実投票/結果収録0",
+      "purpose": "先に1人が当たった時点で試合が終わるか、次の投票をどう待つかを観測",
+      "unknown": "pending表示/2人目投票/結果確定、複数正解の同時加点"
+    }
+  ],
+  "newMacUiSuccess": 0,
+  "noNewProductFeatures": true,
+  "noPadding": true,
+  "predictedBehaviorNotRecordedResult": true,
+  "additionalObservationsDoNotGuarantee600": true,
+  "newContentDurationMustComeFromObservedChanges": true
+}

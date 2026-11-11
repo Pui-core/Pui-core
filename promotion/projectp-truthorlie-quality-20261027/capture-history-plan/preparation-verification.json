@@ -1,0 +1,54 @@
+{
+  "recordedAt": "2026-10-27T14:55:26.343Z",
+  "scope": "WSL local static/default-refusal only; no Mac connection",
+  "bashSyntax": {
+    "exit": 0,
+    "stderr": ""
+  },
+  "requiredWindowAbsent": {
+    "exit": 1,
+    "stderr": "/home/pui/tmp/projectp-truthorlie-quality129-20261027/mac-history-plan-20261027/batch-control-prepared.sh: line 5: PP129_ROOT_WINDOW_FILE: Root announces a finite window and provides this actual file\n",
+    "refusedBeforeAnyMacCommand": true
+  },
+  "rubySyntax": {
+    "verified": false,
+    "error": "ENOENT",
+    "exit": null
+  },
+  "macActions": {
+    "ssh": 0,
+    "boot": 0,
+    "gui": 0,
+    "record": 0,
+    "install": 0,
+    "shutdown": 0
+  },
+  "sourceProductFChanged": 0,
+  "actualMaster269Unchanged": true,
+  "files": [
+    {
+      "file": "batch-control-prepared.sh",
+      "sha256": "7f16c3bd201dfaabb96b82db95bdd351fbabef2c6c3e2b5b121d8b2abd219d27"
+    },
+    {
+      "file": "cold-manifest-prepared.rb",
+      "sha256": "282158d2fe3a067b4e53c15d618430fe6c2e30236d7f7ef57c4e51a7fe894fab"
+    },
+    {
+      "file": "history-data-inspect-prepared.rb",
+      "sha256": "aae09d8e704f7cf4852b4dd9e2d39b77d678f81dd7a84179151d0b7e7e98e4a4"
+    },
+    {
+      "file": "target-consumers-prepared.rb",
+      "sha256": "3b7337af70df5af1990b1a9820fd10108ff864e8c6e74fe581d01aa89b0d19a7"
+    },
+    {
+      "file": "window.template.json",
+      "sha256": "44503637c22a94ae79ccbb4bcf2208a260f5b16274fe98b59fbd3a98b5c8bd19"
+    },
+    {
+      "file": "収録-#0129履歴詳細の保全と有限手順.md",
+      "sha256": "813735f2556207f0edd7fa19550740657564605ff32918801b5ffdac5afbec6d"
+    }
+  ]
+}

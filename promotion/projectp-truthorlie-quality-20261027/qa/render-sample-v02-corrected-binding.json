@@ -1,0 +1,39 @@
+{
+  "duration": 75,
+  "output": "videos/truthorlie129-editorial-sample75-v02-corrected-cipher.mp4",
+  "sha256": "4596b64bb4f0d74715e7181c6bfcf028a834aea5bc90e0dd7e50813baa5b447e",
+  "basePictureSha256": "8604e45310d51fc33692ec2490183249a1c62f3febf703084b0c5c935b21449a",
+  "patches": [
+    {
+      "start": 26.4,
+      "end": 32,
+      "name": "vote",
+      "duration": 5.6,
+      "sha256": "e48fb644b0d4e581774f9e3aab3d02e837e694eff53e7e53523a148ff40e0350",
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\sample01\\media\\truthorlie129-correction-vote.mp4"
+    },
+    {
+      "start": 41.6,
+      "end": 44.8,
+      "name": "role",
+      "duration": 3.2,
+      "sha256": "4da4814b542185068e95933b877fbe1bd030a5b15ed6270af169d83a896c741c",
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\sample01\\media\\truthorlie129-correction-role.mp4"
+    }
+  ],
+  "ecSha256": "583536194d540ffbc9d83f485d64b6f755464bd3b5e013d79eae586f9cf88808",
+  "fcSha256": "bd913332868c3a47f992faf94adb533ca7919bd28dc4a0e7cefe0444efca6ef6",
+  "actualNativeEC": true,
+  "actualNativeFC": true,
+  "offlineMedia": [],
+  "voiceCues": 14,
+  "newCoreFrames": 360,
+  "newCoreSeconds": 12,
+  "bgm": "Cipher comparison candidate; subjective adoption pending",
+  "bgmSeparateEditableTrack": true,
+  "notFinal600SecondMaster": true,
+  "rootQualityAccepted": false,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "published": false
+}

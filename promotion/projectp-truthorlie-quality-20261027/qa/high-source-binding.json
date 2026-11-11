@@ -1,0 +1,280 @@
+{
+  "complete": true,
+  "normalInputRecordingReused": true,
+  "newCapture": false,
+  "originalInputMoviesUnchanged": true,
+  "sourceScaleFromOld": {
+    "x": 1.332579185520362,
+    "y": 1.33125
+  },
+  "records": [
+    {
+      "id": "round1",
+      "kind": "neutral",
+      "sourceAttachmentSha256": "0c46991f73c2b40b79e64292a740f04f3698ae8b7bc689769f30030ee2947f80",
+      "copiedSha256": "0c46991f73c2b40b79e64292a740f04f3698ae8b7bc689769f30030ee2947f80",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "noResize": true,
+      "output": "media/round1-neutral-hi.png"
+    },
+    {
+      "id": "round1",
+      "kind": "result",
+      "sourceAttachmentSha256": "809b8d31e64d9273a0dd8556dd2048eae1d0a5520f1cf12262a3ebab361dff7c",
+      "copiedSha256": "809b8d31e64d9273a0dd8556dd2048eae1d0a5520f1cf12262a3ebab361dff7c",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "noResize": true,
+      "output": "media/round1-result-hi.png"
+    },
+    {
+      "id": "round1",
+      "kind": "score",
+      "sourceAttachmentSha256": "ae20db414f9378e09a529f289d800ab4fb6f43ad5001fea2e9b84bffb90ce90f",
+      "copiedSha256": "ae20db414f9378e09a529f289d800ab4fb6f43ad5001fea2e9b84bffb90ce90f",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "noResize": true,
+      "output": "media/round1-score-hi.png"
+    },
+    {
+      "id": "round1",
+      "kind": "card1",
+      "source": "media/round1-neutral-hi.png",
+      "sourceSha256": "0c46991f73c2b40b79e64292a740f04f3698ae8b7bc689769f30030ee2947f80",
+      "crop": [
+        29,
+        476,
+        1120,
+        305
+      ],
+      "nativeResolution": [
+        1120,
+        305
+      ],
+      "noResize": true,
+      "oldDerivedResolution": [
+        840,
+        228
+      ],
+      "output": "media/round1-card1-hi.png",
+      "sha256": "c1c381c93023129a7f9a0323c227b2cc041fd43b00ec0a6766cb86208420b2f9"
+    },
+    {
+      "id": "round1",
+      "kind": "card2",
+      "source": "media/round1-neutral-hi.png",
+      "sourceSha256": "0c46991f73c2b40b79e64292a740f04f3698ae8b7bc689769f30030ee2947f80",
+      "crop": [
+        29,
+        814,
+        1120,
+        303
+      ],
+      "nativeResolution": [
+        1120,
+        303
+      ],
+      "noResize": true,
+      "oldDerivedResolution": [
+        840,
+        227
+      ],
+      "output": "media/round1-card2-hi.png",
+      "sha256": "1ccb5238854cabb77d4db1ec112d620003b3a1f32e178e827545079474074e4e"
+    },
+    {
+      "id": "round1",
+      "kind": "card3",
+      "source": "media/round1-neutral-hi.png",
+      "sourceSha256": "0c46991f73c2b40b79e64292a740f04f3698ae8b7bc689769f30030ee2947f80",
+      "crop": [
+        29,
+        1151,
+        1120,
+        243
+      ],
+      "nativeResolution": [
+        1120,
+        243
+      ],
+      "noResize": true,
+      "oldDerivedResolution": [
+        840,
+        182
+      ],
+      "output": "media/round1-card3-hi.png",
+      "sha256": "7979f92cca7ce9d0ef22b20530ceefa99b42b4efabd17fad4066fe00f446bbc4"
+    },
+    {
+      "id": "round1",
+      "kind": "card4",
+      "source": "media/round1-neutral-hi.png",
+      "sourceSha256": "0c46991f73c2b40b79e64292a740f04f3698ae8b7bc689769f30030ee2947f80",
+      "crop": [
+        29,
+        1428,
+        1120,
+        303
+      ],
+      "nativeResolution": [
+        1120,
+        303
+      ],
+      "noResize": true,
+      "oldDerivedResolution": [
+        840,
+        227
+      ],
+      "output": "media/round1-card4-hi.png",
+      "sha256": "68fb63680910fa989052c5a884a2bcc106b25d732b5687b9e495e17c328fea09"
+    },
+    {
+      "id": "round1",
+      "kind": "card5",
+      "source": "media/round1-neutral-hi.png",
+      "sourceSha256": "0c46991f73c2b40b79e64292a740f04f3698ae8b7bc689769f30030ee2947f80",
+      "crop": [
+        29,
+        1765,
+        1120,
+        303
+      ],
+      "nativeResolution": [
+        1120,
+        303
+      ],
+      "noResize": true,
+      "oldDerivedResolution": [
+        840,
+        227
+      ],
+      "output": "media/round1-card5-hi.png",
+      "sha256": "04097abd3fda1405567189bad30db328a4fc87e418d9d64b12dd6a3f20e49767"
+    },
+    {
+      "id": "round1",
+      "kind": "high CFR",
+      "sourceRawSha256": "5a0f572b9c60d6c99d610efb68d3f1e7f1affd6233581ed1f3527e30d335ba25",
+      "output": "media/round1-hi-cfr.mp4",
+      "sha256": "d400d459e68a3b86418219cae6a94b9e5ebd656a13a77ff18d8d8f413e7b7009",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "duration": 89.733333,
+      "fps": 30,
+      "noResize": true,
+      "noSpeedChange": true
+    },
+    {
+      "id": "round2",
+      "kind": "neutral",
+      "sourceAttachmentSha256": "13da33617e8aece4c7065d88702b590cadce6a6de8bc98fa8455e3e777f2de7a",
+      "copiedSha256": "13da33617e8aece4c7065d88702b590cadce6a6de8bc98fa8455e3e777f2de7a",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "noResize": true,
+      "output": "media/round2-neutral-hi.png"
+    },
+    {
+      "id": "round2",
+      "kind": "result",
+      "sourceAttachmentSha256": "70f540f0792995ca4e3e008bf048a0a1c18254e2d3d71b83ef7fe0235f063e90",
+      "copiedSha256": "70f540f0792995ca4e3e008bf048a0a1c18254e2d3d71b83ef7fe0235f063e90",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "noResize": true,
+      "output": "media/round2-result-hi.png"
+    },
+    {
+      "id": "round2",
+      "kind": "score",
+      "sourceAttachmentSha256": "fd6d73544879b981ac887282ad46505687fc003bdc1ca16aef574329f7816146",
+      "copiedSha256": "fd6d73544879b981ac887282ad46505687fc003bdc1ca16aef574329f7816146",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "noResize": true,
+      "output": "media/round2-score-hi.png"
+    },
+    {
+      "id": "round2",
+      "kind": "high CFR",
+      "sourceRawSha256": "7f1f903976c07aa34e17189f2886261f00dfb7ecc6abbacb25c6846a60d25315",
+      "output": "media/round2-hi-cfr.mp4",
+      "sha256": "af30770f63e5e3d8a7b12c6e70d5790c7e8e67ad210db3d132fc9c15c8a12e0b",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "duration": 79.433333,
+      "fps": 30,
+      "noResize": true,
+      "noSpeedChange": true
+    },
+    {
+      "id": "truth1",
+      "kind": "neutral",
+      "sourceAttachmentSha256": "3047201fcc56133fbc8b6aca96ce67734bfa81e6a765ac65dfd64225dd52a1b3",
+      "copiedSha256": "3047201fcc56133fbc8b6aca96ce67734bfa81e6a765ac65dfd64225dd52a1b3",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "noResize": true,
+      "output": "media/truth1-neutral-hi.png"
+    },
+    {
+      "id": "truth1",
+      "kind": "result",
+      "sourceAttachmentSha256": "d48a9499b7dce3761a8caea18593612f1133289f25d846b1e08e265bd066d38d",
+      "copiedSha256": "d48a9499b7dce3761a8caea18593612f1133289f25d846b1e08e265bd066d38d",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "noResize": true,
+      "output": "media/truth1-result-hi.png"
+    },
+    {
+      "id": "truth1",
+      "kind": "score",
+      "sourceAttachmentSha256": "87e74785353d1d58848fd42968c07aa29955912eeb2ceddc27bf2b726b7383bd",
+      "copiedSha256": "87e74785353d1d58848fd42968c07aa29955912eeb2ceddc27bf2b726b7383bd",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "noResize": true,
+      "output": "media/truth1-score-hi.png"
+    },
+    {
+      "id": "truth1",
+      "kind": "high CFR",
+      "sourceRawSha256": "18c002d0949c97734c441046536a9e510aa60a8626c03670a7c9248a1d64e225",
+      "output": "media/truth1-hi-cfr.mp4",
+      "sha256": "e32fca55ead63b6d52a6cad95d0f588b03bf75a348c2da1bc176562c30570216",
+      "nativeResolution": [
+        1178,
+        2556
+      ],
+      "duration": 77.966667,
+      "fps": 30,
+      "noResize": true,
+      "noSpeedChange": true
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "engine": "VOICEVOX",
+  "engineVersion": "0.25.1",
+  "speaker": "青山龍星",
+  "styleId": 13,
+  "style": "ノーマル",
+  "credit": "VOICEVOX:青山龍星",
+  "voiceActorRecording": false,
+  "wholeDirectAudition": false,
+  "cues": [
+    {
+      "id": "hook",
+      "at": 0.2,
+      "end": 3.4,
+      "text": "この五つ、嘘はどれ？",
+      "file": "voice-hook.wav",
+      "predictedDuration": 1.6813123701872499,
+      "speedScale": 1.16,
+      "sha256": "1a896260513a2ae4c9f9c7261b4a381673e591b67e304c6b818e285dbb7ef49f"
+    },
+    {
+      "id": "rule",
+      "at": 3.8,
+      "end": 8.6,
+      "text": "五つの答えに、ひとつだけ嘘を混ぜる。",
+      "file": "voice-rule.wav",
+      "predictedDuration": 2.3933402911753494,
+      "speedScale": 1.16,
+      "sha256": "177a04bb5821ae6005b55cdbf20d533e685ec65b0e682bce0cc0e3ca3297ee99"
+    },
+    {
+      "id": "identity",
+      "at": 8.8,
+      "end": 12,
+      "text": "自作ゲーム、嘘か誠か。",
+      "file": "voice-identity.wav",
+      "predictedDuration": 1.9841544625985215,
+      "speedScale": 1.16,
+      "sha256": "320962912e96233d7a4fcb0b055b0044d4a700f7c3699c6161966b827daf493c"
+    },
+    {
+      "id": "cards",
+      "at": 12.4,
+      "end": 19.6,
+      "text": "木の電車。短編映画。赤い自転車。どれも、ありそうです。",
+      "file": "voice-cards.wav",
+      "predictedDuration": 4.808812213396204,
+      "speedScale": 1.16,
+      "sha256": "4f60833b4f876d2a88d3e76c309d8ed2c037069881ca5520259e0eb88a878690"
+    },
+    {
+      "id": "choice",
+      "at": 20.4,
+      "end": 25.8,
+      "text": "あなたなら、何番に一票を置きますか。",
+      "file": "voice-choice.wav",
+      "predictedDuration": 2.5207858571615716,
+      "speedScale": 1.16,
+      "sha256": "981d3644d7bacfb7f77aafa7f32a46f295dbd23095bfab39342e5be36d8e2d12"
+    },
+    {
+      "id": "vote",
+      "at": 27.2,
+      "end": 31.6,
+      "text": "今回は、三番を選びました。",
+      "file": "voice-vote.wav",
+      "predictedDuration": 2.1797057729753955,
+      "speedScale": 1.16,
+      "sha256": "cf5a31ae9c16cc0d1b03b9f61df0ab1c45508f7d92022abeed5ab21761e110c3"
+    },
+    {
+      "id": "reveal",
+      "at": 32,
+      "end": 37,
+      "text": "結果は、投票的中。嘘は、赤い自転車でした。",
+      "file": "voice-reveal.wav",
+      "predictedDuration": 3.998861741957994,
+      "speedScale": 1.16,
+      "sha256": "e802bf8017f35e2f78bb6e2e8de8e855bc944fd44d682a6a3754f52ff7ab1c65"
+    },
+    {
+      "id": "score",
+      "at": 37.4,
+      "end": 40.8,
+      "text": "見抜いた側に、一点。",
+      "file": "voice-score.wav",
+      "predictedDuration": 1.87248522484097,
+      "speedScale": 1.16,
+      "sha256": "c878d12bf858f8454d9cc73e040f87ed41e2f66850bb0ab2c646dca428434ebc"
+    },
+    {
+      "id": "switch",
+      "at": 42,
+      "end": 47,
+      "text": "次は、出題と推理を交代。",
+      "file": "voice-switch.wav",
+      "predictedDuration": 2.1928482888484826,
+      "speedScale": 1.16,
+      "sha256": "1f3faa23fd7eaa5ec640b19510ec25fc9e0611278f90fcc938845d20db9f8581"
+    },
+    {
+      "id": "miss",
+      "at": 47.2,
+      "end": 53.2,
+      "text": "二番を選びましたが、嘘は五番。正解者なし。",
+      "file": "voice-miss.wav",
+      "predictedDuration": 3.484807514209172,
+      "speedScale": 1.16,
+      "sha256": "9d79768f169532442e7b1dafd14145be6c25f81f0c9894207f10e94d27aaa62a"
+    },
+    {
+      "id": "points",
+      "at": 54,
+      "end": 59.4,
+      "text": "見抜いても、だましても、点が動きます。",
+      "file": "voice-points.wav",
+      "predictedDuration": 2.912304727722859,
+      "speedScale": 1.16,
+      "sha256": "38b9e42c40034bd376916a12101b35f077dad2be60a761e90780502c853bd3af"
+    },
+    {
+      "id": "truth",
+      "at": 60,
+      "end": 65.6,
+      "text": "そして、嘘をつかない回も、選べます。",
+      "file": "voice-truth.wav",
+      "predictedDuration": 2.8519453905163146,
+      "speedScale": 1.16,
+      "sha256": "c93f1287adcd47660068f6393edc0b73e298e9462eea412a8e1fb0f0430f8b26"
+    },
+    {
+      "id": "your",
+      "at": 66.4,
+      "end": 70.8,
+      "text": "次は、あなたの答えで。",
+      "file": "voice-your.wav",
+      "predictedDuration": 1.7930456251317057,
+      "speedScale": 1.16,
+      "sha256": "f1a74976b78562dc510b632209e0b18a65e6100e212c92a91c245311f90bce3b"
+    },
+    {
+      "id": "outro",
+      "at": 71.2,
+      "end": 74.8,
+      "text": "嘘か誠か。遊び方の続きを見ていきましょう。",
+      "file": "voice-outro.wav",
+      "predictedDuration": 2.9295489809019815,
+      "speedScale": 1.16,
+      "sha256": "95681fc73d27d381af5a52a67ff1295d3d167a8a31dbb7e9e44bd449bf7ec0fe"
+    }
+  ]
+}

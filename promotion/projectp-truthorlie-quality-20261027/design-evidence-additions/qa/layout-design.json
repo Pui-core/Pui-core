@@ -1,0 +1,706 @@
+{
+  "duration": 65.86666666666666,
+  "scenes": 10,
+  "realCamera": true,
+  "realBezierKeys": 172,
+  "shots": [
+    {
+      "name": "night-app-short actual0",
+      "asset": "actual-answer",
+      "output": [
+        19.833333333333332,
+        21.91111111111111
+      ],
+      "rect": [
+        115,
+        1100,
+        950,
+        600
+      ],
+      "center": [
+        960,
+        580
+      ],
+      "scale": 100
+    },
+    {
+      "name": "night-app-short actual1",
+      "asset": "actual-guess",
+      "output": [
+        21.91111111111111,
+        23.988888888888887
+      ],
+      "rect": [
+        130,
+        1205,
+        920,
+        145
+      ],
+      "center": [
+        960,
+        580
+      ],
+      "scale": 158.69565217391303
+    },
+    {
+      "name": "night-app-short actual2",
+      "asset": "actual-result",
+      "output": [
+        23.988888888888887,
+        26.066666666666666
+      ],
+      "rect": [
+        115,
+        350,
+        930,
+        350
+      ],
+      "center": [
+        960,
+        580
+      ],
+      "scale": 156.98924731182794
+    },
+    {
+      "name": "field-change current names",
+      "asset": "actual-names",
+      "output": [
+        43.163999999999994,
+        47.8
+      ],
+      "rect": [
+        130,
+        950,
+        930,
+        240
+      ],
+      "center": [
+        960,
+        585
+      ],
+      "scale": 111
+    },
+    {
+      "name": "footer-change actualfooter",
+      "asset": "actual-history",
+      "output": [
+        50.967999999999996,
+        54.4
+      ],
+      "rect": [
+        15,
+        2140,
+        1148,
+        310
+      ],
+      "center": [
+        960,
+        580
+      ],
+      "scale": 133
+    },
+    {
+      "name": "seal-change actualcombined",
+      "asset": "actual-review",
+      "output": [
+        58.144,
+        62.2
+      ],
+      "rect": [
+        210,
+        1490,
+        780,
+        320
+      ],
+      "center": [
+        960,
+        580
+      ],
+      "scale": 171
+    },
+    {
+      "name": "return-short history",
+      "asset": "actual-history",
+      "output": [
+        62.2,
+        65.86666666666666
+      ],
+      "rect": [
+        145,
+        700,
+        860,
+        420
+      ],
+      "center": [
+        1187,
+        575
+      ],
+      "scale": 115
+    }
+  ],
+  "textBoxes": [
+    {
+      "name": "logo-question label 0",
+      "text": "変更前の原画",
+      "center": [
+        960,
+        908
+      ],
+      "width": 183.65380859375,
+      "height": 28.65699527138158,
+      "output": [
+        0,
+        5.233333333333333
+      ]
+    },
+    {
+      "name": "logo-question title",
+      "text": "赤い字が、逆だった？",
+      "center": [
+        960,
+        144
+      ],
+      "width": 474.9267578125,
+      "height": 44.98046875,
+      "output": [
+        0.08,
+        5.233333333333333
+      ]
+    },
+    {
+      "name": "logo-question scope",
+      "text": "原画の履歴 / 説明用の比較",
+      "center": [
+        960,
+        1035
+      ],
+      "width": 241.123046875,
+      "height": 18.720703125,
+      "output": [
+        0,
+        5.233333333333333
+      ]
+    },
+    {
+      "name": "logo-changes label 5.233333333333333",
+      "text": "色変更の前",
+      "center": [
+        960,
+        908
+      ],
+      "width": 152.0029296875,
+      "height": 28.77808902138158,
+      "output": [
+        5.233333333333333,
+        5.933333333333334
+      ]
+    },
+    {
+      "name": "logo-changes label 5.933333333333334",
+      "text": "嘘を赤・誠をクリームへ",
+      "center": [
+        960,
+        908
+      ],
+      "width": 335.9443359375,
+      "height": 28.19970703125,
+      "output": [
+        5.933333333333334,
+        8.369333333333334
+      ]
+    },
+    {
+      "name": "logo-changes label 8.369333333333334",
+      "text": "筆字にする前",
+      "center": [
+        960,
+        908
+      ],
+      "width": 183.3056640625,
+      "height": 29.001953125,
+      "output": [
+        8.369333333333334,
+        10.448053333333334
+      ]
+    },
+    {
+      "name": "logo-changes label 10.448053333333334",
+      "text": "筆字へ変更",
+      "center": [
+        960,
+        908
+      ],
+      "width": 152.95654296875,
+      "height": 29.001953125,
+      "output": [
+        10.448053333333334,
+        12.7
+      ]
+    },
+    {
+      "name": "logo-changes title",
+      "text": "色と、字。二つの変更。",
+      "center": [
+        960,
+        144
+      ],
+      "width": 502.41748046875,
+      "height": 45.487947162828945,
+      "output": [
+        5.3133333333333335,
+        12.7
+      ]
+    },
+    {
+      "name": "logo-changes scope",
+      "text": "原画の履歴 / 説明用の比較",
+      "center": [
+        960,
+        1035
+      ],
+      "width": 241.123046875,
+      "height": 18.720703125,
+      "output": [
+        5.233333333333333,
+        12.7
+      ]
+    },
+    {
+      "name": "night-choice-short owner short",
+      "text": "ミステリー / 夜の卓上",
+      "center": [
+        500,
+        480
+      ],
+      "width": 467.8125,
+      "height": 44.7421875,
+      "output": [
+        12.85,
+        19.833333333333332
+      ]
+    },
+    {
+      "name": "night-choice-short owner quote",
+      "text": "「Aだろ圧倒的に」",
+      "center": [
+        500,
+        590
+      ],
+      "width": 290.138671875,
+      "height": 36.88623046875,
+      "output": [
+        13.1,
+        19.833333333333332
+      ]
+    },
+    {
+      "name": "night-choice-short owner provenance",
+      "text": "本人の原コメント / 2026-06-10",
+      "center": [
+        500,
+        760
+      ],
+      "width": 348.42529296875,
+      "height": 23.095703125,
+      "output": [
+        13.1,
+        19.833333333333332
+      ]
+    },
+    {
+      "name": "night-choice-short title",
+      "text": "選んだのは、夜の卓上。",
+      "center": [
+        960,
+        144
+      ],
+      "width": 503.8291015625,
+      "height": 45.62646484375,
+      "output": [
+        12.78,
+        19.833333333333332
+      ]
+    },
+    {
+      "name": "night-choice-short scope",
+      "text": "原画の履歴 / 説明用の比較",
+      "center": [
+        960,
+        1035
+      ],
+      "width": 241.123046875,
+      "height": 18.720703125,
+      "output": [
+        12.7,
+        19.833333333333332
+      ]
+    },
+    {
+      "name": "night-app-short phase0",
+      "text": "実画面：回答を入力",
+      "center": [
+        960,
+        940
+      ],
+      "width": 274.23193359375,
+      "height": 28.74462890625,
+      "output": [
+        19.833333333333332,
+        21.91111111111111
+      ]
+    },
+    {
+      "name": "night-app-short phase1",
+      "text": "実画面：推理の回答",
+      "center": [
+        960,
+        940
+      ],
+      "width": 276.7900390625,
+      "height": 28.74462890625,
+      "output": [
+        21.91111111111111,
+        23.988888888888887
+      ]
+    },
+    {
+      "name": "night-app-short phase2",
+      "text": "実画面：ラウンド結果",
+      "center": [
+        960,
+        940
+      ],
+      "width": 307.638671875,
+      "height": 28.71435546875,
+      "output": [
+        23.988888888888887,
+        26.066666666666666
+      ]
+    },
+    {
+      "name": "night-app-short title",
+      "text": "暗い部屋に、場面ごとの紙。",
+      "center": [
+        960,
+        144
+      ],
+      "width": 599.07763671875,
+      "height": 45.57861328125,
+      "output": [
+        19.91333333333333,
+        26.066666666666666
+      ]
+    },
+    {
+      "name": "paper-evolution version0",
+      "text": "1. 封筒の折り線",
+      "center": [
+        960,
+        940
+      ],
+      "width": 209.9560546875,
+      "height": 27.9638671875,
+      "output": [
+        26.066666666666666,
+        28.744444444444444
+      ]
+    },
+    {
+      "name": "paper-evolution version1",
+      "text": "2. 古紙と中央枠",
+      "center": [
+        960,
+        940
+      ],
+      "width": 211.6552734375,
+      "height": 27.83203125,
+      "output": [
+        28.744444444444444,
+        31.422222222222224
+      ]
+    },
+    {
+      "name": "paper-evolution version2",
+      "text": "3. 中央枠除去",
+      "center": [
+        960,
+        940
+      ],
+      "width": 180.615234375,
+      "height": 27.744140625,
+      "output": [
+        31.422222222222224,
+        34.1
+      ]
+    },
+    {
+      "name": "paper-evolution title",
+      "text": "折り線から、中央の枠を外すまで。",
+      "center": [
+        960,
+        144
+      ],
+      "width": 747.60888671875,
+      "height": 45.5068359375,
+      "output": [
+        26.146666666666665,
+        34.1
+      ]
+    },
+    {
+      "name": "paper-evolution scope",
+      "text": "原画の履歴 / 説明用の比較",
+      "center": [
+        960,
+        1035
+      ],
+      "width": 241.123046875,
+      "height": 18.720703125,
+      "output": [
+        26.066666666666666,
+        34.1
+      ]
+    },
+    {
+      "name": "paper-text-short title",
+      "text": "同じ文字を、置くと？",
+      "center": [
+        960,
+        144
+      ],
+      "width": 472.12744140625,
+      "height": 44.98046875,
+      "output": [
+        34.18,
+        39.666666666666664
+      ]
+    },
+    {
+      "name": "field-change raw label",
+      "text": "変更前の原画 / 変更後の原画",
+      "center": [
+        960,
+        940
+      ],
+      "width": 377.38232421875,
+      "height": 26.97509765625,
+      "output": [
+        39.666666666666664,
+        43.163999999999994
+      ]
+    },
+    {
+      "name": "field-change current label",
+      "text": "実画面：枠と文字を、画面側で描画",
+      "center": [
+        960,
+        940
+      ],
+      "width": 445.552734375,
+      "height": 25.962890625,
+      "output": [
+        43.163999999999994,
+        47.8
+      ]
+    },
+    {
+      "name": "field-change title",
+      "text": "名前欄は、絵の直貼りではない。",
+      "center": [
+        960,
+        144
+      ],
+      "width": 698.46533203125,
+      "height": 45.6982421875,
+      "output": [
+        39.74666666666666,
+        47.8
+      ]
+    },
+    {
+      "name": "field-change scope",
+      "text": "原画の履歴 / 説明用の比較",
+      "center": [
+        960,
+        1035
+      ],
+      "width": 241.123046875,
+      "height": 18.720703125,
+      "output": [
+        39.666666666666664,
+        47.8
+      ]
+    },
+    {
+      "name": "footer-change raw label",
+      "text": "変更前の原画 / 変更後の原画",
+      "center": [
+        960,
+        955
+      ],
+      "width": 364.369140625,
+      "height": 26.044921875,
+      "output": [
+        47.8,
+        50.967999999999996
+      ]
+    },
+    {
+      "name": "footer-change current label",
+      "text": "実画面：ホーム / 設定 / ショップ / 履歴",
+      "center": [
+        960,
+        940
+      ],
+      "width": 526.12060546875,
+      "height": 27.130859375,
+      "output": [
+        50.967999999999996,
+        54.4
+      ]
+    },
+    {
+      "name": "footer-change title",
+      "text": "帯の絵と、四つの入口。",
+      "center": [
+        960,
+        144
+      ],
+      "width": 503.3505859375,
+      "height": 45.4111328125,
+      "output": [
+        47.879999999999995,
+        54.4
+      ]
+    },
+    {
+      "name": "footer-change scope",
+      "text": "原画の履歴 / 説明用の比較",
+      "center": [
+        960,
+        1035
+      ],
+      "width": 241.123046875,
+      "height": 18.720703125,
+      "output": [
+        47.8,
+        54.4
+      ]
+    },
+    {
+      "name": "seal-change state0",
+      "text": "真実の封",
+      "center": [
+        420,
+        810
+      ],
+      "width": 137.96630859375,
+      "height": 32.27294921875,
+      "output": [
+        54.4,
+        58.144
+      ]
+    },
+    {
+      "name": "seal-change state1",
+      "text": "嘘の印",
+      "center": [
+        960,
+        810
+      ],
+      "width": 100.419921875,
+      "height": 32.4365234375,
+      "output": [
+        54.4,
+        58.144
+      ]
+    },
+    {
+      "name": "seal-change state2",
+      "text": "判断の印",
+      "center": [
+        1500,
+        810
+      ],
+      "width": 136.42822265625,
+      "height": 32.4365234375,
+      "output": [
+        54.4,
+        58.144
+      ]
+    },
+    {
+      "name": "seal-change actualmark",
+      "text": "実画面：同じ回答に、嘘と投票",
+      "center": [
+        960,
+        940
+      ],
+      "width": 402.998046875,
+      "height": 26.91845703125,
+      "output": [
+        58.144,
+        62.2
+      ]
+    },
+    {
+      "name": "seal-change title",
+      "text": "原画の印が、結果に重なる。",
+      "center": [
+        960,
+        144
+      ],
+      "width": 601.7333984375,
+      "height": 45.57861328125,
+      "output": [
+        54.48,
+        62.2
+      ]
+    },
+    {
+      "name": "seal-change scope",
+      "text": "原画の履歴 / 説明用の比較",
+      "center": [
+        960,
+        1035
+      ],
+      "width": 241.123046875,
+      "height": 18.720703125,
+      "output": [
+        54.4,
+        62.2
+      ]
+    },
+    {
+      "name": "return-short short",
+      "text": "一票と、得点の記録へ。",
+      "center": [
+        410,
+        570
+      ],
+      "width": 461.40380859375,
+      "height": 41.77001953125,
+      "output": [
+        62.300000000000004,
+        65.86666666666666
+      ]
+    },
+    {
+      "name": "return-short title",
+      "text": "その紙の上で、一票が記録になる。",
+      "center": [
+        960,
+        144
+      ],
+      "width": 744.76171875,
+      "height": 45.4111328125,
+      "output": [
+        62.28,
+        65.86666666666666
+      ]
+    }
+  ],
+  "newGameRuntimeCapture": false,
+  "formal600": false,
+  "nativeSha256": "358bab4568b236eed10c909c4a721c8372ef391c89b8023e042bfe3425d817c9"
+}

@@ -1,0 +1,40 @@
+{
+  "duration": 44,
+  "output": "videos/truthorlie129-rules-block44-read-v02-cipher.mp4",
+  "sha256": "822bce9f019086d9a5e12cfb6f395c9a0ef17657a29b7ed49e9d71b2d9724509",
+  "basePictureSha256": "3de5d1f8a0733602f3c2dd446e9d7b8bb1fb1a6018cf01b4b5ac89d1a74e9895",
+  "patches": [
+    {
+      "name": "first-score",
+      "start": 18.2,
+      "end": 21,
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block-read-v02\\media\\read-v02-first-score.mp4",
+      "sha256": "407f561711bbf076b7ca3670673aee5e9a535786f4fb533b03628d2ec78d13db"
+    },
+    {
+      "name": "second-score-and-comparison",
+      "start": 32,
+      "end": 41,
+      "path": "\\\\wsl.localhost\\Ubuntu\\home\\pui\\tmp\\projectp-truthorlie-quality129-20261027\\production\\story-block-read-v02\\media\\read-v02-second-score-and-comparison.mp4",
+      "sha256": "57a9c4cb91f2bf83f1cafc239427bb78bc49e3b52e920384cacc2ccb9bdaeca8"
+    }
+  ],
+  "ecSha256": "f8a9ab8d3a6c69229539412f34f95924adb2c54beffea5b3765338f7f7d24099",
+  "fcSha256": "53feca5317ca76681cdd053746894cb8004d53158906a474cd63f38f635b18eb",
+  "actualNativeEC": true,
+  "actualNativeFC": true,
+  "offlineMedia": [],
+  "voiceCues": 9,
+  "voiceWavesUnchanged": true,
+  "coreFrames": 240,
+  "coreSeconds": 8,
+  "voiceRmsBindingUnchanged": true,
+  "coreRegenerated": false,
+  "readFix": "Explicit current +1 and cumulative 0→1 / 1→2 with aligned visual order",
+  "storyDirectionAcceptedForPrior44Only": true,
+  "full600Master": false,
+  "rootReadFixAccepted": false,
+  "wholeDirectWatch": false,
+  "wholeSubjectiveListen": false,
+  "published": false
+}

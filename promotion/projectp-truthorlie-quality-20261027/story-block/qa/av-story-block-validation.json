@@ -1,0 +1,112 @@
+{
+  "status": "PASS_FINAL_SAMPLE_FORMAT_AND_FULL_DECODE",
+  "duration": 44.01,
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "codec": "h264",
+    "frames": "1320"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": "48000",
+    "channels": 2
+  },
+  "sha256": "948c5bfccf22e2b2002246b1fb6e54cedac559e6255a970bcb4e72ce8a9bef80",
+  "sceneBoundaryTimes": [
+    0,
+    3.4,
+    10,
+    14,
+    15.2,
+    18.2,
+    21,
+    24,
+    28,
+    29,
+    32,
+    35,
+    41,
+    44
+  ],
+  "uniqueSceneIntervals": 13,
+  "layerShotRecords": 11,
+  "layerShotCountIsNotEditCount": true,
+  "wholeVoicePhrases": 9,
+  "finalExtracts": [
+    {
+      "time": 1,
+      "file": "qa/story-final-1.png",
+      "sha256": "3cba334fb46284ceeb2accdc6a30eb533cc25f261a8d212eb082d61ec8686f15"
+    },
+    {
+      "time": 6,
+      "file": "qa/story-final-6.png",
+      "sha256": "b1becf55dfe2e7361049f0f2b95a2adc9ddc971c1b057fbf824cbbdbb1437946"
+    },
+    {
+      "time": 11.5,
+      "file": "qa/story-final-11.5.png",
+      "sha256": "6865d0f606687e88faf4ed70c993e6e507946286ae524b185a6347cf6eeafb88"
+    },
+    {
+      "time": 14.5,
+      "file": "qa/story-final-14.5.png",
+      "sha256": "2b61637f7a38196425093d1a463afaf7a359c250dfbfbf36e4dc6a6f32c62432"
+    },
+    {
+      "time": 16.5,
+      "file": "qa/story-final-16.5.png",
+      "sha256": "aed00830e0f945af49475315b87f962912a2ae8888d02018fb8069f52fba5642"
+    },
+    {
+      "time": 19,
+      "file": "qa/story-final-19.png",
+      "sha256": "165b3b14c882adeb6512d41721df02b4bbd3dadbe904ce35f0c2ad85ef3b9b0a"
+    },
+    {
+      "time": 22,
+      "file": "qa/story-final-22.png",
+      "sha256": "37cf4da772a12e51fec9b97f70d75e2fc93a6887953157148b389c7856988eb4"
+    },
+    {
+      "time": 25.5,
+      "file": "qa/story-final-25.5.png",
+      "sha256": "fe17f92dc0d30faa75470ed811a53368fc7baec67f9d884bd95e89b08776df7e"
+    },
+    {
+      "time": 28.5,
+      "file": "qa/story-final-28.5.png",
+      "sha256": "1d12baa2c50aa8eef3bfb1f397b3f665f354edc75d16ef64ff101d107ee14a18"
+    },
+    {
+      "time": 30.5,
+      "file": "qa/story-final-30.5.png",
+      "sha256": "f56717ceab05681cce4dc0e95a6ba5feea465f42aa5cd25539f5830ce71deaba"
+    },
+    {
+      "time": 33,
+      "file": "qa/story-final-33.png",
+      "sha256": "2de52e36ee2f1133867750aa1389a51652d71cf6d39554f3747567b0f4651a5a"
+    },
+    {
+      "time": 37,
+      "file": "qa/story-final-37.png",
+      "sha256": "09f3294ab425da60c9991d00c63e437c4969f6398b751decc8c9ebd3612c4699"
+    },
+    {
+      "time": 42.5,
+      "file": "qa/story-final-42.5.png",
+      "sha256": "1cbb502c1596239f0ec45c0782b66d2b230f5b2eaf3a1e44e70115bdc929e968"
+    }
+  ],
+  "nativeTextBoxes": 28,
+  "textBoundsInsideFrame": true,
+  "newCoreFrames": 240,
+  "voicedRmsScheduleNew": true,
+  "subjectiveWholeListen": false,
+  "wholeDirectWatch": false,
+  "rootVisualQualityAccepted": false,
+  "notFull600SecondMaster": true
+}
