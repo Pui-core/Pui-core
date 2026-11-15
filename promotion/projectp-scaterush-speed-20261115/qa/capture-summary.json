@@ -1,0 +1,2188 @@
+{
+  "recordingFps": 25,
+  "finalConformFps": 30,
+  "videoCreatedAt": 1794712786363,
+  "gameStartAt": 1794712788152,
+  "gameStartVideoOffsetApprox": 1.789,
+  "videoOffsetUncertaintySeconds": null,
+  "originalGameAudio": false,
+  "source": "/mnt/f/dev/_scate_ssh_work/scate_run/scate.html",
+  "sourceSha256": "5767390cce203312fabc82d5636a27adff0631ea7f1e43a25b01a19995288fbe",
+  "sourceUnmodified": true,
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "recording": "/home/pui/private-use/projectp-scaterush162-20261115/capture-full/page@101dba6dc9f93a0b4f79a504c23ff63e.webm",
+  "inputs": "Playwright keyboard only; state/hazards read-only, no game state mutation",
+  "runs": [
+    {
+      "start": 0,
+      "end": 12.146,
+      "duration": 12.176,
+      "score": 5979.26190369416
+    },
+    {
+      "start": 12.654,
+      "end": 20.639,
+      "duration": 8.022,
+      "score": 940.0486041113897
+    },
+    {
+      "start": 21.152,
+      "end": 41.739,
+      "duration": 20.596,
+      "score": 14669.164185802214
+    },
+    {
+      "start": 42.219,
+      "end": 64.227,
+      "duration": 22.037,
+      "score": 17479.838355563443
+    },
+    {
+      "start": 64.718,
+      "end": 88.763,
+      "duration": 24.077,
+      "score": 21897.879701508504
+    },
+    {
+      "start": 89.27,
+      "end": 110.003,
+      "duration": 20.733
+    }
+  ],
+  "longestRun": 24.077,
+  "maxScore": 21897.879701508504,
+  "maxSpeed": 909.9999950323041,
+  "last": {
+    "mode": "running",
+    "score": 13474.496672108895,
+    "combo": 9,
+    "speed": 748.6069997643057,
+    "distance": 10028.753427775027
+  },
+  "pageErrors": [],
+  "events": [
+    {
+      "t": 0.048,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 2.175,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.17755488749039508,
+      "speed": 750.4464399007213
+    },
+    {
+      "t": 3.419,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.15737738340647842,
+      "speed": 787.0784360502357
+    },
+    {
+      "t": 4.104,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 5.046,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 5.505,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.17665707739611283,
+      "speed": 836.1072198860443
+    },
+    {
+      "t": 5.541,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.17665707739611283,
+      "speed": 836.1072198860443
+    },
+    {
+      "t": 6.188,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 6.897,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 7.337,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.18078185197426277,
+      "speed": 890.8887876137047
+    },
+    {
+      "t": 8.531,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.18793707658728404,
+      "speed": 909.2717687974426
+    },
+    {
+      "t": 8.579,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.18793707658728404,
+      "speed": 909.2717687974426
+    },
+    {
+      "t": 9.403,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 10.435,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 11.049,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18251001745282733,
+      "speed": 909.9997375463975
+    },
+    {
+      "t": 12.146,
+      "event": "crash",
+      "state": {
+        "mode": "crashed",
+        "x": 164,
+        "y": 0,
+        "vy": 0,
+        "speed": 909.9999950323041,
+        "score": 5979.26190369416,
+        "combo": 9,
+        "distance": 6689.390038787524,
+        "h": [
+          {
+            "x": 203.9021180112231,
+            "w": 38,
+            "type": "cone",
+            "passed": false
+          },
+          {
+            "x": 729.7000050365017,
+            "w": 38,
+            "type": "cone",
+            "passed": false
+          }
+        ]
+      }
+    },
+    {
+      "t": 12.182,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 12.669,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 14.68,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 14.95,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 15.276,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.17049147177030796,
+      "speed": 437.0734662579761
+    },
+    {
+      "t": 15.312,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.17049147177030796,
+      "speed": 437.0734662579761
+    },
+    {
+      "t": 15.375,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 15.475,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 16.219,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 16.391,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 17.115,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.14329496471845937,
+      "speed": 465.25234622941315
+    },
+    {
+      "t": 17.184,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.14329496471845937,
+      "speed": 465.25234622941315
+    },
+    {
+      "t": 17.214,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.14329496471845937,
+      "speed": 465.25234622941315
+    },
+    {
+      "t": 17.271,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 17.464,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 18.039,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 19.825,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 20.639,
+      "event": "crash",
+      "state": {
+        "mode": "crashed",
+        "x": 164,
+        "y": 0,
+        "vy": 0,
+        "speed": 479.1156843099772,
+        "score": 940.0486041113897,
+        "combo": 4,
+        "distance": 2563.045879590069,
+        "h": [
+          {
+            "x": 214.4423448343791,
+            "w": 38,
+            "type": "cone",
+            "passed": false
+          },
+          {
+            "x": 795.3593324153575,
+            "w": 82,
+            "type": "rail",
+            "passed": false
+          },
+          {
+            "x": 963.9144614514839,
+            "w": 28,
+            "type": "spark",
+            "passed": false
+          }
+        ]
+      }
+    },
+    {
+      "t": 20.688,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 24.033,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 24.105,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 24.199,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 24.524,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.1490295537567992,
+      "speed": 430.530191916081
+    },
+    {
+      "t": 24.567,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.1490295537567992,
+      "speed": 430.530191916081
+    },
+    {
+      "t": 24.605,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 24.758,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 25.313,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 25.455,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 25.77,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.16322660929076915,
+      "speed": 476.38382815620355
+    },
+    {
+      "t": 25.816,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.16322660929076915,
+      "speed": 476.38382815620355
+    },
+    {
+      "t": 25.863,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 25.98,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 26.626,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 26.873,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 27.202,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18882667125549152,
+      "speed": 505.60634414267463
+    },
+    {
+      "t": 27.274,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 27.392,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 27.963,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 27.965,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 28.231,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.17560987963064012,
+      "speed": 580.9755162338063
+    },
+    {
+      "t": 28.365,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 28.546,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 29.21,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 29.381,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 29.667,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.18663825165101688,
+      "speed": 592.727168215176
+    },
+    {
+      "t": 29.685,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.18663825165101688,
+      "speed": 592.727168215176
+    },
+    {
+      "t": 29.736,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 29.859,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 30.021,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 30.87,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 31.211,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.16956492108336338,
+      "speed": 577.3377529985158
+    },
+    {
+      "t": 31.258,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 32.045,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 32.219,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.16467265954233654,
+      "speed": 622.9042935940164
+    },
+    {
+      "t": 32.277,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 33.123,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 33.463,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.16265082680791995,
+      "speed": 623.8913465392042
+    },
+    {
+      "t": 33.497,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.16265082680791995,
+      "speed": 623.8913465392042
+    },
+    {
+      "t": 33.54,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 34.185,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 34.398,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.18868980400623403,
+      "speed": 647.839180455954
+    },
+    {
+      "t": 34.423,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.18868980400623403,
+      "speed": 647.839180455954
+    },
+    {
+      "t": 34.474,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 34.946,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 35.643,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 35.965,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 36.219,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.17189890155489806,
+      "speed": 632.4264250503569
+    },
+    {
+      "t": 36.283,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 36.42,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 36.889,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 36.891,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 37.696,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 37.75,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 38.015,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.18847801104899156,
+      "speed": 637.4677654257886
+    },
+    {
+      "t": 38.063,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 38.215,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 38.639,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 38.642,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 38.9,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.15565918685727204,
+      "speed": 670.4931227683328
+    },
+    {
+      "t": 39.02,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 39.107,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 39.653,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 39.667,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 40.595,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 40.597,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 40.882,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18354006400666714,
+      "speed": 642.5648006309146
+    },
+    {
+      "t": 40.902,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18354006400666714,
+      "speed": 642.5648006309146
+    },
+    {
+      "t": 40.943,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 41.058,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 41.335,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 41.337,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 41.739,
+      "event": "crash",
+      "state": {
+        "mode": "crashed",
+        "x": 164,
+        "y": 0,
+        "vy": 0,
+        "speed": 625.1899202678618,
+        "score": 14669.164185802214,
+        "combo": 9,
+        "distance": 10150.555225253622,
+        "h": [
+          {
+            "x": 214.68208566729,
+            "w": 38,
+            "type": "cone",
+            "passed": false
+          },
+          {
+            "x": 761.2702166586391,
+            "w": 78,
+            "type": "sign",
+            "passed": false
+          }
+        ]
+      }
+    },
+    {
+      "t": 41.757,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 44.529,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 44.813,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.18744765231056748,
+      "speed": 431.72916426613665
+    },
+    {
+      "t": 44.85,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 46.056,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 46.359,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.1810559857533992,
+      "speed": 467.4436703680029
+    },
+    {
+      "t": 46.406,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 46.747,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 46.813,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 47.633,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 47.887,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.1802174313787941,
+      "speed": 502.2711860035156
+    },
+    {
+      "t": 47.936,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 48.094,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 48.574,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 48.727,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 49.001,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.16599988032668833,
+      "speed": 556.2192998936235
+    },
+    {
+      "t": 49.067,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 49.204,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 49.712,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 49.719,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 49.979,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.1824001628365512,
+      "speed": 623.3442226013323
+    },
+    {
+      "t": 50.022,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.1824001628365512,
+      "speed": 623.3442226013323
+    },
+    {
+      "t": 50.06,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 50.171,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 50.727,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 50.895,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 51.099,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18062493475270366,
+      "speed": 624.9158650860876
+    },
+    {
+      "t": 51.163,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 51.309,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 51.878,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 52.022,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 52.242,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.1616791164658138,
+      "speed": 659.5493984185634
+    },
+    {
+      "t": 52.311,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 52.467,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 52.976,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 52.985,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 53.791,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 53.793,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 53.913,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 54.079,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 54.375,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18403903667265628,
+      "speed": 640.2843169208154
+    },
+    {
+      "t": 54.403,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18403903667265628,
+      "speed": 640.2843169208154
+    },
+    {
+      "t": 54.444,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 55.209,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 55.442,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.17490999716552535,
+      "speed": 644.2195529550014
+    },
+    {
+      "t": 55.501,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 56.401,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 56.539,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.1813844667132578,
+      "speed": 655.5898731157491
+    },
+    {
+      "t": 56.587,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.1813844667132578,
+      "speed": 655.5898731157491
+    },
+    {
+      "t": 56.646,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 57.419,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 57.618,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.16954391650309103,
+      "speed": 639.9221959733526
+    },
+    {
+      "t": 57.65,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.16954391650309103,
+      "speed": 639.9221959733526
+    },
+    {
+      "t": 57.691,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 58.395,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 58.546,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.16441556934333326,
+      "speed": 661.3383869632478
+    },
+    {
+      "t": 58.587,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 59.012,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 59.875,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 59.901,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 60.29,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.1641213549587476,
+      "speed": 625.3669556484911
+    },
+    {
+      "t": 60.319,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.1641213549587476,
+      "speed": 625.3669556484911
+    },
+    {
+      "t": 60.368,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 60.475,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 61.08,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 61.085,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 61.313,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.17688898395365787,
+      "speed": 681.545389534312
+    },
+    {
+      "t": 61.348,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.17688898395365787,
+      "speed": 681.545389534312
+    },
+    {
+      "t": 61.382,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 61.524,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 61.961,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 61.963,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 62.263,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.13464782925093163,
+      "speed": 671.119989846873
+    },
+    {
+      "t": 62.317,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 62.486,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 63,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 63.002,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 63.235,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.1764444024562158,
+      "speed": 680.0358942456027
+    },
+    {
+      "t": 63.28,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.1764444024562158,
+      "speed": 680.0358942456027
+    },
+    {
+      "t": 63.33,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 63.486,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 63.793,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 63.795,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 64.191,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.018132662309006644,
+      "speed": 638.9963526179869
+    },
+    {
+      "t": 64.227,
+      "event": "crash",
+      "state": {
+        "mode": "crashed",
+        "x": 164,
+        "y": 26.160850000000003,
+        "vy": 762.45,
+        "speed": 630.9119544360191,
+        "score": 17479.838355563443,
+        "combo": 9,
+        "distance": 11738.165475830197,
+        "h": [
+          {
+            "x": 208.76661058232025,
+            "w": 38,
+            "type": "cone",
+            "passed": false
+          },
+          {
+            "x": 834.5217364314791,
+            "w": 82,
+            "type": "rail",
+            "passed": false
+          },
+          {
+            "x": 1019.6536538776779,
+            "w": 28,
+            "type": "spark",
+            "passed": false
+          }
+        ]
+      }
+    },
+    {
+      "t": 64.257,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 64.724,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 66.011,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 66.595,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 66.916,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.18515270671569972,
+      "speed": 434.26642300510207
+    },
+    {
+      "t": 66.963,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 68.083,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 68.375,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.1740828668452538,
+      "speed": 462.9989887348706
+    },
+    {
+      "t": 68.415,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 68.809,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 68.851,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 69.618,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 70.505,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 70.996,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 71.402,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18302341720124649,
+      "speed": 523.4781392575603
+    },
+    {
+      "t": 71.431,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18302341720124649,
+      "speed": 523.4781392575603
+    },
+    {
+      "t": 71.478,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 71.961,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 72.015,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 72.048,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 72.357,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 72.51,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 72.883,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18086088105159961,
+      "speed": 567.9080061841195
+    },
+    {
+      "t": 72.909,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18086088105159961,
+      "speed": 567.9080061841195
+    },
+    {
+      "t": 72.976,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 73.108,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 73.815,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 73.817,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 74.107,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.17919160848964255,
+      "speed": 664.235375197227
+    },
+    {
+      "t": 74.131,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.17919160848964255,
+      "speed": 664.235375197227
+    },
+    {
+      "t": 74.159,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.17919160848964255,
+      "speed": 664.235375197227
+    },
+    {
+      "t": 74.246,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 74.466,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 74.951,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 74.953,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 75.175,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.17911051180732154,
+      "speed": 674.8322095147777
+    },
+    {
+      "t": 75.238,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 75.386,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 75.771,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 75.773,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 76.064,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.09045336158745779,
+      "speed": 656.4718543908835
+    },
+    {
+      "t": 76.099,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.09045336158745779,
+      "speed": 656.4718543908835
+    },
+    {
+      "t": 76.152,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 76.272,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 76.71,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 76.712,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 77.499,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 77.51,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 77.545,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 77.697,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 77.992,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.16818405951687831,
+      "speed": 629.4097734849797
+    },
+    {
+      "t": 78.015,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.16818405951687831,
+      "speed": 629.4097734849797
+    },
+    {
+      "t": 78.038,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.16818405951687831,
+      "speed": 629.4097734849797
+    },
+    {
+      "t": 78.101,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 78.639,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 78.849,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.17392096245564456,
+      "speed": 642.4854484970967
+    },
+    {
+      "t": 78.92,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 79.443,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 79.688,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.11189171138372651,
+      "speed": 629.8087096495983
+    },
+    {
+      "t": 79.708,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.11189171138372651,
+      "speed": 629.8087096495983
+    },
+    {
+      "t": 79.767,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 80.079,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 80.913,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 81.162,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 81.505,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.18095889011631042,
+      "speed": 628.7872768163786
+    },
+    {
+      "t": 81.574,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 82.46,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 82.647,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.17735372087396462,
+      "speed": 654.995244603433
+    },
+    {
+      "t": 82.69,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.1473058627694415,
+      "speed": 644.2710292438666
+    },
+    {
+      "t": 82.713,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.1473058627694415,
+      "speed": 644.2710292438666
+    },
+    {
+      "t": 82.733,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.1473058627694415,
+      "speed": 644.2710292438666
+    },
+    {
+      "t": 82.798,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 83.28,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 84.219,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 84.225,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 84.386,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 84.536,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 84.835,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18311754112620943,
+      "speed": 638.9516756884816
+    },
+    {
+      "t": 84.862,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.18311754112620943,
+      "speed": 638.9516756884816
+    },
+    {
+      "t": 84.926,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 85.009,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 85.415,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 85.42,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 86.286,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 86.289,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 86.324,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 86.404,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 87.271,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 87.273,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 87.631,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.1839792840723548,
+      "speed": 629.0882800652224
+    },
+    {
+      "t": 87.697,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 87.88,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 88.255,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 88.257,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 88.721,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.01982902582397317,
+      "speed": 632.5394827172779
+    },
+    {
+      "t": 88.763,
+      "event": "crash",
+      "state": {
+        "mode": "crashed",
+        "x": 164,
+        "y": 26.160850000000003,
+        "vy": 762.45,
+        "speed": 622.5545089851721,
+        "score": 21897.879701508504,
+        "combo": 9,
+        "distance": 12142.024652510767,
+        "h": [
+          {
+            "x": 199.49425276127124,
+            "w": 38,
+            "type": "cone",
+            "passed": false
+          },
+          {
+            "x": 788.7834616086077,
+            "w": 64,
+            "type": "barrier",
+            "passed": false
+          }
+        ]
+      }
+    },
+    {
+      "t": 88.804,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 89.283,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 90.028,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 92.286,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 92.651,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.1774037207878587,
+      "speed": 431.1185336533707
+    },
+    {
+      "t": 92.759,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 94.149,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 94.478,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.18791328067155882,
+      "speed": 462.67358467699586
+    },
+    {
+      "t": 94.534,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 95.071,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 95.194,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 95.961,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 96.802,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 96.81,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 97.098,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 97.305,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 97.656,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.1885617845127879,
+      "speed": 529.2252876968114
+    },
+    {
+      "t": 97.688,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.1885617845127879,
+      "speed": 529.2252876968114
+    },
+    {
+      "t": 97.745,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 97.828,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 98.376,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 98.544,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 98.855,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.17027382734128135,
+      "speed": 562.3819454217695
+    },
+    {
+      "t": 98.893,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.17027382734128135,
+      "speed": 562.3819454217695
+    },
+    {
+      "t": 98.943,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 99.075,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 99.511,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 99.516,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 99.75,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.16606844639072726,
+      "speed": 650.8311485574994
+    },
+    {
+      "t": 99.803,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 99.919,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 100.281,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 100.284,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 100.547,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.16550370986041657,
+      "speed": 653.0346139022607
+    },
+    {
+      "t": 100.599,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 100.71,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 101.196,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 101.269,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 101.508,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.1640802541385872,
+      "speed": 669.0395738405992
+    },
+    {
+      "t": 101.56,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 101.694,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 102.031,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 102.301,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 102.503,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.17054639212589667,
+      "speed": 655.7055473761164
+    },
+    {
+      "t": 102.538,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.17054639212589667,
+      "speed": 655.7055473761164
+    },
+    {
+      "t": 102.579,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 103.495,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 103.655,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.1893469341215263,
+      "speed": 661.7602479373849
+    },
+    {
+      "t": 103.726,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 104.143,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 104.83,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 105.271,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 105.572,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.172741430542397,
+      "speed": 632.4217305241125
+    },
+    {
+      "t": 105.62,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 106.18,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 106.428,
+      "event": "jump",
+      "hazard": "cone",
+      "entry": 0.1639130122618391,
+      "speed": 642.6720853888837
+    },
+    {
+      "t": 106.49,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 107.113,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 107.359,
+      "event": "jump",
+      "hazard": "rail",
+      "entry": 0.1266596109703513,
+      "speed": 633.9815130819461
+    },
+    {
+      "t": 107.411,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 107.866,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 108.674,
+      "key": "ArrowDown",
+      "down": false
+    },
+    {
+      "t": 108.682,
+      "key": "ArrowLeft",
+      "down": true
+    },
+    {
+      "t": 109.001,
+      "event": "jump",
+      "hazard": "barrier",
+      "entry": 0.16896567316091904,
+      "speed": 632.1551123162777
+    },
+    {
+      "t": 109.055,
+      "key": "ArrowLeft",
+      "down": false
+    },
+    {
+      "t": 109.206,
+      "key": "ArrowRight",
+      "down": true
+    },
+    {
+      "t": 109.458,
+      "key": "ArrowDown",
+      "down": true
+    },
+    {
+      "t": 109.461,
+      "key": "ArrowRight",
+      "down": false
+    },
+    {
+      "t": 110.419,
+      "key": "ArrowDown",
+      "down": false
+    }
+  ],
+  "fullReport": {
+    "path": "/home/pui/private-use/projectp-scaterush162-20261115/capture-full/capture-report.json",
+    "sha256": "14c02d37bc79e8bad9fb7340bbf16f499bc9133d2a37636b5c84ba6c08d7ef9f"
+  },
+  "offsetEvidence": "recorded wall-clock estimate only; the original report .15-second uncertainty was not independently validated. Selected actual frames govern edit timing, not this estimate."
+}
